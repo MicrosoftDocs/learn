@@ -4,12 +4,13 @@ title: Explain estimated and actual query plans
 metadata:
   title: Explain estimated and actual query plans
   description: "Explain estimated and actual query plans"
-  ms.date: 04/12/2021
+  ms.date: 01/20/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 13
 content: |
   [!include[](includes/3-explain-estimated-actual.md)]

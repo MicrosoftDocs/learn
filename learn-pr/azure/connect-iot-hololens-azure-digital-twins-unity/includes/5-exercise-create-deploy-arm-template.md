@@ -41,7 +41,7 @@ The ARM Template logic has been integrated into a Connection Prefab that drives 
     > [!NOTE]
     > Variables in PowerShell are prefixed with the **$** symbol.
 
-2. Set the App Registration name, keeping it to a maximum of 14 characters.  This is the name of the application registration for your HoloLens app
+2. Set the App Registration name, keeping it to a maximum of 14 characters.  This is the name of the application registration for your mixed reality app
 
     ```console
     $appreg="myappreg"
@@ -49,10 +49,10 @@ The ARM Template logic has been integrated into a Connection Prefab that drives 
 
 ## Create the App Registration
 
-Run the following command to create a service principal and configure its access to Azure resources
+Run the following command to create a service principal and configure its access to Azure resources.
 
 ```console
-az ad sp create-for-rbac --name ${appreg} --skip-assignment > AppCredentials.txt
+az ad sp create-for-rbac --name ${appreg} --role Contributor --scopes /subscriptions/<SUBSCRIPTION-ID> > AppCredentials.txt
 ```
 
 > [!NOTE]

@@ -14,7 +14,7 @@ Let's examine each of these motivations and understand why the ability to create
 
 CSPs provide detailed billing statements for each cloud resource that you provision. But if you provision a set of resources and connect them to form an end-to-end solution as shown in Figure 2.1, you may care less about the cost of the individual resources than the cost of all the resources combined. This is especially true if you deploy separate instances of the solution for separate customers and need to know precisely how much to charge each one (Figure 2.5). Even if you're not deploying multiple instances of the solution, it may be useful to aggregate resource billing by department or some other internal cost-center. Organizing resources into logical groups provides you with this flexibility. You still get detailed costs for individual resources, but you also receive aggregate costs for the groups you create.
 
-![Figure 2.5: Organizing resources for billing](../media/billing.png)
+![Figure 2.5: Organizing resources for billing.](../media/billing.png)
 
 _Figure 2.5: Organizing resources for billing._
 
@@ -26,7 +26,7 @@ Access control is an important aspect of cloud resource management. Maintaining 
 
 A common example is a scenario in which a team developing a web application deploys four separate instances of the app and the services that it utilizes: one for production, one for staging, one for testing, and one for development (Figure 2.6). Members of the development team may be granted broad access to the development deployment but be restricted to read-only access to the resources in the testing deployment, which the testing team controls. Typically, only members of the operations team are given access to the production and staging deployments. They decide when a build pushed to staging is ready for public consumption, and they decide when to promote the app that is currently in staging into production.
 
-![Figure 2.6: Organizing resources for access control](../media/access-control.png)
+![Figure 2.6: Organizing resources for access control.](../media/access-control.png)
 
 _Figure 2.6: Organizing resources for access control._
 
@@ -34,7 +34,7 @@ _Figure 2.6: Organizing resources for access control._
 
 Another motivation for grouping cloud resources is so that the lifetimes of the resources can be managed as a group. One of the benefits of cloud computing is short provisioning and deprovisioning times. Complex solutions consisting of tens or even hundreds of interconnected cloud services can be deployed in minutes and torn down in minutes. (Because it takes a finite amount of time to delete a cloud resource, cloud service providers typically stop billing for a resource the moment deletion is requested.) You can spin up 100 virtual machines to run a complex numerical analysis, and you can delete them when you're done to avoid paying for services that you're not using. Moreover, if you group the virtual machines into a logical unit, you can delete them all with a single action by deleting the group itself, as shown in Figure 2.7.
 
-![Figure 2.7: Organizing resources for lifetime management](../media/lifetime-management.png)
+![Figure 2.7: Organizing resources for lifetime management.](../media/lifetime-management.png)
 
 _Figure 2.7: Organizing resources for lifetime management._
 
@@ -46,7 +46,7 @@ Most CSPs place limits on the number of resources of a given type that can be cr
 
 CSPs take different approaches to allowing customers to organize the resources that they deploy. Microsoft Azure supports a hierarchy consisting of subscriptions, resource groups, and tags to support the use cases described above. The relationship between these tools is shown in in Figure 2.8.
 
-![Figure 2.8: Resource organization hierarchy in Microsoft Azure](../media/resource-hiearchy.png)
+![Figure 2.8: Resource organization hierarchy in Microsoft Azure.](../media/resource-hiearchy.png)
 
 _Figure 2.8: Resource organization hierarchy in Microsoft Azure._
 

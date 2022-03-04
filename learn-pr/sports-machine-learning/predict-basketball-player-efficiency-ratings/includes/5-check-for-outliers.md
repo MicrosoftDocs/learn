@@ -140,4 +140,4 @@ player_df.reset_index(drop=True, inplace=True)
 
 If you execute `player_df.tail(10)` again, you'll see the indexes in order now until row 40.
 
-© 2020 Warner Bros. Ent. All Rights Reserved.
+© 2021 Warner Bros. Ent. All Rights Reserved.

@@ -7,7 +7,8 @@ metadata:
   description: In this unit, we recap how we've used GitHub Actions in our scenario. We specifically discuss GitHub Actions for Azure SQL Database, GitHub secrets, and configuring YAML files and monitoring deployments.
   ms.date: 3/24/2021 
   author: amthomas46
-  ms.author: antho
+  ms.author: chnoring
+  ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
 durationInMinutes: 5

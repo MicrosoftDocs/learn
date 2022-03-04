@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-query-delta-lake.exercise-use-time-machine-perform-optimization
+title: 'Exercise: Use the Delta Lake Time Machine and perform optimization'
+metadata:
+  title: 'Exercise: Use the Delta Lake Time Machine and perform optimization'
+  description: "Exercise: Use the Delta Lake Time Machine and perform optimization"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-use-time-machine-perform-optimization.md)]

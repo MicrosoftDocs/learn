@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.give-receive-effective-feedback.characteristics-components-effective-feedback
+title: Understand the characteristics of effective feedback
+metadata:
+  title: Understand the characteristics of effective feedback
+  description: This unit explores the characteristics and components of effective feedback, discusses how to give feedback, and describes various types of feedback.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-characteristics-components-effective-feedback.md)]
+quiz:
+  questions:
+  - content: "Which one of the following statements describes the characteristics of effective feedback?"
+    choices:
+    - content: "Effective feedback is specific, timely, and supportive."
+      isCorrect: true
+      explanation: "Correct. For feedback to be effective and useful, it should provide sufficient details about the errors, the means to correct them, and the steps to prevent them in the future."
+    - content: "Effective feedback focuses only on what went wrong."
+      isCorrect: false
+      explanation: "Incorrect. It's not enough to point out someone's mistakes. You should also include what they did correctly and reinforce your confidence in their ability to learn and develop their skills."
+    - content: "Effective feedback includes only the expected goals and outcomes."
+      isCorrect: false
+      explanation: "Incorrect. Restating the task or project goals is only one component of feedback. You should strive to understand the challenges that prevent the person from attaining the goals and provide direction to help them overcome the challenges."

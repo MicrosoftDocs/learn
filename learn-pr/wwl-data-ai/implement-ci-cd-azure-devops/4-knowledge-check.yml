@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ci-cd-azure-devops.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What does the CD in CI/CD mean?"
+    choices:
+    - content: "Continuous Delivery"
+      isCorrect: false
+      explanation: "Continuous Delivery is true, but automation using CI/CD is more than just being able to click a button to deploy. You can automate deployments even further."
+    - content: "Continuous Deployment"
+      isCorrect: false
+      explanation: "Continuous Deployment is true, but there are times where you do not want to completely automate the process from builds all the way to deployments in production, without human intervention."
+    - content: "Both are correct"
+      isCorrect: true
+      explanation: "Correct. Continuous Delivery automates your release process up to the point where human intervention is needed, by clicking a button. Continuous Deployment takes a step further by removing the human intervention and relying on automated tests to automatically determine whether the build should be deployed into production."
+  - content: "What sort of pipeline is required in Azure DevOps for creating artifacts used in releases?"
+    choices:
+    - content: "An Artifact pipeline"
+      isCorrect: false
+      explanation: "Incorrect. There is no such pipeline in Azure DevOps."
+    - content: "A Build pipeline"
+      isCorrect: true
+      explanation: "Correct. The output of a Build pipeline is one or more artifacts that can be used within release pipelines for automated deployments."
+    - content: "A Release pipeline"
+      isCorrect: false
+      explanation: "Incorrect. You must use a different type of pipeline to generate the artifacts before they can be used within a Release pipeline."
+  - content: "What steps are required to authorize Azure DevOps to connect to and deploy notebooks to a staging or production Azure Databricks workspace?"
+    choices:
+    - content: "Create an Azure Active Directory application, copy the application ID, then use that as the Databricks bearer token in the Databricks Notebooks Deployment step of the Release pipeline"
+      isCorrect: false
+      explanation: "Incorrect. You do not create and use information copied from an Azure Active Directory application."
+    - content: "In the production or staging Azure Databricks workspace, enable Git integration to Azure DevOps, then link to the Azure DevOps source code repo"
+      isCorrect: false
+      explanation: "Incorrect. You create the Git integration from the development Azure Databricks workspace and create the link to the Azure DevOps repo from a notebook. However, this configuration alone does not enable authorization to the production workspace."
+    - content: "Create a new Access Token within the user settings in the production Azure Databricks workspace, then use the token as the Databricks bearer token in the Databricks Notebooks Deployment step of the Release pipeline"
+      isCorrect: true
+      explanation: "Correct. The Access Token allows you to grant access to resources within an Azure Databricks workspace without passing in user credentials."

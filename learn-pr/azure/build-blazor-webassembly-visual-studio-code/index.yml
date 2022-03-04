@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of web app concepts
   - C# .NET experience at a beginner level
-  - Local installations of the [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
+  - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
   - Experience with using the command line
 iconUrl: /learn/achievements/build-a-web-app-with-blazor-webassembly-and-vs-code.svg
@@ -31,7 +31,7 @@ products:
 - dotnet
 - aspnet-core
 - dotnet-core
-- dotnet-standard
+- blazor
 units:
 - learn.build-web-app-blazor-webassembly-vscode.1-introduction
 - learn.build-web-app-blazor-webassembly-vscode.2-understand-blazor-webassembly

@@ -4,12 +4,13 @@ title: Query a CSV file using Azure Synapse serverless SQL pools
 metadata:
   title: Query a CSV file using Azure Synapse serverless SQL pools
   description: "Query a CSV file using Azure Synapse serverless SQL pools"
-  ms.date: 06/18/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-query-csv-file.md)]

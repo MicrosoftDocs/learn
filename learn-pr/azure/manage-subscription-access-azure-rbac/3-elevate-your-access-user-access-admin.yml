@@ -5,8 +5,8 @@ metadata:
   title: Understand when you might need to elevate your access
   description: Learn about the scenarios where you might need to elevate your access to User Access Administrator.
   ms.date: 01/13/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: rolyon
+  ms.author: rolyon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
@@ -26,7 +26,7 @@ quiz:
     - content: Ask the former employee to sign in and select a different employee to grant their permissions to.
       isCorrect: false
       explanation: A robust security system for your organization can't depend on the good will of former employees.
-  - content: A manager currently has access to the subscription that's used for the organization's production environment. They also need Owner access to the subscription that's used for the organization's development environment. How can this access be granted?
+  - content: A manager currently has access to the subscription that's used for the organization's production environment. This manager also needs Owner access to the subscription that's used for the organization's development environment. How can this access be granted?
     choices:
     - content: An administrator with Owner or User Access Administrator access to the development environment can grant the manager access to the subscription. 
       isCorrect: true

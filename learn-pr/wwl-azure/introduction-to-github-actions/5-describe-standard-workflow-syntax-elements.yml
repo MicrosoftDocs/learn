@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-github-actions.describe-standard-workflow-syntax-elements
+title: Describe standard workflow syntax elements
+metadata:
+  title: Describe standard workflow syntax elements
+  description: "Describe standard workflow syntax elements"
+  ms.date: 02/15/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-describe-standard-workflow-syntax-elements.md)]

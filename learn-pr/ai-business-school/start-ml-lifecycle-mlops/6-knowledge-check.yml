@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. Machine learning pipelines are independently executable workflows of complete machine learning tasks."
     - content: "Machine learning pipelines serve as an audit trail for a model’s history and make it possible to automatically trigger workflows after certain events."
       isCorrect: false
-      explanation: "Incorrect. Incorrect. This is a benefit of a model registry."
+      explanation: "Incorrect. This is a benefit of a model registry."
     - content: "Machine learning pipelines require data scientists to begin their work from the beginning to make changes, which improves their accuracy and performance."
       isCorrect: false
       explanation: "Incorrect. Machine learning pipelines allow data scientists to start from where the change needs to occur, which prevents running costly and time-intensive steps like data ingestion."

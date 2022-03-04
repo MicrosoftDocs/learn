@@ -14,7 +14,7 @@ By default, your Microsoft AppSource and Azure Marketplace solutions are availab
 
 Regardless of the offer type you choose to publish, Microsoft will send you leads when potential customers interact with your commercial marketplace listing. When customers consent to share their information after clicking the buttons outlined below, leads are routed to your Customer Relationship Management (CRM) system.
 
-![Screenshot of consent to share customer contact information with publisher for CRM](..\media\10-consent-share-contact.png)
+![Screenshot of consent to share customer contact information with publisher for CRM.](..\media\10-consent-share-contact.png)
 
 If you want more information about leads, read the documentation on [customer leads from your marketplace offer](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
 
@@ -28,7 +28,7 @@ A simple listing of your solution is the lowest level of engagement with potenti
 
 Customers are encouraged to request outreach from your team through the “Contact Me” on your product’s marketplace landing page. When customers agree to provide account contact information, Microsoft sends that customer’s information to your organization for follow-up. This means that your potential customers are limited in their ability to assess your solution online without first committing to an interaction with someone from your company.
 
-![Contact me call to action button from marketplace](..\media\11-contact-me-example.png)
+![Contact me call to action button from marketplace.](..\media\11-contact-me-example.png)
 
 ### Free trial
 
@@ -36,7 +36,7 @@ A free trial of your solution provides an opportunity for enhanced engagement wi
 
 When customers click the “Free Trial” button on your product’s landing page, they are routed to your website to initiate the trial for use. As a publisher, you define the website to which customers are routed and implement the trial within your own web solution.
 
-![Free trial call to action button from marketplace](..\media\12-free-trial-example.png)
+![Free trial call to action button from marketplace.](..\media\12-free-trial-example.png)
 
 ### Bring Your Own License (BYOL)
 
@@ -44,7 +44,7 @@ The Bring Your Own License (BYOL) functionality in Azure Marketplace allows cust
 
 When customers click the “Get It Now” button on your product’s landing page and agree to your terms of use and privacy policy, they’re routed to the Azure portal. Once there, customers are prompted to configure the solution before creating the resource and deploying it to their cloud subscription. As part of the configuration, your customer will enter an existing license key for your software to activate the solution.
 
-![Get it now call to action button from marketplace](..\media\13-get-it-now-example.png)
+![Get it now call to action button from marketplace.](..\media\13-get-it-now-example.png)
 
 > [!NOTE] 
 > BYOL listings are only made available to customers in Azure Marketplace.
@@ -55,7 +55,7 @@ A transact offer provides optimal customer engagement and enables the most compl
 
 When customers click the “Get It Now ” button on your product’s landing page and agree to your terms of use and privacy policy, they’re routed differently depending on the kind of product they’re purchasing. For all Azure Marketplace transact offers, customers are routed to the Azure portal to complete product configurations. For products purchased through Microsoft AppSource, the experience varies depending on the kind of product and the way that you configure your offer. Upon clicking “Get it now,” Microsoft also sends you lead information about the customer who has started to deploy your product.
 
-![Get it now call to action button from marketplace](..\media\13-get-it-now-example.png)
+![Get it now call to action button from marketplace.](..\media\13-get-it-now-example.png)
 
 Transact offers are billed against an existing Microsoft account or a credit card transaction. For offers that require the use of Azure infrastructure in a customer’s Azure account, the associated infrastructure/software costs appear on the customer’s consolidated Microsoft invoice. This simplified acquisition process is a significant benefit for customers, as they don’t need to manage a separate invoice from your company.
 

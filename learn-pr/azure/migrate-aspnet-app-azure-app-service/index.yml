@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.migrate-aspnet-app-azure-app-service
+metadata:
+  title: Containerize and migrate ASP.NET applications to Azure App Service
+  description: Microsoft Learn module to learn Azure Migrate App Containerization with a hands-on lab using Azure App Service
+  ms.date: 09/01/2021
+  author: rahug1190
+  ms.author: rahugup
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Containerize and migrate ASP.NET applications to Azure App Service
+summary: In this module, you'll learn to use the Azure Migrate App Containerization tool to containerize and migrate ASP.NET applications to Azure App Service.
+abstract: | 
+  By the end of this module, you will be able to:
+  - Discover and containerize your ASP.NET app running on Windows machines using Azure Migrate: App Containerization.
+  - Build a container image for your ASP.NET application. 
+  - Deploy your containerized application to Azure App Service using Azure Migrate: App Containerization. 
+prerequisites: | 
+  - Familiarity with [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
+  - An active [Azure subscription](https://azure.microsoft.com/free/services/kubernetes-service/?azure-portal=true&WT.mc_id=akspipeline_intro-learn-ludossan)
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+- administrator
+products:
+- azure
+- azure-migrate
+- azure-app-service
+units:
+- learn.azure.migrate-aspnet-app-azure-app-service.introduction
+- learn.azure.migrate-aspnet-app-azure-app-service.containerization-overview
+- learn.azure.migrate-aspnet-app-azure-app-service.exercise-setup-host-environment
+- learn.azure.migrate-aspnet-app-azure-app-service.exercise-discover
+- learn.azure.migrate-aspnet-app-azure-app-service.exercise-build-container-image
+- learn.azure.migrate-aspnet-app-azure-app-service.deploy
+- learn.azure.migrate-aspnet-app-azure-app-service.summary
+badge:
+  uid: learn.azure.migrate-aspnet-app-azure-app-service.badge

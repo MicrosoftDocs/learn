@@ -10,7 +10,7 @@ There are multiple types of project operators.  The following table is a list of
 | project-rename| Select the columns to rename in the resulting output.|
 | project-reorder| Set the column order in the resulting output.|
 
-## project operator
+## Project operator
 
 Select the columns to include, rename or drop, and insert new computed columns.
 
@@ -23,11 +23,11 @@ SecurityEvent
 
 ```
 
-## project-away operator
+## Project-away operator
 
 Select what columns from the input to exclude from the output.
 
-This example builds from our previous extend and order by operators.  The goal of the statement was to set the AlertSeverity in a more meaningful order.  If the order were only on the AlertSeverity column, the order would have been in alpha order.  Creating the new column severityOrder and setting a numeric value would allow the sorting to provide a meaningful severity order.  The severityOrder number is meaningless after the order by operator.  The project-away will remove the unnecessary column from the result set.
+This example builds from our previous extend and order by operators.  The goal of the statement was to set the AlertSeverity in a more meaningful order.  If the order was only on the AlertSeverity column, the order would have been in alpha order.  Creating the new column severityOrder and setting a numeric value would allow the sorting to provide a meaningful severity order.  The severityOrder number is meaningless after the order by operator.  The project-away will remove the unnecessary column from the result set.
 
 ```kusto
 SecurityAlert

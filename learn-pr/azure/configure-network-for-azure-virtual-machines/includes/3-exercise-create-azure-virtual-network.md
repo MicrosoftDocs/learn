@@ -107,7 +107,7 @@ Configure the Windows Firewall on `dataProcStage2` using a new remote desktop se
 
 1. In the left-hand pane, select **Inbound Rules**.
 
-1. In the right-hand pane, scroll down, and right-click **File and Printer Sharing (Echo Request - ICMPv4-In)**, and then select **Enable Rule**.
+1. In the right-hand pane, scroll down, right-click **File and Printer Sharing (Echo Request - ICMPv4-In)**, and then confirm that **Enable Rule** is enabled.
 
 1. Switch back to the `dataProcStage1` remote session, and run the following command in the command prompt.
 
@@ -115,6 +115,6 @@ Configure the Windows Firewall on `dataProcStage2` using a new remote desktop se
     ping dataProcStage2 -4
     ```
 
-1. `dataProcStage2` responds with four replies, demonstrating connectivity between the two VMs.
+    `dataProcStage2` responds with four replies, demonstrating connectivity between the two VMs.
 
 You successfully created a virtual network, created two VMs that are attached to that virtual network, connected to one of the VMs and shown network connectivity to the other VM within the same virtual network. You can use Azure Virtual Network to connect resources within the Azure network. However, those resources need to be within the same resource group and subscription. Next, we will look at VPN gateways, which enable you to connect virtual network in different resource groups, subscriptions, and even geographical regions.

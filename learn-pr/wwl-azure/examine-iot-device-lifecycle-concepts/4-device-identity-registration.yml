@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-iot-device-lifecycle-concepts.examine-device-identity-registration
+title: Examine device identity and registration
+metadata:
+  title: Examine device identity and registration
+  description: "Examine device identity and registration"
+  ms.date: 12/15/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-device-identity-registration.md)]

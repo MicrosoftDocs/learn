@@ -34,13 +34,13 @@ to pull the information from the tables. For the examples we will be
 showing later in this module, we'll be working primarily with a table
 called "requests."
 
-:::image type="content" source="../media/log-analytics-requests-table.png" alt-text="Overview diagram of Log Analytics with requests table highlighted":::
+:::image type="content" source="../media/log-analytics-requests-table.png" alt-text="Overview diagram of Log Analytics with requests table highlighted.":::
 
 ## Log Analytics interface
 
 The graphic below shows the different parts of the Log Analytics interface.
 
-:::image type="content" source="../media/log-analytics-user-interface.png" alt-text="Screenshot of the Log Analytics workspace in the Azure portal":::
+:::image type="content" source="../media/log-analytics-user-interface.png" alt-text="Screenshot of the Log Analytics workspace in the Azure portal.":::
 
 On the left is a section of the screen that makes sure you never get lost
 when using Log Analytics. It shows the tables you are potentially working
@@ -149,6 +149,6 @@ requests
 This query returns a summary of the requests we received in the last half
 hour. So on a web service, it might tell us that there has been a
 `GET index.html` request to the URL
-[http://tailwindtraders.com](http://tailwindtraders.com) 2,875 times. We
+`http://tailwindtraders.com` 2,875 times. We
 are pausing our look at KQL with this query because it will nicely connect
 to the KQL queries we will use in the next unit.

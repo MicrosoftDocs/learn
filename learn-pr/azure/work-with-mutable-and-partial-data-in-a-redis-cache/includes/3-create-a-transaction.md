@@ -130,7 +130,7 @@ Finally, we're going to add data into your Azure Cache for Redis.
     using ServiceStack.Redis;
     ```
 
-1. Replace the contents of the `Main` method with the following code. This will use a transaction to add two values.
+1. Replace the contents of the `Main` method with the following code. This will use a transaction to add two values. Make sure to save the file.
 
     ```csharp
     bool transactionResult = false;

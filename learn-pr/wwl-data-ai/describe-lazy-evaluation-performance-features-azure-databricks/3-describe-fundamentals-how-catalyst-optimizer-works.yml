@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.describe-fundamentals-how-catalyst-optimizer-works
+title: Describe the fundamentals of how the Catalyst Optimizer works
+metadata:
+  title: Describe the fundamentals of how the Catalyst Optimizer works
+  description: "Describe the fundamentals of how the Catalyst Optimizer works"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-describe-fundamentals-how-catalyst-optimizer-works.md)]

@@ -35,7 +35,7 @@ In this unit, we code our app. In stages, to make it a little more understandabl
 
 1. Let's start with the ADD HTML STYLE CODE HERE. We're adding styles to construct the app banner:
 
-   [![Screenshot showing the html banner for our Azure Maps app](../media/azure-maps-banner.png)](../media/azure-maps-banner.png#lightbox)
+   [![Screenshot showing the html banner for our Azure Maps app.](../media/azure-maps-banner.png)](../media/azure-maps-banner.png#lightbox)
 
 1. Copy the next section, and replace the ADD HTML STYLE CODE with it.
 

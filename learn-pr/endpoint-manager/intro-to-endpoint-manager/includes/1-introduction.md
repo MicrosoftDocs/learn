@@ -1,6 +1,6 @@
 Today, most companies are using cloud services of some kind. Software updates are needed continuously. Organizations often allow personal devices in the workplace. The majority of users use mobile devices and apps for work-related activity. Additionally, cybersecurity continues to be a growing concern when protecting corporate data.
 
-![Modern workplace technology trends](../media/intro-to-endpoint-manager-00.png)
+![Modern workplace technology trends.](../media/intro-to-endpoint-manager-00.png)
 
 Technology needs are evolving in the modern workplace. IT is adapting to this evolving and changing modern workplace. These changes include the following:
 - Users and knowledge workers that were using a single device are now using multiple devices.

@@ -30,4 +30,10 @@ The main steps in the process are:
 1. Create a mirrored virtual disk hosting a single volume by using Server Manager. Use Server Manager to create a mirrored virtual disk hosting a single volume.
 1. Examine disk properties in Windows Admin Center. Use Windows Admin Center to examine the properties of the provisioned virtual disk and its volume.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MAkL]
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MAkL]
+
+---
+
+
+
+---

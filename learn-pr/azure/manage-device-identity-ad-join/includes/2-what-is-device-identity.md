@@ -1,8 +1,8 @@
-In this unit, you'll learn about device identity and registration options, and how they apply to various devices. You'll see how you can apply conditional access to improve access control with your devices. Finally, you'll look at the benefits, and the considerations, of using device identity in Azure.
+In this unit, you'll learn about device identity and registration options, and how they apply to various devices. You'll see how you can apply Conditional Access to improve access control with your devices. Finally, you'll look at the benefits, and the considerations, of using device identity in Azure.
 
 ## Basics of device identity
 
-Device identity in Azure Active Directory (Azure AD) helps you control the devices that you add to your organization's Azure AD instance. It also helps you control the data, resources, and assets that those devices can access. It provides a framework to implement device-based conditional access. You can use a device-based conditional access policy to limit device access to your organization's assets.
+Device identity in Azure Active Directory (Azure AD) helps you control the devices that you add to your organization's Azure AD instance. It also helps you control the data, resources, and assets that those devices can access. It provides a framework to implement device-based Conditional Access. You can use a device-based Conditional Access policy to limit device access to your organization's assets.
 
 Today's work environment extends beyond the controllable boundaries of your on-premises workspace. Your staff can now work in various locations, not only in their home country or region but also abroad. Users can access a broader range of technologies. Some of these technologies are owned by your organization, but others aren't.
 
@@ -22,21 +22,21 @@ You have three device registration options to add a device to Azure AD:
 
 - **Hybrid Azure AD joined**: This option is similar to Azure AD joined. The devices are owned by the organization, and they're signed in with an Azure AD account that belongs to that organization. Device identities exist in the cloud and on-premises. The hybrid option is better suited to organizations that need on-premises and cloud access. This option supports Windows 7, 8.1, and 10, and Windows Server 2008 or later.
 
-## Conditional access
+## Conditional Access
 
-Conditional access in Azure AD uses data from sources known as *signals*, validates them against a user-definable rule base, and chooses the best outcome to enforce your organization's security policies. Conditional access enables device identity management, but conditional access policies can be complex. 
+Conditional Access in Azure AD uses data from sources known as *signals*, validates them against a user-definable rule base, and chooses the best outcome to enforce your organization's security policies. Conditional Access enables device identity management, but Conditional Access policies can be complex. 
 
-At their simplest, these policies can be thought of as "if-then" statements. If a user wants access to a resource, then they must fulfill the condition to complete the request. Example: A payroll manager wants to access the payroll application. The conditional access policy requires them to use a compliant device and to complete multifactor authentication to access the application.
+At their simplest, these policies can be thought of as "if-then" statements. If a user wants access to a resource, then they must fulfill the condition to complete the request. Example: A payroll manager wants to access the payroll application. The Conditional Access policy requires them to use a compliant device and to complete multifactor authentication to access the application.
 
 ![Illustration that shows a conditional signal plus a decision to get enforcement.](../media/2-conditional-access.png)
 
-Conditional access policies are applied after a user has successfully completed first-factor authentication, typically with a username and password. These policies aren't a substitute for first-factor authentication. They're used to assess factors like device, location, and application, and to assess the risk in real time.
+Conditional Access policies are applied after a user has successfully completed first-factor authentication, typically with a username and password. These policies aren't a substitute for first-factor authentication. They're used to assess factors like device, location, and application, and to assess the risk in real time.
 
 ### Common signal types
 
-Conditional access uses many common signal types to make a decision on which outcome to recommend.
+Conditional Access uses many common signal types to make a decision on which outcome to recommend.
 
-![Illustration that shows the process flow for conditional access.](../media/2-conditional-access-signals.png)
+![Illustration that shows the process flow for Conditional Access.](../media/2-conditional-access-signals.png)
 
 Signals include the following types:
 
@@ -45,11 +45,11 @@ Signals include the following types:
 - **Device** allows you to specify the type of device and its state.
 - **Application** lets you control access to an application for a specific device.
 - **Real-time and calculated risk detection** allows Azure AD to identify behaviors not only during sign-in but also throughout the user's session.
-- **Microsoft Cloud App Security** provides real-time monitoring of the user's session and application access. Cloud App Security also helps you control your cloud environment.
+- **Microsoft Defender for Cloud Apps** provides real-time monitoring of the user's session and application access. Defender for Cloud Apps also helps you control your cloud environment.
 
 ### Common decisions
 
-Conditional access evaluates the signals and provides a decision:
+Conditional Access evaluates the signals and provides a decision:
 
 - **Block access**, which is the most restrictive.
 - **Grant access**, which is the least restrictive but might require additional criteria before allowing access.
@@ -69,7 +69,7 @@ If your organization uses Azure AD Multi-Factor Authentication, users don't have
 
 ### Commonly applied policies
 
-Many organizations have common access concerns that conditional access policies can help with, such as:
+Many organizations have common access concerns that Conditional Access policies can help with, such as:
 
 - Requiring multifactor authentication for users who have administrative roles.
 - Requiring multifactor authentication for Azure management tasks.
@@ -79,24 +79,24 @@ Many organizations have common access concerns that conditional access policies 
 - Blocking risky sign-in behaviors.
 - Requiring organization-managed devices for specific applications.
 
-### Selections to create a conditional access policy
+### Selections to create a Conditional Access policy
 
-To create a conditional access policy, go to **Azure Active Directory** > **Security** > **Conditional Access** > **New policy**.
+To create a Conditional Access policy, go to **Azure Active Directory** > **Security** > **Conditional Access** > **New policy**.
 
 >[!div class="mx-imgBorder"]
->![Screenshot that shows a new conditional access policy with no assignments or access controls set.](../media/2-conditional-access-policies.png)
+>![Screenshot that shows a new Conditional Access policy with no assignments or access controls set.](../media/2-conditional-access-policies.png)
 
 To make your policy work, you must configure:
 
 | What           | How                                  | Why |
 | :--            | :--                                  | :-- |
-| **Cloud apps** |Select one or more apps.  | The goal of a conditional access policy is to enable you to control how authorized users can access cloud apps.|
-| **Users and groups** | Select at least one user or group that is authorized to access your selected cloud apps. | A conditional access policy that has no users and groups assigned is never triggered. |
+| **Cloud apps** |Select one or more apps.  | The goal of a Conditional Access policy is to enable you to control how authorized users can access cloud apps.|
+| **Users and groups** | Select at least one user or group that is authorized to access your selected cloud apps. | A Conditional Access policy that has no users and groups assigned is never triggered. |
 | **Access controls** | Select at least one access control. | If your conditions are satisfied, your policy processor needs to know what to do. |
 
 ## Benefits of device identity management
 
-Some of the benefits of using device identity, combined with conditional access in Azure AD, are:
+Some of the benefits of using device identity, combined with Conditional Access in Azure AD, are:
 
 - The combination simplifies the procedure for adding and managing devices in Azure AD.
 - The combination reduces the friction for users when they're switching between devices.
@@ -108,4 +108,4 @@ Some of the benefits of using device identity, combined with conditional access 
 When you're evaluating device identity, consider the following factors:
 
 - Using the Azure AD joined or hybrid option limits you to using a Windows-based or Windows Server-based operating system on the device.
-- Conditional access requires an Azure AD Premium P1 license or a Microsoft 365 Business license.
+- Conditional Access requires an Azure AD Premium P1 license or a Microsoft 365 Business license.

@@ -4,9 +4,9 @@ title: Exercise - Retrieve a message from the queue
 metadata:
   title: Exercise - Retrieve a message from the queue
   description: Retrieve a message from the queue
-  ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 10/07/2021
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

@@ -1,0 +1,15 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Here is where you'd perform the validation steps."
+  deployUS: 
+    runs-on: windows-latest
+    steps:
+      - run: echo "Here is where you'd perform the steps to deploy to the US region."
+  deployEurope: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Here is where you'd perform the steps to deploy to the European region."

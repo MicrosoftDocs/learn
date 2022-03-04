@@ -13,5 +13,5 @@ You can learn more by reviewing the following documents:
 - [Quickstart: Onboard Windows computers to Azure Security Center](https://aka.ms/onboard-windows-computer?azure-portal=true).
 - [Tutorial: Improve your regulatory compliance](https://aka.ms/improve-regulatory-compliance?azure-portal=true).
 - [Vulnerability assessments for your Azure Virtual Machines](https://aka.ms/vulnerability-assessment-recommendations?azure-portal=true).
-- [Tutorial: Use Azure Security Center to monitor Windows virtual machines](https://aka.ms/tutorial-azure-security-center?azure-portal=true).
+- [Tutorial: Use Azure Security Center to monitor Windows virtual machines](/azure/security/fundamentals/virtual-machines-overview).
 - [Protect your servers and VMs from brute-force and malware attacks with Azure Security Center](https://aka.ms/secure-vms-with-security-center?azure-portal=true).

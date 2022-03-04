@@ -77,7 +77,7 @@ az group create \
 
 az servicebus namespace create \
     --resource-group $AZ_RESOURCE_GROUP \
-    --namespace-name $AZ_SB_PREMIUM_NAMESPACE \
+    --name $AZ_SB_PREMIUM_NAMESPACE \
     --sku Premium \
     --capacity 1
 ```

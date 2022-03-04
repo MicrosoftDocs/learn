@@ -8,17 +8,17 @@ The report types are organized into the following focus areas:
 
 Available reports include the following:
 - Non-compliant devices report (Operational)
-- Windows 10 unhealthy endpoints report (Operational)
-- Windows 10 detected malware report (Operational)
+- Windows 10/11 unhealthy endpoints report (Operational)
+- Windows 10/11 detected malware report (Operational)
 - Feature update failures report (Operational)
 - Device compliance report (Organizational)
 - Antivirus agent status report (Organizational)
 - Detected malware report (Organizational)
-- Windows 10 feature updates (Organizational)
+- Windows 10/11 feature updates (Organizational)
 - Device compliance trend report (Historical)
 - Azure Monitor integration reports (Specialist)
 
-Additionally, there is a device compliance report is available as the summary report.
+Additionally, there is a device compliance report that is available as the summary report.
 
 The reporting framework provides a consistent and more comprehensive reporting experience. The available reports provide the following functionality:
 - **Search and sort** – You can search and sort across every column, no matter how large the dataset.

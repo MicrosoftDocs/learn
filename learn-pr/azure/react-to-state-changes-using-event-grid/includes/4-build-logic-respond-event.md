@@ -1,24 +1,24 @@
 When you create events in Azure Event Grid, you choose how to respond to those events and which actions should occur.
 
-You've set up a logic app for your healthcare organization to listen for events related to your Azure resources. You now need to filter the events and create actions based on conditions within them.
+You've set up a logic app for your healthcare organization to listen for events related to your Azure resources. Now, you need to filter the events and create actions based on conditions within them.
 
 Here, you'll learn how to create actions and conditions to respond to events.
 
 ## Conditions
 
-To run actions in your logic app after events pass a specified condition, you add a conditional statement. This control structure compares the data in your workflow against specific values or fields. You then specify different actions that run based on whether the data meets the condition.
+To run actions in your logic app after events pass a specified condition, you'll add a conditional statement. This control structure compares the data in your workflow against specific values or fields. You'll then specify different actions that run based on whether the data meets the condition.
 
 The following image shows an example of a filter that checks whether a filename in a directory has the .pdf extension.
 
-![Condition for a .pdf extension](../media/4-logic-apps-filter-array.png)
+:::image type="content" source="../media/4-logic-apps-filter-array.png" alt-text="Condition filter for a .pdf file in a folder.":::
 
-For example, suppose you have a logic app that needs to send an email based on certain fields being found in an Event Grid trigger. You'd create a condition in your logic app that could check the event data, and conditionally call an action.
+For example, suppose you have a logic app that needs to send an email based on certain fields being found in an Event Grid trigger. You'd create a condition in your logic app that could check the event data and conditionally call an action.
 
 ## Actions
 
-Logic apps provide built-in triggers and actions so you can orchestrate workflows, communicate with other apps and services, and manage or manipulate data.
+Logic apps provide built-in triggers and actions. You can use logic apps to orchestrate workflows, communicate with other apps and services, and manage or manipulate data.
 
-There are many built-in actions that you can use. Here are some examples:
+Here are some of the many built-in actions:
 
 - Azure Service Bus
 - SQL Server
@@ -29,64 +29,82 @@ Suppose you have a logic app that needs to send an email in response to an event
 
 ## JSON configuration
 
-A logic app has two different views in the Azure portal that are used for development and configuration:
+The Logic Apps Designer command bar has two views of a logic app; you can use both views for development and configuration:
 
-- **Designer view**: User interface that visually maps all triggers, actions, and connectors.
-- **Code view**: JSON configuration that allows any field to be edited in a code editor.
+- **Designer**: Graphical interface for mapping all triggers, actions, and connectors.
+- **Code view**: JSON format of your logic app configuration, which enables you to edit any trigger, event, connection, or related field you've mapped.
 
-![Choice of two views for a logic app](../media/4-code-designer-view.png)
+:::image type="content" source="../media/4-code-designer-view.png" alt-text="Choice of two views for a logic app.":::
 
-The following example demonstrates the JSON configuration for an Event Grid trigger. By using your logic app's JSON view, you'll become familiar with the concepts and structure. You'll then be confident to edit the JSON directly.
+In the Logic Apps Designer command bar, select **Code view** to see the JSON configuration for the Event Grid trigger you've created.
+
+Review the JSON configuration code for your event triggers, and you'll recognize the settings and concepts we've completed thus far. As you become more familiar with JSON, you will be able to confidently edit the JSON configuration directly.
 
 ``` json
-"triggers": {
-    "When_a_resource_event_occurs": {
-        "inputs": {
-            "body": {
-                "properties": {
-                    "destination": {
-                        "endpointType": "webhook",
-                        "properties": {
-                            "endpointUrl": "@{listCallbackUrl()}"
-                        }
-                    },
-                    "filter": {
-                        "includedEventTypes": [
-                            "Microsoft.Resources.ResourceActionSuccess"
-                        ]
-                    },
-                    "topic": "/subscriptions/4b7b842a-0350-11e4-8f5f-8bb9135f3a1f/resourceGroups/LogicApp-EventGrid"
-                }
-            },
-            "host": {
-                "connection": {
-                    "name": "@parameters('$connections')['azureeventgrid']['connectionId']"
-                }
-            },
-            "path": "/subscriptions/@{encodeURIComponent('4b7b842a-0350-11e4-8f5f-8bb9135f3a1f')}/providers/@{encodeURIComponent('Microsoft.Resources.ResourceGroups')}/resource/eventSubscriptions",
-            "queries": {
-                "x-ms-api-version": "2017-09-15-preview"
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {},
+        "contentVersion": "1.0.0.0",
+        "outputs": {},
+        "parameters": {
+            "$connections": {
+                "defaultValue": {},
+                "type": "Object"
             }
         },
-        "splitOn": "@triggerBody()",
-        "type": "ApiConnectionWebhook"
-    }
-},
-"parameters": {
-    "$connections": {
-        "value": {
-            "azureeventgrid": {
-                "connectionId": "/subscriptions/4b7b842a-0350-11e4-8f5f-8bb9135f3a1f/resourceGroups/LogicApp-EventGrid/providers/Microsoft.Web/connections/azureeventgrid",
-                "connectionName": "azureeventgrid",
-                "id": "/subscriptions/4b7b842a-0350-11e4-8f5f-8bb9135f3a1f/providers/Microsoft.Web/locations/northeurope/managedApis/azureeventgrid"
+        "triggers": {
+            "When_a_resource_event_occurs": {
+                "inputs": {
+                    "body": {
+                        "properties": {
+                            "destination": {
+                                "endpointType": "webhook",
+                                "properties": {
+                                    "endpointUrl": "@{listCallbackUrl()}"
+                                }
+                            },
+                            "filter": {
+                                "includedEventTypes": [
+                                    "Microsoft.Resources.ResourceActionSuccess",
+                                    "Microsoft.Resources.ResourceDeleteSuccess",
+                                    "Microsoft.Resources.ResourceWriteSuccess"
+                                ]
+                            },
+                            "topic": "/subscriptions/826d0748-8207-40ad-9e9c-44be4fa3f764/resourceGroups/learn-d022bcb1-0ce2-4e71-99a6-2ddd19e85389"
+                        }
+                    },
+                    "host": {
+                        "connection": {
+                            "name": "@parameters('$connections')['azureeventgrid']['connectionId']"
+                        }
+                    },
+                    "path": "/subscriptions/@{encodeURIComponent('826d0748-8207-40ad-9e9c-44be4fa3f764')}/providers/@{encodeURIComponent('Microsoft.Resources.ResourceGroups')}/resource/eventSubscriptions",
+                    "queries": {
+                        "x-ms-api-version": "2017-09-15-preview"
+                    }
+                },
+                "splitOn": "@triggerBody()",
+                "type": "ApiConnectionWebhook"
+            }
+        }
+    },
+    "parameters": {
+        "$connections": {
+            "value": {
+                "azureeventgrid": {
+                    "connectionId": "/subscriptions/826d0748-8207-40ad-9e9c-44be4fa3f764/resourceGroups/learn-d022bcb1-0ce2-4e71-99a6-2ddd19e85389/providers/Microsoft.Web/connections/azureeventgrid",
+                    "connectionName": "azureeventgrid",
+                    "id": "/subscriptions/826d0748-8207-40ad-9e9c-44be4fa3f764/providers/Microsoft.Web/locations/westus/managedApis/azureeventgrid"
+                }
             }
         }
     }
 }
 ```
 
-An extension is also available for Visual Studio Code to enable you to edit your logic apps. You can download and install this extension from the Visual Studio Marketplace or directly from inside Visual Studio Code.
+An extension is also available to enable you to edit your logic apps in Visual Studio Code. You can download and install this extension from the Visual Studio Marketplace or directly from inside Visual Studio Code.
 
 :::image type="content" source="../media/4-find-install-logic-apps-extension.png" alt-text="Azure Logic Apps in a list of Visual Studio Code extensions." loc-scope="vs-code":::
 
-Let's use the designer view in the portal to update the logic app to respond to triggers.
+Let's use the **Designer view** in the Azure portal to configure the logic app to respond to triggers.

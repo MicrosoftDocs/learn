@@ -375,7 +375,7 @@ Now you can change the application's data and observe how to the UI automaticall
 
 After the database is updated, the UI looks something like the following screenshot:
 
-![End state of serverless web app](../media/serverless-app-end-state.png)
+![End state of serverless web app.](../media/serverless-app-end-state.png)
 
 When you're done, stop the running processes:
 

@@ -8,19 +8,19 @@ You need to create another HTTP-triggered Azure Function. These instructions are
 
 1. Click on **View** then **Command Palette**, then search for and select **Azure Functions: Create Function...**
 
-    ![Create New Function dialog in the top of the Visual Studio Code window](../media/4.create-function.png)
+    ![Create New Function dialog in the top of the Visual Studio Code window.](../media/4.create-function.png)
 
 2. Select the folder where you originally created the function project.
 
-    ![Select Folder dialog showing the current folder location](../media/4.select-current-project.png)
+    ![Select Folder dialog showing the current folder location.](../media/4.select-current-project.png)
 
 3. Select the **HTTP Trigger** option.
 
-    ![Select HTTP trigger from the list of available triggers, including blob, queue, and timer triggers, along with three options for changing various settings, like project runtime, project language, and template filter](../media/4.select-trigger.png)
+    ![Select HTTP trigger from the list of available triggers, including blob, queue, and timer triggers, along with three options for changing various settings, like project runtime, project language, and template filter.](../media/4.select-trigger.png)
 
 4. Type `RespondToSlackCommand` as the name of your function.
 
-    ![Choose Name dialog with MojifyImage provided in the text field](../media/4.choose-function-name.png)
+    ![Choose Name dialog with MojifyImage provided in the text field.](../media/4.choose-function-name.png)
 
 5. Choose **Anonymous** as the authentication level.
 

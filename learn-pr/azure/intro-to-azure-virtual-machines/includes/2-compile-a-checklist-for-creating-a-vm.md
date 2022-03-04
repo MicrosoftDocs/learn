@@ -148,7 +148,7 @@ When you create disks, you will have two options for managing the relationship b
 | Option | Description |
 |--------|-------------|
 | **Unmanaged disks** | With unmanaged disks, you are responsible for the storage accounts that are used to hold the VHDs that correspond to your VM disks. You pay the storage account rates for the amount of space you use. A single storage account has a fixed-rate limit of 20,000 I/O operations/sec. This means that a storage account is capable of supporting 40 standard virtual hard disks at full utilization. If you need to scale out with more disks, then you'll need more storage accounts, which can get complicated. |
-| **Managed disks** | Managed disks are the **newer and recommended disk storage model**. They elegantly solve this complexity by putting the burden of managing the storage accounts onto Azure. You specify the size of the disk, up to 4 TB, and Azure creates and manages both the disk _and_ the storage. You don't have to worry about storage account limits, which makes managed disks easier to scale out. |
+| **Managed disks** | Managed disks are the **newer and recommended disk storage model**. They elegantly solve this complexity by putting the burden of managing the storage accounts onto Azure. You specify the size of the disk, up to 4 TB per disk, and Azure creates and manages both the disk _and_ the storage. You don't have to worry about storage account limits, which makes managed disks easier to scale out. |
 
 ### Select an operating system
 

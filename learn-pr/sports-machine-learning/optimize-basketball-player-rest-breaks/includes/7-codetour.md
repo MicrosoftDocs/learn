@@ -27,4 +27,4 @@ If at any point you want to stop using CodeTour, select the red square next to t
 
 When you've finished a step in CodeTour, the next one will be available for you to start. Each CodeTour step guides you through creating a portion of the functionality for this app without giving you the exact code. If you get stuck, remember that you can always take a look at this Learn module or at the `complete-code` branch in the repository you cloned.
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2021 Warner Bros. Ent. All Rights Reserved

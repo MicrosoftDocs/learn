@@ -13,4 +13,4 @@ There is much more you can do with Bash. We've gotten comfortable using Bash as 
 - [Bash Academy](https://guide.bash.academy/)
 - [Bash Guide for Beginners](http://tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
 - [Learning the Shell](http://linuxcommand.org/lc3_learning_the_shell.php)
-- [Intro to Bash for chemistry students](https://erastova.xyz/teaching/intro-to-bash/)
+- [Intro to Bash for chemistry students](https://erastova.files.wordpress.com/2019/09/introbash.pptx)

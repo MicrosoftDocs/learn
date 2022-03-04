@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.explore-azure-storage
+metadata:
+  title: Explore Azure for SAP storage
+  description: "This module explores the use of Azure he storage component to design scalable, performant, and resilient SAP deployments in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 01/20/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore Azure for SAP storage
+summary: This module explores the use of Azure he storage component to design scalable, performant, and resilient SAP deployments in Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore Azure Storage types.
+  - Examine general database sizing.
+  - Examine SAP HANA Azure virtual machine storage configurations.
+  - Explore solutions with Premium Storage and Azure Write Accelerator for Azure M-Series virtual machines.
+  - Examine sizing for HANA databases on Azure NetApp Files.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/3-explore-azure-storage.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.explore-azure-storage.introduction
+- learn.wwl.explore-azure-storage.types
+- learn.wwl.explore-azure-storage.files
+- learn.wwl.explore-azure-storage.examine-azure-virtual-machine-disks
+- learn.wwl.explore-azure-storage.recognize-virtual-machine-images-disks
+- learn.wwl.explore-azure-storage.explore-managed-unmanaged-disks
+- learn.wwl.explore-azure-storage.explore-caching-for-virtual-machines-data-disks
+- learn.wwl.explore-azure-storage.explore-write-accelerator
+- learn.wwl.explore-azure-storage.examine-general-database-sizing
+- learn.wwl.explore-azure-storage.examine-azure-virtual-machine-storage-considerations
+- learn.wwl.explore-azure-storage.examine-sap-hana-dynamic-tiering-v2
+- learn.wwl.explore-azure-storage.virtual-machine-disks-best-practices
+- learn.wwl.explore-azure-storage.virtual-machine-nfs-storage
+- learn.wwl.explore-azure-storage.virtual-machine-smb-storage
+- learn.wwl.explore-azure-storage.examine-sap-hana-azure-virtual-machine-storage-configurations
+- learn.wwl.explore-azure-storage.explore-solutions-premium-storage-azure-write-accelerator-for-azure-m-series-vir
+- learn.wwl.explore-azure-storage.ultra-disk-storage-configuration-for-sap-hana
+- learn.wwl.explore-azure-storage.explore-nfs-v4-1-volumes-azure-netapp-files
+- learn.wwl.explore-azure-storage.examine-sizing-for-hana-databases-azure-netapp-files
+- learn.wwl.explore-azure-storage.knowledge-check
+- learn.wwl.explore-azure-storage.summary
+badge:
+  uid: learn.wwl.explore-azure-storage.badge

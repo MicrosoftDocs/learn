@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-ad-privileged-identity-management.scope
+title: Configure privileged identity management scope
+metadata:
+  title: Configure privileged identity management scope
+  description: "Configure privileged identity management scope"
+  ms.date: 01/04/2022
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-scope.md)]

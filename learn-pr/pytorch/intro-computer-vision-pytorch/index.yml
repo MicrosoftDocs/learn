@@ -5,16 +5,18 @@ metadata:
   description: Learn how to perform different computer vision tasks using PyTorch.
   ms.date: 06/04/2020
   author: shwars
-  ms.author: dmitryso
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Introduction to Computer Vision with PyTorch 
-summary:   In this module, you will get an introduction to Computer Vision using one of the most popular deep learning frameworks, PyTorch! We'll use image classification tasks to learn about convolutional neural networks, and then see how pre-trained networks and transfer learning can improve our models and solve real-world problems.
+summary: We'll learn about different computer vision tasks and focus on image classification, learning how to use neural networks to classify handwritten digits, as well as some real-world images, such as photographs of cats and dogs. We'll be using one of the most popular deep learning frameworks, PyTorch!
 abstract: | 
   In this module you will:
-  - Learn how to build computer vision machine learning models
-  - Learn how to represent images as tensors
-  - Learn how to build Dense Neural Networks and Convolutional Neural Networks
+  - Learn about computer vision tasks most commonly solved with neural networks
+  - Understand how Convolutional Neural Networks (CNNs) work
+  - Train a neural network to recognize handwritten digits and classify cats and dogs.
+  - Learn how to use Transfer Learning to solve real-world classification problems with PyTorch
 iconUrl: /learn/achievements/pytorch-computer-vision.svg
 levels:
 - beginner
@@ -24,17 +26,18 @@ roles:
 - student
 products:
 - azure
+- azure-machine-learning
 prerequisites: |
-  - Basic Python knowledge
-  - Basic knowledge about how to use Jupyter Notebooks
-  - Basic understanding of machine learning
+  - Basic knowledge of Python and Jupyter Notebooks
+  - Familiarity with PyTorch framework, including tensors, basics of back propagation and building models
+  - Understanding machine learning concepts, such as classification, train/test dataset, accuracy, etc.
 
 units:
 - learn.pytorch.intro-computer-vision.introduction
 - learn.pytorch.intro-computer-vision.image-data
 - learn.pytorch.intro-computer-vision.train-dense-neural-networks
-- learn.pytorch.intro-computer-vision.multilayer-dense-neural-networks
 - learn.pytorch.intro-computer-vision.convolutional-networks
+- learn.pytorch.intro-computer-vision.multilayer-convolutions
 - learn.pytorch.intro-computer-vision.transfer-learning
 - learn.pytorch.intro-computer-vision.mobilenet
 - learn.pytorch.intro-computer-vision.summary

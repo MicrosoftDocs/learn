@@ -4,23 +4,24 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/15/2021
+  ms.date: 01/04/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "Your organization has an existing frequently asked questions (FAQ) document. You need to create a QnA Maker knowledge base that includes the questions and answers from the FAQ with the least possible effort. What should you do?"
+  - content: "Your organization has an existing frequently asked questions (FAQ) document. You need to create a knowledge base that includes the questions and answers from the FAQ with the least possible effort. What should you do?"
     choices:
     - content: "Create an empty knowledge base, and then manually copy and paste the FAQ entries into it."
       isCorrect: false
       explanation: "Incorrect. While you could do it this way, importing there's an option that requires less effort."
     - content: "Import the existing FAQ document into a new knowledge base."
       isCorrect: true
-      explanation: "Correct. You can import question and answer pairs from an existing FAQ document into a QnA Maker knowledge base."
+      explanation: "Correct. You can import question and answer pairs from an existing FAQ document into a question answering knowledge base."
     - content: "Import a pre-defined chit-chat data source."
       isCorrect: false
       explanation: "Incorrect. A pre-defined chit-chat data source is unlikely to include relevant question and answer pairs for your FAQ."

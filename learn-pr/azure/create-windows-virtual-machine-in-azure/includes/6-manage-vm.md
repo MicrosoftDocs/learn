@@ -4,13 +4,13 @@ Making adjustments to server configuration is commonly performed with equipment 
 
 You've already seen some of the basic information and management options in the **Overview** panel for the virtual machine. Let's explore network configuration a bit more.
 
-## Opening ports in Azure VMs
+## Open ports in Azure VMs
 
-By default, new VMs are locked down. 
+By default, new VMs are locked down.
 
-Apps can make outgoing requests, but the only inbound traffic allowed is from the virtual network (e.g. other resources on the same local network), and from Azure's Load Balancer (probe checks).
+Apps can make outgoing requests, but the only inbound traffic allowed is from the virtual network (for example, other resources on the same local network), and from Azure's Load Balancer (probe checks).
 
-There are two steps to adjusting the configuration to support FTP. When you create a new VM you have an opportunity to open a few common ports (RDP, HTTP, HTTPS, and SSH). However, if you require other changes to the firewall, you will need to do them yourself.
+There are two steps to adjusting the configuration to support FTP. When you create a new VM, you have an opportunity to open a few common ports (RDP, HTTP, HTTPS, and SSH). However, if you require other changes to the firewall, you will need to do them yourself.
 
 The process for this involves two steps:
 
@@ -19,9 +19,9 @@ The process for this involves two steps:
 
 ### What is a Network Security Group?
 
-Virtual networks (VNets) are the foundation of the Azure networking model and provide isolation and protection. Network Security Groups (NSGs) are the main tool you use to enforce and control network traffic rules at the networking level. NSGs are an optional security layer that provides a software firewall by filtering inbound and outbound traffic on the VNet. 
+Virtual networks (VNets) are the foundation of the Azure networking model and provide isolation and protection. Network Security Groups (NSGs) are the main tool you use to enforce and control network traffic rules at the networking level. NSGs are an optional security layer that provides a software firewall by filtering inbound and outbound traffic on the VNet.
 
-Security groups can be associated to a network interface (for per-host rules), a subnet in the virtual network (to apply to multiple resources), or both levels. 
+Security groups can be associated to a network interface (for per-host rules), a subnet in the virtual network (to apply to multiple resources), or both levels.
 
 #### Security group rules
 
@@ -36,7 +36,7 @@ Each security group has a set of default security rules to apply the default net
 For inbound traffic, Azure processes the security group associated to the subnet, then the security group applied to the network interface. Outbound traffic is processed in the opposite order (the network interface first, followed by the subnet).
 
 > [!WARNING]
-> Keep in mind that security groups are optional at both levels. If no security group is applied then **all traffic is allowed** by Azure. If the VM has a public IP, this could be a serious risk particularly if the OS doesn't provide some sort of firewall.
+> Keep in mind that security groups are optional at both levels. If no security group is applied, then **all traffic is allowed** by Azure. If the VM has a public IP, this could be a serious risk, particularly if the OS doesn't provide some sort of firewall.
 
 The rules are evaluated in _priority-order_, starting with the **lowest priority** rule. Deny rules always **stop** the evaluation. For example, if an outbound request is blocked by a network interface rule, any rules applied to the subnet will not be checked. In order for traffic to be allowed through the security group, it must pass through _all_ applied groups.
 

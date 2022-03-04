@@ -18,13 +18,13 @@ Razor directives are component markup used to add C# inline with HTML. With dire
 
 Code directives should be familiar to developers who have used Razor in MVC or Pages.
 
-You can use `\@expression()` to add a C# statement inline with HTML. If you require more code, use the `\@code` directive to add multiple statements enclosed by parentheses.
+You can use `@expression()` to add a C# statement inline with HTML. If you require more code, use the `@code` directive to add multiple statements enclosed by parentheses.
 
-You can also add an `\@functions` section to the template for methods and properties. They're added to the top of the generated class, where the document can reference them.
+You can also add an `@functions` section to the template for methods and properties. They're added to the top of the generated class, where the document can reference them.
 
 ### Page directive
 
-The `\@Page` directive is special markup that identifies a component as a page. Use this directive to specify a route. The route maps to an attribute route that the Blazor engine recognizes to register and access the page.
+The `@Page` directive is special markup that identifies a component as a page. Use this directive to specify a route. The route maps to an attribute route that the Blazor engine recognizes to register and access the page.
 
 ## Razor data binding
 
@@ -32,4 +32,4 @@ Within Razor components, you can data bind HTML elements to C# fields, propertie
 
 Data is pushed from HTML to .NET when a component is rendered. Components render themselves after event-handler code executes. That's why property updates are reflected in the UI immediately after an event handler is triggered.
 
-Use `\@bind` markup to bind a C# variable to an HTML object. You define the C# variable by name as a string in the HTML. You'll see an example of data binding in the following exercise.
+Use `@bind` markup to bind a C# variable to an HTML object. You define the C# variable by name as a string in the HTML. You'll see an example of data binding in the following exercise.

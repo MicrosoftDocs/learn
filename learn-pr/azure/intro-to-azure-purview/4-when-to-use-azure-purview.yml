@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-purview.when-to-use-azure-purview
+title: When to use Azure Purview
+metadata:
+  unitType: learning-content
+  title: when-to-use-azure-purview
+  description: "Learn some key scenarios where Azure Purview is the right choice."
+  ms.date: 8/19/2021
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-when-to-use-azure-purview.md)]

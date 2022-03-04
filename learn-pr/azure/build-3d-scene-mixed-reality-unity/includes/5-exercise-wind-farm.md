@@ -1,4 +1,4 @@
-Unity Prefabs let you to create, configure, and store a GameObject as a reusable project asset. The dynamic terrain Prefab Asset is built using the Microsoft Maps SDK and connects to the Bing Maps 3D service. To get started, open up the blank **MainScene** we've included for you to develop throughout the learning path.
+Unity Prefabs let you create, configure, and store a GameObject as a reusable project asset. The dynamic terrain Prefab Asset is built using the Microsoft Maps SDK and connects to the Bing Maps 3D service. To get started, open up the blank **MainScene** we've included for you to develop throughout the learning path.
 
 ## Open the MainScene scene
 
@@ -25,7 +25,7 @@ You now have the static terrain Prefab loaded and available for use in your app.
 
 ## Create Bing Maps account
 
-If you haven’t already, you need to [create a Bing Maps account](/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).  You'll use that account to access the Microsoft Bing Maps Dev Center to generate a **Developer Key**, which is a code used to authenticate with the map service. The app you build for the HoloLens will connect to that map service using your Bing Maps account.  
+If you haven’t already, you need to [create a Bing Maps account](/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).  You'll use that account to access the Microsoft Bing Maps Dev Center to generate a **Developer Key**, which is a code used to authenticate with the map service. The app you build will connect to that map service using your Bing Maps account.  
 
 When you create a Developer Key, be sure to select Basic as the key type and **Windows Application** as the Application Type.
 

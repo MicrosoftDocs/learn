@@ -9,9 +9,10 @@ metadata:
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 5
+  ms.custom: team=nextgen
+durationInMinutes: 10
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/computer-vision-pytorch/6-transfer-learning.ipynb
+notebook: notebooks/6-transfer-learning.ipynb
 quiz:
   title: Check your knowledge
   questions:
@@ -29,4 +30,3 @@ quiz:
         - content: "less than 1000"
           isCorrect: false
           explanation: "Number of classes in pre-trained network is not important since we are training our own final classifier"
-

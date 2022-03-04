@@ -8,11 +8,11 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select the function app that you created in the previous exercise.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**, and then select the function app that you created in the previous exercise. Your **Function App** pane appears.
 
-1. Under **Development Tools**, select **Console**.
+1. In the middle menu bar, under **Development Tools**, select **Console**. The **Console** pane appears for your function app.
 
-1. Verify that the console window opens in the _D:\home\site\wwwroot_ folder, then run the following commands to install the libraries that are required for this sample function app.
+1. Verify that the console window opens in the _C:\home\site\wwwroot_ folder, then run the following commands to install the libraries that are required for this sample function app.
 
     1. Run the following command to install the _typescript_ library, which is a required dependency for static typing.
 
@@ -26,7 +26,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
         npm install moment
         ```
 
-    1. These commands may take a few seconds to complete, and the node package manager may display some warnings that you can ignore.
+        These commands may take a few seconds to complete, and the node package manager may display some warnings that you can ignore.
 
 1. Wait until all packages have finished installing, then close the console window.
 
@@ -35,15 +35,21 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 ## Add an escalation activity to your function app
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**, and then select your function app. Your **Function App** pane appears.
 
-1. In the Azure portal, under **Functions**, select **Functions**, and then select **Add**.
+1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
 
-1. Select the **Durable Functions activity** template. This template creates a durable function that is run when an Activity is called by an orchestrator function.
+1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
-1. Name the function **Escalation**, and then select **Add**.
+1. Under **Select a template**, in the **Filter** box, enter *Durable Functions activity*, and select that template from the list. This template creates a durable function that is run when an activity is called by an orchestrator function.
 
-1. When the function is created, select **Code + Test**, and the code for the **index.js** file appears in the editor. Replace the existing code with the following code.
+1. Under **Template details**, for the **New Function** field, enter *Escalation* for the name of the function, and select **Create**. The **escalation** pane appears for your function.
+
+1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
+
+    The code for the **index.js** file appears in the editor.
+    
+1. Replace the existing code with the following code.
 
     ``` javascript
     module.exports = async function (context) {
@@ -53,17 +59,21 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
     This code returns a message indicating that the workflow has been escalated. In a production system, this function would contain the logic to remind the recipient, or reassign the task.
 
-1. Select **Save** to save your new function.
+1. In the top menu bar, select **Save** to save your new function.
 
 ## Update the orchestration function to use the escalation function
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**, and then select your function app. Your **Function App** pane appears.
 
-1. In the Azure portal, under **Functions**, select **Functions**, and then select your **OrchFunction** function that you created in the previous exercise.
+1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
 
-1. When the function is created, select **Code + Test**, and the code for the **index.js** file appears in the editor.
+1. Select your **OrchFunction** function that you created in the previous exercise. The **OrchFunction** function pane appears.
 
-1. Add a reference to the **moment** library.
+1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
+
+    The code for the **index.js** file appears in the editor.
+
+1. Add the following reference to the **moment** library.
 
     ```javascript
     const moment = require("moment");
@@ -98,17 +108,19 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
     To keep things brief for the purposes of this exercise, if the **Approval** function doesn't respond within 20 seconds, the **Escalation** function is called. The code also changes the call to **Approval** to wait for an external input. This way we can control when the response comes back for testing purposes.
 
-1. Select **Save**.
+1. In the top menu bar, select **Save**.
 
 ## Verify that the Durable Functions workflow starts
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your function app.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**, and then select your function app. Your **Function App** pane appears.
 
-1. Under **Overview**, select **Restart**, and then select **Yes** when prompted to restart. Wait for the restart to complete before continuing.
+1. On the **Overview** pane, on the top menu bar, select **Restart**, and then select **Yes** when prompted to restart. Wait for the restart to complete before continuing. Your **Function App** pane reappears.
 
-1. Under **Functions**, select **Functions**, and then select your **HttpStart** function.
+1. In the middle menu pane, Under **Functions**, select **Functions**. The **Functions** pane appears for your function app.
 
-1. Select **Get Function URL**, and copy the URL. Your URL should resemble the following example.
+1. Select your **HttpStart** function. The **HttpStart** pane appears.
+
+1. On the top menu bar, select **Get Function Url**, and copy the URL. Your URL should resemble the following example.
 
     ```
     https://example.azurewebsites.net/api/orchestrators/{functionName}?code=AbCdEfGhIjKlMnOpQrStUvWxYz==
@@ -150,7 +162,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
     }
     ```
 
-1. If you wait for 20 seconds and refresh the browser window, the timeout should have been reached, and the workflow will call the **Escalate** activity. You'll see a response that should resemble the following example.
+1. Wait for 20 seconds and refresh the browser window. The timeout will have been reached, and the workflow will call the **Escalate** activity. You'll see a response that should resemble the following example.
 
     ```json
     {

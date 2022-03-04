@@ -4,9 +4,9 @@ title: How does GitHub authentication work?
 metadata:
   title: How does GitHub authentication work?
   description: Discover the ways in which administrators can configure GitHub authentication.
-  ms.date: 11/16/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  ms.date: 8/23/2021
+  author: lucie-docs
+  ms.author: lucielenaour
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

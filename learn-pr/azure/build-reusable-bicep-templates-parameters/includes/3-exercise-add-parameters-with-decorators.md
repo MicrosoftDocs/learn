@@ -44,7 +44,7 @@ During the process, you'll:
 
 1. In the *main.bicep* file in Visual Studio Code, add the `@description` decorator directly above every parameter that you created in the previous task. The parameters should look similar to this example:
 
-   :::code language="plaintext" source="code/3-template.bicep" range="1,7-9,12-14,17-26" highlight="1,4,7,10,16" :::
+   :::code language="bicep" source="code/3-template.bicep" range="1,7-9,12-14,17-26" highlight="1,4,7,10,16" :::
 
 1. Save the changes to the file.
 
@@ -54,7 +54,7 @@ Your toy company will deploy the HR application to three environments: dev, test
 
 1. In the *main.bicep* file in Visual Studio Code, find the `environmentName` parameter. Insert an `@allowed` decorator underneath its `@description` decorator. After you're finished, the parameter should look like this example:
 
-   :::code language="plaintext" source="code/3-template.bicep" range="1-7" highlight="2-6" :::
+   :::code language="bicep" source="code/3-template.bicep" range="1-7" highlight="2-6" :::
 
    Notice that you're limiting the parameter value for `environmentName` parameter to only `dev`, `test`, and `prod`. If more environments are added in the future, you'll need to update this list.
 
@@ -66,7 +66,7 @@ Your `solutionName` parameter is used to generate the names of resources. You wa
 
 1. In the *main.bicep* file in Visual Studio Code, find the `solutionName` parameter. Add `@minLength` and `@maxLength` decorators underneath the `@description` decorator. After you're finished, the parameter should look like this example:
 
-   :::code language="plaintext" source="code/3-template.bicep" range="9-12" highlight="2-3" :::
+   :::code language="bicep" source="code/3-template.bicep" range="9-12" highlight="2-3" :::
 
 1. Save the changes to the file.
 
@@ -76,7 +76,7 @@ Next, you'll ensure that the `appServicePlanInstanceCount` parameter only allows
 
 1. In the *main.bicep* file in Visual Studio Code, find the `appServicePlanInstanceCount` parameter. Add `@minValue` and `@maxValue` decorators underneath the `@description` decorator. After you're finished, the parameter should look like this example:
 
-   :::code language="plaintext" source="code/3-template.bicep" range="14-17" highlight="2-3" :::
+   :::code language="bicep" source="code/3-template.bicep" range="14-17" highlight="2-3" :::
 
 1. Save the changes to the file.
 

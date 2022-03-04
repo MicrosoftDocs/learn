@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Understand the data in the missions DataFrame
 durationInMinutes: 4
 content: |

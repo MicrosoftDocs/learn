@@ -123,10 +123,6 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
 
-1. In the file **`azuresqldatabase.yml`** update `bus-server.database.windows.net` to the name of your Azure SQL Database logical server (for example, **bus-server123456.database.windows.net**).
-
-1. Save the file.
-
 1. Select the **Source Control** icon on the left-hand taskbar.
 
 1. In the *Message* box, enter "Enable database yaml" or some other message and select the **checkmark**.
@@ -222,5 +218,8 @@ The final step is to load in the route reference data and identify a bus route t
        @payload
     GO
     ```
+
+    > [!NOTE]
+    > If you get errors that some artifacts are not found (for example, RouteData or web.AddBusData), be sure to confirm that the build successfully occurred in the previous section, *Configure database schema using GitHub Actions*.
 
 1. Finally, press <kbd>Ctrl+C</kbd> to exit sqlcmd, and run **`pwsh`** to switch back to PowerShell.

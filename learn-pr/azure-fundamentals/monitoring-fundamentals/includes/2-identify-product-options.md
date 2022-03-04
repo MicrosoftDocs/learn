@@ -8,6 +8,8 @@ Several basic questions or concerns face all companies that use the cloud.
 - How can we quickly determine the cause of an outage?
 - How can we learn about planned downtime?
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWHb7u]
+
 Fortunately, by using a combination of monitoring solutions on Azure, you can:
 - Gain answers, insights, and alerts to help ensure that you've optimized your cloud usage.
 - Ascertain the root cause of unplanned issues.
@@ -16,6 +18,8 @@ Fortunately, by using a combination of monitoring solutions on Azure, you can:
 ## The product options
 
 At a high level, there are three primary Azure monitoring offerings, each of which is aimed at a specific audience and use case and provides a diverse set of tools, services, programmatic APIs, and more.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGw3I]
 
 ### Azure Advisor
 

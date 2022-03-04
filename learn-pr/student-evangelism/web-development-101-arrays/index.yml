@@ -2,12 +2,13 @@
 uid: learn.student-evangelism.web-development-101-loops-arrays
 metadata:
   title: JavaScript arrays and loops
-  description: Learn how to manipulate and store data within JavaScript.
+  description: JavaScript is a programming language used for web development as well as the server. Learn how to manipulate and store data within JavaScript.
   ms.date: 05/25/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: JavaScript arrays and loops
 summary: Learn how to manipulate and store data within JavaScript.
 abstract: |

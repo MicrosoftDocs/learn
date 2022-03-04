@@ -52,7 +52,7 @@ When you create a function and provide the code that it will execute, you also i
 
 Serverless functions are frequently used to carry out stand-alone tasks such as nightly backups and billing. They are also used to connect other cloud services and compose rich solutions by using cloud services as building blocks. Figure 12 introduces one such solution that is used to combine several Azure services to monitor polar-bear activity in the Arctic. An Azure Function plays a key role in the architecture by taking the output from Azure Stream Analytics (triggered by an HTTP call), retrieving a photo from Azure Blob Storage, and submitting the photo to a model trained with the Azure Custom Vision Service, which uses artificial intelligence (AI) to determine whether the photo contains a polar bear. The function is the glue that binds Stream Analytics, Blob Storage, and the Custom Vision Service together.
 
-![Figure 12: Using an Azure Function to connect other Azure services](../media/fig5-12.png)
+![Figure 12: Using an Azure Function to connect other Azure services.](../media/fig5-12.png)
 
 _Figure 12: Using an Azure Function to connect other Azure services._
 
@@ -62,7 +62,7 @@ Some serverless-computing services let customers automate business workflows wit
 
 Figure 13 shows one such workflow in the Azure Logic Apps designer<sup>[1][^1]</sup>. When an e-mail arrives, the Logic App springs into action and checks for a key phrase in the email's subject line and the presence of an attachment. If both conditions are satisfied, the Logic App invokes an Azure Function to strip any HTML from the body of the e-mail. It then deposits the sanitized email and any attachments that accompanied it in Azure Blob Storage and sends an email with links to the relevant documents in Blob Storage notifying interested parties that the information is available and awaiting review. This example combines two serverless paradigms -- a Logic App that executes actions without any code (at least not code that you or anyone in your organization wrote) and an Azure Function containing code that you provided to the customize the workflow -- and is representative of the shift that is taking place in cloud computing from do-it-yourself virtual machines to higher-level abstractions that allow organizations to focus their energies on solving business problems rather than managing virtual machines and installing and maintaining runtimes.
 
-![Figure 13: Defining a workflow in Azure Logic Apps](../media/fig5-13.png)
+![Figure 13: Defining a workflow in Azure Logic Apps.](../media/fig5-13.png)
 
 _Figure 13: Defining a workflow in Azure Logic Apps._
 

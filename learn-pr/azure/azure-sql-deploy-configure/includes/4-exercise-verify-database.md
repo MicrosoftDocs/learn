@@ -49,7 +49,7 @@ Now that you're connected, you might want an easy way to access scripts and Jupy
 
 1. Browse to where you extracted the zip file of the resources for this exercise. If you followed the prerequisites, the path should be similar to `C:\Users\<machine-username>\mslearn-azure-sql-fundamentals`. When you're there, select **Select Folder**.  
 
-1. Next, select the **Explorer** icon from the left taskbar to browse through the files in the module. Note that this zip file contains all of the necessary resources for the learning path about Azure SQL fundamentals, so you need to download and configure this only once!
+1. Next, select the **Explorer** icon from the left taskbar to browse through the files in the module. Note that this folder contains all of the necessary resources for the learning path about Azure SQL fundamentals, so you only need to download and configure this once!
 
     Throughout the module and learning path exercises, you'll be instructed at various points to open a notebook (file ending in `.ipynb`). You can access the notebook from here directly. Alternatively, you can access it from the **Notebook** icon tab.  
 
@@ -64,7 +64,7 @@ There are two options for completing this exercise:
 
 Both exercises contain the same commands and content, so you can choose the option that you prefer.
 
-### Option 1: T-SQL is SSMS
+### Option 1: T-SQL in SSMS
 
 In this option, you'll walk through some common queries against system functions, dynamic management views (DMVs), and catalog views that you can use after deployment in SSMS. You'll see which ones work the same as SQL Server, which ones don't, and which ones are new to Azure SQL.
 

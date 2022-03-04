@@ -5,11 +5,10 @@ metadata:
   title: Implement tab navigation with TabbedPage
   description: "Move the user between several top-level pages by using tab navigation."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 durationInMinutes: 10
 content: |
   [!include[](includes/5-implement-tab-navigation.md)]

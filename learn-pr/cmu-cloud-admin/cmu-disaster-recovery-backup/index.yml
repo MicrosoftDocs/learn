@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
+  ms.custom: team=nextgen
 title: Disaster recovery and backup
 summary: What do you do when something goes wrong with your resources on the cloud? How do you prepare for such an issue? Learn about disaster backup and recovery with this module.
 abstract: | 

@@ -27,7 +27,7 @@ az group create --name IoTEdgeResources --location eastus2
 
 The resulting output should be similar to this:
 
-[![An illustration showing the creation of a resource group](../media/resource-group.png)](../media/resource-group.png)
+[![An illustration showing the creation of a resource group.](../media/resource-group.png)](../media/resource-group.png)
 
 ## Create an IoT hub
 
@@ -92,6 +92,8 @@ az deployment group create \
 Make sure that your password(**adminPasswordOrKey**) must be at least 12 characters long and have three of four of the following: lowercase characters, uppercase characters, digits, and special characters.
 
 It may take a few minutes to create and start the new virtual machine. Once the deployment is complete, you should receive JSON-formatted output in the CLI that contains the SSH information to connect to the virtual machine. Copy the value of the **public SSH** entry of the **outputs** section:
+
+[![An illustration is showing the public ssh.](../media/public-ssh.png)](../media/public-ssh.png)
 
 ## View the IoT Edge runtime status
 

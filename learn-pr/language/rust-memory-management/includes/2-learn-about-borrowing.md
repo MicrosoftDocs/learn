@@ -12,7 +12,7 @@ let greeting_reference = &greeting; // We borrow `greeting` but the string data 
 println!("Greeting: {}", greeting); // We can still use `greeting`
 ```
 
-In the above code, `greeting` was borrowed using the `&`. `greeting_reference` was of type `&String`. Since we only borrowed `greeting` and did not move ownership, `greeting` could still be used after we created `greeting_reference`.
+In the above code, `greeting` was borrowed using the `&`. `greeting_reference` was of type `&String`. Since we only borrowed `greeting` and didn't move ownership, `greeting` could still be used after we created `greeting_reference`.
 
 ## References in functions
 
@@ -32,7 +32,7 @@ fn main() {
 
 Borrowing allows us to use a value without taking full ownership. However, as we'll see, borrowing a value means we can't do everything we can do with a fully owned value.
 
-## Mutating borrowed values
+## Mutate borrowed values
 
 What happens if we try to mutate a value we borrowed?
 
@@ -47,9 +47,9 @@ fn main() {
 }
 ```
 
-This code will not compile. Instead we get the following compiler error:
+This code won't compile. Instead we get the following compiler error:
 
-```
+```output
 error[E0596]: cannot borrow `*message` as mutable, as it is behind a `&` reference
  --> src/main.rs:2:3
   |
@@ -72,14 +72,15 @@ fn change(text: &mut String) {
 }
 ```
 
-With `&` borrows known as "immutable borrows", we can read the data but we can't change it. `&mut` borrows known as mutable borrows, we can both read and write the data. 
+With `&` borrows, known as "immutable borrows," we can read the data but we can't change it. With `&mut` borrows, known as "mutable borrows," we can both read and write the data.
 
 ## Borrowing and mutable references
 
-Now we get to the real center of Rust's memory management story. Immutable and mutable references differ in one other way that has radical effects on how we build our Rust programs. When borrowing a value of any type `T`, the following rules apply:
+Now we get to the real core of Rust's memory management story. Immutable and mutable references differ in one other way that has radical effects on how we build our Rust programs. When borrowing a value of any type `T`, the following rules apply:
 
 Your code must implement *either* of the following definitions, but **not both at the same time**:
-- One or more immutable references (`&T`) 
+
+- One or more immutable references (`&T`)
 - Exactly one mutable reference (`&mut T`)
 
 The following code doesn't have allowed definitions, so the compilation fails:
@@ -134,4 +135,4 @@ fn main() {
       |                        ---- immutable borrow later used here
 ```
 
-This restriction may seem harsh at first, but this aspect of borrowing prevents Rust code from a whole host of issues including never having a race condition.
+This restriction may seem harsh at first, but this aspect of borrowing prevents Rust code from a whole host of issues, including never having data races.

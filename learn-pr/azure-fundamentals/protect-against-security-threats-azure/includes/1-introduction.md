@@ -4,7 +4,12 @@ Security is a small word for a significant concept. There are so many factors to
 
 ## Meet Tailwind Traders
 
-[!include[](../../shared/includes/tailwind-traders-overview.md)]
+[Tailwind Traders](https://www.tailwindtraders.com/?azure-portal=true) is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online.
+
+:::image type="content" source="../media/tailwind-traders-logo-bb86bf6f.png" alt-text="This is a logo for Tailwind Traders, a fictitious home improvement retailer.":::
+
+
+Tailwind Traders specializes in competitive pricing, fast shipping, and a large range of items. It's looking at cloud technologies to improve business operations and support growth into new markets. By moving to the cloud, the company plans to enhance its shopping experience to further differentiate itself from competitors.
 
 ## How will Tailwind Traders run securely in the cloud and in the datacenter?
 
@@ -18,12 +23,12 @@ Let's explore how Tailwind Traders can use some of the tools and features in Azu
 
 After completing this module, you'll be able to:
 
-* Strengthen your security posture and protect against threats by using Azure Security Center.
-* Collect and act on security data from many different sources by using Azure Sentinel.
-* Store and access sensitive information such as passwords and encryption keys securely in Azure Key Vault.
-* Manage dedicated physical servers to host your Azure VMs for Windows and Linux by using Azure Dedicated Host.
+ -  Strengthen your security posture and protect against threats by using Azure Security Center.
+ -  Collect and act on security data from many different sources by using Azure Sentinel.
+ -  Store and access sensitive information such as passwords and encryption keys securely in Azure Key Vault.
+ -  Manage dedicated physical servers to host your Azure VMs for Windows and Linux by using Azure Dedicated Host.
 
 ## Prerequisites
 
-- You should be familiar with basic computing concepts and terminology.
-- Familiarity with cloud computing is helpful but isn't necessary.
+ -  You should be familiar with basic computing concepts and terminology.
+ -  Familiarity with cloud computing is helpful but isn't necessary.

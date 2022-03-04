@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-databricks-delta-lake-architecture.describe-bronze-silver-gold-architecture
+title: Describe bronze, silver, and gold architecture
+metadata:
+  title: Describe bronze, silver, and gold architecture
+  description: "Describe bronze, silver, and gold architecture"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-describe-bronze-silver-gold-architecture.md)]

@@ -45,7 +45,7 @@ We see that this labeling attempt isn't valid using our definition - vertices 0 
 
 In fact, you can't label the vertices of this graph using just three colors; you'll need at least four colors to do that.
 
-![Figure showing a valid vertex coloring](../media/2-valid-labeling.png)
+![Figure showing a valid vertex coloring.](../media/2-valid-labeling.png)
 
 In this module, we'll consider the problem of finding a four-coloring of the graph - that is, a solution that uses, at most, four colors. (Without any constraint on the number of colors used, finding a valid graph coloring is trivial - you just assign a new label to each vertex you see!)
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.visual-studio.visual-studio-test-tools.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn how to write a test in C# and .NET, and how to use Visual Studio Test Explorer. Sharpen your test-writing skills with Fluent Assertions, data-driven tests, and mocking.
+  author: kendrahavens
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.date: 07/19/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-visual-studio
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

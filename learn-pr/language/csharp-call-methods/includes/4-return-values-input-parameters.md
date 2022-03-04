@@ -79,7 +79,11 @@ The second version of the `Next()` method specifies the maximum value as an uppe
 
 The third version of the `Next()` method specifies both the minimum and maximum values, so in this case, we can expect a random value between `50` and `100`.
 
-Learn what a method can do, whether it has overloaded versions, which data types it accepts as input parameters, and what it returns?
+Here, we've described:
+- What a method can do
+- Whether it has overloaded versions
+- Which data types it accepts as input parameters
+- Whether it has a return value, and if so, what it returns.
 
 ### Use Intellisense
 
@@ -133,7 +137,7 @@ In the *Parameters* section, we read that the `maxValue` input parameter is the 
 
 We can also read in the next line: "`maxValue` must be greater than or equal to 0." What happens if we ignore this statement? We can see in the *Exceptions* section that the method will return an `ArgumentOutOfRangeException` when `maxValue` is less than 0.
 
-Like we described earlier, docs.microsoft.com is the ultimate source of truth. It's important to take the time to read the documentation to understand how a given method will work.
+Like we described earlier, docs.microsoft.com is the source of truth for the .NET Class Library. It's important to take the time to read the documentation to understand how a given method will work.
 
 ## Recap
 

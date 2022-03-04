@@ -97,7 +97,7 @@ Now, import the Census API into the API Management gateway:
 
 1. In the **OpenAPI specification** field, paste the swagger JSON URL that you saved earlier in the exercise.
 
-    ![Importing the API](../media/3-import-api.png)
+    ![Importing the API.](../media/3-import-api.png)
 
     > [!NOTE]
     > You will notice that, when you tab out of the box, some of the other fields will be populated for you, this is because you have used OpenAPI which specifies all of the required connection details.
@@ -116,7 +116,7 @@ Let's see what data is returned in from the API by default:
 
 1. Select **Send**.
 
-    ![Default test results](../media/3-default-test-results.png)
+    ![Default test results.](../media/3-default-test-results.png)
 
 1. Notice that **x-powered-by** appears in the response, and shows that the framework is ASP.NET.
 
@@ -128,7 +128,7 @@ Now we'll add a policy to remove the **x-powered-by** header from responses sent
 
 1. Select **All operations**, and in the **Outbound processing** section, select the **</>** icon.
 
-    ![Alter Policy](../media/3-remove-header.png)
+    ![Alter Policy.](../media/3-remove-header.png)
 
 1. Replace the default `<outbound>` tag with this code:
 
@@ -149,6 +149,6 @@ You should now be able to run a test to demonstrate that the headers are removed
 
 1. Select the **GetLatestCensus** operation, and then select **Send**.
 
-    ![Headers Removed Test](../media/3-headers-removed.png)
+    ![Headers Removed Test.](../media/3-headers-removed.png)
 
 1. The **x-powered-by** header should not be in the HTTP response.

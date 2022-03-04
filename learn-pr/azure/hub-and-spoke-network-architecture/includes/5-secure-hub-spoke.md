@@ -4,7 +4,7 @@ In this unit, you'll explore secure networking in the Azure platform, see an ove
 
 ## Secure network design on Azure
 
-![Diagram of Azure network infrastructure](../media/5-secure-network.png)
+![Diagram of Azure network infrastructure.](../media/5-secure-network.png)
 
 The preceding diagram shows the Azure network infrastructure, and the methods that enable you to connect more securely your on-premises environment, Azure hosted resources, and the public internet.
 
@@ -24,7 +24,7 @@ Additionally, consider incorporating some of the following into your network arc
 - Route control, and forced tunneling, to define custom routes through your infrastructure, and ensure services can't connect to an internet device.
 - Enabling a virtual network security appliance through Azure Marketplace.
 - Using Azure ExpressRoute for a dedicated WAN link, to securely extend your on-premises networks to Azure.
-- Azure Security Center to prevent, detect, and respond to threats against your Azure services.
+- Microsoft Defender for Cloud to prevent, detect, and respond to threats against your Azure services.
 - Azure Firewall as a network security service.
 
 There's a wide variety of security solutions for your organization, many of which complement each other to provide additional layers of security. Microsoft has recommended best practices that you should align with overall. You then implement any features needed to meet your organization's internal security requirements.
@@ -57,11 +57,11 @@ Microsoft manages this network security service. It protects Azure virtual netwo
 
 Azure Firewall is a fully stateful network firewall that tracks the operating state, and the characteristics of network connections traversing it. Azure Firewall enables central control of all network communications through policy enforcement. These policies can be enforced across virtual networks, regions, and Azure subscriptions. In a hub-spoke topology, Azure Firewall is typically provisioned in the hub for complete control of traffic through the network.
 
-![Diagram showing Azure Firewall features](../media/5-azure-firewall.png)
+![Diagram showing Azure Firewall features.](../media/5-azure-firewall.png)
 
 The monitoring of Azure Firewall consists of reviewing the firewall and activity logs. Because Azure Firewall is integrated with Azure Monitor Logs, you can view the full logs there. Some logs are also available to view in the Azure portal.
 
-![Screenshot of Azure Monitor Logs](../media/5-firewall-monitor.png)
+![Screenshot of Azure Monitor Logs.](../media/5-firewall-monitor.png)
 
 The logs can be stored in an Azure Storage Account, streamed to an Azure Event Hub, or sent to Azure Monitor Logs.
 

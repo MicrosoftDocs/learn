@@ -154,7 +154,7 @@ This solution requires several Azure resources for deployment, which you create 
       --is-linux
     ```
 
-    The `--sku` argument specifies the B1 plan. This plan runs on the Basic tier.
+    The `--sku` argument specifies the B1 plan. This plan runs on the Basic tier. The `--is-linux` argument specifies to use Linux workers.
 
     > [!IMPORTANT]
     > If the B1 SKU isn't available in your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as S1 (Standard).

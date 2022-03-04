@@ -14,13 +14,13 @@ Azure has an automatic firewall for our server - preventing all external parties
 
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
-    :::image type="content" source="../media/5a-firewall.png" alt-text="Azure Database for PostgreSQL - Search for server":::
+    :::image type="content" source="../media/5a-firewall.png" alt-text="Azure Database for PostgreSQL - Search for server.":::
 
 1. In the left nav bar, under **Settings**, select **Connection security**.
 
 1. Select **Add 0.0.0.0 - 255.255.255.255**, then select **Continue**.
 
-    :::image type="content" source="../media/5b-firewall.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule":::
+    :::image type="content" source="../media/5b-firewall.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule.":::
 
 1. Select **Save**.
 

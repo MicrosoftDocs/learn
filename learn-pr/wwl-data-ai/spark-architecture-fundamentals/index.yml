@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.wwl.spark-architecture-fundamentals
+metadata:
+  title: Spark architecture fundamentals
+  description: "Spark architecture fundamentals"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Spark architecture fundamentals
+summary: Understand the architecture of an Azure Databricks Spark Cluster and Spark Jobs.
+abstract: |
+  In this module, you will:
+  - Understand the architecture of an Azure Databricks Spark Cluster
+  - Understand the architecture of a Spark Job
+prerequisites: |
+  None
+iconUrl: /learn/achievements/spark-architecture-fundamentals.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.spark-architecture-fundamentals.introduction
+- learn.wwl.spark-architecture-fundamentals.understand-architecture-of-azure-databricks-spark-cluster
+- learn.wwl.spark-architecture-fundamentals.understand-architecture-of-spark-job
+- learn.wwl.spark-architecture-fundamentals.knowledge-check
+- learn.wwl.spark-architecture-fundamentals.summary
+badge:
+  uid: learn.wwl.spark-architecture-fundamentals.badge

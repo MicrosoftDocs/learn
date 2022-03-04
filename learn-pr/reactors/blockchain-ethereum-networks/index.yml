@@ -3,11 +3,12 @@ uid: learn.reactors.blockchain-ethereum-networks
 metadata:
   title: Connect and deploy to Ethereum networks
   description: Learn about and use Ethereum networks for development, testing, and production.
-  ms.date: 01/20/2021
-  author: meaghanlewis
+  ms.date: 06/23/2021
+  author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Connect and deploy to Ethereum networks
 summary: Learn about and use Ethereum networks for development, testing, and production.
 abstract:  |
@@ -46,4 +47,3 @@ units:
 - learn.reactors.blockchain-ethereum-networks.8-summary
 badge:
   uid: learn.reactors.blockchain-ethereum-networks.badge
-hidden: true

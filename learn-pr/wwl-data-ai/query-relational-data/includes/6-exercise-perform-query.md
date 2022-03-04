@@ -11,16 +11,16 @@ To save time, the database is provisioned and populated running a script. You'll
 - Opens the firewall to allow SQL traffic from the internet.
 - Connects to the database and run a SQL script to create a table and insert data.
 
-1. Run the following *git clone* command in the Cloud Shell to clone the repository that contains the data and setup script in GitHub. The repository is copied to a local file named *sqllab*.
+1. Run the following *git clone* command in the Cloud Shell to clone the repository that contains the data and setup script in GitHub. The repository is copied to a local folder named *dp-900/sql*.
 
     ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-query-relational-data-azure.git sqllab
+    git clone https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals dp-900
     ```
 
-2. Run the following command to move to the *sqllab* folder.
+2. Run the following command to move to the *dp-900/sql* folder.
 
     ```bash
-    cd sqllab
+    cd dp-900/sql
     ```
 
 3. Run the **setup.sh** to create the Azure SQL database and server, as follows:

@@ -4,7 +4,7 @@ The first step is to create an Azure Cosmos DB account.
 
 ## What is an Azure Cosmos DB account?
 
-An Azure Cosmos DB account is an Azure resource that acts as an organizational entity for your databases. It connects your usage to your Azure subscription for billing purposes.
+An Azure Cosmos DB account is an Azure resource that acts as the organizational entity for your databases. It connects your usage to your Azure subscription for billing purposes.
 
 Each Azure Cosmos DB account is associated with one of the several data models Azure Cosmos DB supports, and you can create as many accounts as you need.
 
@@ -16,35 +16,39 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
 ## Create an Azure Cosmos DB account in the portal
 
-1. Sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
     > [!IMPORTANT]
     > Log in to the Azure portal using the link at the beginning of this exercise to ensure you are connected to the sandbox, which provides access to a Concierge Subscription.
 
 1. On the Azure portal menu, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-   ![Create a resource from Azure portal menu](../media/2-create-a-resource-azure-cosmos-db.png)
+   ![Create a resource from Azure portal menu.](../media/2-create-a-resource-azure-cosmos-db.png)
 
-1. In the left menu pane, select **Databases**, and then select **Azure Cosmos DB** under *Popular offers*. The **Select API option** pane appears.
+1. In the resource menu, select **Databases**, and then under **Azure Cosmos DB** select *Create*. The **Select API option** pane appears.
 
-1. Select **Create** within the **Core (SQL) - Recommended** box. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
+    > [!NOTE]
+    > If you do not see **Azure Cosmos DB** in the list of databases, you can use the search box to search for it.
 
-   ![Select Azure Cosmos DB](../media/2-select-database-azure-cosmos-db.png)
+1. In the **Core (SQL) - Recommended** box, select **Create**. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
 
-   If you do not see **Azure Cosmos DB** in the list of databases, you can use the search box to search for it.
+   ![Select Azure Cosmos DB.](../media/2-select-database-azure-cosmos-db.png)
 
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value | Description |
     |---|---|---|
     | **Project Details** |
-    | **Subscription** | *Concierge Subscription* | Select the Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). |
-    | **Resource Group** | *<rgn>[sandbox resource group name]</rgn>* | Here you would either create a new resource group, or select an existing one in your subscription. |
+    | Subscription | *Concierge Subscription* | Select the Concierge Subscription. If you do not see the Concierge Subscription listed, you have multiple tenants enabled on your subscription, and you need to change tenants. To do so, login again using the following portal link: [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). |
+    | Resource Group | *<rgn>[sandbox resource group name]</rgn>* | Select the existing one in your subscription. |
     | **Instance Details** |
-    | **Account Name** | *Enter a unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID. You will use this ID to complete the exercises later in this module.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 31 characters. |
-    | **Location** | *Select the region closest to you from the following list* | Select the location where the database should be located. |
-    | **Capacity mode** | *Provisioned throughput* | This is the default, and there is no need to change it. |
-    | **Apply Free Tier Discount** | *Do Not Apply* | The free tier is not necessary for this module. |
+    | Account Name | *Enter a unique name* | Enter a unique but identifiable account name. You will use this name to complete the exercises later in this module. *documents.azure.com* is appended to the account name to create your URI.<br><br>This name must be 3 to 31 characters long. Characters must be lowercase letters, numbers, and the hyphen (-) character. |
+    | Location | *Select the region closest to you from the list at the bottom of this table* | Select the location where the database should be located. |
+    | Capacity mode | *Provisioned throughput* | This is the default, and there is no need to change it. |
+    | Apply Free Tier Discount | *Do Not Apply* | The free tier is not necessary for this module. |
+    | Limit total account throughput | *Leave unchecked* | Not required for this exercise. |
+
+    [!INCLUDE[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Next: Global Distribution**.
 
@@ -53,27 +57,26 @@ You can optionally set up virtual networks and geo-redundancy during account cre
     | Setting | Value | Description |
     |---|---|---|
     | **Global Distribution** |
-    | **Geo-Redundancy** | *Disable* | This setting creates a replicated version of your database in a second (paired) region. Leave this set to disabled for now, as the database can be replicated later. |
-    | **Multi-region Writes** | *Enable* | This setting enables you to write to multiple regions at the same time. |
-
-    [!INCLUDE[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+    | Geo-Redundancy | *Disable* | This setting creates a replicated version of your database in a second (paired) region. Leave this set to disabled for now, as the database can be replicated later. |
+    | Multi-region Writes | *Enable* | This setting enables you to write to multiple regions at the same time. |
+    | Availability Zones | *Disable* | This setting is not required for this exercise. |
 
 1. Select **Review + create**.
 
-1. After the settings are validated, select **Create** to create the account.
+1. After your settings are validated, select **Create** to create your Cosmos DB account.
 
-1. The account creation takes a few minutes. Wait for the portal to display the notification that the deployment succeeded, and select the notification.
+1. This operation takes several minutes to complete. Optionally, select the notification icon to view deployment progress. Wait for the deployment to complete before continuing with this exercise.
 
-    ![Notification alert](../media/2-azure-cosmos-db-notification.png)
+    ![Screensot of the Notification icon with an alert.](../media/2-azure-cosmos-db-notification.png)
 
-1. In the notification window, select **Go to resource**.
+1. Select **Go to resource**.
 
-    ![Go to resource](../media/2-azure-cosmos-db-go-to-resource.png)
+    ![Go to resource.](../media/2-azure-cosmos-db-go-to-resource.png)
 
     The **Quick start** pane for your Azure Cosmos DB account appears.
 
-    ![The Azure portal Notifications pane](../media/2-azure-cosmos-db-account-created.png)
+    ![Screenshot of the Azure portal Notifications pane.](../media/2-azure-cosmos-db-account-created.png)
 
 ## Summary
 
-You have created an Azure Cosmos DB account, which is the first step in creating an Azure Cosmos DB database. You selected appropriate settings for your data types and set the account location to minimize latency for your users.
+You have created an Azure Cosmos DB account, the first step in creating an Azure Cosmos DB database. You selected appropriate settings for your data types, and set the account location to minimize latency for your users.

@@ -1,6 +1,6 @@
 MRTK-Unity is a Microsoft-driven project that provides a set of components and features, used to accelerate cross-platform MR app development in Unity. you'll use the MRTK to rapidly build immersive interaction with the 3D model of the wind turbine in your Scene.  In particular, the following MRTK object classes within the **Microsoft.MixedReality.Toolkit.UI** Namespace will be used in this project:    
 
-* **ObjectManipulator**: The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands. The script works with both HoloLens' gesture input and immersive headset's motion controller input.
+* **ObjectManipulator**: The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands. The script works with both HoloLens gesture input and immersive headset's motion controller input.
 
 * **BoundsControl**: Bounds Control allows to transform objects (rotate and scale) and draws a cube around the object to visualize the possibility of user triggered transform manipulation. Bounds Control provides scale and rotation handles that can be used for far and near interaction manipulation of the object. It further provides a proximity effect for scale and rotation handles that alters scaling and material.
 

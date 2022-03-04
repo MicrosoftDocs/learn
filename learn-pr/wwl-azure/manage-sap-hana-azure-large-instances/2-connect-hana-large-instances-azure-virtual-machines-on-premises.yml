@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-sap-hana-azure-large-instances.connect-to-azure-from-azure-virtual-machines-from-premises-locations
+title: Connect to Azure HANA on Azure (Large Instances) from Azure virtual machines and from on-premises locations
+metadata:
+  title: Connect to Azure HANA on Azure (Large Instances) from Azure virtual machines and from on-premises locations
+  description: "Connect to Azure HANA on Azure (Large Instances) from Azure virtual machines and from on-premises locations"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-connect-hana-large-instances-azure-virtual-machines-on-premises.md)]

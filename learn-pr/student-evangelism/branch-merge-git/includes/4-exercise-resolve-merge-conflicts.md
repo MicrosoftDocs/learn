@@ -34,15 +34,15 @@ Start by assuming the role of Alice and make a change to the website home page. 
 
     ```
 
-1. If you didn't download the resources earlier, download the zip file that contains the [resources that accompany this lesson](https://topcs.blob.core.windows.net/public/git-resources.zip). Unzip the resource files:
+1. If you didn't download the resources earlier, download the zip file that contains the [resources that accompany this lesson](https://github.com/MicrosoftDocs/mslearn-branch-merge-git/raw/main/git-resources.zip). Unzip the resource files:
 
     ```bash
-    wget https://topcs.blob.core.windows.net/public/git-resources.zip
+    wget https://github.com/MicrosoftDocs/mslearn-branch-merge-git/raw/main/git-resources.zip
     unzip git-resources.zip
 
     ```
 
-1. Move the *bombay-cat-180x240.jpg* file into Alice's *Assets* directory and delete the other files:
+1. Move the *bombay-cat-180x240.jpg* file into Alice's *Assets* directory, and delete the other files:
 
     ```bash
     mv bombay-cat-180x240.jpg Assets/bombay-cat-180x240.jpg
@@ -57,15 +57,15 @@ Start by assuming the role of Alice and make a change to the website home page. 
     <img src="Assets/bobcat2-317x240.jpg" />
     ```
 
-    With this statement (which uses one of Alice's cat pictures):
+    with this statement (which uses one of Alice's cat pictures):
 
     ```html
     <img class="cat" src="Assets/bombay-cat-180x240.jpg" />
     ```
 
-    Save the file and close the editor.
+1. Save the file and close the editor.
 
-1. Now, use the following Git commands to push the changes to the project repo. First, we'll add the commits made in the *Assets* folder. Then, we'll switch back to the `main` branch and run `git pull` to make sure nothing has changed. Finally, we'll merge the `add-cat` local branch into the `main` branch, and then push the changes to the repo.
+1. Now, run the following Git commands to push the changes to the project repo. First, we'll add the commits made in the *Assets* folder. Then, we'll switch back to the `main` branch, and run `git pull` to make sure nothing has changed. Finally, we'll merge the `add-cat` local branch into the `main` branch, and then push the changes to the repo.
 
     ```bash
     git add Assets
@@ -96,9 +96,9 @@ Without knowing what Alice is doing, Bob notices that Alice's last push added a 
     <img class="cat" src="Assets/bobcat2-317x240.jpg" />
     ```
 
-    Save the file and close the editor.
+1. Save the file, and close the editor.
 
-1. Now, use the following Git commands to sync the changes to the project repo like you did for the updates to Alice's repo. Commit the change, switch to the `main` branch, run `git pull`, and then merge the style change:
+1. Now, run the following Git commands to sync the changes to the project repo like you did for the updates to Alice's repo. Commit the change, switch to the `main` branch, run `git pull`, and then merge the style change:
 
     ```bash
     git commit -a -m "Style Bob's cat"
@@ -108,7 +108,7 @@ Without knowing what Alice is doing, Bob notices that Alice's last push added a 
 
     ```
 
-And there it is: *the dreaded merge conflict*. The same line in the same file was changed by two people. Git sees the conflict and reports "Automatic merge failed." Git has no way of knowing whether the `src` attribute in the `<img>` element should reference the *bobcat2-317x240.jpg* file or the *bombay-cat-180x240.jpg* file.
+And there it is: *the dreaded merge conflict*. The same line in the same file was changed by two people. Git sees the conflict, and reports "Automatic merge failed." Git has no way of knowing whether the `src` attribute in the `<img>` element should reference the *bobcat2-317x240.jpg* file or the *bombay-cat-180x240.jpg* file.
 
 ```output
 Auto-merging index.html
@@ -124,8 +124,8 @@ The question now is: What is Bob to do?
 
 Bob has a few options at this point. Bob can take one of these actions:
 
-- Use the `git merge --abort` command to restore the `main` branch to what it was before the attempted merge. Use the `git pull` command to get Alice's changes. Then, create a new branch, make their changes, and merge their branch into the `main` branch. Last, they push their changes.
-- Use the `git reset --hard` command to get back to where they were before they started the merge.
+- Run the `git merge --abort` command to restore the `main` branch to what it was before the attempted merge. Run the `git pull` command to get Alice's changes. Then, create a new branch, make their changes, and merge their branch into the `main` branch. Last, they push their changes.
+- Run the `git reset --hard` command to get back to where they were before they started the merge.
 - Resolve the conflict manually by using information that Git inserts into the affected files.
 
 Developers seem to prefer the last option. When Git detects a conflict in content versions, it inserts *both* versions of the content into the file. Git uses special formatting to help you identify and resolve the conflict: left angle brackets `<<<<<<<`, double dashes (equal signs) `=======`, and right angle brackets `>>>>>>>`. The content above the line of dashes `=======` shows your changes in your branch. The content below the separator line shows the version of the content in the branch that you're trying to merge into.
@@ -144,7 +144,7 @@ Let's resolve the merge conflict by editing the *index.html* file. Because this 
     >>>>>>> style-cat
     ```
 
-    Save the file and close the editor.
+1. Save the file, and close the editor.
 
     The *index.html* file now has two `<img>` elements: one for Bob's cat picture and one for Alice's.
 
@@ -154,7 +154,7 @@ Let's resolve the merge conflict by editing the *index.html* file. Because this 
 
     If you select **Accept Both Changes**, the editor removes the lines around the `<img>` elements and leaves both elements intact.
 
-1. Use the following commands to commit the change:
+1. Run the following commands to commit the change:
 
     ```bash
     git add index.html
@@ -179,4 +179,4 @@ Let's resolve the merge conflict by editing the *index.html* file. Because this 
 
     ```
 
-Finally, open Alice's *index.html* file and confirm that their version also has two `<img>` tags with cat pictures.
+1. Finally, open Alice's *index.html* file and confirm that their version also has two `<img>` tags with cat pictures.

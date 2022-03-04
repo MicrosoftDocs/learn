@@ -2,11 +2,11 @@
 uid: learn.azure.manage-device-identity-ad-join.what-is-device-identity
 title: What is device identity in Azure?
 metadata:
-  title:  What is device identity in Azure?
+  title: What is device identity in Azure?
   description: Learn about device identity in Azure.
   ms.date: 04/16/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
@@ -37,14 +37,14 @@ quiz:
     - content: "A Microsoft account with password, Windows Hello, and multifactor authentication"
       isCorrect: false
       explanation: "No, Azure AD join requires users to access your Azure AD organization through their Azure AD work account."
-  - content: "When is conditional access applied?"
+  - content: "When is Conditional Access applied?"
     choices:
     - content: "Before first-factor authentication"
       isCorrect: false
-      explanation: "No, a conditional access policy is applied after first-factor authentication."
+      explanation: "No, a Conditional Access policy is applied after first-factor authentication."
     - content: "As part of first-factor authentication"
       isCorrect: false
-      explanation: "No, a conditional access policy is applied after first-factor authentication."
+      explanation: "No, a Conditional Access policy is applied after first-factor authentication."
     - content: "After first-factor authentication"
       isCorrect: true
-      explanation: "A conditional access policy is applied after first-factor authentication has taken place."
+      explanation: "A Conditional Access policy is applied after first-factor authentication has taken place."

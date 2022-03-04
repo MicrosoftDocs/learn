@@ -27,6 +27,7 @@ products:
 - vs-code
 modules:
 - learn.powershell.intro-to-powershell
+- learn.powershell.discover-commands
 - learn.powershell.connect-commands
 - learn.languages.powershell-write-first
 - learn.powershell.scripting-with-powershell

@@ -4,12 +4,13 @@ title: Create an inference pipeline
 metadata:
   title: Create an inference pipeline
   description: "Create an inference pipeline"
-  ms.date: 06/14/2021
+  ms.date: 01/31/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/7-inference-pipeline.md)]

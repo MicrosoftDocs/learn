@@ -2,27 +2,27 @@ Your retail organization must comply with data protection regulations in your ju
 
 Here, you'll use the Azure portal to set up a policy and then check it in PowerShell. You need to set up the following retention policy to meet your regulatory requirements:
 
-|  |  |
-|---------|---------|
-| Weekly     | 8 weeks   |
-| Monthly     |  12 months       |
-| Yearly     |  5 years       |
+| Retention period | Length |
+|---|---|
+| Weekly | Eight weeks |
+| Monthly | 12 months |
+| Yearly | Five years |
 
 ## Use the Azure portal to configure long-term retention
 
-Let's start by configuring the 5-year retention by using the portal.
+Let's start by configuring the five-year retention by using the portal.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select **erpserver-NNNN**.
 
-1. Under **Settings**, select **Manage Backups**.
+1. Under **Data Management**, select **Backups**.
 
-1. In the list of databases, select **sql-erp-db**, and then select **Configure retention**.
+1. In the list of databases, select **sql-erp-db**. Select the **Retention policies** tab, and then select **Configure policies**.
 
 1. Select **Yearly LTR Backups**.
 
 1. In the **How long would you like this annual backup to be kept?** controls, enter the value **5** and select **Year(s)**.
 
-    ![Screenshot of the configure policies panel used to create a yearly retention policy](../media/5-configure-ltr-policy.png)
+    ![Screenshot of the configure policies panel used to create a yearly retention policy.](../media/5-configure-ltr-policy.png)
 
 1. Select **Apply**, and then select **Yes**.
 
@@ -95,6 +95,6 @@ You can also configure long-term retention policies by using PowerShell. Let's c
 
 1. Under **Settings**, select **Manage Backups**. In the list of databases, check the **sql-erp-db** long-term retention properties.
 
-   ![Screenshot of completed long-term retention policy settings](../media/5-completed-ltr-settings.png)
+   ![Screenshot of completed long-term retention policy settings.](../media/5-completed-ltr-settings.png)
 
 You've now configured a retention policy and validated that the policy meets your organizational and regulatory requirements.

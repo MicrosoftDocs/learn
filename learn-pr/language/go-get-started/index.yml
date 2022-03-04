@@ -5,9 +5,10 @@ metadata:
   description: Take your first steps with Go.
   ms.date: 06/17/2021
   author: danmabee
-  ms.author: chnoring 
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Get started with Go
 summary: In this module, you’ll start taking your first steps with Go.
 abstract:  |

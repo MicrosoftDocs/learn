@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.publish-container-image-to-azure-container-registry.build-manage-containers-tasks
+title: Build and manage containers with tasks
+metadata:
+  title: Build and manage containers with tasks
+  description: "Build and manage containers with tasks"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-azure-container-registry-tasks.md)]

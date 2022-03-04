@@ -15,17 +15,17 @@ Examples include:
 
 |Name|Shape|Definition|
 |----|-----|----------|
-|Process|![Process](../media/process50.png)|Activity that modifies or redirects input to an output|
-|External entity|![External Entity](../media/external-entity50.png)|Process, data store, or even full fledged applications outside of your control|
-|Data store|![Data Store](../media/data-store50.png)|Permanent or temporary data storage|
+|Process|![Process.](../media/process50.png)|Activity that modifies or redirects input to an output|
+|External entity|![External Entity.](../media/external-entity50.png)|Process, data store, or even full fledged applications outside of your control|
+|Data store|![Data Store.](../media/data-store50.png)|Permanent or temporary data storage|
 
 ### Interaction
 
 |Name|Interaction|Definition|
 |----|-----------|----------|
-|Process <-> Process|![Process to Process Interaction](../media/process-process.png)|A task sends or receives data to or from another task|
-|Process <-> External Entity|![Process to External Entity Interaction](../media/process-externalentity.png)|A task sends or receives data to or from a user|
-|Process <-> Data Store|![Process to Data Store Interaction](../media/process-datastore.png)|A task sends or receives data to or from a data store|
+|Process <-> Process|![Process to Process Interaction.](../media/process-process.png)|A task sends or receives data to or from another task|
+|Process <-> External Entity|![Process to External Entity Interaction.](../media/process-externalentity.png)|A task sends or receives data to or from a user|
+|Process <-> Data Store|![Process to Data Store Interaction.](../media/process-datastore.png)|A task sends or receives data to or from a data store|
 
 ## How to prevent repudiation
 

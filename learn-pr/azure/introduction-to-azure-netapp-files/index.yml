@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of Azure products, including Azure Virtual Network and Azure Virtual Gateway.
   - Basic knowledge of networked file system protocols, particularly Server Message Block (SMB) and Network File System (NFS).
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/introduction-to-azure-netapp-files.svg
 levels:
   - beginner
 roles:

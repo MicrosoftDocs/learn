@@ -2,13 +2,14 @@
 uid: learn.languages.python-install-vscode.python-programming-language
 title: Validate your Python version and installation
 metadata:
-  title: Validate your Python version and installation
+  title: Exercise - validate your Python version and installation
   description: What is Python? Why should I learn Python? How can I tell if it's installed on my computer?
-  ms.date: 3/2/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  ms.date: 07/06/2021
+  author: rjmolyneaux
+  ms.author: rmolyneaux
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
   zone_pivot_groups: os
 durationInMinutes: 5
 content: |

@@ -86,8 +86,7 @@ As you up-size Azure VMs in the lifecycle of an SAP system, you should evaluate 
 
 Creating a stripe set out of multiple Azure disks into one larger volume allows you to accumulate the IOPS and throughput of the individual disks into one volume. It's used for Azure standard storage and Azure premium storage only. Azure Ultra disk where you can configure the throughput and IOPS independent of the capacity of a disk, doesn't require the usage of stripe sets. Shared volumes based on NFS or SMB can't be striped. Azure premium storage throughput and IOPS are non-linear in nature. Because of this, you can provision smaller capacity with the same IOPS and throughput than you can with large single Azure premium storage disks. This method achieves higher throughput or IOPS at lower cost, using Azure premium storage. For example:
 
-- Striping across two P15 premium storage disks gets you to a throughput of
-- 250 MiB/sec. Such a volume is going to have 512-GiB capacity. For a single disk that gives you throughput of 250-MiB/sec, you need a P40 disk with 2-TiB capacity.
+- Striping across two P15 premium storage disks gets you to a throughput of 250 MiB/sec. Such a volume is going to have 512-GiB capacity. For a single disk that gives you throughput of 250-MiB/sec, you need a P40 disk with 2-TiB capacity.
 - Alternatively, you could achieve a throughput of 400 MiB/sec by striping four P10 premium storage disks, with an overall capacity of 512 GiB. For a single disk with a minimum throughput of 500-MiB/sec, you need a P60 premium storage disk with 8 TiB. Since costing or premium storage is near linear with the capacity, you can sense the cost savings by using striping.
 
 There are some rules that you should follow on striping:

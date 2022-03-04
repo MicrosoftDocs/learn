@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.discover-common-terms-meanings
+metadata:
+  title: Discover common terms and meanings for SAP on Azure
+  description: "You will be introduced to some of the common terms that will be used in working with SAP workloads on Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 11/10/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Discover common terms and meanings for SAP on Azure
+summary: You will be introduced to some of the common terms that will be used in working with SAP workloads on Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Discover common terms and meanings for SAP, Azure and SAP deployments on Azure.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/2-discover-common-terms-and-meanings.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.discover-common-terms-meanings.introduction
+- learn.wwl.discover-common-terms-meanings.sap
+- learn.wwl.discover-common-terms-meanings.sap-deployments-azure
+- learn.wwl.discover-common-terms-meanings.azure
+- learn.wwl.discover-common-terms-meanings.knowledge-check
+- learn.wwl.discover-common-terms-meanings.summary
+badge:
+  uid: learn.wwl.discover-common-terms-meanings.badge

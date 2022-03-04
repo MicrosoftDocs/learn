@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.explore-identity-services
+metadata:
+  title: Explore identity services for SAP on Azure
+  description: "This module explores using identity services to design multiple authentication and authorization scenarios Azure facilitates, that includes support for a range of identity providers. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore identity services for SAP on Azure
+summary: This module explores using identity services to design multiple authentication and authorization scenarios Azure facilitates, that includes support for a range of identity providers.
+abstract: |
+  After completing this module, you will be able to:
+  -  Define Active Directory Domain Services (AD DS)
+  -  Define Azure Active Directory (Azure AD)
+  -  Discuss Azure Active Directory Domain Services (Azure AD DS)
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/1-explore-identity-services.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.explore-identity-services.introduction
+- learn.wwl.explore-identity-services.explore-azure-virtual-machine-authentication,-authorization,-access-control
+- learn.wwl.explore-identity-services.explore-azure-active-directory-azure-ad
+- learn.wwl.explore-identity-services.explore-sap-cloud-platform-identity-authentication
+- learn.wwl.explore-identity-services.integrate-aad-sap-cloud-platform-identity-authentication
+- learn.wwl.explore-identity-services.integrate-azure-active-directory-sap-fiori
+- learn.wwl.explore-identity-services.integrate-azure-active-directory-sap-hana
+- learn.wwl.explore-identity-services.integrate-azure-active-directory-sap-netweaver
+- learn.wwl.explore-identity-services.integrate-active-directory-sap-single-sign-kerberos-spnego
+- learn.wwl.explore-identity-services.discover-active-directory-domain-services-ad-ds
+- learn.wwl.explore-identity-services.explore-primary-scenarios-using-ad-ds-azure-virtual-machines
+- learn.wwl.explore-identity-services.discover-azure-active-directory-domain-services-azure-ad-ds
+- learn.wwl.explore-identity-services.integrate-linux-active-directory-domain-services
+- learn.wwl.explore-identity-services.knowledge-check
+- learn.wwl.explore-identity-services.summary
+badge:
+  uid: learn.wwl.explore-identity-services.badge

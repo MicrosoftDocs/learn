@@ -1,4 +1,4 @@
-You can use the hunting livestream to test queries against live events as they occur. Livestream provides interactive sessions that can notify you when Azure Sentinel finds matching events for your query.
+You can use the hunting livestream to test queries against live events as they occur. Livestream provides interactive sessions that can notify you when Microsoft Sentinel finds matching events for your query.
 
 A livestream is always based on a query. Typically, you use the query to narrow down streaming log events, so only the events that are related to your threat-hunting efforts appear. You can use a livestream to:
 
@@ -10,12 +10,12 @@ Livestream queries refresh every 30 seconds and generate Azure notifications of 
 
 ## Create a livestream
 
-To create a livestream from the **Hunting** page in Azure Sentinel, select the **Livestream** tab and then select **New livestream** from the toolbar.  
+To create a livestream from the **Hunting** page in Microsoft Sentinel, select the **Livestream** tab and then select **New livestream** from the toolbar.  
 
 >[!NOTE]
 >Livestream queries run continuously against your live environment, so you can't use time parameters in a livestream query.
 
-:::image type="content" source="../media/5-new-livestream.png" alt-text="Screenshot that shows the livestream creation page in Azure Sentinel." :::
+:::image type="content" source="../media/5-new-livestream.png" alt-text="Screenshot that shows the livestream creation page in Microsoft Sentinel." :::
 
 ## View a livestream
 

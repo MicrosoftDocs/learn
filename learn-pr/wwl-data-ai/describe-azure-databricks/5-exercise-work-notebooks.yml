@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-databricks.exercise-work-notebooks
+title: 'Exercise: Work with Notebooks'
+metadata:
+  title: 'Exercise: Work with Notebooks'
+  description: "Exercise: Work with Notebooks"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-work-notebooks.md)]

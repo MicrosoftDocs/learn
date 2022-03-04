@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.examine-certifications
+title: Examine SAP HANA certifications
+metadata:
+  title: Examine SAP HANA certifications
+  description: "Examine SAP HANA certifications"
+  ms.date: 01/31/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-examine-sap-hana-certifications.md)]

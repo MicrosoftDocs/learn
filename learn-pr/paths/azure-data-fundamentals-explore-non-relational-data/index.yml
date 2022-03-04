@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-data-fundamentals-explore-non-relational-data
 metadata:
-  title: 'Azure Data Fundamentals: Explore non-relational data in Azure'
-  description: 'Azure Data Fundamentals: Explore non-relational data in Azure'
-  ms.date: 06/29/2020
+  title: 'Microsoft Azure Data Fundamentals: Explore non-relational data in Azure'
+  description: 'Microsoft Azure Data Fundamentals: Explore non-relational data in Azure'
+  ms.date: 10/12/2021
   author: wwlpublish
-  ms.author: wwlpub
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Azure Data Fundamentals: Explore non-relational data in Azure'
+title: 'Microsoft Azure Data Fundamentals: Explore non-relational data in Azure'
 prerequisites: |
   None
 summary: |

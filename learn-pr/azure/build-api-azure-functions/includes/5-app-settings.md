@@ -2,11 +2,11 @@ You're working on an API that connects to a database. Your API will connect to t
 
 ## Store connection strings in Azure Functions
 
-It's a good idea to avoid hard-coding connection strings. You'll likely use the connection string across different files, and there's a chance that it could change in the future.
+It's a good idea to avoid hard coding connection strings. You'll likely use the connection string across different files, and there's a chance that it could change in the future.
 
 You'll want to store the connection string as an app setting. App settings are specified in one place and referenced throughout the app. They can be easily changed at any point in the future without having to change the code. App settings are never checked in to source control.
 
-An Azure Functions project has a `local.settings.json` file. This file contains a set of key/value pairs that are used in the app as configuration values. You can add your own items to the "values" object. You'll be able to access those values from your code.
+An Azure Functions project has a `local.settings.json` file. This file contains a set of key/value pairs that are used in the app as configuration values. You can add your own items to the "Values" object. You'll be able to access those values from your code.
 
 ```json
 {
@@ -18,7 +18,7 @@ An Azure Functions project has a `local.settings.json` file. This file contains 
 }
 ```
 
-If you wanted to add a connection string, you could do that by adding another property called "CONNECTION_STRING" (or whatever you would like to call it) and then passing the connection string to your database.
+If you wanted to add a connection string, you could do that by adding another property called "CONNECTION_STRING" (or whatever you would like to call it), and then passing the connection string to your database.
 
 ```json
 {

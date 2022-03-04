@@ -34,7 +34,7 @@ In the next section, you build out the second phase, which combines random bits 
 
 ## Create the Q# project
 
-Here, you create a Q# project just like you did earlier.
+To begin with, you create a Q# project just like you did earlier.
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter **Q#: Create New Project**.
@@ -42,17 +42,9 @@ Here, you create a Q# project just like you did earlier.
 1. Select a directory to hold your project, such as your home directory. Enter *QuantumRNG* as the project name, then select **Create Project**.
 1. From the window that appears at the bottom, select **Open new project**.
 
-    Like before, you see two files: the project file and *Program.qs*, which contains starter code.
+You see two files: the project file *QuantumRNG.csproj* and *Program.qs*, which contains starter code.
 
 ## Define the GenerateRandomBit operation
-
-Recall that in the *QuantumHello* program, you defined the `HelloQ` operation like this:
-
-```qsharp
-operation HelloQ() : Unit {
-    Message("Hello quantum world!");
-}
-```
 
 Compare that with the operation below. You define the `GenerateRandomBit` operation. This operation takes no input and produces a value of type `Result`. The `Result` type represents the result of a measurement and can have two possible values: `Zero` and `One`. To measure a qubit, you use the operation [M](/qsharp/api/qsharp/microsoft.quantum.intrinsic.m?azure-portal=true).
 
@@ -62,16 +54,13 @@ To define the full operation:
 
     [!code-qsharp[](code/4-program-2.qs?highlight=7-9)]
 
-    `EntryPoint` tells the Q# compiler to begin executing the program here.
+    Let's take a look at this code. You define the `GenerateRandomBit` operation. This operation takes no input and produces a value of type `Result`. The `Result` type represents the result of a measurement and can have two possible values: `Zero` and `One`. 
 
 1. Add this code to the `GenerateRandomBit` operation:
 
     [!code-qsharp[](code/4-program-3.qs?highlight=9-16)]
 
-    Recall that you allocate qubits through the `use` keyword.
-
-    The `H` operation places the qubit in superposition. The `M` operation
-    measures the qubit and returns the measured value (a zero or a one).
+    `EntryPoint` tells the Q# compiler to begin executing the program here. In Q#, qubits are allocated through the `use` keyword. When a qubit is allocated, it is always in the `Zero` state. The `H` operation places the qubit in superposition. The `M` operation measures the qubit and returns the measured value (a zero or a one).
 
 ## Run the program
 

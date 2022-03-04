@@ -4,7 +4,7 @@ Failure to maintain a data retention policy could mean data loss or failure to c
 
 Defining a policy for confidential data can ensure that data is stored and removed based on best practices. Also, you can create an archival policy to formalize an understanding of what data should be disposed of and when.
 
-![Conceptual art showing multiple years of data being disposed](../media/4-data-retention.png)
+![Conceptual art showing multiple years of data being disposed.](../media/4-data-retention.png)
 
 A data retention policy should address the required regulatory and compliance requirements and corporate legal retention requirements. Properly classified data should influence decisions made about retention duration. Data classification rules that pertain to data retention must be addressed when moving to the cloud. Data protection technologies such as encryption, rights management, and data loss prevention solutions are available in the cloud and can help mitigate disclosure risks.
 

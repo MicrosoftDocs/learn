@@ -1,9 +1,10 @@
-By using Azure Sentinel Analytics rules, you can configure notification and alerts based on data coming from the sources that are connected to Azure Sentinel. These alerts will help ensure that the Contoso SOC team knows when a threat occurs, and the team can then appropriately react to prevent the threat from reaching your corporate assets.
+By using Microsoft Sentinel Analytics rules, you can configure notification and alerts based on data coming from the sources that are connected to Microsoft Sentinel. These alerts will help ensure that the Contoso SOC team knows when a threat occurs, and the team can then appropriately react to prevent the threat from reaching your corporate assets.
 
 ## Types of analytics rules
 
-You can search for potential threats by using the built-in analytics rules that Azure Sentinel Analytics provides. There are currently four types of analytics rules:
+You can search for potential threats by using the built-in analytics rules that Microsoft Sentinel Analytics provides. There are currently five types of analytics rules:
 
+- Anomaly
 - Fusion
 - Microsoft security
 - Machine learning (ML) behavior analytics
@@ -11,17 +12,21 @@ You can search for potential threats by using the built-in analytics rules that 
 
 :::image type="content" source="../media/03-rule-templates.png" alt-text="Screenshot of rule templates in the Analytics home page." border="true":::
 
-## Fusion alerts
+## Anomaly
 
-Fusion alerts identify anomalous behaviors and suspicious activities at various stages of the cyber kill chain. Fusion correlates multiple security alerts from various products and uses machine Learning to detect advanced multistage attacks.
+Anomaly alerts are informational and identify anomalous behaviors.
+
+## Fusion
+
+Fusion alerts identify and suspicious activities at various stages of the cyber kill chain. Fusion correlates multiple security alerts from various products and uses machine Learning to detect advanced multistage attacks.
 
 > [!Note]
 > The cyber kill chain describes the typical workflow, including techniques, tactics, and procedures (TTPs), used by attackers to infiltrate an organization’s networks and systems.
 
-By default, Fusion detection is enabled in Azure Sentinel. Microsoft is constantly updating Fusion detection scenarios for threat detection. At the time of writing this article, for Fusion detection, you must configure the following data connectors:
+By default, Fusion detection is enabled in Microsoft Sentinel. Microsoft is constantly updating Fusion detection scenarios for threat detection. At the time of writing this article, for Anomaly and Fusion detection, you must configure the following data connectors:
 
 - Azure Active Directory Identity Protection
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender Advanced Threat Protection
 - Palo Alto Networks
 
@@ -34,18 +39,19 @@ Some of the common attack detection scenarios that Fusion alerts identify includ
 - **Ransomware**. After a suspicious sign-in to an Azure AD account, unusual user behavior used to encrypt data can trigger a ransomware execution alert.
 
 > [!Note]
-> For more information on the Fusion technology in Azure Sentinel, see [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion)
+> For more information on the Fusion technology in Microsoft Sentinel, see [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion)
 
 ## Microsoft security
 
-You can configure Microsoft security solutions that are connected to Azure Sentinel to automatically create incidents from all alerts generated in the connected service.
+You can configure Microsoft security solutions that are connected to Microsoft Sentinel to automatically create incidents from all alerts generated in the connected service.  
+
 For example, you can configure for Contoso to be alerted when a user who has been categorized as a high-risk threat attempts to sign in and access corporate resources.
 
-You can configure the following security solutions to pass their alerts to Azure Sentinel:
+You can configure the following security solutions to pass their alerts to Microsoft Sentinel:
 
-- Microsoft Cloud App Security
-- Azure Defender for Server
-- Azure Defender for IoT
+- Microsoft Defender for Cloud Apps
+- Microsoft Defender for Server
+- Microsoft Defender for IoT
 - Microsoft Defender for Identity
 - Microsoft Defender for Office 365
 - Azure Active Directory Identity Protection
@@ -56,11 +62,11 @@ You can configure the following security solutions to pass their alerts to Azure
 
 You can filter these alerts by severity and by specific text that is contained in the alert name.
 
-## Machine learning behavioral analytics
+## ML behavior analytics
 
-Azure Sentinel Analytics includes built-in machine learning behavioral analytics rules. You can't edit these built-in rules or review the rule settings. These rules use Microsoft machine learning algorithms to detect suspicious activity. Machine Learning algorithms correlate several low-fidelity incidents into a high-fidelity security incident. This saves hours that you might otherwise spend manually analyzing numerous alerts from different products and correlating them. Machine learning algorithms that analytics rules use also help reduce the noise around alerts by quickly ingesting and connecting important data.
+Microsoft Sentinel Analytics includes built-in machine learning behavior analytics rules. You can't edit these built-in rules or review the rule settings. These rules use Microsoft machine learning algorithms to detect suspicious activity. Machine Learning algorithms correlate several low-fidelity incidents into a high-fidelity security incident. This saves hours that you might otherwise spend manually analyzing numerous alerts from different products and correlating them. Machine learning algorithms that analytics rules use also help reduce the noise around alerts by quickly ingesting and connecting important data.
 
-For example, by using a machine learning behavioral analytics rule, you can detect an anomalous secure shell protocol (SSH) Login or remote desktop protocol (RDP) login activity.
+For example, by using a machine learning behavior analytics rule, you can detect an anomalous secure shell protocol (SSH) Login or remote desktop protocol (RDP) login activity.
 
 ## Scheduled alerts
 

@@ -16,13 +16,13 @@ A *branch* is simply a chain of commits that branch off from the main line of de
 
 If you're switching to Git from another VCS, you might be accustomed to slightly different terminology. The VCS Subversion names its default branch `trunk`, while Git names it `master`. You can rename the default branch, just as you can rename any other branch. In this module, we name the default branch `main`.
 
-A branch usually starts with a commit on the default branch, in this case, on `main`. The branch grows a separate history chain as commits are added. Eventually, the changes in the branch are merged back into `main`. In this module, you'll learn to make commits in a branch and merge them into the `main` branch.
+A branch usually starts with a commit on the default branch; in this case, on `main`. The branch grows a separate history chain as commits are added. Eventually, the changes in the branch are merged back into `main`. In this module, you'll learn to make commits in a branch, and merge them into the `main` branch.
 
 Suppose you branch off the `main` branch. Here's how to visualize what happens:
 
 :::image type="content" source="../media/branch-tree.png" alt-text="A diagram that shows the relationship of the main branch and local branches.":::
 
-Each capital letter in the diagram represents a commit. Branches have names like `add-authentication` and `fix-css-bug`, and branches can have branches of their own. The ultimate goal is to let developers do what they need to do without stepping on one another and to end up with a main branch that represents the best efforts of everyone involved.
+Each capital letter in the diagram represents a commit. Branches have names like `add-authentication` and `fix-css-bug`, and branches can have branches of their own. The ultimate goal is to let developers do what they need to do without stepping on one another, and to end up with a main branch that represents the best efforts of everyone involved.
 
 ## Create and switch branches (git branch and git checkout)
 
@@ -47,4 +47,4 @@ git merge my-feature
 
 ```
 
-After using these commands and resolving any *merge conflicts* (we'll discuss merge conflicts later in this module), all the changes from your `my-feature` branch would be in `main`.
+After using these commands and resolving any *merge conflicts* (we'll describe merge conflicts later in this module), all the changes from your `my-feature` branch would be in `main`.

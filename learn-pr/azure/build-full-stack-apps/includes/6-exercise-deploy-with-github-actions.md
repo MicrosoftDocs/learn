@@ -86,7 +86,7 @@ In order for your Azure Static Web App to access your Azure SQL Database, you mu
 
 1. To view results for the specific bus route and geofence, add **`?rid=100113&gid=1`** to the end of the URL in the browser and refresh the page.
 
-1. You should now see a geofence and several bus points. You may need to use the **+** or **-** buttons create a zoom fit.
+1. You should now see a geofence and several bus points. You may need to use the **+** or **-** buttons create a zoom fit. If you do not see any buses, change the URL from `gid=1` to `gid=2`.
 
 > [!NOTE]
 > For this module, a few bus points have been manually entered into your Azure SQL Database. If you completed the previous module of this learning path, you set up the Azure Function that runs on a timer trigger to pull down the latest real-time bus data and send notifications when buses enter or exit geofence. In the next module of the learning path, you can put both of these pieces together, which will enable your Azure Static Web App to include real-time data.

@@ -8,7 +8,7 @@ An export of your billing data is available at any time. By using your billing d
 
 Azure Cost Management gives you insights into where your spend is going, as well as underutilized resources. Azure Cost Management tracks your total spend, cost by service, and cost over time. You can drill down into resource types and instances. You can also break down your costs by organization or cost center by tagging resources with those categories.
 
-:::image type="content" source="../media/4-grouped-daily-accum-view.png" alt-text="Screenshot of Azure Cost Management":::
+:::image type="content" source="../media/4-grouped-daily-accum-view.png" alt-text="Screenshot of Azure Cost Management.":::
 
 Azure Advisor also has a cost component that:
 
@@ -24,7 +24,7 @@ The important part is to take time to review your spend, and evaluate where your
 
 After you have your Azure services running, you should regularly check your costs to track your Azure spending. You can use cost analysis to understand where the costs originated for your Azure usage.
 
-:::image type="content" source="../media/4-cost-analysis.png" alt-text="Screenshot of cost analysis in the Azure portal":::
+:::image type="content" source="../media/4-cost-analysis.png" alt-text="Screenshot of cost analysis in the Azure portal.":::
 
 Take time as an organization to regularly meet and review billing and expenditures that are related to cloud services. Review the respective expenditures with the technical and business stakeholders for each application. This brings increased visibility to the costs that are associated with an application, and the decisions made from a cost perspective. 
 

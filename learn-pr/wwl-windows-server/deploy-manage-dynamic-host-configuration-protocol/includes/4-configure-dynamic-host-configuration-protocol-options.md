@@ -64,3 +64,9 @@ The following video demonstrates how to configure DHCP server options using Serv
 6. Configure the appropriate options for this DHCP server.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWxDP3]
+
+---
+
+
+
+---

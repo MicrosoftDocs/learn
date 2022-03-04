@@ -12,7 +12,7 @@ It's also important to consider several other Azure products you could use inste
 
 ## Decision criteria
 
-You can use Azure Front Door to build, operate, and scale out your dynamic web application and static content. Remember, the following SKUs are available:
+You can use Azure Front Door to build, operate, and scale out your dynamic web application and static content. Remember, the following tiers are available:
 
 - Azure Front Door Standard, which is content-delivery optimized.
 - Azure Front Door Premium, which is security optimized.
@@ -32,7 +32,7 @@ To decide which product has the features you need, review the following criteria
 
 ### Scalability
 
-Organizations that don't host global, scalable web applications might not benefit from implementing Azure Front Door. However, if it builds, operates, and scales out dynamic web applications and static content, it could use of the Front Door SKUs.
+Organizations that don't host global, scalable web applications might not benefit from implementing Azure Front Door. However, if it builds, operates, and scales out dynamic web applications and static content, it can benefit from the use of the different Azure Front Door tiers.
 
 Consider using Azure Front Door when you want to:
 
@@ -46,7 +46,7 @@ Azure Front Door billing is based on outbound data transfers, inbound data trans
 - A monthly charge per policy.
 - Other charges for custom rules and managed rule sets.
 
-Azure Front Door billing is based on the following criteria:
+Azure Front Door Standard/Premium billing is based on the following criteria:
 
 - A fixed charge calculated on hourly basis.
 - Outbound data transfers.
@@ -75,4 +75,4 @@ Consider using Azure Front Door Premium when you need Azure Front Door Standard 
 - Integration with Microsoft Threat Intelligence and security analytics.
 
 > [!NOTE]
-> Azure Web Application Firewall pricing is included in Premium SKU.
+> Azure Web Application Firewall pricing is included in Premium tier.

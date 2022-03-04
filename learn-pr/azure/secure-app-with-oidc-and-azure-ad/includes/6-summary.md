@@ -17,7 +17,8 @@ To delete the Azure AD tenant, follow these steps:
 1. In the upper right of the portal, select your user account, and then select **Sign out**.
 1. Sign in with your normal credentials. In the top bar, select your account, and then select **Switch directory**.
 1. Select the **Learn Module AAD Tenant** directory that you created in unit 4.
-1. In the left pane, select **Azure Active Directory**, select **Delete tenant**, and then select **Delete**.
+1. In the left pane, select **Azure Active Directory**, then select **Manage tenants**.
+1. Select the check box for the tenant you want to delete, then select **Delete**.
 1. In the upper right of the portal, select your user account, and then select **Sign out**.
 
 ## Further reading

@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.implement-testing-progressive-exposure-deployment
+metadata:
+  title: Implement A/B testing and progressive exposure deployment
+  description: "Implement A/B testing and progressive exposure deployment"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement A/B testing and progressive exposure deployment
+summary: This module introduces A/B test and progressive exposure deployment concepts and explores CI/CD with deployment rings -- ring-based deployment.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Implement progressive exposure deployment
+  *   Implement A/B testing
+  *   Implement CI/CD with deployment rings
+  *   Identify the best deployment strategy
+prerequisites: |
+  None
+iconUrl: /learn/achievements/7-implement-a-b-testing-and-progressive-exposure-deployment.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.implement-testing-progressive-exposure-deployment.introduction
+- learn.wwl.implement-testing-progressive-exposure-deployment.what-ab-testing
+- learn.wwl.implement-testing-progressive-exposure-deployment.explore-ci-cd-deployment-rings
+- learn.wwl.implement-testing-progressive-exposure-deployment.exercise-ring-based-deployment
+- learn.wwl.implement-testing-progressive-exposure-deployment.knowledge-check
+- learn.wwl.implement-testing-progressive-exposure-deployment.summary
+badge:
+  uid: learn.wwl.implement-testing-progressive-exposure-deployment.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-consolidating-secure-artifacts.examine-roles
+title: Examine roles
+metadata:
+  title: Examine roles
+  description: "Examine roles"
+  ms.date: 02/14/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-examine-roles.md)]

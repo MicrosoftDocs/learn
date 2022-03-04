@@ -1,4 +1,4 @@
-Ensuring that your DLP policies are processed in the correct order and that they are tested properly before activation is key to the success of your organization.  Analyzing the performance of DLP policies can be done through dashboards in Microsoft 365.  
+Ensuring that your DLP policies are processed in the correct order and that they are tested properly before activation is key to the success of your organization.  Analyzing the performance of DLP policies can be done through dashboards within Microsoft 365.  
 
 Once your DLP policies are active, DLP reports display information about the behavior of DLP policies. They allow you to monitor and respond to unwanted sharing of sensitive data from your organization.
 
@@ -16,5 +16,5 @@ After this module, you will be able to:
 
 ## Prerequisites
 
-- Knowledge of data loss prevention in Microsoft 365
+- Knowledge of data loss prevention using Microsoft 365
 

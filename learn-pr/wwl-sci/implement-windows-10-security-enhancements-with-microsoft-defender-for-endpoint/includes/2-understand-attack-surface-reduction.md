@@ -24,7 +24,7 @@ Description
 :::row:::
 :::column:::
 
-Attack surface reduction
+Attack surface reduction rules
 
 :::column-end:::
 :::column:::
@@ -41,7 +41,7 @@ Hardware-based isolation
 :::column-end:::
 :::column:::
 
-Protect and maintain the integrity of a system as it starts and while it's running. Validate system integrity through local and remote attestation. And, use container isolation for Microsoft Edge to help guard against malicious websites.
+Protect and maintain the integrity of a system as it starts and while it's running. Validate system integrity through local and remote attestation. Use container isolation for Microsoft Edge to help guard against malicious websites.
 
 :::column-end:::
 :::row-end:::
@@ -108,12 +108,12 @@ Help prevent malicious or suspicious apps (including file-encrypting ransomware 
 :::row:::
 :::column:::
 
-Network firewall
+Device control
 
 :::column-end:::
 :::column:::
 
-Prevent unauthorized traffic from flowing to or from your organization's devices with two-way network traffic filtering.
+Protects against data loss by monitoring and controlling media used on devices, such as removable storage and USB drives, in your organization.
 
 :::column-end:::
 :::row-end:::

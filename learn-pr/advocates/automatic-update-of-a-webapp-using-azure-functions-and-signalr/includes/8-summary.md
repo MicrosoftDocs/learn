@@ -26,7 +26,7 @@ The following steps return the settings of your Visual Studio Code instance back
 2. Navigate through **User Settings > Extensions > Azure configuration**
 3. Clear the tenant in the **Azure: Tenant** textbox.
 
-![Add tenant ID to Visual Studio Code Azure extension configuration](../media/serverless-app-vs-code-tenant-blank.png)
+![Add tenant ID to Visual Studio Code Azure extension configuration.](../media/serverless-app-vs-code-tenant-blank.png)
 
 ### Sign out and back in
 

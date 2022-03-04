@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.implement-transactions-transact-sql
+metadata:
+  title: Implement transactions with Transact-SQL
+  description: "Implement transactions with Transact-SQL"
+  ms.date: 01/25/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement transactions with Transact-SQL
+summary: Learn how to construct transactions to control the behavior of multiple Transact-SQL statements. You will learn how to determine whether an error has occurred, and when to roll back statements.
+abstract: |
+  After completing this module, you will be able to:
+  * Describe transactions.
+  * Compare transactions and batches.
+  * Create and manage transactions.
+  * Handle errors in transactions.
+  * Describe concurrency.
+prerequisites: |
+  Before starting this module, you should have experience of using Transact-SQL SELECT queries to retrieve and filter data from a table in a database.
+iconUrl: /learn/achievements/transact-sql-implement-transactions.svg
+levels:
+- advanced
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+- database-administrator
+- developer
+- solution-architect
+- student
+products:
+- azure-sql-database
+- azure-sql-managed-instance
+- azure-sql-virtual-machines
+- azure-sqlserver-vm
+- sql-server
+units:
+- learn.wwl.implement-transactions-transact-sql.introduction
+- learn.wwl.implement-transactions-transact-sql.describe-transactions
+- learn.wwl.implement-transactions-transact-sql.compare-transactions-batches
+- learn.wwl.implement-transactions-transact-sql.create-manage-transactions
+- learn.wwl.implement-transactions-transact-sql.handle-errors-transactions
+- learn.wwl.implement-transactions-transact-sql.describe-concurrency
+- learn.wwl.implement-transactions-transact-sql.exercise
+- learn.wwl.implement-transactions-transact-sql.knowledge-check
+- learn.wwl.implement-transactions-transact-sql.summary
+badge:
+  uid: learn.wwl.implement-transactions-transact-sql.badge

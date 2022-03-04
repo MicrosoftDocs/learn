@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-design-program-launch.explore-shared-goals
+title: Explore the shared goals of your institution and Microsoft for certification
+metadata:
+  title: Explore the shared goals of your institution and Microsoft for certification
+  description: Explore the shared goals of your institution and Microsoft for certification
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explore-shared-goals.md)]

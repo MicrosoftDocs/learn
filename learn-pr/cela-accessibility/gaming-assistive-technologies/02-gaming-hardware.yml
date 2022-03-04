@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.gaming-assistive-technologies.gaming-hardware
+title: Gaming hardware assistive technology
+metadata:
+  title: Gaming hardware assistive technology
+  description: This content is part of the Gaming Assistive Technologies module.
+  ms.date: 11/28/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 11
+content: |
+  [!include[](includes/02-gaming-hardware.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following best describes the use of switch buttons for gaming access?"
+    choices:
+    - content: "Buttons that players use to switch between first- and third-person camera views."
+      isCorrect: false
+      explanation: "Incorrect. A player might assign this action to a switch button, but the purpose of switch buttons isn't limited to the switching camera view function alone."
+    - content: "Buttons that are the same size as the buttons on traditional game input devices but can be mounted anywhere."
+      isCorrect: false
+      explanation: "Incorrect. It's true that switch buttons can be mounted where a player needs them, but they come in various shapes and sizes."
+    - content: "Buttons that are used by players who typically can't access a standard keyboard or controller."
+      isCorrect: true
+      explanation: "Correct. Switch buttons are used in gaming by individuals who are unable to press any or all of the keys on a keyboard or the buttons on a controller required to activate game functions."
+  - content: "Which of the following statements does not describe why it's important for developers to become familiar with the hardware-based assistive technologies players use?"
+    choices:
+    - content: "To ensure that players using assistive devices can participate in all aspects of the game, regardless of the body parts or movements they use to activate their controls."
+      isCorrect: false
+      explanation: "Incorrect. This statement is one of the important reasons that developers should become familiar with hardware assistive technology."
+    - content: "To ensure the games and platforms they create support a multitude of different input types (controller, mouse, and keyboard) that assistive technologies are seen as."
+      isCorrect: false
+      explanation: "Incorrect. This statement is one of the important reasons that developers should become familiar with hardware assistive technologies."
+    - content: "To ensure that multiplayer servers distinctly call out players who are using assistive devices to other players on the server for visibility."
+      isCorrect: true
+      explanation: "Correct. This option doesn't accurately describe the importance of developers becoming familiar with hardware assistive technologies (AT) discussed in this module. While multiplayer servers that clearly distinguish the general type of input (mouse and keyboard versus controller) that players seek out might be considered valuable by some players, calling out an individual's specific AT, such as an eye gaze bar or Xbox adaptive controller, isn't suggested or recommended. It's also not an important or feasible reason for developers to broaden their knowledge about hardware AT."

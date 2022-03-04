@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-business-continuity-disaster-recovery-backup.backup-restore-of-sap-hana-azure-large-instances
+title: Backup and restore of SAP HANA on Azure (Large Instances)
+metadata:
+  title: Backup and restore of SAP HANA on Azure (Large Instances)
+  description: "Backup and restore of SAP HANA on Azure (Large Instances)"
+  ms.date: 11/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-backup-restore-hana-large-instances.md)]

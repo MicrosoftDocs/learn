@@ -4,12 +4,13 @@ title: Exercise - invite guest users bulk
 metadata:
   title: Exercise - invite guest users bulk
   description: "Exercise - invite guest users bulk"
-  ms.date: 04/15/2021
+  ms.date: 01/07/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-invite-guest-users-bulk.md)]

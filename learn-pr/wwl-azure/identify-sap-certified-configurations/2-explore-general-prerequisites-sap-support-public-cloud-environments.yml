@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-sap-certified-configurations.explore-general-prerequisites-for-sap-support-public-cloud-environments
+title: Explore general prerequisites for SAP support in public cloud environments
+metadata:
+  title: Explore general prerequisites for SAP support in public cloud environments
+  description: "Explore general prerequisites for SAP support in public cloud environments"
+  ms.date: 01/20/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-general-prerequisites-sap-support-public-cloud-environments.md)]

@@ -6,7 +6,7 @@ You manage GPOs by using two primary tools:
 You can also use Windows PowerShell cmdlets to manage GPOs and their settings, including those described in the following table.
 
 |Cmdlet | Description|
-|||
+|---|---|
 |`New-GPO`| Creates a new GPO. |
 | `New-GPOLink` | Links a GPO to a site, domain, or OU. |
 | `Get-GPInheritance` | Gets Group Policy inheritance information for a specified domain or OU. |
@@ -82,4 +82,10 @@ The following video demonstrates how to create, configure, and apply GPOs. The m
 
 10. Verify the effect of the change of inheritance and security filtering.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4McIe]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McIe]
+
+---
+
+
+
+---

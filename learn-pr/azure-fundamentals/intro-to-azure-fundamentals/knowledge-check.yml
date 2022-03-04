@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/11/2021
+  ms.date: 09/01/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ quiz:
     - content: "Using the internet"
       isCorrect: false
       explanation: "That's incorrect. Cloud computing is the delivery of computing services over the internet."
-  - content: "What is not a reason to move to the cloud?"
+  - content: "Which of the following is _not_ a feature of Cloud computing?"
     choices:
     - content: "Faster innovation"
       isCorrect: false

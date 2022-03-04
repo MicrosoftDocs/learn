@@ -4,8 +4,8 @@ metadata:
   title: Optimize your web applications by caching read-only data with Redis
   description: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: flang-msft
+  ms.author: franlanglois
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Optimize your web applications by caching read-only data with Redis

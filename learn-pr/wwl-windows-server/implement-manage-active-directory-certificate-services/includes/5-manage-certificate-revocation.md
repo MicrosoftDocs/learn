@@ -43,8 +43,8 @@ The following video demonstrates how to:
 The main steps in the process are:
 
 1. Create an AD DS environment. Create a single-domain AD DS forest.
-1. Deploy an Enterprise Root CA. Deploy an Enterprise Root CA.
+1. Deploy an Enterprise Root CA. 
 1. Configure CRL publishing. Use the Certification Authority console to configure CRL publishing.
 1. Configure CDP location. Use the Certification Authority console to configure CDP location.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MjvK]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MjvK]

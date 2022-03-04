@@ -76,4 +76,4 @@ Finally, make sure that you've installed the [Visual Studio Code CodeTour extens
 
 :::image type="content" source="../media/codetour-setup.png" alt-text="Screenshot that shows CodeTour in Visual Studio Code.":::
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2021 Warner Bros. Ent. All Rights Reserved

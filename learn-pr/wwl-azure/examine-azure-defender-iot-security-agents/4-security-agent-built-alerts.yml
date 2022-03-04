@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-defender-for-iot-security-agents.examine-built-security-agent-alerts
+title: Examine built-in security agent alerts
+metadata:
+  title: Examine built-in security agent alerts
+  description: "Examine built-in security agent alerts"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-security-agent-built-alerts.md)]

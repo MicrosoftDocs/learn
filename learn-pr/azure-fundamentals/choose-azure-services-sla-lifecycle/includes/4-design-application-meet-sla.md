@@ -45,7 +45,7 @@ Recall that you need two virtual machines. Therefore, you include the Virtual Ma
 
 Note that even though all of the individual services have SLAs equal to or better than the application SLA, combining them results in an overall number that's *lower* than the 99.9 percent you need. Why? Because using multiple services adds an extra level of complexity and slightly increases the risk of failure.
 
-You see here that the composite SLA of 99.78 percent doesn't meet the required SLA of 99.9 percent. You might go back to team and ask whether this is acceptable. Or you might implement some other strategies into your design to improve this SLA.
+You see here that the composite SLA of 99.78 percent doesn't meet the required SLA of 99.9 percent. You might go back to your team and ask whether this is acceptable. Or you might implement some other strategies into your design to improve this SLA.
 
 ## What happens when the composite SLA doesn't meet your needs?
 

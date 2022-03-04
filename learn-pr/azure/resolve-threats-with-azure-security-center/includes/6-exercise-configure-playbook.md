@@ -1,11 +1,11 @@
-Workflow Automations are created directly in the Security Center portal.
+Workflow Automations are created directly in the Defender for Cloud portal.
 
 > [!IMPORTANT]
 > You will need a Microsoft 365 email account to use this specific set of instructions - if you don't have one, try changing the instructions below to use a different template, or create a blank Logic App.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account you used to activate the Azure Sandbox.
 
-1. Search for **Security Center** using the search box. The **Overview** pane for the Security Center appears.
+1. Search for **Defender for Cloud** using the search box. The **Overview** pane for the Defender for Cloud appears.
 
 1. In the left menu pane, under **Management**, select **Workflow automation**.
 
@@ -20,7 +20,7 @@ Workflow Automations are created directly in the Security Center portal.
     |Subscription     |_Concierge Subscription_     |
     |Resource group     | <rgn>[Learn resource group]</rgn> |
     | **Trigger conditions** |
-   |Select Security Center data types     |  _Threat detection alerts_   |
+   |Select Defender for Cloud data types     |  _Threat detection alerts_   |
    |Alert name contains    | _Malware_      |
    |Alert severity    |  _All severities selected_      |
 
@@ -42,7 +42,7 @@ Workflow Automations are created directly in the Security Center portal.
 
     Accept the default values for the rest of the fields.
 
-    ![Screenshot showing the Logic Apps creation screen in the Azure portal](../media/6-create-new-logic-app.png)
+    ![Screenshot showing the Logic Apps creation screen in the Azure portal.](../media/6-create-new-logic-app.png)
 
 1. Select **Review + create** and then select **Create**. It takes a minute or two to create the app. You can monitor the creation through the alerts icon, or select **Refresh** to refresh the screen.
 
@@ -50,15 +50,15 @@ Workflow Automations are created directly in the Security Center portal.
 
 1. Scroll down to the **Templates** section and select **Security** from the Category dropdown list.
 
-1. Select **Get a notification email when Security Center detects a threat** as shown below. You could also select **Blank Logic App** if you wanted to create some custom logic to run in response to an alert, or if you don't have an M365-based email account.
+1. Select **Get a notification email when Defender for Cloud detects a threat** as shown below. You could also select **Blank Logic App** if you wanted to create some custom logic to run in response to an alert, or if you don't have an M365-based email account.
 
-    ![Screenshot showing the popular security options from Logic apps](../media/7-select-logic-app.png)
+    ![Screenshot showing the popular security options from Logic apps.](../media/7-select-logic-app.png)
 
 1. Select **Use this template** to create the app.
 
 1. Provide credentials for Office 365 Outlook to connect your email account. Once validated, the owning email will be shown on the Office 365 Outlook connector.
 
-1. Select **+** on the **Security Center Alert** connector to add support for Security Center.
+1. Select **+** on the **Defender for Cloud Alert** connector to add support for Defender for Cloud.
 
 1. Select **Continue** to move to the details page.
 
@@ -68,23 +68,23 @@ Workflow Automations are created directly in the Security Center portal.
 
 1. You can use the **+ New step** to create additional logic steps in the flow. In this case, we don't need anymore so select **Save** from the top menu bar.
 
-1. Switch back to the Security Center pane, or tab and select **Refresh** to select your newly created Logic App.
+1. Switch back to the Defender for Cloud pane, or tab and select **Refresh** to select your newly created Logic App.
 
 1. Select **RespondToMalwareAlert** from the list of Logic Apps.
 
 1. Select **Create** to create the workflow automation.
 
-## Run a Workflow automation from Azure Security Center
+## Run a Workflow automation from Microsoft Defender for Cloud
 
-You normally run playbooks from the Security Center dashboard using an existing alert.
+You normally run playbooks from the workload protection dashboard using an existing alert.
 
-1. Go back to the Security Center dashboard. You can use the breadcrumb bar at the top to back up.
+1. Go back to the workload protection dashboard. You can use the breadcrumb bar at the top to back up.
 
 1. Under **Threat Detection**, select **Security incidents & alerts**.
 
 1. Here, you would select an alert, and at the top of the details page, select **Run playbooks**.
 
-    ![Screenshot showing the Run playbooks option](../media/7-security-center-playbooks.png)
+    ![Screenshot showing the Run playbooks option.](../media/7-security-center-playbooks.png)
 
 In this case, in the Azure Sandbox, you likely don't have any alerts - so you can't execute the playbook this way. However, we can test it through the Logic Apps panel.
 
@@ -94,7 +94,7 @@ In this case, in the Azure Sandbox, you likely don't have any alerts - so you ca
 
 1. On the **Overview** pane, from the top menu bar, select **Run Trigger**.
 
-    ![Screenshot showing the Run Trigger option in Azure Logic Apps](../media/6-run-playbook-from-logic-apps.png)
+    ![Screenshot showing the Run Trigger option in Azure Logic Apps.](../media/6-run-playbook-from-logic-apps.png)
 
 1. A new entry will show up under the _Runs history_ tab in the Overview pane. You can select that entry to drill into details. For example, you can drill into the inputs and outputs of the run:
 

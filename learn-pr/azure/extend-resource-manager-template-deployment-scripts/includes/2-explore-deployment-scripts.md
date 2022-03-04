@@ -37,7 +37,7 @@ Two `deploymentScripts`-specific values are required:
 
   ::: zone pivot="bicepcli,biceppowershell"
 
-  :::code language="plaintext" source="code/2-example-template.bicep" range="1-10,21" highlight="4" :::
+  :::code language="bicep" source="code/2-example-template.bicep" range="1-10,21" highlight="4" :::
 
   ::: zone-end
 
@@ -51,7 +51,7 @@ Two `deploymentScripts`-specific values are required:
 
   ::: zone pivot="bicepcli,biceppowershell"
 
-  :::code language="plaintext" source="code/2-example-template.bicep" range="1-10,21" highlight="5-10" :::
+  :::code language="bicep" source="code/2-example-template.bicep" range="1-10,21" highlight="5-10" :::
 
   ::: zone-end
 
@@ -65,7 +65,7 @@ After you set those elements, you can move into the `properties` section of the 
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-:::code language="plaintext" source="code/2-example-template.bicep" range="11, 13-18, 20" :::
+:::code language="bicep" source="code/2-example-template.bicep" range="11, 13-18, 20" :::
 
 Notice that the `scriptContent` uses a multi-line string. In Bicep, you can specify a multi-line string by using three quotes together (`'''`) before and after your string.
 
@@ -83,7 +83,7 @@ For a PowerShell script, you pass outputs back by creating a variable named `$De
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-:::code language="plaintext" source="code/2-example-template.bicep" range="14-17" highlight="3-4" :::
+:::code language="bicep" source="code/2-example-template.bicep" range="14-17" highlight="3-4" :::
 
 ::: zone-end
 
@@ -102,7 +102,7 @@ The retention interval is how long the results should be kept if you want to kee
 
   ::: zone pivot="bicepcli,biceppowershell"
 
-  :::code language="plaintext" source="code/2-example-template.bicep" range="11-20" highlight="9" :::
+  :::code language="bicep" source="code/2-example-template.bicep" range="11-20" highlight="9" :::
 
   ::: zone-end
 
@@ -116,8 +116,20 @@ Our full template would look something like:
 
   ::: zone pivot="bicepcli,biceppowershell"
 
-  :::code language="plaintext" source="code/2-example-template.bicep" :::
+  :::code language="bicep" source="code/2-example-template.bicep" :::
 
   ::: zone-end
+
+::: zone pivot="bicepcli,biceppowershell"
+
+## Include script files
+
+Embedding scripts inline in templates can be cumbersome, hard to read and understand, and difficult to change. Bicep uses the `loadTextContent()` function to embed an external text file in your deployment. When Bicep transpiles your template into JSON, it embeds the external file into the template it emits.
+
+Let's say you have a PowerShell file named *myscript.ps1* in the same folder as your Bicep template. You can tell Bicep to embed the file like this:
+
+:::code language="bicep" source="code/2-example-template-external.bicep" range="11-15" highlight="3" :::
+
+::: zone-end
 
 You can find all the properties for the `deploymentScripts` resource in the [ARM template reference documentation](/azure/templates/microsoft.resources/deploymentscripts).

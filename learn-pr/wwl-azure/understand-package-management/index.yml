@@ -1,0 +1,58 @@
+### YamlMime:Module
+uid: learn.wwl.understand-package-management
+metadata:
+  title: Understand package management
+  description: "Understand package management"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand package management
+summary: This module describes package feeds, common public package sources, and how to create and publish packages.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Implement package management
+  - Manage package feed
+  - Consume and create packages
+  - Publish packages
+prerequisites: |
+  None
+iconUrl: /learn/achievements/2-understand-package-management.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.understand-package-management.introduction
+- learn.wwl.understand-package-management.explore-packages
+- learn.wwl.understand-package-management.understand-package-feeds
+- learn.wwl.understand-package-management.explore-package-feed-managers
+- learn.wwl.understand-package-management.explore-common-public-package-sources
+- learn.wwl.understand-package-management.explore-self-hosted-saas-based-package-sources
+- learn.wwl.understand-package-management.consume-packages
+- learn.wwl.understand-package-management.introduction-to-azure-artifacts
+- learn.wwl.understand-package-management.publish-packages
+- learn.wwl.understand-package-management.create-package-feed
+- learn.wwl.understand-package-management.push-package
+- learn.wwl.understand-package-management.knowledge-check
+- learn.wwl.understand-package-management.summary
+badge:
+  uid: learn.wwl.understand-package-management.badge

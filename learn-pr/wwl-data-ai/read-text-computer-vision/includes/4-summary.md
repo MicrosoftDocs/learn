@@ -2,7 +2,7 @@ Optical character recognition (OCR) has been around for a long time. The ability
 
 Both of the APIs provide the ability to extract text from images.  The text can be typewritten or handwritten and can be at different angles within the image.  The main factor in choosing which API use is determined by the amount of text that needs to be processed.  The Read API is the service that is optimized for large text scenarios.
 
-You can find out more about reading text with the Computer Vision service in the [service documentation](/azure/cognitive-services/computer-vision/concept-recognizing-text).
+You can find out more about reading text with the Computer Vision service in the [service documentation](/azure/cognitive-services/computer-vision/concept-recognizing-text?azure-portal=true).
 
 ## Clean-up
 

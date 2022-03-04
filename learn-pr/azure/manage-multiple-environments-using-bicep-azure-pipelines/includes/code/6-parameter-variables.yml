@@ -1,0 +1,22 @@
+- stage: Deploy
+  jobs:
+  - deployment: DeployWebsite
+    displayName: Deploy Website
+    environment: Website
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - checkout: self
+            - task: AzureCLI@2
+              name: DeployBicepFile
+              displayName: Deploy Bicep file
+              inputs:
+                azureSubscription: MyServiceConnection
+                scriptType: 'bash'
+                scriptLocation: 'inlineScript'
+                inlineScript: |
+                  az deployment group create \
+                    --resource-group $(ResourceGroupName) \
+                    --template-file deploy/main.bicep \
+                    --parameters environmentType=$(EnvironmentType)

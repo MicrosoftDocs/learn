@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ansible.examine-playbook-structure
+title: Examine playbook structure
+metadata:
+  title: Examine playbook structure
+  description: "Examine playbook structure"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-examine-playbook-structure.md)]

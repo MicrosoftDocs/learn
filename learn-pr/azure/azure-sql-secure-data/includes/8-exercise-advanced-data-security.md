@@ -1,25 +1,19 @@
 In this exercise, you'll confirm that Advanced Data Security is enabled, and you'll explore some of the features within each of the capabilities mentioned in the previous unit.  
 
-## Configure Azure Defender
+## Configure Microsoft Defender for Cloud
 
 1. In the Azure portal, go to your Azure SQL Database logical server.
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. On the left pane, under **Security**, select **Security Center**. Azure Defender should already be enabled. Select **Configure**.
+1. On the left pane, under **Security**, select **Microsoft Defender for Cloud**. Select **Configure**.
 
 1. Review the selections you've made for your Azure SQL Database logical server. On the same pane is information about Vulnerability Assessment and Advanced Threat Protection.  
 
-    This storage account was deployed as part of the deployment script for your Azure SQL Database instance. Review the options, and add your email address if you want to receive the results of the weekly recurring scan.  
+    This storage account was deployed as part of the deployment script for your Azure SQL Database instance. Review the options, and add your email address if you want to receive the results of the weekly recurring scan. Uncheck **Also send email notification to admins and subscription owners**.  
 
-1. You can also configure your Advanced Threat Protection settings. To view the available Advanced Threat Protection alert types, select **All** under **Advanced Threat Protection types**.  
-
-    :::image type="content" source="../media/8-advanced-threat-protection-types.png" alt-text="Screenshot of the types of protection in Advanced Threat Protection.":::
-
-1. Just as you can configure who receives Vulnerability Assessment scans, you can configure who receives Advanced Threat Protection alerts. Review the options and, in the **Send alerts to** box, add your personal email address so that you can view the alerts in a later step of this exercise.  
-
-    :::image type="content" source="../media/8-advanced-threat-protection-settings.png" alt-text="Screenshot of Advanced Threat Protection settings information.":::
+1. Just as you can configure who receives Vulnerability Assessment scans, you can configure who receives Advanced Threat Protection alerts. In your sandbox subscription, you don't have access to set the subscription-level email settings, so you won't be able to **Add your contact details to the subscription's email settings in Azure Security Center**.  
 
 1. After you've updated all your settings, select **Save**.  
 
@@ -47,7 +41,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 ## Vulnerability Assessment
 
-1. Select the **X** at the upper right of the **Data Discovery & Classification** pane, then select the **Security Center** tab under Security to view the **Security Center** dashboard for your SQL Database. 
+1. Select the **Microsoft Defender for Cloud** tab under Security to view the **Microsoft Defender for Cloud** dashboard for your SQL Database instance.
 
 1. To begin reviewing the Vulnerability Assessment capabilities, under **Vulnerability assessment findings**, select **View additional findings in Vulnerability Assessment**.  
 
@@ -55,7 +49,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
     :::image type="content" source="../media/8-vulnerability-scan.png" alt-text="Screenshot of how to kick off a Vulnerability Assessment scan.":::
 
-    Your resulting view should be similar to what's shown here:  
+    Your resulting view will not be exact, but should be similar to what's shown here:  
 
     :::image type="content" source="../media/8-vulnerability-scan-results.png" alt-text="New Vulnerability Assessment dashboard after scan." lightbox="../media/8-vulnerability-scan-results.png":::
 
@@ -78,7 +72,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 ## Advanced Threat Protection
 
-1. Select the **X** at the upper right to close the Vulnerability Assessment pane and return to the **Security Center** dashboard for your SQL Database. Under **Security incidents and alerts**, you shouldn't see any items. This means **Advanced Threat Protection** has not detected any issues. Advanced Threat Protection detects anomalous activities that indicate unusual and potentially harmful attempts to access or exploit databases.  
+1. Select the **X** at the upper right to close the Vulnerability Assessment pane and return to the **Defender for Cloud** dashboard for your SQL Database. Under **Security incidents and alerts**, you shouldn't see any items. This means **Advanced Threat Protection** has not detected any issues. Advanced Threat Protection detects anomalous activities that indicate unusual and potentially harmful attempts to access or exploit databases.  
 
     You aren't expected to see any security alerts at this stage. In the next step, you'll run a test that will trigger an alert so that you can review the results in Advanced Threat Protection.  
 
@@ -117,13 +111,13 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
     SELECT * FROM sys.databases WHERE database_id like '' or 1 = 1 --' and family = 'test1';
     ```
 
-    Within a few minutes, you should receive an email message that's similar to the following:  
+    Within a few minutes, if you were able to configure the email settings (which you can't in the sandbox), you would receive an email message that's similar to the following:  
 
     :::image type="content" source="../media/8-advanced-threat-protection-email.png" alt-text="Screenshot of an Advanced Threat Protection threat detected email.":::
 
-1. In the Azure portal, go to your AdventureWorks database. On the left pane, under **Security**, select **Security Center**. 
+1. In the Azure portal, go to your AdventureWorks database. On the left pane, under **Security**, select **Microsoft Defender for Cloud**.
 
-    Under **Security incidents and alerts**, select **Check Azure Defender Alerts on this resource in Security Center**.  
+    Under **Security incidents and alerts**, select **View additional alerts on other resources in Defender for Cloud**.  
 
 1. You can now see the overall security alerts.  
 

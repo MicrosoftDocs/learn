@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Deploy a subscription-scoped resource
   description: Learn how to create Bicep files that deploy resources to a subscription.
-  ms.date: 05/30/2021
+  ms.date: 10/14/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial

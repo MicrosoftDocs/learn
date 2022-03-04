@@ -6,7 +6,7 @@ In this module, you will:
 - Describe the supported analytical workloads
 - Explain HTAP scenarios in the context of Synapse Link
 - Describe the analytical store
-- Understand well-defined schema's
+- Understand well-defined schemas
 - Design schemas to support type of analytics
 - Understand writeback scenarios
 

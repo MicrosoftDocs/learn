@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.explore-azure-monitor-log-analytics
+title: Explore Azure Monitor and Log Analytics
+metadata:
+  title: Explore Azure Monitor and Log Analytics
+  description: "Explore Azure Monitor and Log Analytics"
+  ms.date: 01/28/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-explore-azure-monitor-log-analytics.md)]

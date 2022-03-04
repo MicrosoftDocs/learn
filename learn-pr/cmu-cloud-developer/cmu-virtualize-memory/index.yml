@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Virtualize memory
 summary: Learn how memory is virtualized to support cloud resources. Covers different types of memory mapping and related issues.
 abstract: | 

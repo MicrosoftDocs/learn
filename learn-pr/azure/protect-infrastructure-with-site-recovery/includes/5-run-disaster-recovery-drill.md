@@ -1,38 +1,42 @@
+In this unit, you'll learn about Site Recovery disaster drills - what you need to consider, and how to run a test to check that the configuration is correct.
+
 You can use disaster recovery (DR) drills to test your organization's ability to recover from an outage, without impacting any production service.
 
-You completed setting up Azure Site Recovery, and now need to test your infrastructure replication. Test your configuration by running a DR drill. Azure Site Recovery enables you to do these drills in a safe manner that won't impact your production environment. You'll run some quality assurance on the configuration to ensure your DR solution is working.
-
-Here, you'll learn about Site Recovery disaster drills - what you need to consider, and how to run a test to check that the configuration is correct.
+In the previous exercise, you completed setting up Azure Site Recovery, and now need to test your infrastructure replication. Test your configuration by running a DR drill. Azure Site Recovery enables you to run these drills in a safe manner that won't impact your production environment. You'll also run some quality assurance tests on the configuration to ensure your DR solution is working.
 
 ## What is a disaster recovery drill?
 
-A DR drill is a way to check if you configured your solution correctly. The drill should give you, and your company, confidence that your data and services are available even if a disaster happens. Typically, organizations set a recovery time objective (RTO) that indicates how long it will take to recover infrastructure. Alongside the RTO, your company should define a recovery point objective (RPO). The RPO defines the amount of data loss that is acceptable as a function of time. For example, if your company's RPO is a day, you'll need to create at least a backup of all your data each day. You'll also need to make sure it takes less than a day to restore this backup.
+A DR drill is a way to check if you configured your solution correctly. The drill should give you, and your company, confidence that your data and services are available even if a disaster happens. Typically, organizations set a recovery time objective (RTO), which indicates how long it will take to recover infrastructure. Your company should also define a recovery point objective (RPO), which defines the amount of data loss that is acceptable as a function of time. For example, if your company's RPO is a day, you'll need to create a backup of all your data each day. You'll also need to make sure it takes less than a day to restore this backup.
 
-![A screenshot that show the run breakdown of failover tests.](../media/5-failover-tests.png)
+:::image type="content" source="../media/5-failover-tests.png" alt-text="A screenshot that shows the breakdown of failover tests that have been run." border="False":::
 
 To ensure that we run our DR tests, Site Recovery actively prompts us to run them on the Site Recovery dashboard.
 
 ## Why should you run a DR drill?
 
-A DR drill is vital to ensure the solution implemented meets the business continuity and disaster recovery (BCDR) requirements, and to check the replication works appropriately. Your DR drill, combined with RTO and RPO, needs to be tested thoroughly to ensure replication, failover, and recovery occur in the required timeframe.
+A DR drill is vital to ensure the solution implemented meets the business continuity and disaster recovery (BCDR) requirements, and to ensure the replication works appropriately. Your DR drill, combined with RTO and RPO, needs to be tested thoroughly to ensure replication, failover, and recovery occur in the required timeframe.
 
-For example, assume your RTO is an hour, and RPO is six hours. If your systems are backed up every hour, that's an hour of lost data plus the additional hour to recover your systems.
+For example, let's assume your RTO is an hour, and RPO is six hours. If your systems are backed up every hour, that's an hour of lost data plus the additional hour to recover your systems.
 
 Imagine your actual recovery time is five hours. Your systems are now close to being over six hours out of date, which means you'll be in breach of the BCDR RPO objective. Testing the actual time it takes to recover from failures can give you confidence that your systems follow your BCDR plans.
 
 ## Test failover of individual machines
 
-A test failover enables you to simulate a disaster and see its effects. Failover tests can be started from the Site Recovery dashboard, or directly from the disaster recovery menu on a specific VM. You'll start by choosing a recovery point. You can choose from either the last processed, the latest app-consistent point, or a custom recovery point.
+A failover test enables you to simulate a disaster and see its effects. Failover tests can be started from the Site Recovery dashboard, or directly from the disaster recovery menu on a specific VM. You'll start by choosing a recovery point. You can choose from either the last processed, the latest app-consistent point, or a custom recovery point.
 
-The steps are as follows:
+## Create a failover test
 
-1. You'll create an isolated virtual network so that your production infrastructure isn't affected. On the target VMs' overview, in the left menu pane, under **Operations**, select **Disaster recovery**.
+Create an isolated virtual network so that your production infrastructure isn't affected. 
 
-    ![A screenshot that shows the Operations' disaster recovery option for a selected VM.](../media/5-vm-disaster.png)
+1. Open the target VM named **patient-records**. An easy way to find this is to filter all resources to show only **Type == Virtual machine**. Select *patient-records* from the results list.
 
-1. A new **Replicated items** pane appears. From the top menu bar, select **Test Failover**.
+1. In the resource menu, scroll to **Operations**, and then select **Disaster recovery**.
 
-    ![A screenshot that shows the test failover button for a selected VM.](../media/5-vm-running-test-failover.png)
+    :::image type="content" source="../media/5-vm-disaster.png" alt-text="Screenshot that shows the Operations' disaster recovery option for a selected VM." lightbox="../media/5-vm-disaster.png":::
+
+1. A new **Replicated items** pane appears. Select **Refresh** until you see *Protected* in the status field. Then, from the top menu bar, select **Test Failover**.
+
+    :::image type="content" source="../media/5-vm-running-test-failover.png" alt-text="Screenshot that shows the test failover button for a selected VM." lightbox="../media/5-vm-running-test-failover.png":::
 
 1. This option will run a test failover of the VM, and enable you to track its progress through the Site Recovery jobs page.
 
@@ -44,11 +48,11 @@ The steps are as follows:
 
 Site Recovery gives you the flexibility to run a full DR test scenario for all our VMs. You can create recovery plans that include one or more of your VMs. Failovers are runnable as many times as you like, and allow for a flexible policy to test different combinations of infrastructure.
 
-![A screenshot that shows a test failover dashboard used to track the failover job execution.](../media/5-flexible-dr-drill.png)
+:::image type="content" source="../media/5-flexible-dr-drill.png" alt-text="Screenshot that shows a test failover dashboard used to track the failover job execution." lightbox="../media/5-flexible-dr-drill.png":::
 
 Just like testing the single VMs, the same test cleanup is available for everything included in the recovery plan.
 
-![A screenshot that shows the option to cleanup a test failover.](../media/5-test-success.png)
+:::image type="content" source="../media/5-test-success.png" alt-text="Screenshot that shows the option to cleanup a test failover." lightbox="../media/5-test-success.png":::
 
 ## Difference between a drill and production failover
 

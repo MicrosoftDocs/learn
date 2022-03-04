@@ -60,7 +60,7 @@ You can use Azure Storage client libraries for .NET, Python, or Java to encrypt 
 
 To encrypt the data, you use the storage client library to first create a content encryption key (CEK). You then encrypt the data on your end, by using this CEK. This key is then encrypted through a key encryption key (KEK). A KEK can be either one you already have or one that's stored in Azure Key Vault. Finally, the encrypted data can be stored in Azure Storage. This is called *envelope encryption*.
 
-![Envelope encryption](../media/3-envelope-technique.svg)
+![Envelope encryption.](../media/3-envelope-technique.svg)
 
 ### Decryption
 

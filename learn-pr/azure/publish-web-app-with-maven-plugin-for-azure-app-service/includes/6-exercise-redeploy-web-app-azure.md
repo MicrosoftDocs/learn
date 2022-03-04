@@ -58,7 +58,7 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
 
 1. Open a new browser tab using the URL in the JSON, appending `MyWebApp/`. You should see the new Server Status page.
 
-    ![Example web app running on Tomcat in a web browser](../media/6-web-app-on-tomcat-server.png)
+    ![Example web app running on Tomcat in a web browser.](../media/6-web-app-on-tomcat-server.png)
 
 1. Visit the deployed app by selecting the URL in the shell to see the deployed app running on App Services.
 

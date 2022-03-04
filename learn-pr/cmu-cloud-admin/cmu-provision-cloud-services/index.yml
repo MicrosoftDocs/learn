@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
+  ms.custom: team=nextgen
 title: Provision and manage cloud services
 summary: Learn about the different types of resources available on the cloud and the technology behind how they work.
 abstract: | 

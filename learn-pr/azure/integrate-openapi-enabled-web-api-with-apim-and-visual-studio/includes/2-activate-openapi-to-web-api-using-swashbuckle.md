@@ -9,7 +9,7 @@ And by using the Swashbuckle tooling, it's easier than ever for the VanArsdel de
 
 The OpenAPI document defines a standard and programming language-agnostic interface description for web APIs. It allows both humans and computers to discover and understand the capabilities of a service without having access to source code, additional documentation, or inspection of network traffic.
 
-:::image type="content" source="../media/2-activate-openapi-to-web-api-using-swashbuckle-01.png" alt-text="OpenAPI":::
+:::image type="content" source="../media/2-activate-openapi-to-web-api-using-swashbuckle-01.png" alt-text="OpenAPI.":::
 
 The OpenAPI document is a contract for web APIs. And it's all a consuming application needs to understand and communicate with the web APIs, without having to know where the APIs are located or whether they are running.
 
@@ -18,15 +18,15 @@ The OpenAPI document is a contract for web APIs. And it's all a consuming applic
 
 There are several ways to generate the OpenAPI document from your ASP.NET Core Web API app. [Swashbuckle][swashbuckle] is the most popular way to do so.
 
-:::image type="content" source="../media/2-activate-openapi-to-web-api-using-swashbuckle-02.png" alt-text="Swashbuckle":::
+:::image type="content" source="../media/2-activate-openapi-to-web-api-using-swashbuckle-02.png" alt-text="Swashbuckle.":::
 
 It's easy to use and, once it's installed to your app, it automatically displays the Swagger UI screen.
 
-:::image type="content" source="../media/2-activate-openapi-to-web-api-using-swashbuckle-03.png" alt-text="Swagger UI":::
+:::image type="content" source="../media/2-activate-openapi-to-web-api-using-swashbuckle-03.png" alt-text="Swagger UI.":::
 
 Swashbuckle also generates the OpenAPI document on-the-fly, which includes all the API endpoint details, payload structures, security requirements, etc. Here's the sample document for VanArsdel's web API for the inventory management.
 
-:::image type="content" source="../media/2-activate-openapi-to-web-api-using-swashbuckle-04.png" alt-text="OpenAPI Document":::
+:::image type="content" source="../media/2-activate-openapi-to-web-api-using-swashbuckle-04.png" alt-text="OpenAPI Document.":::
 
 In the next unit, you will take an exercise how to enable this OpenAPI capability to your ASP.NET Core Web API app.
 

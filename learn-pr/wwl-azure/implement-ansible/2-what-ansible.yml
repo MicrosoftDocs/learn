@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ansible.what-is-ansible
+title: What is Ansible?
+metadata:
+  title: What is Ansible?
+  description: "What is Ansible?"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-ansible.md)]

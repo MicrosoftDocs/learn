@@ -5,8 +5,8 @@ metadata:
   title: Create deployment slots
   description: Learn what deployment slots are and why they're helpful.
   ms.date: 03/27/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

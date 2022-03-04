@@ -1,56 +1,46 @@
-Working with an individual blob in the Azure Storage SDK for .NET Core requires a *blob reference* &mdash; an instance of an `ICloudBlob` object.
-
-You can get an `ICloudBlob` by requesting it with the blob's name, or selecting it from a list of blobs in the container. Both require a `CloudBlobContainer`, which you saw how to get in the last unit.
-
-## Getting blobs by name
-
-To get an `ICloudBlob` by name, call one of the `GetXXXReference` methods on a `CloudBlobContainer`. If you know the type of the blob you are retrieving, to get an object that includes methods and properties tailored for that blob type, use one of the specific methods (`GetBlockBlobReference`, `GetAppendBlobReference`, or `GetPageBlobReference`).
-
-None of these methods make network calls, nor do they confirm whether or not the targeted blob actually exists. They only create a blob reference object locally, which can then be used to call methods that *do* operate over the network and interact with blobs in storage. A separate method, `GetBlobReferenceFromServerAsync`, does call the Blob storage API, and will throw an exception if the blob doesn't already exist.
+To interact with a container in Blob Storage, use a `BlobContainerClient` object. In addition to creating containers as you saw in the last unit, a `BlobContainerClient` object can also be used to list the blobs in a container.
 
 ## Listing blobs in a container
 
-You can get a list of the blobs in a container using `CloudBlobContainer`'s `ListBlobsSegmentedAsync` method. *Segmented* refers to the separate pages of results returned &mdash; a single call to `ListBlobsSegmentedAsync` is never guaranteed to return all the results in a single page. You may need to call it repeatedly using the `ContinuationToken` it returns to work our way through the pages. This makes the code for listing blobs a little more complex than the code for uploading or downloading, but there's a standard pattern you can use to get every blob in a container.
+::: zone pivot="csharp"
+
+You can get a list of the blobs in a container using `BlobContainerClient`'s `GetBlobsAsync` method. Behind the scenes, this method will make one or more HTTP calls to Azure to list all of the blobs in the container. Since this method is asynchronous, you need to `await` the results as you read them since they may not all be returned in a single HTTP call to Azure. The standard pattern for reading the results with a `foreach` loop is shown below.
 
 ```csharp
-BlobContinuationToken continuationToken = null;
-BlobResultSegment resultSegment = null;
+AsyncPageable<BlobItem> blobs = containerClient.GetBlobsAsync();
 
-do
+await foreach (var blob in blobs)
 {
-    resultSegment = await container.ListBlobsSegmentedAsync(continuationToken);
-
-    // Do work here on resultSegment.Results
-
-    continuationToken = resultSegment.ContinuationToken;
-} while (continuationToken != null);
+    // Read the BlobItem and work with it here
+}
 ```
 
-This will call `ListBlobsSegmentedAsync` repeatedly until `continuationToken` is `null`, which signals the end of the results.
+::: zone-end
 
-> [!IMPORTANT]
-> Never assume that `ListBlobsSegmentedAsync` results will arrive in a single page. Always check for a continuation token and use it if it's present.
+::: zone pivot="java"
 
-### Processing list results
+You can get a list of the blobs in a container using the `listBlobs` method in `BlobContainerClient`. Behind the scenes, the client will make one or more HTTP calls to Azure to list all of the blobs in the container. This method returns `PagedIterable<BlobItem>` that implements `Iterable<BlobItem>`. You can then read it one item at a time or by page of items. The standard patterns for reading the results with a `for` loop or streaming API are shown below.
 
-The object you'll get back from `ListBlobsSegmentedAsync` contains a `Results` property of type `IEnumerable<IListBlobItem>`. The `IListBlobItem` interface includes only a handful of properties about the blob's container and URL, and isn't very useful by itself.
-
-To get useful blob objects out of `Results`, and to filter and cast the results to more specific blob object types, use the `OfType<>` method. Here are a few examples.
-
-```csharp
-// Get all blobs
-var allBlobs = resultSegment.Results.OfType<ICloudBlob>();
-
-// Get only block blobs
-var blockBlobs = resultSegment.Results.OfType<CloudBlockBlob>();
+```java
+for (BlobItem blob : blobContainerClient.listBlobs()) {
+    // Read the BlobItem and work with it here
+}
 ```
 
-> [!TIP]
-> Using `OfType<>` requires a reference to the `System.Linq` namespace (`using System.Linq;`).
+```java
+blobContainerClient.listBlobs()
+    .stream()
+    .map(blobItem -> /* Read the BlobItem and work with it here */)
+    .collect(Collectors.toList());
+```
+
+::: zone-end
 
 ## Exercise
 
-1. One of the features in your app requires getting a list of blobs from the API. You'll use the pattern previously shown to list all the blobs in our container. As you process the list, you get the name of each blob.
+One of the features in your app requires getting a list of blobs from the API. You'll use the pattern previously shown to list all the blobs in our container. As you process the list, you'll get the name of each blob.
+
+::: zone pivot="csharp"
 
 Using the editor, replace `GetNames` in `BlobStorage.cs` with the following code, and save your changes.
 
@@ -59,28 +49,39 @@ public async Task<IEnumerable<string>> GetNames()
 {
     List<string> names = new List<string>();
 
-    CloudStorageAccount storageAccount = CloudStorageAccount.Parse(storageConfig.ConnectionString);
-    CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
-    CloudBlobContainer container = blobClient.GetContainerReference(storageConfig.FileContainerName);
+    BlobServiceClient blobServiceClient = new BlobServiceClient(storageConfig.ConnectionString);
 
-    BlobContinuationToken continuationToken = null;
-    BlobResultSegment resultSegment = null;
+    // Get the container the blobs are saved in
+    BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient(storageConfig.FileContainerName);
 
-    do
+    // This gets the info about the blobs in the container
+    AsyncPageable<BlobItem> blobs = containerClient.GetBlobsAsync();
+
+    await foreach (var blob in blobs)
     {
-        resultSegment = await container.ListBlobsSegmentedAsync(continuationToken);
-
-        // Get the name of each blob.
-        names.AddRange(resultSegment.Results.OfType<ICloudBlob>().Select(b => b.Name));
-
-        continuationToken = resultSegment.ContinuationToken;
-    } while (continuationToken != null);
-
+        names.Add(blob.Name);
+    }
     return names;
 }
 ```
 
-> [!TIP]
-> Note that the method signature now needs to specify `async`.
+To turn the names returned by this method into URLs, the names this method returns are processed by `FilesController`. When returned to the client, the names are rendered as hyperlinks on the page.
 
-To turn them into URLs, the names returned by this method are processed by `FilesController`. When they are returned to the client, they are rendered as hyperlinks on the page.
+::: zone-end
+
+::: zone pivot="java"
+
+Using the editor, replace `listNames` in `BlobStorage.java` with the following code, and save your changes.
+
+```java
+public List<String> listNames() {
+    return blobContainerClient.listBlobs()
+      .stream()
+      .map(BlobItem::getName)
+      .collect(Collectors.toList());
+}
+```
+
+The names returned by this method are processed by `IndexBean` and `index.xhmtl` to be rendered as hyperlinks on the page.
+
+::: zone-end

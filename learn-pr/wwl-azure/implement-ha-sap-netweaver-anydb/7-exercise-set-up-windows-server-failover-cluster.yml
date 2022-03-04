@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ha-sap-netweaver-anydb.set-up-windows-server-failover-cluster-for-sap-ascs-scs-instance
+title: Set up a Windows Server failover cluster for an SAP ASCS-SCS instance
+metadata:
+  title: Set up a Windows Server failover cluster for an SAP ASCS-SCS instance
+  description: "Set up a Windows Server failover cluster for an SAP ASCS-SCS instance"
+  ms.date: 10/18/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-set-up-windows-server-failover-cluster.md)]

@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "At the end of your stored procedure, you would like to set the HTTP response to a static string of **Test**. Which line of JavaScript code should you use to accomplish this task?"
+    choices:
+    - content: "``context.getResponse().setBody('Test');``"
+      isCorrect: true
+      explanation: "That's correct. The HTTP response object includes a setBody function used to set the body of the HTTP response."
+    - content: "``context.setBody('Test');``"
+      isCorrect: false
+      explanation: "That's incorrect. The context object does not include a setBody function."
+    - content: "``context.getCollection().setBody('Test');``"
+      isCorrect: false
+      explanation: "That's incorrect. The collection object does not include a setBody function."
+  - content: "You are authoring a stored procedure in JavaScript and would like to manually roll back a transaction in your code for a certain condition. Which line of code should you use to roll back a transaction?"
+    choices:
+    - content: "``getContext().rollback();``"
+      isCorrect: false
+      explanation: "That's incorrect. The context object does not include a rollback function."
+    - content: "``throw new Error();``"
+      isCorrect: true
+      explanation: "That's correct. Throwing an exception will roll back the entire transaction."
+    - content: "``return;``"
+      isCorrect: false
+      explanation: "That's incorrect. Returning from the function will commit the entire transaction."
+  - content: "Your code contains a variable of type **Microsoft.Azure.Cosmos.Container** named **container** and another variable of type **Microsoft.Azure.Cosmos.Scripts.StoredProcedureProperties** named **props**. Which code block below would asynchronously create a new stored procedure using the two variables?"
+    choices:
+    - content: "``await container.StoredProcedures.CreateStoredProcedureAsync(props);``"
+      isCorrect: false
+      explanation: "That's incorrect. The **Container** class does not include a property named **StoredProcedures**."
+    - content: "``await container.CreateStoredProcedureAsync(props);``"
+      isCorrect: false
+      explanation: "That's incorrect. The **Container** class does not have a method named **CreateStoredProcedureAsync**."
+    - content: "``await container.Scripts.CreateStoredProcedureAsync(props);``"
+      isCorrect: true
+      explanation: "That's correct. The **Scripts** property of the **Container** class includes a method named **CreateStoredProcedureAsync**."
+  - content: "Your stored procedure creates three items with three distinct unique identifiers and logical partition key values. When running your stored procedure, you encounter an error. What is the cause for this error?"
+    choices:
+    - content: "Stored procedures are scoped to only a single item"
+      isCorrect: false
+      explanation: "That's incorrect. A stored procedure can perform a transaction with multiple items."
+    - content: "Stored procedures are scoped to only a single logical partition"
+      isCorrect: true
+      explanation: "This's correct. You cannot execute a stored procedure that performs operations across logical partition key values."
+    - content: "Stored procedures are scoped to only a single unique identifier"
+      isCorrect: false
+      explanation: "That's incorrect. A stored procedure can perform a transaction with multiple items, each with a distinct unique identifier."

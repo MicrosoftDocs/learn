@@ -1,6 +1,6 @@
 ## Integration
 
-![Integration category](../media/supporting-icons/integration.png)
+![Integration category.](../media/supporting-icons/integration.png)
 
 ### Why ask these questions
 

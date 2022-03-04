@@ -29,9 +29,9 @@ A profile is a script that runs when you start a new session. Having a customize
 1. Create a profile for the current user and the current host by running the command `New-Item`:
 
    ```powershell
-   New-Item 
-     -ItemType "file"
-     -Value 'Write-Host "Hello <replace with your name>, welcome back" -foregroundcolor Green ' 
+   New-Item `
+     -ItemType "file" `
+     -Value 'Write-Host "Hello <replace with your name>, welcome back" -foregroundcolor Green ' `
      -Path $Profile.CurrentUserCurrentHost -Force
    ```
 
@@ -53,10 +53,10 @@ Now that you have a profile set up, it's time to learn to create and run a scrip
    $PI = 3.14
    ```
 
-1. Create a file named *PI.ps1*:
+1. Create a file named *PI.ps1* in the current directory and open it in your code editor:
 
    ```powershell
-   touch PI.ps1
+   New-Item -Path . -Name "PI.ps1" -ItemType "file"
    code PI.ps1
    ```
 
@@ -76,7 +76,7 @@ Now that you have a profile set up, it's time to learn to create and run a scrip
    Your script displays the following text:
 
    ```output
-   The value of $PI is now 3
+   The value of $PI is now 3, inside the script
    ```
 
    Your script does two things. First, it creates a script-local variable `$PI` that shadows the `$PI` variable defined in the local scope. Next, the second row in the script interpolates the `$PI` variable because you used double quotation marks. It escapes interpolation the first time because you used a back tick.

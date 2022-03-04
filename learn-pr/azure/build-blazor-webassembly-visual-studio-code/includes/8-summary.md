@@ -16,5 +16,5 @@ You now understand the fundamentals of building Blazor apps. You can use your HT
 
 ## Get more practice
 
-- [Build a Blazor to-do list](/aspnet/core/tutorials/build-your-first-blazor-app)
+- [Build a Blazor to-do list](/aspnet/core/tutorials/build-a-blazor-app)
 - [Blazor Pizza Store workshop](https://aka.ms/blazorworkshop)

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-terraform.exercise-run-terraform-azure-cloud-shell
+title: Exercise - Run Terraform in Azure Cloud Shell
+metadata:
+  title: Exercise - Run Terraform in Azure Cloud Shell
+  description: "Exercise - Run Terraform in Azure Cloud Shell"
+  ms.date: 02/25/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-exercise-run-terraform-azure-cloud-shell.md)]

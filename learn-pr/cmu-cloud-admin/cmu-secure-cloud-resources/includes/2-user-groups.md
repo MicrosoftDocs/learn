@@ -12,7 +12,7 @@ A user is a registered identity that has permission to perform some function (or
 
 Users are abstractions over individual persons within an organization. As such, they have attributes that might include names, phone numbers, addresses, and other features that distinguish one person from another (Figure 3.2). These attributes also help to make user information human-readable. It is easier for an administrator to refer to "Laurel King" than "48d31887-5fad-4d73-a9f5-3c356e68a038". Modern directory services enable administrators to define the attributes stored on behalf of individual users using whatever schema makes sense for the organization.
 
-![Figure 3.2: Example of the attributes describing a user](../media/fig3-2.png)
+![Figure 3.2: Example of the attributes describing a user.](../media/fig3-2.png)
 
 _Figure 3.2: Example of the attributes describing a user._
 
@@ -20,7 +20,7 @@ _Figure 3.2: Example of the attributes describing a user._
 
 Because an identity system must scale to handle large numbers of users, it is useful to create abstractions over collections of similar users. A key abstraction is the *group*. Groups are named entities in an identity-management system. They can reflect organizational structure (for example, Accounting, Engineering, or IT), job functions (Developer, Tester, or Administrator), geographic locations, or anything else that lends itself to logically organizing users. In most identity-management systems, users can be members of multiple groups, permitting a Developer to be assigned to the Accounting department in the Pittsburgh office. Figure 3.3 shows a group structure that organizes users by department.
 
-![Figure 3.3: Users organized into departmental groups](../media/fig3-3.png)
+![Figure 3.3: Users organized into departmental groups.](../media/fig3-3.png)
 
 _Figure 3.3: Users organized into departmental groups._
 

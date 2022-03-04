@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.test-bicep-code-using-azure-pipelines.exercise-add-test-stage-pipeline
+title: Exercise - Add a test stage to your pipeline
+metadata:
+  unitType: exercise
+  title: Exercise - Add a test stage to your pipeline
+  description: Add a post-deployment test stage to your Bicep deployment pipeline.
+  ms.date: 09/15/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-exercise-add-test-stage-pipeline.md)]

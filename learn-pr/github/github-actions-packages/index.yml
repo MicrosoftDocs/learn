@@ -2,25 +2,23 @@
 uid: learn.github.github-actions-packages
 metadata:
   title: Leverage GitHub Actions to publish to GitHub Packages
-  description: Publish automatically and securely your code libraries or Docker images with GitHub Packages.
-  ms.date: 10/19/2020
-  author: cmaneu
-  ms.author: chmaneu
+  description: Publish automatically and secure your code libraries or Docker images with GitHub Packages.
+  ms.date: 09/30/2021
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Leverage GitHub Actions to publish to GitHub Packages
-summary: Publish automatically and securely your code libraries or Docker images with GitHub Packages. You'll also locally run Docker images published into GitHub Packages.
+summary: Publish automatically and securely your code libraries or Docker images with GitHub Packages. You'll also run Docker images published into GitHub Packages locally.
 abstract: |
   By the end of this module, you will be able to:
-  - Understand when to use GitHub Packages
-  - Identify the steps to publish to GitHub Packages and the GitHub Container Registry
-  - Set up a Continuous Integration (CI) workflow with GitHub Actions
-  - Create a Dockerfile
-  - Build a container image in CI
-  - Run locally a container image hosted on GitHub Docker Registry
+  - Understand what a Package Repository is and when to use it.
+  - Set up a Continuous Integration (CI) workflow with GitHub Actions to publish to GitHub Packages.
+  - Validate your knowledge with an exercise that checks your ability to publish to a GitHub Packages registry.
+  - Identify how to authenticate, install, and manage GitHub Packages.
 prerequisites: |
   - A GitHub account
-  - A basic knowledge about Docker and Docker Registry
+  - Basic knowledge about GitHub Actions
 ratingEnabled: true
 iconUrl: /learn/achievements/github/github-actions-packages.svg
 levels:
@@ -35,11 +33,10 @@ units:
 - learn.github.github-actions-packages.introduction
 - learn.github.github-actions-packages.what-is-github-packages
 - learn.github.github-actions-packages.publish-using-workflow
-- learn.github.github-actions-packages.exercise-github-packages-docker-registry
 - learn.github.github-actions-packages.knowledge-check-1
+- learn.github.github-actions-packages.exercise-github-packages-docker-registry
 - learn.github.github-actions-packages.github-packages-code-packages
 - learn.github.github-actions-packages.knowledge-check-2
 - learn.github.github-actions-packages.summary
-
 badge:
   uid: learn.github.github-actions-packages.badge

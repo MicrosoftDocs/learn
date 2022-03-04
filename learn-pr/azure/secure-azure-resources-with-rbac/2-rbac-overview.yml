@@ -4,8 +4,8 @@ metadata:
   title: What is Azure RBAC?
   description: Learn what Azure role-based access control (Azure RBAC) is and how it works.
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: rolyon
+  ms.author: rolyon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is Azure RBAC?

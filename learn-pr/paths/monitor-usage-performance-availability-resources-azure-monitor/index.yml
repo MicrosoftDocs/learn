@@ -5,8 +5,8 @@ metadata:
   description: Learn how to monitor the usage, performance, and availability of resources using Azure Monitor.
   brand: azure
   ms.date: 06/18/2021
-  author: ndelgado
-  ms.author: nedelgad
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Monitor the usage, performance, and availability of resources with Azure Monitor
@@ -15,7 +15,7 @@ summary:  |
 prerequisites: |
   - Basic knowledge of Azure services
   - Basic knowledge of monitoring concepts, such as using metrics, logging, and alerting
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/monitor-usage-performance-availability-resources-azure-monitor.svg
 levels:
 - beginner
 roles:

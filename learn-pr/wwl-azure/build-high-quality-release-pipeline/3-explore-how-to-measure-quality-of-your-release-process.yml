@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-high-quality-release-pipeline.explore-how-to-measure-quality-of-your-release-process
+title: Explore how to measure quality of your release process
+metadata:
+  title: Explore how to measure quality of your release process
+  description: "Explore how to measure quality of your release process"
+  ms.date: 02/25/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-explore-how-to-measure-quality-of-your-release-process.md)]

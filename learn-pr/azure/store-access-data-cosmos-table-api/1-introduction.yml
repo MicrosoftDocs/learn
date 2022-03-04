@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   title: Introduction
   description: In this unit, you will learn how moving an application from Azure Storage Tables to Azure Cosmos DB can help to solve scaling issues.
-  ms.date: 04/30/2019
+  ms.date: 09/27/2021
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial

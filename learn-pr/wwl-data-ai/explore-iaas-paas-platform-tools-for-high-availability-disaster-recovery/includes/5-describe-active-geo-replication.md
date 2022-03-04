@@ -2,4 +2,4 @@ Another method to increase availability for Azure SQL Database is to use active 
 
 :::image type="content" source="../media/module-77-high-availability-final-13.png" alt-text="Active Geo-Replication for Azure SQL Database":::
 
-More details can be found in the [official documentation](https://docs.microsoft.com/azure/sql-database/sql-database-active-geo-replication).
+More details can be found in the [official documentation](/azure/sql-database/sql-database-active-geo-replication).

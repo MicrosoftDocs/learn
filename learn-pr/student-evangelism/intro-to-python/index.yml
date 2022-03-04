@@ -2,13 +2,13 @@
 uid: learn.student-evangelism.intro-to-python
 metadata:
   title: Introduction to Python
-  description: Learn about the Python programming language, how to execute
-    statements and scripts, declare variables, and create a basic Python app.
+  description: Learn about the Python programming language, how to execute statements and scripts, declare variables, and create a basic Python app.
   ms.date: 06/14/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
+  ms.custom: team=nextgen
 title: Introduction to Python
 summary: Learn how to write basic Python code, declare variables, and work with
   console input and output

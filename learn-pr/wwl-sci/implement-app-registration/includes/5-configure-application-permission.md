@@ -6,11 +6,11 @@ Applications that integrate with Microsoft identity platform follow an authoriza
 
 The Microsoft identity platform implements the OAuth 2.0 authorization protocol, a method through which a third-party app can access web-hosted resources on behalf of a user. Any web-hosted resource that integrates with the Microsoft identity platform has a resource identifier, or *Application ID URI*. For example, Microsoft's web-hosted resources include:
 
-- Microsoft Graph: **https<nolink>://graph.microsoft.com**
+- Microsoft Graph: `https://graph.microsoft.com`
 
-- Microsoft 365 Mail API: **https<nolink>://outlook.office.com**
+- Microsoft 365 Mail API: `https://outlook.office.com`
 
-- Azure Key Vault: **https<nolink>://vault.azure.net**
+- Azure Key Vault: `https://vault.azure.net`
 
 The same is true for any third-party resources that have integrated with the Microsoft identity platform. Any of these resources also can define a set of permissions that can be used to divide the functionality of that resource into smaller chunks. As an example, Microsoft Graph has defined permissions for tasks such as:
 
@@ -76,7 +76,7 @@ On the Microsoft identity platform (requests made to the v2.0 endpoint), your ap
 > When you are using a Single Page Application (SPA) the refresh token is always provided.
 
 > [!NOTE]
-> This permission appears on all consent screens today, even for flows that don't provide a refresh token (the [implicit flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)). This is to cover scenarios where a client can begin within the implicit flow, and then move on to the code flow where a refresh token is expected.
+> This permission appears on all consent screens today, even for flows that don't provide a refresh token (the [implicit flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow)). This is to cover scenarios where a client can begin within the implicit flow, and then move on to the code flow where a refresh token is expected.
 
 ## Requesting individual user consent
 

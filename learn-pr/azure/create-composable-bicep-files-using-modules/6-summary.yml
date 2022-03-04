@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-composable-bicep-files-using-modules.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: Summary for creating composable Bicep files by using modules.
+  ms.date: 10/10/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

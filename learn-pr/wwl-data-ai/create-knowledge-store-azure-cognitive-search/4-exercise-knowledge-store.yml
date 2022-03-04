@@ -4,13 +4,14 @@ title: Exercise - Create a knowledge store
 metadata:
   title: Exercise - Create a knowledge store
   description: "Exercise - Create a knowledge store"
-  ms.date: 04/01/2021
+  ms.date: 07/30/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labId: 93861
+labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-knowledge-store.md)]

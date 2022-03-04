@@ -2,7 +2,7 @@ Planning your Conditional Access deployment is critical to achieving your organi
 
 In a mobile-first, cloud-first world, your users access your organization's resources from anywhere using a variety of devices and apps. As a result, focusing on who can access a resource is no longer enough. You also need to consider where the user is, the device being used, the resource being accessed, and more.
 
-Azure AD Conditional Access (CA) analyzes signals, such as user, device, and location, to automate decisions and enforce organizational access policies for resource. You can use CA policies to apply access controls like multifactor authentication (MFA). CA policies allow you to prompt users for MFA when needed for security and to stay out of users’ way when not needed.
+Azure AD Conditional Access analyzes signals, such as user, device, and location, to automate decisions and enforce organizational access policies for resource. You can use CA policies to apply access controls like multifactor authentication (MFA). CA policies allow you to prompt users for MFA when needed for security and to stay out of users’ way when not needed.
 
 ![Conditional Access overview](../media/conditional-access-overview-how-it-works.png)
 

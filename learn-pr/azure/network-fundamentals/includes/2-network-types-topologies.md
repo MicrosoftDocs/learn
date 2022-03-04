@@ -31,7 +31,7 @@ A metropolitan area network (MAN) provides networking capabilities between two d
 
 ### What is a wide area network?
 
-A wide area network (WAN) provides networking capabilities between two different geographical locations locally or worldwide. For example, a WAN is used to connect an organization's head office with branch offices all over the country. A WAN links multiple LANs together to create one super network. As a MAN, you use a virtual private network (VPN) to manage the connection between different LANs.
+A wide area network (WAN) provides networking capabilities between two different geographical locations locally or worldwide. For example, a WAN is used to connect an organization's head office with branch offices all over the country. A WAN links multiple LANs together to create one super network. As a WAN, you use a virtual private network (VPN) to manage the connection between different LANs.
 
 ### Differences between LAN and WAN networks
 

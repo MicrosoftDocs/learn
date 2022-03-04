@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.introduction-to-data-for-machine-learning.exercise-one-hot-vectors
+title: Exercise - Predict unknown values using one-hot vectors
+metadata:
+  title: Exercise - Predict unknown values using one-hot vectors
+  description: Exercise unit using one-hot vectors to predict unknown values in machine learning
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+notebook: notebooks/3-7-exercise-one-hot-vectors.ipynb
+sandbox: true

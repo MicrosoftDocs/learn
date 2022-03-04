@@ -9,7 +9,7 @@ By default, a Global Administrator doesn't have access to Azure resources. The G
 
 The following diagram shows what resources the Global Administrator can view when their permissions are elevated to User Access Administrator.
 
-![Diagram of User Access Administrator elevated permissions](../media/2-globaladmin-user-access-admin.png)
+![Diagram of User Access Administrator elevated permissions.](../media/2-globaladmin-user-access-admin.png)
 
 As Global Administrator, you might need to elevate your permissions to:
 

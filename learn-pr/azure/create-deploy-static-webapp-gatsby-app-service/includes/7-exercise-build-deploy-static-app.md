@@ -26,7 +26,7 @@ Go to the browser on `http://localhost:5000`.
 
 You should now see the following content rendered:
 
-:::image type="content" source="../media/built-site.png" alt-text="Our built app":::
+:::image type="content" source="../media/built-site.png" alt-text="Our built app.":::
 
 You've built your site and taken it from being a Gatsby app to a set of static pages containing nothing but HTML, CSS, and JavaScript!
 
@@ -60,11 +60,11 @@ git commit -m "adding About page to site"
 
 2. Now click the `new` button as indicated below:
 
-   :::image type="content" source="../media/create-github-repo.png" alt-text="Create new GitHub repo":::
+   :::image type="content" source="../media/create-github-repo.png" alt-text="Create new GitHub repo.":::
 
 3. Name your repository `gatsby-app` and click `Create repository` as indicated below:
 
-   :::image type="content" source="../media/github-naming.png" alt-text="GitHub naming":::
+   :::image type="content" source="../media/github-naming.png" alt-text="GitHub naming.":::
 
 4. Finally, add your GitHub repository as a remote and push. Type the following commands to accomplish that (Replace the `<user>` part with your GitHub user name):
 
@@ -132,11 +132,11 @@ Continue to create the application.
 
 1. Click the **Create** button
 
-   :::image type="content" source="../media/create-button.png" alt-text="Click create button":::
+   :::image type="content" source="../media/create-button.png" alt-text="Click create button.":::
 
 1. Once the deployment is complete, click the **Go to resource** button
 
-   :::image type="content" source="../media/go-to-resource-button.png" alt-text="Go to resource":::
+   :::image type="content" source="../media/go-to-resource-button.png" alt-text="Go to resource.":::
 
 ### Review the GitHub Action
 
@@ -144,7 +144,7 @@ At this stage, your Static Web Apps instance is created in Azure, but your app n
 
 You can check the status of your build and deploy action by clicking the link shown below:
 
-:::image type="content" source="../media/static-app-portal.png" alt-text="Browser to see the progress of the GitHub Action":::
+:::image type="content" source="../media/static-app-portal.png" alt-text="Browser to see the progress of the GitHub Action.":::
 
 ### View website
 
@@ -152,9 +152,9 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 
 Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
-:::image type="content" source="../media/static-app-portal-finished.png" alt-text="Azure Static Web Apps overview page":::
+:::image type="content" source="../media/static-app-portal-finished.png" alt-text="Azure Static Web Apps overview page.":::
 
-:::image type="content" source="../media/published.png" alt-text="Azure Static Web Apps overview page":::
+:::image type="content" source="../media/published.png" alt-text="Azure Static Web Apps overview page.":::
 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 

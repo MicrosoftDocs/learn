@@ -37,7 +37,7 @@ Model training process is an iterative process in which the Custom Vision servic
 
 After you've trained the model, and you're satisfied with its evaluated performance, you can publish the model to your prediction resource. When you publish the model, you can assign it a name (the default is "Iteration*X*", where X is the number of times you have trained the model).
 
-To use your model, client application developers need the following information:
+To use you model, client application developers need the following information:
 
 - **Project ID**: The unique ID of the Custom Vision project you created to train the model.
 - **Model name**: The name you assigned to the model during publishing.

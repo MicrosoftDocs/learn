@@ -63,8 +63,8 @@ Having understood that the communication strategy for this architecture should b
 - Need to group messages into transactions.
 - Want to receive messages without polling the queue.
 - Need to provide a role-based access model to the queues.
-- Need to handle messages larger than 64 KB but less than 256 KB.
-- Queue size will not grow larger than 80 GB.
+- Need to handle messages larger than 64 KB but less than 100 MB. The maximum message size supported by the standard tier is 256 KB and the premium tier is 100 MB. 
+- Queue size will not grow larger than 1 TB. The maximum queue size for the standard tier is 80 GB and for the premium tier, it's 1 TB. 
 - Want to publish and consume batches of messages.
 
 Queue storage isn't quite as feature rich, but if you don't need any of those features, it can be a simpler choice. In addition, it's the best solution if your app has any of the following requirements.
@@ -72,7 +72,7 @@ Queue storage isn't quite as feature rich, but if you don't need any of those fe
 #### Use Queue storage if you:
 
 - Need an audit trail of all messages that pass through the queue.
-- Expect the queue to exceed 80 GB in size.
+- Expect the queue to exceed 1 TB in size.
 - Want to track progress for processing a message inside of the queue.
 
 A queue is a simple, temporary storage location for messages sent between the components of a distributed application. Use a queue to organize messages and gracefully handle unpredictable surges in demand.

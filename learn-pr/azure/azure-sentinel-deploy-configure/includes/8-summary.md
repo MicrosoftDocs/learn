@@ -1,12 +1,12 @@
-You learned how Azure Sentinel provides a way to address the Contoso IT director's concerns:
+You learned how Microsoft Sentinel provides a way to address the Contoso IT director's concerns:
 
 - Alerts come from multiple products.
 - Too many alerts are triaged across dashboards.
 - The time spent to set up and maintain IT infrastructure takes the SecOps team away from its security tasks.
 
-You explored the various deployment considerations for Azure Sentinel, including necessary roles and permissions. You also learned how to connect data sources to Azure Sentinel and how to manage its log data.
+You explored the various deployment considerations for Microsoft Sentinel, including necessary roles and permissions. You also learned how to connect data sources to Microsoft Sentinel and how to manage its log data.
 
-You understand how Azure Sentinel saves time performing complex investigations and improves your SecOps.
+You understand how Microsoft Sentinel saves time performing complex investigations and improves your SecOps.
 
 ## Learn more
 
@@ -14,14 +14,14 @@ You can learn more by reviewing the following documents.
 
 ### Getting started
 
-- [Azure Sentinel documentation](/azure/sentinel?azure-portal=true)
-- [Quickstart: On-board Azure Sentinel](/azure/sentinel/quickstart-onboard?azure-portal=true)
-- [Azure Sentinel pricing](https://azure.microsoft.com/pricing/details/azure-sentinel?azure-portal=true)
-- [Permissions in Azure Sentinel](/azure/sentinel/roles?azure-portal=true)
+- [Microsoft Sentinel documentation](/azure/sentinel?azure-portal=true)
+- [Quickstart: On-board Microsoft Sentinel](/azure/sentinel/quickstart-onboard?azure-portal=true)
+- [Microsoft Sentinel pricing](https://azure.microsoft.com/pricing/details/azure-sentinel?azure-portal=true)
+- [Permissions in Microsoft Sentinel](/azure/sentinel/roles?azure-portal=true)
 - [Tutorial: Visualize and monitor your data](/azure/sentinel/tutorial-monitor-your-data?azure-portal=true)
-- [Quickstart: Get started with Azure Sentinel](/azure/sentinel/quickstart-get-visibility?azure-portal=true)
+- [Quickstart: Get started with Microsoft Sentinel](/azure/sentinel/quickstart-get-visibility?azure-portal=true)
 - [What is Azure Lighthouse?](/azure/lighthouse/overview?azure-portal=true)
-- [Extend Azure Sentinel across workspaces and tenants](/azure/sentinel/extend-sentinel-across-workspaces-tenants#cross-workspace-monitoring?azure-portal=true)
+- [Extend Microsoft Sentinel across workspaces and tenants](/azure/sentinel/extend-sentinel-across-workspaces-tenants#cross-workspace-monitoring?azure-portal=true)
 - [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview?azure-portal=true)
 - [Azure Foundation 4-Week Implementation](https://azuremarketplace.microsoft.com/marketplace/consulting-services/servent.servent-azure-foundation?azure-portal=true)
 
@@ -36,7 +36,7 @@ You can learn more by reviewing the following documents.
 - [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal?azure-portal=true)
 - [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview?azure-portal=true)
 
-### Azure Sentinel agent
+### Microsoft Sentinel agent
 
 - [Tutorial: Detect threats out-of-the-box](/azure/sentinel/tutorial-detect-threats-built-in?azure-portal=true)
 - [Connect data sources](/azure/sentinel/connect-data-sources?azure-portal=true)

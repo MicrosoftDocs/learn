@@ -4,12 +4,13 @@ title: Upgrade a database
 metadata:
   title: Upgrade a database
   description: "Upgrade a database"
-  ms.date: 04/22/2021
+  ms.date: 12/17/2021
   author: wwlpublish
   ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/5-upgrade-database.md)]

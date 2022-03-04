@@ -2,12 +2,13 @@
 uid: learn.student-evangelism.web-development-101-if-else
 metadata:
   title: Make decisions with JavaScript
-  description: Learn the syntax for controlling data flow in JavaScript and its significance when used with Boolean data types.
+  description: JavaScript is a programming language used for web development as well as the server. Learn the syntax for controlling data flow in JavaScript and its significance when used with Boolean data types.
   ms.date: 06/04/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Make decisions with JavaScript
 summary: This lesson covers the basics of JavaScript if/else decision-making concepts. You'll learn how comparing variables, using Booleans, and using if/else statements allow you to make decisions in your code.
 abstract: |

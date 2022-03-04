@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ci-cd-azure-devops.create-ci-cd-process
+title: Create a CI/CD process with Azure DevOps
+metadata:
+  title: Create a CI/CD process with Azure DevOps
+  description: "Create a CI/CD process with Azure DevOps"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-create-ci-cd-process.md)]

@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You have a container of products with JSON documents that contain a string property named **name**. The JSON documents also all contain a property named **tags** that's an array of string values. You are tasked with authoring a SQL query that will create a cross-product of the document names and tags. Which SQL query should you use?"
+    choices:
+    - content: "``SELECT p.name, t.tags[0] FROM products p``"
+      isCorrect: false
+      explanation: "That's incorrect. This query will return the name from the document and only the first string tag value. This query will not create a cross-product."
+    - content: "``SELECT p.name, t.tags FROM products p``"
+      isCorrect: false
+      explanation: "That's incorrect. This query will only select the existing name value and array of tags. This query will not create a cross-product."
+    - content: "``SELECT p.name, t FROM products p JOIN t IN p.tags``"
+      isCorrect: true
+      explanation: "That's correct. This query will create a cross-product of name and tag values."
+  - content: "Which method of the **Microsoft.Azure.Cosmos.Container** class takes in a SQL query as a string parameter and returns an iterator that can be used to iterate over the query results as deserialized C# objects?"
+    choices:
+    - content: "``GetItemQueryStreamIterator<>``"
+      isCorrect: false
+      explanation: "That's incorrect. This method will keep the results as Streams to minimize the deserialization overhead."
+    - content: "``GetItemQueryIterator<>``"
+      isCorrect: true
+      explanation: "That's correct. This method will use a SQL string to construct the query and then deserialize the results into C# objects."
+    - content: "``GetItemLinqQueryable<>``"
+      isCorrect: false
+      explanation: "That's incorrect. This method uses the LINQ query syntax rather than a SQL string to construct the query."

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.discover-azure-message-queue
+metadata:
+  title: Discover Azure message queues
+  description: "Learn how to integrate Azure Service Bus and Azure Queue storage in to your solution, and how to send and receive message by using .NET."
+  ms.date: 02/21/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Discover Azure message queues
+summary: Learn how to integrate Azure Service Bus and Azure Queue storage in to your solution, and how to send and receive message by using .NET.
+abstract: |
+  After completing this module, you'll be able to:
+  * Choose the appropriate queue mechanism for your solution.
+  * Explain how the messaging entities that form the core capabilities of Service Bus operate.
+  * Send and receive message from a Service Bus queue by using .NET.
+  * Identify the key components of Azure Queue Storage
+  * Create queues and manage messages in Azure Queue Storage by using .NET.
+prerequisites: |
+  *   You should be familiar with developer concepts and terminology.
+  *   An understanding of cloud computing and some experience with the Azure portal.
+iconUrl: /learn/achievements/discover-message-queue.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-queue-storage
+- azure-service-bus
+units:
+- learn.wwl.discover-azure-message-queue.introduction
+- learn.wwl.discover-azure-message-queue.choose-solution
+- learn.wwl.discover-azure-message-queue.explore-azure-service-bus
+- learn.wwl.discover-azure-message-queue.discover-service-bus-queues-topics-subscriptions
+- learn.wwl.discover-azure-message-queue.explore-service-bus-message-payloads-serialization
+- learn.wwl.discover-azure-message-queue.exercise-send-receive-message-from-service-bus-queue-by-using-net
+- learn.wwl.discover-azure-message-queue.explore-azure-queue-storage
+- learn.wwl.discover-azure-message-queue.create-manage-azure-queue-storage-queues-messages-by-using-net
+- learn.wwl.discover-azure-message-queue.knowledge-check
+- learn.wwl.discover-azure-message-queue.summary
+badge:
+  uid: learn.wwl.discover-azure-message-queue.badge

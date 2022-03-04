@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Replicate a container image to different Azure regions
   description: Replicate a container image to different Azure regions
   ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  author: georgewallace
+  ms.author: gwallace
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Replicate a container image to different Azure regions

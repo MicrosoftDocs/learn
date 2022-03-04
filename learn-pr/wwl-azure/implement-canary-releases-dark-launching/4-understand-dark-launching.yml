@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-canary-releases-dark-launching.understand-dark-launching
+title: Understand dark launching
+metadata:
+  title: Understand dark launching
+  description: "Understand dark launching"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-understand-dark-launching.md)]

@@ -5,14 +5,17 @@ metadata:
   description: Learn how to work with subscriptions, users, and groups by configuring Microsoft Azure Active Directory for workloads.
   brand: azure
   ms.date: 10/1/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: barclayn
+  ms.author: barclayn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage identity and access in Azure Active Directory
 summary: |
   Learn how to work with subscriptions, users, and groups by configuring Microsoft Azure Active Directory for workloads. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](/learn/certifications/azure-security-engineer).
 prerequisites: None
+video:
+  title: "Manage Identity and Access in Azure Active Directory video"
+  url: https://www.microsoft.com/videoplayer/embed/RWK4YI
 iconUrl: /learn/achievements/manage-identity-and-access.svg
 levels:
 - beginner

@@ -127,7 +127,7 @@ Go differs from other programming languages in how it organizes project files. F
 
 To set your workspace to a different location, you can use the **$GOPATH** environment variable. This environment variable helps to avoid future problems when working with more complex projects.
 
-::: zone pivot="linux,macos"
+::: zone pivot="linux"
 Configure your workspace by adding the following command to your ~/.profile:
 
 ```console
@@ -142,19 +142,37 @@ source ~/.profile
 
 ::: zone-end
 
+::: zone pivot="macos"
+Configure your workspace by adding the following command to your ~/.zshenv:
+
+```console
+export GOPATH=$HOME/go
+```
+
+Then run the following command to update your environment variables:
+
+```console
+source ~/.zshenv
+```
+
+::: zone-end
 
 ::: zone pivot="windows"
 To configure your workspace, specify the location of your Go project folder in a local Go environment variable.
 
 1. Create a top-level folder for all your Go projects. For example, *C:\Projects\Go*.
 
-1. In a PowerShell prompt, run the following command to set the $GOPATH environment variable. Replace `<project-folder>` with the top-level project folder you created in the previous step.
+1. Open a PowerShell prompt, and then run the following cmdlet to set the $GOPATH environment variable.
+
+   Replace `<project-folder>` with the top-level project folder you created in the previous step.
 
    ```powershell
    [Environment]::SetEnvironmentVariable("GOPATH", "<project-folder>", "User")
    ```
 
-   After the set the variable value, close the prompt window.
+   We use PowerShell for this step, so we can call the prebuilt cmdlet to set the environment variable.
+   
+   After you set the $GOPATH value, close the PowerShell prompt.
 
 1. Confirm the $GOPATH variable shows your correct workspace location. In a new prompt window, run the following command:
 

@@ -5,8 +5,8 @@ metadata:
   title: Introduction to resource groups and management in Azure
   description: Introduction to resource groups and management in Azure
   ms.date: 03/25/2020
-  author: patridge
-  ms.author: adpatrid
+  author: tfitzmac
+  ms.author: tomfitz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

@@ -1,6 +1,6 @@
 ## Incident response
 
-![Incident response category](../media/policies/incident-response.png)
+![Incident response category.](../media/policies/incident-response.png)
 
 ### Why ask these questions
 

@@ -11,7 +11,7 @@ By maintaining their on-premises infrastructures, Contoso could benefit from thi
 
 :::image type="content" source="../media/5-insights-map.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed, detailing the VM's operating system, IP address, and links for Health, Machine properties, and Azure VM properties. Three buttons are displayed for access to Properties (selected), Log Events, Alerts, and Connections." border="false":::
 
-## How can you leverage Azure Policy?
+## How can you use Azure Policy?
 
 *Azure Policy* is a service that can help organizations manage and evaluate compliance for their Azure environments' organizational standards. Azure Policy uses declarative rules based on properties of target Azure resource types. These rules form policy definitions, which administrators can apply through policy assignment to a resource group or subscription.
 
@@ -33,11 +33,11 @@ Specifically, Contoso IT staff could use Azure Policy to assign tags to resource
 
 To manage and assign Azure Arc policies for a computer, browse to Azure Arc in the Azure portal. In the returned list of managed servers, select the appropriate server, and then assign a policy to it. You'll need to configure the following: 
 
-- Scope and any exclusions from the scope of the policy.
-- Policy definition.
-- Assignment name.
-- Description.
-- Policy enforcement (Enabled or Disabled).
+- Policy scope, as well as any exclusions from the policy's scope
+- Policy definition
+- Assignment name
+- Description
+- Policy enforcement (Enabled or Disabled)
 
 :::image type="content" source="../media/5-assign-policy.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
 
@@ -45,7 +45,7 @@ After assigning policies, you can review the policy settings on the selected ser
 
 :::image type="content" source="../media/5-review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::
 
-## How can you leverage Azure Monitor?
+## How can you use Azure Monitor?
 
 You can use Monitor to optimize the administration of your existing deployments and to forecast capacity requirements for future deployments. Monitor provides three main capabilities, which the following table describes.
 
@@ -62,17 +62,17 @@ Monitor delivers focused, in-depth monitoring capabilities through:
 
 Both infrastructure and application monitoring services share capabilities that provide a consistent approach to configuring alerts, including:
 
-- Common action groups that designate alert-triggered actions and recipients of the alerts.
-- Designing custom dashboards.
-- Analyzing metrics by using tools such as Metrics Explorer or Power BI.
+- Common action groups that designate alert-triggered actions and recipients of the alerts
+- Designing custom dashboards
+- Analyzing metrics by using tools such as Metrics Explorer or Power BI
 
 Monitor supports collecting and monitoring metrics, activity and diagnostics logs, and events from a wide range of Azure services and computers both in on-premises datacenters and with other cloud providers. It provides a quick way to assess the status of your environment by using the Azure portal. Monitor presents a summary of triggered alerts, logs, metrics, and application-related telemetry originating from Application Insights. You can also access its data by using Azure PowerShell, the Azure CLI, REST APIs, and the Microsoft .NET SDK.
 
 Additionally, Monitor enables you to archive collected data in Azure Storage for long-term analysis or compliance purposes. You can also route the data to Azure Stream Analytics or to services from Microsoft and others by using Azure Event Hubs. You set up and use alerts to:
 
-- Trigger notifications via text message or email.
-- Trigger a remediation action as implemented by Azure Logic Apps, Azure Functions, or a runbook in Azure Automation.
-- Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT service management platform.
+- Trigger notifications via text message or email
+- Trigger a remediation action as implemented by Azure Logic Apps, Azure Functions, or a runbook in Azure Automation
+- Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT service-management platform
 
 You can store and analyze near real-time and historical data by using Log Analytics.
 > [!NOTE]
@@ -80,4 +80,4 @@ You can store and analyze near real-time and historical data by using Log Analyt
 
 This agent-based approach enables you to monitor the OS and its workloads by using Automation-based or Monitor-based solutions such as Update Management or Change Tracking and Inventory. 
 
-You can also use Azure Security Center to identify vulnerabilities and potential threats.
+You can also use Microsoft Defender for Cloud to identify vulnerabilities and potential threats.

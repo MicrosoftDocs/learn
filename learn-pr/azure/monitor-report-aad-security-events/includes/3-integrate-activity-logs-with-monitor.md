@@ -28,7 +28,7 @@ Creating a Log Analytics workspace is straightforward.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Select **More service** and, in the **Search** box, enter **log analytics**.
+1. Select **More service**, and then, in the **Search** box, enter **log analytics**.
 
 1. In the results list, select **Log Analytics workspaces**, and then select **New** to create a new Log Analytics workspace. To create a new Log Analytics workspace, supply the following details:
 
@@ -55,14 +55,14 @@ To stream the audit and sign-in logs to your Log Analytics workspace, you need t
 
 1. Open Azure Active Directory.
 
-1. In the **Monitoring** section, select **Diagnostics settings**.
+1. In the menu, under **Monitoring** section, select **Diagnostics settings**.
 
-   The **Diagnostics settings** pane opens. This is where you create the connection between the log files and your Log Analytics workspace. Each setting needs a name.  
+   The **Diagnostics settings** pane appears. You can create the connection between the log files and your Log Analytics workspace. Each setting needs a name.  
 
-1. Select the **Send to Log Analytics** option, and then specify or create a Log Analytics workspace. In our scenario, you select the Log Analytics workspace you've just created, and then do the following:  
+1. Select the **Send to Log Analytics** option, and then specify or create a Log Analytics workspace. In our scenario, select the Log Analytics workspace you've just created, and then do the following:  
 
    a. Select the **Configure** option, and then select the Log Analytics workspace you created earlier.  
-   b. Decide which of the log files you want to stream to the workspace. You can select **Audit log**, **Sign-up log**, or both.
+   b. Decide which of the log files you want to stream to the workspace. You can select **Audit log**, **Sign-in log**, or both.
 
 1. Select **Save**.  
 
@@ -82,13 +82,13 @@ The data streams for both the audit and sign-in logs are stored in your Log Anal
 | Category           | AppId                     |
 | CorrelationId      | Category                  |
 | DurationMs         | ClientAppUsed             |
-| Id                 | ConditionalAccessPolicies |
+| ID                 | ConditionalAccessPolicies |
 | Identity           | ConditionalAccessStatus   |
 | InitiatedBy        | CorrelationId             |
 | Level              | CreatedDateTime           |
 | Location           | DeviceDetail              |
 | LoggedByService    | DurationMs                |
-| OperationName      | Id                        |
+| OperationName      | ID                        |
 | OperationVersion   | Identity                  |
 | Resource           | IPAddress                 |
 | ResourceGroup      | IsRisky                   |
@@ -111,11 +111,11 @@ The data streams for both the audit and sign-in logs are stored in your Log Anal
 
 With the audit logs stored in your workspace tables, you can now run queries against them. You can write two types of queries, *table-based* and *search-based*. The schema structures in the preceding section show you all the fields you can query against.
 
-The query language you use is Kusto. It's designed to process data and return a result set.
+The query language you use is Kusto, which is designed to process data and return a result set.
 
 Each Kusto query follows a common pattern:
 
-- The query always starts with the name of the table you're running the query against.  Here, that name would be either **SignInLogs** or **AuditLogs**.
+- A query always starts with the name of the table you're running the query against.  Here, that name would be either **SignInLogs** or **AuditLogs**.
 - Each command is separated by a pipe (|) and typically begins on a new line. You can have multiple pipes in a query.
 
 Unless you nominate specific columns, the result set you see contains all schema fields.
@@ -127,19 +127,19 @@ The *where* command is the most common means of filtering the data in your query
 | ==          | Check equality (case-sensitive)                   | `Level == 8`                                               |
 | =~          | Check equality (case-insensitive)                 | `EventSourceName =~ "microsoft-windows-security-auditing"` |
 | !=, <>      | Check inequality (both expressions are identical) | `Level != 4`                                               |
-| *and*, *or* | Required between conditions                       | `Level == 16 or CommandLine != ""`                         |
+| `and` `or` | Required between conditions                       | `Level == 16 or CommandLine != ""`                         |
 
 Other common filter commands include:
 
-| Command                            | Description                                                   | Example                                                      |
-| ---------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| take *n*                           | Ideally suited to small result sets. Take returns *n* rows from the result set in no particular order. | AuditLogs \| Take 10                                         |
-| top *n* by *field*                 | Use this filter command to return the top *n* rows, sorted by the nominated *field*. | AuditLogs \| Top 10 by timeGenerated                         |
-| sort by *field* (desc)             | If you want to sort only the result set, you can use the sort command. You need to specify the field to sort on, and then you can optionally add the *desc* instruction to specify a descending sort pattern. | AuditLogs \| Sort by timeGenerated desc                      |
-| Where *field* (expression) *value* | This is the principal filtering command.  You nominate the field, expression, and comparator value.  You can stack multiple where commands, each separated by a pipe. | AuditLogs \| where CreatedDateTime >= ago(2d)                |
-| project *fields*                   | If you want to restrict the result set to display only nominated fields or columns, you can use the project command with a comma-separated list of the fields. | AuditLogs \| project timeGenerated, OperationName, ResourceGroup, Result |
+| Command  | Description | Example |
+| -------- | --------- | --------- |
+| `take *n*` | Ideally suited to small result sets. Take returns *n* rows from the result set in no particular order. | AuditLogs \| Take 10 |
+| `top *n* by *field*` | Use this filter command to return the top *n* rows, sorted by the nominated *field*. | AuditLogs \| Top 10 by timeGenerated |
+| `sort by *field* (desc)` | If you want to sort only the result set, you can use the sort command. You need to specify the field to sort on, and then you can optionally add the *desc* instruction to specify a descending sort pattern. | AuditLogs \| Sort by timeGenerated desc |
+| Where *field* (expression) *value* | This is the principal filtering command.  You nominate the field, expression, and comparator value.  You can stack multiple where commands, each separated by a pipe. | AuditLogs \| where CreatedDateTime >= ago(2d) |
+| project *fields* | If you want to restrict the result set to display only nominated fields or columns, you can use the project command with a comma-separated list of the fields. | AuditLogs \| project timeGenerated, OperationName, ResourceGroup, Result |
 
-You can use many other commands to build your queries. You can find out more information about the query commands you can use to filter your data at the links provided at the end of this module.
+You can use many other commands to build queries. To learn more about queries and filters, see the references at the end of this module.
 
 #### Example sign-in query
 
@@ -173,7 +173,7 @@ AuditLogs
 
 ## Create alerts from your activity log data
 
-Alerts aren't dissimilar to queries, the principal difference being that they run automatically. You can set a threshold against the result set and, if it's met, trigger an alert to let you know about it.
+Alerts are similar to queries, the principal difference being that they run automatically. You can set a threshold against the result set, and if it's met, trigger an alert to let you know about it.
 
 1. To get started, select **Set alert**.
 

@@ -2,12 +2,13 @@
 uid: learn.django.generic-views
 metadata:
   title: Use generic views in Django
-  description: Learn how to use generic views in Django.
+  description: Learn how to use generic views in the Python framework Django.
   ms.date: 02/25/2021
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Use generic views in Django
 summary: Because Django was designed for data-driven applications, it includes numerous built-in utilities to streamline the amount of code needed. One key area where Django makes a developer's life easier is by providing generic views, which are prebuilt with all the necessary code to perform core operations like displaying and editing data. We'll see how we can use generic views to greatly reduce the amount of code required.
 abstract:  | 

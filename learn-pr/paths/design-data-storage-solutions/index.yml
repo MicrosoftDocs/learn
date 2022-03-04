@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.design-data-storage-solutions
+metadata:
+  title: 'AZ-305: Design data storage solutions'
+  description: 'AZ-305: Design data storage solutions'
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-305: Design data storage solutions'
+prerequisites: |
+  - Conceptual knowledge of storage accounts, blobs, files, disks, data protection, and databases.
+  - Working experience with creating and securing storage systems, designing database solutions, and integrating data solutions.
+summary: |
+  Design data storage solutions including non-relational storage, relational storage, and data integration.
+iconUrl: /learn/achievements/design-storage-solution.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure
+modules:
+- learn.wwl.design-data-storage-solution-for-non-relational-data
+- learn.wwl.design-data-storage-solution-for-relational-data
+- learn.wwl.design-data-integration
+trophy:
+  uid: learn.wwl.design-data-storage-solutions.trophy

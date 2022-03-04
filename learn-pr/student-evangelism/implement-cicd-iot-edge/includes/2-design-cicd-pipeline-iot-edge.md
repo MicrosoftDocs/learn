@@ -12,15 +12,13 @@ Designing an automated smoke-testing strategy provides many benefits.
 - Deploying to virtual IoT devices is cheaper than deploying to physical IoT devices.
 - A successful smoke test ensures that the program is ready for further testing.
 - Automated smoke testing avoids expensive rework for more sophisticated tests
-- optimizing the time for your developer and the test teams
+- Optimizing the time for your developer and the test teams
 
 To implement this solution, you'll create a smoke test as a subset of your main functionality. The test should be self-scoring, automated, and able to run on virtual IoT devices. Also, the test should incorporate the principles of DevOps (continuous integration and continuous delivery) for IoT Edge devices.
 
 ## Testing solution components
 
 You'll use the following components in the overall design:
-
-- **Application Insights:** Used to monitor performance metrics of the Docker host and IoT Edge modules.
 
 - **Azure Container Registry:** A private Docker registry service used to store published IoT Edge modules.
 
@@ -50,4 +48,3 @@ The steps involved are:
 3. Set up continuous integration.
 4. Create a release pipeline with a smoke test.
 5. Add integration tests to a release pipeline.
-6. Monitor devices with Application Insights.

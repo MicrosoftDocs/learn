@@ -6,6 +6,8 @@ Now that you have completed this module, you have learned:
 - Describe the supported analytical workloads
 - Explain HTAP scenarios in the context of Synapse Link
 - Describe the analytical store
-- Understand well-defined schema's
+- Understand well-defined schemas
 - Design schemas to support type of analytics
 - Design writeback scenarios
+
+The official technical documentation supporting this module can be found [here](/azure/cosmos-db/synapse-link)

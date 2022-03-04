@@ -1,7 +1,5 @@
 targetScope = 'managementGroup'
 
-param managementGroupName string
-
 var policyDefinitionName = 'DenyFandGSeriesVMs'
 var policyAssignmentName = 'DenyFandGSeriesVMs'
 
@@ -42,6 +40,6 @@ resource policyDefinition 'Microsoft.Authorization/policyDefinitions@2020-03-01'
 resource policyAssignment 'Microsoft.Authorization/policyAssignments@2020-03-01' = {
   name: policyAssignmentName
   properties: {
-    policyDefinitionId: '/providers/Microsoft.Management/managementGroups/${managementGroupName}/providers/Microsoft.Authorization/policyDefinitions/${policyDefinition.name}'
+    policyDefinitionId: policyDefinition.id
   }
 }

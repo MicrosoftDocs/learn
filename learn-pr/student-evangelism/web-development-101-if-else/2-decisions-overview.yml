@@ -2,13 +2,13 @@
 uid: learn.student-evangelism.web-development-101-if-else.decisions-overview
 metadata:
   title: Make decisions with JavaScript
-  description: Learn the syntax for controlling data flow in JavaScript and its
-    significance when used with Boolean data types.
+  description: Learn the syntax for controlling data flow in JavaScript and its significance when used with Boolean data types.
   ms.date: 06/04/2021
   author: chloecodesthings
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Make decisions with JavaScript
 durationInMinutes: 2
 content: |
@@ -19,11 +19,11 @@ quiz:
     - content: The operator === is called.
       choices:
         - content: Equality
-          isCorrect: true
-          explanation: Correct. This operator indicates equality.
-        - content: Strict equality
           isCorrect: false
-          explanation: Incorrect. This operator indicates equality, but it isn't strict.
+          explanation: Incorrect. This operator indicates equality, but it's also more strict than equality.
+        - content: Strict equality
+          isCorrect: true
+          explanation: Correct. This operator indicates strict equality.
         - content: Assignment
           isCorrect: false
           explanation: Incorrect. This operator doesn't mean assignment.

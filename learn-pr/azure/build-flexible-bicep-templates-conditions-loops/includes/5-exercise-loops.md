@@ -95,7 +95,7 @@ The teddy bear toy team is about to launch again, this time into Asia. The team 
 
 1. Return to Visual Studio Code. At the top of the *main.bicep* file, add a new value to the `locations` array:
 
-   ::: code language="plaintext" source="code/5-add-location.bicep" highlight="5" :::
+   ::: code language="bicep" source="code/5-add-location.bicep" highlight="5" :::
 
 1. Save the changes to the file.
 
@@ -111,7 +111,7 @@ The teddy bear toy team is about to launch again, this time into Asia. The team 
 
 1. Return to Visual Studio Code. At the top of the *main.bicep* file, add a new value to the `locations` array:
 
-   ::: code language="plaintext" source="code/5-add-location.bicep" highlight="5" :::
+   ::: code language="bicep" source="code/5-add-location.bicep" highlight="5" :::
 
 1. Save the changes to the file.
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-databricks.explain
+title: Explain Azure Databricks
+metadata:
+  title: Explain Azure Databricks
+  description: "Explain Azure Databricks"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-explain.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-sql-api.project-query-results
+title: Project query results
+metadata:
+  title: Project query results
+  description: "Project query results"
+  ms.date: 01/19/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-project-query-results.md)]

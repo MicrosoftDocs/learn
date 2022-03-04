@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery
+metadata:
+  title: Plan SAP HANA on Azure (Large Instances) high availability and disaster recovery
+  description: "This module covers considerations to plan for SAP HANA on Azure (Large Instances) high availability and disaster recovery. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan SAP HANA on Azure (Large Instances) high availability and disaster recovery
+summary: Considerations to plan for SAP HANA on Azure (Large Instances) high availability and disaster recovery.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore SAP HANA on Azure (Large Instances) high availability and disaster recovery.
+  - Explore network considerations for disaster recovery with SAP HANA on Azure (Large Instances).
+  - Implement disaster recovery on HANA Large Instances.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/sap-hana-high-availability-disaster.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.introduction
+- learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.explore
+- learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.explore-network-considerations-for-disaster-recovery
+- learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.implement-hana-large-instances
+- learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.prepare-scenario
+- learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.fail-over-to-site
+- learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.failback-from-to-production-site
+- learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.knowledge-check
+- learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.summary
+badge:
+  uid: learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.badge

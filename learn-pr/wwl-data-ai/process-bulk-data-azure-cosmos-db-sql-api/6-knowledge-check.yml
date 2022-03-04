@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which property of the **CosmosClientOptions** class enables the ability to run multiple operations concurrently and transparently at scale?"
+    choices:
+    - content: "AllowBulkExecution"
+      isCorrect: true
+      explanation: "That's correct. This property enables optimistic batching of requests for non-latency sensitive scenarios."
+    - content: "ConnectionMode"
+      isCorrect: false
+      explanation: "That's incorrect. This property configures the current connection mode of the client."
+    - content: "LimitToEndpoint"
+      isCorrect: false
+      explanation: "That's incorrect. This property limits the ability of the client to discover new read and write endpoints."
+  - content: "Which one of these statements is considered a best practice when working with the bulk features of the SDK?"
+    choices:
+    - content: "Stream APIs are not compatible with the bulk features of the SDK."
+      isCorrect: false
+      explanation: "That's incorrect. The Stream features of the Azure Cosmos DB SQL API SDK are compatible the bulk feature of the SDK."
+    - content: "Assume that bulk will save you on actual throughput costs versus individual operations."
+      isCorrect: false
+      explanation: "That's incorrect. Bulk operations actually will typically use more throughput than the typical individual operation counterparts."
+    - content: "Configure the partition key for each operation configured in a set of tasks."
+      isCorrect: true
+      explanation: "That's correct. Configuring the partition key for individual operations will save the SDK from having to compute the partition key on a per operation basis."

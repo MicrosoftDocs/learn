@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-deployment-patterns.explore-microservices-architecture
+title: Explore microservices architecture
+metadata:
+  title: Explore microservices architecture
+  description: "Explore microservices architecture"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-explore-microservices-architecture.md)]

@@ -8,32 +8,32 @@ Here are some of the tasks of an Azure data engineer:
 
 > [!div class="alert is-success"]
 > **How a data engineer differs from a database administrator**
-> 
+>
 > The data engineer's role overlaps with the role of the database administrator (DBA) in terms of broad tasks. The differences are in scope and focus. Data engineers work with more than just databases, and they focus on _cloud implementations_ rather than on-premises servers.
 
-## Moving data around
+## Move data around
 
-As a data engineer, you can transfer and move data in several ways. One way is to start an *Extract, Transform, and Load (ETL)* process. 
+As a data engineer, you can transfer and move data in several ways. One way is to start an *Extract, Transform, and Load (ETL)* process.
 
-Extraction sources can include databases, files, and streams. Each source has unique data formats that can be structured, semistructured, or unstructured.  In Azure, data sources include Azure Cosmos DB, Azure Data Lake, files, and Azure Blob storage. 
+Extraction sources can include databases, files, and streams. Each source has unique data formats that can be structured, semistructured, or unstructured. In Azure, data sources include Azure Cosmos DB, Azure Data Lake, files, and Azure Blob storage.
 
 ### Extract
 
 During the extraction process, data engineers define the data and its source:
 
-**Define the data source**: Identify source details such as the resource group, subscription, and identity information such as a key or secret.
+- **Define the data source**: Identify source details such as the resource group, subscription, and identity information such as a key or secret.
 
-**Define the data**: Identify the data to be extracted. Define data by using a database query, a set of files, or an Azure Blob storage name for blob storage.
+- **Define the data**: Identify the data to be extracted. Define data by using a database query, a set of files, or an Azure Blob storage name for blob storage.
 
 ### Transform
 
-**Define the data transformation**: Data transformation operations can include splitting, combining, deriving, adding, removing, or pivoting columns. Map fields between the data source and the data destination. You might also need to aggregate or merge data. 
+**Define the data transformation**: Data transformation operations can include splitting, combining, deriving, adding, removing, or pivoting columns. Map fields between the data source and the data destination. You might also need to aggregate or merge data.
 
 ### Load
 
-**Define the destination**: During a load, many Azure destinations can accept data formatted as a JavaScript Object Notation (JSON), file, or blob. You might need to write code to interact with application APIs. 
+**Define the destination**: During a load, many Azure destinations can accept data formatted as a JavaScript Object Notation (JSON), file, or blob. You might need to write code to interact with application APIs.
 
-    Azure Data Factory offers built-in support for Azure Functions. You'll also find support for many programming languages, including Node.js, .NET, Python, and Java. Although Extensible Markup Language (XML) was common in the past, most systems have migrated to JSON because of its flexibility as a semistructured data type.
+Azure Data Factory offers built-in support for Azure Functions. You'll also find support for many programming languages, including Node.js, .NET, Python, and Java. Although Extensible Markup Language (XML) was common in the past, most systems have migrated to JSON because of its flexibility as a semistructured data type.
 
 **Start the job**: Test the ETL job in a development or test environment. Then migrate the job to a production environment to load the production system.
 
@@ -43,11 +43,11 @@ During the extraction process, data engineers define the data and its source:
 
 As a data engineer, you'll use several tools for ETL. The most common tool is Azure Data Factory, which provides robust resources and nearly 100 enterprise connectors. Data Factory also allows you to transform data by using a wide variety of languages.
 
-You might find that you also need a repository to maintain information about your organization's data sources and dictionaries. Azure Data Catalog can store this information centrally.
+You might find that you also need a repository to maintain information about your organization's data sources and dictionaries. Azure Purview can store this information centrally.
 
 ## Evolution from ETL
 
-Azure has opened the way for technologies that can handle unstructured data at an unlimited scale. This change has shifted the paradigm for loading and transforming data from ETL to extract, load, and transform (ELT). 
+Azure has opened the way for technologies that can handle unstructured data at an unlimited scale. This change has shifted the paradigm for loading and transforming data from ETL to extract, load, and transform (ELT).
 
 The benefit of ELT is that you can store data in its original format, be it JSON, XML, PDF, or images. In ELT, you define the data's structure during the transformation phase, so you can use the source data in multiple downstream systems.
 
@@ -67,12 +67,12 @@ Design data projects in phases that reflect the ELT approach:
 - **Ingest**: Identify the technology and method to load the data.
 - **Prepare**: Identify the technology and method to transform or prepare the data.
 
-Also consider the technologies you'll use to analyze and consume the data within the project. These are the next two phases of the process: 
+Also consider the technologies you'll use to analyze and consume the data within the project. These are the next two phases of the process:
 
 - **Analyze**: Identify the technology and method to analyze the data.
 - **Consume**: Identify the technology and method to consume and present the data.
 
-In traditional descriptive analytics projects, you might have transformed data in Azure Analysis Services and then used Power BI to consume the analyzed data. New AI technologies such as Azure Machine Learning services and Azure Notebooks provide a wider range of technologies to automate some of the required analysis.
+In traditional descriptive analytics projects, you might have transformed data in Azure Analysis Services and then used Power BI to consume the analyzed data. New AI technologies such as Azure Machine Learning services and Azure Synapse Analytics provide a wider range of technologies to automate some of the required analysis.
 
 These project phases don't necessarily have to flow linearly. For example, because machine learning experimentation is iterative, the Analyze phase sometimes reveals issues such as missing source data or transformation steps. To get the results you need, you might need to repeat earlier phases.
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.grow-cognitive-flexibility.exercise-cognitive-flexibility
+title: Exercise - Cognitive flexibility
+metadata:
+  title: Exercise - Cognitive flexibility
+  description: This unit provides a scenario where the aim is to increase someone's flexibility. It also lets you reflect on your own cognitive flexibility skills.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-exercise-cognitive-flexibility.md)]

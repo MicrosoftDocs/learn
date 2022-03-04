@@ -4,11 +4,10 @@ metadata:
   title: Exercise - Add configurable properties to an effect
   description: Exercise - Add configurable properties to an effect
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Exercise - Add configurable properties to an effect
 durationInMinutes: 15
 content: |

@@ -6,7 +6,7 @@ A mobile application that can provide this type of real-time information will re
 
 In this series of four modules which are part of the Build serverless, full stack applications in Azure learning path, we'll design and build this bus ride application from scratch.
 
-In this module, you'll break down a scenario for an application and build a multi-service architecture of a solution, which is based on the microservices approach. After constructing the architecture, you'll dive into the first crucial step: building the foundation for a modern application. Using Azure SQL Database, you'll deploy, configure, and automate CI/CD for the database component of your full stack application.
+In this module, you'll break down a scenario for an application and build a multi-service architecture of a solution, which is based on the microservices approach. After constructing the architecture, you'll dive into the first crucial step: building the foundation for a modern application. Using Azure SQL Database, you'll deploy, configure, and automate continuous integration and continuous delivery/continuous deployment (CI/CD) for the database component of your full stack application.
 
 By the end of this module, you'll be able to use modern database capabilities to build a foundation for modern applications.
 

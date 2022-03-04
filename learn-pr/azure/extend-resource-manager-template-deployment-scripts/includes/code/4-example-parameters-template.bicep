@@ -28,7 +28,7 @@ resource myFirstDeploymentScript 'Microsoft.Resources/deploymentScripts@2020-10-
       $output += "Secure environment variables (like $env:MySecretValue) are only secure if you keep them that way."
       Write-Output $output
       $DeploymentScriptOutputs = @{}
-      $DeploymentScriptOutputs['text'] = $output'
+      $DeploymentScriptOutputs['text'] = $output
     '''
     retentionInterval: 'P1D'
   }

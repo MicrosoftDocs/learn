@@ -9,6 +9,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
+  ms.custom: team=nextgen
 durationInMinutes: 5 # dummy number at present
 content: |
 quiz:
@@ -24,7 +25,7 @@ quiz:
     - content: "Empower employees and optimize operations"
       isCorrect: true
       explanation: "Employees are given only the accurate information about items out of stock. So, operations are optimized because employee time is focused."
-  - content: "Consider the same retail scenario as in the previous question. The cameras are designed to spot overcrowding. Computer vision algorithms can spot a disabled person struggling in the aisles. Staff are notified and can help the customer. In this scenario, which part of the digital feedback loop can you identify?"
+  - content: "Consider the same retail scenario as in the previous question. The cameras are designed to spot overcrowding. Computer vision algorithms can spot a person with disabilities struggling in the aisles. Staff are notified and can help the customer. In this scenario, which part of the digital feedback loop can you identify?"
     choices:
     - content: "Create digital products"
       isCorrect: false

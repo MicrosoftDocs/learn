@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.exercise-deploy-web-application
+title: Exercise - Deploy a web application
+metadata:
+  unitType: exercise
+  title: Exercise - Deploy a web application
+  description: In this unit, you update a pipeline to build and deploy an application.
+  ms.date: 10/10/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-deploy-web-application.md)]

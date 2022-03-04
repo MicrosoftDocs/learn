@@ -4,12 +4,13 @@ title: Describe what is Web Application Firewall
 metadata:
   title: Describe what is Web Application Firewall
   description: "Describe what is Web Application Firewall"
-  ms.date: 06/21/2021
+  ms.date: 01/19/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/6-describe-what-web-application-firewall.md)]

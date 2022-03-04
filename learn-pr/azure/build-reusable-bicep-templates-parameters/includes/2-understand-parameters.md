@@ -20,12 +20,12 @@ Let's look at how each part works:
 - `environmentName` refers to the name of the parameter. Although the parameter name can be anything, you should make the name clear and understandable for the template users. Within the same template, you can also refer to the parameter by using its name. Parameter names must be unique. They can't have the same name as a variable or a resource in the same Bicep file.
 
   > [!TIP]
-  > Use good naming for parameter declarations. Good names make your templates easy to read and understand. Make sure you're using clear, descriptive names, and be consistent in your naming.
+  > Use best practice naming conventions for parameter declarations. Good naming conventions make your templates easy to read and understand. Make sure you're using clear, descriptive names, and adopt consistent naming strategy.
 
 - `string` refers to the type of the parameter.
 
-> [!TIP]
-> Think carefully about the parameters your template uses. Try to use parameters for settings that change between deployments. Variables and hard-coded values can be used for settings that don't change between deployments.
+  > [!TIP]
+  > Think carefully about the parameters your template uses. Try to use parameters for settings that change between deployments. Variables and hard-coded values can be used for settings that don't change between deployments.
 
 ## Add a default value
 
@@ -75,7 +75,7 @@ This parameter is an object with two string properties, `name` and `tier`, and a
 
 When you reference the parameter in the template, you can select the individual properties of the object by using a dot followed by the name of the property, like in this example:
 
-:::code language="plaintext" source="code/2-plan-sku.bicep" highlight="5-6":::
+:::code language="bicep" source="code/2-plan-sku.bicep" highlight="5-6":::
 
 > [!IMPORTANT]
 > Keep in mind that you don't specify the type of each property within an object. However, when you use a property's value, its type must match what's expected. In the previous example, both the name and the tier of the App Service plan SKU must be strings.
@@ -94,7 +94,7 @@ param resourceTags object = {
 
 Whenever you define a resource in your Bicep file, you can reuse it wherever you define the `tags` property:
 
-:::code language="plaintext" source="code/2-create-resources.bicep" highlight="4,13":::
+:::code language="bicep" source="code/2-create-resources.bicep" highlight="4,13":::
 
 ### Arrays
 
@@ -126,7 +126,7 @@ param cosmosDBAccountLocations array = [
 
 When you declare your Azure Cosmos DB resource, you can now reference the array parameter:
 
-:::code language="plaintext" source="code/2-create-cosmosdb.bicep" highlight="5":::
+:::code language="bicep" source="code/2-create-cosmosdb.bicep" highlight="5":::
 
 It's then easy to use a different parameter value for your development environment by changing the value of the parameter. Soon, you'll learn how you can provide different parameter values without modifying your original template.
 

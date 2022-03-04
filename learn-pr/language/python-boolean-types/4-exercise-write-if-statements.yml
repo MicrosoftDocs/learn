@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.use-boolean-types.exercise-write-if-statements
+title: Exercise - Write 'if' statements
+metadata:
+  title: Exercise - Write 'if' statements
+  description: In this exercise, you practice writing conditional logic in Python by using 'if' statements.
+  ms.date: 12/02/2021
+  author: ornelladotcom
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 8
+sandbox: true
+notebook: notebooks/4-exercise-write-if-statements.ipynb

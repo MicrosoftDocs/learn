@@ -75,3 +75,8 @@ The main steps in the process are:
 1. Configure a Windows Server failover cluster quorum.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKA]
+
+---
+
+
+---

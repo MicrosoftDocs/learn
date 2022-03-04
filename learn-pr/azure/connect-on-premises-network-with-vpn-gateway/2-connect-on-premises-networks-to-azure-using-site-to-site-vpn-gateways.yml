@@ -5,8 +5,8 @@ metadata:
   title: Connect on-premises networks to Azure by using site-to-site VPN gateways
   description: Connect on-premises networks to Azure by using site-to-site VPN gateways
   ms.date: 04/26/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: cherylmc
+  ms.author: cherylmc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

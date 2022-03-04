@@ -65,11 +65,11 @@ During the process, you'll:
 
 After you've completed all of the preceding changes, your *main.bicep* file should look like this example:
 
-::: code language="plaintext" source="code/8-template.bicep" highlight="16-36, 47-64" :::
+::: code language="bicep" source="code/8-template.bicep" highlight="16-36, 47-64" :::
 
 Your *database.bicep* file should look like this example:
 
-::: code language="plaintext" source="code/8-database.bicep" highlight="68-70" :::
+::: code language="bicep" source="code/8-database.bicep" highlight="68-70" :::
 
 If it doesn't, either copy the example or adjust your template to match the example.
 

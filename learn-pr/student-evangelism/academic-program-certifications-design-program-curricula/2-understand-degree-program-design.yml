@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-design-program-curricula.understand-degree-program-design
+title: Understand degree program design
+metadata:
+  title: Understand degree program design
+  description: Learn about degree program designs.
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-degree-program-design.md)]

@@ -5,8 +5,8 @@ metadata:
   title: Infrastructure protection
   description: In this unit, we'll discuss how to protect access to your infrastructure
   ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: robbyatmicrosoft
+  ms.author: robbymillsap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Azure role-based access control can be applied to all but which of the following scopes?'
+  - content: 'Which of the following scopes cannot be secured with Azure role-based access control?'
     choices:
     - content: 'Subscription'
       isCorrect: false

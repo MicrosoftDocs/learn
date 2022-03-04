@@ -4,12 +4,13 @@ title: Plan for Microsoft services connectors
 metadata:
   title: Plan for Microsoft services connectors
   description: "Plan for Microsoft services connectors"
-  ms.date: 03/12/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-plan-for-microsoft-services-connectors.md)]

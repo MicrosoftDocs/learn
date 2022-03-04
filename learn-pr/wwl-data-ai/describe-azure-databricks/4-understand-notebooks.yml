@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-databricks.understand-notebooks
+title: Understand Azure Databricks Notebooks
+metadata:
+  title: Understand Azure Databricks Notebooks
+  description: "Understand Azure Databricks Notebooks"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-understand-notebooks.md)]

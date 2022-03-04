@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.just-enough-administration-windows-server.describe-how-jea-endpoints-work-to-limit-access-to-powershell-session
+title: Describe how JEA endpoints work to limit access to a PowerShell session
+metadata:
+  title: Describe how JEA endpoints work to limit access to a PowerShell session
+  description: "Describe how JEA endpoints work to limit access to a PowerShell session"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-describe-how-jea-endpoints-work-to-limit-access-to-powershell-session.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following PowerShell cmdlets can be used to determine which built in JEA endpoints are available on a Windows Server computer?"
+    choices:
+    - content: "**Register-PSSessionConfiguration**"
+      isCorrect: false
+      explanation: "Incorrect: Use the Register-PSSessionConfiguration cmdlet to register a new JEA endpoint."
+    - content: "**Get-PSSessionConfiguration**"
+      isCorrect: true
+      explanation: "Correct: You can use the Get-PSSessionConfiguration cmdlet to view existing JEA endpoints."
+    - content: "**Set-PSSessionConfiguration**"
+      isCorrect: false
+      explanation: "Incorrect: Use the Set-PSSessionConfiguration cmdlet to modify the properties of a registered session configuration."

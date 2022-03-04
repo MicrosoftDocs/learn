@@ -9,15 +9,37 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
+    - content: How would you find all members of a response starting with "F"?
+      choices:
+        - content: "`Get-Process 'name of process' | Get-Member -Name F*`"
+          isCorrect: true
+          explanation: "Correct. This solution is how you search for member starting with F"
+        - content: "`Get-Process 'name of process' | Get-Member -Name F`"
+          isCorrect: false
+          explanation: "Incorrect. This solution will not work as it only searches for a member with the exact name F"
+        - content: "`Get-Process 'name of process' | Get-Members -Name F*`"
+          isCorrect: false
+          explanation: "Incorrect. The correct command to pipe to is Get-Member"
+    - content: What will this command answer with `Get-Process 'some process' | Format-Table Name,CPU | Select-Object Name, CPU`"?
+      choices:
+        - content: The Name and CPU for the process in question.
+          isCorrect: false
+          explanation: Incorrect. The use of Format-Table before Select-Object transforms the response to another type of object so values for Name and CPU is no longer found where they used to be.
+        - content: Empty response
+          isCorrect: true
+          explanation: Correct. The Format-Table command will transform the response so that Name and CPU values still exist, but in other columns.
+        - content: It will throw an error
+          isCorrect: false
+          explanation: Incorrect. It will not throw an error, but it will show an empty response as the Format-Table has transformed the object and the data is no longer found in the Name and CPU columns.
     - content: Which statement is the best choice for _filtering left_?
       choices:
-        - content: "`Get-Process | Select-Object Name | Where-Object Name -eq
-            name-of-process`"
+        - content: "`Get-Process | Select-Object Name | Where-Object Name -eq 'name-of-process'`"
           isCorrect: false
           explanation: Incorrect. In this statement, the filtering happens late (that is, at the _right side_ of the statement). Filtering late is slow and inefficient, especially if the command is sent over the network and the data store is large.
         - content: "`Get-Process | Where-Object Name -eq name-of-process | Select-Object name-of-process`"
@@ -26,25 +48,4 @@ quiz:
         - content: "`Get-Process -Name name-of-process | Select-Object Name`"
           isCorrect: true
           explanation: Correct. This solution is the best choice. The statement filters early and uses a built-in filter.
-    - content: How do you know whether a command accepts pipeline input?
-      choices:
-        - content: If a parameter accepts an array, with a type, it accepts pipeline input.
-          explanation: Incorrect. It also needs to set the `Accept pipeline input?` to _True_, with a description that is either `(ByValue)` or `(ByPropertyName)`.
-          isCorrect: false
-        - content: It has the property `Accept pipeline input?` set to _True_, with a description that is either `(ByValue)` or `(ByPropertyName)`.
-          explanation: Correct. This solution is the best choice.
-          isCorrect: true
-        - content: The parameter has the `Pipeline` property set to _True_.
-          explanation: Incorrect. It needs to have the `Accept pipeline input? property` set to _True_.
-          isCorrect: false
-    - content: What does it mean when a parameter `-Id` of type `<System.Int32[]>` has the description `Accept pipeline input?  True  (ByPropertyName)`?
-      choices:
-        - content: It means that the parameter accepts an array of objects as pipeline input, where each object has a property with the name `Id`.
-          isCorrect: true
-          explanation: Correct. The `(ByPropertyName)` description allows an object to have to match _only_ a singular property. To make an object match a pipeline input, you might need to rename a specific property. You do this rather than cast the entire object to a new type, which would be required with `(ByValue)`.
-        - content: The parameter `-Id` accepts pipeline input in the form of an array of `Int32`.
-          isCorrect: false
-          explanation: Incorrect. `-Id` accepts a pipeline input of an array of objects, where each object needs to have a property called `Id` of type `Int32`.
-        - content: The parameter `-Id` accepts an `Int32` as input.
-          explanation: Incorrect. `-Id` accepts a pipeline input of an array of objects, where each object needs to have a property called `Id` of type `Int32`.
-          isCorrect: false
+    

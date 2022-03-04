@@ -43,7 +43,7 @@ Next, upload the JSON file to a Blob storage container.
 
 1. Under **Blob service**, select **Containers**.
 
-    ![Screenshot showing how to set up an input Blob container](../media/6-input-blob.png)
+    ![Screenshot showing how to set up an input Blob container.](../media/6-input-blob.png)
 
 1. Select the **learn-container** container you created. It should be empty.
 
@@ -57,7 +57,7 @@ Next, upload the JSON file to a Blob storage container.
 
 1. Select **Upload**.
 
-    ![Screenshot showing how to upload the JSON file](../media/6-upload-json.png)
+    ![Screenshot showing how to upload the JSON file.](../media/6-upload-json.png)
 
 After the file is uploaded, you should see the **input** folder in the container. Select it to explore the blob hierarchy and see the data.
 
@@ -69,7 +69,7 @@ Next, set up the destination for the transformed data:
 
 1. From the choices on the overview page, select **Storage Explorer (preview)**.
 
-    ![Screenshot of Storage Explorer in Azure portal](../media/6-storage-explorer.png)
+    ![Screenshot of Storage Explorer in Azure portal.](../media/6-storage-explorer.png)
 
 1. On the right, go to **BLOB CONTAINERS**.
 
@@ -97,7 +97,7 @@ Now you're ready to write your transformation query. You'll need to pull the coo
     FROM streaminput
     ```
 
-    ![Screenshot showing how to write a query](../media/6-write-query.png)
+    ![Screenshot showing how to write a query.](../media/6-write-query.png)
 
 1. Select **Save**.
 

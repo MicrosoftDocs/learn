@@ -92,10 +92,7 @@ prerequisites: |
   - Basic knowledge of Azure resources
   - Basic knowledge of application and resource scaling considerations and performance considerations
 ###########################################################################
-###
-### Do not edit: will be replaced by the module icon when available
-###
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/intro-to-azure-monitor.svg
 ###########################################################################
 ###
 ### Do not edit: level must be 'beginner'
@@ -130,8 +127,5 @@ units:
 - learn.azure.intro-to-azure-monitor.knowledge-check
 - learn.azure.intro-to-azure-monitor.summary
 ###########################################################################
-###
-### TODO: verify if this should start as temporary/default badge
-###
 badge:
   uid: learn.azure.intro-to-azure-monitor.badge

@@ -186,3 +186,4 @@ Test your transformation logic in the Data Preview tab.
 
   :::image type="content" source="../media/azure-data-factory-data-preview-aggregation.png" alt-text="Data Preview of Aggregation":::
 
+

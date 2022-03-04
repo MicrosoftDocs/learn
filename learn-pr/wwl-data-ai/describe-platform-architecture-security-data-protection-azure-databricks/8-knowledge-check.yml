@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-platform-architecture-security-data-protection-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which statement about the Azure Databricks Data Plane is true?"
+    choices:
+    - content: "The Data Plane contains the Cluster Manager and coordinates data processing jobs"
+      isCorrect: false
+      explanation: "Incorrect.The Cluster Manager is part of the Control Plane."
+    - content: "The Data Plane is hosted within a Microsoft-managed subscription"
+      isCorrect: false
+      explanation: "Incorrect.The Data Plane is hosted within the client subscription."
+    - content: "The Data Plane is hosted within the client subscription and is where all data is processed and stored"
+      isCorrect: true
+      explanation: "Correct. All data is processed by clusters hosted within the client Azure subscription and data is stored within Azure Blob storage and any connected Azure services within this portion of the platform architecture."
+  - content: "In which modes does Azure Databricks provide data encryption?"
+    choices:
+    - content: "At-rest and in-transit"
+      isCorrect: true
+      explanation: "Correct. Data stored in Azure Storage is encrypted using server-side encryption that is seamlessly accessed by Azure Databricks. All data transmitted between the Data Plane and the Control Plane is always encrypted in-flight via TLS."
+    - content: "At-rest only"
+      isCorrect: false
+      explanation: "Incorrect. Data stored in Azure Storage is encrypted using server-side encryption that is seamlessly accessed by Azure Databricks. All data transmitted between the Data Plane and the Control Plane is always encrypted in-flight via TLS."
+    - content: "In-transit only"
+      isCorrect: false
+      explanation: "Incorrect. Data stored in Azure Storage is encrypted using server-side encryption that is seamlessly accessed by Azure Databricks. All data transmitted between the Data Plane and the Control Plane is always encrypted in-flight via TLS."
+  - content: "What does Azure Data Lake Storage (ADLS) Passthrough enable?"
+    choices:
+    - content: "Automatically mounting ADLS accounts to the workspace that are added to the managed resource group"
+      isCorrect: false
+      explanation: "Incorrect. This option enables access to data in ADLS without configuring service principal credentials"
+    - content: "User security groups that are added to ADLS are automatically created in the workspace as Databricks groups"
+      isCorrect: false
+      explanation: "Incorrect. This option enables access to data in ADLS without configuring service principal credentials"
+    - content: "Commands running on a configured cluster can read and write data in ADLS without configuring service principal credentials"
+      isCorrect: true
+      explanation: "Correct. In addition, authentication to ADLS from Azure Databricks clusters is automatic, using the same Azure AD identity one uses to log into Azure Databricks."
+  - content: "What is an Azure Key Vault-backed secret scope?"
+    choices:
+    - content: "It is the Key Vault Access Key used to securely connect to the vault and retrieve secrets"
+      isCorrect: false
+      explanation: "Incorrect. Also, when setting up a Key Vault-backed secret scope, you do not need to use an access key."
+    - content: "A Databricks secret scope that is backed by Azure Key Vault instead of Databricks"
+      isCorrect: true
+      explanation: "Correct. A secret scope is provided by Azure Databricks and can be backed by either Databricks or Azure Key Vault."
+    - content: "It is a method by which you create a secure connection to Azure Key Vault from a notebook and directly access its secrets within the Spark session"
+      isCorrect: false
+      explanation: "Incorrect. The secret scope is configured at the workspace-level and provides a proxy to secrets stored in Key Vault."

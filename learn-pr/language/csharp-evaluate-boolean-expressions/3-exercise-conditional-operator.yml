@@ -5,8 +5,8 @@ metadata:
   title: Exercise - conditional operator
   description: Use the conditional operator to succinctly add branching logic.
   ms.date: 09/24/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

@@ -27,7 +27,7 @@ Use the following links to get more information about the topics in this module.
 * [Jakarta EE](https://jakarta.ee/)
 * [Jakarta RESTful Web Services](https://projects.eclipse.org/projects/ee4j.jaxrs)
 * [Jakarta Persistence](https://projects.eclipse.org/projects/ee4j.jpa)
-* [Jakarta JSON Binding](http://json-b.net/)
+* [Jakarta JSON Binding](https://projects.eclipse.org/projects/ee4j.jsonb)
 * [Jakarta Contexts and Dependency Injection](https://projects.eclipse.org/projects/ee4j.cdi)
 * [Maven Plugin for Azure Web Apps](https://github.com/microsoft/azure-maven-plugins)
 

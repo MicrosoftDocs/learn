@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-design-program-launch.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge.
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: Which of the following refers to a shared approach to marketing a degree program?
+    choices:
+    - content: Advertising in cinemas
+      isCorrect: false
+      explanation: Advertising in cinemas is not a shared marketing approach an education institution and industry partner would use together to market a program.
+    - content: School outreach activities
+      isCorrect: false
+      explanation: Outreach activities are a different marketing strategy, carried out independently by the education institution.
+    - content: Co-branding
+      isCorrect: true
+      explanation: Correct! Co-branding in this context refers to a marketing approach that embodies the shared values and goals of both the education institution and the industry partner whose certifications are being used in the degree program.
+  - content:  Which of the following is a unique selling point of a program that implements certification?
+    choices:
+    - content: Improves graduate employability
+      isCorrect: true
+      explanation: Correct! Research shows graduates with certifications are more attractive to employers for taking up roles. Students also learn industry-transferable skills when undertaking certification. These skill-building opportunities might not be available without implementing certification.
+    - content: Students gain a higher degree classification grade
+      isCorrect: false
+      explanation: Information on degree classification statistics for a particular educational institution is not available to prospective students.
+    - content: Students are likely to pursue graduate program studies.
+      isCorrect: false
+      explanation: There is no research available to indicate that students will pursue graduate studies after completing a program with certifications implemented.
+  - content: Student success stories are a great way to amplify and add value to program marketing messages. Which of the following can be used to share and validate student certification success effectively?
+    choices:
+    - content: Facebook story
+      isCorrect: false
+      explanation: Facebook posts can be used to share student stories, but they do not validate and authenticate certification exams.
+    - content: Print prospectus article
+      isCorrect: false
+      explanation: A printed prospectus can be used to share student stories, but they cannot digitally authenticate certification exam success by students easily.
+    - content: Blog post
+      isCorrect: false
+      explanation: Blog posts can be used to share student stories, but they cannot validate certification exam success.
+    - content: Credly digital badges
+      isCorrect: true
+      explanation: Correct! Digital badges by Credly allow students to officially share their certification exam success. The digital badges can be easily shared on professional platforms, such as LinkedIn, by embedding a link that authenticates the student as passing the exam.  

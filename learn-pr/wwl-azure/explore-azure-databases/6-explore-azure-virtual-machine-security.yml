@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-databases.virtual-machine-security
+title: Explore Azure Virtual Machine security
+metadata:
+  title: Explore Azure Virtual Machine security
+  description: "Explore Azure Virtual Machine security"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-explore-azure-virtual-machine-security.md)]

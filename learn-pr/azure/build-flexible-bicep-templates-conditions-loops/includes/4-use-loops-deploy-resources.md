@@ -6,11 +6,13 @@ Apart from their locations, all logical servers will be configured in the same w
 
 In this unit, you learn how to deploy multiple instances of resources by using _copy loops_.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Use copy loops
 
 When you define a resource or a module in a Bicep template, you can use the `for` keyword to create a loop. Place the `for` keyword in the resource declaration, and then specify how you want Bicep to identify each item in the loop. Typically, you loop over an array of objects to create multiple instances of a resource. The following example deploys multiple storage accounts, and their names are specified as parameter values:
 
-::: code language="plaintext" source="code/4-loop-simple.bicep" highlight="7-8, 14" :::
+::: code language="bicep" source="code/4-loop-simple.bicep" highlight="7-8, 14" :::
 
 In this example, the loop iterates through each item in the `storageAccountNames` array. Each time Bicep goes through the loop, it puts the current value into a special variable called `storageAccountName`, and it's used as the value of the `name` property. Notice that Bicep requires you put an opening bracket (`[`) character before the `for` keyword, and a closing bracket (`]`) character after the resource definition.
 
@@ -20,7 +22,7 @@ If you deploy this Bicep file, you'll see that three storage accounts are create
 
 You might sometimes need to loop to create a specific number of resources, and not use an array as the source. Bicep provides the `range()` function, which creates an array of numbers. For example, if you need to create four storage accounts, `sa1` through `sa4`, you could use a resource definition like this:
 
-::: code language="plaintext" source="code/4-loop-range.bicep" highlight="1" :::
+::: code language="bicep" source="code/4-loop-range.bicep" highlight="1" :::
 
 When you use the `range()` function, you specify its start value and the number of values you want to create. For example, if you want to create storage accounts with the names `sa0`, `sa1`, and `sa2`, you would use the function `range(0,3)`.
 
@@ -31,7 +33,7 @@ When you use the `range()` function, you specify its start value and the number 
 
 With Bicep, you can iterate through arrays and retrieve the index of the current element in the array. For example, let's say you want to create a logical server in each location that's specified by an array, and you want the names of the servers to be `sqlserver-1`, `sqlserver-2`, and so on. You could achieve this by using the following Bicep code:
 
-::: code language="plaintext" source="code/4-loop-index.bicep" highlight="7-8" :::
+::: code language="bicep" source="code/4-loop-index.bicep" highlight="7-8" :::
 
 Notice that the `name` property includes the expression `i+1`. The first value of the `i` index variable is zero, so you need to add `+1` to it if you want your server names to start with `1`.
 
@@ -44,6 +46,6 @@ In some situations, you might want to deploy resources by using copy loops combi
 
 In the following example, the code uses an array parameter to define a set of logical servers. A condition is used with the copy loop to deploy the servers only when the `environmentName` property of the loop object equals `Production`:
 
-::: code language="plaintext" source="code/4-loop-condition.bicep" highlight="19" :::
+::: code language="bicep" source="code/4-loop-condition.bicep" highlight="19" :::
 
 If you deploy the preceding example, you would see two logical servers, `sqlserver-we` and `sqlserver-eas`, but not `sqlserver-eus2`, because that object's `environmentName` property doesn't match `Production`.

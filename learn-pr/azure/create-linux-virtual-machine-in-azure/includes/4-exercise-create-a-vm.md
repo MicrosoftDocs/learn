@@ -8,17 +8,17 @@ We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShel
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Virtual machines**. Alternatively, you can enter *Virtual machines* in the top search box, and press <kbd>Enter</kbd>. The **Virtual machines** pane appears.
 
-1. In the top menu bar, select **Add > Virtual machine**. The **Create a virtual machine** pane appears.
+1. In the top menu bar, select **Create > Virtual machine**. The **Create a virtual machine** pane appears.
 
 ## Configure the VM settings, add data disks for the VM, and configure the network
 
-The VM creation experience in the portal is presented in a wizard format to walk you through all the configuration areas for the VM. Selecting **Next** takes you to the next configurable section. However, you can move between the sections at will with the tabs running across the top that identify each part.
+The VM creation experience in the portal is presented in a wizard format to walk you through all the configuration areas for the VM. Selecting **Next** takes you to the next configurable tab. However, you can move between the tabs at will by selecting them in the sub menu.
 
-![Screenshot of the Azure portal showing the initial Create a virtual machine pane for an Ubuntu Server machine.](../media/3-azure-portal-create-vm.png)
+:::image type="content" source="../media/3-azure-portal-create-vm.png" alt-text="Screenshot of the Azure portal showing Create a virtual machine pane for an Ubuntu Server machine." lightbox="../media/3-azure-portal-create-vm.png#lightbox":::
 
 After you complete all the required options (identified with red asterisks), you can skip the remainder of the wizard experience, and start creating the VM by selecting **Review + create** at the bottom of the wizard.
 
-We'll start with the **Basics** tab. Remember that these instructions use the sandbox. If you're using another Azure portal account, you may need to adapt some details accordingly.
+Remember that these instructions use the sandbox. If you're using another Azure portal account, you may need to adapt some details accordingly.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -29,10 +29,10 @@ We'll start with the **Basics** tab. Remember that these instructions use the sa
     | Resource group | Select **<rgn>[sandbox resource group name]</rgn>**. |
     | **Instance details** |
     | Virtual machine name | Enter a name for your web server VM, such as **test-web-eus-vm1**. This indicates the environment (**test**), the role (**web**), location (**East US**), service (**vm**), and instance number (**1**). It's considered best practice to standardize your resource names, so you can quickly identify their purpose. Linux VM names must be between 1 and 64 characters and be comprised of numbers, letters, and dashes. |
-    | Region | Select a location close to you. See the following information directly after this table for available regions. |
+    | Region | Select a location close to you. See the information below this table for available regions. |
     | Availability options | Select **No infrastructure redundancy required**. This option can be used to ensure the VM is highly available by grouping multiple VMs together as a set to deal with planned or unplanned maintenance events or outages. For this exercise we will not need this service. |
     | Image | From the dropdown list, select **Ubuntu Server 18.04 LTS - Gen1** |
-    | Size | D2s v3. This option gives you two vCPUs with 8 GB of RAM. |
+    | Size | Standard D2s v3. This option gives you two vCPUs with 8 GB of RAM. |
     | **Administrator account** |
     | Authentication type | SSH public key |
     | Username | Enter a name you'll use to sign in with SSH. Make a note of it. |
@@ -42,9 +42,9 @@ We'll start with the **Basics** tab. Remember that these instructions use the sa
     <!-- Resource selection -->  
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **Next: Disks >** to move to the **Disks** section.
+1. Select **Next: Disks** to open the **Disks** tab.
 
-1. On the **Disks** tab, enter the following values for each setting.
+1. On the **Disks** pane, enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
@@ -54,15 +54,15 @@ We'll start with the **Basics** tab. Remember that these instructions use the sa
     | **Data disks** | *Recall that we will get an OS disk (/dev/sda) and a temporary disk (/dev/sdb). Here, we'll add a data disk as well.* |
     | Create and attach a new disk | Select the link. The **Create a new disk** pane appears. Accept all the default settings. Notice that source type is where you could use a snapshot or Azure Blob Storage to create a VHD.
 
-1. Select **OK** to create the disk. The **Disks** section reappears on the **Create a virtual machine** pane.
+1. Select **OK** to create the disk. The **Disks** pane re reappears on the **Create a virtual machine** pane.
 
     A new disk appears in the first row.
 
-    ![Screenshot of the Azure portal showing the newly created data disk line for the VM creation process.](../media/3-new-disk.png)
+    :::image type="content" source="../media/3-new-disk.png" alt-text="Screenshot of the Azure portal showing the newly created data disk line for the VM creation process." lightbox="../media/3-new-disk.png":::
 
-1. Select **Next: Networking >** to move to the **Networking** section.
+1. Select **Next: Networking** to move to the **Networking** tab.
 
-1. On the **Networking** tab, accept all the default values for each setting.
+1. On the **Networking** pane, accept all the default values for each setting.
 
     In a production environment where we already have other components, you'd want to use an _existing_ virtual network. That way, your VM can communicate with the other cloud services in your solution. If there wasn't one defined in this location yet, you could create it here and configure the:
     - **Subnet**: The first subnet to subdivide the address space - it must fit within the defined address space. After the VNet is created, you could add additional subnets.
@@ -76,4 +76,4 @@ We'll start with the **Basics** tab. Remember that these instructions use the sa
 
 1. After the system validates your options, and gives you details about the VM being created, select **Create** to create and deploy the VM. The Azure dashboard will show the VM that's being deployed. This may take several minutes.
 
-While that's deploying, let's look at what we can do with this VM.
+While it's deploying, let's consider what we can do with this VM.

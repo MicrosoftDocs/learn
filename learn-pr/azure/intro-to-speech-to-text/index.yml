@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Speech-to-text
   description: Speech-to-text enables the real-time transcription of audio streams into text in more than 90 languages and dialects. Speech-to-text service can be tailored to your voice or vocabulary to build custom recognition models, further enhancing accuracy.
   ms.date: 03/14/2021
-  author: tomreidnz
-  ms.author: jasdeb
+  author: eric-urban
+  ms.author: eur
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Speech-to-text 
@@ -16,7 +16,7 @@ abstract: |
   - Describe what Speech-to-text is
   - Define scenarios where Speech-to-text can be applied
 prerequisites: A basic familiarity with Azure
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/intro-to-speech-to-text.svg
 levels:
 - beginner
 roles:

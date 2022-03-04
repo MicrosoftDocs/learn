@@ -4,12 +4,13 @@ title: Use Office message encryption templates in mail flow rules
 metadata:
   title: Use Office message encryption templates in mail flow rules
   description: "Use Office message encryption templates in mail flow rules"
-  ms.date: 03/23/2021
+  ms.date: 01/14/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/4-use-office-message-encryption-templates-mail-flow-rules.md)]

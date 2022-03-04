@@ -22,8 +22,8 @@ An adequately designed materialized view provides the following benefits:
 Comparing to other data warehouse providers, the materialized views implemented in Azure Synapse Analytics also provide the following additional benefits:
 
 * Automatic and synchronous data refresh with data changes in base tables. No user action is required.
-* Broad aggregate function support. See [CREATE MATERIALIZED VIEW AS SELECT (Transact-SQL)](/sql/t-sql/statements/create-materialized-view-as-select-transact-sql).
-* The support for query-specific materialized view recommendation. See [EXPLAIN (Transact-SQL)](/sql/t-sql/queries/explain-transact-sql).
+* Broad aggregate function support. See [CREATE MATERIALIZED VIEW AS SELECT (Transact-SQL)](/sql/t-sql/statements/create-materialized-view-as-select-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true).
+* The support for query-specific materialized view recommendation. See [EXPLAIN (Transact-SQL)](/sql/t-sql/queries/explain-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true).
 
 Before you begin to create materialized views, it's essential to have a deep understanding of your workload in terms of query patterns, importance, frequency, and resulting data size.
 Users can run EXPLAIN WITH_RECOMMENDATIONS <SQL_statement> to get the materialized views recommended by the query optimizer. Since these recommendations are query-specific, a materialized view that benefits a single query may not be optimal for other queries in the same workload.

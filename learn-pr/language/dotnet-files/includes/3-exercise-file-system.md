@@ -1,64 +1,82 @@
 You can use .NET to find and return information about files and folders.
 
-Tailwind Traders has many physical stores all over the world. Each night, these stores create a file called *sales.json* that contains the total for all their sales for the previous day. These files are organized in folders by store ID.
+Tailwind Traders has many physical stores all over the world. Each night, each store creates a file named *sales.json* that contains the total for all sales for that day. These files are organized in folders by store ID.
 
 > [!NOTE]
-> This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools) and [Visual Studio Code](https://code.visualstudio.com/) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+> This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools) and [Visual Studio Code](https://code.visualstudio.com/) for local development. After completing this module, you can apply the concepts you've learned by using a development environment like Visual Studio (Windows) or Visual Studio for Mac (macOS), or continue development in Visual Studio Code (Windows, Linux, & macOS).
+
+[!INCLUDE [](../../../includes/dotnet6-sdk-version.md)]
 
 ## Clone the project
 
-In this exercise, you'll write a .NET program that can search for files called *sales.json* in a folder.
+In this exercise, you'll write a .NET program that searches a directory and its subdirectories for files named *sales.json*.
 
-A starter project has already been created and you'll clone it using the integrated terminal in Visual Studio Code.
+A starter project has already been created for you. You'll clone it using the integrated terminal in Visual Studio Code.
 
 1. Open Visual Studio Code.
-1. Open the Terminal window by selecting the **Terminal** option from the **View** menu.
-1. (Optional) Change to a directory you want to copy the files to, such as `c:\MyProjects`.
-1. Run the following command to clone the example project for this module.
+
+1. In the main menu, select **View** > **Terminal** to open a TERMINAL window.
+
+1. (Optional) In the TERMINAL window, change to a directory you want to copy the files to, such as `c:\MyProjects`.
+
+1. In the TERMINAL window, run the following command to clone the starter project and go to the cloned project:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-dotnet-files && cd mslearn-dotnet-files
     ```
 
-1. Create a new .NET Console project by running the following commands in the terminal window.
+1. Run the following command to Create a new .NET Console project:
 
-    ```bash
-    dotnet new console -n files-module -o .
+    ```cmd
+    dotnet new console -f net6.0 -n mslearn-dotnet-files -o .
     ```
 
-1. Open the new .NET project in the same instance of Visual Studio Code by typing in the following command in the terminal window.
+1. Run the following command to open the new .NET project in the same instance of Visual Studio Code:
 
-    ```bash
+    ```cmd
     code -a .
     ```
 
    > [!TIP]
-   > At this point Visual Studio Code will prompt you to that required assets to build and run the project are missing. And it asks whether you want to install them.    Select **Yes**. These files allow Visual Studio Code to run the debug the project.
+   > At this point, Visual Studio Code may prompt you that required assets to build and run the project are missing.
+   >
+   >:::image type="content" source="../media/visual-studio-prompt.png" alt-text="Screenshot showing the Visual Studio prompt that lets the user know something is missing from the project.":::
+   >
+   > Select the triangle with the exclamation point and then select **Relaunch terminal** to add the files that allow Visual Studio Code to run and debug the project.
 
-1. Expand the *stores* folder and each of the numbered folders inside.
+1. In the EXPLORER window, under **mslearn-dotnet-files**, expand the **stores** folder and each of the numbered folders inside.
 
-    :::image type="content" source="../media/folder-structure.png" alt-text="Screenshot that shows the project folder structure.":::
+    :::image type="content" source="../media/folder-structure.png" alt-text="Screenshot of EXPLORER window that shows the project folder structure.":::
 
 ## Find the sales.json files
 
-You need to find all the sales.json files in all folders.
+The following tasks will create a program to find all the sales.json files in all folders of the `mslearn-dotnet-files` project.
 
 ### Include the System.IO namespace
 
-1. Select the `Program.cs` file to open it in the editor.
-1. Import the `System.IO` and `System.Collections.Generic` namespaces at the top of the file.
+1. In the EXPLORER window, select the `Program.cs` file to open it in the editor.
+
+    :::image type="content" source="../media/program-cs-file.png" alt-text="Screenshot of the Explorer window highlighting the program.cs file.":::
+
+1. Paste the following code into the first line of the `Program.cs`file to import the `System.IO` and `System.Collections.Generic` namespaces:
 
     ```csharp
     using System.IO;
     using System.Collections.Generic;
     ```
 
+> [!NOTE]
+> Starting with .NET 6, the two statements in the above code are automatically included in a new project by way of the `ImplcitUsings` property group. Because we specified the `-f net6.0` flag when we created a new console project, they are implicitly added. However, if you're working with an older project, they need to be included in the `Program.cs` file, and it doesn't affect this project if you leave them in the file.
+
+
 ### Write a function to find the sales.json files
 
-1. Create a new function called `FindFiles` that takes a `folderName` parameter.
+Create a new function called `FindFiles` that takes a `folderName` parameter.
+
+1. Replace the **Console.WriteLine("Hello, World!");** line with the following code: 
 
     ```csharp
-    static IEnumerable<string> FindFiles(string folderName)
+    IEnumerable<string> FindFiles(string folderName)
     {
         List<string> salesFiles = new List<string>();
 
@@ -77,31 +95,28 @@ You need to find all the sales.json files in all folders.
     }
     ```
 
-1. Call this new `FindFiles` function from the `Main` function. Pass in the *stores* folder name as the location to search for files.
+1. Insert the following code below the `using` statements to call the `FindFiles` function. This code passes in the *stores* folder name as the location to search for files.
 
     ```csharp
-    static void Main(string[] args)
+    var salesFiles = FindFiles("stores");
+
+    foreach (var file in salesFiles)
     {
-        var salesFiles = FindFiles("stores");
-    
-        foreach (var file in salesFiles)
-        {
-            Console.WriteLine(file);
-        }
+        Console.WriteLine(file);
     }
     ```
 
-1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the file.
+1. Press <kbd>Ctrl+S</kbd> (or <kbd>Cmd+S</kbd> macOS) to save the `Program.cs` file.
 
 ## Run the program
 
-1. Run the following command into Visual Studio Code's terminal window to run the program.
+1. Enter the following command in the terminal window to run the program:
 
     ```bash
     dotnet run
     ```
 
-1. The program should show the following output.
+1. The program should show the following output:
 
     ```bash
     stores/sales.json
@@ -111,51 +126,37 @@ You need to find all the sales.json files in all folders.
     stores/204/sales.json
     ```
 
-Excellent! You've successfully written a command-line program that will traverse any directory and find all the *sales.json* files inside.
+Excellent! You've successfully written a command-line program that traverses all folders in the `stores` directory and lists all the *sales.json* files that were found.
 
-You might have noticed the path to the *stores* directory was rather simple and within the working directory of the program.
-
-In the next unit, you'll learn how to construct complex paths that work across operating systems by using the `Path` class.
+In this example, the path to the *stores* directory was rather simple and in the working directory of the program. In the next unit, you'll learn how to construct complex structures that work across operating systems by using the `Path` class.
 
 ### Got stuck?
 
-If you got stuck at any point in this exercise, here's the completed code. Remove everything in `Program.cs` and replace it with this code:
+If you had any problems running the program, here's the completed code for the `Program.cs` file. Replace the contents of your `Program.cs` file with this code:
 
 ```csharp
-using System;
-using System.IO;
-using System.Collections.Generic;
-
-namespace files_module
+var salesFiles = FindFiles("stores");
+    
+foreach (var file in salesFiles)
 {
-    class Program
+    Console.WriteLine(file);
+}
+
+IEnumerable<string> FindFiles(string folderName)
+{
+    List<string> salesFiles = new List<string>();
+
+    var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
+
+    foreach (var file in foundFiles)
     {
-        static void Main(string[] args)
+        // The file name will contain the full path, so only check the end of it
+        if (file.EndsWith("sales.json"))
         {
-            var files = FindFiles("stores");
-
-            foreach (var file in files)
-            {
-                Console.WriteLine(file);
-            }
-        }
-
-        static IEnumerable<string> FindFiles(string folderName)
-        {
-            List<string> salesFiles = new List<string>();
-    
-            var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
-    
-            foreach (var file in foundFiles)
-            {
-                if (file.EndsWith("sales.json"))
-                {
-                    salesFiles.Add(file);
-                }
-            }
-    
-            return salesFiles;
+            salesFiles.Add(file);
         }
     }
+
+    return salesFiles;
 }
 ```

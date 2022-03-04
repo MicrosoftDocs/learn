@@ -3,7 +3,7 @@ uid: learn.azure.model-partition-data-azure-cosmos-db.choosing-a-partition-key
 title: Choose a partition key 
 metadata: 
   title: Choose a partition key
-  description: A partition key provides a way to route data for a logical partition and is a property that exists within every document in your container that routes your data.
+  description: A partition key provides a way to route data for a logical partition. It's a property that exists within every document in your container that routes your data.
   ms.date: 6/14/2021
   author: markjbrown 
   ms.author: mjbrown 
@@ -26,7 +26,7 @@ quiz:
     - content: "Throughput"
       isCorrect: false
       explanation: "Hot partitions can occur on both storage and throughput."
-  - content: "When designing for write-heavy workloads, how should writes be distributed?"
+  - content: "When you're designing for write-heavy workloads, how should writes be distributed?"
     choices: 
     - content: "Across many partition key values"
       isCorrect: true
@@ -34,7 +34,7 @@ quiz:
     - content: "On one partition key value"
       isCorrect: false
       explanation: "The value of the partition key should have high cardinality to spread the requests evenly across many partitions."
-    - content: "Across a few partition keys values"
+    - content: "Across a few partition key values"
       isCorrect: false
       explanation: "The value of the partition key should have high cardinality to spread the requests evenly across many partitions."
       

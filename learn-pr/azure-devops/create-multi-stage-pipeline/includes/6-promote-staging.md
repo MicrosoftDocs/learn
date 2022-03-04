@@ -14,13 +14,13 @@ Earlier in this module, you specified `environment` settings for both _Dev_ and 
 
 [!code-yml[](code/2-azure-pipelines.yml?highlight=8)]
 
-In this example, Azure Pipelines creates your **dev** environment if it doesn't exist. You can also define an environment through Azure Pipelines that includes specific criteria for your release. This criteria can include the pipelines that are authorized to deploy to the environment. You can also specify the human approvals that are needed to promote the release from one stage to the next. Here, you specify those approvals.
+You can define an environment through Azure Pipelines that includes specific criteria for your release. This criteria can include the pipelines that are authorized to deploy to the environment. You can also specify the human approvals that are needed to promote the release from one stage to the next. Here, you specify those approvals.
 
 To create the **staging** environment:
 
 1. From Azure Pipelines, select **Environments**.
 
-    :::image type="content" source="../media/7-pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
 
 1. Select **New environment**.
 1. Under **Name**, enter *staging*.

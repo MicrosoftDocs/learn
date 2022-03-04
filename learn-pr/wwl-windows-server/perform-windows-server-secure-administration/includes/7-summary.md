@@ -6,8 +6,7 @@ In this module, you learned which user accounts to use when performing administr
 
 You can learn more by reviewing the following documents:
 
-- [Just Enough Administration](https://docs.microsoft.com/powershell/scripting/learn/remoting/jea/overview?azure-portal=true)
-- [Implementing Least-Privilege Administrative Models](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models?azure-portal=true)
-- [Active Directory Security Groups](https://docs.microsoft.com/windows/security/identity-protection/access-control/active-directory-security-groups?azure-portal=true)
-- [Implementing Secure Administrative Hosts](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-secure-administrative-hosts?azure-portal=true)
-- [Course WS-011T00-A: Windows Server 2019 Administration](https://docs.microsoft.com/learn/certifications/courses/ws-011t00?azure-portal=true)
+- [Just Enough Administration](/powershell/scripting/learn/remoting/jea/overview?azure-portal=true)
+- [Implementing Least-Privilege Administrative Models](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models?azure-portal=true)
+- [Active Directory Security Groups](/windows/security/identity-protection/access-control/active-directory-security-groups?azure-portal=true)
+- [Implementing Secure Administrative Hosts](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-secure-administrative-hosts?azure-portal=true)

@@ -58,7 +58,7 @@ const data = {
 ImmersiveReader.launchAsync(YOUR_TOKEN, YOUR_SUBDOMAIN, data, YOUR_OPTIONS);
 ```
 
-![Math output](../media/1-math.png)
+![Math output.](../media/1-math.png)
 
 ## Using on mobile
 

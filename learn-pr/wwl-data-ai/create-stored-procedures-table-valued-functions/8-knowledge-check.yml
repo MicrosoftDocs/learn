@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-stored-procedures-table-valued-functions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the most straightforward way to pass values to a stored procedure?"
+    choices:
+    - content: "Store the value in a temporary table"
+      isCorrect: false
+      explanation: "Incorrect. Temporary tables do not automatically pass values to stored procedures."
+    - content: "Use an output parameter"
+      isCorrect: false
+      explanation: "Incorrect. Output parameters do not pass values to stored procedures."
+    - content: "Use an input parameter"
+      isCorrect: true
+      explanation: "Correct. Input parameters are used as local variables within the body of the procedure."
+  - content: "How do you access an output parameter from a stored procedure?"
+    choices:
+    - content: "Execute the stored procedure and view the recordset returned"
+      isCorrect: false
+      explanation: "Incorrect. The recordset does not contain the value in the output parameter."
+    - content: "Declare a variable and pass it as an output parameter when you execute the stored procedure"
+      isCorrect: true
+      explanation: "Correct. You need to create a variable that will be populated with the value in the output parameter when the procedure is run."
+    - content: "Declare a variable inside the stored procedure and then view it after you run the stored procedure"
+      isCorrect: false
+      explanation: "Incorrect. You cannot view values in variables inside the stored procedure."
+  - content: "Where can you use a table-valued function?"
+    choices:
+    - content: "Only inside stored procedures"
+      isCorrect: false
+      explanation: "Incorrect. Table-valued functions are not limited to stored procedures."
+    - content: "Anywhere in SQL that you can use a table"
+      isCorrect: true
+      explanation: "Correct. You can use a table-valued function anywhere in SQL that you can use a table."
+    - content: "When you need to update rows"
+      isCorrect: false
+      explanation: "Incorrect. Table-valued functions do not update rows."

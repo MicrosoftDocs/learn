@@ -10,7 +10,7 @@ To explore your Azure resources, you must first sign into Azure. By signing in, 
 
 1. In the **Azure Explorer** window, select the **Azure Sign In** button:
 
-    ![Azure Sign In button](../media/3-azure-signin-button.png)
+    ![Azure Sign In button.](../media/3-azure-signin-button.png)
 
 1. Select **Device Login** and then select **Sign in**.
 
@@ -24,7 +24,7 @@ To explore your Azure resources, you must first sign into Azure. By signing in, 
 
 1. In **IntelliJ IDEA**, in the **Select Subscriptions** dialog, select the **Concierge Subscription**. This is a subscription created specifically for the sandbox.
 
-    ![Select Azure Subscription](../media/3-select-subscription.png)
+    ![Select Azure Subscription.](../media/3-select-subscription.png)
 
 The **Azure Explorer** now displays objects in your Azure subscription. You can explore the different types of objects, such as storage accounts.
 
@@ -40,11 +40,11 @@ Now, you can use the **Deploy to Azure** wizard to create a new app in Azure App
 
 1. In the **Create Web App** dialog, click **More Settings**, Select **Resource Group** and select *<rgn>[sandbox resource group name]</rgn>*, and then select **OK**:
 
-    ![Create WebApp dialog](../media/5-create-webapp-dialog.png)
+    ![Create WebApp dialog.](../media/5-create-webapp-dialog.png)
 
 1. In the **Create Web App** dialog, click the **+** button for **Plan**, type any name in **Name** and select **Free_F1** for **Pricing Tier**.
 
-    ![Create App Service Plan](../media/5-create-service-plan.png)
+    ![Create App Service Plan.](../media/5-create-service-plan.png)
 
 1. In the **Create Web App** dialog, select **OK**. In the **Deploy to Azure** dialog, select **Run**. The Azure Toolkit for IntelliJ deploys the web app to Azure and displays the site in your default web browser.
 

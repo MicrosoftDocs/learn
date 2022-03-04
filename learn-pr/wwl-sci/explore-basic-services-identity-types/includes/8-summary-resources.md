@@ -10,7 +10,7 @@ For more information on the topics covered in this module, see:
 
 - [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis)
 - [Azure Active Directory Pricing](https://azure.microsoft.com/pricing/details/active-directory/)
-- [Azure AD Licenses](/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses)
+- [Azure AD Licenses](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis#what-are-the-azure-ad-licenses)
 - [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 - [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started)
 - [Azure AD External Identity pricing](https://azure.microsoft.com/pricing/details/active-directory/external-identities/)

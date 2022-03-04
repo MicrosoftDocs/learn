@@ -46,7 +46,7 @@ In our scenario, your company has an Azure AD organization where you can add the
 
 1. Select **Verify**.
 
-    ![Screenshot of the Verify button on the custom domain's DNS information page](../media/3-verify-domain.png)
+    ![Screenshot of the Verify button on the custom domain's DNS information page.](../media/3-verify-domain.png)
 
 1. If Azure verifies that the correct record exists, the domain name status changes to "Verified."
 

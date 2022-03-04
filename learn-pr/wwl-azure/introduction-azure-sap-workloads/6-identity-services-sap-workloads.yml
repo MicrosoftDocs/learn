@@ -4,12 +4,13 @@ title: Identity services for SAP workloads
 metadata:
   title: Identity services for SAP workloads
   description: "Identity services for SAP workloads"
-  ms.date: 03/17/2021
+  ms.date: 10/19/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 14
 content: |
   [!include[](includes/6-identity-services-sap-workloads.md)]

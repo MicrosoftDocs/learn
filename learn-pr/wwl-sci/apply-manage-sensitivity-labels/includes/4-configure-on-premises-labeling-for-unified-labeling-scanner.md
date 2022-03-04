@@ -47,7 +47,7 @@ Perform the following steps to fetch an Azure AD Token for the Unified Labeling 
 
 1. Select the **Certificates & secrets** setting.
 
-1. Under **Client secrets**, click **New client secret** to create a new secret.
+1. Under **Client secrets**, select **+ New client secret** to create a new secret.
 
 1. Provide a **description** for the secret and choose the desired **expiration interval**.
 
@@ -130,6 +130,6 @@ The Unified labeling scanner can be used for different operational scenarios, so
 
 ## Learn more
 
-[Install and configure the Azure Information Protection (AIP) unified labeling scanner | Microsoft Docs](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install?azure-portal=true)
+[Install and configure the Azure Information Protection (AIP) unified labeling scanner | Microsoft Docs](/azure/information-protection/deploy-aip-scanner-configure-install?azure-portal=true)
 
 

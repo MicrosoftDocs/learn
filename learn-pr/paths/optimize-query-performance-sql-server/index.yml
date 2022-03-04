@@ -5,7 +5,7 @@ metadata:
   description: Analyze individual query performance and determine where improvements can be made. Explore performance-related Dynamic Management Objects. Investigate how indexes and database design affect queries.
   ms.date: 08/23/2020
   author: wwlpublish
-  ms.author: v-vancexu
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Optimize query performance in SQL Server

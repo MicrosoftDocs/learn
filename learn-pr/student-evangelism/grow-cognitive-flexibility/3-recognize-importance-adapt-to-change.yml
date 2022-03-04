@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.grow-cognitive-flexibility.recognize-importance-adapt-to-change
+title: Recognize the importance of adapting to change
+metadata:
+  title: Recognize the importance of adapting to change
+  description: This unit discusses change and how change is a constant part of life. By using cognitive flexibility, you can more easily adapt to change.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-recognize-importance-adapt-to-change.md)]

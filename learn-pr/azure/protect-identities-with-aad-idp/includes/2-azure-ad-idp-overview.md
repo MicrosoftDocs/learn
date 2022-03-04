@@ -8,7 +8,7 @@ In this unit, you'll learn what Identity Protection is, and the risks involved i
 
 Identity Protection is a solution built into Azure AD that's designed to protect your identities through a three-part process.
 
-![Identity Protection overview](../media/2-identity-protection-overview.svg)
+![Identity Protection overview.](../media/2-identity-protection-overview.svg)
 
 Your company's specialist expertise is in retail, not in identity protection. It wants to continue to focus on its areas of strength, but still ensure that it's protected against identity risks. Your organization can use Identity Protection to automate the detection, investigation, and remediation of risks related to users' identities without hiring expensive security experts.
 
@@ -44,7 +44,7 @@ There are two different ways to detect and handle identity risks: self-remediati
 
     Identity Protection uses risk policies to automatically respond to detected threats for you. You configure a risk policy to decide how you want Identity Protection to respond to a particular type of risk. You then choose the action the user is asked to complete. The action could be a self-service password reset or multifactor authentication enforcement. Using policies in this way helps save time and gives you peace of mind.
 
-    ![Automated remediation](../media/2-identity-protection-flow.svg)
+    ![Automated remediation.](../media/2-identity-protection-flow.svg)
 
     In this workflow, the administrator first configures the risk policies that then monitor for identity risks. When a risk is detected, the policies enforce measures to remediate it. A policy might, for example, prompt a user to reset their password in response to a risk detected. The user then resets their password, and the risk is remediated.
 
@@ -52,6 +52,6 @@ There are two different ways to detect and handle identity risks: self-remediati
 
    You can also have admins decide how a risk should be remediated when it's been detected by your risk policies. This type of remediation workflow helps you make more tailored decisions. The admin understands the context in which the risks were detected.
 
-    ![Admin remediation](../media/2-admin-remediation.svg)
+    ![Admin remediation.](../media/2-admin-remediation.svg)
 
     In this workflow, the admin configures risk policies. The policies then monitor for identity risks. The admin is notified of risks in a report. The admin views the detailed report and takes appropriate action to remediate the risks. For example, the admin might decide a sign-in is safe, and accept the risk.

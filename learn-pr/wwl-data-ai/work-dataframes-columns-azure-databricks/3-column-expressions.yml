@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-dataframes-columns-azure-databricks.column-expressions
+title: Work with column expressions
+metadata:
+  title: Work with column expressions
+  description: "Work with column expressions"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-column-expressions.md)]

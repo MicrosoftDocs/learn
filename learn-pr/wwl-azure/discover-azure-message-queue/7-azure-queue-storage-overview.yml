@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-azure-message-queue.explore-azure-queue-storage
+title: Explore Azure Queue Storage
+metadata:
+  title: Explore Azure Queue Storage
+  description: "Explore Azure Queue Storage"
+  ms.date: 02/21/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-azure-queue-storage-overview.md)]

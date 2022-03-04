@@ -15,7 +15,7 @@ Now, let's walk through it to see how it works.
 
 From your list of recommendations, you can identify any that allow batch remediation because they show the **Quick Fix** button next to the recommendation.
 
-:::image type="content" source="../media/azure-advisor-quick-fix-button.png" alt-text="Screenshot showing location of Quick fix button" lightbox="../media/azure-advisor-quick-fix-button.png":::
+:::image type="content" source="../media/azure-advisor-quick-fix-button.png" alt-text="Screenshot showing location of Quick fix button." lightbox="../media/azure-advisor-quick-fix-button.png":::
 
 When you select the recommendation associated with **Quick Fix**, a more detailed page opens showing the resources affected and the recommended actions you can take to resolve the issues.
 

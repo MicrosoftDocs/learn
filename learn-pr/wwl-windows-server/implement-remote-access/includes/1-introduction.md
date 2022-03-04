@@ -5,7 +5,7 @@ Learn to enable remote access within your organization, and to publish your orga
 
 Contoso, Ltd. is a financial services company in Seattle with major offices located throughout the world. Most of its compute environment runs on-premises on Windows Server. This includes virtualized workloads on Windows Server 2016 hosts.
 
-Contoso IT staff are migrating Contoso on-premises servers to Windows Server 2019. As a Windows Server infrastructure administrator, you’re responsible for managing and maintaining the networking infrastructure for Windows Server that will help Contoso achieve its business goals.
+Contoso IT staff are migrating Contoso on-premises servers to Windows Server 2022. As a Windows Server infrastructure administrator, you’re responsible for managing and maintaining the networking infrastructure for Windows Server that will help Contoso achieve its business goals.
 
 After completing this module, you’ll know how to select, use, and manage remote access components. You’ll also learn how to implement WAP as a reverse proxy for your internal web applications.  
 

@@ -114,7 +114,7 @@ Alerts are available across several Azure monitoring services. For information a
 
 Click on **Total Alerts** to see the **All Alerts** page. Here, you can view a list of alerts that were created within the selected time window. You can view either a list of the individual alerts or a list of the smart groups that contain the alerts. Select the banner at the top of the page to toggle between views.
 
-:::image type="content" source="../media/5-all-alerts-page.png" alt-text="A screenshot showing the All Alerts page that includes a list of alerts":::
+:::image type="content" source="../media/5-all-alerts-page.png" alt-text="A screenshot showing the All Alerts page that includes a list of alerts.":::
 
 You can filter the view by selecting the following values in the dropdown menus at the top of the page.
 

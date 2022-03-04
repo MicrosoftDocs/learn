@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-evaluate-classification-models.exercise-alternative-classification-metrics
+title: Exercise - Perform classification with alternative metrics
+metadata:
+  title: Exercise - Perform classification with alternative metrics
+  description: Review alternative metrics for classification scenarios
+  ms.date: 01/04/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/02-metrics.ipynb

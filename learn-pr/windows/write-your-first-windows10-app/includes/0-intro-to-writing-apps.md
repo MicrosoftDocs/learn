@@ -12,7 +12,7 @@ Over the years, different technologies and requirements have led to the developm
 
 To that end, Microsoft has created many tools and libraries. The three we're going to look at in this learning path are UWP, WPF, and Windows Forms. You'll see how all three provide similar approaches for building basic applications.
 
-![Development platforms](../media/intro-diagram.png)
+![Development platforms.](../media/intro-diagram.png)
 
 ### Universal Windows Platform
 

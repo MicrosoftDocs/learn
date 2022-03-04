@@ -1,0 +1,18 @@
+Resource and property changes are indicated with these symbols:
+  + Create
+  ~ Modify
+  = Nochange
+
+The deployment will update the following scope:
+
+Scope: /subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyWebsiteTest
+
+  ~ Microsoft.Web/sites/toy-website-nbfnedv766snk [2021-01-15]
+    + properties.siteConfig.localMySqlEnabled:   false
+    + properties.siteConfig.netFrameworkVersion: "v4.6"
+
+  = Microsoft.Insights/components/toywebsite [2020-02-02]
+  = Microsoft.Storage/storageAccounts/mystoragenbfnedv766snk [2021-04-01]
+  = Microsoft.Web/serverfarms/toy-website [2021-01-15]
+
+Resource changes: 1 to modify, 3 no change.   

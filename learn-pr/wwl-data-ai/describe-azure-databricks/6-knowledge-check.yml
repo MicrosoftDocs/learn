@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "How many drivers does a Cluster have?"
+    choices:
+    - content: "Only one"
+      isCorrect: true
+      explanation: "A Cluster has one and only one driver."
+    - content: "Two, running in parallel"
+      isCorrect: false
+      explanation: "A Cluster cannot have drivers running in parallel."
+    - content: "Configurable between one and eight"
+      isCorrect: false
+      explanation: "A driver manages work sent to one or more executors. A Cluster cannot have multiple drivers running in parallel."
+  - content: "Spark is a distributed computing environment. Therefore, work is parallelized across executors. At which two levels does this parallelization occur?"
+    choices:
+    - content: "The Executor and the Slot"
+      isCorrect: true
+      explanation: "The first level of parallelization is the Executor - a Java virtual machine running on a node, typically, one instance per node. Each Executor has a number of Slots to which parallelized Tasks can be assigned to it by the Driver."
+    - content: "The Driver and the Executor"
+      isCorrect: false
+      explanation: "There is only one driver in a cluster. Therefore, work cannot be parallelized at this level."
+    - content: "The Slot and the Task"
+      isCorrect: false
+      explanation: "Tasks represent the work that is being parallelized across executors."
+  - content: "What type of process are the driver and the executors?"
+    choices:
+    - content: "Java processes"
+      isCorrect: true
+      explanation: "The driver and the executors are Java processes."
+    - content: "Python processes"
+      isCorrect: false
+      explanation: "The driver and executors are NOT Python processes."
+    - content: "C++ processes"
+      isCorrect: false
+      explanation: "The driver and executors are NOT C++ processes."

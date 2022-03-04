@@ -59,6 +59,19 @@
                 "dest": "modules"
             },
             {
+                "src": "autonomous-systems",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "azure",
                 "files": [
                     "**/*.yml",
@@ -110,7 +123,7 @@
                 ],
                 "dest": "modules"
             },
-             {
+            {
                 "src": "cela-accessibility",
                 "files": [
                     "**/*.yml",
@@ -176,6 +189,19 @@
                 "dest": "modules"
             },
             {
+                "src": "educator",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "endpoint-manager",
                 "files": [
                     "**/*.yml",
@@ -228,7 +254,46 @@
                 "dest": "modules"
             },
             {
+                "src": "nvidia",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "pytorch",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "machine-learning",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },            
+            {
+                "src": "tensorflow",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -473,6 +538,19 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
+            },
+            {
+                "src": "visual-studio",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
             },           
             {
                 "files": [
@@ -506,7 +584,55 @@
                 "dest": "modules"
             },
             {
+                "src": "language",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "pytorch",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "machine-learning",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },  
+            {
+                "src": "nvidia",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "tensorflow",
                 "files": [
                     "**/*.gif",
                     "**/*.png",
@@ -829,6 +955,25 @@
                     "tr-tr",
                     "sv-se"
                 ],
+                "nvidia/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
                 "quantum/**/*.yml": [
                     "de-de",
                     "es-es",
@@ -868,6 +1013,25 @@
                     "sv-se"
                 ],
                 "student-evangelism/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "machine-learning/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",

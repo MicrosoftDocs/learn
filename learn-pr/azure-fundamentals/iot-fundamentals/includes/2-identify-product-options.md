@@ -12,6 +12,8 @@ IoT enables devices to gather and then relay information for data analysis. Smar
  -  Mechanical sensors that detect anomalies or deformations.
  -  Flow, level, and pressure sensors for measuring gasses and liquids.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJvRn]
+
 By using Azure IoT services, devices that are equipped with these kinds of sensors and that can connect to the internet could send their sensor readings to a specific endpoint in Azure via a message. The message's data is then collected and aggregated, and it can be converted into reports and alerts. Alternately, all devices could be updated with new firmware to fix issues or add new functionality by sending software updates from Azure IoT services to each device.
 
 Let's suppose your company manufactures and operates smart refrigerated vending machines. What kinds of information would you want to monitor? You might want to ensure that:
@@ -29,6 +31,8 @@ The data that's collected from these devices could be combined with Azure AI ser
  -  When inventories will need to be replenished and new product ordered from vendors.
 
 Many services can assist and drive end-to-end solutions for IoT on Azure.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGd57]
 
 ## Azure IoT Hub
 
@@ -59,9 +63,7 @@ A key part of IoT Central is the use of device templates. By using a device temp
 
 Azure Sphere comes in three parts:
 
- -  The first part is the Azure Sphere micro-controller unit (MCU), which is responsible for processing the operating system and signals from attached sensors. The following image displays the Seeed Azure Sphere MT3620 Development Kit MCU, one of several different starter kits that are available for prototyping and developing Azure Sphere applications. 
-    
-    :::image type="content" source="../media/2-identify-product-options-02-d830e12a.png" alt-text="Screenshot of an Azure Sphere development kit micro-controller unit.":::
+ -  The first part is the Azure Sphere micro-controller unit (MCU), which is responsible for processing the operating system and signals from attached sensors. The following image displays the Seeed Azure Sphere MT3620 Development Kit MCU, one of several different starter kits that are available for prototyping and developing Azure Sphere applications.<br><br>:::image type="content" source="../media/2-identify-product-options-02-d830e12a.png" alt-text="Screenshot of an Azure Sphere development kit micro-controller unit.":::
     
  -  The second part is a customized Linux operating system (OS) that handles communication with the security service and can run the vendor's software.
  -  The third part is Azure Sphere Security Service, also known as AS3. Its job is to make sure that the device has not been maliciously compromised. When the device attempts to connect to Azure, it first must authenticate itself, per device, which it does by using certificate-based authentication. If it authenticates successfully, AS3 checks to ensure that the device hasn't been tampered with. After it has established a secure channel of communication, AS3 pushes any OS or approved customer-developed software updates to the device.

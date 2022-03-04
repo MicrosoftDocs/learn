@@ -45,41 +45,41 @@ The next step is to capture the data-flow between each interaction:
 
 ### User
 
-![User threat model](../media/screenshots/user-threat-model.png)
+![User threat model.](../media/screenshots/user-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![User External Entity to PAW Process](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to User External Entity](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
-|![User External Entity to Azure AD Process](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Azure AD Process to User External Entity](../media/elements/process-25.png)</br>Azure AD|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Phone authentication</li><li>2FA</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
+|![User External Entity to PAW Process.](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to User External Entity](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
+|![User External Entity to Azure AD Process.](../media/elements/external-entity-25.png)</br>User|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Azure AD Process to User External Entity](../media/elements/process-25.png)</br>Azure AD|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Phone authentication</li><li>2FA</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
 
 ### Azure AD
 
-![Azure AD threat model](../media/screenshots/user-threat-model.png)
+![Azure AD threat model.](../media/screenshots/user-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![Azure AD Process to User External Entity](../media/elements/process-25.png)</br>Azure AD|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![User External Entity to Azure AD Process](../media/elements/external-entity-25.png)</br>User|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
-|![Azure AD Process to PAW Process](../media/elements/process-25.png)</br>Azure AD|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to Azure AD Process](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Authentication tokens and credentials</li><li>Requests and responses</li></ul>|
+|![Azure AD Process to User External Entity.](../media/elements/process-25.png)</br>Azure AD|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![User External Entity to Azure AD Process](../media/elements/external-entity-25.png)</br>User|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Azure AD authentication</li><li>User credentials</li><li>Session tokens</li><li>Requests and responses</li></ul>|
+|![Azure AD Process to PAW Process.](../media/elements/process-25.png)</br>Azure AD|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to Azure AD Process](../media/elements/process-25.png)</br>PAW|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|<ul><li>Authentication tokens and credentials</li><li>Requests and responses</li></ul>|
 
 ### PAW
 
-![PAW threat model](../media/screenshots/paw-threat-model.png)
+![PAW threat model.](../media/screenshots/paw-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![PAW Process to Azure AD Process](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Azure AD Process](../media/elements/process-25.png)</br>Azure AD|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|*See **Azure AD** for details*|
-|![PAW Process to User External Entity](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![User External Entity](../media/elements/external-entity-25.png)</br>User|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|*See **User** for details*|
-|![PAW Process to Fourth Coffee Process](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Fourth Coffee Process](../media/elements/process-25.png)</br>Fourth Coffee|![None](../media/supporting-icons/none-25.png)</br>No|<ul><li>Requests and responses</li></ul>|
+|![PAW Process to Azure AD Process.](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Azure AD Process](../media/elements/process-25.png)</br>Azure AD|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|*See **Azure AD** for details*|
+|![PAW Process to User External Entity.](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![User External Entity](../media/elements/external-entity-25.png)</br>User|![Checkmark](../media/supporting-icons/check-25.png)</br>Yes|*See **User** for details*|
+|![PAW Process to Fourth Coffee Process.](../media/elements/process-25.png)</br>PAW|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Fourth Coffee Process](../media/elements/process-25.png)</br>Fourth Coffee|![None](../media/supporting-icons/none-25.png)</br>No|<ul><li>Requests and responses</li></ul>|
 
 ### Fourth Coffee
 
-![Fourth Coffee threat model](../media/screenshots/fourth-coffee-threat-model.png)
+![Fourth Coffee threat model.](../media/screenshots/fourth-coffee-threat-model.png)
 
 |Element A|Data-flow|Element B|Crosses boundary|Details|
 |---------|---------|---------|----------------|-------|
-|![Fourth Coffee Process to PAW Process](../media/elements/process-25.png)</br>Fourth Coffee|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to Fourth Coffee Process](../media/elements/process-25.png)</br>PAW|![None](../media/supporting-icons/none-25.png)</br>No|*See **PAW** for details*|
-|![Fourth Coffee Process to Fourth Coffee Data Store](../media/elements/process-25.png)</br>Fourth Coffee|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Fourth Coffee Data store to Fourth Coffee Process](../media/elements/data-store-25.png)</br>Fourth Coffee store|![None](../media/supporting-icons/none-25.png)</br>No|<ul><li>User credentials</li><li>Requests and responses</li></ul>|
+|![Fourth Coffee Process to PAW Process.](../media/elements/process-25.png)</br>Fourth Coffee|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![PAW Process to Fourth Coffee Process](../media/elements/process-25.png)</br>PAW|![None](../media/supporting-icons/none-25.png)</br>No|*See **PAW** for details*|
+|![Fourth Coffee Process to Fourth Coffee Data Store.](../media/elements/process-25.png)</br>Fourth Coffee|![Bi-directional Flow](../media/elements/data-flow-25.png)</br>Bi-directional|![Fourth Coffee Data store to Fourth Coffee Process](../media/elements/data-store-25.png)</br>Fourth Coffee store|![None](../media/supporting-icons/none-25.png)</br>No|<ul><li>User credentials</li><li>Requests and responses</li></ul>|
 
 ## Finished diagram
 
-![Application threat model for a secured environment](../media/screenshots/secured-environment-application-threat-model.PNG)
+![Application threat model for a secured environment.](../media/screenshots/secured-environment-application-threat-model.PNG)

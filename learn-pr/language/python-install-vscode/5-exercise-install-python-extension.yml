@@ -4,11 +4,12 @@ title: Install the Python extension
 metadata:
   title: Install the Python extension
   description: Follow the instructions to install the Python extension for Visual Studio Code.
-  ms.date: 3/2/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  ms.date: 07/06/2021
+  author: rjmolyneaux
+  ms.author: rmolyneaux
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
   zone_pivot_groups: os
 durationInMinutes: 5
 content: |

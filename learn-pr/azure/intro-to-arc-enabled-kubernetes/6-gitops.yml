@@ -35,9 +35,9 @@ quiz:
     - content: "Azure Policy"
       isCorrect: true
       explanation: "Azure Policy automates GitOps configuration, allowing you to apply it consistently to all resources in entire subscription or individual resource groups you designate."
-    - content: "Azure Security Center"
+    - content: "Microsoft Defender for Cloud"
       isCorrect: false
-      explanation: "Azure Security Center does not provide this functionality"
+      explanation: "Microsoft Defender for Cloud does not provide this functionality"
     - content: "Azure Advisor"
       isCorrect: false
       explanation: "Azure Advisor does not provide this functionality"

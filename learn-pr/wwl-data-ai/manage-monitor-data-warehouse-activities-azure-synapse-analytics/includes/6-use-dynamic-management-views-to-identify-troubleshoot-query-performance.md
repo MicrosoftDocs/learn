@@ -63,7 +63,7 @@ WHERE   [label] = 'My Query';
 
 ## Step 2
 
-Use the Request ID to retrieve the querys distributed SQL (DSQL) plan from sys.dm_pdw_request_steps
+Use the Request ID to retrieve the queries distributed SQL (DSQL) plan from sys.dm_pdw_request_steps
 
 ```sql
 -- Find the distributed query plan steps for a specific query.
@@ -76,7 +76,7 @@ ORDER BY step_index;
 
 When a DSQL plan is taking longer than expected, the cause can be a complex plan with many DSQL steps or just one step taking a long time. If the plan is many steps with several move operations, consider optimizing your table distributions to reduce data movement.
 
-The [Table distribution]( /azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-distribute) article explains why data must be moved to solve a query. The article also explains some distribution strategies to minimize data movement.
+The [Table distribution](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-distribute) article explains why data must be moved to solve a query. The article also explains some distribution strategies to minimize data movement.
 
 To investigate further details about a single step, the operation_type column of the long-running query step and note the **Step Index**:
 
@@ -138,4 +138,4 @@ You can also monitor additional aspects of Azure Synapse SQL pools including:
 -	Monitoring transaction log
 -	Monitoring PolyBase
 
-You can view information about [monitoring these areas here]( /azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-monitor#monitor-waiting-queries)
+You can view information about [monitoring these areas here](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-monitor)

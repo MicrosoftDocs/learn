@@ -15,7 +15,7 @@ Now that you’ve reviewed this module, you should be able to:
 * Learn more about [Azure Key Vault](https://azure.microsoft.com/services/key-vault/).
 * Learn more about [Azure Monitor](https://azure.microsoft.com/services/monitor/).
 * Learn more about [Azure Private Link](/azure/private-link/).
-* Learn more about [Azure Security Center](https://azure.microsoft.com/services/security-center/).
+* Learn more about [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/).
 * Learn more about [Azure SmartNICs](https://www.microsoft.com/research/publication/azure-accelerated-networking-smartnics-public-cloud/).
 * Learn more about [Azure Stack Edge](/azure/databox-online/azure-stack-edge-overview).
 * Learn more about [Azure Stack Hub](/azure-stack/operator/azure-stack-overview).

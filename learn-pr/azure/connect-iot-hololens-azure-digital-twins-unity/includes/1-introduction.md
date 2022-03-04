@@ -6,7 +6,7 @@ In this scenario, each of the wind turbines in your wind farm needs to be connec
 
 ## What will we be doing?
 
-In this unit, you'll connect your wind turbines to a stream of Azure Digital Twins (ADT) data for visualization and interaction on the HoloLens 2.  This is the true power of the Digital Twins service.
+In this unit, you'll connect your wind turbines to a stream of Azure Digital Twins (ADT) data for visualization and interaction in Mixed Reality.  This is the true power of the Digital Twins service.
 
 ## What is the main goal?
 

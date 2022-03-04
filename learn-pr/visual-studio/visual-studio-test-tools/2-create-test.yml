@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.visual-studio.visual-studio-test-tools.create-test
+title: Create a test
+metadata:
+  unitType: learning-content
+  title: Create a test
+  description: Learn to create a test project, add a reference, and write a test.
+  author: kendrahavens
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.date: 07/19/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-visual-studio
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-create-test.md)]
+quiz:
+  questions:
+  - content: What do you need to add a reference from your test project to product code?
+    choices:
+    - content: "Add a reference to the target project."
+      isCorrect: false
+      explanation: "Incorrect. That's only one of the necessary tasks."
+    - content: "Both import the namespace and add a project reference."
+      isCorrect: true
+      explanation: "Correct! You need to both import the namespace and add a reference to the project that you want to test."
+    - content: "Import the namespace, add a project reference, and add the @test decorator on the test method."
+      isCorrect: false
+      explanation: "Incorrect. The @test decorator is a Java idiom. .NET uses [TestMethod], but this decorator is normally included as part of the template."
+  - content: Which of the following causes a test to fail?
+    choices:
+    - content: "A failing assert statement is the only reason a test would fail."
+      isCorrect: false
+      explanation: "Incorrect. Tests can fail even if all the assert statements are passing."
+    - content: "A test fails when *most* assertions in the test are failing."
+      isCorrect: false
+      explanation: "Incorrect. Tests will fail if there's at least one failing assertion."
+    - content: "Tests can fail for various reasons, including at least one failing assertion, an uncaught exception, or test time-out."
+      isCorrect: true
+      explanation: "Correct! There are several reasons a test may fail. Always check the test output to determine the cause of a failure."

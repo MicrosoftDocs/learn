@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-databricks-best-practices.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What is SCIM?"
+    choices:
+    - content: "An optimization that removes orphaned data from a given dataset"
+      isCorrect: false
+      explanation: "Incorrect. SCIM stands for \"System for Cross-domain Identity Management\"."
+    - content: "An open standard that enables users to bring their own auth key to the Databricks environment"
+      isCorrect: false
+      explanation: "Incorrect. While SCIM is an open standard, it does not allow users to bring their own keys."
+    - content: "An open standard that enables organizations to import both groups and users from Azure Active Directory into Azure Databricks"
+      isCorrect: true
+      explanation: "By default, Azure Active Directory roles have no relationship with groups created inside of Azure Databricks. SCIM enables synchronizing users and groups, and synchronization is automatic after initial import."
+  - content: "If mounting an Azure Data Lake Storage (ADLS) account to a workspace, what cluster feature must be used to have ACLS within ADLS applied to the user executing commands in a notebook?"
+    choices:
+    - content: "Enable ADLS Passthrough on a cluster"
+      isCorrect: true
+      explanation: "When enabled, authentication automatically takes place in Azure Data Lake Storage (ADLS) from Azure Databricks clusters using the same Azure Active Directory (Azure AD) identity that one uses to log into Azure Databricks. Any ACLs applied at the folder or file level in ADLS are enforced based on the user's identity."
+    - content: "Enable SCIM"
+      isCorrect: false
+      explanation: "Incorrect. SCIM enables account and group synchronization from Azure Active Directory to Azure Databricks. It does not pass an Azure Active Directory user identity to ADLS."
+    - content: "Set spark.config.adls.impersonateuser(true)"
+      isCorrect: false
+      explanation: "There is no such command."

@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
+  ms.custom: team=nextgen
 title: Virtualize resources in the cloud
 summary: Discover virtualization and how it enables many technologies in the cloud, including virtual machines, containers and networks.
 abstract: | 

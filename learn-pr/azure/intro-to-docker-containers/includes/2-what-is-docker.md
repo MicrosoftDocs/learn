@@ -72,4 +72,4 @@ There are several objects that you'll create and configure to support your conta
 
 Docker Hub is a Software as a Service (SaaS) Docker container registry. Docker registries are repositories that we use to store and distribute the container images we create. Docker Hub is the default public registry Docker uses for image management.
 
-Keep in mind that you can create and use a private Docker registry or use one of the many cloud provider options available. For example, you can use Azure Container Registry to store Docker containers to use in several Azure container-enabled services.
+Keep in mind that you can create and use a private Docker registry or use one of the many cloud provider options available. For example, you can use Azure Container Registry to store container images to use in several Azure container-enabled services.

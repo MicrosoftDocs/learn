@@ -1,6 +1,6 @@
-GitHub products marry features to licensing plans and understanding the various products, features, and licensing is an important consideration when using GitHub in organizations and enterprises.
+GitHub products attach features to licensing plans. Understanding the various products, features, and licensing is an important consideration when using GitHub in organizations and enterprises.
 
-Suppose you work at a company that needs to rethink their existing source code management strategy.  They know they want to use GitHub, but are unsure which features they need, how much it would cost, and how to get started.  Your company's VP of software development wants to better understand the costs associated with GitHub and asked you to become the subject matter expert as the VP seeks to make this change in the organization.
+Suppose you work at a company that needs to rethink their existing source code management strategy. They know they want to use GitHub, but they are not sure which features they need, how much it would cost, and how to get started.  Your company's VP of software development wants to better understand the costs associated with GitHub and has asked you to become the subject matter expert and help to make this change in the organization.
 
 In this module, you'll discover GitHub's products and associated features.  You'll learn how each product is priced, and discover how other features are licensed.
 

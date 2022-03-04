@@ -6,7 +6,7 @@ In all but the most simple cases, your bot will likely make use multiple *dialog
 
 It may be useful to compare the flow of interactions in a traditional application to that of a bot. Consider a pizza ordering application.
 
-In a traditional application, users tend to think of the interactions as a series of "screens" or "pages". For example, on a pizza ordering web site, the user may start on the *Home* screen. Next, the user may select an option to view the available pizza options, moving the application on the to *Select Pizza* screen, where the user can select and customize a pizza. Finally, the user may decide to check out, taking them to the *Place Order* screen where they can provide payment and delivery details.
+In a traditional application, users tend to think of the interactions as a series of "screens" or "pages". For example, on a pizza ordering web site, the user may start on the *Home* screen. Next, the user may select an option to view the available pizza options, moving the application on the *Select Pizza* screen, where the user can select and customize a pizza. Finally, the user may decide to check out, taking them to the *Place Order* screen where they can provide payment and delivery details.
 
 ![A traditional application flow for ordering a pizza](../media/traditional-app.png)
 

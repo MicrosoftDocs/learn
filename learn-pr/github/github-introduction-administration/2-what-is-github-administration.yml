@@ -3,10 +3,10 @@ uid: learn.github.github-introduction-administration.what-is-github-administrati
 title: What is GitHub administration?
 metadata:
   title: What is GitHub administration?
-  description: Overview of typical GitHub administration tasks and hierarchical levels.
-  ms.date: 11/16/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  description: Overview of common GitHub administration tasks and hierarchical levels.
+  ms.date: 8/23/2021
+  author: lucie-docs
+  ms.author: lucielenaour
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

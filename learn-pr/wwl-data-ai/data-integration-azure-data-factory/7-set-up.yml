@@ -4,12 +4,13 @@ title: Set-up Azure Data Factory
 metadata:
   title: Set-up Azure Data Factory
   description: "Set-up Azure Data Factory"
-  ms.date: 06/15/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/7-set-up.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.explore-how-to-fix-it
+title: Explore how to fix it
+metadata:
+  title: Explore how to fix it
+  description: "Explore how to fix it"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-explore-how-to-fix-it.md)]

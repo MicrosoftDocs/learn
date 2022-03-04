@@ -87,7 +87,7 @@ The cloud is continually evolving, and with that evolution comes new types of se
 
 All of the aforementioned services work independently, but cloud architects frequently combine these services to form end-to-end solutions designed to solve specific business problems. Figure 2.1 shows one such solution, one that combines several services provided by Microsoft Azure to provide a near-real-time analysis of polar-bear sightings in a region of the Arctic.
 
-![Figure 2.1: Combining services to build end-to-end solutions](../media/architecture-diagram-example.png)
+![Figure 2.1: Combining services to build end-to-end solutions.](../media/architecture-diagram-example.png)
 
 _Figure 2.1: Combining services to build end-to-end solutions._
 
@@ -107,10 +107,8 @@ The entire system runs in the cloud with the exception of the cameras that snap 
 
 1. _"Microsoft Research Blog (2014). *Cloud computing helps make sense of cloud forests*." <https://www.microsoft.com/research/blog/cloud-computing-helps-make-sense-of-cloud-forests/>._
 
-1. _Gemalto (2018). *Gemalto and Cargo Track team up for a Successful Sting Operation*. <https://www.gemalto.com/m2m/customer-cases/iot-protects-rainforest>._
+1. _Gemalto (2018). *Gemalto and Cargo Track team up for a Successful Sting Operation*._
 
 [^1]: <https://www.networkworld.com/article/3322517/a-critical-look-at-gartners-top-10-iot-trends.html>  "Network World (2018). *Gartner's top 10 IoT trends for 2019 and beyond*."
 
 [^2]: <https://www.microsoft.com/research/blog/cloud-computing-helps-make-sense-of-cloud-forests/>  "Microsoft Research Blog (2014). *Cloud computing helps make sense of cloud forests*."
-
-[^3]: <https://www.gemalto.com/m2m/customer-cases/iot-protects-rainforest>  "Gemalto (2018). *Gemalto and Cargo Track team up for a Successful Sting Operation*."

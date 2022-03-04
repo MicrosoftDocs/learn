@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-governance-manageability.resource-manager
+title: Explore Azure Resource Manager
+metadata:
+  title: Explore Azure Resource Manager
+  description: "Explore Azure Resource Manager"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-azure-resource-manager.md)]

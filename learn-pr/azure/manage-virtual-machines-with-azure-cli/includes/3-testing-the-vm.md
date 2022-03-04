@@ -1,4 +1,4 @@
-When you create a virtual machine, it gets assigned a public IP address that is reachable over the Internet, and a private IP address used within the Azure data center. You get both of those values in the returning JSON block from the `create` command:
+When you create a virtual machine, it is assigned a public IP address that is reachable over the Internet, and a private IP address used within the Azure data center. Both of these values appear in the JSON block the `create` command returns, like the following:
 
 ```json
 {
@@ -11,16 +11,16 @@ When you create a virtual machine, it gets assigned a public IP address that is 
 
 ## Connecting to the VM with SSH
 
-With the public IP address we can quickly test that the Linux VM is up and running using the Secure Shell (`ssh`) tool. Remember that we set our admin name to `azureuser`, so we have to specify that. Make sure to use the public IP address from *your* running instance.
+We can quickly test that the Linux VM is up and running by using the public IP address in the Secure Shell (`ssh`) tool. Remember that we set our admin name to `azureuser`, so we will need specify that. Make sure to use the public IP address from *your* running instance.
 
 ```azurecli
 ssh azureuser@<public-ip-address>
 ```
 
 > [!NOTE]
-> We don't need a password because we generated an SSH key pair as part of the VM creation. The first time you shell into the VM, it will give you a prompt about the authenticity of the host.
+> We don't need a password because we generated an SSH key pair as part of the VM creation. The first time you shell into the VM, you will receive a prompt regarding the authenticity of the host.
 > 
-> This is because we are hitting an IP address directly instead of a host name. Answering "yes" will save the IP as a valid host for connection and allow the connection to proceed.
+> This is because we are attempting to access an IP address directly instead of through a host name. Answering "yes" will save the IP address as a valid host for connection and allow the connection to proceed.
 
 ```output
 The authenticity of host '40.83.165.85 (40.83.165.85)' can't be established.
@@ -47,8 +47,6 @@ Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 5.0.0-1014-azure x86_64)
 
 0 packages can be updated.
 0 updates are security updates.
-
-
 
 The programs included with the Ubuntu system are free software;
 the exact distribution terms for each program are described in the

@@ -56,15 +56,15 @@ There are also resource type-specific benefits, such as:
 
 - **Azure Arc enabled SQL Server**
 
-  - Support for Advanced data security using Azure Security Center and Azure Sentinel.
+  - Support for Advanced data security using Microsoft Defender for Cloud and Microsoft Sentinel.
   - The ability to perform SQL Environment health checks using the on-demand SQL Assessment feature, which also provides best practices recommendations.
 
-- **Azure Arc enabled Kubernetes and AKS on Azure Stack HCI**
+- **Azure Arc enabled Kubernetes Service (AKS) on Azure Stack HCI**
 
-  - Enforcement of run-time policies by using Azure Policy for Kubernetes and centralized reporting of the corresponding policy compliance. This allows you, for example to enforce HTTPS ingress in Kubernetes cluster or ensure that containers listen only on allowed ports.
+  - Enforcement of run-time policies by using Azure Policy for Kubernetes and centralized reporting of the corresponding policy compliance. This allows you, for example, to enforce HTTPS ingress in a Kubernetes cluster or ensure that containers listen only on allowed ports.
   - Support for automated updates to cluster configuration by using GitOps. GitOps is the practice of automatic deployment of code residing in a Git repository. In this scenario, that code describes the desired state of Kubernetes configuration. You have the option to enforce specific GitOps-based configurations by using Azure Policy, which also provide centralized reporting of the corresponding policy compliance.
-  - Automatic upgrades and updates without any service downtime. Azure Arc enabled data services receive updates on a frequent basis including servicing patches and new features, which mirror the update management model of their Azure counterparts.
-  - Support for automatic scaling. Azure Arc enabled data services can autoscale dynamically to limits dependent on the capacity of your infrastructure. 
+  - Automatic upgrades and updates without any service downtime. Azure Arc enabled Kuberenetes Service receives updates on a frequent basis including servicing patches and new features, which mirror the update management model of their Azure counterparts.
+  - Support for automatic scaling. Azure Arc enabled Kuberenetes service can autoscale dynamically to limits dependent on the capacity of your infrastructure. 
 
 - **Azure Arc enabled data services**
 

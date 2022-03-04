@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-storage-solution-for-relational-data.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which Azure SQL deployment option will be easiest to use for the Inventory application?"
+    choices:
+    - content: "SQL Server in an Azure virtual machine"
+      isCorrect: true
+      explanation: "that’s correct. SQL Server in an Azure VM allows for Windows authentication"
+    - content: "Azure SQL Managed Instance"
+      isCorrect: false
+      explanation: "that’s incorrect. SQL managed instance doesn’t meet the requirement of Windows authentication"
+    - content: "Azure SQL Database, single database"
+      isCorrect: false
+      explanation: "that’s incorrect. SQL Database doesn’t meet the requirement of Windows authentication"
+  - content: "Which Azure SQL deployment option should be used for the HR application"
+    choices:
+    - content: "Azure SQL Managed Instance"
+      isCorrect: true
+      explanation: "that’s correct. Azure SQL Managed Instance is the only PaaS service that supports instance-scoped features like CLR and Service Broker."
+    - content: "SQL Server in an Azure VM"
+      isCorrect: false
+      explanation: "that’s incorrect. This does not meet the requirements of removing management of SQL Server"
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "that’s incorrect. Azure SQL database doesn’t support instance-scoped features like service broker and CLR"
+  - content: "What database service tier should be selected for the databases being migrated?"
+    choices:
+    - content: "Hyper Scale"
+      isCorrect: true
+      explanation: "that’s correct. Hyper scale can support up to 100 TB"
+    - content: "Business Critical"
+      isCorrect: false
+      explanation: "that’s incorrect. Business critical cant support up to 80 TB of data"
+    - content: "General purpose"
+      isCorrect: false
+      explanation: "that’s incorrect. General purpose cant support up to 80 TB of data"

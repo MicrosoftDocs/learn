@@ -4,10 +4,16 @@ These capabilities differentiate Advanced Audit from the core audit functionalit
 
 ## Long-term retention of audit logs
 
-Advanced Audit keeps all Exchange, SharePoint, and Azure Active Directory audit records for one year. Keeping audit records for longer periods can help with ongoing forensic or compliance investigations. Microsoft now has the capability to keep audit logs for 10 years. The 10-year retention of audit logs helps support long-running investigations and respond to regulatory, legal, and internal obligations.
+Advanced Audit retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This is accomplished by a default audit log retention policy that retains any audit record that contains the value of Exchange, SharePoint, or AzureActiveDirectory for the Workload property for one year. Retaining audit records for longer periods can help with on-going forensic or compliance investigations.
+
+Microsoft now has the capability to keep audit logs for 10 years. The 10-year retention of audit logs helps support long-running investigations and respond to regulatory, legal, and internal obligations.
 
 > [!NOTE]
 > Retaining audit logs for 10 years requires an additional add-on license.
+
+
+### Audit log retention policies
+With Advanced Audit, admins can create customized audit log retention policies to retain audit records for durations less than the default of 1 year or up to 10 years (add-on license). Any custom audit log retention policy will take precedence over the default audit retention policy.
 
 ## Access to crucial events for investigations
 
@@ -20,7 +26,7 @@ Advanced Auditing helps organizations to conduct forensic and compliance investi
     - Replies to an email message
     - Forwards an email message
 
-Investigators can use the Send event to identify emails sent from a compromised account. The audit record for a Send event contains information about the message. The actual content of the message isn't displayed. However, information such as when the message was sent, the InternetMessage ID, the subject line, and if the message contained attachments, are accessible. This auditing information can help investigators identify information about email messages sent from a compromised account or sent by an attacker.
+Investigators can use the Send event to identify emails sent from a compromised account. The audit record for a Send event contains information about the message. The actual content of the message is **not** displayed. However, information such as when the message was sent, the InternetMessage ID, the subject line, and if the message contained attachments, are accessible. This auditing information can help investigators identify information about email messages sent from a compromised account or sent by an attacker.
 
 - **SearchQueryInitiatedExchange** - The SearchQueryInitiatedExchange event is triggered when a person uses the Search bar in Outlook on the web (OWA) to search for items in a mailbox. Investigators can use the SearchQueryInitiatedExchange event to determine if an attacker may have compromised an account, or tried to access sensitive information in the mailbox. The audit record for a SearchQueryInitiatedExchange event contains information such as the actual text of the search query. By looking at the search queries that an attacker may have made, an investigator can better understand the intent of the email data that was searched for.
 

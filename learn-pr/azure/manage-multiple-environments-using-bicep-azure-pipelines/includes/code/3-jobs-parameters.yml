@@ -1,0 +1,17 @@
+parameters:
+- name: environmentType
+  type: string
+  default: 'Test'
+
+jobs:
+- job: Job1-${{parameters.environmentType}}
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+  - template: script.yml
+
+- job: Job2-${{parameters.environmentType}}
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - template: script.yml

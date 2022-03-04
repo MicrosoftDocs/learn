@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: (Optional) Exercise - Run Visual Studio Code in your browser for data exploration
 durationInMinutes: 5
 content: |

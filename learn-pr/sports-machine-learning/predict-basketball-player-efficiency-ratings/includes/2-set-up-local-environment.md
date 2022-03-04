@@ -57,4 +57,4 @@ If that command succeeds, you should see **[2]** next to the cell and no output.
 
 Now you're ready to start exploring and cleansing your data.
 
-© 2020 Warner Bros. Ent. All Rights Reserved.
+© 2021 Warner Bros. Ent. All Rights Reserved.

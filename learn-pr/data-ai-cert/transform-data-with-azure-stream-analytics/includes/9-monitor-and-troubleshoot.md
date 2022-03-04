@@ -13,23 +13,23 @@ The Stream Analytics activity log provides details about each job you run. This 
 
 Each job you create has an activity log. In the log, expand each job, and then select an event to see details in the JSON file.
 
-![Screenshot of an activity log](../media/9-activity-log.png)
+![Screenshot of an activity log.](../media/9-activity-log.png)
 
 ## Dashboards
 
 Dashboards show key health metrics for your Stream Analytics jobs. To view a live dashboard, go to the Azure portal, select your Stream Analytics job, and under **Monitoring**, select **Metrics**.
 
-![Screenshot of a Stream Analytics dashboard in the Azure portal](../media/9-dashboard.png)
+![Screenshot of a Stream Analytics dashboard in the Azure portal.](../media/9-dashboard.png)
 
 ## Alerts
 
 To proactively detect issues, you can set up Stream Analytics to fire alerts based on various metrics and thresholds. To set up alerts in the Azure portal, in your Stream Analytics job, under **Monitoring**, select **Alert rules** > **New alert rule**.
 
-![Screenshot showing the Alert rules page in the Azure portal](../media/9-alert-rule.png)
+![Screenshot showing the Alert rules page in the Azure portal.](../media/9-alert-rule.png)
 
 As you're setting up your rules, you can choose to send alerts by email, SMS, or voicemail. You can also use alerts to trigger workflows.
 
-![Screenshot showing how to create an alert rule](../media/9-create-alert-rule.png)
+![Screenshot showing how to create an alert rule.](../media/9-create-alert-rule.png)
 
 ## Diagnostic logs
 
@@ -39,4 +39,4 @@ Stream Analytics diagnostics is turned off by default. In the Azure portal, you 
 
 You can persist diagnostics settings in an Azure Storage account or send them to Azure Event Hubs or Azure Log Analytics. Generate diagnostics logs for job execution or job authoring.
 
-![Screenshot showing the Diagnostics settings page in the Azure portal](../media/9-configure-diagnostic-settings.png)
+![Screenshot showing the Diagnostics settings page in the Azure portal.](../media/9-configure-diagnostic-settings.png)

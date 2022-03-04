@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.explore-migration-options
+metadata:
+  title: Explore migration options for SAP on Azure
+  description: "This module explores strategies for migration of SAP workloads to Azure, including migration of on-premises SAP workloads to Azure in conjunction to performing an upgrade. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 01/21/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore migration options for SAP on Azure
+summary: This module explores strategies for migration of SAP workloads to Azure, including migration of on-premises SAP workloads to Azure in conjunction to performing an upgrade.
+abstract: |
+  After completing this module, you will be able to:
+  - Analyze strategies for migrating SAP systems to Microsoft Azure.
+  - Compare classical migration options.
+  - Explore downtime-optimized migration.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/explore-migration-options.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.explore-migration-options.introduction
+- learn.wwl.explore-migration-options.analyze-strategies-for-migrating-sap-systems-to-microsoft-azure
+- learn.wwl.explore-migration-options.migrate-to-sap-s4hana-from-sap-business-suite
+- learn.wwl.explore-migration-options.compare-classical-migration-sap-database-migration-option-dmo
+- learn.wwl.explore-migration-options.analyze-sap-database-migration-option-methodology
+- learn.wwl.explore-migration-options.explore-one-step-migration-dmo-system-move-option
+- learn.wwl.explore-migration-options.explore-two-step-migration-lift-shift-followed-by-dmo
+- learn.wwl.explore-migration-options.explore-downtime-optimized-dmo
+- learn.wwl.explore-migration-options.knowledge-check
+- learn.wwl.explore-migration-options.summary
+badge:
+  uid: learn.wwl.explore-migration-options.badge

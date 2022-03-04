@@ -9,6 +9,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
+  ms.custom: team=nextgen
 durationInMinutes: 2 # dummy number at present
 content: |
   [!include[](includes/7-how-upload-video-edge.md)]

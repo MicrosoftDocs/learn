@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-write-data-azure-databricks.read-data-stored-tables-views
+title: Read data stored in tables and views
+metadata:
+  title: Read data stored in tables and views
+  description: "Read data stored in tables and views"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-read-data-stored-tables-views.md)]

@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.career-growth
+metadata:
+  title: From intern to full-time position
+  description: As an intern in tech, learn about ways to grow that can help you move easily to a full-time position.
+  ms.date: 08/23/2021
+  author: jlooper
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: From intern to full-time position
+summary: You've landed your first job in tech as an intern, so now what? Learn strategies to growth-hack your career to ensure that you'll get an offer to join the company full-time after the internship is over.
+abstract: | 
+  By the end of this module, you'll be able to:
+    - Identify and apply strategies for growing technically and professionally
+    - Apply advanced networking techniques
+    - Set expectations and goals for future success
+prerequisites: | 
+#  - [Learn module on getting noticed](/learn/modules/career-get-noticed/)
+#  - [Learn module on interviewing](/learn/modules/career-interview/)
+iconUrl: /learn/achievements/student-evangelism/career-growth.svg
+levels:
+  - beginner
+roles:
+  - student
+products:
+  - vs-code 
+units:
+- learn.career-growth.introduction
+- learn.career-growth.networking
+- learn.career-growth.group-exercise
+- learn.career-growth.building-trust
+- learn.career-growth.day-exercise
+- learn.career-growth.asking-questions
+- learn.career-growth.continual-learning
+- learn.career-growth.summary
+badge:
+  uid: learn.career-growth.badge

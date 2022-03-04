@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/23/2021
+  ms.date: 01/14/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -34,7 +35,7 @@ quiz:
       explanation: "BitLocker is not correct. BitLocker is not a requirement of Office Message Encryption."
     - content: "Information Rights Management"
       isCorrect: true
-      explanation: "Information Rights Management is correct. You must have activate Information Rights Management to use Office Message Encryption"
+      explanation: "Information Rights Management is correct. You must activate Information Rights Management to use Office Message Encryption"
     - content: "Microsoft 365 Compliance center"
       isCorrect: false
       explanation: "Microsoft 365 Compliance center is not correct. The Compliance center is not a requirement of Office Message Encryption."

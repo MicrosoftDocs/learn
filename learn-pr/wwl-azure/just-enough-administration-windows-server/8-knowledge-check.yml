@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.just-enough-administration-windows-server.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following settings should be configured in a role capability file to specify the exact PowerShell cmdlets that are available in a JEA session?"
+    choices:
+    - content: "VisibleProviders"
+      isCorrect: false
+      explanation: "Incorrect. Use this section of a role capability file to specify which PowerShell providers can be used in a JEA session."
+    - content: "VisibleCmdlets"
+      isCorrect: true
+      explanation: "Correct. Use this section of a role capability file to specify which PowerShell cmdlets can be used in a JEA session."
+    - content: "VisibleFunctions"
+      isCorrect: false
+      explanation: "Incorrect. Use this section of a role capability file to specify which PowerShell functions, rather than cmdlets, can be used in a JEA session."
+  - content: "Which of the following settings should be configured in a session configuration file to ensure that a special account with local administrative credentials is used during a JEA session instead of the connecting users account?"
+    choices:
+    - content: "SessionType"
+      isCorrect: false
+      explanation: "Incorrect. The SessionType setting allows you to configure the sessions default settings but does not allow you to assign a special virtual account that has local administrative privileges."
+    - content: "RunAsVirtualAccount"
+      isCorrect: true
+      explanation: "Correct. The RunAsVirtualAccount setting allows you to have the JEA session use a special virtual account with local administrative privileges."
+    - content: "RunAsVirtualAccountGroup"
+      isCorrect: false
+      explanation: "Incorrect. The RunAsVirtualAccountGroup allows you to have the JEA session use a special virtual account that is a member of a specified security group, but unless this specified security group has been granted administrative privileges, does not provide any extra privileges to the virtual account."
+  - content: "In addition to the name of the remote computer being connected to, which of the following must be specified when connecting to a JEA endpoint using remote PowerShell?"
+    choices:
+    - content: "Endpoint configuration name"
+      isCorrect: true
+      explanation: "Correct: You must specify both the computername and the endpoint configuration name when making a remote PowerShell connection using JEA."
+    - content: "Session configuration file name"
+      isCorrect: false
+      explanation: "Incorrect: You need to have a session configuration file to configure a JEA endpoint, but do not need to specify the file name when remotely connecting to that endpoint."
+    - content: "Role capability file name"
+      isCorrect: false
+      explanation: "Incorrect: You need to have a role capability file to configure a JEA endpoint, but do not need to specify the file name when remotely connecting to that endpoint."

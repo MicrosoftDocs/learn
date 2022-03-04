@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.examine-when-get-notification
+title: Examine when get a notification
+metadata:
+  title: Examine when get a notification
+  description: "Examine when get a notification"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-examine-when-get-notification.md)]

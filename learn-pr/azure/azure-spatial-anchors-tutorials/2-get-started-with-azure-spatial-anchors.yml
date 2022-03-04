@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.2-get-started-with-azure-spatial-anchors
+title: Get started with Azure Spatial Anchors
+metadata:
+  title: Get started with Azure Spatial Anchors
+  description: Learn about what Azure Spatial Anchors is and how developers use it.
+  ms.date: 09/09/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-get-started-with-azure-spatial-anchors.md)]

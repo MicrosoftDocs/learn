@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-language-understanding-speech.understand-service-integration
+title: Understand Language Understanding and Speech service integration
+metadata:
+  title: Understand Language Understanding and Speech service integration
+  description: "Understand Language Understanding and Speech service integration"
+  ms.date: 08/20/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-service-integration.md)]

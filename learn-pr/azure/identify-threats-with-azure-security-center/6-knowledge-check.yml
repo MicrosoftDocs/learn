@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: elazark
+  ms.author: memildin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
@@ -23,7 +23,7 @@ quiz:
       - content: Monitor external cloud and non-Azure resources.
         isCorrect: true
         explanation: "Correct. The Standard tier is required to monitor non-Azure resources."
-    - content: True or False. You can collect boot-time diagnostics from VMs with Security Center.
+    - content: True or False. You can collect boot-time diagnostics from VMs with Defender for Cloud.
       choices:
       - content: "True"
         isCorrect: true
@@ -38,7 +38,7 @@ quiz:
         isCorrect: false
       - content: Security policies can be configured at the subscription and management groups level.
         isCorrect: true
-        explanation: "Correct. You can turn security policies (and the corresponding recommendations) on/off at either the subscription or resource group level."
+        explanation: "Correct. You can turn security policies (and the corresponding recommendations) on/off at either the subscription or management group level."
     - content: Select the best description of the Secure Score shown on the dashboard.
       choices:
       - content: The Secure Score is a calculation based on the ratio of healthy resources vs. total resources.

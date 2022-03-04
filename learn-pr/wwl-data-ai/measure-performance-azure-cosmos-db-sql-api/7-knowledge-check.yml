@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/12/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which Insight report will help you identify that your requests are getting **request rate to large** exceptions and that this condition is causing a problem to the databases or containers?"
+    choices:
+    - content: "Request->Total Requests by Operation Type"
+      isCorrect: false
+      explanation: "That's incorrect. This report will return the number of CRUD type operations by type, but by itself would be useless to indicate a 429 status."
+    - content: "Request->Total Requests by Status Code"
+      isCorrect: true
+      explanation: "That's correct. This report will allow us to compare the number of successful requests (200) against the number of rate-limiting ones (429).  If relatively you're finding 1-5% of the request hit a 429 status, and high number of successful requests that might be normal for your application, but if we discover much then 5% of the requests are hitting 429 conditions, there might be a problem."
+    - content: "Throughput->Normalized RU Consumption By"
+      isCorrect: false
+      explanation: "That's incorrect. The Normalized RU Consumption metric is used to see how well saturated the partition key ranges are with respect to the traffic. While this issue could be a contributing factor for 429 conditions, the report by itself wouldn't be good enough to conclude that."
+  - content: "How would you query Azure Cosmos DB Log Analytics diagnostic logs tables using the Azure portal?"
+    choices:
+    - content: "Under Azure Cosmos DB account Data Explorer, run SQL Queries to query the tables."
+      isCorrect: false
+      explanation: "That's incorrect. Data Explorer allows you to run SQL queries against the Azure Cosmos DB containers not against the Log Analytics tables."
+    - content: "Under the Azure Cosmos DB account diagnostic setting defined Log Analytic workspace, use the Logs page, and run SQL Queries to query the tables."
+      isCorrect: false
+      explanation: "That's incorrect. While you would use the diagnostic setting defined Log Analytic workspace's Logs page, you would run Kusto queries to query the Log Analytics tables, not SQL queries."
+    - content: "Under the Azure Cosmos DB account diagnostic setting defined Log Analytic workspace, use the Logs page, and run KQL Queries to query the tables."
+      isCorrect: true
+      explanation: "That's correct. You would use the diagnostic setting defined Log Analytic workspace's Logs page, and you would run Kusto Query Language (KQL) queries to query the Log Analytics tables."
+  - content: "Which of the following Log Analytics tables will be the *most* helpful when troubleshooting hot partitions?"
+    choices:
+    - content: "PartitionKeyStatistics."
+      isCorrect: false
+      explanation: "That's incorrect. This table logs logical partition key statistics in estimated KB. It's helpful when troubleshooting skew storage."
+    - content: "PartitionKeyRUConsumption."
+      isCorrect: true
+      explanation: "That's correct. This table logs every second aggregated RU/s consumption of partition keys. It's helpful when troubleshooting hot partitions."
+    - content: "DataPlaneRequests."
+      isCorrect: false
+      explanation: "That's incorrect. This table logs back-end requests for operations that execute create, update, delete, or retrieve data."

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cna-build-basic-service.8-knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 05/15/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "A developer plans to develop a basic service with data hosted in Azure Database for PostgreSQL. They want to ensure they'll be able to stop the Azure Database for PostgreSQL server during idle periods to minimize costs. Which deployment mode should they use?"
+    choices:
+    - content: "Single Server"
+      isCorrect: false
+      explanation: "Incorrect. This deployment mode doesn't support stopping the server."
+    - content: "Flexible Server"
+      isCorrect: true
+      explanation: "Correct. The flexible server architecture delivers support for availability zones and cost-optimization controls. The controls allow you to stop the server during idle periods, One of the choices is the burstable compute tier, which automatically adjusts the compute resources based on demand."
+    - content: "Hyperscale"
+      isCorrect: false
+      explanation: "Incorrect. This deployment mode doesn't support stopping the server."
+  - content: "Which architectural pattern involves using the same service to perform all database operations?"
+    choices:
+    - content: "CQRS"
+      isCorrect: false
+      explanation: "Incorrect. CQRS involves separating read and update operations for a data store, which provides an extra layer of isolation that aligns with the premise behind DDD."
+    - content: "DDD"
+      isCorrect: false
+      explanation: "Incorrect. DDD is a software development approach that focuses on the functionality of the application to define boundaries between services."
+    - content: "CRUD"
+      isCorrect: true
+      explanation: "Correct. The CRUD-based approach involves the use of a single interface for all data-management tasks."
+  - content: "What is the purpose of object-relational mappers?"
+    choices:
+    - content: "Defining how an application's endpoints respond to client requests"
+      isCorrect: false
+      explanation: "Incorrect. This is the purpose of routes in Node.js applications."
+    - content: "Separation of read and update operations for a data store"
+      isCorrect: false
+      explanation: "Incorrect. This is the purpose of CQRS."
+    - content: "Mapping programmatic constructs into corresponding database schema"
+      isCorrect: true
+      explanation: "Correct. Object-relational mapper libraries map programmatic constructs into corresponding database schema. This approach facilitates portability, providing an abstraction layer between the actual database objects and their service-based representation."

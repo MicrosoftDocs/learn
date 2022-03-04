@@ -32,7 +32,7 @@ When you've configured the cdnverify subdomain and the CNAME for the domain mapp
 
 To add a custom domain, go to the CDN endpoint that you created, and under **Settings**, select **Custom domains**. In the **Custom domain** pane, select **Custom domain**, then in the **Add a custom domain**, under **Custom hostname**, enter the hostname that matches the CNAME record in your custom domain, such as www\.contoso.com.
 
-![Add a custom domain](../media/5-custom-domain.png)
+![Add a custom domain.](../media/5-custom-domain.png)
 
 When you enter the custom domain name, Azure will use DNS to attempt to resolve the address to the endpoint hostname. You'll see a tick next to the **Custom hostname field if they match. If you see a red exclamation mark, then you should check your DNS settings.
 
@@ -87,7 +87,7 @@ You can purge content in several ways.
 - Specify a file, by including the path to that file or all assets on the selected endpoint by checking the **Purge All** checkbox.
 - Based on wildcards (*) or using the root (/).
 
-![Purge assets](../media/5-purge-cache.png)
+![Purge assets.](../media/5-purge-cache.png)
 
 When you've specified what content you want to purge, select the Purge button.
 
@@ -99,7 +99,7 @@ Geo-filtering enables you to allow or block content in specific countries, based
 
 To configure geo-filtering, in the properties of the respective endpoint, select Geo-filtering. On the Geo-filtering panel, select either allow or block, then in the Country codes list, select which countries you want to allow or block.
 
-![Geo-filtering](../media/5-geo-filtering.png)
+![Geo-filtering.](../media/5-geo-filtering.png)
 
 The **Allow** setting is more restrictive than Block. Allow allows access only for the selected countries. The logic for Block is to allow access from all countries, except for those countries blocked.
 

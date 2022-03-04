@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.design-data-storage-solution-for-relational-data
+metadata:
+  title: Design a data storage solution for relational data
+  description: "Azure Architects design and recommend relational data storage solutions."
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a data storage solution for relational data
+summary: Azure Architects design and recommend relational data storage solutions.
+abstract: |
+  In this module, you’ll learn how to:
+  - Design for Azure SQL Database.
+  - Design for Azure SQL Managed Instance.
+  - Design for SQL Server on Azure VM.
+  - Recommend a solution for database scalability.
+  - Recommend a solution for database availability
+  - Design security for data at rest, data in transmission, and data in use
+  - Design for Azure SQL Edge.
+  - Design for Azure Cosmos DB and tables.
+prerequisites: |
+  - Working experience with database solutions.
+  - Conceptual knowledge of SQL Server.
+iconUrl: /learn/achievements/design-data-storage-relational-data.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure-cosmos-db
+- azure-sql-database
+- azure-sql-edge
+- azure-sql-managed-instance
+- azure-sql-virtual-machines
+- azure-sqlserver-vm
+- sql-server
+units:
+- learn.wwl.design-data-storage-solution-for-relational-data.introduction
+- learn.wwl.design-data-storage-solution-for-relational-data.design-for-azure-sql-database
+- learn.wwl.design-data-storage-solution-for-relational-data.design-for-azure-sql-managed-instance
+- learn.wwl.design-data-storage-solution-for-relational-data.design-for-sql-server-azure-vm
+- learn.wwl.design-data-storage-solution-for-relational-data.recommend-database-scalability
+- learn.wwl.design-data-storage-solution-for-relational-data.design-for-azure-table-storage
+- learn.wwl.design-data-storage-solution-for-relational-data.design-encryption-for-data-at-rest-data-transmission-data-use
+- learn.wwl.design-data-storage-solution-for-relational-data.design-for-azure-sql-edge
+- learn.wwl.design-data-storage-solution-for-relational-data.design-for-azure-cosmos-db
+- learn.wwl.design-data-storage-solution-for-relational-data.knowledge-check
+- learn.wwl.design-data-storage-solution-for-relational-data.summary-resources
+badge:
+  uid: learn.wwl.design-data-storage-solution-for-relational-data.badge

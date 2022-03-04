@@ -24,7 +24,7 @@ These rules enable clients to access your entire Azure SQL server, that is, all 
 
 The **Allow access to Azure services** rule allows services within Azure to connect to your Azure SQL Database. When enabled, this setting allows communications from all Azure public IP addresses. This includes all Azure Platform as a Service (PaaS) services, such as Azure App Service and Azure Container Service, as well as Azure VMs that have outbound Internet access. This rule can be configured through the **ON/OFF** option in the firewall pane in the portal, or by an IP rule that has 0.0.0.0 as the start and end IP addresses.
 
-![Allow access to Azure services network diagram](../media/2-allow-azure-services.png)
+![Allow access to Azure services network diagram.](../media/2-allow-azure-services.png)
 
 This rule is used when you have applications running on PaaS services in Azure, such as Azure Logic Apps or Azure Functions, that need to access your Azure SQL Database. Many of these services don't have a static IP address, so this rule is needed to ensure they are able to connect to the database.
 
@@ -33,13 +33,13 @@ This rule is used when you have applications running on PaaS services in Azure, 
 
 **IP address rules** are rules that are based on specific public IP address ranges. IP addresses connecting from an allowed public IP range will be permitted to connect to the database.
 
-![IP address rule network diagram](../media/2-server-ip-rule-1.png)
+![IP address rule network diagram.](../media/2-server-ip-rule-1.png)
 
 These rules can be used when you have a static public IP address that needs to access your database.
 
 **Virtual network rules** allow you to explicitly allow connection from specified subnets inside one or more Azure virtual networks (VNets). Virtual network rules can provide greater access control to your databases and can be a preferred option depending on your scenario. Since Azure VNet address spaces are private, you can effectively eliminate exposure to public IP addresses and secure connectivity to those addresses you control.
 
-![VNet rule network diagram](../media/2-vnet-rule.png)
+![VNet rule network diagram.](../media/2-vnet-rule.png)
 
 Virtual network rules are used when you have Azure VMs that need to access your database.
 
@@ -49,7 +49,7 @@ For server-level rules, all of the above can be created and manipulated through 
 
 These rules allow access to an individual database on a logical server and are stored in the database itself. For database-level rules, only **IP address rules** can be configured. They function the same as when applied at the server-level, but are scoped to the database only.
 
-![Database IP address rule network diagram](../media/2-db-ip-rule-1.png)
+![Database IP address rule network diagram.](../media/2-db-ip-rule-1.png)
 
 The benefits of database-level rules are their portability. When replicating a database to another server, the database-level rules will be replicated, since they are stored in the database itself.
 
@@ -67,24 +67,24 @@ Let's go through the firewall settings and see how they work. We'll use both the
 
 The database we created currently does not allow access from any connections. This is by design based on the commands that we ran to create the logical server and database. Let's confirm this.
 
-1. In Cloud Shell, SSH into your Linux VM if you aren't already connected.
+1. In Cloud Shell, SSH into your Linux VM if you aren't already connected. Replace `nnn.nnn.nnn.nnn` with the value from the `publicIpAddress` in the previous unit.
 
     ```bash
     ssh nnn.nnn.nnn.nnn
     ```
-
-    Where `nnn.nnn.nnn.nnn` is the value from the `publicIpAddress` in the previous unit.
-
-1. Recall the `sqlcmd` command we retrieved earlier. Go ahead and run it to attempt to connect to the database. Make sure you replace `[username]` and `[password]` with the `ADMINUSER` credentials you specified in the previous unit. Make sure to keep the single quotes around the username and password so that any special characters aren't misinterpreted by the shell.
+  
+1. Rerun the `sqlcmd` command we retrieved earlier to attempt to connect to the database. Make sure you replace `[username]` and `[password]` with the `ADMINUSER` credentials you specified in the previous unit. Make sure to keep the single quotes around the username and password so that any special characters aren't misinterpreted by the shell.
 
     ```bash
     sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
-    You should receive an error when trying to connect. This is expected since we've not allowed any access to the database.
+    You should receive an error similar to the following output when trying to connect. This is expected since we've not allowed any access to the database.
 
     ```output
-    Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Cannot open server 'securedb' requested by the login. Client with IP address '40.112.128.214' is not allowed to access the server.  To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect..
+    Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Login timeout expired.
+    Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : TCP Provider: Error code 0x2AF9.
+    Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible.Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online.
     ```
 
 Let's grant access so we can connect.
@@ -99,7 +99,7 @@ Because our VM has outbound internet access, we can use the **Allow access to Az
 
 1. In the SQL server pane, in the left menu pane, under **Security**, select **Firewalls and virtual networks**.
 
-1. Set **Allow access to Azure services** to **YES**, and select **Save**.
+1. Set **Allow access to Azure services** to **YES**, and select **Save**. Wait until the system acknowledges this change.
 
 1. Back in your SSH session, let's try to connect to your database again.
 

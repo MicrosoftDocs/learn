@@ -79,8 +79,10 @@ New-AzResourceGroupDeployment `
 
 ### Check your deployment
 
-1. In your browser, go back to Azure. Go to your resource group and see that there are now **3 Succeeded** deployments. Select this link.
-1. Notice that all three deployments are in the list.
+1. In your browser, go back to the Azure portal. Go to your resource group, and see that there are now **3 Succeeded** deployments. Select this link.
+
+    Notice that all three deployments are in the list.
+
 1. Explore the *addnameparameter* deployment as you did previously.
 
 ### Add another parameter to limit allowed values
@@ -88,7 +90,9 @@ New-AzResourceGroupDeployment `
 Here, you use parameters to limit the values allowed for a parameter.
 
 1. Place your cursor after the closing brace for the ```storageName```parameter. Add a comma, and select <kbd>Enter</kbd>.
-1. Again, enter **par** and choose **arm-param**.
+
+1. Again, enter **par**, and select **arm-param**.
+
 1. Change the new generic parameter to this:
 
     ```json
@@ -124,7 +128,7 @@ Here, you use parameters to limit the values allowed for a parameter.
        }
     ```
 
-1. The entire file will look like this:
+    The entire file will look like this:
 
     [!code-json[](code/parameter3.json?highlight=13-26,40)]
 
@@ -132,7 +136,7 @@ Here, you use parameters to limit the values allowed for a parameter.
 
 ### Deploy the ARM template
 
-Here, you deploy successfully by using a ```storageSKU``` parameter that's in the allowed list. Then you try to deploy the template by using a ```storageSKU``` parameter that isn't in the allowed list. The second deployment will fail as expected.
+Here, you'll deploy successfully by using a ```storageSKU``` parameter that's in the allowed list. Then, you'll try to deploy the template by using a ```storageSKU``` parameter that isn't in the allowed list. The second deployment will fail as expected.
 
 ::: zone pivot="cli"
 
@@ -151,7 +155,7 @@ Here, you deploy successfully by using a ```storageSKU``` parameter that's in th
 
       Allow this deployment to finish. This deployment succeeds as expected. The allowed values prevent users of your template from passing in parameter values that don't work for the resource. Let's see what happens when you provide an invalid SKU.
 
-1. Run the following commands to deploy the template with a parameter that isn't allowed. Here you changed the ```storageSKU``` parameter to **Basic**. Fill in a unique name for the ```storageName``` parameter. Remember, this name must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
+1. Run the following commands to deploy the template with a parameter that isn't allowed. Here, you changed the ```storageSKU``` parameter to **Basic**. Fill in a unique name for the ```storageName``` parameter. Remember, this name must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
 
     ```azurecli
     templateFile="azuredeploy.json"
@@ -208,8 +212,9 @@ Here, you deploy successfully by using a ```storageSKU``` parameter that's in th
 
 Here, you add to the ```outputs``` section of the ARM template to output the endpoints for the storage account resource.
 
-1. In the *azuredeploy.json* file in Visual Studio Code, place your curser inside the braces in the outputs attribute ```"outputs":{},```.
-1. Select <kbd>Enter</kbd>, and then enter **out**. You see a list of related snippets. Choose **arm-output**. It adds a generic output to the template. It will look like this:
+1. In the *azuredeploy.json* file in Visual Studio Code, place your cursor inside the braces in the outputs attribute ```"outputs":{},```.
+
+1. Select <kbd>Enter</kbd>, and then enter *out*. You see a list of related snippets. Select **arm-output**. It adds a generic output to the template. It will look like this:
 
     ```json
     "outputs": {
@@ -219,7 +224,7 @@ Here, you add to the ```outputs``` section of the ARM template to output the end
       }
     ```
 
-1. Change **"output1"** to **"storageEndpoint"**, change the value of ```type``` to **"object"**, and change the value of ```value``` to **"[reference(parameters('storageName')).primaryEndpoints]"**. This expression is the one we discussed in the previous unit that gets the endpoint data. Because we specified *object* as the type, it will return the object in JSON format.
+1. Change **"output1"** to **"storageEndpoint"**, then change the value of ```type``` to **"object"**, and finally, change the value of ```value``` to **"[reference(parameters('storageName')).primaryEndpoints]"**. This expression is the one we described in the previous unit that gets the endpoint data. Because we specified *object* as the type, it will return the object in JSON format.
 
     ```json
     "outputs": {
@@ -250,7 +255,7 @@ Here, you deploy the template and see the endpoints output as JSON. You need to 
       --parameters storageSKU=Standard_LRS storageName={your-unique-name}
     ```
 
-1. Notice the output.
+    Notice the output.
 
     :::image type="content" source="../media/3-add-output-result.png" alt-text="Terminal window showing the primary endpoints output as JSON." border="true":::
 
@@ -270,7 +275,7 @@ Here, you deploy the template and see the endpoints output as JSON. You need to 
       -storageSKU Standard_LRS
     ```
 
-1. Notice the output.
+    Notice the output.
 
     :::image type="content" source="../media/3-add-output-result.png" alt-text="Terminal window showing the primary endpoints output as JSON." border="true":::
 

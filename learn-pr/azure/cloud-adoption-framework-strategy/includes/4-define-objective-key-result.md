@@ -1,4 +1,4 @@
-Business outcomes are how we measure strategic impact. Some organizations have existing key performance indicators (KPIs), which provide a measure for strategic impact. KPIs are a fine way to measure impact. But, for organizations that don't already have operational KPIs and the rich analytics systems that are required to track that progress, objectives and key results (OKRs) are a more manageable approach.
+Business outcomes are how we measure strategic impact. Some organizations have existing key performance indicators (KPIs), which provide a measure for strategic impact. KPIs are a fine way to measure impact, but for organizations that don't already have operational KPIs and the rich analytics systems required to track that progress, objectives and key results (OKRs) are a more manageable approach.
 
 This unit demonstrates how to define OKRs that can measure your strategic impact.
 
@@ -14,9 +14,9 @@ Modern operations require modern ways to measure business outcomes, and cloud te
 
 OKRs have proven to drive alignment in complex work environments, foster innovation, and help individuals focus on what matters. Many organizations have begun to use OKRs. OKRs are based on two components: an objective and key results for that objective. An objective is the statement of intent: what is the team trying to accomplish, and why is it important? Key results are specific outcomes that track impact on the objective:
 
-**Objective**: Clarity and intent.
+**Objective**: Clarity and intent
 
-**Key results**: Measures of success within a quarter.
+**Key results**: Measures of success within a quarter
 
 It's important to understand that OKRs are useful for measuring team outcomes rather than individual performance. Because deadlines often motivate team performance, key results are established quarterly. OKRs help teams focus on the most important tasks instead of on the volume of work at hand. To focus on critical tasks, focus on what happens in a month, a quarter, and other short-term intervals. You can have OKRs that last longer, but shorter intervals emphasize the need for OKRs that track short-term impact.
 
@@ -52,17 +52,17 @@ Here are some examples of OKRs:
 - A 12 percent increase in student engagement, as measured through internal systems.
 - A 95 percent satisfaction rate from quarterly parent surveys.
 
-**Objective 2:** Build a technology platform that supports every person in our business to innovate and create.
+**Objective 2**: Build a technology platform that supports every person in our business to innovate and create.
 
-**Key results:**
+**Key results**:
 
 - Five new applications developed and adopted across the organization.
 - Every team with at least two members using Microsoft Power Platform.
 - Including new cloud technologies like data analytics and machine learning in all customer-facing applications.
 
-**Objective 3:** Transform our approach from sales driven to data driven.
+**Objective 3**: Transform our approach from sales driven to data driven.
 
-**Key results:**
+**Key results**:
 
 - Increasing pipeline coverage from 50 percent to 200 percent.
 - Increasing closing rates for sales engagements by 5 percent.
@@ -84,4 +84,8 @@ Five steps can help your organization move forward with OKRs:
 
 ## Record your observations
 
-If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Under **Business outcomes**, use the principles of OKRs that are discussed in this unit to shape your first business outcomes.
+If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Under **Business outcomes**, use the OKR principles discussed in this unit to shape your first business outcomes.
+
+## Anticipate financial considerations
+
+When migrating to the cloud, it’s important to think differently about how you'll consume and manage your cloud resources. As you build your business case, it’s critical to understand the key principles of cloud economics and transform your mindset. Part of this transformation is discovering technical and financial flexibility, efficiencies, and capabilities that aren’t possible with your on-premises IT infrastructure. When you plan short- and long-term cloud solutions and align them to business outcomes, you can achieve more with every dollar you invest.

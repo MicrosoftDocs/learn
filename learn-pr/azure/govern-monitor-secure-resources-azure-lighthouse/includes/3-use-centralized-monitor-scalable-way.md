@@ -67,7 +67,7 @@ Your company provides different kinds of managed services for customers so you'l
 
 When you've deployed policies, data collected will be logged to the workspaces created for each customer. You can analyze the data and get insight across all of your customers’ tenants using tools like Azure Monitor Workbooks.
 
-:::image type="content" source="../media/3-analyzed-logged-data.png" alt-text="Analyze logged data":::
+:::image type="content" source="../media/3-analyzed-logged-data.png" alt-text="Analyze logged data.":::
 
 Workbooks can be shared across the organization or with outside groups in the wider community.
 
@@ -96,7 +96,7 @@ You must have an account in Azure that's assigned with the *Monitoring Reader* b
 
 If you're a Global administrator, you can elevate access by enabling **Access management for Azure resources** in the **Properties** pane of your Azure Active Directory tenant.
 
-:::image type="content" source="../media/3-elevate-access.png" alt-text="Elevate access":::
+:::image type="content" source="../media/3-elevate-access.png" alt-text="Elevate access.":::
 
 You then assign the *Monitoring Reader* role to the account you want to allow to access tenant-level data. This can be done through tools like Azure CLI, or Azure PowerShell. To assign a role using Azure PowerShell, run the following command.
 
@@ -109,7 +109,7 @@ We recommend that this is assigned to a service principal account rather than a 
 
 Elevated access must be removed again after the role has been assigned to the service principal.
 
-:::image type="content" source="../media/3-remove-role-assignment.png" alt-text="Remove access":::
+:::image type="content" source="../media/3-remove-role-assignment.png" alt-text="Remove access.":::
 
 ### Query activity logs
 

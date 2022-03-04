@@ -1,10 +1,10 @@
-Identity Protection is a tool that allows organizations to accomplish three key tasks:
+Identity Protection is a service that enables organizations to view the security posture of any account.  This allows organizations to accomplish three key tasks:
 
 - Automate the detection and remediation of identity-based risks.
-
 - Investigate risks using data in the portal.
-
 - Export risk detection data to third-party utilities for further analysis.
+
+Always remember that Azure AD Identity Protection requires an Azure AD Premium P2 license to operate.  This is covered in more detail in a later unit.
 
 Identity Protection uses the knowledge Microsoft has gained from its position in organizations with Azure AD, the consumer space with Microsoft Accounts, and in gaming with Xbox to protect your users. Microsoft analyzes 6.5 trillion signals per day to identify and protect customers from threats.
 

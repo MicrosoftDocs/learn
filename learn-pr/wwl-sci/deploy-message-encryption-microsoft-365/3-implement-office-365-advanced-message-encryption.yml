@@ -4,12 +4,13 @@ title: Implement Office 365 advanced message encryption
 metadata:
   title: Implement Office 365 advanced message encryption
   description: "Implement Office 365 advanced message encryption"
-  ms.date: 03/23/2021
+  ms.date: 01/14/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-implement-office-365-advanced-message-encryption.md)]

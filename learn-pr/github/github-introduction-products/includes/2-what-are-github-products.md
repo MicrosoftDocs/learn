@@ -1,121 +1,62 @@
-In this unit, you'll learn about the features and pricing for each GitHub product.
+Here, you'll learn about available GitHub products, corresponding product features, and pricing. 
 
-> [!NOTE]
-> In many ways, this unit is merely reviewing and restating the information from GitHub's own [pricing page](https://github.com/pricing?azure-portal=true) and [documentation](https://docs.github.com/free-pro-team@latest/github/getting-started-with-github/githubs-products?azure-portal=true).
+## A focus on GitHub products
 
-## What is the difference between accounts, products, teams, and permissions?
+GitHub has several free and paid products to improve your software management process and team collaboration:
 
-It's important to have a clear understanding of the difference between accounts and products.
+- GitHub Free
+- GitHub Pro
+- GitHub Team
+- GitHub Enterprise 
 
-There are three types of accounts:
+As you learn about these products, remember that there is a difference between products and accounts. Below is a list of the three GitHub account types: 
+
 - Personal user accounts
 - Organization accounts
 - Enterprise accounts
 
-And there are six products:
-- GitHub Free for user accounts
-- GitHub Free for organizations
-- GitHub Pro
-- GitHub Team
-- GitHub Enterprise / GitHub Enterprise Cloud
-- GitHub One
+Some account types are only available within specific products. In the following sections, you'll learn more about these products, their different features, and which account types they are compatible with. As you move through the content, make it your goal to understand these separate but related concepts so that you can decide which GitHub product is right for you.
 
-The rest of this section should help you build a basic mental model of how accounts, products, teams, repository permissions, and permission levels relate to each other.  Keeping these separate but related concepts straight in your mind will provide a foundation on which to build.
+### GitHub Free
 
-Anyone can sign up for the "GitHub Free for user accounts" product. Signing up for the "GitHub Free for user accounts" will give every new user a *Personal user account*.  
+This is often the product version that comes to mind when thinking of GitHub. GitHub Free provides the basics for individuals and organizations. Anyone can sign up for the free version of GitHub. Signing up for GitHub Free will give a new user a *Personal user account*. A personal user account gives you unlimited public and private repositories, and unlimited collaborators. Private repositories under GitHub Free have limited functionality, GitHub Actions minutes, and GitHub Packages storage.
 
-If the user wants to set up a GitHub workspace for an organization, they may want to sign up for "GitHub Free for organizations", which will create an *organization account*.   When a user creates an organization, they are assigned the "Owner" permission level for that organization.
+Below is a breakdown of the features included with GitHub Free:
 
-A user can create public and private repositories that belong to them personally, or can create public and private repositories that belong to the organization.
+- Unlimited public/private repositories
+- 2,000 Actions automation minutes/month (_Free for public repositories_)
+- 500MB of Packages storage (_Free for public repositories_)
+- New Issues & Projects (in limited beta)
+- GitHub Community Support
+- Dependabot alerts
+- Two-factor authentication enforcement
+- 2,000 GitHub Actions minutes (_Number of free minutes for private repositories_)
+- 500 MB GitHub Packages storage (_Number of free minutes for private repositories_)
 
-A user can invite other users to collaborate on their public and private repositories, or can invite users to collaborate on public and private repositories in an organization, though it requires an extra step or two.  
+For a more comprehensive list of features, please refer to [GitHub's pricing page](https://github.com/pricing).
 
-When the user invites collaborators to their personal public and private repositories, those collaborators will automatically have the permission to write to the repository.  
+#### GitHub Free for organizations
 
-However, an "Owner" of an organization invites collaborators to an organization's public and private repositories by first adding them as Members of the organization, then adding them to a Team.  Each team is intended to reflect a company or group's structure, and is used to provide cascading access permissions and make it easy to notify all team members via mentions.
+As mentioned above, GitHub Free also includes a free version specifically for organizations. The organization version has all the features of the personal account and two extra features:
 
-Each user, as a team member, is assigned a *permission* for a given repository.  There are five repository permission levels with an increasing degree of control over the repository: read, triage, write, maintain, admin.
-
-Each user, as an organization member, is assigned a *permission level* that gives them the ability to create new teams, change the team roster, and so on.  Users with the Billing Manager permission level can only view and edit billing information.  Users with the Member permission level can create and manage organization repositories and teams.  Users with the Owner permission level can do everything members can, Owner permission level can add or remove others users to and from the organization.
-
-Finally, a user can create one or more *enterprise accounts* by signing up for the paid GitHub Enterprise product.  When a user creates an enterprise account, they are assigned the role of *enterprise owner*.  Each user, as an enterprise owner, can add and remove organizations to and from the enterprise account.  They can manage other administrators, enforce security policies across organizations, and so on.
-
-Keep these distinctions in mind as we discuss the features of each GitHub product.
-
-## Free products
-
-The remainder of this unit will focus on products.  GitHub's free products provide access to many of the most vital tools required for public and private projects without any fees.  As we noted in the previous section, users can invite collaborators to work on their repositories, or can collaborate in others' repositories.
-
-GitHub's [pricing page](https://github.com/pricing?azure-portal=true) does a great job breaking down and explaining each of the features included across all of their products, across categories like:
-- Code management
-- Code workflow
-- Collaboration
-- Security and compliance
-- Marketplace and integrations
-- Support and deployment
-
-A few key features change based on the product, for example:
-
-- *GitHub Actions* - Automate CI/CD workflows to build, test, and deploy your code. Trigger actions from a large community of software integrations.  You get execution minutes for hosted runners to perform the automation.
-- *GitHub Packages storage* - Host and publish your packages, distributing them privately or publicly via standard package managers. Packages are free for public repositories, so the limits on GitHub Packages storage describe the maximum private package capacity for a given product.
-
-At the free tier, the amount of GitHub Actions minutes and GitHub Packages storage should be sufficient enough for most users, and provide enough room to test the features out for more active users and organizations.
-
-| Feature | Limit |
-|---|---|
-| GitHub Actions minutes | 2000 |
-| GitHub Packages storage | 500 MB |
-
-### GitHub Free for user accounts
-
-Signing up for a *GitHub Free for user account* provides the user with a *Personal user account*.  A Personal user account gives the user unlimited public and private repositories, and unlimited collaborators.
-
-Again, refer to GitHub's pricing page for a more comprehensive list of features include, but a few of the most important features include the items in the table below.
-
-| Feature | Explanation |
-|---|---|
-| GitHub Community Support | Allows users to resolve issues with the help of the user community via self-serve forums. |
-| Dependabot alerts | Dependabot security updates make it easier for you to fix vulnerable dependencies in your repository. If you enable this feature, when a Dependabot alert is raised for a vulnerable dependency in the dependency graph of your repository, Dependabot automatically tries to fix it. |
-| Two-factor authentication enforcement | Allows the user to strengthen their own account by requiring any attempts to log in will require two-factor authentication. |
-
-### GitHub Free for organizations
-
-GitHub Free for organizations allows organizations to create teams that reflect its structure, assigning permissions to users in each team to access repositories, and more.
-
-GitHub Free for organizations builds on GitHub Free for user accounts by adding a few features for teams:
-
-| Feature | Explanation |
-|---|---|
-| Team discussions | Provides a threaded discussion feature that a team can use to plan together, update one another, or talk about any topic in discussion posts on the team's page in an organization. |
-| Team access controls for managing groups | Manage which individual user accounts have read or write access to each repository. |
-
-## Paid products
-
-GitHub's Paid products are priced on a per account, per month basis.  
-
-> [!NOTE]
-> For current prices, please refer to [GitHub's pricing page](https://github.com/pricing?azure-portal=true).
-
-The paid products build on the free products by adding features and increasing limits.
+- Team discussions
+- Team access controls for managing groups
 
 ### GitHub Pro
 
-GitHub Pro is available for individual developers who want access to many of the features of GitHub Teams, but do not belong to an organization.  
+GitHub Pro is the same as GitHub Free but with some upgraded features. This product is available for individual developers who want advanced tools and insight within their repositories but don't belong to a team - these are individual developers using their personal accounts. GitHub Pro accounts include all of the features of a GitHub Free account, plus the following advanced features:
 
-Pro accounts get all of the features from the GitHub Free for user accounts, plus the following premium features:
+- GitHub Support via Email
+- Required pull request reviewers
+- Multiple pull request reviewers
+- Auto-linked references
+- GitHub Pages
+- Wikis
+- Protected branches
+- Code owners
+- Repository insights graphs
 
-| Feature | Explanation |
-|---|---|
-| GitHub Support via Email | A support option upgrade to the community forums. |
-| Required pull request reviewers  | Ensure that pull requests have a specific number of approving reviews before collaborators can make changes to a protected branch. |
-| Multiple pull request reviewers  | Lifts the restriction on GitHub Free for organizations where you’re limited to one assignee on issue assignees, pull request assignees, and pull request reviewers. |
-| GitHub Pages | Use GitHub Pages to host a website about yourself, your organization, or your project directly from a GitHub repository. |
-| Wikis | Host documentation for your repository in a wiki, so that others can use and contribute to your project. |
-| Protected branches | Create rules to ensure that collaborators on your repository cannot make irrevocable changes to branches. They allow you to enable optional checks and requirements, like required status checks and required reviews. |
-| Code owners | A repository's code owners are team members that are automatically added as reviewers to pull requests made against it.  You define code owners in a special file in a given repository. |
-| Repository insights graphs | Displays a series of graphs that provides basic information about a repository, such as the repository's activity and contribution activity. |
-
-Finally, the Pro product increases the limits of GitHub Actions and GitHub Packages. Furthermore, these features can be used on both private and public repositories.
+In addition, GitHub Pro increases the limits of GitHub Actions and GitHub Packages for private repositories.
 
 | Feature | Limit |
 |---|---|
@@ -123,53 +64,53 @@ Finally, the Pro product increases the limits of GitHub Actions and GitHub Packa
 | GitHub Packages storage | 2 GB |
 
 > [!NOTE]
-> GitHub Pro doesn't show up on the pricing page, but is available as an upgrade to personal user accounts once the user is logged in.  If the account already belongs to an organization, GitHub Pro will not show as an option, only GitHub Team will.
+> GitHub Pro doesn't show up on the pricing page, but is available as an upgrade to personal user accounts once the user is logged in.  If the account already belongs to an organization, GitHub Pro will not be available, instead GitHub Team will show as an available upgrade.
 
 ### GitHub Team
 
-GitHub Team is the paid equivalent of GitHub Free for organizations, but with all of the benefits already discussed in GitHub Pro.  They also get the following features not included in GitHub Pro.
+GitHub Team is the version of GitHub Pro but for teams instead of personal accounts. GitHub Team includes all the same features as GitHub Pro and a few extra features that help with collaboration within a team:
 
-| Feature | Explanation |
-|---|---|
-| Draft pull requests | Tag your pull request as a work in progress, indicating to reviewers that you're accepting input at this early stage, but the code is not yet in a state to be fully reviewed. |
-| Team pull request reviewers | Assign a pull request review to any person or team with read access to a repository. If you assign to a team, it will use a special algorithm to determine who should be assigned based on number of outstanding review requests. |
-| Scheduled reminders | Set up daily reminders for you or your team of pull requests waiting for review via Slack.  Reduces time spent waiting on code reviews. |
+- Draft pull requests
+- Team pull request reviewers
+- Scheduled reminders
 
 ### GitHub Enterprise
 
-GitHub Enterprise can be hosted on-premise, or "in the cloud" using GitHub's existing infrastructure.  GitHub Enterprise accounts enjoy a greater level of support, as well as additional security, compliance, and deployment controls.
+GitHub Enterprise can be hosted on-premise, or in the cloud using GitHub's existing infrastructure.  GitHub Enterprise accounts enjoy a greater level of support and extra security, compliance, and deployment controls.
 
-Enterprises get an increase in the degree of integration with existing on-prem or cloud services.  For example, they can synchronize their authentication with SAML to enable single sign-on by using their existing configurations stored in Active Directory Federation Services or Azure Active Directory.  Or, they can provision access to other services by using SAML or SCIM as the identity provider.  Finally, they can use GitHub Connect to share certain features and data between your GitHub Enterprise Server instance and your GitHub Enterprise Cloud organization or enterprise account on GitHub.com.
+You can create one or more *enterprise accounts* by signing up for the paid GitHub Enterprise product.  When you create an enterprise account, you are assigned the role of *enterprise owner*.  As an enterprise owner, you can add and remove organizations to and from the enterprise account.  You can manage other administrators, enforce security policies across organizations, and so on.
+
+With GitHub Enterprise (GHE), you get GitHub Enterprise Support and a greater integration with existing on-prem or cloud services.  For example, you can synchronize your authentication with SAML to enable single sign-on by using your existing configurations stored in Active Directory Federation Services or Azure Active Directory.  Alternatively, you can provision access to other services by using SAML or SCIM as the identity provider. You can also use GitHub Connect to share certain features and data between your GitHub Enterprise Server instance, your GitHub Enterprise Cloud organization, or enterprise account on GitHub.com.
+
+In addition to the features available with GitHub Team, GitHub Enterprise includes:
+
+- GitHub Enterprise Support
+- More security, compliance, and deployment controls
+- Authentication with SAML single sign-on
+- Access provisioning with SAML or SCIM
+- GitHub Connect
+- The option to purchase GitHub Advanced Security
 
 ### GitHub Enterprise Cloud
 
-The hosted cloud version of GitHub includes a dramatic increase in GitHub Actions minutes and GitHub Packages storage, per the table below.
+The hosted cloud version of GitHub enterprise includes a dramatic increase in GitHub Actions minutes and GitHub Packages storage.
 
 | Feature | Limit |
 |---|---|
 | GitHub Actions minutes | 50,000 |
 | GitHub Packages storage | 50 GB |
 
-It also comes with a service level agreement of 99.9% monthly uptime, and provides centralize billing options.
+In addition to the increased minutes, you also get the following extra features with GitHub Enterprise Cloud:
 
-### GitHub One
-
-GitHub One extends GitHub Enterprise to offer the GitHub Support Premium Plus plan and GitHub Engineering Direct, providing an escalation path to GitHub's engineering team when significant issues arise.
-
-| Feature | Explanation |
-|---|---|
-| GitHub Insights | A C-suite reporting tool providing visualizations of each team or repository's productivity and collaboration. |
-| Advanced Security |  Find security vulnerabilities and errors in the code for your project on GitHub using a semantic code analysis engine called CodeQL. |
-| GitHub Learning Lab for organizations | Helps developers learn and apply new skills through short, hands-on projects. |
+- Access control for GitHub Pages 
+- A service level agreement for 99.9% monthly uptime
+- Centralize billing options
 
 ## Recap
 
-The key takeaways from this unit:
+In this unit, you covered the following topics:
 
-- There's an intricate relationship between products, account types, teams, repo permissions, and permission levels for organizations and enterprises.
-- As far as products are concerned, there are two basic types of products: free and paid.
-- Free accounts give you basic GitHub features, like unlimited private and public repositories, community-based support, and access to features like GitHub Actions and GitHub Package storage that is limited to public repos.
-- Paid accounts build on the free account features, improved support options, and more GitHub Actions minutes and more GitHub Packages storage that can be used in both private and public repos.
-- Paid accounts also include collaborative features (GitHub Pages, Wikis), control features (Required pull request reviewers, Code owners, protected branches), and insights via reports.
-- GitHub Enterprise and One include more access to support, additional security, compliance, and deployment controls, single sign-on, and more.
-- GitHub One includes C-suite analysis of productivity, better security scanning, and GitHub Learning Lab for organizations.
+- An explanation of the intricate relationship between products and account types.
+- A list of available GitHub products.
+- A summary of product features that are contingent on your product type. Free accounts provide basic GitHub features. Paid accounts build on the free account features with improved support options, and increased GitHub Actions minutes and GitHub Packages storage along with features for collaboration, control, and reporting. 
+- A review of the advanced features included with GitHub Enterprise such as increased access to support, more security, compliance, deployment controls and single sign-on.

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-identity-services.integrate-azure-active-directory-sap-hana
+title: Integrate Azure Active Directory with SAP HANA
+metadata:
+  title: Integrate Azure Active Directory with SAP HANA
+  description: "Integrate Azure Active Directory with SAP HANA"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-integrate-azure-active-directory-sap-hana.md)]

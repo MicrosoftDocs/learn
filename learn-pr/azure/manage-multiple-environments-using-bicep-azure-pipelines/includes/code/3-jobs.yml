@@ -1,0 +1,12 @@
+jobs:
+- job: Job1
+  pool:
+    vmImage: 'windows-latest'
+  steps:
+  - template: script.yml
+
+- job: Job2
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - template: script.yml

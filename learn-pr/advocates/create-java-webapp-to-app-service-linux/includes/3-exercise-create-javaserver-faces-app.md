@@ -290,6 +290,6 @@ $INSTALL_DIR/apache-tomcat-9.0.39/bin/startup.sh
 
 After you start Tomcat, browse to `http://localhost:8080/azure-javaweb-app/` and you'll see the following screen:
 
-:::image type="content" source="../media/javaserver-faces-helloworld.png" alt-text="JSF HelloWorld Page":::
+:::image type="content" source="../media/javaserver-faces-helloworld.png" alt-text="JSF HelloWorld Page.":::
 
 You've successfully run your JSF web application in your local Tomcat environment.

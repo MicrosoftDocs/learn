@@ -21,10 +21,10 @@ Later, you can [check out the installation guide](https://docs.mongodb.com/manua
 
 ## Install MongoDB
 
-Here you'll install MongoDB with just a few commands. You'll work from the SSH connection to the Ubuntu VM that you created in the previous unit.
+Here, you'll install MongoDB with just a few commands. You'll work from the SSH connection to the Ubuntu VM that you created in the previous unit.
 
  > [!NOTE]
- > The update can take up to 10 min.
+ > The update can take up to 10 minutes.
 
 1. First, we'll make sure all current packages are up to date.
 
@@ -41,7 +41,7 @@ Here you'll install MongoDB with just a few commands. You'll work from the SSH c
     sudo apt-get install -y mongodb
     ```
 
-1. Once the installation completes, the service should automatically start up. Let's confirm this by running this command.
+1. After the installation completes, the service should automatically start up. Let's confirm this by running the following command.
 
     ```bash
     sudo systemctl status mongodb

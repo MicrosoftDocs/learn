@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.self-regulation-work-strategically.what-is-self-regulation
+title: What is self-regulated learning?
+metadata:
+  title: What is self-regulated learning?
+  description: In this unit, you'll learn about concepts like metacognition and self-regulation and how you can use those concepts to approach challenges strategically.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-is-self-regulation.md)]

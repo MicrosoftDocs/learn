@@ -17,4 +17,4 @@ Azure SignalR Service has been used in a wide variety of industries, for any app
 - **IoT and connected devices:** real-time IoT metrics, remote control, real-time status, and location tracking.
 - **Automation:** real-time trigger from upstream events.
 
-For your wind turbine use case, the communication layer between the ADT wind turbine data and HoloLens 2 uses the Azure SignalR service and a SignalR client embedded in the HoloLens 2 app.
+For your wind turbine use case, the communication layer between the ADT wind turbine data and your mixed reality device uses the Azure SignalR service and a SignalR client embedded in the mixed reality app.

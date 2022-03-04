@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 01/28/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/11-summary.md)]

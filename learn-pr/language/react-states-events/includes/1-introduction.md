@@ -22,21 +22,24 @@ In this module, you'll:
 
 This module uses a starter project. Clone the project and open it in Visual Studio Code.
 
-1. To get the starter project, run the following steps in a command window or a terminal window. This step clones the repository and opens the starter folder in Visual Studio Code.
+1. To get the starter project, run the following steps in a command window or a terminal window. This step clones the repository and opens the start folder in Visual Studio Code.
 
     ````bash
     # Windows
     git clone https://github.com/MicrosoftDocs/mslearn-react
-    cd mslearn-react\code\3-state-events\starter
+    cd mslearn-react\code\3-state-events\start
     code .
-
+    ````
+   
+    ````bash
     # macOS or Linux
     git clone https://github.com/MicrosoftDocs/mslearn-react
-    cd mslearn-react/code/3-state-events/starter
+    cd mslearn-react/code/3-state-events/start
     code .
     ````
 
 1. In Visual Studio Code, open the integrated terminal by selecting **View** > **Terminal**. Or select **Ctrl+\`**. (On a Mac, select **Cmd+\`**.)
+
 1. In the terminal, run the following code to install the necessary packages and start the development server.
 
     ```bash

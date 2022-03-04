@@ -38,9 +38,12 @@ Delivery Plans adds a new **Plans** tab to Azure Boards. You can create as many 
     * **Name**: _Space Game Delivery Plan_
     * Select the **Backlog items** backlog for the **Space Game Web Team**
     * Add the **Space Game Engine Team's Backlog items** backlog using the **Add team** option
-1. Select **Create**.
+    
+    Both the Web team and the Engine team share a common set of backlog items.
 
-    :::image type="content" source="../media/5-create-delivery-plan.png" alt-text="A screenshot showing the final delivery plan settings. Both the Web team and the Engine team share a common set of backlog items.":::
+    :::image type="content" source="../media/5-create-delivery-plan.png" alt-text="A screenshot showing the final delivery plan settings. ":::
+
+1. Select **Create**.
 
     > [!NOTE]
     > The team project generated for this module uses the *Scrum* process and not the *Basic* process used in other modules in this learning path. While the Basic process uses *Issues*, the Scrum process uses *Backlog items*, which are functionally the same for the purposes of this module. You can use Delivery Plans with either process.
@@ -50,19 +53,19 @@ Delivery Plans adds a new **Plans** tab to Azure Boards. You can create as many 
 Milestone markers can be added to the delivery plan as reference points. These help you plan work within the context of significant or external dates. Let's add a few markers now. To do so:
 
 1. Select your delivery plan.
-1. Select **Settings**, then **Markers**.
+1. In the top right toolbar, select **Settings**, and then, on the **Plan settings** pane, select **Markers**.
 
     :::image type="content" source="../media/5-configure-plan-settings.png" alt-text="Selecting the Markers tab from the delivery plan settings.":::
 
 1. From the **Markers** tab, select **Add marker**.
 1. In the form, enter these fields:
-    * Select a date one week from now
-    * **Label**: **Cliffchella**
-    * **Color**: **Red**
+    * **Date**: Select a date one week from now
+    * **Label**: Cliffchella
+    * **Color**: Red
 
     :::image type="content" source="../media/5-add-marker.png" alt-text="Adding the milestone marker for the Cliffchella event.":::
 
-1. Repeat the process to add markers for:
+1. Repeat the process to add markers with labels, dates, and colors:
     * **Beta**: five weeks from today (blue)
     * **Annual company party**: six weeks from today (green)
 1. Select **Save**.

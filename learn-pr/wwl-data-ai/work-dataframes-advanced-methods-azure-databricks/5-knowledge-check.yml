@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-dataframes-advanced-methods-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which method for renaming a DataFrame's column is incorrect?"
+    choices:
+    - content: "df.select(col(\"timestamp\").alias(\"dateCaptured\"))"
+      isCorrect: false
+      explanation: "This is a valid renaming method."
+    - content: "df.alias(\"timestamp\", \"dateCaptured\")"
+      isCorrect: true
+      explanation: "The DataFrame does not contain an alias method for a column."
+    - content: "df.toDF(\"dateCaptured\")"
+      isCorrect: false
+      explanation: "This is a valid renaming method."
+  - content: "You need to find the average of sales transactions by storefront. Which of the following aggregates would you use?"
+    choices:
+    - content: "df.select(col(\"storefront\")).avg(\"completedTransactions\")"
+      isCorrect: false
+      explanation: "This syntax is incorrect."
+    - content: "df.groupBy(col(\"storefront\")).avg(col(\"completedTransactions\"))"
+      isCorrect: false
+      explanation: "This syntax is incorrect. You would receive an error that Column is not iterable."
+    - content: "df.groupBy(col(\"storefront\")).avg(\"completedTransactions\")"
+      isCorrect: true
+      explanation: "Correct. The syntax shown groups the data by the storefront Column, then calculates the average value of completed sales transactions."

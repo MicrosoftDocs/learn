@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-windows-package-manager-tool.control-group-policy
+title: Control Windows Package Manager with Group Policy
+metadata:
+  title: Control Windows Package Manager with Group Policy
+  description: "Control Windows Package Manager with Group Policy"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-control-group-policy.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Group Policy setting should be configured to prevent users from being able to use Windows Package Manager preview features?"
+    choices:
+    - content: "Enable App Installer Experimental Features"
+      isCorrect: true
+      explanation: "That's correct. This policy controls whether users can enable preview features in Windows Package Manager."
+    - content: "Enable Windows Package Manager Allowed Sources"
+      isCorrect: false
+      explanation: "That's incorrect.  Allowing sources is used to determine where Windows Package Manager finds it's available software."
+    - content: "Enable App Installer Microsoft Store Source"
+      isCorrect: false
+      explanation: "That's incorrect. This controls the Microsoft Store as a source included with Windows Package Manager"

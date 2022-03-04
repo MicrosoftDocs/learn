@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 2 # dummy number at present
+content: |
+  Choose the best response for each question, and then select **Check your answers**.
+quiz:
+  questions:
+  - content: "Azure Sphere is secure by design and secure by default. This means?"
+    choices:
+    - content: "Azure Sphere will connect by default to any safe network endpoints."
+      isCorrect: false
+      explanation: "You must configure the AllowedConnections section in the app_manifest.json file. The application running on Azure Sphere can only connect to network endpoints that are declared in that section. You must declare the test.mosquitto.org endpoint and the Azure IoT Central endpoints so the Altair emulator can connect to these network endpoints."
+    - content: "Azure Sphere can connect only to network endpoints that are defined in the AllowedConnections section of the app_manifest.json file."
+      isCorrect: true
+      explanation: "You must declare the test.mosquitto.org endpoint and the Azure IoT Central endpoints so that the Altair emulator can connect to these network endpoints."
+    - content: "By default, Azure Sphere can connect to any Azure cloud-based service, including Azure IoT Central."
+      isCorrect: false
+      explanation: "The application running on Azure Sphere can connect only to network endpoints that are declared in the AllowedConnections section of the app_manifest.json file. You must declare the test.mosquitto.org endpoint and the Azure IoT Central endpoints so that the Altair emulator can connect to these network endpoints."
+      

@@ -4,11 +4,13 @@ metadata:
   title: Exercise - Create and manage network security groups
   description: Exercise - Create and manage network security groups
   ms.date: 04/25/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: KumudD
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create and manage network security groups
 durationInMinutes: 15
+sandbox: true
+interactive: bash
 content: |
   [!include[](includes/3-exercise-network-security-groups.md)]

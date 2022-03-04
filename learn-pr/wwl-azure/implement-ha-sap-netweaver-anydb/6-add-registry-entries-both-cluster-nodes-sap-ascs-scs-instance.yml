@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ha-sap-netweaver-anydb.add-registry-entries-both-cluster-nodes-of-sap-ascs-scs-instance
+title: Add registry entries on both cluster nodes of the SAP ASCS-SCS instance
+metadata:
+  title: Add registry entries on both cluster nodes of the SAP ASCS-SCS instance
+  description: "Add registry entries on both cluster nodes of the SAP ASCS-SCS instance"
+  ms.date: 10/18/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-add-registry-entries-both-cluster-nodes-sap-ascs-scs-instance.md)]

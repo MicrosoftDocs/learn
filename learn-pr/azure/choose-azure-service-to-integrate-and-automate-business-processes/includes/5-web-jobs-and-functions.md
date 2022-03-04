@@ -17,7 +17,7 @@ You want to build a system that governs the maintenance and repair process and a
 
 You'd like to integrate this system with the bike booking and rental process from the last unit. In doing so, when shop staff search for available bikes, they find only those bicycles that are currently available to rent. Your manager has asked you to be the developer on this project.
 
-## Business Process
+## Business process
 
 You want to ensure that bike technicians on both campuses stick to the following workflow when they maintain a bike following a rental:
 

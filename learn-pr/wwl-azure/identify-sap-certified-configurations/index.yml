@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.identify-sap-certified-configurations
+metadata:
+  title: Identify SAP-certified configurations
+  description: "Help identify prerequisites, deployment options, and SAP-certified configurations available to you when deploying SAP products in Azure.  Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 01/20/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Identify SAP-certified configurations
+summary: Help identify prerequisites, deployment options, and SAP-certified configurations available to you when deploying SAP products in Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore general prerequisites for SAP support in public cloud environments.
+  - Discover SAP certifications and configurations running on Microsoft Azure.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/3-identify-sap-certified-configurations.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.identify-sap-certified-configurations.introduction
+- learn.wwl.identify-sap-certified-configurations.explore-general-prerequisites-for-sap-support-public-cloud-environments
+- learn.wwl.identify-sap-certified-configurations.identify-deployment-options-for-sap-solutions-azure
+- learn.wwl.identify-sap-certified-configurations.discover-supported-azure-virtual-machine-types-for-sap-products-windows-linux
+- learn.wwl.identify-sap-certified-configurations.discover-supported-azure-virtual-machine-types-for-sap-netweaver-ascs-sap-netwea
+- learn.wwl.identify-sap-certified-configurations.discover-operating-systems-for-azure-virtual-machines
+- learn.wwl.identify-sap-certified-configurations.discover-sap-certifications-configurations-running-microsoft-azure
+- learn.wwl.identify-sap-certified-configurations.knowledge-check
+- learn.wwl.identify-sap-certified-configurations.summary
+badge:
+  uid: learn.wwl.identify-sap-certified-configurations.badge

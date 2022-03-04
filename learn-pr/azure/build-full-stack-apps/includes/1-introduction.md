@@ -14,7 +14,7 @@ By the end of this module, you'll be able to build new applications in Azure qui
 
 By the end of this module, you will be able to:
 
-- Create Vue.js web applications using Azure Static Web Apps.
+- Create jQuery web applications using Azure Static Web Apps.
 - Design APIs in any language and integrate them with Azure SQL Database and Azure Static Web Apps.
 - Formulate GitHub Actions to build CI/CD for Azure applications and services.
 

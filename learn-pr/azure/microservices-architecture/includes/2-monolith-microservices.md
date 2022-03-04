@@ -4,7 +4,7 @@ Fabrikam has integrated their new drone service into their existing application.
 
 A monolithic architecture is an architecture where all components for an application are colocated within a single unit. This unit is typically constrained within a single runtime instance of the application. Traditional applications often consist of a web interface, a services layer, and a data layer. In a monolithic architecture, these layers are combined on an instance of the application.
 
-![Logical diagram of a monolithic architecture](../media/2-monolith.svg)
+![Logical diagram of a monolithic architecture.](../media/2-monolith.svg)
 
 Monolithic architectures are often suitable solutions for small applications, but they can become unwieldy as the application grows. What was originally a small application can quickly become a complex system that's difficult to scale, difficult to deploy to, and difficult to innovate on.
 
@@ -21,13 +21,13 @@ These challenges can be addressed by looking at alternative architectures, such 
 
 A microservices architecture consists of services that are small, independent, and loosely coupled. Each service can be deployed and scaled independently.
 
-![Logical diagram of a microservices architecture](../media/2-microservices-logical.svg)
+![Logical diagram of a microservices architecture.](../media/2-microservices-logical.svg)
 
 A microservice is small enough that a single small team of developers can write and maintain it. Because services can be deployed independently, a team can update an existing service without rebuilding and redeploying the entire application.
 
 Each service is typically responsible for its own data. Its data structure is isolated, so upgrades or changes to schema aren't dependent on other services. Requests for data typically are handled through APIs and provide a well-defined and consistent access model. Internal implementation details are hidden from service consumers.
 
-Because each service is independent, they can use different technology stacks, frameworks, and SDKs. It's common to see services rely on REST calls for service-to-service communication by using well-defined APIs instead of RPC or other custom communication methods.
+Because each service is independent, they can use different technology stacks, frameworks, and SDKs. It's common to see services rely on REST calls for service-to-service communication by using well-defined APIs instead of remote procedure calls (RPCs) or other custom communication methods.
 
 Microservice architectures are technology agnostic, but you often see containers or serverless technologies used for their implementation. Continuous deployment and continuous integration (CI/CD) is frequently used to increase the speed and quality of development activities.
 
@@ -58,7 +58,7 @@ Teams can pick the technology that best fits their service. They can use a mix o
 
 #### Resiliency
 
-If an individual microservice becomes unavailable, it won't disrupt the entire application. This is the case as long as any upstream microservices are designed to handle faults correctly. An example is by implementing circuit breaking). The benefit to your end users or service consumers is an always-on experience for your application.
+If an individual microservice becomes unavailable, it won't disrupt the entire application. This is the case as long as any upstream microservices are designed to handle faults correctly. An example is by implementing circuit breaking). The benefit to your users or service consumers is an always-on experience for your application.
 
 #### Scalability
 

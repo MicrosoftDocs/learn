@@ -1,4 +1,4 @@
-## Configure sign in frequency controls using a conditional access policy
+## Configure sign in frequency controls using a Conditional Access policy
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using a Global administrator account.
 
@@ -6,7 +6,7 @@
 
 3. On the Azure Active Directory blade, under **Manage**, select **Security**.
 
-4. On the Security blade, in the left navigation, select **Conditional access**.
+4. On the Security blade, in the left navigation, select **Conditional Access**.
 
 5. On the top menu, select **New policy**.
 
@@ -38,7 +38,7 @@
 17. Under **Enable policy**, select **Report-only**, and then select **Create**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screen image displaying a new conditional access policy with policy settings highlighted](../media/create-session-conditional-access-policy.png)
+    > ![Screen image displaying a new Conditional Access policy with policy settings highlighted](../media/create-session-conditional-access-policy.png)
 
 > [!NOTE]
 > Report-only mode is a new Conditional Access policy state that allows administrators to evaluate the impact of Conditional Access policies before enabling them in their environment. With the release of report-only mode:

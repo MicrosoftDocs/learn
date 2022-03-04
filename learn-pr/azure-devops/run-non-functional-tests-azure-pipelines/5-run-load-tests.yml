@@ -4,9 +4,9 @@ title: Exercise - Run load tests in Azure Pipelines
 metadata:
   title: Exercise - Run load tests in Azure Pipelines
   description: Run a test plan that does load testing by using Apache JMeter.
-  ms.date: 01/21/2020
-  author: tpetchel
-  ms.author: thpetche
+  ms.date: 06/23/2021
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

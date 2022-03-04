@@ -16,8 +16,7 @@ Selecting individual entries may enable additional entries at the top of the rep
 
 Selecting individual entries expands a details window below the detections. The details view allows administrators to investigate and perform actions on each detection.
 
-> [!div class="mx-imgBorder"]
-> ![Example Identity Protection report showing risky sign-ins and details](../media/identity-protection-risky-sign-ins-report.png)
+![Example Identity Protection report showing risky sign-ins and details](../media/identity-protection-risky-sign-ins-report.png)
 
 ### Risky users
 
@@ -265,9 +264,9 @@ To authenticate, send a post request to `https://login.microsoft.com` with the f
 
 - resource: `https://graph.microsoft.com`
 
-- client_id: <your client ID>
+- client_id: \<your client ID\>
 
-- client_secret: <your key>
+- client_secret: \<your key\>
 
 If successful, this request returns an authentication token.To call the API, create a header with the following parameter:
 

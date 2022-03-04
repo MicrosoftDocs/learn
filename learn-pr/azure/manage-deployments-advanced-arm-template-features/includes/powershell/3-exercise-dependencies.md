@@ -88,7 +88,7 @@ Here, you download an ARM template from a GitHub repository that we provide for 
 1. Run the following `curl` command to download the ARM template:
 
     ```bash
-    curl -O 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json'
+    curl -O 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-linux/azuredeploy.json'
     ```
 
 1. Run the `ConvertTo-SecureString` cmdlet, and assign the results to a PowerShell variable named `$secure`:
@@ -109,7 +109,7 @@ Here, you download an ARM template from a GitHub repository that we provide for 
       -adminPasswordOrKey $secure
     ```
 
-    The command can take a few minutes to run. While the command runs, you can [examine the ARM template](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json?azure-portal=true) from a separate browser tab if you'd like.
+    The command can take a few minutes to run. While the command runs, you can [examine the ARM template](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-linux/azuredeploy.json) from a separate browser tab if you'd like.
 
     Note the resource dependencies by searching for the `dependsOn` key. For example, the virtual machine resource depends on the network interface:
 

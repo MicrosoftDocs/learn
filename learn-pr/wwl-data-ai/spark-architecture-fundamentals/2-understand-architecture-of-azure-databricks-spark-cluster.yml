@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spark-architecture-fundamentals.understand-architecture-of-azure-databricks-spark-cluster
+title: Understand the architecture of Azure Databricks spark cluster
+metadata:
+  title: Understand the architecture of Azure Databricks spark cluster
+  description: "Understand the architecture of Azure Databricks spark cluster"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand-architecture-of-azure-databricks-spark-cluster.md)]

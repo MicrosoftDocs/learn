@@ -12,18 +12,18 @@ Your customers can access the Azure Marketplace online store by visiting <https:
 
 |  |
 |---|
-|![Screenshot of the Azure Marketplace apps landing page with emphasis on application categories and filters](..\media\3-azure-marketplace-apps.png)|
+|![Screenshot of the Azure Marketplace apps landing page with emphasis on application categories and filters.](..\media\3-azure-marketplace-apps.png)|
 |*Screenshots of the Azure Marketplace web storefront*|
 
 Because Azure Marketplace is a part of Azure, they can also access these solutions through the Azure portal at <https://portal.azure.com>. Any time Azure users click “Create a resource” on the Azure portal homepage, they’re accessing solutions from Azure Marketplace.
 
 ![Screenshot of the Azure portal homepage with emphasis on "create resource" button](..\media\4-azure-portal-homepage-create-resource.png)
 
-![Screenshot of the Azure portal new resource page Azure Marketplace](..\media\5-azure-marketplace-azure-portal-1.png)
+![Screenshot of the Azure portal new resource page Azure Marketplace.](..\media\5-azure-marketplace-azure-portal-1.png)
 
 |  |
 |---|
-|![Screenshot of Azure Marketplace in Azure portal with emphasis on application categories and filters](..\media\6-azure-marketplace-azure-portal-2.png)|
+|![Screenshot of Azure Marketplace in Azure portal with emphasis on application categories and filters.](..\media\6-azure-marketplace-azure-portal-2.png)|
 |*Screenshots from the in-product version of Azure Marketplace in the Azure portal*|
 
 Both the online store and the Azure portal experiences help customers quickly find, try, buy, and deploy solutions to Azure online in minutes.
@@ -40,7 +40,7 @@ Your customers can access the Microsoft AppSource online store by visiting <http
 
 |  |
 |---|
-|![Screenshot of Microsoft AppSource apps landing page with emphasis on application categories and filters](..\media\8-microsoft-appsource-apps.png)|
+|![Screenshot of Microsoft AppSource apps landing page with emphasis on application categories and filters.](..\media\8-microsoft-appsource-apps.png)|
 |*Screenshots of the Microsoft AppSource online store*|
 
 AppSource apps are also available within Microsoft products by clicking “Get more apps” from the homepage in Dynamics 365, “Get apps” in Power BI, “Apps” in Teams, and “Insert\>Get Add-ins” in Microsoft 365 products (excluding Teams).

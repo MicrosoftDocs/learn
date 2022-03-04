@@ -88,7 +88,7 @@ This branch contains the _Space Game_ project that you worked with in the previo
 
     ```bash
     git fetch upstream unit-tests
-    git checkout -b unit-tests upstream/unit-tests
+    git checkout -B unit-tests upstream/unit-tests
     ```
 
     The format of this command enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch to your GitHub repository, known as `origin`.
@@ -136,7 +136,7 @@ It's a good idea to run all tests locally before you submit any tests to the pip
 
     You see from the output that a TRX file is created in the **TestResults** directory.
 
-    A TRX file is an XML document that contains the results of a test run. It's a popular format for NUnit tests because Visual Studio and other tools can help you visualize the results.
+    A TRX file is an XML document that contains the results of a test run. It's a popular format for test results because Visual Studio and other tools can help you visualize the results.
 
     Later, you'll see how Azure Pipelines can help you visualize and track your tests' results as they run through the pipeline.
 

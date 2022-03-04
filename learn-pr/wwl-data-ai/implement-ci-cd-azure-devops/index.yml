@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.wwl.implement-ci-cd-azure-devops
+metadata:
+  title: Implement CI/CD with Azure DevOps
+  description: "Implement CI/CD with Azure DevOps"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement CI/CD with Azure DevOps
+summary: CI/CID isn't just for developers. Learn how to put Azure Databricks notebooks under version control in an Azure DevOps repo and build deployment pipelines to manage your release process.
+abstract: |
+  In this module, you will:
+  - Learn about CI/CD and how it applies to data engineering.
+  - Use Azure DevOps as a source code repository for Azure Databricks notebooks.
+  - Create build and release pipelines in Azure DevOps to automatically deploy a notebook from a development to a production Azure Databricks workspace.
+prerequisites: |
+  None
+iconUrl: /learn/achievements/implement-ci-cd-azure-devops.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.implement-ci-cd-azure-devops.introduction
+- learn.wwl.implement-ci-cd-azure-devops.describe-ci-cd
+- learn.wwl.implement-ci-cd-azure-devops.create-ci-cd-process
+- learn.wwl.implement-ci-cd-azure-devops.knowledge-check
+- learn.wwl.implement-ci-cd-azure-devops.summary
+badge:
+  uid: learn.wwl.implement-ci-cd-azure-devops.badge

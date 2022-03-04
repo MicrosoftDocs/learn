@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.visual-studio.visual-studio-test-tools.exercise-create-test-suite
+title: Exercise - Create a test suite
+metadata:
+  unitType: learning-content
+  title: Exercise - Create a test suite
+  description: Scale up your test skills with this exercise by building a test suite, filtering, and debugging. Get practice with using the red, green, refactor pattern to write code.
+  author: kendrahavens
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.date: 07/19/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-visual-studio
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-exercise-create-test-suite.md)]

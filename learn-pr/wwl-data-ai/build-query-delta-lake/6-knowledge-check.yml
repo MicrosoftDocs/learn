@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-query-delta-lake.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What is the Databricks Delta command to display metadata?"
+    choices:
+    - content: "MSCK DETAIL *tablename*"
+      isCorrect: false
+      explanation: "Incorrect. MSCK is for repairing tables."
+    - content: "DESCRIBE DETAIL *tableName*"
+      isCorrect: true
+      explanation: "Correct. You display metadata by using DESCRIBE DETAIL *tableName*."
+    - content: "SHOW SCHEMA *tablename*"
+      isCorrect: false
+      explanation: "Incorrect. No such command is available."
+  - content: "How do you perform UPSERT in a Delta dataset?"
+    choices:
+    - content: "Use UPSERT INTO *my-table*"
+      isCorrect: false
+      explanation: "The syntax isn't correct for this operation."
+    - content: "Use UPSERT INTO *my-table* /MERGE"
+      isCorrect: false
+      explanation: "The syntax isn't correct for this operation."
+    - content: "Use MERGE INTO *my-table* USING *data-to-upsert*"
+      isCorrect: true
+      explanation: "That's the correct syntax to perform UPSERT in a Databricks Delta dataset."
+  - content: "What optimization does the following command perform: OPTIMIZE Students ZORDER BY Grade?"
+    choices:
+    - content: "Creates an order-based index on the Grade field to improve filters against that field"
+      isCorrect: false
+      explanation: "Incorrect. ZORDER does not manage indexes."
+    - content: "Ensures that all data backing, for example, Grade=8 is colocated, then updates a graph that routes requests to the appropriate files"
+      isCorrect: false
+      explanation: "Incorrect. While ZORDER colocates data based on values in this field, it does not update a graph to route queries."
+    - content: "Ensures that all data backing, for example, Grade=8 is colocated, then rewrites the sorted data into new Parquet files"
+      isCorrect: true
+      explanation: "Correct. ZOrdering colocates related information in the same set of files."
+  - content: "What size does OPTIMIZE compact small files to?"
+    choices:
+    - content: "Around 100 MB"
+      isCorrect: false
+      explanation: "Incorrect. The Spark optimization team decided on 1 GB for speed and performance."
+    - content: "Around 1 GB"
+      isCorrect: true
+      explanation: "Correct. The Spark optimization team determined this value to be a good compromise between speed and performance."
+    - content: "Around 500 MB"
+      isCorrect: false
+      explanation: "Incorrect. The Spark optimization team decided on 1 GB for speed and performance."

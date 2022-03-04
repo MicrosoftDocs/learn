@@ -9,6 +9,7 @@ metadata:
   ms.date: 04/14/2021
   ms.topic: interactive-tutorial
   ms.prod: azure
+  ms.custom: team=nextgen
 durationInMinutes: 5
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/computer-vision-pytorch/7-mobilenet.ipynb
+notebook: notebooks/7-mobilenet.ipynb

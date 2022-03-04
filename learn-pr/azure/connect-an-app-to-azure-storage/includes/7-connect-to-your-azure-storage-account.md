@@ -45,7 +45,7 @@ Access keys are critical to providing access to your storage account, and as a r
 Typically, storage account connectivity information is stored within an environment variable, database, or configuration file.
 
 > [!IMPORTANT]
-> It is important to note that storing this information in a configuration file can be dangerous if you include that file in source control and store it in a public repository. This is a common mistake and means that anyone can browse your source code in the public repository and see your storage account connection information.
+> Storing this information in a configuration file can be dangerous if you include that file in source control and store it in a public repository. This is a common mistake, and means that anyone can browse your source code in the public repository and see your storage account connection information.
 
 Each storage account has two access keys. The reason for this is to allow keys to be rotated (regenerated) periodically as part of security best practice in keeping your storage account secure. This process can be done from the Azure portal or the Azure CLI/PowerShell command line tool.
 

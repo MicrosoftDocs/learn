@@ -24,7 +24,7 @@ Contoso's network operations manager confirms the problem. It's that the company
 
 Azure Cosmos DB supports 99.999 percent uptime. You can invoke a regional failover by using programing or the Azure portal. An Azure Cosmos DB database will automatically fail over if there's a regional disaster. 
 
-By using multimaster replication in Azure Cosmos DB, you can often achieve a response time of less than one second from anywhere in the world. Azure Cosmos DB is guaranteed to achieve a response time of less than 10 ms for reads and writes.
+By using multimaster replication, Azure Cosmos DB is guaranteed to achieve a response time of less than 10 ms for reads and writes.
 
 To maintain the consistency of the data in Azure Cosmos DB, your engineering team should introduce a new set of consistency levels that address the unique challenges of planet-scale solutions. Consistency levels include strong, bounded staleness, session, consistent prefix, and eventual.
 
@@ -40,4 +40,4 @@ As a data engineer, you can create stored procedures, triggers, and user-defined
 
 Azure Cosmos DB supports data encryption, IP firewall configurations, and access from virtual networks. Data is encrypted automatically. User authentication is based on tokens, and Azure Active Directory provides role-based security. 
 
-Azure Cosmos DB meets many security compliance certifications, including HIPAA, FedRAMP, SOCS, and HITRUST.
+Azure Cosmos DB meets many security compliance certifications, including HIPAA, FedRAMP, SOX, and HITRUST.

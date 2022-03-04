@@ -41,6 +41,7 @@ To create and run a script:
 
    > [!NOTE]
    > Before you run the script, ensure the current shell is PowerShell. Alternatively, on Linux or macOS, you can put a shebang at the top of the script file to define PowerShell as the script interpreter.
+
    ```bash
    ./PI.ps1
    ```
@@ -59,6 +60,7 @@ You can manage execution policy by using these cmdlets:
    > There are other values you can use. To learn more, see [About execution policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies?preserve-view=true&view=powershell-7.1).
   
 ## Variables
+
 Variables aren't just for scripts. You can also define them on the console. You store values in variables so you can use them later. To define a variable, precede it with the `$` character. Here's an example:
 
 ```powershell
@@ -83,7 +85,7 @@ When you output text via `Write-Host` or `Write-Output`, you use single or doubl
    Write-Host "Here is `$PI and its value is $PI" # Prints Here is $PI and its value is 3.14
    ```
 
-   There are two things going on here. The back tick (\`) lets you escape what would be an interpolation of the first instance of `$P1`. In the second instance, the value is interpolated and is written out.  
+   There are two things going on here. The back tick (\`) lets you escape what would be an interpolation of the first instance of `$PI`. In the second instance, the value is interpolated and is written out.  
 
 - `$()`. You can also write an expression within double quotation marks. To do that, use the `$()` construct. One way to use this construct is to interpolate properties of objects. Here's an example:
 

@@ -5,7 +5,7 @@ A problem arises when an instruction that is both sensitive and unprivileged is 
 
 The challenge is constructing a hypervisor in the presence of critical instructions. It can be done, but Smith and Nair<sup>[2][^2]</sup> distinguish between a hypervisor that complies with Popek and Goldberg's theorem and one that does not comply by referring to the former as a **true** or an **efficient** hypervisor and to the latter simply as a hypervisor.
 
-![Instructions that don't satisfy Popek and Goldberg's theorem are called critical instructions](../media/critical-instruction.png)
+![Instructions that don't satisfy Popek and Goldberg's theorem are called critical instructions.](../media/critical-instruction.png)
 
 _Figure 4: Instructions that don't satisfy Popek and Goldberg's theorem are called critical instructions_
 

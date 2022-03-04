@@ -42,7 +42,7 @@ You can configure each DNS zone with security settings for dynamic updates. For 
 There are many Windows PowerShell cmdlets that you can use to manage DNS zones. The following table lists some of the cmdlets that you can use.
 
 | Cmdlet                       | Description                                        |
-| - | -- |
+| ---------------------------- | -------------------------------------------------- |
 | Add-DnsServerPrimaryZone     | Create a primary DNS zone                          |
 | Add-DnsServerSecondaryZone   | Create a secondary DNS zone                        |
 | Get-DnsServerZone            | View configuration information for a DNS zone      |
@@ -63,7 +63,7 @@ When you create resource records to support a specific service or app, you can m
 You can create resource records by using DNS manager, Windows Admin Center, or Windows PowerShell. The following table lists some Windows PowerShell cmdlets that you can use to create DNS resource records.
 
 | Cmdlet                           | Description                                    |
-| -- | - |
+| -------------------------------- | ---------------------------------------------- |
 | Add-DnsServerResourceRecord      | Creates any resource record, specified by type |
 | Add-DnsServerResourceRecordA     | Creates a host (A) resource record             |
 | Add-DnsServerResourceRecordAAAA  | Creates a host (AAAA) resource record          |
@@ -105,4 +105,10 @@ The following video demonstrates how to implement, create, and manage DNS zones 
 6. In the new zone, create a new host record.
 7. Open **Windows PowerShell**, and using the `Resolve-DnsName` cmdlet, verify name resolution is successful for the new record in the new zone.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MjvL]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MjvL]
+
+---
+
+
+
+---

@@ -33,6 +33,6 @@ WSL Config (`wslconfig.exe`) is a command-line tool for managing Linux distribut
 
 The Visual Studio Code Remote - WSL extension keeps track of the Linux distributions you have installed. When you reopen a folder in WSL (**Remote-WSL:Reopen Folder in WSL**) or open a new Window with the **Remote-WSL: New Window using Distro**, you see a picker with the available distros listed.
 
-![Linux distro picker](../media/distro-picker.png)
+![Linux distro picker.](../media/distro-picker.png)
 
 This lets you quickly switch distros without needing to set a new default with `wslconfig.exe`.

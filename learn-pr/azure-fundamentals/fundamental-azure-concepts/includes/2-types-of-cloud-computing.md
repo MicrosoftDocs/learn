@@ -4,7 +4,7 @@ There are three deployment models for cloud computing: *public cloud*, *private 
 
 :::row:::
   :::column:::
-    **Deployment model**
+     **Deployment model** 
   :::column-end:::
   :::column:::
     **Description**

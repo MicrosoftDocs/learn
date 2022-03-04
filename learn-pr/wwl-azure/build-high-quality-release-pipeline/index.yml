@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.build-high-quality-release-pipeline
+metadata:
+  title: Build a high-quality release pipeline
+  description: "Build a high-quality release pipeline"
+  ms.date: 02/25/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a high-quality release pipeline
+summary: This module explores how you can create high-quality release pipelines, measure the quality of your release process, and detail release gates for quality purposes. You will examine release management tools and details about them.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Differentiate between a release and a deployment
+  *   Classify a release versus a release process, and outline how to control the quality of both
+  *   Describe the principle of release gates and how to deal with release notes and documentation
+  *   Choose a release management tool
+prerequisites: |
+  None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.build-high-quality-release-pipeline.introduction
+- learn.wwl.build-high-quality-release-pipeline.understand-release-process-versus-release
+- learn.wwl.build-high-quality-release-pipeline.explore-how-to-measure-quality-of-your-release-process
+- learn.wwl.build-high-quality-release-pipeline.use-release-gates-to-protect-quality
+- learn.wwl.build-high-quality-release-pipeline.examine-release-notes-documentation
+- learn.wwl.build-high-quality-release-pipeline.examine-considerations-for-choosing-release-management-tools
+- learn.wwl.build-high-quality-release-pipeline.explore-common-release-management-tools
+- learn.wwl.build-high-quality-release-pipeline.knowledge-check
+- learn.wwl.build-high-quality-release-pipeline.summary
+badge:
+  uid: learn.wwl.build-high-quality-release-pipeline.badge

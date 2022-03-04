@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.create-git-project.exercise-start-project
+title: Exercise - Start a project
+metadata:
+  title:  Exercise - Start a project
+  description: Add a file to Git and make your first commit.
+  author: mshumba
+  ms.author: chnoring
+  ms.date: 10/08/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ms.custom: team=nextgen
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-exercise-start-project.md)]

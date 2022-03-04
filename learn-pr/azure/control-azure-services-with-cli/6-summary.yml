@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: dbradish-microsoft
+  ms.author: dbradish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -18,9 +18,9 @@ quiz:
 
   - content: "What do you need to install on your machine to let you execute Azure CLI commands locally?"
     choices:
-    - content: "The Azure cloud shell"
+    - content: "The Azure Cloud Shell"
       isCorrect: false
-      explanation: "The cloud shell does let you execute Azure CLI commands; however, you use the Cloud Shell in a browser, so you are not running the commands on your local machine."
+      explanation: "The Cloud Shell does let you execute Azure CLI commands; however, you use the Cloud Shell in a browser, so you are not running the commands on your local machine."
     - content: "The Azure CLI and Azure PowerShell"
       isCorrect: false
       explanation: "You can run CLI commands from a PowerShell prompt; however, PowerShell is not required to run the CLI locally."
@@ -37,7 +37,7 @@ quiz:
       isCorrect: false
       explanation: "The CLI provides the same set of commands everywhere it is available."
 
-  - content: "Which parameter can you add to most CLI commands to get concise, formatted output?"
+  - content: "Which parameter value can you add to most CLI commands to get concise, formatted output?"
     choices:
     - content: "list"
       isCorrect: false

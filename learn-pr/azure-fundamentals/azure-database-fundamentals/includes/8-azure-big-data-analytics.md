@@ -18,7 +18,7 @@ Open-source cluster technologies have been developed, over time, to try to deal 
 
 **Azure Synapse Analytics**
 
-[Azure Synapse Analytics](/azure/sql-data-warehouse/?azure-portal=true) (formerly Azure SQL Data Warehouse) is a limitless analytics service that brings together enterprise data warehousing and big data analytics. You can query data on your terms by using either serverless or provisioned resources at scale. You have a unified experience to ingest, prepare, manage, and serve data for immediate BI and machine learning needs.
+[Azure Synapse Analytics](/azure/sql-data-warehouse/?azure-portal=true) (formerly Azure SQL Data Warehouse) is a limitless analytics service that brings together enterprise data warehousing and big data analytics. You can query data on your terms by using either serverless or provisioned resources at scale. You have a unified experience to ingest, prepare, manage, and serve data for immediate business intelligence and machine learning needs.
 
 
   :::column-end:::

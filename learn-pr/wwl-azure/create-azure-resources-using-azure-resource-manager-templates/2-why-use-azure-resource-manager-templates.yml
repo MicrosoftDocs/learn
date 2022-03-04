@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.why-use-azure-resource-manager-templates
+title: Why use Azure Resource Manager templates?
+metadata:
+  title: Why use Azure Resource Manager templates?
+  description: "Why use Azure Resource Manager templates?"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-why-use-azure-resource-manager-templates.md)]

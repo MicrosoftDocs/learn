@@ -167,4 +167,4 @@ You should test this functionality:
 - Add players to the court, and then move them all back to the bench.
 - Make sure that the average PER for players on the court is accurate depending on the stats for the players for a specific quarter.
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2021 Warner Bros. Ent. All Rights Reserved

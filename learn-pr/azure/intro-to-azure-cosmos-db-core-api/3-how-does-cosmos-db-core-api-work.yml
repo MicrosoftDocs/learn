@@ -3,8 +3,7 @@ uid: learn.azure.intro-to-azure-cosmos-db-core-api.3-how-does-cosmos-db-core-api
 title: How does Azure Cosmos DB SQL API work? 
 metadata:
   title: How does Azure Cosmos DB SQL API work?
-  description: >
-    Understand the resource model for Azure Cosmos DB SQL API and how the platform automatically partitions data
+  description: Understand the resource model for Azure Cosmos DB SQL API and how the platform automatically partitions data.
   ms.date: 05/01/2021
   author: GaryHopeMS
   ms.author: garyhope

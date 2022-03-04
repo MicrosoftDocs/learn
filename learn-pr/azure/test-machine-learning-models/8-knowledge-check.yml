@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.test-machine-learning-models.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 05/25/2021
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'What is a benefit of normalizing data?'
+    choices:
+    - content: "Faster training times"
+      isCorrect: true
+      explanation: "Correct. Training time is often faster when data is normalized."
+    - content: "More accurate removal of missing values"
+      isCorrect: false
+      explanation: "Incorrect. Removal of missing values isn’t handled during normalization."
+    - content: "Identification of preferential algorithms for training"
+      isCorrect: false
+      explanation: "Incorrect. Normalizing data helps with training, but not with identification of algorithms."
+  - content: 'A model you are training performs well on your training set, but poorly on your test set. What is likely happening?'
+    choices:
+    - content: "Underfitting has occurred, and your model isn’t accurate enough- you should keep training"
+      isCorrect: false
+      explanation: "Incorrect. Continuing to train your model, when you already have good performance on your training set, won't improve your performance. You need to find ways to improve performance on your test set."
+    - content: "Overfitting has occurred, and your model isn’t performing well on new data outside training – you could stop training earlier, or gather more diverse data"
+      isCorrect: true
+      explanation: "Correct. Overfitting has likely occurred, and you can adjust your training to improve performance on your test set. You should consider if you need more diverse training data, or if you're training for too long."
+    - content: "Your model is fine – you need to use your training data to test your model instead."
+      isCorrect: false
+      explanation: "Incorrect. Your model needs to improve performance on your test data, you shouldn't replace the test data with your training data."
+  - content: 'Your model is to be used in a challenging application, where you’re required to have very reliable performance. What is an appropriate method to test your models reliability in difficult situations?'
+    choices:
+    - content: "Create a larger training set"
+      isCorrect: false
+      explanation: "Incorrect. While creating a larger training set could help with increasing model performance, you should look at testing your model in other ways to ensure you meet performance thresholds."
+    - content: "Use the hold-out approach and create a third, special dataset that’s curated to include examples where your models output needs to meet performance thresholds."
+      isCorrect: true
+      explanation: "Correct. You can better test your models reliability in difficult situations with a third dataset, that’s specifically curated to measure reliability for your application."
+    - content: "Keep a keen eye on your cost as you train – any variability and you can stop training."
+      isCorrect: false
+      explanation: "Incorrect. While keeping an eye on your cost during training can help prevent overfitting, you need to look for other ways to test your models reliability."

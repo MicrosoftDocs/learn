@@ -5,9 +5,10 @@ metadata:
   description: "This module helps learner to deploy object detection solution using Live Video Analytics on IoT Edge."
   ms.date: 4/27/2021
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
+  ms.custom: team=nextgen
 title: "Object detection on Edge devices with Live Video Analytics using YOLO model"
 summary: "Use a Live Video Analytics module to deploy a machine learning solution to an IoT Edge device. The solution will process a video feed from cameras and detect objects at the edge using a YOLO model to perform inferencing operations. Check that the solution is successfully deployed and test your solution from a web application."
 abstract: |

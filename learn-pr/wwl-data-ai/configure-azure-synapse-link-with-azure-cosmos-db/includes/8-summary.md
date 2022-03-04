@@ -7,3 +7,5 @@ In this module, you have:
 - Implemented Synapse Link for Cosmos DB
 - Validated connectivity from Spark
 - Validated connectivity from SQL Serverless 
+
+The official technical documentation supporting this module can be found [here](/azure/cosmos-db/configure-synapse-link)

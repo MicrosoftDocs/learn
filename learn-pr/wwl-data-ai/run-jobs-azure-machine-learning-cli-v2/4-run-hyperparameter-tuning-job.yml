@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-jobs-azure-machine-learning-cli-v2.run-hyperparameter-tuning-job
+title: Run a hyperparameter tuning job with CLI (v2)
+metadata:
+  title: Run a hyperparameter tuning job with CLI (v2)
+  description: "Run a hyperparameter tuning job with CLI (v2)"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-run-hyperparameter-tuning-job.md)]

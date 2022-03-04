@@ -6,7 +6,7 @@ Here, you'll learn about the issues you can face with concurrency when using Blo
 
 ## Last writer wins
 
-![text](../media/last-writer-wins.png)
+![text.](../media/last-writer-wins.png)
 
 Last writer wins is the name given to the approach when no consideration has been given to concurrency. As the name implies, whoever makes changes most recently overwrites previous changes. The results of operations are unpredictable and can lead to data loss. When the last writer wins, there's no control over who reads or writes data. The last person to save their changes to a file has them reflected in that data. Anything that has happened to the storage before is overwritten. For example, a user may start editing a document. While that user is editing, a second user edits the same document and commits their changes. When the first user saves their changes, the second user's edits are overwritten and lost, because the first user was starting from a copy of the document without the second user's changes.
 

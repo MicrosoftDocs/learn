@@ -14,7 +14,7 @@ Before you can examine your Azure resources with the Azure Explorer, you must cr
 
 1. In the list of archetypes, select **maven-archetype-webapp**, and then select **Next**.
 
-    ![Select an archetype](../media/3-select-archetype.png)
+    ![Select an archetype.](../media/3-select-archetype.png)
 
 1. Type **webapp** in the **Name** textbox, then click **Next**.
 

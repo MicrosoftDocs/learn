@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.windows-server-update-management.wsus-server-deployment-options
+title: Outline Windows Server Update Services server deployment options
+metadata:
+  title: Outline Windows Server Update Services server deployment options
+  description: "Outline Windows Server Update Services server deployment options"
+  ms.date: 12/14/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-outline-windows-server-update-services-server-deployment-options.md)]

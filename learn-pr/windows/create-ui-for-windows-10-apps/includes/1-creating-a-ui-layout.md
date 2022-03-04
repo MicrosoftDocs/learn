@@ -1,4 +1,4 @@
-![Tech logo](../media/tech-all.png)
+![Tech logo.](../media/tech-all.png)
 
 ## Create a UI layout
 
@@ -23,13 +23,13 @@ Now let's get started.
 
 ::: zone pivot="uwp"
 
-![Tech logo](../media/tech-uwp.png)
+![Tech logo.](../media/tech-uwp.png)
 
 #### Create a new project
 
 With Visual Studio open, create a Universal Windows Platform (UWP) C# project. Give the project a meaningful name for this lesson. An example is **UsingLayoutsApp.Uwp**.
 
-![Create the project](../media/new-project-uwp.png)
+![Create the project.](../media/new-project-uwp.png)
 
 #### The Grid layout control
 
@@ -79,7 +79,7 @@ To see the distinction between the parent and child, set the **Margin** and **Ba
 
 Now the `Grid` has a gray background and a 100-pixel margin around it.
 
-![Grid inside a Page](../media/uwp-page-grid.png)
+![Grid inside a Page.](../media/uwp-page-grid.png)
 
 We know the `Grid` is on top of the `Page` because we see all the gray color. A child element gets placed on top of a parent element. It's like placing a gray piece of paper on top of a white table.
 
@@ -110,7 +110,7 @@ To see how the `Grid` contains many children, add three `Rectangle` elements to 
 
 Now you see three `Rectangle` elements inside the `Grid`. Each is positioned horizontally according to its **HorizontalAlignment** value.
 
-![Grid with three rectangles](../media/uwp-grid-three-rectangles.png)
+![Grid with three rectangles.](../media/uwp-grid-three-rectangles.png)
 
 
 Notice how the blue and green rectangles on the edges don't go outside of the `Grid` into the white area where the `Page` is. This layout is the **critical element of the parent-child relationship**. The `Rectangle` elements are children of the `Grid`. And the `Grid` is the child of the `Page`.
@@ -146,7 +146,7 @@ We set the **RowDefinitions** property differently than we set **Margin** becaus
 
 In the designer, you now see a horizontal line that goes through the middle of the `Grid`. This line shows that we have two rows: one on top and one on the bottom.
 
-![RowDefinitons in a Grid](../media/uwp-rowdefinitions.png)
+![RowDefinitons in a Grid.](../media/uwp-rowdefinitions.png)
 
 > [!NOTE]
 > If you don't see the line, put your cursor anywhere inside the `<Grid></Grid>` tags in the XAML code editor. This action quickly selects the `Grid` in the designer for you.
@@ -179,7 +179,7 @@ What about columns? It's the same approach but with the **ColumnDefinitions** pr
 
 As with the rows, there's now a vertical line that goes up the middle of the `Grid`. It defines two columns: one on the left and one on the right.
 
-![ColumnDefinitions in a Grid](../media/uwp-columndefinitions.png)
+![ColumnDefinitions in a Grid.](../media/uwp-columndefinitions.png)
 
 > [!NOTE]
 > If you need more room in the code editor or the designer, you can zoom out either one. Select and hold the Ctrl key and scroll at the same time.
@@ -244,7 +244,7 @@ Let's add another `Rectangle`. This time, we set the **Fill** to *Red* and the *
 </Page>
 ```
 
-![Rectangles in Grid rows](../media/uwp-row-rectangles.png)
+![Rectangles in Grid rows.](../media/uwp-row-rectangles.png)
 
 
 Now what about the columns? Set them the same way that you set the rows. Add two more `Rectangle`s and set the **Grid.Column** property:
@@ -280,7 +280,7 @@ Now what about the columns? Set them the same way that you set the rows. Add two
     </Grid>
 </Page>
 ```
-![Rectangles in Grid columns and rows](../media/uwp-row-column-rectangles.png)
+![Rectangles in Grid columns and rows.](../media/uwp-row-column-rectangles.png)
 
 > [!NOTE]
 > Remember that `Grid.Row="0"` and `Grid.Column="0"` are the default values for any child of the `Grid`. You can choose to set these values or leave them out.
@@ -332,7 +332,7 @@ Let's try an autosized row to see this option in action. Modify the last demo by
 </Page>
 ```
 
-![Grid with an autosized row](../media/uwp-auto-sized-row.png)
+![Grid with an autosized row.](../media/uwp-auto-sized-row.png)
 
 You see the first row squeezed to the minimum amount of space. It's the height of the content in that row. The second row fills up the rest of the available space as it's still star sized. Remember that you don't have to enter **Height=**. That's the default value.
 
@@ -372,7 +372,7 @@ Autosize can be done with columns. But instead of **Height**, you set **Width**.
 
 Now the first column is as small as it can possibly be. It's only as wide as the content. The second column fills the rest of the available area.
 
-![Grid with autosized column](../media/uwp-auto-sized-column.png)
+![Grid with autosized column.](../media/uwp-auto-sized-column.png)
 
 We're almost done with this unit. Before we move on, we briefly touch on one of the most used simple layouts, the `StackPanel`.
 
@@ -420,7 +420,7 @@ We use the same four rectangles from the last exercise. But this time, we put th
 
 The default stacking strategy for a `StackPanel` is **Vertical**. So you see the two rectangles stacked together vertically.
 
-![Vertical StackPanel](../media/uwp-stackpanel-vertical.png)
+![Vertical StackPanel.](../media/uwp-stackpanel-vertical.png)
 
 You can also stack items horizontally. Set the **Orientation** property of the `StackPanel` to *Horizontal*:
 
@@ -457,7 +457,7 @@ You can also stack items horizontally. Set the **Orientation** property of the `
     </Grid>
 </Page>
 ```
-![Horizontal StackPanel](../media/uwp-stackpanel-horizontal.png)
+![Horizontal StackPanel.](../media/uwp-stackpanel-horizontal.png)
 
 
 In the next unit, we put these layouts to use. We add commonly used controls like `TextBlock` and `Button` and position them around the UI.
@@ -466,13 +466,13 @@ In the next unit, we put these layouts to use. We add commonly used controls lik
 
 ::: zone pivot="wpf"
 
-![Tech logo](../media/tech-wpf.png)
+![Tech logo.](../media/tech-wpf.png)
 
 #### Create a new project
 
 With Visual Studio open, create a WPF C# project. Give the project a meaningful name for this lesson. An example is  **UsingLayoutsApp.Wpf**.
 
-![Create the project](../media/new-project-wpf.png)
+![Create the project.](../media/new-project-wpf.png)
 
 #### The Grid layout control
 
@@ -520,7 +520,7 @@ To see the distinction between the parent and child, set the **Margin** and **Ba
 
 Now the `Grid` has a gray background and a 100-pixel margin all around.
 
-![Grid inside the Page](../media/wpf-window-grid.png)
+![Grid inside the Page.](../media/wpf-window-grid.png)
 
 We know the `Grid` is on top of the `Window` because we see all the gray color. A child element gets placed on top of a parent element. It's like placing a gray piece of paper on top of a white table.
 
@@ -550,7 +550,7 @@ To see how the `Grid` contains many children, add three `Rectangle` elements to 
 
 Now you see three rectangles inside the `Grid`. Each is positioned horizontally according to its **HorizontalAlignment** value.
 
-![Grid with three rectangles](../media/wpf-grid-three-rectangles.png)
+![Grid with three rectangles.](../media/wpf-grid-three-rectangles.png)
 
 Notice how the rectangles don't go outside of the `Grid` into the white area where the `Window` is. This layout is the **critical element of the parent-child relationship**. The `Rectangle` elements are the children of the `Grid`. And the `Grid` is the child of the `Window`.
 
@@ -584,7 +584,7 @@ Let's start fresh with an empty `Grid`. Then add two rows by using the **RowDefi
 
 In the designer, you now see a horizontal line that goes through the middle of the `Grid`. This line shows that we have two rows: one on top and one on the bottom.
 
-![RowDefinitons in a Grid](../media/wpf-rowdefinitions.png)
+![RowDefinitons in a Grid.](../media/wpf-rowdefinitions.png)
 
 > [!NOTE]
 > If you don't see the line, put your cursor anywhere inside the `<Grid></Grid>` tags in the XAML code editor. This action quickly selects the `Grid` in the designer for you.
@@ -615,7 +615,7 @@ What about columns? It's the same approach but with the **ColumnDefinitions** pr
 
 As with the rows, there's now a vertical line that goes up the middle of the `Grid`. It defines two columns: one on the left and one on the right.
 
-![ColumnDefinitions in a Grid](../media/wpf-columndefinitions.png)
+![ColumnDefinitions in a Grid.](../media/wpf-columndefinitions.png)
 
 > [!NOTE]
 > If you need more room in the code editor or the designer, you can zoom out either one. Select and hold the Ctrl key and scroll at the same time. There's also a drop-down menu at the bottom-left corner with the current zoom level.
@@ -676,7 +676,7 @@ Let's add another `Rectangle`. This time, we set the **Fill** to *Red* and the *
 </Window>
 ```
 
-![Rectangles in Grid rows](../media/wpf-row-rectangles.png)
+![Rectangles in Grid rows.](../media/wpf-row-rectangles.png)
 
 
 Now what about the columns? Set them the same way that you set the rows. Add two more `Rectangle` elements and set the **Grid.Column** property:
@@ -708,7 +708,7 @@ Now what about the columns? Set them the same way that you set the rows. Add two
 </Window>
 ```
 
-![Rectangles in Grid columns and rows](../media/wpf-row-column-rectangles.png)
+![Rectangles in Grid columns and rows.](../media/wpf-row-column-rectangles.png)
 
 > Remember that `Grid.Row="0"` and `Grid.Column="0"` are the default values for any child of the `Grid`. You can choose to set them or leave them out.
 
@@ -759,7 +759,7 @@ Let's try an autosized row to see this option in action. Modify the last demo as
 
 You see the first row squeezed to the minimum amount of space. It's the height of the content in that row, the rectangles. The second row fills up the rest of the available space as it's still star sized. Remember that you don't have to enter **Height=**. That's the default value.
 
-![Grid with autosized row](../media/wpf-auto-sized-row.png)
+![Grid with autosized row.](../media/wpf-auto-sized-row.png)
 
 Autosize can be done with columns. But instead of **Height**, you set the **Width**. Set the **Width** of the first `ColumnDefinition` to *Auto*:
 
@@ -793,7 +793,7 @@ Autosize can be done with columns. But instead of **Height**, you set the **Widt
 
 Now the first column is as small as it can possibly be. It's only as wide as the content. And the second column fills the rest of the available area.
 
-![Grid with autosized column](../media/wpf-auto-sized-column.png)
+![Grid with autosized column.](../media/wpf-auto-sized-column.png)
 
 We're almost done with this unit. Before we move on, we briefly touch on one of the most used simple layouts, the `StackPanel`.
 
@@ -838,7 +838,7 @@ We use the same four rectangles from the last exercise. But this time, we put th
 
 The default stacking strategy for a `StackPanel` is **Vertical**. So you see the two rectangles stacked together vertically.
 
-![Vertical StackPanel](../media/wpf-stackpanel-vertical.png)
+![Vertical StackPanel.](../media/wpf-stackpanel-vertical.png)
 
 You can also stack items horizontally. Set the **Orientation** property of the `StackPanel` to *Horizontal*:
 
@@ -872,7 +872,7 @@ You can also stack items horizontally. Set the **Orientation** property of the `
     </Grid>
 </Window>
 ```
-![Horizontal StackPanel](../media/uwp-stackpanel-horizontal.png)
+![Horizontal StackPanel.](../media/uwp-stackpanel-horizontal.png)
 
 
 In the next unit, we put these layouts to use. We add commonly used controls like `TextBlock` and `Button` and position them around the UI.

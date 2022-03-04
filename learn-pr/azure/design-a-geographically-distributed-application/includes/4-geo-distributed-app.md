@@ -4,7 +4,7 @@ Recall from earlier that we'll configure Azure Front Door with priority back-end
 
 Here, we'll learn about Active Directory, static content storage, web apps, web APIs, queues, Azure functions, and data caches in a multi-region architecture.
 
-![A diagram showing a multi-region architecture app services](../media/4-multi-region-web-app-services.png)
+![A diagram showing a multi-region architecture app services.](../media/4-multi-region-web-app-services.png)
 
 ## Azure Active Directory
 

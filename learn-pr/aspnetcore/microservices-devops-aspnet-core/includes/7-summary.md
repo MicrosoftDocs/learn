@@ -32,7 +32,7 @@ The preceding script:
   - Containing the string `eshop-learn-sp` in the display name.
 - Uses the `az ad sp delete` Azure CLI command to remove each matching service principal.
 
-[!INCLUDE[revert the .NET Core SDK changes](../../includes/microservices/revert-dotnet-sdk-changes.md)]
+[!INCLUDE[revert the .NET SDK changes](../../includes/microservices/revert-dotnet-sdk-changes.md)]
 
 [!INCLUDE[download files](../../includes/summary-download-cloud-drive.md)]
 

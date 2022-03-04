@@ -26,7 +26,7 @@ This is a classic architectural style, but in many scenarios it has been superse
 
 There are several things you should do to ensure your N-tier architecture runs at its best. The following diagram shows visually how you can make improvements to an N-tier architecture.
 
-![Visualization of N-tier architecture](../media/4-n-tier-logical.svg)
+![Visualization of N-tier architecture.](../media/4-n-tier-logical.svg)
 
 ### Optimize performance
 

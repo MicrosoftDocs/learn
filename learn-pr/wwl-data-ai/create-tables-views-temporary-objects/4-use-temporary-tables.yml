@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-tables-views-temporary-objects.use-temporary-tables
+title: Use temporary tables
+metadata:
+  title: Use temporary tables
+  description: "Use temporary tables"
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-use-temporary-tables.md)]

@@ -47,6 +47,8 @@ Azure NetApp Files offers the widest choice of file protocols among public cloud
 - SMB 2.x
 - SMB 3.x
 
+Azure NetApp Files already supports dual-protocol access to NFSv3 and SMB volumes as of July 2020. You can now create an Azure NetApp Files volume that allows simultaneous dual-protocol (NFSv4.1 and SMB) access with support for LDAP user mapping. This feature enables use cases where you might have a Linux-based workload using NFSv4.1 for its access, and the workload generates and stores data in an Azure NetApp Files volume.
+
 Azure NetApp Files also supports creating volumes that can use both NFS 3.0 and SMB at the same time. Using both protocols on a volume enables both Linux-based and Windows-based enterprise applications that rely on file-based datasets to simultaneously access and share that data.
 
 ## Data management
@@ -78,6 +80,10 @@ You can create up to 255 snapshots per volume. Creating a snapshot doesn't impac
 
 - Manual. Create on-demand snapshots by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
 - Automatic. Automate snapshot creation by using snapshot policies or a snapshot tool, such as AzAcSnap. You can set up snapshot policies by using the Azure portal, Azure CLI, Azure PowerShell, or Azure REST API.
+
+### Cross-region Replication
+
+Azure NetApp Files replication functionality provides data protection through cross-region volume replication. You can asynchronously replicate data from an Azure NetApp Files volume (source) in one region to another Azure NetApp Files volume (destination) in another region. This capability enables you to failover your critical application in case of a region-wide outage or disaster.
 
 ### Data recovery
 

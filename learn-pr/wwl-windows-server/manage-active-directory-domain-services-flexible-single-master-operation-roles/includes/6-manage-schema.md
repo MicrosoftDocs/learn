@@ -30,3 +30,7 @@ When managing the AD DS schema, you can modify the schema only if you are a memb
 You should change the schema only when necessary because the schema controls the storage of information. Additionally, any changes made to the schema affect every domain controller. Before you change the schema, you should review the changes and implement them only after you've performed testing. This will help ensure that the changes Won't adversely affect the rest of the forest or any applications that use AD DS.
 
 :::image type="content" source="../media/m7-update-schema.png" alt-text="Context menu for the schema container in the navigation pane of the ADSI Edit console. The Update Schema Now option is selected.":::
+
+
+
+---

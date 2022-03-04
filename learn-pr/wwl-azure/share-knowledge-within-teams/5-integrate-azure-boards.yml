@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.share-knowledge-within-teams.integrate-azure-boards
+title: Integrate with Azure Boards
+metadata:
+  title: Integrate with Azure Boards
+  description: "Integrate with Azure Boards"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-integrate-azure-boards.md)]

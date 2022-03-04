@@ -13,7 +13,7 @@ title: Distributed programming on the cloud
 summary: |
   Learn about how complex computer programs must be architected for the cloud by using distributed programming.
 
-  In this module, you will:
+  In this learning path, you'll:
     - Classify programs as sequential, concurrent, parallel, and distributed
     - Indicate why programmers usually parallelize sequential programs
     - Define distributed programming models

@@ -3,6 +3,8 @@ Sometimes you need to pass sensitive values into your deployments, like password
 > [!TIP]
 > The best approach is to avoid using credentials entirely. [Managed identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/overview) can enable the components of your solution to securely communicate with one another without any credentials. Managed identities aren't available for every resource, but it's a good idea to use them wherever you can. Where you can't, you can use the approaches described here.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Define secure parameters
 
 The `@secure` decorator can be applied to string and object parameters that might contain secret values. When you define a parameter as `@secure`, Azure won't make the parameter values available in the deployment logs. Also, if you create the deployment interactively by using the Azure CLI or Azure PowerShell and you need to enter the values during the deployment, the terminal won't display the text on your screen.
@@ -50,6 +52,6 @@ Notice that instead of specifying a `value` for each of the parameters, this fil
 
 Modules enable you to create reusable Bicep files that encapsulate a set of resources. It's common to use modules to deploy parts of your solution. Modules may have parameters that accept secret values, and you can use Bicep's Key Vault integration to provide these values securely. Here's an example Bicep file that deploys a module and provides the value of the `ApiKey` secret parameter by taking it directly from Key Vault:
 
-:::code language="plaintext" source="code/5-module.bicep" highlight="8":::
+:::code language="bicep" source="code/5-module.bicep" highlight="8":::
 
 Notice that in this Bicep file, the Key Vault is referenced by using the `existing` keyword. This tells Bicep that the Key Vault already exists, and this is just a reference to that vault. Bicep won't redeploy it. Also, notice that the code uses the `getSecret()` method in the value for the module's `apiKey` parameter. This is a special Bicep function that can only be used with secure module parameters. Internally, Bicep translates this to the same kind of Key Vault reference you learned about earlier.

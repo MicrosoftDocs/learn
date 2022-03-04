@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-functions.compare-hosting-options
+title: Compare Azure Functions hosting options
+metadata:
+  title: Compare Azure Functions hosting options
+  description: "Compare Azure Functions hosting options"
+  ms.date: 01/12/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-compare-azure-functions-hosting-options.md)]

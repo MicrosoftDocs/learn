@@ -8,9 +8,9 @@ In this unit, you will create a basic console app using the integrated terminal,
 
 1. Create a new folder named `learning-module` in the location of your choice, and then select **Select Folder**.
 
-1. Ensure that file auto-save is enabled by selecting the File menu and checking **Auto Save** if it is blank. You will be copying in several blocks of code, and this will ensure you are always operating against the latest edits of your files.
+1. Ensure that file auto-save is enabled by selecting the **File** menu, and checking **Auto Save** if it is blank. You will be copying in several blocks of code, and this will ensure you are always operating against the latest edits of your files.
 
-1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
+1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu. Make sure you are using a Command Prompt window.
 
 1. In the terminal window, copy and paste the following command.
 
@@ -45,9 +45,8 @@ In this unit, you will create a basic console app using the integrated terminal,
 
 1. At the top of the Explorer pane, select **Program.cs** to open the file.
 
-> [!NOTE] 
->  If you do not show the **Program.cs** in Explorer pane, click file > open file > and open it from file explorer.  
-
+> [!NOTE]
+> If you do not show the **Program.cs** in the Explorer pane, select **File** > **Open file** > and open it from File Explorer.  
 
 1. Add the following using statements after `using System;`.
 

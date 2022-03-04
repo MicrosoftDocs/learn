@@ -52,7 +52,7 @@ Now you can test your deployed service from a client application - in this case,
                         'SerumInsulin': 24,
                         'BMI': 27.36983156,
                         'DiabetesPedigree': 1.3504720469999998,
-                        'Age': 43,
+                        'Age': 43
                 },
             ],
         },

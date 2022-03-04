@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-infrastructure-as-code-configuration-management.understand-imperative-versus-declarative-configuration
+title: Understand imperative versus declarative configuration
+metadata:
+  title: Understand imperative versus declarative configuration
+  description: "Understand imperative versus declarative configuration"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-understand-imperative-versus-declarative-configuration.md)]

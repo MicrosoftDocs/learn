@@ -18,7 +18,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="../media/matplotlib-scatter-3.svg" alt-text="Axes3D ax.scatter plot output":::
+:::image type="content" source="../media/matplotlib-scatter-3.svg" alt-text="Axes3D ax.scatter plot output.":::
 ***
 
 > [!div class="alert is-tip"]

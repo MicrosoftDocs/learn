@@ -4,11 +4,12 @@ title: Install Python 3
 metadata:
   title: Install Python 3
   description: Follow the instructions to install Python 3 on your local computer.
-  ms.date: 3/2/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  ms.date: 07/06/2021
+  author: rjmolyneaux
+  ms.author: rmolyneaux
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
   zone_pivot_groups: os
 durationInMinutes: 5
 content: |

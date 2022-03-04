@@ -4,12 +4,13 @@ title: Manage and investigate incidents
 metadata:
   title: Manage and investigate incidents
   description: "Manage and investigate incidents"
-  ms.date: 03/30/2021
+  ms.date: 01/28/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-manage-investigate-incidents.md)]

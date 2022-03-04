@@ -124,7 +124,7 @@ Instantiating the `UITextField` and assign the following properties:
         - **45 pts** in height
     - You need to set the `Frame` property directly to use the constructor that takes a button type.
 
-    ![Illustration showing the heights and paddings of the TipCalculator controls](../media/8-layout-spacing.png)
+    ![Illustration showing the heights and paddings of the TipCalculator controls.](../media/8-layout-spacing.png)
 
     ```csharp
     public class MyViewController : UIViewController
@@ -155,7 +155,7 @@ Instantiating the `UITextField` and assign the following properties:
     {
         base.ViewDidLoad();
         ...
-        var calcButton = new UIButton(UIButtonType.Custom) {
+        calcButton = new UIButton(UIButtonType.Custom) {
            Frame = new CGRect(20, 71 + topPadding, View.Bounds.Width - 40, 45),
            BackgroundColor = UIColor.FromRGB(0, 0.5f, 0),
         };
@@ -169,7 +169,7 @@ Instantiating the `UITextField` and assign the following properties:
 
 1. Calculate the frame by referring to the diagram below. It should be **40 pts** high and have the same left and right margins as the other two controls. You can pass the frame into the constructor, or set the property. Remember to add the `topPadding` value.
 
-    ![Illustration showing the heights and paddings of the TipCalculator controls](../media/8-layout-spacing.png)
+    ![Illustration showing the heights and paddings of the TipCalculator controls.](../media/8-layout-spacing.png)
 
     ```csharp
     public class MyViewController : UIViewController

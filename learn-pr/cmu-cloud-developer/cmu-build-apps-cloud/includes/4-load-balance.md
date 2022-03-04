@@ -6,7 +6,7 @@ The most well-known form of load balancing is "round robin DNS," employed by man
 
 Before the advent of the cloud, DNS load balancing was a simple way to tackle the latency of long-distance connections. The dispatcher at the DNS server was programmed to respond with the IP address of the server that was geographically nearest to the client. The simplest schemes to do this tried to respond with the IP address from the pool that was numerically the closest to the IP address of the client. This method, of course, was unreliable, as IP addresses are not distributed in a global hierarchy. Current techniques are more sophisticated and rely on a software mapping of IP addresses to locations based on physical maps of internet service providers (ISPs). Since this is implemented as a costly software lookup, this method yields more accurate results, but is expensive to compute. However, the cost of a slow lookup is amortized since the DNS lookup occurs only when the first connection to a server is made by the client. All subsequent communications happen directly between the client and the server that owns the dispatched IP address. An example of a DNS load-balancing scheme is shown in the following figure. 
 
-![Load balancing in cloud hosting environment](../media/load-balancing.png)
+![Load balancing in cloud hosting environment.](../media/load-balancing.png)
 
 _Figure 4: Load balancing in a cloud hosting environment_
 
@@ -18,7 +18,7 @@ Though all types of network load balancers will simply forward the user's inform
 - **Proxying**: In this approach, the load balancer receives the response from the back end and relays it back to the client. The load balancer behaves as a standard web proxy and is involved in both halves of a network transaction, namely forwarding the request to the client and sending back the response. 
 - **TCP handoff** In this approach, the TCP connection with the client is handed off to the back-end server. Therefore the server sends the response directly to the client, without going through the load balancer. 
 
-![TCP handoff mechanism from dispatcher to the back-end server](../media/tcp-handoff.png)
+![TCP handoff mechanism from dispatcher to the back-end server.](../media/tcp-handoff.png)
 
 _Figure 5: TCP handoff mechanism from the dispatcher to the back-end server_
 

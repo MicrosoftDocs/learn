@@ -37,7 +37,7 @@ Azure Relay helps maintain security by requiring applications to supply an acces
 
 1. In the left menu pane, under **Settings**, select **Shared access policies**, and then select the **RootManageSharedAccessKey** policy. The **SAS Policy: RootManageSharedAccessKey** panel appears.
 
-    ![Get the access key for the relay](../media/3-obtain-access-key.png)
+    ![Get the access key for the relay.](../media/3-obtain-access-key.png)
 
 1. To save the primary key and primary connection string, do the following:
   

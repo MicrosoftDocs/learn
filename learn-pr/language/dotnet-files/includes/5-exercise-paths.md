@@ -1,56 +1,53 @@
 The .NET `Path` class and `Directory.GetCurrentDirectory` are two ways to define and compose file system paths.
 
-In the previous exercise, you wrote a program that iterates through a folder to find any of the *sales.json* files inside.
+In the previous exercise, you wrote a program that iterates through a folder to find any of the *sales.json* files in it or any subfolders.
 
-In this exercise, you'll use the `Path` class and `Directory.GetCurrentDirectory` to improve the program so that it will find any file with a .json or .txt extension.
+In this exercise, you'll use the `Path` class and `Directory.GetCurrentDirectory` to improve the program so it will find *any* file with a .json or .txt extension.
 
 ## Use the current directory and combine paths
 
 In the current Program.cs code, you're passing the static location of the *stores* folder. We'll change that code to use the `Directory.GetCurrentDirectory` value instead of passing a static folder name.
 
-1. In the `Main` method, create a variable to store a path to the current directory by using the `Directory.GetCurrentDirectory` method.
+1. In the editor, insert the following code above the first line of `Program.cs` file. This code uses the `Directory.GetCurrentDirectory` method to obtain the path for the current directory and store it in a new variable `currentDirectory`:
 
     ```csharp
-    static void Main(string[] args)
-    {
-      var currentDirectory = Directory.GetCurrentDirectory();
-      
-      var salesFiles = FindFiles("stores");
+    var currentDirectory = Directory.GetCurrentDirectory();
+    ```
+
+1. Insert the following code after one that you just added. This code uses the `Path.Combine` method to create the full path to the *stores* directory and store it in a new variable `storesDirectory`:
+
+    ```csharp
+    var storesDirectory = Path.Combine(currentDirectory, "stores");
+    ```
+
+1. Replace the variable `stores` in the `FindFiles` function with the new variable `storesDirectory`:
+
+     ```csharp
+     var salesFiles = FindFiles(storesDirectory);
+     ```
+
+    The top of your file should now look similar to the following snippet:
+
+    ```csharp
+    var currentDirectory = Directory.GetCurrentDirectory();
+    var storesDirectory = Path.Combine(currentDirectory, "stores");
+    var salesFiles = FindFiles(storesDirectory);
     
-      foreach (var file in salesFiles)
-      {
-        Console.WriteLine(file);
-      }
-    }
-    ```
-
-1. Still in the `Main` method, create another variable to store the full path to the *stores* directory by using the `Path.Combine` method. Pass that new variable to the `FindFiles` function.
-
-    ```csharp
-    static void Main(string[] args)
+    foreach (var file in salesFiles)
     {
-        var currentDirectory = Directory.GetCurrentDirectory();
-        
-        var storesDirectory = Path.Combine(currentDirectory, "stores");
-        
-        var salesFiles = FindFiles(storesDirectory);
-        
-        foreach (var file in salesFiles)
-        {
-            Console.WriteLine(file);
-        }
+        Console.WriteLine(file);
     }
     ```
 
-1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the file.
+1. Press <kbd>Ctrl+S</kbd> (or <kbd>Cmd+S</kbd> macOS) to save the file.
 
-1. Run the program from the command line.
+1. Run the program from the command line:
 
     ```bash
     dotnet run
     ```
 
-    Notice that the path that's now listed for the files is the full system path. This path appears because the `Directory.GetCurrentDirectory` method returns the full path to the current location.
+1. The program should show the following output:
 
     ```bash
     /home/username/dotnet-files/stores/sales.json  
@@ -60,31 +57,30 @@ In the current Program.cs code, you're passing the static location of the *store
     /home/username/dotnet-files/stores/204/sales.json  
     ```
 
+    Notice that the file names returned include the full system path. This path is included because `Directory.GetCurrentDirectory` method returns the full path to the current location.
+
 ## Find all .json files
 
-Instead of looking for only *sales.json* files, the program needs to search for any file with an extension of .json. To do that, use the `Path.GetExtension` method to check the filename extension.
+Instead of looking for only *sales.json* files, the program needs to search for any file with a .json extension. To do that, use the `Path.GetExtension` method to check the extension for each file.
 
-1. In the `foreach` loop in `FindFiles`, get the extension of each file by using the `Path.GetExtension` method.
+1. In the `foreach` loop in `foundFiles`, insert the following line of code above the `if` statement to define a new variable `extension`. This code uses the `Path.GetExtension` method to get the extension of each file.
 
     ```csharp
-    foreach (var file in foundFiles)
-    {
         var extension = Path.GetExtension(file);
-        
-        if (file.EndsWith("sales.json"))
-        {
-            salesFiles.Add(file);
-        }
-    }
     ```
 
-1. Then change the `if` statement to check whether the file's extension is .json.
+1. Change the `if` statement to look like the following line of code. This statement checks whether the file's extension is equal to .json.
 
+    ```csharp
+           if (extension == ".json")
+    ```
+
+    The `foreach` loop should look similar to the following:
+  
     ```csharp
     foreach (var file in foundFiles)
     {
         var extension = Path.GetExtension(file);
-        
         if (extension == ".json")
         {
             salesFiles.Add(file);
@@ -94,13 +90,13 @@ Instead of looking for only *sales.json* files, the program needs to search for 
 
 1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the file.
 
-1. Run the program from the command line.
+1. Run the program from the command line:
 
     ```bash
     dotnet run
     ```
   
-    The output now shows all .json files in any of the store ID directories.
+    The output now shows all .json files in each of the store ID directories:
 
     ```bash
     /home/username/dotnet-files/stores/sales.json  
@@ -118,46 +114,34 @@ Great job! You've used the `Path` class and the `Directory.GetCurrentDirectory` 
 
 ### Got stuck?
 
-If you got stuck at any point in this exercise, here's the completed code. Remove everything in *Program.cs*, and replace it with this solution.
+If you got stuck at any point in this exercise, here's the completed code. Remove everything in *Program.cs*, and replace it with this solution:
 
 ```csharp
-using System;
-using System.IO;
-using System.Collections.Generic;
+var currentDirectory = Directory.GetCurrentDirectory();
+var storesDirectory = Path.Combine(currentDirectory, "stores");
 
-namespace files_module
+var salesFiles = FindFiles(storesDirectory);
+    
+foreach (var file in salesFiles)
 {
-    class Program
+    Console.WriteLine(file);
+}
+
+IEnumerable<string> FindFiles(string folderName)
+{
+    List<string> salesFiles = new List<string>();
+
+    var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
+
+    foreach (var file in foundFiles)
     {
-        static void Main(string[] args)
+        var extension = Path.GetExtension(file);
+        if (extension == ".json")
         {
-            var currentDirectory = Directory.GetCurrentDirectory();
-            var storesDirectory = Path.Combine(currentDirectory, "stores");
-
-            var salesFiles = FindFiles(storesDirectory);
-
-            foreach (var file in salesFiles)
-            {
-                Console.WriteLine(file);
-            }
-        }
-
-        static IEnumerable<string> FindFiles(string folderName)
-        {
-            List<string> salesFiles = new List<string>();
-
-            var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
-
-            foreach (var file in foundFiles)
-            {
-                var extension = Path.GetExtension(file);
-
-                if (extension == ".json")
-                    salesFiles.Add(file);
-            }
-
-            return salesFiles;
+            salesFiles.Add(file);
         }
     }
+
+    return salesFiles;
 }
 ```

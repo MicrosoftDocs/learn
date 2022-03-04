@@ -1,0 +1,48 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-400-implement-continuous-feedback
+metadata:
+  title: 'AZ-400: Implement continuous feedback'
+  description: 'AZ-400: Implement continuous feedback'
+  ms.date: 02/14/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-400: Implement continuous feedback'
+prerequisites: |
+  None
+summary: |
+  This learning path introduces the continuous feedback concept and describes how to implement it in your DevOps cycle.
+iconUrl: /learn/achievements/az-400-implement-continuous-feedback.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+modules:
+- learn.wwl.implement-tools-to-track-usage-flow
+- learn.wwl.implement-route-for-mobile-application-crash-report-data
+- learn.wwl.develop-monitor-status-dashboards
+- learn.wwl.share-knowledge-within-teams
+- learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction
+- learn.wwl.design-processes-to-capture-analyze-user-feedback
+- learn.wwl.design-processes-to-automate-application-analytics
+- learn.wwl.manage-alerts-blameless-retrospectives-just-culture
+trophy:
+  uid: learn.wwl.az-400-implement-continuous-feedback.trophy

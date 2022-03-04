@@ -1,5 +1,7 @@
 In the previous units, you provided the parameter values on the command line when you created a deployment. This approach works well when you're writing and testing your Bicep files, but it doesn't work well when you have many parameters or when you need to automate your deployments. In this unit, you'll learn about different ways that parameter values can be specified.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Create parameter files
 
 _Parameter files_ make it easy to specify parameter values together as a set. Within the parameter file, you provide values for the parameters in your Bicep file. Parameter files are created by using the JavaScript Object Notation (JSON) language. You can supply a parameter file when you deploy your Bicep template. Here's what a parameter file looks like:
@@ -50,7 +52,7 @@ Generally, you'll create a parameter file for each environment. It's a good prac
 
 ::: zone pivot="cli"
 
-When you create a new deployment by using the `az group deployment create` command, you can specify the name of the parameter file you want to use with the `--parameters` argument:
+When you create a new deployment by using the `az deployment group create` command, you can specify the name of the parameter file you want to use with the `--parameters` argument:
 
 :::code language="azurecli" source="code/4-deployment.sh" highlight="3":::
 

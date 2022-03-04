@@ -4,7 +4,7 @@ When designing a star schema model for small or medium sized datasets you can us
 
 In Synapse, you do not have foreign keys and unique value constraints like you do in SQL Server. Since these rules are not enforced at the database layer, the jobs used to load data have more responsibility to maintain data integrity. You still have the option to use clustered indexes, but for most dimension tables in Synapse you will benefit from using a clustered columnstore index (CCI). In this example, a few tables have data types which cannot be included in a clustered columnstore index so a clustered index was used instead.
 
-Since Synapse Analytics is a [massively parallel processing](https://docs.microsoft.com/azure/architecture/data-guide/relational-data/data-warehousing#data-warehousing-in-azure) (MPP) system, you must consider how data is distributed in your table design, as opposed to symmetric multiprocessing (SMP) systems, such as OLTP databases like Azure SQL Database. The table category often determines which option to choose for distributing the table.
+Since Synapse Analytics is a [massively parallel processing](/azure/architecture/data-guide/relational-data/data-warehousing) (MPP) system, you must consider how data is distributed in your table design, as opposed to symmetric multiprocessing (SMP) systems, such as OLTP databases like Azure SQL Database. The table category often determines which option to choose for distributing the table.
 
 | Table category | Recommended distribution option |
 |:---------------|:--------------------|

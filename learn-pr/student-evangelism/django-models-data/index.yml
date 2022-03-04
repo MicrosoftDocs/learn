@@ -2,12 +2,13 @@
 uid: learn.django.models-data
 metadata:
   title: Work with models and data in Django
-  description: Explore models and data in Django. Learn about the object-relational mapper, create your own models, and set up a database.
+  description: Explore models and data in the Python framework Django. Learn about the object-relational mapper, create your own models, and set up a database.
   ms.date: 02/25/2021
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Work with models and data in Django
 summary: Django is focused on data-driven applications, so it provides its own object-relational mapper (ORM). We'll explore ORM concepts and how the Django ORM works. We'll create our own models and set up the database.
 abstract:  | 

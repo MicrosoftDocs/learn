@@ -7,7 +7,7 @@ In this exercise, we'll work our way through these questions, the implications o
 
 ## Question 1: Is it possible, depending on the value, that attempting to change the value's data type would throw an exception at run time?
 
-The C# compiler will try to accommodate your code, but will always avoid an operation that could result in an exception. When you understand the C# compiler's primary concern, understanding why if functions a certain way will be easier.
+The C# compiler will try to accommodate your code, but will always avoid an operation that could result in an exception. When you understand the C# compiler's primary concern, understanding why it functions a certain way will be easier.
 
 ### Step 1 - Write code that attempts to add an int and a string and save the result in an int
 

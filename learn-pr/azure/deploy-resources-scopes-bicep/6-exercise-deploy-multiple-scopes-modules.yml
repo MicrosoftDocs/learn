@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Deploy resources to multiple scopes by using modules
   description: Learn how to create a Bicep file that deploys your resources to multiple scopes.
-  ms.date: 05/30/2021
+  ms.date: 10/14/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial

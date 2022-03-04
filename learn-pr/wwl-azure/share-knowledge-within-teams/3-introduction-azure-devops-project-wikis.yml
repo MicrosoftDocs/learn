@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.share-knowledge-within-teams.introduction-to-azure-devops-project-wikis
+title: Introduction to Azure DevOps project wikis
+metadata:
+  title: Introduction to Azure DevOps project wikis
+  description: "Introduction to Azure DevOps project wikis"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-introduction-azure-devops-project-wikis.md)]

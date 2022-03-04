@@ -20,7 +20,7 @@ To complete the exercises, you'll need the following items installed on your com
     cd mslearn-django-models-data/starter
     ```
 
-    > ![NOTE]
+    > [!NOTE]
     > The solution for the exercises can be found in the *solution* directory.
 
 ## Open the project in Visual Studio Code

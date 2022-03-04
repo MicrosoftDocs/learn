@@ -7,8 +7,8 @@ Python supports an interactive console experience, which allows you to type in c
 To use the REPL, you type `python` in your console. What you are phased with is a prompt looking like similar to the below output, it waits for you to input commands:
 
 ```output
-Python 2.7.16 (default, May  8 2021, 11:48:02) 
-[GCC Apple LLVM 12.0.5 (clang-1205.0.19.59.6) [+internal-os, ptrauth-isa=deploy on darwin
+Python 3.9.5 (default, May 27 2021, 19:45:35)
+[GCC 9.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```

@@ -4,7 +4,7 @@ For best query performance, the goal is to maximize the number of rows per rowgr
 
 During a bulk load or columnstore index rebuild, sometimes there isn't enough memory available to compress all the rows designated for each rowgroup. When memory pressure is present, columnstore indexes trim the rowgroup sizes so compression into the columnstore can succeed.
 
-The DMV [sys.dm_pdw_nodes_db_column_store_row_group_physical_stats](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-column-store-row-group-physical-stats-transact-sql) exposes useful information such as number of rows in rowgroups and the reason for trimming, if there was trimming.
+The DMV [sys.dm_pdw_nodes_db_column_store_row_group_physical_stats](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-column-store-row-group-physical-stats-transact-sql?toc=/azure/synapse-analytics/sql-data-warehouse/toc.json&bc=/azure/synapse-analytics/sql-data-warehouse/breadcrumb/toc.json&view=azure-sqldw-latest&preserve-view=true) exposes useful information such as number of rows in rowgroups and the reason for trimming, if there was trimming.
 
 There are two columns from `dm_pdw_nodes_db_column_store_row_group_physical_stats` worth looking into in detail. The `state_desc` column provides useful information on the state of a row group:
 
@@ -21,7 +21,7 @@ Additionally, the `trim_reason_desc` column describes the reason that triggered 
 Name                                     | Description
 -----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 `UNKNOWN_UPGRADED_FROM_PREVIOUS_VERSION` | Occurred when upgrading from the previous version of SQL Server.
-`NO_TRIM`                                | The row group was not trimmed. The row group was compressed with the maximum of 1,048,476 rows. The number of rows could be less if a subset of rows was deleted after delta rowgroup was closed.
+`NO_TRIM`                                | The row group was not trimmed. The row group was compressed with the maximum of 1,048,576 rows. The number of rows could be less if a subset of rows was deleted after delta rowgroup was closed.
 `BULKLOAD`                               | The bulk-load batch size limited the number of rows. This is what you should be looking for when optimizing data loading, as it is an indicator of resource starvation during the loading process.
 `REORG`                                  | Forced compression as part of REORG command.
 `DICTIONARY_SIZE`                        | Dictionary size grew too large to compress all of the rows together.

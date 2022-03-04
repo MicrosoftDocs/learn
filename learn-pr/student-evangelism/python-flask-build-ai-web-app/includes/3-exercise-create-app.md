@@ -20,7 +20,7 @@ Typically, the entry point for Flask applications is a file named **app.py**. We
 2. Add the code to create your Flask application
 
    ```python
-   from flask import Flask, render_template
+   from flask import Flask, redirect, url_for, request, render_template, session
 
    app = Flask(__name__)
    ```

@@ -41,7 +41,7 @@ Azure Spring Cloud can access Git repositories that are public, secured by SSH, 
 
 Follow the [GitHub guide to create a personal token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) and save your token. When asked to select scopes, check off the entire "repo" section (as shown below) and nothing else.
 
-![GitHub personal access token](../media/3-github-personal-access-token.png)
+![GitHub personal access token.](../media/3-github-personal-access-token.png)
 
 Once the token is generated, leave that tab open until the end of this section.
 
@@ -62,10 +62,8 @@ Once the token is generated, leave that tab open until the end of this section.
 1. Click on **Apply** and wait for the operation to succeed.
 1. Click on **Validate** and wait for the operation to succeed.
 
-![Spring Cloud config server](../media/3-config-server.png)
+![Spring Cloud config server.](../media/3-config-server.png)
 
 ## Review
 
 We have now created a private configuration repository. We have enabled Azure Spring Cloud to create a configuration server with the configuration files from this repository.
-
-In the next section, we will create an application that consumes this configuration, specifically the custom message we defined in `application.yml`.

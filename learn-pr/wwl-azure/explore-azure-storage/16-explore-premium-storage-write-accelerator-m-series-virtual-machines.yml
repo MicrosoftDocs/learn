@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-storage.explore-solutions-premium-storage-azure-write-accelerator-for-azure-m-series-vir
+title: Explore solutions with Premium Storage and Azure Write Accelerator for Azure M-Series virtual machines
+metadata:
+  title: Explore solutions with Premium Storage and Azure Write Accelerator for Azure M-Series virtual machines
+  description: "Explore solutions with Premium Storage and Azure Write Accelerator for Azure M-Series virtual machines"
+  ms.date: 01/20/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/16-explore-premium-storage-write-accelerator-m-series-virtual-machines.md)]

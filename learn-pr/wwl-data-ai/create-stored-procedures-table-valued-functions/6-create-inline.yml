@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-stored-procedures-table-valued-functions.create-inline
+title: Create inline table-valued functions
+metadata:
+  title: Create inline table-valued functions
+  description: "Create inline table-valued functions"
+  ms.date: 02/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-create-inline.md)]

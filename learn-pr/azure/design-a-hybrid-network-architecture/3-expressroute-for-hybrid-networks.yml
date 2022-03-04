@@ -4,8 +4,8 @@ metadata:
   title: Use Azure ExpressRoute for hybrid networks
   description: Explore on-premises hybrid connectivity by using Azure ExpressRoute, get an overview of the components available in ExpressRoute, and walk through a reference architecture that supports this topology.
   ms.date: 01/14/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: duongau
+  ms.author: duau
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

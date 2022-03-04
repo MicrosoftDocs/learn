@@ -97,7 +97,7 @@ To deploy our logic app, we'll use the `az deployment group create` command beca
 
 1. To see the app in action, find the **logicAppUrl** value in the JSON result.  Select the URL and paste it into a new browser window. The page will display the *Hello Logic Apps Template!* message as shown in the following screenshot.
 
-    ![Web browser displaying response from our basic logic app](../media/3-hello.png)
+    ![Web browser displaying response from our basic logic app.](../media/3-hello.png)
 
 Congratulations! You've successfully deployed a logic app using an Azure Resource Manager template.
 

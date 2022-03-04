@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.practice-active-listening.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+  - content: 'Which one of the following ground rules is recommended in group discussions?'
+    choices:
+    - content: 'Share the air with other people by providing them the opportunity to speak and by listening to them respectfully.'
+      isCorrect: true
+      explanation: "Correct. It's important to give others as much chance to speak as you want for yourself. By listening to others fully and patiently, you create an environment of respect and inclusiveness."
+    - content: "Develop an inclusive atmosphere by using We statements to include everyone's perspective in your statements."
+      isCorrect: false
+      explanation: "Incorrect. Using We statements assumes that others share your opinion and vantage point and isn't inclusive of the listeners' feelings. Using I statements enables you to take ownership of your own feelings while providing others the opportunity to do the same."
+    - content: 'Assume that what you hear and understand always reflects the true intent of the speaker.'
+      isCorrect: false
+      explanation: "Incorrect. Intent and impact aren't always the same. People often say things in a way that doesn't accurately reflect their intentions or might be received incorrectly. Always assume positive intent."
+  - content: 'When a person repeats in their own words what someone is telling them, what communication technique are they using?'
+    choices:
+    - content: 'Active listening'
+      isCorrect: false
+      explanation: "Incorrect. Active listening is the act of giving someone your complete attention when they're sharing and you're listening to understand."
+    - content: 'Mirroring'
+      isCorrect: true
+      explanation: "Correct. Mirroring is a communication technique that you can use to signal that you're listening to the speaker and also convey your understanding. It's a component of active listening."
+    - content: 'Effective communication'
+      isCorrect: false
+      explanation: 'Incorrect. Effective communication consists of several components, one of which is active listening.'
+  - content: 'Which aspect of active listening is especially important in teams?'
+    choices:
+    - content: 'Taking good notes during meetings.'
+      isCorrect: false
+      explanation: "Incorrect. Although taking good notes is important, it's not a component of active listening."
+    - content: 'Trying on the perspective of the person speaking.'
+      isCorrect: true
+      explanation: "Correct. One important aspect of active listening that's especially important in team settings is to try on the perspective of the person speaking to gain a deeper sense of their position, even when you disagree with what they're saying."
+    - content: 'Always agreeing with the person speaking.'
+      isCorrect: false
+      explanation: "Incorrect. You don't need to agree with someone to actively listen to them."
+  - content: 'Which one of the following statements describes the advantages of conducting small group discussions?'
+    choices:
+    - content: 'It allows people who are shy or uncomfortable sharing in a larger group to participate more freely.'
+      isCorrect: true
+      explanation: 'Correct. Some people might be more comfortable sharing their views and feelings in a one-on-one conversation or a smaller group instead of in front of many people. Small group discussions are beneficial for them to express themselves openly.'
+    - content: 'It provides fewer opportunities for confrontations between group members.'
+      isCorrect: false
+      explanation: 'Incorrect. This might not always be true. In a smaller group, there might be more chances of two or more people not getting along with each other or disagreeing with each other in a more fractious manner.'
+    - content: "It's easier for facilitators to monitor and mediate and allows for a greater degree of control."
+      isCorrect: false
+      explanation: "Incorrect. This isn't always true. People are more apt to express their feelings openly in a smaller group, which increases the chances of the discussion getting out of control or going off on a tangent."

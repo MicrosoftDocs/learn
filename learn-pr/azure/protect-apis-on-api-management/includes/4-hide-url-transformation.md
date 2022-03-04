@@ -8,7 +8,7 @@ Here, you will learn how to use API Management policies that manipulate the cont
 
 The response body of an API call contains the data that is being requested. In the Census API, for example, the response body contains the JSON data for the respondents. You can also see how the body contains URL links to view individual people:
 
-![Links in Response Body](../media/4-links-in-body.png)
+![Links in Response Body.](../media/4-links-in-body.png)
 
 These links are based on the Census API endpoints and need to be masked to show the API Management URLs instead.
 

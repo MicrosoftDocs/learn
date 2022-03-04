@@ -1,6 +1,6 @@
 In this unit, you need to complete the exercises within a Databricks Notebook. To begin, you need to have access to an Azure Databricks workspace with an interactive cluster. If you do not have a workspace and/or the required cluster, follow the instructions below. Otherwise, you can skip to the bottom of the page to [Clone the Databricks archive](#clone-the-databricks-archive).
 
-## Unit pre-requisites
+## Unit prerequisites
 
 **Microsoft Azure Account**: You will need a valid and active Azure account for the Azure labs. If you do not have one, you can sign up for a [free trial](https://azure.microsoft.com/free/)
 
@@ -14,7 +14,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 ### Deploy an Azure Databricks workspace
 
-1. Click the following button to open the Azure Resource Manager template in the Azure portal.
+1. Select the following link to open the Azure Resource Manager template in the Azure portal.
    [Deploy Databricks from the Azure Resource Manager Template](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-databricks-workspace%2Fazuredeploy.json)
 
 1. Provide the required values to create your Azure Databricks workspace:
@@ -39,7 +39,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 1. Select **Create Cluster** to add a new cluster.
 
-    ![The create cluster page](../media/create-cluster.png)
+    ![The create cluster page.](../media/create-cluster.png)
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
 
@@ -59,7 +59,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 1. In the left pane, select **Workspace** > **Users**, and select your username (the entry with the house icon).
 1. In the pane that appears, select the arrow next to your name, and select **Import**.
 
-    ![The menu option to import the archive](../media/import-archive.png)
+    ![The menu option to import the archive.](../media/import-archive.png)
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 

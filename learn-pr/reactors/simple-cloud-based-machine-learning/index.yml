@@ -5,9 +5,10 @@ metadata:
   description: Learn about simple cloud-based machine learning for data science operations.
   ms.date: 06/30/2020
   author: sguthals
-  ms.author: sguthals
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
+  ms.custom: team=nextgen
 title: Simple cloud-based machine learning  
 summary: Learn about simple cloud-based machine learning for data science operations.
 abstract: |

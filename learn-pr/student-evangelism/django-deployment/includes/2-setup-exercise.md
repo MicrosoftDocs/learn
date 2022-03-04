@@ -22,7 +22,7 @@ To complete the exercise, you need the following tools installed on your compute
     cd mslearn-django-deployment/starter
     ```
 
-    > ![NOTE]
+    > [!NOTE]
     > The solution for the exercises can be found in the *solution* directory.
 
 ## Open the project in Visual Studio Code

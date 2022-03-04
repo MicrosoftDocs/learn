@@ -3,9 +3,9 @@ uid: learn.wwl.deploy-mariadb-mysql-postgresql-azure
 metadata:
   title: Deploy MariaDB, MySQL, and PostgreSQL on Azure
   description: "Deploy MariaDB, MySQL, and PostgreSQL on Azure"
-  ms.date: 12/16/2020
+  ms.date: 10/29/2021
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy MariaDB, MySQL, and PostgreSQL on Azure
@@ -35,7 +35,6 @@ units:
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.describe-open-source-offerings
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.explain-how-to-deploy-postgresql-to-azure
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.deploy-mysql-mariadb-to-azure
-- learn.wwl.deploy-mariadb-mysql-postgresql-azure.explain-database-migration-options
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.exercise-deploy-azure-database-postgresql
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.knowledge-check
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.summary

@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.train-compute-intensive-models-azure-machine-learning
+metadata:
+  title: Train compute-intensive models with Azure Machine Learning
+  description: Train compute-intensive models with Azure Machine Learning
+  ms.date: 01/28/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Train compute-intensive models with Azure Machine Learning
+prerequisites: |
+  Before starting this learning path, you should be familiar with the Azure Machine Learning service and training compute-intensive machine-learning and deep-learning models.
+summary: |
+  Large-scale machine-learning and deep-learning models require ample compute power. Learn when to choose GPU compute, and how different frameworks help you to make optimal use of GPU compute during preprocessing, model training, and deployment.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- data-scientist
+products:
+- azure
+- azure-machine-learning
+- azure-virtual-machines
+modules:
+- learn.wwl.preprocessing-large-datasets-azure-machine-learning
+- learn.wwl.train-compute-azure-machine-learning
+- learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning
+trophy:
+  uid: learn.wwl.train-compute-intensive-models-azure-machine-learning.trophy

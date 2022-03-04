@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.design-network-solutions
+metadata:
+  title: Design network solutions
+  description: "Azure Architects design and recommend network solutions."
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design network solutions
+summary: Azure Architects design and recommend network solutions.
+abstract: |
+  In this module, you’ll learn how to:
+  - Recommend a network architecture solution based on workload requirements
+  - Design for on-premises connectivity to Azure Virtual Networks
+  - Design for Azure network connectivity services
+  - Design for application delivery services
+  - Design for application protection services
+prerequisites: |
+  - Working experience with enterprise networking.
+  - Conceptual knowledge of software defined networking and hybrid connectivity.
+iconUrl: /learn/achievements/design-network-solution.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.design-network-solutions.introduction
+- learn.wwl.design-network-solutions.recommend-network-architecture-solution-based-workload-requirements
+- learn.wwl.design-network-solutions.design-for-premises-connectivity-to-azure-virtual-networks
+- learn.wwl.design-network-solutions.design-for-azure-network-connectivity-services
+- learn.wwl.design-network-solutions.design-for-application-delivery-services
+- learn.wwl.design-network-solutions.design-for-application-protection-services
+- learn.wwl.design-network-solutions.knowledge-check
+- learn.wwl.design-network-solutions.summary-resources
+badge:
+  uid: learn.wwl.design-network-solutions.badge

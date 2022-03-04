@@ -1,4 +1,4 @@
-![UWP and WPF logos](../media/tech-all.png)
+![UWP and WPF logos.](../media/tech-all.png)
 
 ## Enhancing your app's UI
 
@@ -17,13 +17,13 @@ Let's get started!
 
 ::: zone pivot="uwp"
 
-![Technology logos with UWP highlighted](../media/tech-uwp.png)
+![Technology logos with UWP highlighted.](../media/tech-uwp.png)
 
 #### 1. Create a project
 
 In Visual Studio, create a Universal Windows Platform (UWP) C# project. Give the project a meaningful name that's based on this lesson, like **NavigationApp.Uwp**.
 
-![Create the project](../media/new-project-uwp.png)
+![Create the project.](../media/new-project-uwp.png)
 
 #### 2. Introducing `Frame` and `Page`
 
@@ -75,17 +75,17 @@ Now let's create a couple pages in the application so you can try navigating bet
 
 Right-click the project name (not the solution name), expand **Add**, and then select **New Item**.
 
-![Add new item](../media/uwp-project-contextmenu-newitem.png)
+![Add new item.](../media/uwp-project-contextmenu-newitem.png)
 
 Select the **Blank Page** template, name the page **Page1.xaml**, and then select **Add**.
 
-![Create Page1](../media/uwp-navigation-addpage1.png)
+![Create Page1.](../media/uwp-navigation-addpage1.png)
 
 Repeat the preceding two steps, but this time name the page **Page2.xaml**.
 
 You should now see two pages in **Solution Explorer**:
 
-![Two pages in Solution Explorer](../media/uwp-navigation-solutionexplorer.png)
+![Two pages in Solution Explorer.](../media/uwp-navigation-solutionexplorer.png)
 
 #### 4. Navigating between the pages
 
@@ -266,11 +266,11 @@ Notice that we're first checking whether the `Frame` can go backward before call
 
 Select the button to go to **Page1**:
 
-![MainPage at runtime](../media/uwp-navigation-mainpage.png)
+![MainPage at runtime.](../media/uwp-navigation-mainpage.png)
 
 Select the back button to go back to **MainPage**:
 
-![Page1 at runtime](../media/uwp-navigation-page1-simple.png)
+![Page1 at runtime.](../media/uwp-navigation-page1-simple.png)
 
 ### Passing data between pages
 
@@ -485,21 +485,21 @@ Select F5 to start debugging and navigate to **Page1**. Try each of the paramete
 
 Select the text data option and then select **Go To Page 2**:
 
-![Select text data](../media/uwp-navigation-page1-textselected.png)
+![Select text data.](../media/uwp-navigation-page1-textselected.png)
 
 The `string` parameter message appears on **Page2**:
 
-![String parameter message](../media/uwp-navigation-page2-textselected.png)
+![String parameter message.](../media/uwp-navigation-page2-textselected.png)
 
 *Numerical data*
 
 Go back to **Page1** and try the numerical data option this time:
 
-![Select numerical data](../media/uwp-navigation-page1-numberselected.png)
+![Select numerical data.](../media/uwp-navigation-page1-numberselected.png)
 
 The `int` parameter message appears on **Page2**:
 
-![Numerical parameter message](../media/uwp-navigation-page2-numberselected.png)
+![Numerical parameter message.](../media/uwp-navigation-page2-numberselected.png)
 
 That's a wrap for a first look at using navigation in a UWP application. Great job!
 
@@ -508,13 +508,13 @@ That's a wrap for a first look at using navigation in a UWP application. Great j
 
 ::: zone pivot="wpf"
 
-![Technology logos with WPF highlighted](../media/tech-wpf.png)
+![Technology logos with WPF highlighted.](../media/tech-wpf.png)
 
 #### 1. Create a project
 
 In Visual Studio, create a WPF C# project. Give the project a meaningful name, something like **NavigationApp.Wpf**.
 
-![Create the project](../media/new-project-wpf.png)
+![Create the project.](../media/new-project-wpf.png)
 
 #### 2. Introducing `NavigationWindow` and `Page`
 
@@ -570,11 +570,11 @@ Now let's create a couple pages in the application so you can try navigating bet
 
 Right-click the project name (not the solution name) in **Solution Explorer**, expand **Add**, and then select **Page**.
 
-![Add new item](../media/wpf-project-contextmenu-newitem.png)
+![Add new item.](../media/wpf-project-contextmenu-newitem.png)
 
 Make sure the **Page (WPF)** template is selected, name the page **Page1.xaml**, and then select **Add**.
 
-![Create Page1](../media/wpf-navigation-addpage1.png)
+![Create Page1.](../media/wpf-navigation-addpage1.png)
 
 Repeat the preceding two steps, but this time name the page **Page2.xaml**.
 
@@ -582,7 +582,7 @@ Repeat steps the first two steps again, but this time name the page **MainPage.x
 
 You should now see three pages in **Solution Explorer**:
 
-![Three pages in Solution Explorer](../media/wpf-navigation-solutionexplorer.png)
+![Three pages in Solution Explorer.](../media/wpf-navigation-solutionexplorer.png)
 
 #### 4. Navigating between the pages
 
@@ -708,13 +708,13 @@ Open **Page1.xaml** and put a `TextBlock` in the middle of the `Page` to let use
 
 Select **Go to Page 1** to navigate to **Page1**:
 
-![MainPage at runtime](../media/wpf-navigation-mainpage.png)
+![MainPage at runtime.](../media/wpf-navigation-mainpage.png)
 
 Notice that, after **Page1** loaded, the navigation bar's back button became enabled! This is because there's now a page to go back to, sometimes called *a page in the backstack*.
 
 Select the back button to go back to **MainPage**:
 
-![Page1 at runtime](../media/wpf-navigation-page1-simple.png)
+![Page1 at runtime.](../media/wpf-navigation-page1-simple.png)
 
 This navigation experience is similar to what you see in a web browser. You can use the forward button to go back to pages after you've navigated backward.
 
@@ -903,21 +903,21 @@ Select F5 to start debugging and navigate to **Page1**. Try each of the paramete
 
 Select the text data option and select **Go To Page 2**:
 
-![Select text data](../media/wpf-navigation-page1-textselected.png)
+![Select text data.](../media/wpf-navigation-page1-textselected.png)
 
 The `string` parameter message appears on **Page2**:
 
-![String parameter message](../media/wpf-navigation-page2-textselected.png)
+![String parameter message.](../media/wpf-navigation-page2-textselected.png)
 
 *Numerical data*
 
 Go back to **Page1** and try the numerical data option this time:
 
-![Select numerical data](../media/wpf-navigation-page1-numberselected.png)
+![Select numerical data.](../media/wpf-navigation-page1-numberselected.png)
 
 The `int` parameter message appears on **Page2**:
 
-![Numerical parameter message](../media/wpf-navigation-page2-numberselected.png)
+![Numerical parameter message.](../media/wpf-navigation-page2-numberselected.png)
 
 That's a wrap for a first look at using navigation in a WPF application!
 

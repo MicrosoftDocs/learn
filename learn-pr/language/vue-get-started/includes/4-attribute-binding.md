@@ -27,7 +27,7 @@ The following code generates the HTML element `<img src="./media/sample.jpg">`.
                 imageSource: './media/sample.jpg'
             }
         }
-    }).mount('app');
+    }).mount('#app');
 </script>
 ```
 
@@ -91,7 +91,7 @@ Here's how you can switch out the static value `centered active` for a different
                 }
             }
         }
-    }).mount('app');
+    }).mount('#app');
 </script>
 ```
 
@@ -121,6 +121,6 @@ For example, to set the background color (`background-color`) of an HTML element
                 }
             }
         }
-    }).mount('app');
+    }).mount('#app');
 </script>
 ```

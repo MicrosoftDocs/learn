@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.exercise-implement-then-use-udf-using-sdk
+title: 'Exercise: Implement and use user defined functions with the Azure Cosmos DB SDK'
+metadata:
+  title: 'Exercise: Implement and use user defined functions with the Azure Cosmos DB SDK'
+  description: "Exercise: Implement and use user defined functions with the Azure Cosmos DB SDK"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107600
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-implement-use-user-defined-functions-with-the-sdk.md)]

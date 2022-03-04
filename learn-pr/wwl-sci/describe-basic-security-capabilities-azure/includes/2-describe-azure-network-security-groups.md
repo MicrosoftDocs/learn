@@ -6,7 +6,7 @@ An Azure virtual network is similar to the network you’d find in your organiza
 
 ## Network security groups
 
-Network security groups (NSGs) let you allow or deny network traffic to and from Azure resources that exist in your Azure virtual network; for example, a virtual machine. When you create an NSG, it can be associated with multiple subnets or network interfaces in your VNet. An NSG consists of rules that define how the traffic is filtered.
+Network security groups (NSGs) let you allow or deny network traffic to and from Azure resources that exist in your Azure virtual network; for example, a virtual machine. An NSG consists of rules that define how the traffic is filtered. You can associate zero, or one, network security group to each virtual network subnet and network interface in a virtual machine. The same network security group, however, can be associated to as many different subnets and network interfaces as you choose. 
 
 NSG security rules are evaluated by priority using five information points: source, source port, destination, destination port, and protocol to either allow or deny the traffic. As a guideline, you shouldn't create two security rules with the same priority and direction.
 

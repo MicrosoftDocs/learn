@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-container-build-strategy.understand-dockerfile-core-concepts
+title: Understand Dockerfile core concepts
+metadata:
+  title: Understand Dockerfile core concepts
+  description: "Understand Dockerfile core concepts"
+  ms.date: 02/22/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-understand-dockerfile-core-concepts.md)]

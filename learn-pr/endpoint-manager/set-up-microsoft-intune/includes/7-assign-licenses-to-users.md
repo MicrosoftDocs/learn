@@ -30,7 +30,7 @@ The following steps allow you to assign Intune licenses to multiple users all at
 4. Click **Assign** > **Add users and groups**.
 5. If you have created a group of users, click the group to add it to the **Selected items** list. Otherwise, select individual users that you have created earlier. Click **Select** to confirm your selection.
 
-   [ ![Screenshot of Azure AD admin center with users selected](../media/sign-up-for-intune-15.png) ](../media/sign-up-for-intune-15.png#lightbox)
+   [ ![Screenshot of Azure AD admin center with users selected.](../media/sign-up-for-intune-15.png) ](../media/sign-up-for-intune-15.png#lightbox)
   
 6. Click **Next: Assignment options** to confirm **Microsoft Intune** is **On**.
 7. Click **Review + assign** to confirm your license assignment settings.

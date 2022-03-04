@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-defender-for-iot-implementation.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When considering the lab for this module, which of the following choices is an accurate statement?"
+    choices:
+    - content: "Azure Defender for IoT was evaluated using only the Built-in features for real-time monitoring of IoT Hub."
+      isCorrect: false
+      explanation: "Incorrect. Azure Defender for IoT was implemented using features of the Enhanced mode, such as security agents."
+    - content: "The lab installed a security agent and used key vault to securely store the symmetric key information used for authentication."
+      isCorrect: false
+      explanation: "Incorrect. The lab for this module did install a security agent but did not use key vault to store symmetric key information."
+    - content: "The lab used security agents and custom alerts."
+      isCorrect: true
+      explanation: "Correct. In the lab for this module, you installed a security agent and created a custom alert."
+  - content: "In the lab for this module, which of the following tools was used to install a security agent?"
+    choices:
+    - content: "Cloud Shell"
+      isCorrect: true
+      explanation: "Correct. The Cloud Shell was used to open an SSH session to the device VM and install the security agent."
+    - content: "Visual Studio Code"
+      isCorrect: false
+      explanation: "Incorrect. Visual Studio Code was used in this lab, but not to install the security agent on the device (VM)."
+    - content: "Azure CLI"
+      isCorrect: false
+      explanation: "Incorrect. Azure CLI was not used to install the security agent on the device (VM)."

@@ -2,7 +2,7 @@
 
 To enable security defaults in your directory:
 
-1. Browse to the [Azure portal](https://portal.azure.com/) and sign as a security administrator, Conditional Access administrator, or global administrator.
+1. Browse to the [Azure portal](https://portal.azure.com/) and sign in as a security administrator, Conditional Access administrator, or global administrator.
 
 2. Select the Show portal menu hamburger icon and then select Azure Active Directory.
 

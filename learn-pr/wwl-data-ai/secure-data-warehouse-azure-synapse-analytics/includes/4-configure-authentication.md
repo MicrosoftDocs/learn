@@ -4,7 +4,7 @@ Authentication is the process of validating credentials as you access resources 
 
 There are a variety of scenarios that means that authentication must take place to protect the data that is stored in your Azure Synapse Analytics estate.
 
-The common form of authentication is that of individuals who want to access the data in the service. This is typically seen as an individual providing a username and password to authenticate against a service. However, this is also becoming more sophisticated with authentication requests working in combination with conditional access policies to further secure the authentication process with additional security steps.
+The common form of authentication is that of individuals who want to access the data in the service. This is typically seen as an individual providing a username and password to authenticate against a service. However, this is also becoming more sophisticated with authentication requests working in combination with Conditional Access policies to further secure the authentication process with additional security steps.
 
 What is less obvious is the fact that services must authenticate with other services so that they can operate seamlessly. An example of this is using an Azure Synpase Spark or serverless SQL pool to access data in an Azure Data Lake store. An authentication mechanism must take place in the background to ensure that Azure Synapse Analytics can access the data in the data lake in an authenticated manner.
 
@@ -54,14 +54,14 @@ For user accounts that are not part of an Azure Active directory, then using SQL
 
 This approach is typically useful for external users who need to access the data, or if you are using third party or legacy applications against the Azure Synapse Analytics dedicated SQL pool
 
-### Multi factor authentication
+### Multifactor authentication
 
 Synapse SQL support connections from SQL Server Management Studio (SSMS) using Active Directory Universal Authentication.
  
 > [!div class="mx-imgBorder"]
-> ![Log in with multi-factor-authentication.](../media/log-multi-factor.png)
+> ![Log in with multifactor-authentication.](../media/log-multi-factor.png)
 
-This enables you to operate in environments that use conditional access policies that enforce multi-factor authentication as part of the policy.
+This enables you to operate in environments that use Conditional Access policies that enforce multifactor authentication as part of the policy.
 
 ### Keys
 

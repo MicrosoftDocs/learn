@@ -67,7 +67,7 @@ To give your users easy access to your cloud apps, Azure AD supports a variety o
 
 - Clients that don't use modern authentication (for example, an Office 2010 client). Modern authentication encompasses clients that implement protocols, such as OAuth 2.0, to support features like multifactor authentication and smart cards. Legacy authentication typically only supports less secure mechanisms like passwords.
 
-- Any client that uses older mail protocols such as IMAP, SMTP, or POP3.
+- Client that uses mail protocols such as IMAP, SMTP, or POP3.
 
 Today, the majority of compromising sign-in attempts come from legacy authentication. Legacy authentication does not support multifactor authentication. Even if you have a multifactor authentication policy enabled on your directory, an attacker can authenticate by using an older protocol and bypass multifactor authentication.
 

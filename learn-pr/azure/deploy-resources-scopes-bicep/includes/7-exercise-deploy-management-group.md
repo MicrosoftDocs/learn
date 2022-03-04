@@ -75,11 +75,11 @@ As you did earlier, create a policy definition in the Bicep file.
 
 1. Below the line you just added, add the following variable definition:
 
-   :::code language="bicep" source="code/7-template.bicep" range="5" :::
+   :::code language="bicep" source="code/7-template.bicep" range="3" :::
 
 1. At the bottom of the file, add the following Azure Policy definition:
 
-   :::code language="bicep" source="code/7-template.bicep" range="8-40" :::
+   :::code language="bicep" source="code/7-template.bicep" range="6-38" :::
 
    The policy definition is the same as the one you previously applied to your subscription. This time, though, you're deploying it to a management group. 
 
@@ -87,26 +87,13 @@ As you did earlier, create a policy definition in the Bicep file.
 
 You'll now apply the policy to the management group. This means that the policy will apply to all subscriptions that are children of this management group.
 
-To create a policy assignment, you need to refer to the policy definition. Azure Resource Manager doesn't currently have a way to obtain a full resource ID for resources that are deployed to management groups, so you'll need to construct a resource ID manually.
-
-1. At the top of the file, below the `targetScope` definition, add a blank line, and then add the following parameter:
-
-   :::code language="bicep" source="code/7-template.bicep" range="3" :::
-
-   You need to have the management group's name as a parameter because you'll use it when you construct the resource ID shortly.
-
 1. Below the `policyDefinitionName` variable definition, add the following variable:
 
-   :::code language="bicep" source="code/7-template.bicep" range="6" :::
+   :::code language="bicep" source="code/7-template.bicep" range="4" :::
 
 1. At the bottom of the file, under the policy definition resource, add the following policy assignment:
 
-   :::code language="bicep" source="code/7-template.bicep" range="42-47" :::
-
-   Notice that the `policyDefinitionId` is a resource ID. It contains the management group's name and the policy definition's name. Because you've referenced the policy definition's name by using the `policyDefinition.name` property, Bicep understands that there's a dependency between the two resources. Bicep will deploy the policy definition before the policy assignment.
-
-   > [!NOTE]
-   > In the future, Azure will support a simpler syntax.
+   :::code language="bicep" source="code/7-template.bicep" range="40-45" :::
 
 1. Save the changes to the file.
 
@@ -134,11 +121,8 @@ az deployment mg create \
   --management-group-id $managementGroupId \
   --name $deploymentName \
   --location westus \
-  --template-file $templateFile \
-  --parameters managementGroupName=$managementGroupId
+  --template-file $templateFile
 ```
-
-Notice that you have to provide the management group ID twice. The `--management-group-id` parameter helps the Azure CLI send the deployment to the correct management group. The `-parameters managementGroupName=` parameter value is sent into the deployment and becomes the value for the `managementGroupName` parameter.
 
 ::: zone-end
 
@@ -156,15 +140,12 @@ New-AzManagementGroupDeployment `
   -ManagementGroupId $managementGroupId `
   -Name $deploymentName `
   -Location westus `
-  -TemplateFile $templateFile `
-  -managementGroupName $managementGroupId
+  -TemplateFile $templateFile
 ```
-
-Notice that you have to provide the management group ID twice. The `-ManagementGroupId` parameter helps Azure PowerShell send the deployment to the correct management group. The `-managementGroupName` parameter value is sent into the deployment and becomes the value for the `managementGroupName` parameter.
 
 ::: zone-end
 
-Also notice that, as with subscription deployments, you're explicitly specifying a name and location for the deployment metadata. And you're using today's date to reduce the chance of using an existing deployment's name.
+Notice that, as with subscription deployments, you're explicitly specifying a name and location for the deployment metadata. And you're using today's date to reduce the chance of using an existing deployment's name.
 
 The deployment might take a minute or two to complete, and then you'll see a successful deployment.
 

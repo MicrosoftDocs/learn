@@ -6,11 +6,11 @@ metadata:
   brand: azure
   ms.date: 09/14/2020
   author: Randall-Knapp
-  ms.author: rknapp
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   adobe-target: true
-title: "Azure Fundamentals part 6: Describe Azure cost management and service level agreements"
+title: "Microsoft Azure Fundamentals: Describe Azure cost management and service level agreements"
 summary: |
   Migration to the cloud presents new ways to think about your IT expenses. The cloud also removes the burden of supporting IT infrastructure. 
 
@@ -59,8 +59,6 @@ summary: |
     Part 6: Describe Azure cost management and service level agreements
   :::column-end:::
   :::row-end:::
-
-  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](/learn/certifications/exams/az-900).
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.

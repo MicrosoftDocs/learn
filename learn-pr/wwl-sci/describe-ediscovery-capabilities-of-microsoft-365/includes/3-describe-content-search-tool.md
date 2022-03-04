@@ -7,7 +7,7 @@ The Content Search eDiscovery tool, accessible from the compliance center in Off
 - Microsoft 365 Groups
 - Yammer Groups
 
-To have access to the content search page to run searches and preview and export results, an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Security and Compliance Center. For more information, visit [Assign eDiscovery permissions](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions?view=o365-worldwide).
+To have access to the content search page to run searches and preview and export results, an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Security and Compliance Center. For more information, visit [Assign eDiscovery permissions](/microsoft-365/compliance/assign-ediscovery-permissions).
 
 ## Run a search
 
@@ -32,4 +32,5 @@ You can also use scripts for advanced scenarios. Sometimes you have to do more a
 - **Create, report on, and delete multiple searches** to quickly and efficiently identify, and cull search data.
 - **Clone a content search** and quickly compare the results of different keyword search queries run on the same content locations; or use the script to save time by not having to reenter a large number of content locations when you create a new search.
 
-Content Search is easy to use, but it's also a powerful tool. To learn more, visit the [content search overview](https://docs.microsoft.com/microsoft-365/compliance/search-for-content?view=o365-worldwide).
+Content Search is easy to use, but it's also a powerful tool. To learn more, visit the [content search overview](/microsoft-365/compliance/search-for-content).
+

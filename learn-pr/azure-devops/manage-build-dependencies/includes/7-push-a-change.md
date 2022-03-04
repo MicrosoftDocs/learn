@@ -16,7 +16,7 @@ At this point, you have two copies of Visual Studio Code open, one for the **Tai
 1. From the terminal, to create a branch named `add-game-style`, run the following `git checkout` command.
 
     ```bash
-    git checkout -b add-game-style
+    git checkout -B add-game-style
     ```
 
 ## Add a property to the Models package

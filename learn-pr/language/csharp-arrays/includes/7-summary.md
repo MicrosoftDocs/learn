@@ -6,7 +6,4 @@ Imagine how difficult it would be to handle related data in our code if we *didn
 
 Arrays can be sized when created according to the amount of data we need to work with.  In other modules, you'll learn how to add or remove the number of elements from arrays at run time.  You'll learn how to sort, filter, query, and aggregate values in arrays.  You'll learn how to split a string into an array based on some delimiter.  As you get even more familiar with arrays (and similar data structures), you'll use them frequently when you need to flexibly work with data in your applications.
 
-## Learn more with a Channel 9 video series
-
-- [C# 101](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha&azure-portal=true)
-- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/?&WT.mc_id=EducationalAdvancedCsharp-c9-niner&azure-portal=true)
+[!include[](../../../includes/dotnet-summary.md)]

@@ -26,8 +26,8 @@ When you visit the GitHub repository (https://github.com/Azure/Azure-Lighthouse-
 | **Onboarding scenario**                                      | **Template to use**                                          |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Subscription                                                 | [delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/delegated-resource-management) |
-| Resource group                                               | [rg-delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/rg-delegated-resource-management) |
-| Multiple resource groups within a subscription               | [multipleRgDelegatedResourceManagement](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/rg-delegated-resource-management) |
+| Resource group                                               | [rg-delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/delegated-resource-management/rg) |
+| Multiple resource groups within a subscription               | [multipleRgDelegatedResourceManagement](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/delegated-resource-management/rg) |
 | Subscription when using an offer published to Azure Marketplace | [marketplace-delegated-resource-management](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/marketplace-delegated-resource-management) |
 
 Templates can be used to automate and streamline the onboarding process, however:
@@ -96,9 +96,9 @@ Below is an example of what the file will look like:
 
 As Contoso does not yet have access to their new customer's Azure environments, but they have established a relationship with them over the signing of the new services contracts, Contoso will distribute the template files to the customers to deploy. One of the customer's users who has the Owner role for their Azure subscriptions can then deploy the template in their subscriptions.
 
-The onboarding template files always require a subscription-level deployment, even if you're onboarding only one or more resource groups within a subscription. For subscription level deployments you need to use PowerShell, for example:
+The onboarding template files always require a subscription-level deployment, even if you're onboarding only one or more resource groups within a subscription. For subscription level deployments you need to use Cloud Shell, for example:
 
-```JSON
+```azurecli
 # Log in first with az login if you're not using Cloud Shell
 
 # Deploy Azure Resource Manager template using template and parameter file locally

@@ -15,13 +15,13 @@ Here, you'll add a spot user node pool with automatic scaling to reduce your clu
     >
     >This exercise uses preview features. After you enable some preview features in Azure, defaults might be used for all Azure Kubernetes Service (AKS) clusters created in the subscription. Test any preview features in non-production subscriptions to avoid unforeseen side effects in production deployments.
 
-1. Register the **spotpoolpreview** flag by using the `az feature register` command. This command takes two parameters: *namespace* identifies the resource provider you're registering the feature with, and *name* identifies the feature.
+1. Register the **spotpoolpreview** flag by running the `az feature register` command. This command takes two parameters: *namespace* identifies the resource provider you're registering the feature with, and *name* identifies the feature.
 
     ```azurecli
     az feature register --namespace "Microsoft.ContainerService" --name "spotpoolpreview"
     ```
 
-1. Check that the registration is successful by querying the feature list table. Use the `az feature list` command to run the query. The feature's registration can take several minutes to finish, so you'll have to check the result periodically.
+1. Check that the registration is successful by querying the feature list table. Run the `az feature list` command to run the query. The feature's registration can take several minutes to finish, so you'll have to check the result periodically.
 
     ```azurecli
     az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/spotpoolpreview')].{Name:name,State:properties.state}"
@@ -59,7 +59,7 @@ You want to create a separate node pool that supports the batch-processing servi
 
 1. Run the same `az aks nodepool add` command as in the previous exercise to add a new spot node pool to your cluster. You'll need to change the node pool name and add a few more parameters to identify this node pool as a spot node pool.
 
-    Use the following values to set the node pool's parameters:
+    Enter the following values to set the node pool's parameters:
 
     - Name: `batchprocpl2`
     - Priority: `Spot`
@@ -151,7 +151,7 @@ You want to create a separate node pool that supports the batch-processing servi
 
 ## Configure a namespace
 
-1. Use the `kubectl create namespace` command to create a namespace called `costsavings` for the application. You'll use this namespace to make it easier to select your workloads.
+1. Run the `kubectl create namespace` command to create a namespace called `costsavings` for the application. You'll use this namespace to make it easier to select your workloads.
 
     ```bash
     kubectl create namespace costsavings
@@ -165,9 +165,9 @@ You want to create a separate node pool that supports the batch-processing servi
 
 ## Schedule a pod with spot node affinity
 
-You can schedule a pod to run on a spot node by adding toleration to the pod's deployment manifest file. When the toleration corresponds with the taint applied to your spot nodes, the pod is scheduled on these nodes.
+You can schedule a pod to run on a spot node by adding a toleration and an affinity to the pod's deployment manifest file. When the toleration and node affinity correspond with the taint and label applied to your spot nodes, the pod is scheduled on these nodes.
 
-The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure.com/scalesetpriority=spot:NoSchedule`. Use the information in this key-value pair in the `tolerations` section of your workloads YAML manifest file. With the second batch-processing pool configured as a spot node pool, you can now create a deployment file to schedule workloads to run on it.
+The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure.com/scalesetpriority=spot:NoSchedule` and a label that equals `kubernetes.azure.com/scalesetpriority=spot`. Use the information in this key-value pair in the `tolerations` and `affinity` section of your workloads YAML manifest file. With the second batch-processing pool configured as a spot node pool, you can now create a deployment file to schedule workloads to run on it.
 
 1. Create a manifest file for the Kubernetes deployment called `spot-node-deployment.yaml` by using the integrated editor:
 
@@ -197,11 +197,20 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
         operator: "Equal"
         value: "spot"
         effect: "NoSchedule"
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: "kubernetes.azure.com/scalesetpriority"
+                operator: In
+                values:
+                - "spot"
     ```
 
-1. Select <kbd>Ctrl</kbd>+<kbd>S</kbd> to save the file. Select <kbd>Ctrl</kbd>+<kbd>Q</kbd> to close the editor.
+1. Press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to close the editor.
 
-1. Use the `kubectl apply` command to apply the configuration and deploy the application in the `costsavings` namespace:
+1. Run the `kubectl apply` command to apply the configuration and deploy the application in the `costsavings` namespace:
 
     ```bash
     kubectl apply \
@@ -215,7 +224,7 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
     pod/nginx created
     ```
 
-1. You can fetch more information about the running pod by using the `-o wide` flag with the `kubectl get pods` command. In this case, you want to see which node the pod is scheduled on. Make sure to query for pods in the `costsavings` namespace.
+1. You can fetch more information about the running pod by using the `-o wide` flag when running `kubectl get pods` command. In this case, you want to see which node the pod is scheduled on. Make sure to query for pods in the `costsavings` namespace.
 
     ```bash
     kubectl get pods --namespace costsavings -o wide

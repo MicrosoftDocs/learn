@@ -4,87 +4,64 @@ Queues hold messages - packets of data whose shape is known to the sender applic
 
 Notice that `get` and `delete` are separate operations. This arrangement handles potential failures in the receiver and implements a concept called _at-least-once delivery_. After the receiver gets a message, that message remains in the queue but is invisible for 30 seconds. If the receiver crashes or experiences a power failure during processing, then it will never delete the message from the queue. After 30 seconds, the message will reappear in the queue and another instance of the receiver can process it to completion.
 
-## The Azure Storage Client Library for .NET
-
-The **Azure Storage Client Library for .NET** provides types to represent each of the objects you need to interact with:
-
-- `CloudStorageAccount` represents your Azure storage account.
-- `CloudQueueClient` represents Azure Queue storage.
-- `CloudQueue` represents one of your queue instances.
-- `CloudQueueMessage` represents a message.
-
-You will use these classes to get programmatic access to your queue. The library has both synchronous and asynchronous methods; you should prefer to use the asynchronous versions to avoid blocking the client app.
-
-> [!NOTE]
-> The Azure Storage Client Library for .NET is available in the **Azure.Storage.Queues** NuGet package. You can install it through an IDE, Azure CLI, or through PowerShell `Install-Package Azure.Storage.Queues`.
-
 ## How to connect to a queue
 
-To connect to a queue, you first create a `CloudStorageAccount` with your connection string. The resulting object can then create a `CloudQueueClient`, which in turn can open a `CloudQueue` instance. The basic code flow is shown below.
+You already saw how to connect to a queue in the last unit using the `QueueClient` class.  The `QueueClient` constructor takes the connection string and name of the queue that your application wants to connect to.  Then the `QueueClient` class contains methods to send messages to, peek at messages on, and receive messages from the queue.
 
 ```csharp
-CloudStorageAccount account = CloudStorageAccount.Parse(connectionString);
-
-CloudQueueClient client = account.CreateCloudQueueClient();
-
-CloudQueue queue = client.GetQueueReference("myqueue");
+QueueClient queueClient = new QueueClient(connectionString, queueName);
 ```
 
-Creating a `CloudQueue` doesn't necessarily mean the _actual_ storage queue exists. However, you can use this object to create, delete, and check for an existing queue. As mentioned above, all methods support both synchronous and asynchronous versions, but we will only be using the `Task`-based asynchronous versions.
-
-## How to create a queue
-
-You will use a common pattern for queue creation: the sender application should always be responsible for creating the queue. This keeps your application more self-contained and less dependent on administrative set-up. 
-
-To make the creation simple, the client library exposes a `CreateIfNotExistsAsync` method that will create the queue if necessary, or return `false` if the queue already exists. 
-
-Typical code is shown below.
-
-```csharp
-CloudQueue queue;
-//...
-
-await queue.CreateIfNotExistsAsync();
-```
-
-> [!NOTE]
-> You must have `Write` or `Create` permissions for the storage account to use this API. This is always true if you use the **Access Key** security model, but you can lock down permissions to the account with other approaches that will only allow read operations against the queue.
+You would create one `QueueClient` object for each queue that your application talks to. You would then pass the `QueueClient` instance to whatever methods in your code that need to access the queue.  The `QueueClient` class is thread-safe so a single instance can be used throughout your application.
 
 ## How to send a message
 
-To send a message, you instantiate a `CloudQueueMessage` object. The class has a few overloaded constructors that load your data into the message. We will use the constructor that takes a `string`. After creating the message, you use a `CloudQueue` object to send it.
-
-Here's a typical example:
+To send a message, you call the a `SendMessageAsync` method on a `QueueClient` object. The simplest way to send a message is to just pass a string to the SendMessageAsync` method.
 
 ```csharp
-var message = new CloudQueueMessage("your message here");
-
-CloudQueue queue;
-//...
-
-await queue.AddMessageAsync(message);
+Response<SendReceipt> response = await queueClient.SendMessageAsync("This is a message");
 ```
 
+Typically though, when exchanging data between applications, a message needs to contain multiple fields of data.  For this reason, messages are often passed in a structured format like JSON to the queue.  To do this, you need to first serialize an object representing the message to JSON and then pass the resulting JSON to the queue.
+
+```csharp
+string messageJson = JsonSerializer.Serialize(objectData);
+Response<SendReceipt> response = await queueClient.SendMessageAsync(messageJson);
+```
+
+To include binary data in the message, first Base64 encode the binary data into a string. Then, the Base64 encoded string can then be sent to the storage queue, either directly or as a property on a JSON object.
+
 > [!NOTE]
-> While the total queue size can be up to 500 TB, the individual messages in it can only be up to 64 KB in size (48 KB when using Base64 encoding). If you need a larger payload you can combine queues and blobs – passing the URL to the actual data (stored as a Blob) in the message. This approach would allow you to enqueue up to 200 GB for a single item.
+> While the total queue size can be up to 500 TB, the individual messages in it can only be up to 64 KB in size (48 KB when using Base64 encoding). If you need a larger payload you can combine queues and blobs – passing the URL to the actual data (stored as a Blob) in the message. This approach would allow you to enqueue up to 4.77 TB in a Block Blob. The increased blob size better supports a diverse range of scenarios, from media companies storing and processing 4K and 8K videos to cancer researchers sequencing DNA.  
+
+## How to peek at messages
+
+Sometimes your application may need to peek at a message in the queue without dequeuing the message. This is done by calling the `PeekMessageAsync` method on the `QueueClient` class.  Accessing the `Value` property of the `Response` class gives you access to the `PeekedMessage` object.
+
+```csharp
+Response<PeekedMessage> response = await queueClient.PeekMessageAsync();
+PeekedMessage message = response.Value;
+
+Console.WriteLine($"Message id  : {message.MessageId}");
+Console.WriteLine($"Inserted on : {message.InsertedOn}");
+```
 
 ## How to receive and delete a message
 
-In the receiver, you get the next message, process it, and then delete it after processing succeeds. Here's a simple example:
+When the receiver application is ready to process a message, it calls the `ReceiveMessageAsync` method on the `QueueClient` object to pull the next message off of the queue. A `QueueMessage` object represents the message and can be accessed By using the `Value` property on the `Response` object.
+
+The `QueueMessage` class contains properties to get the message ID, when the message was inserted into the queue and several others.  The most important property though is the `Body` property which contains the contents of the message.  If the message was formatted as JSON, you can use the `ToObjectFromJson` method to convert the message into the appropriate object type.
 
 ```csharp
-CloudQueue queue;
-//...
+Response<QueueMessage> response = await queueClient.ReceiveMessageAsync();
+QueueMessage message = response.Value;
+NewsArticle article = message.Body.ToObjectFromJson<NewsArticle>();
+```
 
-CloudQueueMessage message = await queue.GetMessageAsync();
+When you are finished processing this message, you need to delete this message from the queue.  This insures no other consumers pick up this message and process it.  You do this by calling the `DeleteMessageAsync` method on the `QueueClient` object. You will need to provide the values of the `MessageId` and `PopReceipt` properties of the `QueueMessage` that you want to be deleted from the queue.
 
-if (message != null)
-{
-    // Process the message
-    //...
-
-    await queue.DeleteMessageAsync(message);
-}
+```csharp
+await queueClient.DeleteMessageAsync(message.MessageId, message.PopReceipt);
 ```
 
 Let's now apply this new knowledge to our application!

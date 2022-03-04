@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-basic-formatting
 metadata:
-  title: Perform basic string formatting in C#
+  title: 'Perform basic string formatting in C#'
   description: Combine literal and variable text data that are filled with special characters, formatting, and Unicode into meaningful messages for the end user.
   ms.date: 09/17/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Perform basic string formatting in C#

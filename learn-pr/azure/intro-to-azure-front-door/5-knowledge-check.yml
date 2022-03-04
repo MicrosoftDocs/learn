@@ -5,10 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 03/14/2021  
-  author: micrum
-  ms.author: micrum  
-  ms.topic: interactive-tutorial 
+  ms.date: 03/14/2021
+  author: duongau
+  ms.author: duau
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
@@ -17,9 +17,9 @@ quiz:
   questions:
   - content: "Contoso is deciding the best way to optimize performance of their distributed web apps. It's important that Contoso's users can access locally cached content to help optimize access times. Which of the following solutions is recommended?"
     choices:
-    - content: "Azure Front Door (Classic)"
+    - content: "Azure Front Door"
       isCorrect: False
-      explanation: "Incorrect. Azure Front Door (Classic) enables an entry point to your apps that are positioned in the Microsoft global edge network."
+      explanation: "Incorrect. Azure Front Door enables an entry point to your apps that are positioned in the Microsoft global edge network."
     - content: "Azure Web Application Firewall"
       isCorrect: false
       explanation: "Incorrect. Azure Web Application Firewall doesn't provide this capability."
@@ -39,9 +39,9 @@ quiz:
       explanation: "Correct. Both Azure Front Door Standard and Premium SKUs support this feature."
   - content: "Security admins at Contoso want to ensure that the Azure Front Door SKU you select integrates with Microsoft Threat Intelligence and security analytics. Which SKU provides this support?"
     choices:
-    - content: "Azure Front Door (Classic)"
+    - content: "Azure Front Door"
       isCorrect: false
-      explanation: "Incorrect. Azure Front Door (Classic) doesn't support this integration."
+      explanation: "Incorrect. Azure Front Door doesn't support this integration."
     - content: "Azure Front Door Premium"
       isCorrect: true
       explanation: "Correct. Azure Front Door Premium supports this integration."

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-write-data-azure-databricks.exercises
+title: 'Exercises: Read and write data'
+metadata:
+  title: 'Exercises: Read and write data'
+  description: "Exercises: Read and write data"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercises.md)]
