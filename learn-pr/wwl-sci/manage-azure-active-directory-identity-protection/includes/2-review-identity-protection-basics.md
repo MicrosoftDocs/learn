@@ -35,7 +35,7 @@ Identity Protection identifies risks in the following classifications:
     Atypical travel
   :::column-end:::
   :::column:::
-    Sign in from an atypical location based on the user's recent sign-ins.
+    Sign in from an atypical location based on the user's recent sign ins.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -48,7 +48,7 @@ Identity Protection identifies risks in the following classifications:
 :::row-end:::
 :::row:::
   :::column:::
-    Unfamiliar sign-in properties
+    Unfamiliar sign in properties
   :::column-end:::
   :::column:::
     Sign in with properties we've not seen recently for the given user.
@@ -146,7 +146,7 @@ Identity Protection requires users be a Security Reader, Security Operator, Secu
     Security Operator
   :::column-end:::
   :::column:::
-    View all Identity Protection reports and Overview blade, Dismiss user risk, confirm safe sign-in, confirm compromise
+    View all Identity Protection reports and Overview screen, Dismiss user risk, confirm safe sign in, confirm compromise
   :::column-end:::
   :::column:::
     Configure or change policies, Reset password for a user, Configure alerts
@@ -157,7 +157,7 @@ Identity Protection requires users be a Security Reader, Security Operator, Secu
     Security Reader
   :::column-end:::
   :::column:::
-    View all Identity Protection reports and Overview blade
+    View all Identity Protection reports and Overview screen
   :::column-end:::
   :::column:::
     Configure or change policies, Reset password for a user, Configure alerts, Give feedback on detections
@@ -165,9 +165,9 @@ Identity Protection requires users be a Security Reader, Security Operator, Secu
 :::row-end:::
 
 
-Currently, the Security Operator role cannot access the Risky sign-ins report.
+Currently, the Security Operator role cannot access the Risky sign ins report.
 
-Conditional Access Administrators can also create policies that factor in sign-in risk as a condition.
+Conditional Access Administrators can also create policies that factor in sign in risk as a condition.
 
 ## License requirements
 
@@ -263,7 +263,7 @@ Using this feature requires an Azure AD Premium P2 license.
     Security reports
   :::column-end:::
   :::column:::
-    Risky sign-ins
+    Risky sign ins
   :::column-end:::
   :::column:::
     Limited information. No risk detail or risk level is shown.
