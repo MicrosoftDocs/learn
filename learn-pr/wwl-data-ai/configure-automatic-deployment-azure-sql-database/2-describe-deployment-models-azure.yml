@@ -6,7 +6,7 @@ metadata:
   description: "Describe deployment models in Azure"
   ms.date: 12/15/2020
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: v-vancexu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

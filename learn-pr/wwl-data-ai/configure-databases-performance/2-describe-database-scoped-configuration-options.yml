@@ -6,7 +6,7 @@ metadata:
   description: "Describe database scoped configuration options"
   ms.date: 08/23/2020
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: v-vancexu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

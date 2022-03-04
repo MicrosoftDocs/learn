@@ -5,7 +5,7 @@ metadata:
   description: "Use built-in functions and GROUP BY in Transact-SQL"
   ms.date: 06/22/2021
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: v-vancexu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use built-in functions and GROUP BY in Transact-SQL

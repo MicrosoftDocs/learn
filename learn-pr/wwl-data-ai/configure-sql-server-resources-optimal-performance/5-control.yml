@@ -6,7 +6,7 @@ metadata:
   description: "Control SQL Server resources"
   ms.date: 10/14/2020
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: v-vancexu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

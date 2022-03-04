@@ -6,7 +6,7 @@ metadata:
   description: "Describe Azure automation"
   ms.date: 12/14/2020
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: v-vancexu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
