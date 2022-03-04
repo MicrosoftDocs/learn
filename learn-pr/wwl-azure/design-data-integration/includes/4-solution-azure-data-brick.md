@@ -1,4 +1,4 @@
-[Azure Databricks](https://azure.microsoft.com/services/databricks/) is a fully managed, cloud-based Big Data and Machine Learning platform, which empowers developers to accelerate AI and innovation. Azure Databricks provides data science and engineering teams with a single platform for Big Data processing and Machine Learning. Azure Databricks’ managed Apache Spark platform makes it simple to run large-scale Spark workloads.
+[Azure Databricks](/azure/databricks/) is a fully managed, cloud-based Big Data and Machine Learning platform, which empowers developers to accelerate AI and innovation. Azure Databricks provides data science and engineering teams with a single platform for Big Data processing and Machine Learning. Azure Databricks’ managed Apache Spark platform makes it simple to run large-scale Spark workloads.
 
 Azure Databricks offers three environments for developing data intensive applications: Databricks SQL, Databricks Data Science & Engineering, and Databricks Machine Learning.
 
@@ -23,9 +23,9 @@ In the above scenario, you would choose Databricks Data Science and Engineering 
 
 - The runtime abstracts out the infrastructure complexity and the need for specialized expertise to set up and configure your data infrastructure so users can use the languages they are skilled in like Python, Scala, R and explore the data
 
-- This also integrates deeply with Azure databases and stores: Synapse Analytics, Cosmos DB, Data Lake Store, and Blob storage for Contoso’s big data storage needs
+- This also integrates deeply with Azure databases and stores: Synapse Analytics, Cosmos DB, Data Lake Store, and Blob storage for Tailwind Traders big data storage needs
 
-- Integration with Power BI allows for quick and meaningful insights which is a requirement for Contoso.
+- Integration with Power BI allows for quick and meaningful insights which is a requirement for Tailwind Traders.
 
 - Databricks SQL is not the right choice since it cannot handle unstructured data
 
@@ -35,15 +35,12 @@ In the above scenario, you would choose Databricks Data Science and Engineering 
 
 ## How Azure Databricks works
 
-As shown in the following diagram, 
+Azure Databricks has a Control plane and a Data plane. 
 
-- There is a Control Plane on the left, which hosts Databricks jobs, notebooks with query results, the cluster manager, web application, Hive metastore, and security access control lists (ACLs) and user sessions. These components are managed by Microsoft in collaboration with Databricks and do not reside within your Azure subscription.
+- The Control Plane hosts Databricks jobs, notebooks with query results, and the cluster manager. The Control plan also has the web application, hive metastore, and security access control lists (ACLs) and user sessions. These components are managed by Microsoft in collaboration with Databricks and do not reside within your Azure subscription.
 
-- On the right-hand side is the Data Plane, which contains all the Databricks runtime clusters hosted within the workspace. All data processing and storage exists within the client subscription. This means no data processing ever takes place within the Microsoft/Databricks-managed subscription.
-
+- The Data Plane contains all the Databricks runtime clusters hosted within the workspace. All data processing and storage exists within the client subscription. This means no data processing ever takes place within the Microsoft/Databricks-managed subscription.
  
-
-:::image type="content" source="../media/databricks-architecture.png" alt-text="Azure Databricks platform architecture.":::
 
  
 
@@ -63,6 +60,6 @@ You can use Azure Databricks as a solution for the following scenarios.
 
 - **Improve productivity across data and analytics teams** - Create a collaborative environment and shared workspaces for data engineers, analysts, and scientists to work together across the data science lifecycle with shared workspaces, saving teams precious time and resources.
 
-- **Big data workloads** – Leverage Delta Lake and engine to get the best performance and reliability for your big data workloads, and to create no-fuss multi-step data pipelines
+- **Big data workloads** – Leverage Data Lake and engine to get the best performance and reliability for your big data workloads, and to create no-fuss multi-step data pipelines
 
 - **Machine learning programs** – Leverage integrated end-to-end machine learning environment incorporating managed services for experiment tracking, model training, feature development and management, and feature and model serving

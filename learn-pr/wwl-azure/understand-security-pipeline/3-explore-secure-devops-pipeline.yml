@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-security-pipeline.explore-secure-devops-pipeline
+title: Explore Secure DevOps pipeline
+metadata:
+  title: Explore Secure DevOps pipeline
+  description: "Explore Secure DevOps pipeline"
+  ms.date: 03/03/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-explore-secure-devops-pipeline.md)]
