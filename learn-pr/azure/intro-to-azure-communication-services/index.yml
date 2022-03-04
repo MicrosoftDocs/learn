@@ -5,7 +5,7 @@ metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure Communication Services          # Do not edit: title must be "Introduction to (product)"
   description: Discover the key products and services that can help you create communication applications on Azure with Communication Services.
-  ms.date: 01/25/2022            # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 03/04/2022            # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: ProbablePrime      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: rifox           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
