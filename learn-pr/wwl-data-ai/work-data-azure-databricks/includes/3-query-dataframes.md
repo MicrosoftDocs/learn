@@ -117,7 +117,7 @@ df2.dropna #drop rows containing null values
 df3.dropDuplicates #drop duplicate rows
 ```
 
-To get statistics about the DataDrame use `summary` or `describe`:
+To get statistics about the DataFrame use `summary` or `describe`:
 
 ```python
 df.summary().show()
