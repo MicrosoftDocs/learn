@@ -21,8 +21,6 @@ ACS features are:
 - **Telephony** - Acquire telephone numbers and use them within your communication applications to provide calls and other services to real phone numbers.
 - **SMS** - Send receive and manage text messages.
 
-We'll provide additional details on these main areas throughout this module.
-
 ACS does have additional features but these are the main ones, which we will be focusing on for this module. For other features you can find a link at the end of this module.
 
 ## How to solve our scenario?
@@ -56,7 +54,7 @@ On top of this there are several additional features that may also be useful to 
 - **Screen sharing** - Allow participants to share their screen to display documents, presentations and other items.
 - **Custom video streams** - Allow participants to share a remote video stream which allows you to send custom video items from devices and programs.
 
-You can read more about our calling features within our documentation which covers them in more detail.
+You can read more about our calling features within ACS' documentation which covers them in more detail.
 
 :::image type="content" source="../media/calling.png" alt-text="Example ACS calling application.":::
 
@@ -69,7 +67,7 @@ Chat provides one-to-one and group chat threads and messages that allow users to
 - **Notifications** - Receive push notifications of new messages or events within a chat thread on a mobile device.
 - **Emojis and Metadata** - Add emojis and Metadata to your chat messages.
 
-You can read more about our chat features within our documentation which covers them in more detail. See the reference section at the end of the module for more information.
+You can read more about chat features within ACS' documentation which covers them in more detail. See the reference section at the end of the module for more information.
 
 :::image type="content" source="../media/chat.jpg" alt-text="Example ACS pop-up chat.":::
 
@@ -80,11 +78,11 @@ Telephony provides calling over the Publicly Switched Telephone Network(PSTN). T
 - **Phone number management** - Buy and manage real-world phone numbers to use with your telephony systems. This includes Toll Free numbers.
 - **Direct routing** - Route ACS numbers and calls to your on premises telephony systems.
 
-You can read more about our telephony features within our documentation which covers them in more detail. See the reference section at the end of the module for more information.
+You can read more about telephony features within ACS' documentation which covers them in more detail. See the reference section at the end of the module for more information.
 
 ### SMS features
 
-Our Short Messaging Service(SMS) features let you interact with regular SMS messaging including:
+Short Messaging Service(SMS) features let you interact with regular SMS messaging including:
 
 - **Send SMS** - Send text messages to Phone numbers.
 - **Receive SMS** - Receive text messages and process them through Event Grid.
@@ -92,6 +90,6 @@ Our Short Messaging Service(SMS) features let you interact with regular SMS mess
 - **Bulk messaging** - Send large marketing or notification messages.
 - **Shortcodes** - Use abbreviated phone numbers for marketing and services.
 
-You can read more about our SMS features within our documentation which covers them in more detail.
+You can read more about SMS features within ACS' documentation which covers them in more detail.
 
 :::image type="content" source="../media/sms.png" alt-text="Example ACS SMS.":::

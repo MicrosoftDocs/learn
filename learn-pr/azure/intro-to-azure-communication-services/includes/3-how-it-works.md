@@ -1,4 +1,4 @@
-Here we'll discuss how Azure Communication Services works behind the scenes. You'll learn about the pieces of Azure Communication Services and how they work together to solve your communication problems. 
+Here let's discuss how Azure Communication Services works behind the scenes. You'll learn about the pieces of Azure Communication Services and how they work together to solve your communication problems. 
 
 We'll be covering:
 
@@ -21,7 +21,7 @@ With a properly configured resource within the Azure Portal, you and your team c
 
 ## Server SDKs
 
-With an Azure resource setup, another component is some form of server-side management. This is created with our server focused SDKs.
+With an Azure resource setup, another component is some form of server-side management. This is created with server focused SDKs.
 
 Server-side programming is performed by downloading these SDKs, and writing small amounts of code which interact with Azure Communication Services. There's a couple of features and parts of Azure Communication Services that needs this:
 
@@ -32,29 +32,29 @@ Server-side programming is performed by downloading these SDKs, and writing smal
 
 Not all parts of Azure Communications Services will need it, but it's good to be aware of so you know what to expect.
 
-We have Server SDKs available for:
+ACS has Server SDKs available for:
 
 * JavaScript
 * .NET
 * Java Server Edition(SE)
 * Python
 
-You can find a link to all of our SDKs in the references section of this module.
+You can find a link to all of the SDKs in the references section of this module.
 
 ## Client SDKs
 
 The last component of how Azure Communication Services works is also the most important as it provides the gateway for your customers to use Azure Communication Services products.
 
-Our Client SDKs are downloaded and then integrated into your existing applications and products. When a customer makes a video call or talks using chat, it's the Client SDKs that connect you to the call and receive/transmit the audio and video.
+Client SDKs are downloaded and then integrated into your existing applications and products. When a customer makes a video call or talks using chat, it's the Client SDKs that connect you to the call and receive/transmit the audio and video.
 
-We have Client SDKs available for:
+ACS has Client SDKs available for:
 
 * JavaScript
 * .NET (C#)
 * iOS (Swift)
 * Android
 
-You can find a link to all of our SDKs in the references section of this module.
+You can find a link to all of the SDKs in the references section of this module.
 
 ## Tying it all together
 
