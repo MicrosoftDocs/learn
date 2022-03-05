@@ -14,6 +14,24 @@ By learning about ACS and using our decision criteria to evaluate if ACS is righ
 
 ## References
 
+### General information
+
+General information on Azure Communication Services and its features:
+
 - [What is Azure Communication Services](/azure/communication-services/overview)
 - [Azure Communication Services SDKs & APIS](/azure/communication-services/concepts/sdk-options)
 - [Azure Communication Services Samples](/azure/communication-services/samples/overview)
+
+### Combining other Azure features
+
+Combining Azure Communication Services features with other Azure products:
+
+- [Using Azure Event Grid to process SMS, Chat and Calling events](/azure/event-grid/event-schema-communication-services) through Event Grid endpoints such as Azure Functions and Webhooks to enhance functionality through things like automatic responses, bots, call routing etc.
+- [Sending Diagnostic information on call quality, usage etc to Azure Monitor Log Analytics](/azure/communication-services/concepts/analytics/enable-logging).
+- Using [Teams Interoperability](/azure/communication-services/concepts/teams-interop) to bring ACS calls into your Microsoft Teams environment.
+- Use [Azure Logic Apps](/azure/communication-services/quickstarts/sms/logic-app) to process SMS messages for SMS Automation.
+
+### Regional and location specific information
+
+- [Telephony regions eligibility](/azure/communication-services/concepts/numbers/sub-eligibility-number-capability)
+- [Additional SMS message information](/azure/communication-services/concepts/sms/sms-faq)

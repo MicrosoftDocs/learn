@@ -45,10 +45,18 @@ If your business/application/idea intends to use languages or devices/browsers t
 
 ### Geographic Region
 
-Some features of ACS are only available in certain countries or locations, additionally certain countries, or locations may have restrictions placed upon them. These restrictions or gaps in ACS' support across the world, can be caused by legal or regulatory matters or by ACS simply not supporting a region yet. When considering if ACS is right for you, ensure that you factor this into your current business as well as any potential expansion of your business. You can read about regional differences in offerings of ACS features on a variety of pages:
+Some features of ACS are only available in certain countries or locations, additionally certain countries, or locations may have restrictions placed upon them. These restrictions or gaps in ACS' support across the world, can be caused by legal or regulatory matters or by ACS simply not supporting a region yet. When considering if ACS is right for you, ensure that you factor this into your current business as well as any potential expansion of your business.
 
-* [Telephony regions eligibility](/azure/communication-services/concepts/numbers/sub-eligibility-number-capability)
-* [Additional SMS message information](/azure/communication-services/concepts/sms/sms-faq)
+Of particular mention in this area are our telephony and SMS features. As telephone networks in different countries vary in terms of structure and regulatory/legal matters it is very important to ensure that ACS supports your target location. Additionally, the location of your billing address also affects this. For example, to make calls or send SMS messages to a UK number you will need a billing address in the UK.
+
+SMS and Telephony is currently only available in the following locations:
+
+* UK
+* USA
+* Ireland
+* Denmark
+
+You can read additional information about regional differences in offerings of ACS features within our documentation, a link is provided in the references section of this module.
 
 ### Suitability
 

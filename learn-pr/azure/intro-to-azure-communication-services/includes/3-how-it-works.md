@@ -39,7 +39,7 @@ We have Server SDKs available for:
 * Java Server Edition(SE)
 * Python
 
-You can get these from our [SDK Documentation page](/azure/communication-services/concepts/sdk-options).
+You can find a link to all of our SDKs in the references section of this module.
 
 ## Client SDKs
 
@@ -54,7 +54,7 @@ We have Client SDKs available for:
 * iOS (Swift)
 * Android
 
-You can get these from our [SDK Documentation page](/azure/communication-services/concepts/sdk-options).
+You can find a link to all of our SDKs in the references section of this module.
 
 ## Tying it all together
 
