@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/02/2022
+  ms.date: 03/05/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "Azure AD B2B"
       isCorrect: false
-      explanation: "B2B collaboration allows you to share your organization’s applications and services with guests from other organizations. It is not suitable for a customer app."
+      explanation: "Incorrect. B2B collaboration allows you to share your organization’s applications and services with guests from other organizations. It is not suitable for a customer app."
     - content: "Azure AD B2C"
       isCorrect: true
-      explanation: "Azure AD B2C is an authentication solution for customers that you can customize with your brand identity."
+      explanation: "Correct. Azure AD B2C is an authentication solution for customers that you can customize with your brand identity."
     - content: "Azure AD Hybrid identities"
       isCorrect: false
-      explanation: "Azure AD hybrid identities synchronize identities between on premises Active Directory, and Azure Active Directory. It is not suitable for a customer app."
+      explanation: "Incorrect. Azure AD hybrid identities synchronize identities between on premises Active Directory, and Azure Active Directory. It is not suitable for a customer app."
   - content: "An organization that has completed a full migration to the cloud has purchased devices for all its employees and all employees sign in to the device through an organizational account configured in Azure AD.  Select the option that best describes how these devices are set up in Azure AD."
     choices:
     - content: "These devices are set up as Azure AD registered."

@@ -20,13 +20,15 @@ For the service principals to be able to access resources secured by the Azure A
 
 Managed identities are a type of service principal that are automatically managed in Azure AD and eliminate the need for developers to manage credentials.  Managed identities provide an identity for applications to use when connecting to Azure resources that support Azure AD authentication and can be used without any extra cost.
 
-For a complete list of services, refer to [Azure Services that support managed identities](/azure/active-directory/managed-identities-azure-resources/services-support-managed-identities).
+:::image type="content" source="../media/when-use-managed-identities-inline.png" lightbox="../media/when-use-managed-identities-expanded.png" alt-text="How a developer may use managed identities to get access to resources from their code without managing credentials.":::
+
+For a list of Azure Services that support managed identities, refer to the Learn more section of the Summary and resources unit.
 
 There are two types of managed identities: system-assigned and user-assigned.
 
 **System-assigned**. Some Azure services allow you to enable a managed identity directly on a service instance. When you enable a system-assigned managed identity, an identity is created in Azure AD that's tied to the lifecycle of that service instance. When the resource is deleted, Azure automatically deletes the identity for you. By design, only that Azure resource can use this identity to request tokens from Azure AD.
 
-**User-assigned**. You may also create a managed identity as a standalone Azure resource. A user-assigned managed identity is assigned to one or more instances of an Azure service. You can create a user-assigned managed identity and assign it to one or more instances of an Azure service. With user-assigned managed identities, the identity is managed separately from the resources that use it.
+**User-assigned**. You may also create a managed identity as a standalone Azure resource. Once you create a user-assigned managed identity you can assign it to one or more instances of an Azure service. With user-assigned managed identities, the identity is managed separately from the resources that use it.
 
 The following table summarizes the differences between system-assigned and user-assigned managed identities:
 
@@ -39,7 +41,7 @@ The following table summarizes the differences between system-assigned and user-
 
 ### Device
 
-A device is a piece of hardware, such as mobile devices, laptops, servers, or printer. A device identity gives administrators information they can use when making access or configuration decisions.  Device identities can be set up in different ways in Azure AD.
+A device is a piece of hardware, such as mobile devices, laptops, servers, or printers. A device identity gives administrators information they can use when making access or configuration decisions.  Device identities can be set up in different ways in Azure AD.
 
 - **Azure AD registered devices**. The goal of Azure AD registered devices is to provide users with support for bring your own device (BYOD) or mobile device scenarios. In these scenarios, a user can access your organization’s resources using a personal device. Azure AD registered devices register to Azure AD without requiring an organizational account to sign in to the device. Supported operating systems for Azure AD registered devices include Windows 10 and above, iOS, Android, and macOS.  
 - **Azure AD joined**. An Azure AD joined device is a device joined to Azure AD through an organizational account, which is then used to sign in to the device. Azure AD joined devices are generally owned by the organization. Supported operating systems for Azure AD joined devices include Windows 10 or greater (except Home edition) and Windows Server 2019 Virtual Machines running in Azure.
