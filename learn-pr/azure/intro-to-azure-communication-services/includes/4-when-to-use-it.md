@@ -48,7 +48,7 @@ If your business/application/idea intends to use languages or devices/browsers t
 Some features of ACS are only available in certain countries or locations, additionally certain countries, or locations may have restrictions placed upon them. These restrictions or gaps in ACS' support across the world, can be caused by legal or regulatory matters or by ACS simply not supporting a region yet. When considering if ACS is right for you, ensure that you factor this into your current business as well as any potential expansion of your business. You can read about regional differences in offerings of ACS features on a variety of pages:
 
 * [Telephony regions eligibility](/azure/communication-services/concepts/numbers/sub-eligibility-number-capability)
-* [Additional tes message information](/azure/communication-services/concepts/sms/sms-faq)
+* [Additional SMS message information](/azure/communication-services/concepts/sms/sms-faq)
 
 ### Suitability
 

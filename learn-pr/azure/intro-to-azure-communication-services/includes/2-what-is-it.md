@@ -1,4 +1,4 @@
-Let's start with an overview of Azure Communication Services(ACS).
+Let's start with an overview of Azure Communication Services (ACS).
 
 ## What is Azure Communication Services?
 
@@ -11,9 +11,9 @@ ACS is a platform of products and services that enable you to create custom comm
 
 By combining ACS with other Azure offerings, you'll be able to launch communication solutions in no time and without the pain of managing infrastructure or dealing with maintenance.
 
-## ACS' main product areas
+## ACS' main features
 
-ACS product areas are:
+ACS features are:
 
 - **Identity** - Create and manage ACS identities.
 - **Voice and video calling** - Create custom voice and video calling solutions.
@@ -23,7 +23,7 @@ ACS product areas are:
 
 We'll provide additional details on these main areas throughout this module. 
 
-ACS does have [additional product areas](/azure/communication-services/overview) but these are the main ones, which we will be focusing on for this module.
+ACS does have [additional features](/azure/communication-services/overview) but these are the main ones, which we will be focusing on for this module.
 
 ## How to solve our scenario?
 
