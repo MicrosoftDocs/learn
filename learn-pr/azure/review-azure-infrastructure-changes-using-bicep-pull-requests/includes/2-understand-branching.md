@@ -10,7 +10,7 @@ A typical process might be the following:
 
 1. A team member clones your shared repository.
 1. They make local changes on a branch in their own local copy of the repository.
-1. When they are finished with their changes, they merge these changes in their local repository's main branch.
+1. When they're finished with their changes, they merge these changes in their local repository's main branch.
 1. They push these changes to the remote repository's main branch.
 1. In some scenarios, the remote repository's push triggers an automated pipeline to verify, test and deploy the code. You'll learn more about pipelines in other Microsoft Learn modules.
 
@@ -20,7 +20,7 @@ The following diagram illustrates the process above.
 
 Suppose the changes that the team member made introduced a subtle bug. After the complete process runs, the bug is now in the main branch of the project. This is the branch that gets deployed to production. You might not discover it until you try to deploy it and get an error. Or, for other types of bugs, the deployment might succeed but cause subtle problems later.
 
-In another scenario, suppose a team member is working on a feature and pushes half of the finished work of the feature to the shared repository's main branch. You now have changes on the main branch that are not completely finished. These probably should not be deployed to your production environment, because the work is not completely done and might not even be tested. Deployments to production might need to be blocked until the feature is finished. This means that, if there are other newly finished features in the main branch, they might not be able to be deployed and used by your customers.
+In another scenario, suppose a team member is working on a feature and pushes half of the finished work of the feature to the shared repository's main branch. You now have changes on the main branch that aren't completely finished. These probably shouldn't be deployed to your production environment, because the work isn't completely done and might not even be tested. Deployments to production might need to be blocked until the feature is finished. This means that, if there are other newly finished features in the main branch, they might not be able to be deployed and used by your customers.
 
 > [!TIP]
 > These problems are particularly difficult for large teams, where multiple people contribute to the same code. But, the guidance in this module is also valuable as soon as you collaborate with more than one person - or even when it is just you working on a project, and you work on multiple separate features at the same time.
@@ -29,7 +29,7 @@ A better way of working is to keep your changes separate while you work on them,
 
 ## Feature branches
 
-A *feature branch* indicates a new piece of work you are starting, like a change to the configuration of a resource defined in your Bicep file, or a new set of resources you need to deploy. Every time you start a new piece of work, you create a new feature branch.
+A *feature branch* indicates a new piece of work you're starting, like a change to the configuration of a resource defined in your Bicep file, or a new set of resources you need to deploy. Every time you start a new piece of work, you create a new feature branch.
 
 You create a feature branch from the main branch. By doing this, you ensure that you're starting from the current state of your Azure environment. Then, you make all of the changes that you need to implement the change. Because all of the code changes are committed to the feature branch, they won't interfere with the main branch of the repository. And, if somebody else on your team needs to make an urgent change to the main branch, they can do that on another feature branch, independent of yours.
 
@@ -99,11 +99,11 @@ The process you've learned about so far is a version of the *trunk-based develop
 
 Some teams separate the work that they've completed from the work that they've deployed to production. They use a long-lived *development* branch as the target for merging their feature branches, and they merge the *development* branch to their *main* branch when they release changes to production.
 
-Some other branching strategies require you to create *release branches*. When you have a set of changes ready to deploy to production, you create a release branch with the changes to deploy. These strategies can make sense when you deploy your Azure infrastructure on a regular cadence, or when you are integrating your changes with many other teams.
+Some other branching strategies require you to create *release branches*. When you have a set of changes ready to deploy to production, you create a release branch with the changes to deploy. These strategies can make sense when you deploy your Azure infrastructure on a regular cadence, or when you're integrating your changes with many other teams.
 
-Other branching strategies you might come across include GitFlow, GitHub Flow, and GitLab Flow. Some teams use GitHub Flow or GitLab Flow because it enables separating work from different teams, as well as separating urgent bug fixes from other changes. These processes can also enable you to separate your commits into different releases of your solution, which is called *cherry picking*. However, they require more management to ensure that your changes are compatible with each other. We provide links to more information on these branching strategies in the summary of this module.
+Other branching strategies you might come across include Gitflow, GitHub Flow, and GitLab Flow. Some teams use GitHub Flow or GitLab Flow because it enables separating work from different teams, as well as separating urgent bug fixes from other changes. These processes can also enable you to separate your commits into different releases of your solution, which is called *cherry picking*. However, they require more management to ensure that your changes are compatible with each other. We provide links to more information on these branching strategies in the summary of this module.
 
-The branching strategy that's right for your team depends on the way your team works, collaborates, and releases your changes. It's a good idea to start from a simple process, like trunk-based development. If you find your team isn't able to work effectively by using this process, gradually introduce additional layers of branching, or adopt a branching strategy. But be aware that as you add more branches, it'll become more complex to manage your repository.
+The branching strategy that's right for your team depends on the way your team works, collaborates, and releases your changes. It's a good idea to start from a simple process, like trunk-based development. If you find your team isn't able to work effectively by using this process, gradually introduce additional layers of branching, or adopt a branching strategy. But be aware that as you add more branches, it will become more complex to manage your repository.
 
 > [!TIP]
 > Regardless of the branching strategy you use, it's good to use branch policies to protect the main branch, and to use pull requests to review your changes. Other branching strategies also introduce other important branches that you should protect.
