@@ -46,7 +46,7 @@ It's a good idea to update your feature branch regularly so that you incorporate
 
 ### Use small, short-lived branches
 
-It's a good idea to aim for short-lived feature branches. This helps you to avoid merge conflicts by reducing the amount of time that your branches might get out of sync. It also makes it easier for you colleagues to understand the changes that have been made, which is helpful when you need someone to review your changes.
+It's a good idea to aim for short-lived feature branches. This helps you to avoid merge conflicts by reducing the amount of time that your branches might get out of sync. It also makes it easier for your colleagues to understand the changes that have been made, which is helpful when you need someone to review your changes.
 
 Split up large pieces of work into multiple smaller pieces and create new feature branches for each one. The bigger the feature the longer someone will need to work on it and the longer the feature branch will live. You can deploy the smaller changes to production as you merge each feature branch, and gradually build up the feature you're building towards.
 
