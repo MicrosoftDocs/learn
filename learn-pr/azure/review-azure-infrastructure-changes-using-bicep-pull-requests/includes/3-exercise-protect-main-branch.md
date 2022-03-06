@@ -229,15 +229,15 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
 1. Near the top of the *main.bicep* file, add a new variable for the name of the queue:
 
-   :::code language="bicep" source="code/3-main-final.bicep" range="11-12" highlight="2" :::
+   :::code language="bicep" source="code/3-main-final.bicep" range="17-18" highlight="2" :::
 
 1. Within the storage account resource, add the queue as a nested child resource:
 
-   :::code language="bicep" source="code/3-main-final.bicep" range="14-32" highlight="12-18" :::
+   :::code language="bicep" source="code/3-main-final.bicep" range="20-38" highlight="12-18" :::
 
 1. In the `appService` module definition, add the storage account and queue names as parameters.
 
-   :::code language="bicep" source="code/3-main-final.bicep" range="34-43" highlight="6-7" :::
+   :::code language="bicep" source="code/3-main-final.bicep" range="40-49" highlight="6-7" :::
 
    This enables the application to find the queue to send messages to.
 
@@ -247,11 +247,11 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
 1. Near the top of the *appService.bicep* file, add new parameters for the storage account and queue names:
 
-   :::code language="bicep" source="code/3-appservice-final.bicep" range="1-4" highlight="3-4" :::
+   :::code language="bicep" source="code/3-appservice-final.bicep" range="1-18" highlight="7-8, 10-11" :::
 
 1. Update the `appServiceApp` resource to propagate the storage account and queue names to the application's environment variables:
 
-   :::code language="bicep" source="code/3-appservice-final.bicep" range="23-42" highlight="7-18" :::
+   :::code language="bicep" source="code/3-appservice-final.bicep" range="31-50" highlight="7-18" :::
 
 ### Commit and push your feature branch
 

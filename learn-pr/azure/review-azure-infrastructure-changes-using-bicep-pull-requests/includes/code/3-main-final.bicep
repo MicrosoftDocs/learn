@@ -1,7 +1,13 @@
+@description('The Azure region into which the resources should be deployed.')
 param location string = resourceGroup().location
-param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
+
+@description('The name of the App Service app to deploy. This name must be globally unique.')
 param appServiceAppName string = 'toylaunch${uniqueString(resourceGroup().id)}'
 
+@description('The name of the storage account to deploy. This name must be globally unique.')
+param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
+
+@description('The type of the environment. This must be nonprod or prod.')
 @allowed([
   'nonprod'
   'prod'
