@@ -46,4 +46,4 @@ quiz:
       explanation: "Try again. When claiming an existing lab VM, you can't configure the location of the VM."
     - content: "Creating a DevTest Lab."
       isCorrect: true
-      explanation: "Correct. The location of the DevTest Lab determines the location of all VMs created in the lab."
+      explanation: "Correct. The location of the Azure DevTest Lab determines the location of all VMs created in the lab."
