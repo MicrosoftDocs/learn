@@ -40,6 +40,8 @@ During the process, you'll:
 
 ## Add artifacts to a lab VM
 
+You use artifacts to configure a VM or deploy software on it, after it's provisioned. You'll use an artifact to pre-install Azure PowerShell on the lab VM.
+
 1. Select **Add or Remove Artifacts**
 
     :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-basic-settings-add-artifact.png" alt-text="Screenshot that shows the basic settings screen, highlighting the link to add and remove artifacts.":::
@@ -51,6 +53,8 @@ During the process, you'll:
 1. Select **OK** to confirm the selected artifacts.
 
 ## Make the VM claimable
+
+A claimable VM in Azure DevTest Labs is a VM that has no owner assigned to it. You'll make the VM claimable to allow developers to claim and use it afterwards.
 
 1. Select the **Advanced Settings** tab and provide the following information:
 
@@ -74,6 +78,8 @@ During the process, you'll:
 1. After a few minutes, select **Refresh** if your virtual machines don't appear. Installation times will vary based on the selected hardware, base image, and artifact(s). The installation for the configurations used in this exercise was approximately 11 minutes.
 
 ## Claim the VM
+
+By claiming a VM, you take its ownership and you can customize, restart, stop, or connect to it.
 
 1. On the **DevTest Lab** page, under **My Lab**, select **Claimable virtual machines**.
 
@@ -118,3 +124,5 @@ During the process, you'll:
     The command result will show the currently installed version of Azure PowerShell.
 
     :::image type="content" source="../media/5-exercise-configure-claim-development-vm/lab-vm-azure-powershell.png" alt-text="Screenshot that shows the output of the PowerShell command.":::
+
+You've now created a pool of lab VMs in the DevTest lab by using one of the allowed VM base images. By using artifacts, you've pre-configured the VMs with the necessary software tools. Developers can now quickly claim these VMs to take ownership, and use them for their development activities.
