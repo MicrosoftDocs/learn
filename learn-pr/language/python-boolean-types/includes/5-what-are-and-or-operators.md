@@ -1,4 +1,4 @@
-You might occasionally want to combine test expressions to evaluate multiple conditions in one `if`, `elif`, or `else` statement. In this case, you's use the Boolean operators `and` and `or`. 
+You might occasionally want to combine test expressions to evaluate multiple conditions in one `if`, `elif`, or `else` statement. In this case, you'd use the Boolean operators `and` and `or`. 
 
 ## The `or` operator
 
