@@ -35,7 +35,7 @@ In Azure Machine Learning, operations that you run are called *experiments*. Fol
         - **Allowed models**: *Select only **RandomForest** and **LightGBM** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the experiment.*
         - **Exit criterion**:
             - **Training job time (hours)**: 0.5 — *ends the experiment after a maximum of 30 minutes.*
-            - **Metric score threshold**: 0.08 — *if a model achieves a normalized root mean squared error metric score of 0.08 or less, the experiment ends.*
+            - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.08 or less, the experiment ends.*
         - **Concurrency**: *do not change*
     - **Featurization settings:**
         - **Enable featurization**: Selected — *automatically preprocess the features before training.*
