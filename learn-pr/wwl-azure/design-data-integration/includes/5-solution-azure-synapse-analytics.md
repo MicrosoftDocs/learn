@@ -7,7 +7,7 @@ In this unit we will explore the high-level architecture and component parts of 
 :::image type="content" source="../media/azure-synapse.png" alt-text="Diagram showing Azure Synapse architecture.":::
 
 
-Azure Synapse Analytics leverages a massively parallel processing (MPP) architecture. In the preceding image, you can see that this architecture includes a control node and a pool of compute nodes. 
+Azure Synapse Analytics leverages a massively parallel processing (MPP) architecture. This architecture includes a control node and a pool of compute nodes. 
 
 The Control node is the brain of the architecture. It's the front end that interacts with all applications. The Compute nodes provide the computational power. The data to be processed is distributed evenly across the nodes. You submit queries in the form of Transact-SQL statements, and Azure Synapse Analytics runs them. Azure Synapse Analytics uses a technology named [PolyBase](/sql/relational-databases/polybase/polybase-guide) that enables you to retrieve and query data from relational and non-relational sources. You can save the data read in as SQL tables within the Synapse Analytics service.
 
@@ -17,7 +17,7 @@ The Control node is the brain of the architecture. It's the front end that inter
 
 
 
-In the image, we can see that Azure Synapse Analytics is composed of the following elements:
+Azure Synapse Analytics is composed of the following elements:
 
 - **Synapse SQL pool**: Synapse SQL offers both serverless and dedicated resource models to work with using node-based architecture. For predictable performance and cost, you can create dedicated SQL pools, for unplanned or ad hoc workloads, you can use the always-available, serverless SQL endpoint.
 
@@ -44,7 +44,7 @@ In the image, we can see that Azure Synapse Analytics is composed of the followi
 
 - When you have existing data stored on a data lake and need integration with the Data Lake and additional input sources, Azure Synapse Analytics provides seamless integration between the two.
 
-When management needs real-time analytics, you can use features like Azure Synapse Link to analyze in real-time and offer insights.
+- When management needs real-time analytics, you can use features like Azure Synapse Link to analyze in real-time and offer insights.
 
 ## What kind of analytics can you do with Azure Synapse Analytics?
 
@@ -55,13 +55,12 @@ Following table shows the range of analytical types that Azure Synapse Analytics
 | Descriptive analytics - "What is happening?"| Azure Synapse Analytics leverages the dedicated SQL pool capability that enables you to create a persisted data warehouse to perform this type of analysis. You can also make use of the serverless SQL pool to prepare data from files stored in a data lake to create a data warehouse interactively. |
 | Diagnostic analytics - "Why is it happening?"| You can use the serverless SQL pool capability within Azure Synapse Analytics that enables you to interactively explore data within a data lake. Serverless SQL pools can quickly enable a user to search for additional data that may help them to understand why questions. |
 | Predictive analytics - "What is likely to happen?"| Azure Synapse Analytics uses its integrated Apache Spark engine and Azure Synapse Spark pools for predictive analytics with other services such as Azure Machine Learning Services, or Azure Databricks. |
-| Prescriptive analytics - "What needs to be done?"| This type of analytics looks at executing actions based on real-time or near real-time analysis of data, using predictive analytics. Azure Synapse Analytics provides this capability through both Apache Spark, Azure Synapse Link, and by integrating streaming technologies such as Azure Stream Analytics. |
+| Prescriptive analytics - "What needs to be done?"| This type of analytics uses predictive analytics real-time or near real-time data. Azure Synapse Analytics provides this capability through both Apache Spark, Azure Synapse Link, and by integrating streaming technologies such as Azure Stream Analytics. |
 
 
 
 ## When to choose Azure Data Factory over Azure Synapse Analytics
-
-Let us look at some criteria that will help you decide when to pick Azure Data Factory solution over Azure Synapse Analytics. In the following table, the two solutions are compared against a set of criteria. 
+Here are some criteria that will help you decide when to pick Azure Data Factory solution over Azure Synapse Analytics. In the following table, the two solutions are compared against a set of criteria. 
 
 | **Criteria**| **Azure Data Factory**| **Azure Synapse Analytics** |
 | - | - | - |

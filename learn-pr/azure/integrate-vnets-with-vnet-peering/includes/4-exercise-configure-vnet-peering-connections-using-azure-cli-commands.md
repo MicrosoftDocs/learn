@@ -62,6 +62,7 @@ Now that you've created the peering connections between the virtual networks, ma
     az network vnet peering list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name SalesVNet \
+        --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
         --output table
     ```
 
@@ -73,6 +74,7 @@ Now that you've created the peering connections between the virtual networks, ma
     az network vnet peering list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name ResearchVNet \
+        --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
         --output table
     ```
 
@@ -84,6 +86,7 @@ Now that you've created the peering connections between the virtual networks, ma
     az network vnet peering list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name MarketingVNet \
+        --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
         --output table
     ```
 
