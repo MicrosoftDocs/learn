@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/29/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices is the role that has a dual purpose of developing new features while also ensuring that production systems run smoothly?"
     choices:
@@ -32,13 +32,13 @@ quiz:
     choices:
     - content: "Proactively monitor and review application performance."
       isCorrect: false
-      explanation: "Incorrect. Some of the typical responsibilities of a site reliability engineer: Proactively monitor and review application performance, Ensure software has good logging and diagnostics, Help triage escalated support tickets, and others."
+      explanation: "Incorrect. Some of the typical responsibilities of a site reliability engineer: Proactively monitor and review application performance, Ensure software has good logging and diagnostics, Help triage escalated support tickets and others."
     - content: "Create and execute continuous integration tests."
       isCorrect: true
-      explanation: "Correct. Some of the typical responsibilities of a site reliability engineer: Proactively monitor and review application performance, Ensure software has good logging and diagnostics, Help triage escalated support tickets, and others."
+      explanation: "Correct. Some of the typical responsibilities of a site reliability engineer: Proactively monitor and review application performance, Ensure software has good logging and diagnostics, Help triage escalated support tickets and others."
     - content: "Ensure software has good logging and diagnostics."
       isCorrect: false
-      explanation: "Incorrect. Some of the typical responsibilities of a site reliability engineer: Proactively monitor and review application performance, Ensure software has good logging and diagnostics, Help triage escalated support tickets, and others."
+      explanation: "Incorrect. Some of the typical responsibilities of a site reliability engineer: Proactively monitor and review application performance, Ensure software has good logging and diagnostics, Help triage escalated support tickets and others."
   - content: "Which of the following choices isn't a metric to track end-user satisfaction for your product?"
     choices:
     - content: "CSAT."

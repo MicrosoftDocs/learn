@@ -4,13 +4,12 @@ title: Measure point operation cost
 metadata:
   title: Measure point operation cost
   description: "Measure point operation cost"
-  ms.date: 12/21/2021
+  ms.date: 03/03/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 content: |

@@ -2,12 +2,12 @@ Azure Digital Twins collects metrics for your service instance that give informa
 
 Alerts proactively notify you when important conditions are found in your metrics data. They allow you to identify and address issues before the users of your system notice them. You can read more about alerts in [Overview of alerts in Microsoft Azure](/azure/azure-monitor/alerts/alerts-overview).
 
-:::image type="content" source="../media/m11-l04-adt-alerts-portal-ae673195.png" alt-text="Screen shot that shows how to create Azure Digital Twins Alerts in the Azure portal.":::
+:::image type="content" source="../media/m11-l04-adt-alerts-portal-ae673195.png" alt-text="Screenshot that shows how to create Azure Digital Twins Alerts in the Azure portal.":::
 
 
 Selecting **+ New alert rule** opens the **Create alert rule** page. You can follow the prompts to define conditions, actions to be triggered, and alert details.
 
-:::image type="content" source="../media/m11-l04-adt-create-alert-rule-portal-5b023528.png" alt-text="Screen shot that shows how to create Alert rules for Azure Digital Twins in the Azure portal.":::
+:::image type="content" source="../media/m11-l04-adt-create-alert-rule-portal-5b023528.png" alt-text="Screenshot that shows how to create Alert rules for Azure Digital Twins in the Azure portal.":::
 
 
 Referring to the Create alert rule image above:

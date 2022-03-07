@@ -1,20 +1,14 @@
-A database is a collection of data. A database can be as simple as a desktop spreadsheet, or as complex as a global system holding petabytes of highly structured information. The data can be structured in many different ways. A common approach is to store data in a tabular format, with rows and columns. You can define relationships between tables. These databases are called *relational* databases.
+In the early years of computing systems, every application stored data in its own unique structure. When developers wanted to build applications to use that data, they had to know a lot about the particular data structure to find the data they needed. These data structures were inefficient, hard to maintain, and hard to optimize for good application performance. The *relational* database model was designed to solve the problem of multiple arbitrary data structures. The relational model provides a standard way of representing and querying data that can be used by any application. One of the key advantages of the relational database model is its use of *tables*, which are an intuitive, efficient, and flexible way to store and access structured information.
 
-Databases can also be semi-structured or unstructured, comprising of semi-processed or unprocessed data. These databases are typically referred to as *non-relational*. Databases are managed using a database management system (DBMS). The DBMS handles the physical aspects of a database, such as where and how it's stored, who can access it, and how to ensure that it's available when required.
+The simple yet powerful relational model is used by organizations of all types and sizes for a broad variety of information management needs. Relational databases are used to track inventories, process ecommerce transactions, manage huge amounts of mission-critical customer information, and much more. A relational database is useful for storing any information containing related data elements that must be organized in a rules-based, consistent structure.
 
-Many organizations depend on the information stored in their databases to help make critical business decisions. In the past, these organizations ran their DBMSs on-premises. However, this approach requires the organization to maintain its own hardware infrastructure. Therefore, an increasing number of businesses are migrating their databases to the cloud, where the costs of configuring and maintaining the infrastructure are highly reduced. 
-
-Suppose you're a database administrator at Wide World Importers. You're responsible for database design and maintenance, as well as providing information for leadership and creating customer lists for the marketing department. You have an existing SQL Server database that relies heavily on stored procedures and other advanced database features such as linked servers. The database is situated on your internal network. You've been asked to make it globally available to your partners worldwide.
-
-> [!NOTE]
-> A *stored procedure* is a block of code that runs inside your database. Applications often use stored procedures because they are optimized to run in the database environment, and can access data very quickly. 
-> A *linked server* is a connection from one database server to another. SQL Server can use linked servers to run queries on one server that can include data retrieved from other servers; these are known as *distributed queries*. 
-
-In this module, you'll explore the options available when choosing a relational data platform for hosting a database in Azure.
+In this module, you'll learn about the key characteristics of relational databases, and explore relational data structures.
 
 ## Learning objectives
 
-In this module, you will:  
+In this module you will learn how to:
 
-* Identify relational Azure data services
-* Explore considerations in choosing a relational data service
+- Identify characteristics of relational data
+- Define normalization
+- Identify types of SQL statement
+- Identify common relational database objects

@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-private-access-to-azure-services.integrate-private-link-dns
+title: Integrate Private Link with DNS
+metadata:
+  title: Integrate Private Link with DNS
+  description: "Integrate Private Link with DNS"
+  ms.date: 02/28/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 17
+content: |
+  [!include[](includes/4-integrate-private-link-dns.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What resource is associated with a Private Endpoint that contains the information to configure your Private Endpoint DNS?"
+    choices:
+    - content: "The virtual network"
+      isCorrect: false
+      explanation: "Incorrect, the virtual network does not include the information needed to configure your Private Endpoint DNS."
+    - content: "The network interface"
+      isCorrect: true
+      explanation: "Correct! The network interface information includes FQDN and private IP addresses for your Private Link resource."
+    - content: "The private DNS zone"
+      isCorrect: false
+      explanation: "Incorrect, the private DNS zone does not include the information needed to configure your Private Endpoint DNS."
+  - content: "What is the significance of IP address 168.63.129.16?"
+    choices:
+    - content: "It is a non-virtual (Classic) public IP address that is used to facilitate a communication channel to Azure platform resources."
+      isCorrect: false
+      explanation: "Incorrect, in a non-virtual network scenario, a private IP address is used instead of 168.63.129.16. This private IP address is dynamically discovered through DHCP. In a virtual network, 168.63.129.16 is a virtual public IP address that is used to facilitate a communication channel to Azure platform resources."
+    - content: "It is a static address of a DNS forwarder."
+      isCorrect: false
+      explanation: "Incorrect, 168.63.129.16 is a virtual public IP address that is used to facilitate a communication channel to Azure platform resources."
+    - content: "It is a virtual public IP address that is used to facilitate a communication channel to Azure platform resources."
+      isCorrect: true
+      explanation: "Correct! Additionally, customers can define any address space for their private virtual network in Azure."

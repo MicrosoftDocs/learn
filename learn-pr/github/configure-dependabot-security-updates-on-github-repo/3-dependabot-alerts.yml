@@ -3,7 +3,7 @@ uid: learn.configure-dependabot-security-updates-on-github-repo.dependabot-alert
 title: Dependabot alerts
 metadata:
   unitType: Dependabot alerts
-  title: Deoendabot alerts # user input: module title for browser tab and search results
+  title: Dependabot alerts # user input: module title for browser tab and search results
   description: This unit introduces Dependabot alerts and explains how they work # user input: a description for site search and SEO
   ms.date: 1/5/2022
   author: sterling463
