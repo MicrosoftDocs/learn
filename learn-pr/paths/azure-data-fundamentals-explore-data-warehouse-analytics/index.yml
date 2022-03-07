@@ -24,7 +24,6 @@ products:
 - azure
 modules:
 - learn.wwl.examine-components-of-modern-data-warehouse
-- learn.wwl.explore-azure-synapse-analytics
 - learn.wwl.explore-fundamentals-of-data-visualization
 - learn.wwl.explore-fundamentals-of-stream-processing
 trophy:
