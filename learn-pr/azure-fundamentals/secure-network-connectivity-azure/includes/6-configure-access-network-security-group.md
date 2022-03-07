@@ -110,7 +110,7 @@ Your web server wasn't accessible. To find out why, let's examine your current N
     ```azurecli
     az network nsg list \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --query [].name \
+      --query '[].name' \
       --output tsv
     ```
 
@@ -173,7 +173,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
       --name allow-http \
       --protocol tcp \
       --priority 100 \
-      --destination-port-range 80 \
+      --destination-port-ranges 80 \
       --access Allow
     ```
 
@@ -213,6 +213,9 @@ Now that you've configured network access to port 80, let's try to access the we
     ```html
     <html><body><h2>Welcome to Azure! My name is my-vm.</h2></body></html>
     ```
+
+    > [!NOTE]
+    > There may be a slight delay between rules being added and ports being opened.
 
 1. As an optional step, refresh your browser tab that points to your web server.
 

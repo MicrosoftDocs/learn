@@ -53,7 +53,7 @@ For the *deploy steps*, the final step is to deploy the website to the correct l
 
 If the tagged commit triggered the pipeline, we'll deploy the website to production, in the `production` namespace of the AKS cluster.
 
-If the pipeline didn't trigger a tagged commit, we'll push to the `staging` namespace of the same cluster.
+If the pipeline isn't triggered by a tagged commit, we'll push to the `staging` namespace of the same cluster.
 
 :::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy steps in a pipeline.":::
 

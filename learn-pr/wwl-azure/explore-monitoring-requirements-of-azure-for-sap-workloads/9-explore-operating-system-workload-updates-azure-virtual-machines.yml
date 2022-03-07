@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.explore-operating-system-workload-updates-for-azure-virtual-machines
+title: Explore operating system and workload updates for Azure virtual machines
+metadata:
+  title: Explore operating system and workload updates for Azure virtual machines
+  description: "Explore operating system and workload updates for Azure virtual machines"
+  ms.date: 01/28/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-explore-operating-system-workload-updates-azure-virtual-machines.md)]

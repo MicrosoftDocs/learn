@@ -4,12 +4,13 @@ title: Explore data visualization
 metadata:
   title: Explore data visualization
   description: "Explore data visualization"
-  ms.date: 11/11/2020
+  ms.date: 01/07/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/3-explore-data-visualization.md)]

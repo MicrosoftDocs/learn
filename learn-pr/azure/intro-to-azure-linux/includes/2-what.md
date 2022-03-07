@@ -54,7 +54,7 @@ Maintain control of your applications with a comprehensive set of governance and
 
 ### Security tools and capabilities
 
-Build a secure foundation for your apps and workloads with security tools and capabilities in Azure. Harden your VMs and services with the recommendations provided by Azure Security Center. Protect and manage secure application configuration and certificates with Azure Key Vault. Detect and respond to security incidents in real time, with the intelligent analytics of Azure Sentinel. Azure Active Directory provides cloud-native identity and access management for role-based access control across all of your Azure resources. Most Azure services encrypt stored data by default, including VM disks.
+Build a secure foundation for your apps and workloads with security tools and capabilities in Azure. Harden your VMs and services with the recommendations provided by Microsoft Defender for Cloud. Protect and manage secure application configuration and certificates with Azure Key Vault. Detect and respond to security incidents in real time, with the intelligent analytics of Microsoft Sentinel. Azure Active Directory provides cloud-native identity and access management for role-based access control across all of your Azure resources. Most Azure services encrypt stored data by default, including VM disks.
 
 ### Business continuity and disaster recovery
 

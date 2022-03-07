@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/01/2020
+  ms.date: 02/01/2021
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -17,43 +17,54 @@ quiz:
     choices:
     - content: "Specify database throughput."
       isCorrect: true
-      explanation: "By specifying throughput at the database level, the throughput is shared between the containers."
+      explanation: "That's correct. By specifying throughput at the database level, the throughput is shared between the containers."
     - content: "Specify container throughput."
       isCorrect: false
-      explanation: "By specifying throughput at the database level, the throughput is shared between the containers."
+      explanation: "That's incorrect. By specifying throughput at the container level, the throughput isn't shared between the containers."
     - content: "Specify logical partition throughput."
       isCorrect: false
-      explanation: "By specifying throughput at the database level, the throughput is shared between the containers."
+      explanation: "That's incorrect. This isn't a valid option for throughput in a Cosmos DB."
   - content: "You have decided to distribute your database over multiple regions to decrease latency for users. What is the effect of the availability SLA?"
     choices:
     - content: "It remains at 99.99%."
       isCorrect: false
-      explanation: "If your database is in a single region there is a Service Level Agreement (SLA) for the database to be available for 99.99% of the time, but, if you deploy to multiple regions, you benefit from an SLA of 99.999% read and write availability."
+      explanation: "That's incorrect. If your database is in a single region there is a Service Level Agreement (SLA) for the database to be available for 99.99% of the time."
     - content: "It increases to 99.999%."
       isCorrect: true
-      explanation: "If your database is in a single region there is a Service Level Agreement (SLA) for the database to be available for 99.99% of the time, but, if you deploy to multiple regions, you benefit from an SLA of 99.999% read and write availability."
-    - content: "It increass to 99.9999%"
+      explanation: "That's correct. If your database is deployed to multiple regions, you benefit from an SLA of 99.999% read and write availability."
+    - content: "It increases to 99.9999%"
       isCorrect: false
-      explanation: "If your database is in a single region there is a Service Level Agreement (SLA) for the database to be available for 99.99% of the time, but, if you deploy to multiple regions, you benefit from an SLA of 99.999% read and write availability."
+      explanation: "That's incorrect. This isn't currently a supported level of availability."
   - content: "You need specific connection strings for your applications, so that they use your security protocols. Where can you find this information?"
     choices:
     - content: "In your Cosmos DB account, in **Overview**."
       isCorrect: false
-      explanation: "For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
+      explanation: "That's incorrect. The Overview page doesn't show this information."
     - content: "In your Cosmos DB account, in **Settings**, and then **Network**."
       isCorrect: false
-      explanation: "For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
+      explanation: "That's incorrect. The Settings -> Network page doesn't show this information."
     - content: "In your Cosmos DB account, in **Settings**, and then **Connection String**."
       isCorrect: true
-      explanation: "For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
+      explanation: "That's correct. For more options than the quick start settings, in **Settings**, select **Connection String**. You can then provide security information and receive a specific connection string for your settings."
   - content: "You have all your users in one region and need to maximize availability. How should you achieve this?"
     choices:
     - content: "Replicate data to at least two regions."
       isCorrect: true
-      explanation: "To improve availability, you should consider having data in at least two regions even if all of your users are in one location"
+      explanation: "That's correct. To improve availability, you should consider having data in at least two regions even if all of your users are in one location."
     - content: "Have a single copy of your data and premium level backups."
       isCorrect: false
-      explanation: "To improve availability, you should consider having data in at least two regions even if all of your users are in one location"
+      explanation: "That's incorrect. Having a database backup doesn't improve your database availability."
     - content: "Replicate data within your region."
       isCorrect: false
-      explanation: "To improve availability, you should consider having data in at least two regions even if all of your users are in one location"
+      explanation: "That's incorrect. It's not possible to replicate your data within a region inside a single Cosmos DB. There is a better answer."
+  - content: "Database level throughput is most appropriate for most migrations, but you have identified that collection level throughput is most appropriate long term. How should you configure your throughput?"
+    choices:
+    - content: "Specify database throughput."
+      isCorrect: false
+      explanation: "That's incorrect. You should choose the most appropriate setting for the expected use of the database."
+    - content: "Specify collection throughput, but temporarily change to database throughput for the migration."
+      isCorrect: false
+      explanation: "That's incorrect. You can't change the throughput after a database has been created.."
+    - content: "Specify collection throughput."
+      isCorrect: true
+      explanation: "That's correct. Database-level throughput often seems more appropriate than collection-level throughput for migration scenarios, but you should consider that this setting cannot be modified after creation and, therefore, you should choose the most appropriate setting for the expected use of the database."

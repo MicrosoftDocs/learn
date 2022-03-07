@@ -7,7 +7,7 @@ metadata:
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-endpoint-manager
 title: Understand Conditional Access policies using Microsoft Endpoint Manager
 summary: Microsoft Endpoint Manager uses groups to assign policies, such as Conditional Access policies and endpoint security policies. Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. 
 abstract: | 
@@ -25,6 +25,7 @@ roles:
 - administrator
 products:
 - mem
+- m365
 units:
 - learn.policy-security-management-using-microsoft-endpoint-manager.1-introduction
 - learn.policy-security-management-using-microsoft-endpoint-manager.2-policy-management-groups

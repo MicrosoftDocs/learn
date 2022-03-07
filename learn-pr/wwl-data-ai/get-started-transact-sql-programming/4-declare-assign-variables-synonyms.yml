@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-transact-sql-programming.declare-assign-variables-synonyms
+title: Declare and assign variables and synonyms
+metadata:
+  title: Declare and assign variables and synonyms
+  description: "Declare and assign variables and synonyms"
+  ms.date: 02/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-declare-assign-variables-synonyms.md)]

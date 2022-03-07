@@ -2,7 +2,7 @@ In this exercise, you'll create an Azure Automation account and upload a PowerSh
 
 ## Create a VM
 
-Start by deploying a new VM from a Windows Server 2016 image.
+Start by deploying a new VM from a Windows Server 2019 image.
 
 1. In Azure Cloud Shell, run the following commands to create a username and generate a random password.
 
@@ -17,7 +17,7 @@ Start by deploying a new VM from a Windows Server 2016 image.
     az vm create \
       --resource-group <rgn>[Sandbox resource group name]</rgn> \
       --name myVM \
-      --image win2016datacenter \
+      --image win2019datacenter \
       --admin-username $USERNAME \
       --admin-password $PASSWORD
     ```
@@ -29,15 +29,15 @@ Start by deploying a new VM from a Windows Server 2016 image.
       "fqdns": "",
       "id": "/subscriptions/<guid>/resourceGroups/myResourceGroup/providers/Microsoft.Compute/virtualMachines/myVM",
       "location": "eastus",
-      "macAddress": "00-0D-3A-23-9A-49",
+      "macAddress": "00-0D-3A-36-BA-28",
       "powerState": "virtual machine running",
       "privateIpAddress": "10.0.0.4",
-      "publicIpAddress": "52.174.34.95",
+      "publicIpAddress": "104.40.69.56",
       "resourceGroup": "myResourceGroup"
     }
     ```
 
-    Write down the `publicIpAddress` in this output. You'll need this address later to access the VM.
+1. Copy the `publicIpAddress` in this output. You'll need this address later in the exercise to access the VM.
 
 1. Run the following command in Cloud Shell to open your VM's port 80 for web traffic:
 
@@ -48,29 +48,32 @@ Start by deploying a new VM from a Windows Server 2016 image.
       --name myVM
     ```
 
-1. In your web browser, go to `http://[public-ip]`. Here, `[public-ip]` is the public IP address of your VM. Although port 80 is open, you receive an error message that says a website can't be reached. IIS isn't deployed on your VM.
+1. In your web browser, go to the public IP address of your VM `http://[public-ip]`. Although port 80 is open, your connection should time out with `This site can't be reached`. This error occurs because IIS isn't deployed on your VM. We'll fix that later in this exercise.
 
 ## Create an Azure Automation account
 
 1. Use your Microsoft Learn account to sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. On the Azure portal resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Search the Marketplace** text box, enter **Automation**.
+1. In the **Search services and marketplace** text box, enter *Automation*, and press <kbd>Enter</kbd> to view the search results.
 
-1. On the **Automation** page, select **Create**.
+1. In the *Automation* search results, select the **Automation** Azure service published by Microsoft.
 
-1. On the **Add Automation Account** page, enter the following property values. The automation account must have a unique name. We suggest using something like *\[*your name or initials*\]-automation-account*. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.
+1. Select **Create**. The **Create an Automation Account** pane appears.
 
-    | Property  | Value  |
+1. Enter the following values for each setting. 
+
+    | Setting  | Value  |
     |---|---|
-    | Name | *\[your-automation-account-name\]* |
     | Subscription | Concierge Subscription  |
-    | Resource Group | The existing resource group |
-    | Location | The default location |
+    | Resource group | Select the existing resource group in the dropdown list |
+    | Name | *\[your-automation-account-name\]* We suggest using *\[*your initials*\]-automation-account*. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.|
+    | Region | Accept default location |
 
-1. Ignore the message about permissions for the Run as account. You don't need it to be created as a Run As account in Azure Active Directory. 
-1. Scroll down and select **Create**. Wait until the automation account is created before you continue.
+1. Select **Review + Create**, then select **Create**. Wait until the automation account is deployed.
+
+1. Select **Go to resource** when deployment completes. The **Automation Account** pane for your resource appears.
 
 ## Create a DSC configuration script
 
@@ -80,7 +83,7 @@ Start by deploying a new VM from a Windows Server 2016 image.
     pwsh
     ```
 
-1. At the PowerShell prompt, start the code editor and create a file named *MyDscConfiguration.ps1* in your home directory.
+1. At the PowerShell prompt,  run the following command to open a new file named *MyDscConfiguration.ps1* in the code editor.
 
     ```powershell
     code $HOME/MyDscConfiguration.ps1
@@ -99,17 +102,17 @@ Start by deploying a new VM from a Windows Server 2016 image.
     }
     ```
 
-1. Select Ctrl+S to save the file. Then select Ctrl+Q to close the editor.
+1. Select <kbd>Ctrl+S</kbd> to save the file in your home directory, and then select <kbd>Ctrl+Q</kbd> to close the editor.
 
-1. Run the following PowerShell command to upload your DSC script into your Azure Automation account:
+1. In your PowerShell session in Azure Cloud Shell, enter the following code, replacing `[your-automation-account-name]` with the name for your automation account resource, to upload the DSC script into your Azure Automation account.
 
     ```powershell
-    Import-AzureRmAutomationDscConfiguration `
-        -AutomationAccountName [your-automation-account-name] `
+    Import-AzAutomationDscConfiguration `
+        -Published `
         -ResourceGroupName <rgn>[Sandbox resource group name]</rgn> `
         -SourcePath $HOME/MyDscConfiguration.ps1 `
         -Force `
-        -Published
+        -AutomationAccountName [your-automation-account-name]
     ```
 
     The command should produce output that looks like this:
@@ -121,81 +124,79 @@ Start by deploying a new VM from a Windows Server 2016 image.
     State                 : Published
     Name                  : MyDscConfiguration
     Tags                  : {}
-    CreationTime          : 6/25/19 5:44:36 PM +00:00
-    LastModifiedTime      : 6/25/19 5:44:36 PM +00:00
+    CreationTime          : 6/25/21 5:44:36 PM +00:00
+    LastModifiedTime      : 6/25/21 5:44:36 PM +00:00
     Description           :
     Parameters            : {}
     LogVerbose            : False
     ```
 
-## Add required modules
+## Add required modules (optional)
 
-After you upload your DSC configuration script, you import into your automation account any PowerShell modules that the DSC process needs. Our configuration doesn't need any additional modules, so we can skip this step.
-
-If you needed to add modules, in your automation account you would go to **Shared Resources** and select **Modules** > **Add a module**.
+After you upload your DSC configuration script, import any PowerShell modules that the DSC process needs. Our configuration doesn't need any other modules, so we can skip this step. If you needed to import or add modules into your automation account you would go to **Shared Resources**, and then select **Modules** > **Add a module**.
 
 ## Compile the DSC script
 
-1. Return to your Azure Automation account in the Azure portal.
+1. In the Azure portal, the Overview pane for your Azure Automation account should still be displayed.
 
-1. Under **Configuration Management**, select **State configuration (DSC)**.
+1. In the Automation Account menu, under **Configuration Management**, select **State configuration (DSC)**. The **State configuration (DSC)** pane for your automation account appears.
 
-1. On the **State configuration (DSC)** page, select **Configurations**.
+1. Select the **Configurations** tab. Verify that the configuration **MyDscConfiguration** appears, and then select it. The **MyDscConfiguration** Configuration pane appears.
 
-    Verify that the configuration **MyDscConfiguration** appears.
+    :::image type="content" source="../media/4-state-configurations.png" alt-text="Screenshot of the Azure portal, showing the state configurations available on the State configuration (DSC) pane.":::
 
-    ![Screenshot of the Azure portal, showing the state configurations available on the State configuration (DSC) page](../media/4-state-configurations.png)
+1. In the command bar, select **Compile**.
 
-1. Select **MyDscConfiguration**.
-  
-1. Select **Compile**.
+1. In the **Compile DSC Configuration** dialog box, select **Yes**.
 
-1. In the **Compile DSC Configuration** message box, select **Yes**.
+1. Check your notifications (notifications icon is in the global controls in the page header). Wait for the compilation job to show **Status** of **Completed**, which may take several minutes.
 
-1. Wait for the compilation job to queue and run. The **Status** will change to **Completed**. You might need to refresh the screen to see the compilation status change.
+    >[!NOTE]
+    >You may need to refresh to see the status change. To refresh, in the top left breadcrumb path of the Azure portal, select your automation account. The **State configuration (DSC)** pane appears. In the top menu bar, select **Refresh**. Then, select *MyDscConfiguration* configuration from the list to return to the **MyDscConfiguration** pane. Under the **Compilation jobs** tab, the **Status** should now appear as *Completed*.
 
-    ![Screenshot of the Azure portal, showing the state of the compilation job for the configuration](../media/4-compilation.png)
+    :::image type="content" source="../media/4-compilation.png" alt-text="Screenshot of the Azure portal, showing the state of the compilation job for the configuration.":::
 
-1. Close the **MyDscConfiguration** page and return to the **State configuration (DSC)** page.
+1. When compilation is completed, close the **MyDscConfiguration** pane. Your **State configuration (DSC)** pane appears.
 
 ## Register the VM with your Azure Automation account
 
-1. On the **State configuration (DSC)** page, select **Nodes** > **+ Add**.
+1. On the **State configuration (DSC)** pane for *[your-automation-account-name]*, select the **Nodes** tab. In the command bar, select **Add**. The **Virtual Machines** pane for your automation account appears.
 
-    ![Screenshot of the Azure portal, showing the Nodes page](../media/4-nodes.png)
+    :::image type="content" source="../media/4-nodes.png" alt-text="Screenshot of the Azure portal, showing the Nodes pane.":::
 
-1. On the **Virtual Machines** page, select the VM you created at the start of this unit, **myVM**.
+1. Select the VM you created in the first task of this exercise: **myVM**. It may take up to 10 minutes for the configuration and VM to propagate in the network. If the VM isn't listed, wait a few minutes, and then select **Refresh** in command bar until it appears.
 
-1. On the **myVM** page, select **+ Connect**.
+1. In the command bar, select **Connect**. The **Registration** pane appears.
 
-    ![Screenshot of the Azure portal, showing the Virtual Machines page](../media/4-add-vm.png)
+    :::image type="content" source="../media/4-add-vm.png" alt-text="Screenshot of the Azure portal, showing the Virtual Machines pane.":::
 
-1. On the **Registration** page, enter the following settings, and then select **OK**.
+1. Enter the following values for each setting.
 
-    | Property  | Value  |
+    | Setting  | Value  |
     |---|---|
-    | Node configuration name | MyDscConfiguration.localhost |
+    | Node configuration name | From the dropdown list, select *MyDscConfiguration.localhost* |
     | Refresh Frequency | 30  |
-    | Configuration Mode frequency | 15 |
+    | Configuration Mode Frequency | 15 |
     | Configuration Mode | ApplyAndMonitor |
-    | Allow Module Override | Select |
-    | Reboot Node if Needed | Select |
+    | Allow Module Override | Select checkbox |
+    | Reboot Node if Needed | Select checkbox |
     | Action after Reboot | ContinueConfiguration |
 
-1. Wait until the VM is connected, and then close the **myVM** page.
+1. Select **OK**.
 
-1. Close the **Virtual Machines** page.
+1. Wait until the VM is connected. This process might take a few minutes. When your **myVM** has connected, in the breadcrumb path in the top left of the portal, select your account automation to close the **Registration** and **Virtual Machines** pane. The **State configuration (DSC)** pane for your automation account appears.
 
-1. On the **State configuration (DSC)** page, select **Refresh**.
+1. In the command bar, select **Refresh**.
 
 1. Verify that the node **myVM** appears in the list and that its status is **Compliant**.
 
-    ![Screenshot of the Azure portal, showing the Nodes page with myVM registered](../media/4-registered.png)
+    :::image type="content" source="../media/4-registered.png" alt-text="Screenshot of the Azure portal, showing the Nodes pane with myVM registered.":::
 
 ## Verify that IIS is installed on the VM
 
-In your web browser, go to `http://[public-ip]`. Here, `[public-ip]` is the public IP address of your VM. You recorded this address when you first created the VM.
+In your web browser, go to `http://[public-ip]`, where, `[public-ip]` is the public IP address that you recorded earlier in this exercise.
 
-You should see the default IIS webpage. IIS has been deployed. Azure Automation used the PowerShell DSC script you uploaded to your Azure Automation account.
+You should see the default IIS webpage. 
+:::image type="content" source="../media/4-iis.png" alt-text="Screenshot of the web browser, showing the default IIS pane." loc-scope="other"::: <!-- no-loc -->
 
-:::image type="content" source="../media/4-iis.png" alt-text="Screenshot of the web browser, showing the default IIS page." loc-scope="other"::: <!-- no-loc -->
+Congratulations! IIS has been deployed. Azure Automation used the PowerShell DSC script you uploaded to your Azure Automation account.

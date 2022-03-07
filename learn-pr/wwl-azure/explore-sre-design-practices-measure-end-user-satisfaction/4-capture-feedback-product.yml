@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.capture-feedback-product
+title: Capture feedback in product
+metadata:
+  title: Capture feedback in product
+  description: "Capture feedback in product"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-capture-feedback-product.md)]

@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.azure-event-hubs
+metadata:
+  title: Explore Azure Event Hubs
+  description: "Learn how Azure Event Hubs captures events and how to scale your processing application."
+  ms.date: 01/17/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore Azure Event Hubs
+summary: Learn how Azure Event Hubs captures events and how to scale your processing application.
+abstract: |
+  After completing this module, you'll be able to:
+  * Describe the benefits of using Event Hubs and how it captures streaming data.
+  * Explain how to process events.
+  * Perform common operations with the Event Hubs client library.
+prerequisites: |
+  * You should be familiar with developer concepts and terminology.
+  * An understanding of cloud computing and some experience with the Azure portal.
+iconUrl: /learn/achievements/2-explore-azure-event-hubs.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-event-hubs
+units:
+- learn.wwl.azure-event-hubs.introduction
+- learn.wwl.azure-event-hubs.discover
+- learn.wwl.azure-event-hubs.explore-capture
+- learn.wwl.azure-event-hubs.scale-your-processing-application
+- learn.wwl.azure-event-hubs.control-access-to-events
+- learn.wwl.azure-event-hubs.perform-common-operations-client-library
+- learn.wwl.azure-event-hubs.knowledge-check
+- learn.wwl.azure-event-hubs.summary
+badge:
+  uid: learn.wwl.azure-event-hubs.badge

@@ -7,6 +7,7 @@ Let's review our designed pipeline:
 You'll build this pipeline by using the GitHub Actions workflow.
 
 In this exercise, you'll:
+
 - Build the Actions workflow
 - Create the trigger
 - Build and push the image
@@ -41,7 +42,7 @@ In this exercise, you'll:
       # This workflow contains a single job called "build"
       build:
         # The type of runner that the job will run on
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
 
         # Steps represent a sequence of tasks that will be executed as part of the job
         steps:
@@ -63,7 +64,7 @@ In this exercise, you'll:
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
-1. Change the `name` key to `Build and push the latest build to staging`. 
+1. Change the `name` key to `Build and push the latest build to staging`.
 
    Now, your file should look like this example:
 
@@ -77,14 +78,13 @@ In this exercise, you'll:
 
 The default file comes with two triggers:
 
-* Any push to the main branch.
-
-* Any pull request on the main branch.
+- Any push to the main branch.
+- Any pull request on the main branch.
 
 1. Change the default triggers in the `on` key.
 
-1. Remove the second trigger and leave only the `push` tags. 
-    
+1. Remove the second trigger and leave only the `push` tags.
+
     The keys should look like this example:
 
     ```yaml
@@ -103,11 +103,11 @@ Let's work on the jobs you're going to run. In this process, you address both th
 
 GitHub workflows are divided into jobs, and jobs are divided into steps. Each step can have multiple commands and use multiple actions to be executed.
 
-The `jobs` key is already set to run on `ubuntu-latest`, which is the environment where you want this workflow to run.
+The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubuntu-20.04` which is the environment you want this workflow to run in.
 
 1. Rename the `build` key `build_push_image`.
 
-1. In the `steps` key, delete the last two commands, which are only examples from the template. 
+1. In the `steps` key, delete the last two commands, which are only examples from the template.
 
    Your file should look like this example:
 
@@ -120,7 +120,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
 
         steps:
           - uses: actions/checkout@v2
@@ -130,17 +130,55 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     This step is equivalent to the first action (clone the repo) in the build steps in the pipeline design diagram.
 
-    Next, add another action to build your Docker image.
+    Next, add other actions to build your Docker image.
 
-1. In the right panel, search for **Build and push Docker images**. Select the first result published by **Docker**.
+1. In the right panel, search for **Docker Login**
+
+    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
+
+    :::image type="content" source="../media/6-3-docker-login.png" alt-text="Screenshot showing the search results listing Docker Login.":::
+
+    > [!NOTE]
+    > Docker action prior to version 2 had the login flow built-in, however, on versions 2 and above, these actions were separated. This is why we need two actions to set the entire workflow correctly.
+
+    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
+
+    ```yml
+    name: Build and push the latest build to staging
+
+    on:
+      push:
+        branches: [ main ]
+
+    jobs:
+      build_push_image:
+        runs-on: ubuntu-20.04
+
+        steps:
+          - uses: actions/checkout@v2
+
+          - name: Docker Login
+            # You may pin to the exact commit or the version.
+            # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
+            uses: docker/login-action@v1
+            with:
+              # Server address of Docker registry. If not set then will default to Docker Hub
+              registry: # optional
+              # Username used to log against the Docker registry
+              username: # optional
+              # Password or personal access token used to log against the Docker registry
+              password: # optional
+              # Log out from the Docker registry at the end of a job
+              logout: # optional, default is true
+    ```
+
+1. Again, in the right panel, search for **Build and push Docker images**. Select the first result published by **Docker**.
 
     :::image type="content" source="../media/6-3-docker-action.png" alt-text="Screenshot that shows the search results that list Build and push Docker images.":::
 
     In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
 
-    :::image type="content" source="../media/6-4-docker-copy.png" alt-text="Screenshot that shows the copy icon selected in the Build and push Docker images pane.":::
-
-1. Paste the copied YAML below the `- uses: actions/checkout@v2` key. 
+    Paste the copied YAML below the last key from the previously copied `docker-login` action.
 
     Your YAML file should look like this example:
 
@@ -153,71 +191,56 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
 
         steps:
           - uses: actions/checkout@v2
 
-          - name: Build and push Docker images
-            # You can pin to the exact commit or the version.
-            # uses: docker/build-push-action@ab83648e2e224cfeeab899e23b639660765c3a89
-            uses: docker/build-push-action@v1.1.1
+          - name: Docker Login
+            # You may pin to the exact commit or the version.
+            # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
+            uses: docker/login-action@v1
             with:
-              # Username used to log in to a Docker registry. If not set, no login occurs
-              username: # optional
-              # Password or personal access token used to log in to a Docker registry. If not set, no login occurs
-              password: # optional
-              # Server address of Docker registry. If not set, login defaults to Docker Hub
+              # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
-              # Docker repository to tag the image with
-              repository:
-              # Comma-delimited list of tags. These are added to the registry/repository to form the image's tags
-              tags: # optional
-              # Automatically tags the built image with the Git reference as per the readme
-              tag_with_ref: # optional
-              # Automatically tags the built image with the Git short SHA as per the readme
-              tag_with_sha: # optional
-              # Path to the build context
-              path: # optional, default is .
-              # Path to the Dockerfile (Default is '{path}/Dockerfile')
-              dockerfile: # optional
-              # Sets the target stage to build
-              target: # optional
-              # Always attempt to pull a newer version of the image
-              always_pull: # optional
-              # Comma-delimited list of build-time variables
-              build_args: # optional
-              # Comma-delimited list of images to consider as cache sources
-              cache_froms: # optional
-              # Comma-delimited list of labels to add to the built image
-              labels: # optional
-              # Adds labels with Git repository information to the built image
-              add_git_labels: # optional
-              # Whether to push the image
-              push: # optional, default is true
+              # Username used to log against the Docker registry
+              username: # optional
+              # Password or personal access token used to log against the Docker registry
+              password: # optional
+              # Log out from the Docker registry at the end of a job
+              logout: # optional, default is true
+
+          - name: Build and push Docker images
+            # You may pin to the exact commit or the version.
+            # uses: docker/build-push-action@e1b7f96249f2e4c8e4ac1519b9608c0d48944a1f
+            uses: docker/build-push-action@v2
+            with:
+              # Here we'll have a list of parameters
     ```
 
     > [!IMPORTANT]
     > Be careful with indentation when you use YAML. The `name` key should be aligned with the preceding `uses` key.
 
-    You can adjust usage for this action. For more information, see the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/releases/v1?azure-portal=true).
+    You can adjust usage for this action. For more information, see the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/v2?azure-portal=true).
 
 1. Rename the `name` key `Build and push staging image`.
 
-1. You'll use only a handful of the parameters that are available for this action. Set the following actions and delete the others.
+1. You'll use only a handful of the parameters that are available for these actions.
 
     Add the values according to the following table:
 
-    |Key name     |Value                                           |
-    |-------------|------------------------------------------------|
-    |username     |`${{ secrets.ACR_LOGIN }}`                      |
-    |password     |`${{ secrets.ACR_PASSWORD }}`                   |
-    |registry     |`${{ secrets.ACR_NAME }}`                       |
-    |repository   |contoso-website                                 |
-    |tags         |latest                                          |
+    |Key name     | Used on action |Value                                           |
+    |-------------|--------|------------------------------------------------|
+    |username     |`docker/login`|`${{ secrets.ACR_LOGIN }}`                      |
+    |password     |`docker/login`|`${{ secrets.ACR_PASSWORD }}`                   |
+    |registry     |`docker/login`|`${{ secrets.ACR_NAME }}`                       |
+    |repository   |`docker/build-and-push`|contoso-website                                 |
+    |tags         |`docker/build-and-push`|latest                                          |
+    |context      |`docker/build-and-push`|`.`                                             |
+    |push      |`docker/build-and-push`|`true`                                             |
 
     You can delete all the other keys because we won't use them in this exercise.
-    
+
     Your file should look like this example:
 
     ```yaml
@@ -229,19 +252,67 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
 
         steps:
           - uses: actions/checkout@v2
 
-          - name: Build and push staging image
-            uses: docker/build-push-action@v1.1.1
+          - name: Docker Login
+            uses: docker/login-action@v1
             with:
+              registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
+
+          - name: Build and push staging images
+            uses: docker/build-push-action@v2
+            with:
+              context: .
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest
+              push: true
+    ```
+
+1. Before you save the file, we'll also add another action between the checkout action and the login action to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
+
+    To set this action, copy the below snippet and paste it between the checkout and the login actions.
+
+    ```yml
+    - name: Set up Buildx
+      uses: docker/setup-buildx-action@v1
+    ```
+
+    Your final file should be like this:
+
+    ```yaml
+    name: Build and push the latest build to staging
+
+    on:
+      push:
+        branches: [ main ]
+
+    jobs:
+      build_push_image:
+        runs-on: ubuntu-20.04
+
+        steps:
+          - uses: actions/checkout@v2
+
+          - name: Set up Buildx
+            uses: docker/setup-buildx-action@v1
+
+          - name: Docker Login
+            uses: docker/login-action@v1
+            with:
               registry: ${{ secrets.ACR_NAME }}
-              repository: contoso-website
-              tags: latest
+              username: ${{ secrets.ACR_LOGIN }}
+              password: ${{ secrets.ACR_PASSWORD }}
+
+          - name: Build and push staging images
+            uses: docker/build-push-action@v2
+            with:
+              context: .
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest
+              push: true
     ```
 
 1. To commit the changes, select the green **Start commit** button. Enter a description for the commit, and then select the **Commit new file** button:
@@ -249,8 +320,6 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
     :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Start commit and Commit new file buttons in the Commit new file pane.":::
 
     Selecting the **Commit new file** button triggers a new build to start on the **Actions** tab. This build will fail because you haven't set the secrets yet!
-
-    :::image type="content" source="../media/6-6-first-build.png" alt-text="Screenshot that shows the failed build results for build_push_image.":::
 
 ## Set the secrets
 

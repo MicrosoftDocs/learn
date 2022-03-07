@@ -20,7 +20,7 @@ You're now going to create an Azure Function using Maven. This exercise will use
 
     The following screenshot illustrates what that command will look like in the Cloud Shell.
 
-    ![Image showing the Maven command to create an Azure Function archetype](../media/2-cloud-shell-mvn-archetype-cmd.png)
+    ![Image showing the Maven command to create an Azure Function archetype.](../media/2-cloud-shell-mvn-archetype-cmd.png)
 
     Maven downloads all of the required artifacts and libraries, and prompts you to enter the values that are necessary to customize your application. Use the following table to specify the correct values.
 

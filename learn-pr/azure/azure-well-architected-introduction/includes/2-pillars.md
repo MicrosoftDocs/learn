@@ -16,7 +16,7 @@ The Azure Well-Architected Framework consists of five pillars:
 - Reliability
 - Security
 
-![An illustration that shows the pillars of the Azure Well-Architected Framework](../media/pillars.png)
+![An illustration that shows the pillars of the Azure Well-Architected Framework.](../media/pillars.png)
 
 ### Cost optimization
 
@@ -68,7 +68,7 @@ In an on-premises environment, you're responsible for everything. As you move to
 
 This shared responsibility will play a role in your architectural decisions, because these decisions can have implications on cost, security, and the technical and operational capabilities of your application. By shifting these responsibilities to your provider, you can focus on bringing value to your business and move away from activities that aren't a core business function.
 
-![An illustration that shows the level of shared responsibilities in each type of cloud service models](../media/cloud-responsibility-model.png)
+![An illustration that shows the level of shared responsibilities in each type of cloud service models.](../media/cloud-responsibility-model.png)
 
 ## Design choices
 

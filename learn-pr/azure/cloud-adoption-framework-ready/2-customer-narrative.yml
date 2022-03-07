@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-ready.2-customer-narrative
 title: Customer narrative
 metadata:
   title: Customer narrative
-  description: Tailwind Traders is preparing their cloud environment. Learn more about their operating model needs to help them get started and find the best Azure landing zone.
+  description: Tailwind Traders is preparing its cloud environment. Learn more about the company's operating model to help it get started and find the best Azure landing zone.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: bblanch

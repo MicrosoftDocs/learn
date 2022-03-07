@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters.hyperparameters
+title: Hyperparameters in classification
+metadata:
+  title: Hyperparameters in classification
+  description: Conceptual unit about hyperparameters in classification
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-hyperparameters.md)] 

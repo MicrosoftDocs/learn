@@ -14,15 +14,11 @@ Before you can examine your Azure resources with the Azure Explorer, you must cr
 
 1. In the list of archetypes, select **maven-archetype-webapp**, and then select **Next**.
 
-    ![Select an archetype](../media/3-select-archetype.png)
+    ![Select an archetype.](../media/3-select-archetype.png)
 
-1. Type **AzureTests** in the **Name** textbox, then expand **Artifact Coordinates**.
-
-1. Type **com.microsoft.azure** in the **GroupId** textbox and **webapp** in the **Artifactid** textbox, then select **Next**.
+1. Type **webapp** in the **Name** textbox, then click **Next**.
 
 1. To accept the default Maven settings, click **Finish**.
-
-1. If the **Tip of the Day** dialog appears, select **Close**.
 
 ## Complete the web app
 

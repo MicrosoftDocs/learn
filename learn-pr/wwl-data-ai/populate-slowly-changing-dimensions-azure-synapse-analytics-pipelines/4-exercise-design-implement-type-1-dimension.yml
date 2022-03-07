@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines.exercise-design-implement-type-1-dimension-with-mapping-data-flows
+title: Exercise - Design and implement a Type 1 slowly changing dimension with mapping data flows
+metadata:
+  title: Exercise - Design and implement a Type 1 slowly changing dimension with mapping data flows
+  description: "Exercise - Design and implement a Type 1 slowly changing dimension with mapping data flows"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-design-implement-type-1-dimension.md)]

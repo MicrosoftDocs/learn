@@ -27,7 +27,7 @@ Scatter plots offer a handy means for visualizing data, but suppose you wanted t
 
 1. Now run the cell to display a scatter plot with a regression line.
 
-    ![Scatter plot with regression line](../media/3-num-py-regression.png)
+    ![Scatter plot with regression line.](../media/3-num-py-regression.png)
 
     _Scatter plot with regression line_
 

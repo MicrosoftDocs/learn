@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances
+metadata:
+  title: Monitor and troubleshoot SAP HANA on Azure (Large Instances)
+  description: "This module investigates monitoring tools and methods used for SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 02/02/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor and troubleshoot SAP HANA on Azure (Large Instances)
+summary: Investigate monitoring tools and methods used for SAP HANA on Azure (Large Instances).
+abstract: |
+  After completing this module, you will be able to:
+  - Explore SAP HANA on Azure (Large Instances) monitoring.
+  - Explore diagnostic tools.
+  - Learn how to raise support requests for SAP HANA on Azure (Large Instances).
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/8-monitor-and-troubleshoot-sap-hana-on-azure-large-instances.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.introduction
+- learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.monitor-sap-hana-large-instances
+- learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.troubleshoot-monitor
+- learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.explore-alerts
+- learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.explore-diagnostic-tools
+- learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.raise-support-requests-for
+- learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.knowledge-check
+- learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.summary
+badge:
+  uid: learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.badge

@@ -31,7 +31,7 @@ A metropolitan area network (MAN) provides networking capabilities between two d
 
 ### What is a wide area network?
 
-A wide area network (WAN) provides networking capabilities between two different geographical locations locally or worldwide. For example, a WAN is used to connect an organization's head office with branch offices all over the country. A WAN links multiple LANs together to create one super network. As a MAN, you use a virtual private network (VPN) to manage the connection between different LANs.
+A wide area network (WAN) provides networking capabilities between two different geographical locations locally or worldwide. For example, a WAN is used to connect an organization's head office with branch offices all over the country. A WAN links multiple LANs together to create one super network. As a WAN, you use a virtual private network (VPN) to manage the connection between different LANs.
 
 ### Differences between LAN and WAN networks
 
@@ -39,7 +39,7 @@ Several aspects set a LAN apart from a WAN. Knowing what these items are makes i
 
 | LAN | WAN |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| A LAN is a privately operated network typically contained in a single building. | A WAN is used to connected geographically separate offices to each other. Multiple organizations might operate WANs. |
+| A LAN is a privately operated network typically contained in a single building. | A WAN is used to connect geographically separate offices to each other. Multiple organizations might operate WANs. |
 | A LAN operates at speeds of 10 Gbps or higher. | A WAN typically operates at speeds of less than 1 Gbps. |
 | A LAN is less congested compared to other network types. | A WAN is more congested compared to other network types. |
 | A LAN can be managed and administrated in-house. | A WAN typically requires the use of a third party to configure and set up, which increases cost. |

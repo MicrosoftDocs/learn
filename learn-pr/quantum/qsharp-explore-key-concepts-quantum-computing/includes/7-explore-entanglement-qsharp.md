@@ -20,13 +20,7 @@ Until now, you've used only single-qubit operations. These operations act
 on single qubits individually. To entangle qubits, you need
 *multiqubit gates*.
 
-The most prominent example of a multiqubit gate is the
-[`CNOT`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.cnot?azure-portal=true)
-operation. This operation takes two qubits as input. Then it flips the state of the
-second qubit (the target qubit) if, and only if, the state of the first qubit (the control
-qubit) is $|1\rangle$. With the help of the `H` operation and the `CNOT` operation, you can
-transform a register in the state $|00\rangle$ to the entangled state
-$\frac1{\sqrt2}(|00\rangle+|11\rangle)$.
+The most prominent example of a multiqubit gate is the [`CNOT`](/qsharp/api/qsharp/microsoft.quantum.intrinsic.cnot?azure-portal=true) operation. This operation takes two qubits as input. Then it flips the state of the second qubit (the target qubit) if, and only if, the state of the first qubit (the control qubit) is $|1\rangle$. With the help of the `H` operation and the `CNOT` operation, you can transform a register in the state $|00\rangle$ to the entangled state $\frac1{\sqrt2}(|00\rangle+|11\rangle)$.
 
 Here's how it works:
 
@@ -135,13 +129,13 @@ previous example, because the operations are equivalent.
 >
 > For more information
 > about these functors and many other Q# features, see the [Q# user
-> guide](https://docs.microsoft.com/quantum/user-guide/using-qsharp/operations-functions#calling-operation-specializations?azure-portal=true).
+> guide](/quantum/user-guide/).
 
 ## Estimate resources by using Q\#
 
 The QDK provides a built-in tool that allows you to estimate the
 resources that a quantum computer requires to run a given Q# code. The tool is called
-[`ResourcesEstimator`](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true).
+[`ResourcesEstimator`](/quantum/user-guide/machines/resources-estimator?azure-portal=true).
 It "runs" the quantum operation without actually simulating the state of a quantum
 computer. For this reason, it can estimate resources for Q# operations that use
 thousands of qubits, if the classical part of the code can be run in a
@@ -209,6 +203,6 @@ as a Q# quantum developer.
 
 For more information about `ResourcesEstimator`, about each of
 the parameters in the output, and about other estimation tools, 
-see [QDK resources estimator](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true).
+see [QDK resources estimator](/quantum/user-guide/machines/resources-estimator?azure-portal=true).
 
 In the next part, you'll explore two quantum algorithms that use superposition, interference, and entanglement to outperform classical computers.

@@ -28,7 +28,7 @@ In this unit, you'll import Matplotlib into the notebook you've been working wit
 
 1. Confirm that you see the following output:
 
-   ![ROC curve generated with Matplotlib](../media/4-roc-curve.png)
+   ![ROC curve generated with Matplotlib.](../media/4-roc-curve.png)
 
    _ROC curve generated with Matplotlib_
 
@@ -86,7 +86,7 @@ The reason you built a machine-learning model is to predict whether a flight wil
 
     Confirm that the output shows that the likelihood of an on-time arrival is 60%:
 
-    ![Predicting whether a flight will arrive on time](../media/4-jfk-to-atl.png)
+    ![Predicting whether a flight will arrive on time.](../media/4-jfk-to-atl.png)
 
     _Predicting whether a flight will arrive on time_
 
@@ -131,7 +131,7 @@ You now have an easy way to predict, with a single line of code, whether a fligh
 
 1. Confirm that the output looks like this:
 
-    ![Probability of on-time arrivals for a range of dates](../media/4-predict-plot-1.png)
+    ![Probability of on-time arrivals for a range of dates.](../media/4-predict-plot-1.png)
 
     _Probability of on-time arrivals for a range of dates_
 
@@ -139,7 +139,7 @@ You now have an easy way to predict, with a single line of code, whether a fligh
 
 1. On your own, write code to graph the probability that flights leaving SEA for ATL at 9:00 a.m., noon, 3:00 p.m., 6:00 p.m., and 9:00 p.m. on January 30 will arrive on time. Confirm that the output matches this:
 
-    ![Probability of on-time arrivals for a range of times](../media/4-predict-plot-2.png)
+    ![Probability of on-time arrivals for a range of times.](../media/4-predict-plot-2.png)
 
     _Probability of on-time arrivals for a range of times_
 

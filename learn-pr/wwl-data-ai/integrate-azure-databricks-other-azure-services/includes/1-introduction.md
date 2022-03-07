@@ -51,7 +51,7 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
 
 1. Select **Select Performance level** to open the Configure performance pane and select **Gen2 DW100c**.
 
-    ![Select database performance level](../media/select-data-warehouse-server-size.png)
+    ![Select database performance level.](../media/select-data-warehouse-server-size.png)
 
 1. In the **Additional settings** tab, select **Sample** under data source.
 
@@ -61,11 +61,11 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
 
 ## Configure JDBC Connection to Azure Synapse Analytics
 
-Interfacing with Azure Synapse Analytics requires a connection string. This can be retrieved from the Azure Portal.
+Interfacing with Azure Synapse Analytics requires a connection string. This can be retrieved from the Azure portal.
 
 1. After the Azure Synapse Analytics instance is provisioned, open it by selecting **Go to resource** under notifications in Azure.
 
-    ![Select Go to resource](../media/go-resource-sqldw.png)
+    ![Select Go to resource.](../media/go-resource-sqldw.png)
 
 1. At the top of the **Overview** pane, select the **Show database connection strings** link.
 
@@ -130,7 +130,7 @@ In this step, we create a Master Key and a new table. However, before we use the
 
 1. After the storage account is provisioned, open it by selecting **Go to resource** under notifications in Azure.
 
-    ![Select Go to resource](../media/go-resource-storage.png)
+    ![Select Go to resource for your storage account.](../media/go-resource-storage.png)
 
 1. Within the new storage account, select **Containers** in the left-hand menu. In the Containers blade, select **+ Container** to add a new container. In the New Container form, enter **data** for the name and set the public access level to **Private**. Select **Create**.
 
@@ -139,35 +139,3 @@ In this step, we create a Master Key and a new table. However, before we use the
 1. Select **Access keys** in the left-hand menu. In the Access keys blade, copy the **Storage account name** and **Key** under `key1`. *Save these values in a text editor for later*.
 
     ![Access keys.](../media/access-keys.png)
-
-## Create Azure Cosmos DB account
-
-1. Select the button below to launch the Azure Cosmos DB account creation form:
-
-    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-cosmosdb-create-account%2Fazuredeploy.json" target="_blank">
-        <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png"/>
-    </a>
-
-1. Provide the following information, then select **Purchase**:
-
-   - _Subscription_: Select the subscription you're using for this module.
-   - _Resource group_: Select the resource group you're using for this module.
-   - _Location_: Select the same location as the other resources in this module.
-
-1. Navigate to the Azure Cosmos DB account after it deploys.
-
-1. Select **Data Explorer** in the left-hand menu, then select **New Container**. Enter the following in the Add Container form, then select **OK**:
-
-    - _Database id_: Select **Create new** and enter `AdventureWorks`.
-    - _Provision database throughput_: Uncheck this option.
-    - _Container id_: Enter `ratings`.
-    - _Partition key_: Enter `/rating`.
-    - _Throughput_: Select **Manual** and enter `1000`.
-
-        ![The Add Container form is displayed.](../media/add-container.png)
-
-## Retrieve the Azure Cosmos DB Read-Write Key
-
- In your Azure Cosmos DB account, select **Keys** in the left-hand menu. Copy the **URI** value and the **Primary Key** value and *save both of them to a text editor for later*.
-
-![The Azure Cosmos DB Keys blade is displayed.](../media/cosmos-keys.png)

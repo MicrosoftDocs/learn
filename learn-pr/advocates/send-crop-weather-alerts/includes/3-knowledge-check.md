@@ -1,1 +1,0 @@
-Before we continue, lets check to see what you've learned so far.

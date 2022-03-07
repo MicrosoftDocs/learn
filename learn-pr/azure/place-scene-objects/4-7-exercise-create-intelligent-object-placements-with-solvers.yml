@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.place-scene-objects-tutorials-mrtk.4-7-exercise-create-intelligent-object-placements-with-solvers
+title: Exercise - Create intelligent object placements with solvers
+metadata:
+  title: Exercise - Create intelligent object placements with solvers
+  description: Introduction to create intelligent object placements with solvers
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-7-exercise-create-intelligent-object-placements-with-solvers.md)]

@@ -1,4 +1,4 @@
-Now you have learned how to use Azure Data Share for securely sending and receiving data to both external organizations or for inter-departmental transfers. 
+Now you have learned how to use Azure Data Share for securely sending and receiving data to both external organizations and inter-departmental transfers. 
 
 Since you have completed this module, you are now able to:
 

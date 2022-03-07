@@ -10,7 +10,7 @@ At this time, there are three versions of the Azure Functions Core Tools. Howeve
 
 > [!NOTE]
 >
->  If you used your personal Azure account instead of the Cloud Shell in the Learn sandbox, you would need to consult [Work with Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) for descriptions, requirements, and installation instructions for the different versions of the Azure Functions Core Tools.
+>  If you used your personal Azure account instead of the Cloud Shell in the Learn sandbox, you would need to consult [Work with Azure Functions Core Tools](/azure/azure-functions/functions-run-local) for descriptions, requirements, and installation instructions for the different versions of the Azure Functions Core Tools.
 >
 
 ## Configuring the Cloud Shell environment for testing
@@ -58,7 +58,7 @@ Once you have opened a port for testing, your next task would be to build and ex
 
     While Maven is preparing the runtime environment for your function, you'll see the Azure Functions Core Tools logo displayed:
 
-    ![Image showing the Azure Function Core tools logo](../media/4-mvn-azure-function-startup.png)
+    ![Image showing the Azure Function Core tools logo.](../media/4-mvn-azure-function-startup.png)
 
 1. Once you have completed your testing, you would use <kbd>CTRL+C</kbd> command from the Azure Cloud Shell to stop the server.
 

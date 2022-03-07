@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.machinelearning.evaluate-real-world-models
+metadata:
+  title: Confusion matrix and data imbalances
+  description: How do we know if a model is good or bad at classifying our data? The way that computers assess model performance sometimes can be difficult for us to comprehend or can over-simplify how the model will behave in the real world. To build models that work in a satisfactory way, we need to find intuitive ways to assess them, and understand how these metrics can bias our view.
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Confusion matrix and data imbalances
+summary: How do we know if a model is good or bad at classifying our data? The way that computers assess model performance sometimes can be difficult for us to comprehend or can over-simplify how the model will behave in the real world. To build models that work in a satisfactory way, we need to find intuitive ways to assess them, and understand how these metrics can bias our view.
+abstract: | 
+  In this module, you will:
+  - Assess performance of classification models
+  - Review metrics to improve classification models
+  - Mitigate performance issues from data imbalances
+prerequisites: Basic familiarity with classification models
+iconUrl: /learn/achievements/machine-learning/machine-learning-confusion-matrix.svg
+levels: 
+- beginner
+roles: 
+- ai-engineer
+- data-scientist
+- student
+products: 
+- azure
+units: 
+- learn.machinelearning.evaluate-real-world-models.introduction
+- learn.machinelearning.evaluate-real-world-models.confusion-matrices
+- learn.machinelearning.evaluate-real-world-models.exercise-building-matrix
+- learn.machinelearning.evaluate-real-world-models.data-imbalances
+- learn.machinelearning.evaluate-real-world-models.exercise-resolving-bias
+- learn.machinelearning.evaluate-real-world-models.cost-vs-evaluation
+- learn.machinelearning.evaluate-real-world-models.exercise-metrics-and-curves
+- learn.machinelearning.evaluate-real-world-models.knowledge-check
+- learn.machinelearning.evaluate-real-world-models.summary
+badge: 
+  uid: learn.machinelearning.evaluate-real-world-models.badge #add the uid for your achievement badge.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.create-git-project.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review what you've learned so far about creating Git projects.
+  ms.date: 10/08/2021
+  author: mshumba
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-summary.md)]

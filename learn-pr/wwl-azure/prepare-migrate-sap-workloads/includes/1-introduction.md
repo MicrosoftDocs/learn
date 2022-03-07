@@ -1,7 +1,7 @@
 SAP on Azure is delivered in the Infrastructure-as-a-Service (IaaS) cloud model. IaaS security protections are built into the service by Microsoft at the physical datacenter, physical network, physical host level, and the hypervisor. For those areas above the hypervisor (for example, the guest operating system for SAP), you need to undertake a careful evaluation of the services and technologies you select to ensure they provide the proper security controls for your architecture before migrating SAP workloads to Azure.
 
 
-This module provides the important steps prior to deploying SAP workloads to Azure. The process is divided it into the following phases:
+This module provides the important steps prior to deploying SAP workloads to Azure. The process is divided into the following phases:
 
 * Project preparation and planning
 

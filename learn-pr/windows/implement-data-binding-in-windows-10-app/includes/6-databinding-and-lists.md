@@ -1,6 +1,6 @@
 ::: zone pivot="uwp"
 
-![Tech logo](../media/tech-uwp.png)
+![Tech logo.](../media/tech-uwp.png)
 
 So far, you've only used data binding to display and edit the properties of a single object. In this lesson, you'll apply data binding to display a collection of objects. To make things simple, these objects will be colors. More specifically, they'll be multiple instances of the `ColorDescriptor` class.
 
@@ -41,7 +41,7 @@ Replace the default contents of the ColorDescriptor.cs file with the preceding c
 
 To display the color list, we'll use a new XAML page. Right-click the `DatabindingSample` project in **Solution Explorer**, and select **Add / New Item**. Choose **Blank Page** from the list of available items, and then enter `ColorList` as the name. Select **Add** to create the page.
 
-![Screenshot of Add New Item dialog box](../media/create-colorlist-page.png)
+![Screenshot of Add New Item dialog box.](../media/create-colorlist-page.png)
 
 #### 3. Set the startup page
 
@@ -114,13 +114,13 @@ The interesting part here is the `ItemsSource` attribute. As the name suggests, 
 
 If you run the app now, it shows the colors in a `ListBox`! But it's not too nice to look at. The `ListBox` seems to have invoked the `ToString()` method of the `ColorDescriptor`s stored in the `LotsOfColors` list. 
 
-![Screenshot of sample app](../media/colorlist1.png)
+![Screenshot of sample app.](../media/colorlist1.png)
 
 #### 6. Define a template for the items
 
 It'd be nice to have a template that shows the actual color stored in the `ColorDescriptor.Color` property, and it's name. Something like this:
 
-![Screenshot of template](../media/colortemplate-plan.png)
+![Screenshot of template.](../media/colortemplate-plan.png)
 
 To code this in XAML, we can put a colored `Rectangle` and a `TextBlock` in a `StackPanel`. 
 
@@ -188,11 +188,11 @@ Note that because every item in the `ListBox` corresponds to a `ColorDescriptor`
 
 Run the app now by pressing F5 or by selecting **Debug / Start Debugging** in the menu. You should see the color list in all its glory. 
 
-![Screenshot of sample app](../media/colorlist2.png)
+![Screenshot of sample app.](../media/colorlist2.png)
 
 If you launch an XAML app in debug mode, you can take advantage of live XAML editing. You don't even need to stop the app or press save. Just change the XAML, and most of your changes are reflected instantly on the running app. Try it now. Change the `Width` and `Height` of the `Rectangle` inside the data template to 30, thus turning the color rectangles into squares.
  
-![Screenshot of sample app](../media/colorlist-square.png)
+![Screenshot of sample app.](../media/colorlist-square.png)
 
 This is useful for fine-tuning the layout and animations in your app. 
 
@@ -208,7 +208,7 @@ The next lesson illustrates how you can select items from a `ListBox` or a dropd
 
 ::: zone pivot="wpf"
 
-![Tech logo](../media/tech-wpf.png)
+![Tech logo.](../media/tech-wpf.png)
 
 So far, you've only used data binding to display and edit the properties of a single object. In this lesson, you'll apply data binding to display a collection of objects. To make things simple, these objects will be colors. More specifically, they'll be multiple instances of the `ColorDescriptor` class.
 
@@ -249,7 +249,7 @@ Replace the default contents of the ColorDescriptor.cs file with the preceding c
 
 To display the color list, we'll use a new XAML file. Right-click the `DatabindingSampleWPF` project in **Solution Explorer**, and select **Add / New Item**. Choose **Window (WPF)** from the list of available items, and then enter `ColorList` as the name. Select **Add** to create the page.
 
-![Screenshot of Add New Item dialog box](../media/create-colorlist-page_wpf.png)
+![Screenshot of Add New Item dialog box.](../media/create-colorlist-page_wpf.png)
 
 #### 3. Set the startup XAML file
 
@@ -261,7 +261,7 @@ StartupUri="MainWindow.xaml"
 
 Replace `MainWindow` with `ColorList`, and verify that the **ColorList** is shown when you start the app (press F5 or select **Debug / Start Debugging**).
 
-![Screenshot of sample app](../media/colorlist-empty_wpf.png)
+![Screenshot of sample app.](../media/colorlist-empty_wpf.png)
 
 #### 4. Create the `DataContext` for the color list
 
@@ -324,13 +324,13 @@ The interesting part here is the `ItemsSource` attribute. As the name suggests, 
 
 If you run the app now, it shows the colors in a `ListBox`! But it's not too nice to look at. The `ListBox` seems to have invoked the `ToString()` method of the `ColorDescriptor`s stored in the `LotsOfColors` list. 
 
-![Screenshot of sample app](../media/colorlist1_wpf.png)
+![Screenshot of sample app.](../media/colorlist1_wpf.png)
 
 #### 6. Define a template for the items
 
 It'd be nice to have a template that shows the actual color stored in the `ColorDescriptor.Color` property, and it's name. Something like this:
 
-![Screenshot fo template](../media/colortemplate-plan.png)
+![Screenshot fo template.](../media/colortemplate-plan.png)
 
 To code this in XAML, we can put a colored `Rectangle` and a `TextBlock` in a `StackPanel`. 
 
@@ -399,11 +399,11 @@ Note that because every item in the `ListBox` corresponds to a `ColorDescriptor`
 
 You should immediately see the color list in Visual Studio. Just to make sure, run the app now by pressing F5 or by selecting **Debug / Start Debugging** in the menu. 
 
-![Screenshot of sample app](../media/colorlist2_wpf.png)
+![Screenshot of sample app.](../media/colorlist2_wpf.png)
 
 If you launch an XAML app in debug mode, you can take advantage of live XAML editing. You don't even need to stop the app or press save. Just change the XAML, and most of your changes are reflected instantly on the running app. Try it now. Change the `Width` and `Height` of the `Rectangle` inside the data template to 30, thus turning the color rectangles into squares.
  
-![Screenshot of sample app](../media/colorlist-square_wpf.png)
+![Screenshot of sample app.](../media/colorlist-square_wpf.png)
 
 This is useful for fine-tuning the layout and animations in your app. 
 

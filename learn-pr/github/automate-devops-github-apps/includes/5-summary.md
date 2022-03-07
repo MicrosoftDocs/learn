@@ -1,20 +1,31 @@
-In this module, you learned about how to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
+In this module, you learned about the use of access tokens, their use cases, and rate limits. You also learned about GitHub and OAuth Apps and how best to choose which app to use for a given situation. You also demonstrated your ability to install a GitHub App on a GitHub organization using a personal access token or (PAT) with the proper access rights scoped.
 
-You learned about:
+If a workflow requires the same task to be performed repeatedly, you should encourage your team to evaluate GitHub and OAuth apps. Not only does using the capability of these apps save time, they can help streamline and increase efficiency to your development workflow. Using apps to manage rate limits will also help you prevent disruptions in a GitHub enterprise workflow.
 
-- Installing Probot apps onto your repository
-- Putting GitHub webhooks to use
-- Utilizing GitHub's APIs
-- Installing GitHub Apps and working with them
+In this module, you learned:
 
-GitHub Apps are great for interacting with GitHub from virtually anywhere. But what if you want to interact with the API from within GitHub Actions? Learn to [Automate GitHub by using GitHub Script](/learn/modules/automate-github-using-github-script/).
+- How personal access tokens allow users to authenticate and allow specific access for GitHub Apps
+- The different tokens that are needed to authorize activities on GitHub
+- The importance of monitoring rate limits
+- The differences between how OAuth and GitHub apps authenticate through the GitHub REST API
+- How to install a GitHub App in a GitHub organization
+
+By encouraging the use of appropriate tools and tokens, you can help make your organization more secure. You should use these tools to build a sustainable environment for your organization, which can automate tasks and protect your data. You can apply the learning in this module to show team members how to optimize the tools at their disposal, and set them up for successful and efficient product development.
 
 ## Learn more
 
-Here are some links to more information on the topics we discussed in this module.
+Here are some links to more detailed information on the topics we discussed in this module:
 
-- [Differences between GitHub Apps and OAuth Apps](https://developer.github.com/apps/differences-between-apps/?azure-portal=true)
-- [GitHub webhooks](https://developer.github.com/webhooks?azure-portal=true)
-- [Webhooks vs. Polling](https://github.community/t/scalable-continuous-integration-ci-patterns/13501?azure-portal=true)
-- [Probot GitHub Apps](https://probot.github.io/?azure-portal=true)
-- [smee.io](https://smee.io/?azure-portal=true)
+- [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+
+- [Git automation with OAuth tokens](https://docs.github.com/en/github/extending-github/git-automation-with-oauth-tokens)
+- [Differences between GitHub Apps and OAuth Apps](https://docs.github.com/en/developers/apps/getting-started-with-apps/differences-between-github-apps-and-oauth-apps#machine-vs-bot-accounts)
+
+- [Rate limits for GitHub Apps](https://docs.github.com/en/developers/apps/building-github-apps/rate-limits-for-github-apps)
+
+- [Configuring rate limits](https://docs.github.com/en/enterprise-server@3.1/admin/configuration/configuring-your-enterprise/configuring-rate-limits)
+
+- [Adding a security policy to your repository](https://docs.github.com/en/code-security/getting-started/adding-a-security-policy-to-your-repository)
+
+- [Identifying and authorizing users for GitHub Apps](https://docs.github.com/en/apps/building-github-apps/identifying-and-authorizing-users-for-github-apps)
+

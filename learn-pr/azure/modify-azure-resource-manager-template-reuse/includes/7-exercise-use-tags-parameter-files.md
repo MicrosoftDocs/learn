@@ -6,7 +6,7 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
 
 First, you create a parameter to use as a resource tag in your template.
 
-1. In Visual Studio Code, in the **azuredeploy.json** file, place your curser after the closing brace for the `storageSKU` parameter. Add a comma and select the <kbd>Enter</kbd> key.
+1. In Visual Studio Code, in the **azuredeploy.json** file, place your cursor after the closing brace for the `storageSKU` parameter. Add a comma and select the <kbd>Enter</kbd> key.
 1. Type **par**. You see a list of related snippets.
 1. Select **arm-param**. Remember, this action adds a generic parameter to the template. It will look like this code:
 

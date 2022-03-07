@@ -6,7 +6,7 @@ Here you'll practice the process you learned about in the previous units.
 
 To resize a disk, you need the ID or name of the disk. In this case, you already know the name, **uploadDataDisk1**. But in case you didn't remember that, or it was created by someone else, you can run `az disk list` to find the name.
 
-1. Run `az disk list` to print the list of the managed disks in the resource group. This list might include other disks if you have multiple VMs in the same resource group.
+1. Run the `az disk list` command to print the list of the managed disks in the resource group. This list might include other disks if you have multiple VMs in the same resource group.
 
     ```azurecli
     az disk list \
@@ -29,13 +29,13 @@ To resize a disk, you need the ID or name of the disk. In this case, you already
     az vm deallocate --name support-web-vm01
     ```
 
-1. Run `az disk update` to resize the disk to 128 GB.
+1. Run the `az disk update` command to resize the disk to 128 GB.
 
     ```azurecli
     az disk update --name uploadDataDisk1 --size-gb 128
     ```
 
-1. Run `az vm start` to restart the VM.
+1. Run the `az vm start` command to restart the VM.
 
     ```azurecli
     az vm start --name support-web-vm01
@@ -71,7 +71,7 @@ The final step is to tell the OS about the available space. Just like the partit
     └─sda1   8:1    0   30G  0 part /
     ```
 
-1. Similar to what you did previously to initialize your disk, run this `az vm extension set` command to tell the OS on the VM about the newly available space by executing a pre-made Bash script we create to help you along.
+1. Similar to what you did previously to initialize your disk, run the following `az vm extension set` command to tell the OS on the VM about the newly available space by executing a pre-made Bash script we create to help you along.
 
     ```azurecli
     az vm extension set \

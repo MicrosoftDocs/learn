@@ -1,15 +1,16 @@
 Now that a virtual machine has been created, we can get information about it through other commands.
 
-Let's start with `vm list`.
+Let's start by running `vm list`.
 
 ```azurecli
 az vm list
 ```
 
-This command will return _all_ virtual machines defined in this subscription. The output can be filtered to a specific resource group through the `--resource-group` parameter. 
+This command will return _all_ virtual machines defined in this subscription. You can filter the output to a specific resource group through the `--resource-group` parameter.
 
 ## Output types
-Notice that the default response type for all the commands we've done so far is JSON. This is great for scripting - but most people find it harder to read. You can change the output style for any response through the `--output` flag. For example, try the following command in Azure Cloud Shell to see the different output style.
+
+Notice that the default response type for all the commands we've done so far is JSON. This is great for scripting, but most people find it harder to read. You can change the output style for any response through the `--output` flag. For example, run the following command in Azure Cloud Shell to see the different output style.
 
 ```azurecli
 az vm list --output table
@@ -17,7 +18,7 @@ az vm list --output table
 
 Along with `table`, you can specify `json` (the default), `jsonc` (colorized JSON), or `tsv` (Tab-Separated Values). Try a few variations with the above command to see the difference.
 
-## Getting the IP address
+## Get the IP address
 
 Another useful command is `vm list-ip-addresses`, which will list the public and private IP addresses for a VM. If they change, or you didn't capture them during creation, you can retrieve them at any time.
 
@@ -25,7 +26,7 @@ Another useful command is `vm list-ip-addresses`, which will list the public and
 az vm list-ip-addresses -n SampleVM -o table
 ```
 
-This returns:
+This returns output like:
 
 ```
 VirtualMachine    PublicIPAddresses    PrivateIPAddresses
@@ -34,11 +35,11 @@ SampleVM          168.61.54.62         10.0.0.4
 ```
 
 > [!TIP]
-> Notice that we are using a shorthand syntax for the `--output` flag as `-o`. Most parameters to Azure CLI commands can be shortened to a single dash and letter. For example, `--name` can be shortened to `-n` and `--resource-group` to `-g`. This is handy for typing, but we recommend using the full option name in scripts for clarity. Check the documentation for details on each command.
+> Notice that we are using a shorthand syntax for the `--output` flag as `-o`. You can shorten most parameters to Azure CLI commands to a single dash and letter. For example, you can shorten `--name` to `-n` and `--resource-group` to `-g`. This is handy for entering keyboard characters, but we recommend using the full option name in scripts for clarity. Check the documentation for details about each command.
 
-## Getting VM details
+## Get VM details
 
-We can get more detailed information about a specific virtual machine by name or ID using the `vm show` command.
+We can get more detailed information about a specific virtual machine by name or ID running the `vm show` command.
 
 ```azurecli
 az vm show --resource-group <rgn>[sandbox resource group name]</rgn> --name SampleVM
@@ -46,7 +47,7 @@ az vm show --resource-group <rgn>[sandbox resource group name]</rgn> --name Samp
 
 This will return a fairly large JSON block with all sorts of information about the VM, including attached storage devices, network interfaces, and all of the object IDs for resources that the VM is connected to. Again, we could change to a table format, but that omits almost all of the interesting data. Instead, we can turn to a built-in query language for JSON called [JMESPath](http://jmespath.org/).
 
-## Adding filters to queries with JMESPath
+## Add filters to queries with JMESPath
 
 JMESPath is an industry-standard query language built around JSON objects. The simplest query is to specify an _identifier_ that selects a key in the JSON object.
 
@@ -110,9 +111,9 @@ Finally, we can constrain the results by adding a select: `people[?age > '25'].[
 
 JMESQuery has several other interesting query features. When you have time, check out the [online tutorial](http://jmespath.org/tutorial.html) available on the [JMESPath.org](http://jmespath.org/) site.
 
-## Filtering our Azure CLI queries
+## Filter your Azure CLI queries
 
-With a basic understanding of JMES queries, we can add filters to the data being returned by queries like the `vm show` command. For example, we can retrieve the admin user name:
+With a basic understanding of JMES queries, we can add filters to the data being returned by queries like the `vm show` command. For example, we can retrieve the admin username:
 
 ```azurecli
 az vm show \
@@ -130,7 +131,7 @@ az vm show \
     --query hardwareProfile.vmSize
 ```
 
-Or to retrieve all the IDs for your network interfaces, you can use the query:
+Or, to retrieve all the IDs for your network interfaces, you can run the query:
 
 ```azurecli
 az vm show \
@@ -139,9 +140,9 @@ az vm show \
     --query "networkProfile.networkInterfaces[].id"
 ```
 
-This query technique will work with any Azure CLI command and can be used to pull specific bits of data out on the command line. It is useful for scripting as well - for example, you can pull a value out of your Azure account and store it in an environment or script variable. If you decide to use it this way, a useful flag to add is the `--output tsv` parameter (which can be shortened to `-o tsv`). This will return the results in tab-separated values that only include the actual data values with tab separators.
+This query technique will work with any Azure CLI command, you can use it to pull specific bits of data out on the command line. It is useful for scripting as well; for example, you can pull a value out of your Azure account and store it in an environment or script variable. If you decide to use it this way, it's useful to add the `--output tsv` parameter (which you can shorten to `-o tsv`). This will return results that only include the actual data values with tab separators.
 
-As an example,
+For example:
 
 ```azurecli
 az vm show \

@@ -4,11 +4,12 @@ title: Exercise - Try Bash
 metadata:
   title: Exercise - Try Bash
   description: Get some experience with Bash by trying some commands
-  ms.date: 01/31/2020
-  author: shanamatthews
-  ms.author: shanama
+  ms.date: 03/19/2021
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-bash
+  ms.custom: team=nextgen
 durationInMinutes: 8
 interactive: bash
 azureSandbox: true
@@ -18,7 +19,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "What directory would you switch to if you entered the Bash command `cd`?"
+  - content: "What directory would you switch to if you entered the Bash command `cd .`?"
     choices:
     - content: "My special \"home\" directory"
       isCorrect: false

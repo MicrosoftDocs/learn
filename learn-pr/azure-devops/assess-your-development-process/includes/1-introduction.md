@@ -2,8 +2,8 @@ Do you want to improve your release process? Maybe you want to increase the freq
 
 ## Learning objectives
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-- Learn about value stream maps (VSMs)
-- Use a VSM to get a sense of where the release process needs improvement
-- Understand how the VSM gives you a good starting point to discuss your current DevOps practices
+- Explain the purpose of value stream maps (VSMs)
+- Use a VSM to get a sense of where your release process can be improved
+- Compute the activity ratio, or overall efficiency, of your processes

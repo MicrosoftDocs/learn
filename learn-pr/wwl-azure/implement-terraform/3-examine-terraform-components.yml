@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-terraform.examine-terraform-components
+title: Examine Terraform components
+metadata:
+  title: Examine Terraform components
+  description: "Examine Terraform components"
+  ms.date: 02/25/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-examine-terraform-components.md)]

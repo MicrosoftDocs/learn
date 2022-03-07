@@ -1,0 +1,1654 @@
+For non-HANA RDBMS platforms, the following Azure VM types (server sizes) are supported in 2-tier or 3-tier configurations and can be used as application servers and standalone database servers.
+
+For A- and D- series VMs, SAP database files can be stored on Standard Storage or any higher quality storage types. All other VM series are not supported with SAP database files on Standard Storage or Standard SSD Storage.
+
+:::row:::
+  :::column:::
+    **VM Series**
+  :::column-end:::
+  :::column:::
+    **VM Type**
+  :::column-end:::
+  :::column:::
+    **VM Size**
+  :::column-end:::
+  :::column:::
+    **2-Tier SAPS**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    A-series
+  :::column-end:::
+  :::column:::
+    Standard\_A5
+  :::column-end:::
+  :::column:::
+    2 vCPU, 14 GiB
+  :::column-end:::
+  :::column:::
+    1,500
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    A-series
+  :::column-end:::
+  :::column:::
+    Standard\_A6
+  :::column-end:::
+  :::column:::
+    4 vCPU, 28 GiB
+  :::column-end:::
+  :::column:::
+    3,000
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    A-series
+  :::column-end:::
+  :::column:::
+    Standard\_A7
+  :::column-end:::
+  :::column:::
+    8 vCPU, 56 GiB
+  :::column-end:::
+  :::column:::
+    6,000
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    A-series
+  :::column-end:::
+  :::column:::
+    Standard\_A8 / Standard\_A10
+  :::column-end:::
+  :::column:::
+    8 vCPU, 56 GiB
+  :::column-end:::
+  :::column:::
+    11,000
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    A-series
+  :::column-end:::
+  :::column:::
+    Standard\_A9 / Standard\_A11
+  :::column-end:::
+  :::column:::
+    16 vCPU, 112 GiB
+  :::column-end:::
+  :::column:::
+    22,000
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D-series
+  :::column-end:::
+  :::column:::
+    Standard\_D11
+  :::column-end:::
+  :::column:::
+    2 vCPU, 14 GiB
+  :::column-end:::
+  :::column:::
+    2,325
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D-series
+  :::column-end:::
+  :::column:::
+    Standard\_D12
+  :::column-end:::
+  :::column:::
+    4 vCPU, 28 GiB
+  :::column-end:::
+  :::column:::
+    4,650
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D-series
+  :::column-end:::
+  :::column:::
+    Standard\_D13
+  :::column-end:::
+  :::column:::
+    8 vCPU, 56 GiB
+  :::column-end:::
+  :::column:::
+    9,300
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D-series
+  :::column-end:::
+  :::column:::
+    Standard\_D14
+  :::column-end:::
+  :::column:::
+    16 vCPU, 112 GiB
+  :::column-end:::
+  :::column:::
+    18,600
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    DS-series
+  :::column-end:::
+  :::column:::
+    Standard\_DS11
+  :::column-end:::
+  :::column:::
+    2 vCPU, 14 GiB
+  :::column-end:::
+  :::column:::
+    2,325
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    DS-series
+  :::column-end:::
+  :::column:::
+    Standard\_DS12
+  :::column-end:::
+  :::column:::
+    4 vCPU, 28 GiB
+  :::column-end:::
+  :::column:::
+    4,650
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    DS-series
+  :::column-end:::
+  :::column:::
+    Standard\_DS13
+  :::column-end:::
+  :::column:::
+    8 vCPU, 56 GiB
+  :::column-end:::
+  :::column:::
+    9,300
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    DS-series
+  :::column-end:::
+  :::column:::
+    Standard\_DS14
+  :::column-end:::
+  :::column:::
+    16 vCPU, 112 GiB
+  :::column-end:::
+  :::column:::
+    18,600
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    DSv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_DS11\_v2
+  :::column-end:::
+  :::column:::
+    2 vCPU, 14 GiB
+  :::column-end:::
+  :::column:::
+    3,530
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    DSv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_DS12\_v2
+  :::column-end:::
+  :::column:::
+    4 vCPU, 28 GiB
+  :::column-end:::
+  :::column:::
+    6,680
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    DSv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_DS13\_v2
+  :::column-end:::
+  :::column:::
+    8 vCPU, 56 GiB
+  :::column-end:::
+  :::column:::
+    12,300
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    DSv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_DS14\_v2
+  :::column-end:::
+  :::column:::
+    16 vCPU, 112 GiB
+  :::column-end:::
+  :::column:::
+    24,180
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    DSv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_DS15\_v2
+  :::column-end:::
+  :::column:::
+    20 vCPU, 140 GiB
+  :::column-end:::
+  :::column:::
+    30,430
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dsv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D2s\_v3
+  :::column-end:::
+  :::column:::
+    2 vCPU, 8 GiB
+  :::column-end:::
+  :::column:::
+    2,178
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dsv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D4s\_v3
+  :::column-end:::
+  :::column:::
+    4 vCPU, 16 GiB
+  :::column-end:::
+  :::column:::
+    4,355
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dsv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D8s\_v3
+  :::column-end:::
+  :::column:::
+    8 vCPU, 32 GiB
+  :::column-end:::
+  :::column:::
+    8,710
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dsv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D16s\_v3
+  :::column-end:::
+  :::column:::
+    16 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    17,420
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dsv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D32s\_v3
+  :::column-end:::
+  :::column:::
+    32 vCPU, 128 GiB
+  :::column-end:::
+  :::column:::
+    34,840
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dsv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D48s\_v3
+  :::column-end:::
+  :::column:::
+    48 vCPU, 192 GiB
+  :::column-end:::
+  :::column:::
+    52,224
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dsv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_D64s\_v3
+  :::column-end:::
+  :::column:::
+    64 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    69,680
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Easv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E2as\_v4
+  :::column-end:::
+  :::column:::
+    2 vCPU, 16 GiB
+  :::column-end:::
+  :::column:::
+    3,022
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Easv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E4as\_v4
+  :::column-end:::
+  :::column:::
+    4 vCPU, 32 GiB
+  :::column-end:::
+  :::column:::
+    6,044
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Easv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E8as\_v4
+  :::column-end:::
+  :::column:::
+    8 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    12,088
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Easv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E16as\_v4
+  :::column-end:::
+  :::column:::
+    16 vCPU, 128 GiB
+  :::column-end:::
+  :::column:::
+    24,175
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Easv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E20as\_v4
+  :::column-end:::
+  :::column:::
+    20 vCPU, 160 GiB
+  :::column-end:::
+  :::column:::
+    30,219
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Easv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E32as\_v4
+  :::column-end:::
+  :::column:::
+    32 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    48,350
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Easv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E48as\_v4
+  :::column-end:::
+  :::column:::
+    48 vCPU, 384 GiB
+  :::column-end:::
+  :::column:::
+    72,525
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Easv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E64as\_v4
+  :::column-end:::
+  :::column:::
+    64 vCPU, 512 GiB
+  :::column-end:::
+  :::column:::
+    96,700
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Easv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E96as\_v4
+  :::column-end:::
+  :::column:::
+    96 vCPU, 672 GiB
+  :::column-end:::
+  :::column:::
+    135,080
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dasv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D2as\_v4
+  :::column-end:::
+  :::column:::
+    2 vCPU, 8 GiB
+  :::column-end:::
+  :::column:::
+    3,022
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dasv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D4as\_v4
+  :::column-end:::
+  :::column:::
+    4 vCPU, 16 GiB
+  :::column-end:::
+  :::column:::
+    6,044
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dasv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D8as\_v4
+  :::column-end:::
+  :::column:::
+    8 vCPU, 32 GiB
+  :::column-end:::
+  :::column:::
+    12,088
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dasv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D16as\_v4
+  :::column-end:::
+  :::column:::
+    16 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    24,175
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dasv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D32as\_v4
+  :::column-end:::
+  :::column:::
+    32 vCPU, 128 GiB
+  :::column-end:::
+  :::column:::
+    48,350
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dasv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D48as\_v4
+  :::column-end:::
+  :::column:::
+    48 vCPU, 192 GiB
+  :::column-end:::
+  :::column:::
+    72,525
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dasv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D64as\_v4
+  :::column-end:::
+  :::column:::
+    64 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    96,700
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Dasv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D96as\_v4
+  :::column-end:::
+  :::column:::
+    96 vCPU, 384 GiB
+  :::column-end:::
+  :::column:::
+    135,080
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Esv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E2s\_v3
+  :::column-end:::
+  :::column:::
+    2 vCPU, 16 GiB
+  :::column-end:::
+  :::column:::
+    2,178
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Esv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E4s\_v3
+  :::column-end:::
+  :::column:::
+    4 vCPU, 32 GiB
+  :::column-end:::
+  :::column:::
+    4,355
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Esv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E8-4s\_v3
+  :::column-end:::
+  :::column:::
+    4 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    4,378
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Esv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E8s\_v3
+  :::column-end:::
+  :::column:::
+    8 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    8,710
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Esv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E16s\_v3
+  :::column-end:::
+  :::column:::
+    16 vCPU, 128 GiB
+  :::column-end:::
+  :::column:::
+    17,420
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Esv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E20s\_v3
+  :::column-end:::
+  :::column:::
+    20 vCPU, 160 GiB
+  :::column-end:::
+  :::column:::
+    21,775
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Esv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E32s\_v3
+  :::column-end:::
+  :::column:::
+    32 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    34,840
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Esv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E48s\_v3
+  :::column-end:::
+  :::column:::
+    48 vCPU, 384 GiB
+  :::column-end:::
+  :::column:::
+    52,512
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Esv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E64is\_v3
+  :::column-end:::
+  :::column:::
+    64 vCPU, 432 GiB
+  :::column-end:::
+  :::column:::
+    70,050
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Esv3-series
+  :::column-end:::
+  :::column:::
+    Standard\_E64s\_v3
+  :::column-end:::
+  :::column:::
+    64 vCPU, 432 GiB
+  :::column-end:::
+  :::column:::
+    70,050
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ddsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D2ds\_v4
+  :::column-end:::
+  :::column:::
+    2 vCPU, 8 GiB
+  :::column-end:::
+  :::column:::
+    3,142
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ddsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D4ds\_v4
+  :::column-end:::
+  :::column:::
+    4 vCPU, 16 GiB
+  :::column-end:::
+  :::column:::
+    6,284
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ddsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D8ds\_v4
+  :::column-end:::
+  :::column:::
+    8 vCPU, 32 GiB
+  :::column-end:::
+  :::column:::
+    12,569
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ddsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D16ds\_v4
+  :::column-end:::
+  :::column:::
+    16 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    25,138
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ddsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D32ds\_v4
+  :::column-end:::
+  :::column:::
+    32 vCPU, 128 GiB
+  :::column-end:::
+  :::column:::
+    50,275
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ddsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D48ds\_v4
+  :::column-end:::
+  :::column:::
+    48 vCPU, 192 GiB
+  :::column-end:::
+  :::column:::
+    75,413
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Ddsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_D64ds\_v4
+  :::column-end:::
+  :::column:::
+    64 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    100,550
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D2(d)s\_v5
+  :::column-end:::
+  :::column:::
+    2 vCPU, 8 GiB
+  :::column-end:::
+  :::column:::
+    3,405
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D4(d)s\_v5
+
+  :::column-end:::
+  :::column:::
+    4 vCPU, 16 GiB
+  :::column-end:::
+  :::column:::
+    6,810
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D8(d)s\_v5
+  :::column-end:::
+  :::column:::
+    8 vCPU, 32 GiB
+  :::column-end:::
+  :::column:::
+    13,621
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D16(d)s\_v5
+  :::column-end:::
+  :::column:::
+    16 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    27,242
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D32(d)s\_v5
+  :::column-end:::
+  :::column:::
+    32 vCPU, 128 GiB
+  :::column-end:::
+  :::column:::
+    54,483
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D48(d)s\_v5
+  :::column-end:::
+  :::column:::
+    48 vCPU, 196 GiB
+  :::column-end:::
+  :::column:::
+    81,725
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D64(d)s\_v5
+  :::column-end:::
+  :::column:::
+    64 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    108,967
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    D(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_D96(d)s\_v5
+  :::column-end:::
+  :::column:::
+    96 vCPU, 384 GiB
+  :::column-end:::
+  :::column:::
+    163,450
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Edsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E2ds\_v4
+  :::column-end:::
+  :::column:::
+    2 vCPU, 16 GiB
+  :::column-end:::
+  :::column:::
+    3,142
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Edsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E4ds\_v4
+  :::column-end:::
+  :::column:::
+    4 vCPU, 32 GiB
+  :::column-end:::
+  :::column:::
+    6,284
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Edsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E8ds\_v4
+  :::column-end:::
+  :::column:::
+    8 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    12,569
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Edsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E16ds\_v4
+  :::column-end:::
+  :::column:::
+    16 vCPU, 128 GiB
+  :::column-end:::
+  :::column:::
+    25,138
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Edsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E20ds\_v4
+  :::column-end:::
+  :::column:::
+    20 vCPU, 160 GiB
+  :::column-end:::
+  :::column:::
+    31,422
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Edsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E32ds\_v4
+  :::column-end:::
+  :::column:::
+    32 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    50,275
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Edsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E48ds\_v4
+  :::column-end:::
+  :::column:::
+    48 vCPU, 384 GiB
+  :::column-end:::
+  :::column:::
+    75,413
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Edsv4-series
+  :::column-end:::
+  :::column:::
+    Standard\_E64ds\_v4
+  :::column-end:::
+  :::column:::
+    64 vCPU, 504 GiB
+  :::column-end:::
+  :::column:::
+    100,550
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E2(d)s\_v5
+  :::column-end:::
+  :::column:::
+    2 vCPU, 16 GiB
+  :::column-end:::
+  :::column:::
+    3,405
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E4(d)s\_v5
+  :::column-end:::
+  :::column:::
+    4 vCPU, 32 GiB
+  :::column-end:::
+  :::column:::
+    6,810
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E8(d)s\_v5
+  :::column-end:::
+  :::column:::
+    8 vCPU, 64 GiB
+  :::column-end:::
+  :::column:::
+    13,621
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E16(d)s\_v5
+  :::column-end:::
+  :::column:::
+    16 vCPU, 128 GiB
+  :::column-end:::
+  :::column:::
+    27,242
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E32(d)s\_v5
+  :::column-end:::
+  :::column:::
+    32 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    54,483
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E48(d)s\_v5
+  :::column-end:::
+  :::column:::
+    48 vCPU, 384 GiB
+  :::column-end:::
+  :::column:::
+    81,725
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E64(d)s\_v5
+  :::column-end:::
+  :::column:::
+    64 vCPU, 512 GiB
+  :::column-end:::
+  :::column:::
+    108,967
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    E(d)sv5-series
+  :::column-end:::
+  :::column:::
+    Standard\_E96(d)s\_v5
+  :::column-end:::
+  :::column:::
+    96 vCPU, 672 GiB
+  :::column-end:::
+  :::column:::
+    163,450
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    GS-series
+  :::column-end:::
+  :::column:::
+    Standard\_GS1
+  :::column-end:::
+  :::column:::
+    2 vCPU, 28 GiB
+  :::column-end:::
+  :::column:::
+    3,580
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    GS-series
+  :::column-end:::
+  :::column:::
+    Standard\_GS2
+  :::column-end:::
+  :::column:::
+    4 vCPU, 56 GiB
+  :::column-end:::
+  :::column:::
+    6,900
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    GS-series
+  :::column-end:::
+  :::column:::
+    Standard\_GS3
+  :::column-end:::
+  :::column:::
+    8 vCPU, 112 GiB
+  :::column-end:::
+  :::column:::
+    11,870
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    GS-series
+  :::column-end:::
+  :::column:::
+    Standard\_GS4
+  :::column-end:::
+  :::column:::
+    16 vCPU, 224 GiB
+  :::column-end:::
+  :::column:::
+    22,680
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    GS-series
+  :::column-end:::
+  :::column:::
+    Standard\_GS5
+  :::column-end:::
+  :::column:::
+    32 vCPU, 448 GiB
+  :::column-end:::
+  :::column:::
+    41,670
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    M-series
+  :::column-end:::
+  :::column:::
+    Standard\_M8ms
+  :::column-end:::
+  :::column:::
+    8 vCPU, 219 GiB
+  :::column-end:::
+  :::column:::
+    8,616
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    M-series
+  :::column-end:::
+  :::column:::
+    Standard\_M16ms
+  :::column-end:::
+  :::column:::
+    16 vCPU, 438 GiB
+  :::column-end:::
+  :::column:::
+    17,232
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    M-series
+  :::column-end:::
+  :::column:::
+    Standard\_M32ts
+  :::column-end:::
+  :::column:::
+    32 vCPU, 192 GiB
+  :::column-end:::
+  :::column:::
+    33,670
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    M-series
+  :::column-end:::
+  :::column:::
+    Standard\_M32ls
+  :::column-end:::
+  :::column:::
+    32 vCPU, 256 GiB
+  :::column-end:::
+  :::column:::
+    33,670
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    M-series
+  :::column-end:::
+  :::column:::
+    Standard\_M32ms
+  :::column-end:::
+  :::column:::
+    32 vCPU, 875 GiB
+  :::column-end:::
+  :::column:::
+    34,465
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    M-series
+  :::column-end:::
+  :::column:::
+    Standard\_M64ls
+  :::column-end:::
+  :::column:::
+    64 vCPU, 512 GiB
+  :::column-end:::
+  :::column:::
+    66,600
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    M-series
+  :::column-end:::
+  :::column:::
+    Standard\_M64s
+  :::column-end:::
+  :::column:::
+    64 vCPU, 1024 GiB
+  :::column-end:::
+  :::column:::
+    67,315
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    M-series
+  :::column-end:::
+  :::column:::
+    Standard\_M64ms
+  :::column-end:::
+  :::column:::
+    64 vCPU, 1792 GiB
+  :::column-end:::
+  :::column:::
+    68,930
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    M-series
+  :::column-end:::
+  :::column:::
+    Standard\_M128s
+  :::column-end:::
+  :::column:::
+    128 vCPU, 2048 GiB
+  :::column-end:::
+  :::column:::
+    134,630
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    M-series
+  :::column-end:::
+  :::column:::
+    Standard\_M128ms
+  :::column-end:::
+  :::column:::
+    128 vCPU, 3892 GiB
+  :::column-end:::
+  :::column:::
+    134,630
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Mv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M208s\_v2
+  :::column-end:::
+  :::column:::
+    208 vCPU, 2.85 TiB
+  :::column-end:::
+  :::column:::
+    259,950
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Mv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M208ms\_v2
+  :::column-end:::
+  :::column:::
+    208 vCPU, 5.7 TiB
+  :::column-end:::
+  :::column:::
+    259,950
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Mv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M416s\_v2
+  :::column-end:::
+  :::column:::
+    416 vCPU, 5.7 TiB
+  :::column-end:::
+  :::column:::
+    488,230
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Mv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M416ms\_v2
+  :::column-end:::
+  :::column:::
+    416 vCPU, 11.4 TiB
+  :::column-end:::
+  :::column:::
+    488,230
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Msv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M32ms\_v2
+  :::column-end:::
+  :::column:::
+    32 vCPU, 875 GiB
+  :::column-end:::
+  :::column:::
+    42,711
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Msv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M64s\_v2
+  :::column-end:::
+  :::column:::
+    64 vCPU, 1024 GiB
+  :::column-end:::
+  :::column:::
+    85,432
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Msv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M64ms\_v2
+  :::column-end:::
+  :::column:::
+    64 vCPU, 1792 GiB
+  :::column-end:::
+  :::column:::
+    85,432
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Msv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M128s\_v2
+  :::column-end:::
+  :::column:::
+    128 vCPU, 2048 GiB
+  :::column-end:::
+  :::column:::
+    170,846
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Msv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M128ms\_v2
+  :::column-end:::
+  :::column:::
+    128 vCPU, 3892 GiB
+  :::column-end:::
+  :::column:::
+    170,846
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Msv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M192is\_v2
+  :::column-end:::
+  :::column:::
+    192 vCPU, 2048 GiB
+  :::column-end:::
+  :::column:::
+    256,750
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Msv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M192ims\_v2
+  :::column-end:::
+  :::column:::
+    192 vCPU, 4096 GiB
+  :::column-end:::
+  :::column:::
+    256,750
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Mdsv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M32dms\_v2
+  :::column-end:::
+  :::column:::
+    32 vCPU, 875 GiB
+  :::column-end:::
+  :::column:::
+    42,711
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Mdsv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M64ds\_v2
+  :::column-end:::
+  :::column:::
+    64 vCPU, 1024 GiB
+  :::column-end:::
+  :::column:::
+    85,432
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Mdsv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M64dms\_v2
+  :::column-end:::
+  :::column:::
+    64 vCPU, 1792 GiB
+  :::column-end:::
+  :::column:::
+    85,432
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Mdsv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M128ds\_v2
+  :::column-end:::
+  :::column:::
+    128 vCPU, 2048 GiB
+  :::column-end:::
+  :::column:::
+    170,846
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Mdsv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M128dms\_v2
+  :::column-end:::
+  :::column:::
+    128 vCPU, 3892 GiB
+  :::column-end:::
+  :::column:::
+    170,846
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Mdsv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M192ids\_v2
+  :::column-end:::
+  :::column:::
+    192 vCPU, 2048 GiB
+  :::column-end:::
+  :::column:::
+    256,750
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Mdsv2-series
+  :::column-end:::
+  :::column:::
+    Standard\_M192idms\_v2
+  :::column-end:::
+  :::column:::
+    192 vCPU, 4096 GiB
+  :::column-end:::
+  :::column:::
+    256,750
+  :::column-end:::
+:::row-end:::
+
+
+ -  [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533) provides an up-to-date listing of Azure VM SKUs supported for non-HANA RDBMS platforms serving SAP workloads. At the time of authoring this content, the listing was as reproduced above.
+ -  For VMs planned for retirement information, see [Previous generations of virtual machine sizes](/azure/virtual-machines/sizes-previous-gen).
+ -  **Dsv3-series**, **Edsv4-series**: CPU hyperthreading enabled on the hypervisor layer.
+ -  **D(d)sv5-series**: Only usage of Azure Gen2 virtual machine format is supported. CPU hyperthreading enabled on the hypervisor layer. Supported OS versions: Windows Server 2012 R2 and higher, SLES 12 SP4 and higher, Red Hat Enterprise Linux 7.6 and higher, Oracle Linux 7.7 and higher. Base VHD minimum size supported for VMs without temp disk Standard\_Dsv5: 128GB.
+ -  **E(d)sv5-series**: Only usage of Azure Gen2 virtual machine format is supported. CPU hyperthreading enabled on the hypervisor layer. Supported OS versions: Windows Server 2012 R2 and higher, SLES 12 SP4 and higher, Red Hat Enterprise Linux 7.6 and higher, Oracle Linux 7.7 and higher. Base VHD minimum size supported for VMs without temp disk Standard\_Esv5: 128GB.<br>
+ -  **M-series**: CPU hyperthreading enabled on the hypervisor layer. Supported OS versions: Windows Server 2019, SLES 12 SP4 and higher, Red Hat Enterprise Linux 7.6 and higher, Oracle Linux 7.3 and higher.
+ -  **Mv2-series**, **Msv2-series**, **Mdsv2-series**: CPU hyperthreading enabled on the hypervisor layer. Supported OS versions: Windows Server 2019, SLES 12 SP4 and higher, Red Hat Enterprise Linux 7.6 and higher, Oracle Linux 7.7 and higher. For Windows guest OS Registry Key described in [SAP Note \#2553235](https://launchpad.support.sap.com/#/notes/2553235) is required to be applied.
+ -  **Msv2-series**: Base VHD minimum size supported is 128 GB.
+ -  SAP performance is measured by relying on the SAP Application Performance Standard metric (SAPS). SAPS is a hardware-independent unit of measurement that describes the performance of a system configuration in the SAP environment. It is derived from the Sales and Distribution benchmark, where 100 SAPS is defined as 2,000 fully business processed order line items per hour. In the Sales and Distribution Benchmark, fully business-processed means the full business process of an order line item, which includes creating the order, creating a delivery note for the order, displaying the order, changing the delivery, posting a goods issue, listing orders, and creating an invoice. Another way to look at the performance rating is to consider that one SAPS is equal to 24 Sales and Distribution transactions per hour. In general SAPS are used to size CPU and memory of an SAP system.

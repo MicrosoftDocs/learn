@@ -6,7 +6,7 @@ Mapping Data Flows provides a number of different transformations types that ena
 | **Row modifier transformations** | These types of transformations impact how the rows are presented in the destination. An example of this is a Sort transformation that orders the data. |
 | **Multiple inputs/outputs transformations** | These types of transformations will generate new data pipelines or merge pipelines into one. An example of this is the Union transformation that combines multiple data streams. |
 
-Below is a list of transformations that is available in the Mapping Data Flows
+Below is a list of transformations that are available in the Mapping Data Flows
 
 | **Name** | **Category** | **Description** |
 | - | -| - |
@@ -20,7 +20,7 @@ Below is a list of transformations that is available in the Mapping Data Flows
 | **Join** | Multiple inputs/outputs | Combine data from two sources or streams. |
 | **Lookup** | Multiple inputs/outputs | Enables you to reference data from another source. |
 | **New branch** | Multiple inputs/outputs | Apply multiple sets of operations and transformations against the same data stream. |
-| **Pivot** | Schema modifier | An aggregation were one or more grouping columns has distinct row values transformed into individual columns. |
+| **Pivot** | Schema modifier | An aggregation where one or more grouping columns has distinct row values transformed into individual columns. |
 | **Select** | Schema modifier | Alias columns and stream names, and drop or reorder columns. |
 | **Sink** | -  | A final destination for your data. |
 | **Sort** | Row modifier | Sort incoming rows on the current data stream. |
@@ -38,5 +38,5 @@ To build the expression, use the Expression Builder, which is launched by clicki
 
 ![Using the expression builder in the Mapping Data Flow](../media/expression-builder.png)
 
-The Expression Builder tool defaults to the text editor option. the auto-complete feature reads from the entire Azure Data Factory Data Flow object model with syntax checking and highlighting.
+The Expression Builder tool defaults to the text editor option. The auto-complete feature reads from the entire Azure Data Factory Data Flow object model with syntax checking and highlighting.
 

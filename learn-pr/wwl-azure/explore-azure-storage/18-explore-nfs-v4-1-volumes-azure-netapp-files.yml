@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-storage.explore-nfs-v4-1-volumes-azure-netapp-files
+title: Explore NFS v4.1 volumes on Azure NetApp Files
+metadata:
+  title: Explore NFS v4.1 volumes on Azure NetApp Files
+  description: "Explore NFS v4.1 volumes on Azure NetApp Files"
+  ms.date: 01/20/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/18-explore-nfs-v4-1-volumes-azure-netapp-files.md)]

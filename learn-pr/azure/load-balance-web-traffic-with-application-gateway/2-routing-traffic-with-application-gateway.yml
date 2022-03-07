@@ -4,11 +4,10 @@ metadata:
   title: Route traffic with Application Gateway
   description: Explain how Application Gateway routes requests and performs load balancing
   ms.date: 05/02/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: vhorne
+  ms.author: victorh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Route traffic with Application Gateway
 durationInMinutes: 10
 content: |

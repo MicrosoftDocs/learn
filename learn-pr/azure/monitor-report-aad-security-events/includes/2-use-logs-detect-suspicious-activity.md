@@ -42,7 +42,8 @@ Because of the nature of the log data that's captured by the sign-in logs, acces
 The first time the sign-in logging service is enabled, it can take up to an hour before any data is available.  Azure captures a wide range of data about user activity, from access periods to the application that made the request, and more.  You access the sign-in log file through the Azure portal.  
 
 1. In the Azure portal, go to your Azure AD instance.
-1. In the **Monitor** section, select **Sign-ins**.
+
+1. In the **Monitoring** section, select **Sign-ins**.
 
 A page similar to the following displays a typical view of the sign-in table data:
 
@@ -55,7 +56,7 @@ The default table columns are:
 - Application making the sign-in request
 - Sign-in status
 - Risk detection status
-- Multi-factor authentication status
+- Multifactor authentication status
 
 As with all reporting in Azure, you can modify the structure by adding and removing columns, as necessary. To change the columns, select **Columns**.
 
@@ -73,9 +74,9 @@ In the **Columns** pane, you can add or remove the columns you need. In addition
 
 ### Filter the log data
 
-Even after you've selected all the sign-in columns you're interested in processing, you still have a lot of data. To manage these volumes and get to the right data, you need to apply filters. For example, you might want to see only sign-in records where users have been flagged as a risk, or where multi-factor authentication has failed.  By using filters, you can view the raw data in a variety of ways, to identify trends or patterns.
+Even after you've selected all the sign-in columns you're interested in processing, you still have a lot of data. To manage these volumes and get to the right data, you need to apply filters. For example, you might want to see only sign-in records where users have been flagged as a risk, or where multifactor authentication has failed.  By using filters, you can view the raw data in various ways, to identify trends or patterns.
 
-To use filters, select the **Add filters** button, and then select the filters you want to use.
+To use filters, select **Add filters**, and then select the filters you want to use.
 
 ![Screenshot of the "Add filters" button and the list of filters.](../media/2-sign-in-activity-filter-list.png)
 
@@ -83,8 +84,8 @@ Here are a few key filters and what you would use them for:
 
 - **User**: Lets you target specific users, by either their name or their user principal name.
 - **Application**: Lets you find sign-in requests made by specific applications.
-- **Sign-in status**: Lets you narrow the results to users who successfully signed in and those who failed.
-- **Conditional access**: Lets you examine whether any applicable conditional access policies have been applied.
+- **Status**: Lets you narrow the results to users who successfully signed in and those who failed.
+- **Conditional Access**: Lets you examine whether any applicable Conditional Access policies have been applied.
 - **Date**: Lets you adjust the timeframe of the data you're looking at, from a month to a single day.
 
 ### Download the sign-in logs
@@ -101,11 +102,11 @@ Decide which format you want to use for the data, CSV or JSON.
 
 ### Sign-in error codes
 
-Analysis of failed sign-ins is key to maintaining a secure and healthy Azure environment.  When you review your sign-in log files, you can filter on the status to show only failed sign-ins.  
+Analysis of failed sign-ins is key to maintaining a secure and healthy Azure environment. When you review your sign-in log files, you can filter on the status to show only failed sign-ins.  
 
-![Screenshot of the "Sign-in status" drop-down control, with Failure selected.](../media/2-sign-in-status-failure.png)
+![Screenshot of the Sign-in status drop-down control, with Failure selected.](../media/2-sign-in-status-failure.png)
 
-As previously discussed, when this filter is applied, the table displays only failed sign-ins.
+As previously described, when this filter is applied, the table displays only failed sign-ins.
 
 When you select any sign-in record in the results list, you'll see a snapshot of the record, including sign-in status, sign-in error code, and the failure reason.  
 
@@ -120,7 +121,7 @@ You'll find a complete list of error codes at the URL provided in the summary un
 | 50020 | The user is unauthorized for one of the following reasons: the user is attempting to log in with an MSA account with the v1 endpoint, or the user doesn't exist in the tenant. Contact the application owner. |
 | 50055 | Invalid password entered or expired password.                  |
 | 50057 | User account is disabled. The account has been disabled by an administrator. |
-| 50074 | User didn't pass the mult-factor authentication (MFA) challenge.                         |
+| 50074 | User didn't pass the multifactor authentication (MFA) challenge.                         |
 | 50126 | Invalid username or password, or invalid on-premises username or password. |
 | 50133 | Session is invalid because of expiration or recent password change. |
 | 50173 | Fresh auth token is needed. Have the user sign in again using fresh credentials. |
@@ -146,14 +147,14 @@ To access the audit log files, you need:
 
 Much like the sign-in logs, the audit logs can be adapted and changed to meet your specific needs. The default audit log view displays the following columns:
 
-- Data
+- Date
 - Service
 - Category
 - Status
 - Target
 - Initiated by
 
-As with the logs discussed earlier, you can modify the columns that are displayed, and you can add the following columns:
+As with the logs previously described, you can modify the columns that appear, and you can add the following columns:
 
 - Activity
 - Status Reason
@@ -162,7 +163,7 @@ As with the logs discussed earlier, you can modify the columns that are displaye
 
 Audit logs can contain hundreds of thousands of entries from across your Azure environment. To manage this number, you apply filters to the results to display the data you need. You can filter data in the following fields only:
 
-- **Service**: Narrows down the services in the results. The Service field is limited to access reviews, accounts provisioning, application SSO, authentication methods, B2C, conditional access, core directories, entitlement management, identity protection, invited users, Privileged Identity Management (PIM), self-service group and password management, and terms of use.
+- **Service**: Narrows down the services in the results. The Service field is limited to access reviews, accounts provisioning, application SSO, authentication methods, B2C, Conditional Access, core directories, entitlement management, identity protection, invited users, Privileged Identity Management (PIM), self-service group and password management, and terms of use.
 - **Category**: Specifies what category of audit you want. The selection might be: administrative unit, application management, authentication, authorization, contact, device, device configuration, directory management, entitlement management, group management, policy resource management, role management, and user management.
 - **Activity**: Options depend on the type of service and category you've previously selected.
 - **Status**: Identifies the activity's success or failure.

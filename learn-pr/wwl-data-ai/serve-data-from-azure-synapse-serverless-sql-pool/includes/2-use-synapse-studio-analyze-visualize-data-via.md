@@ -1,38 +1,34 @@
-Azure Synapse serverless SQL pool provides look and feel of a SQL Server to the clients connecting to it. This enables huge number of clients to interact with serverless SQL pool to query the data in the lake.
+Azure Synapse serverless SQL pool provides a look and feel of SQL Server to the clients connecting to it. This enables a huge number of clients to interact with serverless SQL pool to query the data in the lake.
 
-Azure Synapse Studio is the web-native experience that ties everything together for data engineers, providing one location to do every task you need to build a complete solution.
+Azure Synapse Studio is the web-native experience that ties everything together for all users, providing one location to do every task you need to build a complete solution.
 
-To open Synapse Studio, navigate to Synapse workspace resource in Azure portal and click on the “Open” link available in the overview page:
+To open Synapse Studio, navigate to the Azure Synapse workspace resource in the Azure portal and click on the **Open** link available in the overview page:
  
 ![Open Azure Synapse Studio](../media/open-azure-synapse-studio.png)
 
-This will open the Synapse Studio related to the Synapse workspace you navigated to. The easiest way to start issuing serverless SQL pool queries is to use Knowledge center feature. There are two ways to launch knowledge center wizard:
+This will open the Azure Synapse Studio related to the Synapse workspace you navigated to. The easiest way to start issuing serverless SQL pool queries is to use Knowledge center feature. There are two ways to launch knowledge center wizard:
 
-1.	Click on question mark icon in top-right corner and select Knowledge center
+1.	Click on the Learn tile in the home page. Alternatively, click on question mark icon in top-right corner and select Knowledge center
 
     ![Navigating to the knowledge center](../media/navigate-knowledge-center.png)
 
-2.	Click on the Knowledge center link in Useful links section.
- 
-    ![Open the knowledge center](../media/open-knowledge-center.png)
-
-3. This will start the Knowledge center wizard. 
+2. This will open up the Knowledge center 
  
     [![Knowledge center wizard](../media/knowledge-center-wizard.png)](../media/knowledge-center-wizard.png#lightbox)
 
-4. Select **Use samples immediately**, and on the right side select **Query data with SQL**, and hit **Use sample**.
+3. Select **Use samples immediately**, and on the right side select **Query data with SQL**, and hit **Use sample**.
  
     ![Using samples in the Knowledge center](../media/use-samples-knowledge-center.png)
 
-5. A new SQL Script will be generated, querying the Azure Open Datasets and it will look like this:
+4. A new SQL Script will be generated, querying the Azure Open Datasets and it will look like this:
  
     [![Viewing knowledge center scripts](../media/view-knowledge-center-scripts.png)](../media/view-knowledge-center-scripts.png#lightbox)
 
-6. Select the query you want to execute and hit Run button in command menu. Once query is executed results will appear in the bottom part of the screen:
+5. Select the query you want to execute and hit Run button in command menu. Once query is executed results will appear in the bottom part of the screen:
  
     [![Executing scripts](../media/execute-scripts.png)](../media/execute-scripts.png#lightbox)
 
-7. You can switch between Table and Chart mode of displaying results. Choosing Chart allows you to visualize the results immediately – I have executed the last query in the sample script and visualized the number of rides available in the data set.
+6. You can switch between Table and Chart mode of displaying results. Choosing Chart allows you to visualize the results immediately – I have executed the last query in the sample script and visualized the number of rides available in the data set.
  
     [![Visualizing script execution results](../media/visualize-script-execution-results.png)](../media/visualize-script-execution-results.png#lightbox)
 

@@ -1,6 +1,6 @@
-In this module,  you will learn how to serve and make use of the data that is queried or transformed by Azure Synapse serverless SQL pool.
+In this lesson,  you will learn how to serve and make use of the data that is queried or transformed by Azure Synapse serverless SQL pool.
 
-At the end of this module, you will learn:
+At the end of this lesson, you will learn:
 
 - Use Synapse Studio to analyze and visualize data via Azure Synapse serverless SQL pool
 - Use Azure Synapse serverless SQL pools as a data source in Synapse Pipelines
@@ -9,7 +9,7 @@ At the end of this module, you will learn:
 
 ## Prerequisites
 
-Before taking this module, it is recommended that the student is able to:
+Before taking this lesson, it is recommended that the student is able to:
 
 * Log into the Azure portal
 * Explain the different components of Azure Synapse Analytics

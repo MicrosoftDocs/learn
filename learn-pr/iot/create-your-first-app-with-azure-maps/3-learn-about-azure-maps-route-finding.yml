@@ -4,7 +4,7 @@ metadata:
   description: Provides an overview of Azure Maps. Topics covered include map layers, route finding, and heat maps. Also described are map units, API calls, and the link between Azure Maps and Azure IoT.
   ms.date: 6/1/2020
   author: PeterTurcan
-  ms.author: obloch
+  ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn about Azure Map route finding

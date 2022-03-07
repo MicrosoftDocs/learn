@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.explore-windows-package-manager-tool
+metadata:
+  title: Explore the Windows Package Manager tool
+  description: "Streamline the installation and maintenance of software on your computer by using Windows Package Manager. Explain the front-end components and commands, the Windows Package Manager repository, and how to contribute to the repository."
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore the Windows Package Manager tool
+summary: Streamline the installation and maintenance of software on your computer by using Windows Package Manager. Explain the front-end components and commands, the Windows Package Manager repository, and how to contribute to the repository.
+abstract: |
+  After completing this module, you will be able to:
+  - Employ Windows Package Manager to streamline the process of installing, uninstalling, and updating software
+  - Choose whether to use the Windows Package Manager community repository or host a private repository
+  - Control Windows Package Manager functionality for your organization by using Group Policy and the available Group Policy Administrate templates
+prerequisites: |
+  - Familiarity with basic computing concepts and terminology such as operating systems, networking, and data processing
+  - Ability to install and uninstall software on a Windows computer
+  - Ability to execute commands from a command line prompt
+iconUrl: /learn/achievements/windows-package-manager-tools.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-user
+- developer
+- maker
+- network-engineer
+- solution-architect
+- student
+- support-engineer
+products:
+- windows
+units:
+- learn.wwl.explore-windows-package-manager-tool.introduction
+- learn.wwl.explore-windows-package-manager-tool.explain-purpose-of
+- learn.wwl.explore-windows-package-manager-tool.install-uninstall-software
+- learn.wwl.explore-windows-package-manager-tool.update-software
+- learn.wwl.explore-windows-package-manager-tool.discuss-repository
+- learn.wwl.explore-windows-package-manager-tool.contribute-to-repository
+- learn.wwl.explore-windows-package-manager-tool.host-your-own-repository
+- learn.wwl.explore-windows-package-manager-tool.control-group-policy
+- learn.wwl.explore-windows-package-manager-tool.knowledge-check
+- learn.wwl.explore-windows-package-manager-tool.summary
+badge:
+  uid: learn.wwl.explore-windows-package-manager-tool.badge

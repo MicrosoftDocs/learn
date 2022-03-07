@@ -3,12 +3,12 @@ uid: learn.build-web-app-blazor-webassembly-vscode.5-exercise-add-component
 title: Exercise - Add a component
 metadata:
   title: Exercise - Add a component
-  description: Build your first WebAssembly app with Blazor, Visual Studio Code, and C#.
-  ms.date: 05/07/2020
-  author: adrianstevens
-  ms.author: adsteven
+  description: Build your first web app with Blazor, Visual Studio Code, and C#.
+  ms.date: 05/13/2021
+  author: csharpfritz
+  ms.author: jefritz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 4
 content: |
   [!include[](includes/5-exercise-add-component.md)]

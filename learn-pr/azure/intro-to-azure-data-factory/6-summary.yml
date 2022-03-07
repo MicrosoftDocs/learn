@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-data-factory.6-summary  
+title: Summary  
+metadata:
+  unitType: summary  
+  title: Summary
+  description: Summary
+  ms.date: 04/07/2021  
+  author: tchristiani
+  ms.author: terrychr  
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-summary.md)]

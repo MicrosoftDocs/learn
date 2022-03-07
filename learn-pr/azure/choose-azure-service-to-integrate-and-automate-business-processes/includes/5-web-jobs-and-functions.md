@@ -2,7 +2,7 @@ Now let's look at another process from our bike rental business and decide what 
 
 ## Scenario
 
-Your bike technicians, currently use a spreadsheet, to record the actions they took to repair and maintain each bike. Difficulties have arisen when spare parts are needed, because the staff have no way of knowing when a bike is waiting for repairs or parts. This problem has resulted in bikes being rented to customers with worn brake pads, flat tires, and other faults that may damage the companies brand as a high-quality bike rental company.
+Your bike technicians currently use a spreadsheet to record the actions they took to repair and maintain each bike. Difficulties have arisen when spare parts are needed, because the staff have no way of knowing when a bike is waiting for repairs or parts. This problem has resulted in bikes being rented to customers with worn brake pads, flat tires, and other faults that may damage the companies brand as a high-quality bike rental company.
 
 You want to build a system that governs the maintenance and repair process and allows everyone to find answers to the following questions.
 
@@ -15,9 +15,9 @@ You want to build a system that governs the maintenance and repair process and a
   - Are we waiting for any parts, and what are those parts?
   - When is the bike likely to be available again for rent?
 
-You'd like to integrate this system with the bike booking and rental process from the last unit so that, when shop staff search for available bikes, they find only those bicycles that are currently available to rent. Your manager has asked you to be the developer on this project.
+You'd like to integrate this system with the bike booking and rental process from the last unit. In doing so, when shop staff search for available bikes, they find only those bicycles that are currently available to rent. Your manager has asked you to be the developer on this project.
 
-## Business Process
+## Business process
 
 You want to ensure that bike technicians on both campuses stick to the following workflow when they maintain a bike following a rental:
 
@@ -49,7 +49,7 @@ As in the previous scenario, any of these technologies could be used to build th
 
 ### Design-first or code-first?
 
-To implement this workflow using just Logic Apps or Power Automate would be difficult. While we haven't heard too many low-level details, it's clear that this process needs to access an inventory system, place orders with a third-party parts company. This is new business logic and there is no requirement that we consider a design-first approach. We can wrap our solution in a custom connector to integrate with other workflows created with Logic Apps or Power Automate.  As a developer, you have most flexibility by approaching this scenario from a code-first approach, so let's do that!
+To implement this workflow using just Logic Apps or Power Automate would be difficult. While we haven't heard too many low-level details, it's clear that this process needs to access an inventory system and place orders with a third-party parts company. This is new business logic and there is no requirement that we consider a design-first approach. We can wrap our solution in a custom connector to integrate with other workflows created with Logic Apps or Power Automate.  As a developer, you have most flexibility by approaching this scenario from a code-first approach, so let's do that!
 
 ### Azure Functions or Azure Apps Service WebJobs?
 

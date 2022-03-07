@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live-foundations-serverless-dev.4-configure-http-action
 
-title: Configure the HTTP Action a Function Reacts to
+title: Configure the HTTP action a function reacts to
 
 metadata:
-  title: Configure the HTTP Action a Function Reacts to
-  description: Configure the HTTP Action a Function Reacts to
+  title: Configure the HTTP action a function reacts to
+  description: Configure the HTTP action a function reacts to
   
   ms.date: 04/29/2020
   

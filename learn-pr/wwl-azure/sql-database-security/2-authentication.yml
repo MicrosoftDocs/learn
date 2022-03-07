@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sql-database-security.authentication
+title: Enable SQL database authentication
+metadata:
+  title: Enable SQL database authentication
+  description: "Enable SQL database authentication"
+  ms.date: 01/04/2022
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-authentication.md)]

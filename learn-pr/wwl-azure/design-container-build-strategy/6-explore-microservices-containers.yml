@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-container-build-strategy.explore-microservices-containers
+title: Explore microservices and containers
+metadata:
+  title: Explore microservices and containers
+  description: "Explore microservices and containers"
+  ms.date: 02/22/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-explore-microservices-containers.md)]

@@ -5,11 +5,10 @@ metadata:
   title: Check your knowledge
   description: Review what you've learned.
   ms.date: 04/23/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

@@ -5,8 +5,8 @@ metadata:
   title: What are custom roles in Azure?
   description: Learn about custom roles for access management in Azure
   ms.date: 07/09/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: rolyon
+  ms.author: rolyon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
@@ -28,7 +28,7 @@ quiz:
       explanation: "The scopes that can apply to an Azure resource are subscription, resource group, and individual resource. Azure AD roles are at the tenant scope."
   - content: "What commands help you determine what operations to add to a custom role definition?"
     choices:
-    - content: "Use 'az provider show' to find resource provider operations."
+    - content: "Use 'az provider operation show' to find resource provider operations."
       isCorrect: true
       explanation: "This command shows information about the provider, but doesn't list the operations."
     - content: "Use 'List-AzRoleDefinition' to view a built-in role."

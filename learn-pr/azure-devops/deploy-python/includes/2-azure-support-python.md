@@ -23,13 +23,13 @@ When you connect your code to Azure Pipelines, Azure Pipelines can automatically
 
 Here's an example that shows starter code templates for a Python application:
 
-![Azure Pipelines showing a list of starter projects for Python](../media/2-configure-pipeline-python.png)
+:::image type="content" source="../media/2-configure-pipeline-python.png" alt-text="A screenshot of Azure Pipelines showing a list of starter projects for Python.":::
 
 Azure Pipelines provides built-in tasks that support the build, test, and deployment jobs you need to deploy source code from GitHub or anywhere else.
 
 In Azure Pipelines, pipeline code is expressed through YAML configuration files. This example shows the built-in `UsePythonVersion@0` task, which installs the version of Python that you need to build your application.
 
-![Azure Pipelines showing starter code for a Python build pipeline](../media/2-starter-code-python.png)
+:::image type="content" source="../media/2-starter-code-python.png" alt-text="A screenshot of Azure Pipelines showing starter code for a Python build pipeline.":::
 
 If Azure Pipelines doesn't provide a specific task that you need, you can provide scripts that fill in the gaps. The `script` task in the previous example uses the `python` and `pip` programs to install dependencies.
 

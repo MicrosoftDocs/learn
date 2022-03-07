@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.explore-foundations-of-iaas
+metadata:
+  title: Explore the foundations of IaaS for SAP on Azure
+  description: Explore the foundations of IaaS for SAP on Azure
+  ms.date: 11/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore the foundations of IaaS for SAP on Azure
+prerequisites: ""
+summary: |
+  As an IT Professional experienced in SAP solutions, you need to understand how to leverage Azure resources that include virtual machines, virtual networks, storage accounts, and Azure AD. These modules will provide the basis for running SAP workloads in Azure.
+iconUrl: /learn/achievements/explore-the-foundations-of-iaas.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+modules:
+- learn.wwl.explore-azure-compute
+- learn.wwl.explore-azure-networking
+- learn.wwl.explore-azure-storage
+- learn.wwl.explore-azure-databases
+trophy:
+  uid: learn.wwl.explore-foundations-of-iaas.trophy

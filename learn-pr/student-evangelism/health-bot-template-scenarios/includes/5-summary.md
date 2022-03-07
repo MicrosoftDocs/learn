@@ -1,0 +1,1 @@
+In this module, you learned how to create a simple health bot by using the *triage and handoff* scenario template. Scenario templates are the best place to start if you have a new Azure Health Bot instance. Templates also help you learn how to build your own custom Health Bot scenarios. This is because you can review the scenario logic to understand how a template was built.

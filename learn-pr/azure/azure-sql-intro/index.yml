@@ -5,7 +5,7 @@ metadata:
   description: This module introduces Azure SQL. Learn about various deployment options and service tiers and what to use for your organization. 
   ms.date: 08/05/2020
   author: amthomas46
-  ms.author: antho
+  ms.author: bobward
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure SQL
@@ -21,12 +21,15 @@ prerequisites: |
 iconUrl: /learn/achievements/azure-sql-intro.svg
 levels:
 - beginner
+- intermediate
 roles:
 - solution-architect
 - database-administrator
+- data-engineer
 products:
 - azure
 - azure-sql-database
+- azure-sql-managed-instance
 units:
 - learn.azure-sql-intro.1-introduction
 - learn.azure-sql-intro.2-azure-sql-history

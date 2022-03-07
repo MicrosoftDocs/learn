@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Create an Azure virtual network
   description: Exercise - Create an Azure virtual network
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: KumudD
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-create-azure-virtual-network.md)]

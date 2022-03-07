@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-jobs-azure-machine-learning-cli-v2.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "A machine learning engineer wants to create an Azure Machine Learning workspace. Which CLI (v2) command should be used?"
+    choices:
+    - content: "`az ml workspace list`"
+      isCorrect: false
+      explanation: "The `workspace list` command will list all the workspaces in a subscription."
+    - content: "`az ml workspace show`"
+      isCorrect: false
+      explanation: "The `workspace show` command will show the details for a workspace."
+    - content: "`az ml workspace create`"
+      isCorrect: true
+      explanation: "The `workspace create` command will create a workspace."
+  - content: "A data scientist wants to create an environment to run a Python script on a compute cluster. Using the `az ml environment create --file basic-env.yml` command, what should basic-env.yml contain?"
+    choices:
+    - content: "The environment name and version."
+      isCorrect: true
+      explanation: "Among other things, the specification YAML file should include the environment name and version."
+    - content: "The packages and libraries that need to be installed on the compute cluster to run the script."
+      isCorrect: false
+      explanation: "The packages and libraries can be listed in the Conda environment file that is referred to in basic-env.yml."
+    - content: "The type and size of the compute cluster that needs to be created."
+      isCorrect: false
+      explanation: "The configuration for the compute cluster can also be specified in a YAML file, but is then created with the `az ml compute create` command."

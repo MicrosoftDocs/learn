@@ -13,11 +13,7 @@ A *CRON expression* is a string that consists of six fields that represent a set
 
 The order of the six fields in Azure is: `{second} {minute} {hour} {day} {month} {day of the week}`.
 
-For example, a CRON expression to create a trigger that executes every five minutes looks like:
-
-```log
-0 */5 * * * *
-```
+For example, a CRON expression to create a trigger that executes every five minutes looks like: `0 */5 * * * *`
 
 At first, this string may look confusing. We'll come back and break down these concepts when we have a deeper look at CRON expressions.
 
@@ -32,7 +28,7 @@ To build a CRON expression, you need to have a basic understanding of some of th
 
 Now we'll go back to the original CRON expression example. Let’s try to understand it better by breaking it down field by field.
 
-```log
+```text
 0 */5 * * * *
 ```
 
@@ -42,12 +38,12 @@ The **second field** represents minutes. The value "*/5" contains two special ch
 
 The **remaining four fields** represent the hour, day, month, and weekday of the week. An asterisk for these fields means to select every possible value. In this example, we select "every hour of every day of every month."
 
-When you put all the fields together, the expression is read as "on the first second, of every fifth minute of every hour, of every day, of every month".
+When you put all the fields together, the expression is read as "the first second of every fifth minute of every hour, of every day, of every month".
 
 ## How to create a timer trigger
 
 You can create a timer trigger in the Azure portal. In your Azure function app, select **timer trigger** from the list of trigger templates. Enter the logic that you want to execute. Supply a **Timestamp parameter name** and the **CRON expression**.
 
-In this module we'll focus on creating triggers in the portal but you can also create triggers programmatically using Core Tools, Visual Studio or Visual Studio Code.
+In this module, we'll focus on creating triggers in the portal but you can also create triggers programmatically using Core Tools, Visual Studio or Visual Studio Code.
 
 A timer trigger invokes an Azure function app on a consistent schedule. To define the schedule for a timer trigger, we build a CRON expression, which is a string that represents a set of times.

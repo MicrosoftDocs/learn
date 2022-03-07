@@ -2,14 +2,14 @@ Once the connection to Azure Cosmos DB has been made, the next step is to create
 
 ## Working with documents programmatically
 
-Data is stored in JSON documents in Azure Cosmos DB. [Documents](https://docs.microsoft.com/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal, as shown in the previous module, or programmatically, as described in this module. Azure Cosmos DB provides client-side SDKs for .NET, .NET Core, Java, Node.js, and Python, each of which supports these operations. In this module, we'll be using the .NET Core SDK to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
+Data is stored in JSON documents in Azure Cosmos DB. [Documents](/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal, as shown in the previous module, or programmatically, as described in this module. Azure Cosmos DB provides client-side SDKs for .NET, .NET Core, Java, Node.js, and Python, each of which supports these operations. In this module, we'll be using the .NET SDK to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
 
-The main operations for Azure Cosmos DB documents are part of the [DocumentClient](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient?view=azure-dotnet) class:
-* [CreateDocumentAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient.createdocumentasync?view=azure-dotnet)
-* [ReadDocumentAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient.readdocumentasync?view=azure-dotnet)
-* [ReplaceDocumentAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient.replacedocumentasync?view=azure-dotnet)
-* [UpsertDocumentAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient.upsertdocumentasync?view=azure-dotnet)
-* [DeleteDocumentAsync](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient.deletedocumentasync?view=azure-dotnet)
+The main operations for Azure Cosmos DB documents are part of the [DocumentClient](/dotnet/api/microsoft.azure.documents.client.documentclient?view=azure-dotnet) class:
+* [CreateDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.createdocumentasync?view=azure-dotnet)
+* [ReadDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.readdocumentasync?view=azure-dotnet)
+* [ReplaceDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.replacedocumentasync?view=azure-dotnet)
+* [UpsertDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.upsertdocumentasync?view=azure-dotnet)
+* [DeleteDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.deletedocumentasync?view=azure-dotnet)
 
 Upsert performs a create or replace operation depending on whether the document already exists.
 
@@ -82,13 +82,13 @@ Once you have those classes created to represent your users, you'll create new u
     }
     ```
 
-1. In the integrated terminal, type the following command to run the program to ensure it runs.
+1. In the integrated terminal, run the following command to run the program to ensure it runs.
 
     ```bash
     dotnet run
     ```
 
-1. Now copy and paste the **CreateUserDocumentIfNotExists** task under the **WriteToConsoleAndPromptToContinue** method at the end of the Program.cs file.
+1. Copy and paste the **CreateUserDocumentIfNotExists** task under the **WriteToConsoleAndPromptToContinue** method at the end of the Program.cs file.
 
     ```csharp
     private async Task CreateUserDocumentIfNotExists(string databaseName, string collectionName, User user)
@@ -113,7 +113,7 @@ Once you have those classes created to represent your users, you'll create new u
     }
     ```
 
-1. Then, return to the **BasicOperations** method and add the following to the end of that method.
+1. Return to the **BasicOperations** method, and add the following to the end of that method.
 
     ```csharp
     User yanhe = new User
@@ -192,7 +192,7 @@ Once you have those classes created to represent your users, you'll create new u
     await this.CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);
     ```
 
-1. In the integrated terminal, again, type the following command to run the program.
+1. In the integrated terminal, again, run the following command to run the program.
 
     ```bash
     dotnet run
@@ -211,7 +211,7 @@ Once you have those classes created to represent your users, you'll create new u
 
 ## Read documents
 
-1. To read documents from the database, copy in the following code and place after the **WriteToConsoleAndPromptToContinue** method in the Program.cs file.
+1. To read documents from the database, copy in the following code, and place after the **WriteToConsoleAndPromptToContinue** method in the Program.cs file.
 
     ```csharp
     private async Task ReadUserDocument(string databaseName, string collectionName, User user)
@@ -241,7 +241,7 @@ Once you have those classes created to represent your users, you'll create new u
     await this.ReadUserDocument("Users", "WebCustomers", yanhe);
     ```
 
-1. In the integrated terminal, type the following command to run the program.
+1. In the integrated terminal, run the following command to run the program.
 
     ```bash
     dotnet run

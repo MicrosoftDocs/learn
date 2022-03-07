@@ -18,7 +18,7 @@ You pushed your **api** branch to GitHub. Now you want the GitHub Action to publ
 1. Open a browser
 1. Navigate to your repository
 
-   `https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app`
+   `https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app-and-api`
 
 1. Click on the **Pull requests** link
 1. Click the **New pull request** button
@@ -52,25 +52,25 @@ Notice that the preview URL contains a hyphen followed by a number. The number m
 
 ::: zone pivot="angular"
 
-:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Your angular web app":::
+:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Your angular web app.":::
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Your react web app":::
+:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Your react web app.":::
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Your svelte web app":::
+:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Your svelte web app.":::
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Your vue web app":::
+:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Your vue web app.":::
 
 ::: zone-end
 

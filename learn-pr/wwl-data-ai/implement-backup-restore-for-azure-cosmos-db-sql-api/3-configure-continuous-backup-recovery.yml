@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.configure-continuous-backup-recovery
+title: Configure continuous backup and recovery
+metadata:
+  title: Configure continuous backup and recovery
+  description: "Configure continuous backup and recovery"
+  ms.date: 01/12/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-configure-continuous-backup-recovery.md)]

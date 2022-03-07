@@ -1,39 +1,41 @@
-We've seen the different options available to deploy a Java application on the cloud, and more specifically on Azure. But which option is the best, depending on your specific needs? Here's a guide to help you choose.
+We've discussed the available options for deploying a Java application in the cloud and, more specifically, on Azure. But which option best addresses your specific needs? Here's a guide to help you choose.
 
-## Platform-as-a-Service vs Infrastructure control
+## Platform as a service or infrastructure control?
 
-The first question you should have, is whether you want full control of your application, or use a Platform-as-a-Service. It usually depends on your needs, and on the team you're working with.
+The first question to ask is whether you want full control over your application or you want to use a platform as a service (PaaS) solution. Your answer usually depends on the needs of the team you're working with.
 
-Platform-as-a-Service offers are easier to use, and are favored as they offer a lower cost, better reliability and security. They'll be used for the following the reasons:
+Platform as a service solutions are easier to use. Many teams prefer them because they offer lower cost, better reliability, and greater security. 
 
-- If you want to go to production as fast as possible, with a limited ops team (maybe even no team at all!).
-- If you have high availability, security or compliance requirements, as those features are provided out-of-the-box by a managed service.
-- If you don't have the resources, or the will to maintain a production-grade infrastructure.
+Teams choose PaaS solutions for the following reasons:
+- They need to go to production quickly, and they have only a limited operations team or no ops team at all.
+- They have certain high availability, security, or compliance requirements, and these needs can be met by out-of-box features that are provided by a managed service.
+- They might not have the resources or the willingness to maintain a production-grade infrastructure.
 
-But some people will prefer to have a full control on their infrastructure, mostly for the following reasons:
+But some teams will prefer to have a full control over their infrastructure, mostly for the following reasons:
 
-- If you're using some specific proprietary software, or some non-common Java features, a managed service might not be the right fit for you. For example, you might want to use network broadcasting to find your application nodes, and this feature won't be available on a managed service. Or you might want to use some specific native library, which also will not be able to run on a managed service.
+- If you're using specific proprietary software or noncommon Java features, a managed service might not be the right fit for you. For example, you might want to use network broadcasting to find your application nodes, and this feature isn't available on a managed service.
+- You might want to use a specific native library, which also won't be able to run on a managed service.
 
-## Choosing a Platform-as-a-Service solution on Azure
+## Choose a PaaS solution on Azure
 
-For running Java workloads on a Platform-as-a-Service solution, Azure provides three possible solutions:
+For running Java workloads on a platform as a service solution, Azure provides three possible options:
 
-- For simple event-driven workloads, that can scale extremely well, choose Azure Functions.
-- For normal Web applications, or for running Jakarta EE workloads, Azure App Service will be the best option.
-- For running Spring Boot applications, and more specifically Spring Cloud microservices, Azure Spring Cloud is an excellent service.
+- **Azure Functions**: Best for simple event-driven workloads that can scale extremely well.
+- **Azure App Service**: Best for normal web applications or for running Jakarta EE workloads.
+- **Azure Spring Cloud**: Best for running Spring Boot applications and, more specifically, Spring Cloud microservices.
 
-## Choosing infrastructure control on Azure
+## Choose infrastructure control on Azure
 
-For full control on what you are deploying, Azure provides the following two main options:
+For full control over your deployments, Azure provides the following two main options:
 
-- If you want to run Docker images, choose Azure Kubernetes Service. You will also benefit from Kubernetes's rich ecosystem.
-- If you want to run any kind of workload, or if you want to "lift and shift" from an existing on-premise infrastructure without rearchitecting your applications, choose Azure Virtual Machines.
+- **Azure Kubernetes Service (AKS)**: Best for running Docker images, You also benefit from the rich AKS ecosystem.
+- **Azure virtual machines**: Best for running any kind of workload, or if you want to "lift and shift" from an existing on-premises infrastructure without rearchitecting your applications.
 
 ## Final words to help you decide
 
-Choosing a destination is only a first step, don't forget that once you're using a specific service:
+Deciding on a destination is only a first step. As you're choosing your service, keep in mind the following:
 
-- You will have a maintenance burden that will vastly vary on the type of service you choose, and on the skills of your own ops team.
-- Your developers will use that platform daily, and thus will be more productive if that service provides a great developer experience.
+- Your maintenance tasks will vary greatly depending on both the type of service you choose and the skill set of your own operations team.
+- Your developers will use the platform daily, and they'll be more productive if the service provides a great developer experience.
 
-For both of these points, it all depends on the team you have, so you also need to choose a destination that matches your team's expertise and preferences.
+For both of these points, your choice depends on the team you have. The best practice is to choose a destination that matches your team's expertise and preferences.

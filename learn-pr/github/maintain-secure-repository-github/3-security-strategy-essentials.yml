@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.github.maintain-secure-repository-github.3-security-strategy-essentials
-title:  Exercise - Secure strategy essentials
+title:  Exercise - Add a .gitignore file
 metadata:
-  title:  Exercise - Secure strategy essentials
+  title:  Exercise - Add a .gitignore file
   description: Learn to build, host, and maintain a secure repository on GitHub.
-  ms.date: 06/26/2020
-  author: tpetchel
-  ms.author: thpetche
+  ms.date: 09/27/2021
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 55
+durationInMinutes: 15
 content: |
   [!include[](includes/3-security-strategy-essentials.md)]

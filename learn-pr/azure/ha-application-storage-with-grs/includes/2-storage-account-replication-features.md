@@ -5,22 +5,24 @@ Let's see how an Azure storage account is configured to allow for replication an
 ## Azure storage accounts
 Azure storage accounts are used to house data objects, such as files, blobs, tables, and disks for virtual machines. The data that you store in a storage account can be accessed from any location globally via HTTP or HTTPS and is highly available and secure.
 
-![The storage types that are accessible as read-access geo-redundant storage](../media/2-ra-grs-storage-account.png)
+![The storage types that are accessible as read-access geo-redundant storage.](../media/2-ra-grs-storage-account.png)
 
 ## Data redundancy
 
-Data in Azure is replicated to ensure that it's always available, even if a datacenter or region becomes inaccessible or a specific piece of hardware fails. You have four replication options:
+Data in Azure is replicated to ensure that it's always available, even if a datacenter or region becomes inaccessible or a specific piece of hardware fails. You have the following replication options:
 
 - Locally redundant storage (LRS)
 - Zone-redundant storage (ZRS)
 - Geographically redundant storage (GRS)
 - Read-access geo-redundant storage (RA-GRS)
+- Geo-zone-redundant storage (GZRS)
+- Read-access geo-zone-redundant storage (RA-GZRS)
 
 Each replication option provides a different level of redundancy and durability. The following sections describe these options in more detail.
 
 ### What is locally redundant storage (LRS)?
 
-![An overview of locally redundant storage](../media/2-locally-redundant-storage.png)
+![An overview of locally redundant storage.](../media/2-locally-redundant-storage.png)
 
 Locally redundant storage replicates data and stores three copies across fault domains, or racks of hardware, within a single datacenter facility in one region. Data is replicated so that if there's a hardware fault or maintenance work, your data is still available and accessible.
 
@@ -30,7 +32,7 @@ LRS is the least expensive replication option available. It also offers the leas
 
 ### What is zone-redundant storage (ZRS)?
 
-![An overview of zone-redundant storage](../media/2-zone-redundant-storage.png)
+![An overview of zone-redundant storage.](../media/2-zone-redundant-storage.png)
 
 Zone-redundant storage replicates your data across three storage clusters in a region. Each cluster is physically separated from the other two, which means that each cluster is supplied by separate utilities, such as power or networking.
 
@@ -42,7 +44,7 @@ ZRS offers 99.999999999999 percent durability of data. However, ZRS might not pr
 
 ### What is geographically redundant storage (GRS)?
 
-![An overview of geo-redundant storage](../media/2-geo-redundant-storage.png)
+![An overview of geo-redundant storage.](../media/2-geo-redundant-storage.png)
 
 Geographically redundant, or geo-redundant, storage provides multiple levels of replication. Your data is replicated three times within the primary region, and then this set is replicated to a secondary region.
 
@@ -52,7 +54,7 @@ Keep in mind that your data in the secondary region is inaccessible until the pr
 
 ### What is read-access geo-redundant storage (RA-GRS)?
 
-![An overview of read-access geo-redundant storage](../media/2-ra-grs-redundant-storage.png)
+![An overview of read-access geo-redundant storage.](../media/2-ra-grs-redundant-storage.png)
 
 Geo-redundant storage provides 99.9999999999999999 percent durability, because it replicates data and objects to a secondary region. When failover starts, DNS entries that point to the primary region are updated to point to the secondary region. Microsoft currently controls the DNS failover process.
 
@@ -64,16 +66,27 @@ A new feature currently in preview allows you to start a failover between primar
 
 After the failover and DNS endpoint updates are complete, the storage account is set back to LRS. You're responsible for reverting the replication settings from LRS to RA-GRS or GRS after the primary region becomes available again.
 
+### What is geo-zone-redundant storage (GZRS)?
+
+Geo-zone-redundant storage (GZRS) combines the high availability benefits of ZRS with GRS. With this replication type, your data is copied across three availability zones in one region. Data is also replicated three times to another secondary region that's paired with it. This way, your zone-redundant data is also secure from regional level outage.
+
+### What is read-access geo-zone-redundant storage (RA-GZRS)?
+
+Read-access geo-zone-redundant storage (RA-GZRS) uses the same replication method as GZRS but lets you read from the secondary region. If you want to read the data that's replicated to the secondary region, even if your primary isn't experiencing downtime, use RA-GZRS for your replication type.
+
 ## When to use each type of redundant storage
 
 The most appropriate use of each type of redundant storage is summarized in the following table:
 
-| | LRS | ZRS | GRS | RA-GRS |
-| ------| -------- | --------------- | --------------- | ------ |
-|Overview | Replicates data in a single datacenter | Stores copies of data across multiple datacenters | Stores copies in a local datacenter, like LRS, but then stores three more copies in a datacenter in another region | Same as GRS, but offers read access in the secondary datacenter in the other region
-| Data copies | 3 | 3 | 6 | 6
-| Use case | Ensures that your data is highly available but, for compliance reasons, must be kept local | A higher durability option for block storage, where data can stay in only one region | Where you need to ensure that your data and systems are always available despite datacenter or region outages | Where your applications (especially those with many read requests) can read data from other regions, but also to ensure that read operations are always available even if the primary region is down
+|Replication type  |Copies  | Use case  |
+|---------|---------|---------|
+|LRS|3|Data remains highly available, but for compliance reasons, isn't allowed to leave the local datacenter.|
+|ZRS|3|Need redundancy in multiple physical locations, but because of compliance, data isn't allowed to leave a region.|
+|GRS|6|App has access to the data, even if an entire region has an outage.|
+|RA-GRS|6|App reads from multiple geographical locations, so you can serve users from a location that's closer to them.|
+|GZRS|6| App can access data, even if the primary region has failed, and your secondary region has a datacenter that's experiencing an outage. But you don't want to read from the secondary region unless the primary region is down.|
+|RA-GZRS|6| Regularly read data from your secondary region, perhaps to serve users from a location closer to them, even if a datacenter is up in your primary region.|
 
 ## Change replication strategy
 
-After you've created an Azure storage account, you can change the replication strategy. You can switch the replication status of a storage account from LRS to GRS, or LRS to RA-GRS, and back again.
+After you've created an Azure storage account, you can change the replication strategy. You can switch the replication status of a storage account from LRS to GRS, or LRS to RA-GRS, and back again. To change the replication strategy to GZRS, the process you use depends on the current replication strategy for your account.

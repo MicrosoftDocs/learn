@@ -3,7 +3,7 @@ Your project came with a release pipeline that builds the web project in the sol
 In this part, you'll:
 
 > [!div class="checklist"]
-> * Update the pipeline to support CI/CD on a commit to the master branch.
+> * Update the pipeline to support CI/CD on a commit to the main branch.
 > * Define some pipeline variables to make the build pipeline easier to maintain.
 > * Add a task to build and publish the leaderboard container to your container registry.
 > * Add a task to publish Kubernetes manifests from the **Build** stage so that they can be downloaded for use in the **Deploy** stage.
@@ -19,9 +19,9 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 1. Select the pipeline.
 1. Select **Edit**. This brings up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline.
 
-    **Andy:** This was the build stage we had in place for the previous single-container solution. I knew it wasn't going to run properly, so I disabled it. We can start off by re-enabling CI/CD for commits to the `master` branch.
+    **Andy:** This was the build stage we had in place for the previous single-container solution. I knew it wasn't going to run properly, so I disabled it. We can start off by re-enabling CI/CD for commits to the `main` branch.
 
-1. Replace the existing `trigger` line at the top of the file with the code below. This will automate runs when there is a commit to the master branch.
+1. Replace the existing `trigger` line at the top of the file with the code below. This will automate runs when there is a commit to the main branch.
 
     [!code-yml[](code/4-1-azure-pipelines.yml)]
 
@@ -121,14 +121,14 @@ You can learn more about the flexibility of this task in the [Kubernetes manifes
 1. Select **default**, the Kubernetes namespace used by the deployment. Here you see the list of deployments currently in the Kubernetes cluster.
 1. Select **Services**. Here you see the different services running in Kubernetes, along with their cluster and external IP addresses.
 1. Select **web**. Here you see the service details and associated pods for the **web** service.
-1. Select the **Copy External IP to  clipboard** button. This IP address is where the site is publicly hosted.
+1. Select the **Copy External IP to clipboard** button. This IP address is where the site is publicly hosted.
 
-    ![Locating the web site IP address](../media/4-deploy-ip.png)
+    :::image type="content" source="../media/4-deploy-ip.png" alt-text="A screenshot showing the location of the web site IP address.":::
 
 1. Navigate to the copied IP address in a new browser tab.
 1. You see the site on AKS.
 
-    ![The Space Game website](../media/4-space-game.png)
+    :::image type="content" source="../media/4-space-game.png" alt-text="A screenshot of the Space Game web site.":::
 
 1. Return to the Azure DevOps browser tab.
 1. Use the browser **Back** button to return to the **default** namespace page.
@@ -140,7 +140,7 @@ You can learn more about the flexibility of this task in the [Kubernetes manifes
 
 1. You see the raw JSON response from the leaderboard API hosted in the Kubernetes cluster.
 
-    ![The leaderboard service response in JSON format](../media/4-leaderboard-api.png)
+    :::image type="content" source="../media/4-leaderboard-api.png" alt-text="A screenshot of a web browser showing the JSON response from the leaderboard service.":::
 
     You now have a REST API that you can call from other applications.
 

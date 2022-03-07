@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-batch-account-using-azure-portal.exercise-create-azure-batch-account
+title: Exercise - Create an Azure Batch job and virtual network
+metadata:
+  title: Exercise - Create an Azure Batch job and virtual network
+  description: Create a Batch account, a virtual network, and a Batch pool.
+  ms.date: 02/01/2021
+  author: prkannap
+  ms.author: prkannap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-azure-batch-account.md)]

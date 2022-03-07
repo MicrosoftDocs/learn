@@ -14,7 +14,7 @@ The new Intelligent Query Processing family of features ensures that your variou
 
 You want to enable your legal team to query data where it resides, rather than having to load and transform it into your existing data warehouse. Using the features of Polybase enables organizations to leverage their existing data sources.
 
-By upgrading to SQL Server 2019, you can introduce machine learning and data science into your IT realm to take your data analysis to another level. Both the Standard and Enterprise editions offer basic R and Python integration. With the Enterprise edition, you can install a standalone Machine Learning Server to consume R and Python models that don't need SQL Server.
+By upgrading to SQL Server 2019, you can introduce machine learning and data science into your IT realm to take your data analysis to another level. Both the Standard and Enterprise editions offer basic R and Python integration.
 
 ## Business impact of upgrading
 

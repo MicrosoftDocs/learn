@@ -112,42 +112,42 @@ Now let's tie this all together with a Logic App. First, take a look at the
 complete app as shown in the Logic Apps Designer, then we will walk though
 it step by step.
 
-:::image type="content" source="../media/logic-app-overview.png" alt-text="Zoomed out view of a logic app as displayed in the Logic Apps Designer":::
+:::image type="content" source="../media/logic-app-overview.png" alt-text="Zoomed out view of a logic app as displayed in the Logic Apps Designer.":::
 
 The first step is the handling of a trigger, that HTTP request we
 mentioned. An HTTP POST request is made to our logic app that contains a
 JSON payload with information about the incident we wish to declare. We
 parse that payload and send back an acknowledgment we received it:
 
-:::image type="content" source="../media/logic-app-http.png" alt-text="HTTP and Response block in Logic App Designer view of the Logic App":::
+:::image type="content" source="../media/logic-app-http.png" alt-text="HTTP and Response block in Logic App Designer view of the Logic App.":::
 
 Using this information, we create a new work item in our Azure DevOps
 organization representing this incident.
 
-:::image type="content" source="../media/logic-app-create-work-item.png" alt-text="Create work item block in Logic App Designer view of the Logic App":::
+:::image type="content" source="../media/logic-app-create-work-item.png" alt-text="Create work item block in Logic App Designer view of the Logic App.":::
 
 It will then create a new teams channel for the incident.
 
-:::image type="content" source="../media/logic-app-create-channel.png" alt-text="Create Teams channel block in Logic App Designer view of the Logic App":::
+:::image type="content" source="../media/logic-app-create-channel.png" alt-text="Create Teams channel block in Logic App Designer view of the Logic App.":::
 
 Once this has been created, the work item we created a moment ago gets
 updated with a link to the new channel. This keeps all of the information
 in the same place (the work item) and allows people looking at it later to
 know where to go if they want to join that channel.
 
-:::image type="content" source="../media/logic-app-update-work-item.png" alt-text="Update work item block in Logic App Designer view of the Logic App":::
+:::image type="content" source="../media/logic-app-update-work-item.png" alt-text="Update work item block in Logic App Designer view of the Logic App.":::
 
 Now it is time to bring the on-call person into the picture. We perform a
 lookup in Azure tables for the email address of the engineer listed as being on-call. This returns a JSON response which we then parse.
 
-:::image type="content" source="../media/logic-app-get-oncall.png" alt-text="Get entities block in Logic App Designer view of the Logic App":::
+:::image type="content" source="../media/logic-app-get-oncall.png" alt-text="Get entities block in Logic App Designer view of the Logic App.":::
 
 Since our query will return a list, we need to iterate over each item in that list as the next step. We assign the work item to each person (they are now "owners" of the incident). 
 
-:::image type="content" source="../media/logic-app-foreach.png" alt-text="Foreach block in Logic App Designer view of the Logic App":::
+:::image type="content" source="../media/logic-app-foreach.png" alt-text="Foreach block in Logic App Designer view of the Logic App.":::
 
 Then as a final step, we send a message to the Teams channel with a pointer back to the work item for people who join the channel and want to know where the authoritative information for that incident is stored.
 
-:::image type="content" source="../media/logic-app-final-teams.png" alt-text="Post a message as the Flow bot channel block in Logic App Designer view of the Logic App":::
+:::image type="content" source="../media/logic-app-final-teams.png" alt-text="Post a message as the Flow bot channel block in Logic App Designer view of the Logic App.":::
 
 So, that's just one example of how we can automate the setup of the mechanisms for incident tracking and communication. In the next unit, we'll dive a little deeper into aspects of communication around an incident.

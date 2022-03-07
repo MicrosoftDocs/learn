@@ -1,43 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-spring-cloud-workshop.6-configure-distributed-tracing
-title: Configure distributed tracing
+title: Distributed tracing
 metadata:
-  title: Configure distributed tracing
-  description: Configure distributed tracing
+  title: Distributed tracing
+  description: Distributed tracing
   author: judubois
   ms.author: judubois
   ms.date: 03/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/6-configure-distributed-tracing.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-
-  - content: "How do you configure distributed tracing for an application deployed to Azure Spring Cloud?"
-    choices:
-    - content: "Add some specific Spring Boot configuration properties"
-      isCorrect: false
-      explanation: "There's no specific configuration to set up."
-    - content: "Configure a specific Spring bean"
-      isCorrect: false
-      explanation: "There's no Spring bean to configure."
-    - content: "Add a Spring Boot starter, in the Maven `pom.xml` file"
-      isCorrect: true
-      explanation: "Adding the Maven dependency will autoconfigure everything."
-  - content: "Once your telemetry data is ingested by Azure Monitor, what will you be able to do?"
-    choices:
-    - content: "You'll have access to an automatically generated map of all your microservices"
-      isCorrect: false
-      explanation: "This answer is correct, but it is not the only one."
-    - content: "You'll be able to launch a debugger, and hot replace code in production"
-      isCorrect: false
-      explanation: "Azure Monitor is only capable of monitoring an application, but it cannot change some of its code or run a debugger."
-    - content: "You'll have access to a search engine, to find your performance bottlenecks"
-      isCorrect: false
-      explanation: "This answer is correct, but it is not the only one."
-    - content: "Points 1 and 3"
-      isCorrect: true
-      explanation: "You'll have access to both a map of your microservices, and a search engine to find performance issues."

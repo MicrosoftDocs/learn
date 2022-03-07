@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.exercise-your-emotional-intelligence.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: 'Which of the following options defines self-regulation?'
+    choices:
+    - content: 'A clear understanding of emotions, drives, values, goals, strengths, and weaknesses'
+      isCorrect: false
+      explanation: "Incorrect. Self-awareness is your awareness of yourself. When you're self-aware, you have a clear understanding of your emotions, drives, values, goals, strengths, and weaknesses."
+    - content: 'The ability to control or redirect disruptive emotions and impulses'
+      isCorrect: true
+      explanation: 'Correct. Self-regulation is your ability to control or redirect disruptive emotions and impulses.'
+    - content: 'The ability to identify, name, and manage emotions'
+      isCorrect: false
+      explanation: 'Incorrect. EQ is the ability to identify, name, and manage your emotions.'
+  - content: 'Which of the following statements is accurate?'
+    choices:
+    - content: 'Technical expertise is important, but EQ is also a crucial success factor in computer science.'
+      isCorrect: true
+      explanation: 'Correct. While technical knowledge certainly matters, research shows that developing your EQ is crucial for success in learning, career, and other endeavors.'
+    - content: "Technically skilled people can decide whether they want to work on their EQ because they're major contributors to the team's success."
+      isCorrect: false
+      explanation: 'Incorrect. Even if your team is technically skilled, a lack of EQ can damage morale.'
+    - content: "EQ is a fixed attribute that doesn't improve with practice."
+      isCorrect: false
+      explanation: 'Incorrect. Just like your technical skills, you can improve your EQ through practice.'
+  - content: 'Which of the following statements indicates a growth mindset?'
+    choices:
+    - content: 'A growth mindset is reflected through a need for approval.'
+      isCorrect: false
+      explanation: 'Incorrect. A growth mindset is reflected through a passion for learning, not a hunger for approval.'
+    - content: 'A person with a growth mindset thinks of challenging situations as opportunities to learn and grow their skills.'
+      isCorrect: true
+      explanation: 'Correct. People with growth mindsets think of challenging situations as opportunities to learn and grow their skills.'
+    - content: 'A person with a growth mindset considers situations as tests that reveal the abilities they were born with.'
+      isCorrect: false
+      explanation: 'Incorrect. People with fixed mindsets consider situations as tests that reveal which abilities they were born with.'

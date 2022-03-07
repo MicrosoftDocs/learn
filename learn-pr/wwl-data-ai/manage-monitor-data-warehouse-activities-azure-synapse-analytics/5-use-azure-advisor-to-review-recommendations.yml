@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.use-azure-advisor-to-review-recommendations
+title: Use Azure Advisor to review recommendations
+metadata:
+  title: Use Azure Advisor to review recommendations
+  description: "Use Azure Advisor to review recommendations"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-use-azure-advisor-to-review-recommendations.md)]

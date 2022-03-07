@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.startups.revenue
+metadata:
+  title: The path to revenue
+  description: Learn about the most common startup revenue models. See practical tips on how to get your startup to start generating revenue.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+title: The path to revenue
+summary: >
+  This module explains the most common startup revenue models and gives practical tips on how to generate your first customer revenues in your startup.
+abstract: | 
+  In this module, you'll:
+  - Learn about the wide range of revenue models that are available to startups.
+  - Find out how to identify assumptions that you've made and test them with customers.
+  - See which type of customer to focus on initially.
+  - Understand how to develop strong sales capabilities.
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- business-owner
+- business-analyst
+- functional-consultant
+- student
+products:
+- consumer
+units:
+- learn.startups.revenue.introduction
+- learn.startups.revenue.revenue-models
+- learn.startups.revenue.generate-early-revenues
+- learn.startups.revenue.knowledge-check
+- learn.startups.revenue.summary
+badge:
+  uid: learn.startups.revenue.badge

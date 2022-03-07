@@ -65,7 +65,7 @@ A Dockerfile is a text file that contains the instructions we use to build and r
 - The base or parent image we use to create the new image
 - Commands to update the base OS and install additional software
 - Build artifacts to include, such as a developed application
-- Services to expose, such a storage and network configuration
+- Services to expose, such as storage and network configuration
 - Command to run when the container is launched
 
 Let's map these aspects to an example Dockerfile. Suppose we're creating a Docker image for our ASP.NET Core website. The Dockerfile may look like the following example.

@@ -5,11 +5,12 @@ azureSandbox: true
 metadata:
   title: Exercise - Build the model
   description: Build the model
-  ms.date: 04/30/2020
-  author: cassieview
+  ms.date: 01/19/2021
+  author: cassiebreviu
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 15
 content: |
   [!include[](includes/3-build-model.md)]

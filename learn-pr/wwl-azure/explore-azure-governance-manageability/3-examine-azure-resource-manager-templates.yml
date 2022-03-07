@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-governance-manageability.examine-azure-resource-manager-templates
+title: Examine Azure Resource Manager templates
+metadata:
+  title: Examine Azure Resource Manager templates
+  description: "Examine Azure Resource Manager templates"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-examine-azure-resource-manager-templates.md)]

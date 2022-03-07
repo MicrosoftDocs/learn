@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.fsharp-first-steps
+metadata:
+  moduleType: standard
+  title: "Write your first F# code"
+  description: "Set up your F# development environment, write your first line of F# code, and build your first F# application" 
+  ms.date: 07/20/2021
+  author: luisquintanilla
+  ms.author: luquinta
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Write your first F# code
+summary: "Take your first steps with F# - Set up your development environment, write your first line of code, and build your first application"
+abstract: | 
+  By the end of this module, you'll be able to:
+    - Understand what makes F# a good language for building applications
+    - Write your first line of F# code
+    - Build your first F# console application
+prerequisites: |
+  - Familiarity with command-line based applications
+  - Introductory knowledge of programming concepts
+iconUrl: /learn/achievements/fsharp-first-steps.svg
+levels: 
+  - beginner
+roles: 
+  - developer
+  - student
+products:
+  - dotnet
+units:
+- learn.fsharp-first-steps.introduction
+- learn.fsharp-first-steps.what-is-fsharp
+- learn.fsharp-first-steps.fsharp-development-environment
+- learn.fsharp-first-steps.set-up-development-environment
+- learn.fsharp-first-steps.fsharp-interactive
+- learn.fsharp-first-steps.write-your-first
+- learn.fsharp-first-steps.fsharp-build-application
+- learn.fsharp-first-steps.build-your-first
+- learn.fsharp-first-steps.knowledge-check
+- learn.fsharp-first-steps.summary
+badge:
+  uid: learn.fsharp-first-steps.badge

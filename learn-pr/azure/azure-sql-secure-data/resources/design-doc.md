@@ -27,7 +27,7 @@ Azure SQL - Securing your data
 ## Prerequisites
 
 - Understand and are experienced in working with, maintaining, and developing with SQL Server. If you are new to this, you can review the following book by Bob Ward: [Pro SQL Server on Linux.](https://www.oreilly.com/library/view/pro-sql-server/9781484241288/) This book (available online) introduces SQL Server on Linux, but in the process walks through fundamental SQL Server topics
-- Familiarity with the general structure of Azure will be helpful, but not required. The [Azure fundamentals learning path](https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/) will help you understand the fundamentals of Azure at a general level (not data focused).  
+- Familiarity with the general structure of Azure will be helpful, but not required. The [Azure fundamentals learning path](/learn/paths/azure-fundamentals/) will help you understand the fundamentals of Azure at a general level (not data focused).  
 - Complete the **Introduction to Azure SQL** and **Azure SQL - Deploy and Configure** modules as part of the **Azure SQL Learning Path** (highly recommended but not required).  
 
 ## Summary

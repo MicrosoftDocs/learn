@@ -1,0 +1,8 @@
+As described earlier, by default, the transitive routing between HANA Large Instance units and on-premises (and between HANA Large Instances that are deployed in two different regions) does not work. You have the option of connecting to HANA Large Instances from the same virtual network that hosts the application Azure VMs. Alternatively, you can enable transitive routing by using any of the following methods:
+
+ -  ExpressRoute Global Reach
+ -  A reverse-proxy to route data, to and from SAP HANA on Azure (Large Instances). This can be, for example, F5 BIG-IP or NGINX with Traffic Manager deployed in the Azure virtual network.
+ -  IPTables rules in a Linux VM to enable routing between on-premises locations and HANA Large Instance units, or between HANA Large Instance units in different regions. The VM running IPTables needs to be deployed in the Azure virtual network that connects to HANA Large Instances to on-premises network. The VM needs to be sized accordingly, so, that the network throughput of the VM is sufficient for the expected network traffic.
+ -  Azure Firewall to direct traffic between on-premises and HANA Large Instance units.
+
+When using a reverse proxy, IPTables, or Azure Firewall, traffic routed through an Azure virtual network could be additionally filtered by Azure Network Security Groups, so, that certain IP addresses or IP address ranges from on-premises could be blocked or explicitly allowed to access HANA Large Instances. Be aware that implementation and support for custom solutions involving third-party network appliances or IPTables isn't provided by Microsoft. Support must be provided by the vendor of the component used or the integrator.

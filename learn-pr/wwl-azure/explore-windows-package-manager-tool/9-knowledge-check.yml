@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-windows-package-manager-tool.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which operating system is the minimum version that will support using Windows Package Manager?"
+    choices:
+    - content: "Windows 10 version 1809"
+      isCorrect: true
+      explanation: "This is the first version of the operating system that has support for Windows Package Manager"
+    - content: "Windows 11"
+      isCorrect: false
+      explanation: "Windows Package Manager works on Windows 11 but support began earlier in the operating system cycle."
+    - content: "Windows 10 Enterprise"
+      isCorrect: false
+      explanation: "Windows Package Manager works on Windows 10 version 1809 and above."
+  - content: "What command is used to install Microsoft Teams for everyone using the computer?"
+    choices:
+    - content: "winget install microsoft.teams --location"
+      isCorrect: false
+      explanation: "The location command helps you specify where the software should be installed."
+    - content: "winget install microsoft.teams --scope machine"
+      isCorrect: true
+      explanation: "The scope command allows you to specify if the installer should target user or machine."
+    - content: "winget install microsoft.teams --machine"
+      isCorrect: false
+      explanation: "This command is the incorrect syntax to use."
+  - content: "Which command is used to install Windows Admin Center to a custom location?"
+    choices:
+    - content: "winget install microsoft.windowsadmincentre --log \"M:\\Program Testing\\WindowsAdminCentre\""
+      isCorrect: false
+      explanation: "The log command directs the logging to a log file and isn't used to specify a custom install location."
+    - content: "winget install microsoft.windowsadmincentre --source \"M:\\Program Testing\\WindowsAdminCentre\""
+      isCorrect: false
+      explanation: "The source command is used to specify where software is sourced from."
+    - content: "winget install microsoft.windowsadmincentre --location \"M:\\Program Testing\\WindowsAdminCentre\""
+      isCorrect: true
+      explanation: "This is the correct syntax to use to specify a custom location for a software install."

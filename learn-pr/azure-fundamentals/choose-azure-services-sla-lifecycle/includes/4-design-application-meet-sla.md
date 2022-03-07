@@ -45,11 +45,11 @@ Recall that you need two virtual machines. Therefore, you include the Virtual Ma
 
 Note that even though all of the individual services have SLAs equal to or better than the application SLA, combining them results in an overall number that's *lower* than the 99.9 percent you need. Why? Because using multiple services adds an extra level of complexity and slightly increases the risk of failure.
 
-You see here that the composite SLA of 99.78 percent doesn't meet the required SLA of 99.9 percent. You might go back to team and ask whether this is acceptable. Or you might implement some other strategies into your design to improve this SLA.
+You see here that the composite SLA of 99.78 percent doesn't meet the required SLA of 99.9 percent. You might go back to your team and ask whether this is acceptable. Or you might implement some other strategies into your design to improve this SLA.
 
 ## What happens when the composite SLA doesn't meet your needs?
 
-For the Special Orders application, the composite SLA of doesn't meet the required SLA of 99.9 percent. Let's look at a few strategies that Tailwind Traders might consider.
+For the Special Orders application, the composite SLA doesn't meet the required SLA of 99.9 percent. Let's look at a few strategies that Tailwind Traders might consider.
 
 ### Choose customization options that fit your required SLA
 
@@ -58,6 +58,7 @@ Each of the workloads defined previously has its own SLA, and the customization 
 * **Disks**
 
     With Virtual Machines, you can choose from a Standard HDD Managed Disk, a Standard SSD Managed Disk, or a Premium SSD or Ultra Disk. The SLA for a single VM would be either 95 percent, 99.5 percent or 99.9 percent, depending on the disk choice.
+
 * **Tiers**
 
     Some Azure services are offered as both a free tier product and as a standard paid service. For example, Azure Automation provides 500 minutes of job runtime in an Azure free account, but is not backed by an SLA. The standard tier SLA for Azure Automation is 99.9 percent.
@@ -93,4 +94,4 @@ Consider how critical high availability is to your requirements before you add r
 
 ## Very high performance is difficult to achieve
 
-Performance targets above 99.99 percent are very difficult to achieve. Recall that an SLA of 99.99 percent means 1.01 minutes of downtime per week. It's difficult for humans to respond to failures quickly enough to meet SLA performance targets above 99.99 percent. Instead, your application must be able to self-diagnose and self-heal during an outage.
+Performance targets above 99.99 percent are very difficult to achieve. An SLA of 99.99 percent means 1 minute of downtime per week. It's difficult for humans to respond to failures quickly enough to meet SLA performance targets above 99.99 percent. Instead, your application must be able to self-diagnose and self-heal during an outage.

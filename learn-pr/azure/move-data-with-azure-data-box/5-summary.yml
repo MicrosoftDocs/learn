@@ -5,11 +5,10 @@ metadata:
   title: Summary
   description: In this unit, we'll review what you've learned about the Azure Data Box family of products.
   ms.date: 07/26/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: alkohli
+  ms.author: alkohli
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/5-summary.md)]

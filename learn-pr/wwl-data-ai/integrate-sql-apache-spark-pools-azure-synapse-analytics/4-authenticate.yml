@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.authenticate
+title: Authenticate in Azure Synapse Analytics
+metadata:
+  title: Authenticate in Azure Synapse Analytics
+  description: "Authenticate in Azure Synapse Analytics"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-authenticate.md)]

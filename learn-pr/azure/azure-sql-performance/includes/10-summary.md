@@ -8,12 +8,12 @@ Finally, you learned the unique capabilities of intelligent performance in Azure
 
 Learn more about Azure SQL performance with these resources:
 
-- Fixed capacities to choose from for CPU, memory, and I/O. Study the resource limits for [Azure SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/managed-instance/resource-limits?azure-portal=true) and [Databases](https://docs.microsoft.com/azure/azure-sql/database/resource-limits-vcore-single-databases?azure-portal=true).
+- Fixed capacities to choose from for CPU, memory, and I/O. Study the resource limits for [Azure SQL Managed Instance](/azure/azure-sql/managed-instance/resource-limits?azure-portal=true) and [Databases](/azure/azure-sql/database/resource-limits-vcore-single-databases?azure-portal=true).
 - [I/O configuration](https://techcommunity.microsoft.com/t5/datacat/storage-performance-best-practices-and-considerations-for-azure/ba-p/305525?azure-portal=true) for SQL Managed Instance might improve performance.
-- Familiar tools exist, like DMVs and [extended events](https://docs.microsoft.com/azure/azure-sql/database/xevent-db-diff-from-svr?azure-portal=true).
-- [Query Store](https://docs.microsoft.com/sql/relational-databases/performance/monitoring-performance-by-using-the-query-store?azure-portal=true) is on by default and powers features like Automatic Tuning.
-- You can use [Azure Metrics](https://docs.microsoft.com/azure/azure-monitor/platform/data-platform-metrics?azure-portal=true) to replace functionality like Windows Performance Monitor.
-- You can use [sys.dm_db_resource_stats](https://docs.microsoft.com/sql/relational-databases/system-dynamic-management-views/sys-dm-db-resource-stats-azure-sql-database?view=azuresqldb-current&azure-portal=true), which is designed for Azure.
-- You can use wait types specific to Azure, such as [LOG_RATE_GOVERNOR](https://docs.microsoft.com/azure/azure-sql/database/resource-limits-logical-server#transaction-log-rate-governance?azure-portal=true).
-- [Scale](https://docs.microsoft.com/azure/azure-sql/database/scale-resources?azure-portal=true) up and down without the need to migrate.
-- Take advantage of intelligent performance to get faster. [Automatic tuning](https://docs.microsoft.com/azure/azure-sql/database/automatic-tuning-overview?azure-portal=true) uses machine learning to recommend important performance best practices, such as indexes.
+- Familiar tools exist, like DMVs and [extended events](/azure/azure-sql/database/xevent-db-diff-from-svr?azure-portal=true).
+- [Query Store](/sql/relational-databases/performance/monitoring-performance-by-using-the-query-store?azure-portal=true) is on by default and powers features like Automatic Tuning.
+- You can use [Azure Metrics](/azure/azure-monitor/platform/data-platform-metrics?azure-portal=true) to replace functionality like Windows Performance Monitor.
+- You can use [sys.dm_db_resource_stats](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-resource-stats-azure-sql-database?azure-portal=true&view=azuresqldb-current), which is designed for Azure.
+- You can use wait types specific to Azure, such as [LOG_RATE_GOVERNOR](/azure/azure-sql/database/resource-limits-logical-server#transaction-log-rate-governance?azure-portal=true).
+- [Scale](/azure/azure-sql/database/scale-resources?azure-portal=true) up and down without the need to migrate.
+- Take advantage of intelligent performance to get faster. [Automatic tuning](/azure/azure-sql/database/automatic-tuning-overview?azure-portal=true) uses machine learning to recommend important performance best practices, such as indexes.

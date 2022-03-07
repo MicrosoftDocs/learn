@@ -1,104 +1,84 @@
-Azure SQL Server is a cloud-based relational database server that supports many of the same features as Microsoft SQL Server. It provides an easy transition from an on-premises database into a cloud-based one with built-in diagnostics, redundancy, security and scalability.
+Azure SQL is a cloud-based relational database family of products that support many of the same features as Microsoft SQL Server. It provides an easy transition from an on-premises database into a cloud-based one with built-in diagnostics, redundancy, security and scalability.
 
-## Azure SQL Server recommendations
+## Azure SQL recommendations
 
-Here are the security recommendations to set Azure SQL Server policies. Included with each recommendation are the basic steps to follow in the Azure portal. You should perform these steps on your own subscription with your own resources to validate the security for each. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
+See the following topics for security recommendations to set Azure SQL policies. Included with each recommendation are the basic steps to follow in the Azure portal. You should perform these steps with your own subscription using your own resources to validate the security for each.
 
 ### Enable auditing - Level 1
 
-Auditing for Azure SQL Database and SQL Data Warehouse tracks database events and writes them to an audit log in your Azure storage account, OMS workspace or Event Hubs. Auditing also:
+Auditing for Azure SQL Database and Azure Synapse Analytics tracks database events and writes them to an audit log in your Azure storage account, Log Analytics workspace, or Event Hubs. Auditing also:
 
 - Helps you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations.
 - Enables and facilitates adherence to compliance standards, although it doesn't guarantee compliance.
 
-1. Sign in to the Azure portal.
-1. Go to **SQL databases**.
-1. For each DB instance.
-1. Select **Auditing**, under Security.
-1. Ensure that Auditing is set to **On**.
+To turn on auditing:
 
-![Screenshot the SQL Server setting pane](../media/5-auditing.png)
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-### Enable a threat detection service - Level 1
+1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane displays.
 
-Threat detection for single and pooled databases detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases. Threat detection can identify Potential SQL injection, Access from unusual location or data center, Access from unfamiliar principal or potentially harmful application, and Brute force SQL credentials. Threat detection is part of the advanced data security (ADS) offering, which is a unified package for advanced SQL security capabilities. Threat detection can be accessed and managed via the central SQL ADS portal.
+1. In the left menu pane, select **Databases**, and then select **SQL Database** from the **Popular services** list. The **Create SQL Database** pane displays.
 
-1. Sign in to the Azure portal.
-1. Go to **SQL databases**.
-1. For each DB instance.
-1. Under **Security**, then navigate to **Advanced Data Security**.
-1. Select **Enable Advanced Data Security on the server**.
+1. Create an instance of your SQL database.
 
-![Screenshot the SQL Server setting pane](../media/5-enable_ads.png)
+1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane displays for your SQL database instance.
 
-### Enable all threat detection types - Level 1
+1. Enable **Enable Azure SQL Auditing**, and then select at least one audit log destination.
 
-Advanced data security (ADS) provides a set of advanced SQL security capabilities, including data discovery & classification, vulnerability assessment, and Advanced Threat Protection (ATP).
+    ![Screenshot the SQL Server setting pane.](../media/5-auditing.png)
 
-Advanced Threat Protection is part of the advanced data security (ADS) offering, which is part of the defense in depth SQL security strategy. Advanced Threat Protection can be accessed and managed via the central SQL ADS portal.
+For more information on auditing, go to [Auditing for Azure SQL Database and Azure Synapse Analytics](/azure/azure-sql/database/auditing-overview).
 
-![Screenshot the SQL Server setting pane](../media/5-auditing.png)
+> [!TIP]
+> Remember to select **Save** if you make changes to any of the settings.
 
-### Enable the option to send security alerts - Level 1
+### Enable SQL protections in Microsoft Defender for Cloud - Level 1
 
-You can receive notifications about the detected threats via email notifications or Azure portal.
+Defender for Cloud detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases. Defender for Cloud can identify:
 
-1. Sign in to the Azure portal.
-1. Go to **SQL databases**.
-1. For each DB instance.
-1. Select **Auditing & Threat Detection**.
-1. Select **Database settings**.
-1. Select **View Advanced Data Security server settings**.
-1. Ensure that **Send alerts** is set as appropriate.
+- Potential SQL injection
+- Access from unusual location or data center
+- Access from unfamiliar principal or potentially harmful application
+- Brute force SQL credentials.
 
-![Screenshot the SQL Server setting pane](../media/5-ads-email.png)
+SQL threats can be accessed and managed via the Defender for Cloud menu.
 
-### Enable the email service and co-administrators - Level 1
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-Providing the email address to receive alerts ensures that any detection of anomalous activities is reported as soon as possible, making it more likely to mitigate any potential risk sooner.
+1. On the Azure **home** page, search for and select **Microsoft Defender for Cloud**.
 
-1. Sign in to the Azure portal.
-1. Go to **SQL databases**.
-1. For each DB instance.
-1. Select **Advanced Data Security**.
-1. Under **Advanced Threat Protection Setting**.
-1. Select **Email service and co-administrators**.
+1. In the left menu pane, under **Management** select **Environment settings**. The **Settings | Defender plans** pane displays.
 
-![Screenshot the SQL Server setting pane](../media/5-ads-email2.png)
+1. Scroll down, and under **Microsoft Defender for**, turn **Azure SQL Databases** to **On**.
+
+    :::image type="content" source="../media/5-create-an-azure-sql-database-baseline/defender-for-cloud-plans-turn-on-azure-sql-database.png" alt-text="Screenshot that shows the Defender plans pane with the Azure SQL Databases plan turned on." lightbox="../media/5-create-an-azure-sql-database-baseline/defender-for-cloud-plans-turn-on-azure-sql-database.png":::
+
+1. Return to the Azure **home** page. Under **Azure services**, select **Create a resource**. The **Create a resource** pane displays.
+
+1. In the left menu pane, select **Databases**, then select **SQL Database** from the **Popular services** list. The **Create SQL Database** pane displays.
+
+1. Create an instance of your SQL database.
+
+1. In the left menu pane, under **Security**, select **Microsoft Defender for Cloud**. The **Microsoft Defender for Cloud** pane displays for your SQL database instance. Here, you can view security recommendations, alerts, and vulnerability assessment findings.
 
 ### Configure audit retention for more than 90 days - Level 1
 
 Audit logs should be preserved for security, discovery, and to meet legal and regulatory compliance.
 
-1. Sign in to the Azure portal.
-1. Go to **SQL databases**.
-1. For each DB instance.
-1. Select **Auditing** under the **Security** section.
-1. Select you Audit log destination, then **Configure**.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-![Screenshot the SQL Server auditing setting pane](../media/5-auditing2.png)
+1. On the Azure **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane displays.
 
-1. The **Storage settings** pane is shown.
-1. Ensure **Retention (days)** is **greater than 90 days**.
-1. Select **OK**.
+1. In the left menu pane, select **Databases**, then select **SQL Database** from the **Popular services** list. The **Create SQL Database** pane displays.
 
-![Screenshot the SQL Server auditing setting pane](../media/5-90days.png)
+1. Create an instance of your SQL database.
 
-### Configure threat detection retention for more than 90 days - Level 1
+1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane displays for your SQL database instance.
 
-A retention of zero days means logs are kept forever. Otherwise, the value can be any number of days between 1 and 2147483647. You should consider keeping the logs for at least 90 days to be able to go backwards to spot thread patterns.
+1. Select your **Audit log destination**, and then expand **Advanced properties**.
 
-1. Sign in to the Azure portal.
-1. Go to **SQL databases**.
-1. For each DB instance.
-1. Select **Auditing** under the **Security** section.
-1. Select you Audit log destination, then **Configure**.
-1. Select **Storage Details**.
-1. Ensure **Retention (days)** is **greater than 90 days**.
-1. Select **OK**.
-1. Select **Save**.
+1. Ensure **Retention (Days)** is *greater than 90 days*.
 
-![Screenshot the SQL Server auditing setting pane](../media/5-90days2.png)
+    ![Screenshot the SQL Server Auditing pane.](../media/5-auditing2.png)
 
-> [!TIP]
-> Remember to select **Save** if you make changes to any of the settings.
+1. On the top menu bar, select **Save**.

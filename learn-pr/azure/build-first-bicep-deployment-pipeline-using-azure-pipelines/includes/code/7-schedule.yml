@@ -1,0 +1,6 @@
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily environment restore
+  branches:
+    include:
+    - main

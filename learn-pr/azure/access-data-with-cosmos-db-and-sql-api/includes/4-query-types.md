@@ -83,7 +83,7 @@ The `FROM` clause specifies the data source upon which the query operates. You c
 
 A query such as `SELECT * FROM Products` indicates that the entire Products container is the source over which to enumerate the query.
 
-### Using aliases
+### Use aliases
 
 A container can be _aliased_ with the `AS` keyword. This allows you to refer to the container using a shorter or more descriptive name.
 

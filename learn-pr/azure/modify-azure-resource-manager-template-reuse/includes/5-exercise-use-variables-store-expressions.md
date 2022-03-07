@@ -6,7 +6,7 @@ In this exercise, you'll use the [Azure Resource Manager Tools for Visual Studio
 
 You'll now add a variable to store your storage account name expression in one place in the template.
 
-1. In Visual Studio Code, in the **azuredeploy.json** file, place your curser between the braces in the variables block ```"variables":{}```. Select the <kbd>Enter</kbd> key.
+1. In Visual Studio Code, in the **azuredeploy.json** file, place your cursor between the braces in the variables block ```"variables":{}```. Select the <kbd>Enter</kbd> key.
 1. Type **var** inside the braces. You see a list of related snippets. Select **arm-variable**:
 
    :::image type="content" source="../media/5-arm-variable.png" alt-text="Screenshot of Visual Studio Code that shows the snippets for Azure Resource Manager template variables." border="true":::
@@ -17,7 +17,7 @@ You'll now add a variable to store your storage account name expression in one p
     "variables": {"variable1": "value"},
     ```
 
-1. Change the name of the variable to **uniqueResourceName**, and change the value to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. Your variables section will look like this code:
+1. Change the name of the variable to **uniqueStorageName**, and change the value to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. Your variables section will look like this code:
 
     ```json
     "variables": {
@@ -35,7 +35,7 @@ You'll now add a variable to store your storage account name expression in one p
 
 ## Optionally, deploy the template
 
-The updated template doesn't have any changes to the resource you deployed, so deploying this template won't make any changes to your Azure environment. 
+The updated template doesn't have any changes to the resource you deployed, so deploying this template won't make any changes to your Azure environment.
 
 ::: zone pivot="cli"
 

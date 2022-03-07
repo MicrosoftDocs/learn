@@ -1,0 +1,2 @@
+Each application you want the Microsoft identity platform to perform identity and access management (IAM) for must be registered. Register an app in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for your application and its users. Whether it's a client application, like a web or mobile app, or a web API that backs a client app, registering it establishes a trust relationship between your application and the identity provider, the Microsoft identity platform.
+

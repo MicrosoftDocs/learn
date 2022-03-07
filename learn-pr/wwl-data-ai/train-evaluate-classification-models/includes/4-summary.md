@@ -1,3 +1,0 @@
-In this module, you learned how classification can be used to create a machine learning model that predicts categories, or *classes*. You then used the **scikit-learn** framework in Python to train and evaluate a classification model.
-
-While scikit-learn is a popular framework for writing code to train classification models, you can also create machine learning solutions for classification using the graphical tools in Microsoft Azure Machine Learning. You can learn more about no-code development of classification models using Azure Machine Learning in the [Create a classification model with Azure Machine Learning designer](https://docs.microsoft.com/learn/modules/create-classification-model-azure-machine-learning-designer/) module.

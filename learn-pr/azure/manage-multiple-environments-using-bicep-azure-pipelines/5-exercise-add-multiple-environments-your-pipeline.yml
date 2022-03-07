@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.exercise-add-multiple-environments-your-pipeline
+title: Exercise - Add multiple environments to your pipeline
+metadata:
+  unitType: exercise
+  title: Exercise - Add multiple environments to your pipeline
+  description: Update a deployment pipeline to deploy to two environments, and use a pipeline template with parameters.
+  ms.date: 10/18/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-exercise-add-multiple-environments-your-pipeline.md)]

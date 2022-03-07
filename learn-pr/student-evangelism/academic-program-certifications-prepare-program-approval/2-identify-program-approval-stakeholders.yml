@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-prepare-program-approval.identify-program-approval-stakeholders
+title: Identify the program approval stakeholders
+metadata:
+  title: Identify the program approval stakeholders
+  description: In this unit, you identify the program approval stakeholders and their roles.
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-identify-program-approval-stakeholders.md)]

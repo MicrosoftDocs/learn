@@ -5,7 +5,7 @@ A model's efficiency, however, depends on the effectiveness of its underlying te
 
 ### Shared-memory model
 
-![Tasks running in parallel and sharing an address space](../media/tasks.png)
+![Tasks running in parallel and sharing an address space.](../media/tasks.png)
 
 _Figure 4: Tasks running in parallel and sharing an address space_
 
@@ -13,7 +13,7 @@ The shared-memory model's key abstraction says that every task can access any lo
 
 Figure 5 shows an example that transforms a simple sequential program into a distributed one using the shared-memory programming model. The sequential program adds the elements of two arrays, `b` and `c`, storing the results in array `a`. Subsequently, any element greater than `0` in `a` is added to a grand sum. The corresponding distributed version assumes only two tasks and splits the work evenly between them. For every task, start and end variables are specified to correctly index the (shared) arrays, obtain data, and apply the given algorithm. Clearly, the grand sum is a critical section and so protected by a lock. In addition, no task can print the grand sum before every other task has finished its work, thus inserting a barrier before the printing statement. As shown in the program, communication between the two tasks is implicit (via reads and writes to shared arrays and variables) and synchronization is explicit (via locks and barriers). Last, as pointed out earlier, the underlying distributed system must provide data-sharing functionality. Specifically, the infrastructure must create the illusion that the memories of all computers in the system form a single, shared space that is addressable by all tasks. A common example of systems that offer such an underlying shared (virtual) address space on a cluster of computers (connected by a LAN) is called DSM.<sup>[1][^1], [2][^2]</sup> A common programming language that can be used on DSMs and other distributed shared systems is OpenMP.<sup>[3][^3]</sup>
 
-![Sequential (a) and shared-memory (b) versions](../media/sequential-program.png)
+![Sequential (a) and shared-memory (b) versions.](../media/sequential-program.png)
 
 _Figure 5: Sequential (a) and shared-memory (b) versions_
 
@@ -21,7 +21,7 @@ _Figure 5: Sequential (a) and shared-memory (b) versions_
 
 In the message-passing programming model, distributed tasks communicate by sending and receiving messages. Here, distributed tasks do not share an address space in which they can access each other's data (see Figure 6). The key abstraction resembles processes that, unlike threads, each maintain a private memory space. To send and receive data via explicit messages, this model incurs communication overheads (e.g., variable network latency and potentially excessive data transfers). Balancing these overheads, the explicit message exchanges implicitly synchronize the operation sequence in communicating tasks. Figure 7 demonstrates an example that transforms the sequential program shown in Figure 5 (a) into a distributed version that uses message passing. Initially, only a main task with `id = 0` can access the arrays `b` and `c`. Thus, assuming the existence of only two tasks, the main task first sends parts of the arrays to the other task (using an explicit send operation) in order to split the work evenly between the two tasks. The second task receives the required data (using an explicit receive operation) and performs a local sum. When the local sum is done, the second task sends back that sum to the main task. Likewise, the main task performs a local sum on its data part and collects the local sum of the other task before aggregating and printing a grand sum. As shown, for every send operation, there is a corresponding receive operation, and no explicit synchronization is needed. Last, the message-passing programming model does not necessitate any support from the underlying distributed system. Specifically, the interacting tasks require no illusion of a single, shared address space. A popular example of a message-passing programming model is provided by the message passing interface (MPI).<sup>[4][^4]</sup> MPI is an industry-standard message-passing library (more precisely, a specification of what a library can do) for writing message-passing programs. A popular high-performance and widely portable implementation of MPI is MPICH.<sup>[5][^5]</sup>
 
-![Tasks running in parallel using the message-passing programming model, whereby the interactions happen only via sending and receiving messages over the network](../media/message-passing.png)
+![Tasks running in parallel using the message-passing programming model, whereby the interactions happen only via sending and receiving messages over the network.](../media/message-passing.png)
 
 _Figure 6: Tasks running in parallel using the message-passing programming model, whereby the interactions happen only via sending and receiving messages over the network_
 
@@ -33,7 +33,7 @@ How data is laid out and where it is stored begin to affect performance signific
 
 In large-scale systems, synchronization points can become performance bottlenecks: as the number of users attempting to access a critical section increases, associated delays and waits also increase. We return to synchronization and other challenges involved in programming for the cloud in a later module. 
 
-![A distributed program that corresponds to the sequential program in Figure 5 (a) and is coded using the message-passing programming model](../media/distributed-program.png)
+![A distributed program that corresponds to the sequential program in Figure 5 (a) and is coded using the message-passing programming model.](../media/distributed-program.png)
 
 _Figure 7: A distributed program that corresponds to the sequential program in Figure 5 (a) and is coded using the message-passing programming model_
 

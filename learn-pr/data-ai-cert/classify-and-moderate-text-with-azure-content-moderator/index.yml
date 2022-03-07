@@ -4,8 +4,8 @@ metadata:
   title: Classify and moderate text with Azure Content Moderator
   description: In this module, we'll introduce you to Azure Content Moderator and show how to use it for text moderation
   ms.date: 1/28/2019
-  author: gerryaobrien
-  ms.author: gerryo
+  author: wwlpublish
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 abstract: | 

@@ -11,16 +11,16 @@ Examples include:
 
 |Name|Shape|Definition|
 |----|-----|-----------|
-|Process|![Process](../media/process50.png)|Activity that modifies or redirects input to an output|
-|External Entity|![External Entity](../media/external-entity50.png)|Process, data store, or even full fledged applications outside of your control|
+|Process|![Process.](../media/process50.png)|Activity that modifies or redirects input to an output|
+|External Entity|![External Entity.](../media/external-entity50.png)|Process, data store, or even full fledged applications outside of your control|
 
 ### Interaction
 
 |Name|Interaction|Definition|
 |----|-----------|----------|
-|Process <-> Process|![Process to Process Interaction](../media/process-process.png)|A task receives or sends data to or from a task|
-|Process <-> Data store|![Process to Data Store Interaction](../media/process-datastore.png)|A task sends or receives data to or from a data store|
-|Process <-> External entity|![Process to External Entity Interaction](../media/process-externalentity.png)|A task sends or receives data to or from an external entity|
+|Process <-> Process|![Process to Process Interaction.](../media/process-process.png)|A task receives or sends data to or from a task|
+|Process <-> Data store|![Process to Data Store Interaction.](../media/process-datastore.png)|A task sends or receives data to or from a data store|
+|Process <-> External entity|![Process to External Entity Interaction.](../media/process-externalentity.png)|A task sends or receives data to or from an external entity|
  
 ## How to prevent spoofing
 

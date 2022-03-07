@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.understand-azure-resource-manager-resources
+title: Understand Azure Resource Manager resources
+metadata:
+  title: Understand Azure Resource Manager resources
+  description: "Understand Azure Resource Manager resources"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-understand-azure-resource-manager-resources.md)]

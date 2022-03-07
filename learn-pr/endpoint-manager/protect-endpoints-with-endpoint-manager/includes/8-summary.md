@@ -9,8 +9,22 @@ In this module, you've learned about protecting your endpoint environment with M
 - Endpoint management includes cloud endpoints, on-premises endpoints, cloud + on-premises endpoints, and co-management endpoints.
 - Platforms are the types of devices and the operating systems that are supported. Intune support various Apple, Google, and Microsoft platforms.
 
+## Next steps
+
+To continue learning about Microsoft Endpoint Manager, see the next learning module in this series:
+- [Understand device management using Microsoft Endpoint Manager](/learn/modules/manage-devices-with-microsoft-endpoint-manager/)
+
+To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
+- [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/?linkid=845167)
+
+To get expert guidance to help plan, deploy, and migrate your organization to Microsoft Endpoint Manager, continue by learning more about FastTrack:
+- [Explore endpoint management support from FastTrack](https://go.microsoft.com/fwlink/?linkid=2143850)
+
 ## Learn more
 
 For additional information about Microsoft Endpoint Manager, see the following resources:
 
-- [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/?azure-portal=true)
+- [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)
+- [Protect data and devices with Microsoft Intune](/mem/intune/protect/device-protect)
+- [Protect data and infrastructure with Configuration Manager](/mem/configmgr/protect/)
+- [App protection policies overview](/mem/intune/apps/app-protection-policy)

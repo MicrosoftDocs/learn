@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Customize and manage CDN behavior
   description: Exercise - Customize and manage CDN behavior
   ms.date: 4/26/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: duongau
+  ms.author: duau
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 azureSandbox: true
 durationInMinutes: 12
 content: |

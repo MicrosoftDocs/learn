@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-design-program-launch.understand-co-branding
+title: Understand the value of co-branding as a marketing tool 
+metadata:
+  title: Understand the value of co-branding as a marketing tool 
+  description: Understand the value of co-branding as a marketing tool 
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-understand-co-branding.md)]

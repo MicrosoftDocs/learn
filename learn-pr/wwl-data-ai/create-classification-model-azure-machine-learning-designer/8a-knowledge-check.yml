@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/12/2020
+  ms.date: 03/07/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 2
 quiz:
   questions:
@@ -20,7 +21,7 @@ quiz:
       explanation: "That is incorrect. Use a Split Data module to randomly split a dataset into test and validation subsets."
     - content: "Split Data"
       isCorrect: true
-      explanation: "That is correct. Use a Split Data module to randomly split a dataset into test and validation subsets."
+      explanation: "That is correct. Use a Split Data module to randomly split a dataset into training and validation subsets."
     - content: "Select Columns in Dataset"
       isCorrect: false
       explanation: "That is incorrect. Use a Split Data module to randomly split a dataset into test and validation subsets."

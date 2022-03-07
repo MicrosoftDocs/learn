@@ -3,11 +3,12 @@ uid: learn.student-evangelism.introduction-python-nasa.7-summary
 metadata:
   title: Summary
   description: Summary of the role of Python in space exploration Learn module.
-  ms.date: 07/22/2020
-  author: angevin17
+  ms.date: 05/05/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Summary
 durationInMinutes: 1
 content: |

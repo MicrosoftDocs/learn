@@ -2,7 +2,7 @@ In the motor vehicle department system, you decide to run the web app on two ser
 
 In this exercise, you'll create a pair of virtual machines and install the vehicle registration web app. You'll also configure a virtual network that Application Gateway can use to connect to the virtual machines. Finally, you'll deploy the license renewal web site to an instance of Azure App Service.
 
-![Diagram showing the resources that will be deployed](../media/3-resources.svg)
+![Diagram showing the resources that will be deployed.](../media/3-resources.svg)
 
 ## Create virtual machines and deploy the vehicle registration site
 
@@ -10,9 +10,11 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
 
 1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
 
+    > [!NOTE]
+    > If you need to find the location name, you can use the following command: az account list-locations -o table
+
     ```azurecli
     RG=<resource group name>
-
     az group create --name $RG --location <location>
     ```
 
@@ -22,9 +24,9 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
     az network vnet create \
       --resource-group $RG \
       --name vehicleAppVnet \
-      --address-prefix 10.0.0.0/16 \
+      --address-prefixes 10.0.0.0/16 \
       --subnet-name webServerSubnet \
-      --subnet-prefix 10.0.1.0/24
+      --subnet-prefixes 10.0.1.0/24
     ```
 
 1. To download the script that creates the virtual machines, run the following command.
@@ -51,7 +53,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --custom-data module-files/scripts/vmconfig.sh \
       --no-wait
     ```
-    
+
     ```azurecli
     az vm create \
       --resource-group $RG \
@@ -94,7 +96,7 @@ You've now created the virtual machines running the vehicle registration web app
     APPSERVICE="licenserenewal$RANDOM"
     ```
 
-1. Next, to create the app service plan the web app will use, run the following command.
+1. Next, to create the App Service plan the web app will use, run the following command.
 
     ```azurecli
     az appservice plan create \

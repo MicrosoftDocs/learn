@@ -6,7 +6,7 @@ Mara has called a short meeting with her teammates. Everyone has shown up but no
 
 Mara's value stream map is still on the whiteboard from their previous meeting:
 
-![A whiteboard showing the value stream map](../media/2-vsm-whiteboard1.png)
+:::image type="content" source="../media/2-vsm-whiteboard1.png" alt-text="A whiteboard showing the value stream map.":::
 
 **Mara:** Our value stream map shows where we lose efficiency in delivering value to our end users. Just like everyone else, we can improve. And we can decide which areas to tackle first.
 
@@ -36,7 +36,7 @@ In fact, Abel Wang, a Cloud Advocate at Microsoft, has a great set of videos wit
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-DevOps--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Lj29]
 
 Our goal is to give our customers games they'll love. We do that by working together with a shared set of practices and tools.
 
@@ -95,7 +95,7 @@ DevOps is a key reason many elite performers are able to deliver value to custom
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Why-should-I-care-about-DevOps--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Lj2J]
 
 ## What DevOps is not
 

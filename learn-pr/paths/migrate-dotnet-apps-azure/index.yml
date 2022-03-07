@@ -3,9 +3,9 @@ uid: learn.azure.migrate-dotnet-apps-azure
 metadata:
   title: Migrate ASP.NET Apps to Azure
   description: Migrate ASP.NET web applications and their data to Azure App Service and Azure SQL Database to take advantage of the cloud.
-  author: nickwalkmsft
+  author: msangapu-msft
   ms.date: 07/06/2020
-  ms.author: nickwalk
+  ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate ASP.NET Apps to Azure
@@ -29,7 +29,11 @@ products:
 - azure-app-service
 - aspnet
 modules:
+- learn.azure.intro-to-migrating-aspnet-apps-azure
+- learn.host-a-web-application-with-azure-web-apps
+- learn.provision-azure-sql-db
 - learn.azure.migrate-app-service-migration-assistant
 - learn.migrate-sql-server-relational-data
+- learn.azure.deploy-aspnet-apps-azure-app-service-pipelines
 trophy:
   uid: learn.azure.migrate-dotnet-apps-azure.trophy

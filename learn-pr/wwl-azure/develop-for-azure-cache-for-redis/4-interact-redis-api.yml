@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-for-azure-cache-for-redis.interact-by-using-net
+title: Interact with Azure Cache for Redis by using .NET
+metadata:
+  title: Interact with Azure Cache for Redis by using .NET
+  description: "Interact with Azure Cache for Redis by using .NET"
+  ms.date: 02/18/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-interact-redis-api.md)]

@@ -27,8 +27,8 @@ The following table describes properties in the above JSON:
 | ------------- |-------------| -----|
 | name    | Name of the linked service. |Yes |
 | type     | Type of the linked service. For example: AzureStorage (data store) or AzureBatch (compute). See the description for typeProperties.    |   Yes |
-| typeProperties | The type properties are different for each data store or compute. For the supported data store types and their type properties, see the [dataset type table](https://docs.microsoft.com/azure/data-factory/concepts-datasets-linked-services#dataset-type). Navigate to the data store connector article to learn about type properties specific to a data store.     |    Yes |
-| connectVia | The [Integration Runtime](https://docs.microsoft.com/azure/data-factory/concepts-integration-runtime) to be used to connect to the data store. You can use Azure Integration Runtime or Self-hosted Integration Runtime (if your data store is located in a private network). If not specified, it uses the default Azure Integration Runtime.  |    No|
+| typeProperties | The type properties are different for each data store or compute. For the supported data store types and their type properties, see the [dataset type table](/azure/data-factory/concepts-datasets-linked-services). Navigate to the data store connector article to learn about type properties specific to a data store.     |    Yes |
+| connectVia | The [Integration Runtime](/azure/data-factory/concepts-integration-runtime) to be used to connect to the data store. You can use Azure Integration Runtime or Self-hosted Integration Runtime (if your data store is located in a private network). If not specified, it uses the default Azure Integration Runtime.  |    No|
 
 ## Example of a Linked Service
 
@@ -42,7 +42,7 @@ The following example creates a linked service named "AzureSqlLinkedService" tha
   "properties": {
     "type": "AzureSqlDatabase",
     "typeProperties": {
-      "connectionString": "Server=tcp:<server-name>.database.windows.net,1433;Database=EquityDB;User ID=<user-name>;Password=P@ssw0rd;Trusted_Connection=False;Encrypt=True;Connection Timeout=30"
+      "connectionString": "Server=tcp:<server-name>.database.windows.net,1433;Database=ctosqldb;User ID=ctesta-oneill;Password=P@ssw0rd;Trusted_Connection=False;Encrypt=True;Connection Timeout=30"
     }
   }
 }

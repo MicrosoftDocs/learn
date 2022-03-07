@@ -4,8 +4,8 @@ metadata:
   title: "Automate development tasks by using GitHub Actions"
   description: Create a basic GitHub Action and use that action in a workflow.
   ms.date: 05/19/2020
-  author: jamcneil
-  ms.author: jumcn
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Automate development tasks by using GitHub Actions"
@@ -33,6 +33,8 @@ products:
 units:
 - learn.github.github-actions-automate-tasks.1-introduction
 - learn.github.github-actions-automate-tasks.2-github-actions-automate-development-tasks
+- learn.github.github-actions-automate-tasks.2b-identify-components-workflow
+- learn.github.github-actions-automate-tasks.2c-configure-github-actions-workflow
 - learn.github.github-actions-automate-tasks.3-exercise-create-container-action
 - learn.github.github-actions-automate-tasks.4-knowledge-check
 - learn.github.github-actions-automate-tasks.5-summary

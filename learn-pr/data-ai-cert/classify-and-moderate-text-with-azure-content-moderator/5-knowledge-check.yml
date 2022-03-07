@@ -5,11 +5,10 @@ metadata:
   title: Knowledge check    
   description: Check your knowledge of content moderation for text.  
   ms.date: 1/28/2019    
-  author: gerryaobrien    
-  ms.author: gerryo    
+  author: wwlpublish    
+  ms.author: gmalc    
   ms.topic: interactive-tutorial    
   ms.prod: learning-azure    
-  ROBOTS: NOINDEX  
 durationInMinutes: 7
 quiz:
   title: Check your knowledge

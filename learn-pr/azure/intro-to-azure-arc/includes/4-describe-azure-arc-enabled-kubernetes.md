@@ -59,7 +59,7 @@ Use Azure Arc enabled Kubernetes integrated management to more efficiently creat
 - Implement role-based access control (RBAC) across systems and different types of resources to help to standardize security.
 - Automate and delegate remediation of incidents and problems to service teams.
 - Implement additional Azure services and leverage your choice of Azure tools to:
-    - Integrate with Azure Monitor, Security Center, GitHub, and others.
+    - Integrate with Azure Monitor, Defender for Cloud, GitHub, and others.
     - Automate configuration and infrastructure as code to provide repeatable deployments using templates.
     - Provide end-to-end identity for your users and your resources with Azure Resource Manager and Azure Active Directory (Azure AD).
 

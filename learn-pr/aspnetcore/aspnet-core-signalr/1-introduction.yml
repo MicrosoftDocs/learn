@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnet-core-signalr.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: This unit introduces you to using real-time web functionality with ASP.NET Core SignalR.
+  ms.date: 09/28/2021
+  author: IEvangelist
+  ms.author: dapine
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

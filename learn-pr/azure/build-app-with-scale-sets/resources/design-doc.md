@@ -172,7 +172,7 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
           - Threshold - the value the condition has to in this case exceed (70)
           - Duration - of importance as it takes time to provision and scales down the virtual machine so you would want the system to have observed this increased period of the load over a certain amount of time (10 minutes for example) before scaling up another instance into the scale set.
           - Cool down period - Amount of time to wait before attempting to perform another scaling operation.
-          - [Example](https://docs.microsoft.com/azure/virtual-machine-scale-sets/media/virtual-machine-scale-sets-autoscale-portal/rule-increase.png) 
+          - [Example](/azure/virtual-machine-scale-sets/media/virtual-machine-scale-sets-autoscale-portal/rule-increase.png) 
         - As a default, a scale in rule is not created. For every scale set at least one scale in rule should be set.
 
 1. **Exercise - Configuring a virtual machine scale set**
@@ -210,7 +210,7 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
     - Azure Custom Script Extension
       - The custom script extension downloads and executes scripts on Azure VMs. Typically this is used for post-deployment configuration, software installation, or any other configuration/management task. 
       - Custom scripts can be hosts on Azure Storage (for example, Blob), GitHub or via the Azure portal at extension runtime.
-      - It can integrate with Azure Resource Manager (ARM) templates, used with the Azure CLI, Powershell, Portal, or REST API.  More information can be found [here](https://docs.microsoft.com/azure/virtual-machines/linux/extensions-customscript)
+      - It can integrate with Azure Resource Manager (ARM) templates, used with the Azure CLI, Powershell, Portal, or REST API.  More information can be found [here](/azure/virtual-machines/linux/extensions-customscript)
       - To use the Custom Script Extension with the Azure CLI, you create a JSON file that defines what files to obtain and commands to execute. Show an example.
       - Updating an App deployment. 
         - Throughout the lifecycle of a scale set, you may want to deploy an updated version of your application. In the Custom Script Extension, it's possible to reference an updated deploy script and reapply the extension to part or all of your scale set.
@@ -256,4 +256,4 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
 Create virtual machine scale set - https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli  
 Install and upgrade an application on virtual machine scale set - https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-install-apps-cli  
 
-We currently don't have scale sets enabled in the sandbox so the learner may have to use their own subscription. Design based upon scale sets becoming available in Azure. 
+We currently don't have scale sets enabled in the sandbox so the learner may have to use their own subscription. Design based upon scale sets becoming available in Azure.

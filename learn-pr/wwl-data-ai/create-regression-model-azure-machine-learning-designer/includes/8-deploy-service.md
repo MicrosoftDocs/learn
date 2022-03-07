@@ -1,11 +1,17 @@
 After you've created and tested an inference pipeline for real-time inferencing, you can publish it as a service for client applications to use.
 
-To publish a real-time inference pipeline as a service, you must deploy it to an Azure Kubernetes Service (AKS) cluster. In this exercise, you'll use the AKS inference cluster you created previously in this module.
+> [!NOTE] 
+> In this exercise, you'll deploy the web service to an Azure Container Instance (ACI). This type of compute is created dynamically, and is useful for development and testing. For production, you should create an *inference cluster*, which provides an Azure Kubernetes Service (AKS) cluster that provides better scalability and security.
 
 ## Deploy a service
 
+:::image type="content" source="../media/deploy-screenshot.png" alt-text="Locate the deploy button for your Predict Auto Price inference pipeline." lightbox="../media/deploy-screenshot.png":::
+
 1. View the **Predict Auto Price** inference pipeline you created in the previous unit.
-2. At the top right, select **Deploy**, and set up a new real-time endpoint named **predict-auto-price** on the inference cluster you created previously.
+2. At the top right, select **Deploy**, and deploy a new real-time endpoint, using the following settings:
+    -  **Name**: predict-auto-price
+    -  **Description**: Auto price regression.
+    - **Compute type**: Azure Container Instance
 3. Wait for the web service to be deployed - this can take several minutes. The deployment status is shown at the top left of the designer interface.
 
 ## Test the service
@@ -18,11 +24,15 @@ Now you can test your deployed service from a client application - in this case,
     - The Primary Key for your service
 3. Observe that you can use the &#10697; link next to these values to copy them to the clipboard.
 4. With the **Consume** page for the **predict-auto-price** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true). Then in the new tab, view the **Notebooks** page (under **Author**).
-5. In the **Notebooks** page, under **My files**, use the **&#128459;** button to create a new file with the following settings:
+5. Navigate to the left-hand pane and click on **Notebooks**. Then use the **&#128459;** button to create a new file with the following settings:
     - **File location**: Users/*your user name*
-    - **File name**: Test-Autos
+    - **File name**: Test-Autos.ipynb
     - **File type**: Notebook
     - **Overwrite if already exists**: Selected
+
+> [!div class="centered"]
+> ![Select the Notebooks page from the left-hand pane and then create a new file.](../media/create-notebook-file.png)
+
 6. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
 7. Use the **&#8810;** button to collapse the file explorer pane and give you more room to focus on the **Test-Autos.ipynb** notebook tab.
 8. In the rectangular cell that has been created in the notebook, paste the following code:
@@ -65,7 +75,7 @@ Now you can test your deployed service from a client application - in this case,
                         'horsepower': 111,
                         'peak-rpm': 5000,
                         'city-mpg': 21,
-                        'highway-mpg': 27,
+                        'highway-mpg': 27
                 },
             ],
         },
@@ -80,8 +90,8 @@ Now you can test your deployed service from a client application - in this case,
         response = urllib.request.urlopen(req)
         result = response.read()
         json_result = json.loads(result)
-        y = json_result["Results"]["WebServiceOutput0"][0]["predicted_price"]
-        print('Predicted price: {:.2f}'.format(y))
+        y = json_result["Results"]["WebServiceOutput0"][0]
+        print(y)
         
     except urllib.error.HTTPError as error:
         print("The request failed with status code: " + str(error.code))
@@ -94,7 +104,7 @@ Now you can test your deployed service from a client application - in this case,
     > [!NOTE]
     > Don't worry too much about the details of the code. It just submits details of a car and uses the **predict-auto-price** service you created to get a predicted price.
 
-9. Switch to the browser tab containing the **Consume** page for the **predict-auto-price** service, and copy the REST endpoint for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
-10. Switch to the browser tab containing the **Consume** page for the **predict-auto-price** service, and copy the Primary Key for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
+9. Switch to the browser tab containing the **Consume** page for the **predict-auto-price** service, and copy the REST endpoint for your service. Then switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
+10. Switch to the browser tab containing the **Consume** page for the **predict-auto-price** service, and copy the Primary Key for your service. Then switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
 11. Save the notebook. Then use the **&#9655;** button next to the cell to run the code.
-12. Verify that predicted price is returned.
+12. After you have run the code, scroll down to the bottom of the screen. You should see the output **'predicted_price'**. The output is the predicted price for a vehicle with the particular input features specified in the code. 

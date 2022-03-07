@@ -28,7 +28,7 @@ run.register_model( model_name='classification_model',
                     description='A classification model')
 ```
 
-## 2. Define an Inference Configuration
+## 2. Define an inference configuration
 
 The model will be deployed as a service that consist of:
 
@@ -37,7 +37,7 @@ The model will be deployed as a service that consist of:
 
 You must therefore define the script and environment for the service.
 
-### Creating an Entry Script
+### Create an entry script
 
 Create the *entry script* (sometimes referred to as the *scoring script*) for the service as a Python (.py) file. It must include two functions:
 
@@ -50,13 +50,13 @@ Typically, you use the **init** function to load the model from the model regist
 import json
 import joblib
 import numpy as np
-from azureml.core.model import Model
+import os
 
 # Called when the service is loaded
 def init():
     global model
     # Get the path to the registered model file and load it
-    model_path = Model.get_model_path('classification_model')
+    model_path = os.path.join(os.getenv('AZUREML_MODEL_DIR'), 'model.pkl')
     model = joblib.load(model_path)
 
 # Called when a request is received
@@ -69,38 +69,34 @@ def run(raw_data):
     return predictions.tolist()
 ```
 
-### Creating an Environment
+Save the script in a folder so you can easily identify it later. For example, you might save the script above as *score.py* in a folder named *service_files*.
 
-Your service requires a Python environment in which to run the entry script, which you can configure using Conda configuration file. An easy way to create this file is to use a **CondaDependencies** class to create a default environment (which includes the **azureml-defaults** package and commonly-used packages like **numpy** and **pandas**), add any other required packages, and then serialize the environment to a string and save it:
+### Create an environment
+
+Your service requires a Python environment in which to run the entry script, which you can define by creating an **Environment** that contains the required packages:
 
 ```python
-from azureml.core.conda_dependencies import CondaDependencies
+from azureml.core import Environment
 
-# Add the dependencies for your model
-myenv = CondaDependencies()
-myenv.add_conda_package("scikit-learn")
-
-# Save the environment config as a .yml file
-env_file = 'service_files/env.yml'
-with open(env_file,"w") as f:
-    f.write(myenv.serialize_to_string())
-print("Saved dependency info in", env_file)
+service_env = Environment(name='service-env')
+python_packages = ['scikit-learn', 'numpy'] # whatever packages your entry script uses
+for package in python_packages:
+    service_env.python.conda_dependencies.add_pip_package(package)
 ```
 
-### Combining the Script and Environment in an InferenceConfig
+### Combine the script and environment in an InferenceConfig
 
-After creating the entry script and environment configuration file, you can combine them in an **InferenceConfig** for the service like this:
+After creating the entry script and environment, you can combine them in an **InferenceConfig** for the service like this:
 
 ```python
 from azureml.core.model import InferenceConfig
 
-classifier_inference_config = InferenceConfig(runtime= "python",
-                                              source_directory = 'service_files',
+classifier_inference_config = InferenceConfig(source_directory = 'service_files',
                                               entry_script="score.py",
-                                              conda_file="env.yml")
+                                              environment=service_env)
 ```
 
-## 3. Define a Deployment Configuration
+## 3. Define a deployment configuration
 
 Now that you have the entry script and environment, you need to configure the compute to which the service will be deployed. If you are deploying to an AKS cluster, you must create the cluster and a compute target for it before deploying:
 
@@ -127,7 +123,7 @@ The code to configure an ACI deployment is similar, except that you do not need 
 > [!NOTE]
 > To deploy a model to an Azure Function, you do not need to create a deployment configuration. Instead, you need to package the model based on the type of function trigger you want to use. This functionality is in preview at the time of writing. For more details, see [Deploy a machine learning model to Azure Functions](https://aka.ms/AA70rrn) in the Azure Machine Learning documentation.
 
-## 4. Deploy the Model
+## 4. Deploy the model
 
 After all of the configuration is prepared, you can deploy the model. The easiest way to do this is to call the **deploy** method of the **Model** class, like this:
 
@@ -146,4 +142,4 @@ service.wait_for_deployment(show_output = True)
 
 For ACI or local services, you can omit the **deployment_target** parameter (or set it to **None**).
 
-> **More Information**: For more information about deploying models with Azure Machine Learning, see [Deploy models with Azure Machine Learning](https://aka.ms/AA70zfv) in the documentation.
+For more information about deploying models with Azure Machine Learning, see [Deploy machine learning models to Azure](https://aka.ms/AA70zfv) in the documentation.

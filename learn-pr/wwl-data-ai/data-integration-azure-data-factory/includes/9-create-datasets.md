@@ -31,7 +31,7 @@ The following table describes properties in the above JSON:
 | ------------- |-------------| -----|
 | name    | Name of the dataset. |Yes |
 | type     | Type of the dataset. Specify one of the types supported by Data Factory (for example: AzureBlob, AzureSqlTable).   |   Yes |
-| structure | Schema of the dataset.     |    No |
+| Schema | Schema of the dataset.     |    No |
 | typeProperties | The type properties are different for each type (for example: Azure Blob, Azure SQL table).   |    Yes|
 
 ## Example of a dataset
@@ -40,8 +40,9 @@ The following table describes properties in the above JSON:
 
 In this procedure, you create two datasets: InputDataset and OutputDataset. These datasets are of type Binary. They refer to the Azure Storage linked service named AzureStorageLinkedService. The input dataset represents the source data in the input folder. In the input dataset definition, you specify the blob container (adftutorial), the folder (input), and the file (emp.txt) that contain the source data. The output dataset represents the data that's copied to the destination. In the output dataset definition, you specify the blob container (adftutorial), the folder (output), and the file to which the data is copied.
 
-1. Create a JSON file named InputDataset.json in the C:\ADFv2QuickStartPSH folder, with the following content:
+1. In your desktop, create a folder named ADFv2QuickStartPSH in your C drive.
 
+1. Create a JSON file named InputDataset.json in the C:\ADFv2QuickStartPSH folder with the following content:
      ```JSON
        {
            "name": "InputDataset",
@@ -67,59 +68,59 @@ In this procedure, you create two datasets: InputDataset and OutputDataset. Thes
 
 1. To create the dataset: InputDataset, run the Set-AzDataFactoryV2Dataset cmdlet.
 
-       ```Powershell
-       Set-AzDataFactoryV2Dataset -DataFactoryName $DataFactory.DataFactoryName `
-           -ResourceGroupName $ResGrp.ResourceGroupName -Name "InputDataset" `
-           -DefinitionFile ".\InputDataset.json"
-       ```
+    ```Powershell
+    Set-AzDataFactoryV2Dataset -DataFactoryName $DataFactory.DataFactoryName `
+        -ResourceGroupName $ResGrp.ResourceGroupName -Name "InputDataset" `
+        -DefinitionFile ".\InputDataset.json"
+    ```
 
     Here is the sample output:
 
-       ```Text
-       DatasetName       : InputDataset
-       ResourceGroupName : <resourceGroupname>
-       DataFactoryName   : <dataFactoryName>
-       Structure         :
-       Properties        : Microsoft.Azure.Management.DataFactory.Models.BinaryDataset
-       ```
+    ```Text
+    DatasetName       : InputDataset
+    ResourceGroupName : <resourceGroupname>
+    DataFactoryName   : <dataFactoryName>
+    Structure         :
+    Properties        : Microsoft.Azure.Management.DataFactory.Models.BinaryDataset
+    ```
 
 1. Repeat the steps to create the output dataset. Create a JSON file named OutputDataset.json in the C:\ADFv2QuickStartPSH folder, with the following content:
 
-       ```JSON
-       {
-           "name": "OutputDataset",
-           "properties": {
-               "linkedServiceName": {
-                   "referenceName": "AzureStorageLinkedService",
-                   "type": "LinkedServiceReference"
-               },
-               "annotations": [],
-               "type": "Binary",
-               "typeProperties": {
-                   "location": {
-                       "type": "AzureBlobStorageLocation",
-                       "folderPath": "output",
-                       "container": "adftutorial"
-                   }
-               }
-           }
-       }
-       ```
+    ```JSON
+    {
+        "name": "OutputDataset",
+        "properties": {
+            "linkedServiceName": {
+                "referenceName": "AzureStorageLinkedService",
+                "type": "LinkedServiceReference"
+            },
+            "annotations": [],
+            "type": "Binary",
+            "typeProperties": {
+                "location": {
+                    "type": "AzureBlobStorageLocation",
+                    "folderPath": "output",
+                    "container": "adftutorial"
+                }
+            }
+        }
+    }
+    ```
 
 1. Run the Set-AzDataFactoryV2Dataset cmdlet to create the OutDataset.
 
-       ```Powershell
-       Set-AzDataFactoryV2Dataset -DataFactoryName $DataFactory.DataFactoryName `
-           -ResourceGroupName $ResGrp.ResourceGroupName -Name "OutputDataset" `
-           -DefinitionFile ".\OutputDataset.json"
-       ```
+    ```Powershell
+    Set-AzDataFactoryV2Dataset -DataFactoryName $DataFactory.DataFactoryName `
+        -ResourceGroupName $ResGrp.ResourceGroupName -Name "OutputDataset" `
+        -DefinitionFile ".\OutputDataset.json"
+    ```
 
      Here is the sample output:
 
-       ```Text
-       DatasetName       : OutputDataset
-       ResourceGroupName : <resourceGroupname>
-       DataFactoryName   : <dataFactoryName>
-       Structure         :
-       Properties        : Microsoft.Azure.Management.DataFactory.Models.BinaryDataset
-       ```
+    ```Text
+    DatasetName       : OutputDataset
+    ResourceGroupName : <resourceGroupname>
+    DataFactoryName   : <dataFactoryName>
+    Structure         :
+    Properties        : Microsoft.Azure.Management.DataFactory.Models.BinaryDataset
+    ```

@@ -1,38 +1,19 @@
-You've chosen to use a Service Bus queue to exchange messages about individual sales between the mobile app that your sales personnel use and the web service, hosted in Azure, that will store details about each sale in an Azure SQL Database instance.
+You've chosen to use a Service Bus queue to handle messages about individual sales between the mobile app, which your sales personnel use, and the web service hosted in Azure, which stores details about each sale in an Azure SQL Database instance.
 
-You've already implemented the necessary objects in your Azure subscription. Now, you want to write code that sends messages to that queue and retrieves messages.
+In the previous exercise, you implemented the necessary objects in your Azure subscription. Now, you want to write code that sends messages to that queue and retrieves messages.
 
-## Clone and open the starter application
+In this unit, you'll build two console applications: one application places messages into a Service Bus queue, and one application retrieves messages from a Service Bus queue. The applications are part of a single .NET Core solution.
 
-In this unit, you'll build two console applications. The first application places messages into a Service Bus queue and the second retrieves them. The applications are part of a single .NET Core solution.
+## Get the connection string to the Service Bus namespace
 
-1. Start by cloning the solution: run the following commands in the Cloud Shell:
+You must configure two pieces of information in your two console apps to access your Service Bus namespace and to use the queue within that namespace:
 
-```bash
-cd ~
-git clone https://github.com/MicrosoftDocs/mslearn-connect-services-together.git
-```
+* Endpoint for your namespace
+* Shared access key for authentication
 
-2. Next, change directories into the starter folder and open the Cloud Shell editor.
+You can get these values from the connection string.
 
-```bash
-cd mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
-code .
-```
-
-## Configure a connection string to a Service Bus namespace
-
-In order to access a Service Bus namespace and use a queue, you must configure two pieces of information in your console apps:
-
-* The endpoint for your namespace
-* The shared access key for authentication
-
-Both of these values can be obtained from the Azure portal in the form of a complete connection string.
-
-> [!NOTE]
-> For simplicity, you will hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you might use a configuration file or even Azure Key Vault to store the connection string.
-
-1. Run the following command in the CloudShell to display the primary connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus namespace.
+1. In Azure Cloud Shell, run the following command, replacing `<namespace-name>` with the Service Bus namespace that you created in the last exercise.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \
@@ -43,184 +24,430 @@ Both of these values can be obtained from the Azure portal in the form of a comp
         --namespace-name <namespace-name>
     ```
 
-    You'll need this connection string multiple times throughout this module, so you might want to paste it somewhere handy.
+    The last line in the response is the connection string, which contains the endpoint for your namespace and the shared access key. It should resemble the following example:
 
-1. Copy the key from Cloud Shell. In the editor, open **privatemessagesender/Program.cs** and locate the following line of code:
+    ```csharp
+    Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==
+    ```
 
-    ```C#
+1. Copy the connection string from Cloud Shell. You'll need this connection string several times throughout this module, so you might want to save it somewhere handy.
+
+## Clone and open the starter application
+
+> [!NOTE]
+> For simplicity, the following tasks instruct you to hard-code the connection string in the *Program.cs* file of both console applications. In a production application, you should use a configuration file or Azure Key Vault to store the connection string.
+
+1. Run the following command in Cloud Shell to clone the Git project solution:
+
+    ```bash
+    cd ~
+    git clone https://github.com/MicrosoftDocs/mslearn-connect-services-together.git
+    ```
+
+1. Run the following command to go the start folder in your cloned project and open the Cloud Shell editor:
+
+    ```bash
+    cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
+    code .
+    ```
+
+## Write code to send a message to a queue
+
+1. In the Cloud Shell editor, open *privatemessagesender/Program.cs* and locate the following line of code:
+
+    ```csharp
     const string ServiceBusConnectionString = "";
     ```
 
-    Paste the connection string between the quotation marks. Save the file using the <kbd>Ctrl+S</kbd> keys.
+   Paste the connection string between the quotation marks.
 
-1. Repeat the previous step in **privatemessagereceiver/Program.cs**, pasting in the same connection string value. Save the file either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes. Find the `SendSalesMessageAsync()` method. Within that method, locate the following line of code:
 
-## Write code that sends a message to the queue
-
-To complete the component that sends messages about sales, follow these steps:
-
-1. Open **privatemessagesender/Program.cs** in the editor.
-
-1. Locate the `SendSalesMessageAsync()` method.
-
-1. Within that method, locate the following line of code:
-
-    ```C#
-    // Create a queue client here
+    ```csharp
+    // Create a Service Bus client here
     ```
 
-1. To create a queue client, replace that line of code with the following code:
+   Replace that line of code with the following code:
 
-    ```C#
-    queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
+    ```csharp
+    // By leveraging "await using", the DisposeAsync method will be called automatically once the client variable goes out of scope. 
+    // In more realistic scenarios, you would want to store off a class reference to the client (rather than a local variable) so that it can be used throughout your program.
+    
+    await using var client = new ServiceBusClient(ServiceBusConnectionString);
+    ```
+  
+1. Within the `SendSalesMessageAsync()` method, find the following line of code:
+
+    ```csharp
+    // Create a sender here
     ```
 
-1. Within the `try...catch` block, locate the following line of code:
+   Replace that comment with the following code:
 
-    ```C#
+    ```csharp
+    await using ServiceBusSender sender = client.CreateSender(QueueName);
+    ```
+
+1. Within the `try...catch` block, find the following line of code:
+
+    ```csharp
     // Create and send a message here
     ```
 
-1. To create and format a message for the queue, replace that line of code with the following code:
+   Replace that line of code with the following lines of code:
 
-    ```C#
+    ```csharp
     string messageBody = $"$10,000 order for bicycle parts from retailer Adventure Works.";
-    var message = new Message(Encoding.UTF8.GetBytes(messageBody));
+    var message = new ServiceBusMessage(messageBody);
     ```
 
-1. To display the message in the console, on the next line, add the following code:
+1. Insert the following code on a new line directly below what you just added to display the message in the console:
 
-    ```C#
+    ```csharp
     Console.WriteLine($"Sending message: {messageBody}");
     ```
 
-1. To send the message to the queue, on the next line, add the following code:
+1. Insert the following code on the next line:
 
-    ```C#
-    await queueClient.SendAsync(message);
+    ```csharp
+    await sender.SendMessageAsync(message);
     ```
 
-1. Locate the following line of code:
+1. To dispose sender and client objects, near the end of the file, find the following comment:
 
-    ```C#
-    // Close the connection to the queue here
+    ```csharp
+    // Close the connection to the sender here
     ```
 
-1. To close the connection to the Service Bus, replace that line of code with the following code:
+   Replace that line with the following code:
 
-    ```C#
-    await queueClient.CloseAsync();
+    ```csharp
+    finally
+    {
+        // Calling DisposeAsync on client types is required to ensure that network
+        // resources and other unmanaged objects are properly cleaned up.
+        await sender.DisposeAsync();
+        await client.DisposeAsync();
+    }
+    ```
+  
+1. Check that your final code for *privatemessagesender/Program.cs* resembles the following example:
+
+    ```csharp
+    using System;
+    using System.Text;
+    using System.Threading.Tasks;
+    using Azure.Messaging.ServiceBus;
+    
+    namespace privatemessagesender
+    {
+        class Program
+        {
+            const string ServiceBusConnectionString = "Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==";
+            const string QueueName = "salesmessages";
+    
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Sending a message to the Sales Messages queue...");
+                SendSalesMessageAsync().GetAwaiter().GetResult();
+                Console.WriteLine("Message was sent successfully.");
+            }
+    
+            static async Task SendSalesMessageAsync()
+            {
+                await using var client = new ServiceBusClient(ServiceBusConnectionString);
+
+                await using ServiceBusSender sender = client.CreateSender(QueueName);
+                try
+                {
+                    string messageBody = $"$10,000 order for bicycle parts from retailer Adventure Works.";
+                    var message = new ServiceBusMessage(messageBody);
+                    Console.WriteLine($"Sending message: {messageBody}");
+                    await sender.SendMessageAsync(message);
+                }
+                catch (Exception exception)
+                {
+                    Console.WriteLine($"{DateTime.Now} :: Exception: {exception.Message}");
+                }
+                finally
+                {
+                    // Calling DisposeAsync on client types is required to ensure that network
+                    // resources and other unmanaged objects are properly cleaned up.
+                    await sender.DisposeAsync();
+                    await client.DisposeAsync();
+                }
+            }
+        }
+    }
     ```
 
-1. Save the file.
+1. Save the *privatemessagesender/Program.cs* file using either the **...** icon or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+
+1. In the upper-right corner of the editor, select **...**,  and then select **Close Editor**.
 
 ## Send a message to the queue
 
-To run the component that sends a message about a sale, run the following command in the Cloud Shell:
+1. To run the component that sends a message about a sale, run the following command in Cloud Shell. The first line ensures that you are in the correct path.
 
-```bash
-dotnet run -p privatemessagesender
-```
-
-> [!NOTE]
-> The apps you run during this exercise may take a moment to start up, as `dotnet` has to restore packages from remote sources and build the apps the first time they are run.
-
-As the program executes, you'll see messages printed indicating that it's sending a message. Each time you run the app, one additional message will be added to the queue.
-
-Once it's finished, run the following command to see how many messages are in the queue:
-
-```azurecli
-az servicebus queue show \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name salesmessages \
-    --query messageCount \
-    --namespace-name <namespace-name>
-```
-
-## Write code that receives a message from the queue
-
-1. Open **privatemessagereceiver/Program.cs** in the editor
-
-1. Locate the `ReceiveSalesMessageAsync()` method.
-
-1. Within that method, locate the following line of code:
-
-    ```C#
-    // Create a queue client here
+    ```bash
+    cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
+    dotnet run -p ./privatemessagesender
     ```
 
-1. To create a queue client, replace that line with the following code:
+    > [!NOTE]
+    > The first time you run the apps in this exercise, allow `dotnet` to restore packages from remote sources and build the apps.
 
-    ```C#
-    queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
+    As the program runs, messages are printed to the console indicating that the app is sending a message:
+  
+    ```command
+    Sending a message to the Sales Messages queue...
+    Sending message: $10,000 order for bicycle parts from retailer Adventure Works.
+    Message was sent successfully.
     ```
 
-1. Locate the `RegisterMessageHandler()` method.
+1. When the app is finished, run the following command, replacing \<namespace-name\> with the name of your Service Bus namespace. This command returns the number of messages that are in the queue.
 
-1. To configure message handling options, replace all the code within that method with the following code:
+    ```azurecli
+    az servicebus queue show \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name salesperformancemessages \
+        --query messageCount \
+        --namespace-name <namespace-name>
+    ```
 
-    ```C#
-    var messageHandlerOptions = new MessageHandlerOptions(ExceptionReceivedHandler)
+1. Run the `dotnet run` command from step 1 again, then run the `servicebus queue show` command again. Each time you run the dotnet app, a new message is added to the queue. You'll see the `messageCount` increase each time you run the Azure command.
+  
+## Write code to receive messages from the queue
+
+1. Run the following command to open the editor again:
+
+    ```command
+    code .
+    ```
+
+1. In the editor, open *privatemessagereceiver/Program.cs* and find the following line of code:
+
+    ```csharp
+    const string ServiceBusConnectionString = "";
+    ```
+
+   Between the quotation marks, paste the connection string that you saved earlier.
+
+1. Find the `ReceiveSalesMessageAsync()` method. Within that method, locate the following line of code:
+
+    ```csharp
+    // Create a Service Bus client that will authenticate using a connection string
+    ```
+
+   Replace that line with the following code:
+
+    ```csharp
+    var client = new ServiceBusClient(ServiceBusConnectionString);
+    ```
+
+1. To configure message handling options, find the following line of code:
+
+    ```csharp
+    // Create the options to use for configuring the processor
+    ```
+
+   Replace that line with the following lines of code:
+
+    ```csharp
+    var processorOptions = new ServiceBusProcessorOptions
     {
         MaxConcurrentCalls = 1,
-        AutoComplete = false
+        AutoCompleteMessages = false
     };
     ```
 
-1. To register the message handler, on the next line, add the following code:
+1. To create a processor, find the following line of code:
 
-    ```C#
-    queueClient.RegisterMessageHandler(ProcessMessagesAsync, messageHandlerOptions);
+    ```csharp
+    // Create a processor that we can use to process the messages
     ```
 
-1. Locate the `ProcessMessagesAsync()` method. You have registered this method as the one that handles incoming messages.
+   Replace that line with the following code:
 
-1. To display incoming messages in the console, replace all the code within that method with the following code:
-
-    ```C#
-    Console.WriteLine($"Received message: SequenceNumber:{message.SystemProperties.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Body)}");
+    ```csharp
+    await using ServiceBusProcessor processor = client.CreateProcessor(QueueName, processorOptions);
     ```
 
-1. To remove the received message from the queue, on the next line, add the following code:
+1. To configure the handlers, find the following line of code:
 
-    ```C#
-    await queueClient.CompleteAsync(message.SystemProperties.LockToken);
+    ```csharp
+    // Configure the message and error handler to use
     ```
 
-1. Return to the `ReceiveSalesMessageAsync()` method and locate the following line of code:
+   Replace that line with the following code:
 
-    ```C#
-    // Close the queue here
+    ```csharp
+    processor.ProcessMessageAsync += MessageHandler;
+    processor.ProcessErrorAsync += ErrorHandler;
     ```
 
-1. To close the connection to Service Bus, replace that line with the following code:
+1. To start processing, find the following line of code:
 
-    ```C#
-    await queueClient.CloseAsync();
+    ```csharp
+    // Start processing
     ```
 
-1. Save the file.
+   Replace that line with the following code:
 
-## Retrieve a message from the queue
+    ```csharp
+    await processor.StartProcessingAsync();
+    ```
 
-To run the component that receives a message about a sale, run this command in the Cloud Shell:
+1. To close the connection to Service Bus, find the following line of code:
 
-```bash
-dotnet run -p privatemessagereceiver
-```
+    ```csharp
+    // Close the processor here
+    ```
 
-When you see that the message has been received and displayed in the console, press `Enter` to stop the app. Then, run the same command as before to confirm that all of the messages have been removed from the queue:
+   Replace that line with the following code:
+
+    ```csharp
+    await processor.CloseAsync();
+    ```
+
+1. Review code in the `MessageHandler` method:
+
+    ```csharp
+    // handle received messages
+    static async Task MessageHandler(ProcessMessageEventArgs args)
+    {
+        // extract the message
+        string body = args.Message.Body.ToString();
+        
+        // print the message
+        Console.WriteLine($"Received: {body}");
+
+        // complete the message so that message is deleted from the queue. 
+        await args.CompleteMessageAsync(args.Message);
+    }
+    ```
+
+1. Review code in the `ErrorHandler` method:
+
+    ```csharp
+    // handle any errors when receiving messages
+    static Task ErrorHandler(ProcessErrorEventArgs args)
+    {
+        // print the exception message
+        Console.WriteLine(args.Exception.ToString());
+        return Task.CompletedTask;
+    }    
+    ```
+
+1. Check that your final code for *privatemessagereceiver/Program.cs* resembles the following example:
+
+    ```csharp
+    using System;
+    using System.Text;
+    using System.Threading.Tasks;
+    using Azure.Messaging.ServiceBus;
+
+    namespace privatemessagereceiver
+    {
+        class Program
+        {
+
+            const string ServiceBusConnectionString = "Endpoint=sb://<examplenamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+            const string QueueName = "salesmessages";
+
+            static void Main(string[] args)
+            {
+
+                ReceiveSalesMessageAsync().GetAwaiter().GetResult();
+
+            }
+
+            static async Task ReceiveSalesMessageAsync()
+            {
+
+                Console.WriteLine("======================================================");
+                Console.WriteLine("Press ENTER key to exit after receiving all the messages.");
+                Console.WriteLine("======================================================");
+
+
+                var client = new ServiceBusClient(ServiceBusConnectionString);
+
+                var processorOptions = new ServiceBusProcessorOptions
+                {
+                    MaxConcurrentCalls = 1,
+                    AutoCompleteMessages = false
+                };
+
+                await using ServiceBusProcessor processor = client.CreateProcessor(QueueName, processorOptions);
+
+                processor.ProcessMessageAsync += MessageHandler;
+                processor.ProcessErrorAsync += ErrorHandler;
+
+
+                await processor.StartProcessingAsync();
+
+                Console.Read();
+
+                await processor.CloseAsync();
+
+            }
+
+            // handle received messages
+            static async Task MessageHandler(ProcessMessageEventArgs args)
+            {
+                string body = args.Message.Body.ToString();
+                Console.WriteLine($"Received: {body}");
+
+                // complete the message. messages is deleted from the queue. 
+                await args.CompleteMessageAsync(args.Message);
+            }
+
+            // handle any errors when receiving messages
+            static Task ErrorHandler(ProcessErrorEventArgs args)
+            {
+                Console.WriteLine(args.Exception.ToString());
+                return Task.CompletedTask;
+            }
+        }
+    }
+    
+    ```
+
+1. Save the file either through the **&#9776;** menu or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+
+1. In the upper-right corner of the editor, select **...**,  and then select **Close Editor**.
+
+## Receive a message from the queue
+
+1. To run the component that receives a message about a sale, run this command in Cloud Shell:
+
+    ```bash
+    dotnet run -p privatemessagereceiver
+    ```
+
+1. Check the notifications in Cloud Shell. In the Azure portal, go to your Service Bus namespace and check your **Messages** chart:
+
+    ```command
+    Received: $10,000 order for bicycle parts from retailer Adventure Works.
+    Received: $10,000 order for bicycle parts from retailer Adventure Works.
+    ```
+
+1. When you see that the messages have been received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. 
+
+### Check the message count
+
+Run the following code to confirm that all the messages have been removed from the queue, remembering to replace \<namespace-name\> with your Service Bus namespace.
 
 ```azurecli
 az servicebus queue show \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name salesmessages \
+    --name salesperformancemessages \
     --query messageCount \
     --namespace-name <namespace-name>
 ```
 
-This will show `0` if all the messages have been removed.
+The output will be `0` if all the messages have been removed.
 
-You have written code that sends a message about individual sales to a Service Bus queue. In the sales force distributed application, you should write this code in the mobile app that sales personnel use on devices.
+You've written code that sends a message about individual sales to a Service Bus queue. In the salesforce distributed application, you should write this code in the mobile app that sales personnel use on devices.
 
-You have also written code that receives a message from the Service Bus queue. In the sales force distributed application, you should write this code in the web service that runs in Azure and processes received messages.
+You've also written code that receives a message from the Service Bus queue. In the salesforce distributed application, you should write this code in the web service that runs in Azure and processes received messages.

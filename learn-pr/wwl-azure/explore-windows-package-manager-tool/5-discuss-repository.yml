@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-windows-package-manager-tool.discuss-repository
+title: Discuss the Windows Package Manager repository
+metadata:
+  title: Discuss the Windows Package Manager repository
+  description: "Discuss the Windows Package Manager repository"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-discuss-repository.md)]

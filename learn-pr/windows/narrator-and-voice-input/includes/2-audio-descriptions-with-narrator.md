@@ -14,7 +14,7 @@ Ensure the scientific calculator app is up and running. We'll need to change the
 
 1. Type "narrator settings" into the Windows search bar, then select **Ease of Access Narrator settings**. This will bring up the following screen.
 
-![Turning on the narrator](../media/narrator-settings.png)
+![Turning on the narrator.](../media/narrator-settings.png)
 
 2. Turn on the **Use Narrator** switch, then minimize this window. Narration can be more troublesome when switching between apps and developing software, so you'll want to keep this window open. That way, you'll be able to switch it off when making changes to your code, and then re-enable it for testing.
 

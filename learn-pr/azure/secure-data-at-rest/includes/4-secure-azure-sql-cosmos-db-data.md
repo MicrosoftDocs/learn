@@ -18,7 +18,7 @@ You can manually enable transparent data encryption for a SQL database on Azure,
 
 The following example shows how you can configure transparent data encryption in the portal:
 
-![Enable transparent data encryption](../media/4-enable-tde.png)
+![Enable transparent data encryption.](../media/4-enable-tde.png)
 
 ## Secure your Azure Cosmos DB database by using automatic encryption at rest
 
@@ -26,7 +26,7 @@ Azure Cosmos DB databases allow your data to be stored in an unstructured format
 
 Your media attachments, the actual databases, or backups can all be protected at rest. At the same time, none of this encryption affects the latency and throughput SLAs for Azure Cosmos DB. Your data is automatically encrypted at rest, but is not automatically encrypted when it's generated and when it's in use.
 
-![Azure Cosmos DB encryption behind the scenes](../media/4-cosmos-db-encryption.svg)
+![Azure Cosmos DB encryption behind the scenes.](../media/4-cosmos-db-encryption.svg)
 
 Data in your Azure Cosmos DB database is protected through AES-256 encryption. In the background, the Azure Cosmos DB management service, with the help of a secret store, manages all of your encryption keys and unwraps them when necessary. These keys are used to encrypt and decrypt your data. Microsoft manages the keys for you, and the encryption keys are rotated to help keep your data secure.
 

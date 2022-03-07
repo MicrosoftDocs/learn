@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-hyperscale.5-exercise-distributed-tables
+title: Exercise - Create distributed tables
+metadata:
+  title: Exercise - Create distributed tables
+  description: We connect to your database and create a basic schema
+  ms.date: 10/23/2020
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-distributed-tables.md)]

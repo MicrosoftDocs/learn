@@ -5,11 +5,10 @@ metadata:
   title: Introduction
   description: Set up CORS for your website and storage assets, to allow cross domain access.
   ms.date: 04/23/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

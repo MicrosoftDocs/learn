@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnet-core-signalr.how-signalr-works
+title: How ASP.NET Core SignalR works
+metadata:
+  unitType: learning-content
+  title: How ASP.NET Core SignalR works
+  description: In this unit, you'll learn how ASP.NET Core SignalR works.
+  ms.date: 09/28/2021
+  author: IEvangelist
+  ms.author: dapine
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-how-signalr-works.md)]

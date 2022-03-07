@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-networking.examine-networking-support-of-azure-for-sap-workloads
+title: Examine networking support of Azure for SAP workloads
+metadata:
+  title: Examine networking support of Azure for SAP workloads
+  description: "Examine networking support of Azure for SAP workloads"
+  ms.date: 03/04/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/19-examine-networking-support-azure-for-sap-workloads.md)]

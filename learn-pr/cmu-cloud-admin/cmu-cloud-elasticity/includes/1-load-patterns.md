@@ -16,7 +16,7 @@ Consistent growth is among the easiest load patterns to compensate for because c
 
 The rapid elasticity offered by cloud computing is essential when loads fluctuate in an unpredictable manner over relatively short periods of time. Figure 2 shows the load on a web site over a 24-hour period. Once more assuming that one server can handle 5,000 requests per unit of time, the number of servers needed varies from two to 16 over the course of the day. We could accommodate this traffic by keeping 16 virtual web servers online at all times, but recall that cloud service providers charge for VMs even when idle. The excess capacity would not only waste energy, but roughly double the cost.
 
-![Figure 2: Constantly fluctuating load](../media/fig5-2.png)
+![Figure 2: Constantly fluctuating load.](../media/fig5-2.png)
 
 _Figure 2: Constantly fluctuating load._
 
@@ -24,7 +24,7 @@ _Figure 2: Constantly fluctuating load._
 
 Figure 3 shows a load that increases and decreases in a regular and somewhat predictable pattern -- for example, demand goes up during working hours and falls back during evening and nighttime hours. At its peak, this load requires about 20 servers to handle demand, once more assuming 5,000 requests per unit of time per server. It's unreasonable to rotate physical servers in and out 24 hours a day, but virtual servers can easily be provisioned and deprovisioned on a schedule to make sure that server capacity roughly equals demand. Physical servers sitting idle or lightly utilized 12 hours a day represent unwanted CapEx and unnecessary energy consumption. Virtual servers come at a cost as well, but they can be deprovisioned when they're not needed and quickly created again when demand requires it.
 
-![Figure 3: Cyclical load that repeats every 24 hours](../media/fig5-3.png)
+![Figure 3: Cyclical load that repeats every 24 hours.](../media/fig5-3.png)
 
 _Figure 3: Cyclical load that repeats every 24 hours._
 
@@ -32,7 +32,7 @@ _Figure 3: Cyclical load that repeats every 24 hours._
 
 One of the most difficult patterns to deal with from a cost and maintenance standpoint is one that incurs unpredictable bursts (Figure 4). If peaks are predictable -- for example, if the web site serves a pizza-delivery service that experiences higher loads on weekends and holidays -- then extra capacity can be planned for. But if they're not predictable, we must be prepared to deal with them at any time.
 
-![Figure 4: Unpredictable bursts](../media/fig5-4.png)
+![Figure 4: Unpredictable bursts.](../media/fig5-4.png)
 
 _Figure 4: Unpredictable bursts._
 

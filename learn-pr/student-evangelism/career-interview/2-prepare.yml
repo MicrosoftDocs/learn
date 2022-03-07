@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.career-interview.2-prepare
+title: Prepare for your interview
+metadata:
+  title: Prepare for your interview
+  description: There are various ways to prepare for an interview. How to prepare depends on what kind of company you're interviewing for.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 08/19/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-prepare.md)]

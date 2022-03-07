@@ -7,7 +7,7 @@ In this part, you:
 > [!div class="checklist"]
 > * Install the Azure Pipelines extension for your GitHub repo.
 > * Set up an Azure DevOps project for this module.
-> * Create a CI/CD pipeline triggered by commits to the *master* branch.
+> * Create a CI/CD pipeline triggered by commits to the *main* branch.
 > * Review the pipeline tasks.
 > * Add tasks to run functional tests against the deployment and publish their results.
 > * Save the pipeline to trigger a CI/CD workflow.
@@ -66,7 +66,7 @@ The starter pipeline code provides everything you need to build, test, package, 
 
 ### The CI trigger
 
-The pipeline is configured to run whenever a change is committed to the `master` branch. You can adjust this as needed, such as if you wanted to include (or exclude) runs based on their branch, path, or tag.
+The pipeline is configured to run whenever a change is committed to the `main` branch. You can adjust this as needed, such as if you wanted to include (or exclude) runs based on their branch, path, or tag.
 
 [!code-yml[](code/4-1-azure-pipelines.yml)]
 
@@ -154,16 +154,16 @@ Append this code to the end of the pipeline. As before, ensure that the task is 
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, select the web site's deploy task and click the URL to view the deployed site.
 
-    ![Locating the web site URL in Azure Pipelines](../media/4-deploy-url.png)
+    :::image type="content" source="../media/4-deploy-url.png" alt-text="Locating the web site URL in Azure Pipelines.":::
 
 1. You see the site running on App Service.
 
-    ![The Python application running in a web browser](../media/4-python-django.png)
+    :::image type="content" source="../media/4-python-django.png" alt-text="The Python application running in a web browser.":::
 
 1. Return to the pipeline summary. You see the details of the pipeline run, which also includes the test results. Scroll down to the stages view to see how the test run in each stage performed. Select one of the test links to view the aggregated performance.
 
-    ![Reviewing the pipeline summary](../media/4-pipeline-run-summary.png)
+    :::image type="content" source="../media/4-pipeline-run-summary.png" alt-text="A screenshot of Azure Pipelines showing the location of the link to the test summary.":::
 
 1. The test run summary provides details about the test runs. If you would like to review specific tests, you may update the filters option to include *Passed* tests. By default it only shows tests that failed or were aborted.
 
-    ![Reviewing the pipeline summary](../media/4-test-run-summary.png)
+    :::image type="content" source="../media/4-test-run-summary.png" alt-text="A screenshot of Azure Pipelines showing the test summary. The location of the filter options is highlighted.":::

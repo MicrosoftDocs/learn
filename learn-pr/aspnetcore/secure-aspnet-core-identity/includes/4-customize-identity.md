@@ -1,6 +1,6 @@
 By default, Identity represents a user with an `IdentityUser` class. One way to extend the data being captured at registration time is to create a class deriving from `IdentityUser`. In this unit, a derived class named `ContosoPetsUser` is created. `ContosoPetsUser` will contain properties to store the user's first and last name.
 
-![derived IdentityUser class](../media/4-contosopetsuser.png)
+![derived IdentityUser class.](../media/4-contosopetsuser.png)
 
 UI changes are also required to collect the additional user profile information. The following steps explain the process of collecting a first and last name for the registered user.
 

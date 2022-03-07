@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.describe-what-is-cybersecurity
+title: Describe what is cybersecurity
+metadata:
+  title: Describe what is cybersecurity
+  description: "Describe what is cybersecurity"
+  ms.date: 02/08/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-describe-what-is-cybersecurity.md)]

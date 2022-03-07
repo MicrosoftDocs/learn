@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.exercise-manage-authorization-through-column-row-level-security
+title: Exercise - Manage authorization through column and row level security
+metadata:
+  title: Exercise - Manage authorization through column and row level security
+  description: "Exercise - Manage authorization through column and row level security"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-exercise-manage-authorization-through-column-row-level-security.md)]

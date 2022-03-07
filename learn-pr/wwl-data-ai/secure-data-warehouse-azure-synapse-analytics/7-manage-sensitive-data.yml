@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.manage-sensitive-data-with-dynamic-data-masking
+title: Manage sensitive data with Dynamic Data Masking
+metadata:
+  title: Manage sensitive data with Dynamic Data Masking
+  description: "Manage sensitive data with Dynamic Data Masking"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-manage-sensitive-data.md)]

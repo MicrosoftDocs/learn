@@ -5,8 +5,8 @@ metadata:
   title: Identity management
   description: In this unit, we'll discuss how to protect your identities
   ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: robbyatmicrosoft
+  ms.author: robbymillsap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
@@ -35,9 +35,9 @@ quiz:
     - content: "A driver's license"
       isCorrect: false
       explanation: "A driver's license can't be used for multifactor authentication."
-    - content: 'A time-based one-time password'
+    - content: 'A token-generating device'
       isCorrect: true
-      explanation: 'Applications that generate time-based one-time passwords are great to use for multifactor authentication.'
+      explanation: 'A token-generating device or mobile app that receives a notification are great components to use for multifactor authentication.'
     - content: 'Your account number'
       isCorrect: false
       explanation: "Your account number can't be used for multifactor authentication."

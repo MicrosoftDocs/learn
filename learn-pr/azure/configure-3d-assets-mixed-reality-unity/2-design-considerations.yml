@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.configure-3d-assets-mixed-reality-unity.design-considerations
+title: Design considerations
+metadata:
+  title: Design considerations
+  description: Overview of design considerations for the end purpose of the user experience.
+  ms.date: 05/12/2021
+  author: JBrentJ
+  ms.author: jejacks
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-design-considerations.md)]

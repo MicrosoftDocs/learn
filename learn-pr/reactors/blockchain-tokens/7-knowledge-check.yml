@@ -5,9 +5,10 @@ metadata:
   description: Knowledge check
   ms.date: 10/16/2020
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Knowledge check
 durationInMinutes: 1
 content: |
@@ -28,7 +29,7 @@ quiz:
       isCorrect: false
       explanation: "Tokens can identify ownership, for example, of houses, cars, or artwork. Tokens can also represent digital objects."
 
-  - content: "What type of token is most commonly used solely for nun-fungible assets?"
+  - content: "What type of token is most commonly used solely for non-fungible assets?"
     choices:
     - content: "ERC20"
       isCorrect: false

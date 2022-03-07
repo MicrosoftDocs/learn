@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-api-azure-functions.8-exercise-query-azure-cosmos-db
+title: Exercise - Add connection string to Azure Functions app settings
+metadata:
+  title: Exercise - Add connection string to Azure Functions app settings
+  description: Exercise - Add connection string to Azure Functions app settings
+  ms.date: 12/04/2020
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: bash
+azureSandbox: true
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-exercise-app-settings.md)]

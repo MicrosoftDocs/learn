@@ -4,7 +4,7 @@ Edsger Dijkstra once said:
 
 As a developer at the enormous online retailer called Tailwind Traders, you're going to be writing a lot of Node.js bugs. That's okay because that's just part of coding.
 
-In this module, you'll learn how to effectively debug Node.js programs. The faster you can find and identify bugs, the faster you can get your code to a working state. You'll spend less time scratching your head wondering why your code worked five seconds ago but doesn't work now.
+In this module, you'll learn how to effectively debug Node.js programs. The faster you can find and identify bugs, the faster you can get your code to a working state. You'll spend less time scratching your head wondering why your code worked five seconds ago, but doesn't work now.
 
 ## Learning objectives
 

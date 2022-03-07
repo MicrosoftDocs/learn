@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-saas-offer-commercial-marketplace.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this unit, we introduce the concept of a SaaS application and the benefits for providers and their customers
+  ms.date: 01/25/2021
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

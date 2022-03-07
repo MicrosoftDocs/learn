@@ -118,7 +118,7 @@ If you want to use Azure PowerShell or the Azure CLI to deploy Azure Bastion, ru
 1. Create a public IP address for Azure Bastion.
 
    ```azurecli
-   az network public-ip create
+   az network public-ip create \
      --resource-group MyResourceGroup \
      --name MyPublicIp \
      --sku Standard \

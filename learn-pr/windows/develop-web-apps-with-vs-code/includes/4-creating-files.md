@@ -30,7 +30,7 @@ In your empty editor window `index.html`, type `!` (exclamation point) then sele
 
 We've taken a direct line to creating the HTML here, skipping over optional features of Emmet. For example, when you type the exclamation point but before you type the Tab key, you'll see something like the following.
 
-![Emmet info option](../media/emmet-info.png)
+![Emmet info option.](../media/emmet-info.png)
 
 Note the little `i` in the blue circle off to the right, which you can click for more info. Also, be sure to take note of the location of the full Emmet reference at [Emmet In Visual Studio Code](https://code.visualstudio.com/docs/editor/emmet). You don't need to know all the details at this moment, but it's useful to have a feel for the scope of Emmet and what it can do to make you more efficient.
 
@@ -46,7 +46,7 @@ Saving files manually is no different than usual, from the File menu or using ke
 
 ## Syntax highlighting from built-in extensions
 
-Let's look over the built-in extensions list. These are the extensions that come pre-installed on Visual Studio Code, and don't show up in your usual installed extensions list. To view the built-in extensions, select the ellipsis icon (`...`) in the upper right of the Extensions area and choose **Show Built-in Extensions**. The length of this list may surprise you! Take a moment to scroll through the various items to get a feel for what's already here.
+Let's look over the built-in extensions list. These are the extensions that come pre-installed on Visual Studio Code, and don't show up in your usual installed extensions list. To view the built-in extensions, select the ellipsis icon (`...`) in the Filter Extensions area and choose **Show Built-in Extensions**. The length of this list may surprise you! Take a moment to scroll through the various items to get a feel for what's already here.
 
 > [!NOTE]
 > There are syntax highlighting extensions for many languages such as HTML already built in. You may have noticed this particular extension at work in the previous section when you added HTML with Emmet.

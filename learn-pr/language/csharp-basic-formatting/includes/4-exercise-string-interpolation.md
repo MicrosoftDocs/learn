@@ -9,22 +9,24 @@ In other words, instead of writing the following line of code:
 ```csharp
 string message = greeting + " " + firstName + "!";
 ```
+
 You can write this more concise line of code instead:
 
 ```csharp
 string message = $"{greeting} {firstName}!";
 ```
+
 In this simple example, you save a few keystrokes.  You can imagine how much more concise string interpolation can be in more complex operations.  Moreover, many find the string interpolation syntax cleaner and easier to read.
 
-In the following exercise, we'll rewrite the previous messages using string concatenation.
+In the following exercise, we'll rewrite the previous messages using string interpolation.
 
-### Step 1: Delete all of the code in the code editor.
+### Step 1: Delete all of the code in the code editor
 
 Use your mouse to highlight all of the text in the code editor, then select the `backspace` or `del` key to remove everything.
 
-### Step 2: Use string interpolation to combine a literal string and a variable value.
+### Step 2: Use string interpolation to combine a literal string and a variable value
 
-To interpolate two strings together, you create a literal string and prefix the string with the `$` symbol.  The literal string should contain atleast one set of curly braces `{}` and inside of those characters you use the name of a variable.
+To interpolate two strings together, you create a literal string and prefix the string with the `$` symbol.  The literal string should contain at least one set of curly braces `{}` and inside of those characters you use the name of a variable.
 
 Add the following code to the code window:
 
@@ -40,7 +42,7 @@ Now, run the code.  You'll see the following result in the output console:
 Hello Bob!
 ```
 
-### Step 3: Use string interpolation with multiple variables and literal strings.
+### Step 3: Use string interpolation with multiple variables and literal strings
 
 You can perform several interpolation operations in the same line of code.
 
@@ -59,7 +61,7 @@ Now, run the code.  You'll see the following result in the output console:
 Hello Bob!
 ```
 
-### Step 4: Avoiding intermediate variables.
+### Step 4: Avoid intermediate variables
 
 Just as we did in the previous exercise, we can eliminate the temporary variable to store the message.
 
@@ -77,7 +79,7 @@ Now, run the code.  The result in the output console should be the same, however
 Hello Bob!
 ```
 
-### Step 5: Combine verbatim literals and string interpolation.
+### Step 5: Combine verbatim literals and string interpolation
 
 Suppose you need to use a verbatim literal in your template.  You can use both the verbatim literal prefix symbol `@` and the string interpolation `$` symbol together.  
 

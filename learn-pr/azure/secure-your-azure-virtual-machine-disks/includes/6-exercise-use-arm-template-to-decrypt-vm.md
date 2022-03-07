@@ -10,31 +10,59 @@ You're going to use a template Microsoft has published on GitHub that is specifi
 
 1. In the search box, enter **Template**.
 
-1. From the resulting list, select **Template deployment (deploy using custom templates)**, and select **Create**.
+1. From the resulting list, select **Template deployment (deploy using custom templates)**. The **Template deployment (deploy using custom templates)** appears.
 
-    ![Screenshot showing the Template Deployment item selected with the Create button highlighted](../media/6-create-template.png)
+    :::image type="content" source="../media/6-create-template.png" alt-text="Screenshot showing the Template Deployment item selected with the Create button highlighted.":::
 
-1. In the **Select a template** search box, start entering "201-decrypt" and select the "201-decrypt-running-windows-vm-without-aad" template.
+1. Select **Create**.  The **Custom deployment** pane appears.
 
-    ![Screenshot showing the Select a Template search box with auto-completion](../media/6-custom-deployment.png)
+1. On the **Select a template** tab, enter the following values for each setting.
 
-1. To launch the template runner, select **Select Template**.
+    | Setting | Value |
+    |---------|---------|
+    | **Start with a quickstart template or template spec** |
+    | Template source | Quickstart template |
+    | Quickstart template (disclaimer) | Select the field, then enter *decrypt-running-windows-vm-without-aad*, and select the *decrypt-running-windows-vm-without-aad* template |
 
-1. In the settings view, enter the following information:
-    - For the **Subscription**, select _Concierge Subscription_.
-    - Select the sandbox resource group <rgn>Sandbox RG</rgn>. This will auto-select the region as well.
-    - For the **VM Name**, enter "fmdata-vm01".
-    - Leave the **Volume Type** as _All_.
+    :::image type="content" source="../media/6-custom-deployment.png" alt-text="Screenshot showing the Select a Template search box with auto-completion.":::
 
-1. Select the **I agree to the terms and conditions** check box.
-1. To run the template, select **Purchase**. Note that there is no cost to this - it's a standard button.
+1. To launch the template runner, select **Select template**. The **Disable encryption on Windows VM encrypted without AAD** pane appears.
+
+1. On the **Basics** tab, enter the following values for each setting.
+
+    | Setting | Value |
+    |---------|---------|
+    | **Project details** |
+    | Subscription |  Concierge Subscription |
+    | Resource group | Select sandbox resource group <rgn>Sandbox RG</rgn>. This will auto-select the region as well. |
+    | **Instance details** |
+    | Region | Auto-selected from *Resource group* selection |
+    | Vm Name | Enter *fmdata-vm01* |
+    | Volume Type | Accept default *All* |
+    | Force Update Tag | Accept default |
+    | Location | Accept default |
+
+1. Select **Review + create**.
+
+1. After validation passes, select **Create**.
 
 The deployment may take a few minutes to complete.
 
 ## Verify the encryption status of the VM
 
-1. On the Azure portal menu or from the **Home** page, select **Virtual machines**, and select your VM **fmdata-vm01**. Alternatively, you can search for your VM by name from **All Resources**.
+In Cloud Shell, check the encryption status.
 
-1. On the **Virtual machine** pane, under **SETTINGS**, select **Disks**.
+   ```powershell
+    $vmName = "fmdata-vm01"
+    $rgName = "<rgn>[sandbox Resource Group]</rgn>"
+    Get-AzVmDiskEncryptionStatus  -ResourceGroupName $rgName -VMName $vmName
+  ```
 
-1. On the **Disks** pane, notice **Encryption** is not enabled.
+Now, the OS disk isn't encrypted.
+
+  ```output
+    OsVolumeEncrypted          : NotEncrypted
+    DataVolumesEncrypted       : NoDiskFound
+    OsVolumeEncryptionSettings : Microsoft.Azure.Management.Compute.Models.DiskEncryptionSettings
+    ProgressMessage            : [2.2.0.36] Disable Encryption completed successfully
+  ```

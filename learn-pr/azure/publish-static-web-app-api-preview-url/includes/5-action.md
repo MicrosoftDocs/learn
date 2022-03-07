@@ -15,7 +15,7 @@ The folder _.github/workflows_ contains your GitHub Action file. The file contai
 ```yml
 app_location: 'angular-app' # App source code path
 api_location: 'api' # Api source code path - optional
-app_artifact_location: 'dist/angular-app' # Built app content directory - optional
+output_location: 'dist/angular-app' # Built app content directory - optional
 ```
 
 ::: zone-end
@@ -25,7 +25,7 @@ app_artifact_location: 'dist/angular-app' # Built app content directory - option
 ```yml
 app_location: 'react-app' # App source code path
 api_location: 'api' # Api source code path - optional
-app_artifact_location: 'build' # Built app content directory - optional
+output_location: 'build' # Built app content directory - optional
 ```
 
 ::: zone-end
@@ -35,7 +35,7 @@ app_artifact_location: 'build' # Built app content directory - optional
 ```yml
 app_location: 'svelte-app' # App source code path
 api_location: 'api' # Api source code path - optional
-app_artifact_location: 'public' # Built app content directory - optional
+output_location: 'public' # Built app content directory - optional
 ```
 
 ::: zone-end
@@ -45,7 +45,7 @@ app_artifact_location: 'public' # Built app content directory - optional
 ```yml
 app_location: 'vue-app' # App source code path
 api_location: 'api' # Api source code path - optional
-app_artifact_location: 'dist' # Built app content directory - optional
+output_location: 'dist' # Built app content directory - optional
 ```
 
 ::: zone-end

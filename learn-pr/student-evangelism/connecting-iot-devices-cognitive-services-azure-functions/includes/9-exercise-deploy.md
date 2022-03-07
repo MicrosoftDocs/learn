@@ -84,7 +84,7 @@ In the IoT Workbench Examples page, find DevKit Translator and click Open Sample
 
 Click F1 to open the command palette, type, and select Arduino: Board Manager. Search for AZ3166 and install it.
 
-![An illustration is showing how to select device board using arduino extension](../media/select-board.png)
+![An illustration is showing how to select device board using arduino extension.](../media/select-board.png)
 
 **Install Serial Port: ST-Link drivers**
 
@@ -115,7 +115,7 @@ In Visual Studio Code, click F1, type, and select Azure IoT Device Workbench: Pr
 
 Follow the steps to finish the provisioning of Azure IoT Hub and Azure Functions.
 
-![An illustration is showing how to provision iot services](../media/provision-azure-services-2.png)
+![An illustration is showing how to provision iot services.](../media/provision-azure-services-2.png)
 
 Take a note of the Azure IoT Hub device name you created.
 
@@ -162,7 +162,7 @@ Paste the URL into **azure_config.h** file.
 
 In the bottom-right status bar, check the MXCHIP AZ3166 is shown as a selected board, and serial port with STMicroelectronics is used.
 
-![An illustration is showing how to select serial port](../media/select-serial-port.png) 
+![An illustration is showing how to select serial port.](../media/select-serial-port.png) 
 
 Click F1, type, and select Azure IoT Device Workbench: Configure Device Settings... > Config Device Connection String. Select IoT Hub Device Connection String to configure it to the DevKit.
 

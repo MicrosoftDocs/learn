@@ -8,7 +8,7 @@ metadata:
   author: bamurtaugh
   ms.author: brmurtau
   ms.topic: interactive-tutorial
-  ms.prod: learning
+  ms.prod: learning-vs-code
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

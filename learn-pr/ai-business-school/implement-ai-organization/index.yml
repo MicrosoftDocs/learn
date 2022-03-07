@@ -2,7 +2,7 @@
 uid: learn-wwl.implement-ai-organization
 metadata:
   title: Implement AI in your organization
-  description: Learn enterprise AI management with our free open online course, including machine learning.
+  description: Learn enterprise AI management with our free open online course, including scaling AI.
   ms.date: 06/02/2020
   author: RWortmanMorris
   ms.author: rawortma
@@ -31,6 +31,8 @@ units:
 - learn-wwl.implement-ai-organization.introduction
 - learn-wwl.implement-ai-organization.manage-innovation
 - learn-wwl.implement-ai-organization.manage-innovation-video
+- learn-wwl.implement-ai-organization.ai-at-scale
+- learn-wwl.implement-ai-organization.ai-at-scale-video
 - learn-wwl.implement-ai-organization.ai-economics
 - learn-wwl.implement-ai-organization.ai-organizational-models
 - learn-wwl.implement-ai-organization.knowledge-check

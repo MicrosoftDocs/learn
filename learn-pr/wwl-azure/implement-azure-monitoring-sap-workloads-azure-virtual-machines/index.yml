@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms
+metadata:
+  title: Implement Azure Monitoring for SAP workloads on Azure VMs
+  description: "Implement Azure Monitoring for SAP workloads on Azure VMs"
+  ms.date: 03/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement Azure Monitoring for SAP workloads on Azure VMs
+summary: In this module, you will learn to select and configure monitoring for SAP on Azure, as well as navigate the Log Analytics interface in Azure Monitor.
+abstract: |
+  In this module, you will:
+  - Select the appropriate monitoring solution.
+  - Evaluate Azure Monitor logs and Azure Monitor for VMs.
+  - Configure a Log Analytics workspace.
+  - Navigate the Log Analytics interface in Azure Monitor.
+prerequisites: |
+  Knowledge of Azure virtual machine creation, administration, and maintenance. Basic knowledge of operational concepts, such as monitoring, logging, and alerts. Familiarity with querying datasets to filter and extract information
+iconUrl: /learn/achievements/azure-monitoring-sap-workloads.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.introduction
+- learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.azure-options-for-monitoring
+- learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.monitoring-sap-azure-case-study
+- learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.azure-monitor-solutions-concepts
+- learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.using-log-analytics
+- learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.knowledge-check
+- learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.summary
+badge:
+  uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.badge

@@ -6,9 +6,10 @@ metadata:
   description: Introduction
   author: softchris
   ms.author: chnoring
-  ms.date: 10/12/2020
+  ms.date: 05/21/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

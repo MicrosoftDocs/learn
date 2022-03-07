@@ -1,19 +1,19 @@
-Cost management is often the first discipline that customers choose to mature in any governance engagement. This unit will outline the outcomes, tools, processes, and a reference implementation to mature your cost discipline.
+Cost management often is the first discipline that customers choose to mature in any governance engagement. This unit outlines the outcomes, tools, processes, and a reference implementation to mature your cost discipline.
 
-## Discipline objective
+## Objective
 
-The objective of Cost Management is to build confidence in your ability to control costs and respond to the following triggers by:
+The Cost Management discipline builds confidence in your ability to control costs and respond to the following triggers:
 
-- Addressing concerns about budgets.
-- Defining cost allocation across business units.
-- Implementing cost guardrails.
-- Analyzing workload costs.
-- Applying operational best practices across your portfolio.
-- Creating accountability for cost best practices with each workload team.
+- Address concerns about budgets.
+- Define cost allocation across business units.
+- Implement cost guardrails.
+- Analyze workload costs.
+- Apply operational best practices across your portfolio.
+- Create accountability for cost best practices with each workload team.
 
 ## Cost management best practices
 
-The objective of this discipline is to apply these Cost Management best practices:
+The objective of this discipline is to apply these cost management best practices:
 
 - Align teams and accountability.
 - Manage best practices centrally.
@@ -21,68 +21,69 @@ The objective of this discipline is to apply these Cost Management best practice
 
 ### Best practices by team and accountability
 
-Cost Management across the enterprise is a function of cloud governance and cloud operations. All Cost Management decisions change the assets that support a workload. When those changes impact a workload's architecture, additional considerations are required to minimize the impact on end users and business functions. It's likely for the cloud adoption team who configured or developed that workload to be accountable for following through with those changes.
+Cost management across the enterprise is a function of cloud governance and cloud operations. All cost management decisions change the assets that support a workload. When those changes affect a workload's architecture, additional considerations are required to minimize the impact on users and business functions. It's likely that the cloud adoption team that configured or developed that workload will be accountable for following through with those changes.
 
-- **Tagging is critical to all governance.** Ensure all workloads and resources follow [proper naming and tagging conventions](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) and [enforce tagging conventions using Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
-- **Identify right size opportunities.** Review your current resource utilization and performance requirements across the environment.
-- **Resize:** Modify each resource to use the smallest instance or SKU that can support the performance requirements of each resource.
-- **Horizontal over vertical scale.** Using multiple small instances can allow for an easier scaling path that a single larger instance. This allows for scale automation, which creates cost optimization.
+- **Tagging is critical to all governance**: Ensure that all workloads and resources follow [proper naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) and that you [enforce tagging conventions by using Azure Policy](/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
+- **Identify right-size opportunities**: Review your current resource utilization and performance requirements across the environment.
+- **Resize**. Modify each resource to use the smallest instance or SKU that can support the performance requirements of each resource.
+- **Horizontal versus vertical scale**: Using multiple small instances can give you an easier scaling path than a single larger instance. Using multiple smaller instances supports scale automation, which creates cost optimization.
 
-## Operational cost management best practices
+### Operational cost management best practices
 
-The following best practices are typically completed by a member of the cloud governance or cloud operations team, in accordance with patching and other scheduled maintenance processes. These best practices map to actionable guidance later in this article.
+The following best practices typically are achieved by a member of the cloud governance or cloud operations team in accordance with patching and other scheduled maintenance processes. These best practices map to actionable guidance we describe later in this unit.
 
-- **Tagging is critical to all governance:** Ensure all workloads and resources follow [proper naming and tagging conventions](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) and [enforce tagging conventions using Azure Policy](https://docs.microsoft.com/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
-- **Identify right size opportunities:** Review your current resource utilization and performance requirements across the environment to identify resources that have remained underutilized for more than 90 days.
-- **Right-size provisioned SKUs:** Modify underutilized resource to use the smallest instance or SKU that can support the performance requirements of each resource.
-- **Auto-shutdown for virtual machines (VM):** When a VM isn't used constantly, consider automated shutdown. The VM won't be deleted or decommissioned, but it will stop consuming compute and memory costs until it's turned back on.
-- **Auto-shutdown all nonproduction assets:** If a VM is part of a nonproduction environment, specifically development environments, establish an auto-shutdown policy to reduce unused costs. Whenever possible, use Azure DevTest Labs as a self-service option to help developers hold themselves accountable for cost.
-- **Shut down and decommission unused resources:** Yes, we said it twice. If a resource hasn't been used in more than 90 days and doesn't have a clear uptime requirement, turn it off. More importantly, if a machine has been stopped or shut down for more than 90 days, then deprovision and delete that resource. Validate that any data retention policies are met through backup or other mechanisms.
-- **Clean up orphaned disks:** Delete unused storage, especially VM storage that is no longer attached to any VMs.
-- **Right-size redundancy:** If the resource doesn't require a high degree of redundancy, remove geo-redundant storage.
-- **Adjust autoscale parameters:** Operational monitoring is likely to uncover usage patterns for various assets. When those usage patterns map to the parameters used to drive autoscale behaviors, it's common for the operations team to adjust autoscale parameters to meet seasonal demand or changes to budget allocations. Review workload cost management best practices for important precautions.
+- **Tagging is critical to all governance**: Ensure that all workloads and resources follow [proper naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) and that you [enforce tagging conventions by using Azure Policy](/azure/governance/policy/tutorials/govern-tags?azure-portal=true).
+- **Identify right-size opportunities**: Review your current resource utilization and performance requirements across the environment to identify resources that have remained underutilized for more than 90 days.
+- **Right-size provisioned SKUs**: Modify underutilized resource to use the smallest instance or SKU that can support the performance requirements of each resource.
+- **Autoshutdown for virtual machines (VMs)**: When a VM isn't used constantly, consider automated shutdown. The VM won't be deleted or decommissioned, but it will stop consuming compute and memory costs until it's turned back on.
+- **Autoshutdown for all nonproduction assets**: If a VM is part of a nonproduction environment, specifically in a development environment, establish an autoshutdown policy to reduce the cost of non-use. Whenever possible, use Azure DevTest Labs as a self-service option to help developers hold themselves accountable for cost.
+- **Shut down and decommission unused resources**: Yes, we said it twice. If a resource hasn't been used in more than 90 days and doesn't have a clear uptime requirement, turn it off. More importantly, if a machine has been stopped or shut down for more than 90 days, deprovision and delete that resource. Validate that any data retention policies are met through backup or other mechanisms.
+- **Clean up orphaned disks**: Delete unused storage, especially VM storage that's no longer attached to a VM.
+- **Right-size redundancy**: If the resource doesn't require a high degree of redundancy, remove geo-redundant storage.
+- **Adjust autoscale parameters**: Operational monitoring likely will uncover usage patterns for various assets. When those usage patterns map to the parameters that are used to drive autoscale behaviors, it's common for the operations team to adjust autoscale parameters to meet seasonal demand or changes to budget allocations. Review workload cost management best practices for important precautions.
 
-## Workload cost management best practices
+### Workload cost management best practices
 
-Before making architectural changes, consult the technical lead for the workload. Facilitate a review of the workload using the [Microsoft Azure Well-Architected Framework Overview](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true) and [Introduction](https://docs.microsoft.com/learn/modules/azure-well-architected-introduction?azure-portal=true) to guide decisions regarding the following architectural changes:
+Before making architectural changes, consult the technical lead for the workload. Facilitate a review of the workload by using the [Azure Well-Architected Framework overview](/azure/architecture/framework/?azure-portal=true) and [introduction](/learn/modules/azure-well-architected-introduction/?azure-portal=true) to guide decisions about the following architectural changes:
 
-- **Azure App Service:** Verify production requirements for any Premium tier App Service plans. Without an understanding of the business requirements for a workload and the underlying assets configuration, it's difficult to determine if a Premium tier plan is required.
-- **Horizontal over vertical scale:** Using multiple small instances can allow for an easier scaling path that a single larger instance. This allows for scale automation, which creates cost optimization. Before a workload can scale horizontally, the technical team must verify that the application is idempotent. Achieving horizontal scale may first require changes to the code and configuration of various layers of the application.
-- **Autoscale:** Enable autoscale on all app services to allow for a burstable number of smaller VMs. Enabling autoscale has the same idempotent requirement, which requires an understanding of the workload architecture. The workload and supporting assets must be approved for horizontal scaling and autoscaling by the adoption team, prior to any operational changes.
-- **Implement serverless technologies:** VM workloads are often migrated "as is" to avoid downtime. Often VMs may host tasks that are intermittent, taking a short period to run, or alternatively many hours. For example, VMs that run scheduled tasks such as Windows task scheduler or PowerShell scripts. When these tasks aren't running, you're nevertheless absorbing VM and disk storage costs. After migration, consider rearchitecting layers of the workload to serverless technologies such as Azure Functions or Azure Batch jobs.
+- **Azure App Service**: Verify production requirements for any Premium tier App Service plan. Without an understanding of the business requirements for a workload and the underlying assets configuration, it's difficult to determine whether a Premium tier plan is required.
+- **Horizontal versus vertical scale**: Using multiple small instances can give you an easier scaling path than a single larger instance. Using small instances supports scale automation, which creates cost optimization. Before a workload can scale horizontally, the technical team must verify that the application is idempotent. Achieving horizontal scale might first require changes to the code and configuring various layers of the application.
+- **Autoscale**: Enable autoscale on all app services for a burstable number of smaller VMs. Enabling autoscale has the same idempotent requirement, which requires an understanding of the workload architecture. The workload and supporting assets must be approved for horizontal scaling and autoscaling by the cloud adoption team before any operational changes are made.
+- **Implement serverless technologies**: VM workloads often are migrated as-is to avoid downtime. Often, VMs host tasks that are intermittent, tasks that take a short period to run, or tasks that run for many hours. Examples are VMs that run scheduled tasks like Windows task scheduler or PowerShell scripts. When these tasks aren't running, you're still paying for the VMs and disk storage. After migration, consider rearchitecting layers of the workload as serverless technologies, like by using Azure Functions or Azure Batch jobs.
 
-## The Cost Management process
+## Cost management process
 
-The above best practices are actionable, but how and when do you apply them? Cost Management is a continuous discipline that involves and process with multiple roles.
+The best practices described here are actionable, but how and when do you apply them? The Cost Management discipline is a continuous effort that involves multiple processes and roles.
 
-:::image type="content" source="../media/cost-management-process.png" alt-text="The Cost Management discipline as a process." border="false":::
-_Figure 1: The Cost Management discipline as a process._
+:::image type="content" source="../media/cost-management-process.png" alt-text="Diagram of the Cost Management discipline as a continuous process." border="false":::
 
-Work with the central operations and workload teams to ensure proper ownership of each Cost Management best practice in Figure 1. Based on how you manage workloads in your environment, some of the best practices might move between teams. While select organizations place all cost management burden on central IT and without accountability for the workload teams, other organizations place all of the cost management burden on the workload team; here, central IT serves only as a reporting and budget management function. Most organizations fall somewhere between these two extremes.
+*Figure 1: The Cost Management discipline as a continuous process.*
 
-Once you align roles, establish recurring processes to meet and hold each other accountable for this important recurring task.
+Work with the central operations and workload teams to ensure proper ownership of each Cost Management discipline best practice that's shown in Figure 1 (optimization, visibility, accountability). Depending on how you manage workloads in your environment, some best practices might move between teams. Although some organizations place all the cost management burden on central IT and neglect accountability for the workload team, other organizations place all the cost management burden on the workload team. Most organizations fall somewhere between these two extremes. At Tailwind Traders, central IT serves only a reporting and budget management function.
 
-## Azure Cost Management
+After you align roles, establish recurring processes to meet and hold each other accountable for this important recurring task.
 
-Azure cost management is the default tool in Azure to bring all of the data together to manage your cost strategy.
+## Azure Cost Management + Billing
 
-Azure Cost Management brings together resource organization, Azure Advisor alerts, and your governance foundation to meet Cost Management needs.
+Azure Cost Management + Billing is your default tool in Azure to bring together all the data for managing your cost strategy.
 
-## Exercise: Create a budget
+Azure Cost Management + Billing brings together resource organization, Azure Advisor alerts, and your governance foundation to meet your cost management needs.
 
-To get started with Azure Cost Management, create your first budget using the steps in the [Azure Cost Management tutorial on creating a budget](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?azure-portal=true).
+### Exercise: Create a budget
 
-## Exercise: Find opportunities to optimize
+To get started with Azure Cost Management + Billing, create your first budget with the tutorial [Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?azure-portal=true).
 
-If you have existing deployments in your Azure environment, you will likely have recommendations that could impact your overall spend. Complete the Azure Cost Management tutorial: [Act on recommendations](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true) to view Advisor recommendations and other recommendations that could reduce your costs. Those recommendations will identify opportunities to apply the operational best practices listed above.
+### Exercise: Find opportunities to optimize
 
-## Exercise: Limit cost risks with Azure Policy
+If you have existing deployments in your Azure environment, you likely have recommendations in the Azure portal that might affect your overall spending. Complete the tutorial [Optimize costs from recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true) to view recommendations from Azure Adviser and other recommendations that might reduce your costs. The recommendations identify opportunities to apply the operational best practices described in this unit.
 
-To proactively limit unexpected costs, you can use Azure Policy to create guardrails that impact end users' ability to overspend. The two most common costs risks come from misunderstood decisions:
+### Exercise: Limit cost risks by using Azure Policy
 
-- Azure regions: Asset costs vary between Azure regions. When possible, you can use Azure Policy to limit deploying resources across regions.
-- Azure SKUs: The SKU selected during deployment directly impact costs. Minimizing the use of expensive resources in self-service or workload-owned subscriptions can limit surprise budget overrun.
+To proactively limit unexpected costs, you can use Azure Policy to create guardrails that affect the ability of any role to overspend. The two most common cost risks come from misunderstood decisions:
 
-Add a policy to [Deny VM SKUs](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fcccc23c7-8427-4f53-ad12-b6a63eb452b3?azure-portal=true) in your nonproduction environments to see this type of cost control policy in action.
+- **Azure regions**: Asset costs vary between Azure regions. When possible, you can use Azure Policy to limit deploying resources across regions.
+- **Azure SKUs**: The SKU that's selected during deployment directly affects costs. Minimizing the use of expensive resources in self-service or workload-owned subscriptions can limit surprise budget overrun.
 
-Add a policy to specify [Allowed locations](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fe56962a6-4747-49cd-b67b-bf8b01975c4c?azure-portal=true) for specific subscriptions to avoid cost drift related to regional pricing.
+Add a policy to [deny VM SKUs](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fcccc23c7-8427-4f53-ad12-b6a63eb452b3?azure-portal=true) in your nonproduction environments to see this type of cost control policy in action.
+
+Add a policy to specify [allowed locations](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2Fe56962a6-4747-49cd-b67b-bf8b01975c4c?azure-portal=true) for specific subscriptions to avoid cost drift related to regional pricing.

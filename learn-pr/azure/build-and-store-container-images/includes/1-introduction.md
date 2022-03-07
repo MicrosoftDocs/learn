@@ -6,7 +6,7 @@ In addition to storing container images, Azure Container Registry Tasks can buil
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Deploy an Azure container registry
 - Build a container image using Azure Container Registry Tasks

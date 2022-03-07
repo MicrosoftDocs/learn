@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.predictive-maintenance-model-builder.knowledge-check-model-builder
+title: Knowledge check - Model Builder
+metadata:
+  unitType: knowledge_check
+  title: "Knowledge check - Model Builder"
+  description: "Review your knowledge of Model Builder."
+  ms.date: 10/25/2021
+  author: luisquintanilla
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+  ms.custom: team=nextgen
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What is Model Builder?"
+    choices:
+    - content: "A database scaffolding tool"
+      isCorrect: false
+      explanation: "Model Builder helps you build machine learning models, not database models."
+    - content: "A graphical Visual Studio extension to train and deploy custom machine learning models with ML.NET"
+      isCorrect: true
+      explanation: "Correct! Model Builder guides you through the process of adding machine learning models to your .NET apps in Visual Studio."
+    - content: "A graphical Visual Studio Code extension to build, train, and deploy custom machine learning models with ML.NET"
+      isCorrect: false
+      explanation: "Model Builder is a Visual Studio extension, not a Visual Studio Code extension."
+  - content: "What does it mean to train a machine learning model?"
+    choices:
+    - content: "Applying algorithms to historical data in order to create an artifact or model that captures underlying patterns and can be used to make predictions"
+      isCorrect: true
+      explanation: "Correct! You train a machine learning model when you select a problem, collect data, and apply algorithms to that data in order to create a model."
+    - content: "Creating an exercise routine"
+      isCorrect: false
+      explanation: "Although training models is hard work, there's no exercise involved."
+    - content: "Making predictions by using new data"
+      isCorrect: false
+      explanation: "To make predictions, you first need to train a machine learning model."
+  - content: "What does it mean to consume a model?"
+    choices:
+    - content: "Applying algorithms to a dataset"
+      isCorrect: false
+      explanation: "Choosing algorithms and applying them to a dataset is part of model training."
+    - content: "Using a trained machine learning model to make predictions on new and unseen data"
+      isCorrect: true
+      explanation: "Correct! When you consume a model, it means you're using it to make predictions on new data."
+    - content: "Using all your compute resources"
+      isCorrect: false
+      explanation: "Although consuming a machine learning model uses compute resources, consumption in this case means using the model to make predictions."

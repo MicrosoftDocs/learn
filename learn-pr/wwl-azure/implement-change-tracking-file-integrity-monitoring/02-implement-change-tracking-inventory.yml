@@ -4,12 +4,14 @@ title: Implement Change Tracking and Inventory
 metadata:
   title: Implement Change Tracking and Inventory
   description: "Implement Change Tracking and Inventory"
-  ms.date: 08/14/2020
+  ms.date: 11/29/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/02-implement-change-tracking-inventory.md)]

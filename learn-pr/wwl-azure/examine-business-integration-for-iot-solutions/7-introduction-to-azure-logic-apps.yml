@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-business-integration-for-iot-solutions.get-started-azure-logic-apps
+title: Get started with Azure Logic Apps
+metadata:
+  title: Get started with Azure Logic Apps
+  description: "Get started with Azure Logic Apps"
+  ms.date: 12/23/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-introduction-to-azure-logic-apps.md)]

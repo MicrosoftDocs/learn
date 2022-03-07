@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-204-implement-api-management
+metadata:
+  title: 'AZ-204: Implement API Management'
+  description: 'AZ-204: Implement API Management'
+  ms.date: 01/17/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-204: Implement API Management'
+prerequisites: |
+  *   At least one year of experience developing scalable solutions through all phases of software development.
+  *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
+  *   If you are new to Azure, or cloud computing, it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
+summary: |
+  Learn how the API Management service functions, how to transform and secure APIs, and how to create a backend API.
+iconUrl: /learn/achievements/az-204-implement-api-management.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-api-management
+modules:
+- learn.wwl.explore-api-management
+trophy:
+  uid: learn.wwl.az-204-implement-api-management.trophy

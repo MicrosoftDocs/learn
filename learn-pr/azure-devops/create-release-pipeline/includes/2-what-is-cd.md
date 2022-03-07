@@ -95,7 +95,7 @@ The team leaves Andy and Mara to work out the details.
 
 ## How does continuous delivery compare to right-click publishing?
 
-Many development tools provide ways to publish your application directly to some target environment, such as Microsoft Internet Information Services (IIS) or Azure. For example, you can [Publish an ASP.NET Core app to Azure by using Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?azure-portal=true). This process is sometimes called *right-click publishing*.
+Many development tools provide ways to publish your application directly to some target environment, such as Microsoft Internet Information Services (IIS) or Azure. For example, you can [Publish an ASP.NET Core app to Azure by using Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?azure-portal=true). This process is sometimes called *right-click publishing*.
 
 Right-click publishing is a great way to quickly build a prototype. For example, you might right-click publish your application to Azure so that you can share a new idea with your team. But this technique has limitations.
 
@@ -105,7 +105,7 @@ In this short video, Abel Wang, Cloud Advocate at Microsoft, explains more.
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Why-should-or-shouldnt-I-just-right-click-and-publish-my-apps-to-Azure--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LEDS]
 
 ## How does continuous delivery compare to continuous deployment?
 
@@ -113,7 +113,7 @@ In the DevOps community, you might hear the terms _continuous delivery_ and _con
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-the-difference-between-Continuous-Delivery-and-Continuous-Deployment--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LEyh]
 
 ## What continuous delivery tools can I use?
 
@@ -138,7 +138,7 @@ My point is that there are many possibilities. Here's a short video where Abel t
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Can-I-use-DevOps-best-practices-to-get-my-code-deployed-in-Azure--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LLYQ]
 
 **Mara:** My vote is to stay with Azure Pipelines.
 

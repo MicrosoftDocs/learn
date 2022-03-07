@@ -19,7 +19,7 @@ You must have the following items to support the export process:
 
 The following diagram summarizes the export process:
 
-![Azure Export job flow](../media/3-azure-export-job-flow.png)
+![Azure Export job flow.](../media/3-azure-export-job-flow.png)
 
 To export data, you complete the following steps:
 
@@ -61,7 +61,7 @@ Before you import data to Azure Storage, you must have the following items:
   
 The following diagram summarizes the steps involved to import data:
 
-![Azure Import job flow](../media/3-azure-import-job-flow.png).
+![Azure Import job flow.](../media/3-azure-import-job-flow.png).
 
 To import data, complete the following steps:
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-canary-releases-dark-launching.explore-canary-releases
+title: Explore canary releases
+metadata:
+  title: Explore canary releases
+  description: "Explore canary releases"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-explore-canary-releases.md)]

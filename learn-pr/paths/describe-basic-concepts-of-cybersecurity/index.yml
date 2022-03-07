@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.describe-basic-concepts-of-cybersecurity
+metadata:
+  title: Describe the basic concepts of cybersecurity
+  description: Describe the basic concepts of cybersecurity
+  ms.date: 02/08/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe the basic concepts of cybersecurity
+prerequisites: |
+  None
+summary: |
+  Knowing the fundamentals of cybersecurity is a first step toward protecting against cyberthreats. In this learning path you will learn about cybersecurity concepts and ways to protect yourself and your business from cyberattacks.
+iconUrl: /learn/achievements/cybersecurity-basic-concepts.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+- student
+products:
+- azure
+- m365
+modules:
+- learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations
+- learn.wwl.describe-concepts-of-cryptography
+- learn.wwl.describe-authentication-authorization-cybersecurity
+- learn.wwl.describe-network-based-threats-mitigations
+- learn.wwl.describe-device-based-threats-security-controls
+- learn.wwl.describe-application-based-threats-security-controls
+trophy:
+  uid: learn.wwl.describe-basic-concepts-of-cybersecurity.trophy

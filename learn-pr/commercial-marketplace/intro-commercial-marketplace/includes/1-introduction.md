@@ -2,7 +2,7 @@ Imagine you’re working at an innovative technology company. One day, in a meet
 
 Coincidentally, you’ve recently read an industry blog post about Microsoft AppSource and Azure Marketplace, also known as the Microsoft commercial marketplace.
 
-You decide to do a little more research—let’s look at what Microsoft’s commercial marketplace is and how it can be used to accelerate your business.
+You decide to do a little more research let’s look at what Microsoft’s commercial marketplace is and how it can be used to accelerate your business.
 
 ## Learning objectives
 

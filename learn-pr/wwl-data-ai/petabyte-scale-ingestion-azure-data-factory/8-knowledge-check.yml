@@ -4,26 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/27/2020
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You want to start up a data platform service to execute as Spark job to ingest and process data and then shut down the service after the job is complete. What would be the best compute resource to use?"
-    choices:
-    - content: "On-demand HDInsight cluster."
-      isCorrect: true
-      explanation: "Correct. On-demand HDInsight cluster service to execute as Spark job to ingest and process data and then shut down the service after the job is complete."
-    - content: "HDInsight."
-      isCorrect: false
-      explanation: "Incorrect. Whilst HDInsight can be used to execute as Spark job to ingest and process data, it will not shut down after the job is complete."
-    - content: "Azure Databricks."
-      isCorrect: false
-      explanation: "Incorrect. Whilst Azure Databricks can be used to execute as Spark job to ingest and process data, it will not shut down after the job is complete."
   - content: "In Azure Data Factory authoring tool, where would you find the Copy data activity?"
     choices:
     - content: "Move & Transform"

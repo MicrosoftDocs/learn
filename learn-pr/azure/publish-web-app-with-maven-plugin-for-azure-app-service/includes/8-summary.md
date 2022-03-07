@@ -20,17 +20,17 @@ Now that you've learned how to use the Maven Plugin for Azure App Service, you'r
 
 The following links discuss additional information related to Java development on Azure:
 
-- [Azure for Java cloud developers](https://docs.microsoft.com/azure/java)
-- [Install the JDK for Azure and Azure Stack](https://docs.microsoft.com/azure/java/jdk/java-jdk-install)
+- [Azure for Java cloud developers](/azure/java)
+- [Install the JDK for Azure and Azure Stack](/azure/java/jdk/java-jdk-install)
 - [Tomcat project page](https://tomcat.apache.org/maven-plugin-2.2)
-- [Create an Azure service principal with Azure CLI](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest)
-- [Automation with service principals](https://docs.microsoft.com/azure/analysis-services/analysis-services-service-principal)
-- [az ad sp create-for-rbac](https://docs.microsoft.com/cli/azure/ad/sp#az-ad-sp-create-for-rbac)
+- [Create an Azure service principal with Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli)
+- [Automation with service principals](/azure/analysis-services/analysis-services-service-principal)
+- [az ad sp create-for-rbac](/cli/azure/ad/sp#az-ad-sp-create-for-rbac)
 
 These additional links provide a wealth of information about getting started with Apache Maven:
 
 - [Maven Getting Started Guide](https://maven.apache.org/guides/getting-started/)
 - [Introduction to the Build Lifecycle](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html)
-- [Maven Plugin for Azure App Service](https://docs.microsoft.com/java/api/overview/azure/maven/azure-webapp-maven-plugin/README)
+- [Maven Plugin for Azure App Service](https://github.com/Microsoft/azure-maven-plugins/blob/develop/azure-webapp-maven-plugin/README.md)
 - [Maven Central Repository listing for the Azure App Service Plugin](https://search.maven.org/artifact/com.microsoft.azure/azure-webapp-maven-plugin)
 - [Maven POM Reference](https://maven.apache.org/pom.html)

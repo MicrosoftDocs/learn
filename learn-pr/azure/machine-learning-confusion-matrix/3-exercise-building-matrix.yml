@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.evaluate-real-world-models.exercise-building-matrix
+title: Exercise – Building a confusion matrix
+metadata:
+  title: Exercise – Building a confusion matrix
+  description: Exercise unit about building a confusion matrix in machine learning
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+sandbox: true
+notebook: notebooks/8-3-exercise-build-matrix.ipynb

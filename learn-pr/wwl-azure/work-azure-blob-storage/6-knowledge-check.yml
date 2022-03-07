@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-azure-blob-storage.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/04/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following standard HTTP headers are supported for both containers and blobs when setting properties by using REST?"
+    choices:
+    - content: "Last-Modified"
+      isCorrect: true
+      explanation: "That's correct. Last-Modified is supported on both containers and blobs."
+    - content: "Content-Length"
+      isCorrect: false
+      explanation: "That's incorrect. Content-Length is only supported on blobs."
+    - content: "Origin"
+      isCorrect: false
+      explanation: "That's incorrect. Origin is only supported on blobs."
+  - content: "Which of the following classes of the Azure Storage client library for .NET allows you to manipulate both Azure Storage containers and their blobs?"
+    choices:
+    - content: "BlobClient"
+      isCorrect: false
+      explanation: "That's incorrect. The BlobClient class is limited to manipulating blobs."
+    - content: "BlobContainerClient"
+      isCorrect: true
+      explanation: "That's correct. The BlobContainerClient can be used to manipulate both containers and blobs."
+    - content: "BlobUriBuilder"
+      isCorrect: false
+      explanation: "That's incorrect. The BlobUriBuilder provides a way to modify the contents of a Uri instance to point to different Azure Storage resources like an account, container, or blob."

@@ -9,7 +9,6 @@ metadata:
   ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 content: |
   [!include[](includes/5-hed-executive-qa.md)] 

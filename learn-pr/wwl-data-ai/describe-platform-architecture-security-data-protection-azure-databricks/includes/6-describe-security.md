@@ -14,7 +14,7 @@ VNet peering is only required if using the standard deployment without VNet inje
 
 If you're looking to do specific network customizations, you could deploy Azure Databricks data plane resources in your own VNet. In this scenario, instead of using the managed VNet, which restricts you from making changes, you "bring your own" VNet where you have full control. Azure Databricks will still create the managed VNet, but it will not use it.
 
-Features enabled through [VNet injection](https://docs.microsoft.com/azure/databricks/administration-guide/cloud-configurations/azure/vnet-inject) include:
+Features enabled through [VNet injection](/azure/databricks/administration-guide/cloud-configurations/azure/vnet-inject) include:
 
 - On-Premises Data Access
 - Single-IP SNAT and Firewall-based filtering via custom routing
@@ -40,7 +40,7 @@ Your Azure Databricks deployment likely includes other Azure data services, such
 
 #### Azure Private Link
 
-Using Azure [Private Link](https://docs.microsoft.com/azure/private-link/private-link-overview) is currently the most secure way to access Azure data services from Azure Databricks. Private Link enables you to access Azure PaaS Services (for example, Azure Storage, Azure Cosmos DB, and SQL Database) and Azure hosted customer/partner services over a Private Endpoint in your virtual network. Traffic between your virtual network and the service traverses over the Microsoft network backbone, eliminating exposure from the public Internet. You can also create your own Private Link Service in your virtual network (VNet) and deliver it privately to your customers.
+Using Azure [Private Link](/azure/private-link/private-link-overview) is currently the most secure way to access Azure data services from Azure Databricks. Private Link enables you to access Azure PaaS Services (for example, Azure Storage, Azure Cosmos DB, and SQL Database) and Azure hosted customer/partner services over a Private Endpoint in your virtual network. Traffic between your virtual network and the service traverses over the Microsoft network backbone, eliminating exposure from the public Internet. You can also create your own Private Link Service in your virtual network (VNet) and deliver it privately to your customers.
 
 #### Azure VNet service endpoints
 
@@ -50,9 +50,9 @@ Read more about [securely accessing Azure data sources from Azure Databricks](ht
 
 ### Combining VNet injection and Private Link
 
-The following diagram shows how you may use Private Link in combination with VNet injection in a [hub and spoke topology](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) to prevent data exfiltration:
+The following diagram shows how you may use Private Link in combination with VNet injection in a [hub and spoke topology](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) to prevent data exfiltration:
 
-![VNet injection deployment.](../media/vnet-injection-deployment-private-link.png)
+![architecture diagram showing Private Net and VNet injection deployment.](../media/vnet-injection-deployment-private-link.png)
 
 1. Deploy Azure Databricks in a spoke virtual network using VNet injection.
 1. Set up Private Link endpoints for your Azure Data Services in a separate subnet within the Azure Databricks spoke virtual network.

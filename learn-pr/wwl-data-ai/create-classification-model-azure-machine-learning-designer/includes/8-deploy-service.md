@@ -1,11 +1,15 @@
 After you've created and tested an inference pipeline for real-time inferencing, you can publish it as a service for client applications to use.
 
-To publish a real-time inference pipeline as a service, you must deploy it to an Azure Kubernetes Service (AKS) cluster. In this exercise, you'll use the AKS inference cluster you created previously in this module.
+> [!NOTE]
+> In this exercise, you'll deploy the web service to an Azure Container Instance (ACI). This type of compute is created dynamically, and is useful for development and testing. For production, you should create an *inference cluster*, which provide an Azure Kubernetes Service (AKS) cluster that provides better scalability and security.
 
 ## Deploy a service
 
 1. View the **Predict Diabetes** inference pipeline you created in the previous unit.
-2. At the top right, select **Deploy**, and set up a new real-time endpoint named **predict-diabetes** on the inference cluster you created previously.
+2. At the top right, select **Deploy**, and deploy a new real-time endpoint, using the following settings:
+    -  **Name**: predict-diabetes
+    -  **Description**: Classify diabetes.
+    - **Compute type**: Azure Container Instance
 3. Wait for the web service to be deployed - this can take several minutes. The deployment status is shown at the top left of the designer interface.
 
 ## Test the service
@@ -20,7 +24,7 @@ Now you can test your deployed service from a client application - in this case,
 4. With the **Consume** page for the **predict-diabetes** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true). Then in the new tab, view the **Notebooks** page (under **Author**).
 5. In the **Notebooks** page, under **My files**, use the **&#128459;** button to create a new file with the following settings:
     - **File location**: Users/*your user name*
-    - **File name**: Test-Diabetes
+    - **File name**: Test-Diabetes.ipynb
     - **File type**: Notebook
     - **Overwrite if already exists**: Selected
 6. When the new notebook has been created, ensure that the compute instance you created previously is selected in the **Compute** box, and that it has a status of **Running**.
@@ -48,7 +52,7 @@ Now you can test your deployed service from a client application - in this case,
                         'SerumInsulin': 24,
                         'BMI': 27.36983156,
                         'DiabetesPedigree': 1.3504720469999998,
-                        'Age': 43,
+                        'Age': 43
                 },
             ],
         },

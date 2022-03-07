@@ -5,11 +5,10 @@ metadata:
   title: Move Azure storage blob using .NET Storage Client
   description: Move Azure storage blob using .NET Storage Client
   ms.date: 01/27/2020
-  author: patridge
-  ms.author: adpatrid
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
   [!include[](includes/7-move-blobs-using-net-storage-client.md)]

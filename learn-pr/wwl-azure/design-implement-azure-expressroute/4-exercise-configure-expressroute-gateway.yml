@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-azure-expressroute.exercise-configure-expressroute-gateway
+title: 'Exercise: configure an ExpressRoute gateway'
+metadata:
+  title: 'Exercise: configure an ExpressRoute gateway'
+  description: "Exercise: configure an ExpressRoute gateway"
+  ms.date: 02/14/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-exercise-configure-expressroute-gateway.md)]

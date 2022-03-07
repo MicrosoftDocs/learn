@@ -1,54 +1,59 @@
-Recall our original scenario - creating VMs to test our CRM software. When a new build is available, we want to spin up a new VM so we can test the full install experience from a clean image. Then when we are finished, we want to delete the VM.
+Recall our original scenario - creating VMs to test our CRM software. When a new build is available, we want to spin up a new VM so we can test the full install experience from a clean image. When we're finished, we want to delete the VM.
 
 Let's try the commands you would use to create a VM.
 
 ## Create a Linux VM with Azure PowerShell
 
-Since we are using the Azure sandbox, you won't have to create a Resource Group. Instead, use the Resource Group **<rgn>[sandbox resource group name]</rgn>**. In addition, be aware of the location restrictions.
+Because we're using the Azure sandbox, you won't have to create a resource group. Instead, use the resource group **<rgn>[sandbox resource group name]</rgn>**. In addition, be aware of the location restrictions.
 
 Let's create a new Azure VM with PowerShell.
 
 1. Use the `New-AzVm` cmdlet to create a VM.
-    - Use the Resource Group **<rgn>[sandbox resource group name]</rgn>**.
-    - Give the VM a name. Typically, you want to use something meaningful that identifies the purposes of the VM, location, and (if there is more than one) instance number. We'll use "testvm-eus-01" for "Test VM in East US, instance 1". Come up with your own name based on where you place the VM.
-    - Select a location close to you from the following list available in the Azure sandbox. Make sure to change the value in the below example command if you are using copy and paste.
+    - Use the resource group **<rgn>[sandbox resource group name]</rgn>**.
+    - Give the VM a name. Typically, you want to use something meaningful that identifies the purposes of the VM, location, and (if there's more than one) instance number. We'll use "testvm-eus-01" for "Test VM in East US, instance 1". Come up with your own name based on where you place the VM.
+    - Select a location close to you from the following list available in the Azure sandbox. Make sure to change the value in the following example command if you're using copy and paste.
 
         [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
     - Use "UbuntuLTS" for the image - this is Ubuntu Linux.
     - Use the `Get-Credential` cmdlet and feed the results into the `Credential` parameter.
       > [!IMPORTANT]
-      > Please see the [Linux VM FAQ](https://docs.microsoft.com/azure/virtual-machines/linux/faq#what-are-the-username-requirements-when-creating-a-vm) for username and password limitations. Passwords must be 12 - 123 characters in length and meet 3 out of the following 4 complexity requirements:
-      > - Have lower characters
-      > - Have upper characters
+      > See the [Linux VM FAQ](/azure/virtual-machines/linux/faq#what-are-the-username-requirements-when-creating-a-vm) for username and password limitations. Passwords must be 12 - 123 characters in length, and meet 3 out of the following 4 complexity requirements:
+
+      > - Have lowercase characters
+      > - Have uppercase characters
       > - Have a digit
       > - Have a special character (Regex match [\W_])
-    - Add the `-OpenPorts` parameter and pass "22" as the port - this will let us SSH into the machine.
+
+    - Add the `-OpenPorts` parameter, and pass "22" as the port. This port will let us SSH into the machine.
+    - Create a public IP address name. You'll use this name to create and find your static IP address to sign in to the machine.
 
     ```powershell
-    New-AzVm -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-eus-01" -Credential (Get-Credential) -Location "East US" -Image UbuntuLTS -OpenPorts 22
+    New-AzVm -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-eus-01" -Credential (Get-Credential) -Location "East US" -Image UbuntuLTS -OpenPorts 22 -PublicIpAddressName "testvm-01"
     ```
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-1. This will take a few minutes to complete. Once it does, you can query it and assign the VM object to a variable (`$vm`).
+1. Create a username and password, then press `Enter`. PowerShell will start creating your VM.
+
+1. The VM creation takes a few minutes to complete. After completion, you can query it, and assign the VM object to a variable (`$vm`).
 
     ```powershell
     $vm = (Get-AzVM -Name "testvm-eus-01" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>)
     ```
 
-1. Then query the value to dump out the information about the VM:
+1. Query the value to dump out the information about the VM.
 
     ```powershell
     $vm
     ```
 
-    You should see something like:
+    You should see something like the following.
 
     ```powershell
     ResourceGroupName : <rgn>[sandbox resource group name]</rgn>
-    Id                : /subscriptions/xxxxxxxx-xxxx-aaaa-bbbb-cccccccccccc/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/testvm-eus-01
-    VmId              : xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    Id                : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox resource group name]</rgn>/providers/Microsoft.Compute/virtualMachines/testvm-eus-01
+    VmId              : 00000000-0000-0000-0000-000000000000
     Name              : testvm-eus-01
     Type              : Microsoft.Compute/virtualMachines
     Location          : eastus
@@ -60,55 +65,61 @@ Let's create a new Azure VM with PowerShell.
     StorageProfile    : {ImageReference, OsDisk, DataDisks}
     ```
 
-1. You can reach into complex objects through a dot (".") syntax. For example, to see the properties in the `VMSize` object associated with the HardwareProfile section you can type:
+1. You can reach into complex objects through a dot (".") notation. For example, to see the properties in the `VMSize` object associated with the HardwareProfile section, run the following command.
 
     ```powershell
     $vm.HardwareProfile
     ```
 
-1. Or to get information on one of the disks:
+1. Or, to get information on one of the disks, run the following command.
 
     ```powershell
     $vm.StorageProfile.OsDisk
     ```
 
-1. You can even pass the VM object into other cmdlets. For example, this will retrieve the public IP address of your VM:
+1. You can even pass the VM object into other cmdlets. For example, running the following command will show you all available sizes for your VM.
 
     ```powershell
-    $vm | Get-AzPublicIpAddress
+    $vm | Get-AzVMSize
     ```
 
-1. With the IP address, you can connect to the VM with SSH. For example, if you used the username "bob", and the IP address is "205.22.16.5", then this command would connect to the Linux machine:
+1. Now, run the following command to get your public IP address.
+
+    ```powershell
+    Get-AzPublicIpAddress -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-01"
+    ```
+
+1. With the IP address, you can connect to the VM with SSH. For example, if you used the username "bob", and the IP address is "205.22.16.5", running this command would connect to the Linux machine.
 
     ```powershell
     ssh bob@205.22.16.5
     ```
 
-    Go ahead and log out by typing `exit`.
+    Log out by entering `exit`.
 
 ## Delete a VM
 
-Just to try out some more commands, let's delete the VM. We'll shut it down first.
+To try out some more commands, let's delete the VM. We'll shut it down first.
 
 ```powershell
-Stop-AzVM -Name $vm.Name -ResourceGroup $vm.ResourceGroupName
+Stop-AzVM -Name $vm.Name -ResourceGroupName $vm.ResourceGroupName
 ```
 
-Now, let's delete the VM with the `Remove-AzVM` cmdlet:
+Now, let's delete the VM by running the `Remove-AzVM` cmdlet.
 
 ```powershell
-Remove-AzVM -Name $vm.Name -ResourceGroup $vm.ResourceGroupName
+Remove-AzVM -Name $vm.Name -ResourceGroupName $vm.ResourceGroupName
 ```
 
-Try this command to list all the resources in your resource group:
+Run this command to list all the resources in your resource group.
 
 ```powershell
-Get-AzResource -ResourceGroupName $vm.ResourceGroupName | ft
+Get-AzResource -ResourceGroupName $vm.ResourceGroupName | Format-Table
 ```
 
-You should see a bunch of resources (disks, virtual networks, etc.) that all still exist. 
+You should see a bunch of resources (disks, virtual networks, and so on) that all still exist.
 
-```output
+```Output
 Microsoft.Compute/disks
 Microsoft.Network/networkInterfaces
 Microsoft.Network/networkSecurityGroups
@@ -116,15 +127,15 @@ Microsoft.Network/publicIPAddresses
 Microsoft.Network/virtualNetworks
 ```
 
-This is because the `Remove-AzVM` command _just deletes the VM_. It doesn't clean up any of the other resources! At this point, we'd likely just delete the Resource Group itself and be done with it. However, let's run through the exercise to clean it up manually. You should see a pattern in the commands.
+The `Remove-AzVM` command _just deletes the VM_. It doesn't clean up any of the other resources. At this point, we'd likely just delete the resource group itself, and be done with it. However, let's run through the exercise to clean it up manually. You should see a pattern in the commands.
 
-1. Delete the Network Interface.
+1. Delete the network interface.
 
     ```powershell
     $vm | Remove-AzNetworkInterface –Force
     ```
 
-1. Delete the managed OS disks and storage account
+1. Delete the managed OS disks and storage account.
 
     ```powershell
     Get-AzDisk -ResourceGroupName $vm.ResourceGroupName -DiskName $vm.StorageProfile.OSDisk.Name | Remove-AzDisk -Force
@@ -133,19 +144,19 @@ This is because the `Remove-AzVM` command _just deletes the VM_. It doesn't clea
 1. Next, delete the virtual network.
 
     ```powershell
-    Get-AzVirtualNetwork -ResourceGroup $vm.ResourceGroupName | Remove-AzVirtualNetwork -Force
+    Get-AzVirtualNetwork -ResourceGroupName $vm.ResourceGroupName | Remove-AzVirtualNetwork -Force
     ```
 
 1. Delete the network security group.
 
     ```powershell
-    Get-AzNetworkSecurityGroup -ResourceGroup $vm.ResourceGroupName | Remove-AzNetworkSecurityGroup -Force
+    Get-AzNetworkSecurityGroup -ResourceGroupName $vm.ResourceGroupName | Remove-AzNetworkSecurityGroup -Force
     ```
 
-1. And finally, the public IP address.
+1. And finally, delete the public IP address.
 
     ```powershell
-    Get-AzPublicIpAddress -ResourceGroup $vm.ResourceGroupName | Remove-AzPublicIpAddress -Force
+    Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName | Remove-AzPublicIpAddress -Force
     ```
 
-We should have caught all the created resources; check the resource group just to be sure. We performed many manual commands here but a better approach would have been to write a _script_ so we could reuse this logic later to create or delete a VM. Let's look at scripting with PowerShell.
+We should have caught all the created resources. Check the resource group just to be sure. We performed many manual commands here, but a better approach would have been to write a _script_. Then we could reuse this logic later to create or delete a VM. Let's look at scripting with PowerShell.

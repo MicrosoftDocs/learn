@@ -16,7 +16,7 @@ First, let's sketch out what the app will look like when we're done. It can help
 
 Here's the rough design drawing:
 
-![Application screenshot](../media/weather.png)
+![Application screenshot.](../media/weather.png)
 
 Our app will:
 
@@ -30,23 +30,23 @@ Our app will:
 Now that we've determined these details, we're ready to use the Windows Template Studio wizard to create our project.
 
 1. To open the Windows Template Studio wizard, create a project in Visual Studio by selecting **File** > **New**  > **Project**. You'll find Windows Template Studio under **Visual C#** as **Windows Template Studio (Universal Windows)**. 
-    ![Creating a project](../media/wts1.png)
+    ![Creating a project.](../media/wts1.png)
 1. Name your app **Weather**, and start the wizard by selecting **OK**.
 1. The Windows Template Studio wizard will open. (It may need to update its templates first.) You'll see this page:
-     ![Wizard page](../media/wts2.png)
+     ![Wizard page.](../media/wts2.png)
 1. Start by selecting a **Project type**. Make sure **Navigation Pane** is selected.
 1. Skip over **Design pattern**. (The default setting, **Code behind**, is fine.)
 1. Select **Pages**. This is where things get interesting. Each of these page types can be added to your app. The page name and order can changed in the panel to the right. You'll see that a blank page called **Main** is added by default. We'll draw our weather symbols on this page, so change the name to **Forecast**.
-      ![The Forecast page](../media/wts3.png)
+      ![The Forecast page.](../media/wts3.png)
 1. Now add a **Map** page, a **Chart** page, and a **Settings** page. When you're done, your project should look like this one:
-       ![Adding more pages](../media/wts4.png)
+       ![Adding more pages.](../media/wts4.png)
 1. You can add some more advanced Windows 10 features on the **Features** page. For now, we'll add **Toast Notifications**.
-      ![Adding toast notifications](../media/wtstoast.png)
+      ![Adding toast notifications.](../media/wtstoast.png)
 1. We're done! Select **Create** to generate your project.
 
 Now that your project's code is created, you can select **Run** or the F5 key to build and run the project.
 
-![Running the project](../media/wts5.png)
+![Running the project.](../media/wts5.png)
 
 You'll see that you already have quite an impressive app working. All you need to do is add the functionality. Easy!
 

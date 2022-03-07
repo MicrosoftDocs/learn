@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.start-career-in-tech
+metadata:
+  title: Start in tech as an intern
+  description: A great way to start in tech by landing a position as an intern. But how do you that? To get there, you need to consider things like, crafting a resume and passing an intern interview. Once an intern, you want to make sure that position turns into a full-time position in tech and a career in tech.
+  ms.date: 08/24/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Start in tech as an intern
+summary: |
+  A great way to start in tech is by landing a position as an intern. But how do you that? To get there, you need to consider things like, crafting a resume and passing an intern interview. Once an intern, you want to make sure that position turns into a full-time position in tech.
+
+  In this Learning path you'll learn how to:
+
+  - Build your resume.
+  - Interview for your internship position.
+  - Turn your internship into a full-time position. 
+prerequisites: |
+  - None
+iconUrl: /learn/achievements/start-career-in-tech.svg
+
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- vs
+- vs-code
+video:
+  title: "Start in tech as an intern"
+  url: https://www.microsoft.com/videoplayer/embed/RWNriB
+modules:
+- learn.career-get-noticed
+- learn.career-interview
+- learn.career-growth
+trophy:
+  uid: learn.start-career-in-tech.trophy

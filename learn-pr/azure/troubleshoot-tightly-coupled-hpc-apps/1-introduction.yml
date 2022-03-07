@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 03/01/2021
+  author: garvct
+  ms.author: cogarvey
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

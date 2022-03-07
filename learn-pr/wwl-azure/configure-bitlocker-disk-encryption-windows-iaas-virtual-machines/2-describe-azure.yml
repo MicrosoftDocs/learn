@@ -4,12 +4,13 @@ title: Describe Azure Disk Encryption and server-side encryption
 metadata:
   title: Describe Azure Disk Encryption and server-side encryption
   description: "Describe Azure Disk Encryption and server-side encryption"
-  ms.date: 10/15/2020
+  ms.date: 01/05/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/2-describe-azure.md)]

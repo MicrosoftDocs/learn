@@ -2,8 +2,8 @@
 uid: learn.wwl.migrate-sql-workloads-to-azure
 metadata:
   title: Migrate SQL workloads to Azure
-  description: Migrate SQL workloads to Azure Learn
-  ms.date: 07/16/2020
+  description: Migrate SQL workloads to Azure
+  ms.date: 01/18/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -31,7 +31,7 @@ products:
 - azure-virtual-machines
 - sql-server
 modules:
-- learn-sqlserver.sql-server-discovery-using-map
+- learn.wwl.introduction-data-platform-modernization
 - learn-sqlserver.assess-convert-sql-server-databases-using-dma
 - learn-sqlserver.test-optimize-sql-server-databases-using-dea
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines

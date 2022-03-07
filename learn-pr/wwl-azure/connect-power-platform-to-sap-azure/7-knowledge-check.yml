@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-power-platform-to-sap-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/12/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which can be used to connect a Windows Jump box to SAP HANA running in Azure hosted VMs?"
+    choices:
+    - content: "On-premises data gateway"
+      isCorrect: true
+      explanation: "That is correct. The On-premises data gateway is used to connect to an SAP instance on-premises or in Azure."
+    - content: "Azure Windows Server data gateway"
+      isCorrect: false
+      explanation: "Incorrect. On-premises data gateway is used to connect to SAP HANA running on Azure VMs."
+    - content: "Power BI Service Live Connection"
+      isCorrect: false
+      explanation: "Incorrect. On-premises data gateway is used to connect to SAP HANA running on Azure VMs."
+  - content: "Which is the Power Platform user authentication provider?"
+    choices:
+    - content: "Azure Active Directory (AAD)"
+      isCorrect: true
+      explanation: "That is correct. Power Platform Authentication is AAD."
+    - content: "Windows Active Directory for Power Platform"
+      isCorrect: false
+      explanation: "Incorrect. Power Platform Authentication is AAD."
+    - content: "single sign-on"
+      isCorrect: false
+      explanation: "Incorrect. Power Platform Authentication is AAD."
+  - content: "Which best describes the connection mode support by the Power BI Connector for SAP HANA?"
+    choices:
+    - content: "Raw Text Data connection mode"
+      isCorrect: false
+      explanation: "Incorrect. Power BI supports both Relational and Multidimension connection modes."
+    - content: "Relational Modes (read-only)"
+      isCorrect: false
+      explanation: "Incorrect. Power BI supports both Relational and Multidimension connection modes."
+    - content: "Relational and Multidimension connection mode"
+      isCorrect: true
+      explanation: "That is correct. Power BI supports both Relational and Multidimension connection modes."

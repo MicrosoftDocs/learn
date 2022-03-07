@@ -4,7 +4,7 @@ In this unit, we'll look at some best practices to create your online store list
 
 ## Creating a compelling listing
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Optimize-Listing/player#EndOfVideo=false]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IFjS]
 
 Your marketplace listing in the online stores has a lot of useful information for buyers. When you publish your offer in Partner Center you'll be required to provide certain information that will appear on your product listing in Azure Marketplace and Microsoft AppSource.
 
@@ -28,8 +28,8 @@ In addition to the information you provide customers in the online stores, you c
 
 - **Plans and pricing**: Customers like options. You can give your customers choices by offering multiple plans of your listing, with each plan representing a different version of the same product. Plans can be split by tiers of functionality, capacity, seats of access, or other variables depending on your solution. We recommend that you give customers as much choice and flexibility as possible by offering multiple plans at different price points.
 
-     Think strategically about your product’s pricing model. Pick a pricing model that makes sense for the customers you serve. For more information on pricing options in the commercial marketplace, you can reference the pricing model documentation.
+     Think strategically about your product’s pricing model. Pick a pricing model that makes sense for the customers you serve. For more information on pricing options in the commercial marketplace, you can [reference the pricing model documentation](/azure/marketplace/plans-pricing).
 
 - **Sell through Microsoft**: Publishing an offer that users can purchase through Microsoft gives your customers the ability to start using your software with less friction. We recommend that you sell your solution through Microsoft to let your customers self-serve.
 
-For more detail on these suggestions and a longer list of recommendations, you can download the [Microsoft AppSource and Azure Marketplace Best Practice Guide](https://docs.microsoft.com/azure/marketplace/gtm-marketing-best-practices) from our documentation.
+For more detail on these suggestions and a longer list of recommendations, you can download the [Microsoft AppSource and Azure Marketplace Best Practice Guide](/azure/marketplace/gtm-marketing-best-practices) from our documentation.

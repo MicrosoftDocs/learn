@@ -16,7 +16,7 @@ abstract: |
 iconUrl: /learn/achievements/write-your-first-windows10-app.svg
 prerequisites: |
  - A computer running the current release of Windows 10. To verify that you're running the latest version, go to Settings > Windows Update.
- - [Visual Studio 2017](https://docs.microsoft.com/visualstudio/productinfo/vs2017-system-requirements-vs) installed on that computer.
+ - [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) installed on that computer.
  - Knowledge of C# or similar programming language.
 levels:
 - beginner

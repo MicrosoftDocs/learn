@@ -58,7 +58,7 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
 
 1. Open a new browser tab using the URL in the JSON, appending `MyWebApp/`. You should see the new Server Status page.
 
-    ![Example web app running on Tomcat in a web browser](../media/6-web-app-on-tomcat-server.png)
+    ![Example web app running on Tomcat in a web browser.](../media/6-web-app-on-tomcat-server.png)
 
 1. Visit the deployed app by selecting the URL in the shell to see the deployed app running on App Services.
 
@@ -108,4 +108,11 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
 
     :::image type="content" source="../media/6-web-app-on-tomcat-server.png" alt-text="Example web app running on Tomcat in a web browser." loc-scope="other"::: <!-- no-loc -->
 
+## Stream logs in real time
+
+1. Now you have your app deployed and running on App Service. In case for troubleshoot, you can use the simple Azure CLI command to get real time log streaming from the app:
+
+    ```azcli
+    az webapp log tail -n <app name> -g <sandbox resource group name>
+    ```
 In the next unit, you'll learn how to authenticate your web app deployments to Azure App Service.

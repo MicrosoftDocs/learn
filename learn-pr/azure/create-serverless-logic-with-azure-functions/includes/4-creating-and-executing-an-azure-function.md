@@ -1,37 +1,35 @@
-Now that we have a function app created, let's look at how to build, configure, and execute a function.
+Now that we've created a function app, let's look at how to build, configure, and execute a function.
 
 ### Triggers
 
-Functions are event driven, which means they run in response to an event.
-
-The type of event that starts the function is called a **trigger**. You must configure a function with exactly one trigger.
+Functions are event driven, which means they run in response to an event. The type of event that starts a function is called a **trigger**. Each function must be configured with exactly one trigger.
 
 Azure supports triggers for the following services.
 
-| Service                 | Trigger description  |
-|-------------------------|---------|
-| Blob storage            | Start a function when a new or updated blob is detected.       |
-| Azure Cosmos DB               | Start a function when inserts and updates are detected.      |
-| Event Grid              | Start a function when an event is received from Event Grid.       |
-| HTTP                    | Start a function with an HTTP request.      |
-| Microsoft Graph Events  | Start a function in response to an incoming webhook from the Microsoft Graph. Each instance of this trigger can react to one Microsoft Graph resource type.       |
-| Queue storage           | Start a function when a new item is received on a queue. The queue message is provided as input to the function.      |
-| Service Bus             | Start a function in response to messages from a Service Bus queue.       |
-| Timer                   | Start a function on a schedule.       |
+| Service | Trigger description |
+|---------|---------|
+| Blob Storage | Starts a function when a new or updated blob is detected. |
+| Azure Cosmos DB| Start a function when inserts and updates are detected. |
+| Event Grid | Starts a function when an event is received from Event Grid. |
+| HTTP | Starts a function with an HTTP request. |
+| Microsoft Graph Events | Starts a function in response to an incoming webhook from the Microsoft Graph. Each instance of this trigger can react to one Microsoft Graph resource type. |
+| Queue Storage | Starts a function when a new item is received on a queue. The queue message is provided as input to the function. |
+| Service Bus | Starts a function in response to messages from a Service Bus queue. |
+| Timer | Starts a function on a schedule. |
 
 ### Bindings
 
-Bindings are a declarative way to connect data and services to your function. Bindings know how to talk to different services, which means you don't have to write code in your function to connect to data sources and manage connections. The platform takes care of that complexity for you as part of the binding code. Each binding has a direction - your code reads data from *input* bindings and writes data to *output* bindings. Each function can have zero or more bindings to manage the input and output data processed by the function.
+A binding is a declarative way to connect data and services to your function. Bindings interact with various data sources, which means you don't have to write the code in your function to connect to data sources and manage connections. The platform takes care of that complexity for you as part of the binding code. Each binding has a direction--your code reads data from *input* bindings, and writes data to *output* bindings. Each function can have zero or more bindings to manage the input and output data processed by the function.
 
-A trigger is a special type of input binding that has the additional capability of initiating execution.
+A trigger is a type of input binding that has the ability to initiate execution of some code.
 
-Azure provides a [large number of bindings](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings#supported-bindings) to connect to different storage and messaging services.
+Azure provides a [large number of bindings](/azure/azure-functions/functions-triggers-bindings#supported-bindings) to connect to different storage and messaging services.
 
-### A sample binding definition
+### Define a sample binding
 
-Let's look at an example of configuring a function with an input binding (trigger) and an output binding. Let's say we want to write a new row to Azure Table storage whenever a new message appears in Azure Queue storage. This scenario can be implemented using an Azure Queue storage _trigger_ and an Azure Table storage _output binding_.
+Let's look at an example of configuring a function with an input binding (trigger) and an output binding. Let's say we want to write a new row to Azure Table storage whenever a new message appears in Azure Queue Storage. This scenario can be implemented using an Azure Queue Storage _trigger_ and an Azure Table storage _output binding_.
 
-The following snippet is the _function.json_ file for this scenario. 
+The following snippet is the _function.json_ file for this scenario.
 
 ```json
 {
@@ -54,75 +52,83 @@ The following snippet is the _function.json_ file for this scenario.
 }
 ```
 
-Our JSON configuration specifies that our function will be triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to the **outTable** table in Azure Table storage. For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
+Our JSON configuration specifies that our function will be triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to **outTable** in Azure Table storage. For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
 
-This example is a simple illustration of how we configure bindings for a function.  We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
+This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
 > [!TIP]
-> To view and edit the contents of _function.json_ in the Azure portal, click the **Advanced** editor option on the **Integrate** tab of your function.
+> To view and edit the contents of _function.json_ in the Azure portal, from the Home page, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resource ID and the editable JSON code. To close the JSON view, select the **X** in the top right corner of the pane.
 
-## Creating a function in the Azure portal
+## Create a function in the Azure portal
 
-Azure provides several pre-made function templates for common scenarios.
+Azure provides several predefined function templates for common scenarios:
 
-### Quickstart templates
+- Quickstart
+- Custom functions
 
-When adding your first function, you are presented with the Quickstart screen where you can choose the trigger for your function. Based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log.
+### Function templates
 
-### Custom function templates
+When you create your first function in the Azure **Create function** pane, you can select a predefined trigger for your function. Based on your selections, Azure generates default code and configuration information, such as creating an event log entry when input data is received.
 
-The selection of Quickstart templates provides easy access to the most common scenarios. However, Azure provides over 30 additional templates you can start with. These can be selected from the template list screen when creating subsequent functions or be selected by using the **Custom function** option on the Quickstart screen.
+Selecting a template from the **Add function** pane provides easy access to the most common development environments, triggers, dependencies. When you create a function in the Azure portal, you can choose from more than 20 templates. Once created you can further customize the code.
 
-## Navigating to your function and files
+## Navigate to your function and its files
 
-When you create a function from a template, several files are created. For example, if you opted to use the Webhook + API Quickstart using JavaScript, the files generated would be a configuration file, **function.json**, and a source code file, **index.js**. The functions you create in a function app appear under the **Functions** menu item in the function app portal.
+When you create a function from a template, several files are created, including a configuration file, *function.json*, and a source code file, *index.js*.
 
-When you select a function in your function app, a code editor opens and displays the code for your function, as illustrated in the following screenshot.
+You can create or edit functions for your function app by selecting **Functions** under the **Functions** category from the Function App menu.
 
-![Screenshot of the Azure portal showing the function editor pane, including the expanded View files menu, with the selected "HttpTriggerJS1" function in our app service navigation and the View files menu highlighted.](../media/4-file-navigation.png)
+When you select a function that you created in your function app, the Function pane opens. By selecting **Code + Test** from the Function menu, you have access to actions in the command bar to test and run the code, to save or discard changes you make, or to obtain the published URL. By selecting **Test/Run** from the command bar, you can run use cases for requests that include query strings and values.  The function's path above the code box displays the name of the file that is open. You can select a specific file from the dropdown to test or edit, for example, *function.json*. 
 
-As you can see in the preceding screenshot, there's a flyout menu on the right that includes a tab to **View files**. Selecting this tab shows the file structure that makes up your function.
+:::image type="content" source="../media/4-file-navigation.png" alt-text="Screenshot of the function code and test editor showing the expanded Test/Run view, with menu options highlighted." lightbox="../media/4-file-navigation.png":::
 
-## Testing your Azure function
+In the image above, the pane on the right has **Input** and **Output** tabs. Selecting the **Input** tab enables you to build and test the function by adding query parameters and supplying values for your query string. The **Output** tab displays the results of the request.
 
-Once you've created a function, you'll want to test it. There are a couple of approaches: manual execution and testing from within the Azure portal itself.
+## Test your Azure function
 
-### Manual execution
+After you've created a function, you'll want to test it. There are two approaches:
 
-You can start a function by manually triggering the configured trigger. For instance, if you are using an HTTP trigger - you can use a tool such as Postman or cURL to initiate an HTTP request to your function endpoint URL, which is available from the HTTP trigger definition (**Get function URL**).
+- Running it manually
+- Testing it from within the Azure portal itself
 
-### Testing in the Azure portal
+### Run function manually
 
-The portal also provides a convenient way to test your functions. On the right side of the code window, there is a flyout tabbed navigation menu. This menu contains a **Test** item. Expanding the menu and selecting this tab gives you another way to execute your function and view the result. When you click **Run** in this test window, the results are displayed in the output window, along with a status code.
+You can start a function by manually triggering the configured trigger. For instance, if you're using an HTTP trigger, you can use a tool, such as Postman or cURL, to initiate an HTTP request to your function endpoint URL, which is available from the function definition (**Get function URL**).
 
-## Monitoring dashboard
+### Test in the Azure portal
 
-The ability to monitor your functions is critical during development and in production. The Azure portal provides a monitoring dashboard available if you turn on the Application Insights integration. In the function app navigation menu, once you expand the function node you'll see a **Monitor** menu item. This monitor dashboard provides a quick way to view the history of function executions and displays the timestamp, result code, duration, and operation ID populated by Application Insights.
+The portal also provides a convenient way to test your functions. As previously described, in the screenshot above. When you select **Run** in this pane, the results automatically appear in the **Output** tab, and the **Logs** pane opens to display the status.
 
-![Screenshot of the Azure portal showing an HTTP function Monitor pane with several function results and their corresponding HTTP status codes, with the Module menu item of the function highlighted.](../media/4-monitor-function.png)
+## Monitoring and Application Insights dashboard
 
-## Streaming log window
+The ability to monitor your functions is critical during development and in production. The Azure portal provides a monitoring dashboard, which you turn on by enabling Application Insights integration. In the Function App menu, under **Settings**, select **Application Insights**, select **Turn on Application Insights**, and then select **Apply**. In the dialog box, select **Yes**. The Application Insights dashboard provides a quick way to view the history of function operations by displaying the timestamp, result code, duration, and operation ID populated by Application Insights.
 
-You're also able to add logging statements to your function for debugging in the Azure portal. The called methods for each language are passed a "logging" object, which may be used to log information to the log window located in a tabbed flyout menu located at the bottom of the code window.
+:::image type="content" source="../media/4-monitor-function.png" alt-text="Screenshot showing the HTTP function Application Insights dashboard with function results, corresponding HTTP status codes, and the Monitoring menu items highlighted." lightbox="../media/4-monitor-function.png#lightbox":::
 
-The following JavaScript code snippet shows how to log a message using the `context.log` method (the `context` object is passed to the handler).
+## Streaming logs pane
 
-```javascript
-context.log('Enter your logging statement here');
-```
+After you've enabled Application Insights in the Azure portal, you can add logging statements to your function for debugging. The called methods for each language are passed a "logging" object, which can be used to add log information to the Logs pane in the **Code + Test** pane when running a test.
 
-We could do the same thing in C# using the `log.Info` method. In this case, the `log` object is passed to the C# method processing the function.
+The following code snippets show how to create a log message:
 
-```csharp
-log.Info("Enter your logging statement here");
-```
+- In JavaScript, the `context` object is passed to the handler.
 
-In PowerShell, use `Write-Host` to write to the log:
+  ```javascript
+  context.log('Enter your logging statement here');
+  ```
 
-```powershell
-Write-Host "Enter your logging statement here"
-```
+- In C#, `log.LogInformation` method, the `log` object is passed to the C# method processing the function.
 
-### Errors and warnings window
+  ```csharp
+  log.LogInformation("Enter your logging statement here");
+   ```
 
-You can locate the errors and warnings window tab in the same flyout menu as the log window. This window will show compilation errors and warnings within your code.
+- In PowerShell, use `Write-Host` cmdlet to write to the log:
+
+   ```powershell
+  Write-Host "Enter your logging statement here"
+   ```
+
+### Errors, failures, warnings, and anomalies
+
+You can use Metrics or options from the Investigate category in the Function menu to monitor performance, diagnose failures, or configure dozens of predefined workbooks to manage your function app, everything from compilation errors and warnings in the code, to usage statistics by role.

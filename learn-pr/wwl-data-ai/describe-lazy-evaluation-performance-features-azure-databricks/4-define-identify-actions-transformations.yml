@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.define-identify-actions-transformations
+title: Define and identify actions and transformations
+metadata:
+  title: Define and identify actions and transformations
+  description: "Define and identify actions and transformations"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-define-identify-actions-transformations.md)]

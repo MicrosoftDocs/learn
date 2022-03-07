@@ -1,13 +1,12 @@
-In order to go through this exercise, it require a set-up with instructions that can be found here:
-[Set up](https://github.com/ctesta-oneillmsft/asa-vtd) 
+In this exercise, you will create an Apache Spark table
 
-* The Spark engine can analyze the Parquet files and infer the schema. To do this, enter the following in the new cell and **run** it:
+1. The Apache Spark engine can analyze the Parquet files and infer the schema. To do this analysis, enter the below code in the new cell and **run** it:
 
     ```python
     data_path.printSchema()
     ```
 
-    Your output should look like the following:
+    Your output should look as follows:
 
     ```text
     root
@@ -24,9 +23,9 @@ In order to go through this exercise, it require a set-up with instructions that
         |-- StoreId: short (nullable = true)
     ```
 
-    Spark evaluates the file contents to infer the schema. This automatic inference is usually sufficient for data exploration and most transformation tasks. However, when you load data to an external resource like a SQL pool table, sometimes you need to declare your own schema and apply that to the dataset. For now, the schema looks good.
+    Apache Spark evaluates the file contents to infer the schema. This automatic inference is sufficient for data exploration and most transformation tasks. However, when you load data to an external resource like a SQL pool table, sometimes you need to declare your own schema and apply that to the dataset. For now, the schema looks good.
 
-* Now let's use the dataframe to use aggregates and grouping operations to better understand the data. Create a new cell and enter the following, then **run** the cell:
+2. Now let's use the DataFrame to use aggregates and grouping operations to better understand the data. Create a new cell and enter the following, then **run** the cell:
 
     ```python
     from pyspark.sql import SparkSession

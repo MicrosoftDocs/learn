@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.secure-azure-arc-enabled-servers
+metadata:
+  title: Secure your hybrid and multicloud machines through Azure Arc-enabled servers 
+  description: Understand the security capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Microsoft Defender for Cloud, Microsoft Defender for Servers, and Microsoft Sentinel.
+  ms.date: 02/02/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure your hybrid and multicloud machines through Azure Arc-enabled servers 
+summary: Azure Arc promises to bridge the gap between on-premises and cloud environments. Azure Arc extends the consistent security, observability, and governance of the Azure platform to non-Azure machines. In this module, you'll learn about planning and securely deploying Azure Arc-enabled servers at scale.
+abstract: |
+  After you've completed this module, you will be able to:
+    - Understand the onboarding process for and benefits of using Microsoft Defender for Cloud with Azure Arc-enabled servers 
+    -	Evaluate the benefits of using Microsoft Defender for Servers with Azure Arc-enabled servers 
+    -	Understand the onboarding process for and benefits of using Microsoft Sentinel with Azure Arc-enabled servers 
+prerequisites: | 
+  - Basic characteristics of Azure services and Azure Arc 
+  - Compute, storage, networking, and virtualization technologies 
+  - Basic Windows Server and Linux administration tasks 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-arc
+units:
+- learn.azure.secure-azure-arc-enabled-servers.introduction
+- learn.azure.secure-azure-arc-enabled-servers.assess-secure-defend-azure-arc-enabled-servers-with-microsoft-defender-for-cloud
+- learn.azure.secure-azure-arc-enabled-servers.onboard-azure-arc-enabled-servers-to-microsoft-defender-for-cloud
+- learn.azure.secure-azure-arc-enabled-servers.secure-azure-arc-enabled-servers-with-microsoft-defender-for-servers
+- learn.azure.secure-azure-arc-enabled-servers.threat-intelligence-for-azure-arc-enabled-servers-with-microsoft-sentinel
+- learn.azure.secure-azure-arc-enabled-servers.onboard-azure-arc-enabled-servers-to-microsoft-sentinel
+- learn.azure.secure-azure-arc-enabled-servers.knowledge-check
+- learn.azure.secure-azure-arc-enabled-servers.summary
+badge:
+  uid: learn.azure.secure-azure-arc-enabled-servers.badge

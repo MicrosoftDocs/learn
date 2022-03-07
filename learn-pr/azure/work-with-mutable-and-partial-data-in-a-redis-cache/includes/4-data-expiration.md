@@ -1,4 +1,4 @@
-Data is not always permanent, and there are times you would like to delete it at a specific time. For example, in your instant messaging application, users can set the display name of the group chat. However, you want the name to reset after one hour. You could accomplish this by writing your own server-side logic that set an hour timer and reset the name. However, Azure Cache for Redis supports data expiration, which is a feature that does this automatically without writing additional logic.
+Data is not always permanent, and there are times you would like to delete it at a specific time. For example, in your instant messaging application, users can set the display name of the group chat. However, you want the name to reset after one hour. You could accomplish this by writing your own server-side logic that set an hour timer, and reset the name. However, Azure Cache for Redis supports data expiration, which is a feature that does this automatically without writing additional logic.
 
 Here, you'll learn about the common Redis commands to implement data expiration.
 
@@ -8,7 +8,7 @@ Data expiration is a feature that can automatically delete a key and value in th
 
 ## Why use data expiration?
 
-Data expiration is commonly used in situations where the data you're storing is short-lived.  This is important because Azure Cache for Redis is an in-memory database and you don't have as much memory available to use as you would if you were storing on disk. Since you have limited storage with Azure Cache for Redis, you want to make sure you're only storing data that is important. If the data doesn't need to be around for a long time, make sure you set an expiration.
+Data expiration is commonly used in situations where the data you're storing is short-lived.  This is important because Azure Cache for Redis is an in-memory database and you don't have as much memory available to use as you would if you were storing on disk. Because you have limited storage with Azure Cache for Redis, you want to make sure you're only storing data that is important. If the data doesn't need to be around for a long time, make sure you set an expiration.
 
 ## How to use data expiration in Azure Cache for Redis
 
@@ -45,4 +45,4 @@ public static void SetGroupChatName(string groupChatID, string chatName)
 }
 ```
 
-Azure Cache for Redis allows you to delete data automatically after a set amount of time using data expiration. This is important because Azure Cache for Redis is an in-memory database, and you don't have as much memory available as you would with storing data on disk. If the data you're storing doesn't need to be around for a long time, make sure you set an expiration.
+Azure Cache for Redis enables you to delete data automatically after a set amount of time using data expiration. This is important because Azure Cache for Redis is an in-memory database, and you don't have as much memory available as you would with storing data on disk. If the data you're storing doesn't need to be around for a long time, make sure you set an expiration.

@@ -4,11 +4,10 @@ metadata:
   title: Preserve critical code
   description: "Learn how to reduce your overall app package size while preserving critical code in your app."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Preserve critical code
 durationInMinutes: 8
 content: |

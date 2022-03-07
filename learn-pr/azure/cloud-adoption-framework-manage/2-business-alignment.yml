@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-manage.2-business-alignment
+metadata:
+  title: Establish business commitments
+  description: Establish business commitments.
+  ms.date: 02/22/2021
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Establish business commitments
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-business-alignment.md)]

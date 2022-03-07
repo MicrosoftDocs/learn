@@ -61,8 +61,6 @@ After you install the agent, it requires outbound connectivity to Azure Arc over
 
 In particular, Contoso could use the **[Preview] Audit Windows VMs that do not match Azure security baseline settings** policy initiative to audit compliance against Azure Security Center baselines. They also have the ability to set the time zone on target servers by assigning the policy definition **[Preview] Configure time zone on Windows machines**. When auditing target computers, Contoso would have the option of reviewing the logs either locally or remotely via the **Azure VM Run** command, which is available from the Azure portal.
 
-> [!NOTE] 
-> To identify whether a particular policy definition supports Azure Policy Guest Configuration client, you must determine whether it includes a reference to the Microsoft.HybridCompute/machines resource type.
 
 ### Assign Azure Arc policies
 

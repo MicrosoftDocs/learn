@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.paths-to-modern-endpoint-management.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn about migrating your endpoints to Microsoft Endpoint Manager. 
+  ms.date: 01/04/2021
+  author: ErikRe
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

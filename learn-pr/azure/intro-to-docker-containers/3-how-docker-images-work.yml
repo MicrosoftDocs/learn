@@ -6,8 +6,8 @@ metadata:
   title: How Docker images work
   description: In this unit, we discuss how we build Docker images and explore basic image management.
   ms.date: 10/05/2019
-  author: cryophobia
-  ms.author: chrvaw
+  author: georgewallace
+  ms.author: gwallace
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 
@@ -25,10 +25,10 @@ quiz:
       explanation: "Docker Desktop runs on macOS, but it's not the only supported desktop operating system."
     - content: "Linux only"
       isCorrect: false
-      explanation: "Docker Desktop currently is not available for the Linux desktop operating systems. However, Docker Desktop for Windows does support using a Linux command line via Windows Subsystem for Linux. For more information and set up, see the [WSL + Docker documentation](https://docs.microsoft.com/windows/wsl/tutorials/wsl-containers)."
+      explanation: "Docker Desktop currently is not available for the Linux desktop operating systems. However, Docker Desktop for Windows does support using a Linux command line via Windows Subsystem for Linux. For more information and set up, see the [WSL + Docker documentation](/windows/wsl/tutorials/wsl-containers)."
     - content: "Windows, macOS, and Windows Subsystem for Linux (WSL)"
       isCorrect: true
-      explanation: "While Docker Desktop is only available for Windows and macOS. It does support using a Linux command line via Windows Subsystem for Linux (WSL). For more information and set up, see the [WSL + Docker documentation](https://docs.microsoft.com/windows/wsl/tutorials/wsl-containers)."
+      explanation: "While Docker Desktop is only available for Windows and macOS, it does support using a Linux command line via Windows Subsystem for Linux (WSL). For more information and set up, see the [WSL + Docker documentation](/windows/wsl/tutorials/wsl-containers)."
 
   - content: "Which is correct Docker command to rebuild a container image?"
     choices:

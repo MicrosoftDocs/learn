@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.extend-azure-resource-manager-template-deployment-scripts.5-exercise-parameterize-deployment-script
+title: Exercise - Add parameters to deployment scripts
+metadata:
+  title: Exercise - Add parameters to deployment scripts
+  description: Update a deployment script in an ARM template to use arguments and environment variables.
+  author: smurawski
+  ms.author: stmuraws
+  ms.date: 05/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: arm-template-language-azure-shell-interface
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-parameterize-deployment-script.md)]

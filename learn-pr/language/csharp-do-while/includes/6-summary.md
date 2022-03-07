@@ -6,7 +6,4 @@ Built a practical example that utilized the `do-while` and `continue` statements
 
 If you've been following along in the modules in this learning path, we hope you're gaining confidence in both your knowledge of C# and your ability to apply your new programming language skills to solving problems.
 
-## Learn more with a Channel 9 video series
-
-- [C# 101](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha&azure-portal=true)
-- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/?&WT.mc_id=EducationalAdvancedCsharp-c9-niner&azure-portal=true)
+[!include[](../../../includes/dotnet-summary.md)]

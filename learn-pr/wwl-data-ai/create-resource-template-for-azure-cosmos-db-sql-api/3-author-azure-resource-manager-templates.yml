@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.author-azure-resource-manager-templates
+title: Author Azure Resource Manager templates
+metadata:
+  title: Author Azure Resource Manager templates
+  description: "Author Azure Resource Manager templates"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-author-azure-resource-manager-templates.md)]

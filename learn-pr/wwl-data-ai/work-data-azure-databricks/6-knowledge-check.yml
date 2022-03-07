@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-data-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/04/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Bob has to ingest data in Azure Databricks, coming from multiple data sources. He will then run some ETLs to move the data into the data lake. Which of his data sources can be mounted under DBFS?"
+    choices:
+    - content: "FTP"
+      isCorrect: false
+      explanation: "That's incorrect. FTP or File Transfer Protocol is not a data source that can be mounted under DBFS."
+    - content: "Azure Data Lake Store"
+      isCorrect: true
+      explanation: "That's correct. Azure Databricks allows using several data sources: Azure Blob Storage, Azure Data Lake, Cassandra, JDBC, Kafka, Redis, Elasticsearch, files uploaded and mounted via DBFS, as well as data integrations with various other products and databases."
+    - content: "SMB"
+      isCorrect: false
+      explanation: "That's incorrect. SMB or Server Message Block is not a data source that can be mounted under DBFS."
+  - content: "Dataframe `df` needs to be visualized so that the results can be presented to the business users. Which function should be used to plot the data as a bar chart or other type of graph?"
+    choices:
+    - content: "`df.show()`"
+      isCorrect: false
+      explanation: "That's incorrect. The `show` function allows you to print the rows in a dataframe but doesn't give you extra visualization options."
+    - content: "`df.describe()`"
+      isCorrect: false
+      explanation: "That's incorrect. The `describe` function will return the summary statistics for the columns in our data such as the count, mean, and standard deviation. It doesn't visualize the data."
+    - content: "`df.display()`"
+      isCorrect: true
+      explanation: "That's correct. The `display` function will allow you to visualize the data as a table or as a graph of your choosing."
+  - content: "Logan is preparing a dataset, which will be used to train a model. It seems like each record appears twice in the table `df`. She wants to delete half of the rows to make sure each observation is only included once. Which function should she use?"
+    choices:
+    - content: "`df.fillna(2)`"
+      isCorrect: false
+      explanation: "That's incorrect. This operation will replace nulls with the value `2`."
+    - content: "`df.dropna`"
+      isCorrect: false
+      explanation: "That's incorrect. This operation will drop the rows containing null values."
+    - content: "`df.dropDuplicates`"
+      isCorrect: true
+      explanation: "That's correct. This operation will drop the duplicate rows."

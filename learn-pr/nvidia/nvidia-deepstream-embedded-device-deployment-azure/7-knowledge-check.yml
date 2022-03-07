@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 11/09/2021
+  author: toolboc
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: 'Which components are included in an Azure IoT Edge solution?'
+    choices: 
+    - content: 'The IoT Edge runtime and an instance of Azure Container Registry.'
+      isCorrect: false
+      explanation: Incorrect. The IoT Edge runtime is a necessary component. Technically, a container registry is optional because you can distribute a module from a public registry like Docker Hub.
+    - content: 'IoT Hub and DeepStream Graph Composer.'
+      isCorrect: false
+      explanation: Incorrect. A hub in Azure IoT Hub is only part of the cloud-based interface that makes up an Azure IoT solution. DeepStream Graph Composer is an application development tool provided by NVIDIA, and it's not a component of any Azure IoT Edge solution.
+    - content: 'IoT Edge modules, the IoT Edge runtime, and a cloud-based interface.'
+      isCorrect: true
+      explanation: Correct. These components make up any Azure IoT Edge-based solution.
+  - content: 'Building cross-platform images by using the `container-builder` package requires which steps to have been performed on the host machine?'
+    choices: 
+    - content: 'None. The container runtime configures itself and works by default.'
+      isCorrect: false
+      explanation: Incorrect. Unfortunately, this capability won't work if you don't complete more configuration steps.
+    - content: 'Install the `qemu-user-static` and `binfmt-support` packages, and then run an instance of the `multiarch/qemu-suser-static` image with appropriate configuration flags.'
+      isCorrect: true
+      explanation: Correct. Complete these steps to build cross-platform images by using `container-builder`.
+    - content: 'Install the `qemu-user-static` and `binfmt-support` packages.'
+      isCorrect: false
+      explanation: Incorrect. These packages provide the dependencies that are needed for cross-platform support in `container-builder`, but another step is required to configure support on the host.
+  - content: 'What steps were required to configure a deployment specification for your DeepStream Graph Composer workload in the Azure portal?'
+    choices: 
+    - content: 'Add the DeepStream module to the IoT hub, and then deploy.'
+      isCorrect: false
+      explanation: Incorrect. You can add modules to the deployment specification for a specific device that's stored by the IoT hub, but modules are never added to the hub itself.
+    - content: 'Register an IoT Edge device in the IoT hub, provide access credentials to the container registry that stores your workload, create a new module entry for the DeepStream workload, and create the actual deployment.'
+      isCorrect: true
+      explanation: Correct. Complete these steps to configure a deployment specification for your DeepStream Graph Composer workload.
+    - content: 'Build the app in DeepStream Graph Composer, and then publish to an IoT hub by using `container-builder`.'
+      isCorrect: false
+      explanation: 'Incorrect. `container-builder` packages DeepStream Graph Composer graphs into an OCI-compatible container image. Then, you can publish the image to a container registry.'

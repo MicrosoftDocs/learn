@@ -105,10 +105,10 @@ Identify the subtasks of *Control authentication for your APIs with Azure API Ma
 
 ## Notes
 
-- [Subscriptions in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-subscriptions)
-- [Create subscriptions in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-howto-create-subscriptions)
-- [Client cert auth in APIM](https://docs.microsoft.com/azure/api-management/api-management-howto-mutual-certificates-for-clients)
-- [How to secure back-end services using client certificate authentication in Azure API Management](https://docs.microsoft.com/en-gb/azure/api-management/api-management-howto-mutual-certificates)
-- [Configure TLS mutual authentication for Azure App Service](https://docs.microsoft.com/en-gb/azure/app-service/app-service-web-configure-tls-mutual-auth)
+- [Subscriptions in Azure API Management](/azure/api-management/api-management-subscriptions)
+- [Create subscriptions in Azure API Management](/azure/api-management/api-management-howto-create-subscriptions)
+- [Client cert auth in APIM](/azure/api-management/api-management-howto-mutual-certificates-for-clients)
+- [How to secure back-end services using client certificate authentication in Azure API Management](/en-gb/azure/api-management/api-management-howto-mutual-certificates)
+- [Configure TLS mutual authentication for Azure App Service](/en-gb/azure/app-service/app-service-web-configure-tls-mutual-auth)
 
 For the exercise, we'll need to use the consumption tier to minimize APIM spin-up time. This tier is only available in a few regions and is in preview, so we'll need to give accurate steps to ensure the proper tier is used.

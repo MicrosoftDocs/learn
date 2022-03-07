@@ -4,8 +4,8 @@ title: Purchase Azure services
 metadata:
   description: Learn how to purchase Azure services and get a sense for other factors that affect cost.
   ms.date: 09/14/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

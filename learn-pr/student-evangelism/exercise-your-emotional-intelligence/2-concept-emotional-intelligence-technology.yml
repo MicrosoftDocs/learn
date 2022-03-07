@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.exercise-your-emotional-intelligence.concept-emotional-intelligence-technology
+title: Explore the concept of emotional intelligence in technology
+metadata:
+  title: Explore the concept of emotional intelligence in technology
+  description: This unit defines the term emotional intelligence (EQ) and its characteristics.
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-concept-emotional-intelligence-technology.md)]

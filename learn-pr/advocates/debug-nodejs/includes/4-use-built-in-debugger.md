@@ -12,19 +12,19 @@ Let's create a new Node.js program to illustrate the concept.
 
 Before we dive into the exercise, we first have to prepare the code and environment.
 
-1. Copy and paste this command in the terminal on the right to prepare the Node.js environment:
+1. Copy and paste the following command in the terminal on the right to prepare the Node.js environment.
 
     ```bash
     source <(curl -Ls https://aka.ms/install-node-lts)
     ```
 
-1. After everything has finished installing, create a new JavaScript file with:
+1. After everything has finished installing, create a new JavaScript file with the following code.
 
     ```bash
     code fibonacci.js
     ```
 
-1. Then paste this code in the editor:
+1. Paste this code into the editor.
 
     ```js
     function fibonacci(n) {
@@ -45,7 +45,7 @@ Before we dive into the exercise, we first have to prepare the code and environm
     console.log(result);
     ```
 
-1. Save the file, and then run the program by using the terminal:
+1. Save the file, and then run the program by using the terminal.
 
     ```bash
     node fibonacci.js
@@ -55,13 +55,13 @@ The program should display the result `3` in the console. Oops, it seems there's
 
 ## Start built-in debugger
 
-Start the program again. This time with the built-in debugger enabled:
+Start the program again, this time with the built-in debugger enabled.
 
 ```bash
 node inspect fibonacci.js
 ```
 
-You should see the debugger prompt displayed. Now step in using the `s` command until the execution point is located at the beginning of the `fibonacci` function, like this:
+You should see the debugger prompt displayed. Now, step in running the `s` command until the execution point is located at the beginning of the `fibonacci` function, like this.
 
 ```bash
 break in fibonacci.js:2
@@ -72,13 +72,13 @@ break in fibonacci.js:2
 debug>
 ```
 
-We can check at this point the value of the *n* parameter passed in the function by using the command:
+We can check at this point the value of the *n* parameter passed in the function by running the following command.
 
 ```bash
 exec n
 ```
 
-You should see `5` displayed in the console. Step in again by using the `s` command until the execution point is at the beginning of the loop, like this:
+You should see `5` displayed in the console. Step in again by running the `s` command until the execution point is at the beginning of the loop, like this.
 
 ```bash
 break in fibonacci.js:7
@@ -95,15 +95,15 @@ debug>
 
 ## Locate the bug with breakpoints
 
-Now let's add a breakpoint here so that we can quickly move through the loop iterations:
+Now let's add a breakpoint here so that we can quickly move through the loop iterations.
 
 ```bash
 sb()
 ```
 
-You should see the same lines displayed again in the console, which indicates that a breakpoint was set at this line. When the current execution point moves, you'll see a `*` on the line where you set the breakpoint. Advance to the next loop iteration by using the `c` command.
+You should see the same lines displayed again in the console, which indicates that a breakpoint was set at this line. When the current execution point moves, you'll see a `*` on the line where you set the breakpoint. Advance to the next loop iteration by running the `c` command.
 
-We can check the current iteration state with the `exec` command:
+We can check the current iteration state by running the `exec` command.
 
 ```bash
 exec [i, sum]
@@ -112,7 +112,7 @@ exec [i, sum]
 > [!NOTE]
 > You can see the value of multiple variables by using an array, like with `[i, sum]`.
 
-You should see `[ 3, 1 ]` in the console. Because the code hasn't updated the value of `sum` for the current iteration (`3`), it currently represents the Fibonacci number for the previous iteration:
+You should see `[ 3, 1 ]` in the console. Because the code hasn't updated the value of `sum` for the current iteration (`3`), it currently represents the Fibonacci number for the previous iteration.
 
 ```text
 fibonacci(2) = fibonacci(0) + fibonacci(1)
@@ -120,7 +120,7 @@ fibonacci(2) = fibonacci(0) + fibonacci(1)
              = 1
 ```
 
-It seems that our program runs correctly up to this point. Continue to the next loop iteration by using the `c` command. Check the state again:
+It seems that our program runs correctly up to this point. Continue to the next loop iteration by running the `c` command. Check the state again.
 
 ```bash
 exec [i, sum]
@@ -132,7 +132,7 @@ What happened?
 
 ## Fix the bug
 
-After checking the loop condition `i < n`, the execution suddenly jumped to the return line:
+After checking the loop condition `i < n`, the execution suddenly jumped to the return line.
 
 ```bash
 break in fibonacci.js:12
@@ -145,7 +145,7 @@ break in fibonacci.js:12
 
 That's it, we just found our bug! Instead of updating the sum for the iteration 5, the code jumped out of the loop. That's why we got the result of the previous iteration (3) in our initial run.
 
-Fix the loop condition by changing `i < n` to `i <= n` in the code editor. Now you can exit the debugger by selecting **Ctrl+D**, and then run your program again:
+Fix the loop condition by changing `i < n` to `i <= n` in the code editor. Now you can exit the debugger by selecting <kbd>Ctrl+D</kbd>, and then run your program again.
 
 ```bash
 node fibonacci.js
@@ -153,6 +153,6 @@ node fibonacci.js
 
 You should see the expected result displayed in the console now, which is `5`.
 
-You can use the built-in debugger in Node.js to learn the basic debugging principles and for quick debugging sessions. It can be bothersome to type in the commands and might be too limited and difficult to use with complex programs.
+You can use the built-in debugger in Node.js to learn the basic debugging principles and for quick debugging sessions. It can be bothersome to enter the commands and might be too limited and difficult to use with complex programs.
 
 We'll see in the next sections how to use the Visual Studio Code debugger instead.

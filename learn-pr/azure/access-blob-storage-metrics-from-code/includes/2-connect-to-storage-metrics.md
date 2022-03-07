@@ -7,7 +7,7 @@ To do that, you must understand how your Storage Account sends information to Az
 Azure Monitor is a solution that can gather and store information from many different types of application components, and it includes a wide range of tools for analyzing, visualizing, and responding to this data. As such, Azure Monitor is a single tool that you can use to watch and optimize all the components of your system wherever they run.
 
 :::image type="complex" source="../media/2-azure-monitor-overview.png" alt-text="Conceptual overview diagram of Azure Monitor.":::
-   Diagram of Azure Montior taking in inputs of Application, Operating System, Azure Resources, Azure Subscription, Azure Tenant, and Custom Sources. Those inputs lead to Metrics and Logs data stores, which then feed to systems for reporting and reaction, titled Insights, Visualize, Analyze, Respond, and Integrate.
+   Diagram of Azure Monitor taking in inputs of Application, Operating System, Azure Resources, Azure Subscription, Azure Tenant, and Custom Sources. Those inputs lead to Metrics and Logs data stores, which then feed to systems for reporting and reaction, titled Insights, Visualize, Analyze, Respond, and Integrate.
 :::image-end:::
 
 Azure Monitor collects two types of data:
@@ -15,7 +15,7 @@ Azure Monitor collects two types of data:
 | Data Type | Description |
 |-----|-----|
 | **Metrics** | These are numerical values that describe some aspect of a component at a point in time. For example, an Average Server Response Time metric measures how long a component has taken to respond to users on average over the last few minutes. You can use the **Metrics Explorer** to show how these metrics vary over time. |
-| **Logs** | These are records of the behavior of a component, and they may contain telemetry such as events and traces. In the Azure portal, you can use the **Log Analytics** page to drill into this data and find individual events that interest you. |
+| **Logs** | These are records of the behavior of a component, and they may contain telemetries such as events and traces. In the Azure portal, you can use the **Log Analytics** page to drill into this data and find individual events that interest you. |
 
 By default, you can access 93 days of data in Azure Monitor. If you need to retain data for a longer period, you can archive it to an Azure Storage account.
 
@@ -23,7 +23,7 @@ In addition to using the Azure portal to view and analyze Azure Monitor data, yo
 
 | API | Description |
 |-----|-----|
-| **Azure Monitor REST API** | A REST API is a web service that you can call from your code over HTTP and port 80. The responses are usually in the JSON format. |
+| **Azure Monitor REST API** | A REST API is a web service that you can call from your code over HTTP and port 80. The responses are usually in JSON format. |
 | **Azure Monitor .NET API** | The .NET API is a set of .NET classes that you can add to any .NET project such as a desktop application, a mobile app, or an ASP.NET web app. |
 
 The .NET API is slightly easier to use and requires fewer lines of code for typical operations. However, you can only use this API in .NET projects. If you want to use Node.js, for example, you cannot use the .NET API. The REST API can be called from any code that can make HTTP requests.
@@ -50,7 +50,7 @@ This module discusses new Azure Storage metrics, but bear in mind: when you read
 
 ## How to use curl to make queries against the REST API
 
-**curl** is a command-line tool that is available in the Azure Cloud Shell, which you can use to make requests through the HTTP protocol. Because a REST API works over port 80, you can use **curl** to make test requests. This is a helpful technique to learn about the REST API you are using, and to examine its behavior in order to help you write code to implement it.
+**curl** is a command-line tool that is available in the Azure Cloud Shell, which you can use to make requests through the HTTP protocol. Because a REST API works over port 80, you can use **curl** to make test requests. This is a helpful technique to learn about the REST API you are using and to examine its behavior in order to help you write code to implement it.
 
 Many REST APIs, including the Azure Monitor API, require you to authenticate before you can make requests in order to ensure security. To authenticate, you can use the **az** command to retrieve an authentication token:
 
@@ -75,7 +75,7 @@ To request the list of Azure Storage metrics from the Azure Monitor, use a URL l
 ```bash
 curl -s -H "$AUTH_TOKEN" https://management.azure.com/subscriptions/<Subscription ID>/resourceGroups/<Resource Group>/providers/Microsoft.Storage/storageAccounts/<Storage Account>/providers/microsoft.insights/metricdefinitions?api-version=2018-01-01 | jq
 ```
-Where you will need to identify the following values using the Azure portal, and substitute them for the placeholders in the URL above:
+Where you will need to identify the following values using the Azure portal and substitute them for the placeholders in the URL above:
 
 | URL Component | Description |
 |-----|-----|

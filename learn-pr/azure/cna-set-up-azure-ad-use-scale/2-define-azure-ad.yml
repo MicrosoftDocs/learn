@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cna-set-up-apps-use-scale.2-define-azure-ad
+title: Define Azure AD
+metadata:
+  title: Define Azure AD
+  description: Description of Azure AD
+  ms.date: 05/19/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-define-azure-ad.md)]

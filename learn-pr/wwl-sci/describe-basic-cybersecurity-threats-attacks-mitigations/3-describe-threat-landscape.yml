@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.describe-threat-landscape
+title: Describe the threat landscape
+metadata:
+  title: Describe the threat landscape
+  description: "Describe the threat landscape"
+  ms.date: 02/08/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-describe-threat-landscape.md)]

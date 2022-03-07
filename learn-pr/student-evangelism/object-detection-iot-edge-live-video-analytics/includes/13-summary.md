@@ -1,0 +1,5 @@
+Consider the employee safety scenario we've considered. The company has concerns about safety incidents on the factory floor, especially if a person is near a machine causing safety risks. So the company decided to deploy a real-time video analytics solution using existing security cameras. With the capabilities of Live Video Analytics on IoT Edge, the solution will run a machine learning model on your camera and detect a person at risk within a certain confidence level. Live Video Analytics(LVA) on IoT Edge lets you utilize your existing cameras to generate video feeds. You can build powerful hybrid applications by connecting LVA on IoT Edge with your custom edge modules or other Azure edge modules.
+
+## Clean up
+
+When you're working on your subscription, it's a good idea to identify whether you still need the resources you created at the end of a project. Resources left running can cost you money. You can delete resources individually or delete the resource group to delete the entire set of resources.

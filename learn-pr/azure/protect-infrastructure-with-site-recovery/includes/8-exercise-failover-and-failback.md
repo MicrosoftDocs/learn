@@ -1,6 +1,6 @@
 You can fail over protected resources in three ways: using the portal, using PowerShell, or automating the failover with an Azure Automation runbook.
 
-With all your resources protected, you can run a real failover of your patient-records VM. With the disaster recovery drill complete, you'll do the failover with PowerShell and the portal. After completion, you'll be in a better position to recommend which approach your company should use.
+With all your resources protected, you can run a real failover of your patient-records VM. With the DR drill complete, you'll do the failover with PowerShell and the portal. After completion, you'll be in a better position to recommend which approach your company should use.
 
 In this exercise, you'll complete failover for a VM using PowerShell, and fail back the VM using the Azure portal.
 
@@ -39,9 +39,9 @@ In this exercise, you'll complete failover for a VM using PowerShell, and fail b
     - Trigger a failover for the latest recovery point.
     - Show the result of the failover.
 
-1. The failover can take a couple of minutes. While the script is running, leave the Cloud Shell open, and navigate to the _asr-vault_.
+1. The failover can take a couple of minutes. While the script is running, leave Cloud Shell open, and go to the _asr-vault_.
 
-1. On the left, under **Monitoring**, select **Site Recovery jobs**.
+1. On the left menu pane, under **Monitoring**, select **Site Recovery jobs**.
 
     > [!NOTE]
     > You can view the progress of the failover job at the same time as the script is running.
@@ -75,7 +75,7 @@ In this exercise, you'll complete failover for a VM using PowerShell, and fail b
 
 The job to reprotect the VM can take around approximately 10 minutes to complete.
 
-1. You can monitor the job using this PowerShell command:
+1. You can monitor the job running this PowerShell command:
 
     ```powershell
     Get-AzRecoveryServicesAsrJob -Job $ReprotectJob
@@ -108,13 +108,13 @@ The job to reprotect the VM can take around approximately 10 minutes to complete
 
 ## Failback to the West US region using the portal
 
-1. Close the Cloud Shell to use the Azure portal more easily.
+1. Close Cloud Shell to use the Azure portal more easily.
 
-1. In the upper left-hand side of the portal. select **All resources** .
+1. On the home page, select **All resources**.
 
 1. Select **asr-vault**. and then select the **Recovery Services vault**.
 
-1. Under **Protected items**, select **Replicated items**.
+1. In the left menu pane, under **Protected items**, select **Replicated items**.
 
 1. Select the **patient-records**.
 
@@ -124,14 +124,14 @@ The job to reprotect the VM can take around approximately 10 minutes to complete
 
 1. For the Recovery Point, select the latest processed (low RTO).
 
-1. To begin the failback. select **OK**.
+1. To begin the failback, select **OK**.
 
 ## Monitor the failback
 
-1. In the upper left-hand side of the portal, select **All resources**.
+1. On the home page, select **All resources**.
 
 1. Select **asr-vault**, and then select the **Recovery Services vault**.
 
-1. Under **Monitoring**, select **Site Recovery jobs**.
+1. In the left menu pane, under **Monitoring**, select **Site Recovery jobs**.
 
 1. Select the in-progress **Failover** job.

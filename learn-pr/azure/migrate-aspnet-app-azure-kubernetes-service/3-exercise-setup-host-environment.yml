@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-aspnet-app-azure-kubernetes-service.exercise-setup-host-environment
+metadata:
+  title: Exercise - Set up host environment
+  description: Describes the steps to prepare Azure subscription and source application to be containerized.
+  ms.date: 09/01/2021
+  author: rahug1190
+  ms.author: rahugup
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Set up host environment
+durationInMinutes: 10
+content: |
+  [!include[](includes/exercise-setup-host-environment.md)]

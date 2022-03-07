@@ -37,3 +37,15 @@ quiz:
     - content: "Only simulated devices"
       isCorrect: false
       explanation: "You can add both real and simulated devices from a device template in IoT Central."
+  - content: "What happens when you block a device?"
+    choices:
+    - content: "The device can't connect to your IoT Central application."
+      isCorrect: true
+      explanation: "Correct. Blocking a device stops it sending data to IoT Central. This is useful if you suspect the device is sending incorrect data because of an error."
+    - content: "The operator can't make changes to the device."
+      isCorrect: false
+      explanation: "The operator can still make changes to a device while it's blocked. Property updates are queued until the device next connects."
+    - content: "The operator can't update the device's cloud properties."
+      isCorrect: false
+      explanation: "Cloud properties aren't stored on the device. Cloud properties can be updates when the device is disconnected."
+

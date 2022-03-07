@@ -1,4 +1,4 @@
-In this exercise, you'll combine your learnings from the module to walk through a scenario. You'll learn how to add new data classifications and dynamic data masks, and then you'll see various methods for auditing users who try to view columns that were marked for data classification. This exercise combines several of the things you've already learned about in the module: data protection, auditing, and Azure Defender.
+In this exercise, you'll combine your learnings from the module to walk through a scenario. You'll learn how to add new data classifications and dynamic data masks, and then you'll see various methods for auditing users who try to view columns that were marked for data classification. This exercise combines several of the things you've already learned about in the module: data protection, auditing, and Microsoft Defender for Cloud.
 
 ## Configure data classification and masking
 
@@ -23,7 +23,7 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
 1. Confirm that the classification was successfully added by viewing the **Overview** tab, and confirm that MiddleName is now displayed in the list of classified columns under the SalesLT schema. 
 
-1. Select **X** to close the **Add classification** pane.  
+1. On the left pane, select **Overview** to go back to the overview of your database.  
 
    Dynamic Data Masking (DDM) is available in both Azure SQL and SQL Server. DDM limits data exposure by masking sensitive data to nonprivileged users at the SQL Server level instead of at the application level where you have to code those types of rules. Azure SQL recommends items for you to mask, or you can add masks manually. 
    
@@ -132,7 +132,7 @@ As an admin, you might want to review and audit who is accessing the databases a
 
 1. Select **Add**.  
 
-    :::image type="content" source="../media/9-file-audit-add.png" alt-text="Add a new file":::  
+    :::image type="content" source="../media/9-file-audit-add.png" alt-text="Add a new file.":::  
 
 1. Select **Add from Azure Blob storage**, and then select **Connect**.  
 
@@ -142,9 +142,9 @@ As an admin, you might want to review and audit who is accessing the databases a
 
     :::image type="content" source="../media/9-file-audit-signin.png" alt-text="Screenshot of how to sign in to Azure.":::  
 
-1. Select the subscription, storage account, and blob container you configured the audit logs to go to. The storage account should start with `sqlva`. The container will be called `sqldbauditlogs`.  
+1. Select the subscription, storage account, and blob container you configured the audit logs to go to. The storage account should start with `sqlva`. The container will be called `sqldbauditlogs`. If there is no container with that name, you created a different storage account for auditing, use that instead.
 
-1. Select your Azure SQL Database logical server and your AdventureWorks database. The container should take everything from the current day up until the time you select the database name. Select **OK**.
+1. Select your Azure SQL Database logical server and your AdventureWorks database. Make sure the *From* time is earlier than when you started the exercises. Select **OK**.
 
 1. The confirmation window lets you know how many files are being downloaded and merged. Select **OK**.  
 
@@ -211,4 +211,4 @@ Analyzing your audit logs will depend on your preference. In this section, you'l
 
     This dashboard displays more auditing information to help you understand database activity and gain insight into anomalies. Spend a few minutes reviewing and drilling into the options here.  
 
-In addition to viewing these insights for Azure SQL services, being in Azure lets you use Azure Security Center to monitor, manage, and respond to issues that arise across your entire Azure estate. If you want to look around at what is available outside of the Azure SQL Security Center, you can search for and select **Security Center** in the Azure portal. Your access might be limited, depending on your subscription level.
+In addition to viewing these insights for Azure SQL services, being in Azure lets you use Microsoft Defender for Cloud to monitor, manage, and respond to issues that arise across your entire Azure estate. If you want to look around at what is available outside of the Azure SQL Defender for Cloud, you can search for and select **Defender for Cloud** in the Azure portal. Your access might be limited, depending on your subscription level.

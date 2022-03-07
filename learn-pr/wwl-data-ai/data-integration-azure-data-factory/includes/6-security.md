@@ -14,4 +14,4 @@ When you are added as a member of this role, you have the following permissions:
 - At the resource group level or above, lets users deploy Resource Manager template.
 - Create support tickets.
 
-If the Data Factory Contributor role does not meet your requirement, you can create your own [custom role](https://docs.microsoft.com/azure/role-based-access-control/custom-roles).
+If the Data Factory Contributor role does not meet your requirement, you can create your own [custom role](/azure/role-based-access-control/custom-roles).

@@ -10,10 +10,10 @@ You might also need to redeploy your architecture, for example, to recover from 
 
 You need some way to automate the deployment of virtual machines to deal with these issues and difficulties. For each virtual machine, such a solution must be able to:
 
-- Configure the virtual machine. For example, in Azure you need to specify an image from Azure Marketplace, a tier, a size, IP addresses, and other values.
-- Configure the operating system for the virtual machine. For example, if the operating system includes a firewall, you must be able to set firewall rules that filter traffic.
-- Install software. For example, you might need to install a web server or a database server.
-- Apply updates. For example, you might need to apply service packs or hotfixes to the operating system and the installed software.
+- **Configure the virtual machine.** For example, in Azure you need to specify an image from Azure Marketplace, a tier, a size, IP addresses, and other values.
+- **Configure the operating system for the virtual machine.** For example, if the operating system includes a firewall, you must be able to set firewall rules that filter traffic.
+- **Install software.** For example, you might need to install a web server or a database server.
+- **Apply updates.** For example, you might need to apply service packs or hotfixes to the operating system and the installed software.
 
 To reduce the complexity of a deployment configuration, create a complete architecture in the form of a script or a configuration file. Then deploy it in a single operation. This way, you can automate your configuration to reduce mistakes and accelerate deployment. You'll help your organization become more productive and cost effective.
 

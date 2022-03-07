@@ -1,34 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-data-fundamentals-explore-core-data-concepts
 metadata:
-  title: 'Azure Data Fundamentals: Explore core data concepts'
-  description: 'Azure Data Fundamentals: Explore core data concepts'
-  ms.date: 06/26/2020
+  title: 'Microsoft Azure Data Fundamentals: Explore core data concepts'
+  description: 'Microsoft Azure Data Fundamentals: Explore core data concepts'
+  ms.date: 03/07/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Azure Data Fundamentals: Explore core data concepts'
+title: 'Microsoft Azure Data Fundamentals: Explore core data concepts'
 prerequisites: |
   None
 summary: |
-  Learn the fundamentals of database concepts in a cloud environment, get basic skilling in cloud data services, and build your foundational knowledge of cloud data services within Microsoft Azure.
-  You will identify and describe core data concepts such as relational, non-relational, big data, and analytics, and explore how this technology is implemented with Microsoft Azure. You will explore the roles, tasks, and responsibilities in the world of data.
+  Data is the foundation on which all software is built. By learning about common data formats, workloads, roles, and services, you can prepare yourself for a career as a data professional.
+  This learning path helps you prepare for the [Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals?azure-portal=true) certification.
 iconUrl: /learn/achievements/azure-data-fundamentals-explore-core-data-concepts.svg
 levels:
 - beginner
 roles:
-- administrator
-- business-user
+- data-analyst
 - data-engineer
+- database-administrator
+- developer
+- solution-architect
 - student
 products:
 - azure
 modules:
 - learn.wwl.explore-core-data-concepts
 - learn.wwl.explore-roles-responsibilities-world-of-data
-- learn.wwl.describe-concepts-of-relational-data
-- learn.wwl.explore-concepts-of-non-relational-data
-- learn.wwl.explore-concepts-of-data-analytics
 trophy:
   uid: learn.wwl.azure-data-fundamentals-explore-core-data-concepts.trophy

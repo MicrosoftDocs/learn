@@ -2,9 +2,9 @@ To demonstrate index monitoring and tuning, we'll use the collections that we se
 
 We'll use the Azure CLI to modify the index configuration. You can also use the Azure portal, the Azure Cosmos DB REST API, or any of the Azure Cosmos DB SDKs.
 
-We have provided prebuilt index configuration files for your convenience. You can view these files in the `mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB/IndexConfig` directory.
+We've provided prebuilt index configuration files for your convenience. You can view these files in the `mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB/IndexConfig` directory.
 
-We ran queries in Unit 3 on our collections with all the document properties indexed. The Request Units (RUs) that we used were:
+We ran queries in Unit 3 on our collections with all the document properties indexed. The RUs that we used were:
 
 - ~3 RUs to query a 1-KB document within a single partition
 - ~13 RUs to add a 1-KB document
@@ -13,7 +13,7 @@ We ran queries in Unit 3 on our collections with all the document properties ind
 
 Update the **Orders** collection to index none of the properties.
 
-1. If Azure Cloud Shell times out, you need to reset the `ENDPOINT`, `KEY`, and  `COSMOS_NAME` variables. The console application needs the environment variables to connect to the database. If Cloud Shell hasn't timed out, you can skip this step.
+1. If Azure Cloud Shell times out, you need to reset the `ENDPOINT`, `KEY`, and  `COSMOS_NAME` variables. The console application needs the environment variables to connect to the database. Refresh Cloud Shell. If Cloud Shell hasn't timed out, you can skip these steps.
 
     You can reset the `COSMOS_NAME` value by running the following command.
 
@@ -39,6 +39,7 @@ Update the **Orders** collection to index none of the properties.
     ```
 
 1. Make sure you're in the `ExerciseCosmosDB` directory.
+
     ```bash
     cd ~/mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB
     ```
@@ -62,7 +63,7 @@ Update the **Orders** collection to index none of the properties.
     dotnet run -- -c Orders -o InsertDocument -n 1 -r
     ```
 
-    Review the output of this command. The write took about 5 RUs.
+    Review the output of this command. The write took about 5 RUs. Also note the `Item.id` value in the output.
 
 1. Now measure the consumption of querying the collection without an index.
 
@@ -127,4 +128,4 @@ The following table summarizes the results you've gotten in previous exercises. 
 | Insert document | Some properties indexed | 6 |
 | Insert document | No properties indexed | 5 |
 
-You see that as indexing complexity goes up, the write consumption goes up, and the read consumption goes down. The indexing strategy that you choose depends on your data and the workloads that it supports.
+You see that as indexing complexity goes up, the write consumption goes up and the read consumption goes down. The indexing strategy that you choose depends on your data and the workloads it supports.

@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-bot-service-bot-framework-composer
+metadata:
+  moduleType: introduction
+  title: Introduction to Azure Bot Service and Bot Framework Composer
+  description: Introduction to Azure Bot Service and Bot Framework Composer
+  ms.date: 6/15/2021
+  author: jasonkellingtonwaypoint
+  ms.author: v-jaske
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Bot Service and Bot Framework Composer
+summary: Use Azure Bot Service to create custom bots that provide enhanced user experiences and augment applications. Examine bot functionality and design. Explore Azure Bot Service tools, including Bot Framework Composer, and when to use them.
+abstract: |
+  By the end of this module, you'll know more about:
+    - The features and functionalities of a bot.
+    - Bot design and using Azure Bot Service.
+    - Creating a bot by using Bot Framework Composer.
+    - How the Azure Bot Service components work together in Azure.
+prerequisites: |
+  To get the best learning experience from this module, you should have:
+    - Working experience of the Azure portal.
+    - General knowledge of cloud computing.
+iconUrl: /learn/achievements/intro-to-bot-service-bot-framework-composer.svg
+levels:
+  - beginner
+roles:
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+  - technology-manager
+products:
+  - azure
+  - azure-bot-service
+units:
+- learn.azure.intro-to-bot-service-bot-framework-composer.1-introduction
+- learn.azure.intro-to-bot-service-bot-framework-composer.2-what-is-azure-bot-service
+- learn.azure.intro-to-bot-service-bot-framework-composer.3-how-azure-bot-service-works
+- learn.azure.intro-to-bot-service-bot-framework-composer.4-when-to-use-azure-bot-service
+- learn.azure.intro-to-bot-service-bot-framework-composer.5-knowledge-check
+- learn.azure.intro-to-bot-service-bot-framework-composer.6-summary
+badge:
+  uid: learn.intro-to-bot-service-bot-framework-composer.badge

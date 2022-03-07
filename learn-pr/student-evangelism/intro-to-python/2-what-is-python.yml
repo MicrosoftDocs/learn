@@ -5,11 +5,11 @@ metadata:
   title: What is Python?
   description: Learn the history of Python, implementations available, and common uses
   ms.date: 04/30/2019
-  author: ShanaMatthews
-  ms.author: ShanaMatthews
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-  ROBOTS: NOINDEX
-durationInMinutes: 7
+  ms.custom: team=nextgen
+durationInMinutes: 3
 content: |
   [!include[](includes/2-what-is-python.md)]

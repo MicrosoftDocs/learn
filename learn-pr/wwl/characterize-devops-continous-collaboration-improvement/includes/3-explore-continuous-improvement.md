@@ -33,7 +33,7 @@ The lack of an effective feedback mechanism makes it difficult to improve the im
 
 First, let’s consider **measurement**. According to the book *Accelerate* by Nicole Forsgren, Jez Humble and Gene Kim, the four most important measures of software delivery performance are:
 
-- **Lead time for change**: a measure of software delivery performance tempo. The time it takes for a bug fix, new feature, or any other change to go from idea to deployment to production.
+- **Lead time for change**: a measure of software delivery performance tempo. The time it takes to go from code committed to code successfully running in production
 - **Deployment frequency**: a direct or indirect measure of response time, team cohesiveness, developer capabilities, development tool effectiveness, and overall DevOps team efficiency.
 - **Mean time to restore**: how long it generally takes to restore a primary app or service when a service incident occurs.
 - **Change fail percentage**: the percentage of changes to production (including, for example, software releases and infrastructure configuration changes) that fail.

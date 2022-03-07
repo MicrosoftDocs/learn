@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.implement-ansible
+metadata:
+  title: Implement Ansible
+  description: "Implement Ansible"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement Ansible
+summary: This module describes Ansible implementation and details to run Ansible in Azure Cloud Shell and Visual Studio Code to automate Azure environment creation.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Implement and install Ansible
+  - Configure and use workflows and components
+  - Use Ansible on Azure
+  - Run Ansible in Azure Cloud Shell and Visual Studio Code
+prerequisites: |
+  None
+iconUrl: /learn/achievements/7-implement-ansible.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.implement-ansible.introduction
+- learn.wwl.implement-ansible.what-is-ansible
+- learn.wwl.implement-ansible.explore-ansible-workflow
+- learn.wwl.implement-ansible.examine-ansible-components
+- learn.wwl.implement-ansible.install-ansible
+- learn.wwl.implement-ansible.explore-ansible-azure
+- learn.wwl.implement-ansible.examine-playbook-structure
+- learn.wwl.implement-ansible.exercise-run-ansible-azure-cloud-shell
+- learn.wwl.implement-ansible.exercise-run-ansible-visual-studio-code
+- learn.wwl.implement-ansible.knowledge-check
+- learn.wwl.implement-ansible.summary
+badge:
+  uid: learn.wwl.implement-ansible.badge

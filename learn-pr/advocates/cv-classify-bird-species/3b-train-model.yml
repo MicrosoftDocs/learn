@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.cv-classify-bird-species.3b-train-model
+title: Exercise - Train the model
+azureSandbox: true
+metadata:
+  title: Exercise - Train the model
+  description: Train the model
+  ms.date: 01/19/2021
+  author: cassiebreviu
+  ms.author: cassieb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 15
+content: |
+  [!include[](includes/3b-train-model.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.explore-custom-sizing-for
+title: Explore custom sizing for SAP HANA on Azure (Large Instances)
+metadata:
+  title: Explore custom sizing for SAP HANA on Azure (Large Instances)
+  description: "Explore custom sizing for SAP HANA on Azure (Large Instances)"
+  ms.date: 01/31/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-explore-custom-sizing-hana-large-instances.md)]

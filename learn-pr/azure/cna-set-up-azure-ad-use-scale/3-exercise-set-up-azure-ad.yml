@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cna-set-up-apps-use-scale.3-exercise-set-up-azure-ad
+title: Exercise - Set up Azure AD
+metadata:
+  title: Exercise - Set up Azure AD
+  description: Exercise - Set up Azure AD
+  ms.date: 05/19/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-exercise-set-up-azure-ad.md)]

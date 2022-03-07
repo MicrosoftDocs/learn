@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.create-custom-github-actions.create-custom-github-action
+title: Create a custom GitHub action
+metadata:
+  title: Create a custom GitHub action
+  description: Learn about the different types of GitHub actions and the metadata, syntax, and workflow commands to create custom actions.
+  ms.date: 04/14/2021
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/create-custom-github-action.md)]

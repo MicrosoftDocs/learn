@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.self-regulation-work-strategically.exercise-approach-challenges
+title: Exercise - Approach challenges
+metadata:
+  title:  Exercise - Approach challenges
+  description: In this unit, you'll read a set of statements and decide if they apply to you.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-exercise-approach-challenges.md)]

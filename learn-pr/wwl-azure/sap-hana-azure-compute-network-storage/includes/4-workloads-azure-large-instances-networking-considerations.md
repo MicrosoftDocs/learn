@@ -1,6 +1,6 @@
-The Azure for SAP HANA architecture uses both virtual and physical networks. The virtual network is part of Azure IaaS and connects to a discrete HANA Large Instances physical network through ExpressRoute circuits. A cross-premises gateway connects your workloads in the Azure virtual network to your on-premises sites.
+The Azure for SAP HANA architecture uses virtual and physical networks. The virtual network is part of Azure IaaS and connects to a discrete HANA Large Instances physical network through ExpressRoute circuits. A cross-premises gateway connects your workloads in the Azure virtual network to your on-premises sites.
 
-* HANA Large Instances networks are isolated from each other for security. By default, instances residing in different regions do not communicate with each other, except for the dedicated storage replication. However, to use HSR, inter-region communications are required. ExpressRoute Global Reach, IP routing tables, or proxies can be used to enable cross-regions HSR.
+* HANA Large Instances networks are isolated from each other for security. By default, instances in different regions do not communicate with each other, except for the dedicated storage replication. However, to use HSR, inter-region communications are required. ExpressRoute Global Reach, IP routing tables, or proxies can be used to enable cross-regions HSR.
 
 * All Azure virtual networks that connect to HANA Large Instances in one region can be cross connected via ExpressRoute to HANA Large Instances in a secondary region.
 
@@ -8,13 +8,13 @@ The Azure for SAP HANA architecture uses both virtual and physical networks. The
 
 ## Azure network services
 
-The architecture of Azure network services is a key component of the successful deployment of SAP applications on HANA Large Instance. Typically, SAP HANA on Azure (Large Instances) deployments have a larger SAP landscape with several different SAP solutions with varying sizes of databases, CPU resource consumption, and memory utilization. It's likely that not all IT systems are in Azure already. Your SAP landscape is often hybrid as well from a DBMS point and SAP application point of view using a mixture of NetWeaver, and S/4HANA, SAP HANA, and another DBMS. Azure offers different services that allow you to run the different DBMS, NetWeaver, and S/4HANA systems in Azure. Azure also offers you network technology to make Azure look like a virtual data center to your on-premises software deployments
+The architecture of Azure network services is a key component of the successful deployment of SAP applications on HANA Large Instance. SAP HANA on Azure (Large Instances) typically deployments have a larger SAP landscape with several different SAP solutions with varying sizes of databases, CPU resource consumption, and memory utilization. It's likely that not all IT systems are in Azure. Your SAP landscape is often hybrid as well from a DBMS point and SAP application point of view using a mixture of NetWeaver, and S/4HANA, SAP HANA, and another DBMS. Azure offers different services that allow you to run the different DBMS, NetWeaver, and S/4HANA systems in Azure. Azure also offers you network technology to make Azure look like a virtual data center to your on-premises software deployments
 
 The Azure network functionality involves the use of the following components:
 
 * Azure virtual networks connected to the ExpressRoute circuit that, in turn, connects to your on-premises network assets.
 
-* An ExpressRoute circuit that connects on-premises to Azure, with bandwidth of 1 Gbps or higher. The available bandwidth must allow for transfer of data between on-premises systems and systems that run on Azure VMs and must facilitate performant connectivity to Azure VMs from on-premises users. This ExpressRoute circuit is fully paid by you as a customer. 
+* An ExpressRoute circuit that connects on-premises to Azure, with bandwidth of 1 Gbps or higher. The available bandwidth must allow for transfer of data between on-premises systems and systems on Azure VMs and must facilitate connectivity to Azure VMs from on-premises users. This ExpressRoute circuit is fully paid by you as a customer.
 
 * All SAP systems in Azure set up in virtual networks to communicate with each other.
 

@@ -1,4 +1,4 @@
-You can choose whether to let Azure manage the storage infrastructure for your virtual hard disks or manage that infrastructure yourself. 
+You can choose whether to let Azure manage the storage infrastructure for your virtual hard disks or manage that infrastructure yourself.
 
 Suppose you have a variety of virtual machines running healthcare workloads in your on-premises network that you want to migrate to Azure. You want to maximize performance while minimizing administrative effort.
 
@@ -8,13 +8,13 @@ In this unit, you'll learn about disk roles and ephemeral disks. You'll also lea
 
 Each disk can take one of three roles in a virtual machine:
 
-- **OS disk**. One disk in each virtual machine contains the operating system files. When you create a virtual machine, you select a virtual machine image and that fixes the operating system and the OS disk that's attached to the new machine. The OS disk has a maximum capacity of 2,048 GB.
+- **OS disk**. One disk in each virtual machine contains the operating system files. When you create a virtual machine, you select a virtual machine image and that fixes the operating system and the OS disk that's attached to the new machine. The OS disk has a maximum capacity of 4 TB.
 - **Data disk**. You can add one or more data virtual disks to each virtual machine to store data. For example, database files, website static content, or custom application code should be stored on data disks. The number of data disks you can add depends on the virtual machine size. Each data disk has a maximum capacity of 32,767 GB.
 - **Temporary disk**. Each virtual machine contains a single temporary disk, which is used for short-term storage applications such as page files and swap files. The contents of temporary disks are lost during maintenance events, so don't use these disks for critical data. These disks are local to the server and aren't stored in a storage account.
 
 You can administer OS disks and data disks on the **Disks** page of the virtual machine in the Azure portal.
 
-![Editing disks in the Azure portal](../media/2-edit-disks-portal.png)
+![Editing disks in the Azure portal.](../media/2-edit-disks-portal.png)
 
 ## Ephemeral OS disks
 
@@ -45,7 +45,7 @@ Because unmanaged disks don't support all of the scalability and management feat
 
 In the portal, to use unmanaged disks, expand the **Advanced** section on the **Disks** page of the **Create a virtual machine** wizard.
 
-![Using unmanaged disks in the Azure portal](../media/2-using-unmanaged-disks.png)
+![Using unmanaged disks in the Azure portal.](../media/2-using-unmanaged-disks.png)
 
 Originally, all virtual hard disks in Azure were unmanaged. If you're running an old virtual machine, it might have unmanaged disks. You can convert those unmanaged disks to managed disks by using the `ConvertTo-AzureRmVmManagedDisk` PowerShell cmdlet.
 

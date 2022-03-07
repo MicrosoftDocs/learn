@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.connect-commands.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Let's check to see what you've learned so far.
+  ms.date: 02/16/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+    - content: How would you find all members of a response starting with "F"?
+      choices:
+        - content: "`Get-Process 'name of process' | Get-Member -Name F*`"
+          isCorrect: true
+          explanation: "Correct. This solution is how you search for member starting with F"
+        - content: "`Get-Process 'name of process' | Get-Member -Name F`"
+          isCorrect: false
+          explanation: "Incorrect. This solution will not work as it only searches for a member with the exact name F"
+        - content: "`Get-Process 'name of process' | Get-Members -Name F*`"
+          isCorrect: false
+          explanation: "Incorrect. The correct command to pipe to is Get-Member"
+    - content: What will this command answer with `Get-Process 'some process' | Format-Table Name,CPU | Select-Object Name, CPU`"?
+      choices:
+        - content: The Name and CPU for the process in question.
+          isCorrect: false
+          explanation: Incorrect. The use of Format-Table before Select-Object transforms the response to another type of object so values for Name and CPU is no longer found where they used to be.
+        - content: Empty response
+          isCorrect: true
+          explanation: Correct. The Format-Table command will transform the response so that Name and CPU values still exist, but in other columns.
+        - content: It will throw an error
+          isCorrect: false
+          explanation: Incorrect. It will not throw an error, but it will show an empty response as the Format-Table has transformed the object and the data is no longer found in the Name and CPU columns.
+    - content: Which statement is the best choice for _filtering left_?
+      choices:
+        - content: "`Get-Process | Select-Object Name | Where-Object Name -eq 'name-of-process'`"
+          isCorrect: false
+          explanation: Incorrect. In this statement, the filtering happens late (that is, at the _right side_ of the statement). Filtering late is slow and inefficient, especially if the command is sent over the network and the data store is large.
+        - content: "`Get-Process | Where-Object Name -eq name-of-process | Select-Object name-of-process`"
+          explanation: Almost. In this statement, filtering happens early (that is, toward the _left side_ of the statement). But the statement would be faster if it uses a built-in filter in the left-most cmdlet.
+          isCorrect: false
+        - content: "`Get-Process -Name name-of-process | Select-Object Name`"
+          isCorrect: true
+          explanation: Correct. This solution is the best choice. The statement filters early and uses a built-in filter.
+    

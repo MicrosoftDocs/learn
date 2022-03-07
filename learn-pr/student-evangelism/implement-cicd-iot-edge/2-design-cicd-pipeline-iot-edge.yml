@@ -9,6 +9,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
+  ms.custom: team=nextgen
 durationInMinutes: 6 
 content: |
   [!include[](includes/2-design-cicd-pipeline-iot-edge.md)]

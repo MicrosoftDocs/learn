@@ -3,9 +3,9 @@ uid: learn.wwl.build-query-delta-lake
 metadata:
   title: Build and query a Delta Lake
   description: "Build and query a Delta Lake"
-  ms.date: 05/15/2020
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build and query a Delta Lake

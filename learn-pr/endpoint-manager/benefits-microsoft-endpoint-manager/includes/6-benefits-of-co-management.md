@@ -2,8 +2,8 @@ Co-management adds new functionality to your existing Configuration Manager depl
 
 When you enroll existing Configuration Manager clients in co-management, you gain the following immediate value:  
 
-- **Conditional access with device compliance**
-- **Intune-based remote actions, for example: restart, remote control, or factory reset**
+- **Conditional Access with device compliance**
+- **Intune-based remote actions. For example: restart, remote control, or factory reset**
 - **Centralized visibility of device health**
 - **Link users, devices, and apps with Azure Active Directory (Azure AD)**
 - **Modern provisioning with Windows Autopilot**

@@ -5,10 +5,11 @@ metadata:
   title: Resource Provisioning
   description: Resource Provisioning
   ms.date: 08/15/2019
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 5
 content: |
   [!include[](includes/3-resource-provisioning.md)]

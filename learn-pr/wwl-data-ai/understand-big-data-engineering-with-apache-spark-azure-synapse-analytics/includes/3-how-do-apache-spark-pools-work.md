@@ -1,80 +1,43 @@
-There are two concepts within apache spark pools in Azure Synapse Analytics, namely Spark pools and Spark Instances. 
-In short, they do the following:
+Within Azure Synapse Analytics, Apache Spark applications run as independent sets of processes on a pool, coordinated by the SparkContext object in your main program (called the driver program). The SparkContext can connect to the cluster manager, which allocates resources across applications. The cluster manager is Apache Hadoop YARN. Once connected, Spark acquires executors on nodes in the pool, which are processes that run computations and store data for your application. Next, it sends your application code (defined by JAR or Python files passed to SparkContext) to the executors. Finally, SparkContext sends tasks to the executors to run.
 
-Spark Pools:
-* Exists as Metadata​
-* Creates a Spark Instance ​
-* No costs associated with creating Pool​
-* Permissions can be applied​
-* Best practices
+The SparkContext runs the user's main function and executes the various parallel operations on the nodes. Then, the SparkContext collects the results of the operations. The nodes read and write data from and to the file system. The nodes also cache transformed data in-memory as Resilient Distributed Datasets (RDDs).
 
-Spark Instances:
-* Created when connected to Spark Pool, Session, or Job​
-* Multiple users can have access​
-* Reusable
+![High level Azure Synapse Apache Spark Archictecture](../media/synapse-spark-architecture.png)
 
-​When we go a little more in depth, a Spark pool (preview) is created in the Azure portal. 
-It is the definition of a Spark pool that, when instantiated, is used to create a Spark instance that processes data. 
-When a Spark pool is created, it exists only as metadata; no resources are consumed, running, or charged for. 
-A Spark pool has series of properties that control the characteristics of a Spark instance; these characteristics include but are not limited to name, size, scaling behavior, time to live.​
+The SparkContext connects to the Apache Spark pool and is responsible for converting an application to a directed acyclic graph (DAG). The graph consists of individual tasks that get executed within an executor process on the nodes. Each application gets its own executor processes, which stay up for the duration of the whole application and runs tasks in multiple threads.
 
-As there is no resource cost associated with creating Spark pools, any number of pools can be created with any number of different configurations. Permissions can also be applied to Spark pools allowing users only to have access to some and not others.​
+The processes are managed automatically when you create an Apache Spark pool in Azure Synapse Analytics. In order to do so, you would have to create an Azure Synapse Analytics workspace first, then you can create a new Apache Spark pool as shown in the following steps. 
 
-A best practice is to create smaller Spark pools that may be used for development and debugging and then larger ones for running production workloads.​
+1. In the Azure portal, select **+ Create a resource**
 
-An example of Spark Pools:​
+    ![Azure Portal Create Resource](../media/azure-portal-create-resource.png)
 
-* You create a Spark pool called SP1; it has a fixed cluster size of 20 nodes.​
+2. In the search environment type **Synapse** and select **Azure Synapse Analytics**:
 
-* You submit a notebook job, J1 that uses 10 nodes, a Spark instance, SI1 is created to process the job.​
+    ![Azure Synapse Analytics Workspace](../media/azure-synapse-analytics-workspace-preview.png)
 
-* You now submit another job, J2, that uses 10 nodes because there is still capacity in the pool and the instance, the J2, is processed by SI1.​
+3. Once you select **Create**, you'll have some parameters to fill out.
 
-* If J2 had asked for 11 nodes, there would not have been capacity in SP1 or SI1. In this case, if J2 comes from a notebook, then the job will be rejected; if J2 comes from a batch job, then it will be queued.​
+    ![Azure Synapse Analytics Workspace Parameters](../media/azure-synapse-analytics-workspace-parameters.png)
 
-​
-When we go a little more in depth, Spark instances are created when you connect to a Spark pool, create a session, and run a job. 
-As multiple users may have access to a single Spark pool, a new Spark instance is created for each user that connects.​
+4. Once you've filled out the parameters, select **Review + create** and wait until the resource gets deployed. Once the Azure Synapse Analytics Workspace resource is created, you are now able to add an Apache Spark pool.
 
-When you submit a second job, then if there is capacity in the pool, the existing Spark instance also has capacity then the existing instance will process the job; if not and there is capacity at the pool level, then a new Spark instance will be created.​
+5. In the Azure portal, navigate to the Azure Synapse workspace, and in the overview screen, select **New Apache Spark pool**
 
-​
-An example of a Spark Instance:​
+    ![Azure Synapse Analytics Add Spark pool](../media/add-spark-pool.png)
 
-* You create a Spark pool call SP2; it has an autoscale enabled 10 – 20 nodes​
+6. In the **Create Apache Spark pool** screen, you'll have to specify a couple of parameters including:
+    - Apache Spark pool name
+    - Node size
+    - Autoscale
+    - Number of nodes
 
-* You submit a notebook job, J1 that uses 10 nodes, a Spark instance, SI1, is created to process the job.​
+        ![Create Apache Spark pool including Parameters](../media/create-apache-spark-pool-parameters.png)
 
-* You now submit another job, J2, that uses 10 nodes, because there is still capacity in the pool the instance auto grows to 20 nodes and processes J2.
+7. Once you've filled out the basic parameters, you could navigate to the **additional settings** tab to customize extra configuration parameters including autoscale and component versions.
 
+    ![Additional Settings set up for new Apache Spark pool](../media/additional-settings-new-spark-pool.png)
 
-In order to create a Spark pool in Azure Synapse Analytics, you would have to create a Synapse Analytics Workspace. 
-
-In the following exercise, you learn how to set up an Azure Synapse Analytics workspace as well as, the creation of a Spark Pool:
-
-![Azure Portal Create Resource](../media/azure-portal-create-resource.png)
-
-In the search environment type Azure Synapse and select Azure Synapse Analytics Workspace preview:
-
-![Azure Synapse Analytics Workspace Preview](../media/azure-synapse-analytics-workspace-preview.png)
-
-Once you select 'Create', you'll have some parameters to fill out.
-
-![Azure Synapse Analytics Workspace Parameters](../media/azure-synapse-analytics-workspace-parameters.png)
-
-Once you've filled out the parameters, select Create and wait until the resource gets deployed. 
-Once the resource that is, the Azure Synapse Analytics Workspace resource, is created, navigate to the resource and add a Spark Pool as follows:
-
-[![Azure Synapse Analytics Add Spark Pool](../media/add-spark-pool.png)](../media/add-spark-pool.png#lightbox)
-
-Once you've selected Create New Apache Spark pool, you'll be redirected to the following screen in which you'll have to specify a couple of parameters:
-
-![Create Apache Spark Pool including Parameters](../media/create-apache-spark-pool-parameters.png)
-
-Once you've filled out the basic parameters, you could also navigate to the additional settings tab in which you can customize additional configuration parameters including autoscale and component versions.
-
-![Additional Settings set up for new Spark Pool](../media/additional-settings-new-spark-pool.png)
-
-Once you've finished setting the parameters, you can select create and the Spark pool will be created. 
+8. Once you've finished setting up the parameters, you can select **Review + create** and the Spark pool will be created. 
 
 

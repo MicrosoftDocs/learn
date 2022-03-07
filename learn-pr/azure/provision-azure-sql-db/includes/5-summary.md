@@ -1,6 +1,6 @@
 Now that your Azure SQL database is up and running, you can connect it to your favorite SQL Server management tool to populate it with real data.
 
-You initially considered whether to run your database on-premises or in the cloud. With Azure SQL Database, you configure a few basic options and you have a fully functional SQL database that you can connect to your apps.
+You initially considered whether to run your database on-premises or in the cloud. With Azure SQL Database, you configure a few basic options, and you have a fully functional SQL database that you can connect to your apps.
 
 There's no infrastructure or software patches to maintain. You're now free to focus more on getting your transportation logistics app prototype up and running and less on database administration. Your prototype won't be a throw-away demo, either. Azure SQL Database provides production-level security and performance features.
 
@@ -16,11 +16,11 @@ Azure Cloud Shell makes it easy to start working with your databases. From Cloud
 
 The documentation provides lots more information, including tutorials and samples. Here are a few links to what we covered here:
 
-- [Azure SQL Database documentation](https://docs.microsoft.com/azure/sql-database/)
-- [Azure SQL Database purchasing models and resources](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers)
-- [Azure SQL Database logical servers and their management](https://docs.microsoft.com/azure/sql-database/sql-database-logical-servers)
-- [Azure SQL Database and SQL Data Warehouse firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure)
+- [Azure SQL Database documentation](/azure/sql-database/)
+- [Azure SQL Database purchasing models and resources](/azure/sql-database/sql-database-service-tiers)
+- [Azure SQL Database logical servers and their management](/azure/sql-database/sql-database-logical-servers)
+- [Azure SQL Database and SQL Data Warehouse firewall rules](/azure/sql-database/sql-database-firewall-configure)
 
-To learn more about Cloud Shell, see [Overview of Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview).
+To learn more about Cloud Shell, see [Overview of Azure Cloud Shell](/azure/cloud-shell/overview).
 
-If you're interested in learning more about the `sqlcmd` utility, see [sqlcmd Utility](https://docs.microsoft.com/sql/tools/sqlcmd-utility?view=sql-server-2017).
+If you're interested in learning more about the `sqlcmd` utility, see [sqlcmd Utility](/sql/tools/sqlcmd-utility?view=sql-server-2017).

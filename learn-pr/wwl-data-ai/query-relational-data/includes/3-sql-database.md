@@ -39,7 +39,7 @@ You can also enter INSERT, UPDATE, DELETE, CREATE, and DROP statements in the qu
 The `sqlcmd` utility runs from the command line and is also available in the  Cloud Shell. You specify parameters that identify the server, database, and your credentials. The code below shows an example. Replace `<server>` with the name of the database server that you created, `<database>` with the name of your database, and `<user name>` and `<password>` with your credentials.
 
 > [!NOTE]
-> To use the sqlcmd utility from the command line, you must install the Microsoft command line utilities on your computer. You can find download instructions, and more details on running the sqlcmd utility on the [sqlcmd Utility](https://docs.microsoft.com/sql/tools/sqlcmd-utility) web page.
+> To use the sqlcmd utility from the command line, you must install the Microsoft command line utilities on your computer. You can find download instructions, and more details on running the sqlcmd utility on the [sqlcmd Utility](/sql/tools/sqlcmd-utility) web page.
 
 ```bash
 sqlcmd -S <server>.database.windows.net -d <database> -U <username> -P <password>
@@ -49,7 +49,7 @@ If the sign-in command succeeds, you'll see a `1>` prompt. You can enter SQL com
 
 ## Use Azure Data Studio
 
-Azure Data Studio is a graphical utility for creating and running SQL queries from your desktop. For download and installation instructions, visit the [Download and install Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio) page on the Microsoft website.
+Azure Data Studio is a graphical utility for creating and running SQL queries from your desktop. For download and installation instructions, visit the [Download and install Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio) page on the Microsoft website.
 
 The first time you run Azure Data Studio the **Welcome** page should open. If you don't see the **Welcome** page, select **Help**, and then select **Welcome**. Select **Create a connection** to open the **Connection** pane:
 
@@ -69,7 +69,7 @@ The first time you run Azure Data Studio the **Welcome** page should open. If yo
 
 1. Select **Connect**.
 
-    If your server doesn't have a firewall rule allowing Azure Data Studio to connect, the Create new firewall rule form opens. Complete the form to create a new firewall rule. For details, see [Create a server-level firewall rule using the Azure portal](https://docs.microsoft.com/azure/azure-sql/database/firewall-create-server-level-portal-quickstart).
+    If your server doesn't have a firewall rule allowing Azure Data Studio to connect, the Create new firewall rule form opens. Complete the form to create a new firewall rule. For details, see [Create a server-level firewall rule using the Azure portal](/azure/azure-sql/database/firewall-create-server-level-portal-quickstart).
 
 1. After successfully connecting, your server is available in the **SERVERS** sidebar on the **Connections** page. You can now use the **New Query** command to create and run scripts of SQL commands.
 
@@ -131,7 +131,7 @@ To execute the script, select **Run** on the toolbar. Notifications appear in th
 
 ## Use SQL Server Management Studio
 
-SQL Server Management Studio is another tool that you can download and run on your desktop. See [Download SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) for details.
+SQL Server Management Studio is another tool that you can download and run on your desktop. See [Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) for details.
 
 To connect to a server and database, perform the following steps:
 

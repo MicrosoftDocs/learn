@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github-administration-for-enterprise-support-adoption.summary
+title: Summary
+metadata:
+  unitType: learning-content
+  title: Summary
+  description: Review of module contents
+  ms.date: 10/08/2021
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-summary.md)]

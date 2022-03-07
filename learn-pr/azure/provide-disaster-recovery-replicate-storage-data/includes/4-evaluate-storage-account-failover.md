@@ -16,7 +16,6 @@ The process is as follows:
 
     ![Illustration shows that the primary region is available.](../media/4-primary-available.png)
   
-
 1. **Failure occurs**
 
     When a primary region fails, your clients and users can't access data from that primary region. Asynchronous replication to the secondary region stops.

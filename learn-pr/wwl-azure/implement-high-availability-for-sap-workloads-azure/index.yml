@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.implement-high-availability-for-sap-workloads-azure
+metadata:
+  title: Implement high availability for SAP workloads in Azure
+  description: "This module explores high availability and disaster recovery support of Azure for SAP workloads, such as SAP application servers, SAP ASCS-SCS instances, DBMS instances, and SAP HANA. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 10/21/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement high availability for SAP workloads in Azure
+summary: This module explores high availability and disaster recovery support of Azure for SAP workloads, such as SAP application servers, SAP ASCS-SCS instances, DBMS instances, and SAP HANA.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore high availability and disaster recovery support of Azure for SAP workloads.
+  - Examine principal architectures.
+  - Determine latency between Azure virtual machines across Availability Zones.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.introduction
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-high-availability-disaster-recovery-support-of-azure
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-high-availability-of
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.examine-failover-clustering
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-deployment-scenarios
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-of-sap-application-servers
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-of-sap-ascs-scs-instances
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.examine-of-dbms-instances
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-sap-hana-availability
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-sql-server-azure
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-oracle-azure
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.examine-capabilities-of-azure-infrastructure
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.understand-service-level-agreements
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-availability-zones
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.examine-principal-architectures
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.determine-latency-between-azure-virtual-machines-across-availability-zones
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-activeactive-deployment-scenario
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-activepassive-deployment-scenario
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.configure-combined-disaster-recovery
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.knowledge-check
+- learn.wwl.implement-high-availability-for-sap-workloads-azure.summary
+badge:
+  uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.badge

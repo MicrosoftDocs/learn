@@ -4,13 +4,18 @@ The simplest way to automate cloud deployments is to assemble the commands requi
 
 ## Scripting languages
 
-A scripting language is a programming language used to automate the execution of tasks. There is no shortage of scripting languages to choose from; Wikipedia lists almost 200 of them<sup>[1][^1]</sup>. Not all of them are applicable to cloud platforms. From the standpoint of an administrator whose goal is to automate activities involving cloud resources, scripting languages generally fall into three categories:
+A scripting language is a programming language used to automate the execution of tasks. There is no shortage of scripting languages to choose from; Wikipedia lists almost 200 of them<sup>[1][^1]</sup>. Not all of them are applicable to cloud platforms. From the standpoint of an administrator whose goal is to automate activities involving cloud resources, scripting languages generally fall into two categories:
 
-- General-purpose scripting languages such as Bash
-- Special-purpose scripting languages such as PowerShell
+- General-purpose scripting languages such as Bash and PowerShell
 - Fully featured programming languages such as Python that can also be used for scripting
 
-General-purpose scripting languages offer abilities for branching, looping, and decision making, but they rely on operating-system commands or commands from add-ons such as cloud CLIs to do the bulk of the work. Bash, for example, doesn't include commands for creating VMs in AWS or Azure, but it can invoke CLI commands that do. And a single Bash script can include any number of CLI commands. A command in a Bash script is no different than a command an administrator would type at the command line. The following Bash script, for example, uses the Azure CLI's `az` command to create a resource group in Azure and an Ubuntu VM inside the resource group:
+General-purpose scripting languages offer abilities for branching, looping, and decision making, but they rely on operating-system commands or commands from add-ons such as cloud CLIs to do the bulk of the work. Bash, for example, doesn't include commands for creating VMs in AWS or Azure, but it can invoke CLI commands that do. And a single Bash script can include any number of CLI commands. A command in a Bash script is no different than a command an administrator would type at the command line.
+
+### Bash scripting
+
+Bash, short for "Bourne-again shell," is among the world's most popular scripting languages. It is an irreplaceable tool for system administrators and cloud administrators alike. It enjoys native support in Linux and mac OS and is available for Windows as well. Moreover, it is supported in cloud shells such as the Azure Cloud Shell.
+
+The following Bash script, for example, uses the Azure CLI's `az` command to create a resource group in Azure and an Ubuntu VM inside the resource group:
 
 ```bash
 az group create --name cmu-rg --location eastus
@@ -21,6 +26,8 @@ az vm create --resource-group cmu-rg \
   --admin-password Micr0s0ft** \
   --location eastus
 ```
+
+### PowerShell scripting
 
 Another scripting tool that is popular among cloud administrators is PowerShell. Microsoft developed PowerShell to be the latest generation of the Windows command line, and also a more secure alternative to the Windows Script Host (WSH) originally developed for Windows Server. It has since become an open-source project and works on Windows and Linux.
 
@@ -43,6 +50,8 @@ New-AzVm -ResourceGroupName "cmu-rg" `
   -Image UbuntuLTS `
   -Credential $Cred
 ```
+
+### Python development
 
 Administrators can also use full-featured programming languages such as Python to create and manage cloud resources. These languages don't include cloud-specific features of their own, but they can incorporate libraries and software development kits (SDKs) that do. Most major cloud service providers offer free SDKs for interfacing with their platforms in various languages. Microsoft, for example, offers Azure SDKs for C\#, Go, Java, Python, Node.js, and other popular programming languages, as does AWS. Even without SDKs, programmers can use the REST APIs offered by major cloud platforms to invoke cloud services. SDKs and libraries simply make writing such programs easier.
 
@@ -70,9 +79,7 @@ except ClientError as e:
 
 One of the benefits to using a programming language for scripting is robust support for error handling and debugging. The downside, of course, is that you need programmers well versed in the language of choice and knowledgeable about cloud platforms and cloud SDKs.
 
-## Bash scripting
-
-Bash, short for "Bourne-again shell," is among the world's most popular scripting languages. It is an irreplaceable tool for system administrators and cloud administrators alike. It enjoys native support in Linux and mac OS and is available for Windows as well. Moreover, it is supported in cloud shells such as the Azure Cloud Shell.
+## Extending the script
 
 The following Bash commands, typed one by one into the Azure CLI or Cloud Shell, create a resource group in Azure's East US region and an Ubuntu VM to go in it. These are identical to the `az` commands above except for the `--generate-ssh-keys` switch, which replaces login passwords with public/private key pairs for added security:
 
@@ -100,7 +107,7 @@ sudo apt install lamp-server^
 exit
 ```
 
-That's a lot of steps, especially if you need to execute them not just once, but several times. As an alternative to entering these commands manually, an administrator might elect to script them by creating a text file named *ccvm.sh* (short for "create and configure VM") containing the statements in Figure 2. 
+That's a lot of steps, especially if you need to execute them not just once, but several times. As an alternative to entering these commands manually, an administrator might elect to script them by creating a text file named *ccvm.sh* (short for "create and configure VM") containing the statements in Figure 2.
 
 The script doesn't merely recite the commands an operator would type at the console. Note the call to the `az vm show` command to get the VM's public IP address and assign it to the variable named `$IP_ADDRESS`, the use of redirection to (`<<`) to inject commands into the SSH session, and the addition of command-line switches (for example, the `-y` in `sudo apt -y install`) to suppress confirmation prompts so the script can run from start to finish without human intervention:
 
@@ -136,15 +143,27 @@ The benefit of this approach is that many commands are reduced to one command, a
 
 We could address this modifying the script to include a variable specifying the Azure region and modifying the variable each time we run the script to target a different region. Alternatively, we could place the region name in an environment variable and reference the environment variable in the script, or, better still, pass the region name in a command-line parameter. But we would immediately encounter other problems, such as the fact that you can't create two VMs or two resource groups with the same name in two different regions. This is solvable, too. We could, for example, append the region name to the VM name and the resource-group name to generate unique names for each region.
 
-The point is that scripting cloud CLI commands delivers a degree of automation, but in practice, scripts can quickly grow complex and become more an exercise in programming than in administration. Here are four reasons that scripting alone is not an ideal solution for automating the management of cloud resources:
+## Challenges in using scripting to automate cloud resources
 
-- **Complexity** -- Scripts are invariably more complex than the equivalent commands typed into a console, primarily because they must do everything a human operator would do and anticipate every condition that a human might encounter. In addition, scripts need to be parameterized so that one script, for example, can deploy the same solution to different regions, or so that an administrator running the script can specify resource names and ensure that they are unique.
+The point is that scripting cloud CLI commands delivers a degree of automation, but in practice, scripts can quickly grow complex and become more an exercise in programming than in administration. Here are four reasons that scripting alone is not an ideal solution for automating the management of cloud resources.
 
-- **Idempotency** -- Scripts require additional logic if they're to be *idempotent*, which means running the same script twice produces the same result. What should happen, for example, if a script tries to create a resource group but that resource group already exists? Scripts can (and should) be robust enough to account for circumstances such as these, but robustness comes at the expense of increased length and complexity. Idempotency is an important requirement if scripts are to update existing cloud resources as well as provision new ones.
+### Complexity
 
-- **Cloud specificity** -- The script shown in Figure 2 requires heavy modification -- in fact, rewriting -- to work with other cloud platforms such as AWS and GCP. The script could be written to run one way for Azure, another way for AWS, and yet another way for GCP (perhaps driven by an environment variable or command-line parameter), but the script would necessarily become more complex.
+Scripts are invariably more complex than the equivalent commands typed into a console, primarily because they must do everything a human operator would do and anticipate every condition that a human might encounter. In addition, scripts need to be parameterized so that one script, for example, can deploy the same solution to different regions, or so that an administrator running the script can specify resource names and ensure that they are unique.
 
-- **Version control** -- Scripts are programs and should be submitted to version control just like application code. Otherwise, how do you know when a script was modified, and why, and roll back to a previous version if the current version breaks? This adds a layer of administrative complexity as well as cost.
+### Idempotency
+
+Scripts require additional logic if they're to be *idempotent*, which means running the same script twice produces the same result. What should happen, for example, if a script tries to create a resource group but that resource group already exists? Scripts can (and should) be robust enough to account for circumstances such as these, but robustness comes at the expense of increased length and complexity. Idempotency is an important requirement if scripts are to update existing cloud resources as well as provision new ones.
+
+### Cloud specificity
+
+The script shown in Figure 2 requires heavy modification -- in fact, rewriting -- to work with other cloud platforms such as AWS and GCP. The script could be written to run one way for Azure, another way for AWS, and yet another way for GCP (perhaps driven by an environment variable or command-line parameter), but the script would necessarily become more complex.
+
+### Version control
+
+Scripts are programs and should be submitted to version control just like application code. Otherwise, how do you know when a script was modified, and why, and roll back to a previous version if the current version breaks? This adds a layer of administrative complexity as well as cost.
+
+### Interaction with other automation
 
 An added complication is that the usefulness of such scripts depends on how well they mesh with one another, and how they behave in an environment in which they might be running at the same time. When scripts are written and deployed on an ad-hoc basis (as is often the case) without proper planning and forethought, there's often no time or opportunity to test them in a safe environment where they don't affect services already in production. This is when it begins to become obvious that coordination is needed at a much higher level, involving not just IT platforms and infrastructure but the people who maintain and manage them.
 

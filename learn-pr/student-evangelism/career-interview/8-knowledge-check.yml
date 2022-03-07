@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.career-interview.8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 08/19/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+    - content: What is good interview etiquette?
+      choices:
+        - content: Have questions prepared to show interest in the company.
+          isCorrect: false
+          explanation: Incorrect. Having questions ready is a good idea because it does show initiative, but it's
+            not really about etiquette.
+        - content: Send an email after the interview to thank the interviewer.
+          isCorrect: true
+          explanation: Correct. A thank-you email leaves a good impression and is courteous.
+        - content: Sharply disagree with your interviewer.
+          explanation: Incorrect. It's fine to disagree with your interviewer in a respectful way. That is, acknowledge their opinion and explain how
+            you offer a different perspective. Disagreeing in a disrespectful way will leave a negative impression.
+          isCorrect: false

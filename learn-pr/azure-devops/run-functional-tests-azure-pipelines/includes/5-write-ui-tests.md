@@ -13,7 +13,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
     ```bash
     git fetch upstream selenium
-    git checkout -b selenium upstream/selenium
+    git checkout -B selenium upstream/selenium
     ```
 
     Recall that *upstream* refers to the Microsoft GitHub repository. Your project's Git configuration understands the upstream remote because you set up that relationship. You set it up when you forked the project from the Microsoft repository and cloned it locally.
@@ -58,7 +58,7 @@ public class HomePageTest
 
 This diagram shows the `IWebDriver` interface and a few of the classes that implement this interface:
 
-![The IWebDriver interface, its methods, and concrete classes](../media/5-selenium-webdriver.png)
+:::image type="content" source="../media/5-selenium-webdriver.png" alt-text="The IWebDriver interface, its methods, and concrete classes.":::
 
 The diagram shows three of the methods that `IWebDriver` provides: `Navigate`, `FindElement`, and `Close`.
 

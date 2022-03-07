@@ -74,7 +74,7 @@ To pause a container, run the `docker pause` command. Here is an example.
 docker pause happy_wilbur
 ```
 
-Pausing a container will suspend all processes. This command enables the container to continue processes at a later stage. The `docker unpause` command unsuspends all processes.
+Pausing a container will suspend all processes. This command enables the container to continue processes at a later stage. The `docker unpause` command un-suspends all processes in the specified containers.
 
 ### How to restart a container
 

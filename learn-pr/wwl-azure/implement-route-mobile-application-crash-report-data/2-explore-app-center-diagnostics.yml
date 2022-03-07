@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-route-for-mobile-application-crash-report-data.explore-app-center-diagnostics
+title: Explore App Center Diagnostics
+metadata:
+  title: Explore App Center Diagnostics
+  description: "Explore App Center Diagnostics"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explore-app-center-diagnostics.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-azure-resources-bicep.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: Summary.
+  ms.date: 08/17/2021
+  author: joshuawaddell
+  ms.author: jowaddel
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]

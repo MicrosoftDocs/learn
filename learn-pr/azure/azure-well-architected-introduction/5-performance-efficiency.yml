@@ -5,8 +5,8 @@ metadata:
   title: Performance efficiency
   description: Performance efficiency
   ms.date: 05/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: robbyatmicrosoft
+  ms.author: robbymillsap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following is an example of scaling up?'
+  - content: 'Which of the following is an example of scaling up (vertical scaling)?'
     choices:
     - content: 'Updating your application to use a queuing service'
       isCorrect: false
-      explanation: 'Including a queuing service in your application can be a smart architectural decision, but is not an example of scaling up.'
+      explanation: 'Including a queuing service in your application can be a smart architectural decision, but is not an example of vertical scaling.'
     - content: 'Adding more web servers into a web farm'
       isCorrect: false
-      explanation: 'Adding more web servers into a web farm is an example of scaling out.'
+      explanation: 'Adding more web servers into a web farm is an example of scaling out (horizontal scaling).'
     - content: 'Adding another virtual machine into a database cluster'
       isCorrect: false
-      explanation: 'Adding another virtual machine into a database cluster is not an example of scaling up.'
+      explanation: 'Adding another virtual machine into a database cluster is not an example of vertical scaling.'
     - content: 'Updating a virtual machine to a larger size'
       isCorrect: true
-      explanation: 'Changing a virtual machine to a larger size increases the resources available to the instance, and is an example of scaling up.'
-  - content: 'Which of the following is an example of scaling out?'
+      explanation: 'Changing a virtual machine to a larger size increases the resources available to the instance, and is an example of scaling up (vertical scaling).'
+  - content: 'Which of the following is an example of scaling out (horizontal scaling)?'
     choices:
     - content: 'Updating a virtual machine to a larger size'
       isCorrect: false
-      explanation: 'Changing a virtual machine to a larger size increases the resources available to the instance, and is an example of scaling up.'
+      explanation: 'Changing a virtual machine to a larger size increases the resources available to the instance, and is an example of scaling up (vertical scaling).'
     - content: 'Adding more storage to a virtual machine'
       isCorrect: false
-      explanation: 'Adding more storage to a virtual machine is not an example of scaling out.'
+      explanation: 'Adding more storage to a virtual machine is not an example of horizontal scaling.'
     - content: 'Adding more web servers into a web farm'
       isCorrect: true
-      explanation: 'Adding more web servers into a web farm is an example of scaling out.'
+      explanation: 'Adding more web servers into a web farm is an example of scaling out (horizontal scaling).'
     - content: 'Replicating backups to another region'
       isCorrect: false
       explanation: 'Replicating backups to another region is not applicable to scaling of resources.'

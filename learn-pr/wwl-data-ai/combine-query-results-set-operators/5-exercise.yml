@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.combine-query-results-set-operators.exercise
+title: 'Exercise: Combine query results with set operators'
+metadata:
+  title: 'Exercise: Combine query results with set operators'
+  description: "Exercise: Combine query results with set operators"
+  ms.date: 01/10/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 105116
+labModal: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]

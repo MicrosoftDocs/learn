@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.explore-sap-hana-azure-large-instances
+metadata:
+  title: Explore SAP HANA on Azure (Large Instances)
+  description: Explore SAP HANA on Azure (Large Instances)
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore SAP HANA on Azure (Large Instances)
+prerequisites: ""
+summary: |
+  SAP HANA on Azure (Large Instances) represent many of the largest SAP workloads. These modules explore the unique requirements for architecture, planning, migration, and run, monitor, and support of HANA Large Instances.
+iconUrl: /learn/achievements/sap-hana-explore.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+modules:
+- learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings
+- learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture
+- learn.wwl.plan-sap-hana-azure-large-instances-deployments
+- learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery
+- learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure
+- learn.wwl.implement-deploy-sap-hana-azure-large-instances
+- learn.wwl.manage-sap-hana-azure-large-instances
+- learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances
+- learn.wwl.implement-business-continuity-disaster-recovery-backup
+trophy:
+  uid: learn.wwl.explore-sap-hana-azure-large-instances.trophy

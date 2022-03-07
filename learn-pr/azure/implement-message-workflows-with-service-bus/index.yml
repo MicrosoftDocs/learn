@@ -4,18 +4,18 @@ metadata:
   title: Implement message-based communication workflows with Azure Service Bus
   description: Discover how to write code in .NET applications using Azure Service Bus for communications that can handle high demand, low bandwidth, and hardware failures.
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement message-based communication workflows with Azure Service Bus
 summary: Write C# code in a custom application that sends and receives messages using Azure Service Bus topics and queues.
 abstract: |
   In this module, you will:
-  - Choose whether to use Service Bus queues, topics, or relays to communicate in a distributed application
-  - Configure an Azure Service Bus namespace in an Azure subscription
-  - Create a Service Bus topic and use it to send and receive messages
-  - Create a Service Bus queue and use it to send and receive messages
+  - Choose whether to use Service Bus queues or topics to communicate in a distributed application.
+  - Configure an Azure Service Bus namespace in an Azure subscription.
+  - Create a Service Bus topic and use it to send and receive messages.
+  - Create a Service Bus queue and use it to send and receive messages.
 prerequisites: None
 iconUrl: /learn/achievements/implement-message-workflows-with-service-bus.svg
 levels:

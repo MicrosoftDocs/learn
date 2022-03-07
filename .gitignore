@@ -11,6 +11,8 @@ _dependentPackages/
 
 .openpublishing.buildcore.ps1
 **/.vscode/
+.devcontainer/
 .vs/
 .DS_Store
 Thumbs.db
+*.bak

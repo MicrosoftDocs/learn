@@ -12,8 +12,8 @@ You have learned to:
 
 To learn more about enterprise scale, the Microsoft Cloud Adoption Framework for Azure, and related tools, review these resources:
 
-- [Enterprise-scale and the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/?azure-portal=true)
-- [Enterprise Agreement enrollment and Azure Active Directory tenants](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/enterprise-enrollment-and-azure-ad-tenants?azure-portal=true)
-- [Identity and access management](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/identity-and-access-management?azure-portal=true)
-- [Management group and subscription organization](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/management-group-and-subscription-organization?azure-portal=true)
+- [Enterprise-scale and the Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/enterprise-scale/?azure-portal=true)
+- [Enterprise Agreement enrollment and Azure Active Directory tenants](/azure/cloud-adoption-framework/ready/enterprise-scale/enterprise-enrollment-and-azure-ad-tenants?azure-portal=true)
+- [Identity and access management](/azure/cloud-adoption-framework/ready/enterprise-scale/identity-and-access-management?azure-portal=true)
+- [Management group and subscription organization](/azure/cloud-adoption-framework/ready/enterprise-scale/management-group-and-subscription-organization?azure-portal=true)
 - [GitHub repository for enterprise-scale](https://github.com/Azure/Enterprise-Scale?azure-portal=true)

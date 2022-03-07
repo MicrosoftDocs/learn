@@ -1,8 +1,8 @@
-After the data is separated into the training and testing sections, we can train our machine learning model. One of the reasons Python is a popular language for data science and machine learning is because of all the libraries that exist to support the study of data. As we've seen, getting the machine learning model created and the data split was simple. Fitting and testing our model will also be simple.
+After the data is separated into the training and testing sections, we can train our machine learning model. One of the reasons Python is a popular language for data science and machine learning is because of all the libraries that exist to support the study of data. As we've seen, creating the machine learning model and splitting the data was simple. Fitting and testing our model will also be simple.
 
 ## Fit the model
 
-The next step in the data science lifecycle is to fit the model to the training data. The act of "fitting" is basically where the model is learning. This process was described with the berry example. The human was being "fitted" when they brought a berry and were told what kind it was. To fit the model, you call `fit()` on the machine learning classifier and pass in the `X_train` and `y_train` data.
+The next step in the data science lifecycle is to fit the model to the training data. The act of "fitting" is basically how the model learns. This process was described with the berry example. The human was being "fitted" when they brought a berry and were told what kind it was. To fit the model, you call `fit()` on the machine learning classifier and pass in the `X_train` and `y_train` data.
 
 Fitting the model is like doing a practice exam where you have access to the answers to ensure you understand the concepts.
 
@@ -23,4 +23,4 @@ y_pred = tree_model.predict(X_test)
 print(y_pred)
 ```
 
-How many `Y`s did you get? Do the predictions look representative of the data that was input? It's unclear without further investigation, but so far the output contains ~9 `Y` responses out of 60 input values. About 20% of the total data yielded a `Y`. This percentage is about 15% of this predicted data, so it's relatively close.
+How many `Y`s did you get? Do the predictions look representative of the data that was input? It's unclear without further investigation, but so far the output contains ~9 `Y` responses out of 60 input values. About 20% of the total data yielded a `Y`. Our percentage is about 15% of this predicted data, so it's relatively close.

@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.orchestrate-containers-windows-server-using-kubernetes
+metadata:
+  title: Orchestrate containers on Windows Server using Kubernetes
+  description: "Orchestrate containers on Windows Server using Kubernetes"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+title: Orchestrate containers on Windows Server using Kubernetes
+summary: Learn about Kubernetes, containers, container orchestration, and Kubernetes orchestration in Windows Server 2019. Also learn the process for deploying a Kubernetes cluster on Windows and describe how to use Azure Arc for Kubernetes.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe container orchestration.
+  - Describe Kubernetes.
+  - Describe how to create a Kubernetes cluster.
+  - Describe Azure Arc for Kubernetes.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Windows Server.
+  - Working with virtualization technologies, including containers.
+iconUrl: /learn/achievements/orchestrate-containers-on-windows-server-using-kubernetes.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- windows-server
+units:
+- learn.wwl.orchestrate-containers-windows-server-using-kubernetes.introduction
+- learn.wwl.orchestrate-containers-windows-server-using-kubernetes.define-orchestration
+- learn.wwl.orchestrate-containers-windows-server-using-kubernetes.define-kubernetes
+- learn.wwl.orchestrate-containers-windows-server-using-kubernetes.deploy-kubernetes-resources
+- learn.wwl.orchestrate-containers-windows-server-using-kubernetes.create-kubernetes-cluster-windows
+- learn.wwl.orchestrate-containers-windows-server-using-kubernetes.define-azure-arc
+- learn.wwl.orchestrate-containers-windows-server-using-kubernetes.connect-azure-arc-enabled-kubernetes-cluster-to-azure-arc
+- learn.wwl.orchestrate-containers-windows-server-using-kubernetes.knowledge-check
+- learn.wwl.orchestrate-containers-windows-server-using-kubernetes.summary
+badge:
+  uid: learn.wwl.orchestrate-containers-windows-server-using-kubernetes.badge

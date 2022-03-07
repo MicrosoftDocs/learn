@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-package-management.explore-self-hosted-saas-based-package-sources
+title: Explore self-hosted and SaaS based package sources
+metadata:
+  title: Explore self-hosted and SaaS based package sources
+  description: "Explore self-hosted and SaaS based package sources"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-explore-self-hosted-saas-based-package-sources.md)]

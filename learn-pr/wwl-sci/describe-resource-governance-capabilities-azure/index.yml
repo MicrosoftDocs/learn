@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.describe-resource-governance-capabilities-azure
+metadata:
+  title: Describe resource governance capabilities in Azure
+  description: "Describe resource governance capabilities in Azure"
+  ms.date: 06/21/2021
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe resource governance capabilities in Azure
+summary: Learn about Azure resource governance capabilities in Azure, including Azure resources locks, Blueprints,  and Azure policy.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe the capabilities of Azure resource locks.
+  - Describe the function of Azure Blueprints.
+  - Describe how Azure policy helps organizations assess compliance.
+prerequisites: |
+  - General understanding of networking and cloud computing concepts.
+  - General IT knowledge or any general experience working in an IT environment.
+  - General understanding of Microsoft Azure and Microsoft 365.
+iconUrl: /learn/achievements/describe-resource-governance-capabilities-in-azure.svg
+levels:
+- beginner
+roles:
+- business-user
+- student
+products:
+- azure
+units:
+- learn.wwl.describe-resource-governance-capabilities-azure.introduction
+- learn.wwl.describe-resource-governance-capabilities-azure.describe-use-azure-resource-locks
+- learn.wwl.describe-resource-governance-capabilities-azure.describe-use-azure-blueprints
+- learn.wwl.describe-resource-governance-capabilities-azure.describe-azure-policy
+- learn.wwl.describe-resource-governance-capabilities-azure.knowledge-check
+- learn.wwl.describe-resource-governance-capabilities-azure.summary-resources
+badge:
+  uid: learn.wwl.describe-resource-governance-capabilities-azure.badge

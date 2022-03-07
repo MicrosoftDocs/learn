@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.test-bicep-code-using-github-actions.exercise-add-test-job-workflow
+title: Exercise - Add a test job to your workflow
+metadata:
+  unitType: exercise
+  title: Exercise - Add a test job to your workflow
+  description: Add a post-deployment test job to your Bicep deployment workflow.
+  ms.date: 10/19/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-exercise-add-test-job-workflow.md)]

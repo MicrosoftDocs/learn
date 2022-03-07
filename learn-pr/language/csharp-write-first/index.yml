@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-write-first
 metadata:
-  title: Write your first C# code
-  description: Get started by writing tiny code examples to learn the basics of the C# syntax!
+  title: 'Write your first C# code'
+  description: 'Get started by writing tiny code examples to learn the basics of the C# syntax!'
   ms.date: 08/30/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Write your first C# code

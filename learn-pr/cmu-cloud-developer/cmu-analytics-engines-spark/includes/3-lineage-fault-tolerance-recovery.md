@@ -11,7 +11,7 @@ owasp_attacks_RDD = xss_RDD.union(sqli_RDD)
 
 As RDDs are derived from each other using transformations, Spark keeps track of the dependencies using a lineage graph. This allows the RDDs to be computed lazily (as defined earlier) and provides fault recovery information to the framework. The lineage for the code snippet is shown in the following figure:
 
-![RDD lineage graph](../media/rdd-lineage-graph.png)
+![RDD lineage graph.](../media/rdd-lineage-graph.png)
 
 _Figure 4: RDD lineage graph_
 
@@ -36,7 +36,7 @@ On the other hand, consider a `join()` transformation, which when called on RDDs
 
 Both of these dependencies are shown in the following figure:
 
-![Narrow and wide dependencies in Spark](../media/dependencies.png)
+![Narrow and wide dependencies in Spark.](../media/dependencies.png)
 
 _Figure 5: Narrow and wide dependencies in Spark_
 

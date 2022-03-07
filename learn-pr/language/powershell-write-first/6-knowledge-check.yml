@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.powershell-write-first.knowledge-check
+title: Knowledge check
+metadata:
+  title: Check your knowledge
+  description: Review what you've learned in this module.
+  ms.date: 02/08/2021
+  author: chasewilson
+  ms.author: phwilson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How does PowerShell compile?"
+    choices:
+    - content: "You run your code through a compiler as a step to outputting an executable program."
+      isCorrect: false
+      explanation: "PowerShell doesn't need to be run through a compiler as a manual step."
+    - content: "PowerShell is an interpreted language and your code will be interpreted to the computer as it runs."
+      isCorrect: false
+      explanation: "PowerShell isn't an interpreted language and doesn't get communicated to the computer as it runs."
+    - content: "PowerShell doesn't compile at all, and the computer knows what your code says automatically."
+      isCorrect: false
+      explanation: "PowerShell is compiled to something the computer can understand."
+    - content: "PowerShell is compiled to an AST, checked for issues, and then translated again so the computer can understand."
+      isCorrect: true
+      explanation: "Correct!"
+  - content: "Which of the following statements is true about PowerShell."
+    choices:
+    - content: "PowerShell is case sensitive."
+      isCorrect: false
+      explanation: "Actually, PowerShell is case insensitive."
+    - content: "`Prompt` is a cmdlet and `Read-Host` is a parameter."
+      isCorrect: false
+      explanation: "Actually, the reverse is true. `Read-Host` is a cmdlet, and `Prompt` is a parameter."
+    - content: "You can enclose strings in either single or double quotation marks."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "If you make a mistake when you write code, you have to delete it all and start over."
+      isCorrect: false
+      explanation: "One of the great things about software development is, if you make a mistake, you can fix it and no one has to know."
+  - content: 'What is **wrong** with this line of code? `Read-host "What is wrong with this line of code?"`'
+    choices:
+    - content: "The letter 'h' in `Read-host` should be uppercase."
+      isCorrect: false
+      explanation: "The 'h' could be uppercase, but it doesn't have to be."
+    - content: "It's missing a semicolon at the end."
+      isCorrect: false
+      explanation: "PowerShell doesn't need semicolons to tell when a command is over."
+    - content: "The string should be enclosed in single quotation marks."
+      isCorrect: false
+      explanation: "You can enclose strings in either single or double quotation marks."
+    - content: "Nothing is wrong with this command. It will run normally."
+      isCorrect: true
+      explanation: "Correct! PowerShell's relaxed behavior allows this command to run normally."

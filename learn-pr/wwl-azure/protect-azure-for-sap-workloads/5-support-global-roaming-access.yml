@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-azure-for-sap-workloads.access-azure-infrastructure
+title: Support global roaming
+metadata:
+  title: Support global roaming
+  description: "Support global roaming"
+  ms.date: 12/10/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-support-global-roaming-access.md)]

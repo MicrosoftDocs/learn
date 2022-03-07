@@ -4,11 +4,10 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 08/31/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: asudbring
+  ms.author: allensu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Summary
 durationInMinutes: 2
 content: |

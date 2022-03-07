@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.github.create-custom-github-actions
+metadata:
+  title: Create and publish custom GitHub actions 
+  description: Learn how to create and publish custom GitHub actions.
+  ms.date: 04/14/2021
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create and publish custom GitHub actions
+summary: Learn how to write your own GitHub actions and identify the metadata, syntax, and workflow commands to create custom workflows. Learn best practices for documenting and versioning your action, and how to publish your action to the GitHub Marketplace.
+abstract: |
+  In this module, you will learn how to:
+  - Identify the metadata and syntax needed to create custom GitHub actions
+  - Learn best practices to publish a private or public GitHub action
+  - Consume actions within a workflow file
+  - Create custom JavaScript based actions
+  - Publish a newly created action to the GitHub Marketplace
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+prerequisites: |
+  - A GitHub account
+  - The ability to navigate and edit files in GitHub
+  - Basic familiarity with GitHub Actions and workflows
+  - Basic familiarity with continuous integration using GitHub Actions and workflows
+units:
+  - learn.github.create-custom-github-actions.introduction
+  - learn.github.create-custom-github-actions.create-custom-github-action
+  - learn.github.create-custom-github-actions.publish-custom-github-action
+  - learn.github.create-custom-github-actions.exercise-create-custom-action
+  - learn.github.create-custom-github-actions.knowledge-check
+  - learn.github.create-custom-github-actions.summary
+iconUrl: /learn/achievements/github/create-custom-github-actions.svg
+badge:
+  uid: learn.github.create-custom-github-actions.badge

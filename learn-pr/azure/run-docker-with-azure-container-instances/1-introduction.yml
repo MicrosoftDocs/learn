@@ -3,12 +3,11 @@ uid: learn.run-docker-containers-aci.1-introduction
 metadata:
   title: Introduction
   description: Introduction to Azure Container Instances.
-  ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 09/07/2021
+  author: v-tcassi
+  ms.author: tomcassidy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Introduction to Azure Container Instances
 durationInMinutes: 2
 content: |

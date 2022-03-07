@@ -1,4 +1,4 @@
-When adding decision logic to your application, you'll need to evaluate many different kinds of conditions.  To express those conditions adequately, you'll need to have a full compliment of operators.
+When adding decision logic to your application, you'll need to evaluate many different kinds of conditions.  To express those conditions adequately, you'll need to have a full complement of operators.
 
 Suppose you need to determine whether one value is greater, equal to, or less than another value.  Or, what if you need to ensure a user's input matches a specific value.  Or, what if you need to make sure the value returned from a method does not indicate failure.
 

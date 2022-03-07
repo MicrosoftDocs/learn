@@ -16,7 +16,7 @@ To complete the work item:
 1. From Azure DevOps, go to **Boards**, and from the menu, select **Boards**.
 1. Move the **Move model data to its own package** work item from the **Doing** column to the **Done** column.
 
-    ![Screenshot of Azure Boards, showing the card in the Done column](../media/8-azure-boards-wi6-done.png)
+    :::image type="content" source="../media/8-azure-boards-wi6-done.png" alt-text="A screenshot of Azure Boards showing the work item in the Done column.":::
 
 ## Disable the pipeline or delete your project
 
@@ -35,7 +35,7 @@ To disable the pipeline:
 1. In Azure Pipelines, navigate to your pipeline.
 1. From the dropdown, select **Settings**.
 
-    ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
+    :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
 1. Under **Processing of new run requests**, select **Disabled**, and then select **Save**.
 
     Your pipeline will no longer process build requests.
@@ -48,14 +48,10 @@ This option deletes your Azure DevOps project, including what's on Azure Boards 
 To delete the project:
 
 1. From Azure DevOps, go to your project. Earlier, we recommended that you name this project **Space Game - web - Dependencies**.
-1. Select the gear icon next to the project name.
-
-    The icon might not appear until you move your mouse over that area.
-
-    ![Screenshot of Azure DevOps showing the gear icon](../../shared/media/azure-devops-project-gear.png)
+1. Select **Project settings** in the lower corner.
 1. From the **Project details** area, scroll to the bottom, and select **Delete**.
 
-    ![Screenshot of Azure DevOps showing the Delete button](../../shared/media/azure-devops-delete-project.png)
+    :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
 1. From the window that appears, enter the project name, and select **Delete** a second time.
 
     Your project is now deleted.

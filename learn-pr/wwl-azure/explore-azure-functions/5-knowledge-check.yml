@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-functions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/12/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following Azure Functions hosting plans is best when predictive scaling and costs are required?"
+    choices:
+    - content: "Functions Premium Plan"
+      isCorrect: false
+      explanation: "That's incorrect. The Premium Plan does support scaling, but it is not predictive."
+    - content: "App service plan"
+      isCorrect: true
+      explanation: "That's correct. App service plans support setting autoscaling rules based on predictive usage."
+    - content: "Consumption plan"
+      isCorrect: false
+      explanation: "That's incorrect. The Consumption plan does support scaling, but it is not predictive."
+  - content: "An organization wants to implement a serverless workflow to solve a business problem. One of the requirements is the solution needs to use a designer-first (declarative) development model. Which of the choices below meets the requirements?"
+    choices:
+    - content: "Azure Functions"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Functions uses a code-first (imperative) development model."
+    - content: "Azure Logic Apps"
+      isCorrect: true
+      explanation: "That's correct. Azure Logic Apps enables serverless workloads and uses a designer-first (declarative) development model."
+    - content: "WebJobs"
+      isCorrect: false
+      explanation: "That's incorrect. WebJobs are a code-first (imperative) development model."

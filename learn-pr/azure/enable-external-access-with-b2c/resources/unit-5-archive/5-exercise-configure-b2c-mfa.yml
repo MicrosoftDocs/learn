@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Set up Azure AD B2C with MFA through the Azure portal
   description: Exercise - Set up Azure AD B2C with MFA through the Azure portal
   ms.date: 03/20/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: chrispine-chiedo
+  ms.author: cchiedo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Set up Azure AD B2C with MFA through the Azure portal

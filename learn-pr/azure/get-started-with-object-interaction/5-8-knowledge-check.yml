@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: Choose the best response for each question. Then select Check your answers.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: " What is the purpose of the ObjectManipulator script?"
+      choices:
+        - content: "This script makes an object movable, scalable, and rotatable using one or two hands."
+          isCorrect: true
+          explanation: The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands.
+        - content: "This script makes an object grabbable from a close distance."
+          isCorrect: false
+          explanation: NearInteractionGrabbable component is added to any GameObject that has a collidable on it to make that collidable near grabbable.
+        - content: "This script makes an object change color when a user gazes at the object."
+          isCorrect: false
+          explanation: You must enable eye-tracking to do the above operation.
+    - content: "Which component is an all-in-one container to make any object easily interactable and responsive to input?"
+      choices:
+        - content: "Box Collider Component"
+          isCorrect: false
+          explanation: Box Colliders are rectangular cuboid and are useful for items such as crates or chests.
+        - content: "Physical Press Event Router Component"
+          isCorrect: false
+          explanation: This script sends events from hand press interaction to Interactable.
+        - content: "Interactable Component"
+          isCorrect: true
+          explanation: Interactable acts as a catch-all for all types of input including touch, hand rays, speech, and funnel these interactions into events and visual theme responses.
+    - content: "What function does ToolTip provide you?"
+      choices:
+        - content: "Provide voice inputs to the objects"
+          isCorrect: false
+          explanation: You must enable Microphone capability to provide speech inputs as commands to the objects.
+        - content: "Provide short descriptions to the objects"
+          isCorrect: true
+          explanation: Tooltips are used to convey a hint or extra information upon closer inspection of an object.
+        - content: "Provide manipulating function to the object"
+          isCorrect: false
+          explanation: Object Manipulator component provides manipulating function to the object.
+      
+    

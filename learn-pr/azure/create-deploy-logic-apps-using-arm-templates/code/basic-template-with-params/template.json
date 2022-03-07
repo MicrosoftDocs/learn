@@ -46,7 +46,7 @@
                             "type": "Response",
                             "kind": "Http",
                             "inputs": {
-                                "body": "Response from @{workflow().name}  Total area = @{triggerBody()}@{mul( int(triggerOutputs()['relativePathParameters']['height'])  , int(triggerOutputs()['relativePathParameters']['width'])  )}",
+                                "body": "Response from @{workflow().name}  Total area = @{mul( int(triggerOutputs()['relativePathParameters']['height'])  , int(triggerOutputs()['relativePathParameters']['width'])  )}",
                                 "statusCode": 200
                             }
                         }

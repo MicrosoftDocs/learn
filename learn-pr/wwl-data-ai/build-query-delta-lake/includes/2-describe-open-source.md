@@ -6,7 +6,7 @@ A data lake is a storage repository that inexpensively stores a vast amount of r
 
 Enterprises have been spending millions of dollars getting data into data lakes with Apache Spark. The aspiration is to do data science and ML on all that data using Apache Spark.
 
-![Data Lake](../media/data-lake.png)
+![Data Lake.](../media/data-lake.png)
 
 But the data is not ready for data science & ML. The majority of these projects are failing due to
 unreliable data!
@@ -37,7 +37,7 @@ As great as data lakes are at inexpensively storing our raw data, they also brin
 
 ## The solution: Delta Lake
 
-Delta Lake is a file format that can help you build a data lake comprised of one or many tables in Delta Lake format. Delta Lake integrates tightly with Apache Spark, and uses an open format that is based on Parquet. Because it is an open-source format, Delta Lake is also supported by other data platforms, including [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics/spark/apache-spark-what-is-delta-lake).
+Delta Lake is a file format that can help you build a data lake comprised of one or many tables in Delta Lake format. Delta Lake integrates tightly with Apache Spark, and uses an open format that is based on Parquet. Because it is an open-source format, Delta Lake is also supported by other data platforms, including [Azure Synapse Analytics](/azure/synapse-analytics/spark/apache-spark-what-is-delta-lake).
 
 Delta Lake makes data ready for analytics.
 
@@ -217,15 +217,25 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 ### Create a cluster
 
 1. When your Azure Databricks workspace creation is complete, select the link to go to the resource.
+
 1. Select **Launch Workspace** to open your Databricks workspace in a new tab.
+
 1. In the left-hand menu of your Databricks workspace, select **Clusters**.
+
 1. Select **Create Cluster** to add a new cluster.
 
-    ![The create cluster page](../media/create-cluster.png)
+    ![The create cluster page.](../media/create-cluster.png)
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
-1. Select the **Databricks RuntimeVersion**. We recommend the latest runtime and **Scala 2.11**.
-1. Select the default values for the cluster configuration.
+
+1. Select the **Cluster Mode**: **Single Node**.
+
+1. Select the **Databricks RuntimeVersion**: **Runtime: 7.3 LTS (Scala 2.12, Spark 3.0.1)**.
+
+1. Under **Autopilot Options**, leave the box **checked** and in the text box enter `45`.
+
+1. Select the **Node Type**: **Standard_DS3_v2**.
+
 1. Select **Create Cluster**.
 
 ## Clone the Databricks archive
@@ -234,7 +244,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 1. In the left pane, select **Workspace** > **Users**, and select your username (the entry with the house icon).
 1. In the pane that appears, select the arrow next to your name, and select **Import**.
 
-    ![The menu option to import the archive](../media/import-archive.png)
+    ![The menu option to import the archive.](../media/import-archive.png)
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 

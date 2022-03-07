@@ -1,4 +1,4 @@
-Azure Site Recovery gives you the flexibility to fail over to Azure if a disaster occurs and fail back to on-premises machines after the event is over.
+Azure Site Recovery gives you the flexibility to fail over to Azure if a disaster occurs, and fail back to on-premises machines after the event is over.
 
 You now want to do a full failover for the rest of the protected environment to Azure. You do a full failover after you successfully run a failover drill on a single test virtual machine. You'll then do the failback after the failover has completed successfully.
 
@@ -6,9 +6,9 @@ In this unit, you'll explore the differences between failover and failback. You'
 
 ## Failover and failback
 
-A failover is the process that takes place when the decision is made to invoke the disaster recovery plan for the business. Failover happens when the current live environment that's protected by using Azure Site Recovery is moved over to the replica environment. This target replica environment takes the place of the live environment and becomes the primary infrastructure.
+A failover is the process that takes place when the decision is made to invoke the BCDR plan for the business. Failover happens when the current live environment that's protected by using Site Recovery is moved over to the replica environment. This target replica environment takes the place of the live environment, and becomes the primary infrastructure.
 
-A failback is the reverse of a failover. The previous live environment (which is now the replica environment because a failover took place) takes back its original role and becomes the live environment again. After the failover has happened in the first instance, a reprotection phase needs to occur. In this phase, you bring the original environment back into sync with the new live environment. This process allows the failover and failback to happen without any data loss. The reprotection phase is likely to be a lengthy process because you need to establish that the old live environment works correctly after the disaster. 
+A failback is the reverse of a failover. The previous live environment (which is now the replica environment because a failover took place) takes back its original role and becomes the live environment again. After the failover has happened in the first instance, a reprotection phase needs to occur. In this phase, you bring the original environment back into sync with the new live environment. This process enables the failover and failback to happen without any data loss. The reprotection phase is likely to be a lengthy process because you need to establish that the old live environment works correctly after the disaster.
 
 ![Diagram showing the cyclical nature of failing over, and then failing back, and how the replication to reprotect VM works.](../media/5-failover-failback.svg)
 
@@ -30,10 +30,10 @@ When you create an on-premises replication policy to copy your on-premises machi
 
 Running the failback stops the Azure VMs. After the replication has finished, start your on-premises VM to take over the workloads. Service will be disrupted, so schedule the failback at a time that won't affect your business.
 
-## Recovery plans
+## Business Continuity and Disaster Recovery plans
 
-Recovery plans within Site Recovery allow for the customization and sequencing of failover and failback of virtual machines and the applications that run on them. Machines are grouped together, and recovery actions can be automated with the use of scripts during the failover or failback. You can also add additional manual steps for actions if you need to. If you test the recovery plan before a disaster happens, you can be more confident that you'll have a positive outcome. You'll need to get your infrastructure back up and running again at the secondary location quickly to meet the company's recovery time objective.
+BCDR plans within Site Recovery allow for the customization and sequencing of failover and failback of virtual machines and the applications that run on them. Machines are grouped together, and recovery actions can be automated with the use of scripts during the failover or failback. You can also add additional manual steps for actions if you need to. If you test the BCDR plan before a disaster happens, you can be more confident that you'll have a positive outcome. You'll need to get your infrastructure back up and running again at the secondary location quickly to meet the company's recovery time objective.
 
 ## Flexible failovers
 
-With the ability to be flexible with failovers, Azure Site Recovery can run failovers on demand for test purposes. Isolating these tests means they won't interrupt live services. This flexibility also allows for a failover to be run during a planned outage of the live service. Users of the system won't notice any interruptions from the outage because they're automatically switched over to the replicated environment. The flexibility works the other way too. Failback on demand can be either as part of a planned test or as part of a fully invoked disaster recovery scenario.
+With the ability to be flexible with failovers, Site Recovery can run failovers on demand for test purposes. Isolating these tests means they won't interrupt live services. This flexibility also allows for a failover to be run during a planned outage of the live service. Users of the system won't notice any interruptions from the outage because they're automatically switched over to the replicated environment. The flexibility works the other way too. Failback on demand can be either as part of a planned test or as part of a fully invoked disaster recovery scenario.

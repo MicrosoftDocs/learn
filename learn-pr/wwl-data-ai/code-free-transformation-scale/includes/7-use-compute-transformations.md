@@ -2,11 +2,11 @@ In some cases, the code-free transformation at scale may not meet your requireme
 
 ## ADF and Azure Databricks
 
-As an example, the integration of Azure Dataricks with ADF allows you to add Databricks notebooks within an ADF pipeline to leverage the analytical and data transformation capabilities of Databricks. You can add a notebook within your data workflow to structure and transform raw data loaded into ADF from different sources. Once the data is transformed using Databricks, you can then load it to any data warehouse source.
+As an example, the integration of Azure Databricks with ADF allows you to add Databricks notebooks within an ADF pipeline to leverage the analytical and data transformation capabilities of Databricks. You can add a notebook within your data workflow to structure and transform raw data loaded into ADF from different sources. Once the data is transformed using Databricks, you can then load it to any data warehouse source.
 
 Data ingestion and transformation using the collective capabilities of ADF and Azure Databricks essentially involves the following steps:
 
-1. **Create Azure storage account** - The fist step is to create an Azure storage account to store your ingested and transformed data.
+1. **Create Azure storage account** - The first step is to create an Azure storage account to store your ingested and transformed data.
 
 1. **Create an Azure Data Factory** - Once you have your storage account setup, you need to create your Azure Data Factory using Azure portal.
 
@@ -34,13 +34,17 @@ There are a number of tasks that needs to be performed to integrate Azure Databr
 
 1. Trigger a Pipeline Run.
 
+    > [!Note]
+    > The following steps assume there is already an Azure Databricks cluster already provisioned
+
+
 ### Task 1: Generate a Databricks Access Token.
 
 1. In the Azure portal, click on **Resource groups** and then click on **awrgstudxx**, and then click on **awdbwsstudxx** where xx are the initials of your name.
 
 1. Click on **Launch Workspace**
 
-1. Click the user **profile icon** in the upper right corner of your Databricks workspace.
+1. Click the user **Settings** in the bottom left corner of your Databricks workspace.
 
 1. Click **User Settings**.
 
@@ -75,15 +79,15 @@ There are a number of tasks that needs to be performed to integrate Azure Databr
 
 ### Task 3: Create Linked Services
 
-1. In Microsoft Edge, click on the tab for the portal In the Azure portal, and return to Azure Data Factory.
+1. In Microsoft Edge, click on the tab for the portal In the Azure portal, and return to Azure Data Factory and click on Open Azure Data Factory Studio.
 
-1. In the **xx-data-factory** screen, click on **Author & Monitor**. Another tab opens up to author an Azure Data Factory solution.
+1. On the left hand side of the screen, click on the **Manage** icon.
 
-1. On the left hand side of the screen, click on the **Author** icon. This opens up the Data Factory designer.
+1. Under **Connections**,  click on **Linked Services**.
 
-1. At the bottom of the screen, click on **Connections**, and then click on **+ New**.
+1. In the **Linked Service**, at the top of the screen, click on **+ New**, 
 
-1. In the **New Linked Service**, at the top of the screen, click on **Compute**, and then click on **Azure Databricks**, and then click on **Continue**.
+1. Click on the **Compute** tab, click **Azure Databricks**, and then click on **Continue**.
 
 1. In the **New Linked Service (Azure Databricks)** screen, fill in the following details and click on **Finish**
     - **Name**: xx_dbls, where xx are your initials
@@ -99,7 +103,7 @@ There are a number of tasks that needs to be performed to integrate Azure Databr
 
 ### Task 4: Create a pipeline that uses Databricks Notebook Activity.
 
-1. On the left hand side of the screen, under Factory Resources, click on the **+** icon, and then click on **Pipeline**. This opens up a tab with a Pipeline designer.
+1. On the left hand side of the screen, click on the **Author** icon, and then click on **Pipeline**. This opens up a tab with a Pipeline designer.
 
 1. At the bottom of the pipeline designer, click on the parameters tab, and then click on **+ New**
 

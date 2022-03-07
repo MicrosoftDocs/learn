@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ansible.exercise-run-ansible-visual-studio-code
+title: Exercise - Run Ansible in Visual Studio Code
+metadata:
+  title: Exercise - Run Ansible in Visual Studio Code
+  description: "Exercise - Run Ansible in Visual Studio Code"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-exercise-run-ansible-visual-studio-code.md)]

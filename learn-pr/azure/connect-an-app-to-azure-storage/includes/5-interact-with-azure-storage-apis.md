@@ -1,21 +1,21 @@
-Azure Storage provides a REST API to work with the containers and data stored in each account. There are independent APIs available to work with each type of data you can store. Recall that we have four specific data types:
+Azure Storage provides a REST API to work with the containers and data stored in each account. Each type of data you can store has its own independent API. Recall that we have four specific data types:
 
 - **Blobs** for unstructured data such as binary and text files.
 - **Queues** for persistent messaging.
 - **Tables** for structured storage of key/values.
 - **Files** for traditional SMB file shares.
 
-## Using the REST API
+## Use the REST API
 
-The Storage REST APIs are accessible from anywhere on the Internet, by any app that can send an HTTP/HTTPS request and receive an HTTP/HTTPS response.
+The Storage REST APIs are accessible from anywhere on the Internet by any app that can send an HTTP/HTTPS request and receive an HTTP/HTTPS response.
 
-For example, if you wanted to list all the blobs in a container, you would send something like:
+For example, if you wanted to list all the blobs in a container, you would create a request something like:
 
 ```http
 GET https://[url-for-service-account]/?comp=list&include=metadata
 ```
 
-This would return an XML block with data specific to the account:
+This request returns an XML block with data specific to the account:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>  
@@ -67,53 +67,51 @@ This would return an XML block with data specific to the account:
 
 However, this approach requires a lot of manual parsing and the creation of HTTP packets to work with each API. For this reason, Azure provides pre-built _client libraries_ that make working with the service easier for common languages and frameworks.
 
-## Using a client library
+## Use a client library
 
-Client libraries can save a significant amount of work for app developers because the API is tested and it often provides nicer wrappers around the data models sent and received by the REST API.
+Client libraries can save a significant amount of work for app developers because the API has been tested and often provides nicer wrappers around the data models sent and received by the REST API.
 
 :::row:::  
     :::column:::  
     Microsoft has Azure client libraries that support a number of languages and frameworks, including:
     - .NET
-    - Linux
     - Java
     - Python
     - Node.js
     - Go
     :::column-end:::
     :::column:::
-        <br> ![Sample logos of supported frameworks you can use with Azure](../media/4-common-tools.png)
+        <br> ![Logos of supported frameworks 
+        you can use with Azure.](../media/4-common-tools.png)
     :::column-end:::  
 :::row-end:::  
 
 For example, to retrieve the same list of blobs in C#, we could use the following code snippet:
 
 ```csharp
-CloudBlobDirectory directory = ...;
-foreach (IEnumerable<IListBlobItem> blob in directory.ListBlobs(
-                useFlatBlobListing: true,
-                blobListingDetails: BlobListingDetails.All))
+string containerName = "...";
+BlobContainerClient container = new BlobContainerClient(connectionString, containerName);
+
+var blobs = container.GetBlobs();
+foreach (var blob in blobs)
 {
-    // Work with blob item .. could be page blob, block blob, etc.
+    Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:YYYY-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
 }
 ```
 
 Or in JavaScript:
 
 ```javascript
-const containerName = "...";
-const blobService = storage.createBlobService();
+const containerName = '...';
+const containerClient = blobServiceClient.getContainerClient(containerName);
 
-blobService.listBlobsSegmented(containerName, null, function (error, results) {
-    if (results) {
-        for (var i = 0, blob; blob = results.entries[i]; i++) {
-            // Work with blob item .. could be page blob, block blob, etc.
-        }
-    }
-});
+let blobs = containerClient.listBlobsFlat();
+for await (const blob of blobs) {
+  console.log(`${blob.name} --> Created: ${blob.properties.createdOn}   Size: ${blob.properties.contentLength}`);
+}
 ```
 
 > [!NOTE]
-> The client libraries are just thin _wrappers_ over the REST API. They are doing exactly what you would do if you used the web services directly. These libraries are also open source, making them very transparent. For links to the source code for these libraries on GitHub, at the end of this module, see the *Additional Resources* section.
+> The client libraries are just thin _wrappers_ around the REST API. They are doing exactly what you would do if you used the web services directly. These libraries are also open source, making them very transparent. For links to the source code for these libraries on GitHub, at the end of this module, see the *Additional Resources* section.
 
-Let's add client library support to your app.
+Next, let's add client library support to your app.

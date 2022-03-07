@@ -2,24 +2,25 @@ In this unit, we're going to create an Azure function that accepts an HTTP reque
 
 ## Create an HTTP trigger
 
-Let's continue using our existing Azure Functions application and add an HTTP trigger.
+Let's continue using our existing Azure Functions app and add an HTTP trigger.
 
 ::: zone pivot="csharp"
 
 1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**.
 
-1. Select your function app.
+1. Select your Function App identified under the *Type* column. Your **Function App** pane appears.
 
-1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
 
-1. In the list of all templates available to this function app, select **HTTP trigger** .
+1. On the top menu bar, select **Create**. This action starts the function creation process. The **Create function** pane appears.
 
-1. In the **New Function** dialog, choose a name for the function and select  *Anonymous* from the **Authorization level** dropdown.
-1. Select **Create** to create the function. 
+1. In the **Select a template** section, select **HTTP trigger**.
 
-1. Take a quick look at the auto-generated code to get an idea about what's going on. The *req* parameter represents the incoming request and contains a *name* parameter. We check to see if *name* has a value. If it does, we return a greeting. Otherwise, we return an error message.
+1. In the **Template details** section, in **New Function** field, enter a name for the function. Scroll down and in the **Authorization level** dropdown list, select *Anonymous*, and then select **Create**. Your newly-created Function pane appears.
+
+1. In the left menu pane, under **Developer**, select **Code + Test**, and review the auto-generated code to get an idea about what's going on. The *req* parameter represents the incoming request and contains a *name* parameter. Check to see if *name* has a value. If it does, we return a greeting. Otherwise, it continues to ask for a value.
 
 ::: zone-end
 
@@ -29,14 +30,15 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 
-1. Select your function app.
+1. Select your Function App identified under the *Type* column. Your **Function App** pane appears.
 
-1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane for your function app appears.
 
-1. In the list of all templates available to this function app, select **HTTP trigger** .
+1. On the top menu bar, select **Create**. This action starts the function creation process. The **Create function** panel appears.
 
-1. In the **New Function** dialog, choose a name for the function and select  *Anonymous* from the **Authorization level** dropdown.
-1. Select **Create** to create the function. 
+1. In the **Select a template** section, select **HTTP trigger**.
+
+1. In the **Template details** section, in **New Function** field, enter a name for the function. Scroll down and in the **Authorization level** dropdown list, select *Anonymous*, and then select **Create**.
 
 1. Take a quick look at the auto-generated code to get an idea about what's going on. The `$Request` parameter represents the incoming request and contains a *name* parameter. We check to see if *name* has a value. If it does, we use `Push-OutputBinding` to write a greeting to the response. Otherwise, we write an error message to the response.
 
@@ -46,13 +48,13 @@ Let's continue using our existing Azure Functions application and add an HTTP tr
 
 Now that we've created the HTTP trigger, let's get the function URL so we can begin to make a request.
 
-1. To the right of **Run**, select **Get function URL**.
+1. On the top menu bar, select **Get Function Url**. The **Get Function Url** dialog appears.
 
-1. Select **Copy**, then close the function URL popup.
+1. In the **URL** field, select the **Copy to clipboard** icon.
 
 ## Issue a GET request to your HTTP trigger
 
-We now have our function URL copied to our clipboard. Let's issue a GET request to see if we get a response.
+Let's issue a GET request for the URL to see if we get a response.
 
 ::: zone pivot="csharp"
 
@@ -60,9 +62,9 @@ We now have our function URL copied to our clipboard. Let's issue a GET request 
 
 1. Paste the URL into the address bar.
 
-1. Add a query string parameter called *name* with your name for example `.../api/HttpTriggerCSharp1?name=Jesse`
+1. Add a query parameter called *name* with your name to the URL; for example, `.../api/HttpTriggerCSharp1?name=Jesse`
 
-1. Press <kbd>ENTER</kbd> to submit the request.
+1. Press <kbd>Enter</kbd> to submit the request.
 
 ::: zone-end
 
@@ -72,8 +74,8 @@ We now have our function URL copied to our clipboard. Let's issue a GET request 
 
 1. Paste the URL into the address bar.
 
-1. Add a query string parameter called *name* with your name for example `.../api/HttpTrigger1?name=Jesse`
+1. Add a query parameter called *name* with your name to the URL; for example, `.../api/HttpTriggerCSharp1?name=Jesse`
 
-1. Press <kbd>ENTER</kbd> to submit the request.
+1. Press <kbd>Enter</kbd> to submit the request.
 
 ::: zone-end

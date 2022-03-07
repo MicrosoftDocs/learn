@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-monitor.knowledge-check
+title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+metadata:
+  unitType: knowledge_check
+  title: "Azure Monitor knowledge check" # user input: module title for browser tab and search results
+  description: "Check you knowledge of Azure Monitor." # user input: a description for site search and SEO.
+  ms.prod: learning-azure-monitor
+  ms.date: 4/15/2021
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 10
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+### Question content requirements:
+###  - Write 5 questions
+###  - Questions 1,2 must test this Learning Objective: "Describe how <attributes> of <product> work to <solve problem>"
+###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
+###      Example: "What differentiates an action from a control action in an Azure Logic App?"
+###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether <product> is appropriate to <general product use case>"
+###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
+###      Example: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Logic Apps to satisfy?"
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What parameters do you need to set, to have Azure Monitor start recording metrics on your resource?"
+    choices:
+    - content: "None. Azure Monitor begins recording as soon as your resources are created."
+      isCorrect: true
+      explanation: "Correct. Azure Monitor will begin collecting metrics on your resources as soon as they are created."
+    - content: "You must configure at least one Alert Rule, before Azure Monitor will record metrics."
+      isCorrect: false
+      explanation: "Incorrect. You do not need to configure any alerts or alert rules for Azure Monitor to begin collecting metrics data."
+    - content: "Associate the resource with a Log Analytics Workspace."
+      isCorrect: false
+      explanation: "Incorrect. The only requirement for Log Analytics Workspace association is if you decide to use the Logs in Azure Monitor. Basic metrics recording does not require Log Analytics Workspace association."
+  - content: "How can you drill down and modify the data displayed on a chart in the Overview page of your resource?"
+    choices:
+    - content: "Use the Diagnostic tools to drill into the data on the chart."
+      isCorrect: false
+      explanation: "Incorrect. The Diagnose and solve problems option, on the Overview page, helps with troubleshooting but is not intended for metrics evaluation."
+    - content: "Select the chart, which opens it in the Metrics Explorer."
+      isCorrect: true
+      explanation: "Correct. Selecting a chart in the overview page allows you to drill into logs, change the chart type, and view the data parameters."
+    - content: "Use the Log stream."
+      isCorrect: false
+      explanation: "Incorrect. The Log stream option, under Monitoring, is used for a Live Log Stream, which is displayed in a console window.  It does not drill down into the charts."
+  - content: "What is the best way to combine metrics data into a single view for reporting?"
+    choices:
+    - content: "Send the monitoring data to Event Hubs."
+      isCorrect: false
+      explanation: "Incorrect. Event Hubs can be used to stream the monitoring data to external tools, but it isn't the most optimal tool for aggregating metrics into a single view."
+    - content: "Setup a Log Analytics workspace."
+      isCorrect: false
+      explanation: "Incorrect. A Log Analytics Workspace is required for the logging function of Azure Monitor, and it gives you the option to query the data, but it isn't the most optimal tool for aggregating metrics into a single view."
+    - content: "Use Azure Dashboards or Azure Monitor workbooks."
+      isCorrect: true
+      explanation: "Correct. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal."
+  

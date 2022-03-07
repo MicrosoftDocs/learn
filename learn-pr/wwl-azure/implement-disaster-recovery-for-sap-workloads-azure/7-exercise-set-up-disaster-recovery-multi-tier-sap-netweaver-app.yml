@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.set-up-multi-tier-sap-netweaver-app-deployment-azure
+title: Set up disaster recovery for a multi-tier SAP NetWeaver app deployment (in Azure)
+metadata:
+  title: Set up disaster recovery for a multi-tier SAP NetWeaver app deployment (in Azure)
+  description: "Set up disaster recovery for a multi-tier SAP NetWeaver app deployment (in Azure)"
+  ms.date: 10/21/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-exercise-set-up-disaster-recovery-multi-tier-sap-netweaver-app.md)]

@@ -4,7 +4,7 @@ Many web-scale enterprises have now begun to use message queues and stream proce
 
 As a young technology company, LinkedIn often found itself building and adopting a large number of disruptive technologies, each to solve a specific requirement. Its services ran on a custom back end that used LinkedIn's own low-latency distributed key-value store (Voldemort), a distributed document store (Espresso), and an Oracle RDBMS. Front-end web services, analytics, emails, and notifications were driven by tasks of different complexity. These included batch jobs using Hadoop, queries on a large data warehouse, and a separate infrastructure for searches, all supported by a layer of logging, monitoring, and user and metric tracking. 
 
-![Data integration disaster at LinkedIn](../media/linkedin-1.png)
+![Data integration disaster at LinkedIn.](../media/linkedin-1.png)
 
 _Figure 19: Data integration disaster at LinkedIn_
 
@@ -12,19 +12,19 @@ A few years ago, engineers at LinkedIn realized that their system had grown too 
 
 The first change at LinkedIn was a move toward using a centralized Kafka-driven data pipeline. This allowed each service to produce data and emit it using a specific topic. Accessing data from another service now became as simple as subscribing to that particular topic. Since the pipeline was internally run on a distributed cluster, it was expected to be inherently scalable. 
 
-![A single, distributed, asynchronous data pipeline](../media/linkedin-2.png)
+![A single, distributed, asynchronous data pipeline.](../media/linkedin-2.png)
 
 _Figure 20: A single, distributed, asynchronous data pipeline_
 
 Another service was now needed to manage membership of nodes within a datacenter. Since scaling up and down was now simply a matter of adding and removing nodes from the system, a new service called ZooKeeper was used to manage membership within the cluster, distribute ownership of partitions and topics within the broker tier, and correctly handle offsets on the consumer tier. 
 
-![High-velocity data processing using Kafka topics](../media/linkedin-3.png)
+![High-velocity data processing using Kafka topics.](../media/linkedin-3.png)
 
 _Figure 21: High-velocity data processing using Kafka topics_
 
 The changes in LinkedIn's architecture were also driven by a move toward more reactive systems. In its original architecture (around 2010), all user activity logs were scraped by a batch process every few hours, and this was used to generate new graphs and dashboards on the front end. This architecture allowed LinkedIn to have hourly or daily updates of view counts, user recommendations, and trending topics. 
 
-![Before offline processing of user activity logs ](../media/linkedin-4.png)
+![Before offline processing of user activity logs .](../media/linkedin-4.png)
 
 _Figure 22: Before offline processing of user activity logs_
 
@@ -38,7 +38,7 @@ This is what stateful streaming using Samza enables. Traditionally, the source o
 
 A simple example of an update event for a user profile is shown below. As the profile is updated, it writes to a specific UserProfileUpdate topic, which is consumed by the newsfeed (to show in real time that the user has moved to a new company) and the search data store (so that it doesn't return stale data), and also consumed to be used for offline processing (e.g., to capture trends in the number of software engineers joining a particular company per day). 
 
-![A UserProfileUpdate topic is consumed at LinkedIn](../media/linkedin-6.png)
+![A UserProfileUpdate topic is consumed at LinkedIn.](../media/linkedin-6.png)
 
 _Figure 24: A UserProfileUpdate topic is consumed at LinkedIn_
 

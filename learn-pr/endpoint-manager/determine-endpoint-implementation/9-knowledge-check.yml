@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.determine-endpoint-management-implementation.9-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 02/16/2021
+  author: Erikre 
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager  
+title: Knowledge check
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "When preparing your endpoint management implementation, what should you consider doing first?"
+    choices:
+    - content: "Inventory your endpoint management devices."
+      isCorrect: false
+      explanation: "When evaluating an MDM/MAM solution such as Microsoft Intune and Configuration Manager, look at what the goal is, and what you want to achieve."
+    - content: "Determine your organization's endpoint management objectives."
+      isCorrect: true
+      explanation: ""
+    - content: "Determine the needed endpoint management licensing."
+      isCorrect: false
+      explanation: "When evaluating an MDM/MAM solution such as Microsoft Intune and Configuration Manager, look at what the goal is, and what you want to achieve."
+    - content: "Review existing endpoint management policies and infrastructure."
+      isCorrect: false
+      explanation: "When evaluating an MDM/MAM solution such as Microsoft Intune and Configuration Manager, look at what the goal is, and what you want to achieve."      
+  - content: "What is an endpoint management rollout plan?"
+    choices:
+    - content: "A rollout plan is the endpoint management implementation information you plan to communicate across your organization."
+      isCorrect: false
+      explanation: "A rollout is a staged process of actions. Your endpoint management rollout plan identifies the organizational groups and time frames you want to target, the rollout phases for each group, and the enrollment approaches you will use."
+    - content: "A rollout plan is the method you use to determine the endpoint management licensing needed across your organization."
+      isCorrect: false
+      explanation: "A rollout is a staged process of actions. Your endpoint management rollout plan identifies the organizational groups and time frames you want to target, the rollout phases for each group, and the enrollment approaches you will use."
+    - content: "A rollout plan identifies the organizational groups that must be included in your endpoint management implementation, the rollout timeframe for each group, and the enrollment approaches you will use."
+      isCorrect: true
+      explanation: ""

@@ -93,6 +93,6 @@ The Azure Toolkit for IntelliJ provides templates and functionality that you can
 
 The toolkit includes integration templates for Docker containers, HDInsights, Azure documentation, Azure Cache for Redis, storage account operations, and virtual machine management.
 
-The Azure Toolkit is installed through the IntelliJ IDEA itself; it's the same procedure on all the supported operating systems. The toolkit is available from the [IntelliJ IDEA Marketplace](https://plugins.jetbrains.com/marketplace).
+The Azure Toolkit is installed through the IntelliJ IDEA itself; it's the same procedure on all the supported operating systems. The toolkit is available from the [IntelliJ IDEA Marketplace](https://plugins.jetbrains.com/).
 
 ::: zone-end

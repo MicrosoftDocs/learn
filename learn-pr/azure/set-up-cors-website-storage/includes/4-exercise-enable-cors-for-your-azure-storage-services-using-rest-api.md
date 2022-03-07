@@ -95,9 +95,9 @@ NOTE: The first REST API works with curl, but the second REST API fails with cur
    2019-04-25 23:17:00 ERROR 403: CORS not enabled or no matching rule found for this request..
    ```
 
-## Generate an Shared Access Signature (SAS) using the Azure portal
+## Generate a Shared Access Signature (SAS) using the Azure portal
 
-1. Sign in to the [Azure portal](https://portal.azure.com) using the account that you used when you actived the sandbox, and then click **Storage Accounts**.
+1. Sign in to the [Azure portal](https://portal.azure.com) using the account that you used when you activate the sandbox, and then click **Storage Accounts**.
 
 1. Click the name of the storage account that you created earlier.
 

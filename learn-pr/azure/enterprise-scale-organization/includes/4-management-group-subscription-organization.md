@@ -1,4 +1,4 @@
-Properly organizing your subscriptions will play a key role in governance for your cloud resources. It also ensures you can properly manage the costs for resources and quotas for deployed resources in your organization.
+Properly organizing your subscriptions will play a key role in governance for your cloud resources. It also ensures you can manage the costs for resources and quotas for deployed resources in your organization.
 
 ## Define a management group hierarchy
 
@@ -6,9 +6,9 @@ Management group structures within an Azure Active Directory (Azure AD) tenant s
 
 :::image type="content" source="../media/4-subscription-organization.png" alt-text="Diagram that shows management group hierarchy." lightbox="../media/4-subscription-organization-large.png":::
 
-When you define the management group hierarchy, consider that management groups can be used to aggregate policy and initiative assignments via Azure Policy. This capability will provide flexibility and organization of policy across multiple subscriptions. Also keep in consideration that a management group tree can support up to six levels of depth. This limit doesn't include the tenant root level or the subscription level.
+When you define the management group hierarchy, consider if management groups can be aggregated by policy and initiative assignments via Azure Policy. This capability will provide flexibility and organization of policy across multiple subscriptions. Also, keep in consideration that a management group tree can support up to six levels of depth. This limit doesn't include the tenant root level or the subscription level.
 
-We recommend that you keep the management group hierarchy reasonably flat with no more than three to four levels, ideally. This restriction will reduce the management overhead and complexity. Avoid duplicating your organizational structure into a deeply nested management group hierarchy. Management groups should be used for policy assignments versus billing purposes. This approach necessitates using management groups for their intended purpose in enterprise-scale architecture. That purpose is to provide Azure policies for workloads that require the same type of security and compliance under the same management group level.
+We recommend that you keep the management group hierarchy reasonably flat with no more than three to four levels, ideally. This restriction will reduce management overhead and complexity. Avoid duplicating your organizational structure into a deeply nested management group hierarchy. Management groups should be used for policy assignments versus billing purposes. This approach necessitates using management groups for their intended purpose in enterprise-scale architecture. That purpose is to provide Azure policies for workloads that require the same type of security and compliance under the same management group level.
 
 Create management groups under your root-level management group to represent the types of workloads (archetypes) that you'll host and ones based on their security, compliance, connectivity, and feature needs. This grouping structure allows you to have a set of Azure policies applied at the management group level for all workloads that require the same security, compliance, connectivity, and feature settings.
 
@@ -58,9 +58,9 @@ Avoid a rigid subscription model, and opt instead for a set of flexible criteria
 
 Each Azure region contains a finite number of resources. When you consider an enterprise-scale Azure adoption that involves large resource quantities, ensure that sufficient capacity and SKUs are available and the attained capacity can be understood and monitored.
 
-Consider limits and quotas within the Azure platform for each service that your workloads require. Also consider the availability of required SKUs within chosen Azure regions. For example, new features might be available only in certain regions. The availability of certain SKUs for given resources such as VMs might be different from one region to another. Keep in mind that subscription quotas aren't capacity guarantees and are applied on a per-region basis.
+Consider limits and quotas within the Azure platform for each service that your workloads require. Also, consider the availability of required SKUs within chosen Azure regions. For example, new features might be available only in certain regions. The availability of certain SKUs for given resources such as VMs might be different from one region to another. Keep in mind that subscription quotas aren't capacity guarantees and are applied on a per-region basis.
 
-When planning for quotas and capacity, use subscriptions as scale units, and scale out resources and subscriptions as required. Your workload can then use the required resources for scaling out, when needed, without hitting subscription limits in the Azure platform. Use reserved instances to prioritize reserved capacity in required regions. Then your workload will have the required capacity even when there's a high demand for that resource in a specific region.
+When planning for quotas and capacity, use subscriptions as scale units, and scale-out resources and subscriptions as required. Your workload can then use the required resources for scaling out, when needed, without hitting subscription limits in the Azure platform. Use reserved instances to prioritize reserved capacity in required regions. Then your workload will have the required capacity even when there's a high demand for that resource in a specific region.
 
 Establish a dashboard with custom views to monitor used capacity levels. Set up alerts if capacity utilization is reaching critical levels (for example, 90 percent CPU utilization).
 

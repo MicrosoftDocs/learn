@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction
+metadata:
+  title: Explore SRE and design practices to measure end-user satisfaction
+  description: "Explore SRE and design practices to measure end-user satisfaction"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore SRE and design practices to measure end-user satisfaction
+summary: This module explores Site Reliability Engineering (SRE) practices and explains techniques to measure end-user satisfaction and product and product roadmap plan feedback.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Define site reliability engineering
+  *   Capture end-user satisfaction
+  *   Provide and capture feedback for a product
+  *   Design practices to measure satisfaction
+prerequisites: |
+  None
+iconUrl: /learn/achievements/5-explore-sre-design-practices-measure-end-user-satisfaction.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.introduction
+- learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.what-is-site-reliability-engineering
+- learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.capture-end-user-satisfaction
+- learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.capture-feedback-product
+- learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.provide-feedback-from-product-roadmap
+- learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.knowledge-check
+- learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.summary
+badge:
+  uid: learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.badge

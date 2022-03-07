@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-lighthouse.4b-exercise-deploy-azure-resource-manager-templates
+title: Exercise - Deploy Azure Resource Manager templates
+metadata:
+  title: Exercise - Deploy Azure Resource Manager templates
+  description: In this exercise, you will deploy the Azure Resource Manager templates
+  ms.date: 04/08/2021
+  author: SCuffy
+  ms.author: socuff
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 45
+azureSandbox: false
+labId: 93141
+labModal: true
+content: |
+  [!include[](includes/4b-exercise-deploy-azure-resource-manager-templates.md)]
+  

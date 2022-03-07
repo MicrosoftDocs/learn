@@ -3,7 +3,7 @@ After creating and running a pipeline to train the clustering model, you can cre
 ## Create an inference pipeline
 
 1. In Azure Machine Learning Studio, open the **Train Penguin Clustering** pipeline you created previously.
-2. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Train Penguin Clustering-real time inference** will be opened.
+2. Navigate to the the **Create inference pipeline** drop-down list, located on the top right hand corner of the screen. If you do not see it, you may need to expand your screen or click on the **...** three dots which represent **More Actions** on the top right hand corner. Then click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Train Penguin Clustering-real time inference** will be opened.
 
    *If the pipeline does not include **Web Service Input** and **Web Service Output** modules, go back to the **Designer** page and then re-open the **Train Penguin Clustering-real time inference** pipeline.*
 
@@ -37,7 +37,7 @@ After creating and running a pipeline to train the clustering model, you can cre
 > [!div class="centered"]
 > ![Inference pipeline for clustering](../media/inference-clusters.png)
 
-8. Submit the pipeline as a new experiment named **predict-penguin-clusters** on your compute cluster. This may take a while!
+8. Submit the pipeline as a new experiment named **mslearn-penguin-inference** on your compute cluster. This may take a while!
 9. When the pipeline has finished, visualize the **Results dataset** output of the **Assign Data to Clusters** module to see the predicted cluster assignments and metrics for the three penguin observations in the input data.
 
 Your inference pipeline assigns penguin observations to clusters based on their features. Now you're ready to publish the pipeline so that client applications can use it.

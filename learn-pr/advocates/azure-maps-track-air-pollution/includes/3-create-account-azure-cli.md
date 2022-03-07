@@ -1,25 +1,44 @@
-Before you can use Azure Maps on a web page, you'll need an Azure Maps account. In this unit, you'll use the Azure CLI to create an Azure Maps account, and get a key needed by the web SDK to access the Maps account.
+Before you can use Azure Maps on a webpage, you need an Azure Maps account. In this unit, you'll use the Azure CLI to create an Azure Maps account. Then, you'll get a key that the web SDK needs to access the Maps account.
+
+### Activate the sandbox
+
+The process of signing in to activate the sandbox runs outside the learning module. You're automatically returned to the module after you sign in.
+
+To activate the sandbox:
+
+1. Select **Sign in to activate Sandbox**.  Enter your credentials to authenticate.
+
+1. If prompted, select **Review permissions**.
+
+    :::image type="content" source="../media/sandbox-review-permissions.png" alt-text="Screenshot that shows the sandbox, with the Review Permissions button highlighted.":::
+
+1. Verify the permissions settings, and select **Accept**.
+
+    :::image type="content" source="../media/sandbox-accept-permissions.png" alt-text="Screenshot that shows the sandbox, with permissions details and the Accept button highlighted.":::
+
+The message **Sandbox activated!** appears, and you can continue with the learning module.
 
 ## Create an Azure Maps account
 
-1. Make sure you've activated the sandbox, using the button above. The sandbox will give you access to free Azure resources for the duration of this module.
+Activate the sandbox, and then run this command to create a new Azure Maps account:
 
-1. Run this command to create a new Azure Maps account
+```console
+az maps account create --name pollution_map --resource-group <rgn>[sandbox resource group name]</rgn> --accept-tos
+```
 
-    ```Azure CLI
-    az maps account create --name pollution_map --resource-group <rgn>[sandbox resource group name]</rgn> --accept-tos
-    ```
+> [!Note]
+> The output message is informative only. You don’t need to take additional action.
 
 ## Retrieve the primary key
 
-Azure Maps accounts are secured by either Azure Active Directory or via a key. Later in this module, you'll use a key to give the web SDK access to the Maps account. The key can be retrieved using the Azure CLI.
+Azure Maps accounts are secured by either Azure Active Directory or by a key. Later in this module, you'll use a key to give the web SDK access to your Maps account. You can get the key by using the Azure CLI.
 
-1. Run this command to view the keys
+Run this command to view the keys that are associated with your Maps account:
 
-    ```Azure CLI
-    az maps account keys list --name pollution_map --resource-group <rgn>[sandbox resource group name]</rgn>
-    ```
+```azurecli
+az maps account keys list --name pollution_map --resource-group <rgn>[sandbox resource group name]</rgn>
+```
 
-1. Note down the value of the `"primaryKey"`. You need the value inside the quotes.
+Copy and save the value of `primaryKey` without the quotation marks. You'll use this key value later in the module.
 
-In this unit, you created an Azure Maps account and got the primary key. Next lets do a quick knowledge check on what you have learned so far.
+In this unit, you created an Azure Maps account and got the primary key. Next, let's build the app!

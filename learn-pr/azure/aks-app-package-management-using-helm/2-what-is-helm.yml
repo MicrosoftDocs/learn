@@ -2,13 +2,13 @@
 uid: learn.app-package-management-using-helm.what-is-helm
 title: What is Helm?
 metadata:
-  description: Explore how Helm simplifies application deployment and helps you set the correct versions of software libraries and settings in multiple environments. 
+  description: Explore how Helm simplifies application deployment and helps you set the correct versions of software libraries and settings in multiple environments.
   title: What is Helm?
-  author: cryophobia
-  ms.author: chrvaw
+  author: zr-msft
+  ms.author: zarhoads
   ms.prod: learning-azure
   ms.topic: interactive-tutorial
-  ms.date: 9/30/2020
+  ms.date: 10/11/2021
 
 durationInMinutes: 5
 content: |

@@ -2,7 +2,7 @@ You may work in an organization where much of the transformation logic is curren
 
 ## Azure-SSIS integration runtime
 
-In order to make use of the Azure-SSIS integration runtime, it is assumed that there is SSIS Catalog (SSISDD) deployed on a SQL Server SSIS instance. With that prerequisite met, the Azure-SSIS integration runtime is capable of:
+In order to make use of the Azure-SSIS integration runtime, it is assumed that there is SSIS Catalog (SSISDB) deployed on a SQL Server SSIS instance. With that prerequisite met, the Azure-SSIS integration runtime is capable of:
 
 - Lift and shift existing SSIS workloads
 
@@ -101,7 +101,7 @@ The alternative approach is to:
 
 1. If you select **From Azure subscription**, select the relevant **Azure subscription**, **Storage account name**, and **File share**.
 
-1. If you select **Enter manually**, enter \\<storage account name>.file.core.windows.net\<file share name> for **Host**, Azure\<storage account name> for **Username**, and <storage account key> for **Password** or select your **Azure Key Vault** where it's stored as a secret.
+1. If you select **Enter manually**, enter \\\\<storage account name\>.file.core.windows.net\<file share name> for **Host**, Azure\\<storage account name\> for **Username**, and \<storage account key\> for **Password** or select your **Azure Key Vault** where it's stored as a secret.
 
     > [!NOTE]
     > There are different settings if you select **Azure SQL Managed Instance**, or **File System**
@@ -128,7 +128,7 @@ The alternative approach is to:
 
 1. On the **Connections** pane of **Manage** hub, switch to the **Integration runtimes** page and select **Refresh**.
 
-    ![New linked service page](../media/linked-service-page.png)
+    ![Linked service page](../media/linked-service-page.png)
 
 
 

@@ -2,7 +2,7 @@ Middleware is a general term for software that serves to \"glue together\" separ
 
 Cloud middleware refers to the software platform that controls and coordinates different cloud services and makes it possible for users to issue service requests and cloud providers to manage their infrastructure. Cloud middleware consists of multiple abstraction layers that hide system complexity and that enable communication between various applications, services, and devices that are part of a cloud service (Figure 2.3).
 
-![Figure 2.3: Cloud middleware features](../media/middleware-features.png)
+![Figure 2.3: Cloud middleware features.](../media/middleware-features.png)
 
 _Figure 2.3: Cloud middleware features._
 
@@ -10,7 +10,7 @@ _Figure 2.3: Cloud middleware features._
 
 There are a number of distinct and important features that cloud middleware provides, each of which has its own benefits. Some of the most important responsibilities of a cloud middleware stack are as follows:
 
-**Interoperability**: Cloud middleware is the proverbial "glue" that enables multiple distinct applications and services to connect to and communicate with each other. Specifically, middleware connects distinct application services with different APIs to one another. For example, to provision a VM, cloud service APIs act as middleware for cloud provisioning services by taking instructions from a program and translating them into service calls that the cloud provisioning service can understand. These instructions are further passed down the middleware stack at the cloud service provider's end to perform actions -- for example, create virtual machines, allocate disk space, or create a database table.
+**Interoperability**: Cloud middleware is the proverbial "glue" that enables multiple distinct applications and services to connect to and communicate with each other. Specifically, middleware connects distinct application services with different APIs to one another. For example, to provision a VM, cloud service APIs act as middleware for cloud provisioning services by taking instructions from a program and translating them into service calls that the cloud provisioning service can understand. These instructions are further passed down the middleware stack at the cloud service provider's end to perform actions for example, create virtual machines, allocate disk space, or create a database table.
 
 **Virtualization management**: Cloud middleware is also responsible for the configuration, allocation, creation, management, and destruction of virtualized resources from physical resources. As an example, when a cloud service provider gets a request from a client to provision a virtual machine, it handles that request through multiple middleware layers until it reaches a hypervisor layer, which handles the configuration and allocation of a virtual machine for the client.
 

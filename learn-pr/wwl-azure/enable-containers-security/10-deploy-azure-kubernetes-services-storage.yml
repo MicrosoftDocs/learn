@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-containers-security.deploy-azure-kubernetes-service-storage​
+title: Deploy Azure Kubernetes Service storage​
+metadata:
+  title: Deploy Azure Kubernetes Service storage​
+  description: "Deploy Azure Kubernetes Service storage​"
+  ms.date: 01/04/2022
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/10-deploy-azure-kubernetes-services-storage.md)]

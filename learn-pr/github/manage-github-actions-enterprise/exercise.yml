@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-github-actions-enterprise.exercise
+title: Exercise - Use a repository secret in a GitHub Actions workflow
+metadata:
+  title: Exercise - Use a repository secret in a GitHub Actions workflow
+  description: Validate your knowledge on using secrets in a GitHub Actions workflow.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 06/11/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/exercise.md)]

@@ -7,14 +7,21 @@ In this unit, you'll create a storage account and configure a blob container for
 Create a storage account with geo-zone-redundant storage (GZRS).
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. From the menu bar in the upper right, open **Cloud Shell**.
-1. Set the resource group name.
+
+1. From the menu bar in the upper right, open **Cloud Shell**. Select the **Bash** option.
+
+1. Set the resource group name by running the following command.
+
     ```bash
     export RESOURCEGROUP=learn-storage-replication-rg
     ```
+
 1. To set the storage account name where you replace *storageaccountname* and the brackets with a unique Azure Storage account name, run this command.
 
-    ```Bash
+    > [!NOTE]
+    > Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.
+
+    ```bash
     export AZURE_STORAGE_ACCOUNT=<storageaccountname>
      ```
 
@@ -37,13 +44,13 @@ Create a storage account with geo-zone-redundant storage (GZRS).
 
 1. To create a resource group, run this command.
 
-    ```bash
+    ```azurecli
     az group create --name $RESOURCEGROUP --location $LOCATION
     ```
 
 1. To create a storage account, run this command.
 
-    ```Bash
+    ```azurecli
     az storage account create \
     --name $AZURE_STORAGE_ACCOUNT \
     --resource-group $RESOURCEGROUP \
@@ -55,7 +62,7 @@ Create a storage account with geo-zone-redundant storage (GZRS).
 
 1. For the rest of the steps in this exercise, you'll need your storage credentials. To list your storage account keys, run this command.
 
-    ```Bash
+    ```azurecli
     az storage account keys list \
     --account-name $AZURE_STORAGE_ACCOUNT \
     --resource-group $RESOURCEGROUP \
@@ -65,7 +72,7 @@ Create a storage account with geo-zone-redundant storage (GZRS).
 1. Copy the keys listed.
 1. To hold your storage key, set an environment variable. Replace *account-key* and the brackets with one of your key values.
 
-    ```Bash
+    ```bash
     export AZURE_STORAGE_KEY="<account-key>"
     ```
 
@@ -75,19 +82,19 @@ To upload blobs to Azure Storage, you need a container. You use containers to lo
 
 1. To set a container name where you replace *blob-container-name* and the brackets with another name, run this command.
 
-    ```Bash
+    ```bash
     export BLOB_CONTAINER_NAME=<blob-container-name>
     ```
 
 1. Run the following command to create a container for your storage account:
 
-    ```Bash
+    ```azurecli
     az storage container create --account-key $AZURE_STORAGE_KEY --account-name $AZURE_STORAGE_ACCOUNT --name $BLOB_CONTAINER_NAME
     ```
 
 1. When your storage account container has been created, you'll see this message returned in your terminal.
 
-    ```Bash
+    ```output
     {
         "created": true
     }
@@ -119,7 +126,7 @@ Upload the file to your storage account via your container.
 
 1. To upload your file, run this command.
 
-    ```bash
+    ```azurecli
     az storage blob upload \
         --container-name $BLOB_CONTAINER_NAME \
         --name song \
@@ -128,7 +135,7 @@ Upload the file to your storage account via your container.
 
 1. When the upload is complete, to verify the file is in your storage account, run this command.
 
-    ```bash
+    ```azurecli
     az storage blob list \
     --container-name $BLOB_CONTAINER_NAME  \
     --output table
@@ -139,12 +146,16 @@ Upload the file to your storage account via your container.
 ## View the replication status
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. Select or search for **Resource groups**.
-1. Select **learn-storage-replication-rg**.
-1. Select the storage account you created from the list of resources in your resource group.
-1. Under **Settings**, select **Geo-replication**. You see the replication status of your Azure Storage account's primary and secondary regions. If the status shows as **available** for a region, it means your region is responsive.
 
-1. To ensure you're seeing the latest status updates, select **Refresh**.
+1. On the home page, select or search for **Resource groups**.
+
+1. Select **learn-storage-replication-rg**. The **learn-storage-replication-rg** resource group pane appears.
+
+1. Select the storage account you created from the list of resources in your resource group. Your *storage account* pane appears.
+
+1. In the left menu pane, under **Data management**, select **Geo-replication**. The **Geo-replication** pane appears for your storage account. You see the replication status of your Azure storage account's primary and secondary regions. If the status shows as *Available* for a region, it means your region is responsive.
+
+1. To ensure you're seeing the latest status updates, in the top menu bar, select **Refresh**.
 
    :::image type="content" source="../media/3-view-replication-status.png" alt-text="Screenshot of the geo-replication map that shows the primary and secondary locations available.":::
 
