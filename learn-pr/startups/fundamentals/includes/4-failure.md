@@ -81,7 +81,7 @@ The real value in your startup comes from the execution of your idea. It relies 
 There are plenty of reasons why it's generally better to tell people what you're working on rather than keep it a secret. Let's briefly discuss a few.
 
 - Ideas are cheap and easy to come up with. Millions of people in the world have startup ideas. Most of those ideas will prove not to be worthwhile. If you ask anyone who's even remotely interested in being an entrepreneur, chances are they already have multiple startup ideas that they're passionate about pursuing. Why would they want to devote years of their life working on something they didn't come up with, and that they're most likely not passionate about?
-- The longer you keep your idea to yourself, the more you're depriving yourself of valuable feedback. You should take every opportunity to tell people about your idea and find out if it meets a need. The best feedback comes from potential customers, followed by experienced founders, mentors, and investors who can share their advice and insights.
+- The longer you keep your idea to yourself, the more you're depriving yourself of valuable feedback. You should take every opportunity to tell people about your idea and find out if it meets a need. Don't just tell your friends or family, because they'll most likely give you well-meaning (but unhelpful) positive feedback.The best feedback comes from potential customers, followed by experienced founders, mentors, and investors who can share their advice and insights.
 - Talking about your startup idea is a great way to attract cofounders and collaborators, particularly if you're part of an existing startup community and can take part in networking opportunities and pitch events. By sharing your vision and passion you're more likely to find others who can join you and contribute to your startup journey.
 - If you want to raise money from investors, you have to be able to talk openly about what you're working on. Good investors are highly protective of their reputations, and there's no sense in an investor stealing your idea. They have better things to do with their time, and the feedback you'll get from good investors more than outweighs any risk there might be in talking to them about your idea.
 
@@ -143,10 +143,3 @@ Score: __ / 7
 
 Finally, bear in mind that as well as these indicators of failure, you should be thinking about the attributes of successful startups, as discussed in the previous unit. The absence of those positive attributes is just as much a concern as the presence of these indicators of failure.
 
-## Conclusions
-
-- It's important to consider the motivations and risk tolerance of each cofounder early in the journey. This helps to give you an informed view of what's ahead, and provides an opportunity to address any misalignment of expectations before they become problematic.
-- There are a lot of things you can do to validate your startup idea prior to committing full-time. Your objective should be to de-risk the opportunity as much as possible, and to make commitments of time and money in step with this de-risking process.
-- Your most important job early on is to find a repeatable, scalable business model. You should resist the temptation to try and acquire users or generate revenue until you have strong evidence that your idea addresses a real pain point. You must have a clear understanding of the needs of your target users, and what product they need you to build.
-- Successful startups have a number of important shared attributes. By understanding these you can integrate them into your startup from the very beginning.
-- A lot of startups fail because the founders make predictable and avoidable mistakes. By understanding some of the most common startup pitfalls, you'll be able to avoid them and improve your startup's chances of success.
