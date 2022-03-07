@@ -1,6 +1,6 @@
-In this module, you learned how Azure AD provides tools to help you govern the identity lifecycle and the access lifecycle. You've seen how Azure AD can be synchronized with human resources (HR) systems to manage identity lifecycles at scale. You also learned how dynamic groups can automate attribute-based rules to determine who is in a particular group.
+In this module, you learned how Azure AD provides tools to help you govern the identity lifecycle and the access lifecycle. You also learned that Azure AD can be synchronized with human resources (HR) systems to manage identity lifecycles at scale.
 
-This module discussed entitlement management, which automates access requests, access assignments, reviews, and expiration. You also learned about how these reviews can help you monitor who has access to what resources.
+This module discussed entitlement management, which automates access requests, access assignments, reviews, and expiration. You learned how these reviews can help you monitor who has access to what resources.
 
 Finally, you learned how Privileged Identity Management (PIM) can help you minimize the number of users who have access to important resources, and how Identity Protection can detect potential identity risks.
 
