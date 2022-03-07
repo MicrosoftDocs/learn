@@ -94,7 +94,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 ::: zone pivot="github"
 
-You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it. 
+You now have a copy of the template repository in your own account. You'll now clone this repository locally so you can start work in it. 
 
 1. Select **Code** and select the copy icon.
 
@@ -126,7 +126,7 @@ You now have a copy of the template repository in your own account. You will now
 
 ::: zone pivot="azurerepos"
 
-You now have a project in your own account. You will now clone this repository locally so you can start work in it. 
+You now have a project in your own account. You'll now clone this repository locally so you can start work in it. 
 
 1. Select **Repos** > **Files**.
 

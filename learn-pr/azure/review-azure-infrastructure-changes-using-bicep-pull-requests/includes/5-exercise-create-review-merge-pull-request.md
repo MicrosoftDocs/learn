@@ -131,7 +131,7 @@ When you create or review a pull request, you can participate in a conversation 
 
 1. Respond to the review on the pull request with the comment *No, storage queues must have lowercase names.*
 
-1. Select **Comment**, and then select **Resolve conversation** to indicate there discussion on the line is over.
+1. Select **Comment**, and then select **Resolve conversation** to indicate the discussion on the line is over.
 
    :::image type="content" source="../media/5-github-pull-request-respond-comment.png" alt-text="Screenshot of GitHub showing the response to the comment. The Comment and Resolve conversation buttons are highlighted.":::
 
@@ -145,7 +145,7 @@ When you create or review a pull request, you can participate in a conversation 
 
 1. Now, imagine you're the author of this file. Respond to the review on the pull request with the comment *No, storage queues must have lowercase names.*
 
-1. Select **Reply & resolve** to indicate there discussion on the line is over.
+1. Select **Reply & resolve** to indicate the discussion on the line is over.
 
    :::image type="content" source="../media/5-repos-pull-request-respond-comment.png" alt-text="Screenshot of Azure DevOps the response to the comment. The Reply and resolve button is highlighted.":::
 
@@ -171,7 +171,7 @@ Your pull request has been approved. Your website's development team has confirm
 
    :::image type="content" source="../media/5-github-pull-request-merge.png" alt-text="Screenshot of GitHub showing the pull request. The Merge pull request button is highlighted.":::
 
-1. GitHub asks you to confirm the merge. When GitHub merges the pull request, it creates a commit and uses the commit message . Select **Confirm merge**.
+1. GitHub asks you to confirm the merge. When GitHub merges the pull request, it creates a commit and automatically generates a commit message. Select **Confirm merge**.
 
    :::image type="content" source="../media/5-github-pull-request-merge-confirm.png" alt-text="Screenshot of GitHub showing the pull request. The Confirm merge button is highlighted.":::
 
