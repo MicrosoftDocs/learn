@@ -99,14 +99,9 @@ Typically, an Azure AD B2B user and guest user are synonymous. Therefore, an Azu
 
 It's possible to convert UserType from Member to Guest and vice-versa by using PowerShell. However, the UserType property represents the user's relationship to the organization. Therefore, you should change this property only if the relationship of the user to the organization changes. If the relationship of the user changes, should the user principal name (UPN) change? Should the user continue to have access to the same resources? Should a mailbox be assigned? We don't recommend changing the UserType by using PowerShell as an atomic activity. Also, in case this property becomes immutable by using PowerShell, we don't recommend taking a dependency on this value.
 
-:::image type="content" source="../media/remove-guest-limitations-c1c4d91b.png" alt-text="Screenshot showing the External users option in the user settings.":::
+## Remove guest user limitations
 
-
-### Remove guest user limitations
-
-There may be cases where you want to give your guest users higher privileges. You can add a guest user to any role and even remove the default guest user restrictions in the directory to give a user the same privileges as members.
-
-It's possible to turn off the default limitations so that a guest user in the company directory has the same permissions as a member user.
+There may be cases where you want to give your guest users higher privileges. You can add a guest user to any role and even remove the default guest user restrictions in the directory to give a user the same privileges as members. It's possible to turn off the default limitations so that a guest user in the company directory has the same permissions as a member user. Configure this in the user settings in Azure AD menu.
 
 :::image type="content" source="../media/remove-guest-limitations-c1c4d91b.png" alt-text="Screenshot showing the External users option in the user settings.":::
 

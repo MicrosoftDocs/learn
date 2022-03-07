@@ -24,7 +24,6 @@ roles:
 products:
 - azure
 modules:
-- learn.wwl.explore-non-relational-data-offerings-azure
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure
 - learn.wwl.explore-non-relational-data-stores-azure
 trophy:
