@@ -10,7 +10,7 @@ Watch the video to see how Conditional Access policies work.
 
 ## Conditional Access signals
 
-Conditional Access can use the following signals:
+Some of the common signals that Conditional Access can take in to account when making a policy decision may include:
 
 - **User or group membership**. Policies can be targeted to all users, specific groups of users, directory roles, or external guest users, giving administrators fine-grained control over access.
 - **Named location information**. Named location information can be created using IP address ranges, and used when making policy decisions. Also, administrators can opt to block or allow traffic from an entire country's IP range.
@@ -37,7 +37,7 @@ When the Conditional Access policy has been applied, an informed decision is rea
   - Require approved client app.
   - Require app protection policy.
   - Require password change.
-- Control user access based on session controls to enable limited experiences within specific cloud applications.  As an example, Conditional Access App Control uses signals from Microsoft Defender for Cloud Apps to block, download, cut, copy and print sensitive documents, or to require labeling of sensitive files.  Other session controls include sign-in frequency and application enforced restrictions that, for selected applications, use the device information to provide users with a limited or full experience, depending on the device state.
+- Control user access based on session controls to enable limited experiences within specific cloud applications.  As an example, Conditional Access App Control uses signals from Microsoft Defender for Cloud Apps to block the download, cut, copy, and print capabilities for sensitive documents, or to require labeling of sensitive files.  Other session controls include sign-in frequency and application enforced restrictions that, for selected applications, use the device information to provide users with a limited or full experience, depending on the device state.
 
 Conditional Access policies can be targeted to members of specific groups or guests. For example, you can create a policy to exclude all guest accounts from accessing sensitive resources.
 Conditional Access is a feature of paid Azure AD editions.
