@@ -10,7 +10,7 @@ A significant challenge for a fast-growing home improvement retailer like Tailwi
 
 **Data-driven workflows**
 
-There are four major steps in creating and implementing a data-driven workflow in Azure Data Factory. As you can see in the image below, they are:
+There are four major steps in creating and implementing a data-driven workflow in Azure Data Factory. 
 
 1. **Connect and collect** – Data ingestion is the first step to collecting all the data from different sources into a centralized location.
 
@@ -19,9 +19,6 @@ There are four major steps in creating and implementing a data-driven workflow i
 3. **Continuous integration and delivery (CI/CD) and publish** – Support for CI/CD through GitHub and Azure DevOps enables to deliver your ETL process incrementally before publishing the data to the analytics engine.
 
 4. **Monitor** – Via the Azure portal, you can monitor the pipeline for scheduled activities and for any failures.
-
-:::image type="content" source="../media/data-movement-stages.png" alt-text="The Data Factory process.":::
-
 
 The following graphic shows Azure Data Factory orchestrating the ingestion of data from different data sources. Data is ingested into Storage Blob and stored in Azure Synapse Analytics. Analysis and Visualization components are also connected to Azure Data Factory. Azure data factory provides a common management interface for all of your data integration needs.
 
@@ -61,7 +58,7 @@ Azure Data factory has the following components as shown in the image above that
 
  
 
-Let us see how ADF’s components are involved in a data preparation and movement scenario for Tailwind Traders. They have many different data sources to connect to and that data needs to be ingested and transformed through stored procedures that are run on the data. Finally, the data should be pushed to analytics platform for analysis. 
+Let's review how ADF’s components are involved in a data preparation and movement scenario for Tailwind Traders. They have many different data sources to connect to and that data needs to be ingested and transformed through stored procedures that are run on the data. Finally, the data should be pushed to analytics platform for analysis. 
 
 - In this scenario, Linked Service enables Tailwind Traders to ingest data from different sources and it stores connection strings to fire up compute services on demand.
 

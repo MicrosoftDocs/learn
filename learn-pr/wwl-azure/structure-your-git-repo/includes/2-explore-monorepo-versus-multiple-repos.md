@@ -4,9 +4,9 @@ However, what's the best way to organize your code repository? Software developm
 
 It's not uncommon for the code repositories to be bloated with unrelated code and artifacts over time.
 
-There are two philosophies on how to organize your repos: Monorepo or Multiple repos.
+There are two philosophies on organizing your repos: Monorepo or Multiple repos.
 
- -  Monorepos are a source control pattern where all the source code is kept in a single repository. It's super simple to give all your employees access to everything in one shot. Just clone it down and done.
+ -  Monorepos is a source control pattern where all the source code is kept in a single repository. It's super simple to give all your employee's access to everything in one shot. Just clone it down and done.
  -  Multiple repositories refer to organizing your projects each into their separate repository.
 
 The fundamental difference between the monorepo and multiple repos philosophies boils down to a difference about what will allow teams working together on a system to go fastest.
@@ -17,17 +17,17 @@ They have the flexibility to work in their area however they want, using whateve
 
 The cost is that anything not developed within a given repo must be consumed as if it was a third-party library or service. It would be the same even if it were written by the person sitting one desk over.
 
-If you find a bug in a library you use, you must fix it in the appropriate repo. Get a new artifact published, and then go back to your repo to change your code.
+If you find a bug in a library you use, you must fix it in the appropriate repo. Get a new artifact published, and then return to your repo to change your code.
 
-In the other repo, you must deal with a different code base, various libraries, and tools, or even a different workflow.
+You must deal with a different code base, various libraries, and tools, or even a different workflow in the other repo.
 
 Or maybe you must ask someone who owns that system to make the change for you and wait for them to get around to it.
 
 The monorepo view the friction, especially when dealing with more complicated dependency graphs, is much more costly than multiple repos advocates recognize.
 
-The productivity gains to be had by letting different teams go their way aren't all that significant.
+The productivity gains to be had by letting different teams go their way aren't that significant.
 
-While it may be the case that some teams will find a locally optimal way of working. It's also likely that other teams will offset their gains by choosing a suboptimal way of working.
+While some teams may find a locally optimal way of working, it may be the case. It's also likely that other teams will offset their gains by choosing a suboptimal way of working.
 
 By putting all your eggs in the one basket of the monorepo, you can then afford to invest in watching that basket carefully.
 

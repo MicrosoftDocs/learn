@@ -39,7 +39,7 @@ In this exercise, you'll take advantage of the `unittest` module, which is inclu
 
 ## Step 2 - Run the tests and identify the failure
 
-Now that the test file has a function to test and a couple of tests to verify its behavior, it is time to run the tests and work with failures.
+Now the test file has a function to test and a couple of tests to verify its behavior. It's time to run the tests and work with failures.
 
 - Execute the file with Python:
 
@@ -65,7 +65,7 @@ Now that the test file has a function to test and a couple of tests to verify it
     FAILED (failures=1)
     ```
 
-    The output points out that the `test_yes_is_true()` test is failing. It uses `'Yes'` as input to the `str_to_bool()` function which isn't part of the `true_vals` list. Because the function doesn't see `'Yes'` as part of any of the values it ends up returning an implicit `None`, which is why the error states: `None is not true`.
+    The output points out that the `test_yes_is_true()` test is failing. It uses `'Yes'` as input to the `str_to_bool()` function, which isn't part of the `true_vals` list. Because the function doesn't see `'Yes'` as part of any of the values it ends up returning an implicit `None`, which is why the error states: `None is not true`.
 
 ## Step 3 - Fix the bug and make the tests pass
 
@@ -110,14 +110,14 @@ Part of the idea of working with tests is getting validation for changes. Even i
 
 In this case, the function being tested only works with strings, so using any other type as input would cause an unhandled exception to be raised. 
 
-1. Update the function so that it raises a `TypeError` if a non-string value is used. This can be detected by catching an `AttributeError` when calling `value.lower()` because only strings have a `lower()` method:
+1. Update the function so that it raises an `AttributeError` if a non-string value is used. This can be detected by catching an `AttributeError` when calling `value.lower()` because only strings have a `lower()` method:
 
     ```python
     def str_to_bool(value):
         try:
             value = value.lower()
         except AttributeError:
-            raise TypeError(f"{value} must be of type string")
+            raise AttributeError(f"{value} must be of type string")
         true_values = ['y','yes']
         false_values = ['no', 'n']
     
@@ -127,7 +127,7 @@ In this case, the function being tested only works with strings, so using any ot
             return False
     ```
 
-2. Use a new assert method from `unittest.TestCase` in the test class. This new test should verify that the `TypeError` raises on non-string input:
+2. Use a new assert method from `unittest.TestCase` in the test class. This new test should verify that the `AttributeError` raises on non-string input:
 
     ```python
         def test_invalid_input(self):
