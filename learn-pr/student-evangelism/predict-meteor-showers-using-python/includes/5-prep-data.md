@@ -2,7 +2,7 @@ Recall that in the data science project life cycle, after you have the data for 
 
 ## Exercise: Import data
 
-First, import the .csv files into your Python notebook. Import numpy and pandas:
+First, import the .csv files into your Python notebook. Import NumPy and pandas:
 
 ```python
 import numpy as np 
@@ -11,7 +11,7 @@ import pandas as pd
 
 Make sure you run the cell to ensure you have your environment set up. Your Visual Studio Code notebook should look like this:
 
-![Import pandas and numpy code in Visual Studio Code.](../media/import-pandas-numpy.png)
+:::image type="content" source="../media/import-pandas-numpy.png" alt-text="Screenshot that shows importing pandas and NumPy code in Visual Studio Code.":::
 
 Notice the `[1]` in the upper-left corner of the cell where you have your imported code. That number means that the cell has finished running. There's no output between the first and second cell, so you know the code was successful. 
 
@@ -26,7 +26,7 @@ cities = pd.read_csv('data/cities.csv')
 
 ## Exercise: Explore data
 
-Look through the data. For each variable you created, print the head and the info for those data frames. Head allows you to see the first five lines in the .csv files. Info gives you an overview of what data might be missing. Make sure you run each of these in their own cell so that you can see their output.
+Look through the data. For each variable you created, print the `head` and the `info` for those DataFrames. `head` allows you to see the first five lines in the .csv files. `info` gives you an overview of what data might be missing. Make sure you run each of these in their own cell so that you can see their output.
 
 ```python
 meteor_showers.head()
@@ -34,11 +34,11 @@ meteor_showers.head()
 
 |  | name | radiant | bestmonth | startmonth | startday | endmonth | endday | hemisphere | preferredhemisphere |
 |---|---|---|---|---|---|---|---|---|---|
-| 0 | Lyrids | Lyra | april | april | 21 | april | 22 | northern | northern |
-| 1 | Eta Aquarids | Aquarius | may | april | 19 | may | 28 | northern, southern | southern |
-| 2 | Orionids | Orion | october | october | 2 | november | 7 | northern, southern | northern, southern |
-| 3 | Perseids | Perseus | august | july | 14 | august | 24 | northern | northern |
-| 4 | Leonids | Leo | november | november | 6 | november | 30 | northern, southern | northern, southern |
+| **0** | Lyrids | Lyra | april | april | 21 | april | 22 | northern | northern |
+| **1** | Eta Aquarids | Aquarius | may | april | 19 | may | 28 | northern, southern | southern |
+| **2** | Orionids | Orion | october | october | 2 | november | 7 | northern, southern | northern, southern |
+| **3** | Perseids | Perseus | august | july | 14 | august | 24 | northern | northern |
+| **4** | Leonids | Leo | november | november | 6 | november | 30 | northern, southern | northern, southern |
 
 ```python
 meteor_showers.info()
@@ -69,11 +69,11 @@ moon_phases.head()
 
 |  | month | day | moonphase | specialevent |
 |---|---|---|---|---|
-| 0 | january | 1 | NaN | NaN |
-| 1 | january | 2 | first quarter | NaN |
-| 2 | january | 3 | NaN | NaN |
-| 3 | january | 4 | NaN | NaN |
-| 4 | january | 5 | NaN | NaN |
+| **0** | january | 1 | NaN | NaN |
+| **1** | january | 2 | first quarter | NaN |
+| **2** | january | 3 | NaN | NaN |
+| **3** | january | 4 | NaN | NaN |
+| **4** | january | 5 | NaN | NaN |
 
 
 ```python
@@ -100,11 +100,11 @@ constellations.head()
 
 |   | constellation | bestmonth | latitudestart | latitudeend | besttime | hemisphere |
 |---|---|---|---|---|---|---|
-| 0 | Lyra | august | 90 | -40 | 21:00 | northern |
-| 1 | Aquarius | october | 65 | -90 | 21:00 | southern |
-| 2 | Orion | january | 85 | -75 | 21:00 | northern |
-| 3 | Perseus | december | 90 | -35 | 21:00 | northern |
-| 4 | Leo | april | 90 | 65 | 21:00 | northern |
+| **0** | Lyra | august | 90 | -40 | 21:00 | northern |
+| **1** | Aquarius | october | 65 | -90 | 21:00 | southern |
+| **2** | Orion | january | 85 | -75 | 21:00 | northern |
+| **3** | Perseus | december | 90 | -35 | 21:00 | northern |
+| **4** | Leo | april | 90 | 65 | 21:00 | northern |
 
 ```python
 constellations.info()
@@ -132,11 +132,11 @@ cities.head()
 
 |  | city | latitude | country |
 |---|---|---|---|
-| 0 | Abu Dhabi | 24.47 | United Arab Emirates |
-| 1 | Abuja | 9.07 | Nigeria |
-| 2 | Accra | 5.55 | Ghana |
-| 3 | Adamstown | -25.07 | Pitcairn Islands |
-| 4 | Addis Ababa | 9.02 | Ethiopia |
+| **0** | Abu Dhabi | 24.47 | United Arab Emirates |
+| **1** | Abuja | 9.07 | Nigeria |
+| **2** | Accra | 5.55 | Ghana |
+| **3** | Adamstown | -25.07 | Pitcairn Islands |
+| **4** | Addis Ababa | 9.02 | Ethiopia |
 
 ```python
 cities.info()
@@ -162,7 +162,7 @@ We can see from the calls to `head()` that a lot of information is written in wo
 You can quickly convert the month columns to numbers:
 1. Create a map of months to numbers. We can see from the output of `head()` that the months are all lowercase. 
 2. Map the map of months to the columns that have months in them. 
-3. Save the result to the data frame.
+3. Save the result to the DataFrame.
 
 ```python
 months = {'january':1, 'february':2, 'march':3, 'april':4, 'may':5, 'june':6, 'july':7, 'august':8, 'september':9, 'october':10, 'november':11, 'december':12}
@@ -173,7 +173,7 @@ moon_phases.month = moon_phases.month.map(months)
 constellations.bestmonth = constellations.bestmonth.map(months)
 ```
 
-Verify your changes by adding calls to `head()` and `info()` to each of the three data frames that you modified. For example:
+Verify your changes by adding calls to `head()` and `info()` to each of the three DataFrames that you modified. For example:
 
 ```python
 meteor_showers.head()
@@ -181,11 +181,11 @@ meteor_showers.head()
 
 | | name | radiant | bestmonth | startmonth | startday | endmonth | endday | hemisphere | preferredhemisphere |
 |--|-----|---------|-----------|------------| ---------|----------|--------|------------| --------------------|
-| 0 | Lyrids | Lyra | 4 | 4 | 21 | 4 | 22 | northern | northern |
-| 1 | Eta Aquarids | Aquarius | 5 | 4 | 19 | 3 | 28 | northern, southern | southern |
-| 2 | Orionids | Orion | 10 | 10 | 2 | 11 | 7 | northern, southern | northern, southern |
-| 3 | Perseids | Perseus | 8 | 7 | 14 | 8 | 24 | northern | northern |
-| 4 | Leonids | Leo | 11 | 11 | 6 | 11 | 30 | northern, southern | northern, southern |
+| **0** | Lyrids | Lyra | 4 | 4 | 21 | 4 | 22 | northern | northern |
+| **1** | Eta Aquarids | Aquarius | 5 | 4 | 19 | 3 | 28 | northern, southern | southern |
+| **2** | Orionids | Orion | 10 | 10 | 2 | 11 | 7 | northern, southern | northern, southern |
+| **3** | Perseids | Perseus | 8 | 7 | 14 | 8 | 24 | northern | northern |
+| **4** | Leonids | Leo | 11 | 11 | 6 | 11 | 30 | northern, southern | northern, southern |
 
 ```python
 meteor_showers.info()
@@ -210,7 +210,7 @@ dtypes: int64(5), object(4)
 memory usage: 488.0+ bytes
 ```
 
-Before you continue, convert months and days in the meteor_showers data frame to a type called datetime, which tracks dates.
+Before you continue, convert months and days in the meteor_showers DataFrame to a type called datetime, which tracks dates.
 
 Create two new columns: startdate and enddate. These columns will contain a month and day in 2020:
 
@@ -246,11 +246,11 @@ moon_phases.head()
 
 | month | day | moonphase | specialevent | date | percentage |
 |-------|-----|-----------|--------------|------|-----------|
-| 0 | 1 | 1 | NaN | NaN | 2020-01-01 | NaN |
-| 1 | 1 | 2 | first quarter | NaN | 2020-01-02 | 0.5 |
-| 2 | 1 | 3 | NaN | NaN | 2020-01-03 | NaN |
-| 3 | 1 | 4 | NaN | NaN | 2020-01-04 | NaN |
-| 4 | 1 | 5 | NaN | NaN | 2020-01-05 | NaN |
+| 0 | 1 | 1 | NaN | 2020-01-01 | NaN |
+| 1 | 1 | 2 | first quarter | 2020-01-02 | 0.5 |
+| 2 | 1 | 3 | NaN | 2020-01-03 | NaN |
+| 3 | 1 | 4 | NaN | 2020-01-04 | NaN |
+| 4 | 1 | 5 | NaN | 2020-01-05 | NaN |
 
 Now you've converted all the data that makes more sense as numbers. But some values are missing. 
 
@@ -290,16 +290,16 @@ dtypes: datetime64[ns](1), float64(1)
 memory usage: 5.8 KB
 ```
 
-You see that the cycle of the Moon phases goes from 0 to 0.5 to 1 to 0.5 and then back to 0. So you could conceivably make every value between 0 and 0.5 be 0.25. And you could make every value between 0.5 and 1 be 0.75. 
+You see that the cycle of the Moon phases goes from 0 to 0.5 to 1 to 0.5 and then back to 0. So, you could conceivably make every value between 0 and 0.5 be 0.25. And you could make every value between 0.5 and 1 be 0.75. 
 
 You could get more detailed by figuring out a more accurate percentage on your own:
 
 1. Import the math Python library.
 2. Create a variable to save the last phase that you saw.
-3. Loop through each row and column in the moon_phases data frame.
+3. Loop through each row and column in the moon_phases DataFrame.
 4. If the value in the percentage column of a row is nan (null), then replace it with the last phase that you saw.
 5. If the value isn't nan, then save the value as the last phase that you saw.
-6. Show the info for the moon_phase data frame:
+6. Show the info for the moon_phases DataFrame:
 
     ```python
     lastPhase = 0

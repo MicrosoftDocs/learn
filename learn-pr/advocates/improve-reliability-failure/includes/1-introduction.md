@@ -1,4 +1,4 @@
-The Dickerson Hierarchy of reliability offers a map for navigating
+The Dickerson Hierarchy of Reliability offers a map for navigating
 reliability challenges--what needs to be addressed and in what order. Like
 other hierarchies of this sort, it is important that the level you are on
 is solid before moving up the pyramid.

@@ -4,9 +4,9 @@ title: What is nonfunctional testing?
 metadata:
   title: What is nonfunctional testing?
   description: Define nonfunctional tests and identify some popular kinds of tests that you can run.
-  ms.date: 01/21/2020
-  author: tpetchel
-  ms.author: thpetche
+  ms.date: 06/23/2021
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

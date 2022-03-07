@@ -1,9 +1,7 @@
 For some computational tasks, quantum computing provides exponential speedups. These speedups are possible thanks to three phenomena from
 quantum mechanics: superposition, interference, and entanglement.
 
-A classical computer represents information using _bits_, which can be either '0's or '1's; a quantum computer will have the advantage of using zeros, ones and superpositions of zeros and ones. Where current computers may require an infeasible amount of time to solve some of the world’s most challenging problems, a fault-tolerant scalable quantum computer could find a solution [very quickly](https://www.microsoft.com/en-us/research/blog/problems-will-solve-quantum-computer/), with the correct algorithms. Just like a bit is the smallest unit of classical information, in quantum information theory we use quantum bits, or _qubits_. A quantum state with $n$ qubits is represented by a superposition of $2^n$ possibilities, implying that the computational capacity of a quantum processor grows exponentially with the number of qubits. 
-
-In the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module, you used superposition to generate random numbers from qubits. In this part, you'll learn more about superposition.
+In the [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module, you used superposition to generate random numbers from qubits. In this part, you'll learn more about superposition.
 
 ## Quantum computers are quantum systems
 
@@ -11,16 +9,12 @@ Quantum computers are controllable quantum mechanical devices that exploit the p
 
 $$i \hbar \frac{\partial}{\partial t}\psi(t)= \hat H \psi(t).$$
 
-This equation captures the _wave function_, $\psi(t)$, and the energy Hamiltonian, $\hat H$, of the system. Here, $t$ is time and $\hbar$ is the Planck constant.
+This equation captures the _wave function_, $\psi(t)$, which represents the state of the quantum system, and the Hamiltonian, $\hat H$, which represents the energy of the system. Here, $t$ is time and $\hbar$ is the Planck constant.
 
-Fortunately, you don't need the Schrödinger equation to do quantum programming. In practice, nobody thinks in terms of the Schrödinger equation when they write quantum algorithms. But we can use the equation to help us understand some concepts of quantum computing.
+You may be thinking that you didn't choose the life of galactic adventures to learn about quantum mechanics and algebra in the first place. Fortunately, you don't need the Schrödinger equation to do quantum programming. In practice, nobody thinks in terms of the Schrödinger equation when they write quantum algorithms. But we can use the equation to help us understand some concepts of quantum computing.
 
-The Schrödinger equation determines the evolution of the state of the system,
-represented by the wave function $\psi$. Each wave function is associated with
-an important concept in quantum computing: the *probability amplitude* of the
-wave function. The probability amplitude is a complex number that determines the probability of
-getting a certain outcome when we measure
-the system. 
+The Schrödinger equation determines the evolution of the state of the system, represented by the wave function $\psi$. That is, given a time $t$, the equation helps us find the state of the system at that time. Each wave function $\psi$ is associated with an important concept in quantum computing: the *probability amplitude* of the wave function. The probability amplitude is a complex number that determines the probability of getting a certain outcome when we measure the system. 
+
 
 The probability amplitude is an important difference from classical computing. In quantum computing, we don't describe bits as being in determined, factual states. Rather, we describe bits by the probabilities of finding their states when we observe them.
 
@@ -36,9 +30,11 @@ The probability amplitude is an important difference from classical computing. I
 
 ### What's Dirac bra-ket notation?
 
-A handy notation to describe quantum states is the Dirac bra-ket notation. In this notation, we describe the possible states of quantum systems by using kets $| \rangle$.
+How do we describe a quantum state?
 
-For example, $|0\rangle$ and $|1\rangle$ are two possible states of a qubit. A qubit in the state $|\psi\rangle = |0\rangle$ means that the probability of observing `Zero` when we measure the qubit is 100 percent. Similarly, a qubit in the state $|\psi\rangle =|1\rangle$ produces `One` when we measure it.
+A handy notation to write quantum states is the *Dirac bra-ket* notation. In this notation, we describe the possible states of quantum systems by using symbols called _kets_ $| \rangle$.
+
+For example, $|0\rangle$ and $|1\rangle$ are 0 and 1 quantum states, respectively. They're two possible states of a qubit. A qubit in the state $|\psi\rangle = |0\rangle$ means that the probability of observing `Zero` when we measure the qubit is 100 percent. Similarly, a qubit in the state $|\psi\rangle =|1\rangle$ produces `One` when we measure it.
 
 > [!NOTE]
 > There are many interpretations of the concept of *measurement* in
@@ -54,12 +50,13 @@ For example, $|0\rangle$ and $|1\rangle$ are two possible states of a qubit. A q
 
 ## What are linear operators?
 
-An *operator* is a function that transforms the state of a quantum system to another state.
+We can perform measurements on quantum states, but we can also make changes to them. For example, we can transform a $|0\rangle$ state into a $|1\rangle$ state.
+
+An *operator* is a function that acts on a state of a quantum system and transforms it to another state. 
 
 $$A |\psi\rangle = |\psi'\rangle$$
 
-We say that an operator $A$ is *linear* when it has the following properties
-for addition and multiplication by a complex number $a$:
+We say that an operator $A$ is *linear* when it has the following properties for addition and multiplication by a complex number $a$:
 
 $$A( |\psi_1\rangle + |\psi_2\rangle) =  A |\psi_1\rangle + A|\psi_2\rangle$$
 
@@ -79,13 +76,11 @@ superposition of $ |\psi_1\rangle$ and $|\psi_2\rangle$. Here, $a$ and $b$ are t
 probability amplitudes of $ |\psi_1\rangle$ and $|\psi_2\rangle$, respectively.
 Remember that in the module [Create your first Q# program by using the Quantum
 Development
-Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
+Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
 you used superposition to create a quantum random number generator. You used the operation `H` to put a qubit that's in the state $|0\rangle$ into superposition.
-Mathematically, this equation is $$  H |0\rangle = \frac1{\sqrt2} |0\rangle +
-\frac1{\sqrt2} |1\rangle.$$
+Mathematically, this equation is $$  H |0\rangle = \frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle.$$
 
-Linearity is a fundamental property of
-quantum mechanics and therefore of quantum computing.
+Linearity is a fundamental property of quantum mechanics and therefore of quantum computing.
 
 > [!NOTE]
 > The symbol $H$ (without the hat) refers to the quantum operator,
@@ -138,7 +133,7 @@ computing.
 
 How do we know the probabilities associated with a given superposition? Suppose we have a register of two qubits that can be in a superposition of four possible states: $$|\psi\rangle = a |00\rangle + b |01\rangle + c |10\rangle + d |11\rangle.$$
 
-Remember that $a,b,c$ and $d$ are probability amplitudes for each state. Their
+Remember that $a,b,c$ and $d$ are complex numbers, and they're probability amplitudes for each state. Their
 absolute values, for example $|a|$, squared, give the corresponding probabilities. For
 instance, the probability for observing $|00\rangle$ is $P(00)=|a|^2$. For
 $|01\rangle$, it's $P(01)=|b|^2$, and so on.
@@ -155,11 +150,10 @@ information about the superposition. We obtain only the results after a measurem
 
 ![Figure explaining that the number of possible configurations grows exponentially with the number of qubits as 2 to the N. The number of possible combinations of amplitude is infinite, as long as their squares add up to 1.](../media/2-scale.png)
 
-In the example state we produced for the quantum random bit generator,
-$|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$, the probability
-for each state is
+In the example state we produced for the quantum random bit generator, $|\psi\rangle=\frac1{\sqrt2} |0\rangle + \frac1{\sqrt2} |1\rangle$, the probability for each state is
 
 $$P(0)=\left|\frac1{\sqrt{2}}\right|^2=\frac12;$$
+
 $$P(1)=\left|\frac1{\sqrt{2}}\right|^2=\frac12.$$
 
 Each state has a 50-percent probability of being measured, so we have a balanced

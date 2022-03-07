@@ -1,0 +1,59 @@
+### YamlMime:Module
+uid: learn.wwl.explore-release-strategy-recommendations
+metadata:
+  title: Explore release strategy recommendations
+  description: "Explore release strategy recommendations"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore release strategy recommendations
+summary: This module explores the critical release strategy recommendations that organizations must consider when designing automated deployments and explains how to define components of a release pipeline and artifact sources, create approves, and configure release gates.
+abstract: |
+  &quot;By the end of this module, you'll be able to:
+  - Explain things to consider when designing your release strategy
+  - Define the components of a release pipeline and use artifact sources
+  - Create a release approval plan
+  - Implement release gates&quot;
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.explore-release-strategy-recommendations.introduction
+- learn.wwl.explore-release-strategy-recommendations.explore-release-pipelines
+- learn.wwl.explore-release-strategy-recommendations.explore-artifact-sources
+- learn.wwl.explore-release-strategy-recommendations.choose-appropriate-artifact-source
+- learn.wwl.explore-release-strategy-recommendations.exercise-select-artifact-source
+- learn.wwl.explore-release-strategy-recommendations.examine-considerations-for-deployment-to-stages
+- learn.wwl.explore-release-strategy-recommendations.exercise-set-up-stages
+- learn.wwl.explore-release-strategy-recommendations.understand-delivery-cadence-three-types-of-triggers
+- learn.wwl.explore-release-strategy-recommendations.exercise-select-your-delivery-deployment-cadence
+- learn.wwl.explore-release-strategy-recommendations.explore-release-approvals
+- learn.wwl.explore-release-strategy-recommendations.exercise-set-up-manual-approvals
+- learn.wwl.explore-release-strategy-recommendations.explore-release-gates
+- learn.wwl.explore-release-strategy-recommendations.exercise-set-up-release-gate
+- learn.wwl.explore-release-strategy-recommendations.knowledge-check
+- learn.wwl.explore-release-strategy-recommendations.summary
+badge:
+  uid: learn.wwl.explore-release-strategy-recommendations.badge

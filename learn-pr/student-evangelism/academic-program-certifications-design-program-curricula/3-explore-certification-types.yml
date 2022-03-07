@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-design-program-curricula.explore-certification-types
+title: Explore certification types
+metadata:
+  title: Explore certification types
+  description: Explore types of Microsoft certification.
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-explore-certification-types.md)]

@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-evaluate-boolean-expressions
 metadata:
-  title: Evaluate Boolean expressions to make decisions in C#
+  title: 'Evaluate Boolean expressions to make decisions in C#'
   description: Learn the operators and techniques required to evaluate and compare values in your decision statements.
   ms.date: 09/24/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Evaluate Boolean expressions to make decisions in C#

@@ -1,0 +1,38 @@
+### YamlMime:Module
+#LP name: Module 3: Gaming assistive technologies
+uid: learn.gaming-assistive-technologies
+metadata:
+  title: Gaming assistive technologies
+  description: Learn about the types of assistive hardware and software technologies that players with disabilities use to game, and the importance of supporting these assistive technologies when you create accessible gaming products and experiences for all audiences.
+  ms.date: 08/10/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+  showCreativeCommonsFooter: true
+title: Gaming assistive technologies
+summary: Learn about the types of assistive hardware and software technologies that players with disabilities use to game, and the importance of supporting these assistive technologies when you create accessible gaming products and experiences for all audiences.
+abstract: |
+ After you complete this module, you'll be able to:
+
+ - Describe common gaming software-based features and tools and how their use can affect player experiences.
+ - Describe common hardware-based gaming assistive technologies and how their use can affect player experiences.
+ - Determine appropriate methods to support assistive technology users when you develop games and platforms.
+prerequisites: |
+ - You should have some basic familiarity with playing and creating video games.
+ - You should have some familiarity with using game platforms like Xbox, PlayStation, Nintendo Switch, or Windows.
+ - A basic understanding of foundational terms and concepts for disability and accessibility principles is helpful.
+iconUrl: /learn/achievements/gaming-assistive-technologies.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- xbox
+units:
+- learn.gaming-assistive-technologies.introduction
+- learn.gaming-assistive-technologies.gaming-software
+- learn.gaming-assistive-technologies.gaming-hardware
+- learn.gaming-assistive-technologies.summary
+badge:
+  uid: learn.gaming-assistive-technologies.badge

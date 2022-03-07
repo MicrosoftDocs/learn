@@ -11,6 +11,6 @@ In this module, you learned:
 
 To learn more about managing session state in an ASP.NET web app, see the following articles:
 
-- [Session and state management in ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/app-state)
-- [ASP.NET session state provider for Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-aspnet-session-state-provider)
-- [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview)
+- [Session and state management in ASP.NET Core](/aspnet/core/fundamentals/app-state)
+- [ASP.NET session state provider for Azure Cache for Redis](/azure/azure-cache-for-redis/cache-aspnet-session-state-provider)
+- [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview)

@@ -15,7 +15,7 @@ Applications may run SQL queries programmatically (similar to MySQL) via the SQL
 
 An extension of the core Spark API, Spark Streaming enables scalable, high-throughput, fault-tolerant stream processing of live data streams. 
 
-![Spark Streaming](../media/streaming.png)
+![Spark Streaming.](../media/streaming.png)
 
 _Figure 7: Spark Streaming_
 
@@ -25,7 +25,7 @@ The high-level abstraction provided by Spark Streaming is the discretized stream
 
 To build a streaming pipeline in Spark Streaming, first a `Dstream` should be constructed from an input data source. The source can be as simple as a network socket or file stream, or can be a more complex system such as [Kafka](http://kafka.apache.org/),<sup>[3][^3]</sup> [Flume](https://flume.apache.org/),<sup>[4][^4]</sup> [Kinesis](http://aws.amazon.com/kinesis/), or a [Twitter feed](https://dev.twitter.com/streaming/overview). After a `Dstream` is constructed, it can be sent to any number of streaming functions to be transformed. Some of the functions include `map()`, `reduce()`, `join()`, and `count()`. Refer to the [API](https://spark.apache.org/docs/latest/streaming-programming-guide.html) for more details. 
 
-![Sliding window computation in Spark Streaming](../media/sliding-window.png)
+![Sliding window computation in Spark Streaming.](../media/sliding-window.png)
 
 _Figure 8: Sliding window computation in Spark Streaming_
 
@@ -66,7 +66,7 @@ The following figure shows a property graph consisting of various collaborators 
 val userGraph: Graph[(String, String), String]
 ```
 
-![A property graph in GraphX](../media/property-graph.png)
+![A property graph in GraphX.](../media/property-graph.png)
 
 _Figure 9: A property graph in GraphX_
 

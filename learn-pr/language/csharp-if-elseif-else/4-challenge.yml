@@ -5,8 +5,8 @@ metadata:
   title: Challenge
   description: Put into practice what you just learned about the if-elseif-else statement.
   ms.date: 09/19/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

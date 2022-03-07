@@ -1,5 +1,7 @@
 The first step to creating an immersive experience for Windows Mixed Reality requires configuring your Unity project for Windows Mixed Reality development. Configuring Unity for Windows Mixed Reality development is a manual process, which must be completed whenever you create a new Unity project or open a project shared with you. Once your project is configured, your app will be able to do basic holographic rendering and spatial input. Here you'll learn the specifics of configuring your Unity project for Windows Mixed Reality development.
 
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Configure-Unity-for-Mixed-Reality-Development/player?format=ny]
+
 ## Universal Windows Platform
 
 To target Windows Mixed Reality, your Unity project must be set to export as a Universal Windows Platform app. By default, the build settings for the Universal Windows Platform target any device - this includes support for immersive headsets. However, you could select the appropriate device by changing the setting for **Target device**.
@@ -14,7 +16,7 @@ In Unity, you can configure your project to create an immersive view by enabling
 
 ## How are holograms rendered
 
-In Mixed Reality apps, the scene is rendered twice, once for each eye to the user. This rendering method is referred to as *stereoscopic vision*. Compared to traditional 3D development, stereoscopic vision doubles the amount of work that needs to be computed. Therefore, it's important to select the most efficient rendering path in Unity to save both on CPU and GPU time. **Single pass instanced** rendering optimizes the Unity rendering pipeline for mixed reality apps and therefore it's recommended to enable this setting by default for every project.
+In mixed reality apps, the scene is rendered twice, once for each eye to the user. This rendering method is referred to as *stereoscopic vision*. Compared to traditional 3D development, stereoscopic vision doubles the amount of work that needs to be computed. Therefore, it's important to select the most efficient rendering path in Unity to save both on CPU and GPU time. **Single pass instanced** rendering optimizes the Unity rendering pipeline for mixed reality apps and therefore it's recommended to enable this setting by default for every project.
 
 ## How to stabilize holograms
 

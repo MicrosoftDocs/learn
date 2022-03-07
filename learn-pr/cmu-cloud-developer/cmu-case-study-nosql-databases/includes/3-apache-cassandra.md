@@ -1,4 +1,4 @@
-Apache Cassandra is a fully distributed, structured key-value storage system. Cassandra marries the best aspects of both HBase and Amazon's set of storage techniques, referrred to as Dynamo.<sup>[3][^3]</sup> Cassandra uses the data model of HBase and the implementation architecture of Dynamo. The following video covers Cassandra.
+Apache Cassandra is a fully distributed, structured key-value storage system. Cassandra marries the best aspects of both HBase and Amazon's set of storage techniques, referred to as Dynamo.<sup>[3][^3]</sup> Cassandra uses the data model of HBase and the implementation architecture of Dynamo. The following video covers Cassandra.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pQ3Z]
 
@@ -18,13 +18,13 @@ Cassandra allows for data to be stored in the key or value parts of each key-val
 
 Cassandra supports data operations similar to HBase, with a few exceptions. Typical operations in Cassandra are expressed as **Gets**, **Inserts**, and **Deletes**. Operations can be performed on a single row or a set of rows (called a **range**). In addition, operations<!-- they --> can be performed on a set of columns of a database (called a **slice**): 
 
-![Ranges and slices in Cassandra](../media/cassandra-range.png)
+![Ranges and slices in Cassandra.](../media/cassandra-range.png)
 
 _Figure 8: Ranges and slices in Cassandra_
 
 ### Cassandra architecture
 
-As a distributed data store, Cassandra is designed to run on a cluster of nodes, similar to HBase. However, unlike HBase, Cassandra follows a **decentralized architecture** (i.e., there is no master-slave architecture, and every node in Cassandra has the same role)<!-- . This way -->, which means Cassandra is designed without a single point of failure (SPOF). Although HBase is designed to be failure resilient, it relies on the Hadoop Distributed File System (HDFS) for persistent storage, where the NameNode is a SPOF. Cassandra does not require an underlying distributed file system (DFS); the nodes in a Cassandra cluster simply use the local storage on each node. Coordination between cluster nodes in Cassandra is handled in a peer-to-peer fashion. 
+As a distributed data store, Cassandra is designed to run on a cluster of nodes, similar to HBase. However, unlike HBase, Cassandra follows a **decentralized architecture** (i.e., there is no primary-secondary architecture, and every node in Cassandra has the same role)<!-- . This way -->, which means Cassandra is designed without a single point of failure (SPOF). Although HBase is designed to be failure resilient, it relies on the Hadoop Distributed File System (HDFS) for persistent storage, where the NameNode is a SPOF. Cassandra does not require an underlying distributed file system (DFS); the nodes in a Cassandra cluster simply use the local storage on each node. Coordination between cluster nodes in Cassandra is handled in a peer-to-peer fashion. 
 
 ### Data distribution in Cassandra
 
@@ -34,7 +34,7 @@ Client requests to read or write data in Cassandra can be serviced by any node i
 
 Cassandra automatically distributes rows among the various nodes in the cluster using the hash value of the key of each row. In the default case, Cassandra uses a Message Digest 5 (MD5) hashing algorithm on the key of each row, generating hashes that are 128 bits long. The hash value of a key determines where the row is stored in the cluster. In order to distribute rows across the nodes in a Cassandra cluster evenly, each node in the cluster is given a unique token. A token is a range of hash values that is assigned to each node. By default, node tokens are a range of values from 0 to 2127, which are equally divided by the number of nodes in the cluster. The collection of all of the nodes of the cluster is collectively referred to as a **token ring**, with the nodes arranged in order. Every node in the token ring is aware of the other nodes in the token ring and the range of hash values for which they are responsible. An example is illustrated in the following figure.
 
-![Nodes organized as a circular ring of hash values in consistent hashing](../media/cassandra-nodes-token-ring.png)
+![Nodes organized as a circular ring of hash values in consistent hashing.](../media/cassandra-nodes-token-ring.png)
 
 _Figure 9: Nodes organized as a circular ring of hash values in consistent hashing_
 
@@ -51,7 +51,7 @@ Nodes can be added to a Cassandra cluster at any time, which is handled in two w
 
 The process of keeping replicas up to date in Cassandra is called **antientropy**. Antientropy in Cassandra is achieved using Merkle trees. A Merkle tree<sup>[1][^1]</sup> (Figure 10) is a hash tree in which the leaves are hashes of the values of individual keys. Parent nodes higher in the tree are hashes of their respective children. The principal advantage of Merkle trees is that each branch of the tree can be checked independently without having to scan the entire branch. Cassandra periodically computes the Merkle trees for each column family and exchanges it among replica members to quickly compute differences in the tables so that they can be synchronized. Compared to other techniques in Cassandra, antientropy is an expensive operation that is not performed often. Cassandra also has techniques to perform instantaneous repairs to replicas during reads (called a **read repair**, which is described later). 
 
-![Merkle trees](../media/merkle-trees.png)
+![Merkle trees.](../media/merkle-trees.png)
 
 _Figure 10: Merkle trees_
 
@@ -90,7 +90,7 @@ Unlike other NoSQL database systems, Cassandra has a tunable consistency model. 
 
 #### Accrual failure detection
 
-With no centralized master to keep track of the nodes in the cluster, Cassandra uses a special **gossip protocol** to communicate in all nodes in the token ring. In Cassandra, failures are expressed as a probability using an **accrual failure detection (AFD)**<sup>[2][^2]</sup> algorithm, which can be summarized as follows.
+With no centralized primary to keep track of the nodes in the cluster, Cassandra uses a special **gossip protocol** to communicate in all nodes in the token ring. In Cassandra, failures are expressed as a probability using an **accrual failure detection (AFD)**<sup>[2][^2]</sup> algorithm, which can be summarized as follows.
 
 Every second or so, each node in the Cassandra token ring contacts another random member in the ring to inquire about its status. This communication happens using a handshake protocol similar to a TCP handshake. In case the node cannot be contacted, a failure **suspicion** is raised. Therefore, the failure monitoring system outputs a continuous level of suspicion regarding how confident it is that a node has failed, which is desirable because it can <!-- take into -->account for fluctuations in the network environment. For example, just because one connection gets caught up, it does not necessarily mean that the whole node is dead. So a suspicion offers a more fluid and proactive indication of the weaker or stronger possibility of failure based on interpretation, as opposed to a simple binary assessment, such as dead or alive in heartbeat mechanisms. 
 

@@ -1,4 +1,3 @@
-
 Tailwind Traders allows delivery drivers to use their own mobile devices to access scheduling and logistics applications. Some delivery drivers are permanent employees of Tailwind Traders. Others work on short-term contract. How can the IT department ensure that an access attempt is really from a valid Tailwind Traders worker? 
 
 In this part, you'll learn about two processes that enable secure authentication: Azure AD Multi-Factor Authentication and Conditional Access. Let's start with a brief look at what multifactor authentication is in general.
@@ -44,7 +43,7 @@ These services provide Azure AD Multi-Factor Authentication capabilities:
 
     A subset of Azure AD Multi-Factor Authentication capabilities is part of your Office 365 subscription.
 
-For more information on licenses and Azure AD Multi-Factor Authentication capabilities, see [Available versions of Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-licensing#available-versions-of-azure-multi-factor-authentication?azure-portal=true).
+For more information on licenses and Azure AD Multi-Factor Authentication capabilities, see [Available versions of Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-licensing#available-versions-of-azure-multi-factor-authentication?azure-portal=true).
 
 ## What's Conditional Access?
 

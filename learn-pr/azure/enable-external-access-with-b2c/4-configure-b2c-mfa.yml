@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.enable-external-access-with-b2c.4-configure-b2c-mfa
 metadata:
-  title: Configure Azure AD B2C with multi-factor authentication 
+  title: Configure Azure AD B2C with multi-factor authentication
   description: Configure Azure AD B2C with multi-factor authentication
   ms.date: 03/20/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: chrispine-chiedo
+  ms.author: cchiedo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure Azure AD B2C with multi-factor authentication

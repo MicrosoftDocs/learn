@@ -6,13 +6,11 @@ The Import/Export service is an offline solution. It's designed to handle more d
 
 Microsoft provides an alternative solution in the form of the Azure Data Box family.  The Data Box family uses Microsoft-supplied devices to transfer data from your on-premises location into Azure Storage. A Data Box device is a proprietary, tamper-proof network appliance. You connect the device to your own internal network to move data to the device. You ship the device back to Microsoft, which then uploads data from the device into Azure Storage.
 
-Azure Data Box family is the recommended solution for handling very large import jobs when the organization is located in a region where Data Box is supported. It's an easier process than using the Import/Export service.
-
-Azure Data Box family doesn't support offline export from Azure. For offline export of large amounts of data from Azure to an on-premises location, we recommend Azure Import/Export.
+Azure Data Box family is the recommended solution for handling very large import or export jobs when the organization is located in a region where Data Box is supported. It's an easier process than using the Import/Export service.
 
 ## Online transfer of massive data
 
-The Import/Export service doesn't provide an online option. If you need an online method to transfer massive amounts of data, you can use Azure Data Box Edge or Azure Data Box Gateway. Data Box Edge is a physical network appliance that you install on-premises. The device connects to your storage account in the cloud. Data Box Gateway is a virtual network appliance. Both of these products support data transfer from an on-premises location to Azure.
+The Import/Export service doesn't provide an online option. If you need an online method to transfer massive amounts of data, you can use Azure Stack Edge or Azure Data Box Gateway. Azure Stack Edge is a physical network appliance that you install on-premises. The device connects to your storage account in the cloud. Data Box Gateway is a virtual network appliance. Both of these products support data transfer from an on-premises location to Azure.
 
 ## Online transfer of smaller data volumes
 
@@ -41,7 +39,7 @@ The following table summarizes the considerations for choosing the most appropri
 
 | Dataset | Network bandwidth |Solution to use |
 | ---- | ---- | ---- |
-| Large dataset | Low-bandwidth network or direct connectivity to on-premises storage is limited by organization policies |  Azure Import/Export for export;  Data Box Disk or Data Box for import where supported; otherwise use Azure Import/Export|
-| Large dataset | High-bandwidth network: 1 gigabit per second (Gbps) - 100 Gbps | AZCopy for online transfers; or to import data, Azure Data Factory, Azure Data Box Edge, or Azure Data Box Gateway |
-| Large dataset | Moderate-bandwidth network: 100 megabits per second (Mbps) - 1 Gbps | Azure Import/Export for export or Azure Data Box family for import where supported |
+| Large dataset | Low-bandwidth network or direct connectivity to on-premises storage is limited by organization policies |  Azure Import/Export or Data Box for export;  Data Box Disk or Data Box for import where supported; otherwise use Azure Import/Export|
+| Large dataset | High-bandwidth network: 1 gigabit per second (Gbps) - 100 Gbps | AZCopy for online transfers; or to import data, Azure Data Factory, Azure Stack Edge, or Azure Data Box Gateway |
+| Large dataset | Moderate-bandwidth network: 100 megabits per second (Mbps) - 1 Gbps | Azure Import/Export or Azure Data Box family where supported |
 | Small dataset: a few GBs to a few TBs | Low to moderate-bandwidth network: up to 1 Gbps | If transferring only a few files, use Azure Storage Explorer, Azure portal, AZCopy, or AZ CLI |

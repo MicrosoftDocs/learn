@@ -1,34 +1,26 @@
-In the previous unit, you learned that the Azure Explorer in the Azure Toolkit for IntelliJ enables you to manage and configure Azure web apps. In this exercise, you'll see how to use Azure Explorer to stop and restart your web app in Azure App Service from within IntelliJ IDEA.
+In the previous unit, you learned that the Azure Explorer in the Azure Toolkit for IntelliJ enables you to manage and configure Azure web apps. In this exercise, you'll see how to use Azure Explorer to stream logs from your web app in Azure App Service within IntelliJ IDEA.
 
 Next, you'll modify the web app by using Azure Explorer to add a pair of properties to the configuration. You'll modify the web app to read the value of these properties and use them in the web app logic. You'll then redeploy the web app and verify that it functions as expected.
 
-Finally, you'll use Azure Explorer to delete the web app and remove it from Azure.
-
-## Stop and restart the web app
+## Monitor the app with log streaming
 
 1. In **IntelliJ IDEA**, on the **View** menu, select **Tool windows** and then select **Azure Explorer**.
 
-1. In the **Azure Explorer** window, expand **Web Apps**, right-click your web app, and then click **Stop**.
+1. In the **Azure Explorer** window, expand **Web Apps**, right-click your web app, and then click **Start Streaming Logs**.
 
-    ![Screenshot of the context menu for the web app in the **Azure Explorer** window](../media/7-web-app-stop.png)
+    ![Screenshot of the context menu for the web app in the **Azure Explorer** window.](../media/6-streaming-logs-entry.png)
 
-1. Right-click your web app again, and then click **Open in Browser**. The web browser should display an HTTP 403 message indicating that the web app isn't currently running.
+1. You will see logs showing up in a few seconds. You can access the web app to generate some logs.
 
-    :::image type="content" source="../media/7-web-browser-403.png" alt-text="Screenshot of the web browser displaying the HTTP 403 message." loc-scope="third-party":::
+    :::image type="content" source="../media/7-log-streaming.png" alt-text="Screenshot of the web browser displaying the HTTP 403 message." loc-scope="third-party":::
 
-1. Leave the web browser open and return to IntelliJ IDEA. 
-
-1. In the **Azure Explorer** window, right-click the web app once, and then click **Start**.
-
-1. Return to the web browser, and refresh the display. The web app should be running again. 
-
-1. Close the web browser and return to IntelliJ IDEA.
+1. To stop steaming logs, right-click your web app, and then click **Stop Streaming Logs**.
 
 ## Add configuration properties to the web app
 
 1. In the **Azure Explorer** window, right-click the web app, and then click **Show Properties**. The properties window for the web app should appear:
 
-    ![Screenshot of the properties window for the web app](../media/7-web-app-properties.png)
+    ![Screenshot of the properties window for the web app.](../media/7-web-app-properties.png)
 
 1. In the properties window, click the **Add** icon to add a new property key and value.
 
@@ -40,7 +32,7 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 
 1. Add another property named **Iterations**, with the value **10**.
 
-    ![Screenshot of the properties window for the web app showing the new properties and values](../media/7-new-web-app-properties.png)
+    ![Screenshot of the properties window for the web app showing the new properties and values.](../media/7-new-web-app-properties.png)
 
 1. Click **Save**.
 
@@ -101,22 +93,8 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 
     :::image type="content" source="../media/7-modified-web-app.png" alt-text="Screenshot of the web browser running the modified version of the web app." loc-scope="third-party":::
 
-1. Close the web browser and return to IntelliJ IDEA.
-
-## Delete the web app
-
-1. In the **Azure Explorer** window, right-click the web app, and then click **Delete**.
-
-    ![Screenshot of the context menu for the web app in the **Azure Explorer** window](../media/7-web-app-delete.png)
-
-1. In the **Azure Explorer** message box that prompts you to make sure that you want to delete your web app, click *Yes**.
-
-    ![Screenshot of the message box confirming that the user wants to delete the web app](../media/7-delete-web-app.png)
-
-1. When the web app has been deleted, it will disappear from the **Web Apps** folder in **Azure Explorer**.
-
 > [!IMPORTANT]
 >
 > Deleting the web app using the Azure Toolkit for IntelliJ doesn't delete the app service plan, but you can remove the plan using the Azure portal. To do so, navigate to the appropriate resource group, select the app service plan, and then click **Delete**, as shown in the image below:
 >
-> ![Screenshot of the Azure portal. The user is deleting the app service plan](../media/7-delete-app-service-plan.png)
+> ![Screenshot of the Azure portal. The user is deleting the app service plan.](../media/7-delete-app-service-plan.png)

@@ -2,7 +2,7 @@ Xamarin.Forms `ListView` controls give us more than just the ability to display 
 
 In this module, we modified an application by using a built-in cell template. We changed the app to use custom templates and to choose the most appropriate template based on the data being represented. We then grouped our rows together to make browsing easier for users.
 
-We can build on many of the things we did in this module to make our `ListView` controls even more customized. The [Xamarin.Forms documentation](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/listview/) has information on these techniques and more:
+We can build on many of the things we did in this module to make our `ListView` controls even more customized. The [Xamarin.Forms documentation](/xamarin/xamarin-forms/user-interface/listview/) has information on these techniques and more:
 
 - Add a quick index to a grouped `ListView` to let the user jump to a particular group.
 - Use full custom layouts for group headers.

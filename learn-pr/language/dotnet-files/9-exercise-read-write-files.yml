@@ -10,7 +10,5 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 durationInMinutes: 7
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/9-exercise-read-write-files.md)]

@@ -8,6 +8,7 @@ metadata:
   ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: e2e-hybrid
 title: Hybrid cloud applications
 durationInMinutes: 10
 content: |

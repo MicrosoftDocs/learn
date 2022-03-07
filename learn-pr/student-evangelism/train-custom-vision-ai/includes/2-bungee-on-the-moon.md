@@ -1,10 +1,10 @@
 In the film, Fei Fei and Bungee not only build the rocket together but Bungee is right there next to Fei Fei as they fly to the Moon. 
 
-![Bungee and Fei Fei flying in the rocket.](../media/bungee-feifei-flying.png)
+:::image type="content" source="../media/bungee-fei-fei-flying.png" alt-text="Image that shows Bungee and Fei Fei flying in the rocket." border="false":::
 
 You might recall from the film, Bungee and Fei Fei separate from each other as Fei Fei ventures back to the wreckage of her rocket to look for something for Chang'e. When she arrives back at the wreckage, we get a cameo from the Lunar Rover!
 
-![Lunar Rover cameo in Over the Moon.](../media/lunarrover.png)
+:::image type="content" source="../media/lunarrover.png" alt-text="Image that shows a Lunar Rover cameo in Over the Moon." border="false":::
 
 This cameo, along with the themes from the film, are what inspired this module.
 
@@ -14,4 +14,5 @@ Beyond the narrative of the film, you could imagine this capability also helping
 
 Some of the best pictures are unplanned moments. This kind of AI-enabled camera could really capture those moments!
 
-![Bungee's face shown big and bright in an image.](../media/bungee-face.png)
+:::image type="content" source="../media/bungee-face.png" alt-text="Image that shows Bungee's face big and bright." border="false":::
+

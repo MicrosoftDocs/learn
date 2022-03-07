@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-auditing-diagnostics.log-user-access
+title: Log user access
+metadata:
+  title: Log user access
+  description: "Log user access"
+  ms.date: 12/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-log-user-access.md)]

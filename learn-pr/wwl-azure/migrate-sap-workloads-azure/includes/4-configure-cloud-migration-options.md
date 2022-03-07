@@ -54,16 +54,16 @@ Consider the following for the two-step migration:
 
 There are many factors that influence the downtime associated with an SAP database migration and include (amongst others):
 
-|    Scope                                |    Software changes, Unicode conversion, data center   relocation    |
+| Scope | Software changes, Unicode conversion, data center relocation |
 |-----------------------------------------|----------------------------------------------------------------------|
-|    Source System Performance            |    CPU, I/O, memory, DBMS performance, SAP NetWeaver release         |
-|    Source System Database Size          |    Database size, largest tables, status of housekeeping             |
-|    Target System Performance            |    CPU, I/O, memory, DBMS performance, SAP NetWeaver release         |
-|    Network                              |    Network speed, bandwidth, latency                                 |
-|    Toolset                              |    SWPM, SUM, Data Migration Option (DMO) of SUM, version of the toolset                     |
-|    Migration Approach                   |    Standard vs Minimize Downtime                                     |
-|    Ramp-up / Ramp-down                  |    Activities Interface management, batch job management             |
-|    Pre and Post Migration Validation    |    Functional, integration and acceptance Testing.                   |
+| Source System Performance | CPU, I/O, memory, DBMS performance, SAP NetWeaver release |
+| Source System Database Size | Database size, largest tables, status of housekeeping |
+| Target System Performance | CPU, I/O, memory, DBMS performance, SAP NetWeaver release |
+| Network | Network speed, bandwidth, latency |
+| Toolset | SWPM, SUM, Data Migration Option (DMO) of SUM, version of the toolset |
+| Migration Approach | Standard vs Minimize Downtime |
+| Ramp-up / Ramp-down | Activities Interface management, batch job management |
+| Pre and Post Migration Validation | Functional, integration and acceptance Testing. |
 
 
 Broadly speaking, the potential for performance optimizations can be seen in the following three areas:
@@ -80,28 +80,29 @@ The infrastructure/hardware reduction lever consists of the following:
 
 * **On-premises**
 
-    - Deploy a dedicated migration server (PAS / AAS) with extensive compute capability to execute SUM
-    
-    - Deploy Solid State Disks (SSD) on the source database and migration servers. 
-    
-    - (PAS / AAS)
+ - Deploy a dedicated migration server (PAS / AAS) with extensive compute capability to execute SUM
+ 
+ - Deploy Solid State Disks (SSD) on the source database and migration servers. 
+ 
+ - (PAS / AAS)
 
 * **Microsoft Azure**
 
 - **Express Route connectivity** is recommended with the maximum bandwidth available (currently available up to 10 Gbps)
 
-- Leverage the dmotocloud.sh script (RSYNC) to move files from an on-premise source to an Azure target for the Data Migration Option (DMO) System Move Option with Parallel Transfer.    
+- Leverage the dmotocloud.sh script (RSYNC) to move files from an on-premise source to an Azure target for the Data Migration Option (DMO) System Move Option with Parallel Transfer. 
 
-- **Implement storage snapshots** for time-efficient backups during the cutover period.    
+- **Implement storage snapshots** for time-efficient backups during the cutover period. 
 
 ## Key considerations for downtime optimization for Data Migration Option (DMO)
 
 * Source database optimization (index rebuild, DB statistics, DB parameters, and DB file system). A useful reference can be found in the table below.
 
-|    Database      |    Reference                                                                                                          |
+| Database | Reference |
 |------------------|-----------------------------------------------------------------------------------------------------------------------|
-|    Oracle        |    SAP Note 936441 - Oracle settings for R3load based system   copy                                                   |
-|    DB2           |    http://www.redbooks.ibm.com/abstracts/sg247774.html                                                                |
+| Oracle | SAP Note 936441 - Oracle settings for R3load based system copy |
+| DB2 | http://www.redbooks.ibm.com/abstracts/sg247774.html |
+| SQL Server | https://docs.microsoft.com/archive/blogs/saponsqlserver/sap-osdb-migration-to-sql-server-faq-v6-2-april-2017 |
 
 
 
@@ -129,15 +130,15 @@ Downtime Optimized Data Migration Option (DMO) is a migration option where large
 
 In the table below, see the comparison between Classic Data Migration Option (DMO) and Downtime Optimized DMO. 
 
-|    Classic DMO                                          |    Downtime Optimized DMO                                                                                                                                                                                                                                                                                                                                        |
+| Classic DMO | Downtime Optimized DMO |
 |---------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Data Migration Option (DMO) can be performed by any resource                 |    A SAP employee needs to execute the project and is a SAP Services-based   project only                                                                                                                                                                                                                                                                        |
-|    All tables are replicated as part of the downtime    |    Large tables are replicated as part of the uptime using   SLT                                                                                                                                                                                                                                                                                                 |
-|    Longer downtime duration                             |    Reduced downtime duration                                                                                                                                                                                                                                                                                                                                     |
-|    All scenarios are supported                          |    Scenario "DMO without Software Update" can be   combined with "downtime-optimized DMO" Scenario "DMO with   System Move" does not support "downtime-optimized DMO"                                                                                                                                                                                            |
-|    No need to add the DMIS in stack.xml generation      |    Manually add DMIS in Maintenance Optimizer (MOPZ) to   create the stack configuration file (stack.xml)                                                                                                                                                                                                                                                        |
-|    No Restrictions                                      |    Products supported: SAP ECC 6.0 and higher SAP CRM 7.0 and   higher                                                                                                                                                                                                                                                                                           |
-|    No Restrictions                                      |    Restrictions on Tables which cannot be replicated in   uptime: Basis tables containing deep components (For example, STRG) Pool tables   Application exchange tables (transferred in uptime anyhow) Tables to be   converted Tables without primary key Tables which start with /BI in the name   Tables from Transport Management System (TMS) starting with E07*    |
+| Data Migration Option (DMO) can be performed by any resource | A SAP employee needs to execute the project and is a SAP Services-based project only |
+| All tables are replicated as part of the downtime | Large tables are replicated as part of the uptime using SLT |
+| Longer downtime duration | Reduced downtime duration |
+| All scenarios are supported | <p>Scenario "DMO without Software Update" can be combined with "downtime-optimized DMO"</p><p>Scenario "DMO with System Move" does not support "downtime-optimized DMO"</p> |
+| No need to add the DMIS in stack.xml generation | Manually add DMIS in Maintenance Optimizer (MOPZ) to create the stack configuration file (stack.xml) |
+| No Restrictions | <p>Products supported: <ul><li>SAP ECC 6.0 and higher SAP</li><li>CRM 7.0 and higher</li></p> |
+| No Restrictions | <p>Restrictions on Tables which cannot be replicated in uptime:<ul><li>Basis tables containing deep components (For example, STRG)</li><li>Pool tables</li><li>Application exchange tables (transferred in uptime anyhow)</li><li>Tables to be converted</li><li>Tables without primary key</li><li>Tables which start with /BI in the name</li><li>Tables from Transport Management System (TMS) starting with E07*</li></ul></p> |
 
 
 ## Near-Zero Downtime (NZDT)

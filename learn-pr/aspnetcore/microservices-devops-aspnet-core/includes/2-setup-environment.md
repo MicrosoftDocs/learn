@@ -15,7 +15,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
     The preceding command retrieves and runs a setup script from a GitHub repository. The script completes the following steps:
 
-    * Installs the required version of the .NET Core SDK.
+    * Installs the required version of the .NET SDK.
     * Clones the *:::no-loc text="eShopOnContainers":::* app from your fork of the GitHub repository.
     * Provisions AKS and Azure Container Registry (ACR) resources.
     * Launches the Cloud Shell editor to view the code.
@@ -26,7 +26,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
 The script takes several minutes to complete. It deploys a modified version of the *:::no-loc text="eShopOnContainers":::* reference app. The solution architecture of the app is pictured in the following diagram:
 
-:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram" border="true" lightbox="../../media/microservices/eshop-architecture.png":::
+:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram." border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
 This module focuses on adding CI/CD for the coupon service depicted in the preceding diagram.
 

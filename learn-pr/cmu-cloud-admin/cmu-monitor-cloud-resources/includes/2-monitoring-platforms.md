@@ -1,6 +1,6 @@
 Monitoring platforms generally fall into two categories: those that are agent-based, and those that are not. An *agent* is a remote component that signals back to an application performance monitor's (APM) central controller or hub, or a daemon that serves as that controller's proxy. With a basic APM, the agent would simply ping a server or application periodically to make sure it's still available. Even the variations between successful pings can be informative by indicating where connections are likely to be encumbered by distance or traffic congestion. Most modern APM agents are more sophisticated, sending telemetry to central hubs distributed throughout the cloud. Some agents may be attached to client-side applications or Web apps, reporting performance and connectivity data from JavaScript agents running in users' browsers.
 
-## Agent-Based APM Platforms
+## Agent-Based APM platforms
 
 From the beginning, the purpose of APM was to gather information about the operating status of an application, along with data pinpointing the times in which observable events took place. The first APM agents were attachments to a Web page that ran in users' browsers and reported back this time-oriented data - for example, when page rendering began, when rendering ended, and how long the user remained on the page before navigating away.
 
@@ -54,7 +54,7 @@ Figure 3 shows one example of a New Relic service map. The green, yellow, and re
 
 _Figure 3: Part of a service map in New Relic One APM. \[Courtesy New Relic\]_
 
-## Agentless Monitoring Platforms
+## Agentless Monitoring platforms
 
 The typical agentless monitoring tool or platform relies on the current state of a server, including the system services that support its hardware, to provide the information the platform needs to ascertain its operating status, and to determine whether an event regarding that status should be actionable. The most prominent of these services is logging.
 
@@ -84,7 +84,7 @@ The traditional Sumo Logic architecture incorporates a component called the *col
 
 The analysis performed by the Sumo Logic platform begins with database queries conducted through its Web-based console. Inspired by Hadoop and its MapReduce algorithm, Sumo Logic uses proprietary algorithms that it calls *LogReduce* to look for ways to logically join related data together from separate log tables. A custom query language enables an IT operator to retrieve records from the database curated by the collector, based on criteria that can be expressed symbolically. For example, a query can retrieve records from multiple logs that all contain the word "SECURITY," expressed as **\*SECURITY\*** (with leading and trailing asterisks), and then group those records together according to a common field category. The result is a custom table containing events that might be flagged for later review by security personnel.
 
-## Tracing in Microservice Environments
+## Tracing in microservice environments
 
 A traditional application incorporates all of its code in a single, contiguous unit. Even if it utilizes portable libraries that were formally included in the code's declarations, they still exist inside the walls of the proverbial monolith. A monitoring platform observing an application from the outside usually waits for it to do something noticeable, like accept a query or produce a result, and then measures the service levels of these actions. When an enterprise network needs to improve the service levels for this network, it simply replicates these servers and places a load balancer in front of them to even out the traffic flow. Even modern VM platforms merely automate this simple process.
 
@@ -108,7 +108,7 @@ To that end, the team provides a portable code library that developers include w
 
 The Prometheus server periodically determines whether alerts are warranted, relying upon alerting rules established by an administrator. Rather than publishing these alerts itself, it submits them to an independent *alert manager*. Since messaging queues on distributed systems can be constructed any number of different ways, Prometheus opts not to re-invent the wheel. Its alert manager is designed to be integrated with whatever queue or messaging service the organization already uses. It prepares alerts for delivery and dispenses them accordingly.
 
-## Integrated APM Platforms
+## Integrated APM platforms
 
 Increasingly, cloud service providers such as Amazon and Microsoft offer native monitoring services that are integrated into their cloud platforms. Azure, for example, supports Azure Monitor (Figure 6), which comprises a set of services that developers and administrators can use to collect, analyze, and act upon telemetry regarding the performance of applications and the infrastructure that hosts them. Events emanating from applications, virtual machines, and other resources are logged and used to compute performance metrics. Various services such as Azure Log Analytics and Microsoft Power BI can be connected to the data sources where logs and metrics are stored to generate actionable insights and create visual dashboards. In addition, developers can instrument their applications with Azure Application Insights to generate custom telemetry. This provides an extra layer of monitoring that is application-specific and that can be extremely beneficial in diagnosing errors and their root causes -- often without having to dive into the source code.
 
@@ -118,7 +118,7 @@ _Figure 6: The Azure Monitor APM platform._
 
 AWS offers similar capabilities in the form of Amazon CloudWatch, which is a comprehensive monitoring service for AWS cloud resources and applications that run on AWS. Among other things, CloudWatch can be used to monitor CPU utilization on EC2 instances, collect metrics regarding AWS databases and storage volumes, monitor existing system and application logs for signs of trouble, and raise alarms when metrics exceed a specified threshold. You can also build custom workflows that automatically take actions you define when changes occur to a solution's AWS resources.
 
-AWS and Amazon users are not required to use CloudWatch and Azure Monitor; third-party APM platforms such as Relic One and Sumo Logic may be used instead. But the fact that CloudWatch and Azure Monitor are integrated into their respective platforms offers certain advantages, one of which is the ability to automatically scale cloud resources in response to events emanating from the monitoring service. It is a relatively simple matter, for example, to scale the number of VM instances when average CPU utilization falls outside a specified range. Such scaling can also be accomplished by using custom connectors to make the cloud platform aware of notifications from external monitoring platforms, but integrated monitoring reduces complexity by eliminating the need for such customizations.
+AWS and Azure users are not required to use CloudWatch and Azure Monitor; third-party APM platforms such as Relic One and Sumo Logic may be used instead. But the fact that CloudWatch and Azure Monitor are integrated into their respective platforms offers certain advantages, one of which is the ability to automatically scale cloud resources in response to events emanating from the monitoring service. It is a relatively simple matter, for example, to scale the number of VM instances when average CPU utilization falls outside a specified range. Such scaling can also be accomplished by using custom connectors to make the cloud platform aware of notifications from external monitoring platforms, but integrated monitoring reduces complexity by eliminating the need for such customizations.
 
 ### References
 

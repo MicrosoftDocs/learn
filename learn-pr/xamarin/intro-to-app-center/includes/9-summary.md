@@ -4,4 +4,4 @@ Our goal was to help you evaluate whether App Center would be a good choice for 
 * Efficiency
 * Quality
 
-You'd analyze your business process against each of these criteria. The results should give you an idea of how well the App Center services could meet your needs.
+You can analyze your business process against each of these criteria. The results should give you an idea of how well the App Center services could meet your needs.

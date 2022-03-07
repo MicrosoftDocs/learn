@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-sql-api.exercise-execute-sdk
+title: 'Exercise: Execute a query with the Azure Cosmos DB SQL API SDK'
+metadata:
+  title: 'Exercise: Execute a query with the Azure Cosmos DB SQL API SDK'
+  description: "Exercise: Execute a query with the Azure Cosmos DB SQL API SDK"
+  ms.date: 01/19/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107579
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-exercise-execute-sdk.md)]

@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-high-availability-disaster-recovery-strategies
 metadata:
-  title: Describe high-availability and disaster-recovery strategies
-  description: "Plan appropriate HA/DR strategy based on RTO and RPO. Choose best solution for IaaS or PaaS deployments or hybrid workloads."
-  ms.date: 08/23/2020
+  title: Describe high availability and disaster recovery strategies
+  description: "Describe high availability and disaster recovery strategies"
+  ms.date: 01/21/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe high availability and disaster recovery strategies
-summary: Plan an appropriate high availability and disaster recovery strategy based on recovery rime objective and recovery point objective. Choose the best solution for IaaS or PaaS deployments or hybrid workloads.
+summary: Plan an appropriate high availability and disaster recovery strategy based on recovery time objective and recovery point objective. Choose the best solution for IaaS or PaaS deployments or hybrid workloads.
 abstract: |
   After completing this module, you will be able to:
   - Define recovery time objective and recovery point objective

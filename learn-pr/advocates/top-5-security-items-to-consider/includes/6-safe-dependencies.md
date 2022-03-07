@@ -17,7 +17,7 @@ Issues are submitted by the security community when a security flaw is found in 
 
 You could put a daily task into your phone to check this list, but luckily for us, many tools exist to allow us to verify if our dependencies are vulnerable. You can run these tools against your codebase, or better yet, add them to your CI/CD pipeline to automatically check for issues as part of the development process.
 
-- [OWASP Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check), which has a [Jenkins plugin](https://wiki.jenkins.io/display/JENKINS/OWASP+Dependency-Check+Plugin)
+- [OWASP Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check), which has a [Jenkins plugin](https://plugins.jenkins.io/dependency-check-jenkins-plugin/)
 - [OWASP SonarQube](https://github.com/OWASP/sonarqube)
 - [Snyk](https://snyk.io), which is free for open-source repositories in GitHub
 - [Black Duck](https://www.blackducksoftware.com) which is used by many enterprises

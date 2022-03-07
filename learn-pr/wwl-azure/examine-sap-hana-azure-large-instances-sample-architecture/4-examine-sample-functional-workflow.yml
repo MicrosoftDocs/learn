@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.examine-sample-functional-workflow
+title: Examine a sample functional workflow
+metadata:
+  title: Examine a sample functional workflow
+  description: "Examine a sample functional workflow"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-examine-sample-functional-workflow.md)]

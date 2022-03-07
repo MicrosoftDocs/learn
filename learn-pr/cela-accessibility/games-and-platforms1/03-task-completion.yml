@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.games-and-platforms.task-completion
+title: Support multiple ways of task completion
+metadata:
+  title: Support multiple ways of task completion
+  description: This content is part of the accessibility best practices for games and platforms module.
+  ms.date: 11/23/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 8
+content: |
+  [!include[](includes/03-task-completion.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is not an example of providing players with multiple ways of task completion?"
+    choices:
+    - content: "Players can use multiple face-to-face combat weapons, for example, two different types of swords, to defeat an enemy."
+      isCorrect: true
+      explanation: "Correct. This isn't an example of providing players with multiple ways to complete tasks. Despite a player being able to use multiple weapons to defeat an enemy, the weapon options don't provide the player with different combat approaches. To allow players to defeat an enemy through multiple ways, players can be provided with weapons that allow them to defeat enemies with long-range tactics from afar. Also, one that requires players to engage in direct hand-to-hand combat."
+    - content: "Players can defeat a group of enemies by engaging them directly or sneaking around them."
+      isCorrect: false
+      explanation: "Incorrect. This is a proper example of providing players with multiple ways of task completion. Players can choose to engage enemies head-on or sneak past them to avoid combat if they feel that they can't successfully engage in combat."
+    - content: "Players can navigate to the next objective by taking a short and difficult route or a longer and easier route."
+      isCorrect: false
+      explanation: "Incorrect. This is a proper example of providing players with multiple ways of task completion. Players can still achieve the same task (reaching a specific location in the game) but can choose to do so via the short route that's more difficult or the longer route that's easier but more time consuming."
+  - content: "Which of the following isn't an example of supporting multiple inputs?"
+    choices:
+    - content: "A game that platform supports the use of keyboard and game controllers."
+      isCorrect: false
+      explanation: "Incorrect. Keyboards and game controllers are two different input types. Supporting both options is an appropriate example of supporting multiple input types."
+    - content: "A game that supports the use of touchscreen controls and mouse input."
+      isCorrect: false
+      explanation: "Incorrect. Touch-based input and mouse controls are two different input types. Supporting both options is an appropriate example of supporting multiple input types."
+    - content: "A game that supports the use of two controllers used simultaneously to control a single character."
+      isCorrect: true
+      explanation: "Correct. This isn't an example of supporting multiple input types. Allowing players to use two controllers as one provides accessibility support. However, for players who can't use controller input types, this option doesn't address their needs."

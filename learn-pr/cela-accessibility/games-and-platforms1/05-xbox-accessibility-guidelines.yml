@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.games-and-platforms.xbox-accessibility-guidelines
+title: Reference the Xbox Accessibility Guidelines
+metadata:
+  title: Reference the Xbox Accessibility Guidelines
+  description: This content is part of the accessibility best practices for games and platforms module.
+  ms.date: 11/23/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 9
+content: |
+  [!include[](includes/05-xbox-accessibility-guidelines.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is not an intended purpose of the Xbox Accessibility Guidelines (XAGs)?"
+    choices:
+    - content: "Xbox Accessibility Guidelines are for designers to use as a catalyst for generating ideas for a game."
+      isCorrect: false
+      explanation: "Incorrect. This option is considered one of the intended purposes of the Xbox Accessibility Guidelines."
+    - content: "Xbox Accessibility Guidelines are for developers to use as guardrails when they develop a game."
+      isCorrect: false
+      explanation: "Incorrect. This option is considered one of the intended purposes of the Xbox Accessibility Guidelines."
+    - content: "Xbox Accessibility Guidelines are for program managers to serve as a checklist for meeting legal requirements."
+      isCorrect: true
+      explanation: "Correct. The Xbox Accessibility Guidelines aren't intended to be used as a checklist to validate a game's legal or compliance accessibility requirements. They're intended to provide a comprehensive scope of guidelines that improve the accessibility of game experiences."
+  - content: "Which of the following XAG components provides users with a quick way to determine whether that XAG is applicable to the experience they're developing?"
+    choices:
+    - content: "Implementation guidelines"
+      isCorrect: false
+      explanation: "Incorrect. The Implementation guidelines section provides users with a comprehensive list of best practices for particular game mechanics and areas. It doesn't provide a high-level method of reviewing the applicability of a XAG."
+    - content: "Gamer personas"
+      isCorrect: false
+      explanation: "Incorrect. The Gamer personas section can help users understand the general population of players that specific XAG guidance works to improve experiences for. However, it isn't helpful in determining whether a particular XAG is applicable to the user's scope of work."
+    - content: "Scoping questions"
+      isCorrect: true
+      explanation: "Correct. The Scoping questions section of each XAG prompts readers to assess the presence of specific components in their game to determine whether a specific XAG contains useful guidance for those components prior to reading the XAG in its entirety."

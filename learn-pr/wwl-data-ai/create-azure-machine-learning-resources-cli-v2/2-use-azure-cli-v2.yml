@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-machine-learning-resources-cli-v2.use-azure-cli-v2
+title: Use the Azure CLI (v2) with Azure Machine Learning
+metadata:
+  title: Use the Azure CLI (v2) with Azure Machine Learning
+  description: "Use the Azure CLI (v2) with Azure Machine Learning"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-use-azure-cli-v2.md)]

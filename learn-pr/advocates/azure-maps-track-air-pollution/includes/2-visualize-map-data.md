@@ -1,63 +1,49 @@
-The Azure Maps web SDK has a whole host of different tools to visualize spatial data on an interactive map on a web page. Before getting started adding the map to a web page, lets look at some of the capabilities.
+The Azure Maps web SDK has a wide variety of tools you can use to visualize spatial data on an interactive map on a webpage. Before we get started adding a map to a webpage, let's look at some of the capabilities of the SDK.
 
 ## Render a map
 
-The Azure Maps web SDK has an interactive JavaScript map control that can be added to a web page. Maps are drawn, or rendered, using the **Spherical Mercator projection coordinate system**, the de facto standard for web-based mapping applications. This system stretches the map at both the North and South poles to create a square map that can be drawn on screen. This stretching does mean that the further away from the equator you get, the more stretched the map is. The end result is countries like Greenland appear substantially larger than they are in reality.
+The Azure Maps web SDK has an interactive JavaScript map control that you can add to a webpage. Maps are drawn (*rendered*) by using the *Spherical Mercator projection coordinate system*, a standard for web-based mapping applications. This system stretches the map at both the North Pole and the South Pole to create a square map that can be drawn on-screen. A result of the stretching is that the further away from the equator you move, the more stretched the map appears. On the map, a country like Greenland appears substantially larger than it actually is.
 
-Maps can be rendered in a number of different styles. These styles include:
+Maps can be rendered in different styles. These styles include:
 
-- Road
+- **Road**: A standard map style that displays roads and natural and artificial features, with feature labels.
 
-    This map style is a standard map that displays roads, natural and artificial features along with the labels for those features.
+    :::image type="content" source="../media/road.png" alt-text="Image of a road map of Seattle." border="false":::
 
-    ![A road map of Seattle](../media/road.png)
+- **Satellite**: A combination of satellite and aerial imagery.
 
-- Satellite
+    :::image type="content" source="../media/satellite.png" alt-text="Image of a satellite map of Seattle." border="false":::
 
-    This map style is a combination of satellite and aerial imagery.
+- **Satellite with road labels**: A combination of satellite and aerial imagery, with an overlay of roads and labels.
 
-    ![A satellite map of Seattle](../media/satellite.png)
+    :::image type="content" source="../media/satellite-road-labels.png" alt-text="Image of a satellite and road map of Seattle." border="false":::
 
-- Satellite with road labels
+- **High contrast**: A dark road map with higher contrast than other map styles.
 
-    This map style is a combination of satellite and aerial imagery, with roads and labels overlaid on top.
+    :::image type="content" source="../media/high-contrast-dark.png" alt-text="Image of a high-contrast map of Seattle." border="false":::
 
-    ![A satellite and road map of Seattle](../media/satellite-road-labels.png)
+More styles are described in [Azure Maps supported map styles](/azure/azure-maps/supported-map-styles?azure-portal=true).
 
-- High contrast
+## Move around the map
 
-    This map style is a dark road map style with higher contrast than other styles.
+You can configure Azure Maps controls to be fully interactive, so the user can zoom, move, rotate, and tilt the map view. When zoomed in and tilted, the map can show 3D representations of the shape of buildings. Move around the map by using a mouse, trackpad, or touchscreen. The map control supports pinching to zoom and dragging to reposition the map. The map control has zoom, compass, pitch, and style picker controls that you can enable and show on the map.
 
-    ![A high contrast map of Seattle](../media/high-contrast-dark.png)
-
-More styles are described in the [Azure Maps supported maps styles documentation](https://docs.microsoft.com/azure/azure-maps/supported-map-styles)
-
-## Navigate around the map
-
-The Azure Maps control can be configured to be fully interactive, allowing the user to zoom, move, rotate, and tilt the map view. When zoomed in and tilted, the map can show 3D representations of the shape of buildings. Navigation is done using a mouse, trackpad, or touch screen, and supports pinching to zoom, and dragging to move the map around. The map control has zoom, compass, pitch, and style picker controls that can be enabled and shown on the map.
-
-Navigation can also be done in code, such as setting the view to a specific location. The different user navigation capabilities can be enabled or disabled by settings on the map control.
+You can set map navigation in your app code. For example, you can set the view to a specific location. You can disable or enable user navigation capabilities in settings for the map control.
 
 ## Layers
 
-Maps can be augmented with layers, visualizing data on top of the map. In a later unit in this module, you'll use a layer on a map to visualize air quality data.
+You can augment maps by adding layers. A layer visualizes a data object on top of a map. In the app you create, you'll use a layer on a map to visualize air quality data.
 
-There are a number of different layer types available, and these layers all render data sources that contain either GeoJSON data or [MapBox vector tiles](https://github.com/mapbox/vector-tile-spec). GeoJSON will be covered in a later unit in this module
+When you create an app that uses a map control, you can choose from different layer types. All layer types render data sources that contain either GeoJSON data or [Mapbox vector tiles](https://github.com/mapbox/vector-tile-spec?azure-portal=true). We'll talk about GeoJSON later in this module.
 
-The different layer types include:
+Here are some of the layer types you can use with a map:
 
-- Symbol layer
+- **Symbol layer**:  Symbol layers place either a pin icon or a custom icon that's loaded from an image file at a specific location on a map. For example, different icons might show the locations of various types of social support in a city, such as food banks or homeless shelters.
 
-    Symbol layers put either a pin icon, or a custom icon loaded from an image file at a specific location on the map. For example, different icons could show the location of various types of social support in a city, such as food banks, homeless shelters, or refuges.
+- **Bubble layer**: Bubble layers place circular bubbles at locations on a map. You can configure bubbles to represent data by changing their appearance, like size and color. For example, during a pandemic, different bubble sizes might indicate the number of people who have contracted an illness, with colors that reflect different mortality rates.
 
-- Bubble layer
+- **Heat map**: Heat map layers represent data density. A heat map uses a range of colors to show "hot spot" areas on a map. For example, you might use a heat map to show the relative risk of an earthquake occurring at a location based on the number and strength of earthquakes at that location in the past.
 
-    Bubble layers put circular bubbles at locations on the map. The bubbles can be configured to show the data they're representing, such as setting the bubble size or color. For example, during a pandemic different bubble sizes could show the number of people who have contracted an illness, with the color reflecting the mortality rate.
+Feature locations in a layer are defined by a data source. The data source might also provide data that you can use to configure controls on the layer, like what image to display or how large to make a bubble.
 
-- Heat map
-
-    Heat map layers represent the density of data using a range of colors to show 'hot spot' areas on a map. For example, a heat map could be used to show the relative risk of earthquakes based off the number and strength of previous earthquakes.
-
-The location of the features in the layer is defined by a data source. The data source can also provide data to configure controls on the layer, for example what image to display or how large to make a bubble.
-
-In this unit, you learned about the Azure Maps web SDK. including styles, navigation and layers. Next, you'll create an Azure Maps account so you can use the web SDK in a web app.
+In this unit, you learned about the Azure Maps web SDK, including styles, navigation, and layers. Next, you'll create an Azure Maps account, so you can use the web SDK in a web app.

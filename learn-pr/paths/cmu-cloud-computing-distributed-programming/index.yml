@@ -5,15 +5,15 @@ metadata:
   description: Carnegie Mellon University's Cloud Developer course. Gain a deep understanding of data and how it's stored on the cloud.
   brand: azure
   ms.date: 03/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Distributed programming on the cloud
 summary: |
   Learn about how complex computer programs must be architected for the cloud by using distributed programming.
 
-  In this module, you will:
+  In this learning path, you'll:
     - Classify programs as sequential, concurrent, parallel, and distributed
     - Indicate why programmers usually parallelize sequential programs
     - Define distributed programming models

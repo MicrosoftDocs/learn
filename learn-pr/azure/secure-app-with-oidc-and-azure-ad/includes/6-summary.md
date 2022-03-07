@@ -17,12 +17,13 @@ To delete the Azure AD tenant, follow these steps:
 1. In the upper right of the portal, select your user account, and then select **Sign out**.
 1. Sign in with your normal credentials. In the top bar, select your account, and then select **Switch directory**.
 1. Select the **Learn Module AAD Tenant** directory that you created in unit 4.
-1. In the left pane, select **Azure Active Directory**, select **Delete tenant**, and then select **Delete**.
+1. In the left pane, select **Azure Active Directory**, then select **Manage tenants**.
+1. Select the check box for the tenant you want to delete, then select **Delete**.
 1. In the upper right of the portal, select your user account, and then select **Sign out**.
 
 ## Further reading
 
-- [Authorize access to web applications by using OpenID Connect and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-openid-connect-code)
+- [Authorize access to web applications by using OpenID Connect and Azure Active Directory](/azure/active-directory/develop/v1-protocols-openid-connect-code)
 - [OpenID Connect specification](https://openid.net/specs/openid-connect-core-1_0.html)
-- [ID tokens](https://docs.microsoft.com/azure/active-directory/develop/id-tokens)
-- [Azure Active Directory access tokens](https://docs.microsoft.com/azure/active-directory/develop/access-tokens)
+- [ID tokens](/azure/active-directory/develop/id-tokens)
+- [Azure Active Directory access tokens](/azure/active-directory/develop/access-tokens)

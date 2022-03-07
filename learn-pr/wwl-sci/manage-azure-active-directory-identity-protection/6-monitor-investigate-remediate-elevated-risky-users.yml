@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-ad-identity-protection.monitor-investigate-remediate-elevated-risky-users
+title: Monitor, investigate, and remediate elevated risky users
+metadata:
+  title: Monitor, investigate, and remediate elevated risky users
+  description: "Monitor, investigate, and remediate elevated risky users"
+  ms.date: 03/07/2022
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 16
+content: |
+  [!include[](includes/6-monitor-investigate-remediate-elevated-risky-users.md)]

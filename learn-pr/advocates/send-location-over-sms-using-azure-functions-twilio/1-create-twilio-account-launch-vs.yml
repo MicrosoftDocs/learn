@@ -10,7 +10,7 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+  ms.custom: team=nextgen
 #labId: 46464
 durationInMinutes: 5
 content: |

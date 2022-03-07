@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.combine-query-results-set-operators.use-intersect-except-operators
+title: Use the INTERSECT and EXCEPT operators
+metadata:
+  title: Use the INTERSECT and EXCEPT operators
+  description: "Use the INTERSECT and EXCEPT operators"
+  ms.date: 01/10/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-use-intersect-except-operators.md)]

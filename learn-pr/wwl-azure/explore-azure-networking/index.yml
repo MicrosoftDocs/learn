@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.explore-azure-networking
+metadata:
+  title: Explore Azure for SAP networking
+  description: "This module explores the use of Azure network components to design scalable, performant, and resilient SAP deployments in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 03/04/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore Azure for SAP networking
+summary: This module explores the use of Azure network components to design scalable, performant, and resilient SAP deployments in Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore Azure virtual networks.
+  - Examine Azure virtual machine networking considerations.
+  - Examine load balancing considerations.
+  - Explore virtual network connectivity.
+  - Explore cross-premises connectivity.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/2-explore-azure-networking.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.explore-azure-networking.introduction
+- learn.wwl.explore-azure-networking.virtual-networks
+- learn.wwl.explore-azure-networking.consider-ip-addressing
+- learn.wwl.explore-azure-networking.explore-name-resolution
+- learn.wwl.explore-azure-networking.explore-accelerated-networking
+- learn.wwl.explore-azure-networking.load-balancer
+- learn.wwl.explore-azure-networking.examine-azure-virtual-machine-networking-considerations
+- learn.wwl.explore-azure-networking.examine-load-balancing-considerations
+- learn.wwl.explore-azure-networking.traffic-manager
+- learn.wwl.explore-azure-networking.front-door
+- learn.wwl.explore-azure-networking.firewall
+- learn.wwl.explore-azure-networking.consider-networking-changes-for-azure-virtual-machines
+- learn.wwl.explore-azure-networking.examine-azure-routing-configurations
+- learn.wwl.explore-azure-networking.explore-virtual-network-connectivity
+- learn.wwl.explore-azure-networking.explore-distributed-denial-of-service-ddos-protection-options
+- learn.wwl.explore-azure-networking.examine-virtual-datacenter
+- learn.wwl.explore-azure-networking.explore-cross-premises-connectivity
+- learn.wwl.explore-azure-networking.explore-saprouter
+- learn.wwl.explore-azure-networking.examine-networking-support-of-azure-for-sap-workloads
+- learn.wwl.explore-azure-networking.knowledge-check
+- learn.wwl.explore-azure-networking.summary
+badge:
+  uid: learn.wwl.explore-azure-networking.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-saas-offer-commercial-marketplace.4-saas-offer-technical-configuration
+title: SaaS offer technical configuration
+metadata:
+  title: SaaS offer technical configuration
+  description: In this unit, we go over the technical information required to publish a transact SaaS offer
+  ms.date: 01/25/2021
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-saas-offer-technical-configuration.md)]

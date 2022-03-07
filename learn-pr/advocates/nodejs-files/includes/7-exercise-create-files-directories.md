@@ -61,7 +61,7 @@ In this exercise, you'll create the *salesTotals* directory and *totals.txt* fil
    }
    ```
 
-1. Run the program by entering the following code from the terminal prompt.
+1. From the terminal prompt, run the program with the following code.
 
    ```bash
    node index.js

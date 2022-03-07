@@ -54,19 +54,7 @@ Although there's always room for improvement, this change is a win for the team.
 
 Use these additional resources to learn more about App Service, deployment slots, and rolling back changes:
 
-* [App Service documentation](https://docs.microsoft.com/azure/app-service?azure-portal=true)
-* [Deploy a website to Azure by using App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service?azure-portal=true)
-* [Stage a web app deployment for testing and rollback by using App Service deployment slots](https://docs.microsoft.com/learn/modules/stage-deploy-app-service-deployment-slots?azure-portal=true)
-* [Set up staging environments in App Service](https://docs.microsoft.com/azure/app-service/deploy-staging-slots?azure-portal=true)
-
-## Appendix: Recommendations for using feature flags
-
-Feature flags were one of the release-cadence methods that the team considered. The team decided not to use feature flags, but many people have found them useful. This section provides more information about feature flags. 
-
-*Feature flags*, sometime called *feature toggles*, allow you to change how a system works without changing the code. These flags allow you to push new code into your central development branch and have the code deployed but not necessarily functional. The flags are commonly implemented as the value of variables that control conditional logic.
-
-Imagine that your team is working in the central development branch of a bank application. You decided to do all the work in the main branch to avoid messy merge operations later. But you face a problem. You're substantially changing the interest calculations, and people depend on that code every day. Worse, the changes will take you weeks to complete. You can't leave the main code broken for so long.
-
-In this scenario, a feature flag might be a good solution. You can change the code so that users who don't have the feature flag set can keep using the original interest calculation code. Meanwhile, your team does have the feature flag set, so they can see the code that they're changing.
-
-Another type of feature flag is a release flag. Imagine that after you complete the work on the interest calculation code, you want to try it out before you release it publicly. You have a group of users who are well positioned to deal with new code and any possible issues. You'll let them try the feature first. You change the configuration so that they also have the feature flag set and can test the new code. If problems happen, then you can quickly disable the flag.
+* [App Service documentation](/azure/app-service?azure-portal=true)
+* [Deploy a website to Azure by using App Service](../../../paths/deploy-a-website-with-azure-app-service/index.yml?azure-portal=true)
+* [Stage a web app deployment for testing and rollback by using App Service deployment slots](/learn/modules/stage-deploy-app-service-deployment-slots?azure-portal=true)
+* [Set up staging environments in App Service](/azure/app-service/deploy-staging-slots?azure-portal=true)

@@ -3,8 +3,8 @@ uid: learn.wwl.explain-machine-learning-models-with-azure-machine-learning.creat
 title: Creating explanations
 metadata:
   title: Creating explanations
-  description: "Learn how to create explanations for your models."
-  ms.date: 08/30/2020
+  description: "Creating explanations"
+  ms.date: 03/30/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

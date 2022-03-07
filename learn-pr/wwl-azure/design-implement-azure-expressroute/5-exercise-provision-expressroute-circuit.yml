@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-azure-expressroute.exercise-provision-expressroute-circuit
+title: 'Exercise: provision an ExpressRoute circuit'
+metadata:
+  title: 'Exercise: provision an ExpressRoute circuit'
+  description: "Exercise: provision an ExpressRoute circuit"
+  ms.date: 02/14/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-provision-expressroute-circuit.md)]

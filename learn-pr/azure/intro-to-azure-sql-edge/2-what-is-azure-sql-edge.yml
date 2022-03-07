@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sql-edge.2-what-is-azure-sql-edge  
+title: What is Azure SQL Edge?  
+metadata:
+  unitType: learning-content  
+  title: What is Azure SQL Edge? 
+  description: What is Azure SQL Edge?
+  ms.date: 03/26/2021  
+  author: tchristiani
+  ms.author: terrychr  
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-azure-sql-edge.md)]

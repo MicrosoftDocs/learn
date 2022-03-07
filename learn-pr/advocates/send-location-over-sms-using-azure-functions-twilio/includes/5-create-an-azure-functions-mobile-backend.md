@@ -8,20 +8,20 @@ At this point, the app is working to get the user's location and is ready to be 
 
 1. Name the project "ImHere.Functions", and then click **OK**.
 
-    ![The Add New Project dialog](../media/5-add-new-functions-project.png)
+    ![Screenshot of the Add New Project dialog with the Visual C#, Cloud option highlighted.](../media/5-add-new-functions-project.png)
 
 1. The **New Project** configuration dialog will appear, and it may show a spinner in the bottom-left whilst loading updated templates. If you see this, wait until this has finished loading, then if updated templates are available, click the **Refresh** option that will appear to ensure you get the latest Function templates.
 
-    ![The new project dialog loading the latest templates](../media/5-loading-templates.png)
+    ![The new project dialog loading the latest templates.](../media/5-loading-templates.png)
 
 1. In the **New Project** configuration dialog, ensure the Functions version is set to *Azure Functions v2 (.NET Standard)* (**NOT** _v1 (.NET Framework)_). Select *Http Trigger*, leave the storage account set to *Storage Emulator*, and set the access rights to *Anonymous*. Then click **OK**.
 
-    ![The Azure Functions project configuration dialog](../media/5-configure-trigger.png)
+    ![The Azure Functions project configuration dialog.](../media/5-configure-trigger.png)
 
     The new project will be created and have a default function called `Function1`.
 
 > [!NOTE]
-> This function was created with anonymous access. Once published to Azure, anybody who knows the URL will be able to call this function. In a real-world scenario, you would protect this with some form of authentication, such as [Azure App Service authentication](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview?azure-portal=true) or [Azure Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c?azure-portal=true).
+> This function was created with anonymous access. Once published to Azure, anybody who knows the URL will be able to call this function. In a real-world scenario, you would protect this with some form of authentication, such as [Azure App Service authentication](/azure/app-service/app-service-authentication-overview?azure-portal=true) or [Azure Active Directory B2C](/azure/active-directory-b2c?azure-portal=true).
 
 ## Create the function
 
@@ -57,7 +57,7 @@ When data is sent to the Azure Functions, it will be sent as JSON. The mobile ap
 
 1. Name the project "ImHere.Data", and then click **OK**.
 
-    ![The Add New Project dialog](../media/5-add-new-net-standard-project.png)
+    ![Screenshot of the Add New Project dialog with the Visual C#, .NET Standard option highlighted.](../media/5-add-new-net-standard-project.png)
 
 1. Delete the auto-generated "Class1.cs" file.
 
@@ -78,7 +78,7 @@ When data is sent to the Azure Functions, it will be sent as JSON. The mobile ap
 
 1. Add a reference to this project in both the `ImHere.Functions` and `ImHere` projects by right-clicking on the project and then selecting *Add->Reference...*. Select *Projects* from the tree on the left-hand side, and then check the box next to *ImHere.Data*.
 
-    ![Configuring project references](../media/5-configure-project-references.png)
+    ![Configuring project references.](../media/5-configure-project-references.png)
 
 ## Read the data sent to the function
 
@@ -153,7 +153,7 @@ Functions can be run locally using a local storage account and local Azure Funct
 
 1. From the *Debug* menu, select *Start Without Debugging*. The local Azure Functions runtime will launch inside a console window and start your function, listening on an available port on `localhost`. If you see a dialog asking for firewall access, allow access to private networks (the default option).
 
-    ![The Azure Functions running locally](../media/5-function-running-locally.png)
+    ![The Azure Functions running locally.](../media/5-function-running-locally.png)
 
 1. Take a note of the port that the function is listening on. You'll need this in the next unit to test out the mobile app. In the image above, the function is listening on port **7071**.
 

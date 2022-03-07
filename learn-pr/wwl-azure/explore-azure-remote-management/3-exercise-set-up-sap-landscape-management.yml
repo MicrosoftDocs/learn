@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-remote-management.set-up-azure-connector-for-sap-landscape-management
+title: Set up the Azure connector for SAP Landscape Management
+metadata:
+  title: Set up the Azure connector for SAP Landscape Management
+  description: "Set up the Azure connector for SAP Landscape Management"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-set-up-sap-landscape-management.md)]

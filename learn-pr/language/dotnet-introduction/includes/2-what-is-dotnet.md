@@ -29,7 +29,7 @@ A code library encapsulates functionality for a specific purpose into a single a
 
 An application framework combines several related libraries, along with starter projects, file templates, code generators, and other tools. You can use these resources to build entire applications for a specific purpose. These application frameworks are known as *app models*. For example, popular .NET application frameworks are available for app models like web development, desktop and mobile development, and game development.
 
-You can install the .NET SDK directly or by installing Visual Studio 2019. The .NET SDK preinstalls a comprehensive set of libraries and application frameworks called the *base class library*.  You can use this library of code in your programs regardless of the platform or app models that you want to build.
+You can install the .NET SDK directly or by installing Visual Studio 2022. The .NET SDK preinstalls a comprehensive set of libraries and application frameworks called the *base class library*.  You can use this library of code in your programs regardless of the platform or app models that you want to build.
 
 For other third-party libraries, developers use package managers like NuGet to find and integrate code libraries from package repositories like the NuGet Gallery.
 
@@ -53,7 +53,7 @@ Furthermore, .NET powers popular third-party and open-source gaming development 
 
 Software developers rely on tools to write code, add references to code libraries, compile code, and debug code. This section describes several .NET tools that you'll use to build .NET applications.
 
-*Visual Studio 2019* is the Microsoft flagship development environment. Millions of developers use it to build .NET applications. A graphical user interface that includes menus, windows, visual designers, dialog boxes, and wizards guides developers through the application development process. Visual Studio 2019 is available in three editions: Community, Professional, and Enterprise. Each edition includes different tools and is licensed for different purposes.
+*Visual Studio 2022* is the Microsoft flagship development environment. Millions of developers use it to build .NET applications. A graphical user interface that includes menus, windows, visual designers, dialog boxes, and wizards guides developers through the application development process. Visual Studio 2022 is available in three editions: Community, Professional, and Enterprise. Each edition includes different tools and is licensed for different purposes.
 
 Developers who prefer a command-line workflow might use a combination of *Visual Studio Code*, the world's most popular code editor, and the .NET command-line interface, also known as the *.NET CLI*.
 
@@ -69,10 +69,10 @@ The following table features a few great resources that you might want to bookma
 
 | Resource | Purpose | 
 |---|---|---|
-| [Microsoft Docs](https://docs.microsoft.com/?azure-portal=true)  | Provides quickstart tutorials and definitive reference documentation. |  
-| [Patterns and Practices](https://docs.microsoft.com/azure/architecture/?azure-portal=true) | Helps developers and software architects find solutions to common application development needs. Resources often transcend the low-level details of writing code and delve into choosing products and services that enable seemingly infinite scalable architectures. | 
+| [Microsoft Docs](/?azure-portal=true)  | Provides quickstart tutorials and definitive reference documentation. |  
+| [Patterns and Practices](/azure/architecture/?azure-portal=true) | Helps developers and software architects find solutions to common application development needs. Resources often transcend the low-level details of writing code and delve into choosing products and services that enable seemingly infinite scalable architectures. | 
 | [.NET Videos](https://dotnet.microsoft.com/learn/videos?azure-portal=true) | Provides video tutorials from the .NET team. These videos walk developers through common usage scenarios. | 
-| [Microsoft Learn](https://docs.microsoft.com/learn/paths/csharp-first-steps?azure-portal=true) | Provides hands-on labs to help you build your skills by combining instruction, exercises, media, knowledge checks, and a means of tracking your progress. | 
+| [Microsoft Learn](../../../paths/csharp-first-steps/index.yml?azure-portal=true) | Provides hands-on labs to help you build your skills by combining instruction, exercises, media, knowledge checks, and a means of tracking your progress. | 
 
 ### Interact with the .NET community to learn and share solutions
 

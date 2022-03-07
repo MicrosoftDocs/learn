@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-sentinel.data-connections
+title: Configure data connections to Sentinel
+metadata:
+  title: Configure data connections to Sentinel
+  description: "Configure data connections to Sentinel"
+  ms.date: 01/07/2022
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-data-connections.md)]

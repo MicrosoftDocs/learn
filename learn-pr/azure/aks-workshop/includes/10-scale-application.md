@@ -52,21 +52,15 @@ HPA allows AKS to detect when your deployed pods need more resources based on me
 
 1. Review the file, and note the following points:
 
-    - **Scale target**
+    - Scale target. The target for scaling is the **ratings-api** deployment.
 
-       The target for scaling is the **ratings-api** deployment.
+    - Min and max replicas. The minimum and maximum number of replicas to be deployed.
 
-    - **Min and max replicas**
+    - Metrics. The autoscaling metric monitored is the CPU utilization, set at 30%. When the utilization goes above that level, the HPA creates more replicas.
 
-       The minimum and maximum number of replicas to be deployed.
+1. To save the file, press <kbd>Ctrl+S</kbd>. To close the editor, press <kbd>Ctrl+Q</kbd>.
 
-    - **Metrics**
-
-       The autoscaling metric monitored is the CPU utilization, set at 30%. When the utilization goes above that level, the HPA creates more replicas.
-
-1. To save the file, select <kbd>Ctrl+S</kbd>. To close the editor, select <kbd>Ctrl+Q</kbd>.
-
-1. Apply the configuration by using the `kubectl apply` command. Deploy the HPA object in the `ratingsapp` namespace.
+1. Apply the configuration by running the `kubectl apply` command. Deploy the HPA object in the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -85,11 +79,11 @@ HPA allows AKS to detect when your deployed pods need more resources based on me
 
 ## Run a load test with horizontal pod autoscaler enabled
 
-To create the load test, you can use a prebuilt image called `azch/artillery` that's available on Docker hub. The image contains a tool called [artillery](https://artillery.io) that's used to send traffic to the API. [Azure Container Instances](https://docs.microsoft.com/azure/container-instances) can be used to run this image as a container.
+To create the load test, you can use a prebuilt image called `azch/artillery` that's available on Docker hub. The image contains a tool called [artillery](https://artillery.io) that's used to send traffic to the API. [Azure Container Instances](/azure/container-instances) can be used to run this image as a container.
 
 When it runs as a container instance set, you don't want it to restart after it has finished. Use the `--restart-policy` parameter and set the value to `Never` to prevent the restart.
 
-1. In Azure Cloud Shell, store the front-end API load test endpoint in a Bash variable and replace `<frontend hostname>` with your exposed ingress host name, for example, https:\//frontend.13-68-177-68.nip.io.
+1. In Azure Cloud Shell, store the front-end API load test endpoint in a Bash variable and replace `<frontend hostname>` with your exposed ingress host name, for example, https:\//frontend.13.68.177.68.nip.io.
 
     ```bash
     LOADTEST_API_ENDPOINT=https://<frontend hostname>/api/loadtest
@@ -97,7 +91,7 @@ When it runs as a container instance set, you don't want it to restart after it 
 
     Let's run a load test to see how the HPA scales your deployment.
 
-1. Run the load test by using the following command, which sets the duration of the test to 120 seconds to simulate up to 500 requests per second.
+1. Run the load test by running the following command, which sets the duration of the test to 120 seconds to simulate up to 500 requests per second.
 
     ```bash
     az container create \
@@ -119,7 +113,7 @@ When it runs as a container instance set, you don't want it to restart after it 
       --namespace ratingsapp -w
     ```
 
-    In a few seconds, you'll see the HPA transition to deploying more replicas. It scales up from 1 to 10 to accommodate the load. Select <kbd>Ctrl+C</kbd> to stop watching.
+    In a few seconds, you'll see the HPA transition to deploying more replicas. It scales up from 1 to 10 to accommodate the load. Press <kbd>Ctrl+C</kbd> to stop watching.
 
     ```output
     NAME          REFERENCE                TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
@@ -162,7 +156,9 @@ Let's introduce load to the cluster to force it to autoscale. We can simulate th
         memory: 256Mi
     ```
 
-1. Apply the configuration by using the `kubectl apply` command. Deploy the resource update in the `ratingsapp` namespace.
+1. To save the file, press <kbd>Ctrl+S</kbd>. To close the editor, press <kbd>Ctrl+Q</kbd>.
+
+1. Apply the configuration by running the `kubectl apply` command. Deploy the resource update in the `ratingsapp` namespace.
 
     ```bash
     kubectl apply \
@@ -208,7 +204,7 @@ Let's introduce load to the cluster to force it to autoscale. We can simulate th
 
     To solve the pending pod problem, you can enable the cluster autoscaler to scale the cluster automatically.
 
-1. Configure the cluster autoscaler. You should see it dynamically adding and removing nodes based on the cluster utilization. Use the `az aks update` command to enable the cluster autoscaler. Specify a minimum and maximum value for the number of nodes. Make sure to use the same resource group from earlier, for example, **aksworkshop**.
+1. Configure the cluster autoscaler. You should see it dynamically adding and removing nodes based on the cluster utilization. Run the `az aks update` command to enable the cluster autoscaler. Specify a minimum and maximum value for the number of nodes. Make sure to use the same resource group from earlier, for example, **aksworkshop**.
 
     The following example sets the `--min-count` to _3_ and the `--max-count` to _5_.
 
@@ -229,7 +225,7 @@ Let's introduce load to the cluster to force it to autoscale. We can simulate th
     kubectl get nodes -w
     ```
 
-    In a few minutes, you'll see some new nodes popping up and transitioning to the `Ready` state. Select <kbd>Ctrl+C</kbd> to stop watching.
+    In a few minutes, you'll see some new nodes popping up and transitioning to the `Ready` state. Press <kbd>Ctrl+C</kbd> to stop watching.
 
     ```output
     NAME                                STATUS   ROLES   AGE   VERSION
@@ -242,6 +238,6 @@ Let's introduce load to the cluster to force it to autoscale. We can simulate th
 
 ## Summary
 
-In this exercise you created a horizontal pod autoscaler and ran a load test to scale out the pods on your cluster. You then increased the compute capacity of your cluster through the cluster autoscaler, adding nodes to your AKS cluster. You now have the knowledge to ensure the Fruit Smoothies AKS environment can scale in response to fluctuations in user traffic.
+In this exercise, you created a horizontal pod autoscaler and ran a load test to scale out the pods on your cluster. You then increased the compute capacity of your cluster through the cluster autoscaler, adding nodes to your AKS cluster. You now have the knowledge to ensure the Fruit Smoothies AKS environment can scale in response to fluctuations in user traffic.
 
 Let's next wrap up what you've learned here.

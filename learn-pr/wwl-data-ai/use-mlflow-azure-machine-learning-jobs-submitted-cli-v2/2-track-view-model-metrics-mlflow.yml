@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.track-view-model-metrics-mlflow
+title: Track and view model metrics with MLflow
+metadata:
+  title: Track and view model metrics with MLflow
+  description: "Track and view model metrics with MLflow"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-track-view-model-metrics-mlflow.md)]

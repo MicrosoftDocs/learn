@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-identity-services.discover-active-directory-domain-services-ad-ds
+title: Discover Active Directory Domain Services (AD DS)
+metadata:
+  title: Discover Active Directory Domain Services (AD DS)
+  description: "Discover Active Directory Domain Services (AD DS)"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-discover-active-directory-domain-services.md)]

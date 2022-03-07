@@ -1,3 +1,5 @@
+## DMO processing
+
 Software Update Manager (SUM) creates the shadow repository on the existing database ahead of the downtime phase. A target database is built in parallel while the shadow repository is subsequently copied and the SAP database connection is switched to the target database.
 
 Following the migration of the application data, that includes data conversion, the upgrade is then finalized and the SAP system begins to run on the target database. The source database retains the unmodified application data and is used as a possible fallback if needed.
@@ -42,8 +44,8 @@ The following diagram provides an overview of the main DMO phases.
 DMO provides a fallback option during any phase.
 
 Beginning DMO up-processing at least one week in advance of the cut-over follows published SAP best practices and allows for ample time for the shadow repository.
-In the event of an issue during up-tim
-Backup must be performed prior to commencing the downtime activities. If there is an event during up-time activities, a simple fallback approach is to remove the shadow instance. If so, this means dropping the shadow instance schema from the source database. Should errors occur during the downtime phase and are likely related to data problems, which must be rectified before moving forward. It is important to execute multiple migration test cycles to resolve problems in advance of the  migration.
+
+In the event of an issue during up-time, Backup must be performed prior to commencing the downtime activities. If there is an event during up-time activities, a simple fallback approach is to remove the shadow instance. If so, this means dropping the shadow instance schema from the source database. Should errors occur during the downtime phase and are likely related to data problems, which must be rectified before moving forward. It is important to execute multiple migration test cycles to resolve problems in advance of the  migration.
 
 ## DMO with System Move
 

@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-if-else-expressions.2-vectors
+metadata:
+  title: Explore the vector data type 
+  description: Discover how to work with vector data in Rust.
+  ms.date: 09/20/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Explore the vector data type 
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-vectors.md)]
+
+quiz:
+  questions:
+  
+  - content: "How can you declare a vector when you don't know the data type?"
+    choices:
+    - content: "`<vector><:?>`"
+      isCorrect: false
+      explanation: "Incorrect. The syntax `:?` is used in the `println!` macro, but not in a vector declaration."
+    - content: "`<vector><T>`"
+      isCorrect: true
+      explanation: "Correct. The syntax `<T>` tells the compiler to use a generic type `T` declaration for the vector."
+    - content: "`<vector>`"
+      isCorrect: false
+      explanation: "Incorrect. After you provide the vector name, specify a known or generic data type."  
+
+  - content: "What does the `pop` function do for a vector?"
+    choices:
+    - content: "Pops off the last value in the vector."
+      isCorrect: true
+      explanation: "Correct. The `pop` function removes the value at the end of a vector."
+    - content: "Pops off the initial value in a vector."
+      isCorrect: false
+      explanation: "Incorrect. The `pop` function removes the value at the end of a vector."
+    - content: "Adds software carbonization to a vector like *popping* bubbles in soda."
+      isCorrect: false
+      explanation: "Incorrect. The `pop` function removes the value at the end of a vector."
+
+  - content: "What happens if you try to access a vector element with an index greater than the vector size?"
+    choices:
+    - content: "A null value is returned."
+      isCorrect: false
+      explanation: "Incorrect. No value of any kind can be returned because a value doesn't exist at the index location."
+    - content: "A compilation error occurs."
+      isCorrect: false
+      explanation: "Incorrect. The program compiles successfully, but it returns an error when the vector is accessed with an out-of-bounds index."
+    - content: "The program panics during runtime."
+      isCorrect: true
+      explanation: "Correct. The program panics with an *index out of bounds* error."

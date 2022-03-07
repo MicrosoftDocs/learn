@@ -1,4 +1,4 @@
-Instead of creating shared access signatures (SASs) individually, each with their own access permissions and expiration dates, you can associate them with a stored access policy. Changing the policy affects all the SASs associated with it.
+Instead of creating SASs individually, each with its own access permissions and expiration dates, you can associate them with a stored access policy. Changing the policy affects all the SASs associated with it.
 
 You now know there's a better way to create and manage your company's SASs. You can update your new test pages to use stored access policies.
 
@@ -99,7 +99,7 @@ In this exercise, you'll update your web app to create SASs with stored access p
     dotnet build
     ```
 
-1. The port might have closed since you finished the previous exercise. Run the `curl` command to open it again.
+1. In the event that the port might have closed since you finished the previous exercise, run the `curl` command to open it again.
 
     ```bash
     curl -X POST http://localhost:8888/openPort/8000;
@@ -127,15 +127,15 @@ In this exercise, you'll update your web app to create SASs with stored access p
 
 ### Edit the stored access policy
 
-1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with the credentials you used to create the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same credentials you used to activate the sandbox.
 
-1. In the Azure portal menu, select **All resources**.
+1. In the Azure portal resource menu, select **All resources**.
 
-1. In the list of resources, select the **medicalrecords** storage account.
+1. In the list of resources, select the **medical records** storage account.
 
-1. On the Overview page, select **Containers**, and then select **patient-images**.
+1. On the Overview pane, select **Containers**, and then select **patient-images**.
 
-1. On the left, under **Settings**, select **Access policy**.
+1. On the patient images menu, under **Settings**, select **Access policy**.
 
 1. Notice that your web app created a **patient-images-policy** stored access policy.
 
@@ -151,4 +151,4 @@ In this exercise, you'll update your web app to create SASs with stored access p
 
     :::image type="content" source="../media/7-sas-fails.png" alt-text="Screenshot of the web app failing to view a patient image." loc-scope="other":::
 
-The image won't be returned from Azure Storage with a 403 authentication error.
+The image won't be returned from Azure Storage and you'll get a 403 authentication error.

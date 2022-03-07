@@ -1,6 +1,6 @@
 One easy way to use Azure Event Grid is to include it in a logic app.
 
-Suppose you've chosen to use Event Grid to alert your administrators when a virtual machine is reconfigured. 
+Suppose you've chosen to use Event Grid to alert your administrators when a virtual machine is reconfigured.
 
 Here, you'll set up a virtual machine and create a logic app with an Event Grid trigger that responds to the events produced by the virtual machine.
 
@@ -9,76 +9,89 @@ Here, you'll set up a virtual machine and create a logic app with an Event Grid 
 Let's start by creating a new virtual machine in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account that you used to activate the sandbox.
-1. Select **+ Create a resource**.
-1. Select **Compute** > **Virtual Machine**.
-1. Complete the **Create a virtual machine** page with the following values:
 
-    | Field | Value |
+1. In resource menu or on the home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+
+1. In the left menu pane, select **Compute**, and in the results list, select **Virtual machine**. The **Create a virtual machine** pane appears.
+
+1. On the **Basics** tab, enter the following values for each setting:
+
+    | Setting | Value |
     | --- | --- |
-    | **Subscription** | Concierge subscription |
-    | **Resource group**   | <rgn>[sandbox resource group]</rgn> |
-    | **Name** | vm1 |
-    | **Region** | Select a region near you |
-    | **Availability options** | No infrastructure redundancy required |
-    | **Image** | Windows Server 2019 Datacenter |
-    | **Azure Spot instance** | No |
-    | **Size** | Standard DS1 v2 |
-    | **Username** | vmadmin |
-    | **Password** | Enter a complex password |
-    | **Public inbound ports** | None |
+    | **Project details** |
+    | Subscription | Concierge subscription |
+    | Resource group  | From the dropdown list, select **<rgn>[sandbox resource group]</rgn>** |
+    | **Instance details** |
+    | Virtual machine name | vm1 |
+    | Region | Select a region near you |
+    | Availability options | No infrastructure redundancy required |
+    | Security type | Standard |
+    | Image | Windows Server 2019 Datacenter - Gen2 |
+    | Azure Spot instance | No checkmark |
+    | Size | Standard DS1 v2 |
+    | **Administrator account** |
+    | Username | vmadmin |
+    | Password | Enter a complex password |
+    | **Inbound port rules** |
+    | Public inbound ports | None |
 
-1. Select **Review and create**, and then select **Create**.
+1. Select **Review and create**. Once validation passes, select **Create**.
+
+    Wait for deployment to complete, and then select **Go to resource**. The **Overview** pane for **vm1** *Virtual machine* appears.
 
 ## Create a logic app
 
-The next step is to create the logic app that will run when a virtual machine change is detected. Let's create a blank logic app.
+Let's create a logic app that will run whenever a virtual machine change is detected. First, we'll create a blank logic app.
 
-1. Select **+ Create a resource**.
-1. Select **Integration** > **Logic App**.
-1. Complete the **Create** page with the following values:
+1. In the resource menu, select **Create a resource**. The **Create a resource** pane appears.
 
-    | Field | Value |
+1. In the **Create a resource** menu, select **Integration**, and then in the results list, select **Logic App**. The **Create Logic App** pane appears.
+
+1. On the **Basics** tab, enter the following values for each setting.
+
+    | Setting | Value |
     | --- | --- |
-    | **Subscription** | Concierge subscription |
-    | **Resource group** | Select **Use existing**, and then select **<rgn>[sandbox resource group]</rgn>** |
-    | **Logic App name** | Enter a name |
-    | **Select the location** | Region |
-    | **Location** | Select a region near you |
-    | **Log Analytics** | Off |
+    | **Project Details** |
+    | Subscription | Concierge subscription |
+    | Resource group | From the dropdown list, select **<rgn>[sandbox resource group]</rgn>** |
+    | **Instance Details** |
+    | Type | Consumption |
+    | Logic app name | Enter a name |
+    | Region | Select a region near you |
+    | Enable log analytics | No |
 
-1. Select **Create**.
+1. Select **Review + create**, then select **Create**.
+
+1. Wait for deployment to complete, then select **Go to resource**. The **Logic Apps Designer** pane appears.
 
 ## Add an Event Grid trigger to the logic app
 
-After your logic app is created, you add triggers for Event Grid events.
+1. In the **Logic Apps Designer** pane, scroll down to **Templates** section, then select **Blank Logic App**.  The **Logic Apps Designer** pane appears.
 
-1. Select **All Resources**.
-1. Select the logic app that you created in the previous step.
-1. Under **Templates**, select **Blank Logic App**.
+    :::image type="content" source="../media/3-choose-logic-app-template.png" alt-text="Template for a blank logic app.":::
 
-    ![Template for a blank logic app](../media/3-choose-logic-app-template.png)
+1. In the *Search connectors and triggers* search box, enter *event grid* as your filter. From the list of triggers, select **When a resource event occurs**.
 
-1. Within the designer, use the search box and enter **Event Grid** as your filter. From the list of triggers, select **When a resource event occurs**.
+    :::image type="content" source="../media/3-logic-app-event-grid-trigger.png" alt-text="Selections for adding an Event Grid trigger.":::
 
-    ![Selections for adding an Event Grid trigger](../media/3-logic-app-event-grid-trigger.png)
+1. When prompted, sign in to the **Microsoft Learn Sandbox** organization using your Azure account credentials.
 
-1. When you're prompted, sign in to the **Microsoft Learn Sandbox** organization by using your Azure account credentials.
-1. Use these values to subscribe your logic app to publisher events:
+1. The **When a resource event occurs** dialog box appears. Select the following values for each setting to subscribe your logic app to publisher events:
 
-    | Field | Value |
+    | Setting | Value |
     | --- | --- |
-    | **Subscription** | Concierge subscription |
+    | **Subscription** | Concierge Subscription |
     | **Resource Type** | `Microsoft.Resources.ResourceGroups` |
     | **Resource Name** | <rgn>[sandbox resource group]</rgn> |
-    | **Event Type Item - 1** | `Microsoft.Resources.ResourceActionSuccess` |
-    | **Event Type Item - 2** | `Microsoft.Resources.ResourceDeleteSuccess` |
+    | **Event Type Item - 1** | `Microsoft.Resources.ResourceActionSuccess`, then select **Add new item** |
+    | **Event Type Item - 2** | `Microsoft.Resources.ResourceDeleteSuccess`, then select **Add new item** |
     | **Event Type Item - 3** | `Microsoft.Resources.ResourceWriteSuccess` |
     | | |
 
-    ![Trigger details](../media/3-logic-app-event-grid-trigger-details.png)
+    :::image type="content" source="../media/3-logic-app-event-grid-trigger-details.png" alt-text="Trigger details.":::
 
-1. Select **Save**.
+1. On the command bar, select **Save**.
 
-    ![Save button](../media/3-logic-app-event-grid-save.png)
+    :::image type="content" source="../media/3-logic-app-event-grid-save.png" alt-text="Save menu button.":::
 
-Your logic app is now ready and set up to be a subscriber to the events from Azure Event Grid.
+Your logic app is now ready and set up to be a subscriber to the events from the Azure Event Grid.

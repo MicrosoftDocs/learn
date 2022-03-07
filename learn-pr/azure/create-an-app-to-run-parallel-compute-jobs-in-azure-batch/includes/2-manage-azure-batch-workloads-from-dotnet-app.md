@@ -4,7 +4,7 @@ You decide to write the app that manages the entire Azure Batch process as a .NE
 
 The job that runs on each compute node contains tasks for every video that has been uploaded to the input storage container. The task loads the MP4 pet videos, convert them to animated GIFs, and saves the files to an output container. The task reference the ffmpeg library that is stored as an application package in the Azure Batch account. Our solution is visualized in the following diagram.
 
-![A flow diagram showing how an app can use Azure Storage and Azure Batch to run apps on compute nodes in pools](../media/2-batch-overview.png)
+![Diagram showing how an app can use Azure Storage and Azure Batch to run apps on compute nodes in pools.](../media/2-batch-overview.png)
 
 Azure Batch is used in combination with Azure Storage. Azure Storage provides the location for any input data, a place for logging and monitoring information, and storage for the final output. The applications that an Azure Batch runs can also be stored there, or a more flexible option is to use the application package feature of Azure Batch.
 
@@ -17,7 +17,7 @@ The components of Azure Batch are:
 - **Job**: Jobs manage collections of tasks. A job is associated with a specific pool. An Azure Batch account can have many jobs.
 - **Task**: Tasks run applications. These can be contained in an application package, or in an Azure Storage container. Tasks process input files, and on completion can write to output containers.
 
-Before you can start to manage the Azure Batch components from within a .NET application, you have to create the Azure Batch account and Azure Storage account. You can use Azure portal, Powershell, or Azure CLI to create these accounts.
+Before you can start to manage the Azure Batch components from within a .NET application, you have to create the Azure Batch account and Azure Storage account. You can use Azure portal, PowerShell, or Azure CLI to create these accounts.
 
 ## Why use an app to manage Batch workloads
 

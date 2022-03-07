@@ -5,9 +5,10 @@ metadata:
   description: "University of Oxford"
   ms.date: 12/8/2019
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
+  ms.custom: team=nextgen
 title: "Train and package an Azure machine learning module for deployment to IoT Edge device"
 summary: "Deploy a trained machine learning module to the edge using a container. The machine learning module you create will be deployed to an IoT Edge device. You'll check that your container image was successfully created and stored in the Azure container registry. You'll view the data from the deployed module from the IoT Edge."
 abstract: |

@@ -1,117 +1,137 @@
-You can add Functions to Azure API Management, to present them to users as parts of a single API.
+To present Azure Functions to users as parts of a single API, you can add them to Azure API Management.
 
 In your online store company, your developers have created multiple Azure Functions as microservices. Each function implements a small part of the store's functionality. You want to assemble these functions into single API.
 
-Here, you will create a new API Management instance and then add a Product Details function to it.
+In this exercise, you'll create a new API Management instance and then add a Product Details function to it.
 
 ## Create functions
 
-In this exercise, you will add an Azure Functions app to Azure API Management. Later you will add a second function app to the same API Management instance in order to create a single serverless API from multiple functions. Let's start by using a script to create the functions:
+In the following steps, you'll add an Azure Function app to Azure API Management. Later, you'll add a second function app to the same API Management instance to create a single serverless API from multiple functions. Let's start by using a script to create the functions:
 
-1. To clone the functions project, in the Cloud Shell on the right, execute this command:
+1. To clone the functions project, run the following command in Azure Cloud Shell on the right.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-apim-and-functions.git ~/OnlineStoreFuncs
     ```
 
-1. Run the following commands in the Cloud Shell to set up the necessary Azure resources we need for this exercise. 
+1. Run the following commands in Cloud Shell to set up the necessary Azure resources we need for this exercise.
 
     ```bash
     cd ~/OnlineStoreFuncs
     bash setup.sh
     ```
 
-    The `setup.sh` script creates the two function apps in the sandbox resource group that we've activated for this module. As the following graphic illustrates, each app hosts a single function - `OrderDetails` and `ProductDetails`. the script also sets up a storage account for  the functions. The functions both have URLs in the **azurewebsites.net** domain. The function names include random numbers for uniqueness. The script takes a few minutes to complete.
+    The `setup.sh` script creates the two function apps in the sandbox resource group that we've activated for this module. As the following graphic illustrates, each app hosts a single function - `OrderDetails` and `ProductDetails`. The script also sets up a storage account for  the functions. The functions both have URLs in the **azurewebsites.net** domain. The function names include random numbers for uniqueness. The script takes a few minutes to complete.
 
-    ![Diagram illustrating the results of the setup.sh script and how the functions relate to the overall application's design.](../media/3-script-results.png)
+    :::image type="content" source="../media/3-script-results.png" alt-text="Diagram illustrating the results of the setup.sh script and how the functions relate to the overall application's design." border="false":::
 
 ## Test the product details function
 
-Now, let's test the ProductDetails function, to see how it behaves before we add it to API Management:
+Now, let's test the ProductDetails function to see how it behaves before we add it to API Management.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**.
+1. On the Azure portal menu or from the **Home** page, select **All resources**. The **All resources** pane appears.
 
-1. Choose the App Service whose name begins with **ProductFunction**. The Function Apps UI for this app opens in the portal.
+1. Select the Function App whose name begins with **ProductFunction**. The Function App pane appears.
 
-1. Select **Functions** in the menu, then select **ProductDetails**.
+1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears for your Function App.
 
-    ![Screenshot of selecting the ProductDetails function.](../media/3-select-function.png)
+    :::image type="content" source="../media/3-select-function.png" alt-text="Screenshot of menu selections to open ProductDetails function.":::
 
-1. Select **Code + Test**, then select **Test**, as highlighted in the following screenshot: 
+1. From the list of functions for your function app, select **ProductDetails**. The **ProductDetails** Function pane appears.
+  
+1. In the Product Details menu, under **Developer**, select **Code + Test**. The **Code + Test** pane for the ProductDetails function appears, showing the contents of `function.json` file.
 
-    ![Screenshot of the ProductDetails function and the Test option.](../media/3-code-test-product-details-function.png)
+    :::image type="content" source="../media/3-code-test-product-details-function.png" alt-text="Screenshot of the ProductDetails Code and Test pane, with Test/Run selected in the command bar.":::
 
-1. In the **HTTP method** drop-down list, select **GET**, and then select **Add parameter**.
+1. On the command bar, select **Test/Run**.  The Input/Output pane appears for testing your HTTP request.
 
-1. In the **name** textbox, type *id* and in the **value** textbox, type *3*.
+1. On the **Input** tab, in the **HTTP method** field dropdown list, select **GET**.
 
-    ![Screenshot of the input panel to add test parameters for the ProductDetails function.](../media/3-test-input.png)
+1. Under **Query**, Select **Add parameter**
 
-1. Select **Run** and examine the results in the **Output** box, then select **Close**.
+1. In the **Name** field, enter *id*, and in the **Value** field, enter *3*, and then select **Run**.
 
-    ![Screenshot of the output of a panel which displays the result of testing the ProductDetails function.](../media/3-test-output.png)
+   :::image type="content" source="../media/3-test-input.png" alt-text="Screenshot of the input pane for Test + Run, with the input parameter for the HTTP GET method highlighted.":::
 
-    The output pane displays the details of a product in JSON format. You can also test the function with IDs 1 and 2 for different products.
+1. A log pane appears to connect the request. The **Output** tab displays the HTTP response code (200 OK) and content for item 3 in the database.
 
-1. At the top of the page, select **Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain. Make a note of this URL for later comparison. 
+    :::image type="content" source="../media/3-test-output.png" alt-text="Screenshot of the output of a pane for Test + Run with response results of running the GET method.":::
+
+    Optionally, you can also test the function by inputting ID values 1 and 2.
+
+1. Select **Close** to close the Input Output tabs for Code + Test.
+
+1. On the command bar of the ProductDetails Code + Test pane, select **Get function URL**. Notice that the URL subdomain is the name of your function app, followed by the  **azurewebsites.net** domain.
 
 > [!NOTE]
-> You can use this URL to test the function in your browser. Append the query string `&id=1` to request a product.
+> You can use this URL to test the function in your browser. The URL requires an input; append the query string `&id=1` to request details about the first item in your product collection.
 
-## Expose our function app as an API using Azure API Management
+## Expose function app as an API using Azure API Management
 
-Now that we have our function app deployed and tested, we'll expose the functionality as an API using Azure API Management so that the function can be called from other apps and services. 
+After the function app has been deployed and tested, let's export it as an API using Azure API Management so that it can be called from other apps and services.
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**, and select the App Service whose name begins with **ProductFunction**.
+1. In the resource menu, select **All resources**. The **All resources** pane appears.
 
-1. Select **API Management**, and select **Create new** under **API Management**.
+1. Sort the list of resources by type. Notice you have an OrderFunction app and a ProductFunction app.
+ 
+1. Select the **ProductFunction** function app.
 
-    ![Screenshot illustrating how to create a new API.](../media/3-create-api.png)
+1. In the Function App menu, scroll to **API** category, and then select **API Management**. The **API Management** pane for ProductFunction function app appears.
 
-1. Use the API Management settings as specified in the following table.
+    :::image type="content" source="../media/3-create-api.png" alt-text="Screenshot showing menu selection to open the API Management app service.":::
+
+1. Under the **API Management** field, select **Create new**. The **Install API Management gateway** pane appears.
+
+    :::image type="content" source="../media/3-api-details.png" alt-text="Screenshot showing settings for an API Management service.":::
+
+1. Enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
-    | Name | Use a unique name within the **azure-api.net** domain |
-    | Subscription | Concierge |
+    | Subscription | Concierge Subscription |
     | Resource group | <rgn>[sandbox resource group name]</rgn> |
-    | Location | Choose one of the following locations that supports the Consumption Plan: **West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  | 
+    | Region | Choose a location that supports the Consumption Plan: **(US) West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  | 
+    | Resource name | OnlineStore |
     | Organization name | OnlineStore |
-    | Administrator email | Use the default value |
-    | Pricing tier | Consumption |
+    | Administrator email | Enter an email address. |
+    | Pricing tier | Consumption (99.95% SLA) |
 
-    ![Screenshot showing the new API settings.](../media/3-api-details.png)
+1. Select **Next: Monitoring** and clear the **Application Insights** option.
 
-1. Choose **Create** to create the API Management instance, which may take several minutes, then select **Link API**.
+1. Select **Review + Create**. When the validation completes, select **Create** to create a linked API Management instance. Allow several minutes for the export to complete.
 
-    ![Screenshot showing the Link API button.](../media/3-link-api.png)
+1. When the API Management instance is deployed, select **Link API**.
 
-1. The **Import Azure Functions** dialog opens with the **ProductDetails** function highlighted. Choose **Select** to continue. 
+    :::image type="content" source="../media/3-link-api.png" alt-text="Screenshot of API Management highlighting the Link API button.":::
 
-    ![Screenshot showing the Import Azure Functions page.](../media/3-import-azure-functions.png)
+    The **Import Azure Functions** API Management service pane appears with the **ProductDetails** function highlighted.
 
-1. In the **Create from Function App** page, change **API URL suffix** to **products** and select **Create**. The API is now created for the **ProductDetails** function. 
+    :::image type="content" source="../media/3-import-azure-functions.png" alt-text="Screenshot showing the Import Azure Functions API Management service pane.":::
 
-    ![Screenshot showing the Create from Function app dialog box.](../media/3-create-from-function-app.png)
+1. Select **Select** to continue. The **Create from Function App** dialog box appears.
 
-Note that we were able to define our API all from within the function app portal experience. 
+    :::image type="content" source="../media/3-create-from-function-app.png" alt-text="Screenshot showing the Create from Function app dialog box.":::
+
+1. Change the **API URL suffix** value to *products*, and then select **Create**. Azure creates the API for the **ProductDetails** function. The **Design** tab for **API Management** pane for your function app appears.
+
+This exercise shows that you can define your API, all from within the Azure Function App service.
 
 ## Test the OnlineStore products endpoint
 
-You now have a functional product details API in the API Management instance that you created. Let's test that API, by using the API Management tools in the Azure portal.
+You now have a `ProductDetails` API in the API Management instance that you created. Let's test that API with the API Management tools in Azure.
 
-1. With the API Management instance still open, select the **Test** tab. 
+1. In the **API Management** pane of your function app, select the **Test** tab. The available operations for your API appear in the left column.
 
-1. Select **Get ProductDetails** as the operation that we want to test. 
+1. Select **GET ProductDetails**. The ProductDetails Console pane appears.
 
 1. Under **Query parameters**, select **Add parameter**.
 
-1. In the **name** textbox, enter *id*.
+    :::image type="content" source="../media/3-complete-product-details-test.png" alt-text="Screenshot showing ProductDetails Console with query parameter values highlighted for the GET HTTP request.":::
 
-1. In the **value** textbox, enter *1*, and then select **Send**.
+1. In the **NAME** field, enter *id*, and in the **VALUE** field, enter *1*, and then select **Send** to generate a GET request.
 
-    ![Screenshot of the API Management tool while user is testing the Product Details API.  A callout highlights the parameter name and value fields.](../media/3-complete-product-details-test.png)
+    The **HTTP response** section of the console has two tabs, Message and Trace. The Message tab is populated with HTTP response. The product details appear in JSON format at the end of the response. Scroll up to the **HTTP request** section and notice the format of the request. The request was sent to a destination in the **azure-api.net** domain. This location is different from the **azurewebsites.net** domain where the function app is hosted. You can test this API with other query parameters, such as *id=2* or *id=3*.
 
-1. In the **HTTP response**, notice that the details of a product have been returned in JSON format. Also notice the **HTTP request** was sent to a destination within the **azure-api.net** domain. This location is different to the **azurewebsites.net** domain where the original function app is hosted.
+   :::image type="content" source="../media/3-api-http-response.png" alt-text="Screenshot showing the **Http request** and **HTTP response** message.":::

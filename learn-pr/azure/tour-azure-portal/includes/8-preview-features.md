@@ -43,7 +43,7 @@ If you utilize the preview portal or a preview feature, Microsoft wants to hear 
 
 The Azure portal "What's New" link on the help menu (**?**) provides a list of recent updates you can periodically check to see what's changed in Azure.
 
-Alternatively, you can use the [Azure Updates](https://azure.microsoft.com/updates/) page. This page provides additional information and features including:
+Alternatively, you can use the [Azure Updates](https://azure.microsoft.com/updates?azure-portal=true) page. This page provides additional information and features including:
 
 - Which updates are in general availability, preview, or development.
 - Browse updates by product category or update type, by using the provided dropdown lists.

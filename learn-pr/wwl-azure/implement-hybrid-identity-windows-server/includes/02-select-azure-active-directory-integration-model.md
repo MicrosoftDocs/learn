@@ -4,7 +4,7 @@ Azure AD is not AD DS in the cloud; instead, it's an entirely new directory serv
 
 The IT team can use Azure AD to increase employee productivity, streamline IT processes, and improve security for adopting various cloud services. Contoso employees can access online applications by using a single user account. Contoso can also perform central user management by using well-known Windows PowerShell cmdlets. It's also worth noting that because Azure AD is highly scalable and highly available by design, the IT team won't have to maintain related infrastructure or worry about disaster recovery.
 
-As a component of Azure, Azure AD can support multi-factor authentication as part of an overall access strategy for cloud services, thus providing an additional layer of security. Role-based access control (RBAC), self-service password, group management, and device registration provide enterprise-ready identity management solutions. Azure AD also provides advanced identity protection in addition to enhanced reporting and alerting that can help you recognize threats more efficiently.
+As a component of Azure, Azure AD can support multifactor authentication as part of an overall access strategy for cloud services, thus providing an additional layer of security. Role-based access control (RBAC), self-service password, group management, and device registration provide enterprise-ready identity management solutions. Azure AD also provides advanced identity protection in addition to enhanced reporting and alerting that can help you recognize threats more efficiently.
 
 ## Overview of Azure AD
 
@@ -12,7 +12,7 @@ Azure AD is part of the platform as a service (PaaS) offering and operates as a 
 
 [![A screenshot of the Azure AD portal, Azure Active Directory pane with a line graph of sign-ins.](../media/m12-azure-active-directory.png)](../media/m12-azure-active-directory.png#lightbox)
 
-With Azure AD, you also have access to a set of features that are not natively available in AD DS, such as support for multi-factor authentication, identity protection, and self-service password reset. You can use Azure AD to provide more secure access to cloud-based resources for organizations and individuals by:
+With Azure AD, you also have access to a set of features that are not natively available in AD DS, such as support for multifactor authentication, identity protection, and self-service password reset. You can use Azure AD to provide more secure access to cloud-based resources for organizations and individuals by:
 
 - Configuring access to applications.
 - Configuring SSO to cloud-based SaaS applications.

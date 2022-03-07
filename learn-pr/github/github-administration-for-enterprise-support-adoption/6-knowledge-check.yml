@@ -1,0 +1,67 @@
+### YamlMime:ModuleUnit
+uid: learn.github-administration-for-enterprise-support-adoption.knowledge-check
+title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description:  Knowledge check for GitHub administration for Enterprise support and adoption module
+  ms.date: 09/10/2021
+  author: sterling463
+  ms.author: csterling
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4 
+content: |
+quiz:
+  title: Check your knowledge 
+  questions:
+  - content: "What is a feature of GitHub Connect?"
+    choices:
+    - content: "Shares data between GitHub Enterprise Server and GitHub Enterprise Cloud"
+      isCorrect: true
+      explanation: "GitHub Connect, which shares data between a GitHub Enterprise Server instance and the GitHub Enterprise Cloud, enabling additional redundancy"
+    - content: "Allows you to limit the sharing of your organization's documentation"
+      isCorrect: false
+      explanation: "Access control for GitHub Pages sites, which allows you to limit the sharing of your organization's documentation"
+    - content: "Authentication with SAML single sign-on and access provisioning with SAML or SCIM"
+      isCorrect: false
+      explanation: "Authentication with SAML single sign-on and access provisioning with SAML or SCIM, which make it easier for users to authenticate and for administrators to ensure everyone has the appropriate level of access"
+  - content: "What feature can you use to expand the kinds of actions that you can automate in response to common GitHub events?"
+    choices:
+    - content: "GitHub Actions"
+      isCorrect: true
+      explanation: "GitHub Actions minutes, which expand the kinds of actions you can automate in response to common GitHub events"
+    - content: "GitHub Advanced Security"
+      isCorrect: false
+      explanation: "GitHub Advanced Security (GHAS), which is a specialized add-on to GitHub Enterprise that scans code and other resources for errors, security vulnerabilities, and potential sensitive data"
+    - content: "Dependabot"
+      isCorrect: false
+      explanation: "Dependabot is not an action that can be automated."
+  - content: "GitHub support is limited to which of the following issues:"
+    choices:
+    - content: "Account, Security, and Abuse issues"
+      isCorrect: true
+      explanation: "GitHub Support is limited to account, security, and abuse issues"
+    - content: "Security, server, and 2FA issues"
+      isCorrect: false
+      explanation: "GitHub Support is limited to account, security, and abuse issues"
+    - content: "Account, server, and security issues"
+      isCorrect: false
+      explanation: "GitHub Support is limited to account, security, and abuse issues"
+    - content: "Account, 2FA, and security issues"
+      isCorrect: false
+      explanation: "GitHub Support is limited to account, security, and abuse issues, not server setup issues or 2FA setup"
+  - content: "Which GitHub priority should you use to report critical system failures?"
+    choices:
+    - content: "Urgent"
+      isCorrect: true
+      explanation: "Urgent tickets report critical system failure."
+    - content: "High"
+      isCorrect: false
+      explanation: "High-priority tickets report problems impacting business operations or critical bugs, including removing sensitive data (commits, issues, pull requests, uploaded attachments) from your own accounts and organization restorations."
+    - content: "Normal"
+      isCorrect: false
+      explanation: "Normal-priority tickets request account recovery or spam unflagging, report user login issues, and report non-critical bugs."
+    - content: "Low"
+      isCorrect: false
+      explanation: "Low-priority tickets ask general questions and submit requests for new features, purchases, training, or health checks."

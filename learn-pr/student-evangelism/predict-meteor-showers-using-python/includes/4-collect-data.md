@@ -46,8 +46,7 @@ As [the Moon](https://solarsystem.nasa.gov/moons/earths-moon/overview/?azure-por
 
 These are the phases of the Moon:
 - New Moon: Around the 15th of the month
-- Waxing
-- Crescent
+- Waxing crescent
 - First quarter: Around the 23rd of the month
 - Waxing gibbous
 - Full Moon: Around the 1st of the month
@@ -68,7 +67,16 @@ Here's the data we've already gathered:
 - [cities.csv](https://aka.ms/LearnWithDrG/OverTheMoon/Data?azure-portal=true) - This file contains a list of country capitals and their associated latitudes. (Data acquired from [Wikipedia](https://en.wikipedia.org/wiki/List_of_national_capitals_by_latitude?azure-portal=true)) 
 
 Download these files and save them in your *over-the-moon/meteor-showers/data* folder:
-![Showing all four C S V data files in the data folder within Visual Studio Code.](../media/data-downloaded.png)
+
+:::image type="content" source="../media/data-downloaded.png" alt-text="Screenshot that shows all four C S V data files in the data folder in Visual Studio Code.":::
+
+> [!TIP]
+> To download a CSV file in GitHub:
+> 1. In the list of files in the GitHub repository, select the file.
+> 1. In the upper-right corner, select **Raw**. The file opens as a raw CSV file in your browser.
+> 1. Right-click anywhere in the browser window, and then select **Save as**.
+> 1. In the **File save as** dialog box, you can choose the file name (use the original name of the downloaded CSV file), the file type (CSV), and where to download the file to (your project data folder).
+>
 
 ## Other data to consider
 

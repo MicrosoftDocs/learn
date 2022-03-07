@@ -4,8 +4,8 @@ metadata:
   title: Create a Windows virtual machine in Azure
   description: Learn to create an Azure virtual machine in minutes that can be used like a local physical desktop or server.
   ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create a Windows virtual machine in Azure
@@ -28,6 +28,7 @@ roles:
 products:
 - azure
 - azure-virtual-machines
+- azure-virtual-machines-windows
 units:
 - learn.create-a-windows-vm-in-azure.1-introduction
 - learn.create-a-windows-vm-in-azure.2-create-a-windows-virtual-machine

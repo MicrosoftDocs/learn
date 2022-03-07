@@ -31,9 +31,9 @@ quiz:
     - content: "In the Azure portal"
       isCorrect: false
       explanation: "You can't generate IoT Central API tokens in the Azure portal."
-    - content: "In the IoT Central application"
+    - content: "Using a bearer token"
       isCorrect: true
-      explanation: "Correct. You can generate a token in the Administration section of the web UI."
+      explanation: "Correct. You can generate an API token using a bearer token."
     - content: "Using the REST API"
       isCorrect: false
       explanation: "No. You need an API token to use the REST API, so you must generate the first token in the web UI, or use a bearer token."

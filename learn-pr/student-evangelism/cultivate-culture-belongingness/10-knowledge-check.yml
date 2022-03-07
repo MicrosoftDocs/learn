@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.cultivate-culture-belong-tech.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions to check what you've learned.
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  questions:
+  - content: 'Which one of the following statements communicates that the person feels a sense of belonging in the space?'
+    choices:
+    - content: '“I feel respected now that I’ve worked hard to emulate my teammates.”'
+      isCorrect: false
+      explanation: 'Incorrect. To belong, you shouldn’t need to change yourself to be more like your teammates. Belonging doesn’t require that you change who you are: It requires that you _be_ who you are.'
+    - content: '“I don’t share my ideas because my teammates are much better than me.”'
+      isCorrect: false
+      explanation: 'Incorrect. When you have a sense of belonging in a space, your ideas are considered valuable regardless of your abilities or the abilities of others.'
+    - content: '“I feel at home here; it feels like a safe space where I can share my ideas, and I know they’ll be taken seriously.”'
+      isCorrect: true
+      explanation: 'Correct. When you feel that you’re in the right place, or “at home”, you’re sure that your team will actively listen to you and respect you. These factors are all signs that you feel a sense of belonging.'
+  - content: 'One technique to help a peer or colleague cultivate their own sense of belonging is to:'
+    choices:
+    - content: 'Remind them that they need to be able to use all the tools that the rest of the group is using.'
+      isCorrect: false
+      explanation: 'Incorrect. Aptitude isn’t the same as a sense of belonging.'
+    - content: 'Help them learn how to use a tool that is new to them in a way that communicates that you respect them.'
+      isCorrect: true
+      explanation: 'Correct. To have a sense of belongingness in the group, they need to feel respected by the others in the group.'
+    - content: 'Because they don’t know how to use a difficult-to-use tool, ask them to assess whether they belong in tech or not.'
+      isCorrect: false
+      explanation: 'Incorrect. Aptitude isn’t the same thing as a sense of belonging.'
+  - content: 'A subconscious attitude or stereotype that affects one’s actions, decisions, and understanding of people and events is called what?'
+    choices:
+    - content: 'Climate.'
+      isCorrect: false
+      explanation: 'Incorrect. Climate is a way of “taking the temperature” of a space.'
+    - content: 'Explicit bias.'
+      isCorrect: false
+      explanation: 'Incorrect. Explicit bias is a conscious attitude or stereotype.'
+    - content: 'Implicit bias.'
+      isCorrect: true
+      explanation: 'Correct. Implicit bias is a subconscious attitude or stereotype.'
+  - content: 'What casual exchange causes a sense of subordination in the recipient?'
+    choices:
+    - content: 'A chilly climate.'
+      isCorrect: false
+      explanation: 'Incorrect. The result of casual exchanges that cause a sense of subordination in the recipient might be making the climate at work or school seem “cold” and uninviting, even hostile.'
+    - content: 'A microaggression.'
+      isCorrect: true
+      explanation: 'Correct. Microaggressions often appear to be a compliment or a joke, but they contain a hidden insult about a group of people based on social identities.'
+    - content: 'A micro-affirmation.'
+      isCorrect: false
+      explanation: 'Incorrect. A micro-affirmation is a small act of inclusion that adds up to an overall feeling of inclusion for everyone.'
+  - content: 'Four steps to take to build an inclusive environment are:'
+    choices:
+    - content: 'Invite others to participate, be open to different perspectives, practice active listening, and share the air.'
+      isCorrect: true
+      explanation: 'Correct. These four steps can help build an inclusive environment.'
+    - content: 'Practice giving advice to coworkers, have regular meetings about office inclusivity policies, put up motivational posters, and send out weekly emails with ideas for meeting topics on inclusivity.'
+      isCorrect: false
+      explanation: 'Incorrect. Those things might all be good to do, but they’re not the four steps to build an inclusive environment.'
+    - content: 'Follow anti-discrimination legislation, have regular meetings about inclusivity and the law, communicate the anti-discrimination policy to staff, and keep the office at a comfortable temperature.'
+      isCorrect: false
+      explanation: 'Incorrect. Although legislation and communication about anti-discrimination are important, in this case “inclusive environment” means people feel welcomed into the space, and feel respected, heard, and valued.'
+ 

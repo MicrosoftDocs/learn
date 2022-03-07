@@ -10,7 +10,7 @@ metadata:
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+  ms.custom: team=nextgen
 durationInMinutes: 3
 content: |
   [!include[](includes/4-detect-the-users-location.md)]

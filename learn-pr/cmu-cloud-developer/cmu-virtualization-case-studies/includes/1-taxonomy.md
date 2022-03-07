@@ -40,7 +40,7 @@ To elaborate on some of the features, live migration allows running VMs to be se
 | **Page sharing support** | Yes | No | No | No |
 | **Live migration support** | Yes | Yes | Yes | Yes |
 | **Contains device drivers** | Yes | No | No | Yes |
-| **Common cloud vendors** | [vCloud Hybrid Service](http://www.vmware.com/products/vcloud-hybrid-service) | [Microsoft Azure](http://www.windowsazure.com/en-us/) | [Amazon EC2](http://aws.amazon.com/ec2) and [Rackspace](http://www.rackspace.com/) | [IBM SmartCloud](http://www.ibm.com/cloud-computing/us/en/) |
+| **Common cloud vendors** | [vCloud Hybrid Service](https://www.vmware.com/products/vcloud-hybrid-service) | [Microsoft Azure](https://azure.microsoft.com/) | [Amazon EC2](https://aws.amazon.com/ec2) and [Rackspace](https://www.rackspace.com/) | [IBM SmartCloud](https://www.ibm.com/cloud/learn/cloud-computing) |
 
 <br>
 

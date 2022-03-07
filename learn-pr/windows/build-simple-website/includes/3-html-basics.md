@@ -1,189 +1,151 @@
-At the moment we have an empty HTML file. Let's add some code! The goal is to use hypertext markup language (HTML) to describe the web page the browser should display. Wouldn't it be nice to have a starting template? Editors can conveniently fill in some of the typical boilerplate or HTML structure for you.
+At the moment, your website has an empty HTML file. Let's add some code! The goal is to use hypertext markup language (HTML) to describe the web page your customers' browsers should display. Wouldn't it be nice to have a starting template? Editors can conveniently fill in some of the typical boilerplate or HTML structure for you.
 
-## Using autocomplete
+In this unit, you add basic HTML content, open the HTML page in a browser, and get your first look at the developer tools.
 
-Visual Studio Code provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting. Visual Studio Code also includes great Emmet support (from the documentation on Emmet in Visual Studio Code).
+## Add some HTML code
 
-In **Visual Studio Code**, open `index.html` by selecting the `index.html` file. Select the `index.html` page and type `html:5`, then hit Enter (Return).
+Visual Studio Code provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting.
 
-![Screenshot of Visual Studio Code HTML5 Emmet entry](../media/vs-code-html-emmet.png)
+1. Open your website in **Visual Studio Code**, then open the `index.html` file by selecting the `index.html` file in **Explorer**.
+ 
+1. In the `index.html` page, type `html:5`, and then select <kbd>Enter</kbd>. HTML5 template code is added to the file.
 
-Edit your code so that it resembles the following, then save the file with Control+S (Windows) or Command+S (macOS).
+    > [!NOTE]
+    > If the HTML5 template code is not added to the `index.html` file, try closing and reopening the file.
 
-```html
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+1. Edit your code so that it resembles the following, and then save the file by selecting <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
 
-  </body>
-</html>
-```
+   ```html
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+   </head>
+   <body>
 
-> [!TIP]
-> You can click and drag to select a line, then use Command + Tab or Shift + Command + Tab to adjust the line indentation. In Visual Studio Code, the **Selection** menu has a list of helpful commands for navigating your code. For quick navigation, the left and right arrow keys are your friend.
+   </body>
+   </html>
+   ```
 
 There have been different versions of HTML. The document type `<!DOCTYPE html>` indicates this is HTML5 code.
 
-HTML, head, and body are *elements* with opening and closing *tags*. *Attributes* in the *opening tag* provide more information about the element. For the `<html>` tag, the language is English, and text direction is left-to-right. Language `lang` is an attribute name, and English `"en"` is an *attribute value*.
+While we aren't going to delve deeply into the meaning of all the HTML elements, we will point out a few important items. The `meta` tag indicates *metadata* information that won't typically be visible to the viewer unless they view the source code in their browser. Meta elements or tags provide descriptive information about the webpage. For example, they help search engines process which information in your webpages to return in search results.
 
-The `meta` tag indicates *metadata* information that won't typically be visible to the viewer unless they view source code in their browser. Meta elements or tags provide descriptive information about the webpage. For example, they help search engines display results to people.
-
-The *character set* (charset) UTF-8 may seem insignificant but is crucial for establishing how computers interpret characters. If missing, charset can lead to compromised security. There's quite a bit of history and technical information behind charset. The bigger picture here is that boilerplate provides some sensible defaults.
+The *character set* (charset) for UTF-8 may seem insignificant, but is crucial for establishing how computers interpret characters. If the metadata for the character set is missing, that can lead to compromised security. There's quite a bit of history and technical information behind the charset attribute, but important takeaway from this exercise is that the **VS Code** boilerplate provides some sensible defaults.
 
 ## Edit the head
 
-The *title* of a webpage appears at the top of a browser window and is significant in a few ways. First, the title is utilized by and displayed in search engines. Second, when a visitor bookmarks the page, the title becomes the default name for the bookmark. Third, the title helps visitors navigate by seeing what page they are viewing. Let's add a title.
+The *metadata* defines data about the HTML document, such as character set, scripts, and which browser the webpage opens in. 
+
+The *title* of a webpage appears at the top of a browser window, and is significant in many ways. For example, the title is used by and displayed in search engines. Let's add a title.
 
 > [!IMPORTANT]
-> From this point forward, the ellipsis (...) indicates that previously declared code precedes or follows. There should be enough code provided as context to make necessary changes or update to your work.
+> From this point forward, the ellipsis (...) indicates that previously declared code precedes or follows. There should be enough code provided as context to make necessary changes or update your work, but you should not copy and paste the ellipsis into your code.
 
-```html
-...
-<head>
-  <meta charset="utf-8">
-  <title>Task Timeline</title>
-...
-```
+1. In the editor, modify the `<title>` element so that it resembles the following example.
 
-You could write the CSS code directly in the head of the website, which is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with duplicated CSS, you can make changes once and have those updates broadcast to all dependent pages. Let's link to an external stylesheet.
+   ```html
+   ...
+   <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple website</title>
+   ...
+   ```
 
-In **Visual Studio Code**, type `link` and hit the Enter (Return) key. Update the `href` to `main.css` and save the file with Control+S (Windows) or Command+S (macOS).
+To apply styles to the HTML elements on the webpage, you could write the CSS code directly in the head of the webpage; this is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with replicated CSS code, you can make changes to a single CSS file, and have those updates applied to all of the dependent web pages. Let's link to an external stylesheet.
 
-```html
-...
-<head>
-  <meta charset="utf-8">
-  <title>Task Timeline</title>
-  <link rel="stylesheet" href="main.css">
-</head>
-...
-```
+1. In the **VS Code** editor, add a blank line after the `<title>` element, type `link`, and then select <kbd>Enter</kbd>. **VS Code** should add the following line to your `index.htm` file.
+
+   ```html
+   <link rel="stylesheet" href="">
+   ```
+
+1. Update the `href=` to `href=main.css`, and save the file by selecting <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
+
+   ```html
+   ...
+   <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+     <link rel="stylesheet" href="main.css">
+   </head>
+   ...
+   ```
 
 ## Edit the body
 
-Let's start filling in the *body* element now. Add a *heading* `<h1>`, *paragraph* `<p>`, and create a *list item* `<li>`. Update your code so it looks like the following.
+Let's start filling in the *body* element now.
 
-```html
-...
-<body>
-  <h1>Task Timeline</h1>
-  <p id="date"></p>
-  <ul>
-    <li class="list">Edit the head</li>
-    <li class="list">Edit the body</li>
-    <li>Link to JavaScript</li>
-  </ul>
-</body>
-```
+1. Add a *heading* `<h1>` element, followed by a *paragraph* `<p>` element, and then create an *unordered list* `<ul>` that contains several *list item* `<li>` elements.
 
-An ID attribute can be used for styling one element, while the class attribute is for styling one or more elements.
+1. Edit your code, or copy and paste, so it looks like the following example.
 
-There's no text between the open and closing `<p>` tags so nothing will appear on the page for that element yet. Yes, you can write markup without having any content.
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple website</title>
+        <link rel="stylesheet" href="main.css">
+      </head>
+      <body>
+        <h1>Task List</h1>
+        <p id="msg">Current tasks:</p>
+        <ul>
+          <li class="list">Add visual styles</li>
+          <li class="list">Add light and dark themes</li>
+          <li>Enable switching the theme</li>
+        </ul>
+      </body>
+    </html>
+    ```
 
-Each list item `<li>` element is grouped into an unordered list `<ul>`.
+An ID attribute (used in the `<p>` element) can be used for styling one element, while the class attribute (used in the `<li>` element) is for styling all elements of the same class.
 
-## Link to JavaScript
-
-Like CSS, we could add JavaScript directly to the HTML page, but it's better not to. For example, you could create a popup alert, by adding `<script>alert('Hello World')</script>` anywhere in the body. The script tag `<script>` will let us link to an external JavaScript file.
-
-In **Visual Studio Code**, type `script:src` and press Enter (Return).
-
-![Screenshot of Visual Studio Code script:src Emmet entry](../media/vs-code-script-src-emmet.png)
-
-Adjust your code to look like the following.
-
-```html
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Task Timeline</title>
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body>
-    <h1>Task Timeline</h1>
-    <p id="date"></p>
-    <ul>
-      <li class="list">Edit the head</li>
-      <li class="list">Edit the body</li>
-      <li>Link to JavaScript</li>
-    </ul>
-    <script src="app.js"></script>
-  </body>
-</html>
-```
-
-The script element could be placed in the `<head>` or elsewhere in the `<body>`. However, putting `<script>` at the end of the `<body>` section allows all the page content to display on the screen first, then load the script.
-
-## No script
-
-The `<noscript>` element can be used to show a message if JavaScript is deactivated.
-
-```html
-...
-    <script src="app.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
-  </body>
-</html>
-```
-
-Using the `<noscript>` element is an example of *fault tolerance* or *graceful degradation*. We can detect and plan for when a feature isn't supported or available.
-
-Remember to save your changes with the keyboard shortcut Control+S (Windows) or Command+S (macOS).
+Before the next step, make sure your file is saved by selecting <kbd>Control+S</kbd> or <kbd>Command+S</kbd>.
 
 ## Open in browser
 
-You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with `https://`, your browser points to the local file path. For example, the path might look similar to the following: *file:///Users/username/Desktop/public/index.html*.
+You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with `https://`, your browser points to the local file path, which should  look similar to *file:///Users/\<username\>/Desktop/public/index.html*, where \<username\> is your ID.
 
-To preview using **Visual Studio Code**, select `index.html` and select **Open In Default Browser** or use the keyboard shortcut Alt+B.
+- To preview using **Visual Studio Code**, right-click `index.html`, and select **Open In Default Browser**, or select the `index.html` file and use the keyboard shortcut <kbd>Alt+B</kbd>.
 
-![Screenshot of Open in Browser in Visual Studio Code](../media/vs-code-open-in-browser.png)
+   :::image type="content" source="../media/vs-code-open-in-browser.png" alt-text="Screenshot of Open in Browser in Visual Studio Code.":::
 
-> [!IMPORTANT]
-> If you're having trouble, make sure you're directly selecting on the filename icon or text.
+  > [!IMPORTANT]
+  > If you're having trouble, make sure you're directly right-clicking the filename icon or text. If a **Visual Studio Code** dialog appears, select **Yes, I trust the authors**; this is the Workspace Trust feature that lets you decide whether your project folders should allow or restrict automatic code execution. You just created the file, so is is safe.
 
-The webpage will open in your default browser.
+  The webpage opens in your default browser.
 
-To test the `<noscript>` element, you can deactivate JavaScript and reload the page.
-
-If you're using the **Edge** browser, select the **More** menu (...), and select **Open with Internet Explorer**. Then follow the instructions for [how to enable JavaScript in Windows](https://support.microsoft.com/help/3135465/how-to-enable-javascript-in-windows). Once you have deactivated JavaScript and tested the `<noscript>` feature, don't forget to reenable JavaScript.
-
-![Screenshot of deactivated JavaScript in Explorer](../media/explorer-blocked-javascript.png)
-
-In **Chrome** go to **Chrome > Preferences > Advanced > Content settings > JavaScript**.
-
-- **Toggle allowed** or **blocked** to turn off or on.
-- Or open a new tab and enter chrome://settings/content/javascript
-
-![Screenshot of deactivating JavaScript in Chrome](../media/3-html-basics/chrome-blocked-javascript.png)
-
-Reload the page to see the `<noscript>` message.
-
-![Screenshot of no script result in Chrome](../media/chrome-noscript.png)
-
-After seeing the `<noscript>` message, re-enable JavaScript, and reload the page.
-
-## Developer tools
+## View the page using developer tools
 
 You can inspect a webpage by using the developer tools in your browser. Let's give this a try.
 
-In **Edge**, the keyboard shortcut for **Developer Tools** is F12 (FN+F12). Alternately, view **Settings and more** with Alt+X and select **Developer Tools**.
+1. Open Developer Tools by right-clicking in the web page and selecting **Inspect**, or try these shortcuts:
 
-![Screenshot of Settings and more menu](../media/edge-settings-menu.png)
+   - In **Edge** on Windows or Linux, press the keyboard shortcut for **Developer Tools**, which is <kbd>F12</kbd> or <kbd>Ctrl-Shift+I</kbd>. Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
 
-In **Chrome**, the keyboard shortcut for **Developer Tools** is Option+Command+I.
+   - In **Chrome** on Windows or Linux, press the keyboard shortcut <kbd>Ctrl-Shift+I</kbd>. Or, open the Chrome Menu in the upper-right-hand corner of the browser window and select **More Tools > Developer Tools**.
+
+   - In **Chrome** on a Mac, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd> or <kbd>F12</kbd>.
+
+    > [!NOTE]
+    > If you're using **Safari**, see the [Web Development Tools](https://developer.apple.com/safari/tools/). When installed, select **Safari > Preferences**, and then select **Advanced**. At the bottom of the pane, select the **Show Develop menu in menu bar** checkbox. Select **Develop > Show Web Inspector**. For more information, check the Safari Web Inspector documentation.
 
 1. Select the **Elements** tab.
-2. Roll over and select the HTML elements.
-3. Open the disclosure triangles.
 
-![Screenshot of Chrome Developer Tools](../media/3-html-basics/chrome-developer-tools.png)
+   :::image type="content" source="../media/chrome-developer-tools-elements-tab.png" alt-text="Screenshot of the Chrome developer tools.":::
 
-> [!NOTE]
-> If using **Safari**, see the [Web Developer Tools](https://developer.apple.com/safari/tools/) and [Safari User Guide](https://support.apple.com/guide/safari/use-the-developer-tools-in-the-develop-menu-sfri20948/mac) for more information.
+1. Scroll your mouse over the HTML elements, and expand the contents of the various elements.
 
+The **Elements** tab in developer tools shows you the document object model (DOM) as rendered in the browser. When debugging, it is often important to see how the browser interprets your source code.
 Inspecting the page in a browser provides all sorts of useful information and can help you troubleshoot problems. You can also view CSS details with the inspector, as you'll see in the next section.

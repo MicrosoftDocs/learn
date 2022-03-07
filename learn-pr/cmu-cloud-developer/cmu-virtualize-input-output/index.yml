@@ -4,10 +4,11 @@ metadata:
   title: Virtualize I/O
   description: Carnegie Mellon University's Cloud Developer course. Learn about how computer input/output is virtualized. Covers I/O basics and a case study of virtualizing I/O.
   ms.date: 03/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Virtualize I/O
 summary: Learn about how computer input/output is virtualized. Covers I/O basics and a case study of virtualizing I/O.
 abstract: | 

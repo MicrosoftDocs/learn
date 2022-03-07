@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker
+metadata:
+  title: Deploy a private MQTT broker
+  description: Learn how to deploy your own private MQTT broker.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+title: Deploy a private MQTT broker
+summary: Learn how to deploy your own private MQTT broker.
+abstract:  |
+  In this module, you will:
+  - Create an Ubuntu virtual server. 
+  - Install and help secure a Mosquitto MQTT broker.
+  - Install Let's Encrypt to provide CA certificate authentication. 
+  - Run the Python virtual disk server on the virtual machine. 
+prerequisites: |
+  - A computer with an x86-based or 64-based processor running one of the following operating systems:
+    - Windows 10 Anniversary Update or later
+    - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
+  - An Azure Sphere developer board that has one of the following kits:
+    - Avnet Azure Sphere Starter Kit Rev 1 or 2
+    - Seeed Studio Azure Sphere MT3620 Development Kit
+  - A GitHub account.
+  - An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
+iconUrl: /learn/achievements/student-evangelism/altair-azure-sphere-deploy-mqtt-broker.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- azure-iot-central
+- azure-sphere
+- azure-app-service-static
+- azure-virtual-machines
+units:
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.introduction
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.deployment
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.exercise-set-up
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.knowledge-check
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.summary
+badge:
+  uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.badge

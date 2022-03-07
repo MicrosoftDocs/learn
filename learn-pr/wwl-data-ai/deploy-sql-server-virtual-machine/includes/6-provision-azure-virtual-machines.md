@@ -70,7 +70,7 @@ New-AzResourceGroup -Name $resourceGroupName -Location $location
 
 New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName `
 
- -TemplateUri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json
+ -TemplateUri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json
 
 
 az deployment group create --resource-group myresourcegroup `

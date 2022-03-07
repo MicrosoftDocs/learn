@@ -50,10 +50,10 @@ JOIN Products
 ON Orders.ProductID = Products.ProductID
 ```
 
-The following query finds the customer name and product names of all orders placed by customer C2, using this view:
+The following query finds the customer name and product names of all orders greater than QuantityOrdered 100, using this view:
 
 ```SQL
 SELECT CustomerName, ProductName
 FROM CustomersProducts
-WHERE CustomerID = "C2"
+WHERE QuantityOrdered > 100
 ```

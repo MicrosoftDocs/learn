@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.spatial-audio-tutorials-mrtk.12-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 09/13/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: Choose the best response for each question. Then select Check your answers.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which plugin provides easy access to the HRTF hardware so your application can use more of the processor for the operations other than spatial audio?"
+      choices:
+        - content: "ARKit XR Plugin"
+          isCorrect: false
+          explanation: The ARKit XR Plugin implements the native iOS endpoints required for building Handheld AR apps using Unity's multi-platform XR API. 
+        - content: "Oculus XR Plugin"
+          isCorrect: false
+          explanation: The Oculus XR Plugin enables you to build applications for Oculus devices.
+        - content: "Microsoft spatializer plugin"
+          isCorrect: true
+          explanation: The Microsoft spatializer plugin provides an easy way for your application to take advantage of the dedicated HRTF hardware so your application can use more of the application processor for operations other than spatial audio.
+    - content: "What do you need to adjust in the Audio Source component to disable attenuation?"
+      choices:
+        - content: "Spatial Blend"
+          isCorrect: false
+          explanation: Sets how much the 3D engine has an effect on the audio source.
+        - content: "Volume curve"
+          isCorrect: true
+          explanation: Unity will attenuate spatialized sounds as they get farther from the listener. To disable this attenuation, you need to adjust the Volume curve In the Audio Source component.
+        - content: "Doppler Level"
+          isCorrect: false
+          explanation: Determines how much doppler effect will be applied to this audio source (if is set to 0, then no effect is applied).
+    - content: "Unreverberated audio is called __________, and the audio after filtering with the reverb filter is called the __________"
+      choices:
+        - content: "dry path, wet path"
+          isCorrect: true
+          explanation: In audio terminology, the original, unreverberated audio is called the dry path, and the audio after filtering with the reverb filter is called the wet path.
+        - content: "wet path, dry path"
+          isCorrect: false
+          explanation: In audio terminology, the original, unreverberated audio is called the dry path, and the audio after filtering with the reverb filter is called the wet path.
+
+         
+   

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.spatial-audio-tutorials-mrtk.6-spatialize-audio-from-video
+title: Spatialize audio from a video
+metadata:
+  title: Spatialize audio from a video
+  description: Description to Spatialize audio from a video
+  ms.date: 09/13/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-spatialize-audio-from-video.md)]

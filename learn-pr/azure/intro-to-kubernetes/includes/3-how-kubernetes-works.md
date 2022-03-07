@@ -76,7 +76,7 @@ The controller manager launches and monitors the controllers configured for a cl
 
 Kubernetes uses controllers to track the state of objects in the cluster. Each controller runs in a non-terminating loop while watching and responding to events in the cluster. For example, there are controllers to monitor nodes, containers, and endpoints.
 
-The controller communicates with the API server to determine the state of the object. If the current state is different from the wanted state of the object, then the controller will take action to ensure the wanted state.
+The controller communicates with the API server to determine the state of the object. If the current state is different from the wanted state of the object, the controller will take action to ensure the wanted state.
 
 Assume that one of three containers running in your cluster stops responding and has died. In this case, a controller decides whether you need to launch new containers to ensure that your apps are always available. If the desired state is to run three containers at any time, then a new container is scheduled to run.
 
@@ -86,7 +86,7 @@ The cloud controller manager integrates with the underlying cloud technologies i
 
 ## Services that run on a node
 
-The are several services that run on a Kubernetes node to control how workloads run.
+There are several services that run on a Kubernetes node to control how workloads run.
 
 :::image type="content" source="../media/3-cluster-architecture-node.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on a Kubernetes node." border="false":::
 
@@ -104,7 +104,7 @@ The kubelet monitors the nodes and makes sure that the containers scheduled on e
 
 ### What is kube-proxy?
 
-The kube-proxy component is responsible for local cluster networking and runs on each node. It ensures that each node has a unique IP address. It also implements rules to handle routing and load balancing of traffic by using iptables and IPVS.
+The kube-proxy component is responsible for local cluster networking, and runs on each node. It ensures that each node has a unique IP address. It also implements rules to handle routing and load balancing of traffic by using iptables and IPVS.
 
 This proxy doesn't provide DNS services by itself. A DNS cluster add-on based on CoreDNS is recommended and installed by default.
 
@@ -122,7 +122,7 @@ Kubernetes provides a command-line tool called `kubectl` to manage your cluster.
 
 - **Cluster** configuration specifies a cluster name, certificate information, and the service API endpoint associated with the cluster. This definition enables you to connect from a single workstation to multiple clusters.
 - **User** configuration specifies the users and their permission levels when they're accessing the configured clusters.
-- U**Context** configuration groups clusters and users by using a friendly name. For example, you might have a "dev-cluster" and a "prod-cluster" to identify your development and production clusters.
+- **Context** configuration groups clusters and users by using a friendly name. For example, you might have a "dev-cluster" and a "prod-cluster" to identify your development and production clusters.
 
 You can configure `kubectl` to connect to multiple clusters by providing the correct context as part of the command-line syntax.
 
@@ -154,7 +154,7 @@ Kubernetes pods have a distinct lifecycle that affects the way you deploy, run, 
 
 Here are the phases in a pod's lifecycle:
 
-|||
+| Phase | Description |
 |---|---|
 | Pending | After the pod run is scheduled, the container runtime downloads container images, and starts all containers for the pod. |
 | Running | The pod transitions to a running state after all of the resources within the pod are ready. |
@@ -170,7 +170,7 @@ The cluster doesn't save the pod's state or dynamically assigned configuration. 
 
 Keep in mind that the phases are a summary of where the pod is in its lifecycle. When you inspect a pod, the cluster uses three states to track your containers inside the pod:
 
-|||
+| State | Description |
 |---|---|
 | Waiting | Default state of a container and the state that the container is in when it's not running or terminated.|
 | Running | The container is running as expected without any problems. |

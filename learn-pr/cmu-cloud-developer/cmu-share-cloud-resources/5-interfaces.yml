@@ -5,10 +5,11 @@ metadata:
   title: Interfaces in computing
   description: Interfaces in computing
   ms.date: 03/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 3
 content: |
   [!include[](includes/5-interfaces.md)]

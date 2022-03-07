@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-very-large-databases-vldb-to-azure.optimize-network-upload
+title: Optimize network upload
+metadata:
+  title: Optimize network upload
+  description: "Optimize network upload"
+  ms.date: 01/26/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-optimize-network-upload.md)]

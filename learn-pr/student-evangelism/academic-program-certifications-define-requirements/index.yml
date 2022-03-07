@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.student-evangelism.academic-program-certifications-define-requirements
+metadata:
+  title: Define academic and industry requirements for implementing certifications in degree programs
+  description: Identify the main processes involved in planning to implement certifications and to define academic and industry requirements in a new program proposal document.
+  ms.date: 07/01/2021
+  author: leestott
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Define academic and industry requirements for implementing certifications in degree programs
+summary: Identify the main processes involved in planning to implement certifications and to define academic and industry requirements in a new program proposal document.
+abstract: |
+    When you finish this module, you'll be able to:
+    - Choose the most suitable approach to implement certifications at your institution.
+    - Identify academic requirements for developing new programs that offer certifications.
+    - Identify industry requirements for developing new programs that offer certifications.
+    - Describe how to create a new program proposal document.
+prerequisites: |
+    - Familiarity with academic processes in higher education for creating courses.
+    - Experience creating and managing learning resources for courses
+iconUrl: /learn/achievements/student-evangelism/academic-program-certifications-define-requirements.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+- higher-ed-educator
+- school-leader
+products:
+- azure
+units:
+- learn.student-evangelism.academic-program-certifications-define-requirements.introduction
+- learn.student-evangelism.academic-program-certifications-define-requirements.case-study-overview
+- learn.student-evangelism.academic-program-certifications-define-requirements.choose-certification-approach
+- learn.student-evangelism.academic-program-certifications-define-requirements.describe-certification-role
+- learn.student-evangelism.academic-program-certifications-define-requirements.requirements-for-degree-programs
+- learn.student-evangelism.academic-program-certifications-define-requirements.create-proposal-document
+- learn.student-evangelism.academic-program-certifications-define-requirements.knowledge-check
+- learn.student-evangelism.academic-program-certifications-define-requirements.summary
+badge:
+  uid: learn.student-evangelism.academic-program-certifications-define-requirements.badge

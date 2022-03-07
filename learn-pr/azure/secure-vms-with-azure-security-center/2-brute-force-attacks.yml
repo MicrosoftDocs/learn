@@ -4,12 +4,11 @@ title: Protect virtual machines with JIT VM access
 metadata:
   title: Protect virtual machines with JIT VM access
   description: Protect virtual machines with JIT VM access
-  ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  ms.date: 02/15/2022
+  author: elazark
+  ms.author: memildin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 content: |
   [!include[](includes/2-brute-force-attacks.md)]

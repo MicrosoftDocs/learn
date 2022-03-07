@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.the-tools
+metadata:
+  title: A brief introduction to the tools of Mixed Reality
+  description: A brief introduction to the tools of Mixed Reality
+  ms.date: 06/15/2021
+  author: drguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: A brief introduction to the tools of Mixed Reality
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-the-tools.md)]

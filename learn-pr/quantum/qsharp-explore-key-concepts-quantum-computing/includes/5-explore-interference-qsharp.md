@@ -30,8 +30,7 @@ $$ H  H |0\rangle=  H \frac1{\sqrt2}(|0\rangle+|1\rangle).$$
 
 Because $ H$ is a linear operator:
 
-$$=\frac1{\sqrt2}( H |0\rangle+ H |1\rangle)=
-\frac1{\sqrt2}(|\psi_1\rangle+|\psi_2\rangle).$$
+$$=\frac1{\sqrt2}( H |0\rangle+ H |1\rangle)=\frac1{\sqrt2}(|\psi_1\rangle+|\psi_2\rangle).$$
 
 So applying $ H$ twice to $|0\rangle$ is mathematically the same as
 superposing the states $|\psi_1\rangle$ and $|\psi_2\rangle$.
@@ -102,7 +101,7 @@ $|1\rangle$. You can create this state in Q#.
    :::code language="qsharp" source="code/5-program-2.qs":::
 
    In this code, you:
-   1. Transform $|0\rangle$ into $|1\rangle$ by using the [X](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.X?azure-portal=true) operation.
+   1. Transform $|0\rangle$ into $|1\rangle$ by using the [X](/qsharp/api/qsharp/microsoft.quantum.intrinsic.X?azure-portal=true) operation.
    1. Apply `H` to obtain $|\psi_2\rangle$.
    1. Use `DumpMachine` to inspect the phases of the state $|\psi_2\rangle$.
 

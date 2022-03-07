@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-activeactive-deployment-scenario
+title: Explore the Active/Active deployment scenario
+metadata:
+  title: Explore the Active/Active deployment scenario
+  description: "Explore the Active/Active deployment scenario"
+  ms.date: 10/21/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/17-explore-active-active-deployment-scenario.md)]

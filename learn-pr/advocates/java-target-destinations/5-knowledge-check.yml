@@ -13,43 +13,43 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Why would you use a Platform-as-a-Service solution?"
+    - content: "Why would you use a platform as a service (PaaS) solution?"
       choices:
-        - content: "You want to go to production as fast as possible, with a limited ops team"
+        - content: "You want to go to production as fast as possible, with a limited ops team."
           isCorrect: false
-          explanation: "You are right, but this answer is not the only reason"
-        - content: "You have high availability, security, or compliance requirements"
+          explanation: "You are partially right, but this answer is not the only reason."
+        - content: "You have high availability, security, or compliance requirements."
           isCorrect: false
-          explanation: "You are right, but this answer is not the only reason"
-        - content: "you don't have the resources or the will to maintain a production-grade infrastructure"
+          explanation: "You are partially right, but this answer is not the only reason."
+        - content: "Your team doesn't have the resources or the willingness to maintain a production-grade infrastructure."
           isCorrect: false
-          explanation: "You are right, but this answer is not the only reason"
-        - content: "All of the above"
+          explanation: "You are partially right, but this answer is not the only reason."
+        - content: "All of the above."
           isCorrect: true
-          explanation: "Platform-as-a-Service solutions are the preferred choice if you want to go to production fast, with high confidence and minimum maintenance burden."
+          explanation: "Correct. Platform as a service solutions are the preferred choice if you want to go to production quickly, with high confidence and a minimal maintenance burden."
     - content: "Which Azure service is designed to run serverless workloads?"
       choices:
         - content: "Azure App Service"
           isCorrect: false
-          explanation: "Azure App Service is a Platform-as-a-Service, which can run standard Java applications"
+          explanation: "Incorrect. Azure App Service is a platform as a service solution, which can run standard Java applications."
         - content: "Azure Functions"
           isCorrect: true
-          explanation: "Azure Functions is the serverless offer from Azure"
+          explanation: "Correct. Azure Functions is the serverless offer from Azure."
         - content: "Azure Kubernetes Service"
           isCorrect: false
-          explanation: "Azure Kubernetes Service is a managed Kubernetes offer"
+          explanation: "Incorrect. Azure Kubernetes Service is a managed Kubernetes offer"
         - content: "Azure Spring Cloud"
           isCorrect: false
-          explanation: "Azure Spring Cloud is a managed service for running Spring Boot and Spring Cloud applications"
-    - content: "With a Platform-as-a-Service offer like Azure App Service or Azure Spring Cloud, who manages your JVM?"
+          explanation: "Incorrect. Azure Spring Cloud is a managed service for running Spring Boot and Spring Cloud applications."
+    - content: "With a platform as a service offer such as Azure App Service or Azure Spring Cloud, who manages your Java Virtual Machine (JVM)?"
       choices:
-        - content: "You are responsible to update and patch your JVM"
+        - content: "You are responsible for updating and patching your JVM."
           isCorrect: false
-          explanation: "Microsoft manages, updates, and patches your JVM for you"
-        - content: "Microsoft is responsible to update and patch your JVM"
+          explanation: "Incorrect. Microsoft manages, updates, and patches your JVM for you."
+        - content: "Microsoft is responsible for updating and patching your JVM."
           isCorrect: true
-          explanation: "Microsoft manages, updates, and patches your JVM for you"
-        - content: "JVM cannot be updated or patched"
+          explanation: "Correct. Microsoft manages, updates, and patches your JVM for you."
+        - content: "JVM can't be updated or patched."
           isCorrect: false
-          explanation: "Microsoft manages, updates, and patches your JVM for you"
+          explanation: "Incorrect. Microsoft manages, updates, and patches your JVM for you."
               

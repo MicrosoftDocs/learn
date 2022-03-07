@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.use-dynamic-management-views-to-identify-troubleshoot-query-performance
+title: Use dynamic management views to identify and troubleshoot query performance
+metadata:
+  title: Use dynamic management views to identify and troubleshoot query performance
+  description: "Use dynamic management views to identify and troubleshoot query performance"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-use-dynamic-management-views-to-identify-troubleshoot-query-performance.md)]

@@ -5,8 +5,8 @@ metadata:
   title: Create a Java web app
   description: In this unit, you'll learn how to create a web app using Maven.
   ms.date: 03/10/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

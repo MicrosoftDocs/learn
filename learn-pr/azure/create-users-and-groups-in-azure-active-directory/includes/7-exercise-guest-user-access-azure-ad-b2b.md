@@ -6,63 +6,98 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 ## Add guest users to the organization
 
-1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>).
+1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>), and under **Azure services**, select **Azure Active Directory**. The **Overview** pane for your Azure AD appears.
 
-1. Select **Azure Active Directory** > **Users** > **New guest user**.
+1. In the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
+
+1. On the top menu bar, select **New guest user**.
 
    ![Screenshot that shows the New guest user button.](../media/7-new-guest-user.png)
-1. **Invite user** should be selected.
+
+   The **New user** pane appears.
+
+1. Confirm **Invite user** is selected.
+
 1. Enter a name and an email address that you have access to.
 
-1. Select **Invite**. An invitation is sent to the email address you provided for the guest user.
-
-1. Notice that the user now appears in the list of users and has Guest as user type.
+1. Select **Invite**. An invitation is sent to the email address you provided for the guest user. The **All users** pane appears. Notice that the user now appears in the list of users and has *Guest* as **User type**.
 
 ## Add guest users to a group
 
-1. In your Azure AD organization, select **Groups** and then select **Developer group** in the list of groups.
-1. Select **Members** > **Add members**.
+1. In your Azure AD organization overview page, in the left menu pane, under **Manage**, select **Groups**. The **All groups** pane appears.
+
+1. Search for and select **Developer group** in the list of groups. The **Developer group** pane appears.
+
+1. In the left menu pane, under **Manage**, select **Members**. The **Members** pane appears for your developer group.
+
+1. On the top menu bar, select **Add members**. The **Add members** pane appears.
+
 1. Search for the guest account you added to the organization.
-1. Select the account, and click **Select**. 
-1. You now see the user in the list of members for this group.
+
+1. Select the account, and select **Select**. The **Members** pane for your developer group appears.
+
+    You now see the user in the list of members for this group.
 
 ## Add guest users to an application
 
-1. In your Azure AD organization, select **Enterprise applications** > **All applications**. 
-1. Select **New application**.
+1. Go to your Azure AD organization, and in the left menu pane, under **Manage**, select **Enterprise applications**. The **Enterprise applications | All applications** pane appears.
+
+1. On the top menu bar, select **New application**.
 
    ![Screenshot that shows the New Application button.](../media/7-enterprise-application.png)
 
-1. Search for **Twitter** and select **Create**.
-1. Select **Users and groups** > **Add user**.
+   The **Browse Azure AD Gallery** pane appears.
 
-   ![Screenshot that shows the Twitter application overview page.](../media/7-application-users-groups.png)
+1. Search for and select **DocuSign**. The **Docusign** pane appears.
 
-1. In **Add Assignment**, select **Users and groups**.
-1. Select the guest user you added in the previous exercise, and click **Select**.
-1. Select **Assign**. You now see the user in the list for this application.
+1. Select **Create**. The **Docusign | Overview** pane appears.
+
+1. In the left menu pane, under **Manage**, select **Users and groups**. The **Users and groups** pane appears for Docusign.
+
+1. On the top menu bar, select **Add user/group**.
+
+    :::image type="content" source="../media/7-application-users-groups.png" alt-text="Screenshot that shows the Docusign application user and groups page.":::
+
+    The **Add Assignment** pane appears.
+
+1. Under **Users and groups**, select the **None Selected** link. The **Users and groups** pane appears.
+
+1. Select the guest user you added in the previous exercise, and select **Select**. The **Add Assignment** pane reappears.
+
+1. Select **Assign**. The **Users and groups** pane for Docusign appears. You now see the user in the list for this application.
 
 1. To check that the correct access level is set, select the user in the list.
 
-    ![Screenshot that shows a selected check box for the user.](../media/7-select-user.png)
+    :::image type="content" source="../media/7-select-user.png" alt-text="Screenshot that shows the user selected on the users and groups page.":::
 
-1. Select **Edit**.
-1. Click **Select Role** > **Default Access** and **Select** to make sure they have the correct access.
+1. On the top menu bar, select **Edit**. The **Edit Assignment** pane appears.
 
-1. When the invitation arrives, the user accepts it and can then access the application.
+1. Under **Select a role**, select the **None Selected** link. The **Select a role** pane appears.
 
-    ![Screenshot that shows the application link available after the invitation is accepted.](../media/7-application-visible-invitation-accepted.png)
+1. Select **DocuSign Sender**, and then select **Select** to make sure they have the correct access.
+
+    :::image type="content" source="../media/7-select-role.png" alt-text="Screenshot that shows role selected for user.":::
+
+    The **Edit Assignment** pane reappears.
+
+1. Select **Assign**. The **Users and groups** pane appears with the proper **Role assigned** as **DocuSign Sender** for the user you selected.
+
+1. When the invitation arrives, the user accepts it, and can then access the application.
+
+    :::image type="content" source="../media/7-application-visible-invitation-accepted.png" alt-text="Screenshot that shows the DocuSign app in the browser for the guest user after they've accepted the invitation.":::
 
 You've now added a guest user to an application.
 
 ## Resend invitations to guest users
 
- If the guest user didn't receive the first email invitation, you can resend an invitation email.
+If the guest user didn't receive the first email invitation, you can resend an invitation email.
 
-1. In your Azure AD organization, select **Users**.
-1. Select the user.
-1. Select **Resend invitation**.
+1. In your Azure AD organization, in the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
 
-   ![Screenshot that shows the Resend invitation button on the user's profile.](../media/7-profile-resend-invitation.png)
+1. Select the user. The **Profile** pane for the user appears.
 
+1. Under the **Identity** section, select the **(manage)** link. The **Manage invitations** pane appears.
 
+1. Under **Email invitations** for **Resend invite**, select **Yes**, and then select **Yes** to confirm resending the invitation. The **Manage invitations** pane reappears.
+
+1. Select **Done**.

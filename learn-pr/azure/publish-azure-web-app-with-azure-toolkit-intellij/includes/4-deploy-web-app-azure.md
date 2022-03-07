@@ -6,7 +6,7 @@ In this unit, you'll explore the app publishing tools that the toolkit includes,
 
 ## Set up the Azure App service
 
-The Azure App Service is a Platform-as-a-Service (PaaS) implementation of a web server in Azure. You can use it to host any HTTP-based service, including websites, REST APIs, and mobile back-ends. You have many language and framework choices when you write apps, one of them being Java Service Pages (JSP), and you can choose whether the underlying infrastructure runs on Windows or Linux. 
+The Azure App Service is a Platform-as-a-Service (PaaS) implementation of a web server in Azure. You can use it to host any HTTP-based service, including websites, REST APIs, and mobile back-ends. You have many language and framework choices when you write apps, one of them being Java Server Pages (JSP), and you can choose whether the underlying infrastructure runs on Windows or Linux.
 
 When you create an App Service to host your application, you also create these supporting objects:
 

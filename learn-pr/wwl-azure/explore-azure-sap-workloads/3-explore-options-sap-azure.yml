@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-sap-workloads.explore-your-options-sap-azure
+title: Explore your options with SAP on Azure
+metadata:
+  title: Explore your options with SAP on Azure
+  description: "Explore your options with SAP on Azure"
+  ms.date: 03/04/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-explore-options-sap-azure.md)]

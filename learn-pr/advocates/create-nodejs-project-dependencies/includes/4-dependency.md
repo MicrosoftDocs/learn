@@ -8,7 +8,7 @@ The third-party library can be thought of as a package and stored in a registry.
 
 So how do you know if you need a package for your project? That's a complicated question that involves a few factors:
 
-- **Getting better code**. Ask yourself if you're dealing with a task like security, for example, and are trying to implement authentication and authorization. It's a task that you need to *get right* to protect your data and your customer's data. There are standard patterns out there and libraries used by many developers. These libraries implement features you most likely will always need. And issues are patched as they arise. You should use such libraries instead of reinventing the wheel. The main reason is that you're not likely to do as good a job of writing the code yourself because there are so many edge cases that you'd need consider.  
+- **Getting better code**. Ask yourself if you're dealing with a task like security, for example, and are trying to implement authentication and authorization. It's a task that you need to *get right* to protect your data and your customer's data. There are standard patterns out there and libraries used by many developers. These libraries implement features you most likely will always need. And issues are patched as they arise. You should use such libraries instead of reinventing the wheel. The main reason is that you're not likely to do as good a job of writing the code yourself because there are so many edge cases that you'd need to consider.  
 - **Saving time**. You could probably build most things yourself, like utility or UI component libraries. But it takes time. Even if the end result is comparable to what's out there, it's not a good use of your time to replicate the work of writing this code if you don't have to.
 - **Maintenance**. All libraries and apps need maintenance sooner or later. Maintenance involves adding new features and correcting bugs. Is it a good use of your or your team's time to maintain a library? Or is it better to let an open-source software team handle it?
 
@@ -49,7 +49,7 @@ When you run `npm install <name of dependency>`, Node.js goes to a global regist
 
 ### npm commands
 
-So far, you've learned how you can install dependencies by using the npm tool. But this tool can do a lot more. The npm command-line tool has quite a few commands. The commands help you with tasks like installing packages, authoring packages, and initializing Node.js projects. You don't need to know all the commands in detail. When you start out with Node.js, you're likely to use only a subset of the commands. As you expand your use of Node.js, you might use more and more commands from a variety of categories.
+So far, you've learned how you can install dependencies by using the npm tool. But this tool can do a lot more. The npm command-line tool has quite a few commands. The commands help you with tasks like installing packages, authoring packages, and initializing Node.js projects. You don't need to know all the commands in detail. When you start out with Node.js, you're likely to run only a subset of the commands. As you expand your use of Node.js, you might run more and more commands from a variety of categories.
 
 To help you remember what the commands do, it helps to think of them as belonging to categories:
 
@@ -69,11 +69,11 @@ Dependencies belong to one of two categories:
 
 This separation isn't just conceptual. The npm tool writes to a manifest file by adding entries to it when you download dependencies. The tool allows you to differentiate between the two types of dependencies by adding a flag to the installation command. The flag places the name of the dependency and its version in a section called `dependencies` or `devDependencies`. This differentiation gives you a clear mental separation of the dependencies you have in your application and what type they are. Whichever type of dependency you install, it's stored in the node_modules directory. The flag affects only the manifest file.  
 
-This separation of different types of dependencies is built into the npm command-line tool as well. If you specify the `--production` flag when you install a dependency, only `dependencies` will be installed. For example, this flag is used by CI/CD pipelines to ensure that only the dependencies needed to run the app are installed.
+This separation of different types of dependencies is built into the npm command-line tool as well. If you specify the `--production` flag when you install a dependency, only `dependencies` will be installed. For example, this flag is used by continuous integration and continuous deployment (CI/CD) pipelines to ensure that only the dependencies needed to run the app are installed.
 
 ### How to install a package
 
-You use the `npm install <dependency name>` command to install a normal dependency that's meant to be used as part of your application. The developer dependency is something that's not meant to be shipped to production. To install a developer dependency, add the `--save-dev` flag.
+You run the `npm install <dependency name>` command to install a normal dependency that's meant to be used as part of your application. The developer dependency is something that's not meant to be shipped to production. To install a developer dependency, add the `--save-dev` flag.
 
 There are also packages that you can install *globally*. These packages are usually not meant to be imported into your project. For that reason, many global packages are CLI tools. Some of these packages do allow themselves to be imported, like `http-server`.
 
@@ -118,5 +118,5 @@ The space argument becomes more important if you're building an SPA application 
 
 There are two ways to clean up dependencies you no longer need:
 
-- **Uninstall**. To uninstall a package, you use the `uninstall` command like so: `npm uninstall <name of dependency>`. This command will remove the package from the manifest file and from the node_modules folder.
+- **Uninstall**. To uninstall a package, you run the `uninstall` command like so: `npm uninstall <name of dependency>`. This command will remove the package from the manifest file and from the node_modules folder.
 - **Prune**. Or you can run the `prune` command like so: `npm prune`. Running this command will remove all dependencies in the node_modules folder that aren't listed as dependencies in the manifest file. This command is a good choice if you want to remove more than one dependency and you don't want to run the `uninstall` command for each dependency. To do so, remove entries from the `dependencies` or `devDependencies` section and then run the `npm prune` command.

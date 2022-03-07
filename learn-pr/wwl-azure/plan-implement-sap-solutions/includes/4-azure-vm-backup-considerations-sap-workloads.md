@@ -80,7 +80,7 @@ Assuming there is an XFS file system spanning four Azure virtual disks, the foll
 
 1. Freeze the file system (for example, use xfs_freeze)
 
-1.Create all necessary blob snapshots on Azure
+1. Create all necessary blob snapshots on Azure
 
 1. Unfreeze the file system
 

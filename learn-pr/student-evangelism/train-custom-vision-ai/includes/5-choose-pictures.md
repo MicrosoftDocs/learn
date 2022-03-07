@@ -24,9 +24,9 @@ Spend some time finding or taking images. Be creative! Take some photos with tra
 
 At this point in the module, it makes sense to have a brief discussion about ethics. As with any technology, ethics should *always* be at the forefront of what solutions you are building. Even if you are *just* doing an experiment or trying out something, you should be thinking of the implications of what you're doing and how it could affect others.
 
-Remember, Fei Fei built a rocket and flew to the moon to try to bring her family closer together.
+Remember, Fei Fei built a rocket and flew to the Moon to try to bring her family closer together.
 
-![Fei Fei sitting at the dinner table with her family during the Moon Festival.](../media/fei-fei-family.png)
+:::image type="content" source="../media/fei-fei-family.png" alt-text="Image that shows Fei Fei sitting at the dinner table with her family during the Moon Festival." border="false":::
 
 When you are choosing images, make sure they are representative of what the object is. Avoid bias and be inclusive. Being ethical and inclusive in computing practices is not about needing to solve every possible version of a problem. Instead, it's about appropriately representing the problem you are solving.
 

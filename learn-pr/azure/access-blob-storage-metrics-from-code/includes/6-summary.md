@@ -1,8 +1,8 @@
-In this module, you learned about two different types of APIs that you can use in order to create applications that access the metrics which Azure Storage accounts send to Azure Monitor when you use Blob storage:
+In this module, you learned about two different types of APIs that you can use to create applications that access the metrics, which Azure Storage accounts send to Azure Monitor when you use Blob storage:
 
-- The Azure Storage REST API is a web service that you can access through HTTP requests through port 80. In unit 3, you learned how to use the **curl** tool to send such requests from the Cloud Shell and view the results.
+- The Azure Storage REST API is a web service that you can access through HTTP requests through port 80. In unit 3, you learned how to use the **curl** tool to send such requests from the Cloud Shell, and view the results.
 
-- In unit 5, you learned how to use the Azure Storage .NET API to make a similar request. You can use this API to interact with Azure Monitor and access storage metrics for display in mobile apps, web applications, and many other types of custom project.
+- In unit 5, you learned how to use the Azure Storage .NET API to make a similar request. You can use this API to interact with Azure Monitor, and access storage metrics for display in mobile apps, web applications, and many other types of custom project.
 
 ## Clean up
 
@@ -15,8 +15,7 @@ It's important that you clean up any unused resources. You're charged for the co
 
 ## Learn More
 
-- [Azure Storage metrics in Azure Monitor](https://docs.microsoft.com/azure/storage/common/storage-metrics-in-azure-monitor)
+- [Azure Storage metrics in Azure Monitor](/azure/storage/common/storage-metrics-in-azure-monitor)
 - [Azure Monitor SDK](https://www.nuget.org/packages/Microsoft.Azure.Management.Monitor/)
-- [Azure Monitor REST API Reference](https://docs.microsoft.com/rest/api/monitor/)
-- [Azure Storage Metrics Migration](https://docs.microsoft.com/azure/storage/common/storage-metrics-migration)
-
+- [Azure Monitor REST API Reference](/rest/api/monitor/)
+- [Azure Storage Metrics Migration](/azure/storage/common/storage-metrics-migration)

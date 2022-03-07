@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-data-visualizations-power-bi.examine-data-connections
+title: Examine the Power BI data connections
+metadata:
+  title: Examine the Power BI data connections
+  description: "Examine the Power BI data connections"
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-azure-iot-data-sources.md)]

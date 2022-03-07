@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.write-advanced-transact-sql-queries
+metadata:
+  title: Write advanced Transact-SQL queries
+  description: Write advanced Transact-SQL queries
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write advanced Transact-SQL queries
+prerequisites: |
+  - Familiarity with working with tables of data
+  - Familiarity with Transact-SQL
+summary: |
+  Learn how to use advanced Transact-SQL features to fetch and transform data in your databases.
+iconUrl: /learn/achievements/transact-sql-write-queries.svg
+levels:
+- advanced
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+- database-administrator
+- developer
+- solution-architect
+- student
+products:
+- azure-sql-database
+- azure-sql-managed-instance
+- azure-sql-virtual-machines
+- azure-sqlserver-vm
+- sql-server
+modules:
+- learn.wwl.create-tables-views-temporary-objects
+- learn.wwl.combine-query-results-set-operators
+- learn.wwl.write-queries-that-use-window-functions
+- learn.wwl.transform-data-by-implementing-pivot-unpivot-rollup-cube
+trophy:
+  uid: learn.wwl.write-advanced-transact-sql-queries.trophy

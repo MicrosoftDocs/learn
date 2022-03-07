@@ -17,7 +17,7 @@ abstract: |
 iconUrl: /learn/achievements/build-internet-connected-windows-apps.svg
 prerequisites: |
  - A computer running the current release of Windows 10.
- - [Visual Studio 2017](https://docs.microsoft.com/visualstudio/productinfo/vs2017-system-requirements-vs) installed.
+ - [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) installed.
  - Basic knowledge of C# or a similar programming language.
 levels:
 - beginner

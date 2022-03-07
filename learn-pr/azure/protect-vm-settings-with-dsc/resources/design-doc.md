@@ -214,12 +214,12 @@ How did you solve the problem in the initial scenario with the knowledge learned
 
 ## Resources
 
-- [Azure Automation State Configuration Overview](https://docs.microsoft.com/en-us/azure/automation/automation-dsc-overview)
-- [Introduction to the Azure Desired State Configuration extension handler](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-overview)
+- [Azure Automation State Configuration Overview](/azure/automation/automation-dsc-overview)
+- [Introduction to the Azure Desired State Configuration extension handler](/azure/virtual-machines/extensions/dsc-overview)
 - [Windows IIS Server Configuration on GitHub](https://github.com/Microsoft/WindowsIISServerConfig)
 - [Pricing](https://azure.microsoft.com/en-us/pricing/details/automation/)
 
 ### Related modules
 
-- [Keep your VMs updated](https://docs.microsoft.com/en-us/learn/modules/keep-your-virtual-machines-updated/1-introduction) 
-- [Design for efficiency and operations in Azure](https://docs.microsoft.com/en-us/learn/modules/design-for-efficiency-and-operations-in-azure/4-use-automation-to-reduce-effort-and-error)
+- [Keep your VMs updated](/learn/modules/keep-your-virtual-machines-updated/1-introduction) 
+- [Design for efficiency and operations in Azure](/learn/modules/design-for-efficiency-and-operations-in-azure/4-use-automation-to-reduce-effort-and-error)

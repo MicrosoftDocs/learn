@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api.exercise-use-azure-monitor-to-analyze-account
+title: 'Exercise: Use Azure Monitor to analyze an Azure Cosmos DB SQL API account'
+metadata:
+  title: 'Exercise: Use Azure Monitor to analyze an Azure Cosmos DB SQL API account'
+  description: "Exercise: Use Azure Monitor to analyze an Azure Cosmos DB SQL API account"
+  ms.date: 01/12/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107593
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-use-azure-monitor-to-analyze-account.md)]

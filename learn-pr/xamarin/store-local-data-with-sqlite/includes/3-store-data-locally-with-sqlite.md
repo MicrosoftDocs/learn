@@ -8,6 +8,10 @@ SQLite is a lightweight cross-platform local database that's become an industry 
 
 The SQLite native libraries are built in to Android and iOS by default; however, the engine only supports a C/C++ API. This scenario isn't ideal for .NET developers, who want some way  for SQLite and .NET to interact.
 
+
+> [!NOTE]
+> If you wish to download SQLite.NET, you can find it here: https://www.nuget.org/packages/sqlite-net
+
 ## What is SQLite.NET?
 
 ![Illustration showing SQLite being accessed by your application through a third-party .NET API.](../media/3-dotnet-api.png)

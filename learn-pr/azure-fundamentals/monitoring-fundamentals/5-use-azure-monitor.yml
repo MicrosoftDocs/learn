@@ -5,8 +5,8 @@ metadata:
   title: Use Azure Monitor to identify the cause of intermittent website issues
   description: Analyze a scenario that requires insight and visibility into an applications logic that's running in the cloud.
   ms.date: 09/14/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: Randall-Knapp
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

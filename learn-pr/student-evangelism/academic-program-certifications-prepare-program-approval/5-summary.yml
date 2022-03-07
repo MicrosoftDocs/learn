@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-prepare-program-approval.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This unit summarizes what you've learned in this module.
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: |
+   [!include[](includes/5-summary.md)]

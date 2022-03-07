@@ -41,7 +41,7 @@ pfi_explainer = PFIExplainer(model = loan_model,
 
 ## Explaining global feature importance
 
-To retrieve global importance values for the features in your mode, you call the **explain_global()** method of your explainer to get a global explanation, and then use the **get_feature_importance_dict()** method to get a dictionary of the feature importance values. The following code example shows how to retrieve global feature importance:
+To retrieve global importance values for the features in your model, you call the **explain_global()** method of your explainer to get a global explanation, and then use the **get_feature_importance_dict()** method to get a dictionary of the feature importance values. The following code example shows how to retrieve global feature importance:
 
 ```python
 # MimicExplainer

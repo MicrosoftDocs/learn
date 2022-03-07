@@ -4,11 +4,10 @@ metadata:
   title: Write behavior for an activity
   description: "Learn how to add behavior to your Android app."
   ms.date: 04/17/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Write behavior for an activity
 durationInMinutes: 7
 content: |

@@ -6,9 +6,10 @@ metadata:
   description: Exercise in how to use Gatsby and understanding a sample project
   author: softchris
   ms.author: chnoring
-  ms.date: 05/08/2020
+  ms.date: 11/18/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 6
 content: |
   [!include[](includes/3-exercise-create-app.md)]

@@ -4,8 +4,8 @@ metadata:
   title: What is Azure AD B2B?
   description: What is Azure AD B2B?
   ms.date: 03/12/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: chrispine-chiedo
+  ms.author: cchiedo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is Azure AD B2B?
@@ -31,9 +31,9 @@ quiz:
     - content: Use unconditional access policies in Azure AD B2B.
       isCorrect: false
       explanation: There's no such thing as unconditional access policies in Azure.
-    - content: Use conditional access policies in Azure AD B2B.
+    - content: Use Conditional Access policies in Azure AD B2B.
       isCorrect: true
-      explanation: Conditional access policies offer further protection for your applications. You can ensure that your applications are only accessed when all conditions you set have been met.
+      explanation: Conditional Access policies offer further protection for your applications. You can ensure that your applications are only accessed when all conditions you set have been met.
     - content: Use criteria access policies in Azure AD B2B.
       isCorrect: false
       explanation: There's no such thing as criteria access policies in Azure.

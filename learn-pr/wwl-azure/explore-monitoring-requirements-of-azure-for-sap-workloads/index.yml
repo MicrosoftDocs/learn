@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads
+metadata:
+  title: Explore monitoring requirements of Azure for SAP workloads
+  description: "This module covers monitoring of data from several Azure systems and tools to support SAP on Azure workloads. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 01/28/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore monitoring requirements of Azure for SAP workloads
+summary: This module covers monitoring of data from several Azure systems and tools to support SAP on Azure workloads.
+abstract: |
+  After completing this module, you will be able to:
+  - Examine monitoring, logging, and alerting services.
+  - Explore Azure Monitor and Log Analytics.
+  - Explore operating system and workload updates for Azure virtual machines.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/1-explore-monitoring-requirements-of-azure-for-sap-workloads.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.introduction
+- learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.explore-monitoring-requirements-azure-for-sap-workloads
+- learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.examine-monitoring,-logging,-alerting-services
+- learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.explore-azure-vm-monitoring-considerations
+- learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.troubleshoot-azure-enhanced-monitoring
+- learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.explore-azure-monitor-log-analytics
+- learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.explore-sap-hana-alerts
+- learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.examine-diagnostic-tools
+- learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.explore-operating-system-workload-updates-for-azure-virtual-machines
+- learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.knowledge-check
+- learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.summary
+badge:
+  uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.badge

@@ -24,7 +24,7 @@ Start by deploying the staging pipeline.
 
 1. In GitHub, go to your fork of the repository.
 
-1. Go to the **.github/workflows** directory in the repository, and then open the **build-latest.yml** file. 
+1. Go to the **.github/workflows** directory in the repository, and then open the **build-latest.yml** file.
 
    The file should look like this example:
 
@@ -149,7 +149,7 @@ In this exercise, you use Helm version `v3.3.1`. Azure has a built action that d
       - name: Azure Kubernetes set context
         uses: Azure/aks-set-context@v1
         with:
-          # Azure credentials, i.e., output of `az ad sp create-for-rbac --sdk-auth`
+          # Azure credentials, i.e., output of `az ad sp create-for-rbac --scopes /subscriptions/<SUBSCRIPTION-ID> --role Contributor --sdk-auth`
           creds: # default is
           # Resource group name
           resource-group: # optional, default is
@@ -162,7 +162,7 @@ In this exercise, you use Helm version `v3.3.1`. Azure has a built action that d
 Next, you use an action that uses the Azure CLI to get the AKS credentials. Then, you use Kubectl to deploy your workloads to the cluster.
 
 1. Change the `name` key to `Get AKS Credentials`.
-    
+
 1. Change the `resource-group` key to the name of the resource group that contains your AKS resource. You can get this information by running the following command in Cloud Shell:
 
     ```azurecli-interactive
@@ -170,7 +170,7 @@ Next, you use an action that uses the Azure CLI to get the AKS credentials. Then
     ```
 
 1. In the `cluster-name` key, enter the cluster name. The name of the AKS cluster in this exercise is fixed as `contoso-video`.
-   
+
 1. In the `creds` key, define a secret called `AZURE_CREDENTIALS`. The value of this key `${{ secrets.AZURE_CREDENTIALS }}`.
 
     The final YAML should look like this example:
@@ -218,7 +218,7 @@ Next, you use an action that uses the Azure CLI to get the AKS credentials. Then
               cluster-name: contoso-video
     ```
 
-  
+
 ### Create a secret
 
 You've set the credential secret, but the secret isn't created yet. Let's create it.
@@ -228,7 +228,7 @@ You've set the credential secret, but the secret isn't created yet. Let's create
 1. Create a new secret called `AZURE_CREDENTIALS`. The value of this secret will be the output of the following command, a JSON object:
 
     ```azurecli-interactive
-    az ad sp create-for-rbac --sdk-auth
+    az ad sp create-for-rbac --role Contributor --scopes /subscriptions/<SUBSCRIPTION-ID> --sdk-auth
     ```
 
 1. Copy the output and paste it in the secret value. Then, save the secret and close the tab.
@@ -237,7 +237,7 @@ You've set the credential secret, but the secret isn't created yet. Let's create
 
 Now, you have access to your cluster and you have Helm installed. The next step is to deploy the application. For this step, you use the command instructions that are native to GitHub Actions.
 
-1.  In the YAML file, below the latest step, create a new `- name:` key. Name the key `Run Helm Deploy`. Then, below this key, create another key called `run`. 
+1.  In the YAML file, below the latest step, create a new `- name:` key. Name the key `Run Helm Deploy`. Then, below this key, create another key called `run`.
 
     The YAML should look like this example:
 
@@ -363,7 +363,7 @@ With the staging workflow created, the next step is to create the production wor
 
 1. In the **Code** view on the GitHub website, go to the **.github/workflows** directory. Select the **build-production.yaml** file and edit it.
 
-1. Copy the `deploy` step from the previous pipeline and paste it below the last line of the YAML file. 
+1. Copy the `deploy` step from the previous pipeline and paste it below the last line of the YAML file.
 
    The result should look like this example:
 
@@ -430,7 +430,7 @@ With the staging workflow created, the next step is to create the production wor
 
 1. Change the `deploy` step to deploy to the production namespace. In the `Run Helm Deploy` step, change the `--namespace` flag from `staging` to `production`.
 
-1. At the end of the Help command, add a new `--set image.tag=${GITHUB_REF##*/}`.
+1. At the end of the Helm command, add a new `--set image.tag=${GITHUB_REF##*/}`.
 
     Here, you're using a Bash feature called *parameter expansion*. This feature is defined by the syntax `${ENV##<wildcard><character>}`. It returns the last occurrence of the string after `character`.
 

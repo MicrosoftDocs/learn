@@ -5,8 +5,8 @@ metadata:
   description: Learn how to monitor and control your Azure spending and optimize the use of Azure resources.
   brand: azure
   ms.date: 03/23/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: bandersmsft
+  ms.author: banders
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Control Azure spending and manage bills with Azure Cost Management + Billing
@@ -28,8 +28,10 @@ products:
 - azure-advisor
 modules:
 - learn.azure-well-architected-cost-optimization
-- learn.predict-costs-and-optimize-spending
+- learn.azure.plan-manage-azure-costs
 - learn.azure.analyze-costs-create-budgets-azure-cost-management
 - learn.save-money-with-azure-reserved-instances
+- learn.optimize-costs-data-analysis-powerbi
+- learn.manage-costs-partner-cost-management
 trophy:
   uid: learn.control-spending-manage-bills.trophy

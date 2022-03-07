@@ -69,7 +69,7 @@ Run the following command to open the server's firewall:
 az mysql server firewall-rule create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name $AZ_DATABASE_NAME-database-allow-local-ip \
-    --server $AZ_DATABASE_NAME \
+    --server-name $AZ_DATABASE_NAME \
     --start-ip-address $AZ_LOCAL_IP_ADDRESS \
     --end-ip-address $AZ_LOCAL_IP_ADDRESS \
     | jq
@@ -81,7 +81,7 @@ Run the following command to allow firewall access from Azure resources:
 az mysql server firewall-rule create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name allAzureIPs \
-    --server $AZ_DATABASE_NAME \
+    --server-name $AZ_DATABASE_NAME \
     --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0 \
     | jq
 ```

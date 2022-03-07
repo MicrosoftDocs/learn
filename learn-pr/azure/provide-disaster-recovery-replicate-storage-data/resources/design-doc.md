@@ -105,7 +105,7 @@ Identify the subtasks of *module title*
   - What are they
   - When to use what
   - How they're configured
-  - See module/reuse content in: [Make your application storage highly available with read-access geo-redundant storage](https://docs.microsoft.com/learn/modules/ha-application-storage-with-grs/)
+  - See module/reuse content in: [Make your application storage highly available with read-access geo-redundant storage](/learn/modules/ha-application-storage-with-grs/)
   - Cover new options (currently in preview): GZRS and RA-GZRS 
 - Exercise: Set up storage account and change replication mode
   - Create storage account pick ZRS
@@ -122,19 +122,19 @@ Identify the subtasks of *module title*
   - How to track outages
 - Exercise: Initiate an account failover
   - Check last sync time (to determine amount of data loss)
-  - Fail over: For steps, see [Initiate a storage account failover (preview)](https://docs.microsoft.com/en-us/azure/storage/common/storage-initiate-account-failover)
+  - Fail over: For steps, see [Initiate a storage account failover (preview)](/azure/storage/common/storage-initiate-account-failover)
   - Most likely customers will want to failover programmatically. But portal has more info, so thinking we should do exercise in portal.
   - Verify it failed over. Check the data.
 
 ## Resources
 
-- [Make your application storage highly available with read-access geo-redundant storage](https://docs.microsoft.com/learn/modules/ha-application-storage-with-grs/)
-- [Azure Storage redundancy](https://docs.microsoft.com/azure/storage/common/storage-redundancy)  
-- [Build highly available Azure Storage applications with geo-zone-redundant storage (GZRS)](https://docs.microsoft.com/azure/storage/common/storage-redundancy-gzrs?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
-- [Disaster recovery and storage account failover (preview) in Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-disaster-recovery-guidance?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)  
-- [Initiate a storage account failover (preview)](https://docs.microsoft.com/azure/storage/common/storage-initiate-account-failover#azure-portal)
-- [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal)
-- [Quickstart: Upload, download, and list blobs with the Azure portal](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal)
+- [Make your application storage highly available with read-access geo-redundant storage](/learn/modules/ha-application-storage-with-grs/)
+- [Azure Storage redundancy](/azure/storage/common/storage-redundancy)  
+- [Build highly available Azure Storage applications with geo-zone-redundant storage (GZRS)](/azure/storage/common/storage-redundancy-gzrs?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+- [Disaster recovery and storage account failover (preview) in Azure Storage](/azure/storage/common/storage-disaster-recovery-guidance?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)  
+- [Initiate a storage account failover (preview)](/azure/storage/common/storage-initiate-account-failover#azure-portal)
+- [Create a storage account](/azure/storage/common/storage-quickstart-create-account?tabs=azure-portal)
+- [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal)
 
 
 ## IMPORTANT

@@ -59,7 +59,7 @@ If your immediate concern is migrating specific workloads and applications to Az
 
 ### Virtual machine sizes and disks
 
-:::image type="content" source="../media/sizes.png" alt-text="Screenshot of the Azure portal displaying the Select a VM Size dialog box":::
+:::image type="content" source="../media/sizes.png" alt-text="Screenshot of the Azure portal displaying the Select a VM Size dialog box.":::
 
 A VM's performance characteristics and pricing are determined by its *size*, which is selected independently from its image. You select a VM's size when you create it, and you can modify it at any time. Azure offers a wide variety of VM sizes, across seven different optimization categories tuned for different kinds of workloads:
 
@@ -109,14 +109,14 @@ You can fully automate Azure Resource Manager with scripts and template files fo
 
 ### Pricing
 
-|                                           |                                                                                                                                                                   |
-|-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Pay-as-you-go**                         | VM usage of compute resources is billed by the second, with no commitments or up-front payments.                                                                  |
-| **Reserved instances**                    | Purchase compute capacity for one to three years in advance at a significant savings. For stable workloads that allow you to plan your consumption ahead of time. |
-| **Spot pricing**                          | Power workloads that can tolerate interruptions and delays by taking advantage of unused compute capacity at deep discounts.                                      |
-| **Azure reservations for software plans** | Pre-purchase one-year or three-year support agreement for Red Hat Enterprise Linux, or SUSE Linux Enterprise Server, for cost savings.                              |
-| **Bring your own license/subscription**   | Bring your own Linux support license from your existing Red Hat or SUSE investment. See the links in the Summary unit for more information.                       |
-| **Enterprise Agreement**                  | Use an existing Enterprise Agreement to purchase Red Hat Enterprise Linux and SUSE Linux Enterprise Server licenses.                                              |
+| Service | Description |
+|---|---|
+| **Pay-as-you-go** | VM usage of compute resources is billed by the second, with no commitments or up-front payments. |
+| **Reserved instances** | Purchase compute capacity for one to three years in advance at a significant savings. For stable workloads that allow you to plan your consumption ahead of time. |
+| **Spot pricing** | Power workloads that can tolerate interruptions and delays by taking advantage of unused compute capacity at deep discounts. |
+| **Azure reservations for software plans** | Pre-purchase one-year or three-year support agreement for Red Hat Enterprise Linux, or SUSE Linux Enterprise Server, for cost savings. |
+| **Bring your own license/subscription**  | Bring your own Linux support license from your existing Red Hat or SUSE investment. See the links in the Summary unit for more information. |
+| **Enterprise Agreement** | Use an existing Enterprise Agreement to purchase Red Hat Enterprise Linux and SUSE Linux Enterprise Server licenses.                                              |
 
 Additional cost factors for IaaS workloads include infrastructure and service resources, and consumed bandwidth. The Azure pricing calculator can help you to determine the total costs for your workload.
 

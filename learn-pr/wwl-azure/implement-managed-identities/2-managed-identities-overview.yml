@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-managed-identities.explore
+title: Explore managed identities
+metadata:
+  title: Explore managed identities
+  description: "Explore managed identities"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-managed-identities-overview.md)]

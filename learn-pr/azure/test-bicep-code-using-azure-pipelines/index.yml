@@ -1,0 +1,67 @@
+### YamlMime:Module
+uid: learn.azure.test-bicep-code-using-azure-pipelines
+metadata:
+  moduleType: standard
+  title: Test your Bicep code by using Azure Pipelines
+  description: Build a deployment pipeline for Bicep infrastructure as code templates. Lint, validate, preview, and test your Bicep code by using Azure DevOps and Azure Pipelines.
+  ms.date: 09/15/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Test your Bicep code by using Azure Pipelines
+summary: |
+  Validate and test your Bicep code in your deployment pipeline. You'll use linting, preflight validation, and the what-if operation to validate your Azure changes before you deploy, and you'll test your resources after each deployment.
+abstract: |
+  After completing this module, you'll be able to:
+    - Add Bicep code linting during continuous integration
+    - Add preflight deployment validation during build or release stages
+    - Add what-if checks, including manual approval steps
+    - Verify the configuration of the deployed environment
+prerequisites: |
+  You should be familiar with using:
+
+  - Bicep, including creating and deploying basic files.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+  - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
+  - Basic YAML pipelines in Azure Pipelines, including service connections.
+  
+  To work through the exercises in the module, you'll need:
+
+  - An Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
+  - An Azure DevOps organization and account.
+  
+  You'll also need the following installed locally:
+  
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+  - The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines)
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
+  - [Git](https://git-scm.com/download?azure-portal=true)
+iconUrl: /learn/achievements/bicep/test-bicep-code-using-azure-pipelines.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - developer
+  - administrator
+languages:
+  - bicep
+products:
+  - azure-resource-manager
+  - azure-devops
+  - azure-pipelines
+units:
+- learn.azure.test-bicep-code-using-azure-pipelines.introduction
+- learn.azure.test-bicep-code-using-azure-pipelines.understand-pipeline-stages
+- learn.azure.test-bicep-code-using-azure-pipelines.lint-validate-bicep-code
+- learn.azure.test-bicep-code-using-azure-pipelines.exercise-set-up-environment
+- learn.azure.test-bicep-code-using-azure-pipelines.exercise-add-lint-validate-stages-pipeline
+- learn.azure.test-bicep-code-using-azure-pipelines.preview-approve-deployment
+- learn.azure.test-bicep-code-using-azure-pipelines.exercise-add-preview-stage-pipeline
+- learn.azure.test-bicep-code-using-azure-pipelines.test-resources-after-deployment
+- learn.azure.test-bicep-code-using-azure-pipelines.exercise-add-test-stage-pipeline
+- learn.azure.test-bicep-code-using-azure-pipelines.knowledge-check
+- learn.azure.test-bicep-code-using-azure-pipelines.summary
+badge:
+  uid: learn.azure.test-bicep-code-using-azure-pipelines.badge

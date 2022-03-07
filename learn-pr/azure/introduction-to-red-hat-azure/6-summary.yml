@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-red-hat-azure.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: A summary of the module, restating its goal and reviewing its contents.
+  ms.date: 06/15/2021
+  author: yenchiho
+  ms.author: yenchiho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

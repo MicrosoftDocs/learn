@@ -119,7 +119,7 @@ Identify the subtasks of *Migrate your relational data stored in SQL Server to A
 
 1. **Exercise - Migrate a database with downtime**
 
-    Source exercise steps from [Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *offline* using DMS](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)
+    Source exercise steps from [Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *offline* using DMS](/azure/dms/tutorial-sql-server-to-azure-sql)
 
 1. **Summary**
 
@@ -133,11 +133,11 @@ Much of the detail in unit 3 is based on the graphic from https://datamigration.
 
 [This template](https://github.com/Azure/azure-quickstart-templates/tree/master/101-azure-database-migration-service) has examples of setting up several of the resources necessary for this exercise, though shouldn't be used on as it's currently presented. We may need to use the SQL2014SP2/WS2012R2 marketplace image to ensure that the deployment happens in a timely manner. This took about 8 minutes in a trial run in my own subscription.
 
-Content is based on the [SQL Server database migration to Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-migrate) article.
+Content is based on the [SQL Server database migration to Azure SQL Database](/azure/sql-database/sql-database-single-database-migrate) article.
 
-Steps for creating a migration assessment can be found [here](https://docs.microsoft.com/en-us/sql/dma/dma-assesssqlonprem?view=sql-server-ver15).
+Steps for creating a migration assessment can be found [here](/sql/dma/dma-assesssqlonprem?view=sql-server-ver15).
 
 Detailed tutorials to source the exercise steps from:
 
-- [Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *offline* using DMS](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql)
-- [Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *online* using DMS](https://docs.microsoft.com/azure/dms/tutorial-sql-server-azure-sql-online)
+- [Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *offline* using DMS](/azure/dms/tutorial-sql-server-to-azure-sql)
+- [Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *online* using DMS](/azure/dms/tutorial-sql-server-azure-sql-online)

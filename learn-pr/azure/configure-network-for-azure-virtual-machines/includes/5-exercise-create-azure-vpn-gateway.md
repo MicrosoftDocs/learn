@@ -1,4 +1,4 @@
-You want to ensure that you can connect clients or sites within your environment into Azure using encrypted tunnels across the public Internet. In this unit, you'll create a point-to-site VPN gateway, and then connect to that gateway from your client computer. You'll use native Azure certificate authentication connections for security.
+You want to ensure that you can connect clients or sites within your environment into Azure using encrypted tunnels across the public internet. In this unit, you'll create a point-to-site VPN gateway, and then connect to that gateway from your client computer. You'll use native Azure certificate authentication connections for security.
 
 You will carry out the following process:
 
@@ -15,7 +15,9 @@ You will carry out the following process:
 To complete this module, use Azure PowerShell from your local Windows 10 computer.
 
 1. Open a new PowerShell session on your local Windows 10 computer where you have the Azure PowerShell module installed.
-1. Sign in to Azure by using the PowerShell cmdlet `Connect-AzAccount`.
+
+1. Sign in to Azure by running the PowerShell cmdlet `Connect-AzAccount`.
+
 1. Set up variables you'll use to create a virtual network. Copy and paste in the following variables into PowerShell.
 
 ```PowerShell
@@ -62,7 +64,7 @@ $GWIPconfName = "gwipconf"
 
     ```PowerShell
     $vnet = Get-AzVirtualNetwork -Name $VNetName -ResourceGroupName $ResourceGroup
-    $subnet = Get-AzVirtualNetworkSubnetConfig -Name "GatewaySubnet" -VirtualNetwork $vnet
+    $subnet = Get-AzVirtualNetworkSubnetConfig -Name $GWSubName -VirtualNetwork $vnet
     ```
 
 1. Run the following command to request a dynamically assigned public IP address.
@@ -81,7 +83,7 @@ When creating this VPN gateway:
 
 Note that this part of the exercise can take up to 45 minutes to complete.
 
-1. To create the VPN gateway, run the following command and press Enter.
+1. To create the VPN gateway, run the following command, and press <kbd>Enter</kbd>.
 
     ```PowerShell
     New-AzVirtualNetworkGateway -Name $GWName -ResourceGroupName $ResourceGroup `
@@ -132,29 +134,30 @@ With our certificates generated, we need to export our root certificate's public
 1. Run `certmgr` from PowerShell to open the Certificate Manager.
 
 1. Go to **Personal** > **Certificates**.
-1. Right-click the **P2SRootCert** certificate in the list and select **All tasks** > **Export...**.
 
-1. In the Certificate Export Wizard, click **Next**.
+1. Right-click the **P2SRootCert** certificate in the list, and select **All tasks** > **Export**.
 
-1. Ensure that **No, do not export the private key** is selected, and then click **Next**.
+1. In the Certificate Export Wizard, select **Next**.
 
-1. On the **Export File Format** page, ensure that **Base-64 encoded X.509 (.CER)** is selected, and then click **Next**.
+1. Ensure that **No, do not export the private key** is selected, and then select **Next**.
 
-1. In the **File to Export** page, under **File name**, navigate to a location you'll remember and save the file as **P2SRootCert.cer**, and then click Next.
+1. On the **Export File Format** page, ensure that **Base-64 encoded X.509 (.CER)** is selected, and then select **Next**.
 
-1. On the **Completing the Certificate Export Wizard** page, click **Finish**.
+1. In the **File to Export** page, under **File name**, navigate to a location you'll remember, and save the file as **P2SRootCert.cer**, and then select **Next**.
 
-1. On the **Certificate Export Wizard** message box, click **OK**.
+1. On the **Completing the Certificate Export Wizard** page, select **Finish**.
+
+1. On the **Certificate Export Wizard** message box, select **OK**.
 
 ## Upload the root certificate public key information
 
-1. In the PowerShell window, run the following command to declare a variable for the certificate name:
+1. In the PowerShell window, run the following command to declare a variable for the certificate name.
 
     ```PowerShell
     $P2SRootCertName = "P2SRootCert.cer"
     ```
 
-1. Replace the `<cert-path>` placeholder with the export location of your root certificate and run the following command:
+1. Replace the `<cert-path>` placeholder with the export location of your root certificate, and run the following command.
 
     ```PowerShell
     $filePathForCert = "<cert-path>\P2SRootCert.cer"
@@ -180,7 +183,7 @@ With our certificates generated, we need to export our root certificate's public
     $profile.VPNProfileSASUrl
     ```
 
-1. Copy the URL returned in the output from this command and paste it into your browser. Your browser should start downloading a .ZIP file. Extract the archive contents and put them in a suitable location.
+1. Copy the URL returned in the output from this command, and paste it into your browser. Your browser should start downloading a .ZIP file. Extract the archive contents and put them in a suitable location.
 
    Some browsers will initially attempt to block downloading this ZIP file as a dangerous download. You will need to override this in your browser to be able to extract the archive contents.
 
@@ -188,29 +191,29 @@ With our certificates generated, we need to export our root certificate's public
 
     If you want to configure a VPN on a non-Windows machine, you can use the certificate and settings files from the **Generic** folder.
 
-1. Double-click on the **VpnClientSetup{architecture}.exe** file, with `{architecture}` reflecting your architecture.
+1. Double-click the **VpnClientSetup{architecture}.exe** file, with `{architecture}` reflecting your architecture.
 
-1. In the **Windows protected your PC** screen, click **More info**, and then click **Run anyway**.
+1. In the **Windows protected your PC** screen, select **More info**, and then select **Run anyway**.
 
-1. In the **User Account Control** dialog box, click **Yes**.
+1. In the **User Account Control** dialog box, select **Yes**.
 
-1. In the **VNetData** dialog box, click **Yes**.
+1. In the **VNetData** dialog box, select **Yes**.
 
 ## Connect to Azure
 
-1. Press the Windows key, type **Settings** and press Enter.
+1. Press the <kbd>Windows</kbd> key, enter **Settings**, and press kbd>Enter</kbd>.
 
-1. In the **Settings** window, click **Network and Internet**.
+1. In the **Settings** window, select **Network and Internet**.
 
-1. In the left-hand pane, click **VPN**.
+1. In the left-hand pane, select **VPN**.
 
-1. In the right-hand pane, click **VNetData**, and then click **Connect**.
+1. In the right-hand pane, select **VNetData**, and then select **Connect**.
 
-1. In the VNetData window, click **Connect**.
+1. In the VNetData window, select **Connect**.
 
-1. In the next VNetData window, click **Continue**.
+1. In the next VNetData window, select **Continue**.
 
-1. In the **User Account Control** message box, click **Yes**.
+1. In the **User Account Control** message box, select **Yes**.
 
  If these steps do not work, you may need to restart your computer.
 
@@ -224,4 +227,4 @@ With our certificates generated, we need to export our root certificate's public
 
 1. You have successfully made a connection to the Azure VPN gateway.
 
-You just set up a VPN gateway, allowing you to make an encrypted client connection to a virtual network in Azure. This approach is great with client computers and smaller site-to-site connections.
+You just set up a VPN gateway, enabling you to make an encrypted client connection to a virtual network in Azure. This approach is great with client computers and smaller site-to-site connections.

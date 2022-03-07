@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-event-hubs.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/17/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following Event Hubs concepts represents an ordered sequence of events that is held in an Event Hub?"
+    choices:
+    - content: "Consumer group"
+      isCorrect: false
+      explanation: "That's incorrect. A consumer group is a view of an entire Event hub."
+    - content: "Partition"
+      isCorrect: true
+      explanation: "That's correct. A partition is an ordered sequence of events that is held in an Event Hub."
+    - content: "Event Hub producer"
+      isCorrect: false
+      explanation: "That's incorrect. An Event Hub producer is a type of client."
+  - content: "Which of the following represents when an event processor marks or commits the position of the last successfully processed event within a partition?"
+    choices:
+    - content: "Checkpointing"
+      isCorrect: true
+      explanation: "That's correct. Checkpointing is a process by which an event processor marks or commits the position of the last successfully processed event within a partition."
+    - content: "Scale"
+      isCorrect: false
+      explanation: "That's incorrect. Scale covers the number of consumers and taking ownership of reading partitions."
+    - content: "Load balance"
+      isCorrect: false
+      explanation: "That's incorrect. Increase or reduce the consumers dynamically. The pool of consumers can rebalance the number of partitions they own, to share the load with the newly added consumers."

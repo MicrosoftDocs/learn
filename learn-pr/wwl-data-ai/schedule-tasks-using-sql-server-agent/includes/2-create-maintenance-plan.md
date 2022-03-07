@@ -9,7 +9,7 @@ You should be aware of the importance of backups, as well as index and statistic
 
 ## Best practices for maintenance plans
 
-In addition to allowing you to performance database maintenance, maintenance plans provide options to allow you to prune data from the `msdb` database, which acts as the data store for the SQL Server Agent. Maintenance plans also allow you to specify that older database backups should be removed from disk. Removing old backup files helps your SQL Server by reducing the size of your backup volume and helps manage the size of the `msdb` database. Ensure that your backup retention period is longer than your consistency check window. This means if you run a consistency check weekly, you should retain eight days of backups. (Note: The backup operation will not detect corruption in a database, so it is possible to have corruption within a backup file). Maintenance plan activities are scheduled as SQL Server Agent jobs for execution.
+In addition to allowing you to perform database maintenance, maintenance plans provide options to allow you to prune data from the `msdb` database, which acts as the data store for the SQL Server Agent. Maintenance plans also allow you to specify that older database backups should be removed from disk. Removing old backup files helps your SQL Server by reducing the size of your backup volume and helps manage the size of the `msdb` database. Ensure that your backup retention period is longer than your consistency check window. This means if you run a consistency check weekly, you should retain eight days of backups. (Note: The backup operation will not detect corruption in a database, so it is possible to have corruption within a backup file). Maintenance plan activities are scheduled as SQL Server Agent jobs for execution.
 
 ## Creating a maintenance plan
 
@@ -46,7 +46,7 @@ The image above shows the maintenance tasks addition screen. This is where you c
 
 **Update Statistics** - This task updates the column and index statistics that are used by SQL Server to build query execution plans. It is important that the statistics accurately reflect the data stored in tables so that the query optimizer can make the best decisions in building execution plans. This task allows you to choose which tables and indexes are scanned, and the percentage or number of rows scanned. The default sampling rate is acceptable for most objects, though you may wish to capture more detailed statistics for specific tables.
 
-**Cleanup History** - This task deletes history of backup and restore operations from the `msdb` database as well the history of SQL Server agent jobs. This task is used to manage the size of the `msdb` database.
+**Cleanup History** - This task deletes history of backup and restore operations from the `msdb` database, as well as the history of SQL Server agent jobs. This task is used to manage the size of the `msdb` database.
 
 **Execute SQL Server Agent Job** - This task is used to execute a user-defined SQL Server Agent job.
 

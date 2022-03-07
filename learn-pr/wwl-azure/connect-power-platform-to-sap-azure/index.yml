@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.connect-power-platform-to-sap-azure
+metadata:
+  title: Connect Power Platform to SAP on Azure
+  description: "Connect Power Platform to SAP on Azure"
+  ms.date: 04/12/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect Power Platform to SAP on Azure
+summary: After this module you will be able to Connect Power BI Desktop to SAP HANA on a Windows computer and connect Power Automate and Power Apps to SAP systems.
+abstract: |
+  - Describe the technologies and conceptual layers that allow Power Platform integration with SAP, including the On-premises data gateway.
+  - Connect Power BI Desktop to SAP HANA on a Windows computer
+  - Connect Power Automate and Power Apps to SAP systems
+  - Describe and implement Microsoft Power Platform security and management policies, and monitor users and developers
+prerequisites: |
+  Basic understanding of the Microsoft Power Platform. AZ-104 certification or equivalent knowledge. Knowledge of SAP products such as SAP HANA or SAP NetWeaver.
+iconUrl: /learn/achievements/azure-sap-connect-power-platform.svg
+levels:
+- advanced
+roles:
+- administrator
+- functional-consultant
+products:
+- azure
+- power-bi
+- power-platform
+units:
+- learn.wwl.connect-power-platform-to-sap-azure.introduction
+- learn.wwl.connect-power-platform-to-sap-azure.concepts
+- learn.wwl.connect-power-platform-to-sap-azure.integration-with-sap
+- learn.wwl.connect-power-platform-to-sap-azure.connect-power-bi-systems
+- learn.wwl.connect-power-platform-to-sap-azure.connect-power-automate-power-apps-systems
+- learn.wwl.connect-power-platform-to-sap-azure.security-management
+- learn.wwl.connect-power-platform-to-sap-azure.knowledge-check
+- learn.wwl.connect-power-platform-to-sap-azure.summary
+badge:
+  uid: learn.wwl.connect-power-platform-to-sap-azure.badge

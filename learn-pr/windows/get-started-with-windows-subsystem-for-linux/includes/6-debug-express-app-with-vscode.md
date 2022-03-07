@@ -10,7 +10,7 @@ The built-in IntelliSense feature provides code completion, parameter info, memb
 
 2) Open the `app.js` file from your Express project and hover over the word `express` on the line `var app = express();`. An IntelliSense pop-up window will point out that this function creates an Express application.
 
-   ![IntelliSense pop-up explaining the Express function](../media/debug-intellisense.png)
+   ![IntelliSense pop-up explaining the Express function.](../media/debug-intellisense.png)
 
 ## Configure your project for debugging with a launch.json file
 
@@ -18,11 +18,11 @@ To begin debugging your Express app, you first need to create a debugger configu
 
 1) Select the **Debug** icon in the Visual Studio Code Activity Bar (on the left side) and then select the **Configure** icon (the gear) at the top of the Debug view. (Next to **No Configurations**, there should be a red dot indicating there is no configuration set up yet.) This will create a `launch.json` file inside a `.vscode` folder in the root directory of your project. (This file will probably be located at `./HelloWorld/.vscode/launch.json`.)
 
-    ![Debug and Configure icons in Visual Studio Code](../media/vscode-debug-window1.png)
+    ![Debug and Configure icons in Visual Studio Code.](../media/vscode-debug-window1.png)
 
 2) To start debugging, select **Start Debugging** or F5. Open the Debug Console window (Ctrl+Shift+Y) to view debug information. This window should now report that a debugger is attached.
 
-   ![Debug Console showing attached debugger](../media/launch-debug.png)
+   ![Debug Console showing attached debugger.](../media/launch-debug.png)
 
 3) Stop debugging. (Select Shift+F5 or the stop button in the menu.)
 
@@ -36,7 +36,7 @@ To begin debugging your Express app, you first need to create a debugger configu
    var platform = ["Linux", "Windows", "Unix/MacOS"];
    ```
 
-   ![Define platform variable in index.js](../media/debug-set-variable.png)
+   ![Define platform variable in index.js.](../media/debug-set-variable.png)
 
 6) Use the following code to change the title that the router displays. We want it to use variable 1 from our array:
 
@@ -53,11 +53,11 @@ To begin debugging your Express app, you first need to create a debugger configu
    console.log("You're running on: ", process.platform);
    ```
 
-   ![Change title and report platform with console log](../media/debug-console-log.png)
+   ![Change title and report platform with console log.](../media/debug-console-log.png)
 
 8) Save your changes, and then enter `npm start` in your terminal window. This will start your Express app. Open a browser and go to **localhost:3000** to see the home page of your running app.
 
-   ![Express app home page](../media/debug-mistake.png)
+   ![Express app home page.](../media/debug-mistake.png)
 
    Oops! You can see that the console log tells us that we're running on Linux, but we've displayed that we're running on Windows with our code. Let's debug this and figure out what went wrong!
 
@@ -73,7 +73,7 @@ To begin debugging your Express app, you first need to create a debugger configu
 
 12) Run the debugger (F5). You'll see that the Debug Console window says the `platform` array contains **Windows, Unix/MacOS, undefined**.
 
-    ![Debug with a console log](../media/debug-mistake2.png)
+    ![Debug with a console log.](../media/debug-mistake2.png)
 
     We've found our bug! JavaScript starts arrays at 0. We assumed that item 1 in our array list was Linux. This bug explains why our web app title was listed as Windows instead.  
 
@@ -85,6 +85,6 @@ To begin debugging your Express app, you first need to create a debugger configu
 
 14) Run the app again from the terminal by using `npm start`. Open your browser and go to **localhost:3000**. (Refresh the browser if it's still open from before.) Now you should see the title of your web app update to **Linux**. Hurray!
 
-    ![Express app with bug fixed](../media/debug-mistake-fixed.png)
+    ![Express app with bug fixed.](../media/debug-mistake-fixed.png)
 
 You've successfully debugged a Node.js Express app running in a Linux Ubuntu distribution with Visual Studio Code on your Windows computer!

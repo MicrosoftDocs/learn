@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.plan-sap-hana-azure-large-instances-deployments
+metadata:
+  title: Plan SAP HANA on Azure (Large Instances) deployments
+  description: "This module covers deploying SAP HANA on Azure (Large Instances) using Azure resources that include virtual machines, virtual networks, storage accounts, and Azure AD. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan SAP HANA on Azure (Large Instances) deployments
+summary: Deploy SAP HANA on Azure (Large Instances) using Azure resources that include virtual machines, virtual networks, storage accounts, and Azure AD.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore SAP HANA on Azure (Large Instances) IaaS considerations.
+  - Examine SAP HANA on Azure (Large Instances) single and multiple SAP systems.
+  - Explore SAP HANA on Azure (Large Instances) supported scenarios.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/sap-hana-deployment.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.plan-sap-hana-azure-large-instances-deployments.introduction
+- learn.wwl.plan-sap-hana-azure-large-instances-deployments.explore-compute-considerations
+- learn.wwl.plan-sap-hana-azure-large-instances-deployments.examine-storage-considerations
+- learn.wwl.plan-sap-hana-azure-large-instances-deployments.examine-networking-considerations
+- learn.wwl.plan-sap-hana-azure-large-instances-deployments.explore-expressroute-fastpath
+- learn.wwl.plan-sap-hana-azure-large-instances-deployments.examine-single-multiple-sap-systems
+- learn.wwl.plan-sap-hana-azure-large-instances-deployments.explore-routing-azure
+- learn.wwl.plan-sap-hana-azure-large-instances-deployments.explore-supported-scenarios
+- learn.wwl.plan-sap-hana-azure-large-instances-deployments.knowledge-check
+- learn.wwl.plan-sap-hana-azure-large-instances-deployments.summary
+badge:
+  uid: learn.wwl.plan-sap-hana-azure-large-instances-deployments.badge

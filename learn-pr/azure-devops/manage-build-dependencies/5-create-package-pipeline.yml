@@ -4,9 +4,9 @@ title: Exercise - Create a pipeline for your package
 metadata:
   title: Exercise - Create a pipeline for your package
   description: Create a project in Azure Pipelines to build your package.
-  ms.date: 01/21/2020
-  author: tpetchel
-  ms.author: thpetche
+  ms.date: 05/28/2021
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

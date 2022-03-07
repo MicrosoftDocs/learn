@@ -20,9 +20,9 @@ These backups don't happen by default. You must configure a policy to start and 
 
 The long-term retention policy sets how frequently an automatic backup will be copied for long-term retention. You specify this frequency with letters:
 
-- `W`: Specifies that one full backup each week will be coped to long-term retention.
+- `W`: Specifies that one full backup each week will be copied to long-term retention.
 - `M`: Specifies that one full backup from the first week of each month will be copied to long-term retention.
-- `Y`: Specifies that one full backup each year will be coped to long-term retention.
+- `Y`: Specifies that one full backup each year will be copied to long-term retention.
 
 If you use `Y` for yearly backups, you can specify the week of the year when that backup is copied by using the `WeekOfYear` parameter.
 
@@ -50,7 +50,7 @@ You can combine weekly, monthly, and yearly retention values to create a flexibl
 
 ## Setting retention policies in PowerShell
 
-In PowerShell, you can examine a long-term retention policy by using this command:
+In PowerShell, you can examine a long-term retention policy by running this command:
 
 ``` powershell
 Get-AzSqlDatabase `
@@ -59,7 +59,7 @@ Get-AzSqlDatabase `
     | Get-AzSqlDatabaseLongTermRetentionPolicy
 ```
 
-To configure the policy, use the `Set-AzSqlDatabaseBackupLongTermRetentionPolicy` cmdlet. When you specify these policies in PowerShell, you must use ISO 8601 duration values. For example, to specify the `W=10` policy, pass the string `P10W` to the `-WeeklyRetention` parameter. To specify the `Y=3` policy, pass the string `P3Y` to the `--YearlyRetention` parameter.
+To configure the policy, use the `Set-AzSqlDatabaseBackupLongTermRetentionPolicy` cmdlet. When you specify these policies in PowerShell, you must use ISO 8601 duration values. For example, to specify the `W=10` policy, pass the string `P10W` to the `-WeeklyRetention` parameter. To specify the `Y=3` policy, pass the string `P3Y` to the `-YearlyRetention` parameter.
 
 ``` powershell
 Set-AzSqlDatabaseBackupLongTermRetentionPolicy `

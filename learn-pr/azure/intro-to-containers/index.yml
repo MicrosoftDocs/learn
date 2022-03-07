@@ -2,7 +2,7 @@
 uid: learn.intro-to-containers
 metadata:
   title: Build a containerized web application with Docker
-  description: Learn how to use Docker to build, store, and manage private container images with the Azure Container Registry.  
+  description: Use Docker to build, store, and manage private container images with the Azure Container Registry.  
   ms.date: 04/05/2019
   author: cryophobia
   ms.author: chrvaw
@@ -21,6 +21,7 @@ prerequisites: |
   - Familiarity with basic web application development concepts
   - A Docker subscription 
   - Docker installed on your desktop computer
+  - Git installed on your desktop computer
 iconUrl: /learn/achievements/intro-to-containers.svg
 levels:
 - beginner

@@ -10,7 +10,7 @@ Let's see what's happening with the Tailspin web team. Tim, from operations, wan
 
 **Mara:** Yes! In fact, you can choose Windows, Linux, or macOS for your build agent. If your application runs on multiple platforms, you can configure the pipeline to build on all of them.
 
-**Tim:** Interesting. One of the other teams mentioned some of the challenges they're having with their build infrastructure. Perhaps Microsoft Azure Pipelines and either a Microsoft-hosted agent or their own build agent can help?
+**Tim:** Interesting. One of the other teams mentioned some of the challenges they're having with their build infrastructure. Perhaps Azure Pipelines and either a Microsoft-hosted agent or their own build agent can help?
 
 **Andy:** I'd be interested to know as well. Let's chat a bit more about build agents. Perhaps you can share what you learn with the other team.
 
@@ -22,11 +22,11 @@ Imagine that you have an Azure Pipelines project that receives build requests ma
 
 When a build is triggered, Azure Pipelines selects an available build agent from the pool. If all agents are busy, the process waits for one to become available.
 
-When you use a Microsoft-hosted agent, you specify the VM image to use from the pool. Here's an example from your existing build configuration that uses an Ubuntu 18.04 build agent:
+When you use a Microsoft-hosted agent, you specify the VM image to use from the pool. Here's an example from your existing build configuration that uses an Ubuntu 20.04 build agent:
 
 ```yml
 pool:
-  vmImage: 'ubuntu-18.04'
+  vmImage: 'ubuntu-20.04'
   demands:
   - npm
 ```
@@ -83,7 +83,7 @@ Microsoft-hosted agents have a few limitations, which include:
 
 * **Build duration**: A build job can run for up to six hours.
 * **Disk space**: Hosted agents provide a fixed amount of storage for your sources and your build outputs. This may not be enough storage.
-* **CPU, memory, and network**: Hosted agents run on Microsoft Azure general purpose VMs. [Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/dv2-dsv2-series#dsv2-series) describes the CPU, memory, and network characteristics you can expect.
+* **CPU, memory, and network**: Hosted agents run on Microsoft Azure general purpose VMs. [Standard_DS2_v2](/azure/virtual-machines/dv2-dsv2-series#dsv2-series) describes the CPU, memory, and network characteristics you can expect.
 * **Interactivity**: You can't sign in to a hosted agent.
 * **File shares**: You can't drop build artifacts to Universal Naming Convention (UNC) file shares.
 
@@ -106,7 +106,7 @@ For example, you can:
 * **Set up the build agent manually**: You bring up the system, sign in, and interactively install your build tools and the agent software.
 * **Automate the process**: You bring up the system and run a script or tool to install your build tools and the agent software. You can configure the agent after the system comes online or during the provisioning process.
 
-    For example, when you run build agents on Azure, you can use what's called an _Azure Resource Manager template_ to bring up the system and configure it to act as a build agent, all in one step. [Terraform](https://www.terraform.io?azure-portal=true) by HashiCorp is another way to automate the process. Terraform works with many types of infrastructure, including Azure.
+    For example, when you run build agents on Azure, you can use an Azure Resource Manager template (ARM template) or Bicep to bring up the system and configure it to act as a build agent, all in one step. [Terraform](https://www.terraform.io?azure-portal=true) by HashiCorp is another way to automate the process. Terraform works with many types of infrastructure, including Azure.
 * **Create an image**: You create an image, or snapshot, of a configured environment. You then use the image to create as many identical systems as you need in your pool.
 
 Manual configuration is a good way to get started, because it enables you to understand the process. It's also the fastest way to get set up when you need just one build agent.

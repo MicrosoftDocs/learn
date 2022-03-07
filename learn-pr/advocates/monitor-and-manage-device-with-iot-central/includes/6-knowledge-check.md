@@ -2,8 +2,8 @@ Azure IoT Central makes it easy to connect, monitor, and manage your IoT solutio
 
 ## Further reading
 
-- [What is Azure IoT Central?](https://docs.microsoft.com/azure/iot-central/core/overview-iot-central)
-- [Take a tour of the Azure IoT Central UI](https://docs.microsoft.com/azure/iot-central/core/overview-iot-central-tour)
+- [What is Azure IoT Central?](/azure/iot-central/core/overview-iot-central)
+- [Take a tour of the Azure IoT Central UI](/azure/iot-central/core/overview-iot-central-tour)
 
 ## Learn more with a Channel 9 video series
 

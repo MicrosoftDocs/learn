@@ -133,7 +133,7 @@ You can find an ASP.NET Core project for the coupon service in the *:::no-loc te
 1. Open *:::no-loc text="src/Services/Coupon/Coupon.API/Dockerfile":::* in the Azure Cloud Shell editor. Notice the following things in this *:::no-loc text="Dockerfile":::*:
 
     * The ASP.NET Core runtime image is used as the base image of the multistage build.
-    * The .NET Core SDK image is acquired to support the running of the following .NET Core CLI commands against the *:::no-loc text="Coupon.API":::* project:
+    * The .NET SDK image is acquired to support the running of the following .NET Core CLI commands against the *:::no-loc text="Coupon.API":::* project:
         * `dotnet restore`: Restores the project's NuGet packages.
         * `dotnet build`: Builds the project in release mode. The build artifacts are written to the *:::no-loc text="app/build/":::* directory of an intermediate image.
         * `dotnet publish`: Publishes the project in release mode. The published bundle is written to the *:::no-loc text="app/publish/":::* directory of the final image.

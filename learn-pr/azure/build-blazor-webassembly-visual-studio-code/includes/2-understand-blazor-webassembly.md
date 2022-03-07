@@ -1,8 +1,8 @@
 Companies that build web apps commonly hire developers for different roles. Some developers create back-end, server-side logic. Others build client-side web apps. These developers often use different development languages and technologies.
 
-C# and Microsoft .NET are popular choices for building server-side logic. But client-side apps are often built with web UI frameworks, which commonly use JavaScript. Use of multiple languages and tool sets requires multiple sets of skills and often requires two separate teams. Also, code to transfer and represent data must be built in both languages and kept in sync.
+C# and Microsoft .NET are popular choices for building server-side logic. But client-side apps are often built with web UI frameworks, which commonly use JavaScript. The use of multiple languages and toolsets requires multiple sets of skills and often requires two separate teams. Also, code to transfer and represent data must be built in both languages and kept in sync.
 
-In this unit, you'll start with an introduction to Blazor and then explore Blazor WebAssembly.
+In this unit, you'll start with an introduction to Blazor and Razor Components.
 
 ## What is Blazor?
 
@@ -21,9 +21,11 @@ WebAssembly provides a compilation target for languages such as C, C++, and Rust
 
 ## What is Blazor WebAssembly?
 
-With Blazor WebAssembly, developers can run .NET code in a browser. It's a single-page app framework and uses the WebAssembly open standards without requiring plug-ins or code generation.
+With Blazor WebAssembly, developers can run .NET code in a browser. It's a single-page app framework that uses the WebAssembly open standards without requiring plug-ins or code generation.
 
 .NET code executed via WebAssembly in a browser runs in the browser's JavaScript sandbox. The code includes all the security and protection that the sandbox provides. This inclusion helps prevent malicious actions on a client machine.
+
+![Blazor Web Assembly diagram.](../media/blazor-webassembly.png)
 
 Blazor uses a .NET runtime compiled to a WebAssembly module that is downloaded with an app. The module can execute .NET Standard code included in a Blazor app.
 
@@ -38,8 +40,22 @@ Blazor WebAssembly requires a modern desktop or mobile browser. The following br
 - Google Chrome
 - Apple Safari
 
-## Blazor WebAssembly development requirements
+### What is Blazor Server?
 
-You can build Blazor WebAssembly apps by using the latest version of Visual Studio 2019, Visual Studio for Mac, or Visual Studio Code. In this module, you'll use Visual Studio Code.
+Blazor Server provides support for hosting Razor components on the server in an ASP.NET Core app. UI updates are handled over a SignalR connection.
 
-Whatever your development environment, you need to install the .NET Core 3.1 SDK. After installation, you'll have everything you need to start building Blazor apps. You'll install all of the requirements to build a Blazor WebAssembly app with Visual Studio Code in the next exercise.
+The runtime stays on the server and handles:
+
+- Executing the app's C# code.
+- Sending UI events from the browser to the server.
+- Applying UI updates to the rendered components that are sent back by the server.
+
+The connection used by Blazor Server to communicate with the browser is also used to handle JavaScript interop calls.
+
+![Blazor Server diagram.](../media/blazor-server.png)
+
+## Blazor development requirements
+
+You can build Blazor apps by using the latest version of Visual Studio 2019, Visual Studio for Mac, or Visual Studio Code. In this module, you'll use Visual Studio Code.
+
+Whatever your development environment, you need to install the **.NET 6.0 SDK**. After installation, you'll have everything you need to start building Blazor apps. You'll install all of the requirements to build a Blazor WebAssembly app with Visual Studio Code in the next exercise.

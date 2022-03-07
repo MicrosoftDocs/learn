@@ -12,4 +12,4 @@ Focusing on these pillars when designing your architecture will ensure that you'
 
 ## Learn more
 
-For more information on architecting solutions on Azure, visit the [Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework) guide in the Azure Architecture Center.
+For more information on architecting solutions on Azure, visit the [Azure Well-Architected Framework](/azure/architecture/framework) guide in the Azure Architecture Center.

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-storage-solution-for-relational-data.recommend-database-scalability
+title: Recommend a solution for database scalability
+metadata:
+  title: Recommend a solution for database scalability
+  description: "Recommend a solution for database scalability"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-recommend-database-scalability.md)]

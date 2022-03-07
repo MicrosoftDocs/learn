@@ -2,14 +2,15 @@
 uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.install-active-directory-forest-azure-virtual-network
 title: Install a new Active Directory forest on an Azure VNet
 metadata:
-  title: Install a new Active Directory Forest on an Azure VNet
-  description: "Install a new Active Directory Forest on an Azure VNet"
-  ms.date: 10/30/2020
+  title: Install a new Active Directory forest on an Azure VNet
+  description: "Install a new Active Directory forest on an Azure VNet"
+  ms.date: 11/04/2021
   author: wwlpublish
   ms.author: v-anwarr
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/05-install-active-directory-forest-azure-virtual-network.md)]

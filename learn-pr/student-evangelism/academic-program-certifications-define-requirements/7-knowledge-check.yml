@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-define-requirements.knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  ms.date: 07/01/2021 
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  Choose the best response for each question. Then, select **Check your answers**.
+quiz: 
+  questions: 
+    - content: Which of the following approaches to implementing certification offers the most flexibility for delivery?
+      choices:
+      - content: Offering certification inside a course.
+        isCorrect: false
+        explanation: Incorrect. Offering certification inside a course is the most constrained approach to implement certifications. It requires academic learning outcomes to be mapped to certification outcomes. This approach offers the least amount of flexibility for delivery.
+      - content: Offering certification outside a course.
+        isCorrect: true
+        explanation: Correct. Offering certification outside a course offers the most flexibility because it can be run anytime during the academic year, for example, during summer break. The approach isn't dependent on any academic course and is essentially a standalone approach.
+      - content: Offering certification alongside a course.
+        isCorrect: false
+        explanation: Incorrect. Offering certification alongside a course offers some flexibility, but this approach primarily is designed for delivery to be dependent on a similar academic course that runs at the same time, for knowledge sharing.
+    - content: A higher education institution wants to offer certification courses for academic credit as part of a degree program. Which approach should it use to do this?
+      choices:
+      - content: Offer certification inside a course.
+        isCorrect: true
+        explanation: Correct. Certification inside a course is best suited to certification courses for academic credit as part of a degree program. In that option, the certification learning materials can be embedded as part of an academic course. The academic course learning outcomes can map to the certification outcomes and create a credit-bearing component.
+      - content: Offer certification outside a course.
+        isCorrect: false
+        explanation: Incorrect. Certification outside a course approach isn't well suited for a credit-bearing course because no learning outcomes are mapped to the certification outcomes.
+      - content: Offer certification alongside a course.
+        isCorrect: false
+        explanation: Incorrect. Certification alongside a course approach isn't particularly well suited for a credit-bearing component. The certification course will have content that's similar to the academic course it runs alongside, but no learning outcomes are directly mapped to the certification outcomes.
+    - content: For students, what is one of the key benefits of taking certification courses?
+      choices:
+      - content: They'll get better grades in their coursework.
+        isCorrect: false
+        explanation: Incorrect. Achieving better grades isn't an outcome of students being given certification opportunities. Students still need to study adequately to earn good grades.
+      - content: Their employability improves.
+        isCorrect: true
+        explanation: Correct. Students can enhance their resumes with the latest digital skill sets by achieving certification. The skill sets students learn are in demand by industry, and the student’s employment opportunities improve.
+      - content: They can train other students in the area of their certification.
+        isCorrect: false
+        explanation: Incorrect. Microsoft certifications that are offered through academic degree programs focus on training the student who achieves certification.
+    - content: A higher education institution is creating a program proposal document for a new program. Which of the following tasks should the institution consider for inclusion in the proposal?<br />
+      choices:
+      - content: Identify the graduate outcomes and identify the industry context and skills.
+        isCorrect: true
+        explanation: Correct. The institution needs to consider the overall graduate outcomes of the proposed course and how those outcomes and skills fit the purpose and needs of industry.
+      - content: Identify the industry context and skills and identify the courses they would need to study.
+        isCorrect: false
+        explanation: Incorrect. At the proposal stage, the institution needs to consider industry-transferable skills, but not courses. Course development is a later stage of program development.
+      - content: Identify the graduate outcomes and identify the courses they would need to study.
+        isCorrect: false
+        explanation: Incorrect. At the proposal stage, the institution needs to consider the overall graduate outcomes of the proposed courses, but not identify the courses. Course development is a later stage of program development.

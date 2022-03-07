@@ -1,3 +1,5 @@
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwMdr]
+
 ## Electricity and carbon
 
 Most people think electricity is clean; when we plug something into a wall, our hands don't become dirty, and our laptops don't need exhaust pipes. However, the truth is that most electricity is produced through the burning of fossil fuels, [usually coal](https://ourworldindata.org/grapher/world-electricity-by-source), and energy supply is the [single most significant](https://www.eea.europa.eu/data-and-maps/daviz/change-of-co2-eq-emissions-2#tab-chart_4) cause of carbon emission.

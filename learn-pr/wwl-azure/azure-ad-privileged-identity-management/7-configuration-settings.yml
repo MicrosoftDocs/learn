@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-ad-privileged-identity-management.configuration-settings
+title: Explore privileged identity management configuration settings
+metadata:
+  title: Explore privileged identity management configuration settings
+  description: "Explore privileged identity management configuration settings"
+  ms.date: 01/04/2022
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-configuration-settings.md)]

@@ -1,5 +1,5 @@
 Azure enables digital transformation through flexible solutions that evolve along with your business. Whether you're designing for on-premises, cloud, hybrid, 
-or Edge devices Azure can help meet your digital transformation goals.  Azure enables your to Invent with Purpose, and promises that you will enable you to be
+or Edge devices Azure can help meet your digital transformation goals.  Azure enables you to Invent with Purpose, and promises that you will enable you to be
 future ready, build on your terms, operate your hybrid environment seamlessly, and trust your cloud.
 
 Now that you have reviewed this module, you should be able to:
@@ -13,7 +13,7 @@ Now that you have reviewed this module, you should be able to:
 Here are the two key takeaways from this module:
 
 :::row:::
-![Icon of lightbulb](../media/Key-Takeaway.png)
+![Icon of lightbulb](../media/key-takeaway.png)
 :::column:::
 1. Wherever you are on your cloud adoption journey, Azure delivers unique value in four areas: be future ready, build on your terms, operate hybrid seamlessly, and trust your cloud.
 1. Azure provides technologies and services across the following solution areas:

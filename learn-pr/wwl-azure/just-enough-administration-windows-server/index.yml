@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.just-enough-administration-windows-server
+metadata:
+  title: Just Enough Administration in Windows Server
+  description: "Streamline the administration of your Windows Server environments with Just Enough Administration (JEA). Limit privileged operations to a set of specified PowerShell cmdlets, parameters and variables, and limit which users can connect to JEA endpoints. Constrain the level of privilege those users have when performing administrative tasks."
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Just Enough Administration in Windows Server
+summary: Streamline administration of Windows Server environments with Just Enough Administration (JEA). Limit privileged operations to a set of specified PowerShell cmdlets, parameters and variables, and limit which users can connect to JEA endpoints.
+abstract: |
+  After completing this module, you will be able to:
+  - Explain the concept of Just Enough Administration (JEA)
+  - Define role group capabilities and session configurations for a JEA session
+  - Create and connect to a JEA endpoint
+prerequisites: |
+  - Familiarity with PowerShell commands and syntax
+  - Experience using PowerShell to administer Windows Server
+  - Ability to create and edit PowerShell scripts
+  - Ability to enable remote management and connect to a remote system
+iconUrl: /learn/achievements/windows-just-enough-administration.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- windows-server
+units:
+- learn.wwl.just-enough-administration-windows-server.introduction
+- learn.wwl.just-enough-administration-windows-server.explain-concept-of-jea
+- learn.wwl.just-enough-administration-windows-server.define-role-capabilities-for-jea-endpoint
+- learn.wwl.just-enough-administration-windows-server.create-session-configuration-file-to-register-jea-endpoint
+- learn.wwl.just-enough-administration-windows-server.describe-how-jea-endpoints-work-to-limit-access-to-powershell-session
+- learn.wwl.just-enough-administration-windows-server.create-connect-to-jea-endpoint
+- learn.wwl.just-enough-administration-windows-server.demonstration-connect-to-jea-endpoint
+- learn.wwl.just-enough-administration-windows-server.knowledge-check
+- learn.wwl.just-enough-administration-windows-server.summary
+badge:
+  uid: learn.wwl.just-enough-administration-windows-server.badge

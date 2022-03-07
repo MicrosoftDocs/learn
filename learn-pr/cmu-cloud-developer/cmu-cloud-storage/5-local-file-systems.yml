@@ -5,10 +5,11 @@ metadata:
   title: Local file systems
   description: Local file systems
   ms.date: 03/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 22
 content: |
   [!include[](includes/5-local-file-systems.md)]

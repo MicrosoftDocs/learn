@@ -1,6 +1,6 @@
-In this module, you will learn how you can set up security when using Azure Synapse serverless SQL pools
+In this lesson, you will learn how you can set up security when using Azure Synapse serverless SQL pools
 
-After the completion of this module, you will be able to:
+After the completion of this lesson, you will be able to:
 
 - Choose an authentication method in Azure Synapse serverless SQL pools
 - Manage users in Azure Synapse serverless SQL pools
@@ -8,7 +8,7 @@ After the completion of this module, you will be able to:
 
 ## Prerequisites
 
-Before taking this module, it is recommended that the student is able to:
+Before taking this lesson, it is recommended that the student is able to:
 
 * Log into the Azure portal
 * Explain the different components of Azure Synapse Analytics

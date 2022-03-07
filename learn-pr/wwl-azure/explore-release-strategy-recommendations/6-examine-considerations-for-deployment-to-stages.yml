@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-release-strategy-recommendations.examine-considerations-for-deployment-to-stages
+title: Examine considerations for deployment to stages
+metadata:
+  title: Examine considerations for deployment to stages
+  description: "Examine considerations for deployment to stages"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-examine-considerations-for-deployment-to-stages.md)]

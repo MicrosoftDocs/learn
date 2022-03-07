@@ -1,15 +1,15 @@
-In this challenge, you'll write code that will combine literal and variables values into a single message.
+In this challenge, you'll write code that will combine literal and variable values into a single message.
 
-### Step 1: Delete all of the code in the .NET Editor from the earlier exercise.
+### Step 1: Delete all of the code in the .NET Editor from the earlier exercise
 
 Select all of the code in the .NET Editor then select the `del` or backspace key to delete it.
 
-### Step 2: Write code in the .NET Editor to display a message.
+### Step 2: Write code in the .NET Editor to display a message
 
 When you're finished, the message should resemble the following output:
 
 ```output
-Hello, Bob! You have 3 in your inbox.  The temperature is 34.4 celsius.
+Hello, Bob! You have 3 in your inbox. The temperature is 34.4 celsius.
 ```
 
 Store the following values from the output in variables:

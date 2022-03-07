@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-defender-for-iot-security-agents.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A developer wants to deploy Azure Defender for IoT. Which of the following choices describe the differences between the Built-in and Enhanced deployment options?"
+    choices:
+    - content: "Real-time monitoring is only available with the Enhanced option."
+      isCorrect: false
+      explanation: "Incorrect. Real-time monitoring is available when using the Built-in option."
+    - content: "Built-in mode uses device agents on your devices to aggregate and analyze raw security events from your devices."
+      isCorrect: false
+      explanation: "Incorrect. The Built-in mode does not use device agents."
+    - content: "Enhanced mode uses device agents on your devices to aggregate and analyze raw security events from your devices."
+      isCorrect: true
+      explanation: "Correct. Enhanced mode uses device agents on your devices to aggregate and analyze raw security events from your devices."
+  - content: "A developer has deployed the Enhanced mode of Azure Defender for IoT, and they are now ready to implement security agents. Which of the following statements describe how security agents are used?"
+    choices:
+    - content: "Security agents handle raw event collection from the device operating system."
+      isCorrect: true
+      explanation: "Correct. Security agents handle raw event collection from the device operating system."
+    - content: "Security agents are part of the IoT Edge device attestation mechanism for DPS."
+      isCorrect: false
+      explanation: "Incorrect. Security agents authenticate to IoT Hub with existing device identity, or a dedicated module identity."
+    - content: "Security agents require maximum available resources."
+      isCorrect: false
+      explanation: "Incorrect. Security agents are designed to work in a constrained IoT environment, and are highly customizable in terms of values they provide when compared to the resources they consume."

@@ -13,7 +13,7 @@ A typical on-premises network design includes these components:
 - Switches
 - Network segmentation
 
-![Typical on-premises network design](../media/2-on-premises-network.png)
+![Typical on-premises network design.](../media/2-on-premises-network.png)
 
 The diagram shows a simplified version of a typical on-premises network. On the routers facing the internet service provider (ISP), you have public IP addresses that are used by your outbound internet traffic as their source. These addresses also are used for inbound traffic across the internet. The ISP might assign you a block of IP addresses to assign to your devices, or you might have your own block of public IP addresses that your organization owns and controls. These addresses can be assigned to systems that you would like to make accessible from the internet, such as web servers.
 
@@ -37,7 +37,7 @@ In a typical Azure network design, we usually have these components:
 - Firewalls
 - Load balancers
 
-![Typical Azure network design](../media/2-azure-network.png)
+![Typical Azure network design.](../media/2-azure-network.png)
 
 In Azure, the network design has features and functions that are similar to an on-premises network, but the structure of the network is different. The Azure network does not follow the typical on-premises hierarchical network design. The Azure network provides the ability to scale up and scale down infrastructure based on demand. Provisioning in the Azure network happens in a matter of seconds. There are no hardware devices, like routers or switches. The entire infrastructure is virtual and you slice it into chunks that suit your requirements.
 
@@ -47,7 +47,7 @@ In Azure, you typically would implement a network security group and a firewall.
 
 A virtual network is your network in the cloud. You can divide your virtual network into multiple subnets. Each subnet has a portion of the IP address space that is assigned to your virtual network. You can add, remove, expand, or shrink a subnet if there are no VMs or services deployed in it.
 
-By default, all subnets in an Azure virtual network can communicate with each other. However, you can use a network security group to deny communication between subnets. The smallest subnet that is supported uses a /29 subnet mask. The largest supported subnet uses a /8 subnet mask.
+By default, all subnets in an Azure virtual network can communicate with each other. However, you can use a network security group to deny communication between subnets. The smallest subnet that is supported uses a /29 subnet mask. The largest supported subnet uses a /2 subnet mask.
 
 ## Integrate Azure with on-premises networks
 

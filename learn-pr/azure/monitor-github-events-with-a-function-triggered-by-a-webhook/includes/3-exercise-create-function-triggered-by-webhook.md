@@ -4,72 +4,79 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MS Learn account.
 
-1. Select the **+ Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
+1. Select **Create a resource**. The **Create a resource** pane appears.
+
+1. In the left menu pane, under **Categories**, select **Compute**, and in the *Search services and marketplace* search box, search for and select **Function App**. The **Function App** pane appears.
+
+1. Select **Create**. The **Create Function App** pane appears.
 
     [!include[](../../includes/functions-classic-workaround.md)]
 
-1. On the **Function App** page, enter the following settings:
+1. On the **Basics** tab, enter the following values for each setting.
 
     > [!NOTE]
-    > The function app must have a unique name. We suggest using something like **\<*your name or initials*\>triggerapp**. Use this name wherever you see *\<your-functionapp-name\>* in this exercise.
+    > The Function App Name must be unique. We suggest using something like **\<*your name or initials*\>triggerapp**. Use this name wherever you see *\<your-functionapp-name\>* in this exercise.
 
-    | Property  | Value  |
+    | Setting  | Value  |
     |---|---|
+    | **Project Details** |
     | Subscription | Concierge Subscription  |
-    | Resource Group | Select **Use existing** and choose the sandbox resource group, _<rgn>[sandbox resource group name]</rgn>_. |
-    | Name | *\<your-functionapp-name\>* |
+    | Resource Group | From the dropdown list, select the sandbox resource group, _<rgn>[sandbox resource group name]</rgn>_. |
+    | **Instance Details** |
+    | Function App Name | *\<your-functionapp-name\>* |
     | Publish | Code |
-    | Runtime Stack | **Node.js** |
-    | Version | default |
+    | Runtime stack | Node.js |
+    | Version | Accept default |
     | Region | Choose the nearest location to you that is also one of the allowed *Sandbox regions*. |
-    
-1. Click **Next: Hosting >**
-    
-    | Property  | Value  |
-    |---|---|
+
+    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+
+1. Select **Next : Hosting** to open the **Hosting** tab. Enter the following values for each setting.
+
+    | Setting  | Value  |
+    | --- | ---| 
+    | **Storage** |
     | Storage account | (New), and accept the default name. |
-    | O/S | Windows |
-    | Plan | Consumption (Serverless) |
+    | **Operating system** |
+    | Operating System | Windows |
+    | **Plan** |
+    | Plan type | Consumption (Serverless) |
 
-### Sandbox regions
+1. Select **Review + create**.
 
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
-1. Select **Review + Create**, and wait for the function app to be deployed before continuing.
+1. Azure verifies your entries. When verified, select **Create**.
 
 ## Create a webhook triggered function
 
-1. In the top left-hand pane of the portal, select **All resources**, and then select the function app you just created.
+1. When your deployment is complete, select **Go to resource**. The **Overview** pane appears for your *Function App*.
 
-1. On the function app page, find **Function** in the options below **Search**, and click on it.  Select the **+ Add** button at the top.
+1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
 
-1. Select **HTTP triggers** in the left-hand pane.
+1. On the top menu bar bar, select **Create**. The **Create function** pane appears.
 
-   The portal will create a JavaScript function that looks similar to this:
-   You must click on **Code + Test** to view it. 
+1. Under **Select a template**, select **HTTP trigger**, and then select **Create**. The **HttpTrigger1** pane appears for your *Function*, displaying essentials for your new trigger.
+
+1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your *Function*, displaying the JavaScript file that was created from the template. It should look like the following code.
 
     ```JavaScript
     module.exports = async function (context, req) {
         context.log('JavaScript HTTP trigger function processed a request.');
 
-        if (req.query.name || (req.body && req.body.name)) {
-            context.res = {
-                // status: 200, /* Defaults to 200 */
-                body: "Hello " + (req.query.name || req.body.name)
-            };
-        }
-        else {
-            context.res = {
-                status: 400,
-                body: "Please pass a name on the query string or in the request body"
-            };
-        }
-    };
+        const name = (req.query.name || (req.body && req.body.name));
+        const responseMessage = name
+            ? "Hello, " + name + ". This HTTP triggered function executed successfully."
+            : "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.";
+
+        context.res = {
+            // status: 200, /* Defaults to 200 */
+            body: responseMessage
+        };
+    }
     ```
 
-    This is the default JavaScript function generated by the portal. It reads a name either passed in as a query string or as part of the request body, and responds with a "Hello" message.
+    The *index.js* file is the JavaScript function generated by the portal. The request reads name, either passed in as a query string or as part of the request body, and responds with a "Hello" message.
 
-1. Click the **Integration** > **function** > at the top click the drop down menu and select **function.json**:
+1. Above the code is the path with a dropdown list showing the filename. In the dropdown list, select **function.json**. The JSON file that was created by the template appears. It should look like the following code.
 
     ```JSON
     {
@@ -93,22 +100,24 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
     }
     ```
 
-    The binding specifies that the function is triggered by HTTP GET and POST requests directed towards the URL of the function app.
+    The JSON bindings specify that the function is triggered by HTTP GET and POST requests directed towards the URL of the function app.
 
 ## Test triggering your function
 
-1. In your new function, select **</> Get function URL** at the top.
+1. In the top menu bar, select **Get function URL**.
 
-2. In the **Get function URL** message box, select **default (Function key)**, and then select **Copy**. The URL will look something like this:
+1. In the **Get function URL** dialog box, in the **Key** dropdown list, under **Function key**, select **default**. In the **URL** field,  select the **Copy to clipboard** icon. The URL will look something like this:
 
     ```text
     https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==
     ```
 
-3. Paste your function URL into your browser's address bar. Add the query string value &name=*\<yourname\>* to the end of this URL and press the Enter key on your keyboard to execute the request. You should see the response returned by the function displayed in the browser. It will look something like this:
+1. Paste this URL into a browser, and at the end of URL, append the query string parameter: &name=*\<yourname\>*, for example &name=Dick and Jane.
+
+1. To run the request, press <kbd>Enter</kbd>. The response returned by the function appears in the browser. It will look something like this:
 
     ```text
-    Hello John Smith
+    Hello Dick and Jane. This HTTP triggered function executed successfully.
     ```
 
-Congratulations! You now have a function that can be triggered by a URL!
+Congratulations! You now have a function that can be triggered by a URL.

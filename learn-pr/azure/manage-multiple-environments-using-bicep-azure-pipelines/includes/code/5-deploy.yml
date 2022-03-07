@@ -1,0 +1,106 @@
+parameters:
+- name: environmentType
+  type: string
+- name: resourceGroupName
+  type: string
+- name: serviceConnectionName
+  type: string
+
+stages:
+
+- ${{ if ne(parameters.environmentType, 'Production') }}:
+  - stage: Validate_${{parameters.environmentType}}
+    displayName: Validate (${{parameters.environmentType}} Environment)
+    jobs:
+    - job: ValidateBicepCode
+      displayName: Validate Bicep code
+      steps:
+        - task: AzureCLI@2
+          name: RunPreflightValidation
+          displayName: Run preflight validation
+          inputs:
+            azureSubscription: ${{parameters.serviceConnectionName}}
+            scriptType: 'bash'
+            scriptLocation: 'inlineScript'
+            inlineScript: |
+              az deployment group validate \
+                --resource-group ${{parameters.resourceGroupName}} \
+                --template-file deploy/main.bicep \
+                --parameters environmentType=${{parameters.environmentType}}
+
+- ${{ if eq(parameters.environmentType, 'Production') }}:
+  - stage: Preview_${{parameters.environmentType}}
+    displayName: Preview (${{parameters.environmentType}} Environment)
+    jobs:
+    - job: PreviewAzureChanges
+      displayName: Preview Azure changes
+      steps:
+        - task: AzureCLI@2
+          name: RunWhatIf
+          displayName: Run what-if
+          inputs:
+            azureSubscription: ${{parameters.serviceConnectionName}}
+            scriptType: 'bash'
+            scriptLocation: 'inlineScript'
+            inlineScript: |
+              az deployment group what-if \
+                --resource-group ${{parameters.resourceGroupName}} \
+                --template-file deploy/main.bicep \
+                --parameters environmentType=${{parameters.environmentType}}
+
+- stage: Deploy_${{parameters.environmentType}}
+  displayName: Deploy (${{parameters.environmentType}} Environment)
+  jobs:
+  - deployment: DeployWebsite
+    displayName: Deploy website
+    environment: ${{parameters.environmentType}}
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - checkout: self
+            - task: AzureCLI@2
+              name: DeployBicepFile
+              displayName: Deploy Bicep file
+              inputs:
+                azureSubscription: ${{parameters.serviceConnectionName}}
+                scriptType: 'bash'
+                scriptLocation: 'inlineScript'
+                inlineScript: |
+                  set -e
+                  deploymentOutput=$(az deployment group create \
+                    --name $(Build.BuildNumber) \
+                    --resource-group ${{parameters.resourceGroupName}} \
+                    --template-file deploy/main.bicep \
+                    --parameters environmentType=${{parameters.environmentType}})
+                  appServiceAppHostName=$(echo $deploymentOutput | jq -r '.properties.outputs.appServiceAppHostName.value')
+                  echo "##vso[task.setvariable variable=appServiceAppHostName;isOutput=true]$appServiceAppHostName"
+
+- stage: SmokeTest_${{parameters.environmentType}}
+  displayName: Smoke Test (${{parameters.environmentType}} Environment)
+  jobs:
+  - job: SmokeTest
+    displayName: Smoke test
+    variables:
+      appServiceAppHostName: $[ stageDependencies.Deploy_${{parameters.environmentType}}.DeployWebsite.outputs['DeployWebsite.DeployBicepFile.appServiceAppHostName'] ]
+    steps:
+      - task: PowerShell@2
+        name: RunSmokeTests
+        displayName: Run smoke tests
+        inputs:
+          targetType: inline
+          script: |
+            $container = New-PesterContainer `
+              -Path 'deploy/Website.Tests.ps1' `
+              -Data @{ HostName = '$(appServiceAppHostName)' }
+            Invoke-Pester `
+              -Container $container `
+              -CI
+
+      - task: PublishTestResults@2
+        name: PublishTestResults
+        displayName: Publish test results
+        condition: always()
+        inputs:
+          testResultsFormat: NUnit
+          testResultsFiles: 'testResults.xml'

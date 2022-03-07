@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-changes-bicep-code-git.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 07/08/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: Which of these is a benefit of using version control?
+    choices:
+    - content: You can manage multiple environments with a single template by using branches.
+      isCorrect: false
+      explanation: Incorrect. Parameters provide a way to manage multiple environments with a single Bicep file.
+    - content: You can view the history of your files and revert to a previous version.
+      isCorrect: true
+      explanation: Correct. Version control enables you to track the changes to files and even roll back to a previous version.
+    - content: You can create smaller reusable Bicep files.
+      isCorrect: false
+      explanation: Incorrect. Bicep modules provide a way to create small, reusable Bicep files for specific purposes. You can then store these in a version control system like Git.
+  - content: You've been asked to try out a new Azure service. You're going to temporarily add it to a Bicep file that you've already created and added to your Git repository. What should you do?
+    choices:
+    - content: Create a new branch in your existing repository and make your changes on the branch.
+      isCorrect: true
+      explanation: Correct. A branch will likely work well for making a temporary change to your file.
+    - content: Initialize a new Git repository and add the updated file to that.
+      isCorrect: false
+      explanation: Incorrect. You already have a Git repository, so you should work in that and add a branch.
+    - content: Copy the file out of your Git repository and onto your desktop or another folder. Make the changes there.
+      isCorrect: false
+      explanation: Incorrect. You should keep the file in your Git repository and use a branch to separate it from your current, known-good, template.
+  - content: Your team has decided to adopt trunk-based development. Which of these statements is true?
+    choices:
+    - content: Trunk-based development eliminates the possibility of merge conflicts.
+      isCorrect: false
+      explanation: Incorrect. You can still get merge conflicts, especially when multiple people make changes in your repository.
+    - content: Trunk-based development encourages you to use long-lived branches.
+      isCorrect: false
+      explanation: Incorrect. Trunk-based development encourages the use of short-lived branches.
+    - content: Trunk-based development encourages you to use short-lived branches.
+      isCorrect: true
+      explanation: Correct. Trunk-based development encourages the use of short-lived branches.
+  - content: A colleague has created a repository on GitHub and has granted you access. You want to make a local copy of the repository so that you can add some Bicep files to it. Which of these commands should you run first?
+    choices:
+    - content: "`git clone`"
+      isCorrect: true
+      explanation: Correct. The `git clone` command enables you to make a local copy of a repository that has already been created.
+    - content: "`git pull`"
+      isCorrect: false
+      explanation: Incorrect. The `git pull` command retrieves the changes from a remote repository, but you have to set up your local repository first.
+    - content: "`git remote upstream add`"
+      isCorrect: false
+      explanation: Incorrect. Because you're making a copy of a repository that's already on GitHub, you should use the `git clone` command.
+  

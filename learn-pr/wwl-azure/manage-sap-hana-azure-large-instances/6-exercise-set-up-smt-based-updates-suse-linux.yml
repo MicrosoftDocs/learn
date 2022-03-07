@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-sap-hana-azure-large-instances.set-up-smt-based-updates-for-suse-linux
+title: Set up SMT-based updates for SUSE Linux
+metadata:
+  title: Set up SMT-based updates for SUSE Linux
+  description: "Set up SMT-based updates for SUSE Linux"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-exercise-set-up-smt-based-updates-suse-linux.md)]

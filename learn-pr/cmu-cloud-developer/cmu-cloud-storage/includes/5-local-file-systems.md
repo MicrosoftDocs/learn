@@ -1,6 +1,6 @@
 In a local file system, the file system is collocated with the server that runs the application. Owing to the nature of the file system, local file systems have limited scalability and do not allow for data sharing across different clients over a network on their own:
 
-![Local file systems](../media/local-fs.png)
+![Local file systems.](../media/local-fs.png)
 
 _Figure 8: Local file systems_<sup>[1][^1]</sup>
 
@@ -8,7 +8,7 @@ Data stored on a disk is typically represented as **blocks**, or a contiguous, u
 
 Applications using local file systems are not concerned with how files are physically represented on storage media, the amount of data transferred to or from the application per file request (called **record size**), the unit by which data is transferred to or from storage mediums (called **block size**), and so on. All such low-level details are managed by local file systems and are effectively abstracted from user applications. In principle, local file systems are the basic building substrate of every file system type on the cloud. For instance, distributed file systems (e.g., [Hadoop Distributed File System](http://hadoop.apache.org/docs/r1.0.4/hdfs_design.html), which mimics the Google File System)<sup>[2][^2]</sup> and parallel file systems (e.g., [PVFS](https://azure.microsoft.com/resources/parallel-virtual-file-systems-on-microsoft-azure/)) are built and executed on multiple cooperative local file systems. Moreover, how well a virtual machine or a physical machine can survive software and hardware crashes on the cloud and on other systems depends partly on how well the local file systems are designed to handle such crashes. In short, practically every file system, whether shared or networked, relies on local file systems.
 
-![The layout of a file system](../media/local-fs-layout.png)
+![The layout of a file system.](../media/local-fs-layout.png)
 
 _Figure 9: The layout of a file system_
 
@@ -16,7 +16,7 @@ The UNIX file system is a classic local file system that was designed in the 197
 
 In the I-list, the state of each file is encapsulated as a UNIX **inode** (index node, as shown in the following figure). The inode acts as the primary data structure of a file and stores the metadata about a file, including pointers to the individual file blocks in storage, ownership and access control lists, timestamp of the last access of the file, and so on.
 
-![Files, inodes, and blocks](../media/local-fs-design.png)
+![Files, inodes, and blocks.](../media/local-fs-design.png)
 
 _Figure 10: Files, inodes, and blocks_<sup>[1][^1]</sup>
 
@@ -81,7 +81,7 @@ As discussed in the datacenter module, multiple disks can be combined into a sin
 
 In an enterprise IT environment, storage is typically consolidated so that it can be pooled and shared across multiple servers. Storage devices can be shared among multiple servers using a storage area network (SAN). A SAN is a dedicated network that provides access to consolidated, block-level data storage (see the following figure). The consolidated, block-level storage is typically in the form of a disk array. The disk array can be configured with some form of RAID, depending on the performance and reliability required. Servers typically access the SAN using a protocol such as iSCSI or Fibre Channel. The servers that use a SAN see a logical block device, which can be formatted with a file system and mounted in the server. The application server can then use the externally stored logical blocks in the same way it would use locally stored blocks. Thus, the logical placement of the data is different from its physical placement.
 
-![Storage area networks](../media/san.png)
+![Storage area networks.](../media/san.png)
 
 _Figure 11: Storage area networks_
 

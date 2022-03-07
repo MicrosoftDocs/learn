@@ -10,7 +10,7 @@ The reality of execution on _n_ nodes never meets the ideal of _n_-fold performa
 - Load imbalance among tasks is highly likely, especially in distributed systems, such as clouds, in which heterogeneity is a major factor. As depicted in Figure 13(b), load imbalance usually delays programs so that a program becomes bound to its slowest task. Specifically, even if all tasks in a program finish, the program cannot commit before the last task finishes. 
 - Other serious overheads, such as communication and synchronization overheads, can significantly impede scalability.
 
-![Parallel speedup: (a) ideal case and (b) real case](../media/scalability.png)
+![Parallel speedup: (a) ideal case and (b) real case.](../media/scalability.png)
 
 _Figure 13: Parallel speedup: (a) ideal case and (b) real case_
 

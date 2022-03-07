@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-authentication-authorization-cybersecurity.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/08/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are the three types of authentication?"
+    choices:
+    - content: "Something you know, something you have, and something you are."
+      isCorrect: true
+      explanation: "Correct. Authentication can be divided into three types. These are something you know, something you have, and something you are.)"
+    - content: "Something you own, something you know, something you learn."
+      isCorrect: false
+      explanation: "Incorrect. Something you own and something you learn are not authentication types."
+    - content: "Something you find, something you are, something you know."
+      isCorrect: false
+      explanation: "Incorrect. Something you find is not an authentication type."
+  - content: "What is credential stuffing?"
+    choices:
+    - content: "An attacker attempts to gain access using millions of username and password combinations."
+      isCorrect: false
+      explanation: "Incorrect. If an attacker attempts to gain access using millions of username and password combinations, this is a brute force attack."
+    - content: "You use the same username and password at many sites. There's a security breach at one site, and attackers use your compromised usernames and passwords at many other sites."
+      isCorrect: true
+      explanation: "Correct. Credential stuffing is when attackers attempt compromised username and password combinations at many sites."
+    - content: "A dictionary of commonly used words is used for the brute force attack."
+      isCorrect: false
+      explanation: "Incorrect. If a dictionary of commonly used words is used for the brute force attack, this is a dictionary attack."
+  - content: "What are the three principles of Zero Trust?"
+    choices:
+    - content: "Verify explicitly, assume breach, and use least privileged access."
+      isCorrect: true
+      explanation: "Correct. The three principles of Zero Trust are verify explicitly, assume breach, and use least privileged access."
+    - content: "Spear-fishing, pretexting, and baiting."
+      isCorrect: false
+      explanation: "Incorrect. spear-fishing, pretexting, and baiting are forms of social engineering."
+    - content: "Credential stuffing, key logging, spear-fishing."
+      isCorrect: false
+      explanation: "Incorrect. Credential stuffing, key logging, and spear-fishing are forms of authentication attack."

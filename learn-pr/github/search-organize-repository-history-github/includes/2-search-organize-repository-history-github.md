@@ -14,11 +14,11 @@ There are two search methods available on GitHub: the global search at the top o
 
 The global search enables you to use [the complete search syntax](https://help.github.com/github/searching-for-information-on-github/searching-on-github?azure-portal=true) to search across all of GitHub.
 
-![Searching across GitHub](../media/2-global-search.png)
+![Searching across GitHub.](../media/2-global-search.png)
 
 The search results are comprehensive, and include everything from code to issues to the Marketplace and even users. This is the best way to find mentions of key terms across multiple result types and repositories.  
 
-![Global search results](../media/2-global-search-results.png)
+![Global search results.](../media/2-global-search-results.png)
 
 > [!NOTE]
 > The filter clause `is:pr` filters out issues returned from the issues/pull requests store. Some filter clauses, such as `is:pr`, are only supported by certain search providers and ignored by others. For example, the code search provider doesn't support that clause, so it will ignore it and return the same code results either way.
@@ -31,7 +31,7 @@ To craft a complex global search, try the [advanced search](https://github.com/s
 
 Context searches are available on certain tabs, such as **Issues** and **Pull requests**. These searches are scoped into the current repository and only return results of that type. The benefit to this scoping is that it allows the user interface to expose known type-specific filters, such as authors, labels, projects, and more.
 
-![Context search within a repository](../media/2-context-search.png)
+![Context search within a repository.](../media/2-context-search.png)
 
 Using the context search is the preferred option when you're looking for something in the current repository. In our scenario, this would be a good way to find search results mentioning "sidebar", which could then be easily refined using the filter dropdowns.
 
@@ -61,7 +61,7 @@ Despite its ominous name, `git blame` is a command that displays the commit hist
 
 GitHub extends the basic `git blame` functionality with a more robust user interface.
 
-![GitHub blame](../media/2-github-blame.png)
+![GitHub blame.](../media/2-github-blame.png)
 
 In our scenario, there are a few ways you might get to this view. You might have found some sidebar code from the global search and selected the **Blame** option to see who had worked on it last. Or maybe you found a pull request and tracked that back to the last commit that seems related to the bug description. However you got here, the blame view is an effective way to locate a subject matter expert for the task at hand. 
 
@@ -73,11 +73,11 @@ Part of what makes GitHub great for collaborative software projects is its suppo
 
 To make it even easier to cross-link different items throughout your project, GitHub offers a shorthand syntax. For example, if you leave a comment like `Duplicate of #8`, GitHub will recognize that #8 is an issue and create the appropriate link for you.
 
-![An autolinked issue](../media/2-autolinked-issue.png)
+![An autolinked issue.](../media/2-autolinked-issue.png)
 
 GitHub also links commits for you if you paste in the first seven or more characters of its ID.
 
-![An autolinked commit](../media/2-autolinked-commit.png)
+![An autolinked commit.](../media/2-autolinked-commit.png)
 
 In our scenario, these links could prove very valuable for ramping up if someone thought ahead to leave the context. For example, the current state of the sidebar may have had some known issues related to a JavaScript dependency. If the issue with that dependency was discussed in another issue that didn't explicitly mention "sidebar", then it would be difficult to find. However, if someone had thought ahead to link the issue in the discussion, then it could save you a lot of time now. Keep that in mind the next time you're documenting issues and pull requests.
 
@@ -87,4 +87,4 @@ Learn more about [Autolinked references and URLs](https://help.github.com/en/git
 
 Besides linking issues and commits, it's often helpful to associate other people with discussions. The easiest way to do this is by using an `@mention`. This kind of mention notifies the mentioned user so that they can participate in the discussion. It's also a good way to identify people associated with issues long after they have been closed.
 
-![An @mention](../media/2-user-mention.png)
+![An @mention.](../media/2-user-mention.png)

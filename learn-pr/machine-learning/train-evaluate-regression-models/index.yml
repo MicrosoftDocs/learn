@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.train-evaluate-regression-models
+metadata:
+  title: Train and evaluate regression models
+  description: "Regression is a commonly used kind of machine learning for predicting numeric values."
+  ms.date: 01/04/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Train and evaluate regression models
+summary: Regression is a commonly used kind of machine learning for predicting numeric values.
+abstract: |
+  In this module, you'll learn:
+  - When to use regression models.
+  - How to train and evaluate regression models using the Scikit-Learn framework.
+prerequisites: |
+  - Basic mathematical concepts
+  - Programming with Python
+iconUrl: /learn/achievements/train-and-evaluate-regression-models.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- vs-code
+units:
+- learn.wwl.train-evaluate-regression-models.introduction
+- learn.wwl.train-evaluate-regression-models.what-is-regression
+- learn.wwl.train-evaluate-regression-models.exercise-model
+- learn.wwl.train-evaluate-regression-models.discover-new-regression-models
+- learn.wwl.train-evaluate-regression-models.exercise-powerful-models
+- learn.wwl.train-evaluate-regression-models.improve-models
+- learn.wwl.train-evaluate-regression-models.exercise-optimize-save-models
+- learn.wwl.train-evaluate-regression-models.knowledge-check
+- learn.wwl.train-evaluate-regression-models.summary
+badge:
+  uid: learn.wwl.train-evaluate-regression-models.badge

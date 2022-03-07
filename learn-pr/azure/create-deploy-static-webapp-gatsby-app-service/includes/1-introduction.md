@@ -20,6 +20,6 @@ In this module, you will:
 
 - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
 - Familiarity with editing text and code files in any text editor
-- Beginner-level experience building simple web applications with React
+- Beginner-level experience building applications with Gatsby
 - Experience using the command line, including Git operations
 - A GitHub account

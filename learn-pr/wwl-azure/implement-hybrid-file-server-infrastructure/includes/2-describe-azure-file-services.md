@@ -43,7 +43,7 @@ Azure Files supports two storage tiers: premium, and standard. Standard file sha
 
 |Storage tier|Description|
 |------------|------------------------------------------------------------|
-|Premium|Premium tier content is stored on solid-state drives (SSDs), and are available only in the FileStorage type of storage account. Provide consistent high performance and low latency. Are available only for LRS and ZRS storage accounts. Not available in all Azure regions.|
+|Premium|Premium tier content is stored on solid-state drives (SSDs), and are available only in the FileStorage type of storage account. Provide consistent high performance and low latency. Are available only for LRS storage accounts. Not available in all Azure regions.|
 |Standard|Standard tier content is stored on hard drives and deploy in the general-purpose version 2 (GPv2) storage account type. Provide performance for input/output (I/O) workloads such as general-purpose file shares and dev/test environments. They are available for LRS, ZRS, GRS, and GZRS, in all Azure regions.|
 
 ### Common uses of Azure Files

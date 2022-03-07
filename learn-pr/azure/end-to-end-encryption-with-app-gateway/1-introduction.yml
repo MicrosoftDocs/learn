@@ -3,12 +3,11 @@ uid: learn.end-to-end-encryption-with-app-gateway.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 06/28/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 02/22/2022
+  author: vhorne
+  ms.author: victorh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Introduction
 durationInMinutes: 5
 content: |

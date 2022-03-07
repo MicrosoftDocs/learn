@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.hpc-storage-considerations.4-traffic-considerations
+title: File-system traffic considerations
+metadata:
+  title: File-system traffic considerations
+  description: A discussion of the various file-access traffic patterns and how each can affect your HPC workload. 
+  ms.date: 12/29/2020
+  author: scjescho
+  ms.author: scjescho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-traffic-considerations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A read-only copy of a file system that's taken at a point in time is known as:"
+    choices:
+    - content: "A backup"
+      isCorrect: false
+      explanation: "Incorrect. A backup is a point-in-time copy of data."
+    - content: "Checkpointing"
+      isCorrect: false
+      explanation: "Incorrect. Checkpointing creates a copy of the state of an application and its data."
+    - content: "A snapshot"
+      isCorrect: true
+      explanation: "Correct. A snapshot is a read-only copy of a file system."
+  - content: "The potential maximum file count and size that your workload requires is known as the:"  
+    choices:
+    - content: "Data"
+      isCorrect: false
+      explanation: "Incorrect. Data is a generic term for files and information."
+    - content: "Working set"
+      isCorrect: true
+      explanation: "Correct. A working set is the potential maximum file count and size that your workload requires."
+    - content: "Directory"
+      isCorrect: false
+      explanation: "Incorrect. A directory is a data structure that records file information in a file system."

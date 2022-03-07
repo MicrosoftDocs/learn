@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.explore-sap-hana-alerts
+title: Explore SAP HANA alerts
+metadata:
+  title: Explore SAP HANA alerts
+  description: "Explore SAP HANA alerts"
+  ms.date: 01/28/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-explore-sap-hana-alerts.md)]

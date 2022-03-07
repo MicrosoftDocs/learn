@@ -14,7 +14,7 @@ So why is it such a big deal? Changes to a package can introduce risk. Risk that
 
 Semantic versioning is how you express the type of change that you or some other developer is introducing to a library. Semantic versioning works by ensuring a package has a version number and that the version number is divided up into these sections:
 
-- **Major version**. The leftmost number. For example, the 1 in 1.0.0. A change to this number means that you can expect breaking changes in code. You might need to rewrite part of your code.
+- **Major version**. The leftmost number. For example, the 1 in 1.0.0. A change to this number means that you can expect breaking changes in the code. You might need to rewrite part of your code.
 - **Minor version**. The middle number. For example, the 2 in 1.2.0. A change to this number means that features have been added. Your code should still work. It's generally safe to accept the update.
 - **Patch version**. The rightmost number. For example, the 3 in 1.2.3. A change to this number means that a change has been applied that fixes something in the code that should have worked. It should be safe to accept the update.
 
@@ -28,7 +28,7 @@ This table illustrates how the version number changes for each version type:
 
 ## Update a package by using npm
 
-There are two ways to install a package. You can use either the `install` command or the `update` command. At one time, there were differences between these two commands, but now they act more like aliases for one another. A typical command to update a package might look like this one: `npm update <name of package>@<optional argument with version number>`.
+There are two ways to install a package. You can run either the `install` command or the `update` command. At one time, there were differences between these two commands, but now they act more like aliases for one another. A typical command to update a package might look like this one: `npm update <name of package>@<optional argument with version number>`.
 
 What happens at this point depends on two things:
 
@@ -63,11 +63,11 @@ Here are some patterns that you can configure for major/minor/patch version:
 
 In addition to the package.json manifest file, you also have the package-lock.json file. The latter is generated when you do something that modifies the node_modules directory or anything that changes the dependencies in package.json. So it won't be created when you run `npm init`, but it will be created when you install a package, for example.
 
-This file should be committed to your repository. 
+This file should be committed to your repository.
 
-One reason to commit this file to your repository is that it guarantees exact installations. Remember how in package.json you define patterns for the types of installations you want, like patches, minor versions, or major versions? Patterns aren't exact. You won't know if you installed, for example, version 1.4 or 1.5 if you're using a `1.x` pattern. 
+One reason to commit this file to your repository is that it guarantees exact installations. Remember how in package.json you define patterns for the types of installations you want, like patches, minor versions, or major versions? Patterns aren't exact. You won't know if you installed, for example, version 1.4 or 1.5 if you're using a `1.x` pattern.
 
-And you might need to know which version you installed. Imagine you specify `1.x`. You're using version 1.2, and a 1.4 version is released. The new version ends up breaking your code. Someone installing your app will get a non-functioning app at that point. But, if there's a `package-lock.json` file stating 1.2 was used, 1.2 will be installed. So, who cares about this behavior? People who use your app and CI (continuous integration) tools.
+And you might need to know which version you installed. Imagine you specify `1.x`. You're using version 1.2, and a 1.4 version is released. The new version ends up breaking your code. Someone installing your app will get a non-functioning app at that point. But, if there's a `package-lock.json` file stating 1.2 was used, 1.2 will be installed. So, who cares about this behavior? People who use your app and continuous integration (CI)) tools.
 
 It's important to understand the process and which file determines when an installation occurs. 
 
@@ -98,7 +98,7 @@ The recommended workflow is to run these commands, in this order:
 1. Run `npm outdated`. This command lists all the outdated packages. It provides information in the `Wanted`, `Latest`, and `Location` columns.
 1. Run `npm update <optional package name>`. If you run this command with a package name specified, the command will try to update only the specified package. If you don't specify a package, the command will try to update all the packages in package.json.
 
-## Managing security issues
+## Manage security issues
 
 Every time you update or install a package, you'll get a log response just after the installation. The response tells you what version was installed and whether there are any vulnerabilities. A log might look like this example:
 

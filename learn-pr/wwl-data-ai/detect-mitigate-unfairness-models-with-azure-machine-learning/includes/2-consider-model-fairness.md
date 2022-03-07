@@ -1,6 +1,6 @@
-When we consider the concept of *fairness* in relation to predictions made by machine learning models, it helps to be clear about what we mean by "fair".
+When we consider the concept of *fairness* concerning predictions made by machine learning models, it helps to be clear about what we mean by "fair".
 
-For example, suppose a classification model is used to predict the probability of a successful loan repayment, and therefore influences whether or not the loan is approved. It's likely that the model will be trained using features that reflect characteristics of the applicant, such as:
+For example, suppose a classification model is used to predict the probability of successful loan repayment and therefore influences whether or not the loan is approved. The model will likely be trained using features that reflect the characteristics of the applicant, such as:
 
 - Age
 - Employment status
@@ -12,7 +12,7 @@ These features are used to train a binary classification model that predicts whe
 
 ![A set of 22 predictions for loan repayment in which 10 of applicants are predicted to repay, and 12 are predicted to default.](../media/loan-predictions.png)
 
-Suppose the model predicts that around 45% of applicants will successfully repay their loans. However, on reviewing loan approval records, you begin to suspect that that fewer loans are approved for applicants aged 25 or younger than for applicants who are over 25. How can you be sure the model is *fair* to applicants in both age groups?
+Suppose the model predicts that around 45% of applicants will successfully repay their loans. However, on reviewing loan approval records, you begin to suspect that fewer loans are approved for applicants aged 25 or younger than for applicants who are over 25. How can you be sure the model is *fair* to applicants in both age groups?
 
 ## Measuring disparity in predictions
 
@@ -24,7 +24,7 @@ Let's say we find that the model predicts that 36% of applicants aged 25 or youn
 
 At first glance, this comparison seems to confirm that there's bias in the model that discriminates against younger applicants. However, when you consider the population as a whole, it may be that younger people generally earn less than people more established in their careers, have lower levels of savings and assets, and have a higher rate of defaulting on loans.
 
-The important point to consider here is that just because we want to ensure fairness in regard to age, it doesn't necessarily follow that age is <u>not</u> a factor in loan repayment probability. It's possible that in general, younger people really are less likely to repay a loan than older people. To get the full picture, we need to look a little deeper into the predictive performance of the model for each subset of the population.
+The important point to consider here is that just because we want to ensure fairness regarding age, it doesn't necessarily follow that age is <u>not</u> a factor in loan repayment probability. It's possible that in general, younger people are less likely to repay a loan than older people. To get the full picture, we need to look a little deeper into the predictive performance of the model for each subset of the population.
 
 ## Measuring disparity in prediction performance
 
@@ -42,19 +42,19 @@ Let's say that we find that the recall for validation cases where the applicant 
 
 ## Potential causes of disparity
 
-When you find disparity between prediction rates or prediction performance metrics across sensitive feature groups, it's worth considering potential causes. These might include:
+When you find a disparity between prediction rates or prediction performance metrics across sensitive feature groups, it's worth considering potential causes. These might include:
 
 - Data imbalance. Some groups may be overrepresented in the training data, or the data may be skewed so that cases within a specific group aren't representative of the overall population.
-- Indirect correlation. The sensitive feature itself may not be predictive of the label, but there may be a hidden correlation between the sensitive feature and some other feature that influences the prediction. For example, it's likely that there's a correlation between age and credit history, and it's likely that there's a correlation between credit history and loan defaults. If the credit history feature is not included in the training data, it's possible that the training algorithm assigns predictive weight to Age without accounting for credit history, which might make a difference to loan repayment probability.
-- Societal biases. It's possible that subconscious biases in the data collection, preparation, or modeling process have influenced feature selection or other aspects of model design.
+- Indirect correlation. The sensitive feature itself may not be predictive of the label, but there may be a hidden correlation between the sensitive feature and some other feature that influences the prediction. For example, there's likely a correlation between age and credit history, and there's likely a correlation between credit history and loan defaults. If the credit history feature is not included in the training data, the training algorithm may assign a predictive weight to age without accounting for credit history, which might make a difference to loan repayment probability.
+- Societal biases. Subconscious biases in the data collection, preparation, or modeling process may have influenced feature selection or other aspects of model design.
 
 ## Mitigating bias
 
 Optimizing for fairness in a machine learning model is a *sociotechnical* challenge. In other words, it's not always something you can achieve purely by applying technical corrections to a training algorithm. However, there are some strategies you can adopt to mitigate bias, including:
 
-- Balance training and validation data. You can apply over-sampling or under-sampling techniques to balance data, and use stratified splitting algorithms to maintain representative proportions for training and validation.
+- Balance training and validation data. You can apply over-sampling or under-sampling techniques to balance data and use stratified splitting algorithms to maintain representative proportions for training and validation.
 - Perform extensive feature selection and engineering analysis. Make sure you fully explore the interconnected correlations in your data to try to differentiate features that are directly predictive from features that encapsulate more complex, nuanced relationships. You can use the [model interpretability support in Azure Machine Learning](https://docs.microsoft.com/learn/modules/explain-machine-learning-models-with-azure-machine-learning/) to understand how individual features influence predictions.
 - Evaluate models for disparity based on significant features. You can't easily address the bias in a model if you can't quantify it.
-- Trade off overall predictive performance for lower disparity in predictive performance between sensitive feature groups. A model that is 99.5% accurate with comparable performance across all groups is often more desirable than a model that is 99.9% accurate, but discriminates against a particular subset of cases.
+- Trade-off overall predictive performance for the lower disparity in predictive performance between sensitive feature groups. A model that is 99.5% accurate with comparable performance across all groups is often more desirable than a model that is 99.9% accurate but discriminates against a particular subset of cases.
 
 The rest of this module explores the **Fairlearn** package - a Python package that you can use to evaluate and mitigate unfairness in machine learning models.

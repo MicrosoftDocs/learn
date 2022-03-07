@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.plan-deploy-azure-arc-enabled-servers.test-azure-arc-enabled-server-capabilities
+title: Test Azure Arc-enabled servers capabilities using Azure VMs
+metadata:
+  title: Test Azure Arc-enabled servers capabilities using Azure VMs
+  description: Walkthrough of how to prepare and onboard a Windows VM on Azure to Azure Arc-enabled servers.
+  ms.date: 09/21/2021
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-test-azure-arc-enabled-server-capabilities.md)]

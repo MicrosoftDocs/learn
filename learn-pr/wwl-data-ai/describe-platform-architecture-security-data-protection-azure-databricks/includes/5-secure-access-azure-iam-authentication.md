@@ -1,10 +1,10 @@
-[Azure role-based access control (RBAC)](https://docs.microsoft.com/azure/role-based-access-control/overview) is the authorization system you use to manage access to Azure resources. To grant access, you assign roles to users, groups, service principals, or managed identities at a particular scope.
+[Azure role-based access control (RBAC)](/azure/role-based-access-control/overview) is the authorization system you use to manage access to Azure resources. To grant access, you assign roles to users, groups, service principals, or managed identities at a particular scope.
 
 **Access control (IAM)** is the blade that you use to assign roles to grant access to Azure resources. It's also known as identity and access management and appears in several locations in the Azure portal.
 
 The following shows an example of the Access control (IAM) blade for an Azure Databricks service:
 
-![Azure Databricks access control (IAM)](../media/databricks-iam.png)
+![Azure Databricks access control (IAM).](../media/databricks-iam.png)
 
 RBAC and IAM are both enabled by Azure Active Directory (Azure AD), an enterprise identity service that provides single sign-on and multi-factor authentication, which helps users securely sign in and access resources in:
 
@@ -25,7 +25,7 @@ Customers can sync Azure Active Directory groups with Databricks groups using SC
 
 Example attribute mappings:
 
-![Attribute mappings](../media/scim-attribute-mappings.png)
+![Attribute mappings.](../media/scim-attribute-mappings.png)
 
 ## Conditional access
 

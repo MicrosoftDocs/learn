@@ -1,3 +1,5 @@
+Congratulations, space explorer! You've learned the basic concepts on quantum computing, and you've successfully completed the first steps of the training program. 
+
 In this part, you explore some famous quantum computing algorithms.
 
 You'll learn the basics of how they use superposition, interference, and entanglement to achieve a quantum advantage over classical algorithms. In later modules, you'll explore these algorithms in more detail.
@@ -29,7 +31,7 @@ this capacity, you can encode the input $x$ that has the binary representation $
 into an $n$-qubit register: $|x\rangle=|x_0x_1...x_{n-1}\rangle$.
 
 For more information about quantum oracles, see the [conceptual documentation for the
-Quantum Development Kit (QDK)](https://docs.microsoft.com/quantum/concepts/oracles?azure-portal=true).
+Quantum Development Kit (QDK)](/quantum/concepts/oracles?azure-portal=true).
 
 ## Deutsch–Jozsa algorithm
 

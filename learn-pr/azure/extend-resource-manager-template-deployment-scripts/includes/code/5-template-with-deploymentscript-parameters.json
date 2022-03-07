@@ -1,0 +1,152 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.1",
+    "apiProfile": "",
+    "parameters": {
+        "filesToCopy": {
+            "type": "array",
+            "defaultValue": [ "appsettings.json" ],
+            "metadata": {
+                "description": "List of files to copy to application storage account."
+            }
+        }
+    },
+    "variables": {
+        "singleQuote": "'",
+        "storageAccountName": "[concat('storage', uniqueString(resourceGroup().id))]",
+        "storageBlobContainerName": "config",
+        "userAssignedIdentityName": "configDeployer",
+        "roleAssignmentName": "[guid(concat(resourceGroup().id, 'contributor'))]",
+        "contributorRoleDefinitionId": "[resourceId('Microsoft.Authorization/roleDefinitions', 'b24988ac-6180-42a0-ab88-20f7382dd24c')]",
+        "deploymentScriptName": "CopyConfigScript"
+    },
+    "functions": [],
+    "resources": [
+        {
+            "name": "[variables('storageAccountName')]",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2019-06-01",
+            "tags": {
+                "displayName": "[variables('storageAccountName')]"
+            },
+            "location": "[resourceGroup().location]",
+            "kind": "StorageV2",
+            "sku": {
+                "name": "Standard_LRS",
+                "tier": "Standard"
+            },
+            "properties": {
+                "encryption": {
+                    "services": {
+                        "blob": {
+                            "enabled": true
+                        }
+                    },
+                    "keySource": "Microsoft.Storage"
+                },
+                "supportsHttpsTrafficOnly": true
+            }
+        },
+        {
+            "type": "Microsoft.Storage/storageAccounts/blobServices",
+            "apiVersion": "2019-04-01",
+            "name": "[concat(variables('storageAccountName'), '/default')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
+            ]
+        },
+        {
+            "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
+            "apiVersion": "2019-04-01",
+            "name": "[concat(variables('storageAccountName'),'/default/',variables('storageBlobContainerName'))]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Storage/storageAccounts/blobServices', variables('storageAccountName'), 'default')]",
+                "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
+            ],
+            "properties": {
+                "publicAccess": "Blob"
+            }
+        },
+        {
+            "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+            "apiVersion": "2018-11-30",
+            "name": "[variables('userAssignedIdentityName')]",
+            "location": "[resourceGroup().location]"
+        },
+        {
+            "type": "Microsoft.Authorization/roleAssignments",
+            "apiVersion": "2020-04-01-preview",
+            "name": "[variables('roleAssignmentName')]",
+            "dependsOn": [ "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', variables('userAssignedIdentityName'))]" ],
+            "properties": {
+                "roleDefinitionId": "[variables('contributorRoleDefinitionId')]",
+                "principalId": "[reference(resourceId('Microsoft.ManagedIdentity/userAssignedIdentities', variables('userAssignedIdentityName')), '2015-08-31-preview').principalId]",
+                "scope": "[resourceGroup().id]",
+                "principalType": "ServicePrincipal"
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deploymentScripts",
+            "apiVersion": "2020-10-01",
+            "name": "[variables('deploymentScriptName')]",
+            "location": "[resourceGroup().location]",
+            "kind": "AzurePowerShell",
+            "dependsOn": [
+                "[resourceId('Microsoft.Authorization/roleAssignments', variables('roleAssignmentName'))]",
+                "[resourceId('Microsoft.Storage/storageAccounts/blobServices/containers', variables('storageAccountName'), 'default', variables('storageBlobContainerName'))]"
+            ],
+            "identity": {
+                "type": "UserAssigned",
+                "userAssignedIdentities": {
+                    "[resourceId('Microsoft.ManagedIdentity/userAssignedIdentities',variables('userAssignedIdentityName'))]": {}
+                }
+            },
+            "properties": {
+                "arguments": "[concat( '-File ', variables('singleQuote'), string(parameters('filesToCopy')), variables('singleQuote'))]",
+                "environmentVariables": [
+                    {
+                        "name": "ResourceGroupName",
+                        "value": "[resourceGroup().name]"
+                    },
+                    {
+                        "name": "StorageAccountName",
+                        "value": "[variables('storageAccountName')]"
+                    },
+                    {
+                        "name": "StorageContainerName",
+                        "value": "[variables('storageBlobContainerName')]"
+                    }
+                ],
+                "azPowerShellVersion": "3.0",
+                "scriptContent": "
+                    param([string]$File)
+                    $fileList = $File -replace '(\[|\])' -split ',' | ForEach-Object { $_.trim() }
+                    $storageAccount = Get-AzStorageAccount -ResourceGroupName $env:ResourceGroupName -Name $env:StorageAccountName -Verbose
+                    $count = 0
+                    $DeploymentScriptOutputs = @{}
+                    foreach ($fileName in $fileList) {
+                        Write-Host \"Copying $fileName to $env:StorageContainerName in $env:StorageAccountName.\"
+                        Invoke-RestMethod -Uri \"https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/mslearn-arm-deploymentscripts-sample/$fileName\" -OutFile $fileName
+                        $blob = Set-AzStorageBlobContent -File $fileName -Container $env:StorageContainerName -Blob $fileName -Context $storageAccount.Context
+                        $DeploymentScriptOutputs[$fileName] = @{}
+                        $DeploymentScriptOutputs[$fileName]['Uri'] = $blob.ICloudBlob.Uri
+                        $DeploymentScriptOutputs[$fileName]['StorageUri'] =$blob.ICloudBlob.StorageUri
+                        $count++
+                    }
+                    Write-Host \"Finished copying $count files.\"                    
+                ",
+                "retentionInterval": "P1D"
+            }
+        }
+    ],
+    "outputs": {
+        "fileUri": {
+            "type": "object",
+            "value": "[reference(variables('deploymentScriptName')).outputs]"
+        },
+        "storageAccountName": {
+            "type": "string",
+            "value": "[variables('storageAccountName')]"
+        }
+    }
+}

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.predictive-maintenance-model-builder.knowledge-check-scenario-data
+title: Knowledge check - Scenario and data
+metadata:
+  unitType: knowledge_check
+  title: "Knowledge check - Scenario and data"
+  description: "Review your knowledge of scenarios and data preparation."
+  ms.date: 10/25/2021
+  author: luisquintanilla
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+  ms.custom: team=nextgen
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What's one thing that files with the *.mbconfig* extension allow you to do?"
+    choices:
+    - content: "Save your Visual Studio settings."
+      isCorrect: false
+      explanation: "Files with the *.mbconfig* extension save settings and state related to Model Builder, not to Visual Studio."
+    - content: "Save your Model Builder state."
+      isCorrect: true
+      explanation: "Correct! If you close Model Builder at any point, you can open the *.mbconfig* file and pick up where you left off."
+    - content: "Provide a name for the .NET project where you're adding a machine learning model."
+      isCorrect: false
+      explanation: "Although the *.mbconfig* file allows you to provide a name for your model, it doesn't allow you to set the name of the .NET project where you're adding a machine learning model."
+  - content: "What is the value that you're trying to predict commonly called?"
+    choices:
+    - content: "Label"
+      isCorrect: true
+      explanation: "Correct! The value that you're trying to predict is often called a label."
+    - content: "Feature"
+      isCorrect: false
+      explanation: "Features are the inputs that determine the value you're trying to predict."
+    - content: "Supervised learning"
+      isCorrect: false
+      explanation: "Supervised learning is the broader machine learning task where the value that you're trying to predict is known ahead of time."
+  - content: "What's one reason you would choose Azure over a local training environment?"
+    choices:
+    - content: "You can't train locally with Model Builder."
+      isCorrect: false
+      explanation: "By using Model Builder, you can train locally on your computer and in Azure, depending on the scenario."
+    - content: "You want to use a GPU for consumption."
+      isCorrect: false
+      explanation: "Model consumption happens after training."
+    - content: "You don't have a GPU or a computer with enough CPU or RAM for resource-intensive scenarios like image classification."
+      isCorrect: true
+      explanation: "Correct! By using Azure compute resources, you can lighten the load on your local computer."

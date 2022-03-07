@@ -147,7 +147,7 @@ Enter the following values and then select **Add secret**:
 * **Name**: Enter **AZURE_CREDENTIALS**.
 * **Value**: Paste the JSON output that you copied earlier.
 
-![Screenshot that shows adding new service principal secret info to a GitHub secret](../media/9-create-github-sp-2.gif)
+![Screenshot that shows adding new service principal secret info to a GitHub secret.](../media/9-create-github-sp-2.gif)
 
 This is the information that you'll need to specify the authentication in the workflow.
 
@@ -193,10 +193,10 @@ You can create a workflow file and then push/upload the file to the repository. 
           - name: Deploy ARM Template
             uses: azure/arm-deploy@v1
             with:
-              scope: subscription
+              scope: resourcegroup
               subscriptionId: ${{ env.AZURE_SUBSCRIPTION_ID }}
               resourceGroupName: ${{ env.AZURE_RESOURCE_GROUP }}
-              template: $GITHUB_WORKSPACE/azuredeploy.json
+              template: ./azuredeploy.json
     ```
 
     The workflow file has three sections:

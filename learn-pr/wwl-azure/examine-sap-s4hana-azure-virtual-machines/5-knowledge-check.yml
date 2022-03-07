@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-sap-s4hana-azure-virtual-machines.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/17/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is a potential single point of failure when deployed to a single virtual machine?"
+    choices:
+    - content: "SAP Web Dispatcher pool"
+      isCorrect: false
+      explanation: "Incorrect. The SAP Web Dispatcher pool is not normally a potential single point of failure when deployed to a single virtual machine."
+    - content: "Central Services"
+      isCorrect: true
+      explanation: "Correct. The Central Services is a potential single point of failure when deployed to a single VM, a typical deployment when high availability is not a requirement. To implement a high availability solution, deploy multiple Central Services instances and configure them as members of a failover cluster with a shared disk or a file share providing highly available storage accessible by all cluster nodes."
+    - content: "Application servers pool"
+      isCorrect: false
+      explanation: "Incorrect. The application servers pool is not normally a potential single point of failure when deployed to a single virtual machine."

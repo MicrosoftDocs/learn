@@ -1,6 +1,6 @@
 Azure Spring Cloud (ASC) is a managed service to run Spring Boot microservices, jointly created and supported by Microsoft and Pivotal.
 
-This workshop is a condensed version of our [full Azure Spring Cloud training](https://github.com/microsoft/azure-spring-cloud-training), and it is aimed at making you get started using Azure Spring Cloud in one hour and a half, providing you the key concepts and tools.
+This workshop is a condensed version of our [full Azure Spring Cloud training](https://github.com/microsoft/azure-spring-cloud-training), and it is aimed at making you get started using Azure Spring Cloud in 30 minutes, providing you the key concepts and tools.
 
 ## Learning objectives
 
@@ -15,6 +15,6 @@ In this module, you will:
 
 ## Prerequisites
 
- - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=azurespringcloud-mslearn-judubois)
+ - [Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=azurespringcloud-mslearn-judubois)
  - [Java 8](https://www.azul.com/downloads/zulu-community/?architecture=x86-64-bit&package=jdk) and an IDE
  - [cURL](https://curl.haxx.se/) or a similar HTTP utility

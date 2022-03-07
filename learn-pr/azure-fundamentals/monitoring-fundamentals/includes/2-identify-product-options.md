@@ -8,6 +8,8 @@ Several basic questions or concerns face all companies that use the cloud.
 - How can we quickly determine the cause of an outage?
 - How can we learn about planned downtime?
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWHb7u]
+
 Fortunately, by using a combination of monitoring solutions on Azure, you can:
 - Gain answers, insights, and alerts to help ensure that you've optimized your cloud usage.
 - Ascertain the root cause of unplanned issues.
@@ -17,13 +19,15 @@ Fortunately, by using a combination of monitoring solutions on Azure, you can:
 
 At a high level, there are three primary Azure monitoring offerings, each of which is aimed at a specific audience and use case and provides a diverse set of tools, services, programmatic APIs, and more.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGw3I]
+
 ### Azure Advisor
 
 [Azure Advisor](https://azure.microsoft.com/services/advisor/?azure-portal=true) evaluates your Azure resources and makes recommendations to help improve reliability, security, and performance, achieve operational excellence, and reduce costs.  Advisor is designed to help you save time on cloud optimization. The recommendation service includes suggested actions you can take right away, postpone, or dismiss.
 
 The recommendations are available via the Azure portal and the API, and you can set up notifications to alert you to new recommendations.
 
-When you're in the Azure portal, the Advisor dashboard displays personalized recommendations for all your subscriptions, and you can use filters to home in on recommendations for specific subscriptions, resource groups, or services. The recommendations are divided into five categories:
+When you're in the Azure portal, the Advisor dashboard displays personalized recommendations for all your subscriptions, and you can use filters to select recommendations for specific subscriptions, resource groups, or services. The recommendations are divided into five categories:
 
 - **Reliability**: Used to ensure and improve the continuity of your business-critical applications.
 - **Security**: Used to detect threats and vulnerabilities that might lead to security breaches.

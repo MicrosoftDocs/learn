@@ -10,7 +10,7 @@ You also learned about incorporating backup and restore into your recovery strat
 
 To learn more about the Azure Well-Architected Framework and Azure services to improve the reliability of your architecture, visit the following articles:
 
-- [Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true)
-- [About Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview?azure-portal=true)
-- [Regions and Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview?azure-portal=true)
-- [What is the Azure Backup service?](https://docs.microsoft.com/azure/backup/backup-overview)
+- [Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true)
+- [About Site Recovery](/azure/site-recovery/site-recovery-overview?azure-portal=true)
+- [Regions and Availability Zones in Azure](/azure/availability-zones/az-overview?azure-portal=true)
+- [What is the Azure Backup service?](/azure/backup/backup-overview)

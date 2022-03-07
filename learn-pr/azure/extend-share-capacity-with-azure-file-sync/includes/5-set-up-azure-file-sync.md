@@ -6,15 +6,15 @@ To support Azure File Sync, there are a number of resources that you need to cre
 
 ## 1. Storage account
 
-The storage account is used to store the file share. In Azure, a storage account is where all Azure Storage data objects, like blobs, files, queues, and disks, are stored. There are some limitations on the kind of storage account that can be used. Select StorageV2 with a hot access tier.
+The storage account is used to store the file share. In Azure, a storage account is where all Azure Storage data objects, like blobs, files, queues, and disks, are stored. There are some limitations on the kind of storage account that can be used to store file shares. There are also multiple access tiers that you can select from based on your workload. When using Azure File Sync, we recommend selecting standard access tiers (transaction optimized, hot, cool). Select StorageV2 with a transaction optimized access tier.
 
 ## 2. File share
 
-The file share is the cloud version of a normal on-premises file share. It will store all files and folders. You control the size of the file share by specifying a quota size. You can increase the quota later if you need to.
+The file share is the cloud version of a normal on-premises file share. It will store all files and folders. You can control the size of the file share by specifying a quota size. You can change the quota later if you need to.
 
 ## 3. Storage Sync Service
 
-The Storage Sync Service is responsible for establishing trust between your company's server and Azure. This service is where you connect the file share in Azure with the file directory on your server.
+The Storage Sync Service is responsible for establishing trust between your company's server and Azure. This service is where you connect the file share in Azure with the file share on your server.
 
 ## 4. Sync group
 

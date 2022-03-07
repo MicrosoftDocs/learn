@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentType": {
+      "type": "string",
+      "allowedValues": [
+        "Production",
+        "NonProduction"
+      ],
+      "metadata": {
+        "description": "The type of the environment to deploy. This will determine the SKUs and cost of the resources."
+      }
+    },
+    "key": {
+      "type": "secureString",
+      "metadata": {
+        "description": "The secret key to use."
+      }
+    },
+    "location": {
+      "type": "string",
+      "metadata": {
+        "description": "The Azure region into which the resources should be deployed."
+      }
+    },
+    "sqlServerCount": {
+      "type": "int",
+      "maxValue": 5,
+      "metadata": {
+        "description": "The number of Azure SQL logical servers to create."
+      }
+    }
+  },
+  "resources": []
+}

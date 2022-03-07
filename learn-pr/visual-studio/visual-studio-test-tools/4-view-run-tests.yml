@@ -1,0 +1,44 @@
+### YamlMime:ModuleUnit
+uid: learn.visual-studio.visual-studio-test-tools.view-run-tests
+title: View, run, and debug tests
+metadata:
+  unitType: learning-content
+  title: View, run, and debug tests
+  description: Learn how to view, run, and debug tests in Visual Studio.
+  author: kendrahavens
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.date: 07/19/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-visual-studio
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-view-run-tests.md)]
+quiz:
+  questions:
+  - content: How can you run tests in Visual Studio?
+    choices:
+    - content: "You can run tests only from the right-click menu in Visual Studio."
+      isCorrect: false
+      explanation: "Incorrect. You can run tests by using several other options."
+    - content: "You can run tests only from Test Explorer in Visual Studio."
+      isCorrect: false
+      explanation: "Incorrect. You can run tests by using several other options."
+    - content: "You can run tests by using the right-click menu, keyboard shortcuts, or CodeLens icons."
+      isCorrect: true
+      explanation: "Correct! You can run tests from several locations in Visual Studio. Use whatever feels natural to you and helps you get into your most productive coding flow."
+  - content: How does the Group By setting in Test Explorer allow you to view test groupings?
+    choices:
+    - content: "By project"
+      isCorrect: false
+      explanation: "Not quite! Try again."
+    - content: "By class"
+      isCorrect: false
+      explanation: "Not quite! Try again."
+    - content: "By project, by namespace, and then by class"
+      isCorrect: false
+      explanation: "Not quite! Try again."
+    - content: "All of the above, in any order"
+      isCorrect: true
+      explanation: "Correct! The Group By setting in Test Explorer is customizable and can help you organize viewing your tests with any of the preceding combinations and more."
+      

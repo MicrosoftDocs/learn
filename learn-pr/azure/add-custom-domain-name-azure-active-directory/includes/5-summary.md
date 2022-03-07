@@ -6,5 +6,4 @@ By reducing the number of usernames your employees must remember, you improve th
 
 ## Learn more
 
-- [Take over an unmanaged directory as administrator in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
-
+- [Take over an unmanaged directory as administrator in Azure Active Directory](/azure/active-directory/users-groups-roles/domains-admin-takeover)

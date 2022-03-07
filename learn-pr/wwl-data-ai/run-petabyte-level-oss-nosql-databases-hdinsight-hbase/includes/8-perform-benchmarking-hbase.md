@@ -10,7 +10,7 @@ If you wish to perform the steps in the exercise, ensure you have the below:
 
 To provision HDInsight HBase with the new experience on Azure Management Portal, perform the below steps.
 
-1. Go to the [Azure portal](http://portal.azure.com). Log in using your Azure account credentials.
+1. Go to the [Azure portal](https://portal.azure.com). Log in using your Azure account credentials.
 
 	![Logging into the Azure Portal.](../media/log-into-azure.png)
 
@@ -106,7 +106,7 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 1. Log in to HDInsight shell
 	- Steps to set up and run YCSB tests on both clusters are identical.
 	- On the cluster page on the Azure portal , navigate to the SSH + Cluster log in and use the Hostname and SSH path to ssh into the cluster. The path should have below format.
-	- ssh <sshuser>@<clustername>.azurehdinsight.net 
+	- ssh \<sshuser\>@\<clustername\>.azurehdinsight.net 
 
 		![Connecting to the Azure HDInsight cluster in the Azure Portal.](../media/connect-hdinsight.png)
 

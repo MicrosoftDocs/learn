@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.communication-service-send-sms-console-app.knowledge-check
+title: Check your knowledge
+metadata:
+  title: Knowledge check
+  description: Review concepts around using Azure Communication Services to send an SMS message
+  ms.date: 03/03/2021
+  author: mikben
+  ms.author: mikben
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+quiz:
+  title: 'Knowledge check'
+  questions:
+  - content: 'How can Azure Communication Services be used to send an SMS message?'
+    choices:
+    - content: 'I can create a Communication Services resource using the Azure portal. This allows me to provision phone numbers.'
+      isCorrect: false
+      explanation: 'Azure Communication Services resources can be provisioned through the Azure portal and allow you to configure telephony solutions, including SMS.'
+    - content: 'I can provision an SMS-enabled phone number that will allow me to send SMS messages.'
+      isCorrect: false
+      explanation: 'Phone numbers can be provisioned using the Azure portal by navigating to your Communication Services resource.'
+    - content: 'I can send an SMS message by using the Azure Communication Services client library.'
+      isCorrect: false
+      explanation: 'Phone numbers can be used to send SMS messages via the Communication Services client libraries.'
+    - content: 'All of the above'
+      isCorrect: true
+      explanation: 'Great job! You know how to use Azure Communication Services to send an SMS message.'
+  - content: 'What can Azure Communication Services help you with?'
+    choices:
+    - content: 'Azure Communication Services can help me send SMS messages with code.'
+      isCorrect: false
+      explanation: 'Azure Communication Services can be used to send SMS messages using one of the Communication Services client libraries.'
+    - content: 'Azure Communication Services can help me place voice and video calls with code.'
+      isCorrect: false
+      explanation: 'Azure Communication Services client libraries can be used to place voice and video calls with code.'
+    - content: 'Azure Communication Services can help me connect my existing application to Microsoft Teams.'
+      isCorrect: false
+      explanation: 'Azure Communication Services supports Teams Interoperability.'
+    - content: 'All of the above'
+      isCorrect: true
+      explanation: "Great job! You've learned about the Azure Communication Services offering."
+  - content: 'What scenarios are supported by Azure Communication Services?'
+    choices:
+    - content: 'Browser-to-browser, browser-to-app, and app-to-app communication'
+      isCorrect: false
+      explanation: 'Azure Communication Services supports browser-to-browser, browser-to-app, and app-to-app communication.'
+    - content: 'Users interacting with bots or other services.'
+      isCorrect: false
+      explanation: 'Azure Communication Services supports users interacting with bots or other services.'
+    - content: 'Users and bots interacting over the public switched telephony network'
+      isCorrect: false
+      explanation: 'Azure Communication Services supports users and bots interacting over the public switched telephony network.'
+    - content: 'All of the above'
+      isCorrect: true
+      explanation: "Great job! You've learned about the Azure Communication Services scenarios."

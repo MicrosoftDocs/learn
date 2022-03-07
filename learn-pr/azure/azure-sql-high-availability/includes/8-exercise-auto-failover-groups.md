@@ -18,12 +18,12 @@ This exercise will guide you through configuring auto-failover groups for your A
 
 ### Configure the environment
 
-1. Copy the following code into Notepad or another text editor. Provide your information. Add your SQL authentication password. For `$drLocation`, supply the region where you want your failover group to be. Ideally, choose a region that's paired to the region of your current server. You can check the [list of paired regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions?azure-portal=true). At a minimum, it can't be the region where your original database is. Finally, add the IP address of your local computer. If you need to determine the IP address, open PowerShell on the local computer and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content`.
+1. Copy the following code into Notepad or another text editor. Provide your information. Add your SQL authentication password. For `$drLocation`, supply the region where you want your failover group to be. Ideally, choose a region that's paired to the region of your current server. You can check the [list of paired regions](/azure/best-practices-availability-paired-regions?azure-portal=true). At a minimum, it can't be the region where your original database is. Finally, add the IP address of your local computer. If you need to determine the IP address, open PowerShell on the local computer and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content`.
 
     ```powershell
     # Add your info
     $password = "password"
-    $drLocation = "eastus2"
+    $drLocation = "westus2"
     $ipAddress = "xx.xx.xx.xx"
     ```
 
@@ -112,7 +112,7 @@ In this section, you'll use two ostress workloads to check the `Updateability` (
 1. You'll use the first Command Prompt window to check the status of your primary server in the failover group you created. Run this command, using your server name and password:
 
     ```cmd
-    .\ostress.exe -S"<server-name>-fg.database.windows.net" -Q"SELECT DATABASEPROPERTYEX(DB_NAME(),'Updateability')" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r50000 -oprimary
+    .\ostress.exe -S"<server-name>-fg.database.windows.net" -Q"SELECT DATABASEPROPERTYEX(DB_NAME(),'Updateability')" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r5000 -oprimary
     ```
 
     > [!NOTE]
@@ -121,7 +121,7 @@ In this section, you'll use two ostress workloads to check the `Updateability` (
 1. You'll use the second Command Prompt window to check the status of your secondary server in the failover group you created. Run this command, using your server name and password:  
 
     ```cmd
-    ostress.exe -S"<server-name>-fg.secondary.database.windows.net" -Q"SELECT DATABASEPROPERTYEX(DB_NAME(),'Updateability')" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r50000 -osecondary
+    ostress.exe -S"<server-name>-fg.secondary.database.windows.net" -Q"SELECT DATABASEPROPERTYEX(DB_NAME(),'Updateability')" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r5000 -osecondary
     ```
 
 The result of the first command should be `READ_WRITE` because it checks the primary failover group server and you haven't initiated any failovers.  

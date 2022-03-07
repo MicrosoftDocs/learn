@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure
+metadata:
+  title: Examine backup security licensing and support considerations for SAP HANA on Azure (Large Instances)
+  description: "This module covers considerations for backup, security, licensing, and support of SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Examine backup security licensing and support considerations for SAP HANA on Azure (Large Instances)
+summary: Considerations for backup, security, licensing, and support of SAP HANA on Azure (Large Instances).
+abstract: |
+  After completing this module, you will be able to:
+  - Explore backup considerations for SAP HANA on Azure (Large Instances).
+  - Examine SAP HANA on Azure (Large Instances) security, licensing and support considerations.
+  - Explore the division of management responsibilities.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/sap-hana-backup-security-licensing.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.introduction
+- learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.explore-backup-large-instances
+- learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.explore-storage-snapshots-of-large-instances
+- learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.examine-storage-snapshot-considerations
+- learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.examine-large-instances-security-considerations
+- learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.explore-large-instances-licensing-considerations
+- learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.explore-large-instances-support-considerations
+- learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.explore-division-of-management-responsibilities
+- learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.knowledge-check
+- learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.summary
+badge:
+  uid: learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.badge

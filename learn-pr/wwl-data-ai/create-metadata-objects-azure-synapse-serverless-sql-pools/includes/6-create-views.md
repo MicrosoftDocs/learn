@@ -1,12 +1,12 @@
-Views will allow you to reuse queries that you create. Views are also needed if you want to use tools such as Power BI to access the data in conjunction with SQL serverless. 
+Views will allow you to reuse queries that you create. Views are also needed if you want to use tools such as Power BI to access the data in conjunction with serverless SQL pools. 
 
 ## Prerequisites 
 
-Your first step is to create a database where you will execute the queries. Then initialize the objects by executing [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) on that database. This setup script will create the data sources, database scoped credentials, and external file formats that are used in these samples. 
+Your first step is to create a database where you will execute the queries. Then initialize the objects by executing the following [setup script]( https://github.com/Azure-Samples/Synapse/blob/master/SQL/Samples/LdwSample/SampleDB.sql) on that database. This setup script will create the data sources, database scoped credentials, and external file formats that are used in these samples. 
 
 ## Create a view 
 
-You can create views the same way you create regular SQL Server views. The following query creates view that reads population.csv file. 
+You can create views in the same way you create regular SQL Server views. The following query creates a view that reads population.csv file. 
 
 > [!NOTE]
 > Change the first line in the query, i.e., [mydbname], so you're using the database you created. 
@@ -35,7 +35,7 @@ WITH (
 ) AS [r];
 ``` 
 
-The view in this example uses OPENROWSET function that uses absolute path to the underlying files. If you have EXTERNAL DATA SOURCE with a root URL of your storage, you can use OPENROWSET with DATA_SOURCE and relative file path: 
+The view in this example uses the OPENROWSET function that uses an absolute path to the underlying files. If you have EXTERNAL DATA SOURCE with a root URL of your storage, you can use OPENROWSET with DATA_SOURCE and relative file path: 
 
 ```sql
 CREATE VIEW TaxiView 
@@ -50,9 +50,7 @@ FROM
 
 ## Use a view 
 
-You can use views in your queries the same way you use views in SQL Server queries. 
-
-The following query demonstrates using the population_csv view we created in Create a view. It returns country/region names with their population in 2019 in descending order. 
+You can use views in your queries the same way you use views in SQL Server queries. The following query demonstrates using the population_csv view we created. It returns country/region names with their population in 2019 in descending order. 
 
 > [!NOTE]
 >  Change the first line in the query, i.e., [mydbname], so you're using the database you created. 

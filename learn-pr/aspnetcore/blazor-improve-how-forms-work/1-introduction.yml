@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.use-forms-in-blazor-web-apps.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Introduction
+  ms.date: 08/31/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

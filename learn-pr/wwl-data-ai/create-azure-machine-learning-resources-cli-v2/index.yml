@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.create-azure-machine-learning-resources-cli-v2
+metadata:
+  title: Create Azure Machine Learning resources with the CLI (v2)
+  description: "Create Azure Machine Learning resources with the CLI (v2)"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create Azure Machine Learning resources with the CLI (v2)
+summary: Use the Azure Machine Learning CLI (v2) to create and manage workspace resources.
+abstract: |
+  In this module, you'll learn how to:
+  - Install the Azure CLI and the Azure Machine Learning extension.
+  - Create an Azure Machine Learning workspace.
+  - Manage assets in the Azure Machine Learning workspace.
+prerequisites: |
+  - Some familiarity with the Azure Machine Learning service.
+  - Some experience in training machine learning models using frameworks such as scikit-learn.
+iconUrl: /learn/achievements/1-create-azure-machine-learning-resources-with-cli-v2.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+- student
+products:
+- azure
+- azure-machine-learning
+units:
+- learn.wwl.create-azure-machine-learning-resources-cli-v2.introduction
+- learn.wwl.create-azure-machine-learning-resources-cli-v2.use-azure-cli-v2
+- learn.wwl.create-azure-machine-learning-resources-cli-v2.workspace-cli-v2
+- learn.wwl.create-azure-machine-learning-resources-cli-v2.manage-workspace-assets
+- learn.wwl.create-azure-machine-learning-resources-cli-v2.exercise-workspace
+- learn.wwl.create-azure-machine-learning-resources-cli-v2.knowledge-check
+- learn.wwl.create-azure-machine-learning-resources-cli-v2.summary
+badge:
+  uid: learn.wwl.create-azure-machine-learning-resources-cli-v2.badge

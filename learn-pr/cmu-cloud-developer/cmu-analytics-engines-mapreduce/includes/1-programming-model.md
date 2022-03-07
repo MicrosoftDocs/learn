@@ -1,6 +1,6 @@
 Hadoop presents MapReduce as an analytics engine and, "under the hood," employs the Hadoop Distributed File System (HDFS).<sup>[1][^1]</sup> HDFS mimics the Google File System (GFS)<sup>[2][^2]</sup> and partitions input datasets into fixed-size chunks (**blocks**), distributing them on participating cluster nodes. By default 64 MB, each HDFS block can be configured differently by users. Jobs can subsequently process HDFS blocks in parallel at distributed machines, thus exploiting the parallelism enabled by partitioning datasets. MapReduce breaks jobs into multiple tasks denoted as map and reduce tasks. All map tasks are encapsulated in what is known as the map phase, and reduce tasks are encompassed in what is called the reduce phase. The map phase can have one or many map tasks, and the reduce phase can have zero or many reduce tasks. When a MapReduce job includes no reduce tasks, it is referred to as "reduce-less."<sup>[3][^3]</sup>
 
-![A full, simplified view of the phases, stages, tasks, data input, data output, and data flow in the MapReduce analytics engine ](../media/mapreduce-analytics-engine.png)
+![A full, simplified view of the phases, stages, tasks, data input, data output, and data flow in the MapReduce analytics engine.](../media/mapreduce-analytics-engine.png)
 
 _Figure 1: A full, simplified view of the phases, stages, tasks, data input, data output, and data flow in the MapReduce analytics engine_
 

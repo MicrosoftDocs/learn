@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.explore-large-instances-support-considerations
+title: Explore SAP HANA on Azure (Large Instances) support considerations
+metadata:
+  title: Explore SAP HANA on Azure (Large Instances) support considerations
+  description: "Explore SAP HANA on Azure (Large Instances) support considerations"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-explore-hana-large-instances-support.md)]

@@ -6,126 +6,167 @@ In this unit, you'll troubleshoot by using Network Watcher metrics and logs. To 
 
 ## Register the Microsoft.Insights provider
 
-NSG flow logging requires the *Microsoft.Insights* provider. to register for that provider, complete the following steps.
+NSG flow logging requires the *Microsoft.Insights* provider. To register for the Microsoft.Insights provider, complete the following steps.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and log in to the directory with access to the subscription you created resources in.
 
-1. In the Azure portal, search for and select **Subscriptions**. When **Subscriptions** appears in the search results, select it.
+1. In the Azure portal, search for, select **Subscriptions**, and then select your subscription. The **Subscription** pane appears.
 
-1. Select the your subscription. Then under **Settings**, select **Resource providers**.
+1. In the Subscription menu, under **Settings**, select **Resource providers**. Your subscription's **Resource providers** pane appears.
 
-1. In the search bar, enter **microsoft.insights**.
+1. In the filter bar, enter **microsoft.insights**.
 
-1. If the status of the **microsoft.insights** provider is **Unregistered**, select **Register**.
+1. If the status of the **microsoft.insights** provider is **NotRegistered**, select **Register** in the command bar.
 
-    ![A screenshot that shows the registered Microsoft.Insights provider](../media/5-microsoft-insights.png)
+    :::image type="content" source="../media/5-microsoft-insights.png" alt-text="Screenshot showing the registered Microsoft.Insights provider.":::
 
 ## Create a storage account
 
 Now, create a storage account for the NSG flow logs.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Then, select **Storage** > **Storage account**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. 
 
-1. On the **Create storage account** page, fill in these settings:
+1. On the resource menu, select **Storage**, then search for and select **Storage account**. The **Storage account** pane appears.
+
+1. Select **Create**. The **Create storage account** pane appears.
+
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
+    | **Project details** |
     | Subscription | Select your subscription |
     | Resource group | Select your resource group |
+    | **Instance details** |
     | Storage account name | Create a unique name |
-    | Location | Select the same region as your resource group |
+    | Region | Select the same region as your resource group |
     | Performance | Standard |
-    | Account kind | StorageV2 |
-    | Replication | Read-access geo-redundant storage |
-    | Access tier | Hot |
+    | Redundancy | Geo-redundant storage (GRS) |
 
-1. Select **Review + create**, and then select **Create**.
+1. Go to the **Advanced** tab, and enter the following value.
 
-    ![A screenshot that shows how to create a storage account](../media/5-storage-account.png)
+    | Setting | Value |
+    | --- | --- |
+    | **Blob storage** |
+    | Access tier | Hot (default) |
+
+1. Select **Review + create**, and when validation passes, select **Create**.
 
 ## Create a Log Analytics workspace
 
-To view the NSG flow logs, you'll use Log Analytics. To install Log Analytics.
+To view the NSG flow logs, you'll use Log Analytics.
 
-1. In the Azure portal, search for and select **Log analytics workspaces**.
-1. Select **+ Add**, complete the page with these values, and then select **OK**:
+1. On the Azure portal menu or from the **Home** page, search for and select **Log Analytics Workspaces**. The **Log Analytics Workspaces** pane appears.
+
+1. In the command bar, select **Create**. The **Create Log Analytics workspace** pane appears.
+
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
-    | Log Analytics Workspace | testsworkspace |
+    | **Project details** |
     | Subscription | Select your subscription |
     | Resource group | Select your resource group |
-    | Location | Select the same region as your resource group |
-    | Pricing tier | Per GB |
-    | | |
+    | **Instance details** |
+    | Name | `testsworkspace` |
+    | Region | Select the same region as your resource group |
 
-    ![A screenshot that shows how to create a Log Analytics workspace](../media/5-log-analytics-workspace.png)
+1. Select **Next : Pricing tier**. On the **Pricing tier** tab, select **Pay-as-you-go (Per GB 2018)** for **Pricing tier**.
+
+1. Select **Review + Create**, and after validation passes, select **Create**.
 
 ## Enable flow logs
 
 To set up flow logs, you must configure the NSG to connect to the storage account, and add traffic analytics for the NSG.
 
-1. On the Azure portal menu, select **All resources**. Then, select the **MyNSG** network security group.
+1. On the Azure portal menu, select **All resources**. Then, select the **MyNsg** network security group.
 
-1. Under **Monitoring**, select **NSG flow logs**.
+1. In MyNsg menu, under **Monitoring**, select **NSG flow logs**. The **MyNsg | NSG flow logs** pane appears.
 
-1. Select **MyNSG**, and then select **On**.
+1. Select **Create NSG flow log**. The **Create a flow log** pane appears. 
 
-1. Under **Storage account**, select **Configure**. In the **Storage account** dropdown, select the storage account you created earlier. Then, select **OK**.
+1. On the **Basics** tab, select or enter the following values.
 
-1. Under **Traffic Analytics status**, select **On**. Then in the **Traffic Analytics processing interval** dropdown, select **Every 10 mins**.
+    | Setting | Value |
+    | --- | --- |
+    | **Project details**  |
+    | Subscription | Select your subscription from the dropdown list. |
+    | Network Security Group| MyNsg |
+    | **Instance details**  |
+    | Subscription | Select your subscription from the dropdown list. |
+    | Storage Accounts | Select `testworkspace`  |
 
-1. Select **Log Analytics workspace**, and then select **testworkspace**.
+1. Select the **Configuration** tab.
 
-1. Select **Save**.
+    | Setting | Value |
+    | --- | --- |
+    | Flow Logs Version | Version 2 |
+    | Traffic Analytics | Enable Traffic Analytics is checked. |
+    | Traffic Analytics processing interval | Every 10 mins |
+    | Subscription | Select your subscription from the dropdown list. |
+    | Log Analytics Workspace | Select `testworkspace` from the dropdown list. |
+
+1. Select **Review + create**.
+
+1. Select **Create**.
+
+1. When the deployment is complete, select **Go to resource**.
 
 ## Generate test traffic
 
 Now, you're ready to generate some network traffic between VMs to catch in the flow log.
 
-1. On the Azure portal menu, select **All resources**, select **FrontendVM**, and then select **Connect**.
+1. On the resource menu, select **All resources**, then select **FrontendVM**.
 
-1. Select **Download RDP File**, and then select **OK**. If you see a warning about the publisher of the remote connection, select **Connect**.
+1. From the command bar, select **Connect**, then select **RDP**, and then select **Download RDP File**. If you see a warning about the publisher of the remote connection, select **Connect**.
 
-1. Sign in with the username **azureuser** and the password you specified when you created the VM, and then select **Yes**.
+1. Launch the **FrontendVM.rdp** file and select **Connect**. 
+ 
+1. When asked for your credentials, select **More choices** and sign in with the username **azureuser** and the password you specified when you created the VM.
+ 
+1. When asked for security a certificate, select **Yes**.
 
-1. Open a PowerShell prompt, and then run this command.
+1. In the RDP session, if prompted, allow your device to be discoverable ONLY if on a private network.
+ 
+1. Open a PowerShell prompt and run the following command.
 
     ```PowerShell
     Test-NetConnection 10.10.2.4 -port 80
     ```
 
-The connection test fails after a few seconds.
+The TCP connection test fails after a few seconds.
 
 ## Diagnose the problem
 
 Now, let's use log analytics to view the NSG flow logs.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, select **All services**. Then, select **Networking** > **Network Watcher**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) resource menu, select **All services**, select **Networking**, and then select **Network Watcher**. The **Network Watcher** pane appears.
 
-1. Under **Logs**, select **Traffic Analytics**.
+1. In the resource menu, under **Logs**, select **Traffic Analytics**. The **Network Watcher | Traffic Analytics** pane appears.
 
-1. In the **Log Analytics workspace** dropdown, select **testworkspace**.
+1. In the **FlowLog Subscriptions** dropdown list, select your subscription.
 
-1. Use the different views to diagnose the problem that prevents communication from the front end VM to the back end VM.
+1. In the **Log Analytics workspace** dropdown list, select `testworkspace`.
+
+1. Use the different views to diagnose the problem that prevents communication from the frontend VM to the backend VM.
 
 ## Fix the problem
 
-An NSG rule is blocking inbound traffic to the back end subnet from everywhere over the ports 80, 443, and 3389 instead of just blocking inbound traffic from the Internet. Let's reconfigure that rule now.
+An NSG rule is blocking inbound traffic to the backend subnet from everywhere over the ports 80, 443, and 3389 instead of just blocking inbound traffic from the Internet. Let's reconfigure that rule now.
 
-1. On the Azure portal menu, select **All resources**, and then select **MyNsg**.
+1. On the Azure portal resource menu, select **All resources**, and then select **MyNsg** from the list.
 
-1. Under **Settings**, select **Inbound security rules**, and then select **MyNSGRule**.
+1. In the MyNsg menu, under **Settings**, select **Inbound security rules**, and then select **MyNSGRule**. The **MyNSGRule** pane appears.
 
-1. Change **Source** to be **Service Tag**, and configure **Source service tag** to be **Internet**.
+1. In the **Source** dropdown list, select **Service Tag**, and in the **Source service tag** dropdown list, select **Internet**.
 
-1. Select **Save**.
+1. In the MyNSGRule command bar, select **Save** to update the security rule.
 
 ## Retest the connection
 
 Connections on port 80 should now work without problems.
 
-1. In the RDP client, connect to **FrontendVM**. At the PowerShell prompt, run this command.
+1. In the RDP client, connect to **FrontendVM**. At the PowerShell prompt, run the following command.
 
     ```PowerShell
     Test-NetConnection 10.10.2.4 -port 80

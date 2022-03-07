@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-migrating-aspnet-apps-azure.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 01/16/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  
+  - content: "Which hosting option requires the customer to manage only the applications and data?"
+    choices:
+    - content: "PaaS"
+      isCorrect: true
+      explanation: "That's correct. In the PaaS hosting option, the hosting vendor manages everything except applications and data."
+    - content: "IaaS"
+      isCorrect: false
+      explanation: "That's incorrect. The IaaS option still requires the customer to manage the applications, data, runtime, middleware, and OS."
+    - content: "SaaS"
+      isCorrect: false
+      explanation: "That's incorrect. The SaaS options has the vendor manage all the services and the customer only rents the software. The customer cannot manage the application or data."
+  - content: "What is an App Service plan?"
+    choices:
+    - content: "The App Service plan will define a set of compute resources for your ASP.NET application."
+      isCorrect: true
+      explanation: "That's correct. The Azure App Service uses an App Service plan to define the necessary compute resources that your app will need."
+    - content: "The set of migration tools that you use to move your application to the cloud."
+      isCorrect: false
+      explanation: "That's incorrect. The set of migration tools that Azure provides will help you assess and move your application to a cloud environment, but they're part of the App Service Plan."
+    - content: "The licensing agreement you select for your Azure subscription."
+      isCorrect: false
+      explanation: "That's incorrect. Licensing agreements pertain to various services in your hosted environment such as the OS and Azure SQL Database licensing.  They're not part of the App Service Plan."
+  - content: "Which component in Azure offers configuration options and benefits that are similar to a firewall?"
+    choices:
+    - content: "Azure DNS"
+      isCorrect: false
+      explanation: "That's incorrect. Azure DNS behaves in a similar fashion to the standard DNS used to translate domain names to IP addresses."
+    - content: "Azure Compute"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Compute is a category that relates to compute instances on Azure such as VMs."
+    - content: "Azure virtual networks"
+      isCorrect: true
+      explanation: "That's correct. Azure can help secure various aspects of your app and data by using virtual networks, which act in a similar manner to firewalls."

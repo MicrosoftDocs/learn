@@ -14,7 +14,7 @@ In this exercise, we'll secure an Azure Sphere application
    | Prompt                                                 | Response                                                         |
    | ------------------------------------------------------------ | ------------------------------------------------------------ |
    | **Are you using a legacy (2018) IoT Central application (Y/N)** | Respond **N**.                                                |
-   | **IoT Central App URL**                                      | This can be found in your browser address bar. For example: https://myiotcentralapp.azureiotcentral.com |
+   | **IoT Central App URL**                                      | This can be found in your browser address bar. For example: https://apps.azureiotcentral.com |
    | **API token**                                                | This can be generated from your Azure IoT Central application. In the Azure IoT Central application, select **Administration**, select **API Tokens**, select **Generate Token**, provide a name for the token (for example, "AzureSphere"), select **Administrator** as the role, and click **Generate**. Copy the token to the clipboard. The token starts with **SharedAccessSignature**. |
    | **ID Scope**                                                 | In the Azure IoT Central application, select **Administration** > **Device Connection** and then copy the **ID Scope**. |
 
@@ -35,13 +35,11 @@ In this exercise, we'll secure an Azure Sphere application
 
 6. Copy the output from the **ShowIoTCentralConfig** tool to Notepad, as you'll need this information soon.
 
-
-
 ## Step 2: Get your Azure Sphere tenant ID
 
 We need the ID of the Azure Sphere tenant that is now trusted by Azure IoT Central.
 
-1. From the  **Azure Sphere Developer Command Prompt** or Linux **Terminal**, run the following command.
+1. From the  Windows **PowerShell command line** or Linux **Terminal**, run the following command.
 
    ```
    azsphere tenant show-selected
@@ -49,8 +47,12 @@ We need the ID of the Azure Sphere tenant that is now trusted by Azure IoT Centr
 
    The output of this command will look similar to the following.
 
-   ```
-   Default Azure Sphere tenant ID is '99999999-e021-43ce-9999-fa9999499994'.
-   ```
+    ```
+    ------------------------------------ -------------------
+    Id                                   Name
+    ========================================================
+    99999999-e021-43ce-9999-fa9999499994 yourSphereTenant
+    ------------------------------------ -------------------
+    ```
 
 2. Copy the Azure Sphere tenant ID to Notepad, as you'll need it soon.

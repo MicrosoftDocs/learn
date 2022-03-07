@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.examine-diagnostic-tools
+title: Examine diagnostic tools
+metadata:
+  title: Examine diagnostic tools
+  description: "Examine diagnostic tools"
+  ms.date: 01/28/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-examine-diagnostic-tools.md)]

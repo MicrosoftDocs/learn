@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-storage-solution-for-non-relational-data.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "What is the best way for Tailwind Traders to protect their warranty information?"
+    choices:
+    - content: "Legal hold policy"
+      isCorrect: false
+      explanation: "That’s incorrect. Legal hold allows objects to be created or read, but not modified or deleted. It doesn’t provide a time frame and can be removed at any time."
+    - content: "Time-based retention policy"
+      isCorrect: true
+      explanation: "That’s correct. With a time-based retention policy, users can set policies to store data for a specified interval. When a time-based retention policy is in place, objects can be created and read, but not modified or deleted."
+    - content: "Private endpoint for storage account"
+      isCorrect: false
+      explanation: "That’s incorrect. A private endpoint is a special network interface for storage access from the virtual network."
+  - content: "What type of storage should Tailwind Traders use for their photos and videos?"
+    choices:
+    - content: "Blob storage"
+      isCorrect: true
+      explanation: "That’s correct. Blob storage is best for their photos."
+    - content: "File storage"
+      isCorrect: false
+      explanation: "That’s incorrect. Photos could be uploaded to file storage, but blob storage would be more appropriate."
+    - content: "Disk storage"
+      isCorrect: false
+      explanation: "That’s incorrect. Disk storage is more appropriate for virtual machine storage."
+  - content: "What is the best way to provide the developer access to the ecommerce HTML files?"
+    choices:
+    - content: "Enable secure transfer"
+      isCorrect: false
+      explanation: "That’s incorrect. Enable secure transfer accepts requests only from secure connections."
+    - content: "Enable firewall policies and rules"
+      isCorrect: false
+      explanation: "That’s incorrect. Firewall policies and rules are for network access."
+    - content: "Shared access signatures"
+      isCorrect: true
+      explanation: "That’s correct. Shared access signatures provide secure delegated access. This functionality can be used to define permissions and how long access is allowed."
+  - content: "Which access tier should be used for the older versions of the product catalog?"
+    choices:
+    - content: "Hot access tier"
+      isCorrect: false
+      explanation: "That’s incorrect. The hot tier is optimized for frequent reads and writes of objects in the storage account."
+    - content: "Cool access tier"
+      isCorrect: true
+      explanation: "That’s correct. The cool access tier is for content that wouldn’t be viewed frequently but must be available immediately if accessed."
+    - content: "Archive access tier."
+      isCorrect: false
+      explanation: "That’s incorrect. The older catalogs are accessed although infrequently. There’s an early deletion charge if data is accessed sooner than 180 days."

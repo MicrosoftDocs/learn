@@ -5,11 +5,11 @@ metadata:
   title: Introduction
   description: Introduction
   ms.date: 04/30/2019
-  author: ShanaMatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-  ROBOTS: NOINDEX
-durationInMinutes: 5
+  ms.custom: team=nextgen
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

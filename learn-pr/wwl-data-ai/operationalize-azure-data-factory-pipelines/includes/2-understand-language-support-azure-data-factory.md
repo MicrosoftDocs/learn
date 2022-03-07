@@ -1,4 +1,4 @@
-While most Azure Data Factory users develop using the user experience, ADF is available in a variety of software development kits (SDKs) for anyone who wish to develop programmatically. When using an SDK, a user works directly against the Azure Data Factory service and all updates are immediately applied to the factory. 
+While most Azure Data Factory users develop using the user experience, Azure Data Factory is available in a variety of software development kits (SDKs) for anyone who wish to develop programmatically. When using an SDK, a user works directly against the Azure Data Factory service and all updates are immediately applied to the factory. 
 
 There are Azure Data Factory libraries for Python that enables you to perform the management of the service.
 

@@ -4,7 +4,7 @@
 - Linux servers
 - Kubernetes clusters
 
-You can also use Azure Arc to introduce Azure data services to hybrid environments, this capability is currently in preview.
+You can also use Azure Arc to introduce Azure data services to hybrid environments.
 
 ## What is Azure Arc?
 

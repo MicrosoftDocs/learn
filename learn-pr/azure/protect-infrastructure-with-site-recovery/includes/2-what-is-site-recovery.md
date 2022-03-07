@@ -1,10 +1,10 @@
 Azure Site Recovery replicates your virtual machine workloads between Azure regions. You can also use Site Recovery to migrate VMs from other environments, such as on-premises infrastructure, to Azure.  You'll see that Site Recovery does much more than just backing up and restoring infrastructure.
 
-Let's assume your organization recently suffered an outage caused by a hurricane. Here, we'll learn about the Site Recovery features that help handle future interruptions. We'll also identify the Site Recovery features required to protect your Azure virtual machines (VMs) by enabling failing over to a secondary Azure region.
+Let's assume your organization recently suffered an outage caused by a hurricane. Here, we'll learn about the Site Recovery features that help handle future interruptions. We'll also identify the Site Recovery features required to protect your Azure VMs by enabling failing over to a secondary Azure region.
 
 ## Site Recovery features
 
-![Diagram showing a VM environment that is unavailable and failing over to a secondary environment](../media/2-failover.png)
+![Diagram showing a VM environment that is unavailable and failing over to a secondary environment.](../media/2-failover.png)
 
 Site Recovery manages the orchestration of disaster recovery in Azure. It's designed to replicate workloads from a primary site or region, to a secondary site. If the primary site has an issue, Site Recovery can replicate protected VMs to another Azure region.
 
@@ -16,7 +16,7 @@ Site Recovery protects your VM instances in Azure automatically. Site Recovery m
 
 ### Snapshots and recovery points
 
-Site Recovery has customizable replication policies that allow you to define the retention history of recovery points and the frequency of snapshots. You create a recovery point from a snapshot of a VMs' disk. The two types of snapshots available are **App-consistent** and **Crash-consistent**.
+Site Recovery has customizable replication policies that allow you to define the retention history of recovery points and the frequency of snapshots. You create a recovery point from a snapshot of a VM's disk. The two types of snapshots available are **App-consistent** and **Crash-consistent**.
 
 - **App-consistent** recovery captures the same data as crash-consistent but also includes all in-memory data and in-process transactions. Including the in-memory data means Site Recovery can restore a VM and any running apps without any data loss. The default for capturing snapshots is every 60 minutes.
 
@@ -32,7 +32,7 @@ Site Recovery copies data stored in the cache and syncs it with either the targe
 
 Site Recovery can use accelerated networking for Azure VMs, reducing jitter and CPU usage.
 
-### Disaster recovery (DR) drills
+### Disaster recovery drills
 
 Site Recovery enables you to do disaster recovery drills after all the prerequisite configuration tasks are complete. Running a DR drill enables you to validate the replication strategy for your environment without losing data, having downtime, or compromising your production environment. Drills don't affect your production environment and are a way to test that you have correctly configured everything.
 

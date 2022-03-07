@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.just-enough-administration-windows-server.demonstration-connect-to-jea-endpoint
+title: 'Demonstration: Connect to a JEA endpoint'
+metadata:
+  title: 'Demonstration: Connect to a JEA endpoint'
+  description: "Demonstration: Connect to a JEA endpoint"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-demonstration-connect-to-jea-endpoint.md)]

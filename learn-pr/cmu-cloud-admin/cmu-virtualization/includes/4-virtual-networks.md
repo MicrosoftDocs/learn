@@ -41,7 +41,7 @@ In summary, network virtualization is simply a sharing mechanism that allows mul
 
 All major cloud service providers support virtual networks, albeit sometimes using different terminology and abstractions. Azure, for example, doesn't offer virtual firewalls, but it does support *network security groups* (NSGs), which are an abstraction of firewalls. Figure 10 shows an Azure virtual network (VNet) configured to serve content to customers from virtual web servers fronted by a virtual load balancer that's assigned a virtual public IP address. The load balancer and the web-server VMs are located in one subnet, while back-end databases and other resources are isolated in an entirely different subnet. Each subnet is in a different NSG, with different firewall rules applied to each. For example, the public-facing subnet opens ports 80 and 443 to the outside world to support HTTP and HTTPS traffic, while the private subnet is accessible only from the other subnet and opens only those ports required for the web servers to connect to the databases. Not shown in the diagram are other virtual network resources such as the virtual network interface cards (NICs) that connect the VMs to the network.
 
-![Figure 10: Virtual network in Azure](../media/fig4-10.png)
+![Figure 10: Virtual network in Azure.](../media/fig4-10.png)
 
 _Figure 10: Virtual network in Azure._
 

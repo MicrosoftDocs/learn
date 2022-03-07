@@ -1,8 +1,8 @@
-Billing partners who provide constant cloud-operations management become eligible for a *partner earned credit for services managed* on the customers' Azure tenant. Learn more about the benefit at [Partner earned credit](https://docs.microsoft.com/partner-center/partner-earned-credit). The rest of the unit assumes you have basic knowledge of the program and want to use it for Fabrikam's benefit.
+Billing partners who provide constant cloud-operations management become eligible for a *partner earned credit for services managed* on the customers' Azure tenant. Learn more about the benefit at [Partner earned credit](/partner-center/partner-earned-credit). The rest of the unit assumes you have basic knowledge of the program and want to use it for Fabrikam's benefit.
 
 Partner earned credit means less costs for Fabrikam. When you receive a partner earned credit for services managed, the credit is built into the invoiced prices and cost on the invoice. The price applied when Azure computes the invoiced costs factors in the credit. Fabrikam receives an invoice for the costs only after it applies the partner credit.
 
-To learn more about important eligibility conditions to receive partner earned credit, see [Important eligibility and calculation information](https://docs.microsoft.com/partner-center/partner-earned-credit-explanation#important-eligibility-and-calculation-information).
+To learn more about important eligibility conditions to receive partner earned credit, see [Important eligibility and calculation information](/partner-center/partner-earned-credit-explanation#important-eligibility-and-calculation-information).
 
 ## Determine resources that have the partner earned credit applied
 
@@ -17,7 +17,7 @@ When the **PartnerEarnedCreditApplied** property is **True**, the associated cos
 
 When the **PartnerEarnedCreditApplied** property is **False**, the associated cost hasn't met the required eligibility for the credit. Or, the purchased service isn't eligible for partner earned credit.
 
-Service usage data normally takes 8 to 24 hours to appear in Azure Cost Management. For more information, see [Cost and usage data updates and retention](https://docs.microsoft.com/azure/cost-management-billing/costs/understand-cost-mgt-data#cost-and-usage-data-updates-and-retention). Partner earned credits appear within 48 hours from time of access in Azure Cost Management.
+Service usage data normally takes 8 to 24 hours to appear in Azure Cost Management. For more information, see [Cost and usage data updates and retention](/azure/cost-management-billing/costs/understand-cost-mgt-data#cost-and-usage-data-updates-and-retention). Partner earned credits appear within 48 hours from time of access in Azure Cost Management.
 
 You can also group and filter by the **PartnerEarnedCreditApplied** property by using the **Group by** options. Use the options to examine costs that do and don't have partner earned credit.
 

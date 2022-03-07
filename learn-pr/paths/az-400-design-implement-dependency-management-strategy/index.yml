@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-400-design-implement-dependency-management-strategy
+metadata:
+  title: 'AZ-400: Design and implement a dependency management strategy'
+  description: 'AZ-400: Design and implement a dependency management strategy'
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-400: Design and implement a dependency management strategy'
+prerequisites: |
+  None
+summary: |
+  This learning path examines dependency management in software development, how to identify them in your codebase and how to package and manage dependencies in package feeds.
+iconUrl: /learn/achievements/az-400-design-and-implement-a-dependency-management-strategy.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+modules:
+- learn.wwl.explore-package-dependencies
+- learn.wwl.understand-package-management
+- learn.wwl.migrate-consolidating-secure-artifacts
+- learn.wwl.implement-versioning-strategy
+trophy:
+  uid: learn.wwl.az-400-design-implement-dependency-management-strategy.trophy

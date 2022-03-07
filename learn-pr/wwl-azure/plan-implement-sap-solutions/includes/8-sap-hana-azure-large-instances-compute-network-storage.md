@@ -42,6 +42,7 @@ The HANA Large Instance of the Type I class comes with four times the memory vol
 | S768m | 28,000 GB | 3,100 GB | 2,050 GB | 3,100 GB |
 | S768xm | 40,960 GB | 6,144 GB | 4,096 GB | 6,144 GB |
 | S960m | 36,000 GB | 4,100 GB | 2,050 GB | 4,100 GB |
+| S896m | 33,792 GB | 512 GB | 1,024 GB | 512 GB |
 
 It's possible to host more than one active SAP HANA instance on HANA Large Instance units. To provide the capabilities of storage snapshots and disaster recovery, such a configuration requires a volume set per instance. Currently, HANA Large Instance units can be subdivided as follows:
 
@@ -51,14 +52,11 @@ It's possible to host more than one active SAP HANA instance on HANA Large Insta
 
 * Type II class: In increments of 512 GB, with the smallest starting unit of 2 TB. Different increments such as 512 GB, 1 TB, and 1.5 TB can be combined to the maximum of the memory of the unit.
 
- 
-
-The storage used in HANA Large Instances has a file size limitation of16 TB. Unlike in file size limitations in the EXT3 file systems, HANA is not aware implicitly of the storage limitation enforced by the HANA Large Instances storage. As a result, HANA will not automatically create a new data file when the file size limit of 16TB is reached. As HANA attempts to grow the file beyond 16 TB, HANA will report errors and the index server will crash at the end. In order to prevent HANA trying to grow data files beyond the 16 TB file size limit of HANA Large Instance storage, you need to set the following parameters in the global.ini configuration file of HANA
+The storage used in HANA Large Instances has a file size limitation of 16 TB. Unlike in file size limitations in the EXT3 file systems, HANA is not aware implicitly of the storage limitation enforced by the HANA Large Instances storage. As a result, HANA will not automatically create a new data file when the file size limit of 16TB is reached. As HANA attempts to grow the file beyond 16 TB, HANA will report errors and the index server will crash at the end. In order to prevent HANA trying to grow data files beyond the 16 TB file size limit of HANA Large Instance storage, you need to set the following parameters in the global.ini configuration file of HANA
 
 * datavolume_striping=true
 
 * datavolume_striping_size_gb = 15000
-
 
 ## ExpressRoute networking considerations
 This architecture uses both virtual and physical networks. The virtual network is part of Azure IaaS and connects to a discrete HANA Large Instances physical network through ExpressRoute circuits. A cross-premises gateway connects your workloads in the Azure virtual network to your on-premises sites.

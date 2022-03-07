@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.hardware-devices.accessible-packaging
+title: Hardware packaging accessibility
+metadata:
+  title: Provide accessible packaging design elements
+  description: This content is part of the accessibility best practices for gaming hardware module.
+  ms.date: 11/10/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-hardware-devices
+durationInMinutes: 15
+content: |
+  [!include[](includes/04-accessible-packaging.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following scenarios most accurately describes packaging best practices that assist in device removal?"
+    choices:
+    - content: "Tightly package the device and accompanying components to be sure they aren't damaged in transit."
+      isCorrect: false
+      explanation: "Incorrect. While the purpose of packaging is to protect devices from damage, there are approaches that can be taken to ensure the device is safe while also providing an accessible unboxing experience."
+    - content: "Include pull tabs or loops on components like plastic wrap around a device."
+      isCorrect: true
+      explanation: "Correct. Tools like pull tabs or loops can help users remove a device from its inner packaging more easily. They eliminate the need for users to wedge their finger under a device or turn the packaging upside down to loosen the device."
+    - content: "Introduce pill-shaped indents on the surface of the device so that players can pick it up regardless of the surrounding packaging."
+      isCorrect: false
+      explanation: "Incorrect. This option would require alterations to the device itself. While it might assist users in removing devices from packaging, this approach wouldn't be appropriate to make unboxing for any hardware device more accessible."
+  - content: "Which option best describes how the unboxing experience can be made more accessible for heavier devices in which pull tabs or loops can't be used to assist in device removal?"
+    choices:
+    - content: "Provide empty cavities that surround the device so that users can more easily make hands-on contact with the device to remove it."
+      isCorrect: true
+      explanation: "Correct. For devices that are heavier, such as a gaming console, or don't have plastic wrap like the Surface tablet, empty cavities can help users more easily access the device to remove it from inner packaging."
+    - content: "Use strong adhesive to connect pull tabs or loops to the device to ensure they don't rip during use."
+      isCorrect: false
+      explanation: "Incorrect. Securing loops or tabs to the device with strong adhesive can pose accessibility challenges for players when they must remove the strong adhesive."
+    - content: "Eliminate surrounding inner packaging so the device is free within its larger outer box, which eliminates the need to remove it from inner packaging."
+      isCorrect: false
+      explanation: "Incorrect. Although this approach would make it easier for users to remove their device from packaging, it wouldn't be the best approach because the device could easily become damaged."

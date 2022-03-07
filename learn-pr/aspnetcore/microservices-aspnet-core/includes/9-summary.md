@@ -32,7 +32,7 @@ The preceding script:
 > [!NOTE]
 > More than one service principal is expected if the setup script has been run more than once. Each time the setup script is run, it creates a new service principal.
 
-[!INCLUDE[revert the .NET Core SDK changes](../../includes/microservices/revert-dotnet-sdk-changes.md)]
+[!INCLUDE[revert the .NET SDK changes](../../includes/microservices/revert-dotnet-sdk-changes.md)]
 
 [!INCLUDE[download files](../../includes/summary-download-cloud-drive.md)]
 

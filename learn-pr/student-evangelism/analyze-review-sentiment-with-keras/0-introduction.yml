@@ -6,10 +6,10 @@ metadata:
   description: Introduction
   ms.date: 02/24/2019
   author: JeffProsise
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+  ms.custom: team=nextgen
 durationInMinutes: 5
 content: |
   [!include[](includes/0-introduction.md)]

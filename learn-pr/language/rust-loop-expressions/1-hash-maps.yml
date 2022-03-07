@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-loop-expressions.1-hash-maps
+metadata:
+  title: Work with hash maps
+  description: Explore how to work with hash maps in Rust.
+  ms.date: 09/20/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Work with hash maps
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-hash-maps.md)]
+
+quiz:
+  questions:
+  
+  - content: "What data type is best for representing an address book that associates people's names to their phone numbers?"
+    choices:
+    - content: "A tuple"
+      isCorrect: false
+      explanation: "Incorrect. With a tuple, you can only group values into one compound. We can have a combined tuple of names and phone numbers, but we can't easily map them together."
+    - content: "A vector"
+      isCorrect: false
+      explanation: "Incorrect. With a vector, you can only store a collection of objects. You wouldn't know how to relate a person's name to their phone number."
+    - content: "An array"
+      isCorrect: false
+      explanation: "Incorrect. An array is a collection of similar objects. You wouldn't know how to relate a person's name to their phone number."
+    - content: "A hash map"
+      isCorrect: true
+      explanation: "Correct. With a hash map, you can store a mapping of keys to values. So each name key could have a corresponding phone number as a value."
+  
+  - content: "What standard methods can you use to add and delete hash map elements?"
+    choices:
+    - content: "`.add()` and `.remove()`"
+      isCorrect: false
+      explanation: "Incorrect. A standard method named `add` isn't used with hash maps."
+    - content: "`.insert()` and `.remove()`"
+      isCorrect: true
+      explanation: "Correct. You add elements with the `.insert()` method and delete elements with the `.remove()` method."
+    - content: "`.insert()` and `.delete()`"
+      isCorrect: false
+      explanation: "Incorrect. A standard method named `delete` isn't used with hash maps."

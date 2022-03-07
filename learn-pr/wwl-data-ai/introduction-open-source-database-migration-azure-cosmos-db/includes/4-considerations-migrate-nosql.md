@@ -1,4 +1,8 @@
-A business system running on-premises can have an architecture that's coupled to other services operating within the same environment. It's important to understand the relationships between a system you wish to migrate, and the other applications and services your organization is currently using.  
+A business system running on-premises can have an architecture that's coupled to other services operating within the same environment. It's important to understand the relationships between a system you wish to migrate, and the other applications and services your organization is currently using.
+
+In your IoT technology company, you've identified Azure Cosmos DB as a database system that can host all your telemetry databases with the minimum of software recoding. Now, you want to plan the migration project to Cosmos DB.
+
+Here, you'll learn how to decide key aspects of a migration project, such as whether to perform an offline or online migration, how to fall back if problems arise, and how to maintain security.
 
 ### Investigate dependencies
 

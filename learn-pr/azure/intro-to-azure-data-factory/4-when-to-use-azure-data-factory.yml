@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-data-factory.4-when-to-use-azure-data-factory  
+title: When to use Azure Data Factory  
+metadata:
+  unitType: learning-content  
+  title: When to use Azure Data Factory
+  description: When to use Azure Data Factory
+  ms.date: 04/07/2021  
+  author: tchristiani
+  ms.author: terrychr  
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-when-to-use-azure-data-factory.md)]

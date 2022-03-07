@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-compute.scale-azure-virtual-machines
+title: Scale Azure virtual machines
+metadata:
+  title: Scale Azure virtual machines
+  description: "Scale Azure virtual machines"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-scale-azure-virtual-machines.md)]

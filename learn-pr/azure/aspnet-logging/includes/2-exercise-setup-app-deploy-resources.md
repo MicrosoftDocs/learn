@@ -16,13 +16,13 @@ First, you'll download and test the application locally, and then you'll create 
 1. Select **Open a project or solution**.
 
     :::image type="content" source="../media/2-open-project-or-solution.png" alt-text="Screenshot of the Visual Studio 2019 start screen with the Open a project or solution tile highlighted.":::
-   
+
 1. Go to the *MigrationWorkshop* folder, and then select **eShopModernizing** > **eShopLegacyWebFormsSolution** > **eShopLegacyWebFormsSolution** > **Open**.
 
     :::image type="content" source="../media/2-open-solution.png" alt-text="Screenshot of the Open Project/Solution dialog box, with the eShopLegacyWebForms solution highlighted.":::
 
     In Solution Explorer, you might be prompted to install additional components:
-    
+
     :::image type="content" source="../media/2-install-components.png" alt-text="Screenshot of Solution Explorer, with a prompt to install additional components highlighted and an Install button.":::
   
     If the prompt is shown, select **Install** to install the required items, and then follow the instructions.
@@ -47,7 +47,7 @@ First, you'll download and test the application locally, and then you'll create 
     ...
     ```
 
-1. Press **F5** to build and run the application. The application opens a web browser and displays the **Catalog manager** page in the web application:
+1. Press <kbd>F5</kbd> to build and run the application. The application opens a web browser and displays the **Catalog manager** page in the web application:
 
     :::image type="content" source="../media/2-catalog-manager.png" alt-text="Screenshot of the Catalog manager page in the eShop onContainers sample web application in a web browser window.":::
 
@@ -57,7 +57,7 @@ First, you'll download and test the application locally, and then you'll create 
 
 ## Create Azure resources to run the application as an Azure web app
 
-1. In the Azure Cloud Shell window on the right, run the next commands to define PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace *\<your-initials-with-suffix\>* with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace *\<your-password\>* with a password that you choose. The password will be used by the instance of Azure SQL Database that the application connects to.  
+1. In Azure Cloud Shell on the right, run the following commands to define PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace *\<your-initials-with-suffix\>* with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace *\<your-password\>* with a password that you choose. The password will be used by the instance of Azure SQL Database that the application connects to.  
 
     > [!NOTE]
     > The resource group *<rgn>[sandbox resource group name]</rgn>* is automatically created. Use this as your resource group name. You don't have permissions in the sandbox to create additional resource groups.
@@ -74,7 +74,7 @@ First, you'll download and test the application locally, and then you'll create 
     $resourcegroupname = "<rgn>[sandbox resource group name]</rgn>"
     ```
 
-1. Run the following commands to define more variables that will be used to create the resources used by this module:
+1. Run the following commands to define more variables that will be used to create the resources in this module:
 
     ```powershell
     $location = "eastus"

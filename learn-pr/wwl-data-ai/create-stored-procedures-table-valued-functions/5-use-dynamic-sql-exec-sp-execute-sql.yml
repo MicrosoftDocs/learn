@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-stored-procedures-table-valued-functions.use-dynamic-sql-exec-sp-execute-sql
+title: Use dynamic SQL with EXEC and sp-execute-sql
+metadata:
+  title: Use dynamic SQL with EXEC and sp-execute-sql
+  description: "Use dynamic SQL with EXEC and sp-execute-sql"
+  ms.date: 02/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-use-dynamic-sql-exec-sp-execute-sql.md)]

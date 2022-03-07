@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-deployment-patterns.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices describe microservice?"
+    choices:
+    - content: "A microservice is a multi-function software to deliver more than one thing very well."
+      isCorrect: false
+      explanation: "Incorrect. A microservice is an autonomous, independently deployable, and scalable software component."
+    - content: "A microservice is software built as one monolith."
+      isCorrect: false
+      explanation: "Incorrect. A microservice is an autonomous, independently deployable, and scalable software component."
+    - content: "A microservice is an autonomous, independently deployable, and scalable software component."
+      isCorrect: true
+      explanation: "Correct. A microservice is an autonomous, independently deployable, and scalable software component."
+  - content: "Which of the following choices is a microservice characteristic?"
+    choices:
+    - content: "Each microservice can be tested based on other microservice results."
+      isCorrect: false
+      explanation: "Incorrect. If one microservice changes, it should not affect any other microservices within your landscape."
+    - content: "If one microservice changes, it shouldn't impact any other microservices within your landscape."
+      isCorrect: true
+      explanation: "Correct. If one microservice changes, it should not affect any other microservices within your landscape."
+    - content: "If one microservice changes, it affects other services, and you need to wait for other services to go online."
+      isCorrect: false
+      explanation: "Incorrect. If one microservice changes, it should not affect any other microservices within your landscape."
+  - content: "Which of the following choices represent a classical deployment pattern?"
+    choices:
+    - content: "Dev, Test, Staging, and Production deployment."
+      isCorrect: true
+      explanation: "Correct. The traditional or classical deployment pattern was moving your software to a development stage, a testing stage, maybe an acceptance or staging stage, and finally a production stage."
+    - content: "Blue-green deployments."
+      isCorrect: false
+      explanation: "Incorrect. The traditional or classical deployment pattern was moving your software to a development stage, a testing stage, maybe an acceptance or staging stage, and finally a production stage."
+    - content: "A/B testing."
+      isCorrect: false
+      explanation: "Incorrect. The traditional or classical deployment pattern was moving your software to a development stage, a testing stage, maybe an acceptance or staging stage, and finally a production stage."

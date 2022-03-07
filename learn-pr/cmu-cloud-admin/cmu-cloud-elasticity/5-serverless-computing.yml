@@ -5,10 +5,11 @@ metadata:
   title: Serverless computing
   description: Serverless computing
   ms.date: 12/31/2019
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 6
 content: |
   [!include[](includes/5-serverless-computing.md)]

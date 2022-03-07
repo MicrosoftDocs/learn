@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.intro-to-hyperscale
+metadata:
+  title: Introduction to Hyperscale (Citus) on Azure Database for PostgreSQL
+  description: When your database is small, it’s easy to throw more hardware at the problem and scale up. As these tables grow, you need to think about other ways to scale your database. Azure Database for PostgreSQL Hyperscale (Citus) transforms open-source PostgreSQL into a distributed database solution, reliably and securely managed on Azure.
+  ms.date: 10/23/2020
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Hyperscale (Citus) on Azure Database for PostgreSQL 
+summary: When your database is small, it’s easy to throw more hardware at the problem and scale up. As these tables grow, you need to think about other ways to scale your database. Azure Database for PostgreSQL Hyperscale (Citus) transforms open-source PostgreSQL into a distributed database solution, reliably and securely managed on Azure.
+abstract: |
+  In this module, you will:
+  - Create a Hyperscale instance of Azure Database for PostgreSQL
+  - Automatically shard and distribute tables in Hyperscale
+  - Scale and rebalance a Hyperscale database without downtime
+prerequisites: Basic familiarity with relational databases
+iconUrl: /learn/achievements/intro-to-hyperscale.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- azure
+- azure-database-postgresql
+units:
+- learn.intro-to-hyperscale.1-introduction
+- learn.intro-to-hyperscale.2-how-hyperscale-works
+- learn.intro-to-hyperscale.3-exercise-create-hyperscale
+- learn.intro-to-hyperscale.4-design-a-distributed-database
+- learn.intro-to-hyperscale.5-exercise-distributed-tables
+- learn.intro-to-hyperscale.6-scale-up-scale-out
+- learn.intro-to-hyperscale.7-exercise-scale-and-rebalance-hyperscale
+- learn.intro-to-hyperscale.8-knowledge-check
+- learn.intro-to-hyperscale.9-summary
+badge:
+  uid: learn.intro-to-hyperscale.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.just-enough-administration-windows-server.summary
+title: Summary resources
+metadata:
+  title: Summary resources
+  description: "Summary resources"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary-resources.md)]

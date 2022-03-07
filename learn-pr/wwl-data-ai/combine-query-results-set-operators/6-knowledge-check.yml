@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.combine-query-results-set-operators.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/10/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "When combining the output of two sets, how does UNION and UNION all treat NULL values?"
+    choices:
+    - content: "Rows that contain NULL values are not returned because NULL values cannot be compared."
+      isCorrect: false
+      explanation: "That's incorrect. UNION and UNION ALL will return rows that contain NULL values."
+    - content: "NULLs represent unknown values and cannot be compared. UNION and UNION ALL will return an error if sets contain NULLs."
+      isCorrect: false
+      explanation: "That's incorrect. UNION and UNION ALL will not return an error if the result sets being compared include NULLs."
+    - content: "A NULL in one set is treated as being equal to a NULL in another set."
+      isCorrect: true
+      explanation: "That's correct. NULLs are compared and treated as duplicates if they appear in both sets."
+  - content: "There are employee and customer query result sets, both of which containID(int) and country/region(nvarchar(20)) columns. Someone wants to return a list of countries/regions that appear in both result sets. Which set operator should they use?"
+    choices:
+    - content: "EXCEPT"
+      isCorrect: false
+      explanation: "That's incorrect. The EXCEPT set operator will return rows that are in one result set, but not the other."
+    - content: "INTERSECT"
+      isCorrect: true
+      explanation: "That's correct. The INTERSECT set operator will return rows that are in both result sets."
+    - content: "OUTER APPLY"
+      isCorrect: false
+      explanation: "That's incorrect. OUTER APPLY is a table operator will return rows from two result sets."
+  - content: "What type of result does the APPLY operator return?"
+    choices:
+    - content: "Table-valued"
+      isCorrect: true
+      explanation: "That's correct. APPLY returns a table-valued result rather than a scalar or multi-valued result."
+    - content: "Scalar"
+      isCorrect: false
+      explanation: "That's incorrect. Scalar functions return one single value."
+    - content: "Aggregate"
+      isCorrect: false
+      explanation: "That's incorrect. Aggregates return single values similar to SUM() or COUNT()."

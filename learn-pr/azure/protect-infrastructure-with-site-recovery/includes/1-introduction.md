@@ -1,4 +1,4 @@
-Natural or human-made disasters may affect the continuity of your organization's cloud infrastructure. Planning for disaster and making sure recovery and business continuity plans are in place to deal with such an event is key to any organization's longevity. 
+Natural or human-made disasters may affect the continuity of your organization's cloud infrastructure. Planning for disaster and making sure recovery and business continuity plans are in place to deal with such an event is key to any organization's longevity.
 
 Azure Site Recovery provides disaster recovery for Azure infrastructure by managing and orchestrating replication, failover, and failback of Azure virtual machines (VMs).
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-processes-to-capture-analyze-user-feedback.explore-twitter-sentiment-release-gate
+title: Explore Twitter sentiment release gate
+metadata:
+  title: Explore Twitter sentiment release gate
+  description: "Explore Twitter sentiment release gate"
+  ms.date: 02/14/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explore-twitter-sentiment-release-gate.md)]

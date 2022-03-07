@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-204-integrate-caching-content-delivery-within-solutions
+metadata:
+  title: 'AZ-204: Integrate caching and content delivery within solutions'
+  description: 'AZ-204: Integrate caching and content delivery within solutions'
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-204: Integrate caching and content delivery within solutions'
+prerequisites: |
+  *   At least one year of experience developing scalable solutions through all phases of software development.
+  *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
+  *   If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
+summary: |
+  Learn how to improve the performance and scalability of your applications by integrating Azure Cache for Redis and Azure Content Delivery Network in to your solution.
+iconUrl: /learn/achievements/integrate-content-delivery.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cache-redis
+- azure-queue-storage
+modules:
+- learn.wwl.develop-for-azure-cache-for-redis
+- learn.wwl.develop-for-storage-cdns
+trophy:
+  uid: learn.wwl.az-204-integrate-caching-content-delivery-within-solutions.trophy

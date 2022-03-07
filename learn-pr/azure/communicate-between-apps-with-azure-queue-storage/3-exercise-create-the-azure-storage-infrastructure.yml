@@ -4,22 +4,13 @@ title: Exercise - Create a storage account
 metadata:
   title: Exercise - Create a storage account
   description: Create a storage account
-  ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 10/07/2021
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-the-azure-storage-infrastructure.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Run the `az storage account create` command above to create a general-purpose v2 storage account."
-  azure:
-    resource:
-      type: "Microsoft.Storage/storageAccounts"
-      kind: "StorageV2"

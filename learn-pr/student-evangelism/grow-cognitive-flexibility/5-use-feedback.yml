@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.grow-cognitive-flexibility.use-feedback
+title: Use feedback to grow your cognitive flexibility
+metadata:
+  title: Use feedback to grow your cognitive flexibility
+  description: This unit covers how to best give and receive feedback.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-use-feedback.md)]
+quiz:
+  questions:
+    - content: "Which of the following options is an essential component of effective feedback?"
+      choices:
+        - content: "High-level comments without delving into specifics."
+          isCorrect: false
+          explanation: "Incorrect. Feedback that doesn't include specific details isn't very effective and doesn't help recipients improve their cognitive flexibility."
+        - content: "Feedback indicating that the recipient lacks the skills to complete the task."
+          isCorrect: false
+          explanation: "Incorrect. To be effective, the feedback should signal positive intention and reinforce the self-confidence of the person at the same time."
+        - content: "Tools, tips, and guidelines for next steps."
+          isCorrect: true
+          explanation: "Correct. Effective feedback includes tools, tips, and guidelines for next steps to help the recipient improve and fill in gaps in knowledge."

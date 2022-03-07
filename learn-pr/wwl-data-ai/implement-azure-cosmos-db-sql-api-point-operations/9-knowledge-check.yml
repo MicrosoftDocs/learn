@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What parameter\\[s\\] are required to read an item in Azure Cosmos DB SQL API?"
+    choices:
+    - content: "Both an id and partition key value"
+      isCorrect: true
+      explanation: "That's correct. You can perform a point read with both the id and partition key values."
+    - content: "Only an id"
+      isCorrect: false
+      explanation: "That's incorrect. Both a partition key value and id are required to perform a point read operation in Azure Cosmos DB SQL API."
+    - content: "Only a partition key value"
+      isCorrect: false
+      explanation: "That's incorrect. Both a partition key value and id are required to perform a point read operation in Azure Cosmos DB SQL API."
+  - content: "Which method should you use to update an item in Azure Cosmos DB SQL API using the .NET SDK?"
+    choices:
+    - content: "PatchItemAsync<>"
+      isCorrect: false
+      explanation: "That's incorrect. There is a separate set of methods to patch items in the SDK."
+    - content: "UpdateItemAsync<>"
+      isCorrect: false
+      explanation: "That's incorrect. This method does not exist in the SDK."
+    - content: "UpsertItemAsync<>"
+      isCorrect: true
+      explanation: "That's correct. TheUpsertItemAsync<> method takes in an item as the method parameter and updates the item."
+  - content: "Which class contains the methods for Create, Read, Update, and Delete point operations on items in Azure Cosmos DB SQL API?"
+    choices:
+    - content: "Database"
+      isCorrect: false
+      explanation: "That's incorrect. First access the Microsoft.Azure.Cosmos.Container class to perform CRUD operations on items."
+    - content: "Container"
+      isCorrect: true
+      explanation: "That's correct. The Microsoft.Azure.Cosmos.Container class contains methods for CRUD operations on items."
+    - content: "CosmosClient"
+      isCorrect: false
+      explanation: "That's incorrect. First access the Microsoft.Azure.Cosmos.Container class to perform CRUD operations on items."

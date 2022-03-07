@@ -1,3 +1,11 @@
+Once you've migrated your database from on-premises to Azure, you need to update your existing applications so that they can access the MySQL in its new location. 
+
+Your original on-premises server and database will contain roles that define the privileges associated with users, the operations they can do, and the objects they perform these operations over. Azure Database for MySQL uses the same authentication and authorization mechanisms as PostgreSQL running on-premises.
+
+In this unit, you'll explore the updates you need to make to your applications to connect to your newly migrated Azure Database for MySQL.
+
+## Create the users manually
+
 Your original on-premises server and database will contain users, the operations they perform, and the objects over which they do these operations. Azure Database for MySQL uses the same authentication and authorization mechanisms as MySQL running on-premises.
 
 When you transfer a MySQL database to Azure Database for MySQL using the Azure Database Migration Service, the users aren't copied. You must manually recreate the necessary user accounts for the administrator and users of the tables in the target database. To do these tasks, you use the SQL language or a utility such as MySQL Workbench. Run the `CREATE USER` command. You use the `GRANT` command to assign the necessary privileges to a user. For example:

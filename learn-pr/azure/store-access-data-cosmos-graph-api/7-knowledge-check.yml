@@ -1,18 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.store-access-data-cosmos-graph-api.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: Knowledge Check
+  title: Knowledge check
+  description: Knowledge check
   ms.date: 05/03/2019
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 quiz:
-  title: Knowledge Check
+  title: Knowledge check
   questions:
   - content: "In which of the following scenarios would a graph database, as opposed to another database model, be the best fit?"
     choices:
@@ -27,15 +26,15 @@ quiz:
       explanation: "A graph database is built and optimized for traversing relationships from a particular starting point, it is not optimized for searching for data across the entire graph"
   - content: "Which of these answers is a primary strength of graph databases, as compared to other database models?"
     choices:
-    - content: "Performance"
+    - content: "Query performance with relationships"
       isCorrect: true
       explanation: "A graph database has superior performance for querying related data. Graph databases are designed to traverse stored data quickly and retrieve results in milliseconds"
-    - content: "Storage"
+    - content: "Storage for large data sets"
       isCorrect: false
       explanation: "A graph database is not ideally suited to store numerous properties on a single node or large values in those properties"
     - content: "Where data models stay consistent and the structure is fixed and tabular"
       isCorrect: false
-      explanation: "Quite the opposite, graph databases are well-suited to storing any elements and flexible to easily adapt to changing requirements"
+      explanation: "Quite the opposite. Graph databases are well suited to storing any elements, and flexible to easily adapt to changing requirements"
   - content: "How would you model this module's scenario in a graph database?"
     choices:
     - content: "As a connected graph of nodes and relationships with properties and labels"

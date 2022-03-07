@@ -1,6 +1,6 @@
 Azure DNS is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure.
 
-In this unit, you'll learn what DNS is and how it works. Then learn about Azure DNS, and why you would use it.
+In this unit, you'll learn what DNS is and how it works. You will also learn about Azure DNS, and why you would use it.
 
 ## What is DNS?
 
@@ -29,13 +29,13 @@ Here's a simplified overview of the process a DNS server uses when it resolves a
 
 - Checks to see if the domain name is stored in the short-term cache. If so, the DNS server resolves the domain request.
 - If the domain isn't in the cache, it contacts one or more DNS servers on the web to see if they have a match. When a match is found, the DNS server updates the local cache and resolves the request.
-- If the domain isn't found after a reasonable number of DNS checks, the DNS server responds with a *domain cannot be found* (404) error.
+- If the domain isn't found after a reasonable number of DNS checks, the DNS server responds with a *domain cannot be found* error.
 
 ### IPv4 and IPv6
 
 Every computer, server, or network-enabled device on your network has an IP address. An IP address, within your domain, is unique. There are two standards of IP address: IPv4 and IPv6.
 
-- **IPv4** is composed of four numbers, in the range 0 to 255, separated by a dot. Example: 127.0.0.1. Today, IPv4 is the most commonly used standard. Yet, with the increase in IoT devices, the IPv4 standard will eventually be unable to keep up.
+- **IPv4** is composed of four sets of numbers, in the range 0 to 255, each separated by a dot. Example: 127.0.0.1. Today, IPv4 is the most commonly used standard. Yet, with the increase in IoT devices, the IPv4 standard will eventually be unable to keep up.
 
 - **IPv6** is a relatively new standard and will eventually replace IPv4. It's made up of eight groups of hexadecimal numbers, each separated by a colon. Example: fe80:11a1:ac15:e9gf:e884:edb0:ddee:fea3.
 
@@ -49,10 +49,10 @@ As the administrator for your company, you want to set up a DNS server by using 
 
 ### DNS record types
 
-The configuration information for your DNS server is stored as a file within a zone on your DNS server. Each file is called a record. The following record types are the most commonly created and used:
+Configuration information for your DNS server is stored as a file within a zone on your DNS server. Each file is called a record. The following record types are the most commonly created and used:
 
 - **A** is the host record, and is the most common type of DNS record. It maps the domain or host name to the IP address.
-- **CNAME** is the canonical name, or the alias for an A record. If you had different domain names that all accessed the same website, you would use CNAME.
+- **CNAME** is a Canonical Name record that's used to create an alias from one domain name to another domain name. If you had different domain names that all accessed the same website, you would use CNAME.
 - **MX** is the mail exchange record. It maps mail requests to your mail server, whether hosted on-premises or in the cloud.
 - **TXT** is the text record. It's used to associate text strings with a domain name. Azure and Microsoft 365 use TXT records to verify domain ownership.
 
@@ -118,7 +118,7 @@ To publish a private DNS zone to your virtual network, you specify the list of v
 Private DNS zones have the following benefits:
 
 - There's no need to invest in a DNS solution. DNS zones are supported as part of the Azure infrastructure.
-- All DNS record types are supported: A, CNAME, TXT, MX, SOA, AAAA, PTR, and SVR.
+- All DNS record types are supported: A, CNAME, TXT, MX, SOA, AAAA, PTR, and SRV.
 - Host names for VMs in your virtual network are automatically maintained.
 - Split-horizon DNS support allows the same domain name to exist in both private and public zones. It resolves to the correct one based on the originating request location.
 

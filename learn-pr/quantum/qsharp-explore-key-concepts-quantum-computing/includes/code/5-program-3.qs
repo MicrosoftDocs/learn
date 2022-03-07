@@ -6,11 +6,10 @@ namespace ExploringInterference {
 
     @EntryPoint()
     operation TestInterference3() : Unit {
-        using (q = Qubit()) {
-            Y(q);
-            H(q);
-            DumpMachine();
-            Reset(q);
-        }
+        use q = Qubit();
+        Y(q);
+        H(q);
+        DumpMachine();
+        Reset(q);
     }
 }

@@ -4,17 +4,17 @@ You met the team at Tailspin Toys earlier in this learning path. In the [previou
 
 As more teams adopt Azure Boards, the organization begins to see the network effects of having their planning consolidate around a consistent process. Problems that were once written off as a cost of doing business now have achievable solutions. Let's watch the team as they lead their organization in its evolution.
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-- Learn how _delivery plans_ enable multiple teams to plan, schedule, and coordinate their work.
-- Install the Delivery Plans extension for your Azure DevOps project.
-- Create a delivery plan and adjust a team's sprint workload to optimize delivery efficiency.
+- Describe how _delivery plans_ enable multiple teams to plan, schedule, and coordinate their work
+- Install the Delivery Plans extension for your Azure DevOps project
+- Create a delivery plan and adjust a team's sprint workload to optimize delivery efficiency
 
 ## Prerequisites
 
-The modules in this learning path form a progression. We recommend you start at the beginning of the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before you work on this module.
+The modules in this learning path form a progression. We recommend you start at the beginning of the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path before you work on this module.
 
-If you'd rather do only this module, go through [Get started with Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true) first to set up your Azure DevOps organization.
+If you'd rather do only this module, go through [Introduction to Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true) first to set up your Azure DevOps organization.
 
 ## Meet the team
 

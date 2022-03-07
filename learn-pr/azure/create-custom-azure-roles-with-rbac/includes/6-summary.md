@@ -6,7 +6,7 @@ The built-in Azure roles are versatile and work for many organizations. You migh
 
 ## Learn More
 
-- [Azure built-in roles](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
-- [Azure resource providers operations](https://docs.microsoft.com/azure/role-based-access-control/resource-provider-operations)
-- [Azure custom roles](https://docs.microsoft.com/azure/role-based-access-control/custom-roles)
-- [Create or update Azure custom roles using the Azure portal](https://docs.microsoft.com/azure/role-based-access-control/custom-roles-portal)
+- [Azure built-in roles](/azure/role-based-access-control/built-in-roles)
+- [Azure resource providers operations](/azure/role-based-access-control/resource-provider-operations)
+- [Azure custom roles](/azure/role-based-access-control/custom-roles)
+- [Create or update Azure custom roles using the Azure portal](/azure/role-based-access-control/custom-roles-portal)

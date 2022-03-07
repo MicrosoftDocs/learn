@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-batch-account-using-azure-portal.exercise-run-batch-applications
+title: Exercise - Add a new application package to a Batch account in the Azure portal 
+metadata:
+  title: Exercise - Add a new application package to a Batch account in the Azure portal 
+  description: Create an application package and a Batch job.
+  ms.date: 02/01/2021
+  author: prkannap
+  ms.author: prkannap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-run-batch-applications.md)]

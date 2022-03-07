@@ -1,103 +1,96 @@
-## Build and deploy your application
+## Step 1: Build and deploy your application
 
 1. Start Visual Studio Code to open your project.
 
-2. Select **Open folder**, and open the **Azure-Sphere** lab folder.
+2. From the menu, click **File**, then **Open Folder**.
 
-3. Open the **Lab_4_Direct_Methods** folder.
+3. Open the **Azure-Sphere lab** folder.
 
-4. Choose **Select Folder** or **OK** to open the project.
+4. Open the **Lab_4_Direct_Methods** folder.
 
-5. Set your developer board configuration.
+5. Click **Select Folder** or the **OK** button to open the project.
 
-   1. Open the **CMakeList.txt** file.
-   2. Uncomment the `set` command that corresponds to your Azure Sphere device developer board.
-   3. Save the file. This will auto-generate the CMake cache.
+## Step 2: Set your developer board configuration
 
-6. Configure the Azure IoT connection information.
+These labs support developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board.
 
-   1. Open the **app_manifest.json** file.
-   2. Redo the settings for the **app_manifest.json** file. Either copy from Notepad if you still have it open, or copy from the **app_manifest.json** file that you created in the previous exercise.
-   3. Paste the contents of the clipboard into **app_manifest.json**, and save the file.
+The default developer board configuration is for the Avnet Azure Sphere Starter Kit Revision 1. If you have this board, there's no additional configuration required.
 
-7. Ensure **main.c** is open.
+1. Open the **CMakeList.txt** file.
 
-8. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
+2. Add a `#` at the beginning of the set Avnet line to disable it.
 
-9. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application that's now running the Azure Sphere device.
+3. Uncomment the `set` command that corresponds to your Azure Sphere device developer board.
+
+   ```text
+   set(AVNET TRUE "AVNET Azure Sphere Starter Kit Revision 1 ")
+   # set(AVNET_REV_2 TRUE "AVNET Azure Sphere Starter Kit Revision 2 ")
+   # set(SEEED_STUDIO_RDB TRUE "Seeed Studio Azure Sphere MT3620 Development Kit (aka Reference Design Board or rdb)")
+   # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
+   ```
+
+4. Save the file. This will autogenerate the CMake cache.
+
+## Step 3: Configure the Azure IoT connection information
+
+1. Open the **app_manifest.json** file.
+
+2. You'll need to redo the settings for the **app_manifest.json** file. Either copy the settings from Notepad if you still have it open. Alternatively,  copy the **app_manifest.json** settings created in the previous exercise.
+
+3. Replace the existing configuration by pasting the contents of the clipboard into **app_manifest.json**.
+
+4. Save the updated **app_manifest.json** file.
+
+## Step 4: Start the app build deploy process
+
+1. Open **main.c**.
+1. Select **CMake: [Debug]: Ready** from the Visual Studio Code status bar.
+1. From Visual Studio Code, press F5 to build, deploy, start, and attach the remote debugger to the application now running the Azure Sphere device.
 
 ## Expected device behavior
 
-### Avnet Azure Sphere MT3620 Starter Kit
+### Azure Sphere MT3620 Starter Kit Revision 1 and 2
 
-![Photo of the Avnet Azure Sphere Kit.](../media/avnet-azure-sphere.jpg)
+![The illustration shows the Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
-- LED3 turns yellow when connected to Azure.
+- The WLAN LED will blink every 5 seconds when connected to Azure.
+
+- When you initiate the device restart direct method, you will observe the device restarting.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
-![Photo of the Seeed Studio Azure Sphere Kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
+![The illustration shows the Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
-- The network LED turns red when connected to Azure.
+- The WLAN LED will blink every 5 seconds when connected to Azure.
+
+- When you initiate the device restart direct method, you will observe the device restarting.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
-![Photo of the Seeed Studio Mini Azure Sphere Kit.](../media/seeed-studio-azure-sphere-mini.png)
+![The illustration shows the Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-- The green LED closest to the USB connector turns on when connected to Azure.
+- The User LED will blink every 5 seconds when connected to Azure.
 
-## Test IoT Hub direct method
+- When you initiate the device restart direct method, you will observe the device restarting.
 
-Use the Azure command-line tool to invoke Azure IoT hub direct method. For more information, see [invoke-device-method](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-invoke-device-method).
+## Testing Azure IoT Hub direct method commands
 
-Follow these steps to invoke the `resetDevice` direct method, which restarts the device:
+1. Start **Azure IoT Explorer**.
 
-1. You need the name of the Azure IoT hub you created. You can get the name from the Azure portal.
+1. Click **View devices in this hub**.
 
-   ![Screenshot showing Azure resources.](../media/azure-iot-resources.png)
+1. Click your on your **device**.
 
-2. You need the Azure Sphere device ID. Run the following command from the **Azure Sphere Developer Command Prompt**.
+1. Click **IoT Plug and Play components** from the side menu.
 
-   ```
-   azsphere dev show-attached
-   ```
+1. Click **Default component**.
 
-3. Open Azure Cloud Shell by right-clicking the following link, and opening in a new tab "[https://shell.azure.com](https://shell.azure.com/)".
+1. Select **Commands** from the menu.
 
-4. In Cloud Shell, run the [az extension add](https://docs.microsoft.com/cli/azure/extension?view=azure-cli-latest#az-extension-add) command to add the Microsoft Azure IoT extension to the Azure CLI shell. The Azure IoT extension adds IoT Hub, IoT Edge, and IoT device provisioning service specific commands to the Azure CLI.
+1. Set the **Restart Delay** value to be greater than 2 and less than 10.
 
-   ```
-   az extension add --name azure-iot
-   ```
+1. Click the **Send command** button.
 
-5. Set a bash variable in Cloud Shell for your Azure Sphere device ID. Make sure there are no spaces on either side of the `=` character.
+## Close Visual Studio
 
-   ```
-   DEVICE_ID={your Azure Sphere device ID}
-   ```
-
-6. Set a bash variable in Cloud Shell for your IoT hub name. Make sure there are no spaces on either side of the `=` character.
-
-   ```
-   HUB_NAME={your hub name}
-   ```
-
-7. Invoke the direct method as follows.
-
-   ```
-   az iot hub invoke-device-method --method-name "ResetMethod" --method-payload '{"reset_timer":5}' --device-id "${DEVICE_ID,,}" -n $HUB_NAME
-   ```
-
-    > [!NOTE]
-    > IoT Hub requires device IDs to be lowercase. The bash command `"${DEVICE_ID,,}"` in the invoke device method converts the device ID to lowercase.
-
-8. `invoke-device-method` displays the result of the call as follows.
-
-   ```
-   {
-   "payload": "ResetMethod called. Reset in 5 seconds",
-   "status": 200
-   }
-   ```
-
-Now you can close Visual Studio and clean up your resources in Azure.
+Now close Visual Studio.

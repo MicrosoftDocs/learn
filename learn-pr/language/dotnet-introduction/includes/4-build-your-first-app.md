@@ -1,4 +1,4 @@
-At the outset of this module, we assumed that you've already written a "Hello World" application by using C#.  If you haven't, then you might want to review this learning path's first module, [Write your first C# code](https://docs.microsoft.com/en-us/learn/modules/csharp-write-first/?azure-portal=true).
+At the outset of this module, we assumed that you've already written a "Hello World" application by using C#.  If you haven't, then you might want to review this learning path's first module, [Write your first C# code](/learn/modules/csharp-write-first/?azure-portal=true).
 
 For simplicity, we'll rewrite the "Hello World" application. This time we'll take a .NET perspective on what's happening behind the scenes.
 
@@ -27,7 +27,7 @@ Press the green **Run** button on the right side of the .NET editor. Assuming yo
 
 ### What happens to the code you write?
 
-The browser version of Try .NET hides some of the code that you see when you build a full application by using Try .NET, Visual Studio 2019, or Visual Studio Code.
+The browser version of Try .NET hides some of the code that you see when you build a full application by using Try .NET, Visual Studio 2022, or Visual Studio Code.
 
 When you include the hidden code, here's how the example looks:
 

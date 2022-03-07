@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.intro-to-powershell.4-cmdlets
+title: Locate commands
+metadata:
+  title: Locate commands
+  description: Learn how locate commands.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 12/7/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-cmdlets.md)]

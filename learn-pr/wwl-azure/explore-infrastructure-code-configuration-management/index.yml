@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.explore-infrastructure-as-code-configuration-management
+metadata:
+  title: Explore infrastructure as code and configuration management
+  description: "Explore infrastructure as code and configuration management"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore infrastructure as code and configuration management
+summary: This module describes key concepts of infrastructure as code and environment deployment creation and configuration. Also, understand the imperative, declarative, and idempotent configuration and how it applies to your company.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand how to deploy your environment
+  - Plan your environment configuration
+  - Choose between imperative versus declarative configuration
+  - Explain idempotent configuration
+prerequisites: |
+  None
+iconUrl: /learn/achievements/1-explore-infrastructure-as-code-and-configuration-management.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.explore-infrastructure-as-code-configuration-management.introduction
+- learn.wwl.explore-infrastructure-as-code-configuration-management.explore-environment-deployment
+- learn.wwl.explore-infrastructure-as-code-configuration-management.examine-environment-configuration
+- learn.wwl.explore-infrastructure-as-code-configuration-management.understand-imperative-versus-declarative-configuration
+- learn.wwl.explore-infrastructure-as-code-configuration-management.understand-idempotent-configuration
+- learn.wwl.explore-infrastructure-as-code-configuration-management.knowledge-check
+- learn.wwl.explore-infrastructure-as-code-configuration-management.summary
+badge:
+  uid: learn.wwl.explore-infrastructure-as-code-configuration-management.badge

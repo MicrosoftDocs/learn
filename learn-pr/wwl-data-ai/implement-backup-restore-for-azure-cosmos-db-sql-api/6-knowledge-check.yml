@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/12/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "To restore a periodic backup you must?"
+    choices:
+    - content: "In the Azure portal Azure Cosmos DB page, select *Restore*"
+      isCorrect: false
+      explanation: "That's incorrect. This option allows you to restore a deleted Azure Cosmos DB account."
+    - content: "Open a ticket with the Azure support team to restore the backup for you"
+      isCorrect: true
+      explanation: "That's correct. You can't restore an Azure Cosmos DB account or any of its data, only the Azure support team can do that, so a support ticket must be opened to restore the data."
+    - content: "Under Azure Cosmos DB account Data Explorer, run the SQL Query **restore from \"AZUREBLOBSTORAGEPATH\"**, replace AZUREBLOBSTORAGEPATH for the URL of your backup file."
+      isCorrect: false
+      explanation: "That's incorrect. Data Explorer is used to query the Azure Cosmos DB account data, the restore command does not exist."
+  - content: "Which of the following options must you configure for continuous backup mode to work properly?"
+    choices:
+    - content: "Backup storage redundancy."
+      isCorrect: false
+      explanation: "That's incorrect. Backup storage redundancy is a periodic backup setting, for the continuous backup mode, there is no need to configure intervals, retention, or storage redundancy."
+    - content: "Retention period."
+      isCorrect: false
+      explanation: "That's incorrect. Retention period is a periodic backup setting, for the continuous backup mode, there is no need to configure intervals, retention, or storage redundancy."
+    - content: "Continuous backup mode doesn't require any setting to be configured."
+      isCorrect: true
+      explanation: "That's correct. Unlike periodic backups, there is no need to configure intervals, retention, or storage redundancy."
+  - content: "What is a limitation of using continuous backup mode?"
+    choices:
+    - content: "You can only restore over the existing Azure Cosmos DB account at the container level."
+      isCorrect: false
+      explanation: "That's incorrect. Restores never overwrite any part of an existing Azure Cosmos DB account, all restores create a brand new Azure Cosmos DB account."
+    - content: "Multi-region write accounts not supported."
+      isCorrect: true
+      explanation: "That's correct. Currently continuous backups are only supported for an Azure Cosmos DB account configured for single-write region."
+    - content: "Firewall and VNET settings are only recovered for the restored Azure Cosmos DB account region."
+      isCorrect: false
+      explanation: "That's incorrect. Continuous backup mode doesn't restore any Firewall, VNET, private endpoint settings."

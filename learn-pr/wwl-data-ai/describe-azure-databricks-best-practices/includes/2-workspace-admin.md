@@ -10,27 +10,27 @@ Each workspace is identified by a globally unique 53-bit number, called ***Works
 
 Example: `https://eastus2.azuredatabricks.net/?o=12345`
 
-Azure Databricks uses [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) as the exclusive Identity Provider and there's a seamless out of the box integration between them. This makes ADB tightly integrated with Azure just like its other core services. Any AAD member assigned to the Owner or Contributor role can deploy Databricks and is automatically added to the ADB members list upon first login. If a user is not a member of the Active Directory tenant, they can't log in to the workspace.
+Azure Databricks uses [Azure Active Directory (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis) as the exclusive Identity Provider and there's a seamless out of the box integration between them. This makes ADB tightly integrated with Azure just like its other core services. Any Azure AD member assigned to the Owner or Contributor role can deploy Databricks and is automatically added to the ADB members list upon first login. If a user is not a member of the Active Directory tenant, they can't log in to the workspace.
 
-Azure Databricks comes with its own user management interface. You can create users and groups in a workspace, assign them certain privileges, etc. While users in AAD are equivalent to Databricks users, by default AAD roles have no relationship with groups created inside ADB, unless you use [SCIM](https://docs.azuredatabricks.net/administration-guide/admin-settings/scim/aad.html) for provisioning users and groups. With SCIM, you can import both groups and users from AAD into Azure Databricks, and the synchronization is automatic after the initial import. ADB also has a special group called ***Admins***, not to be confused with AAD's role Admin.
+Azure Databricks comes with its own user management interface. You can create users and groups in a workspace, assign them certain privileges, etc. While users in Azure AD are equivalent to Databricks users, by default Azure AD roles have no relationship with groups created inside ADB, unless you use [SCIM](https://docs.azuredatabricks.net/administration-guide/admin-settings/scim/aad.html) for provisioning users and groups. With SCIM, you can import both groups and users from Azure AD into Azure Databricks, and the synchronization is automatic after the initial import. ADB also has a special group called ***Admins***, not to be confused with Azure AD's role Admin.
 
-The first user to login and initialize the workspace is the workspace ***owner***, and they are automatically assigned to the Databricks admin group. This person can invite other users to the workspace, add them as admins, create groups, etc. The ADB logged in user's identity is provided by AAD, and shows up under the user menu in Workspace:
+The first user to login and initialize the workspace is the workspace ***owner***, and they are automatically assigned to the Databricks admin group. This person can invite other users to the workspace, add them as admins, create groups, etc. The ADB logged in user's identity is provided by Azure AD, and shows up under the user menu in Workspace:
 
-  ![Figure 1: Databricks user menu is displayed](../media/user-menu.png)
+  ![Figure 1: Databricks user menu is displayed.](../media/user-menu.png)
 
 Figure 1: Databricks user menu
 
 Multiple clusters can exist within a workspace, and there's a one-to-many mapping between a Subscription to Workspaces, and further, from one Workspace to multiple Clusters.
 
-  ![Figure 2: Azure Databricks Isolation Domains Workspace](../media/databricks-isolation.png)
+  ![Figure 2: Azure Databricks Isolation Domains Workspace.](../media/databricks-isolation.png)
 
-Figure 2: Relationship Between AAD, Workspace, Resource Groups, and Clusters
+Figure 2: Relationship Between Azure AD, Workspace, Resource Groups, and Clusters
 
 With this basic understanding, let's discuss how to plan a typical ADB deployment. We first grapple with the issue of how to divide workspaces and assign them to users and teams.
 
 ## Map workspaces to business divisions
 
-How many workspaces do you need to deploy? The answer to this question depends a lot on your organization's structure. We recommend that you assign workspaces based on a related group of people working together collaboratively. This also helps in streamlining your access control matrix within your workspace (folders, notebooks etc.) and also across all your resources that the workspace interacts with (storage, related data stores like Azure SQL DB, Azure SQL DW etc.). This type of division scheme is also known as the [Business Unit Subscription](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/subscriptions/) design pattern and it aligns well with the Databricks chargeback model.
+How many workspaces do you need to deploy? The answer to this question depends a lot on your organization's structure. We recommend that you assign workspaces based on a related group of people working together collaboratively. This also helps in streamlining your access control matrix within your workspace (folders, notebooks etc.) and also across all your resources that the workspace interacts with (storage, related data stores like Azure SQL DB, Azure SQL DW etc.). This type of division scheme is also known as the [Business Unit Subscription](/azure/cloud-adoption-framework/decision-guides/subscriptions/) design pattern and it aligns well with the Databricks chargeback model.
 
   ![Figure 3: Business Unit Subscription design pattern](../media/business-unit-subscription.png)
 
@@ -53,7 +53,7 @@ Key workspace limits are:
 
 ### Azure subscription limits
 
-Next, there are [Azure limits](https://docs.microsoft.com/azure/azure-subscription-service-limits) to consider since ADB deployments are built on top of the Azure infrastructure. 
+Next, there are [Azure limits](/azure/azure-subscription-service-limits) to consider since ADB deployments are built on top of the Azure infrastructure. 
 
 Key Azure limits are:
 
@@ -70,10 +70,10 @@ These limits are at this point in time and might change going forward. Some of t
 
 Within each subscription, consider the following best practices for HA/DR:
 
-- Deploy Azure Databricks in two [paired Azure regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions), ideally mapped to different control plane regions.
+- Deploy Azure Databricks in two [paired Azure regions](/azure/best-practices-availability-paired-regions), ideally mapped to different control plane regions.
   - For example, East US2 and West US2 will map to different control planes
   - Whereas West and North Europe will map to same control plane
-- Use [Azure Traffic Manager](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview) to load balance and distribute API requests between two deployments, when the platform is primarily being used in a backend non-interactive mode.
+- Use [Azure Traffic Manager](/azure/traffic-manager/traffic-manager-overview) to load balance and distribute API requests between two deployments, when the platform is primarily being used in a backend non-interactive mode.
 
 ## Additional considerations
 

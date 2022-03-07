@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.2-introduction-nvidia-deepstream-graph-composer
+title: Introduction to the NVIDIA DeepStream Graph Composer
+metadata:
+  title: Introduction to NVIDIA DeepStream Graph Composer
+  description: Introduction to NVIDIA DeepStream Graph Composer
+  author: toolboc
+  ms.author: chnoring
+  ms.date: 11/09/2021
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-introduction-nvidia-deepstream-graph-composer.md)]

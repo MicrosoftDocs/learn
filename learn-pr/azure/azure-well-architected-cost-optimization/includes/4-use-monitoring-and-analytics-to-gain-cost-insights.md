@@ -2,13 +2,13 @@ You've deployed your application by using infrastructure and services that are a
 
 ## Track your cloud spend
 
-To make intelligent decisions, you need data. By analyzing where your money is going, you can compare your costs to your utilization in order to discover where you might have waste within your environment.
+To make intelligent decisions, you need data. By analyzing where your money is going, you can compare your costs to your utilization to discover where you might have waste within your environment.
 
 An export of your billing data is available at any time. By using your billing data, you can track where your costs are going and how they're allocated across your resources. One challenge for you is that the billing data shows your costs but not your utilization. You'll have data that indicates you're paying for a large VM, but how much are you actually using it?
 
 Azure Cost Management gives you insights into where your spend is going, as well as underutilized resources. Azure Cost Management tracks your total spend, cost by service, and cost over time. You can drill down into resource types and instances. You can also break down your costs by organization or cost center by tagging resources with those categories.
 
-:::image type="content" source="../media/4-grouped-daily-accum-view.png" alt-text="Screenshot of Azure Cost Management":::
+:::image type="content" source="../media/4-grouped-daily-accum-view.png" alt-text="Screenshot of Azure Cost Management.":::
 
 Azure Advisor also has a cost component that:
 
@@ -18,13 +18,13 @@ Azure Advisor also has a cost component that:
 
 Azure Advisor makes additional recommendations in the areas of performance, high availability, and security.
 
-The important part is to take time to review your spend and evaluate where your money is going. Effective analysis will help you identify areas of inefficiency and ensure you're operating as cost-effectively as possible.
+The important part is to take time to review your spend, and evaluate where your money is going. Effective analysis will help you identify areas of inefficiency, and ensure you're operating as cost-effectively as possible.
 
 ## Conduct cost reviews
 
 After you have your Azure services running, you should regularly check your costs to track your Azure spending. You can use cost analysis to understand where the costs originated for your Azure usage.
 
-:::image type="content" source="../media/4-cost-analysis.png" alt-text="Screenshot of cost analysis in the Azure portal":::
+:::image type="content" source="../media/4-cost-analysis.png" alt-text="Screenshot of cost analysis in the Azure portal.":::
 
 Take time as an organization to regularly meet and review billing and expenditures that are related to cloud services. Review the respective expenditures with the technical and business stakeholders for each application. This brings increased visibility to the costs that are associated with an application, and the decisions made from a cost perspective. 
 

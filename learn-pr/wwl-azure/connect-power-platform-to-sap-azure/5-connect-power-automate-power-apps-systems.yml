@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.connect-power-platform-to-sap-azure.connect-power-automate-power-apps-systems
+title: Connect Power Automate and Power Apps to SAP systems
+metadata:
+  title: Connect Power Automate and Power Apps to SAP systems
+  description: "Connect Power Automate and Power Apps to SAP systems"
+  ms.date: 04/12/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-connect-power-automate-power-apps-systems.md)]

@@ -5,4 +5,4 @@ Redis cache can improve the performance and scalability of systems that rely hea
 
 ## Additional resources
 
-[Migrate from Managed Cache Service to Azure Cache for Redis](https://docs.microsoft.com/azure/redis-cache/cache-migrate-to-redis)
+[Migrate from Managed Cache Service to Azure Cache for Redis](/azure/redis-cache/cache-migrate-to-redis)

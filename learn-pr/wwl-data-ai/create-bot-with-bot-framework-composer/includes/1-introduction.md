@@ -4,12 +4,9 @@ Bot Framework Composer is a visual designer that lets you quickly and easily bui
 
 In this module, you will learn how to:
 
-- create a basic bot with the composer
-- work with dialogs
-- use various cards within your bot
-- integrate LUIS
+- Plan for a bot dialog flow.
+- Use Bot Framework Composer to create a bot.
 
 ## Prerequisites
 
-- knowledge of bot concepts
-- knowledge of how to access and navigate the Azure portal
+Before starting this module, you require a knowledge of bot concepts.

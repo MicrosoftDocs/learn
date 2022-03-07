@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-with-form-recognizer.understand-prebuilt-models
+title: Understand prebuilt models
+metadata:
+  title: Understand prebuilt models
+  description: "Understand prebuilt models"
+  ms.date: 05/31/2021
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-understand-prebuilt-models.md)]

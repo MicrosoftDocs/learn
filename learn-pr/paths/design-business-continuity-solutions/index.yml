@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.design-business-continuity-solutions
+metadata:
+  title: 'AZ-305: Design business continuity solutions'
+  description: 'AZ-305: Design business continuity solutions'
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-305: Design business continuity solutions'
+prerequisites: |
+  - Working experience with designing highly available architectures.
+  - Conceptual knowledge of high availability for applications, databases, and compute resources.
+  - Conceptual knowledge of Business Continuity and Disaster Recovery solutions.
+  - Working experience with object replication, backup solution tools, and recovery options.
+summary: |
+  Design business continuity solutions including high availability, backup, and disaster recovery.
+iconUrl: /learn/achievements/design-business-continuity-solutions.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure
+modules:
+- learn.wwl.design-for-high-availability
+- learn.wwl.design-solution-for-backup-disaster-recovery
+trophy:
+  uid: learn.wwl.design-business-continuity-solutions.trophy

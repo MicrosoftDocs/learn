@@ -4,4 +4,4 @@ It's critical that healthcare providers have secure connectivity for passing pat
 
 ## Learn more
 
-For more information about validated VPN devices that are known to be compatible with VPN gateways, and whether they support route-based or policy-based VPN gateways, see [About VPN devices and IPSec/IKE parameters for site-to-site VPN Gateway connections](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+For more information about validated VPN devices that are known to be compatible with VPN gateways, and whether they support route-based or policy-based VPN gateways, see [About VPN devices and IPSec/IKE parameters for site-to-site VPN Gateway connections](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).

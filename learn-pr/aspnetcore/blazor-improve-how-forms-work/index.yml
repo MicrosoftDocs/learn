@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.use-forms-in-blazor-web-apps
+metadata:
+  moduleType: standard
+  title: "Improve how forms and validation work in Blazor web apps"
+  description: "Learn how to use DOM events, forms, and validation in a Blazor app"
+  ms.date: 08/31/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-blazor
+title: "Improve how forms and validation work in Blazor web apps"
+summary: "Learn how to use forms in Blazor, add event handlers, and validate the data a user submits. By using Blazor form components you can validate client-side forms without writing client-side JavaScript to handle the validations."
+abstract: |
+  By the end of this module, you'll be able to:
+  - Improve your app's interactivity using Blazor event handlers
+  - Use forms in Blazor to facilitate data entry
+  - Extend forms in Blazor with server and client-side validation
+prerequisites: |
+  - Basic knowledge of web app concepts
+  - C# .NET experience at a beginner level
+  - Local installations of the .NET SDK and Visual Studio Code
+  - C# extension for Visual Studio Code
+  - Experience with using the command line
+  - Knowledge of Blazor components
+  - Knowledge of Blazor routing and layouts
+iconUrl: /learn/achievements/use-forms-in-blazor-web-apps.svg
+levels: 
+  - intermediate
+roles:
+  - developer
+  - solution-architect
+products: 
+  - blazor
+  - dotnet-core
+  - aspnet
+units:
+- learn-pr.use-forms-in-blazor-web-apps.introduction
+- learn-pr.use-forms-in-blazor-web-apps.attach-csharp-code-dom-events-blazor-event-handlers
+- learn-pr.use-forms-in-blazor-web-apps.exercise-create-blazor-event-handler-onclick-events
+- learn-pr.use-forms-in-blazor-web-apps.take-advantage-power-blazor-forms
+- learn-pr.use-forms-in-blazor-web-apps.exercise-create-address-form-blazor-components
+- learn-pr.use-forms-in-blazor-web-apps.validate-user-input-implicitly
+- learn-pr.use-forms-in-blazor-web-apps.exercise-add-server-client-side-data-validation-address-form
+- learn-pr.use-forms-in-blazor-web-apps.summary
+badge:
+  uid: learn-pr.use-forms-in-blazor-web-apps.badge

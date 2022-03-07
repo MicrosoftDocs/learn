@@ -1,4 +1,4 @@
-![Moon surface from the "Over the Moon" film.](..\media\moon-surface.png)
+:::image type="content" source="../media/moon-surface.png" alt-text="Image that shows the Moon surface from the Over the Moon film." border="false":::
 
 Moon rocks are a huge part of the scientific discovery and understanding of our universe and planet. They can tell us about how planets and moons were formed and guide us as we prepare for further space exploration. 
 
@@ -7,10 +7,10 @@ Though NASA's [Astromaterials Acquisition and Curation Office](https://curator.j
 The catalog is not only of interest to the casual space enthusiast, but it is a critical resource for active researchers and educational institutions that might inspire the next generation of space rock scientists. You can actually request samples for [research](https://curator.jsc.nasa.gov/lunar/sampreq/requests.cfm?azure-portal=true), [education](https://curator.jsc.nasa.gov/education/index.cfm?azure-portal=true), or [public displays](https://curator.jsc.nasa.gov/education/public_display.cfm?azure-portal=true). The challenge for the curation office then is to make sure that there are enough samples of different kinds of lunar matter to continue the collective understanding of our universe and planet. 
 
 This challenge is especially difficult for two reasons:
-- We cannot simply send an astronaut up to the Moon to collect a bit more of a particular type of rock. 
+- We can't simply send an astronaut up to the Moon to collect a bit more of a particular type of rock. 
 - When astronauts do land on the Moon again, it might be difficult for them to identify specifically what type of sample they are collecting. 
 
-Moon rock samples undergo a thorough analysis and cleansing by experts here on Earth, and it is the curators who develop an understanding of what samples they have, what requests for samples they get, and what is the most challenging part of ensuring that research can continue. 
+Moon rock samples undergo a thorough analysis and cleansing by experts here on Earth, and it's the curators who develop an understanding of what samples they have, what requests for samples they get, and what is the most challenging part of ensuring that research can continue. 
 
 This module begins to explore how you can use data and a bit of Python coding to come up with an understanding of what we have, and make recommendations for what the next pair of astronauts should look for when they land on the Moon as part of the Artemis program in 2024. 
 

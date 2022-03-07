@@ -7,7 +7,7 @@ To enable this kind of interaction, the AI system must support two capabilities:
 
 ## Speech recognition
 
-Speech recognition is concerned with taking the spoken word and converting it into data that can be processed - often by transcribing it into a text representation.  The spoken words can be in the form of a recorded voice in an audio file, or live audio from a microphone.  Speech patterns are analyzed in the audio to determine recognizable patterns that are mapped to words. To accomplish this feat, the software typically uses multiple types of model, including:
+Speech recognition is concerned with taking the spoken word and converting it into data that can be processed - often by transcribing it into a text representation.  The spoken words can be in the form of a recorded voice in an audio file, or live audio from a microphone.  Speech patterns are analyzed in the audio to determine recognizable patterns that are mapped to words. To accomplish this feat, the software typically uses multiple types of models, including:
 
 - An *acoustic* model that converts the audio signal into phonemes (representations of specific sounds).
 - A *language* model that maps phonemes to words, usually using a statistical algorithm that predicts the most probable sequence of words based on the phonemes.

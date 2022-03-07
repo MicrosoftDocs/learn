@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-release-strategy-recommendations.exercise-set-up-manual-approvals
+title: Exercise - Set up manual approvals
+metadata:
+  title: Exercise - Set up manual approvals
+  description: "Exercise - Set up manual approvals"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-exercise-set-up-manual-approvals.md)]

@@ -5,11 +5,10 @@ metadata:
   title: Decide how many storage accounts you need
   description: Decide how many storage accounts you need
   ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/2-decide-how-many-storage-accounts-you-need.md)]

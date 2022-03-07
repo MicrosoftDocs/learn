@@ -11,13 +11,13 @@ Serverless SQL pool authentication refers to how users prove their identity when
 
 Authorization refers to what a user can do within a serverless SQL pool database and is controlled by your user account's database role memberships and object-level permissions.
 
-If SQL Authentication is used, the SQL user exists only in serverless SQL pool and permissions are scoped to the objects in serverless SQL pool. Access to securable objects in other services (such as Azure Storage) can't be granted to SQL user directly since it only exists in scope of serverless SQL pool. The SQL user needs to use one of the supported authorization types to access the files.
+If SQL Authentication is used, the SQL user exists only in the serverless SQL pool and permissions are scoped to the objects in the serverless SQL pool. Access to securable objects in other services (such as Azure Storage) can't be granted to a SQL user directly since it only exists in scope of serverless SQL pool. The SQL user needs get authorization to access the files in the storage account.
 
-If Azure AD authentication is used, a user can sign in to serverless SQL pool and other services, like Azure Storage, and can grant permissions to the Azure AD user.
+If Azure Active Directory authentication is used, a user can sign in to a serverless SQL pool and other services, like Azure Storage, and can grant permissions to the Azure Active Directory user.
 
 ## Access to storage accounts
 
-A user that is logged into the serverless SQL pool service must be authorized to access and query the files in Azure Storage. serverless SQL pool supports the following authorization types:
+A user that is logged into the serverless SQL pool service must be authorized to access and query the files in Azure Storage. Serverless SQL pool supports the following authorization types:
 
 -	Anonymous access 
 
@@ -36,7 +36,7 @@ A user that is logged into the serverless SQL pool service must be authorized to
     Also known as "pass-through", is an authorization type where the identity of the Azure AD user that logged into serverless SQL pool is used to authorize access to the data. Before accessing the data, Azure Storage administrator must grant permissions to Azure AD user for accessing the data. This authorization type uses the Azure AD user that logged into serverless SQL pool, therefore it's not supported for SQL user types.
 
 
-Supported authorization types for databases users can be found in the table below:
+Supported authorization types for database users can be found in the table below:
 
 |Authorization type|SQL user|Azure AD user|
 |---|---|---|
@@ -44,7 +44,7 @@ Supported authorization types for databases users can be found in the table belo
 |SAS|Supported|Supported|
 |Managed Identity|Not supported|Supported|
 
-Supported storages and authorization types can be found in the table below:
+Supported storage and authorization types can be found in the table below:
 
 |Authorization type|Blob Storage|ADLS Gen1|ADLS Gen2|
 |---|---|---|---|

@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Throttle API requests
   description: In this exercise, you will set up and test throttling policies in API Management.
   ms.date: 05/10/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 azureSandbox: true
 content: |

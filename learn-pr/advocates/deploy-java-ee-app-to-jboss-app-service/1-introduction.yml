@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-java-ee-app-to-app-service.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: yoshioterada
+  ms.author: yoterada
+  ms.date: 02/01/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

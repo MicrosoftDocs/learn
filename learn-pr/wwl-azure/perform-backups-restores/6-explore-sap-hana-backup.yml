@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-backups-restores.explore-sap-hana-backup
+title: Explore SAP HANA backup
+metadata:
+  title: Explore SAP HANA backup
+  description: "Explore SAP HANA backup"
+  ms.date: 11/10/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-explore-sap-hana-backup.md)]

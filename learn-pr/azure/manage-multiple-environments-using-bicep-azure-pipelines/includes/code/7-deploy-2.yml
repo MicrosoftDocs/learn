@@ -1,0 +1,114 @@
+parameters:
+- name: environmentType
+  type: string
+
+stages:
+
+- ${{ if ne(parameters.environmentType, 'Production') }}:
+  - stage: Validate_${{parameters.environmentType}}
+    displayName: Validate (${{parameters.environmentType}} Environment)
+    jobs:
+    - job: ValidateBicepCode
+      displayName: Validate Bicep code
+      variables:
+      - group: ToyWebsite${{parameters.environmentType}}
+      steps:
+        - task: AzureCLI@2
+          name: RunPreflightValidation
+          displayName: Run preflight validation
+          inputs:
+            azureSubscription: ToyWebsite${{parameters.environmentType}}
+            scriptType: 'bash'
+            scriptLocation: 'inlineScript'
+            inlineScript: |
+              az deployment group validate \
+                --resource-group $(ResourceGroupName) \
+                --template-file deploy/main.bicep \
+                --parameters environmentType=$(EnvironmentType) \
+                             reviewApiUrl=$(ReviewApiUrl) \
+                             reviewApiKey=$(ReviewApiKey)
+
+- ${{ if eq(parameters.environmentType, 'Production') }}:
+  - stage: Preview_${{parameters.environmentType}}
+    displayName: Preview (${{parameters.environmentType}} Environment)
+    jobs:
+    - job: PreviewAzureChanges
+      displayName: Preview Azure changes
+      variables:
+      - group: ToyWebsite${{parameters.environmentType}}
+      steps:
+        - task: AzureCLI@2
+          name: RunWhatIf
+          displayName: Run what-if
+          inputs:
+            azureSubscription: ToyWebsite${{parameters.environmentType}}
+            scriptType: 'bash'
+            scriptLocation: 'inlineScript'
+            inlineScript: |
+              az deployment group what-if \
+                --resource-group $(ResourceGroupName) \
+                --template-file deploy/main.bicep \
+                --parameters environmentType=$(EnvironmentType) \
+                             reviewApiUrl=$(ReviewApiUrl) \
+                             reviewApiKey=$(ReviewApiKey)
+
+- stage: Deploy_${{parameters.environmentType}}
+  displayName: Deploy (${{parameters.environmentType}} Environment)
+  jobs:
+  - deployment: DeployWebsite
+    displayName: Deploy website
+    variables:
+    - group: ToyWebsite${{parameters.environmentType}}
+    environment: ${{parameters.environmentType}}
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - checkout: self
+            - task: AzureCLI@2
+              name: DeployBicepFile
+              displayName: Deploy Bicep file
+              inputs:
+                azureSubscription: ToyWebsite${{parameters.environmentType}}
+                scriptType: 'bash'
+                scriptLocation: 'inlineScript'
+                inlineScript: |
+                  set -e
+                  deploymentOutput=$(az deployment group create \
+                    --name $(Build.BuildNumber) \
+                    --resource-group $(ResourceGroupName) \
+                    --template-file deploy/main.bicep \
+                    --parameters environmentType=$(EnvironmentType) \
+                                 reviewApiUrl=$(ReviewApiUrl) \
+                                 reviewApiKey=$(ReviewApiKey))
+                  appServiceAppHostName=$(echo $deploymentOutput | jq -r '.properties.outputs.appServiceAppHostName.value')
+                  echo "##vso[task.setvariable variable=appServiceAppHostName;isOutput=true]$appServiceAppHostName"
+
+- stage: SmokeTest_${{parameters.environmentType}}
+  displayName: Smoke Test (${{parameters.environmentType}} Environment)
+  jobs:
+  - job: SmokeTest
+    displayName: Smoke test
+    variables:
+      appServiceAppHostName: $[ stageDependencies.Deploy_${{parameters.environmentType}}.DeployWebsite.outputs['DeployWebsite.DeployBicepFile.appServiceAppHostName'] ]
+    steps:
+      - task: PowerShell@2
+        name: RunSmokeTests
+        displayName: Run smoke tests
+        inputs:
+          targetType: inline
+          script: |
+            $container = New-PesterContainer `
+              -Path 'deploy/Website.Tests.ps1' `
+              -Data @{ HostName = '$(appServiceAppHostName)' }
+            Invoke-Pester `
+              -Container $container `
+              -CI
+
+      - task: PublishTestResults@2
+        name: PublishTestResults
+        displayName: Publish test results
+        condition: always()
+        inputs:
+          testResultsFormat: NUnit
+          testResultsFiles: 'testResults.xml'

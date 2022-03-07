@@ -5,10 +5,11 @@ metadata:
   title: Cloud security control and auditing
   description: Overview of control and auditing for cloud security
   ms.date: 02/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 14
 content: |
   [!include[](includes/6-security-control-audit.md)]
@@ -34,7 +35,7 @@ quiz:
       explanation: "That's not quite right. Consider the types of attacks made possible when a cloud provider offers shared infrastructure to multiple tenants. What level of isolation is provided in a VM?"
 
 # Did I get this block question 2
-  - content: "The process of mapping instances from the virtual cloud to the physical infrastructure is called <italic>cloud cartography</italic>. Assuming that you're an IaaS provider, which of the following will protect an attacker from mapping your service?"
+  - content: "The process of mapping instances from the virtual cloud to the physical infrastructure is called cloud cartography. Assuming that you're an IaaS provider, which of the following will protect an attacker from mapping your service?"
     choices:
     - content: "Statically allocating private IPs (used for communication within the cloud network)"
       isCorrect: false
@@ -102,11 +103,11 @@ quiz:
   - content: "Homomorphic encryption is a special form of encryption where computation can be carded out on encrypted data. For instance, if Bing used homomorphic encryption, it would receive an encrypted version of your search term, find the matches without looking at it, and return an encrypted version of the results. Your data would never be exposed. Recent research from Craig Gentry at Stanford demonstrated a practical way to create an encryption scheme that allows addition and multiplication. Why is this not widely used?"
     choices:
     - content: "The government won't allow encryption that it can't decrypt through a legal channel."
-      isCorrect: true
-      explanation: "Correct!"
-    - content: "The scheme is currently computationally very expensive, and takes too long."
       isCorrect: false
       explanation: "That's not quite right. Think about the efficiency of computing in an encrypted space."
+    - content: "The scheme is currently computationally very expensive, and takes too long."
+      isCorrect: true
+      explanation: "Correct!"
     - content: "Gentry's scheme supports both addition and multiplication operations on ciphertexts, from which it's impossible to construct circuits for performing arbitrary computation."
       isCorrect: false
       explanation: "That's not quite right. Think about the efficiency of computing in an encrypted space."

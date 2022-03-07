@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.shell.linux-command-line
+metadata:
+  title: Get started with the Linux command line and the Shell
+  description: In this learning path, find out more about the Linux command line, the shell, and Bash.
+  brand: azure
+  ms.date: 09/16/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with the Linux command line and the Shell
+summary: |
+  The command line is something you will interact with often when using Linux, both as a developer and admin. Knowing how it works and what commands you can use can greatly increase your productivity. 
+  In this learning path, you will get started with the Linux command line. You will:
+    - Navigate the file system
+    - Handle processes
+    - Search text files
+    - Assign file access permissions
+    - Script tasks
+prerequisites: None
+iconUrl: /learn/achievements/shell-linux-command-line.svg
+levels:
+- beginner
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- student
+products:
+- azure-devops
+- azure
+modules:
+- learn.student-evangelism.bash-introduction
+- learn.student-evangelism.unix-shell-wrangle-data
+trophy:
+  uid: learn.shell.linux-command-line.trophy

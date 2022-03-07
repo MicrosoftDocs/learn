@@ -5,10 +5,11 @@ metadata:
   title: Full virtualization vs. paravirtualization
   description: Full virtualization vs. paravirtualization
   ms.date: 03/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
   [!include[](includes/2-full-virtualization.md)]

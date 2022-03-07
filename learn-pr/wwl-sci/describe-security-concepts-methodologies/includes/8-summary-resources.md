@@ -1,0 +1,21 @@
+In this module, you have learned about some important security concepts and methodologies. You have learned about the Zero Trust methodology, and how the guiding principles of *verify explicitly, least privilege access*, and *assume breach* strengthens security. You learned how the six foundational elements of identity, devices, applications, data, infrastructure, and networks are used in the Zero Trust model.
+
+This module also looked at the shared responsibility model, which considers who is responsible for what as organizations migrate their workloads to the cloud.  You learned about the Microsoft Cloud Adoption Framework. You also learned about defense in depth, and how the security principles of *confidentiality, integrity*, and *availability* help to guide security decisions.
+
+Finally, you learned about common cybersecurity threats including threats to business and personal data and how to protect your data.  
+
+Now that you've reviewed this module, you can:
+
+- Describe the Zero Trust and shared responsibility models.
+- Describe common security threats and ways to protect through the defense in-depth security model.
+- Describe the concepts of encryption and hashing.
+- Describe the cloud adoption framework.
+
+### Learn more
+
+To learn more about the topics discussed in this module, see:
+
+- [Zero Trust Resource Center](/security/zero-trust/)
+- [Shared responsibility in the cloud](/azure/security/fundamentals/shared-responsibility)
+- [Azure defense in depth](https://azure.microsoft.com/resources/videos/defense-in-depth-security-in-azure/)
+- [What is the Microsoft Cloud Adoption Framework for Azure?](/azure/cloud-adoption-framework/overview)

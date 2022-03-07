@@ -26,7 +26,7 @@ Go to the browser on `http://localhost:5000`.
 
 You should now see the following content rendered:
 
-:::image type="content" source="../media/built-site.png" alt-text="Our built app":::
+:::image type="content" source="../media/built-site.png" alt-text="Our built app.":::
 
 You've built your site and taken it from being a Gatsby app to a set of static pages containing nothing but HTML, CSS, and JavaScript!
 
@@ -45,28 +45,13 @@ To prepare the app for deployment, we need to take the following steps:
 1. Initialize a Git repository
 2. Create a GitHub repository and push to the local Git repository to it
 
-### Create a Git repository
+### Add the About page
 
-In the console, navigate to root of your project, then run the following command to initialize a Git repository and commit all of your files to it:
-
-```bash
-git init
-```
-
-Next, create a file called `.gitignore` in the root of your project and give it the following content:
-
-```bash
-node_modules
-public
-```
-
-The above configuration will prevent the `public/` and `node_modules` directories from being added to our repository. The `public/` directory changes every time we build, and the `node_modules/` directory is only needed at build time and can be large from all the libraries it contains.
-
-Finally, add the code to the repository index and commit it.
+In the console, navigate to root of your project, then add the code to the repository index and commit it.
 
 ```bash
 git add .
-git commit -m "adding Gatsby project"
+git commit -m "adding About page to site"
 ```
 
 ### Create a GitHub repo and push the code
@@ -75,11 +60,11 @@ git commit -m "adding Gatsby project"
 
 2. Now click the `new` button as indicated below:
 
-   :::image type="content" source="../media/create-github-repo.png" alt-text="Create new GitHub repo":::
+   :::image type="content" source="../media/create-github-repo.png" alt-text="Create new GitHub repo.":::
 
 3. Name your repository `gatsby-app` and click `Create repository` as indicated below:
 
-   :::image type="content" source="../media/github-naming.png" alt-text="GitHub naming":::
+   :::image type="content" source="../media/github-naming.png" alt-text="GitHub naming.":::
 
 4. Finally, add your GitHub repository as a remote and push. Type the following commands to accomplish that (Replace the `<user>` part with your GitHub user name):
 
@@ -129,21 +114,15 @@ Next, configure your new app and link it to your GitHub repository.
    | _Repository_   | **gatsby-app**                              |
    | _Branch_       | **master**                                               |
 
-1. Click the **Next: Build >** button to edit the build configuration
+1. Use the **Build Details** use the drop down list to select **Gatsby** to populate the build information.
 
-   :::image type="content" source="../media/next-build-button.png" alt-text="Go to build menu":::
+    | Setting                 | Value                |
+    | ----------------------- | -------------------- |
+    | _App location_          |  *Leave default*     |
+    | _Api location_          |  *Leave default*     |
+    | _App artifact location_ | **public**           |
 
-### Build
-
-Next, add configuration details specific to your preferred front-end framework.
-
-| Setting                 | Value                |
-| ----------------------- | -------------------- |
-| _App location_          |  *Leave default*     |
-| _Api location_          |  *Leave default*     |
-| _App artifact location_ | **public**           |
-
-Click the **Review + create** button
+1. Click the **Review + create** button
 
 :::image type="content" source="../media/review-create-button.png" alt-text="Click review + create":::
 
@@ -153,11 +132,11 @@ Continue to create the application.
 
 1. Click the **Create** button
 
-   :::image type="content" source="../media/create-button.png" alt-text="Click create button":::
+   :::image type="content" source="../media/create-button.png" alt-text="Click create button.":::
 
 1. Once the deployment is complete, click the **Go to resource** button
 
-   :::image type="content" source="../media/go-to-resource-button.png" alt-text="Go to resource":::
+   :::image type="content" source="../media/go-to-resource-button.png" alt-text="Go to resource.":::
 
 ### Review the GitHub Action
 
@@ -165,7 +144,7 @@ At this stage, your Static Web Apps instance is created in Azure, but your app n
 
 You can check the status of your build and deploy action by clicking the link shown below:
 
-:::image type="content" source="../media/static-app-portal.png" alt-text="Browser to see the progress of the GitHub Action":::
+:::image type="content" source="../media/static-app-portal.png" alt-text="Browser to see the progress of the GitHub Action.":::
 
 ### View website
 
@@ -173,9 +152,9 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 
 Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
-:::image type="content" source="../media/static-app-portal-finished.png" alt-text="Azure Static Web Apps overview page":::
+:::image type="content" source="../media/static-app-portal-finished.png" alt-text="Azure Static Web Apps overview page.":::
 
-:::image type="content" source="../media/published.png" alt-text="Azure Static Web Apps overview page":::
+:::image type="content" source="../media/published.png" alt-text="Azure Static Web Apps overview page.":::
 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 

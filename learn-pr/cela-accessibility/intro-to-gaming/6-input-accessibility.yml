@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-gaming.input-accessibility
+title: Input accessibility fundamentals
+metadata:
+  title: Input accessibility fundamentals
+  description: This content is part of the Introduction to Gaming and Disability module.
+  ms.date: 11/01/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-input-accessibility.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following options is most likely to introduce barriers related to game input?"
+    choices:
+    - content: "A game has a large, distracting animation behind the main menu."
+      isCorrect: false
+      explanation: "Incorrect. A distracting animation behind a menu might introduce a cognitive barrier, not an input barrier."
+    - content: "A game has players move their character by holding down a thumb stick in the direction they want to go."
+      isCorrect: true
+      explanation: "Correct. By forcing individuals to hold the stick down in the direction they want to move, they might introduce a barrier for players who don't have the physical strength to keep the stick held down for more than a moment."
+    - content: "A game requires a player to hold down the right stick button to crouch or enable an option to toggle crouching."
+      isCorrect: false
+      explanation: "Incorrect. By providing an option to toggle crouching instead of holding down a button, an input barrier is avoided."
+  - content: "Which of the following options is most likely to support a player who has difficulty performing smooth, accurate movements with a thumb stick?"
+    choices:
+    - content: "An option to turn on an auto-target-lock feature, which only requires the player to move their aiming crosshair relatively close to their target once. After that, their crosshair remains locked to the target until they shoot."
+      isCorrect: true
+      explanation: "Correct. Aiming at moving targets requires precision and accuracy. An option that lessens these demands by locking on to a target after a player is relatively close to it once can support players who have difficulty with these types of tasks."
+    - content: "An option to convert button taps to button holds."
+      isCorrect: false
+      explanation: "Incorrect. An option like this might assist a player with limited endurance or speed. It wouldn't decrease the precision demands needed to successfully aim at a moving target."
+    - content: "An option to turn on auto-shoot, so the player's weapon is always firing even when they aren't pressing their fire button."
+      isCorrect: false
+      explanation: "Incorrect. An option like this might assist a player with limited endurance who can't hold the sprint button for prolonged periods. This option wouldn't reduce the coordination demands of aiming at a moving target."
+

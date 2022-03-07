@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.understand-patterns
+title: Understand hybrid transactional and analytical processing patterns
+metadata:
+  title: Understand hybrid transactional and analytical processing patterns
+  description: "Understand hybrid transactional and analytical processing patterns"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-patterns.md)]

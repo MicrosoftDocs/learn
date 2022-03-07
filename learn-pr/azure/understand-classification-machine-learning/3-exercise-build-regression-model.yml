@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.understand-classification-machine-learning.exercise-build-regression-model
+title: Exercise - Build a simple logistic regression model
+metadata:
+  title: Exercise - Build a simple logistic regression model
+  description: Learn how to build a simple logistic regression model.
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+sandbox: true
+notebook: notebooks/6-3-exercise-build-regression-model.ipynb

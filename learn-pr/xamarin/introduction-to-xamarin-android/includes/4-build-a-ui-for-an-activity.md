@@ -91,7 +91,7 @@ A *view* is the fundamental building block of an Android UI.
 
 Views have a visual component and some coded behavior. For example:
 
-![A screenshot showing a running Xamarin Android app](../media/4-xamarin-android-app-small.png)
+![A screenshot showing a running Xamarin Android app.](../media/4-xamarin-android-app-small.png)
 
 - `TextView`: UI that displays the value of its `Text` property.
 - `EditText`: UI that lets the user enter a value into its `Text` property, a `TextChanged` event, and so on.

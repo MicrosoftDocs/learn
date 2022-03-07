@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-governance-manageability.explore-security-compliance-services
+title: Explore security and compliance services
+metadata:
+  title: Explore security and compliance services
+  description: "Explore security and compliance services"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/10-explore-security-compliance-services.md)]

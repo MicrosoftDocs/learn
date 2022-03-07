@@ -1,4 +1,4 @@
-One of the benefits of using a decision tree classifier is the visualization that you can use to better understand how the model makes decisions. Using `graphviz` and `pydotplus`, you can quickly see how a decision is made. In future iterations, you can see how decisions are changed.
+One of the benefits of using a decision tree classifier is the visualization that you can use to understand better how the model makes decisions. Using `graphviz` and `pydotplus`, you can quickly see how a decision is made. In future iterations, you can see how decisions are changed.
 
 ## Create the visual tree
 
@@ -43,11 +43,11 @@ Overall, when we look at the dataset, we have 240 samples:
 - 192 are no launches
 - 48 are launches
 
-This result is because of our data cleaning strategy, where we assumed all non-labeled days are no-launch days.
+This result is due to our data cleaning strategy, where we assumed all non-labeled days are no-launch days.
 
 Using the new labels, we can say "If the wind speed was less than 1.0, then 191 of the 240 samples guessed that no launch was possible on that day."
-This result might seem odd, but based on the data it's correct. Here's the evidence:
-We plotted the launch versus no-launch distribution for days that the Wind Speed at Launch Time <= 1 prior to dropping the column earlier in this notebook and it shows that for nearly all times we don’t launch:
+This result might seem odd, but based on the data, it's correct. Here's the evidence:
+We plotted the launch versus no-launch distribution for days that the Wind Speed at Launch Time <= 1 before dropping the column earlier in this notebook. It shows that for nearly all times we don’t launch:
 
 :::image type="content" source="../media/plot-launches.png" alt-text="Plot of launches versus no launches." loc-scope="azure":::
 
@@ -57,7 +57,7 @@ This simple tree shows you that the most important feature of the data was `Wind
 
 This insight isn't good. We previously set all values that were empty to 0. We also know that many of the values that were related to the time of launch were 0 because 60% of our data wasn't related to an actual launch or attempted launch.
 
-As you continue to look at the tree, you can see that `Max Wind Speed` is the next most important feature of the data. Here, you can see that of the remaining 49 days when the max wind speed was less than 30.5, 48 of the days yielded a correct launch output and one of them yielded a no-launch output.
+As you continue to look at the tree, you can see that `Max Wind Speed` is the next most important feature of the data. Here you can see that of the remaining 49 days, when the max wind speed was less than 30.5, 48 of the days yielded a correct launch output and one yielded a no-launch output.
 
 This data might be more interesting with some real-world context. There was only one day where a launch was planned and the `Max Wind Speed` value was greater than 30.5, which was May 27, 2020. The Space X Dragon launch was then postponed to May 30, 2020. Here's the evidence:
 

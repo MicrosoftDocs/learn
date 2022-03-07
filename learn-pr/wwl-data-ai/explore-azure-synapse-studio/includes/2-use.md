@@ -7,7 +7,7 @@ The following hubs are available within Azure Synapse Studio.
 
 ## Home
 
-The home hub contains short cuts that enable you to ingest, explore, analyze, and visualize your data. These provide shortcuts to tools such as the Copy Data Tool for ingesting data, to connecting to a Power BI workspace for visualization. You will also find links to resources that such as the documentation and pricing page. It will also list any resources you recently accessed, or pinned as favorite.
+The home hub contains short cuts that enable you to ingest, explore, analyze, and visualize your data. These provide shortcuts to tools such as the Copy Data Tool for ingesting data, to connecting to a Power BI workspace for visualization. You will also find links to resources such as the documentation and pricing page. It will also list any resources you recently accessed, or pinned as favorite.
 
 ## Data
 

@@ -1,4 +1,4 @@
-![Tech logo](../media/tech-all.png)
+![Tech logo.](../media/tech-all.png)
 
 In this unit, we build on the ideas from the previous two units. Over the course of this lesson, we build a specialized calculator that accepts user input through a variety of ways:
 * Text input
@@ -23,13 +23,13 @@ Let's get started.
 
 ::: zone pivot="uwp"
 
-![Tech logo](../media/tech-uwp.png)
+![Tech logo.](../media/tech-uwp.png)
 
 #### Create a new project
 
 With Visual Studio open, create a UWP C# project. Give the project a meaningful name for this lesson. An example is **UserInput.Uwp**.
 
-![Create the project](../media/new-project-uwp.png)
+![Create the project.](../media/new-project-uwp.png)
 
 #### Input controls
 
@@ -126,13 +126,13 @@ Next, we use a Visual Studio feature to automatically add the missing **FirstNum
 
 Put your cursor in the middle of the **FirstNumberBox_OnTextChanged** text. This action causes a red light bulb to appear in the left margin of the code editor. Select the light bulb to expand a list of actions you can take. And select the **Create event handler** menu item.
 
-![TextChanged light bulb](../media/xaml-create-textchanged-eventhandler.png)
+![TextChanged light bulb.](../media/xaml-create-textchanged-eventhandler.png)
 
 At this point, Visual Studio opens **MainPage.xaml.cs** and automatically inserts the missing code. **MainPage.xaml.cs** is also known as the **code-behind file**. At first, you see a box around the event handler name in case you want to rename it. Select the **Tab** or **Enter** key to finish the operation.
 
 After the autocomplete finishes, you see this image:
 
-![TextChanged added](../media/xaml-textchanged-eventhandler.png)
+![TextChanged added.](../media/xaml-textchanged-eventhandler.png)
 
 > [!NOTE]
 > You can delete the boilerplate `throw new NotImplementedException` because we write the event handler's code now. Otherwise, leave it there. This boilerplate helps prevent bugs. It intentionally causes a **Not Implemented** error to let you know that you forgot to add important logic.
@@ -365,7 +365,7 @@ private double Add(double a, double b)
 
 This image shows how the `SecondNumber` method's parameters line up with the **SelectedMathFunction** definition.
 
-![Explaining SelectedMathFunction](../media/uwp-user-input-func.png)
+![Explaining SelectedMathFunction.](../media/uwp-user-input-func.png)
 
 We can create four methods to use for that `Func`: **Add**, **Subtract**, **Multiply**, and **Divide**. Remember that the method must accept two `double` parameters and return one `double` value.
 
@@ -1328,7 +1328,7 @@ The coding is done. Now let's test your application.
 
 Let's deploy the application and try it out. Select F5 to build, deploy, and start debugging. You're presented with the following UI:
 
-![Start the UI](../media/uwp-user-input-runtime-start.png)
+![Start the UI.](../media/uwp-user-input-runtime-start.png)
 
 To try the app, take these steps:
 
@@ -1340,19 +1340,19 @@ To try the app, take these steps:
 
 The finished result looks like this image:
 
-![Calculation results](../media/uwp-user-input-runtime-finished.png)
+![Calculation results.](../media/uwp-user-input-runtime-finished.png)
 
 ::: zone-end
 
 ::: zone pivot="wpf"
 
-![Tech logo](../media/tech-wpf.png)
+![Tech logo.](../media/tech-wpf.png)
 
 #### Create a new project
 
 With Visual Studio open, create a WPF C# project. Give the project a meaningful name for this lesson. An example is **UserInput.Wpf**.
 
-![Create the project](../media/new-project-wpf.png)
+![Create the project.](../media/new-project-wpf.png)
 
 #### Input controls
 
@@ -1448,13 +1448,13 @@ Next, we use a Visual Studio feature to automatically add the missing **FirstNum
 
 Put your cursor in the middle of the **FirstNumberBox_OnTextChanged** text. A red light bulb appears in the left margin of the code editor. Select the light bulb to expand a list of actions you can take. Finally, select the **Create event handler** menu item.
 
-![TextChanged light bulb](../media/xaml-create-textchanged-eventhandler.png)
+![TextChanged light bulb.](../media/xaml-create-textchanged-eventhandler.png)
 
 At this point, Visual Studio opens **MainWindow.xaml.cs** and automatically inserts the missing code. **MainWindow.xaml.cs** is also called the **code-behind file**. First, you see a box around the event handler name in case you want to rename it. Use the **Tab** or **Enter** key to finish the operation.
 
 You see this image after the autocomplete finishes:
 
-![TextChanged added](../media/xaml-textchanged-eventhandler.png)
+![TextChanged added.](../media/xaml-textchanged-eventhandler.png)
 
 > [!NOTE]
 > You can delete the boilerplate `throw new NotImplementedException` because we write the event handler's code now. Otherwise, leave it there. This boilerplate helps prevent bugs. It intentionally causes a **Not Implemented** error to let you know that you forgot to add important logic.
@@ -1685,7 +1685,7 @@ private double Add(double a, double b)
 
 This image shows how the **SecondNumber** method's parameters line up with the **SelectedMathFunction** definition.
 
-![Explaining SelectedMathFunction](../media/uwp-user-input-func.png)
+![Explaining SelectedMathFunction.](../media/uwp-user-input-func.png)
 
 We can create four methods to use for that `Func`: **Add**, **Subtract**, **Multiply**, and **Divide**. Remember that the method must accept two `double` parameters and return one `double` value.
 
@@ -2651,7 +2651,7 @@ The coding is done. Now it's time to test your application.
 
 Let's deploy the application and try it out. Select F5 to build, deploy, and start debugging. You're presented with the following UI:
 
-![Start UI](../media/wpf-user-input-runtime-start.png)
+![Start UI.](../media/wpf-user-input-runtime-start.png)
 
 To try the app, take the following steps:
 
@@ -2663,7 +2663,7 @@ To try the app, take the following steps:
 
 The finished result looks like the following image:
 
-![Calculation results](../media/wpf-user-input-runtime-finished.png)
+![Calculation results.](../media/wpf-user-input-runtime-finished.png)
 
 ::: zone-end
 

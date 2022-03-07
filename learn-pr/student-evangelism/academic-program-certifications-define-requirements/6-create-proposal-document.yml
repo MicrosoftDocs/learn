@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-define-requirements.create-proposal-document
+title: Create a program proposal document for a new degree program
+metadata:
+  title: Create a program proposal document for a new degree program
+  description: Learn how to create a program proposal document for a new degree program.
+  ms.date: 07/01/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-create-proposal-document.md)]

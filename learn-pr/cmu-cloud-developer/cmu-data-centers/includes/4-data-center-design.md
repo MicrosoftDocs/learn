@@ -8,7 +8,7 @@ On the other hand, even with maximal use of virtualization techniques, at a poin
 
 ## Network topologies
 
-![Traditional hierarchical, tree-style datacenter network topology](../media/tree-style-data-center-network-topology.png)
+![Traditional hierarchical, tree-style datacenter network topology.](../media/tree-style-data-center-network-topology.png)
 
 _Figure 20: Traditional hierarchical, tree-style datacenter network topology_
 
@@ -22,7 +22,7 @@ Usually, contemporary tree-style datacenter networks rely on some variant of the
 
 ## Secure multitenant environment
 
-![Workload-to-workload communications in a virtualized environment](../media/communications-virtualized-environment.png)
+![Workload-to-workload communications in a virtualized environment.](../media/communications-virtualized-environment.png)
 
 _Figure 21: Workload-to-workload communications in a virtualized environment_
 

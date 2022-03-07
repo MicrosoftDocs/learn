@@ -1,4 +1,3 @@
-
 In this unit, you will:
 
 
@@ -16,7 +15,7 @@ There are four main steps to work through, so let's get started.
 
 ### Open an existing UWP project
 
-1. Using Visual Studio 2017, open the existing project for which you want to create an adaptive card for Timeline. In this example, we use the Universal Windows Platform (UWP) version of the Astronomy Picture of the Day from an earlier module. To download the source for that project, use [this GitHub repo](https://github.com/MicrosoftDocs/mslearn-write-internet-connected-Windows-apps). If you need help with GitHub, see [this module](https://docs.microsoft.com/learn/modules/get-started-with-visual-studio-for-windows10-app-dev/4-advanced-features).
+1. Using Visual Studio 2017, open the existing project for which you want to create an adaptive card for Timeline. In this example, we use the Universal Windows Platform (UWP) version of the Astronomy Picture of the Day from an earlier module. To download the source for that project, use [this GitHub repo](https://github.com/MicrosoftDocs/mslearn-write-internet-connected-Windows-apps). If you need help with GitHub, see [this module](/learn/modules/get-started-with-visual-studio-for-windows10-app-dev/4-advanced-features).
 
 2. On the **Tools** menu, select **NuGet Package Manager** > **Manage NuGet Packages for Solution**. If the **AdaptiveCards** package isn't already installed, select **Browse**. Search for **AdaptiveCards**, and then install the package.
 
@@ -138,7 +137,7 @@ In this section, we finish most of the programming necessary for this unit, but 
 
     > [!NOTE]
     > For full programming information on user activities, see [Windows.
-    ApplicationModel.User activities namespace](https://docs.microsoft.com/uwp/api/windows.applicationmodel.useractivities).
+    ApplicationModel.User activities namespace](/uwp/api/windows.applicationmodel.useractivities).
     
 
 5. Make a note of the **ActivationUri** name you entered. In this case, it's **proto**.
@@ -166,11 +165,11 @@ In this section, we finish most of the programming necessary for this unit, but 
 
  2. To link everything together, open the Package.appx manifest file and select **Declarations**. For the type of declaration, in the **Available Declarations** drop-down list, select **Protocol** > **Add**. In the **Properties** section, enter **ActivationUri** (**proto**) as the **Name** property. Then click anywhere on the page to save this information. You don't need to change any other entries. The following image shows how the page looks after the protocol is successfully added.
 
-    ![Name the protocol](../media/timeline-protocol.png)
+    ![Name the protocol.](../media/timeline-protocol.png)
 
  3. In the manifest file, you can improve the visuals a bit more. Select **Visual Assets** > **All Visual Assets**. Load a **Source** image that, when scaled, is suitable to use as an icon for your app. Select **Generate**. It's okay to overwrite the existing default icons. Using a new image creates a collection of icons that the app can use in various situations. For the astronomy app, the following image was selected.
 
-    ![Set up icons](../media/timeline-visual-assets.png)
+    ![Set up icons.](../media/timeline-visual-assets.png)
 
 4. Save and close the manifest file.
 
@@ -180,9 +179,7 @@ In this section, we finish most of the programming necessary for this unit, but 
 
 2. Close the app, and open Timeline. Can you see your adaptive card? Can you see the visual asset you loaded as the icon for the card? Does your app start when you click the card? If so, you completed this unit successfully. 
 
-    ![Finished card](../media/timeline-complete.png)
+    ![Finished card.](../media/timeline-complete.png)
 
 > [!NOTE]
 > Your card might not be in Timeline where you expect to find it. Look around in the proximity of recent activity to locate it.
-
-

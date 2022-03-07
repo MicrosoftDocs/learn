@@ -5,11 +5,10 @@ metadata:
   title: Move Azure storage blob using AzCopy
   description: Move Azure storage blobs using AzCopy
   ms.date: 01/27/2020
-  author: patridge
-  ms.author: adpatrid
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/5-move-blobs-using-azcopy.md)]

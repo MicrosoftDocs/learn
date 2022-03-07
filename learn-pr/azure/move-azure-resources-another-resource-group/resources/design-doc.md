@@ -130,8 +130,8 @@ Identify the subtasks of *module title*
 
 ## Resources
 
-- [Move resources to new resource group or subscription](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources?toc=/azure/billing/TOC.json)
-- [Limitations](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-move-resources#limitations)
+- [Move resources to new resource group or subscription](/azure/azure-resource-manager/resource-group-move-resources?toc=%2fazure%2fbilling%2fTOC.json)
+- [Limitations](/azure/azure-resource-manager/resource-group-move-resources#limitations)
 
 
 ### Review comments

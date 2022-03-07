@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.predictive-maintenance-model-builder.exercise-train-model-builder
+title: "Exercise: Train a machine learning model"
+metadata:
+  unitType: exercise
+  title: "Exercise: Train a machine learning model"
+  description: "Use Model Builder to choose a scenario, load your data, train a machine learning model for predictive maintenance, and evaluate the model's performance."
+  ms.date: 10/25/2021
+  author: luisquintanilla
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+  ms.custom: team=nextgen
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-exercise-train-model-builder.md)]

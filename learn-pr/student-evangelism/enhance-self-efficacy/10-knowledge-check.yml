@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.enhance-self-efficacy.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 08/27/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  questions:
+    - content: Which strategy helps improve self-efficacy?
+      choices:
+        - content: Comparing yourself to others and noting areas to improve on.
+          isCorrect: false
+          explanation: Incorrect. You can't know someone else's prior experience offhand.
+            Social comparisons can make you unfairly question your potential
+            contributions.
+        - content: Doing everything possible to avoid making mistakes.
+          isCorrect: false
+          explanation: Incorrect. Mistakes and failures are springboards for growth. In
+            computer science, you're always learning from your mistakes and
+            evolving your skills.
+        - content: Seeking feedback and encouragement from others.
+          isCorrect: true
+          explanation: Correct. Support from your peers is important for developing your
+            self-efficacy. If they're experienced in a particular task or area,
+            you can use their feedback to grow your own skills.
+    - content: What is self-efficacy?
+      choices:
+        - content: A person's confidence in themselves.
+          isCorrect: false
+          explanation: Incorrect. Self-efficacy and self-confidence are two different
+            things. A person can be confident but still have low self-efficacy
+            in some tasks or areas.
+        - content: A measure of a person's efficiency.
+          isCorrect: false
+          explanation: Incorrect. A person could be efficient and competent at
+            a task but still have low self-efficacy in it.
+        - content: A person's belief in their ability to be successful at something.
+          isCorrect: true
+          explanation: Correct. Self-efficacy is an idea that lies at the heart of the
+            question, How confident are you in your ability to do well? It's
+            the belief in your own ability to succeed in a particular task,
+            subject, or area.
+    - content: Which statement describes self-confidence?
+      choices:
+        - content: A person's trust in their ability to succeed at a task or in an area.
+          isCorrect: false
+          explanation: Incorrect. Self-efficacy is the belief in your own ability to
+            succeed in a particular task, subject, or area.
+        - content: A person's trust in their own capabilities.
+          isCorrect: true
+          explanation: Correct. Self-confidence is your belief or trust in yourself.
+        - content: A person's ability to have high self-efficacy in everything they do.
+          isCorrect: false
+          explanation: Incorrect. You could be a confident person but still lack
+            self-efficacy in certain areas.
+    - content: Which statement describes a growth mindset?
+      choices:
+        - content: The mental attitude that basic abilities such as intelligence and
+            talent are fixed traits.
+          isCorrect: false
+          explanation: Incorrect. A fixed mindset is the mental attitude that our basic
+            abilities such as intelligence and talent are fixed traits.
+        - content: The set of beliefs and thought processes that influence the way in
+            which people approach situations.
+          isCorrect: false
+          explanation: Incorrect. Your mindset or your frame of mind is the set of beliefs
+            and thought processes that influence the way you approach
+            situations.
+        - content: The mental attitude that a person's basic abilities can be developed
+            with dedication and hard work.
+          isCorrect: true
+          explanation: Correct. A growth mindset is the mental attitude that your basic
+            abilities can be developed with dedication and hard work.

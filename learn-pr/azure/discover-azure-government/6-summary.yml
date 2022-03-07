@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.discover-azure-government.6-summary
+title: Summary
+metadata:
+  title: Summary
+  description: An overview of the content covered in the module, and resources for further learning.
+  ms.date: 02/23/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2 
+content: |
+  [!include[](includes/6-summary.md)] 

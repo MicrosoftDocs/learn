@@ -46,7 +46,7 @@ Manual testing has its benefits. But as your code base grows in size, testing al
 
 When we think about automated testing, it's common to separate tests into layers. Mike Cohn proposes this concept, known as the _test pyramid_, in his book _Succeeding with Agile_.
 
-![Screenshot of test pyramid showing the unit test layer at the bottom, marked with callout 1, and UI layer tests at the top, marked with callout 2.](../media/2-test-pyramid.png)
+:::image type="content" source="../media/2-test-pyramid.png" alt-text="A diagram showing the test pyramid. The pyramid shows the unit test layer at the bottom, marked with callout 1, and UI layer tests at the top, marked with callout 2.":::
 
 Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels of your software (callout 1 in the pyramid), such as functions, classes, and methods. You focus progressively less effort as features are combined, such as at the user interface (UI) layer (callout 2 in the pyramid). The idea is that if you can verify that each lower-level component works as expected in isolation, tests at the higher levels need only verify that multiple components work together to get the expected result.
 
@@ -66,7 +66,7 @@ Here's a short video where Abel Wang, Cloud Advocate at Microsoft, explains how 
 
 **Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/How-do-you-ensure-quality-in-a-DevOps-world--One-Dev-Question/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LBfM]
 
 Shifting left often requires testers to get involved in the design process, even before any code for the feature is written. Compare this to the "handoff" model, where the test team is presented with new features to test only after the software is designed and written. A bug discovered late in the process can affect the team's delivery schedule. And bugs might be discovered weeks or even months after the developer originally built the feature.
 
@@ -142,4 +142,4 @@ No matter what language your application is written in, there's likely a number 
 
 For example, for Java applications, you might choose Checkstyle to perform lint testing and JUnit to perform unit testing.
 
-For the _Space Game_ website, which is a .NET Core application written in C#, Mara chooses NUnit for unit testing because it's popular in the .NET community and she and Andy have prior experience with it.
+For the _Space Game_ website, which is a .NET application written in C#, Mara chooses NUnit for unit testing because it's popular in the .NET community and she and Andy have prior experience with it.

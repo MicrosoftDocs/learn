@@ -1,0 +1,5 @@
+Azure Databricks supports machine learning frameworks other than Spark ML and MLLib. For example, Azure Databricks offers support for popular libraries like TensorFlow and PyTorch.
+
+It is possible to install these libraries directly, but the best recommendation is to use the [Databricks Runtime for Machine Learning](/azure/databricks/runtime/mlruntime). This runtime comes with various machine learning libraries pre-installed, including TensorFlow, PyTorch, Keras, and XGBoost. It also includes libraries essential for distributed training, allowing data scientists to take advantage of the distributed nature of Apache Spark.
+
+For libraries, which do not support distributed training, it is also possible to use a [single node cluster](/azure/databricks/clusters/single-node). For example, [PyTorch](https://docs.microsoft.com/azure/databricks/applications/machine-learning/train-model/pytorch#use-pytorch-on-a-single-node) and [TensorFlow](https://docs.microsoft.com/azure/databricks/applications/machine-learning/train-model/tensorflow#use-tensorflow-on-a-single-node) both support single node use.

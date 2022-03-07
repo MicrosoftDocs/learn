@@ -11,7 +11,7 @@ This T-SQL is created when the user goes to the sales order history portion of t
 In that case, the query sent to your database would be as shown below:
 
 ```sql
-SELECT * FROM Orders WHERE OrderID=25; delete from Orders; DELETE FROM Orders;
+SELECT * FROM Orders WHERE OrderID=25; DELETE FROM Orders;
 ```
 
 The way the query in the above example works is that the SQL database is told via the semicolon “;” that the statement has ended and that there is another statement that should be run. The database then processes the next statement as instructed, which would result in the deletion of all rows from the Orders table.

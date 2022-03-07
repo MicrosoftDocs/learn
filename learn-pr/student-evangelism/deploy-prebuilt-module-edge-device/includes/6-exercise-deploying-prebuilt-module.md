@@ -30,7 +30,7 @@ To deploy the "Simulated Temperature Sensor" module from the Azure Marketplace, 
     > [!IMPORTANT]
     > If a **module is listed as "in deployment"** but not reported by the device, your IoT Edge device is still starting it. **Wait a few moments and click "Refresh"** at the top of the page.
 
-    ![Deployed modules at the edge](../media/deployed-modules.png)
+    ![Deployed modules at the edge.](../media/deployed-modules.png)
 
 1. Open the command prompt on your IoT Edge device, or use the SSH connection from Azure CLI.
 1. Confirm that the module deployed from the cloud is running on your IoT Edge device using the `sudo iotedge list` command.

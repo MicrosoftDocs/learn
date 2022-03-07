@@ -2,7 +2,7 @@ To create an Azure Synapse Analytics workspace, perform the following steps:
 
 1. In the Azure portal, click on **+ Create a resource.**
 
-1. In the text box, replace “Search the Marketplace” with the text “Azure Synapse” and then click on Azure Synapse Analytics (workspaces preview)
+1. In the text box, replace “Search the Marketplace” with the text “Azure Synapse” and then click on Azure Synapse Analytics.
 
 1. Click on **Create.**
  

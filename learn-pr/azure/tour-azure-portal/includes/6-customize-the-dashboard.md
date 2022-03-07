@@ -8,7 +8,7 @@ Dashboards give you considerable flexibility regarding how you manage Azure. For
 
 Dashboards are stored as JavaScript Object Notation (JSON) files. This format means they can be uploaded and downloaded to other computers, or shared with members of the Azure directory. Azure stores dashboards within resource groups, just like virtual machines or storage accounts that you can manage within the portal.
 
-Because dashboards are JSON files, you can also [customize them programmatically](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards-create-programmatically), making them compelling administrative tools. Also, some tile types can be query-based, so they update automatically when the source data changes.
+Because dashboards are JSON files, you can also [customize them programmatically](/azure/azure-portal/azure-portal-dashboards-create-programmatically), making them compelling administrative tools. Also, some tile types can be query-based, so they update automatically when the source data changes.
 
 ## Explore the default dashboard
 
@@ -32,7 +32,7 @@ These default web parts are
 
 At the top of the dashboard are the controls that enable you to create, upload, download, edit, and share a dashboard. You can also switch a dashboard to full screen, clone it, or delete it.
 
-![Screenshot showing the Customize dashboard controls](../media/6-customise-dashboard-controls.png)
+![Screenshot showing the Customize dashboard controls.](../media/6-customise-dashboard-controls.png)
 
 ## Select dashboard
 
@@ -61,7 +61,7 @@ Although you can edit a dashboard by downloading the JSON file, changing values 
 
 The dashboard will switch to edit mode.
 
-![Screenshot showing the dashboard in the Edit mode](../media/6-edit-dashboard.png)
+![Screenshot showing the dashboard in the Edit mode.](../media/6-edit-dashboard.png)
 
 On the left-hand side appears the **Tile Gallery**, with several possible tiles. You can filter the Tile Gallery by category and resource type.
 

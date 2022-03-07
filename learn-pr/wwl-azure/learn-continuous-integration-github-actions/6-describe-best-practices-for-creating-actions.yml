@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.learn-continuous-integration-github-actions.describe-best-practices-for-creating-actions
+title: Describe best practices for creating actions
+metadata:
+  title: Describe best practices for creating actions
+  description: "Describe best practices for creating actions"
+  ms.date: 03/03/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-describe-best-practices-for-creating-actions.md)]

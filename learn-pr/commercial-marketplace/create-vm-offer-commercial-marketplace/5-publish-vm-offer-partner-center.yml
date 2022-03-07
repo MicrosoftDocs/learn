@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-vm-offer-commercial-marketplace.5-publish-vm-offer-partner-center
+title: Publish your virtual machine offer in Partner Center
+metadata:
+  title: Publish your virtual machine offer in Partner Center
+  description: Overview of the VM offer publishing process in Partner Center
+  ms.date: 06/03/2021
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-publish-vm-offer-partner-center.md)]

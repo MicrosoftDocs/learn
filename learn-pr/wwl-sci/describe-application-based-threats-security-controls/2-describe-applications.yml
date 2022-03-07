@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-application-based-threats-security-controls.describe-topology-used-applications
+title: Describe what are applications
+metadata:
+  title: Describe what are applications
+  description: "Describe what are applications"
+  ms.date: 02/14/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-describe-applications.md)]

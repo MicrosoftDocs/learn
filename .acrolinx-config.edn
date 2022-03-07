@@ -1,2 +1,2 @@
-{:allowed-branchname-matches ["master" "release-.*" "RELEASE-.*" "sandbox-.*" "SANDBOX-.*" "new-.*" "NEW-.*" "update-.*" "UPDATE-.*"]
- :allowed-filename-matches ["learn-pr"]}
+{:allowed-branchname-matches ["main" "master" "release-.*" "RELEASE-.*" "sandbox-.*" "SANDBOX-.*" "new-.*" "NEW-.*" "update-.*" "UPDATE-.*"]
+ :allowed-filename-matches ["learn-pr/"]}

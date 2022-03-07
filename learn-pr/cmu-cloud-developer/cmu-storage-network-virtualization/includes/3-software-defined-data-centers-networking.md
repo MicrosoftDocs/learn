@@ -10,7 +10,7 @@ Network virtualization technology and software-defined networking provide a solu
 
 Software-defined networking is an approach to computer networking that decouples the data plane (which forwards the packet in the hardware layer) from the control plane (which decides the packet forwarding rules). SDNs use a centralized controller, which programs the data plane using well-defined APIs to modify the network flow. See Figure 2 to understand the various pieces of the stack. 
 
-![SDN component planes](../media/software-defined-network-stack.png)
+![SDN component planes.](../media/software-defined-network-stack.png)
 
 _Figure 2: SDN component planes_
 
@@ -46,7 +46,7 @@ Having a central controller allows the control plane to have a global view. This
 
 Isolation between tenants is a critical SDN application on the cloud. In specifying separate network flows depending upon the tenant, multiple **virtual networks** can be overlaid on a single physical network. These virtual networks can even have overlapping IP address space. Consider the case of two cloud tenants, `Yellow` and `Red`, co-located on the same rack in the datacenter (Figure 3). They can share the same underlying infrastructure, while being isolated using a higher-level abstraction. 
 
-![Logical view of a network overlay](../media/overlay.png)
+![Logical view of a network overlay.](../media/overlay.png)
 
 _Figure 3: Logical view of a network overlay_
 
@@ -57,7 +57,7 @@ One way to achieve isolation between the `Red` and `Yellow` tenant networks is b
    * VXLAN (Virtual Extensible LAN) 
    * NVGRE (Network Virtualization using Generic Routing Encapsulation)
     
-   ![Encapsulation methods](../media/encapsulation-methods.png)
+   ![Encapsulation methods.](../media/encapsulation-methods.png)
     
    _Figure 4: Encapsulation methods_
 
@@ -66,7 +66,7 @@ One way to achieve isolation between the `Red` and `Yellow` tenant networks is b
 
 The overall flow of a packet from the source application to the destination application is illustrated in Figure 5.
 
-![Packet stages in a virtualized network](../media/packet-stages.png)
+![Packet stages in a virtualized network.](../media/packet-stages.png)
 
 _Figure 5: Packet stages in a virtualized network_
 

@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.advanced-pybryt.3-relational-annotations
+title: Relational annotations
+metadata:
+  title: Relational annotations
+  description: How to create conditions on other annotations with relational annotations
+  author: chrispyles
+  ms.author: leestott
+  ms.date: 1/10/2022
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-relational-annotations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which expression below creates an annotation asserting that either `a1` or `a2` are satisfied?"
+      choices:
+        - content: "`a1 | a2`"
+          isCorrect: true
+          explanation: "Correct!"
+        - content: "`a1 or a2`"
+          isCorrect: false
+          explanation: "Not quite. PyBryt's annotations overload Python's bitwise logical operators; `and` and `or` can't be overloaded."
+        - content: "`a1 & a2`"
+          isCorrect: false
+          explanation: "Not quite. This annotation requires both `a1` and `a2` to be satisfied."
+    - content: "Which of the following calls creates an annotation asserting that `v2` comes **strictly after** `v1` (that is, the timestamps of `v1` and `v2` can't be the same)?"
+      choices:
+        - content: "`v2.after(v1)`"
+          isCorrect: false
+          explanation: "Not quite. Remember that the `BeforeAnnotation` is satisfied as long as the timestamps occur in _non-decreasing_ order."
+        - content: "`v1.before(v2)`"
+          isCorrect: false
+          explanation: "Not quite. Remember that the `BeforeAnnotation` is satisfied as long as the timestamps occur in _non-decreasing_ order."
+        - content: "`~v1.after(v2)`"
+          isCorrect: true
+          explanation: "Correct! This annotation asserts that the ordering of `[v2, v1]` must not be in non-decreasing order (that is, in strictly increasing order)."
+    - content: |
+        Suppose we create an annotation `ann` with:
+
+        ```python
+        a1, a2, a3 = pybryt.Value(1), pybryt.Value(2), pybryt.Value(3)
+        ann = (a1 | a2) ^ a3
+        ```
+
+        Which of the following sets, if turned into a memory footprint, would satisfy `ann`?
+      choices:
+        - content: "`{1, 2, 3}`"
+          isCorrect: false
+          explanation: "Not quite. Note the use of xor (`^`)."
+        - content: "`{1, 2}`"
+          isCorrect: true
+          explanation: "Correct!"
+        - content: "`{1, 3}`"
+          isCorrect: false
+          explanation: "Not quite. Note the use of xor (`^`)."

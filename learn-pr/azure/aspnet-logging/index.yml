@@ -28,6 +28,7 @@ products:
 - aspnet
 - azure-web-apps
 - azure-application-insights
+- azure-monitor
 - dotnet
 units:
 - learn.azure.aspnet-logging.1-introduction

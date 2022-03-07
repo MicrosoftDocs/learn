@@ -11,7 +11,6 @@ In this module, you learned:
 
 To learn more about using ConfigurationBuilder and Azure Key Vault, see:
 
-- [Configuration builders for ASP.NET](https://docs.microsoft.com/aspnet/config-builder)
+- [Configuration builders for ASP.NET](/aspnet/config-builder)
 - [Configuration Builders](https://github.com/aspnet/MicrosoftConfigurationBuilders)
-- [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)
-
+- [Azure Key Vault](/azure/key-vault/)

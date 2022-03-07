@@ -4,8 +4,8 @@ metadata:
   title: Create and publish a web application with Azure App Service and Visual Studio Code
   description: In this module, you'll learn how to create and publish webapps to Azure App Service from Visual Studio Code.
   ms.date: 04/23/2020
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: msangapu-msft
+  ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create and publish a web application with Azure App Service and Visual Studio Code

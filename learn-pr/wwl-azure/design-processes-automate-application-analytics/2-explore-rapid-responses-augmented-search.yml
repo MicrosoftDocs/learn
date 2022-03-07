@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-processes-to-automate-application-analytics.explore-rapid-responses-augmented-search
+title: Explore rapid responses and augmented search
+metadata:
+  title: Explore rapid responses and augmented search
+  description: "Explore rapid responses and augmented search"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-rapid-responses-augmented-search.md)]

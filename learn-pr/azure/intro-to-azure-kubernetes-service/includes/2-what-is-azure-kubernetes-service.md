@@ -4,7 +4,7 @@ Let's start with a few definitions and a quick tour through Azure Kubernetes Ser
 
 A *container* is an atomic unit of software that packages up code, dependencies, and configuration for a specific application. Containers allow us to split up monolithic applications into individual services that make up the solution. This rearchitecting of our application will enable us to deploy these separate services via containers.
 
-![An image of a server or application replicated as containers for cloud deployment](../media/2-container.png)
+![An image of a server or application replicated as containers for cloud deployment.](../media/2-container.png)
 
 ## Why use a container?
 
@@ -18,7 +18,7 @@ Suppose your fleet management solution included three major applications:
 
 You realize that you have to scale out your solution to meet customer demand. One option is to deploy a new virtual machine (VM) for each application and then deploy the applications to the VMs. However, doing so will make you responsible for the management of each additional VM. For example, you'll have to make sure the correct operating system (OS) versions and dependencies for each application is installed and configured. You also must make sure you're installing and upgrading the correct versions of the applications. If there are errors, you have to make sure you can roll back the installation with the least amount of disruption to your solution.
 
-![An image of replicated servers as VMs in the cloud and how this problem raises migration questions and problems](../media/2-deploy-mutile-instances.png)
+![An image of replicated servers as VMs in the cloud and how this problem raises migration questions and problems.](../media/2-deploy-mutile-instances.png)
 
 The above deployment is cumbersome, sometimes error-prone and doesn't easily scale single services. For example, you might find you can't easily scale only the caching service used in the web application. Containers help solve these types of problems.
 
@@ -34,7 +34,7 @@ The above benefits make containers a popular choice for developers and IT operat
 
 ## What is container management?
 
-![Image of replicated servers as multiple containers in the cloud](../media/2-deploy-mutile-containers.png)
+![Image of replicated servers as multiple containers in the cloud.](../media/2-deploy-mutile-containers.png)
 
 Even though you can think of containers as VMs, you have to keep in mind that they aren't. A container has a distinct life cycle. It's deployed, started, stopped, and destroyed as requested. This life cycle makes containers disposable and impacts how developers and IT operations should think about the management of large container deployments.
 
@@ -48,7 +48,7 @@ These types of questions justify a system to help you manage your container depl
 
 ## What is Kubernetes?
 
-![Image of replicated servers as multiple containers in a Kubernetes cluster](../media/2-deploy-mutile-containers-k8s.png)
+![Image of replicated servers as multiple containers in a Kubernetes cluster.](../media/2-deploy-mutile-containers-k8s.png)
 
 Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. Kubernetes abstracts away complex container management and provides us with declarative configuration to orchestrate containers in different compute environments. This orchestration platform gives us the same ease of use and flexibility as with Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) offerings.
 
@@ -73,7 +73,7 @@ With all the benefits you receive with Kubernetes, keep in mind that you're resp
 
 ## What is Azure Kubernetes Service?
 
-![Image of replicated servers as multiple containers in an AKS Kubernetes cluster](../media/2-deploy-AKS.png)
+![Image of replicated servers as multiple containers in an AKS Kubernetes cluster.](../media/2-deploy-AKS.png)
 
 Azure Kubernetes Service (AKS) manages your hosted Kubernetes environment and makes it simple to deploy and manage containerized applications in Azure. Your AKS environment is enabled with features such as automated updates, self-healing, and easy scaling. The Kubernetes cluster master is managed by Azure and is free. You manage the agent nodes in the cluster and only pay for the VMs on which your nodes run.
 

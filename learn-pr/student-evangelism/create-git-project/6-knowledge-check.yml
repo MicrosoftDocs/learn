@@ -1,0 +1,83 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.create-git-project.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Review what you've learned in the Create Git Project Module.
+  ms.date: 10/08/2021
+  author: mshumba
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ms.custom: team=nextgen
+durationInMinutes: 4
+quiz:
+  title: ''
+  questions:
+  - content: 'How do you include a new file to your Git index?'
+    choices:
+    - content: "Using the 'git include' command"
+      isCorrect: false
+      explanation: "Incorrect. Git include isn't a current command supported by Git."    
+    - content: "Using the 'git add' command"
+      isCorrect: true
+      explanation: "Correct! Git add will add whatever file you tell it to your git index."
+    - content: "Using the 'git commit' command"
+      isCorrect: false
+      explanation: "Incorrect. git commit is used after you add your file to the index."            
+  - content: 'What does the -m tag do to your commit?'
+    choices:
+    - content: "The -m tag isn't a valid tag in git"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "The tag modifies your commit if you forgot to add something"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "This tag allows you to add a message to your commit "
+      isCorrect: true
+      explanation: "Correct! Make sure to keep your commit messages short and readable"
+  - content: 'Which of these is a good example of a commit message?'
+    choices:
+    - content: "Add feature to alert admin for new user registration..."
+      isCorrect: true
+      explanation: "Correct! A good rule of thumb is to keep your git commit messages under 50 words and make sure they are descriptive to other developers."
+    - content: "added new feature"
+      isCorrect: false
+      explanation: "Incorrect. this commit message is short and not descriptive of the task that you completed."
+    - content: "Add name, age, height, weight, and salary labels with corresponding text boxes and more over a Submit Button to the webpage to ensure the user is clear on what is being added..."
+      isCorrect: false
+      explanation: "Incorrect. This commit, while being quite descriptive of the work done, adds a lot of information that might be too much." 
+  - content: 'What is a way to fix one of your past commits without needing to make a new commit?'
+    choices:
+    - content: "Deleting the file and creating a new one in its place with the correct changes."
+      isCorrect: false
+      explanation: "Incorrect. This needs to be put in a new commit because you're making a new file."    
+    - content: "Utilizing the Git 'amend' tag"
+      isCorrect: true
+      explanation: "Correct! Using amend means that you're changing what was put in the initial commit!"
+    - content: "Revert the commit and make a new one"
+      isCorrect: false
+      explanation: "Incorrect. Although it does keep the amount of commits as the same, you might lose some changes and using amend is much better."            
+  - content: 'How do you choose between Git reset and Git checkout to recover a lost file?'
+    choices:
+    - content: "Git checkout can recover a file you might have accidentally deleted. Git Reset, will recover a file you deleted using the 'git rm' command "
+      isCorrect: True
+      explanation: "Correct! Git checkout updates your file with the one present in the git index, while git reset unstages files deleted."
+    - content: "Always use git checkout because it is the safer option"
+      isCorrect: false
+      explanation: "Incorrect. Git checkout will only be able to recover the file if it is still in the index."
+    - content: "Create a new file with the same name and use Git reset"
+      isCorrect: false
+      explanation: "Incorrect, this wouldn't work"
+  - content: 'When should you avoid changing a past commit?'
+    choices:
+    - content: "Avoid amending commits that other developers have based their work on"
+      isCorrect: true
+      explanation: "Correct! When you amend a commit the past commit before it is gone and replaced by your amended commit."
+    - content: "When you want to add a new file to your commit"
+      isCorrect: false
+      explanation: "Incorrect. You are able to use the amend tag to add a new file to your commit."
+    - content: "When you want to change the not most recent commit."
+      isCorrect: false
+      explanation: "Incorrect. Git amend only works on your most recent commit."
+        

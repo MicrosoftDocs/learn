@@ -1,4 +1,4 @@
-GitHub Script is a workflow action that provides you with access to the GitHub API from within your GitHub Actions. It offers convenient support for any API usage available in [octokit/rest.js](https://octokit.github.io/rest.js/v17?azure-portal=true).
+GitHub Script is a workflow action that provides you with access to the GitHub API from within your GitHub Actions. It offers convenient support for any API usage available in [octokit/rest.js](https://octokit.github.io/rest.js/?azure-portal=true).
 
 Suppose you maintain a vibrant GitHub repository. Your project has a substantial number of consumers and contributors, and you want to ensure they have a welcoming experience. You also find that the responsibilities of managing the team's planning and workload can really add up. You need a solution that will allow you to hand off some of the mundane tasks to automation so that you can focus on areas where you really add value. You know that GitHub offers an API that will enable you to automatically reply to new issues and begin the triage workflow for new bug reports. You just haven't invested the time in figuring it all out. Until now.
 

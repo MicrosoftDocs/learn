@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Learn about a business problem that you can address by using Azure AD join.
   ms.date: 04/16/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

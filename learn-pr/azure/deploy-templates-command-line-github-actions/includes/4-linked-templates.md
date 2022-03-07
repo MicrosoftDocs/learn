@@ -1,4 +1,4 @@
-As the complexity of your deployment grows, you might want to move to a modular approach to deploying resources by using Azure Resource Manager (ARM) [linked or nested templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/linked-templates?azure-portal=true). Linked and nested templates are ways to break down your deployment into many related templates, and then deploy them together through a main template.
+As the complexity of your deployment grows, you might want to move to a modular approach to deploying resources by using Azure Resource Manager (ARM) [linked or nested templates](/azure/azure-resource-manager/templates/linked-templates?azure-portal=true). Linked and nested templates are ways to break down your deployment into many related templates, and then deploy them together through a main template.
 
 ## Linked template
 

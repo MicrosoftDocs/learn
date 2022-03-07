@@ -58,7 +58,7 @@ Identify the subtasks of *Manage DNS records with Azure DNS*
         - IPv4 and IPv6 can both be mapped if applicable
         - Different types of records, MX, A, CNAME, what do they do?
 
-    See [Azure DNS overview](https://docs.microsoft.com/azure/dns/dns-overview)
+    See [Azure DNS overview](/azure/dns/dns-overview)
 
     Knowledge check:
     1. Azure DNS allows you to ____?
@@ -84,7 +84,7 @@ Identify the subtasks of *Manage DNS records with Azure DNS*
     1. Create an A record
     1. Demonstrate it working
 
-    See: [Quickstart: Create an Azure DNS zone and record using the Azure portal](https://docs.microsoft.com/azure/dns/dns-getstarted-portal#test-the-name-resolution)
+    See: [Quickstart: Create an Azure DNS zone and record using the Azure portal](/azure/dns/dns-getstarted-portal#test-the-name-resolution)
 
 1. **Dynamically resolve resource name by using alias record**
 
@@ -114,7 +114,7 @@ Identify the subtasks of *Manage DNS records with Azure DNS*
   - Configure Azure DNS
   - Configure custom DNS settings​
   - Configure private and public DNS zones
-- For exercises, use this as the model: [Quickstart: Create an Azure DNS zone and record using the Azure portal](https://docs.microsoft.com/azure/dns/dns-getstarted-portal#test-the-name-resolution). E.g. Get as far as you can go without requiring a real domain name. 
+- For exercises, use this as the model: [Quickstart: Create an Azure DNS zone and record using the Azure portal](/azure/dns/dns-getstarted-portal#test-the-name-resolution). E.g. Get as far as you can go without requiring a real domain name. 
 - In conceptual learning units, include info about:
   - Creating public vs. private DNS zones - private is in preview as of 6/25 but expected to be public by the end of July.
   - Custom DNS settings
@@ -140,11 +140,10 @@ bash setup.sh
 
 ## Resources
 
-- [What is Azure DNS?](https://docs.microsoft.com/azure/dns/dns-overview)
-- [Tutorial: Configure an alias record to refer to an Azure public IP address](https://docs.microsoft.com/en-us/azure/dns/tutorial-alias-pip)
-- [Quickstart: Create an Azure DNS zone and record using the Azure portal](https://docs.microsoft.com/azure/dns/dns-getstarted-portal#test-the-name-resolution)
-- [Tutorial: Host your domain in Azure DNS](https://docs.microsoft.com/azure/dns/dns-delegate-domain-azure-dns)
-- [Tutorial: Create DNS records in a custom domain for a web app](https://docs.microsoft.com/azure/dns/dns-web-sites-custom-domain)
-- [Tutorial: Create an Azure DNS private zone using the Azure portal](https://docs.microsoft.com/azure/dns/private-dns-portal)
-- [Overview of DNS zones and records](https://docs.microsoft.com/azure/dns/dns-zones-records)
-
+- [What is Azure DNS?](/azure/dns/dns-overview)
+- [Tutorial: Configure an alias record to refer to an Azure public IP address](/azure/dns/tutorial-alias-pip)
+- [Quickstart: Create an Azure DNS zone and record using the Azure portal](/azure/dns/dns-getstarted-portal#test-the-name-resolution)
+- [Tutorial: Host your domain in Azure DNS](/azure/dns/dns-delegate-domain-azure-dns)
+- [Tutorial: Create DNS records in a custom domain for a web app](/azure/dns/dns-web-sites-custom-domain)
+- [Tutorial: Create an Azure DNS private zone using the Azure portal](/azure/dns/private-dns-portal)
+- [Overview of DNS zones and records](/azure/dns/dns-zones-records)

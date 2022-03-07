@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.use-apis-discover-museum-art.2-what-is-api
+metadata:
+  title: What is an API?
+  description: Learn how to define an API.
+  ms.date: 12/08/2020
+  author: jlooper
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: explore-rest-apis
+  ms.custom: team=nextgen
+title: What is an API?
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-api.md)]

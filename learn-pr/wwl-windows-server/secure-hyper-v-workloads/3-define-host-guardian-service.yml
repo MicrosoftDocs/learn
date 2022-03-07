@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-hyper-v-workloads.define-host-guardian-service
+title: Define the Host Guardian Service
+metadata:
+  title: Define the Host Guardian Service
+  description: "Define the Host Guardian Service"
+  ms.date: 03/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows-server
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-define-host-guardian-service.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "Which of the following statements correctly describes the VMs in a guarded fabric?"
+    choices:
+    - content: "A guarded fabric only supports shielded VMs."
+      isCorrect: false
+      explanation: "That's incorrect. A guarded fabric supports a mixture of regular VMs, shielded VMs, and encryption-supported VMs."
+    - content: "A guarded fabric supports a mixture of regular VMs, shielded VMs, and encryption-supported VMs."
+      isCorrect: true
+      explanation: "That's correct. A guarded fabric supports a mixture of regular VMs, shielded VMs, and encryption-supported VMs."
+    - content: "A guarded fabric doesn't support regular VMs."
+      isCorrect: false
+      explanation: "That's incorrect. A guarded fabric supports a mixture of regular VMs, shielded VMs, and encryption-supported VMs."

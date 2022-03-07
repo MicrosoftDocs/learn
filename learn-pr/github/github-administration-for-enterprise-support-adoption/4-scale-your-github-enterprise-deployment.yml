@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github-administration-for-enterprise-support-adoption.scale-your-github-enterprise-deployment
+title: Scale your enterprise deployment
+metadata:
+  unitType: learning-content
+  title: Scale your enterprise deployment
+  description: In this unit, you'll learn more about the GitHub Enterprise features that support your enterprise organization as it grows.
+  ms.date: 10/08/2021
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-scale-your-github-enterprise-deployment.md)]

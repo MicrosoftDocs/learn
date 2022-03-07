@@ -2,7 +2,7 @@ As a global admin or admin agent, you can use Azure Cost Management to reconcile
 
 :::image type="content" source="../media/03-example-invoice.png" alt-text="Screenshot that shows an example invoice with resource costs." lightbox="../media/03-example-invoice.png" :::
 
-For more information about the details shown on your invoice, see [Terms in your invoice](https://docs.microsoft.com/azure/cost-management-billing/understand/mca-understand-your-invoice). 
+For more information about the details shown on your invoice, see [Terms in your invoice](/azure/cost-management-billing/understand/mca-understand-your-invoice). 
 
 ## Reconcile the invoice by using cost analysis
 
@@ -10,7 +10,7 @@ You can use cost analysis to intuitively analyze the pretax costs that are on yo
 
 The following images are examples with fictitious costs.
 
-1. To [analyze costs](https://docs.microsoft.com/azure/cost-management-billing/costs/quick-acm-cost-analysis) on your invoice, select **Cost Management +Billing** and then select **Cost analysis**.
+1. To [analyze costs](/azure/cost-management-billing/costs/quick-acm-cost-analysis) on your invoice, select **Cost Management +Billing** and then select **Cost analysis**.
 1. In **Cost analysis**, you can select the scope of the billing account. You can then select the appropriate billing profile that's associated with the invoice and the invoiced currency.  
     :::image type="content" source="../media/03-select-billing-account.png" alt-text="Example that shows how to select a billing account scope in Azure Cost Management." lightbox="../media/03-select-billing-account.png" :::
     :::image type="content" source="../media/03-select-billing-profile.png" alt-text="Example that shows how to select a billing profile under the account scope." lightbox="../media/03-select-billing-profile.png" :::
@@ -39,7 +39,7 @@ To reconcile pretax costs on your invoice, use the CSV file for usage details. I
     :::image type="content" source="../media/03-invoices.png" alt-text="Example that shows invoices in the Azure portal." lightbox="../media/03-invoices.png" :::
 1. Download the following files as required: 
     - PDF copy of the invoice.
-    - Pretax Azure usage details download that gives you details of the usage that contributed to the invoice. For more information about usage terms, see [Data fields](https://docs.microsoft.com//azure/cost-management-billing/costs/get-started-partners#data-fields).
+    - Pretax Azure usage details download that gives you details of the usage that contributed to the invoice. For more information about usage terms, see [Data fields](/azure/cost-management-billing/costs/get-started-partners#data-fields).
     - Azure price sheet that provides the Azure pricing for the services on the invoice.
     - Azure price sheet for all services.  
     :::image type="content" source="../media/03-invoice-download.png" alt-text="Example that shows an invoice in the Azure portal available for download." lightbox="../media/03-invoice-download.png" :::
@@ -49,4 +49,3 @@ The usage details download provides detailed pretax cost in billing currency and
 You can also download the usage details for the current unbilled open period by selecting **Download pending usage**.  
 
 :::image type="content" source="../media/03-invoices-download-pending-usage.png" alt-text="Example that shows invoices where you can download pending usage." lightbox="../media/03-invoices-download-pending-usage.png" :::
-

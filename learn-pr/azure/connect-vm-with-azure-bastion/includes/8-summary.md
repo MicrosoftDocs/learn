@@ -12,5 +12,5 @@ You can use Azure Bastion to stream user session information to your storage acc
 
 ## Learn more
 
-- [Create an Azure Bastion host using Azure PowerShell](https://docs.microsoft.com/azure/bastion/bastion-create-host-powershell)
-- [Create an Azure Bastion host using Azure CLI](https://docs.microsoft.com/azure/bastion/create-host-cli)
+- [Create an Azure Bastion host using Azure PowerShell](/azure/bastion/bastion-create-host-powershell)
+- [Create an Azure Bastion host using Azure CLI](/azure/bastion/create-host-cli)

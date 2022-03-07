@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.use-forms-in-blazor-web-apps.validate-user-input-implicitly
+title: Validate user input implicitly without writing validation code
+metadata:
+  unitType: learning-content
+  title: "Validate user input implicitly without writing validation code"
+  description: "Learn how to use Blazor's events to validate user input in forms."
+  ms.date: 08/31/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-validate-user-input-implicitly.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which component is used in an EditForm to display a summary of validation errors?"
+    choices:
+    - content: "ValidationMessage"
+      isCorrect: false
+      explanation: "The ValidationMessage component will display the message for one component, not a summary"
+    - content: "DataAnnotationsValidator"
+      isCorrect: false
+      explanation: "This component activates the validations in the EditForm, but does not display a summary of validation message"
+    - content: "ValidationSummary"
+      isCorrect: true
+      explanation: "This component displays a summary of all the validation messages in a submitted form"
+  - content: "Which of these is NOT a standard input elements that comes with Blazor?"
+    choices:
+    - content: "Guid"
+      isCorrect: true
+      explanation: "Guid is not part of the standard input elements provided by Blazor"
+    - content: "CreditCard"
+      isCorrect: false
+      explanation: "CreditCard is one of the standard input elements provided by Blazor"
+    - content: "EmailAddress"
+      isCorrect: false
+      explanation: "EmailAddress is one of the standard input elements provided by Blazor"

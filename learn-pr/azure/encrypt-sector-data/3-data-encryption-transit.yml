@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.encrypt-sector-data.3-data-encryption-transit
+title: Protect data in transit
+metadata:
+  title: Protect data in transit
+  description: Discussion of the stakes and options of encrypting data in transit to protect it from interception when using Azure.
+  ms.date: 04/28/2021
+  author: Adriamen
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-data-encryption-transit.md)] 

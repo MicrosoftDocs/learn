@@ -4,11 +4,12 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 04/30/2020
-  author: cassieview
+  ms.date: 01/19/2021
+  author: cassiebreviu
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

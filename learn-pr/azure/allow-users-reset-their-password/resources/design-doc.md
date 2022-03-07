@@ -122,16 +122,16 @@ Identify the subtasks of *Allow users to reset their password with Azure Active 
 
 ## Notes
 
-- Users should be able to go through exercises by creating a new directory within sandbox or their own account. This would be on a trial license for AD that's created outside the Azure sandbox scope. We think users won't be able to delete or clean up this tenant- it will just expire after a month (with no charge). So we'll want to group together AD learning paths. See [Quickstart: Set up a dev environment](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant#work-and-school-accounts-or-personal-microsoft-accounts). There is another module in development that will use this same set-up process.
+- Users should be able to go through exercises by creating a new directory within sandbox or their own account. This would be on a trial license for AD that's created outside the Azure sandbox scope. We think users won't be able to delete or clean up this tenant- it will just expire after a month (with no charge). So we'll want to group together AD learning paths. See [Quickstart: Set up a dev environment](/azure/active-directory/develop/quickstart-create-new-tenant#work-and-school-accounts-or-personal-microsoft-accounts). There is another module in development that will use this same set-up process.
 - Show how to do steps in Azure portal when possible. Otherwise, show steps in PowerShell.
 - We should consider creating a diagram to show the overall process.
 
 ## Resources
-- [Licensing info](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-licensing)
-- In lieu of sandbox: [Quickstart: Set up a dev environment](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant#work-and-school-accounts-or-personal-microsoft-accounts)
-- [How it works & configuration options (authentication method, registration, notification)](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-howitworks) (should probably have swim lane-like diagram to show overall process)
-- [How you'd deploy if you didn't require pre-registering](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-sspr-authenticationdata)
-- [Quickstart on how to enable](https://docs.microsoft.com/en-us/azure/active-directory/authentication/quickstart-sspr)
-- [Tutorial](https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-sspr-pilot)
-- [Guidance on roll out](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-sspr-deployment) - shouldn't really cover this information other than to mention it briefly
+- [Licensing info](/azure/active-directory/authentication/concept-sspr-licensing)
+- In lieu of sandbox: [Quickstart: Set up a dev environment](/azure/active-directory/develop/quickstart-create-new-tenant#work-and-school-accounts-or-personal-microsoft-accounts)
+- [How it works & configuration options (authentication method, registration, notification)](/azure/active-directory/authentication/concept-sspr-howitworks) (should probably have swim lane-like diagram to show overall process)
+- [How you'd deploy if you didn't require pre-registering](/azure/active-directory/authentication/howto-sspr-authenticationdata)
+- [Quickstart on how to enable](/azure/active-directory/authentication/quickstart-sspr)
+- [Tutorial](/azure/active-directory/authentication/tutorial-sspr-pilot)
+- [Guidance on roll out](/azure/active-directory/authentication/howto-sspr-deployment) - shouldn't really cover this information other than to mention it briefly
 - Authentication methods. See notes in <https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods#mobile-phone> under phone call.

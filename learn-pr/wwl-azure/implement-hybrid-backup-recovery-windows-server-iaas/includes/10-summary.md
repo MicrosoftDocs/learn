@@ -11,4 +11,4 @@ You can learn more by reviewing the following documents:
 
 - [What is the Azure Backup service?](https://aka.ms/azure-backup-service?azure-portal=true)
 - [Protect your virtual machines by using Azure Backup](https://aka.ms/protect-vms-with-azure-backup?azure-portal=true)
-- [Tutorial: Back up and restore files for Windows virtual machines in Azure](https://aka.ms/tutorial-azure-backup?azure-portal=true)
+- [Tutorial: Back up and restore files for Windows virtual machines in Azure](/azure/backup/backup-azure-arm-restore-vms)

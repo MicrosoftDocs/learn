@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-web-app-settings.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In which of the app configuration settings categories below would you set the language and SDK version?"
+    choices:
+    - content: "Application settings"
+      isCorrect: false
+      explanation: "That's incorrect. This category is used to configure settings that are passed to your app at runtime."
+    - content: "Path mappings"
+      isCorrect: false
+      explanation: "That's incorrect. This category is used to configure handler mappings, and virtual directory to directory mappings."
+    - content: "General settings"
+      isCorrect: true
+      explanation: "That's correct. This category is used to configure stack, platform, debugging, and incoming client certificate settings."
+  - content: "Which of the following types of application logging is supported on the Linux platform?"
+    choices:
+    - content: "Web server logging"
+      isCorrect: false
+      explanation: "That's incorrect. Web server logging is not supported on the Linux platform."
+    - content: "Failed request tracing"
+      isCorrect: false
+      explanation: "That's incorrect. Failed request tracing is not supported on the Linux platform."
+    - content: "Deployment logging"
+      isCorrect: true
+      explanation: "That's correct. Deployment logging is supported on the Linux platform."
+  - content: "Which of the following choices correctly lists the two parts of a feature flag?"
+    choices:
+    - content: "Name, App Settings"
+      isCorrect: false
+      explanation: "That's incorrect. App settings is not one of the two parts of a feature flag, though you can store evaluation filters in *appsettings.json*."
+    - content: "Name, one or more filters"
+      isCorrect: true
+      explanation: "That's correct. Each feature flag has two parts: a name and a list of one or more filters that are used to evaluate if a feature's state is *on*."
+    - content: "Feature manager, one or more filters"
+      isCorrect: false
+      explanation: "That's incorrect. A feature manager is an application package that handles the lifecycle of all the feature flags in an application.."

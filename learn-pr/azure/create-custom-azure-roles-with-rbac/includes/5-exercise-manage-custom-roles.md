@@ -52,7 +52,7 @@ We need to update the Virtual Machine Operator role to add permissions for a mon
      ]
    }
     ```
-1. In the `AssignableScopes` section, replace **subscriptionId** with your subscription ID. If you didn't save that value from the previous exercise, run the following command to get it.
+1. In the `AssignableScopes` section, replace **subscriptionId1** with your subscription ID. If you didn't save that value from the previous exercise, run the following command to get it.
    ```azurecli
     az account list  --output json | jq '.[] | .id, .name'
    ```

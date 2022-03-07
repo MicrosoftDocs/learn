@@ -6,7 +6,7 @@ You could use a virtual private network or Azure ExpressRoute to create secure c
 
 To learn more about Azure Relay, see the following articles:
 
-- [What is Azure Relay?](https://docs.microsoft.com/azure/service-bus-relay/relay-what-is-it)
-- [Get started with Relay hybrid connections HTTP requests in .NET](https://docs.microsoft.com/azure/service-bus-relay/relay-hybrid-connections-http-requests-dotnet-get-started)
-- [Get started with Relay hybrid connections WebSocket in .NET](https://docs.microsoft.com/azure/service-bus-relay/relay-hybrid-connections-dotnet-get-started)
-- [Azure Relay hybrid connections protocol](https://docs.microsoft.com/azure/service-bus-relay/relay-hybrid-connections-protocol)
+- [What is Azure Relay?](/azure/service-bus-relay/relay-what-is-it)
+- [Get started with Relay hybrid connections HTTP requests in .NET](/azure/service-bus-relay/relay-hybrid-connections-http-requests-dotnet-get-started)
+- [Get started with Relay hybrid connections WebSocket in .NET](/azure/service-bus-relay/relay-hybrid-connections-dotnet-get-started)
+- [Azure Relay hybrid connections protocol](/azure/service-bus-relay/relay-hybrid-connections-protocol)

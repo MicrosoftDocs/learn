@@ -22,7 +22,7 @@ The tradeoff with NoSQL databases is between ACID properties (most notably consi
 
 A limited taxonomy of NoSQL databases is illustrated in the following figure.
 
-![Taxonomy of NoSQL databases](../media/taxonomy-nosql.png)
+![Taxonomy of NoSQL databases.](../media/taxonomy-nosql.png)
 
 _Figure 20: A taxonomy of NoSQL databases_
 
@@ -34,7 +34,7 @@ In contrast to RDBMSs, where data is stored as records with fixed-length fields,
 
 In graph databases, graph structures such as vertices and edges are used to represent and store data. Graph databases can be used to store data that has network-like properties between elements (e.g., a social network graph). Graph databases are a powerful tool for graph-like queries, for example, where you might want to find the shortest path between two elements. Figure 21 illustrates an example of a graph database, with a vertex representing a person or a club and the edges representing membership or familiarity. Alice and Bob are represented using vertices with an edge that signifies the "knows" relationship connecting them. From this, we can see that Alice and Bob know each other. The relationship is further quantified using the "since" tag, which specifies that Alice has known Bob since 2001/10/03 and Bob has known Alice since 2001/10/04. Likewise, a group entity called "Chess" is defined with relationships indicated by edges to both Alice and Bob, which signifies that they are both members of a chess group. 
 
-![Example of a graph database](../media/graph-database.png)
+![Example of a graph database.](../media/graph-database.png)
 
 _Figure 21: Example of a graph database_
 

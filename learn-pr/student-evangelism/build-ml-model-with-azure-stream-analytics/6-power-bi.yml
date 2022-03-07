@@ -3,12 +3,13 @@ uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.6-power
 title: Exercise - Create a Power BI report
 metadata:
   title:  Exercise - Create a Power BI report
-  description: Create a Power BI report to show where polar bears are being spotted
-  ms.date: 10/01/2020
-  author: shanamatthews
-  ms.author: shanama
+  description: Create a Power BI report to show where cameras are spotting polar bears.
+  ms.date: 12/21/2020
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 15
 content: |
   [!include[](includes/6-power-bi.md)]

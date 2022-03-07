@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-storage.examine-sizing-for-hana-databases-azure-netapp-files
+title: Examine sizing for HANA databases on Azure NetApp Files
+metadata:
+  title: Examine sizing for HANA databases on Azure NetApp Files
+  description: "Examine sizing for HANA databases on Azure NetApp Files"
+  ms.date: 01/20/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/19-examine-sizing-hana-databases-azure-netapp-files.md)]

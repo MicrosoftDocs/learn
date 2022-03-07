@@ -1,0 +1,3 @@
+Showcasing the innovative features of a program that implements certification is an important marketing activity. You can adopt a well-considered strategy that is attractive to applicants in the target market. A partnership with Microsoft that includes shared goals and a co-branding agreement helps to amplify your program’s reach and appeal.
+
+The combined marketing activities discussed in this module form a powerful toolkit for educators. This approach has self-sustaining attributes, because certification success stories are meaningful case studies that resonate with potential applicants to the program.
