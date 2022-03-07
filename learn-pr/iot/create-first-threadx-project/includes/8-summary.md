@@ -6,11 +6,11 @@ A semi-independent program segment; threads share the same memory space within a
 
 ### ThreadX building blocks
 
-A somewhat arbitrary classification of a ThreadX project, intended to clarify the discussion of various parts of a project. 
+A somewhat arbitrary classification of a ThreadX project, intended to clarify the discussion of various parts of a project.
 
   - Building block 1 contains #includes, defines, and declarations
   - Building block 2 contain the main entry point
-  - Building block 3 contains Application Define, which is where resources are typically created 
+  - Building block 3 contains Application Define, which is where resources are typically created
   - Building block 4 contains entry functions for threads, application timers, and notifications
 
 ### GitHub Codespaces
