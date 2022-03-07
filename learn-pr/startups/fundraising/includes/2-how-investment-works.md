@@ -204,13 +204,13 @@ The table tells us that company number 10 must be the one that makes Melanie's i
 
 How well does company number 10 need to do? We can estimate this amount by working backwards from an expected portfolio rate of return. We noted earlier that seed-stage investors look for at least a 30 percent annual rate of return across their startup investment portfolio.
 
-If Melanie invests \$1 million and holds these investments for seven years, she needs to realize a \$5 million return on her $1 million invested. A simple [internal rate of return (IRR)](https://www.investopedia.com/terms/i/irr.asp?azure-portal=true) calculation confirms this return.
+If Melanie invests $1 million and holds these investments for seven years, she needs to realize a $5 million return on her $1 million invested. A simple [internal rate of return (IRR)](https://www.investopedia.com/terms/i/irr.asp?azure-portal=true) calculation confirms this return.
 
-A \$5 million return might sound like a phenomenal outcome. That's \$4 million more than Melanie invested. But remember that she's investing in risky startups and could have made a much safer return by investing in lower-risk assets.
+A $5 million return might sound like a phenomenal outcome. That's $4 million more than Melanie invested. But remember that she's investing in risky startups and could have made a much safer return by investing in lower-risk assets.
 
-If we know Melanie needs to make a \$5 million portfolio return, and so far nine companies have returned only \$800,000, we know that company 10 needs to generate a return of $4.2 million.
+If we know Melanie needs to make a $5 million portfolio return, and so far nine companies have returned only $800,000, we know that company 10 needs to generate a return of $4.2 million.
 
-That's a return of \$4.2 million on an investment of \$100,000, or a 42-time return on Melanie's investment.
+That's a return of $4.2 million on an investment of $100,000, or a 42-time return on Melanie's investment.
 
 Melanie's portfolio would now look like the following table:
 
@@ -232,7 +232,7 @@ Some startup founders might think that a 42-time return sounds egregious, but it
 
 Let's consider what this scenario looks like from the company's point of view. An investor return of $4.2 million doesn't represent the value of the entire company. If we assume that Melanie invested in the seed round, and the company then raised money from other investors, her shareholding will have been diluted. It might have gone from 10 percent at the seed round to 2 percent on exit.
 
-If 2 percent of the company is worth \$4.2 million, the entire company must be worth \$210 million on exit.
+If 2 percent of the company is worth $4.2 million, the entire company must be worth $210 million on exit.
 
 As a startup founder, if you're aiming to raise money from investors, you need to see a realistic path to achieve the sort of growth and scale described here for company 10.
 
