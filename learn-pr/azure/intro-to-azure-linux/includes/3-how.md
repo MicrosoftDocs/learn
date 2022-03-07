@@ -109,14 +109,14 @@ You can fully automate Azure Resource Manager with scripts and template files fo
 
 ### Pricing
 
-|                                           |                                                                                                                                                                   |
-|-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Pay-as-you-go**                         | VM usage of compute resources is billed by the second, with no commitments or up-front payments.                                                                  |
-| **Reserved instances**                    | Purchase compute capacity for one to three years in advance at a significant savings. For stable workloads that allow you to plan your consumption ahead of time. |
-| **Spot pricing**                          | Power workloads that can tolerate interruptions and delays by taking advantage of unused compute capacity at deep discounts.                                      |
-| **Azure reservations for software plans** | Pre-purchase one-year or three-year support agreement for Red Hat Enterprise Linux, or SUSE Linux Enterprise Server, for cost savings.                              |
-| **Bring your own license/subscription**   | Bring your own Linux support license from your existing Red Hat or SUSE investment. See the links in the Summary unit for more information.                       |
-| **Enterprise Agreement**                  | Use an existing Enterprise Agreement to purchase Red Hat Enterprise Linux and SUSE Linux Enterprise Server licenses.                                              |
+| Service | Description |
+|---|---|
+| **Pay-as-you-go** | VM usage of compute resources is billed by the second, with no commitments or up-front payments. |
+| **Reserved instances** | Purchase compute capacity for one to three years in advance at a significant savings. For stable workloads that allow you to plan your consumption ahead of time. |
+| **Spot pricing** | Power workloads that can tolerate interruptions and delays by taking advantage of unused compute capacity at deep discounts. |
+| **Azure reservations for software plans** | Pre-purchase one-year or three-year support agreement for Red Hat Enterprise Linux, or SUSE Linux Enterprise Server, for cost savings. |
+| **Bring your own license/subscription**  | Bring your own Linux support license from your existing Red Hat or SUSE investment. See the links in the Summary unit for more information. |
+| **Enterprise Agreement** | Use an existing Enterprise Agreement to purchase Red Hat Enterprise Linux and SUSE Linux Enterprise Server licenses.                                              |
 
 Additional cost factors for IaaS workloads include infrastructure and service resources, and consumed bandwidth. The Azure pricing calculator can help you to determine the total costs for your workload.
 

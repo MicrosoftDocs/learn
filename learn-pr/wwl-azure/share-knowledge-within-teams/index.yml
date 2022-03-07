@@ -3,7 +3,7 @@ uid: learn.wwl.share-knowledge-within-teams
 metadata:
   title: Share knowledge within teams
   description: "Share knowledge within teams"
-  ms.date: 11/30/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Integrate with Azure Boards
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/4-share-knowledge-within-teams.svg
 levels:
 - advanced
 roles:

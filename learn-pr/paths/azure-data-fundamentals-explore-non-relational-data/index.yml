@@ -3,7 +3,7 @@ uid: learn.wwl.azure-data-fundamentals-explore-non-relational-data
 metadata:
   title: 'Microsoft Azure Data Fundamentals: Explore non-relational data in Azure'
   description: 'Microsoft Azure Data Fundamentals: Explore non-relational data in Azure'
-  ms.date: 10/12/2021
+  ms.date: 03/07/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -12,19 +12,21 @@ title: 'Microsoft Azure Data Fundamentals: Explore non-relational data in Azure'
 prerequisites: |
   None
 summary: |
-  Learn the fundamentals of database concepts in a cloud environment, get basic skilling in cloud data services, and build your foundational knowledge of cloud data services within Microsoft Azure. You will explore non-relational data offerings, provisioning and deploying non-relational databases, and non-relational data stores with Microsoft Azure.
+  Non-relational data is a common way for applications to store and query data without the overhead of a relational schema. In Microsoft Azure, you can use Azure Storage and Azure Cosmos DB to build highly scalable, secure data stores for non-relational data.
+  This learning path helps you prepare for the [Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals?azure-portal=true)
 iconUrl: /learn/achievements/azure-data-fundamentals-explore-non-relational-data.svg
 levels:
 - beginner
 roles:
-- administrator
-- business-user
+- data-analyst
 - data-engineer
+- database-administrator
+- developer
+- solution-architect
 - student
 products:
 - azure
 modules:
-- learn.wwl.explore-non-relational-data-offerings-azure
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure
 - learn.wwl.explore-non-relational-data-stores-azure
 trophy:

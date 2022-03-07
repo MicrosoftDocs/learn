@@ -4,7 +4,7 @@ After setting up logs, you can also query the logs to quickly gather custom insi
 
 You can configure diagnostic settings to start collecting logs from the Azure portal.
 
-:::image type="content" source="../media/m11-l04-adt-diagnostic-settings-portal-051b29e9.png" alt-text="Screen shot that shows how to configure diagnostic settings and start collecting logs using the Azure portal.":::
+:::image type="content" source="../media/m11-l04-adt-diagnostic-settings-portal-051b29e9.png" alt-text="Screenshot that shows how to configure diagnostic settings and start collecting logs using the Azure portal.":::
 
 
 > [!NOTE]

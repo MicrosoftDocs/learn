@@ -28,12 +28,11 @@ Let's start by creating a storage account. Later, you'll configure the app to st
    | Field | Value |
    | --- | --- |
    | Storage account name | Use a globally unique value. For example, "lensesstorage" with your own initials postfixed. |
-   | Location | Choose a region near you from the previous list. |
+   | Location | Choose a region near you  |
    | Performance | Standard |
-   | Account kind | StorageV2 (general-purpose v2) |
-   | Replication | Locally-redundant storage (LRS) |
+   | Redundancy | Locally redundant storage (LRS) |
 
-1. Go to the **Advanced** tab, and under the **Security** section, set **Secure transfer required** to **Disabled**.
+1. Go to the **Advanced** tab, and under the **Security** section, uncheck **Require secure transfer for REST API operations**.
 
 1. Select **Review + create**. You should see a *Validation passed* notification at the top of the wizard.
 
@@ -63,9 +62,9 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the storage account you created.
 
-1. Under **Settings**, select **Access keys**.
+1. Under **Security + networking**, select **Access keys**.
 
-1. Select **Show keys**, and to the right of the **key1 Connection string** textbox, select **Copy**. Save this in a note pad for later use.
+1. Select **Show keys**, and to the right of the **key1 Connection string** textbox, select **Copy**. Save this key in Notepad for later use.
 
    ![Copy the storage account connection string.](../media/3-copy-storage-account-connection.png)
 
@@ -95,7 +94,7 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. In the code editor, in the **Files** list, double-click **appsettings.json**.
 
-1. Replace the value of the **LensesDatabase** property with the connection string that you just copied.
+1. Replace the value of the **LensesDatabase** property with the connection string that you copied.
 
 1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file.
 
@@ -165,9 +164,9 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the storage account you created.
 
-1. Under **Settings**, select **Access keys**.
+1. Under **Security + networking**, select **Access keys**.
 
-1. To the right of the **key1 Connection string** textbox, select the **Copy** button.
+1. Select **Show keys**. Then, to the right of the **key1 Connection string** textbox, select the **Copy** button. Paste this connection string into Notepad for future use.
 
    ![Copy the storage account connection string.](../media/3-copy-storage-account-connection.png)
 
@@ -245,7 +244,7 @@ Let's use the app to populate a table with lenses and then add our own lens entr
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, and then select the storage account you created.
 
-1. Select **Storage Explorer**, expand **Tables**, and then select **lensestable**. The Storage Explorer displays the list of camera lenses, including the lens you added.
+1. Select **Storage browser**, expand **Tables**, and then select **lensestable**. The Storage Explorer displays the list of camera lenses, including the lens you added.
 
    ![Lenses in the Storage Account table.](../media/3-lenses-in-storage-table.png)
 
@@ -257,7 +256,7 @@ Next, create an Azure Cosmos DB database in your Azure subscription, and select 
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **Create a resource**.
 
-1. Select **Databases**, and then select **Azure Cosmos DB**.
+1. Select **Databases**, and then select **Azure Cosmos DB**. Select **Azure Table**.
 
 1. In the **Create Azure Cosmos DB Account** wizard, enter the following values in the **Basics** tab, under the **Project details** section:
 
@@ -271,8 +270,14 @@ Next, create an Azure Cosmos DB database in your Azure subscription, and select 
    | Field | Value |
    | --- | --- |
    | Account Name | Use a globally unique value. For example, "lensesdb" with your own initials postfixed. |
-   | API | Azure Table |
    | Location | Choose a region near you from the dropdown. |
+
+   Accept the defaults for all other settings. Select **Next: Global Distribution**.
+
+1. Choose the following values.
+
+   | Field | Value |
+   | --- | --- |
    | Geo-Redundancy | Disable |
    | Multi-region Writes | Disable |
 
@@ -290,7 +295,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. Under **Settings**, select **Connection String**.
 
-1. To the right of the **PRIMARY CONNECTION STRING** textbox, select **Copy**.
+1. To the right of the **PRIMARY CONNECTION STRING** textbox, select **Copy**. Paste this string into Notepad for future use.
 
     ![Copy the Azure Cosmos DB connection string.](../media/3-copy-cosmos-connection.png)
 
@@ -302,7 +307,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. In the code editor, in the **Files** list, double-click **appsettings.json**.
 
-1. Replace the value of the **LensesDatabase** property with the connection string that you just copied.
+1. Replace the value of the **LensesDatabase** property with the connection string that you copied.
 
 1. To save your changes, press <kbd>Ctrl+S</kbd> to save the file, and then press <kbd>Ctrl+Q</kbd> to exit the editor.
 
@@ -373,7 +378,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. Under **Settings**, select **Connection String**.
 
-1. To the right of the **PRIMARY CONNECTION STRING** textbox, select the **Copy** button.
+1. To the right of the **PRIMARY CONNECTION STRING** textbox, select the **Copy** button. Copy the string to Notepad for future use.
 
     ![Copy the Azure Cosmos DB connection string.](../media/3-copy-cosmos-connection.png)
 
@@ -385,7 +390,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. In the code editor, in the **Files** list, double-click **.env**.
 
-1. Replace the existing value of the **AZURE_TABLES_CONNECTION_STRING** variable with the new Cosmos DB connection string that you just copied.
+1. Replace the existing value of the **AZURE_TABLES_CONNECTION_STRING** variable with the new Cosmos DB connection string that you copied.
 
 1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
 

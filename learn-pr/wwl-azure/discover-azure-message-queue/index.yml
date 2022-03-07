@@ -3,7 +3,7 @@ uid: learn.wwl.discover-azure-message-queue
 metadata:
   title: Discover Azure message queues
   description: "Learn how to integrate Azure Service Bus and Azure Queue storage in to your solution, and how to send and receive message by using .NET."
-  ms.date: 01/11/2022
+  ms.date: 02/21/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
