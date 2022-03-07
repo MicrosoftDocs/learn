@@ -4,7 +4,7 @@ Data scientists can use various tools and techniques to explore, visualize, and 
 
 ## Data visualization using ggplot2
 
-ggplot2 is an R package for creating elegant graphics for data analysis. ggplot2 provides a flexible way of creating graphs by combining independent components of a graphic in a series of iterative steps. This makes ggplot2 one of the most versatile and powerful tools for making graphs in R. 
+Ggplot2 is an R package for creating elegant graphics for data analysis. Ggplot2 provides a flexible way of creating graphs by combining independent components of a graphic in a series of iterative steps. This makes ggplot2 one of the most versatile and powerful tools for making graphs in R. 
 
 ## Data transformation using dplyr 
 
@@ -29,6 +29,6 @@ Data exploration and analysis is typically an *iterative* process, in which the 
 - **Clean data** to handle errors, missing values, and other issues. 
 - **Apply statistical techniques to better understand the data**, and how the sample might be expected to represent the real-world population of data, allowing for random variation. 
 - **Visualize data** to determine relationships between variables, and in the case of a machine learning project, identify *features* that are potentially predictive of the *label*. 
-- Revise the hypothesis and repeat the process. 
+- **Revise the hypothesis** and repeat the process. 
  
 [1] Hadley Wickham and others, 'Welcome to the Tidyverse', [*Journal of Open Source Software*, 2019](https://doi.org/10.21105/joss.01686).
