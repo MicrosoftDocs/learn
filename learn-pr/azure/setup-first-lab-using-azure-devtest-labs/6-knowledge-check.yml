@@ -32,7 +32,7 @@ quiz:
       explanation: "Correct. An Azure DevTest Labs resource can contain multiple lab VMs with multiple VM instances. Each pool of lab VMs can be pre-configured with artifacts according to the specific needs of the team."
     - content: "Create an Azure DevTest Labs resource for each developer."
       isCorrect: false
-      explanation: "Try again. An Azure DevTest Labs resource doesn't contain any compute resources. The resource only specifies the configuration and policies for compute resources."
+      explanation: "Try again. An Azure DevTest Labs resource doesn't contain any compute resources. The lab only specifies the configuration and policies for compute resources."
     - content: "Create an Azure DevTest Labs resource, and then create an environment for each team."
       isCorrect: false
       explanation: "Try again. Environments in Azure DevTest Labs enable you to create ARM-based compute resources, such as PaaS services. The developers need a VM for their development activities."
