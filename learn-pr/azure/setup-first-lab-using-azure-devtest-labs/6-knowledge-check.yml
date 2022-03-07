@@ -14,28 +14,17 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Resources in Azure are hosted in an Azure region. The location of a lab VM is configured when:"
-    choices:
-    - content: "Adding a lab VM."
-      isCorrect: false
-      explanation: "Try again. The Azure region for a lab VM can't be configured."
-    - content: "Claiming a VM."
-      isCorrect: false
-      explanation: "Try again. The Azure region for a claimable VM can't be configured."
-    - content: "Creating a DevTest Lab."
-      isCorrect: true
-      explanation: "Correct. The location of the DevTest Lab determines the location of all VMs created in the lab."
   - content: "Eve needs to debug an application problem on Jim's developer VM. What is the right approach?"
     choices:
-    - content: "Eve selects the Azure DevTest Labs resource in the Azure portal, and connects to Jim's lab VM."
+    - content: "Eve selects the Azure DevTest Labs resource in the Azure portal, and then connects to Jim's lab VM."
       isCorrect: false
       explanation: "Try again. To connect to a lab VM, you first need to claim the VM. Only one person can claim a lab VM at a time. Because Jim already owns the lab VM, Eve can't connect to it."
-    - content: "Eve selects the Azure DevTest Labs resource in the Azure portal, and claims a new lab VM to debug the application."
+    - content: "Eve selects the Azure DevTest Labs resource in the Azure portal, and then claims a new lab VM."
       isCorrect: false
-      explanation: "Try again. Each lab VM is a separate VM instance. The VMs are created from the same base image but share no runtime state."
-    - content: "Jim unclaims the developer VM, after which Eve can claim the same VM to debug the application."
+      explanation: "Try again. Although each lab VM originates from the same base image, it's a separate VM instance and shares no runtime state with other VMs."
+    - content: "Jim first unclaims the developer VM, after which Eve can then claim the same VM."
       isCorrect: true
-      explanation: "Correct. Because only one person can connect to a VM at a time, Jim needs to be first unclaim the VM. Eve can then claim it and debug the application in the state it was for Jim."
+      explanation: "Correct. Only one person can connect to a VM at a time. Jim needs to first unclaim the VM to allow Eve to connect to it for debugging the application."
   - content: "The eCommerce company has a Node.js and Python development team. They use Linux VMs for their development activities. What is the best approach for configuring Azure DevTest Labs?"
     choices:
     - content: "Create an Azure DevTest Labs resource, and then create a pool of lab VMs for each team."
@@ -47,3 +36,14 @@ quiz:
     - content: "Create an Azure DevTest Labs resource, and then create an environment for each team."
       isCorrect: false
       explanation: "Try again. Environments in Azure DevTest Labs enable you to create ARM-based compute resources, such as PaaS services. The developers need a VM for their development activities."
+  - content: "Resources in Azure are hosted in an Azure region. The location of a lab VM is configured when:"
+    choices:
+    - content: "Adding a lab VM."
+      isCorrect: false
+      explanation: "Try again. When adding a VM to an Azure DevTest Labs resource, you can't configure the location of the VM."
+    - content: "Claiming a VM."
+      isCorrect: false
+      explanation: "Try again. When claiming an existing lab VM, you can't configure the location of the VM."
+    - content: "Creating a DevTest Lab."
+      isCorrect: true
+      explanation: "Correct. The location of the DevTest Lab determines the location of all VMs created in the lab."
