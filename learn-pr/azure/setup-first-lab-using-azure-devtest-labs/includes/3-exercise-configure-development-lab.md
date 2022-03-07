@@ -26,9 +26,11 @@ During the process, you'll:
     |Lab name     | *Enter a unique name*| Enter the name of your lab. The name must be unique within the subscription. |
     |Location     | Accept default value | The geographical region where the lab will be hosted. |
     |Public environments     | Off | A public environment repository contains a list of curated Azure Resource Manager templates. The development team uses a virtual machine. |
-    
+
+    Because the development team only uses VMs and no ARM-based resources for their development activities, you'll disable **public environments**.
+
     :::image type="content" source="../media/3-exercise-configure-development-lab/portal-create-basic-settings.png" alt-text="Screenshot that shows the basic settings tab when creating an Azure DevTest Labs resource.":::
-    
+
 1. On the **Auto-shutdown** tab, provide the following information:
 
     |Setting  |Value |Description  |
@@ -71,3 +73,5 @@ During the process, you'll:
     You should see the VM base images you selected at the top of the list:
 
     :::image type="content" source="../media/3-exercise-configure-development-lab/portal-select-marketplace-images.png" alt-text="Screenshot that shows how to select Azure Marketplace images for a lab." lightbox="../media/3-exercise-configure-development-lab/portal-select-marketplace-images.png":::
+
+You've now created an Azure DevTest Labs resource and configured it to match the needs of the developers and the IT organization. With this DevTest lab, users can create lab VMs using a list of allowed base images. To save costs, the VMs will automatically shut down at a specific time of the day.
