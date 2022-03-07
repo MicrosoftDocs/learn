@@ -1,10 +1,10 @@
-![Tech logo.](../media/tech-all.png)
+![Logo of UWP and WPF.](../media/tech-all.png)
 
 In this lesson, you'll learn how to create an app that shows the current time. You'll be introduced to the fundamentals of data binding, getting data from the code to the UI of your app, and refreshing it to update the clock display on the UI. This forms the basis for more complex data binding tasks in later lessons. So, let's get started!
 
 ::: zone pivot="uwp"
 
-![Tech logo.](../media/tech-uwp.png)
+![Logo of UWP and WPF. WPF is greyed out.](../media/tech-uwp.png)
 
 #### 1. Create the project
 If it's not running already, open Visual Studio 2017. Create a new C# Windows Universal project by using the **Blank App (Universal Windows)** template. Call it **DatabindingSample**. This is the project you will work with during the entire UI and Data module.
@@ -157,7 +157,7 @@ You now know how to use `{x:Bind`} to create a fast and automatic way of getting
 
 ::: zone pivot="wpf"
 
-![Tech logo.](../media/tech-wpf.png)
+![Logo of UWP and WPF. UWP is greyed out.](../media/tech-wpf.png)
 
 #### 1. Create the project
 If it's not running already, open Visual Studio 2017. Create a new C# Windows Universal project by using the **WPF App (.NET Framework)** template. Call it **DatabindingSampleWPF**, and then select **OK**. This is the project you will work with during the entire UI and Data module.
