@@ -17,7 +17,7 @@ In Azure Machine Learning, you can deploy a service as an Azure Container Instan
     - **Enable authentication**: Selected
 
 4. Wait for the deployment to start - this may take a few seconds. Then, in the **Model summary** section, observe the **Deploy status** for the **predict-rentals** service, which should be **Running**. Wait for this status to change to **Successful**. You may need to select **&#8635; Refresh** periodically.
-5. In Azure Machine Learning studio, view the **Endpoints** page and select the **predict-rentals** real-time endpoint. Then select the **Consume** tab and note the following information there. You need this information to connect to your deployed service from a client application.
+5. In Azure Machine Learning studio, view the **Endpoints** page and select the **predict-rentals** real-time endpoint. Then select the **Consume** tab and note the following information there. If you do not see the **Consume** tab, the deployment is not completely finished, you will need to wait and refresh the page. You need the information from the **Consume** tab to connect to your deployed service from a client application.
   
     - The REST endpoint for your service
     - the Primary Key for your service
@@ -80,11 +80,14 @@ Now that you've deployed a service, you can test it using some simple code.
 
 6. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the REST endpoint for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_ENDPOINT.
 7. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the Primary Key for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
-8. Save the notebook, Then use the **&#9655;** button next to the cell to run the code. You will get predictions for the number of bicycle rentals expected per day. 
+8. Locate the banner notification above the code that asks for authentication before using any Azure SDK. Click on **Authenticate** and sign in to your Azure account if asked.  
+   > ![Click on the Authenticate button to use the Azure SDK.](../media/authenticate-1.png)
+
+9. Save your notebook, then use the **&#9655;** button next to the cell to run the code. You will get predictions for the number of bicycle rentals expected per day. 
     
     > [!div class="centered"]
     > ![Run the code to get predictions for number of bicycle rentals.](../media/example-output.png)
 
-9. Verify that predicted number of rentals for each day in the five day period are returned. 
+10. Verify that predicted number of rentals for each day in the five day period are returned. 
 
 Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological _features_. In this case, the _labels_ are number of bicycle rentals.  

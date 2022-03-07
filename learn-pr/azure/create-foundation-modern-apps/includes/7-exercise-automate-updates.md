@@ -26,10 +26,6 @@ There are several template yaml files available in the code repository. For this
 
 1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
 
-1. In the file **`azuresqldatabase.yml`** update `bus-server.database.windows.net` to the name of your Azure SQL Database logical server (for example, **bus-server123456.database.windows.net**).
-
-1. Save the file.
-
 1. Review the template and seek to understand what the workflow will do, and how it will update the database.
 
 ## Push commits and monitor results using Visual Studio Code and GitHub

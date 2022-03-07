@@ -3,7 +3,7 @@ uid: learn.startups.build-team.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Review concepts on building a startup team. Topics include cofounder agreements, founder vesting, diversity, and hiring decisions.
+  description: Review concepts for building a startup team. Topics include cofounder agreements, founder vesting, diversity, and hiring decisions.
   ms.date: 02/11/2022
   author: ryanmesches
   ms.author: ryanmesches
@@ -12,15 +12,15 @@ metadata:
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "When considering someone as a potential cofounder, which of these attributes is likely to be most valuable?"
+  - content: "When you're considering someone as a potential cofounder, which of these attributes is likely to be most valuable?"
     choices:
-    - content: "Graduated from an ivy-league school."
+    - content: "Graduated from an Ivy League school."
       isCorrect: false
       explanation: "Incorrect. Other attributes of potential cofounders are more important than college degrees."
     - content: "Has an IQ of 160 or higher."
       isCorrect: false
       explanation: "Incorrect. Other attributes of potential cofounders are more important than having a high IQ."
-    - content: "Has a bias towards action and a history of taking projects through to completion."
+    - content: "Has a bias toward action and a history of taking projects through to completion."
       isCorrect: true
       explanation: "Correct. Both attributes give startups an important competitive advantage."
     - content: "Has a great sense of humor."
@@ -38,7 +38,7 @@ quiz:
     - content: "Contractors are less likely to be committed to long-term value creation."
       isCorrect: false
       explanation: "Incorrect. Having workers who are committed to long-term value creation is advantageous. But it's not the only option."
-    - content: "Contractors' availability may change if they have other projects competing for their time."
+    - content: "Contractors' availability might change if they have other projects competing for their time."
       isCorrect: false
       explanation: "Incorrect. Having workers who are available when you need them is advantageous. But it's not the only option."
     - content: "All of the above."
@@ -71,7 +71,7 @@ quiz:
     - content: "A way for founders to sell their shares before the company achieves an exit."
       isCorrect: false
       explanation: "Incorrect. With founder vesting, each founder earns equity over time, contingent on their ongoing involvement and performance. When the company achieves an exit, vesting agreements usually allow for immediate vesting of unvested shares."
-    - content: "A way to protect the company in the event of an early departure of a cofounder."
+    - content: "A way to protect the company if a cofounder departs early."
       isCorrect: true
       explanation: "Correct. With founder vesting, each founder earns equity over time, contingent on their ongoing involvement and performance. Confounders who leave early typically own few or no shares."
 

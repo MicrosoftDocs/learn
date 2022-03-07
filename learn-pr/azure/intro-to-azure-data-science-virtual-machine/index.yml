@@ -22,6 +22,7 @@ roles:
   - administrator
 products: 
   - azure-machine-learning 
+  - azure-data-science-vm
 units:
   - learn.azure.intro-to-data-science-virtual-machine.introduction
   - learn.azure.intro-to-data-science-virtual-machine.data-science-virtual-machine

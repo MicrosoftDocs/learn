@@ -18,8 +18,8 @@ The three indexing modes you can use with Azure Cosmos DB are:
 
 One scenario for the Orders collection workload is write-intensive:
 
-- Orders are placed or updated at any time of the day.
-- Reports are generated less frequently for the quantity and type of items sold.
+- Orders are placed or updated at any time of the day
+- Reports are generated less frequently for the quantity and type of items sold
 
 In this case, you might choose to keep the indexing on all properties of the documents, but set the indexing mode to **lazy**.
 
@@ -27,7 +27,7 @@ In this case, you might choose to keep the indexing on all properties of the doc
 
 You can change the index configuration at any time:
 
-- If you add properties to the index configuration, Azure Cosmos DB parses your collections, and updates the index. The index uses more storage.
+- If you add properties to the index configuration, Azure Cosmos DB parses your collections and updates the index. The index uses more storage.
 - If you reduce the number of properties from the index, Azure Cosmos DB removes this information from your index. The index uses less storage.
 
 ## Add document properties to the index

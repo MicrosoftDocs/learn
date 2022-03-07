@@ -6,8 +6,8 @@ metadata:
   title: Overview of the Azure Speech-to-text API
   description: Learn about Azure Speech Services and the Speech-to-text API
   ms.date: 07/20/2021
-  author: aprilspeight
-  ms.author: apspeigh
+  author: eric-urban
+  ms.author: eur
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

@@ -29,6 +29,7 @@ roles:
 - student
 products:
 - azure
+- azure-clis
 units:
 - learn.student-evangelism.bash-introduction.0-introduction
 - learn.student-evangelism.bash-introduction.1-what-is-bash
