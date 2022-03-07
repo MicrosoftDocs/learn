@@ -227,7 +227,7 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
    :::image type="content" source="../media/3-visual-studio-code-main-bicep.png" alt-text="Screenshot of Visual Studio Code that shows the main dot bicep file in the deploy folder.":::
 
-1. Near the top of the *main.bicep* file, add a new variable for the name of the queue:
+1. Below the parameters, add a new variable for the name of the queue:
 
    :::code language="bicep" source="code/3-main-final.bicep" range="17-18" highlight="2" :::
 
