@@ -57,7 +57,7 @@ GitHub Actions will be used to publish the container image to ACR. To configure 
 1. Run the following command to create an Azure Active Directory service principal to allow access from GitHub:
 
     ```azurecli
-    az ad sp create-for-rbac --sdk-auth --name http://eshop-learn-sp --role Contributor
+    az ad sp create-for-rbac --sdk-auth --name http://eshop-learn-sp --role Contributor --scopes /subscriptions/<SUBSCRIPTION-ID>
     ```
 
     A variation of the following output appears:
