@@ -4,7 +4,7 @@ In this exercise, you'll learn how to use virtual environments as a way to not a
 
 Create a virtual environment by using `venv`.
 
-1. Run `python -m venv env` in your terminal:
+1. Open a new Bash window and run `python -m venv env`:
 
    ```bash
    python -m venv env

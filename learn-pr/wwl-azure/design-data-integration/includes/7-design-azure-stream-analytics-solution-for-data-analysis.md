@@ -2,7 +2,7 @@ Tailwind Traders, a fictitious home improvement retailer has begun the digital t
 
 On further analysis, you find that they would like this data present in an existing Power BI visualization dashboard.
 
-How will you help address this problem? Let us see if Azure Stream Analytics can help in this scenario.
+How will you help address this problem? Azure Stream Analytics can help in this scenario.
 
  
 

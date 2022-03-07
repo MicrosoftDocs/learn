@@ -14,7 +14,7 @@ A **block** is simply a collection of bytes. The **block size** indicates how ma
 
 A **block device** provides an OS access to blocks through an interface. In practice, block devices can be physical or virtual, and can be local or remote. A taxonomy of block devices, along with examples, is presented below:
 
-|Local|Remote|
+|Local|Remote| Storage system |
 |--|--|--|
 |Physical|Internal: HDD, SSD, optical, tape drives. External: direct-attached storage (DAS), removable drives (USB, Firewire, eSATA) |SAN (with one-to-one mapping)|
 |Virtual|Software block devices: virtual drives (VHD, VDI, VMDK, CDROM, etc.), RAMDisk |SAN (with thin provisioning, deduplication). DRBD, block device services: Amazon EBS|

@@ -1,8 +1,5 @@
 In this exercise, you'll investigate Delivery Cadence.
 
-> [!NOTE]
-> *Before starting this exercise, make sure you've done the steps in the introduction prerequisites session.*
-
 ## Steps
 
 Let's now look at when our release pipeline is used to create deployments. Mainly, it will involve the use of triggers.

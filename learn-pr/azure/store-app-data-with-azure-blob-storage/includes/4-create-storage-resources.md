@@ -2,7 +2,7 @@ After you have an idea about how you're going to store data across storage accou
 
 ### Storage accounts
 
-Storage account creation is an administrative/management activity that takes place before deploying and running your app. Accounts are usually created by a deployment or environment setup script, an Azure Resource Manager template, or manually by an admin. Apps other than administrative tools generally should not have permissions to create storage accounts.
+Storage account creation is an administrative/management activity that takes place before deploying and running your app. Accounts are usually created by a deployment or environment setup script, an Azure Resource Manager template, or manually by an admin. Generally, apps other than administrative tools shouldn't have permissions to create storage accounts.
 
 ### Containers
 
@@ -12,7 +12,7 @@ For apps that rely on a known set of containers with hard-coded or preconfigured
 
 ## Exercise
 
-You're going to complete an unfinished app by adding code to use Azure Blob Storage. This exercise is more about exploring the Blob Storage API than it is about designing an organization and naming scheme, but here's a quick overview of the app and how it stores data.
+You're going to complete an unfinished app by adding code to use Azure Blob Storage. This exercise is more about exploring the Blob Storage API than about designing an organization and naming scheme, but here's a quick overview of the app and how it stores data.
 
 ::: zone pivot="csharp"
 
@@ -34,7 +34,7 @@ Let's set up the storage infrastructure for your app.
 
 ### Storage account
 
-You'll use Azure Cloud Shell with the Azure CLI to create a storage account. You'll need to provide a unique name for the storage account &mdash; make a note of it for later.  Replace [your-unique-storage-account-name] with a name you choose.
+You'll use Azure Cloud Shell with the Azure CLI to create a storage account. You'll need to provide a unique name for the storage account&mdash;make a note of it for later. Replace [your-unique-storage-account-name] with a name you choose.
 
 To create the storage account, run this command. Remember to enter your unique storage account name in the code.
 
