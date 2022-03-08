@@ -61,10 +61,10 @@ status = tx_timer_create
              150, 200, TX_ACTIVATE);
 ```
 
-### Key
+### Key to terms
 
 - `&my_timer` — pointer to the application timer control block (TCB) structure
-- `"recurring_timer"` —  pointer to a string with the application timer name
+- `recurring_timer` —  pointer to a string with the application timer name
 - `recurring_timer_function` — application timer's entry function
 - `0x34` — application timer entry function parameter to be used by the developer
 - `150` —  parameter specifying the number of timer-ticks for the first timer expiration
