@@ -23,7 +23,7 @@ Now let's get started.
 
 ::: zone pivot="uwp"
 
-![Logo for UWP and WPF.  WPF is greyed out.](../media/tech-uwp.png)
+![Logo for UWP and WPF.  WPF appears dimmed.](../media/tech-uwp.png)
 
 #### Create a new project
 
@@ -466,7 +466,7 @@ In the next unit, we put these layouts to use. We add commonly used controls lik
 
 ::: zone pivot="wpf"
 
-![Logo for UWP and WPF. UWP is greyed out.](../media/tech-wpf.png)
+![Logo for UWP and WPF. UWP appears dimmed.](../media/tech-wpf.png)
 
 #### Create a new project
 

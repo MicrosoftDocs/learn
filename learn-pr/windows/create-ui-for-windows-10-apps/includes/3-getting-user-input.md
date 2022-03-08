@@ -23,7 +23,7 @@ Let's get started.
 
 ::: zone pivot="uwp"
 
-![Logo for UWP and WPF. WPF is greyed out.](../media/tech-uwp.png)
+![Logo for UWP and WPF. WPF appears dimmed.](../media/tech-uwp.png)
 
 #### Create a new project
 
@@ -1346,7 +1346,7 @@ The finished result looks like this image:
 
 ::: zone pivot="wpf"
 
-![Logo for UWP and WPF. UWP is greyed out.](../media/tech-wpf.png)
+![Logo for UWP and WPF. UWP appears dimmed.](../media/tech-wpf.png)
 
 #### Create a new project
 

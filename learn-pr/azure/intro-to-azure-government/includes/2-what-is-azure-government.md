@@ -49,7 +49,7 @@ Before we go further, let's highlight the key benefits of using Azure Government
 
      Azure has the deepest and most comprehensive compliance coverage in the industry.
 
-     ![Screenshot of compliance coverage in Global, US Government, Industry, and Regional sectors.](../media/compliance-matrix.png)
+     ![Screenshot that shows the compliance coverage in Global, US Government, Industry, and Regional sectors.](../media/compliance-matrix.png)
    :::column-end:::
 :::row-end:::
 
