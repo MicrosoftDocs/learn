@@ -2,7 +2,7 @@ Components in web applications give developers the ability to reuse portions of 
 
 In this unit, you'll learn how to create a Razor class library and then use it to share rendered and static content for Blazor applications to customize and display.
 
-## Defining Razor class libraries
+## About Razor class libraries
 
 A Razor class library is a .NET project type that contains Razor components, pages, HTML, Cascading Style Sheet (CSS) files, JavaScript, images, and other static web content that can be referenced by a Blazor application. Like other .NET class library projects, Razor class libraries can be bundled as a NuGet package and shared on NuGet package repositories such as NuGet.org.
 
@@ -28,9 +28,9 @@ This template delivers an initial component named *Component1*, which contains s
 
 ![Screenshot of Visual Studio Solution Explorer, showing the default project contents.](../media/solution-structure.png)
 
-### Differences between class library and Razor class library
+### Differences between a class library and a Razor class library
 
-A class library is a common package delivery structure in .NET applications, and the Razor class library is similar in structure with a few other features configured in the project file.
+A class library is a common package delivery structure in .NET applications, and a Razor class library is similar in structure with a few other features configured in the project file.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk.Razor">
