@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This unit has three questions to test your knowledge of the learning objectives
-  ms.date: 03/31/2021
+  ms.date: 02/25/2022
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
   ms.prod: learning-github
+  ms.custom: devdivchpfy22
 durationInMinutes: 3
 quiz:
   questions:
