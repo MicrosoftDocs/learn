@@ -1,6 +1,6 @@
 ::: zone pivot="uwp"
 
-![Logo of UWP and WPF. WPF is greyed out.](../media/tech-uwp.png)
+![Logo of UWP and WPF. WPF appears dimmed.](../media/tech-uwp.png)
 
 So far, you've only used data binding to display and edit the properties of a single object. In this lesson, you'll apply data binding to display a collection of objects. To make things simple, these objects will be colors. More specifically, they'll be multiple instances of the `ColorDescriptor` class.
 
@@ -41,7 +41,7 @@ Replace the default contents of the ColorDescriptor.cs file with the preceding c
 
 To display the color list, we'll use a new XAML page. Right-click the `DatabindingSample` project in **Solution Explorer**, and select **Add / New Item**. Choose **Blank Page** from the list of available items, and then enter `ColorList` as the name. Select **Add** to create the page.
 
-![Screenshot shows Package Layout selected under Visual C Sharp, in the Add New Item dialogue box.](../media/create-colorlist-page.png)
+![Screenshot that shows Package Layout selected under Visual C Sharp, in the Add New Item dialog box.](../media/create-colorlist-page.png)
 
 #### 3. Set the startup page
 
@@ -208,7 +208,7 @@ The next lesson illustrates how you can select items from a `ListBox` or a dropd
 
 ::: zone pivot="wpf"
 
-![Logo of UWP and WPF. UWP is greyed out.](../media/tech-wpf.png)
+![Logo of UWP and WPF. UWP appears dimmed.](../media/tech-wpf.png)
 
 So far, you've only used data binding to display and edit the properties of a single object. In this lesson, you'll apply data binding to display a collection of objects. To make things simple, these objects will be colors. More specifically, they'll be multiple instances of the `ColorDescriptor` class.
 

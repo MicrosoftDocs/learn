@@ -4,7 +4,7 @@ In this lesson, you'll learn how to create an app that shows the current time. Y
 
 ::: zone pivot="uwp"
 
-![Logo of UWP and WPF. WPF is greyed out.](../media/tech-uwp.png)
+![Logo of UWP and WPF. WPF appears dimmed.](../media/tech-uwp.png)
 
 #### 1. Create the project
 If it's not running already, open Visual Studio 2017. Create a new C# Windows Universal project by using the **Blank App (Universal Windows)** template. Call it **DatabindingSample**. This is the project you will work with during the entire UI and Data module.
@@ -157,7 +157,7 @@ You now know how to use `{x:Bind`} to create a fast and automatic way of getting
 
 ::: zone pivot="wpf"
 
-![Logo of UWP and WPF. UWP is greyed out.](../media/tech-wpf.png)
+![Logo of UWP and WPF. UWP appears dimmed.](../media/tech-wpf.png)
 
 #### 1. Create the project
 If it's not running already, open Visual Studio 2017. Create a new C# Windows Universal project by using the **WPF App (.NET Framework)** template. Call it **DatabindingSampleWPF**, and then select **OK**. This is the project you will work with during the entire UI and Data module.

@@ -17,13 +17,13 @@ Let's get started.
 
 ::: zone pivot="uwp"
 
-![Logo of UWP and WPF. WPF is greyed out.](../media/tech-uwp.png)
+![Logo of UWP and WPF. WPF appears dimmed.](../media/tech-uwp.png)
 
 #### Create a new project
 
 With Visual Studio open, create a UWP C# project. Give the project a meaningful name for this lesson. An example is **UsingControlsApp.Uwp**.
 
-![Screenshot that shows Visual Studio's New Project window. Blank App is selected in the Windows Universal option under Visual C Sharp.](../media/new-project-uwp.png)
+![Screenshot that shows the Visual Studio New Project window. Blank App is selected in the Windows Universal option under Visual C Sharp.](../media/new-project-uwp.png)
 
 #### Understand size
 
@@ -485,13 +485,13 @@ You've got the fundamentals of some basic layouts and adding controls to the UI.
 
 ::: zone pivot="wpf"
 
-![Logo of UWP and WPF. UWP is greyed out.](../media/tech-wpf.png)
+![Logo of UWP and WPF. UWP appears dimmed.](../media/tech-wpf.png)
 
 #### Create a new project
 
 With Visual Studio open, create a WPF C# project. Give the project a meaningful name for this lesson. An example is **UsingControlsApp.Wpf**.
 
-![Screenshot that shows Visual Studio's New Project window. WPF App is selected. Name field is highlighted with an arrow pointed at the OK button.](../media/new-project-wpf.png)
+![Screenshot that shows the Visual Studio New Project window. WPF App is selected. Name field is highlighted with an arrow pointed at the OK button.](../media/new-project-wpf.png)
 
 #### Understand size
 

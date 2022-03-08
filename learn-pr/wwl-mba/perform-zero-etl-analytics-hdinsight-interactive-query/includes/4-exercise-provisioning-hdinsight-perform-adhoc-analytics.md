@@ -54,7 +54,7 @@ Now that your Storage account has been created, it’s time to deploy the HDInsi
 
 1. Click **Create a resource > Analytics > Azure HDInsight**.
 
-    ![Screenshot that shows the Azure Portal with Create a resource, Analytics, and Azure HD Insight highlighted.](../media/4-create-a-resource-hdinsight.png)
+    ![Screenshot that shows the Azure portal with Create a resource, Analytics, and Azure H D Insight highlighted.](../media/4-create-a-resource-hdinsight.png)
 
 2. On the Basics page, click **Go to classic create experience**.
 
@@ -62,7 +62,7 @@ Now that your Storage account has been created, it’s time to deploy the HDInsi
 
 3. On the HDInsight page, click **Custom (size, settings, apps)**.
 
-    ![Screenshot that shows the HD Insight page with Custom highlighted.](../media/4-custom-view.png)
+    ![Screenshot that shows the H D Insight page with Custom highlighted.](../media/4-custom-view.png)
 
 4.	On the Basics page, fill out the following values:
 
@@ -77,7 +77,7 @@ Now that your Storage account has been created, it’s time to deploy the HDInsi
 
 5. And then click **Next**.
 
-    ![Screenshot shows the HD Insight, Basics, and Cluster configuration pages with multiple fields highlighted.](../media/4-create-a-iq-hdinsight-cluster.png)
+    ![Screenshot shows the H D Insight, Basics, and Cluster configuration pages with multiple fields highlighted.](../media/4-create-a-iq-hdinsight-cluster.png)
 
 
 6. On the Security + networking page, click **Next**.
