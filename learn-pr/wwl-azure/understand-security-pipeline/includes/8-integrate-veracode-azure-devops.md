@@ -1,4 +1,4 @@
-Veracode is another example of an Azure DevOps Marketplace extension that you can integrate with your CI/CD pipeline to address Rugged DevOps security-related issues.
+Veracode is another example of an Azure DevOps Marketplace extension that you can integrate with your CI/CD pipeline to address Secure DevOps security-related issues.
 
 The *Veracode Application Security Platform* is a SaaS that automatically enables developers to scan an application for security vulnerabilities.
 

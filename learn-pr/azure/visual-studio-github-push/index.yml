@@ -2,8 +2,8 @@
 uid: learn.visual-studio-github-push
 metadata:
   title: Get Started with Git and GitHub in Visual Studio
-  description: In this module, we'll authenticate to GitHub, create a repository, and push the repository to GitHub using the Git tools in Visual Studio 2022. We'll add and modify files, stage and commit changes, and then finally push to your remote.
-  ms.date: 02/14/2022
+  description: In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2022. We'll add and modify files, stage and commit changes, and then finally push to your remote.
+  ms.date: 02/25/2022
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial

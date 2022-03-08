@@ -1,9 +1,10 @@
 Cross-cutting needs (or cross-cutting concerns) are aspects of the solution that affect the other subsystem within a solution and which cannot be separated from these subsystems.
 
-There are multiple cross-cutting needs for IoT solutions that are critical for success, including: 
-- Security requirements; including user management and auditing, device connectivity, in-transit telemetry, and at rest security.
-- Logging and monitoring for an IoT cloud application is critical for determining health and for troubleshooting failures both for individual subsystems and the application as a whole.
-- High availability and disaster recovery, which is used to rapidly recover from systemic failures.
+There are multiple cross-cutting needs for IoT solutions that are critical for success, including:
+
+ -  Security requirements; including user management and auditing, device connectivity, in-transit telemetry, and at rest security.
+ -  Logging and monitoring for an IoT cloud application is critical for determining health and for troubleshooting failures both for individual subsystems and the application as a whole.
+ -  High availability and disaster recovery, which is used to rapidly recover from systemic failures.
 
 :::image type="content" source="../media/m01-l02-cross-cutting-needs-subsystems-7d98fb39.png" alt-text="Diagram that shows the Azure IoT Architecture cross-cutting concerns and subsystems.":::
 

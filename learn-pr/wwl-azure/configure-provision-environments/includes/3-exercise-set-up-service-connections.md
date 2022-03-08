@@ -1,9 +1,7 @@
 In this exercise, you'll investigate Service Connections.
 
 > [!NOTE]
-> Before starting this exercise, ensure you've done the steps in the prerequisites section and the previous exercises.
-
-*To follow along with this walkthrough, you'll need to have an existing Azure subscription that contains an existing storage account.*
+> To follow along with this walkthrough, you'll need to have an existing Azure subscription that contains an existing storage account.
 
 ## Steps
 
@@ -50,6 +48,9 @@ For example, you might need to get your source code from GitHub. In this case, l
     Notice that what we are creating is a **Service Principal**. We'll be using the Service Principal for authenticating to Azure. At the top of the window, there's also an option to set up Managed Identity Authentication instead.
     
     The Service Principal is a service account that only has permissions in the specific subscription and resource group. It makes it a safe way to connect from the pipeline.
+    
+    > [!IMPORTANT]
+    > When you create a service connection with Azure, the service principal gets a contributor role to the subscription or resource group. It's not enough to upload data to blob storage for the service principal. You must explicitly add the service principal to the storage account blob contributor role. Otherwise, the release gets failed with an authorization permission mismatch error.
 
 5.  Click **OK** to create it. It will then be shown in the list.
 
@@ -83,13 +84,10 @@ For example, you might need to get your source code from GitHub. In this case, l
     :::image type="content" source="../media/06-10-added-file-copy-d3230ff3.png" alt-text="Added file copy.":::
 
 
-10. Click the **File Copy** task to see the required settings.
-
-> [!NOTE]
-> Use the latest Task version.<br>
-
+10. Click the **File Copy** task to see the required settings. Select the latest task version.
+    
     :::image type="content" source="../media/06-11-required-settings-1f427416.png" alt-text="Required settings.":::
-
+    
 
 11. Set the **Display Name** to **Backup website zip file**, click the ellipsis beside **Source, locate** the file as follows, and click **OK** to select it.
 

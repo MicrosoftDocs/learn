@@ -1,4 +1,4 @@
-Checkmarx CxSAST is another example of an extension from the Azure DevOps Marketplace that you can apply to your CI/CD pipeline to address Rugged DevOps security-related issues.
+Checkmarx CxSAST is another example of an extension from the Azure DevOps Marketplace that you can apply to your CI/CD pipeline to address Secure DevOps security-related issues.
 
 Checkmarx CxSAST is designed to identify, track, and fix technical and logical security flaws.
 

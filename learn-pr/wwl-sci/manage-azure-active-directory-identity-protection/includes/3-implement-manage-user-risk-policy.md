@@ -1,18 +1,34 @@
 There are two risk policies that can be enabled in the directory:
 
-- Sign-in risk policy: The sign-in risk policy detects suspicious actions that come along with the sign-in. It is focused on the sign-in activity itself and analyzes the probability that the sign-in may not have been performed by the user.
+ -  Sign-in risk policy: The sign-in risk policy detects suspicious actions that come along with the sign-in. It is focused on the sign-in activity itself and analyzes the probability that the sign-in may not have been performed by the user.
 
-[ ![Security overview page to enable user and sign-in risk policies](../media/identity-protection-security-overview.png) ](../media/identity-protection-security-overview.png#lightbox)
+:::image type="content" source="../media/identity-protection-security-overview-af1648d0.png" alt-text="Security overview page to enable user and sign-in risk policies":::
 
-- User risk policy: The user risk policy detects the probability that a user account has been compromised by detecting risk events that are atypical of a user's behavior.
+
+ -  User risk policy: The user risk policy detects the probability that a user account has been compromised by detecting risk events that are atypical of a user's behavior.
 
 Both policies work to automate the response to risk detections in your environment and allow users to self-remediate when risk is detected.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| In this video, learn how to deploy Azure AD Identity Protection by configuring risk-based policies (user risk and sign-in risk) in your organization. You’ll also learn best practices on how to gradually roll out these policies and MFA registration in your organization.|
+:::row:::
+  :::column:::
+    
+  :::column-end:::
+  :::column:::
+    
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    :::image type="content" source="../media/video-icon-4c0a5b11.png" alt-text="Icon indicating play video":::
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MxmD]
+  :::column-end:::
+  :::column:::
+    In this video, learn how to deploy Azure AD Identity Protection by configuring risk-based policies (user risk and sign-in risk) in your organization. You’ll also learn best practices on how to gradually roll out these policies and MFA registration in your organization.
+  :::column-end:::
+:::row-end:::
+
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MxmD]
 
 ## Prerequisites
 
@@ -31,4 +47,3 @@ Choosing a **High** threshold reduces the number of times a policy is triggered 
 All of the policies allow for excluding users such as your emergency access or break-glass administrator accounts. Organizations may determine they need to exclude other accounts from specific policies based on the way the accounts are used. All exclusions should be reviewed regularly to see if they are still applicable.
 
 Configured trusted network locations are used by Identity Protection in some risk detections to reduce false positives.
-
