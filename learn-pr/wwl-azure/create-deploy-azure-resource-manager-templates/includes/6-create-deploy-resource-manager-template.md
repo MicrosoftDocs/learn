@@ -97,7 +97,7 @@ Follow the steps below to update the name property of the storage resource to us
 
 1. Enter a square bracket `[`, which produces a list of Azure Resource Manager template functions. Select **parameters** from the list.
 
-1. Enter a single quote `'` inside of the round brackets produces a list of all parameters defined in the template and select **storageAccountName**.
+1. Add `()` at the end of **parameters** and select **storageAccountName** from the pop-up. If the list of parameters does not show up automatically you can enter a single quote `'` inside of the round brackets to display the list.
 
 The resources block of the template should now be similar to the example below.
 
