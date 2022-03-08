@@ -1,4 +1,4 @@
-Developers can choose from two memory managements techniques in Azure RTOS ThreadX: memory byte pools and memory block pools.
+You can choose from two memory management techniques in ThreadX: memory byte pools and memory block pools.
 
 ## Memory byte pools
 
