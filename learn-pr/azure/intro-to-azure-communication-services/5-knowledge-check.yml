@@ -67,6 +67,9 @@ quiz:
     - content: "Australia is too far away to use ACS."
       isCorrect: false
       explanation: "ACS is a global cloud service provider. ACS is only available in Australia. ACS currently has some geographical restrictions for its features. This is a known issue and geographical coverage will be increased in the future."
+    - content: "The roaming charges for sending SMS to Australia will be too high."
+      isCorrect: false
+      explanation: "ACS does not currently support sending SMS to Australia. ACS currently has some geographical restrictions for its features. This is a known issue and geographical coverage will be increased in the future."
   - content: "A new company is working on a brand-new device for communication it also runs a proprietary programming language. Why is ACS not a good choice for this scenario?"
     choices:
     - content: "The new business is risky and might fail."
@@ -86,3 +89,6 @@ quiz:
     - content: "ACS cannot be used for communication reasons."
       isCorrect: false
       explanation: "ACS is all about communication. Data processing isn't a part of ACS though. You'll need to use other Azure offerings."
+    - content: "ACS is not suitable for live data"
+      isCorrect: false
+      explanation: "ACS can perfectly handle live communications, but it is not for data processing. You'll need to use other Azure offerings."
