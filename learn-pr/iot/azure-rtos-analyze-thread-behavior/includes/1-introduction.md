@@ -5,7 +5,7 @@ To accomplish this purpose, we'll modify the code for the Hello World Project by
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Explore the features and uses of Application Timers and the Thread Info Get services.
 - Review the purpose of the internal system clock.
