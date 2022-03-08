@@ -25,13 +25,11 @@ After completing this module, you'll understand:
 
 ## Prerequisites
 
-* Any Python development environment.
-* The latest version of the [Python SDK for Azure Quantum](/azure/quantum/optimization-install-sdk?azure-portal=true).
-* An Azure Quantum workspace.
+- An Azure account with an active subscription. 
+- An Azure Quantum workspace with the **Microsoft QIO** provider enabled. 
 
 If you don't have these tools yet, we recommend that you begin with the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module.
 
 > [!NOTE]
 > You can get a $500 USD (or equivalent) free credit for use with IonQ and Quantinuum hardware by selecting the **Azure Quantum Credits** plan when creating your workspace. If you need more credits, you may apply to the [Azure Quantum Credits program](https://aka.ms/aq/credits).
->
-> Note that you can always elect to complete the lessons in this module while skipping the job submission to Azure Quantum if you would like to avoid any charges to your Azure account.
+
