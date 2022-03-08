@@ -4,10 +4,10 @@ Application timers enable applications to execute application functions at speci
 
 ## Application timer attributes
 
-Every application timer must have:
+Every application timer must have the following items.
 
-|  |  |
-| -- | ------ |
+| Attribute | Description |
+|--- | ------ |
 | Control block | Contains essential system information. |
 | Timer name | Primarily used for identification purposes. |
 | Expiration function | Executed when the timer expires.|
