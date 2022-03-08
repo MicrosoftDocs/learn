@@ -2,55 +2,6 @@ You're ready to connect to Earth's Azure Quantum services and start solving prob
 
 In this unit, you learn how to submit a job to Azure Quantum.
 
-## Install the quantum extension
-
-Azure Quantum uses the quantum extension for the Azure CLI to enable submitting Q# programs from the command line. Now you're going to install and configure the Azure CLI extension on your system to use Azure Quantum. To install it, follow these steps:
-
-1. Ensure you've installed the [Azure CLI](/cli/azure/install-azure-cli) (version 2.17.1 or higher).
-
-1. Open a command prompt, and then run the following command:
-
-   ```azurecli
-   az extension add -n quantum
-   ```
-
-## Create a workspace
-
-First, you need to create an Azure Quantum workspace in your Azure subscription and select the providers you want to use, if you haven't already. Follow these steps:
-
-1. Open the [Azure portal](https://ms.portal.azure.com/?azure-portal=true), and sign in to your account.
-
-1. Select **Create a resource**, and then search for **Azure Quantum**. On the results page, you should see a tile for the **Azure Quantum** service.
-
-   :::image type="content" source="../media/3-azure-quantum-preview-search.png" alt-text="Tile for the Azure Quantum preview service." border="false":::
-
-1. Select **Azure Quantum**, and then select **Create**. A form opens where you can create a workspace.
-
-   :::image type="content" source="../media/3-azure-quantum-preview-create.png" alt-text="Screenshot showing option to create resource for the Azure Quantum preview service." border="false":::
-
-1. Fill out the details of your workspace:
-   - **Subscription**: The subscription that you want to associate with this workspace.
-   - **Resource group**: The resource group that you want to assign this workspace to.
-   - **Name**: The name of your workspace.
-   - **Region**: The region for the workspace.
-   - **Storage Account**: The Azure storage account to store your jobs and results. If you don't have an existing storage account, select **Create a new storage account** and complete the necessary fields. We recommend using the default values.
-
-   :::image type="content" source="../media/3-azure-quantum-properties.png" alt-text="Screenshot showing the properties for the Azure Quantum workspace." border="false":::
-
-   > [!NOTE]
-   > You must be an Owner of the selected resource group to create a new storage account. For more information about how resource groups work in Azure, see [Control and organize Azure resources with Azure Resource Manager](/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true).
-
-1. After you complete the information, select the **Providers** tab to add providers to your workspace. A provider gives you access to a quantum service, which can be quantum hardware, a quantum simulator, or an optimization service. In this case, we're interested in quantum hardware. We'll use the IonQ provider example, but the steps should be valid for other quantum hardware providers.
-To learn more about providers, see [List of quantum computing targets on Azure Quantum](/azure/quantum/qc-target-list).
-
-1. Add at least the IonQ provider, and then select **Review + create**.
-
-1. Review the settings and approve the *Terms and Conditions of Use* of the selected providers. If everything is correct, select **Create** to create your workspace.
-
-   :::image type="content" source="../media/3-azure-quantum-preview-terms.png" alt-text="Screenshot showing steps to review and create the workspace." border="false":::
-
-> [!NOTE]
-> This tutorial is using the IonQ targets as a [Quantum Processing Unit](/azure/quantum/concepts-targets-in-azure-quantum) example. To complete it, you need to have access to IonQ targets on your subscription. If your subscription doesn't have access to quantum computing providers but you still want to try quantum computing programs, you can simulate a quantum computer locally using the Quantum Development Kit. For more information, go to the [Quantum Development Kit set-up guide](/azure/quantum/install-overview-qdk).
 
 ## Set up the project and write your program
 
