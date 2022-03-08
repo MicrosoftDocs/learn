@@ -25,12 +25,14 @@ During the process, you'll:
 
    :::code language="bicep" source="code/3-template.bicep" range="7,12,17,20-23,26-29" :::
 
-   You're creating several parameters here, and they use a mixture of types. You're defining default values for each parameter. Some of the default values include string interpolation, the `uniqueString()` function, and the `resourceGroup()` function.
+   You're creating several parameters here, and they use a mixture of types. You're defining default values for each parameter. Some of the default values include string interpolation and the `uniqueString()` function.
 
    > [!TIP]
    > The `uniqueString()` function is useful for creating globally unique resource names. It returns a string that's the same on every deployment to the same resource group, but different when you deploy to different resource groups or subscriptions.
 
    You're also defining variables that construct the names of the Azure App Service plan and App Service app. Their values include some of the parameters you've specified. Parameter values can be overridden by the user who executes the deployment, but the values of the variables can't be overridden.
+
+   [!INCLUDE [Sandbox location note](../../includes/azure-template-bicep-exercise-sandbox-location.md)]
 
 1. In the *main.bicep* file in Visual Studio Code, add the following code to the bottom of the file:
 
