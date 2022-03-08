@@ -17,7 +17,7 @@ During the process, you'll:
 
 1. On the **DevTest Labs** page, select **+ Create**.
 
-1. On the **Create DevTest Lab** page, under the **Basic Settings** tab, provide the following information:
+1. On the **Create DevTest Labs** page, under the **Basic Settings** tab, provide the following information:
 
     |Setting  |Value |Description  |
     |---------|---------|---------|
@@ -29,7 +29,7 @@ During the process, you'll:
 
     Because the development team only uses VMs and no ARM-based resources for their development activities, you'll disable **public environments**.
 
-    :::image type="content" source="../media/3-exercise-configure-development-lab/portal-create-basic-settings.png" alt-text="Screenshot that shows the basic settings tab when creating an Azure DevTest Labs resource.":::
+    :::image type="content" source="../media/portal-create-basic-settings.png" alt-text="Screenshot that shows the basic settings tab when creating an Azure DevTest Labs resource.":::
 
 1. On the **Auto-shutdown** tab, provide the following information:
 
@@ -40,7 +40,7 @@ During the process, you'll:
     |Time zone     | *Select your time zone*| Select a suitable time zone. |
     |Send notification before auto-shutdown     | No | When the VMs are shut down, Azure DevTest Labs can send a notification by email or invoke a web hook.  |
 
-    :::image type="content" source="../media/3-exercise-configure-development-lab/portal-create-auto-shutdown.png" alt-text="Screenshot that shows the auto shutdown tab when creating an Azure DevTest Labs resource.":::
+    :::image type="content" source="../media/portal-create-auto-shutdown.png" alt-text="Screenshot that shows the auto shutdown tab when creating an Azure DevTest Labs resource.":::
 
 1. Select **Review + Create** to go to the review pane, and then select **Create**. The portal shows the deployment pane, where you can view the status of your deployment.
 
@@ -48,30 +48,30 @@ During the process, you'll:
 
 1. In the Azure portal, enter **DevTest Labs** in the search text box, and then select **DevTest Labs** from the list of services.
 
-    :::image type="content" source="../media/3-exercise-configure-development-lab/search-devtest-labs.png" alt-text="Screenshot that shows the search box in the Azure portal to search Azure DevTest Labs resources.":::
+    :::image type="content" source="../media/search-devtest-labs.png" alt-text="Screenshot that shows the search box in the Azure portal to search Azure DevTest Labs resources.":::
 
 1. In the list of labs, you should see your Azure DevTest Labs resource.
 
-    :::image type="content" source="../media/3-exercise-configure-development-lab/devtest-labs-list.png" alt-text="Screenshot that shows the list of Azure DevTest Labs resources.":::
+    :::image type="content" source="../media/devtest-labs-list.png" alt-text="Screenshot that shows the list of Azure DevTest Labs resources.":::
 
 ## Specify allowed images for creating VMs
 
 1. On the home page of your Azure DevTest Labs resource, select **Configuration and policies**.
 
-    :::image type="content" source="../media/3-exercise-configure-development-lab/configuration-policies-menu.png" alt-text="Screenshot that shows the configuration & policies menu for Azure DevTest Labs.":::
+    :::image type="content" source="../media/configuration-policies-menu.png" alt-text="Screenshot that shows the configuration & policies menu for Azure DevTest Labs.":::
 
 1. On the **Configuration and policies** pane, under **Virtual machine bases**, select **Marketplace images**.
 
-    :::image type="content" source="../media/3-exercise-configure-development-lab/marketplace-images-menu.png" alt-text="Screenshot that shows the marketplace images settings menu for Azure DevTest Labs.":::
+    :::image type="content" source="../media/marketplace-images-menu.png" alt-text="Screenshot that shows the marketplace images settings menu for Azure DevTest Labs.":::
 
 1. Select **No** for **Allow all Azure Marketplace images as virtual machine base images**.
 
-    :::image type="content" source="../media/3-exercise-configure-development-lab/marketplace-images-allow-all.png" alt-text="Screenshot that shows the DevTest Labs settings for allowing all marketplace images.":::
+    :::image type="content" source="../media/marketplace-images-allow-all.png" alt-text="Screenshot that shows the DevTest Labs settings for allowing all marketplace images.":::
 
 1. Select the most recent versions of **Ubuntu Server** and **Windows Server** from the list, and then select **Save**.
 
     You should see the VM base images you selected at the top of the list:
 
-    :::image type="content" source="../media/3-exercise-configure-development-lab/portal-select-marketplace-images.png" alt-text="Screenshot that shows how to select Azure Marketplace images for a lab." lightbox="../media/3-exercise-configure-development-lab/portal-select-marketplace-images.png":::
+    :::image type="content" source="../media/portal-select-marketplace-images.png" alt-text="Screenshot that shows how to select Azure Marketplace images for a lab." lightbox="../media/portal-select-marketplace-images.png":::
 
-You've now created an Azure DevTest Labs resource and configured it to match the needs of the developers and the IT organization. With this DevTest lab, users can create lab VMs using a list of allowed base images. To save costs, the VMs will automatically shut down at a specific time of the day.
+You've now created an Azure DevTest Labs resource and configured it to match the needs of the developers and the IT organization. With this lab, users can create lab VMs using a list of allowed base images. To save costs, the VMs will automatically shut down at a specific time of the day.

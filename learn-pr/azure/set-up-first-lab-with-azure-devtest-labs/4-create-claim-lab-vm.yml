@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.setup-first-lab-using-azure-devtest-labs.create-claim-lab-vm
+uid: learn.set-up-first-lab-with-azure-devtest-labs.create-claim-lab-vm
 title: Create and claim a lab VM
 metadata:
   unitType: learning-content

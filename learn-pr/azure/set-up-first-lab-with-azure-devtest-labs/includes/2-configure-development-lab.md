@@ -15,7 +15,7 @@ When you create a lab in Azure DevTest Labs, you can specify the list of base im
 
 By default, a lab in DevTest Labs allows users access to all VM images in the Azure Marketplace. You can choose to give access to the entire Azure Marketplace or select specific VM images. For example, if your company standardizes on Windows Server 2022, you would select only those images. Lab users would then only be able to create VMs using these images.
 
-:::image type="content" source="../media/2-understand-azure-devtest-labs/select-azure-marketplace-images.png" alt-text="Screenshot that shows how to select Azure Marketplace VM images in DevTest Labs." lightbox="../media/2-understand-azure-devtest-labs/select-azure-marketplace-images.png":::
+:::image type="content" source="../media/select-azure-marketplace-images.png" alt-text="Screenshot that shows how to select Azure Marketplace VM images in DevTest Labs." lightbox="../media/select-azure-marketplace-images.png":::
 
 If you don't want to allow lab users access to Azure Marketplace images, select nothing from the list of Marketplace images.
 
@@ -53,7 +53,7 @@ The Azure portal provides a wizard to create a DevTest Labs resource. This wizar
 
 Once you've created the Azure DevTest Labs resource, you can select the allowed VM base images and other lab settings in the Azure portal. From the resource **Overview** page, select **Configuration and policies** to modify the lab settings.
 
-:::image type="content" source="../media/2-understand-azure-devtest-labs/configuration-policies-menu.png" alt-text="Screenshot that shows the Configuration and policies menu item for Azure DevTest Labs.":::
+:::image type="content" source="../media/configuration-policies-menu.png" alt-text="Screenshot that shows the Configuration and policies menu item for Azure DevTest Labs.":::
 
 ### Environments
 

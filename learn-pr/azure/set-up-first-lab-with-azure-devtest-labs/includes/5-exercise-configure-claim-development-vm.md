@@ -16,15 +16,15 @@ During the process, you'll:
 
 1. Enter **DevTest Labs** in the search text box, and then select **DevTest Labs** from the list of services.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/search-devtest-labs.png" alt-text="Screenshot that shows the search box in the Azure portal to search Azure DevTest Labs resources.":::
+    :::image type="content" source="../media/search-devtest-labs.png" alt-text="Screenshot that shows the search box in the Azure portal to search Azure DevTest Labs resources.":::
 
 1. From the list of labs, select your lab.
 
-1. On the **DevTest Lab** page, select **+ Add** on the toolbar.
+1. On the **DevTest Labs** page, select **+ Add** on the toolbar.
 
 1. On the **Choose a base** page, select the **Windows Server 2022 Datacenter** marketplace image for the VM.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-select-base.png" alt-text="Screenshot that shows the screen to select a base image for a new lab VM from the list images." lightbox="../media/5-exercise-configure-claim-development-vm/add-lab-vm-select-base.png":::
+    :::image type="content" source="../media/add-lab-vm-select-base.png" alt-text="Screenshot that shows the screen to select a base image for a new lab VM from the list images." lightbox="../media/add-lab-vm-select-base.png":::
 
 1. On the **Basics Settings** tab, provide the following information:
 
@@ -44,11 +44,11 @@ You use artifacts to configure a VM or deploy software on it, after it's provisi
 
 1. Select **Add or Remove Artifacts**
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-basic-settings-add-artifact.png" alt-text="Screenshot that shows the basic settings screen, highlighting the link to add and remove artifacts.":::
+    :::image type="content" source="../media/add-lab-vm-basic-settings-add-artifact.png" alt-text="Screenshot that shows the basic settings screen, highlighting the link to add and remove artifacts.":::
 
 1. On the **Add artifacts** page, select **Azure PowerShell** from the list, and then select **OK** in the right pane to add it to the list of selected artifacts.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-add-artifacts.png" alt-text="Screenshot that shows the screen for adding artifacts to a lab VM.":::
+    :::image type="content" source="../media/add-lab-vm-add-artifacts.png" alt-text="Screenshot that shows the screen for adding artifacts to a lab VM.":::
 
 1. Select **OK** to confirm the selected artifacts.
 
@@ -63,17 +63,17 @@ A claimable VM in Azure DevTest Labs is a VM that has no owner assigned to it. Y
     |Make this machine claimable     | Yes | Create a claimable VM, which has no owner assigned to it.        |
     |Number of instances     | 2 | Create a pool of lab VMs. |
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-advanced-settings.png" alt-text="Screenshot that shows the advanced settings screen when adding a new lab VM to a lab.":::
+    :::image type="content" source="../media/add-lab-vm-advanced-settings.png" alt-text="Screenshot that shows the advanced settings screen when adding a new lab VM to a lab.":::
 
 ## Create the lab VM
 
 1. Return to the **Basic Settings** tab and then select **Create**.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/add-lab-vm-create.png" alt-text="Screenshot that shows the basic settings screen when adding a new lab VM to a lab.":::
+    :::image type="content" source="../media/add-lab-vm-create.png" alt-text="Screenshot that shows the basic settings screen when adding a new lab VM to a lab.":::
 
-1. You're returned to the **DevTest Lab** page. Under **My Lab**, select **Claimable virtual machines**.
+1. You're returned to the **DevTest Labs** page. Under **My Lab**, select **Claimable virtual machines**.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines.png" alt-text="Screenshot that shows the list of claimable virtual machines." lightbox="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines.png":::
+    :::image type="content" source="../media/claimable-virtual-machines.png" alt-text="Screenshot that shows the list of claimable virtual machines." lightbox="../media/claimable-virtual-machines.png":::
 
 1. After a few minutes, select **Refresh** if your virtual machines don't appear. Installation times will vary based on the selected hardware, base image, and artifact(s). The installation for the configurations used in this exercise was approximately 11 minutes.
 
@@ -81,35 +81,35 @@ A claimable VM in Azure DevTest Labs is a VM that has no owner assigned to it. Y
 
 By claiming a VM, you take its ownership and you can customize, restart, stop, or connect to it.
 
-1. On the **DevTest Lab** page, under **My Lab**, select **Claimable virtual machines**.
+1. On the **DevTest Labs** page, under **My Lab**, select **Claimable virtual machines**.
 
     You should see the two claimable VMs, with the **Available** status, that you created earlier.
 
 1. Select the ellipsis (**...**) next to one of the VMs in the list, and then select the **Claim machine** menu item.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines-claim-machine.png" alt-text="Screenshot that shows the context menu to claim a VM from the list of claimable virtual machines." lightbox="../media/5-exercise-configure-claim-development-vm/claimable-virtual-machines-claim-machine.png":::
+    :::image type="content" source="../media/claimable-virtual-machines-claim-machine.png" alt-text="Screenshot that shows the context menu to claim a VM from the list of claimable virtual machines." lightbox="../media/claimable-virtual-machines-claim-machine.png":::
 
 1. Refresh the list of claimable VMs. The VM you've claimed should no longer be in the list.
 
-1. On the **DevTest Lab** page, select **Overview**. You should see the claimed VM in the **My virtual machines** list.
+1. On the **DevTest Labs** page, select **Overview**. You should see the claimed VM in the **My virtual machines** list.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/my-virtual-machines.png" alt-text="Screenshot that shows the list of my virtual machines on the lab overview page.":::
+    :::image type="content" source="../media/my-virtual-machines.png" alt-text="Screenshot that shows the list of my virtual machines on the lab overview page.":::
 
 ## Connect using RDP
 
-1. On the **DevTest Lab** page, select **Overview**.
+1. On the **DevTest Labs** page, select **Overview**.
 
 1. Select the ellipsis (**...**) next the VM in **My virtual machines**, and then select the **Connect** menu item.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/lab-vm-connect.png" alt-text="Screenshot that shows the context menu to connect to a lab VM.":::
+    :::image type="content" source="../media/lab-vm-connect.png" alt-text="Screenshot that shows the context menu to connect to a lab VM.":::
 
 1. Your browser will now download a Remote Desktop (RDP) file, which has the configuration to connect to the lab VM.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/download-rdp.png" alt-text="Screenshot that shows the downloaded RDP file in the browser downloads list.":::
+    :::image type="content" source="../media/download-rdp.png" alt-text="Screenshot that shows the downloaded RDP file in the browser downloads list.":::
 
 1. Open the RDP file to connect to the lab VM. Enter the user name and password that you used earlier for creating the lab VM.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/lab-vm-rdp-session.png" alt-text="Screenshot that shows the desktop of the lab VM in a remote desktop session.":::
+    :::image type="content" source="../media/lab-vm-rdp-session.png" alt-text="Screenshot that shows the desktop of the lab VM in a remote desktop session.":::
 
 ## Verify the artifact configuration
 
@@ -123,6 +123,6 @@ By claiming a VM, you take its ownership and you can customize, restart, stop, o
 
     The command result will show the currently installed version of Azure PowerShell.
 
-    :::image type="content" source="../media/5-exercise-configure-claim-development-vm/lab-vm-azure-powershell.png" alt-text="Screenshot that shows the output of the PowerShell command.":::
+    :::image type="content" source="../media/lab-vm-azure-powershell.png" alt-text="Screenshot that shows the output of the PowerShell command.":::
 
-You've now created a pool of lab VMs in the DevTest lab by using one of the allowed VM base images. By using artifacts, you've pre-configured the VMs with the necessary software tools. Developers can now quickly claim these VMs to take ownership, and use them for their development activities.
+You've now created a pool of lab VMs in the lab by using one of the allowed VM base images. By using artifacts, you've pre-configured the VMs with the necessary software tools. Developers can now quickly claim these VMs to take ownership, and use them for their development activities.

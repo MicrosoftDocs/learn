@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.setup-first-lab-using-azure-devtest-labs.knowledge-check
+uid: learn.set-up-first-lab-with-azure-devtest-labs.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
@@ -44,6 +44,6 @@ quiz:
     - content: "Claiming a VM."
       isCorrect: false
       explanation: "Try again. When claiming an existing lab VM, you can't configure the location of the VM."
-    - content: "Creating a DevTest Lab."
+    - content: "Creating a DevTest Labs resource."
       isCorrect: true
-      explanation: "Correct. The location of the Azure DevTest Lab determines the location of all VMs created in the lab."
+      explanation: "Correct. The location of the Azure DevTest Labs resource determines the location of all VMs created in the lab."

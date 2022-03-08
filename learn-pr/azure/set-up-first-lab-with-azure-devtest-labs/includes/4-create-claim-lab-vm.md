@@ -39,7 +39,7 @@ When you claim a virtual machine, Azure DevTest Labs assigns the ownership of th
 
 Azure DevTest Labs ensures that when a user claims a VM, no one else can claim the same machine. When you're done working on your lab VM, you can unclaim it, which removes the ownership and adds the VM back to the list of **Claimable virtual machines**.
 
-:::image type="content" source="../media/4-create-claim-lab-vm/devtest-lab-claim-vm.png" alt-text="Screenshot that shows how to claim a VM in Azure DevTest Labs.":::
+:::image type="content" source="../media/devtest-labs-claim-vm.png" alt-text="Screenshot that shows how to claim a VM in Azure DevTest Labs.":::
 
 ## Artifacts
 
@@ -53,7 +53,7 @@ During the creation of a lab VM, you can specify which artifacts that you want t
 
 In your eCommerce company, you could use an artifact to install **Azure PowerShell** or developer tools to the developer lab VM. This avoids that every developer has to go through the process of manually installing these tools.
 
-:::image type="content" source="../media/4-create-claim-lab-vm/devtest-lab-add-artifacts-blade-selected-artifacts.png" alt-text="Screenshot that shows how to add an artifact to a lab VM in Azure DevTest Labs.":::
+:::image type="content" source="../media/devtest-labs-add-artifacts-blade-selected-artifacts.png" alt-text="Screenshot that shows how to add an artifact to a lab VM in Azure DevTest Labs.":::
 
 If you want to enforce that a particular artifact is installed on all lab VMs, for example a monitoring agent, you can specify **mandatory artifacts** when you configure the lab. Azure DevTest Labs will then install these artifacts across all VMs in a lab.
 
