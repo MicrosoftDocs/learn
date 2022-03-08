@@ -32,6 +32,8 @@ During the process, you'll:
 
    This file deploys an Azure App Service plan and an app. Notice that the module is fairly generic. It doesn't include any assumptions about the names of resources, or the SKU of the App Service plan. This makes it easy to reuse the module for different deployments.
 
+   [!INCLUDE [Sandbox location note](../../includes/azure-template-bicep-exercise-sandbox-location.md)]
+
 1. Save the changes to the file.
 
 ## Add the module to your Bicep template
