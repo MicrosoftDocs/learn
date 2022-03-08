@@ -4,7 +4,7 @@ We provide two ways for setting up your environment:
 
 - Use [GitHub Codespaces](https://github.com/features/codespaces). This is the preferred way since you won't need to install the toolchain on your PC.
 
-- Use [Visual Studio](https://visualstudio.microsoft.com/). Use this if you either don't have Codespaces access yet for your GitHub account or you prefer to use a local environment on your Windows PC.
+- Use [Visual Studio](https://visualstudio.microsoft.com/). Use Visual Studio if you either don't have Codespaces access yet for your GitHub account or you prefer to use a local environment on your Windows PC.
 
 ## Use GitHub Codespace
 
@@ -23,7 +23,7 @@ We provide two ways for setting up your environment:
 
 ## Use Visual Studio
 
-1. Download and install latest [Visual Studio](https://visualstudio.microsoft.com/) with the **Desktop development with C++** workload. You can use Community version which is free of charge.
+1. Download and install latest [Visual Studio](https://visualstudio.microsoft.com/) with the **Desktop development with C++** workload. You can use Community version, which is free of charge.
 
 1. Download and unzip latest [sample projects for Visual Studio](https://github.com/Azure-Samples/azure-rtos-learn-samples/releases/tag/vs).
 
