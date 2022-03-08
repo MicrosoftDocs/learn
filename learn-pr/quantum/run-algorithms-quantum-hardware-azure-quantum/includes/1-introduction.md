@@ -21,14 +21,15 @@ After completing this module, you'll be able to:
 - Differentiate and comprehend the main hardware solutions for quantum computers.
 - Understand how Azure Quantum provides you with access to quantum devices to run quantum algorithms.
 - Adapt and create Q# applications to run them in Azure Quantum.
-- Submit and manage jobs in Azure Quantum in your preferred environment: Python, Jupyter, or the Azure CLI.
+- Submit and manage jobs in Azure Quantum in your preferred environment: Python, Jupyter notebooks, or the Azure CLI.
 
 ## Prerequisites
 
 - [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true)
 - [Create your first Q# program by using the Quantum development kit](/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true)
 
-> [!IMPORTANT]
-> This module makes use of paid services on Azure Quantum. The cost of running this module on IonQ in a Pay-As-You-Go subscription is approximately $9 USD (or the equivalent amount in your local currency). This quantity is only an approximate estimate and should not be used as a binding reference. The cost of the service might vary depending on your region, demand and other factors.
+> [!NOTE]
+> This module makes use of paid services on Azure Quantum. You can get a $500 USD (or equivalent) free credit for use with IonQ and Quantinuum hardware by selecting the **Azure Quantum Credits** plan when creating your workspace. If you need more credits, you may apply to the [Azure Quantum Credits program](https://aka.ms/aq/credits).![image](https://user-images.githubusercontent.com/74979440/157280183-9653e40a-aaf1-429f-9479-2f721d2767a3.png)
+
 >
-> Note that you can always elect to complete the lessons in this module while skipping the job submission to Azure Quantum if you would like to avoid any charges to your Azure account.
+> Note that you can always elect to complete the lessons in this module while skipping the job submission to Azure Quantum, however your credit card is never charged unless you explicitly change your settings and ask to be charged.
