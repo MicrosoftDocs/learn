@@ -31,5 +31,5 @@ After completing this module, you'll understand:
 If you don't have these tools yet, we recommend that you begin with the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module.
 
 > [!NOTE]
-> You can get a $500 USD (or equivalent) free credit for use with IonQ and Quantinuum hardware by selecting the **Azure Quantum Credits** plan when creating your workspace. If you need more credits, you may apply to the [Azure Quantum Credits program](https://aka.ms/aq/credits).
+> This module makes use of paid services on Azure Quantum. The first compute hour on Microsoft QIO solvers is free. For reference, this module should roughly consume 2 compute seconds. You can refer to the [Microsoft QIO pricing page](https://azure.microsoft.com/pricing/details/azure-quantum/) for more details.
 
