@@ -1,8 +1,8 @@
-There is no fundamental design change between ProjectHelloWorld and ProjectAnalyze. All we need to do is make several modifications so that we can capture data relative to the performance of our system.
+There's no fundamental design change between ProjectHelloWorld and ProjectAnalyze. All we need to do is make several modifications so that we can capture data relative to the performance of our system.
 
 ## Declarations, definitions, and prototypes - part 1
 
-The code block below shows **Part 1 of Building Block 1**.
+The code block below shows **Part 1 of building block 1**.
 
 > [!NOTE]
 > This code is virtually identical to what's in ProjectHelloWorld. The only changes shown in the following code block are in the comments section where additional information is provided, and brief instructions added on how to change this project.
@@ -11,7 +11,7 @@ The code block below shows **Part 1 of Building Block 1**.
 
 ## Declarations, definitions, and prototypes - part 2
 
-The code block below shows **Part 2 of Building Block 1**. You'll need to make the following changes in the highlighted lines:
+The code block below shows **Part 2 of building block 1**. You'll need to make the following changes in the highlighted lines:
 
 1. Add variables for counters and totals in part 2.
 1. Define the variables needed to obtain cumulative performance information about urgent thread and routine thread.
@@ -21,13 +21,13 @@ The code block below shows **Part 2 of Building Block 1**. You'll need to make t
 
 ## The main entry point
 
-**Building Block 2** - the main entry point - is _exactly the same as ProjectHelloWorld_. You don't need to make any changes to the following code; it's displayed for reference.
+**Building block 2** - the main entry point - is _exactly the same as ProjectHelloWorld_. You don't need to make any changes to the following code; it's displayed for reference.
 
 :::code language="c" source="code/project-analyze.c" range="35-40":::
 
 ## Applications definitions
 
-**Building Block 3** is _exactly the same as ProjectHelloWorld_, but it is displayed here for reference.
+**Building block 3** is _exactly the same as ProjectHelloWorld_, but it's displayed here for reference.
 
 :::code language="c" source="code/project-analyze.c" range="42-75":::
 
