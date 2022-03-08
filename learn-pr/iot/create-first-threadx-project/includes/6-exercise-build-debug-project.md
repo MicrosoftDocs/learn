@@ -1,12 +1,12 @@
-Finally, you get to work on your first Hello World project! We will use GitHub Codespaces or Visual Studio, and you have a C project called *ProjectHelloWorld* to modify.
+Finally, you get to work on your first Hello World project! We'll use GitHub Codespaces or Visual Studio, and you have a C project called *ProjectHelloWorld* to modify.
 
 If you haven't done so already you'll need to set up your development environment in accordance with the [instructions](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) in module 2, Azure RTOS ThreadX fundamentals.
 
 ## Use GitHub Codespaces
 
-1. Open the codespace you have created from GitHub repo. Once done, you can view the sample projects repo within VSCode web.
+1. Open the codespace you've created from GitHub repo. Once done, you can view the sample projects repo within VSCode web.
 
-1. Expand the **TASK EXPLORER** pane and expand the **vscode** node you will find **Build / Clean / Run Project** tasks. Choose **Build Project** and select the run button.
+1. Expand the **TASK EXPLORER** pane and expand the **vscode** node you'll find **Build / Clean / Run Project** tasks. Choose **Build Project** and select the run button.
 
    ![VSCode Web Task Explorer](../../introduction-azure-rtos/media/vscode-web-tasks.png)
 
@@ -32,7 +32,7 @@ Each time the Urgent thread completes a cycle, it displays the current time and 
 
 You're now ready to complete this project by modifying the Routine thread entry function as shown in [building block 4, part 2](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/6-exercise-build-debug-project#building-block-4-part-2).
 
-Activity 4 is incomplete and there is a suggestion that you should use Activity 2 in [building block 4, part 1](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/6-exercise-build-debug-project#building-block-4-part-1) as a guide. Following is the code in Activity 2:
+Activity 4 is incomplete and there's a suggestion that you should use Activity 2 in [building block 4, part 1](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/6-exercise-build-debug-project#building-block-4-part-1) as a guide. Following is the code in Activity 2:
 
 ```c
 /* Activity 2:  4 timer ticks  *** critical section *** */
