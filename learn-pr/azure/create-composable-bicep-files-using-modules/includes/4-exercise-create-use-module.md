@@ -32,8 +32,6 @@ During the process, you'll:
 
    This file deploys an Azure App Service plan and an app. Notice that the module is fairly generic. It doesn't include any assumptions about the names of resources, or the SKU of the App Service plan. This makes it easy to reuse the module for different deployments.
 
-   [!INCLUDE [Sandbox location note](../../includes/azure-template-bicep-exercise-sandbox-location.md)]
-
 1. Save the changes to the file.
 
 ## Add the module to your Bicep template
@@ -47,6 +45,8 @@ Here, you add the *app* module to your Bicep template as a starting point.
    :::code language="bicep" source="code/4-template-1.bicep" range="1-10" :::
 
    Because this is the template that you intend to deploy for your toy websites, it's a little more specific. The App Service plan name is defined as a variable. The SKU parameter has a default value that makes sense for the toy launch website.
+
+   [!INCLUDE [Sandbox location note](../../includes/azure-template-bicep-exercise-sandbox-location.md)]
 
 1. Below the parameters, create a blank line. Now, type the first line of the app module definition:
 
