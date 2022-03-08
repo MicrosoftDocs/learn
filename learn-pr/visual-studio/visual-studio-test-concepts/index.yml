@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction
   title: Introduction to software testing concepts
   description: "Evaluate if testing is right for your scenarios, and familiarize yourself with basic testing concepts such as TDD, BDD, unit testing, UI testing, and the test pyramid."
-  ms.date: 02/28/2022
+  ms.date: 03/08/2022
   author: kendrahavens
   ms.author: chnoring
   ms.custom: team=nextgen, devdivchpfy22
