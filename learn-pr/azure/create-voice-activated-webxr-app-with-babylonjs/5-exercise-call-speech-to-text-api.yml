@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Call the Azure Speech to Text API in your Babylon.js project
   description: Integrate the Azure Speech to Text service into the Babylon.js project
   ms.date: 07/20/2021 
-  author: aprilspeight 
-  ms.author: apspeigh 
+  author: eric-urban 
+  ms.author: eur 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

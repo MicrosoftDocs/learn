@@ -14,7 +14,7 @@ abstract: |
   By the end of this module you will be able to:
   - Build a mixed reality experience demonstrating UI elements, 3D model manipulation, model clipping, and eye-tracking features.
   - Create a Holographic Remoting remote app and connect to HoloLens 2 at any point, providing a way to visualize 3D content in mixed reality.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/pc-holographic-remoting-tutorials-mrtk.svg
 levels:
 - beginner
 roles:
