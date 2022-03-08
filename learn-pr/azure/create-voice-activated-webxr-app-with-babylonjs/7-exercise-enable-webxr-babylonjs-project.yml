@@ -7,8 +7,8 @@ metadata:
   description: Add various WebXR features to your Babylon.js project
   zone_pivot_groups: webxr-vr-ar
   ms.date: 07/20/2021 
-  author: aprilspeight 
-  ms.author: apspeigh 
+  author: eric-urban 
+  ms.author: eur 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

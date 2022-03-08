@@ -1,4 +1,4 @@
-In this unit, you will execute queries against the graph database using the .NET Core application that you created in an earlier unit.
+In this unit, you'll execute queries against the graph database using the .NET Core application that you created in an earlier unit.
 
 ## Modify the application to return detailed results
 

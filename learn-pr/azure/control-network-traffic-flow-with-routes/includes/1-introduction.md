@@ -2,7 +2,7 @@ A virtual network lets you implement a security perimeter around your resources 
 
 Suppose you're the solution architect for a retail organization. Also suppose your organization recently suffered a security incident that exposed customer information such as names, addresses, and credit cards. Malicious actors infiltrated vulnerabilities in the retailer's network infrastructure, which resulted in the loss of customers' confidential information.
 
-As part of a remediation plan, the security team recommends adding network protections in the form of network virtual appliances. The cloud infrastructure team must ensure traffic is properly routed through the virtual appliances and is inspected for malicious activity.
+As part of a remediation plan, the security team recommends adding network protections in the form of network virtual appliances. The cloud infrastructure team must ensure traffic gets properly routed through the virtual appliances and gets inspected for malicious activity.
 
 You'll learn about Azure routing and you'll create custom routes to control the traffic flow. You'll also learn to redirect the traffic through the network virtual appliance so you can inspect the traffic before it's allowed through.
 

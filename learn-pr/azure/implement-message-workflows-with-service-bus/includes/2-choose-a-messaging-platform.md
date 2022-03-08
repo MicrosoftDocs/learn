@@ -63,7 +63,7 @@ Two Azure services include message queues: Service Bus and Azure Storage. As a g
 
 The key advantages of Service Bus queues include:
 
-* Supports larger messages sizes of 256 KB (standard tier) or 100 MB (premium tier) per message versus 64 KB for Service Bus messages.
+* Supports larger messages sizes of 256 KB (standard tier) or 100 MB (premium tier) per message versus 64 KB for Azure Storage queue messages.
 * Supports both at-most-once and at-least-once delivery. Choose between a very small chance that a message is lost or a very small chance it's handled twice.
 * Guarantees _first-in, first-out (FIFO)_ order. Messages are handled in the same order they are added. Note that although FIFO is the normal operation of a queue, the default FIFO pattern is altered if the organization sets up sequenced or scheduled messages or during interruptions like a system crash. For more information, see [Compare Azure Storage queues and Azure Service Bus queues](/azure/service-bus-messaging/service-bus-azure-and-service-bus-queues-compared-contrasted#additional-information).
 * Can group multiple messages in one transaction. If one message in the transaction fails to be delivered, all messages in the transaction aren't delivered.
