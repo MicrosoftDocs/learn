@@ -26,6 +26,6 @@ After completing this module, you'll be able to:
 - [Create your first Q# program by using the Quantum development kit](/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true)
 
 > [!NOTE]
-> You can get a $500 USD (or equivalent) free credit for use with IonQ and Quantinuum hardware by selecting the **Azure Quantum Credits** plan when creating your workspace. If you need more credits, you may apply to the [Azure Quantum Credits program](https://aka.ms/aq/credits).
+> First-time users automatically get free Azure Quantum Credits for use with IonQ and Quantinuum hardware (500 USD each) when creating your workspace. If you need more credits, you can apply to the [Azure Quantum Credits program](https://aka.ms/aq/credits).
 >
 > Note that you can always elect to complete the lessons in this module while skipping the job submission to Azure Quantum, however your credit card is never charged unless you explicitly change your settings and ask to be charged.
