@@ -19,7 +19,7 @@ An **event** is a small packet of information (a *datagram*) that contains a not
 Event publishers are any app or device that can send out events using either HTTPS, Advanced Message Queuing Protocol (AMQP) 1.0, or Apache Kafka.
 
 - For publishers that send data frequently, **AMQP** has better performance. However, it has a higher initial session overhead, because a persistent bidirectional socket and transport-level security (TLS), or SSL/TLS, has to be set up first.
-- For more intermittent publishing, **HTTPS** is the better option. Though HTTPS requires additional overhead for each request, there is no session initialization overhead.
+- For more intermittent publishing, **HTTPS** is the better option. Though HTTPS requires more overhead for each request, there's no session initialization overhead.
 - Event Hubs provides an endpoint compatible with the **Apache Kafka** producer and consumer APIs that can be used by most existing Apache Kafka client applications as an alternative to running your own Apache Kafka cluster. Event Hubs supports Apache Kafka's producer and consumer APIs clients at version 1.0 and above. For more information, see [Event Hubs for Apache Kafka](/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview).
 
 Event subscribers are apps that use one of two supported programmatic methods to receive and process events from an event hub.
@@ -47,7 +47,7 @@ An Event Hubs namespace is a container for managing one or more event hubs. Crea
 
 Namespace capacity (configured using **throughput units** for the standard tier), pricing tier, and performance metrics are defined at the namespace level. These settings apply to all the event hubs within that namespace. If you don't define these settings, a default value is used: *1* for capacity and *Standard* for pricing tier.
 
-  Keep the following aspects in mind:
+Keep the following aspects in mind:
 
 - You must balance your configuration against your Azure budget expectations.
 
@@ -55,13 +55,13 @@ Namespace capacity (configured using **throughput units** for the standard tier)
 
   You'll configure one namespace for high throughput collection of real-time sales data telemetry and one namespace for infrequent event log collection. This way, you only need to configure (and pay for) high throughput capacity on the telemetry hub.
 
-1. Select a unique name for the namespace. The namespace is accessible through this URL: *_namespace_.servicebus.windows.net*
+  1. Select a unique name for the namespace. The namespace is accessible through this URL: *_namespace_.servicebus.windows.net*
 
-1. Define the following optional properties:
+  1. Define the following optional properties:
 
-    - Make this namespace zone redundant. Zone-redundancy replicates data across separate data centers which have independent power, networking, and cooling infrastructures.
-    
-    - Enable automatically scaling up of throughput units (standard tier). Auto-inflate provides an automatic scale-up option by increasing the number of throughput units up to a maximum value. This option is useful to avoid throttling in situations when incoming or outgoing data rates exceed the currently set number of throughput units.
+     - Make this namespace zone redundant. Zone-redundancy replicates data across separate data centers which have independent power, networking, and cooling infrastructures.
+
+     - Enable automatically scaling up of throughput units (standard tier). Auto-inflate provides an automatic scale-up option by increasing the number of throughput units up to a maximum value. This option is useful to avoid throttling in situations when incoming or outgoing data rates exceed the currently set number of throughput units.
 
 ### Azure CLI commands to create an Event Hubs namespace
 
@@ -96,7 +96,8 @@ To create a new event hub with the Azure CLI, you'll run the `az eventhubs event
 | `create` | Creates the event hub in a specified namespace. |
 | `show` | Displays the details of your event hub. |
 
-> [!For quotas and limits for different tiers of Event Hubs, see [Azure Event Hubs quotas and limits](/azure/event-hubs/event-hubs-quotas).
+> [!NOTE]
+> For quotas and limits for different tiers of Event Hubs, see [Azure Event Hubs quotas and limits](/azure/event-hubs/event-hubs-quotas).
 
 ## Summary
 
