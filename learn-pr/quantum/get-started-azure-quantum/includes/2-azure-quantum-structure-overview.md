@@ -9,8 +9,6 @@ Azure Quantum offers you two main paths of quantum solutions:
 
 With Azure Quantum and the [Quantum Development Kit toolset](xref:microsoft.quantum.overview.q-sharp), you will be able to program your quantum algorithms and optimization solutions, then apply those quantum solutions within the existing Azure platform to achieve real-world impacts even before the development of a general-purpose quantum computer. 
 
-Using all these tools together helps you understand the features of a quantum computer that you'd need in order to run your program, such as the number of qubits and their lifetimes. From a software engineering perspective, it also helps you iterate and improve your code, so that you can reduce the number of resources required to run it.
-
 For more details on how this is done in practice, check out Dave Wecker's talk on [Achieving Practical Quantum Computing](https://cloudblogs.microsoft.com/quantum/2018/06/01/achieving-practical-quantum-computing/?azure-portal=true).
 
 ### Quantum computing providers
