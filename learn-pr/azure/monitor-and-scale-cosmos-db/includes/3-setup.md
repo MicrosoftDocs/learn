@@ -1,10 +1,10 @@
-In this unit, you'll create an Azure Cosmos DB account, and use a console application to populate the database.
+In this unit, you'll create an Azure Cosmos DB account and use a console application to populate the database.
 
 ## Create your database account
 
 A database account is a container for multiple Azure Cosmos DB databases.
 
-1. Add a unique name for your database account. This name must be unique across all Azure Cosmos DB instances. Run the following command to generate a random database account name, by using the **Bash** `$RANDOM` variable, and store it in an environment variable to use later.
+1. Add a unique name for your database account. This name must be unique across all Azure Cosmos DB instances. Run the following command to generate a random database account name using the **Bash** `$RANDOM` variable and store it in an environment variable to use later.
 
     ```bash
     export COSMOS_NAME=cosmos$RANDOM
@@ -27,7 +27,7 @@ A database account is a container for multiple Azure Cosmos DB databases.
         --name $COSMOS_NAME
     ```
 
-The database account can take 10 minutes to provision. You can continue reading this unit while the account is being created.
+The database account can take up to 10 minutes to provision. You can continue reading this unit while the account is being created.
 
 ## Azure Cosmos DB concepts
 
@@ -39,29 +39,29 @@ Azure Cosmos DB concepts consist of:
 
 ### Resources
 
-An Azure Cosmos DB account is a container for one or more _databases_. An Azure Cosmos DB database is a container for one or more _collections_. A collection contains _documents_. A document is an unstructured set of key/value pairs, read and written in JSON format.
+An Azure Cosmos DB account is a container for one or more *databases*. An Azure Cosmos DB database is a container for one or more *collections*. A collection contains *documents*. A document is an unstructured set of key/value pairs, read and written in JSON format.
 
 ### Partitioning
 
-_Partitioning_ is the distribution and grouping of your data across the underlying resources. Documents are grouped in a partition based on the value of the partition key. You specify the partition key when you create the collection. To better understand the concept of partition keys, let's review the property and values in the following JSON example document.
+*Partitioning* is the distribution and grouping of your data across the underlying resources. Documents are grouped in a partition based on the value of the partition key. You specify the partition key when you create the collection. To better understand the concept of partition keys, let's review the property and values in the following JSON example document.
 
 [!code-json[](../code/Order.json)]
 
 Any of these properties, or a combination of them, can be a partition key. For example, where you defined the partition key as a combination of the properties **Category** and **Merchant**, any documents that have matching values for **Category** and **Merchant** are grouped in the same partition.
 
-An effective partitioning strategy distributes data and access evenly across partitions, and across time. Querying documents from within the same partition is less expensive than querying across partitions.
+An effective partitioning strategy distributes data and access evenly across partitions and across time. Querying documents from within the same partition is less expensive than querying across partitions.
 
-You choose how to partition your data at design time. The partitioning configuration can't be changed after a collection is provisioned.
+You can choose how to partition your data at design time. The partitioning configuration can't be changed after a collection is provisioned.
 
 We examine partitioning concepts and examples in detail in subsequent units.
 
 ### Indexing
 
-An index is a catalog of document properties and their values. It includes links to documents that contain properties equal to each property value. Indexing makes searching a collection more efficient. But the search efficiency is balanced with the resources required to insert or change a document. When a document is inserted or changed, Azure Cosmos DB has to update the index. The optimal indexing strategy for your collection depends on your workload.
+An *index* is a catalog of document properties and their values. It includes links to documents that contain properties equal to each property value. Indexing makes searching a collection more efficient. However, the search efficiency is balanced with the resources required to insert or change a document. When a document is inserted or changed, Azure Cosmos DB has to update the index. The optimal indexing strategy for your collection depends on your workload.
 
 Unlike partitioning, you can change indexing at runtime.
 
-We look at indexing in subsequent units.
+We'll look at indexing in subsequent units.
 
 ## Set environment variables for endpoint and keys
 
@@ -95,11 +95,11 @@ We look at indexing in subsequent units.
         --name mslearn
     ```
 
-1. Create the first collection running the following command.
+1. Create the first collection by running the following command.
 
     We're going to create three collections to compare different partitioning strategies and workloads.
 
-    We'll allocate a smaller capacity to this collection to demonstrate overloading it. The partition key for this collection is the unique identifier of the order. In this case, the partition isn't important because the collection is smaller than a single partition. In addition, this first collection is configured for 400 request units per second (RU/s), which is less than the next two collections.
+    We'll allocate a smaller capacity to this collection to demonstrate overloading it. The partition key for this collection is the unique identifier of the order. In this case, the partition isn't important, because the collection is smaller than a single partition. In addition, this first collection is configured for 400 request units per second (RU/s), which is less than the next two collections.
 
     ```azurecli
     az cosmosdb sql container create \
@@ -111,7 +111,7 @@ We look at indexing in subsequent units.
         --throughput 400
     ```
 
-1. Create the second collection running the following command.
+1. Create the second collection by running the following command.
 
     This collection uses an order item's product category as the partition key. We'll explore the consequences of this choice as we go through the exercises in this module. This second collection is configured for 7000 RU/s, which is more than the first collection.
 
@@ -125,7 +125,7 @@ We look at indexing in subsequent units.
         --throughput 7000
     ```
 
-1. Create a third collection running the following command.
+1. Create the third collection by running the following command.
 
     This collection partitions the documents by the order item's unique product identifier. This last collection is also configured for 7000 RU/s.
 
@@ -149,7 +149,7 @@ We'll use an open-source C# console application to populate your collections. Th
     git clone https://github.com/MicrosoftDocs/mslearn-monitor-azure-cosmos-db
     ```
 
-1. Change into the application's directory running the following command.
+1. Change into the application's directory by running the following command.
 
     ```bash
     cd mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB
@@ -174,7 +174,7 @@ We'll use an open-source C# console application to populate your collections. Th
         --query primaryMasterKey)
     ```
 
-1. Populate the `Small` collection running the following command.
+1. Populate the `Small` collection by running the following command.
 
     ```bash
     dotnet run -- -c Small -o InsertDocument -n 4000 -p 10
@@ -195,13 +195,13 @@ We'll use an open-source C# console application to populate your collections. Th
 
     While the console application runs, you see one line printed per second that shows the status and RUs needed for the database writes.
 
-1. Populate the `HotPartition` collection running the following command.
+1. Populate the `HotPartition` collection by running the following command.
 
     ```bash
     dotnet run -- -c HotPartition -o InsertDocument -n 20000 -p 10
     ```
 
-1. Populate the `Orders` collection running the following command.
+1. Populate the `Orders` collection by running the following command.
 
     ```bash
     dotnet run -- -c Orders -o InsertDocument -n 20000 -p 10

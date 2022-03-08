@@ -3,7 +3,7 @@ uid: learn.wwl.implement-tools-to-track-usage-flow
 metadata:
   title: Implement tools to track usage and flow
   description: "Implement tools to track usage and flow"
-  ms.date: 11/30/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Use Kusto Query Language (KQL)
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-implement-tools-to-track-usage-and-flow.svg
 levels:
 - advanced
 roles:

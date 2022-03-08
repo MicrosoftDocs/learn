@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Publish a web app to Azure with Visual Studio
-summary: Use the publishing features of Visual Studio 2019 to deploy and manage an ASP.NET Core web application hosted on Azure.
+summary: Use the publishing features of Visual Studio 2022 to deploy and manage an ASP.NET Core web application hosted on Azure.
 abstract: | 
   In this module, you will:
   - Create an ASP.NET Core web app in Visual Studio
@@ -17,11 +17,11 @@ abstract: |
   - Update a web app in Visual Studio and publish the changes to Azure
 prerequisites: |
   - Knowledge of the Azure cloud environment
-  - Familiarity with Visual Studio 2019
+  - Familiarity with Visual Studio 2022
   - Familiarity with web app concepts
   - Basic programming knowledge
   - Basic HTML knowledge
-  - A local installation of Visual Studio 2019 on Windows
+  - A local installation of Visual Studio 2022 on Windows
 iconUrl: /learn/achievements/publish-azure-web-app-with-visual-studio.svg
 levels:
 - beginner

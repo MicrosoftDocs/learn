@@ -20,6 +20,7 @@ summary: |
   * Deploy child and extension resources.
   * Add your Bicep code to the Git version control system to track its history and collaborate with team members.
   * Follow proven best practices to create high-quality Bicep code.
+  * Use pull requests to review your team's Bicep code.
   * Use the what-if command to check the effects of your Bicep files before you deploy them.
   * Migrate JSON ARM templates to Bicep to make your existing Azure deployment templates easier to read and maintain.
   * Use Bicep to work with resources you've previously deployed using the Azure portal or other tooling to make your deployments repeatable and consistent.
@@ -44,6 +45,7 @@ modules:
 - learn.azure.child-extension-bicep-templates
 - learn.azure.manage-changes-bicep-code-git
 - learn.azure.structure-bicep-code-collaboration
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests
 - learn.arm-template-whatif
 - learn.azure.migrate-azure-resources-bicep
 trophy:

@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.pytorch.intro-computer-vision.multilayer-convolutions
+title: Train multi-layer convolutional neural network
+metadata:
+  title: Train multi-layer convolutional neural network
+  description: In this unit, we learn how several convolutional layers can be stacked in order to recognize hierarchy of patterns that build up objects on the image.
+  author: shwars
+  ms.author: dmitryso
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.custom: team=nextgen
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/5-multilayer-convolutions.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which layers do we apply to significantly reduce spatial dimension in multi-layered CNN?"
+      choices:
+        - content: "Convolution"
+          isCorrect: false
+          explanation: "Convolution layer only slightly reduces the dimension of the image"
+        - content: "Flatten"
+          isCorrect: false
+          explanation: "Flatten is used to reshape spatial tensor into a linear vector"
+        - content: "MaxPooling"
+          isCorrect: true
+          explanation: "Pooling layers (such as MaxPooling or AveragePooling) are used to decrease the dimension, usually by a factor of 2"
+    - content: "Which layer is used between convolutional base of the network and final linear classifier?"
+      choices:
+        - content: "Convolution"
+          isCorrect: false
+          explanation: "Convolution layers are used in convolutional base"
+        - content: "Flatten"
+          isCorrect: true
+          explanation: "Flatten is used to reshape spatial tensor into a linear vector"
+        - content: "MaxPooling"
+          isCorrect: false
+          explanation: "Pooling layers are often used to reduce the dimension in between convolutional layers"
+        - content: "Sigmoid"
+          isCorrect: false
+          explanation: "Sigmoid is usually used after the final layer to get the probability output"

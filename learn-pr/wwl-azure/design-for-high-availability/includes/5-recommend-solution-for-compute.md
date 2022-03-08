@@ -67,7 +67,7 @@ Scale sets are built from virtual machines. With scale sets, the management and 
 
  
 
-Think back to Tailwind Traders application portfolio and see where they could leverage virtual machine scale sets. Why would you recommend virtual machine scale sets over groups of VMs and for which specific applications? 
+Think back to Tailwind Traders application portfolio and where they could leverage virtual machine scale sets. Why would you recommend virtual machine scale sets over groups of VMs and for which specific applications? 
 
  
 
