@@ -16,7 +16,7 @@ abstract: |
   - Start and stop an Azure Spatial Anchors session, along with creating, uploading, and downloading spatial anchors on a single device.
   - Persist spatial anchors between app sessions and app restarts by saving an anchor ID to the local disk on HoloLens.
   - Share spatial anchors between multiple devices for a basic multiuser, static hologram shared experience.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-spatial-anchors-tutorials-mrtk.svg
 levels:
 - beginner
 roles:
