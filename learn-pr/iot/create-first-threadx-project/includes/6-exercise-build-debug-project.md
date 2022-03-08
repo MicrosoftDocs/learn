@@ -1,12 +1,12 @@
-Finally, you get to work on your first Hello World project! We will use GitHub Codespaces or Visual Studio, and you have a C project called *ProjectHelloWorld* to modify.
+Finally, you get to work on your first Hello World project! We'll use GitHub Codespaces or Visual Studio, and you have a C project called *ProjectHelloWorld* to modify.
 
 If you haven't done so already you'll need to set up your development environment in accordance with the [instructions](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) in module 2, Azure RTOS ThreadX fundamentals.
 
 ## Use GitHub Codespaces
 
-1. Open the codespace you have created from GitHub repo. Once done, you can view the sample projects repo within VSCode web.
+1. Open the codespace you've created from GitHub repo. Once done, you can view the sample projects repo within VSCode web.
 
-1. Expand the **TASK EXPLORER** pane and expand the **vscode** node you will find **Build / Clean / Run Project** tasks. Choose **Build Project** and select the run button.
+1. Expand the **TASK EXPLORER** pane and expand the **vscode** node you'll find **Build / Clean / Run Project** tasks. Choose **Build Project** and select the run button.
 
    ![VSCode Web Task Explorer](../../introduction-azure-rtos/media/vscode-web-tasks.png)
 
@@ -24,15 +24,15 @@ If you haven't done so already you'll need to set up your development environmen
 
 ## Complete the sample
 
-If all has gone well, you should see initial output appearing on the screen similar to this: <!--figure 17-->
+If all has gone well, you should see initial output appearing on the screen similar to this:
 
 :::image type="content" source="../media/figure-17-output-from-project.png" alt-text="Image of expected output." border="false":::
 
 Each time the Urgent thread completes a cycle, it displays the current time and a brief message. Similarly, each time the Routine thread completes a cycle, it displays the current time and a brief message.
 
-You're now ready to complete this project by modifying the Routine thread entry function as shown in [building block 4, part 2](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/6-exercise-build-debug-project#building-block-4-part-2). <!--figure 12--> 
+You're now ready to complete this project by modifying the Routine thread entry function as shown in [building block 4, part 2](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/6-exercise-build-debug-project#building-block-4-part-2).
 
-Activity 4 is incomplete and there is a suggestion that you should use Activity 2 in [building block 4, part 1](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/6-exercise-build-debug-project#building-block-4-part-1) <!--figure 11--> as a guide. Following is the code in Activity 2:
+Activity 4 is incomplete and there's a suggestion that you should use Activity 2 in [building block 4, part 1](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/6-exercise-build-debug-project#building-block-4-part-1) as a guide. Following is the code in Activity 2:
 
 ```c
 /* Activity 2:  4 timer ticks  *** critical section *** */
@@ -43,10 +43,10 @@ Activity 4 is incomplete and there is a suggestion that you should use Activity 
    tx_mutex_put(&Processor);
 ```
 
-Using Activity 2 and the [Hello World scenario](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/3-hello-world#hello-world-scenario) <!--figure 6--> as guides, complete your modifications, then build and debug your project. Your completed output should look like that shown below: <!--figure 18-->
+Using Activity 2 and the [Hello World scenario](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/3-hello-world#hello-world-scenario) as guides, complete your modifications, then build and debug your project. Your completed output should look like that shown below:
 
 :::image type="content" source="../media/figure-18-output-from-completed-project.png" alt-text="Image of expected output." border="false":::
 
-The first four lines of the initial and final output shown above are the same,<!--figures 17 18--> but then they diverge. What caused these differences?
+The first four lines of the initial and final output shown above are the same, but then they diverge. What caused these differences?
 
 Congratulations! You've completed your first ThreadX project. You should now investigate Module 5 (ProjectAnalyze) because it logically follows this project.

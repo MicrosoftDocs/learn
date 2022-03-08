@@ -23,7 +23,7 @@ TX_THREAD my_thread;
 
 The header file contains all system equates, data structures, and service prototypes.
 
-We'll use a counter `my_thread_counter` in this example, so we define and initialize it. We also define a thread `my_thread` that will be created in [building block 3](#building-block-3). This block would typically contain comments concerning the project, but we have skipped them for the sake of brevity.
+We'll use a counter `my_thread_counter` in this example, so we define and initialize it. We also define a thread `my_thread` that will be created in [building block 3](#building-block-3). This block would typically contain comments concerning the project, but we've skipped them for the sake of brevity.
 
 ## Building block 2 
 
@@ -40,7 +40,7 @@ main()
 > [!NOTE]
 > The `tx_kernel_enter()` statement is required to start ThreadX. Statements may precede the `tx_kernel_enter()` statement but any statement following the `tx_kernel_enter()` statement is unreachable. 
 
-The `tx_kernel_enter()` function initializes ThreadX and starts the task scheduler, and it does not return. After the task scheduler has started, the RTOS kernel takes control over the machine and only thread code created by the developer is run. 
+The `tx_kernel_enter()` function initializes ThreadX and starts the task scheduler, and it doesn't return. After the task scheduler has started, the RTOS kernel takes control over the machine and only thread code created by the developer is run. 
 
 ## Building block 3
 
@@ -68,7 +68,7 @@ In this case, only one thread is created and the meanings of the thread create p
 |first_unused_memory | pointer to the start of the thread’s stack area |
 |1024 | thread’s stack size in bytes |
 |3 | thread’s priority level |
-|3 | thread’s preemption threshold (not used because it is the same value as the priority) |
+|3 | thread’s preemption threshold (not used because it's the same value as the priority) |
 |TX_NO_TIME_SLICE | thread’s time slice (0 in this case) |
 |TX_AUTO_START | means that the thread will be started automatically by the kernel|
 
