@@ -33,7 +33,7 @@ quiz:
       explanation: "Load testing will help predict how your app does at scale, when multiple customers are actually using it in the real world."
     - content: "Integration"
       isCorrect: false
-      explanation: "Integration tests can test how multiple parts of your code integrate together, but wouldn't mimic multiple users using the app."
+      explanation: "Integration tests can test how multiple parts of your code integrate together, but won't mimic multiple users using the app."
     - content: "Performance"
       isCorrect: false
       explanation: "Close! Performance testing is considered similar to this type of testing. It does focus on how responsive your functions are, but there's a more specific type of test that mimics multiple users putting your app under stress to find its limits."
