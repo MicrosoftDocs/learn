@@ -1,15 +1,14 @@
-In this module, we faced a problem with building, packaging, and sharing Blazor components that could be used and reused across Blazor applications.
+In this module, you faced and resolved a problem with building, packaging, and sharing Blazor components that can be used and reused across Blazor applications.
 
-We learned how to build a Razor class library that contains components we would like to share with many applications.  We took several steps to assemble our library:
+You learned how to build a Razor class library that contains components to be shared with many applications. To assemble the library, you:
 
-- We created a new Razor class library from the .NET template
-- We added a `.razor` file with a Blazor component and a `.razor.css` file containing its Stylesheet
-- We added package metadata to the project file that defined the package for other developers
-- We created a NuGet package from our Razor class library using the .NET command line
+- Created a new Razor class library from the .NET template.
+- Added a *.razor* file with a Blazor component and a *.razor.css* file that contains its style sheet.
+- Added package metadata to the project file, which defines the package for other developers.
+- Created a NuGet package from your Razor class library by using the .NET command-line interface.
 
-Blazor components are the building blocks that make it easier for us to build more complex applications.  Components and pages referencing other components means that we can more quickly deliver applications that take advantage of the user-interface paradigms shared by other developers.
-
-When we can depend on components built and shared by other developers, we can save time and money by reusing the investment they made in creating that component.  
+Blazor components are the building blocks that make it easier for you to build more complex applications.  By building components and pages that reference other components, you can more quickly deliver applications that take advantage of the user-interface paradigms that other developers have shared with you. When you can depend on reusing earlier investments made by other developers, you can save time and money on your own projects as well.  
 
 ## References
-- [Consume ASP.NET Core Razor components from Razor class libraries](/aspnet/core/blazor/components/class-libraries)
+
+For more information, see [Consume ASP.NET Core Razor components from Razor class libraries](/aspnet/core/blazor/components/class-libraries).
