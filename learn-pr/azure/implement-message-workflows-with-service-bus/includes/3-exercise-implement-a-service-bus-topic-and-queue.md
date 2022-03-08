@@ -47,7 +47,8 @@ Next, add a queue for messages about individual sales to your namespace:
 
 1. When deployment is finished, select **Go to resource**.
 
-1. In the **Overview** pane for the Service Bus namespace you created, in the command bar, select **+ Queue**.
+1. On the **Service Bus Namespace** page, select **Queues** under **Entities** on the left menu. 
+2. Select **+ Queue** on the command bar.
   
     :::image type="content" source="../media/3-create-queue.png" alt-text="Screenshot of Service Bus namespace and Create queue panes with Queue and Create highlighted.":::
 
@@ -61,7 +62,7 @@ You also want to create a topic that will be used for messages that relate to sa
 
 Add a Service Bus topic and subscriptions:
 
-1. In your Service Bus namespace, in the command bar, select **+ Topic**.
+1. On the left menu, select **Topics** under **Entities** in the left menu, and then select **+ Topic** on the command bar.
 
     :::image type="content" source="../media/3-create-topic.png" alt-text="Screenshot of the Service Bus namespace and Create topic panes with Topic and Create highlighted.":::
 
