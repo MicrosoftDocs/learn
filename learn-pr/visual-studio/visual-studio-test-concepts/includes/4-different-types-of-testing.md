@@ -21,7 +21,7 @@ For example, let's say you have a method that parses a postal address from a str
 ### Integration tests
 
 Integration tests are the next step up from unit tests in the testing pyramid. They might cover multiple methods or a broader set of behavior than unit tests.
-In our postal address example, an integration test could test both the postal address parser and a method for calculating a shipping rate for that location. The two combined helps summarize if multiple parts of your app are working together as expected.
+In our postal address example, an integration test could test both the postal address parser and a method for calculating a shipping rate for that location. The two combined help summarize if multiple parts of your app are working together as expected.
 
 ### Performance tests
 
@@ -37,11 +37,11 @@ Acceptance tests can guide towards the business desired outcome. If your custome
 
 ### UI tests
 
-UI tests can directly test the user interface interactions of an app. It's meant to mimic an actual user clicking and interacting with your app, and to test if the UI response is correct. UI tests are at the top of the testing pyramid. There are many frameworks that can automate UI interactions. For example, [Playwright](https://playwright.dev/dotnet/docs/why-playwright) can automate the browser to mimic a user using your website.
+UI tests can directly test the user interface interactions of an app. UI tests are meant to mimic an actual user clicking and interacting with your app, and to test if the UI response is correct. UI tests are at the top of the testing pyramid. There are many frameworks that can automate UI interactions. For example, [Playwright](https://playwright.dev/dotnet/docs/why-playwright) can automate the browser to mimic a user using your website.
 
 Another type of UI testing is manual testing, when an actual person uses your app. Having a user test out your app before it's released has some advantages and disadvantages. It can be a slower type of testing because it can take a while to describe how to use the app to a new user, and it might be difficult to repeat the exact same steps every time. The major advantage is higher confidence that the app is ready for real human customers and nothing was missed because the app was used by more than just automation.
 
 This testing method deserves careful consideration before you commit to it. It's easy to invest in UI tests, because they can seem like the most direct representation of what users are experiencing when they're using your app. The industry rapidly embraced UI tests when they first appeared on the scene for this very reason. The disadvantage is that UI also rapidly changes, so all the tests you write might need consistent updates, even for a small change. Be wary of writing too many UI tests that will need a high investment to keep up-to-date as your app grows.
 
 > [!TIP]
->  Many modern UI testing frameworks specifically address this ability to keep UI tests up-to-date, so it's good to look for platforms that also enable easier maintainability as you test.
+> Many modern UI testing frameworks specifically address this ability to keep UI tests up-to-date, so it's good to look for platforms that also enable easier maintainability as you test.

@@ -23,10 +23,10 @@ quiz:
       explanation: "Tests do encourage a more modular architecture. Unit tests encourage separating methods by functionality that can be called independently."
     - content: "The code coverage tests provide is the ultimate indication of repo health."
       isCorrect: true
-      explanation: "Code coverage isn't the ultimate indicator of a healthy repo. There could be many other factors involved, such as the number of contributors over time, the number of open bugs or issues."
+      explanation: "Code coverage isn't the ultimate indicator of a healthy repo. There could be many other factors involved, such as the number of contributors over time, or the number of open bugs or issues."
     - content: "Tests help keep track of the different capabilities of a program."
       isCorrect: false
-      explanation: "Tests can help keep track of different capabilities by checking all functionality regularly as new code is being added."
+      explanation: "Tests can help keep track of different capabilities by checking all functionality regularly as you add new code."
   - content: "The correct code coverage goal in a repo is:"
     choices:
     - content: "100 percent"

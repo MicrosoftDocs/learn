@@ -7,9 +7,9 @@ In this module, you've hopefully learned more about the purpose, concepts, and s
 
 You saw how testing can both document and verify behavior in the phone number example. Tests enable you to automatically check functionality without needing to consciously walk through every supported scenario. Any app that is constantly growing can make use of tests to verify that new functionality doesn't break old behavior.
 
-Learning about the different types of tests can open up new ways of verifying your code. Maybe your unit tests confirm the validity of some changes, but a performance test catches that a function is now taking twice as long to run. Maybe the unit tests and performance tests pass, but your UI tests catch strange behavior when it actually comes to render your UI. Testing from multiple different perspectives improves the quality of your app before it reaches customers.
+Learning about the different types of tests can open up new ways of verifying your code. Maybe your unit tests confirm the validity of some changes, but a performance test catches that a function is now taking twice as long to run. Maybe the unit tests and performance tests pass, but your UI tests catch strange UI rendering behavior. Testing from multiple different perspectives improves the quality of your app before it reaches customers.
 
-The testing schools of thought recommend different styles of testing that can drive teams towards better architecture and higher code coverage. While you don't have to follow them to the letter. It's good to know there's plenty of guidance out there for people wanting to evolve their testing practices.
+The testing schools of thought recommend different styles of testing that can drive teams towards better architecture and higher code coverage. You don't have to follow each testing discipline perfectly. Just keep in mind, there's plenty of guidance out there for people wanting to evolve their testing practices.
 
 ## References
 

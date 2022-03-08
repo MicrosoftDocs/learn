@@ -1,4 +1,4 @@
-There's much guidance out there when it comes to testing. We'll cover some of the common schools of thought that experienced developers often recommend.
+There is a lot of guidance out there when it comes to testing. We'll cover some of the common schools of thought that experienced developers often recommend.
 
 ## Test driven development (TDD)
 
@@ -12,7 +12,7 @@ For example, in the following image, you can see that `AddTest` is written and f
 There's a type of TDD called *Red/Green/Refactor*. It's a good one to know about because it provides further order to this process. Here's how it works:
 
 1. Write a failing "red" test.
-1. Add the necessary product code to make that tests pass or turn "green."
+1. Add the necessary product code to make sure that your test passes or turns "green."
 1. "Refactor" now that you have the correct functionality.
 
 The following diagram provides a visual of this type of TDD.
@@ -28,9 +28,9 @@ BDD can use many different tools, but they all tend to focus on documenting diff
 
 ## Don't repeat yourself (DRY)
 
-*Don't repeat yourself*, also known as *DRY*, is another practice in the field of testing. DRY posits that you should avoid repeating information and logic everywhere you can. You can do it by abstracting the information and honoring one "source of truth," rather than maintaining multiple copies of the same logic.
+*Don't repeat yourself*, also known as *DRY*, is another practice in the field of testing. DRY posits that you should avoid repeating information and logic everywhere you can. You can avoid repetition by abstracting the information and honoring one "source of truth," rather than maintaining multiple copies of the same logic.
 
-For example, let's say you're writing unit tests for different constructors, but you're reusing many of the parameters for multiple tests. You can write a test helper method that keeps all the parameter inputs in one place, so they can more easily be called and modified for all of your tests. It's an example of reducing duplication, so you don't repeat yourself.
+For example, let's say you're writing unit tests for different constructors, but you're reusing many of the parameters for multiple tests. You can write a test helper method that keeps all the parameter inputs in one place, so they can more easily be called and modified for all of your tests. This is an example of reducing duplication, so you don't repeat yourself.
 
 ## Choose what works best for you
 
