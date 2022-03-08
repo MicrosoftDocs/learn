@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.pytorch.intro-machine-learning.inference
-title: Save, load, and run model predictions
+title: Load and run model predictions
 metadata:
-  title: Save, load, and run model predictions
+  title: Load and run model predictions
   description: In this section we will look at how to persist model state with saving, loading, and running model predictions.
   author: cassiebreviu
-  ms.author: cassieb
+  ms.author: ruyakubu
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 8
+durationInMinutes: 5
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/intro-to-pytorch/8-inference.ipynb
+notebook: notebooks/7-inference.ipynb
 quiz:
   title: Check your knowledge
   questions:
