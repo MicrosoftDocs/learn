@@ -2,7 +2,7 @@ Any company, large or small, can be the target of a serious network attack. The 
 
 ## Distributed Denial of Service attacks
 
-The aim of a Distributed Denial of Service (DDoS) attack is to overwhelm the resources on your applications and servers, making them unresponsive or slow for genuine users. A DDoS attack will usually target any public-facing endpoint that can be accessed through the internet.
+The aim of a Distributed Denial of Service (DDoS) attack is to overwhelm the resources on your applications and servers, making them unresponsive or slow for genuine users. A DDoS attack will usually target any public-facing device that can be accessed through the internet.
 
 The three most frequent types of DDoS attack are:
 
