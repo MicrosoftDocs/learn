@@ -8,7 +8,7 @@ Ggplot2 is an R package for creating elegant graphics for data analysis. Ggplot2
 
 ## Data transformation using dplyr 
 
-dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges[1]. As such, dplyr enables you to transform the data into the right form that you need, to permit further analysis or visualization. 
+Dplyr is a grammar of data manipulation, providing a consistent set of verbs that help you solve the most common data manipulation challenges[1]. As such, dplyr enables you to transform the data into the right form that you need, to permit further analysis or visualization. 
 
 ## Storing data using data frames and tibbles 
 
