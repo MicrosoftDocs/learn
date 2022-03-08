@@ -1,4 +1,4 @@
-We discussed several important terms and concepts in this module, as they're related to Azure ThreadX RTOS. 
+We discussed several important terms and concepts in this module, as they're related to ThreadX.
 
 Following are brief definitions of some key points:
 
