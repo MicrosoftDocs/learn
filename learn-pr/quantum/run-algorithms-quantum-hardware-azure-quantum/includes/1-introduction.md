@@ -27,5 +27,4 @@ After completing this module, you'll be able to:
 
 > [!NOTE]
 > First-time users automatically get free Azure Quantum Credits for use with IonQ and Quantinuum hardware (500 USD each) when creating your workspace. If you need more credits, you can apply to the [Azure Quantum Credits program](https://aka.ms/aq/credits).
->
-> Note that you can always elect to complete the lessons in this module while skipping the job submission to Azure Quantum, however your credit card is never charged unless you explicitly change your settings and ask to be charged.
+
