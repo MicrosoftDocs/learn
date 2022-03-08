@@ -20,13 +20,13 @@ Begin by updating the *FirstClassLibrary* project with properties that will allo
       </PropertyGroup>
     ```
 
-    This code defines your Razor class library as having `<PackageId>` "My.FirstClassLibrary" and `<Version>` 0.1.0. You can enter your own name and company name appropriately in those two fields.
+    This code defines your Razor class library as having `<PackageId>` "My.FirstClassLibrary" and `<Version>` 0.1.0. Enter your own name and company name in those two fields.
 
 ## Package the library for reuse
 
 Next, you run the .NET command at the command line to package the Razor class library so that other applications outside your solution can reference it. 
 
-You could run these same steps in your continuous integration process to package a library and deploy it to NuGet.org, a GitHub repository, or another location for your organization to share.
+You can run these same steps in your continuous integration process to package a library and deploy it to NuGet.org, a GitHub repository, or another location for your organization to share.
 
 In the same folder as the *MyClassLibrary.csproj* file, run the following command:
 
