@@ -29,7 +29,7 @@ Form Recognizer is composed of the following services:
         - Supervised learning (with labeled forms)  
 
 > [!NOTE]
-> Some Form Recognizer features are in preview, as of the time this content was authored, and as a result, features and usage details may change.  You should refer to the [official page](/azure/cognitive-services/form-recognizer) for up-to-date information.
+> Some Form Recognizer features are in preview, as of the time this content was authored, and as a result, features and usage details may change.  You should refer to the [official page](/azure/cognitive-services/form-recognizer?azure-portal=true) for up-to-date information.
 
 ## Access services with the client library SDKs or REST API 
 
@@ -38,6 +38,6 @@ You can access Form Recognizer services by using a REST API or client library SD
 > [!TIP]
 > This module's exercise focuses on the Python and .NET SDKs. Microsoft also publishes open-source SDKs for Java and Node.js. The underlying REST services can be used by any language.
 
-Check out the [documentation](/azure/cognitive-services/form-recognizer/quickstarts/client-library) for quick start guides on all the available SDKs and the REST API.
+Check out the [documentation](/azure/cognitive-services/form-recognizer/quickstarts/client-library?tabs=preview%2Cv2-1&pivots=programming-language-rest-api) for quick start guides on all the available SDKs and the REST API.
 
 Form Recognizer services are also supported by a user interface known as the Form OCR Test Tool (FOTT) that can do layout extraction and model training. 
