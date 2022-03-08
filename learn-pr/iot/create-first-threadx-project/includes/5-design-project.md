@@ -42,13 +42,17 @@ In the highlighted code we create the Urgent thread, the stack for the Routine t
 
 ## Building block 4
 
-Building block 4 is also more complex than the one in the illustrative example, and it's displayed in two parts, below. 
+Building block 4 is also more complex than the one in the illustrative example, and it's displayed in two parts, below.
+
+<a name="building-block-4-part-1"></a>
 
 Building block 4, part 1, contains the function definition for Urgent thread:
 
 :::code language="c" source="../code/project-hello-world.c" range="78-104" highlight="13-14, 16-21":::
 
 Activity 1, highlighted, shows the preparation. Activity 2, also highlighted, shows the message handling.
+
+<a name="building-block-4-part-2"></a>
 
 Building block 4, part 2, contains the function definition for Routine thread:
 

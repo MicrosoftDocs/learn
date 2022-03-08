@@ -1,8 +1,8 @@
-We discussed several important terms and concepts in this module, as they are related to Azure ThreadX RTOS. Following are brief definitions of some key points.
+We discussed several important terms and concepts in this module, as they're related to Azure ThreadX RTOS. Following are brief definitions of some key points.
 
 ### Thread
 
-A semi-independent program segment; threads share the same memory space within a program. The terms "task" and "thread" are sometimes used interchangeably. However, we use the term "thread" because it's more descriptive and more accurately reflects the processing that occurs.
+A thread is a semi-independent program segment; threads share the same memory space within a program. The terms "task" and "thread" are sometimes used interchangeably. However, we use the term "thread" because it's more descriptive and more accurately reflects the processing that occurs.
 
 ### ThreadX building blocks
 
@@ -19,4 +19,4 @@ A somewhat arbitrary classification of a ThreadX project, intended to clarify th
 
 ### Visual Studio
 
-An integrated development environment (IDE) from Microsoft. It is used to develop computer programs, as well as websites, web apps, web services, and mobile apps. We use Visual Studio to build and debug our ThreadX projects.
+An integrated development environment (IDE) from Microsoft. It's used to develop computer programs, and websites, web apps, web services, and mobile apps. We use Visual Studio to build and debug our ThreadX projects.
