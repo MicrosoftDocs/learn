@@ -18,12 +18,13 @@ After completing this module, you'll be able to:
 - Differentiate and comprehend the main hardware solutions for quantum computers.
 - Understand how Azure Quantum provides you with access to quantum devices to run quantum algorithms.
 - Adapt and create Q# applications to run them in Azure Quantum.
-- Submit and manage jobs in Azure Quantum in your preferred environment: Python, Jupyter notebooks, or the Azure CLI.
+- Submit and manage jobs in Azure Quantum in a Jupyter notebook in the Azure Quantum portal.
 
 ## Prerequisites
 
 - [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true)
-- [Create your first Q# program by using the Quantum development kit](/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true)
+- [Solve graph coloring problems by using Grover's search](/learn/modules/solve-graph-coloring-problems-grovers-search/?azure-portal=true)
+- An Azure Quantum workspace.
 
 > [!NOTE]
 > First-time users automatically get free Azure Quantum Credits for use with IonQ and Quantinuum hardware (500 USD each) when creating your workspace. If you need more credits, you can apply to the [Azure Quantum Credits program](https://aka.ms/aq/credits).
