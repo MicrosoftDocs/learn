@@ -89,7 +89,9 @@ Let's break that down:
 
 ## Code
 
-Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the `weight` is included in the definition of the `Term` objects:
+Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the `weight` is included in the definition of the `Term` objects.
+
+Click **+ Code** to add another new cell and add the following lines:
 
 ```python
 """
