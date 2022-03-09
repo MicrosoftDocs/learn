@@ -85,7 +85,7 @@ If you're pitching at a public event, or one that will be recorded and posted on
 
 ### Display your product
 
-If you've built a great product, be sure to display it in your presentation. It has been said, only somewhat facetiously, that the likelihood of a live product demo working is inversely proportional to the importance of the meeting. If you're feeling brave, do include a live demo in your pitch, but be prepared with at least one fallback soluction, such as a prerecorded video walk-through of your product or a few attractive photos.
+If you've built a great product, be sure to display it in your presentation. It has been said, only somewhat facetiously, that the likelihood of a live product demo working is inversely proportional to the importance of the meeting. If you're feeling brave, do include a live demo in your pitch, but be prepared with at least one fallback solution, such as a prerecorded video walk-through of your product or a few attractive photos.
 
 ## Deliver a compelling pitch
 
