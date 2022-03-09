@@ -1,6 +1,8 @@
-Now you'll create quantum entanglement in Q#. You'll also
-estimate the resources that you need to run our algorithms. To estimate resources, you'll use the 
-`ResourcesEstimator` tool that the Quantum Development Kit (QDK) provides.
+Now you'll create quantum entanglement in Q#. This time, instead of you´ll write a Q# program using an online Jupyter notebook in your Azure Quantum workspace. 
+
+A [Jupyter](https://jupyter.org/) notebook is a document that contains both rich text and code and can run in your browser, and can run Q# and Python code in Azure Quantum.  Notebooks can be created directly in the Azure Quantum portal, and offer features such as preloaded connection information and standard Q# libraries. 
+
+If you don´t have an Azure Quantum workspace yet, check the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module.
 
 ## Create a new Notebook in your workspace
 
