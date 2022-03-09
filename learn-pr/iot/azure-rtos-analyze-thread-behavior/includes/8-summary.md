@@ -1,4 +1,4 @@
-We discussed several important terms and concepts in this module, as they are related to Azure ThreadX RTOS. Following are brief definitions of some key points.
+We discussed several important terms and concepts in this module, as they are related to ThreadX. Following are brief definitions of some key points.
 
 ### Application timer
 
