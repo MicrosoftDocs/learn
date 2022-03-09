@@ -31,7 +31,7 @@ The last thing we want to try on our VM is to install a web server. One of the e
 1. In Azure Cloud Shell, use `curl` to read the default page from your Linux web server by running the following command, replacing `<PublicIPAddress>` with the public IP you found previously. You can also open a new browser tab and try to browse to the public IP address.
 
     ```bash
-    curl -m 10 <PublicIPAddress>
+    curl -m 80 <PublicIPAddress>
     ```
 
     This command will fail, because the Linux virtual machine doesn't expose port 80 (`http`) through the network security group that secures the network connectivity to the virtual machine. We can change this by running the Azure CLI command `vm open-port`.
