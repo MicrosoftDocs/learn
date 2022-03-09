@@ -163,7 +163,7 @@ Once you have the documents in storage, you can use Azure Cognitive Search to ex
 20. In the bottom half of the **Overview** page for your Azure Cognitive Search resource, select the **Indexers** tab.This tab shows the newly created **coffee-indexer**. Wait a minute, and select **&orarr; Refresh** until the **Status** indicates success.
 21. Select the indexer name to see more details.
 
-:::image type="content" source="../media/6a-search-indexer-success.png" alt-text="Screenshot that shows the coffee-indexer Indexer successfully created.":::
+    :::image type="content" source="../media/6a-search-indexer-success.png" alt-text="Screenshot that shows the coffee-indexer Indexer successfully created.":::
 
 ## Query the index
 
