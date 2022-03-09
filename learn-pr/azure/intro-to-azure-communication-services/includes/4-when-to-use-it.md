@@ -10,7 +10,7 @@ We'll list some criteria that will help you make the right decision.
 * Geographic Region - What Location/Market are you targeting?
 * Suitability - Azure Communication Services has many features, how can you be sure which one is right for a scenario?
 
-### Existing Business/Application/Idea
+### Existing business/application/idea
 
 Azure Communication Services can't create an application or business all by itself. It works best when there's an existing application with which to integrate Azure Communication Services into. Or at least if an idea exists that it would make sense to create an application for. If you don't have an existing application or idea, then a different product that fulfills your needs and requirements might be better.
 
@@ -43,7 +43,7 @@ Additionally the following programming languages are supported:
 
 If your business/application/idea, intends to use languages or devices/browsers that Azure Communication Services doesn't support. Then Azure Communication Services may not be correct for you.
 
-### Geographic Region
+### Geographic region
 
 Some features of Azure Communication Services are only available in certain countries or locations. Additionally certain countries, or locations may have restrictions on features. These restrictions or gaps in Azure Communication Services' support across the world can be caused by legal or regulatory matters or by Azure Communication Services simply not supporting a region yet. When considering if Azure Communication Services is right for you, ensure that you factor this into your current business as well as any potential expansion of your business.
 
@@ -72,7 +72,7 @@ If in doubt, starting with chat and in particular a chat experience that does no
 
 Ultimately, Azure Communication Services works best when you've already got existing ideas, applications, and businesses that need communication features and a compatible platform to launch on. As with many things there are cases where it might be difficult to decide or edge cases where, even with these criteria in mind you may still use Azure Communication Services. The decision is up to you and you may need to make a judgment call based on your individual circumstances.
 
-### Applying criteria to the Example Scenario
+### Applying criteria to the example scenario
 
 If we think back to our example scenario from earlier in the module with Contoso Appliances (our appliance), we can apply our decision criteria to their goals and requirements:
 
