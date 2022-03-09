@@ -21,7 +21,7 @@ After just a few hours, you've started getting calls from customer service that 
 
 You quickly see the mistake. All newly added domestic numbers accidentally have the country code added twice! As you think back, you realize you had changed all new numbers inserted into your database to append country codes, but the domestic function had also been doing that already.
 
-Tests could have helped you catch that change in functionality earlier by making sure new functionality doesn't regress old functionality.
+Tests could have helped you catch that change in functionality earlier by making sure the new functionality doesn't regress old functionality.
 
 ## What will we be doing?
 
