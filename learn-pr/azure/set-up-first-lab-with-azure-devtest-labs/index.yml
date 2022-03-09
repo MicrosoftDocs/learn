@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.set-up-first-lab-with-azure-devtest-labs
+uid: learn.setup-first-lab-using-azure-devtest-labs
 metadata:
   moduleType: standard
   title: Set up your first development lab by using Azure DevTest Labs
@@ -31,12 +31,12 @@ products:
 - azure-devtest-labs
 - azure-portal
 units:
-- learn.set-up-first-lab-with-azure-devtest-labs.introduction
-- learn.set-up-first-lab-with-azure-devtest-labs.configure-development-lab
-- learn.set-up-first-lab-with-azure-devtest-labs.exercise-configure-development-lab
-- learn.set-up-first-lab-with-azure-devtest-labs.create-claim-lab-vm
-- learn.set-up-first-lab-with-azure-devtest-labs.exercise-configure-claim-development-vm
-- learn.set-up-first-lab-with-azure-devtest-labs.knowledge-check
-- learn.set-up-first-lab-with-azure-devtest-labs.summary
+- learn.setup-first-lab-using-azure-devtest-labs.introduction
+- learn.setup-first-lab-using-azure-devtest-labs.configure-development-lab
+- learn.setup-first-lab-using-azure-devtest-labs.exercise-configure-development-lab
+- learn.setup-first-lab-using-azure-devtest-labs.create-claim-lab-vm
+- learn.setup-first-lab-using-azure-devtest-labs.exercise-configure-claim-development-vm
+- learn.setup-first-lab-using-azure-devtest-labs.knowledge-check
+- learn.setup-first-lab-using-azure-devtest-labs.summary
 badge:
-  uid: learn.set-up-first-lab-with-azure-devtest-labs.badge
+  uid: learn.setup-first-lab-using-azure-devtest-labs.badge
