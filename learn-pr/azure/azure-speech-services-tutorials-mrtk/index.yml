@@ -16,7 +16,7 @@ abstract: |
   - Implemented speech commands powered by Azure.
   - Our project can now successfully translate the words you speak into several different languages.
   - Our project now have AI-powered speech commands, allowing our application to recognize the users' intent even if they do not utter precise commands.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-speech-services-tutorials-mrtk.svg
 levels:
 - beginner
 roles:
