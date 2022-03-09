@@ -15,11 +15,11 @@ To get started, copy a sample notebook from the notebook gallery.
 
 To run the sample notebook, follow these steps.
 
-1. In **My notebooks**, select the **hello-world-qsharp-ionq** notebook. 
+1. In **My notebooks**, select the **grovers-search** notebook. 
 1. To run the full program from top to bottom, select **Run all**. 
 1. To walk through the example and run each cell individually from top to bottom, select the cell you want to run and select the **run icon**.
 
-
+The sample notebook includes both explanatory text and code; you can go through each cell, run the code cells and interprete the outcomes. 
 
 
 In the next unit, you're going to see some ideas to continue exploring quantum computing with Azure Quantum.
