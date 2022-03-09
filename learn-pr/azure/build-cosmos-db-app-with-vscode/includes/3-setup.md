@@ -48,36 +48,10 @@ In this unit, you will create a basic console app using the integrated terminal,
    > [!NOTE]
    > If you do not show the **Program.cs** in the Explorer pane, select **File** > **Open file** > and open it from File Explorer.  
 
-   If you are using .NET 6, you may find it easier to do the exercises in this module by replacing the template code in **Program.cs**:
-
-   ```csharp
-   // See https://aka.ms/new-console-template for more information
-   Console.WriteLine("Hello, World!");
-   ```
-
-   With the older style template code:
-
-   ```csharp
-   using System;
-    
-   namespace MyApp // Note: actual namespace depends on the project name.
-   {
-      internal class Program
-      {
-         static void Main(string[] args)
-         {
-               Console.WriteLine("Hello World!");
-         }
-      }
-   }
-   ```
-
-1. Add the following using statements after `using System;`.
+1. Add the following using statements to the top of the file.
 
    ```csharp
    using System.Configuration;
-   using System.Linq;
-   using System.Threading.Tasks;
    using System.Net;
    using Microsoft.Azure.Documents;
    using Microsoft.Azure.Documents.Client;
@@ -132,24 +106,24 @@ In this unit, you will create a basic console app using the integrated terminal,
 
 Now it's time to create an instance of the `DocumentClient`, which is the client-side representation of the Azure Cosmos DB service. This client is used to configure and execute requests against the service.
 
-1. In Program.cs, add the following to the beginning of the `Program` class.
+1. In **Program.cs**, add the following line after the using statements.
 
    ```csharp
-   private DocumentClient client;
+   DocumentClient client;
    ```
 
-1. Add a new asynchronous task to create a new client, and check whether the **Users** database exists by adding the following method after the `Main` method.
+1. Add a new asynchronous task to create a new client, and check whether the **Users** database exists by adding the following method after the line you just added.
 
    ```csharp
-   private async Task BasicOperations()
+   async Task BasicOperations()
    {
-       this.client = new DocumentClient(new Uri(ConfigurationManager.AppSettings["accountEndpoint"]), ConfigurationManager.AppSettings["accountKey"]);
-
-       await this.client.CreateDatabaseIfNotExistsAsync(new Database { Id = "Users" });
-
-       await this.client.CreateDocumentCollectionIfNotExistsAsync(UriFactory.CreateDatabaseUri("Users"), new DocumentCollection { Id = "WebCustomers" });
-
-       Console.WriteLine("Database and collection validation complete");
+      client = new DocumentClient(new Uri(ConfigurationManager.AppSettings["accountEndpoint"]), ConfigurationManager.AppSettings["accountKey"]);
+    
+      await client.CreateDatabaseIfNotExistsAsync(new Database { Id = "Users" });
+    
+      await client.CreateDocumentCollectionIfNotExistsAsync(UriFactory.CreateDatabaseUri("Users"), new DocumentCollection { Id = "WebCustomers" });
+    
+      Console.WriteLine("Database and collection validation complete");
    }
    ```
 
@@ -159,13 +133,12 @@ Now it's time to create an instance of the `DocumentClient`, which is the client
    dotnet run
    ```
 
-1. Copy and paste the following code into the **Main** method, overwriting the current `Console.WriteLine("Hello World!");` line.
+1. Copy and paste the following code into **Program.cs**, overwriting the current `Console.WriteLine("Hello World!");` line.
 
    ```csharp
    try
    {
-       Program p = new Program();
-       p.BasicOperations().Wait();
+       BasicOperations().Wait();
    }
    catch (DocumentClientException de)
    {

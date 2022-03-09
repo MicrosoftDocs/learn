@@ -13,17 +13,17 @@ Multiple documents in your database frequently need to be updated at the same ti
 1. To run this default stored procedure from your application, add the following code to the **Program.cs** file.
 
     ```csharp
-    public async Task RunStoredProcedure(string databaseName, string collectionName, User user)
+    async Task RunStoredProcedure(string databaseName, string collectionName, User user)
     {
         await client.ExecuteStoredProcedureAsync<string>(UriFactory.CreateStoredProcedureUri(databaseName, collectionName, "UpdateOrderTotal"), new RequestOptions { PartitionKey = new PartitionKey(user.UserId) });
         Console.WriteLine("Stored procedure complete");
     }
     ```
 
-1. Now copy the following code and paste it before the `await this.DeleteUserDocument("Users", "WebCustomers", yanhe);` line in the **BasicOperations** method.
+1. Now copy the following code and paste it before the `await DeleteUserDocument("Users", "WebCustomers", yanhe);` line in the **BasicOperations** method.
 
     ```csharp
-    await this.RunStoredProcedure("Users", "WebCustomers", yanhe);
+    await RunStoredProcedure("Users", "WebCustomers", yanhe);
     ```
 
 1. In the integrated terminal, run the following command to run the sample with the stored procedure.
