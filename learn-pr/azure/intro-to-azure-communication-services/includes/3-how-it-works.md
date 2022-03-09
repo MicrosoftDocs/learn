@@ -32,7 +32,7 @@ Server-side programming is performed by downloading these SDKs, and writing smal
 
 Not all parts of Azure Communications Services will need it, but it's good to be aware of so you know what to expect.
 
-ACS has Server SDKs available for:
+Azure Communication Services has Server SDKs available for:
 
 * JavaScript
 * .NET
@@ -47,7 +47,7 @@ The last component of how Azure Communication Services works is also the most im
 
 Client SDKs are downloaded and then integrated into your existing applications and products. When a customer makes a video call or talks using chat, it's the Client SDKs that connect you to the call and receive/transmit the audio and video.
 
-ACS has Client SDKs available for:
+Azure Communication Services has Client SDKs available for:
 
 * JavaScript
 * .NET (C#)

@@ -8,9 +8,9 @@ In this module our goals were to:
   - Environment
   - Geographic Region
 
-When evaluating Azure Communication Services we saw that the features and products within Azure Communication Services (ACS) will help the fictional home appliance company to solve its problems and introduce the new features and meet the goals it is after. We also applied our decision criteria. By checking through the criteria we learnt that there was a good fit for utilizing Azure Communication Services within this scenario.
+When evaluating Azure Communication Services we saw that the features and products within Azure Communication Services (Azure Communication Services) will help the fictional home appliance company to solve its problems and introduce the new features and meet the goals it is after. We also applied our decision criteria. By checking through the criteria we learnt that there was a good fit for utilizing Azure Communication Services within this scenario.
 
-By learning about ACS and using our decision criteria to evaluate if ACS is right for you we hope that you've gained valuable insight into what ACS has to offer and how it might help you with your business needs.
+By learning about Azure Communication Services and using our decision criteria to evaluate if Azure Communication Services is right for you we hope that you've gained valuable insight into what Azure Communication Services has to offer and how it might help you with your business needs.
 
 ## References
 
@@ -28,7 +28,7 @@ Combining Azure Communication Services features with other Azure products:
 
 - [Using Azure Event Grid to process SMS, Chat and Calling events](/azure/event-grid/event-schema-communication-services) through Event Grid endpoints such as Azure Functions and Webhooks to enhance functionality through things like automatic responses, bots, call routing etc.
 - [Sending Diagnostic information on call quality, usage etc to Azure Monitor Log Analytics](/azure/communication-services/concepts/analytics/enable-logging).
-- Using [Teams Interoperability](/azure/communication-services/concepts/teams-interop) to bring ACS calls into your Microsoft Teams environment.
+- Using [Teams Interoperability](/azure/communication-services/concepts/teams-interop) to bring Azure Communication Services calls into your Microsoft Teams environment.
 - Use [Azure Logic Apps](/azure/communication-services/quickstarts/sms/logic-app) to process SMS messages for SMS Automation.
 
 ### Regional and location specific information

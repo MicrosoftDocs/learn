@@ -1,10 +1,10 @@
-Communication is of ever growing importance within our modern world. Keeping connected to your customers, is of vital to the success of your business. Building communication solutions that are able to keep up with this need is challenging. Azure Communication Services (ACS) takes the pain out of this by providing services and products that allow you to deploy custom communication solutions easily with Azure. Additionally, with ACS you do not need to be an expert in the underlying technologies such as media encoding or telephony, ACS takes care of it for you.
+Communication is of ever growing importance within our modern world. Keeping connected to your customers, is of vital to the success of your business. Building communication solutions that are able to keep up with this need is challenging. Azure Communication Services takes the pain out of this by providing services and products that allow you to deploy custom communication solutions easily with Azure. Additionally, with Azure Communication Services you do not need to be an expert in the underlying technologies such as media encoding or telephony, Azure Communication Services takes care of it for you.
 
 :::image type="content" source="../media/communication-services.png" alt-text="Communication Services marketing image.":::
 
 ## Example scenario
 
-Let's start with an example scenario that will help you understand the potential of ACS. Imagine you work on the engineering/product team of a household appliance producer(Contoso Appliances) which offers many appliances for the household such as refrigerators, washers, and dryers. As a company you've been struggling with contacting and communicating with your customers when it comes to support, sales and maintenance. 
+Let's start with an example scenario that will help you understand the potential of Azure Communication Services. Imagine you work on the engineering/product team of a household appliance producer(Contoso Appliances) which offers many appliances for the household such as refrigerators, washers, and dryers. As a company you've been struggling with contacting and communicating with your customers when it comes to support, sales and maintenance. 
 
 This has lead to a number of problems in the business such as:
 
@@ -31,8 +31,8 @@ In this module, you'll:
 
 - Discover the various components of Azure Communication Services.
 - Learn how they can be used to solve communication-related scenarios, such as the one above.
-- Learn how to evaluate if ACS is the right solution for your communication problems.
+- Learn how to evaluate if Azure Communication Services is the right solution for your communication problems.
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to evaluate ACS for its suitability to make sure it is the right choice for your business.
+By the end of this session, you'll be able to evaluate Azure Communication Services for its suitability to make sure it is the right choice for your business.
