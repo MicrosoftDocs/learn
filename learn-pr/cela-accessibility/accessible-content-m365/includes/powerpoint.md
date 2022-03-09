@@ -47,7 +47,7 @@ When slides are identified as having missing titles in the Accessibility Checker
 1. Open the drop-down for **Missing slide title**.
 2. Choose an option from the list: "Set as slide title," "Add slide title," or "Add hidden slide title."
 
-:::image type="content" source="../media/missing-slide-title.png" alt-text="Screenshot that shows the Accessibility Checker with the 'Missing slide title' list highlighted.":::
+:::image type="content" source="../media/missing-slide-title.png" alt-text="Screenshot that shows the Accessibility Checker with the Missing slide title list highlighted.":::
 
 ## Charts and graphs
 

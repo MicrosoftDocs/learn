@@ -153,7 +153,7 @@ Try running `sns.pairplot` twice more on some other combinations of columns and 
   ```Output
   <seaborn.axisgrid.PairGrid at 0x3c1b3928>
   ```
-  :::image type="content" alt-text="A graph showing the pair plot output for data in the Survived column and the Pclass column." source="../media/output-pair-plot-4.png" loc-scope="azure":::
+  :::image type="content" alt-text="A graph showing the pair plot output for data in the Survived column and the P class column." source="../media/output-pair-plot-4.png" loc-scope="azure":::
 </details>
 
 <br /><br />

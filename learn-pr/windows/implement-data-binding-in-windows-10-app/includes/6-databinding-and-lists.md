@@ -1,6 +1,6 @@
 ::: zone pivot="uwp"
 
-![Logo of UWP and WPF. WPF appears dimmed.](../media/tech-uwp.png)
+![Tech logo of U W P and W P F. W P F appears dimmed.](../media/tech-uwp.png)
 
 So far, you've only used data binding to display and edit the properties of a single object. In this lesson, you'll apply data binding to display a collection of objects. To make things simple, these objects will be colors. More specifically, they'll be multiple instances of the `ColorDescriptor` class.
 
@@ -208,7 +208,7 @@ The next lesson illustrates how you can select items from a `ListBox` or a dropd
 
 ::: zone pivot="wpf"
 
-![Logo of UWP and WPF. UWP appears dimmed.](../media/tech-wpf.png)
+![Tech logo of U W P and W P F. U W P appears dimmed.](../media/tech-wpf.png)
 
 So far, you've only used data binding to display and edit the properties of a single object. In this lesson, you'll apply data binding to display a collection of objects. To make things simple, these objects will be colors. More specifically, they'll be multiple instances of the `ColorDescriptor` class.
 
