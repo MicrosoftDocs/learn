@@ -60,8 +60,8 @@ Now you can test your deployed service.
     ```
 4. Click on the **Test** button. On the right hand side of the screen, the *Test results* have two options. Select **raw**.   
 
-  > [!div class="centered"]
-  > ![Example of the results of testing the model.](../media/workaround-test.png)
+    > [!div class="centered"]
+    > ![Example of the results of testing the model.](../media/workaround-test.png)
 
 5. You should see results with a returned prediction of 416 rentals given the input features. The test pane took the input data and used the model you trained to return the predicted number of rentals. 
 
