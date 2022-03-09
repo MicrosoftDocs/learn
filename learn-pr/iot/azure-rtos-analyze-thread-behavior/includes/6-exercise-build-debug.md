@@ -27,7 +27,7 @@ You get to analyze your work with ProjectHelloWorld with this project. We'll use
 
 If all has gone well, you should see initial output appearing on the screen similar to this:
 
-:::image type="content" source="../media/partial-output.png" alt-text="Figure showing partial output from Project Analyze.":::  <br /> *Partial Output from ProjectAnalyze*
+:::image type="content" source="../media/partial-output.png" alt-text="Image showing partial output from Project Analyze.":::  <br /> *Partial Output from ProjectAnalyze*
 
 Your file has an application timer that invokes a function periodically (that is, 500 timer ticks) that displays a statistical summary for both threads. This function will compute the average cycle times, and then display those values, the current time, and the values of the counters. The second part of the output is produced by a thread performance info get for the Routine thread.
 
@@ -39,7 +39,7 @@ Your file has an application timer that invokes a function periodically (that is
 
 After modifying the sample code, build and debug this project to produce output shown in the following image:
 
-:::image type="content" source="../media/modified-output.png" alt-text="Figure showing partial output from Project Analyze.":::  <br /> *Output from modified ProjectAnalyze*
+:::image type="content" source="../media/modified-output.png" alt-text="Image showing complete output from Project Analyze.":::  <br /> *Complete Output from modified ProjectAnalyze*
 
 > [!NOTE]
 > We used the contents of the internal system clock (for example: `tx_time_get()`) to obtain the times when the two threads completed their cycles. We used an application timer to display summary statistical results every 500 timer ticks.
