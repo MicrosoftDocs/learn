@@ -30,9 +30,9 @@ Clear context is particularly important for deep-tech startups or those operatin
 
 ### Incredulity
 
-A lot of great startup pitches have an element of incredulity, a quality that has your audience thinking, "I had no idea the problem was this bad. It's amazing that nobody has solved this already!" This can be an effective way to set up your solution.
+A lot of great startup pitches contain an element of surprise, some new fact or insight that has your audience thinking, "I had no idea the problem was this bad. It's amazing that nobody has solved it already!" This can be an effective way to set up your solution.
 
-For example, if your startup is focused on helping nurses to prepare hospital operating theaters, you might want to start by telling your audience that in X percent of operations there's at least one missing item of essential equipment, which leads to Y thousand preventable deaths every year. When you reveal your solution, it will be much more effective, because they can see how important it is to solve the problem.
+For example, if your startup is focused on helping nurses prepare hospital operating theaters, you might want to start by telling your audience that in X percent of medical procedures there's at least one missing item of essential equipment, and this simple oversight leads to Y thousand preventable deaths every year. By starting with this surprising revelation, you'll give your audience a much clearer understanding of the seriousness of the problem and, therefore, of the importance of your solution.
 
 ### An aha moment
 
