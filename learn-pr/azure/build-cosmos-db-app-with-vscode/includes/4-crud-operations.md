@@ -1,10 +1,11 @@
-Once the connection to Azure Cosmos DB has been made, the next step is to create, read, replace, and delete the documents that are stored in the database. In this unit, you will create User documents in your `WebCustomer` collection. Then, you'll retrieve them by ID, replace them, and delete them.
+Once the connection to Azure Cosmos DB has been made, the next step is to create, read, replace, and delete the documents that are stored in the database. In this unit, you'll create User documents in your `WebCustomer` collection. Then, you'll retrieve them by ID, replace them, and delete them.
 
 ## Working with documents programmatically
 
 Data is stored in JSON documents in Azure Cosmos DB. [Documents](/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal, as shown in the previous module, or programmatically, as described in this module. Azure Cosmos DB provides client-side SDKs for .NET, .NET Core, Java, Node.js, and Python, each of which supports these operations. In this module, we'll be using the .NET SDK to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
 
 The main operations for Azure Cosmos DB documents are part of the [DocumentClient](/dotnet/api/microsoft.azure.documents.client.documentclient?view=azure-dotnet) class:
+
 * [CreateDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.createdocumentasync?view=azure-dotnet)
 * [ReadDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.readdocumentasync?view=azure-dotnet)
 * [ReplaceDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.replacedocumentasync?view=azure-dotnet)
@@ -19,7 +20,7 @@ Once you have those classes created to represent your users, you'll create new u
 
 ## Create documents
 
-1. First, create a **User** class that represents the objects to store in Azure Cosmos DB. We will also create **OrderHistory** and **ShippingPreference** classes that are used within **User**. Note that documents must have an **Id** property serialized as **id** in JSON.
+1. First, create a **User** class that represents the objects to store in Azure Cosmos DB. We'll also create **OrderHistory** and **ShippingPreference** classes that are used within **User**. Documents must have an **Id** property serialized as **id** in JSON.
 
     To create these classes, copy and paste the following **User**, **OrderHistory**, and **ShippingPreference** classes underneath the **BasicOperations** method.
 

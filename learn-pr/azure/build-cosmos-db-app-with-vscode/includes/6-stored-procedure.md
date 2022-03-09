@@ -6,7 +6,7 @@ Multiple documents in your database frequently need to be updated at the same ti
 
 1. In the text box at the top of the screen, type `UpdateOrderTotal` and press Enter to give the stored procedure a name.
 
-1. In the **Azure: Cosmos DB** tab, expand **Stored Procedures** and click **UpdateOrderTotal**.
+1. In the **Azure: Cosmos DB** tab, expand **Stored Procedures** and select **UpdateOrderTotal**.
 
     By default, a stored procedure that retrieves the first item is provided.
 
