@@ -46,27 +46,37 @@ The idea is to make these invalid solutions so expensive that the solver can eas
 
 ## Azure Quantum setup
 
-The Azure Quantum Optimization service is exposed via a Python SDK, which you will be making use of during the rest of this module. This means that before you get started with formulating the problem, you first need to import some Python modules and set up an Azure Quantum `Workspace`.
+Now you´ll write and run the program in a Jupyter notebook in the Azure Quantum portal. To do so you need to have an Azure Quantum workspace with the **Microsoft QIO** provider enabled, and you need to create a new Notebook in your workspace. 
 
-> [!NOTE]
-> If you haven't created an Azure Quantum Workspace yet, you can learn more about how to do this in one of the previous modules from this series on Microsoft Quantum.
+1. Log in to the [Azure portal](https://portal.azure.com/) and select the workspace you created in the previous step.
+1. In the left blade, select **Notebooks**.
+1. Click **My Notebooks** and click **Add New**.
+1. In **Kernel Type**, select **IPython**.
+1. Type a name for the file, for example *JobShopOptimization.ipynb*, and click **Create file**. 
 
-You will need to enter your Azure Quantum workspace details in the cell below before you run it:
+When your new Notebook opens, it automatically creates the code for the first cell, based on your subscription and workspace information.
 
-```python
+```py
+from azure.quantum import Workspace
+workspace = Workspace (
+    subscription_id = <your subscription ID>, 
+    resource_group = <your resource group>,   
+    name = <your workspace name>,          
+    location = <your location>        
+    )
+```
+
+You'll need to import two additional modules. Click **+ Code** to add a new cell and add the following lines:
+
+
+```py
 from typing import List
 from azure.quantum.optimization import Term
-from azure.quantum import Workspace
-
-workspace = Workspace(
-    resource_id = "", # add the Resource ID of the Azure Quantum workspace you created
-    location = ""     # add the location of your Azure Quantum workspace (e.g. "westus")
-)
 ```
 
 ## Problem formulation
 
-Now that you have set up your development environment, you can start to formulate the problem.
+Now that you have set up your notebook, you can start to formulate the problem.
 
 The first step is to take the constraints identified above and formulate them as mathematical equations that you can work with.
 
@@ -143,7 +153,20 @@ As introduced above, the binary variables over which you are optimizing are the 
 
 In order to submit a problem to the Azure Quantum services, you will first be creating a `Problem` instance. This is a Python object that stores all the required information, such as the cost function details and what kind of problem we are modeling.
 
-To represent cost functions, we'll make use of a formulation using `Term` objects. Ultimately, any polynomial cost function can be written as a simple sum of products. That is, the function can be rewritten to have the following form, where $p_k$ indicates a product over the problem variables $x_0, x_1, \dots$:
+> [!NOTE]
+> This code submits the terms to the Azure Quantum `SimulatedAnnealing` solver. You could also have used the same problem definition with any of the other Azure Quantum Optimization solvers available (for example, `ParallelTempering`). You can find further information on the various solvers available through the Azure Quantum Optimization service on the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page.
+
+Click **+ Code** to add another new cell and add the following lines:
+
+```py
+from azure.quantum.optimization import Problem, ProblemType, Term
+from azure.quantum.optimization import SimulatedAnnealing # Change this line to match the Azure Quantum Optimization solver type you wish to use
+
+# Problem type is PUBO in this instance. You could also have chosen to represent the problem in Ising form.
+problem = Problem(name="Job shop Scheduling", problem_type=ProblemType.pubo, terms=terms)
+```
+
+To represent cost functions, you'll make use of a formulation using `Term` objects. Ultimately, any polynomial cost function can be written as a simple sum of products. That is, the function can be rewritten to have the following form, where $p_k$ indicates a product over the problem variables $x_0, x_1, \dots$:
 
 $$ H(x) = \sum_k \alpha_k \cdot p_k(x_0, x_1, \dots) $$
 
@@ -167,7 +190,9 @@ Term(c: float, indices: [int, int, int, ...])
 
 ## Defining problem parameters in code
 
-Now that you've defined the problem parameters mathematically, you can transform this information to code. Below, you can see the code representation of the problem parameters: the maximum allowed time `T`, the operation processing times `processing_time`, the mapping of operations to jobs (`jobs_ops_map` and `ops_jobs_map`),  and the assignment of operations to machines (`machines_ops_map`).
+Now that you've defined the problem parameters mathematically, you can transform this information to code. 
+
+Add a new cell to the notebook and copy the code representation of the problem parameters: the maximum allowed time `T`, the operation processing times `processing_time`, the mapping of operations to jobs (`jobs_ops_map` and `ops_jobs_map`),  and the assignment of operations to machines (`machines_ops_map`).
 
 ```python
 # Set problem parameters
@@ -196,7 +221,7 @@ machines_ops_map = {
 ops_jobs_map, T = process_config(jobs_ops_map, machines_ops_map, processing_time, T)
 ```
 
-The helper function `process_config` (seen above) is defined as follows:
+The helper function `process_config` (seen above) is defined as follows. Add a new cell and copy the code:
 
 ```python
 def process_config(jobs_ops_map:dict, machines_ops_map:dict, processing_time:dict, T:int):

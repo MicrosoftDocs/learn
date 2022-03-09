@@ -32,7 +32,7 @@ In particular, these computers use chains of trapped ions and each ion represent
 These computers use lasers and electromagnetic pulses to cause transitions in the internal states of the ions and to modify the vibrational motion of the ion chain. By carefully combining transformations of the
 vibrational motion of the ion chain and individual ion transitions, it's possible to get qubits entangled and apply a universal set of quantum operations.
 
-Azure Quantum provides access to trapped ion quantum devices through our partners, IonQ and Honeywell. In this module, you'll submit quantum operations to this kind of devices.
+Azure Quantum provides access to trapped ion quantum devices through our partners, IonQ and Quantinuum. In this module, you'll submit quantum operations to this kind of devices.
 
 ### Superconducting quantum computers
 

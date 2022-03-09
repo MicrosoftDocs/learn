@@ -7,8 +7,6 @@ Azure Quantum is a cloud service that enables both quantum computing application
 
 In the [Quantum Computing Foundations](../../../paths/quantum-computing-fundamentals/index.yml?azure-portal=true) learning path, the quantum space exploration crew teaches you how to use quantum and quantum-inspired algorithms to solve security, logistics, infrastructure, and other types of optimization problems. Besides solving problems on the on-board simulator via the Quantum Development Kit, communication with Earth allows you to access the powerful optimizers and quantum hardware available on Azure Quantum to successfully complete your mission.
 
-![Figure showing Azure Quantum services.](../media/1-azure-quantum-services.png)
-
 In this module, you'll set up your access to Azure Quantum and learn about solutions that are available to you in the cloud.
 
 Azure Quantum offers two types of solutions: quantum computing and optimization. Different divisions of the quantum space crew will need:
@@ -24,6 +22,7 @@ In this module, you'll:
 - Discover what the Azure Quantum service has to offer: quantum computing and optimization.
 - Prepare your Azure account to use Azure Quantum.
 - Create an Azure Quantum workspace.
+- Run a sample notebook on Azure Quantum.
 
 ## Prerequisites
 

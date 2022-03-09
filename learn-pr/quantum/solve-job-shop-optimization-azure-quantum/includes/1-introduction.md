@@ -24,7 +24,6 @@ After completing this module, you'll be able to:
 
 If you don't have these tools yet, we recommend that you follow the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module first.
 
-> [!IMPORTANT]
-> This module makes use of paid services on Azure Quantum. If you are just starting out with Microsoft QIO, the cost of running the code in this module in a Pay-As-You-Go subscription should be < $0.01 USD (Azure infrastructure charges, can be covered with subscription credits), as the first compute hour on Microsoft QIO solvers is free. For reference, this module should roughly consume 2 compute seconds. You can refer to the [Microsoft QIO pricing page](https://azure.microsoft.com/pricing/details/azure-quantum/) for more details.
->
-> Note that you can always elect to complete the lessons in this module while skipping the job submission to Azure Quantum if you would like to avoid any charges to your Azure account.
+> [!NOTE]
+> This module makes use of paid services on Azure Quantum. The first compute hour on Microsoft QIO solvers is free. For reference, this module should roughly consume 2 compute seconds. You can refer to the [Microsoft QIO pricing page](https://azure.microsoft.com/pricing/details/azure-quantum/) for more details.
+
