@@ -14,7 +14,7 @@ We'll list some criteria that will help you make the right decision.
 
 Azure Communication Services can't create an application or business all by itself. It works best when there's an existing application with which to integrate Azure Communication Services into. Or at least if an idea exists that it would make sense to create an application for. If you don't have an existing application or idea, then a different product that fulfills your needs and requirements might be better.
 
-A good example here's that you'll need an existing form of Identity solution(Log In, Log Out etc.) to tie your user's identities to Azure Communication Services' identity platform. Creating calls without this is possible but users won't have a consistently defined identity.
+A good example here's that you'll need an existing form of Identity solution(Log In, Log Out etc.) to tie your user's identities to Azure Communication Services' identity platform. Creating calls without identities is possible but users won't have a consistently defined identity to recognize each other with.
 
 ### Features
 
@@ -26,7 +26,7 @@ It's possible to mix and match Azure Communication Services features and combine
 
 Azure Communication Services requires a suitable environment to work within. An environment is the combination of the target device or browser and the programming language used.
 
-When it comes to these, the following environments are supported:
+The following environments are supported:
 
 * Most Modern Browsers (Chrome, Edge, Safari)
 * Android Phones and Devices
@@ -41,13 +41,13 @@ Additionally the following programming languages are supported:
 * iOS (Swift)
 * Android
 
-If your business/application/idea intends to use languages or devices/browsers that Azure Communication Services doesn't support. Then Azure Communication Services may not be correct for you.
+If your business/application/idea, intends to use languages or devices/browsers that Azure Communication Services doesn't support. Then Azure Communication Services may not be correct for you.
 
 ### Geographic Region
 
-Some features of Azure Communication Services are only available in certain countries or locations, additionally certain countries, or locations may have restrictions placed upon them. These restrictions or gaps in Azure Communication Services' support across the world, can be caused by legal or regulatory matters or by Azure Communication Services simply not supporting a region yet. When considering if Azure Communication Services is right for you, ensure that you factor this into your current business as well as any potential expansion of your business.
+Some features of Azure Communication Services are only available in certain countries or locations. Additionally certain countries, or locations may have restrictions on features. These restrictions or gaps in Azure Communication Services' support across the world, can be caused by legal or regulatory matters or by Azure Communication Services simply not supporting a region yet. When considering if Azure Communication Services is right for you, ensure that you factor this into your current business as well as any potential expansion of your business.
 
-Of particular mention in this area are telephony and SMS features. As telephone networks in different countries vary in terms of structure and regulatory/legal matters it is very important to ensure that Azure Communication Services supports your target location. Additionally, the location of your billing address also affects this. For example, to make calls or send SMS messages to a UK number you will need a billing address in the UK.
+Of particular mention in this area are telephony and SMS features. As telephone networks in different countries vary in terms of structure and regulatory/legal matters, it is very important to ensure that Azure Communication Services supports your target location. Additionally, the location of your billing address also affects this. For example, to make calls or send SMS messages to a UK number you will need a billing address in the UK.
 
 SMS and Telephony is currently only available in the following locations:
 
