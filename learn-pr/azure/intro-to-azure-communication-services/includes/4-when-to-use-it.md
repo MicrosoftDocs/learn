@@ -14,13 +14,13 @@ We'll list some criteria that will help you make the right decision.
 
 Azure Communication Services can't create an application or business all by itself. It works best when there's an existing application with which to integrate Azure Communication Services into. Or at least if an idea exists that it would make sense to create an application for. If you don't have an existing application or idea, then a different product that fulfills your needs and requirements might be better.
 
-A good example here's that you'll need an existing form of Identity solution(Log In, Log Out etc.) to tie your user's identities to Azure Communication Services' identity platform. Creating calls without identities is possible but users won't have a consistently defined identity to recognize each other with.
+A good example here's that you'll need an existing form of Identity solution (Log In, Log Out etc.) to tie your user's identities to Azure Communication Services' identity platform. Creating calls without identities is possible but users won't have a consistently defined identity to recognize each other with.
 
 ### Features
 
 Azure Communication Services has a wide array of features but you need to decide if these features are of use to you within your solution. Ensure that you're reviewing the list of features available and deciding if they're applicable.
 
-It's possible to mix and match Azure Communication Services features and combine them with other Azure offerings. It's not required to use all of Azure Communication Services' features. You can pick and choose the areas that are of most interest to you. For example, you might need voice and video calling features but you might not need telephony features. Your calls and contact points, could be designed to occur only digitally. Don't feel obligated to use every feature that is available.
+It's possible to mix and match Azure Communication Services features and combine them with other Azure offerings. It's not required to use all of Azure Communication Services' features. You can pick and choose the areas that are of most interest to you. For example, you might need voice and video calling features but you might not need telephony features. Your calls and contact points could be designed to occur only digitally. Don't feel obligated to use every feature that is available.
 
 ### Environment
 
@@ -36,7 +36,7 @@ Additionally the following programming languages are supported:
 
 * JavaScript
 * .NET
-* Java Server Edition(SE)
+* Java Server Edition (SE)
 * Python
 * iOS (Swift)
 * Android
@@ -45,11 +45,11 @@ If your business/application/idea, intends to use languages or devices/browsers 
 
 ### Geographic Region
 
-Some features of Azure Communication Services are only available in certain countries or locations. Additionally certain countries, or locations may have restrictions on features. These restrictions or gaps in Azure Communication Services' support across the world, can be caused by legal or regulatory matters or by Azure Communication Services simply not supporting a region yet. When considering if Azure Communication Services is right for you, ensure that you factor this into your current business as well as any potential expansion of your business.
+Some features of Azure Communication Services are only available in certain countries or locations. Additionally certain countries, or locations may have restrictions on features. These restrictions or gaps in Azure Communication Services' support across the world can be caused by legal or regulatory matters or by Azure Communication Services simply not supporting a region yet. When considering if Azure Communication Services is right for you, ensure that you factor this into your current business as well as any potential expansion of your business.
 
 Of particular mention in this area are telephony and SMS features. As telephone networks in different countries vary in terms of structure and regulatory/legal matters, it is very important to ensure that Azure Communication Services supports your target location. Additionally, the location of your billing address also affects this. For example, to make calls or send SMS messages to a UK number you will need a billing address in the UK.
 
-SMS and Telephony is currently only available in the following locations:
+SMS and Telephony are currently only available in the following locations:
 
 * UK
 * USA
@@ -62,7 +62,7 @@ You can read additional information about regional differences in offerings of A
 
 When deciding to use Azure Communication Services, it is also important to think about which of its many features you should use for a particular scenario. There may be a temptation to go overboard and use everything but that is often not ideal. As we explained before you can mix and match features or choose to not use any at all. To aid in a decision here's some guidance that may help.
 
-Firstly, remember that not all customers are willing to jump on a video or audio call with a real person. Its important to offer them various types of communication to suit their needs and motivations. Always start with something more passive and asynchronous like chat or email. Once there's an established business relationship with a customer they're more likely to be willing to hop on a call, especially if they need things like support or maintenance.
+Firstly, remember that not all customers are willing to jump on a video or audio call with a real person. It's important to offer them various types of communication to suit their needs and motivations. Always start with something more passive and asynchronous like chat or email. Once there's an established business relationship with a customer they're more likely to be willing to hop on a call, especially if they need things like support or maintenance.
 
 Additionally, some users may be unwilling to supply their phone number of other personal details that might rule out some of Azure Communication Services' telephony features. Make sure you have other flows such as Email in place.
 
@@ -74,7 +74,7 @@ Ultimately, Azure Communication Services works best when you've already got exis
 
 ### Applying criteria to the Example Scenario
 
-If we think back to our example scenario from earlier in the module with Contoso Appliances(our appliance), we can apply our decision criteria to their goals and requirements:
+If we think back to our example scenario from earlier in the module with Contoso Appliances (our appliance), we can apply our decision criteria to their goals and requirements:
 
 * Their business is established and has existing websites, applications etc.
 * They're in need of calling and chat related features which Azure Communication Services has.

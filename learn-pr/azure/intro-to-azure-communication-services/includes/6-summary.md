@@ -27,7 +27,7 @@ General information on Azure Communication Services and its features:
 Combining Azure Communication Services features with other Azure products:
 
 - [Using Azure Event Grid to process SMS, Chat and Calling events](/azure/event-grid/event-schema-communication-services) through Event Grid endpoints such as Azure Functions and Webhooks to enhance functionality through things like automatic responses, bots, call routing etc.
-- [Sending Diagnostic information on call quality, usage etc to Azure Monitor Log Analytics](/azure/communication-services/concepts/analytics/enable-logging).
+- [Sending Diagnostic information on call quality, usage etc. to Azure Monitor Log Analytics](/azure/communication-services/concepts/analytics/enable-logging).
 - Using [Teams Interoperability](/azure/communication-services/concepts/teams-interop) to bring Azure Communication Services calls into your Microsoft Teams environment.
 - Use [Azure Logic Apps](/azure/communication-services/quickstarts/sms/logic-app) to process SMS messages for SMS Automation.
 

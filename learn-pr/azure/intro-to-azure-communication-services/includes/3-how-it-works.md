@@ -36,7 +36,7 @@ Azure Communication Services has Server SDKs available for:
 
 * JavaScript
 * .NET
-* Java Server Edition(SE)
+* Java Server Edition (SE)
 * Python
 
 You can find a link to all of the SDKs in the references section of this module.

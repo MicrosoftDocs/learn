@@ -1,14 +1,13 @@
 ### YamlMime:Module
-
 uid: learn.azure.intro-to-azure-communication-services
 metadata:
-  moduleType: introduction        # Do not edit: type must be 'introduction'
-  title: Introduction to Azure Communication Services          # Do not edit: title must be "Introduction to (product)"
+  moduleType: introduction
+  title: Introduction to Azure Communication Services
   description: Discover the key products and services that can help you create communication applications on Azure with Communication Services.
-  ms.date: 03/04/2022            # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: ProbablePrime      # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: rifox           # Alias     of the Microsoft employee either authoring or project-managing this content
-  ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
+  ms.date: 03/09/2022
+  author: ProbablePrime
+  ms.author: rifox
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure         # Edit as appropriate for your portfolio area
 title: Introduction to Azure Communication Services
 summary: Discover the key products and services that can help you create communication applications on Azure with Communication Services.
@@ -33,13 +32,12 @@ roles:
 products:
   - azure
   - azure-communication-services
-units: # stub based on prefix, module folder, and unit names
+units:
   - learn.azure.intro-to-azure-communication-services.introduction
   - learn.azure.intro-to-azure-communication-services.what-is-it
   - learn.azure.intro-to-azure-communication-services.how-it-works
   - learn.azure.intro-to-azure-communication-services.when-to-use-it
   - learn.azure.intro-to-azure-communication-services.knowledge-check
   - learn.azure.intro-to-azure-communication-services.summary
-### TODO: verify if this should start as temporary/default badge
 badge:
   uid: learn.azure.intro-to-azure-communication-services.badge

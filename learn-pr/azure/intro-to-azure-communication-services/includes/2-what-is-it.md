@@ -5,7 +5,7 @@ Let's start with an overview of Azure Communication Services.
 Azure Communication Services is a platform of products and services that enable you to create custom communication applications and solutions. Microsoft has taken the same technologies that power Skype and Microsoft Teams and made it available to developers as an Azure product and allowing easy integration with other Microsoft developer services for additional functionality. Examples of this additional functionality are:
 
 - Using Azure Event Grid to process SMS, Chat and Calling events through Event Grid endpoints such as Azure Functions and Webhooks to enhance functionality through things like automatic responses, bots, call routing etc.
-- Sending Diagnostic information on call quality, usage etc to Azure Monitor Log Analytics.
+- Sending Diagnostic information on call quality, usage etc. to Azure Monitor Log Analytics.
 - Using Teams Interoperability to bring Azure Communication Services calls into your Microsoft Teams environment.
 - Use Azure Logic Apps to process SMS messages for SMS Automation.
 
@@ -40,7 +40,7 @@ To help you understand how you might use Azure Communication Services within you
 
 ### Identity features
 
-To use many of Azure Communication Services' other core features, you need to create and manage Azure Communication Services Identities. Azure Communication Services identities are separate from your existing application's identity platform but can link identities from that platform to Azure Communication Services. Once created these identities uniquely identify an Azure Communication Services user within other features in Azure Communication Services such as Calling, Chat etc. They're used to provide a consistent identity withing these experiences such that each instance of an application or experience knows who is who.
+To use many of Azure Communication Services' other core features, you need to create and manage Azure Communication Services Identities. Azure Communication Services identities are separate from your existing application's identity platform but can link identities from that platform to Azure Communication Services. Once created these identities uniquely identify an Azure Communication Services user within other features in Azure Communication Services such as Calling, Chat etc. They're used to provide a consistent identity within these experiences such that each instance of an application or experience knows who is who.
 
 ### Calling features
 
@@ -73,7 +73,7 @@ You can read more about chat features within Azure Communication Services' docum
 
 ### Telephony features
 
-Telephony provides calling over the Publicly Switched Telephone Network(PSTN). This allows you to reach, speak to and manage calling and messaging operations over regular telephone networks rather than digital ones. In addition to these basic features Telephony includes:
+Telephony provides calling over the Publicly Switched Telephone Network (PSTN). This allows you to reach, speak to and manage calling and messaging operations over regular telephone networks rather than digital ones. In addition to these basic features Telephony includes:
 
 - **Phone number management** - Buy and manage real-world phone numbers to use with your telephony systems. This includes Toll Free numbers.
 - **Direct routing** - Route Azure Communication Services numbers and calls to your on premises telephony systems.
@@ -82,7 +82,7 @@ You can read more about telephony features within Azure Communication Services' 
 
 ### SMS features
 
-Short Messaging Service(SMS) features let you interact with regular SMS messaging including:
+Short Messaging Service (SMS) features let you interact with regular SMS messaging including:
 
 - **Send SMS** - Send text messages to Phone numbers.
 - **Receive SMS** - Receive text messages and process them through Event Grid.
