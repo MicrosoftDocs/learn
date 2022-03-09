@@ -64,7 +64,7 @@ After you create a job, you'll find that metadata is available about its state a
 ## Billing
 
 > [!NOTE]
-> First-time users automatically get free Azure Quantum Credits for use with IonQ and Quantinuum hardware (500 USD each) when creating your workspace. If you need more credits, you can apply to the [Azure Quantum Credits program](https://aka.ms/aq/credits).
+> First-time users automatically get free Azure Quantum Credits for use with each participating quantum hardware provider (500 USD each) when creating your workspace. If you need more credits, you can apply to the [Azure Quantum Credits program](https://aka.ms/aq/credits).
 
 When you enable a provider in your workspace, you also select the billing plan for that provider. The billing plan defines how you're billed for jobs against that provider.
 
