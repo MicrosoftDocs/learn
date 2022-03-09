@@ -102,7 +102,7 @@ For example, your company has a number of front-end servers in a virtual network
 
 ![Diagram of app security groups.](../media/2-asg-nsg.svg)
 
- Without app security groups, you'd need to create a separate rule for each VM.
+ Without app security groups, you'd need to create a separate rule for each VM or add a network security group to a subnet, then add all the VMs to that subnet.
 
 The key benefit of app security groups is that it makes administration easier. You can easily add and remove network interfaces to an app security group as you deploy or redeploy app servers. You can also dynamically apply new rules to an app security group, which are then automatically applied to all the VMs in that app security group.
 

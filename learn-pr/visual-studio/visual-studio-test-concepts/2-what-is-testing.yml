@@ -5,10 +5,10 @@ metadata:
   unitType: learning-content
   title: What is testing
   description: What is testing? Here's a brief explanation and example of what a test is in software development.
-  ms.date: 6/28/2021
+  ms.date: 03/08/2022
   author: kendrahavens
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 durationInMinutes: 3
