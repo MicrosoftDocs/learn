@@ -62,13 +62,13 @@ Here you make sure that your Azure DevOps organization is set up to complete the
 
 <!--**Note to reviewers:** The instructions below don't work yet. Instead, please follow these instructions:
 
-1. Download [this zip file](https://microsoft-my.sharepoint.com/:u:/p/jodowns/ETGdBebkHPdFieKE_gJp_YoBziOsdI9_5iJRwYJBuoibRg?e=uQc3pX?azure-portal=true).
+1. Download [this .zip file](https://microsoft-my.sharepoint.com/:u:/p/jodowns/ETGdBebkHPdFieKE_gJp_YoBziOsdI9_5iJRwYJBuoibRg?e=uQc3pX?azure-portal=true).
 1. Open the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net?azure-portal=true).
 1. Sign in.
-1. Select **Choose template**, then select the **Private** tab, and select the path to the zip file you downloaded.
+1. Select **Choose template**, select the **Private** tab, and then select the path to the .zip file that you downloaded.
 1. Enter the other project information, and then select **Create project**.-->
 
-First, [run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreview&azure-portal=true) template that creates a project in Azure DevOps.
+First, [run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreview&azure-portal=true) that creates a project in Azure DevOps.
 
 On the Azure DevOps Demo Generator site, follow these steps:
 
@@ -92,7 +92,7 @@ On the Azure DevOps Demo Generator site, follow these steps:
 
 You now have a copy of the template repository in your own account. Clone this repository locally so you can start working in it. 
 
-1. Select **Code** and select the copy icon.
+1. Select **Code**, and then select the copy icon.
 
    :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface that shows the new repository, with the repository U R L copy button highlighted.":::
 
@@ -106,7 +106,7 @@ You now have a copy of the template repository in your own account. Clone this r
    cd toy-website-review
    ```
 
-1. Type `git clone` and then paste the URL that you copied earlier, and then run the command. The command looks something like this:
+1. Type `git clone` and paste the URL that you copied earlier, and then run the command. The command looks something like this:
 
    ```bash
    git clone https://github.com/mygithubuser/toy-website-review.git
@@ -122,7 +122,7 @@ You now have a copy of the template repository in your own account. Clone this r
 
 ::: zone pivot="azurerepos"
 
-You now have a project in your own account. Clone this repository locally so you can start work in it. 
+You now have a project in your own account. Clone this repository locally so you can start working in it. 
 
 1. Select **Repos** > **Files**.
 
@@ -156,7 +156,7 @@ You now have a project in your own account. Clone this repository locally so you
 
 ## Add branch protections
 
-Configure your Git repository to prevent direct pushes to the *main* branch.
+Configure your Git repository to prevent direct pushes to the main branch.
 
 1. In your browser, select **Settings**.
 
@@ -188,7 +188,7 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
 ## Add branch policies
 
-Configure your Git repository to prevent direct pushes to the *main* branch.
+Configure your Git repository to prevent direct pushes to the main branch.
 
 1. In your browser, go to **Repos** > **Branches**.
 
@@ -198,7 +198,7 @@ Configure your Git repository to prevent direct pushes to the *main* branch.
 
    :::image type="content" source="../media/3-repos-branch-policies.png" alt-text="Screenshot of Azure DevOps that shows the list of branches, with the context menu displayed and the menu item for branch policies highlighted.":::
 
-1. In the **Branch policies** window, change the setting for **Require a minimum number of reviewers** to **On**.
+1. In the **Branch policies** window, change the **Require a minimum number of reviewers** setting to **On**.
 
 1. Change the minimum number of reviewers to **1** and select the **Allow requestors to approve their own changes** option.
 
@@ -310,16 +310,16 @@ You've learned why it's not advisable to push directly to the main branch. Here,
 
 ::: zone pivot="azurerepos"
 
-You've learned why it's not advisable to push directly to the *main* branch. Here, you try to break that guideline so you can see how the branch policies prevent you from accidentally pushing your changes to a protected branch.
+You've learned why it's not advisable to push directly to the main branch. Here, you try to break that guideline so you can see how the branch policies prevent you from accidentally pushing your changes to a protected branch.
 
-1. In the Visual Studio Code terminal, run the following statements to switch to the *main* branch and merge the *add-orders-queue* branch to it:
+1. In the Visual Studio Code terminal, run the following statements to switch to the main branch and merge the *add-orders-queue* branch to it:
 
    ```bash
    git checkout main
    git merge add-orders-queue
    ```
 
-   The command worked, and you merged the *add-orders-queue* branch to your *main* branch. But, this only affects your local Git repository.
+   The command worked, but you merged the *add-orders-queue* branch into your main branch in only your local Git repository.
 
 1. Run the following statement to try to push your changes to Azure Repos:
 
@@ -327,11 +327,11 @@ You've learned why it's not advisable to push directly to the *main* branch. Her
    git push
    ```
 
-   Notice that your push fails with an error message that looks similar to the one below:
+   Notice that your push fails with an error message that looks similar to this one:
 
    :::code language="output" source="code/3-merge-error-azure-repos.txt" highlight="3" :::
 
-   The error message tells you that pushes to the *main* branch aren't permitted, and that you must use a pull request to update the branch.
+   The error message tells you that pushes to the main branch aren't permitted, and that you must use a pull request to update the branch.
 
 1. Undo the merge by running the following statement:
 
@@ -339,6 +339,6 @@ You've learned why it's not advisable to push directly to the *main* branch. Her
    git reset --hard HEAD~1
    ```
 
-   This command tells your local Git repository to reset the state of the *main* branch to what it was before the last commit was merged in, and not to save your changes. The *add-orders-queue* branch isn't affected.
+   This command tells your local Git repository to reset the state of the main branch to what it was before the last commit was merged in, and not to save your changes. The *add-orders-queue* branch isn't affected.
 
 ::: zone-end

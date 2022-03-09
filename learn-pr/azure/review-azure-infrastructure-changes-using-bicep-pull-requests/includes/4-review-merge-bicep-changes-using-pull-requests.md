@@ -1,6 +1,6 @@
-You've learned how to use feature branches and how to apply branch protection to ensure changes are reviewed before they're merged. Now, you need to follow a consistent process to propose and review your changes before they're merged.
+You've learned how to use feature branches and how to apply branch protection to ensure that changes are reviewed before they're merged. Now, you need to follow a consistent process to propose and review your changes before they're merged.
 
-In this unit, you'll learn more about pull requests, including how you create and use them. You'll also learn how you can use pull requests to review Bicep code.
+In this unit, you'll learn more about pull requests, including how to create and use them. You'll also learn how you can use pull requests to review Bicep code.
 
 ## Pull requests
 
