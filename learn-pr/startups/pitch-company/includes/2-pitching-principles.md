@@ -23,7 +23,7 @@ If you lose your audience early in your pitch, it's likely that they'll switch o
 > [!TIP]
 > Road test your pitch on people who aren't involved in your startup and don't work in your sector. Doing this can help you identify concepts that need to be explained up front, and it ensures that you're not using jargon, technical details, or names of other companies that are familiar to you but not to others.
 
-A good rule of thumb is to only refer to anything that you're confident that at least 90 percent of your audience will know about.
+A good rule of thumb is to refer only to things that you're confident that at least 90 percent of your audience will know about.
 
 ## Pitch formats
 
@@ -128,7 +128,16 @@ It's always a good idea to be cautious about who you send your readable deck to,
 
 It's useful to write a one-page executive summary that complements your pitch deck.
 
-An executive summary, which provides a brief, high-level overview of your company, is an excellent way to follow up with a potential investor whom you've met at a networking event or demo day.
+The executive summary is an excellent way to follow up with a potential investor whom you've met at a networking event or demo day. It presents a brief, high-level overview of your company and can include the following information:
+
+* Company overview, a brief description of what your company or your product does
+* Current status, including any recent notable milestones
+* Key metrics, including traction, revenue, conversion rate, growth rate, churn
+* Ideal target customer
+* Total addressable market (size of opportunity)
+* Leadership team, including names, LinkedIn profiles, and skill sets
+* Previous funding amount (if any)
+* Current funding round: how much you're raising, what you'll use it for, any funds already committed, terms
 
 > [!TIP]
 > Save the executive summary as a PDF file to a share location, such as OneDrive, and have a link to it readily available on your phone. When you meet a potential investor, you can quickly send them the link.
