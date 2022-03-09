@@ -75,6 +75,8 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
    ```azurecli
    az ad sp create-for-rbac \
+     --role Contributor \
+     --scopes /subscriptions/<SUBSCRIPTION-ID> \
      --name ToyWebsitePipeline
    ```
 

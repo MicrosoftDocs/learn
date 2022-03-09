@@ -3,7 +3,7 @@ uid: learn.wwl.develop-monitor-status-dashboards
 metadata:
   title: Develop monitor and status dashboards
   description: "Develop monitor and status dashboards"
-  ms.date: 11/29/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Monitor with Power BI and Grafana
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/3-develop-monitoring-and-status-dashboards.svg
 levels:
 - advanced
 roles:

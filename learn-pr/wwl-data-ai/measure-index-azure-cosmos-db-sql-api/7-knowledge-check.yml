@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/21/2021
+  ms.date: 03/03/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 quiz:
@@ -26,7 +25,7 @@ quiz:
     - content: "``EnableScanInQuery``"
       isCorrect: false
       explanation: "That's incorrect. The ``EnableScanInQuery`` property doesn't return metadata about indexes."
-  - content: "You've created a SQL query in the .NET SDK and received the response in an object of type **FeedIterator\\<\\>**. Which property of the feed iterator should you use to determine how many request units were used per page of results?"
+  - content: "You've created a SQL query in the .NET SDK and received the response in an object of type **FeedResponse\\<\\>**. Which property of the feed response should you use to determine how many request units were used per page of results?"
     choices:
     - content: "``IndexMetrics``"
       isCorrect: false

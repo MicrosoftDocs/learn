@@ -4,13 +4,12 @@ title: Analyze indexing metrics results
 metadata:
   title: Analyze indexing metrics results
   description: "Analyze indexing metrics results"
-  ms.date: 12/21/2021
+  ms.date: 03/03/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
