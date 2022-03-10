@@ -1,6 +1,6 @@
-Let's look at the code building blocks we'll use in the project.
-
 ## Building block 1
+
+Let's look at the code building blocks that we'll use in the project.
 
 ### Declarations, definitions, and prototypes
 
@@ -20,7 +20,7 @@ We'll use this code to create declarations, definitions, and prototypes:
 
 ### Main entry point
 
-We'll use this code for the main entry point. 
+We'll use this code for the main entry point.
 
 :::code language="c" source="../code/project-break-suspension.c" range="54-62":::
 
@@ -75,7 +75,7 @@ We'll use the following code to create the routine thread entry function. A majo
 
 ### Monitor thread entry function
 
-We'll use the following code to create the monitor thread entry function. This function checks both the Urgent thread and the Routine thread every 50 timer ticks to determine whether the run counts of the two threads have changed since the previous time they were checked. If a run count hasn't changed, the Monitor thread considers this as excessive wait time, and the thread suspension is aborted. You are given the code for the Urgent thread, and your task is the write the code for the Routine thread to detect whether there is excessive wait time. 
+We'll use the following code to create the monitor thread entry function. This function checks both the Urgent thread and the Routine thread every 50 timer ticks to determine whether the run counts of the two threads have changed since the previous time they were checked. If a run count hasn't changed, the Monitor thread considers this as excessive wait time, and the thread suspension is aborted. You're given the code for the Urgent thread, and your task is the write the code for the Routine thread to detect whether there's excessive wait time.
 
 :::code language="c" source="../code/project-break-suspension.c" range="171-196" highlight="13, 17, 20, 23":::
 
@@ -94,4 +94,3 @@ We'll use the following code to create the print_stats application timer functio
 No changes are needed for this code.
 
 :::code language="c" source="../code/project-break-suspension.c" range="190-228":::
-
