@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-center-cloud-service
 metadata:
   title: Cloud management
   description: Carnegie Mellon University's Cloud Developer course. Get into the nitty-gritty of cloud computing to understand how resources are provisioned, billed, and monitored. Learn about how to orchestrate cloud infrastructure with examples.
-  ms.date: 02/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -28,6 +28,7 @@ prerequisites: |
   - Know what datacenters are and why they exist
   - Know how datacenters are set up, powered, and provisioned
 iconUrl: /learn/achievements/cmu-cloud-developer/data-center-to-cloud-service.svg
+hidden: true
 levels:
 - beginner
 roles:

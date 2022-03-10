@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory
 metadata:
   title: Virtualize memory
   description: Carnegie Mellon University's Cloud Developer course. Learn how memory is virtualized to support cloud resources. Covers different types of memory mapping and related issues.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -33,6 +33,7 @@ prerequisites: |
   - Know what the different types of virtualization are
   - Understand CPU virtualization
 iconUrl: /learn/achievements/cmu-cloud-developer/virtualize-memory.svg
+hidden: true
 levels:
 - beginner
 roles:
