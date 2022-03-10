@@ -182,6 +182,6 @@ nutr_df.head()
 
 The output is:
 
-:::image type="content" source="../media/correlation-2.png" alt-text="Screenshot that shows the results of running nutr_df.head, in table format." lightbox="../media/correlation-2.png" loc-scope="Azure":::
+:::image type="content" source="../media/correlation-2.png" alt-text="Screenshot that shows the results of running nutr d f drop and head, in table format." lightbox="../media/correlation-2.png" loc-scope="Azure":::
 
 5 rows × 43 columns
