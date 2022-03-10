@@ -1,6 +1,13 @@
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn more about how to create a JEA endpoint and connect to it.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn more about how to create a JEA endpoint and connect to it.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMWwo]
 
