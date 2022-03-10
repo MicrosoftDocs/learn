@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Multiple-choice questions
   ms.date: 03/14/2021
-  author: tomreidnz
-  ms.author: jasdeb
+  author: laujan
+  ms.author: lajanuar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -31,7 +31,7 @@ quiz:
     - content: "No, automatic language detection works for all languages."
       isCorrect: false
       explanation: "Incorrect. Translator can automatically detect the source language for some languages, but not all 6000+ known languages."
-    - content: "Yes, automatic language detection is not available for Translator."
+    - content: "Yes, automatic language detection isn't available for Translator."
       isCorrect: false
       explanation: "Incorrect. Translator can automatically detect the source language for some languages."
     - content: "For some languages you need to specify the source language, but automatic language detection works for over 50 languages."
@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: "Custom models can be tuned to your industry or domain-specific terminologies and styles, allowing more accurate translation."
       isCorrect: true
-      explanation: "Correct. Custom models can be tailor-make a model for translating text and documents within industry or domain-specific terminologies and styles."
+      explanation: "Correct. Custom models can be tailor-made to translate text and documents within industry or domain-specific terminologies and styles."
     - content: "Custom models can extract data from photographs, enhancing your existing workflows."
       isCorrect: false
       explanation: "Incorrect. Custom models can’t extract data from photographs by themselves, however it’s possible with other services such as Form Recognizer and Immersive Reader."
     - content: "Custom models can be tuned to understand the emotion of the document, allowing a sentiment score to provide more data for the end user."
       isCorrect: false
-      explanation: "Incorrect. Custom models do not offer a sentiment score."
+      explanation: "Incorrect. Custom models don't offer a sentiment score."

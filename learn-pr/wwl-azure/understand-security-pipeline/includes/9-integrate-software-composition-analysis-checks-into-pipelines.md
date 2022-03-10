@@ -2,7 +2,7 @@ Security scanning used to be thought of as an activity that was completed once p
 
 This practice creates a dangerous pattern in which security specialists find large batches of issues at the exact time when developers are under the most pressure to release a software product.
 
-The pressure often results in software deployment with security vulnerabilities that need to be addressed after a product has been released, integrating scanning into a team's workflow at multiple points along the development path. Rugged DevOps can help to make all quality-assurance activities, including security, continuous and automated.
+The pressure often results in software deployment with security vulnerabilities that need to be addressed after a product has been released, integrating scanning into a team's workflow at multiple points along the development path. Secure DevOps can help to make all quality-assurance activities, including security, continuous and automated.
 
 ## Pull request code scan analysis integration.
 
