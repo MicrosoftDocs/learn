@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-communication-services.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: "Introduces the introduction to Azure Communication Services, Learn module." 
+  ms.date: 03/09/2022
+  author: ProbablePrime
+  ms.author: rifox
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

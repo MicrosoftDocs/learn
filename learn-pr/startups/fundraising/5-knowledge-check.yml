@@ -3,7 +3,7 @@ uid: learn.startups.fundraising.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Review concepts of startup fundraising. Topics include pitching strategies, the differences between various types of investors, and due diligence research.
+  description: Review concepts of startup fundraising. Topics include pitching strategies, the differences between types of investors, and due diligence research.
   ms.date: 02/11/2022
   author: ryanmesches
   ms.author: ryanmesches
@@ -16,36 +16,36 @@ quiz:
     choices:
     - content: "That you've researched the investor and know that your startup is a fit for their investment mandate."
       isCorrect: false
-      explanation: "Incorrect. Making sure your startup is a good fit for an investor is important. But it's not the only option."
+      explanation: "Incorrect. Making sure your startup is a good fit for an investor is important, but it's not the only option."
     - content: "That you're focusing 100 percent of your time on your startup."
       isCorrect: false
-      explanation: "Incorrect. Showing investors that you're focusing 100 percent of your time on your startup is important. But it's not the only option."
+      explanation: "Incorrect. Showing investors that you're focusing 100 percent of your time on your startup is important, but it's not the only option."
     - content: "That you have evidence of product-market fit in the form of customer traction or revenue."
       isCorrect: false
-      explanation: "Incorrect. Showing that you have customer traction or revenue is important. But it's not the only option."
+      explanation: "Incorrect. Showing that you have customer traction or revenue is important, but it's not the only option."
     - content: "That you've identified growth levers you can use to generate traction, revenue, and profit."
       isCorrect: false
-      explanation: "Incorrect. Showing that you've identified growth levers is important. But it's not the only option."
+      explanation: "Incorrect. Showing that you've identified growth levers is important, but it's not the only option."
     - content: "All of the above."
       isCorrect: true
-      explanation: "Correct. When you pitch an early-stage investor, you need to ensure your startup is a good fit for the investor. You also need to provide evidence of your commitment, product-market fit, and growth levers. "
+      explanation: "Correct. When you pitch an early-stage investor, you need to ensure your startup is a good fit for the investor. You also need to provide evidence of your commitment, product-market fit, and growth levers."
 
-  - content: "The main difference between angel investors and VC funds is:"
+  - content: "The main difference between angel investors and venture capital (VC) funds is:"
     choices:
-    - content: "Angel investors get to appear on Shark Tank."
+    - content: "Angel investors get to appear on *Shark Tank*."
       isCorrect: false
       explanation: "Incorrect. The main difference has more to do with how money is invested, not the public appearances of the investors."
     - content: "VCs only invest in software startups."
       isCorrect: false
-      explanation: "Incorrect. A VC often focuses on one or more specific sectors. But VCs aren't limited to software startups."
+      explanation: "Incorrect. A VC often focuses on one or more specific sectors, but VCs aren't limited to software startups."
     - content: "Angels invest their own money, while VCs invest mostly other people's money."
       isCorrect: true
       explanation: "Correct. An angel investor is a wealthy individual who invests their own money. VC funds are professional investment firms that generally invest money that's provided by institutional investors."
     - content: "Angel investors generally don't expect to receive a financial return."
       isCorrect: false
-      explanation: "Incorrect. Like any other type of investor, angel investors look for a healthy rate of return in all their investments."
+      explanation: "Incorrect. Like any other type of investor, angel investors look for a healthy rate of return on all their investments."
 
-  - content: "If you had an idea for a startup and had yet to launch an MVP, your most likely source of external funding would be:"
+  - content: "If you had an idea for a startup and had yet to launch a minimal viable product (MVP), your most likely source of external funding would be:"
     choices:
     - content: "Friends and family."
       isCorrect: true
@@ -60,20 +60,20 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Investors put money into the stock market. The stock market isn't a source of funding for startups."
 
-  - content: "Which of these topics is an investor likely to cover in due diligence?"
+  - content: "Which of these topics is the only one an investor is likely to cover in due diligence?"
     choices:
     - content: "Employment contracts including terms of IP assignment."
       isCorrect: false
-      explanation: "Incorrect. Due diligence covers employment contracts. But it's not the only option."
+      explanation: "Incorrect. Due diligence covers employment contracts, but it's not the only topic."
     - content: "Previous investments, including any friends and family round that the company has raised."
       isCorrect: false
-      explanation: "Incorrect. Due diligence covers previous investments. But it's not the only option."
+      explanation: "Incorrect. Due diligence covers previous investments, but it's not the only topic."
     - content: "Disputes with previous employees."
       isCorrect: false
-      explanation: "Incorrect. Due diligence covers disputes with previous employees. But it's not the only option."
+      explanation: "Incorrect. Due diligence covers disputes with previous employees, but it's not the only topic."
     - content: "Loans from the founders to the company."
       isCorrect: false
-      explanation: "Incorrect. Due diligence covers loans from founders to companies. But it's not the only option."
+      explanation: "Incorrect. Due diligence covers loans from founders to companies, but it's not the only topic."
     - content: "All of the above."
       isCorrect: true
       explanation: "Correct. Due diligence covers employment contracts, previous investments, disputes, and loans, among other topics."

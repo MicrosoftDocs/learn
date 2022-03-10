@@ -11696,6 +11696,42 @@
       "redirect_document_id": false
     },
     {
+       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/4-transforms.md",
+       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/5-model.md",
+       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/6-autograd.md",
+       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+       "redirect_document_id": false
+    },
+     {
+       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/7-optimization.md",
+       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/8-inference.md",
+       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/9-quickstart.md",
+       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/10-summary.md",
+       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+       "redirect_document_id": false
+    },
+    {
+
       "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/4-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/6-knowledge-check",
       "redirect_document_id": true
@@ -11703,6 +11739,96 @@
     {
       "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/7-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-offerings-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-data-fundamentals-explore-non-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-offerings-azure/2-explore-azure-table-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-data-fundamentals-explore-non-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-offerings-azure/3-explore-azure-blob-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-data-fundamentals-explore-non-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-offerings-azure/4-explore-azure-file-storage.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-data-fundamentals-explore-non-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-offerings-azure/5-explore-azure-cosmos-database.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-data-fundamentals-explore-non-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-offerings-azure/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-data-fundamentals-explore-non-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-offerings-azure/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-data-fundamentals-explore-non-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-offerings-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/azure-data-fundamentals-explore-non-relational-data/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-analytics/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-analytics/2-describe-common-practices-for-data-loading.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-analytics/4-describe-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-analytics/5-explore-azure-synapse-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-analytics/6-exercise-azure-synapse.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-analytics/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-analytics/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-azure-synapse-analytics/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-fundamentals-stream-processing/10-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-fundamentals-stream-processing/11-summary",
       "redirect_document_id": true
     }
   ]

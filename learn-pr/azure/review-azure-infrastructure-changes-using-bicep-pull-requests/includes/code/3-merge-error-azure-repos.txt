@@ -1,0 +1,4 @@
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://dev.azure.com/mytoycompany/toy-website-review/_git/toy-website-review
+! [remote rejected] main -> main (TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch.)
+error: failed to push some refs to 'https://dev.azure.com/mytoycompany/toy-website-review/_git/toy-website-review'
