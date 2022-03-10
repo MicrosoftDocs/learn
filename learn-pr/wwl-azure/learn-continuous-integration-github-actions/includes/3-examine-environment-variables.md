@@ -23,12 +23,11 @@ Variables are set in the YAML workflow files. They're passed to the actions that
 jobs:
     verify-connection:
         steps:
-
-            - name Verify Connection to SQL Server
-            run: node testconnection.js
-            env:
-                PROJECT_SERVER: PH202323V
-                PROJECT_DATABASE: HAMaster
+            - name: Verify Connection to SQL Server
+            - run: node testconnection.js
+        env:
+            PROJECT_SERVER: PH202323V
+            PROJECT_DATABASE: HAMaster
 
 ```
 

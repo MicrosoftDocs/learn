@@ -46,6 +46,8 @@ Here, you add the *app* module to your Bicep template as a starting point.
 
    Because this is the template that you intend to deploy for your toy websites, it's a little more specific. The App Service plan name is defined as a variable. The SKU parameter has a default value that makes sense for the toy launch website.
 
+   [!INCLUDE [Sandbox location note](../../includes/azure-template-bicep-exercise-sandbox-location.md)]
+
 1. Below the parameters, create a blank line. Now, type the first line of the app module definition:
 
    :::code language="bicep" source="code/4-template-1.bicep" range="12" :::

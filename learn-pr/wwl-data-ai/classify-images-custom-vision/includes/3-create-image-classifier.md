@@ -6,15 +6,18 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
 ## Create a *Cognitive Services* resource
 
-You can use the Custom Vision service by creating either a **Custom Vision** resource or a **Cognitive Services** resource.
+You can use the Custom Vision service by creating either a **Custom Vision** resource or a **Cognitive Services** resource. 
 
-If you haven't already done so, create a **Cognitive Services** resource in your Azure subscription.
+>[!NOTE]
+>Not every resource is available in every region. Whether you create a Custom Vision or Cognitive Services resource, only resources created in [certain regions](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services) can be used to access Custom Vision services. For simplicity, a region is pre-selected for you in the configuration instructions below.   
+
+Create a **Cognitive Services** resource in your Azure subscription.
 
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
 2. Click the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
-    - **Region**: *Choose any available region*:
+    - **Region**: East US
     - **Name**: *Enter a unique name*.
     - **Pricing tier**: S0
     - **I confirm I have read and understood the notices**: Selected.
