@@ -17,7 +17,7 @@ These capability areas represent the basis of the Defender for Cloud Apps framew
 
 Microsoft Defender for Cloud Apps is built on a framework that provides the following capabilities:
 
-- **Discover and control the use of Shadow IT**: Identify the cloud apps, and IaaS and PaaS services used by your organization. Investigate usage patterns, assess the risk levels and business readiness of more than 16,000 SaaS apps against more than 80 risks. 
+- **Discover and control the use of Shadow IT**: Identify the cloud apps, and IaaS and PaaS services used by your organization. Investigate usage patterns, assess the risk levels and business readiness of more than 25,000 SaaS apps against more than 80 risks. 
 - **Protect against cyberthreats and anomalies**: Detect unusual behavior across cloud apps to identify ransomware, compromised users, or rogue applications, analyze high-risk usage, and remediate automatically to limit risks.
 - **Protect your sensitive information** **anywhere in the cloud**: Understand, classify, and protect the exposure of sensitive information at rest. Use out-of-the-box policies and automated processes to apply controls in real time across all your cloud apps.
 - **Assess your cloud apps' compliance**: Assess if your cloud apps meet relevant compliance requirements, including regulatory compliance and industry standards. Prevent data leaks to non-compliant apps and limit access to regulated data.
@@ -28,7 +28,7 @@ Defender for Cloud Apps Security delivers on the components of the framework thr
 
 - **Cloud Discovery** maps and identifies your cloud environment and the cloud apps your organization uses. Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps being used.
 
-- **Sanctioning and unsanctioning apps** in your organization by using the Cloud app catalog that includes over 25,000 cloud apps. The apps are ranked and scored based on industry standards. You can use the cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. 
+- **Sanctioning and unsanctioning apps** in your organization by using the Cloud apps catalog that includes over 25,000 cloud apps. The apps are ranked and scored based on industry standards. You can use the cloud app catalog to rate the risk for your cloud apps based on regulatory certifications, industry standards, and best practices. 
 
 - Use **App connectors** to integrate Microsoft and non-Microsoft cloud apps with Microsoft Defender for Cloud Apps, extending control and protection.  Defender for Cloud Apps queries the app for activity logs, and it scans data, accounts, and cloud content that can be used to  enforce policies, detect threats and provide governance actions to resolve issues.
 
