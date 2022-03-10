@@ -40,13 +40,13 @@ quiz:
     choices:
     - content: "Short Messaging Service(SMS) features aren't available in Australia"
       isCorrect: true
-      explanation: "Azure Communication Services currently has some geographical restrictions for its features. This is a known issue and geographical coverage will be increased in the future."
+      explanation: "Azure Communication Services currently has some geographical restrictions for its features."
     - content: "Australia is too far away to use Azure Communication Services."
       isCorrect: false
-      explanation: "Azure Communication Services is a global cloud service provider. Azure Communication Services is only available in Australia. Azure Communication Services currently has some geographical restrictions for its features. This is a known issue and geographical coverage will be increased in the future."
+      explanation: "Azure Communication Services is a global cloud service provider. Azure Communication Services is only available in Australia. Azure Communication Services currently has some geographical restrictions for its features."
     - content: "The roaming charges for sending SMS to Australia will be too high."
       isCorrect: false
-      explanation: "Azure Communication Services does not currently support sending SMS to Australia. Azure Communication Services currently has some geographical restrictions for its features. This is a known issue and geographical coverage will be increased in the future."
+      explanation: "Azure Communication Services does not currently support sending SMS to Australia. Azure Communication Services currently has some geographical restrictions for its features."
   - content: "A new company is working on a brand-new device for communication it also runs a proprietary programming language. Why is Azure Communication Services not a good choice for this scenario?"
     choices:
     - content: "The new business is risky and might fail."

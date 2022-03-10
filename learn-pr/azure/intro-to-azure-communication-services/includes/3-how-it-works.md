@@ -8,7 +8,7 @@ We'll be covering:
 
 ## Azure resources
 
-The first element is making Azure Communication Services work is an Azure resource, which is created within the Azure Portal by you. Once a resource is created from the Azure Portal, it becomes the central hub for managing many Azure Communication Services tasks and administration.
+The first element is making Azure Communication Services work is an Azure resource, which is created within the Azure portal by you. Once a resource is created from the Azure portal, it becomes the central hub for managing many Azure Communication Services tasks and administration.
 
 The Azure resource within the portal is where you can:
 
@@ -17,7 +17,7 @@ The Azure resource within the portal is where you can:
 * Manage security keys.
 * Create event handlers for Azure Communication Services events.
 
-With a properly configured resource within the Azure Portal, you and your team can continue building and creating Azure Communication Services solutions for your customers.
+With a properly configured resource within the Azure portal, you and your team can continue building and creating Azure Communication Services solutions for your customers.
 
 ## Server SDKs
 
