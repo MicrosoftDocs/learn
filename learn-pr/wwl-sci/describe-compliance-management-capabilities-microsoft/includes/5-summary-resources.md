@@ -1,4 +1,4 @@
-In this module, you learned about the Microsoft Service Trust Portal and the variety of content resources it provides about Microsoft security, privacy, and compliance practices.
+In this module, you learned about the Microsoft Service Trust Portal and the variety of content resources it provides about Microsoft security, privacy, and compliance practices. You also learned about Microsoft's commitment to privacy and its privacy principles.
 
 Now that you’ve completed this module, you should be able to:
 

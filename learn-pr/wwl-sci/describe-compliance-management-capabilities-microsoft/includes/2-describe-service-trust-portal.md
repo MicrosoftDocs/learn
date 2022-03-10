@@ -2,10 +2,9 @@ The Service Trust Portal provides information, tools, and other resources about 
 
 From the main menu, you access:
 
-  :::image type="content" source="../media/stp-top-nav-bar-inline.png" lightbox="../media/stp-top-nav-bar-expanded.png" alt-text="Solutions catalog card":::
+  :::image type="content" source="../media/stp-top-nav-bar-inline.png" lightbox="../media/stp-top-nav-bar-expanded.png" alt-text="Service Trust Portal top navigation bar":::
 
 - **Service Trust Portal** –  This link provides a quick way to get back to the home page for the Service Trust Portal.
-- 
 - **Compliance Manager** – This link currently directs users to Compliance Manager in the Microsoft 365 compliance center.  Users are encouraged to use the Microsoft 365 Compliance Center for access to Compliance Manager and other compliance management capabilities in Microsoft 365. To find out more, see the Microsoft Compliance Manager documentation in the Learn More section of the Summary and resources unit.
 - **Trust Documents** – Trust Documents provides a wealth of security implementation and design information with the goal of making it easier for organizations to meet regulatory compliance objectives, by understanding how Microsoft Cloud services keep customer data secure. To review content, select one of the following options on the Trust Documents pull-down menu.
     - **Audit Reports** provides a list of independent audit and assessment reports on Microsoft's Cloud services is displayed. These reports provide information about Microsoft Cloud services compliance with data protection standards and regulatory requirements.

@@ -3,13 +3,13 @@ uid: learn.wwl.describe-compliance-management-capabilities-microsoft
 metadata:
   title: Describe the compliance management capabilities in Microsoft
   description: "Describe the compliance management capabilities in Microsoft"
-  ms.date: 03/02/2022
+  ms.date: 03/10/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Describe the compliance management capabilities in Microsoft
-summary: Learn where to go to find compliance documentation and how Microsoft Compliance center and the capabilities of compliance manager helps organizations meet their compliance needs.
+summary: Microsoft Cloud services are built on a foundation of trust, security, and compliance. The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about Microsoft security, privacy, and compliance.
 abstract: |
   After completing this module, you will be able to:
   - Describe the information available in the Service Trust Portal
