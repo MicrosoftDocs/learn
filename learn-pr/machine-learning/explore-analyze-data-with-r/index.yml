@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.machine-learning.explore-analyze-data-r
+metadata:
+  title: Explore and analyze data with R
+  description: Learn how to explore and analyze data by using R.
+  ms.date: 03/10/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: nextgen
+title: Explore and analyze data with R
+summary: Learn how to explore and analyze data by using R.
+abstract:  | 
+  In this module, you will learn:
+  - Common data exploration and analysis tasks 
+  - How to use R packages like ggplot2, dplyr and tidyr to turn raw data into understanding, insight and knowledge 
+  
+prerequisites: |
+  - Knowledge of basic mathematics 
+  - Some experience programming in R 
+  
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- data-scientist
+- student
+products:
+- azure
+units:
+- learn.machine-learning.explore-analyze-data-r.introduction
+- learn.machine-learning.explore-analyze-data-r.exploratory-data-analysis
+- learn.machine-learning.explore-analyze-data-r.exercise-transform-data-with-dplyr
+- learn.machine-learning.explore-analyze-data-r.visualize-data
+- learn.machine-learning.explore-analyze-data-r.exercise-visualize-data-with-ggplot2
+- learn.machine-learning.explore-analyze-data-r.examine-real-world-data
+- learn.machine-learning.explore-analyze-data-r.exercise-examine-real-world-data
+- learn.machine-learning.explore-analyze-data-r.knowledge-check
+- learn.machine-learning.explore-analyze-data-r.challenge-data-exploration
+- learn.machine-learning.explore-analyze-data-r.summary
+badge:
+  uid: learn.service-name.module-name.badge 
