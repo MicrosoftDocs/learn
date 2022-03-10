@@ -210,7 +210,7 @@ You can get these values from the connection string.
     ```azurecli
     az servicebus queue show \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name salesperformancemessages \
+        --name salesmemessages \
         --query messageCount \
         --namespace-name <namespace-name>
     ```
@@ -429,7 +429,6 @@ You can get these values from the connection string.
 
     ```command
     Received: $10,000 order for bicycle parts from retailer Adventure Works.
-    Received: $10,000 order for bicycle parts from retailer Adventure Works.
     ```
 
 1. When you see that the messages have been received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. 
@@ -441,7 +440,7 @@ Run the following code to confirm that all the messages have been removed from t
 ```azurecli
 az servicebus queue show \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name salesperformancemessages \
+    --name salesmessages \
     --query messageCount \
     --namespace-name <namespace-name>
 ```

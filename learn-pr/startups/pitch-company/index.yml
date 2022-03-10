@@ -2,7 +2,7 @@
 uid: learn.startups.pitch-company
 metadata:
   title: How to pitch your company
-  description: Learn how to pitch your startup to investors. Understand what makes a pitch effective. See tips for delivering a compelling pitch.
+  description: In this module, you'll learn how to pitch your startup to investors, discover what makes a pitch effective, and get tips for delivering compelling pitches.
   ms.date: 02/11/2022
   author: ryanmesches
   ms.author: ryanmesches
@@ -10,18 +10,18 @@ metadata:
   ms.prod: learning-consumer
 title: How to pitch your company
 summary: >
-  This module explains how to give a compelling pitch to investors such as accelerators, angel investors, and venture capital funds, and shows you how to avoid the most common mistakes in pitching.
+  In this module, you'll learn how to deliver compelling pitches to investors and other key audiences, and how to avoid the most common mistakes.
 abstract: | 
   In this module, you'll:
-
   - Learn about types and formats of pitches.
   - Understand what makes a pitch effective.
-  - See tips for delivering a compelling pitch.
+  - Get valuable tips for delivering compelling pitches.
 prerequisites: |
-  - You've scored your startup against attributes of successful companies.
-  - You've identified the needs of your target customer by using the Value Proposition Canvas tool.
-  - You've run experiments to test your core assumptions.
-  - You've identified an appropriate revenue model for your startup.
+  Before you begin, be sure that you've:  
+  - Scored your startup against the attributes of successful companies.
+  - Identified the needs of your target customer by using the Value Proposition Canvas tool.
+  - Run experiments to test your core assumptions.
+  - Identified an appropriate revenue model for your startup.
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:

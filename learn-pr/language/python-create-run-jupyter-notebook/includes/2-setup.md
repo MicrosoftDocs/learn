@@ -20,7 +20,7 @@ Next, install [Visual Studio Code](https://code.visualstudio.com/?azure-portal=t
 
 ## Install the Python extension
 
-When these two installations are complete, you'll then need to install a Visual Studio Code [extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter?azure-portal=true). This extension allows you to run Jupyter notebooks from within Visual Studio Code by using a *kernel*. A [kernel](https://wikipedia.org/wiki/Kernel_(operating_system)?azure-portal=true) in Visual Studio Code helps you activate an Anaconda environment, so you can run your notebooks by using your Python installation.
+When these two installations are complete, you'll then need to install a Visual Studio Code [extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter). This extension allows you to run Jupyter notebooks from within Visual Studio Code by using a *kernel*. A [kernel](https://wikipedia.org/wiki/Kernel_(operating_system)?azure-portal=true) in Visual Studio Code helps you activate an Anaconda environment, so you can run your notebooks by using your Python installation.
 
 In Visual Studio Code, from extensions panel on the left, search for *Jupyter* by Microsoft. To install this extension, select **Install**.
 

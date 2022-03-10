@@ -8,9 +8,16 @@ Victor, Cloud Administrator at Contoso, Ltd., is going to rehost the application
 
 ## Azure migration: Assess and rehost applications
 
-|||
-| :--- | :--- |
-| ![Play video icon](../media/video-icon.png)| Watch as Victor uses Azure Migrate, Azure Database Migration Service, and Azure Site Recovery to migrate Contoso, Ltd.'s support application to Azure.|
+:::row:::
+![Play video icon](../media/video-icon.png)
+
+:::column:::
+Watch as Victor uses Azure Migrate, Azure Database Migration Service, and Azure Site Recovery to migrate Contoso, Ltd.'s support application to Azure.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3dj3C]
 
