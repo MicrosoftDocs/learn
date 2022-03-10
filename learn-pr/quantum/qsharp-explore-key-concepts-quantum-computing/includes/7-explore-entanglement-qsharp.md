@@ -19,7 +19,7 @@ When your new Notebook opens, it automatically creates the code for the first ce
 ```
 
 > [!NOTE]
-> *%azure.connect* is an [IQ# Magic command](xref:microsoft.quantum.iqsharp.magic-ref.index), a set of commands that help streamline tasks in Jupyter Notebooks.
+> *%azure.connect* is an IQ# Magic command, a set of commands that help streamline tasks in Jupyter Notebooks.
 
 If you run this cell, it should authenticate to your subscription and display a list of available providers and their targets. 
 
@@ -40,11 +40,11 @@ operation SetQubitState(desired : Result, target : Qubit) : Unit {
 > [!NOTE]
 > The `Microsoft.Quantum.Intrinsic` and `Microsoft.Quantum.Canon` namespaces, which are used by operations in this code, are automatically opened in every cell of an Azure Quantum notebook.
 
-The code example introduces two standard operations, [`M`](xref:Microsoft.Quantum.Intrinsic.M) and [`X`](xref:Microsoft.Quantum.Intrinsic.X), which transform the state of a qubit. 
+The code example introduces two standard operations, `M` and `X`, which transform the state of a qubit. 
 
 The  `SetQubitState` operation:
 
-1. Takes two parameters: a type [`Result`](xref:microsoft.quantum.qsharp.typesystem-overview#available-types), named `desired`, that represents the desired state for the qubit to be in (0 or 1), and a type [`Qubit`](xref:microsoft.quantum.qsharp.typesystem-overview#available-types). 
+1. Takes two parameters: a type `Result`, named `desired`, that represents the desired state for the qubit to be in (0 or 1), and a type `Qubit`. 
 1. Performs a measurement operation, `M`, which measures the state of the qubit (`Zero` or `One`) and compares the result to the value specified in `desired`.
 1. If the measurement does not match the compared value, it runs an `X` operation, which flips the state of the qubit to where the probabilities of a measurement returning `Zero` and `One` are reversed. This way, `SetQubitState` always puts the target qubit in the desired state. 
 
@@ -101,7 +101,7 @@ The `TestBellState`operation:
     1. Stores the number of measurements for each qubit that return `One`.
 1. After the loop completes, it calls `SetQubitState` again to reset the qubits to a known state (`Zero`) to allow others to
 allocate the qubits in a known state. This is required by the `use` statement. 
-1. Finally, it uses the [`Message`](xref:Microsoft.Quantum.Intrinsic.Message) function to display a message to the console before returning the results.
+1. Finally, it uses the `Message` function to display a message to the console before returning the results.
 
 ### Test the code
 
@@ -137,7 +137,7 @@ q1:Zero, One q2:Zero, One
 
 Currently, the qubits in the program are all in a *classical* state, that is, they are either 1 or 0. You know this because the program initializes the qubits to a known state, and you haven't added any processes to manipulate them.  Before entangling the qubits, you will put the first qubit into a *superposition* state, where a measurement of the qubit will return `Zero` 50% of the time and `One` 50% of the time. Conceptually, the qubit can be thought of as being in a linear combination of all states between the `Zero` and `One`.
 
-To put a qubit in superposition, Q# provides the [`H`](xref:Microsoft.Quantum.Intrinsic.H), or *Hadamard*, operation. Recall the `X` operation from the [Initialize a qubit using measurement](#initialize-a-qubit-using-measurement) procedure earlier, which flipped a qubit from 0 to 1 (or vice versa); the `H` operation flips the qubit *halfway* into a state of equal probabilities of 0 or 1. When measured, a qubit in superposition should return roughly an equal number of `Zero` and `One` results.
+To put a qubit in superposition, Q# provides the `H`, or *Hadamard*, operation. Recall the `X` operation from the [Initialize a qubit using measurement](#initialize-a-qubit-using-measurement) procedure earlier, which flipped a qubit from 0 to 1 (or vice versa); the `H` operation flips the qubit *halfway* into a state of equal probabilities of 0 or 1. When measured, a qubit in superposition should return roughly an equal number of `Zero` and `One` results.
 
 In the previous cell with the `TestBellState`, add the `H` operation inside the `for` loop:
 
@@ -190,7 +190,7 @@ Until now, you've used only single-qubit operations. These operations act
 on single qubits individually. To entangle qubits, you need
 *multiqubit gates*.
 
-The most prominent example of a multiqubit gate is the [`CNOT`](/qsharp/api/qsharp/microsoft.quantum.intrinsic.cnot?azure-portal=true) operation, which stands for *Controlled-NOT*. This operation takes two qubits as input. Then it flips the state of the second qubit (the target qubit) if, and only if, the state of the first qubit (the control qubit) is $|1\rangle$. With the help of the `H` operation and the `CNOT` operation, you can transform a register in the state $|00\rangle$ to the entangled state $\frac1{\sqrt2}(|00\rangle+|11\rangle)$.
+The most prominent example of a multiqubit gate is the `CNOT` operation, which stands for *Controlled-NOT*. This operation takes two qubits as input. Then it flips the state of the second qubit (the target qubit) if, and only if, the state of the first qubit (the control qubit) is $|1\rangle$. With the help of the `H` operation and the `CNOT` operation, you can transform a register in the state $|00\rangle$ to the entangled state $\frac1{\sqrt2}(|00\rangle+|11\rangle)$.
 
 Here's how it works:
 
