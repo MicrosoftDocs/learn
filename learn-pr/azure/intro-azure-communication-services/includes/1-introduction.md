@@ -6,7 +6,7 @@ Communication is of ever growing importance within our modern world. Keeping con
 
 Let's start with an example scenario that will help you understand the potential of Azure Communication Services. Imagine you work on the engineering/product team of a household appliance producer (Contoso Appliances) which offers many appliances for the household such as refrigerators, washers, and dryers. As a company you've been struggling with contacting and communicating with your customers when it comes to support, sales and maintenance. 
 
-This has lead to a number of problems in the business such as:
+This has led to a number of problems in the business such as:
 
 - Missed maintenance appointments
 - Overbooked maintenance appointments
