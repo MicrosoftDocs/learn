@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-data-services-for-modern-analytics.explore-modern-analytics-solution-architecture
+title: Explore modern analytics solution architecture
+metadata:
+  title: Explore modern analytics solution architecture
+  description: "Explore modern analytics solution architecture"
+  ms.date: 03/10/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-explore-modern-analytics-solution-architecture.md)]
