@@ -2,9 +2,16 @@ At this point, you've established your business justification and defined your b
 
 As discussed, your organization has unique motivations to adopt the cloud. They all converge into *migration* or *innovation* to the cloud.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn more.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn more.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3WN54]
 
@@ -12,10 +19,14 @@ As discussed, your organization has unique motivations to adopt the cloud. They 
 
 Cloud migration is the process of moving existing digital assets to a cloud platform. Existing assets are replicated to the cloud with minimal modifications. After an application or workload becomes operational in the cloud, users are transitioned from the existing solution to the cloud solution.
 
-| | |
-| --- | --- |
-| ![Icon of lightbulb](../media/lightbulb.png)| *Cloud migration is one way to effectively balance a cloud portfolio. This is often the fastest and most agile approach in the short term. Conversely, some benefits of the cloud might not be realized without additional future modification. Enterprises and mid-market customers use this approach to accelerate the pace of change, avoid planned capital expenditures, and reduce ongoing operational costs.*|
-|
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+
+:::column:::
+*Cloud migration is one way to effectively balance a cloud portfolio. This is often the fastest and most agile approach in the short term. Conversely, some benefits of the cloud might not be realized without additional future modification. Enterprises and mid-market customers use this approach to accelerate the pace of change, avoid planned capital expenditures, and reduce ongoing operational costs.*
+
+:::column-end:::
+:::row-end:::
 
 The strategy and tools you use to migrate an application to Azure largely depend on your business motivations, technology strategies, and timelines. Your decisions are also based on a deep understanding of the application and the assets to be migrated. These assets include infrastructure, apps, and data. This decision tree serves as high-level guidance to help you select the best tools to use based on migration decisions.
 
@@ -33,8 +44,8 @@ Modern approaches to infrastructure deployment, operations, and governance are r
 
 :::row:::
 ![Icon of key](../media/key-takeaway.png)
-:::column:::
 
+:::column:::
 Here are the key points from this unit:
 
 :::column-end:::

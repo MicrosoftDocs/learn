@@ -50,6 +50,8 @@ It's a good idea to aim for short-lived feature branches. This helps you to avoi
 
 Split up large pieces of work into multiple smaller pieces and create new feature branches for each one. The bigger the feature the longer someone will need to work on it and the longer the feature branch will live. You can deploy the smaller changes to production as you merge each feature branch, and gradually build up the feature you're building towards.
 
+Imagine that you're making some changes to a set of Bicep code. You're moving some resource definitions into modules, and you also need to add some new resources to your Bicep files, too. It might be a good idea to do all of your module refactoring first, on its own branch. After this is merged, you can then start to work on the additions to your Bicep files. By separating your changes out, you keep each change - and its branch - small and easy to understand.
+
 When you work in this manner, it can be helpful to use the `if` keyword to disable the deployment of resources until they're ready. For example, you might create a Bicep file that defines a storage account, but disable the storage account's deployment until you're done with all of the changes:
 
 :::code language="bicep" source="code/2-storage-condition.bicep" highlight="4" :::

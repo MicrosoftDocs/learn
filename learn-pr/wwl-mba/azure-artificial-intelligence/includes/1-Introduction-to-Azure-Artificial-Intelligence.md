@@ -9,9 +9,16 @@ In this module, you will:
 - Identify ways you can use Azure AI.
 - Define what Azure AI is, how it works, and how it’s built.
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to see how AI is transforming industries and empowering individuals to achieve more across the globe.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to see how AI is transforming industries and empowering individuals to achieve more across the globe.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NNHW]
 
@@ -29,17 +36,28 @@ Only Azure empowers you with:
 - AI technology that Microsoft runs on.
 - The most comprehensive compliance and security offerings.
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn about the foundational elements of Azure AI, then see how AI is powering multiple Microsoft products, and finally review the three Azure AI focus areas.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn about the foundational elements of Azure AI, then see how AI is powering multiple Microsoft products, and finally review the three Azure AI focus areas.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWr1Lt]
 
 As you see from these examples, artificial intelligence is already enhancing the products and services that you may use in your work.
 
-|  |  |
-| ------------ | -------------|
-|![Icon of lightbulb](../media/lightbulb.png)|*Can you think of other examples where AI has changed the products you use or enhanced an experience? Take a moment to think about some ways you or your business interact with AI.*
-|
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+
+:::column:::
+*Can you think of other examples where AI has changed the products you use or enhanced an experience? Take a moment to think about some ways you or your business interact with AI.*
+
+:::column-end:::
+:::row-end:::
 
 In the next units, we’ll take a deeper look at knowledge mining, machine learning, and AI apps and agents. 
