@@ -6,10 +6,10 @@ The table below contains a comparison of several performance measures for mutexe
 |---|---|---|
 |**Instruction area size** |1,134 bytes |322 bytes |
 |**RAM size (control clock)** |52 bytes |28 bytes |
-|**Get--immediate response** |0.06__ |0.04__ |
-|**Put--immediate response** |0.08__ |0.05__ |
-|**Put--resume only** |0.28__ |0.19__|
-|**Put--resume & context switch** |0.44__ |0.35__|
+|**Get--immediate response** |0.06 µs |0.04 µs |
+|**Put--immediate response** |0.08 µs |0.05 µs |
+|**Put--resume only** |0.28 µs |0.19 µs |
+|**Put--resume & context switch** |0.44 µs |0.35 µs |
 
 *Immediate response* for both the *get* and *put* services is the time required to process the request immediately, that is, there's no thread suspension or thread resumption.
 
