@@ -81,7 +81,7 @@ SELECT * FROM Employees WHERE ID = 2
 
 ## Gremlin API
 
- The Gremlin API is used to with data in a graph structure; in which entities are defined as *vertices* that form nodes in connected graph. Nodes are connected by *edges* that represent relationships, like this:
+ The Gremlin API is used with data in a graph structure; in which entities are defined as *vertices* that form nodes in connected graph. Nodes are connected by *edges* that represent relationships, like this:
  
  ![A graph showing employees and departments and the connections between them](../media/graph.png)
  
