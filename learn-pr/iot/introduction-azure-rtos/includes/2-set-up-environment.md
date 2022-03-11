@@ -1,3 +1,5 @@
+## Introduction
+
 This unit provides instructions for how to set up your development environment so that you can complete the exercises in this learning path.
 
 We provide two ways for setting up your environment:

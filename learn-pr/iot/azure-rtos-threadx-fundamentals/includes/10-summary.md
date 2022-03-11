@@ -1,4 +1,6 @@
-We discussed several important terms and concepts in this module, as they're related to Azure ThreadX RTOS. Following are brief definitions of some key points.
+## Introduction
+
+We discussed several important terms and concepts in this module, as they're related to ThreadX. Following are brief definitions of some key points.
 
 ### Determinism
 
@@ -8,7 +10,7 @@ A system is deterministic if the time required to process any task is finite and
 
 ### Scheduling
 
-ThreadX uses a priority-based preemptive scheduling approach. The RTOS controls which thread is allowed to run based on its priority and the length of time it has been waiting. If necessary, the RTOS will preempt a lower-priority running thread so that a higher-priority thread can run. A significant advantage of this approach is that the RTOS quickly responds to important events because it doesn't have to wait for any polling.
+ThreadX uses a priority-based preemptive scheduling approach. ThreadX controls which thread is allowed to run based on its priority and the length of time it has been waiting. If necessary, ThreadX will preempt a lower-priority running thread so that a higher-priority thread can run. A significant advantage of this approach is that ThreadX quickly responds to important events because it doesn't have to wait for any polling.
 
 ### Priorities
 
@@ -29,5 +31,3 @@ The term *preemptive priority-based scheduling* refers to a scheduling approach 
 ### Context switches
 
 A *context* is the current execution state of a thread. It consists of such items as the registers, program counter (PC), and stack pointer (SP) and are stored in the thread stack when that stack has been preempted. The term context switch refers to the saving of one thread’s context and restoring a different thread’s context so that it can be executed.
-
-<!-- link to other content? -->
