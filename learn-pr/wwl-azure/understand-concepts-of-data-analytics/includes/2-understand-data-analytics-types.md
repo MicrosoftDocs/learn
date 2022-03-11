@@ -1,4 +1,4 @@
-Data analytics is used for exploring data and extracting insights.
+Data analytics is used for exploring data, extracting insights, and acting on those insights.
 
 Data analytics covers a range of activities, each with its own focus and goals. These activities are categorized as descriptive, diagnostic, predictive, prescriptive, and cognitive analytics.
 

@@ -49,13 +49,13 @@ There is a difference between a one-off analysis and an analytics solution. Both
 
 ## Deploy analytics solution
 
-Analysis results will be presented to stakeholders in a reporting or data visualization tool like Microsoft Power BI, where people can interact with and use the results of the analysis for decision making. 
+Results will be presented to stakeholders in a reporting or data visualization tool like Microsoft Power BI, where people can interact with and use the results of the analysis for decision making. 
 
 Key considerations in the deployment of an analytics solution will help determine the right tools, licensing, and permissions needed to get data into the hands of everyone that needs it. Access to timely insights will ultimately lead to data-informed decisions.
 
 ## Request and process feedback
 
-Deployment of an analytics solution may feel like a finish line, but it's important to understand a few key questions.
+Deployment of an analytics solution may feel like a finish line, but it's important to understand the answers to a few key questions.
   - Is the data product being used?
   - Does the analysis truly respond to the business needs?
   - Are there any unforeseen technical issues with the solution?
@@ -68,7 +68,7 @@ There are multiple mediums of soliciting feedback. The first launch of a solutio
 
 ## Optimize solution
 
-Implementing the feedback of your users is a logical first step to optimize your analytics solution. There may be opportunities to remove latency in the process, for example, ensuring the data refresh occurs in the allotted time. Optimization could also mean more accurately reflecting user needs by tweaking visual design or ensuring report visuals render quickly. 
+Implementing the feedback of your users is a logical first step to optimize your analytics solution. There may also be opportunities to remove latency in the process, for example, ensuring the data refresh occurs in the allotted time. Optimization could also mean more accurately reflecting user needs by tweaking visual design or ensuring report visuals render quickly.
 
 ## Begin again
 
