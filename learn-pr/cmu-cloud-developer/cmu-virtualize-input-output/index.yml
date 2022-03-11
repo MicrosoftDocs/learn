@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output
 metadata:
   title: Virtualize I/O
   description: Carnegie Mellon University's Cloud Developer course. Learn about how computer input/output is virtualized. Covers I/O basics and a case study of virtualizing I/O.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -34,6 +34,7 @@ prerequisites: |
   - Understand CPU virtualization
   - Understand memory virtualization
 iconUrl: /learn/achievements/cmu-cloud-developer/resource-virtualization-input-output.svg
+hidden: true
 levels:
 - beginner
 roles:

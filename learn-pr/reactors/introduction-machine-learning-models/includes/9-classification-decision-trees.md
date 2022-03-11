@@ -1,6 +1,6 @@
 If logistic regression uses observations about variables to swing a metaphorical needle between 0 and 1, classification based on decision trees programmatically builds a Yes/No decision to classify items.
 
-:::image type="content" alt-text="A decision tree graph." source="../media/decision-tree.png" loc-scope="azure":::
+:::image type="content" alt-text="A decision tree with edible or poisonous results." source="../media/decision-tree.png" loc-scope="azure":::
 
 Let's look at decision tree classification in practice with the same _Titanic_ dataset we used with logistic regression.
 
@@ -94,6 +94,6 @@ graph
 
 The output is:
 
-:::image type="content" alt-text="A decision tree graph." source="../media/output-graphviz-tree.png" loc-scope="azure":::
+:::image type="content" alt-text="A decision tree for predicted survival." source="../media/output-graphviz-tree.png" loc-scope="azure":::
 
 There are many other machine learning (ML) models that we could explore. You learned about some of the most common models. Now you're ready to learn what automated, cloud-based ML and AI services are doing and how to intelligently apply them to data-science problems. This subject is discussed in the next section.

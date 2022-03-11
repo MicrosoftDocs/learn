@@ -3,7 +3,7 @@ uid: learn.wwl.implement-canary-releases-dark-launching
 metadata:
   title: Implement canary releases and dark launching
   description: "Implement canary releases and dark launching"
-  ms.date: 12/02/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Understand dark launching
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/6-implement-canary-releases-and-dark-launching.svg
 levels:
 - advanced
 roles:

@@ -5,8 +5,8 @@ metadata:
   title: The speech translation script
   description: Learn about creating a C# script that performs speech recognition and translation
   ms.date: 10/06/2020
-  author: aprilspeight
-  ms.author: apspeigh
+  author: laujan
+  ms.author: lajanuar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

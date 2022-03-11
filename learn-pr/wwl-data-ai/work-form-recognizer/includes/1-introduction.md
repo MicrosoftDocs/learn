@@ -10,7 +10,7 @@ Consider some of the instances when a person needs to process form data:
 - When reviewing an operations report for anomalies
 - When selecting data from a report to give to a stakeholder 
 
-Without AI services, people need to manually sort though form documents to identify important information and then manually reenter data to record it. Some may also need to complete these tasks in real-time with a customer. 
+Without AI services, people need to manually sort through form documents to identify important information and then manually reenter data to record it. Some may also need to complete these tasks in real-time with a customer. 
 
 Form Recognizer services provide the building blocks for automation by using intelligent services to extract data at scale and with accuracy. *Azure Form Recognizer* is a Vision API that extracts key-value pairs and table data from form documents.
 

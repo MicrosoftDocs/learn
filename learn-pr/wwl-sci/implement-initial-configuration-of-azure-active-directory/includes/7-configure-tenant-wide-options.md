@@ -4,15 +4,15 @@ Tenant-wide option
 
  -  **Tenant Properties**
     
-     -  Azure AD --&gt; Properties
+     -  Azure AD - Properties
      -  Where you give the name of your directory and set values like the primary contact
  -  **User Settings**
     
-     -  Azure AD --&gt; Users --&gt; User Settings
+     -  Azure AD - Users - User Settings
      -  Where you define what global rights your users have, like registering applications
  -  **External Collaboration Settings**
     
-     -  Azure AD --&gt; Users --&gt; User Settings --&gt; Manage external collaboration
+     -  Azure AD - Users - User Settings - Manage external collaboration
      -  Where you define what task an external guest user can perform like inviting more guest users
 
 ## Configure tenant-wide user settings

@@ -1,26 +1,32 @@
 Protecting users' identity by monitoring their usage and sign-in patters ensures a secure cloud solution. Explore how to design and implement Azure Active Directory (Azure AD) Identity Protection.
 
 :::row:::
-![Icon indicating play video](../media/video-icon.png)
+  :::column:::
+    
+  :::column-end:::
+  :::column:::
+    
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    :::image type="content" source="../media/video-icon-4c0a5b11.png" alt-text="Icon indicating play video":::
 
-:::column:::
-In this video, get a high-level overview of Identity Protection, a feature of Azure Active Directory. You’ll learn about different types of detections, risks, and risk policies that exist in Identity Protection. The video explains the benefits of the risk policies, recent UX enhancements, powerful APIs, improved risk assessment, and overall alignment along risky users and risky sign-ins.
-
-:::column-end:::
+  :::column-end:::
+  :::column:::
+    In this video, get a high-level overview of Identity Protection, a feature of Azure Active Directory. You’ll learn about different types of detections, risks, and risk policies that exist in Identity Protection. The video explains the benefits of the risk policies, recent UX enhancements, powerful APIs, improved risk assessment, and overall alignment along risky users and risky sign-ins.
+  :::column-end:::
 :::row-end:::
 
-</br>
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MxmC]
-
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MxmC]
 
 ## Learning objectives
 
 In this module, you will:
 
-- Review Identity Protection basics.
-- Implement and manage a user risk policy. 
-- Implement and manage sign-in risk policies. 
-- Implement and manage multifactor authentication (MFA) registration policy. 
-- Monitor, investigate, and remediate elevated risky users. 
-
+ -  Review Identity Protection basics.
+ -  Implement and manage a user risk policy.
+ -  Implement and manage sign-in risk policies.
+ -  Implement and manage multifactor authentication (MFA) registration policy.
+ -  Monitor, investigate, and remediate elevated risky users.
