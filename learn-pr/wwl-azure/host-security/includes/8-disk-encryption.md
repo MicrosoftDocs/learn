@@ -54,7 +54,8 @@ As for Windows VMs, if you use Microsoft Defender for Cloud, you're alerted if y
 
 Linux VMs are available in a range of sizes. Azure Disk Encryption is supported on Generation 1 and Generation 2 VMs. Azure Disk Encryption is also available for VMs with premium storage.
 
-> [!NOTE] Azure Disk Encryption is not available on Basic, A-series VMs, or on virtual machines that do not meet these minimum memory requirements:
+> [!NOTE]
+> Azure Disk Encryption is not available on Basic, A-series VMs, or on virtual machines that do not meet these minimum memory requirements:
 
 :::row:::
   :::column:::
