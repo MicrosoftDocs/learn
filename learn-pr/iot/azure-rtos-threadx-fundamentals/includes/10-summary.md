@@ -1,3 +1,5 @@
+## Introduction
+
 We discussed several important terms and concepts in this module, as they're related to Azure ThreadX RTOS. Following are brief definitions of some key points.
 
 ### Determinism
@@ -29,5 +31,3 @@ The term *preemptive priority-based scheduling* refers to a scheduling approach 
 ### Context switches
 
 A *context* is the current execution state of a thread. It consists of such items as the registers, program counter (PC), and stack pointer (SP) and are stored in the thread stack when that stack has been preempted. The term context switch refers to the saving of one thread’s context and restoring a different thread’s context so that it can be executed.
-
-<!-- link to other content? -->
