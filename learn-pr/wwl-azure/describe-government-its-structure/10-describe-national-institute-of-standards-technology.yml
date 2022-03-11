@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-government-its-structure.describe-national-institute-of-standards-technology-nist
+title: Describe the National Institute of Standards and Technology (NIST)
+metadata:
+  title: Describe the National Institute of Standards and Technology (NIST)
+  description: "Describe the National Institute of Standards and Technology (NIST)"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-describe-national-institute-of-standards-technology.md)]
