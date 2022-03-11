@@ -3,7 +3,8 @@ As more business data is being accessed from locations outside of the traditiona
 
 This module introduces some important security and compliance concepts. You'll learn about the shared responsibility model, defense in depth, and Zero Trust model.   You'll be introduced to the concepts of encryption and hashing as ways to protect data. Lastly, you'll learn about concepts that relate to compliance.
 
-After completing this lesson, you'll be able to:
+After completing this module, you'll be able to:
+
 - Describe the shared responsibility and the defense in-depth security models.
 - Describe the Zero-Trust model.
 - Describe the concepts of encryption and hashing.
