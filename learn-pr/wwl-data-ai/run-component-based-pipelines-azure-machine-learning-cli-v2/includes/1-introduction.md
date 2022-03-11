@@ -2,11 +2,11 @@ The Azure Machine Learning CLI (v2) can be used to create reusable components th
 
 You're a machine learning engineer at a company selling bikes. The data science team has created many Python scripts to preprocess and train machine learning models. 
 
-Since there are already so many useful scripts, you want to ensure that the data scientists can easily reuse content that is already created. For that you want to create components, each computing a specific machine learning task as defined in a Python script.
+Since the team has many useful scripts, you want to ensure that the data scientists can easily reuse content that is already created. For that, you want to create components, each running a specific machine learning task as defined in a Python script.
 
-Using the components, you want to create pipelines that excute all necessary steps to preprocess and train a model. By creating pipelines, you set up workflows that can be scheduled or triggered when the model needs to be retrained.
+Using the components, you want to create pipelines that execute all necessary steps to preprocess and train a model. By creating pipelines, you set up workflows that can be scheduled or triggered when the model needs to be retrained.
 
-You'll be using the machine learning extension of the Azure CLI (v2) to create the components and pipeline. To explore the ease of use the Designer provides, you'll also create a pipeline with the Designer in the Azure Machine Learning studio. 
+You'll be using the machine learning extension of the Azure CLI (v2) to create the components and pipeline. To explore the ease of use the designer provides, you'll also create a pipeline with the designer in the Azure Machine Learning studio. 
 
 This module focuses on how you can create the components and pipeline with the Azure CLI (v2) for Azure Machine Learning.
 

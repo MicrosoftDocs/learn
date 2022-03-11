@@ -1,6 +1,6 @@
 The Azure Machine Learning designer allows you to create component-based pipelines to combine machine learning tasks.
 
-Some data scientists may want to quickly iterate over different configurations for machine learning workflows. In other words, they want to create several components-based pipelines easily and run the pipelines to compare models. Instead of using the CLI (v2), data scientists can also use the more user-friendly Azure Machine Learning designer to create a pipeline.
+Some data scientists may want to quickly iterate over different configurations for machine learning workflows. In other words, they want to create several components-based pipelines easily and run the pipelines to compare models. Instead of using the CLI (v2), data scientists can use the more user-friendly Azure Machine Learning designer to create a pipeline.
 
 You'll create the pipeline using the Azure Machine Learning designer.
 
@@ -40,7 +40,7 @@ To run the pipeline, select the **Submit** button and specify whether you want t
 
 You can track the progress of the pipeline in the designer. The execution of the pipeline can also be tracked in the **Experiments** tab. 
 
-> [!Note]
+> [!NOTE]
 > An experiment run is created for the pipeline and can be found under the experiment name you specified when submitting the pipeline. Additionally, each component will run as a job and will be represented as a **child run** to the pipeline's experiment run. 
 > If an error occurs, it may be more informative to investigate the child run of the component that failed and check its logs.
 

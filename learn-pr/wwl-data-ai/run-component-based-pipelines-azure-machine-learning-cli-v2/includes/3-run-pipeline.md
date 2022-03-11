@@ -10,14 +10,14 @@ Whenever you want to run a script in Azure Machine Learning, you can submit a jo
 
 Instead of using one large script, you divide up the script in multiple parts, each representing a task in the machine learning workflow. For each script, a **component** is created. You can combine the components in a certain order to create a **pipeline**.
 
-Similar to when you run a large script, you can run a component-based pipeline as a job in Azure Machine Learning. To specify what you want to run with your pipeline, you create a YAML file, which includes:
+Similar to when you run a large script, you can run a component-based pipeline as a **job** in Azure Machine Learning. To specify what you want to run with your pipeline, you create a YAML file, which includes:
 
 - *What to run*: The components.
 - *How to run it*: Any inputs or outputs the components may expect.
 - *Where to run it*: The compute needed to execute the code.
 
-> [!Note]
-> You can specify the **compute** and **environment** in both the pipeline and component job. The compute and environment specified in the pipeline will be the default. The compute and environment specified in the component details are optional and will override the default for that individual component.
+> [!NOTE]
+> You can specify the **compute** and **environment** in both the pipeline and component job. The compute and environment specified in the **pipeline** will be the **default**. The compute and environment specified in the component details are optional and will override the default for that individual component.
 
 Imagine you're using components to create a pipeline that will train a model to predict whether a customer will churn or not. For the pipeline job, the YAML may look like the following example:
 
@@ -79,9 +79,12 @@ The pipeline consists of three components, and thus three steps in the machine l
 - Normalize the data
 - Train a decision tree model
 
+> [!NOTE]
+> The scripts for the components are not included here. You'll create components and a pipeline in the exercise. The scripts and YAML files are stored in the GitHub repository linked in the exercise of this module.
+
 ### Inputs and outputs
 
-In the `<inputs_and_outputs>` section, of the YAML file, you can find the **input** for the first component. The input is the first version of the registered dataset from the Azure Machine Learning workspace named `customer-churn-data`.
+In the `<inputs_and_outputs>` section, of the YAML file, you can find the **input** for the first component. In the example, the input is the first version of the registered dataset from the Azure Machine Learning workspace named `customer-churn-data`.
 
 In the `<inputs_and_outputs>` section, you'll also find that the **outputs** of each component will be uploaded to a datastore. 
 
@@ -109,7 +112,7 @@ inputs:
       training_data: ${{jobs.normalize-data-job.outputs.output_data}}
 ```
 
-> [!Tip]
+> [!TIP]
 > For a complete overview of [the YAML syntax when creating a pipeline job, see the reference documentation](/azure/machine-learning/reference-yaml-job-pipeline).
 
 Once you have the YAML file of the pipeline job, you can run the pipeline using the following command:
@@ -118,4 +121,4 @@ Once you have the YAML file of the pipeline job, you can run the pipeline using 
 az ml job create --file ./job.yml
 ```
 
-To review the pipeline job and its child jobs for each component, you can navigate to the Azure Machine Learning studio.
+To review the pipeline job and the child jobs for each of the pipeline's components, you can navigate to the Azure Machine Learning studio.
