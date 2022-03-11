@@ -2,9 +2,9 @@ To control traffic flow within your virtual network, you must learn the purpose 
 
 ## Azure routing
 
-Network traffic in Azure is automatically routed across Azure subnets, virtual networks, and on-premises networks. This routing is controlled by system routes, which are assigned by default to each subnet in a virtual network. With these system routes, any Azure virtual machine that gets deployed into a virtual network can communicate with each other. These virtual machines are also potentially accessible from on-premises through a hybrid network or the internet.
+Network traffic in Azure is automatically routed across Azure subnets, virtual networks, and on-premises networks. This routing is controlled by system routes, which are assigned by default to each subnet in a virtual network. With these system routes, any Azure virtual machine that gets deployed into a virtual network can communicate with any other in the network. These virtual machines are also potentially accessible from on-premises through a hybrid network or the internet.
 
-You can't create or delete system routes. But you can override the system routes by adding custom routes to control traffic flow to the next hop.
+You can't create or delete system routes, but you can override the system routes by adding custom routes to control traffic flow to the next hop.
 
 Every subnet has the following default system routes:
 
@@ -54,15 +54,15 @@ Virtual network endpoints extend your private address space in Azure by providin
 
 ## Custom routes
 
-System routes might make it easy for you to quickly get your environment up and running. But there are many scenarios in which you'll want to more closely control the traffic flow within your network. For example, you might want to route traffic through an NVA or through a firewall. This control is possible with custom routes.
+System routes might make it easy for you to quickly get your environment up and running, but there are many scenarios in which you'll want to more closely control the traffic flow within your network. For example, you might want to route traffic through an NVA or through a firewall. This control is possible with custom routes.
 
-You have two options for implementing custom routes: create a user-defined route or use Border Gateway Protocol (BGP) to exchange routes between Azure and on-premises networks.
+You have two options for implementing custom routes: create a user-defined route, or use Border Gateway Protocol (BGP) to exchange routes between Azure and on-premises networks.
 
 ### User-defined routes
 
-You use a user-defined route to override the default system routes so that traffic can be routed through firewalls or NVAs.
+You can use a user-defined route to override the default system routes so traffic can be routed through firewalls or NVAs.
 
-For example, you might have a network with two subnets and want to add a virtual machine in the perimeter network to be used as a firewall. You create a user-defined route so that traffic passes through the firewall and doesn't go directly between the subnets.
+For example, you might have a network with two subnets and want to add a virtual machine in the perimeter network to be used as a firewall. You can create a user-defined route so that traffic passes through the firewall and doesn't go directly between the subnets.
 
 When creating user-defined routes, you can specify these next hop types:
 
@@ -78,13 +78,13 @@ With user-defined routes, you can't specify the next hop type **VirtualNetworkSe
 
 A network gateway in your on-premises network can exchange routes with a virtual network gateway in Azure by using BGP. BGP is the standard routing protocol that is normally used to exchange routing and information among two or more networks. BGP is used to transfer data and information between different host gateways like on the internet or between autonomous systems.
 
-You typically use BGP to advertise on-premises routes to Azure when you're connected to an Azure datacenter through Azure ExpressRoute. You can also configure BGP if you connect to an Azure virtual network by using a VPN site-to-site connection.
+You'll typically use BGP to advertise on-premises routes to Azure when you're connected to an Azure datacenter through Azure ExpressRoute. You can also configure BGP if you connect to an Azure virtual network by using a VPN site-to-site connection.
 
 The following diagram shows a topology with paths that can pass data between Azure VPN Gateway and on-premises networks:
 
 ![Diagram showing an example of using the Border Gateway Protocol.](../media/2-bgp.svg)
 
-BGP offers network stability because routers can quickly change connections to send packets if a connection path goes down.
+BGP offers network stability, because routers can quickly change connections to send packets if a connection path goes down.
 
 ## Route selection and priority
 
