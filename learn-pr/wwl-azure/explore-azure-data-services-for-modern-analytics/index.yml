@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-data-services-for-modern-analytics
 metadata:
   title: Explore Azure data services for modern analytics
   description: "Understand analytics solutions in the Azure data ecosystem. Explore the architecture of a scalable analytics solution to meet business needs."
-  ms.date: 03/10/2022
+  ms.date: 03/11/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ abstract: |
   *   Describe the Azure data ecosystem for analytics
 prerequisites: |
   - You should be familiar with basic data concepts and terminology.
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
