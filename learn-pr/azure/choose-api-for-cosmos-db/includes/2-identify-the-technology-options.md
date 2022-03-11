@@ -1,12 +1,12 @@
 ![Diagram showing how Azure Cosmos DB is globally distributed, supports five principles, four models, and five APIs.](../media/azure-cosmos-db.png)
 
-Azure Cosmos DB is a globally distributed and elastically scalable database. It has a guaranteed low latency that is backed by a comprehensive set of Service Level Agreements (SLAs). Consistency can sometimes be an issue when you are working with distributed systems, but Azure Cosmos DB alleviates this situation by offering you five different consistency levels: *strong*, *bounded staleness*, *session*, *consistent prefix*, and *eventual*.
+Azure Cosmos DB is a globally distributed and elastically scalable database. It has a guaranteed low latency that is backed by a comprehensive set of Service Level Agreements (SLAs). Consistency can be an issue when you're working with distributed systems, but Azure Cosmos DB alleviates this situation by offering you five consistency levels: *strong*, *bounded staleness*, *session*, *consistent prefix*, and *eventual*.
 
 All of the above is supported by a multi-model Azure Cosmos DB's approach, which provides you with the ability to use document, key-value, wide-column, or graph-based data.
 
-The final choice you have is how to access and manipulate your data. Azure Cosmos DB was built to support multiple different models, and you can continue to use industry standard APIs if they are already part of your application or database design.
+The final choice you have is how to access and manipulate your data. Azure Cosmos DB was built to support multiple models, and you can still use industry standard APIs if they're already part of your application or database design.
 
-This flexibility means that Azure Cosmos DB can be used as the database in all of the components that are being designed for your project.
+This flexibility means you can use Azure Cosmos DB as the database in all the components designed for your project.
 
 In this unit you'll discover, at a High Level, what each of the API choices are, and how they might be used. In the following units, you'll see scenarios where each of the API choices will be applicable.
 
@@ -61,7 +61,7 @@ For developers who have experience with the SQL query language, Core (SQL) provi
 
 :::row:::
   :::column span="3":::
-Azure Cosmos DB's API for MongoDB supports the MongoDB wire protocol. This API allows existing MongoDB client SDKs, drivers, and tools to interact with the data transparently, as if they are running against an actual MongoDB database. The data is stored in document format, which is the same as using Core (SQL). Azure Cosmos DB's API for MongoDB is currently compatible with 3.2 version of the MongoDB wire protocol.
+Azure Cosmos DB's API for MongoDB supports the MongoDB wire protocol. This API allows existing MongoDB client SDKs, drivers, and tools to interact with the data transparently, as if they're running against an actual MongoDB database. The data is stored in document format, which is the same as using Core (SQL). Azure Cosmos DB's API for MongoDB is currently compatible with versions 32., 3.6, and 4.0 of the MongoDB wire protocol.
   :::column-end:::
   :::column:::
 :::image type="icon" border="false" source="../media/mongo-api.png":::
@@ -180,7 +180,7 @@ Results will be returned in GraphSON format, which looks like this:
   }
 ]
 ```
-This kind of graph might be useful when you are creating a product recommendation application for an e-commerce website, or you could return detailed information for each of the related purchases by using the following query:
+This kind of graph might be useful when you're creating a product recommendation application for an e-commerce website, or you could return detailed information for each of the related purchases by using the following query:
 
 ```
 g.V().hasLabel('product').has('productName', 'Industrial Saw').outE('boughtWith').inV().hasLabel('product')
