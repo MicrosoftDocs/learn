@@ -13,7 +13,7 @@ Review the links below for more details about the information covered in this mo
 
 - [GitHub product docs](https://docs.github.com/get-started/learning-about-github/githubs-products)
 - [Submitting a ticket](https://docs.github.com/en/github/working-with-github-support/submitting-a-ticket#submitting-a-ticket-using-the-github-enterprise-support-portal)
-- [Providing data to GitHub Support](https://docs.github.com/en/enterprise-server@3.0/admin/enterprise-support/receiving-help-from-github-support/providing-data-to-github-support)
+- [Providing data to GitHub Support](https://docs.github.com/enterprise-server@3.1/admin/enterprise-support/receiving-help-from-github-support/providing-data-to-github-support)
 - [Viewing and managing a member's SAML access to your organization](https://docs.github.com/en/organizations/granting-access-to-your-organization-with-saml-single-sign-on/viewing-and-managing-a-members-saml-access-to-your-organization)
 - [Synchronizing a team with an identity provider](https://docs.github.com/en/organizations/organizing-members-into-teams/synchronizing-a-team-with-an-identity-provider-group)
 - [GitHub API documentation on SCIM](https://docs.github.com/en/rest/reference/scim)
