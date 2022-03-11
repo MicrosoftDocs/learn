@@ -12,15 +12,14 @@ The primary domain is the default domain name for a new user when you create a n
 1.  Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a Global Administrator for the organization.
 2.  Select **Azure Active Directory**.
 3.  Select **Custom domain names**.
-
-:::image type="content" source="../media/add-custom-domain-9b5b5015.png" alt-text="Opening the user management page.":::
-
-
+    
+    :::image type="content" source="../media/add-custom-domain-9b5b5015.png" alt-text="Opening the user management page.":::
+    
 4.  Select the name of the domain that you want to be the primary domain.
 5.  Select the **Make primary** command. Confirm your choice when prompted.
-
-:::image type="content" source="../media/make-primary-domain-5189294b.png" alt-text="Make a domain name the primary.":::
-
+    
+    :::image type="content" source="../media/make-primary-domain-5189294b.png" alt-text="Make a domain name the primary.":::
+    
 
 You can change the primary domain name for your organization to be any verified custom domain that isn't federated. Changing the primary domain for your organization won't change the user name for any existing users.
 

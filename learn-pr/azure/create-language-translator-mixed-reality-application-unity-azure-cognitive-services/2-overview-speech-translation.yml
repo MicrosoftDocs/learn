@@ -5,8 +5,8 @@ metadata:
   title: Overview of speech translation
   description: Learn about speech translation on Azure and how it can benefit Mixed Reality applications
   ms.date: 10/06/2020
-  author: aprilspeight
-  ms.author: apspeigh
+  author: laujan
+  ms.author: lajanuar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

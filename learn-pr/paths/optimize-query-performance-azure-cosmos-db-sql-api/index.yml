@@ -3,7 +3,7 @@ uid: learn.wwl.optimize-query-performance-azure-cosmos-db-sql-api
 metadata:
   title: Optimize query and operation performance in Azure Cosmos DB SQL API
   description: Optimize query and operation performance in Azure Cosmos DB SQL API
-  ms.date: 12/09/2021
+  ms.date: 03/09/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 summary: |
   Optimize the performance of your queries and operations using Azure Cosmos DB SQL API.
-iconUrl: /learn/achievements/azure-cosmos-db-optimize-query-performance.svg
+iconUrl: /learn/achievements/azure-cosmos-db-sql-api-optimize-query-performance.svg
 levels:
 - intermediate
 roles:

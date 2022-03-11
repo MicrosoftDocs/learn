@@ -17,10 +17,6 @@ You can connect to your Azure file share with Windows or Windows Server. Just se
 
 You can also connect to your Azure file share with Linux machines. Just select **Connect** from the virtual machine page. Azure file shares can be mounted in Linux distributions using the CIFS kernel client. File mounting can be done on-demand with the mount command or on-boot (persistent) by creating an entry in /etc/fstab.
 
-
-:::image type="content" source="../media/map-file-shares-linux-1639a49a.png" alt-text="Screenshot of the file share connect page for linux. The sudo command is shown.":::
-
-
 ## Secure transfer required
 
 The secure transfer option enhances the security of your storage account by only allowing requests to the storage account by secure connection. For example, when calling REST APIs to access your storage accounts, you must connect using HTTPs. Any requests using HTTP will be rejected when *Secure transfer required* is enabled.

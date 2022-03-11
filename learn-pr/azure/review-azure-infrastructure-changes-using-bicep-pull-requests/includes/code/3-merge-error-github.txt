@@ -1,0 +1,6 @@
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: error: GH006: Protected branch update failed for refs/heads/main.
+remote: error: Changes must be made through a pull request.
+To https://github.com/mygithubuser/toy-website-review.git
+ ! [remote rejected] main -> main (protected branch hook declined)
+error: failed to push some refs to 'https://github.com/mygithubuser/toy-website-review.git'

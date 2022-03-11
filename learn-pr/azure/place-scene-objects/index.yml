@@ -17,7 +17,7 @@ abstract: |
   - Use solvers to direct the user to objects
   - Use solvers to reposition objects
 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/place-scene-objects-tutorials-mrtk.svg
 levels:
 - beginner
 roles:
