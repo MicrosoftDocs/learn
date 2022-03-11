@@ -42,7 +42,7 @@ In this exercise, you'll provision and test an Azure SQL Database resource.
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the Azure portal showing the SQL Database page.](../media/sql-database-portal.png)
 
-1. In the pane on the right side of the page, select **Query editor (preview)**, and then sign in using the administrator login and password you specified for your server.
+1. In the pane on the left side of the page, select **Query editor (preview)**, and then sign in using the administrator login and password you specified for your server.
 
     *If an error message stating that the client IP address isn't allowed is displayed, select the **Allowlist IP ...** link at the end of the message to allow access and try to sign in again (you previously added you own computer's client IP address to the firewall rules, but the query editor may connect from a different address depending on your network configuration.)*
 

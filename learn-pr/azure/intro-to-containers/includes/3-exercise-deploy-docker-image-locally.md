@@ -25,7 +25,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
 
     You should see a repository named *mcr.microsoft.com/dotnet/core/samples* with a tag of *aspnetapp*.
 
-4. Enter the following code to start the sample app. The *-d* flag is to run it as a background, non-interactive app. The *-p* flag is to map port 80 in the container that is created to port 8080 locally; this setting is intended to avoid conflicts with any web apps already running on your computer. The command will respond with a lengthy hexadecimal identifier for the instance.
+4. Enter the following code to start the sample app. The *-d* flag is to run it as a background, non-interactive app. The *-p* flag is to map port 80 in the container that's created to port 8080 locally. This setting is intended to avoid conflicts with any web apps already running on your computer. The command will respond with a lengthy hexadecimal identifier for the instance.
 
     ```bash
     docker run -d -p 8080:80 mcr.microsoft.com/dotnet/core/samples:aspnetapp
@@ -58,7 +58,7 @@ In this exercise, you'll pull an image from Docker Hub and run it. You'll examin
     docker container stop <NAME>
     ```
 
-1. Run the following command to verify that the container is no longer running. The *-a* flag indicates that the command shows the status of all containers, not just those that are running. The output should show the STATUS of the container as *Exited*. 
+1. Run the following command to verify that the container is no longer running. The *-a* flag indicates that the command shows the status of all containers, not just the containers that are running. The output should show the STATUS of the container as *Exited*. 
 
     ```bash
     docker ps -a

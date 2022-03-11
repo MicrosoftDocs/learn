@@ -173,7 +173,7 @@ You can create a workflow file and then push/upload the file to the repository. 
     on:
       push:
         branches:
-          - master
+          - main
     env:
       AZURE_SUBSCRIPTION_ID: << Subscription Id >>   # set this to your Azure Subscription Id
       AZURE_RESOURCE_GROUP: GitHubActionExercise-rg   # set this to your target resource group
@@ -183,7 +183,7 @@ You can create a workflow file and then push/upload the file to the repository. 
         runs-on: ubuntu-latest
         steps:
           - name: Checkout source code
-            uses: actions/checkout@master
+            uses: actions/checkout@main
 
           - name: Login to Azure
             uses: azure/login@v1
@@ -202,7 +202,7 @@ You can create a workflow file and then push/upload the file to the repository. 
     The workflow file has three sections:
 
     - `name`: This is the name of the workflow.
-    - `on`: This is the name of the GitHub event that triggers the workflow. The workflow is triggered when a push event is on the master branch and modifies at least one file on the master branch.
+    - `on`: This is the name of the GitHub event that triggers the workflow. The workflow is triggered when a push event is on the main branch and modifies at least one file on the main branch.
     - `jobs`: A workflow run consists of one or more jobs. Only one job is called `deploy-virtual-network-template`. This job has three steps:
       1. Check out source code.
       1. Sign in to Azure.
@@ -214,17 +214,17 @@ You can create a workflow file and then push/upload the file to the repository. 
     > [!NOTE]
     > The resource group name should be `GitHubActionExercise-rg` if you used the preceding Azure CLI code when you configured deployment credentials. The generated resource group name is the project name with `rg` appended.
 1. Select **Start commit**. Add a comment and description if needed.
-1. Ensure that **Commit directly to the master branch** is selected, and then select **Commit new file** (or **Commit changes**).
+1. Ensure that **Commit directly to the main branch** is selected, and then select **Commit new file** (or **Commit changes**).
 
-    :::image type="content" source="../media/9-github-workflow-commit.png" alt-text="Screenshot that shows committing a workflow to the master branch.":::
+    :::image type="content" source="../media/9-github-workflow-commit.png" alt-text="Screenshot that shows committing a workflow to the main branch.":::
 
-    After the workflow file is created and committed to the master branch of the repo, the workflow will start automatically because the trigger in your workflow is a commit/push to the master branch.
+    After the workflow file is created and committed to the main branch of the repo, the workflow will start automatically because the trigger in your workflow is a commit/push to the main branch.
 
     ```yaml
     on:
       push:
         branches:
-          - master
+          - main
     ```
 
 1. Go to your repo and check the status of your workflow.

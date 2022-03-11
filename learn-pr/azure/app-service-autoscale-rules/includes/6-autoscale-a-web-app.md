@@ -35,7 +35,7 @@ The Azure portal enables you to track when autoscaling has occurred through the 
 
 You can use the **Run history** chart in conjunction with the metrics shown on the **Overview** page to correlate the autoscaling events with resource utilization.
 
-![Screenshot of the metrics shown on the App Service Plan overview page.](../media/6-service-plan-metrics.png)
+![Screenshot of the metrics shown on the App Service Plan overview page, showing the correlation between autoscaling events with resource utilization.](../media/6-service-plan-metrics.png)
 
 ## Disable autoscaling
 
