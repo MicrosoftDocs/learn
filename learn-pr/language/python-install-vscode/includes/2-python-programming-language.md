@@ -1,4 +1,4 @@
-Before you can begin writing Python code, you'll need to install a few tools on your local computer. You'll need the Python interpreter that compiles and runs your code, and a code editor with features that can help you write Python code. In this module you will install and configure the necessary tooling.
+Before you can begin writing Python code, you'll need to install a few tools on your local computer. You'll need the Python interpreter that compiles and runs your code, and a code editor with features that can help you write Python code. In this module, you'll install and configure the necessary tooling.
 
 ## Python versions
 
@@ -19,7 +19,7 @@ At the top of this page, select the tab that represents your operating system.
 
 To determine if your Windows computer already has Python 3:
 
-1. Open a command prompt by entering **cmd** in the Windows 10 search box and selecting the **Command Prompt App** in the **Best match** results.
+1. Open a command prompt by entering **cmd** in the Windows search box and selecting the **Command Prompt App** in the **Best match** results.
 1. Enter the following command and then press <kbd>Enter</kbd>:
 
     ```console
@@ -41,7 +41,7 @@ To determine if your Windows computer already has Python 3:
     Python 3.8.0
     ```
 
-As long as the first number is `3`, Python 3 is installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in all of the beginner Python modules on Microsoft Learn.
+As long as the first number is `3`, Python 3 is installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along with the beginner Python modules on Microsoft Learn.
 
 If the first number is `2` or if you received an error message, you'll need to install Python 3. We'll walk you through installation of Python 3 in the next unit.
 
@@ -51,7 +51,7 @@ If the first number is `2` or if you received an error message, you'll need to i
 
 ### Linux
 
-Python is pre-installed on most Linux distributions (like Ubuntu). 
+Python is pre-installed on most Linux distributions (like Ubuntu).
 
 To determine if your Linux computer already has Python 3 installed:
 
@@ -71,7 +71,7 @@ To determine if your Linux computer already has Python 3 installed:
     Python 3.8.0
     ```
 
-As long as the first number is `3` and you didn't receive an error message, Python 3 is installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in all of the beginner Python modules on Microsoft Learn.
+As long as the first number is `3` and you didn't receive an error message, Python 3 is installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along with the beginner Python modules on Microsoft Learn.
 
 If you received an error message, you'll need to install Python 3. We'll walk you through installation of Python 3 in the next unit.
 
@@ -100,7 +100,7 @@ To determine if your macOS computer already has Python 3 installed:
     Python 3.8.0
     ```
 
-As long as the first number is `3` and you didn't receive an error message, Python 3 is installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in all of the beginner Python modules on Microsoft Learn.
+As long as the first number is `3` and you didn't receive an error message, Python 3 is installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along with the beginner Python modules on Microsoft Learn.
 
 If you received an error message, you'll need to install Python 3. We'll walk through installation of Python 3 in the next unit.
 
