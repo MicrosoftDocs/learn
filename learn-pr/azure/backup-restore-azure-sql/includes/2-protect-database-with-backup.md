@@ -25,7 +25,7 @@ When a failure occurs, you might lose changes from up to 5 minutes ago, if the l
 
 ## Backups and service tiers
 
-The default backup retention period is set to 7 days when you create a database. Later, you can change that period to a duration from 0 to 35 days. When you create a database by using the purchasing model based on Data Transaction Units (DTUs), the default retention period for that database depends on the service tier:
+The default backup retention period is set to seven days when you create a database. Later, you can change that period to a duration from 0 to 35 days. When you create a database by using the purchasing model based on Data Transaction Units (DTUs), the default retention period for that database depends on the service tier:
 
 | Service tier  | Default retention period  |
 |---------------|---------------------------|
@@ -47,9 +47,9 @@ Full backups for LTR are kept up to 10 years in Azure Blob storage accounts. You
 
 Microsoft provides Azure backup services to create all-encompassing backups with a predictable pricing system that lets you easily keep track of any Azure data backup costs. Pricing for backing up SQL Server is based on paying for both instance costs (the data getting protected) and storage costs each month.
 
-By default, 7 days of automated backups of your databases are copied to RA-GRS standard blob storage. The storage is used by weekly full backups, daily differential backups, and transaction log backups copied every 5 minutes. The size of the transaction log depends on the rate of change of the database. 
+By default, seven days of automated backups of your databases are copied to RA-GRS standard blob storage. The storage is used by weekly full backups, daily differential backups, and transaction log backups copied every 5 minutes. The size of the transaction log depends on the rate of change of the database. 
 
-A minimum storage amount equal to 100 percent of database size is provided at no extra charge. Additional consumption of backup storage is charged in gigabytes per month.
+A minimum storage amount equal to 100 percent of database size is provided at no extra charge. Extra consumption of backup storage is charged in gigabytes per month.
 
 ## Benefits of using Azure backups
 
