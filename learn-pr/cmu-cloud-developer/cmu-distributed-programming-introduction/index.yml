@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-computing.distributed-programming.introduction
 metadata:
   title: What is distributed programming?
   description: Carnegie Mellon University's Cloud Developer course. Learn about distributed programming and why it's useful for the cloud, including programming models, types of parallelism, and symmetrical vs. asymmetrical architecture.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -47,6 +47,7 @@ prerequisites: |
   - Be familiar with distributed file systems and how they work
   - Be familiar with NoSQL databases and object storage, and how they work
 iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-introduction.svg
+hidden: true
 levels:
 - beginner
 roles:

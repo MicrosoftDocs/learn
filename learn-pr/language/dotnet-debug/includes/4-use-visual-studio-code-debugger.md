@@ -110,7 +110,7 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
     The program '[88820] DotNetDebugging.dll' has exited with code 0 (0x0).
     ```
 
-The lines at the top tell you that the default debugging settings enable the "Just My Code" option. This means that the debugger will only debug your code and won't step into the source code for .NET unless you disable this mode. This option allows you to focus on debugging your code.
+The lines at the top tell you that the default debugging settings enable the "Just My Code" option. This means the debugger will only debug your code and won't step into the source code for .NET unless you disable this mode. This option allows you to focus on debugging your code.
 
 At the end of the debug console output, you'll see the program writes 3 to the console and then exits with code 0. Usually a program exit code of 0 indicates that the program ran and exited without crashing. However, there's a difference between crashing and returning the correct value. In this case, we asked the program to calculate the fifth value of the Fibonacci sequence:
 
@@ -270,7 +270,7 @@ When we're doing this, it's important to be strategic about where we put our bre
     for (int i = 2; i < n; i++)
     ```
 
-    Okay, wait a minute! That means that it will exit as soon as the top of the for loop sees `i` equals as `n`. That means that the loop code won't run for the case where `i` equals `n`. It seems like what we wanted was to run until `i <= n`, instead:
+    Okay, wait a minute! That means that it will exit as soon as the top of the for loop sees `i` is less than `n`. That means that the loop code won't run for the case where `i` equals `n`. It seems like what we wanted was to run until `i <= n`, instead:
 
     ```csharp
     for (int i = 2; i <= n; i++)
