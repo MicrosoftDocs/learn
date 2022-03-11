@@ -4,7 +4,7 @@ The Microsoft 365 compliance center is the portal for organizations to manage th
 
 In this lesson, you’ll learn about explore the Microsoft 365 compliance center.  You'll learn about the Compliance Manager and compliance score, which can help organizations manage, simplify, and improve compliance across their organization.
 
-After completing this lesson, you'll be able to:
+After completing this module, you'll be able to:
 
 - Describe the Microsoft 365 Compliance center
 - Describe Compliance Manager

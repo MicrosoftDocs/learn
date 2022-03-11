@@ -4,20 +4,14 @@ Admins can get a breakdown of the compliance score in the Compliance Manager ove
 
 :::image type="content" source="../media/5-compliance-score-home-page-inline.png" lightbox="../media/5-compliance-score-home-page-expanded.png" alt-text="A breakdown of compliance score":::
 
-## What is the difference between Compliance Manager and compliance score?
-
-Compliance Manager is an end-to-end solution in Microsoft 365 compliance center to enable admins to manage and track compliance activities.  Compliance score is a calculation of the overall compliance posture across the organization. The compliance score is available through Compliance Manager.
-
-Compliance Manager gives admins the capabilities to understand and increase their compliance score, so they can ultimately improve the organization’s compliance posture and help it to stay in line with compliance requirements.
-
-## How to understand the compliance score
+### How to understand the compliance score
 
 The overall compliance score is calculated using scores that are assigned to actions. Actions come in two types:
 
 -  **Your improved actions**: actions that the organization is expected to manage.
 -  **Microsoft actions**: actions that Microsoft manages for the organization.
 
-These action types have points assigned to them that count towards the compliance score. Actions are also assigned a score value based on whether they’re categorized as mandatory, discretionary, preventative, detective, or corrective:
+Actions are categorized as mandatory, discretionary, preventative, detective, or corrective:
 
 - **Mandatory** – these actions shouldn’t be bypassed. For example, creating a policy to set requirements for password length or expiration.
 - **Discretionary** – these actions depend on the users understanding and adhering to a policy. For example, a policy where users are required to ensure their devices are locked before they leave them.
@@ -32,8 +26,15 @@ Organizations accumulate points for every action completed. And the compliance s
 
 :::image type="content" source="../media/5-compliance-score-details-inline.png" lightbox="../media/5-compliance-score-details-expanded.png" alt-text="Example of a compliance score":::
 
-## Interactive guide
+### Interactive guide
 
-In this interactive guide, you’ll explore your organization’s compliance score, and the tools you can use to improve it:
+In this interactive guide, you’ll explore your organization’s compliance score, and ways to improve it:
 
 [![Interactive guide](../media/5-compliance-score-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP04M02%20-%20Explore%20Compliance%20Score/index.html?azure-portal=true)
+
+
+### What is the difference between Compliance Manager and compliance score?
+
+Compliance Manager is an end-to-end solution in Microsoft 365 compliance center to enable admins to manage and track compliance activities.  Compliance score is a calculation of the overall compliance posture across the organization. The compliance score is available through Compliance Manager.
+
+Compliance Manager gives admins the capabilities to understand and increase their compliance score, so they can ultimately improve the organization’s compliance posture and help it to stay in line with compliance requirements.
