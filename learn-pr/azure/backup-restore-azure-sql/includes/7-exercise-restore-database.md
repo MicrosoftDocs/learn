@@ -17,7 +17,7 @@ It can take up to 15 minutes for the first successful backup to finish. We need 
         -ServerName $sqlserver.ServerName
     ```
 
-    You should see an output similar to the following if your backups are running. If the command returns no value, a backup hasn't started yet. Rerun this command in a couple of minutes.
+    You should see an output similar to the following code if your backups are running. If the command returns no value, a backup hasn't started yet. Rerun this command in a couple of minutes.
 
     ```output
     ResourceGroupName        : <rgn>[sandbox resource group name]</rgn>
