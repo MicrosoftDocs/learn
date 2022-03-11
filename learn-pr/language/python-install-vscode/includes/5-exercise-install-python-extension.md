@@ -20,7 +20,7 @@ Visual Studio Code is a powerful code editor and a lightweight general-purpose I
 
     :::image type="content" source="../media/visual-studio-code-extensions-install.png" alt-text="Screenshot of the search results in the Extensions panel for Windows with Python Install highlighted.":::
 
-    When the installation is complete, the Install button changes to a **Settings** icon in the Extensions view or two buttons, **Disable** and **Uninstall** in the main panel. This message lets you know that you've successfully installed the Python extension for Windows.
+    When the installation is complete, the Install button changes to a **Settings ⚙️** icon in the Extensions view or two buttons, **Disable** and **Uninstall** in the main panel. This message lets you know that you've successfully installed the Python extension for Windows.
 
 ::: zone-end
 
@@ -30,7 +30,7 @@ Visual Studio Code is a powerful code editor and a lightweight general-purpose I
 
     :::image type="content" source="../media/visual-studio-code-extensions-install.png" alt-text="Screenshot of the search results in the Extensions panel for Linux with Install Python highlighted.":::
 
-    When the installation is complete, the Install button changes to a **Settings** icon in the Extensions view or two buttons, **Disable** and **Uninstall** in the main panel. This message lets you know that you've successfully installed the Python extension for Linux/UNIX.
+    When the installation is complete, the Install button changes to a **Settings ⚙️** icon in the Extensions view or two buttons, **Disable** and **Uninstall** in the main panel. This message lets you know that you've successfully installed the Python extension for Linux/UNIX.
 
 ::: zone-end
 
@@ -40,7 +40,7 @@ Visual Studio Code is a powerful code editor and a lightweight general-purpose I
 
     :::image type="content" source="../media/visual-studio-code-extensions-install.png" alt-text="Screenshot of the search results in the Extensions panel for macOS with Python Install highlighted.":::
 
-    When the installation is complete, the Install button changes to a **Settings** icon in the Extensions view or two buttons, **Disable** and **Uninstall** in the main panel. This message lets you know that you've successfully installed the Python extension for macOS.
+    When the installation is complete, the Install button changes to a **Settings ⚙️** icon in the Extensions view or two buttons, **Disable** and **Uninstall** in the main panel. This message lets you know that you've successfully installed the Python extension for macOS.
 
     > [!IMPORTANT]
     > After you install the Python extension, you may see a dialog box that asks you whether you want to install the command line developer tools. You should select **Install**. You'll need to agree to the Command Line Tools License Agreement. The installation process could take as long as 20 minutes or more, depending on your internet connection. After the install is complete, a dialog box appears stating that the software is installed. Select **Done** to proceed.
