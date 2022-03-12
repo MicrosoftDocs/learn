@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.run-pipeline-designer
+title: Run a pipeline with the Designer
+metadata:
+  title: Run a pipeline with the Designer
+  description: "Run a pipeline with the Designer"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-run-pipeline-designer.md)]

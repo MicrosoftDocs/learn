@@ -30,4 +30,4 @@ Although the widget displays only one test run, you now have a way to visualize 
 
 :::image type="content" source="../media/5-test-results-trend-widget.png" alt-text="A screenshot of Azure DevOps Test Results Trend widget displaying a line trend chart of passing and failing tests.":::
 
-If you begin to see test failures, you can click a point on the graph to navigate directly to that build.
+If you begin to see test failures, you can select a point on the graph to navigate directly to that build.
