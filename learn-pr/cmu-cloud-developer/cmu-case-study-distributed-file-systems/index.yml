@@ -4,7 +4,7 @@ metadata:
   title: 'Case studies: Distributed file systems'
   description: Carnegie Mellon University's Cloud Developer course. Discover how distributed file systems work, then learn about Hadoop and Ceph.
   brand: azure
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -33,6 +33,7 @@ prerequisites: |
   - Understand I/O virtualization
   - Know about the different types of data and how they are stored
 iconUrl: /learn/achievements/cmu-cloud-developer/case-studies-distributed-file-systems.svg
+hidden: true
 levels:
 - beginner
 roles:
