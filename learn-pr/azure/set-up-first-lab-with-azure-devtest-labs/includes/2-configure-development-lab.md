@@ -6,7 +6,7 @@ Here, you'll learn the key configuration settings of an Azure DevTest Labs resou
 
 ## VM base images
 
-Base images are VM images with all the tools with all the tools and settings preinstalled and configured. Azure DevTest Labs supports two types of VM images for creating VMs:
+Base images are VM images with all the tools and settings preinstalled and configured. Azure DevTest Labs supports two types of VM images for creating VMs:
 
 - Azure Marketplace images.
 - Virtual machine custom images that you create from a virtual hard drive (VHD).
@@ -19,9 +19,9 @@ By default, a lab in DevTest Labs allows users access to all VM images in the Az
 
 If you don't want to allow lab users access to Azure Marketplace images, select nothing from the list of Marketplace images.
 
-Alternatively, you can create a custom VM image from a VHD. For example, you might want to create a custom image for the test team that has the testing software preinstalled in the VM. You can use the Azure portal or Azure PowerShell to create a custom image.
+Alternatively, you can create a custom VM image from a VHD. For example, you might want to create a custom image for the test team that has the testing software preinstalled in the VM. You can use the Azure portal or Azure PowerShell to create a custom image. If you have a large number of images that you need to maintain and would like to make them available throughout your company, you can also use a shared image gallery as a repository.
 
-You can combine both custom images and Azure Marketplace images in a lab. Lab users will see both types of base images when they create a new lab VM.
+You can combine custom images, the shared image gallery, and Azure Marketplace images in a lab. Lab users will see all types of base images when they create a new lab VM.
 
 ## Auto-shutdown schedule
 

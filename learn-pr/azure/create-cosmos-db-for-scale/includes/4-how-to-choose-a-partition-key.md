@@ -18,7 +18,7 @@ In our online retail scenario, using the `userID` or `productId` value as the pa
 
 Using the current time would be a poor choice of partition key, because all the incoming data would go to a single partition key. `userID` or `productId` would be better, as all the users on your site would likely be adding and updating their shopping cart or profile information at about the same frequency, which distributes the reads and writes across all the user and product partitions.
 
-The amount of required RU's and storage determines the number of required physical partitions for the container, which are completely managed by Azure Cosmos DB. When additional physical partitions are needed, Cosmos DB automatically creates them by splitting existing ones. There is no downtime or performance impact for the application.
+The amount of required RU's and storage determines the number of required physical partitions for the container, which are managed by Azure Cosmos DB. When more physical partitions are needed, Cosmos DB automatically creates them by splitting existing ones. There's no downtime or performance impact for the application.
 
 The storage space for the data associated with each partition key can't exceed 20 GB, which is the size of one physical partition in Azure Cosmos DB. So, if your single `userID` or `productId` record is going to be larger than 20 GB, think about using a composite key instead so that each record is smaller. An example of a composite key would be `userID-date`, which would look like **CustomerName-08072018**. This composite key approach would enable you to create a new partition for each day a user visited the site.
 
@@ -38,4 +38,4 @@ For each Azure Cosmos DB container, you should specify a partition key that sati
 - Evenly distribute requests. Remember the total number of RU/s is evenly divided across all physical partitions.
 - Evenly distribute storage. Each partition can grow up to 20 GB in size.
 
-In the next two exercises, you will create a database and container. In the first exercise, you will use the Azure portal to create your database and container. However, if you would prefer to learn how to create a database and container programmatically, you can skip ahead to the next exercise.
+In the next two exercises, you'll create a database and container. In the first exercise, you'll use the Azure portal to create your database and container. However, if you would prefer to learn how to create a database and container programmatically, you can skip ahead to the next exercise.
