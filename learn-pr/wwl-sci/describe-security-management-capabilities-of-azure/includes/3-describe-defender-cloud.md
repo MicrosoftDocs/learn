@@ -21,8 +21,7 @@ The central feature in Microsoft Defender for Cloud that enables you to achieve 
 
 Microsoft Defender for Cloud also provides hardening recommendations based on any identified security misconfigurations and weaknesses. Recommendations are grouped into security controls. Each control is a logical group of related security recommendations, and reflects your vulnerable attack surfaces. Your score only improves when you remediate all of the recommendations for a single resource within a control. Use these security recommendations to strengthen the security posture of your organization's Azure, hybrid, and multi-cloud resources.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot showing part of Microsoft Defender for Cloud with recommendations as to what needs to be fixed to maintain maximum protection.](../media/3-security-center-recommendations.png)
+:::image type="content" source="../media/3-security-center-recommendations.png" alt-text="Screenshot showing part of Microsoft Defender for Cloud with recommendations as to what needs to be fixed to maintain maximum protection.":::
 
 The following interactive click-through demonstrates how you use secure score and the hardening recommendations in Microsoft Defender for Cloud.  Select the image below to get started.
 
