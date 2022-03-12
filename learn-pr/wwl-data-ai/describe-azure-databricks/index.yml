@@ -8,6 +8,7 @@ metadata:
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: intro-internal
 title: Describe Azure Databricks
 summary: Discover the capabilities of Azure Databricks and the Apache Spark notebook for processing huge files. Understand the Azure Databricks platform and identify the types of tasks well-suited for Apache Spark.
 abstract: |

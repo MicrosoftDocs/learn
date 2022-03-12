@@ -15,7 +15,7 @@ To set HTML as the default message format:  
 
 To set an individual message to HTML format, select **Format Text** \> **HTML** in the message that you're composing.
 
-:::image type="content" source="../media/outlook-format-text.png" alt-text="HTML option selected in Compose messages in the format drop-down menu.":::
+:::image type="content" source="../media/outlook-format-text.png" alt-text="Screenshot that shows HTML selected in the Outlook toolbar.":::
 
 ## Tables
 

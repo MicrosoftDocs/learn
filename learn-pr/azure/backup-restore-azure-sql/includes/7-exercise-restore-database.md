@@ -1,6 +1,6 @@
 Trial restores are a key component of any disaster recovery strategy.
 
-You want to familiarize yourself with the steps to restore a backed-up database to a specific point in time, in case it becomes necessary. You also want to investigate how long a restore operation will take so you can plan for this in your guidance for your organization.
+You want to familiarize yourself with the steps to restore a backed-up database to a specific point in time, in case it becomes necessary. You also want to investigate how long a restore operation will take. That way, you can plan for this time in your guidance for your organization.
 
 Here, you'll perform a restore of from automated Azure SQL Database backups.
 
@@ -17,7 +17,7 @@ It can take up to 15 minutes for the first successful backup to finish. We need 
         -ServerName $sqlserver.ServerName
     ```
 
-    You should see output similar to the following if your backups are running. If the command returns no value, a backup hasn't started yet. Rerun this command in a couple of minutes.
+    You should see an output similar to the following code if your backups are running. If the command returns no value, a backup hasn't started yet. Rerun this command in a couple of minutes.
 
     ```output
     ResourceGroupName        : <rgn>[sandbox resource group name]</rgn>
@@ -36,7 +36,7 @@ It can take up to 15 minutes for the first successful backup to finish. We need 
 
 Let's start by simulating a mistaken database modification.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **sql-erp-db** database.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, select **erpserver-NNNN**, select **SQL databases**, and then select the **sql-erp-db** database.
 
 1. Select **Query editor**, and then sign in with the **dbadmin** user and the password that you specified for this account.
 
@@ -67,21 +67,21 @@ The **Person** table was mistakenly deleted. Now, let's restore the database to 
 
 1. At the top of the **Overview** page, select **Restore**.
 
-1. Complete the **Restore** page with these values, and then select **OK**.
+1. Complete the **Basic** tab on the **Restore database** page with these values, and then select **Review + create**.
 
     | Setting | Value |
     | --- | --- |
     | Select source | Point-in-time |
     | Database name | sql-erp-db-restored |
     | Restore point | Select a time 10 minutes ago, before you dropped the **Person** table |
-    | Target server | erpserver-53903 |
-    | Elastic pool | None |
-    | Pricing tier | Default value |
-    | | |
+    | Target server | erpserver-xxxxx |
+    | Want to use SQL elastic pool | No |
+    | Compute + storage | Default value |
+    | Backup storage redundancy | Geo-redundant backup storage |
 
-    ![Screenshot of restoring a database in the portal. A callout highlights the OK button.](../media/7-restoring-a-database-pitr.png)
+    :::image type="content" source="../media/7-restore-sql-database-pitr-2022.png" alt-text="Screenshot that shows the restore database page with the Review + create button selected.":::
 
-    The database restore will take several minutes.
+1. Select **Create**. The database restore will take several minutes.
 
 ## View the restored database
 
