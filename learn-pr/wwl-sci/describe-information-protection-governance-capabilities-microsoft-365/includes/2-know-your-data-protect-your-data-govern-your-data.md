@@ -10,5 +10,3 @@ Microsoft Information Protection and Microsoft Information Governance work toget
 - **Protect your data**: Organizations can apply flexible protection actions including encryption, access restrictions, and visual markings.
 - **Prevent data loss**: Organizations can detect risky behavior and prevent accidental oversharing of sensitive information. Capabilities such as data loss prevention policies and endpoint data loss prevention enable organizations to avoid data loss.
 - **Govern your data**: Organizations can automatically keep, delete, and store data and records in a compliant manner. Capabilities like retention policies, retention labels, and records management enable organizations to govern their data.
-
-The following units in this module will describe the capabilities in more detail.
