@@ -29,7 +29,7 @@ Mara shows Andy the updated build configuration on Azure Pipelines. Andy likes w
 
 Andy's latest feature involves the leaderboard. He needs to get the number of scores from the database, so he decides to write a unit test to verify the `IDocumentDBRepository<T>.GetItemsAsync` method.
 
-Here's what the test looks like. You don't need to add any code just yet.
+Here's what the test looks like. You don't need to add any code yet.
 
 ```csharp
 [TestCase(0, ExpectedResult=0)]
@@ -87,7 +87,7 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
     dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild
     ```
 
-    You need this step because the `failed-test` branch does not contain the work you added to the `unit-tests` branch.
+    You need this step because the `failed-test` branch doesn't contain the work you added to the `unit-tests` branch.
 
 1. Add your test project file and your tool manifest file to the staging index and commit your changes.
 
@@ -132,7 +132,7 @@ In practice, you won't always manually trace the build as it runs. Here are a fe
     :::image type="content" source="../media/7-test-run-outcome.png" alt-text="A screenshot of Azure DevOps test run outcome showing two of eight failed tests as a ring chart.":::
 * **The dashboard**
 
-    In Azure DevOps, select **Overview**, and then select **Dashboards**. You see the failure appear in the **Test Results Trend** widget. The **Code Coverage** widget is blank, which indicates that code coverage was not run.
+    In Azure DevOps, select **Overview**, and then select **Dashboards**. You see the failure appear in the **Test Results Trend** widget. The **Code Coverage** widget is blank, which indicates that code coverage wasn't run.
 
     :::image type="content" source="../media/7-dashboard-failed-test.png" alt-text="A screenshot of Azure DevOps dashboard trend chart widget showing two failed test in the last test run.":::
 * **The build badge**
@@ -229,7 +229,7 @@ They examine the file on GitHub and notice that it was recently changed.
 
 :::image type="content" source="../media/7-github-diff.png" alt-text="A screenshot of GitHub showing a file diff where a minus one operation was added.":::
 
-Mara suspects that `pageSize - 1` is returning one fewer results and that this should be just `pageSize`.
+Mara suspects that `pageSize - 1` is returning one fewer result and that this should be just `pageSize`.
 
 **Mara:** Andy, do you remember why you made this change?
 

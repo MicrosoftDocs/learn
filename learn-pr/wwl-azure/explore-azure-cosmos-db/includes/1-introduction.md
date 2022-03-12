@@ -8,3 +8,4 @@ After completing this module, you'll be able to:
 * Explore the APIs supported in Azure Cosmos DB and choose the appropriate API for your solution
 * Describe how request units impact costs
 * Create Azure Cosmos DB resources by using the Azure portal.
+
