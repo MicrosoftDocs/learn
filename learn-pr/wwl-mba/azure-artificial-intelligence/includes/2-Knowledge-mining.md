@@ -2,9 +2,16 @@
 
 Real-world data is messy. It often spans media types, such as text documents, PDF files, images, and databases. It changes constantly, it’s constantly growing, and it carries valuable knowledge in ways that aren’t readily usable. **Knowledge mining** refers to the ability to retrieve information and extract insights within a vast amount of data. Azure Search enables knowledge mining by using built-in AI capabilities to uncover latent insights from all your content–documents, images, and media. Azure Search is the only cloud search service with built-in AI capabilities that enable you to discover patterns and relationships in your content, understand sentiment, extract key phrases and more. Customer support organizations, for example, often use knowledge mining to extract data and intelligence out of case documentation. They can analyze customer sentiment to improve agent productivity and customer experience.
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn how knowledge mining can help you unlock valuable information lying latent in all your content.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn how knowledge mining can help you unlock valuable information lying latent in all your content.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqWDE]
 
@@ -12,9 +19,16 @@ Now that you understand more about how knowledge mining is used to interpret dat
 
 ## How does knowledge mining work and how is it built?
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Now let’s take a look at how knowledge mining works, and how it was applied by iCertis, a contract management company, to draw valuable insights from a large amount of unstructured data.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Now let’s take a look at how knowledge mining works, and how it was applied by iCertis, a contract management company, to draw valuable insights from a large amount of unstructured data.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrH6A]
 

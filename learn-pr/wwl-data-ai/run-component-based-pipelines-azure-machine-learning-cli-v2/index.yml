@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2
+metadata:
+  title: Run component-based pipelines in Azure Machine Learning with CLI (v2)
+  description: "Run component-based pipelines in Azure Machine Learning with CLI (v2)"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Run component-based pipelines in Azure Machine Learning with CLI (v2)
+summary: Use components to easily share and reuse code and use component-based pipelines to create machine learning workflows.
+abstract: |
+  In this module, you'll learn how to:
+  - Create reusable components with the CLI (v2).
+  - Initiate a component-based pipeline with the CLI (v2).
+  - Create a component-based pipeline with the Designer in the Azure Machine Learning studio.
+prerequisites: |
+  You should have some familiarity with the Azure Machine Learning service.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+- student
+products:
+- azure
+- azure-machine-learning
+units:
+- learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.introduction
+- learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.create-component
+- learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.run-pipeline
+- learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.run-pipeline-designer
+- learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.exercise
+- learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.knowledge-check
+- learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.summary
+badge:
+  uid: learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.badge

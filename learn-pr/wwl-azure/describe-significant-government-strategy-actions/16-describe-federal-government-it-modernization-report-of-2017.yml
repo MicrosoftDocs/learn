@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-significant-government-strategy-actions.describe-federal-gov-it-modernization-report-of-2017
+title: Describe the Federal Government IT Modernization Report of 2017
+metadata:
+  title: Describe the Federal Government IT Modernization Report of 2017
+  description: "Describe the Federal Government IT Modernization Report of 2017"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/16-describe-federal-government-it-modernization-report-of-2017.md)]
