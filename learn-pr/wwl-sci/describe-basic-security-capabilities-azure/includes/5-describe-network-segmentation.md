@@ -18,4 +18,4 @@ Azure Virtual Network (VNet) is the fundamental building block for your organiza
 
 Azure VNet enables organizations to segment their network. Organizations can create multiple VNets per region per subscription, and multiple smaller networks (subnets) can be created within each VNet.
 
-VNets provide network level containment of resources with no traffic allowed across VNets or inbound to the VNet, by default.   Communication needs to be explicitly provisioned. This enables more control over how Azure resources in a VNet communicate with other Azure resources, the internet, and on-premises networks.  
+VNets provide network level containment of resources with no traffic allowed across VNets or inbound to the VNet, by default.   Communication needs to be explicitly provisioned. This enables more control over how Azure resources in a VNet communicate with other Azure resources, the internet, and on-premises networks.
