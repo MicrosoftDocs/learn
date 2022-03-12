@@ -38,7 +38,6 @@ Defender for Cloud Apps Security delivers on the components of the framework thr
 
 In this interactive guide, you’ll get an introduction to the capabilities available with Microsoft Defender for Cloud Apps, including Discover, Investigate, Control, and Alerts.
 
-
 To work through this guide, follow the prompts on the screen.
 
 [![Interactive guide](../media/6-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP03M04%20-%20Describe%20threat%20protection%20with%20Microsoft%20365/index.html?azure-portal=true)

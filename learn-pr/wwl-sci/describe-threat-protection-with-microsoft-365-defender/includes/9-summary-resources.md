@@ -1,8 +1,7 @@
-You wanted to gain a better understanding of how to improve security and access to your organizations assets and data using the Microsoft 365 Defender services. You got a broad understanding of what Microsoft 365 Defender is, and each of the product items: Defender for Identity, Defender for Office 365, Defender for Endpoint, and Defender for Cloud Apps . Finally, you explored the Microsoft Defender portal including Microsoft Secure Score, dashboards, reports, and incident management.
 
-With an increase in demand for cloud services and access, it is more important than ever to maintain strong security. But there comes a balance between strong security and allowing your users to access the data. Without tools like Microsoft Defender, you would have to rely on different vendor solutions, which might not integrate fully or could leave gaps.
+In this module, you learned how Microsoft 365 Defender can help protect your organization. You explored each of the different Defender services to understand how they can protect: Identity, Office 365, Endpoint, and cloud apps.  You also explored the capabilities of the Microsoft 365 Defender portal, including Microsoft Secure Score, reports, and incident management.
 
-Now that you've completed this module, you should be able to:
+Now you've completed this module, you'll be able to:
 
 - Describe the Microsoft 365 Defender service.
 - Describe how Microsoft 365 Defender provides integrated protection against sophisticated attacks.

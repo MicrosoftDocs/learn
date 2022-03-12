@@ -26,7 +26,7 @@ The incidents queue is a central location lists each incident by severity.  Sele
 - All the alerts related to the incident.
 - All the users that have been identified to be part of or related to the incident.
 - All the mailboxes that have been identified to be part of or related to the incident.
-- All the automated investigations triggered by teh alerts in the incident.
+- All the automated investigations triggered by the alerts in the incident.
 - All the supported evidence and response.
 
 :::image type="content" source="../media/incidents-expanded.png" alt-text="Screenshot of the summary page for an incident in the Microsoft 365 Defender portal.":::

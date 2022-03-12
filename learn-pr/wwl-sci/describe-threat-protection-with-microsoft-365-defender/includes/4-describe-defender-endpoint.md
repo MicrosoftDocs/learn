@@ -2,8 +2,7 @@ Microsoft Defender for Endpoint is a platform designed to help enterprise networ
 
 This technology includes endpoint behavioral sensors that collect and process signals from the operating system, cloud security analytics that turn signals into insights, detections and recommendations, and threat intelligence to identify attacker tools & techniques, and generate alerts.
 
-> [!div class="mx-imgBorder"]
-> ![Diagram showing the seven aspects of Microsoft Defender Endpoint: Threat and Vulnerability Management, Attack surface reduction, Next-generation protection, Endpoint detection and response, automated investigation and remediation, Microsoft Threat Experts, and Centralized configuration and administration.](../media/5-seven-aspects-microsoft-defender.png)
+:::image type="content" source="../media/5-seven-aspects-microsoft-defender.png" alt-text="Diagram showing the seven aspects of Microsoft Defender Endpoint: Threat and Vulnerability Management, Attack surface reduction, Next-generation protection, Endpoint detection and response, automated investigation and remediation, Microsoft Threat Experts, and Centralized configuration and administration.":::
 
 Microsoft Defender for Endpoint includes:
 
