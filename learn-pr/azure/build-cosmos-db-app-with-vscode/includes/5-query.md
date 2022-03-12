@@ -17,16 +17,16 @@ The following table shows how LINQ queries are translated into SQL.
 
 ## Run SQL and LINQ queries
 
-1. The following sample shows how a query could be performed in SQL, LINQ, or LINQ lambda from your .NET code. Copy the code and add it to the end of the Program.cs file.
+1. The following sample shows how a query could be performed in SQL, LINQ, or LINQ lambda from your .NET code. Copy the code and add it after the **DeleteUserDocument** method in the **Program.cs** file.
 
     ```csharp
-    private void ExecuteSimpleQuery(string databaseName, string collectionName)
+    void ExecuteSimpleQuery(string databaseName, string collectionName)
     {
         // Set some common query options
         FeedOptions queryOptions = new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true };
 
         // Here we find nelapin via their LastName
-        IQueryable<User> userQuery = this.client.CreateDocumentQuery<User>(
+        IQueryable<User> userQuery = client.CreateDocumentQuery<User>(
                 UriFactory.CreateDocumentCollectionUri(databaseName, collectionName), queryOptions)
                 .Where(u => u.LastName == "Pindakova");
 
@@ -38,7 +38,7 @@ The following table shows how LINQ queries are translated into SQL.
         }
 
         // Now execute the same query via direct SQL
-        IQueryable<User> userQueryInSql = this.client.CreateDocumentQuery<User>(
+        IQueryable<User> userQueryInSql = client.CreateDocumentQuery<User>(
                 UriFactory.CreateDocumentCollectionUri(databaseName, collectionName),
                 "SELECT * FROM User WHERE User.lastName = 'Pindakova'", queryOptions );
 
@@ -53,10 +53,10 @@ The following table shows how LINQ queries are translated into SQL.
     }
     ```
 
-1. Copy and paste the following code to your **BasicOperations** method, before the `await this.DeleteUserDocument("Users", "WebCustomers", yanhe);` line.
+1. Copy and paste the following code to your **BasicOperations** method, before the `await DeleteUserDocument("Users", "WebCustomers", yanhe);` line.
 
     ```csharp
-    this.ExecuteSimpleQuery("Users", "WebCustomers");
+    ExecuteSimpleQuery("Users", "WebCustomers");
     ```
 
 1. In the integrated terminal, run the following command.
