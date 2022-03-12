@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-government-its-structure.identify-branches-of-government
+title: Identify the branches of government
+metadata:
+  title: Identify the branches of government
+  description: "Identify the branches of government"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-identify-branches-of-government.md)]

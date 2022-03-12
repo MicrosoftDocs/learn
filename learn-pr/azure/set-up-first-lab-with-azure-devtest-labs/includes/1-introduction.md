@@ -1,6 +1,6 @@
 Organizations often have many different, sometimes short-lived, software environments. 
-For example, developers need an environment with all developer tools installed, the test team has temporary test environments, and customer support requires a separate environment for each supported production version.
-Azure DevTest Labs lets you simplify and accelerate the process of creating virtual computing environments.
+For example, developers need a virtual machine with all developer tools installed, the test team uses a clean test setup with each application build, and customer support requires a separate machine for each supported production version.
+Azure DevTest Labs lets you simplify and accelerate the process of creating, using and managing virtual machines and platform-as-a-service environments.
 
 ## Example scenario
 
