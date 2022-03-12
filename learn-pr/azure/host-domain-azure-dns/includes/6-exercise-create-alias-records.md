@@ -45,7 +45,7 @@ Now that you've created a test environment, you're ready to set up the Azure ali
 
 1. Select the resource group: <rgn>[sandbox resource group]</rgn>. The **Resource group** pane appears.
 
-1. In the list of resources, select wideworldimportsXXXX.com (Type is DNS zone). The **wideworldimportsXXXX.com DNS zone** pane appears.
+1. In the list of resources, select the DNS zone you created in a previous exercise, wideworldimportsXXXX.com. The **wideworldimportsXXXX.com DNS zone** pane appears.
 
 1. In the menu bar, select **Record set**. The **Add record set** pane appears.
 

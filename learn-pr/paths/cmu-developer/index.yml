@@ -4,7 +4,7 @@ metadata:
   title: Cloud developer
   description: You will learn various important skills you need as a developer using the Cloud. Skills like virtualization, managing cost and cloud storage to more hands-on developer skills like message queues, and working with streaming data with spark and map reduce.
   brand: azure
-  ms.date: 07/01/2021
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -21,6 +21,7 @@ summary: |
   In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: none
 iconUrl: /learn/achievements/generic-trophy.svg
+hidden: true
 levels:
 - beginner
 roles:

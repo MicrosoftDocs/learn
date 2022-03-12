@@ -1,12 +1,12 @@
-In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't need to install anything on your computer to use it.
+In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell you can access through the Azure portal or at https://shell.azure.com. You don't need to install anything on your computer to use it.
 
-One way to make the scripts flexible is use parameters so that users can provide input when the script runs. In this exercise, you'll create a backup script and add parameters to it.
+One way to make your scripts flexible is to use parameters, so users can provide input when the script runs. In this exercise, you'll create a backup script and add parameters to it.
 
 ## Create a backup script
 
-A common task is to create a _backup_. A backup is usually a compressed file that stores all the files belonging to, for example, an app. When you installed PowerShell, you got the cmdlet `Compress-Archive`, which can help you complete this task.
+A common task is to create a *backup*. A backup is usually a compressed file that stores all the files belonging to, for example, an app. When you installed PowerShell, you got the cmdlet `Compress-Archive`, which can help you complete this task.
 
-1. In a terminal, run these bash commands:
+1. In your Cloud Shell terminal, run these bash commands:
 
    ```bash
    mkdir app
@@ -23,14 +23,14 @@ A common task is to create a _backup_. A backup is usually a compressed file tha
    pwsh
    ```
 
-1. Create a script file named _Backup.ps1_ in the current directory and open it in your code editor:
+1. Create a script file named _Backup.ps1_ in the current directory and open it in your code editor.
 
    ```bash
    touch Backup.ps1
    code Backup.ps1
    ```
 
-1. Add this content to the file:
+1. Add this content to the file and save the file. You can use **CTRL-S** on Windows and Linux or **CMD+S** on Mac to save.
 
      ```powershell
      $date = Get-Date -format "yyyy-MM-dd"
@@ -60,7 +60,7 @@ A common task is to create a _backup_. A backup is usually a compressed file tha
 
 If you add parameters to your script, users can provide values when it runs. You'll add parameters to your backup script to enable configuration of the locations of the source files and the resulting zip file.
 
-1. Add the following code to the top of the _Backup.ps1_ file.
+1. Add the following code to the top of the *Backup.ps1* file.
 
    > [!NOTE]
    >  Use the `code Backup.ps1` command to open the file if the editor isn't open.
@@ -74,7 +74,7 @@ If you add parameters to your script, users can provide values when it runs. You
 
    You've added two parameters to your script: `$Path` and `$DestinationPath`. You've also provided default values so users don't need to provide the values. Users can override the default values if they need to. You need to adjust the script to use these parameters. You'll do so next.
 
-1. Change the code in the file to use the parameters. _Backup.ps1_ should look like this:
+1. Change the code in the file to use the parameters, then save the file. *Backup.ps1* should now look like this:
 
    ```powershell
    Param(
@@ -86,7 +86,7 @@ If you add parameters to your script, users can provide values when it runs. You
    Write-Host "Created backup at $($DestinationPath + 'backup-' + $date + '.zip')"
    ```
 
-1. Rename your _app_ directory to *webapp* by running this command:
+1. Rename your *app* directory to *webapp* by running this command:
 
    ```bash
    mv app webapp
@@ -96,7 +96,7 @@ If you add parameters to your script, users can provide values when it runs. You
 
    You can no longer rely on the default value for `$Path`. You'll need to provide a value via the console when you run the script.
 
-1. Remove your backup file:
+1. Remove your backup file, replacing `<current date as YYYY-MM-DD>` with the current date:
 
    ```bash
    rm backup-<current date as YYYY-MM-DD>.zip
@@ -136,4 +136,4 @@ If you add parameters to your script, users can provide values when it runs. You
 
    You can now use parameters if the directory you want to back up isn't called _./app_ or if you want to put the compressed file somewhere other than the current directory.
 
-Congratulations. You created a backup script that you can use whenever you want to create a backup for an app directory or any other important directory. You then identified parts of your script that might need to change often and replaced static values with parameter values. That way, you most likely won't need to change the script itself when your requirements change. For example, if the name of the app changes or you need to name the destination file something else.
+Congratulations. You created a backup script that you can use whenever you want to create a backup for an app directory or any other important directory. You then identified parts of your script that might need to change often and replaced static values with parameter values. That way, you most likely won't need to change the script itself when your requirements change (for example, if the name of the app changes or you need to name the destination file something else).

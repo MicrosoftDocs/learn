@@ -4,7 +4,7 @@ metadata:
   title: Cloud storage overview
   description: Carnegie Mellon University's Cloud Developer course. Learn all about data and get an overview of how it's stored, including local and distributed file systems, databases, and object storage.
   brand: azure
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -41,6 +41,7 @@ prerequisites: |
   - Understand memory virtualization
   - Understand I/O virtualization 
 iconUrl: /learn/achievements/cmu-cloud-developer/cloud-storage-overview.svg
+hidden: true
 levels:
 - beginner
 roles:

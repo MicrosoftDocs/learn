@@ -14,7 +14,7 @@ quiz:
   questions:
   - content: "Which of the following is the best use of your time when exploring an idea for a new startup?"
     choices:
-    - content: "Create detailed wireframes or a clickable prototype and give a product demo to potential users."
+    - content: "Create detailed wireframes or a clickable prototype, and give a product demo to potential users."
       isCorrect: false
       explanation: "Incorrect. It's best to validate an idea with customers before you spend a significant amount of time or money building a product."
     - content: "Interview potential users to understand the problem you might solve for them and how important a solution is to them."
@@ -22,22 +22,22 @@ quiz:
       explanation: "Correct. Before investing time or money in an idea, it's best to determine whether your solution is important to customers."
     - content: "Pitch investors so that you have the funds to be able to grow your company fast."
       isCorrect: false
-      explanation: "Incorrect. Securing funding is important.  But it's best to validate an idea with customers first before you invest a significant amount of time in your business."
+      explanation: "Incorrect. Securing funding is important. But it's best to validate an idea with customers first, before you invest a significant amount of time in your business."
     - content: "Create a media release to attract as much media attention to your startup as possible."
       isCorrect: false
-      explanation: "Incorrect. Media attention can benefit your startup. But it's best to validate an idea with customers first before you invest a significant amount of time in your business."
+      explanation: "Incorrect. Media attention can benefit your startup. But it's best to validate an idea with customers first, before you invest a significant amount of time in your business."
 
   - content: "Which of these startup attributes is least likely to contribute to success?"
     choices:
     - content: "Addressing a large, growing market."
       isCorrect: false
-      explanation: "Incorrect. Startup founders should aim to serve as large a market as possible. A startup's success depends on the number of customers it serves. "
+      explanation: "Incorrect. Startup founders should aim to serve as large a market as possible. A startup's success depends on the number of customers it serves."
     - content: "Taking advantage of the domain expertise of the founders."
       isCorrect: false
       explanation: "Incorrect. The odds of a startup succeeding are higher if the founders have unique insights into the problem space they operate in."
     - content: "Remaining a sole founder."
       isCorrect: true
-      explanation: "Correct. Sole founders struggle to cope with the amount of work needed to build and launch a startup. And by working alone, you miss out on the range of skill sets and perspectives that a team provides and that contribute to success."
+      explanation: "Correct. Sole founders struggle to cope with the amount of work needed to build and launch a startup. And by working alone, you miss out on the range of skill sets and perspectives that a team provides, and that contribute to success."
     - content: "A product that's inherently shareable."
       isCorrect: false
       explanation: "Incorrect. Having a feature that makes it easy for users to share your product can lead to substantial growth."
@@ -53,7 +53,7 @@ quiz:
     - content: "Keeping the idea a secret until the product is launched."
       isCorrect: false
       explanation: "Incorrect. By keeping an idea secret, you risk depriving yourself of valuable feedback. You also fail to attract cofounders and collaborators. But it's not the only option."
-    - content: "Taking advice from your cousin who's a corporate tax lawyer."
+    - content: "Taking advice from your cousin, who's a corporate tax lawyer."
       isCorrect: false
       explanation: "Incorrect. Seeking advice from someone who doesn't have startup experience isn't beneficial. But it's not the only option."
     - content: "Trying to scale the company before you have problem-solution fit."

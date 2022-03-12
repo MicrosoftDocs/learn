@@ -9,13 +9,13 @@ This exercise can be completed using a Microsoft Learn *sandbox*, which provides
 
 ## Create a Cosmos DB account
 
-To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscription. In this exercise, you'll provision a Cosmos DB account that uses the code (SQL) API.
+To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscription. In this exercise, you'll provision a Cosmos DB account that uses the core (SQL) API.
 
 1. In the Azure portal, select **+ Create a resource** at the top left, and search for *Azure Cosmos DB*.  In the results, select **Azure Cosmos DB** and select  **Create**.
 1. In the **Core (SQL) - Recommended** tile, select **Create**.
 1. Enter the following details, and then select **Review + Create**:
     - **Subscription**: If you're using a sandbox, select *Concierge Subscription*. Otherwise, select your Azure subscription.
-    - **Resource group**:  If you're using a sandbox subscription, select the existing resource group (which will have a name like *learn-xxxx...*). Otherwise, create a new resource group with a name of your choice.
+    - **Resource group**:  If you're using a sandbox, select the existing resource group (which will have a name like *learn-xxxx...*). Otherwise, create a new resource group with a name of your choice.
     - **Account Name**: Enter a unique name
     - **Location**: Choose any available location
     - **Capacity mode**: Provisioned throughput
@@ -33,9 +33,9 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 ## View and create items
 
 1. In the Data Explorer page, expand the **SampleDB** database and the Persons container, and select **Items** to see a list of items in the container. The items represent people, each with a unique id, a firstname, an age, and other properties.
-1. Select any of the items in the list to see a JSON representation of the item data.
-1. At the top of the page, select **New Item** to create a new blank item.
-1. Modify the JSON for the new item as follows, and then select **Save**.
+2. Select any of the items in the list to see a JSON representation of the item data.
+3. At the top of the page, select **New Item** to create a new blank item.
+4. Modify the JSON for the new item as follows, and then select **Save**.
 
 ```json
 {
@@ -45,14 +45,14 @@ To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscript
 }
 ```
 
-1. After saving the new item, notice that additional metadata properties are added automatically.
+5. After saving the new item, notice that additional metadata properties are added automatically.
 
 ## Query the database
 
 1. In the **Data Explorer** page, select the **New SQL Query** icon.
-1. In the SQL Query editor, review the default query (`SELECT * FROM c`) and use the **Execute Query** button to run it.
-1. Review the results, which includes the full JSON representation of all items.
-1. Modify the query as follows:
+2. In the SQL Query editor, review the default query (`SELECT * FROM c`) and use the **Execute Query** button to run it.
+3. Review the results, which includes the full JSON representation of all items.
+4. Modify the query as follows:
 
 ```sql
 SELECT c.id, c.firstname, c.age
@@ -60,10 +60,10 @@ FROM c
 WHERE c.age > 40
 ```
 
-1. Use the **Execute Query** button to run the revised query and review the results, which includes JSON containing the id, firstname, and age fields for person items with an age greater than 40.
+5. Use the **Execute Query** button to run the revised query and review the results, which includes JSON containing the id, firstname, and age fields for person items with an age greater than 40.
 6. Close the SQL Query editor, discarding your changes.
 
-    You've seen how to create and query JSON entities in a Cosmos DB database by using the data explorer interface in the Azure portal. In a real scenario, an application developer would use one of the many programming language specific software development kits (SDKs) to call the code (SQL) API and work with data in the database.
+    You've seen how to create and query JSON entities in a Cosmos DB database by using the data explorer interface in the Azure portal. In a real scenario, an application developer would use one of the many programming language specific software development kits (SDKs) to call the core (SQL) API and work with data in the database.
 
 > [!TIP]
 > If you used your own Azure subscription, and you have finished exploring Azure Cosmos DB, you can delete the resource group that you created in this exercise.
