@@ -1,6 +1,6 @@
 Compliance score measures progress in completing recommended improvement actions within controls. The score can help an organization to understand its current compliance posture. It also helps organizations to prioritize actions based on their potential to reduce risk.
 
-Admins can get a breakdown of the compliance score in the Compliance Manager overview pane:
+Admins can get a breakdown of the compliance score in the Compliance Manager overview pane.
 
 :::image type="content" source="../media/5-compliance-score-home-page-inline.png" lightbox="../media/5-compliance-score-home-page-expanded.png" alt-text="A breakdown of compliance score":::
 
@@ -22,13 +22,13 @@ The following are subcategories of actions that can be classified as mandatory o
 - **Detective** actions actively monitor systems to identify irregularities that could represent risks, or that can be used to detect breaches or intrusions. Examples of these types of actions are system access audits, or regulatory compliance audits.
 - **Corrective** actions help admins to minimize the adverse effects of security incidents, by undertaking corrective measures to reduce their immediate effect or possibly even reverse damage.
 
-Organizations accumulate points for every action completed. And the compliance score is shown as a percentage representing all the actions completed, compared with the ones outstanding:
+Organizations accumulate points for every action completed. And the compliance score is shown as a percentage representing all the actions completed, compared with the ones outstanding.
 
 :::image type="content" source="../media/5-compliance-score-details-inline.png" lightbox="../media/5-compliance-score-details-expanded.png" alt-text="Example of a compliance score":::
 
 ### Interactive guide
 
-In this interactive guide, you’ll explore your organization’s compliance score, and ways to improve it:
+In this interactive guide, you’ll explore compliance score. 
 
 [![Interactive guide](../media/5-compliance-score-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP04M02%20-%20Explore%20Compliance%20Score/index.html?azure-portal=true)
 

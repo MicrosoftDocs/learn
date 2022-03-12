@@ -24,7 +24,7 @@ The default compliance center home page contains several cards including:
 
   :::image type="content" source="../media/3-solutions-catalog-card-inline.png" lightbox="../media/3-solutions-catalog-card-expanded.png" alt-text="Solutions catalog card":::
 
-- The **Active alerts** card includes a summary of the most [active alerts](/microsoft-365/compliance/alert-policies) and a link where admins can view more detailed information, such as alert severity, status, category, and more.
+- The **Active alerts** card includes a summary of the most active alerts and a link where admins can view more detailed information, such as alert severity, status, category, and more.
 
     :::image type="content" source="../media/3-active-alerts-card.png" alt-text="Active alerts card":::
 
