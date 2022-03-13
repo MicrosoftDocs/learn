@@ -3,13 +3,12 @@
 
 To import the Mixed Reality Toolkit into your project we'll use the Mixed Reality Feature Tool, which allows developers to discover, update, and import feature packages. You can search packages by name or category, see their dependencies, and even view proposed changes to your project's manifest file before importing.
 
-Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool) , When the download is complete, unzip the file and save it to your
-desktop.
+1. Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool). 1. After the download finishes, unzip the file and save it to your desktop.
 
-> [!NOTE]
-> Before you can run the Mixed Reality Feature Tool please install [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
+    > [!NOTE]
+    > Before you can run the Mixed Reality Feature Tool, you must install the [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
 
-Open the executable file **MixedRealityFeatureTool** from the downloaded folder to launch the Mixed Reality Feature Tool.
+1. In the unzipped folder, navigate to the executable file **MixedRealityFeatureTool.exe** and then use it to launch the Mixed Reality Feature Tool.
 
 :::image type="content" source="../media/open-mixed-reality-feature-tool.png" alt-text="Screenshot of Opening MixedRealityFeatureTool." lightbox="../media/open-mixed-reality-feature-tool.png":::
 
