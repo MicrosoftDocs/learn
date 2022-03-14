@@ -10,9 +10,10 @@ The basic structure of a query is a source table followed by a series of operato
 ```
 Event
 | where (EventLevelName == "Error")
-| where (TimeGenerated &gt; ago(1days))
+| where (TimeGenerated > ago(1days))
 | summarize ErrorCount = count() by Computer
 | top 10 by ErrorCount desc
+
 ```
 
 Some common operators are:
@@ -21,30 +22,35 @@ Some common operators are:
 
 ```
 StormEvents | count
+
 ```
 
 **limit** \- Return up to the specified number of rows.
 
 ```
 T | limit 5
+
 ```
 
 **summarize** \- Produces a table that aggregates the content of the input table.
 
 ```
 T | summarize count(), avg(price) by fruit, supplier
+
 ```
 
 **top** \- Returns the first N records sorted by the specified columns.
 
 ```
 T | top 5 by Name desc nulls last
+
 ```
 
 **where** \- Filters a table to the subset of rows that satisfy a predicate.
 
 ```
 T | where fruit=="apple"
+
 ```
 
 For more information, [Azure Monitor log queries](/azure/azure-monitor/log-query/query-language)

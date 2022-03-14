@@ -175,4 +175,4 @@ Add or verify the values below:
  -  `AccountKey=myAccountKey`
  -  `EndpointSuffix=mySuffix`
 
-Azure account keys are sensitive and may be protected using Credential Manager.<br>
+Azure account keys are sensitive and may be protected using Credential Manager.
