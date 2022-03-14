@@ -26,7 +26,7 @@ quiz:
     - content: "Automated response"
       isCorrect: false
       explanation: "The Automated Response section allows you to select a playbook to run automatically when the alert is generated."
-  - content: "Which of the following statements about Scheduled Alert is true?"
+  - content: "Which of the following statements about scheduled query rules is true?"
     choices:
     - content: "They are precreated by default."
       isCorrect: false
@@ -34,6 +34,6 @@ quiz:
     - content: "They can only be enabled without customization."
       isCorrect: false
       explanation: "The Scheduled query rule type provides the highest level of customization."
-    - content: "You can create you own query to define the detection of the threat."
+    - content: "You can create your own query to define the detection of the threat."
       isCorrect: true
       explanation: "You can use either a predefined or a custom query to detect threats."
