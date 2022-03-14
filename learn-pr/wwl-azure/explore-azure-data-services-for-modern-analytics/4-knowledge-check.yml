@@ -21,10 +21,10 @@ quiz:
     choices:
     - content: "IoT gas sensor data that monitors and detects the presence of toxic or hazardous gasses."
       isCorrect: false
-      explanation: "That's incorrect. IoT sensors are not well suited for batch processing because data need to be available and used immediately."
+      explanation: "That's incorrect. IoT sensors aren't well suited for batch processing because data need to be available and used immediately."
     - content: "Real-time personalized advertising data."
       isCorrect: false
-      explanation: "That's incorrect. Real-time data is not well suited for batch processing."
+      explanation: "That's incorrect. Real-time data isn't well suited for batch processing."
     - content: "Daily sales report data."
       isCorrect: true
       explanation: "That's correct. Batch processing is the processing of transactions in a group or batch. In this case sales data are batched by day."
