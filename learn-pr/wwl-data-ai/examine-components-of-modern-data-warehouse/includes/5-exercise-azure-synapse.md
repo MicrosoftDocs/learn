@@ -146,7 +146,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     | 772 | Mountain-100 Silver, 42 | Mountain Bikes | 3399.9900 |
     | ... | ... | ... | ... |
 
-5. Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here, and then rerun the query:
+5. Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing *datalakexx* and *fsxx* with the names of your data lake storage account and file system), and then rerun the query:
 
     ```SQL
     SELECT
