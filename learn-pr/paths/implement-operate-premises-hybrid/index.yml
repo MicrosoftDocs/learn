@@ -3,7 +3,7 @@ uid: learn.wwl.implement-operate-premises-hybrid
 metadata:
   title: Implement and operate an on-premises and hybrid networking infrastructure
   description: Implement and operate an on-premises and hybrid networking infrastructure
-  ms.date: 11/09/2021
+  ms.date: 03/14/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ prerequisites: |
   - Basic knowledge of PowerShell scripting
 summary: |
   Learn to implement and manage networking services in Windows Server. Learn to deploy and manage DHCP, secure DNS, and implement IP Address Management (IPAM) and Web Application Proxy. You'll also learn about Azure IaaS networking.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/implement-operate-on-premises-hybrid-networking-infrastructure.svg
 levels:
 - intermediate
 roles:
