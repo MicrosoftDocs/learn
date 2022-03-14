@@ -1,4 +1,4 @@
-When you build Bicep templates and work within a Git repository, all of your team's changes are eventually merged into the main branch of your repository. It's important to protect the main branch so that no unwanted changes are deployed to your production environment. However, you also want your contributors to be able to work flexibly, collaborate flexibly, and try out ideas easily.
+When you build Bicep templates and work within a Git repository, all of your team's changes are eventually merged into the main branch of your repository. It's important to protect the main branch so that no unwanted changes are deployed to your production environment. However, you also want your contributors to be able to work flexibly, collaborate with your team, and try out ideas easily.
 
 In this unit, you'll learn about branching strategies and how to protect the main branch. You'll also learn how to set up a review process for your branches.
 
