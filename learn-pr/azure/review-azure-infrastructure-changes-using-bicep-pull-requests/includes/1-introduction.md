@@ -6,7 +6,7 @@ It's important that the changes that are merged into your repository's main bran
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your team is growing, and it's getting more difficult to keep track of all the changes that everyone is making. 
 
-Recently, a new team member accidentally changed an important Bicep file on your repository's main branch. That change caused a production problem for your organization. You talk to your team and decide that it's time for you to start reviewing code changes before they're merged and deployed.
+Recently, a new team member accidentally changed an important Bicep file on your repository's main branch. That change caused a problem in your organization's production environment. You talk to your team and decide that it's time for you to start reviewing code changes before they're merged and deployed.
 
 Now, you need to make a change to the way your website processes orders. You need to add a message queue so that your website can post messages whenever a customer places an order for a toy. A back-end system, built by another team, will pick up these messages and process the orders later. You need to ensure that you don't start sending messages to the queue until the other team is ready.
 
