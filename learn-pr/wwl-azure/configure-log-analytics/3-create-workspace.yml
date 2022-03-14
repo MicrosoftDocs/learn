@@ -4,13 +4,12 @@ title: Create a workspace
 metadata:
   title: Create a workspace
   description: "Create a workspace"
-  ms.date: 09/15/2021
+  ms.date: 03/14/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |

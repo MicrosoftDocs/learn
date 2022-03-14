@@ -7,11 +7,11 @@ The first step in your pipeline is creating a Copy Activity that copies data bet
 
 1. **Open the authoring canvas** by clicking on the **pencil icon** on the left sidebar or the create pipeline button to open the authoring canvas. 
     > [!div class="mx-imgBorder"]  
-    > ![Open the create pipeline designer](../media/create-pipeline-designer.png)
+    > ![Screenshot that shows the Create pipeline option highlighted.](../media/create-pipeline-designer.png)
 
 1. Create the **pipeline**. Click on the **+** button in the Factory Resources pane and select **Pipeline**.
     > [!div class="mx-imgBorder"]  
-    > ![Open the create pipeline designer](../media/open-create-pipeline-designer.png)
+    > ![Screenshot that shows Factory Resources under the Data Factory tab. The plus symbol is selected, exposing Pipeline, both are highlighted.](../media/open-create-pipeline-designer.png)
 
 1. Add a **copy activity**. In the **Activities** pane, open the **Move and Transform** accordion and drag the **Copy Data** activity onto the pipeline canvas.
     > [!div class="mx-imgBorder"]  
@@ -29,11 +29,11 @@ With the Copy Activity added, you then start to define the source data
 
 1. In the **file format list**, select the **DelimitedText** format tile and click **continue**
     > [!div class="mx-imgBorder"]
-    > ![Selecting the data source file format](../media/select-data-source-file-format.png)
+    > ![Screenshot that shows Delimited Text selected in the Select format list.](../media/select-data-source-file-format.png)
 
 1. In **Set Properties** window, give your dataset an understandable **name** and click on the **Linked Service dropdown**. If you have not created your S3 Linked Service, select **New**. 
     > [!div class="mx-imgBorder"]  
-    > ![Selecting the data source file format](../media/data-source-file-format.png)
+    > ![Screenshot that shows the Set Properties window, with filter highlighted under Linked service.](../media/data-source-file-format.png)
 
 1. Specific to the S3 Linked Service configuration pane, specify your S3 **access key** and **secret key**. The Data Factory service encrypts credentials with certificates managed by Microsoft. For more information, see Data Movement Security Considerations. To verify your credentials are valid, click **Test Connection**. Click **Create** when finished. 
     > [!div class="mx-imgBorder"]  

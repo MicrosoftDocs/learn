@@ -17,9 +17,13 @@ In this module, you will:
 
 - Recognize the value of Azure, as illustrated by the demos
 
-| | |
-| ---: | :--- |
-| ![Light bulb icon](../media/lightbulb.png)| *Does your organization have workloads that run on Windows Server 2008/2008 R2 or SQL Server 2008/2008 R2? If so, consider whether the scenario demonstrated in the next unit applies to your situation.*|
-|
+:::row:::
+![Light bulb icon](../media/lightbulb.png)
+
+:::column:::
+*Does your organization have workloads that run on Windows Server 2008/2008 R2 or SQL Server 2008/2008 R2? If so, consider whether the scenario demonstrated in the next unit applies to your situation.*
+
+:::column-end:::
+:::row-end:::
 
 Next, let's view a demo of a lift-and-shift Azure migration.

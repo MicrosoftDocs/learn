@@ -16,7 +16,7 @@ The easiest way to start coding in Visual Studio is with a project template. Vis
 
     :::image type="content" source="../media/5-configure-project-screen.png" alt-text="Screenshot of the page for configuring your new project, with the Next button highlighted.":::
 
-4. On the **Additional information** page, keep the defaults and select **Create**. 
+4. On the **Additional information** page, keep the defaults and select **Create**.
 
     :::image type="content" source="../media/5-additional-information-screen.png" alt-text="Screenshot of the page for additional information about the new project, with the Create button highlighted.":::
 
@@ -28,11 +28,11 @@ Your new project is created, and you can see the contents in Solution Explorer.
 
 Now you'll initialize a Git repository at the project root directory, create a repository on GitHub, and push the repository's contents to GitHub. Visual Studio has a **Create a Git repository** dialog for these actions. You can access it through the **Git** menu, the **Git Changes** window, or the status bar control. We'll use the **Git Changes** window.
 
-1. In Visual Studio, go to **View** > **Git Changes**. 
+1. In Visual Studio, go to **View** > **Git Changes**.
 
     :::image type="content" source="../media/5-view-git-changes-menu.png" alt-text="Screenshot of the Visual Studio View menu with the Git Changes item highlighted.":::
 
-    The **Git Changes** window opens. In its empty state, the window provides entry points where you can create, clone, or open repositories. When the window is populated, it shows you the changes in your currently open repository and allows you to commit. 
+    The **Git Changes** window opens. In its empty state, the window provides entry points where you can create, clone, or open repositories. When the window is populated, it shows you the changes in your currently open repository and allows you to commit.
 
 2. Select the **Create Git Repository** button.
 
@@ -48,7 +48,7 @@ The dialog closes. You can track the progress of your repository's creation in t
 
 ## Verify creation of the new repository
 
-You can validate the successful creation of your repository locally and remotely. 
+You can validate the successful creation of your repository locally and remotely.
 
 1. Go to **View** > **Git Repository**.  
 
@@ -60,7 +60,7 @@ You can validate the successful creation of your repository locally and remotely
 
     :::image type="content" source="../media/5-git-repo-window.png" alt-text="Screenshot of the Git Repository window with the main branch.":::
 
-3. Go to **Git** > **Manage Remotes**. 
+3. Go to **Git** > **Manage Remotes**.
 
     :::image type="content" source="../media/5-git-manage-remotes.png" alt-text="Screenshot of the Git menu with the Manage Remotes item highlighted.":::
 
@@ -68,11 +68,11 @@ You can validate the successful creation of your repository locally and remotely
 
     :::image type="content" source="../media/5-remotes-settings.png" alt-text="Screenshot of the Remotes page in settings, with the Edit button highlighted.":::
 
-5. Copy the URL from the **Fetch** box. 
+5. Copy the URL from the **Fetch** box.
 
     :::image type="content" source="../media/5-origin-url-link.png" alt-text="Screenshot of the dialog for editing the remote origin, with the fetch URL highlighted.":::
 
-6. Go to your default web browser and paste the link. The repository webpage opens on GitHub.com. 
+6. Go to your default web browser and paste the link. The repository webpage opens on GitHub.com.
 
     :::image type="content" source="../media/5-repo-in-browser.png" alt-text="Screenshot of the repository's GitHub webpage.":::
 
