@@ -1,8 +1,8 @@
 Companies need to keep backups for months or years for regular administrative protection, such as to restore accidentally deleted data.
 
-For example, data protection laws in at least one country where your retail organization operates require you to keep records of all customer transactions for 5 years. You need to ensure that data in Azure SQL Database, which underpins your enterprise resource planning (ERP) system, is kept for at least that long.
+For example, data protection laws in at least one country where your retail organization operates require you to keep records of all customer transactions for five years. You need to ensure that data in Azure SQL Database, which underpins your enterprise resource planning (ERP) system, is kept for at least that long.
 
-Here, you'll learn about long-term retention policies in Azure SQL Database and how to use them when you need backups to be kept for more than 35 days.
+Here, you'll learn about long-term retention policies in Azure SQL Database and how to use them when you need backups kept for more than 35 days.
 
 ## Long-term backup retention policies
 
@@ -12,9 +12,9 @@ For these requirements, use the long-term retention (LTR) feature. This way, you
 
 ## How SQL Database long-term retention works
 
-LTR takes the backups that are automatically made for point-in-time recovery and copies them to different blobs. This copy operation runs in the background at low priority to ensure that there's no impact on performance. 
+LTR takes the backups that are automatically made for point-in-time recovery and copies them to different blobs. This copy operation runs in the background at low priority to ensure that there's no impact on performance.
 
-These backups don't happen by default. You must configure a policy to start and manage them. 
+These backups don't happen by default. You must configure a policy to start and manage them.
 
 ## How to write a long-term retention policy
 
@@ -26,7 +26,7 @@ The long-term retention policy sets how frequently an automatic backup will be c
 
 If you use `Y` for yearly backups, you can specify the week of the year when that backup is copied by using the `WeekOfYear` parameter.
 
-For each policy letter, you use numbers to indicate how long the backup should be retained. For example, to keep the weekly backup for 10 weeks, use `W=10`. To keep the annual backup for 3 years, use `Y=3`.
+For each policy letter, you use numbers to indicate how long the backup should be retained. For example, to keep the weekly backup for 10 weeks, use `W=10`. To keep the annual backup for three years, use `Y=3`.
 
 ## Example long-term retention policies
 
@@ -34,7 +34,7 @@ You can combine weekly, monthly, and yearly retention values to create a flexibl
 
 - `W=0, M=0, Y=5, WeekOfYear=3`
 
-    This policy retains the full backup taken in the 3rd week of the year for 5 years.
+    This policy retains the full backup taken in the third week of the year for five years.
 
 - `W=0, M=10, Y=0`
 
@@ -46,7 +46,7 @@ You can combine weekly, monthly, and yearly retention values to create a flexibl
 
 - `W=4, M=12, Y=10, WeekOfYear=1`
 
-    This policy retains each weekly backup for 4 weeks. It also retains the first full backup of each month for 12 months. The first full backup taken in the first week of each year is retained for 10 years.
+    This policy retains each weekly backup for four weeks. It also retains the first full backup of each month for 12 months. The first full backup taken in the first week of each year is retained for 10 years.
 
 ## Setting retention policies in PowerShell
 

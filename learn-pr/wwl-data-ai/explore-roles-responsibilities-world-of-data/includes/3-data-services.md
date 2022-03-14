@@ -100,7 +100,7 @@ Data analysts can use Azure Data Explorer to query and analyze data that include
 
 ![Azure Purview logo](../media/azure-purview.png) Azure Purview provides a solution for enterprise-wide data governance and discoverability. You can use Azure Purview to create a map of your data and track data lineage across multiple data sources and systems, enabling you to find trustworthy data for analysis and reporting.
 
-Data engineers can use Azure Purview to enforce data governance across the enterprise and ensure the integrity of data used so support analytical workloads.
+Data engineers can use Azure Purview to enforce data governance across the enterprise and ensure the integrity of data used to support analytical workloads.
 
 ## Microsoft Power BI
 
