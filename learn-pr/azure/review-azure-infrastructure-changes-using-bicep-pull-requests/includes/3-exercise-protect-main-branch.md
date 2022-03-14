@@ -34,7 +34,10 @@ Here, you make sure that your GitHub repository is set up to complete the rest o
 
 ### Start from the template repository
 
-[Run the template](https://github.com/MicrosoftDocs/mslearn-review-azure-infrastructure-changes-using-bicep-pull-requests?azure-portal=true) that sets up your GitHub repository.
+Run a template that sets up your GitHub repository.
+
+> [!div class="nextstepaction"]
+> [Run the template](https://github.com/MicrosoftDocs/mslearn-review-azure-infrastructure-changes-using-bicep-pull-requests?azure-portal=true)
 
 On the GitHub site, follow these steps to create a repository from the template:
 
@@ -58,17 +61,10 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 ## Get the Azure DevOps project
 
-Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module.
+Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
 
-<!--**Note to reviewers:** The instructions below don't work yet. Instead, please follow these instructions:
-
-1. Download [this .zip file](https://microsoft-my.sharepoint.com/:u:/p/jodowns/ETGdBebkHPdFieKE_gJp_YoBziOsdI9_5iJRwYJBuoibRg?e=uQc3pX?azure-portal=true).
-1. Open the [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net?azure-portal=true).
-1. Sign in.
-1. Select **Choose template**, select the **Private** tab, and then select the path to the .zip file that you downloaded.
-1. Enter the other project information, and then select **Create project**.-->
-
-First, [run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreview&azure-portal=true) that creates a project in Azure DevOps.
+> [!div class="nextstepaction"]
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreview&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, follow these steps:
 
@@ -217,7 +213,7 @@ Configure your Git repository to prevent direct pushes to the main branch.
     git checkout -b add-orders-queue
     ```
 
-    This statement creates a new feature branch for you to work from.
+    This command creates a new feature branch for you to work from.
 
 1. Open the *main.bicep* file in the *deploy* folder.
 
@@ -284,7 +280,7 @@ You've learned why it's not advisable to push directly to the main branch. Here,
    git merge add-orders-queue
    ```
 
-   The command worked, but you merged the *add-orders-queue* branch into your main branch in only your local Git repository.
+   The command worked, but you merged the *add-orders-queue* branch into your main branch in only your *local* Git repository.
 
 1. Run the following statement to try to push your changes to GitHub:
 
