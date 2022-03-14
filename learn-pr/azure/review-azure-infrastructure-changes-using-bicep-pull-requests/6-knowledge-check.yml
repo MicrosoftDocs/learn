@@ -23,7 +23,7 @@ quiz:
       explanation: Incorrect. The rules are configured to prevent direct commits or pushes.
     - content: The manager of the team must review all pull requests.
       isCorrect: false
-      explanation: Incorrect. The rules don't specify specific reviewers who must approve pull requests.
+      explanation: Incorrect. The rules don't identify specific reviewers who must approve pull requests.
     - content: The pull request's author can push a change to the pull request's source branch.
       isCorrect: true
       explanation: Correct. Pull request authors can continue to push changes to their source branch while the pull request is open.

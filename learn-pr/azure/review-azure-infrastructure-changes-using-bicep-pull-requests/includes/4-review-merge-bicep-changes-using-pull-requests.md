@@ -18,7 +18,7 @@ When you configure branch protections, you can require the owners of your code t
 
 ### Pull requests and branch policies
 
-When you configure branch policies, you can require specific people, or a group of people, to review the pull request. For example, you might include the project leads as reviewers for all of your pull requests. Or, you might specify that a certain number of people must review every pull request.
+When you configure branch policies, you can require specific people or a group of people to review the pull request. For example, you might include the project leads as reviewers for all of your pull requests. Or, you might specify that a certain number of people must review every pull request.
 
 You can also require that each pull request is linked to a work item. By using this configuration, can trace a task from a work item that contains a feature request to the code that implements the change, all the way to deployment to your production environment.
 
@@ -44,7 +44,7 @@ Also, pull request names often become part of your Git repository's history. So 
 
 ::: zone pivot="github"
 
-You can also give pull requests a description. You can mention specific people, or refer to issues, in your descriptions. Many teams create standardized templates for pull request descriptions so that it's clear what each change is.
+You can also give pull requests a description. You can mention specific people or refer to issues in your descriptions. Many teams create standardized templates for pull request descriptions so that it's clear what each change is.
 
 ::: zone-end
 
@@ -56,7 +56,7 @@ You can also give pull requests a description. You can mention specific people, 
 
 When you create a pull request, you can invite people to review the changes.
 
-Sometimes, you create a pull request just to get feedback from your colleagues. In these situations, you can specify the pull request is a *draft*. Reviewers will know that you're still working on the changes. Your reviewers can still provide feedback, but it's clear that the changes aren't ready to merge yet. When you're satisfied with your changes, you can remove the draft status.
+Sometimes, you create a pull request just to get feedback from your colleagues. In these situations, you can specify that the pull request is a *draft*. Reviewers will know that you're still working on the changes. Your reviewers can still provide feedback, but it's clear that the changes aren't ready to merge yet. When you're satisfied with your changes, you can remove the draft status.
 
 Even after you've created a pull request, you can keep making changes to the code on your feature branch. These changes become part of the pull request.
 

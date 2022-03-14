@@ -60,7 +60,7 @@ Because you can't push changes directly to your repository's main branch, you ne
 
 ## Review the pull request
 
-Normally, a pull request is reviewed by someone other than its author. For this example, you'll pretend to be another team member and you'll review your own pull request.
+Normally, a pull request is reviewed by someone other than its author. For this example, you'll pretend to be another team member and review your own pull request.
 
 ::: zone pivot="github"
 
@@ -125,7 +125,7 @@ Normally, a pull request is reviewed by someone other than its author. For this 
 
 ## Respond to the pull request review
 
-When you create or review a pull request, you can participate in a conversation about its contents. Imagine you're the author of this file, and you want to respond to a comment from the reviewer.
+When you create or review a pull request, you can participate in a conversation about its contents. Imagine that you're the author of this file and you want to respond to a comment from the reviewer.
 
 ::: zone pivot="github"
 

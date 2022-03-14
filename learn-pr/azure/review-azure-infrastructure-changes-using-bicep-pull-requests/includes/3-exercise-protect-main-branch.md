@@ -30,7 +30,7 @@ During the process, you'll:
 
 ## Get the GitHub repository
 
-Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files that you need to get started for this module. 
+Here, you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files that you need to get started for this module. 
 
 ### Start from the template repository
 
@@ -58,7 +58,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 ## Get the Azure DevOps project
 
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module.
+Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module.
 
 <!--**Note to reviewers:** The instructions below don't work yet. Instead, please follow these instructions:
 
@@ -200,7 +200,7 @@ Configure your Git repository to prevent direct pushes to the main branch.
 
 1. In the **Branch policies** window, change the **Require a minimum number of reviewers** setting to **On**.
 
-1. Change the minimum number of reviewers to **1** and select the **Allow requestors to approve their own changes** option.
+1. Change the minimum number of reviewers to **1**, and select the **Allow requestors to approve their own changes** option.
 
    :::image type="content" source="../media/3-repos-branch-policy-main.png" alt-text="Screenshot of Azure DevOps that shows the branch policies page for the main branch.":::
 
@@ -235,7 +235,7 @@ Configure your Git repository to prevent direct pushes to the main branch.
 
    :::code language="bicep" source="code/3-main-final.bicep" range="40-49" highlight="6-7" :::
 
-   This code enables the application to find the queue to send messages to.
+   This code enables the application to find the queue where it will send messages.
 
 1. Save the *main.bicep* file.
 
