@@ -12,7 +12,7 @@ To get started, copy the sample notebook from the notebook gallery.
 1. Locate the **Hello, world: Q#** notebook tile, select either the **IonQ** or **Quantinuum** provider (the sample code is identical) and select **Copy to my notebooks**..
 1. The sample notebook can be found under **My notebooks** and you can now run the notebook.
 
-![Load a sample Jupyter notebook](../media/create_notebook_steps.png)
+![Load a sample Jupyter notebook](../media/create-notebook-steps.png)
 
 The notebook first imports the required packages for the sample, then connects to the Azure Quantum service, and then runs a Q# program.
 
@@ -24,7 +24,7 @@ To run the sample notebook, follow these steps for your selected provider.
 1. To run the full program from top to bottom, select **Run all**. 
 1. To walk through the example and run each cell individually from top to bottom, select the cell you want to run and select the **run icon**.
 
-![Run a Jupyter notebook.](../media/run_or_run_all.png)
+![Run a Jupyter notebook.](../media/run-or-run-all.png)
 
 ### Stepping through the program on IonQ
 
@@ -45,7 +45,7 @@ Some things to note:
 1. To run the full program from top to bottom, select **Run all**. 
 1. To walk through the example and run each cell individually from top to bottom, select the cell you want to run and select the **run icon**.
 
-![Run a Jupyter notebook.](../media/run_or_run_all.png)
+![Run a Jupyter notebook.](../media/run-or-run-all.png)
 
 ### Stepping through the program on Quantinuum
 
