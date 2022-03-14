@@ -4,7 +4,7 @@ In this unit, you'll learn about branching strategies and how to protect the mai
 
 ## Why do you want to protect the main branch?
 
-The main branch determines what gets deployed to your Azure environments. For many solutions, you'll have multiple environments, such as *development*, *quality assurance (QA)*, and *production*. In other scenarios, you might have only a production environment. Regardless of how many environments you use, the main branch is the branch that your team members contribute to. Their changes ultimately land on the main branch.
+The main branch is the source of truth for what gets deployed to your Azure environments. For many solutions, you'll have multiple environments, such as *development*, *quality assurance (QA)*, and *production*. In other scenarios, you might have only a production environment. Regardless of how many environments you use, the main branch is the branch that your team members contribute to. Their changes ultimately land on the main branch.
 
 A typical process might be the following: 
 
@@ -48,7 +48,7 @@ You should update your feature branch regularly so that you incorporate any chan
 
 ### Use small, short-lived branches
 
-Aim for short-lived feature branches. This approach helps you avoid merge conflicts by reducing the potential that your branches will get out of sync. This approach also makes it easier for your colleagues to understand the changes that have been made, which is helpful when you need someone to review your changes.
+Aim for short-lived feature branches. This approach helps you avoid merge conflicts by reducing the amount of time that your branches might get out of sync. This approach also makes it easier for your colleagues to understand the changes that have been made, which is helpful when you need someone to review your changes.
 
 Split up large pieces of work into smaller pieces and create a feature branch for each one. The bigger the feature, the longer someone will need to work on it and the longer the feature branch will live. You can deploy the smaller changes to production as you merge each feature branch and gradually build up the broader work.
 
