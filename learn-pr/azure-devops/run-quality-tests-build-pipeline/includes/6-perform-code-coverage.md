@@ -1,4 +1,4 @@
-Much like the tool you use for unit testing, the tool you use for code coverage depends on the programming language and application framework you use.
+Much like the tool you use for unit testing, the tool you use for code coverage depends on the programming language and application framework.
 
 When you target .NET applications to run on Linux, [coverlet](https://github.com/tonerdo/coverlet?azure-portal=true) is a popular option. Coverlet is a cross-platform, code-coverage library for .NET. Before we add code coverage to the pipeline, let's check in with the team.
 
@@ -101,6 +101,9 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
 1. Run the following `dotnet test` command to run your unit tests and collect code coverage:
 
+    > [!NOTE]
+    > If you are using the PowerShell terminal in Visual Studio, the line continuation character is a backtick (**`**). So, use that character in place of the backslash character (**\\**) for multi-line commands.
+
     ```dotnetcli
     dotnet test --no-build \
       --configuration Release \
@@ -130,7 +133,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
       -reporttypes:HtmlInline_AzurePipelines
     ```
 
-    A number of HTML files appear in the *CodeCoverage* folder at the root of the project.
+    Many HTML files will appear in the *CodeCoverage* folder at the root of the project.
 1. In Visual Studio Code, expand the *CodeCoverage* folder, right-click *index.htm*, and then select **Reveal in Explorer** (**Reveal in Finder** on macOS or **Open Containing Folder** on Linux).
 1. In Windows Explorer (Finder on macOS), double-click *index.htm* to open it in a web browser.
 
@@ -148,7 +151,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
     :::image type="content" source="../media/6-coverage-class-details.png" alt-text="A screenshot of local class coverage detail with a visual representation of unit test coverage for two C# methods, one with all code lines green (covered) and one with all lines red (not covered).":::
 
-    This makes sense, because the `FetchOnlyRequestedGameRegion` test method calls the `GetItemsAsync` method but does not call the `CountItemsAsync` method. (To review the test code, see the *DocumentDBRepository_GetItemsAsyncShould.cs* file.)
+    This makes sense, because the `FetchOnlyRequestedGameRegion` test method calls the `GetItemsAsync` method but doesn't call the `CountItemsAsync` method. (To review the test code, see the *DocumentDBRepository_GetItemsAsyncShould.cs* file.)
 
 ## Create a branch
 
@@ -264,9 +267,9 @@ Later, you can configure coverlet to check to see whether your tests provide a m
 
 ## Remove code coverage files
 
-Recall that when you ran `Reportgenerator` earlier, a number of HTML files appeared in the *CodeCoverage* folder at the root of the project.
+Recall that when you ran `Reportgenerator` earlier, many HTML files appeared in the *CodeCoverage* folder at the root of the project.
 
-These HTML files are not intended to be included in source control, and you no longer need them. Although the project's *.gitignore* file is already set up to ignore anything in the *CodeCoverage* directory, it's a good idea to delete these files so that they're not added to your Git repository in future modules.
+These HTML files aren't intended to be included in source control, and you no longer need them. Although the project's *.gitignore* file is already set up to ignore anything in the *CodeCoverage* directory, it's a good idea to delete these files so that they're not added to your Git repository in future modules.
 
 In Visual Studio Code, go to the terminal window and then, in your project's root directory, run this command:
 
