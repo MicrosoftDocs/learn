@@ -20,7 +20,7 @@ When you configure branch protections, you can require the owners of your code t
 
 When you configure branch policies, you can require specific people or a group of people to review the pull request. For example, you might include the project leads as reviewers for all of your pull requests. Or, you might specify that a certain number of people must review every pull request.
 
-You can also require that each pull request is linked to a work item. By using this configuration, can trace a task from a work item that contains a feature request to the code that implements the change, all the way to deployment to your production environment.
+You can also require that each pull request is linked to a work item. By using this configuration, you can trace from a work item that contains a feature request to the code that implements the change, all the way to deployment to your production environment.
 
 ::: zone-end
 
