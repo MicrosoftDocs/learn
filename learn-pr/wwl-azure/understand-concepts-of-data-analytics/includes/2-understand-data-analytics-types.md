@@ -5,7 +5,7 @@ Data analytics covers a range of activities, each with its own focus and goals. 
 In this unit, you'll learn about these five categories of data analytics and what they are used for.
 
 ## Descriptive analytics
-**What happened?**
+### What happened?
 
 *Descriptive analytics* answers questions about what happened, based on historical data, to inform decisions about the future. Descriptive analytics techniques summarize large datasets to present insights to stakeholders. Descriptive analytics is the most common type of analytics and is often performed by a data analyst.
 
@@ -16,7 +16,7 @@ Descriptive analytics outputs can take many forms, including reports and dashboa
 ![Power BI report displaying sales and marketing data including key metrics such as total sales and online sales. The report looks at sales data by product and channel and over time in a bar chart.](../media/descriptive-analytics.png)
 
 ## Diagnostic analytics
-**Why did it happen?**
+### Why did it happen?
 
 *Diagnostic analytics* helps answer questions about why things happened and is often the next step in data analytics after descriptive analytics. Analysts take findings from descriptive analytics and dig deeper to find the cause. Metrics and indicators of interest are further investigated to discover why they got better or worse. Diagnostic analytics is often performed by data analysts and data scientists.
 
@@ -31,7 +31,7 @@ In Contoso's sales report below, we want to understand why Contoso is or isn't w
 ![Power BI report displaying Contoso sales data including key metrics such as percent of bids closed by category. The report displays a key influencers visual displaying a chart that shows that the likelihood of winning a bid increases by 2.76x when the discount goes up by 0.02.](../media/diagnostic-analytics.png)
 
 ## Predictive analytics
-**What will happen in the future?**
+### What will happen in the future?
 
 *Predictive analytics* helps answer questions about what will happen in the future. Predictive analytics techniques use historical data to identify trends and determine if they're likely to recur, providing insight into what may happen in the future. Techniques include statistical and machine learning techniques such as forecasting, neural networks, decision trees, and regression. Predictive analytics is often performed by data scientists. Predictive analytics is performed by data analysts and data scientists.
 
@@ -40,7 +40,7 @@ The line chart below looks at revenue won by year and month, which shows histori
 ![A line chart with a clear downward trend in revenue won by year and month. The line chart includes a forecast which displays that revenue won will continue to decrease into the next year.](../media/predictive-analytics.png)
 
 ## Prescriptive analytics
-**What actions should be taken?**
+### What actions should be taken?
 
 *Prescriptive analytics* takes predictive analytics one step further and helps answer questions about what actions should be taken to achieve a goal or target. This technique allows businesses to make data-informed decisions in the face of uncertainty. Prescriptive analytics techniques rely on machine learning strategies to find patterns in large datasets. By analyzing past decisions and events, the likelihood of different outcomes can be estimated. Prescriptive analytics is often performed by data scientists. Microsoft also provides low-code tools that can be used by analyts to conduct prescriptive analytics, like using machine learning in Power BI.
 
@@ -52,7 +52,7 @@ Algorithmic content recommendations are a common implementation of prescriptive 
 > To learn more about prescriptive analytics using Azure Machine Learning, review [Build a content-based recommendation system](/azure/architecture/example-scenario/ai/scalable-personalization-with-content-based-recommendation-system).
 
 ## Cognitive analytics
-**How can the problem be solved best?**
+### How can the problem be solved best?
 
 *Cognitive analytics* combines artificial intelligence, machine learning, and data analytics approaches to guide decision making. Cognitive analytics draws inferences from existing data and patterns, derives conclusions based on existing knowledge bases, and adds findings back into the knowledge base for future inferences--a self-learning feedback loop. This feedback loop enables cognitive applications to become more precise over time.
 
