@@ -25,7 +25,7 @@ Synapse notebooks enable you to analyze data across raw formats (CSV, txt, JSON,
 
 Power BI also has native connectors to many Azure data services. Using Power BI, you can connect to data in Azure Synapse Analytics, Azure Databricks, Azure HDInsight, and more.
 
-![Power BI Report interface in Azure Synapse Analytics Workspace.](../media/synapse-power-bi.png)
+[![Power BI Report interface in Azure Synapse Analytics Workspace.](../media/synapse-power-bi.png)](../media/synapse-power-bi.png#lightbox)
 
 > [!NOTE]
 > Learn more about [analytics and reporting with Power BI](/learn/paths/create-use-analytics-reports-power-bi/).
