@@ -3,7 +3,7 @@ uid: learn.wwl.implement-manage-fslogix
 metadata:
   title: Implement and manage FSLogix
   description: "Implement and manage FSLogix"
-  ms.date: 12/06/2021
+  ms.date: 03/14/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
   *   Configure Profile Containers.
   *   Manage Rule Sets and application masking.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-implement-and-manage-fslogix.svg
 levels:
 - intermediate
 roles:
