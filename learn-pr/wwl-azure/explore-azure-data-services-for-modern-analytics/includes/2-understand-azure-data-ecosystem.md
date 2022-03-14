@@ -12,7 +12,7 @@ In an analytics solution, data from different sources are combined and prepared 
 
 Areas outlined in red in the image above highlight the pieces of the analytics solution that data analysts use to make sense of the data.
 
-> [!Note]
+> [!NOTE]
 > Learn more about [data storage in Azure](/learn/modules/choose-storage-approach-in-azure/) and [technology choices for analytical data stores](/azure/architecture/data-guide/technology-choices/analytical-data-stores).
 
 ## Data ingestion and processing
