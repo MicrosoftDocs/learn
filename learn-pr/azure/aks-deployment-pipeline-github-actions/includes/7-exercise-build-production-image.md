@@ -347,6 +347,9 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             id: fetch_version
             run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
 
+          - name: Set up Buildx
+            uses: docker/setup-buildx-action@v1
+
           - name: Docker Login
             uses: docker/login-action@v1
             with:
