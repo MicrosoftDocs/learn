@@ -26,51 +26,45 @@ durationInMinutes: 1
 ###
 ###########################################################################
 content: |
+  [!include[](includes/10-knowledge-check.md)]
 quiz:
   questions:
-    - content: "When should you create an Azure resource group?"
-      choices:
-        - content: "After you create your resources."
-          isCorrect: false
-          explanation: "The resource group is required to create a resource and can be created at the same time."
-        - content: "Before or during resource creation."
-          isCorrect: true
-          explanation: "The resource group is required to create a resource and can be created at the same time."
-        - content: "When you need to create a new resource for the same project."
-          isCorrect: false
-          explanation: "Keep all resources for a project in the same resource group."
-    - content: "For developers, the top 4 environments to deploy to Azure App Service include:"
-      choices:
-        - content: |
-            CICD - such as GitHub Actions or Azure Pipelines
-            Developer IDE - Visual Studio Code using the App Service extension
-            CLI - Azure CLI
-            Browser - Azure portal
-          isCorrect: true
-          explanation: "These are the 4 different environments but not all of the deployment choices."
-        - content: |
-            FTP
-            SSH
-            ZIP
-            CURL
-          isCorrect: false
-          explanation: "This are all valid tools but not environments."
-        - content: |
-            Visual Studio
-            Visual Studio Code
-          isCorrect: false
-          explanation: "These are the Microsoft Developer tools but are not all the environments for deployment."                   
-    - content: "You can stream the logs with:"
-      choices:
-        - content: Azure portal
-          isCorrect: false
-          explanation: "You can stream logs with all 3 tools."
-        - content: Visual Studio Code
-          isCorrect: false
-          explanation: "You can stream logs with all 3 tools."
-        - content: Azure CLI
-          isCorrect: false
-          explanation: "You can stream logs with all 3 tools."     
-        - content: All of the above
-          isCorrect: true
-          explanation: "You can stream logs with all 3 tools."                  
+  - content: "Which environments provide the widest deployment choices?"
+    choices:
+      - content: |
+          CICD - such as GitHub Actions or Azure Pipelines
+          Developer IDE - Visual Studio Code using the App Service extension
+          CLI - Azure CLI
+          Browser - Azure portal
+        isCorrect: true
+        explanation: "These are the 4 different environments but not all of the deployment choices."
+      - content: "FTP, SSH, ZIP"
+        isCorrect: false
+        explanation: "This are all valid tools but don't provide the most choices for developers."
+      - content: |
+          Visual Studio
+          Visual Studio Code
+        isCorrect: false
+        explanation: "These are the Microsoft Developer tools but are not all the environments for deployment."                   
+  - content: "Where can you query logs?"
+    choices:
+      - content: Visual Studio Code
+        isCorrect: false
+        explanation: "You can't query logs unless you write your own code to do so."
+      - content: Azure CLI
+        isCorrect: false
+        explanation: "You can't directly query from the Azure CLI but you can run a Kusto script, with `az kusto script`, to query your logs."     
+      - content: Azure portal
+        isCorrect: true
+        explanation: "The Azure portal, you can view your resource's logs and query those logs."                
+  - content: "When should you create an Azure resource group?"
+    choices:
+      - content: "After you create your resources."
+        isCorrect: false
+        explanation: "The resource group is required to create a resource and can be created at the same time."
+      - content: "Before or during resource creation."
+        isCorrect: true
+        explanation: "The resource group is required to create a resource and can be created at the same time."
+      - content: "When you need to create a new resource for the same project."
+        isCorrect: false
+        explanation: "Keep all resources for a project in the same resource group."          
