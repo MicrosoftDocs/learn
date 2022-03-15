@@ -2,7 +2,7 @@
 
 1. In the Mixed Reality Feature Tool, select **Start**.
 
-    :::image type="content" source="../../media/mixed-reality-feature-tool.png" alt-text="Screenshot of the Mixed Reality Feature Tool opening screen."
+    :::image type="content" source="../../media/mixed-reality-feature-tool.png" alt-text="Screenshot of the Mixed Reality Feature Tool opening screen.":::
 
 1. Select the Browse button (it's the "three-dot" button in the image below), then navigate to your project, and then open it.
 
@@ -13,7 +13,7 @@
 
     After you select a folder, the Tool checks to ensure that it's a valid Unity project folder.
 
-    :::image type="content" source="../../media/007-project path.png" alt-text="Screenshot of the Mixed Reality feature Tool Project Path screen."
+    :::image type="content" source="../../media/007-project path.png" alt-text="Screenshot of the Mixed Reality feature Tool Project Path screen.":::
   
  1. Select **Discover Features**.
 
@@ -26,7 +26,7 @@
 1. Click the "+" button to the left of **Mixed Reality Toolkit (0 of 10)** and then select the latest version of **Mixed Reality Toolkit Foundation**.
 1. Click the "+" button to the left of **Platform Support (0 of 5)** and then select the latest version of **Mixed Reality OpenXR Plugin**.
  
-     :::image type="content" source="../../008-package-selections.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool."
+     :::image type="content" source="../../008-package-selections.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool.":::
 
 1. After you've made your selection(s), click **Get Features**.
 1. Select **Validate** to validate the packages you selected. You should see a dialog that says **No validation issues were detected**. When you do, click **OK**.
@@ -37,47 +37,91 @@
  
 ## Configure the Unity project
 
-1. After Unity has imported the package, select **Yes** to restart the Unity editor to enable to backends for new plugin.
+1. After Unity has imported the packages, a warning appears asking if you want to enable the backends by restarting the editor. Select **Yes**.
 
-    :::image type="content" source="../../media/unity-restart-option.png" alt-text="Screenshot of Unity Restart Option." lightbox="../../media/unity-restart-option.png":::
+    :::image type="content" source="../../media/unity-restart-option.png" alt-text="Screenshot of Unity Restart Option.":::
 
-1. The MRTK Project Configurator should appear. If it doesn't, manually open it by selecting **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**:
+1. The MRTK Project Configurator should appear. If it doesn't, open it manually: on the menu bar, select **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**:
 
-    :::image type="content" source="../../media/mrtk-project-configurator-window.png" alt-text="Screenshot of Open MRTK project configurator window." lightbox="../../media/mrtk-project-configurator-window.png":::
+    :::image type="content" source="../../media/009-open-mrtk-configurator.png" alt-text="Screenshot of the menu bar command for opening the MRTK Configurator.":::
     
-1. Select **Unity OpenXR Plugin** to enable XR Plugin Management and add its required packages to your project.
+1. Select **Unity OpenXR Plugin** to enable XR Plugin Management and add the Unity OpenXR Plugin to your project.
 
-    :::image type="content" source="../../media/open-xr-plug-in.png" alt-text="Screenshot of Add Unity OpenXR Plugin." lightbox="../../media/open-xr-plug-in.png":::
+    :::image type="content" source="../../media/010-configurator-select-openxr.png" alt-text="Screenshot of MRTK project configurator window with OpenXR selected.":::
 
-1. When the required Unity packages for XR Plugin Management have been imported, select **Show XR Plug-In Management Settings** in MRTK project Configurator.
+1. On the **Welcome to MRTK!** screen, select **Show XR Plug-In Management Settings**.
 
-    :::image type="content" source="../../media/xr-plug-in-management-settings.png" alt-text="Screenshot of Show XR Plug-In Management Settings." lightbox="../../media/xr-plug-in-management-settings.png":::
+    :::image type="content" source="../../media/011-show-xr-plugin-management.png" alt-text="Screenshot of the Show XR Plug-In Management Settings button.":::
 
-1. **Project Settings** opens. Under **XR Plug-in Management**, ensure that Universal Windows Platform settings (Windows logo tab) is active, and then ensure **Initialize XR on Startup**, **Open XR**, and **Microsoft HoloLens feature group** are all enabled (checkboxes are checked).
+1. The **Project Settings** window opens. Ensure that you're on the **XR Plug-in Management** page with the Universal Windows Platform settings (Windows logo tab) displayed.
 
-    :::image type="content" source="../../media/project-settings-window-3.png" alt-text="Screenshot of Project Settings Window 3." lightbox="../../media/project-settings-window-3.png":::
+    :::image type="content" source="../../media/012-xr-plugin-mgmt-page.png" alt-text="Screenshot of the Project Settings Window open to the XR Plugin Management Page and Universal Windows Platform tab.":::
 
-1. On the **MRTK Project Configurator** update message, select **Apply Settings**.
+ 1. Ensure that **Initialize XR on Startup** is selected, and then, under **Plugin Providers**, click **Open XR**.
 
-1. To validate OpenXR configuration, under **XR Plug-in Management** select **OpenXR** and verify the following items are checked:
+    :::image type="content" source="../../media/013-init-xr-on-startup.png" alt-text="Screenshot of Project Settings Window 3.":::
 
-    * Depth Submission Mode: **Depth 16 Bit**
-    * Interaction Profiles: **Microsoft Hand Interaction Profile**
+1. The OpenXR Plugin loads, and then two items appear underneath **OpenXR**. Select the first one, **Microsoft HoloLens feature group**.
 
-    :::image type="content" source="../../media/project-settings-window-4.png" alt-text="Screenshot of Project Settings Window 4." lightbox="../../media/project-settings-window-4.png":::
+1. Note that there's now a yellow warning triangle next to **OpenXR**. Hover your cursor over the triangle, then read the message in the popup, and then select the triangle.
+
+    :::image type="content" source="../../media/014-yellow-triangle-warning.png" alt-text="Screenshot of warning about incompatible settings.":::
+
+1. In the **OpenXR Project Validation** window, there are several issues listed. Select the **Fix All** button.
+
+    :::image type="content" source="../../media/015-fix-all-button.png" alt-text="Screenshot of the Fix All button in the OpenXR Project Validation window.":::
+
+1. One issue remains and tells you that you must add at least one interaction profile. To do so, click **Edit**. This takes you to the settings for the **OpenXR** plugin in the **Project Settings** window.
+
+    :::image type="content" source="../../media/016-openxr-screen.png" alt-text="Screenshot of the Project Settings window with the OpenXR settings displayed.":::
+
+1. Underneath **Interaction Profiles**, note the plus sign (+) button.
+
+    :::image type="content" source="../../media/017-add-profile-button.png" alt-text="Screenshot of the Add Interaction Profile button.":::
+
+ 1. Click the button three times, each time choosing a different profile:
+
+    **Eye Gaze Interaction Profile**
+
+    **Microsoft Hand Interaction Profile**
+
+    **Microsoft Motion Controller Profile**
+
+    :::image type="content" source="../../media/018-interaction-profiles.png" alt-text="Screenshot of interaction profiles that should be added.":::
+
+    If the **Eye Gaze Interaction Profile**, or any other profile, appears with a yellow triangle next to it, select the triangle, and then in the **OpenXR Project Validation** window, click the **Fix** button. When you're finised, close the window.
+
+        :::image type="content" source="../../media/019-fix-eye-gaze.png" alt-text="Screenshot of the Fix button for the Eye Gaze interaction profile.":::
+
+1. In the **Project Settings** window under **OpenXR Feature Groups**, ensure that the following are selected:
+   
+   **Microsoft HoloLens**
+
+   **Hand Tracking**
+
+   **Motion Controller Model**
+
+    :::image type="content" source="../../media/020-selected-features.png" alt-text="Screenshot of selected features for OpenXR.":::
+
+1. Click the **Depth Submission Mode** drop down and then select **Depth 16 Bit**.
+
+    :::image type="content" source="../../media/021-depth-submission-mode.png" alt-text="Screenshot of Depth 16 Bit selected for Depth Submission Mode.":::
 
     > [!TIP]
     > Reducing the Depth Format to 16-bit is optional, but it may improve graphics performance in your project. To learn more about this topic, refer to  [Depth buffer sharing (HoloLens)](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering).
 
-1. In the **MRTK Project Configurator** window, select **Next**, and then select **Apply**. (You can manually open the configurator from **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**)
+1. Close the **Project Settings** window.
+1.  In the **MRTK Project Configurator** window, select **Apply Settings**.
 
-    :::image type="content" source="../../media/mrtk-project-configurator.png" alt-text="Screenshot of MRTK Project Configurator." lightbox="../../media/mrtk-project-configurator.png":::
+    :::image type="content" source="../../media/022-configurator-apply-settings.png" alt-text="Screenshot of MRTK Project Configurator with the Apply Settings button.":::
 
+1.  Select **Next** and then **Apply**. 
 1. Unity must restart in order for the configuration to take effect. When prompted, select **Apply** to restart the Unity editor.
 
-    :::image type="content" source="../../media/mrtk-project-configurator-2.png" alt-text="Screenshot of MRTK Project Configurator 2." lightbox="../../media/mrtk-project-configurator-2.png":::
 
-1. When Unity restarts, from the Unity menu, open **MRTK Project Configurator**, and then select **Next** and **Done** to complete the configuration for OpenXR.
+
+
+**Done** to complete the configuration for OpenXR.
 
 ## Configure project settings for OpenXR
 
