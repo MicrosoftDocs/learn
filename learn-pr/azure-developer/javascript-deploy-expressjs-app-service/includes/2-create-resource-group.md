@@ -25,6 +25,18 @@ For this module, you will create a resource group containing a single resource t
 * `temporary-rental-web-app`
 * `web-app-rental-property`
 
+## How do you create a resource group? 
+
+You can create a resource group with any of the following:
+
+* Azure portal: good for people new to Azure
+* Azure CLI: good for automation
+* Visual Studio Code extension for Azure resources: good for in-the-moment developer tasks because you don't have to leave your development environment
+* PowerShell: good for automation
+* Azure SDKs for management: good for automation with a high-degree of customization specific to your needs
+
+In this module, you will use Visual Studio Code extension for Azure resources
+
 ## Resource group properties
 
 Other properties you _should_ use in a resource group include the resource group's:

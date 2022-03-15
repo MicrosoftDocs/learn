@@ -36,3 +36,5 @@ This module uses the Microsoft Learn sandbox, which is available for up to four 
 ## What is the main goal?
 
 By the end of this session, you’ll learn to create the Azure resources to support the web app, deploy the web app, and view web app logs.
+
+
