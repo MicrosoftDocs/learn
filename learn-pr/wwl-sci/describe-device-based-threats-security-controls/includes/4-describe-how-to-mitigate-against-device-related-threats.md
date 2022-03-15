@@ -1,4 +1,4 @@
-We've learned that devices can be threat vectors for cybercriminals who want to gain access to, or control of, data to cause harm. But what can we do protect ourselves?
+We've learned that devices can be threat vectors for cybercriminals who want to gain access to, or control of, data to cause harm. But what can we do to protect ourselves?
 
 ## Mitigation measures
 
