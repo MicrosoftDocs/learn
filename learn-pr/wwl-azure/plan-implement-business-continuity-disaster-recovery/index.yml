@@ -3,7 +3,7 @@ uid: learn.wwl.plan-implement-business-continuity-disaster-recovery
 metadata:
   title: Plan for disaster recovery
   description: "Plan for disaster recovery"
-  ms.date: 12/03/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ abstract: |
   *  Configure virtual machine (VM) replication for Azure Virtual Desktop.
   *  Configure FSLogix for multiple profile locations.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-plan-and-implement-business-continuity-and-disaster-recovery.svg
 levels:
 - intermediate
 roles:
