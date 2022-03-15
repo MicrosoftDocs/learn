@@ -10,6 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-tensorflow
   ms.product: learning-tensorflow
+  ms.contributors: bstollnitz-08202021
+  ms.custom: team=cloud_advocates
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/7-predict.ipynb

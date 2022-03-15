@@ -8,6 +8,8 @@ metadata:
   ms.author: bstollnitz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: bstollnitz-08202021
 title: Going beyond Keras - customizing with TensorFlow
 summary: If you've completed the first module and realized that you need extra flexibility to build or debug your model, then this module is for you. We'll show how you can create a simple neural network for image classification, but this time we'll use lower-level TensorFlow code and explain the foundational concepts needed to understand it. 
 abstract: |
