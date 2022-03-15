@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service.exercise-create-resource-group
-title: Enter exercise title
+title: "Exercise: create a resource group"
 metadata:
   unitType: exercise
   title: exercise
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Create an Azure resource group for your resources."
   ms.date: 2/4/2022
   author: diberry
   ms.author: diberry
