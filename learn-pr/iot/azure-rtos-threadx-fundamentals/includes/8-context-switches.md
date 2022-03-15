@@ -2,7 +2,7 @@
 
 A context is the current execution state of a thread. Typically, it consists of such items as the registers, program counter (PC), and stack pointer (SP).
 
-:::image type="content" source="../media/thread-context-example-sm.svg" alt-text="Figure showing a thread context example.":::
+:::image type="content" source="../media/thread-context-example-sm.svg" alt-text="Image showing a thread context example.":::
 
 The term *context switch* refers to the saving of one thread's context and restoring a different thread's context so that it can be executed. This action normally occurs as a result of preemption, interrupt handling, time-slicing, cooperative round-robin scheduling, or suspension of a thread because it needs an unavailable resource.
 

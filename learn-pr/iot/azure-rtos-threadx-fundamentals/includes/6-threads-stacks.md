@@ -18,7 +18,7 @@ If a thread isn't ready for execution, it's placed in the suspended state. Follo
 - a thread is waiting for a resource
 - a thread is in `sleep` mode
 - a thread was created with a `TX_DONT_START` option
-- a thread was explicitly suspended.
+- a thread was explicitly suspended
 
 A thread will remain in a suspended state until that situation has cleared.
 
@@ -26,7 +26,7 @@ A thread will remain in a suspended state until that situation has cleared.
 
 A thread shares the same memory space, but each thread must have its own stack. Threads are the essential building blocks because they contain most of the application programming logic. There's no explicit limit on how many threads can be created, and each thread can have a different stack size. When threads are executed, they're processed independently of each other. In cases where there's only one processor, we say that threads are executed in pseudo-parallel.
 
-:::image type="content" source="../media/thread-stack-example-sm.svg" alt-text="Figure that illustrates a thread stack.":::
+:::image type="content" source="../media/thread-stack-example-sm.svg" alt-text="Image that illustrates a thread stack.":::
 
 ### Thread attributes
 
