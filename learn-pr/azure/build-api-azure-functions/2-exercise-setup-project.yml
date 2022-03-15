@@ -9,6 +9,8 @@ metadata:
   ms.author: buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: buhollan-12142020
 # If you don't the sandbox, remove these two lines...
 interactive: bash
 azureSandbox: true

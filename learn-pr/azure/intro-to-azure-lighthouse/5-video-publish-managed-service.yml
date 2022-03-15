@@ -8,8 +8,9 @@ metadata:
   ms.author: socuff
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: socuff-04232021
 title: Publish a managed service offer on the Azure Marketplace
 durationInMinutes: 12
 content: |
   [!include[](includes/5-video-publish-managed-service.md)]
-
