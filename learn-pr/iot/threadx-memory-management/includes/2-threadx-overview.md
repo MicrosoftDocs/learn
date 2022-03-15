@@ -27,7 +27,7 @@ This table contains a summary of these system data types:
 |-------------|-----|
 |`TX_BLOCK_POOL` | Memory block pool|
 |`TX_BYTE_POOL` | Memory byte pool|
-|`TX_EVENT_FLAGS_GROUP` | Event Flags Group|
+|`TX_EVENT_FLAGS_GROUP` | Event flags group|
 |`TX_MUTEX` | Mutex|
 |`TX_QUEUE` | Message queue|
 |`TX_SEMAPHORE` | Counting semaphore|
