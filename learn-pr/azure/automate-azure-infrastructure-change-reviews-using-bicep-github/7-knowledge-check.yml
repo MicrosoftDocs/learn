@@ -11,24 +11,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: You're creating a workflow that should be involved whenever a pull request is opened or updated. Which of the following triggers should you use?
     choices:
     - content: ""
       isCorrect: true
@@ -39,7 +25,7 @@ quiz:
     - content: ""
       isCorrect: false
       explanation: ""
-  - content: ""
+  - content: Which of the following is a benefit of using ephemeral environments within your pull request review process?
     choices:
     - content: ""
       isCorrect: true
@@ -50,29 +36,7 @@ quiz:
     - content: ""
       isCorrect: false
       explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+  - content: "TODO"
     choices:
     - content: ""
       isCorrect: true
