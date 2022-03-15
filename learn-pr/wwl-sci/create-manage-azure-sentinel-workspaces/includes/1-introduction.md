@@ -8,7 +8,7 @@ After completing this module, you will be able to:
 
 - Describe Microsoft Sentinel workspace architecture
 - Install Microsoft Sentinel workspace
-- Manage an Microsoft Sentinel workspace
+- Manage a Microsoft Sentinel workspace
 
 ## Prerequisites
 

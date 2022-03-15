@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-azure-sentinel-workspaces.plan-for-workspace
-title: Plan for the Azure Sentinel workspace
+title: Plan for the Microsoft Sentinel workspace
 metadata:
-  title: Plan for the Azure Sentinel workspace
-  description: "Plan for the Azure Sentinel workspace"
-  ms.date: 12/02/2021
+  title: Plan for the Microsoft Sentinel workspace
+  description: "Plan for the Microsoft Sentinel workspace"
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 6
 content: |

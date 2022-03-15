@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-azure-sentinel-workspaces.understand-permissions-roles
-title: Understand Azure Sentinel permissions and roles
+title: Understand Microsoft Sentinel permissions and roles
 metadata:
-  title: Understand Azure Sentinel permissions and roles
-  description: "Understand Azure Sentinel permissions and roles"
-  ms.date: 12/02/2021
+  title: Understand Microsoft Sentinel permissions and roles
+  description: "Understand Microsoft Sentinel permissions and roles"
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
