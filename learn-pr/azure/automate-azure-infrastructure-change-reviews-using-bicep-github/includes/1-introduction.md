@@ -1,62 +1,38 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+When you work on Bicep templates, the main branch of your repository becomes the source of truth. The main branch incorporates the latest changes from all collaborators. It's important that the changes that are merged into the main branch are reviewed and tested. In this module, you'll learn how to protect your main branch by using automated pull request validation.
 
-    Goal: orient the learner to the area covered in this module
+You'll also learn how you can create ephemeral environments for collaborators and reviewers where they can test changes before they are approved and merged into the main branch.
 
-    Heading: none
-
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
-
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
-
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
 ## Example scenario
-TODO: add your scenario
-TODO: add a visual element
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
+Suppose you're the Azure administrator at a toy company. You've been working with your website team to create a Bicep template that deploys and configures the Azure resources, and you've recently also been creating a GitHub Actions workflow to deploy the Bicep file automatically to multiple environments.
 
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
+Your website team is growing, and it's getting more difficult to keep control of all of the changes that everyone is making. You already set up pull requests so changes can be reviewed before they are merged in the main branch of your project. However manually reviewing all changes is becoming cumbersome for your team. You want to give them a more automated review process.
 
-    Heading: "## What will we be doing?"
+You decide to run additional checks before changes are merged to the main branch of your repository. You also need to find a way for your team members to try out their in-progress changes in a separate environment, without affecting the main repository branch and without being deployed to your environments.
 
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
+You also don't want any changes to be deployed to production before they've been through your review and test process.
 
- -->
-## What will we be doing?
-TODO: add your activities
+## What will you be doing?
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
+In this module, you'll learn how you can run automatic checks and tests for each pull request to build confidence in the changes that were made. You'll also create an ephemeral environment for each pull request which can be used to review each change. 
 
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+After completing this module, you'll know how to run automatic validation for each pull request.
+
+## Prerequisites
+
+You should have:
+
+- Familiarity with basic Bicep template deployments, resource group and subscription level deployments.
+- Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resources.
+- Familiarity with basic Git commands, including cloning, branching, committing files, and pushing changes to a GitHub repo.
+- Familiarity with basic GitHub Actions workflows and basic experience deploying Bicep code using GitHub Actions workflows.
+- Familiarity with basic pull requests.
+
+To follow along with the exercises in the module, you'll need:
+
+- [Visual Studio Code](https://code.visualstudio.com) installed locally.
+- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+- Azure account and subscription
+- Git
