@@ -39,17 +39,14 @@ quiz:
         - content: "When you need to create a new resource for the same project."
           isCorrect: false
           explanation: "Keep all resources for a project in the same resource group."
-    - content: "When do you select Linux as the runtime for the hosting environment in App Service?"
+    - content: "Is the operating system assigned from the App plan or the App Service?"
       choices:
-        - content: "When the Azure App Service's plan is created. This is true whether it is created when you create the App Service or if you use an existing App plan when you create your App Service."
+        - content: "App plan"
           isCorrect: true
           explanation: "The App plan's operating system is determined with the App plan is created. The plan determines the operating system all App Service resources using the plan."
-        - content: "During resource creation."
-          isCorrect: true
-          explanation: "If the App plan is created at the same time as the App Service, then the operating system is set during creation of these resources."
-        - content: "After creation, as part of all configuration settings."
+        - content: "App Service"
           isCorrect: false
-          explanation: "No. configuration settings do not include the operating system."  
+          explanation: "The App service sits on top of the plan and must use the plan's operating system."
     - content: "For developers, the top 4 environments to deploy to Azure App Service include:"
       choices:
         - content: |
@@ -71,3 +68,17 @@ quiz:
             Visual Studio Code
           isCorrect: false
           explanation: "These are the Microsoft Developer tools but are not all the environments for deployment."                   
+    - content: "You can stream the logs with:"
+      choices:
+        - content: Azure portal
+          isCorrect: false
+          explanation: "You can stream logs with all 3 tools."
+        - content: Visual Studio Code
+          isCorrect: false
+          explanation: "You can stream logs with all 3 tools."
+        - content: Azure CLI
+          isCorrect: false
+          explanation: "You can stream logs with all 3 tools."     
+        - content: All of the above
+          isCorrect: true
+          explanation: "You can stream logs with all 3 tools."                  
