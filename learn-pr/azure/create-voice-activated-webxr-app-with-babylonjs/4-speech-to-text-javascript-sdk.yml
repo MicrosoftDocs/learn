@@ -10,6 +10,8 @@ metadata:
   ms.author: eur 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.contributors: apspeigh-07202021
+  ms.custom: team=cloud_advocates
 durationInMinutes: 3
 content: |
   [!include[](includes/4-speech-to-text-javascript-sdk.md)]

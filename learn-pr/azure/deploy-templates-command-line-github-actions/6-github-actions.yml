@@ -9,6 +9,8 @@ metadata:
   ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: pierrer-11122020
 durationInMinutes: 10
 content: |
   [!include[](includes/6-github-actions.md)]
