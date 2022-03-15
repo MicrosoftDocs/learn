@@ -1,3 +1,5 @@
+## Introduction
+
 To get started, let's walk through the building blocks for this project before we do the exercise in the next unit. You don't need to copy the code in this unit, everything you need is provided in the exercise.
 
 ## Building block 1
