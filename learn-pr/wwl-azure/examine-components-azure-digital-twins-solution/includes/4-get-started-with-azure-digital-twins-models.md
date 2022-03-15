@@ -51,4 +51,4 @@ Consider the following example:
  -  Azure Digital Twins model - property field: Monitor temp01 telemetry field events and capture “last received” value and “last received time” value. Store values in last\_received and last\_received\_time property fields.
  -  Query model properties: Query as needed to extract most recently reported temperature and time.
 
-:::image type="content" source="../media/m11-l02-telemetry-property-fields-twins-model-89781ba3.png" alt-text="Diagram that shows how property and telemetry fields are used within an Azure Digital Twins solution.":::
+:::image type="content" source="../media/m11-l02-telemetry-property-fields-twins-model-89781ba3.png" alt-text="Diagram that shows how property and telemetry fields are used within an Azure Digital Twins solution."  lightbox="../media/m11-l02-telemetry-property-fields-twins-model-89781ba3.png":::
