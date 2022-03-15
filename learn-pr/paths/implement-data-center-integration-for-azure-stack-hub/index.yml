@@ -3,7 +3,7 @@ uid: learn.wwl.implement-data-center-integration-for-azure-stack-hub
 metadata:
   title: Implement Data Center Integration for Azure Stack Hub
   description: Implement Data Center Integration for Azure Stack Hub
-  ms.date: 12/07/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   This learning path helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/implement-data-center-integration-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:
