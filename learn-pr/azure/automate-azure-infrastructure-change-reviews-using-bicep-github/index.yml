@@ -4,33 +4,41 @@ metadata:
   moduleType: standard
   title: Automate Azure infrastructure change reviews by using Bicep and GitHub
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: 3/16/2022
-  author: johndowns
-  ms.author: jodowns
+  ms.date: 03/15/2022
+  author: vermegi
+  ms.author: givermei
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 title: Automate Azure infrastructure change reviews by using Bicep and GitHub
-summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: |
+  TODO
 abstract: |
-  By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+  After completing this module, you'll be able to:
+    - Run automatic checks during a pull request
+    - Create ephemeral environments within pull requests
 prerequisites: |
   - "TODO prerequisite 1"
   - "TODO prerequisite 2"
   - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
-iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+iconUrl: /learn/achievements/bicep/automate-azure-infrastructure-change-reviews-using-bicep-github.svg
+levels:
+  - advanced
+roles:
+  - devops-engineer
   - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-- azure
+  - administrator
+languages:
+  - bicep
+products:
+  - azure-resource-manager
+  - github
 units:
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.introduction
-- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.learning-content
-- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.exercise
+- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.understand-pull-request-validation
+- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.exercise-set-up-environment
+- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.exercise-create-workflow-pull-request
+- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.understand-ephemeral-environments
+- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.exercise-create-ephemeral-environments-pull-requests
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.knowledge-check
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.summary
 badge:
