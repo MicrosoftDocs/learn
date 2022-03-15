@@ -39,3 +39,14 @@ quiz:
         - content: "When you need to create a new resource for the same project."
           isCorrect: false
           explanation: "Keep all resources for a project in the same resource group."
+    - content: "Select Linux"
+      choices:
+        - content: "After you create your resources."
+          isCorrect: false
+          explanation: "The resource group is required to create a resource and can be created at the same time."
+        - content: "Before or during resource creation."
+          isCorrect: true
+          explanation: "The resource group is required to create a resource and can be created at the same time."
+        - content: "When you need to create a new resource for the same project."
+          isCorrect: false
+          explanation: "Keep all resources for a project in the same resource group."          

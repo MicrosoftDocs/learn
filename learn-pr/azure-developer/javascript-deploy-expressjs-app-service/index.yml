@@ -2,24 +2,23 @@
 uid: learn.javascript-on-azure.deploy-expressjs-app-service
 metadata:
   moduleType: standard
-  title: Deploy Express.js JavaScript web app + DB to Azure
-  description: "Deploy an Express.js web app with APIs to Azure App Service. Learn to create the resource group, select the region, plan, options, and runtime for this application. Connect this app to a Mongo DB database and secure the connection string in Key Vault. Configure, collect, and view the web app’s logs."
+  title: Deploy Express.js to App Service
+  description: "Deploy an Express.js web app with APIs to Azure App Service."
   ms.date: 2/4/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
   ms.custom: team=devex
-title: Deploy Express.js + DB to Azure
-summary: "Create Azure service resources for an Express.js web app + MongoDB database. Configure, secure, and deploy the web app. Review the logs after deployment."
+title: Deploy Express.js to App Service
+summary: "Create Azure service resources for an Express.js web app. Configure, secure, and deploy the web app. Review the logs after deployment."
 abstract: |
   By the end of this module, you'll be able to:
     - "Identify the correct options for deploying an Node.js application to Azure"
     - "Deploy an Express.js Web Application to Azure"
-    - "Create and connect Cosmos DB for MongoDB API to web app"
     - "Understand how to access logs and debug Azure App Service "
 prerequisites: |
-  - "JavaScript full-stack web development experience"
+  - "JavaScript Express.js web development experience"
   - "Familiarity with deployment concepts"
   - "Familiarity with cloud security concepts"
 iconUrl: /learn/achievements/generic-badge.svg
