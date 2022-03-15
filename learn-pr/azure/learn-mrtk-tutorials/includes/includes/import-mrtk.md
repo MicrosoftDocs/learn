@@ -108,35 +108,36 @@
     :::image type="content" source="../../media/021-depth-submission-mode.png" alt-text="Screenshot of Depth 16 Bit selected for Depth Submission Mode.":::
 
     > [!TIP]
-    > Reducing the Depth Format to 16-bit is optional, but it may improve graphics performance in your project. To learn more about this topic, refer to  [Depth buffer sharing (HoloLens)](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering).
+    > Reducing the Depth Format to 16-bit is optional, but it may improve graphics performance in your project. To learn more, see [Depth buffer sharing (HoloLens)](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering).
+
+    Note that the **Render Mode** setting, located just above **Depth Submission Mode**, is set by default to **Single Pass Instanced**. This optimizes the Unity rendering pipeline for mixed reality apps. To learn more, [see the Unity documentaiton](https://docs.unity3d.com/Manual/SinglePassInstancing.html).
 
 1. Close the **Project Settings** window.
-1.  In the **MRTK Project Configurator** window, select **Apply Settings**.
+1. In the **MRTK Project Configurator** window, select **Apply Settings**.
 
     :::image type="content" source="../../media/022-configurator-apply-settings.png" alt-text="Screenshot of MRTK Project Configurator with the Apply Settings button.":::
 
 1.  Select **Next** and then **Apply**. 
 1. Unity must restart in order for the configuration to take effect. When prompted, select **Apply** to restart the Unity editor.
 
-
-
-
-**Done** to complete the configuration for OpenXR.
-
 ## Configure project settings for OpenXR
 
+1. In the menu bar, select **Edit** > **Project Settings...**.
 
-1. In the Unity menu, select **Edit** > **Project Settings...** to open **Project Settings**.
+1. In the **Project Settings** window's left-side column, select **Player**.
+1. Note that in the **Player** window, the **Product Name** is "MRTK Tutorial." This is taken from your project name and will be the name displayed in the HoloLens Start menu.
 
-1. In **Project Settings**, select **Player** > **Publishing Settings**, and then in the **Package name** field, enter a suitable name; for example, _MRTKTutorials-GettingStarted_:
-
-    :::image type="content" source="../../media/package-name-configured.png" alt-text="Screenshot of Unity Publishing Settings with package name configured." lightbox="../../media/package-name-configured.png":::
-
-    > [!NOTE]
-    > 'Package name' is the unique identifier for the app. You should change this identifier before deploying the app to avoid overwriting previously installed apps.
+    :::image type="content" source="../../media/025-product-name.png" alt-text="Screenshot of Unity Publishing Settings with the package name box filled in.":::
 
     > [!TIP]
-    > 'Product Name' is the name displayed in the HoloLens Start menu. To make the app easier to locate during development, add an underscore in front of the name to sort it to the top of any list.
+    > To make the app easier to locate during development, add an underscore in front of the name to sort it to the top of any list.
+
+1. Click the **Publishing Settings** drop down, and then in the **Package name** field, enter a suitable name--for example, _MRTK-Tutorials-Getting-Started_:
+
+    :::image type="content" source="../../media/026-package-name.png" alt-text="Screenshot of Unity Publishing Settings with the package name box filled in.":::
+
+    > [!NOTE]
+    > The package name is the unique identifier for the app. If you want to avoid overwriting previously installed versions of the app with the same name, you should change this identifier before deploying the app.
 
 ## [Unity 2019/2020 + windows xr plugin](#tab/winxr)
 
