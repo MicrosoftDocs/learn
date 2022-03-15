@@ -11,13 +11,13 @@ In this module, you will:
 - View a summary of ThreadX services.
 - Learn about ThreadX primitive data types and service data types.
 - Learn about ThreadX memory byte pools.
-- Learn about memory allocation for thread stacks.
 - Learn about ThreadX memory block pools.
+- Learn about memory allocation for thread stacks.
 
 When you complete this module, you'll be well on your way to exploring additional ThreadX services and how to apply them in a project.
 
 ## Prerequisites
 
 - [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
-- Working knowledge of C or C++, GitHub and Visual Studio
+- Working knowledge of C or C++, GitHub, and Visual Studio
 - Previous modules in this [learning path](/learn/paths/azure-rtos-threadx/?azure-portal=true)

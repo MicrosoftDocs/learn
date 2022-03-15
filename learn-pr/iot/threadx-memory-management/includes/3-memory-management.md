@@ -1,10 +1,12 @@
+## Introduction
+
 You can choose from two memory management techniques in ThreadX: memory byte pools and memory block pools.
 
 ## Memory byte pools
 
 The first memory management technique is the memory byte pool, a continuous block of bytes, illustrated in the following image:
 
-:::image type="content" alt-text="Diagram that demonstrates a memory byte pool as one contiguous block of bytes." source="../media/memory-byte-pool.svg" loc-scope="Azure":::
+:::image type="content" alt-text="Diagram that demonstrates a memory byte pool as one contiguous block of bytes." source="../media/memory-byte-pool.png" loc-scope="Azure":::
 
 As its name implies, the memory byte pool is a contiguous collection of bytes that may be used for any of the resources. A memory byte pool is similar to a standard C heap, but there's no limit to the number of memory byte pools that can be created. Also, threads can suspend on a memory byte pool until the requested memory is available. Allocations from a memory byte pool are based on a specified number of bytes. ThreadX allocates from the byte pool in a first-fit manner: the first free memory block that satisfies the request is allocated. Excess memory from this block is converted to a new block and placed back in the free memory list, often resulting in fragmentation. ThreadX merges adjacent free memory blocks together during a subsequent allocation search for a large enough block of free memory. This process is called defragmentation and may cause non-deterministic system behavior.
 
