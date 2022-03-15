@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-digital-twins-implementation
 metadata:
   title: Explore Azure Digital Twins implementation
   description: "This module provides you with experience configuring and managing an Azure Digital Twins solution, querying the Azure Digital Twins graph, and implementing support for upstream and downstream services."
-  ms.date: 11/25/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ prerequisites: |
   - Describe the features, capabilities, and configuration requirements of Azure Digital Twins.
   - Describe the tools and processes used to perform Azure Digital Twins graph interactions and queries.
   - Describe how to use Azure Functions with Azure Digital Twins to support integration with upstream and downstream services.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/digital-twins-implementation.svg
 levels:
 - intermediate
 roles:
