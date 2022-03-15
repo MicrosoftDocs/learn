@@ -4,7 +4,7 @@ We discussed several important terms and concepts in this module, as they're rel
 
 ### Determinism
 
-An essential feature of an RTOS is determinism. We assume that for each possible state and each set of inputs, a unique set of outputs and next state of the system can be predicted. This kind of determinism isn't unique to an RTOS; it's the basis for virtually all types of computing systems.
+An essential feature of an RTOS is determinism. We may assume that for each possible state and each set of inputs, a unique set of outputs and next state of the system can be predicted. This kind of determinism isn't unique to an RTOS; it's the basis for virtually all types of computing systems.
 
 A system is deterministic if the time required to process any task is finite and predictable. We're less concerned with average response time than we are with the worst-case response time. In the latter case, we must have a guarantee on the upper time limit, which is an example of determinism.
 
