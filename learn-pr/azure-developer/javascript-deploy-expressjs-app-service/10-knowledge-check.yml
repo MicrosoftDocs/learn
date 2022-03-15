@@ -39,14 +39,6 @@ quiz:
         - content: "When you need to create a new resource for the same project."
           isCorrect: false
           explanation: "Keep all resources for a project in the same resource group."
-    - content: "Is the operating system assigned from the App plan or the App Service?"
-      choices:
-        - content: "App plan"
-          isCorrect: true
-          explanation: "The App plan's operating system is determined with the App plan is created. The plan determines the operating system all App Service resources using the plan."
-        - content: "App Service"
-          isCorrect: false
-          explanation: "The App service sits on top of the plan and must use the plan's operating system."
     - content: "For developers, the top 4 environments to deploy to Azure App Service include:"
       choices:
         - content: |
