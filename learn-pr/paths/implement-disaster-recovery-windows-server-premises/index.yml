@@ -3,7 +3,7 @@ uid: learn.wwl.implement-disaster-recovery-windows-server-premises
 metadata:
   title: Implement disaster recovery in Windows Server on-premises and hybrid environments
   description: Implement disaster recovery in Windows Server on-premises and hybrid environments
-  ms.date: 12/03/2021
+  ms.date: 03/14/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ prerequisites: |
   - Familiarity with high availability and autoscaling concepts
 summary: |
   Learn how to use Hyper-V Replica to provide an affordable BCDR solution for a virtual environment. Learn also how to implement Azure Site Recovery for in on-premises scenarios and to protect your Azure infrastructure.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/implement-disaster-recovery-windows-server-premises.svg
 levels:
 - intermediate
 roles:
