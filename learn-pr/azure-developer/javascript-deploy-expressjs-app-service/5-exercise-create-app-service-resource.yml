@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.javascript-on-azure.deploy-expressjs-app-service.create-resource-group
-title: Create resource group 
+uid: learn.javascript-on-azure.deploy-expressjs-app-service.exercise-create-app-service-resource
+title: "Exercise: Create App Service resource for Express.js"
 metadata:
   unitType: learning-content
-  title: Create resource group
-  description: "Create your resource group to hold your web-app's Azure resources."
+  title: "Exercise: Create App Service resource for Express.js"
+  description: "Create your App Service resource to host your web-app."
   ms.date: 2/4/2022
   author: diberry
   ms.author: diberry

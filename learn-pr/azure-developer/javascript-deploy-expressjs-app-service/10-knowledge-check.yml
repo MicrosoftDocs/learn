@@ -39,14 +39,35 @@ quiz:
         - content: "When you need to create a new resource for the same project."
           isCorrect: false
           explanation: "Keep all resources for a project in the same resource group."
-    - content: "Select Linux"
+    - content: "When do you select Linux as the runtime for the hosting environment in App Service?"
       choices:
-        - content: "After you create your resources."
-          isCorrect: false
-          explanation: "The resource group is required to create a resource and can be created at the same time."
-        - content: "Before or during resource creation."
+        - content: "When the Azure App Service's plan is created. This is true whether it is created when you create the App Service or if you use an existing App plan when you create your App Service."
           isCorrect: true
-          explanation: "The resource group is required to create a resource and can be created at the same time."
-        - content: "When you need to create a new resource for the same project."
+          explanation: "The App plan's operating system is determined with the App plan is created. The plan determines the operating system all App Service resources using the plan."
+        - content: "During resource creation."
+          isCorrect: true
+          explanation: "If the App plan is created at the same time as the App Service, then the operating system is set during creation of these resources."
+        - content: "After creation, as part of all configuration settings."
           isCorrect: false
-          explanation: "Keep all resources for a project in the same resource group."          
+          explanation: "No. configuration settings do not include the operating system."  
+    - content: "For developers, the top 4 environments to deploy to Azure App Service include:"
+      choices:
+        - content: |
+            CICD - such as GitHub Actions or Azure Pipelines
+            Developer IDE - Visual Studio Code using the App Service extension
+            CLI - Azure CLI
+            Browser - Azure portal
+          isCorrect: true
+          explanation: "These are the 4 different environments but not all of the deployment choices."
+        - content: |
+            FTP
+            SSH
+            ZIP
+            CURL
+          isCorrect: false
+          explanation: "This are all valid tools but not environments."
+        - content: |
+            Visual Studio
+            Visual Studio Code
+          isCorrect: false
+          explanation: "These are the Microsoft Developer tools but are not all the environments for deployment."                   
