@@ -17,6 +17,7 @@ An RTOS typically consists of a kernel (note the spelling), a file system, graph
 :::image type="content" alt-text="Example of an RTOS." source="../media/rtos-example.png" border="false" loc-scope="Azure":::
 
 At the heart of the kernel is the scheduler, which schedules threads. The scheduler also manages resources, such as:
+
 - application timers
 - message queues
 - event flags groups
@@ -40,4 +41,3 @@ While it's true that an RTOS incurs a certain cost, the benefits generally outwe
 ## Prerequisites
 
 None
-
