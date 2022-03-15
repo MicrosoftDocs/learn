@@ -8,7 +8,8 @@ metadata:
   ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: e2e-hybrid
+  ms.custom: e2e-hybrid, team=cloud_advocates
+  ms.contributors: orthomas-03112021
 title: Introduction to Azure hybrid cloud services
 summary: Get an introductory overview of hybrid cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.
 abstract: | 

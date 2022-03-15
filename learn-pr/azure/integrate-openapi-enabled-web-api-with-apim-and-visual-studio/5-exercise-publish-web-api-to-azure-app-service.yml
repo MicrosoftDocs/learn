@@ -9,6 +9,8 @@ metadata:
   ms.author: juyoo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: juyoo-04222021
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-publish-web-api-to-azure-app-service.md)]

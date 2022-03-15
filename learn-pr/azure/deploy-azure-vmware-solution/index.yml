@@ -8,6 +8,8 @@ metadata:
   ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: shkuehn-03222021
 title: Prepare to migrate VMware workloads to Azure by deploying Azure VMware Solution
 summary: Learn how to plan an Azure VMware Solution deployment by reviewing the requirements and assessing your migration. Prepare for the VMware workload migration by deploying an Azure VMware Solution resource. Then, configure Azure ExpressRoute Global Reach to connect your on-premises VMware vSphere environment to Azure VMware Solution.
 abstract: |
