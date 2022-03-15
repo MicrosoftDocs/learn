@@ -16,7 +16,7 @@ abstract: |
   - Work with qubits and superposition to build a quantum random number generator.
   - Understand how Q# programs are structured.
 prerequisites: |
-  - [.NET Core 3.1](https://dotnet.microsoft.com/download?azure-portal=true)
+  - [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
 iconUrl: /learn/achievements/quantum/qsharp-create-first-quantum-development-kit.svg
 levels:
