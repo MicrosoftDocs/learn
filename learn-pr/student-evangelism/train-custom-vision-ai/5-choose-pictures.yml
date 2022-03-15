@@ -4,8 +4,8 @@ metadata:
   title: Choose the right images to train AI
   description: This unit describes how to choose images to use for training the Custom Vision service and discusses the ethics of AI.
   ms.date: 03/10/2021
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

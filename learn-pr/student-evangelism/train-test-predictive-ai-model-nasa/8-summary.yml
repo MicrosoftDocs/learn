@@ -4,8 +4,8 @@ metadata:
   title: Summary
   description: Summary of the lesson about how to build an AI model to predict types of space rocks in images. 
   ms.date: 05/24/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
