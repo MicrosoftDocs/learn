@@ -177,7 +177,7 @@ You can now create the tables to store the data from the .csv files.
     | Password | Specify the password that you used when you created this user. |
 
      > [!NOTE]
-    > If you get an error signing in to the database, check the IP listed in the error, and make sure it is what was added as the clinet IP. You can do this by selecting **Overview** > **Set server firewall**.
+    > If you get an error signing in to the database, check the IP listed in the error, and make sure it is what was added as the client IP. You can do this by selecting **Overview** > **Set server firewall**.
 
 1. Select **OK** to connect to the database service.
 
@@ -230,7 +230,7 @@ You can now create the tables to store the data from the .csv files.
     cd ~/educationdata
     ```
 
-1. Create the variables that you will use in the later steps. Replace `NNN` with the number that you used for your database and server.
+1. Create the variables that you'll use in the later steps. Replace `NNN` with the number that you used for your database and server.
 
     ```bash
     export DATABASE_NAME=coursedatabaseNNN
