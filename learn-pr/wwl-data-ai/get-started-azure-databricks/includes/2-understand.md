@@ -1,7 +1,7 @@
 Azure Databricks runs on top of a proprietary data processing engine called Databricks Runtime, an optimized version of Apache Spark.
 It allows up to 50x performance for Apache Spark workloads.
 
-Apache Spark is the core technology. Spark is an open-source analytics engine for large-scala data processing.
+Apache Spark is the core technology. Spark is an open-source analytics engine for large-scale data processing.
 It provides an interface for programming entire clusters with implicit data parallelism and fault tolerance.
 
 In a nutshell: Azure Databricks offers a fast, easy, and collaborative Spark based analytics service. It is used to accelerate big data analytics, artificial intelligence, performant data lakes, interactive data science, machine learning, and collaboration.

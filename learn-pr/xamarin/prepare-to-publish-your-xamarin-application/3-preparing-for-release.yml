@@ -4,11 +4,10 @@ metadata:
   title: Prepare for release
   description: "Explore the steps you take to get your app ready for release."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Preparing for release
 durationInMinutes: 2
 content: |

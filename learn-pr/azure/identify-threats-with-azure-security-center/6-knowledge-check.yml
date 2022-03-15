@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: elazark
+  ms.author: memildin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
@@ -23,7 +23,7 @@ quiz:
       - content: Monitor external cloud and non-Azure resources.
         isCorrect: true
         explanation: "Correct. The Standard tier is required to monitor non-Azure resources."
-    - content: True or False. You can collect boot-time diagnostics from VMs with Security Center.
+    - content: True or False. You can collect boot-time diagnostics from VMs with Defender for Cloud.
       choices:
       - content: "True"
         isCorrect: true

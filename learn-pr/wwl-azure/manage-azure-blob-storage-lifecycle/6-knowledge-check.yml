@@ -4,19 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/23/2021
+  ms.date: 02/22/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which access tier is considered to be offline and cannot be read or modified?"
+  - content: "Which access tier is considered to be offline and can't be read or modified?"
     choices:
     - content: "Cool"
       isCorrect: false

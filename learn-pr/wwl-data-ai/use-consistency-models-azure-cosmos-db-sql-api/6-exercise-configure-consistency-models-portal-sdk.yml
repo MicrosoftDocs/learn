@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.exercise-configure-consistency-models-portal-sdk
+title: 'Exercise: Configure consistency models in the portal and the Azure Cosmos DB SQL API SDK'
+metadata:
+  title: 'Exercise: Configure consistency models in the portal and the Azure Cosmos DB SQL API SDK'
+  description: "Exercise: Configure consistency models in the portal and the Azure Cosmos DB SQL API SDK"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107589
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-configure-consistency-models-portal-sdk.md)]

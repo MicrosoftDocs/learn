@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.create-custom-conflict-resolution-policy
+title: Create custom conflict resolution policy
+metadata:
+  title: Create custom conflict resolution policy
+  description: "Create custom conflict resolution policy"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-create-custom-conflict-resolution-policy.md)]

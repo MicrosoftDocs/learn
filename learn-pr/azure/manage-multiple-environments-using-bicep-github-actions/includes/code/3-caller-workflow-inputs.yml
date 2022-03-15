@@ -1,0 +1,17 @@
+on: 
+  workflow_dispatch:
+
+jobs:
+  job-test:
+    uses: mygithubuser/myrepo/.github/workflows/script.yml@main
+    with:
+      environmentType: Test
+    secrets:
+      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS_Test }}
+
+  job-production:
+    uses: mygithubuser/myrepo/.github/workflows/script.yml@main
+    with:
+      environmentType: Production
+    secrets:
+      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS_Production }}

@@ -4,8 +4,8 @@ metadata:
   title: Create subscriptions in Azure API Management
   description: In this unit, you will learn how subscriptions and keys secure access to APIs in API Management.
   ms.date: 07/08/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create subscriptions in Azure API Management

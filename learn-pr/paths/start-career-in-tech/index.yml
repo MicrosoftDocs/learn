@@ -2,7 +2,7 @@
 uid: learn.start-career-in-tech
 metadata:
   title: Start in tech as an intern
-  description: A great way to start in tech by landing a position as an intern. But how do you that? To get there, you need to consider things like, crafting a resume and passing an intern interview. Once an intern, you want to make sure that position turns into a full-time position in tech.
+  description: A great way to start in tech by landing a position as an intern. But how do you that? To get there, you need to consider things like, crafting a resume and passing an intern interview. Once an intern, you want to make sure that position turns into a full-time position in tech and a career in tech.
   ms.date: 08/24/2021
   author: softchris
   ms.author: chnoring
@@ -30,6 +30,9 @@ products:
 - azure
 - vs
 - vs-code
+video:
+  title: "Start in tech as an intern"
+  url: https://www.microsoft.com/videoplayer/embed/RWNriB
 modules:
 - learn.career-get-noticed
 - learn.career-interview

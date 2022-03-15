@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-monitor-status-dashboards.explore-azure-dashboards
+title: Explore Azure Dashboards
+metadata:
+  title: Explore Azure Dashboards
+  description: "Explore Azure Dashboards"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-explore-azure-dashboards.md)]

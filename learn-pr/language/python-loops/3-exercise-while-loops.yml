@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-loops.exercise-while-loops
+title: Exercise - Create a 'while' loop
+metadata:
+  title: "Exercise - Create a 'while' loop"
+  description: "In this exercise, you'll create a `while` loop to accept user input."
+  ms.date: 12/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 1
+sandbox: true
+notebook: notebooks/3-exercise-while-loops.ipynb

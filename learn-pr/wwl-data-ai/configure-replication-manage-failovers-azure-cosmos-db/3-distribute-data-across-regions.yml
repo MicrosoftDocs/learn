@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.distribute-data-across-regions
+title: Distribute data across regions
+metadata:
+  title: Distribute data across regions
+  description: "Distribute data across regions"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-distribute-data-across-regions.md)]

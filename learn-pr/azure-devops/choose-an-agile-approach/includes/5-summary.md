@@ -12,7 +12,6 @@ If you're interested in learning more about the benefits of Agile, check out [Wh
 
 In this module, you followed the Basic process. You'll continue using this process in upcoming modules. For your own projects, learn how to [choose a process](/azure/devops/boards/work-items/guidance/choose-process?azure-portal=true) that best fits your team. You can also learn more about each process Azure Boards supports.
 
-* [Basic process](/azure/devops/boards/get-started/track-issues-tasks?azure-portal=true)
 * [Agile process](/azure/devops/boards/work-items/guidance/agile-process?azure-portal=true)
 * [Scrum process](/azure/devops/boards/work-items/guidance/scrum-process?azure-portal=true)
 * [CMMI process](/azure/devops/boards/work-items/guidance/cmmi-process?azure-portal=true)

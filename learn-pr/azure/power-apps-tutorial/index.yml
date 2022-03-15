@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.azure.power-apps-tutorial
+metadata:
+  title: Build a 3D mobile app with Power Apps in mixed reality
+  description: Learn about all the foundational elements required to build a mixed reality application using Power Apps.
+  ms.date: 01/01/2022
+  author: "Sean-Kerawala"
+  ms.author: "vinnietieto"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a 3D mobile app with Power Apps in mixed reality
+summary: Learn about the foundational elements required to build a mixed reality application in the Power Apps low-code rapid development environment. Build a sales-oriented 3D mobile mixed reality application using Power Apps in mixed reality.
+abstract: |
+  By the end of this module you'll be able to:
+  - Understand Power Apps in Mixed Reality and its use cases.
+  - Learn about some of the mixed reality components included in Power Apps such as Measure in MR and View in MR
+  - Configure, set up, and build a "Sales" oriented mixed reality application with Power Apps.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- windows
+- windows-mixed-reality
+- power-apps
+prerequisites: |
+  - Microsoft organization credentials.
+  - Power Apps account.
+  - Mixed reality-supported iOS mobile device (iOS 13 or later) or Android mobile device (Android 7 or later).
+  - A Windows 8.1 or later PC.
+  - A supported browser to run [canvas apps](/powerapps/maker/canvas-apps/limits-and-config).
+  - Familiarity with OneDrive, SharePoint, and Excel.
+  - Power Apps application installed in a mobile device.
+  
+units: 
+- learn.azure.power-apps-tutorial.1-introduction
+- learn.azure.power-apps-tutorial.2-add-data-source-gallery-controls
+- learn.azure.power-apps-tutorial.3-exercise-add-data-source-gallery-controls
+- learn.azure.power-apps-tutorial.4-view-mr-3d
+- learn.azure.power-apps-tutorial.5-exercise-view-mr-3d
+- learn.azure.power-apps-tutorial.6-measure-mr-filter
+- learn.azure.power-apps-tutorial.7-exercise-measure-mr-filter
+- learn.azure.power-apps-tutorial.8-exercise-design-additional-pages
+- learn.azure.power-apps-tutorial.9-knowledge-check
+- learn.azure.power-apps-tutorial.10-summary
+
+badge:
+  uid: learn.azure.power-apps-tutorial.badge

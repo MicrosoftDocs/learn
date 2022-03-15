@@ -5,10 +5,11 @@ metadata:
   title: Create your first Python application
   description: Create your first Python application
   ms.date: 07/06/2021
-  author: bobtabor-msft
-  ms.author: chnoring
+  author: rjmolyneaux
+  ms.author: rmolyneaux
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
   zone_pivot_groups: os
 durationInMinutes: 5
 content: |

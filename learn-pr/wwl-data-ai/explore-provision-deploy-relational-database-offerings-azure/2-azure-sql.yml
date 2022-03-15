@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-azure-sql
+title: Describe Azure SQL services and capabilities
+metadata:
+  title: Describe Azure SQL services and capabilities
+  description: "Describe Azure SQL services and capabilities"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-azure-sql.md)]

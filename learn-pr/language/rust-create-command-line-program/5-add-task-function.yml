@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Write a function that adds tasks
 durationInMinutes: 5
 content: |

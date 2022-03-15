@@ -10,7 +10,7 @@ You can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell
 
 1. In *Search services and marketplace* search box, search for and select *Windows Server*, and press <kbd>Enter</kbd>. The **Windows Server** pane appears.
 
-1. There are several Windows Server options to choose from to create your VM. In the **Plan** dropdown list, scroll down, and select **[smalldisk] Windows Server 2019 Datacenter**.
+1. There are several Windows Server options to choose from to create your VM. In the **Plan** dropdown list, scroll down, and select **[smalldisk] Windows Server 2019 Datacenter - Gen 2**.
 
 1. Select **Create**. The **Create a virtual machine** pane appears.
 
@@ -39,6 +39,7 @@ Azure presents a *wizard* as a series of tabs to walk you through all the config
     | Virtual machine name | Enter a name for your VM, such as **test-vp-vm2** (for Test Video Processor VM #2). |
     | Region | Select a region close to you from the global regions listed in the following table. |
     | Availability options | Accept default **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together to deal with planned or unplanned maintenance events or outages. |
+    | Security type | Standard |
     | Image | Select **[smalldisk] Windows Server 2019 Datacenter - Gen1** from the dropdown list. |
     | Azure Spot instance| Accept default (unchecked). |
     | Size | The **Size** field is not directly editable. Select or accept the default **Standard DS1 v2**, which will give the VM 1 CPU and 3.5 GB of memory. Optionally, select the field to view recommended or recently chosen sizes; select **See all sizes** to explore filters for sizes based on vCPUs, RAM, Data disks, operations per second, and cost. Select the X in the top right of the pane to close the pane.  |

@@ -1,4 +1,6 @@
-As we mentioned in the ["Before We Start"](https://docs.microsoft.com/learn/modules/aks-secrets-configure-app/1-introduction) exercise, we'll assume an AKS cluster has already been created. So, you'll create the needed resources to support the application's backend.
+<!--
+
+As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-app/1-introduction) exercise, we'll assume an AKS cluster has already been created. So, you'll create the needed resources to support the application's backend.
 
 ## Activate the Azure sandbox
 
@@ -9,9 +11,11 @@ As we mentioned in the ["Before We Start"](https://docs.microsoft.com/learn/modu
 
 1. When the sandbox is activated, sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
+-->
+
 ## Before we start
 
-We'll assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure no other clusters or resources are already created:
+Let's assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure no other clusters or resources are already created:
 
 ```azurecli-interactive
 export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
@@ -222,6 +226,10 @@ Let's create the application and apply the secret to this application.
 
 1. Save and close the file.
 
-1. Apply the changes by running `kubectl apply -f backend-application.yaml`.
+1. Apply the changes by running the following command:
+
+    ```bash
+    kubectl apply -f backend-application.yaml`.
+    ```
 
     The changes can take up to five minutes to propagate.

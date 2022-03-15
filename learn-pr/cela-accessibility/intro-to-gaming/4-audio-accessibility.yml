@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-gaming.audio-accessibility
+title: Audio accessibility fundamentals
+metadata:
+  title: Audio accessibility fundamentals
+  description: This content is part of the Introduction to Gaming and Disability module.
+  ms.date: 11/01/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-audio-accessibility.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following options is most likely to introduce unintentional audio barriers?"
+    choices:
+    - content: "A game uses audio cues to inform players of weapon fire."
+      isCorrect: true
+      explanation: "Correct. Weapon sounds, if not accompanied by some other visual or haptic feedback, could introduce an audio barrier for players who can't hear. Weapon sounds can indicate the presence of enemies, knowledge of which might be necessary to play a game."
+    - content: "A game contains nonplayer characters whose dialogue is spoken aloud and represented as text."
+      isCorrect: false
+      explanation: "Incorrect. By representing character dialogue both audibly and visually, an unintentional audio barrier is more likely to be avoided."
+    - content: 'A game identifies chests nearby with an audio "ping" and a haptic rumble.'
+      isCorrect: false
+      explanation: "Incorrect. By representing the chests' locations with both audio and haptic feedback, an audio barrier is avoided."
+  - content: "Which of the following options would be useful in supporting a player who can't hear game audio?"
+    choices:
+    - content: "An option to enable mono audio."
+      isCorrect: false
+      explanation: "Incorrect. Mono audio can be helpful for individuals with hearing loss on one side, but still requires the user to be able to perceive some level of sound."
+    - content: "Menu narration."
+      isCorrect: false
+      explanation: "Incorrect. Menu narration is helpful for players without vision. It isn't an effective way of providing information for players without hearing."
+    - content: "Captions."
+      isCorrect: true
+      explanation: "Correct. Captions provide a visual indication of important dialogue and sound for those who are unable to hear them."

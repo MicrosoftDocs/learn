@@ -1,10 +1,10 @@
 Azure Container Instance enables you to run a Docker image in Azure.
 
-In the previous exercise, you packaged and tested your web app as a local Docker image. Now, you want to use the output of that exercise, and make the web application available globally. To accomplish this, you run the image as an Azure Container Instance.
+In the previous exercise, you packaged and tested your web app as a local Docker image. Now, you want to use the output of that exercise, and make the web application available globally. To accomplish this availability, you run the image as an Azure Container Instance.
 
 In this exercise, you'll learn how to rebuild the image for the web app and upload it to Azure Container Registry. You'll use the Azure Container Instance service to run the image.
 
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+[!INCLUDE [](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create a container registry
 
@@ -23,8 +23,8 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     | Setting  | Value  |
     |---|---|
     | **Project details** |
-    | Subscription | Select your Azure subscription in which you are allowed to create and manage resources. |
-    | Resource group | Select Create a new resource group with the name **learn-deploy-container-aci-rg**. Remember the name you select; you will be using it in the rest of the exercises in this module. Also, remember to clean up this resource when you're finished with the module. |
+    | Subscription | Select your Azure subscription in which you're allowed to create and manage resources. |
+    | Resource group | Select Create a new resource group with the name **learn-deploy-container-aci-rg**. Remember the name you select; you'll be using it in the rest of the exercises in this module. Also, remember to clean up this resource when you're finished with the module. |
     | **Instance details** |
     | Registry name | Select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. |
     | Location | Select a location that is close to you. |
@@ -52,39 +52,42 @@ In this exercise, you'll learn how to rebuild the image for the web app and uplo
     ```bash
     docker tag reservationsystem:latest <registry-name>.azurecr.io/reservationsystem:latest
     ```
-
-2. Run the `docker image ls` command to verify that the image has been tagged correctly.
+ 
+1. Run the `docker image ls` command to verify that the image has been tagged correctly.
 
     ```bash
     docker image ls
     ```
 
-    The output should look similar to the following:
+    You should see something similar to the following output:
 
     ```console
     REPOSITORY                                    TAG                 IMAGE ID            CREATED             SIZE
     reservationsystem                             latest              a56281e7038f        4 minutes ago       1.76GB
     <registry-name>.azurecr.io/reservationsystem  latest              a56281e7038f        4 minutes ago       1.76GB
-    microsoft/dotnet                              2.1-sdk             ff665cc04279        14 hours ago        1.73GB
     ```
 
-3. In the command prompt, sign in to your Azure Container Registry. Use the `docker login` command and specify the login server for the registry that you noted earlier. Enter the username and password from your access keys when prompted.
+1. In the command prompt, sign in to your Azure Container Registry. Use the `docker login` command and specify the login server for the registry that you noted earlier. Enter the username and password from your access keys when prompted.
 
     ```bash
     docker login <login-server>
     ```
+   
+    >[!NOTE]
+    >You may receive an error response from a daemon that your application is not registered with AAD (Azure Active Directory). As noted earlier in this exercise, you've enabled **Admin user** access key to test our deployment.
 
-4. Upload the image to your registry in Azure Container Registry by using the `docker push` command.
+
+1. Enter the following command, replacing `<registry-name>` with your own registry name to upload the image to your registry in Azure Container Registry.
 
     ```bash
     docker push <registry-name>.azurecr.io/reservationsystem:latest
     ```
 
-    Wait until the upload completes. This process will take a several minutes to push all the objects of the image to your repository.
+    Wait until the upload completes. This process will take several minutes to push all the objects of the image to your repository. You're able to observe the progress as each object advances from *Waiting* to *Preparing* to *Pushing* to *Pushed*.
 
 ## Verify the contents of the registry
 
-For the rest of the exercise, you'll return to the Azure portal.
+For the remainder of the exercise, you'll return to the Azure portal.
 
 1. In the Azure portal, return to your container registry.
 
@@ -96,7 +99,7 @@ For the rest of the exercise, you'll return to the Azure portal.
 
 ## Load and run an image using Azure Container Instance
 
-1. In the Azure portal Home page, select **Create a resource**. The **Create a resource** pane appears.
+1. In the Azure portal, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the resource menu, select **Containers**, and then select **Container Instances**.
 
@@ -111,7 +114,7 @@ For the rest of the exercise, you'll return to the Azure portal.
     | Setting  | Value  |
     |---|---|
     | **Project details** |
-    | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources |
+    | Subscription | Select your default Azure subscription in which you're allowed to create and manage resources |
     | Resource group | Reuse the existing resource group **learn-deploy-container-aci-rg** |
     | **Container details** |
     | Container name | hotelsysteminstance |
@@ -123,7 +126,7 @@ For the rest of the exercise, you'll return to the Azure portal.
     | Image registry username | Enter the username for your registry |
     | Image registry password | Enter the password for your registry | 
     | OS Type | Linux |
-    | Size | Leave the default *Size* set to **1 vcpu, 1.5 Gib memory, 0 gpus** |
+    | Size | Leave the default *Size* set to **1 vcpu, 1.5 GiB memory, 0 gpus** |
 
 1. Select **Next: Networking**.
 
@@ -157,6 +160,12 @@ For the rest of the exercise, you'll return to the Azure portal.
 
     :::image type="content" source="../media/7-container-fqdn.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container properties with the FQDN highlighted.":::
 
-1. Using a web browser, navigate to the URL `http://\<*fqdn*\>/api/reservations/1`, where *\<fqdn\>*  is the fully qualified domain name of the container instance. The web app should respond with a JSON document containing the details for reservation 1, as in the previous exercise.
+1. Using a web browser, navigate to the URL `http://FQDN/api/reservations/1`, replacing  *FQDN* with the fully qualified domain name of your container instance. For example, using the visible FQDN in the screenshot above would look like:
+
+    ```output
+    http://hotel.southcentralus.azurecontainer.io/api/reservations/1
+    ```
+    
+    The web app should respond with a JSON object containing the details for reservation 1.
 
 Congratulations! You uploaded the Docker image to Azure Container Registry, and you ran the image using the Azure Container Instance service.

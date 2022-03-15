@@ -4,11 +4,10 @@ metadata:
   title: Types and properties in Xamarin.Forms XAML
   description: "Learn how to define types and properties for XAML declared objects"
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Types and properties in Xamarin.Forms XAML
 durationInMinutes: 10
 content: |

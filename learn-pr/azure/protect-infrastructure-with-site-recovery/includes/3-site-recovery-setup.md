@@ -11,7 +11,7 @@ We need to set up our environment for exercises in subsequent units. Because thi
 > [!NOTE]
 > If you want to complete the following setup, but you don't have an Azure subscription, or prefer not to use your account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-Let's assume we have two VMs configured in the organization. We'll configure the following services in the West US region to simulate the configured VMs.
+Let's assume we have two VMs configured in the organization. We'll configure the following services in the East US region to simulate the configured VMs.
 
 - A virtual network
 - Two VMs
@@ -59,7 +59,7 @@ Site Recovery will manage and orchestrate our DR process for Azure VMs or on-pre
 
 ### What is a Recovery Services vault?
 
-A Recovery Services vault enables Site Recovery to complete disaster recovery replication. These vaults use storage accounts to store data backups, VM configuration settings, and workloads. To meet Site Recovery requirements, we provisioned a recovery services vault using the portal or the Azure CLI.
+A Recovery Services vault enables Site Recovery to complete disaster recovery replication. These vaults use storage accounts to store data backups, VM configuration settings, and workloads. To meet Site Recovery requirements, we will provision a recovery services vault using the portal or the Azure CLI.
 
 ### What are the target resources?
 

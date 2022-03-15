@@ -3,9 +3,9 @@ uid: learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analyti
 metadata:
   title: Query Azure Cosmos DB with Apache Spark for Azure Synapse Analytics
   description: "Query Azure Cosmos DB with Apache Spark for Azure Synapse Analytics"
-  ms.date: 07/27/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Query Azure Cosmos DB with Apache Spark for Azure Synapse Analytics

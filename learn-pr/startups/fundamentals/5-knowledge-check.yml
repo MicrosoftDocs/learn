@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundamentals.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Review startup fundamentals. Topics include factors that lead to success and failure, and the best approach to exploring startup ideas.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which of the following is the best use of your time when exploring an idea for a new startup?"
+    choices:
+    - content: "Create detailed wireframes or a clickable prototype, and give a product demo to potential users."
+      isCorrect: false
+      explanation: "Incorrect. It's best to validate an idea with customers before you spend a significant amount of time or money building a product."
+    - content: "Interview potential users to understand the problem you might solve for them and how important a solution is to them."
+      isCorrect: true
+      explanation: "Correct. Before investing time or money in an idea, it's best to determine whether your solution is important to customers."
+    - content: "Pitch investors so that you have the funds to be able to grow your company fast."
+      isCorrect: false
+      explanation: "Incorrect. Securing funding is important. But it's best to validate an idea with customers first, before you invest a significant amount of time in your business."
+    - content: "Create a media release to attract as much media attention to your startup as possible."
+      isCorrect: false
+      explanation: "Incorrect. Media attention can benefit your startup. But it's best to validate an idea with customers first, before you invest a significant amount of time in your business."
+
+  - content: "Which of these startup attributes is least likely to contribute to success?"
+    choices:
+    - content: "Addressing a large, growing market."
+      isCorrect: false
+      explanation: "Incorrect. Startup founders should aim to serve as large a market as possible. A startup's success depends on the number of customers it serves."
+    - content: "Taking advantage of the domain expertise of the founders."
+      isCorrect: false
+      explanation: "Incorrect. The odds of a startup succeeding are higher if the founders have unique insights into the problem space they operate in."
+    - content: "Remaining a sole founder."
+      isCorrect: true
+      explanation: "Correct. Sole founders struggle to cope with the amount of work needed to build and launch a startup. And by working alone, you miss out on the range of skill sets and perspectives that a team provides, and that contribute to success."
+    - content: "A product that's inherently shareable."
+      isCorrect: false
+      explanation: "Incorrect. Having a feature that makes it easy for users to share your product can lead to substantial growth."
+    - content: "A diverse founding team."
+      isCorrect: false
+      explanation: "Incorrect. When your founding team includes diverse members, you benefit from different approaches to problem-solving. Such a situation can lead to faster progress."
+
+  - content: "Which of these startup attributes is likely to lead to failure?"
+    choices:
+    - content: "Building a product before talking to potential customers."
+      isCorrect: false
+      explanation: "Incorrect. Investing time or money in a product before talking to customers can lead to failure, but it's not the only option."
+    - content: "Keeping the idea a secret until the product is launched."
+      isCorrect: false
+      explanation: "Incorrect. By keeping an idea secret, you risk depriving yourself of valuable feedback. You also fail to attract cofounders and collaborators. But it's not the only option."
+    - content: "Taking advice from your cousin, who's a corporate tax lawyer."
+      isCorrect: false
+      explanation: "Incorrect. Seeking advice from someone who doesn't have startup experience isn't beneficial. But it's not the only option."
+    - content: "Trying to scale the company before you have problem-solution fit."
+      isCorrect: false
+      explanation: "Incorrect. Attempting to scale based on a weak signal from a small number of users is a risky strategy. But it's not the only option."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct. Many factors can lead to failure. Examples include unnecessary secrecy and building a product before validating the idea with customers. Not seeking the right advice and scaling too early can also lead to failure."

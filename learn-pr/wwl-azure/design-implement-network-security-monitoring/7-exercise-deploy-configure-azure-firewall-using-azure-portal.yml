@@ -4,12 +4,13 @@ title: 'Exercise: Deploy and configure Azure Firewall using the Azure portal'
 metadata:
   title: 'Exercise: Deploy and configure Azure Firewall using the Azure portal'
   description: "Exercise: Deploy and configure Azure Firewall using the Azure portal"
-  ms.date: 07/16/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/7-exercise-deploy-configure-azure-firewall-using-azure-portal.md)]

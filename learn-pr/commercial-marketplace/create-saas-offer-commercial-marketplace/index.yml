@@ -28,6 +28,7 @@ roles:
 - administrator
 products:
 - azure
+- azure-marketplace
 units:
 - learn.create-saas-offer-commercial-marketplace.1-introduction
 - learn.create-saas-offer-commercial-marketplace.2-what-is-saas-offer

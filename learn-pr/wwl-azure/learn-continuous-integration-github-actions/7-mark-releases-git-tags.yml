@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.learn-continuous-integration-github-actions.mark-releases-git-tags
+title: Mark releases with Git tags
+metadata:
+  title: Mark releases with Git tags
+  description: "Mark releases with Git tags"
+  ms.date: 03/03/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-mark-releases-git-tags.md)]

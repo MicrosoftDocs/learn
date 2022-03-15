@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-arrays-operations
 metadata:
-  title: Perform operations on arrays using helper methods in C#
+  title: 'Perform operations on arrays using helper methods in C#'
   description: Use powerful helper methods to manipulate and control the content of arrays.
   ms.date: 10/14/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Perform operations on arrays using helper methods in C#

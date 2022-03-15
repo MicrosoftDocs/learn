@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-fslogix.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/14/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An organization has an Azure Virtual Desktop host pool with twenty Windows 10 Enterprise multi-session hosts. The users connect to the Azure Virtual Desktop deployment from Windows 10 computers. The administrator plans on using FSLogix Application Masking to deploy Application Masking rule sets. Where should the rule sets be copied?"
+    choices:
+    - content: "Office Container"
+      isCorrect: false
+      explanation: "That's incorrect. Office Container redirects only areas of the profile that are specific to Microsoft Office, and is a subset of Profile Container. Office Container enables and enhances the Microsoft Office experience in non-persistent environments."
+    - content: "Azure Storage account"
+      isCorrect: false
+      explanation: "That's incorrect. An Azure storage account contains all of your Azure Storage data objects: blobs, file shares, queues, tables, and disks. The storage account provides a unique namespace for your Azure Storage data that's accessible from anywhere in the world over HTTP or HTTPS."
+    - content: "C:\\Program Files\\FSLogix\\Apps\\Rules on every session host"
+      isCorrect: true
+      explanation: "That's correct. The Rules and Rule Sets are accessed from *C:\\Program Files\\FSLogix\\Apps\\Rules.*"
+  - content: "Which container solution should be used in non-persistent, virtual environments, such as Azure Virtual Desktop?"
+    choices:
+    - content: "Office Container"
+      isCorrect: false
+      explanation: "That's incorrect. Office Container redirects only areas of the profile that are specific to Microsoft Office, and is a subset of Profile Container. Office Container enables and enhances the Microsoft Office experience in non-persistent environments."
+    - content: "Profile Container"
+      isCorrect: true
+      explanation: "That's correct. Profile Container is used to redirect the full user profile. Profile Container is used in non-persistent, virtual environments, such as Virtual Desktops. Profile Container redirects the entire user profile to a remote location."
+    - content: "Kubernetes"
+      isCorrect: false
+      explanation: "That's incorrect. Kubernetes provides an easy and reliable platform to manage container-based applications and their associated networking and storage components. You can rapidly build, deliver, and scale containerized apps with Kubernetes."

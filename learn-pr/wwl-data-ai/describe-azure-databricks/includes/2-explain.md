@@ -24,7 +24,7 @@ Over 2000 global companies use the Databricks platform across big data & machine
 
 **Databricks Solution**: Big Data Analytics Platform
 
-## What does Databricks offer that is not Open-Source Spark?
+## What does Databricks offer that isn't Open-Source Spark?
 
 - Databricks Workspace - Interactive Data Science & Collaboration
 - Databricks Workflows - Production Jobs & Workflow Automation

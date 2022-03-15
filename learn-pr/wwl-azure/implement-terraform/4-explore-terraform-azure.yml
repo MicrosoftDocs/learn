@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-terraform.explore-terraform-azure
+title: Explore Terraform on Azure
+metadata:
+  title: Explore Terraform on Azure
+  description: "Explore Terraform on Azure"
+  ms.date: 02/25/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-explore-terraform-azure.md)]

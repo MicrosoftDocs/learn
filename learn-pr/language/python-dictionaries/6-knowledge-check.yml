@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-dictionaries.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check - Python dictionaries
+  description: Check your knowledge! Python dictionaries.
+  ms.date: 12/08/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 1
+content: |
+quiz:
+  questions:
+  - content: "What method allows access all key names in a Python dictionary?"
+    choices:
+    - content: "`keys`"
+      isCorrect: true
+      explanation: "Correct! `keys` provides a list of all keys in a dictionary."
+    - content: "`values`"
+      isCorrect: false
+      explanation: "Incorrect. `values` provides a list of all values in a dictionary."
+    - content: "`update`"
+      isCorrect: false
+      explanation: "Incorrect. `update` is used to modify values in a dictionary."
+  - content: "What method can you use to retrieve a value from a dictionary by using the key?"
+    choices:
+    - content: "`update`"
+      isCorrect: false
+      explanation: "Incorrect. `update` is used to modify values in a dictionary."
+    - content: "`get`"
+      isCorrect: true
+      explanation: "Correct! `get` is used to retrieve a value with the key name."
+    - content: "`values`"
+      isCorrect: false
+      explanation: "Incorrect. `values` provides a list of all values in a dictionary."
+  - content: "What method can you use to remove a key from a dictionary?"
+    choices:
+    - content: "`values`"
+      isCorrect: false
+      explanation: "Incorrect. `values` is used to retrieve all the values in a dictionary."
+    - content: "`[]`"
+      isCorrect: false
+      explanation: "Incorrect. `[]` are used to access a value by the key in a dictionary."
+    - content: "`pop`"
+      isCorrect: true
+      explanation: "Correct! `pop` is used to remove a key from a dictionary."

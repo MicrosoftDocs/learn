@@ -42,7 +42,7 @@ quiz:
       explanation: "That's correct. With Operating Expenses (OpEx), you are only responsible for the computing resources that you use."
     - content: "With Capital Expenses (CapEx), you are only responsible for the computing resources that you use."
       isCorrect: false
-      explanation: "That's incorrect. With Capital Expenses (CapEx), you are not only responsible for the computing resources that you use, but are also responsible the purchase and maintenance your computing resources."
+      explanation: "That's incorrect. With Capital Expenses (CapEx), you are responsible for the computing resources that you use AND the purchase and maintenance your computing resources."
   - content: "Which of the following options isn't a type of cloud computing?"
     choices:
     - content: "Distributed cloud"

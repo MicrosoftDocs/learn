@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-relational-data-offerings.relational-data
+title: Understand relational data
+metadata:
+  title: Understand relational data
+  description: "Understand relational data"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-relational-data.md)]

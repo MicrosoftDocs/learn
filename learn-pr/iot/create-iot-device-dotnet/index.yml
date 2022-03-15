@@ -31,7 +31,7 @@ prerequisites: |
     - Jumper wires ([example](https://www.adafruit.com/product/758))
     - Full-sized breadboard ([example](https://www.adafruit.com/product/239))
     - Raspberry Pi GPIO breakout board ([example](https://www.adafruit.com/product/2028))
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/iot/create-iot-device-dotnet.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
   - intermediate
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role

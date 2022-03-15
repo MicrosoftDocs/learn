@@ -41,7 +41,7 @@ For the Copy activity, it requires source and sink linked services to define the
 
 - Copying between a cloud data source and a data source in private network: if either source or sink linked service points to a self-hosted IR, the copy activity is executed on that self-hosted Integration Runtime.
 
-- Copying between two data sources in private network: both the source and sink Linked Service must point to the same instance of integration runtime, and that integration runtime is used to execute the copy Activity.
+- Copying between two data sources in private network: both the source and sink linked Service must point to the same instance of integration runtime, and that integration runtime is used to execute the copy Activity.
 
 ### Lookup and GetMetadata activity
 

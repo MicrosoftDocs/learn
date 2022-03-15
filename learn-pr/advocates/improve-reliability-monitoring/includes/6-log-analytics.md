@@ -149,6 +149,6 @@ requests
 This query returns a summary of the requests we received in the last half
 hour. So on a web service, it might tell us that there has been a
 `GET index.html` request to the URL
-[http://tailwindtraders.com](http://tailwindtraders.com) 2,875 times. We
+`http://tailwindtraders.com` 2,875 times. We
 are pausing our look at KQL with this query because it will nicely connect
 to the KQL queries we will use in the next unit.

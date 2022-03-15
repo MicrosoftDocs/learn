@@ -86,6 +86,6 @@ Before you begin make sure you have the following requirements in place:
 
 If you no longer need the resources you created in this exercise you can delete the resource group using the `az group delete` command below. Replace `<resource_group>` with resource group name you noted in step 1 of the "Create the web app" section above.
 
-    ```bash
-    az group delete --name <resource_group> --no-wait
-    ```
+```bash
+az group delete --name <resource_group> --no-wait
+```

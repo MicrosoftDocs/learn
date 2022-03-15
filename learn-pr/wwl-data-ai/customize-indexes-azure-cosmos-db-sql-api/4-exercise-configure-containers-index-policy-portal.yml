@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.customize-indexes-azure-cosmos-db-sql-api.exercise-configure-containers-index-policy-portal
+title: "Exercise: Configure an Azure Cosmos DB SQL API container's index policy with the portal"
+metadata:
+  title: "Exercise: Configure an Azure Cosmos DB SQL API container's index policy with the portal"
+  description: "Exercise: Configure an Azure Cosmos DB SQL API container's index policy with the portal"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107581
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-configure-containers-index-policy-portal.md)]

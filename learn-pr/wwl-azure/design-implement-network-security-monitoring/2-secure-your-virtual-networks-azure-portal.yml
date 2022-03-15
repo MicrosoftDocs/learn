@@ -4,12 +4,13 @@ title: Secure your virtual networks in the Azure portal
 metadata:
   title: Secure your virtual networks in the Azure portal
   description: "Secure your virtual networks in the Azure portal"
-  ms.date: 07/16/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/2-secure-your-virtual-networks-azure-portal.md)]
@@ -29,9 +30,9 @@ quiz:
       explanation: "Incorrect. There is no such service as Azure NaaS."
   - content: "Which tool in Azure automatically collects, analyzes, and integrates log data from your Azure resources?"
     choices:
-    - content: "Azure Security Center"
+    - content: "Microsoft Defender for Cloud"
       isCorrect: true
-      explanation: "Correct. Security Center automatically collects, analyzes, and integrates log data from your Azure resources, the network, and other connected partner solutions, such as firewall and endpoint protection solutions."
+      explanation: "Correct. Microsoft Defender for Cloud automatically collects, analyzes, and integrates log data from your Azure resources, the network, and other connected partner solutions, such as firewall and endpoint protection solutions."
     - content: "Azure Security Benchmark"
       isCorrect: false
       explanation: "Incorrect. The Azure Security Benchmark provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure. It includes a collection of high-impact security recommendations you can use to help secure the services you use in Azure."

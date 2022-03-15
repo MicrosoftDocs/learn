@@ -9,21 +9,17 @@ When your organization is created, the initial domain name, such as ‘contoso.o
 
 The primary domain is the default domain name for a new user when you create a new user. Setting a primary domain name streamlines the process for an administrator to create new users in the portal. To change the primary domain name:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a Global Administrator for the organization.
-
-2. Select **Azure Active Directory**.
-
-3. Select **Custom domain names**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Opening the user management page.](../media/add-custom-domain.png)
-
-4. Select the name of the domain that you want to be the primary domain.
-
-5. Select the **Make primary** command. Confirm your choice when prompted.
-
-   > [!div class="mx-imgBorder"]
-   > ![Make a domain name the primary.](../media/make-primary-domain.png)
+1.  Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a Global Administrator for the organization.
+2.  Select **Azure Active Directory**.
+3.  Select **Custom domain names**.
+    
+    :::image type="content" source="../media/add-custom-domain-9b5b5015.png" alt-text="Opening the user management page.":::
+    
+4.  Select the name of the domain that you want to be the primary domain.
+5.  Select the **Make primary** command. Confirm your choice when prompted.
+    
+    :::image type="content" source="../media/make-primary-domain-5189294b.png" alt-text="Make a domain name the primary.":::
+    
 
 You can change the primary domain name for your organization to be any verified custom domain that isn't federated. Changing the primary domain for your organization won't change the user name for any existing users.
 
@@ -47,9 +43,9 @@ You can delete a custom domain name from your Azure AD if your organization no l
 
 To delete a custom domain name, you must first ensure that no resources in your organization rely on the domain name. You can't delete a domain name from your organization if:
 
-- Any user has a user name, email address, or proxy address that includes the domain name.
-- Any group has an email address or proxy address that includes the domain name.
-- Any application in your Azure AD has an app ID URI that includes the domain name.
+ -  Any user has a user name, email address, or proxy address that includes the domain name.
+ -  Any group has an email address or proxy address that includes the domain name.
+ -  Any application in your Azure AD has an app ID URI that includes the domain name.
 
 You must change or delete any such resource in your Azure AD organization before you can delete the custom domain name.
 
@@ -59,18 +55,16 @@ You can **ForceDelete** a domain name in the Azure AD Admin Center or using Micr
 
 To call **ForceDelete** in the Azure portal, you must ensure that there are fewer than 1000 references to the domain name, and any references where Exchange is the provisioning service must be updated or removed in the Exchange Admin Center. This includes Exchange Mail-Enabled Security Groups and distributed lists. Also, the **ForceDelete** operation won't succeed if either of the following is true:
 
-- You purchased a domain via Microsoft 365 domain subscription services
-
-- You are a partner administering on behalf of another customer organization
+ -  You purchased a domain via Microsoft 365 domain subscription services
+ -  You are a partner administering on behalf of another customer organization
 
 The following actions are performed as part of the **ForceDelete** operation:
 
-- Renames the UPN, EmailAddress, and ProxyAddress of users with references to the custom domain name to the initial default domain name.
-- Renames the EmailAddress of groups with references to the custom domain name to the initial default domain name.
-- Renames the identifierUris of applications with references to the custom domain name to the initial default domain name.
+ -  Renames the UPN, EmailAddress, and ProxyAddress of users with references to the custom domain name to the initial default domain name.
+ -  Renames the EmailAddress of groups with references to the custom domain name to the initial default domain name.
+ -  Renames the identifierUris of applications with references to the custom domain name to the initial default domain name.
 
 An error is returned when:
 
-- The number of objects to be renamed is greater than 1000
-- One of the applications to be renamed is a multi-tenant app
-
+ -  The number of objects to be renamed is greater than 1000
+ -  One of the applications to be renamed is a multi-tenant app

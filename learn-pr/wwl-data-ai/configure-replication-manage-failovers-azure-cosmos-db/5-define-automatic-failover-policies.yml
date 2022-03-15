@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.define-automatic-failover-policies
+title: Define automatic failover policies
+metadata:
+  title: Define automatic failover policies
+  description: "Define automatic failover policies"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-define-automatic-failover-policies.md)]

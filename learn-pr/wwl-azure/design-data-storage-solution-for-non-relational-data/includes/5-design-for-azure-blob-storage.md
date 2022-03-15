@@ -1,8 +1,9 @@
 When designing [blob storage](/azure/storage/blobs/storage-blobs-overview), there are two main areas we’ll highlight. The first is determining the blob access tier. Blob storage type affects storage availability, latency, and cost. The second area is deciding if immutable storage is needed. 
 
-:::image type="content" source="../media/blob-storage-design.png" alt-text="Availability, latency, and cost vs immutable storage.":::
-
-
+| **Availability, Latency, and Cost**| **Immutable Storage** |
+| - | - |
+| Premium blob storage | Legal hold policies |
+| Hot, cool, and archive access tiers | Time-based retention policies |
 ### Determine the Azure blob access tier
 
 Optimize storage costs by placing your data in the appropriate access tier. 
@@ -13,7 +14,7 @@ Optimize storage costs by placing your data in the appropriate access tier.
 | Availability (RA-GRS reads)| N/A| 99.99%| 99.9%| Offline |
 | Usage charges| Higher storage costs, lower access, and transaction cost| Higher storage costs, lower access, and transaction costs| Lower storage costs, higher access, and transaction costs| Lowest storage costs, highest access, and transaction costs |
 | Minimum storage duration| N/A| N/A| 30 days| 180 days |
-| Latency (time to first byte)| Single-digit milliseconds| milliseconds| milliseconds| hours2 |
+| Latency (time to first byte)| Single-digit milliseconds| milliseconds| milliseconds| hours |
 
 
  
@@ -24,7 +25,7 @@ Optimize storage costs by placing your data in the appropriate access tier.
 
 - **Cool access tier**. The cool access tier is optimized for storing large amounts of data that is infrequently accessed. This tier is intended for data that will remain in the cool tier for at least 30 days. The cool access tier has lower storage costs and higher access costs compared to hot storage. A usage case for the cool access tier is short-term backup and disaster recovery datasets and older media content. This content wouldn’t be viewed frequently but must be available immediately.
 
-- **Archive access tier**. The [archive access tier](https://docs.microsoft.com/azure/storage/blobs/access-tiers-overview#archive-access-tier) is optimized for data that can tolerate several hours of retrieval latency. Data must remain in the archive tier for at least 180 days or be subject to an early deletion charge. The archive tier is the most cost-effective option for storing data. But, accessing that data is more expensive than accessing data in the other tiers. Data for the archive tier includes secondary backups, original raw data, and legally required compliance information.
+- **Archive access tier**. The [archive access tier](/azure/storage/blobs/access-tiers-overview#archive-access-tier) is optimized for data that can tolerate several hours of retrieval latency. Data must remain in the archive tier for at least 180 days or be subject to an early deletion charge. The archive tier is the most cost-effective option for storing data. But, accessing that data is more expensive than accessing data in the other tiers. Data for the archive tier includes secondary backups, original raw data, and legally required compliance information.
 
  
 

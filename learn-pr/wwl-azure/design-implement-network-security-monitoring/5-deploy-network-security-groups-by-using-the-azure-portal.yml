@@ -4,12 +4,13 @@ title: Deploy Network Security Groups by using the Azure portal
 metadata:
   title: Deploy Network Security Groups by using the Azure portal
   description: "Deploy Network Security Groups by using the Azure portal"
-  ms.date: 07/16/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 16
 content: |
   [!include[](includes/5-deploy-network-security-groups-by-using-the-azure-portal.md)]
@@ -18,23 +19,23 @@ quiz:
   questions:
   - content: "What should be the principle when designing security configurations?"
     choices:
-    - content: "deny by default, permit by exception."
+    - content: "Deny by default, permit by exception."
       isCorrect: true
       explanation: "Correct. Denying all will stop all possible access, and then you can allow as needed."
-    - content: "deny specific, permit all."
+    - content: "Deny specific, permit all."
       isCorrect: false
       explanation: "In Correct. Denying only known and allowing all access can result in unwanted/yet-to-be-discovered access to your resources."
-    - content: "permit all, monitor and deny as needed."
+    - content: "Permit all, monitor and deny as needed."
       isCorrect: false
       explanation: "Incorrect. Allowing all access can result in unwanted/yet-to-be-discovered access to your resources, and you will be at risk during discovery phase."
   - content: "Which one of these is a default network security rule in an NSG?"
     choices:
-    - content: "AllowInternetOutBound."
-      isCorrect: true
-      explanation: "Correct. Network Security Group rules allow all internet (destination) outbound traffic by default."
     - content: "AllowAllInbound."
       isCorrect: false
       explanation: "Incorrect. There is no default rule to allow all inbound traffic."
-    - content: "AllowVnetOutBound."
+    - content: "DenyVnetOutBound."
       isCorrect: false
       explanation: "Incorrect. VNet OutBound traffic is allowed (not denied) where the source and destination are Virtual Network."
+    - content: "AllowInternetOutBound."
+      isCorrect: true
+      explanation: "Correct. Network Security Group rules allow all internet (destination) outbound traffic by default."

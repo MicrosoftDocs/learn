@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api
+metadata:
+  title: Create resource template for Azure Cosmos DB SQL API
+  description: "Learn about automated Azure Cosmos DB SQL API resource deployments using the Azure Resource Manager with JSON and Bicep templates."
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create resource template for Azure Cosmos DB SQL API
+summary: Learn about automated Azure Cosmos DB SQL API resource deployments using the Azure Resource Manager with JSON and Bicep templates.
+abstract: |
+  After completing this module, you'll be able to:
+  - Identify the three most common resource types for Azure Cosmos DB SQL API accounts
+  - Create and deploy an JSON Azure Resource Manager template for an Azure Cosmos DB SQL API account, database, or container
+  - Create and deploy a Bicep template for an Azure Cosmos DB SQL API account, database, or container
+  - Manage throughput and index policies using JSON or Bicep templates
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+iconUrl: /learn/achievements/azure-cosmos-db-create-resources-template.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.introduction
+- learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.understand-azure-resource-manager-resources
+- learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.author-azure-resource-manager-templates
+- learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.configure-database-container-resources
+- learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.configure-throughput-arm-template
+- learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.manage-index-policies
+- learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.exercise-create-container-using-azure-resource-manager-templates
+- learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.knowledge-check
+- learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.summary
+badge:
+  uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-introduction-to-azure-search.exercise
+title: Exercise-Create an Azure Cognitive Search solution
+metadata:
+  title: Exercise-Create an Azure Cognitive Search solution
+  description: "Exercise-Create an Azure Cognitive Search solution"
+  ms.date: 03/09/2022
+  author: heidisteen
+  ms.author: heidist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 35
+content: |
+  [!include[](includes/6a-exercise.md)]

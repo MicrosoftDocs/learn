@@ -27,6 +27,8 @@ roles:
   - devops-engineer
   - developer
   - administrator
+languages:
+  - bicep
 products:
   - azure-resource-manager
 units:  

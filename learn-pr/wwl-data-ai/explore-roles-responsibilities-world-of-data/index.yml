@@ -1,36 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-roles-responsibilities-world-of-data
 metadata:
-  title: Explore roles and responsibilities in the world of data
-  description: "Explore roles and responsibilities in the world of data"
-  ms.date: 09/13/2021
+  title: Explore data roles and services
+  description: "Explore data roles and services"
+  ms.date: 03/11/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore roles and responsibilities in the world of data
-summary: In this module, you'll learn about the different jobs roles associated with creating, managing, and using databases. You learn about the key responsibilities of these roles, and the tools that these roles use.
+title: Explore data roles and services
+summary: Data professionals perform distinct roles in building and managing software solutions, and work with multiple technologies and services to do so.
 abstract: |
-  In this module, you will:
-  * Explore data job roles
-  * Explore common tasks and tools for data job roles
+  In this module you will learn how to:
+  - Identify common data professional roles
+  - Identify common cloud services used by data professionals
 prerequisites: |
   None
 iconUrl: /learn/achievements/explore-roles-responsibilities-world-of-data.svg
 levels:
 - beginner
 roles:
-- administrator
-- business-user
+- data-analyst
 - data-engineer
+- database-administrator
+- student
 products:
 - azure
 units:
 - learn.wwl.explore-roles-responsibilities-world-of-data.introduction
 - learn.wwl.explore-roles-responsibilities-world-of-data.explore-job-roles
-- learn.wwl.explore-roles-responsibilities-world-of-data.review-tasks-tools-for-database-administration
-- learn.wwl.explore-roles-responsibilities-world-of-data.review-tasks-tools-for-data-engineering
-- learn.wwl.explore-roles-responsibilities-world-of-data.review-tasks-tools-for-data-visualization-reporting
+- learn.wwl.explore-roles-responsibilities-world-of-data.identify-data-services
 - learn.wwl.explore-roles-responsibilities-world-of-data.knowledge-check
 - learn.wwl.explore-roles-responsibilities-world-of-data.summary
 badge:

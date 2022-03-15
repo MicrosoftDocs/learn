@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.implement-firewall-load-balancer
+metadata:
+  moduleType: standard
+  title: Implement Datacenter Firewall and Software Load Balancer on Azure Stack HCI
+  description: Microsoft Azure Stack HCI-based SDN facilitates the implementation of software-defined filtering and load balancing of network traffic.
+  ms.date: 5/6/2021
+  author: LBN-commits
+  ms.author: v-lanai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement Datacenter Firewall and Software Load Balancer on Azure Stack HCI
+summary: Microsoft Azure Stack HCI-based SDN facilitates the implementation of software-defined filtering and load balancing of network traffic.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe and implement Datacenter Firewall on Azure Stack HCI.
+  - Describe and implement Software Load Balancer on Azure Stack HCI.
+prerequisites: |
+  - A good understanding of networking technologies and their implementation on the Windows operating system platform
+  - General familiarity with software defined networking concepts
+  - General familiarity with Software Defined Networking (SDN) on Azure Stack HCI 
+  - Experience in implementing Azure Stack HCI
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - advanced
+roles:
+  - administrator
+  - security-engineer
+  - solution-architect
+  - student
+products:
+  - azure
+  - azure-stack-hci
+units:
+- learn.azure.implement-firewall-load-balancer.1-introduction
+- learn.azure.implement-firewall-load-balancer.2-describe-datacenter-firewall-azure-stack-hci
+- learn.azure.implement-firewall-load-balancer.3-implement-datacenter-firewall-azure-stack-hci
+- learn.azure.implement-firewall-load-balancer.4-describe-slb-azure-stack-hci
+- learn.azure.implement-firewall-load-balancer.5-implement-slb-azure-stack-hci
+- learn.azure.implement-firewall-load-balancer.6-knowledge-check
+- learn.azure.implement-firewall-load-balancer.7-summary
+badge:
+  uid: learn.azure.implement-firewall-load-balancer.badge

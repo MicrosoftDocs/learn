@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-route-server.5-deploy-azure-route-server
+title: Deploy Azure Route Server
+metadata:
+  unitType: learning-content
+  title: Deploy Azure Route Server
+  description: This unit provides an overview of deploying Azure Route Server.
+  ms.date: 11/23/2021
+  author: LBN-commits
+  ms.author: v-lanai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-deploy-azure-route-server.md)]

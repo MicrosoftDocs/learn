@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 title: Data collection and manipulation
 summary: Learn about the steps to import data into Python and clean the data for use in creating machine learning models.
 abstract: |

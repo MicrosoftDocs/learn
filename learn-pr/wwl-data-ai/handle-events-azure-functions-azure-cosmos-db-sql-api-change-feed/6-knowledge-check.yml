@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You're creating an Azure Function to monitor a container for new items and changes to existing items. Which type of binding should you use to start executing the function where there are changes to items?"
+    choices:
+    - content: "Input binding"
+      isCorrect: false
+      explanation: "Incorrect. An input binding will not start the execution of a function."
+    - content: "Trigger binding"
+      isCorrect: true
+      explanation: "Correct. A trigger binding will start executing a function when the change feed has a new batch of changes to process."
+    - content: "Output binding"
+      isCorrect: false
+      explanation: "Incorrect. An output binding will write new items to a container, not monitor for changes."
+  - content: "You have an output binding configured for Azure Cosmos DB SQL API named **items**. You would like to add multiple items to a container using this binding. Which function method parameter should you use to add more than one item to a container?"
+    choices:
+    - content: "``out Product items``"
+      isCorrect: false
+      explanation: "Incorrect. An out parameter with a type will only add a single item to the container."
+    - content: "``IAsyncCollector<Product> items``"
+      isCorrect: true
+      explanation: "Correct. The **IAsyncCollector** class contains the **AddAsync** method to add items to a container."
+    - content: "``out IEnumerable<Product> items``"
+      isCorrect: false
+      explanation: "Incorrect. The **IEnumerable** class does not contain the necessary methods to add items to a container."
+  - content: "When configuring an Azure Cosmos DB SQL API trigger, which of the following settings would be valid?"
+    choices:
+    - content: "Assign the **type** to `AzureCosmosDBTrigger`"
+      isCorrect: false
+      explanation: "Incorrect. The **type** will always be set to *`cosmosDBTrigger`."
+    - content: "Set the **direction** to **in**."
+      isCorrect: true
+      explanation: "Correct. For a trigger, this will be set to in."
+    - content: "Set the `leaseCollectionName` to the name of the container that will contain all the new leased documents"
+      isCorrect: false
+      explanation: "Incorrect. The name of the container used to manage change feed leases."

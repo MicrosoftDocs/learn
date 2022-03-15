@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Chunk code into functions for easy reusability and readability
 durationInMinutes: 6
 sandbox: true

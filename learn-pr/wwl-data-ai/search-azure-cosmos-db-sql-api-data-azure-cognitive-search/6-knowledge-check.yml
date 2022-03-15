@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "To enable the ability to index changes in Azure Cosmos DB SQL API items, which field should you include in the data source's SQL query?"
+    choices:
+    - content: "``partitionKey``"
+      isCorrect: false
+      explanation: "Incorrect. The partition key path may not necessarily be ``/partitionKey``. Additionally, the partition key is unrelated to the high watermark policy."
+    - content: "``id``"
+      isCorrect: false
+      explanation: "Incorrect. The id is useful for creating a unique identifier for JSON in the search index, but it's unrelated to the high watermark policy."
+    - content: "``_ts``"
+      isCorrect: true
+      explanation: "Correct. The ``_ts`` field is required to enable the high watermark policy to track changes to existing items."
+  - content: "Your Azure Cosmos DB SQL API solution regularly uses a time-to-live value to automatically delete items after a set amount of time. Which strategy should you use to ensure that the deleted items are also deleted in the search index?"
+    choices:
+    - content: "Configure a soft-delete policy with a tracked column and value"
+      isCorrect: true
+      explanation: "Correct. A soft-delete column and value is required to enable the soft-delete column deletion detection policy."
+    - content: "No configuration is required, Azure Cognitive Search will automatically remove data from the index"
+      isCorrect: false
+      explanation: "Incorrect. Azure Cognitive Search will not automatically remove JSON from an index if the corresponding item is deleted in Azure Cosmos DB."
+    - content: "Configure a high watermark policy that is mapped to the timestamp (_ts) field"
+      isCorrect: false
+      explanation: "Incorrect. The high watermark policy is related to tracking changes, not deleting items."

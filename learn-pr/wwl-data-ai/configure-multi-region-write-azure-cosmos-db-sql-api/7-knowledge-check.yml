@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You are creating an application that will be deployed to various regions across the globe while being backed by a globally distributed Azure Cosmos DB account with multi-region write enabled. For each application region, you would like the .NET client app to select a specific region for read/write operations, and then have the SDK determine fallback regions based on their proximity to your selection. Which method of the CosmosClientBuilder should you use to accomplish this task?"
+    choices:
+    - content: "``CosmosClientBuilder.WithConsistencyLevel``"
+      isCorrect: false
+      explanation: "Incorrect. The **WithConsistencyLevel** method configures the consistency level."
+    - content: "``CosmosClientBuilder.WithApplicationPreferredRegions``"
+      isCorrect: false
+      explanation: "Incorrect. The **WithApplicationPreferredRegions** method requires you to build your own fallback list of regions."
+    - content: "``CosmosClientBuilder.WithApplicationRegion``"
+      isCorrect: true
+      explanation: "Correct. The **WithApplicationRegion** method will only select a single region and then let the SDK build a fallback regions list."
+  - content: "You have a large data solution running on Azure Cosmos DB with multi-region write enabled. Your team would like to write an application to read conflicts from the conflict feed and then resolve them using manual code. What resource\\[s\\] should you create for this scenario?"
+    choices:
+    - content: "Just a Last Write Wins conflict resolution policy"
+      isCorrect: false
+      explanation: "Incorrect. This default policy automatically handles conflicts without writing to the conflicts feed."
+    - content: "Just a custom conflict resolution policy"
+      isCorrect: true
+      explanation: "Correct. If you create a custom conflict resolution policy without a stored procedure, conflicts will be written to the conflicts feed."
+    - content: "Both a custom conflict resolution policy and a stored procedure"
+      isCorrect: false
+      explanation: "Incorrect. If the stored procedure handles a conflict, then it will not be written to the conflicts feed."

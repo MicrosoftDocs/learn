@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.wwl.optimize-query-performance-azure-cosmos-db-sql-api
+metadata:
+  title: Optimize query and operation performance in Azure Cosmos DB SQL API
+  description: Optimize query and operation performance in Azure Cosmos DB SQL API
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Optimize query and operation performance in Azure Cosmos DB SQL API
+prerequisites: |
+  Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+summary: |
+  Optimize the performance of your queries and operations using Azure Cosmos DB SQL API.
+iconUrl: /learn/achievements/azure-cosmos-db-sql-api-optimize-query-performance.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+modules:
+- learn.wwl.choose-indexes-azure-cosmos-db-sql-api
+- learn.wwl.measure-index-azure-cosmos-db-sql-api
+- learn.wwl.implement-integrated-cache
+trophy:
+  uid: learn.wwl.optimize-query-performance-azure-cosmos-db-sql-api.trophy

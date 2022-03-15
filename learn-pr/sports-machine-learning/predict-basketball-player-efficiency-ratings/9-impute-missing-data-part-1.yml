@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: 'Exercise - Data manipulation part 2 - Impute missing values for columns'
 durationInMinutes: 3
 content: |

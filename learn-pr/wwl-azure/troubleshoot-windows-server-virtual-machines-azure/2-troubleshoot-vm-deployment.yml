@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-deployment
+title: Troubleshoot VM deployment
+metadata:
+  title: Troubleshoot VM deployment
+  description: "Troubleshoot VM deployment"
+  ms.date: 11/30/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-troubleshoot-vm-deployment.md)]

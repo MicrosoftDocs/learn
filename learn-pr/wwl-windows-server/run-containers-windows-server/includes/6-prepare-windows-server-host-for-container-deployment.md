@@ -137,4 +137,4 @@ The main steps in the process are:
 
 1. View management information for the container by using **WAC**.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4MzHM]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MzHM]

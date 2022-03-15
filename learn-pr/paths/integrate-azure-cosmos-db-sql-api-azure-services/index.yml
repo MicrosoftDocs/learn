@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.wwl.integrate-azure-cosmos-db-sql-api-azure-services
+metadata:
+  title: Integrate Azure Cosmos DB SQL API with Azure services
+  description: Integrate Azure Cosmos DB SQL API with Azure services
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Integrate Azure Cosmos DB SQL API with Azure services
+prerequisites: |
+  Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+summary: |
+  Integrate Azure Cosmos DB SQL API with Azure Cognitive Search, Azure Functions, and your own solutions.
+iconUrl: /learn/achievements/azure-cosmos-db-sql-api-azure-services.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+modules:
+- learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk
+- learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed
+- learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search
+trophy:
+  uid: learn.wwl.integrate-azure-cosmos-db-sql-api-azure-services.trophy

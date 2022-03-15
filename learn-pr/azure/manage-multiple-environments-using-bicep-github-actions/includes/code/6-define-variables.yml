@@ -1,0 +1,12 @@
+env:
+  MyVariable1: value1
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      MyVariable2: value2
+    steps:
+    - run: echo Hello world!
+      env:
+        MyVariable3: value3

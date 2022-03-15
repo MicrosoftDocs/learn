@@ -1,6 +1,6 @@
-resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
+resource appServiceApp 'Microsoft.Web/sites@2021-03-01' = {
   name: appServiceAppName
-  location: 'eastus'
+  location: 'westus3'
   properties: {
     serverFarmId: appServicePlan.id
     httpsOnly: true

@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Repeat code with while and for loops
 durationInMinutes: 5
 sandbox: true

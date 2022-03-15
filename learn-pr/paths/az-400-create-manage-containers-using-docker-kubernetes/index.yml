@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-400-create-manage-containers-using-docker-kubernetes
+metadata:
+  title: 'AZ-400: Create and manage containers using Docker and Kubernetes'
+  description: 'AZ-400: Create and manage containers using Docker and Kubernetes'
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-400: Create and manage containers using Docker and Kubernetes'
+prerequisites: |
+  None
+summary: |
+  This learning path describes the container implementation strategy, Docker and Docker multi-stage builds.
+iconUrl: /learn/achievements/az-400-create-and-manage-containers-using-docker-and-kubernetes.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+modules:
+- learn.wwl.design-container-build-strategy
+- learn.wwl.implement-docker-multi-stage-builds
+- learn.wwl.implement-azure-kubernetes-service-aks
+- learn.wwl.explore-kubernetes-tooling
+- learn.wwl.integrate-aks-pipelines
+trophy:
+  uid: learn.wwl.az-400-create-manage-containers-using-docker-kubernetes.trophy

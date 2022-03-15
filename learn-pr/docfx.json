@@ -59,6 +59,19 @@
                 "dest": "modules"
             },
             {
+                "src": "autonomous-systems",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "azure",
                 "files": [
                     "**/*.yml",
@@ -110,7 +123,7 @@
                 ],
                 "dest": "modules"
             },
-             {
+            {
                 "src": "cela-accessibility",
                 "files": [
                     "**/*.yml",
@@ -229,6 +242,19 @@
             },
             {
                 "src": "language",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "nvidia",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -558,6 +584,18 @@
                 "dest": "modules"
             },
             {
+                "src": "language",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "pytorch",
                 "files": [
                     "**/*.gif",
@@ -581,6 +619,18 @@
                 ],
                 "dest": "modules"
             },  
+            {
+                "src": "nvidia",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },
             {
                 "src": "tensorflow",
                 "files": [
@@ -887,6 +937,25 @@
                     "sv-se"
                 ],
                "language/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "nvidia/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",

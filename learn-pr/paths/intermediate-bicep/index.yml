@@ -1,0 +1,52 @@
+### YamlMime:LearningPath
+uid: learn.bicep-collaborate
+metadata:
+  title: Intermediate Bicep
+  description: Learn how to use Bicep and Azure features to improve the quality of your infrastructure deployments.
+  brand: azure
+  ms.date: 12/03/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Intermediate Bicep
+summary: |
+  Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code.
+  Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your
+  deployments more consistent and repeatable.
+
+  Take this learning path to deepen your understanding of Bicep. In it, you'll:
+
+  * Deploy child and extension resources.
+  * Add your Bicep code to the Git version control system to track its history and collaborate with team members.
+  * Follow proven best practices to create high-quality Bicep code.
+  * Use pull requests to review your team's Bicep code.
+  * Use the what-if command to check the effects of your Bicep files before you deploy them.
+  * Migrate JSON ARM templates to Bicep to make your existing Azure deployment templates easier to read and maintain.
+  * Use Bicep to work with resources you've previously deployed using the Azure portal or other tooling to make your deployments repeatable and consistent.
+
+  > [!TIP]
+  > Want to learn Bicep live from subject matter experts? [Learn Live with our experts every Tuesday (Pacific time) beginning March 8, 2022.](https://aka.ms/learnlive-iac-and-bicep)
+
+  [!include[](../../includes/bicep-paths.md)]
+prerequisites: |
+  This learning path assumes you have familiarity with deploying Azure resources by using Bicep.
+iconUrl: /learn/achievements/bicep/intermediate-bicep.svg
+levels:
+- intermediate
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+- azure-resource-manager
+modules:
+- learn.azure.child-extension-bicep-templates
+- learn.azure.manage-changes-bicep-code-git
+- learn.azure.structure-bicep-code-collaboration
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests
+- learn.arm-template-whatif
+- learn.azure.migrate-azure-resources-bicep
+trophy:
+  uid: learn.bicep-collaborate.trophy

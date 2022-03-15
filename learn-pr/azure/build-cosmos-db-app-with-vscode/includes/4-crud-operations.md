@@ -1,15 +1,16 @@
-Once the connection to Azure Cosmos DB has been made, the next step is to create, read, replace, and delete the documents that are stored in the database. In this unit, you will create User documents in your `WebCustomer` collection. Then, you'll retrieve them by ID, replace them, and delete them.
+Once the connection to Azure Cosmos DB has been made, the next step is to create, read, replace, and delete the documents that are stored in the database. In this unit, you'll create User documents in your `WebCustomer` collection. Then, you'll retrieve them by ID, replace them, and delete them.
 
 ## Working with documents programmatically
 
-Data is stored in JSON documents in Azure Cosmos DB. [Documents](/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal, as shown in the previous module, or programmatically, as described in this module. Azure Cosmos DB provides client-side SDKs for .NET, .NET Core, Java, Node.js, and Python, each of which supports these operations. In this module, we'll be using the .NET Core SDK to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
+Data is stored in JSON documents in Azure Cosmos DB. [Documents](/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal, as shown in the previous module, or programmatically, as described in this module. Azure Cosmos DB provides client-side SDKs for .NET, .NET Core, Java, Node.js, and Python, each of which supports these operations. In this module, we'll be using the .NET SDK to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
 
-The main operations for Azure Cosmos DB documents are part of the [DocumentClient](/dotnet/api/microsoft.azure.documents.client.documentclient?view=azure-dotnet) class:
-* [CreateDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.createdocumentasync?view=azure-dotnet)
-* [ReadDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.readdocumentasync?view=azure-dotnet)
-* [ReplaceDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.replacedocumentasync?view=azure-dotnet)
-* [UpsertDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.upsertdocumentasync?view=azure-dotnet)
-* [DeleteDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.deletedocumentasync?view=azure-dotnet)
+The main operations for Azure Cosmos DB documents are part of the [DocumentClient](/dotnet/api/microsoft.azure.documents.client.documentclient?view=azure-dotnet&preserve-view=true) class:
+
+* [CreateDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.createdocumentasync?view=azure-dotnet&preserve-view=true)
+* [ReadDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.readdocumentasync?view=azure-dotnet&preserve-view=true)
+* [ReplaceDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.replacedocumentasync?view=azure-dotnet&preserve-view=true)
+* [UpsertDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.upsertdocumentasync?view=azure-dotnet&preserve-view=true)
+* [DeleteDocumentAsync](/dotnet/api/microsoft.azure.documents.client.documentclient.deletedocumentasync?view=azure-dotnet&preserve-view=true)
 
 Upsert performs a create or replace operation depending on whether the document already exists.
 
@@ -19,7 +20,7 @@ Once you have those classes created to represent your users, you'll create new u
 
 ## Create documents
 
-1. First, create a **User** class that represents the objects to store in Azure Cosmos DB. We will also create **OrderHistory** and **ShippingPreference** classes that are used within **User**. Note that documents must have an **Id** property serialized as **id** in JSON.
+1. First, create a **User** class that represents the objects to store in Azure Cosmos DB. We'll also create **OrderHistory** and **ShippingPreference** classes that are used within **User**. Documents must have an **Id** property serialized as **id** in JSON.
 
     To create these classes, copy and paste the following **User**, **OrderHistory**, and **ShippingPreference** classes underneath the **BasicOperations** method.
 
@@ -73,7 +74,11 @@ Once you have those classes created to represent your users, you'll create new u
         public string CouponCode { get; set; }
 
     }
+    ```
 
+1. Copy and paste the **WriteToConsoleAndPromptToContinue** method under the **BasicOperations** task near the top of the **Program.cs** file.
+
+    ```csharp
     private void WriteToConsoleAndPromptToContinue(string format, params object[] args)
     {
         Console.WriteLine(format, args);
@@ -82,28 +87,28 @@ Once you have those classes created to represent your users, you'll create new u
     }
     ```
 
-1. In the integrated terminal, run the following command to run the program to ensure it runs.
+1. In the integrated terminal, run the following command to run the program to ensure it runs. For now, disregard the build warning that "The local function 'WriteToConsoleAndPromptToContinue' is declared but never used".
 
     ```bash
     dotnet run
     ```
 
-1. Copy and paste the **CreateUserDocumentIfNotExists** task under the **WriteToConsoleAndPromptToContinue** method at the end of the Program.cs file.
+1. Copy and paste the **CreateUserDocumentIfNotExists** task under the **WriteToConsoleAndPromptToContinue** method near the top of the **Program.cs** file.
 
     ```csharp
-    private async Task CreateUserDocumentIfNotExists(string databaseName, string collectionName, User user)
+    async Task CreateUserDocumentIfNotExists(string databaseName, string collectionName, User user)
     {
         try
         {
-            await this.client.ReadDocumentAsync(UriFactory.CreateDocumentUri(databaseName, collectionName, user.Id), new RequestOptions { PartitionKey = new PartitionKey(user.UserId) });
-            this.WriteToConsoleAndPromptToContinue("User {0} already exists in the database", user.Id);
+            await client.ReadDocumentAsync(UriFactory.CreateDocumentUri(databaseName, collectionName, user.Id), new RequestOptions { PartitionKey = new PartitionKey(user.UserId) });
+            WriteToConsoleAndPromptToContinue("User {0} already exists in the database", user.Id);
         }
         catch (DocumentClientException de)
         {
             if (de.StatusCode == HttpStatusCode.NotFound)
             {
-                await this.client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(databaseName, collectionName), user);
-                this.WriteToConsoleAndPromptToContinue("Created User {0}", user.Id);
+                await client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(databaseName, collectionName), user);
+                WriteToConsoleAndPromptToContinue("Created User {0}", user.Id);
             }
             else
             {
@@ -113,7 +118,7 @@ Once you have those classes created to represent your users, you'll create new u
     }
     ```
 
-1. Return to the **BasicOperations** method, and add the following to the end of that method.
+1. Return to the **BasicOperations** Task, and add the following to the end of that task.
 
     ```csharp
     User yanhe = new User
@@ -144,7 +149,7 @@ Once you have those classes created to represent your users, you'll create new u
             },
     };
 
-    await this.CreateUserDocumentIfNotExists("Users", "WebCustomers", yanhe);
+    await CreateUserDocumentIfNotExists("Users", "WebCustomers", yanhe);
 
     User nelapin = new User
     {
@@ -162,7 +167,7 @@ Once you have those classes created to represent your users, you'll create new u
                 Total = "105.89"
             }
         },
-         ShippingPreference = new ShippingPreference[]
+        ShippingPreference = new ShippingPreference[]
         {
             new ShippingPreference {
                     Priority = 1,
@@ -189,7 +194,7 @@ Once you have those classes created to represent your users, you'll create new u
         }
     };
 
-    await this.CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);
+    await CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);
     ```
 
 1. In the integrated terminal, again, run the following command to run the program.
@@ -211,21 +216,21 @@ Once you have those classes created to represent your users, you'll create new u
 
 ## Read documents
 
-1. To read documents from the database, copy in the following code, and place after the **WriteToConsoleAndPromptToContinue** method in the Program.cs file.
+1. To read documents from the database, copy the following code, and place it after the **WriteToConsoleAndPromptToContinue** method in the **Program.cs** file.
 
     ```csharp
-    private async Task ReadUserDocument(string databaseName, string collectionName, User user)
+    async Task ReadUserDocument(string databaseName, string collectionName, User user)
     {
         try
         {
-            await this.client.ReadDocumentAsync(UriFactory.CreateDocumentUri(databaseName, collectionName, user.Id), new RequestOptions { PartitionKey = new PartitionKey(user.UserId) });
-            this.WriteToConsoleAndPromptToContinue("Read user {0}", user.Id);
+            await client.ReadDocumentAsync(UriFactory.CreateDocumentUri(databaseName, collectionName, user.Id), new RequestOptions { PartitionKey = new PartitionKey(user.UserId) });
+            WriteToConsoleAndPromptToContinue("Read user {0}", user.Id);
         }
         catch (DocumentClientException de)
         {
             if (de.StatusCode == HttpStatusCode.NotFound)
             {
-                this.WriteToConsoleAndPromptToContinue("User {0} not read", user.Id);
+                WriteToConsoleAndPromptToContinue("User {0} not read", user.Id);
             }
             else
             {
@@ -235,10 +240,10 @@ Once you have those classes created to represent your users, you'll create new u
     }
     ```
 
-1. Copy and paste the following code to the end of the **BasicOperations** method, after the `await this.CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);` line.
+1. Copy and paste the following code to the end of the **BasicOperations** method, after the `await CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);` line.
 
     ```csharp
-    await this.ReadUserDocument("Users", "WebCustomers", yanhe);
+    await ReadUserDocument("Users", "WebCustomers", yanhe);
     ```
 
 1. In the integrated terminal, run the following command to run the program.
@@ -264,21 +269,21 @@ Once you have those classes created to represent your users, you'll create new u
 
 Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a user record to account for a change to their last name.
 
-1. Copy and paste the **ReplaceUserDocument** method after the **ReadUserDocument** method in the Program.cs file.
+1. Copy and paste the **ReplaceUserDocument** method after the **ReadUserDocument** method in the **Program.cs** file.
 
     ```csharp
-    private async Task ReplaceUserDocument(string databaseName, string collectionName, User updatedUser)
+    async Task ReplaceUserDocument(string databaseName, string collectionName, User updatedUser)
     {
         try
         {
-            await this.client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri(databaseName, collectionName, updatedUser.Id), updatedUser, new RequestOptions { PartitionKey = new PartitionKey(updatedUser.UserId) });
-            this.WriteToConsoleAndPromptToContinue("Replaced last name for {0}", updatedUser.LastName);
+            await client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri(databaseName, collectionName, updatedUser.Id), updatedUser, new RequestOptions { PartitionKey = new PartitionKey(updatedUser.UserId) });
+            WriteToConsoleAndPromptToContinue("Replaced last name for {0}", updatedUser.LastName);
         }
         catch (DocumentClientException de)
         {
             if (de.StatusCode == HttpStatusCode.NotFound)
             {
-                this.WriteToConsoleAndPromptToContinue("User {0} not found for replacement", updatedUser.Id);
+                WriteToConsoleAndPromptToContinue("User {0} not found for replacement", updatedUser.Id);
             }
             else
             {
@@ -288,11 +293,11 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
     }
     ```
 
-1. Copy and paste the following code to the end of the **BasicOperations** method, after the `await this.CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);` line.
+1. Copy and paste the following code to the end of the **BasicOperations** method, after the `await CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);` line.
 
     ```csharp
     yanhe.LastName = "Suh";
-    await this.ReplaceUserDocument("Users", "WebCustomers", yanhe);
+    await ReplaceUserDocument("Users", "WebCustomers", yanhe);
     ```
 
 1. In the integrated terminal, run the following command.
@@ -307,9 +312,9 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
     Database and collection validation complete
     User 1 already exists in the database
     Press any key to continue ...
-    Replaced last name for Suh
-    Press any key to continue ...
     User 2 already exists in the database
+    Press any key to continue ...
+    Replaced last name for Suh
     Press any key to continue ...
     Read user 1
     Press any key to continue ...
@@ -321,18 +326,18 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 1. Copy and paste the **DeleteUserDocument** method underneath your **ReplaceUserDocument** method.
 
     ```csharp
-    private async Task DeleteUserDocument(string databaseName, string collectionName, User deletedUser)
+    async Task DeleteUserDocument(string databaseName, string collectionName, User deletedUser)
     {
         try
         {
-            await this.client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(databaseName, collectionName, deletedUser.Id), new RequestOptions { PartitionKey = new PartitionKey(deletedUser.UserId) });
+            await client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(databaseName, collectionName, deletedUser.Id), new RequestOptions { PartitionKey = new PartitionKey(deletedUser.UserId) });
             Console.WriteLine("Deleted user {0}", deletedUser.Id);
         }
         catch (DocumentClientException de)
         {
             if (de.StatusCode == HttpStatusCode.NotFound)
             {
-                this.WriteToConsoleAndPromptToContinue("User {0} not found for deletion", deletedUser.Id);
+                WriteToConsoleAndPromptToContinue("User {0} not found for deletion", deletedUser.Id);
             }
             else
             {
@@ -345,7 +350,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 1. Copy and paste the following code in the end of the **BasicOperations** method.
 
     ```csharp
-    await this.DeleteUserDocument("Users", "WebCustomers", yanhe);
+    await DeleteUserDocument("Users", "WebCustomers", yanhe);
     ```
 
 1. In the integrated terminal, run the following command.
@@ -360,9 +365,9 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
     Database and collection validation complete
     User 1 already exists in the database
     Press any key to continue ...
-    Replaced last name for Suh
-    Press any key to continue ...
     User 2 already exists in the database
+    Press any key to continue ...
+    Replaced last name for Suh
     Press any key to continue ...
     Read user 1
     Press any key to continue ...

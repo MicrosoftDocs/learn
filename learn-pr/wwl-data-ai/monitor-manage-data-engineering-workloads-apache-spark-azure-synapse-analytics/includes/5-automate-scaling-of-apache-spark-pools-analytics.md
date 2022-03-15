@@ -40,3 +40,4 @@ The initial number of nodes will be the minimum. This value defines the initial 
 
 When considering the best practices to use for the autoscale feature, consider latency as part of the scale up or down operations. It could take 1 to 5 minutes in order for the scaling operations (whether that's scaling up or down) to complete. Also, when you scale down, the nodes will first be put in a decommissioned state such that there won't be new executors launching on the node. The jobs that are still running will continue to run and finish, but the pending jobs will be in a waiting state to be scheduled as normal but with fewer nodes. 
 
+

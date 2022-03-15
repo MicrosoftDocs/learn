@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-relational-data-offerings.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which one of the following statements is a characteristic of a relational database?"
+    choices:
+    - content: "All columns in a table must be of the same data type"
+      isCorrect: false
+      explanation: "That's incorrect. All data in a single column must be of the same data type, but different columns in the same table can have different data types."
+    - content: "A row in a table represents a single instance of an entity"
+      isCorrect: true
+      explanation: "That's correct. Each row in a table represents an instance of an entity."
+    - content: "Rows in the same table can contain different columns"
+      isCorrect: false
+      explanation: "That's incorrect. All rows in a table have the same columns."
+  - content: "Which SQL statement is used to query tables and return data?"
+    choices:
+    - content: "QUERY"
+      isCorrect: false
+      explanation: "That's incorrect. There's no QUERY statement in SQL that returns data from a table."
+    - content: "READ"
+      isCorrect: false
+      explanation: "That's incorrect. There's no READ statement in SQL that returns data from a table."
+    - content: "SELECT"
+      isCorrect: true
+      explanation: "That's correct. Use the SELECT statement to query one or more tables and return data."
+  - content: "What is an index?"
+    choices:
+    - content: "A structure that enables queries to locate rows in a table quickly"
+      isCorrect: true
+      explanation: "That's correct. Indexes improve query performance by locating rows with indexed column values."
+    - content: "A virtual table based on the results of a query"
+      isCorrect: false
+      explanation: "That's incorrect. A virtual table containing the results of a query is a view."
+    - content: "A pre-defined SQL statement that modifies data"
+      isCorrect: false
+      explanation: "That's incorrect. A pre-defined SQL statement to modify data would most likely be implemented as a stored procedure."

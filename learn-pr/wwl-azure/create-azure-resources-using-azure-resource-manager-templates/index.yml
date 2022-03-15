@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates
+metadata:
+  title: Create Azure resources using Azure Resource Manager templates
+  description: "Create Azure resources using Azure Resource Manager templates"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create Azure resources using Azure Resource Manager templates
+summary: This module explores Azure Resource Manager templates and their components and details dependencies and modularized templates with secrets.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Create Azure resources using Azure Resource Manager templates
+  - Understand Azure Resource Manager templates and template components
+  - Manage dependencies and secrets in templates
+  - Organize and modularize templates
+prerequisites: |
+  None
+iconUrl: /learn/achievements/2-create-azure-resources-using-arm-templates.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.create-azure-resources-using-azure-resource-manager-templates.introduction
+- learn.wwl.create-azure-resources-using-azure-resource-manager-templates.why-use-azure-resource-manager-templates
+- learn.wwl.create-azure-resources-using-azure-resource-manager-templates.explore-template-components
+- learn.wwl.create-azure-resources-using-azure-resource-manager-templates.manage-dependencies
+- learn.wwl.create-azure-resources-using-azure-resource-manager-templates.modularize-templates
+- learn.wwl.create-azure-resources-using-azure-resource-manager-templates.manage-secrets-templates
+- learn.wwl.create-azure-resources-using-azure-resource-manager-templates.knowledge-check
+- learn.wwl.create-azure-resources-using-azure-resource-manager-templates.summary
+badge:
+  uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.badge

@@ -3,7 +3,7 @@ uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.6-display-feedback-from-az
 title: Display feedback from Azure Spatial Anchors
 metadata:
   title: Display feedback from Azure Spatial Anchors
-  description: Description to Display feedback from Azure Spatial Anchor
+  description: Learn how developers can work with user feedback on anchor discovery, events, and status.
   ms.date: 09/09/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"

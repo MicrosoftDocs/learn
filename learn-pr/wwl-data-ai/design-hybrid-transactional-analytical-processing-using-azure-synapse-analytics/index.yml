@@ -3,9 +3,9 @@ uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-syn
 metadata:
   title: Design hybrid transactional and analytical processing using Azure Synapse Analytics
   description: "Design hybrid transactional and analytical processing using Azure Synapse Analytics"
-  ms.date: 07/28/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design hybrid transactional and analytical processing using Azure Synapse Analytics
@@ -27,6 +27,7 @@ levels:
 roles:
 - data-engineer
 products:
+- azure-cosmos-db
 - azure-synapse-analytics
 units:
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.introduction

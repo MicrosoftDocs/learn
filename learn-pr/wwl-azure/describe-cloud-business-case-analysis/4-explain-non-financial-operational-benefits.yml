@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-cloud-business-case-analysis.explain-non-financial-operational-benefits-nfos
+title: Explain non-financial operational benefits (NFOs)
+metadata:
+  title: Explain non-financial operational benefits (NFOs)
+  description: "Explain non-financial operational benefits (NFOs)"
+  ms.date: 03/10/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-explain-non-financial-operational-benefits.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.implement-business-continuity-disaster-recovery-backup
 metadata:
   title: Implement business continuity, disaster recovery, and backup for SAP HANA on Azure (Large Instances)
   description: "This module investigates business continuity, disaster recovery, and backup of SAP HANA on Azure (Large Instances). Prepare for Exam AZ-120: Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 10/25/2021
+  ms.date: 11/08/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   Before taking this training, you should complete:
   - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
   - SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/9-implement-business-continuity-disaster-recovery-and-backup.svg
 levels:
 - advanced
 roles:

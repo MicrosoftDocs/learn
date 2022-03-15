@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 title: What is Rust
 summary: A quick introduction to Rust language features and how Rust compares with other programming languages.
 abstract: |

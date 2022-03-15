@@ -13,7 +13,6 @@ In Azure Machine Learning, data for model training and other operations is usual
         * **Name**: bike-rentals
         * **Dataset type**: Tabular
         * **Description**: Bicycle rental data
-        * **Skip data validation**: _Do not select_
     * **Settings and preview**:
         * **File format**: Delimited
         * **Delimiter**: Comma

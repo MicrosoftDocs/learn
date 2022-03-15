@@ -11,11 +11,10 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following.A *sandbox* indicates a hands-on exercise. 
 
- -  [Virtual Network Documentation](/azure/virtual-network/).
+ -  [Virtual Network Documentation](/azure/virtual-network/)
  -  [Public IP Addresses](/azure/virtual-network/public-ip-addresses)
  -  [Private IP Addresses](/azure/virtual-network/private-ip-addresses)
- -  [Learn - Networking Fundamentals Principals](/learn/modules/network-fundamentals/)
- -  [Learn - Design an IP addressing schema for your Azure deployment](/learn/modules/design-ip-addressing-for-azure/)
+ -  [Learn - Design an IP addressing schema for your Azure deployment (Sandbox)](/learn/modules/design-ip-addressing-for-azure/)
  -  [Learn - Implement Windows Server IaaS VM IP addressing and routing](/learn/modules/implement-windows-server-iaas-virtual-machine-ip-addressing-routing/)

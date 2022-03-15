@@ -50,3 +50,4 @@ In the following steps, you will explore these run features of a notebook:
 
    ![Configure Spark Session](../media/configure-spark-session.png)
 
+

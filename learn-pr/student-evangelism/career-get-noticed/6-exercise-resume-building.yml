@@ -9,6 +9,7 @@ metadata:
   ms.date: 08/19/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/6-exercise-resume-building.md)]

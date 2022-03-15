@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db
+metadata:
+  title: Configure replication and manage failovers in Azure Cosmos DB
+  description: "Replicate data across the globe and manage automatic or manual failovers in Azure Cosmos DB."
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure replication and manage failovers in Azure Cosmos DB
+summary: Replicate data across the globe and manage automatic or manual failovers in Azure Cosmos DB.
+abstract: |
+  After completing this module, you'll be able to:
+  - Distribute data across global data centers
+  - Configure automatic failover and perform a manual failover
+  - Configure the Azure Cosmos DB SQL API .NET SDK to use a specific region
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+iconUrl: /learn/achievements/azure-cosmos-db-configure-replication-manage-failovers.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.introduction
+- learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.understand-replication
+- learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.distribute-data-across-regions
+- learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.evaluate-cost-of-distributing-data-globally
+- learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.define-automatic-failover-policies
+- learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.perform-manual-failovers
+- learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.configure-sdk-region
+- learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.exercise-connect-to-different-regions-sql-api-sdk
+- learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.knowledge-check
+- learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.summary
+badge:
+  uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.badge

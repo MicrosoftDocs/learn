@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "In the .NET SDK for Azure Cosmos DB SQL API, which C# class is used to configure session tokens and consistency levels on a per-request basis?"
+    choices:
+    - content: "``CosmosClientOptions``"
+      isCorrect: false
+      explanation: "That's incorrect. The **CosmosClientOptions** class configures the overall client used in the SDK in multiple operations."
+    - content: "``Container``"
+      isCorrect: false
+      explanation: "That's incorrect. The **Container** class contains methods to perform operations on a container, but not a way to configure per-request options."
+    - content: "``ItemRequestOptions``"
+      isCorrect: true
+      explanation: "That's correct. The **ItemRequestOptions** class includes multiple properties to configure per-request options."
+  - content: "Of the Azure Cosmos DB consistency levels listed, which consistency level has the strongest guarantees for consistency?"
+    choices:
+    - content: "Bounded staleness"
+      isCorrect: true
+      explanation: "That's correct. The bounded staleness level has strong guarantees with a small threshold allowed for latency."
+    - content: "Session"
+      isCorrect: false
+      explanation: "That's incorrect. The session level has weaker consistency guarantees than Bounded staleness outside of the user session."
+    - content: "Consistent prefix"
+      isCorrect: false
+      explanation: "That's incorrect. The consistent prefix level has relatively weak consistency and only guarantees that writes will appear in the correct order."

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-package-dependencies.identify-dependencies
+title: Identify dependencies
+metadata:
+  title: Identify dependencies
+  description: "Identify dependencies"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-identify-dependencies.md)]

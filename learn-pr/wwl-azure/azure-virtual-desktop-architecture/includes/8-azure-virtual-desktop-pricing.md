@@ -1,0 +1,6 @@
+Architect your Azure Virtual Desktop solution to realize cost savings. Here are five different options to help manage costs for enterprises:
+
+ -  **Windows 10 multi-session**: By delivering a multi-session desktop experience for users that have identical compute requirements, you can let more users log onto a single VM at once, resulting in considerable cost savings.
+ -  **Azure Hybrid Benefit**: If you have Software Assurance, you can use [Azure Hybrid Benefit for Windows Server](/azure/virtual-machines/windows/hybrid-use-benefit-licensing) to save on the cost of your Azure infrastructure.
+ -  **Azure Reserved Instances**: You can prepay for your VM usage and save money. Combine [Azure Reserved Instances](https://azure.microsoft.com/pricing/reserved-vm-instances/) with Azure Hybrid Benefit for up to 80 percent savings over list prices.
+ -  **Session host load-balancing**: When setting up session hosts, **Breadth-first** is the standard default mode, which spreads users randomly across session hosts. **Depth-first** mode fills up a session host server with the maximum number of users before it moves on to the next session host. You can adjust this setting for maximum cost benefits.

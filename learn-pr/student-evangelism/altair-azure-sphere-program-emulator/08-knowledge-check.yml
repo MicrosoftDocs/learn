@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-program-emulator.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 2 # dummy number at present
+content: | 
+  Choose the best response for each of the following questions. Then select **Check your answers**.
+quiz:
+  questions:
+  - content: "Which of the following options is true about Altair BASIC?"
+    choices:
+    - content: "From Altair BASIC, you can run and save BASIC apps."
+      isCorrect: false
+      explanation: "That answer is only partially correct."
+    - content: "From Altair BASIC, you can only run BASIC apps. You can't save changes you make."
+      isCorrect: true
+      explanation: "From Altair BASIC, you can only run BASIC applications. You need to start CP/M to access the read/write drive B."
+    - content: "Altair BASIC runs on CP/M, and you can run and save BASIC apps."
+      isCorrect: false
+      explanation: "Microsoft BASIC runs on CP/M. It can run and save files to drive B."
+  - content: "The Altair emulator can run Altair BASIC and CP/M. Which option is true?"
+    choices:
+    - content: "When the Altair emulator starts, it's running CP/M by default."
+      isCorrect: true
+      explanation: "The Altair emulator runs Altair CP/M when it starts, unless you change the boot order."
+    - content: "When the emulator starts, it's running Altair BASIC by default."
+      isCorrect: false
+      explanation: "You can configure the Altair emulator to run Altair BASIC, but that's not how the emulator starts by default."
+    - content: "When the Altair emulator starts, you can program in Altair BASIC, Microsoft BASIC, C, and Assembler."
+      isCorrect: false
+      explanation: "You can program with Microsoft BASIC, C, and Assembler, but that's not how the emulator starts."

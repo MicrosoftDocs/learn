@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-connectivity
+title: Troubleshoot VM connectivity
+metadata:
+  title: Troubleshoot VM connectivity
+  description: "Troubleshoot VM connectivity"
+  ms.date: 11/30/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-troubleshoot-remote-vm-connections.md)]

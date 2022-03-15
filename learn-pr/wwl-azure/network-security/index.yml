@@ -3,9 +3,9 @@ uid: learn.wwl.network-security
 metadata:
   title: Configure network security
   description: "Use Azure network capabilities to secure your network and applications from external and internal attacks."
-  ms.date: 09/30/2021
+  ms.date: 03/02/2022
   author: wwlpublish
-  ms.author: roberts
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure network security
@@ -18,7 +18,7 @@ abstract: |
   - Configure ExpressRoute to help protect your network traffic
 prerequisites: |
   - None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-network-security.svg
 levels:
 - intermediate
 roles:

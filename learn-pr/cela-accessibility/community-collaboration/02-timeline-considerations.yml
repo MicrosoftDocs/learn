@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.community-collaboration.timeline-considerations
+title: Address resource and timeline considerations
+metadata:
+  title: Address resource and timeline considerations
+  description: This content is part of the "Community collaboration for accessible design" module.
+  ms.date: 10/27/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 7
+content: |
+  [!include[](includes/02-timeline-considerations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "There's a common misconception that gathering disability feedback will require a significant amount of resources and funding. How can teams with limited resources include perspectives from the disability community without the creation of extra programs or workstreams?"
+    choices:
+    - content: "Assess existing feedback mechanisms and ensure that players with disabilities are represented in participant pools."
+      isCorrect: true
+      explanation: "Correct. If your team or organization is already collecting general user feedback through online surveys, play tests, and more, you can take steps to ensure that users with disabilities are also included in these existing participant pools without the need for novel workstreams or programs."
+    - content: "Analyze online articles and forum posts written about players with disabilities to generate data."
+      isCorrect: false
+      explanation: "Incorrect. Although this option can seemingly help gather accessibility insights without the need for extra resources or funding, these resources are written about players with disabilities, not by players with disabilities. This option would not ensure that the perspectives of players with disabilities are properly represented or included in development."
+    - content: "Replace collaborative feedback sessions by consulting with a single subject matter expert. They can speak to the experiences of all players with disabilities to cut costs and save time."
+      isCorrect: false
+      explanation: "Incorrect. Although subject matter experts in the accessibility space can provide meaningful design guidance, this kind of consultation is not a comparable replacement for true collaboration with members of the disability community. Every player will have their own perspective and guidance based on their experiences interacting with gaming devices and experiences. A single subject matter expert can't accurately represent the same level of insight that a group of players can provide."
+  - content: "Teams are set to begin early planning and development of a new platform game. They hope to consult with the disability community as soon as possible despite not having any formal design plans or accessibility goals. How can teams collaborate with the disability community this early in product development?"
+    choices:
+    - content: "Teams can identify players with disabilities at this preliminary stage to ensure that these players are available after the team has a testable prototype."
+      isCorrect: false
+      explanation: "Incorrect. Although this option engages the disability community, it doesn't give players an active role in development until the prototype phase. This phase is too late in the development process to begin discussing accessibility."
+    - content: "Teams can delay collaboration initiatives with the disability community for now, because they don't have any meaningful information to share with the community about the desired outcome of their new game."
+      isCorrect: false
+      explanation: "Incorrect. It's never too early to begin consulting with the disability community on a new gaming product or experience. Although you might not be able to ask questions or source guidance on areas specific to your game yet, these players can still provide important foundational insights informed by their previous gaming experiences that guide early planning and scoping of accessibility goals."
+    - content: "Teams can gather foundational insights on the players' experiences by asking about existing products or experiences that contain similar game elements and mechanics."
+      isCorrect: true
+      explanation: "Correct. Engaging these players early on can provide important foundational insights about common platform elements and mechanics that can help scope development planning and goal setting."

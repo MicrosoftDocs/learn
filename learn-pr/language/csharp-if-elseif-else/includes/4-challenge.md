@@ -19,7 +19,7 @@ int discountPercentage = 0;
 > [!IMPORTANT]
 > You can only remove the code comments. In other words, you may remove the line of code that starts with `//`, but you may not remove any other code. Furthermore, you must use all of the variables in your code.
 
-### Step 3 - Use two if statements to implement the following business rules (nest three in first if statement)
+### Step 3 - Use two if statements to implement the following business rules (branch or nest three in the first if statement)
 
 **Rule 1**. If the user's subscription will expire in 10 days or less, display the message:
 
@@ -43,7 +43,7 @@ Your subscription expires within a day!
 Renew now and save 20%!
 ```
 
-**Rule 4**.  If the user's subscription has expired, display the message:
+**Rule 4**. If the user's subscription has expired, display the message:
 
 ```output
 Your subscription has expired.

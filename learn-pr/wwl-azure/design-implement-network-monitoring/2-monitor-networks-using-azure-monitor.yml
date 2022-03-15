@@ -4,12 +4,13 @@ title: Monitor your networks using Azure monitor
 metadata:
   title: Monitor your networks using Azure monitor
   description: "Monitor your networks using Azure monitor"
-  ms.date: 07/15/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 19
 content: |
   [!include[](includes/2-monitor-networks-using-azure-monitor.md)]
@@ -18,23 +19,23 @@ quiz:
   questions:
   - content: "What two types of data are used by Azure Monitor?"
     choices:
-    - content: "Metrics and logs"
-      isCorrect: true
-      explanation: "Correct, metrics and logs are the two fundamental data types used by Azure Monitor."
     - content: "Policies and locks"
       isCorrect: false
       explanation: "Incorrect, policies and locks are not data types."
     - content: "Database and storage"
       isCorrect: false
       explanation: "Incorrect, databases and storage are not data types."
+    - content: "Metrics and logs"
+      isCorrect: true
+      explanation: "Correct, metrics and logs are the two fundamental data types used by Azure Monitor."
   - content: "Which of the following statements about Azure Monitor Logs is correct?"
     choices:
-    - content: "Azure Monitor Logs collects and organizes log and performance data from monitored resources."
-      isCorrect: true
-      explanation: "Correct. Azure Monitor Logs is a feature of Azure Monitor that collects and organizes log and performance data from monitored resources."
     - content: "Azure Monitor Logs collects data from all Azure resources automatically."
       isCorrect: false
       explanation: "Incorrect. When you have created a Log Analytics workspace, you must configure different sources to send their data. No data is collected automatically."
+    - content: "Azure Monitor Logs collects and organizes log and performance data from monitored resources."
+      isCorrect: true
+      explanation: "Correct. Azure Monitor Logs is a feature of Azure Monitor that collects and organizes log and performance data from monitored resources."
     - content: "You can use Azure Monitor Logs with or without a workspace."
       isCorrect: false
       explanation: "Incorrect. You must create at least one workspace to use Azure Monitor Logs."

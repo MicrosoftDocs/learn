@@ -1,0 +1,86 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-cloud-business-case-analysis.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/10/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is **NOT** a purpose of a business case analysis?"
+    choices:
+    - content: "Ensure a consistent approach to IT investment analysis."
+      isCorrect: false
+      explanation: "That's incorrect. A business case analysis is intended to ensure a consistent approach to where and how IT investments will be considered and decided upon."
+    - content: "Facilitate comparison of alternatives."
+      isCorrect: false
+      explanation: "That's incorrect. A business case analysis is used to determine which alternative should be considered and elected to use. A business case analysis provides an objective examination of multiple alternatives based upon a set of criteria."
+    - content: "Clearly define expected costs, benefit, operational impacts, and risks."
+      isCorrect: false
+      explanation: "That's incorrect. A business case analysis should clearly define expected costs. It should also define their benefit, any operational impacts, and any potential risks."
+    - content: "Guarantee an IT mandate will be funded."
+      isCorrect: true
+      explanation: "That's correct. A business case analysis doesn't guarantee that an IT mandate will be funded."
+  - content: "Which financial measure represents the calculated financial value of an alternative, and is typically expressed over a period of time, such as over multiple fiscal years?"
+    choices:
+    - content: "Return on Investment (ROI)"
+      isCorrect: false
+      explanation: "That's incorrect. Return on Investment represents a value used to evaluate either the efficiency or profitability of an investment, or to compare the efficiency or profitability of an investment against alternatives. Return on investment (ROI) attempts to evaluate the value an investment provides relative to the cost of the investment."
+    - content: "Cost"
+      isCorrect: true
+      explanation: "That's correct. Cost includes both capital expenses and operational expenses. With US Sovereign Clouds, almost all costs are operational expenses versus on-premises workload deployments that include capital expenditures."
+    - content: "Unfunded Cost"
+      isCorrect: false
+      explanation: "That's incorrect. Unfunded costs represent the amount of money not being provided to meet a requirement or mandate."
+    - content: "Savings"
+      isCorrect: false
+      explanation: "That's incorrect. Savings represent the amount of money that will be saved or the costs that will be avoided by selecting a specific alternative."
+  - content: "Which non-financial operational benefit refers to the ability of a system to scale up or out to meet its workload purpose, and then scale down or into its original state to only use necessary resources?"
+    choices:
+    - content: "Performance"
+      isCorrect: false
+      explanation: "That's incorrect. Performance refers to the response time of a system (or systems). Performance is typically measured by the amount of time a user or users wait to receive a response after performing an action."
+    - content: "Scalability"
+      isCorrect: false
+      explanation: "That's incorrect. Scalability refers to the ability of a system to increase the resources available to achieve its workload purpose. This can be either horizontally (adding more instances) or vertically (adding more computing power)."
+    - content: "Elasticity"
+      isCorrect: true
+      explanation: "That's correct. Elasticity refers to the ability of a system to scale up or out to meet its workload purpose, and then scale down or into its original state to only use necessary resources."
+    - content: "Extensibility"
+      isCorrect: false
+      explanation: "That's incorrect. Extensibility refers to how easily a system (or systems) may be adapted to enhance capabilities, while minimizing time and cost."
+  - content: "What are the two measures that risk analysis matrix weighs?"
+    choices:
+    - content: "Cost versus Benefit"
+      isCorrect: false
+      explanation: "That's incorrect. A risk analysis matrix doesn't measure weigh cost versus benefit. These metrics are a component of a cost benefit analysis."
+    - content: "Impact versus Likelihood"
+      isCorrect: true
+      explanation: "That's correct. A risk analysis matrix determines the impact that a risk may have (negligible, minor, moderate, major, catastrophic) versus how likely that risk is to occur (very unlikely, unlikely, neutral, likely, very likely). )"
+    - content: "Importance versus Recurrence"
+      isCorrect: false
+      explanation: "That's incorrect. A risk analysis matrix doesn't measure importance (which may be relative) nor recurrence."
+    - content: "Capital Expenditures versus Operational Expenditures"
+      isCorrect: false
+      explanation: "That's incorrect. A risk analysis matrix doesn't measure whether a risk is a capital expenditure or an operational expenditure."
+  - content: "Which adoption strategy should be taken when the intent is to improve experiences and services provided to citizens?"
+    choices:
+    - content: "Migrate"
+      isCorrect: false
+      explanation: "That's incorrect. Migrating a workload is intended to address cost savings, geographic distribution, or operational efficiencies, not improvement of end-user experiences or citizen services."
+    - content: "Innovate"
+      isCorrect: true
+      explanation: "That's correct. Innovating a workload provides the opportunity and ability to improve a workload's core capabilities, experience, and services it offers to citizens."
+    - content: "Mandate"
+      isCorrect: false
+      explanation: "That's incorrect. Mandating isn't an approach proven to improve experiences and services provided to citizens."

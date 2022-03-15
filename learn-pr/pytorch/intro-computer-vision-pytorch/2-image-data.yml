@@ -9,9 +9,10 @@ metadata:
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
+  ms.custom: team=nextgen
 durationInMinutes: 5
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/computer-vision-pytorch/2-image-data.ipynb
+notebook: notebooks/2-image-data.ipynb
 quiz:
   title: Check your knowledge
   questions:

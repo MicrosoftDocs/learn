@@ -9,6 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 8
 content: |
   [!include[](includes/1-instructions.md)]
@@ -16,29 +17,29 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "The <italic>Set CPU timer</italic> instruction from IBM System/370 replaces the CPU internal timer with the contents of a location in memory if the CPU is in system mode and traps if it is not. What is the type of this instruction?"
+  - content: "The *Set CPU timer* instruction from IBM System/370 replaces the CPU internal timer with the contents of a location in memory if the CPU is in system mode and traps if it is not. What is the type of this instruction?"
     choices:
     - content: "Control sensitive"
       isCorrect: true
       explanation: "Correct!"
     - content: "Behavior sensitive"
       isCorrect: false
-      explanation: "Incorrect. These are instructions that behave according to how resources are configured in the system. Does the <italic>Set CPU timer</italic> instruction modify any configuration of the resources in the system?"
+      explanation: "Incorrect. These are instructions that behave according to how resources are configured in the system. Does the *Set CPU timer* instruction modify any configuration of the resources in the system?"
     - content: "Innocuous"
       isCorrect: false
-      explanation: "Incorrect. These instructions are not sensitive. Thus, they do not alter system configurations or behave according to such configurations. Does the <italic>Set CPU timer</italic> instruction modify any configuration of the resources in the system?"
+      explanation: "Incorrect. These instructions are not sensitive. Thus, they do not alter system configurations or behave according to such configurations. Does the *Set CPU timer* instruction modify any configuration of the resources in the system?"
 
-  - content: "The <italic>Load Real Address</italic> instruction from IBM takes a virtual address and saves the corresponding physical address in a specified general-purpose register. The result of the value stored in the register depends on the state of the physical memory resource. What is the type of this instruction?"
+  - content: "The *Load Real Address* instruction from IBM takes a virtual address and saves the corresponding physical address in a specified general-purpose register. The result of the value stored in the register depends on the state of the physical memory resource. What is the type of this instruction?"
     choices:
     - content: "Control sensitive"
       isCorrect: false
-      explanation: "Incorrect. These are instructions that attempt to modify the configurations of the system resources. Does the <italic>Load Real Address</italic> instruction modify any configuration of the resources in the system?"
+      explanation: "Incorrect. These are instructions that attempt to modify the configurations of the system resources. Does the *Load Real Address* instruction modify any configuration of the resources in the system?"
     - content: "Behavior sensitive"
       isCorrect: true
       explanation: "Correct!"
     - content: "Innocuous"
       isCorrect: false
-      explanation: "Incorrect. These instructions are not sensitive. Thus, they do not alter system configurations or behave according to such configurations. Does the <italic>Load Real Address</italic> instruction modify any configuration of the resources in the system?"
+      explanation: "Incorrect. These instructions are not sensitive. Thus, they do not alter system configurations or behave according to such configurations. Does the *Load Real Address* instruction modify any configuration of the resources in the system?"
 
   - content: "According to Popek and Goldberg's theorem, a hypervisor can be constructed only if:"
     choices:

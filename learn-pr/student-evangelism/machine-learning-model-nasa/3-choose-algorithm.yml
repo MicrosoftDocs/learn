@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Choose the machine learning algorithm to predict rocket launch success
 durationInMinutes: 4
 content: |

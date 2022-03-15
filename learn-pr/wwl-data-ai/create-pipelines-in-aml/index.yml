@@ -3,7 +3,7 @@ uid: learn.wwl.create-pipelines-in-aml
 metadata:
   title: Orchestrate machine learning with pipelines
   description: "Orchestrate machine learning with pipelines"
-  ms.date: 06/28/2021
+  ms.date: 12/20/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

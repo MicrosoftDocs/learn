@@ -154,7 +154,7 @@ While AKS gets set up, you can upload the management webapp to the Container Reg
 12. Move to the source folder:
 
     ```bash
-    cd mslearn-cloud-native-apps-express/react/src
+    cd mslearn-cloud-native-apps-express/react
     ```
 
 13. Run the following command to build the image and store it. Take care not to remove the `.` character at the end of the command.

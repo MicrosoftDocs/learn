@@ -3,7 +3,6 @@ Azure uses **system routes** to direct network traffic between virtual machines,
  -  Traffic between VMs in the same subnet.
  -  Between VMs in different subnets in the same virtual network.
  -  Data flow from VMs to the Internet.
- -  Site-to-Site and ExpressRoute communication through the VPN gateway.
 
 For example, consider this virtual network with two subnets. Communication between the subnets and from the frontend to the internet are all managed by Azure using the default system routes.
 

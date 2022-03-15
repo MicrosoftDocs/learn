@@ -3,7 +3,7 @@ To delegate your domain to Azure DNS, you first need to know the name server nam
 > [!NOTE]
 > When you copy each name server address, make sure you copy the trailing period at the end of the address. The trailing period indicates the end of a fully qualified domain name.
 
-The easiest way to locate the name servers assigned to your zone is through the Azure portal. In this example, the zone ‘contoso.net’ has been assigned four name servers: ‘ns1-02.azure-dns.com’, ‘ns2-02.azure-dns.net’, ‘ns3-02.azure-dns.org’, and ‘ns4-02.azure-dns.info’:
+The easiest way to locate the name servers assigned to your zone is through the Azure portal. In this example, the zone has been assigned four name servers: ‘ns1-02.azure-dns.com’, ‘ns2-02.azure-dns.net’, ‘ns3-02.azure-dns.org’, and ‘ns4-02.azure-dns.info’:
 
 :::image type="content" source="../media/name-servers-cf7cec6a.png" alt-text="Screenshot from the Azure portal where in this example, the zone contoso.net has been assigned name servers ns1-01.azure-dns.com, ns2-01.azure-dns.net, ns3-01.azure-dns.org, and ns4-01.azure-dns.info":::
 

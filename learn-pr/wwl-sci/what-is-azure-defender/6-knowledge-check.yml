@@ -4,30 +4,31 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/12/2021
+  ms.date: 02/07/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following describe Azure Defender's primary role?"
+  - content: "Which of the following describe Microsoft Defender for Cloud's primary role?"
     choices:
-    - content: "Cloud security posture management"
+    - content: "Cloud security facilitation"
       isCorrect: false
-      explanation: "Incorrect.  Azure Defender is for Cloud workload protection."
+      explanation: "Incorrect.  Microsoft Defender for Cloud is for Cloud workload protection."
     - content: "Cloud workload protection"
       isCorrect: true
-      explanation: "Correct. Azure Defender is for Cloud workload protection."
+      explanation: "Correct. Microsoft Defender for Cloud is for Cloud workload protection."
     - content: "Cloud configuration management"
       isCorrect: false
-      explanation: "Incorrect.  Azure Defender is for Cloud workload protection."
-  - content: "Which Security Center feature enables you to see the topology of your workloads?"
+      explanation: "Incorrect.  Microsoft Defender for Cloud is for Cloud workload protection."
+  - content: "Which Microsoft Defender for Cloud feature enables you to see the topology of your workloads?"
     choices:
     - content: "Inventory"
       isCorrect: false
@@ -38,7 +39,7 @@ quiz:
     - content: "Network map"
       isCorrect: true
       explanation: "Correct.  Network map is a visualization of your workloads."
-  - content: "To make sure Azure Defender covers all resources in a Subscription, which option do you enable?"
+  - content: "To make sure Microsoft Defender for Cloud covers all resources in a Subscription, which option do you enable?"
     choices:
     - content: "Automatic provisioning"
       isCorrect: true

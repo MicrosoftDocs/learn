@@ -38,7 +38,7 @@ As verdicts are reached, automated investigations can result in one or more reme
 
 Depending on the level of automation set for your organization, as well as other security settings, remediation actions can occur automatically or only upon approval by your security operations team. Additional security settings that can affect automatic remediation include protection from potentially unwanted applications (PUA).
 
-All remediation actions, whether pending or completed, can be viewed in the Action Center [https://securitycenter.windows.com](https://securitycenter.windows.com?azure-portal=true). If necessary, your security operations team can undo a remediation action. 
+All remediation actions, whether pending or completed, can be viewed in the Action Center [https://security.microsoft.com](https://security.microsoft.com?azure-portal=true). If necessary, your security operations team can undo a remediation action. 
 
 ## Automation levels in automated investigation and remediation capabilities
 
@@ -107,60 +107,4 @@ Using the no automation option is not recommended because it reduces the securit
 ### Important points about automation levels
 
 Full automation has proven to be reliable, efficient, and safe, and is recommended for all customers. Full automation frees up your critical security resources so they can focus more on your strategic initiatives.  If your security team has defined device groups with a level of automation, those settings are not changed by the new default settings that are rolling out.
-
-## View Investigations
-
-To view automated investigations, select the Automated investigations in the portal navigation.  You can preview the investigation or go to the investigation page.
-
-:::image type="content" source="../media/automated-investigation-remediation.png" alt-text="Investigation Page":::
-
-You can view the details of an automated investigation to see information such as the investigation graph, alerts associated with the investigation, the device that was investigated, and other information.
-
-:::image type="content" source="../media/automated-investigation-remediation-detail.png" alt-text="Investigation Detail":::
-
-### Investigation graph
-
-The investigation graph provides a graphical representation of an automated investigation. All investigation-related information is simplified and arranged in specific sections. Clicking on any of the icons brings you the relevant section where you can view more information.
-
-A progress ring shows two status indicators:
-
-- Orange ring - shows the pending portion of the investigation
-
-- Green ring - shows the running time portion of the investigation
-
-- Image of start, end, and pending time for an automated investigation
-
-### Alerts
-
-The Alerts tab for an automated investigation shows details such as a short description of the alert that initiated the automated investigation, severity, category, the device associated with the alert, user, time in queue, status, investigation state, and to whom the investigation is assigned.
-
-Additional alerts seen on a device can be added to an automated investigation as long as the investigation is ongoing.
-
-Selecting an alert using the check box brings up the alerts details pane where you can open the alert page, manage the alert by changing its status, see alert details, automated investigation details, related device, logged-on users, and comments and history.
-
-Clicking on an alert title brings you to the alert page.
-
-### Devices
-
-The Devices tab Shows details of the device name, IP address, group, users, operating system, remediation level, investigation count, and when it was last investigated.  Devices that show the same threat can be added to an ongoing investigation and will be displayed in this tab. If ten or more devices are found during this expansion process from the same entity, then that expansion action will require approval and will be seen in the Pending actions view.
-
-Selecting a device using the checkbox brings up the device details pane where you can see more information such as device details and logged-on users. Clicking on a device name brings you to the device page.
-
-### Evidence
-
-The Evidence tab shows details related to threats associated with this investigation.
-
-### Entities
-
-The Entities tab shows details about entities such as files, processes, services, drives, IP addresses, and the table details, such as the number of entities that were analyzed. You'll gain insight into details such as how many are remediated, suspicious, or had no threats found.
-
-### Log
-
-The Log tab gives a detailed, chronological view of all the investigation actions taken on the alert. You'll see the action type, action, status, device name, description of the action, comments entered by analysts who may have worked on the investigation, execution start time, duration, pending duration.
-
-As with other sections, you can customize columns, select the number of items to show per page, and filter the log. Available filters include action type, action, status, device name, and description.  You can also click on an action to bring up the details pane where you'll see information such as the summary of the action and input data.
-
-### Pending actions
-
-When you select the pending actions link, you'll be taken to the Action center. You can also access the page from the navigation page by going to automated investigation > Action center.
 

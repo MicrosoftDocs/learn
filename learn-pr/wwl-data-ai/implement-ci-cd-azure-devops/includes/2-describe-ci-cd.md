@@ -1,10 +1,10 @@
 Azure DevOps is a collection of services that provide an end-to-end solution for the five core practices of DevOps: planning and tracking, development, build and test, delivery, and monitoring and operations.
 
-It is possible to put an Azure Databricks Notebook under Version Control in an Azure Devops repo. Using Azure DevOps, you can then build Deployment pipelines to manage your release process.
+It is possible to put an Azure Databricks Notebook under Version Control in an Azure DevOps repo. Using Azure DevOps, you can then build Deployment pipelines to manage your release process.
 
 ## CI/CD with Azure DevOps
 
-While we won't be demonstrating [all of the features of Azure DevOps](https://docs.microsoft.com/azure/devops/user-guide/alm-devops-features?view=azure-devops) in this module, here are some of the features that make it well-suited to CI/CD with Azure Databricks.
+While we won't be demonstrating [all of the features of Azure DevOps](/azure/devops/user-guide/alm-devops-features?view=azure-devops) in this module, here are some of the features that make it well-suited to CI/CD with Azure Databricks.
 
 * Integrated Git repositories
 * Integration with other Azure services
@@ -39,6 +39,6 @@ In short, changes made to a Databricks notebook can be pushed to production with
 ## Additional Resources
 
 - [Continuous Integration & Continuous Delivery with Databricks](https://databricks.com/blog/2017/10/30/continuous-integration-continuous-delivery-databricks.html)
-- [Azure DevOps Services Version Control](https://docs.microsoft.com/azure/databricks/notebooks/azure-devops-services-version-control)
-- [GitHub Version Control](https://docs.microsoft.com/azure/databricks/notebooks/github-version-control)
+- [Azure DevOps Services Version Control](/azure/databricks/notebooks/azure-devops-services-version-control)
+- [GitHub Version Control](/azure/databricks/notebooks/github-version-control)
 - [Creating Continuous Integration Pipelines on Azure Using Azure Databricks and Azure DevOps](https://databricks.com/session/devops-for-applications-in-azure-databricks-creating-continuous-integration-pipelines-on-azure-using-azure-databricks-and-azure-devops)

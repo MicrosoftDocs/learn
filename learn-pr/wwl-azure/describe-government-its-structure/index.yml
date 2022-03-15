@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.describe-government-its-structure
+metadata:
+  title: Describe the government and its structure
+  description: "Understand government and how it is organized."
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe the government and its structure
+summary: Understand different forms of government in the United States, their organization, and the roles these key organizations play in cloud strategy.
+abstract: |
+  After completing this module, you'll be able to describe:
+  - The levels of government, including federal, state, local and tribal. U.S. sovereign clouds aren't limited to only federal government entities, and may be leveraged by government entities at multiple levels.
+  - The branches of government and the role each branch plays in determining the government's cloud strategy. While each branch serves differing purposes, each has its own ways to influence the cloud computing adoption by the government.
+  - U.S. government entity types, how are they structured, and the authority they have toward governmental cloud strategy.
+  - U.S. Government entities that have the most influence over government cloud strategy and adoption.
+prerequisites: |
+  - You should be familiar with basic cloud computing concepts and terminology.
+  - You should have a general understanding of why government exists and the purpose it serves.
+iconUrl: /learn/achievements/government-describe-structure.svg
+hidden: true
+levels:
+- beginner
+roles:
+- business-owner
+products:
+- azure-sovereign-us
+units:
+- learn.wwl.describe-government-its-structure.introduction
+- learn.wwl.describe-government-its-structure.define-levels-of-government
+- learn.wwl.describe-government-its-structure.identify-branches-of-government
+- learn.wwl.describe-government-its-structure.describe-executive-branch
+- learn.wwl.describe-government-its-structure.describe-office-of-management-budget-omb
+- learn.wwl.describe-government-its-structure.describe-department-of-defense-dod
+- learn.wwl.describe-government-its-structure.defense-information-systems-agency-disa
+- learn.wwl.describe-government-its-structure.department-homeland-security-dhs
+- learn.wwl.describe-government-its-structure.describe-general-services-administration-gsa
+- learn.wwl.describe-government-its-structure.describe-national-institute-of-standards-technology-nist
+- learn.wwl.describe-government-its-structure.describe-federal-government-cio-council
+- learn.wwl.describe-government-its-structure.knowledge-check
+- learn.wwl.describe-government-its-structure.summary
+badge:
+  uid: learn.wwl.describe-government-its-structure.badge

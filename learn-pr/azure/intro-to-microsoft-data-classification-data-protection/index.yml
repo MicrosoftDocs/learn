@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn.azure.data-classification-and-data-protection
 metadata:
-  title: Intro to Microsoft data classification and data protection 
-  description: Learners will be able to describe Microsoft Information Protection and Azure Information Protection as well as how to use sensitivity labels to classify and protect data. Learners should also be able to describe technologies such as unified labeling scanners, Cloud App Security, service encryption and Office 365 Message Encryption.
+  title: Intro to Microsoft data classification and data protection
+  description: Learners will be able to describe Microsoft Information Protection and Azure Information Protection as well as how to use sensitivity labels to classify and protect data. Learners should also be able to describe technologies such as unified labeling scanners, Defender for Cloud Apps, service encryption and Office 365 Message Encryption.
   ms.date: 04/12/2021
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Intro to Microsoft data classification and data protection 
-summary: Learners will be able to describe Microsoft Information Protection and Azure Information Protection as well as how to use sensitivity labels to classify and protect data. Learners should also be able to describe technologies such as unified labeling scanners, Cloud App Security, service encryption and Office 365 Message Encryption.
+summary: Learners will be able to describe Microsoft Information Protection and Azure Information Protection as well as how to use sensitivity labels to classify and protect data. Learners should also be able to describe technologies such as unified labeling scanners, Defender for Cloud Apps, service encryption and Office 365 Message Encryption.
 abstract: |
   By the end of this module, you'll be able to:
   - Describe Azure Information Protection and Microsoft Information Protection
   - Describe sensitivity labels
   - Describe how to use sensitivity labels to protect data
   - Describe unified labeling scanner
-  - Describe Microsoft Cloud App Security
+  - Describe Microsoft Defender for Cloud Apps
   - Describe service encryption with Customer Key
   - Describe Office 365 Message Encryption
 

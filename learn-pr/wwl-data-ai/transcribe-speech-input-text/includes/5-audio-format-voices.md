@@ -33,4 +33,4 @@ To specify a voice for speech synthesis in the **SpeechConfig**, set its **Speec
 speechConfig.SpeechSynthesisVoiceName = "en-GB-George";
 ```
 
-For information about voices, see the [Speech SDK documentation](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support#text-to-speech).
+For information about voices, see the [Speech SDK documentation](/azure/cognitive-services/speech-service/language-support#text-to-speech).

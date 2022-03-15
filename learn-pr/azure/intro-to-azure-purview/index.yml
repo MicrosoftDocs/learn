@@ -9,6 +9,7 @@ metadata:
   ms.author: gerryo 
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure 
+  ms.service: purview
 
 title: Introduction to Azure Purview
 
@@ -40,7 +41,7 @@ roles:
   - ai-engineer
 
 products:
-- azure
+- azure-purview
 
 units:
 - learn.intro-to-azure-purview.introduction

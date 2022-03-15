@@ -31,12 +31,8 @@ You enable ExpressRoute Global Reach to exchange data across your on-premises si
 
 ### **Bandwidth options**
 
-You purchase ExpressRoute circuits for a wide range of bandwidths from 50 Mbps to 100 Gbit. Be sure to check with your connectivity provider to determine the bandwidths they support.
+You purchase ExpressRoute circuits for a wide range of bandwidths. Be sure to check with your connectivity provider to determine the bandwidths they support.
 
 ### **Flexible billing models**
 
-You pick a billing model that works best for you. Choose between the billing models listed below.
-
- -  **Unlimited data**. Billing is based on a monthly fee; all inbound and outbound data transfer is included free of charge.
- -  **Metered data**. Billing is based on a monthly fee; all inbound data transfer is free of charge. Outbound data transfer is charged per GB of data transfer. Data transfer rates vary by region.
- -  **ExpressRoute premium add-on**. This add-on includes increased routing table limits, increased number of VNets, global connectivity, and connections to Microsoft 365 and Dynamics 365.
+You pick a billing model that works best for you. Several [pricing options](https://azure.microsoft.com/pricing/details/expressroute/) are available.

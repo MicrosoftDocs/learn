@@ -1,4 +1,4 @@
-Now you have created virtual networks and have run virtual machines (VMs) within them. But the virtual networks have no connectivity, and none of these systems can communicate with each other. 
+You've created virtual networks and run virtual machines (VMs) within them. But the virtual networks have no connectivity, and none of these systems can communicate with each other. 
 
 To enable communication, you need to create peering connections for the virtual networks. To satisfy your company's requirements, configure a hub and spoke topology, and permit virtual network access when you create the peering connections.
 
@@ -62,6 +62,7 @@ Now that you've created the peering connections between the virtual networks, ma
     az network vnet peering list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name SalesVNet \
+        --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
         --output table
     ```
 
@@ -73,6 +74,7 @@ Now that you've created the peering connections between the virtual networks, ma
     az network vnet peering list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name ResearchVNet \
+        --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
         --output table
     ```
 
@@ -84,6 +86,7 @@ Now that you've created the peering connections between the virtual networks, ma
     az network vnet peering list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name MarketingVNet \
+        --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
         --output table
     ```
 
@@ -106,7 +109,7 @@ You can further check the peering connection by looking at the routes that apply
         --output table
     ```
 
-    The output table shows the effective routes for the VM's network interface. For **SalesVMVMNic**, you should see a route to **10.2.0.0/16** with a next hop type of **VNetPeering**. This is the network route for the peering connection from **SalesVNet** to **MarketingVNet**.
+    The output table shows the effective routes for the VM's network interface. For **SalesVMVMNic**, you should see a route to **10.2.0.0/16** with *Next Hop Type* of **VNetPeering**. This is the network route for the peering connection from **SalesVNet** to **MarketingVNet**.
 
     ```output
     Source    State    Address Prefix    Next Hop Type    Next Hop IP
@@ -128,7 +131,7 @@ You can further check the peering connection by looking at the routes that apply
         --output table
     ```
 
-    The output table shows the effective routes for the VM's network interface. For **MarketingVMVMNic**, you should see a route to **10.1.0.0/16** and **10.3.0.0/16** with a next hop type of **VNetGlobalPeering**. These are the network routes for the peering connection from **MarketingVNet** to **SalesVNet** and from **MarketingVNet** to **ResearchVNet**.
+    The output table shows the effective routes for the VM's network interface. For **MarketingVMVMNic**, you should see a route to **10.1.0.0/16** with a next hop type of **VNetPeering** and a route to **10.3.0.0/16** with a next hop type of **VNetGlobalPeering**. These are the network routes for the peering connection from **MarketingVNet** to **SalesVNet** and from **MarketingVNet** to **ResearchVNet**.
 
     ```output
     Source    State    Address Prefix    Next Hop Type      Next Hop IP

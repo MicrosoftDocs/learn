@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-cloud-business-case-analysis.describe-analysis-of-alternatives-aoa
+title: Describe an analysis of alternatives (AoA)
+metadata:
+  title: Describe an analysis of alternatives (AoA)
+  description: "Describe an analysis of alternatives (AoA)"
+  ms.date: 03/10/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-describe-analysis-of-alternatives.md)]

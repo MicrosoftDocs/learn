@@ -27,6 +27,8 @@ levels:
   - intermediate
 roles:
   - developer
+languages:
+  - bicep
 products:
 - azure
 units:

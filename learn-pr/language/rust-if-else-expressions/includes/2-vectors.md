@@ -1,20 +1,19 @@
 As with arrays, vectors store multiple values that have the same data type. Unlike arrays, the size or length of a vector can grow or shrink at any time. The ability for the size to change over time is implied at compile time. As a result, Rust can't prevent you from accessing an invalid position in your vector like it does for out-of-bounds access in arrays.
 
-
 ### Define a vector
 
 When you read code in the Rust language, you'll notice the syntax `<T>`. This syntax represents the use of a generic type `T`. We use a generic type declaration when we don't yet know the actual data type.
 
 The generic type syntax is used to declare vectors. The syntax `<vector><T>` declares a vector type composed of a generic (not yet known) data type `T`. To actually create a vector, we use a concrete type like `<vector>u32`, a vector of type u32, or `<vector>String`, a vector of type String.
 
-A common way to declare and initialize a vector is with the `vec!` macro. This macro also accepts the same syntax as the array constructor. 
+A common way to declare and initialize a vector is with the `vec!` macro. This macro also accepts the same syntax as the array constructor.
 
 ```rust
 // Declare vector, initialize with three values
 let three_nums = vec![15, 3, 46];
 println!("Initial vector: {:?}", three_nums);  
   
-// Declare vector, first value = "0", length = 5
+// Declare vector, value = "0", length = 5
 let zeroes = vec![0; 5];
 println!("Zeroes: {:?}", zeroes); 
 ```
@@ -34,7 +33,6 @@ Vectors can also be created by using the `Vec::new()` method. This method of vec
 // Create empty vector, declare vector mutable so it can grow and shrink
 let mut fruit = Vec::new();
 ```
-
 
 ### Push and pop values
 
@@ -91,7 +89,6 @@ Pop off: Some("Cherry")
 Fruits: ["Apple", "Banana"]
 ```
 
-
 ### Index into a vector
 
 Vectors support indexing in the same manner as arrays. We can access element values in the vector by using an index. The first element is at index 0 and the last element is at vector length - 1. 
@@ -123,7 +120,6 @@ The output is:
 Vector: [15, 8, 46]
 ```
 
-
 ### Watch for out-of-bounds index values
 
 As with arrays, we can't access an element in a vector with an index that's not in the allowed range. This type of expression for an array causes the compiler to return an error. For vectors, compilation passes, but the program enters an unrecoverable panic state at the expression and stops program execution.
@@ -146,11 +142,9 @@ In another module, we look at how to safely access a vector element without caus
 
 You can run this code and explore vectors in this [Rust Playground][RustPlay-vector].
 
-
 ### Check your knowledge
 
 Answer the following questions to see what you've learned. Choose one answer for each question, and then select **Check your answers**.
-
 
 <!-- Links -->
 [RustPlay-vector]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=b5c73ebd5f094c758797cd4efee10012?azure-portal=true

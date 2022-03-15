@@ -8,14 +8,14 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
-  ms.custom: nextgen
+  ms.custom: team=nextgen
 title: How to create and modify a Git project
 summary: Learn how to create, modify and track changes on a project using Git.
 abstract: |
   In this module you will:
   - Learn how to create a new Git Project
   - Understand how to track changes in Git
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/create-git-project.svg
 levels:
   - beginner
 roles:

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-integrated-cache.review-workloads-that-benefit-from-cache
+title: Review workloads that benefit from the cache
+metadata:
+  title: Review workloads that benefit from the cache
+  description: "Review workloads that benefit from the cache"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-review-workloads-that-benefit-from-cache.md)]

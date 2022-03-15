@@ -4,8 +4,8 @@ metadata:
   title: Centralize your core services by using hub and spoke Azure virtual network architecture
   description: Design a network architecture in Azure that allows for growth and flexibility, secure isolation of critical resources, low administrative overhead, and communication with on-premises network resources.
   ms.date: 10/21/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: KumudD
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Centralize your core services by using hub and spoke Azure virtual network architecture
@@ -31,6 +31,7 @@ units:
 - learn.hub-and-spoke-network-architecture.2-implement-hub-spoke
 - learn.hub-and-spoke-network-architecture.3-plan-virtual-networks
 - learn.hub-and-spoke-network-architecture.4-exercise-implement-hub-spoke
+- learn.hub-and-spoke-network-architecture.4a-create-hub-spoke-virtual-network-manager
 - learn.hub-and-spoke-network-architecture.5-secure-hub-spoke
 - learn.hub-and-spoke-network-architecture.6-summary
 badge:

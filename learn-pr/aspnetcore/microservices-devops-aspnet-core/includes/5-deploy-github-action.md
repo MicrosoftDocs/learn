@@ -93,13 +93,13 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 
 1. Select the **:::no-loc text="deploy-to-aks":::** task:
 
-    :::image type="content" source="../media/5-deploy-github-action/deploy-to-aks-task.png" alt-text="Actions tab showing a completed build and deployment." border="true" lightbox="../media/5-deploy-github-action/deploy-to-aks-task.png":::
+    :::image type="content" source="../media/5-deploy-github-action/deploy-to-aks-task.png" alt-text="Screenshot that shows deploy to aks job selected with a list of all the steps completed." border="true" lightbox="../media/5-deploy-github-action/deploy-to-aks-task.png":::
 
     In the preceding image, you can see details of the `deploy-to-aks` job for this particular workflow run. The `Set up job` and `Complete job` steps are listed. In between those two steps are the custom steps defined within the `deploy-to-aks` job.
 
 1. Select the **:::no-loc text="Actions":::** tab again. You'll see a variation of the following screen when the deployment completes:
 
-    :::image type="content" source="../media/5-deploy-github-action/deployment-action-completed.png" alt-text="Actions tab showing a completed build and deployment." border="true" lightbox="../media/5-deploy-github-action/deployment-action-completed.png":::
+    :::image type="content" source="../media/5-deploy-github-action/deployment-action-completed.png" alt-text="Screenshot that shows All workflows selected and a list of three workflows." border="true" lightbox="../media/5-deploy-github-action/deployment-action-completed.png":::
 
 1. Back in the command shell, run the following command to monitor the coupon service pods in your AKS cluster:
 

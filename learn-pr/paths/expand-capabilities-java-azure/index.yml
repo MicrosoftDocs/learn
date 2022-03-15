@@ -1,0 +1,65 @@
+### YamlMime:LearningPath
+uid: learn.expand-capabilities-java-azure
+metadata:
+  title: Expand the capabilities for Java apps on Azure
+  description: Start here and learn how you can get the full power of Azure with your Java apps - use idiomatic libraries to connect and interact with your preferred cloud services, including Azure SQL and NoSQL databases, messaging and eventing systems, Redis cache, storage and directory services. As always, use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
+  ms.date: 11/29/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Expand the capabilities for Java apps on Azure
+summary: |
+  Start here and learn how you can get the full power of Azure with your Java apps - use idiomatic libraries to connect and interact with your preferred cloud services, including:
+  
+     - Azure SQL databases - SQL Database, MySQL and PostgreSQL
+    - Azure No SQL database - Cosmos DB
+    - Messaging and eventing systems - Event Hubs and Service Bus
+    - Cache - Azure Redis Cache
+    - Storage - Azure Storage
+    - Directory - Azure Active Directory (Azure AD) and Azure AD B2C
+
+  As always, use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
+prerequisites: |
+  - An Azure subscription
+  - Local installations of [Java JDK (8+)](https://www.azul.com/downloads/azure-only/zulu/), [Maven (3+)](https://maven.apache.org/download.cgi) and [Azure CLI (2.12+)](/cli/azure/install-azure-cli)
+iconUrl: /learn/achievements/expand-capabilities-java-azure.svg
+levels:
+- beginner
+- intermediate
+- advanced
+roles:
+- developer
+- devops-engineer
+- maker
+- solution-architect
+- student
+- technology-manager
+products:
+- azure
+- azure-active-directory
+- azure-app-service
+- azure-app-service-web
+# - azure-application-insights
+#- azure-automation
+- azure-cache-redis
+- azure-clis
+- azure-cosmos-db
+- azure-database-mysql
+#- azure-devops
+- azure-spring-cloud
+- azure-web-apps
+- msal-java
+- azure-service-bus
+modules:
+- learn.azure-spring-cloud-workshop
+- learn.azure.deploy-java-ee-app-to-app-service
+- learn.cosmos-db-java-app
+- learn.azure.cloud-scale-messaging-jms-service-bus
+# Kafka
+- learn.accelerate-scale-spring-boot-application-azure-cache-redis
+- learn.azure.azure-java-app-enable-authentication-authorization
+- learn.store-app-data-with-azure-blob-storage
+# Microservices auth/auth
+trophy:
+  uid: learn.expand-capabilities-java-azure.trophy

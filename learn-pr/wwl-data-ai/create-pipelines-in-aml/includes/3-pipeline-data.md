@@ -15,7 +15,7 @@ You can view a **OutputFileDatasetConfig** object as an intermediary store for d
 
 To use a **OutputFileDatasetConfig** object to pass data between steps, you must:
 
-1. Define a named **OutputFileDatasetConfig** object that references a location in a datastore. If nor explicit datastore is specified, the default datastore is used.
+1. Define a named **OutputFileDatasetConfig** object that references a location in a datastore. If no explicit datastore is specified, the default datastore is used.
 2. Pass the **OutputFileDatasetConfig** object as a script argument in steps that run scripts.
 3. Include code in those scripts to write to the **OutputFileDatasetConfig** argument as an output or read it as an input.
 

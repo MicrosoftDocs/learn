@@ -50,7 +50,7 @@ Several tools and services are available to help you plan and complete the four 
 | [Azure Cost Management](/azure/cost-management/)                   | Optimize | Helps you monitor, control, and optimize ongoing Azure costs. |
 | [Azure Advisor](https://azure.microsoft.com/services/advisor/)                               | Optimize | Helps optimize your Azure resources for high availability, performance, and cost. |
 | [Azure Monitor](/azure/azure-monitor/)                             | Monitor  | Enables you to monitor your entire estate's performance. Includes application-health monitoring via enhanced telemetry, and setting up notifications. |
-| [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/)                       | Monitor  | Provides intelligent security analytics for your applications. |
+| [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/)                       | Monitor  | Provides intelligent security analytics for your applications. |
 
 ![Migrate stage.](../media/2-migrate.png)
 
@@ -109,6 +109,6 @@ You can set up alerts based on a range of data sources, such as:
 - Health metrics.
 - An Autoscale metric.
 
-It's also important to have event logging and visibility into security events across your enterprise. Azure Sentinel provides security information and event-management (SIEM) capabilities, along with artificial intelligence to help you protect against, detect, and respond to security events. This information helps security operations (SecOps) teams triage critical alerts and prioritize work effectively.
+It's also important to have event logging and visibility into security events across your enterprise. Microsoft Sentinel provides security information and event-management (SIEM) capabilities, along with artificial intelligence to help you protect against, detect, and respond to security events. This information helps security operations (SecOps) teams triage critical alerts and prioritize work effectively.
 
 The remainder of this module will focus on the Assess and Migrate stages. You'll find additional resources to help you with the Optimize and Monitor stages in the **Learn more** section at the end of this module.

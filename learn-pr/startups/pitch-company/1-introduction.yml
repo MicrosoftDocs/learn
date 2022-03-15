@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.pitch-company.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This unit is an overview of what pitches entail and why they're important.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

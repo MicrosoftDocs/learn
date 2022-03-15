@@ -7,7 +7,8 @@ metadata:
   description: In this exercise, you will deploy all of the necessary resources with scripts and configure the Logic Apps connection to Outlook.
   ms.date: 3/24/2021  
   author: amthomas46
-  ms.author: antho
+  ms.author: chnoring
+  ms.custom: team=nextgen, devx-track-azurecli
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
   zone_pivot_groups: dev-lang-csharp-node-python

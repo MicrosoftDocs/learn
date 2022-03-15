@@ -1,6 +1,6 @@
 
 
-The Contoso IT team wants a way to enable users to use SSO to access both on-premises resources and resources in Azure. Azure AD Seamless SSO is a technology that works with AD FS or with pass-through authentication. If the IT team enables this option, it automatically signs in users to Azure AD resources when they connect to Contoso's corporate network from their corporate devices.
+The Contoso IT team wants a way to enable users to use SSO to access both on-premises resources and resources in Azure. Azure AD Seamless SSO is a technology that works with Password Hash Synchronization or Pass-through Authentication. 
 
 Additionally, when Seamless SSO is enabled, users rarely need to type in their usernames, and never their passwords to sign in to Azure AD. This feature provides Contoso's users with easy access to their cloud-based applications without requiring any additional on-premises components.
 
@@ -70,7 +70,7 @@ When Contoso IT staff enable pass-through authentication on their Microsoft 365 
 3. The Authentication Agent validates the username and password against the local AD DS by using standard Windows APIs. At this point, this mechanism is similar to what AD FS uses. A username can be either the on-premises default username, usually `userPrincipalName`, or another attribute configured in Azure AD Connect, known as *Alternate ID*.
 4. The on-premises AD DS evaluates the request and returns the appropriate response to the Authentication Agent: success, failure, password expired, or user locked out.
 5. After it receives the response from AD DS, the Authentication Agent returns this response to Azure AD.
-6. Azure AD evaluates the response and responds to the user as appropriate. For example, Azure AD either signs in the user immediately, or requests Multi-Factor Authentication<!-- So far we've only used lowercase "multi-factor authentication." -->. If the user sign-in is successful, the user can access the application.
+6. Azure AD evaluates the response and responds to the user as appropriate. For example, Azure AD either signs in the user immediately, or requests MultiFactor Authentication<!-- So far we've only used lowercase "multi-factor authentication." -->. If the user sign-in is successful, the user can access the application.
 
 > [!NOTE]
 > You can consider deploying Azure AD Seamless SSO together with pass-through authentication to make the user experience even better when accessing cloud-based resources from domain-joined computers. When you deploy this feature, your users can access cloud resources without signing in if they are already signed in on their corporate domain-joined computers with their domain credentials.

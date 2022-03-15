@@ -111,7 +111,7 @@ Now run the app and API locally with a development server. This way, you'll be a
    ::: zone pivot="angular"
 
    ```bash
-   swa start http://localhost:4200 --api ./api
+   swa start http://localhost:4200 --api-location ./api
    ```
 
    ::: zone-end
@@ -119,7 +119,7 @@ Now run the app and API locally with a development server. This way, you'll be a
    ::: zone pivot="react"
 
    ```bash
-   swa start http://localhost:3000 --api ./api
+   swa start http://localhost:3000 --api-location ./api
    ```
 
    ::: zone-end
@@ -127,7 +127,7 @@ Now run the app and API locally with a development server. This way, you'll be a
    ::: zone pivot="svelte"
 
    ```bash
-   swa start http://localhost:5000 --api ./api
+   swa start http://localhost:5000 --api-location ./api
    ```
 
    ::: zone-end
@@ -135,7 +135,7 @@ Now run the app and API locally with a development server. This way, you'll be a
    ::: zone pivot="vue"
 
    ```bash
-   swa start http://localhost:8080 --api ./api
+   swa start http://localhost:8080 --api-location ./api
    ```
 
    ::: zone-end
@@ -582,7 +582,7 @@ Edit the file `react-app/src/components/NavBar.js`, and add this code to the bot
         <p>{userInfo && userInfo.identityProvider}</p>
       </div>
     </div>
-  );
+  )
 }
 ```
 

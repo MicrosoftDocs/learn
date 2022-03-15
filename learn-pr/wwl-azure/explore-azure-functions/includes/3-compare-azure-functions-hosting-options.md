@@ -18,7 +18,7 @@ There are two other hosting options which provide the highest amount of control 
 
 Hosting option | Details
 -- | --
-**ASE** | [App Service Environment (ASE)](/azure/app-service/environment/intro) is an App Service feature that provides a fully isolated and dedicated environment for securely running App Service apps at high scale. For more information on ASE please visit
+**ASE** | [App Service Environment (ASE)](/azure/app-service/environment/intro) is an App Service feature that provides a fully isolated and dedicated environment for securely running App Service apps at high scale.
 **Kubernetes** | Kubernetes provides a fully isolated and dedicated environment running on top of the Kubernetes platform. For more information visit [Azure Functions on Kubernetes with KEDA](/azure/azure-functions/functions-kubernetes-keda).
 
 

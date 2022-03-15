@@ -3,48 +3,48 @@ uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.10-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Three multiple-choice questions
+  description: Answer three multiple-choice questions.
   ms.date: 09/09/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
-content: Choose the best response for each question. Then select Check your answers.
+content: Choose the best response for each question. Then select **Check your answers**.
 quiz:
   title: Check your knowledge
   questions:
-    - content: "MRTK configuration profile for a scene should be set to ?"
+    - content: "What should the MRTK configuration profile for a scene be set to?"
       choices:
-        - content: "DefaultHoloLens1ConfigurationProfile "
+        - content: "DefaultHoloLens1ConfigurationProfile"
           isCorrect: false
-          explanation: A default profile that is optimized for deployment and testing on the HoloLens 1.
+          explanation: This is a default profile that's optimized for deployment and testing on HoloLens 1.
         - content: "DefaultHoloLens2ConfigurationProfile"
           isCorrect: true
-          explanation: A default profile that is optimized for deployment and testing on the HoloLens 2.
+          explanation: You set the MRTK configuration profile to this default profile that's optimized for deployment and testing on HoloLens 2.
         - content: "DefaultMixedRealityToolkitConfigurationProfile"
           isCorrect: false
-          explanation: When using this profile, you will be able to try out scenarios on VR (OpenVR, WMR) and HoloLens (1 and 2).
-    - content: "We transfer __________ between multiple devices to achieve spatial alignment. "
+          explanation: When you use this profile, you'll be able to try out scenarios on virtual reality (OpenVR, Windows Mixed Reality) and HoloLens (1 and 2).
+    - content: "What do you transfer between multiple devices to achieve spatial alignment?"
       choices:
-        - content: "Access Keys"
+        - content: "Access keys"
           isCorrect: false
-          explanation: Access Keys contains both primary key and secondary key to access your Spatial Anchors account.
+          explanation: Access keys contain both a primary key and a secondary key to access your Azure Spatial Anchors account.
         - content: "Anchor ID"
           isCorrect: true
-          explanation: Unique IDs assigned to the created Spatial Anchors.
-        - content: "Account Domain"
+          explanation: Unique IDs are assigned to the created spatial anchors and help you achieve spatial alignment.
+        - content: "Account domain"
           isCorrect: false
-          explanation: Name of the domain that you want to be the primary domain in Azure portal.
-    - content: "In this module, UI panel displays essential information about ___________?"
+          explanation: This is the name of the domain that you want to be the primary domain in the Azure portal.
+    - content: "In this module, what does the UI panel display essential information about?"
       choices:
-        - content: "Upcoming ASA session"
+        - content: "Upcoming Azure Spatial Anchors session"
           isCorrect: false
-          explanation: The ASA session that is likely to happen in future.
-        - content: "Previous ASA session"
+          explanation: This is the Spatial Anchors session that's likely to happen in the future.
+        - content: "Previous Azure Spatial Anchors session"
           isCorrect: false
-          explanation: The ASA session that has already happened.
-        - content: "Current ASA session"
+          explanation: This is the Spatial Anchors session that has already happened.
+        - content: "Current Azure Spatial Anchors session"
           isCorrect: true
-          explanation: The ASA session that is currently taking place.
+          explanation: The UI panel displays information about the Spatial Anchors session that's currently taking place.
    

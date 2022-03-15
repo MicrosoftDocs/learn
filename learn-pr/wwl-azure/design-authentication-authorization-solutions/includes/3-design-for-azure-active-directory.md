@@ -2,12 +2,12 @@ Let’s begin with [Azure Active Directory (Azure AD)](/azure/active-directory/f
 
 **Cloud identity solution**. You can use Azure AD as a cloud only solution for all your employee user accounts. Azure AD provides not only identity management but protection for those accounts. For example, role-based access control, conditional access, and access reviews. We’ll cover those features, later in this module. 
 
-**Hybrid identity solution**. You can also use Azure AD in hybrid environments. Azure AD [extends on-premises Active Directory](/azure/active-directory/hybrid/whatis-hybrid-identity) to the cloud. With Azure AD Connect, you can bring on-premises identities into Azure AD. Once the on-premises accounts are in Azure AD they will get the benefits of easy management and identity protection. 
+**Hybrid identity solution**. You can also use Azure AD in hybrid environments. Azure AD [extends on-premises Active Directory](/azure/active-directory/hybrid/whatis-hybrid-identity) to the cloud. With Azure AD Connect or Azure AD Connect cloud sync, you can bring on-premises identities into Azure AD. Once the on-premises accounts are in Azure AD they will get the benefits of easy management and identity protection. 
 
 :::image type="content" source="../media/on-premises-identities.png" alt-text="Azure AD Connect syncs Active Directory Domain Services and Azure Active Directory.":::
 
 
-### Best practices with Azure ID identity management
+## Best practices with Azure ID identity management
 
 - **Centralize identity management**. In a hybrid identity scenario, we recommend that you integrate your on-premises and cloud directories. Integration enables your IT team to manage accounts from one location, whenever an account is created. Integration also helps your users be more productive by providing a common identity for accessing both cloud and on-premises resources.
 

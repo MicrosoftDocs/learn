@@ -37,7 +37,7 @@ As great as data lakes are at inexpensively storing our raw data, they also brin
 
 ## The solution: Delta Lake
 
-Delta Lake is a file format that can help you build a data lake comprised of one or many tables in Delta Lake format. Delta Lake integrates tightly with Apache Spark, and uses an open format that is based on Parquet. Because it is an open-source format, Delta Lake is also supported by other data platforms, including [Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics/spark/apache-spark-what-is-delta-lake).
+Delta Lake is a file format that can help you build a data lake comprised of one or many tables in Delta Lake format. Delta Lake integrates tightly with Apache Spark, and uses an open format that is based on Parquet. Because it is an open-source format, Delta Lake is also supported by other data platforms, including [Azure Synapse Analytics](/azure/synapse-analytics/spark/apache-spark-what-is-delta-lake).
 
 Delta Lake makes data ready for analytics.
 

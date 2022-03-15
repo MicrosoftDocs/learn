@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: In this unit, you'll review what you have learned about Azure App Service and building webapps in Visual Studio Code.
   ms.date: 04/23/2020
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: msangapu-msft
+  ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

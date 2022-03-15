@@ -4,12 +4,13 @@ title: Design and implement Azure Firewall
 metadata:
   title: Design and implement Azure Firewall
   description: "Design and implement Azure Firewall"
-  ms.date: 07/16/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/6-azure-firewall.md)]
@@ -18,15 +19,15 @@ quiz:
   questions:
   - content: "Filtering of which direction of traffic does Azure Firewall support?"
     choices:
-    - content: "Inbound and Outbound."
-      isCorrect: true
-      explanation: "Correct. Azure Firewall supports inbound and outbound filtering. Inbound protection is typically used for non-HTTP/S protocols. For example RDP, SSH, and FTP protocols."
     - content: "Outbound only."
       isCorrect: false
       explanation: "Incorrect. Azure Firewall supports inbound and outbound filtering."
     - content: "Inbound only."
       isCorrect: false
       explanation: "Incorrect. Azure Firewall supports inbound and outbound filtering."
+    - content: "Inbound and Outbound."
+      isCorrect: true
+      explanation: "Correct. Azure Firewall supports inbound and outbound filtering. Inbound protection is typically used for non-HTTP/S protocols. For example RDP, SSH, and FTP protocols."
   - content: "Which one of the following priority levels is considered to be highest for a security rule?"
     choices:
     - content: "0"

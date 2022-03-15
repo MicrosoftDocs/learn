@@ -49,10 +49,10 @@ The ARM Template logic has been integrated into a Connection Prefab that drives 
 
 ## Create the App Registration
 
-Run the following command to create a service principal and configure its access to Azure resources
+Run the following command to create a service principal and configure its access to Azure resources.
 
 ```console
-az ad sp create-for-rbac --name ${appreg} --skip-assignment > AppCredentials.txt
+az ad sp create-for-rbac --name ${appreg} --role Contributor --scopes /subscriptions/<SUBSCRIPTION-ID> > AppCredentials.txt
 ```
 
 > [!NOTE]

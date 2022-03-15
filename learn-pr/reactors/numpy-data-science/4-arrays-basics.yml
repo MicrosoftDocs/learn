@@ -9,6 +9,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
+  ms.custom: team=nextgen
 durationInMinutes: 18
 content: |
   [!include[](includes/4-arrays-basics.md)]

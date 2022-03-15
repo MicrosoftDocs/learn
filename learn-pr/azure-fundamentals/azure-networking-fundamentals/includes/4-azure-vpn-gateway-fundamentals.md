@@ -1,10 +1,10 @@
 VPNs use an encrypted tunnel within another network. They're typically deployed to connect two or more trusted private networks to one another over an untrusted network (typically the public internet). Traffic is encrypted while traveling over the untrusted network to prevent eavesdropping or other attacks.
 
-For our Tailwind Traders scenario, VPNs can enable branch offices to share sensitive information between locations. For example, let's say that your offices on the East Coast region of North America need to access your company's private customer data, which is stored on servers that are physically located in a West Coast region. A VPN that connects your East Coast offices to your West Coast servers allows your company to securely access your private customer data.
+For our Tailwind Traders scenario, VPNs can enable branch offices to share sensitive information between locations. For example, let's say that your offices on the East coast region of North America need to access your company's private customer data, which is stored on servers that are physically located in a West coast region. A VPN can connect your East coast offices to your West coast servers allowing your company to securely access your private customer data.
 
 ## VPN gateways
 
-A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances are deployed in Azure Virtual Network instances and enable the following connectivity:
+A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances are deployed in a dedicated subnet of the virtual network and enable the following connectivity:
 
  -  Connect on-premises datacenters to virtual networks through a *site-to-site* connection.
  -  Connect individual devices to virtual networks through a *point-to-site* connection.
@@ -12,8 +12,7 @@ A VPN gateway is a type of virtual network gateway. Azure VPN Gateway instances 
 
 :::image type="content" source="../media/vpngateway-site-to-site-connection-diagram-0e1e7db2.png" alt-text="Visualization of a VPN connection to Azure.":::
 
-
-All transferred data is encrypted in a private tunnel as it crosses the internet. You can deploy only one VPN gateway in each virtual network, but you can use one gateway to connect to multiple locations, which includes other virtual networks or on-premises datacenters.
+All data transfer is encrypted inside a private tunnel as it crosses the internet. You can deploy only one VPN gateway in each virtual network, but you can use one gateway to connect to multiple locations, which includes other virtual networks or on-premises datacenters.
 
 When you deploy a VPN gateway, you specify the VPN type: either *policy-based* or *route-based*. The main difference between these two types of VPNs is how traffic to be encrypted is specified. In Azure, both types of VPN gateways use a pre-shared key as the only method of authentication. Both types also rely on Internet Key Exchange (IKE) in either version 1 or version 2 and Internet Protocol Security (IPSec). IKE is used to set up a security association (an agreement of the encryption) between two endpoints. This association is then passed to the IPSec suite, which encrypts and decrypts data packets encapsulated in the VPN tunnel.
 
@@ -48,77 +47,14 @@ Key features of route-based VPN gateways in Azure include:
 
 The capabilities of your VPN gateway are determined by the SKU or size that you deploy. This table shows the main capabilities of each available SKU.
 
-:::row:::
-  :::column:::
-    **SKU**
-  :::column-end:::
-  :::column:::
-    **Site-to-site/Network-to-network tunnels**
-  :::column-end:::
-  :::column:::
-    **Aggregate throughput benchmark**
-  :::column-end:::
-  :::column:::
-    **Border Gateway Protocol support**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Basic <sup>\[See Note\]</sup>
-  :::column-end:::
-  :::column:::
-    Maximum: 10
-  :::column-end:::
-  :::column:::
-    100 Mbps
-  :::column-end:::
-  :::column:::
-    Not supported
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    VpnGw1/Az
-  :::column-end:::
-  :::column:::
-    Maximum: 30
-  :::column-end:::
-  :::column:::
-    650 Mbps
-  :::column-end:::
-  :::column:::
-    Supported
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    VpnGw2/Az
-  :::column-end:::
-  :::column:::
-    Maximum: 30
-  :::column-end:::
-  :::column:::
-    1 Gbps
-  :::column-end:::
-  :::column:::
-    Supported
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    VpnGw3/Az
-  :::column-end:::
-  :::column:::
-    Maximum: 30
-  :::column-end:::
-  :::column:::
-    1.25 Gbps
-  :::column-end:::
-  :::column:::
-    Supported
-  :::column-end:::
-:::row-end:::
-
+|SKU | Site-to-site/Network-to-network tunnels | Aggregate throughput benchmark | Border Gateway Protocol support |
+|---|---|---|---|
+| Basic [See Note] | Maximum: 10 | 100 Mbps | Not supported|
+|VpnGw1/Az |Maximum: 30 |650 Mbps |Supported|
+|VpnGw2/Az |Maximum: 30 |1 Gbps |Supported|
+|VpnGw3/Az |Maximum: 30 |1.25 Gbps |Supported|
+|VpnGw4/Az |Maximum: 100 |5 Gbps Gbps |Supported|
+|VpnGw5/Az |Maximum: 100 |10 Gbps |Supported|
 
 > [!NOTE]
 > A Basic VPN gateway should only be used for Dev/Test workloads. In addition, it's unsupported to migrate from Basic to the VpnGW1/2/3/Az SKUs at a later time without having to remove the gateway and redeploy.
@@ -147,7 +83,6 @@ The following diagram shows this combination of resources and their relationship
 
 :::image type="content" source="../media/resource-requirements-for-vpn-gateway-2518703e.png" alt-text="Visualization of resource requirements for a VPN gateway.":::
 
-
 ### Required on-premises resources
 
 To connect your datacenter to a VPN gateway, you'll need these on-premises resources:
@@ -165,13 +100,11 @@ By default, VPN gateways are deployed as two instances in an active/standby conf
 
 :::image type="content" source="../media/active-standby-c4a3c14d.png" alt-text="Visualization of active standby virtual network gateway.":::
 
-
 ### Active/active
 
 With the introduction of support for the BGP routing protocol, you can also deploy VPN gateways in an active/active configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an additional VPN device on-premises.
 
 :::image type="content" source="../media/dual-redundancy-d76100c9.png" alt-text="Visualization of active active virtual network gateway.":::
-
 
 ### ExpressRoute failover
 

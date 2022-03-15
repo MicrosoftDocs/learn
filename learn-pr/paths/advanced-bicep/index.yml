@@ -1,0 +1,47 @@
+### YamlMime:LearningPath
+uid: learn.advanced-bicep
+metadata:
+  title: Advanced Bicep
+  description: Learn how to use Bicep for complex deployments to Azure.
+  brand: azure
+  ms.date: 12/03/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Advanced Bicep
+summary: |
+  Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code.
+  Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your
+  deployments more consistent and repeatable.
+
+  Take this learning path to understand how you can use Bicep with complex deployment scenarios. In it, you'll:
+
+  * Deploy advanced Azure resource types, and understand the Azure resource model.
+  * Deploy resources at the subscription, management group, and tenant level.
+  * Build deployment scripts that define custom steps in your Bicep templates.
+  * Ensure reusability, consistency, and compliance by creating libraries of modules and templates.
+
+  > [!TIP]
+  > Want to learn Bicep live from subject matter experts? [Learn Live with our experts every Tuesday (Pacific time) beginning March 8, 2022.](https://aka.ms/learnlive-iac-and-bicep)
+
+  [!include[](../../includes/bicep-paths.md)]
+prerequisites: |
+  This learning path assumes you have familiarity with deploying Azure resources by using Bicep.
+iconUrl: /learn/achievements/bicep/advanced-bicep.svg
+levels:
+- advanced
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+- azure-resource-manager
+modules:
+- learn.azure.deploy-resources-different-scopes
+- learn.azure.extend-resource-manager-template-deployment-scripts
+- learn.azure.arm-template-specs
+- learn.azure.share-bicep-modules-using-private-registries
+trophy:
+  uid: learn.advanced-bicep.trophy

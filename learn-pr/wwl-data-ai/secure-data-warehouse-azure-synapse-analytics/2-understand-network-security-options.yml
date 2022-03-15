@@ -4,12 +4,13 @@ title: Understand network security options for Azure Synapse Analytics
 metadata:
   title: Understand network security options for Azure Synapse Analytics
   description: "Understand network security options for Azure Synapse Analytics"
-  ms.date: 06/17/2021
+  ms.date: 02/24/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-network-security-options.md)]

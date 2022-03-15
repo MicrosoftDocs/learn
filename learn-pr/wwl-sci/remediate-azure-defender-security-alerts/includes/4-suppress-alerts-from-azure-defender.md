@@ -1,4 +1,4 @@
-The various Azure Defender plans detect threats in any area of your environment and generate security alerts.  When a single alert isn't interesting or relevant, you can manually dismiss it. Alternatively, use the suppression rules feature to automatically dismiss similar alerts in the future. Typically, you'd use a suppression rule to:
+The various Defender for Cloud plans detect threats in any area of your environment and generate security alerts.  When a single alert isn't interesting or relevant, you can manually dismiss it. Alternatively, use the suppression rules feature to automatically dismiss similar alerts in the future. Typically, you'd use a suppression rule to:
 
 - Suppress alerts that you've identified as false positives
 
@@ -10,7 +10,7 @@ Your suppression rules define the criteria for which alerts should be automatica
 
 To create a rule directly in the Azure portal:
 
-From Security Center's security alerts page:
+From Defender for Cloud's security alerts page:
 
 - Locate the specific alert you don't want to see anymore, and from the ellipsis menu (...) for the alert, select Create suppression rule:
 
@@ -42,9 +42,9 @@ Save the rule.
 
 ## View suppressed alerts
 
-Alerts that match your enabled suppression rules will still be generated, but their state will be set to dismissed. You can see the state in the Azure portal or however you access your Security Center security alerts.
+Alerts that match your enabled suppression rules will still be generated, but their state will be set to dismissed. You can see the state in the Azure portal or however you access your Defender for Cloud security alerts.
 
-Use Security Center's filter to view alerts that have been dismissed by your rules.
+Use Defender for Cloud's filter to view alerts that have been dismissed by your rules.
 
-- From Security Center's security alerts page, open the filter options, and select Dismissed.
+- From Defender for Cloud's security alerts page, open the filter options, and select **Dismissed**.
 

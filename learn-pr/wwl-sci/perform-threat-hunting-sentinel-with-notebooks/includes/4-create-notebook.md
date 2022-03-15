@@ -1,8 +1,8 @@
-To start with Notebooks, use the "Getting Started Guide For Azure Sentinel ML Notebooks" notebook.
+To start with Notebooks, use the "Getting Started Guide For Microsoft Sentinel ML Notebooks" notebook.
 
-1. In the Azure Sentinel Workspace, select **Notebooks** (Preview)
+1. In the Microsoft Sentinel Workspace, select **Notebooks** (Preview)
 
-1. Select *A Getting Started Guide For Azure Sentinel ML Notebooks*. Then select **Launch notebook** in the bottom right.
+1. Select *A Getting Started Guide For Microsoft Sentinel ML Notebooks*. Then select **Launch notebook** in the bottom right.
 
 1. Next, you need to select an AzureML Workspace. Select **Create new**.
 
@@ -30,7 +30,7 @@ To start with Notebooks, use the "Getting Started Guide For Azure Sentinel ML No
 
 1. Select the **Notebooks** button on the toolbar on the left side of your screen.
 
-1. A new area showing your files will appear. In Users/yourname/ select the *A Getting Started Guide For Azure Sentinel ML Notebooks* file.
+1. A new area showing your files will appear. In Users/yourname/ select the *A Getting Started Guide For Microsoft Sentinel ML Notebooks* file.
 
 1. Next to the Compute instance selector at the top of the screen, select the **…**, and select **New Compute**.
 

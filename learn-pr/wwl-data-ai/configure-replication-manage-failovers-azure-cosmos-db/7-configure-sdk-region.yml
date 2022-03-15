@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.configure-sdk-region
+title: Configure SDK region
+metadata:
+  title: Configure SDK region
+  description: "Configure SDK region"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-configure-sdk-region.md)]

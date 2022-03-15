@@ -79,13 +79,13 @@ The correlations that we've seen before in this dataset are still a problem here
 
 |  | column | row | corr |
 | --- | --- | --- | --- |
-| 0 | Folate_Tot_(µg) | Folate_DFE_(µg) | 0.98 |
-| 1 | Folic_Acid_(µg) | Folate_DFE_(µg) | 0.95 |
-| 2 | Folate_DFE_(µg) | Folate_Tot_(µg) | 0.98 |
-| 3 | Vit_A_RAE | Retinol_(µg) | 0.99 |
-| 4 | Retinol_(µg) | Vit_A_RAE | 0.99 |
-| 5 | Vit_D_µg | Vit_D_IU | 1 |
-| 6 | Vit_D_IU | Vit_D_µg | 1 |
+| **0** | Folate_Tot_(µg) | Folate_DFE_(µg) | 0.98 |
+| **1** | Folic_Acid_(µg) | Folate_DFE_(µg) | 0.95 |
+| **2** | Folate_DFE_(µg) | Folate_Tot_(µg) | 0.98 |
+| **3** | Vit_A_RAE | Retinol_(µg) | 0.99 |
+| **4** | Retinol_(µg) | Vit_A_RAE | 0.99 |
+| **5** | Vit_D_µg | Vit_D_IU | 1 |
+| **6** | Vit_D_IU | Vit_D_µg | 1 |
 
 Before we drop anything from the `df` DataFrame, let's take a quick look at these correlations visually. Let's start with `Folate_Tot_(µg)` and `Folate_DFE_(µg)`.
 
@@ -101,7 +101,7 @@ The output is:
 > Output
 
 `<matplotlib.collections.PathCollection at 0x1f42612a888>`
-:::image type="content" source="../media/matplotlib-scatter-1.svg" alt-text="Scatter plot output.":::
+:::image type="content" source="../media/matplotlib-scatter-1.svg" alt-text="Screenshot that shows the scatter plot output with a dramatic correlation.":::
 ***
 
 This is a dramatic correlation!
@@ -133,7 +133,7 @@ In the following code cell, run a scatterplot of another correlative pair of fea
 
   `<matplotlib.collections.PathCollection at 0x1f4261a3688>`
 
-  :::image type="content" source="../media/matplotlib-scatter-2.svg" alt-text="Scatter plot output.":::
+  :::image type="content" source="../media/matplotlib-scatter-2.svg" alt-text="Screenshot that shows the scatter plot output with a problematic correlation.":::
   ***
 
 </details>

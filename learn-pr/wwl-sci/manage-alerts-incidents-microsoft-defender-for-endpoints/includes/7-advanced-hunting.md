@@ -14,7 +14,7 @@ Advanced hunting data can be categorized into two distinct types, each consolida
 
 The following reference lists all the tables in the advanced hunting schema.
 
-- **DeviceAlertEvents** - Alerts on Microsoft Defender Security Center
+- **DeviceAlertEvents** - Alerts on Microsoft 365 Defender portal
 
 - **DeviceInfo** - Device information, including OS information
 
@@ -28,7 +28,7 @@ The following reference lists all the tables in the advanced hunting schema.
 
 - **DeviceRegistryEvents**  - Creation and modification of registry entries
 
-- **DeviceLogonEvents** -	Sign-ins and other authentication events
+- **DeviceLogonEvents** - Sign-ins and other authentication events
 
 - **DeviceImageLoadEvents** - DLL loading events
 

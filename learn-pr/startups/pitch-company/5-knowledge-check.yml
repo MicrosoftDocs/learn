@@ -1,0 +1,76 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.pitch-company.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Review concepts of startup pitching. Topics include pitch deck material, how to polish presentation skills, and how to prepare pitch deck slides.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 4
+quiz:
+  questions:
+  - content: "Which of the following themes belong in an investor pitch deck?"
+    choices:
+    - content: "Traction."
+      isCorrect: false
+      explanation: "Incorrect. A slide on traction is a good idea, but it's not the only option."
+    - content: "Team."
+      isCorrect: false
+      explanation: "Incorrect. A slide on the startup team is a good idea, but it's not the only option."
+    - content: "Customer acquisition."
+      isCorrect: false
+      explanation: "Incorrect. A slide on customer acquisition is a good idea, but it's not the only option."
+    - content: "Revenue model."
+      isCorrect: false
+      explanation: "Incorrect. A slide on the startup revenue model is a good idea, but it's not the only option."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct. A pitch deck should include slides on traction, the team, customer acquisition, and the revenue model. The pitch deck might also include an overview of the company, a description of the problem or opportunity, and other information."
+
+  - content: "You should create a readable version of your pitch deck because:"
+    choices:
+    - content: "Some investors make investment decisions without meeting the startup's founder."
+      isCorrect: false
+      explanation: "Incorrect. Investors might want a readable version of the pitch deck before inviting you to present an idea. But it's unlikely that an investor would commit to funding a startup without first meeting the founder."
+    - content: "Some investors use a readable deck for screening deal-flow, and they'll want to read yours before they decide to invite you to pitch."
+      isCorrect: true
+      explanation: "Correct. Many investors request a readable version of the pitch deck before they'll invite a founder to present an idea. This preview allows the investors to screen their investment options."
+    - content: "It's a useful asset to have available on your website."
+      isCorrect: false
+      explanation: "Incorrect. It's not a good idea to post a pitch deck on a website. Pitch decks usually contain confidential details, so it's best to be cautious about who has access to your readable deck."
+    - content: "Customers like to know more about the companies they're buying from."
+      isCorrect: false
+      explanation: "Incorrect. Many customers like to know about companies they buy from. But a pitch deck is a document that you share with potential investors, not customers."
+
+  - content: "If you're the CEO of your startup but aren't a confident presenter, how should you go about improving your pitch?"
+    choices:
+    - content: "Ask one of your cofounders to do it instead."
+      isCorrect: false
+      explanation: "Incorrect. This solution might work temporarily. But at some point, investors will probably prefer to meet all founders of a startup they invest in. It's better for you and all your cofounders to develop strong communication skills, so that you can all pitch the startup at every opportunity."
+    - content: "Record a video of your pitch and play that in investor meetings."
+      isCorrect: false
+      explanation: "Incorrect. This solution might work temporarily. But at some point, investors will probably prefer to meet you in person or in a real-time online meeting. It's better to develop strong in-person communication skills to prepare for those meetings."
+    - content: "Work with mentors to refine the content of your pitch, work on vocal technique, and practice it until you know it thoroughly."
+      isCorrect: true
+      explanation: "Correct. It's important to develop strong communication skills so that you can deliver a compelling pitch. Through coaching and practice, you can achieve this goal."
+    - content: "Take beta blockers before your presentation."
+      isCorrect: false
+      explanation: "Incorrect. Beta blockers might lower your blood pressure or protect your heart, but they won't necessarily improve your pitch. To attract investors, it's better to develop strong communication skills."
+
+  - content: "Roughly how many words should go on each slide for a demo day pitch?"
+    choices:
+    - content: "0-10."
+      isCorrect: true
+      explanation: "Correct. In demo day pitches, presenters should focus on communicating key points verbally, not through slides that are packed with written words and images. The role of the slides is to support your talking points with an image, chart, or other single piece of information that's expressed in a limited number of words."
+    - content: "10-20."
+      isCorrect: false
+      explanation: "Incorrect. In demo day pitches, presenters should focus on communicating key points verbally, not through slides that are packed with written words and images. The role of the slides is to support your talking points with an image, chart, or other single piece of information that's expressed in a limited number of words."
+    - content: "20-50."
+      isCorrect: false
+      explanation: "Incorrect. In demo day pitches, presenters should focus on communicating key points verbally, not through slides that are packed with written words and images. The role of the slides is to support your talking points with an image, chart, or other single piece of information that's expressed in a limited number of words."
+    - content: "50-100."
+      isCorrect: false
+      explanation: "Incorrect. In demo day pitches, presenters should focus on communicating key points verbally, not through slides that are packed with written words and images. The role of the slides is to support your talking points with an image, chart, or other single piece of information that's expressed in a limited number of words."

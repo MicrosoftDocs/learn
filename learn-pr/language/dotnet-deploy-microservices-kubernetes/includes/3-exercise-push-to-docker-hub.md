@@ -46,7 +46,7 @@ Follow these steps to create and run Docker containers from the Docker files you
     docker-compose up
     ```
 
-1. When the operation has finished, in a browser tab enter `http:\\localhost:5902` to view the Contoso Pizza Shop menu.
+1. When the operation has finished, in a browser tab enter `http://localhost:5902` to view the Contoso Pizza Shop menu.
 
 ## Sign in to Docker Hub
 

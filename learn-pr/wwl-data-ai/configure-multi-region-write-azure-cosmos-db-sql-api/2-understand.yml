@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.understand
+title: Understand multi-region write
+metadata:
+  title: Understand multi-region write
+  description: "Understand multi-region write"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-understand.md)]

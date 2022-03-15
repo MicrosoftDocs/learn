@@ -5,8 +5,8 @@ metadata:
   title: Choose a Microsoft-hosted or self-hosted build agent
   description: Learn about some of the factors to consider when you choose a build agent.
   ms.date: 06/04/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

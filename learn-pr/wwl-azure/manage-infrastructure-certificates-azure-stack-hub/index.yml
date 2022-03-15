@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub
+metadata:
+  title: Manage infrastructure certificates for Azure Stack Hub
+  description: "Manage infrastructure certificates for Azure Stack Hub"
+  ms.date: 02/28/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage infrastructure certificates for Azure Stack Hub
+summary: |
+  Learn to validate the generated public key infrastructure (PKI) certificates are for pre-deployment of Azure Stack Hub.
+  This module prepares you for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
+abstract: |
+  * Recommend certificate strategy for Azure Stack Hub.
+  * Validate certificates for Azure Stack Hub.
+  * Run secret rotation PowerShell cmdlet for external certificates for Azure Stack Hub.
+prerequisites: |
+  * Working experience creating, assigning, and securing corporate identities.
+  * Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure-stack
+- azure-stack-hub
+units:
+- learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.introduction
+- learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.recommend-certificate-strategy
+- learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.validate-certificates
+- learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.run-secret-rotation-powershell-cmdlet-for-external-certificates
+- learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.knowledge-check
+- learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.summary
+badge:
+  uid: learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.badge

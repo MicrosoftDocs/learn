@@ -7,7 +7,7 @@ AD DS trusts enable access to resources in a multiple-domain and multiple-forest
 In a multiple-domain AD DS forest, by default, domains form a tree-like structure with a two-way transitive trust relationship between directly adjacent domains. Trust transitivity implies that a path of trust exists between all the AD DS domains in the same forest. Additionally, you can create other types of trusts. The following table describes the main trust types.
 
 |Trust type|Description|Direction|Description|
-|-|--|||
+|----|--------------|------------|------------|
 |External|Nontransitive|One-way or two-way|Enable resource access with an individual AD DS domain in another forest.|
 |Realm|Transitive or nontransitive|One-way or two-way|Establish an authentication path between a Windows Server AD DS domain and a Kerberos version 5 (v5) protocol realm that implements by using a directory service other than AD DS.|
 |Forest (complete or selective)|Transitive|One-way or two-way|Allow two forests to share resources.|
@@ -66,4 +66,10 @@ The main steps in the process are:
 1. Create a forest trust relationship from the first forest to the second one. Use Active Directory Domains and Trusts to establish one-way trust relationship from the first forest to the second forest.
 1. Create a forest trust relationship from the second forest to the first one. Use Active Directory Domains and Trusts to establish one-way trust relationship from the second forest to the first forest.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4M7ug]
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M7ug]
+
+---
+
+
+
+---

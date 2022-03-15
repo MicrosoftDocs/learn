@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.capture-end-user-satisfaction
+title: Capture end-user satisfaction
+metadata:
+  title: Capture end-user satisfaction
+  description: "Capture end-user satisfaction"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-capture-end-user-satisfaction.md)]

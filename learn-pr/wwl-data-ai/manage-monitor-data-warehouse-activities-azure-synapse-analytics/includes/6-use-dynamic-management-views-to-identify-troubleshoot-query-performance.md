@@ -63,7 +63,7 @@ WHERE   [label] = 'My Query';
 
 ## Step 2
 
-Use the Request ID to retrieve the querys distributed SQL (DSQL) plan from sys.dm_pdw_request_steps
+Use the Request ID to retrieve the queries distributed SQL (DSQL) plan from sys.dm_pdw_request_steps
 
 ```sql
 -- Find the distributed query plan steps for a specific query.
@@ -138,4 +138,4 @@ You can also monitor additional aspects of Azure Synapse SQL pools including:
 -	Monitoring transaction log
 -	Monitoring PolyBase
 
-You can view information about [monitoring these areas here]( https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-monitor#monitor-waiting-queries)
+You can view information about [monitoring these areas here](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-monitor)

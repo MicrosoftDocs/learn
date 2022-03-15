@@ -64,11 +64,11 @@ There are other reasons for wanting to output to the screen, but the preceding t
 
 So how would you print to the screen? In F#, there are three different functions you can use. They're `printf`, `printfn`, and even `Console.WriteLine`. So what's the difference?
 
-- `printfn`: It prints to `stdout` and adds a newline character.
-- `printf`: It prints to `stdout` but with no newline character.
+- `printf`: It prints to `stdout` inline (no newline character).
+- `printfn `: It prints to `stdout` adds a newline character.
 - `Console.WriteLine`: This function is from the `System` namespace and works in all .NET languages.
 
-Now you know the difference, but which one should you use? Well, `printfn` and `printf` are considered more idiomatic and preferred in F#.
+Now you know the difference, but which one should you use? Well, `printf` and `printfn` are considered more idiomatic and preferred in F#.
 
 ## Formatting
 
@@ -115,6 +115,6 @@ There are many format specifiers. Here are some you're likely to encounter.
 |---------|---------|-------|
 | %s    | Used for strings and unescaped contents | printf "Hello %s" name |
 | %d, %i | Formatted as a decimal integer, signed if the basic integer type is signed  | printf "Age: %i" 65 |
-| %b | Boolean `true` or `false` | printf "Setting on: " true |
+| %b | Boolean `true` or `false` | printf "Setting on: %b" true |
 
 There's much more information on formatting. If you want to know about all the capabilities, see the [formatting in F# doc](/dotnet/fsharp/language-reference/plaintext-formatting).

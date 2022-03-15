@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-fslogix.configure-cloud-cache
+title: Configure Cloud Cache
+metadata:
+  title: Configure Cloud Cache
+  description: "Configure Cloud Cache"
+  ms.date: 03/14/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-configure-cloud-cache.md)]

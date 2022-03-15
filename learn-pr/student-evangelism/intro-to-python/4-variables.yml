@@ -3,13 +3,13 @@ uid: learn.student-evangelism.intro-to-python.variables-and-data-types
 title: Variables and basic data types in Python
 metadata:
   title: Variables and basic data types in Python
-  description: Learn about basic data types in Python and how to declare and
-    assign variables
+  description: Learn about basic data types in Python and how to declare and assign variables.
   ms.date: 06/14/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
+  ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
   [!include[](includes/4-variables.md)]

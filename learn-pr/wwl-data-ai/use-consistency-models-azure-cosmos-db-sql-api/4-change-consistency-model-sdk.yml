@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.change-consistency-model-sdk
+title: Change consistency model with the SDK
+metadata:
+  title: Change consistency model with the SDK
+  description: "Change consistency model with the SDK"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-change-consistency-model-sdk.md)]

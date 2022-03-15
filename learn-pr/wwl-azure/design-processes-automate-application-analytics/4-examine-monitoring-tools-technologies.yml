@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-processes-to-automate-application-analytics.examine-monitoring-tools-technologies
+title: Examine monitoring tools and technologies
+metadata:
+  title: Examine monitoring tools and technologies
+  description: "Examine monitoring tools and technologies"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-examine-monitoring-tools-technologies.md)]

@@ -4,12 +4,13 @@ title: Operationalize data transformation with Azure Synapse serverless SQL pool
 metadata:
   title: Operationalize data transformation with Azure Synapse serverless SQL pools using stored procedures
   description: "Operationalize data transformation with Azure Synapse serverless SQL pools using stored procedures"
-  ms.date: 03/23/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-operationalize-data-transformation-using-stored-procedures.md)]

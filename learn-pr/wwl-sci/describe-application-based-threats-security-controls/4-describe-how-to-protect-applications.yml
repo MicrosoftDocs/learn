@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-application-based-threats-security-controls.describe-how-application-hardening-improves-application-security
+title: Describe how to protect your applications
+metadata:
+  title: Describe how to protect your applications
+  description: "Describe how to protect your applications"
+  ms.date: 02/14/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-describe-how-to-protect-applications.md)]

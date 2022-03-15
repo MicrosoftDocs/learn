@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed
+metadata:
+  title: Handle events with Azure Functions and Azure Cosmos DB SQL API change feed
+  description: "Use Azure Functions bindings to integrate a function with Azure Cosmos DB SQL API."
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Handle events with Azure Functions and Azure Cosmos DB SQL API change feed
+summary: Use Azure Functions bindings to integrate a function with Azure Cosmos DB SQL API.
+abstract: |
+  After completing this module, you'll be able to:
+  - Create an Azure Function using the Azure Cosmos DB trigger
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+iconUrl: /learn/achievements/azure-cosmos-db-sql-api-azure-functions.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.introduction
+- learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.understand-azure-function-bindings
+- learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.configure-function-bindings
+- learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.develop-function
+- learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.exercise-archive-data-using-azure-functions
+- learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.knowledge-check
+- learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.summary
+badge:
+  uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.badge

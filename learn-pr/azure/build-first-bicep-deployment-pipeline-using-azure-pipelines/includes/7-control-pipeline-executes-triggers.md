@@ -71,3 +71,15 @@ When you create a branch trigger *and* a scheduled trigger in the same pipeline,
 
 > [!TIP]
 > It's a good practice to set triggers for each pipeline. If you don't set triggers, by default, your pipeline automatically runs whenever any file changes on any branch, which often isn't what you want.
+
+## Concurrency control
+
+By default, Azure Pipelines allows multiple instances of your pipeline to run simultaneously. This can happen when you make multiple commits to a branch within a short time.
+
+In some situations, having multiple concurrent runs of your pipeline isn't a problem. But when you work with deployment pipelines, it can be challenging to ensure that your pipeline runs aren't overwriting your Azure resources or configuration in ways that you don't expect.
+
+To avoid these problems, you can use the `batch` keyword with a trigger, like in this example:
+
+:::code language="yaml" source="code/7-batch.yml" highlight="2":::
+
+When your trigger fires, Azure Pipelines ensures that it waits for any active pipeline run to complete. Then, it starts a new run with all of the changes that have accumulated since the last run.

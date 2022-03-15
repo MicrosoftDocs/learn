@@ -49,7 +49,7 @@ Deployments to devices need to be done under tight control in production environ
     4. Create a service principal for your subscription with the Azure CLI.
 
        ```
-       az ad sp create-for-rbac --name <name>
+       az ad sp create-for-rbac --name <name> --role Contributor --scopes /subscriptions/<subscriptionid>
        ```
 
     5. You should see output similar to the following.

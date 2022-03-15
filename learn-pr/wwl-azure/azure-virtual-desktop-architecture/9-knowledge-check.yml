@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-virtual-desktop-architecture.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "While deploying Azure Virtual desktop, what is used to integrate Active Directory Domain Services (AD DS) with Azure Active Directory (Azure AD)?"
+    choices:
+    - content: "ExpressRoute"
+      isCorrect: false
+      explanation: "That's incorrect. Azure ExpressRoute creates private connections between Azure datacenters and infrastructure on the premises or in a colocation."
+    - content: "Azure AD Connect"
+      isCorrect: true
+      explanation: "That's correct. Azure AD Connect is the Microsoft tool designed to meet and accomplish hybrid identity in the organization."
+    - content: "RD Connection Broker"
+      isCorrect: false
+      explanation: "That's incorrect. Remote Desktop Connection Broker manages incoming remote desktop connections to the Session Host."
+  - content: "Which of the following is used to connect remote users to Azure Virtual Desktop from any internet-connected device running an Azure Virtual Desktop client?"
+    choices:
+    - content: "Remote Connection Gateway service"
+      isCorrect: true
+      explanation: "That's correct. The Remote Connection Gateway service connects remote users to Azure Virtual Desktop apps and desktops from any internet-connected device that can run an Azure Virtual Desktop client. The client connects to a gateway, which then orchestrates a connection from a virtual machine (VM) back to the gateway."
+    - content: "RD Connection Broker"
+      isCorrect: false
+      explanation: "That's incorrect. Remote Desktop Connection Broker manages incoming remote desktop connections to the Session Host."
+    - content: "Web Access service"
+      isCorrect: false
+      explanation: "That's incorrect. Remote Web Access provides a browser experience for accessing applications and data from anywhere that has an Internet connection by using almost any device."
+  - content: "An insurance company has a team of remote workers that need to use Windows-based software to develop company applications. The team members use a variety operating systems such as macOS, Linux, and Windows. Which Azure compute service would resolve this scenario?"
+    choices:
+    - content: "Azure App Service"
+      isCorrect: false
+      explanation: "That's incorrect. Azure App Service is a fully managed web hosting service for building web applications, services, and RESTful APIs."
+    - content: "Azure Virtual Desktop"
+      isCorrect: true
+      explanation: "That's correct. Azure Virtual Desktop enables the team members to run Windows in the cloud, with access to the required applications for their company's needs."
+    - content: "Azure Container Instances"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Container Instances are for data processing where source data is ingested, processed, and placed in a durable store such as Azure Blob storage."

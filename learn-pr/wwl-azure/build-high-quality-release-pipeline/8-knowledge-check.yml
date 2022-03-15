@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-high-quality-release-pipeline.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/25/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices describe how do you measure the quality of your release process?"
+    choices:
+    - content: "Based on the success and failures of your pipeline."
+      isCorrect: false
+      explanation: "Incorrect. The quality of your release process cannot be measured directly because it is a process. What you can measure is how well your process works."
+    - content: "Based on your pipeline's configuration and CI/CD implementation."
+      isCorrect: false
+      explanation: "Incorrect. The quality of your release process cannot be measured directly because it is a process. What you can measure is how well your process works."
+    - content: "The quality of your release process cannot be measured directly because it is a process."
+      isCorrect: true
+      explanation: "Correct. The quality of your release process cannot be measured directly because it is a process. What you can measure is how well your process works."
+  - content: "Which of the following choices describes the Release Notes and documentation importance?"
+    choices:
+    - content: "To comply with the internal company process and audit."
+      isCorrect: false
+      explanation: "Incorrect. When you deploy a new release to a customer or install new software on your server, you want to communicate what has been released. The usual way to do this is the use of release notes."
+    - content: "It is essential when you want to communicate what has been released to your customer."
+      isCorrect: true
+      explanation: "Correct. When you deploy a new release to a customer or install new software on your server, you want to communicate what has been released. The usual way to do this is the use of release notes."
+    - content: "To control what was delivered during the sprint."
+      isCorrect: false
+      explanation: "Incorrect. When you deploy a new release to a customer or install new software on your server, you want to communicate what has been released. The usual way to do this is the use of release notes."
+  - content: "Which of the following choices isn't a Release Management tool?"
+    choices:
+    - content: "Azure Repos."
+      isCorrect: true
+      explanation: "Correct. Azure Repos is a Source Control tool."
+    - content: "Azure Pipelines."
+      isCorrect: false
+      explanation: "Incorrect. Azure Repos is a Source Control tool."
+    - content: "Jenkins."
+      isCorrect: false
+      explanation: "Incorrect. Azure Repos is a Source Control tool."

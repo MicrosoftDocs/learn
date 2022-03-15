@@ -4,12 +4,13 @@ title: Describe the analytical store
 metadata:
   title: Describe the analytical store
   description: "Describe the analytical store"
-  ms.date: 07/28/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/5-describe-analytical-store.md)]

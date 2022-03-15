@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-sql-api.create-queries-sql
+title: Create queries with SQL
+metadata:
+  title: Create queries with SQL
+  description: "Create queries with SQL"
+  ms.date: 01/19/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-create-queries-sql.md)]

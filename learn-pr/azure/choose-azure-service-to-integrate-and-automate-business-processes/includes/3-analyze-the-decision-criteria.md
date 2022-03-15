@@ -24,7 +24,7 @@ If you choose to use a design-first approach, you must also choose from Microsof
 
 The principal question here is who will design the workflow: will it be developers or users?
 
-In Logic Apps, there is a GUI designer on which you draw out the workflow. It is intuitive and easy to use but you also have the opportunity to delve under the hood and edit the source code for a workflow. This tool is designed for people with development skills.
+In Logic Apps, there is a GUI designer on which you draw out the workflow. It is intuitive and easy to use but you also have the opportunity to look under the hood and edit the source code for a workflow. This tool is designed for people with development skills.
 
 In Microsoft Power Automate, extra help and templates are provided for common types of workflow. There is no way to edit the source code that the tool creates. This tool is designed for users who have a good understanding of the business process but no coding skills.
 

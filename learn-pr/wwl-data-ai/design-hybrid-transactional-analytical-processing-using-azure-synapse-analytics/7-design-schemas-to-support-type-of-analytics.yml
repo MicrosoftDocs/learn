@@ -4,12 +4,13 @@ title: Design schemas to support type of analytics
 metadata:
   title: Design schemas to support type of analytics
   description: "Design schemas to support type of analytics"
-  ms.date: 07/28/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/7-design-schemas-to-support-type-of-analytics.md)]

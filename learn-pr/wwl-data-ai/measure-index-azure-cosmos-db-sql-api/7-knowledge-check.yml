@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.measure-index-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/03/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You're creating a SQL query that will run in the .NET SDK. Which property of the **QueryRequestOptions** class should you configure to enable viewing recommendations on single and composite indexes along with the impact of utilized indexes?"
+    choices:
+    - content: "``MaxItemCount``"
+      isCorrect: false
+      explanation: "That's incorrect. The ``MaxItemCount`` property configures the number of items to return per page, not index metadata."
+    - content: "``PopulateIndexMetrics``"
+      isCorrect: true
+      explanation: "That's correct. The ``PopulateIndexMetrics`` property will return metadata about utilized and recommended indexes."
+    - content: "``EnableScanInQuery``"
+      isCorrect: false
+      explanation: "That's incorrect. The ``EnableScanInQuery`` property doesn't return metadata about indexes."
+  - content: "You've created a SQL query in the .NET SDK and received the response in an object of type **FeedResponse\\<\\>**. Which property of the feed response should you use to determine how many request units were used per page of results?"
+    choices:
+    - content: "``IndexMetrics``"
+      isCorrect: false
+      explanation: "That's incorrect. This property returns metrics about how the query's performance was impacted by the index."
+    - content: "``RequestCharge``"
+      isCorrect: true
+      explanation: "That's correct. This property returns a numeric value with the number of request units consumed per page or operation."
+    - content: "``Diagnostics``"
+      isCorrect: false
+      explanation: "That's incorrect. This property returns opt-in diagnostic information from the query or operation."

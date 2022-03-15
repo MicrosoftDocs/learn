@@ -91,9 +91,9 @@ controls that allow organizations to take actions that ensure their applications
 and data are protected, backed up, and compliant.
   - [Azure Backup](https://azure.microsoft.com/services/backup/?azure-portal=true)
 ) protects your environment from ransomware attacks and recovers maliciously or accidentally deleted backup data.
-  - [Azure Security Center](https://azure.microsoft.com/services/security-center/?azure-portal=true) provides unified infrastructure security management
+  - [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/?azure-portal=true) provides unified infrastructure security management
 to protect your resources.
-  - [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/?azure-portal=true) provides intelligent security analytics across your entire enterprise.
+  - [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/?azure-portal=true) provides intelligent security analytics across your entire enterprise.
 
 ## Modernization triggers
 

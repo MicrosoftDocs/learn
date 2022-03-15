@@ -1,6 +1,6 @@
 In this unit, you will learn about what content Learn offers for educators, how to find this educator content in Learn, and how to share it with your colleagues or students.
 
-:::image type="content" source="../media/educator-content.png" alt-text="Screenshot of the Learn browser window with Roles selected and Educator and Student roles highlighted.":::
+:::image type="content" source="../media/educator-center-overview.png" alt-text="Screenshot of the Microsoft Learn Educator Center overview page with Educator Center highlighted in the navigation":::
 
 On Microsoft Learn, you will find:
 
@@ -18,7 +18,7 @@ Most of our training content is in the form of *modules*, which are organized in
 
 ## Browse and search for educator content
 
-Learn has thousands of modules and learning paths to help you get started with Microsoft products. To browse content, go to the Learn "browse all" page at [docs.microsoft.com/learn/browse/](https://docs.microsoft.com/learn/browse/)
+Learn has thousands of modules and learning paths to help you get started with Microsoft products. To browse content, go to the Learn "browse all" page at [docs.microsoft.com/learn/browse/](/learn/browse/)
 
 ### Search using filters
 

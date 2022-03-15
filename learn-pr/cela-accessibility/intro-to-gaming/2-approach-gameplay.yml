@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-gaming.approach-gameplay
+title: Approach gameplay through the lens of accessibility
+metadata:
+  title: Approach gameplay through the lens of accessibility
+  description: This content is part of the Introduction to Gaming and Disability module.
+  ms.date: 11/01/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-approach-gameplay.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the definition of disability according to the social model of disability?"
+    choices:
+    - content: "A medical diagnosis or condition a person has."
+      isCorrect: false
+      explanation: "Incorrect. This definition of disability doesn't accurately represent the social model of disability. This definition more closely describes the medical model of disability."
+    - content: "A mismatch between a person and their environment."
+      isCorrect: true
+      explanation: "Correct. According to the social model of disability, disability is defined as a mismatch in interactions between a person and the environment around them. The social model doesn't include medical diagnoses or the use of assistive technology as part of the definition of disability."
+    - content: "A person's use of equipment like wheelchairs."
+      isCorrect: false
+      explanation: "Incorrect. The use of a wheelchair is an example of how a person with a disability can address the mismatch between them and the environment, not the definition of disability."
+  - content: "Which of the following options best describes how gameplay should be assessed through the lens of accessibility? A game uses color alone to differentiate enemy and ally characters. Enemies are red. Allies are green."
+    choices:
+    - content: "Determining the difference between enemy and ally characters through color alone is an intended challenge that's part of the game's overall difficulty."
+      isCorrect: false
+      explanation: "Incorrect. Games should provide multiple difficulty options so that players can enjoy and complete the game, not create barriers to players who are color blind."
+    - content: "Using color alone to provide information to the player, in this case to help them determine enemy from ally, can introduce unintentional barriers to players with visual disabilities and should be avoided."
+      isCorrect: true
+      explanation: "Correct. Having elements in the game that are distinguishable only by color creates barriers to access."
+    - content: "Distinguishing enemy and ally character by color alone is okay because players who are color blind can seek out other assistive technologies to make it work."
+      isCorrect: false
+      explanation: "Incorrect. Developers should not assume that players have access to other assistive technologies or require them to overcome barriers introduced."

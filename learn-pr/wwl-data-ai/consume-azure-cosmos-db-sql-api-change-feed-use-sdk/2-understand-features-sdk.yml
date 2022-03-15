@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.understand-features-sdk
+title: Understand change feed features in the SDK
+metadata:
+  title: Understand change feed features in the SDK
+  description: "Understand change feed features in the SDK"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-understand-features-sdk.md)]

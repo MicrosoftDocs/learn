@@ -16,7 +16,7 @@ In the following steps, you will explore these notebook development features:
 
     ![Add cell in notebook through button underneath cell](../media/add-cell-notebook-under-cell.png)
 
-3. Use [Shortcut keys under command mode](https://docs.microsoft.com/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#shortcut-keys-under-command-mode). Press **A** to insert a cell above the current cell. Press **B** to insert a cell below the current cell.
+3. Use [Shortcut keys under command mode](/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#shortcut-keys-under-command-mode). Press **A** to insert a cell above the current cell. Press **B** to insert a cell below the current cell.
 
 **Undo cell operations**
     
@@ -28,7 +28,7 @@ In the following steps, you will explore these notebook development features:
     
     ![Move a cell up or down](../media/move-cell-up-down.png)
 
-2.  You can also use [shortcut keys under command mode](https://docs.microsoft.com/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#shortcut-keys-under-command-mode). Press **Ctrl+Alt+↑** to move up the current cell. Press **Ctrl+Alt+↓** to move the current cell down.
+2.  You can also use [shortcut keys under command mode](/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#shortcut-keys-under-command-mode). Press **Ctrl+Alt+↑** to move up the current cell. Press **Ctrl+Alt+↓** to move the current cell down.
 
 **Delete a cell**
 
@@ -36,7 +36,7 @@ In the following steps, you will explore these notebook development features:
 
     ![Delete a cell within a notebook](../media/delete-cell-notebook.png)
 
-2. You can also use [shortcut keys under command mode](https://docs.microsoft.com/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#shortcut-keys-under-command-mode). Press **D,D** to delete the current cell.
+2. You can also use [shortcut keys under command mode](/azure/synapse-analytics/spark/apache-spark-development-using-notebooks#shortcut-keys-under-command-mode). Press **D,D** to delete the current cell.
 
 **Collapse a cell input and output**
 1. Hover over the cell you want to see the input or output from. 
@@ -45,3 +45,4 @@ In the following steps, you will explore these notebook development features:
 4. If you want to see details of the job execution, select the ">" icon.
 
     ![Collapse a cell input and output](../media/collapse-cell-input-and-output.png)
+

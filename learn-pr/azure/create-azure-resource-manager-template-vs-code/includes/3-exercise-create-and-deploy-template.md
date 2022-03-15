@@ -37,7 +37,7 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 
 ::: zone pivot="cli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed, and sign in with the same account you used to activate the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](/cli/azure/install-azure-cli) tools installed, and sign in with the same account you used to activate the sandbox.
 
 1. Select **Terminal > New Terminal** to open a terminal window.
 
@@ -100,7 +100,7 @@ Run the following commands to deploy the ARM template to Azure. The ARM template
 
 ```azurecli
 templateFile="azuredeploy.json"
-today=$(date +"%d-%b-%Y")
+today=$(date "+%d-%b-%Y")
 DeploymentName="blanktemplate-"$today
 
 az deployment group create \
@@ -116,7 +116,7 @@ You see ```Running...``` in the terminal.
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have installed Azure PowerShell from the VS Code Extensions, and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have installed Azure PowerShell Tools from the VS Code Extensions, and sign in to the same account that activated the sandbox.
 
 1. In the command bar, select **Terminal > New Terminal** to open a PowerShell window.
 
@@ -141,7 +141,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     ```
 
     > [!TIP]
-    > The [Az PowerShell module](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) is the replacement of AzureRM and is the recommended version to use for interacting with Azure.
+    > The [Az PowerShell module](/powershell/azure/new-azureps-module-az) is the replacement of AzureRM and is the recommended version to use for interacting with Azure.
 
 1. Sign in using the account you used to activate the sandbox. After you've signed in, VS Code lists the subscriptions associated with your account in the terminal window. If you activated the sandbox, you see a code block that contains `"name": "Concierge Subscription"`. This is the subscription to use for the rest of the exercise.
 
@@ -174,7 +174,7 @@ Deploy the template to Azure by running the following commands. The ARM template
 $templateFile = "azuredeploy.json"
 $today=Get-Date -Format "MM-dd-yyyy"
 $deploymentName="blanktemplate-"+"$today"
-New-AzResourceGroupDeployment `
+New-AzResourceGroupDeployment
   -Name $deploymentName `
   -TemplateFile $templateFile
 ```

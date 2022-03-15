@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Fix a failed test
   description: See how a failed test can help uncover defects before the build reaches others.
   ms.date: 05/26/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15
