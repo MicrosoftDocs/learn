@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Publish reusable Bicep code by using GitHub Actions
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: 11/11/2021
+  ms.date: 03/14/2022
   author: pazdedav
   ms.author: dapazd
   ms.topic: interactive-tutorial
@@ -32,12 +32,11 @@ products:
   - azure-resource-manager
 units:
 - learn.azure.publish-reusable-bicep-code-using-github-actions.introduction
-- learn.azure.publish-reusable-bicep-code-using-github-actions.understand-template-specs-bicep-registries
-- learn.azure.publish-reusable-bicep-code-using-github-actions.work-registries-github-actions-workflow
+- learn.azure.publish-reusable-bicep-code-using-github-actions.publish-bicep-code-deployment-pipeline
 - learn.azure.publish-reusable-bicep-code-using-github-actions.exercise-set-up-environment
-- learn.azure.publish-reusable-bicep-code-using-github-actions.exercise-create-workflow-publish-registry
-- learn.azure.publish-reusable-bicep-code-using-github-actions.work-template-specs-github-actions-workflow
-- learn.azure.publish-reusable-bicep-code-using-github-actions.exercise-create-workflow-publish-template-spec
+- learn.azure.publish-reusable-bicep-code-using-github-actions.exercise-publish-template-spec
+- learn.azure.publish-reusable-bicep-code-using-github-actions.design-workflow-versioning-strategy
+- learn.azure.publish-reusable-bicep-code-using-github-actions.exercise-publish-module-registry
 - learn.azure.publish-reusable-bicep-code-using-github-actions.knowledge-check
 - learn.azure.publish-reusable-bicep-code-using-github-actions.summary
 badge:

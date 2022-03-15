@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-reusable-bicep-code-using-github-actions.summary
-title: Summary
+uid: learn.azure.publish-reusable-bicep-code-using-github-actions.publish-bicep-code-deployment-pipeline
+title: Publish Bicep code from a deployment pipeline
 metadata:
-  unitType: summary
-  title: summary
+  unitType: learning-content
+  title: Publish Bicep code from a deployment pipeline
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 11/11/2021
+  ms.date: 03/14/2022
   author: pazdedav
   ms.author: dapazd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/2-publish-bicep-code-deployment-pipeline.md)]
