@@ -9,7 +9,7 @@ As it was explained in one of the previous units, modules that are published to 
 > [!TIP]
 > We recommend you to review the [Test your Bicep code by using GitHub Actions](/learn/modules/test-bicep-code-using-github-actions/) Learn module for more information on how to test your Bicep templates in an automated pipeline.
 
-You should choose, what jobs and steps you want to include to a workflow that will publish modules to the Registry.
+You should choose, what jobs and steps you want to include to a workflow that will publish your template specs and modules. In this Microsoft Learn module, we lint the Bicep code but don't include other forms of testing. If you want to test your template specs and modules, consider how you'll deploy them to Azure, and whether you'll use dedicated subscriptions or resource groups to deploy the resources.
 
 ## Authentication and authorization
 
@@ -19,6 +19,9 @@ Before you or any other team or individual you authorize to access the registry 
 TODO: Explain granting access to the ACR instance for "users" vs. Service Principals.
 TODO: Include a good diagram explaining it (showing transparently both GitHub and Azure components and the workflow)
 -->
+
+> [!TIP]
+> When you publish a module to a registry, the permissions you need are narrower than in normal deployments. You could consider using the *principle of least privilege*, and provide the workflow's service principal with access just to the container registry, and not to a resource group or subscription.
 
 ## Publish template specs
 

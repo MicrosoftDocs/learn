@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-reusable-bicep-code-using-github-actions.design-workflow-versioning-strategy
-title: Design a workfow and versioning strategy
+title: Design a workflow and versioning strategy
 metadata:
   unitType: learning-content
   title: Design a workflow and versioning strategy
