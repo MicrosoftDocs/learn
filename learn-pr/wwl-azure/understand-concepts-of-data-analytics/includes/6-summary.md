@@ -9,4 +9,4 @@ In this module you've learned how to:
 ## Learn more
 
 - [Explore Azure database and analytics services](/learn/modules/azure-database-fundamentals/)
-- [Explore large-scale data analytics](/learn/modules/explore-azure-synapse-analytics/)
+- [Explore fundamentals of modern data warehousing](/learn/modules/explore-azure-synapse-analytics/)

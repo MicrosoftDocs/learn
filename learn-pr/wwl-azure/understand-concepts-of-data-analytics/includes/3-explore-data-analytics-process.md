@@ -30,8 +30,8 @@ A data engineer is often responsible for the initial ingestion and transformatio
 
 The terms *Extract, Transform, and Load (ETL)* or *Extract, Load, and Transform (ELT)* refer to the process of ingesting and processing data.
 
-<!Note>
-<Learn more about the ETL process.>
+> [!Note]
+> Learn more about the [ETL process](/azure/architecture/data-guide/relational-data/etl).
 
 ## Data exploration
 
