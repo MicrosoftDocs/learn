@@ -11,7 +11,7 @@ To set up your development environment, you:
 But first, let's take a quick look at what you get with the Quantum Development Kit (QDK).
 
 > [!NOTE]
-> Before you proceed, make sure you have the [.NET Core 3.1 version (both SDK and Core)](https://dotnet.microsoft.com/download?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true) installed on your computer.
+> Before you proceed, make sure you have the [.NET Core 3.1 version (both SDK and Core)](https://dotnet.microsoft.com/download/dotnet/3.1?azure-portal=true) and [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true) installed on your computer.
 
 > [!NOTE]
 > For Linux users, you may encounter a missing dependency depending on your particular distribution and installation method (e.g. certain Docker images). Please make sure that the `libgomp` library is installed on your system, as the GNU OpenMP support library is required by the quantum simulator of the QDK. On Ubuntu, you can do so by running `sudo apt install libgomp1`, or `yum install libgomp` on CentOS. For other distributions, please refer to your particular package manager.

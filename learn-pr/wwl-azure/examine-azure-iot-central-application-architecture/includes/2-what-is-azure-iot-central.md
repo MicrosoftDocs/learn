@@ -3,7 +3,7 @@ IoT Central is an IoT application platform that reduces the burden and cost of d
 The web UI lets you monitor device conditions, create rules, and manage millions of devices and their data throughout their life cycle. Furthermore, it enables you to act on device insights by extending IoT intelligence into line-of-business applications.
 
 > [!NOTE]
-> It is important for Azure IoT Developers to know when Azure IoT Central is the right choice for their business or a customer. IoT Central offers an easy to manage alternative to the full PaaS solution option. It is also important to recognize that the IoT Plug and Play capabilities in Azure IoT Central are currently in public preview. Do not use an IoT Plug and Play enabled IoT Central application template for production workloads. For production environments use an IoT central application created from a current, generally available, application template.
+> It is important for Azure IoT Developers to know when Azure IoT Central is the right choice for their business or a customer. IoT Central offers an easy to manage alternative to the full PaaS solution option. It is also important to recognize the IoT Plug and Play support provided by Azure IoT Central. For production environments use an IoT central application created from a current, generally available, application template.
 
 ## User roles
 
@@ -24,7 +24,7 @@ As a solution builder, you use IoT Central to create a custom, cloud-hosted IoT 
  -  A cloud-based application that receives telemetry from your devices and enables you to manage those devices.
  -  Multiple devices running custom code connected to your cloud-based application.
 
-You can quickly deploy a new IoT Central application and then customize it to your specific requirements in your browser. You can start with one of the industry-focused application templates for Retail, Energy, Government, or Healthcare. If you want, you can also choose to start with a generic application template.
+You can quickly deploy a new IoT Central application and then customize it to your specific requirements in your browser. You can start with one of the industry-focused application templates, or you can choose to start with a custom/empty application template.
 
 As a solution builder, you use the web-based tools to create a device template for the devices that connect to your application.
 
@@ -38,18 +38,20 @@ A device template is the blueprint that defines the characteristics and behavior
  -  The properties, that an operator sets, that determine the behavior of the device.
  -  The commands that an operator can call, that run on a device.
 
-This device template includes:
+A device template includes:
 
- -  A device capability model that describes the capabilities a device should implement such as the telemetry it sends and the properties it reports.
- -  Cloud properties that are not stored on the device.
- -  Customizations, dashboards, and forms that are part of your IoT Central application.
+ -  A model that describes the capabilities a device should implement such as the telemetry it sends and the properties it reports.
+ -  The cloud properties that define information about your device and which are stored by IoT Central (such as the date a device was created).
+ -  The customizations that can be used to modify capabilities.
+ -  The views that are used to visualize the data from the device, and forms to manage and control a device.
 
 As a solution builder, you have several options for creating device templates:
 
- -  Import a device capability model from the Azure Certified for IoT device catalog and then add any cloud properties, customizations, and dashboards your IoT Central application needs.
  -  Design the device template in IoT Central and then implement its device capability model in your device code.
- -  Create a device capability model by using Visual Studio code and publish the model to a repository. Implement your device code from the model, and connect your device to your IoT Central application. IoT Central finds the device capability model from the repository and creates a simple device template for you.
- -  Create a device capability model by using Visual Studio code. Implement your device code from the model. Manually import the device capability model into your IoT Central application and then add any cloud properties, customizations, and dashboards your IoT Central application needs.
+ -  Import a device template from the Azure Certified for IoT device catalog. Optionally, customize the device template to your requirements in IoT Central.
+ -  When the device connects to IoT Central, have it send the model ID of the model it implements. IoT Central uses the model ID to retrieve the model from the model repository and to create a device template. Add any cloud properties, customizations, and views your IoT Central application needs to the device template.
+ -  When the device connects to IoT Central, let IoT Central autogenerate a device template definition from the data the device sends.
+ -  Author a device model using the Digital Twin Definition Language (DTDL) V2. Manually import the device model into your IoT Central application. Then add the cloud properties, customizations, and views your IoT Central application needs.
 
 As a solution builder, you can use IoT Central to generate code for test devices to validate your device templates.
 

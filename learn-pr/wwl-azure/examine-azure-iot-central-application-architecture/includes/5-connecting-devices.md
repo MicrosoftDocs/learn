@@ -17,19 +17,13 @@ IoT Central uses the Azure IoT Hub Device Provisioning service (DPS) to manage t
 
 In a production environment, using X.509 certificates is the recommended device authentication mechanism for IoT Central.
 
-The following steps describe how to connect devices to IoT Central using X.509 certificates:
+IoT devices can be connected to IoT Central using X.509 certificates as follows:
 
-1.  In your IoT Central application, add and verify the intermediate or root X.509 certificate you're using to generate device certificates.
-    
-     -  In the UI menu, navigate to Administration &gt; Device Connection and create an enrollment group with an attestation type set to X.509 certificates.
-     -  It is important to verify that the uploader of the certificate has the certificate's private key.
-        
-         -  To generate a verification code, select the button next to Verification Code.
-         -  Use the verification code that you generated to create an X.509 verification certificate.
-         -  Save the certificate as a .cer file.
-         -  Upload the signed verification certificate and select Verify.
-2.  Use a CSV file to import and register devices in your IoT Central application.
-3.  Set up your devices. Generate the leaf certificates using the uploaded root certificate. Use the Device ID as the CNAME value in the leaf certificates. The device ID should be all lower case. Then program your devices with provisioning service information. When a device is switched on for the first, it retrieves its connection information for your IoT Central application from DPS.
+1.  Create an enrollment group that uses the Certificates (X.509) attestation type.
+2.  Add and verify an intermediate or root X.509 certificate in the enrollment group.
+3.  Generate a leaf certificate from the root or intermediate certificate in the enrollment group. Send the leaf certificate from the device when it connects to your application.
+
+For more detailed information, see: [https://docs.microsoft.com/azure/iot-central/core/how-to-connect-devices-x509](/azure/iot-central/core/how-to-connect-devices-x509)
 
 ### SAS group enrollment
 
@@ -51,7 +45,7 @@ This approach is useful when you're experimenting with IoT Central or testing de
 
 IoT Central supports the following attestation mechanisms for individual enrollments:
 
- -  Symmetric key attestation: Symmetric key attestation is a simple approach to authenticating a device with the DPS instance. To create an individual enrollment that uses symmetric keys, open the Device connection page for the device, select Individual enrollment as the connection method, and Shared access signature (SAS) as the mechanism. Enter base64 encoded primary and secondary keys, and save your changes. Use the ID scope, Device ID, and either the primary or secondary key to connect your device.
+ -  Shared Access Signature (SAS) : Shared Access Signature attestation is a simple approach to authenticating a device with the DPS instance. To create an individual enrollment that uses symmetric keys, open the Device connection page for the device, select Individual enrollment as the connection method, and Shared access signature (SAS) as the mechanism. Enter base64 encoded primary and secondary keys, and save your changes. Use the ID scope, Device ID, and either the primary or secondary key to connect your device.
  -  X.509 certificates: To create an individual enrollment with X.509 certificates, open the Device Connection page, select Individual enrollment as the connection method, and Certificates (X.509) as the mechanism. Device certificates used with an individual enrollment entry have a requirement that the issuer and subject CN are set to the device ID.
  -  Trusted Platform Module (TPM) attestation: A TPM is a type of hardware security module. Using a TPM is one of the most secure ways to connect a device. This article assumes you're using a discrete, firmware, or integrated TPM. Software emulated TPMs are well suited for prototyping or testing, but they don't provide the same level of security as discrete, firmware, or integrated TPMs. Don't use software TPMs in production. To create an individual enrollment that uses a TPM, open the Device Connection page, select Individual enrollment as the connection method, and TPM as the mechanism. Enter the TPM endorsement key and save the device connection information.
 
