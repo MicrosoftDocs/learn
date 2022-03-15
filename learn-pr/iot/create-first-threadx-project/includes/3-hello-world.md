@@ -1,3 +1,5 @@
+## Introduction
+
 There are three purposes for this example:
 
 - Introduce you to the basics of ThreadX system development
@@ -21,6 +23,6 @@ The following diagram illustrates the Hello World scenario and how we can model 
 For convenience, we'll specify exact values for preparation and processing times. In reality, we would have sensors that would determine the actual times for the preparation and processing activities. For example, the length and nature of each message would determine the amount of time required for the preparation and the processing activities.
 
 > [!NOTE]
-> Activities 2 and 4 are labeled as Critical Sections. For example, when the Processor is handling a Routine message, it cannot at the same time handle an Urgent message. This means that only one thread can be in a critical section at any point in time. We'll use a mutex to enforce this property. 
+> Activities 2 and 4 are labeled as Critical Sections. For example, when the Processor is handling a Routine message, it cannot at the same time handle an Urgent message. This means that only one thread can be in a critical section at any point in time. We'll use a mutex to enforce this property.
 
 A significant advantage of using ThreadX is that it will handle the scheduling of all activities and the management of the one message processor.

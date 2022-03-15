@@ -1,6 +1,8 @@
-Before starting with our Hello World project, we'll walk through a simple illustrative ThreadX system. This system has a single thread with a priority of 3. The thread executes, increments a counter, then sleeps for one clock tick. This process continues forever.
+## Introduction
 
-A ThreadX project typically consists of four building blocks as follows: <!--figure 1-->
+Before starting with our Hello World project, we'll walk through a simple illustrative ThreadX system. This system has a single thread with a priority of 3. The thread executes, increments a counter, then sleeps for one timer tick. This process continues forever.
+
+A ThreadX project typically consists of four building blocks as follows:
 
 |Building block   | Component |
 |---|---|
@@ -13,7 +15,7 @@ The four building blocks are defined in more detail below.
 
 ## Building block 1
 
-`#includes and definitions` is shown in the code block below. The code contains an essential header `(#include tx_api.h)` and two definitions: <!--figure 2-->
+`#includes and definitions` is shown in the code block below. The code contains an essential header `(#include tx_api.h)` and two definitions:
 
 ```c
 #include "tx_api.h"
@@ -27,7 +29,7 @@ We'll use a counter `my_thread_counter` in this example, so we define and initia
 
 ## Building block 2 
 
-`main()` is the shortest of all the blocks and will probably be the same for most of your projects. This code example illustrates `main()`: <!--figure 3-->
+`main()` is the shortest of all the blocks and will probably be the same for most of your projects. This code example illustrates `main()`:
 
 ```c
 main()
@@ -44,7 +46,7 @@ The `tx_kernel_enter()` function initializes ThreadX and starts the task schedul
 
 ## Building block 3
 
-`tx_application_define()` is a required function where the initial system resources are created. This code shows a single thread created: <!--figure 4-->
+`tx_application_define()` is a required function where the initial system resources are created. This code shows a single thread created:
 
 ```c
 void tx_application_define(void *first_unused_memory)
@@ -74,7 +76,7 @@ In this case, only one thread is created and the meanings of the thread create p
 
 ## Building block 4
 
-`functions: thread entry and others` contains definitions of all thread functions. The following code shows a single function: <!--figure 5-->
+`functions: thread entry and others` contains definitions of all thread functions. The following code shows a single function:
 
 ```c
 void my_thread_entry(ULONG thread_input)
@@ -90,7 +92,7 @@ void my_thread_entry(ULONG thread_input)
 }
 ```
 
-This block contains the function `my_thread_entry` that is an entry function for the thread named `my_thread`. This function is in a forever loop, which is the case for most real-time embedded functions. 
+This block contains the function `my_thread_entry` that is an entry function for the thread named `my_thread`. This function is in a forever loop, which is the case for most real-time embedded functions.
 
 > [!NOTE]
 > This is an over simplified function for illustration purposes only, and it contains only two executable statements. One such statement is a counter `my_thread_counter++` and the other statement `tx_thread_sleep(1)` suspends the thread for one timer tick.

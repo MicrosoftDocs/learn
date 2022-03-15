@@ -1,6 +1,8 @@
+## Introduction
+
 Finally, you get to work on your first Hello World project! We'll use GitHub Codespaces or Visual Studio, and you have a C project called *ProjectHelloWorld* to modify.
 
-If you haven't done so already you'll need to set up your development environment in accordance with the [instructions](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) in module 2, Azure RTOS ThreadX fundamentals.
+If you haven't done so already you'll need to set up your development environment in accordance with the [instructions](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) in the module titled Azure RTOS ThreadX fundamentals.
 
 ## Use GitHub Codespaces
 
@@ -10,7 +12,7 @@ If you haven't done so already you'll need to set up your development environmen
 
    ![VSCode Web Task Explorer](../../introduction-azure-rtos/media/vscode-web-tasks.png)
 
-1. Choose **01: ProjectHelloWorld** to build the project.
+1. Choose **ProjectHelloWorld** to build the project.
 
 1. Now choose **Run Project** in the same **TASK EXPLORER**.
 
@@ -20,13 +22,13 @@ If you haven't done so already you'll need to set up your development environmen
 
 1. In the **Solution Explorer**, right click on **ProjectHelloWorld** and select **Set as Startup Project**.
 
-1. Select the **Build** tab and choose **Build ProjectHelloWorld** to build your project. Then select the **Debug** tab, followed by **Start debugging** to debug your project. <!--figure 14-15-16-->
+1. Select the **Build** tab and choose **Build ProjectHelloWorld** to build your project. Then select the **Debug** tab, followed by **Start debugging** to debug your project.
 
 ## Complete the sample
 
 If all has gone well, you should see initial output appearing on the screen similar to this:
 
-:::image type="content" source="../media/figure-17-output-from-project.png" alt-text="Image of expected output." border="false":::
+:::image type="content" source="../media/figure-17-output-from-project.png" alt-text="Image of initial output." border="false":::
 
 Each time the Urgent thread completes a cycle, it displays the current time and a brief message. Similarly, each time the Routine thread completes a cycle, it displays the current time and a brief message.
 
@@ -45,8 +47,8 @@ Activity 4 is incomplete and there's a suggestion that you should use Activity 2
 
 Using Activity 2 and the [Hello World scenario](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/3-hello-world#hello-world-scenario) as guides, complete your modifications, then build and debug your project. Your completed output should look like that shown below:
 
-:::image type="content" source="../media/figure-18-output-from-completed-project.png" alt-text="Image of expected output." border="false":::
+:::image type="content" source="../media/figure-18-output-from-completed-project.png" alt-text="Image of completed output." border="false":::
 
 The first four lines of the initial and final output shown above are the same, but then they diverge. What caused these differences?
 
-Congratulations! You've completed your first ThreadX project. You should now investigate Module 5 (ProjectAnalyze) because it logically follows this project.
+Congratulations! You've completed your first ThreadX project. You should now investigate the module titled `Analyze thread behavior with timing facilities` because it logically follows this project.

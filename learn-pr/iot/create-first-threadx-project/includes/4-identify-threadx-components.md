@@ -1,3 +1,5 @@
+## Introduction
+
 Following is an overview of the ThreadX resources needed for the Hello World project. 
 
 For this project, we have two sets of activities that we'll model with threads, so we'll need two threads that we'll call Urgent and Routine.
