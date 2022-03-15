@@ -3,7 +3,7 @@ uid: learn.backup-restore-azure-sql.1-introduction
 metadata:
   title: Introduction
   description: In this unit, you'll learn about a business scenario in which it's critical to protect against data loss.
-  ms.date: 09/25/2019
+  ms.date: 03/10/2022
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.5-explore-interference-qsharp
-title: Exercise - Explore interference by using Q#
+title: Exercise - Explore interference by using Q# and Visual Studio Code
 metadata:
-  title: Exercise - Explore interference by using Q#
+  title: Exercise - Explore interference by using Q# and Visual Studio Code
   description: Learn about interference in quantum computing by using Q# examples.
   ms.date: 09/09/2020
   author: KittyYeungQ

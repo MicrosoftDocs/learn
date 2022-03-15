@@ -4,7 +4,7 @@ title: Exercise - Create, review, and merge a pull request
 metadata:
   unitType: exercise
   title: Exercise - Create, review, and merge a pull request
-  description: Create a pull request for a change to some Bicep code, then review and merge the pull request.
+  description: Create a pull request for a change to some Bicep code, and then review and merge the pull request.
   ms.date: 02/11/2022
   author: vermegi
   ms.author: givermei

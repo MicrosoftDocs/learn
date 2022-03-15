@@ -9,7 +9,8 @@ metadata:
   ms.date: 06/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, team=cloud_advocates
+  ms.contributors: yolasors-11052021
 durationInMinutes: 6
 interactive: "bash"
 azureSandbox: true

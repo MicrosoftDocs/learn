@@ -1,4 +1,4 @@
-We've learned that devices can be threat vectors for cybercriminals who want to gain access to, or control of, data to cause harm. But what can we do protect ourselves?
+We've learned that devices can be threat vectors for cybercriminals who want to gain access to, or control of, data to cause harm. But what can we do to protect ourselves?
 
 ## Mitigation measures
 
@@ -34,3 +34,4 @@ This threat also applies to your work computer. Suppose you're busy working on i
 In these two cases, everything the bad actor does will be logged and tracked in your name. There's little chance that the bad actor's actions will be traced back to them, and you'll have to deal with the fallout and clean-up.
 
 The best way to limit access to your applications is to ensure that they're closed or secured when you aren't using them. You do this by locking a device when you step away from it. If the device is small enough, keep it with you.
+

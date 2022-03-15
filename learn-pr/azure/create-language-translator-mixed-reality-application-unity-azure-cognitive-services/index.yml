@@ -8,6 +8,8 @@ metadata:
   ms.author: lajanuar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: apspeigh-04272021
 title: Create a language translator application with Unity and Azure Cognitive Services.
 summary: >
   Create a language translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.
