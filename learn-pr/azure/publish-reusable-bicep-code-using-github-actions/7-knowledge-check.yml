@@ -9,63 +9,42 @@ metadata:
   author: pazdedav
   ms.author: dapazd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   questions:
-  - content: ""
+  - content: What should you do to resolve the error?
     choices:
-    - content: ""
+    - content: Grant the service principal permission to write to your container registry.
       isCorrect: true
       explanation: ""
-    - content: ""
+    - content: Use semantic versioning.
       isCorrect: false
       explanation: ""
-    - content: ""
+    - content: Publish the module manually at the command line, not in a pipeline.
       isCorrect: false
       explanation: ""
-  - content: ""
+  - content: Which of the following statements about semantic versioning is true?
     choices:
-    - content: ""
+    - content: You should increment the major version number every time you change your Bicep file.
+      isCorrect: false
+      explanation: ""
+    - content: You should increment the major version number whenever you make a breaking change to your Bicep file.
       isCorrect: true
       explanation: ""
-    - content: ""
+    - content: You should never increment the major version number.
       isCorrect: false
       explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+  - content: You want to ensure that a Bicep template spec is well-formed before your pipeline publishes it to Azure. Which of the following checks should you run?
     choices:
-    - content: ""
+    - content: Lint the Bicep file.
       isCorrect: true
       explanation: ""
-    - content: ""
+    - content: Run the what-if operation.
       isCorrect: false
       explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
+    - content: Run functional tests.
       isCorrect: false
       explanation: ""
