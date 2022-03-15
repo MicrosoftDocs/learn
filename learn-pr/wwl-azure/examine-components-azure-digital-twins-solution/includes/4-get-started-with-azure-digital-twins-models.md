@@ -2,7 +2,7 @@ In an Azure Digital Twins solution, Models provide the blueprint that is used to
 
 Consider this example of an Azure Digital Twins environment expressed as a graph.
 
-:::image type="content" source="../media/m11-l02-simple-twins-environment-fb572ff0.png" alt-text="Diagram that shows an Azure Digital Twins graph that represents a small building with two floors and one room on each floor." lightbox="../media/m11-l02-simple-twins-environment-fb572ff0.png":::
+:::image type="content" source="../media/m11-l02-simple-twins-environment-fb572ff0.png" alt-text="Diagram that shows an Azure Digital Twins graph that represents a small building with two floors and one room on each floor.":::
 
 
 The nodes that you see in this graph are the digital twin instances that were created using the corresponding Model (either a Floor or a Room model).
@@ -51,4 +51,4 @@ Consider the following example:
  -  Azure Digital Twins model - property field: Monitor temp01 telemetry field events and capture “last received” value and “last received time” value. Store values in last\_received and last\_received\_time property fields.
  -  Query model properties: Query as needed to extract most recently reported temperature and time.
 
-:::image type="content" source="../media/m11-l02-telemetry-property-fields-twins-model-89781ba3.png" alt-text="Diagram that shows how property and telemetry fields are used within an Azure Digital Twins solution." lightbox="../media/m11-l02-telemetry-property-fields-twins-model-89781ba3.png":::
+:::image type="content" source="../media/m11-l02-telemetry-property-fields-twins-model-89781ba3.png" alt-text="Diagram that shows how property and telemetry fields are used within an Azure Digital Twins solution."  lightbox="../media/m11-l02-telemetry-property-fields-twins-model-89781ba3.png":::

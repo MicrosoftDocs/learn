@@ -2,7 +2,6 @@ Azure Quantum offers solutions that enable some divisions of the space team to r
 
 There are other optimization problems of interest, such as optimizing travel time between planets, prioritizing job schedules, or finding the equilibrium configuration of certain proteins of a recently discovered form of life.
 
-![Figure of Azure Quantum optimization problems.](../media/5-azure-quantum-optimization-solutions.png)
 
 Complex optimization problems exist across every industry: vehicle routing, supply chain management, portfolio optimization, power grid management, and many others. Optimization algorithms are also at the core of many machine learning methods.
 
