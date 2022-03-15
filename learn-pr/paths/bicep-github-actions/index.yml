@@ -41,5 +41,6 @@ modules:
 - learn.azure.test-bicep-code-using-github-actions
 - learn.azure.manage-multiple-environments-using-bicep-github-actions
 - learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions
+- learn.azure.publish-reusable-bicep-code-using-github-actions
 trophy:
   uid: learn.bicep-pipelines-github-actions.trophy
