@@ -1,8 +1,17 @@
-When you automate the publishing process for a template spec or a Bicep module, you need to ensure that everything you'd normally do on your own can be automated and run within the workflow. In this unit, you'll review how some of the principles you've previously learned about apply when you publish template specs and Bicep modules from a deployment workflow.
+When you automate the publishing process for a template spec or a Bicep module, you need to ensure that everything you'd normally do on your own can be automated and run within the workflow. In this unit, you'll learn how to apply some of the principles you've previously learned when you publish template specs and Bicep modules from a deployment workflow.
+
+## Template specs and modules
+
+Bicep enables you to easily reuse your code. Two common approaches for reusing your Bicep code across deployments are:
+
+- **Template specs**, which are optimized for the deployment of complete solutions. For example, suppose you've defined a set of security-hardened resources to deploy a complete virtual machine according to your company's specifications. You could publish this as a template spec, and then your colleagues can use your template spec to deploy a complete virtual machine, even from the Azure portal.
+- **Modules**, which are designed to be components of other deployments. For example, suppose you've created a Bicep file that creates a storage account. You're likely to need storage accounts in many other deployments, so you could publish the Bicep file to a registry and use it as a module throughout your organization's deployments.
+
+When you're deciding between template specs and Bicep modules, a good rule of thumb is: if the template is going to be deployed as is throughout your organization, template specs are probably a good fit. But if you're likely to reuse this template within multiple parent templates, Bicep modules might serve your needs better.
 
 ## Validate reusable code in a pipeline
 
-Unlike regular Bicep deployments, when you create a template spec or a module, you don't deploy the resources directly to Azure. Instead, you provide the template spec or module to another deployment, which in turn will deploy them to Azure. This difference means that the ways you validate and test your template specs and Bicep modules might be different to regular Bicep files.
+Unlike regular Bicep deployments, when you create a template spec or a module, you don't deploy the resources directly to Azure. Instead, you provide the template spec or module to another deployment, which in turn will deploy the resources you've defined. This difference means that the ways you validate and test your template specs and Bicep modules might be different to regular Bicep files.
 
 Linting your Bicep code is good practice. The linter detects syntactical problems, and also warns you if you're not following the recommended practices.
 
@@ -27,7 +36,7 @@ When you work with an automated deployment workflow, the same principles apply. 
 
 ## Publish template specs and modules from a workflow
 
-When you publish a template spec from your own computer by using the Azure CLI, you use this command:
+When you publish a template spec from your own computer by using the Azure CLI, you use a command like the following:
 
 ```azurecli
 az ts create \
@@ -38,8 +47,6 @@ az ts create \
   --version 1 \
   --template-file main.bicep
 ```
-
-<!-- TODO mention versioning -->
 
 You can convert this Azure CLI command to a GitHub Actions step:
 
@@ -60,7 +67,7 @@ You can convert this Azure CLI command to a GitHub Actions step:
 
 The workflow uses the same process to publish the template spec that you would use yourself.
 
-Similarly, when you publish a Bicep module from your own computer by using the Azure CLI, you use this command:
+Similarly, when you publish a Bicep module from your own computer by using the Azure CLI, you use a command like the following:
 
 ```azurecli
 az bicep publish \
@@ -81,6 +88,7 @@ You can convert this Azure CLI command to a GitHub Actions step, too:
         --target 'br:toycompany.azurecr.io/mymodules/modulename:moduleversion'
 ```
 
-<!-- TODO mention registry hostname and versioning -->
+> [!TIP]
+> Notice that in this example, the Bicep registry hostname (`toycompany.azurecr.io`) is embedded in the workflow definition. This isn't a good practice. You'll learn some other approaches later in this Microsoft Learn module.
 
-In the next set of exercise units, you'll see how you can publish a template spec from a workflow by using the steps described here.
+Shortly, you'll see how you can publish a template spec from a workflow by using the steps described here.

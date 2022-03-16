@@ -28,9 +28,16 @@ You should be familiar with using:
 
 - Bicep modules and module registries.
 - Azure template specs.
+- Testing Bicep code, including linting.
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
 - GitHub Actions, including jobs, steps, and secrets.
+
+> [!TIP]
+> If you need a refresher on Bicep modules, registries, or template specs, take a look at these Microsoft Learn modules:
+> - [Create composable Bicep files by using modules](xref:learn.azure.create-composable-bicep-files-using-modules)
+> - [Share Bicep modules by using private registries](xref:learn.azure.share-bicep-modules-using-private-registries)
+> - [Publish libraries of reusable infrastructure code by using template specs](xref:learn.azure.arm-template-specs)
 
 To work through the exercises in the module, you'll need:
 
