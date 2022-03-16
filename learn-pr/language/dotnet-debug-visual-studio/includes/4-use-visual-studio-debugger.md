@@ -6,8 +6,6 @@ To set up Visual Studio for .NET debugging, we'll first need a .NET project. Vis
 
 1. In Visual Studio, select **File** > **New Project**.
 
-1. Create a new folder named `DotNetDebugging` in the location of your choice. Then choose **Select Folder**.
-
 1. In the **Create a new Project** dialog, select **Console App** and choose **Next**.
 
 1. Name the project *DotNetDebugging*, and choose the location where you'd like to save.  Leave the other values at their defaults, and then select **Next**.
