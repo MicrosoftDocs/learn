@@ -12,4 +12,4 @@ You can assign NSGs to a NIC so that all the traffic that flows through that NIC
 
 When you create an NSG the Overview blade provides information about the NSG such as, associated subnets, associated network interfaces, and security rules.
 
-:::image type="content" source="../media/network-security-groups-1ebf7bed.png" alt-text="Screenshot of the virtual machine Overview blade in the Azure portal. The Security rules and Associated with information is highlighted.":::
+:::image type="content" source="../media/network-security-groups-1ebf7bed.png" alt-text="Screen shot of the virtual machine Overview blade in the Azure portal. The Security rules and Associated with information is highlighted.":::
