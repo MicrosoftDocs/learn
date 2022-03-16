@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.7-create-an-azure-machine-learning-datastore
+uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.create-azure-machine-learning-datastore
 title: Create an Azure Machine Learning Datastore
 metadata:
   title: Create an Azure Machine Learning Datastore
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-create-an-azure-machine-learning-datastore.md)]
+  [!include[](includes/7-create-azure-machine-learning-datastore.md)]

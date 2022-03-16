@@ -31,14 +31,14 @@ products:
 - azure-storage
 - azure-machine-learning
 units:
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.1-introduction
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.2-introduction-to-azure-machine-learning
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.3-create-an-azure-storage-account
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.4-create-an-azure-storage-container
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.5-create-an-azure-machine-learning-workspace
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.6-create-an-azure-machine-learning-compute-instance
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.7-create-an-azure-machine-learning-datastore
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.8-knowledge-check
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.9-summary
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.introduction
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.introduction-to-azure-machine-learning
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.create-azure-storage-account
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.create-azure-storage-container
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.create-azure-machine-learning-workspace
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.create-azure-machine-learning-compute-instance
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.create-azure-machine-learning-datastore
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.knowledge-check
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.summary
 badge:
   uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.badge

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.3-create-an-azure-storage-account
+uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.create-azure-storage-account
 title: Create an Azure Storage Account
 metadata:
   title: Create an Azure Storage Account
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-create-an-azure-storage-account.md)]
+  [!include[](includes/3-create-azure-storage-account.md)]

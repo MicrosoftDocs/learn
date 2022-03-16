@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.5-create-an-azure-machine-learning-workspace
+uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.create-azure-machine-learning-workspace
 title: Create an Azure Machine Learning Workspace
 metadata:
   title: Create an Azure Machine Learning Workspace
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-create-an-azure-machine-learning-workspace.md)]
+  [!include[](includes/5-create-azure-machine-learning-workspace.md)]
