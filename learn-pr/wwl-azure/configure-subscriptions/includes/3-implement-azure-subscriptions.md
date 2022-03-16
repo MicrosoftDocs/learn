@@ -11,7 +11,7 @@ Subscriptions have accounts. An Azure account is simply an identity in Azure Act
 
 ## Getting access to resources
 
-Every Azure subscription is associated with an Azure Active Directory. Users and services that access resources of the subscription first need to authenticate with Azure Active Directory.
+Every Azure subscription can be associated with an Azure Active Directory. Users and services will then authenticate with Azure Active Directory before accessing resources. 
 
 > [!NOTE]
 > Do you know how many subscriptions your organization has? Do you know how resources are organized into resource groups?
