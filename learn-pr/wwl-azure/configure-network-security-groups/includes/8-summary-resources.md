@@ -8,7 +8,7 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Network Security Groups documentation](/azure/virtual-network/security-overview).
- -  [Learn - Secure and isolate access to Azure resources by using network security groups and service endpoints](/learn/modules/secure-and-isolate-with-nsg-and-service-endpoints/)
+ -  [Learn - Secure and isolate access to Azure resources by using network security groups and service endpoints (Sandbox)](/learn/modules/secure-and-isolate-with-nsg-and-service-endpoints/)
