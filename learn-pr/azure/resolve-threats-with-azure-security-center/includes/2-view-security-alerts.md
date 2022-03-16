@@ -43,16 +43,16 @@ These alerts are triggered when either a threat or suspicious activity takes pla
 
 ## Viewing security alerts
 
-You can view collected security alerts directly in Microsoft Defender for Cloud on the **Overview** page, through command-line tools, or using the REST API. The portal is the easiest way to view alerts - it displays a graph of your current alerts, colored by the severity level (high, medium, or low). Here's an example of a subscription with running resources being monitored.
+You can view collected security alerts directly in Microsoft Defender for Cloud on the **Security alerts** page, through command-line tools, or using the REST API. The portal is the easiest way to view alerts - it displays a graph of your current alerts, colored by the severity level (high, medium, or low). Here's an example of a subscription with running resources being monitored.
 
-![Screenshot of the threat-protection area of Defender for Cloud.](../media/6-security-center-dashboard-alert.png)
+:::image type="content" source="../media/2-defender-for-cloud-security-alerts.png" alt-text="Screenshot that shows the security alerts pane in Defender for Cloud.":::
 
-Selecting the **Threat protection** tile presents more detailed information, as shown in the following image:
+The alerts are also listed individually for more detailed information. You can filter alerts based on the date, state, and severity. Filtering alerts might be useful for scenarios where you need to narrow the scope of the security alerts. For example, you might want to address security alerts that occurred in the last 24 hours if you’re investigating a potential breach in the system.
 
-![Screenshot of the Security alerts panel.](../media/6-security-center-manage-alerts.png)
+If you have a lot of alerts, you can select **Add filter** on the **Security alerts** page. The **Filter** window displays, and you can select filters to display the values you want to see.
 
-You can filter alerts based on the date, state, and severity. Filtering alerts might be useful for scenarios where you need to narrow the scope of the security alerts. For example, you might want to address security alerts that occurred in the last 24 hours if you’re investigating a potential breach in the system.
+:::image type="content" source="../media/2-defender-for-cloud-add-filter.png" alt-text="Screenshot that shows the filter window with filter options displayed.":::
 
-If you have a lot of alerts, you can select **Filter** on the **Security alerts** page. The **Filter** area opens on the side, and you can choose the date, state, and severity values you want to see.
+You can also use the **Grouping** menu to sort alerts by title, resource, and subscription.
 
-![Screenshot that depicts The Filter area on the Security alerts page.](../media/M3-ASC-Alerts2.png)
+:::image type="content" source="../media/2-defender-for-cloud-alert-grouping.png" alt-text="Screenshot that shows the 'Grouping' drop-down menu.":::
