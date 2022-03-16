@@ -210,7 +210,7 @@ You can get these values from the connection string.
     ```azurecli
     az servicebus queue show \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name salesmemessages \
+        --name salesmessages \
         --query messageCount \
         --namespace-name <namespace-name>
     ```
