@@ -1,7 +1,8 @@
+## Introduction
+
 To get a better understanding of the behavior of thread activities in the Hello World project, we'll collect timing data for each cycle of activities performed by the threads. We'll compute and display the total number of cycles each thread completed and the average time for each cycle.
 
 To accomplish this purpose, we'll modify the code for the Hello World Project by adding several ThreadX time and timer facilities. We'll call this modified project ProjectAnalyze.
-
 
 ## Learning objectives
 
@@ -17,5 +18,5 @@ In this module, you'll:
 ## Prerequisites
 
 - [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
-- Working knowledge of C or C++, GitHub and Visual Studio
+- Working knowledge of C or C++, GitHub, and Visual Studio
 - Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)

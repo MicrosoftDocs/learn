@@ -1,11 +1,13 @@
-You get to analyze your work with ProjectHelloWorld with this project. We'll use GitHub Codespaces or Visual Studio, and you have a C project named *ProjectAnalyze* to modify.
+## Introduction
+
+You get to analyze your work with ProjectHelloWorld in this project. We'll use GitHub Codespaces or Visual Studio, and you have a C project named *ProjectAnalyze* to modify.
 
 > [!TIP]
 > Refer to [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
 
 ## Use GitHub Codespaces
 
-1. Open the codespace you have created from GitHub repo. Once done, you can view the sample projects repo within VSCode web.
+1. Open the codespace you've created from GitHub repo. Once done, you can view the sample projects repo within VSCode web.
 
 1. Expand the **TASK EXPLORER** pane and expand the **vscode** node you'll find **Build / Clean / Run Project** tasks. Choose **Build Project** and select the run button.
 
@@ -25,7 +27,7 @@ You get to analyze your work with ProjectHelloWorld with this project. We'll use
 
 ## Complete the sample
 
-If all has gone well, you should see initial output appearing on the screen similar to this:
+If all has gone well, you should see initial output appearing on the screen similar to the following image:
 
 :::image type="content" source="../media/partial-output.png" alt-text="Image showing partial output from Project Analyze.":::  <br /> *Partial Output from ProjectAnalyze*
 
