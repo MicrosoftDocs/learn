@@ -11,7 +11,5 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
-azureSandbox: true
-interactive: azure-portal
 content: |
   [!include[](includes/7-exercise-deploy-expressjs-app.md)]
