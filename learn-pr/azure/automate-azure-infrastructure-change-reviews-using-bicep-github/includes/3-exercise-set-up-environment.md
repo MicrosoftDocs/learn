@@ -1,20 +1,233 @@
-**Note to John: leaving this one mainly to you.**
+Before you set up your toy company's pull request workflows, you need to configure your environment. In this unit, you make sure that your Azure and GitHub environments are set up to complete the rest of this module.
 
-During the process you'll:
+To meet these objectives, you'll:
 
 > [!div class="checklist"]
-> * Copy and clone a template repository
-> * Create a service principal and GitHub secret
+> * Set up a GitHub repository for this module.
+> * Clone the repository to your computer.
+> * Create a service principal in Azure Active Directory.
+> * Create a secret in GitHub.
 
-## Copy and clone a template repository
+## Get the GitHub repository
 
-## Create a service principal and GitHub secret
+Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module. 
 
-**Note to John: the below is an exact copy and paste from the other module, however, this already contains the fact that the SP needs wider permissions ... we only need those wider perms though for the exercise after the next chapter. So basically leaving it up to you how you want to word the SP creation here ...**
+The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
-First you will need to create a service principal that has the permissions to create resource groups and resources in your subscription. You will also need a GitHub secret that uses this service principal.
+> [!TIP]
+> Even if you completed the previous module in the learning path, please follow these instructions to create a new repository and ensure that you give it a new name.
+
+### Start from the template repository
+
+Run a template that sets up your GitHub repository.
+
+> [!div class="nextstepaction"]
+> [Run the template](https://github.com/MicrosoftDocs/mslearn-automate-azure-infrastructure-change-reviews-using-bicep-github?azure-portal=true)
+
+On the GitHub site, follow these steps to create a repository from the template:
+
+1. Select **Use this template**. 
+
+   :::image type="content" source="../media/4-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
+
+1. Enter a name for your new project, such as *toy-reusable*.
+
+1. Select the **Public** option.
+
+   When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
+
+1. Select **Create repository from template**. 
+
+   :::image type="content" source="../media/4-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
+
+[!include[](../../includes/cleanup-steps.md)]
+
+## Clone the repository
+
+You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it. 
+
+1. Select **Code** and select the copy icon.
+
+   :::image type="content" source="../media/4-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new repository, with the repository U R L copy button highlighted.":::
+
+1. Open Visual Studio Code. 
+
+1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
+
+1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toys-reusable_ folder, run the following command:
+
+   ```bash
+   cd toys-reusable
+   ```
+
+1. Type `git clone` and then paste the URL you copied earlier, which looks something like this:
+
+   ```bash
+   git clone https://github.com/mygithubuser/toys-reusable.git
+   ```
+
+1. Reopen Visual Studio Code in the repository folder by running the following command in the Visual Studio Code terminal:
+
+   ```bash
+   code -r toys-reusable
+   ```
+
+## Sign in to Azure
+
+::: zone pivot="cli"
+
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
+
+1. To open a Visual Studio Code terminal window, select **Terminal** > **New Terminal**. The window usually opens at the bottom of your screen.
+
+1. If the dropdown control on the right displays **bash**, the correct shell is open and you can skip to the next section.
+
+   :::image type="content" source="../../includes/media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash displayed in the dropdown control.":::
+
+   If **bash** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **bash**.
+
+   :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting a preferred terminal shell.":::
+
+1. In the terminal, select the plus sign (**+**) to create a new terminal with Bash as the shell.
+
+### Sign in to Azure by using the Azure CLI
+
+1. In the Visual Studio Code terminal, run the following command to sign in to Azure:
+
+   ```azurecli
+   az login
+   ```
+
+1. In the browser that opens, sign in to your Azure account.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true).
+
+1. To open a Visual Studio Code terminal window, select **Terminal** > **New Terminal**. The window usually opens at the bottom of your screen.
+
+1. If the dropdown control at the right displays **pwsh** or **PowerShell**, the correct shell is open and you can skip to the next section.
+
+   :::image type="content" source="../../includes/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with text signifying PowerShell displayed in the dropdown control.":::
+
+   If **pwsh** or **PowerShell** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.
+
+   :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting your preferred terminal shell.":::
+
+1. In the terminal, select the plus sign (**+**) to create a new terminal with pwsh or PowerShell as the shell.
+
+### Sign in to Azure by using Azure PowerShell
+
+1. In the Visual Studio Code terminal, run the following command to sign in to Azure:
+
+   ```azurepowershell
+   Connect-AzAccount
+   ```
+
+1. In the browser that opens, sign in to your Azure account.
+
+::: zone-end
+
+## Create a service principal
+
+Later in this Microsoft Learn module, your pull request workflow will create resource groups and resources in your subscription. To do this, you need to create a service principal and grant it the Owner role on your subscription.
 
 > [!WARNING]
-> Since the service principal you will be creating will get quite wide permissions on your subscription, do not execute this exercise in an environment that holds any of your production workloads.
+> The service principal you create here will have a high level of access to your Azure subscription. To avoid any accidental issues, use a non-production subscription. Don't execute these steps in an environment that holds any of your production workloads.
 
-**Note to John: not copying the steps here, since this is (almost) copy paste of the SP and GH secret creation steps we already have. Only permissions on the SP should be wider.**
+::: zone pivot="cli"
+
+1. TODO get sub ID
+
+1. To create a service principal and assign it the Owner role for your subascription, run the following Azure CLI command in the Visual Studio Code terminal. Replace the `SUBSCRIPTION_ID` placeholder with the resource group ID you copied in the last step.
+
+   ```azurecli
+   az ad sp create-for-rbac \
+     --name ToyWebsiteAutoReview \
+     --role Owner \
+     --scopes '/subscriptions/SUBSCRIPTION_ID' \
+     --sdk-auth
+   ```
+
+   [!INCLUDE [](../../includes/azure-template-bicep-exercise-cli-unique-display-name.md)]
+
+1. Select the JSON output from the previous command. It looks like this:
+
+   ```json
+   {
+     "clientId": "c6bf233f-d1b8-480a-9cf7-27e2186345d2",
+     "clientSecret": "<secret value>",
+     "subscriptionId": "f0750bbe-ea75-4ae5-b24d-a92ca601da2c",
+     "tenantId": "dbd3173d-a96b-4c2f-b8e9-babeefa21304",
+     "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+     "resourceManagerEndpointUrl": "https://management.azure.com/",
+     "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+     "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+     "galleryEndpointUrl": "https://gallery.azure.com/",
+     "managementEndpointUrl": "https://management.core.windows.net/"
+   }
+   ```
+
+   Copy the entire output somewhere safe, including the curly braces. You'll use it soon. 
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. TODO get sub ID
+
+1. To create a service principal and assign it the Owner role for your subascription, run the following Azure PowerShell command in the Visual Studio Code terminal. Replace the `SUBSCRIPTION_ID` placeholder with the resource group ID you copied in the last step.
+
+   ```azurepowershell
+   $azureContext = Get-AzContext
+   $subscriptionId = "/subscriptions/$($azureContext.Subscription.Id)"
+   $servicePrincipal = New-AzADServicePrincipal `
+     -DisplayName ToyWebsiteAutoReview `
+     -Role Owner `
+     -Scope $subscriptionId
+
+   $output = @{
+      clientId = $($servicePrincipal.ApplicationId)
+      clientSecret = $([System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password)
+      subscriptionId = $($azureContext.Subscription.Id)
+      tenantId = $($azureContext.Tenant.Id)
+   }
+   $output | ConvertTo-Json
+   ```
+
+1. Select the JSON output from the previous command. It looks like this:
+
+   ```json
+   {
+     "clientId": "c6bf233f-d1b8-480a-9cf7-27e2186345d2",
+     "clientSecret": "<secret value>",
+     "subscriptionId": "f0750bbe-ea75-4ae5-b24d-a92ca601da2c",
+     "tenantId": "dbd3173d-a96b-4c2f-b8e9-babeefa21304"
+   }
+   ```
+
+   Copy the entire output somewhere safe, including the curly braces. You'll use it soon.
+
+::: zone-end
+
+## Create a GitHub secret
+
+You've created a  service principal. Next, create a secret in GitHub Actions.
+
+1. In your browser, navigate to your GitHub repository.
+
+1. Select **Settings** > **Secrets**.
+
+1. Select **New repository secret**.
+
+   :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
+
+1. Name the secret *AZURE_CREDENTIALS*.
+
+1. In the **Value** field, paste the JSON object that you copied in the previous section.
+
+1. Select **Add secret**. 
+
+   :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
