@@ -17,7 +17,7 @@ The convert phase consists of two possible steps, which you complete in sequence
 
 If you have an existing JSON template that you're converting to Bicep, the first step is easy because you already have your source template. You'll learn how to decompile it to Bicep shortly.
 
-If you're converting Azure resources that were deployed by using the portal or another tool, you need to capture the resource definitions. You can either use export the resource definitions and convert them to Bicep, or you can use the 'Import Resource' command within Visual Studio Code to import a Bicep representation of your Azure resouce.
+If you're converting Azure resources that were deployed by using the portal or another tool, you need to capture the resource definitions. You can either export the resource definitions and convert them to Bicep, or you can use the 'Import Resource' command within Visual Studio Code to import a Bicep representation of your Azure resource.
 
 ### How Azure represents resources
 
