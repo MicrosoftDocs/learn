@@ -9,6 +9,8 @@ metadata:
   ms.author: lajanuar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: apspeigh-10062020
 durationInMinutes: 20
 content: |
   [!include[](includes/7-exercise-create-speech-translation-script.md)]

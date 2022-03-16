@@ -5,7 +5,7 @@ Before you can begin writing Python code, you'll need to install a few tools on 
 In this module, we make an effort to distinguish between Python version 2 and Python version 3. We make this distinction because Python 2 was discontinued in 2020. The key idea is that you want to use Python 3 from now on.
 
 > [!NOTE]
-> Why is it important to emphasize the need to use Python 3? Some systems may have been delivered with Python 2 pre-installed, so you'll need to take extra steps to install Python 3.
+> Why is it important to emphasize the need to use Python 3? Some systems may have Python 2 pre-installed, so you'll need to take extra steps to install Python 3.
 
 ### How do I know if I already have Python 3 installed on my computer?
 
@@ -41,9 +41,10 @@ To determine if your Windows computer already has Python 3:
     Python 3.8.0
     ```
 
-As long as the first number is `3`, Python 3 is installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in all of the beginner Python modules on Microsoft Learn.
+As long as the first number is `3`, you have Python 3 installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in any of the beginner Python modules on Microsoft Learn.
 
-If the first number is `2` or if you received an error message, you'll need to install Python 3. We'll walk you through installation of Python 3 in the next unit.
+If the first number is `2` or if you received an error message, you'll need to install Python 3. We'll walk you through installation of Python 3 in the next unit.Recap
+The main takeaways from this unit are:
 
 ::: zone-end
 
@@ -71,7 +72,7 @@ To determine if your Linux computer already has Python 3 installed:
     Python 3.8.0
     ```
 
-As long as the first number is `3` and you didn't receive an error message, Python 3 is installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in all of the beginner Python modules on Microsoft Learn.
+As long as the first number is `3`, you have Python 3 installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in any of the beginner Python modules on Microsoft Learn.
 
 If you received an error message, you'll need to install Python 3. We'll walk you through installation of Python 3 in the next unit.
 
@@ -100,7 +101,7 @@ To determine if your macOS computer already has Python 3 installed:
     Python 3.8.0
     ```
 
-As long as the first number is `3` and you didn't receive an error message, Python 3 is installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in all of the beginner Python modules on Microsoft Learn.
+As long as the first number is `3`, you have Python 3 installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in any of the beginner Python modules on Microsoft Learn.
 
 If you received an error message, you'll need to install Python 3. We'll walk through installation of Python 3 in the next unit.
 

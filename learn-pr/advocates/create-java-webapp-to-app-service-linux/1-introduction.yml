@@ -9,6 +9,8 @@ metadata:
   ms.date: 12/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: yoterada-12142020
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

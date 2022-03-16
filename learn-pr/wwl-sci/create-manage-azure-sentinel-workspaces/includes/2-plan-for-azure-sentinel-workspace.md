@@ -16,7 +16,7 @@ This workspace receives logs from resources in other regions within the same ten
 
 ![Single Tenant Workspace](../media/single-tenant-workspace.png)
 
-Single-Tenants with a single workspace pros and cons include:
+Single-Tenants with a single workspace trade-offs include:
 
 | Pros| Cons|
 | :--- | :--- |

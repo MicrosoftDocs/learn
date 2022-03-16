@@ -9,7 +9,8 @@ metadata:
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, team=cloud_advocates
+  ms.contributors: cassieb-09032021
 durationInMinutes: 2
 quiz:
   title: Answer the following questions to check your understanding.
