@@ -30,11 +30,11 @@ units:
 - learn.dotnet-debug-visual-studio.1-introduction
 - learn.dotnet-debug-visual-studio.2-debugger
 - learn.dotnet-debug-visual-studio.3-analyze-your-program-state
-- learn.dotnet-debug-visual-studio.4-use-visual-studio-code-debugger
+- learn.dotnet-debug-visual-studio.4-use-visual-studio-debugger
 - learn.dotnet-debug-visual-studio.5-logging-and-tracing
 - learn.dotnet-debug-visual-studio.6-use-logging-and-tracing
 - learn.dotnet-debug-visual-studio.7-knowledge-check
 - learn.dotnet-debug-visual-studio.8-summary
 
 badge:
-  uid: learn.dotnet-debug.badge
+  uid: learn.dotnet-debug-visual-studio.badge
