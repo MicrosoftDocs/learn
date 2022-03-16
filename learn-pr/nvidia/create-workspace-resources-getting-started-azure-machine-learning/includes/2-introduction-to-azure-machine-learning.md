@@ -1,20 +1,20 @@
-Azure ML is a platform for creating and managing the end-to-end life cycle of machine learning systems. Azure Machine Learning is **framework agnostic**, giving you the flexibility to work with the technologies you prefer, such as _TensorFlow, PyTorch, ONNX, MLFlow, and Scikit-learn._
+Azure Machine Learning  is a platform for creating and managing the end-to-end life cycle of machine learning systems. Azure Machine Learning is **framework agnostic**, giving you the flexibility to work with the technologies you prefer, such as _TensorFlow, PyTorch, ONNX, MLFlow, and Scikit-learn._
 
 ## Introduction to Azure Machine Learning 
 
-Azure ML enables users familiar with ML frameworks to quickly train and deploy models using code, while giving others powerful visual tools. All your training scripts, models, logs, and computes are centralized in a shared Workspace in Azure ML, which assists you in every step of building and deploying machine learning systems—meaning you can focus on models while Azure ML does the rest.
+Azure Machine Learning  enables users familiar with Machine Learning  frameworks to quickly train and deploy models using code, while giving others powerful visual tools. All your training scripts, models, logs, and computes are centralized in a shared Workspace in Azure Machine Learning , which assists you in every step of building and deploying machine learning systems—meaning you can focus on models while Azure Machine Learning  does the rest.
 
-Azure ML has a comprehensive suite of features to support logging, monitoring, and governance of datasets and models, ensuring your models are performing as intended and effectively communicated to stakeholders.
+Azure Machine Learning  has a comprehensive suite of features to support logging, monitoring, and governance of datasets and models, ensuring your models are performing as intended and effectively communicated to stakeholders.
 
 ## What is Azure Machine Learning studio?
 
-Azure Machine Learning studio is a browser-based service that provides no-code and code-first solutions to visually create, train, and manage models through a web UI. Azure ML studio allows _Python_ and _R_ SDK to seamlessly integrate with the natively supported _Jupyter Notebooks_ for collaborative notes and coding. Data within Azure Machine Learning studio is simple to manage with intuitive data visualization and AI-assisted image or text labeling features.
+Azure Machine Learning studio is a browser-based service that provides no-code and code-first solutions to visually create, train, and manage models through a web UI. Azure Machine Learning  studio allows _Python_ and _R_ SDK to seamlessly integrate with the natively supported _Jupyter Notebooks_ for collaborative notes and coding. Data within Azure Machine Learning studio is simple to manage with intuitive data visualization and AI-assisted image or text labeling features.
 
 :::image type="content" source="../media/2-studio.gif" alt-text="Azure Machine Learning studio is shown in action" lightbox="../media/2-studio.gif":::
 
 ## Creating a model
 
-Models can be created in Azure ML in several ways. Training can take place on a local machine or the Azure cloud, such as a virtual machine or compute cluster.
+Models can be created in Azure Machine Learning  in several ways. Training can take place on a local machine or the Azure cloud, such as a virtual machine or compute cluster.
 
 ### AutoML
 
@@ -26,13 +26,13 @@ In the image below, we can see an overview of the AutoML pipeline building and r
 
 ## Compute
 
-The computing resources you need for your ML environment can be allocated or attached through Azure ML. From the compute that powers your Jupyter notebooks for exploratory data analysis, to the clusters you'll use for training and the kubernetes clusters you'll deploy to for production inferencing at scale, it can be managed through Azure ML.
+The computing resources you need for your Machine Learning  environment can be allocated or attached through Azure Machine Learning . From the compute that powers your Jupyter notebooks for exploratory data analysis, to the clusters you'll use for training and the kubernetes clusters you'll deploy to for production inferencing at scale, it can be managed through Azure Machine Learning .
 
 ## Managing data
 
-With Azure ML, the time-intensive process of data preparation and ingestion can be streamlined and collaboratively worked on. The platform smoothly integrates with _Azure Synapse, Azure Databricks,_ and a suite of other Azure services to assist data engineering pipelines to extract, transform, and load (ETL) raw data into datastores.
+With Azure Machine Learning , the time-intensive process of data preparation and ingestion can be streaMachine Learning ined and collaboratively worked on. The platform smoothly integrates with _Azure Synapse, Azure Databricks,_ and a suite of other Azure services to assist data engineering pipelines to extract, transform, and load (ETL) raw data into datastores.
 
 ### Datastores and labeling
 
-Azure ML securely stores your raw data in the datastore, so you don’t have to rely on external sources for your scripts, and your training sets can be experimented upon without risking the integrity of the original raw data. Once stored, you can clean, transform, and label data to create training sets from the datastore. Azure ML offers tools to help label tabular, image, and text data—with built-in machine learning systems that can suggest labels or fully automate data labeling. The example below shows a human led multi-label classification project underway in the Azure ML studio.
+Azure Machine Learning  securely stores your raw data in the datastore, so you don’t have to rely on external sources for your scripts, and your training sets can be experimented upon without risking the integrity of the original raw data. Once stored, you can clean, transform, and label data to create training sets from the datastore. Azure Machine Learning  offers tools to help label tabular, image, and text data—with built-in machine learning systems that can suggest labels or fully automate data labeling. The example below shows a human led multi-label classification project underway in the Azure Machine Learning  studio.
 

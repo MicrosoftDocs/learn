@@ -1,4 +1,4 @@
-### YamlMime:Module
+### YaMachine LearningMime:Module
 uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning
 metadata:
   title: Create workspace resources for getting started with Azure Machine Learning
@@ -15,9 +15,9 @@ abstract: |
   In this module, you'll learn how to:
   - Create an Azure Storage account for storing and loading image data
   - Create workspace resources for getting started with Azure Machine Learning
-    - Create an Azure ML Studio workspace
-    - Create an Azure ML Studio compute instance for use in model in training / validation
-    - Create an Azure ML Studio Datastore
+    - Create an Azure Machine Learning Studio workspace
+    - Create an Azure Machine Learning Studio compute instance for use in model in training / validation
+    - Create an Azure Machine Learning Studio Datastore
 prerequisites: |
   - [Azure Free Trial Account](https://azure.microsoft.com/free/)
 iconUrl: /learn/achievements/setup-configure-nvidia-deepstream-development.svg
@@ -35,9 +35,9 @@ units:
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.2-introduction-to-azure-machine-learning
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.3-create-an-azure-storage-account
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.4-create-an-azure-storage-container
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.5-create-an-azure-ml-workspace
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.6-create-an-azure-ml-compute-instance
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.7-create-an-azure-ml-datastore
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.5-create-an-azure-machine-learning-workspace
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.6-create-an-azure-machine-learning-compute-instance
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.7-create-an-azure-machine-learning-datastore
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.8-knowledge-check
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.9-summary
 badge:

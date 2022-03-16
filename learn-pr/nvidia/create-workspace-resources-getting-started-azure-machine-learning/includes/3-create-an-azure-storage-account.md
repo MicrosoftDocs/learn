@@ -16,7 +16,7 @@ In this unit, you'll use the Azure portal to create a storage account for storin
     | Subscription | \<Your Subscription\> |
     | Resource group | \<Create New\> OR \<Select an Existing Resource Group\> |
     | **Instance details**| |
-    | Storage account name | Enter a unique name. This name will be used to generate the public URL to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must have 3 to 24 characters and can contain only lowercase letters and numbers. Take note of the **Storage Account Name** as this value will be needed later on when we create a Datastore in Azure ML Studio.|
+    | Storage account name | Enter a unique name. This name will be used to generate the public URL to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must have 3 to 24 characters and can contain only lowercase letters and numbers. Take note of the **Storage Account Name** as this value will be needed later on when we create a Datastore in Azure Machine Learning  Studio.|
     | Region | Select a location near to you from the dropdown list. |
     | Performance | *Standard*. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
     | Redundancy | Select *Locally redundant storage (LRS)* from the dropdown list. This low-cost option will satisfy our requirements for this learning path, however, you're welcome to choose a different option depending on your individual needs. |
@@ -81,4 +81,4 @@ In this unit, you'll use the Azure portal to create a storage account for storin
 
 :::image type="content" source="../media/3-storage-overview.png" alt-text="The Storage Account Overview is shown" lightbox="../media/3-storage-overview.png":::
 
-Take note of the **Storage Account Name** as this value will be needed later on when we create a Datastore in Azure ML Studio.
+Take note of the **Storage Account Name** as this value will be needed later on when we create a Datastore in Azure Machine Learning  Studio.

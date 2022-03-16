@@ -1,10 +1,10 @@
-In this module, you'll learn how to create workspace resources for getting started with Azure Machine Learning.  These will include deployment of an Azure Storage Account for storing and retrieving image data and an Azure ML Studio instance with an associated compute instance for image training / validation along with an Azure Machine Learning studio Datastore for working with image data in additional Azure ML Studio services.
+In this module, you'll learn how to create workspace resources for getting started with Azure Machine Learning.  These will include deployment of an Azure Storage Account for storing and retrieving image data, an Azure Machine Learning Studio instance with an associated compute instance for image training / validation, and an Azure Machine Learning studio Datastore for referencing image data.
 
 ### Prerequisites
 
 - [Azure Free Trial Account](https://azure.microsoft.com/free/)
 
-:::image type="content" source="../media/1-ManufactuingLine.png" alt-text="An object detection algorithm running on a manufacturing line" lightbox="../media/1-ManufactuingLine.png":::
+:::image type="content" source="../media/1-manufacturing-line.png" alt-text="An object detection algorithm running on a manufacturing line" lightbox="../media/1-manufacturing-line.png":::
 
 ## Scenario: Deploy resources to develop a custom object detection model using NVIDIA and Azure Machine Learning
 
@@ -16,9 +16,9 @@ After you finish this module, you'll be able to:
 
 - Create an Azure Storage account for storing and loading image data
 - Create workspace resources for getting started with Azure Machine Learning
-  - Create an Azure ML Studio workspace
-  - Create an Azure ML Studio compute instance for use in model in training / validation
-  - Create an Azure ML Studio Datastore
+  - Create an Azure Machine Learning  Studio workspace
+  - Create an Azure Machine Learning  Studio compute instance for use in model in training / validation
+  - Create an Azure Machine Learning  Studio Datastore
 
 ## What is the main goal?
 
