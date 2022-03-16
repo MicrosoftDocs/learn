@@ -1,10 +1,12 @@
-A counting semaphore is a public resource, and there's no concept of ownership as there is with mutexes. The primary purposes of a counting semaphore are event notification, thread synchronization, and mutual exclusion. ThreadX provides 32-bit counting semaphores where the count must be in the range from 0 to 4,294,967,295 or 2<sup>32</sup>–1 (inclusive). When a counting semaphore is created, the count must be initialized to a value within that range. Each value in the semaphore is an instance of that semaphore. Thus, if the semaphore count is five, then there are five instances of that semaphore.
+## Introduction
+
+A counting semaphore is a public resource, and there's no concept of ownership as there is with a mutex. The primary purposes of a counting semaphore are event notification, thread synchronization, and mutual exclusion. ThreadX provides 32-bit counting semaphores where the count must be in the range from 0 to 4,294,967,295 or 2<sup>32</sup>–1 (inclusive). When a counting semaphore is created, the count must be initialized to a value within that range. Each value in the semaphore is an instance of that semaphore. Thus, if the semaphore count is five, then there are five instances of that semaphore.
 
 The following image lists the attributes of a counting semaphore:
 
 :::image type="content" alt-text="Diagram that illustrates the attributes of a counting semaphore." source="../media/attributes.svg" border="false" loc-scope="Azure":::
 
-Every counting semaphore must have a control block that contains essential system information. Every counting semaphore is assigned a name, which is used primarily for identification purposes. Every counting semaphore must have a semaphore count that indicates the number of instances available. As noted before, the value of the count must be in the range from 0x00000000 to 0xFFFFFFFF (inclusive). A counting semaphore can be created either during initialization or during run-time by a thread. There is no limit to the number of counting semaphores that can be created.
+Every counting semaphore must have a control block that contains essential system information. Every counting semaphore is assigned a name, which is used primarily for identification purposes. Every counting semaphore must have a semaphore count that indicates the number of instances available. As noted before, the value of the count must be in the range from 0x00000000 to 0xFFFFFFFF (inclusive). A counting semaphore can be created either during initialization or during run-time by a thread. There's no limit to the number of counting semaphores that can be created.
 
 The following image is an illustration of a counting semaphore:
 

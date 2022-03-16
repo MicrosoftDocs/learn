@@ -1,4 +1,6 @@
-We'll use the same scenario for this project as we did for ProjectHelloWorld and ProjectAnalyze, but we'll modify the processing times for Urgent thread and Routine thread. We'll also introduce a new thread called Monitor that will periodically check the status of Urgent and Routine to determine whether they're experiencing lengthy delays.
+## Introduction
+
+We'll use the same scenario for this project as we did for ProjectHelloWorld and ProjectAnalyze. However, we'll modify the processing times for Urgent thread and Routine thread. We'll also introduce a new thread called Monitor that will periodically check the status of Urgent thread and Routine thread to determine whether they're experiencing lengthy delays.
 
 The following image contains an illustration of the ProjectBreakSuspension project activities.
 

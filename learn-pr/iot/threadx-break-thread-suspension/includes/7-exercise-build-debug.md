@@ -1,4 +1,6 @@
-You get to detect and abort unacceptably long suspension in this project. We'll use GitHub Codespaces or Visual Studio, and you have a C project named *ProjectBreakSuspension* to modify.
+## Introduction
+
+You get to detect and abort unacceptably long suspension times in this project. We'll use GitHub Codespaces or Visual Studio, and you have a C project named *ProjectBreakSuspension* to modify.
 
 > [!TIP]
 > Refer to [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
