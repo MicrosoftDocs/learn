@@ -11,5 +11,5 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |
-  [!include[](includes/4-use-visual-studio-code-debugger.md)]
+  [!include[](includes/4-use-visual-studio-debugger.md)]
   

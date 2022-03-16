@@ -12,3 +12,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/2-debugger.md)]
+  

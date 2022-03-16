@@ -12,3 +12,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/6-use-logging-and-tracing.md)]
+  
