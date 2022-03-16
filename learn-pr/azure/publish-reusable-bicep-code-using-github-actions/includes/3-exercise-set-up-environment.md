@@ -28,7 +28,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 1. Select **Use this template**. 
 
-   :::image type="content" source="../media/4-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
+   :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
 
 1. Enter a name for your new project, such as *toy-reusable*.
 
@@ -38,7 +38,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 1. Select **Create repository from template**. 
 
-   :::image type="content" source="../media/4-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
+   :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
 
 [!include[](../../includes/cleanup-steps.md)]
 
@@ -48,7 +48,7 @@ You now have a copy of the template repository in your own account. You will now
 
 1. Select **Code** and select the copy icon.
 
-   :::image type="content" source="../media/4-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new repository, with the repository U R L copy button highlighted.":::
+   :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new repository, with the repository U R L copy button highlighted.":::
 
 1. Open Visual Studio Code. 
 
