@@ -1,45 +1,88 @@
-The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands. This script supports the direct manipulation input model as the script enables the user to touch holograms directly with their hands. Here you'll create a cube and use ObjectManipulator to enable hand interactions so that you can move, scale, and rotate the cube.
+The ObjectManipulator script supports the "direct manipulation" input model--when the script is attached to an object, the user can move, scale or rotate the object with their hands. In this exercise, you'll create a cube and then attach the ObjectManipulator script to it.
 
 ## Add a cube to the scene
 
-1. In the Unity menu, select **GameObject** > **3D Object** > **Cube** to add a cube object to the scene.
+1. In the menu bar, select **GameObject** > **3D Object** > **Cube**.
 
-    :::image type="content" source="../media/add-cube.png" alt-text="Screenshot of Adding the cube." lightbox="../media/add-cube.png":::
+    :::image type="content" source="../media/027-add-cube.png" alt-text="Screenshot of menu commands for adding the cube.":::
 
-2. Click the **Cube** object in the Hierarchy window, then in the Inspector window configure
-its **Transform** component as follows
+To optimize the cube's size and position for our project, we'll need to make a few changes. 
 
-    * **Position**: X = 0, Y = -0.1, Z = 0.5
-    * **Rotation**: X = 0, Y = 0, Z = 0
-    * **Scale**: X = 0.1, Y = 0.1, Z = 0.1  
-    :::image type="content" source="../media/cube-transform-values.png" alt-text="Screenshot of Changing the transform values of the cube." lightbox="../media/cube-transform-values.png":::
+## Change the cube's size
 
-3. Unity unit's 1 meter. We have updated cube's size to 10x10x10 cm, placed at 50cm from the headset position (0,0,0). 10cm below the eye level for comfortable interaction.
+The cube's default size is one square meter--this is too big for our purposes. We'll scale the size down to 20x20x20 cm.
 
-4. If you use the default scale (1,1,1), the cube will be too big. If you use the default position (0,0,0), the cube will be placed at the same position as your headset and you won't be able to see it until you move backward.
+1. Select the cube, and then in the **Inspector**, change the cube's **Tranform/Scale** values to the following:
+   
+   X = 0.2, Y = 0.2, Z = 0.2
+   
+## Change the cube's position
 
-5. To focus in on the objects in the scene, you can double-click on the **Cube** object, and then zoom slightly in again. Or you can use F key to zoom and focus on the object.
+The cube was placed in the scene at the default position of (0,0,0). This means the cube is at the same position as your headset, and the user won't be able to see it until they move backwards. We'll move the cube 50 cm forward on the Z axis and 10 cm down on the Y axis for more comfortable interaction.
 
-6. To interact and grab an object with tracked hands, the object must have:
+1. In the **Inspector**, change the cube's **Tranform/Position** values to the following:
+   
+   X = 0, Y = -0.1, Z = 0.5
 
-    * Collider component such as **Box Collider** (Unity's cube already has a Box Collider by default)
-    * **Object Manipulator (Script)** component
-    * **NearInteractionGrabbable(Script)** component
+    :::image type="content" source="../media/028-cube-transform-values.png" alt-text="Screenshot of the cube's transform component after updates.":::
+
+## Change the cube's rotation
+
+We want to be able to see three sides of the cube, so we'll change the rotation, too. 
+
+1. 1. In the **Inspector**, change the cube's **Tranform/Rotation** values to the following:
+   
+   X = 9, Y = 14, Z = 0
+
+   > [!TIP]
+   > To zoom in on the cube, select it, make sure cursor is hovering over the **Scene** window, and then press the F key. You can zoom in on any object this way.
+
+## ________________
+
+In order for an object to be "grabbable" with tracked hands, it must have three components attached: 
+
+    * A Collider component (Unity's cube already has a Box Collider by default)
+    * Object Manipulator (Script) component
+    * NearInteractionGrabbable (Script) component
 
     MRTK's **ObjectManipulator** script makes an object movable, scalable, and rotatable using one or two hands. This script supports the direct manipulation input model as the Adding hand interaction to an object script enables the user to touch holograms directly with their hands.
 
-7. With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on **Add Component** button, then search and select **Object Manipulator script** to add the Object Manipulator script to the cube object.
+1. With the cube still selected, in the **Inspector** window, click the **Add Component** button, and then search for and select the **Object Manipulator** script.
 
-    :::image type="content" source="../media/add-object-manipulator.png" alt-text="Screenshot of Adding the object manipulator." lightbox="../media/add-object-manipulator.png":::
+    :::image type="content" source="../media/029-select-object-manipulator.png" alt-text="Screenshot of adding the Object Manipulator script.":::
 
-8. Repeat the same to add **Near Interaction Grabbable script** to the cube.
-
-    :::image type="content" source="../media/add-near-interaction-grabbable.png" alt-text="Screenshot of Adding the Near Interaction Grabbable." lightbox="../media/add-near-interaction-grabbable.png":::
+1. Repeat the same steps to add the **Near Interaction Grabbable script** to the cube.
 
     > [!NOTE]
-    > When you add a Object Manipulator (Script), in this case, the Constraint Manager (Script) is automatically added because Object Manipulator (Script) depends on it.
+    > When you add the Object Manipulator script, the Constraint Manager script is automatically added as well because the Object Manipulator script depends on it.
 
-## Move the cube in play mode
+    :::image type="content" source="../media/030-constraint-manager.png" alt-text="Screenshot of the Constraint Manager script added to the cube.":::
+
+## Duplicating the cube
+
+1. In the **Hierarchy**, select the cube, and then select **Duplicate**. The duplicated cube appears with the name "Cube (1)."
+1. Right-click the original cube, select **Rename**, and then name the cube "Near Cube."
+1. Right-click the duplicated cube, select **Rename**, and then name the cube "Far Cube."
+
+Let's change Far Cube's position and rotation.
+
+1. With Far Cube still selected, change its values in its **Transform** component to the following:
+
+    Position: X = 0.6, Y = 0.1, Z = 1.1
+    Rotation: X = 27, Y = 0, Z = 0
+   
+
+
+
+## Grab and move the cubes in Play mode
+
+1. Click the Play button. When the project starts playing, the view switches to the **Game** window.
+
+    :::image type="content" source="../media/031-game-window.png" alt-text="Screenshot of the Game window after entering Play mode.":::
+
+1. Click the three-dot button above the upper-right corner of the **Game** window and then select **Maximize**.
+
+    :::image type="content" source="../media/032-maximize-command.png" alt-text="Screenshot of Maximize command for the Game window.":::
 
 * In the Unity toolbar, click the **Play** icon to enter play mode.
     Using the Unity in-editor input simulation, press the space bar on your keyboard to simulate hand input with the right hand.
