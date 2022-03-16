@@ -72,7 +72,7 @@ After 10 minutes, the new settings should have updated on the CDN endpoint. Cont
 
 1. Change the `/?Q=old` to `/?Q=new` and press Enter. The updated page appears after a short pause.
 
-1. Switch back to the `/?Q=old` URl and notice that the older page reappears.
+1. Switch back to the `/?Q=old` URL and notice that the older page reappears.
 
 1. Switch back to the copy of the Azure portal that shows the CDN Endpoint settings. Click **Caching rules** under **Settings**.
 
