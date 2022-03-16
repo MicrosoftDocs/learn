@@ -10,7 +10,7 @@ You may be asking why we chose Python out of all the programming languages out t
 
 ## Real world examples of Python at work
 
-Examples of software that include Python code are YouTube, Dropbox, and Google. [NASA even has a page of open-source projects](https://code.nasa.gov/?azure-portal=true), many of which are programmed in Python. 
+Examples of software that include Python code are YouTube, Dropbox, and Google. [NASA even has a page of open-source projects](https://code.nasa.gov/?azure-portal=true), many of which are programmed in Python.
 
 ## Jupyter Notebooks and Python
 
