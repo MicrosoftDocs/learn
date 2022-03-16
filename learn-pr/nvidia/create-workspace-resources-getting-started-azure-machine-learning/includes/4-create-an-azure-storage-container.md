@@ -30,7 +30,7 @@ Now that we have an Azure Storage Account, we will create a container that will 
 
 1. Download and extract the following provided [image data](https://github.com/microsoft/Develop-Custom-Object-Detection-Models-with-NVIDIA-and-Azure-ML-Studio/raw/main/soda_data_compressed.zip).  You will need to decompress the included _soda_data_compressed.zip_ file, then follow the steps in the image below to upload the contents of the _soda_data\train_img\_ directory as shown.  Once you have selected these files for inclusion, click the now highlighted **Upload** button to begin the transfer from your machine to the Azure Storage Container..
 
-    :::image type="content" source="../media/4-UploadImageData.png" alt-text="The steps to upload the image data are shown lightbox="../media/4-UploadImageData.png":::
+    :::image type="content" source="../media/4-UploadImageData.png" alt-text="The steps to upload the image data are shown" lightbox="../media/4-UploadImageData.png":::
 
 1. Once completed, you should see that 245 images have been added to the Azure Storage Container (0.jpg - 244.jpg).  _Please note that at a minimum you will need at least 50 images to train an AutoML for Images model in Azure Machine Learning Studio_
 

@@ -56,7 +56,7 @@ Learn more about [Machine Learning on Azure](https://azure.microsoft.com/service
 
 1. When you have successfully navigated to the newly deployed instance, notice in the **Overview** section there will be a button labeled "Download config.json".  Select this button to download the configuration and store it somewhere secure and accessible so that it may be used in upcoming steps.
 
-    :::image type="content" source="../media/5-DownloadConfig.png" alt-text="Download the Azure Machine Learning workspace configuration." lightbox="../media/6-DownloadConfig.png":::
+    :::image type="content" source="../media/5-DownloadConfig.png" alt-text="Download the Azure Machine Learning workspace configuration." lightbox="../media/5-DownloadConfig.png":::
 
 1. While in the **Overview** section of the Azure Machine Learning workspace resource, select **Launch Studio** to prepare open your workspace in the browser and prepare for the next unit.
 
