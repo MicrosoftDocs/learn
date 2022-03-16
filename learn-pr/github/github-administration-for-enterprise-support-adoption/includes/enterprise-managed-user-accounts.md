@@ -1,6 +1,6 @@
 Here, you'll explore the capabilities of centrally managing your GitHub enterprise members through GitHub Enterprise Managed Users.
 
-GitHub Enterprise Managed Users (EMUs) are GitHub Enterprise Cloud accounts owned by companies and not individual users. These accounts are controlled, managed, and audited by the company’s GitHub administrators. Using EMUs, you can connect your GitHub Enterprise Account to an identity provider (IdP); ether Azure Active Directory or Okta. From here, you'll be able to centrally manage the user provisioning lifecycle and create a true single sign on experience for your members and contractors. To ensure everything works smoothly, Admins have complete jurisdiction over the EMU accounts and their corresponding private repositories.
+GitHub Enterprise Managed Users (EMUs) are GitHub Enterprise Cloud accounts owned by companies and not individual users. These accounts are controlled, managed, and audited by the company’s GitHub administrators. Using EMUs, you can connect your GitHub Enterprise Account to an identity provider (IdP); either Azure Active Directory or Okta. From here, you'll be able to centrally manage the user provisioning lifecycle and create a true single sign on experience for your members and contractors. To ensure everything works smoothly, Admins have complete jurisdiction over the EMU accounts and their corresponding private repositories.
 
 Because these EMU accounts are owned by the company, an administrator of the company can grant EMU access to any organization within the enterprise. In addition, you can control the profile information of your EMUs, including usernames, first and last names, and emails, all from your connected IdP. In short, With an EMU account, you can reduce the number of tasks that need to be manually duplicated from your IdP on GitHub.
 
@@ -51,7 +51,7 @@ On the contrary to onboarding, when an employee leaves the company, an administr
 
 #### Reduce accidental IP leakage
 
-With the rise of open-source software contributions, employees may need to switch between projects with different user identities and permissions throughout the day. To remove the possibility of accidental IP leakage and contributions made to a project using the wrong credentials, EMUs clearly identify the current account and insure that the employee cannot accidentally expose IP to personal or open-source repositories. This secures the company, IP, and the employee from accidental leakage.
+With the rise of open-source software contributions, employees may need to switch between projects with different user identities and permissions throughout the day. To remove the possibility of accidental IP leakage and contributions made to a project using the wrong credentials, EMUs clearly identify the current account and ensure that the employee cannot accidentally expose IP to personal or open-source repositories. This secures the company, IP, and the employee from accidental leakage.
 
 #### Consultant administration
 
