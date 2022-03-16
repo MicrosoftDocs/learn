@@ -4,12 +4,12 @@ title: Exercise - Create ephemeral environments for pull requests
 metadata:
   unitType: exercise
   title: Exercise - Create ephemeral environments for pull requests
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Extend your pull request workflow to deploy your code changes to a temporary ephemeral environment, and delete the environment automatically when it's no longer needed.
   ms.date: 03/15/2022
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/6-exercise-create-ephemeral-environments-pull-requests.md)]
