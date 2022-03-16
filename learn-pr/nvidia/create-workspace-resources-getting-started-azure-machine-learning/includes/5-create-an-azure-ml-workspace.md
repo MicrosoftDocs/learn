@@ -46,7 +46,7 @@ Learn more about [Machine Learning on Azure](https://azure.microsoft.com/service
 
     :::image type="content" source="../media/5-MLWorkspaceBasics.png" alt-text="The settings of the Machine Learning workspace deployment are shown." lightbox="../media/5-MLWorkspaceBasics.png":::
 
-1. On the resulting page you will be able to validate the details of your deployment. When you are satisfied, select the **Create** button to start the deployment.  This process may take a few minutes to complete.
+1. On the resulting page you'll be able to validate the details of your deployment. When you're satisfied, select the **Create** button to start the deployment.  This process may take a few minutes to complete.
 
     :::image type="content" source="../media/5-CreateMLWorkspace.png" alt-text="The validation of the Machine Learning workspace deployment is shown." lightbox="../media/5-CreateMLWorkspace.png":::
 
@@ -54,7 +54,7 @@ Learn more about [Machine Learning on Azure](https://azure.microsoft.com/service
 
     :::image type="content" source="../media/5-FindResource.png" alt-text="How to navigate to your Azure Machine Learning resource." lightbox="../media/5-FindResource.png":::  
 
-1. When you have successfully navigated to the newly deployed instance, notice in the **Overview** section there will be a button labeled "Download config.json".  Select this button to download the configuration and store it somewhere secure and accessible so that it may be used in upcoming steps.
+1. When you've successfully navigated to the newly deployed instance, notice in the **Overview** section there will be a button labeled "Download config.json".  Select this button to download the configuration and store it somewhere secure and accessible so that it may be used in upcoming steps.
 
     :::image type="content" source="../media/5-DownloadConfig.png" alt-text="Download the Azure Machine Learning workspace configuration." lightbox="../media/5-DownloadConfig.png":::
 

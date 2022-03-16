@@ -10,7 +10,7 @@ Azure ML has a comprehensive suite of features to support logging, monitoring, a
 
 Azure Machine Learning studio is a browser-based service that provides no-code and code-first solutions to visually create, train, and manage models through a web UI. Azure ML studio allows _Python_ and _R_ SDK to seamlessly integrate with the natively supported _Jupyter Notebooks_ for collaborative notes and coding. Data within Azure Machine Learning studio is simple to manage with intuitive data visualization and AI-assisted image or text labeling features.
 
-:::image type="content" source="../media/2-studio.gif" alt-text="Azure Machine Learning Studio is shown in action" lightbox="../media/2-studio.gif":::
+:::image type="content" source="../media/2-studio.gif" alt-text="Azure Machine Learning studio is shown in action" lightbox="../media/2-studio.gif":::
 
 ## Creating a model
 
@@ -18,7 +18,7 @@ Models can be created in Azure ML in several ways. Training can take place on a 
 
 ### AutoML
 
-_Automated Machine Learning (AutoML)_ automates creating the best machine learning models, helping users find the best model for their data—no matter their data science expertise. **Specializing in classification, regression, and time-series forecasting,** AutoML experiments with different features, algorithms, and parameters depending on the task—then provides scores on models it thinks are the best fit. These models can then be exported to an ONNX format that can run on a variety of platforms and devices. AutoML’s versatility and speed mean it’s often used as a starting point by both experienced and novice data scientists.
+_Automated Machine Learning (AutoML)_ automates creating the best machine learning models, helping users find the best model for their data—no matter their data science expertise. **Specializing in classification, regression, and time-series forecasting,** AutoML experiments with different features, algorithms, and parameters depending on the task—then provides scores on models it thinks are the best fit. These models can then be exported to an ONNX format that can run on various platforms and devices. AutoML’s versatility and speed mean it’s often used as a starting point by both experienced and novice data scientists.
 
 In the image below, we can see an overview of the AutoML pipeline building and recommending a model.
 

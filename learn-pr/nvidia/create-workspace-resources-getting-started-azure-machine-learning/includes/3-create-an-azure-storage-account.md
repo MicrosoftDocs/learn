@@ -1,8 +1,8 @@
-In this unit, you'll use the Azure portal to create a storage account for storing and loading image data for use in training an object detection model using Azure Machine Learning Studio.
+In this unit, you'll use the Azure portal to create a storage account for storing and loading image data for use in training an object detection model using Azure Machine Learning studio.
 
 ## Create an Azure Storage Account
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) using the account that you have prepared for this learning path.
+1. Sign in to the [Azure portal](https://portal.azure.com/) using the account that you've prepared for this learning path.
 
 1. On the resource menu, or from the **Home** page, select the hamburger button in the upper left then select **Storage accounts** from the drop-down menu. The **Storage accounts** pane appears.
 
@@ -19,7 +19,7 @@ In this unit, you'll use the Azure portal to create a storage account for storin
     | Storage account name | Enter a unique name. This name will be used to generate the public URL to access the data in the account. The name must be unique across all existing storage account names in Azure. Names must have 3 to 24 characters and can contain only lowercase letters and numbers. Take note of the **Storage Account Name** as this value will be needed later on when we create a Datastore in Azure ML Studio.|
     | Region | Select a location near to you from the dropdown list. |
     | Performance | *Standard*. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
-    | Redundancy | Select *Locally redundant storage (LRS)* from the dropdown list. This low-cost option will satisfy our requirements for this learning path, however, you are welcome to choose a different option depending on your individual needs. |
+    | Redundancy | Select *Locally redundant storage (LRS)* from the dropdown list. This low-cost option will satisfy our requirements for this learning path, however, you're welcome to choose a different option depending on your individual needs. |
 
 1. Select **Next : Advanced**. On the **Advanced** tab, enter the following values for each setting.
 
@@ -37,7 +37,7 @@ In this unit, you'll use the Azure portal to create a storage account for storin
     | Enable SFTP| *Uncheck*. SFTP is disabled by default and isn't relevant to this module. |
     | **Blob storage** |
     | Enable network file share | *Uncheck* (default). |
-    | Allow cross-tenant replication | *Uncheck*. Active Directory is not being used for this exercise. |
+    | Allow cross-tenant replication | *Uncheck*. Active Directory isn't being used for this exercise. |
     | Access tier | *Hot*. This setting is only used for Blob storage. The *Hot* access tier is ideal for frequently accessed data; the *Cool* access tier is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want our image data to load quickly, so we'll use the high-performance option for our blobs. |
     | **Azure Files**| |
     | Enable large file shares | *Uncheck*. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent. |

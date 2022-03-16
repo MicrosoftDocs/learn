@@ -1,4 +1,4 @@
-Now that we have an Azure Storage Account, we will create a container that will allow us to store unstructured blob data.  This format is ideal for sotring and serving image data in a distributed fashion.  We will reference this data in upcoming steps when we create a Datastore in Azure Machine Learning Studio.  
+Now that we have an Azure Storage Account, we'll create a container that will allow us to store unstructured blob data.  This format is ideal for storing and serving image data in a distributed fashion.  We'll reference this data in upcoming steps when we create a Datastore in Azure Machine Learning studio.  
 
 ## Create an Azure Storage Container
 
@@ -8,7 +8,7 @@ Now that we have an Azure Storage Account, we will create a container that will 
 
     :::image type="content" source="../media/4-ContainersSection.png" alt-text="The Containers Section of the Storage Account Overview is shown highlighted." lightbox="../media/4-ContainersSection.png":::
 
-1. Select the **+ Container+** Button, you will be prompted to provide a name for your container.  You will want to keep track of this name is a secure and accessible document as it will be referenced later in the module.  The container name must be lowercase, must start with a letter or number, and can include only letters, numbers, and the dash (-) character.
+1. Select the **+ Container+** Button, you'll be prompted to provide a name for your container.  You'll want to keep track of this name is a secure and accessible document as it will be referenced later in the module.  The container name must be lowercase, must start with a letter or number, and can include only letters, numbers, and the dash (-) character.
 
     Set the level of public access to the container. The default level is **Private (no anonymous access)**.
 
@@ -20,7 +20,7 @@ Now that we have an Azure Storage Account, we will create a container that will 
 
     :::image type="content" source="../media/4-AccessKeysSection.png" alt-text="The Access Keys section is shown highlighted" lightbox="../media/4-AccessKeysSection.png":::
 
-1. This will bring up the following screen. Click on the **Show keys** icon and copy the key to the clipboard and then record it somewhere safe and accessible. This key will be needed later.
+1. This will bring up the following screen. Select the **Show keys** icon and copy the key to the clipboard and then record it somewhere safe and accessible. This key will be needed later.
 
     :::image type="content" source="../media/4-ShowKeys.png" alt-text="The Show Keys section is shown highlighted" lightbox="../media/4-ShowKeys.png":::
 
@@ -28,11 +28,11 @@ Now that we have an Azure Storage Account, we will create a container that will 
 
     :::image type="content" source="../media/4-ContainerSelect.png" alt-text="The container select section is shown highlighted" lightbox="../media/4-ContainerSelect.png":::
 
-1. Download and extract the following provided [image data](https://github.com/microsoft/Develop-Custom-Object-Detection-Models-with-NVIDIA-and-Azure-ML-Studio/raw/main/soda_data_compressed.zip).  You will need to decompress the included _soda_data_compressed.zip_ file, then follow the steps in the image below to upload the contents of the _soda_data\train_img\_ directory as shown.  Once you have selected these files for inclusion, click the now highlighted **Upload** button to begin the transfer from your machine to the Azure Storage Container..
+1. Download and extract the following provided [image data](https://github.com/microsoft/Develop-Custom-Object-Detection-Models-with-NVIDIA-and-Azure-ML-Studio/raw/main/soda_data_compressed.zip).  You'll need to decompress the included _soda_data_compressed.zip_ file, then follow the steps in the image below to upload the contents of the _soda_data\train_img\_ directory as shown.  Once you have selected these files for inclusion, select the now highlighted **Upload** button to begin the transfer from your machine to the Azure Storage Container..
 
     :::image type="content" source="../media/4-UploadImageData.png" alt-text="The steps to upload the image data are shown" lightbox="../media/4-UploadImageData.png":::
 
-1. Once completed, you should see that 245 images have been added to the Azure Storage Container (0.jpg - 244.jpg).  _Please note that at a minimum you will need at least 50 images to train an AutoML for Images model in Azure Machine Learning Studio_
+1. Once completed, you should see that 245 images have been added to the Azure Storage Container (0.jpg - 244.jpg).  _Note that at a minimum you'll need at least 50 images to train an AutoML for Images model in Azure Machine Learning studio_
 
     :::image type="content" source="../media/4-UploadedImageData.png" alt-text="The uploaded image data is shown" lightbox="../media/4-UploadedImageData.png":::
 
