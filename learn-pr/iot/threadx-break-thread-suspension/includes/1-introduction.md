@@ -1,3 +1,5 @@
+## Introduction
+
 Now that you've created two ThreadX projects, have you thought about how you can protect your system from unexpected hazards? If so, this is the module you should investigate.
 
 ## Learning objectives
@@ -15,5 +17,5 @@ After you complete this module, you'll be well on your way to develop more sophi
 ## Prerequisites
 
 - [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
-- Working knowledge of C or C++, GitHub and Visual Studio
+- Working knowledge of C or C++, GitHub, and Visual Studio
 - Previous modules in this [learning path](/learn/paths/azure-rtos-threadx/?azure-portal=true)
