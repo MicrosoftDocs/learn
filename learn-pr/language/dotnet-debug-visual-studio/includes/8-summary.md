@@ -2,7 +2,7 @@ You experienced how using debuggers can be an effective strategy to debug issues
 
 In this module, you learned how to:
 
-- Use Visual Studio Code debugger with a .NET program.
+- Use Visual Studio debugger with a .NET program.
 - Create breakpoints and run your code step by step to find issues.
 - Inspect your program state at any execution step.
 - Analyze the call stack to find the source of an exception.
