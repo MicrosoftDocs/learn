@@ -79,6 +79,6 @@ In this unit, you'll use the Azure portal to create a storage account for storin
 
 1. When deployment is complete, which may take up to two minutes, select **Go to resource** to view **Essential** details about your new storage account.
 
-:::image type="content" source="../media/3-storage-overview.png" alt-text="The Storage Account Overview is shown" lightbox="../media/3-storage-overview.png":::
+:::image type="content" source="../media/3-storage-overview.png" alt-text="A screenshot of the Storage Account Overview is shown." lightbox="../media/3-storage-overview.png":::
 
 Take note of the **Storage Account Name** as this value will be needed later on when we create a Datastore in Azure Machine Learning  Studio.

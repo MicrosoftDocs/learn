@@ -4,7 +4,7 @@ In this module, you'll learn how to create workspace resources for getting start
 
 - [Azure Free Trial Account](https://azure.microsoft.com/free/)
 
-:::image type="content" source="../media/1-manufacturing-line.png" alt-text="An object detection algorithm running on a manufacturing line" lightbox="../media/1-manufacturing-line.png":::
+:::image type="content" source="../media/1-manufacturing-line.png" alt-text="An object detection algorithm is shown running on a manufacturing line." lightbox="../media/1-manufacturing-line.png":::
 
 ## Scenario: Deploy resources to develop a custom object detection model using NVIDIA and Azure Machine Learning
 

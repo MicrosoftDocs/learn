@@ -10,7 +10,7 @@ Azure Machine Learning  has a comprehensive suite of features to support logging
 
 Azure Machine Learning studio is a browser-based service that provides no-code and code-first solutions to visually create, train, and manage models through a web UI. Azure Machine Learning  studio allows _Python_ and _R_ SDK to seamlessly integrate with the natively supported _Jupyter Notebooks_ for collaborative notes and coding. Data within Azure Machine Learning studio is simple to manage with intuitive data visualization and AI-assisted image or text labeling features.
 
-:::image type="content" source="../media/2-studio.gif" alt-text="Azure Machine Learning studio is shown in action" lightbox="../media/2-studio.gif":::
+:::image type="content" source="../media/2-studio.gif" alt-text="Azure Machine Learning studio is shown in action." lightbox="../media/2-studio.gif":::
 
 ## Creating a model
 
@@ -22,7 +22,7 @@ _Automated Machine Learning (AutoML)_ automates creating the best machine learni
 
 In the image below, we can see an overview of the AutoML pipeline building and recommending a model.
 
-![azure automl pipeline](../media/2-pipeline.gif)
+![An azure machine learning automl pipeline is displayed.](../media/2-pipeline.gif)
 
 ## Compute
 
