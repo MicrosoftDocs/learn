@@ -4,7 +4,7 @@ Let's start by learning how to use the Visual Studio debugger with .NET.
 
 ## Getting Started with the Visual Studio Debugger
 
-We can launch our application with the debugger attached using the **Start** button at the top of Visual Studio, which will include our project name. Once the app is running, a variety of additional debugging tools and features will become available.
+Launch the application with the debugger attached using the **Start** button at the top of Visual Studio, which will include our project name. Once the app is running, a variety of additional debugging tools and features will become available.
 
 :::image source="../media/visual-studio-debugging-controls.png" alt-text="Screenshot of Visual Studio prompt to install the C# extension.":::
 

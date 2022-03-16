@@ -3,11 +3,11 @@ uid: learn.dotnet-debug-visual-studio
 metadata:
   title: Interactively debug .NET apps with the Visual Studio debugger
   description: 'Learn how to efficiently debug your .NET app by using Visual Studio to fix your bugs quickly. Use the interactive debugger within Visual Studio to analyze and fix your C# applications.'
-  ms.date: 10/28/2020
+  ms.date: 3/16/2022
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-dotnet
 title: Interactively debug .NET apps with the Visual Studio debugger
 summary: Learn how to efficiently debug your .NET app by using Visual Studio to fix your bugs quickly.
 abstract: |

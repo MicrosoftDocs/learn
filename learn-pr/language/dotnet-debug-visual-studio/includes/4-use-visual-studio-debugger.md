@@ -125,7 +125,7 @@ Okay, we don't need to overthink it past that. We can lean on our debugger a bit
 
 Stepping through your code can be helpful but tedious. Especially when you're working with loops or other code that's called repeatedly. Rather than stepping through the loop over and over, we can set a new breakpoint on the first line of the loop.
 
-When we're doing this, it's important to be strategic about where we put our breakpoints. We're especially interested in the value of `sum`, since it represents the current maximum Fibonacci value. Because of that, let's put our breakpoint on the line *after* `sum` is set.
+It's important to be strategic about where we put our breakpoints. We're especially interested in the value of `sum`, since it represents the current maximum Fibonacci value. Because of that, let's put our breakpoint on the line *after* `sum` is set.
 
 1. Add a second breakpoint on line 13.
 
@@ -161,9 +161,9 @@ When we're doing this, it's important to be strategic about where we put our bre
     i [int]: 3
     ```
 
-    Let's think about it. Do these values still make sense? It seems like they do. For the third Fibonacci number, we're expecting to see our `sum` equal to 2, and it is.
+    Do these values still make sense? It seems like they do. For the third Fibonacci number, we're expecting to see our `sum` equal to 2, and it is.
 
-1. Okay, let's select **Continue** to loop it again.
+1. Select **Continue** to loop it again.
 
     ```text
     n [int]: 5
@@ -177,9 +177,9 @@ When we're doing this, it's important to be strategic about where we put our bre
 
 1. At this point, you might start wondering if the code was correct all along and you imagined the bug! Let's keep with it for the last time through the loop. Select **Continue** one more time.
 
-    Wait a minute. The program finished running and printed out 3! That's not right.
+    The program finished running and printed out 3! That is incorrect.
 
-    Okay, not to worry. We haven't failed, we've learned. We now know that the code runs through the loop correctly until `i` equals 4, but then it exits out before computing the final value. I'm starting to get some ideas about where the bug is ... are you?
+    We now know that the code runs through the loop correctly until `i` equals 4, but then it exits out before computing the final value. We have narrowed down where the bug is.
 
 1. Let's set one more breakpoint on line 17, which reads:
 
@@ -204,7 +204,7 @@ When we're doing this, it's important to be strategic about where we put our bre
     sum [int]: 3
     ```
 
-    Well, that's not right. We specifically asked for Fibonacci(5), and we got Fibonacci(4). This function returns `n2`, and each loop iteration calculates the `sum` value and sets `n2` equal to `sum`.
+    We specifically asked for Fibonacci(5), and we got Fibonacci(4), which is incorrect. This function returns `n2`, and each loop iteration calculates the `sum` value and sets `n2` equal to `sum`.
 
     Based on this information, and our previous debug run, we can see that the loop exited when `i` was 4, not 5.
 
@@ -214,7 +214,7 @@ When we're doing this, it's important to be strategic about where we put our bre
     for (int i = 2; i < n; i++)
     ```
 
-    Okay, wait a minute! That means that it will exit as soon as the top of the for loop sees `i` equals as `n`. That means that the loop code won't run for the case where `i` equals `n`. It seems like what we wanted was to run until `i <= n`, instead:
+    This will exit as soon as the top of the for loop sees `i` equals as `n`. That means that the loop code won't run for the case where `i` equals `n`. It seems like what we wanted was to run until `i <= n`, instead:
 
     ```csharp
     for (int i = 2; i <= n; i++)

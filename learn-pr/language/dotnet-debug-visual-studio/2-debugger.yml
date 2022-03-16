@@ -6,9 +6,9 @@ metadata:
   description: Learn what a debugger is and why it's useful.
   author: jongalloway
   ms.author: jogallow
-  ms.date: 10/28/2020
+  ms.date: 3/16/2022
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-dotnet
 durationInMinutes: 2
 content: |
   [!include[](includes/2-debugger.md)]
