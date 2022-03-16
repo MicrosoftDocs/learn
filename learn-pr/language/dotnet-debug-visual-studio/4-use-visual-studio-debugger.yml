@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-debug.4-use-visual-studio-code-debugger
-title: Exercise - Debug with Visual Studio Code
+uid: learn.dotnet-debug-visual-studio.4-use-visual-studio-debugger
+title: Exercise - Debug with Visual Studio
 metadata:
-  title: Exercise - Debug with Visual Studio Code
-  description: Learn how to use the Visual Studio Code debugger with .NET programs.
+  title: Exercise - Debug with Visual Studio
+  description: Learn how to use the Visual Studio debugger with .NET programs.
   author: alexwolfmsft
   ms.author: alexwolf
   ms.date: 3/16/2022

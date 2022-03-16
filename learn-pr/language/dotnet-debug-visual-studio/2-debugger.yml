@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-debug.2-debugger
+uid: learn.dotnet-debug-visual-studio.2-debugger
 title: What's a debugger?
 metadata:
   title: What's a debugger?
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/2-debugger.md)]
-  
+

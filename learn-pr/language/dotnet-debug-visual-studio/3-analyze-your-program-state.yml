@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-debug.3-analyze-your-program-state
-title: Understand the .NET debugger in Visual Studio Code
+uid: learn.dotnet-debug-visual-studio.3-analyze-your-program-state
+title: Understand the .NET debugger in Visual Studio
 metadata:
-  title: Understand the .NET debugger in Visual Studio Code
-  description: Learn how to use the Visual Studio Code debugger to inspect variables and diagnose bugs during execution.
-  author: jongalloway
-  ms.author: jogallow
+  title: Understand the .NET debugger in Visual Studio
+  description: Learn how to use the Visual Studio debugger to inspect variables and diagnose bugs during execution.
+  author: alexwolfmsft
+  ms.author: alexwolf
   ms.date: 10/28/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
