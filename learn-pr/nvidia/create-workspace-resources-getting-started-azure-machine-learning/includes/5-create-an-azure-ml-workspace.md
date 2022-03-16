@@ -25,7 +25,7 @@ Learn more about [Machine Learning on Azure](https://azure.microsoft.com/service
 
 1. In the **Machine Learning** pane, select the **Create** button to begin the deployment process:
 
-    :::image type="content" source="../media/5-CreateWorkspace.png" alt-text="The Machine Learning result is highlighted." lightbox="../media/5-CreateWorkspace.png":::
+    :::image type="content" source="../media/5-CreateWorkspace.png" alt-text="The create workspace option is highlighted." lightbox="../media/5-CreateWorkspace.png":::
 
 1. On the **Basics** tab, enter the following values for each setting:
 
@@ -60,4 +60,4 @@ Learn more about [Machine Learning on Azure](https://azure.microsoft.com/service
 
 1. While in the **Overview** section of the Azure Machine Learning workspace resource, select **Launch Studio** to prepare open your workspace in the browser and prepare for the next unit.
 
-    :::image type="content" source="../media/5-LaunchStudio.png" alt-text="Download the Azure Machine Learning workspace configuration." lightbox="../media/5-LaunchStudio.png":::
+    :::image type="content" source="../media/5-LaunchStudio.png" alt-text="The launch studio option is highlighted." lightbox="../media/5-LaunchStudio.png":::

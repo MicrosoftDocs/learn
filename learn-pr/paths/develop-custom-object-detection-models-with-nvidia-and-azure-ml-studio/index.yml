@@ -1,21 +1,21 @@
 ### YamlMime:LearningPath
-uid: learn.develop-custom-object-detection-models-with-nvidia-and-azure-ml-studio
+uid: learn.develop-custom-object-detection-models-with-nvidia-and-azure-ml
 metadata:
-  title: Develop Custom Object Detection Models with NVIDIA and Azure ML Studio
-  description: Learn how to develop custom object detection models with NVIDIA and Azure Machine Learning Studio.
+  title: Develop Custom Object Detection Models with NVIDIA and Azure Machine Learning
+  description: Learn how to develop custom object detection models with NVIDIA and Azure Machine Learning.
   brand: azure
   ms.date: 03/14/2022
   author: toolboc
   ms.author: pdecarlo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Develop Custom Object Detection Models with NVIDIA and Azure ML Studio
+title: Develop Custom Object Detection Models with NVIDIA and Azure Machine Learning
 prerequisites: |
   - [Azure Free Trial Account](https://azure.microsoft.com/free/)
 summary: |
-  Azure Machine Learning Studio is a GUI-based integrated development environment for constructing and operationalizing Machine Learning workflow on Azure.
+  Azure Machine Learning Studio is a GUI-based integrated development environment for constructing and operationalizing Machine Learning workflow on Azure.  Learn how to develop custom object detection models using this service with NVIDIA GPU accelerated virtual machines.
 
-iconUrl: /learn/achievements/nvidia-deepstream-development-with-microsoft-azure.svg
+iconUrl: /learn/achievements/develop-custom-object-detection-models-with-nvidia-and-azure-ml.svg
 levels:
 - intermediate
 roles:
@@ -24,8 +24,8 @@ roles:
 products:
 - azure
 - azure-storage
-- azure-ml
+- azure-machine-learning
 modules:
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning
 trophy:
-  uid: learn.nvidia-deepstream-development-azure.trophy
+  uid: learn.nvidia.develop-custom-object-detection-models-with-nvidia-and-azure-ml.trophy

@@ -26,7 +26,7 @@ Now that we have an Azure Storage Account, we will create a container that will 
 
 1. Select the **Containers** section on the left-side panel and select the newly created container as highlighted below:
 
-    :::image type="content" source="../media/4-ContainerSelect.png" alt-text="The Show Keys section is shown highlighted" lightbox="../media/4-ContainerSelect.png":::
+    :::image type="content" source="../media/4-ContainerSelect.png" alt-text="The container select section is shown highlighted" lightbox="../media/4-ContainerSelect.png":::
 
 1. Download and extract the following provided [image data](https://github.com/microsoft/Develop-Custom-Object-Detection-Models-with-NVIDIA-and-Azure-ML-Studio/raw/main/soda_data_compressed.zip).  You will need to decompress the included _soda_data_compressed.zip_ file, then follow the steps in the image below to upload the contents of the _soda_data\train_img\_ directory as shown.  Once you have selected these files for inclusion, click the now highlighted **Upload** button to begin the transfer from your machine to the Azure Storage Container..
 

@@ -4,7 +4,7 @@ In this module, you'll learn how to create workspace resources for getting start
 
 - [Azure Free Trial Account](https://azure.microsoft.com/free/)
 
-## Scenario: Deploy resources to develop a custom object detection model using NVIDIA and Azure Machine Learning Studio
+## Scenario: Deploy resources to develop a custom object detection model using NVIDIA and Azure Machine Learning
 
 You are a data scientist who has been assigned the task of improving automation in a manufacturing facility.  You are investigating an opportunity to increase operational efficiency and mitigate downtime by employing a custom object detection model that can identify items on the production line.  This will involve applying concepts related to computer vision in a production setting to be employed at the edge in a secure network environment.  Azure Machine Learning studio has been identified as a choice tool for this task due to its ability to provide a GUI-based integrated development environment in the Microsoft Azure cloud for constructing and operationalizing Machine Learning workflows.  Pairing this offering with accelerated cloud-compute instances equipped with NVIDIA GPU hardware acceleration will enable the ability to efficiently develop optimized models for use in production.  You will begin by deploying the necessary resources to support the development of a custom object detection model that will service your industry use case.
 

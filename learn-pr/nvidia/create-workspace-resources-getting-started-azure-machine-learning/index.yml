@@ -29,7 +29,7 @@ roles:
 products:
 - azure
 - azure-storage
-- azure-ml
+- azure-machine-learning
 units:
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.1-introduction
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.2-introduction-to-azure-machine-learning
