@@ -8,7 +8,7 @@ In this module, you'll learn how to effectively debug .NET programs. The faster 
 
 By the end of this module, you will be able to:
 
-* Use the Visual Studio Code debugger with a .NET program.
+* Use the Visual Studio debugger with a .NET program.
 * Create breakpoints and run your code step by step to find issues.
 * Inspect your program state at any execution step.
 * Rewind the call stack to find the source of an exception.
