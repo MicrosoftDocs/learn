@@ -10,7 +10,8 @@ metadata:
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, team=cloud_advocates
+  ms.contributors: cassieb-09032021
 durationInMinutes: 15
 content: |
   [!include[](includes/3-build-model.md)]

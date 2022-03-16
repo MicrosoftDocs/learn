@@ -3,7 +3,7 @@ uid: learn.wwl.manage-access-security
 metadata:
   title: Manage access and security for Azure Virtual Desktop
   description: Manage access and security for Azure Virtual Desktop
-  ms.date: 12/13/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ prerequisites: |
   *  Familiarity with Microsoft Azure and cloud concepts
 summary: |
   Learn how to plan and implement Azure roles for Azure Virtual Desktop and implement Conditional Access policies for remote connections. This learning path aligns with exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/manage-access-and-security.svg
 levels:
 - intermediate
 roles:

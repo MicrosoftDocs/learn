@@ -11830,6 +11830,36 @@
       "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-fundamentals-stream-processing/11-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/4-define-connected-sources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-log-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/5-define-data-sources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-log-analytics/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/6-visualize-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-log-analytics/4-visualize-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/7-structure-queries.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-log-analytics/5-structure-queries",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-log-analytics/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-log-analytics/9-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-log-analytics/7-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }

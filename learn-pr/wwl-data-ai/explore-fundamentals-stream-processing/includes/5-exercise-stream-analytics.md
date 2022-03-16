@@ -8,7 +8,7 @@ This exercise can be completed using a free Microsoft Learn *sandbox* subscripti
 >
 > 1. Sign into your Azure subscription in the [Azure portal](https://portal.azure.com?azure-portal=true).
 > 2. Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
-> 3. Use the **[\>_]** button to create a new Cloud Shell in the Azure portal, creating storage if prompted, and selecting a *Bash* environment.
+> 3. Use the **[\>_]** button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, creating storage if prompted and selecting a *Bash* environment.
 > 4. Complete the exercise steps below in the Cloud Shell pane in the Azure portal.
 >
 > For more information about using the Azure Cloud Shell, see the [Azure Cloud Shell documentation](/azure/cloud-shell/overview?azure-portal=true)
