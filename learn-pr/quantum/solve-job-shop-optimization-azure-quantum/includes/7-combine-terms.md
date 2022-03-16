@@ -37,76 +37,9 @@ The weights represent how important each penalty function is, relative to all th
 
 ## Code
 
-As a reminder, below you again see the code representation of the problem parameters: the maximum allowed time `T`, the operation processing times `processing_time`, the mapping of operations to jobs (`jobs_ops_map` and `ops_jobs_map`), and the assignment of operations to machines (`machines_ops_map`).
-
-```python
-# Set problem parameters
-## Simulation time (jobs can only be scheduled below this limit)
-T = 10
-
-## Processing time for each operation
-processing_time = {0: 2, 1: 1, 2: 2, 3: 2, 4: 1, 5: 2}
-
-## Assignment of operations to jobs (job ID: [operation IDs])
-### Operation IDs within a job must be in ascending order
-jobs_ops_map = {
-    0: [0, 1], # Restart life support
-    1: [2, 3], # Recalibrate navigation system
-    2: [4, 5]  # Replace power transformer in the reactor
-}
-
-## Assignment of operations to machines
-### Three jobs, two machines
-machines_ops_map = {
-    0: [0, 1, 4, 5], # Operations 0, 1, 4 and 5 are assigned to machine 0 (the universal multi-tool)
-    1: [2, 3]        # Operations 2 & 3 are assigned to machine 1 (the ship computer)
-}
-
-## Inverse mapping of jobs to operations
-ops_jobs_map, T = process_config(jobs_ops_map, machines_ops_map, processing_time, T)
-```
-
-The helper function `process_config` (seen above) is defined as follows:
-
-```python
-def process_config(jobs_ops_map:dict, machines_ops_map:dict, processing_time:dict, T:int):
-    """
-    Process & validate problem parameters (config) and generate inverse dict of operations to jobs.
-
-    Keyword arguments:
-
-    jobs_ops_map (dict): Map of jobs to operations {job: [operations]}
-    machines_ops_map(dict): Mapping of operations to machines, e.g.:
-        machines_ops_map = {
-            0: [0,1],          # Operations 0 & 1 assigned to machine 0
-            1: [2,3]           # Operations 2 & 3 assigned to machine 1
-        }
-    processing_time (dict): Operation processing times
-    T (int): Allowed time (jobs can only be scheduled below this limit)
-    """
-
-    # Problem cannot take longer to complete than all operations executed sequentially
-    ## Sum all operation processing times to calculate the maximum makespan
-    T = min(sum(processing_time.values()), T) 
-
-    # Ensure operation assignments to machines are sorted in ascending order
-    for m, ops in machines_ops_map.items():
-        machines_ops_map[m] = sorted(ops)
-    ops_jobs_map = {}
-
-    for job, ops in jobs_ops_map.items():
-        # Fail if operation IDs within a job are out of order
-        assert (ops == sorted(ops)), f"Operation IDs within a job must be in ascending order. Job was: {job}: {ops}"
-
-        for op in ops:
-            # Fail if there are duplicate operation IDs
-            assert (op not in ops_jobs_map.keys()), f"Operation IDs must be unique. Duplicate ID was: {op}"
-            ops_jobs_map[op] = job
-
-    return ops_jobs_map, T
-```
-
 The following code snippet shows how you assign weight values and assemble the penalty terms by summing the output of the penalty and objective functions, as was demonstrated mathematically at the start of this unit. These terms represent the cost function and they are what you will submit to the solver.
+
+Click **+ Code** to add another new cell and add the following lines:
 
 ```python
 # Generate terms to submit to solver using functions defined previously

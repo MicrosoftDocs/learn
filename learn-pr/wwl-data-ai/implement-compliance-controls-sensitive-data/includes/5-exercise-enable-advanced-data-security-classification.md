@@ -20,7 +20,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     :::image type="content" source="../media/dp-3300-module-33-lab-19.png" alt-text="Screenshot of the Azure portal home page, selecting All resources":::
 
-1. Select the Azure SQL Database server starting with **azurelsq-lab**.
+1. Select the Azure SQL Database server starting with **azuresql-lab**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-20.png" alt-text="Screenshot of selecting the Azure SQL server.":::
 

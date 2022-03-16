@@ -8,6 +8,8 @@ metadata:
   ms.date: 01/20/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: judubois-03112021
 title: Accelerate and scale a Spring Boot application with Azure Cache for Redis
 summary: Explore Azure Cache for Redis, and learn how to use it with a Java and Spring Boot application.
 abstract: | 

@@ -9,6 +9,8 @@ metadata:
   ms.author: juyoo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: juyoo-04222021
 durationInMinutes: 5
 quiz:
   title: Answer the following questions to see what you've learned
