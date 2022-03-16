@@ -45,4 +45,4 @@ You now need to create a CDN profile that connects to the source web server in t
 
 1. After 10 minutes has elapsed, select the **Endpoint hostname** link. The web site should display.
 
-![Create a new CDN endpoint in the Azure portal.](../media/3-new-cdn-endpoint.PNG)
+![Create a new CDN endpoint in the Azure portal.](../media/3-new-cdn-endpoint.png)
