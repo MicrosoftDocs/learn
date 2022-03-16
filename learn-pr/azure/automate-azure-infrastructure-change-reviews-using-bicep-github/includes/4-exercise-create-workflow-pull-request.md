@@ -13,9 +13,9 @@ During the process, you'll:
 
 1. In Visual Studio Code, create a new file named *pr-validation.yml* in the *.github/workflows* folder.
 
-1. Add a pull request trigger:
+1. Add a pull request name and trigger:
 
-   :::code language="yaml" source="code/4-workflow.yml" range="1-4" highlight="3-4" :::
+   :::code language="yaml" source="code/4-workflow.yml" range="1-4" :::
 
    This code ensures that the workflow is executed when a pull request is created or updated.
 

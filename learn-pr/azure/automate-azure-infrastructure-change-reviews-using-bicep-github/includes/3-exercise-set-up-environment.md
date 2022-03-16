@@ -139,9 +139,15 @@ Later in this Microsoft Learn module, your pull request workflow will create res
 
 ::: zone pivot="cli"
 
-1. TODO get sub ID
+1. Run the following Azure CLI command to find your Azure subscription ID.
 
-1. To create a service principal and assign it the Owner role for your subascription, run the following Azure CLI command in the Visual Studio Code terminal. Replace the `SUBSCRIPTION_ID` placeholder with the resource group ID you copied in the last step.
+   ```azurecli
+   az account show --query id --output tsv
+   ```
+
+   Copy your Azure subscription ID to your clipboard.
+
+1. To create a service principal and assign it the Owner role for your subascription, run the following Azure CLI command in the Visual Studio Code terminal. Replace the `SUBSCRIPTION_ID` placeholder with the subscription ID you copied in the last step.
 
    ```azurecli
    az ad sp create-for-rbac \
@@ -176,9 +182,7 @@ Later in this Microsoft Learn module, your pull request workflow will create res
 
 ::: zone pivot="powershell"
 
-1. TODO get sub ID
-
-1. To create a service principal and assign it the Owner role for your subascription, run the following Azure PowerShell command in the Visual Studio Code terminal. Replace the `SUBSCRIPTION_ID` placeholder with the resource group ID you copied in the last step.
+1. To create a service principal and assign it the Owner role for your subscription, run the following Azure PowerShell command in the Visual Studio Code terminal.
 
    ```azurepowershell
    $azureContext = Get-AzContext
