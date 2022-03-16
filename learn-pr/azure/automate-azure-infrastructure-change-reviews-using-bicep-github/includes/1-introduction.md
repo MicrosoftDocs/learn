@@ -1,38 +1,43 @@
-When you work on Bicep templates, the main branch of your repository becomes the source of truth. The main branch incorporates the latest changes from all collaborators. It's important that the changes that are merged into the main branch are reviewed and tested. In this module, you'll learn how to protect your main branch by using automated pull request validation.
+When you work on Bicep code, it's important for all changes to be reviewed and tested. Even when your deployment workflows and processes are designed to detect bugs or problems, it's less time-consuming for any problems to be found and fixed as early as possible. Pull requests provide an opportunity for code changes to be reviewed. When you work with Azure deployments, it's a good practice not only to validate the code changes, but also to verify that the changes deploy successfully.
 
-You'll also learn how you can create ephemeral environments for collaborators and reviewers where they can test changes before they are approved and merged into the main branch.
+In this module, you'll learn how to add automated checks to your pull request review process. You'll learn how to validate changes to your Bicep code within a pull request, well before it's merged or deployed to a real environment. You'll also learn how you can automatically create ephemeral environments, where collaborators and reviewers can test the code changes before they're approved and merged into the repository's main branch.
 
 ## Example scenario
 
-Suppose you're the Azure administrator at a toy company. You've been working with your website team to create a Bicep template that deploys and configures the Azure resources, and you've recently also been creating a GitHub Actions workflow to deploy the Bicep file automatically to multiple environments.
+Suppose you're the Azure administrator at a toy company. You've been working with your website team to create Bicep code that deploys and configures the Azure resources for your website.
 
-Your website team is growing, and it's getting more difficult to keep control of all of the changes that everyone is making. You already set up pull requests so changes can be reviewed before they are merged in the main branch of your project. However manually reviewing all changes is becoming cumbersome for your team. You want to give them a more automated review process.
+Your website team is growing, and it's getting more difficult to keep control of all of the changes that everyone is making. You recently started to use pull requests to ensure that changes are reviewed before they are merged to the main branch of your project's GitHub repository. Each of the reviewers validates the Bicep code changes in the pull request, and many reviewers even deploy the changes to a temporary environment so they can try them out. But your colleagues have told you that the manual review process is cumbersome and time consuming.
 
-You decide to run additional checks before changes are merged to the main branch of your repository. You also need to find a way for your team members to try out their in-progress changes in a separate environment, without affecting the main repository branch and without being deployed to your environments.
-
-You also don't want any changes to be deployed to production before they've been through your review and test process.
+It's important that your pull request reviews are easy for everybody on the team, so you decide to automate some of the review process within the pull requests.
 
 ## What will you be doing?
 
-In this module, you'll learn how you can run automatic checks and tests for each pull request to build confidence in the changes that were made. You'll also create an ephemeral environment for each pull request which can be used to review each change. 
+In this module, you'll learn how you can run automated checks and tests for each pull request to build confidence in the changes to your Bicep code.
+
+You'll configure your pull request workflow to validate your Bicep code by using the Bicep linter. You'll also configure the creation of ephemeral environments for each pull request, which can be used to review the changes to your Azure environment, and automatically delete the environment when the pull request is merged or closed.
 
 ## What is the main goal?
 
-After completing this module, you'll know how to run automatic validation for each pull request.
+After completing this module, you'll be able to add automated checks and validation to your GitHub pull requests for your Bicep code.
 
 ## Prerequisites
 
-You should have:
+You should be familiar with using:
 
-- Familiarity with basic Bicep template deployments, resource group and subscription level deployments.
-- Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resources.
-- Familiarity with basic Git commands, including cloning, branching, committing files, and pushing changes to a GitHub repo.
-- Familiarity with basic GitHub Actions workflows and basic experience deploying Bicep code using GitHub Actions workflows.
-- Familiarity with basic pull requests.
+  - Bicep, including creating and deploying basic files.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+  - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
+  - Pull requests in GitHub, including creating, reviewing, and merging pull requests.
+  - Basic GitHub Actions workflows, including secrets for connecting to your Azure environment.
 
-To follow along with the exercises in the module, you'll need:
+To work through the exercises in the module, you'll need:
 
-- [Visual Studio Code](https://code.visualstudio.com) installed locally.
-- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
-- Azure account and subscription
-- Git
+  - An Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
+  - A GitHub account.
+  
+You'll also need the following installed locally:
+  
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
+  - [Git](https://git-scm.com/download?azure-portal=true)
