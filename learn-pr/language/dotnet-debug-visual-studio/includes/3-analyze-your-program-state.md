@@ -15,25 +15,25 @@ We can launch our application with the debugger attached using the **Start** but
 
 ### Controlling execution
 
-After the app is running, the debugging controls will appear next to the **Start** button we clicked to launch the app.
+Once the app is running, the debugging controls will appear next to the **Start** button we clicked to launch the app.
 
 :::image source="../media/visual-studio-steps.png" alt-text="Screenshot of Visual Studio debugger execution controls.":::
 
-The controls are numbered as following:
+The controls are numbered as follows:
 
 - **1) Continue or pause execution**. If execution is paused on a breakpoint, click to continue until the next breakpoint is hit. If your program is running, the button switches to a pause button that you can use to pause execution.
-- **2) Hot reload controls**. This new features of Visual Studio 2022 allows us to make changes and refresh our code without restarting the app.
+- **2) Hot reload controls**. This new feature of Visual Studio 2022 allows us to make changes and refresh our code without restarting the app.
 - **3) Stop**. This button stops the running application, which will also detach the debugger.
 - **4) Restart**. Stops and relaunches the app with the debugger attached.
 - **5) Step into**. If the next statement is a function call, move down into the first code statement of this function (same as the `step` command).
 - **5) Step over**. If the next statement is a function call, execute the code, but move on immediately to the next line of code in the current function.
-- **Step out**. If you're inside a function, execute the remaining code of this function and jump back to the statement after the initial function call (same as the `out` command)
+- **Step out**. If you're inside a function, execute the remaining code of this function and jump back to the statement after the initial function call (same as the `out` command).
 
-Breakpoints are one of the core features of debugging and these controls, so let's explore them in more detail.
+Breakpoints are one of the core features of debugging and integrate with these controls, so let's explore them in more detail.
 
 ## Breakpoints
 
-As you learned in the previous unit, a debugger helps you analyze and control your program's execution. When you start your app with Visual Studio debugger attached, your code immediately begins to execute. Because your code is executed quickly, you need to be able to pause the program on any statement. You'll use *breakpoints* to do that.
+As you learned in the previous unit, a debugger helps you analyze and control your program's execution. When you start your app with the Visual Studio debugger attached, your code immediately begins to execute. Because your code is executed quickly, you need to be able to pause the program on any statement. You'll use *breakpoints* to do that.
 
 You can add a breakpoint in Visual Studio by clicking to the left side of the line number, on the line you want to break. You should see a red circle after the breakpoint is enabled. To remove it, select the red circle again.
 
@@ -60,8 +60,8 @@ After you've set up your breakpoints and started your app, new information windo
 
 We can also access other helpful debugging windows by clicking **Debug -> Windows** along the top navigation bar. For example, commonly used tools include the following:
 
-1. **Call Stack Window** - allows us to view which methods have been called
-1. **Immediate Window** - allows us to write and expressions while debugging
+1. **Call Stack Window** - allows us to view which methods have been called.
+1. **Immediate Window** - allows us to write and expressions while debugging.
 1. **Autos Window** - automatically adds watches to variables in the current context.
 1. **Output Window** - shows the output of logging statements or code that writes to the console.
 
@@ -69,9 +69,9 @@ We can also access other helpful debugging windows by clicking **Debug -> Window
 
 ### View and edit your variables state
 
-When you analyze the cause of a program defect, watch your variables state to look for unexpected changes. You can use the **Autos** panel to do that.
+When you analyze the cause of a program defect, watch the state of your variables to look for unexpected changes. You can use the **Autos** window to do that.
 
-The **Autos** windows will automatically populate variables in the current scope and context, along with their values.  This is a simple and easy choice for seeing a general overview of the state of your running code.
+The **Autos** window will automatically populate variables in the current scope and context, along with their values.  This is a simple and easy choice for seeing a general overview of the state of your running code.
 
 :::image source="../media/visual-studio-autos.png" alt-text="Screenshot of variable hover during debugging.":::
 
@@ -85,13 +85,13 @@ If you want to track a specific variable state across time or different function
 
 You can right-click a variable in your editor and select **Add to watch**.  That variable will now display in the watch window and update as your app executes.
 
-You can also right click on a variables in the **Autos** window to add a watch as well.
+You can also right click on variables in the **Autos** window to add a watch as well.
 
 All expressions inside the watch panel will be updated automatically as your code runs.
 
 ### Call stack
 
-Every time your program enters a function, an entry is added to the call stack. When your application becomes complex and you have functions called within functions many times, the call stack represents the trail of functions calls.
+Every time your program enters a function, an entry is added to the call stack. When your application becomes complex and functions are called within other functions many times, the call stack represents the trail of those calls.
 
 It's useful to find the source of an exception. If you have an unexpected crash in your program, you'll often see something in the console like the following example:
 
