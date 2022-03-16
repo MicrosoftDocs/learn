@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary-resources.md)]
+  [!include[](includes/7-summary-resources.md)]

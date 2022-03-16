@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-baselines-for-azure.md)]
+  [!include[](includes/5-baselines-for-azure.md)]
