@@ -110,15 +110,16 @@
     > [!TIP]
     > Reducing the Depth Format to 16-bit is optional, but it may improve graphics performance in your project. To learn more, see [Depth buffer sharing (HoloLens)](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering).
 
-    Note that the **Render Mode** setting, located just above **Depth Submission Mode**, is set by default to **Single Pass Instanced**. This optimizes the Unity rendering pipeline for mixed reality apps. To learn more, [see the Unity documentaiton](https://docs.unity3d.com/Manual/SinglePassInstancing.html).
+    > [!NOTE]
+    > The **Render Mode** setting, located just above **Depth Submission Mode**, is set by default to **Single Pass Instanced**. In mixed reality apps, the scene is rendered twice: once for each eye. The result is "stereoscopic vision." This doubles the amount of necessary computing, so it's important to select the most efficient rendering path in Unity to save on both CPU and GPU time. Single pass instanced rendering is the best choice here--we recommend that you enable it by default for every project. To learn more about this, [see the Unity documentaiton](https://docs.unity3d.com/Manual/SinglePassInstancing.html).
 
-1. Close the **Project Settings** window.
-1. In the **MRTK Project Configurator** window, select **Apply Settings**.
+2. Close the **Project Settings** window.
+3. In the **MRTK Project Configurator** window, select **Apply Settings**.
 
     :::image type="content" source="../../media/022-configurator-apply-settings.png" alt-text="Screenshot of MRTK Project Configurator with the Apply Settings button.":::
 
-1.  Select **Next** and then **Apply**. 
-1. Unity must restart in order for the configuration to take effect. When prompted, select **Apply** to restart the Unity editor.
+4.  Select **Next** and then **Apply**. 
+5. Unity must restart in order for the configuration to take effect. When prompted, select **Apply** to restart the Unity editor.
 
 ## Configure project settings for OpenXR
 
