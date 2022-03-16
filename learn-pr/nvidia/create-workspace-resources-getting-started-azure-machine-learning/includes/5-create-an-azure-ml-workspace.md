@@ -11,22 +11,21 @@ There are many advantages of using the Azure Machine Learning platform to create
 
 Learn more about [Machine Learning on Azure](https://azure.microsoft.com/services/machine-learning/#product-overview).
 
-
 ## Create an Azure Machine Learning Workspace
 
 1. Sign into the [Azure portal](https://portal.azure.com/) by using the credentials for your Azure subscription.
 
 1. In the upper-left corner of the Azure portal, select the three bars, the **+ Create a resource**.
 
-    :::image type="content" source="../media/5-CreateResource.png" The Create a Resource section is highlighted." lightbox="../media/5-CreateResource.png":::
+    :::image type="content" source="../media/5-CreateResource.png" alt-text="The Create a Resource section is highlighted." lightbox="../media/5-CreateResource.png":::
 
 1. Use the search bar to find **machine learning**, then select the **Machine Learning** result:
 
-    :::image type="content" source="../media/5-Marketplace.png" The Machine Learning result is highlighted." lightbox="../media/5-Marketplace.png":::
+    :::image type="content" source="../media/5-Marketplace.png" alt-text="The Machine Learning result is highlighted." lightbox="../media/5-Marketplace.png":::
 
 1. In the **Machine Learning** pane, select the **Create** button to begin the deployment process:
 
-    :::image type="content" source="../media/5-CreateWorkspace.png" The Machine Learning result is highlighted." lightbox="../media/5-CreateWorkspace.png":::
+    :::image type="content" source="../media/5-CreateWorkspace.png" alt-text="The Machine Learning result is highlighted." lightbox="../media/5-CreateWorkspace.png":::
 
 1. On the **Basics** tab, enter the following values for each setting:
 
@@ -43,22 +42,22 @@ Learn more about [Machine Learning on Azure](https://azure.microsoft.com/service
     | Application insights | \<Create New\> (name will be auto-populated using **Workspace name** prefix ) |
     | Container registry | None (This is the default value) |
 
-    When you are finished select **Review + create** to validate the deployment of the Azure Machine Learning workspace.   
+    When you are finished select **Review + create** to validate the deployment of the Azure Machine Learning workspace.
 
-    :::image type="content" source="../media/5-MLWorkspaceBasics.png" The settings of the Machine Learning workspace deployment are shown." lightbox="../media/5-MLWorkspaceBasics.png":::
+    :::image type="content" source="../media/5-MLWorkspaceBasics.png" alt-text="The settings of the Machine Learning workspace deployment are shown." lightbox="../media/5-MLWorkspaceBasics.png":::
 
 1. On the resulting page you will be able to validate the details of your deployment. When you are satisfied, select the **Create** button to start the deployment.  This process may take a few minutes to complete.
 
-    :::image type="content" source="../media/5-CreateMLWorkspace.png" The validation of the Machine Learning workspace deployment is shown." lightbox="../media/5-CreateMLWorkspace.png":::    
+    :::image type="content" source="../media/5-CreateMLWorkspace.png" alt-text="The validation of the Machine Learning workspace deployment is shown." lightbox="../media/5-CreateMLWorkspace.png":::
 
-1. Once the deployment has completed, navigate to your new Azure Machine Learning resource.  You can easily locate this resource by typing  “Azure Machine Learning” in the Azure search bar and choosing the Machine Learning icon.  This will list all available Azure Machine Learning resources in your Azure Subscription. 
+1. Once the deployment has completed, navigate to your new Azure Machine Learning resource.  You can easily locate this resource by typing  “Azure Machine Learning” in the Azure search bar and choosing the Machine Learning icon.  This will list all available Azure Machine Learning resources in your Azure Subscription.
 
-    :::image type="content" source="../media/5-FindResource.png" How to navigate to your Azure Machine Learning resource." lightbox="../media/5-FindResource.png":::  
+    :::image type="content" source="../media/5-FindResource.png" alt-text="How to navigate to your Azure Machine Learning resource." lightbox="../media/5-FindResource.png":::  
 
-1.  When you have successfully navigated to the newly deployed instance, notice in the **Overview** section there will be a button labeled "Download config.json".  Select this button to download the configuration and store it somewhere secure and accessible so that it may be used in upcoming steps.
+1. When you have successfully navigated to the newly deployed instance, notice in the **Overview** section there will be a button labeled "Download config.json".  Select this button to download the configuration and store it somewhere secure and accessible so that it may be used in upcoming steps.
 
-    :::image type="content" source="../media/5-DownloadConfig.png" Download the Azure Machine Learning workspace configuration." lightbox="../media/6-DownloadConfig.png":::   
+    :::image type="content" source="../media/5-DownloadConfig.png" alt-text="Download the Azure Machine Learning workspace configuration." lightbox="../media/6-DownloadConfig.png":::
 
-1.  While in the **Overview** section of the Azure Machine Learning workspace resource, select **Launch Studio** to prepare open your workspace in the browser and prepare for the next unit.
+1. While in the **Overview** section of the Azure Machine Learning workspace resource, select **Launch Studio** to prepare open your workspace in the browser and prepare for the next unit.
 
-    :::image type="content" source="../media/5-LaunchStudio.png" Download the Azure Machine Learning workspace configuration." lightbox="../media/5-LaunchStudio.png":::   
+    :::image type="content" source="../media/5-LaunchStudio.png" alt-text="Download the Azure Machine Learning workspace configuration." lightbox="../media/5-LaunchStudio.png":::

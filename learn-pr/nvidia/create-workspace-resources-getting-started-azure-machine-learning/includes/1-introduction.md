@@ -3,8 +3,6 @@ In this module, you'll learn how to create workspace resources for getting start
 ### Prerequisites
 
 - [Azure Free Trial Account](https://azure.microsoft.com/free/)
-- 
-- :::image type="content" source="../media/TBD.png" alt-text="TBD." lightbox="../media/TBD.png":::
 
 ## Scenario: Deploy resources to develop a custom object detection model using NVIDIA and Azure Machine Learning Studio
 

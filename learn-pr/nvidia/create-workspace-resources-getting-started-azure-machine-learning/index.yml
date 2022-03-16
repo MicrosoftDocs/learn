@@ -2,7 +2,7 @@
 uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning
 metadata:
   title: Create workspace resources for getting started with Azure Machine Learning
-  description: 
+  description: Create workspace resources for getting started with Azure Machine Learning.
   ms.date: 03/14/2022
   author: toolboc
   ms.author: chnoring
@@ -29,10 +29,10 @@ roles:
 products:
 - azure
 - azure-storage
-- azure-ml-studio
+- azure-ml
 units:
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.1-introduction
-- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.2-introduction-to-azure-machine-learning-studio
+- learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.2-introduction-to-azure-machine-learning
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.3-create-an-azure-storage-account
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.4-create-an-azure-storage-container
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.5-create-an-azure-ml-workspace
@@ -41,4 +41,4 @@ units:
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.8-knowledge-check
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.9-summary
 badge:
-  uid: learn.nvidia.setup-configure-nvidia-deepstream-development.badge
+  uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.badge

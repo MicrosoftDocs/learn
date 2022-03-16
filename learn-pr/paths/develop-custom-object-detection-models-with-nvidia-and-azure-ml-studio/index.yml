@@ -24,7 +24,7 @@ roles:
 products:
 - azure
 - azure-storage
-- azure-ml-studio
+- azure-ml
 modules:
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning
 trophy:
