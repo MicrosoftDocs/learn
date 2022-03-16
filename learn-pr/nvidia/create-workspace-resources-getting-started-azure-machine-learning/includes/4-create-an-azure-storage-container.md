@@ -1,0 +1,39 @@
+Now that we have an Azure Storage Account, we will create a container that will allow us to store unstructured blob data.  This format is ideal for sotring and serving image data in a distributed fashion.  We will reference this data in upcoming steps when we create a Datastore in Azure Machine Learning Studio.  
+
+## Create an Azure Storage Container
+
+1. In the Azure portal, navigate to the Azure Storage Account that was created in the previous unit.
+
+1. In the left menu, scroll to the **Data Storage** section, then select **Containers**.
+
+    :::image type="content" source="../media/4-ContainersSection.png" The Containers Section of the Storage Account Overview is shown highlighted." lightbox="../media/4-ContainersSection.png":::
+
+1. Select the **+ Container+** Button, you will be prompted to provide a name for your container.  You will want to keep track of this name is a secure and accessible document as it will be referenced later in the module.  The container name must be lowercase, must start with a letter or number, and can include only letters, numbers, and the dash (-) character. For more information about container and blob names, see [Naming and referencingcontainers, blobs, and metadata](https://docs.microsoft.com/rest/api/storageservices/naming-and-referencing-containers--blobs--and-metadata).
+
+    Set the level of public access to the container. The default level is **Private (no anonymous access)**.
+
+    Select **Create** to create the container:
+ 
+    :::image type="content" source="../media/4-CreateContainer.png" The Container is ready to be created." lightbox="../media/4-CreateContainer.png":::
+
+1. Once the container is created, select **Access Keys** under the **Security + networking** section of the left-side panel.
+
+    :::image type="content" source="../media/4-AccessKeysSection.png" The Access Keys section is shown highlighted" lightbox="../media/4-AccessKeysSection.png":::
+
+1. This will bring up the following screen. Click on the **Show keys** icon and copy the key to the clipboard and then record it somewhere safe and accessible. This key will be needed later.
+
+    :::image type="content" source="../media/4-ShowKeys.png" The Show Keys section is shown highlighted" lightbox="../media/4-ShowKeys.png":::
+
+1. Select the **Containers** section on the left-side panel and select the newly created container as highlighted below:
+
+    :::image type="content" source="../media/4-ContainerSelect.png" The Show Keys section is shown highlighted" lightbox="../media/4-ContainerSelect.png":::
+
+1. Download and extract the following provided [image data](https://github.com/microsoft/Develop-Custom-Object-Detection-Models-with-NVIDIA-and-Azure-ML-Studio/raw/main/soda_data_compressed.zip).  You will need to decompress the included _soda_data_compressed.zip_ file, then follow the steps in the image below to upload the contents of the _soda_data\train_img\_ directory as shown.  Once you have selected these files for inclusion, click the now highlighted **Upload** button to begin the transfer from your machine to the Azure Storage Container..
+
+    :::image type="content" source="../media/4-UploadImageData.png" The steps to upload the image data are shown" lightbox="../media/4-UploadImageData.png":::
+
+1. Once completed, you should see that 245 images have been added to the Azure Storage Container (0.jpg - 244.jpg).  _Please note that at a minimum you will need at least 50 images to train an AutoML for Images model in Azure Machine Learning Studio_
+
+    :::image type="content" source="../media/4-UploadedImageData.png" The uploaded image data is shown" lightbox="../media/4-UploadedImageData.png":::
+
+1.  At this point, you should have noted the Storage Account Name, Blob Container Name, and Access Key.  These values will be used in the next section when we create the Azure Machine Learning Workspace.
