@@ -25,10 +25,62 @@ When you work with an automated deployment workflow, the same principles apply. 
 > [!TIP]
 > When you publish a module to a registry, the service principal running the deployment probably doesn't need a lot of permission. You could consider using the security *principle of least privilege*, and provide the workflow's service principal with access only to the container registry, and not to a resource group or subscription.
 
-## Publish template specs
+## Publish template specs and modules from a workflow
 
-TODO The CLI commands to publish, and how these can be embedded into a pipeline.
+When you publish a template spec from your own computer by using the Azure CLI, you use this command:
 
-## Publish modules
+```azurecli
+az ts create \
+  --name StorageWithoutSAS \
+  --location westus \
+  --display-name "Storage account with SAS disabled" \
+  --description "This template spec creates a storage account, which is preconfigured to disable SAS authentication." \
+  --version 1 \
+  --template-file main.bicep
+```
 
-TODO The CLI commands to publish, and how these can be embedded into a pipeline.
+<!-- TODO mention versioning -->
+
+You can convert this Azure CLI command to a GitHub Actions step:
+
+```yaml
+- name: Azure CLI script
+  uses: azure/CLI@v1
+  with:
+    azcliversion: 2.30.0
+    inlineScript: |
+      az ts create \
+        --name StorageWithoutSAS \
+        --location westus \
+        --display-name "Storage account with SAS disabled" \
+        --description "This template spec creates a storage account, which is preconfigured to disable SAS authentication." \
+        --version 1 \
+        --template-file main.bicep
+```
+
+The workflow uses the same process to publish the template spec that you would use yourself.
+
+Similarly, when you publish a Bicep module from your own computer by using the Azure CLI, you use this command:
+
+```azurecli
+az bicep publish \
+   --file module.bicep \
+   --target 'br:toycompany.azurecr.io/mymodules/modulename:moduleversion'
+```
+
+You can convert this Azure CLI command to a GitHub Actions step, too:
+
+```yaml
+- name: Azure CLI script
+  uses: azure/CLI@v1
+  with:
+    azcliversion: 2.30.0
+    inlineScript: |
+      az bicep publish \
+        --file module.bicep \
+        --target 'br:toycompany.azurecr.io/mymodules/modulename:moduleversion'
+```
+
+<!-- TODO mention registry hostname and versioning -->
+
+In the next set of exercise units, you'll see how you can publish a template spec from a workflow by using the steps described here.
