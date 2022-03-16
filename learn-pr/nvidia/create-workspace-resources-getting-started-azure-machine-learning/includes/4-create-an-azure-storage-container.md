@@ -18,7 +18,7 @@ Now that we have an Azure Storage Account, we'll create a container that will al
 
 1. Once the container is created, select **Access Keys** under the **Security + networking** section of the left-side panel.
 
-    :::image type="content" source="../media/4-access-keys-section.png" alt-text="A screenshot is displayed showing the Access Keys section highlighted." lightbox="../media4-access-keys-section.png":::
+    :::image type="content" source="../media/4-access-keys-section.png" alt-text="A screenshot is displayed showing the Access Keys section highlighted." lightbox="../media/4-access-keys-section.png":::
 
 1. This will bring up the following screen. Select the **Show keys** icon and copy the key to the clipboard and then record it somewhere safe and accessible. This key will be needed later.
 
