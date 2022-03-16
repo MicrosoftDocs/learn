@@ -30,7 +30,7 @@ To enable a service endpoint, you must:
 1. Turn off public access to the service.
 1. Add the service endpoint to a virtual network.
 
-When you enable a service endpoint, you restrict the flow of traffi, and enable your Azure VMs to access the service directly from your private address space. Devices cannot access the service from a public network. On a deployed VM vNIC, if you look at **Effective routes**, you'll notice the service endpoint as the **Next Hop Type**.
+When you enable a service endpoint, you restrict the flow of traffic, and enable your Azure VMs to access the service directly from your private address space. Devices cannot access the service from a public network. On a deployed VM vNIC, if you look at **Effective routes**, you'll notice the service endpoint as the **Next Hop Type**.
 
 This is an example route table, before enabling a service endpoint:
 
