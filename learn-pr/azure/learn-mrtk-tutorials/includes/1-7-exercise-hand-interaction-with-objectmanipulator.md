@@ -22,7 +22,7 @@ The cube was placed in the scene at the default position of (0,0,0). This means 
 
 1. In the **Inspector**, change the cube's **Tranform/Position** values to the following:
    
-   X = 0, Y = -0.1, Z = 0.5
+   X = -0.2, Y = -0.1, Z = 0.5
 
     :::image type="content" source="../media/028-cube-transform-values.png" alt-text="Screenshot of the cube's transform component after updates.":::
 
@@ -70,9 +70,6 @@ Let's change Far Cube's position and rotation.
 
     Position: X = 0.6, Y = 0.1, Z = 1.1
     Rotation: X = 27, Y = 0, Z = 0
-   
-
-
 
 ## Grab and move the cubes in Play mode
 
@@ -84,63 +81,94 @@ Let's change Far Cube's position and rotation.
 
     :::image type="content" source="../media/032-maximize-command.png" alt-text="Screenshot of Maximize command for the Game window.":::
 
-* In the Unity toolbar, click the **Play** icon to enter play mode.
-    Using the Unity in-editor input simulation, press the space bar on your keyboard to simulate hand input with the right hand.
+1. Press the space bar to make the simulated right hand appear in the view.
+
+    :::image type="content" source="../media/032-maximize-command.png" alt-text="Screenshot of Maximize command for the Game window.":::
+
+1. Move the simulated hand closer to the cube until it touches the cube on the side or bottom.
+
+    :::image type="content" source="../media/033-touch-cube.png" alt-text="Screenshot of Maximize command for the Game window.":::
+
+1. Click the left mouse button (this makes the hand "grab" the cube) and then drag the cube around the scene.
+
     :::image type="content" source="../media/move-cube.gif" alt-text="Screenshot of Move the cube." lightbox="../media/move-cube.gif":::
 
-## Build your application to HoloLens 2
+To grab and move "Far Cube," we'll use the far pointer attached to the simulated hand.
 
-## 1. Build the Unity project
+1. If you need to, press the space bar again to make the simulated right hand appear. Note the far pointer that extends from the end of hand's index finger.
 
-1. In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window.
+    :::image type="content" source="../media/034-far-pointer.gif" alt-text="Screenshot of simulated hand's far pointer.":::
 
-    In the **Build Settings** window, click the Add Open Scenes button to add your current scene to the **Scenes In Build** list, then click the **Build** button to open the Build Universal Windows Platform window:
+1. Move the hand closer to the Far Cube until you can see the tip of the pointer on the cube. You may have to move the hand around in a circular motion a few times to make the tip of the pointer appear.
 
-   :::image type="content" source="../media/add-scenes.png" alt-text="Screenshot of Adding Scenes in build." lightbox="../media/add-scenes.png":::
+    :::image type="content" source="../media/035-far-pointer-touches-cube.gif" alt-text="Screenshot of the far pointer touching the cube.":::
 
-2. In the Build Universal Windows Platform window, choose a suitable location to store your build, for example, *D:\MixedRealityLearning\Builds*, create a new folder and give it a suitable name, for example, GettingStarted, and then click the **Select Folder** button to start the build process:
+1. Click the left mouse button (this makes the hand close into a "grabbing" position) and then drag the cube around the scene.
+
+## Unity in-editor input simulation
+
+The Unity in-editor input simulation allows you to test holographic object behavior when using hand or eye interaction.
+
+**To move around in the scene:**
+
+* Use **W/A/S/D** keys to move the camera forward/left/back/right.
+* Use **Q/E** to move the camera vertically.
+* Press and hold the **right mouse button** to rotate the camera.
+
+**To simulate hand input:**
+
+* Press and hold the **space bar** to enable the right hand.
+* While holding the space bar, move your mouse to move the hand.
+* Use the **mouse scroll wheel** to adjust the depth of the hand.
+* Click the **left mouse button** to simulate the pinch gesture.
+* Use **T/Y** keys to make the hand persistent in the view.
+* Hold the **CTRL** key and move the mouse to rotate the hand.
+* Press and hold the **left shift key** to enable the left hand.
+
+## Build your application in Unity
+
+1. In the menu bar, select **File** > **Build Settings...**.
+1. In the **Build Settings** window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list.
+1. Click the **Build** button.
+1. In the **Build Universal Windows Platform** window, navigate to the folder where you want to store your build, or create a new folder and navigate to it, and then click the **Select Folder** button to start the build process.
 
     :::image type="content" source="../media/select-build-folder.png" alt-text="Screenshot of Select a Build folder." lightbox="../media/select-build-folder.png":::
 
-3. Wait for Unity to finish the build process:
+    A progress bar appears to let you know how the build is proceeding.
 
-    :::image type="content" source="../media/build-process.png" alt-text="Screenshot of Wait for the build process to finish." lightbox="../media/build-process.png":::
-
-## 2. (Optional) Build and deploy the application
+## (Optional) Build and deploy the application
 
 > [!Note]
 > Building and testing on HoloLens 2 is not mandatory. Alternatively, you can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a device. Devices can be purchased at [HoloLens.com](http://hololens.com/).
 
-1. When the build process has completed, Unity will prompt Windows File Explorer to open the location you stored the build. Navigate inside the folder, and double-click the solution file to open it in Visual Studio:
+1. When the build process has completed, Windows File Explorer opens and displays the build folder. Navigate inside the folder and then double-click the solution file to open it in Visual Studio:
 
-    :::image type="content" source="../media/file-explorer.png" alt-text="Screenshot of File Explorer." lightbox="../media/file-explorer.png":::
+    :::image type="content" source="../media/036-builds-folder.png" alt-text="Screenshot of File Explorer with the builds folder displayed." :::
 
-2. Configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration, the **ARM64** architecture, and **Device** as target:
+1. Configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration, the **ARM64** architecture, and **Device** as target:
 
-    :::image type="content" source="../media/visual-studio-window-select-release.png" alt-text="Screenshot of Visual Studio window 1." lightbox="../media/visual-studio-window-select-release.png":::
+    :::image type="content" source="../media/037-visual-studio-build-options.png" alt-text="Screenshot of Visual Studio window with the build options for the project.":::
 
     > [!TIP]
     > If you're deploying to HoloLens (1st generation), select the **x86** architecture.
     
     > [!NOTE]
-    > For HoloLens, you'll typically build for the ARM architecture. However, there's a [known issue](https://github.com/microsoft/MixedRealityToolkit-Unity) in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended workaround is to build for ARM64. If that isn't an option, go to **Edit** > **Project Settings** > **Player** > **Other Settings** and disable **Graphics Jobs**.
+    > For HoloLens, you'll typically build for the ARM architecture. However, there's a [known issue](https://github.com/microsoft/MixedRealityToolkit-Unity) in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. As a workaround, we recommend that you build for ARM64. If that isn't an option, in Unity, go to **Edit** > **Project Settings** > **Player** > **Other Settings** and disable **Graphics Jobs**.
     
     > [!NOTE]
-    > If you don't see Device as a target option, you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the Solution Explorer, right-click on YourProjectName (Universal Windows) and select **Set as StartUp Project**.
-
-3. Connect your HoloLens to your computer, then select **Debug** >
-
-    :::image type="content" source="../media/visual-studio-window-2-debug.png" alt-text="Screenshot of Visual Studio Window 2." lightbox="../media/visual-studio-window-2-debug.png":::
+    > If you don't see "Device" as a target option in Visual Studio, you may need to change the startup project for the solution from the IL2CPP project to the UWP project. To do this, in the **Solution Explorer**, right-click [**your project name**]**(Universal Windows)** and then select **Set as StartUp Project**.
 
     > [!IMPORTANT]
     > Before building to your device, the device must be in Developer Mode and paired with your development computer. Both of these steps can be completed by following [these instructions](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio).
-    
+
+1. Connect your HoloLens to your computer, and then in Visual Studio, do one of the following:
+   - To automatically start the app on your device without the Visual Studio debugger attached, select **Debug** > **Start Without Debugging**.
+   - To deploy to your device without having the app start automatically, select **Build** > **Deploy Solution**.
+
+    :::image type="content" source="../media/038-start-without-debugging.png" alt-text="Screenshot of Visual Studio with the Start Without Debugging menu item displayed.":::
+
     > [!TIP]
     > You can also deploy to the [HoloLens Emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) or create an [App Package](/windows/uwp/packaging/packaging-uwp-apps) for sideloading.
 
-4. Using Start Without Debugging automatically starts the app on your device without the Visual Studio debugger attached.
-
-5. Select **Build** > **Deploy Solution** to deploy to your device without having the app start automatically.
-
     > [!NOTE]
-    > You may notice the Diagnostics profiler in the app, which you can toggle on or off by using the speech command **"Toggle Diagnostics"**. It's recommended that you keep the profiler visible most of the time during development to understand when changes to the app may impact performance. For example, HoloLens apps should [continuously run at 60 FPS](/windows/mixed-reality/develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality).
+    > You may notice the Diagnostics profiler in the app. You can toggle it on or off by using the speech command **"Toggle Diagnostics"**. We recommend that you keep the profiler visible most of the time during development to understand when changes to the app might impact performance. For example, HoloLens apps should [continuously run at 60 FPS](/windows/mixed-reality/develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality).
