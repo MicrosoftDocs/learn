@@ -8,7 +8,7 @@ In the convert phase of migrating your resources to Bicep, the goal is to captur
 
 The convert phase consists of two steps:
 
-1. Capture a JSON representation of your Azure resources.
+1. Capture a representation of your Azure resources.
 1. Convert the JSON representation to Bicep using the `decompile` command.
 
 ## Phase 2: Migrate
