@@ -129,7 +129,7 @@ Stepping through your code can be helpful but tedious. Especially when you're wo
 
 It's important to be strategic about where we put our breakpoints. We're especially interested in the value of `sum`, since it represents the current maximum Fibonacci value. Because of that, let's put our breakpoint on the line *after* `sum` is set.
 
-1. Add a second breakpoint on line 13.
+1. Add a second breakpoint on line 14.
 
    :::image source="../media/visual-studio-locate-bug.png" alt-text="Screenshot showing a second breakpoint being set.":::
 
@@ -183,7 +183,7 @@ It's important to be strategic about where we put our breakpoints. We're especia
 
     We now know that the code runs through the loop correctly until `i` equals 4, but then it exits out before computing the final value. We have narrowed down where the bug is.
 
-1. Let's set one more breakpoint on line 17, which reads:
+1. Let's set one more breakpoint on line 18, which reads:
 
     ```csharp
     return n == 0 ? n1 : n2;
@@ -247,9 +247,9 @@ It's important to be strategic about where we put our breakpoints. We're especia
 
 1. Stop the debugging session if you haven't already.
 
-1. Make the preceding change to line 10, and leave our breakpoint on line 17.
+1. Make the preceding change to line 11, and leave our breakpoint on line 18.
 
-1. Restart the debugger. This time, when we hit the breakpoint on line 17, we'll see the following values:
+1. Restart the debugger. This time, when we hit the breakpoint on line 18, we'll see the following values:
 
     ```text
     n [int]: 5
