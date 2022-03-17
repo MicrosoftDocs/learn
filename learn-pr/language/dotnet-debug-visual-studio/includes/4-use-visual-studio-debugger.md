@@ -247,7 +247,7 @@ It's important to be strategic about where we put our breakpoints. We're especia
 
 1. Stop the debugging session if you haven't already.
 
-1. Next, make the preceding change to line 10, and leave our breakpoint on line 17.
+1. Make the preceding change to line 10, and leave our breakpoint on line 17.
 
 1. Restart the debugger. This time, when we hit the breakpoint on line 17, we'll see the following values:
 
