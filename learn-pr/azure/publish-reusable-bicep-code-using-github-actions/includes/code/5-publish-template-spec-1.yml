@@ -1,0 +1,9 @@
+name: 'publish-template-spec-1'
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'template-spec-1/**'
+
+# The rest of the workflow definition goes here.

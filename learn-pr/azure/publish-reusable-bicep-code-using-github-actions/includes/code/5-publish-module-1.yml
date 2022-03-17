@@ -1,0 +1,9 @@
+name: 'publish-module-1'
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'module-1/**'
+
+# The rest of the workflow definition goes here.

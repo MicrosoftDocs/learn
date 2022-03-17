@@ -41,6 +41,26 @@ You can also choose to use a simpler versioning strategy, such as just using the
 
 ## How many workflows?
 
+It's common to build up a collection of template specs and modules. Often, it makes sense to keep these in the same Git repository.
+
+By using *path filters* in GitHub Actions, you can create separate workflows for each module or template spec within your repository. This approach helps to avoid publishing a new version of every Bicep file within the repository every time you change one file.
+
+For example, suppose you have a file structure similar to the one illustrated above. You could configure three separate workflows, one for each Bicep file. Select each tab to see the corresponding workflow definition, and its path filter:
+
+# [module-1](#tab/module-1)
+
+:::code language="yaml" source="code/5-publish-module-1.yml" range="6-7" :::
+
+# [module-2](#tab/module-2)
+
+:::code language="yaml" source="code/5-publish-module-2.yml" range="6-7" :::
+
+# [template-spec-1](#tab/template-spec-1)
+
+:::code language="yaml" source="code/5-publish-template-spec-1.yml" range="6-7" :::
+
+---
+
 <!-- TODO -->
 
 Should you create a single workflow for each module/TS, or use a shared workflow that deploys everything?
