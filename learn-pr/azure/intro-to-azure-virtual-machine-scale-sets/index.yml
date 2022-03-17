@@ -16,7 +16,7 @@ abstract: |
   - Learn what Azure virtual machine scale sets is and the functionality it provides
   - Determine whether Azure virtual machine scale sets meets the needs of your organization
   - Understand the difference between using virtual machine scale sets and scaling up individual instances
-prerequisites: Understanding of basic networking and virtual machine compute concepts
+prerequisites: An understanding of basic networking and virtual machine compute concepts
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

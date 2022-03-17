@@ -8,7 +8,7 @@ Virtual machine scale sets are ideal for scenarios that include compute workload
 > [!NOTE]
 > Scale sets configured to use Flexible orchestration may use a mix of virtual machine types and can leverage Spot and on-demand VMs in the same set. This module focuses on scale sets that use uniform orchestration.
 
-Virtual machine scale sets are intelligent enough to automatically scale up or down the number of VM instances. A scale set can also change the size of VM instances. The criteria used to activate the upscale or downscale can depend on a customized schedule or on actual demand and usage. Scale sets using uniform orchestration apply the same configuration to a group of VMs simultaneously. They don't require you to manually configure instances individually.
+Virtual machine scale sets are intelligent enough to automatically scale up or down the number of VM instances. A scale set can also change the size of VM instances. The criteria used to activate the upscaling or downscaling can depend on a customized schedule or on actual demand and usage. Scale sets using uniform orchestration apply the same configuration to a group of VMs simultaneously. They don't require you to manually configure instances individually.
 
 A scale set uses a load balancer to distribute requests across the VM instances. It uses a health probe to determine the availability of each instance by pinging each instance.
 

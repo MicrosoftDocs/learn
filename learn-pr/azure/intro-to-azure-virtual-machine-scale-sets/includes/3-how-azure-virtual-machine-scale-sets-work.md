@@ -4,14 +4,19 @@ Virtual machine scale sets provide high availability to your applications. Virtu
 
 Scale sets are designed for cost-effectiveness. New VM instances are created only when needed and are removed when no longer required. Scale sets can also be configured to scale VMs either horizontally or vertically.
 
-- **Horizontal scaling** Horizontal scaling is the process of adding or removing VMs in a scale set. In the uniform orchestration configuration, when new instances are required, those instances are generated from a template image to ensure that all VM instances have the same configuration and applications. Azure virtual machine scale sets limit you to running a maximum of 1,000 VMs in a single scale set.
-- **Vertical scaling** Vertical scaling is the process of adding resources such as memory, CPU power, or disk space to VMs in a scale set. In contrast to horizontal scaling, where new, identically sized VMs in the uniform orchestration configuration are added to or removed from a scale set, vertical scaling focuses on increasing the size and capacity of the VMs in the scale set. For example, increasing the processor core count and speed. Vertical scaling typically requires rebooting the affected VMs in the scale set.
+- **Horizontal scaling** is the process of adding or removing VMs in a scale set. 
+
+   In the uniform orchestration configuration, when new instances are required, those instances are generated from a template image to ensure that all VM instances have the same configuration and applications. Azure virtual machine scale sets limit you to running a maximum of 1,000 VMs in a single scale set.
+- **Vertical scaling** is the process of adding resources such as memory, CPU power, or disk space to VMs in a scale set.
+
+   In contrast to horizontal scaling, where new, identically sized VMs in the uniform orchestration configuration are added to or removed from a scale set, vertical scaling focuses on increasing the size and capacity of the VMs in the scale set. For example, increasing the processor core count and speed. Vertical scaling typically requires rebooting the affected VMs in the scale set.
 
 ## Scaling a scale set
 
 Virtual machine scale sets address the need to quickly create and manage VMs for fluctuating workloads. You can configure two types of scaling for a scale set:
 
 - **Scheduled scaling:** You can proactively schedule the scale set to deploy one or *N* number of extra instances to accommodate a spike in traffic and then scale back down when the spike ends.
+
 - **Autoscaling:** If the workload is variable and can’t always be scheduled, you can use metric-based threshold scaling. Autoscaling horizontally scales out based on node usage. It then scales back in when the resources return to a baseline.
 
 Autoscaling is based on a set of scale conditions, rules, and limits. A scale condition combines time and a set of scale rules. If the current time falls within the period defined in the scale condition, the condition's scale rules are evaluated. The results of this evaluation determine whether to add or remove instances in the scale set.
@@ -21,13 +26,17 @@ The scale condition also defines the limits of scaling for the maximum and minim
 You can base the autoscale on:
 
 - **Schedule:** Use this approach if you know you'll have an increased workload on a specified date or period of time. Schedule-based scaling specifies a start and end time, and the number of instances to add to the scale set.
+
 - **Metrics:** Adjust scaling by monitoring performance metrics associated with the scale set. When these metrics exceed a specified threshold, the scale set can automatically start new virtual machine instances. When the metrics indicate that the extra resources are no longer required, the scale set can stop any excess instances.
 
 These metrics are commonly used to monitor a virtual machine scale set:
 
 - **Percentage CPU:** This metric indicates the CPU usage across all instances. A high value shows that instances are becoming CPU-bound, which could delay the processing of client requests.
+
 - **Inbound flows and outbound flows:** These metrics show how fast network traffic is flowing into and out of virtual machines in the scale set.
+
 - **Disks read operations/sec and disk write operations/sec:** These metrics show the volume of disk I/O across the scale set.
+
 - **Data disk queue depth:** This metric shows how many I/O requests are waiting to be serviced for only the data disks on the virtual machines.
 
 A virtual machine scale set can contain many scale conditions. Each matching scale condition is acted on. A scale set can also contain a default scale condition that's used if no other scale conditions match the current time and performance metrics.
@@ -36,7 +45,7 @@ The default scale condition is always active. It contains no scale rules, effect
 
 ## Scale sets with Azure Spot instances
 
-A virtual machine scale set comprised of Azure spot instance VMs lets you use Azure compute resources at cost savings of up to 80 percent. The global Azure infrastructure frequently has underused compute resources available. A scale set using spot instances lets you save money by using this underused compute capability.
+A virtual machine scale set comprised of Azure Spot instance VMs lets you use Azure compute resources at cost savings of up to 80 percent. The global Azure infrastructure frequently has underused compute resources available. A scale set using spot instances lets you save money by using this underused compute capability.
 
 > [!NOTE]
 > When you use these VMs, keep in mind that they're temporary. Availability depends on size, region, time of day, and so on. These VMs have no SLA.
