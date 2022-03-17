@@ -2,7 +2,7 @@ You can limit network traffic to resources in a virtual network using a network 
 
 ## Subnets
 
-You can assign NSGs to subnets and create protected screened subnets (also called a DMZ). These NSGs can restrict traffic flow to all the machines that reside within that subnet. Each subnet can have zero, or one, associated network security groups.
+You can assign Network Security Groups to subnets and create protected screened subnets (also called a DMZ). These NSGs can restrict traffic flow to all the machines that reside within that subnet. Each subnet can have zero, or one, associated network security groups.
 
 ## Network interfaces
 
