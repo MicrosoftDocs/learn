@@ -5,6 +5,7 @@ During the process, you'll:
 > [!div class="checklist"]
 > * Create a workflow for pull request create and update events.
 > * Add Bicep linting to the workflow.
+> * Add a branch protection rule to enforce the checks succeed before a pull request is merged.
 > * Create a pull request, and watch the workflow run.
 > * Fix the errors identified by the pull request validation.
 > * Re-run the workflow, and close the pull request.
@@ -13,11 +14,11 @@ During the process, you'll:
 
 1. In Visual Studio Code, create a new file named *pr-validation.yml* in the *.github/workflows* folder.
 
-1. Add a pull request name and trigger:
+1. Add the following code into the file:
 
    :::code language="yaml" source="code/4-workflow.yml" range="1-4" :::
 
-   This code ensures that the workflow is executed when a pull request is created or updated.
+   This code ensures that the workflow is executed whenever a pull request is created or updated. Also, we can trigger the workflow manually.
 
 ## Add a lint job to your workflow
 
@@ -27,8 +28,6 @@ When a pull request is opened or edited you want to run a linting step for your 
 
    :::code language="yaml" source="code/4-workflow.yml" range="6-8" :::
 
-   Ensure you replace *YOUR*GITHUB*USERNAME* with your own GitHub username. This enables GitHub Actions to find the correct workflow definition file. Also, if you didn't use the name *toy-website-auto-review* for your repository, ensure you replace the repository name too.
-
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
    ```bash
@@ -37,12 +36,39 @@ When a pull request is opened or edited you want to run a linting step for your 
    git push
    ```
 
+## Add a branch protection rule
+
+<!-- TODO -->
+
+You now have a workflow that can perform a linting operation. As a next step you will enforce the linting for each pull request.
+
+1. In your browser, navigate to _Actions_ and select the _pr-validation_ workflow.
+
+1. Select _Run workflow_ and next again _Run workflow_ to trigger your workflow on the main branch. This will run your workflow a first time. Wait for your run to succeed.
+
    > [!NOTE]
-   > You're pushing your change directly to the main branch. You can do this because you didn't define any branch protection on the main branch. In a real project, you should add branch protection to the main branch so contributors cannot commit or merge without creating a pulll request and running the automated pull request validation checks. For more information on branch protection, see the module [Review Azure infrastructure changes by using Bicep and pull requests](xref:learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests).
+   > This may seem a silly step, since you will mainly want to run your workflow for PR validation, however, as one of the next steps you will also configure a status check based on your workflow. For the GitHub interface to find a status check based on your workflow, the workflow needs to have run at least once.
+
+1. In your browser, navigate to _Settings_.
+
+1. Select _Branches_.
+
+1. Select _Add rule_ to add a branch protection rule.
+
+1. Fill out _main_ as the name of the branch you would like to protect.
+
+1. Select _Require status checks to pass before merging_ to enable a status check. 
+
+1. In the text box that appears, start typing _lint_ and select your _lint / Lint Code_ job from the dropdown.
+
+1. Select _Create_.
+
+> [!TIP]
+> For more information on branch protection, see the module [Review Azure infrastructure changes by using Bicep and pull requests](xref:learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests).
 
 ## Create a pull request
 
-Now that the pull request validation workflow is in place, let's see how pull requests use your workflow. We've pre-created a branch in your repository with some Bicep changes, which you can use to create your pull request.
+Now that the pull request validation workflow and branch protection rule are configured, let's see how pull requests use your workflow. We've pre-created a branch in your repository with some Bicep changes, which you can use to create your pull request.
 
 1. In your browser, navigate to the *change1* branch. (TODO)
 
@@ -56,7 +82,7 @@ Now that the pull request validation workflow is in place, let's see how pull re
 
    Notice that an automatic check has been triggered, which runs your pull request validation workflow.
    
-   Wait until the check completes. The check fails.
+   Wait until the check completes. The check fails. Notice that you can't merge the pull request while the check fails.
 
 ## Fix the errors of the pull request validation
 
