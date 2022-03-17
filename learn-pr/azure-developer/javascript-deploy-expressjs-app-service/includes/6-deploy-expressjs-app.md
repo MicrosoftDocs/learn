@@ -1,108 +1,48 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+You have many choices when deploying to Azure App Service. Many of the typical choices you may be familiar with such as:
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+* GitHub repo
+* SSH or other CLI tools
+* Zip deploy 
+* local git
+* CI/CD such as GitHub actions or Azure Pipelines
 
-    Heading: none
+## Deploy files
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+Deploy to Azure App means to move all files to the hosting environment that are necessary to run the web app. 
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Because this is a Node.js app, it needs to have the npm modules required by the app. As the deployment engineer, you can choose to move the modules as part of deployment or you can have the deployment process on Azure install the resources. 
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Typically, having Azure install the npm packages is a better solution and is the process this module uses. 
 
-    Goal: Describe the part of the scenario covered in this exercise
+If you intend to deploy another app to App Service which requires moving npm modules instead of having Azure install them, you should consider strategies to make the process easier such as: 
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+* Storing custom npm modules in Azure Storage and installing modules from there. This will speed up the deployment and allows you to make a secure connection between Storage and App Service.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+## Azure installs npm packages
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+In order to tell the Azure deployment process to install the npm modules, an app setting, `SCM_DO_BUILD_DURING_DEPLOYMENT`, needs to be configured. This setting is configured for you if you deploy by Visual Studio Code. If you use a different deployment process, you should configure the app setting yourself:
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+```bash
+SCM_DO_BUILD_DURING_DEPLOYMENT=true
+```
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+## Build process
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+For the sample app used in this module, the build process runs `npm install` which accesses the list of dependencies from `package.json`. 
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+## Deployment tasks
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+After you deploy your app, you may want to overwrite just a file or set of files. Don't do this with Visual Studio Code because it overwrites all files.  This is best accomplished with the Azure CLI, the Kudu UI in the Azure portal, or SSH. 
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+## Deploy local code or GitHub repository
 
-    Goal: List the steps they'll do to complete the exercise.
+Visual Studio Code allows you to deploy a local folder to Azure App Service or you can configure a Deployment Source such as GitHub. 
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+This module deploys local files. You clone your own fork of the sample repo and deploy a folder within it.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+## Next steps to deploy
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+In the next exercise:
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+* Start the sandbox, get the subscription name
+* View resource group from Visual Studio Code
