@@ -61,7 +61,7 @@ For example, suppose you have a file structure similar to the one illustrated ab
 
 ---
 
-When you make a change to one file - for example, *module-2/main.bicep* - only the workflow for module 2 runs.
+When you make a change to a single file - for example, *module-2/main.bicep* - then only the workflow for module 2 runs. If you change multiple files in the same commit, each of the relevant workflows is triggered.
 
 > [!NOTE]
 > The approach of creating a workflow for each of your reusable Bicep files is simple and flexible. But, it can become cumbersome when you have a large number of Bicep files, or if you don't want to maintain separate workflows for each module and template spec. You can also write scripts within your workflow to find the code that's changed and publish just those modules. But, this is a more complex approach and it's out of the scope of this Microsoft Learn module.
