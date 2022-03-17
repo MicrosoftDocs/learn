@@ -12,7 +12,7 @@ Defender for Cloud enables you to continuously assess, secure, and defend worklo
 |**Secure - Harden all connected resources and services.**|Security recommendations - Customized and prioritized hardening tasks to improve your posture. You implement a recommendation by following the detailed remediation steps provided in the recommendation. For many recommendations, Defender for Cloud offers a "Fix" button for automated implementation.|
 |**Defend - Detect and resolve threats to those resources and services.**|Security alerts - With the enhanced security features enabled, Defender for Cloud detects threats to your resources and workloads. These alerts appear in the Azure portal and Defender for Cloud. Alerts can be sent by email to the relevant personnel in your organization. Alerts can also be streamed to SIEM, SOAR, or IT Service Management solutions as required.|
 
-## Enhanced Security Features for more capabilities
+## Enhanced security features for more capabilities
 
 Enabling enhanced security extends the capabilities to workloads running in private and other public clouds. Enhanced security provides unified security management and threat protection across your hybrid cloud workloads. Major benefits for enabling enhanced security features with Azure Arc-enabled servers include:
 

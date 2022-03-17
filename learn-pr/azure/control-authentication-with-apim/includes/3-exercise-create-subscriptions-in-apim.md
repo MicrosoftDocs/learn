@@ -1,6 +1,6 @@
 You can use the Azure API Management (APIM) user interface in the Azure portal to create subscriptions and obtain subscription keys for use in client apps.
 
-Suppose your weather company has decided to make its meteorological data available to clients that subscribe and pay for this service. The critical requirement is to only allow access to clients that are allocated a key. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Weather API that exposes an OpenAPI endpoint. You will then secure the endpoint and allocate a client key.
+Suppose your weather company has decided to make its meteorological data available to clients that subscribe and pay for this service. The critical requirement is to only allow access to clients that are allocated a key. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Weather API that exposes an OpenAPI endpoint. You'll then secure the endpoint and allocate a client key.
 
 In this unit, you will:
 
@@ -11,7 +11,7 @@ In this unit, you will:
 
 ## Deploy the Weather Web API
 
-You have developed a .NET Core app that returns weather information. The app includes Swashbuckle to generate OpenAPI documentation.
+You've developed a .NET Core app that returns weather information. The app includes Swashbuckle to generate OpenAPI documentation.
 
 To save time, let's start by running a script to host our API in Azure. The script performs the following steps:
 
@@ -21,7 +21,7 @@ To save time, let's start by running a script to host our API in Azure. The scri
 - Configure Git locally
 - Deploy our Web API to our App Service instance
 
-1. Run the following git clone command in Azure Cloud Shell to clone the repo that contains the source for our app, as well as our setup script from GitHub.
+1. Run the following git clone command in Azure Cloud Shell to clone the repo that contains the source for our app, and our setup script from GitHub.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-control-authentication-with-apim.git
@@ -33,13 +33,13 @@ To save time, let's start by running a script to host our API in Azure. The scri
     cd mslearn-control-authentication-with-apim
     ```
 
-1. As its name suggests, `setup.sh` is the script you will run to create our API. It will generate a public web app that exposes an OpenAPI interface.
+1. As its name suggests, `setup.sh` is the script you'll run to create our API. It will generate a public web app that exposes an OpenAPI interface.
 
     ```bash
     bash setup.sh
     ```
 
-    The script has 7 parts and takes about a minute to run. Observe that, during deployment, all dependencies needed for our app to run are automatically installed on the remote App Service.
+    The script has seven parts and takes about a minute to run. Observe that, during deployment, all dependencies needed for our app to run are automatically installed on the remote App Service.
 
     When the script has finished, it outputs two URLS, a Swagger URL, and an Example URL. You can use these URLs to test the app deployment.
 
@@ -62,7 +62,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 1. In the *Search services and marketplace* search bar, enter **API Management**, and press <kbd>Enter</kbd>. The **API Management** pane appears.
 
-1. Select **Create**. The **Create API Management** pane appears.
+1. Select **Create**. The **Install API Management gateway** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -73,7 +73,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
     | Resource group | From the dropdown list, select **<rgn>[sandbox resource group name]</rgn>**. |
     | **Instance details** |
     | Region | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
-    | Resource name | Enter `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique. Make a note of this resource name; it will be the API gateway name that you will need it later in this exercise. |
+    | Resource name | Enter `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique. Make a note of this resource name; it will be the API gateway name that you'll need it later in this exercise. |
     | Organization name | Enter `Weather-Company`. |
     | Administrator email | Enter your own email address. |
     | **Pricing tier** |
@@ -129,11 +129,11 @@ The final step is to add a subscription key for the Weather Data API.
 
 1. At the end of the *Weather Data Subscription* row, select the ellipsis, and in the context menu select **Show/hide keys**. The Primary and Secondary key values show.
 
-1. Copy the *Primary key* from Weather Data Subscription to your clipboard. You will need this key for the next step.
+1. Copy the *Primary key* from Weather Data Subscription to your clipboard. You'll need this key for the next step.
 
 ## Test the subscription key
 
-The API is secured with a key. Now, we will test the API without and with the key to demonstrate secure access.
+The API is secured with a key. Now, we'll test the API without and with the key to demonstrate secure access.
 
 1. To make a request without passing a subscription key, in Azure Cloud Shell (to the right), run the following cURL command, substituting the *[Name Of Gateway]* placeholder with the resource name for the API gateway (apim-WeatherDataNNNN) that you created in the previous task.
 
@@ -147,7 +147,7 @@ The API is secured with a key. Now, we will test the API without and with the ke
    { "statusCode": 401, "message": "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API." }
    ```
 
-1. Now, run the following command, substituting the the *Name Of Gateway* placeholder with the resource name for the API gateway (apim-WeatherDataNNNN), and substituting the *Primary Key* placeholder with the primary key you copied from the show/hide step.
+1. Now, run the following command, substituting the *Name Of Gateway* placeholder with the resource name for the API gateway (apim-WeatherDataNNNN), and substituting the *Primary Key* placeholder with the primary key you copied from the show/hide step.
 
    ```Azure Cloud Shell
    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1 \

@@ -8,7 +8,7 @@ Both Andy and Mara want to catch the error before it reaches Amita, the tester. 
 
 Andy also thinks that adding the unit tests now will give them a head start as they improve the _Space Game_ web app. The application uses a document database to store high scores and player profiles. Right now, it uses local test data. Later, they plan to connect the app to a live database.
 
-A number of unit test frameworks are available for C# applications. Mara chooses NUnit because it's popular with the community and she's used it before.
+Many unit test frameworks are available for C# applications. Mara chooses NUnit because it's popular with the community and she's used it before.
 
 Here's the unit test you're working with, along with Mara and Andy.
 
@@ -159,7 +159,7 @@ Here you configure the build pipeline to run your unit tests and collect the res
 
     This build task runs the `dotnet test` command.
 
-    Notice that this task does not specify the `--logger trx` argument that you used when you ran the tests manually. The `publishTestResults` argument adds that for you. This argument tells the pipeline to generate the TRX file to a temporary directory, accessible through the `$(Agent.TempDirectory)` built-in variable. It also publishes the task results to the pipeline.
+    Notice that this task doesn't specify the `--logger trx` argument that you used when you ran the tests manually. The `publishTestResults` argument adds that for you. This argument tells the pipeline to generate the TRX file to a temporary directory, accessible through the `$(Agent.TempDirectory)` built-in variable. It also publishes the task results to the pipeline.
 
     The `projects` argument specifies all C# projects that match *"\*\*/\*.Tests.csproj*." The *"\*\*"* part matches all directories, and the *"\*.Tests.csproj"* part matches all projects whose file name ends with *".Tests.csproj*." The `unit-tests` branch contains just one unit test project, *Tailspin.SpaceGame.Web.Tests.csproj*. But by specifying a pattern, you can run additional test projects without the need to modify your build configuration.
 
@@ -204,7 +204,7 @@ Here you see the tests run in the pipeline and then visualize the results from M
 
     :::image type="content" source="../media/4-test-run-results.png" alt-text="A screenshot of Azure DevOps test run results summary showing 5 passed tests.":::
 
-    In this example, all five tests have passed. If any tests failed, you could navigate to the build task to get additional details.
+    In this example, all five tests have passed. If any tests failed, you could navigate to the build task to get more details.
 
     You can also download the TRX file so you can examine it through Visual Studio or another visualization tool.
 

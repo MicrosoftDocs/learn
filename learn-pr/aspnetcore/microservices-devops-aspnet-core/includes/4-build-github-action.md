@@ -100,7 +100,7 @@ View the real-time progress of the build by completing the following steps:
 1. Select the **:::no-loc text="Actions":::** tab.
 1. Select the most recent workflow run listed for the **:::no-loc text="eShop build":::** workflow. The commit message used in the previous step becomes the run's name.
 
-    :::image type="content" source="../media/4-build-github-action/eshop-build-workflow.png" alt-text="eShop build workflow listed on the workflows page." border="true" lightbox="../media/4-build-github-action/eshop-build-workflow.png":::
+    :::image type="content" source="../media/4-build-github-action/eshop-build-workflow.png" alt-text="Screenshot that shows e Shop build selected on the workflows page." border="true" lightbox="../media/4-build-github-action/eshop-build-workflow.png":::
 
 1. Select the **:::no-loc text="build-and-push-docker-image":::** task.
 1. Wait a few minutes. Notice that:
@@ -108,7 +108,7 @@ View the real-time progress of the build by completing the following steps:
     - The build fails on the `Run unit tests` step.
     - The `Build and push Docker image` step doesn't run because the previous step failed.
 
-    :::image type="content" source="../media/4-build-github-action/failed-unit-tests.png" alt-text="eShop build workflow listed on the workflows page." border="true" lightbox="../media/4-build-github-action/failed-unit-tests.png":::
+    :::image type="content" source="../media/4-build-github-action/failed-unit-tests.png" alt-text="Screenshot that shows build and push docker image selected, and a failed check next to Run unit tests in the workflow steps." border="true" lightbox="../media/4-build-github-action/failed-unit-tests.png":::
 
 ## Fix the build
 

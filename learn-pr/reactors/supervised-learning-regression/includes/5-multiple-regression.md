@@ -28,7 +28,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d.svg" alt-text="Scatter plot output":::
+:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d.svg" alt-text="Scatter plot output for G D P per capita, percent urbanized, and life expectancy.":::
 
 ***
 
@@ -66,7 +66,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-model-linear-regression.svg" alt-text="Scatter plot output":::
+:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-model-linear-regression.svg" alt-text="Scatter plot output that shows a linear model for G D P per capita, percent urbanized, and life expectancy.":::
 
 ***
 
@@ -150,7 +150,7 @@ plt.show();
 
 The output is:
 
-:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-model-polynomial.svg" alt-text="Scatter plot output":::
+:::image type="content" source="..\media\ppgdp-lifeexpf-purban-3d-model-polynomial.svg" alt-text="Scatter plot output that shows a polynomial model for G D P per capita, percent urbanized, and life expectancy.":::
 
 ***
 

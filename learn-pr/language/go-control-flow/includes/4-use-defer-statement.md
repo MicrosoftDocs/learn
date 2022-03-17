@@ -1,13 +1,12 @@
 Now let's look at some control flows that are unique to Go: `defer`, `panic`, and `recover`. Each of these functions has several use cases. We'll explore the most important use cases here.
 
-
 ## Defer function
 
-In Go, a `defer` statement postpones the running of a function (including any parameters) until the function that contains the `defer` statement finishes. Generally, you defer a function when you want to avoid forgetting about tasks like closing a file or running a cleanup process. 
+In Go, a `defer` statement postpones the running of a function (including any parameters) until the function that contains the `defer` statement finishes. Generally, you defer a function when you want to avoid forgetting about tasks like closing a file or running a cleanup process.
 
-You can defer as many functions as you want. The defer statements run in reverse order, from last to first.
+You can defer as many functions as you want. The `defer` statements run in reverse order, from last to first.
 
-Check out how this pattern works by running the follow example code:
+Check out how this pattern works by running the following example code:
 
 ```go
 package main

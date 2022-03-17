@@ -3,7 +3,7 @@ uid: learn.wwl.implement-testing-progressive-exposure-deployment
 metadata:
   title: Implement A/B testing and progressive exposure deployment
   description: "Implement A/B testing and progressive exposure deployment"
-  ms.date: 12/02/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Identify the best deployment strategy
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/7-implement-a-b-testing-and-progressive-exposure-deployment.svg
 levels:
 - advanced
 roles:

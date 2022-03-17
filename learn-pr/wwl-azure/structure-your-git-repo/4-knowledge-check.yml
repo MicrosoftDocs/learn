@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/29/2021
+  ms.date: 02/25/2022
   author: wwlpublish
-  ms.author: luiz.macedo
+  ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -15,7 +15,7 @@ durationInMinutes: 4
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices isn't a repository strategy?"
     choices:

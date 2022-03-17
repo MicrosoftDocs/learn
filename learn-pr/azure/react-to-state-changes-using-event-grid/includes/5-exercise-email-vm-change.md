@@ -16,7 +16,7 @@ First, let's create a condition that runs the logic app whenever a certain event
 
     :::image type="content" source="../media/5-choose-new-step-condition.png" alt-text="Icon for a new logic app step.":::
 
-1. In the *Search connectors and actions* search box, enter *condition* as your filter, and the press <kbd>Enter</kbd>. From the results, select **Control**.- The control workflow dialog box appears. 
+1. In the *Search connectors and actions* search box, enter *condition* as your filter, and the press <kbd>Enter</kbd>. From the results, select **Control**. The control workflow dialog box appears. 
 
 1. On the **Actions** tab, select **Condition** *Control*.
 
@@ -30,15 +30,15 @@ First, let's create a condition that runs the logic app whenever a certain event
 
     :::image type="content" source="../media/5-rename-condition.png" alt-text="Selections for renaming a condition.":::
 
-1. In the condition work area, select **Choose a value**, and then select the **Expression** tab.
+1. In the condition work area, select **Choose a value**, then select the **Expression** tab.
 
     :::image type="content" source="../media/5-condition-choose-expression.png" alt-text="Selections for choosing an expression as a value.":::
 
-1. In the function field, enter the value `triggerBody()?['data']['operationName']`, and select **OK**.
+1. In the function field, enter the value `triggerBody()?['data']['operationName']` and select **OK**.
 
     :::image type="content" source="../media/5-condition-add-data-operation-name.png" alt-text="Entered expression for a data operation.":::
 
-1. Leave the middle box as **is equal to**, then select the remaining **Choose a value** box, and enter the value `Microsoft.Compute/virtualMachines/write`, and then select **OK**.
+1. Leave the middle box as **is equal to**, then select the remaining **Choose a value** box and enter the value `Microsoft.Compute/virtualMachines/write`, then select **OK**.
 
     :::image type="content" source="../media/5-complete-condition.png" alt-text="Completed condition.":::
 
@@ -49,19 +49,19 @@ First, let's create a condition that runs the logic app whenever a certain event
 
 ## Send an email notification
 
-Now we can add an email action based on the logic app being triggered. The following steps use Office 365 Outlook. If you don't have an Office 365 account, you can also use Outlook.com or Gmail. The configuration steps for these email programs may differ, so you may need to adjust accordingly.
+Now we can add an email action based on the logic app being triggered. The following steps use Office 365 Outlook. If you don't have an Office 365 account, you can also use Outlook.com. The configuration steps for email programs may differ, so you may need to adjust accordingly.
 
 1. In your Logic app's **Logic app designer** pane, in the *When a resource event occurs* condition's **True** box, select **Add an action**. The **Choose an operation** pane appears.
 
     :::image type="content" source="../media/5-condition-true-add-action.png" alt-text="Add an action button.":::
 
-1. In the *Search connectors and actions* search box, enter *send an email* as your filter, and then select the **Office 365 Outlook** provider.
+1. In the *Search connectors and actions* search box, enter *send an email* as your filter, then select the **Office 365 Outlook** provider.
 
 1. From the results list, scroll down to and select **Send an email (V2)**.
 
     :::image type="content" source="../media/5-logic-app-send-email.png" alt-text="Selections for sending an email action.":::
 
-1. If you don't already have a connection for your email provider, you may be prompted to sign in to your email account. Select sign in and allow the authorization to complete.
+1. If you don't already have a connection for your email provider, you may be prompted to sign in to your email account. Select **Sign in** and allow the authorization to complete.
 
 1. On the action's title bar, select the ellipsis, and rename the *Send an email (V2)* to action to *Send email when virtual machine updates*.
 

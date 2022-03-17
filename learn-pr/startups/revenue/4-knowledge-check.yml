@@ -40,22 +40,22 @@ quiz:
       explanation: "Incorrect. Advertising models are best for businesses that sell advertising space to other companies. A different model is best for marketplace businesses that connect buyers with sellers."
     - content: "Channel."
       isCorrect: false
-      explanation: "Incorrect. Channel models are best for products or services that naturally sit alongside another company's offering as an up-sell or specialist product. A different model is best for marketplace businesses that connect buyers with sellers."
+      explanation: "Incorrect. Channel models are best for products or services that naturally sit alongside another company's offering as an upsell or specialist product. A different model is best for marketplace businesses that connect buyers with sellers."
 
-  - content: "It's generally helpful to focus on your ideal first customer (rather than just any customer) in the early days because:"
+  - content: "The only reason why it's helpful to focus on your ideal first customer instead of any customer in the early days is because:"
     choices:
     - content: "They'll recommend your product to others in their networks."
       isCorrect: false
-      explanation: "Incorrect. Getting customers to recommend your product to others is helpful. But it's not the only option."
+      explanation: "Incorrect. Getting customers to recommend your product to others is helpful, but it's not the only option."
     - content: "You'll get better reviews and more five-star ratings."
       isCorrect: false
-      explanation: "Incorrect. Getting good reviews and ratings is helpful. But it's not the only option."
+      explanation: "Incorrect. Getting good reviews and ratings is helpful, but it's not the only option."
     - content: "Your customer lifetime value will be higher because these users are sticky."
       isCorrect: false
-      explanation: "Incorrect. Increasing your customer lifetime value is helpful. But it's not the only option."
+      explanation: "Incorrect. Increasing your customer lifetime value is helpful, but it's not the only option."
     - content: "Your cost of acquiring customers will be driven down."
       isCorrect: false
-      explanation: "Incorrect. Driving down the cost of acquiring customers is helpful. But it's not the only option."
+      explanation: "Incorrect. Driving down the cost of acquiring customers is helpful, but it's not the only option."
     - content: "All of the above."
       isCorrect: true
       explanation: "Correct. There are many benefits to initially focusing on your ideal first customer. When your product is an extremely good fit for customers, they recommend it to others and give you good reviews and ratings. Your customer lifetime value is high because these customers are likely to keep using your product. Referrals that these customers provide drive down your cost of acquiring new customers."

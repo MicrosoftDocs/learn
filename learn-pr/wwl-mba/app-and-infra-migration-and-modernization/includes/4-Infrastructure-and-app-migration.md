@@ -11,10 +11,16 @@ Microsoft has designed the Azure IaaS solution to offer a large set of advantage
 - **Secure and well-managed:** Advanced management tools for all your solutions.
 - **Cost effective:** Less expensive than AWS.
 
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
 
-|  |  |
-| ------------ | -------------|
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to get an end-to-end understanding of each of these benefits and how they enable digital transformation in your company.|
+:::column:::
+Watch this video to get an end-to-end understanding of each of these benefits and how they enable digital transformation in your company.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWroKA]
 

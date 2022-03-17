@@ -40,7 +40,6 @@ Start by creating the database in <a href="https://portal.azure.com/learn.docs.m
     | **Global Distribution** |
     | Geo-Redundancy | Disable |
     | Multi-region Writes | Disable |
-    | Availability Zones | Disable |
 
 1. Select **Review + create**, and after receiving the *Validation Success* notification, select **Create**.
 
@@ -325,7 +324,7 @@ Now, you'll create a Node.js application that will allow you to run Gremlin API 
    Please enter a Gremlin/Graph Query.
    ```
 
-1. Your new Azure Cosmos DB account should not contain any data, but just to make sure, run the following command to remove all of the nodes:
+1. Your new Azure Cosmos DB account shouldn't contain any data, but just to make sure, run the following command to remove all of the nodes:
 
    ```bash
    dotnet run "g.V().drop()"
@@ -419,7 +418,7 @@ Now, you'll create a Node.js application that will allow you to run Gremlin API 
    Please enter a Gremlin/Graph Query.
    ```
 
-1. Your new Azure Cosmos DB account should not contain any data, but just to make sure, run the following command to remove all of the nodes:
+1. Your new Azure Cosmos DB account shouldn't contain any data, but just to make sure, run the following command to remove all of the nodes:
 
    ```bash
    node app.js "g.V().drop()"
@@ -510,4 +509,4 @@ You can now use the Data Explorer in the Azure portal to browse and query your n
 
     ![Screenshot showing the data model of the products added and their relationships to other vertices.](../media/5-cosmos-db-data-explorer.png)
 
-The data you entered using your app appears in the Graph pane. You can zoom in and out of the graph, you can expand the graph display, add additional vertices, and move vertices on the display surface.
+The data you entered using your app appears in the Graph pane. You can zoom in and out of the graph, you can expand the graph display, add more vertices, and move vertices on the display surface.

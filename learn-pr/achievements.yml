@@ -887,3 +887,13 @@ achievements:
   title: Create reusable functionality with functions in Python
   summary: Define functions to create encapsulated modular code
   iconUrl: /learn/achievements/python-functions.svg
+- uid: learn.wwl.explore-non-relational-data-offerings-azure
+  type: badge
+  title: Explore non-relational data offerings in Azure
+  summary: Learn about Azure Table Storage, Azure Blob Storage, Azure File Storage, and Azure Cosmos DB, and explore situations for using them.
+  iconUrl: /learn/achievements/explore-non-relational-data-offerings-azure.svg
+- uid: learn.wwl.explore-azure-synapse-analytics
+  type: badge
+  title: Explore large-scale data analytics
+  summary: Explore data ingestion options to build a data warehouse with Azure, services to perform data analytics, and features of Azure Synapse Analytics. Create a Synapse Analytics workspace and use it to ingest and analyze data.
+  iconUrl: /learn/achievements/synapse-analytics-explore.svg

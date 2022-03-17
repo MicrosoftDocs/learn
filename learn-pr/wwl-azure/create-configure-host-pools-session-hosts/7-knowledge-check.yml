@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/03/2021
+  ms.date: 02/18/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
@@ -34,9 +33,9 @@ quiz:
     - content: "Azure Virtual Desktop Agent"
       isCorrect: true
       explanation: "That's correct. Download and install the Azure Virtual Desktop Agent to register the virtual machines to the Azure Virtual Desktop host pool."
-    - content: "Create a VM from a managed image"
+    - content: "Create a virtual machine from a managed image"
       isCorrect: false
-      explanation: "That's incorrect. A managed VM image contains the information necessary to create a VM, including the OS and data disks."
+      explanation: "That's incorrect. A managed virtual machine image contains the information necessary to create a virtual machine, including the data disks."
     - content: "Shared Image Gallery image"
       isCorrect: false
       explanation: "That's incorrect. A shared image from the Shared Image Gallery (SIG) is custom to share across your organization. Custom images are like marketplace images, but you create them yourself. Custom images can be used to bootstrap deployment tasks like preloading applications, application configurations, and other OS configurations."

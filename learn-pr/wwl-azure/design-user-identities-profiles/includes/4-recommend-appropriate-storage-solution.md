@@ -213,7 +213,7 @@ We recommend Premium disks for Storage Spaces Direct.
     [Native Active Directory and Azure Active Directory Domain Services](/azure/storage/files/storage-files-active-directory-overview)
   :::column-end:::
   :::column:::
-    [Azure Active Directory Domain Services and Native Active Directory](https://docs.microsoft.com/azure/azure-netapp-files/faq-smb#does-azure-netapp-files-support-azure-active-directory)
+    [Azure Active Directory Domain Services and Native Active Directory](/azure/azure-netapp-files/faq-smb#does-azure-netapp-files-support-azure-active-directory)
   :::column-end:::
   :::column:::
     Native Active Directory or Azure Active Directory Domain Services support only.

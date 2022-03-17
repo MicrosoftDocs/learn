@@ -9,6 +9,8 @@ metadata:
   ms.date: 03/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: judubois-02152021
 durationInMinutes: 10
 content: |
   [!include[](includes/4-build-spring-boot-microservice.md)]

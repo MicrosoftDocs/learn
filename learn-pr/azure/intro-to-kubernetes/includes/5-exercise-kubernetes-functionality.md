@@ -157,7 +157,7 @@ To view the status of the installed add-ons on your cluster, run the status comm
 
 1. Next, you'll enable the DNS, Dashboard, and Registry add-ons. Here's the purpose of each add-on.
 
-    |||
+    | Add-ons | Purpose |
     | --- | --- |
     | **DNS** | Deploys the `coreDNS` service.|
     | **Dashboard** | Deploys the `kubernetes-dashboard` service and several other services that support its functionality. It's a general-purpose, web-based UI for Kubernetes clusters.|

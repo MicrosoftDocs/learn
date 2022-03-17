@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests
+metadata:
+  moduleType: standard
+  title: Review Azure infrastructure changes by using Bicep and pull requests
+  description: Learn how to protect your main Git repository branch from accidental Bicep code changes, and how to use pull requests to review your team's Bicep code.
+  ms.date: 02/11/2022
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Review Azure infrastructure changes by using Bicep and pull requests
+summary: Ensure the quality of your team's Bicep code. Use branching strategies to protect your main branch from accidental changes. Review Bicep code by using pull requests.
+abstract: |
+  After completing this module, you'll be able to:
+  - Protect important branches from accidental changes
+  - Create, review, and merge pull requests
+  - Review Bicep code in pull requests
+prerequisites: |
+  You should be familiar with using:
+
+  - Bicep for basic deployments to Azure, including conditions.
+  - Basic Git commands, including cloning, branching, committing files, and pushing changes to either Azure Repos or GitHub.
+
+  To work through the exercises in the module, you need either of:
+  
+  - An Azure DevOps organization and account.
+  - A GitHub account.
+
+  To work through the exercises, you also need the following installed locally:
+  
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+  - [Git](https://git-scm.com/download?azure-portal=true)
+iconUrl: /learn/achievements/bicep/review-azure-infrastructure-changes-using-bicep-pull-requests.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - developer
+  - administrator
+languages:
+  - bicep
+products:
+  - azure-resource-manager
+units:
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.introduction
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.understand-branching
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-protect-main-branch
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.review-merge-bicep-changes-using-pull-requests
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.exercise-create-review-merge-pull-request
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.knowledge-check
+- learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.summary
+badge:
+  uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.badge

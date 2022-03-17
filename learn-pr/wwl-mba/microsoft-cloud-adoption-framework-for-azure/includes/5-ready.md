@@ -6,9 +6,16 @@ We just looked at how a business plan aligned to a digital estate rationalizatio
   - Define support needs.
 - **Create your landing zone:** Set up a migration target in the cloud to handle prioritized applications.
 
-|||
-| :--- | :--- |
-| **![Icon indicating play video](../media/video-icon.png)**| Watch this video to learn more.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn more.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3WKrQ]
 
@@ -18,10 +25,14 @@ The **Azure readiness guide** introduces features that help you organize resourc
 
 Before you begin to build and deploy solutions with Azure services, make sure your environment is ready. The term *landing zone* is used to describe an environment that's provisioned and prepared to host workloads in a cloud environment, such as Azure. A fully functioning landing zone is the final deliverable of any iteration of the Cloud Adoption Framework for Azure methodology.
 
-| | |
-| --- | --- |
-| ![Icon of lightbulb](../media/lightbulb.png)| *Each landing zone is part of a broader solution for organizing resources across a cloud environment. These resources include management groups, resource groups, and subscriptions. Azure offers many services that help you organize resources, control costs, and secure and manage your organization's Azure subscription. Azure Cost Management + Billing also provides a few ways to help you predict, analyze, and manage costs.* |
-|
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+
+:::column:::
+*Each landing zone is part of a broader solution for organizing resources across a cloud environment. These resources include management groups, resource groups, and subscriptions. Azure offers many services that help you organize resources, control costs, and secure and manage your organization's Azure subscription. Azure Cost Management + Billing also provides a few ways to help you predict, analyze, and manage costs.*
+
+:::column-end:::
+:::row-end:::
 
 > [!NOTE]
 > For an interactive experience, view the environment-readiness content in the Azure portal. Go to the Azure Quickstart Center in the Azure portal, and select introduction to Azure setup. Then follow the step-by-step instructions.
@@ -31,8 +42,8 @@ Before you begin to build and deploy solutions with Azure services, make sure yo
 
 :::row:::
 ![Icon of key](../media/key-takeaway.png)
-:::column:::
 
+:::column:::
 Here are the key points from this unit:
 
 :::column-end:::

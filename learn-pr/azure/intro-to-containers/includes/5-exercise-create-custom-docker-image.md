@@ -51,7 +51,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     ```
     These commands copy the source code for the web app to the container, and then run the dotnet build command to build the app. The resulting DLLs are written to the /app folder in the container.
      
-1. Append the following command at the bottom of the Dockerfile. 
+1. Append the following command at the bottom of the Dockerfile.
 
     ```Dockerfile
     RUN dotnet publish "HotelReservationSystem.csproj" -c Release -o /app
@@ -59,7 +59,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     
     The `dotnet publish` command copies the executables for the website to a new folder and removes any interim files. The files in this folder can then be deployed to a website.
     
-1. Append  the following commands to the the bottom of the Dockerfile. 
+1. Append the following commands to the bottom of the Dockerfile.
     ```Dockerfile
     EXPOSE 80
     WORKDIR /app
@@ -85,12 +85,11 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     docker image list
     ```
 
-    The image will have the name `reservationsystem`. You'll also see an image named *microsoft/dotnet*. This image contains the .NET SDK and was downloaded when the `reservationsystem` image was built using the Dockerfile.
+    The image will have the name `reservationsystem`. You'll also see an image named *microsoft/dotnet*.
 
     ```console
     REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
     reservationsystem   latest              d2501f0f2ced        About a minute ago   1.76GB
-    microsoft/dotnet    2.1-sdk             c17aa78d71c2        8 days ago           1.73GB
     ```
 
 ## Test the web app
@@ -105,7 +104,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
 
     :::image type="content" source="../media/5-hotel-web-app.png" alt-text="Screenshot of the hotel reservations system web app running in a browser.":::
 
-    Replace the "1" at the end of the localhost URL with a different reservation number (for example, 2 or 20) to view the corresponding reservation details.
+    Replace the "1" at the end of the localhost URL with a different reservation number, like 2 or 20, to view the corresponding reservation details.
 
 1. Run the following command to view the status of the container.
 
@@ -113,7 +112,17 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     docker ps -a
     ```
 
-    The output lists the CONTAINER ID, IMAGE, COMMAND, CREATED time, STATUS, PORTS, and NAMES for all available containers. Verify that the `STATUS` of the container is *Up*.
+    The output lists the following for all available containers:
+
+    - CONTAINER ID
+    - IMAGE
+    - COMMAND
+    - CREATED time
+    - STATUS
+    - PORTS
+    - NAMES
+
+    Verify that the `STATUS` of the container is *Up*.
 
     ```console
     CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                  NAMES

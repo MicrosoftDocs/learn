@@ -1,8 +1,8 @@
-Two crucial areas from the Rugged DevOps pipeline are Package management and Open-Source Software OSS components.
+Two crucial areas from the Secure DevOps pipeline are Package management and Open-Source Software OSS components.
 
 ## Package management
 
-Just as teams use version control as a single source of truth for source code, Rugged DevOps relies on a package manager as the unique source of binary components.
+Just as teams use version control as a single source of truth for source code, Secure DevOps relies on a package manager as the unique source of binary components.
 
 Using binary package management, a development team can create a local cache of approved components and a trusted feed for the Continuous Integration (CI) pipeline.
 
@@ -120,7 +120,7 @@ However, OSS component reuse comes with the risk that reused dependencies can ha
 
 OSS offers a new-concept-called *Software Composition Analysis (SCA) to address these security concerns*, shown in the following image.
 
-:::image type="content" source="../media/rugged-devops-workflow-3816bb1e.png" alt-text="An image of the workflow for safely creating open-source dependencies. Software Composition Analysis, Developer Team, Version Control, Build Server, Trusted Feed, External Package Feed, and Package Scanner are the main categories.":::
+:::image type="content" source="../media/secure-devops-workflow-895bcdec.png" alt-text="An image of the workflow for safely creating open-source dependencies. Software Composition Analysis, Developer Team, Version Control, Build Server, Trusted Feed, External Package Feed, and Package Scanner are the main categories.":::
 
 
 When consuming an OSS component, whether you're creating or consuming dependencies, you'll typically want to follow these high-level steps:

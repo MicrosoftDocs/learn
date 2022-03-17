@@ -28,73 +28,22 @@ When it comes to taxonomy, ADB clusters are divided along the notions of "type",
 
 ### Different Azure VM instance types
 
-<table>
-  <tr>
-    <th>Compute Optimized</th>
-    <th>Memory Optimized</th>
-    <th>Storage Optimized</th>
-    <th>General Purpose</th>
-  </tr>
-  <tr>
-    <td style="vertical-align: top;">
-        <strong>FS</strong>
-        <ul>
-            <li>Haswell processor (Skylake not supported yet)</li>
-            <li>1 core ~ 2 GB RAM</li>
-            <li>SSD Storage: 1 core ~ 16 GB</li>
-        </ul>
-    </td>
-    <td style="vertical-align: top;">
-        <strong>DSv2</strong>
-        <ul>
-            <li>Haswell processor</li>
-            <li>1 core ~ 7 GB RAM</li>
-            <li>SSD Storage: 1 core ~ 14 GB</li>
-        </ul>
-    </td>
-    <td style="vertical-align: top;">
-        <strong>L</strong>
-        <ul>
-            <li>1 core ~ 8 GB RAM</li>
-            <li>SSD Storage: 1 core ~ 170 GB</li>
-            <li>Price: 0.156</li>
-        </ul>
-    </td>
-    <td style="vertical-align: top;">
-        <strong>DSv2 and DSv3</strong>
-        <ul>
-            <li>DSv2 - 1 core ~ 3.5 GB RAM</li>
-            <li>DSv3 - 1 core ~ 4 GB RAM</li>
-            <li>SSD Storage:<br />
-                <ul>
-                    <li>DSv2 - 1 core ~ 7 GB</li>
-                    <li>DSv3 - 1 core ~ 8 GB</li>
-                </ul>
-            </li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <td style="vertical-align: top;">
-        <strong>H</strong>
-        <ul>
-            <li>High-performance</li>
-            <li>1 core ~ 7 GB RAM</li>
-            <li>SSD Storage: 1 core ~ 125 GB
-        </ul>
-    </td>
-    <td style="vertical-align: top;">
-        <strong>ESv3</strong>
-        <ul>
-            <li>High-performance (Broadwell processor)</li>
-            <li>1 core ~ 8 GB RAM</li>
-            <li>SSD Storage: 1 core ~ 16 GB</li>
-        </ul>
-    </td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+|Compute Optimized|Memory Optimized|Storage Optimized|General Purpose|
+|---|---|---|---|
+| **FS** | **DSv2** | **L** | **DSv2**|
+| **H** | **ESv3** |  | **DSv3**  |
+
+### Azure VM instance type information
+
+| Type | Processor | Ram | SSD Storage |
+|---|---|---|---|
+| **FS** | Haswell (Skylake not currently supported) | 1 core ~2GB | 1 core ~16GB |
+| **H** | High-Performance | 1 core ~7GB | 1 core ~125GB |
+| **DSv2** (Memory Optimized) | Haswell | 1 core ~7GB | 1 core ~14GB |
+| **ESv3** | High-performance (Broadwell) | 1 core ~8GB | 1 core ~16GB
+| **L** | | 1 core ~8GB | 1 core ~170GB |
+| **DSv2** (General Purpose) | | 1 core ~3.5GB | 1 core ~7GB |
+| **DSv3** | | 1 core ~4GB | 1 core ~8GB |
 
 ## Cluster sizing starting points
 

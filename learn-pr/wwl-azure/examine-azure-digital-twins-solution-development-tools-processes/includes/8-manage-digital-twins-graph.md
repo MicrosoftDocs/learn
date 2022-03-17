@@ -133,9 +133,9 @@ For example, consider the following JSON Patch document that replaces the digita
 
 This operation will only succeed if the digital twin being modified by the patch conforms with the new model. Consider the following example:
 
-- Imagine a digital twin with a model of foo\_old. foo\_old defines a required property mass.
-- The new model foo\_new defines a property mass, and adds a new required property temperature.
-- After the patch, the digital twin must have both a mass and temperature property.
+ -  Imagine a digital twin with a model of foo\_old. foo\_old defines a required property mass.
+ -  The new model foo\_new defines a property mass, and adds a new required property temperature.
+ -  After the patch, the digital twin must have both a mass and temperature property.
 
 The patch for this situation needs to update both the model and the twin's temperature property, like this:
 

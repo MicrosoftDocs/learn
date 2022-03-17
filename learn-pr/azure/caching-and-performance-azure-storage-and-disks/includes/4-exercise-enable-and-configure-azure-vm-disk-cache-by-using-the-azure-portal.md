@@ -13,9 +13,9 @@ In this step, we're going to create a VM.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource** under **Azure services**. The **Create a resource** pane appears.
 
-1. Select **Windows Server 2019 VM** from the list of *Popular offers* Marketplace entities. If not, search for *Windows Server 2019 DataCenter* using the search box on the top. The **Create a virtual machine** pane appears.
+1. Select **Windows Server 2019 Datacenter** from the list of *Popular products* Marketplace entities. If not, search for *Windows Server 2019 Datacenter* using the search box on the top. The **Create a virtual machine** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -28,7 +28,7 @@ In this step, we're going to create a VM.
     | Virtual machine name | Enter *fotoshareVM* |
     | Region | See the following list. Select a location close to you |
     | Image | Select *Windows Server 2019 Datacenter* |
-    | Size | Accept the default *Standard_DS1-v2* which gives you a single CPU and 3.5 GB of memory. That's fine for this example. |
+    | Size | Accept the default *Standard_DS1-v2*, which gives you a single CPU and 3.5 GB of memory. That's fine for this example. |
     | **Administrator account** |
     | Username | Enter unique username for admin account on the new VM. |
     | Password/Confirm password | Enter unique password for admin account on the new VM. |
@@ -45,7 +45,7 @@ VM creation can take a few minutes as it creates all the various resources (stor
 
 After our VM is deployed, we can confirm the caching status of the OS disk with the following steps:
 
-1. Select **Go to resource**. The **fotoshareVM** pane for your virtual machine appears showing the VM details in the portal. Alternatively, you can select **All resources**, and then select your VM, **fotoshareVM**.
+1. Select **Go to resource**. The **fotoshareVM** pane for your virtual machine appears, showing the VM details in the portal. Alternatively, you can select **All resources**, and then select your VM, **fotoshareVM**.
 
 1. In the left menu pane, under **Settings**, select **Disks**. The **Disks** pane appears for the *fotoshareVM* virtual machine.
 
@@ -57,7 +57,7 @@ After our VM is deployed, we can confirm the caching status of the OS disk with 
 
 From the dropdown list, change the **Host caching** value for the OS disk to **Read-only**, and from the top menu bar, select **Save**.
 
-This update can take some time. The reason is that changing the cache setting of an Azure disk detaches and reattaches the target disk. If it's the operating system disk, the VM is also restarted. When the operation completes, you'll get a notification saying the VM disks have been updated. See the *Notifications* icon in the top taskbar of the portal for confirmation.
+This update can take some time, since changing the cache setting of an Azure disk detaches and reattaches the target disk. If it's the operating system disk, the VM also restarts. When the operation completes, you'll get a notification saying the VM disks have been updated. Check the *Notifications* icon in the top taskbar of the portal for confirmation.
 
 After completion, the OS disk cache type is set to **Read-only**.
 
@@ -65,7 +65,7 @@ Let's move on to data disk cache configuration. To configure a disk, we'll need 
 
 ## Add a data disk to the VM and set caching type
 
-1. Under **Data disks**, select **Cache and attach a new disk**.
+1. Under **Data disks**, select **Create and attach a new disk**.
 
 1. In the **Disk name** field, enter *fotoshareVM-data*.
 
@@ -81,7 +81,7 @@ Let's move on to data disk cache configuration. To configure a disk, we'll need 
 
 1. From the dropdown list, change the **Host caching** value for our new data disk to **Read-only**, and on the top menu bar, select **Save**.
 
-    Wait for the VM to finish updating the new data disk. After completion, you will have a new data disk on your VM.
+    Wait for the VM to finish updating the new data disk. After completion, you'll have a new data disk on your VM.
 
 In this exercise, we used the Azure portal to configure caching on a new VM, change cache settings on an existing disk, and configure caching on a new data disk. The following screenshot shows the final configuration.
 

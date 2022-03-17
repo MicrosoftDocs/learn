@@ -1,38 +1,40 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-relational-data-offerings
 metadata:
-  title: Explore relational data services in Azure
-  description: "Explore relational data services in Azure"
-  ms.date: 06/07/2021
+  title: Explore fundamental relational data concepts
+  description: "Explore fundamental relational data concepts"
+  ms.date: 03/09/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore relational data services in Azure
-summary: Explore Azure SQL Database, Azure Database for PostgreSQL, Azure Database for MySQL, and Azure Database for MariaDB. Explore scenarios for using these database management systems.
+title: Explore fundamental relational data concepts
+summary: Relational database systems are a common way to store and manage transactional and analytical data in organizations of any size around the world.
 abstract: |
-  In this module, you will:
-  * Identify relational Azure data services
-  * Explore considerations in choosing a relational data service
+  In this module you will learn how to:
+  - Identify characteristics of relational data
+  - Define normalization
+  - Identify types of SQL statement
+  - Identify common relational database objects
 prerequisites: |
   None
 iconUrl: /learn/achievements/explore-relational-data-offerings-azure.svg
 levels:
 - beginner
 roles:
-- administrator
-- business-user
+- data-analyst
 - data-engineer
+- database-administrator
+- developer
 - student
 products:
 - azure
 units:
 - learn.wwl.explore-relational-data-offerings.introduction
-- learn.wwl.explore-relational-data-offerings.azure-data-services
-- learn.wwl.explore-relational-data-offerings.sql-server-on-azure-virtual-machines
-- learn.wwl.explore-relational-data-offerings.azure-sql-database
-- learn.wwl.explore-relational-data-offerings.azure-sql-database-managed-instance
-- learn.wwl.explore-relational-data-offerings.postgresql-mariadb-mysql
+- learn.wwl.explore-relational-data-offerings.relational-data
+- learn.wwl.explore-relational-data-offerings.understand-normalization
+- learn.wwl.explore-relational-data-offerings.explore-sql
+- learn.wwl.explore-relational-data-offerings.describe-database-objects
 - learn.wwl.explore-relational-data-offerings.knowledge-check
 - learn.wwl.explore-relational-data-offerings.summary
 badge:

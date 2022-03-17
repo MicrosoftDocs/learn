@@ -1,6 +1,6 @@
 ## Getting involved
 
-If you’ve ran the **winget search <somepackage>** command and not found the package or piece of software that you want to install, then you can help to add it to the repository to help you and others in the future.
+If you’ve ran the **winget search \<somepackage\>** command and not found the package or piece of software that you want to install, then you can help to add it to the repository to help you and others in the future.
 First, you need to check the following things:
 -	GitHub account
 -	Windows Package Manager currently supports installers in the following formats: MSIX, MSI, and EXE, if the piece of software you want to install doesn’t have one of those kinds of installers it can’t be added to the repository.
@@ -60,7 +60,7 @@ The path to your manifest file will vary depending on your setup, however it sho
 
 Once you’ve had the output from the validate command and everything is okay, you can now move on to testing the manifest installs the package/piece of software that you’ve set it up to do. You might have to test this on a separate machine or utilize the [Windows Sandbox environment](/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview) if you already have it installed to test this properly.
 
-The command you need to use is **winget install –manifest <manifest path>**
+The command you need to use is **winget install –manifest \<manifest path\>**.
 
 This should complete without any issue and install the software as it should.  However, if there are any issues, then you will need to look at resolving them and going through the process again until it works as expected.
 

@@ -43,7 +43,7 @@ SecurityEvent
 
 ```
 
-## <dcount> function example
+## \<dcount\> function example
 
 The following example will return a count of unique IP Addresses.
 

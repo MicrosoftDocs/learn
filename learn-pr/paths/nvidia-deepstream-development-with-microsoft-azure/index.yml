@@ -15,7 +15,7 @@ prerequisites: |
   - Familiarity with Azure IoT Edge
   - X86 Based System running Ubuntu 18.04 OS
   - RTX2080, RTX3080, T4, or A100 NVIDIA Graphics Card
-  - [NVIDIA Jetson Embedded Device](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) provisioned with [JetPack 4.5.1 GA](https://developer.nvidia.com/jetpack-sdk-451-archive)
+  - [NVIDIA Jetson Embedded Device](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) provisioned with [JetPack 4.6](https://developer.nvidia.com/jetpack-sdk-46)
 summary: |
   With NVIDIA DeepStream, you can seamlessly develop optimized Intelligent Video Applications that can consume multiple video, image, and audio sources. You can also apply single or cascading inference operations to video frames in real-time, and transmit inference results to the cloud for archiving or additional processing.
 

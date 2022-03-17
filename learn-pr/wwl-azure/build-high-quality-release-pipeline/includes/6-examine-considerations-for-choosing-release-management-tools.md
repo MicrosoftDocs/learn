@@ -18,7 +18,7 @@ Primarily because the technical part of the release is executing a script or run
 As we've seen in the previous chapter, artifacts can come from different sources. When you treat your artifact as a versioned package, it needs to be stored somewhere before your release pipeline consumes it. Considerations for choosing your tool can be:
 
  -  Which Source Control systems are supported?
- -  Can you've one or more artifact sources in your release pipeline? In other words, can you combine artifacts from different sources into one release?
+ -  Can you have one or more artifact sources in your release pipeline? In other words, can you combine artifacts from different sources into one release?
  -  Does it integrate with your build server?
  -  Does it support other build servers?
  -  Does it support container registries?

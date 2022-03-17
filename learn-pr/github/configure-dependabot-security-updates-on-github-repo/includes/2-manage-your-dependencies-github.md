@@ -27,7 +27,7 @@ As a repository administrator, you can also choose to enable the dependency grap
 
 1. Navigate to your GitHub repository.
 2. Click your repository **Settings**.
-3. Click **Security & Analysis**.
+3. Click **Code security & analysis**.
 4. Click **Enable** in the dependency graph section.
 
 >[!NOTE]

@@ -15,7 +15,7 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: "What method allows access to all key names in a Python dictionary?"
+  - content: "What method allows access all key names in a Python dictionary?"
     choices:
     - content: "`keys`"
       isCorrect: true

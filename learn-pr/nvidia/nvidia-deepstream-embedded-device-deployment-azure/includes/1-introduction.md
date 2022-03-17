@@ -4,7 +4,7 @@ In this module, you'll publish and deploy an ARM64-based DeepStream container wo
 
 - x86-based system running Ubuntu 18.04.
 - RTX 2080, RTX 3080, T4, or A100 NVIDIA graphics card.
-- [NVIDIA Jetson embedded device](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/?azure-portal=true) provisioned with [JetPack 4.5.1 GA](https://developer.nvidia.com/jetpack-sdk-451-archive?azure-portal=true).
+- [NVIDIA Jetson embedded device](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/?azure-portal=true) provisioned with [JetPack 4.6](https://developer.nvidia.com/jetpack-sdk-46).
 - Be familiar with container workloads and Docker.
 - Be familiar with Azure IoT Edge and Azure IoT Hub.
 - Complete the prerequisite module [Introduction to NVIDIA DeepStream Graph Composer with Azure](/learn/modules/introduction-nvidia-deepstream-graph-composer-azure/?azure-portal=true).

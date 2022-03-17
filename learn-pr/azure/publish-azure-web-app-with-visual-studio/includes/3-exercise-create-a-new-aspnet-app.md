@@ -1,8 +1,8 @@
-In this unit, you'll create, build, and run a new ASP.NET Core web application on your local machine. You'll need Visual Studio 2019 installed with the **ASP.NET and web development** and **Azure development** workloads installed.
+In this unit, you'll create, build, and run a new ASP.NET Core web application on your local machine. You'll need Visual Studio 2022 installed with the **ASP.NET and web development** and **Azure development** workloads installed.
 
 ## Create an ASP.NET Core project
 
-1. Open Visual Studio 2019 on your local machine.
+1. Open Visual Studio 2022 on your local machine.
 
 1. From the Visual Studio landing page under **Get started**, select **Create a new project**.
 
@@ -19,7 +19,7 @@ In this unit, you'll create, build, and run a new ASP.NET Core web application o
 1. Select **Create** to create your project.
 
     > [!NOTE]
-    > You can also select different starting templates in this dialog box depending on your web development requirements. At the top of the dialog box, you can also select the version of ASP.NET Core. You should select ASP.NET Core 3.1 or later.
+    > You can also select different starting templates in this dialog box depending on your web development requirements. At the top of the dialog box, you can also select the version of ASP.NET Core. You should select ASP.NET Core 6.0 if possible, though other recent versions of ASP.NET Core will work with this exercise as well.
 
 1. You should now have a new ASP.NET Core web application solution.
 

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-blob-storage-lifecycle
 metadata:
   title: Manage the Azure Blob storage lifecycle
   description: "Learn how to manage data availability throughout the Azure Blob storage lifecycle."
-  ms.date: 02/15/2022
+  ms.date: 02/22/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial

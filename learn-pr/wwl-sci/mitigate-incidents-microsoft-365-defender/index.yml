@@ -3,7 +3,7 @@ uid: learn.wwl.mitigate-incidents-microsoft-365-defender
 metadata:
   title: Mitigate incidents using Microsoft 365 Defender
   description: "Mitigate incidents using Microsoft 365 Defender"
-  ms.date: 12/20/2021
+  ms.date: 02/23/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -31,6 +31,8 @@ units:
 - learn.wwl.mitigate-incidents-microsoft-365-defender.investigate-incidents
 - learn.wwl.mitigate-incidents-microsoft-365-defender.use-action-center
 - learn.wwl.mitigate-incidents-microsoft-365-defender.conduct-advanced-hunting
+- learn.wwl.mitigate-incidents-microsoft-365-defender.understand-microsoft-secure-score
+- learn.wwl.mitigate-incidents-microsoft-365-defender.consult-microsoft-threat-experts
 - learn.wwl.mitigate-incidents-microsoft-365-defender.knowledge-check
 - learn.wwl.mitigate-incidents-microsoft-365-defender.summary-resources
 badge:

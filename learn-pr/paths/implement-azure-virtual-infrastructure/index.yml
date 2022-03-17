@@ -3,7 +3,7 @@ uid: learn.wwl.implement-azure-virtual-infrastructure
 metadata:
   title: Implement an Azure Virtual Desktop infrastructure
   description: Implement an Azure Virtual Desktop infrastructure
-  ms.date: 12/08/2021
+  ms.date: 03/14/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ prerequisites: |
   *  Familiarity with Microsoft Azure and cloud concepts
 summary: |
   Learn how to create host pools and apply operating system and application updates to an Azure Virtual Desktop host. This learning path aligns with exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/implement-an-azure-virtual-desktop-infrastructure.svg
 levels:
 - intermediate
 roles:

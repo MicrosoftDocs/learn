@@ -156,10 +156,13 @@ Let's set up an ingress resource with a route to the ratings-web service.
       - host: frontend.<ingress ip>.nip.io # IMPORTANT: update <ingress ip> with the dashed public IP of your ingress, for example frontend.13-68-177-68.nip.io
         http:
           paths:
-          - backend:
-              serviceName: ratings-web
-              servicePort: 80
-            path: /
+          - path: /
+          pathType: Prefix
+          backend:
+          service:
+          name: ratings-web
+          port:
+          number: 80
     ```
 
     In this file, update the `<ingress ip>` value in the `host` key with the *dashed* public IP of your ingress that you retrieved earlier, for example, `frontend.13.68.177.68.nip.io`. This value allows you to access the ingress via a host name instead of an IP address. In the next unit, you'll configure SSL/TLS on that host name.

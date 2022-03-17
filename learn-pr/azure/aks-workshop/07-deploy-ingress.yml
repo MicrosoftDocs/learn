@@ -3,7 +3,7 @@ uid: learn.aks-workshop.07-deploy-ingress
 metadata:
   title: Exercise - Deploy an ingress for the front end
   description: Deploy an ingress for the front end
-  ms.date: 03/31/2020
+  ms.date: 03/01/2022
   author: sabbour
   ms.author: chrvaw
   ms.topic: interactive-tutorial

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are the elements of an Azure Table storage key?"
+    choices:
+    - content: "Table name and column name"
+      isCorrect: false
+      explanation: "That's incorrect.  Columns in an Azure Table storage table are anonymous and don't have names. The elements for an Azure Table storage Key are the partition key and row key."
+    - content: "Partition key and row key"
+      isCorrect: true
+      explanation: "That's correct. The partition key identifies the partition in which a row is located, and the rows in each partition are stored in row key order."
+    - content: "Row number"
+      isCorrect: false
+      explanation: "That's incorrect. Rows aren't numbered. The elements for an Azure Table storage Key are the partition key and row key."
+  - content: "What should you do to an existing Azure Storage account in order to support a data lake for Azure Synapse Analytics?"
+    choices:
+    - content: "Add an Azure Files share"
+      isCorrect: false
+      explanation: "That's incorrect. An Azure Files share isn't used as a data lake by Synapse Analytics."
+    - content: "Create Azure Storage tables for the data you want to analyze"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Tables aren't used as a data lake by Synapse Analytics."
+    - content: "Upgrade the account to enable hierarchical namespace and create a blob container"
+      isCorrect: true
+      explanation: "That's correct. Enabling a hierarchical namespace adds support for Azure Data Lake Storage Gen 2, which can be used by Synapse Analytics."
+  - content: "Why might you use Azure File storage?"
+    choices:
+    - content: "To share files that are stored on-premises with users located at other sites."
+      isCorrect: false
+      explanation: "That's incorrect. To share files with remote users, you create a file share using Azure File storage, and upload the file to the file share."
+    - content: "To enable users at different sites to share files."
+      isCorrect: true
+      explanation: "That's correct. You can create a file share in Azure File storage, upload files to this file share, and grant access to the file share to remote users."
+    - content: "To store large binary data files containing images or other unstructured data."
+      isCorrect: false
+      explanation: "That's incorrect. Large binary data files are best stored as blobs in Azure Blob storage."

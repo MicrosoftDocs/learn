@@ -1,4 +1,4 @@
-In this module, you’ve learned how to design for non-relational data storage. You’ve learned different strategies for storage accounts, blob storage, file storage, disk storage, storage security, and data protection. You should now be able to:
+In this module, you have learned how to design for non-relational data storage. You have learned different strategies for storage accounts, blob storage, file storage, disk storage, storage security, and data protection. You should now be able to:
 
 - Design for data storage.
 
@@ -28,8 +28,6 @@ In this module, you’ve learned how to design for non-relational data storage. 
 
 - [What is Azure NetApp Files | Microsoft Docs](/azure/azure-netapp-files/azure-netapp-files-introduction)
 
- 
-
 ### Learn more with self-paced training
 
 - [Choose the right disk storage for your virtual machine workload - Learn | Microsoft Docs](/learn/modules/choose-the-right-disk-storage-for-vm-workload/)
@@ -43,3 +41,9 @@ In this module, you’ve learned how to design for non-relational data storage. 
 - [Secure your Azure virtual machine disks - Learn | Microsoft Docs](/learn/modules/secure-your-azure-virtual-machine-disks/)
 
 - [Introduction to securing data at rest on Azure - Learn | Microsoft Docs](/learn/modules/secure-data-at-rest/)
+
+- [Choose a data storage approach in Azure - Learn](/learn/modules/choose-storage-approach-in-azure/)
+
+## Learn more with optional hands-on exercises
+
+- [Create a storage account using the Azure portal](/learn/modules/create-azure-storage-account)

@@ -119,13 +119,13 @@ In most cases, the simple administration and more flexible coding model provided
 
 | | Azure WebJobs | Azure Functions |
 | -- | --| -- |
-| Supported languages | C# if you are using the WebJobs SDK | C#, Java, JavaScript, PowerShell, and so on |
-| Automatic scaling | No | Yes |
-| Development and testing in a browser | No | Yes |
-| Pay-per-use pricing | No | Yes |
-| Integration with Logic Apps | No | Yes |
-| Package managers | NuGet if you are using the WebJobs SDK | NuGet and NPM |
-| Can be part of an App Service application | Yes | Yes (hosted under App Service plan) |
-| Provides close control of `JobHost` | Yes | No |
+| **Supported languages** | C# if you are using the WebJobs SDK | C#, Java, JavaScript, PowerShell, and so on |
+| **Automatic scaling** | No | Yes |
+| **Development and testing in a browser** | No | Yes |
+| **Pay-per-use pricing** | No | Yes |
+| **Integration with Logic Apps** | No | Yes |
+| **Package managers** | NuGet if you are using the WebJobs SDK | NuGet and NPM |
+| **Can be part of an App Service application** | Yes | Yes (hosted under App Service plan) |
+| **Provides close control of `JobHost`** | Yes | No |
 
 Now that you know what design-first and code-first technologies are available to you, how do you narrow your choices? We'll look at this question in the next unit.

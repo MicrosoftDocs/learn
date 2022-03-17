@@ -22,11 +22,11 @@ In the following scenarios, you might need multiple parallel jobs:
 
 ## View available parallel jobs
 
-Browse to `Organization settings > Pipelines > Retention and parallel jobs > Parallel jobs.`
+Browse to `Organization settings > Pipelines > Parallel jobs.`
 
 ## Location of parallel jobs in organization settings
 
-URL example: `https://{your_organization}/_admin/_buildQueue?_a=resourceLimits`
+URL example: `https://{your_organization}/_settings/buildqueue?_a=concurrentJobs`
 
 View the maximum number of parallel jobs that are available in your organization.
 

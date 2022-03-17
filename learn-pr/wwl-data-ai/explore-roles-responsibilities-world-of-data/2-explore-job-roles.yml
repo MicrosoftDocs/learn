@@ -4,14 +4,13 @@ title: Explore job roles in the world of data
 metadata:
   title: Explore job roles in the world of data
   description: "Explore job roles in the world of data"
-  ms.date: 09/13/2021
+  ms.date: 03/11/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
-durationInMinutes: 4
+durationInMinutes: 5
 content: |
   [!include[](includes/2-explore-job-roles.md)]

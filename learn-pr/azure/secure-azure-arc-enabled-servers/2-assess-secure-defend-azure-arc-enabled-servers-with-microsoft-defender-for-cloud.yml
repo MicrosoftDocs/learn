@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.secure-azure-arc-enabled-servers.assess-secure-defend-azure-arc-enabled-servers-with-microsoft-defender-for-cloud
-title: Assess, secure, and defend Azure Arc-enabled Servers with Microsoft Defender for Cloud
+title: Assess, secure, and defend Azure Arc-enabled servers with Microsoft Defender for Cloud
 metadata:
-  title: Assess, secure, and defend Azure Arc-enabled Servers with Microsoft Defender for Cloud
-  description: Assess, secure, and defend Azure Arc-enabled Servers with Microsoft Defender for Cloud
+  title: Assess, secure, and defend Azure Arc-enabled servers with Microsoft Defender for Cloud
+  description: Assess, secure, and defend Azure Arc-enabled servers with Microsoft Defender for Cloud
   ms.date: 02/02/2022
   author: aurnovcy
   ms.author: aurnovc

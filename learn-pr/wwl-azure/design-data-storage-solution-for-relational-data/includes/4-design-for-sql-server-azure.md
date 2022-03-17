@@ -22,7 +22,7 @@ In just three weeks, the company used Azure Site Recovery to migrate dozens of a
 
  
 
-Now that we have seen the different deployment options, let us compare them in a table to see the different requirements and the solutions recommended.
+Now that we have reviewed the different deployment options, let's compare the different requirements and the solutions recommended.
 
 | **Recommendation**| **Requirement** |
 | - | -| 

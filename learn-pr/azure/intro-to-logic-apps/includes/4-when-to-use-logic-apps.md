@@ -4,7 +4,7 @@ Here, we'll discuss how you can decide whether Logic Apps is the right choice fo
 
 Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors.
 
-| | |
+| Factor | Description |
 | --- | --- |
 | **Integration** | The key question to ask when you're considering Logic Apps is _"do I need to integrate services?"_ Logic Apps work well when you need to get multiple applications and systems to work together. That's what they were designed to do. If you're building an app with no external connections, Logic Apps is probably not the best option. |
 | **Performance** | The next consideration is performance. The Logic Apps execution engine scales your apps automatically. Logic Apps can process large data-sets in parallel to let you achieve high throughput. However, they don't guarantee super-fast activation or enforce real-time constraints on execution time. If you're looking for low subsecond response time, then Logic Apps may not be the best fit. |
@@ -18,13 +18,11 @@ Logic Apps works best when you're integrating multiple services with some added 
 
 Our fictional shoe company needed to monitor social media, move old videos to archive storage, and sell shoes online. Our goal was to decide whether these tasks were good candidates for Logic Apps. To make our decision, we should analyze each task using the four criteria we developed: integration, performance, conditionals, and connectors. The following table summarizes the results. The highlighted cells are discussed below.
 
-| | | | | | |
+| |  **Integration**  | **Performance** |**Conditionals**|**Connectors**  | **Use Logic Apps?**|
 | --- | --- | --- | --- | --- | --- |
-| | **Integration** | **Performance** | **Conditionals** | **Connectors** | **Use Logic Apps?** |
 | **Social-media monitor** | Integrates multiple services | Doesn't need near-realtime low latency | One simple conditional | Built-in connectors available for all needed systems | Yes |
-| **Video archive utility**      | ***Only needs to access one service, cloud storage*** | Doesn't need near-realtime low latency | Two simple conditionals | Built-in connectors available for all needed systems | Yes |
-| **Direct online sales**  | Integrates multiple services | Doesn't need near-realtime low latency | ***Multiple complex conditionals*** | ***Multiple custom connectors needed***  | ***Maybe*** |
-|   |   |   |   |   |
+| **Video archive utility** | _Only needs to access one service, cloud storage_ | Doesn't need near-realtime low latency | Two simple conditionals | Built-in connectors available for all needed systems | Yes |
+| **Direct online sales** | Integrates multiple services | Doesn't need near-realtime low latency | _Multiple complex conditionals_ | _Multiple custom connectors needed_  | _Maybe_|
 
 There are a few interesting things to think about in this analysis.
 

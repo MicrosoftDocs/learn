@@ -142,7 +142,7 @@ Before you can add the event handler, you need a reference to the button.
     });
     ```
 
-In the preceding code, you used the `toggle` method to switch the <body> element to the `dark-theme` class. This automatically applies the dark theme styles instead of light theme. However, the label for the button also needs to be updated to show the correct theme, so you need to add an `if` statement to determine the current theme, and update the button label.
+In the preceding code, you used the `toggle` method to switch the \<body\> element to the `dark-theme` class. This automatically applies the dark theme styles instead of light theme. However, the label for the button also needs to be updated to show the correct theme, so you need to add an `if` statement to determine the current theme, and update the button label.
 
 Here is what the complete JavaScript code should look like.
 

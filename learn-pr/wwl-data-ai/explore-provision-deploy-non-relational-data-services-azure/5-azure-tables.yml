@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-tables
+title: Explore Azure Tables
+metadata:
+  title: Explore Azure Tables
+  description: "Explore Azure Tables"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-azure-tables.md)]

@@ -11,19 +11,19 @@ The 2018 Microsoft Security Intelligence Report finds that:
      -  4% of SaaS storage apps.
      -  3% of SaaS collaboration apps.
 
-## Rugged DevOps (or DevSecOps)
+## Secure DevOps (or DevSecOps)
 
-*DevOps* is about working faster. *Security* is about-emphasizing thoroughness. Security concerns are typically addressed at the end of the cycle. It can potentially create unplanned work right at the end of the pipeline. *Rugged DevOps* integrates DevOps with security into a set of practices designed to meet the goals of both DevOps and safety more effectively.
+*DevOps* is about working faster. *Security* is about-emphasizing thoroughness. Security concerns are typically addressed at the end of the cycle. It can potentially create unplanned work right at the end of the pipeline. *Secure DevOps* integrates DevOps with security into a set of practices designed to meet the goals of both DevOps and safety more effectively.
 
-:::image type="content" source="../media/rugged-devops-771a0ca8.png" alt-text="Venn Diagram with one DevOps circle and one Security circle overlapping. The overlap is labeled rugged DevOps.":::
+:::image type="content" source="../media/secure-devops-c185814f.png" alt-text="Venn Diagram with one DevOps circle and one Security circle overlapping. The overlap is labeled Secure DevOps.":::
 
 
-A rugged DevOps pipeline allows development teams to work fast without breaking their project by introducing unwanted security vulnerabilities.
+A Secure DevOps pipeline allows development teams to work fast without breaking their project by introducing unwanted security vulnerabilities.
 
 > [!NOTE]
-> Rugged DevOps is also sometimes referred to as *DevSecOps*. You might encounter both terms, but each term refers to the same concept.
+> Secure DevOps is also sometimes referred to as *DevSecOps*. You might encounter both terms, but each term refers to the same concept.
 
-## Security in the context of rugged DevOps
+## Security in the context of Secure DevOps
 
 Historically, security typically operated on a slower cycle and involved traditional security methodologies, such as:
 
@@ -31,13 +31,13 @@ Historically, security typically operated on a slower cycle and involved traditi
  -  Environment hardening.
  -  Perimeter protection.
 
-Rugged DevOps includes these traditional security methodologies and more. With rugged DevOps, security is about securing the pipeline.
+Secure DevOps includes these traditional security methodologies and more. With Secure DevOps, security is about securing the pipeline.
 
-Rugged DevOps involves determining where to add protection to the elements that plug into your build and release pipelines.
+Secure DevOps involves determining where to add protection to the elements that plug into your build and release pipelines.
 
-Rugged DevOps can show you how and where you can add security to your automation practices, production environments, and other pipeline elements while benefiting from the speed of DevOps.
+Secure DevOps can show you how and where you can add security to your automation practices, production environments, and other pipeline elements while benefiting from the speed of DevOps.
 
-Rugged DevOps addresses broader questions, such as:
+Secure DevOps addresses broader questions, such as:
 
  -  Is my pipeline consuming third-party components, and if so, are they secure?
  -  Are there known vulnerabilities within any of the third-party software we use?

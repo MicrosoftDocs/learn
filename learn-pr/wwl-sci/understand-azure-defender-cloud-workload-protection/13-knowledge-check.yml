@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/19/2021
+  ms.date: 02/21/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -24,18 +24,21 @@ quiz:
       explanation: "Correct.  Command and Control detection over DNS is detected."
     - content: "Malware encrypting data on a Device"
       isCorrect: false
-      explanation: "Incorrect.  Command and Control detection over DNS is detected. () Malware enumerating user on a Device"
-  - content: "When does Microsoft Defender for Container Registries scan an image?"
+      explanation: "Incorrect.  Command and Control detection over DNS is detected."
+    - content: "Malware enumerating user on a Device"
+      isCorrect: false
+      explanation: "Incorrect.  Command and Control detection over DNS is detected."
+  - content: "Microsoft Defender for Containers does which of the following?"
     choices:
-    - content: "Weekly"
+    - content: "Environmental hardening, Vulnerability assessment, and endpoint management"
       isCorrect: false
-      explanation: "Incorrect.  Schedule scans are not an option."
-    - content: "Nightly"
+      explanation: "Incorrect.  Endpoint management is not part of it."
+    - content: "Environmental hardening, User risk management, and Run-time threat protection"
       isCorrect: false
-      explanation: "Incorrect.  Schedule scans are not an option."
-    - content: "Recently pulled"
+      explanation: "Incorrect.  User risk management is not part of it."
+    - content: "Environmental hardening, Vulnerability assessment, and Run-time threat protection"
       isCorrect: true
-      explanation: "Correct. Microsoft Defender for container registries also scans any image that has been pulled within the last 30 days."
+      explanation: "Correct. It performs all three of these services."
   - content: "Which feature of Microsoft Defender for Servers examines files and registries of the operating system, application software, and others for changes that might indicate an attack?"
     choices:
     - content: "Adaptive application controls"

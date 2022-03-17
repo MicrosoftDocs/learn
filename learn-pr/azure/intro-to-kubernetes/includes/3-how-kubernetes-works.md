@@ -154,7 +154,7 @@ Kubernetes pods have a distinct lifecycle that affects the way you deploy, run, 
 
 Here are the phases in a pod's lifecycle:
 
-|||
+| Phase | Description |
 |---|---|
 | Pending | After the pod run is scheduled, the container runtime downloads container images, and starts all containers for the pod. |
 | Running | The pod transitions to a running state after all of the resources within the pod are ready. |
@@ -170,7 +170,7 @@ The cluster doesn't save the pod's state or dynamically assigned configuration. 
 
 Keep in mind that the phases are a summary of where the pod is in its lifecycle. When you inspect a pod, the cluster uses three states to track your containers inside the pod:
 
-|||
+| State | Description |
 |---|---|
 | Waiting | Default state of a container and the state that the container is in when it's not running or terminated.|
 | Running | The container is running as expected without any problems. |

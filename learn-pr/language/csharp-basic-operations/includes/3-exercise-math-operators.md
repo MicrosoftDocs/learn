@@ -99,7 +99,7 @@ The remainder operator `%` tells you the remainder of `int` division.  What you 
 
 ```csharp-interactive
 Console.WriteLine("Modulus of 200 / 5 : " + (200 % 5));
-Console.WriteLine("Modulus of 7 / 5: " + (7 % 5));
+Console.WriteLine("Modulus of 7 / 5 : " + (7 % 5));
 ```
 Run the code.  You should see the following output:
 

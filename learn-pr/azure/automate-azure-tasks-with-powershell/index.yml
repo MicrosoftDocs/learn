@@ -28,6 +28,7 @@ roles:
 - administrator
 products:
 - azure
+- azure-powershell
 units:
 - learn.automate-azure-tasks-with-powershell.1-introduction
 - learn.automate-azure-tasks-with-powershell.2-decide-if-azure-powershell-is-right-for-your-tasks

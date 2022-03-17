@@ -67,8 +67,10 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
 
 1. Go to the URL in a web browser.
 
-   As before, your browser might display a warning message that says the SSL connection is using an unauthenticated certificate. This is because the certificate is self-signed. You can ignore this warning and continue to the website.
+   As before, your browser might display a warning message that says the SSL connection is using an unauthenticated certificate. This warning displays because the certificate is self-signed. You can ignore this warning and continue to the website.
 
 1. Verify that the home page for the shipping portal appears.
 
-You have now configured the listener to listen on port 443 and decrypt the data that's ready to be passed to the backend pool. The data is re-encrypted when it's transmitted from the gateway to a server in the backend pool. With this listener in place, you have set up end-to-end encryption for the shipping portal.
+You've configured the listener to listen on port 443 and decrypt the data that's ready to be passed to the backend pool. The data is re-encrypted when it's transmitted from the gateway to a server in the backend pool. With this listener in place, you've set up end-to-end encryption for the shipping portal.
+
+You can delete these resources if needed.

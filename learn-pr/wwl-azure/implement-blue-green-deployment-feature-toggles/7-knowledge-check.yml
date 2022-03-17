@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 03/16/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ durationInMinutes: 4
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices is the easiest way to create a staging environment for an Azure WebApp?"
     choices:
@@ -39,14 +39,14 @@ quiz:
     - content: "Feature Flags help teams control deployment release gates."
       isCorrect: false
       explanation: "Incorrect. Feature Flags can be used to control exposure to new product functionality."
-  - content: "Which of the following choices is a deployment pattern that allows you to plan to slowly increase the traffic to a newer version of your site?"
+  - content: "Which of the following choices isn't a deployment pattern that allows you to plan to slowly increase the traffic to a newer version of your site?"
     choices:
-    - content: "Blue-Green."
-      isCorrect: true
-      explanation: "Correct. It's Blue-Green deployment."
-    - content: "Canary Release."
-      isCorrect: false
-      explanation: "Incorrect. It's Blue-Green deployment."
     - content: "A/B Testing."
       isCorrect: false
-      explanation: "Incorrect. It's Blue-Green deployment."
+      explanation: "Incorrect. A/B Testing and Canary Release allows you to plan to slowly increase the traffic to a newer version of your site."
+    - content: "Blue-Green."
+      isCorrect: true
+      explanation: "Correct. A/B Testing and Canary Release allows you to plan to slowly increase the traffic to a newer version of your site."
+    - content: "Canary Release."
+      isCorrect: false
+      explanation: "Incorrect. A/B Testing and Canary Release allows you to plan to slowly increase the traffic to a newer version of your site."

@@ -408,7 +408,7 @@ class Program
 
 Use Azure Resource Health to monitor whether your IoT hub is up and running. You can also learn whether a regional outage is impacting the health of your IoT hub. To understand specific details about the health state of your Azure IoT Hub, we recommend that you use Azure Monitor as described in the previous section.
 
-Azure IoT Hub indicates health at a regional level. If a regional outage impacts your IoT hub, the health status shows as Unknown. To learn more, see Resource types and health checks in Azure resource health: [https://docs.microsoft.com/azure/service-health/resource-health-checks-resource-types](/azure/service-health/resource-health-checks-resource-types).
+Azure IoT Hub indicates health at a regional level. If a regional outage impacts your IoT hub, the health status shows as Unknown. To learn more, see Resource types and health checks in Azure resource health [https://docs.microsoft.com/azure/service-health/resource-health-checks-resource-types](/azure/service-health/resource-health-checks-resource-types).
 
 To check the health of your IoT hubs, follow these steps:
 
@@ -416,4 +416,4 @@ To check the health of your IoT hubs, follow these steps:
  -  Navigate to Service Health &gt; Resource health.
  -  From the drop-down boxes, select your subscription then select IoT Hub as the resource type.
 
-To learn more about how to interpret health data, see Azure resource health overview: [https://docs.microsoft.com/azure/service-health/resource-health-overview](/azure/service-health/resource-health-overview).
+To learn more about how to interpret health data, see Azure resource health overview [https://docs.microsoft.com/azure/service-health/resource-health-overview](/azure/service-health/resource-health-overview).

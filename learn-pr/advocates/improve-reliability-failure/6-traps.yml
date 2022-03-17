@@ -9,6 +9,8 @@ metadata:
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: dnb-06092020
 durationInMinutes: 7
 content: |
   [!include[](includes/6-traps.md)]
@@ -39,4 +41,3 @@ quiz:
     - content: 'label that causes you to quit investigating at precisely the moment when you’re about to discover something interesting about your system'
       isCorrect: true
       explanation: 'Correct.'
-

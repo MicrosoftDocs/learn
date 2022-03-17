@@ -4,7 +4,7 @@ Here, you'll learn how Azure Event Grid helps to achieve the required event hand
 
 ## What is Event Grid?
 
-Event Grid aggregates all your events and provides routing from any source to any destination. Event Grid is a service that manages the routing and delivery of events from many sources and subscribers. This process eliminates the need for polling, and results in minimized cost and latency.
+Event Grid aggregates all your events and provides routing from any source to any destination. Event Grid is a service that manages event routing and delivery from many sources and subscribers. This process eliminates the need for polling and results in minimized cost and latency.
 
 Event publishers and subscribers are decoupled by using the publisher/subscriber pattern.
 
@@ -15,7 +15,7 @@ Event publishers and subscribers are decoupled by using the publisher/subscriber
 Event Grid doesn't require provisioning or managing. It's native to Azure, with the ability to be extended and customized. Some of the main advantages are:
 
 - **It's simple.** Point and click in the Azure portal to add and collect your events from Azure resources.
-- **It can filter events.** Filter events so that handlers receive only relevant events.
+- **It can filter events.** Thus, handlers receive only relevant events.
 - **It supports multiple subscribers.** Attach multiple handlers to a single event from a single source.
 - **It's reliable.** Take advantage of 24-hour retries to ensure events are delivered.
 - **Its throughput is high.** Handle a high volume of events, in the range of millions per second.
@@ -40,9 +40,9 @@ Some examples of event handlers within Azure are:
 
 ## Topics and event subscriptions
 
-Topics provide the core mechanism for managing the various events being raised throughout your system's lifecycle. Think of them as subject areas that define the topic of a conversation. You can create as many topics as you need in Event Grid to provide the granularity required to manage events in your system.
+Topics provide the core mechanism for managing the various events being raised throughout your system's lifecycle. Think of them as subject areas that define the topic of a conversation. You can create as many topics as you need in Event Grid to provide the granularity you need to manage events in your system.
 
-When the topics have been defined, you can subscribe to them. Subscriptions convey which events on a topic you're interested in receiving. These events can then be filtered by type or subject.
+When the topics have been defined, you can subscribe to them. Subscriptions convey which events on a topic you're interested in receiving. You can then filter these events by type or subject.
 
 ## Subscribe to events
 

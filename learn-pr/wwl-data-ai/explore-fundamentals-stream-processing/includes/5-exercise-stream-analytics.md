@@ -7,8 +7,8 @@ This exercise can be completed using a free Microsoft Learn *sandbox* subscripti
 > If you prefer, you can use your own Azure subscription. To do this, before you start:
 >
 > 1. Sign into your Azure subscription in the [Azure portal](https://portal.azure.com?azure-portal=true).
-> 2. In your default subscription, create a new *resource group* named **learn-stream-analytics** (you must match this name exactly)
-> 3. Use the **[\>_]** button to create a new Cloud Shell in the Azure portal, creating storage if prompted, and selecting a *Bash* environment.
+> 2. Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
+> 3. Use the **[\>_]** button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, creating storage if prompted and selecting a *Bash* environment.
 > 4. Complete the exercise steps below in the Cloud Shell pane in the Azure portal.
 >
 > For more information about using the Azure Cloud Shell, see the [Azure Cloud Shell documentation](/azure/cloud-shell/overview?azure-portal=true)
@@ -44,6 +44,9 @@ This exercise can be completed using a free Microsoft Learn *sandbox* subscripti
 ## Explore the Azure resources
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true), signing in if prompted.
+
+    Ensure you're working in the directory containing your subscription - indicated at the top right of the portal under your user ID (if you are using a *sandbox* subscription, this should be **Microsoft Learn Sandbox**). If not, select the user icon and switch directory.
+
 2. On the home page, select **Resource groups** to see the resource groups in your subscription. This should include the **learn-*xxxxxxxxxxxxxxxxx...*** resource group identified by the setup script.
 3. Select the **learn-*xxxxxxxxxxxxxxxxx...*** resource group, and review the resources it contains, which should include:
     - An *IoT Hub* named **iothub*xxxxxxxxxxxxx***, which is used to receive incoming device data.
@@ -52,7 +55,7 @@ This exercise can be completed using a free Microsoft Learn *sandbox* subscripti
 
     If all three of these resources are not listed, click the **&#8635; Refresh** button until they appear.
 
-    > [!Note] 
+    > [!Note]
     > If you are using the learn sandbox, the resource group may also contain a second *Storage account* named **cloudshell*xxxxxxxx***, which is used to store data for the Azure Cloud Shell you used to run the setup script.
 
 4. Select the **stream*xxxxxxxxxxxxx*** Stream Analytics job and view the information on its **Overview** page, noting the following details:
@@ -96,4 +99,4 @@ This exercise can be completed using a free Microsoft Learn *sandbox* subscripti
 15. At the top of the Stream Analytics job page, use the **&#11036; Stop** button to stop the job, confirming when prompted.
 
 > [!TIP]
-> If you are using your own Azure subscription, and you have finished exploring the streaming solution, you can delete the **learn-stream-analytics** resource group.
+> If you are using your own Azure subscription, and you have finished exploring the streaming solution, you can delete the **learn-*xxxxxxxxxxxxxxxxx...*** resource group.

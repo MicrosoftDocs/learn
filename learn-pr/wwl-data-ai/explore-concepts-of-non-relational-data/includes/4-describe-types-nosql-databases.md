@@ -24,7 +24,7 @@ Write operations are restricted to inserts and deletes. If you need to update an
 
 The focus of a key-value store is the ability to read and write data very quickly. Search capabilities are secondary. A key-value store is an excellent choice for data ingestion, when a large volume of data arrives as a continual stream and must be stored immediately.
 
-Azure Table storage is an example of a key-value store. Cosmos DB also implements a key-value store using the [**Table API**](https://docs.microsoft.com/azure/cosmos-db/table-introduction).
+Azure Table storage is an example of a key-value store. Cosmos DB also implements a key-value store using the [**Table API**](/azure/cosmos-db/table-introduction).
 
 ## What is a document database?
 
@@ -39,7 +39,7 @@ A document store does not require that all documents have the same structure. Th
 
 An application can retrieve documents by using the document key. The key is a unique identifier for the document. Some document databases create the document key automatically. Others enable you to specify an attribute of the document to use as the key. The application can also query documents based on the value of one or more fields. Some document databases support indexing to facilitate fast lookup of documents based on one or more indexed fields.
 
-Some document database management systems support in-place updates, enabling an application to modify the values of specific fields in a document without rewriting the entire document. Other document database management systems (such as Cosmos DB) can only read and write entire documents. In these cases, an update replaces the entire document with a new version. This approach helps to reduce fragmentation in the database, which can, in turn, improve performance.
+Some document database management systems support in-place updates, enabling an application to modify the values of specific fields in a document without rewriting the entire document. Other document database management systems can only read and write entire documents. In these cases, an update replaces the entire document with a new version. This approach helps to reduce fragmentation in the database, which can, in turn, improve performance.
 
 Most document databases will ingest large volumes of data more rapidly than a relational database, but aren't as optimal as a key-value store for this type of processing. The focus of a document database is its query capabilities.
 
@@ -83,4 +83,4 @@ The purpose of a graph database is to enable an application to efficiently perfo
 
 A structure such as this makes it straightforward to conduct inquiries such as "Find all employees who directly or indirectly work for Sarah" or "Who works in the same department as John?" For large graphs with lots of entities and relationships, you can perform very complex analyses very quickly, and many graph databases provide a query language that you can use to traverse a network of relationships efficiently. You can often store the same information in a relational database, but the SQL required to query this information might require many expensive recursive join operations and nested subqueries.
 
-Azure Cosmos DB supports graph databases using the [**Gremlin API**](https://docs.microsoft.com/azure/cosmos-db/graph-introduction). The Gremlin API is a standard language for creating and querying graphs.
+Azure Cosmos DB supports graph databases using the [**Gremlin API**](/azure/cosmos-db/graph-introduction). The Gremlin API is a standard language for creating and querying graphs.

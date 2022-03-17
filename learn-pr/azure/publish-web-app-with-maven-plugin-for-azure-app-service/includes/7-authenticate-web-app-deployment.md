@@ -29,7 +29,7 @@ To create an Azure service principal with the Azure CLI, use the following steps
 1. Run the following command from the Azure CLI to create an Azure service principal:
 
     ```azurecli
-    az ad sp create-for-rbac --name https://mywebapp-1234567890.azurewebsites.net/ --role Contributor
+    az ad sp create-for-rbac --name https://mywebapp-1234567890.azurewebsites.net/ --role Contributor --scopes /subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss
     ```
 
     Where `https://mywebapp-1234567890.azurewebsites.net/` is the URL of your web app.
@@ -182,7 +182,7 @@ The steps to create an Azure service principal with the Azure CLI are the same a
 1. Run the following command from the Azure CLI to create an Azure service principal:
 
     ```azurecli
-    az ad sp create-for-rbac --name https://mywebapp-1234567890.azurewebsites.net/ --role Contributor
+    az ad sp create-for-rbac --name https://mywebapp-1234567890.azurewebsites.net/ --role Contributor --scopes /subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss
     ```
 
     Where `https://mywebapp-1234567890.azurewebsites.net/` is the URL of your web app.
