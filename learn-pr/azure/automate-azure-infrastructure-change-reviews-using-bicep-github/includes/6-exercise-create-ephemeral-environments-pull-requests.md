@@ -47,6 +47,10 @@ As a first step, you will need to update your _pr-validation_ workflow to also c
          echo "::set-output name=rgname::$rgname"  
    ```
 
+  <!-- TODO
+    pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
+  -->
+
    The github.ref will be something like refs/pull/x/merge. This string is next split into an array based on the forward slashes. You need the x number value which is now at position 2 in that 0-based array. As a last step this number is used to create a name for a resource group and is outputted in a variable, so the next step can use this name.
 
 1. As a next step in the file add the step to create the resource group: 
@@ -144,8 +148,8 @@ You just created a new feature branch and pushed a change to it, let's inspect t
 
 1. You should see your new workflow started running.
 
-> [!NOTE]
-> It might be that you need to give it some time for the workflow to start running. Refresh your browser window until you see the workflow started running.
+   > [!NOTE]
+   > It might be that you need to give it some time for the workflow to start running. Refresh your browser window until you see the workflow started running.
 
 1. Select the running workflow to go to its detail.
 
@@ -204,8 +208,9 @@ You just created a new feature branch and pushed a change to it, let's inspect t
              inlineScript: az group delete -n ${{steps.rgName.outputs.rgname}} --yes
    ```
 
-  This workflow looks very similar to the creation workflow you created.
-  Notice that for branch deletion we use the _${{ github.head_ref}}_ context variable. On pull request closure this variable has the value of _feature/name_. We use this to delete the resource group in the last step. The _--yes_ flag in the last step will auto-approve the deletion. 
+   This workflow looks very similar to the creation workflow you created.
+   
+   Notice that for branch deletion we use the _${{ github.head_ref}}_ context variable. On pull request closure this variable has the value of _feature/name_. We use this to delete the resource group in the last step. The _--yes_ flag in the last step will auto-approve the deletion. 
 
 1. In the Visual Studio Code terminal, commit and push your changes.
 

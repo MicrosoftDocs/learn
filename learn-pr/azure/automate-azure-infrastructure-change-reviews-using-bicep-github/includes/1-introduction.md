@@ -28,7 +28,7 @@ You should be familiar with using:
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
   - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
   - Pull requests in GitHub, including creating, reviewing, and merging pull requests.
-  - Basic GitHub Actions workflows, including secrets for connecting to your Azure environment.
+  - Basic GitHub Actions workflows, including triggers and secrets for connecting to your Azure environment.
 
 To work through the exercises in the module, you'll need:
 
