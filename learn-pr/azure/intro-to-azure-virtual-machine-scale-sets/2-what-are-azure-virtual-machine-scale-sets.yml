@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-virtual-machine-scale-sets.what-are-azure-virtual-machine-scale-sets
+title: What are Azure virtual machine scale sets?
+metadata:
+  title: What are Azure virtual machine scale sets?
+  description: Learn about Azure virtual machine scale sets.
+  ms.date: 03/24/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-are-azure-virtual-machine-scale-sets.md)]
