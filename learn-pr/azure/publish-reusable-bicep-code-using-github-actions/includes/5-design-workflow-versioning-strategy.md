@@ -1,4 +1,4 @@
-When you start to publish reusable Bicep code, you probably use a manual approach. It's easy for you to determine which Bicep file you need to publish, and you probably have a manual process for incrementing the version number. When you automate the publishing process, though, you need to consider how to automate these steps. In this unit, you'll learn how to adopt a versioning system that communicates the changes you've made to your code, and you'll also learn how you can scope your workflows to publish the code you expect. <!-- TODO mention environments too -->
+When you start to publish reusable Bicep code, you probably use a manual approach. It's easy for you to determine which Bicep file you need to publish, and you probably have a manual process for incrementing the version number. When you automate the publishing process, though, you need to consider how to automate these steps. In this unit, you'll learn how to adopt a versioning system that communicates the changes you've made to your code, and you'll also learn how you can scope your workflows to publish the code you expect.
 
 ## Version numbers
 
@@ -65,8 +65,3 @@ When you make a change to a single file - for example, *module-2/main.bicep* - t
 
 > [!NOTE]
 > The approach of creating a workflow for each of your reusable Bicep files is simple and flexible. But, it can become cumbersome when you have a large number of Bicep files, or if you don't want to maintain separate workflows for each module and template spec. You can also write scripts within your workflow to find the code that's changed and publish just those modules. But, this is a more complex approach and it's out of the scope of this Microsoft Learn module.
-
-## Environments
-
-<!-- TODO -->
-Handling multiple environments (e.g. aliases)
