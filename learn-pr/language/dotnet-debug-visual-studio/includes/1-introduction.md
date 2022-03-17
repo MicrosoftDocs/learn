@@ -1,10 +1,10 @@
-Visual Studio provides powerful tools to help you debug and diagnose issues in your applications.
+Visual Studio provides very powerful tools to help you debug and diagnose issues in your applications. These tools are especially valuable for analyzing state and tracking down bugs while your application is running.
 
 :::image source="../media/visual-studio-tools.png" alt-text="Screenshot of Visual Studio debugging tools.":::
 
 ## Fix Bugs Before the Application Launches
 
-Suppose you work for a team that is building a new application, but you keep finding bugs in the code.  The team would like to find and fix all of these issues before the app goes live. However, the issues are too subtle or complex to diagnose just by reading the code. You're looking for additional tools and assistance to track down the problems while the app is running.
+Suppose you work for a team that is building a new application, but you keep finding bugs in the code.  The team would like to find and fix all of these issues before the app goes live. However, the issues are too subtle or complex to diagnose just by reading the code. You're looking for additional tools and assistance to track down problems while the app is running with different inputs and parameters.
 
 ## What will we be doing?
 
