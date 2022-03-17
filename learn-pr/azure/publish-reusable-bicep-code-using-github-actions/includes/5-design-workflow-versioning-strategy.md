@@ -43,7 +43,7 @@ You can also choose to use a simpler versioning strategy, such as just using the
 
 It's common to build up a collection of template specs and modules. Often, it makes sense to keep these in the same Git repository.
 
-By using *path filters* in GitHub Actions, you can create separate workflows for each module or template spec within your repository. This approach helps to avoid publishing a new version of every Bicep file within the repository every time you change one file. You can use *reusable workflows* to define your workflow's steps in one centralized file.
+By using *path filters* in GitHub Actions, you can create separate workflows for each module or template spec within your repository. This approach helps to avoid publishing a new version of every Bicep file within the repository every time you change one file. You can use *reusable workflows* to define your workflow's steps in a centralized file, which keeps each module's and template spec's workflow lightweight.
 
 For example, suppose you have a file structure similar to the one illustrated above. You could configure three separate workflows, one for each Bicep file. Select each tab to see the corresponding workflow definition, and its path filter:
 
@@ -61,14 +61,12 @@ For example, suppose you have a file structure similar to the one illustrated ab
 
 ---
 
-The approach of creating a workflow for each of your reusable Bicep files is simple, and you can use 
+When you make a change to one file - for example, *module-2/main.bicep* - only the workflow for module 2 runs.
 
-<!-- TODO -->
-
-Should you create a single workflow for each module/TS, or use a shared workflow that deploys everything?
-
-In this Microsoft Learn module, we'll use a single workflow for each template spec and module file. This approach works well when you work with a small number of files. If you build up a large set of template specs or modules, you might want to consider using GitHub Actions features path filters and reusable workflows to simplify your workflow definitions.
+> [!NOTE]
+> The approach of creating a workflow for each of your reusable Bicep files is simple and flexible. But, it can become cumbersome when you have a large number of Bicep files, or if you don't want to maintain separate workflows for each module and template spec. You can also write scripts within your workflow to find the code that's changed and publish just those modules. But, this is a more complex approach and it's out of the scope of this Microsoft Learn module.
 
 ## Environments
 
+<!-- TODO -->
 Handling multiple environments (e.g. aliases)
