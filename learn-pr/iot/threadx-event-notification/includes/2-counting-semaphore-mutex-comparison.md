@@ -15,7 +15,7 @@ The table below contains a comparison of several performance measures for mutexe
 
 *Resume only* for the *put* service is the time required to process the request when a previously suspended thread (of the same or lower priority) is resumed as a result of the request.
 
-*Resume and Context Switch* for the *put* service is the time required to process the request when a previously suspended higher-priority thread is resumed as a result of the request. Since the resumed thread is higher-priority, a context switch to the resumed thread is also performed from within the request.
+*Resume and context switch* for the *put* service is the time required to process the request when a previously suspended higher-priority thread is resumed as a result of the request. Since the resumed thread is higher-priority, a context switch to the resumed thread is also performed from within the request.
 
 For each performance item, the mutex requires more memory and requires more processor time. However, a mutex provides robust support for ensuring the mutual exclusion property.
 
