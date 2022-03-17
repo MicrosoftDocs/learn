@@ -23,7 +23,6 @@ roles:
 - student
 products:
 - dotnet
-- visual-studio
 prerequisites: |
   - Local installations of [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio](https://visualstudio.com)

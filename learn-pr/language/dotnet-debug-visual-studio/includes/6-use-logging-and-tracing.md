@@ -4,20 +4,20 @@ Now that the application has started development, it's good to add more diagnost
 
 Before we debug the application, let's add more debug diagnostics. Additional diagnostics will help diagnose the application while it's being run under debug.
 
-At the top of the `Program.cs` file, we'll add a new `using` statement to bring in `System.Diagnostics` so we can use the `Debug` methods.
+1. At the top of the `Program.cs` file, we'll add a new `using` statement to bring in `System.Diagnostics` so we can use the `Debug` methods.
 
 ```csharp
 using System.Diagnostics;
 ```
 
-Add a `WriteLine` statement at the start of the `Fibonacci` method to get clarity when you debug through the code.
+2. Add a `WriteLine` statement at the start of the `Fibonacci` method to get clarity when you debug through the code.
 
 ```csharp
 Debug.WriteLine($"Entering {nameof(Fibonacci)} method");
 Debug.WriteLine($"We are looking for the {n}th number");
 ```
 
-At the end of our `for` loop, we could print out every value. Or, we could use a conditional print statement by using `WriteIf` or `WriteLineIf`. Add a print line only when `sum` is 1 at the end of the for loop.
+3. At the end of our `for` loop, we could print out every value. Or, we could use a conditional print statement by using `WriteIf` or `WriteLineIf`. Add a print line only when `sum` is 1 at the end of the for loop.
 
 ```csharp
 for (int i = 2; i <= n; i++)
@@ -29,7 +29,7 @@ for (int i = 2; i <= n; i++)
 }
 ```
 
-Debug the application, and you should see the following output:
+4. Debug the application, and you should see the following output:
 
 ```output
 Entering Fibonacci method
