@@ -63,26 +63,6 @@ Of particular interest are the following files and directories in *:::no-loc tex
 
 Run the following command:
 
-::: zone pivot="pg"
-
-```bash
-db -c "SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema'"
-```
-
-The script created a `db` alias. The alias corresponds to `psql` with `--host` (server hostname), `--port` (port number), `--username`, and `--dbname` (database name) options. psql obtains the password from an environment variable named `PGPASSWORD`. **PSQL** is a cross-platform command-line tool for administering and querying PostgreSQL databases. The preceding command retrieves a list of non-system tables from the PostgreSQL database that was created earlier.
-
-As expected, the list is empty because the database only contains system tables.
-
-```console
- tablename 
------------
-(0 rows)
-```
-
-::: zone-end
-
-::: zone pivot="sql"
-
 ```bash
 db -Q "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='dbo' ORDER BY TABLE_NAME" -Y 25
 ```
@@ -97,5 +77,3 @@ TABLE_NAME
 
 (0 rows affected)
 ```
-
-::: zone-end
