@@ -13,10 +13,9 @@ title: Review Azure infrastructure changes by using Bicep and pull requests
 summary: Ensure the quality of your team's Bicep code. Use branching strategies to protect your main branch from accidental changes. Review Bicep code by using pull requests.
 abstract: |
   After completing this module, you'll be able to:
-
-  - Protect important branches from accidental changes.
-  - Create, review, and merge pull requests.
-  - Review Bicep code in pull requests.
+  - Protect important branches from accidental changes
+  - Create, review, and merge pull requests
+  - Review Bicep code in pull requests
 prerequisites: |
   You should be familiar with using:
 
