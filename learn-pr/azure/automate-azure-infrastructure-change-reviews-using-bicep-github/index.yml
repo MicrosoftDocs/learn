@@ -52,7 +52,7 @@ units:
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.understand-pull-request-validation
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.exercise-set-up-environment
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.exercise-create-workflow-pull-request
-- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.understand-ephemeral-environments
+- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.deploy-ephemeral-environments-reviews
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.exercise-create-ephemeral-environments-pull-requests
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.knowledge-check
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.summary

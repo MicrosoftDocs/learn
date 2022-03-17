@@ -60,7 +60,7 @@ As a first step, you need to update your *pr-validation* workflow to create an e
 
 1. Save your changes.
 
-1. Verify that your *pr-validtion.yml* file looks like the following:
+1. Verify that your *pr-validation.yml* file looks like the following:
    
    :::code language="yaml" source="code/6-pr-validation.yml" :::
 
@@ -99,7 +99,15 @@ You've created a workflow that automatically deploys the changes in each pull re
 
    :::code language="yaml" source="code/6-pr-closed.yml" range="22-28" :::
 
-1. In the Visual Studio Code terminal, commit and push your changes:
+1. Save your changes.
+
+1. Verify that your *pr-closed.yml* file looks like the following:
+   
+   :::code language="yaml" source="code/6-pr-closed.yml" :::
+
+   If it doesn't, update it to match this example, and then save it.
+
+1. In the Visual Studio Code terminal, commit your changes and push them to the remote repository:
 
    ```bash
    git add .
