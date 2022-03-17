@@ -8,7 +8,7 @@ This exercise can be completed using a free Microsoft Learn *sandbox* subscripti
 >
 > 1. Sign into your Azure subscription in the [Azure portal](https://portal.azure.com?azure-portal=true).
 > 2. Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
-> 3. Use the **[\>_]** button to create a new Cloud Shell in the Azure portal, creating storage if prompted, and selecting a *Bash* environment.
+> 3. Use the **[\>_]** button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, creating storage if prompted and selecting a *Bash* environment.
 > 4. Complete the exercise steps below in the Cloud Shell pane in the Azure portal.
 >
 > For more information about using the Azure Cloud Shell, see the [Azure Cloud Shell documentation](/azure/cloud-shell/overview?azure-portal=true)
@@ -80,7 +80,7 @@ This exercise can be completed using a free Microsoft Learn *sandbox* subscripti
 
 5. While the simulation is running, back in the Azure portal, return to the page for the **learn-*xxxxxxxxxxxxxxxxx...*** resource group, and select the **store*xxxxxxxxxxxx*** storage account.
 6. In the pane on the left of the storage account blade, select the **Storage browser** tab.
-7. In the storage browser, navigate toe **Data storage >Blob Containers** and then open the **data** container.
+7. In the storage browser, navigate to **Data storage >Blob Containers** and then open the **data** container.
 8. In the **data** container, navigate through the folder hierarchy, which includes a folder for the current year, with subfolders for the month, day, and hour.
 9. In the folder for the hour, select the file that has been created, which should have a name similar to **0_xxxxxxxxxxxxxxxx.json**.
 10. On the page for the file, select **Edit**, and review the contents of the file; which should consist of a JSON record for each 10 second period, showing the number of messages received from IoT devices, like this:
