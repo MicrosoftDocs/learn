@@ -11860,6 +11860,16 @@
       "source_path": "learn-pr/wwl-azure/configure-log-analytics/9-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-log-analytics/7-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-security-groups/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-network-security-groups/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-security-groups/7-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-network-security-groups/8-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
