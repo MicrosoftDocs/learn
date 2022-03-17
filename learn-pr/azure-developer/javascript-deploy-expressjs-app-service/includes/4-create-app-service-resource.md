@@ -1,108 +1,46 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+To deploy the Express.js app to Azure, you need a service that supposed hosting a web app.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+## Choose Azure App Service for hosting
 
-    Heading: none
+Azure provides several hosting choices, each with tradeoffs for intended purpose, degree of configuration, and app type. An Express.js app is a server-side app. The server-side hosting choices include:
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+|Service|Description|
+|--|--|
+|Azure App Service|A service that runs either a Windows or Linux hosting environment or container. You have control over all the normal server settings to configure and control your app.|
+|Azure Container<br>Azure Kubernetes<br>Azure Container apps<br>Azure Virtual machines|These other hosting choices provide the entire system running the hosting environment. This allows more flexibility at the tradeoff of more work to configure and maintain the environment.|
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+For this module, the hosting choice is Azure App Service because this Express.js app doesn't require the level of customization provided by containers and virtual machines. 
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Azure App Service and the App Service Plan
 
-    Goal: Describe the part of the scenario covered in this exercise
+The parent unit for App Service is the **App Service Plan**. When you create the App Service, you can create a plan at the same time, or use an existing plan.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+An App Service plan defines a set of compute resources for a web app to run. These compute resources are analogous to the server farm in conventional web hosting. One or more apps can be configured to run on the same computing resources (or in the same App Service plan). 
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+Each App Service plan defines:
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+* Operating System (Windows, Linux)
+* Region (West US, East US, etc.)
+* Number of VM instances
+* Size of VM instances (Small, Medium, Large)
+* Pricing tier (Free, Shared, Basic, Standard, Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2)
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+## Reuse plan or create a new plan
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+You can potentially save money by putting multiple apps into one App Service plan. You can continue to add apps to an existing plan as long as the plan has enough resources to handle the load. However, keep in mind that apps in the same App Service plan all share the same compute resources. To determine whether the new app has the necessary resources, you need to understand the capacity of the existing App Service plan, and the expected load for the new app. Overloading an App Service plan can potentially cause downtime for your new and existing apps.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+Isolate your app into a new App Service plan when:
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+* The app is resource-intensive.
+* You want to scale the app independently from the other apps in the existing plan.
+* The app needs resource in a different geographical region.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+## Linux for the Express.js web app
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+In this module, use the Linux operating system for this web app. 
 
-    Goal: List the steps they'll do to complete the exercise.
+## Next steps to create your hosting resource
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+In the next exercise:
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+* Create your App Service Plan and App Service resource

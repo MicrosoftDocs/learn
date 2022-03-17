@@ -11,5 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
+interactive: bash
+azureSandbox: true
 content: |
   [!include[](includes/3-exercise-use-resource-group.md)]

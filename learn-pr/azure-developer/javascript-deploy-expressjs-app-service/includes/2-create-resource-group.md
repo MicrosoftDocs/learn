@@ -62,9 +62,9 @@ The sandbox allows you to skip steps you would otherwise need:
 
 Because the subscription are already created for you, as part of the sandbox, you need to get that subscription ID and resource group before deploying. 
 
-## Next steps to create your resource group
+## Next steps to create your sandbox
 
 In the next exercise:
 
-* Start the sandbox, get the resource group name
+* Start the sandbox, get the subscription name
 * View resource group from Visual Studio Code
