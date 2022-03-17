@@ -12,8 +12,8 @@ We'll use this code to create declarations, definitions, and prototypes:
 > The highlighted code shows where:
 > - The Monitor thread, the counting semaphore, and the thread run count variables are defined.
 > - A run count is initialized to detect idle time.
-> - A variable to hold the count of wait aborts for Routine thread is added.
-> - A variable to hold the count of wait aborts for Urgent thread is added.
+> - A variable to store the count of wait aborts for Routine thread is added.
+> - A variable to store the count of wait aborts for Urgent thread is added.
 >
 
 ## Building block 2
@@ -38,20 +38,20 @@ We'll use this code to create application definitions:
 
 > [!NOTE]
 > This code shows how these items are created:
-> - Pointer for the Montor thread stack.
+> - Pointer for the Monitor thread stack.
 > - Monitor stack; we give it the highest priority of the three threads.
-> - Urgent thread.
-> - Routine thread.
-> - Monitor thread.
-> - Counting semaphore.
-> - Application timer.
+> - Urgent thread
+> - Routine thread
+> - Monitor thread
+> - Counting semaphore
+> - Application timer
 >
 
 ## Building block 4
 
 ### Urgent thread entry function
 
-We'll use this code to create the urgent thread entry function. One feature that is new to this function is the use of the counting semaphore that controls when the Urgent function establishes its sleep time and begins its processing.
+We'll use this code to create the Urgent thread entry function. One feature that is new to this function is the use of the counting semaphore that controls when the Urgent function establishes its sleep time and begins its processing.
 
 :::code language="c" source="../code/project-break-suspension.c" range="98-127" highlight="16, 20":::
 
@@ -63,7 +63,7 @@ We'll use this code to create the urgent thread entry function. One feature that
 
 ### Routine thread entry function
 
-We'll use the following code to create the routine thread entry function. A major difference between this function and the Urgent thread entry function is that the amount of sleep time is considerably greater for the Routine thread. We use the same approach to obtain the sleep times for the Routine thread entry function. Another major difference is that there are no modifications for you to make in the Urgent thread entry function. Still, you need to write code to detect excessive wait time for the Routine thread entry function (use the Urgent thread entry function as a guide).
+We'll use the following code to create the Routine thread entry function. A major difference between this function and the Urgent thread entry function is that the amount of sleep time is considerably greater for the Routine thread. However, we use the same approach to obtain the sleep times for the Routine thread entry function. Another major difference is that there are no modifications for you to make in the Urgent thread entry function. Still, you need to write code to detect excessive wait time for the Routine thread entry function (use the Urgent thread entry function as a guide).
 
 :::code language="c" source="../code/project-break-suspension.c" range="136-167" highlight="16, 20":::
 
@@ -75,7 +75,7 @@ We'll use the following code to create the routine thread entry function. A majo
 
 ### Monitor thread entry function
 
-We'll use the following code to create the monitor thread entry function. This function checks both the Urgent thread and the Routine thread every 50 timer ticks to determine whether the run counts of the two threads have changed since the previous time they were checked. If a run count hasn't changed, the Monitor thread considers this as excessive wait time, and the thread suspension is aborted. You're given the code for the Urgent thread, and your task is the write the code for the Routine thread to detect whether there's excessive wait time.
+We'll use the following code to create the Monitor thread entry function. This function checks both the Urgent thread and the Routine thread every 50 timer ticks to determine whether the run counts of the two threads have changed since the previous time they were checked. If a run count hasn't changed, the Monitor thread considers this as excessive wait time, and the thread suspension is aborted. You're given the code for the Urgent thread, and your task is the write the code for the Routine thread to detect whether there's excessive wait time.
 
 :::code language="c" source="../code/project-break-suspension.c" range="171-196" highlight="13, 17, 20, 23":::
 
