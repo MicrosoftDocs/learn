@@ -1,0 +1,28 @@
+name: pr-closed
+
+on: 
+  pull_request:
+    types: [closed]
+
+jobs:
+  remove: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: azure/login@v1
+        name: Sign in to Azure
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}    
+      - name: Determine resource group name
+        id: determineResourceGroupName
+        run: |
+          echo "github head_ref: ${{ github.head_ref }}"
+          IFS='/' read -ra my_array <<< "${{ github.head_ref }}"
+          export resourceGroupName=rg_f_${my_array[1]}
+          echo "::set-output name=resourceGroupName::$resourceGroupName"  
+      - uses: Azure/cli@v1
+        name: Delete resource group
+        with: 
+          inlineScript: |
+            az group delete \
+              --name ${{steps.determineResourceGroupName.outputs.resourceGroupName}} \
+              --yes

@@ -5,7 +5,7 @@ During the process, you'll:
 > [!div class="checklist"]
 > * Create a workflow for pull request create and update events.
 > * Add Bicep linting to the workflow.
-> * Add a branch protection rule to enforce the checks succeed before a pull request is merged.
+> * Add a branch protection rule to enforce the check succeeds before a pull request is merged.
 > * Create a pull request, and watch the workflow run.
 > * Fix the errors identified by the pull request validation.
 > * Re-run the workflow, and close the pull request.
@@ -16,7 +16,7 @@ During the process, you'll:
 
 1. Add the following code into the file:
 
-   :::code language="yaml" source="code/4-workflow.yml" range="1-4" :::
+   :::code language="yaml" source="code/4-pr-validation.yml" range="1-4" :::
 
    This code ensures that the workflow is executed whenever a pull request is created or updated. Also, we can trigger the workflow manually.
 
@@ -26,52 +26,76 @@ When a pull request is opened or edited you want to run a linting step for your 
 
 1. Add the following lines to reuse the *lint* workflow defined in your repository:
 
-   :::code language="yaml" source="code/4-workflow.yml" range="6-8" :::
+   :::code language="yaml" source="code/4-pr-validation.yml" range="6-8" :::
 
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
    ```bash
    git add .
-   git commit -m "Add first version of pull request workflow"
+   git commit -m "Add first version of pull request validation workflow"
    git push
    ```
 
 ## Add a branch protection rule
 
-<!-- TODO -->
+Configure your Git repository to prevent pull requests from being merged until the checks have succeeded.
 
-You now have a workflow that can perform a linting operation. As a next step you will enforce the linting for each pull request.
+1. In your browser, select **Actions**.
 
-1. In your browser, navigate to _Actions_ and select the _pr-validation_ workflow.
+1. Select the **pr-validation** workflow.
 
-1. Select _Run workflow_ and next again _Run workflow_ to trigger your workflow on the main branch. This will run your workflow a first time. Wait for your run to succeed.
+1. Select **Run workflow** > **Run workflow**.
+
+   Your workflow starts running on the *main* branch.
+
+   Wait for the workflow to finish running.
 
    > [!NOTE]
-   > This may seem a silly step, since you will mainly want to run your workflow for PR validation, however, as one of the next steps you will also configure a status check based on your workflow. For the GitHub interface to find a status check based on your workflow, the workflow needs to have run at least once.
+   > The reason you're running your workflow manually so that GitHub detects the *lint* job in your workflow. The workflow needs to have run at least one time before you create the status check in the next steps.
 
-1. In your browser, navigate to _Settings_.
+1. Select **Settings**.
 
-1. Select _Branches_.
+1. Select **Branches**.
 
-1. Select _Add rule_ to add a branch protection rule.
+1. Select **Add rule**.
 
-1. Fill out _main_ as the name of the branch you would like to protect.
+   :::image type="content" source="../media/3-github-branch-protections.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page, with the Add rule button highlighted.":::
 
-1. Select _Require status checks to pass before merging_ to enable a status check. 
+1. In the **Branch name pattern** text box, enter **main**.
 
-1. In the text box that appears, start typing _lint_ and select your _lint / Lint Code_ job from the dropdown.
+1. Select **Require a pull request before merging**.
 
-1. Select _Create_.
+1. Deselect **Require approvals**. Normally, you'd select this option. But in this sample, you're going to merge your own pull request, and the **Require approvals** option prevents you from doing so.
+
+1. Select **Include administrators**. By selecting this option, you enforce the rule on yourself, too.
+
+1. Select **Require status checks to pass before merging**.
+
+1. In the text box that appears, enter **lint**.
+
+1. Select the **lint / Lint Code** job.
+
+   Leave the other configuration options with their default values.
+
+1. Near the bottom of the page, select **Create**.
+
+   :::image type="content" source="../media/3-github-branch-protections-add.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page.":::
+
+   GitHub might ask you to sign in again to confirm your identity.
 
 ## Create a pull request
 
 Now that the pull request validation workflow and branch protection rule are configured, let's see how pull requests use your workflow. We've pre-created a branch in your repository with some Bicep changes, which you can use to create your pull request.
 
-1. In your browser, navigate to the *change1* branch. (TODO)
+1. In your browser, select **Code**.
 
-1. There will be a message stating that this branch is 1 change ahead of the main branch. Select *Contribute* and next *Open pull request*.
+1. Select the **change1** branch. (TODO)
 
-1. Leave all defaults and select *Create pull request*.
+   GitHub shows a message indicating that the branch is one change ahead of the main branch.
+
+1. Select **Contribute** > **Open pull request**.
+
+1. Select **Create pull request**.
 
    The pull request detail page is displayed.
 
@@ -83,9 +107,7 @@ Now that the pull request validation workflow and branch protection rule are con
 
 ## Fix the errors of the pull request validation
 
-1. Select *details* to inspect the details of why your pull request validation is failing. In the details you will see there is a syntax error in the Bicep file.
-
-   Keep your browser open.
+1. Select **details** to inspect the details of why your pull request validation is failing. In the details you will see there is a syntax error in the Bicep file.
 
 1. In Visual Studio Code, open the *deploy/main.bicep* file and fix the error on line 13.
 

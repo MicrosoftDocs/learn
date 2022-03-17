@@ -1,0 +1,43 @@
+name: pr-validation
+
+on: [pull_request, workflow_dispatch]
+
+env:
+  resourceGroupLocation: westus3
+
+jobs:
+  lint:
+    uses: ./.github/workflows/lint.yml
+
+  deploy: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: azure/login@v1
+        name: Sign in to Azure
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}    
+      - name: Determine resource group name
+        id: determineResourceGroupName
+        run: |
+          echo "github ref_name: ${{ github.ref }}"
+          IFS='/' read -ra my_array <<< "${{ github.ref }}"
+          export resourceGroupName=rg_pr_${my_array[2]}
+          echo "::set-output name=resourceGroupName::$resourceGroupName"  
+      - uses: Azure/cli@v1
+        name: Create resource group
+        with: 
+          inlineScript: |
+            az group create \
+              --name ${{ steps.determineResourceGroupName.outputs.resourceGroupName }} \
+              --location ${{ env.resourceGroupLocation }}
+      - uses: azure/arm-deploy@v1
+        id: deploy
+        name: Deploy Bicep file
+        with:
+          failOnStdErr: false
+          deploymentName: ${{ github.run_number }}
+          resourceGroupName: ${{ steps.determineResourceGroupName.outputs.resourceGroupName }}
+          template: ./deploy/main.bicep
+          parameters: >
+            environmentType=nonprod
