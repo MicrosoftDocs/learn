@@ -63,9 +63,6 @@ You now have a workflow that can perform a linting operation. As a next step you
 
 1. Select _Create_.
 
-> [!TIP]
-> For more information on branch protection, see the module [Review Azure infrastructure changes by using Bicep and pull requests](xref:learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests).
-
 ## Create a pull request
 
 Now that the pull request validation workflow and branch protection rule are configured, let's see how pull requests use your workflow. We've pre-created a branch in your repository with some Bicep changes, which you can use to create your pull request.
