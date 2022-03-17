@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.machine-learning.explore-analyze-data-r.visualize-data
-title: Visualize data
+title: Visualize your data
 metadata:
-  title: Visualize data
-  description: Visualize data.
+  title: Visualize your data
+  description: In this unit, you'll learn how various types of graphs can help you visualize your data.
   ms.date: 03/10/2022
   author: softchris
   ms.author: chnoring

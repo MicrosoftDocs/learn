@@ -3,7 +3,7 @@ uid: learn.machine-learning.explore-analyze-data-r.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  description: This knowledge check validates what you've learned in this module so far.
   ms.date: 03/10/2022
   author: softchris
   ms.author: chnoring
@@ -13,36 +13,36 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: You have a tibble/data frame with the dimension [20, 2]. What does this tell you about the tibble? 
+  - content: You have a tibble, or data frame, with the dimension 20, 2. What does this tell you about it? 
     choices:
     - content: The tibble consists of 20 rows and 2 columns.
       isCorrect: true
-      explanation: That is correct. A data frame with the dimension 20, 2 means that it has 2 columns each with 20 elements. This gives the data frame a rectangular structure of 20 rows and 2 columns. 
+      explanation: Correct! A dimension of 20, 2 means that the tibble has 2 columns, each with 20 elements. This gives it a rectangular structure of 20 rows and 2 columns. 
     - content: The tibble contains 2 columns, with the values 2 and 20.
       isCorrect: false
-      explanation: That is incorrect. A data frame with the dimension 20, 2 means that it has 2 columns each with 20 elements. This gives the data frame a rectangular structure of 20 rows and 2 columns. 
+      explanation: Incorrect. A dimension of 20, 2 means that the tibble has 2 columns, each with 20 elements. This gives it a rectangular structure of 20 rows and 2 columns. 
     - content: The tibble contains 20 rows, all with the value 2.
       isCorrect: false
-      explanation: That is incorrect. A data frame with the dimension 20, 2 means that it has 2 columns each with 20 elements. This gives the data frame a rectangular structure of 20 rows and 2 columns.
-  - content: You have a data frame named df_sales containing daily sales data. The data frame contains the following columns - year, month, day_of_month, sales_total. You want to find the average sales_total value. Which code should you use? 
+      explanation: Incorrect. A dimension of 20, 2 means that the tibble has 2 columns, each with 20 elements. This gives it a rectangular structure of 20 rows and 2 columns.
+  - content: You have a data frame named df_sales, which contains daily sales data. The data frame displays columns for year, month, day_of_month, and sales_total. You want to find the average sales_total value. Which code should you use? 
     choices:
     - content: df_sales %>% pull(sales_total) %>% avg()
       isCorrect: false
-      explanation: That is incorrect. Use the mean() function and not avg() to return the average. 
+      explanation: Incorrect. Use the mean() function and not avg() to return the average. 
     - content: mean(sales_total$df_sales)
       isCorrect: false
-      explanation: That is incorrect. The accessor (`$`) is used to extract a single column of a data frame. As such the data frame is on the left of the operator.
+      explanation: Incorrect. The accessor (`$`) is used to extract a single column of a data frame. The data frame is at the left of the operator.
     - content: mean(df_sales$sales_total)
       isCorrect: true
-      explanation: That is correct. The accessor (`$`) extracts the elements in the sales_total column of df_sales data frame. These are then passed on to the mean() function that computes the average.  
-  - content: You have a data frame containing data about daily ice cream sales. You use the R function cor to compare the avg_temp and units_sold columns, and get a result of 0.97. What does this result indicate?
+      explanation: Correct! The accessor (`$`) extracts the elements in the sales_total column of df_sales data frame. The elements are then passed on to the mean() function, which computes the average.  
+  - content: You have a data frame that displays data about daily ice cream sales. You use the R function cor to compare the avg_temp and units_sold columns, and you get a result of 0.97. What does this result indicate?
     choices:
     - content: On the day with the maximum units_sold value, the avg_temp value was 0.97.
       isCorrect: false
-      explanation: That is incorrect. The cor function returns the correlation between two numeric columns.
+      explanation: Incorrect. The cor function returns the correlation between two numeric columns.
     - content: Days with high avg_temp values tend to coincide with days that have high units_sold values.
       isCorrect: true
-      explanation: That is correct. The corr method returns the correlation, and a value near 1 indicates a positive correlation. 
-    - content: The units_sold value is, on average, 97% of the avg_temp value.
+      explanation: Correct! The cor function returns the correlation, and a value near 1 indicates a positive correlation. 
+    - content: The units_sold value is, on average, 97 percent of the avg_temp value.
       isCorrect: false
-      explanation: That is incorrect. The cor function returns the correlation between two numeric columns. 
+      explanation: Incorrect. The cor function returns the correlation between two numeric columns. 

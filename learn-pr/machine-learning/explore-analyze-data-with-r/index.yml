@@ -12,9 +12,9 @@ metadata:
 title: Explore and analyze data with R
 summary: Learn how to explore and analyze data by using R.
 abstract:  | 
-  In this module, you will learn:
-  - Common data exploration and analysis tasks 
-  - How to use R packages like ggplot2, dplyr and tidyr to turn raw data into understanding, insight and knowledge 
+  In this module, you'll learn:
+  - Common data exploration and analysis tasks. 
+  - How to use R packages such as ggplot2, dplyr, and tidyr to turn raw data into understanding, insight, and knowledge. 
   
 prerequisites: |
   - Knowledge of basic mathematics 
