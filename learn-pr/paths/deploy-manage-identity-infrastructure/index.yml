@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-manage-identity-infrastructure
 metadata:
   title: Deploy and manage identity infrastructure
   description: Deploy and manage identity infrastructure
-  ms.date: 11/08/2021
+  ms.date: 03/17/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ prerequisites: |
   - Core networking technologies
 summary: |
   Learn about Active Directory Domain Services fundamentals, and then learn to configure and manage AD DS, Group Policy Objects, and how to implement hybrid identity with Windows Server.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/deploy-and-manage-identity-infrastructure.svg
 levels:
 - intermediate
 roles:
