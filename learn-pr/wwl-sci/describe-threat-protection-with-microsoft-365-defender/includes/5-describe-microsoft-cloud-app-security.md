@@ -36,6 +36,9 @@ Defender for Cloud Apps Security delivers on the components of the framework thr
 
 - Use **policies** to detect risky behavior, violations, or suspicious data points and activities in your cloud environment. You can use policies to integrate remediation processes to achieve risk mitigation.
 
+
+:::image type="content" source="../media/mcas-inline.png" lightbox="../media/mcas-expanded.png" alt-text="Microsoft Defender for Cloud Apps dashboard.":::
+
 In this interactive guide, you’ll get an introduction to the capabilities available with Microsoft Defender for Cloud Apps, including Discover, Investigate, Control, and Alerts.
 
 To work through this guide, follow the prompts on the screen.
