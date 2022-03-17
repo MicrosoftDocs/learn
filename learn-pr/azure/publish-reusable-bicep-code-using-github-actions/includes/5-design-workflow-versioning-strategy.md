@@ -1,12 +1,14 @@
 When you start to publish reusable Bicep code, you probably use a manual approach. It's easy for you to determine which Bicep file you need to publish, and you probably have a manual process for incrementing the version number. When you automate the publishing process, though, you need to consider how to automate these steps. In this unit, you'll learn how to adopt a versioning system that communicates the changes you've made to your code, and you'll also learn how you can scope your workflows to publish the code you expect.
 
-## Semantic versioning
+## Version numbers
 
 In previous Microsoft Learn modules, you learned about the importance of versioning for template specs and Bicep modules. There are many different versioning approaches you can use. In many situations, though, *semantic versioning* is a good choice.
 
 When you use semantic versioning, a version number has several components:
 
-TODO diagram showing `1.4.6+20`
+:::image type="content" source="../media/5-version-number.png" alt-text="Diagram that shows the version number 1.4.6+20." border="false":::
+
+In the example above, the major version is 1, the minor version is 4, the patch version is 6, and the build number is 20.
 
 Changes in version numbers communicate important information about the types of changes in the code:
 
@@ -20,10 +22,11 @@ Changes in version numbers communicate important information about the types of 
 
 For example, suppose you're using a Bicep module published by somebody else. The module has a version number of `2.0.0+90`. You see there is a new version of the module available with the version number `2.1.0+102`. The only significant change is to the minor version number, which indicates that you shouldn't expect a breaking change when you use the new version.
 
+### Versions and workflows
+
 > [!IMPORTANT]
 > Your workflow can't automatically detect breaking changes, or advise you when you should increment your major or minor version numbers. Ensure you carefully consider versioning before you publish the template spec or module. If your team reviews your Bicep code by using pull requests, ask the reviewers to validate whether any changes to your code require changing your major, minor, or patch version number.
 
-## Versions and workflows
 
 The complexities of versioning from a workflow – figuring out when to increment major/minor versions
 
