@@ -1,4 +1,6 @@
-This project contains two threads that are synchronized with an event flags group, and you get to observe the impact of adding a third thread to be synchronized. We'll use Visual Studio, and you have a C project named ProjectEventFlags.c to modify. 
+## Introduction
+
+This project contains two threads that are synchronized with an event flags group, and you get to observe the result of adding a third thread to be synchronized. We'll use Visual Studio, and you have a C project named `ProjectEventFlags.c` to modify.
 
 > [!TIP]
 > Refer to [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
@@ -11,7 +13,7 @@ This project contains two threads that are synchronized with an event flags grou
 
    ![VSCode Web Task Explorer](../../introduction-azure-rtos/media/vscode-web-tasks.png)
 
-1. Choose **05: ProjectEventFlags** to build the project.
+1. Choose **ProjectEventFlags** to build the project.
 
 1. Now choose **Run Project** in the same **TASK EXPLORER**.
 
@@ -32,15 +34,15 @@ If all has gone well, you should see initial output appearing on the screen simi
 > [!NOTE]
 > The urgent thread has about twice as many resumptions and suspensions as the routine thread.
 
-Your task is to add a third thread called Important, which has a priority of 10. 
+Your task is to add a third thread called Important, which has a priority of 10.
 
 The following image contains a description of your project with the addition of the Important thread:
 
 :::image type="content" alt-text="Diagram of modified project activities." source="../media/modified-activities.svg" loc-scope="Azure":::
 
-The attributes of Urgent thread and Routine thread remain the same. 
+The attributes of Urgent thread and Routine thread remain the same.
 
-The building blocks unit has tips modifications you need to make; here's a summary:
+The building blocks unit has modifications you need to make; here's a summary:
 
 - [Declarations](https://review.docs.microsoft.com/learn/modules/threadx-event-flags-group-sync-threads/7-building-blocks#declarations): 
   - Define the Important thread.
@@ -53,4 +55,4 @@ After you've made your modifications, build and debug *ProjectEventFlags* projec
 
 :::image type="content" alt-text="Diagram of the final output when you debug the project." source="../media/final-output.png" loc-scope="Azure":::
 
-After 200 timer ticks, we observe that the Urgent and Important threads produce identical results. Even though the priorities and the sleep times of the threads are different, they are synchronized by the Monitor thread that sets the event flags group every 10 timer ticks. 
+After 200 timer ticks, we observe that the Urgent and Important threads produce identical results. Even though the priorities and the sleep times of the threads are different, they are synchronized by the Monitor thread that sets the event flags group every 10 timer ticks.

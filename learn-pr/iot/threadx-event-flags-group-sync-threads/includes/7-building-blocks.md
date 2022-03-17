@@ -1,3 +1,5 @@
+## Introduction
+
 Let's look at the code building blocks we'll use in the project.
 
 ## Building block 1
@@ -12,8 +14,8 @@ We'll use this code to create declarations, definitions, and prototypes:
 
 > [!NOTE]
 > The highlighted lines of code:
-> - Add a synchronization value. 
-> - Create an event flags group. (You'll need one more thread for this project.) 
+> - Add a synchronization value.
+> - Create an event flags group. (You'll need one more thread for this project.)
 > - Add another counter, variables for thread performance, and one more prototype.
 >
 
@@ -21,7 +23,7 @@ We'll use this code to create declarations, definitions, and prototypes:
 
 ### Main entry point
 
-We'll use this code for the main entry point. 
+We'll use this code for the main entry point.
 
 :::code language="c" source="../code/project-event-flags.c" range="38-43":::
 
