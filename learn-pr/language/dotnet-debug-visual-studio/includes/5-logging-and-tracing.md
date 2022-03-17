@@ -113,6 +113,6 @@ int IntegerDivide(int dividend, int divisor)
 When you run this code under the debugger, the assertion statement is evaluated. But in the release version, the comparison isn't made, so there's no additional overhead.
 
 > [!NOTE]
-> When you use `System.Diagnostics.Debug.Assert`, make sure that any code inside Assert doesn't change the results of the program if Assert is removed. Otherwise, you might accidentally introduce a bug that only shows up in the release version of your program. Be especially careful about asserts that contain function or procedure calls.
+> When you use `System.Diagnostics.Debug.Assert`, make sure that any code inside `Assert` doesn't change the results of the program if Assert is removed. Otherwise, you might accidentally introduce a bug that only shows up in the release version of your program. Be especially careful about asserts that contain function or procedure calls.
 
 As you can see, using `Debug` and `Trace` from the `System.Diagnostics` namespace is a great way to provide additional context when you run and debug your application.

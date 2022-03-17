@@ -8,11 +8,11 @@ To set up Visual Studio for .NET debugging, we'll first need a .NET project. Vis
 
 1. In the **Create a new Project** dialog, select **Console App** and choose **Next**.
 
-1. Name the project *DotNetDebugging*, and choose the location where you'd like to save.  Leave the other values at their defaults, and then select **Next**.
+1. Name the project *DotNetDebugging*, and choose the location where you'd like to save. Leave the other values at their defaults, and then select **Next**.
 
 1. Click **Create** on the final screen.
 
-Visual Studio will create the Console project for us using the template we selected.  Once the project loads, open **Program.cs** by selecting it.
+Visual Studio will create the Console project for us using the template we selected. Once the project loads, open **Program.cs** by selecting it.
 
 ## Add the Fibonacci program logic
 
@@ -24,7 +24,9 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
 0, 1, 1, 2, 3, 5, 8, 13, 21...
 ```
 
-Replace the contents of **Program.cs** with the following code:
+The sample code below contains a bug, so let's use Visual Studio's debugging tools to diagnose and solve the issue.
+
+1. Replace the contents of **Program.cs** with the following code:
 
 ```csharp
 int result = Fibonacci(5);
@@ -50,7 +52,7 @@ static int Fibonacci(int n)
 > [!NOTE]
 > This code contains an error, which we'll debug later in this module. We don't recommend that you use it in any mission-critical Fibonacci applications until we get that bug fixed.
 
-1. Save the file with **Ctrl+S** for Windows and Linux. Select **Cmd+S** for Mac.
+2. Save the file with **Ctrl+S** for Windows and Linux. Select **Cmd+S** for Mac.
 
 1. Let's get a look at how the updated code works before we debug it. Run the program by pressing the green start button at the top of Visual Studio.
 
@@ -173,7 +175,7 @@ It's important to be strategic about where we put our breakpoints. We're especia
     i [int]: 4
     ```
 
-    Again, things are looking good. The fourth value in the series is expected to be 3.
+    The result is correct. The fourth value in the series is expected to be 3.
 
 1. At this point, you might start wondering if the code was correct all along and you imagined the bug! Let's keep with it for the last time through the loop. Select **Continue** one more time.
 
@@ -189,7 +191,7 @@ It's important to be strategic about where we put our breakpoints. We're especia
 
     This breakpoint will let us inspect the program state before the function exits. We've already learned all we can expect to from our previous breakpoints on lines 1 and 13, so we can clear them.
 
-1. Remove our previous breakpoints on lines 1 and 13. You can do that by clicking on them in the margin next to the line numbers, or by clearing the breakpoint check boxes for lines 1 and 13 in the breakpoints pane in the lower left.
+1. Remove our previous breakpoints on lines 1 and 13. Click on the breakpoints in the margin next to the line numbers or clear the breakpoint check boxes for lines 1 and 13 in the breakpoints pane in the lower left.
 
     :::image source="../media/visual-studio-breakpoints-clear.png" alt-text="Screenshot showing the breakpoints listed in the breakpoints pane.":::
 

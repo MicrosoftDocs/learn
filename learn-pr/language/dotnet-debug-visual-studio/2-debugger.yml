@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-debug-visual-studio.2-debugger
+uid: learn.dotnet-debug-visual-studio.debugger
 title: What's a debugger?
 metadata:
   title: What's a debugger?
   description: Learn what a debugger is and why it's useful.
-  author: jongalloway
-  ms.author: jogallow
+  author: alexwolfmsft
+  ms.author: alexwolf
   ms.date: 3/16/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet

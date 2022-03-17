@@ -71,7 +71,7 @@ We can also access other helpful debugging windows by clicking **Debug -> Window
 
 When you analyze the cause of a program defect, watch the state of your variables to look for unexpected changes. You can use the **Autos** window to do that.
 
-The **Autos** window will automatically populate variables in the current scope and context, along with their values.  This is a simple and easy choice for seeing a general overview of the state of your running code.
+The **Autos** window will automatically populate variables in the current scope and context, along with their values. This is a simple and easy choice for seeing a general overview of the state of your running code.
 
 :::image source="../media/visual-studio-autos.png" alt-text="Screenshot of variable hover during debugging.":::
 
@@ -83,9 +83,9 @@ By hovering over a function parameter or a variable directly in the editor windo
 
 If you want to track a specific variable state across time or different functions, it can be tedious to search for it every time. That's where the **Watch** panel comes in handy.
 
-You can right-click a variable in your editor and select **Add to watch**.  That variable will now display in the watch window and update as your app executes.
+You can right-click a variable in your editor and select **Add to watch**. That variable will now display in the watch window and update as your app executes.
 
-You can also right click on variables in the **Autos** window to add a watch as well.
+You can also right-click on variables in the **Autos** window to add a watch.
 
 All expressions inside the watch panel will be updated automatically as your code runs.
 

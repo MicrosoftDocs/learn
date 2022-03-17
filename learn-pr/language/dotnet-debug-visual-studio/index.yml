@@ -12,10 +12,10 @@ title: Interactively debug .NET apps with the Visual Studio debugger
 summary: Learn how to efficiently debug your .NET app by using Visual Studio to fix your bugs quickly.
 abstract: |
   By the end of this module, you will be able to:
-  - Use the Visual Studio debugger with a .NET program.
+  - Debug a .NET program with the Visual Studio debugger.
   - Create breakpoints and run your code step by step to find issues.
   - Inspect your program state at any execution step.
-iconUrl: /learn/achievements/dotnet-debug.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -23,18 +23,19 @@ roles:
 - student
 products:
 - dotnet
+- visual-studio
 prerequisites: |
   - Local installations of [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio](https://visualstudio.com)
 units:
-- learn.dotnet-debug-visual-studio.1-introduction
-- learn.dotnet-debug-visual-studio.2-debugger
-- learn.dotnet-debug-visual-studio.3-analyze-your-program-state
-- learn.dotnet-debug-visual-studio.4-use-visual-studio-debugger
-- learn.dotnet-debug-visual-studio.5-logging-and-tracing
-- learn.dotnet-debug-visual-studio.6-use-logging-and-tracing
-- learn.dotnet-debug-visual-studio.7-knowledge-check
-- learn.dotnet-debug-visual-studio.8-summary
+- learn.dotnet-debug-visual-studio.introduction
+- learn.dotnet-debug-visual-studio.debugger
+- learn.dotnet-debug-visual-studio.analyze-your-program-state
+- learn.dotnet-debug-visual-studio.use-visual-studio-debugger
+- learn.dotnet-debug-visual-studio.logging-and-tracing
+- learn.dotnet-debug-visual-studio.use-logging-and-tracing
+- learn.dotnet-debug-visual-studio.knowledge-check
+- learn.dotnet-debug-visual-studio.summary
 
 badge:
   uid: learn.dotnet-debug-visual-studio.badge
