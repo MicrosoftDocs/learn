@@ -50,7 +50,7 @@ products:
   - github
 units:
 - learn.azure.publish-reusable-bicep-code-using-github-actions.introduction
-- learn.azure.publish-reusable-bicep-code-using-github-actions.publish-bicep-code-deployment-pipeline
+- learn.azure.publish-reusable-bicep-code-using-github-actions.publish-bicep-code-deployment-workflow
 - learn.azure.publish-reusable-bicep-code-using-github-actions.exercise-set-up-environment
 - learn.azure.publish-reusable-bicep-code-using-github-actions.exercise-publish-template-spec
 - learn.azure.publish-reusable-bicep-code-using-github-actions.design-workflow-versioning-strategy

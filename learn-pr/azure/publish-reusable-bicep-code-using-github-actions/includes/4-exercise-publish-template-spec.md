@@ -4,7 +4,7 @@ TODO
 
 ## Add a publish step to your workflow
 
-TODO Update the template spec workflow file to publish the template spec with a very simple versioning scheme (just use the pipeline run number as the version number)
+TODO Update the template spec workflow file to publish the template spec with a very simple versioning scheme (just use the workflow run number as the version number)
 
 ## Verify and commit your workflow definition
 

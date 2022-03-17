@@ -9,7 +9,7 @@ Bicep enables you to easily reuse your code. Two common approaches for reusing y
 
 When you're deciding between template specs and Bicep modules, a good rule of thumb is: if the template is going to be deployed as is throughout your organization, template specs are probably a good fit. But if you're likely to reuse this template within multiple parent templates, Bicep modules might serve your needs better.
 
-## Validate reusable code in a pipeline
+## Validate reusable code in a workflow
 
 Unlike regular Bicep deployments, when you create a template spec or a module, you don't deploy the resources directly to Azure. Instead, you provide the template spec or module to another deployment, which in turn will deploy the resources you've defined. This difference means that the ways you validate and test your template specs and Bicep modules might be different to regular Bicep files.
 
@@ -23,7 +23,7 @@ Beyond linting, you might want to consider testing your template specs and modul
 You should choose whether to include workflow steps that deploy and test your template specs and modules. In this Microsoft Learn module, we lint the Bicep code but don't include other forms of testing. If you want to test your template specs and modules, consider how you'll deploy them to Azure, and whether you'll use dedicated subscriptions or resource groups to deploy the resources.
 
 > [!TIP]
-> We recommend you review [Test your Bicep code by using GitHub Actions](xref:learn.azure.test-bicep-code-using-github-actions) for more information on how to test your Bicep files in an automated pipeline.
+> We recommend you review [Test your Bicep code by using GitHub Actions](xref:learn.azure.test-bicep-code-using-github-actions) for more information on how to test your Bicep files in an automated workflow.
 
 ## Authentication and authorization
 
