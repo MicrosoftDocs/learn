@@ -1,4 +1,4 @@
-When you start to publish reusable Bicep code, you probably use a manual approach. It's easy for you to determine which Bicep file you need to publish, and you probably have a manual process for incrementing the version number. When you automate the publishing process, though, you need to consider how to automate these steps. In this unit, you'll learn how to adopt a versioning system that communicates the changes you've made to your code, and you'll also learn how you can scope your workflows to publish the code you expect.
+When you start to publish reusable Bicep code, you probably use a manual approach. It's easy for you to determine which Bicep file you need to publish, and you probably have a manual process for incrementing the version number. When you automate the publishing process, though, you need to consider how to automate these steps. In this unit, you'll learn how to adopt a versioning system that communicates the changes you've made to your code, and you'll also learn how you can scope your workflows to publish the code you expect. <!-- TODO mention environments too -->
 
 ## Version numbers
 
@@ -24,15 +24,24 @@ For example, suppose you're using a Bicep module published by somebody else. The
 
 ### Versions and workflows
 
-> [!IMPORTANT]
-> Your workflow can't automatically detect breaking changes, or advise you when you should increment your major or minor version numbers. Ensure you carefully consider versioning before you publish the template spec or module. If your team reviews your Bicep code by using pull requests, ask the reviewers to validate whether any changes to your code require changing your major, minor, or patch version number.
+When you publish your code interactively, such as by using the Azure CLI, you probably think about the version number you assign to your template spec or module as you publish it. But in an automated deployment workflow, you need to change the approach you use to assign version numbers. Your workflow can't automatically detect breaking changes, or advise you when you should increment your major or minor version numbers. Ensure you carefully consider versioning before you publish the template spec or module.
 
+One approach is to store a *metadata file* with your Bicep code, as illustrated in the following diagram:
 
-The complexities of versioning from a workflow – figuring out when to increment major/minor versions
+:::image type="content" source="../media/5-metadata-files.png" alt-text="Diagram that shows a file system hierarchy with two modules and a template spec, each with an associated metadata dot J S O N file." border="false":::
 
-Using a simple metadata JSON file to handle major/minor versions
+Whenever you update your Bicep code, you update the version information in the correspnding metadata file. You need to ensure that you correctly identify breaking and non-breaking changes so you can increment the version numbers correctly.
+
+> [!TIP]
+> If your team reviews your Bicep code by using pull requests, ask the reviewers to validate whether any changes to your code require changing your major, minor, or patch version number.
+
+You'll see how you can use a metadata file in the next exercise.
+
+You can also choose to use a simpler versioning strategy, such as just using the workflow run number as your version number. While this approach is easier to implement, it means you can't effectively communicate the differences between versions to anybody who uses your code.
 
 ## How many workflows?
+
+<!-- TODO -->
 
 Should you create a single workflow for each module/TS, or use a shared workflow that deploys everything?
 
