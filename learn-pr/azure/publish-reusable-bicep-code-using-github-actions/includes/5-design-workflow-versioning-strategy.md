@@ -43,23 +43,25 @@ You can also choose to use a simpler versioning strategy, such as just using the
 
 It's common to build up a collection of template specs and modules. Often, it makes sense to keep these in the same Git repository.
 
-By using *path filters* in GitHub Actions, you can create separate workflows for each module or template spec within your repository. This approach helps to avoid publishing a new version of every Bicep file within the repository every time you change one file.
+By using *path filters* in GitHub Actions, you can create separate workflows for each module or template spec within your repository. This approach helps to avoid publishing a new version of every Bicep file within the repository every time you change one file. You can use *reusable workflows* to define your workflow's steps in one centralized file.
 
 For example, suppose you have a file structure similar to the one illustrated above. You could configure three separate workflows, one for each Bicep file. Select each tab to see the corresponding workflow definition, and its path filter:
 
 # [module-1](#tab/module-1)
 
-:::code language="yaml" source="code/5-publish-module-1.yml" range="6-7" :::
+:::code language="yaml" source="code/5-publish-module-1.yml" highlight="7-8, 12-14" :::
 
 # [module-2](#tab/module-2)
 
-:::code language="yaml" source="code/5-publish-module-2.yml" range="6-7" :::
+:::code language="yaml" source="code/5-publish-module-2.yml" highlight="7-8, 12-14" :::
 
 # [template-spec-1](#tab/template-spec-1)
 
-:::code language="yaml" source="code/5-publish-template-spec-1.yml" range="6-7" :::
+:::code language="yaml" source="code/5-publish-template-spec-1.yml" highlight="7-8, 12-14" :::
 
 ---
+
+The approach of creating a workflow for each of your reusable Bicep files is simple, and you can use 
 
 <!-- TODO -->
 

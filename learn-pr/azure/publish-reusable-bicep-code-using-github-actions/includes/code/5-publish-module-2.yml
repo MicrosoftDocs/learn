@@ -1,4 +1,5 @@
 name: 'publish-module-2'
+
 on:
   push:
     branches:
@@ -6,4 +7,8 @@ on:
     paths:
       - 'module-2/**'
 
-# The rest of the workflow definition goes here.
+jobs:
+  publish:
+    uses: ./.github/workflows/publish-module.yml
+    with:
+      path: 'module-2/main.bicep'
