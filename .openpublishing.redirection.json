@@ -10268,7 +10268,7 @@
     {
       "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/6-compare-external-identity-solutions.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/8-design-for-conditional-access.md",
@@ -10278,7 +10278,7 @@
     {
       "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/7-design-for-role-based-access-control.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/9-design-for-identity-protection.md",
@@ -10453,12 +10453,12 @@
     {
       "source_path": "learn-pr/paths/bicep-deploy/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/fundamentals-bicep",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/paths/bicep-collaborate/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/intermediate-bicep",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/describe-performance-monitoring/5-describe-azure-intelligent-insights.md",
@@ -11156,8 +11156,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/paths/sql-server-2017-upgrades/index.yml",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/paths/sql-server-2019-upgrades/",
+      "source_path": "learn-pr/paths/sql-server-2017-upgrades/index.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/paths/sql-server-upgrades/",
       "redirect_document_id": false
     },
     {
