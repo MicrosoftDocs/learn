@@ -6,7 +6,7 @@ Let's start by learning how to use the Visual Studio debugger with .NET.
 
 Launch the application with the debugger attached using the **Start** button at the top of Visual Studio, which will include our project name. Once the app is running, a variety of additional debugging tools and features will become available.
 
-:::image source="../media/visual-studio-debugging-controls.png" alt-text="Screenshot of Visual Studio prompt to install the C# extension.":::
+:::image source="../media/visual-studio-debugging-controls.png" alt-text="Screenshot of Visual Studio debugging controls.":::
 
 1) Solution configuration specifies whether to run our app in Debug or Release mode
 1) Platform configuration specifies a target CPU platform
@@ -45,7 +45,7 @@ If you right-click to add a breakpoint, you can also select **Add Conditional Br
 
 In the **Breakpoints** window (Debug -> Windows -> Breakpoints), you can see and toggle all the breakpoints you placed in your code. You can also toggle options to break on caught or uncaught exceptions. You can use the **Breakpoints** panel to examine your program state and trace back the source of an exception by using the **Call stack** when one occurs.
 
-:::image source="../media/visual-studio-breakpoints-window.png" alt-text="Screenshot of setting a conditional breakpoint in Visual Studio.":::
+:::image source="../media/visual-studio-breakpoints-window.png" alt-text="Screenshot of the Visual Studio Breakpoints window.":::
 
 ## Visual Studio debugging tools
 
@@ -65,7 +65,7 @@ We can also access other helpful debugging windows by clicking **Debug -> Window
 1. **Autos Window** - automatically adds watches to variables in the current context.
 1. **Output Window** - shows the output of logging statements or code that writes to the console.
 
-:::image source="../media/visual-studio-debugging-windows.png" alt-text="Screenshot of Visual Studio debugger overview.":::
+:::image source="../media/visual-studio-debugging-windows.png" alt-text="Screenshot of Visual Studio debugging window options.":::
 
 ### View and edit your variables state
 
@@ -73,7 +73,7 @@ When you analyze the cause of a program defect, watch the state of your variable
 
 The **Autos** window will automatically populate variables in the current scope and context, along with their values. This is a simple and easy choice for seeing a general overview of the state of your running code.
 
-:::image source="../media/visual-studio-autos.png" alt-text="Screenshot of variable hover during debugging.":::
+:::image source="../media/visual-studio-autos.png" alt-text="Screenshot of the Autos window in Visual Studio.":::
 
 It's possible to change the value of a variable on the fly by double-clicking the variable value.
 
@@ -105,6 +105,6 @@ The group of `at [...]` lines under the error message is called a *stack trace*.
 
 That's where the Visual Studio **Call stack** window comes in handy. It filters out unwanted information to show you only the relevant functions from your own code by default. You then can unwind this call stack to find out where the exception originated from.
 
-:::image source="../media/visual-studio-callstack.png" alt-text="Screenshot of variable hover during debugging.":::
+:::image source="../media/visual-studio-callstack.png" alt-text="Screenshot of the Call Stack window.":::
 
 In the next unit, you'll walk through an exercise using the debugger to fix the bug in the Fibonacci code we saw previously.
