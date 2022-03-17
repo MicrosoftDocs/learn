@@ -18,7 +18,7 @@ Data frames present the most common way to store data in R to permit analysis. Y
 
 :::image type="content" source="../media/data-frame-example.png" alt-text="Table illustrating a data frame with some sample data."::: 
 
-A tibbles, on the other hand, is a modern data frame that seeks to improve on some aspects of the R built-in data frame. The terms tibble and data frame are used interchangeably in this learning path. 
+A tibble, on the other hand, is a modern data frame that seeks to improve on some aspects of the R built-in data frame. The terms tibble and data frame are used interchangeably in this module. 
 
 ## Explore data in a Jupyter notebook 
 
@@ -28,7 +28,7 @@ Jupyter notebooks are a popular way to run basic scripts by using a web browser.
 
 Data exploration and analysis is ordinarily an *iterative* process, in which data scientists analyze a sample of data and test their hypotheses by performing the following kinds of tasks: 
 
-- **Clean the data** to handle errors, missing values, and other issues. 
+- **Clean the data** to mange errors, missing values, and other issues. 
 - **Apply statistical techniques to better understand the data** and how the sample might be expected to represent the real-world population of data, allowing for random variation. 
 - **Visualize the data** to determine relationships between variables and, in the case of a machine learning project, to identify *features* that are potentially predictive of the *label*. 
 - **Revise the hypothesis** and repeat the process. 
