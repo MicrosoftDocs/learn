@@ -6,7 +6,7 @@ To complete this exercise, you will need a Microsoft Azure subscription. If you 
 
 To use Synapse Analytics, you must provision a Synapse Analytics Workspace resource in your Azure subscription.
 
-1. Open the Azure portal at [https://portal.azure/com](https://portal.azure/com?portal=true), and sign in using the credentials associated with your Azure subscription.
+1. Open the Azure portal at [https://portal.azure.com](https://portal.azure/com?portal=true), and sign in using the credentials associated with your Azure subscription.
 
     Ensure you are working in the directory containing your own subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory. Note that if you previously used a Microsoft Learn sandbox subscription, the portal may have defaulted to the *Microsoft Learn Sandbox* directory. If so, you'll need to switch to your own directory.
 
