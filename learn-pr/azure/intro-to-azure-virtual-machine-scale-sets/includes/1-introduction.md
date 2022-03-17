@@ -6,11 +6,11 @@ You're responsible for many production applications at Adatum, a company that de
 - You have one application on a single virtual machine (VM) that doesn't experience variance in utilization and doesn't have an architecture that lets it be load balanced.
 - You have one application on a single VM that is only used during business hours by a limited number of people.
 
-Azure virtual machine scale sets let you create and manage a group of load balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule. 
+Azure virtual machine scale sets let you create and manage a group of load balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule.
 
 Scale sets provide high availability to your applications, and you can centrally manage, configure, and update a large number of VMs. With virtual machine scale sets, you can build large-scale services for areas such as compute, big data, and container workloads.
 
-This module explains what Azure virtual machine scale sets do, how it works, and when you should choose to use Azure virtual machine scale sets as a solution to meet your organization’s needs.
+This module explains what Azure virtual machine scale sets do, how they work, and when you should choose to use Azure virtual machine scale sets as a solution to meet your organization's needs.
 
 ## Learning objectives
 

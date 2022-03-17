@@ -10,6 +10,7 @@ Adatum wouldn't choose to use a virtual machine scale set for the following appl
 
 - **The application that is hosted on a single VM that doesn't experience variance in utilization and doesn't have an architecture that lets it be load balanced**\
 In this case, just hosting the IaaS VM normally in Azure is an appropriate option, though the VM should regularly be checked to ensure that the VM’s performance profile is commensurate with the VM size assigned.
+
 - **The application hosted on an IaaS VM that is only used several hours per day by a limited number of people shouldn't be configured to use virtual machine scale sets**\
 In this case you could use scheduled VM startup and shutdown to optimize costs, ensuring that the VM was available during business hours and offline when no one is at work.
 
