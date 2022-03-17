@@ -4,16 +4,23 @@
 1. In the **Build Settings** window, select **Universal Windows Platform**.
 1. Make sure the following settings are active:
 
-**Target device****: HoloLens
-**Architecture**: ARM 64
+**Target device**: HoloLens
+
+**Architecture**: ARM64
+
 **Build Type**: D3D Project
+
 **Target SDK Version**: Latest Installed
+
 **Minimum Platform Version**: 10.0.10240.0
+
 **Visual Studio Version**: Latest installed
+
 **Build and Run on**: Local Machine
+
 **Build configuration**: Release (there are known performance issues with Debug)
 
-1. Click the **Switch Platform** button. Unity proceeds to switch the platform and displays a progress bar.
+1. Click the **Switch Platform** button. Unity displays a progress bar while it switches platforms.
 1. After the switch platform process is finished, close the **Build Settings** window.
 
 ## [Unity 2019/2020 + windows xr plugin](#tab/winxr)

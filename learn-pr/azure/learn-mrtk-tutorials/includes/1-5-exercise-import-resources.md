@@ -1,14 +1,15 @@
 
 ## Import the MRTK Unity foundation package
 
-To import the Mixed Reality Toolkit into your project we'll use the Mixed Reality Feature Tool, which allows developers to discover, update, and import feature packages. You can search packages by name or category, see their dependencies, and even view proposed changes to your project's manifest file before importing.
+To import the Mixed Reality Toolkit into your project we'll use the Mixed Reality Feature Tool, which allows developers to discover, update, and import feature packages. You can search packages by name or category, see their dependencies, and view proposed changes to your project's manifest file before importing.
 
-1. Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool). 1. After the download finishes, unzip the file and save it to your desktop.
+1. Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool).
+1. After the download finishes, unzip the file and save it to your desktop.
 
     > [!NOTE]
     > Before you can run the Mixed Reality Feature Tool, you must install the [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
 
-1. In the unzipped folder, navigate to the executable file **MixedRealityFeatureTool.exe** and then use it to launch the Mixed Reality Feature Tool.
+2. In the unzipped folder, navigate to the executable file **MixedRealityFeatureTool.exe** and then use it to launch the Mixed Reality Feature Tool.
 
 :::image type="content" source="../media/open-mixed-reality-feature-tool.png" alt-text="Screenshot of Opening MixedRealityFeatureTool.":::
 
@@ -25,6 +26,17 @@ To import the Mixed Reality Toolkit into your project we'll use the Mixed Realit
     The Mixed Reality Toolkit settings appear in the Inspector.
 
     :::image type="content" source="../media/023-add-mrtk.png" alt-text="Screenshot of the Mixed Reality Toolkit in the Inspector.":::
+
+    After MRTK is added to the scene and configured, two new objects are added to the **Hierarchy**  window:
+
+    **MixedRealityToolkit**
+    **MixedRealityPlayspace**
+
+    The MixedRealityToolkit object contains the Toolkit itself. The MixedRealityPlayspace object ensures that the headset/controllers and other required systems are managed correctly in the scene.
+
+    The Main Camera object becomes a child to the MixedRealityPlayspace object. This allows the play space to manage the camera simultaneously with the SDKs.
+
+    :::image type="content" source="../media/039-MRTK-objects-in-hierarchy.png" alt-text="Screenshot of new objects in the Hierarchy after MRTK is added.":::
 
 4. In the Inspector, verify that the profile drop down displays **DefaultMixedRealityToolkitConfigurationProfile:**
 

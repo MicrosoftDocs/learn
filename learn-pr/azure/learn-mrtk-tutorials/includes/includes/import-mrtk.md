@@ -24,16 +24,19 @@
     :::image type="content" source="../images/003-mrft-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
 
 1. Click the "+" button to the left of **Mixed Reality Toolkit (0 of 10)** and then select the latest version of **Mixed Reality Toolkit Foundation**.
-1. Click the "+" button to the left of **Platform Support (0 of 5)** and then select the latest version of **Mixed Reality OpenXR Plugin**.
+
+    > [!NOTE] The Mixed Reality Toolkit Foundation package is the only package that _must_ be imported and configured in order to use MRTK with your project. This package includes the core components required to create a mixed reality application.
+
+2. Click the "+" button to the left of **Platform Support (0 of 5)** and then select the latest version of **Mixed Reality OpenXR Plugin**.
  
      :::image type="content" source="../../008-package-selections.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool.":::
 
-1. After you've made your selection(s), click **Get Features**.
-1. Select **Validate** to validate the packages you selected. You should see a dialog that says **No validation issues were detected**. When you do, click **OK**.
-1. On the **Import Features** page, the left-side column, **Features**, displays the packages you just selected. The right-side column, **Required dependencies**, displays any dependencies. You can click the **Details** link for any of these items to learn more about them.
-1. When you're ready to move on, select **Import.** On the **Review and Approve** page, you can review information about the packages.
-1. Select **Approve.** The Tool displays a message that says your project has been updated.
-1. Return to the Unity Editor and click a blank area in the UI. You'll see a message telling you that your packages are being imported.
+3. After you've made your selection(s), click **Get Features**.
+4. Select **Validate** to validate the packages you selected. You should see a dialog that says **No validation issues were detected**. When you do, click **OK**.
+5. On the **Import Features** page, the left-side column, **Features**, displays the packages you just selected. The right-side column, **Required dependencies**, displays any dependencies. You can click the **Details** link for any of these items to learn more about them.
+6. When you're ready to move on, select **Import.** On the **Review and Approve** page, you can review information about the packages.
+7. Select **Approve.**
+8. Return to the Unity Editor and click a blank area in the UI. You'll see a progress bar showing you that your packages are being imported.
  
 ## Configure the Unity project
 
@@ -89,9 +92,9 @@
 
     :::image type="content" source="../../media/018-interaction-profiles.png" alt-text="Screenshot of interaction profiles that should be added.":::
 
-    If the **Eye Gaze Interaction Profile**, or any other profile, appears with a yellow triangle next to it, select the triangle, and then in the **OpenXR Project Validation** window, click the **Fix** button. When you're finised, close the window.
+    If the **Eye Gaze Interaction Profile**, or any other profile, appears with a yellow triangle next to it, select the triangle, and then in the **OpenXR Project Validation** window, click the **Fix** button. When you're finished, close the **OpenXR Project Validation** window.
 
-        :::image type="content" source="../../media/019-fix-eye-gaze.png" alt-text="Screenshot of the Fix button for the Eye Gaze interaction profile.":::
+    :::image type="content" source="../../media/019-fix-eye-gaze.png" alt-text="Screenshot of the Fix button for the Eye Gaze interaction profile.":::
 
 1. In the **Project Settings** window under **OpenXR Feature Groups**, ensure that the following are selected:
    
@@ -123,7 +126,7 @@
 
 ## Configure project settings for OpenXR
 
-1. In the menu bar, select **Edit** > **Project Settings...**.
+1. After Unity restarts, in the menu bar, select **Edit** > **Project Settings...**.
 
 1. In the **Project Settings** window's left-side column, select **Player**.
 1. Note that in the **Player** window, the **Product Name** is "MRTK Tutorial." This is taken from your project name and will be the name displayed in the HoloLens Start menu.
@@ -139,6 +142,8 @@
 
     > [!NOTE]
     > The package name is the unique identifier for the app. If you want to avoid overwriting previously installed versions of the app with the same name, you should change this identifier before deploying the app.
+
+1. Close the **Project Settings** window.
 
 ## [Unity 2019/2020 + windows xr plugin](#tab/winxr)
 
@@ -270,6 +275,8 @@
 1. Select **Approve** to add the **Mixed Reality Toolkit** into the project.
 
     :::image type="content" source="../../media/select-required-package-validate.png" alt-text= "Screenshot of MixedRealityFeatureTool Validate package." lightbox="../../media/select-required-package-validate.png":::
+
+
 
 ## Configure the Unity project
 
