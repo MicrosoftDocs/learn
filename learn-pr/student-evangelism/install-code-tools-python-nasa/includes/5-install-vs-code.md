@@ -7,7 +7,7 @@ If you're following this module as part of a Learning Path, you'll probably also
 As mentioned before, Visual Studio Code is free. If you're using a Windows computer, you can download it [on the Visual Studio Code learning page](https://aka.ms/LearnOnVSCode?azure-portal=true). Download the Coding Pack for Python, which will install Python and the necessary extensions as well. When the program has finished downloading, run the executable file to start the installation process.
 
 > [!NOTE]
-> The picture below shows someone using Windows 10 or Windows 11 with the Microsoft Edge browser. If you're using a macOS or Linux device, select the appropriate version from the dropdown or select **(other downloads)** to make the selection that best represents your system. We'll walk you through how to [install Python](/learn/modules/install-code-tools-python-nasa/7-install-python) and all of the necessary extensions in Unit 7 of this module.
+> The picture below shows someone using Windows 11 with the Microsoft Edge browser. If you're using a macOS or Linux device, select the appropriate version from the dropdown or select **(other downloads)** to make the selection that best represents your system. We'll walk you through how to [install Python](/learn/modules/install-code-tools-python-nasa/7-install-python) and all of the necessary extensions in Unit 7 of this module.
 
 :::image type="content" source="../media/download-vs-code.png" alt-text="Screenshot of the VS Code download page on the Visual Studio Code website.":::
 
@@ -33,5 +33,5 @@ When you first come into Visual Studio Code, you'll be greeted with a **Get Star
 - **Explorer:** Shows the file(s) you have open and the contents of the folder, if you're in one
 - **Search:** Allows you to look for a certain word or collection of words in your file
 - **Source control:** Helps you write/share code with others
-- **Run and Debug:** Runs the code you write
+- **Run and Debug:** Run and debug the code you write
 - **Extensions:** Shows all the additions people from across the globe have made. There are different color themes, programming languages, and more. You can install and customize Visual Studio Code as you like

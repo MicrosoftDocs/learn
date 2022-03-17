@@ -1,7 +1,7 @@
 Now that you have installed Visual Studio Code, you'll need to download Python so your computer knows how to run and interpret the code you write.
 
 > [!NOTE]
-> Most Mac and Linux computers comes with Python pre-installed, however it might not be up to date. Also, if you have installed the [Visual Studio Code Coding Pack for Python](https://aka.ms/LearnOnVSCode?azure-portal=true), then you can skip to Unit 9.
+> Most Mac and Linux computers come with Python pre-installed, however it might not be up to date. Also, if you have installed the [Visual Studio Code Coding Pack for Python](https://aka.ms/LearnOnVSCode?azure-portal=true), then you can skip to Unit 9.
 
 To start, install [Python 3.10 (or later) from python.org](https://www.python.org/downloads/?azure-portal=true). Select **Download Python X.XX** to begin the installation. After it's downloaded, run the executable to install. These instructions are for a Windows computer. If you have Linux or Mac, use the links that correspond to your operating system.
 
