@@ -57,6 +57,6 @@ In this exercise, you'll create a Docker Compose YAML file, then use the Docker 
     Attaching to docker-aspnet-pizza_backend_1, docker-aspnet-pizza_frontend_1
     ```
 
-1. You can browse to: http://localhost:5002 to see the Contoso Pizza menu.
+1. You can browse to: http://localhost:5902 to see the Contoso Pizza menu.
 
 In this exercise, you learned how to create and write a Docker Compose file, how to build the services contained within, and how to run those services.
