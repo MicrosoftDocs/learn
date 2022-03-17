@@ -150,25 +150,6 @@ Modify the registration page to allow administrators to register using the follo
 
 Run the following command:
 
-::: zone pivot="pg"
-
-```bash
-db -c 'SELECT u."Email", c."ClaimType", c."ClaimValue" FROM "AspNetUserClaims" AS c INNER JOIN "AspNetUsers" AS u ON c."UserId" = u."Id"'
-```
-
-A variation of the following output appears:
-
-```console
-        Email         | ClaimType | ClaimValue
-----------------------+-----------+------------
- scott@contoso.com    | IsAdmin   | True
-(1 row)
-```
-
-::: zone-end
-
-::: zone pivot="sql"
-
 ```bash
 db -Q "SELECT u.Email, c.ClaimType, c.ClaimValue FROM dbo.AspNetUserClaims AS c INNER JOIN dbo.AspNetUsers AS u ON c.UserId = u.Id" -Y25 -y10
 ```
@@ -180,7 +161,5 @@ Email                     ClaimType  ClaimValue
 ------------------------- ---------- ----------
 scott@contoso.com         IsAdmin    True
 ```
-
-::: zone-end
 
 The `IsAdmin` claim is stored as a key-value pair in the `AspNetUserClaims` table. The `AspNetUserClaims` record is associated with the user record in the `AspNetUsers` table.

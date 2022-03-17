@@ -3,9 +3,9 @@ uid: learn.secure-aspnet-core-identity
 metadata:
   title: Secure a .NET web app with the ASP.NET Core Identity framework
   description: Add authentication and authorization to a .NET web app using the ASP.NET Core Identity framework.
-  ms.date: 08/20/2019
-  author: scottaddie
-  ms.author: scaddie
+  ms.date: 03/16/2022
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Secure a .NET web app with the ASP.NET Core Identity framework
@@ -36,13 +36,12 @@ products:
 - ef-core
 units:
 - learn.secure-aspnet-core-identity.1-introduction
-- learn.secure-aspnet-core-identity.2-setup-environment
+- learn.secure-aspnet-core-identity.understand-aspnetcore-identity
 - learn.secure-aspnet-core-identity.3-add-identity
 - learn.secure-aspnet-core-identity.4-customize-identity
 - learn.secure-aspnet-core-identity.5-multi-factor-authentication
 - learn.secure-aspnet-core-identity.6-claims-policy-authorization
 - learn.secure-aspnet-core-identity.7-knowledge-check
 - learn.secure-aspnet-core-identity.8-summary
-iconUrl: /learn/achievements/aspnetcore/secure-aspnet-core-identity.svg
 badge:
   uid: learn.secure-aspnet-core-identity.badge

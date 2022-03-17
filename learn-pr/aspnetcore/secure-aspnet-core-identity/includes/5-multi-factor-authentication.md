@@ -8,8 +8,8 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 
 * The NuGet package, `QRCoder`, has already been installed in the project.
 * All interactions with the `QRCoder` library are abstracted away in the *:::no-loc text="Services/QRCodeService.cs":::* file. The `QRCodeService` class:
-    * Uses constructor injection to gain access to an instance of the library's `QRCodeGenerator` class.
-    * Exposes the `GetQRCodeAsBase64` method to return the base-64 encoded string. The QR code dimensions are determined by the integer value passed to `GetGraphic`. In this case, the generated QR code will be composed of blocks sized four pixels squared.
+  * Uses constructor injection to gain access to an instance of the library's `QRCodeGenerator` class.
+  * Exposes the `GetQRCodeAsBase64` method to return the base-64 encoded string. The QR code dimensions are determined by the integer value passed to `GetGraphic`. In this case, the generated QR code will be composed of blocks sized four pixels squared.
 * `QRCodeService` is registered as a singleton service in the IoC container within *:::no-loc text="Startup.cs":::*.
 
 ## Customize multi-factor authentication
@@ -77,25 +77,11 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 
 1. Run the following command to see the effect on the `AspNetUsers` table's `TwoFactorEnabled` column:
 
-    ::: zone pivot="pg"
-
-    ```bash
-    db -c 'SELECT "FirstName", "LastName", "Email", "TwoFactorEnabled" FROM "AspNetUsers"'
-    ```
-
-    For the logged in user, the output shows that the `TwoFactorEnabled` column is equal to `t`. Because multi-factor authentication hasn't been enabled for the other registered user, the record's column value is `f`.
-
-    ::: zone-end
-
-    ::: zone pivot="sql"
-
     ```bash
     db -Q "SELECT FirstName, LastName, Email, TwoFactorEnabled FROM dbo.AspNetUsers" -Y 25
     ```
 
     For the logged in user, the output shows that the `TwoFactorEnabled` column is equal to `1`. Because multi-factor authentication hasn't been enabled for the other registered user, the record's column value is `0`.
-
-    ::: zone-end
 
 1. Select **Logout**, and then log in again with the same user.
 

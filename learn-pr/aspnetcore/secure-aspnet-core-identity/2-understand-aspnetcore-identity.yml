@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-aspnet-core-identity.understand-aspnetcore-identity
+metadata:
+  title: Set up the environment
+  description: Provision Azure resources, download the ASP.NET Core starter project, and tour the starter project.
+  ms.date: 03/16/2022
+  author: camsoper
+  ms.author: casoper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Understand ASP.NET Core Identity
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-understand-aspnetcore-identity.md)]

@@ -1,37 +1,4 @@
-In this unit, you'll gain an understanding of Identity architecture. You'll start by running a script to set up the module's Linux development environment. The script downloads a cross-platform starter project and provisions Azure resources to support tasks throughout the module. Identity will be added to the starter project. No prior Linux experience is necessary.
-
-This module focuses on just two of the possible EF Core data stores supported by Identity. Use the toggle above to select your preference.
-
-## Set up development environment
-
-Run the following command in the command shell. The command reflects your data store choice in the toggle above. Be patient, as setup can take a few minutes to complete. Continue reading while the script runs.
-
-::: zone pivot="pg"
-
-```bash
-. <(wget -q -O - https://aka.ms/secure-aspnet-core-identity-setup) "pg"
-```
-
-::: zone-end
-
-::: zone pivot="sql"
-
-```bash
-. <(wget -q -O - https://aka.ms/secure-aspnet-core-identity-setup) "sql"
-```
-
-::: zone-end
-
-[!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
-
-The preceding command retrieves and runs a setup script from a GitHub repository. The script completes the following steps:
-
-* Clones the ASP.NET Core starter code from a GitHub repository.
-* Builds and deploys an ASP.NET Core web API to supply the web app with data.
-* Provisions a database to store Identity framework entities.
-* Sets environment variables that are required for this module.
-* Displays connection information for the Azure resources.
-* Launches the Cloud Shell Editor to view the starter code.
+In this unit, you'll gain an understanding of Identity architecture.
 
 ## Review ASP.NET Core Identity architecture
 
@@ -45,17 +12,7 @@ The intricacies of interacting with the underlying database are abstracted away 
 
 The following diagram depicts the Identity architecture used in this module:
 
-::: zone pivot="pg"
-
-![architecture diagram.](../media/2-architecture-diagram-pg.png)
-
-::: zone-end
-
-::: zone pivot="sql"
-
 ![architecture diagram.](../media/2-architecture-diagram-sql.png)
-
-::: zone-end
 
 In the preceding diagram:
 

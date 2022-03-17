@@ -3,9 +3,9 @@ uid: learn.secure-aspnet-core-identity.6-claims-policy-authorization
 metadata:
   title: Exercise - Use claims with policy-based authorization
   description: Learn how to create and persist user claims in an ASP.NET Core web app.
-  ms.date: 08/20/2019
-  author: scottaddie
-  ms.author: scaddie
+  ms.date: 03/16/2022
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
   zone_pivot_groups: aspnet-core-identity-data-store

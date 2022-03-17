@@ -4,8 +4,8 @@ After applying the initial EF Core migration, the supporting database tables are
 
 ![database diagram.](../media/3-identity-tables.png)
 
-  > [!NOTE] 
-  >  The above image shows the key(s) and relationships in the database. The key is a one, and the infinity (sideways 8) is a many.  A database can have 1 to 1, 1 to many, and many to many relationship types.  Keys are unique.  The diagram shows how these joins are created, and the relationships. 
+  > [!NOTE]
+  > The above image shows the key(s) and relationships in the database. The key is a one, and the infinity (sideways 8) is a many.  A database can have 1 to 1, 1 to many, and many to many relationship types.  Keys are unique.  The diagram shows how these joins are created, and the relationships.
 
 In this unit, Identity will be added to the existing ASP.NET Core Razor Pages project.
 
@@ -77,50 +77,9 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
     Areas provide a way to partition an ASP.NET Core web app into smaller functional groups.
 
-::: zone pivot="pg"
-
-## Add the PostgreSQL database provider
-
-Run the following command from the project root to install the PostgreSQL database provider for EF Core:
-
-```dotnetcli
-dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 3.1.3
-```
-
-This NuGet package provides EF Core with knowledge of how to interact with a PostgreSQL database.
-
-::: zone-end
-
 ## Configure the database connection
 
 1. Replace the `Configure` method of *:::no-loc text="Areas/Identity/IdentityHostingStartup.cs":::* with the following code:
-
-    ::: zone pivot="pg"
-
-    ```csharp
-    public void Configure(IWebHostBuilder builder)
-    {
-        builder.ConfigureServices((context, services) => {
-            var connBuilder = new NpgsqlConnectionStringBuilder(
-                context.Configuration.GetConnectionString("ContosoPetsAuthConnection"))
-            {
-                Username = context.Configuration["DbUsername"],
-                Password = context.Configuration["DbPassword"]
-            };
-
-            services.AddDbContext<ContosoPetsAuth>(options =>
-                options.UseNpgsql(connBuilder.ConnectionString));
-
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddDefaultUI()
-                .AddEntityFrameworkStores<ContosoPetsAuth>();
-        });
-    }
-    ```
-
-    ::: zone-end
-
-    ::: zone pivot="sql"
 
     ```csharp
     public void Configure(IWebHostBuilder builder)
@@ -142,8 +101,6 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
         });
     }
     ```
-
-    ::: zone-end
 
     In the preceding code:
 
@@ -173,25 +130,11 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
 1. Also in *:::no-loc text="IdentityHostingStartup.cs":::*, add the following code to the block of `using` statements at the top. Save your changes.
 
-    ::: zone pivot="pg"
-
-    ```csharp
-    using Npgsql;
-    ```
-
-    The preceding code resolves the reference to the `NpgsqlConnectionStringBuilder` class in the `Configure` method.
-
-    ::: zone-end
-
-    ::: zone pivot="sql"
-
     ```csharp
     using Microsoft.Data.SqlClient;
     ```
 
     The preceding code resolves the reference to the `SqlConnectionStringBuilder` class in the `Configure` method.
-
-    ::: zone-end
 
 1. In the `Configure` method of *:::no-loc text="Startup.cs":::*, replace the `// Add the app.UseAuthentication code` comment with the following code. Save your changes.
 
@@ -207,29 +150,15 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     echo $dbConnectionString
     ```
 
-1. In *:::no-loc text="appsettings.json":::*, replace the connection string for `ContosoPetsAuthConnection` with the connection string from the previous step. Save your changes. 
+1. In *:::no-loc text="appsettings.json":::*, replace the connection string for `ContosoPetsAuthConnection` with the connection string from the previous step. Save your changes.
 
     The `ConnectionStrings` section should look similar to the following JSON:
-
-    ::: zone pivot="pg"
-
-    ```json
-    "ConnectionStrings": {
-        "ContosoPetsAuthConnection": "Server={HOST NAME}.postgres.database.azure.com;Database=contosopets;Port=5432;Ssl Mode=Require;"
-    }
-    ```
-
-    ::: zone-end
-
-    ::: zone pivot="sql"
 
     ```json
     "ConnectionStrings": {
         "ContosoPetsAuthConnection": "Data Source={HOST NAME}.database.windows.net;Initial Catalog=ContosoPets;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
     }
     ```
-
-    ::: zone-end
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
@@ -263,35 +192,6 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
     The `CreateIdentitySchema` EF Core migration applied a Data Definition Language (DDL) change script to create the tables supporting Identity. For example, the following excerpt depicts a `CREATE TABLE` statement generated by the migration:
 
-    ::: zone pivot="pg"
-
-    ```console
-    info: Microsoft.EntityFrameworkCore.Database.Command[20101]
-      Executed DbCommand (329ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      CREATE TABLE "AspNetUsers" (
-          "Id" text NOT NULL,
-          "UserName" character varying(256) NULL,
-          "NormalizedUserName" character varying(256) NULL,
-          "Email" character varying(256) NULL,
-          "NormalizedEmail" character varying(256) NULL,
-          "EmailConfirmed" boolean NOT NULL,
-          "PasswordHash" text NULL,
-          "SecurityStamp" text NULL,
-          "ConcurrencyStamp" text NULL,
-          "PhoneNumber" text NULL,
-          "PhoneNumberConfirmed" boolean NOT NULL,
-          "TwoFactorEnabled" boolean NOT NULL,
-          "LockoutEnd" timestamp with time zone NULL,
-          "LockoutEnabled" boolean NOT NULL,
-          "AccessFailedCount" integer NOT NULL,
-          CONSTRAINT "PK_AspNetUsers" PRIMARY KEY ("Id")
-      );
-    ```
-
-    ::: zone-end
-
-    ::: zone pivot="sql"
-
     ```console
     info: Microsoft.EntityFrameworkCore.Database.Command[20101]
           Executed DbCommand (98ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
@@ -315,35 +215,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
           );
     ```
 
-    ::: zone-end
-
 1. Run the following command to list the tables in the database:
-
-    ::: zone pivot="pg"
-
-    ```bash
-    db -c "SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema' ORDER BY tablename"
-    ```
-
-    The output confirms the creation of the tables:
-
-    ```console
-           tablename
-    -----------------------
-     AspNetRoleClaims
-     AspNetRoles
-     AspNetUserClaims
-     AspNetUserLogins
-     AspNetUserRoles
-     AspNetUserTokens
-     AspNetUsers
-     __EFMigrationsHistory
-    (8 rows)
-    ```
-
-    ::: zone-end
-
-    ::: zone pivot="sql"
 
     ```bash
     db -Q "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='dbo' ORDER BY TABLE_NAME" -Y 25
@@ -365,8 +237,6 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
     (8 rows affected)
     ```
-
-    ::: zone-end
 
 ## Add the login and registration links
 

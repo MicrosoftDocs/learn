@@ -262,14 +262,6 @@ groups:
       title: Visual Studio 2017
     - id: vs2019
       title: Visual Studio 2019
-- id: aspnet-core-identity-data-store
-  title: Identity-Data-Store
-  prompt: Choose the ASP.NET Core Identity data store
-  pivots:
-    - id: pg
-      title: PostgreSQL
-    - id: sql
-      title: SQL Server
 - id: vsandcode
   title: IDE
   prompt: Choose your app Integrated Development Environment (IDE)

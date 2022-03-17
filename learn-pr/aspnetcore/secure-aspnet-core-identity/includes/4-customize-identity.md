@@ -98,21 +98,6 @@ UI changes are also required to collect the additional user profile information.
 
     The `UpdateUser` EF Core migration applied a DDL change script to the `AspNetUsers` table's schema. Specifically, `FirstName` and `LastName` columns were added, as seen in the following migration output excerpt:
 
-    ::: zone pivot="pg"
-
-    ```console
-    info: Microsoft.EntityFrameworkCore.Database.Command[20101]
-      Executed DbCommand (1,005ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-      ALTER TABLE "AspNetUsers" ADD "FirstName" character varying(100) NOT NULL DEFAULT '';
-    info: Microsoft.EntityFrameworkCore.Database.Command[20101]
-        Executed DbCommand (517ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
-        ALTER TABLE "AspNetUsers" ADD "LastName" character varying(100) NOT NULL DEFAULT '';
-    ```
-
-    ::: zone-end
-
-    ::: zone pivot="sql"
-
     ```console
     info: Microsoft.EntityFrameworkCore.Database.Command[20101]
         Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
@@ -122,61 +107,7 @@ UI changes are also required to collect the additional user profile information.
         ALTER TABLE [AspNetUsers] ADD [LastName] nvarchar(100) NOT NULL DEFAULT N'';
     ```
 
-    ::: zone-end
-
     Complete the following steps to analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema. You'll gain an understanding of the impact extending the Identity data model has on the underlying data store.
-
-::: zone pivot="pg"
-
-2. Run the following command to view the table schema:
-
-    ```bash
-    db -c '\d "AspNetUsers"'
-    ```
-
-    The following output displays:
-
-    ```console
-                                        Table "public.AspNetUsers"
-            Column        |           Type           | Collation | Nullable |        Default
-    ----------------------+--------------------------+-----------+----------+-----------------------
-     Id                   | text                     |           | not null |
-     UserName             | character varying(256)   |           |          |
-     NormalizedUserName   | character varying(256)   |           |          |
-     Email                | character varying(256)   |           |          |
-     NormalizedEmail      | character varying(256)   |           |          |
-     EmailConfirmed       | boolean                  |           | not null |
-     PasswordHash         | text                     |           |          |
-     SecurityStamp        | text                     |           |          |
-     ConcurrencyStamp     | text                     |           |          |
-     PhoneNumber          | text                     |           |          |
-     PhoneNumberConfirmed | boolean                  |           | not null |
-     TwoFactorEnabled     | boolean                  |           | not null |
-     LockoutEnd           | timestamp with time zone |           |          |
-     LockoutEnabled       | boolean                  |           | not null |
-     AccessFailedCount    | integer                  |           | not null |
-     FirstName            | character varying(100)   |           | not null | ''::character varying
-     LastName             | character varying(100)   |           | not null | ''::character varying
-    ```
-
-    The `FirstName` and `LastName` properties in the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `character varying(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because of the `[Required]` attributes.
-
-3. Scroll down in the command shell until the following index information displays:
-
-    ```console
-    Indexes:
-        "PK_AspNetUsers" PRIMARY KEY, btree ("Id")
-        "UserNameIndex" UNIQUE, btree ("NormalizedUserName")
-        "EmailIndex" btree ("NormalizedEmail")
-    ```
-
-    The `PK_AspNetUsers` index shows that the `Id` column is the unique identifier for a user account.
-
-4. Press the <kbd>q</kbd> key to exit the text viewer in the command shell.
-
-::: zone-end
-
-::: zone pivot="sql"
 
 2. Run the following command to view the table schema:
 
@@ -223,8 +154,6 @@ UI changes are also required to collect the additional user profile information.
     --------------- --------------- ---------------
     AspNetUsers     Id              PK_AspNetUsers
     ```
-
-::: zone-end
 
 ## Customize the user registration form
 
@@ -300,26 +229,6 @@ Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the fi
 
 1. Run the following command to confirm that the first and last names are stored in the database:
 
-    ::: zone pivot="pg"
-
-    ```bash
-    db -c 'SELECT "UserName", "Email", "FirstName", "LastName" FROM "AspNetUsers"'
-    ```
-
-    A variation of the following output displays:
-
-    ```console
-             UserName          |            Email          | FirstName | LastName
-    ---------------------------+---------------------------+-----------+----------
-     kai.klein@contoso.com     | kai.klein@contoso.com     |           |
-     jana.heinrich@contoso.com | jana.heinrich@contoso.com | Jana      | Heinrich
-    (2 rows)
-    ```
-
-    ::: zone-end
-
-    ::: zone pivot="sql"
-
     ```bash
     db -Q "SELECT UserName, Email, FirstName, LastName FROM dbo.AspNetUsers" -Y 25
     ```
@@ -332,8 +241,6 @@ Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the fi
     kai.klein@contoso.com     kai.klein@contoso.com
     jana.heinrich@contoso.com jana.heinrich@contoso.com Jana                      Heinrich
     ```
-
-    ::: zone-end
 
     The first user registered prior to adding `FirstName` and `LastName` to the schema. Consequently, the associated `AspNetUsers` table record doesn't have data in those columns.
 

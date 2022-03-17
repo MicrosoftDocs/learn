@@ -3,9 +3,9 @@ uid: learn.secure-aspnet-core-identity.7-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check - Secure an ASP.NET Core web app with Identity
-  ms.date: 08/20/2019
-  author: scottaddie
-  ms.author: scaddie
+  ms.date: 03/16/2022
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Knowledge check
