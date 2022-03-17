@@ -19,29 +19,29 @@ quiz:
     choices:
     - content: Grant the service principal permission to write to your container registry.
       isCorrect: true
-      explanation: ""
+      explanation: Correct. The error message indicates an authorization error, so you need to authorize the service principal to write to the container registry.
     - content: Use semantic versioning.
       isCorrect: false
-      explanation: ""
-    - content: Publish the module manually at the command line, not in a pipeline.
+      explanation: Incorrect. The problem is unrelated to the module versioning strategy.
+    - content: Publish the module manually at the command line, not in an automated workflow.
       isCorrect: false
-      explanation: ""
+      explanation: Incorrect. You can publish the module from a workflow, as long as the workflow's service principal is authorized to write to the container registry.
   - content: Which of the following statements about semantic versioning is true?
     choices:
     - content: You should increment the major version number every time you change your Bicep file.
       isCorrect: false
-      explanation: ""
+      explanation: Incorrect. You should change your major version number when you make a breaking change, like adding a new parameter to your Bicep file.
     - content: You should increment the major version number whenever you make a breaking change to your Bicep file.
       isCorrect: true
-      explanation: ""
+      explanation: Correct. You should change your major version number when you make a breaking change, like adding a new parameter to your Bicep file.
     - content: You should never increment the major version number.
       isCorrect: false
-      explanation: ""
+      explanation: Incorrect. You should change your major version number when you make a breaking change, like adding a new parameter to your Bicep file.
   - content: You want to ensure that a Bicep template spec is well-formed before your pipeline publishes it to Azure. Which of the following checks should you run?
     choices:
     - content: Lint the Bicep file.
       isCorrect: true
-      explanation: ""
+      explanation: TODO
     - content: Run the what-if operation.
       isCorrect: false
       explanation: ""
