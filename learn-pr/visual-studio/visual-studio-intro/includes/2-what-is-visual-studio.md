@@ -7,12 +7,12 @@ Visual Studio is an integrated development environment (IDE). It's popular for .
 | Visual Studio                                                | VS Code                                     |
 |--------------------------------------------------------------|---------------------------------------------|
 | Developed over the past 25 years!                            | First released in 2015                      |
-| Full-featured                                                | Light-weight                                |
+| Full-featured (major language support, debugging, editing, and test features are built-in)     | Light-weight (acquiring extensions to support different languages and platforms is up to the user)                               |
 | Closed source (with some open-source components)             | Open source                                 |
 | Free for students, open-source contributors, and individuals | Free for everyone                           |
 | Marketplace for both paid-for and free extensions              | Thriving extension development ecosystem with both OSS and closed source extensions |
 
-To address the most popular question these days: what is the difference between Visual Studio and Visual Studio Code? Visual Studio Code is a wildly popular light-weight source code editor that was first released in 2015. It's a part of our Visual Studio editor family. Visual Studio is the fully integrated development environment with world class editor and debugger. VS Code is open source and free to use. Visual Studio is not open source, but the Community edition is free for students, open-source contributors, and individuals! VS Code allows amazing rapid open source development of its extensions. In VS Code, you manage most of the extensions that provide build tools and language support to your editor. In Visual Studio, much more is built in for a more focused and curated experience.
+To address the most popular question these days: what is the difference between Visual Studio and Visual Studio Code? Visual Studio Code is a wildly popular light-weight source code editor that was first released in 2015. It's a part of the Visual Studio editor family. Visual Studio is the fully integrated development environment with world class editor and debugger. VS Code is open source and free to use. Visual Studio is not open source, but the Community edition is free for students, open-source contributors, and individuals! VS Code allows amazing rapid open source development of its extensions. In VS Code, you manage most of the extensions that provide build tools and language support to your editor. In Visual Studio, much more is built in for a more focused and curated experience.
 
 :::image type="content" source="../media/intro-visual-studio-code.png" alt-text="Screenshot of Visual Studio and Visual Studio Code while both IDEs are debugging the same webapp called my first website.":::
 
