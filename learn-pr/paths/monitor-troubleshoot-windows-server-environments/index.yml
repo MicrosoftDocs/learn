@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-troubleshoot-windows-server-environments
 metadata:
   title: Monitor and troubleshoot Windows Server environments
   description: Monitor and troubleshoot Windows Server environments
-  ms.date: 12/03/2021
+  ms.date: 03/17/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   *   Experience working with Azure Active Directory (Azure AD)
 summary: |
   Learn to use monitoring and troubleshooing tools, processes, and best practices to streamline app performance and availabilty of your Windows Server environment and your Windows Server IaaS VMs and hybrid instances.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/monitor-and-troubleshoot-windows-server-environments.svg
 levels:
 - intermediate
 roles:

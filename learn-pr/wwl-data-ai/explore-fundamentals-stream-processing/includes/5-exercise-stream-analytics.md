@@ -80,7 +80,7 @@ This exercise can be completed using a free Microsoft Learn *sandbox* subscripti
 
 5. While the simulation is running, back in the Azure portal, return to the page for the **learn-*xxxxxxxxxxxxxxxxx...*** resource group, and select the **store*xxxxxxxxxxxx*** storage account.
 6. In the pane on the left of the storage account blade, select the **Storage browser** tab.
-7. In the storage browser, navigate toe **Data storage >Blob Containers** and then open the **data** container.
+7. In the storage browser, navigate to **Data storage >Blob Containers** and then open the **data** container.
 8. In the **data** container, navigate through the folder hierarchy, which includes a folder for the current year, with subfolders for the month, day, and hour.
 9. In the folder for the hour, select the file that has been created, which should have a name similar to **0_xxxxxxxxxxxxxxxx.json**.
 10. On the page for the file, select **Edit**, and review the contents of the file; which should consist of a JSON record for each 10 second period, showing the number of messages received from IoT devices, like this:
