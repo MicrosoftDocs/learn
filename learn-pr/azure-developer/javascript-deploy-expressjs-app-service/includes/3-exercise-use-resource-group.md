@@ -53,4 +53,7 @@ az account show --query 'name'
 1. The Azure sidebar has two sections, one for resource groups, and one for App Service.
 1. Expand the resource group section, select the sandbox subscription. The resource group displays and is currently empty.
 
- 
+## What did this exercise accomplish? 
+
+* You created your sandbox. Check how much time you have left before the sandbox is removed.
+* You signed into Azure from Visual Studio Code and found the sandbox subscription. 
