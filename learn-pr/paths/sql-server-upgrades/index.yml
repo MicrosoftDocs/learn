@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn-sqlserver.sql-server-upgrades
+uid: learn-sqlserver.sql-server-2017-upgrades
 metadata:
   title: SQL Server upgrades
   description: Running the latest version of SQL Server provides you with numerous performance and functionality benefits while also extending the support of your database platform. In this learning path you will learn how to take an inventory of your SQL Server deployments using the Microsoft Assessment and Planning toolkit, how to upgrade SQL Server databases using the Data Migration Assistant, and how to optimize your updated system using both the Database Experimentation Assistant and Query Tuning Assistant.
