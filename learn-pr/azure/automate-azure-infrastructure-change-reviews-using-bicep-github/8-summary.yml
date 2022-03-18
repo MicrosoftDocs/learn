@@ -4,7 +4,7 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: Summary for automating Azure infastructure change reviews by using Bicep and GitHub.
+  description: Summary for automating Azure infrastructure change reviews by using Bicep and GitHub.
   ms.date: 03/15/2022
   author: vermegi
   ms.author: givermei
