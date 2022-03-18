@@ -49,7 +49,7 @@ products:
   - github
 units:
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.introduction
-- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.understand-pull-request-validation
+- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.understand-automated-pull-request-validation
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.exercise-set-up-environment
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.exercise-create-workflow-pull-request
 - learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.deploy-ephemeral-environments-reviews

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.understand-pull-request-validation
+uid: learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.understand-automated-pull-request-validation
 title: Understand pull request validation
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-understand-pull-request-validation.md)]
+  [!include[](includes/2-understand-automated-pull-request-validation.md)]
