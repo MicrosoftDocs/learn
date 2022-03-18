@@ -1,4 +1,6 @@
-In the previous exercise, you added Bicep code linting to your pull requests. Your team has told you they appreciate getting the automated feedback on their code changes before they send them to other team members to review. Now, you've decided to give your contributors and reviewers the ability to deploy and review their code in an ephemeral environment. In this exercise, you'll update your pull request workflow to deploy an ephemeral environment whenever a pull request is opened, redeploy it when code is pushed to the pull request branch, and delete the environment when the pull request is closed.
+Your team has told you they appreciate getting the automated Bicep linter feedback on their code changes before they send them to other team members to review. Now, you've decided to give your contributors and reviewers the ability to deploy and review their code in an ephemeral environment.
+
+In this exercise, you'll update your pull request workflow to deploy an ephemeral environment whenever a pull request is opened, redeploy it when code is pushed to the pull request branch, and delete the environment when the pull request is closed.
 
 During the process, you'll:
 
