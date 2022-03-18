@@ -10,7 +10,7 @@ metadata:
   ms.author: givermei
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
 quiz:
   questions:
@@ -21,7 +21,7 @@ quiz:
       isCorrect: false
       explanation: Incorrect. The `workflow_dispatch` trigger is used to manually invoke a workflow.
     - content: |
-        `pull_request``
+        `pull_request`
       isCorrect: true
       explanation: Correct. The `pull_request` trigger fires at various points during the pull request's lifecycle.
     - content: |
