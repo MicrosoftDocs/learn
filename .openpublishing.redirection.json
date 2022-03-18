@@ -11880,6 +11880,11 @@
       "source_path": "learn-pr/wwl-azure/integrate-identity-management-systems/4-explore-managed-service-identities.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/integrate-identity-management-systems/4-explore-managed-identity",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-tools-track-usage-flow/4-explore-azure-log-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-tools-track-usage-flow/",
+      "redirect_document_id": false
     }
   ]
 }
