@@ -11870,6 +11870,11 @@
       "source_path": "learn-pr/wwl-azure/configure-network-security-groups/7-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-network-security-groups/8-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-identity-management-systems/4-explore-managed-service-identities.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/integrate-identity-management-systems/4-explore-managed-identity",
+      "redirect_document_id": true
     }
   ]
 }
