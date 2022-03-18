@@ -1,78 +1,35 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+The first step in creating a holistic, up-to-date map of your data landscape, is to deploy an Azure Purview account. Here, we will discuss configuration settings, account concepts, and key considerations.
 
-    Goal: briefly summarize the key skill this unit will teach
+## Azure Purview account name
+The name of the Azure Purview account. This name is used to programmatically access the Azure Purview account and cannot be changed. The Azure Purview account name must be:
+* Globally unique
+* Can contain only letters, numbers and hyphens
+* The first and last characters must be a letter or number
+* Spaces are not allowed
 
-    Heading: none
+![Azure Purview account name](../media/03.01-purview-account-name.png)
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## Managed resources
+Azure Purview provisions a storage account and an Azure Event Hubs account as managed resources within the subscription that the Azure Purview account is provisioned in. This is required to support enhanced security features during scanning.
+* The name of the managed resource group will be auto-generated but can be changed during the Azure Purview account creation process.
+* The names of the storage account and Azure Event Hubs namespace will be auto-generated during account creation and cannot be changed.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+![Azure Purview managed resources](../media/03.02-purview-managed-resources.png)
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Azure Purview Data Map
+The Azure Purview Data Map is central to the Azure Purview service as it is responsible for storing and serving metadata, lineage, classifications, and other annotations associated with data assets. The size of the Data Map is measured in Capacity Units. There is no need to predetermine the number of Capacity Units required as Azure Purview will **auto-scale** up and down based on usage.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+![Azure Purview data map](../media/03.04-purview-data-map.png)
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+## Capacity Units
+All Azure Purview accounts come with one Capacity Unit by default, and elastically grow based on usage. The Data Map is **always on** while the Azure Purview account exists, in which case, there will always be a minimum of 1 Capacity Unit consumed. Each Capacity Unit:
+* Can support up to **25 data map operations per second**.
+* Includes storage of up to **10 GB** of metadata about data assets.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+## Scanning
+The compute required to facilitate the automated population of the Data Map is serverless (**pay as you go**) and based on the duration of scans or ingestion jobs. Duration of these jobs can vary based on the number of systems scanned, data assets contained in the scanned systems, number of classifications selected, the shape of the data and performance of the system scanned. Scanning is billed based on the number of vCore Hours.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+## Network connectivity
+You can connect to your Azure Purview account either publically, via public IP addresses or service endpoints, or privately, using a private endpoint. [Learn more about private endpoints for your Azure Purview account](https://docs.microsoft.com/en-us/azure/purview/catalog-private-link).
 
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+![Azure Purview networking](../media/03.03-purview-networking.png)
