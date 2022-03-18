@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.integrate-identity-management-systems.explore-managed-service-identities
-title: Explore managed service identities
+title: Explore Managed Identity
 metadata:
-  title: Explore managed service identities
-  description: "Explore managed service identities"
-  ms.date: 02/25/2022
+  title: Explore Managed Identity
+  description: "Explore Managed Identity"
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-explore-managed-service-identities.md)]
+  [!include[](includes/4-explore-managed-identity.md)]
