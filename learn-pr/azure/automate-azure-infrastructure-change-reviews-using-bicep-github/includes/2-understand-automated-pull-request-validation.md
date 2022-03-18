@@ -1,4 +1,4 @@
-Pull requests are a great way to enable your colleagues to review changes to your Bicep code. By using pull requests, you can ensure that any updates to your Azure deployments are reviewed by another person. But it's often helpful to have automated checks run on your code changes, too. In this unit, you'll learn how pull request *checks* and automated validation can be used to increase your team's confidence in your code changes.
+When you use pull requests, you can ensure that any updates to your Azure deployments are reviewed by another person. But it's often helpful to have automated checks run on your code changes, too. In this unit, you'll learn how pull request *checks* and automated validation can be used to increase your team's confidence in your code changes.
 
 ## Pull request validation
 
