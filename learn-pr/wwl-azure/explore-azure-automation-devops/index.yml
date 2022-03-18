@@ -9,13 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure Automation with DevOps
-summary: This module describes Azure automation with Azure DevOps, using runbooks, webhooks, and PowerShell workflows. You will learn how to create and manage automation for your environment.
+summary: This module describes Azure Automation with Azure DevOps, using runbooks, webhooks, and PowerShell workflows. You'll learn how to create and manage automation for your environment.
 abstract: |
-  &quot;By the end of this module, you'll be able to:
-  - Implement automation with Azure DevOps
-  - Create and manage runbooks
-  - Create webhooks
-  - Create and run a workflow runbook and PowerShell workflows&quot;
+  By the end of this module, you'll be able to:
+  *   Implement automation with Azure DevOps
+  *   Create and manage runbooks
+  *   Create webhooks
+  *   Create and run a workflow runbook and PowerShell workflows
 prerequisites: |
   None
 iconUrl: /learn/achievements/4-explore-azure-automation-with-devops.svg
