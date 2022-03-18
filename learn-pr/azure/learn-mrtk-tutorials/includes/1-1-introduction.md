@@ -2,7 +2,7 @@ The Mixed Reality Toolkit (MRTK) is a cross-platform toolkit for building mixed 
 
 Suppose you're creating a mixed reality experience in which the user needs the ability to move, rotate, and scale a holographic object. Although you could start from scratch and create your own scripts to enable such manipulations, this can be time consuming and error-prone, especially if there are multiple objects to configure. The Toolkit provides a set of pre-built components and features that you can use to accelerate your Windows Mixed Reality development. By the end of this module, you'll be able to set up a Unity project configured for Windows Mixed Reality development and add scripts to objects that allow users to move those objects with their hands.
 
-    :::image type="content" source="../media/001-hololens-interaction.png" alt-text="Screenshot of a simulated hand manipulating a hologram.":::
+   :::image type="content" source="../media/001-hololens-interaction.png" alt-text="Screenshot of a simulated hand manipulating a hologram.":::
 
 ## Learning objectives
 
