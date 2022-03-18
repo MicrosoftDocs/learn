@@ -45,7 +45,7 @@ In your own workflows, you might choose to extend the PR validation checks with 
 
 A pull request in GitHub can go through many different *lifecycle events*. For example, a pull request is *opened*. Then, it might be *assigned* to specific reviewers. Somebody might *edit* the pull request, such as changing its name. Somebody else might push changes to the source branch (*synchronize*), which affects the contents of the pull request. Then, somebody might *review* it. Next, the pull request can be *merged* - or, it might be *closed* without merging, and even *reopened* again in the future.
 
-<!-- TODO should we consider addig a simplified state transition diagram? -->
+<!-- TODO should we consider adding a simplified state transition diagram? -->
 
 GitHub Actions enables you to define *workflow triggers* that respond to any of these events. For example, you can define a workflow that runs automatically whenever a pull request is opened:
 

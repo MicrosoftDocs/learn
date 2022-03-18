@@ -45,12 +45,9 @@ As a first step, you need to update your *pr-validation* workflow to create an e
 
    :::code language="yaml" source="code/6-pr-validation.yml" range="20-26" :::
 
-   <!-- TODO
-    pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
-   -->
-
    > [!NOTE]
    > The `github.ref` variable's value looks like `refs/pull/123/merge`. The script above splits the string up based on the slash (`/`) characters, and then finds the segment that contains the pull request number, like `123`. The script then creates a resource group name that includes the pull request number, and finally it creates a step output so that subsequent steps can access the resource group name.
+   <!-- TODO does this work instead? pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH") -->
 
 1. As a next step in the file add the step to create the resource group with the name determined in the previous step:
 
