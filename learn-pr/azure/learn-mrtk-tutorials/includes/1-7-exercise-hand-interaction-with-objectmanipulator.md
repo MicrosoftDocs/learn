@@ -33,18 +33,15 @@ The ObjectManipulator and NearInteractionGrabbable scripts support the "direct m
 
 In order for an object to be "grabbable" with tracked hands, it must have three components attached: 
 
-    * A Collider component (You don't need to do anything here--Unity's cube already has a Box Collider attached by default)
-    * Object Manipulator (Script) component
-    * NearInteractionGrabbable (Script) component
+- A Collider component (You don't need to do anything here--Unity's cube already has a Box Collider attached by default)
+- Object Manipulator (Script) component
+- NearInteractionGrabbable (Script) component
 
 1. With the cube still selected, in the **Inspector** window, click the **Add Component** button, and then search for and select the **Object Manipulator** script.
 
     :::image type="content" source="../media/029-select-object-manipulator.png" alt-text="Screenshot of adding the Object Manipulator script.":::
 
-    The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands.
-
-    > [!NOTE]
-    > When you add the Object Manipulator script, the Constraint Manager script is automatically added as well because the Object Manipulator script depends on it.
+    The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands. When you add the Object Manipulator script, the Constraint Manager script is automatically added as well because the Object Manipulator script depends on it.
 
     :::image type="content" source="../media/030-constraint-manager.png" alt-text="Screenshot of the Constraint Manager script added to the cube.":::
 
@@ -63,9 +60,10 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 1. With Far Cube still selected, change its values in its **Transform** component to the following:
 
     Position: X = 0.6, Y = 0.1, Z = 1.1
+
     Rotation: X = 27, Y = 0, Z = 0
 
-    Now the camera should see Near cube in the lower-left corner of its view Far Cube in its upper-right view. To confirm this, in the **Hierarchy**, select **Main Camera** and look at the **Main Camera** window in the **Scene** window.
+    Now the camera should see Near cube on the left and Far Cube a little further away on the right. To confirm this, in the **Hierarchy**, select **Main Camera** and then look at the **Main Camera** window in the **Scene** window.
 
     :::image type="content" source="../media/040-main-camera-view.png" alt-text="Screenshot of the Main Camera view in the Scene window.":::
 
@@ -83,9 +81,6 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
     :::image type="content" source="../media/032-maximize-command.png" alt-text="Screenshot of Maximize command for the Game window.":::
 
 1. Press the space bar to make the simulated right hand appear in the view.
-
-    :::image type="content" source="../media/032-maximize-command.png" alt-text="Screenshot of simulated right hand.":::
-
 1. Move the simulated hand closer to Near Cube until it touches the cube on the side or bottom.
 
     :::image type="content" source="../media/033-touch-cube.png" alt-text="Screenshot of the simulated right hand touching the Near Cube.":::
@@ -96,15 +91,15 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
     To grab and move Far Cube, we'll use the far pointer attached to the simulated hand.
 
-1. If you need to, press the space bar again to make the simulated right hand appear. Note the far pointer that extends from the end of hand's index finger.
+1. If you need to, press the space bar again to make the simulated right hand appear. Note the far pointer that extends from the end of the hand's index finger.
 
     :::image type="content" source="../media/034-far-pointer.png" alt-text="Screenshot of simulated hand's far pointer.":::
 
-2. Move the hand closer to Far Cube until you can see the tip of the pointer on the cube. You may have to move the hand around in a circular motion a few times to make the tip of the pointer appear.
+2. Move the hand closer to Far Cube until you can see the tip of the pointer on the cube. You may have to move the hand around in a circular motion a few times to make the tip of the pointer appear on the cube.
 
     :::image type="content" source="../media/035-far-pointer-touches-cube.png" alt-text="Screenshot of the far pointer touching the cube.":::
 
-3. Click the left mouse button (this makes the hand take on the pinch gesture) and then drag the cube around the scene.
+3. Click the left mouse button (this makes the hand close, taking on what we call the "pinch gesture") and then drag the cube around the scene.
 
 ## Unity in-editor input simulation
 
@@ -127,7 +122,7 @@ You can test holographic object behavior with the Unity in-editor input simulati
 
 **Persistent hands**
 
-* To enable a hand and keep it onscreen without continuing to hold down a key, press T (left hand) or Y (right hand). To remove the hands, press those keys again.t
+* To enable a hand and keep it onscreen without continuing to hold down a key, press T (left hand) or Y (right hand). To remove the hands, press those keys again.
  
 ## Build your application in Unity
 
@@ -136,7 +131,7 @@ You can test holographic object behavior with the Unity in-editor input simulati
 1. Click the **Build** button.
 1. In the **Build Universal Windows Platform** window, navigate to the folder where you want to store your build, or create a new folder and navigate to it, and then click the **Select Folder** button to start the build process.
 
-    :::image type="content" source="../media/select-build-folder.png" alt-text="Screenshot of Select a Build folder." lightbox="../media/select-build-folder.png":::
+    :::image type="content" source="../media/044-build-project.png" alt-text="Screenshot of the location to save your build.":::
 
     A progress bar appears to let you know how the build is proceeding.
 
@@ -167,11 +162,11 @@ You can test holographic object behavior with the Unity in-editor input simulati
 
 1. Click the deployment target drop-down and then do one of the following:
 
-    - If you're building and deploying via Wi-Fi, select **Remote Machine**.
+   - If you're building and deploying via Wi-Fi, select **Remote Machine**.
 
     :::image type="content" source="../media/041-target-remote-machine.png" alt-text="Screenshot of Visual Studio window with Remote Machine as the target.":::
 
-1. If you're building and deploying via USB, select **Device**.
+   - If you're building and deploying via USB, select **Device**.
 
     :::image type="content" source="../media/042-target-device.png" alt-text="Screenshot of Visual Studio window with Device as the target.":::
 

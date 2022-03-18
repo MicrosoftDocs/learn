@@ -1,10 +1,10 @@
-In this module, you imported the Mixed Reality Toolkit into your Unity Windows Mixed Reality Project. You attached scripts to cubes that enable a user to move, scale, and rotate objects, and you tested this by moving the cubes.
+In this module, you imported the Mixed Reality Toolkit into your Unity Windows Mixed Reality project. You attached scripts to cubes that enable a user to move, scale, and rotate objects, and you tested this by moving the cubes.
 
 Using scripts included with the Mixed Reality Toolkit, you can configure basic object interactions without the need to create your own custom scripts. This can accelerate your mixed reality development and get you from concept to a finished mixed reality experience faster.
 
 ## Next steps
 
-You can continue to add objects to your scene and add scripts from the MRTK Foundation package to them. This will allow you to experiment with different ways to manipulate various 2D and 3D objects. Consider finding and applying the appropriate scripts for the following interactions:
+You can continue to add objects to your scene and add scripts from the MRTK Foundation package to them. This will allow you to experiment with different ways to manipulate various 2D and 3D objects. Consider finding and applying the appropriate scripts for the following interactions, and then testing them:
 
 * Point to an object that's far away to make the object rotate
 * Configure a motion controller to select an object and scale to a larger size
