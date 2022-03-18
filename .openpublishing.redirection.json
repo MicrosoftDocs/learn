@@ -11885,6 +11885,11 @@
       "source_path": "learn-pr/wwl-azure/implement-tools-track-usage-flow/4-explore-azure-log-analytics.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/implement-tools-track-usage-flow/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/4-describe-azure-devops-open-source-projects.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-pipelines-concurrency/",
+      "redirect_document_id": false
     }
   ]
 }
