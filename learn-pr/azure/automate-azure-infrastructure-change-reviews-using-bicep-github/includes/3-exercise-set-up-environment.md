@@ -44,7 +44,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 ## Clone the repository
 
-You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it. 
+You now have a copy of the template repository in your own account. You'll now clone this repository locally so you can start work in it. 
 
 1. Select **Code** and select the copy icon.
 

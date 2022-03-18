@@ -6,7 +6,7 @@ By now, you're used to the idea of deploying your changes to one or more non-pro
 
 In contrast, an *ephemeral* environment is one that you create dynamically, and that you're comfortable with being deleted when it's not in use. Ephemeral environments are intended to only exist for a short amount of time - for example, long enough to review changes in a pull request. 
 
-Because you're so used to building up your Azure infrastructure as code, and you've invested in building your Bicep files to deploy your resources, you can reuse those same assets to deploy an ephemeral environment. You can even deploy multiple ephemeral environments at a time, if you need to. You just need to ensure that you deployments are sufficiently *parameterized* that you can easily create independent environments.
+Because you're so used to building up your Azure infrastructure as code, and you've invested in building your Bicep files to deploy your resources, you can reuse those same assets to deploy an ephemeral environment. You can even deploy multiple ephemeral environments at a time, if you need to. You just need to ensure that your deployments are sufficiently *parameterized* that you can easily create independent environments.
 
 Ephemeral environments give you a number of benefits:
 
@@ -68,8 +68,8 @@ You lose many of the benefits of ephemeral environments by following this approa
 
 When you dynamically create ephemeral environments, there's a risk that your Azure costs could increase. Azure provides many capabilities to help you to control the costs of ephemeral environments, including:
 
-- Azure Cost Management provides the ability for you to set budgets for a subscription. Budgets trigger notifications so that your team is aware that they are approaching the cost threshold you specified.
-- Many Azure resource types provide cheaper, or even free, tiers for non-production workloads. Consider whether you can make use these pricing tiers and SKUs.
+- Azure Cost Management provides the ability for you to set budgets for a subscription. Budgets trigger notifications so that your team is aware that the cost is approaching the threshold you specified.
+- Many Azure resource types provide cheaper, or even free, tiers for non-production workloads. Consider whether you can use these pricing tiers and SKUs.
 - Azure Dev/Test pricing is available for some subscriptions.
 - Resource tags can help you to identify the resources associated with each ephemeral environment.
 - You can create automation scripts to delete your ephemeral resources after a defined period of time, or even every night after business hours.

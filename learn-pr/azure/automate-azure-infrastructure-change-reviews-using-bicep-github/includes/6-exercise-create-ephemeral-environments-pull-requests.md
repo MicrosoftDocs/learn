@@ -36,7 +36,7 @@ As a first step, you need to update your *pr-validation* workflow to create an e
 
    :::code language="yaml" source="code/6-pr-validation.yml" range="12-19" :::
 
-   The steps in this job first checks out all the code onto the GitHub runner, and then signs into your Azure environment.
+   The steps in this job first check out all the code onto the GitHub runner, and then sign into your Azure environment.
 
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
@@ -65,7 +65,7 @@ As a first step, you need to update your *pr-validation* workflow to create an e
 
    If it doesn't, update it to match this example, and then save it.
 
-1. In the Visual Studio Code terminal, commit your changes. You won't push them to the remote repository just yet.
+1. In the Visual Studio Code terminal, commit your changes. You won't push them to the remote repository yet.
 
    ```bash
    git add .
@@ -139,13 +139,13 @@ You've defined workflows to create and manage ephemeral environments automatical
 
 1. Select the **deploy** stage to see its detail.
 
-1. Select the **create resource group name** step to see its detail. In the log output you will notice that a resource group named **rg*f*4** will be created.
+1. Select the **create resource group name** step to see its detail. In the log output you'll notice that a resource group named **rg*f*4** will be created.
 
 1. In your browser, navigate to the Azure portal.
 
 1. In the top search bar, search for the **rg*f*4** resource group and select the resource group to open it.
 
-1. In the resource group detail you will see the resources from the Bicep file got created.
+1. In the resource group detail you'll see the resources from the Bicep file got created.
 
 ## Approve the PR
 
@@ -165,4 +165,4 @@ Closing the pull request also triggered the *delete*feature*rg* workflow.
 
 1. Select the workflow and inspect the output.
 
-1. Navigate to the Azure portal and refresh the **Resource group overview**. After a while you will see that the **rg*f*4** resource group got deleted.
+1. Navigate to the Azure portal and refresh the **Resource group overview**. After a while you'll see that the **rg*f*4** resource group got deleted.
