@@ -13,7 +13,7 @@
 
     After you select a folder, the Tool checks to ensure that it's a valid Unity project folder.
 
-    :::image type="content" source="../../media/007-project path.png" alt-text="Screenshot of the Mixed Reality feature Tool Project Path screen.":::
+    :::image type="content" source="../../media/007-project-path.png" alt-text="Screenshot of the Mixed Reality feature Tool Project Path screen.":::
   
 1. Select **Discover Features**.
 
