@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-tools-to-track-usage-flow.explore-azure-monitor-log-analytics
+title: Explore Azure Monitor and Log Analytics
+metadata:
+  title: Explore Azure Monitor and Log Analytics
+  description: "Explore Azure Monitor and Log Analytics"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-explore-azure-monitor-log-analytics.md)]
