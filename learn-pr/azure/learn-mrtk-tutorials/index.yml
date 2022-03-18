@@ -35,7 +35,6 @@ prerequisites: |
   - Basic familiarity with Unity: interface, scene creation, package import, addition of GameObjects to a scene
 units: 
 - learn.azure.learn-introduction-tutorials-mrtk.1-1-introduction
-- learn.azure.learn-introduction-tutorials-mrtk.1-2-configure-unity-for-windows-mixed-reality
 - learn.azure.learn-introduction-tutorials-mrtk.1-3-exercise-configure-unity-for-windows-mixed-reality
 - learn.azure.learn-introduction-tutorials-mrtk.1-4-configure-resources
 - learn.azure.learn-introduction-tutorials-mrtk.1-5-exercise-configure-resources

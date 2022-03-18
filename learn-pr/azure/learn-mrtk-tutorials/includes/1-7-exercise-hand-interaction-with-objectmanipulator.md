@@ -18,7 +18,7 @@ The ObjectManipulator and NearInteractionGrabbable scripts support the "direct m
    
    X = -0.2, Y = 0.1, Z = 0.5
 
-    :::image type="content" source="../media/028-cube-transform-values.png" alt-text="Screenshot of the cube's transform component after updates.":::
+    :::image type="content" source="../media/028-cube-transform.png" alt-text="Screenshot of the cube's transform component after updates.":::
 
     We want to be able to see three sides of the cube, so we'll change the cube's rotation, too. 
 
@@ -84,11 +84,11 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
 1. Press the space bar to make the simulated right hand appear in the view.
 
-    :::image type="content" source="../media/032-maximize-command.png" alt-text="Screenshot of Maximize command for the Game window.":::
+    :::image type="content" source="../media/032-maximize-command.png" alt-text="Screenshot of simulated right hand.":::
 
 1. Move the simulated hand closer to Near Cube until it touches the cube on the side or bottom.
 
-    :::image type="content" source="../media/033-touch-cube.png" alt-text="Screenshot of Maximize command for the Game window.":::
+    :::image type="content" source="../media/033-touch-cube.png" alt-text="Screenshot of the simulated right hand touching the Near Cube.":::
 
 1. Click the left mouse button (this makes the hand "grab" the cube) and then drag the cube around the scene.
 
@@ -98,11 +98,11 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
 1. If you need to, press the space bar again to make the simulated right hand appear. Note the far pointer that extends from the end of hand's index finger.
 
-    :::image type="content" source="../media/034-far-pointer.gif" alt-text="Screenshot of simulated hand's far pointer.":::
+    :::image type="content" source="../media/034-far-pointer.png" alt-text="Screenshot of simulated hand's far pointer.":::
 
 2. Move the hand closer to Far Cube until you can see the tip of the pointer on the cube. You may have to move the hand around in a circular motion a few times to make the tip of the pointer appear.
 
-    :::image type="content" source="../media/035-far-pointer-touches-cube.gif" alt-text="Screenshot of the far pointer touching the cube.":::
+    :::image type="content" source="../media/035-far-pointer-touches-cube.png" alt-text="Screenshot of the far pointer touching the cube.":::
 
 3. Click the left mouse button (this makes the hand take on the pinch gesture) and then drag the cube around the scene.
 
@@ -179,12 +179,12 @@ You can test holographic object behavior with the Unity in-editor input simulati
 1. In the project's **Property Pages** window, select **Configuration Properties > Debugging**.
 1. Click the **Debugger to launch** drop down and then select **Remote Machine** if it's not selected already.
 
-    > [!IMPORTANT]>
+    > [!IMPORTANT]
     > We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature. To find your IP address, on your HoloLens, go to **Settings > Updates & Security > For developers**. The IP address is listed towards the bottom of the window under **Ethernet**.
 
 1. In the **Machine Name** field, enter the IP address of your device.
 
-    ![Remote connection dialog in Visual Studio](images/043-vs-machine-name.png)
+    ![Remote connection dialog in Visual Studio](../media/043-vs-machine-name.png)
 
 1. Set the **Authentication Mode** to **Universal (Unencrypted protocol)**.
 1. Connect your HoloLens to your computer, and then in Visual Studio, do one of the following:
