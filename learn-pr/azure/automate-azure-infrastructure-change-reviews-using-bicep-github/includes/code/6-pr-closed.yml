@@ -15,9 +15,7 @@ jobs:
       - name: Determine resource group name
         id: determineResourceGroupName
         run: |
-          echo "github head_ref: ${{ github.head_ref }}"
-          IFS='/' read -ra my_array <<< "${{ github.head_ref }}"
-          export resourceGroupName=rg_f_${my_array[1]}
+          export resourceGroupName=pr_${{ github.event.number }}
           echo "::set-output name=resourceGroupName::$resourceGroupName"  
       - uses: Azure/cli@v1
         name: Delete resource group

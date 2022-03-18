@@ -43,19 +43,18 @@ As a first step, you need to update your *pr-validation* workflow to create an e
 
 1. At the bottom of the file, add another step to determine the name of the resource group to create:
 
-   :::code language="yaml" source="code/6-pr-validation.yml" range="20-26" :::
+   :::code language="yaml" source="code/6-pr-validation.yml" range="20-24" :::
 
    > [!NOTE]
-   > The `github.ref` variable's value looks like `refs/pull/123/merge`. The script above splits the string up based on the slash (`/`) characters, and then finds the segment that contains the pull request number, like `123`. The script then creates a resource group name that includes the pull request number, and finally it creates a step output so that subsequent steps can access the resource group name.
-   <!-- TODO does this work instead? pull_number=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH") -->
+   > The `github.event.number` variable contains the current pull request number, which will be unique for each pull request. This number is used to create a name for a resource group and is outputted in a variable, so the next step can use this name.
 
 1. Add a step to create the resource group with the name determined in the previous step:
 
-   :::code language="yaml" source="code/6-pr-validation.yml" range="27-33" :::
+   :::code language="yaml" source="code/6-pr-validation.yml" range="25-31" :::
 
 1. Now that the resource group is created, add a step to deploy the Bicep file to the resource group:
 
-   :::code language="yaml" source="code/6-pr-validation.yml" range="34-43" :::
+   :::code language="yaml" source="code/6-pr-validation.yml" range="32-41" :::
 
 1. Save your changes.
 
@@ -88,15 +87,13 @@ You've created a workflow that automatically deploys the changes in each pull re
 
 1. Similarly to the pull request validation workflow, define a step to determine the name of the resource group associated with this pull request:
 
-   :::code language="yaml" source="code/6-pr-closed.yml" range="15-21" :::
+   :::code language="yaml" source="code/6-pr-closed.yml" range="15-19" :::
 
-   > [!NOTE]
-   > Notice that for branch deletion we use the `${{ github.head_ref}}` context variable. On pull request closure, this variable has the value of *feature/name*. We use this to delete the resource group in the last step. 
-   <!-- TODO can we use PR ID from above? -->
+   The *determineResourceGroupName* step runs the same script as the pull request validation workflow, so it will work with the same resource group name.
 
 1. Add a step to delete the resource group by using the Azure CLI, and confirm the deletion by using the `--yes` argument:
 
-   :::code language="yaml" source="code/6-pr-closed.yml" range="22-28" :::
+   :::code language="yaml" source="code/6-pr-closed.yml" range="20-26" :::
 
 1. Save your changes.
 
@@ -139,30 +136,33 @@ You've defined workflows to create and manage ephemeral environments automatical
 
 1. Select the **deploy** stage to see its detail.
 
-1. Select the **create resource group name** step to see its detail. In the log output you'll notice that a resource group named **rg*f*4** will be created.
+1. Select the **create resource group name** step to see its detail. In the log output you'll notice that a resource group named **pr_4** will be created.
 
 1. In your browser, navigate to the Azure portal.
 
-1. In the top search bar, search for the **rg*f*4** resource group and select the resource group to open it.
+1. In the top search bar, search for the **pr_4** resource group and select the resource group to open it.
 
 1. In the resource group detail you'll see the resources from the Bicep file got created.
+
+   > [!NOTE]
+   > As an additional step you might also make the *deploy* job mandatory before a pull request can be merged by adding this as an additional status check to the protected main branch. You do this in exactly the same way as the previous lint mandatory check you added in the previous exercise. We will leave it to you whether you want to add this extra check or not.
 
 ## Approve the PR
 
 You have now created a pull request that as a next step can be merged into the main branch.
 
-1. Select **Merge pull request**. This will merge the feature4 branch into main.
+1. Select **Merge pull request**. This will merge the *change2* branch into *main*.
 
 1. Select **Confirm merge**.
 
 ## Watch the ephemeral environment be deleted
 
-Closing the pull request also triggered the *delete*feature*rg* workflow.
+Closing the pull request also triggered the *pr-closed* workflow.
 
 1. In the browser, navigate to **Actions**.
 
-1. You should notice the delete workflow got triggered.
+1. You should notice the *pr-closed* workflow got triggered.
 
 1. Select the workflow and inspect the output.
 
-1. Navigate to the Azure portal and refresh the **Resource group overview**. After a while you'll see that the **rg*f*4** resource group got deleted.
+1. Navigate to the Azure portal and refresh the **Resource group overview**. After a while you'll see that the **pr_4** resource group got deleted.
