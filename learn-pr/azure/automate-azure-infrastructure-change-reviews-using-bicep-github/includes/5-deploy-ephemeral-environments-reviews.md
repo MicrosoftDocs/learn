@@ -1,23 +1,25 @@
-You now have a process in place that can automatically check the validity of code changes before they get merged in the main branch of your repository. You would however also like to check these changes in your Azure environment. Preferably this would be in an environment separate from your other environments like QA, test and production. In this section you will learn about ephemeral environments which will enable you to do so.
+Linting your Bicep code gives you some indication of whether your Azure deployment is likely to succeed, but it's helpful to actually deploy your Bicep code somewhere to see how your environment will look after the pull request is merged and your deployment is complete. In this unit, you'll learn about how to automatically create ephemeral environments, and delete them when they're no longer required.
 
 ## Ephemeral environments
 
-An ephemeral environment is an environment that you create on the fly and that you are also ok with to delete. It is an environment that exists only for a short amount of time, for instance to test things out. Since you are working with Bicep templates that allow you to create an environment from scratch, you can also use your Bicep templates to create an ephemeral environment. The only thing you will probably need to do is change parameter values once you deploy your template. You might decide to create an ephemeral environment for each pull request your team members open. That way for each pull request you can check what the changes look like in an actual environment.
+By now, you're used to the idea of deploying your changes to one or more non-production environments, like *Test*, *QA*, and *Staging*, before finally deploying to your production environment. In many organizations, these environments are *long-lived* - they are updated when changes are rolled out, and the environments aren't usually deleted.
 
-### Why create them
+In contrast, an *ephemeral* environment is one that you create dynamically, and that you're comfortable with being deleted when it's not in use. Ephemeral environments are intended to only exist for a short amount of time - for example, long enough to review changes in a pull request. 
 
-**Note to John: I gave it a try this one, but feel free to update/add to this section, not sure what explanation you were looking for with the title.**
+Because you're so used to building up your Azure infrastructure as code, and you've invested in building your Bicep files to deploy your resources, you can reuse those same assets to deploy an ephemeral environment. You can even deploy multiple ephemeral environments at a time, if you need to. You just need to ensure that you deployments are sufficiently *parameterized* that you can easily create independent environments.
 
-Creating an ephemeral environment can be very handy in a couple of use cases. Here we list a couple:
+Ephemeral environments give you a number of benefits:
 
-- It allows you to test new features and capabilities in a totally separate and independent environment without interfering with any other environment you may have.
-- It allows you to quickly spin up and spin down again a demo environment in case you want to showcase or try out new capabilities.
-- It allows you to have a constant test of how a recreation of your environment from scratch would behave. This can be very handy in case you are also using Infrastructure as Code for disaster recovery scenarios. You have constant confidence that a recreate from scratch is working.
-- It allows you to spin up an environment per team member where they can try things out in.
+- They enable you to test the new features or capabilities that you're working with, while working in an isolated environment that won't affect any of your other production or non-production resources.
+- They enable you to demonstrate the changes you're making on your own branch, so that you can easily showcase your work or provide access to reviewers to check.
+- They allow multiple team members to test their separate changes at the same time - even if they're incompatible with each other.
+- Because they involve executing your Bicep files on a regular basis, they help you to continually test the accuracy of your Bicep code and other scripts, and give you confidence that you can create accurate representations of your production environment from your code.
 
-In this module we will create ephemeral environments to build up confidence about the changes that are made in a pull request. In the ephemeral environment, the people reviewing the pull request can check out what the ephemeral environment with the new feature additions and updates looks like, before approving and merging the pull request.
+In this module, you'll create ephemeral environments to help you to build up confidence about the changes within pull requests. Anybody reviewing the pull request can access the ephemeral environment, including the new additions and updates, before approving and merging the pull request.
 
-### Approaches to creating them
+## Deployment approaches
+
+<!-- TODO -->
 
 When creating ephemeral environments there are a couple of decisions you will need to make and a couple of things you will need to keep in mind.
 
@@ -84,21 +86,3 @@ Security-wise this will bring risks in case this subscription is also used for o
 > Do not use subscription level service principals on any of your production environments. In case the service principal gets compromised it will have access to your entire production environment.
 
 In case you use a totally different subscription for your production workloads and the service principal you use only has access to your development subscription, this is a valid approach to use.
-
-## Using pull requests for creating ephemeral environments
-
-You currently already have a process in place where for each pull request a workflow is triggered for validating the changes that were made to your Bicep files. This same event can also be used to create an ephemeral environment for each pull request that gets created. This way reviewers of a pull request have an immediate environment to look at to review the changes.
-
-It also gives the contributor opening the pull request an overview of what their changes may look like in an actual environment and how certain services may work together.
-
-### Updating PRs and retesting
-
-**Note to John: after writing the previous exercise, we actually already do this in this exercise, might make sense to move this part to the previous section?**
-
-Once you have created a pull request, it may as well be that the build validation shows errors that you need to fix, or the reviewers add comments that need to be fixed before the pull request can be approved. You can always add extra commits to the source branch of the pull request. This will again trigger any pull request validation through workflow triggers and updates on the ephemeral environment.
-
-### Using draft PRs to trigger validation even when you’re not ready to review/merge
-
-It might be that you are working on a new feature and want to test out what this feature looks like in an ephemeral environment, but you are not ready yet for a review of this feature through a pull request. In this case you can create a pull request as a draft pull request. This will trigger any pull request validations as well as creation of an ephemeral environment, but without letting reviewers know about the pull request. A draft pull request lets you have a first check of confidence on your changes, before you send it through to the reviewers that need to spend time on it.
-
-In the next exercise section you will create a process that will create an ephemeral environment when a pull request gets created and that will delete this ephemeral environment when the pull request is closed.

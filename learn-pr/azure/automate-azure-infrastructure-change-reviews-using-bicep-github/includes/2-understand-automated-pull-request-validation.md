@@ -70,11 +70,18 @@ on:
 
 The results of a pull request workflow are shown on the pull request page as *checks*. This enables authors and reviewers to quickly get feedback on whether the automated activities have succeeded or failed.
 
-If your workflow is triggered based on the *synchronized* event then every time the source branch is updated, the workflow is re-run, and the results are updated on the pull request description.
-
 By default, even if a check fails, the pull request can be merged. You might not want to allow this, so you can configure *branch protection rules* to enforce that specific checks succeed before a pull request can be merged.
 
 <!-- TODO Gitte suggested an image here - I'm not sure what? Maybe a screenshot? -->
+
+### Updating files
+
+After a pull request is created, it's common for the author to need to make updates. For example:
+
+- A reviewer might request the author to make changes to the code.
+- If an automated check fails, the author can make changes to their code, and then commit and push their changes.
+
+If you configure your pull request validation workflow to run based on the *synchronized* event then every time the source branch is updated, the workflow is re-run, and the results are updated on the pull request description.
 
 ## Reusable workflows
 
