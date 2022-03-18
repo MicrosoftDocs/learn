@@ -40,7 +40,6 @@ modules:
 - learn.wwl.configure-provision-environments
 - learn.wwl.manage-modularize-tasks-templates
 - learn.wwl.automate-inspection-of-health
-- learn.wwl.introduction-security-development-process
 - learn.wwl.manage-application-configuration-data
 - learn.wwl.integrate-identity-management-systems
 - learn.wwl.implement-application-configuration
