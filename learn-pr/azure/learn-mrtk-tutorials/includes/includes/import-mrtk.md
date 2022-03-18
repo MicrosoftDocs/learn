@@ -6,37 +6,37 @@
 
 1. Select the Browse button (it's the "three-dot" button in the image below), then navigate to your project, and then open it.
 
-    :::image type="content" source="../images/002-open-your-project.png" alt-text="Open your project":::
+    :::image type="content" source="../media/002-open-your-project.png" alt-text="Open your project":::
      
     > [!NOTE]
     > The **Project Path** box in the Tool must contain some value, so it inserts a backslash ("\_") by default.
 
     After you select a folder, the Tool checks to ensure that it's a valid Unity project folder.
 
-    :::image type="content" source="../../media/007-project path.png" alt-text="Screenshot of the Mixed Reality feature Tool Project Path screen.":::
+    :::image type="content" source="../media/007-project path.png" alt-text="Screenshot of the Mixed Reality feature Tool Project Path screen.":::
   
- 1. Select **Discover Features**.
+1. Select **Discover Features**.
 
     **Note**: You may need to wait a few seconds while the Tool refreshes the packages from the feeds.
 
 1. On the **Discover Features** page, note that there is a list of six package groups.
 
-    :::image type="content" source="../images/003-mrft-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
+    :::image type="content" source="../media/003-mrft-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
 
 1. Click the "+" button to the left of **Mixed Reality Toolkit (0 of 10)** and then select the latest version of **Mixed Reality Toolkit Foundation**.
 
-    > [!NOTE] The Mixed Reality Toolkit Foundation package is the only package that _must_ be imported and configured in order to use MRTK with your project. This package includes the core components required to create a mixed reality application.
+    > [!NOTE] The Mixed Reality Toolkit Foundation package is the only package that must be imported and configured in order to use MRTK with your project. This package includes the core components required to create a mixed reality application.
 
-2. Click the "+" button to the left of **Platform Support (0 of 5)** and then select the latest version of **Mixed Reality OpenXR Plugin**.
+1. Click the "+" button to the left of **Platform Support (0 of 5)** and then select the latest version of **Mixed Reality OpenXR Plugin**.
  
-     :::image type="content" source="../../008-package-selections.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool.":::
+     :::image type="content" source="../media/008-package-selections.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool.":::
 
-3. After you've made your selection(s), click **Get Features**.
-4. Select **Validate** to validate the packages you selected. You should see a dialog that says **No validation issues were detected**. When you do, click **OK**.
-5. On the **Import Features** page, the left-side column, **Features**, displays the packages you just selected. The right-side column, **Required dependencies**, displays any dependencies. You can click the **Details** link for any of these items to learn more about them.
-6. When you're ready to move on, select **Import.** On the **Review and Approve** page, you can review information about the packages.
-7. Select **Approve.**
-8. Return to the Unity Editor and click a blank area in the UI. You'll see a progress bar showing you that your packages are being imported.
+1. After you've made your selection(s), click **Get Features**.
+1. Select **Validate** to validate the packages you selected. You should see a dialog that says **No validation issues were detected**. When you do, click **OK**.
+1. On the **Import Features** page, the left-side column, **Features**, displays the packages you just selected. The right-side column, **Required dependencies**, displays any dependencies. You can click the **Details** link for any of these items to learn more about them.
+1. When you're ready to move on, select **Import.** On the **Review and Approve** page, you can review information about the packages.
+1. Select **Approve.**
+1. Return to the Unity Editor and click a blank area in the UI. You'll see a progress bar showing you that your packages are being imported.
  
 ## Configure the Unity project
 
@@ -116,13 +116,13 @@
     > [!NOTE]
     > The **Render Mode** setting, located just above **Depth Submission Mode**, is set by default to **Single Pass Instanced**. In mixed reality apps, the scene is rendered twice: once for each eye. The result is "stereoscopic vision." This doubles the amount of necessary computing, so it's important to select the most efficient rendering path in Unity to save on both CPU and GPU time. Single pass instanced rendering is the best choice here--we recommend that you enable it by default for every project. To learn more about this, [see the Unity documentaiton](https://docs.unity3d.com/Manual/SinglePassInstancing.html).
 
-2. Close the **Project Settings** window.
-3. In the **MRTK Project Configurator** window, select **Apply Settings**.
+1. Close the **Project Settings** window.
+1. In the **MRTK Project Configurator** window, select **Apply Settings**.
 
     :::image type="content" source="../../media/022-configurator-apply-settings.png" alt-text="Screenshot of MRTK Project Configurator with the Apply Settings button.":::
 
-4.  Select **Next** and then **Apply**. 
-5. Unity must restart in order for the configuration to take effect. When prompted, select **Apply** to restart the Unity editor.
+1.  Select **Next** and then **Apply**. 
+1. Unity must restart in order for the configuration to take effect. When prompted, select **Apply** to restart the Unity editor.
 
 ## Configure project settings for OpenXR
 
@@ -131,7 +131,7 @@
 1. In the **Project Settings** window's left-side column, select **Player**.
 1. Note that in the **Player** window, the **Product Name** is "MRTK Tutorial." This is taken from your project name and will be the name displayed in the HoloLens Start menu.
 
-    :::image type="content" source="../../media/025-product-name.png" alt-text="Screenshot of Unity Publishing Settings with the package name box filled in.":::
+    :::image type="content" source="../../media/025-product-name.png" alt-text="Screenshot of Unity Publishing Settings with the Project Name box filled in.":::
 
     > [!TIP]
     > To make the app easier to locate during development, add an underscore in front of the name to sort it to the top of any list.
@@ -215,7 +215,7 @@
 
 1. In **MRTK Project Configurator**, select **Next**, and then in **Audio spatializer** dropdown list, select **MS HRTF Spatializer**.
     
- 1. Select  **Apply**.
+1. Select  **Apply**.
 
     :::image type="content" source="../../media/set-window-enable-mixed-reality-2.png" alt-text= "Screenshot of Player settings window Enable Mixed Reality 2." lightbox="../../media/set-window-enable-mixed-reality-2.png":::
 
@@ -256,7 +256,7 @@
 
 1. In the Mixed Reality Feature Tool, select **Discover Features**. Features are grouped by category.
     
- 1. Select the **Mixed Reality Toolkit** to find packages relating to the Mixed Reality Toolkit.
+1. Select the **Mixed Reality Toolkit** to find packages relating to the Mixed Reality Toolkit.
 
     :::image type="content" source="../../media/discover-feature.png" alt-text= "Screenshot of MixedRealityFeatureTool Discover Features." lightbox="../../media/discover-feature.png":::
 
@@ -275,8 +275,6 @@
 1. Select **Approve** to add the **Mixed Reality Toolkit** into the project.
 
     :::image type="content" source="../../media/select-required-package-validate.png" alt-text= "Screenshot of MixedRealityFeatureTool Validate package." lightbox="../../media/select-required-package-validate.png":::
-
-
 
 ## Configure the Unity project
 
