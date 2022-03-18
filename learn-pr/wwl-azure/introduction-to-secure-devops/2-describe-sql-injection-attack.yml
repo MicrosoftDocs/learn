@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-secure-devops.describe-sql-injection-attack
+title: Describe SQL injection attack
+metadata:
+  title: Describe SQL injection attack
+  description: "Describe SQL injection attack"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-describe-sql-injection-attack.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-secure-devops.explore-continuous-security-validation
+title: Explore continuous security validation
+metadata:
+  title: Explore continuous security validation
+  description: "Explore continuous security validation"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-explore-continuous-security-validation.md)]
