@@ -1,4 +1,4 @@
-Another authentication mechanism offered by Azure AD is Managed service identities (MSIs).
+Another authentication mechanism offered by Azure AD is Managed identities.
 
 Imagine that you need to connect from an Azure Data Factory (ADF) to an Azure SQL Database. What identity should ADF present to the database?
 
