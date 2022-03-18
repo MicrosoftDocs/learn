@@ -1,4 +1,6 @@
-The diagram below describes the activities for this project. <!--figure 11-->
+## Overview
+
+The diagram below describes the activities for this project.
 
 :::image type="content" source="../media/project-activities.svg" alt-text="Illustration of the project activities." border="false":::
 

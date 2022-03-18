@@ -1,6 +1,8 @@
-One of the first considerations is deciding how big the queues should be. 
+## Introduction
 
-We have decided to allow up to 100 messages for each queue. The next decision is how big each message should be. Recall that the allowable message sizes are 1, 2, 4, 8, and 16 32-bit words. We have decided that the size of each message will be 1 word. This is defined by the following preprocessor directives:
+One of the first considerations is deciding how large the queues should be.
+
+We've decided to allow up to 100 messages for each queue. The next decision is how large each message should be. Recall that the allowable message sizes are 1, 2, 4, 8, and 16 32-bit words. We've decided that the size of each message will be 1 word. This size is defined by the following preprocessor directives:
 
 ```c
 #define    NUMBER_OF_MESSAGES    100

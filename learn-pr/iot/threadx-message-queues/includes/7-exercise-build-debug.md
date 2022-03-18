@@ -1,17 +1,19 @@
-*ProjectMessageQueues.c* contains three threads and two queues, where one of the threads sends messages to the queues. The other two threads are waiting for messages from the queues, and they receive them as they're sent. You get to observe the behavior of the queues and the threads, and then modify the project by adding one thread and one queue. 
+## Introduction
+
+*ProjectMessageQueues.c* contains three threads and two queues, where one of the threads sends messages to the queues. The other two threads are waiting for messages from the queues, and they receive them as they're sent. You get to observe the behavior of the queues and the threads, and then modify the project by adding one thread and one queue.
 
 > [!TIP]
 > Refer to [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
 
 ## Use GitHub Codespaces
 
-1. Open the codespace you have created from GitHub repo. Once done, you can view the sample projects repo within VSCode web.
+1. Open the codespace you've created from GitHub repo. Once done, you can view the sample projects repo within VSCode web.
 
-1. Expand the **TASK EXPLORER** pane and expand the **vscode** node you will find **Build / Clean / Run Project** tasks. Choose **Build Project** and select the run button.
+1. Expand the **TASK EXPLORER** pane and expand the **vscode** node you'll find **Build / Clean / Run Project** tasks. Choose **Build Project** and select the run button.
 
    ![VSCode Web Task Explorer](../../introduction-azure-rtos/media/vscode-web-tasks.png)
 
-1. Choose **06: ProjectMessageQueues** to build the project.
+1. Choose **ProjectMessageQueues** to build the project.
 
 1. Now choose **Run Project** in the same **TASK EXPLORER**.
 
@@ -25,31 +27,32 @@
 
 ## Complete the sample
 
-If all has gone well, you should see initial output appearing on the screen similar to this:
+If all has gone well, you should see initial output appearing on the screen similar to the following image:
 
 :::image type="content" source="../media/figure-21-partial-output-from-project-message-queues.png" alt-text="Sample output code." border="false":::
 
-Note that at 200 timer ticks, the Urgent thread received 14 messages, the Routine thread received 12 messages, and there was 1 message remaining in the Routine Queue. What do you think will happen when another thread and another queue are added to the project?
+At 200 timer ticks, the Urgent thread received 14 messages, the Routine thread received 12 messages, and there was 1 message remaining in the Routine Queue. What do you think will happen when another thread and another queue are added to the project?
 
 Your task is to add a third thread called Important and a third queue that is also called Important. The Important thread has a priority of 12. The diagram below contains a modified scenario of your project with the addition of the Important thread and queue. The attributes of Urgent thread and Routine thread remain the same. <!--figure 22-->
 
 :::image type="content" source="../media/modified-scenario-message-queues.svg" alt-text="Diagram showing modified scenario of project message queues." border="false":::
 
-The following diagram contains a description of the activities: <!--figure 24-->
+The following diagram contains a description of the activities:
 
 :::image type="content" source="../media/modified-activities-message-queues.svg" alt-text="Sample output code." border="false":::
 
 > [!NOTE]
 > The building blocks described in unit 6 contain tips about the modifications you need, summarized below:
-> - [Building block 1, part 2](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-1-part-2) - Add two counters, one thread, one queue, and one prototype <!--figure 13-->
+
+> - [Building block 1, part 2](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-1-part-2) - Add two counters, one thread, one queue, and one prototype
 > - [Building block 3, part 1](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-3-part-1) - Add one stack pointer and one queue pointer <!--figure 15-->
 > - [Building block 3, part 2](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-3-part-2) - Allocate stack space, create another thread, queue space create another queue <!--figure 16-->
 > - [Building block 4 `dispatcher thread entry`](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-dispatcher-thread-entry) - Increment message counter, and send messages to the new queue with a sleep time of 5 <!--figure 17-->
-> - [Building block 4 `routine thread entry`](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-routine-thread-entry) - Use the Routine entry function as a guide to create the new Important entry function with a sleep time of 21 <!--figure 19-->
-> - [Building block 4 `print_stats`](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-print-stats) - Get contents for queue Important, and add `printf` statements to include the new thread counter, message number, and queue contents <!--figure 20-->
+> - [Building block 4 `routine thread entry`](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-routine-thread-entry) - Use the Routine entry function as a guide to create the new Important entry function with a sleep time of 21
+> - [Building block 4 `print_stats`](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-print-stats) - Get contents for queue Important, and add `printf` statements to include the new thread counter, message number, and queue contents
 
-When you finish your modifications, then build and debug *ProjectMessageQueues.c* to produce output similar to that shown below: <!--figure 25-->
+When you finish your modifications, then build and debug *ProjectMessageQueues.c* to produce output similar to the sample shown below:
 
-:::image type="content" source="../media/figure-25-final-output.png" alt-text="Final output code." border="false"::: 
+:::image type="content" source="../media/figure-25-final-output.png" alt-text="Final output code." border="false":::
 
 Note that at 200 timer ticks, the Dispatcher thread had sent 30 messages, Urgent thread received 10 messages, Routine thread received 10 messages, and Important thread received 9 messages. There was 1 message in ImportantQueue, and the other 2 queues were empty. If you would allow this project to run longer, what would happen to the queues?
