@@ -29,7 +29,6 @@ levels:
 - intermediate
 roles:
 - developer
-- security-engineer
 products:
 - dotnet
 - aspnet-core

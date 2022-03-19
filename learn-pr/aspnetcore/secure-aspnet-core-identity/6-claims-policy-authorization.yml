@@ -9,8 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Exercise - Use claims with policy-based authorization
-azureSandbox: true
-interactive: bash
 durationInMinutes: 15
 content: |
   [!include[](includes/6-claims-policy-authorization.md)]

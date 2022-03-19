@@ -9,8 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Exercise - Configure multi-factor authentication
-azureSandbox: true
-interactive: bash
 durationInMinutes: 10
 content: |
   [!include[](includes/5-multi-factor-authentication.md)]
