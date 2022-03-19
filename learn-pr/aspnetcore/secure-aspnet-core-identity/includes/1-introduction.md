@@ -30,7 +30,7 @@ Before you start, ensure you have the following tools installed:
 * [SQL Server Express 2019](https://go.microsoft.com/fwlink/?LinkID=866658)
 * [Git CLI](https://git-scm.com/docs/gitcli)
 
-Alternatively, this module includes a *.devcontainer* file. The *.devcontainer* file defines a container pre-configured with all of the tools needed for this module. Using the *.devcontainer* requires:
+Alternatively, this module includes a *[.devcontainer](https://code.visualstudio.com/docs/remote/create-dev-container)* file. The *.devcontainer* file defines a container pre-configured with all of the tools needed for this module. Using the *.devcontainer* requires:
 
 * [Visual Studio Code](https://code.visualstudio.com)
 * [Docker](https://www.docker.com)
