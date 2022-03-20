@@ -61,11 +61,7 @@ Configure your Git repository to prevent pull requests from being merged until t
    > [!NOTE]
    > You're running your workflow manually so that GitHub detects the *lint* job in your workflow. The workflow needs to have run at least one time before you create the status check in the next steps.
 
-1. Select **Settings**.
-
-1. Select **Branches**.
-
-1. Select **Add rule**.
+1. Select **Settings** > **Branches** and then select **Add rule**.
 
    :::image type="content" source="../media/4-branch-protections.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page, with the Add rule button highlighted.":::
 
@@ -91,9 +87,29 @@ Configure your Git repository to prevent pull requests from being merged until t
 
    GitHub might ask you to sign in again to confirm your identity.
 
+## Update your branch
+
+<!-- TODO Gitte any better ideas here? See https://github.community/t/problem-with-github-template-repository-when-i-include-all-branches/121911/19 -->
+
+We've pre-created a branch in your repository with some Bicep changes, which you can use to create your pull request. Because of the way the sample is configured on GitHub, you need to *rebase* the branch. Rebasing ensures that you'll be able to create a pull request in the next section.
+
+1. In the Visual Studio Code terminal, enter the following commands to pull (download) all of the branches in the GitHub repository, and switch to the *feature/linux-app* branch:
+
+   ```bash
+   git pull --all
+   git checkout feature/linux-app
+   ```
+
+1. Enter the following commands to rebase the *feature/linux-app* branch and push your changes back to GitHub:
+
+   ```bash
+   git rebase origin/main -Xtheirs
+   git push --force
+   ```
+
 ## Create a pull request
 
-Now that the pull request validation workflow and branch protection rule are configured, let's see how pull requests use your workflow. We've pre-created a branch in your repository with some Bicep changes, which you can use to create your pull request.
+Now that the workflow and branch protection rules are configured, you can create a pull request.
 
 1. In your browser, select **Code**.
 
@@ -106,11 +122,11 @@ Now that the pull request validation workflow and branch protection rule are con
    > [!IMPORTANT]
    > Be sure to select the correct branch. Don't select the **feature/container-app** branch yet - you'll use that later in the module.
 
-<!-- TODO up to here -->
-
-1. Select **Contribute** > **Open pull request**.
+1. On the pull request creation page, change the title to **Update operating system to Linux**.
 
 1. Select **Create pull request**.
+
+   :::image type="content" source="../media/4-create-pull-request-details.png" alt-text="Screenshot of GitHub that shows the pull request creation page.":::
 
    The pull request detail page is displayed.
 
@@ -120,15 +136,18 @@ Now that the pull request validation workflow and branch protection rule are con
    
    Wait until the check completes. The check fails. Notice that you can't merge the pull request while the check fails.
 
+   :::image type="content" source="../media/4-checks-failed.png" alt-text="Screenshot of GitHub that shows the failed status check on the pull request details page.":::
+
 ## Fix the errors of the pull request validation
 
-1. Select **details** to inspect the details of why your pull request validation is failing. <!-- TODO explain error -->
+1. On the status check, select **Details** to inspect the workflow log.
 
-1. In the Visual Studio Code terminal, download all of the branches, and then switch to the *feature/linux-app* branch.
+   :::image type="content" source="../media/4-linter-error.png" alt-text="Screenshot of GitHub that shows the workflow log.":::
 
-   ```bash
-   git pull --all
-   git checkout feature/linux-app
+   Notice that the log includes this message from the Bicep linter:
+
+   ```output
+   Error no-unused-vars: Variable "appServiceAppLinuxFrameworkVersion" is declared but never used. 
    ```
 
 1. In Visual Studio Code, open the *deploy/main.bicep* file.
@@ -151,10 +170,10 @@ Now that the pull request validation workflow and branch protection rule are con
 
 1. Reopen your browser to the pull request details page.
 
-   Notice that the pull request validation is running again. Wait for the check to complete. This time, it succeeds. There are no syntax or linting errors in the Bicep file, so you're ready to merge the pull request.
+   Notice that the pull request validation is running again. Wait for the check to complete. This time, it succeeds. There are no syntax or linter errors in the Bicep file, so you're ready to merge the pull request.
 
-1. Select *Merge pull request* to close the pull request and merge the changes in your main branch.
+1. Select **Merge pull request** to close the pull request and merge the changes in your main branch.
 
-1. Select *Confirm merge*.
+   :::image type="content" source="../media/4-merge-pull-request.png" alt-text="Screenshot of GitHub that shows the Merge pull request button on the pull request details page.":::
 
-1. Select *Delete branch* to delete the *feature/linux-app* branch.
+1. Select **Confirm merge**.
