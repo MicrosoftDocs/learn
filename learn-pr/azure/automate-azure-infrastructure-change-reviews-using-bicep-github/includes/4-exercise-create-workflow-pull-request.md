@@ -1,4 +1,4 @@
-After speaking to your team you have decided to build in better confidence in what code makes it to the main branch of your repository by requiring pull request validation. In this exercise you will add a workflow that triggers when a pull request is opened and that runs validation steps.
+You need to update your website to run on the Linux operating system. In this exercise you'll add a validation workflow that automatically runs when a pull request is opened or updated. Then, you'll create a pull request for your website's operating system change.
 
 During the process, you'll:
 
@@ -59,7 +59,7 @@ Configure your Git repository to prevent pull requests from being merged until t
 
 1. Select **Add rule**.
 
-   :::image type="content" source="../media/3-github-branch-protections.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page, with the Add rule button highlighted.":::
+   :::image type="content" source="../media/4-github-branch-protections.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page, with the Add rule button highlighted.":::
 
 1. In the **Branch name pattern** text box, enter **main**.
 
@@ -79,7 +79,7 @@ Configure your Git repository to prevent pull requests from being merged until t
 
 1. Near the bottom of the page, select **Create**.
 
-   :::image type="content" source="../media/3-github-branch-protections-add.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page.":::
+   :::image type="content" source="../media/4-github-branch-protections-add.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page.":::
 
    GitHub might ask you to sign in again to confirm your identity.
 
