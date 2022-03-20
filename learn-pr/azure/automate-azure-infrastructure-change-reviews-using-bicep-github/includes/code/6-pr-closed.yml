@@ -1,26 +1,25 @@
 name: pr-closed
+concurrency: ${{ github.event.number }}
 
 on: 
   pull_request:
     types: [closed]
 
+env:
+  resourceGroupName: pr_${{ github.event.number }}
+
 jobs:
-  remove: 
+  remove:
     runs-on: ubuntu-latest
     steps:
       - uses: azure/login@v1
         name: Sign in to Azure
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}    
-      - name: Determine resource group name
-        id: determineResourceGroupName
-        run: |
-          export resourceGroupName=pr_${{ github.event.number }}
-          echo "::set-output name=resourceGroupName::$resourceGroupName"  
       - uses: Azure/cli@v1
         name: Delete resource group
         with: 
           inlineScript: |
             az group delete \
-              --name ${{steps.determineResourceGroupName.outputs.resourceGroupName}} \
+              --name ${{ env.resourceGroupName }} \
               --yes

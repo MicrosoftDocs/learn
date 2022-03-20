@@ -16,7 +16,7 @@ During the process, you'll:
 
 1. Add the following code into the file:
 
-   :::code language="yaml" source="code/4-pr-validation.yml" range="1-4" :::
+   :::code language="yaml" source="code/4-pr-validation.yml" range="1-3" :::
 
    This code ensures that the workflow is executed whenever a pull request is created or updated. Also, we can trigger the workflow manually.
 
@@ -26,7 +26,7 @@ When a pull request is opened or edited you want to run a linting step for your 
 
 1. Add the following lines to reuse the *lint* workflow defined in your repository:
 
-   :::code language="yaml" source="code/4-pr-validation.yml" range="6-8" :::
+   :::code language="yaml" source="code/4-pr-validation.yml" range="5-7" :::
 
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
@@ -89,7 +89,7 @@ Now that the pull request validation workflow and branch protection rule are con
 
 1. In your browser, select **Code**.
 
-1. Select the **change1** branch. (TODO)
+1. Select the **feature/linux-app** branch.
 
    GitHub shows a message indicating that the branch is one change ahead of the main branch.
 
@@ -107,17 +107,34 @@ Now that the pull request validation workflow and branch protection rule are con
 
 ## Fix the errors of the pull request validation
 
-1. Select **details** to inspect the details of why your pull request validation is failing. In the details you will see there is a syntax error in the Bicep file.
+1. Select **details** to inspect the details of why your pull request validation is failing. <!-- TODO explain error -->
 
-1. In Visual Studio Code, open the *deploy/main.bicep* file and fix the error on line 13.
+1. In the Visual Studio Code terminal, download all of the branches, and then switch to the *feature/linux-app* branch.
 
-   TODO code example
+   ```bash
+   git pull --all
+   git checkout feature/linux-app
+   ```
+
+1. In Visual Studio Code, open the *deploy/main.bicep* file.
+
+   Notice that there is a parameter named `appServiceAppLinuxFrameworkVersion` on line 16. The parameter isn't used. Next, you'll use a variable instead of a parameter, and ensure the variable is used.
+
+1. Delete lines 15 and 16 from the file.
+
+1. After the definition of the `storageAccountName` variable, define a new variable named `appServiceAppLinuxFrameworkVersion`:
+
+   :::code language="bicep" source="code/4-main-fixed.bicep" range="15-21" highlight="7" :::
+
+1. In the `appServiceApp` resource definition, update the `linuxFxVersion` property to use the new variable:
+
+   :::code language="bicep" source="code/4-main-fixed.bicep" range="62-82" highlight="8" :::
 
 1. In the Visual Studio Code terminal, commit your changes and push them to the repository.
 
    ```bash
    git add .
-   git commit -m "Fix syntax error in Bicep file"
+   git commit -m "Fix Bicep file"
    git push
    ```
 
@@ -131,4 +148,4 @@ Now that the pull request validation workflow and branch protection rule are con
 
 1. Select *Confirm merge*.
 
-1. Select *Delete branch* to delete the *Changes1* branch.
+1. Select *Delete branch* to delete the *feature/linux-app* branch.

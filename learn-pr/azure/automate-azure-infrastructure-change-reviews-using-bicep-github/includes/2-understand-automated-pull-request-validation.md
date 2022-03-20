@@ -66,6 +66,8 @@ on:
 > [!IMPORTANT]
 > If there are merge conflicts in a pull request, the workflow won't run. After you resolve the merge conflict and push the resolution, the workflows will resume.
 
+<!-- TODO explain pull_request without types gives us the right list for validation -->
+
 ###	Pull request status checks
 
 The results of a pull request workflow are shown on the pull request page as *checks*. This enables authors and reviewers to quickly get feedback on whether the automated activities have succeeded or failed.

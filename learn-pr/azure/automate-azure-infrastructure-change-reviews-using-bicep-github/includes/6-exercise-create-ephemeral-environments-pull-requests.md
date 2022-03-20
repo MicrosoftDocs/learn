@@ -12,8 +12,6 @@ During the process, you'll:
 > * Approve the PR.
 > * Watch the ephemeral environment be deleted
 
-<!-- TODO do we need to add an extra status check? -->
-
 ## Update the pull request workflow to deploy an ephemeral environment
 
 As a first step, you need to update your *pr-validation* workflow to create an ephemeral environment.
@@ -26,35 +24,36 @@ As a first step, you need to update your *pr-validation* workflow to create an e
 
 1. Open the *.github/workflows/pr-validation.yml* file.
 
-1. Near the top of the file, under the `on` section that defines triggers, add an environment variable named `resourceGroupLocation`:
+1. Near the top of the file, below the `name` setting, add a `concurrency` setting:
 
-   :::code language="yaml" source="code/6-pr-validation.yml" range="1-6" highlight="5-6" :::
+   :::code language="yaml" source="code/6-pr-validation.yml" range="1-2" highlight="2" :::
 
-   All Azure resource groups need to be created in an Azure region. You'll use this environment variable to deploy all of your ephemeral environments into the West US 3 region.
+   This setting prevents multiple workflows for the same pull request from running at the same time, which might cause unpredictable results when you deploy resources to Azure.
 
-1. Add the following job at the bottom of the file:
+1. Near the top of the file, under the `on` section that defines triggers, add two new environment variables:
 
-   :::code language="yaml" source="code/6-pr-validation.yml" range="12-19" :::
+   :::code language="yaml" source="code/6-pr-validation.yml" range="1-8" highlight="6-8" :::
+
+   The `resourceGroupName` environment variable specifies the name of the resource group that should be used for each ephemeral environment. Each resource group will be named `pr_123`, where `123` is the unique pull request number.
+
+   The `resourceGroupLocation` environment variable specifies that your ephemeral environments should all be deployed into the West US 3 Azure region.
+
+1. Define a new job named `deploy`, below the `lint` job:
+
+   :::code language="yaml" source="code/6-pr-validation.yml" range="10-21" highlight="5-12" :::
 
    The steps in this job first check out all the code onto the GitHub runner, and then sign into your Azure environment.
 
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
 
-1. At the bottom of the file, add another step to determine the name of the resource group to create:
+1. Add a step to create the resource group with the name defined in the environment variable:
 
-   :::code language="yaml" source="code/6-pr-validation.yml" range="20-24" :::
-
-   > [!NOTE]
-   > The `github.event.number` variable contains the current pull request number, which will be unique for each pull request. This number is used to create a name for a resource group and is outputted in a variable, so the next step can use this name.
-
-1. Add a step to create the resource group with the name determined in the previous step:
-
-   :::code language="yaml" source="code/6-pr-validation.yml" range="25-31" :::
+   :::code language="yaml" source="code/6-pr-validation.yml" range="22-28" :::
 
 1. Now that the resource group is created, add a step to deploy the Bicep file to the resource group:
 
-   :::code language="yaml" source="code/6-pr-validation.yml" range="32-41" :::
+   :::code language="yaml" source="code/6-pr-validation.yml" range="29-38" :::
 
 1. Save your changes.
 
@@ -77,23 +76,23 @@ You've created a workflow that automatically deploys the changes in each pull re
 
 1. Create a new file named *pr-closed.yml* in the *.github/workflows* folder.
 
-1. At the top of the file, name the workflow and configure it to run whenever a pull request is closed:
+1. At the top of the file, name the workflow, configure the same concurrency key that you used in the pull request validation workflow, and configure the workflow to run whenever a pull request is closed:
 
-   :::code language="yaml" source="code/6-pr-closed.yml" range="1-5" :::
+   :::code language="yaml" source="code/6-pr-closed.yml" range="1-6" :::
 
-1. Add a new job named **remove**, and configure it to sign in to Azure:
+1. Below the code you just entered, define an environment variable for the name of the resource group associated with the pull request's ephemeral environment:
 
-   :::code language="yaml" source="code/6-pr-closed.yml" range="7-14" :::
+   :::code language="yaml" source="code/6-pr-closed.yml" range="8-9" :::
 
-1. Similarly to the pull request validation workflow, define a step to determine the name of the resource group associated with this pull request:
+   The resource group name is the same as the one you used for the pull request validation workflow.
 
-   :::code language="yaml" source="code/6-pr-closed.yml" range="15-19" :::
+1. Below the code you added, define a new job named **remove**, and configure it to sign in to Azure:
 
-   The *determineResourceGroupName* step runs the same script as the pull request validation workflow, so it will work with the same resource group name.
+   :::code language="yaml" source="code/6-pr-closed.yml" range="11-18" :::
 
-1. Add a step to delete the resource group by using the Azure CLI, and confirm the deletion by using the `--yes` argument:
+1. Within the `remove` job, define a step to delete the resource group by using the Azure CLI, and confirm the deletion by using the `--yes` argument:
 
-   :::code language="yaml" source="code/6-pr-closed.yml" range="20-26" :::
+   :::code language="yaml" source="code/6-pr-closed.yml" range="19-25" :::
 
 1. Save your changes.
 
@@ -117,7 +116,7 @@ You've created a workflow that automatically deploys the changes in each pull re
 
 You've defined workflows to create and manage ephemeral environments automatically in pull requests. Now, you'll create another pull request to try it out.
 
-1. In your browser, navigate to the *change2* branch.
+1. In your browser, navigate to the *feature/container-app* branch.
 
 1. Select *Contribute* and *Open pull request* to open a new pull request.
 
@@ -151,7 +150,7 @@ You've defined workflows to create and manage ephemeral environments automatical
 
 You have now created a pull request that as a next step can be merged into the main branch.
 
-1. Select **Merge pull request**. This will merge the *change2* branch into *main*.
+1. Select **Merge pull request**. This will merge the *feature/container-app* branch into *main*.
 
 1. Select **Confirm merge**.
 
