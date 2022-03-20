@@ -1,4 +1,4 @@
-Kusto Query Language (KQL) lets you explore your data and discover patterns, identify anomalies and outliers, and create statistical models. A Kusto query is a read-only request to process data and return results. KQL offers a wide variety of functions that analyze your data in different ways. In a previous module, you learned how to use the most common tabular operators to begin exploring and filtering your data.
+Kusto Query Language (KQL) lets you explore your data and discover patterns, identify anomalies and outliers, and create statistical models. A Kusto query is a read-only request to process data and return results. KQL offers a wide variety of functions that analyze your data in different ways. In a previous module, you learned how to use the most common tabular operators to begin exploring and filtering your data. In this module, you'll learn how to aggregate data using the Kusto Query Language (KQL), organize complex queries, and display results visually to gain meaningful insights from this dataset.
 
 ## Example scenario
 

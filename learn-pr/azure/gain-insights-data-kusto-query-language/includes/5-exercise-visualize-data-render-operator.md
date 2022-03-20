@@ -1,8 +1,8 @@
-We've used a meteorological dataset to aggregate and compare the number of certain kinds of storm events in different US states for the year 2007. Here, you'll visualize these results with the aid of time-binned graphs. 
+We've used a meteorological dataset to aggregate and compare the number of certain kinds of storm events in different US states for the year 2007. Here, you'll visualize these results with the aid of time-binned graphs.
 
 ## Use the `render` operator
 
-Recall that you've used the `summarize` operator to group events by a common field such as *State*. In the last query of the previous unit, you used different versions of the `count` operator to compare the number and types of events by state. Visualizing these results can be a helpful aid in comparing activity across states. 
+Recall that you've used the `summarize` operator to group events by a common field such as *State*. In the last query of the previous unit, you used different versions of the `count` operator to compare the number and types of events by state. Visualizing these results can be a helpful aid in comparing activity across states.
 
 To visualize results, you'll use the `render` operator. This operator comes at the end of a query. Within the `render` operator, you'll specify which type of visualization to use, such as `columnchart`, `barchart`, `piechart`, `scatterchart`, `pivotchart`, and others. You can also optionally define different properties of the visualization, such as the x-axis or y-axis.
 
@@ -11,7 +11,7 @@ In this example, you'll visualize the previous query using a bar chart.
 1. Run the following query.
 
     <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy2NOQ6DQAxFe07hEqQUuQA0JCcAKWVkwAlTzBh5PEggDs9i3P33FzfK4t8zBY3ZBjF5j+JWgp5T0Lx4ZHCc+R+n4ws9/qnlWniKUFrM/XLjRit43r3BVq56u0xUQLdAo6h0/mLRU1+Z7wGEwkACHUo/ougOiZ2Ja5oAAAA=" target="_blank"> Click to run query</a>
-    
+
     ```kusto
     StormEvents
     | summarize count(),
@@ -22,14 +22,14 @@ In this example, you'll visualize the previous query using a bar chart.
     ```
 
     You should get results that look like the following image:
- 
+
     :::image type="content" source="../media/5-column-chart.png" alt-text="Screenshot of query with bar chart results." lightbox="../media/5-column-chart.png":::
 
 1. Notice the legend to the right of the bar chart. Each value in the legend represents a different column of data that has been summarized by *State* in the query. Try selecting one of the values, such as *count_*, to toggle the display of this data in the bar chart. By toggling off *count_*, you remove the total count and are left with count of events that caused damage and distinct number of events. You should get a graph that looks like the following image:
 
     :::image type="content" source="../media/5-column-chart-toggle.png" alt-text="Screenshot of column chart results with count_ field toggled off." lightbox="../media/5-column-chart-toggle.png":::
 
-1. What insights can you gain from this? You may notice, for example, that Texas had the most individual storm events, but Iowa had the highest incidence of damaging storm events.
+1. Take a look at the resulting bar chart. What insights can you gain from this? You may notice, for example, that Texas had the most individual storm events, but Iowa had the highest incidence of damaging storm events.
 
 ## Group values using the `bin` operator
 
@@ -39,20 +39,20 @@ You'll use the `bin` operator, which groups values into set intervals. For examp
 
 > `bin(`*value*`,`*roundTo*`)`
 
-The bin value can be a number, date, or timespan. You'll aggregate the count using the above bin to give you a count of events per week.  The *value* you want to group is the *StartTime* of the event, with the *roundTo* bin size of *7d*. Finally, *render* the data as a *columnchart* to create a histogram.
+The bin value can be a number, date, or timespan. You'll aggregate the count using the bin operator to give you a count of events per week. The *value* you want to group is the *StartTime* of the event, with the *roundTo* bin size of *7d*. Finally, *render* the data as a *columnchart* to create a histogram.
 
 1. Run the following query:
 
     <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dBUSKpUSMrM0wguSSwqCcnMTdVRME/RBKosSs1LSS0CKsspzc1LzgDKAgAcJKS1SgAAAA==" target="_blank"> Click to run query</a>
-    
+
     ```kusto
     StormEvents
     | summarize count() by bin(StartTime, 7d)
     | render columnchart
     ```
-    
+
     You should get results that look like the following image:
-    
+
     :::image type="content" source="../media/5-bin-1.png" alt-text="Screenshot of binned results graph.":::
 
 1. Take a look at the resulting histogram. Hover over one of the bars to see the bin start time (x-value) and event count (y-value).
@@ -66,22 +66,22 @@ In the following query, you'll first create a calculated column that adds these 
 1. Run the following query:
 
     <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy2MwQ5EQBBE7/sVdSTcnZysu4QfGKZjJ9Ez0pog+/E72Fvl1atqNQjXG3ldXl/QruQtrGEzEkq879BImEn0QPYHVQSXvqzMRtxJV0qeVYr+QO980qoR7RxTjsKm0ZZ4TYIhTCv74RPbH8PaQ9t9AAAA" target="_blank"> Click to run query</a>
-    
+
     ```kusto
     StormEvents
     | extend damage = DamageProperty + DamageCrops
-    | summarize sum(damage) by bin(StartTime, 7d) 
-    | render columnchart 
+    | summarize sum(damage) by bin(StartTime, 7d)
+    | render columnchart
     ```
 
     You should get results that look like the following image:
-    
+
     :::image type="content" source="../media/5-bin-2.png" alt-text="Screenshot of damage column chart binned by week.":::
 
-1. The above query shows you damage as a function of time. Another way to compare the damage is by event type. Run the following query to use a pie chart to compare the damages caused by different event types.
+1. The previous query shows you damage as a function of time. Another way to compare the damage is by event type. Run the following query to use a pie chart to compare the damages caused by different event types.
 
     <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy4tLc3MSizKpUEEsDoktTIalSAWxgSGVBKlBREdDE1CKFgszU5IzEohIAomCsu3EAAAA=" target="_blank"> Click to run query</a>
-    
+
     ```kusto
     StormEvents
     | extend damage = DamageProperty + DamageCrops
@@ -90,7 +90,7 @@ In the following query, you'll first create a calculated column that adds these 
     ```
 
     You should get results that look like the following image:
-    
+
     :::image type="content" source="../media/5-pie-chart.png" alt-text="Screen shot of kusto query with pie chart and results.":::
 
 1. Hover over one of the slices of the pie chart. You should see the absolute value (total damage caused by this event type) and the corresponding percentage of the overall damage.
