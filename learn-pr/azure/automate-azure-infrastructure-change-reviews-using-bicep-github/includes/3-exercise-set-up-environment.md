@@ -134,7 +134,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ## Create a service principal
 
-Later in this Microsoft Learn module, your pull request workflow will create resource groups and resources in your subscription. To do this, you need to create a service principal and grant it the Owner role on your subscription.
+Later in this Microsoft Learn module, your pull request workflow will create resource groups and resources in your subscription. To do this, you need to create a service principal and grant it the Contributor role on your subscription.
 
 > [!WARNING]
 > The service principal you create here will have a high level of access to your Azure subscription. To avoid any accidental issues, use a non-production subscription. Don't execute these steps in an environment that holds any of your production workloads.
@@ -149,12 +149,12 @@ Later in this Microsoft Learn module, your pull request workflow will create res
 
    Copy your Azure subscription ID to your clipboard.
 
-1. To create a service principal and assign it the Owner role for your subascription, run the following Azure CLI command in the Visual Studio Code terminal. Replace the `SUBSCRIPTION_ID` placeholder with the subscription ID you copied in the last step.
+1. To create a service principal and assign it the Contributor role for your subascription, run the following Azure CLI command in the Visual Studio Code terminal. Replace the `SUBSCRIPTION_ID` placeholder with the subscription ID you copied in the last step.
 
    ```azurecli
    az ad sp create-for-rbac \
      --name ToyWebsiteAutoReview \
-     --role Owner \
+     --role Contributor \
      --scopes '/subscriptions/SUBSCRIPTION_ID' \
      --sdk-auth
    ```
@@ -184,14 +184,14 @@ Later in this Microsoft Learn module, your pull request workflow will create res
 
 ::: zone pivot="powershell"
 
-1. To create a service principal and assign it the Owner role for your subscription, run the following Azure PowerShell command in the Visual Studio Code terminal.
+1. To create a service principal and assign it the Contributor role for your subscription, run the following Azure PowerShell command in the Visual Studio Code terminal.
 
    ```azurepowershell
    $azureContext = Get-AzContext
    $subscriptionId = "/subscriptions/$($azureContext.Subscription.Id)"
    $servicePrincipal = New-AzADServicePrincipal `
      -DisplayName ToyWebsiteAutoReview `
-     -Role Owner `
+     -Role Contributor `
      -Scope $subscriptionId
 
    $output = @{
