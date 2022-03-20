@@ -1,4 +1,4 @@
-We've used a meteorological dataset to aggregate and compare the number of certain kinds of storm events in different US states for the year 2007. Here, you'll visualize these results with the aid of time-binned graphs.
+We've used a meteorological dataset to aggregation and compare the number of certain kinds of storm events in different US states for the year 2007. Here, you'll visualize these results with the aid of time-binned graphs.
 
 ## Use the `render` operator
 
@@ -31,15 +31,15 @@ In this example, you'll visualize the previous query using a bar chart.
 
 1. Take a look at the resulting bar chart. What insights can you gain from this? You may notice, for example, that Texas had the most individual storm events, but Iowa had the highest incidence of damaging storm events.
 
-## Group values using the `bin` operator
+## Group values using the `bin()` function
 
-Until now, you've used aggregate functions to group events by *State*. Let's now look at the distribution of storms throughout the year, by grouping data by time. The time values we have are start time and end time values. Let's group the event start times by week, so we can see how many storms happened each week during the year 2007.
+Until now, you've used aggregation functions to group events by *State*. Let's now look at the distribution of storms throughout the year, by grouping data by time. The time values we have are start time and end time values. Let's group the event start times by week, so we can see how many storms happened each week during the year 2007.
 
-You'll use the `bin` operator, which groups values into set intervals. For example, you may have a data from every day of the year and you'd like to group these dates by week. Or, you want to group population data by age bins. The syntax of this operator is:
+You'll use the `bin()` function, which groups values into set intervals. For example, you may have a data from every day of the year and you'd like to group these dates by week. Or, you want to group population data by age bins. The syntax of this operator is:
 
 > `bin(`*value*`,`*roundTo*`)`
 
-The bin value can be a number, date, or timespan. You'll aggregate the count using the bin operator to give you a count of events per week. The *value* you want to group is the *StartTime* of the event, with the *roundTo* bin size of *7d*. Finally, *render* the data as a *columnchart* to create a histogram.
+The bin value can be a number, date, or timespan. You'll aggregate the count using the `bin()` function to give you a count of events per week. The *value* you want to group is the *StartTime* of the storm event, with the *roundTo* bin size of *7days* or *7d* for short. Finally, *render* the data as a *columnchart* to create a histogram.
 
 1. Run the following query:
 
@@ -59,9 +59,9 @@ The bin value can be a number, date, or timespan. You'll aggregate the count usi
 
 ## Use the `sum` operator
 
-In the previous query, you looked at the number of storm events over time. Now let's take a look at the damage caused by these storms. For this, you'll use the `sum` aggregate function, because you want to see the total amount of damage caused in each time interval. The dataset you're working with has two columns related to damage: *DamageProperty* and *DamageCrops*.
+In the previous query, you looked at the number of storm events over time. Now let's take a look at the damage caused by these storms. For this, you'll use the `sum` aggregation function, because you want to see the total amount of damage caused in each time interval. The dataset you're working with has two columns related to damage: *DamageProperty* and *DamageCrops*.
 
-In the following query, you'll first create a calculated column that adds these two damage sources together. Then you'll create an aggregate of total damage binned by week. Finally, you'll render a column chart representing the weekly damage caused by all storms.
+In the following query, you'll first create a calculated column that adds these two damage sources together. Then you'll create an aggregation of total damage binned by week. Finally, you'll render a column chart representing the weekly damage caused by all storms.
 
 1. Run the following query:
 

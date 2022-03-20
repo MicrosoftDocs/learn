@@ -1,10 +1,10 @@
 Before you can write queries and explore the meteorological data, you need to connect to a database that holds this data.
 
-To complete the exercises in this module, you need an Azure account.  If you don't have an Azure account, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+To complete the exercises in this module, you need an Azure account. If you don't have an Azure account, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Connect to the data
 
-We'll use the Azure Data Explorer web interface to connect to the data. However, the Kusto Query Language itself can also be used in Log Analytics, Azure Sentinel, and other services. You'll only need to connect once, and we'll continue to use this data connection for all queries in the following units.
+You'll use the Azure Data Explorer web interface to connect to the data. However, the Kusto Query Language itself can also be used in Log Analytics, Azure Sentinel, and other services. You'll only need to connect once, and you'll continue to use this data connection for all queries in the following units.
 
 1. Use your Azure account to sign in to the [Azure Data Explorer Web UI](https://dataexplorer.azure.com/).
 1. In the left pane, select **Add Cluster**.
@@ -13,7 +13,7 @@ We'll use the Azure Data Explorer web interface to connect to the data. However,
 
    :::image type="content" source="../media/3-add-cluster.png" alt-text="Screenshot of add help cluster in Azure Data Explorer Web UI.":::
 
-Now you're connected to the help cluster. 
+Now you're connected to the help cluster.
 
 ### Select the database
 

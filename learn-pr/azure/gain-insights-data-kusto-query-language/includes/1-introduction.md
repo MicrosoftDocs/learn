@@ -1,4 +1,4 @@
-Kusto Query Language (KQL) lets you explore your data and discover patterns, identify anomalies and outliers, and create statistical models. A Kusto query is a read-only request to process data and return results. KQL offers a wide variety of functions that analyze your data in different ways. In a previous module, you learned how to use the most common tabular operators to begin exploring and filtering your data. In this module, you'll learn how to aggregate data using the Kusto Query Language (KQL), organize complex queries, and display results visually to gain meaningful insights from this dataset.
+Kusto Query Language (KQL) lets you explore your data and discover patterns, identify anomalies and outliers, and create statistical models. A Kusto query is a read-only request to process data and return results. KQL offers a wide variety of functions that analyze your data in different ways. In a previous module, you learned how to use the most common tabular operators to begin exploring and filtering your data. In this module, you'll learn how to aggregation data using the Kusto Query Language (KQL), organize complex queries, and display results visually to gain meaningful insights from this dataset.
 
 ## Example scenario
 
@@ -8,11 +8,11 @@ You're a data analyst with a passion for meteorological data. You want to use KQ
 
 You'll write queries in the Kusto Query Language (KQL) to explore and gain insights from a sample dataset. You'll learn how to:
 
-* Group data using aggregate functions
-* Count events using the `count` operator
+* Group data using aggregation functions
+* Count events using the `count()`, `dcount()`, `countif()` functions
+* Summarize data using `sum()`, `avg()`, `min()`, `max()`, and `percentiles()` functions
 * Visualize data using the `render` operator
-* Summarize data using `avg`, `min`, and `max` operators
-* Introduce variables using the `let` function
+* Introduce variables using the `let` statement
 
 ## What is the main goal?
 

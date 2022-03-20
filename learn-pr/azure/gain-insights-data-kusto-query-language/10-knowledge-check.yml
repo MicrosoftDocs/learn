@@ -30,35 +30,35 @@ quiz:
   questions:
   - content: "Which function returns the number of distinct values of a particular column?"
     choices:
-    - content: "count"
+    - content: "`count()`"
       isCorrect: false
       explanation: "Try again. The `count()` function returns the number of rows in a table."
-    - content: "dcount"
+    - content: "`dcount()`"
       isCorrect: true
       explanation: "Correct. The `dcount()` function returns the number of distinct values of a particular column."
-    - content: "distinct"
+    - content: "`distinct()`"
       isCorrect: false
       explanation: "Try again. The `distinct()` function returns a list of distinct values of a particular column."
   - content: "Which function groups distributed data?"
     choices:
-    - content: "bin"
+    - content: "`bin()`"
       isCorrect: true
       explanation: "Correct. The `bin()` function groups a distributed set of values into a smaller set of specific values. It's used in combination with the `summarize by` operator."
-    - content: "summarize by"
+    - content: "`summarize by`"
       isCorrect: false
       explanation: "Try again. The `summarize by` operator aggregates data but doesn't redistribute it into a smaller set of specific values."
-    - content: "render"
+    - content: "`render`"
       isCorrect: false
       explanation: "Try again. The `render` operator is used to visualize the results of a query."
   - content: "Which function returns a frequency distribution for each group?"
     choices:
-    - content: "avg"
+    - content: "`avg()`"
       isCorrect: false
       explanation: "Try again. The `avg()` function returns the average value (arithmetic mean) for each group."
-    - content: "max"
+    - content: "`max()`"
       isCorrect: false
       explanation: "Try again. The `max()` function returns the maximum value for each group."
-    - content: "percentiles"
+    - content: "`percentiles()`"
       isCorrect: true
       explanation: "Correct. The `percentiles()` function returns the frequency distribution for each group."
   - content: "What kind of variables can you create with the `let` statement?"
