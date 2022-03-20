@@ -118,15 +118,9 @@ Now that the pull request validation workflow and branch protection rule are con
 
 1. In Visual Studio Code, open the *deploy/main.bicep* file.
 
-   Notice that there is a parameter named `appServiceAppLinuxFrameworkVersion` on line 16. The parameter isn't used. Next, you'll use a variable instead of a parameter, and ensure the variable is used.
+   Notice that there is a variable named `appServiceAppLinuxFrameworkVersion` on line 21. The variable isn't used. Next, you'll fix this error.
 
-1. Delete lines 15 and 16 from the file.
-
-1. After the definition of the `storageAccountName` variable, define a new variable named `appServiceAppLinuxFrameworkVersion`:
-
-   :::code language="bicep" source="code/4-main-fixed.bicep" range="15-21" highlight="7" :::
-
-1. In the `appServiceApp` resource definition, update the `linuxFxVersion` property to use the new variable:
+1. In the `appServiceApp` resource definition, update the `linuxFxVersion` property to use the variable instead of setting the property to a hard-coded value:
 
    :::code language="bicep" source="code/4-main-fixed.bicep" range="62-82" highlight="8" :::
 
