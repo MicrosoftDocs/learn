@@ -14,6 +14,8 @@ During the process, you'll:
 
 1. In Visual Studio Code, create a new file named *pr-validation.yml* in the *.github/workflows* folder.
 
+   :::image type="content" source="../media/4-visual-studio-code-pr-validation-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the P R validation dot Y M L file within the workflows folder.":::
+
 1. Add the following code into the file:
 
    :::code language="yaml" source="code/4-pr-validation.yml" range="1-3" :::
@@ -36,6 +38,8 @@ When a pull request is opened or edited you want to run a linting step for your 
    git push
    ```
 
+   <!-- TODO note you're doing this on main, which you might not do in real life -->
+
 ## Add a branch protection rule
 
 Configure your Git repository to prevent pull requests from being merged until the checks have succeeded.
@@ -46,12 +50,16 @@ Configure your Git repository to prevent pull requests from being merged until t
 
 1. Select **Run workflow** > **Run workflow**.
 
+   :::image type="content" source="../media/4-run-workflow-manual.png" alt-text="Screenshot of GitHub that shows the Actions page with the Run workflow button highlighted.":::
+
    Your workflow starts running on the *main* branch.
+
+1. Refresh the page to view the workflow status.
 
    Wait for the workflow to finish running.
 
    > [!NOTE]
-   > The reason you're running your workflow manually so that GitHub detects the *lint* job in your workflow. The workflow needs to have run at least one time before you create the status check in the next steps.
+   > You're running your workflow manually so that GitHub detects the *lint* job in your workflow. The workflow needs to have run at least one time before you create the status check in the next steps.
 
 1. Select **Settings**.
 
@@ -59,7 +67,7 @@ Configure your Git repository to prevent pull requests from being merged until t
 
 1. Select **Add rule**.
 
-   :::image type="content" source="../media/4-github-branch-protections.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page, with the Add rule button highlighted.":::
+   :::image type="content" source="../media/4-branch-protections.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page, with the Add rule button highlighted.":::
 
 1. In the **Branch name pattern** text box, enter **main**.
 
@@ -67,19 +75,19 @@ Configure your Git repository to prevent pull requests from being merged until t
 
 1. Deselect **Require approvals**. Normally, you'd select this option. But in this sample, you're going to merge your own pull request, and the **Require approvals** option prevents you from doing so.
 
-1. Select **Include administrators**. By selecting this option, you enforce the rule on yourself, too.
-
 1. Select **Require status checks to pass before merging**.
 
 1. In the text box that appears, enter **lint**.
 
 1. Select the **lint / Lint Code** job.
 
+1. Select **Include administrators**. By selecting this option, you enforce the rule on yourself, too.
+
    Leave the other configuration options with their default values.
 
 1. Near the bottom of the page, select **Create**.
 
-   :::image type="content" source="../media/4-github-branch-protections-add.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page.":::
+   :::image type="content" source="../media/4-branch-protections-add.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page.":::
 
    GitHub might ask you to sign in again to confirm your identity.
 
@@ -89,9 +97,16 @@ Now that the pull request validation workflow and branch protection rule are con
 
 1. In your browser, select **Code**.
 
-1. Select the **feature/linux-app** branch.
+   Notice that GitHub detects there are two branches with changes.
 
-   GitHub shows a message indicating that the branch is one change ahead of the main branch.
+1. In the box with the branch name **feature/linux-app**, select **Compare & pull request**.
+
+   :::image type="content" source="../media/4-create-pull-request.png" alt-text="Screenshot of GitHub that shows the pull request creation buttons for both branches.":::
+
+   > [!IMPORTANT]
+   > Be sure to select the correct branch. Don't select the **feature/container-app** branch yet - you'll use that later in the module.
+
+<!-- TODO up to here -->
 
 1. Select **Contribute** > **Open pull request**.
 
