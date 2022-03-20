@@ -30,11 +30,13 @@ On the GitHub site, follow these steps to create a repository from the template:
 
    :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
 
-1. Enter a name for your new project, such as *toy-reusable*.
+1. Enter a name for your new project, such as *toy-website-auto-review*.
 
 1. Select the **Public** option.
 
    When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
+
+1. Select the **Include all branches** option.
 
 1. Select **Create repository from template**. 
 
@@ -54,22 +56,22 @@ You now have a copy of the template repository in your own account. You'll now c
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
-1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toys-reusable_ folder, run the following command:
+1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the *toy-website-auto-review* folder, run the following command:
 
    ```bash
-   cd toys-reusable
+   cd toy-website-auto-review
    ```
 
 1. Type `git clone` and then paste the URL you copied earlier, which looks something like this:
 
    ```bash
-   git clone https://github.com/mygithubuser/toys-reusable.git
+   git clone https://github.com/mygithubuser/toy-website-auto-review.git
    ```
 
 1. Reopen Visual Studio Code in the repository folder by running the following command in the Visual Studio Code terminal:
 
    ```bash
-   code -r toys-reusable
+   code -r toy-website-auto-review
    ```
 
 ## Sign in to Azure
