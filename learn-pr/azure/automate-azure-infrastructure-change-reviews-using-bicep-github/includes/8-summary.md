@@ -1,10 +1,8 @@
-You wanted to have an automated process to review any changes before they made it to the main branch of your project. In this module you learned how you could add workflows that trigger on pull request creation and synchronization. You also learned how you could make these status checks mandatory so users are not able to merge changes into the main branch in case these checks fail.
+You needed to introduce automated checks to review your team's Bicep changes before they're merged to the main branch of your GitHub repository. In this module, you learned how to add GitHub Actions workflows that are triggered automatically when pull requests are created, synchronized, and closed. You also learned how to make these status checks mandatory by using branch protection rules, to ensure that nobody merges changes into the main branch until the automated checks succeed. Your website needed to be updated to use the Linux operating system, and you used status checks to validate and verify your pull request's changes.
 
-You also learned how you could create ephemeral environments that allow you to have a means of reviewing what will be deployed once changes make it to the main branch of your project. These environments allow contributors to try things out and iterate on their changes.
+Then, you learned how to create ephemeral environments, which give you the opportunity to review what will be deployed when the changes in a pull request are merged. Ephemeral environments enable contributors to experiment, and to iterate on their changes while seeing a live preview of their work in Azure, without affecting any of your production or non-production environments. When you changed your website to use a container image, you could easily see see how the website works with the new configuration while you were still preparing and reviewing your code changes. You also learned how to automatically remove the resources used by your ephemeral environments after a pull request is closed.
 
-You also learned how to clean up these ephemeral environments in an automated way once a pull request is closed.
-
-You now have much more confidence in the code that gets merged into your main branch.
+Now, you have even more confidence in your Bicep code, and in the Azure infrastructure changes that are merged into your repository's main branch.
 
 ## Learn more
 
