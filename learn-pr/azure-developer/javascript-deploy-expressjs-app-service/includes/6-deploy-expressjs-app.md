@@ -71,10 +71,22 @@ Use deployment slots when you need to:
 * Reverse a deployment from new to old
 * Show a temporary "Sorry, we're having issues" message with full branding and contact information
 
-A deployment slot name, such as `test` is postpended to your resource name. That slot name also becomes part of the URL to reach that slot's deployed code, `https://YOUR-APP-NAME.azurewebsites.net`.
+A deployment slot name, such as `test` is postpended to your resource name. That slot name also becomes part of the URL to reach that slot's deployed code, `https://YOUR-APP-NAME-test.azurewebsites.net`.
 
 ## Visual Studio Code deployment sources
 
 Visual Studio Code allows you to deploy a local folder to Azure App Service or you can configure a Deployment source such as GitHub. 
 
-This module deploys _all_ the local files. To deploy those files, you clone your own fork to your local computer, then deploy a folder within it.
+This module deploys _all_ the local files. To deploy those files, you need to clone your own fork to your local computer, then deploy a folder within it.
+
+The Visual Studio Code deployment process creates a **Zip deploy** of the folder you select to deploy. The App Service uses the zipped package, along with the `package.json` to install the npm packages and start the project correctly. 
+
+The **Zip deploy** actions usually have the following order:
+
+    * Create zip package
+    * Oryx build
+    * Node.js platform detection
+    * Create manifest file
+    * Npm install
+    * Copy files to destination directory `/home/site/wwwroot`
+    * Clean up 

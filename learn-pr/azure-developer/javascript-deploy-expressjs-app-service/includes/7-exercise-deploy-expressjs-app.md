@@ -4,45 +4,92 @@ In this exercise, you need to:
 * Clone your fork to your local computer
 * Deploy the sample from your local computer to App Service
 
+## Fork the GitHub sample repository
 
-## Create resource in Visual Studio Code
+1. Open the [GitHub sample](https://github.com/Azure-Samples/msdocs-javascript-nodejs-server), `https://github.com/Azure-Samples/msdocs-javascript-nodejs-server`, repository in a new browser tab or window.
+1. Find and select the **Fork** button. 
 
-1. Open Visual Studio Code.
-1. In Visual Studio Code, use the key combination to open the **Azure** sidebar: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A<kbd>.
-1. In the **App Service** section, right-click on the sandbox subscription name and select **Create New Web App... (Advanced)**. By selecting the advanced creation process, you can select all your choices.
-1. Use the following table to answer the creation steps:
+## Clone your fork to your local computer
 
-    | Step | Value|
-    | -- | -- |
-    |Globally unique name|To ensure global uniqueness and to have an easy URL (the name is part of the URL), choose a name like `YOUR-EMAIL-ALIAS-rentals`, for example `jimb-rentals`. The URL would be `https://jimb-rentals.azurewebsites.net/`.|
-    |Resource group|Select the default.|
-    |Runtime stack| Select one of the Node LTS versions.|
-    |OS|Select **Linux**.|
-    |Location|Select a location geographically close to you.|
-    |App Service Plan|Create a new plan and select the default name.|
-    |Pricing tier|Free|
-    |Application Insights|Create a new resource and select the default name.|
+1. In Visual Studio Code, open the Command palette with <kbd>Cntl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>.
+1. Search for `Git: Clone` and select it. 
+1. Enter your fork's URL of the sample repository. It should look something like:
 
-1. When creation is finished. You'll see the new web app listed in the App Service section of the Azure sidebar. 
-1. Expand the web app to see the subnodes:
+    ```console
+    https://github.com/YOUR-GITHUB-ALIAS/msdocs-javascript-nodejs-server
+    ```
 
-    |Subnode|Purpose|
-    |--|--|
-    |Application Settings|Environment variables as name/value pairs|
-    |Databases|If you create your database at the same time as you create your web app, the database is listed here. NOT USED IN THIS MODULE.|
-    |Deployments|Shows a list of deployments. That is covered in the next exercise of this module.|
-    |Files| Files deployed to your resource.|
-    |Logs|This is where your running app's logs are stored. A common reason you would look at these logs is if you deploy an app that requires environment variables or npm modules to run but those aren't correctly specified. The app won't start up correctly.|
-    |Deployment Slots|Typically used for versions of your app such as stage, test, etc. The original slot is always the product slot. Any additional slots use the original name then the slot name, such as `jimb-rentals-stage` and the name and slow become part of the URL, `https://jimb-rentals-stage.azurewebsites.net/`. Deployment slots require a product plan. NOT USED IN THIS MODULE.|
+1. Select a local folder on your computer to clone your fork.
+1. When you are asked if you want to open the cloned repository, select **Open**. 
 
-1. Expand the **Files** section to see the **hostingstart.html** file. 
-1. Open the file. This is a basic HTML page that displays until you deploy the app. 
+    The code is local on your computer. 
 
-    **TIP**: When you're still working on your project and not quite ready to show it, create a new slot named `temporary` with a custom version of this file. The custom version can be branded. If you have deployment or app issues, you can swap over to the `Temporary` slot quickly while you resolve your issues. 
+## Browse the repository folders
 
-1. Expand the **Logs** section to see the various logs. This section will be more interesting after your first deployment.
+The local project has several folders, each representing a Learn module. The `2-Deploy-basic-app-to-azure` is the code that you will deploy to Azure App Service. Ignore the other folders for now.
+
+1. Open the `2-Deploy-basic-app-to-azure` to view the Express.js files.
+1. Open the `package.json` to understand what files the App Service will install as part of the app:
+
+    ```json
+    {
+      "name": "msdocs-javascript-nodejs-server",
+      "version": "0.0.1",
+      "type": "module",
+      "scripts": {
+        "start": "cross-env-shell DEBUG=express:* node index.js",
+        "format": "prettier --write ."
+      },
+      "dependencies": {
+        "body-parser": "^1.19.2",
+        "cross-env": "^7.0.3",
+        "ejs": "^3.1.6",
+        "express": "^4.17.2",
+        "http-errors": "^2.0.0",
+        "method-override": "^3.0.0",
+        "multer": "^1.4.4",
+        "prettier": "^2.5.1",
+        "uuid": "^8.3.2"
+      }
+    }
+    ```
+
+1. Notice that the `package.json` file has a `start` script and dependencies. The deployment process uses the package.json to install the dependencies and start the project. 
+
+## Deploy the sample from your local computer to App Service
+
+1. In Visual Studio Code, open the Azure side bar.
+1. In the side bar, select the App Service, find and expand the repository and resource group:
+
+    * **Subscription name**: `Concierge Subscription`
+    * **Resource group name**: `<rgn>Sandbox resource group ID</rgn>` 
+
+1. Find the app your created in the previous exercise, such as `jimb-rentals`.
+1. Right-click the app and select **Deploy to Web App...*.
+1. Browse to and select the subfolder `2-Deploy-basic-app-to-azure`.
+1. When asked if you are sure you want to deploy, select **Deploy**.
+1. When the notification displays with the option to check **output window**, select it.
+1. The deployment status displays with datetime stamps and actions. 
+
+1. When you see something like the following lines in the **output** terminal, the deployment is complete: 
+
+    ```console
+    3:08:19 PM jimb-rentals: Deployment successful.
+    3:08:29 PM: Deployment to "jimb-rentals" completed.
+    ```
+
+## View the app
+
+1. In Visual Studio Code, in the Azure sidebar, right-click on your App Service and select **Browser website**.
+1. The Express.js web app should display successfully. You can add, edit, and delete properties in the web site. 
+1. The data is loaded in memory, if you want to refresh the data, go back to the Azure sidebar, right-click on your App Service and select **Restart**.
 
 ## What did this exercise accomplish? 
 
-* You created your web app, its plan, and the logging resource (Application Insights).
-* You learned about the default HTML file and the deployment slots.
+* You forked then cloned the GitHub sample repository.
+* You deployed a subfolder of your local forked repository.
+* You interacted with the web site, once it was deployed.
+* You completed all these steps with:
+    * A web browser
+    * Visual Studio Code
+    * A free subscription provided by the Learn sandbox
