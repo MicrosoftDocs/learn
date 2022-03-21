@@ -22,6 +22,12 @@ As a first step, you need to update your *pr-validation* workflow to create an e
    git checkout main
    ```
 
+1. Pull the latest version of the code from GitHub.
+
+   ```bash
+   git pull
+   ```
+
 1. Open the *.github/workflows/pr-validation.yml* file.
 
 1. Near the top of the file, below the `name` setting, add a `concurrency` setting:
@@ -110,58 +116,86 @@ You've created a workflow that automatically deploys the changes in each pull re
    git push
    ```
 
-<!-- TODO here down -->
+## Rebase your branch
+
+Just like in the previous exercise, we've precreated a feature branch for you to use. Here, you to rebase the *feature/container-app* branch so that it can be merged.
+
+1. In the Visual Studio Code terminal, enter the following commands to switch to the *feature/container-app* branch:
+
+   ```bash
+   git checkout feature/container-app
+   ```
+
+1. Enter the following commands to rebase the *feature/container-app* branch and push your changes back to GitHub:
+
+   ```bash
+   git rebase origin/main -Xtheirs
+   git push --force
+   ```
 
 ## Create a pull request
 
 You've defined workflows to create and manage ephemeral environments automatically in pull requests. Now, you'll create another pull request to try it out.
 
-1. In your browser, navigate to the *feature/container-app* branch.
+1. In your browser, navigate to the **Code** and select **3 branches**.
 
-1. Select *Contribute* and *Open pull request* to open a new pull request.
+   :::image type="content" source="../media/6-branches.png" alt-text="Screenshot of GitHub that shows the repository's branch list.":::
 
-1. Leave all the defaults and select *Create pull request*.
+1. Next to the **feature/container-app** branch, select **New pull request**.
+
+   :::image type="content" source="../media/6-create-pull-request.png" alt-text="Screenshot of GitHub that shows the link to create a pull request for the feature slash container app branch.":::
+
+1. Update the pull request title to **Use container image for website**.
+
+1. Select **Create pull request**.
 
 ## Watch the ephemeral environment get created
 
-1. In your browser, navigate to **Actions**.
-
-1. You should see your new workflow started running.
+1. On the pull request details page, wait for the status checks to appear.
 
    > [!NOTE]
-   > It might be that you need to give it some time for the workflow to start running. Refresh your browser window until you see the workflow started running.
+   > It might take some time for the workflow to start running. Refresh your browser window until you see the status checks.
 
-1. Select the running workflow to go to its detail.
+1. Select **Details** next to the **deploy** job.
 
-1. Select the **deploy** stage to see its detail.
+   :::image type="content" source="../media/6-create-pull-request.png" alt-text="Screenshot of the GitHub pull request that shows the status checks. The Details link for the 'deploy' job is highlighted.":::
 
-1. Select the **create resource group name** step to see its detail. In the log output you'll notice that a resource group named **pr_4** will be created.
+   Wait for the deployment to finish.
 
-1. In your browser, navigate to the Azure portal.
+1. Select **Show website hostname**.
 
-1. In the top search bar, search for the **pr_4** resource group and select the resource group to open it.
+1. Select the URL in the log.
 
-1. In the resource group detail you'll see the resources from the Bicep file got created.
+   :::image type="content" source="../media/6-website-address.png" alt-text="Screenshot of the GitHub Actions deployment log. The website URL in the 'Show website hostname' step is highlighted.":::
 
-   > [!NOTE]
-   > As an additional step you might also make the *deploy* job mandatory before a pull request can be merged by adding this as an additional status check to the protected main branch. You do this in exactly the same way as the previous lint mandatory check you added in the previous exercise. We will leave it to you whether you want to add this extra check or not.
+   The website loads. It displays a message showing *Hello Docker!*, which indicates the website is running from the container defined in the pull request change.
 
-## Approve the PR
+   :::image type="content" source="../media/6-website.png" alt-text="Screenshot of the website homepage after the deployment completes.":::
 
-You have now created a pull request that as a next step can be merged into the main branch.
+1. Optionally, open the [Azure portal](https://portal.azure.com/azure-portal=true) and navigate to the ephemeral environment's resource group.
 
-1. Select **Merge pull request**. This will merge the *feature/container-app* branch into *main*.
+   Review the resources that were deployed.
+
+## Merge the pull request
+
+Now that you've tested the pull request, you can merge it into the *main* branch.
+
+1. Select **Pull requests**, and select the **Use container image for website** pull request.
+
+   :::image type="content" source="../media/6-reopen-pull-request.png" alt-text="Screenshot of GitHub showing the list of open pull requests in the repository.":::
+
+1. Select **Merge pull request**.
 
 1. Select **Confirm merge**.
 
-## Watch the ephemeral environment be deleted
+## Review the deletion of the resource group
 
-Closing the pull request also triggered the *pr-closed* workflow.
+1. In the browser, navigate to **Actions** and select the **pr-closed** workflow.
 
-1. In the browser, navigate to **Actions**.
+   Notice that the workflow has been invoked.
 
-1. You should notice the *pr-closed* workflow got triggered.
+   <!-- TODO 6-pr-closed-workflow.png -->
 
-1. Select the workflow and inspect the output.
+1. Select the workflow to review the log.
 
-1. Navigate to the Azure portal and refresh the **Resource group overview**. After a while you'll see that the **pr_4** resource group got deleted.
+   It might take a few minutes for the workflow to finish deleting the resource group. You don't need to wait.

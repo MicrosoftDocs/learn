@@ -15,7 +15,6 @@ param resourceNameSuffix string = uniqueString(resourceGroup().id)
 // Define the names for resources.
 var appServiceAppName = 'toy-website-linux-${resourceNameSuffix}'
 var appServicePlanName = 'toy-website-linux'
-var applicationInsightsName = 'toywebsite'
 var storageAccountName = 'mystorage${resourceNameSuffix}'
 
 var appServiceAppLinuxFrameworkVersion = 'node|14-lts'
@@ -38,7 +37,7 @@ var environmentConfigurationMap = {
   Test: {
     appServicePlan: {
       sku: {
-        name: 'F1'
+        name: 'B1'
       }
     }
     storageAccount: {
@@ -67,28 +66,7 @@ resource appServiceApp 'Microsoft.Web/sites@2021-01-15' = {
     httpsOnly: true
     siteConfig: {
       linuxFxVersion: appServiceAppLinuxFrameworkVersion
-      appSettings: [
-        {
-          name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
-          value: applicationInsights.properties.InstrumentationKey
-        }
-        {
-          name: 'APPLICATIONINSIGHTS_CONNECTION_STRING'
-          value: applicationInsights.properties.ConnectionString
-        }
-      ]
     }
-  }
-}
-
-resource applicationInsights 'Microsoft.Insights/components@2020-02-02' = {
-  name: applicationInsightsName
-  location: location
-  kind: 'web'
-  properties: {
-    Application_Type: 'web'
-    Request_Source: 'rest'
-    Flow_Type: 'Bluefield'
   }
 }
 

@@ -87,7 +87,7 @@ Configure your Git repository to prevent pull requests from being merged until t
 
    GitHub might ask you to sign in again to confirm your identity.
 
-## Update your branch
+## Rebase your branch
 
 <!-- TODO Gitte any better ideas here? See https://github.community/t/problem-with-github-template-repository-when-i-include-all-branches/121911/19 -->
 
