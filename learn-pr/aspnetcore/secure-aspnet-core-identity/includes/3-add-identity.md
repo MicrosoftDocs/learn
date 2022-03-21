@@ -1,20 +1,52 @@
 Identity works out-of-the-box without any customization. The standard Identity UI components are packaged in a .NET Standard Razor Class Library (RCL). Because an RCL is used, few files are added to the project.
 
-After applying the initial EF Core migration, the supporting database tables are created. The following diagram depicts the schemas of the supporting tables:
+In this unit, Identity will be added to an existing ASP.NET Core Razor Pages project.
 
-![database diagram.](../media/3-identity-tables.png)
+> [!NOTE]
+> This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
 
-  > [!NOTE]
-  > The above image shows the key(s) and relationships in the database. The key is a one, and the infinity (sideways 8) is a many.  A database can have 1 to 1, 1 to many, and many to many relationship types.  Keys are unique.  The diagram shows how these joins are created, and the relationships.
+[!include[](../../../includes/dotnet6-sdk-version.md)]
 
-In this unit, Identity will be added to the existing ASP.NET Core Razor Pages project.
+This project includes a *[.devcontainer](https://code.visualstudio.com/docs/remote/containers)* file preconfigured with the required tools. If you have Docker installed and wish to use the *.devcontainer*, select "Reopen in Container" when prompted. Alternatively, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette, and then search for and select **Remote-Containers: Reopen in Container**.
+
+The *.devcontainer* also works in GitHub Codespaces for a browser-based experience.
+
+## Obtain and open the starter project
+
+1. At a shell terminal, run the following commands to obtain the starter project:
+
+    ```dotnetcli
+    git clone https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity
+    ```
+
+2. Switch to the source code directory and launch Visual Studio Code:
+
+    ```dotnetcli
+    cd mslearn-secure-aspnet-core-identity
+    code .
+    ```
+
+    Visual Studio Code opens. Accept any prompts to install recommended extensions, or select **Reopen in Container** if you wish to use the *.devcontainer*.
+
+3. After the project loads (either locally or in the container), press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> to open a new terminal window.
+4. Set your location to the *RazorPagesPizza* directory:
+
+    ```dotnetcli
+    cd RazorPagesPizza
+    ```
+
+5. Build the project:
+
+    ```dotnetcli
+    dotnet build
+    ```
 
 ## Add Identity to the project
 
 1. Install the ASP.NET Core code scaffolder:
 
     ```dotnetcli
-    dotnet tool install dotnet-aspnet-codegenerator --version 3.1.2
+    dotnet tool install dotnet-aspnet-codegenerator --version 6.0.2
     ```
 
     The following output appears:
@@ -106,23 +138,10 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
     * The Azure Key Vault configuration provider is implicitly used to retrieve the database username and password:
 
-        ::: zone pivot="pg"
-
-        ```csharp
-        Username = context.Configuration["DbUsername"],
-        Password = context.Configuration["DbPassword"]
-        ```
-
-        ::: zone-end
-
-        ::: zone pivot="sql"
-
         ```csharp
         UserID = context.Configuration["DbUsername"],
         Password = context.Configuration["DbPassword"]
         ```
-
-        ::: zone-end
 
     * The database username and password are injected into the connection string stored in *:::no-loc text="appsettings.json":::*.
     * The EF Core database context class, named `ContosoPetsAuth`, is configured with the appropriate connection string.

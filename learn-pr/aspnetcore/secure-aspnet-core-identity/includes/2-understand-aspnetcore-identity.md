@@ -21,59 +21,9 @@ In the preceding diagram:
 * The *EF Core Identity Store* layer contains classes from the `Microsoft.AspNetCore.Identity.EntityFrameworkCore` namespace. An example of such a class used implicitly in this module is `UserStore<TUser>`.
 * The *Database Provider* is a database-specific library that accepts SQL from the *EF Core Provider* (not pictured) and executes it.
 
-## Review project requirements
+After applying the initial EF Core migration, the supporting database tables are created. The following diagram depicts the schemas of the supporting tables:
 
-Your stakeholders have defined the following business requirements:
+![database diagram.](../media/3-identity-tables.png)
 
-* There are two types of authenticated users for the system: employees and administrators.
-* Anonymous users aren't allowed to view the product catalog.
-* Employees can only view the product catalog.
-* Administrators can modify products.
-* Upon successful login, the user's first and last name should appear in the app's header.
-
-Your development team makes the following technical decisions:
-
-* Identity data should be isolated in its own database.
-* The database tables supporting Identity should belong to the default schema.
-* Administrators will self-enroll using a single-use token.
-* The app must support logging in with multi-factor authentication using a TOTP authenticator app.
-* The database credentials should be stored in Azure Key Vault.
-
-## Review starter code
-
-The app consists of a single ASP.NET Core Razor Pages project named *:::no-loc text="ContosoPets.Ui":::*. The project contains the user interface for viewing and managing product data. The product data is obtained via an external ASP.NET Core web API.
-
-Of particular interest are the following files and directories in *:::no-loc text="ContosoPets.Ui":::*:
-
-|Name              |Description                                                    |
-|------------------|---------------------------------------------------------------|
-|*:::no-loc text="Controllers/AdminTokenController.cs":::* |Exposes `AdminRegistrationTokenService` as an HTTP endpoint. Unused until Unit 6.|
-|*:::no-loc text="Pages/Products/":::*            |Contains web UI for CRUD operations.|
-|*:::no-loc text="Services/AdminRegistrationTokenService.cs":::* |Generates tokens allowing administrators to self-register. Unused until Unit 6.|
-|*:::no-loc text="Services/ProductService.cs":::*          |Manages all interactions with the external ASP.NET Core web API.|
-|*:::no-loc text="Services/QRCodeService.cs":::*          |Manages the creation of QR codes for supporting multi-factor authentication. Unused until Unit 5.|
-|*:::no-loc text="wwwroot/js/product.js":::*          |Enables deletion of a product from *:::no-loc text="Pages/Products/Index.cshtml":::* without a server-side postback.|
-|*:::no-loc text="Program.cs":::*            |Serves as the app's main entry point and registers the Azure Key Vault configuration provider.|
-|*:::no-loc text="Startup.cs":::*            |Configures services and the app's HTTP request pipeline.|
-
-> [!NOTE]
-> Azure Key Vault is used to securely store and retrieve sensitive data. The starter code implements it to demonstrate one possible way to secure database credentials. It's unrelated to Identity and therefore out of scope for this module. See the `ConfigureKeyVault` method in the *:::no-loc text="Program.cs":::* file for the Key Vault registration code.
-
-## Verify database connectivity
-
-Run the following command:
-
-```bash
-db -Q "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='dbo' ORDER BY TABLE_NAME" -Y 25
-```
-
-The script created a `db` alias. The alias corresponds to `sqlcmd` with `-U` (username), `-P` (password), `-S` (server hostname), and `-d` (database name) options. [sqlcmd](/sql/tools/sqlcmd-utility) is a cross-platform command-line tool for administering and querying SQL Server databases. The preceding command retrieves a list of non-system tables from the Azure SQL Database that was created earlier.
-
-As expected, the list is empty because there are no tables in the database's `dbo` schema.
-
-```console
-TABLE_NAME
--------------------------
-
-(0 rows affected)
-```
+  > [!NOTE]
+  > The above image shows the key(s) and relationships in the database. The key is a one, and the infinity (sideways 8) is a many.  A database can have 1 to 1, 1 to many, and many to many relationship types.  Keys are unique.  The diagram shows how these joins are created, and the relationships.
