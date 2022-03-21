@@ -11880,6 +11880,61 @@
       "source_path": "learn-pr/wwl-azure/integrate-identity-management-systems/4-explore-managed-service-identities.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/integrate-identity-management-systems/4-explore-managed-identity",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-tools-track-usage-flow/4-explore-azure-log-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-tools-track-usage-flow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-pipelines-concurrency/4-describe-azure-devops-open-source-projects.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-pipelines-concurrency/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-security-development-process/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-security-development-process/2-describe-sql-injection-attack.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-security-development-process/3-understand-threat-modeling.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-security-development-process/4-exercise-threat-modeling.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-security-development-process/5-explore-key-validation-points.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-security-development-process/6-explore-security-for-continuous-integration.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-security-development-process/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-security-development-process/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-security-development-process/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
     }
   ]
 }

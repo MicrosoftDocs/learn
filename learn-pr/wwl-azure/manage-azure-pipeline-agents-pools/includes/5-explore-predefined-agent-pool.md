@@ -6,12 +6,10 @@ The following virtual machine images are provided by default:
 
  -  Windows Server 2022 with Visual Studio 2022.
  -  Windows Server 2019 with Visual Studio 2019.
- -  Windows Server 2016 with Visual Studio 2017.
- -  Ubuntu 20.04.
+ -  Ubuntu 20.04.<br>
  -  Ubuntu 18.04.
- -  macOS 11.
- -  macOS X Mojave 10.14.
- -  macOS X Catalina 10.15.
+ -  macOS 11 Big Sur.
+ -  macOS X Catalina 10.15.<br>
 
 By default, all contributors in a project are members of the User role on each hosted pool.
 
