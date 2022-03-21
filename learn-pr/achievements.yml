@@ -897,3 +897,8 @@ achievements:
   title: Explore large-scale data analytics
   summary: Explore data ingestion options to build a data warehouse with Azure, services to perform data analytics, and features of Azure Synapse Analytics. Create a Synapse Analytics workspace and use it to ingest and analyze data.
   iconUrl: /learn/achievements/synapse-analytics-explore.svg
+- uid: learn.wwl.introduction-security-development-process
+  type: badge
+  title: Introduction to security development process
+  summary: This module introduces development security practices describing SQL injection attacks, threat modeling, and security for continuous integration. You will learn the key validation points and how to secure your pipeline.
+  iconUrl: /learn/achievements/5-introduction-to-security-development-process.svg
