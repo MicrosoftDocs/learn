@@ -8,7 +8,7 @@ Using binary package management, a development team can create a local cache of 
 
 In Azure DevOps, *Azure Artifacts* is an integral part of the component workflow for organizing and sharing access to your packages. Azure Artifacts allows you to:
 
- -  Keep your artifacts organized. Share code easily by storing Apache Maven, npm, and Nuget packages together. You can store packages using Universal Packages, eliminating keeping binaries in Git.
+ -  Keep your artifacts organized. Share code easily by storing Apache Maven, npm, and NuGet packages together. You can store packages using Universal Packages, eliminating keeping binaries in Git.
  -  Protect your packages. Keep every public source package you use (including packages from npmjs and NuGet .org) safe in your feed where only you can delete it and where it's backed by the enterprise-grade Azure Service Level Agreement (SLA).
  -  Integrate seamless package handling into your Continuous Integration (CI)/ Continuous Development (CD) pipeline. Easily access all your artifacts in builds and releases. Azure Artifacts integrates natively with the Azure Pipelines CI/CD tool.
 
@@ -99,7 +99,7 @@ The following table details the compatibility of each package with specific vers
 :::row-end:::
 
 
-Maven, npm, and Nuget packages can be supported with teams of any size from public and private sources. Azure Artifact comes with Azure DevOps, but the extension is also available from the Visual Studio Marketplace.
+Maven, npm, and NuGet packages can be supported with teams of any size from public and private sources. Azure Artifact comes with Azure DevOps, but the extension is also available from the Visual Studio Marketplace.
 
 :::image type="content" source="../media/azure-devops-artifacts-highlighted-c6041d93.png" alt-text="Screenshot of Azure DevOps with Artifacts highlighted in the menu pane. In the connect to feed pane, package types NuGet, npm, Maven, Gradle, Universal, and Python are highlighted.":::
 
