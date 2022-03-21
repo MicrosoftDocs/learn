@@ -169,7 +169,7 @@ You've defined workflows to create and manage ephemeral environments automatical
 
 1. Select **Details** next to the **deploy** job.
 
-   :::image type="content" source="../media/6-create-pull-request.png" alt-text="Screenshot of the GitHub pull request that shows the status checks. The Details link for the 'deploy' job is highlighted.":::
+   :::image type="content" source="../media/6-deploy-details.png" alt-text="Screenshot of the GitHub pull request that shows the status checks. The Details link for the 'deploy' job is highlighted.":::
 
    Wait for the deployment to finish.
 

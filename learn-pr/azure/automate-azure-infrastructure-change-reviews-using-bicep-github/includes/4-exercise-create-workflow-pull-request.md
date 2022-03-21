@@ -62,7 +62,7 @@ When a pull request is opened or edited you want to run a linting step for your 
 
 1. Update app
 
-   :::code language="bicep" source="code/4-main-broken.bicep" range="61-71" highlight="8-10" :::
+   :::code language="bicep" source="code/4-main-broken.bicep" range="61-71" highlight="7-9" :::
 
 1. Save
 
