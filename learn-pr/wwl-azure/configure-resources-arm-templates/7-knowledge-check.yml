@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/29/2021
+  ms.date: 03/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: ""
   questions:
@@ -24,7 +24,7 @@ quiz:
       explanation: "That's incorrect. An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for the deployment. Templates declare what will be deployed without having to write the sequence of programming commands to create it."
     - content: "A JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for the deployment."
       isCorrect: true
-      explanation: "That's correct. An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for the deployment. Templates declare what what will be deployed without having to write the sequence of programming commands to create it."
+      explanation: "That's correct. An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for the deployment. Templates declare what will be deployed without having to write the sequence of programming commands to create it."
     - content: "A script used by the Azure Resource Manager to manage the Azure storage account."
       isCorrect: false
       explanation: "That's incorrect. An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for the deployment. Templates declare what will be deployed without having to write the sequence of programming commands to create it."
@@ -35,7 +35,7 @@ quiz:
       explanation: "That's incorrect. Includes are not part of the template schema."
     - content: "Scripts"
       isCorrect: false
-      explanation: "That's incorrect. Scripts is not part of the template schema."
+      explanation: "That's incorrect. Scripts are not part of the template schema."
     - content: "Outputs"
       isCorrect: true
       explanation: "That's correct. Outputs are part of the template schema. Outputs are used to return values from the deployed resources."
