@@ -1,3 +1,4 @@
+## Overview
 
 Let's look at the building blocks we'll use to create our project in the next unit.
 
@@ -13,9 +14,9 @@ We'll use this code to add declarations, definitions, and prototypes:
 
 > [!NOTE]
 > The highlighted code:
-> - Adds another queue and queue timer. 
-> - Adds the values in the highlighted section for your project.
 >
+> - Adds another queue and queue timer.
+> - Adds the values in the highlighted section for your project.
 
 <a name="variables"></a>
 
@@ -32,15 +33,15 @@ We'll use this code to add variables:
 
 ### Main entry point
 
-We'll use this code for the main entry point: 
+We'll use this code for the main entry point:
 
 :::code language="c" source="../code/project-event-chaining.c" range="74-83":::
 
 > [!NOTE]
-> The code is identical to the code that's used in earlier modules, and no changes are needed. 
+> The code is identical to the code that's used in earlier modules, and no changes are needed.
 
 ## Building block 3
- 
+
 <a name="application-definitions"></a>
 
 ### Application definitions
@@ -51,10 +52,10 @@ We'll use this code to add application definitions:
 
 > [!NOTE]
 > The highlighted lines of code:
+>
 > - Add another queue pointer.
 > - Create another queue and timer.
 > - Register another function.
->
 
 ## Building block 4
 
@@ -102,4 +103,3 @@ We'll use this code to add a notification function:
 
 > [!NOTE]
 > In this code, you'll add another notification function.
->
