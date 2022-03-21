@@ -28,11 +28,11 @@ SCM_DO_BUILD_DURING_DEPLOYMENT=true
 
 ## Build process
 
-For the sample app used in this module, the build process runs `npm install` which accesses the list of dependencies from `package.json`. 
+For the sample app used in this module, the build process runs `npm install` which accesses the list of dependencies from `package.json`. You will set `SCM_DO_BUILD_DURING_DEPLOYMENT` to true in the following exercise 
 
 ## Deployment tasks
 
-After you deploy your app, you may want to overwrite just a file or set of files. Don't do this with Visual Studio Code because it overwrites all files.  This is best accomplished with the Azure CLI, the Kudu UI in the Azure portal, or SSH. 
+After you deploy your app, you may want to overwrite just a file or set of files. Don't do this with Visual Studio Code because it overwrites *all* files.  This is best accomplished with the Azure CLI, the Kudu UI in the Azure portal, or SSH. 
 
 ## Deploy local code or GitHub repository
 

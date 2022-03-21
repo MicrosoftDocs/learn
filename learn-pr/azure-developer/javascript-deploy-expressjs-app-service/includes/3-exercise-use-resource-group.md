@@ -1,8 +1,10 @@
 In this exercise, you need to:
 
-* [Install required software]()
+* [Install required software on your local computer]()
 * [Sign into the Learn sandbox]() with a user account you use for the entire module, both in the sandbox UI and in Visual Studio Code.NET 
-* [Find the subscription and resource group in Visual Studio Code]() in the sandbox.
+    * This sandbox gives you a free subscription and resource group to complete this module from Visual Studio Code.
+    * <rgn>Sandbox resource group ID</rgn> 
+* [Find the free subscription and resource group in Visual Studio Code]() in the sandbox.
 
 ## Install required software
 
@@ -22,7 +24,8 @@ Make sure you use the same account to sign into the sandbox that use also use la
 
 ## Optional: find the subscription name
 
-If you don't have access to any subscriptions on Azure, this step should be optional, because when you sign into Azure in Visual Studio Code, only one subscription, this sandbox, should be listed. If you discover there is more than one subscription, and you can't determine the subscription, return to this step and complete it.  
+* New to Azure: If you don't have access to any subscriptions on Azure, this step should be optional, because when you sign into Azure in Visual Studio Code, only one subscription, this sandbox, should be listed. 
+* Already on Azure: If you discover there is more than one subscription, and you can't determine the subscription, return to this step and complete it.  
 
 In the _Azure Cloud Shell_, enter the following command to see the sandbox **subscription name**:
 

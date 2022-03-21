@@ -67,4 +67,4 @@ Because the subscription are already created for you, as part of the sandbox, yo
 In the next exercise:
 
 * Start the sandbox, get the subscription name
-* View resource group from Visual Studio Code
+* View resource group from Visual Studio Code 
