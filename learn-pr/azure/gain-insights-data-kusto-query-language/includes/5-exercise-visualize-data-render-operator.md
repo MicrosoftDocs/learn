@@ -10,7 +10,7 @@ In this example, you'll visualize the previous query using a bar chart.
 
 1. Run the following query.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy2NOQ6DQAxFe07hEqQUuQA0JCcAKWVkwAlTzBh5PEggDs9i3P33FzfK4t8zBY3ZBjF5j+JWgp5T0Lx4ZHCc+R+n4ws9/qnlWniKUFrM/XLjRit43r3BVq56u0xUQLdAo6h0/mLRU1+Z7wGEwkACHUo/ougOiZ2Ja5oAAAA=" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy2NOQ6DQAxFe07hEqQUuQA0JCcAKWVkwAlTzBh5PEggDs9i3P33FzfK4t8zBY3ZBjF5j+JWgp5T0Lx4ZHCc+R+n4ws9/qnlWniKUFrM/XLjRit43r3BVq56u0xUQLdAo6h0/mLRU1+Z7wGEwkACHUo/ougOiZ2Ja5oAAAA=" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -43,7 +43,7 @@ The bin value can be a number, date, or timespan. You'll aggregate the count usi
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dBUSKpUSMrM0wguSSwqCcnMTdVRME/RBKosSs1LSS0CKsspzc1LzgDKAgAcJKS1SgAAAA==" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dBUSKpUSMrM0wguSSwqCcnMTdVRME/RBKosSs1LSS0CKsspzc1LzgDKAgAcJKS1SgAAAA==" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -65,7 +65,7 @@ In the following query, you'll first create a calculated column that adds these 
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy2MwQ5EQBBE7/sVdSTcnZysu4QfGKZjJ9Ez0pog+/E72Fvl1atqNQjXG3ldXl/QruQtrGEzEkq879BImEn0QPYHVQSXvqzMRtxJV0qeVYr+QO980qoR7RxTjsKm0ZZ4TYIhTCv74RPbH8PaQ9t9AAAA" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy2MwQ5EQBBE7/sVdSTcnZysu4QfGKZjJ9Ez0pog+/E72Fvl1atqNQjXG3ldXl/QruQtrGEzEkq879BImEn0QPYHVQSXvqzMRtxJV0qeVYr+QO980qoR7RxTjsKm0ZZ4TYIhTCv74RPbH8PaQ9t9AAAA" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -80,7 +80,7 @@ In the following query, you'll first create a calculated column that adds these 
 
 1. The previous query shows you damage as a function of time. Another way to compare the damage is by event type. Run the following query to use a pie chart to compare the damages caused by different event types.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy4tLc3MSizKpUEEsDoktTIalSAWxgSGVBKlBREdDE1CKFgszU5IzEohIAomCsu3EAAAA=" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy4tLc3MSizKpUEEsDoktTIalSAWxgSGVBKlBREdDE1CKFgszU5IzEohIAomCsu3EAAAA=" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents

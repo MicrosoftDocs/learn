@@ -17,7 +17,7 @@ This solution provides one possible way to construct a query that answers the pr
 
 The previous steps are all included in the following query:
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy2NQQuCQBSE74H/YfCkFYkQdAhP5T3QP7DqKwV3V94+LaMfn1ue5s18b5ieBPnIyJAe0uMZSVJbMxG7zhqwEgo2hVjW+URGXLD54NkSE36+nAdCqxzCe29tE3pMLyHT4Kq0elAW/fXGdiCWGbsVXJbAxdj6bd9yo9aKuzf5ay3FqGZUnUFUiGIpO017nJrY//OyQYza9qM2dbvgLznThJzJAAAA" target="_blank"> Click to run query</a>
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy2NQQuCQBSE74H/YfCkFYkQdAhP5T3QP7DqKwV3V94+LaMfn1ue5s18b5ieBPnIyJAe0uMZSVJbMxG7zhqwEgo2hVjW+URGXLD54NkSE36+nAdCqxzCe29tE3pMLyHT4Kq0elAW/fXGdiCWGbsVXJbAxdj6bd9yo9aKuzf5ay3FqGZUnUFUiGIpO017nJrY//OyQYza9qM2dbvgLznThJzJAAAA" target="_blank">Click to run query</a>
 
 ```kusto
 let Eur = 1.14; //conversion rate

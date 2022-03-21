@@ -6,15 +6,15 @@ The sample database we're using has an entry for each storm event in the US in 2
 
 To group these events into chunks of information, you'll use the `summarize` operator. `summarize` is used for all functions that aggregation groups of values of multiple rows to form a single summary value. You can summarize the whole table, for example, by counting the number of results using the following query:
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dAEAIiJgN4fAAAA" target="_blank"> Click to run query</a>
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dAEAIiJgN4fAAAA" target="_blank">Click to run query</a>
 
 :::image type="content" source="../media/4-count-basic.png" alt-text="Screenshot of count operator general query and results.":::
 
-You can also summarize data into groups of similar types of events by specifying the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. You'll use the aggregation function called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we have renamed within the query to *EventCount*. 
+You can also summarize data into groups of similar types of events by specifying the way you want to group the aggregation. For example, to count events by state, you'll write a query to `summarize` `count` by `state`. In fact, the previous sentence is very similar to the actual query. You'll use the aggregation function called `count()`, which counts the number of rows by group. This function generates a new column that gives the count of events grouped by state, which we've renamed within the query to *EventCount*. 
 
 1. Copy and paste the query into your query editor.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5uWqUSguzc1NLMqsSlUAiznnl+aVKNgqJINoDU2FpEqF4JLEklSw0vyiEpAAQiEAmVOvwUwAAAA=" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5uWqUSguzc1NLMqsSlUAiznnl+aVKNgqJINoDU2FpEqF4JLEklSw0vyiEpAAQiEAmVOvwUwAAAA=" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -45,7 +45,7 @@ Notice that all elements within the summarize operator are separated by commas a
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy1NSw5AMBDdO8UsSSxcgA1OQGIpxaCLGmmHhDg87Xi792+YrKlP3NhFD7jDGGX1jTDSsXGcpBF8EL/TvFbKqAVbKi3tDnKJ6TkWXdQCsr83yUqot9eOCQwXNKwY/RdZ9jxk+hdcHcMviAAAAA==" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy1NSw5AMBDdO8UsSSxcgA1OQGIpxaCLGmmHhDg87Xi792+YrKlP3NhFD7jDGGX1jTDSsXGcpBF8EL/TvFbKqAVbKi3tDnKJ6TkWXdQCsr83yUqot9eOCQwXNKwY/RdZ9jxk+hdcHcMviAAAAA==" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -67,7 +67,7 @@ The previous query returned a distinct count of 27 different types of storms in 
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUApxjXAMVgJKpGQWl2TmJZcogJWGVBakAgWL84tKFJIqEWIKicXJABv/PVBRAAAA" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUApxjXAMVgJKpGQWl2TmJZcogJWGVBakAgWL84tKFJIqEWIKicXJABv/PVBRAAAA" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents

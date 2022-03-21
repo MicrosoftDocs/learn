@@ -36,7 +36,7 @@ Notice the commented-out portions of the query that begin with double forward sl
 
 Next, let's look at a count of the most frequent event type as a function of time. First, you need to figure out which is the most frequent event type. Then, you'll use this value in a query. Use the *StormEvents* table to find the top *EventType* by counting the number of events within each type. Use the `project` operator to return only the *EventType* column.
 
-Before starting to construct the `let` statement, run the the query to find out what this event actually is. This allows you to verify that you're query is producing the expected results.
+Before starting to construct the `let` statement, run the query to find out what this event actually is. This allows you to verify that your query is producing the expected results.
 
 <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5uWqUSguzc1NLMqsSlVIzi/NK9HQVEiqVABLh1QWpIJUlOQXKBiCRMEK4kFCBUX5WanJJQh1AGSi72VVAAAA" target="_blank">Click to run query</a>
 
@@ -134,7 +134,7 @@ Within a `let` statement, you'll declare function name, arguments, and body usin
 let function=(argument1:datatype, argument2:datatype) {functionbody};
 ```
 
-Specifically, you'll use a user-defined function to calculate percentages. First, define the data type and input arguments. For this example, you'll use the following:
+Specifically, you'll use a user-defined function to calculate percentages. First, define the data type and input arguments. For this example, you'll use the following arguments:
 
 | Argument name | Data type | Description |
 |--|--|--|

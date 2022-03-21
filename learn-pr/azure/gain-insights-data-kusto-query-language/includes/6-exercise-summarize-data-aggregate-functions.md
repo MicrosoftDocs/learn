@@ -10,7 +10,7 @@ The following query creates a calculated column using the `extend` operator to a
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy8ozUolSYajsFA6BQcWlubmJRZlWqQmJZugZESlMhqVIBbEdIZUEqSFF+UQlIDKgkHqIEALtwQu2HAAAA" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy8ozUolSYajsFA6BQcWlubmJRZlWqQmJZugZESlMhqVIBbEdIZUEqSFF+UQlIDKgkHqIEALtwQu2HAAAA" target="_blank">Click to run query</a>
 
     ```Kusto
     StormEvents
@@ -30,7 +30,7 @@ The following query creates a calculated column using the `extend` operator to a
 
     Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy4tLc3MSizKpUhaL80rwUjcSy9Mw0DYhuHZgpdgoGmpoKSZUKYFtCKgtSQTrzi0pAYmAd8RCVAL1AJu6LAAAA" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy4tLc3MSizKpUhaL80rwUjcSy9Mw0DYhuHZgpdgoGmpoKSZUKYFtCKgtSQTrzi0pAYmAd8RCVAL1AJu6LAAAA" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -51,7 +51,7 @@ For absolute maximum or minimum values, use the `min()` and `max()` aggregation 
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA0WOMQ7CMAxFd07hEQQDFygSAsZKSHABo1olg5PKdUOCevgmbQPb1/tP336oE755stpvRqCgZBtokLElqOA6h7u4jkQj7FdwSSDrnzcJFfsEx4T6gRnFfAlqDItdMYbtIu0OUBtbsLF/fPYkKa0V+rZU8Iow//eMHeUDTjSz3/wEBeMpqMIAAAA=" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA0WOMQ7CMAxFd07hEQQDFygSAsZKSHABo1olg5PKdUOCevgmbQPb1/tP336oE755stpvRqCgZBtokLElqOA6h7u4jkQj7FdwSSDrnzcJFfsEx4T6gRnFfAlqDItdMYbtIu0OUBtbsLF/fPYkKa0V+rZU8Iow//eMHeUDTjSz3/wEBeMpqMIAAAA=" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -76,7 +76,7 @@ So far, you've calculated the min, max, and average values of damage caused by e
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy8ozUolSYajsFA6BQcWlubmJRZlWqAlBLMtDYzJzUYg2IEh0FUx0FIwMgBcQWQGxpqqmQVKkAtj6ksiAVpD+/qARFTCGxOBkAk1m5yaUAAAA=" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRSK0oSc1LUUhJzE1MT1WwVXABMwKK8gtSi0oqFbShAs5AAZDy8ozUolSYajsFA6BQcWlubmJRZlWqAlBLMtDYzJzUYg2IEh0FUx0FIwMgBcQWQGxpqqmQVKkAtj6ksiAVpD+/qARFTCGxOBkAk1m5yaUAAAA=" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
