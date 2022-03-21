@@ -38,6 +38,6 @@ The App Service keeps logs in the hosting environment for you to review when an 
 
 ## View cloud-based Application Insights logs
 
-When you created the App Service, you included 
+When you created the App Service, you included Application Insights. 
 
 ## Application insights logs

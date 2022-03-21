@@ -27,16 +27,16 @@ Make sure you use the same account to sign into the sandbox that use also use la
 ## Find the subscription in Visual Studio Code
 
 1. Open Visual Studio Code. 
-1. Use the key combination to open the Command Palette: <kbd>Ctrl</kbd> + <kbd>Shirt</kbd> + <kbd>P</kbd>. 
+1. Use the key combination to open the Command Palette: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>. 
 1. In the Command Palette, select `Azure: Sign In to Azure Cloud` to complete the sign in process. 
 1. When the listing of Azure clouds displays, select the `Azure Cloud`.
 1. When the process is finished, your account displays in the bottom bar, `Azure: youremail@mail.com`.
-1. Select your account in the bottom bar and filter the list of subscriptions to the subscription name you found in the previous section.
-1. Enable the sandbox subscription. Uncheck any other subscriptions so you can focus while you are completing this module. 
+1. Select your account in the bottom bar and filter the list of subscriptions to `Concierge Subscription`.
+1. Enable the sandbox subscription, `Concierge Subscription`. Uncheck any other subscriptions so you can focus while you are completing this module. 
 
 ## Install the Azure extensions
 
-1. In Visual Studio Code, use the key combination to open the **Extensions Marketplace** sidebar: <kbd>Ctrl</kbd> + <kbd>Shirt</kbd> + <kbd>X</kbd> : 
+1. In Visual Studio Code, use the key combination to open the **Extensions Marketplace** sidebar: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> : 
 1. Filter the marketplace to add both of the following extensions
     * Azure Resources
     * Azure App Service
@@ -45,7 +45,7 @@ Make sure you use the same account to sign into the sandbox that use also use la
 
 1. In Visual Studio Code, use the key combination to open the **Azure** sidebar: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
 1. The Azure sidebar has two sections, one for resource groups, and one for App Service.
-1. Expand the resource group section, select the sandbox subscription. The resource group displays and is currently empty.
+1. Expand the resource group section, select the sandbox subscription. The resource group displays an Azure Storage resource for cloud shell. This was creating automatically when you began using the sandbox.
 
 ## What did this exercise accomplish? 
 
