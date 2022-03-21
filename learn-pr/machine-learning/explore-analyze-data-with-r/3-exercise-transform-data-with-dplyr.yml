@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.machine-learning.explore-analyze-data-r.exercise-transform-data-with-dplyr
-title: Exercise - Transform data with dplyr
+title: Exercise - Transform data by using dplyr
 metadata:
-  title: Exercise - Transform data with dplyr
-  description: Exercise - Transform data with dplyr.
+  title: Exercise - Transform data by using dplyr
+  description: In this exercise, you'll learn how to transform data by using dplyr.
   ms.date: 03/10/2022
   author: softchris
   ms.author: chnoring
