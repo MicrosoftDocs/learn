@@ -57,9 +57,13 @@ As a first step, you need to update your *pr-validation* workflow to create an e
 
    :::code language="yaml" source="code/6-pr-validation.yml" range="22-28" :::
 
-1. Now that the resource group is created, add a step to deploy the Bicep file to the resource group:
+1. After the resource group creation step, add a step to deploy the Bicep file to the resource group:
 
    :::code language="yaml" source="code/6-pr-validation.yml" range="29-38" :::
+
+1. After the deployment step, add a step to display the ephemeral environment's website address in the workflow log:
+
+   :::code language="yaml" source="code/6-pr-validation.yml" range="39-41" :::
 
 1. Save your changes.
 
