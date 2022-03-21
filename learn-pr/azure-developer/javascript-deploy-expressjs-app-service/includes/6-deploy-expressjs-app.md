@@ -14,7 +14,7 @@ Because this is a Node.js app, it needs to have the npm modules required by the 
 
 Typically, having Azure install the npm packages is a better solution and is the process this module uses. 
 
-If you intend to deploy another app to App Service which requires moving npm modules instead of having Azure install them, you should consider strategies to make the process easier such as: 
+If you intend to deploy another app to App Service, which requires moving npm modules instead of having Azure install them, you should consider strategies to make the process easier such as: 
 
 * Storing custom npm modules in Azure Storage and installing modules from there. This will speed up the deployment and allows you to make a secure connection between Storage and App Service.
 
@@ -28,7 +28,7 @@ SCM_DO_BUILD_DURING_DEPLOYMENT=true
 
 ## Build process
 
-For the sample app used in this module, the build process runs `npm install` which accesses the list of dependencies from `package.json`. You will set `SCM_DO_BUILD_DURING_DEPLOYMENT` to true in the following exercise 
+For the sample app used in this module, the build process runs `npm install` which accesses the list of dependencies from `package.json`. You'll set `SCM_DO_BUILD_DURING_DEPLOYMENT` to true in the following exercise 
 
 ## Deployment tasks
 
@@ -53,37 +53,28 @@ When coming from another hosting service, you may be accustomed to checking the 
 
 Azure provides several ways to look at files on the host service:
 * **Azure portal**: When you look at your host resource for with the Azure portal, you can use the provided development tools in the portal such as:
-    * The in-browser SSH terminal.
-    * The in-browser bash terminal.
+    * The in-browser SSH and bash terminals, available from your app's SCM URL: `https://YOUR-APP-NAME.scm.azurewebsites.net`
 * **Visual Studio Code**'s App Service extension provides access to the hosting environment's **files**, which you can locally change and save back to your App Service. 
 
 ### Partial deployment
 
 There may be times when the most efficient way to fix or improve a deployment is to move a file or a few files onto the App Service manually.
 
-You can use the same tools as you would to verify the files, the Azure portal's SSH and BASH in-browser portals or Visual Studio Code's **files**. 
+You can use the same tools as you would verify the files, the Azure portal's SSH and BASH in-browser portals or Visual Studio Code's **files**. 
 
 ### Manually swap deployment slots
 
 Deployment slots are available on middle and higher pricing tiers. These slots allow you to keep more than one deployment on App Service. You can swap between slots quickly with the Azure portal, Azure CLI, and Visual Studio Code. 
 
 Use deployment slots when you need to:
-* Move through a structured deployment process
-* Reverse a deployment between from new to old
+* Change which deployment slot's code is live
+* Reverse a deployment from new to old
 * Show a temporary "Sorry, we're having issues" message with full branding and contact information
 
+A deployment slot name, such as `test` is postpended to your resource name. That slot name also becomes part of the URL to reach that slot's deployed code, `https://YOUR-APP-NAME.azurewebsites.net`.
 
+## Visual Studio Code deployment sources
 
+Visual Studio Code allows you to deploy a local folder to Azure App Service or you can configure a Deployment source such as GitHub. 
 
-## Deploy local code or GitHub repository
-
-Visual Studio Code allows you to deploy a local folder to Azure App Service or you can configure a Deployment Source such as GitHub. 
-
-This module deploys local files. You clone your own fork of the sample repo and deploy a folder within it.
-
-## Next steps to deploy
-
-In the next exercise:
-
-* Start the sandbox, get the subscription name
-* View resource group from Visual Studio Code
+This module deploys _all_ the local files. To deploy those files, you clone your own fork to your local computer, then deploy a folder within it.

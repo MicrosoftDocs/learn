@@ -61,10 +61,3 @@ The sandbox allows you to skip steps you would otherwise need:
 * Delete resources when you are done so you aren't billed
 
 Because the subscription are already created for you, as part of the sandbox, you need to get that subscription ID and resource group before deploying. 
-
-## Next steps to create your sandbox
-
-In the next exercise:
-
-* Start the sandbox, get the subscription name
-* View resource group from Visual Studio Code 

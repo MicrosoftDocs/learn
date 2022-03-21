@@ -33,6 +33,7 @@ Experience with:
 - JavaScript server apps
 - Deploying code to other hosting providers
 - Securing hosted resources in other cloud environments
+- Forking and cloning GitHub repositories
 
 This module uses the Microsoft Learn sandbox, which is available for up to four hours after you create the sandbox. 
 

@@ -39,8 +39,4 @@ Isolate your app into a new App Service plan when:
 
 In this module, use the Linux operating system for this web app. 
 
-## Next steps to create your hosting resource
 
-In the next exercise:
-
-* Create your App Service Plan and App Service resource
