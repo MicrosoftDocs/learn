@@ -3,7 +3,7 @@ uid: learn.javascript-on-azure.deploy-expressjs-app-service.exercise-create-reso
 title: "Exercise: use a resource group"
 metadata:
   unitType: exercise
-  title: exercise
+  title: "Exercise: use a resource group"
   description: "Use an Azure resource group for your resources."
   ms.date: 2/4/2022
   author: diberry
