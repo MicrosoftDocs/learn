@@ -1,9 +1,10 @@
 In this exercise, you need to:
 
 * [Install required software on your local computer]()
-* [Sign into the Learn sandbox]() with a user account you use for the entire module, both in the sandbox UI and in Visual Studio Code.NET 
+* [Sign into the Learn sandbox]() with a user account you use for the entire module, both in the sandbox UI and in Visual Studio Code.
     * This sandbox gives you a free subscription and resource group to complete this module from Visual Studio Code.
-    * <rgn>Sandbox resource group ID</rgn> 
+    * **Subscription name**: `Concierge Subscription`
+    * **Resource group name**: `<rgn>Sandbox resource group ID</rgn>` 
 * [Find the free subscription and resource group in Visual Studio Code]() in the sandbox.
 
 ## Install required software
