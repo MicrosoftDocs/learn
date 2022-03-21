@@ -8,7 +8,7 @@ Suppose you're the Azure administrator at a toy company. You've been working wit
 
 Your website team is growing, and it's getting more difficult to keep control of all of the changes that everyone is making. You recently started to use pull requests to ensure that changes are reviewed before they are merged to the main branch of your project's GitHub repository. Each of the reviewers validates the Bicep code changes in the pull request, and many reviewers even deploy the changes to a temporary environment so they can try them out.
 
-Your colleagues have told you that the current manual review process is cumbersome and time consuming. It's important that your pull request reviews are easy for everybody on the team, so you decide to automate some of the review process within the pull requests.
+Your colleagues have told you that the current manual review process is cumbersome and time consuming. It's important that your pull request reviews are easy for everybody on the team, so you decide to automate some of the review process within the pull requests. You need to make some changes to the configuration of your website, so it's a great opportunity to try out a new process.
 
 ## What will you be doing?
 
