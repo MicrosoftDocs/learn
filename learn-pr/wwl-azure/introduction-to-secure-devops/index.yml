@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-to-secure-devops
+metadata:
+  title: Introduction to Secure DevOps
+  description: "Introduction to Secure DevOps"
+  ms.date: 03/21/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Secure DevOps
+summary: This module introduces DevSecOps concepts, SQL injection attacks, threat modeling, and security for continuous integration.
+abstract: |
+  By the end of this module, you'll be able to:
+  -  Identify SQL injection attack
+  - Understand DevSecOps
+  - Implement pipeline security
+  - Understand threat modeling
+prerequisites: ""
+iconUrl: /learn/achievements/1-understand-security-in-the-pipeline.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.introduction-to-secure-devops.introduction
+- learn.wwl.introduction-to-secure-devops.describe-sql-injection-attack
+- learn.wwl.introduction-to-secure-devops.understand-devsecops
+- learn.wwl.introduction-to-secure-devops.explore-secure-devops-pipeline
+- learn.wwl.introduction-to-secure-devops.explore-key-validation-points
+- learn.wwl.introduction-to-secure-devops.explore-continuous-security-validation
+- learn.wwl.introduction-to-secure-devops.understand-threat-modeling
+- learn.wwl.introduction-to-secure-devops.exercise-threat-modeling
+- learn.wwl.introduction-to-secure-devops.knowledge-check
+- learn.wwl.introduction-to-secure-devops.summary
+badge:
+  uid: learn.wwl.introduction-to-secure-devops.badge
