@@ -9,9 +9,10 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Azure Resource Manager template documentation](/azure/azure-resource-manager/templates/)
  -  [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/)
- -  [Learn - Deploy Azure infrastructure by using JSON Azure Resource Manager templates](/learn/modules/build-azure-vm-templates/)
- -  [Learn - Deploy to multiple Azure environments by using Azure Resource Manager template features](/learn/modules/extend-resource-manager-template-deployment-scripts/)
+ -  [Learn - Deploy Azure infrastructure by using JSON Azure Resource Manager templates (Sandbox)](/learn/modules/build-azure-vm-templates/)
+ -  [Learn - Create Azure resources using Azure Resource Manager templates](/learn/modules/create-azure-resources-using-azure-resource-manager-templates/)
+ -  [Learn - Build your first Bicep template (Sandbox)](/learn/modules/build-first-bicep-template/)
