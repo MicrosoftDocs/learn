@@ -78,18 +78,8 @@ The local project has several folders, each representing a Learn module. The `2-
     3:08:29 PM: Deployment to "jimb-rentals" completed.
     ```
 
-## View the app
-
-1. In Visual Studio Code, in the Azure sidebar, right-click on your App Service and select **Browser website**.
-1. The Express.js web app should display successfully. You can add, edit, and delete properties in the web site. 
-1. The data is loaded in memory, if you want to refresh the data, go back to the Azure sidebar, right-click on your App Service and select **Restart**.
 
 ## What did this exercise accomplish? 
 
 * You forked then cloned the GitHub sample repository.
 * You deployed a subfolder of your local forked repository.
-* You interacted with the web site, once it was deployed.
-* You completed all these steps with:
-    * A web browser
-    * Visual Studio Code
-    * A free subscription provided by the Learn sandbox
