@@ -6,10 +6,10 @@ During the process, you'll:
 
 > [!div class="checklist"]
 > * Update the pull request workflow to deploy an ephemeral environment.
-> * Create a PR deletion workflow to remove the ephemeral environment.
+> * Create a pull request deletion workflow to remove the ephemeral environment.
 > * Create a pull request.
 > * Watch the ephemeral environment get created.
-> * Approve the PR.
+> * Approve the pull request.
 > * Watch the ephemeral environment be deleted
 
 ## Update the pull request workflow to deploy an ephemeral environment
@@ -120,21 +120,30 @@ You've created a workflow that automatically deploys the changes in each pull re
    git push
    ```
 
-## Rebase your branch
+## Update the Bicep file
 
-Just like in the previous exercise, we've precreated a feature branch for you to use. Here, you to rebase the *feature/container-app* branch so that it can be merged.
+<!-- TODO -->
 
-1. In the Visual Studio Code terminal, enter the following commands to switch to the *feature/container-app* branch:
+1. Create a new branch
 
    ```bash
-   git checkout feature/container-app
+   git checkout -b feature/container-app
    ```
 
-1. Enter the following commands to rebase the *feature/container-app* branch and push your changes back to GitHub:
+1. Open main.bicep
+
+1. Update `appServiceAppLinuxFrameworkVersion`
+
+   :::code language="bicep" source="code/6-main.bicep" range="20" :::
+
+1. Save
+
+1. Commit and push
 
    ```bash
-   git rebase origin/main -Xtheirs
-   git push --force
+   git add .
+   git commit -m "Use container image for website"
+   git push origin/feature/container-app
    ```
 
 ## Create a pull request
@@ -148,8 +157,6 @@ You've defined workflows to create and manage ephemeral environments automatical
 1. Next to the **feature/container-app** branch, select **New pull request**.
 
    :::image type="content" source="../media/6-create-pull-request.png" alt-text="Screenshot of GitHub that shows the link to create a pull request for the feature slash container app branch.":::
-
-1. Update the pull request title to **Use container image for website**.
 
 1. Select **Create pull request**.
 

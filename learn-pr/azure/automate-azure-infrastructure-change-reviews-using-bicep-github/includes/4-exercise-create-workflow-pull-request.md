@@ -5,7 +5,6 @@ During the process, you'll:
 > [!div class="checklist"]
 > * Create a workflow for pull request create and update events.
 > * Add Bicep linting to the workflow.
-> * Add a branch protection rule to enforce the check succeeds before a pull request is merged.
 > * Create a pull request, and watch the workflow run.
 > * Fix the errors identified by the pull request validation.
 > * Re-run the workflow, and close the pull request.
@@ -22,6 +21,9 @@ During the process, you'll:
 
    This code ensures that the workflow is executed whenever a pull request is created or updated. Also, we can trigger the workflow manually.
 
+   > [!TIP]
+   > You're working directly against your repository's *main* branch. Normally, you wouldn't do this, but in this exercise you'll work against *main* to simplify the steps. In your own projects, it's important to set up branch protection rules to protect your main branch.
+
 ## Add a lint job to your workflow
 
 When a pull request is opened or edited you want to run a linting step for your Bicep files. There's a reusable *lint* workflow in the repository that you can call from this workflow.
@@ -30,7 +32,7 @@ When a pull request is opened or edited you want to run a linting step for your 
 
    :::code language="yaml" source="code/4-pr-validation.yml" range="5-7" :::
 
-1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
+1. Commit and push your changes to your Git repository's *main* branch by running the following commands in the Visual Studio Code terminal:
 
    ```bash
    git add .
@@ -38,91 +40,49 @@ When a pull request is opened or edited you want to run a linting step for your 
    git push
    ```
 
-   <!-- TODO note you're doing this on main, which you might not do in real life -->
+## Update the Bicep file
 
-## Add a branch protection rule
+<!-- TODO -->
 
-Configure your Git repository to prevent pull requests from being merged until the checks have succeeded.
-
-1. In your browser, select **Actions**.
-
-1. Select the **pr-validation** workflow.
-
-1. Select **Run workflow** > **Run workflow**.
-
-   :::image type="content" source="../media/4-run-workflow-manual.png" alt-text="Screenshot of GitHub that shows the Actions page with the Run workflow button highlighted.":::
-
-   Your workflow starts running on the *main* branch.
-
-1. Refresh the page to view the workflow status.
-
-   Wait for the workflow to finish running.
-
-   > [!NOTE]
-   > You're running your workflow manually so that GitHub detects the *lint* job in your workflow. The workflow needs to have run at least one time before you create the status check in the next steps.
-
-1. Select **Settings** > **Branches** and then select **Add rule**.
-
-   :::image type="content" source="../media/4-branch-protections.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page, with the Add rule button highlighted.":::
-
-1. In the **Branch name pattern** text box, enter **main**.
-
-1. Select **Require a pull request before merging**.
-
-1. Deselect **Require approvals**. Normally, you'd select this option. But in this sample, you're going to merge your own pull request, and the **Require approvals** option prevents you from doing so.
-
-1. Select **Require status checks to pass before merging**.
-
-1. In the text box that appears, enter **lint**.
-
-1. Select the **lint / Lint Code** job.
-
-1. Select **Include administrators**. By selecting this option, you enforce the rule on yourself, too.
-
-   Leave the other configuration options with their default values.
-
-1. Near the bottom of the page, select **Create**.
-
-   :::image type="content" source="../media/4-branch-protections-add.png" alt-text="Screenshot of GitHub that shows the add branch protection rule page.":::
-
-   GitHub might ask you to sign in again to confirm your identity.
-
-## Rebase your branch
-
-<!-- TODO Gitte any better ideas here? See https://github.community/t/problem-with-github-template-repository-when-i-include-all-branches/121911/19 -->
-
-We've pre-created a branch in your repository with some Bicep changes, which you can use to create your pull request. Because of the way the sample is configured on GitHub, you need to *rebase* the branch. Rebasing ensures that you'll be able to create a pull request in the next section.
-
-1. In the Visual Studio Code terminal, enter the following commands to pull (download) all of the branches in the GitHub repository, and switch to the *feature/linux-app* branch:
+1. Create a new branch
 
    ```bash
-   git pull --all
-   git checkout feature/linux-app
+   git checkout -b feature/linux-app
    ```
 
-1. Enter the following commands to rebase the *feature/linux-app* branch and push your changes back to GitHub:
+1. Open main.bicep
+
+1. Below the variables list, add a new variable
+
+   :::code language="bicep" source="code/4-main-broken.bicep" range="15-20" highlight="6" :::
+
+1. Update plan
+
+   :::code language="bicep" source="code/4-main-broken.bicep" range="51-59" highlight="5-8" :::
+
+1. Update app
+
+   :::code language="bicep" source="code/4-main-broken.bicep" range="61-71" highlight="8-10" :::
+
+1. Save
+
+1. Commit and push
 
    ```bash
-   git rebase origin/main -Xtheirs
-   git push --force
+   git add .
+   git commit -m "Update operating system to Linux"
+   git push origin/feature/linux-app
    ```
 
 ## Create a pull request
 
-Now that the workflow and branch protection rules are configured, you can create a pull request.
+Now that the workflow is configured, you can create a pull request.
 
 1. In your browser, select **Code**.
 
-   Notice that GitHub detects there are two branches with changes.
-
 1. In the box with the branch name **feature/linux-app**, select **Compare & pull request**.
 
-   :::image type="content" source="../media/4-create-pull-request.png" alt-text="Screenshot of GitHub that shows the pull request creation buttons for both branches.":::
-
-   > [!IMPORTANT]
-   > Be sure to select the correct branch. Don't select the **feature/container-app** branch yet - you'll use that later in the module.
-
-1. On the pull request creation page, change the title to **Update operating system to Linux**.
+   :::image type="content" source="../media/4-create-pull-request.png" alt-text="Screenshot of GitHub that shows the pull request creation buttons for both branches."::: <!-- TODO update -->
 
 1. Select **Create pull request**.
 
@@ -134,9 +94,12 @@ Now that the workflow and branch protection rules are configured, you can create
 
    Notice that an automatic check has been triggered, which runs your pull request validation workflow.
    
-   Wait until the check completes. The check fails. Notice that you can't merge the pull request while the check fails.
+   Wait until the check completes. The check fails.
 
    :::image type="content" source="../media/4-checks-failed.png" alt-text="Screenshot of GitHub that shows the failed status check on the pull request details page.":::
+
+   > [!TIP]
+   > Notice that you can still merge the pull request even while the status checks fail. TODO configure branch protection rule
 
 ## Fix the errors of the pull request validation
 
