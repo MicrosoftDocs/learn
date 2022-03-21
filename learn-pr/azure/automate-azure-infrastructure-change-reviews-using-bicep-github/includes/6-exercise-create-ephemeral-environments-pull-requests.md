@@ -122,23 +122,23 @@ You've created a workflow that automatically deploys the changes in each pull re
 
 ## Update the Bicep file
 
-<!-- TODO -->
+Here, you update your Bicep file to use a Docker container image for your website's application.
 
-1. Create a new branch
+1. In the Visual Studio Code terminal, run the following command to create a new branch for your changes:
 
    ```bash
    git checkout -b feature/container-app
    ```
 
-1. Open main.bicep
+1. Open the *main.bicep* file in the *deploy* folder.
 
-1. Update `appServiceAppLinuxFrameworkVersion`
+1. Update the value of the `appServiceAppLinuxFrameworkVersion` variable:
 
    :::code language="bicep" source="code/6-main.bicep" range="20" :::
 
-1. Save
+1. Save your changes.
 
-1. Commit and push
+1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
    ```bash
    git add .
@@ -148,7 +148,7 @@ You've created a workflow that automatically deploys the changes in each pull re
 
 ## Create a pull request
 
-You've defined workflows to create and manage ephemeral environments automatically in pull requests. Now, you'll create another pull request to try it out.
+You've defined workflows to create and manage ephemeral environments automatically in pull requests. Now, you'll create another pull request for your Bicep changes.
 
 1. In your browser, navigate to the **Code** and select **3 branches**.
 

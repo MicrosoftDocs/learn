@@ -32,6 +32,8 @@ When a pull request is opened or edited you want to run a linting step for your 
 
    :::code language="yaml" source="code/4-pr-validation.yml" range="5-7" :::
 
+1. Save your changes.
+
 1. Commit and push your changes to your Git repository's *main* branch by running the following commands in the Visual Studio Code terminal:
 
    ```bash
@@ -42,31 +44,34 @@ When a pull request is opened or edited you want to run a linting step for your 
 
 ## Update the Bicep file
 
-<!-- TODO -->
+Here, you modify your website's Bicep file to update the website's operating system to Linux.
 
-1. Create a new branch
+1. In the Visual Studio Code terminal, run the following command to create a new branch for your changes:
 
    ```bash
    git checkout -b feature/linux-app
    ```
 
-1. Open main.bicep
+1. Open the *main.bicep* file in the *deploy* folder.
 
-1. Below the variables list, add a new variable
+1. Near the top of the file, below the variable definitions, define a new variable for the application framework to use:
 
    :::code language="bicep" source="code/4-main-broken.bicep" range="15-20" highlight="6" :::
 
-1. Update plan
+1. Update the `appServicePlan` resource definition by changing its `kind` property, and adding a new property named `reserved` in the `siteConfig` property:
 
    :::code language="bicep" source="code/4-main-broken.bicep" range="51-59" highlight="5-8" :::
 
-1. Update app
+1. Update the `appServiceApp` resource definition to set the application framework:
 
    :::code language="bicep" source="code/4-main-broken.bicep" range="61-71" highlight="7-9" :::
 
-1. Save
+   > [!NOTE]
+   > You might notice that Bicep warns you that you aren't using the `appServiceAppLinuxFrameworkVersion` variable. Here, you're intentionally causing a linter error so you can see how it looks within the GitHub pull request.
 
-1. Commit and push
+1. Save your changes.
+
+1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
    ```bash
    git add .
@@ -76,13 +81,13 @@ When a pull request is opened or edited you want to run a linting step for your 
 
 ## Create a pull request
 
-Now that the workflow is configured, you can create a pull request.
+Now that the workflow is configured and your Bicep file is updated, you can create a pull request.
 
 1. In your browser, select **Code**.
 
 1. In the box with the branch name **feature/linux-app**, select **Compare & pull request**.
 
-   :::image type="content" source="../media/4-create-pull-request.png" alt-text="Screenshot of GitHub that shows the pull request creation buttons for both branches."::: <!-- TODO update -->
+   :::image type="content" source="../media/4-create-pull-request.png" alt-text="Screenshot of GitHub that shows the pull request creation buttons for both branches."::: <!-- TODO update image -->
 
 1. Select **Create pull request**.
 
@@ -99,7 +104,7 @@ Now that the workflow is configured, you can create a pull request.
    :::image type="content" source="../media/4-checks-failed.png" alt-text="Screenshot of GitHub that shows the failed status check on the pull request details page.":::
 
    > [!TIP]
-   > Notice that you can still merge the pull request even while the status checks fail. TODO configure branch protection rule
+   > Notice that you can still merge the pull request even while the status checks fail. In a real solution, you should configure a branch protection rule to prevent a pull request from being merged until its status checks have succeeded.
 
 ## Fix the errors of the pull request validation
 
