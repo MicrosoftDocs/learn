@@ -43,9 +43,9 @@ In your own workflows, you might choose to extend the PR validation checks with 
 
 ## Pull request lifecycle triggers
 
-A pull request in GitHub can go through many different *lifecycle events*. For example, a pull request is *opened*. Then, it might be *assigned* to specific reviewers. Somebody might *edit* the pull request, such as changing its name. Somebody else might push changes to the source branch (*synchronize*), which affects the contents of the pull request. Then, somebody might *review* it. Next, the pull request can be *merged* - or, it might be *closed* without merging, and even *reopened* again in the future.
+A pull request in GitHub can go through many different *lifecycle events*. For example, a pull request is *opened*. Then, the author might push changes to the source branch (*synchronize*), which affects the contents of the pull request. Next, the pull request can be *merged* - or, it might be *closed* without merging, and even *reopened* again in the future.
 
-<!-- TODO should we consider adding a simplified state transition diagram? -->
+:::image type="content" source="../media/2-pull-request-states.png" alt-text="Diagram that shows some of the pull request events." border="false":::
 
 GitHub Actions enables you to define *workflow triggers* that respond to any of these events. For example, you can define a workflow that runs automatically whenever a pull request is opened:
 
@@ -70,11 +70,11 @@ on:
 
 ###	Pull request status checks
 
-The results of a pull request workflow are shown on the pull request page as *checks*. This enables authors and reviewers to quickly get feedback on whether the automated activities have succeeded or failed.
+The results of a pull request workflow are shown on the pull request page as *checks*. This enables authors and reviewers to quickly get feedback on whether the automated activities have succeeded or failed, like in the following example:
+
+:::image type="content" source="../media/2-pull-request-status-checks.png" alt-text="Screenshot of GitHub pull request showing two successful status checks." border="true":::
 
 By default, even if a check fails, the pull request can be merged. You might not want to allow this, so you can configure *branch protection rules* to enforce that specific checks succeed before a pull request can be merged.
-
-<!-- TODO Gitte suggested an image here - I'm not sure what? Maybe a screenshot? -->
 
 ### Updating files
 
