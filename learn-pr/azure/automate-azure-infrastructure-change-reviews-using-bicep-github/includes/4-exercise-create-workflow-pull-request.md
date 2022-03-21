@@ -152,11 +152,11 @@ Now that the workflow and branch protection rules are configured, you can create
 
 1. In Visual Studio Code, open the *deploy/main.bicep* file.
 
-   Notice that there is a variable named `appServiceAppLinuxFrameworkVersion` on line 21. The variable isn't used. Next, you'll fix this error.
+   Notice that there is a variable named `appServiceAppLinuxFrameworkVersion` on line 20. The variable isn't used. Next, you'll fix this error.
 
 1. In the `appServiceApp` resource definition, update the `linuxFxVersion` property to use the variable instead of setting the property to a hard-coded value:
 
-   :::code language="bicep" source="code/4-main-fixed.bicep" range="62-82" highlight="8" :::
+   :::code language="bicep" source="code/4-main-fixed.bicep" range="61-72" highlight="8" :::
 
 1. In the Visual Studio Code terminal, commit your changes and push them to the repository.
 
