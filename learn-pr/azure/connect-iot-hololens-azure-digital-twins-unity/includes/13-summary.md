@@ -4,7 +4,7 @@ Connecting right time data to 3D assets using ADT involves many steps.  You can 
 
 Observing streaming data in an immersive setting can be powerful.  Data patterns and correlations can be observed and experienced in Mixed Reality as opposed to being inferred from tabular data and reports.  By connecting a Digital Twin to ADT, you can identify anomalies and take action directly from within mixed reality.
 
-Now that you've completed this module, you can [clean up your resources in Azure](azure/azure-resource-manager/management/manage-resources-portal#delete-resources).
+Now that you've completed this module, you can [clean up your resources in Azure](/azure/azure-resource-manager/management/manage-resources-portal#delete-resources).
 
 ## References
 
