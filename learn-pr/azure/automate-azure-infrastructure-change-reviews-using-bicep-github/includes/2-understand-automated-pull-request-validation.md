@@ -1,34 +1,34 @@
-When you use pull requests, you can ensure that any updates to your Azure deployments are reviewed by another person. But it's often helpful to have automated checks run on your code changes, too. In this unit, you'll learn how pull request *checks* and automated validation can be used to increase your team's confidence in your code changes.
+When you use pull requests, you can ensure that any updates to your Azure deployments are reviewed by another person. But it's often helpful to have automated checks run on your code changes, too. In this unit, you'll learn how automated pull request validation and *checks* can be used to increase your team's confidence in your code changes.
 
 ## Pull request validation
 
-When you review a pull request for Bicep code, you might have some common steps that you go through to assess the change. These steps might include the following:
+When you review a pull request for Bicep code, you might have some common steps that you go through to assess the change. These steps might include:
 
 - Checking if the Bicep file has any errors or linter warnings.
-- Ensuring that any resources already defined in the Bicep file continue to work.
+- Ensuring that any resources previously defined in the Bicep file continue to work.
 - Testing any newly defined resources to ensure that they deploy successfully and that they work as you expect.
 
-*Pull request validation* involves automating some of these activities. By automating pull request checks, you ensure that reviewers spend their time on other, more important, review steps like ensuring the code meets your team's quality standards and achieves the business goal.
+*Pull request validation* involves automating some of these activities. By automating pull request checks, you ensure that reviewers spend their time on other important review steps, like ensuring the code meets your team's quality standards and achieves the business goal.
 
 In a GitHub Actions workflow, you can define triggers that invoke the workflow at certain points during the pull request process, including when a pull request is created, updated, merged, or closed.
 
 ### Testing your Bicep code in a pull request validation workflow
 
-In previous modules, you learned how to build comprehensive GitHub Actions workflows for linting, validating, deploying, and testing your Azure infrastructure changes, including across multiple environments, and with other components like applications and databases. These workflows run after a change is merged to your main branch.
+In previous modules, you learned how to build comprehensive GitHub Actions workflows for linting, validating, deploying, and testing your Azure infrastructure changes, including across multiple environments. These workflows run after a change is merged to your main branch.
 
 You can also run many of the same activities in a pull request validation workflow. For example:
 
 > [!div class="checklist"]
 >
-> * **Linting** your Bicep code helps to ensure that the code is semantically correct, and that it follows some baseline Bicep best practices.
-> * **Preflight validation** helps to build your confidence that the code will deploy successfully, without actually deploying the file. Depending on the resource type, preflight validation checks for issues like invalid resource names, invalid regions for specific resources, and whether you've specified configuration that can't be deployed successfully.
+> * **Linting** your Bicep code helps to ensure that the code is semantically correct, and that it follows some baseline recommended Bicep practices.
+> * **Preflight validation** helps to build your confidence that the code will deploy successfully, without actually deploying the file. Depending on the resource type, preflight validation might look for issues like invalid resource names, invalid regions for specific resources, and whether you've specified configuration that can't be deployed successfully.
 > * **What-if**, which lists the changes that will be made to your Azure environment as a result of the deployment.
 > * **Deployments**, to actually deploy your resources.
 > * **Testing** your resources after deployment, to ensure that they're configured according to your business requirements.
 
-A pull request validation workflow is a normal GitHub Actions workflow, so you can run any of these tasks. However, it's worth thinking about the types of checks that make sense to run within a pull request.
+A pull request validation workflow is a normal GitHub Actions workflow, so it can run any of these tasks.
 
-Many of the validation activities listed above require access to an Azure environment. For example, the what-if operation compares the resources defined in your Bicep files against those in your Azure subscription. It makes sense to run this comparison against a production environment. But, you might not be comfortable running operations against a production environment from within a workflow designed for code that isn't yet completed or merged, because it introduces some additional risk.
+However, it's worth thinking about the types of checks that make sense to run within a pull request. Many of the validation activities listed above require access to an Azure environment. For example, the what-if operation compares the resources defined in your Bicep files against those in your Azure subscription. It makes sense to run this comparison against a production environment. But, you might not be comfortable running operations against a production environment from a workflow designed for code that isn't yet completed or merged, because it introduces some additional risk.
 
 In this module, you'll add two levels of checks to your pull request validation workflow:
 
@@ -79,7 +79,7 @@ After a pull request is created, it's common for the author to need to make upda
 - A reviewer might request the author to make changes to the code.
 - If an automated check fails, the author can make changes to their code, and then commit and push their changes.
 
-If you configure your pull request validation workflow to run based on the *synchronized* event then every time the source branch is updated, the workflow is re-run, and the results are updated on the pull request description.
+By using the `pull_request` trigger, you can configure your validation workflow to run every time the source branch is updated. The latest run's results are shown on the pull request page.
 
 ## Reusable workflows
 
@@ -89,8 +89,8 @@ You can define reusable workflows for each of the jobs that you'll use in differ
 
 ## Draft pull requests
 
-Normally, an author opens a pull request when they're ready for their changes to be reviewed, approved, and merged. But it can be helpful for authors to get access to the automated pull request validation checks throughout the process of writing their code - even when they're not ready.
+Normally, an author opens a pull request when they're ready for their changes to be reviewed, approved, and merged. But it can be helpful for authors to get access to the automated pull request validation checks throughout the process of writing their code - even when they're not ready for their changes to be merged yet.
 
 When you open a pull request on GitHub, you can mark it as a *draft*. GitHub still runs all of the automated checks for draft pull requests, and reviewers still can provide feedback. But, by setting a pull request to draft status, it's clear to everybody that the work isn't yet ready for a full review.
 
-It's especially common to create draft pull requests when your pull request validation workflow creates ephemeral environments, because you can preview your changes in a live, working environment. As you continue to push changes, your ephemeral environment will get updated to incorporate your latest changes.
+It's especially common to create draft pull requests when your pull request validation workflow creates ephemeral environments, because you can preview your changes in a live, working environment. As you continue to push changes, your ephemeral environment is updated to incorporate your latest changes.
