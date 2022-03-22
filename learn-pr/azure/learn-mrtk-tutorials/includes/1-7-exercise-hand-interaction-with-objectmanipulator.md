@@ -116,7 +116,7 @@ You can test holographic object behavior with the Unity in-editor input simulati
 * To enable the simulated right hand, press and hold the space bar. To remove the hand, release the space bar.
 * To enable the left simulated hand, press and hold the left shift key. To remove the hand, release the key.
 * To move either hand around the scene, move the mouse.
-* To move the hand forward or backward, rotate the the mouse scroll wheel.
+* To move the hand forward or backward, rotate the mouse scroll wheel.
 * To simulate the pinch gesture, click the left mouse button.
 * To rotate the hand, press and hold down the space bar + CTRL key (right hand) or left shift key + CTRL key (left hand) and then move the mouse.
 

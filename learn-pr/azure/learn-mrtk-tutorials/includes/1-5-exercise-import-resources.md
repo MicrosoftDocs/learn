@@ -37,7 +37,7 @@ To import the Mixed Reality Toolkit into your project we'll use the Mixed Realit
 
     The Main Camera object becomes a child to the MixedRealityPlayspace object. This allows the play space to manage the camera simultaneously with the SDKs.
 
-    :::image type="content" source="../media/039-MRTK-objects-in-hierarchy.png" alt-text="Screenshot of new objects in the Hierarchy after MRTK is added.":::
+    :::image type="content" source="../media/039-mrtk-objects-in-hierarchy.png" alt-text="Screenshot of new objects in the Hierarchy after MRTK is added.":::
 
 1. In the Inspector, verify that the profile drop down displays **DefaultMixedRealityToolkitConfigurationProfile:**
 

@@ -11830,6 +11830,12 @@
       "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-fundamentals-stream-processing/11-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/learn-mrtk-tutorials/1-2-configure-unity-for-windows-mixed-reality.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/learn-mrtk-tutorials/1-1-introduction",
+      "redirect_document_id": false
+
     }
   ]
 }
