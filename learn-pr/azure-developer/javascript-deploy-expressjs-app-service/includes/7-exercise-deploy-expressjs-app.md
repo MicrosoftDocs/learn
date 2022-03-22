@@ -19,16 +19,15 @@ In this exercise, you need to:
     https://github.com/YOUR-GITHUB-ALIAS/msdocs-javascript-nodejs-server
     ```
 
-1. Select a local folder on your computer to clone your fork.
+1. Select a local folder on your computer.
 1. When you are asked if you want to open the cloned repository, select **Open**. 
-
-    The code is local on your computer. 
+1. Visual Studio Code reopens with your fork of the sample repository.
 
 ## Browse the repository folders
 
 The local project has several folders, each representing a Learn module. The `2-Deploy-basic-app-to-azure` is the code that you will deploy to Azure App Service. Ignore the other folders for now.
 
-1. Open the `2-Deploy-basic-app-to-azure` to view the Express.js files.
+1. Expand the `2-Deploy-basic-app-to-azure` folder to view the Express.js files.
 1. Open the `package.json` to understand what files the App Service will install as part of the app:
 
     ```json
@@ -58,12 +57,12 @@ The local project has several folders, each representing a Learn module. The `2-
 
 ## Deploy the sample from your local computer to App Service
 
-1. In Visual Studio Code, open the Azure side bar.
-1. In the side bar, select the App Service, find and expand the repository:
-
-    * **Subscription name**: `Concierge Subscription`
-
-1. Find the app your created in the previous exercise, such as `jimb-rentals`.
+1. In Visual Studio Code, open the Azure side bar: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
+1. In the App Service section, find and expand the subscription's App Service resource.
+1. Your app, created in the previous exercise, such as `jimb-rentals`, should be listed.
+    1. If the app isn't listed, try the following:
+        1. At the top of this Learn unit, check that you still have time for your sandbox.
+        1. In Visual Studio Code, sign out of Azure, then in again to make sure all subscriptions are displayed.
 1. Right-click the app and select **Deploy to Web App...*.
 1. Browse to and select the subfolder `2-Deploy-basic-app-to-azure`.
 1. When asked if you are sure you want to deploy, select **Deploy**.

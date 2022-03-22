@@ -3,9 +3,10 @@
 1. In Visual Studio Code, in the Azure sidebar, right-click on your App Service resource and select **Browser website**.
 1. The Express.js web app should display successfully. You can add, edit, and delete properties in the web site. 
 1. The data is loaded in memory, if you want to refresh the data, go back to the Azure sidebar, right-click on your App Service and select **Restart**.
-1. Spend a few minutes using the website.
+1. Spend a few minutes using the website. 
+1. Change the URL in the address bar to something like the following, to create a 404 error: `https://YOUR-APP-NAME.azurewebsites.net/1234`.
 
-## View App Service logs
+## From the runtime log files - did your app start successfully?
 
 The App Service keeps logs in the hosting environment which you can use to resolve runtime issues. 
 
@@ -21,6 +22,8 @@ The App Service keeps logs in the hosting environment which you can use to resol
 
     If your app didn't start up successfully, this would be the first place to look. 
 
+## From the runtime log files - does your app run successfully?
+
 1. Select the file which ends in `_default_docker.log`.
 1. View the last few entries, which should include something like:
 
@@ -34,7 +37,13 @@ The App Service keeps logs in the hosting environment which you can use to resol
 
     The debug hosting logs are interesting for a developer new to Azure but not a configuration you want to keep in the production app because your runtime environment could eventually fill up.  
 
-## View cloud-based Application Insights logs
+## From Application Insights - were there any failures?
 
-When you created the App Service, you included Application Insights. This logs include both 
+1. In Visual Studio Code, right-click your App Service from the Azure sidebar, then select **Open in portal**.
+1. In the web browser, select **Settings > Application Insights**, then select **View Application Insights data**. This opens your Application Insights resource. 
+1. Select **Investigate > Failures**. The graph should display zero errors. 
 
+## Create a 404 alert
+
+1. Still in the web browser for your Application Insights resource, select **Monitoring > Alerts**. 
+1. Select **+ Create > Alert rule**. 

@@ -1,10 +1,4 @@
-You have many choices when deploying to Azure App Service. Many of the typical choices you may be familiar with such as:
-
-* GitHub repo
-* SSH or other CLI tools
-* Zip deploy 
-* local git
-* CI/CD such as GitHub actions or Azure Pipelines
+You have many of the typical choices you may be familiar with to deploy your app.
 
 ## Deploy files
 
@@ -20,7 +14,9 @@ If you intend to deploy another app to App Service, which requires moving npm mo
 
 ## Azure installs npm packages
 
-In order to tell the Azure deployment process to install the npm modules, an app setting, `SCM_DO_BUILD_DURING_DEPLOYMENT`, needs to be configured. This setting is configured for you if you deploy by Visual Studio Code. If you use a different deployment process, you should configure the app setting yourself:
+In order to tell the Azure deployment process to install the npm modules, an app setting, `SCM_DO_BUILD_DURING_DEPLOYMENT`, set to `true`. This setting is already configured for you
+
+If you use a different resource group process, instead of  Visual Studio Code, you should configure the app setting yourself:
 
 ```bash
 SCM_DO_BUILD_DURING_DEPLOYMENT=true
@@ -29,6 +25,8 @@ SCM_DO_BUILD_DURING_DEPLOYMENT=true
 ## Build process
 
 For the sample app used in this module, the build process runs `npm install` which accesses the list of dependencies from `package.json`. 
+
+When you deploy other apps, consider using the npm script, `postinstall` to run build tasks. 
 
 ## Deployment tasks
 
@@ -52,7 +50,7 @@ Deployments to Azure hosting services, including App Service, can include many t
 When coming from another hosting service, you may be accustomed to checking the files deployed successfully by reviewing files on the host service. 
 
 Azure provides several ways to look at files on the host service:
-* **Azure portal**: When you look at your host resource with the Azure portal, you can use the provided development tools in the portal such as:
+* **Azure portal**: When you look at your host resource with the Azure portal, you can use the provided tools in the portal such as:
     * The in-browser SSH and bash terminals, available from your app's SCM URL: `https://YOUR-APP-NAME.scm.azurewebsites.net`
 * **Visual Studio Code**'s App Service extension provides access to the hosting environment's **files**, which you can locally change and save back to your App Service. 
 

@@ -7,7 +7,7 @@ App Service collects the same kinds of monitoring data as other Azure resources.
 * **Platform metrics** and the **Activity log** are collected and stored **automatically**, but can be routed to other locations by using a diagnostic setting. 
 * **Resource Logs** are **not automatically collected** and stored until you create a diagnostic setting and route them to one or more locations.
 * **Alerts** proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues in your system before your customers notice them. 
-    * If you're running an application on App Service Azure Monitor Application Insights offers more types of alerts.
+    * If you're running an application on App Service Azure Monitor, Application Insights offers more types of alerts.
 
     | Alert type | Condition | Examples  |
     |:---|:---|:---|
@@ -22,7 +22,7 @@ App Service collects the same kinds of monitoring data as other Azure resources.
 
 ## App Service runtime logs
 
-The App Service stores files beyond your web app, including log files. These log files include:
+The App Service stores log files helpful to resolving runtime issues:
 
 |Log type|Purpose|
 |--|--|
@@ -37,6 +37,6 @@ Some popular npm logging modules allow you to continue to log errors and informa
 
 Application Insights is part of Azure Monitor and integrates directly with the App Service providing monitoring and metrics. 
 
-Application Insights provides an npm package, `applicationinsights`, which you can integrate with your Node.js applications. Use the `.traceTrace()` method to log custom tracing. 
+Application Insights provides an npm package, `applicationinsights`, which you can integrate with your Node for additional logging. Use the `.traceTrace()` method to log custom tracing. 
 
 
