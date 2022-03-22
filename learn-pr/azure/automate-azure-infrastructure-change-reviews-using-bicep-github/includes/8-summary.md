@@ -6,8 +6,6 @@ Now, you have even more confidence in your Bicep code, and in the Azure infrastr
 
 ## Learn more
 
-- [Microsoft Learn module on environments and reusable workflows](/learn/modules/manage-multiple-environments-using-bicep-github-actions/3-handle-similarities-between-environments-using-reusable-workflows)
-- [Microsoft Learn module on branch protection](/learn/modules/review-azure-infrastructure-changes-using-bicep-pull-requests/2-understand-branching)
+- [GitHub Actions pull request trigger](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#pull_request)
 - [What is the Azure Dev/Test offer?](/azure/devtest/offer/overview-what-is-devtest-offer-visual-studio)
-- [Pull request triggers](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#pull_request)
 - [Azure Cost Management budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
