@@ -186,7 +186,7 @@ Later in this Microsoft Learn module, your pull request workflow will create res
 
 ## Create a GitHub secret
 
-You've created a  service principal. Next, create a secret in GitHub Actions.
+You've created a service principal. Next, create a secret in GitHub Actions.
 
 1. In your browser, navigate to your GitHub repository.
 
