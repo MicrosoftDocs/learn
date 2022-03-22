@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Install Python to use in Visual Studio Code for data exploration
   description: Learn how to install Python.
   ms.date: 03/18/2022
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen, devdivchpfy22

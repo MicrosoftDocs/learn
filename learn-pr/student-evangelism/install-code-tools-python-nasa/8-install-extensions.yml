@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Install Visual Studio Code extensions needed for data exploration
   description: Install the necessary extensions in Visual Studio Code.
   ms.date: 03/18/2022
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen, devdivchpfy22 

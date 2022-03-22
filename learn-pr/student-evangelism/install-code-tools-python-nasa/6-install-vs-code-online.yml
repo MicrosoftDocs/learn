@@ -4,8 +4,8 @@ metadata:
   title: (Optional) Exercise - Run Visual Studio Code in your browser for data exploration
   description: Use Codespaces to run Visual Studio Code in a browser.
   ms.date: 03/18/2022
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen, devdivchpfy22
