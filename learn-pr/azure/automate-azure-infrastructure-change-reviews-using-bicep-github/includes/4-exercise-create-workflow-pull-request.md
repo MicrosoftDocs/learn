@@ -19,7 +19,7 @@ During the process, you'll:
 
    :::code language="yaml" source="code/4-pr-validation.yml" range="1-3" :::
 
-   This code ensures that the workflow is executed whenever a pull request is created or updated. Also, we can trigger the workflow manually.
+   This code ensures that the workflow is executed whenever a pull request is created or updated.
 
    > [!TIP]
    > You're working directly against your repository's *main* branch. Normally, you wouldn't do this, but in this exercise you'll work against *main* to simplify the steps. In your own projects, it's important to set up branch protection rules to protect your main branch.
@@ -28,7 +28,7 @@ During the process, you'll:
 
 When a pull request is opened or edited you want to run a linting step for your Bicep files. There's a reusable *lint* workflow in the repository that you can call from this workflow.
 
-1. Add the following lines to reuse the *lint* workflow defined in your repository:
+1. At the bottom of the file, add the following lines to reuse the *lint* workflow defined in your repository:
 
    :::code language="yaml" source="code/4-pr-validation.yml" range="5-7" :::
 

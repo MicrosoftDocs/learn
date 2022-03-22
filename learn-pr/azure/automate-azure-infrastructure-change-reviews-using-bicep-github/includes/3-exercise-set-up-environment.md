@@ -38,9 +38,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 1. Select **Create repository from template**. 
 
-   :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page."::: <!-- TODO redo without 'include all branches' -->
-
-[!include[](../../includes/cleanup-steps.md)]
+   :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
 
 ## Clone the repository
 

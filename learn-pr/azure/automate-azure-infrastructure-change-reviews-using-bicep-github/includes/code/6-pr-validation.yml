@@ -1,7 +1,7 @@
 name: pr-validation
 concurrency: ${{ github.event.number }}
 
-on: [pull_request, workflow_dispatch]
+on: pull_request
 
 env:
   resourceGroupName: pr_${{ github.event.number }}
