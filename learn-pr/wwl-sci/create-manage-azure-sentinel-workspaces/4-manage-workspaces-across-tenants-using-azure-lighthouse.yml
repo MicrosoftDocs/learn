@@ -4,13 +4,12 @@ title: Manage workspaces across tenants using Azure Lighthouse
 metadata:
   title: Manage workspaces across tenants using Azure Lighthouse
   description: "Manage workspaces across tenants using Azure Lighthouse"
-  ms.date: 12/02/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 2
 content: |

@@ -1,4 +1,4 @@
-Contoso Pizza has two services that they'd like to group together to build and deploy as a single unit. They have decided that Docker Compose is the tool they'll use.
+Contoso Pizza has two services that they'd like to group together to build and deploy as a single unit. They've decided that Docker Compose is the tool they'll use.
 
 In this exercise, you'll create a Docker Compose YAML file, then use the Docker Compose utility to both build the Docker container images and run them.
 
@@ -30,7 +30,7 @@ In this exercise, you'll create a Docker Compose YAML file, then use the Docker 
           context: backend
           dockerfile: Dockerfile
         ports: 
-          - "5900:80"
+          - "5000:80"
 
     ```
 
@@ -59,4 +59,4 @@ In this exercise, you'll create a Docker Compose YAML file, then use the Docker 
 
 1. You can browse to: http://localhost:5902 to see the Contoso Pizza menu.
 
-In this exercise, you learned how to create and write a Docker Compose file, how to build the services contained within, and how to run those services.
+In this exercise, you learned how to create and write a Docker Compose file, build the services contained within, and run those services.

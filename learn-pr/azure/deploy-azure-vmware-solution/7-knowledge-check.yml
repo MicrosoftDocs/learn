@@ -9,6 +9,8 @@ metadata:
   ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: shkuehn-03222021
 durationInMinutes: 5
 quiz:
   title: Check your knowledge
