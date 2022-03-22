@@ -58,7 +58,9 @@ Here, you modify your website's Bicep file to update the website's operating sys
 
    :::code language="bicep" source="code/4-main-broken.bicep" range="15-20" highlight="6" :::
 
-1. Update the `appServicePlan` resource definition by changing its `kind` property, and adding a new property named `reserved` in the `siteConfig` property:
+   This setting tells Azure App Service that the application will be built using version 14 of the Node.js framework.
+
+1. Update the `appServicePlan` resource definition by changing its `kind` property, and adding a new property named `reserved` in the `properties`:
 
    :::code language="bicep" source="code/4-main-broken.bicep" range="51-59" highlight="5-8" :::
 
@@ -76,7 +78,7 @@ Here, you modify your website's Bicep file to update the website's operating sys
    ```bash
    git add .
    git commit -m "Update operating system to Linux"
-   git push origin/feature/linux-app
+   git push origin feature/linux-app
    ```
 
 ## Create a pull request
@@ -85,9 +87,13 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
 
 1. In your browser, select **Code**.
 
-1. In the box with the branch name **feature/linux-app**, select **Compare & pull request**.
+1. Select **2 branches** to open the list of branches in your GitHub repository.
 
-   :::image type="content" source="../media/4-create-pull-request.png" alt-text="Screenshot of GitHub that shows the pull request creation buttons for both branches."::: <!-- TODO update image -->
+   :::image type="content" source="../media/4-branches.png" alt-text="Screenshot of GitHub that shows the repository's branch list.":::
+
+1. Next to the **feature/linux-app** branch, select **New pull request**.
+
+   :::image type="content" source="../media/4-create-pull-request.png" alt-text="Screenshot of GitHub that shows the link to create a pull request for the feature slash linux app branch.":::
 
 1. Select **Create pull request**.
 
@@ -97,7 +103,7 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
 
 1. Look at the **Checks** section of the pull request details.
 
-   Notice that an automatic check has been triggered, which runs your pull request validation workflow.
+   After a moment, notice that an automatic check has been triggered. The check runs your pull request validation workflow.
    
    Wait until the check completes. The check fails.
 

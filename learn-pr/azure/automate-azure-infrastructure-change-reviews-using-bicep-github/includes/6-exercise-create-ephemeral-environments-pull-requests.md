@@ -143,7 +143,7 @@ Here, you update your Bicep file to use a Docker container image for your websit
    ```bash
    git add .
    git commit -m "Use container image for website"
-   git push origin/feature/container-app
+   git push origin feature/container-app
    ```
 
 ## Create a pull request
