@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.introduction
-title: Introduction
+uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.plan-environments
+title: Plan your environments
 metadata:
-  unitType: introduction
-  title: Introduction
+  unitType: learning-content
+  title: Plan your environments
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 3/22/2022
   author: johndowns
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/2-plan-environments.md)]

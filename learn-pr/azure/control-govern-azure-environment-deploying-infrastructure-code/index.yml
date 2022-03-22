@@ -38,8 +38,9 @@ products:
   - azure-rbac
 units:
 - learn.azure.control-govern-azure-environment-deploying-infrastructure-code.introduction
-- learn.azure.control-govern-azure-environment-deploying-infrastructure-code.learning-content
-- learn.azure.control-govern-azure-environment-deploying-infrastructure-code.exercise
+- learn.azure.control-govern-azure-environment-deploying-infrastructure-code.plan-environments
+- learn.azure.control-govern-azure-environment-deploying-infrastructure-code.secure-pipelines
+- TODO
 - learn.azure.control-govern-azure-environment-deploying-infrastructure-code.knowledge-check
 - learn.azure.control-govern-azure-environment-deploying-infrastructure-code.summary
 badge:
