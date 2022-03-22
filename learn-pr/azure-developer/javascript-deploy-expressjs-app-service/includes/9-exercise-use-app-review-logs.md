@@ -43,6 +43,7 @@ The App Service keeps logs in the hosting environment which you can use to resol
 1. In the web browser, select **Settings > Application Insights**, then select **View Application Insights data**. This opens your Application Insights resource. 
 1. Select **Investigate > Failures**. The graph should display your 404 error. 
 
+<!--
 ## Create a 404 alert
 
 1. Still in the web browser for your Application Insights resource, select **Monitoring > Alerts**. 
@@ -57,11 +58,7 @@ The App Service keeps logs in the hosting environment which you can use to resol
 1. Don't fill out **Actions** or **Tags** panels.
 1. Select **Review + create** button at the bottom of the main panel. 
 1. If you are presented with another **Create** button, select it. 
-1. On the **Create an alert rule** panel, on the **Condition** panel, select **Add condition**. On the **Select a signal** panel, use the following table to finish adding your condition:
-
-    |Signal type|Monitor service|
-    |--|--|
-    |Failed requests|Platform|
+1. On the **Create an alert rule** panel, on the **Condition** panel, select **Add condition**. On the **Select a signal** panel, search for and select `failed requests`.
 1. On the **Configure signal logic** panel, use the following table to finish configuring the **Split by dimensions**: 
    
     |Setting|Value|
@@ -106,3 +103,4 @@ The App Service keeps logs in the hosting environment which you can use to resol
     Don't change any other settings.
 
 1. On the **Create an alert rule** panel, select the **Review + create** button at the bottom of the panel.
+-->
