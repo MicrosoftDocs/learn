@@ -1,12 +1,16 @@
-<!-- TODO rewrite this page a bit -->
+Linting your Bicep code gives you some indication of whether your Azure deployment is likely to succeed, but it's helpful to actually deploy your Bicep code somewhere to see how your environment will look after the pull request is merged and your deployment is complete. In this unit, you'll learn how to deploy your code to a temporary environment from within a pull request.
 
-Linting your Bicep code gives you some indication of whether your Azure deployment is likely to succeed, but it's helpful to actually deploy your Bicep code somewhere to see how your environment will look after the pull request is merged and your deployment is complete. In this unit, you'll learn about how to automatically create ephemeral environments, and delete them when they're no longer required.
+## Why deploy your code from within a pull request?
 
-## Ephemeral environments
+When you're reviewing a pull request that includes Bicep code, it's a good practice to deploy the Bicep code to a real Azure environment. By deploying the code, you help to build up more confidence that your changes will work when they reach your production environment. If there's a problem, you want to discover it quickly - and pull requests provide a great opportunity to discover problems, because the author is already getting feedback from reviewers.
 
 By now, you're used to the idea of deploying your changes to one or more non-production environments, like *Test*, *QA*, and *Staging*, before finally deploying to your production environment. In many organizations, these environments are *long-lived* - they are updated when changes are rolled out, and the environments aren't usually deleted.
 
-In contrast, an *ephemeral* environment is one that you create dynamically, and that you're comfortable with being deleted when it's not in use. Ephemeral environments are intended to only exist for a short amount of time - for example, long enough to review changes in a pull request. 
+In contrast, an *ephemeral* environment is one that you create dynamically, and that you're comfortable with being deleted when it's not in use. Ephemeral environments are intended to only exist for a short amount of time - for example, long enough to review changes in a pull request.
+
+Ephemeral environments are a good choice when you deploy environments for pull requests, because you might have many separate pull requests open at a time, representing different types of changes. If you have several pull requests open, then sharing your normal environments means that only one change can be previewed at a time.
+
+## Create ephemeral environments
 
 Because you're so used to building up your Azure infrastructure as code, and you've invested in building your Bicep files to deploy your resources, you can reuse those same assets to deploy an ephemeral environment. You can even deploy multiple ephemeral environments at a time, if you need to. You just need to ensure that your deployments are sufficiently *parameterized* that you can easily create independent environments.
 
@@ -19,59 +23,40 @@ Ephemeral environments give you a number of benefits:
 
 In this module, you'll create ephemeral environments to help you to build up confidence about the changes within pull requests. Anybody reviewing the pull request can access the ephemeral environment, including the new additions and updates, before approving and merging the pull request.
 
-## Deployment approaches
+## Deployment
 
-When you create ephemeral environments, you need to decide how you'll deploy them to Azure. This decision has implications for your Azure environment's cost, the ease of management, and the permissions you need to assign to your workflow.
-
-### Create a resource group for each pull request
-
-The simplest option is to create a resource group for each pull request that your team creates. If one author has two separate pull requests open, each will have its own ephemeral environment. This helps to keep each change separated, and avoids confusion or accidentally overwriting resources.
+When you work with ephemeral environments, it's best to create a separate Azure resource group for each pull request that your team creates. If one author has two separate pull requests open, each will have its own ephemeral environment. This helps to keep each change separated, and avoids confusion or accidentally overwriting resources.
 
 :::image type="content" source="../media/5-dedicated-resource-groups.png" alt-text="Diagram that shows a resource group created for each pull request." border="false":::
 
-In order to use this deployment approach, your workflow needs to create resource groups dynamically. Resource groups require unique names, and you also need to be able to easily find the resource group to test the resources - and to delete them when your pull request is closed. To handle resource group names effectively, you can use the pull request number within the resource group name. You'll see how to do this in the next exercise.
+For this to work, your pull request validation workflow needs to create resource groups dynamically. Resource groups require unique names, and you also need to be able to easily find the resource group to test the resources - and to delete them when your pull request is closed. To handle resource group names effectively, you can use the pull request number within the resource group name. You'll see how to do this in the next exercise.
 
 When it's time to delete the ephemeral environment, it's easy for your workflow to find and delete the entire resource group. All of the resources used in the ephemeral environment will be deleted together.
 
-However, it's important to consider the cost implications of creating ephemeral resources. If your team has a large number of pull requests open, you could also have a large number of costly resources deployed to Azure. If your team closes pull requests quickly, this is less of a concern.
+## Permissions
 
-It's also important to understand the permissions that your workflow requires. Creating resource groups requires subscription-level permissions, and typically it's assigned by using the *Contributor* role. Subscription-scoped contributors are powerful, so you need to ensure you have adequate governance to ensure you don't accidentally expose your environment to any unnecessary security risks.
+Creating resource groups requires subscription-level permissions, and typically requires the *Contributor* role to be assigned to your workflow's service principal.
 
-> [!TIP]
-> Regardless of the approach you select, it's a good practice to use a dedicated Azure subscription for ephemeral environments. This helps you to monitor and control costs, and to grant access to users and to your workflow without accidentally providing access to your other environments. You can also apply subscription-wide policies that limit the SKUs of your ephemeral resources, which helps to avoid cost overruns.
+It's a good practice to use a dedicated Azure subscription for ephemeral environments. By following this approach, you can grant access to your workflow's service principal and to your team members without accidentally providing access to your other environments. 
 
-### Alternative approaches
+> [!CAUTION]
+> Subscription-scoped contributors are powerful, so you need to ensure you have adequate governance around your workflow's service principal and its credentials.
 
-You can also consider working within a single resource group for all of your ephemeral resources.
+## Cost management
 
-:::image type="content" source="../media/5-shared-resource-group.png" alt-text="Diagram that shows a single resource group, which is used by all pull requests." border="false":::
+When you dynamically create ephemeral environments, there's a risk that your Azure costs could increase, because you might create large numbers of resources. If your team has a large number of pull requests open, you could also have a large number of costly resources deployed to Azure. If your team closes pull requests quickly, this is less of a concern.
 
-If you're concerned about granting subscription-wide permissions to a workflow's service principal, you can consider deploying all of your resources into a single resource group. The workflow only needs permission to deploy into that one resource group.
+By using a dedicated Azure subscription, you can also easily monitor the costs of your ephemeral environments. And, you can apply subscription-wide policies that limit the SKUs of your ephemeral resources, which helps to avoid cost overruns.
 
-Then, you can decide whether to deploy separate or shared resources for each ephemeral environment.
-
-#### Separate resources in a single resource group
-
-You might choose to deploy separate resources for each pull request into the single resource group. This approach can be complex to implement, because:
-
-- You need to ensure that each resource has a unique name. Your Bicep code needs to be carefully constructed to avoid two environments trying to create a resource with the same name. Throughout the Bicep modules, you've been using the `uniqueString()` function to generate a resource name that's unique within the resource group. This won't be sufficient if you have multiple copies of a resource in the same resource group.
-- You also need to be able to identify the resources that you should delete when the pull request is closed. It can be challenging to find and delete all of the resources that relate to a single ephemeral environment within a resource group.
-
-#### Shared resources in a single resource group
-
-You might create shared resources, which are used by everybody on the team. Every time a pull request workflow runs, any existing resources in the shared resource group will be overwritten by the most recent deployment. This approach minimizes the cost of your ephemeral environments. If you define resources that take a long time to deploy, this approach might reduce the time that it takes to run the deployment because the resources already exist. But it also introduces a lot of complexity because team members need to work together to avoid interfering with each other's work.
-
-You lose many of the benefits of ephemeral environments by following this approach. But, you can still test every pull request's deployment process before the code is merged, and each pull request's checks will provide information about whether the deployment succeeded or failed.
-
-> [!NOTE]
-> You can also consider combining some of these approaches, if you need to. For example, your Bicep code might define just a small mumber of resources that are costly or that take a long time to provision. Consider whether you can have one shared, long-lived, resource group for all of your pull requests to share, and separate resource groups for the other resources. However, whenever you create these kinds of separations, it becomes more difficult and error-prone to manage your environments.
-
-## Manage the costs of ephemeral environments
-
-When you dynamically create ephemeral environments, there's a risk that your Azure costs could increase. Azure provides many capabilities to help you to control the costs of ephemeral environments, including:
+Additionally, Azure provides many capabilities to help you to control the costs of ephemeral environments, including:
 
 - Azure Cost Management provides the ability for you to set budgets for a subscription. Budgets trigger notifications so that your team is aware that the cost is approaching the threshold you specified.
 - Many Azure resource types provide cheaper, or even free, tiers for non-production workloads. Consider whether you can use these pricing tiers and SKUs.
 - Azure Dev/Test pricing is available for some subscriptions.
 - Resource tags can help you to identify the resources associated with each ephemeral environment.
 - You can create automation scripts to delete your ephemeral resources after a defined period of time, or even every night after business hours.
+
+> [!NOTE]
+> You might also consider sharing certain resources between ephemeral environments. For example, your Bicep code might define just a small mumber of resources that are costly or that take a long time to provision. Consider whether you can have one shared, long-lived, resource group for all of your pull requests to share, and separate ephemeral resource groups for the other resources.
+>
+> However, whenever you create these kinds of separations, it becomes more difficult and error-prone to manage your environments amd to keep them separated enough to be helpful for your reviews. It's best to avoid this approach unless the cost of your ephemeral environments becomes too great.

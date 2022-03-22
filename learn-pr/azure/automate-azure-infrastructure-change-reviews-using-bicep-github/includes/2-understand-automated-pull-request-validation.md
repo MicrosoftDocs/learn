@@ -47,26 +47,22 @@ A pull request in GitHub can go through many different *lifecycle events*. For e
 
 :::image type="content" source="../media/2-pull-request-states.png" alt-text="Diagram that shows some of the pull request events." border="false":::
 
-GitHub Actions enables you to define *workflow triggers* that respond to any of these events. For example, you can define a workflow that runs automatically whenever a pull request is opened:
+GitHub Actions enables you to define *workflow triggers* that respond to any of these events. For example, you can define a workflow that runs automatically whenever a pull request is opened, synchronized, or reopened by simply specifying the `pull_request` trigger:
 
 ```yaml
-on:
-  pull_request:
-    types: [opened]
-```
-
-Or you could trigger your workflow when a pull request is opened or reopened:
-
-```yaml
-on:
-  pull_request:
-    types: [opened, reopened]
+on: pull_request
 ```
 
 > [!IMPORTANT]
-> If there are merge conflicts in a pull request, the workflow won't run. After you resolve the merge conflict and push the resolution, the workflows will resume.
+> If there are merge conflicts in a pull request, the workflow won't run. You need to resolve the merge conflict and push the resolution so that the workflow can run again.
 
-<!-- TODO explain pull_request without types gives us the right list for validation -->
+You can also specify specific pull request events that trigger a workflow. For example, the following workflow runs automatically whenever a pull request is closed:
+
+```yaml
+on:
+  pull_request:
+    types: [closed]
+```
 
 ###	Pull request status checks
 
