@@ -36,7 +36,7 @@ As a first step, you need to update your *pr-validation* workflow to create an e
 
    This setting prevents multiple workflows for the same pull request from running at the same time, which might cause unpredictable results when you deploy resources to Azure.
 
-1. Near the top of the file, under the `on` section that defines triggers, add two new environment variables:
+1. Near the top of the file, under the `on` section that defines the trigger, add two new environment variables:
 
    :::code language="yaml" source="code/6-pr-validation.yml" range="1-8" highlight="6-8" :::
 
@@ -85,6 +85,8 @@ As a first step, you need to update your *pr-validation* workflow to create an e
 You've created a workflow that automatically deploys the changes in each pull request to an ephemeral resource group. Now, you'll configure a second workflow to delete the ephemeral environments when they're no longer needed.
 
 1. Create a new file named *pr-closed.yml* in the *.github/workflows* folder.
+
+   :::image type="content" source="../media/6-visual-studio-code-pr-closed-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the P R closed dot Y M L file within the workflows folder.":::
 
 1. At the top of the file, name the workflow, configure the same concurrency key that you used in the pull request validation workflow, and configure the workflow to run whenever a pull request is closed:
 
@@ -164,9 +166,6 @@ You've defined workflows to create and manage ephemeral environments automatical
 
 1. On the pull request details page, wait for the status checks to appear.
 
-   > [!NOTE]
-   > It might take some time for the workflow to start running. Refresh your browser window until you see the status checks.
-
 1. Select **Details** next to the **deploy** job.
 
    :::image type="content" source="../media/6-deploy-details.png" alt-text="Screenshot of the GitHub pull request that shows the status checks. The Details link for the 'deploy' job is highlighted.":::
@@ -195,6 +194,10 @@ Now that you've tested the pull request, you can merge it into the *main* branch
 
    :::image type="content" source="../media/6-reopen-pull-request.png" alt-text="Screenshot of GitHub showing the list of open pull requests in the repository.":::
 
+   Notice that the status checks have passed.
+
+   :::image type="content" source="../media/6-status-checks-passed.png" alt-text="Screenshot of the GitHub pull request that shows that the two status checks have passed.":::
+
 1. Select **Merge pull request**.
 
 1. Select **Confirm merge**.
@@ -203,10 +206,10 @@ Now that you've tested the pull request, you can merge it into the *main* branch
 
 1. In the browser, navigate to **Actions** and select the **pr-closed** workflow.
 
-   Notice that the workflow has been invoked.
+   Notice that the workflow has been invoked automatically because a pull request was closed.
 
-   <!-- TODO 6-pr-closed-workflow.png -->
+   :::image type="content" source="../media/6-pull-request-closed-workflow.png" alt-text="Screenshot of the GitHub Actions page that shows the P R closed workflow is running.":::
 
 1. Select the workflow to review the log.
 
-   It might take a few minutes for the workflow to finish deleting the resource group. You don't need to wait.
+   It might take a few minutes for the workflow to finish deleting the resource group in Azure. You don't need to wait.

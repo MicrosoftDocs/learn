@@ -104,6 +104,8 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
 1. Look at the **Checks** section of the pull request details.
 
    After a moment, notice that an automatic check has been triggered. The check runs your pull request validation workflow.
+
+   It might take some time for the workflow to start running. Refresh your browser window until you see the status checks.
    
    Wait until the check completes. The check fails.
 
@@ -128,7 +130,7 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
 
    Notice that there is a variable named `appServiceAppLinuxFrameworkVersion` on line 20. The variable isn't used. Next, you'll fix this error.
 
-1. In the `appServiceApp` resource definition, update the `linuxFxVersion` property to use the variable instead of setting the property to a hard-coded value:
+1. In the `appServiceApp` resource definition, update the `linuxFxVersion` property to use the variable instead of setting the property to the hard-coded value:
 
    :::code language="bicep" source="code/4-main-fixed.bicep" range="61-72" highlight="8" :::
 
@@ -137,14 +139,16 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
    ```bash
    git add .
    git commit -m "Fix Bicep file"
-   git push
+   git push origin feature/linux-app
    ```
 
 ## Monitor and merge the pull request
 
-1. Reopen your browser to the pull request details page.
+1. Reopen your browser back to the pull request details page.
 
-   Notice that the pull request validation is running again. Wait for the check to complete. This time, it succeeds. There are no syntax or linter errors in the Bicep file, so you're ready to merge the pull request.
+   The pull request validation runs again. If you don't see the status check running, refresh your page.
+   
+   Wait for the check to complete. This time, it succeeds. There are no syntax or linter errors in the Bicep file, so you're ready to merge the pull request.
 
 1. Select **Merge pull request** to close the pull request and merge the changes in your main branch.
 

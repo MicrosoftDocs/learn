@@ -1,3 +1,5 @@
+<!-- TODO rewrite this page a bit -->
+
 Linting your Bicep code gives you some indication of whether your Azure deployment is likely to succeed, but it's helpful to actually deploy your Bicep code somewhere to see how your environment will look after the pull request is merged and your deployment is complete. In this unit, you'll learn about how to automatically create ephemeral environments, and delete them when they're no longer required.
 
 ## Ephemeral environments
