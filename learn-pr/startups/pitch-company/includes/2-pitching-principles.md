@@ -12,7 +12,7 @@ If you're pitching at a public event, such as an accelerator demo day, the purpo
 
 If you're pitching an investor such as an angel group or a venture capital fund, it's likely that most of the people in the room know very little about your company, and your pitch will be the first of many meetings before you actually have money in the bank.
 
-## Who are you pitching?
+## Who's your audience?
 
 The most impactful pitches are delivered at just the right level for the audience. By understanding your audience's objectives and their current level of knowledge about your company and sector, you'll be able to deliver a pitch that's informative without being condescendingly simple or overloading them with unfamiliar terminology.
 

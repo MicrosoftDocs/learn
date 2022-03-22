@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/21/2022
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "10.3.0.2"
       isCorrect: false
-      explanation: "That's incorrect. Azure reserves the first four addresses in each subnet address range. These four addresses cannot be assigned to resources: 10.3.0.0-10.3.0.3."
+      explanation: "That's incorrect. Azure reserves the first four addresses in each subnet address range. These four addresses can't be assigned to resources: 10.3.0.0-10.3.0.3."
     - content: "10.3.255.255"
       isCorrect: false
       explanation: "That's incorrect. This is the subnet broadcast address, which is unavailable."
@@ -38,7 +38,7 @@ quiz:
       explanation: "That's correct. In this situation, use statically assigned IP addresses to avoid having to change the Firewall rules."
     - content: "IP addresses in the reserved range."
       isCorrect: false
-      explanation: "That's incorrect. IP addresses in the reserved range cannot be used."
+      explanation: "That's incorrect. IP addresses in the reserved range can't be used."
   - content: "Which of the following resources could have a public IP address?"
     choices:
     - content: "Virtual Machine"
@@ -46,7 +46,7 @@ quiz:
       explanation: "That's correct. Public IP addresses can be assigned to virtual machines."
     - content: "Azure Data Lake"
       isCorrect: false
-      explanation: "That's incorrect. Although Azure Data Lake is accessible over the internet, a public IP address is not assigned to the service."
+      explanation: "That's incorrect. Although Azure Data Lake is accessible over the internet, a public IP address isn't assigned to the service."
     - content: "Azure Key Vault"
       isCorrect: false
-      explanation: "That's incorrect. Although Azure Key Vault is accessible over the internet, a public IP address is not assigned to the service."
+      explanation: "That's incorrect. Although Azure Key Vault is accessible over the internet, a public IP address isn't assigned to the service."

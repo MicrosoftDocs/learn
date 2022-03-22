@@ -3,7 +3,7 @@ uid: learn.wwl.describe-cloud-business-case-analysis
 metadata:
   title: Describe Cloud Business Case Analysis
   description: "Understand a cloud business case analysis through a business case analysis, analysis of alternatives, and non-financial operational benefits."
-  ms.date: 03/09/2022
+  ms.date: 03/10/2022
   author: wwlpublish
   ms.author: jesander
   ms.topic: interactive-tutorial
@@ -21,6 +21,7 @@ prerequisites: |
   - You should have an understanding of why business case analysis is necessary.
   - You should understand several of the factors that go into making major decisions on cloud computing workloads.
 iconUrl: /learn/achievements/cloud-business-describe-case-analysis.svg
+hidden: true
 levels:
 - beginner
 roles:

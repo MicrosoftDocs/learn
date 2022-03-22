@@ -3,7 +3,7 @@ uid: learn.wwl.migrate-servers-workloads-premises-hybrid-environments
 metadata:
   title: Migrate servers and workloads in on-premises and hybrid environments
   description: Migrate servers and workloads in on-premises and hybrid environments
-  ms.date: 12/10/2021
+  ms.date: 03/17/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ prerequisites: |
   *   Windows PowerShell scripting
 summary: |
   Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server by using Windows Server migration tools or the Storage Migration Service.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/migrate-servers-and-workloads-in-on-premises-and-hybrid-environments.svg
 levels:
 - intermediate
 roles:

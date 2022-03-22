@@ -24,7 +24,7 @@ You should be familiar with using:
 
   - Bicep, including creating and deploying basic files.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-  - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
+  - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
   - Basic GitHub Actions workflows, including secrets for connecting to your Azure environment.
 
 To work through the exercises in the module, you'll need:
