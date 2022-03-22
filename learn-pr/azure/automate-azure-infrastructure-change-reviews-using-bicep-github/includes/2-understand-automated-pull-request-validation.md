@@ -10,7 +10,7 @@ When you review a pull request for Bicep code, you might have some common steps 
 
 *Pull request validation* involves automating some of these activities. By automating pull request checks, you ensure that reviewers spend their time on other, more important, review steps like ensuring the code meets your team's quality standards and achieves the business goal.
 
-In GitHub Actions workflows, you can define triggers that invoke the workflow at certain points during the pull request process, including when a pull request is created, updated, merged, or closed.
+In a GitHub Actions workflow, you can define triggers that invoke the workflow at certain points during the pull request process, including when a pull request is created, updated, merged, or closed.
 
 ### Testing your Bicep code in a pull request validation workflow
 

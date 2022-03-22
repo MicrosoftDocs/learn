@@ -59,4 +59,4 @@ Additionally, Azure provides many capabilities to help you to control the costs 
 > [!NOTE]
 > You might also consider sharing certain resources between ephemeral environments. For example, your Bicep code might define just a small mumber of resources that are costly or that take a long time to provision. Consider whether you can have one shared, long-lived, resource group for all of your pull requests to share, and separate ephemeral resource groups for the other resources.
 >
-> However, whenever you create these kinds of separations, it becomes more difficult and error-prone to manage your environments amd to keep them separated enough to be helpful for your reviews. It's best to avoid this approach unless the cost of your ephemeral environments becomes too great.
+> However, whenever you create these kinds of separations, it becomes more difficult and error-prone to manage your environments and to keep them separated enough to be helpful for your reviews. It's best to avoid this approach unless the cost of your ephemeral environments becomes too great.
