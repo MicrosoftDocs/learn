@@ -2,7 +2,7 @@
 uid: learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking
 title: Check if data changes happened with Change Tracking
 metadata:
-  unitType: {{patternType}}
+  unitType: learning-content
   title: Check if data changes happened with Change Tracking
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 3/21/2022
