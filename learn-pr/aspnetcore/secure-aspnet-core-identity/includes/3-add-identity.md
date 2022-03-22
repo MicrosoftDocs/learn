@@ -2,15 +2,6 @@ Identity works out-of-the-box without any customization. The standard Identity U
 
 In this unit, Identity will be added to an existing ASP.NET Core Razor Pages project.
 
-> [!NOTE]
-> This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
-
-[!include[](../../../includes/dotnet6-sdk-version.md)]
-
-This project includes a *[.devcontainer](https://code.visualstudio.com/docs/remote/containers)* file preconfigured with the required tools. If you have Docker installed and wish to use the *.devcontainer*, select "Reopen in Container" when prompted. Alternatively, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette, and then search for and select **Remote-Containers: Reopen in Container**.
-
-The *.devcontainer* also works in GitHub Codespaces for a browser-based experience.
-
 ## Obtain and open the starter project
 
 1. At a shell terminal, run the following commands to obtain the starter project:
@@ -27,6 +18,9 @@ The *.devcontainer* also works in GitHub Codespaces for a browser-based experien
     ```
 
     Visual Studio Code opens. Accept any prompts to install recommended extensions, or select **Reopen in Container** if you wish to use the *.devcontainer*.
+
+    > [!TIP]
+    > If you miss the prompt to reopen in container, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette, and then search for and select **Remote-Containers: Reopen in Container**.
 
 3. After the project loads (either locally or in the container), press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> to open a new terminal window.
 4. Set your location to the *RazorPagesPizza* directory:

@@ -1,6 +1,6 @@
 In this unit, you'll gain an understanding of Identity architecture.
 
-## Review ASP.NET Core Identity architecture
+## ASP.NET Core Identity architecture
 
 ASP.NET Core Identity is a membership system that adds user registration and login capabilities to an ASP.NET Core web UI. The membership system handles both authentication and authorization concerns. Authentication is concerned with who you are. Authorization is concerned with what you're allowed to do. Authentication is therefore a prerequisite for authorization.
 
