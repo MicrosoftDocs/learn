@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-debug-visual-studio.logging-and-tracing
+title: Logging and tracing in .NET applications
+metadata:
+  title: Logging and tracing in .NET applications
+  description: Learn about different instrumentation techniques through logging and tracing that help debug .NET applications.
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.date: 3/16/2022
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-logging-and-tracing.md)]
