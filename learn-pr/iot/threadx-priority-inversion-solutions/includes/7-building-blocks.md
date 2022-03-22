@@ -1,3 +1,5 @@
+## Introduction
+
 Let's look at the code building blocks we'll use in the project.
 
 ## Building block 1
@@ -16,7 +18,7 @@ We'll use this code to create declarations, definitions, and prototypes:
 
 ### Main entry point
 
-We'll use this code for the main entry point. 
+We'll use this code for the main entry point.
 
 :::code language="c" source="../code/project-priority-inversion.c" range="54-62":::
 
@@ -36,8 +38,9 @@ We'll use this code to create application definitions:
 
 > [!NOTE]
 > In the next unit, you'll make these changes to the highlighted lines of code:
+>
 > - You'll employ priority inheritance to avoid the priority inversion problem. When the mutex was created, priority inheritance wasn't enabled. To enable priority inheritance, you'll change the mutex option from TX_NO_INHERIT to TX_INHERIT. After experimenting with this change and recording your results, you can change the option back to TX_NO_INHERIT.
-> - When routine thread was created, the preemption threshold was set to 20. In the next unit, you'll experiment with changing the preemption threshold to 10. Then, you'll complete your experiments and record your results.
+> - When routine thread was created, the preemption threshold was set to 20. In the next unit, you'll experiment with changing the preemption threshold to 10. Then, you'll complete your experiments and record your results
 
 ## Building block 4
 
@@ -66,4 +69,3 @@ We'll use this code to create the routine thread entry function:
 We'll use this code to create the print_stats application timer function:
 
 :::code language="c" source="../code/project-priority-inversion.c" range="198-228":::
-
