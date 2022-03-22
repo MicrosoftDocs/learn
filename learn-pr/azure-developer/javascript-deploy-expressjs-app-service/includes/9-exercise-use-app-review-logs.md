@@ -37,13 +37,72 @@ The App Service keeps logs in the hosting environment which you can use to resol
 
     The debug hosting logs are interesting for a developer new to Azure but not a configuration you want to keep in the production app because your runtime environment could eventually fill up.  
 
-## From Application Insights - were there any failures?
+## Were there any failures such as 404 file not found?
 
 1. In Visual Studio Code, right-click your App Service from the Azure sidebar, then select **Open in portal**.
 1. In the web browser, select **Settings > Application Insights**, then select **View Application Insights data**. This opens your Application Insights resource. 
-1. Select **Investigate > Failures**. The graph should display zero errors. 
+1. Select **Investigate > Failures**. The graph should display your 404 error. 
 
 ## Create a 404 alert
 
 1. Still in the web browser for your Application Insights resource, select **Monitoring > Alerts**. 
 1. Select **+ Create > Alert rule**. 
+1. On the **Create an alert rule** panel, on the **Actions** panel, select **Create action group**. Use the following table to finish creating your action group.
+
+    |Setting|Value|
+    |--|--|
+    |Basics - Action group name<br>(and display name)|`4xx`|
+    |Notifications - Notifications type|**Email/SMS message/Push/Voice**|
+    |Notifications - name|`Notify jimb`, replace `jimb` with your email alias. In the **Email/SMS message/Push/Voice** panel, enter at least one of your contact forms.|
+1. Don't fill out **Actions** or **Tags** panels.
+1. Select **Review + create** button at the bottom of the main panel. 
+1. If you are presented with another **Create** button, select it. 
+1. On the **Create an alert rule** panel, on the **Condition** panel, select **Add condition**. On the **Select a signal** panel, use the following table to finish adding your condition:
+
+    |Signal type|Monitor service|
+    |--|--|
+    |Failed requests|Platform|
+1. On the **Configure signal logic** panel, use the following table to finish configuring the **Split by dimensions**: 
+   
+    |Setting|Value|
+    |--|--|
+    |Dimension name|Result code|
+    |Operator|Starts with|
+    |Dimension values|`4`|
+
+1. On the **Configure signal logic** panel, use the following table to finish configuring the **Alert logic**: 
+   
+    |Setting|Value|
+    |--|--|
+    |Threshold|Static|
+    |Operator|Greater than|
+    |Aggregation type|Count|
+    |Threshold value|`1`|
+    |Unit|Count|
+
+    This setting of any 4xx errors triggering an alert isn't realistic for production applications but will help you in this Learn unit. If you continue this web app into a production app for your own purposes, remember to come back and reset this alert logic.
+
+    DO NOT USE THIS SETTING IN PRODUCTION.
+
+1. On the **Configure signal logic** panel, use the following table to finish configuring the **Evaluated based on**: 
+   
+    |Setting|Value|
+    |--|--|
+    |Aggregation granularity|1 minute|
+    |Frequency of evaulation|Every 1 minute|
+
+    These setting of 1 minute is only so the you don't have to wait too long for the alert to trigger. 
+
+    DO NOT USE THIS SETTING IN PRODUCTION.
+
+1. Once the condition is created, the **Estimated monthly cost** is calculated for you on the **Create an alert rule** panel.
+1. 1. On the **Create an alert rule** panel, select the **Details** panel, use the following table to finish configuring the details: 
+
+    |Setting|Value|
+    |--|--|
+    |Alert rule name|`4xx alert rule`|
+    |Alert rule description|`4xx failures`|
+
+    Don't change any other settings.
+
+1. On the **Create an alert rule** panel, select the **Review + create** button at the bottom of the panel.
