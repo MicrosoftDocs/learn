@@ -56,6 +56,19 @@ The following tables covers the settings used in the next exercise:
 |Application Insights|Application Insights is an Azure service which integrates into you App Service and captures a wide variety of metrics and logs.|
 
 There are advanced settings you allow you to:
+
 * Configure deployment settings 
 * Zone redundancy
 * Add tags
+
+## Default port is 8080
+
+App Service doesn't control which port your app listens on. It forwards requests to 8080. Typically, your JavaScript code provides for this, for example:
+
+```javascript
+const port = process.env.PORT || 8080;
+```
+
+If your app listens to any other port, you need to set the `WEBSITES_PORT` app setting to the port number, and App Service forwards requests to that port in the container. 
+
+In the sample app used in this Learn module, the port is correctly configured for you.

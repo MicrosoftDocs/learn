@@ -29,7 +29,7 @@ content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which environments provide the widest deployment choices?"
+  - content: "What app setting controls the NPM install of dependencies as part of the deployment?"
     choices:
       - content: |
           CICD - such as GitHub Actions or Azure Pipelines
