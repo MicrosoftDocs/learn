@@ -1,4 +1,4 @@
-You need to update your website to run on the Linux operating system. In this exercise you'll add a validation workflow that automatically runs when a pull request is opened or updated. Then, you'll create a pull request for your website's operating system change.
+Your website's development team has asked you to update the website to run on the Linux operating system. In this exercise, you'll add a validation workflow that automatically runs when a pull request is opened or updated. Then, you'll create a pull request for your website's operating system change.
 
 During the process, you'll:
 
@@ -60,7 +60,7 @@ Here, you modify your website's Bicep file to update the website's operating sys
 
    This setting tells Azure App Service that the application will be built using version 14 of the Node.js framework.
 
-1. Update the `appServicePlan` resource definition by changing its `kind` property, and adding a new property named `reserved` in the `properties`:
+1. Update the `appServicePlan` resource definition. Change its `kind`, and add a new property named `reserved` in the `properties` object:
 
    :::code language="bicep" source="code/4-main-broken.bicep" range="51-59" highlight="5-8" :::
 

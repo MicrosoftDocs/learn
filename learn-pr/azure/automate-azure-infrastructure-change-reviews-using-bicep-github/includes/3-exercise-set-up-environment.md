@@ -104,6 +104,8 @@ Later in this Microsoft Learn module, your pull request workflow will create res
 
 > [!WARNING]
 > The service principal you create here will have a high level of access to your Azure subscription. To avoid any accidental issues, use a non-production subscription. Don't execute these steps in an environment that holds any of your production workloads.
+>
+> In your own pull request validation workflows, we recommend you use a dedicated Azure subscription.
 
 ::: zone pivot="cli"
 

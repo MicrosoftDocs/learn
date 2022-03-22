@@ -1,16 +1,14 @@
 Your team has told you they appreciate getting the automated Bicep linter feedback on their code changes before they send them to other team members to review. Now, you've decided to give your contributors and reviewers the ability to deploy and review their code in an ephemeral environment.
 
-In this exercise, you'll update your pull request workflow to deploy an ephemeral environment whenever a pull request is opened, redeploy it when code is pushed to the pull request branch, and delete the environment when the pull request is closed.
+In this exercise, you'll update your pull request workflow to deploy an ephemeral environment whenever a pull request is opened and redeploy it when code is pushed to the pull request branch. You'll also create another workflow to automatically delete the environment when the pull request is closed. You'll test your changes by creating a pull request for your website to use a Docker container image.
 
 During the process, you'll:
 
 > [!div class="checklist"]
 > * Update the pull request workflow to deploy an ephemeral environment.
 > * Create a pull request deletion workflow to remove the ephemeral environment.
-> * Create a pull request.
-> * Watch the ephemeral environment get created.
-> * Approve the pull request.
-> * Watch the ephemeral environment be deleted
+> * Create a pull request and watch the ephemeral environment get created.
+> * Approve the pull request and watch the ephemeral enivronment get deleted.
 
 ## Update the pull request workflow to deploy an ephemeral environment
 
@@ -48,14 +46,14 @@ As a first step, you need to update your *pr-validation* workflow to create an e
 
    :::code language="yaml" source="code/6-pr-validation.yml" range="10-21" highlight="5-12" :::
 
-   The steps in this job first check out all the code onto the GitHub runner, and then sign into your Azure environment.
-
-   > [!TIP]
-   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
+   The job first checks out all the code onto the GitHub runner, and then signs into your Azure environment.
 
 1. Add a step to create the resource group with the name defined in the environment variable:
 
    :::code language="yaml" source="code/6-pr-validation.yml" range="22-28" :::
+
+   > [!TIP]
+   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
 
 1. After the resource group creation step, add a step to deploy the Bicep file to the resource group:
 
@@ -212,4 +210,7 @@ Now that you've tested the pull request, you can merge it into the *main* branch
 
 1. Select the workflow to review the log.
 
-   It might take a few minutes for the workflow to finish deleting the resource group in Azure. You don't need to wait.
+   It might take a few minutes for the workflow to finish deleting the resource group in Azure.
+
+   > [!IMPORTANT]
+   > You don't need to wait for the workflow run to complete. But, remember to open the Azure portal later, to verify that the ephemeral environment's resource group has been deleted successfully and to avoid you incurring costs for the Azure resources.

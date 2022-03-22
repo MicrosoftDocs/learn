@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 03/15/2022
+  ms.date: 03/22/2022
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: You're creating a workflow that should be involved whenever a pull request is opened or the code on the source branch is updated. Which of the following triggers should you use?
+  - content: You're creating a workflow that should run whenever a pull request is opened or the code on the source branch is updated. Which of the following triggers should you use?
     choices:
     - content: |
         `workflow_dispatch`
