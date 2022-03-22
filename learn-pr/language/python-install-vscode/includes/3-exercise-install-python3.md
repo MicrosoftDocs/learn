@@ -112,7 +112,7 @@ The YUM package manager is used mainly by Red Hat systems, like Red Hat Enterpri
 1. Run the following command `yum install` to install Python 3
 
     ```bash
-    yum install rh-python3.10
+    yum install rh-python310
     ```
 
 1. Run `python3.10 --version` to verify installation:
@@ -138,7 +138,7 @@ Software Collections enables you to install multiple versions of the same softwa
 1. Run the `scl enable` command at a Bash prompt:
 
     ```bash
-    scl enable rh-python3.10 bash
+    scl enable rh-python310 bash
     ```
 
 1. Again, verify that everything is OK by running `python3.10 --version`.
