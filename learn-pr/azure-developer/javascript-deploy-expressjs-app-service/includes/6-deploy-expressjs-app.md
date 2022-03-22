@@ -28,14 +28,14 @@ SCM_DO_BUILD_DURING_DEPLOYMENT=true
 
 ## Build process
 
-For the sample app used in this module, the build process runs `npm install` which accesses the list of dependencies from `package.json`. You'll set `SCM_DO_BUILD_DURING_DEPLOYMENT` to true in the following exercise 
+For the sample app used in this module, the build process runs `npm install` which accesses the list of dependencies from `package.json`. 
 
 ## Deployment tasks
 
 After you deploy your app, you may want to:
 
 * Automate deployments
-* Manual partial deployment
+* Manually deploy part of the app
 * Manually verify files on the host service
 * Manually swap slots
 
@@ -43,7 +43,7 @@ After you deploy your app, you may want to:
 
 Deployments to Azure hosting services, including App Service, can include many types of deployments:
 
-* **GitHub actions, Azure Pipelines, and other CI/CD processes** - these are processes that can be orchestrated to have some checks before and after deployment.
+* **GitHub actions, Azure Pipelines, and other CI/CD processes** - these are processes that can be orchestrated to have checks before and after deployment.
 * **CLI tools** - Azure CLI, Git, and GH (GitHub CLI) provide the ability to push files to a remote location. 
 * **Development environments** - Visual Studio and Visual Studio Code, along with other development environments, provide mechanisms to authenticate to your Azure hosting environment, such as App Service, and push files to your hosting environment. 
 
@@ -52,7 +52,7 @@ Deployments to Azure hosting services, including App Service, can include many t
 When coming from another hosting service, you may be accustomed to checking the files deployed successfully by reviewing files on the host service. 
 
 Azure provides several ways to look at files on the host service:
-* **Azure portal**: When you look at your host resource for with the Azure portal, you can use the provided development tools in the portal such as:
+* **Azure portal**: When you look at your host resource with the Azure portal, you can use the provided development tools in the portal such as:
     * The in-browser SSH and bash terminals, available from your app's SCM URL: `https://YOUR-APP-NAME.scm.azurewebsites.net`
 * **Visual Studio Code**'s App Service extension provides access to the hosting environment's **files**, which you can locally change and save back to your App Service. 
 
@@ -60,7 +60,7 @@ Azure provides several ways to look at files on the host service:
 
 There may be times when the most efficient way to fix or improve a deployment is to move a file or a few files onto the App Service manually.
 
-You can use the same tools as you would verify the files, the Azure portal's SSH and BASH in-browser portals or Visual Studio Code's **files**. 
+You can use the same tools as you would verify the files, the Azure portal's SSH and bash in-browser portals or Visual Studio Code's **files**. 
 
 ### Manually swap deployment slots
 

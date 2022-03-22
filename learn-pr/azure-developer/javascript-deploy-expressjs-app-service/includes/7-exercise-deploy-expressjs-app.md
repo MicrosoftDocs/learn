@@ -59,10 +59,9 @@ The local project has several folders, each representing a Learn module. The `2-
 ## Deploy the sample from your local computer to App Service
 
 1. In Visual Studio Code, open the Azure side bar.
-1. In the side bar, select the App Service, find and expand the repository and resource group:
+1. In the side bar, select the App Service, find and expand the repository:
 
     * **Subscription name**: `Concierge Subscription`
-    * **Resource group name**: `<rgn>Sandbox resource group ID</rgn>` 
 
 1. Find the app your created in the previous exercise, such as `jimb-rentals`.
 1. Right-click the app and select **Deploy to Web App...*.

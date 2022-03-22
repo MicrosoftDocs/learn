@@ -1,4 +1,4 @@
-To deploy the Express.js app to Azure, you need a service that supposed hosting a web app.
+To deploy the Express.js app to Azure, you need a service that provides web app hosting.
 
 ## Choose Azure App Service for hosting
 
@@ -39,4 +39,23 @@ Isolate your app into a new App Service plan when:
 
 In this module, use the Linux operating system for this web app. 
 
+## App Service settings during creation
 
+When you create an App Service resource, you have a variety of settings to choose from, many have default values. 
+
+The following tables covers the settings used in the next exercise:
+
+|Setting|Value|
+|--|--|
+|Globally unique name|The resource name you choose must be unique from all other App Service resource because the name is used in the URL, `YOUR-APP-NAME.azurewebsites.net`.|
+|Resource group|The resource group allows you to have a virtual category for all related resources.|
+|Runtime stack|App Service allows you to pick the programmatic runtime stack, such as a Node.js LTS version.|
+|OS|Each of the two operating systems of the App Service, Windows and Linux, generally provide comparable functionality with a few differences specific to each.|
+|Location|The geographical location where the app is deployed.|
+|Pricing tier|The App Service pricing tier provides a wide range of capabilities including a free tier.|
+|Application Insights|Application Insights is an Azure service which integrates into you App Service and captures a wide variety of metrics and logs.|
+
+There are advanced settings you allow you to:
+* Configure deployment settings 
+* Zone redundancy
+* Add tags
