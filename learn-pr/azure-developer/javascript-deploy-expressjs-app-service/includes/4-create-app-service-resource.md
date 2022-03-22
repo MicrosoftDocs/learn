@@ -39,6 +39,12 @@ Isolate your app into a new App Service plan when:
 
 In this module, use the Linux operating system for this web app. 
 
+## App Service + DB
+
+You can create your App Service and its database at the same time. When you create both at the same time, a virtual network is created for you. 
+
+This feature isn't used in this Learn module.
+
 ## App Service settings during creation
 
 When you create an App Service resource, you have a variety of settings to choose from, many have default values. 
@@ -72,3 +78,17 @@ const port = process.env.PORT || 8080;
 If your app listens to any other port, you need to set the `WEBSITES_PORT` app setting to the port number, and App Service forwards requests to that port in the container. 
 
 In the sample app used in this Learn module, the port is correctly configured for you.
+
+## Public web app URL
+
+Once you create your App Service web app, the URL is public and immediately available. The URL includes your App Service resource name and looks like:
+
+```console
+https://YOUR-RESOURCE-NAME.azurewebsites.net/
+```
+
+## Authentication
+
+Once you create your App Service web app, the app is public without authentication enabled. Once created, you can configure your App Service resource to use one of several social logins, your own enterprise Active Directory, or a custom authentication platform.
+
+Depending on which authentication system you choose, your web app may need no, some, or all programmatic changes to fully enable your authentication choose. 
