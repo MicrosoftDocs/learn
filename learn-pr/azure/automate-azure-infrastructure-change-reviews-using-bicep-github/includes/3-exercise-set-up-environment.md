@@ -72,6 +72,8 @@ You now have a copy of the template repository in your own account. You'll now c
 
 ## Sign in to Azure
 
+Now that you've cloned the repository locally to your computer, you will sign in to your Azure environment. You'll use your Azure account to create a service principal for your GitHub Actions workflows to use.
+
 ::: zone pivot="cli"
 
 1. In the Visual Studio Code terminal, run the following command to sign in to Azure:

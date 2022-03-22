@@ -28,7 +28,7 @@ You can also run many of the same activities in a pull request validation workfl
 
 Pull request validation workflows are normal GitHub Actions workflows, so you can run any of these tasks. However, it's worth thinking about the types of checks that make sense to run within a pull request.
 
-Many of the validation activities listed above require access to an Azure environment. For example, the what-if operation compares the resources defined in your Bicep files against those in your Azure subscription. It makes sense to run this comparison against a production environment. But, you might not be comfortable running operations against a production environment from within a workflow designed for code that isn't yet merged.
+Many of the validation activities listed above require access to an Azure environment. For example, the what-if operation compares the resources defined in your Bicep files against those in your Azure subscription. It makes sense to run this comparison against a production environment. But, you might not be comfortable running operations against a production environment from within a workflow designed for code that isn't yet completed or merged, because it introduces some additional risk.
 
 In this module, you'll add two levels of checks to your pull request validation workflow:
 
