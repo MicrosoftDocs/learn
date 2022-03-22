@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics
+metadata:
+  title: Troubleshoot Web App Down Scenarios with App Service Diagnostics
+  description: "Utilize Web App Down, Crash Monitoring, and Ask Genie for troubleshooting. Use these tools to monitor application and platform availability, identify unhandled exceptions, capture memory dumps and callstack, and find areas of investigation and diagnostics."
+  ms.date: 03/22/2022
+  author: wwlpublish
+  ms.author: lauraalv
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot Web App Down Scenarios with App Service Diagnostics
+summary: Utilize Web App Down, Crash Monitoring, and Ask Genie for troubleshooting. Use these tools to monitor application and platform availability, identify unhandled exceptions, capture memory dumps and callstack, and find areas of investigation and diagnostics.
+abstract: |
+  After completing this module, you’ll be able to:
+  *   Troubleshoot downtimes with Web App Down
+  *   Mitigate application crashes with Crash Monitoring
+  *   Use Ask Genie to identify relevant diagnostics information
+prerequisites: |
+  -	Ability to navigate the Azure Portal
+  -	A basic understanding of web app performance would be helpful but is not required
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- support-engineer
+products:
+- azure-app-service
+units:
+- learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.introduction
+- learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.troubleshoot-downtimes
+- learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.mitigate-application-crashes
+- learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.use-ask-genie-for-detector-recommendations
+- learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.knowledge-check
+- learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.summary
+badge:
+  uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.mitigate-application-crashes
+title: Mitigate Application Crashes
+metadata:
+  title: Mitigate Application Crashes
+  description: "Mitigate Application Crashes"
+  ms.date: 03/22/2022
+  author: wwlpublish
+  ms.author: lauraalv
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-mitigate-application-crashes.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.troubleshoot-downtimes
+title: Troubleshoot Downtimes
+metadata:
+  title: Troubleshoot Downtimes
+  description: "Troubleshoot Downtimes"
+  ms.date: 03/22/2022
+  author: wwlpublish
+  ms.author: lauraalv
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-troubleshoot-downtimes.md)]
