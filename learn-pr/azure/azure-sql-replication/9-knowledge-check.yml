@@ -1,0 +1,79 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-replication.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 3/21/2022
+  author: MaraSteiu
+  ms.author: masteiu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What is the default retention policy for the CDC cleanup process?"
+    choices: 
+    - content: "1 day"
+      isCorrect: false
+      explanation: "The change data capture cleanup process is responsible for enforcing the retention-based cleanup policy. By default, three days of data are retained."
+    - content: "2 days"
+      isCorrect: false
+      explanation: "The change data capture cleanup process is responsible for enforcing the retention-based cleanup policy. By default, three days of data are retained."
+    - content: "3 days"
+      isCorrect: true
+      explanation: "The change data capture cleanup process is responsible for enforcing the retention-based cleanup policy. By default, three days of data are retained."
+  - content: "Which of the following tools offers automatic or on-demand bi-directional data synchronization?"
+    choices:
+    - content: "Change Data Capture (CDC)"
+      isCorrect: false
+      explanation: "CDC tracks and loads data changes but keeps them on the same source database. SQL Data Sync synchronizes the data changes either uni-directionally or bi-directionally."
+    - content: "SQL Data Sync"
+      isCorrect: true
+      explanation: "SQL Data Sync synchronizes the data changes either uni-directionally or bi-directionally."
+    - content: "Change Tracking"
+      isCorrect: false
+      explanation: "Change Tracking checks whether a change happened on your table and what type of change happened. SQL Data Sync synchronizes the data changes either uni-directionally or bi-directionally."
+  - content: "Which is the default function that CDC provides for querying the change tables?"
+    choices:
+    - content: "fn_cdc_get_all_changes_"
+      isCorrect: true
+      explanation: "The function that is used to query for all changes is fn_cdc_get_all_changes_. If the capture instance is configured to support net changes, the net_changes query function is also created."
+    - content: "fn_cdc_get_net_changes_"
+      isCorrect: false
+      explanation: "The function that is used to query for all changes is fn_cdc_get_all_changes_. If the capture instance is configured to support net changes, the net_changes query function is also created."
+  - content: "You can enable SQL Data Sync on tables that don't have a primary key (PK)"
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Each table that you want to sync must have a primary key."
+    - content: "False"
+      isCorrect: true
+      explanation: "Each table that you want to sync must have a primary key."
+  - content: "Which tool should I use if I want to identify whether an insert / update / delete was executed on my data, but without needing a historical record of my data changes?"
+    choices:
+    - content: "Change Data Capture"
+      isCorrect: false
+      explanation: "Change tracking should be used to verify whether a row has changed and to get information about the change."
+    - content: "SQL Data Sync"
+      isCorrect: false
+      explanation: "Change tracking should be used to verify whether a row has changed and to get information about the change."
+    - content: "Change Tracking"
+      isCorrect: true
+      explanation: "Change tracking should be used to verify whether a row has changed and to get information about the change."

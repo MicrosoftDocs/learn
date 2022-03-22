@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure-sql-replication
+metadata:
+  moduleType: standard
+  title: azure-sql-replication
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  ms.date: 3/21/2022
+  author: MaraSteiu
+  ms.author: masteiu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: azure-sql-replication
+summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+abstract: |
+  By the end of this module, you'll be able to:
+    - "TODO learning objective 1"
+    - "TODO learning objective 2"
+    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+prerequisites: |
+  - "TODO prerequisite 1"
+  - "TODO prerequisite 2"
+  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - beginner
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - developer
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+- azure-sql-database
+units:
+- learn.azure-sql-replication.introduction
+- learn.azure-sql-replication.track-data-changes-with-cdc
+- learn.azure-sql-replication.exercise---track-data-changes-with-cdc
+- learn.azure-sql-replication.synchronize-data-with-sql-data-sync
+- learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking
+- learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking-
+- learn.azure-sql-replication.summary
+- learn.azure-sql-replication.knowledge-check
+- learn.azure-sql-replication.summary
+badge:
+  uid: learn.azure-sql-replication.badge
