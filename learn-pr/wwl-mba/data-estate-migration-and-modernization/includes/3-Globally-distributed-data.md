@@ -11,9 +11,16 @@ Azure Cosmos DB was built from the ground up with **global distribution** and **
 
 ### How does globally distributed data work?
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about globally distributed data and Azure Cosmos DB.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn more about globally distributed data and Azure Cosmos DB.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqJBc]
 
@@ -27,9 +34,16 @@ Now that you’ve learned how data flows in a typical global architecture, take 
 
 ### How is Azure Cosmos DB being used?
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn how e-commerce retailer ASOS is using Azure Cosmos DB to enable new cloud applications.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn how e-commerce retailer ASOS is using Azure Cosmos DB to enable new cloud applications.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWrrJr ]
 

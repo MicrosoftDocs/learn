@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/08/2021
+  ms.date: 03/16/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -28,17 +28,17 @@ quiz:
     - content: "Azure Data Lake"
       isCorrect: false
       explanation: "that’s incorrect. Azure Data Lake does not meet the requirement for the manufacturing data."
-  - content: "Based on the real time data requirements what solution meets the requirements?"
+  - content: "Based on the real time data requirements what solution provides real-time data ingestion and storage of multiple data sources?"
     choices:
     - content: "Azure Data Lake"
       isCorrect: true
-      explanation: "that’s correct. Azure Data Lake can ingest real-time data directly from multiple sources and quickly identify insights into the data"
+      explanation: "that’s correct. Azure Data Lake can ingest real-time data directly from multiple sources."
     - content: "Azure Databricks"
       isCorrect: false
       explanation: "that’s incorrect. Azure Databricks does not meet the requirement for real-time data ingestion."
     - content: "Azure Blob Storage"
       isCorrect: false
-      explanation: "that’s incorrect. Azure Blob Storge does not analyze data"
+      explanation: "that’s incorrect. Azure Databricks does not meet the requirement for real-time data ingestion from multiple data sources."
   - content: "Based on the historical company data requirements what solution meets the requirements?"
     choices:
     - content: "Cold storage"

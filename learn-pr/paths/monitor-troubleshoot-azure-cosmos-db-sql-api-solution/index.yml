@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-troubleshoot-azure-cosmos-db-sql-api-solution
 metadata:
   title: Monitor and troubleshoot an Azure Cosmos DB SQL API solution
   description: Monitor and troubleshoot an Azure Cosmos DB SQL API solution
-  ms.date: 12/15/2021
+  ms.date: 03/09/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 summary: |
   Review the common Cosmos DB administrative tasks of monitor, performance metrics, backup and security used in Azure.
-iconUrl: /learn/achievements/azure-cosmos-db-monitor-troubleshoot-solution.svg
+iconUrl: /learn/achievements/azure-cosmos-db-sql-api-monitor-troubleshoot-solution.svg
 levels:
 - intermediate
 roles:

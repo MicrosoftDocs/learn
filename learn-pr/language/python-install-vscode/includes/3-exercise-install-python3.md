@@ -1,6 +1,6 @@
 In the previous exercise, you ran a command to determine whether you had Python 3 installed. If you need to install Python 3, choose your operating system at the top of this page, and then follow the instructions below.
 
-If you determined that you already have Python 3 installed, you can scroll to the bottom of this page and select **Continue**.
+Once you're certain that Python 3 is installed, you can scroll to the bottom of this page and select **Continue**.
 
 When this module was written, Python 3.10 was the latest version available, so instructions here refer to that version. Install the latest version of Python that is available for your operating system. If you install a different version, the button labels and the filenames may differ slightly from the installation instruction.
 
@@ -15,7 +15,7 @@ When this module was written, Python 3.10 was the latest version available, so i
 
 1. Once open, search for **Python**.
 
-    You'll be presented with a list of various options.
+    You'll find a list of various options.
 
 1. Select the most recent version of Python.
 

@@ -6,11 +6,11 @@ Let's explore the toolkit available through Visual Studio Code, and how to insta
 
 You typically write Python syntax in a text file and save it to your local hard drive.
 
-You can write code by using a simple text file editor, such as Notepad in Windows. Notepad edits ASCII text, a standard text file format.  
+You can write code by using a simple text file editor, such as Notepad in Windows. Notepad edits ASCII text, a standard text file format.
 
 You want to avoid any text editor that has formatting options, like bold, underline, or italics, or any other program with word-processing features. So you shouldn't write code in Microsoft Word or TextEdit on macOS. These programs incorporate formatting instructions that the Python compiler won't understand.
 
-Although you can use any text editor, you'll probably want to use a tool that's best suited for the unique challenges of writing code. There are plenty of options to choose from, but many developers rely on Visual Studio Code, or VS Code. It's free and available on Windows, macOS, and Linux. It has many features that make it easy to navigate and commit code, no matter which programming language you want to work in.
+You'll want to use a tool that's best suited for the unique challenges of writing code. There are plenty of options to choose from, but many developers rely on Visual Studio Code, or VS Code. It's free and available on Windows, macOS, and Linux. It has many features that make it easy to navigate and commit code for all programming languages.
 
 Microsoft provides a Python extension for Visual Studio Code. This extension offers features like syntax highlighting, code navigation, code formatting support, and more. One feature in particular, named IntelliSense, is invaluable when you're getting started. Intellisense provides autocomplete and contextual help as you type. You'll install that in the next unit.
 
@@ -18,7 +18,7 @@ Microsoft provides a Python extension for Visual Studio Code. This extension off
 
 ## Install Visual Studio Code on Windows
 
-This section walks you through downloading the VS Code installer from the Visual Studio Code website.
+In this section, you'll learn how to download the VS Code installer from the Visual Studio Code website.
 
 1. In your browser, navigate to [Visual Studio Code download page](https://code.visualstudio.com/Download?azure-portal=true).
 
@@ -27,7 +27,7 @@ This section walks you through downloading the VS Code installer from the Visual
 1. Select and download the Windows installer. Most browsers give you the option to either save the file to your local computer (usually in your Downloads folder) or immediately run the installer file.
 
     > [!NOTE]
-    > If you downloaded the installer, you may need to open File Explorer and navigate to your _Downloads_ folder, or wherever your web browser saved the installer file in order to launch it.
+    > After downloading the installer, you may need to open File Explorer and navigate to the location your web browser installed it. The most common location is the _Downloads_ folder.
 
 1. Double-click the installer file to start the installation process.
 
@@ -52,7 +52,7 @@ For instructions for using a package manager, such as APT or YUM, to install Vis
 1. Under the Linux logo, select either the **.deb** installer (for .deb-based package managers) or the **.rpm** installer (for .rpm-based package managers).
 
     > [!NOTE]
-    > If you downloaded the installer, you may need to open your file manager and navigate to your Downloads folder, or wherever your web browser saved the installer file.
+    > After downloading the installer, you may need to open File Explorer and navigate to the location your web browser installed it. The most common location is the _Downloads_ folder.
 
 1. Double-click the installer file to start the installation. On Ubuntu and Fedora, double-clicking the installer opens the software application. This application provides a convenient way to view details about the application you're about to install. In this case, select **Install**.
 

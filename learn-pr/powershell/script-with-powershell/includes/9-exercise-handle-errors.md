@@ -1,6 +1,6 @@
-In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
+In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
 
-In this exercise, you'll use a `Try/Catch` block to ensure the script stops responding early if a certain condition isn't met. You'll again work with your backup script. 
+In this exercise, you'll use a `Try/Catch` block to ensure the script stops responding early if a certain condition isn't met. You'll again work with your backup script.
 
 Say you've noticed that you sometimes specify an erroneous path, which causes backup of files that shouldn't be backed up. You decide to add some error management.
 
@@ -25,7 +25,7 @@ Say you've noticed that you sometimes specify an erroneous path, which causes ba
     code Backup.ps1
     ```
 
-    Now that you have an editor running, add the required code. Paste this code into the editor:
+    Now that you have an editor running, add the required code. Paste this code into the editor and save the file:
 
     ```powershell
     Param(
@@ -68,7 +68,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
 
    You've added a _switch parameter_. If this parameter is present when the script is invoked, you perform the check on the content. After that, you can determine if a backup file should be created.
 
-1. Under the `Param` section, add this code:
+1. Under the `Param` section, add this code, then save the file:
 
    ```powershell
    If ($PathIsWebApp -eq $True) {

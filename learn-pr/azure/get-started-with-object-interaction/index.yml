@@ -19,7 +19,7 @@ abstract: |
   - Learn how to interact with holograms using UI menus and buttons
   - Learn how to add text elements
   - Learn how to spawn tooltips on objects dynamically
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/get-started-with-object-interaction-tutorials-mrtk.svg
 levels:
 - beginner
 roles:

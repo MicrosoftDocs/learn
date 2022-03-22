@@ -47,15 +47,13 @@ With all the additional benefits, including the guaranteed performance character
 
 The following table provides a comparison of Ultra disk, Premium SSD, Standard SSD, and Standard HDD to help you decide what to use.
 
-
-|   | Ultra Disk   | Premium SSD   | Standard SSD   | Standard HDD   |
+| | Ultra Disk   | Premium SSD   | Standard SSD   | Standard HDD   |
 |---------|---------|---------|---------|---------|
-|Disk type   |SSD   |SSD   |SSD   |HDD   |
-|Scenario   |IO-intensive workloads such as SAP HANA, top tier databases (for example, SQL, Oracle), and other transaction-heavy workloads.   |Production and performance sensitive workloads   |Web servers, lightly used enterprise applications and dev/test   |Backup, non-critical, infrequent access   |
-|Max disk size   |65,536 gibibyte (GiB)    |32,767 GiB    |32,767 GiB   |32,767 GiB   |
-|Max throughput   |2,000 MiB/s    |900 MiB/s   |750 MiB/s   |500 MiB/s   |
-|Max IOPS   |160,000    |20,000   |6,000   |2,000   |
-
+| **Disk type** |SSD   |SSD   |SSD   |HDD   |
+| **Scenario** |IO-intensive workloads such as SAP HANA, top tier databases (for example, SQL, Oracle), and other transaction-heavy workloads.   |Production and performance sensitive workloads   |Web servers, lightly used enterprise applications and dev/test   |Backup, non-critical, infrequent access   |
+| **Max disk size** |65,536 gibibyte (GiB)    |32,767 GiB    |32,767 GiB   |32,767 GiB   |
+| **Max throughput** |2,000 MiB/s    |900 MiB/s   |750 MiB/s   |500 MiB/s   |
+| **Max IOPS** |160,000    |20,000   |6,000   |2,000   |
 
 There is more detail on disk performance below.
 

@@ -14,7 +14,7 @@ abstract: |
   By the end of this module you'll be able to:
   - Import the MRTK into your Unity Windows Mixed Reality Project.
   - Configure basic object interactions without the need to create your own custom scripts.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/learn-introduction-tutorials-mrtk.svg
 levels:
 - beginner
 roles:

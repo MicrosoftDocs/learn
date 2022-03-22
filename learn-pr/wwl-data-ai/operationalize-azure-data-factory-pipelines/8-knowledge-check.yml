@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/05/2022
+  ms.date: 03/22/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ quiz:
     - content: "Team Foundation Server."
       isCorrect: false
       explanation: "Incorrect. Azure Data Factory does not integrate with Team Foundation Server."
-    - content: "Source Safe ."
+    - content: "Source Safe."
       isCorrect: false
       explanation: "Incorrect. Source Safe does not integrate with Team Foundation Server."
     - content: "Git repositories."

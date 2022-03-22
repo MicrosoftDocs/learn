@@ -26,7 +26,7 @@ Now you can test your deployed service from a client application - in this case,
 4. With the **Consume** page for the **predict-auto-price** service page open in your browser, open a new browser tab and open a second instance of [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true). Then in the new tab, view the **Notebooks** page (under **Author**).
 5. Navigate to the left-hand pane and click on **Notebooks**. Then use the **&#128459;** button to create a new file with the following settings:
     - **File location**: Users/*your user name*
-    - **File name**: Test-Autos
+    - **File name**: Test-Autos.ipynb
     - **File type**: Notebook
     - **Overwrite if already exists**: Selected
 

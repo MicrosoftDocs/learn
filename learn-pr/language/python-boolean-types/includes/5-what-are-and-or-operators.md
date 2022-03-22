@@ -1,4 +1,4 @@
-You might occasionally want to combine test expressions to evaluate multiple conditions in one `if`, `elif`, or `else` statement. To do this, you use the Boolean operators `and` and `or`. 
+You might occasionally want to combine test expressions to evaluate multiple conditions in one `if`, `elif`, or `else` statement. In this case, you'd use the Boolean operators `and` and `or`. 
 
 ## The `or` operator
 
@@ -7,7 +7,7 @@ You can connect two Boolean, or test, expressions by using the Boolean `or` oper
 ```python
 a = 23
 b = 34
-if a = 34 or b = 34:
+if a == 34 or b == 34:
     print(a + b)
 ```
 
@@ -26,7 +26,7 @@ You can also connect two test expressions by using the Boolean `and` operator. B
 ```python
 a = 23
 b = 34
-if a = 34 and b = 34:
+if a == 34 and b == 34:
     print (a + b)
 ```
 

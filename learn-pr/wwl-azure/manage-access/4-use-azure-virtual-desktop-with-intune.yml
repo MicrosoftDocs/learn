@@ -4,13 +4,12 @@ title: Using Azure Virtual Desktop with Microsoft Intune
 metadata:
   title: Using Azure Virtual Desktop with Microsoft Intune
   description: "Using Azure Virtual Desktop with Microsoft Intune"
-  ms.date: 12/09/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 7
 content: |

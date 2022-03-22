@@ -1,40 +1,38 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure
 metadata:
-  title: Explore provisioning and deploying relational database services in Azure
-  description: "Explore provisioning and deploying relational database services in Azure"
-  ms.date: 11/12/2021
+  title: Explore relational database services in Azure
+  description: "Explore relational database services in Azure"
+  ms.date: 03/11/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore provisioning and deploying relational database services in Azure
-summary: Learn how to provision and configure Azure SQL Database, Azure Database for PostgreSQL, and Azure Database for MySQL.
+title: Explore relational database services in Azure
+summary: Microsoft Azure provides multiple services for relational databases. You can choose the relational database management system that's best for your needs, and host relational data in the cloud.
 abstract: |
-  In this module, you will:
-  * Provision relational data services
-  * Configure relational data services
-  * Explore basic connectivity issues
-  * Explore data security
+  In this module, you'll learn how to:
+  - Identify options for Azure SQL services
+  - Identify options for open-source databases in Azure
+  - Provision a database service on Azure
 prerequisites: |
-  None
+  Before starting this module, you should have a fundamental understanding of relational data concepts and some familiarity with Microsoft Azure and the Azure portal.
 iconUrl: /learn/achievements/explore-provision-deploy-relational-database-offerings-azure.svg
 levels:
 - beginner
 roles:
-- administrator
-- business-user
+- data-analyst
 - data-engineer
+- database-administrator
+- student
 products:
 - azure
 units:
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure.introduction
-- learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-provisioning-relational-data-services
-- learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-provisioning-azure-sql-database
-- learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-provisioning-postgresql-mysql
-- learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-configuring-relational-data-services
-- learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-configuring-azure-sqldb
+- learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-azure-sql
+- learn.wwl.explore-provision-deploy-relational-database-offerings-azure.azure-open-source-databases
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure.exercise-provision-relational-azure-data-services
+- learn.wwl.explore-provision-deploy-relational-database-offerings-azure.knowledge-check
 - learn.wwl.explore-provision-deploy-relational-database-offerings-azure.summary
 badge:
   uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.badge

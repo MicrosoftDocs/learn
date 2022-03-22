@@ -550,7 +550,7 @@ In this section, you will create a test VM, and then test the load balancer.
         Size
       :::column-end:::
       :::column:::
-        **Standard\_DS1\_v2 - 1 vcpu, 3.5 GiB memory**
+        **Standard_DS2_v3 - 2 vcpu, 8 GiB memory**
       :::column-end:::
     :::row-end:::
     :::row:::

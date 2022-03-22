@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/22/2022
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -32,13 +32,13 @@ quiz:
     choices:
     - content: "Accounts in the same organizational directory."
       isCorrect: false
-      explanation: "Incorrect. Who can use it are accounts in the same organizational directory, accounts in any organizational directory, accounts in any organizational directory, and Microsoft Accounts (personal) and Microsoft Accounts (Personal accounts only)."
+      explanation: "Incorrect. Who can use it are accounts in the same organizational directory, accounts in any organizational directory, and Microsoft Accounts (personal) and Microsoft Accounts (Personal accounts only)."
     - content: "Azure DevOps groups."
       isCorrect: true
-      explanation: "Correct. Who can use it are accounts in the same organizational directory, accounts in any organizational directory, accounts in any organizational directory, and Microsoft Accounts (personal) and Microsoft Accounts (Personal accounts only)."
+      explanation: "Correct. Who can use it are accounts in the same organizational directory, accounts in any organizational directory, and Microsoft Accounts (personal) and Microsoft Accounts (Personal accounts only)."
     - content: "Accounts in any organizational directory and Microsoft Accounts (personal)."
       isCorrect: false
-      explanation: "Incorrect. Who can use it are accounts in the same organizational directory, accounts in any organizational directory, accounts in any organizational directory, and Microsoft Accounts (personal) and Microsoft Accounts (Personal accounts only)."
+      explanation: "Incorrect. Who can use it are accounts in the same organizational directory, accounts in any organizational directory, and Microsoft Accounts (personal) and Microsoft Accounts (Personal accounts only)."
   - content: "Which of the following choices isn't a type of managed identities?"
     choices:
     - content: "Organization-assigned."

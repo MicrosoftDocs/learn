@@ -1,4 +1,4 @@
-You now understand what Bicep registries are, and how they can be helpful when sharing modules in your organization. In this unit, you'll learn how to publish a module to a private registry.
+You now understand what Bicep registries are, and how they can be helpful when you're sharing modules in your organization. In this unit, you'll learn how to publish a module to a private registry.
 
 ## Module paths
 
@@ -6,16 +6,16 @@ When you've worked with modules in the past, you've probably used the module's f
 
 Here's an example path for a module in a private Azure container registry:
 
-:::image type="content" source="../media/4-private-module-path.png" alt-text="Diagram showing a module path." border="false":::
+:::image type="content" source="../media/4-private-module-path.png" alt-text="Diagram that shows a module path." border="false":::
 
 The path contains four segments:
 
-- **Scheme**: Bicep supports several types of module, which are called *schemes*. When you work with Bicep registries, the scheme is `br`.
-- **Registry**: The name of the registry that contains the module you want to use. In the example above, the registry name is `toycompany.azurecr.io`, which is the name of the Azure container registry.
-- **Module identifier**: The full path to the module within the registry.
+- **Schema**: Bicep supports several module types, which are called *schemas*. When you work with Bicep registries, the schema is `br`.
+- **Registry**: This is the name of the registry that contains the module you want to use. In the preceding example, the registry name is `toycompany.azurecr.io`, which is the name of the container registry.
+- **Module identifier**: This is the full path to the module within the registry.
 - **Tag**: Tags typically represent versions of modules, because a single module can have multiple versions published. You'll learn more about tags and versions shortly.
 
-When you publish your own module identifier, use a meaningful module identifier that indicates the purpose of the module. You can optionally use *namespaces*, where you use slashes (`/`) to distinguish between parts of a name. However, Azure Container Registry and Bicep don't understand a hierarchy and they treat the module identifier as a single value.
+When you publish your own module identifier, use a meaningful identifier that indicates the purpose of the module. You can optionally use *namespaces*, where you use slashes (`/`) to distinguish between parts of a name. However, Azure Container Registry and Bicep don't understand a hierarchy. They treat the module identifier as a single value.
 
 ## Tags and versions
 
@@ -25,10 +25,10 @@ It's a good idea to carefully plan how you'll version your modules. Two key deci
 
 ### Versioning schemes
 
-Your versioning scheme determines how you generate version numbers. Common versioning schemes include:
+Your versioning scheme determines how you generate version numbers. Common versioning schemas include:
 
 - *Basic integers* can be used as version numbers. For example, your first version might be called `1`, your second version `2`, and so forth. Or, you might add a prefix to each version number, such as `v1` and `v2`.
-- *Dates* also make good version numbers. For example, if you publish the first version of your module on January 16, 2021, you might name the version `2021-01-16` (using *yyyy-mm-dd* format). When you publish another version on March 3, you could name it `2021-03-03`.
+- *Dates* also make good version numbers. For example, if you publish the first version of your module on January 16, 2022, you might name the version `2022-01-16` (using *yyyy-mm-dd* format). When you publish another version on March 3, you could name it `2022-03-03`.
 - *Semantic versioning* is a versioning system often used in software, where a single version number contains multiple parts. Each part signals different information about the nature of the change.
 
 Although you can use any versioning scheme you like, it's a good idea to choose something that will be sorted into a meaningful order. That's why numbers and dates are often good choices.
@@ -38,7 +38,7 @@ Although you can use any versioning scheme you like, it's a good idea to choose 
 
 ### Versioning policies
 
-Modules give you the flexibility to choose when to create new versions or to update an existing version. For example, you can effectively opt out of versioning by creating and publishing a single version named `latest`. Whenever you need to change your module, you simply update that version. Although this policy works, it's not a good practice.
+Modules give you the flexibility to choose when to create new versions or update an existing version. For example, you can effectively opt out of versioning by creating and publishing a single version named `latest`. Whenever you need to change your module, you simply update that version. Although this policy works, it's not a good practice.
 
 Conversely, if you make a small change to an existing module that doesn't affect how it's used, creating a new version is probably not a good idea. You would need to communicate the new version number to anyone who uses the module.
 
@@ -49,7 +49,7 @@ Here's a versioning policy that often works well:
 - Delete old versions when they're no longer relevant or when you don't want anyone to use them.
 
 > [!TIP]
-> Consider the users of your module, and make sure you think about what they expect will happen. If a user uses your module multiple times and gets one result, and then uses it again after a hotfix and gets a different result, they'll probably be surprised. Try to avoid surprising your users.
+> Consider the users of your module, and be sure to think about what they expect will happen. If someone uses your module multiple times and gets one result, and then uses it again after a hotfix and gets a different result, they'll probably be surprised. Try to avoid surprising your users.
 
 ## Publish your module
 
@@ -75,7 +75,7 @@ bicep publish `
 
 ::: zone-end
 
-The publish operation performs the same validation steps that happen when you build or deploy a Bicep file, including:
+The publish operation performs the same validation steps that happen when you build or deploy a Bicep file. These steps include:
 
 - Checking that your code doesn't have any syntactical errors.
 - Verifying that you're specifying valid resource definitions.

@@ -19,6 +19,8 @@ To create an Azure Bastion resource:
     | Resource group | Select an existing resource group or create a new one. |
     | Name | Specify a name for the new Bastion resource. |
     | Region | Select the same region where Azure VMware Solution is deployed. |
+    | Tier | Select **Basic**. This provides the functionality we need for this example. Bastion can always be upgraded to **Standard** and have more instance counts. |
+    | Instance Count | Defaults to 2 when **Basic** is chosen. |
     | Virtual network | Select the virtual network that was created when you deployed Azure VMware Solution. |
     | Subnet | Azure Bastion requires a dedicated subnet. For the virtual network created during the Azure VMware Solution deployment, select **Manage subnet configuration** to create the dedicated subnet. Select **+Subnet**, and then create a subnet with the name **AzureBastionSubnet** and at /27 or higher. |
     | Public IP address | The public IP allows RDP and SSH over port 443 to Azure Bastion. Create a new public IP and place the resource in the same region as both Azure VMware Solution and Azure Bastion. This new public IP is separate from the Azure VMware Solution deployment. |

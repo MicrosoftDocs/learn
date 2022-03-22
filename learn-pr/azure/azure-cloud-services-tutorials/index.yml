@@ -16,7 +16,7 @@ abstract: |
   - Use Azure Custom Vision to train and detect images in the HoloLens 2 application
   - Integrating Azure Storage as the persistence solution for the demo application.
   - Learn basics of Azure Bot Service with LUIS
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-cloud-services-tutorials-mrtk.svg
 levels:
 - beginner
 roles:

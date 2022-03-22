@@ -28,6 +28,7 @@ roles:
 - student
 products:
 - azure
+- azure-cloud-services
 units:
 - learn.azure.intro-to-azure-fundamentals.introduction
 - learn.azure.intro-to-azure-fundamentals.what-is-cloud-computing

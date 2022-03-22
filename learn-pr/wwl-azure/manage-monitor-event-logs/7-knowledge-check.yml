@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/29/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An administrator has created an event log subscription. The subscription is collector iniated. The computers from which event logs will be collected are all running Windows Server 2022. What command does the administrator need to run on these source computers?"
+  - content: "An administrator has created an event log subscription. The subscription is collector initiated. The computers from which event logs will be collected are all running Windows Server 2022. What command does the administrator need to run on these source computers?"
     choices:
     - content: "The administrator needs to run `Wecutil qc` on all source computers."
       isCorrect: false

@@ -1,8 +1,8 @@
-You've created a private registry for your toy company to use. In this exercise, you publish two modules to your private registry.
+You've created a private registry for your toy company to use. In this exercise, you will:
 
 > [!div class="checklist"]
 > * Create a module for the website resources.
-> * Create another module for the CDN resources.
+> * Create another module for the resources in the CDN.
 > * Publish the modules to your registry.
 > * List the modules in the registry.
 
@@ -26,7 +26,7 @@ You previously created a module that deploys a website. Here, you save the modul
 
 ## Create a module for a CDN
 
-Similarly to the previous steps, you save a precreated module file so that you can publish it soon.
+Similar to the previous steps, you save a precreated module file so that you can publish it soon.
 
 1. Create a new file named *cdn.bicep*.
 
@@ -40,7 +40,7 @@ Similarly to the previous steps, you save a precreated module file so that you c
 
 ::: zone pivot="cli"
 
-1. In the Visual Studio Code **Terminal**, run the following commands. Make sure to replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
+1. In the Visual Studio Code terminal, run the following commands. Replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
 
    ```azurecli
    az bicep publish \
@@ -74,7 +74,7 @@ Similarly to the previous steps, you save a precreated module file so that you c
 
 ::: zone pivot="powershell"
 
-1. In the Visual Studio Code **Terminal**, run the following commands. Make sure to replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
+1. In the Visual Studio Code terminal, run the following commands. Replace `YOUR_CONTAINER_REGISTRY_NAME` with the name of your private registry.
 
    ```bash
    bicep publish website.bicep \

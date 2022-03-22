@@ -117,7 +117,7 @@ Several steps are required to assemble the master-detail navigation UI. Let's se
 
 1. Choose one of the split options for your master-detail display. For master-detail navigation, `Split` and `SplitOnLandscape` are the most common choices.
 
-    |   | Portrait | Landscape |
+    | Split options | Portrait | Landscape |
     |---|----------|-----------|
     | `Default` | pop-over | split |
     | `Popover` | pop-over | pop-over |

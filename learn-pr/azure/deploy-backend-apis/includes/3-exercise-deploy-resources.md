@@ -149,10 +149,6 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
 
-1. Edit the file **`azuresqldatabase.yml`**, and update the server-name `bus-server.database.windows.net` to the name of your Azure SQL Database logical server (for example, **bus-server123456.database.windows.net**).
-
-1. Save the file.
-
 1. Select the **Source Control** icon on the left-hand taskbar.
 
 1. In the *Message* box, enter "Enable database yaml" or some other message and select the **checkmark**.

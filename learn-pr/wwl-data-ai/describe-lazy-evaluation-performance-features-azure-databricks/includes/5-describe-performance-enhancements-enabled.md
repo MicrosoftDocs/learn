@@ -129,8 +129,8 @@ Next, it asks the question, what do I need to do first?
 
 It then proceeds to determine which transformation precedes this step until it identifies the first transformation.
 
-|Step |Transformation| |
-|----:|--------------|-|
+|Step |Transformation|Dependency|
+|----:|--------------|---|
 | 7   | Write   | Depends on #6 |
 | 6   | Filter  | Depends on #5 |
 | 5   | Select  | Depends on #4 |
@@ -152,8 +152,8 @@ Take another look at our example:
 - Because the transformations are immutable, no aspect of our lineage can change.
 - That means the results of our last shuffle (if still available) can be reused.
 
-|Step |Transformation| |
-|----:|--------------|-|
+|Step |Transformation|Dependency|
+|----:|--------------|---|
 | 7   | Write   | Depends on #6 |
 | 6   | Filter  | Depends on #5 |
 | 5   | Select  | Depends on #4 |
@@ -166,8 +166,8 @@ In this case, what we end up executing is only the operations from **Stage #2**.
 
 This saves us the initial network read and all the transformations in **Stage #1**
 
-|Step |Transformation|   |
-|----:|---------------|:-:|
+|Step |Transformation|Dependency|
+|----:|---------------|:---:|
 | 1   | Read          | *skipped* |
 | 2   | Select        | *skipped* |
 | 3   | Filter        | *skipped* |
@@ -191,8 +191,8 @@ However, we cache data to explicitly accomplish the same thing that happens inad
 
 In this case, the lineage plays the same role. Take for example:
 
-|Step |Transformation| |
-|----:|--------------|-|
+|Step |Transformation|Dependency|
+|----:|--------------|---|
 | 7   | Write   | Depends on #6 |
 | 6   | Filter  | Depends on #5 |
 | 5   | Select  | <<< cache |
@@ -207,8 +207,8 @@ We never even get to the part of the lineage that involves the shuffle, let alon
 
 Instead, we pick up with the cache and resume execution from there:
 
-|Step |Transformation|   |
-|----:|---------------|:-:|
+|Step |Transformation|Dependency|
+|----:|---------------|:---:|
 | 1   | Read          | *skipped* |
 | 2   | Select        | *skipped* |
 | 3   | Filter        | *skipped* |

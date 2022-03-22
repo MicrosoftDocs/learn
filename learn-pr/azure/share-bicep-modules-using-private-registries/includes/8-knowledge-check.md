@@ -6,4 +6,4 @@ module myModule 'br:toycompany.azurecr.io/mymodule' = {
 }
 ```
 
-You sign in to Azure with the Azure CLI.
+You sign in to Azure by using the Azure CLI.

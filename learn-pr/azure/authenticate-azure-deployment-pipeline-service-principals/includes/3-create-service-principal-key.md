@@ -39,7 +39,7 @@ When you create a service principal, you generally ask Azure to create a key at 
 > [!NOTE]
 > Do you remember our earlier discussion on how service principals work? Keys are stored as part of the application registration object. If you open the Azure portal, look within the Azure AD configuration, and then go to the application registrations, you can create and delete keys there too.
 
-Azure shows you the key you when you create the service principal. This is the only time that Azure will ever show you the key. After that, you can't get it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. Don't share the key by email or another non-secure means. If you lose the key, you must delete it and create a new one.
+Azure shows you the key when you create the service principal. This is the only time that Azure will ever show you the key. After that, you can't get it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. Don't share the key by email or another non-secure means. If you lose the key, you must delete it and create a new one.
 
 ## Manage service principals for Azure Pipelines and GitHub Actions
 
@@ -58,6 +58,8 @@ To create a service principal and a key, use the `az ad sp create-for-rbac` comm
 
 ```azurecli
 az ad sp create-for-rbac \
+  --role Contributor \
+  --scopes /subscriptions/<SUBSCRIPTION-ID> \
   --name MyPipeline
 ```
 

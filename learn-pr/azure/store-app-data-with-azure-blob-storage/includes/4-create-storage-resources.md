@@ -12,7 +12,7 @@ For apps that rely on a known set of containers with hard-coded or preconfigured
 
 ## Exercise
 
-You're going to complete an unfinished app by adding code to use Azure Blob Storage. This exercise is more about exploring the Blob Storage API than it is about designing an organization and naming scheme, but here's a quick overview of the app and how it stores data.
+You're going to complete an unfinished app by adding code to use Azure Blob Storage. This exercise is more about exploring the Blob Storage API than about designing an organization and naming scheme, but here's a quick overview of the app and how it stores data.
 
 ::: zone pivot="csharp"
 

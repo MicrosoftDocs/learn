@@ -3,7 +3,7 @@ uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search
 metadata:
   title: Search Azure Cosmos DB SQL API data with Azure Cognitive Search
   description: "Index Azure Cosmos DB SQL API data with Azure Cognitive Search."
-  ms.date: 12/09/2021
+  ms.date: 03/09/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ abstract: |
   - Create an indexer to migrate data from Azure Cosmos DB SQL API to an Azure Cognitive Search index
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-cognitive-search.svg
+iconUrl: /learn/achievements/azure-cosmos-db-sql-api-cognitive-search.svg
 levels:
 - intermediate
 roles:

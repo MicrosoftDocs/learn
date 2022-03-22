@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-network-monitoring
 metadata:
   title: Design and implement network monitoring
   description: "You will learn to design and implement network monitoring solutions such as Azure Monitor and Network watcher."
-  ms.date: 01/18/2022
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial

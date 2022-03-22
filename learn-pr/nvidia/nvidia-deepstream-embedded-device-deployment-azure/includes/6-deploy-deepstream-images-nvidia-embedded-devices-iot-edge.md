@@ -34,7 +34,42 @@ You've published a containerized DeepStream Graph Composer workload to your cont
 
    :::image type="content" source="../media/iot-hub-add-module-uri.png" alt-text="Screenshot that shows entering a name and image U R I for the IoT Edge module." lightbox="../media/iot-hub-add-module-uri.png":::
 
-1. When you're finished, select **Review + create**:
+1. Next, select the **Container Create Options** tab to enable support for GPU acceleration and also to provide access to the X11 socket to allow for rendering video output from the container by adding the following:
+
+    ```Output
+    {
+    "NetworkingConfig": {
+        "EndpointsConfig": {
+            "host": {}
+        }
+    },
+    "HostConfig": {
+        "DeviceRequests": [
+            {
+                "Count": -1,
+                "Capabilities": [
+                    [
+                        "gpu"
+                    ]
+                ]
+            }
+        ],
+        "NetworkMode": "host",
+        "Binds": [
+            "/tmp/.X11-unix/:/tmp/.X11-unix/",
+            "/tmp/argus_socket:/tmp/argus_socket"
+        ]
+    }
+    }
+    ```
+
+    When you're finished, select **Update**:
+
+    :::image type="content" source="../media/iot-hub-container-create-options.png" alt-text="Screenshot that shows the Container Create options in the Modules pane." lightbox="../media/iot-hub-container-create-options.png":::
+
+
+
+1. You will return to the **Set Modules on device page**, once there select **Review + create**:
 
    :::image type="content" source="../media/iot-hub-module-review.png" alt-text="Screenshot that shows the Review plus create button highlighted on the Modules pane." lightbox="../media/iot-hub-module-review.png":::
 
@@ -42,67 +77,75 @@ You've published a containerized DeepStream Graph Composer workload to your cont
 
     ```Output
     {
-        "modulesContent": {
-            "$edgeAgent": {
-                "properties.desired": {
-                    "modules": {
-                        "deepstream_test4_jetson": {
-                            "settings": {
-                                "image": "<Login Server>/deepstream_test4_jetson:v1",
-                                "createOptions": ""
-                            },
-                            "type": "docker",
-                            "status": "running",
-                            "restartPolicy": "always",
-                            "version": "1.0"
+    "modulesContent": {
+        "$edgeAgent": {
+            "properties.desired": {
+                "modules": {
+                    "deepstream_test4_jetson": {
+                        "settings": {
+                            "image": "<Login Server>.azurecr.io/deepstream_test4_jetson:v1",
+                            "createOptions": "{\"NetworkingConfig\":{\"EndpointsConfig\":{\"host\":{}}},\"HostConfig\":{\"DeviceRequests\":[{\"Count\":-1,\"Capabilities\":[[\"gpu\"]]}],\"NetworkMode\":\"host\",\"Binds\":[\"/tmp/.X11-unix/:/tmp/.X11-unix/\",\"/tmp/argus_socket:/tmp/argus_socket\"]}}"
+                        },
+                        "type": "docker",
+                        "version": "1.0",
+                        "env": {
+                            "DISPLAY": {
+                                "value": ":0"
+                            }
+                        },
+                        "status": "running",
+                        "restartPolicy": "always"
+                    }
+                },
+                "runtime": {
+                    "settings": {
+                        "minDockerVersion": "v1.25",
+                        "registryCredentials": {
+                            "<Your Registry Name>": {
+                                "address": "<Login Server>.azurecr.io",
+                                "password": "<Your Password>",
+                                "username": "<Your Username>"
+                            }
                         }
                     },
-                    "runtime": {
+                    "type": "docker"
+                },
+                "schemaVersion": "1.1",
+                "systemModules": {
+                    "edgeAgent": {
                         "settings": {
-                            "minDockerVersion": "v1.25",
-                            "registryCredentials": {
-                                "<Your Registry Name>": {
-                                    "address": "<Login Server>.azurecr.io",
-                                    "password": "<Your Password>",
-                                    "username": "<Your Username>"
-                                }
-                            }
+                            "image": "mcr.microsoft.com/azureiotedge-agent:1.1",
+                            "createOptions": ""
                         },
                         "type": "docker"
                     },
-                    "schemaVersion": "1.1",
-                    "systemModules": {
-                        "edgeAgent": {
-                            "settings": {
-                                "image": "mcr.microsoft.com/azureiotedge-agent:1.1",
-                                "createOptions": ""
-                            },
-                            "type": "docker"
+                    "edgeHub": {
+                        "settings": {
+                            "image": "mcr.microsoft.com/azureiotedge-hub:1.1",
+                            "createOptions": "{\"HostConfig\":{\"PortBindings\":{\"5671/tcp\":[{\"HostPort\":\"5671\"}],\"8883/tcp\":[{\"HostPort\":\"8883\"}],\"443/tcp\":[{\"HostPort\":\"443\"}]}}}"
                         },
-                        "edgeHub": {
-                            "settings": {
-                                "image": "mcr.microsoft.com/azureiotedge-hub:1.1",
-                                "createOptions": "{\"HostConfig\":{\"PortBindings\":{\"443/tcp\":[{\"HostPort\":\"443\"}],\"5671/tcp\":[{\"HostPort\":\"5671\"}],\"8883/tcp\":[{\"HostPort\":\"8883\"}]}}}"
-                            },
-                            "type": "docker",
-                            "status": "running",
-                            "restartPolicy": "always"
-                        }
-                    }
-                }
-            },
-            "$edgeHub": {
-                "properties.desired": {
-                    "routes": {
-                        "route": "FROM /messages/* INTO $upstream"
-                    },
-                    "schemaVersion": "1.1",
-                    "storeAndForwardConfiguration": {
-                        "timeToLiveSecs": 7200
+                        "type": "docker",
+                        "status": "running",
+                        "restartPolicy": "always"
                     }
                 }
             }
+        },
+        "$edgeHub": {
+            "properties.desired": {
+                "routes": {
+                    "route": "FROM /messages/* INTO $upstream"
+                },
+                "schemaVersion": "1.1",
+                "storeAndForwardConfiguration": {
+                    "timeToLiveSecs": 7200
+                }
+            }
+        },
+        "deepstream_test4_jetson": {
+            "properties.desired": {}
         }
+    }
     }
     ```
 

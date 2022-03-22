@@ -20,5 +20,4 @@ In this module, you learned how to use Azure Blob Storage to store web app data.
 - [Configure an ASP.NET Core app for Azure App Service](/azure/app-service/configure-language-dotnetcore)
 - [Configure a Java app for Azure App Service](/azure/app-service/configure-language-java)
 
-
 [!include[](../../../includes/azure-sandbox-cleanup.md)]

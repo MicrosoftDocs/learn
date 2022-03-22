@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Custom Commands
   description: Custom Commands makes it easy to build voice commanding apps optimized for voice-first interaction experiences. It provides a straightforward authoring and hosting experience on a single interface, helping you to focus on building the best solution for your voice-commanding scenarios.
   ms.date: 03/14/2021
-  author: tomreidnz
-  ms.author: jasdeb
+  author: eric-urban
+  ms.author: eur
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Custom Commands 

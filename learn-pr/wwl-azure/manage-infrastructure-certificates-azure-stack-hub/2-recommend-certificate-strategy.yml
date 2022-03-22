@@ -4,13 +4,12 @@ title: Recommend certificate strategy
 metadata:
   title: Recommend certificate strategy
   description: "Recommend certificate strategy"
-  ms.date: 12/07/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
