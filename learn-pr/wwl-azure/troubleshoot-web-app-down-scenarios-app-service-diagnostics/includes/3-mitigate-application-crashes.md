@@ -6,7 +6,9 @@ Crash Monitoring is a feature in Azure App Service Diagnostics that allows users
 
 To configure Crash Monitoring, first select an existing storage account in which the collected info will be saved. Note that you are advised to use one storage account per app and refrain from modifying data on the storage account while the tool is running. Configure the start time and end time using the time picker. You can choose the number of dumps you want to collect. In this scenario, we will choose 4. Then, select Start Monitor. Note when you start the monitor, this will update the app settings to enable Crash Monitoring and restart the app. Now the configuration is completed. 
 
+
 > [!VIDEO https:///www.microsoft.com/videoplayer/embed/RE4QU14]
+
 ## Analyze the collected memory dumps and call stack information
 
 After some time, the tool may detect a crash and automatically collect a call stack and a memory dump at the time of the crash. This could take up to 15-20 minutes for this insight to populate after a crash. 
@@ -17,5 +19,3 @@ To view the collected information, click on the call stack to view it on the web
 
 :::image type="content" source="../media/asd-module-troubleshoot-web-app-down-scenarios-with-app-service-diagnostics-clean-copy-22-03.png" alt-text="<Screenshot of the resulting call stack and exception message from the memory dump file via Crash Monitoring.>"::: 
 
-
- 

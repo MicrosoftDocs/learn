@@ -50,14 +50,3 @@ quiz:
     - content: "It is a feature within App Service Diagnostics that can only be accessed through Configuration and Management for troubleshooting potential causes of an issue."
       isCorrect: false
       explanation: "That's incorrect. Ask Genie can be accessed anywhere within App Service Diagnostics."
-  - content: "Question 4"
-    choices:
-    - content: "Incorrect answer 1."
-      isCorrect: false
-      explanation: "That's incorrect. Incorrect answer description 1."
-    - content: "Incorrect answer 2."
-      isCorrect: false
-      explanation: "That's incorrect. Incorrect answer description 2."
-    - content: "Correct answer."
-      isCorrect: true
-      explanation: "That's correct. Correct answer description."
