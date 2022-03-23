@@ -23,9 +23,9 @@ Microsoft Defender for Cloud also provides hardening recommendations based on an
 
 :::image type="content" source="../media/3-security-center-recommendations.png" alt-text="Screenshot showing part of Microsoft Defender for Cloud with recommendations as to what needs to be fixed to maintain maximum protection.":::
 
-The following interactive click-through demonstrates how you use secure score and the hardening recommendations in Microsoft Defender for Cloud.  Select the image below to get started.
+The following interactive click-through demonstrates how you use secure score and the hardening recommendations in Microsoft Defender for Cloud.  Select the image below to get started and follow the prompts on the screen.
 
-[![Interactive guide](../media/4-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP03M02%20-%20Use%20Azure%20secure%20score%20to%20improve%20your%20security%20posture/index.html?azure-portal=true)
+[![Interactive guide](../media/2-defender-cloud-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP03M02-Use-Azure-secure-score-to-improve-your-security-posture/index.html?azure-portal=true)
 
 
 ### Cloud workload protection (CWP)
