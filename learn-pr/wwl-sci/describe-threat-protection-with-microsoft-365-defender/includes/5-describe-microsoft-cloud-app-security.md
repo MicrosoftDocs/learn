@@ -39,11 +39,9 @@ Defender for Cloud Apps Security delivers on the components of the framework thr
 
 :::image type="content" source="../media/mcas-inline.png" lightbox="../media/mcas-expanded.png" alt-text="Microsoft Defender for Cloud Apps dashboard.":::
 
-In this interactive guide, you’ll get an introduction to the capabilities available with Microsoft Defender for Cloud Apps, including Discover, Investigate, Control, and Alerts.
+In this interactive guide, you’ll get an introduction to the capabilities available with Microsoft Defender for Cloud Apps. Select the image below to get started and follow the prompts on the screen.
 
-To work through this guide, follow the prompts on the screen.
-
-[![Interactive guide](../media/6-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP03M04%20-%20Describe%20threat%20protection%20with%20Microsoft%20365/index.html?azure-portal=true)
+[![Interactive guide](../media/5-defender-cloud-apps-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP03M04-Describe-threat-protection-with-Microsoft-365/index.html?azure-portal=true)
 
 ## Office 365 Cloud App Security
 
