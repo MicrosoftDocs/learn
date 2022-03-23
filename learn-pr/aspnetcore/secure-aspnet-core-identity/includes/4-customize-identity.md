@@ -59,8 +59,9 @@ UI changes are also required to collect the additional user profile information.
 
 1. In the `Configure` method of *:::no-loc text="Areas/Identity/IdentityHostingStartup.cs":::*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted change, and save the file.
 
+<!-->
     [!code-csharp[](../code/areas/identity/identityhostingstartup.cs?name=snippet_configureadddefaultidentity&highlight=1)]
-
+-->
 1. Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to incorporate the following highlighted changes. Save your changes.
 
     [!code-cshtml[](../code/pages/shared/4-loginpartial.cshtml?range=1-6&highlight=2-4)]

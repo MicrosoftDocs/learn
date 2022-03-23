@@ -4,7 +4,7 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 
 ## Obtain and open the starter project
 
-1. In a terminal window, run the following commands to obtain the starter project:
+1. In a terminal window, run the following command to obtain the starter project:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity
@@ -59,11 +59,11 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 1. Add the following NuGet packages to the project:
 
     ```dotnetcli
-    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.2 && \
-        dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 3.1.3 && \
-        dotnet add package Microsoft.AspNetCore.Identity.UI --version 3.1.3 && \
-        dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.3 && \
-        dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.3
+    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.2
+    dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 3.1.3
+    dotnet add package Microsoft.AspNetCore.Identity.UI --version 3.1.3
+    dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.3
+    dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.3
     ```
 
     These packages install code generation templates and dependencies that are used by the scaffolder.
@@ -77,9 +77,7 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 1. Use the scaffolder to add the default Identity components to the project. Run the following command from the project root:
 
     ```dotnetcli
-    dotnet aspnet-codegenerator identity \
-        --useDefaultUI \
-        --dbContext ContosoPetsAuth
+    dotnet aspnet-codegenerator identity --useDefaultUI --dbContext RazorPagesPizzaAuth
     ```
 
     In the preceding command:
@@ -88,66 +86,26 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
     * The `--useDefaultUI` option indicates that an RCL containing the default UI elements will be used. Bootstrap will be used to style the components.
     * The `--dbContext` option to indicate the name of an EF Core database context class to generate.
 
-1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
-
     An *:::no-loc text="Areas":::* directory structure appears in the project root:
 
     * *:::no-loc text="Areas":::*
         * *:::no-loc text="Identity":::*
             * *:::no-loc text="Data":::*
-                * *:::no-loc text="ContosoPetsAuth.cs":::*
+                * *:::no-loc text="RazorPagesPizzaAuth.cs":::*
             * *:::no-loc text="Pages":::*
                 * *:::no-loc text="_ValidationScriptsPartial.cshtml":::*
                 * *:::no-loc text="_ViewStart.cshtml":::*
-            * *:::no-loc text="IdentityHostingStartup.cs":::*
+
+    > [!NOTE]
+    > If the *:::no-loc text="Areas":::* directory doesn't appear in the Explorer pane automatically, select the **Refresh Explorer** button.
 
     Areas provide a way to partition an ASP.NET Core web app into smaller functional groups.
 
+    The scaffolder also made changes to *Program.cs*, as highlighted below (reformatted for readability):
+
+    [!code-cshtml[](../code/program.cs?highlight=1-3,5-7,25)]
+
 ## Configure the database connection
-
-1. Replace the `Configure` method of *:::no-loc text="Areas/Identity/IdentityHostingStartup.cs":::* with the following code:
-
-    ```csharp
-    public void Configure(IWebHostBuilder builder)
-    {
-        builder.ConfigureServices((context, services) => {
-            var connBuilder = new SqlConnectionStringBuilder(
-                context.Configuration.GetConnectionString("ContosoPetsAuthConnection"))
-            {
-                UserID = context.Configuration["DbUsername"],
-                Password = context.Configuration["DbPassword"]
-            };
-
-            services.AddDbContext<ContosoPetsAuth>(options =>
-                options.UseSqlServer(connBuilder.ConnectionString));
-
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddDefaultUI()
-                .AddEntityFrameworkStores<ContosoPetsAuth>();
-        });
-    }
-    ```
-
-    In the preceding code:
-
-    * The Azure Key Vault configuration provider is implicitly used to retrieve the database username and password:
-
-        ```csharp
-        UserID = context.Configuration["DbUsername"],
-        Password = context.Configuration["DbPassword"]
-        ```
-
-    * The database username and password are injected into the connection string stored in *:::no-loc text="appsettings.json":::*.
-    * The EF Core database context class, named `ContosoPetsAuth`, is configured with the appropriate connection string.
-    * The Identity services are registered, including the default UI, token providers, and cookie-based authentication.
-
-1. Also in *:::no-loc text="IdentityHostingStartup.cs":::*, add the following code to the block of `using` statements at the top. Save your changes.
-
-    ```csharp
-    using Microsoft.Data.SqlClient;
-    ```
-
-    The preceding code resolves the reference to the `SqlConnectionStringBuilder` class in the `Configure` method.
 
 1. In the `Configure` method of *:::no-loc text="Startup.cs":::*, replace the `// Add the app.UseAuthentication code` comment with the following code. Save your changes.
 

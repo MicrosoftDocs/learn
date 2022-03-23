@@ -12,7 +12,7 @@ The intricacies of interacting with the underlying database are abstracted away 
 
 The following diagram depicts the Identity architecture used in this module:
 
-![architecture diagram.](../media/2-architecture-diagram-sql.png)
+![architecture diagram.](../media/architecture-diagram-sql.png)
 
 In the preceding diagram:
 
