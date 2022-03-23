@@ -17,7 +17,7 @@ The Compliance Manager dashboard shows the current compliance score, helps admin
 
 Compliance Manager uses several data elements to help manage compliance activities. As admins use Compliance Manager to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key elements: controls, assessments, templates, and improvement actions.
 
-## Controls
+### Controls
 
 A control is a requirement of a regulation, standard, or policy. It defines how to assess and manage system configuration, organizational process, and people responsible for meeting a specific requirement of a regulation, standard, or policy.
 
@@ -29,22 +29,22 @@ Compliance Manager tracks the following types of controls:
 
 Compliance Manager continuously assesses controls by scanning through your Microsoft 365 environment and detecting your system settings, continuously and automatically updating your technical action status.
 
-## Assessments
+### Assessments
 
 An assessment is a grouping of controls from a specific regulation, standard, or policy. Completing the actions within an assessment helps to meet the requirements of a standard, regulation, or law. For example, an organization may have an assessment that, when completed, helps to bring the organization’s Microsoft 365 settings in line with ISO 27001 requirements.
 
 An assessment consists of several components including the services that are in-scope, the controls, and an assessment score that shows progress towards completing the actions needed for compliance.
 
 
-## Templates
+### Templates
 
 Compliance Manager provides templates to help admins to quickly create assessments. They can modify these templates to create an assessment optimized for their needs. Admins can also build a custom assessment by creating a template with their own controls and actions. For example, the admin may want a template to cover an internal business process control, or a regional data protection standard that isn’t covered by one of Microsoft’s 150-plus prebuilt assessment templates.
 
-## Improvement actions
+### Improvement actions
 
 Improvement actions help centralize compliance activities. Each improvement action provides recommended guidance that's intended to help organizations to align with data protection regulations and standards. Improvement actions can be assigned to users in the organization to do implementation and testing work. Admins can also store documentation, notes, and record status updates within the improvement action.
 
-## Benefits of Compliance Manager
+### Benefits of Compliance Manager
 
 Compliance Manager provides many benefits, including:
 
@@ -53,3 +53,9 @@ Compliance Manager provides many benefits, including:
 - Mapping regulatory controls against recommended improvement actions.
 - Providing step-by-step guidance on how to implement the solutions to meet regulatory requirements.
 - Helping admins and users to prioritize actions that will have the highest impact on their organizational compliance by associating a score with each action.
+
+### Interactive guide
+
+In this interactive guide, you’ll explore Compliance Manager. Select the image below to get started and follow the prompts on the screen.
+
+[![Interactive guide](../media/5-compliance-manager-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP04M01-Explore-Compliance-Manager/index.html?azure-portal=true)
