@@ -120,7 +120,7 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 
     The scaffolder also made changes to *Program.cs* as highlighted below (reformatted for readability):
 
-    [!code-cshtml[](../code/program.cs?highlight=1-3,5-7,25)]
+    [!code-csharp[](../code/program.cs?highlight=1-3,5-8,27)]
 
     In the preceding code:
 
