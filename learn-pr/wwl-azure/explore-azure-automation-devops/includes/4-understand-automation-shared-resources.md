@@ -5,7 +5,7 @@ There are currently eight shared resources categories:
  -  **Schedules**: It allows you to define a one-off or recurring schedule.
  -  **Modules**: Contains Azure PowerShell modules.
  -  **Modules gallery**: It allows you to identify and import PowerShell modules into your Azure automation account.
- -  **Python 2 packages**. Allows you to import a Python 2 package by uploading: **.whl** or **tar.gz** packages.
+ -  **Python packages**. Allows you to import a Python package by uploading: **.whl** or **tar.gz** packages.
  -  **Credentials**: It allows you to create username and password credentials.
  -  **Connections**: It allows you to specify Azure, Azure classic certificate, or Azure Service principal connections.
  -  **Certificates**: It allows you to upload certificates in .cer or pfx format.

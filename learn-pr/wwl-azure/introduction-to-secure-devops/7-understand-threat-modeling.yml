@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-secure-devops.understand-threat-modeling
+title: Understand threat modeling
+metadata:
+  title: Understand threat modeling
+  description: "Understand threat modeling"
+  ms.date: 03/21/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-understand-threat-modeling.md)]

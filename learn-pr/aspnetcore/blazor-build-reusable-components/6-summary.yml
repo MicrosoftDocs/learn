@@ -4,7 +4,7 @@ title: Summary
 metadata:
   unitType: summary
   title: summary
-  description: "Review what we learned about Razor Class Libraries. Let's recap packaging and sharing components for Blazor applications."
+  description: "This unit summarizes what you've learned about creating Razor class libraries."
   ms.date: 10/13/2021
   author: csharpfritz
   ms.author: jefritz

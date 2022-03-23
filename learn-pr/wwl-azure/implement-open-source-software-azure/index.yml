@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.implement-open-source-software-azure
+metadata:
+  title: Implement open-source software
+  description: "Implement open-source software"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement open-source software
+summary: This module explores open-source software and corporate concerns with software components. Also, it explains common open-source licenses, license implications, and ratings.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Implement open-source software
+  - Explain corporate concerns for open-source components
+  - Describe open-source licenses
+  - Understand the license implications and ratings
+prerequisites: ""
+iconUrl: /learn/achievements/2-implement-open-source-software.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.implement-open-source-software-azure.introduction
+- learn.wwl.implement-open-source-software-azure.explore-how-software-built
+- learn.wwl.implement-open-source-software-azure.what-open-source-software
+- learn.wwl.implement-open-source-software-azure.explore-corporate-concerns-components
+- learn.wwl.implement-open-source-software-azure.introduction-to-licenses
+- learn.wwl.implement-open-source-software-azure.explore-common-licenses
+- learn.wwl.implement-open-source-software-azure.examine-license-implications-ratings
+- learn.wwl.implement-open-source-software-azure.knowledge-check
+- learn.wwl.implement-open-source-software-azure.summary
+badge:
+  uid: learn.wwl.implement-open-source-software-azure.badge

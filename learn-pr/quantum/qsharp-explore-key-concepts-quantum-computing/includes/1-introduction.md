@@ -19,14 +19,18 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-- The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
+- The latest version of [.NET Core](https://dotnet.microsoft.com/download/dotnet/3.1?azure-portal=true)
 - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
 - The [Quantum Development Kit](/quantum/quickstarts/install-command-line?tabs=tabid-vscode&azure-portal=true&view=qsharp-preview)
+- An Azure Quantum workspace
 
-If you haven't installed these tools, we recommend that you go through the [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) to get set up and learn the basics.
+If you haven't installed these tools, we recommend that you go through the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) and [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) modules to get set up and learn the basics.
 
 You also need basic knowledge of linear algebra and complex numbers. To get yourself up to speed, check out the following
 Python tutorials in the form of Jupyter notebooks. You can run these notebooks locally or online. 
 
 - [LinearAlgebra](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/LinearAlgebra?azure-portal=true)
 - [ComplexArithmetic](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ComplexArithmetic?azure-portal=true)
+
+> [!NOTE]
+> First-time users automatically get free Azure Quantum Credits for use with each participating quantum hardware provider (500 USD each) when creating your workspace. If you need more credits, you can apply to the [Azure Quantum Credits program](https://aka.ms/aq/credits).

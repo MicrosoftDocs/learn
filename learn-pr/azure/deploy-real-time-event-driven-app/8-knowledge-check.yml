@@ -9,6 +9,8 @@ metadata:
   ms.author: sakriema
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: sakriema-03012021
 durationInMinutes: 2
 quiz:
   questions:
@@ -48,4 +50,3 @@ quiz:
     - content: "Events should always follow a convention."
       isCorrect: false
       explanation: "Naming conventions might be helpful, but for the overall event, building other things are more important."
-
