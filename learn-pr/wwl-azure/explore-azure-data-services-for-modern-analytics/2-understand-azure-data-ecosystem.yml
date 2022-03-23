@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-data-services-for-modern-analytics.understand-azure-data-ecosystem
+title: Understand the Azure data ecosystem
+metadata:
+  title: Understand the Azure data ecosystem
+  description: "Understand the Azure data ecosystem"
+  ms.date: 03/16/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-azure-data-ecosystem.md)]
