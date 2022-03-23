@@ -14,14 +14,12 @@ durationInMinutes: 6
 interactive: bash
 content: |
   [!include[](includes/4-exercise-implement-a-web-application.md)]
-tasks:
-# Verify the resource web app is created.
-- action: exists
-  environment: azure
-  azure:
-    resource:
-
-      type: "Microsoft.Web/sites"
-      
-  hint: "Deploy the web app creation step in the Update the web project code section."
-
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# # Verify the resource web app is created.
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Web/sites"
+#   hint: "Deploy the web app creation step in the Update the web project code section."
