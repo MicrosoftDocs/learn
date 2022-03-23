@@ -46,4 +46,4 @@ Conditional Access is a feature of paid Azure AD editions.
 
 In this interactive guide, you'll create a Conditional Access policy for a group of users.
 
-[![Interactive guide](../media/2-interactive.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP02M04%20-%20Create%20a%20Conditional%20Access%20Policy/index.html?azure-portal=true)
+[![Interactive guide](../media/2-cond-access-interactive.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP02M04-Create-a-Conditional-Access-Policy/index.html?azure-portal=true)
