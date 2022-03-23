@@ -83,10 +83,10 @@ The Visual Studio Code deployment process creates a **Zip deploy** of the folder
 
 The **Zip deploy** actions usually have the following order:
 
-    * Create zip package
-    * Oryx build
-    * Node.js platform detection
-    * Create manifest file
-    * Npm install
-    * Copy files to destination directory `/home/site/wwwroot`
-    * Clean up 
+* Create zip package
+* Oryx build
+* Node.js platform detection
+* Create manifest file
+* Npm install
+* Copy files to destination directory `/home/site/wwwroot`
+* Clean up 
