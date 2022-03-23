@@ -12,7 +12,7 @@ If you intend to deploy another app to App Service, which requires moving npm mo
 
 ## Azure installs npm packages
 
-In order to tell the Azure deployment process to install the npm modules, an app setting, `SCM_DO_BUILD_DURING_DEPLOYMENT`, set to `true`. This setting is already configured for you
+In order to tell the Azure deployment process to install the npm modules, the `SCM_DO_BUILD_DURING_DEPLOYMENT` app setting is already set to `true`. 
 
 If you use a different deployment process, instead of Visual Studio Code, you should configure the app setting yourself:
 
@@ -24,7 +24,7 @@ SCM_DO_BUILD_DURING_DEPLOYMENT=true
 
 For the sample app used in this module, the build process runs `npm install` which installs the list of dependencies from `package.json`. 
 
-When you deploy other apps, consider using the npm script, `postinstall` to run other build tasks for your app. 
+When you deploy other apps, consider using the npm script, `postinstall` to run additional build tasks for your app. 
 
 ## Deployment tasks
 
@@ -60,7 +60,9 @@ You can use the same tools as you would verify the files, the Azure portal's SSH
 
 ### Manually swap deployment slots
 
-Deployment slots are available on middle and higher pricing tiers. THESE TIERS AREN'T AVAILABLE IN THE LEARN SANDBOX.
+Deployment slots are available on middle and higher pricing tiers. 
+
+THESE TIERS AREN'T AVAILABLE IN THE LEARN SANDBOX.
 
 These slots allow you to keep more than one deployment on App Service. You can swap between slots quickly with the Azure portal, Azure CLI, and Visual Studio Code. 
 

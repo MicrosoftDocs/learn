@@ -41,7 +41,7 @@ In this module, use the Linux operating system for this web app.
 
 You can create your App Service and its database at the same time. When you create both at the same time, a virtual network is created for you. 
 
-This feature isn't used in this Learn module.
+NOT USED IN THIS MODULE.
 
 ## App Service settings during creation
 
@@ -73,13 +73,13 @@ Most of the web app settings aren't set at creation time but are available after
 
 ## App setting for port
 
-App Service doesn't control which port your app listens on. It forwards requests to 8080. Typically, your JavaScript is flexible for this, for example:
+App Service forwards requests to 8080. Typically, your JavaScript is flexible for this, for example:
 
 ```javascript
 const port = process.env.PORT || 8080;
 ```
 
-If your app listens to any other port, you need to set the `WEBSITES_PORT` app setting to the port number and read in the port using the environment variable `PORT`, and App Service forwards requests to that port in the container. 
+If your app listens to any other port, you need to set the `WEBSITES_PORT` app setting to the port number and read in the port using the environment variable `PORT`.App Service forwards requests to that port. 
 
 |App setting|value|
 |--|--|
