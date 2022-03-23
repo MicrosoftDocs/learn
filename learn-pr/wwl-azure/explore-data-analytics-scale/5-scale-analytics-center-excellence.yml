@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-scale-analytics-analytics-center-excellence.md)]
+  [!include[](includes/5-scale-analytics-center-excellence.md)]
