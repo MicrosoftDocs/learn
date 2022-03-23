@@ -49,7 +49,7 @@ When coming from another hosting service, you may be accustomed to checking the 
 
 Azure provides several ways to look at files on the host service:
 * **Azure portal**: When you look at your host resource with the Azure portal, you can use the provided tools in the portal such as:
-    * The in-browser SSH and bash terminals, available from your app's SCM URL: `https://YOUR-APP-NAME.scm.azurewebsites.net`
+    * The in-browser SSH and bash terminals, available from your app's SCM URL: `https://YOUR-APP-NAME.scm.azurewebsites.net`.
 * **Visual Studio Code**'s App Service extension provides access to the hosting environment's **files**, which you can locally change and save back to your App Service. 
 
 ### Partial deployment
@@ -65,9 +65,9 @@ Deployment slots are available on middle and higher pricing tiers. THESE TIERS A
 These slots allow you to keep more than one deployment on App Service. You can swap between slots quickly with the Azure portal, Azure CLI, and Visual Studio Code. 
 
 Use deployment slots when you need to:
-* Change which deployment slot's code is live
-* Reverse a deployment
-* Show a temporary "Sorry, we're having issues" message with full branding and contact information
+* Change which deployment slot's code is live.
+* Reverse a deployment.
+* Show a temporary "Sorry, we're having issues" message with full branding and contact information.
 
 A deployment slot name, such as `test` is postpended to your resource name. That slot name also becomes part of the URL to reach that slot's deployed code, `https://YOUR-APP-NAME-test.azurewebsites.net`.
 

@@ -2,11 +2,11 @@
 
 In this exercise, you need to: 
 
-* Create the App Service resource
+* Create the App Service resource.
 
 As part of the resource creation, these resources are created for you:
-* An App Service Plan resource
-* An Application Insights resource
+* An App Service Plan resource.
+* An Application Insights resource.
 
 ## Create the resource from Visual Studio Code
 

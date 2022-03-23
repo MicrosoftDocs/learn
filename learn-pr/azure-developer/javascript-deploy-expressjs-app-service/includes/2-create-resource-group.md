@@ -47,8 +47,8 @@ A resource group has required and optional properties
 ## Use tags for rich categorization
 
 **Do use tags** for:
-* Additional information about the project, people, and dependencies of the resource
-* Ability to filter or sort for ownership and billing
+* Additional information about the project, people, and dependencies of the resource.
+* Ability to filter or sort for ownership and billing.
 
 Because a subscription has a limited number of allowed tags (50), complex data for tagging should be stored as JSON objects in the value of the tag with a maximum of 256 characters.
 
@@ -62,8 +62,8 @@ This module uses the Learn sandbox with a **4-hour subscription**. The subscript
 
 The sandbox allows you to skip steps you would otherwise need:
 
-* Enter credit card information to create a subscription
-* Create resource group
-* Delete resources when you're done so you aren't billed
+* Enter credit card information to create a subscription.
+* Create resource group.
+* Delete resources when you're done so you aren't billed.
 
 Because the subscription and resource group are already created for you, as part of the sandbox, you use that subscription to create the resources necessary to deploy your web app. 

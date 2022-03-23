@@ -2,9 +2,9 @@
 
 In this exercise, you need to: 
 
-* Fork the GitHub sample repository
-* Clone your fork to your local computer
-* Deploy the sample from your local computer to App Service
+* Fork the GitHub sample repository.
+* Clone your fork to your local computer.
+* Deploy the sample from your local computer to App Service.
 
 ## Fork the GitHub sample repository
 

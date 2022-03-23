@@ -34,4 +34,4 @@ Experience with:
 
 ## What will you complete?
 
-By the end of this module, you’ll learn to create the Azure resources to support the web app, deploy the web app, and view web app logs.
+When you complete this module, you have a deployed Express.js app on your own App Service resource. You know the top app settings to configure the app correctly and you've found the log files and 404 errors for the web app.

@@ -2,9 +2,9 @@
 
 In this exercise, you need to: 
 
-* Interact with the app to generate logs
-* Find and view logs from Visual Studio Code
-* Find and view failure reports for 404s on the Azure portal
+* Interact with the app to generate logs.
+* Find and view logs from Visual Studio Code.
+* Find and view failure reports for 404s on the Azure portal.
 
 ## View the app
 
