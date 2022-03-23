@@ -13,7 +13,7 @@ title: Introduction to clustering models by using R and Tidymodels
 summary: Get an introduction to clustering models. Clustering is the process of grouping objects with similar objects.
 abstract:  | 
   - When to use clustering models
-  - How to train and evaluate clustering models using the Tidymodels framework
+  - How to train and evaluate clustering models by using the Tidymodels framework
   
 prerequisites: |
   - Knowledge of basic mathematics 
