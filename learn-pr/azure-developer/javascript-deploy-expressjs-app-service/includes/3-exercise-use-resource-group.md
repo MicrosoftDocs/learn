@@ -1,9 +1,9 @@
 In this exercise, you need to:
 
-* [Install required software on your local computer]()
-* [Sign into the Learn sandbox]() with a user account you use for the entire module, both in the sandbox UI and in Visual Studio Code.
+* Install required software on your local computer
+* Sign into the Learn sandbox with a user account you use for the entire module.
     * This sandbox gives you a free subscription and resource group to complete this module from Visual Studio Code.
-* [Find the free subscription and resource group in Visual Studio Code]() in the sandbox.
+* Find the free subscription and resource group in Visual Studio Code in the sandbox.
 
 ## Install required software
 
