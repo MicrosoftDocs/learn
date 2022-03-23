@@ -36,7 +36,7 @@ As part of the resource creation, these resources are created for you:
     |Deployments|Shows a list of deployments. That is covered in the next exercise of this module.|
     |Files| Files deployed to your resource. Before you deploy your app, there's one file, `hostingstart.html`, which is returned for any requests.|
     |Logs|This is where your running app's logs are stored. A common reason you would look at these logs is if you deploy an app that requires environment variables or npm modules to run but those aren't correctly specified. The app won't start up correctly.|
-    |Deployment Slots|Typically used for versions of your app such as stage, test, etc. The original slot is always the production slot. Any other slots use the original name then the slot name, such as `jimb-rentals-stage` and the name and slow become part of the URL, `https://jimb-rentals-stage.azurewebsites.net/`. Deployment slots require a product plan. <br><br>NOT USED IN THIS MODULE DUE TO LIMITATIONS OF LEARN SANDBOX PRICING TIER.|
+    |Deployment Slots|NOT USED IN THIS MODULE DUE TO LIMITATIONS OF LEARN SANDBOX PRICING TIER.|
 
 1. Expand the **Files** section to see the **hostingstart.html** file. 
 1. Open the file. This is a basic HTML page that displays until you deploy the app. 

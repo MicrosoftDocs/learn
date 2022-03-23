@@ -1,3 +1,12 @@
+## Completed tasks
+
+Using Visual Studio Code or the Azure portal, you were able to:
+
+- Use the free Learn sandbox subscription and resource group
+- Create and configure the Azure App Service for an Express.js app
+- Deploy the web app from your local computer
+- View the cloud-based files from your local computer
+- View web logs 
 You've successfully created and deployed an Express.js web application to Azure App Service.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]

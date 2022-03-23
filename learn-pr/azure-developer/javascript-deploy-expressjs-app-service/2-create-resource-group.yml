@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service.create-resource-group
-title: What are Azure subscriptions and resources?
+title: Azure subscriptions and resources
 metadata:
   unitType: learning-content
-  title: What are Azure subscriptions and resources?
+  title: Azure subscriptions and resources
   description: "When you use Azure, you need a subscription. Then inside the subscription, you create resource groups, and resources inside the resource groups."
   ms.date: 2/4/2022
   author: diberry
