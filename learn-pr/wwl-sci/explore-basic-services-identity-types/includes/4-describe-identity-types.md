@@ -6,9 +6,9 @@ A user identity is a representation of something that's managed by Azure AD.  Em
 
 Azure AD business-to-business (B2B) collaboration, a feature within External Identities, includes the capability to add guest users. With B2B collaboration, an organization can securely share applications and services with guest users from another organization.
 
-In the following interactive guide, you'll add a new user to Azure Active Directory.
+In the following interactive guide, you'll add a new user to Azure Active Directory. Select the image below to get started and follow the prompts on the screen.
 
-[![Interactive guide](../media/4-active-directory-interactive-guide-expanded.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP02M02%20-%20Create%20a%20New%20User%20in%20Azure%20Active%20Directory/index.html?azure-portal=true)
+[![Interactive guide](../media/4-active-directory-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP02M02-Create-a-New-User-in-Azure-Active-Directory/index.html?azure-portal=true)
 
 ### Service principal
 
