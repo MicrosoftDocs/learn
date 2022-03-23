@@ -26,4 +26,4 @@ After applying the initial EF Core migration, the supporting database tables are
 ![database diagram.](../media/3-identity-tables.png)
 
   > [!NOTE]
-  > The above image shows the key(s) and relationships in the database. The key is a one, and the infinity (sideways 8) is a many.  A database can have 1 to 1, 1 to many, and many to many relationship types.  Keys are unique.  The diagram shows how these joins are created, and the relationships.
+  > The above image shows the key(s) and relationships in the database. The key is a one, and the infinity (sideways 8) is a many. A database can have one-to-one, one-to-many, and many-to-many relationship types. Keys are unique. The diagram shows how these joins are created, and the relationships.
