@@ -14,7 +14,7 @@ This module uses a locally installed Visual Studio Code to deploy the Express.js
     * Azure Resource Group extension
     * Azure App Service extension 
 
-:::image type="content" source="../media/visual-studio-code-azure-extension-app-service" alt-text="Partial screenshot of Visual Studio Code showing Azure sidebar with App Service and Resource groups visible.":::
+:::image type="content" source="../media/visual-studio-code-azure-extension-app-service.png" alt-text="Partial screenshot of Visual Studio Code showing Azure sidebar with App Service and Resource groups visible.":::
 
 While you may have Node.js LTS installed on your local computer, it isn't used in this module. 
 
