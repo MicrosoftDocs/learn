@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/12/2022
+  ms.date: 03/23/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -17,17 +17,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An organization has deployed Microsoft 365 applications to all employees. Who is responsible for the security of the personal data relating to these employees?"
+  - content: "An organization has deployed Microsoft 365 applications to all employees. Considering the shared responsibility model, who is responsible for the accounts and identities relating to these employees?"
     choices:
     - content: "The organization."
       isCorrect: true
-      explanation: "Correct. In the shared responsibility model, the customer organization always has responsibility for their data, including personal data relating to employees."
+      explanation: "Correct. In the shared responsibility model, the customer organization always has responsibility for their data, including information and data relating to employees, devices, and accounts and identities."
     - content: "Microsoft, the SaaS provider."
       isCorrect: false
       explanation: "Incorrect. The shared responsibility model shows that Microsoft as the cloud provider is responsible for hardware the applications run on. The cloud customer is responsible for data, including personal data."
     - content: "There's shared responsibility between an organization and Microsoft."
       isCorrect: false
-      explanation: "Incorrect. The shared responsibility model shows that the cloud customer always retains responsibility for data, including personal data."
+      explanation: "Incorrect. The shared responsibility model shows that the cloud customer retains responsibility for accounts and identities."
   - content: "Which of the following measures might an organization implement as part of the defense in-depth security methodology?"
     choices:
     - content: "Locating all its servers in a single physical location."
