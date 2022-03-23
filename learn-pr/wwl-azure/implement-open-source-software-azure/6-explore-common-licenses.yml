@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-open-source-software-azure.explore-common-licenses
+title: Explore common open-source licenses
+metadata:
+  title: Explore common open-source licenses
+  description: "Explore common open-source licenses"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-explore-common-licenses.md)]

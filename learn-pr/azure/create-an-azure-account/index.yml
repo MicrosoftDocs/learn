@@ -3,9 +3,9 @@ uid: learn.create-azure-account
 metadata:
   title: Create an Azure account
   description: "Find out how to start using Azure by creating an account where you’ll see services and personal settings for identity, billing, and preferences."
-  ms.date: 11/26/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 03/16/2022
+  author: bandersmsft
+  ms.author: banders
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   adobe-target: true
@@ -32,6 +32,7 @@ roles:
 products:
 - azure
 - azure-portal
+- azure-cost-management
 units:
 - learn.create-azure-account.1-introduction
 - learn.create-azure-account.2-azure-accounts-and-subscriptions

@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-manage-performance-health
 metadata:
   title: Monitor and manage performance and health
   description: "Monitor and manage performance and health"
-  ms.date: 12/08/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *  How to resolve Azure Advisor recommendations.
   *  How to diagnose graphics performance issues.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/3-monitor-and-manage-performance-and-health.svg
 levels:
 - intermediate
 roles:

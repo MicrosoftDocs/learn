@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.7-explore-entanglement-qsharp
-title: Exercise - Explore entanglement by using Q#
+title: Exercise - Explore entanglement with Q# and Azure Quantum
 metadata:
-  title: Exercise - Explore entanglement by using Q#
+  title: Exercise - Explore entanglement with Q# and Azure Quantum
   description: Learn about entanglement in quantum computing by using Q# examples.
   ms.date: 09/09/2020
   author: KittyYeungQ

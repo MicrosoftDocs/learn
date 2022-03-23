@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.describe-governmental-cloud-strategy
+metadata:
+  title: Describe governmental cloud strategy
+  description: Describe governmental cloud strategy
+  ms.date: 03/16/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe governmental cloud strategy
+prerequisites: |
+  - None
+summary: |
+  Understand the US Government's cloud computing approach.
+iconUrl: /learn/achievements/governmental-cloud-strategy.svg
+hidden: true
+levels:
+- beginner
+roles:
+- business-owner
+products:
+- azure-sovereign-us
+modules:
+- learn.wwl.describe-government-its-structure
+- learn.wwl.describe-significant-government-strategy-actions
+- learn.wwl.describe-cloud-business-case-analysis
+trophy:
+  uid: learn.wwl.describe-governmental-cloud-strategy.trophy
