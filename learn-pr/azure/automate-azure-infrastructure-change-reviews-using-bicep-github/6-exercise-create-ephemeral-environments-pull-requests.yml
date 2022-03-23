@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.exercise-create-ephemeral-environments-pull-requests
+title: Exercise - Create ephemeral environments for pull requests
+metadata:
+  unitType: exercise
+  title: Exercise - Create ephemeral environments for pull requests
+  description: Extend your pull request workflow to deploy your code changes to a temporary ephemeral environment, and delete the environment automatically when it's no longer needed.
+  ms.date: 03/22/2022
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-exercise-create-ephemeral-environments-pull-requests.md)]

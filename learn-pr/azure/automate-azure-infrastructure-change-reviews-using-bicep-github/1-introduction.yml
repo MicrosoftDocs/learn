@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Introduction to automating Azure infrastructure change reviews by using Bicep and GitHub.
+  ms.date: 03/22/2022
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

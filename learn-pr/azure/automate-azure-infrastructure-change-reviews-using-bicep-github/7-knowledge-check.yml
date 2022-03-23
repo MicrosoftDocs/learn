@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 03/22/2022
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: You're creating a workflow that should run whenever a pull request is opened or the code on the source branch is updated. Which of the following triggers should you use?
+    choices:
+    - content: |
+        `workflow_dispatch`
+      isCorrect: false
+      explanation: Incorrect. The `workflow_dispatch` trigger is used to manually invoke a workflow.
+    - content: |
+        `pull_request`
+      isCorrect: true
+      explanation: Correct. The `pull_request` trigger fires at various points during the pull request's lifecycle.
+    - content: |
+        `push`
+      isCorrect: false
+      explanation: Incorrect. The `push` trigger fires whenever a change is committed or pushed to a specific branch or set of branches, whether or not there's an active pull request.
+  - content: Which of the following is a benefit of using ephemeral environments within your pull request review process?
+    choices:
+    - content: You can see how your changes will work when they're deployed.
+      isCorrect: true
+      explanation: Correct. When you use ephemeral environments, your changes in each pull request are deployed to a temporary environment for you to inspect.
+    - content: You'll reduce the cost of your Azure resources.
+      isCorrect: false
+      explanation: Incorrect. Ephemeral environments generally require your workflows to deploy more resources, but the resources only remain deployed while the pull request is open.
+    - content: You'll see a list of the changes that Azure will make to your environment when you deploy to production.
+      isCorrect: false
+      explanation: Incorrect. The what-if operation provides a list of the resource changes that would take effect in a deployment.
+  - content: You're concerned that your workflow's service principal might accidentally make changes to your production environment. What should you do?
+    choices:
+    - content: Deploy a dedicated subscription for your ephemeral environments, and grant the service principal access just to that subscription.
+      isCorrect: true
+      explanation: Correct. By creating a narrowly scoped role assignment, you can ensure that your service principal can't do anything beyond working with your ephemeral environments.
+    - content: Use Azure Cost Management budgets to control access to your production environment.
+      isCorrect: false
+      explanation: Incorrect. Cost Management budgets are a useful cost management tool, but they don't help to manage access to your environments.
+    - content: Deploy resource locks to block the service principal from making changes to your production environment.
+      isCorrect: false
+      explanation: Incorrect. Locks prevent any changes to a resource. Consider using narrowly scoped role assignments instead.

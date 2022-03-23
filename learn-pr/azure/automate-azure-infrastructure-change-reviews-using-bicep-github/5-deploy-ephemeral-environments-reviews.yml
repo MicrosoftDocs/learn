@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.deploy-ephemeral-environments-reviews
+title: Deploy ephemeral environments for reviews
+metadata:
+  unitType: learning-content
+  title: Deploy ephemeral environments for reviews
+  description: Learn how to deploy your Bicep code automatically during a pull request review. Use ephemeral environments to deploy temporary copies of your resources and delete them when they're no longer needed.
+  ms.date: 03/22/2022
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-deploy-ephemeral-environments-reviews.md)]

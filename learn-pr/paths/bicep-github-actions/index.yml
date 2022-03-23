@@ -21,6 +21,7 @@ summary: |
   * Ensure your Bicep code quality by validating and testing it within your workflow.
   * Work with multiple environments, and handle parameters and approvals.
   * Deploy other Azure configuration settings, applications, and databases.
+  * Use pull requests to automatically validate and deploy your Bicep code as part of your review process.
 
   [!include[](../../includes/bicep-paths.md)]
 prerequisites: |
@@ -41,5 +42,6 @@ modules:
 - learn.azure.test-bicep-code-using-github-actions
 - learn.azure.manage-multiple-environments-using-bicep-github-actions
 - learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions
+- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github
 trophy:
   uid: learn.bicep-pipelines-github-actions.trophy
