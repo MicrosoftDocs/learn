@@ -3,39 +3,39 @@ uid: learn.azure-sql-replication
 metadata:
   moduleType: standard
   title: azure-sql-replication
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: "Azure SQL data replication module that covers database synchronization and data changes tracking and recording. The module explores tools such as Change Data Capture (CDC), SQL Data Sync, and Change Tracking."
   ms.date: 3/21/2022
   author: MaraSteiu
   ms.author: masteiu
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure 
 title: azure-sql-replication
-summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: "This module will introduce you to several data tracking, loading, replicating, and streaming tools that you can use to synchronize data changes from your Azure SQL Database to other destinations. More specifically, we will cover: Change Data Capture (CDC), SQL Data Sync, and Change Tracking."
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+    - "Identify suitable Azure SQL Database data replication tools that fit your use case and business needs."
+    - "Enable data replication tools on your Azure SQL Database."
+    - "Monitor your deployments to ensure the data replication tools work successfully on your database."
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - "Experience working with, maintaining, and developing with SQL Server."
+  - "Experience with Azure, such as deploying and managing resources."
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels: 
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
-  - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+roles: 
+  - solution-architect
+  - database-administrator
+  - data-engineer
+products: 
 - azure-sql-database
 units:
 - learn.azure-sql-replication.introduction
 - learn.azure-sql-replication.track-data-changes-with-cdc
-- learn.azure-sql-replication.exercise---track-data-changes-with-cdc
+- learn.azure-sql-replication.exercise-track-data-changes-with-cdc
 - learn.azure-sql-replication.synchronize-data-with-sql-data-sync
 - learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking
 - learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking-
 - learn.azure-sql-replication.summary
 - learn.azure-sql-replication.knowledge-check
-- learn.azure-sql-replication.summary
 badge:
   uid: learn.azure-sql-replication.badge

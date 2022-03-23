@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-sql-replication.exercise---track-data-changes-with-cdc
+uid: learn.azure-sql-replication.exercise-track-data-changes-with-cdc
 title: Exercise - Track data changes with CDC
 metadata:
   unitType: exercise
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-exercise---track-data-changes-with-cdc.md)]
+  [!include[](includes/3-exercise-track-data-changes-with-cdc.md)]
