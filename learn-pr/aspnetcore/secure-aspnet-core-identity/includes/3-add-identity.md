@@ -4,15 +4,15 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 
 ## Obtain and open the starter project
 
-1. At a shell terminal, run the following commands to obtain the starter project:
+1. In a terminal window, run the following commands to obtain the starter project:
 
-    ```dotnetcli
+    ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity
     ```
 
 2. Switch to the source code directory and launch Visual Studio Code:
 
-    ```dotnetcli
+    ```bash
     cd mslearn-secure-aspnet-core-identity
     code .
     ```
@@ -25,7 +25,7 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 3. After the project loads (either locally or in the container), press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> to open a new terminal window.
 4. Set your location to the *RazorPagesPizza* directory:
 
-    ```dotnetcli
+    ```bash
     cd RazorPagesPizza
     ```
 
@@ -35,7 +35,7 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
     dotnet build
     ```
 
-## Add Identity to the project
+## Add ASP.NET Core Identity to the project
 
 1. Install the ASP.NET Core code scaffolder:
 
