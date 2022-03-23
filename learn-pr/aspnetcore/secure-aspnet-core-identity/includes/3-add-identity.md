@@ -4,6 +4,9 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 
 ## Obtain and open the starter project
 
+> [!NOTE]
+> If you wish to use the `.devcontainer` in GitHub Codespaces, navigate to the [source repository](https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity/codespaces). Create a new codespace using the `main` branch, and then skip to step 3.
+
 1. In a terminal window, run the following command to obtain the starter project:
 
     ```bash
@@ -22,8 +25,8 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
     > [!TIP]
     > If you miss the prompt to reopen in container, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette, and then search for and select **Remote-Containers: Reopen in Container**.
 
-1. After the project loads (either locally or in the container), press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> to open a new terminal window.
-1. Set your location to the *RazorPagesPizza* directory:
+1. After the project loads (either locally or in the container), press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> to open a new terminal pane.
+1. In the new terminal pane, set your location to the *RazorPagesPizza* directory:
 
     ```bash
     cd RazorPagesPizza
@@ -31,15 +34,30 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 
 ## Explore the app
 
-1. Build the project and run the app:
+1. In the terminal pane, build the project and run the app:
 
     ```dotnetcli
-    dotnet build
+    dotnet run
     ```
 
-The app is an ASP.NET Core Razor Pages web app. There is cu
+1. Note the HTTPS URL displayed in the terminal output, e.g. `https://localhost:7192`.
+1. Open the app in your browser by selecting the URL with <kbd>Ctrl</kbd>+*click*.
 
+    > [!IMPORTANT]
+    > If you're using the `.devcontainer` in Docker, the SSL certificate from inside the container won't be trusted by your browser. To view the web app, you must do one of the following:
+    >
+    > * Save the certificate and add it to your trusted certificate authorities.
+    > * Copy an existing development certificate and import it in the container. For more details, see the comments in *./devcontainer/devcontainter.json*.
+    > * Ignore the certificate error and select **Continue to localhost (not recommended)**. Exact wording may vary by browser.
+    >
+    > If you choose to copy an existing certificate into the container, the container path */root/.aspnet/* is a exposed as *.devcontainer\persisted-data\.aspnet* outside the container. This is for your convenience.
+    >
+    > If you're using the `.devcontainer` in GitHub Codespaces, Codespaces handles the proxy SSL connection automatically.
 
+1. Explore the web app in the browser.
+    1. Navigate to **Pizza List**
+    1. Navigate back to **Home**
+1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane to stop the app.
 
 ## Add ASP.NET Core Identity to the project
 
@@ -100,7 +118,7 @@ The app is an ASP.NET Core Razor Pages web app. There is cu
 
     Areas provide a way to partition an ASP.NET Core web app into smaller functional groups.
 
-    The scaffolder also made changes to *Program.cs*, as highlighted below (reformatted for readability):
+    The scaffolder also made changes to *Program.cs* as highlighted below (reformatted for readability):
 
     [!code-cshtml[](../code/program.cs?highlight=1-3,5-7,25)]
 
@@ -126,7 +144,7 @@ The app is an ASP.NET Core Razor Pages web app. There is cu
     }
     ```
 
-1. **If you are using the *.devcontainer***, change the connection string as appears below:
+    **If you are using the *.devcontainer***, change the connection string as follows:
 
     ```json
     "ConnectionStrings": {
@@ -183,28 +201,15 @@ The app is an ASP.NET Core Razor Pages web app. There is cu
           );
     ```
 
-1. Run the following command to list the tables in the database:
+1. The SQL Server extension was added to Visual Studio Code (if needed) when you opened the project. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>D</kbd> to switch to the SQL Server pane.
 
-    ```bash
-    db -Q "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='dbo' ORDER BY TABLE_NAME" -Y 25
-    ```
+1. Expand the nodes under the database connection.
 
-    The following output appears, which confirms the creation of the tables.
+    > [!IMPORTANT]
+    > If you're using the *.devcontainer*, you will be prompted for a password. The password is `P@ssw0rd`.
 
-    ```console
-    TABLE_NAME
-    -------------------------
-    __EFMigrationsHistory
-    AspNetRoleClaims
-    AspNetRoles
-    AspNetUserClaims
-    AspNetUserLogins
-    AspNetUserRoles
-    AspNetUsers
-    AspNetUserTokens
-
-    (8 rows affected)
-    ```
+1. Expand the **Databases** node, the **RazorPagesPizza** node, and finally the **Tables** node.
+1. Note the list of tables. This confirms the migration succeeded.
 
 ## Add the login and registration links
 
@@ -216,22 +221,23 @@ The app is an ASP.NET Core Razor Pages web app. There is cu
 
     The preceding markup renders the `_LoginPartial` partial view within the header of any page that uses the default layout. `_LoginPartial` was added by the Identity scaffold. This partial view presents the user with **Login** and **Register** links if the user isn't signed in.
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
+## Test changes
 
-1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
+1. In the terminal pane, build the project and run the app:
 
-    > [!NOTE]
-    > The *:::no-loc text=".azure/config":::* file in the project root contains the configuration values used by `az webapp up`.
-
-1. Run the following command to view the app's URL. Navigate to that URL in your browser.
-
-    ```bash
-    echo $webAppUrl
+    ```dotnetcli
+    dotnet run
     ```
 
+1. Navigate to the app in your browser as before.
 1. Click the **Register** link in the app's header. Complete the form to create a new account.
 
-    After successful registration:
+    The **Register confirmation** page is displayed. Since the app hasn't yet been configured to send confirmation emails, the confirmation link is provided on this page.
+
+1. Click the confirmation link. A confirmation message is displayed.
+1. Click the **Login** link in the app's header and log in.
+
+    After a successful login:
 
     * You're redirected to the homepage.
     * The app's header displays **Hello [Email address]!** and a **Logout** link.
@@ -240,3 +246,7 @@ The app is an ASP.NET Core Razor Pages web app. There is cu
 1. Click the **Logout** link in the app's header.
 
     After successfully logging out, the *:::no-loc text=".AspNetCore.Identity.Application":::* cookie is deleted to terminate the user session.
+
+## Summary
+
+In this unit, you added the default Identity implementation to an existing web app. In the next unit, you'll customize the Identity implementation.
