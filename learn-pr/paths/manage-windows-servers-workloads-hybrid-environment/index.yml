@@ -3,7 +3,7 @@ uid: learn.wwl.manage-windows-servers-workloads-hybrid-environment
 metadata:
   title: Manage Windows Servers and workloads in a hybrid environment
   description: Manage Windows Servers and workloads in a hybrid environment
-  ms.date: 11/09/2021
+  ms.date: 03/17/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ prerequisites: |
   - Basic experience with implementing and managing IaaS services in Microsoft Azure
 summary: |
   Learn how to administer Windows Server securely using the appropriate management tools. Streamline administration of Windows Server with Just Enough Administration (JEA). You'll also learn how to implement hybrid technologies in Windows Server management.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/manage-windows-servers-and-workloads-in-a-hybrid-environment.svg
 levels:
 - intermediate
 roles:

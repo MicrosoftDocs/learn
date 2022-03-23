@@ -2,7 +2,7 @@ Azure Active Directory (Azure AD) is Microsoft’s multi-tenant cloud-based dire
 
 This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
 
-## **Learning objectives**
+## Learning objectives
 
 After completing this module, you'll be able to:
 
@@ -12,13 +12,11 @@ After completing this module, you'll be able to:
  -  Disable multi-tenancy for Azure Stack Hub.
  -  Update guest tenant directory for Azure Stack Hub.
 
-## **Skills measured**
-
-**Manage identity and access.**
+## Skills measured
 
  -  Manage multi-tenancy.
 
-## **Prerequisites**
+## Prerequisites
 
  -  Working experience creating, assigning, and securing corporate identities.
  -  Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
