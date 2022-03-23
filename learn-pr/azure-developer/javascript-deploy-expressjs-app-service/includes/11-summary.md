@@ -10,6 +10,6 @@ You've successfully created and deployed an Express.js web application to Azure 
 - [Staging environments](/azure/app-service/deploy-staging-slots)
 - [Use Key Vault secrets](/azure/app-service/app-service-key-vault-references)
 - [Set up quota alerts](/azure/app-service/web-sites-monitor)
-- [Pricing tier quotas](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits#app-service-limits)
+- [Pricing tier quotas](/azure/azure-resource-manager/management/azure-subscription-service-limits#app-service-limits)
 - [Enable logs](/azure/app-service/troubleshoot-diagnostic-logs)
 - [Backup app](/azure/app-service/manage-backup)
