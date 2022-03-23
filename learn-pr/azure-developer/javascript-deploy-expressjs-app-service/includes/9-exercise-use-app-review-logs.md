@@ -54,6 +54,11 @@ The App Service keeps logs in the hosting environment, which you can use to reso
 1. In the web browser, select **Settings > Application Insights**, then select **View Application Insights data**. This opens your Application Insights resource. 
 1. Select **Investigate > Failures**. The graph should display your 404 error. 
 
+
+:::image type="content" source="../media/azure-application-insights-failures.png" alt-text="Screenshot of web browser showing Azure portal with Application Insights resource listing of web app failures, including 404, file not found.":::
+
+
+
 <!--
 ## Create a 404 alert
 

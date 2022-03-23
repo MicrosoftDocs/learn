@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: introduction
-  description: "Deploy an Express.js web application and APIs to Azure."
+  description: "In this module, you're a web developer or devops engineer who needs to deploy a web app to Azure. As an experienced developer, new to Azure, you'll learn how to deploy and configure the Azure resources needed to securely deploy the web app."
   ms.date: 2/4/2022
   author: diberry
   ms.author: diberry

@@ -4,7 +4,7 @@ title: "Exercise: Create App Service resource for Express.js"
 metadata:
   unitType: exercise
   title: "Exercise: Create App Service resource for Express.js"
-  description: "Create your App Service resource to host your web-app."
+  description: "Create your App Service resource to host your web-app then enable Application Insights to collect your cloud-based logs."
   ms.date: 2/4/2022
   author: diberry
   ms.author: diberry

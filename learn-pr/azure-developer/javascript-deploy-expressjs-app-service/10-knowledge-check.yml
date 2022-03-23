@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: ""
+  description: "Check your App Service knowledge for deploying Express.js (Node.js) apps to Azure."
   ms.date: 2/4/2022
   author: diberry
   ms.author: diberry
@@ -74,3 +74,25 @@ quiz:
       - content: "hostingstart.html"
         isCorrect: true
         explanation: "The `hostingstart.html` is the only file and response before you deploy your own app."
+  - content: "By default, where are the log files associated with your App Service resource?"
+    choices:
+      - content: "The resource container, and optionally Application Insights."
+        isCorrect: true
+        explanation: "By default, the resource container stores runtime logs for startup and web app requests."
+      - content: "Azure Blob Storage"
+        isCorrect: false
+        explanation: "You can configure logs to be offloaded to Azure Blob Storage but that is an additional configuration, not enabled by default."
+      - content: "Third party services"
+        isCorrect: false
+        explanation: "You can configure logs to be offloaded to third-party services but that is an additional configuration, not enabled by default."
+  - content: "Where do you find failures such as 404, file not found?"
+    choices:
+      - content: "Blob Storage"
+        isCorrect: false
+        explanation: "Failures are captured in Application Insights."
+      - content: "Application Insights"
+        isCorrect: true
+        explanation: "Failures are captured in Application Insights."
+      - content: "Azure Containers"
+        isCorrect: false
+        explanation: "Failures are captured in Application Insights."

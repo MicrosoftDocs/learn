@@ -4,7 +4,7 @@ title: "Exercise: use a resource group"
 metadata:
   unitType: exercise
   title: "Exercise: use a resource group"
-  description: "Use an Azure resource group for your resources."
+  description: "Use the sandbox to create a free subscription then use that subscription in Visual Studio Code."
   ms.date: 2/4/2022
   author: diberry
   ms.author: diberry

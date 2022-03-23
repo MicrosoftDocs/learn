@@ -57,7 +57,7 @@ The following table covers the settings available during creation:
 |OS|Each of the two operating systems of the App Service, Windows and Linux, generally provide comparable functionality with a few differences specific to each.|
 |Location|The geographical location where the app is deployed.|
 |Pricing tier|The App Service pricing tier provides a wide range of capabilities including a free tier.|
-|Application Insights|Application Insights is an Azure service, which integrates into your App Service and captures a wide variety of metrics and logs.|
+|Application Insights|Application Insights is an Azure service, which integrates into your App Service and captures a wide variety of metrics and logs to the cloud. While your App Service does captures log without Application Insights, those are held in the container and not backed up to the cloud.|
 |Database|You can create a database for your web app at the same time. NOT USED IN THIS MODULE.|
 
 ## App Service settings after creation

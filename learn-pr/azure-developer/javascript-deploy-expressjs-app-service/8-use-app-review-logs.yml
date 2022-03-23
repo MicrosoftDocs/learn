@@ -4,7 +4,7 @@ title: Use app and review logs
 metadata:
   unitType: learning-content
   title: Use app and review logs
-  description: "Learn how to use the web app and review the logs."
+  description: "Use the Express.js sample web app to generate log files. Review the logs for startup and actions in Visual Studio Code. Review app failures such as 404 in the Azure portal."
   ms.date: 2/4/2022
   author: diberry
   ms.author: diberry

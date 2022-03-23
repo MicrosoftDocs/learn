@@ -4,7 +4,7 @@ title: Create App Service resource
 metadata:
   unitType: learning-content
   title: Create App Service resource
-  description: "Learn how to create your App Service resource to host your web-app."
+  description: "For this module, the hosting choice is Azure App Service because this Express.js app doesn't require the level of customization provided by containers, virtual machines, and container apps."
   ms.date: 2/4/2022
   author: diberry
   ms.author: diberry
