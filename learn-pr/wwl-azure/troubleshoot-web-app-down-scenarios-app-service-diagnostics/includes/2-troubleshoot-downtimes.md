@@ -8,7 +8,7 @@ App Service Diagnostics monitors the functionality of the custom apps you create
 
 ## Troubleshoot an HTTP Server Error with Web App Down
 
-Web App Down is a troubleshooting feature within App Service Diagnostics that runs resource specific checks on your app service to identify issues causing your app service to experience downtimes. To locate Web App Down, first navigate to the overview page of your App Service resource. Then, click on Diagnose and Solve Problems found in the left navigation menu. This will open App Service Diagnostics. Immediately, you will be presented with different troubleshooting categories to choose from. From here, navigate to ‘Availability and Performance’ where you will find the Web App Down feature.
+Web App Down is a troubleshooting feature within App Service Diagnostics that runs resource specific checks on your app service to identify issues causing your app service to experience downtimes. To locate Web App Down, first navigate to the overview page of your App Service resource. Then, click on Diagnose and Solve Problems found in the left navigation menu. This will open App Service Diagnostics. Immediately, you will be presented with different troubleshooting categories to choose from. From here, navigate to ‘Availability and Performance’ where you will find the Web App Down feature.<br/> <br/>
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4QU13]

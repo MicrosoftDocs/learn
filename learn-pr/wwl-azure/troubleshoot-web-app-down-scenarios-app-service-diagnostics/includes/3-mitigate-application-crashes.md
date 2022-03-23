@@ -4,7 +4,7 @@ A crash event could occur due to unhandled exceptions. Recall the â€˜Cheesecakeâ
 
 Crash Monitoring is a feature in Azure App Service Diagnostics that allows users to collect memory dumps and callstack information to identify the root cause of the crash. You can locate Crash Monitoring by navigating to App Service Diagnostics. Select Diagnostic Tools, and then Crash Monitoring from the left navigation menu.
 
-To configure Crash Monitoring, first select an existing storage account in which the collected info will be saved. Note that you are advised to use one storage account per app and refrain from modifying data on the storage account while the tool is running. Configure the start time and end time using the time picker. You can choose the number of dumps you want to collect. In this scenario, we will choose 4. Then, select Start Monitor. Note when you start the monitor, this will update the app settings to enable Crash Monitoring and restart the app. Now the configuration is completed. 
+To configure Crash Monitoring, first select an existing storage account in which the collected info will be saved. Note that you are advised to use one storage account per app and refrain from modifying data on the storage account while the tool is running. Configure the start time and end time using the time picker. You can choose the number of dumps you want to collect. In this scenario, we will choose 4. Then, select Start Monitor. Note when you start the monitor, this will update the app settings to enable Crash Monitoring and restart the app. Now the configuration is completed.<br/> <br/>   
 
 
 > [!VIDEO https:///www.microsoft.com/videoplayer/embed/RE4QU14]
