@@ -31,11 +31,11 @@ You can create a resource group with any of the following:
 |Azure portal|This is a good tool for people new to Azure.|
 |Azure CLI|This is a good tool for automation tasks.|
 |PowerShell|This is a good tool for automation tasks.|
-|Azure SDKs for management|This is a good tool for automation with a high-degree of customization specific to your needs.|
+|Azure SDKs for management | This is a good tool for automation with a high-degree of customization specific to your needs.|
 
 ## Resource group properties
 
-In this module, you will use Visual Studio Code extension for Azure resources and the Azure portal.
+In this module, you'll use Visual Studio Code extension for Azure resources and the Azure portal.
 
 A resource group has required and optional properties
 
@@ -54,7 +54,7 @@ Because a subscription has a limited number of allowed tags (50), complex data f
 
 
 **Don't use tags** for:
-* Secrets because tags are not guaranteed to be secure. 
+* Secrets because tags aren't guaranteed to be secure. 
 
 ## Use the Learn Sandbox?
 
@@ -64,6 +64,6 @@ The sandbox allows you to skip steps you would otherwise need:
 
 * Enter credit card information to create a subscription
 * Create resource group
-* Delete resources when you are done so you aren't billed
+* Delete resources when you're done so you aren't billed
 
 Because the subscription and resource group are already created for you, as part of the sandbox, you use that subscription to create the resources necessary to deploy your web app. 

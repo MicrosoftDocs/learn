@@ -1,5 +1,3 @@
-To deploy the Express.js app to Azure, you need a service that provides web app hosting.
-
 ## Choose Azure App Service for hosting
 
 Azure provides several hosting choices, each with tradeoffs for intended purpose, degree of configuration, and app type. An Express.js app is a server-side app. The server-side hosting choices include:
@@ -47,7 +45,7 @@ This feature isn't used in this Learn module.
 
 ## App Service settings during creation
 
-When you create an App Service resource, you have a variety of settings to choose from, many have default values. 
+When you create an App Service resource, you have various settings to choose from, many have default values. 
 
 The following table covers the settings available during creation:
 
@@ -59,12 +57,12 @@ The following table covers the settings available during creation:
 |OS|Each of the two operating systems of the App Service, Windows and Linux, generally provide comparable functionality with a few differences specific to each.|
 |Location|The geographical location where the app is deployed.|
 |Pricing tier|The App Service pricing tier provides a wide range of capabilities including a free tier.|
-|Application Insights|Application Insights is an Azure service which integrates into you App Service and captures a wide variety of metrics and logs.|
+|Application Insights|Application Insights is an Azure service, which integrates into your App Service and captures a wide variety of metrics and logs.|
 |Database|You can create a database for your web app at the same time. NOT USED IN THIS MODULE.|
 
 ## App Service settings after creation
 
-Most of the web app settings are not set at creation time but are available after creation. They include:
+Most of the web app settings aren't set at creation time but are available after creation. They include:
 
 * CORS
 * HTTP/HTTPS and TLS
@@ -108,7 +106,7 @@ https://YOUR-RESOURCE-NAME.azurewebsites.net/
 
 ## Default web app before your first deployment
 
-Before you deploy your app, there is one file, `hostingstart.html`, which is returned for any requests. This is a static HTML file which you can change to fit your own needs such as branding and contact information.
+Before you deploy your app, there's one file, `hostingstart.html`, which is returned for any requests. This is a static HTML file, which you can change to fit your own needs such as branding and contact information.
 
 ## Authentication
 

@@ -1,5 +1,3 @@
-Deployment is a large topic for web apps. This information in the module focuses on deploying this Express.js app to App Service with Visual Studio Code.
-
 ## Deploy files
 
 When you deploy to App Service, you move all files to the hosting environment that are necessary to run the web app. 

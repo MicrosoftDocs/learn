@@ -20,7 +20,7 @@ While you may have Node.js LTS installed on your local computer, it isn't used i
 
 Use the **Sign in to activate sandbox** button to sign in. 
 
-Make sure you use the same account to sign into the sandbox that use also use later in this exercise to sign into Azure from Visual Studio Code. 
+Make sure you use the same account to sign into the sandbox and Azure from Visual Studio Code. 
 
 |Subscription name|Value|
 |--|--|
@@ -60,7 +60,7 @@ Make sure you use the same account to sign into the sandbox that use also use la
     * Resource groups
     * App Service resources
 1. Expand the **Resource groups** section, select the sandbox subscription. Expand the subscription and resource group. 
-1. The resource group displays an Azure Storage resource for cloud shell. This was created automatically when you began using the sandbox. If you create more resources, they would be added to this resource group.
+1. The resource group displays an Azure Storage resource for Cloud Shell. This was created automatically when you began using the sandbox. If you create more resources, they would be added to this resource group.
 
 ## What did this exercise accomplish? 
 

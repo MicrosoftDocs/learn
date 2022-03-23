@@ -17,32 +17,32 @@ In this exercise, you need to:
 
 ## From the runtime log files - did your app start successfully?
 
-The App Service keeps logs in the hosting environment which you can use to resolve runtime issues. 
+The App Service keeps logs in the hosting environment, which you can use to resolve runtime issues. 
 
 1. In Visual Studio Code, use the key combination to open the **Azure** sidebar: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
 1. Find and select your App Service resource and expand its child nodes.
 1. Expand the **Logs** section. 
-1. Select the file which ends in `_docker.log`. 
+1. Select the file that ends in `_docker.log`. 
 1. The last line of the file should display something like: 
 
     |Log line|
     |--|
-    |[DATETIME ommited] INFO  - Container jimb-rentals_1_27887d57 for site jimb-rentals initialized successfully and is ready to serve requests.|
+    |[DATETIME omitted] INFO  - Container jimb-rentals_1_27887d57 for site jimb-rentals initialized successfully and is ready to serve requests.|
 
     If your app didn't start up successfully, this would be the first place to look for more information about the errors. 
 
 ## From the runtime log files - does your app run successfully?
 
-1. Select the file which ends in `_default_docker.log`.
+1. Select the file that ends in `_default_docker.log`.
 1. View the last few entries, which should include something like:
 
     |Log line|
     |--|
-    |[DATETIME ommited] express:view lookup "list.html"|
-    |[DATETIME ommited] express:view stat "/home/site/wwwroot/views/list.html"|
-    |[DATETIME ommited] express:view render "/home/site/wwwroot/views/list.html"|
+    |[DATETIME omitted] express:view lookup "list.html"|
+    |[DATETIME omitted] express:view stat "/home/site/wwwroot/views/list.html"|
+    |[DATETIME omitted] express:view render "/home/site/wwwroot/views/list.html"|
 
-    This are the Express.js logs, generated because the `package.json` file's `start` script includes the environment `DEBUG` variable with `express` and `node` included. 
+    These log lines are generated because the `package.json` file's `start` script includes the environment `DEBUG` variable with `express` and `node` included. 
 
     The debug hosting logs are interesting for a developer new to Azure but not a configuration you want to keep in the production app because your runtime environment could eventually fill up.  
 

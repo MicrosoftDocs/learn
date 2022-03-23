@@ -26,7 +26,7 @@ The App Service stores log files helpful to resolving runtime issues:
 
 |Log type|Purpose|
 |--|--|
-| Deployment, installation, and start up| This log ends in `_docker.log` and is how you debug your deployment and container start up issues. Every app runs in a container on App Service. When you pick the runtime, a container with that runtime is provided for you.|
+| Deployment, installation, and start up| This log ends in `_docker.log` and is how you debug your deployment and container startup issues. Every app runs in a container on App Service. When you pick the runtime, a container with that runtime is provided for you.|
 |Running web app| This log ends in `_default_docker.log` and includes all the information your running web app provides for logging.|
 
 Because your logs can grow beyond the file size limits provided, you can choose to use a process to offload the files to a service with more space or you can turn off logging at the host. 

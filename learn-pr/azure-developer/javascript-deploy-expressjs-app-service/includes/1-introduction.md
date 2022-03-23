@@ -1,6 +1,6 @@
 ## Your task: deploy the web app to Azure App Service
 
-In this module, you are a web developer or devops engineer who needs to deploy a web app to Azure. As an experienced developer, new to Azure, you will learn how to deploy and configure the Azure resources needed to securely deploy the web app.
+In this module, you're a web developer or devops engineer who needs to deploy a web app to Azure. As an experienced developer, new to Azure, you'll learn how to deploy and configure the Azure resources needed to securely deploy the web app.
 
 ## What is the web app?
 

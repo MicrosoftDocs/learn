@@ -27,7 +27,7 @@ In this exercise, you need to:
 
 ## Browse the repository folders
 
-The local project has several folders, each representing a Learn module. The `2-Deploy-basic-app-to-azure` is the code that you will deploy to Azure App Service. Ignore the other folders for now.
+The local project has several folders, each representing a Learn module. The `2-Deploy-basic-app-to-azure` is the code that you'll deploy to Azure App Service. Ignore the other folders for now.
 
 1. Expand the `2-Deploy-basic-app-to-azure` folder to view the Express.js files.
 1. Open the `package.json` to understand what dependencies the App Service will install as part of the app:
@@ -67,7 +67,7 @@ The local project has several folders, each representing a Learn module. The `2-
         1. In Visual Studio Code, sign out of Azure, then in again to make sure all subscriptions are displayed.
 1. Right-click the app and select **Deploy to Web App...**.
 1. Browse to and select the subfolder `2-Deploy-basic-app-to-azure`.
-1. When asked if you are sure you want to deploy, select **Deploy**.
+1. When asked if you're sure you want to deploy, select **Deploy**.
 1. When the notification displays with the option to check **output window**, select it.
 1. The deployment status displays with datetime stamps and actions. 
 
