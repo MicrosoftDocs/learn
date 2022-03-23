@@ -13,7 +13,6 @@ title: Review Azure infrastructure changes by using Bicep and pull requests
 summary: Ensure the quality of your team's Bicep code. Use branching strategies to protect your main branch from accidental changes. Review Bicep code by using pull requests.
 abstract: |
   After completing this module, you'll be able to:
-
   - Protect important branches from accidental changes
   - Create, review, and merge pull requests
   - Review Bicep code in pull requests
@@ -23,16 +22,16 @@ prerequisites: |
   - Bicep for basic deployments to Azure, including conditions.
   - Basic Git commands, including cloning, branching, committing files, and pushing changes to either Azure Repos or GitHub.
 
-  To work through the exercises in the module, you'll need either of:
+  To work through the exercises in the module, you need either of:
   
   - An Azure DevOps organization and account.
   - A GitHub account.
 
-  To work through the exercises, you'll also need the following installed locally:
+  To work through the exercises, you also need the following installed locally:
   
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
-  - [Git](https://git-scm.com/download?azure-portal=true).
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+  - [Git](https://git-scm.com/download?azure-portal=true)
 iconUrl: /learn/achievements/bicep/review-azure-infrastructure-changes-using-bicep-pull-requests.svg
 levels:
   - intermediate

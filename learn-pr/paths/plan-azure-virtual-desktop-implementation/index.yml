@@ -3,7 +3,7 @@ uid: learn.wwl.plan-azure-virtual-desktop-implementation
 metadata:
   title: Plan an Azure Virtual Desktop implementation
   description: Plan an Azure Virtual Desktop implementation
-  ms.date: 12/08/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ prerequisites: |
   *  Familiarity with Microsoft Azure and cloud concepts
 summary: |
   Learn how to assess existing physical and virtual desktop environments and plan for Azure Virtual Desktop client deployments. This learning path aligns with exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/plan-an-azure-virtual-desktop-implementation.svg
 levels:
 - intermediate
 roles:

@@ -47,6 +47,7 @@ The following command shows how to assign the Owner role to a user at the subscr
   az role assignment create \
     --assignee rbacuser@example.com \
     --role "Owner" \
+    --scope /subscriptions/<subscription_id>/resourceGroups/<resource_group_name> \
     --subscription <subscription_name_or_id>
 ```
 

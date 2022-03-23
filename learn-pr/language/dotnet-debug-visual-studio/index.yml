@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.dotnet-debug-visual-studio
+metadata:
+  title: Interactively debug .NET apps with the Visual Studio debugger
+  description: 'Learn how to efficiently debug your .NET app by using Visual Studio to fix your bugs quickly. Use the interactive debugger within Visual Studio to analyze and fix your C# applications.'
+  ms.date: 3/16/2022
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Interactively debug .NET apps with the Visual Studio debugger
+summary: Learn how to efficiently debug your .NET app by using Visual Studio to fix your bugs quickly.
+abstract: |
+  By the end of this module, you will be able to:
+  - Debug a .NET program with the Visual Studio debugger.
+  - Create breakpoints and run your code step by step to find issues.
+  - Inspect your program state at any execution step.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- dotnet
+- vs-ide
+prerequisites: |
+  - Local installations of [.NET SDK](https://dotnet.microsoft.com/download)
+  - [Visual Studio](https://visualstudio.com)
+units:
+- learn.dotnet-debug-visual-studio.introduction
+- learn.dotnet-debug-visual-studio.debugger
+- learn.dotnet-debug-visual-studio.analyze-your-program-state
+- learn.dotnet-debug-visual-studio.use-visual-studio-debugger
+- learn.dotnet-debug-visual-studio.logging-and-tracing
+- learn.dotnet-debug-visual-studio.use-logging-and-tracing
+- learn.dotnet-debug-visual-studio.knowledge-check
+- learn.dotnet-debug-visual-studio.summary
+
+badge:
+  uid: learn.dotnet-debug-visual-studio.badge
