@@ -1,10 +1,14 @@
-This module shows you how to deploy an Express.js app from GitHub to Azure App service.
+This module shows you how to deploy an Express.js app from your local computer to Azure App service.
 
-## Your task: You need to deploy the web app to Azure App Service
+## Your task: deploy the web app to Azure App Service
 
 In this module, you are a web developer or devops engineer who needs to deploy a web app to Azure. As an experienced developer, new to Azure, you will learn how to deploy and configure the Azure resources needed to securely deploy the web app.
 
-## What is in the web app?
+## What is the web app?
+
+The web app is a rental property app used by a company to help their employees relocate when needs. The app displays properties, an image about the properties, and some property information.
+
+:::image type="content" source="../media/rental-app-website-browser.png" alt-text="Web browser showing main listing of rental app.":::
 
 The rental property web app is built with Express.js. The user interface is created with simple JavaScript and served from the Express.js server. The web app uses fake data stored in a JSON file. The data is read in at runtime and kept in memory. The images are randomly generated. 
 

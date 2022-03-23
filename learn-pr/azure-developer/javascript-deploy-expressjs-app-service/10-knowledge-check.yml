@@ -72,5 +72,5 @@ quiz:
         isCorrect: false
         explanation: "The `hostingstart.html` is the only file and response before you deploy your own app."
       - content: "hostingstart.html"
-        isCorrect: false
+        isCorrect: true
         explanation: "The `hostingstart.html` is the only file and response before you deploy your own app."
