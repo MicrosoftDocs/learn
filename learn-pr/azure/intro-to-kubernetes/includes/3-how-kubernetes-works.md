@@ -156,7 +156,7 @@ Here are the phases in a pod's lifecycle:
 
 | Phase | Description |
 |---|---|
-| Pending | After the pod run is scheduled, the container runtime downloads container images, and starts all containers for the pod. |
+| Pending | The pod has been accepted by the cluster, but one or more of the containers is not set up or ready to run. The Pending status includes the time a pod is waiting to be scheduled and the time spent downloading container images. |
 | Running | The pod transitions to a running state after all of the resources within the pod are ready. |
 | Succeeded | The pod transitions to a succeeded state after the pod completes its intended task, and runs successfully. |
 | Failed | Pods can fail for various reasons. A container in the pod may have failed, leading to the termination of all other containers. Or, maybe an image wasn't found during preparation of the pod containers. In these types of cases, the pod can go to a failed state. Pods can transition to a failed state from either a pending state or a running state. A specific failure can also place a pod back in the pending state. |
