@@ -54,10 +54,10 @@ quiz:
         explanation: "This is the Application Insights instrumentation key, used for logging to Application Insights."                   
   - content: "What is the default port for App Server?"
     choices:
-      - content: 3000
+      - content: "3000"
         isCorrect: false
         explanation: "No, the default port is 8080 or `process.env.PORT`."
-      - content: 443
+      - content: "443"
         isCorrect: false
         explanation: "No, the default port is 8080 or `process.env.PORT`."   
       - content: 8080 or `process.env.PORT`
