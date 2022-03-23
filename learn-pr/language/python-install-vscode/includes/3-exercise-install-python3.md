@@ -2,7 +2,7 @@ In the previous exercise, you ran a command to determine whether you had Python 
 
 Once you're certain that Python 3 is installed, you can scroll to the bottom of this page and select **Continue**.
 
-When this module was written, Python 3.10 was the latest version available, so instructions here refer to that version. Install the latest version of Python that is available for your operating system. If you install a different version, the button labels and the filenames may differ slightly from the installation instruction.
+When this module was written, Python 3.10 was the latest version available, so instructions here refer to that version. Install the latest version of Python that is available for your operating system. If you install a different version, the button labels and the filenames may differ slightly from the installation instructions.
 
 ::: zone pivot="windows"
 
@@ -21,7 +21,7 @@ When this module was written, Python 3.10 was the latest version available, so i
 
     :::image type="content" source="../media/windows-install-python-search.png" alt-text="Screenshot of search results screen from Microsoft Store for Python, highlighting Python 3.10.":::
 
-1. On the Home tab, select *Install*.
+1. On the Home tab, select *Get or Install*.
 
     :::image type="content" source="../media/windows-install-python-splash.png" alt-text="Screenshot of the Python Home tab in the Microsoft Store with Install highlighted.":::
 
@@ -37,7 +37,7 @@ When this module was written, Python 3.10 was the latest version available, so i
 
 1. Enter the following command `python --version` and then select <kbd>Enter</kbd> to see the version of Python:
 
-    ```bash
+    ```console
     python --version
     ```
 
@@ -112,7 +112,7 @@ The YUM package manager is used mainly by Red Hat systems, like Red Hat Enterpri
 1. Run the following command `yum install` to install Python 3
 
     ```bash
-    yum install rh-python310
+    sudo yum install rh-python3.10
     ```
 
 1. Run `python3.10 --version` to verify installation:
@@ -138,7 +138,7 @@ Software Collections enables you to install multiple versions of the same softwa
 1. Run the `scl enable` command at a Bash prompt:
 
     ```bash
-    scl enable rh-python310 bash
+    scl enable rh-python3.10 bash
     ```
 
 1. Again, verify that everything is OK by running `python3.10 --version`.
@@ -161,7 +161,7 @@ Software Collections enables you to install multiple versions of the same softwa
     [Red Hat Software Collections 3.8](https://access.redhat.com/documentation/en-us/red_hat_software_collections/3/html/3.8_release_notes/chap-rhscl#sect-RHSCL-About).
 
     > [!IMPORTANT]
-    > If you needed to use `scl enable` to run `python3.10 --version`, you might need to run that command every time you want to work in Python. There are workarounds, but this is the intended functionality of Software Collections.  See [Make a Red Hat Software Collection persist](https://access.redhat.com/solutions/527703?azure-portal=true) for a possible workaround.
+    > If you needed to use `scl enable` to run `python3.10 --version`, you might need to run that command every time you want to work in Python. There are workarounds, but this is the intended functionality of Software Collections. See [Make a Red Hat Software Collection persist](https://access.redhat.com/solutions/527703?azure-portal=true) for a possible workaround.
 
 ::: zone-end
 

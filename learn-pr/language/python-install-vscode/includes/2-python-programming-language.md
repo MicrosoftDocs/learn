@@ -38,15 +38,12 @@ To determine if your Windows computer already has Python 3:
     If you see the word `Python` with a set of numbers separated by `.` characters, some version of Python is installed. Here's an example of the output you might see:
 
     ```output
-    Python 3.8.0
+    Python 3.10.0
     ```
-
 
 As long as the first number is `3`, you have Python 3 installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in any of the beginner Python modules on Microsoft Learn.
 
-
-If the first number is `2` or if you received an error message, you'll need to install Python 3. We'll walk you through installation of Python 3 in the next unit.Recap
-The main takeaways from this unit are:
+If the first number is `2` or if you received an error message, you'll need to install Python 3. We'll walk you through installation of Python 3 in the next unit.
 
 ::: zone-end
 
@@ -71,12 +68,10 @@ To determine if your Linux computer already has Python 3 installed:
   The output may include the word `Python` with a set of numbers separated by `.` characters, for example:
 
     ```output
-    Python 3.8.0
+    Python 3.10.0
     ```
 
-
 As long as the first number is `3`, you have Python 3 installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in any of the beginner Python modules on Microsoft Learn.
-
 
 If you received an error message, you'll need to install Python 3. We'll walk you through installation of Python 3 in the next unit.
 
@@ -88,9 +83,9 @@ If you received an error message, you'll need to install Python 3. We'll walk yo
 
 To determine if your macOS computer already has Python 3 installed:
 
-1. Open the Terminal app. To locate and start it, press <kbd>Command</kbd> + <kbd>Spacebar</kbd> key combination to search by using Spotlight.  In the search box, enter **Terminal**. In the results set select**Terminal app**, and then press <kbd>Return</kbd> to start the app.
+1. Open the Terminal app. To locate and start it, press <kbd>Command</kbd> + <kbd>Spacebar</kbd> key combination to search by using Spotlight.  In the search box, enter **Terminal**. In the results set select **Terminal app**, and then press <kbd>Return</kbd> to start the app.
 
-3. At the command prompt, enter the following command:
+1. At the command prompt, enter the following command:
 
     ```bash
     python3 --version
@@ -102,12 +97,10 @@ To determine if your macOS computer already has Python 3 installed:
     You may see the return output contains the word `Python` followed by a set of numbers separated by `.` characters, for example:
 
     ```output
-    Python 3.8.0
+    Python 3.10.0
     ```
 
-
 As long as the first number is `3`, you have Python 3 installed on your computer. Even if you don't have the most up-to-date version, you'll be able to follow along in any of the beginner Python modules on Microsoft Learn.
-
 
 If you received an error message, you'll need to install Python 3. We'll walk through installation of Python 3 in the next unit.
 
@@ -116,5 +109,6 @@ If you received an error message, you'll need to install Python 3. We'll walk th
 ## Recap
 
 The main takeaways from this unit are:
+
 - Python version 2 should no longer be used. Any new code should be written using Python version 3.
 - Use Python's `--version` flag to be sure you know which version of Python you're working with.

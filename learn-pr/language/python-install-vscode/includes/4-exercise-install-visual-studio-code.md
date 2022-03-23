@@ -8,9 +8,9 @@ You typically write Python syntax in a text file and save it to your local hard 
 
 You can write code by using a simple text file editor, such as Notepad in Windows. Notepad edits ASCII text, a standard text file format.
 
-You want to avoid any text editor that has formatting options, like bold, underline, or italics, or any other program with word-processing features. So you shouldn't write code in Microsoft Word or TextEdit on macOS. These programs incorporate formatting instructions that the Python compiler won't understand.
+You want to avoid any text editor that has formatting options, like bold, underline, or italics, or any other program with word-processing features. So you shouldn't write code in Microsoft Word or TextEdit on macOS. These programs incorporate formatting instructions that the Python compiler can't understand.
 
-You'll want to use a tool that's best suited for the unique challenges of writing code. There are plenty of options to choose from, but many developers rely on Visual Studio Code, or VS Code. It's free and available on Windows, macOS, and Linux. It has many features that make it easy to navigate and commit code for all programming languages.
+You'll want to use a tool that's best suited for the unique challenges of writing code. There are plenty of options to choose from, but many developers rely on Visual Studio Code, or VS Code. It's free and available on Windows, macOS, and Linux. It has many features that make it easy to navigate and compile code for all programming languages.
 
 Microsoft provides a Python extension for Visual Studio Code. This extension offers features like syntax highlighting, code navigation, code formatting support, and more. One feature in particular, named IntelliSense, is invaluable when you're getting started. Intellisense provides autocomplete and contextual help as you type. You'll install that in the next unit.
 
@@ -39,7 +39,7 @@ In this section, you'll learn how to download the VS Code installer from the Vis
 
 ## Install Visual Studio Code on Linux
 
-You can install Visual Studio Code on your Linux computer either by downloading the installer from the Visual Studio Code website or installing it via a terminal session by using a package managers like APT or YUM.
+You can install Visual Studio Code on your Linux computer either by downloading the installer from the Visual Studio Code website or installing it via a terminal session by using package managers like APT or YUM.
 
 This section walks you through downloading the installer from the Visual Studio Code website.
 

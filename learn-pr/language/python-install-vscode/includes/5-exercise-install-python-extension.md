@@ -12,11 +12,11 @@ Visual Studio Code is a powerful code editor and a lightweight general-purpose I
 
 1. Filter the list of available extensions by entering **python** in the search box at the top of the Extensions view.
 
-1. Select the 'Python' extension published by Microsoft (described as IntelliSense (Pylance) and usually the first one in the list). The details about that extension appear in a tabbed panel on the right.
+1. Select the **Python** extension published by Microsoft (described as IntelliSense (Pylance) and usually the first one in the list). The details about that extension appear in a tabbed panel on the right.
 
 ::: zone pivot="windows"
 
-4. In either Extensions panel, or in the main panel, select **Install**.
+1. In either the Extensions panel, or in the main panel, select **Install**.
 
     :::image type="content" source="../media/visual-studio-code-extensions-install.png" alt-text="Screenshot of the search results in the Extensions panel for Windows with Python Install highlighted.":::
 

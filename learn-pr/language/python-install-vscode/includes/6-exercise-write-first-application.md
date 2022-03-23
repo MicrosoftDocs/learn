@@ -42,7 +42,7 @@ Many projects start with an empty directory, which is how you'll start yours.
 
 With Visual Studio Code open to your empty folder, you'll now create a Python file to display the class message *Hello, World*.
 
-You may see a prompt you to install [Pylint](https://pylint.org/), which you can install by selecting *Install*. If Visual Studio Code doesn't automatically [detect a Python interpreter](https://code.visualstudio.com/docs/languages/python#_environments), you may be prompted [select one](https://code.visualstudio.com/docs/languages/python#_environments) by selecting the default option.
+You may see a prompt you to install [Pylint](https://pypi.org/project/pylint/), which you can install by selecting *Install*. If Visual Studio Code doesn't automatically [detect a Python interpreter](https://code.visualstudio.com/docs/languages/python#_environments), you may be prompted [select one](https://code.visualstudio.com/docs/languages/python#_environments) by selecting the default option.
 
 1. In the **Explorer view**, HELLO_WORLD panel, hover over the title bar, and then select **New File**.
 
@@ -58,7 +58,7 @@ You may see a prompt you to install [Pylint](https://pylint.org/), which you can
     print('Hello, World!')
     ```
 
-1. Save the file by selecting **File** and **Save** (<kbd>**Ctrl**+**S**</kbd>.
+1. Save the file by selecting **File** and **Save** <kbd>**Ctrl**+**S**</kbd>.
 
     :::image type="content" source="../media/visual-studio-code-save-file.png" alt-text="Screenshot of file menu with Save highlighted.":::
 
