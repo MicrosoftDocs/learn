@@ -12,9 +12,9 @@ The free plan (enhanced security off) is automatically enabled on all Azure subs
 
 ## Microsoft Defender for Cloud plans
 
-The Defender for Cloud plans extend the capabilities of the free plan to workloads running in private and other public clouds. These plans provide unified security management and threat protection across all your hybrid cloud workloads.
+The Defender for Cloud plans extends the capabilities of the free plan to workloads running in private and other public clouds. These plans provide unified security management and threat protection across all your hybrid cloud workloads.
 
-The Defender for Cloud plans add advanced threat detection capabilities, using analytics and machine learning to identify attacks and zero-day exploits. They can also use access and application controls to reduce exposure to network attacks and malware.
+The plans add advanced threat detection capabilities, using analytics and machine learning to identify attacks and zero-day exploits. They can also use access and application controls to reduce exposure to network attacks and malware.
 
 Turning on the enhanced security features for your Defender for Cloud subscription enables the following features:
 
@@ -27,7 +27,7 @@ Turning on the enhanced security features for your Defender for Cloud subscripti
 - **Adaptive Network Hardening**. Adaptive Network Hardening provides recommendations to harden applied Network Security Group (NSG) rules. It uses machine learning algorithms that factor in actual traffic, known trusted configuration, threat intelligence, and other indicators of compromise. It then provides recommendations to allow traffic only from specific IP or port tuples.
 - **Security alerts**. Defender for Cloud supports various security alerts such as detection of potential distributed denial-of-service (DDOS) attacks. Just-in-time alerts give you the chance to investigate evolving issues before they result in a service failure.
 - **Threat intelligence**. This feature can help determine the nature of an attack, the attack point of origin, and more.
-- **Workflow Automation**. This collection of procedures can be executed from Defender for Cloud after a certain playbook is triggered from selected alert. Workflow automation can help automate and orchestrate your response to a specific security alert.
+- **Workflow Automation**. You can execute this collection of procedures from Defender for Cloud after a certain playbook is triggered from an alert. Workflow automation can help automate and orchestrate your response to a specific security alert.
 
 ## Switch to Microsoft Defender for Cloud
 

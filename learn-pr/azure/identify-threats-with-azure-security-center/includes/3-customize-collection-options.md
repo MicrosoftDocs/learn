@@ -24,4 +24,4 @@ You can also activate these options when you create new VMs. Here's an image of 
 
 By default, a storage account will be selected (or created) to hold the logs, but you can customize that on a per-VM basis as needed.
 
-With this collected data, Microsoft Defender for Cloud can start making observations about how each of your configured workloads match up to your security policy.
+With this collected data, Microsoft Defender for Cloud can start making observations about how each of your configured workloads matches up to your security policy.
