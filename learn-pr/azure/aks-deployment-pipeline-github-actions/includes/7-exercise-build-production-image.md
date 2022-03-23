@@ -104,7 +104,7 @@ In this exercise, you'll:
 
 Let's work on the jobs you're going to run. In this process, you address both the build steps and the deploy steps from the diagram.
 
-The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubuntu-20.04` which is the environment you want this workflow to run in.
+The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubuntu-20.04`, which is the environment you want this workflow to run in.
 
 1. Rename the `build` key `build_push_image`.
 
@@ -130,7 +130,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     Leave the `checkout` option like you did when you created the staging image.
 
-1. Create a new step that will gather the necessary version information. To do this you'll use the `::set-output` internal command. Add the following lines below the checkout action:
+1. Create a new step that will gather the necessary version information. You'll use the `::set-output` internal command to create this step. Add the following lines below the checkout action:
 
     ```yml
     - name: Fetch latest version
@@ -346,6 +346,9 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
           - name: Fetch latest version
             id: fetch_version
             run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
+
+          - name: Set up Buildx
+            uses: docker/setup-buildx-action@v1
 
           - name: Docker Login
             uses: docker/login-action@v1

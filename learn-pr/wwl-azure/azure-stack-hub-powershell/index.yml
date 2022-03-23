@@ -3,7 +3,7 @@ uid: learn.wwl.azure-stack-hub-powershell
 metadata:
   title: Azure Stack Hub PowerShell
   description: "Azure Stack Hub PowerShell"
-  ms.date: 12/14/2021
+  ms.date: 03/17/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Conceptual knowledge of Azure compute solutions.
   - Working experience with Azure PowerShell.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/3-azure-stack-hub-powershell.svg
 levels:
 - advanced
 roles:

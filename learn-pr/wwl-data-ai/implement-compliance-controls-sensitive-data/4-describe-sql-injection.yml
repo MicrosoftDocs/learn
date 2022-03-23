@@ -4,13 +4,12 @@ title: Describe SQL injection
 metadata:
   title: Describe SQL injection
   description: "Describe SQL injection"
-  ms.date: 12/08/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
