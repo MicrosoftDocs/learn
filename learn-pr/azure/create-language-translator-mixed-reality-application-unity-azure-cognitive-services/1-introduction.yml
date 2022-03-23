@@ -9,6 +9,8 @@ metadata:
   ms.author: lajanuar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: apspeigh-10062020
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
