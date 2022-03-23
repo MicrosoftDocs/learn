@@ -3,7 +3,7 @@ uid: learn.wwl.manage-infrastructure-for-azure-stack-hub
 metadata:
   title: Manage Infrastructure for Azure Stack Hub
   description: Manage Infrastructure for Azure Stack Hub
-  ms.date: 12/09/2021
+  ms.date: 03/17/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ prerequisites: |
 summary: |
   View the health state of components in the Azure Stack Hub administrator portal and through PowerShell.
   This learning path prepares you for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/manage-infrastructure-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:
