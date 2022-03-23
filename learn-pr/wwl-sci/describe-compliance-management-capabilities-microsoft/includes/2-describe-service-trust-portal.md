@@ -19,6 +19,6 @@ From the main menu, you access:
 - **My Library** – This feature lets you save documents so that you can quickly access them on your My Library page. You can also set up notifications so that Microsoft sends you an email message when documents in your My Library are updated.
 - **More** - This option provides an admin selection which is available only to Global Administrators and relates to options associated with Compliance Manager. Admins, however, are encouraged to use the Microsoft 365 Compliance Center.
 
-In this interactive guide, you will explore a few of the menu options available on the Service Trust Portal. Select the image to open the interactive guide.
+In this interactive guide, you will explore a few of the menu options available on the Service Trust Portal. Select the image below to get started and follow the prompts on the screen.
 
-[![Interactive guide](../media/2a-stp-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/Security%20fundamentals/LP01M02%20Explore%20the%20Service%20Trust%20Portal/index.html?azure-portal=true)
+[![Interactive guide](../media/2a-stp-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP04M01-Explore-the-Service-Trust-Portal/index.html?azure-portal=true)
