@@ -10,7 +10,7 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
     git clone https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity
     ```
 
-2. Switch to the source code directory and launch Visual Studio Code:
+1. Switch to the source code directory and launch Visual Studio Code:
 
     ```bash
     cd mslearn-secure-aspnet-core-identity
@@ -22,18 +22,24 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
     > [!TIP]
     > If you miss the prompt to reopen in container, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette, and then search for and select **Remote-Containers: Reopen in Container**.
 
-3. After the project loads (either locally or in the container), press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> to open a new terminal window.
-4. Set your location to the *RazorPagesPizza* directory:
+1. After the project loads (either locally or in the container), press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd> to open a new terminal window.
+1. Set your location to the *RazorPagesPizza* directory:
 
     ```bash
     cd RazorPagesPizza
     ```
 
-5. Build the project:
+## Explore the app
+
+1. Build the project and run the app:
 
     ```dotnetcli
     dotnet build
     ```
+
+The app is an ASP.NET Core Razor Pages web app. There is cu
+
+
 
 ## Add ASP.NET Core Identity to the project
 
@@ -41,13 +47,6 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 
     ```dotnetcli
     dotnet tool install dotnet-aspnet-codegenerator --version 6.0.2
-    ```
-
-    The following output appears:
-
-    ```console
-    You can invoke the tool from this directory using the following commands: 'dotnet tool run dotnet-aspnet-codegenerator' or 'dotnet dotnet-aspnet-codegenerator'.
-    Tool 'dotnet-aspnet-codegenerator' (version '3.1.2') was successfully installed. Entry is added to the manifest file /home/<USER>/aspnet-learn/src/ContosoPets.Ui/.config/dotnet-tools.json.
     ```
 
     The scaffolder is a .NET Core tool that will:
@@ -59,11 +58,11 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 1. Add the following NuGet packages to the project:
 
     ```dotnetcli
-    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 3.1.2
-    dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 3.1.3
-    dotnet add package Microsoft.AspNetCore.Identity.UI --version 3.1.3
-    dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.3
-    dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 3.1.3
+    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 6.0.2
+    dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 6.0.3
+    dotnet add package Microsoft.AspNetCore.Identity.UI --version 6.0.3
+    dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.3
+    dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 6.0.3
     ```
 
     These packages install code generation templates and dependencies that are used by the scaffolder.
@@ -105,47 +104,45 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 
     [!code-cshtml[](../code/program.cs?highlight=1-3,5-7,25)]
 
+    In the preceding code:
+
+    * The `RazorPagesPizzaAuthConnection` connection string is read from *appsettings.json*.
+    * The EF Core database context class, named `RazorPagesPizzaAuth`, is configured with the connection string.
+    * The Identity services are registered, including the default UI, token providers, and cookie-based authentication.
+        * `.AddDefaultIdentity<IdentityUser>` tells the Identity services to use the default user model.
+        * The lambda expression `options => options.SignIn.RequireConfirmedAccount = true` specifies that users must confirm their email accounts.
+        * `.AddEntityFrameworkStores<RazorPagesPizzaAuth>()` specifies that Identity uses the default Entity Framework Core store for its database. The `RazorPagesPizzaAuth` `DbContext` class is used.
+    * `app.UseAuthentication();` enables authentication capabilities. More specifically, an instance of the ASP.NET Core authentication middleware is added to the app's HTTP request-handling pipeline.
+
 ## Configure the database connection
 
-1. In the `Configure` method of *:::no-loc text="Startup.cs":::*, replace the `// Add the app.UseAuthentication code` comment with the following code. Save your changes.
-
-    ```csharp
-    app.UseAuthentication();
-    ```
-
-    The preceding code enables authentication capabilities. More specifically, an instance of the ASP.NET Core authentication middleware is added to the app's HTTP request-handling pipeline.
-
-1. Run the following command to print the database connection string to the console. Copy the connection string to your clipboard.
-
-    ```bash
-    echo $dbConnectionString
-    ```
-
-1. In *:::no-loc text="appsettings.json":::*, replace the connection string for `ContosoPetsAuthConnection` with the connection string from the previous step. Save your changes.
+1. Review *:::no-loc text="appsettings.json":::*.
 
     The `ConnectionStrings` section should look similar to the following JSON:
 
     ```json
     "ConnectionStrings": {
-        "ContosoPetsAuthConnection": "Data Source={HOST NAME}.database.windows.net;Initial Catalog=ContosoPets;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+        "RazorPagesPizzaAuthConnection": "Server=(localdb)\\mssqllocaldb;Database=RazorPagesPizza;Trusted_Connection=True;MultipleActiveResultSets=true"
     }
     ```
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+1. **If you are using the *.devcontainer***, change the connection string as appears below:
+
+    ```json
+    "ConnectionStrings": {
+        "RazorPagesPizzaIdentityDbContextConnection": "Data Source=localhost;Initial Catalog=RazorPagesPizza;Integrated Security=False;User Id=sa;Password=P@ssw0rd;MultipleActiveResultSets=True"
+    }
+    ```
+
+    This updates the connection string to connect to the instance of SQL Server in the container.
 
 ## Update the database
 
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 1. Install the Entity Framework Core migration tool:
 
     ```dotnetcli
-    dotnet tool install dotnet-ef --version 3.1.3
-    ```
-
-    The following output appears:
-
-    ```console
-    You can invoke the tool from this directory using the following commands: 'dotnet tool run dotnet-ef' or 'dotnet dotnet-ef'.
-    Tool 'dotnet-ef' (version '3.1.3') was successfully installed. Entry is added to the manifest file /home/<USER>/aspnet-learn/src/ContosoPets.Ui/.config/dotnet-tools.json.
+    dotnet tool install dotnet-ef --version 6.0.2 -g
     ```
 
     The migration tool is a .NET Core tool that will:
@@ -157,8 +154,8 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 1. Create and run an EF Core migration to update the database:
 
     ```dotnetcli
-    dotnet ef migrations add CreateIdentitySchema && \
-        dotnet ef database update
+    dotnet ef migrations add CreateIdentitySchema
+    dotnet ef database update
     ```
 
     The `CreateIdentitySchema` EF Core migration applied a Data Definition Language (DDL) change script to create the tables supporting Identity. For example, the following excerpt depicts a `CREATE TABLE` statement generated by the migration:
