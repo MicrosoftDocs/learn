@@ -19,6 +19,6 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-- Install the latest version of [.NET Core 3.1](https://dotnet.microsoft.com/download?azure-portal=true).
+- Install the latest version of [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet/3.1?azure-portal=true).
 - Install [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true).
 - Install the [Quantum Development Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode) extension. 

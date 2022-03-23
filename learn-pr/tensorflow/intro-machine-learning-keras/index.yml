@@ -8,6 +8,8 @@ metadata:
   ms.author: bstollnitz
   ms.topic: interactive-tutorial
   ms.prod: azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: bstollnitz-08202021
 title: Introduction to TensorFlow using Keras
 summary: This module provides all the concepts and practical knowledge you need to get started with TensorFlow. We'll explore Keras, a high-level API released as part of TensorFlow, and we'll use it to build a simple neural network for image classification.
 abstract: |

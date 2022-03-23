@@ -3,7 +3,7 @@ uid: learn.wwl.configure-resources-arm-templates
 metadata:
   title: Configure resources with Azure Resource Manager templates
   description: "Configure resources with Azure Resource Manager templates"
-  ms.date: 11/29/2021
+  ms.date: 03/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -29,6 +29,7 @@ units:
 - learn.wwl.configure-resources-arm-templates.review-arm-template-advantages
 - learn.wwl.configure-resources-arm-templates.explore-arm-template-schema
 - learn.wwl.configure-resources-arm-templates.explore-arm-template-parameters
+- learn.wwl.configure-resources-arm-templates.consider-bicep-templates
 - learn.wwl.configure-resources-arm-templates.review-quickstart-templates
 - learn.wwl.configure-resources-arm-templates.knowledge-check
 - learn.wwl.configure-resources-arm-templates.summary-resources

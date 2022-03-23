@@ -71,7 +71,11 @@ $$ c_{t} = \frac{m^{t-t_0}-1}{m-1} $$
 
 The code below implements the ideas discussed above by generating the necessary `Term` objects required by the solver.
 
+Click **+ Code** to add another new cell and add the following lines:
+
+
 ```python
+"""
 # Reminder of the relevant parameters
 ## Allowed time (jobs can only be scheduled below this limit)
 T = 10 
@@ -85,6 +89,7 @@ jobs_ops_map = {
     1: [2, 3], # Recalibrate navigation system
     2: [4, 5]  # Replace power transformer in the reactor
 }
+"""
 
 def calc_penalty(t:int, m_count:int, t0:int): 
     assert m_count > 1                           # Ensure you don't divide by 0

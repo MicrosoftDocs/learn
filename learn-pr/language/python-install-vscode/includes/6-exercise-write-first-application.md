@@ -1,4 +1,4 @@
-With Python and Python tools installed, you can now create your first Python application. In this exercise, you'll create an empty directory, open the directory in Visual Studio Code, and then create your first application.
+With Python and Python tools installed, you can create your first Python application! In this exercise, you'll create an empty directory, open the directory in Visual Studio Code, and then create your first application.
 
 ## Step 1 - Create a directory for your code
 
