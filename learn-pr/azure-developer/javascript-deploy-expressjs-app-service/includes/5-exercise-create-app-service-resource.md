@@ -1,3 +1,5 @@
+## Your tasks
+
 In this exercise, you need to: 
 
 * Create the App Service resource
@@ -6,7 +8,7 @@ As part of the resource creation, these resources are created for you:
 * An App Service Plan resource
 * An Application Insights resource
 
-## Create resource in Visual Studio Code
+## Create the resource from Visual Studio Code
 
 1. Open Visual Studio Code.
 1. In Visual Studio Code, use the key combination to open the **Azure** sidebar: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
@@ -29,7 +31,7 @@ As part of the resource creation, these resources are created for you:
 
     |Subnode|Purpose|
     |--|--|
-    |Application Settings|Environment variables as name/value pairs. <br><br>Expand this node and notice the `APPINSIGHTS_INSTRUMENTATIONKEY` key stored the Application Insights key. This is useful when you app custom logging with the `applicationinsights` npm package.<br><br> Notice the `SCM_DO_BUILD_DURING_DEPLOYMENT` is created and set to true. This setting allows your Linux/Node.js deployment install npm dependencies.|
+    |Application Settings|Environment variables as name/value pairs. <br><br>Expand this node and notice the `APPINSIGHTS_INSTRUMENTATIONKEY` key stored the Application Insights key. This is useful when you add custom logging with the `applicationinsights` npm package.<br><br> Notice the `SCM_DO_BUILD_DURING_DEPLOYMENT` is created and set to true. This setting allows your Linux/Node.js deployment to install npm dependencies.|
     |Databases|If you create your database at the same time as you create your web app, the database is listed here. NOT USED IN THIS MODULE.|
     |Deployments|Shows a list of deployments. That is covered in the next exercise of this module.|
     |Files| Files deployed to your resource. Before you deploy your app, there is one file, `hostingstart.html`, which is returned for any requests.|
@@ -51,9 +53,10 @@ When you created the resource, you also created and connected Application Insigh
 1. In the App Service section, right-click your App Service resource, and select **Open in Portal**.
 1. In the web browser, select **Settings > Application Insights**.
 1. Select **Turn on Application Insights**.
-1. Select  **Apply** to enable metrics and log collections to Application Insights.
+1. Select  **Apply** to send metrics and log collections to Application Insights.
 
 ## What did this exercise accomplish? 
 
 * You created your web app, its plan, and the logging resource (Application Insights).
-* You learned about the default HTML file and the deployment slots.
+* You reviewed the default HTML file.
+* You enabled logging to Application Insights.

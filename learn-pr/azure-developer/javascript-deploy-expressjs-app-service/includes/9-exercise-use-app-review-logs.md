@@ -1,6 +1,15 @@
+## Your tasks
+
+In this exercise, you need to: 
+
+* Interact with the app to generate logs
+* Find and view logs from Visual Studio Code
+* Find and view failure reports for 404s on the Azure portal
+
 ## View the app
 
-1. In Visual Studio Code, in the Azure sidebar, right-click on your App Service resource and select **Browser website**.
+1. In Visual Studio Code, use the key combination to open the **Azure** sidebar: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
+1. Right-click on your App Service resource and select **Browser website**.
 1. The Express.js web app should display successfully. You can add, edit, and delete properties in the web site. 
 1. The data is loaded in memory, if you want to refresh the data, go back to the Azure sidebar, right-click on your App Service and select **Restart**.
 1. Spend a few minutes using the website. 
@@ -10,28 +19,28 @@
 
 The App Service keeps logs in the hosting environment which you can use to resolve runtime issues. 
 
-1. In Visual Studio Code, select the Azure sidebar, then select App Service. 
-1. Find and select your web app and expand its child nodes.
+1. In Visual Studio Code, use the key combination to open the **Azure** sidebar: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
+1. Find and select your App Service resource and expand its child nodes.
 1. Expand the **Logs** section. 
 1. Select the file which ends in `_docker.log`. 
 1. The last line of the file should display something like: 
 
-    ```console
-    [DATETIME ommited] INFO  - Container jimb-rentals_1_27887d57 for site jimb-rentals initialized successfully and is ready to serve requests.
-    ``` 
+    |Log line|
+    |--|
+    |[DATETIME ommited] INFO  - Container jimb-rentals_1_27887d57 for site jimb-rentals initialized successfully and is ready to serve requests.|
 
-    If your app didn't start up successfully, this would be the first place to look. 
+    If your app didn't start up successfully, this would be the first place to look for more information about the errors. 
 
 ## From the runtime log files - does your app run successfully?
 
 1. Select the file which ends in `_default_docker.log`.
 1. View the last few entries, which should include something like:
 
-    ```console
-    [DATETIME ommited] express:view lookup "list.html"
-    [DATETIME ommited] express:view stat "/home/site/wwwroot/views/list.html"
-    [DATETIME ommited] express:view render "/home/site/wwwroot/views/list.html"
-    ```
+    |Log line|
+    |--|
+    |[DATETIME ommited] express:view lookup "list.html"|
+    |[DATETIME ommited] express:view stat "/home/site/wwwroot/views/list.html"|
+    |[DATETIME ommited] express:view render "/home/site/wwwroot/views/list.html"|
 
     This are the Express.js logs, generated because the `package.json` file's `start` script includes the environment `DEBUG` variable with `express` and `node` included. 
 
@@ -39,7 +48,9 @@ The App Service keeps logs in the hosting environment which you can use to resol
 
 ## Were there any failures such as 404 file not found?
 
-1. In Visual Studio Code, right-click your App Service from the Azure sidebar, then select **Open in portal**.
+
+1. In Visual Studio Code, use the key combination to open the **Azure** sidebar: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
+1. Right-click your App Service resource, then select **Open in portal**.
 1. In the web browser, select **Settings > Application Insights**, then select **View Application Insights data**. This opens your Application Insights resource. 
 1. Select **Investigate > Failures**. The graph should display your 404 error. 
 

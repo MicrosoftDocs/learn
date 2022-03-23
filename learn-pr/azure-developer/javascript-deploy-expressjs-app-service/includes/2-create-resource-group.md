@@ -1,3 +1,5 @@
+## How do you organize Azure services? 
+
 When you use Azure, you need a subscription. Then inside the subscription, you create resource groups, and resources inside the resource groups.
 
 :::image type="content" source="../media/azure-subscription-resource-group.png" alt-text="Diagram that shows the relationship of management hierarchy levels.":::

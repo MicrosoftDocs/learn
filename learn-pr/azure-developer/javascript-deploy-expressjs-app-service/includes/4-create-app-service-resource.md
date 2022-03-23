@@ -7,9 +7,9 @@ Azure provides several hosting choices, each with tradeoffs for intended purpose
 |Service|Description|
 |--|--|
 |Azure App Service|A service that runs either a Windows or Linux hosting environment or container. You have control over all the normal server settings to configure and control your app.|
-|Azure Container<br>Azure Kubernetes<br>Azure Container apps<br>Azure Virtual machines|These other hosting choices provide the entire system running the hosting environment. This allows more flexibility at the tradeoff of more work to configure and maintain the environment.|
+|Azure Container<br><br>Azure Kubernetes<br><br>Azure Container apps<br><br>Azure Virtual machines|These other hosting choices provide the entire system running the hosting environment. This allows more flexibility at the tradeoff of more work to configure and maintain the environment.|
 
-For this module, the hosting choice is Azure App Service because this Express.js app doesn't require the level of customization provided by containers and virtual machines. 
+For this module, the hosting choice is Azure App Service because this Express.js app doesn't require the level of customization provided by containers, virtual machines, and container apps. 
 
 ## Azure App Service and the App Service Plan
 
@@ -33,7 +33,7 @@ Isolate your app into a new App Service plan when:
 
 * The app is resource-intensive.
 * You want to scale the app independently from the other apps in the existing plan.
-* The app needs resource in a different geographical region.
+* The app needs resources in a different geographical region.
 
 ## Linux for the Express.js web app
 
@@ -49,7 +49,7 @@ This feature isn't used in this Learn module.
 
 When you create an App Service resource, you have a variety of settings to choose from, many have default values. 
 
-The following tables covers the settings used in the next exercise:
+The following table covers the settings available during creation:
 
 |Setting|Value|
 |--|--|
@@ -60,24 +60,43 @@ The following tables covers the settings used in the next exercise:
 |Location|The geographical location where the app is deployed.|
 |Pricing tier|The App Service pricing tier provides a wide range of capabilities including a free tier.|
 |Application Insights|Application Insights is an Azure service which integrates into you App Service and captures a wide variety of metrics and logs.|
+|Database|You can create a database for your web app at the same time. NOT USED IN THIS MODULE.|
 
-There are advanced settings you allow you to:
+## App Service settings after creation
 
-* Configure deployment settings 
-* Zone redundancy
-* Add tags
+Most of the web app settings are not set at creation time but are available after creation. They include:
 
-## Default port is 8080
+* CORS
+* HTTP/HTTPS and TLS
+* Port forwarding
+* Custom Domain
+* Certificates
+* Authentication and authorization
 
-App Service doesn't control which port your app listens on. It forwards requests to 8080. Typically, your JavaScript code provides for this, for example:
+## App setting for port
+
+App Service doesn't control which port your app listens on. It forwards requests to 8080. Typically, your JavaScript is flexible for this, for example:
 
 ```javascript
 const port = process.env.PORT || 8080;
 ```
 
-If your app listens to any other port, you need to set the `WEBSITES_PORT` app setting to the port number, and App Service forwards requests to that port in the container. 
+If your app listens to any other port, you need to set the `WEBSITES_PORT` app setting to the port number and read in the port using the environment variable `PORT`, and App Service forwards requests to that port in the container. 
+
+|App setting|value|
+|--|--|
+|WEBSITES_PORT|3000|
+
 
 In the sample app used in this Learn module, the port is correctly configured for you.
+
+## App setting to install npm modules
+
+This setting allows your Linux/Node.js deployment to install npm dependencies instead of the deployment process having to include those dependency files.
+
+|App setting|value|
+|--|--|
+|SCM_DO_BUILD_DURING_DEPLOYMENT|true|
 
 ## Public web app URL
 
@@ -87,8 +106,12 @@ Once you create your App Service web app, the URL is public and immediately avai
 https://YOUR-RESOURCE-NAME.azurewebsites.net/
 ```
 
+## Default web app before your first deployment
+
+Before you deploy your app, there is one file, `hostingstart.html`, which is returned for any requests. This is a static HTML file which you can change to fit your own needs such as branding and contact information.
+
 ## Authentication
 
 Once you create your App Service web app, the app is public without authentication enabled. Once created, you can configure your App Service resource to use one of several social logins, your own enterprise Active Directory, or a custom authentication platform.
 
-Depending on which authentication system you choose, your web app may need no, some, or all programmatic changes to fully enable your authentication choose. 
+Depending on which authentication system you choose, your web app may need no, some, or many programmatic changes to fully enable your authentication choice. 

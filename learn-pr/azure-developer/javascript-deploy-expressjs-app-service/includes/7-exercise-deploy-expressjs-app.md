@@ -1,3 +1,5 @@
+## Your tasks
+
 In this exercise, you need to: 
 
 * Fork the GitHub sample repository
@@ -7,7 +9,7 @@ In this exercise, you need to:
 ## Fork the GitHub sample repository
 
 1. Open the [GitHub sample](https://github.com/Azure-Samples/msdocs-javascript-nodejs-server), `https://github.com/Azure-Samples/msdocs-javascript-nodejs-server`, repository in a new browser tab or window.
-1. Find and select the **Fork** button. 
+1. Find and select the **Fork** button to create your own fork of the sample repository. 
 
 ## Clone your fork to your local computer
 
@@ -15,20 +17,20 @@ In this exercise, you need to:
 1. Search for `Git: Clone` and select it. 
 1. Enter your fork's URL of the sample repository. It should look something like:
 
-    ```console
-    https://github.com/YOUR-GITHUB-ALIAS/msdocs-javascript-nodejs-server
-    ```
+    |URL|
+    |--|
+    |https://github.com/YOUR-GITHUB-ALIAS/msdocs-javascript-nodejs-server|
 
 1. Select a local folder on your computer.
-1. When you are asked if you want to open the cloned repository, select **Open**. 
-1. Visual Studio Code reopens with your fork of the sample repository.
+1. When asked if you want to open the cloned repository, select **Open**. 
+1. Visual Studio Code reopens with your local fork of the sample repository.
 
 ## Browse the repository folders
 
 The local project has several folders, each representing a Learn module. The `2-Deploy-basic-app-to-azure` is the code that you will deploy to Azure App Service. Ignore the other folders for now.
 
 1. Expand the `2-Deploy-basic-app-to-azure` folder to view the Express.js files.
-1. Open the `package.json` to understand what files the App Service will install as part of the app:
+1. Open the `package.json` to understand what dependencies the App Service will install as part of the app:
 
     ```json
     {
@@ -53,7 +55,7 @@ The local project has several folders, each representing a Learn module. The `2-
     }
     ```
 
-1. Notice that the `package.json` file has a `start` script and dependencies. The deployment process uses the package.json to install the dependencies and start the project. 
+1. Notice that the `package.json` file has a `start` script used by the deployment process to start the app.
 
 ## Deploy the sample from your local computer to App Service
 
@@ -63,7 +65,7 @@ The local project has several folders, each representing a Learn module. The `2-
     1. If the app isn't listed, try the following:
         1. At the top of this Learn unit, check that you still have time for your sandbox.
         1. In Visual Studio Code, sign out of Azure, then in again to make sure all subscriptions are displayed.
-1. Right-click the app and select **Deploy to Web App...*.
+1. Right-click the app and select **Deploy to Web App...**.
 1. Browse to and select the subfolder `2-Deploy-basic-app-to-azure`.
 1. When asked if you are sure you want to deploy, select **Deploy**.
 1. When the notification displays with the option to check **output window**, select it.
@@ -71,13 +73,12 @@ The local project has several folders, each representing a Learn module. The `2-
 
 1. When you see something like the following lines in the **output** terminal, the deployment is complete: 
 
-    ```console
-    3:08:19 PM jimb-rentals: Deployment successful.
-    3:08:29 PM: Deployment to "jimb-rentals" completed.
-    ```
-
+    |Log lines|
+    |--|
+    |3:08:19 PM jimb-rentals: Deployment successful.|
+    |3:08:29 PM: Deployment to "jimb-rentals" completed.|
 
 ## What did this exercise accomplish? 
 
 * You forked then cloned the GitHub sample repository.
-* You deployed a subfolder of your local forked repository.
+* You deployed a subfolder of your local forked repository to App Service.

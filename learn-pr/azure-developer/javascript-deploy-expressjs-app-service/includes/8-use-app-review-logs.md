@@ -31,12 +31,36 @@ The App Service stores log files helpful to resolving runtime issues:
 
 Because your logs can grow beyond the file size limits provided, you can choose to use a process to offload the files to a service with more space or you can turn off logging at the host. 
 
-Some popular npm logging modules allow you to continue to log errors and information and provides the infrastructure for the logs to use Application Insights or other logging services. This allows you to use the popular logging packages and have the data automatically managed on Azure. 
+Some popular npm logging modules allow you to log errors and information and provides the infrastructure for the logs to use Application Insights or other logging services. This allows you to use the popular logging packages and have the data automatically managed on Azure. 
  
 ## Custom Application Insights logging
 
 Application Insights is part of Azure Monitor and integrates directly with the App Service providing monitoring and metrics. 
 
-Application Insights provides an npm package, `applicationinsights`, which you can integrate with your Node for additional logging. Use the `.traceTrace()` method to log custom tracing. 
+Application Insights provides an npm package, `applicationinsights`, which you can integrate with your Express.js app for additional logging. Use the `.traceTrace()` method to log custom tracing. 
 
+```javascript
+let appInsights = require("applicationinsights");
+appInsights.setup("YOUR-INSTRUMENTATION-KEY")
+    .setAutoDependencyCorrelation(true)
+    .setAutoCollectRequests(true)
+    .setAutoCollectPerformance(true, true)
+    .setAutoCollectExceptions(true)
+    .setAutoCollectDependencies(true)
+    .setAutoCollectConsole(true, false)
+    .setUseDiskRetryCaching(true)
+    .setAutoCollectPreAggregatedMetrics(true)
+    .setSendLiveMetrics(false)
+    .setAutoCollectHeartbeat(false)
+    .setInternalLogging(false, true)
+    .setDistributedTracingMode(appInsights.DistributedTracingModes.AI_AND_W3C)
+    .start();
 
+let client = appInsights.defaultClient;
+client.trackEvent({name: "my custom event", properties: {customProperty: "custom property value"}});
+client.trackException({exception: new Error("handled exceptions can be logged with this method")});
+client.trackMetric({name: "custom metric", value: 3});
+client.trackTrace({message: "trace message"});
+client.trackDependency({target:"http://dbname", name:"select customers proc", data:"SELECT * FROM Customers", duration:231, resultCode:0, success: true, dependencyTypeName: "ZSQL"});
+client.trackRequest({name:"GET /customers", url:"http://myserver/customers", duration:309, resultCode:200, success:true});
+```

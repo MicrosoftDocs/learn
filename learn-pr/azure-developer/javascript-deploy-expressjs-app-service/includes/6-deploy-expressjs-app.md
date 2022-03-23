@@ -1,8 +1,8 @@
-You have many of the typical choices you may be familiar with to deploy your app.
+Deployment is a large topic for web apps. This information in the module focuses on deploying this Express.js app to App Service with Visual Studio Code.
 
 ## Deploy files
 
-Deploy to Azure App means to move all files to the hosting environment that are necessary to run the web app. 
+When you deploy to App Service, you move all files to the hosting environment that are necessary to run the web app. 
 
 Because this is a Node.js app, it needs to have the npm modules required by the app. As the deployment engineer, you can choose to move the modules as part of deployment or you can have the deployment process on Azure install the resources. 
 
@@ -16,7 +16,7 @@ If you intend to deploy another app to App Service, which requires moving npm mo
 
 In order to tell the Azure deployment process to install the npm modules, an app setting, `SCM_DO_BUILD_DURING_DEPLOYMENT`, set to `true`. This setting is already configured for you
 
-If you use a different resource group process, instead of  Visual Studio Code, you should configure the app setting yourself:
+If you use a different deployment process, instead of Visual Studio Code, you should configure the app setting yourself:
 
 ```bash
 SCM_DO_BUILD_DURING_DEPLOYMENT=true
@@ -24,9 +24,9 @@ SCM_DO_BUILD_DURING_DEPLOYMENT=true
 
 ## Build process
 
-For the sample app used in this module, the build process runs `npm install` which accesses the list of dependencies from `package.json`. 
+For the sample app used in this module, the build process runs `npm install` which installs the list of dependencies from `package.json`. 
 
-When you deploy other apps, consider using the npm script, `postinstall` to run build tasks. 
+When you deploy other apps, consider using the npm script, `postinstall` to run other build tasks for your app. 
 
 ## Deployment tasks
 
@@ -42,7 +42,7 @@ After you deploy your app, you may want to:
 Deployments to Azure hosting services, including App Service, can include many types of deployments:
 
 * **GitHub actions, Azure Pipelines, and other CI/CD processes** - these are processes that can be orchestrated to have checks before and after deployment.
-* **CLI tools** - Azure CLI, Git, and GH (GitHub CLI) provide the ability to push files to a remote location. 
+* **CLI tools** - Azure CLI, Git, and GH (GitHub CLI) provide the ability to push files to a remote location. Azure can be configured as one of your remote locations. This allows you to push to Azure from your local development computer.
 * **Development environments** - Visual Studio and Visual Studio Code, along with other development environments, provide mechanisms to authenticate to your Azure hosting environment, such as App Service, and push files to your hosting environment. 
 
 ### Verify files on the host service
@@ -62,11 +62,13 @@ You can use the same tools as you would verify the files, the Azure portal's SSH
 
 ### Manually swap deployment slots
 
-Deployment slots are available on middle and higher pricing tiers. These slots allow you to keep more than one deployment on App Service. You can swap between slots quickly with the Azure portal, Azure CLI, and Visual Studio Code. 
+Deployment slots are available on middle and higher pricing tiers. THESE TIERS AREN'T AVAILABLE IN THE LEARN SANDBOX.
+
+These slots allow you to keep more than one deployment on App Service. You can swap between slots quickly with the Azure portal, Azure CLI, and Visual Studio Code. 
 
 Use deployment slots when you need to:
 * Change which deployment slot's code is live
-* Reverse a deployment from new to old
+* Reverse a deployment
 * Show a temporary "Sorry, we're having issues" message with full branding and contact information
 
 A deployment slot name, such as `test` is postpended to your resource name. That slot name also becomes part of the URL to reach that slot's deployed code, `https://YOUR-APP-NAME-test.azurewebsites.net`.
@@ -75,7 +77,7 @@ A deployment slot name, such as `test` is postpended to your resource name. That
 
 Visual Studio Code allows you to deploy a local folder to Azure App Service or you can configure a Deployment source such as GitHub. 
 
-This module deploys _all_ the local files. To deploy those files, you need to clone your own fork to your local computer, then deploy a folder within it.
+This module deploys all the _local_ files. To deploy those files, you need to clone your own fork to your local computer, then deploy a folder within it.
 
 The Visual Studio Code deployment process creates a **Zip deploy** of the folder you select to deploy. The App Service uses the zipped package, along with the `package.json` to install the npm packages and start the project correctly. 
 

@@ -1,5 +1,3 @@
-This module shows you how to deploy an Express.js app from your local computer to Azure App service. This module uses the Microsoft Learn sandbox, which is available for up to four hours after you create the sandbox. 
-
 ## Your task: deploy the web app to Azure App Service
 
 In this module, you are a web developer or devops engineer who needs to deploy a web app to Azure. As an experienced developer, new to Azure, you will learn how to deploy and configure the Azure resources needed to securely deploy the web app.
