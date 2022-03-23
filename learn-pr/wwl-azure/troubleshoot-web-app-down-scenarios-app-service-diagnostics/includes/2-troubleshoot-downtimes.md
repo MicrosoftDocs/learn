@@ -28,8 +28,13 @@ In this scenario, the issue is related to a HTTP 503 Server Error. You can click
 
 :::image type="content" source="../media/asd-module-troubleshoot-web-app-down-scenarios-with-app-service-diagnostics-clean-copy-22-01.png" alt-text="<Screenshot of a HTTP 503 Server Error detected.>"::: 
 
-![Graphical user interface, application, Word
+## Identify an Application Crash Event with Application Crashes
 
-Description automatically generated](../media/asd-module-troubleshoot-web-app-down-scenarios-with-app-service-diagnostics-clean-copy-22-01.png)
+Before we go into details on how to identify an application crash and configure a tool to collect rich information for troubleshooting, letâ€™s first understand why these crashes happen and their impact on the workloads. A crash happens when an exception in your code goes un-handled and reaches system default handler which terminates the process. These unhandled exceptions are also known as second chance exceptions. Unlike first chance exceptions, these exceptions are NOT caught by app code or ASP.NET runtime. Therefore, when your application crashes, all the in-flight requests are aborted, and an end user may experience an HTTP 502 error for those requests.
 
-[Alt text: Screenshot of a HTTP 503 Server Error detected.]
+Application Crashes is a troubleshooting feature within App Service Diagnostics. Like Web App Down, it runs checks authored by domain experts on your application to identify an application crash event in the last 24 hours. You can locate it in the left navigation of the Availability and Performance page. 
+
+Once you are there, you will see an insight indicating the status of your application regarding application crashes in the last 24 hours. In this scenario, the issue is related to an application crash with the exception code 0xE0434352 â€“ CLR Exception. Also, paired with this information, you can see the 24-hour timeline on application crash events, helping you identify the exact time when a crash event occurred. You can also check more details on un-handled ASP.NET Exceptions table. However, if this is not enough information, you can enable crash monitoring to capture memory dumps at the time of your application crash to collect more information to root cause your unhandled exceptions.
+
+:::image type="content" source="../media/asd-module-troubleshoot-web-app-down-scenarios-with-app-service-diagnostics-clean-copy-22-02.png" alt-text="<Screenshot of an application crash event with exception code 0xE0434352 - CLR Exception detected.>":::
+
