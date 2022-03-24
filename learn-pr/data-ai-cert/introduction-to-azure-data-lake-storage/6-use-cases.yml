@@ -3,12 +3,14 @@ uid: learn.data-ai-introduction-to-azure-data-lake-storage.use-cases
 title: Examine uses for Azure Data Lake Storage Gen2
 metadata:
   title: Examine uses for Azure Data Lake Storage Gen2
-  description: Examine uses for Azure Data Lake Storage Gen2
-  ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chtestao
+  description: "Examine uses for Azure Data Lake Storage Gen2"
+  ms.date: 03/24/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/6-use-cases.md)]
