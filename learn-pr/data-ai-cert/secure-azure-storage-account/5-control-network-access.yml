@@ -3,12 +3,14 @@ uid: learn.azure.secure-azure-storage-account.control-network-access
 title: Control network access to your storage account
 metadata:
   title: Control network access to your storage account
-  description: Control network access to your storage account
-  ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chtestao
+  description: "Control network access to your storage account"
+  ms.date: 03/24/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/5-control-network-access.md)]

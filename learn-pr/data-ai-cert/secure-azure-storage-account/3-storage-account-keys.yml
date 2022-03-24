@@ -3,12 +3,14 @@ uid: learn.azure.secure-azure-storage-account.storage-account-keys
 title: Understand storage account keys
 metadata:
   title: Understand storage account keys
-  description: Understand storage account keys
-  ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chtestao
+  description: "Understand storage account keys"
+  ms.date: 03/24/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-storage-account-keys.md)]
