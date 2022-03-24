@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.knowledge-check
-title: Knowledge check
+title: Knowledge Check
 metadata:
-  title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 03/23/2022
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 03/24/2022
   author: wwlpublish
   ms.author: lauraalv
   ms.topic: interactive-tutorial
@@ -33,9 +33,9 @@ quiz:
     - content: "Go to Configuration Management, then Crash Monitoring, and select an existing storage account. From there, configure the start and end times, choose the number of dumps to be collected, and finally click Start Monitor."
       isCorrect: false
       explanation: "That's incorrect. Configuration and Management contains checks for App Service configuration on backups, slots, scaling, etc. It does not allow Jim to narrow down the potential causes of a crash event."
-    - content: "Go to Diagnostics Tools, then Crash Monitoring, and select Diagnose and Solve Problems. From there, configure the start and end times, choose the number of dumps to be collected, and finally click Start Monitor."
+    - content: "Go to Diagnostics Tools, then Application Crashes, and select Diagnose and Solve Problems. From there, configure the start and end times, choose the number of dumps to be collected, and finally click Start Monitor."
       isCorrect: false
-      explanation: "That's incorrect. Selecting Diagnose and Solve Problems will not help Jim navigate to Crash Monitoring."
+      explanation: "That's incorrect. Application Crashes is not available as part of Diagnostic Tools, and it will not navigate Jim to Crash Monitoring."
     - content: "Go to Diagnostics Tools, then Crash Monitoring, and select an existing storage account. From there, configure the start and end times, choose the number of dumps to be collected, and finally click Start Monitor."
       isCorrect: true
       explanation: "That's correct. Jim would need to navigate to Diagnostic Tools first to configure Crash Monitoring."

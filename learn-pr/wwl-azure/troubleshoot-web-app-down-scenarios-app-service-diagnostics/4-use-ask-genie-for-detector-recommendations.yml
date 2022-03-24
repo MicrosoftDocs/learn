@@ -4,13 +4,13 @@ title: Use Ask Genie for Detector Recommendations
 metadata:
   title: Use Ask Genie for Detector Recommendations
   description: "Use Ask Genie for Detector Recommendations"
-  ms.date: 03/23/2022
+  ms.date: 03/24/2022
   author: wwlpublish
   ms.author: lauraalv
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/4-use-ask-genie-for-detector-recommendations.md)]
