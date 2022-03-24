@@ -40,15 +40,14 @@ quiz:
         `az deployment group create`
       isCorrect: true
       explanation: Correct. You should deploy the resources using the `az deployment group create` command.
-  # TODO redo question 3 given we've taken SemVer out of the picture
-  - content: Which of the following statements about semantic versioning is true?
+  - content: Suppose your team uses a multipart versioning system. Which of the following changes to a Bicep file should result in a change to the *major* version number?
     choices:
-    - content: You should increment the major version number every time you change your Bicep file.
+    - content: You add a new variable.
       isCorrect: false
-      explanation: Incorrect. You should change your major version number when you make a breaking change, like adding a new parameter to your Bicep file.
-    - content: You should increment the major version number whenever you make a breaking change to your Bicep file.
+      explanation: Incorrect. Adding a new variable isn't a breaking change, so you don't need to update the major version.
+    - content: You add a new mandatory parameter.
       isCorrect: true
-      explanation: Correct. You should change your major version number when you make a breaking change, like adding a new parameter to your Bicep file.
-    - content: You should never increment the major version number.
+      explanation: Correct. Adding a new parameter is a breaking change, because anybody who uses the Bicep file must update their deployments to provide a value for the parameter.
+    - content: You add a new output.
       isCorrect: false
-      explanation: Incorrect. You should change your major version number when you make a breaking change, like adding a new parameter to your Bicep file.
+      explanation: Incorrect. Adding a new output isn't a breaking change, so you don't need to update the major version.

@@ -23,6 +23,8 @@ For example, suppose you're using a Bicep module published by somebody else. The
 > [!TIP]
 > *Semantic versioning* is a formalized versioning structure that is similar to what we described above. Semantic versioning includes additional components in the version number, as well as strict rules about when you should set or reset each component. We link to more information about semantic versioning in the summary.
 
+You can also choose to use a simpler versioning strategy, such as just using the workflow run number as your version number. While this approach is easier to implement, it means you can't effectively communicate the differences between versions to anybody who uses your code.
+
 ### Versions and workflows
 
 When you publish your code interactively, such as by using the Azure CLI, you probably think about the version number you assign to your template spec or module as you publish it. But in an automated deployment workflow, you need to change the approach you use to assign version numbers. Your workflow can't automatically detect breaking changes, or advise you when you should increment your major or minor version numbers. Ensure you carefully consider versioning before you publish the template spec or module.
@@ -37,8 +39,6 @@ Whenever you update your Bicep code, you update the version information in the c
 > If your team reviews your Bicep code by using pull requests, ask the reviewers to validate whether any changes to your code require changing your major or minor version numbers.
 
 You'll see how you can use a metadata file in the next exercise.
-
-You can also choose to use a simpler versioning strategy, such as just using the workflow run number as your version number. While this approach is easier to implement, it means you can't effectively communicate the differences between versions to anybody who uses your code.
 
 ## How many workflows?
 
@@ -62,7 +62,7 @@ For example, suppose you have a file structure similar to the one illustrated ab
 
 ---
 
-When you make a change to a single file - for example, *module-2/main.bicep* - then only the workflow for module 2 runs. If you change multiple files in the same commit, each of the relevant workflows is triggered.
+Suppose you only change the *module-2/main.bicep* file. Only the workflow for module 2 runs. But, if you change multiple files in the same commit, each of the relevant workflows is triggered.
 
 > [!NOTE]
-> The approach of creating a workflow for each of your reusable Bicep files is simple and flexible. But, it can become cumbersome when you have a large number of Bicep files, or if you don't want to maintain separate workflows for each module and template spec. You can also write scripts within your workflow to find the code that's changed and publish just those modules. But, this is a more complex approach and it's out of the scope of this Microsoft Learn module.
+> The approach of creating a workflow for each of your reusable Bicep files is simple and flexible. But, it can become cumbersome when you have a large number of Bicep files, or if you don't want to maintain separate workflows for each module and template spec. You can also write scripts within your workflow to find the code that's changed and publish just those files. But, this is a more complex approach and it's out of the scope of this Microsoft Learn module.
