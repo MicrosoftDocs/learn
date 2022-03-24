@@ -13,5 +13,5 @@ Priority Value | Meaning
 :---: | :---:
 0 | Highest priority
 1 | Second highest priority
-: |
+: | :
 31 | Lowest priority
