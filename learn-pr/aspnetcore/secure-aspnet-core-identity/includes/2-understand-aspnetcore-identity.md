@@ -12,7 +12,7 @@ The intricacies of interacting with the underlying database are abstracted away 
 
 The following diagram depicts the Identity architecture used in this module:
 
-![architecture diagram.](../media/architecture-diagram-sql.png)
+![Architecture diagram](../media/architecture-diagram-sql.png)
 
 In the preceding diagram:
 
@@ -24,7 +24,7 @@ In the preceding diagram:
 After applying the initial EF Core migration, the supporting database tables are created. The following diagram depicts the schemas of the supporting tables:
 
 <!-- TODO: Replace with Mermaid diagram -->
-![database diagram.](../media/identity-tables.png)
+:::image type="content" source="../media/identity-tables.png" alt-text="Identity database schema" lightbox="../media/identity-tables.png":::
 
   > [!NOTE]
   > The above image shows the key(s) and relationships in the database. The key is a one, and the infinity (sideways 8) is a many. A database can have one-to-one, one-to-many, and many-to-many relationship types. Keys are unique. The diagram shows how these joins are created, and the relationships.

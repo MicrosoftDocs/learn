@@ -1,12 +1,12 @@
 @using Microsoft.AspNetCore.Identity
-@using ContosoPets.Ui.Areas.Identity.Data
-@inject SignInManager<ContosoPetsUser> SignInManager
-@inject UserManager<ContosoPetsUser> UserManager
+@using RazorPagesPizza.Areas.Identity.Data
+@inject SignInManager<RazorPagesPizzaUser> SignInManager
+@inject UserManager<RazorPagesPizzaUser> UserManager
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
-    ContosoPetsUser user = await UserManager.GetUserAsync(User);
+    RazorPagesPizzaUser user = await UserManager.GetUserAsync(User);
     var fullName = $"{user.FirstName} {user.LastName}";
 
     <li class="nav-item">

@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Configure multi-factor authentication
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-multi-factor-authentication.md)]
+  [!include[](includes/6-multi-factor-authentication.md)]

@@ -1,11 +1,9 @@
-Identity works out-of-the-box without any customization. The standard Identity UI components are packaged in a .NET Standard Razor Class Library (RCL). Because an RCL is used, few files are added to the project.
-
-In this unit, Identity will be added to an existing ASP.NET Core Razor Pages project.
+Identity works out-of-the-box without any customization. In this unit, Identity will be added to an existing ASP.NET Core Razor Pages project.
 
 ## Obtain and open the starter project
 
 > [!NOTE]
-> If you wish to use the `.devcontainer` in GitHub Codespaces, navigate to the [source repository](https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity/codespaces). Create a new codespace using the `main` branch, and then skip to step 3.
+> If you wish to use the `.devcontainer` in GitHub Codespaces, navigate to the [source repository codespaces](https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity/codespaces). Create a new codespace using the `main` branch, and then skip to step 3.
 
 1. In a terminal window, run the following command to obtain the starter project:
 
@@ -44,19 +42,22 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 1. Open the app in your browser by selecting the URL with <kbd>Ctrl</kbd>+*click*.
 
     > [!IMPORTANT]
-    > If you're using the `.devcontainer` in Docker, the SSL certificate from inside the container won't be trusted by your browser. To view the web app, you must do one of the following:
+    > If you're using the *.devcontainer* in Docker, the SSL certificate from inside the container won't be trusted by your browser. To view the web app, you must do one of the following:
     >
     > * Save the certificate and add it to your trusted certificate authorities.
-    > * Copy an existing development certificate and import it in the container. For more details, see the comments in *./devcontainer/devcontainter.json*.
+    > * Import an existing development certificate inside the container. For more details, see the comments in *./devcontainer/devcontainter.json*.
     > * Ignore the certificate error and select **Continue to localhost (not recommended)**. Exact wording may vary by browser.
     >
-    > If you choose to copy an existing certificate into the container, the container path */root/.aspnet/* is a exposed as *.devcontainer\persisted-data\.aspnet* outside the container. This is for your convenience.
+    > If you choose to import an existing development certificate inside the container, the container path */root/.aspnet/* is exposed as *.devcontainer\persisted-data\.aspnet* outside the container. This is for your convenience.
     >
-    > If you're using the `.devcontainer` in GitHub Codespaces, Codespaces handles the proxy SSL connection automatically.
+    > If you're using the *.devcontainer* in GitHub Codespaces, no action is required. Codespaces handles the proxy SSL connection automatically.
 
-1. Explore the web app in the browser.
+1. Explore the web app in the browser. Using the links on the header:
     1. Navigate to **Pizza List**
-    1. Navigate back to **Home**
+    1. Navigate back **Home**
+
+    Notice that you are not required to authenticate.
+
 1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane to stop the app.
 
 ## Add ASP.NET Core Identity to the project
@@ -64,7 +65,7 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 1. Install the ASP.NET Core code scaffolder:
 
     ```dotnetcli
-    dotnet tool install dotnet-aspnet-codegenerator --version 6.0.2
+    dotnet tool install dotnet-aspnet-codegenerator --version 6.0.2 --global
     ```
 
     The scaffolder is a .NET Core tool that will:
@@ -91,7 +92,7 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
     > * In the command shell, run `dotnet aspnet-codegenerator -h`.
     > * When in Visual Studio, right-click the project in **Solution Explorer** and select **Add** > **New Scaffolded Item**.
 
-1. Use the scaffolder to add the default Identity components to the project. Run the following command from the project root:
+1. Use the scaffolder to add the default Identity components to the project. Run the following command in the terminal:
 
     ```dotnetcli
     dotnet aspnet-codegenerator identity --useDefaultUI --dbContext RazorPagesPizzaAuth
@@ -144,7 +145,7 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
     }
     ```
 
-    **If you are using the *.devcontainer***, change the connection string as follows:
+    This connection string points to an instance of SQL Server Express LocalDB by default. **If you are using the *.devcontainer***, change the connection string as follows:
 
     ```json
     "ConnectionStrings": {
@@ -152,7 +153,7 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
     }
     ```
 
-    This updates the connection string to connect to the instance of SQL Server in the container.
+    This updates the connection string to connect to the instance of SQL Server inside the container.
 
 ## Update the database
 
@@ -160,7 +161,7 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 1. Install the Entity Framework Core migration tool:
 
     ```dotnetcli
-    dotnet tool install dotnet-ef --version 6.0.2 -g
+    dotnet tool install dotnet-ef --version 6.0.2 --global
     ```
 
     The migration tool is a .NET Core tool that will:
@@ -203,17 +204,14 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 
 1. The SQL Server extension was added to Visual Studio Code (if needed) when you opened the project. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>D</kbd> to switch to the SQL Server pane.
 
-1. Expand the nodes under the database connection.
-
-    > [!IMPORTANT]
-    > If you're using the *.devcontainer*, you will be prompted for a password. The password is `P@ssw0rd`.
-
-1. Expand the **Databases** node, the **RazorPagesPizza** node, and finally the **Tables** node.
+1. Expand the nodes under the existing database connection. Expand the **Databases** node, the **RazorPagesPizza** node, and finally the **Tables** node.
 1. Note the list of tables. This confirms the migration succeeded.
+
+    :::image type="content" source="../media/sql-server-successful-migration.png" alt-text="The RazorPagesPizza database with the newly created tables" lightbox="../media/sql-server-successful-migration.png":::
 
 ## Add the login and registration links
 
-1. In *:::no-loc text="Pages/Shared/_Layout.cshtml":::*, replace the `@* Add the _LoginPartial partial view *@` comment with the following. Save your changes.
+1. In *:::no-loc text="Pages/Shared/_Layout.cshtml":::*, replace the `@* Add the _LoginPartial partial view *@` comment with the following.
 
     ```cshtml
     <partial name="_LoginPartial" />
@@ -223,6 +221,7 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 
 ## Test changes
 
+1. Make sure you've saved all your changes.
 1. In the terminal pane, build the project and run the app:
 
     ```dotnetcli

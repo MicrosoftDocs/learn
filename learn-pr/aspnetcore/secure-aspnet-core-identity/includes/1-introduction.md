@@ -35,8 +35,8 @@ Alternatively, this module includes a *[.devcontainer](https://code.visualstudio
 
 Using the *.devcontainer* requires only:
 
-* [Visual Studio Code](https://code.visualstudio.com)
+* [Visual Studio Code](https://code.visualstudio.com) with the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
 * [Git CLI](https://git-scm.com/docs/gitcli)
 * [Docker Desktop](https://www.docker.com)
 
-You can also complete the module without any local tools using [GitHub Codespaces](https://github.com/features/codespaces).
+You can also use the *.devcontainer* without **any** local tools using [GitHub Codespaces](https://github.com/features/codespaces).

@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Use claims with policy-based authorization
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-claims-policy-authorization.md)]
+  [!include[](includes/7-claims-policy-authorization.md)]
