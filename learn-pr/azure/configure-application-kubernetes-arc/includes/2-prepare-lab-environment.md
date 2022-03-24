@@ -17,7 +17,7 @@ This exercise is the first in this module's sequence of exercises. They guide yo
 
 ## Task 1: Install the prerequisite software tools
 
-The implementation process relies on Azure CLI, kubectl, and Helm. An Azure portal-based implementation process isn't yet available.
+The implementation process relies on Azure CLI, kubectl, and Helm. Microsoft Azure portal-based implementation process is also available for most part of the configuration. However, for this module, we will take Azure CLI based approach so that you are able to understand various parts of the implementation.
 
 > [!IMPORTANT]
 > Skip this task when using [Azure Cloud Shell](https://shell.azure.com). Azure Cloud Shell provides a convenient lab environment. It has the prerequisite software tools already installed and simplifies authenticating to your Azure subscription. Azure Cloud Shell is available on the latest versions of Microsoft Edge, Google Chrome, Mozilla Firefox, and Apple Safari. However, Safari in private mode isn't supported.
@@ -31,7 +31,7 @@ The implementation process relies on Azure CLI, kubectl, and Helm. An Azure port
 
 ## Task 2: Enable required preview features in the Azure subscription
 
-Azure App Service on Kubernetes with Azure Arc is available in preview mode only. You must explicitly opt in if you intend to use it in your Azure subscription. After you complete the opt-in process, perform the following steps to enable necessary functionality within your Azure subscription.
+Azure App Service on Kubernetes with Azure Arc currently available in public preview. [Microsoft documentation](https://docs.microsoft.com/en-us/azure/app-service/overview-arc-integration#public-preview-limitations) contains more about various limitations on this public preview feature. Your Azure subscription may not have necessary resources providers registered to be able to test all these capabilities. You must explicitly enable these providers in your subscription before continuing.
 
 1. Start any Azure Cloud Shell-compatible web browser, navigate to [Azure Cloud Shell](https://shell.azure.com), and, if prompted, authenticate with a Microsoft account or an Azure AD account that has an Owner role in the Azure subscription.
 1. If prompted to select either **Bash** or **PowerShell**, select **Bash**.
@@ -42,16 +42,14 @@ Azure App Service on Kubernetes with Azure Arc is available in preview mode only
 1. From the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands enable all required resource providers and their respective preview features for all resources and locations you'll use:
 
     ```azurecli-interactive
-    az feature register --namespace Microsoft.Kubernetes --name previewAccess
     az provider register --namespace Microsoft.Kubernetes --wait
-
-    az feature register --namespace Microsoft.KubernetesConfiguration --name extensions
+    
     az provider register --namespace Microsoft.KubernetesConfiguration --wait
 
-    az feature register --namespace Microsoft.ExtendedLocation --name CustomLocations-ppauto
     az provider register --namespace Microsoft.ExtendedLocation --wait
 
     az provider register --namespace Microsoft.Web --wait
+
     ```
 
     > [!NOTE]
@@ -76,31 +74,23 @@ Use the following steps to install the Azure CLI extensions that are required to
     az upgrade
     ```
 
-1. Run the following commands to install the **connectedk8s** and **customlocation** Azure CLI extensions:
+1. Run the following commands to install the **connectedk8s**, **customlocation**, **k8s-extension** and **appservice-kube** Azure CLI extensions:
 
     ```azurecli-interactive
     az extension add --upgrade --yes -n connectedk8s
     az extension add --upgrade --yes -n customlocation
+    az extension add --upgrade --yes --name k8s-extension
+    az extension add --upgrade --yes -n appservice-kube
     ```
 
     > [!NOTE]
-    > Wait for the installation to complete. This should take about 1 minute.
-
-1. From the Bash session in the **Azure Cloud Shell** pane, run the following commands to ensure that you are using the latest version of the **appservice-kube** Azure CLI extension:
-
-    ```azurecli-interactive
-    az extension remove -n appservice-kube
-    az extension add --yes --source "https://aka.ms/appsvc/appservice_kube-latest-py2.py3-none-any.whl"
-    ```
-
-    > [!NOTE]
-    > To verify that the installation completed successfully, run the `az -v` command and examine its output. The output should include the **Extensions** section in the following format (the sample output references the minimum required versions, but the actual versions might be higher):
-    >
+    > Wait for the installation to complete. This should take about 1 minute. To verify that the installation completed successfully, run the `az -v` command and examine its output. The output should include the **Extensions** section in the following format (the sample output references the minimum required versions, but the actual versions might be higher):
+    
     >```json
     >Extensions:
-    >customlocation                     0.1.2
-    >connectedk8s                       1.1.3
-    >appservice-kube                    0.1.20
+    >customlocation                     0.1.3
+    >connectedk8s                       1.2.7
+    >appservice-kube                    0.1.6
     >```
 
 Congratulations! You completed the first exercise of this module. You've prepared your lab environment for implementation of Azure App Service on Kubernetes with Azure Arc.

@@ -1,4 +1,4 @@
-In this exercise, you'll set up an Azure Kubernetes Service (AKS) cluster. An AKS cluster is an approved Kubernetes distribution for Azure App Service on Kubernetes with Azure Arc. The exercise consists of the following tasks: 
+In this exercise, you'll set up an Azure Kubernetes Service (AKS) cluster. An AKS cluster is an approved Kubernetes distribution for Azure App Service on Kubernetes with Azure Arc. However, this capability is not limited to AKS cluster only. This can be any CNCF certified, Arc tested Kubernetes cluster deployed in any public cloud provider, on-premises or at the edge. This unit's exercise consists of the following tasks: 
 
 1. Deploy an AKS cluster.
 1. Connect to the AKS cluster.
@@ -43,7 +43,7 @@ Use the following steps to deploy an AKS cluster that supports Azure App Service
 
     ```azurecli-interactive
     az group create -l $LOCATION -n $K8S_CLUSTER_RG_NAME
-    az aks create -g $K8S_CLUSTER_RG_NAME -n $K8S_CLUSTER_NAME --enable-aad --generate-ssh-keys
+    az aks create -g $K8S_CLUSTER_RG_NAME -n $K8S_CLUSTER_NAME -l $LOCATION --enable-aad --generate-ssh-keys
     ```
 
     > [!NOTE]
