@@ -2,25 +2,26 @@ When you start to publish reusable Bicep code, you probably use a manual approac
 
 ## Version numbers
 
-In previous Microsoft Learn modules, you learned about the importance of versioning for template specs and Bicep modules. There are many different versioning approaches you can use. In many situations, though, *semantic versioning* is a good choice.
+In previous Microsoft Learn modules, you learned about the importance of versioning for template specs and Bicep modules. There are many different versioning approaches you can use. In many situations, though, it's a good practice to use a *multipart* versioning system, with a *major* version, *minor* version, and *revision* number, similar to the following example:
 
-When you use semantic versioning, a version number has several components:
+:::image type="content" source="../media/5-version-number.png" alt-text="Diagram that shows the version number 1.4.106." border="false":::
 
-:::image type="content" source="../media/5-version-number.png" alt-text="Diagram that shows the version number 1.4.6+20." border="false":::
+In the preceding example, the major version is 1, the minor version is 4, and the revision number is 106.
 
-In the example above, the major version is 1, the minor version is 4, the patch version is 6, and the build number is 20.
-
-Changes in version numbers communicate important information about the types of changes in the code:
+Changes in differnet parts of version numbers communicate important information about the types of changes in the code:
 
 - **Whenever you make a breaking change, you should increment the major version number.** For example, suppose you add a new mandatory parameter or remove a parameter from your Bicep file. These are examples of breaking changes, because Bicep requires mandatory parameters to be specified at deployment time, and doesn't allow setting values for non-existent parameters. So, you would update the major version.
 
 - **Whenever you add something new to the code, but it isn't a breaking change, you should increment the minor version number.** For example, suppose you add a new optional parameter with a default value. Optional parameters aren't breaking changes, so you would update the minor version.
 
-- **Whenever you make backwards-compatible bug fixes or other changes that don't affect how the code works, you should increment the patch version number.** For example, suppose you refactor your Bicep code to make better use of variables and expressions. If the refactoring doesn't change your Bicep code's behavior at all, you would update the patch version.
+- **Whenever you make backwards-compatible bug fixes or other changes that don't affect how the code works, you should increment the revision number.** For example, suppose you refactor your Bicep code to make better use of variables and expressions. If the refactoring doesn't change your Bicep code's behavior at all, you would update the revision number.
 
-- **Your workflow should also automatically append the workflow run number after major, minor, and patch version numbers.** This helps to ensure that your version numbers are always unique, even if you don't update the other components of your version number.
+- **Your workflow can also automatically set the revision number.** The workflow's run number can be used as the revision number. This helps to ensure that your version numbers are always unique, even if you don't update the other components of your version number.
 
-For example, suppose you're using a Bicep module published by somebody else. The module has a version number of `2.0.0+90`. You see there is a new version of the module available with the version number `2.1.0+102`. The only significant change is to the minor version number, which indicates that you shouldn't expect a breaking change when you use the new version.
+For example, suppose you're using a Bicep module published by somebody else. The module has a version number of `2.0.496`. You see there is a new version of the module available with the version number `2.1.502`. The only significant change is to the minor version number, which indicates that you shouldn't expect a breaking change when you use the new version.
+
+> [!TIP]
+> *Semantic versioning* is a formalized versioning structure that is similar to what we described above. Semantic versioning includes additional components in the version number, as well as strict rules about when you should set or reset each component. We link to more information about semantic versioning in the summary.
 
 ### Versions and workflows
 
@@ -33,7 +34,7 @@ One approach is to store a *metadata file* with your Bicep code, as illustrated 
 Whenever you update your Bicep code, you update the version information in the correspnding metadata file. You need to ensure that you correctly identify breaking and non-breaking changes so you can increment the version numbers correctly.
 
 > [!TIP]
-> If your team reviews your Bicep code by using pull requests, ask the reviewers to validate whether any changes to your code require changing your major, minor, or patch version number.
+> If your team reviews your Bicep code by using pull requests, ask the reviewers to validate whether any changes to your code require changing your major or minor version numbers.
 
 You'll see how you can use a metadata file in the next exercise.
 

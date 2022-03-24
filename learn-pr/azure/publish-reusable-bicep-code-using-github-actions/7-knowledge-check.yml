@@ -40,6 +40,7 @@ quiz:
         `az deployment group create`
       isCorrect: true
       explanation: Correct. You should deploy the resources using the `az deployment group create` command.
+  # TODO redo question 3 given we've taken SemVer out of the picture
   - content: Which of the following statements about semantic versioning is true?
     choices:
     - content: You should increment the major version number every time you change your Bicep file.
