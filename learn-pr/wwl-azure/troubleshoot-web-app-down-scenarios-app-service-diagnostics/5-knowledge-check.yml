@@ -28,7 +28,7 @@ quiz:
     - content: "Go to the overview page of the App Service resource and select Diagnose and Solve Problems. Then navigate to Diagnostic Tools and select Web App Down."
       isCorrect: false
       explanation: "That's incorrect. Although Diagnostic Tools may be used to root cause an app’s downtime, it does not give you comprehensive information to troubleshoot application and platform availability."
-  - content: "A crash event occurred due to unhandled exceptions in a company’s web app. To narrow down the potential causes, Jim is going to use Crash Monitoring within App Service Diagnostics to investigate. What the correct steps he needs to follow to configure Crash Monitoring?"
+  - content: "A crash event occurred due to unhandled exceptions in a company’s web app. To narrow down the potential causes, Jim is going to use Crash Monitoring within App Service Diagnostics to investigate. What are the correct steps he needs to follow to configure Crash Monitoring?"
     choices:
     - content: "Go to Configuration Management, then Crash Monitoring, and select an existing storage account. From there, configure the start and end times, choose the number of dumps to be collected, and finally click Start Monitor."
       isCorrect: false
