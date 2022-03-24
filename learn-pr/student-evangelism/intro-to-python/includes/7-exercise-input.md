@@ -15,7 +15,7 @@ In this exercise, you will learn to build a calculator. A calculator takes input
     >>>
     ```
 
-1. Copy the following code into the REPL, as is:
+1. Copy and paste the following code into the REPL:
 
    ```python
    first_number = int(input('Type the first number: ')) ;\
@@ -32,17 +32,18 @@ In this exercise, you will learn to build a calculator. A calculator takes input
    Type the first number:
    ```
 
-   The characters `;\`, at the end of the first two statements, signals that there are many lines of code and will let you input all of it, line by line. The code also runs and as you can see, asks you for the first input.
+   The characters `;\`, at the end of the first two statements signal that there are many lines of code. Using these characters lets you input all of the code, line by line. The code also runs, and as you can see, asks you for the first input.
 
-1. Complete the first input by typing first **2** and selecting <kbd>ENTER</kbd>.
+1. Complete the first input by typing **2** and pressing <kbd>ENTER</kbd>.
 
    You should see the following output:
 
    ```output
    Type the first number: 2
+   Type the second number:
    ```
 
-1. Now, complete the second input, by typing **3** and selecting <kbd>ENTER</kbd>.
+1. Now, complete the second input by typing **3** and pressing <kbd>ENTER</kbd>.
 
    You should see the following output:
 
