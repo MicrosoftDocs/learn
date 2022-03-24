@@ -247,6 +247,8 @@ In this unit, Identity will be added to an existing ASP.NET Core Razor Pages pro
 
     After successfully logging out, the *:::no-loc text=".AspNetCore.Identity.Application":::* cookie is deleted to terminate the user session.
 
+1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane to stop the app.
+
 ## Summary
 
 In this unit, you added the default Identity implementation to an existing web app. In the next unit, you'll customize the Identity implementation.
