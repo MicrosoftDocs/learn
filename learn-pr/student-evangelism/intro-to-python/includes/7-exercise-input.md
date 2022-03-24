@@ -1,4 +1,4 @@
-In this exercise, you will learn to build a calculator. A calculator takes input and present the result on the screen.
+In this exercise, you'll learn to build a calculator. A calculator takes input and presents the result on the screen.
 
 1. Start the REPL by typing `python`:
 
