@@ -9,9 +9,9 @@ There's no limit to the number of priority changes that can occur. As an extreme
 
 The default priority range is from 0 to 31, where the value 0 represents the highest priority, and the value 31 represents the lowest priority. The following table illustrates this priority range.
 
-Priority Value | Meaning 
+Priority Value | Meaning
 :---: | :---:
 0 | Highest priority
 1 | Second highest priority
-: | 
+: |
 31 | Lowest priority
