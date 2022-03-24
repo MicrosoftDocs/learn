@@ -3,7 +3,7 @@ uid: learn.enable-single-sign-on.exercise-test-single-sign-on
 title: Exercise - Test the single sign-on configuration
 metadata:
   unitType: exercise
-  title: Exercise -  Configure single sign-on at the application host
+  title: Exercise - Test the single sign-on configuration
   description: "Test the single sign-on configuration."
   ms.date: 3/24/2022
   author: davidmu1
