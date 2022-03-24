@@ -32,9 +32,9 @@ If all has gone well, you should see initial output appearing on the screen simi
 
 Each time the Urgent thread completes a cycle, it displays the current time and a brief message. Similarly, each time the Routine thread completes a cycle, it displays the current time and a brief message.
 
-You're now ready to complete this project by modifying the Routine thread entry function as shown in [building block 4, part 2](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/6-exercise-build-debug-project#building-block-4-part-2).
+You're now ready to complete this project by modifying the Routine thread entry function as shown in [building block 4, part 2](https://docs.microsoft.com/learn/modules/create-first-threadx-project/6-exercise-build-debug-project#building-block-4-part-2).
 
-Activity 4 is incomplete and there's a suggestion that you should use Activity 2 in [building block 4, part 1](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/6-exercise-build-debug-project#building-block-4-part-1) as a guide. Following is the code in Activity 2:
+Activity 4 is incomplete and there's a suggestion that you should use Activity 2 in [building block 4, part 1](https://docs.microsoft.com/learn/modules/create-first-threadx-project/6-exercise-build-debug-project#building-block-4-part-1) as a guide. Following is the code in Activity 2:
 
 ```c
 /* Activity 2:  4 timer ticks  *** critical section *** */
@@ -45,7 +45,7 @@ Activity 4 is incomplete and there's a suggestion that you should use Activity 2
    tx_mutex_put(&Processor);
 ```
 
-Using Activity 2 and the [Hello World scenario](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/3-hello-world#hello-world-scenario) as guides, complete your modifications, then build and debug your project. Your completed output should look like that shown below:
+Using Activity 2 and the [Hello World scenario](https://docs.microsoft.com/learn/modules/create-first-threadx-project/3-hello-world#hello-world-scenario) as guides, complete your modifications, then build and debug your project. Your completed output should look like that shown below:
 
 :::image type="content" source="../media/figure-18-output-from-completed-project.png" alt-text="Image of completed output." border="false":::
 
