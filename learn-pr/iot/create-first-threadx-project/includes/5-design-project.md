@@ -20,7 +20,7 @@ The highlighted code is explained as follows:
 
 ## Building block 2
 
-The main entry point is the same as in the [illustrative example](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/2-example-threadx-project#building-block-2-example) and is contained in the code below:
+The main entry point is the same as in the [illustrative example](https://docs.microsoft.com/learn/modules/create-first-threadx-project/2-example-threadx-project#building-block-2-example) and is contained in the code below:
 
 :::code language="c" source="../code/project-hello-world.c" range="25-35":::
 
@@ -28,7 +28,7 @@ As noted earlier, the `tx_kernel_enter()` statement is required to start ThreadX
 
 ## Building block 3
 
-Building block 3 is more complex than the one in the [illustrative example](https://review.docs.microsoft.com/learn/modules/create-first-threadx-project/2-example-threadx-project#building-block-3-example) and it's displayed in two parts, below. This building block contains the `application define` function, which is required by ThreadX. This function is the initialization of the project, and it contains the creation of the memory byte pool, the thread stacks, the threads, and the mutex.
+Building block 3 is more complex than the one in the [illustrative example](https://docs.microsoft.com/learn/modules/create-first-threadx-project/2-example-threadx-project#building-block-3-example) and it's displayed in two parts, below. This building block contains the `application define` function, which is required by ThreadX. This function is the initialization of the project, and it contains the creation of the memory byte pool, the thread stacks, the threads, and the mutex.
 
 Building block 3, part 1, contains the creation of the memory byte pool and the thread stacks:
 
