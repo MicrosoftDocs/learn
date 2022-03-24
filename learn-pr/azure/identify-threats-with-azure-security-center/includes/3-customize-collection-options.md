@@ -13,10 +13,10 @@ Here's an image of the **Environment settings** pane with the **Integrations** a
 
 **Auto provisioning** is an interesting feature. Defender for Cloud can collect security data and events from your VMs when you enable certain extensions.
 
-1. **Log Analytics agent for Azure VMs**: Collects security-related configurations and event logs from the machine and stores the data in your Log Analytics workspace for analysis.
-1. **Log Analytics agent for Azure Arc Machines (preview)**: Collects security-related configurations and event logs from the machine and stores the data in your Log Analytics workspace for analysis.
-1. **Vulnerability assessment for machines**: Enables vulnerability assessment on your Azure and hybrid machines.
-1. **Guest Configuration agent (preview)**: Checks machines running in Azure and Arc Connected Machines for security misconfigurations.
+- **Log Analytics agent for Azure VMs**: Collects security-related configurations and event logs from the machine and stores the data in your Log Analytics workspace for analysis.
+- **Log Analytics agent for Azure Arc Machines (preview)**: Collects security-related configurations and event logs from the machine and stores the data in your Log Analytics workspace for analysis.
+- **Vulnerability assessment for machines**: Enables vulnerability assessment on your Azure and hybrid machines.
+- **Guest Configuration agent (preview)**: Checks machines running in Azure and Arc Connected Machines for security misconfigurations.
 
 You can also activate these options when you create new VMs. Here's an image of the **Management** tab while creating a new Windows-based VM with the Azure portal that shows the Microsoft Defender for Cloud options being set.
 
