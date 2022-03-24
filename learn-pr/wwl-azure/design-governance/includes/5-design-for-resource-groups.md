@@ -26,6 +26,8 @@
 
 - Each resource must be in one, and only one, resource group.
 
+- Resource groups cannnot be renamed.
+
 ### Things to consider when creating resource groups
 
 Tailwind Traders has two Azure-based apps (App1 and App2). Each app has a web service with SQL database, virtual machines, and storage. Tailwind Traders needs to decide how to organize their resource groups. 
