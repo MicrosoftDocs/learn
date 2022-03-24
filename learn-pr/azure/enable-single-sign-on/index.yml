@@ -36,6 +36,8 @@ units:
 - learn.enable-single-sign-on.exercise-configure-single-sign-on-azure-portal
 - learn.enable-single-sign-on.configure-single-sign-on-application-host
 - learn.enable-single-sign-on.exercise-configure-single-sign-on-application-host
+- learn.enable-single-sign-on.test-single-sign-on
+- learn.enable-single-sign-on.exercise-test-single-sign-on
 - learn.enable-single-sign-on.knowledge-check
 - learn.enable-single-sign-on.summary
 badge:
