@@ -68,3 +68,12 @@ Suppose you only change the *module-2/main.bicep* file. Only the workflow for mo
 
 > [!NOTE]
 > The approach of creating a workflow for each of your reusable Bicep files is simple and flexible. But, it can become cumbersome when you have a large number of Bicep files, or if you don't want to maintain separate workflows for each module and template spec. You can also write scripts within your workflow to find the code that's changed and publish just those files. But, this is a more complex approach and it's out of the scope of this Microsoft Learn module.
+
+## Environments for reusable Bicep code
+
+When you deploy to Azure by using Bicep, it's common to use multiple environments to help you to validate and test your code before it's published to a production environment. In previous Microsoft Learn modules, you learned how to work with multiple environments from a deployment workflow. 
+
+Some organizations also apply the same principles to Bicep modules and template specs. For example, you might first publish new versions of your modules to a non-production registry so that the users of each module can try out the new versions. Then, after they've signed off, you can publish the modules to your organization's production registry. Like regular deployments, you can use *jobs* and *reusable workflows* to define the deployment sequence across your environments. In this Microsoft Learn module, we publish to a single environment to keep the workflow simple.
+
+> [!TIP]
+> When you consume modules from a registry or a template spec, you can specify an *alias*. By using aliases, you can make your deployment process easily work across multiple environments. Aliases don't work when you publish modules, though.
