@@ -3,7 +3,7 @@ uid: learn.wwl.explore-natural-language-processing
 metadata:
   title: 'Microsoft Azure AI Fundamentals: Explore natural language processing'
   description: 'Microsoft Azure AI Fundamentals: Explore natural language processing'
-  ms.date: 11/08/2021
+  ms.date: 03/24/2022
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -34,5 +34,6 @@ modules:
 - learn.wwl.recognize-synthesize-speech
 - learn.wwl.translate-text-with-translation-service
 - learn.wwl.create-language-model-with-luis
+- learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
 trophy:
   uid: learn.wwl.explore-natural-language-processing.trophy
