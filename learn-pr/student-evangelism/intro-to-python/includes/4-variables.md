@@ -44,7 +44,7 @@ x = True
 print(type(x)) # outputs: <class 'bool'>
 ```
 
-Internally, `bool` is treated as a special type of integer. Technically, `True` has a value of 1 and `False` has a value of 0. Typically, Booleans are'nt used to perform mathematical operations; rather, they're used to make decisions and perform branching. Nevertheless, it's interesting to understand the relationship between types. Many types are nothing more than specialized versions of more general types. Integers are a subset of floating point numbers, and Booleans are a subset of integers.
+Internally, `bool` is treated as a special type of integer. Technically, `True` has a value of 1 and `False` has a value of 0. Typically, Booleans aren't used to perform mathematical operations; rather, they're used to make decisions and perform branching. Nevertheless, it's interesting to understand the relationship between types. Many types are nothing more than specialized versions of more general types. Integers are a subset of floating point numbers, and Booleans are a subset of integers.
 
 ### Working with strings
 
