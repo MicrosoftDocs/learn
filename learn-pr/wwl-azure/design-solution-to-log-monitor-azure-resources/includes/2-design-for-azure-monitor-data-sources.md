@@ -8,7 +8,7 @@ Consider Tailwind Traders Azure environment. What sources of monitoring data mig
 
 :::image type="content" source="../media/azure-monitor-source.png" alt-text="Sources of monitoring data for Azure Monitor.":::
 
-Sources of monitoring data from Azure applications can be organized into tiers, the highest tiers being your application itself and the lower tiers being components of the Azure platform. The method of accessing data from each tier varies. The application tiers are summarized in the table below, and the sources of monitoring data in each tier are presented in the following sections. See [Monitoring data locations in Azure](/azure/azure-monitor/monitor-reference) for a description of each data location and how you can access its data.
+Sources of monitoring data from Azure applications can be organized into tiers, the highest tiers being your application itself and the lower tiers being components of the Azure platform. The method of accessing data from each tier varies. The application tiers are summarized in the table below, and the sources of monitoring data in each tier are presented in the following sections. Visit [Monitoring data locations in Azure](/azure/azure-monitor/monitor-reference) for a description of each data location and how you can access its data.
 
 Azure Monitor collects data automatically from a range of components. For example:
 
@@ -38,9 +38,10 @@ Telemetry related to your Azure tenant is collected from tenant-wide services su
 
 | **Destination**| **Description**| **Reference** |
 | - | - | - |
-| Azure Monitor Logs| Configure Azure AD logs to be collected in Azure Monitor to analyze them with other monitoring data.| [Integrate Azure AD logs with Azure Monitor logs (preview)](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics) |
-| Azure Storage| Export Azure AD logs to Azure Storage for archiving.| [Tutorial: Archive Azure AD logs to an Azure storage account (preview)](/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account) |
-| Azure Event Hub| Stream Azure AD logs to other locations using Event Hub.| [Tutorial: Stream Azure Active Directory logs to an Azure Event Hub (preview)](/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). |
+| Azure Monitor Logs| Configure Azure AD logs to be collected in Azure Monitor to analyze them with other monitoring data.| [Integrate Azure AD logs with Azure Monitor logs](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics) |
+| Azure Storage| Export Azure AD logs to Azure Storage for archiving.| [Tutorial: Archive Azure AD logs to an Azure storage account](/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account) |
+| Azure Event Hub| Stream Azure AD logs to other locations using Event Hub.| [Tutorial: Stream Azure Active Directory logs to an Azure Event Hub](/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). |
+| Azure Monitor partner integrations | Specialized integrations between Azure Monitor and other non-Microsoft monitoring platforms. Useful when you are already using one of the partners. | [Extend Azure with solutions from partners](/azure/partner-solutions/overview) |
 
 
 ## Operating system (guest) logging solutions 
