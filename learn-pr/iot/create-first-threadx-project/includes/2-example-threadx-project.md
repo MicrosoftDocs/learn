@@ -27,22 +27,22 @@ The header file contains all system equates, data structures, and service protot
 
 We'll use a counter `my_thread_counter` in this example, so we define and initialize it. We also define a thread `my_thread` that will be created in [building block 3](#building-block-3). This block would typically contain comments concerning the project, but we've skipped them for the sake of brevity.
 
-## Building block 2 
+## Building block 2
 
 `main()` is the shortest of all the blocks and will probably be the same for most of your projects. This code example illustrates `main()`:
 
 ```c
 main()
 { 
- /* Enter the Threadx kernel. */
+ /* Enter the ThreadX kernel. */
   tx_kernel_enter();
 }
 ```
 
 > [!NOTE]
-> The `tx_kernel_enter()` statement is required to start ThreadX. Statements may precede the `tx_kernel_enter()` statement but any statement following the `tx_kernel_enter()` statement is unreachable. 
+> The `tx_kernel_enter()` statement is required to start ThreadX. Statements may precede the `tx_kernel_enter()` statement but any statement following the `tx_kernel_enter()` statement is unreachable.
 
-The `tx_kernel_enter()` function initializes ThreadX and starts the task scheduler, and it doesn't return. After the task scheduler has started, the RTOS kernel takes control over the machine and only thread code created by the developer is run. 
+The `tx_kernel_enter()` function initializes ThreadX and starts the task scheduler, and it doesn't return. After the task scheduler has started, the RTOS kernel takes control over the machine and only thread code created by the developer is run.
 
 ## Building block 3
 
