@@ -33,7 +33,7 @@ quiz:
     - content: "Go to Configuration Management, then Crash Monitoring, and select an existing storage account. From there, configure the start and end times, choose the number of dumps to be collected, and finally click Start Monitor."
       isCorrect: false
       explanation: "That's incorrect. Configuration and Management contains checks for App Service configuration on backups, slots, scaling, etc. It does not allow Jim to narrow down the potential causes of a crash event."
-    - content: "Go to Diagnostics Tools, then Application Crashes, and select Diagnose and Solve Problems. From there, configure the start and end times, choose the number of dumps to be collected, and finally click Start Monitor."
+    - content: "Go to Diagnostics Tools, then Application Crashes, and select Crash Monitoring. From there, configure the start and end times, choose the number of dumps to be collected, and finally click Start Monitor."
       isCorrect: false
       explanation: "That's incorrect. Application Crashes is not available as part of Diagnostic Tools, and it will not navigate Jim to Crash Monitoring."
     - content: "Go to Diagnostics Tools, then Crash Monitoring, and select an existing storage account. From there, configure the start and end times, choose the number of dumps to be collected, and finally click Start Monitor."
