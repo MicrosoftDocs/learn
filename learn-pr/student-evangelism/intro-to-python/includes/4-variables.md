@@ -10,7 +10,7 @@ y = x + 5     # assign variable y the value of x plus 5
 z = y         # assign variable z the value of y
 ```
 
-These examples assign numbers to variables, but numbers are just one of several data types Python supports. Notice there is no type declared for the variables. This is because Python is a *dynamically typed* language, meaning the variable type is determined by the data assigned to it. In the examples above, the x, y, and z variables are be integer types, capable of storing positive and negative whole numbers.
+These examples assign numbers to variables, but numbers are just one of several data types Python supports. Notice there's no type declared for the variables. This is because Python is a *dynamically typed* language, meaning the variable type is determined by the data assigned to it. In the examples above, the x, y, and z variables are integer types, capable of storing positive and negative whole numbers.
 
 Variable names are case sensitive and can use any letter, number, and the underscore (`_`) character. However, they can't start with a number.
 
@@ -44,7 +44,7 @@ x = True
 print(type(x)) # outputs: <class 'bool'>
 ```
 
-Internally, `bool` is treated as a special type of integer. Technically, `True` has a value of 1 and `False` has a value of 0. Typically, Booleans are not used to perform mathematical operations; rather, they are used to make decisions and perform branching. Nevertheless, it is interesting to understand the relationship between types. Many types are nothing more than specialized versions of more general types. Integers are a subset of floating point numbers, and Booleans are a subset of integers.
+Internally, `bool` is treated as a special type of integer. Technically, `True` has a value of 1 and `False` has a value of 0. Typically, Booleans are'nt used to perform mathematical operations; rather, they're used to make decisions and perform branching. Nevertheless, it's interesting to understand the relationship between types. Many types are nothing more than specialized versions of more general types. Integers are a subset of floating point numbers, and Booleans are a subset of integers.
 
 ### Working with strings
 
@@ -64,7 +64,7 @@ x = 'Hello' + ' ' + 'World!'
 print(x) # outputs: Hello World!
 ```
 
-You will learn more about strings in another lesson, including how to parse them and how to manipulate them in various ways. You will also learn about other important data types such as lists, which store collections of data and are frequently used to hold collections of strings.
+You'll learn more about strings in another lesson, including how to parse them and how to manipulate them in various ways. You'll also learn about other important data types such as lists, which store collections of data and are frequently used to hold collections of strings.
 
 ## Print to the console
 
@@ -76,4 +76,4 @@ The following statement displays "Hello World!" on the screen:
 print('Hello World!')
 ```
 
-The argument passed to `print` is a *string*, which is one of the fundamental data types in Python used to store and manage text. By default, `print` outputs a newline character at the end of the line, so that subsequent calls to `print` will start on the next line.
+The argument passed to `print` is a *string*, which is one of the fundamental data types in Python used to store and manage text. By default, `print` outputs a newline character at the end of the line, so subsequent calls to `print` will start on the next line.
