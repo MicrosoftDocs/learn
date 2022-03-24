@@ -173,7 +173,7 @@ print(date.today())
 
 ### Data type conversion
 
-You want to use a date with something, usually a string. If you, for example, if want to show today's date on the console, you might run into a problem:
+You want to use a date with something, usually a string. If you, for example, want to show today's date on the console, you might run into a problem:
 
 ```python
 print("Today's date is: " + date.today())
