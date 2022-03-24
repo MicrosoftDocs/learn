@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.iot.threadx-next-steps
+metadata:
+  title: Next steps for Azure RTOS ThreadX
+  description: Learn the next learning path for ThreadX.
+  ms.date: 03/24/2022
+  author: edlamie80
+  ms.author: pacorte
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+title: Azure RTOS ThreadX next steps
+
+summary: Learn the next steps for Azure RTOS ThreadX.
+
+abstract:  | 
+  In this module, you will:
+  - Review the concepts and features of ThreadX.
+  - Explore the components of Azure RTOS.
+  - Explore the ThreadX user guide.
+  - Explore the online ThreadX book.
+
+prerequisites: |
+  - Working knowledge of C or C++
+  - Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)
+
+iconUrl: /learn/achievements/iot/threadx-next-steps.svg
+
+levels:
+- beginner
+
+roles:
+- developer
+
+products:
+- azure
+- azure-iot
+- azure-iot-hub
+
+units:
+- learn.iot.threadx-next-steps.overview
+
+badge:
+  uid: learn.iot.threadx-next-steps.badge 
