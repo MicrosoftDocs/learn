@@ -3,12 +3,14 @@ uid: learn.data-ai.upload-data-to-azure-data-lake-storage.create-azure-data-lake
 title: Exercise - Create an Azure Storage account for Azure Data Lake Storage
 metadata:
   title: Exercise - Create an Azure Storage account for Azure Data Lake Storage
-  description: Create an Azure Storage account for Azure Data Lake Storage
-  ms.date: 01/31/2019
+  description: "Create an Azure Storage account for Azure Data Lake Storage"
+  ms.date: 03/24/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-azure-data-lake.md)]
