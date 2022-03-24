@@ -8,9 +8,3 @@ You can access Ask Genie anywhere within App Service Diagnostics. Simply select 
 
  
 :::image type="content" source="../media/asd-module-troubleshoot-web-app-down-scenarios-with-app-service-diagnostics-clean-copy-22-04.png" alt-text="<Screenshot of Ask Genie showing an insight pointing out that the app does not have a certificate configured against it.>":::
-
-
-
-
- 
-
