@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-vpn-gateways.troubleshoot-site-to-site
+title: Troubleshoot site-to-site VPN gateways
+metadata:
+  title: Troubleshoot site-to-site VPN gateways
+  description: "Troubleshoot site-to-site VPN gateways"
+  ms.date: 03/24/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-troubleshoot-site-to-site.md)]
