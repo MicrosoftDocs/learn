@@ -3,7 +3,7 @@ uid: learn.azure.azure-stack-hci-plan-deploy.5-verify-deployment
 metadata:
   title: Validate deployment of Azure Stack HCI
   description: An overview of validating a deployment of Azure Stack HCI
-  ms.date: 12/09/2020
+  ms.date: 03/24/2022
   author: JasonGerend
   ms.author: jgerend
   ms.topic: interactive-tutorial
@@ -29,14 +29,14 @@ quiz:
       isCorrect: false
       explanation: "That's incorrect. Workload-related changes do not warrant running cluster validation."
 
-  - content: "What tool can you use to validate cluster performance by using synthetic workloads?"
+  - content: "What tool can test for issues with network connectivity, throughput, and congestion on your network, including with the RDMA protocol?"
     choices:
-    - content: "Validate-DCB"
+    - content: "Ping"
       isCorrect: false
-      explanation: "That's incorrect. The Validate-DCB tool validates the DCB configuration in clustering scenarios."
+      explanation: "That's incorrect. The Ping tool determines if a specified host can be reached across an IP network."
     - content: "Test-Cluster"
       isCorrect: false
-      explanation: "That's incorrect. Test-Cluster run the cluster validation."
-    - content: "VM Fleet"
+      explanation: "That's incorrect. Test-Cluster runs the cluster validation."
+    - content: "Test-NetStack"
       isCorrect: true
-      explanation: "That's correct. VM Fleet provisions a distributed set of VMs to emulate a functional or performance impact of actual workloads against S2D infrastructure."
+      explanation: "That's correct. Test-NetStack can validate the various network data paths, testing native, synthetic, and hardware offloaded (RDMA) data paths for issues with connectivity, packet fragmentation, low throughput, and congestion."
