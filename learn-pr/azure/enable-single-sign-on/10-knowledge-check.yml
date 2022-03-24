@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-single-sign-on.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Knowledge check for the enable single sign-on module"
+  ms.date: 3/23/2022
+  author: davidmu1
+  ms.author: davidmu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+quiz:
+  questions:
+  - content: "How does an administrator know which SSO methods an application supports?"
+    choices:
+    - content: "Find the information on the overview page in the gallery."
+      isCorrect: true
+      explanation: "SSO supportability information can be found on the overview page for the application."
+    - content: "SSO information is not available in the applications list page."
+      isCorrect: false
+      explanation: "SSO supportability information can be found on the overview page for the application."
+    - content: "Contact the owner of the application and ask what methods are supported."
+      isCorrect: false
+      explanation: "Application owners are not typically available to answer SSO supportability questions."
+  - content: "Which SSO properties are needed to configure the application at its host?"
+    choices:
+    - content: "**Reply URL**, **Azure AD Identifier**, and **Logout URL**."
+      isCorrect: false
+      explanation: "Reply URL** is not a required property for configuring SSO at the application host."
+    - content: "**Sign on URL**, **Reply URL**, and **Sign out URL**."
+      isCorrect: false
+      explanation: "**Sign on URL** and **Reply URL** are not required properties for configuring SSO at the application host."
+    - content: "**Login URL**, **Azure AD Identifier**, and **Logout URL**."
+      isCorrect: true
+      explanation: "The **Login URL**, **Azure AD Identifier**, and **Logout URL** are all needed to configure SSO."
+  - content: "What is the purpose of the **Azure AD Identifier**?"
+    choices:
+    - content: "Identifies the application in the Azure portal."
+      isCorrect: false
+      explanation: "The **Azure AD Identifier** is not associated with the application."
+    - content: "Identifies the Azure AD tenant where the application is registered."
+      isCorrect: true
+      explanation: "The **Azure AD Identifier is associated with the Azure AD tenant where the application is added."
+    - content: "Identifies the service principal that represents the application."
+      isCorrect: false
+      explanation: "The **Azure AD Identifier is not associated with the service principal of the application."

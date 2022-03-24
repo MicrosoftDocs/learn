@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-single-sign-on.add-new-enterprise-application
+title: Add a new enterprise application
+metadata:
+  unitType: learning-content
+  title: Add new enterprise application
+  description: "Identify an application that supports SAML-based single sign-on and add it from the application gallery to their Azure AD tenant."
+  ms.date: 3/23/2022
+  author: davidmu1
+  ms.author: davidmu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-add-new-enterprise-application.md)]

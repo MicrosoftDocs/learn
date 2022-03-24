@@ -18,8 +18,7 @@ Azure Active Directory
 
 - An Azure AD subscription. If you don't have a subscription, you can get a free account.
 - One of the following roles in the Azure AD tenant: Global Administrator, Cloud Application Administrator, Application Administrator
-- A single sign-on enabled subscription for the application 
-
+- A single sign-on enabled subscription for the application
 
 ## Summary
 
@@ -60,10 +59,9 @@ Add more units as needed for your content
 
     Provide a scenario of a real-world job task that shows how the technology is used in practice:
 
-    Suppose you’re an IT administrator at a retail company that provides access to several applications for users that perform tasks, such as marketing, sales, and operations. A new application is requested to be added to assist in company promotion and needs to be integrated into the corporate processes and made available to users as appropriate. 
+    Suppose you’re an IT administrator at a retail company that provides access to several applications for users that perform tasks, such as marketing, sales, and operations. A new application is requested to be added to assist in company promotion and needs to be integrated into the corporate processes and made available to users as appropriate.
 
     You realize that this addition causes users to sign in to yet another application using specific credentials for it. Each application requires its own set of credentials causing users to have to sign in multiple times if they use multiple applications. You want to be able to configure the system so that a user can sign in once and get access to all applications and resources that they need to work effectively.
-
 
 1. Add a new enterprise application
 
@@ -87,8 +85,8 @@ Add more units as needed for your content
     1. Select **Create**.
 
     If you choose to install an application that uses OpenID Connect based SSO, instead of seeing a **Create** button, you see a button that redirects you to the application sign-in or sign-up page depending on whether you already have an account there.
-    
-    **Knowledge check**
+
+    Knowledge check
 
     How does an administrator know which SSO methods an application supports?
     - Run a script that queries the application for SSO support.
@@ -116,7 +114,7 @@ Add more units as needed for your content
     1. Go to the Azure Active Directory Admin Center and sign in using one of the roles listed in the prerequisites.
     1. In the left menu, select **Enterprise applications**. The **All applications** pane opens and displays a list of the applications in your Azure AD tenant. Search for and select the application that you want to use. For example, **Azure AD SAML Toolkit 1**.
     1. In the **Manage** section of the left menu, select **Single sign-on** to open the **Single sign-on** pane for editing.
-    1. Select **SAML** to open the SSO configuration page. 
+    1. Select **SAML** to open the SSO configuration page.
     1. Select **Edit** in the Basic SAML Configuration section on the **Set up single sign-on** pane.
     1. For **Reply URL (Assertion Consumer Service URL)**, enter `https://samltoolkit.azurewebsites.net/SAML/Consume`.
     1. For **Sign on URL**, enter `https://samltoolkit.azurewebsites.net/`.
@@ -140,12 +138,12 @@ Add more units as needed for your content
     1. Select **Select**.
     1. On the **Add Assignment** pane, select **Assign** at the bottom of the pane.
 
-    **Knowledge check**
+    Knowledge check
 
     Which SSO properties are needed to configure the application at its host?
     - **Reply URL**, **Azure AD Identifier**, and **Logout URL**.
     - **Sign on URL**, **Reply URL**, and **Sign out URL**.
-    - **Login URL**, **Azure AD Identifer**, and **Logout URL**.
+    - **Login URL**, **Azure AD Identifier**, and **Logout URL**.
     - **Name**, **Description**, and **Azure AD Identifer**.
 
 1. Configure single sign-on properties for the application at its host
@@ -185,7 +183,7 @@ Add more units as needed for your content
     1. For **Sign on URL**, enter the **SP Initiated Login URL** value that you previously recorded.
     1. Select **Save**.
 
-    **Knowledge check**
+    Knowledge check
 
     What is the purpose of the **Azure AD Identifier**?
     - Identifies the application in the Azure portal.
@@ -199,8 +197,8 @@ Add more units as needed for your content
 
 1. Summary
 
-    We wanted to make sure that users in our organization only need to sign in once to their Azure AD tenant and then access all applications that they need, instead of signing in to each application individually. 
-    
+    We wanted to make sure that users in our organization only need to sign in once to their Azure AD tenant and then access all applications that they need, instead of signing in to each application individually.
+
     By configuring SSO in the tenant by using the Azure portal, we can define all of the URLs and the certificate that are needed for secure access. We also configured the application at its host to be able to securely connect to application using the user accounts that we created and assigned.
 
     Tested the SSO experience that was configured.
