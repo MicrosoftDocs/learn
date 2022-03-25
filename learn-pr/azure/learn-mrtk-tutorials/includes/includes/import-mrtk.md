@@ -1,100 +1,150 @@
 ## [Unity 2020 + Openxr](#tab/openxr)
 
-1. Once **MixedRealityFeatureTool** is opened, select **Start** to launch the Mixed Reality Feature Tool.
+1. In the Mixed Reality Feature Tool, select **Start**.
 
-    :::image type="content" source="../../media/mixed-reality-feature-tool.png" alt-text="Screenshot of MixedRealityFeatureTool." lightbox="../../media/mixed-reality-feature-tool.png":::
+    :::image type="content" source="../../media/mixed-reality-feature-tool.png" alt-text="Screenshot of the Mixed Reality Feature Tool opening screen.":::
 
-1. Select the **ellipsis** icon next to **Project path** and browse to your project folder; for example, _D:\MixedRealityLearning\MRTK Tutorials_, and then select **Open**.
+1. Select the Browse button (it's the "three-dot" button in the image below), then navigate to your project, and then open it.
+
+    :::image type="content" source="../../media/002-open-your-project.png" alt-text="Open your project":::
      
     > [!NOTE]
-    > When browsing for the Unity project folder, by default, the dialog contains a backslash '\_' for the file name. You must provide a value in this field in order to select the folder.
+    > The **Project Path** box in the Tool must contain some value, so it inserts a backslash ("\_") by default.
 
-    The **Mixed Reality Feature Tool** performs validation to ensure that it has been directed to a Unity project folder. The folder must contain Assets, Packages, and Project Settings folders. 
+    After you select a folder, the Tool checks to ensure that it's a valid Unity project folder.
 
-    :::image type="content" source="../../media/path.png" alt-text="Screenshot of Adding Unity Path for MixedRealityFeatureTool." lightbox="../../media/path.png":::
+    :::image type="content" source="../../media/007-project-path.png" alt-text="Screenshot of the Mixed Reality feature Tool Project Path screen.":::
   
- 1. In the Mixed Reality Feature Tool, select **Discover Features**. Features are grouped by category. 
-  
- 1. Select **Mixed Reality Toolkit** to find packages relating to the Mixed Reality Toolkit, and then select **Platform Support** to find packages relating to platforms.
+1. Select **Discover Features**.
 
-     :::image type="content" source="../../media/discover-features.png" alt-text="Screenshot of MixedRealityFeatureTool Discover Features." lightbox="../../media/discover-features.png":::
+    **Note**: You may need to wait a few seconds while the Tool refreshes the packages from the feeds.
 
-1. Ensure **Mixed Reality Toolkit Foundation** is checked, and then select **MRTK 2.7.0** for that field. 
+1. On the **Discover Features** page, note that there is a list of six package groups.
+
+    :::image type="content" source="../../media/003-mrft-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
+
+1. Click the "+" button to the left of **Mixed Reality Toolkit (0 of 10)** and then select the latest version of **Mixed Reality Toolkit Foundation**.
+
+    > [!NOTE]
+    > The Mixed Reality Toolkit Foundation package is the only package that must be imported and configured in order to use MRTK with your project. This package includes the core components required to create a mixed reality application.
+
+1. Click the "+" button to the left of **Platform Support (0 of 5)** and then select the latest version of **Mixed Reality OpenXR Plugin**.
  
-1. Ensure **Mixed Reality OpenXR Plugin** is checked, and then select most recent version available.
+     :::image type="content" source="../../media/008-package-selections.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool.":::
 
-1. Select **Get features**. A dialog prompts you to validate your choices.
-
-    :::image type="content" source="../../media/mixed-reality-feature-tool-open-mixed-reality.png" alt-text="Screenshot of MixedRealityFeatureTool Open MixedReality." lightbox="../../media/mixed-reality-feature-tool-open-mixed-reality.png":::
-    
-1. Select **Validate** to validate the selected package. The system should return **No validation issues were detected**. 
+1. After you've made your selection(s), click **Get Features**.
+1. Select **Validate** to validate the packages you selected. You should see a dialog that says **No validation issues were detected**. When you do, click **OK**.
+1. On the **Import Features** page, the left-side column, **Features**, displays the packages you just selected. The right-side column, **Required dependencies**, displays any dependencies. You can click the **Details** link for any of these items to learn more about them.
+1. When you're ready to move on, select **Import.** On the **Review and Approve** page, you can review information about the packages.
+1. Select **Approve.**
+1. Return to the Unity Editor and click a blank area in the UI. You'll see a progress bar showing you that your packages are being imported.
  
-1. Select **OK**, and then select **Import**.
-
-    :::image type="content" source="../../media/select-required-package.png" alt-text="Screenshot of MixedRealityFeatureTool Select required package." lightbox="../../media/select-required-package.png":::
-
-1. Select **Approve** to add the **Mixed Reality Toolkit** to your project.
-
-    :::image type="content" source="../../media/validate-package.png" alt-text="Screenshot of MixedRealityFeatureTool Validate package." lightbox="../../media/validate-package.png":::
-
 ## Configure the Unity project
 
-1. After Unity has imported the package, select **Yes** to restart the Unity editor to enable to backends for new plugin.
+1. After Unity has imported the packages, a warning appears asking if you want to enable the backends by restarting the editor. Select **Yes**.
 
-    :::image type="content" source="../../media/unity-restart-option.png" alt-text="Screenshot of Unity Restart Option." lightbox="../../media/unity-restart-option.png":::
+    :::image type="content" source="../../media/unity-restart-option.png" alt-text="Screenshot of Unity Restart Option.":::
 
-1. The MRTK Project Configurator should appear. If it doesn't, manually open it by selecting **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**:
+1. The MRTK Project Configurator should appear. If it doesn't, open it manually: on the menu bar, select **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**:
 
-    :::image type="content" source="../../media/mrtk-project-configurator-window.png" alt-text="Screenshot of Open MRTK project configurator window." lightbox="../../media/mrtk-project-configurator-window.png":::
+    :::image type="content" source="../../media/009-open-mrtk-configurator.png" alt-text="Screenshot of the menu bar command for opening the MRTK Configurator.":::
     
-1. Select **Unity OpenXR Plugin** to enable XR Plugin Management and add its required packages to your project.
+1. Select **Unity OpenXR Plugin** to enable XR Plugin Management and add the Unity OpenXR Plugin to your project.
 
-    :::image type="content" source="../../media/open-xr-plug-in.png" alt-text="Screenshot of Add Unity OpenXR Plugin." lightbox="../../media/open-xr-plug-in.png":::
+    :::image type="content" source="../../media/010-configurator-select-openxr.png" alt-text="Screenshot of MRTK project configurator window with OpenXR selected.":::
 
-1. When the required Unity packages for XR Plugin Management have been imported, select **Show XR Plug-In Management Settings** in MRTK project Configurator.
+1. On the **Welcome to MRTK!** screen, select **Show XR Plug-In Management Settings**.
 
-    :::image type="content" source="../../media/xr-plug-in-management-settings.png" alt-text="Screenshot of Show XR Plug-In Management Settings." lightbox="../../media/xr-plug-in-management-settings.png":::
+    :::image type="content" source="../../media/011-show-xr-plugin-management.png" alt-text="Screenshot of the Show XR Plug-In Management Settings button.":::
 
-1. **Project Settings** opens. Under **XR Plug-in Management**, ensure that Universal Windows Platform settings (Windows logo tab) is active, and then ensure **Initialize XR on Startup**, **Open XR**, and **Microsoft HoloLens feature group** are all enabled (checkboxes are checked).
+1. The **Project Settings** window opens. Ensure that you're on the **XR Plug-in Management** page with the Universal Windows Platform settings (Windows logo tab) displayed.
 
-    :::image type="content" source="../../media/project-settings-window-3.png" alt-text="Screenshot of Project Settings Window 3." lightbox="../../media/project-settings-window-3.png":::
+    :::image type="content" source="../../media/012-xr-plugin-mgmt-page.png" alt-text="Screenshot of the Project Settings Window open to the XR Plugin Management Page and Universal Windows Platform tab.":::
 
-1. On the **MRTK Project Configurator** update message, select **Apply Settings**.
+ 1. Ensure that **Initialize XR on Startup** is selected, and then, under **Plugin Providers**, click **Open XR**.
 
-1. To validate OpenXR configuration, under **XR Plug-in Management** select **OpenXR** and verify the following items are checked:
+    :::image type="content" source="../../media/013-init-xr-on-startup.png" alt-text="Screenshot of Project Settings Window 3.":::
 
-    * Depth Submission Mode: **Depth 16 Bit**
-    * Interaction Profiles: **Microsoft Hand Interaction Profile**
+1. The OpenXR Plugin loads, and then two items appear underneath **OpenXR**. Select the first one, **Microsoft HoloLens feature group**.
 
-    :::image type="content" source="../../media/project-settings-window-4.png" alt-text="Screenshot of Project Settings Window 4." lightbox="../../media/project-settings-window-4.png":::
+1. Note that there's now a yellow warning triangle next to **OpenXR**. Hover your cursor over the triangle, then read the message in the popup, and then select the triangle.
+
+    :::image type="content" source="../../media/014-yellow-triangle-warning.png" alt-text="Screenshot of warning about incompatible settings.":::
+
+1. In the **OpenXR Project Validation** window, there are several issues listed. Select the **Fix All** button.
+
+    :::image type="content" source="../../media/015-fix-all-button.png" alt-text="Screenshot of the Fix All button in the OpenXR Project Validation window.":::
+
+1. One issue remains and tells you that you must add at least one interaction profile. To do so, click **Edit**. This takes you to the settings for the **OpenXR** plugin in the **Project Settings** window.
+
+    :::image type="content" source="../../media/016-openxr-screen.png" alt-text="Screenshot of the Project Settings window with the OpenXR settings displayed.":::
+
+1. Underneath **Interaction Profiles**, note the plus sign (+) button.
+
+    :::image type="content" source="../../media/017-add-profile-button.png" alt-text="Screenshot of the Add Interaction Profile button.":::
+
+ 1. Click the button three times, each time choosing a different profile:
+
+    **Eye Gaze Interaction Profile**
+
+    **Microsoft Hand Interaction Profile**
+
+    **Microsoft Motion Controller Profile**
+
+    :::image type="content" source="../../media/018-interaction-profiles.png" alt-text="Screenshot of interaction profiles that should be added.":::
+
+    If the **Eye Gaze Interaction Profile**, or any other profile, appears with a yellow triangle next to it, select the triangle, and then in the **OpenXR Project Validation** window, click the **Fix** button. When you're finished, close the **OpenXR Project Validation** window.
+
+    :::image type="content" source="../../media/019-fix-eye-gaze.png" alt-text="Screenshot of the Fix button for the Eye Gaze interaction profile.":::
+
+1. In the **Project Settings** window under **OpenXR Feature Groups**, ensure that the following are selected:
+   
+   **Microsoft HoloLens**
+
+   **Hand Tracking**
+
+   **Motion Controller Model**
+
+    :::image type="content" source="../../media/020-selected-features.png" alt-text="Screenshot of selected features for OpenXR.":::
+
+1. Click the **Depth Submission Mode** drop down and then select **Depth 16 Bit**.
+
+    :::image type="content" source="../../media/021-depth-submission-mode.png" alt-text="Screenshot of Depth 16 Bit selected for Depth Submission Mode.":::
 
     > [!TIP]
-    > Reducing the Depth Format to 16-bit is optional, but it may improve graphics performance in your project. To learn more about this topic, refer to  [Depth buffer sharing (HoloLens)](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering).
+    > Reducing the Depth Format to 16-bit is optional, but it may improve graphics performance in your project. To learn more, see [Depth buffer sharing (HoloLens)](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering).
 
-1. In the **MRTK Project Configurator** window, select **Next**, and then select **Apply**. (You can manually open the configurator from **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**)
+    > [!NOTE]
+    > The **Render Mode** setting, located just above **Depth Submission Mode**, is set by default to **Single Pass Instanced**. In mixed reality apps, the scene is rendered twice: once for each eye. The result is "stereoscopic vision." This doubles the amount of necessary computing, so it's important to select the most efficient rendering path in Unity to save on both CPU and GPU time. Single pass instanced rendering is the best choice here--we recommend that you enable it by default for every project. To learn more about this, [see the Unity documentation](https://docs.unity3d.com/Manual/SinglePassInstancing.html).
 
-    :::image type="content" source="../../media/mrtk-project-configurator.png" alt-text="Screenshot of MRTK Project Configurator." lightbox="../../media/mrtk-project-configurator.png":::
+1. Close the **Project Settings** window.
+1. In the **MRTK Project Configurator** window, select **Apply Settings**.
 
+    :::image type="content" source="../../media/022-configurator-apply-settings.png" alt-text="Screenshot of MRTK Project Configurator with the Apply Settings button.":::
+
+1.  Select **Next** and then **Apply**. 
 1. Unity must restart in order for the configuration to take effect. When prompted, select **Apply** to restart the Unity editor.
-
-    :::image type="content" source="../../media/mrtk-project-configurator-2.png" alt-text="Screenshot of MRTK Project Configurator 2." lightbox="../../media/mrtk-project-configurator-2.png":::
-
-1. When Unity restarts, from the Unity menu, open **MRTK Project Configurator**, and then select **Next** and **Done** to complete the configuration for OpenXR.
 
 ## Configure project settings for OpenXR
 
+1. After Unity restarts, in the menu bar, select **Edit** > **Project Settings...**.
 
-1. In the Unity menu, select **Edit** > **Project Settings...** to open **Project Settings**.
+1. In the **Project Settings** window's left-side column, select **Player**.
+1. Note that in the **Player** window, the **Product Name** is "MRTK Tutorial." This is taken from your project name and will be the name displayed in the HoloLens Start menu.
 
-1. In **Project Settings**, select **Player** > **Publishing Settings**, and then in the **Package name** field, enter a suitable name; for example, _MRTKTutorials-GettingStarted_:
-
-    :::image type="content" source="../../media/package-name-configured.png" alt-text="Screenshot of Unity Publishing Settings with package name configured." lightbox="../../media/package-name-configured.png":::
-
-    > [!NOTE]
-    > 'Package name' is the unique identifier for the app. You should change this identifier before deploying the app to avoid overwriting previously installed apps.
+    :::image type="content" source="../../media/025-product-name.png" alt-text="Screenshot of Unity Publishing Settings with the Project Name box filled in.":::
 
     > [!TIP]
-    > 'Product Name' is the name displayed in the HoloLens Start menu. To make the app easier to locate during development, add an underscore in front of the name to sort it to the top of any list.
+    > To make the app easier to locate during development, add an underscore in front of the name to sort it to the top of any list.
+
+1. Click the **Publishing Settings** drop down, and then in the **Package name** field, enter a suitable name--for example, _MRTK-Tutorials-Getting-Started_:
+
+    :::image type="content" source="../../media/026-package-name.png" alt-text="Screenshot of Unity Publishing Settings with the package name box filled in.":::
+
+    > [!NOTE]
+    > The package name is the unique identifier for the app. If you want to avoid overwriting previously installed versions of the app with the same name, you should change this identifier before deploying the app.
+
+1. Close the **Project Settings** window.
 
 ## [Unity 2019/2020 + windows xr plugin](#tab/winxr)
 
@@ -166,7 +216,7 @@
 
 1. In **MRTK Project Configurator**, select **Next**, and then in **Audio spatializer** dropdown list, select **MS HRTF Spatializer**.
     
- 1. Select  **Apply**.
+1. Select  **Apply**.
 
     :::image type="content" source="../../media/set-window-enable-mixed-reality-2.png" alt-text= "Screenshot of Player settings window Enable Mixed Reality 2." lightbox="../../media/set-window-enable-mixed-reality-2.png":::
 
@@ -207,7 +257,7 @@
 
 1. In the Mixed Reality Feature Tool, select **Discover Features**. Features are grouped by category.
     
- 1. Select the **Mixed Reality Toolkit** to find packages relating to the Mixed Reality Toolkit.
+1. Select the **Mixed Reality Toolkit** to find packages relating to the Mixed Reality Toolkit.
 
     :::image type="content" source="../../media/discover-feature.png" alt-text= "Screenshot of MixedRealityFeatureTool Discover Features." lightbox="../../media/discover-feature.png":::
 
