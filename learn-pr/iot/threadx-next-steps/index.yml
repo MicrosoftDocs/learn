@@ -39,7 +39,7 @@ products:
 
 units:
 - learn.iot.threadx-next-steps.overview
-- learn.iot.threadx-next-steps.azure-rtos-components
+- learn.iot.threadx-next-steps.azure-real-time-operating-system-components
 
 badge:
   uid: learn.iot.threadx-next-steps.badge 
