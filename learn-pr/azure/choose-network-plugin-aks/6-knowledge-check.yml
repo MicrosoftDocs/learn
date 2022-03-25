@@ -26,7 +26,7 @@ quiz:
     choices:
     - content: "Kubenet"
       isCorrect: false
-      explanation: "Windows Server-based node pools are unavailable when using kubenet."
+      explanation: "Windows Server-based node pools are unavailable when using Kubenet."
     - content: "Azure CNI"
       isCorrect: true
       explanation: "Windows Server-based node pools must use Azure CNI."
@@ -34,7 +34,7 @@ quiz:
     choices:
     - content: "Kubenet"
       isCorrect: false
-      explanation: "Clusters using kubenet lack certain capabilities and introduce extra latency when pods communicate."
+      explanation: "Clusters using Kubenet lack certain capabilities and introduce extra latency when pods communicate."
     - content: "Azure CNI"
       isCorrect: true
       explanation: "The extra features and reduced latency of Azure CNI make it a better choice for production clusters."
