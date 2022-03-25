@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.turn-insight-into-action-combine-sap-other-data.examine-combining-data-from-multiple-sources
+title: Examine combining data from multiple sources
+metadata:
+  title: Examine combining data from multiple sources
+  description: "Examine combining data from multiple sources"
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-examine-combine-data-from-multiple-sources.md)]
