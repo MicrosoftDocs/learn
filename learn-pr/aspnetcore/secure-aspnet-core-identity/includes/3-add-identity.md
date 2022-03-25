@@ -42,11 +42,11 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
 1. Open the app in your browser by selecting the URL with <kbd>Ctrl</kbd>+*click*.
 
     > [!IMPORTANT]
-    > If you're using the *.devcontainer* in Docker, the SSL certificate from inside the container won't be trusted by your browser. To view the web app, you must do one of the following:
+    > If you're using the *.devcontainer* in Docker, the SSL certificate from inside the container won't be trusted by your browser. To view the web app, you must do **one** of the following:
     >
+    > * Ignore the certificate error and select **Continue to localhost (not recommended)**. Exact wording may vary by browser.
     > * Save the certificate and add it to your trusted certificate authorities.
     > * Import an existing development certificate inside the container. For more details, see the comments in *./devcontainer/devcontainter.json*.
-    > * Ignore the certificate error and select **Continue to localhost (not recommended)**. Exact wording may vary by browser.
     >
     > If you choose to import an existing development certificate inside the container, the container path */root/.aspnet/* is exposed as *.devcontainer\persisted-data\.aspnet* outside the container. This is for your convenience.
     >
