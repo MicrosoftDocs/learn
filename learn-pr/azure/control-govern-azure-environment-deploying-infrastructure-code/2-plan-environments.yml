@@ -18,7 +18,7 @@ quiz:
   - content: 'Question 1'
     choices:
     - content: 'Answer 1'
-      isCorrect: false
+      isCorrect: true
       explanation: 'Explanation 1'
     - content: 'Answer 2'
       isCorrect: false
@@ -30,7 +30,7 @@ quiz:
   - content: 'Question 2'
     choices:
     - content: 'Answer 1'
-      isCorrect: false
+      isCorrect: true
       explanation: 'Explanation 1'
     - content: 'Answer 2'
       isCorrect: false
