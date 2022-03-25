@@ -3,7 +3,7 @@ uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code
 metadata:
   moduleType: standard
   title: Control and govern your Azure environment by deploying your infrastructure as code
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: TODO
   ms.date: 03/21/2022
   author: johndowns
   ms.author: jodowns
@@ -11,18 +11,18 @@ metadata:
   ms.prod: learning-azure
 title: Control and govern your Azure environment by deploying your infrastructure as code
 summary: |
-  TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
+  Plan how to harden and secure your Azure environment, and to enforce controls over your configuration changes and deployments. Require your infrastructure be defined as code, and protect your environment against manual changes.
 abstract: |
   After completing this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+    - Plan an Azure deployment strategy for multiple environments
+    - Harden and secure a deployment pipeline or workflow
+    - Harden and secure the Azure environment to ensure changes are made using a controlled process
 prerequisites: |
-  You should be familiar with using:
+  You should be familiar with:
     - Bicep, including creating and deploying basic files.
     - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-    - Pull requests.
-    - Pipelines in Azure Pipelines, or workflows in GitHub Actions.
+    - Git, including branching and pull requests.
+    - Deploying your Bicep code by using Azure Pipelines or GitHub Actions, including linting and testing your code.
 iconUrl: /learn/achievements/bicep/control-govern-azure-environment-deploying-infrastructure-code.svg
 levels:
   - advanced

@@ -13,3 +13,28 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/2-plan-environments.md)]
+quiz:
+  questions:
+  - content: 'Question 1'
+    choices:
+    - content: 'Answer 1'
+      isCorrect: false
+      explanation: 'Explanation 1'
+    - content: 'Answer 2'
+      isCorrect: false
+      explanation: 'Explanation 2'
+    - content: 'Answer 3'
+      isCorrect: false
+      explanation: 'Explanation 3'
+
+  - content: 'Question 2'
+    choices:
+    - content: 'Answer 1'
+      isCorrect: false
+      explanation: 'Explanation 1'
+    - content: 'Answer 2'
+      isCorrect: false
+      explanation: 'Explanation 2'
+    - content: 'Answer 3'
+      isCorrect: false
+      explanation: 'Explanation 3'
