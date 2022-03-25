@@ -22,7 +22,7 @@ abstract: |
   - Configure distributed tracing to debug a microservices architecture
 prerequisites:  |
  - Azure CLI.
- - Java 8 and an IDE.
+ - Java 11 and an IDE.
  - cURL or a similar HTTP utility.
 iconUrl: /learn/achievements/azure-spring-cloud-workshop.svg
 levels:
