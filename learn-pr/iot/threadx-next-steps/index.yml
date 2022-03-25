@@ -5,7 +5,7 @@ metadata:
   description: Learn the next learning path for ThreadX.
   ms.date: 03/24/2022
   author: edlamie80
-  ms.author: pacorte
+  ms.author: liydu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 
@@ -39,6 +39,7 @@ products:
 
 units:
 - learn.iot.threadx-next-steps.overview
+- learn.iot.threadx-next-steps.azure-rtos-components
 
 badge:
   uid: learn.iot.threadx-next-steps.badge 

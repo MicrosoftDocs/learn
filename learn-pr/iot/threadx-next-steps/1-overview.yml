@@ -3,10 +3,10 @@ uid: learn.iot.threadx-next-steps.overview
 title: Overview
 metadata:
   title: Overview
-  description: Next steps for ThreadX
+  description: Overview of next steps for ThreadX
   ms.date: 01/27/2022
   author: edlamie80
-  ms.author: pacorte
+  ms.author: liydu
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 2
