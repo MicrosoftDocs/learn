@@ -10,7 +10,7 @@ This microservice will use Spring Data JPA to read and write data from an [Azure
 Create a specific `todo-service` application in your Azure Spring Cloud instance:
 
 ```bash
-az spring-cloud app create --name todo-service --resource-group "$RESOURCE_GROUP_NAME" --service "$SPRING_CLOUD_NAME"
+az spring-cloud app create --name todo-service --resource-group "$RESOURCE_GROUP_NAME" --service "$SPRING_CLOUD_NAME" --runtime-version Java_11
 ```
 
 ## Create a MySQL database
@@ -72,7 +72,7 @@ Now that we've provisioned the Azure Spring Cloud instance and configured the se
 To create our microservice, we will use [https://start.spring.io/](https://start.spring.io/) with the command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d dependencies=web,mysql,data-jpa,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=2.3.6.RELEASE -d javaVersion=1.8 | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d dependencies=web,mysql,data-jpa,cloud-eureka,cloud-config-client -d baseDir=todo-service -d bootVersion=2.6.4.RELEASE -d javaVersion=11 | tar -xzvf -
 ```
 
 > [!NOTE]
@@ -195,7 +195,7 @@ You can now build your "todo-service" project and send it to Azure Spring Cloud:
 ```bash
 cd todo-service
 ./mvnw clean package -DskipTests
-az spring-cloud app deploy --name todo-service --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --jar-path target/demo-0.0.1-SNAPSHOT.jar
+az spring-cloud app deploy --name todo-service --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --artifact-path target/demo-0.0.1-SNAPSHOT.jar
 cd ..
 ```
 
