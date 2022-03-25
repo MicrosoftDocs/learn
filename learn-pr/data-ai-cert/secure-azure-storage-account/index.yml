@@ -3,7 +3,7 @@ uid: learn.azure.secure-azure-storage-account
 metadata:
   title: Secure your Azure Storage account
   description: "Learn how Azure Storage provides multilayered security to protect your data with access keys, secure networks, and Advanced Threat Protection monitoring."
-  ms.date: 03/24/2022
+  ms.date: 03/25/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
