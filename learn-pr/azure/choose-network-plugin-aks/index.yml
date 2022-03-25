@@ -34,7 +34,7 @@ units:
 - learn.choose-best-networking-plugin-for-aks.identify-plugin-options
 - learn.choose-best-networking-plugin-for-aks.analyze-decision-criteria
 - learn.choose-best-networking-plugin-for-aks.use-kubenet
-- learn.choose-best-networking-plugin-for-aks.use-azure-cni
+- learn.choose-best-networking-plugin-for-aks.use-azure-container-networking-interface
 - learn.choose-best-networking-plugin-for-aks.knowledge-check
 - learn.choose-best-networking-plugin-for-aks.summary
 badge:
