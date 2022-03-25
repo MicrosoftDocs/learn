@@ -1,25 +1,27 @@
-You can customize various global Microsoft Defender for Cloud settings by using the **Pricing & settings** option on the Defender for Cloud menu. These settings are established on a per-subscription basis so you have complete control over what is monitored, what data is collected, and where it's stored.
+You can customize various global Microsoft Defender for Cloud settings by using the **Environment settings** option on the Defender for Cloud menu. These settings are established on a per-subscription basis. This way, you have complete control over what's monitored, what data is collected, and where it's stored.
 
 There are four areas you can influence.
 
-- **Pricing tier**. Information about the available pricing tiers. This is the same information found on the **Coverage** pane.
-- **Threat detection**. This lets you control how Defender for Cloud integrates with other Microsoft security services, such as Windows Defender.
-- **Data Collection**. You can enable _auto-provisioning_ to install a monitoring agent on all VMs in your subscription so Defender for Cloud can collect security information from Windows and Linux VMs.
-- **Email notifications**. Security contact details and email notifications for high security alerts.
+- **Defender plans**: Information about Defender plans by resource type, including the number of resources and price.
+- **Integrations**: You can control how Defender for Cloud integrates with other Microsoft security services, like Defender for Cloud Apps.
+- **Auto provisioning**: You can enable _auto-provisioning_ to install a monitoring agent on all VMs in your subscription so Defender for Cloud can collect security information from Windows and Linux virtual machines (VMs).
+- **Email notifications**: Security contact details and email notifications for high security alerts.
 
-Here's an image of the **Pricing & settings** screen with the **Threat detection** area selected.
+Here's an image of the **Environment settings** pane with the **Integrations** area selected.
 
-![Screenshot showing the threat detection option.](../media/3-threat-detection.png)
+:::image type="content" source="../media/3-defender-for-cloud-settings-integrations.png" alt-text="Screenshot that shows the Integrations pane.":::
 
-**Data Collection** is particularly interesting. Each VM can store audit logs based on configured settings established during the VM creation process. You can collect two log sources from every VM in the subscription:
+**Auto provisioning** is an interesting feature. Defender for Cloud can collect security data and events from your VMs when you enable certain extensions.
 
-1. **Boot-time diagnostics**. This includes console output and screenshots of the virtual machine running on a host to help diagnose startup issues.
-1. **OS guest diagnostics**. Get metrics every minute for your virtual machine. You can use them to create alerts and stay informed on your applications.
+- **Log Analytics agent for Azure VMs**: Collects security-related configurations and event logs from the machine and stores the data in your Log Analytics workspace for analysis.
+- **Log Analytics agent for Azure Arc Machines (preview)**: Collects security-related configurations and event logs from the machine and stores the data in your Log Analytics workspace for analysis.
+- **Vulnerability assessment for machines**: Enables vulnerability assessment on your Azure and hybrid machines.
+- **Guest Configuration agent (preview)**: Checks machines running in Azure and Arc Connected Machines for security misconfigurations.
 
 You can also activate these options when you create new VMs. Here's an image of the **Management** tab while creating a new Windows-based VM with the Azure portal that shows the Microsoft Defender for Cloud options being set.
 
-![Screenshot showing the VM management options in the Azure portal for Microsoft Defender for Cloud.](../media/2-create-vm-options.png)
+:::image type="content" source="../media/3-create-vm-monitoring-options.png" alt-text="Screenshot that shows the VM management options when creating a vm":::
 
 By default, a storage account will be selected (or created) to hold the logs, but you can customize that on a per-VM basis as needed.
 
-With this collected data, Microsoft Defender for Cloud can start making observations about how each of your configured workloads match up to your security policy.
+With this collected data, Microsoft Defender for Cloud can start making observations about how each of your configured workloads matches up to your security policy.
