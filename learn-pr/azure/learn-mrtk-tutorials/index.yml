@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.learn-introduction-tutorials-mrtk
 metadata:
-  title: Introduction to the Mixed Reality Toolkit-Set Up Your Project and Use Hand Interaction
+  title: Introduction to the Mixed Reality Toolkit--Set Up Your Project and Use Hand Interaction
   description: This course provides the user with a basic understanding of all the foundational elements of MRTK.
   ms.date: 09/09/2021
   author: Sean-Kerawala
@@ -30,12 +30,11 @@ prerequisites: |
   - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - (Optional) A HoloLens 2 device configured for development
-  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
+  - Unity Hub with Unity 2020.3.x/2019.4.x installed and the Universal Windows Platform Build Support module added
   - [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)
-  - Basic familiarity with Unity: interface, scene creation, package import, addition of gameObjects to a scene
+  - Basic familiarity with Unity: interface, scene creation, package import, addition of GameObjects to a scene
 units: 
 - learn.azure.learn-introduction-tutorials-mrtk.1-1-introduction
-- learn.azure.learn-introduction-tutorials-mrtk.1-2-configure-unity-for-windows-mixed-reality
 - learn.azure.learn-introduction-tutorials-mrtk.1-3-exercise-configure-unity-for-windows-mixed-reality
 - learn.azure.learn-introduction-tutorials-mrtk.1-4-configure-resources
 - learn.azure.learn-introduction-tutorials-mrtk.1-5-exercise-configure-resources
