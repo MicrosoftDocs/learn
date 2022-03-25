@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.mitigate-application-crashes
-title: Mitigate Application Crashes
+title: Mitigate application crashes
 metadata:
-  title: Mitigate Application Crashes
-  description: "Mitigate Application Crashes"
-  ms.date: 03/24/2022
+  title: Mitigate application crashes
+  description: "Mitigate application crashes"
+  ms.date: 03/25/2022
   author: wwlpublish
   ms.author: lauraalv
   ms.topic: interactive-tutorial

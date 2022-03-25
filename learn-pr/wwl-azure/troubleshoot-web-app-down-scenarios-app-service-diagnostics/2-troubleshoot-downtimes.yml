@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.troubleshoot-downtimes
-title: Troubleshoot Downtimes
+title: Troubleshoot downtimes
 metadata:
-  title: Troubleshoot Downtimes
-  description: "Troubleshoot Downtimes"
-  ms.date: 03/24/2022
+  title: Troubleshoot downtimes
+  description: "Troubleshoot downtimes"
+  ms.date: 03/25/2022
   author: wwlpublish
   ms.author: lauraalv
   ms.topic: interactive-tutorial

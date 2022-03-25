@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.use-ask-genie-for-detector-recommendations
-title: Use Ask Genie for Detector Recommendations
+title: Use Ask Genie for detector recommendations
 metadata:
-  title: Use Ask Genie for Detector Recommendations
-  description: "Use Ask Genie for Detector Recommendations"
-  ms.date: 03/24/2022
+  title: Use Ask Genie for detector recommendations
+  description: "Use Ask Genie for detector recommendations"
+  ms.date: 03/25/2022
   author: wwlpublish
   ms.author: lauraalv
   ms.topic: interactive-tutorial

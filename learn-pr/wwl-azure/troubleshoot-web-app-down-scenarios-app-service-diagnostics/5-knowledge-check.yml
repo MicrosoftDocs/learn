@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: "Knowledge Check"
-  ms.date: 03/24/2022
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/25/2022
   author: wwlpublish
   ms.author: lauraalv
   ms.topic: interactive-tutorial

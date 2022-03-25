@@ -27,7 +27,7 @@ The following table describes the 4 statuses used to indicate the gravity of eac
 
 In this scenario, the issue is related to a HTTP 503 Server Error. You can click on the insight to view thorough diagnostics information regarding the HTTP Server Error. For this example, in the image below, you will notice there is ‘x’ number of 503s detected on this App Service. Also, in the additional details, it points out exactly where this error is coming from, the rewrite module. 
 
-:::image type="content" source="../media/asd-module-troubleshoot-web-app-down-scenarios-with-app-service-diagnostics-clean-copy-22-01.png" alt-text="<Screenshot of a HTTP 503 Server Error detected.>"::: 
+:::image type="content" source="../media/module-troubleshoot-web-app-down-scenarios-with-app-service-diagnostics-clean-copy-22-01.png" alt-text="<Screenshot of a HTTP 503 Server Error detected.>"::: 
 
 ## Identify an Application Crash Event with Application Crashes
 
@@ -37,5 +37,5 @@ Application Crashes is a troubleshooting feature within App Service Diagnostics.
 
 Once you are there, you will see an insight indicating the status of your application regarding application crashes in the last 24 hours. In this scenario, the issue is related to an application crash with the exception code 0xE0434352 &#8212; CLR Exception. Also, paired with this information, you can see the 24-hour timeline on application crash events, helping you identify the exact time when a crash event occurred. You can also check more details on un-handled ASP.NET Exceptions table. However, if this is not enough information, you can enable crash monitoring to capture memory dumps at the time of your application crash to collect more information to root cause your unhandled exceptions.
 
-:::image type="content" source="../media/asd-module-troubleshoot-web-app-down-scenarios-with-app-service-diagnostics-clean-copy-22-02.png" alt-text="<Screenshot of an application crash event with exception code 0xE0434352 - CLR Exception detected.>":::
+:::image type="content" source="../media/module-troubleshoot-web-app-down-scenarios-with-app-service-diagnostics-clean-copy-22-02.png" alt-text="<Screenshot of an application crash event with exception code 0xE0434352 - CLR Exception detected.>":::
 
