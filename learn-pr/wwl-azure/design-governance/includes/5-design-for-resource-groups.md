@@ -26,7 +26,7 @@
 
 - Each resource must be in one, and only one, resource group.
 
-- Resource groups cannnot be renamed.
+- Resource groups cannot be renamed.
 
 ### Things to consider when creating resource groups
 
