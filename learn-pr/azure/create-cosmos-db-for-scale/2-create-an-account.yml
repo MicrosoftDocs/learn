@@ -13,10 +13,11 @@ azureSandbox: true
 durationInMinutes: 6
 content: |
   [!include[](includes/2-create-an-account.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.DocumentDB/databaseAccounts"
-  hint: "Follow the directions to create an Azure Cosmos DB account."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.DocumentDB/databaseAccounts"
+#   hint: "Follow the directions to create an Azure Cosmos DB account."
