@@ -3,7 +3,7 @@ uid: learn.data-ai.introduction-to-azure-data-lake-storage
 metadata:
   title: Introduction to Azure Data Lake storage
   description: "Discover how Data Lake Storage provides a repository where you can upload and store unstructured data bringing new efficiencies to processing big data analytics."
-  ms.date: 03/24/2022
+  ms.date: 03/25/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
