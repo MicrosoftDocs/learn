@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.threadx-next-steps.azure-rtos-components
+uid: learn.iot.threadx-next-steps.azure-real-time-operating-system-components
 title: Azure RTOS components
 metadata:
   title: Azure RTOS components
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-azure-rtos-components.md)]
+  [!include[](includes/2-azure-real-time-operating-system-components.md)]
