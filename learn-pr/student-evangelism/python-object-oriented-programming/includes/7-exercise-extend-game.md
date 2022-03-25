@@ -1,12 +1,12 @@
-Your company is pleased with your object-oriented programming (OOP) implementation of rock, paper, scissors. So much so, they want you to change the game to rock, paper, scissors, lizard, Spock because that's what all the cool kids are playing these days.
+Your company is pleased with your object-oriented programming (OOP) implementation of rock, paper, scissors. So much so that they want you to change the game to rock, paper, scissors, lizard, Spock, because that's what all the cool kids are playing these days.
 
 ## Add the choices lizard and Spock
 
-Adding two more choices like lizard and Spock might sound like there's a lot to change. Thanks to the way you implemented the rules, the changes needed are minor.
+Adding two more choices like lizard and Spock might sound like there's a lot to change. Thanks to the way you implemented the rules, the changes you need are minor.
 
 What are the rules for lizard and Spock though?
 
-_Scissors decapitate lizard, scissors cut paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitate lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors._
+*Scissors decapitate lizard, scissors cut paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitate lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.*
 
 The preceding description can be translated into this updated rules table:
 
@@ -44,7 +44,7 @@ The preceding description can be translated into this updated rules table:
    ]
    ```
 
-1. Run `python3 rock-paper-scissor.py` to try out your changes:
+1. Save the file, then run `python3 rock-paper-scissor.py` to try out your changes:
 
    ```bash
    python3 rock-paper-scissor.py
@@ -63,4 +63,4 @@ The preceding description can be translated into this updated rules table:
    Winner is Kirk
    ```
 
-Congratulations! You've added two choices, _lizard_ and _Spock_, to the game with minimal effort to your code.
+Congratulations! You've added two choices, *lizard* and *Spock*, to the game with minimal effort to your code.
