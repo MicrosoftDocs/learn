@@ -145,6 +145,6 @@ class Square:
       raise Exception("Value must be larger than 0")
 ```
 
-In the preceding code, the function `height()` is decorated by the decorator `@property`. This *decoration* action creates the private field `__height`. The `__height` field isn't defined in the constructor `__init__()` because the decorator does that already. There's also another decoration happening, namely, `@height.setter`. This decoration points out a similar-looking `height()` method as the *setter*. The new height method takes an another parameter `value` as its second parameter.
+In the preceding code, the function `height()` is decorated by the decorator `@property`. This *decoration* action creates the private field `__height`. The `__height` field isn't defined in the constructor `__init__()` because the decorator does that already. There's also another decoration happening, namely, `@height.setter`. This decoration points out a similar-looking `height()` method as the *setter*. The new height method takes on another parameter `value` as its second parameter.
 
 Being able to manipulate the height separate from the width will still cause a problem. You'll need to understand what the class does before you consider allowing getters and setters, because you're introducing risk.
