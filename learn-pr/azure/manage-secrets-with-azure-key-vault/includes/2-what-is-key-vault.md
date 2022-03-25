@@ -10,7 +10,7 @@ The main benefits of using Key Vault are:
 - Centralized secret storage, meaning required changes only have to be made in one place
 - Access logging and monitoring to help you understand how and when secrets are accessed
 
-Secrets are stored in individual *vaults*, which are Azure resources used to group secrets together. Secret access and vault management is accomplished via a REST API, which is also supported by all of the Azure management tools, as well as client libraries available for many popular languages. Every vault has a unique URL where its API is hosted.
+Secrets are stored in individual *vaults*, which are Azure resources used to group secrets together. Secret access and vault management is accomplished via a REST API, which is also supported by all of the Azure management tools, and client libraries available for many popular languages. Every vault has a unique URL where its API is hosted.
 
 > [!IMPORTANT]
 > **Key Vault is designed to store configuration secrets for server apps.** It's not intended for storing data belonging to your app's users, and it shouldn't be used in the client-side part of an app. This is reflected in its performance characteristics, API, and cost model.
@@ -25,13 +25,13 @@ In Key Vault, a secret is a name-value pair of strings. Secret names must be 1-1
 > Secret names don't need to be considered especially secret themselves. You can store them in your app's configuration if your implementation calls for it. The same is true of vault names and URLs.
 
 > [!NOTE]
-> Key Vault supports two additional kinds of secrets beyond strings &mdash; *keys* and *certificates* &mdash; and provides useful functionality specific to their use cases. This module does not cover these features and concentrates on secret strings like passwords and connection strings.
+> Key Vault supports two additional kinds of secrets beyond strings&mdash;*keys* and *certificates*&mdash;and provides useful functionality specific to their use cases. This module does not cover these features and concentrates on secret strings like passwords and connection strings.
 
 ## Vault authentication and permissions
 
 Key Vault's API uses Azure Active Directory to authenticate users and apps. Vault access policies are based on *actions* and are applied across an entire vault. For example, an app with **Get** (read secret values), **List** (list names of all secrets), and **Set** (create or update secret values) permissions to a vault can create secrets, list all secret names, and get and set all secret values in that vault.
 
-*All* actions performed on a vault require authentication and authorization; there is no way to grant any kind of anonymous access.
+*All* actions performed on a vault require authentication and authorization; there's no way to grant any kind of anonymous access.
 
 > [!TIP]
 > When granting vault access to developers and apps, grant only the minimum set of permissions needed. Permissions restrictions help avoid accidents caused by code bugs, and reduce the impact of stolen credentials or malicious code injected into your app.
