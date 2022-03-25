@@ -27,7 +27,7 @@ prerequisites: |
     - Beginner level experience with arrays and the `foreach` statement
 video:
   title: "Work with data in C#"
-  url: https://www.microsoft.com/en-us/videoplayer/embed/RWVrBc
+  url: https://www.microsoft.com/videoplayer/embed/RWVrBc
 iconUrl: /learn/achievements/csharp-data.svg
 levels:
 - beginner
