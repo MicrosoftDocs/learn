@@ -14,18 +14,19 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-add-data-disks-to-azure-virtual-machines.md)]
-#tasks:
-#- action: exists
-#  environment: azure
-#  azure:
-#    resource:
-#      type: "Microsoft.Compute/virtualMachines"
-#  hint: "Run the `az vm create` command as shown to create your virtual machine."
-# TODO: See https://github.com/MicrosoftDocs/learn-pr/issues/2816
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
 # - action: exists
 #   environment: azure
 #   azure:
 #     resource:
-#       type: "Microsoft.Compute/virtualMachines/extensions"
-#       name: customScript
-#   hint: "Run the `az vm extension set` command as shown to run the script on your virtual machine."
+#       type: "Microsoft.Compute/virtualMachines"
+#   hint: "Run the `az vm create` command as shown to create your virtual machine."
+#  TODO: See https://github.com/MicrosoftDocs/learn-pr/issues/2816
+#  - action: exists
+#    environment: azure
+#    azure:
+#      resource:
+#        type: "Microsoft.Compute/virtualMachines/extensions"
+#        name: customScript
+#    hint: "Run the `az vm extension set` command as shown to run the script on your virtual machine."
