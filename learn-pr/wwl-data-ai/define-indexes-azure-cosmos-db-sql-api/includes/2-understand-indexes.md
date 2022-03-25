@@ -21,7 +21,7 @@ Here, we have a JSON object representing a product named **Touring-1000 Blue** w
 }
 ```
 
-If we were to represent this JSON object as a tree, this representation would include traversal paths for both the **name** property and its value (**Touring-100**). The tree also contains three traversal paths for the three objects in the **tags** array, each with a leaf node for their **name** properties and respective values.
+If we were to represent this JSON object as a tree, this representation would include traversal paths for both the **name** property and its value (**Touring-1000 Blue**). The tree also contains three traversal paths for the three objects in the **tags** array, each with a leaf node for their **name** properties and respective values.
 
 ![Visual tree representation of the Touring-1000 Blue JSON object](../media/2-tour-tree.png)
 
