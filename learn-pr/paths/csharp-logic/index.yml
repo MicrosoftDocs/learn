@@ -25,6 +25,9 @@ prerequisites: |
     - Beginner level experience with C# concepts including declaring, initializing, and using variables
     - Beginner level experience with the `if-elseif-else` statement
     - Beginner level experience with arrays and the `foreach` statement
+video:
+  title: "Add logic to your applications with C#"
+  url: https://www.microsoft.com/en-us/videoplayer/embed/RWVzs6
 iconUrl: /learn/achievements/csharp-logic.svg
 levels:
 - beginner
