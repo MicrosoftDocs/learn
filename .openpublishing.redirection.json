@@ -12215,6 +12215,11 @@
       "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/learn-mrtk-tutorials/1-2-configure-unity-for-windows-mixed-reality.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/learn-mrtk-tutorials/1-1-introduction",
+      "redirect_document_id": false
     }
   ]
 }
