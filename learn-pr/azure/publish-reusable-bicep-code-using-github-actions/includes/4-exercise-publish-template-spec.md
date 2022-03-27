@@ -14,25 +14,40 @@ In this exercise, you'll:
 
 ## Add a lint job to your workflow
 
-The template repository, you used to create your own repo in the previous exercise, contains a draft of a workflow that you can use as a starting point.
+Your repository contains a draft of a workflow that you can use as a starting point.
 
-On the GitHub site, navigate to the `.github/workflows/` directory, open the existing `publish-template-specs-workflow.yml` file and copy and paste the following content at the end of the file:
+<!-- TODO decide on starting point -->
 
-   :::code language="yaml" source="code/4-workflow.yml" range="20-25" :::
+1. Open Visual Studio Code.
+
+1. Create a folder named `.github` in the root of the repository, and within that folder, create a folder named `workflows`.
+
+1. Create a file named `template-spec.yml` within the `workflows` folder.
+
+   <!-- TODO sshot -->
+
+1. Add the following content into the `template-spec.yml` file:
+
+   :::code language="yaml" source="code/4-workflow.yml" range="18-23" :::
 
 ## Add a publish job to your workflow
 
-We will now add a second job that will publish the template spec to Azure. To keep things simple, we will be using the versioning scheme with a single version number derived from the _workflow run number_.
+Now, you can add a second job to publish the template spec to Azure.
 
-Copy the following code snippet and paste it at the end of your workflow file:
+1. Add the following code at the end of the `template-spec.yml` file:
 
-   :::code language="yaml" source="code/4-workflow.yml" range="27-44" :::
+   :::code language="yaml" source="code/4-workflow.yml" range="25-44" :::
 
-This job will checkout the code from your repository, sign in to Azure using GitHub secret you created earlier, and run the `az ts create` command to publish the template spec to Azure.
+   This job checks out the code from your repository, signs in to Azure by using GitHub secret you created earlier, and runs the `az ts create` command to publish the template spec to Azure.
+
+   > [!TIP]
+   > To keep things simple, your workflow uses the workflow's *number* as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
+
+1. Save your changes to the file.
 
 ## Verify and commit your workflow definition
 
-1. Verify that your *publish-template-specs-workflow.yml* file looks like the following:
+1. Verify that your *template-specs-workflow.yml* file looks like the following:
 
    :::code language="yaml" source="code/4-workflow.yml" :::
 
@@ -58,22 +73,30 @@ This job will checkout the code from your repository, sign in to Azure using Git
 
 ## View the workflow run
 
-You can view the workflow run in the GitHub Actions UI.
+You can view the workflow run in the GitHub Actions web interface.
 
-1. Click the **Actions** tab.
+1. In your browser, select the **Actions** tab.
 
     :::image type="content" source="../media/4-action-run.png" alt-text="A screenshot showing the result of an Azure Actions workflow run.":::
 
-1. Click the last run in the list.
+1. Select the latest run in the list.
 
     :::image type="content" source="../media/4-action-run-details.png" alt-text="A screenshot of a specific workflow run in GitHub Actions.":::
 
+   Wait for the workflow run to finish. The template spec is published to Azure.
+
+   Note the workflow's run number.
+
 ## Review the template spec in Azure
 
-You can also view the published template spec in the Azure Portal:
+You can also view the published template spec in the Azure portal.
 
-1. In the [Azure Portal](https://portal.azure.com), navigate to the `ToysReusable` Resource Group and click on the `appService` template spec.
+1. In your browser, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-    :::image type="content" source="../media/4-azure-portal.png" alt-text="A screenshot of the Azure Portal with a template spec.":::
+1. Navigate to the `ToysReusable` resource group.
 
-1. Check the version number in the `version` field and validate, if it corresponds with the workflow run in GitHub Actions.
+1. Select the `appService` template spec.
+
+    :::image type="content" source="../media/4-portal-template-spec.png" alt-text="A screenshot of the Azure Portal with a template spec.":::
+
+   Notice that the version number corresponds with the GitHub Actions workflow's run number.

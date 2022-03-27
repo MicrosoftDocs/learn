@@ -1,19 +1,18 @@
-name: publish-bicep-template-specs
-concurrency: toy-company
+name: publish-template-specs
+concurrency: publish-template-spec-${{ env.TEMPLATE_SPEC_NAME }}
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'templateSpecs/appService/**'
+      - 'template-specs/app-service/**'
 
 env:
   AZURE_RESOURCEGROUP_NAME: ToysReusable
-  ENVIRONMENT_TYPE: Prod
-  AZURE_REGION: westus
-  TEMPLATE_SPEC_NAME: appService
-  TEMPLATE_FILENAME: appService.bicep
+  AZURE_REGION: westus3
+  TEMPLATE_SPEC_NAME: app-service
+  TEMPLATE_SPEC_FILE_PATH: template-specs/app-service/app-service.bicep
 
 jobs:
   lint:
@@ -21,7 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run Bicep linter
-      run: az bicep build --file templateSpecs/appService/${{ env.TEMPLATE_FILENAME }}
+      run: az bicep build --file ${{ env.TEMPLATE_SPEC_FILE_PATH }}
 
   publish:
     runs-on: ubuntu-latest
@@ -33,8 +32,13 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - uses: azure/CLI@v1
-      name: Publish Template Spec
+      name: Publish template spec
       with:
-        azcliversion: 2.34.1
         inlineScript: |
-          az ts create -g $AZURE_RESOURCEGROUP_NAME --name $TEMPLATE_SPEC_NAME -v $GITHUB_RUN_NUMBER -l $AZURE_REGION --template-file templateSpecs/appService/$TEMPLATE_FILENAME --display-name $TEMPLATE_SPEC_NAME
+          az ts create \
+            --resource-group ${{ env.AZURE_RESOURCEGROUP_NAME }} \
+            --name ${{ env.TEMPLATE_SPEC_NAME }} \
+            --version ${{ github.run_number }} \
+            --template-file ${{ env.TEMPLATE_SPEC_FILE_PATH }} \
+            --location ${{ env.AZURE_REGION }} \
+            --yes
