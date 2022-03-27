@@ -1,0 +1,40 @@
+name: publish-bicep-template-specs
+concurrency: toy-company
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'templateSpecs/appService/**'
+
+env:
+  AZURE_RESOURCEGROUP_NAME: ToysReusable
+  ENVIRONMENT_TYPE: Prod
+  AZURE_REGION: westus
+  TEMPLATE_SPEC_NAME: appService
+  TEMPLATE_FILENAME: appService.bicep
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Bicep linter
+      run: az bicep build --file templateSpecs/appService/${{ env.TEMPLATE_FILENAME }}
+
+  publish:
+    runs-on: ubuntu-latest
+    needs: [lint]
+    steps:
+    - uses: actions/checkout@v2
+    - uses: azure/login@v1
+      name: Sign in to Azure
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - uses: azure/CLI@v1
+      name: Publish Template Spec
+      with:
+        azcliversion: 2.34.1
+        inlineScript: |
+          az ts create -g $AZURE_RESOURCEGROUP_NAME --name $TEMPLATE_SPEC_NAME -v $GITHUB_RUN_NUMBER -l $AZURE_REGION --template-file templateSpecs/appService/$TEMPLATE_FILENAME --display-name $TEMPLATE_SPEC_NAME
