@@ -51,10 +51,9 @@ az ts create \
 You can convert this Azure CLI command to a GitHub Actions step:
 
 ```yaml
-- name: Azure CLI script
-  uses: azure/CLI@v1
+- name: Publish template spec
+  uses: azure/cli@v1
   with:
-    azcliversion: 2.30.0
     inlineScript: |
       az ts create \
         --name StorageWithoutSAS \
@@ -78,10 +77,9 @@ az bicep publish \
 You can convert this Azure CLI command to a GitHub Actions step, too:
 
 ```yaml
-- name: Azure CLI script
-  uses: azure/CLI@v1
+- name: Publish Bicep module
+  uses: azure/cli@v1
   with:
-    azcliversion: 2.30.0
     inlineScript: |
       az bicep publish \
         --file module.bicep \

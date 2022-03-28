@@ -54,22 +54,22 @@ You now have a copy of the template repository in your own account. You will now
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
-1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toys-reusable_ folder, run the following command:
+1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toy-reusable_ folder, run the following command:
 
    ```bash
-   cd toys-reusable
+   cd toy-reusable
    ```
 
 1. Type `git clone` and then paste the URL you copied earlier, which looks something like this:
 
    ```bash
-   git clone https://github.com/mygithubuser/toys-reusable.git
+   git clone https://github.com/mygithubuser/toy-reusable.git
    ```
 
 1. Reopen Visual Studio Code in the repository folder by running the following command in the Visual Studio Code terminal:
 
    ```bash
-   code -r toys-reusable
+   code -r toy-reusable
    ```
 
 ## Sign in to Azure
@@ -137,7 +137,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 1. To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
    ```azurecli
-   az group create --name ToysReusable --location westus
+   az group create --name ToyReusable --location westus
    ```
 
 1. Look at the JSON output from the command. It includes an `id` property, which is the resource group's ID.
@@ -151,7 +151,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 1. To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
 
    ```azurepowershell
-   New-AzResourceGroup -Name ToysReusable -Location westus
+   New-AzResourceGroup -Name ToyReusable -Location westus
    ```
 
 1. Look at the output from the command. It includes a `ResourceId`, which is the resource group's fully qualified ID.
@@ -168,7 +168,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
    ```azurecli
    az ad sp create-for-rbac \
-     --name ToysReusable \
+     --name ToyReusable \
      --role Contributor \
      --scopes RESOURCE_GROUP_ID \
      --sdk-auth
@@ -206,7 +206,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
    $azureContext = Get-AzContext
    $servicePrincipal = New-AzADServicePrincipal `
-     -DisplayName ToysReusable `
+     -DisplayName ToyReusable `
      -Role Contributor `
      -Scope $resourceGroupId
 
