@@ -2,7 +2,6 @@
 
 In this exercise, you need to:
 
-* Install required software on your local computer
 * Sign into the Learn sandbox with a user account you use for the entire module. This sandbox gives you a free subscription and resource group to complete this module from Visual Studio Code.
 * Find the free sandbox subscription and resource group in Visual Studio Code.
 

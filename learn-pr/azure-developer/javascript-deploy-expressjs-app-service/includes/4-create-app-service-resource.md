@@ -37,12 +37,6 @@ Isolate your app into a new App Service plan when:
 
 In this module, use the Linux operating system for this web app. 
 
-## App Service + DB
-
-You can create your App Service and its database at the same time. When you create both at the same time, a virtual network is created for you. 
-
-NOT USED IN THIS MODULE.
-
 ## App Service settings during creation
 
 When you create an App Service resource, you have various settings to choose from, many have default values. 
