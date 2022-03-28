@@ -1,4 +1,4 @@
-## Your tasks
+When you use Azure, you need a subscription. Then inside the subscription, you create resource groups, and resources inside the resource groups.
 
 In this exercise, you need to:
 
@@ -12,6 +12,8 @@ Use the **Sign in to activate sandbox** button to sign in.
 Make sure you use the same account to sign into the sandbox and Azure from Visual Studio Code. 
 
 ## Find the subscription in Visual Studio Code
+
+Find the free sandbox subscription in VS Code.
 
 1. Open Visual Studio Code. 
 1. Use the key combination to open the Command Palette: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>. 
@@ -35,14 +37,9 @@ Make sure you use the same account to sign into the sandbox and Azure from Visua
         1. When the process is finished, your account displays in the bottom bar, `Azure: youremail@mail.com`.
 1. Enable the sandbox subscription, `Concierge Subscription`. Uncheck any other subscriptions so you can focus while you complete this module. 
 
-## Install the Azure extensions
-
-1. In Visual Studio Code, use the key combination to open the **Extensions Marketplace** sidebar: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> : 
-1. Filter the marketplace to add both of the following extensions
-    * Azure Resources
-    * Azure App Service
-
 ## Use the Azure resource group extension to find the sandbox resource group
+
+Find the sandbox resource group in VS Code.
 
 1. In Visual Studio Code, use the key combination to open the **Azure** sidebar: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
 1. The Azure sidebar has two sections
@@ -51,7 +48,9 @@ Make sure you use the same account to sign into the sandbox and Azure from Visua
 1. Expand the **Resource groups** section, select the sandbox subscription. Expand the subscription and resource group. 
 1. The resource group displays an Azure Storage resource for Cloud Shell. This was created automatically when you began using the sandbox. If you create more resources, they would be added to this resource group.
 
-## What did this exercise accomplish? 
+## Check your work 
+
+At this point, your local VS Code should be correctly configured and connected to the free sandbox for this module.
 
 * You created your sandbox. Check how much time you have left before the sandbox is removed by viewing the top of this Learn exercise.
 * You signed into Azure from Visual Studio Code and found the sandbox subscription, resource group, and resources. 
