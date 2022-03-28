@@ -4,7 +4,7 @@ metadata:
   title: Introduction to Audio Classification with PyTorch
   description: Learn how to do audio classification with PyTorch.
   ms.date: 04/12/2021
-  author: cassiebreviu, chnoring
+  author: cassiebreviu, softchris
   ms.author: ruyakubu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

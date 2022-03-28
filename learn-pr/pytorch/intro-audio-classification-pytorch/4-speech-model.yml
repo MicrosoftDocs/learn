@@ -12,4 +12,4 @@ metadata:
   ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true
-notebook: notebooks/audio-pytorch/4-speech-model.ipynb
+notebook: notebooks/4-speech-model.ipynb
