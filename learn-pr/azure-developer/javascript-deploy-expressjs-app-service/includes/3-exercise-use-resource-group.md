@@ -12,11 +12,6 @@ Use the **Sign in to activate sandbox** button to sign in.
 
 Make sure you use the same account to sign into the sandbox and Azure from Visual Studio Code. 
 
-|Subscription name|Value|
-|--|--|
-|**Subscription name**|`Concierge Subscription`|
-
-
 ## Find the subscription in Visual Studio Code
 
 1. Open Visual Studio Code. 
@@ -24,8 +19,13 @@ Make sure you use the same account to sign into the sandbox and Azure from Visua
 1. In the Command Palette, select `Azure: Sign In to Azure Cloud` to complete the sign in process. 
 1. When the listing of Azure clouds displays, select the `Azure Cloud`.
 1. When the process is finished, your account displays in the bottom bar, for example: `Azure: youremail@mail.com`.
-1. Select your account in the bottom bar and filter the list of subscriptions to `Concierge Subscription`.
-1. If the `Concierge Subscription` isn't in the list, you need to make sure you're in the correct Azure Tenant (authentication group). The Azure Tenant for the Learn sandbox is in the `604c1504-c6a3-4080-81aa-b33091104187`. 
+1. Select your account in the bottom bar and filter the list of subscriptions to the sandbox subscription.
+
+    |Subscription name|Value|
+    |--|--|
+    |**Subscription name**|`Concierge Subscription`|
+
+1. If the sandbox subscription isn't in the list, you need to make sure you're in the correct Azure Tenant (authentication group). The Azure Tenant for the Learn sandbox is in the `604c1504-c6a3-4080-81aa-b33091104187`. 
     1. Open the Command Palette: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>.
     1. Enter `Azure: Select Tenant`.
     1. Select **Enter custom tenent**.
