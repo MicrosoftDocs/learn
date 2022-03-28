@@ -3,7 +3,7 @@ uid: learn.azure-sql-replication.introduction
 title: Introduction - Data Replication and Streaming on Azure SQL Databases
 metadata:
   unitType: learning-content
-  title: Introduction
+  title: Introduction - Data Replication and Streaming on Azure SQL Databases
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 3/21/2022
   author: MaraSteiu
