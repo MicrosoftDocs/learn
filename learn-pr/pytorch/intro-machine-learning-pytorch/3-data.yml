@@ -1,19 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.pytorch.intro-machine-learning.data
-title: Load data with PyTorch Datasets and DataLoaders
+title: Loading and normalizing datasets
 metadata:
-  title: Load data with PyTorch Datasets and DataLoaders
+  title: Loading and normalizing datasets
   description: Code for processing data samples can get messy and hard to maintain; we ideally want our dataset code to be decoupled from our model training code for better readability and modularity.
   author: cassiebreviu
-  ms.author: cassieb
+  ms.author: ruyakubu
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure
   ms.custom: team=cloud_advocates
   ms.contributors: cassieb-04262021
-durationInMinutes: 10
+durationInMinutes: 8
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/intro-to-pytorch/3-data.ipynb
+notebook: notebooks/3-data.ipynb
 quiz:
   title: Check your knowledge
   questions:
@@ -31,3 +31,15 @@ quiz:
         - content: "The `DataSet` class is the parent of the `DataLoader` class"
           isCorrect: false
           explanation: "A `DataSet` is designed for retrieval of _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."
+    - content: "Transforms in PyTorch are designed to:"
+      choices:
+        - content: "perform some manipulation of the data to make it suitable for training"
+          isCorrect: true
+          explanation: "This is correct!"
+        - content: "convert input tensors into an output tensor that contains a prediction"
+          isCorrect: false
+          explanation: "Incorrect, transforms perform some manipulation of the data to make it suitable for training"
+        - content: "convert data items into visual representations"
+          isCorrect: false
+          explanation: "Incorrect, transforms perform some manipulation of the data to make it suitable for training"
+          

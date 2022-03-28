@@ -22,7 +22,7 @@ abstract: |
 prerequisites: | 
   - Basic Python programming knowledge, which includes use of variables, strings, integers, and math
   - Experience modifying and running code in Jupyter notebooks
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/intro-python-lists.svg
 levels: 
   - beginner
 roles: 

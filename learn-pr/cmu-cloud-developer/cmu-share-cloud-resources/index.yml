@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources
 metadata:
   title: Share cloud resources
   description: Carnegie Mellon University's Cloud Developer course. Get an introduction to virtualization, one of the many technologies that power the cloud. Learn what virtualization is, its benefits, and how cloud resources are shared.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -28,6 +28,7 @@ prerequisites: |
   - Know how datacenters are set up, powered, and provisioned
   - Understand how cloud resources are provisioned and metered
 iconUrl: /learn/achievements/cmu-cloud-developer/share-cloud-resources.svg
+hidden: true
 levels:
 - beginner
 roles:

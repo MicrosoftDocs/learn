@@ -116,7 +116,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. In the **Remote Desktop Connection** dialog box, select **Connect**.
 
-    ![Screenshot of the Remote Desktop Connection dialog box.](../media/4-rdp-dialog.png)
+    ![Screenshot of the Remote Desktop Connection dialog box, stating that the remote connection can't be identified. The Connect button is highlighted.](../media/4-rdp-dialog.png)
 
 1. In the **Windows Security** dialog box, select **More choices**, and then select **Use a different account**.
 
@@ -124,7 +124,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. In the **Remote Desktop Connection** dialog box, select **Yes** to proceed.
 
-    ![Screenshot of the Remote Desktop Connection dialog box.](../media/4-rdp-proceed.png)
+    ![Screenshot of the Remote Desktop Connection dialog box, warning of problems with the security certificate. The Yes button is highlighted.](../media/4-rdp-proceed.png)
 
 1. On the virtual machine, select the **Search** button in the lower-left corner of the screen.
 

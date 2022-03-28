@@ -1,6 +1,6 @@
 You've been hired as a Senior Database Administrator help ensure the security of the Azure SQL database environment. Your company is an online sporting goods retailer that stores customer data like phone numbers, addresses, and credit cards in Azure SQL database hosted on the cloud. What solution would you implement to prevent unauthorized data access by someone that is working to support this cloud hosted database?
 
-Classifying stored data by sensitivity and business impact helps organizations determine the risks associated with the data. In this unit, we will see the different data states and encryption modes in detail.
+Classifying stored data by sensitivity and business impact helps organizations determine the risks associated with the data. In this unit, we will learn the different data states and encryption modes in detail.
 
 The three basic tenets of good information protection are:
 
@@ -20,8 +20,7 @@ Large organizations, governments, and military entities have been using data cla
 
 After the data is classified, you can implement data protection measures for highly-classified data. In this section, we explore data encryption for structured data.
 
-Data exists in one of three basic states - data-at-rest, data-in-motion, data-in-process.  
-‎In the following table you can see the states of data and the encryption methods that can be implemented.
+Data exists in one of three basic states - data-at-rest, data-in-motion, data-in-process.  This table shows different data states with possible encryption methods. 
 
 | **DATA STATE**| **ENCRYPTION METHOD** |
 | - | - |
@@ -73,7 +72,7 @@ In the scenario discussed at the beginning of the unit, you are implementing a s
 
 SQL Database, SQL Managed Instance, and Azure Synapse Analytics enforce encryption (SSL-Secure Sockets Layer/TLS - Transport Layer Security) at all times for all connections. This ensures all data is encrypted "in transit" between the client and server. **Transport Layer Security** (TLS) is used by all drivers that Microsoft supplies or supports for connecting to databases in Azure SQL Database or Azure SQL Managed Instance. In some circumstances, you might want to isolate the entire communication channel between your on-premises and cloud infrastructures by using a VPN.
 
-In the table below we can see scenarios of when to use VPN Gateway, TLS and HTTPS
+The next table has different scenarios and solutions for VPN Gateway, TLS and HTTPS.
 
 | **SCENARIO**| **SOLUTION** |
 | - | - |
@@ -99,9 +98,9 @@ Dynamic data masking is a policy-based security feature that hides the sensitive
 
 - Dynamic data masking can be set up using PowerShell cmdlets and REST API
 
-In the image below, we can see the last three digits of phone number column and rest of the characters are masked.
+In the image below, the last three digits of phone number column and rest of the characters are masked.
 
-:::image type="content" source="../media/dynamic-data-masking.png" alt-text=" In the image, we can see the last three digits of phone number column and rest of the characters are masked.":::
+:::image type="content" source="../media/dynamic-data-masking.png" alt-text=" In the image,  the last three digits of phone number column and rest of the characters are masked.":::
 
  
 Data masking rules consist of the column to apply the mask to and how the data should be masked. Use the standard mask or specify your own custom masking logic.  
@@ -116,12 +115,12 @@ Data masking rules consist of the column to apply the mask to and how the data s
 | Custom Text| Adds padding string between exposed prefix and exposed suffix characters |
 
 > [!NOTE]
-> Note that Dynamic Data Masking is a presentation layer feature, and unmasked data will always be seen by administrators.
+> Note that Dynamic Data Masking is a presentation layer feature, and unmasked data can always be viewed by administrators.
 
 Consider a scenario where a database is queried and accessed by users of all authorization levels. A user that doesn't have administrator privileges queries a table that has some sensitive customer data such as phone number, email etc. along with purchase, and product information.  
-‎How will you implement a solution that suppresses the sensitive information while allowing the user to see the remaining fields of his query?
+‎How will you implement a solution that suppresses the sensitive information while allowing the user to view the other fields?
 
-Dynamic data masking for data-in-use - You can set up a dynamic data masking policy using default masking logic for email, credit cards etc., or specify custom text or random number for the field in question. A non-administrator will see the masked values. You can allow other users to see the non-masked versions by adding them to the SQL users, excluded from the masking list.
+Dynamic data masking for data-in-use - You can set up a dynamic data masking policy using default masking logic for email, credit cards etc.. Or you can specify custom text or random number for the field in question. You can allow other users to view the non-masked versions by adding them to the SQL users, excluded from the masking list.
 
 **Always Encrypted feature for data-at-rest and data-in-transit**
 

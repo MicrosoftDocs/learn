@@ -20,13 +20,13 @@ Here is a list to consider ensuring you are monitoring your workloads with perfo
 
 - Enable and capture telemetry throughout your application to build and visualize end-to-end transaction flows for the application.
 
-- See metrics from Azure services such as CPU and memory utilization, bandwidth information, current storage utilization, and more.
+- Explore metrics from Azure services such as CPU and memory utilization, bandwidth information, current storage utilization, and more.
 
 - Use resource and platform logs to get information about what events occur and under which conditions.
 
-- For scalability, look at the metrics to determine how to provision resources dynamically and scale with demand.
+- For scalability, examine the metrics to determine how to provision resources dynamically and scale with demand.
 
-- In the collected logs and metrics look for signs that might make a system or its components suddenly become unavailable.
+- In the collected logs and metrics identify signs that make a system or its components suddenly become unavailable.
 
 - Use log aggregation technology to gather information across all application components.
 

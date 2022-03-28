@@ -60,7 +60,6 @@ This program checks numbers 1 through 20, and prints the number if it's prime. M
 - When the `number` is prime, return true; otherwise, return false.
 - Hint: Be sure to correctly handle the case where the input number is 1.
 
-
 ## Ask a number, panic if negative
 
 Write a program that asks a user for a number. Use the following code snippet as a starting point:

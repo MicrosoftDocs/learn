@@ -3,7 +3,7 @@ uid: learn.beginner-python.python-error-handling
 metadata:
   moduleType: standard
   title: Python error handling
-  description: "Use effective techniques for error handling in Python. Catching exceptions, raising new ones, and updating error messages are essential for robust Python projects."
+  description: Use effective techniques for error handling in Python. Catching exceptions, raising new ones, and updating error messages are essential for robust Python projects.
   ms.date: 12/10/2021
   author: softchris
   ms.author: chnoring
@@ -11,7 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Python error handling
-summary: "Handle exceptions and create useful error messages. Improve your skills by using exceptions for code flow control."
+summary: Handle exceptions and create useful error messages. Improve your skills by using exceptions for code flow control.
 abstract: |
   By the end of this module, you'll be able to:
     - Read and use error output from exceptions.
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Basic programming knowledge, like using and assigning variables
   - Some experience with using Jupyter notebooks, including adding and modifying code
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/python-error-handling.svg
 levels: 
   - beginner
 roles: 

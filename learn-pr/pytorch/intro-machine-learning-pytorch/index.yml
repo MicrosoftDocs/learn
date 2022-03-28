@@ -2,21 +2,23 @@
 uid: learn.pytorch.intro-machine-learning
 metadata:
   title: Introduction to machine learning with PyTorch
-  description: Learn how to build machine learning models with PyTorch
+  description: Learn key concepts used to build machine learning models with PyTorch.  We will train a neural network model that recognizes and classifies images.
   ms.date: 06/04/2020
   author: sethjuarez
-  ms.author: sejuare
+  ms.author: ruyakubu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: sejuare-04262021
 title: Introduction to PyTorch
-summary: Learn how to build machine learning models with PyTorch.
+summary: Learn key concepts used to build machine learning models with PyTorch.  We will train a neural network model that recognizes and classifies images.
 abstract: |
   In this module you will:
-  - Learn the key concepts used to build machine learning models
-  - Learn how to build a Computer Vision model
-  - Build models with the PyTorch API
+  - Learn how to use Tensors with CPUs and GPUs
+  - Understand how to manage, scale and normalize your datasets
+  - Build an image recognition model using a neural network
+  - Learn how to optimize a model
+  - Learn how to enhance model inference performance
 iconUrl: /learn/achievements/pytorch-intro.svg
 levels:
 - beginner
@@ -34,7 +36,6 @@ units:
 - learn.pytorch.intro-machine-learning.introduction
 - learn.pytorch.intro-machine-learning.tensors
 - learn.pytorch.intro-machine-learning.data
-- learn.pytorch.intro-machine-learning.transforms
 - learn.pytorch.intro-machine-learning.model
 - learn.pytorch.intro-machine-learning.autograd
 - learn.pytorch.intro-machine-learning.optimization

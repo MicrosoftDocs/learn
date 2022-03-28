@@ -4,12 +4,13 @@ title: What is Form Recognizer?
 metadata:
   title: What is Form Recognizer?
   description: "What is Form Recognizer?"
-  ms.date: 05/31/2021
+  ms.date: 03/08/2022
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-form-recognizer.md)]

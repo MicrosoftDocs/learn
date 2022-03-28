@@ -1,20 +1,20 @@
-Microsoft provides APIs that enable you to access Azure Databases extension from application code. Behind the scenes, these APIs are wrappers around a series of REST calls that send and receive HTTP requests to and from the Azure Databases extension service. These APIs are available for a variety of programming languages, including JavaScript.
+Microsoft provides APIs that enable you to access Azure Cosmos DB from application code. Behind the scenes, these APIs are wrappers around a series of REST calls that send and receive HTTP requests to and from the Azure Cosmos DB service. These APIs are available for a variety of programming languages, including JavaScript.
 
-In this unit, you'll learn how to use the JavaScript API for Azure Databases extension to query and manage documents and containers.
+In this unit, you'll learn how to use the JavaScript API for Azure Cosmos DB to query and manage documents and containers.
 
-## Install the JavaScript API for Azure Databases extension
+## Install the JavaScript API for Azure Cosmos DB
 
-The JavaScript API for Azure Databases extension is supplied in a package named **\@azure/cosmos**. You install this package using the Node Package Manager (npm).
+The JavaScript API for Azure Cosmos DB is supplied in a package named **\@azure/cosmos**. You install this package using the Node Package Manager (npm).
 
-## Connect to an Azure Databases extension account
+## Connect to an Azure Cosmos DB account
 
-The JavaScript API exposes a class named `CosmosClient` that acts as the access point to Azure Databases extension. You use a `CosmosClient` object to obtain a handle on databases and containers. When you have access to a container, you can query and manipulate documents.
+The JavaScript API exposes a class named `CosmosClient` that acts as the access point to Azure Cosmos DB. You use a `CosmosClient` object to obtain a handle on databases and containers. When you have access to a container, you can query and manipulate documents.
 
-You use the constructor to create an `CosmosClient` object. The constructor takes an Azure Databases extension connection string as its parameter. The connection string contains the address of your Azure Databases extension account, and the security key needed to access the account. You obtain the connection string for an account using the Azure Databases extension pane in Visual Studio Code. Right-click the account, and select **Copy Connection String**.
+You use the constructor to create an `CosmosClient` object. The constructor takes an Azure Cosmos DB connection string as its parameter. The connection string contains the address of your Azure Cosmos DB account, and the security key needed to access the account. You obtain the connection string for an account using the Azure Databases extension pane in Visual Studio Code. Right-click the account, and select **Copy Connection String**.
 
-:::image type="content" source="../media/6-connection.png" alt-text="Screenshot of Azure Databases extension pane in Visual Studio Code. The user is copying the connection string for the Azure Databases extension account to the clipboard." loc-scope="vs-code":::
+:::image type="content" source="../media/6-connection.png" alt-text="Screenshot of Azure Databases extension pane in Visual Studio Code. The user is copying the connection string for the Azure Cosmos DB account to the clipboard." loc-scope="vs-code":::
 
-In your JavaScript application, run the following code to connect to an Azure Databases extension account using the connection string.
+In your JavaScript application, run the following code to connect to an Azure Cosmos DB account using the connection string.
 
 ```javascript
 var cosmos = require("@azure/cosmos");
@@ -33,13 +33,13 @@ const containerdata = containerref.items;
 
 ## Retrieve documents
 
-Azure Databases extension provides two ways to retrieve documents. You can run a query, or fetch a document directly using its ID.
+Azure Cosmos DB provides two ways to retrieve documents. You can run a query, or fetch a document directly using its ID.
 
 ### Query documents
 
 The first technique is to run a query. Use the **query** function of a container and specify a **SELECT** statement that identifies the documents to fetch.
 
-This code walks down the hierarchy of Azure Databases extension objects described in unit 2. The **containerdata** object provides access to the documents (items) in the container.
+This code walks down the hierarchy of Azure Cosmos DB objects described in unit 2. The **containerdata** object provides access to the documents (items) in the container.
 
 The following code snippet shows how to run a query against a container. The following example finds the documents for all students who have a specified academic year.
 
@@ -102,7 +102,7 @@ var student = {
 const { item, statusCode } = await containerdata.create(student)
 ```
 
-You can use the **upsert** or **replace** functions to update a document. Strictly speaking, Azure Databases extension doesn't actually do an update operation. Rather, it deletes a document and replaces it with a new one that has the same ID. You'll have to supply the entire document as a parameter. The code below shows an example:
+You can use the **upsert** or **replace** functions to update a document. Strictly speaking, Azure Cosmos DB doesn't actually do an update operation. Rather, it deletes a document and replaces it with a new one that has the same ID. You'll have to supply the entire document as a parameter. The code below shows an example:
 
 ```javascript
 var updatedstudent = {

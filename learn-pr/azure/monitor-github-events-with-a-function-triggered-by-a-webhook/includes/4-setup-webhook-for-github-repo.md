@@ -1,6 +1,6 @@
 In GitHub, webhooks can be set up for an organization or for a specific repository. A webhook is triggered each time one or more subscribed events occur. For example, the *Gollum* event allows you to listen for wiki updates, in particular, the creation of and updates for a wiki page.
 
-In this unit, you'll learn how to set up a webhook listening for a change event from your company's GitHub wiki. 
+In this unit, you'll learn how to set up a webhook that listens for a change event from your company's GitHub wiki.
 
 ## Set up a webhook
 

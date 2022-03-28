@@ -14,7 +14,7 @@ Optimize storage costs by placing your data in the appropriate access tier.
 | Availability (RA-GRS reads)| N/A| 99.99%| 99.9%| Offline |
 | Usage charges| Higher storage costs, lower access, and transaction cost| Higher storage costs, lower access, and transaction costs| Lower storage costs, higher access, and transaction costs| Lowest storage costs, highest access, and transaction costs |
 | Minimum storage duration| N/A| N/A| 30 days| 180 days |
-| Latency (time to first byte)| Single-digit milliseconds| milliseconds| milliseconds| hours2 |
+| Latency (time to first byte)| Single-digit milliseconds| milliseconds| milliseconds| hours |
 
 
  

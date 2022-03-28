@@ -1,3 +1,7 @@
+There are many data visualization tools that data analysts can use to explore data and summarize insights visually; including chart support in productivity tools like Microsoft Excel and built-in data visualization widgets in notebooks used to explore data in services such as Azure Synapse Analytics and Azure Databricks. However, for enterprise-scale business analytics, an integrated solution that can support complex data modeling, interactive reporting, and secure sharing is often required.
+
+## Microsoft Power BI
+
 Microsoft Power BI is a suite of tools and services that data analysts can use to build interactive data visualizations for business users to consume.
 
 ![Data from a wide range of sources is imported into Power BI Desktop, which is used to create a data model and report; which is published to the Power BI Service and consumed through a web browser and the Power BI phone app](../media/power-bi-flow.png)

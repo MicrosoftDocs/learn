@@ -11,7 +11,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.
 
     1. Locate your Cosmos DB resource, and select **Keys**.
-    
+
     1. Copy the **URI** and **PRIMARY KEY** values, which you'll need later.
 
 1. In the Cloud Shell, use the following command to create a new .NET Console application:
@@ -80,7 +80,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
     1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
 
-1. Click *Program.cs* in the Explorer pane to open the file in the editor.
+1. Select *Program.cs* in the Explorer pane to open the file in the editor.
 
     1. Add the following `using` statements to the top of the editor:
 
@@ -169,7 +169,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
         Notice you'll have different values for `YOUR_URI` and `YOUR_KEY`.
 
     1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
-    
+
     1. Close the Code Editor by typing <kbd>Ctrl+Q</kbd>, or selecting **Close** from the Editor menu in the upper right.
 
 1. On the Bash Shell terminal, compile and run your .NET Core app:
@@ -187,7 +187,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
 ### Create a partitioned container using C#
 
-Now that you have created your database, you're ready to create a container to store your documents.
+Now that you've created your database, you're ready to create a container to store your documents.
 
 1. Open the *Program.cs* file in the Code Editor to make changes to your app:
 
@@ -196,7 +196,7 @@ Now that you have created your database, you're ready to create a container to s
     ```
 
     1. Locate the `await Console.Out.WriteLineAsync(...)` method within the `Main` method.
-    
+
     1. Add the following code below the `WriteLineAsync()` method to create a new `IndexingPolicy` instance with a custom indexing policy:
 
         ```csharp
@@ -224,8 +224,8 @@ Now that you have created your database, you're ready to create a container to s
         var containerResponse = await targetDatabase.CreateContainerIfNotExistsAsync(containerProperties, 10000);
         var customContainer = containerResponse.Container;
         ```
-    
-        This code checks to see if a container with the specified parameters exists in your database, and it creates a new container if there is no match. You can also specify the RU/s allocated for the container that you create. When you do not specify the RU/s, the SDK has a default value for RU/s assigned to a container.
+
+        This code checks to see if a container with the specified parameters exists in your database, and it creates a new container if there's no match. You can also specify the RU/s allocated for the container that you create. When you don't specify the RU/s, the SDK has a default value for RU/s assigned to a container.
 
     1. Add the following code to print out the ID of the container:
 
@@ -293,6 +293,7 @@ Now that you have created your database, you're ready to create a container to s
     dotnet build
     dotnet run
     ```
+
 1. After running your application, you should see this output in your console:
 
     ```output
@@ -313,7 +314,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account you activated the sandbox with.
 
     1. Locate your Cosmos DB resource.
-    
+
     1. Select **Overview**, and copy the **Write Locations** value, which you'll need later.
 
     1. Select **Keys**, and copy the **URI** and **PRIMARY KEY** values, which you'll need later.
@@ -342,7 +343,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
     ![Bash Shell and Code Editor for java.](../media/5-azure-cosmos-db-new-shell-editor-java.png)
 
-1. Click *pom.xml* in the Explorer pane to open the file in the code editor. Replace the entire file with the following code:
+1. Select *pom.xml* in the Explorer pane to open the file in the code editor. Replace the entire file with the following code:
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -403,10 +404,10 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
         </dependencies>
     </project>
     ```
-    
+
 1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
 
-1. In the Explorer pane of the Code Editor, expand the nodes in the tree to *src\main\java\com\mslearn*, then click *App.java* to open the file in the editor.
+1. In the Explorer pane of the Code Editor, expand the nodes in the tree to *src\main\java\com\mslearn*, then select *App.java* to open the file in the editor.
 
     ![App.java in Bash shell.](../media/5-azure-cosmos-db-new-shell-editor-java-app.png)
 
@@ -445,7 +446,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     private static CosmosAsyncContainer customContainer;
     private static AtomicBoolean resourcesCreated = new AtomicBoolean(false);
     ```
-    
+
     Replace the placeholder values for the `endpointUri`, `primaryKey`, and `writeLocation` variables with the respective  **URI**, **PRIMARY KEY**, and **Write Locations** values from your Azure Cosmos DB account.
 
 1. Locate the `main()` method and delete the `System.out` line:
@@ -471,7 +472,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
             .buildAsyncClient();
     ```
 
-1. Add the following code after the `CosmosClientBuilder()` call to create a new `CosmosAsyncDatabase` instance if it does not already exist:
+1. Add the following code after the `CosmosClientBuilder()` call to create a new `CosmosAsyncDatabase` instance if it doesn't already exist:
 
     ```java
     client.createDatabaseIfNotExists("Products").flatMap(databaseResponse -> {
@@ -483,8 +484,8 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
     
     while (!resourcesCreated.get());
     ```
-    
-    This code will check to see if a database already exists in your Azure Cosmos DB account, and it will create the database if it does not exist.
+
+    This code will check to see if a database already exists in your Azure Cosmos DB account, and it will create the database if it doesn't exist.
 
 1. After the `while` loop, add the following code to print out the ID of the database:
 
@@ -565,7 +566,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
         }
     }
     ```
-    
+
     Make sure you replace the placeholder values for `YOUR_URI`, `YOUR_KEY`, and `YOUR_LOCATION`.
 
 1. Save your changes by typing <kbd>Ctrl+S</kbd>, or by selecting the **Save** option from the Editor menu on the upper right corner.
@@ -579,7 +580,7 @@ mvn compile
 mvn exec:java -Dexec.mainClass=com.mslearn.App -Dexec.cleanupDaemonThreads=false
 ```
 
-Your Application will create a new database inside your Azure Cosmos DB account. You will see the name on the output console:
+Your Application will create a new database inside your Azure Cosmos DB account. You'll see the name on the output console:
 
 ```output
 Database Id:    Products
@@ -590,7 +591,7 @@ Database Id:    Products
 
 ### Create a partitioned container using Java
 
-To create a container, you must specify a name and a partition key path. You'll specify those values when creating a container in this task. A partition key is a logical hint for distributing data onto a scaled out underlying set of physical partitions and for efficiently routing queries to the appropriate underlying partition
+To create a container, you must specify a name and a partition key path. You'll specify those values when creating a container in this task. A partition key is a logical hint for distributing data onto a scaled out underlying set of physical partitions and for efficiently routing queries to the appropriate underlying partition.
 
 1. In the previous section of this exercise, you used the following code to create a database:
 
@@ -603,7 +604,7 @@ To create a container, you must specify a name and a partition key path. You'll 
     });
     ```
 
-1. Add a few empty lines before the `return Mono.empty();` statement, this is where you will add code to create an indexing policy and container instance in the following steps:
+1. Add a few empty lines before the `return Mono.empty();` statement, this is where you'll add code to create an indexing policy and container instance in the following steps:
 
     ```java
     client.createDatabaseIfNotExists("Products").flatMap(databaseResponse -> {
@@ -743,7 +744,7 @@ To create a container, you must specify a name and a partition key path. You'll 
     mvn exec:java -Dexec.mainClass=com.mslearn.App -Dexec.cleanupDaemonThreads=false
     ```
 
-Your application creates a new database with a partitioned container container inside your Azure Cosmos DB account. You will see the names on the output console:
+Your application creates a new database with a partitioned container inside your Azure Cosmos DB account. You'll see the names on the output console:
 
 ```output
 Database Id:    Products
@@ -837,7 +838,7 @@ Container Id:   Clothing
     }
     ```
 
-1. Finally, create the `Clothing` container with the `cosmosdb sql container create` command in the Cloud Shell, where you will specify your partition key and throughput values:
+1. Finally, create the `Clothing` container with the `cosmosdb sql container create` command in the Cloud Shell, where you'll specify your partition key and throughput values:
 
     ```azurecli
     az cosmosdb sql container create \

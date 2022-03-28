@@ -3,7 +3,7 @@ uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db
 metadata:
   title: Configure replication and manage failovers in Azure Cosmos DB
   description: "Replicate data across the globe and manage automatic or manual failovers in Azure Cosmos DB."
-  ms.date: 01/25/2022
+  ms.date: 03/09/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Configure the Azure Cosmos DB SQL API .NET SDK to use a specific region
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-configure-replication.svg
+iconUrl: /learn/achievements/azure-cosmos-db-configure-replication-manage-failovers.svg
 levels:
 - intermediate
 roles:

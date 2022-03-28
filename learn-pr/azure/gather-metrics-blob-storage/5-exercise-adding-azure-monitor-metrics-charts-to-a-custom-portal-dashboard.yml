@@ -14,11 +14,12 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-adding-azure-monitor-metrics-charts-to-a-custom-portal-dashboard.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Follow the directions to create a custom dashboard with storage metrics."
-  azure:
-    resource:
-      type: "Microsoft.Storage/storageAccounts"
-      kind: "StorageV2"
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   hint: "Follow the directions to create a custom dashboard with storage metrics."
+#   azure:
+#     resource:
+#       type: "Microsoft.Storage/storageAccounts"
+#       kind: "StorageV2"

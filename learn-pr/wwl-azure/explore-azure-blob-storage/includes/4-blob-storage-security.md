@@ -29,10 +29,10 @@ The following table compares key management options for Azure Storage encryption
 
 |  | Microsoft-managed keys | Customer-managed keys | Customer-provided keys |
 |--|--|--|--|
-| **Encryption/decryption operations** | Azure | Azure | Azure |
-| **Azure Storage services supported** | All | Blob storage, Azure Files | Blob storage |
-| **Key storage** | Microsoft key store | Azure Key Vault | Azure Key Vault or any other key store |
-| **Key rotation responsibility** | Microsoft | Customer | Customer |
-| **Key usage** | Microsoft | Azure portal, Storage Resource Provider REST API, Azure Storage management libraries, PowerShell, CLI | Azure Storage REST API (Blob storage), Azure Storage client libraries |
-| **Key access** | Microsoft only | Microsoft, Customer | Customer only |
+| Encryption/decryption operations | Azure | Azure | Azure |
+| Azure Storage services supported | All | Blob storage, Azure Files | Blob storage |
+| Key storage | Microsoft key store | Azure Key Vault | Azure Key Vault or any other key store |
+| Key rotation responsibility | Microsoft | Customer | Customer |
+| Key usage | Microsoft | Azure portal, Storage Resource Provider REST API, Azure Storage management libraries, PowerShell, CLI | Azure Storage REST API (Blob storage), Azure Storage client libraries |
+| Key access | Microsoft only | Microsoft, Customer | Customer only |
 

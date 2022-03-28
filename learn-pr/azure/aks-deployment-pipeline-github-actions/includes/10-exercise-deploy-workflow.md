@@ -149,7 +149,7 @@ In this exercise, you use Helm version `v3.3.1`. Azure has a built action that d
       - name: Azure Kubernetes set context
         uses: Azure/aks-set-context@v1
         with:
-          # Azure credentials, i.e., output of `az ad sp create-for-rbac --role Contributor --sdk-auth`
+          # Azure credentials, i.e., output of `az ad sp create-for-rbac --scopes /subscriptions/<SUBSCRIPTION-ID> --role Contributor --sdk-auth`
           creds: # default is
           # Resource group name
           resource-group: # optional, default is
@@ -228,7 +228,7 @@ You've set the credential secret, but the secret isn't created yet. Let's create
 1. Create a new secret called `AZURE_CREDENTIALS`. The value of this secret will be the output of the following command, a JSON object:
 
     ```azurecli-interactive
-    az ad sp create-for-rbac --role Contributor --sdk-auth
+    az ad sp create-for-rbac --role Contributor --scopes /subscriptions/<SUBSCRIPTION-ID> --sdk-auth
     ```
 
 1. Copy the output and paste it in the secret value. Then, save the secret and close the tab.

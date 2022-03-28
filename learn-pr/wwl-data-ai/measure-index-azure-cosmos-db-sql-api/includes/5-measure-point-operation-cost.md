@@ -13,7 +13,7 @@ Product item = new(
     "rd-bk-500"
 );
 
-ItemResponse<Product> product = await container.CreateItemAsync<Product>(item);
+ItemResponse<Product> response = await container.CreateItemAsync<Product>(item);
 ```
 
 The **ItemResponse\<\>** variable is helpful for many things, but this example only focuses on two uses.

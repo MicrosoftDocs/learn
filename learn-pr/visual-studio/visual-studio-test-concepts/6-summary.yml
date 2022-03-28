@@ -5,10 +5,10 @@ metadata:
   unitType: summary
   title: Summary
   description: Our goal was to help you understand the purpose, concepts, and schools of thought behind testing, and how they can help you improve your code quality.
-  ms.date: 6/28/2021
+  ms.date: 03/08/2022
   author: kendrahavens
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 durationInMinutes: 1

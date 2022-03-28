@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic programming knowledge, such as using and assigning variables.
   - Some experience using Jupyter notebooks, including adding and modifying code.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/python-use-strings.svg
 levels:
   - beginner
 roles:

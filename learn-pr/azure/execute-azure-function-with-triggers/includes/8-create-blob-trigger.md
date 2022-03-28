@@ -28,7 +28,7 @@ Let's continue using your existing Azure Functions application and add a blob tr
 
 ## Create a blob container
 
-Now that we've created a blob trigger, let's use Storage Explorer to create a blob and trigger the function.
+Now that we've created a blob trigger, let's use Storage browser to create a blob and trigger the function.
 
 1. Open the storage account you used (or created) in a new tab.
 
@@ -39,7 +39,7 @@ Now that we've created a blob trigger, let's use Storage Explorer to create a bl
 
 1. Select your storage account identified under the *Type* column. Your **Storage account** pane appears.
 
-1. In the middle menu pane, select the **Storage Explorer (preview)**. The **Storage Explorer (preview)** pane appears where you can work with blobs and files.
+1. In the middle menu pane, select the **Storage browser (preview)**. The **Storage browser (preview)** pane appears where you can work with blobs and files.
 
 The blob trigger is monitoring only the location described in the **Path** field. By default, your path should be:
 
@@ -49,7 +49,7 @@ samples-workitems/{name}
 
 To create a container called **samples-workitems**:
 
-1. Right-click **BLOB CONTAINERS**, and select **Create blob container**. The **New container** pane appears.
+1. Select **Blob containers**, then select **Add container**. The **New container** pane appears.
 
 1. In the **Name** field, enter *samples-workitems*, accept the default **Private** setting in the **Public access level** field, and then select **Create**.
 
@@ -71,7 +71,7 @@ Our blob trigger is now up and listening for activity. Let's create a blob to se
 
 1. Switch back to the browser tab with Storage Explorer.
 
-1. In Storage Explorer, select the **samples-workitems** container from the **BLOB CONTAINERS** list.
+1. In Storage Explorer, select the **samples-workitems** container from the **Blob containers** list.
 
 1. In the top menu bar, select **Upload**. The **Upload blob** pane opens.
 
