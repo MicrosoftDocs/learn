@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-calculation-groups.model
+title: Create calculation groups in a model
+metadata:
+  title: Create calculation groups in a model
+  description: "Create calculation groups in a model"
+  ms.date: 03/28/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-model.md)]

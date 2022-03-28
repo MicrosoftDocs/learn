@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.create-calculation-groups
+metadata:
+  title: Create calculation groups
+  description: "Power BI, calculation groups, enterprise data analyst"
+  ms.date: 03/28/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create calculation groups
+summary: In this module you’ll learn what calculation groups are, explore key features and usage scenarios, and learn to create a calculation group.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore how calculation groups work
+  - Maintain calculation groups in a model
+  - Use calculation groups in a Power BI report
+prerequisites: |
+  - Experience creating reports using Power BI desktop
+  - Basic understanding of Tabular Editor 2
+  - Proficient with Data Analysis Expressions (DAX) in tabular models, at a basic level
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+products:
+- power-bi
+units:
+- learn.wwl.create-calculation-groups.introduction
+- learn.wwl.create-calculation-groups.understand
+- learn.wwl.create-calculation-groups.explore-usage-features
+- learn.wwl.create-calculation-groups.model
+- learn.wwl.create-calculation-groups.lab
+- learn.wwl.create-calculation-groups.knowledge-check
+- learn.wwl.create-calculation-groups.summary
+badge:
+  uid: learn.wwl.create-calculation-groups.badge

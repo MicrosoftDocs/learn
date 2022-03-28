@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-calculation-groups.explore-usage-features
+title: Explore calculation groups features and usage
+metadata:
+  title: Explore calculation groups features and usage
+  description: "Explore calculation groups features and usage"
+  ms.date: 03/28/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-explore-usage-features.md)]
