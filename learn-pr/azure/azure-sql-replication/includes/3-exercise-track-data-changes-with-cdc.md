@@ -1,5 +1,3 @@
-# Track, load, and replicate data changes on your Azure SQL Databases - Change Data Capture (CDC)
-
 ## Querying the change tables for changes
 
 When a table is enabled for change data capture, an associated capture instance is created to support the dissemination of the change data in the source table. The capture instance consists of a change table and up to two query functions. The requirements for the capture instance name is that it be a valid object name, and that it be unique across the database capture instances. By default, the name is <schema name_table name> of the source table. Its associated change table is named by appending _CT to the capture instance name.

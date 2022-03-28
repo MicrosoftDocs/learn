@@ -1,4 +1,4 @@
-# Track, load, and replicate data changes on your Azure SQL Databases - Change Data Capture (CDC)
+## Scenario
 
 Let's remember our scenario, in which you are the CTO of a healthcare business that sells medical equipment in different regions around the country. You have different inventory databases in each region and you want to ensure that these databases are all replicating data changes to a central country-wide inventory database which offers you a status on each sale. You might decide to use Change Data Capture (CDC) and enable it on each of your regional inventory database in order to track data changes and send these changes to the national, central database. The data changes would be tracked on CDC tables on your source database and you may decide to use a streaming service such as Azure Data Factory to consume the changes from the CDC tables and stream them to the national database. But before doing that, let's learn more about Change Data Capture (CDC).
 

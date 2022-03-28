@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking
-#title: Check if data changes happened with Change Tracking
+title: Check if data changes happened with Change Tracking
 metadata:
   unitType: learning-content
   title: Check if data changes happened with Change Tracking - Part 1
