@@ -86,8 +86,7 @@ Use the following steps to install the Azure CLI extensions that are required to
     ```
 
     > [!NOTE]
-    > Wait for the installation to complete. This should take about 1 minute. To verify that the installation completed successfully, run the `az -v` command and examine its output. The output should include the **Extensions** section in the following format (the sample output references the minimum required versions, but the actual versions might be higher):
-    
+    > Wait for the installation to complete. This should take about 1 minute. To verify that the installation completed successfully, run the `az -v` command and examine its output. The output should include the **Extensions** section in the following format (the sample output references the minimum required versions, but the actual versions might be higher):    
     >```json
     >Extensions:
     >customlocation                     0.1.3
