@@ -30,9 +30,6 @@ To support the Azure App Service on Kubernetes with Azure Arc, deploy a supporte
 - Have Azure AD enabled.
 - Constitute an approved Azure App Service on Kubernetes with Azure Arc distribution.
 
-> [!NOTE]
-> At the time of this writing, when you deploy using Azure portal, it will at least deploy AKS version 2.21.9. and Azure Cloud Shell includes *kubectl* version 1.23.x.
-
 Use the following steps to deploy an AKS cluster that supports Azure App Service on Kubernetes with Azure Arc:
 
 1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following commands. These commands set values for variables that assign names to the resource group that contains the AKS cluster, the AKS cluster, and its Azure region (replace the `<azure_region>` placeholder with the name of any AKS-supported region):
