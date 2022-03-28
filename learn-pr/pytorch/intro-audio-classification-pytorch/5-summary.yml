@@ -5,7 +5,7 @@ metadata:
   title: Summary
   description: We have covered the basics of building an audio machine learning model from understanding how analog sound turns to digital sound, to creating spectrogram images of our wave files.
   author: cassiebreviu
-  ms.author: cassieb
+  ms.author: ruyakubu
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure

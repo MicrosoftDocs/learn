@@ -5,11 +5,11 @@ metadata:
   title: Build the speech model
   description: Now that we have created the spectrogram images its time to build the computer vision model. 
   author: cassiebreviu
-  ms.author: cassieb
+  ms.author: ruyakubu
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure
   ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/audio-pytorch/4-speech-model.ipynb
+notebook: notebooks/audio-pytorch/4-speech-model.ipynb

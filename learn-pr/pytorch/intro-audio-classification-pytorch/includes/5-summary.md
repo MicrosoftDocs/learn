@@ -1,5 +1,15 @@
 Congratulations on building an audio binary classification speech model!  
 
-We have covered the basics of building an audio machine learning model from understanding how analog sound turns to digital sound, to creating spectrogram images of our wave files. We used the Speech Commands dataset, parsed the classes down to `yes` and `no`, then looked at ways we can understand and visualize audio data. From there, we took the spectrograms, created images and used a convolutional neural network to build our model. 
+We have covered the basics of building an audio machine learning. From understanding how an analog audio turns to digital sound, to creating spectrogram images of our wave files. We used the PyTorch Speech Commands dataset, parsed the classes down to `yes` and `no`, then looked at ways we can understand and visualize audio data patterns. From there, we took the spectrograms, created images and used a convolutional neural network to build our model.
 
-Be sure to check out the other modules in this learning path to learn more about machine learning with PyTorch.
+You can expand on this knowledge by looking at other datasets/sounds, the `MFCC` transformer and build your our model.
+
+Be sure to check out the other machine learning modules with [PyTorch Fundamentals Learning Path](/learn/paths/pytorch-fundamentals), and learn more:
+
+[!include[](../../../includes/open-link-in-new-tab-note.md)]
+
+* [Introduction to PyTorch](/learn/modules/intro-machine-learning-pytorch)
+* [Computer Vision with PyTorch](/learn/modules/intro-computer-vision-pytorch)
+* [Natural Language Processing with PyTorch](/learn/modules/intro-natural-language-processing-pytorch)
+
+Happy learning!
