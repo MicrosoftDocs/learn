@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-replication.synchronize-data-with-sql-data-sync
-title: Synchronize data with SQL Data Sync
+#title: Synchronize data with SQL Data Sync
 metadata:
   unitType: learning-content
   title: Synchronize data with SQL Data Sync

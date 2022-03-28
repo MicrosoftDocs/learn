@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-replication.exercise-track-data-changes-with-cdc
-title: Exercise - Track data changes with CDC
+#title: Exercise - Track data changes with CDC
 metadata:
   unitType: exercise
   title: Exercise - Track data changes with Change Data Capture

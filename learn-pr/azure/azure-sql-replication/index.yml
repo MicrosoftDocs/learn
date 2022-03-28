@@ -17,8 +17,8 @@ abstract: |
     - Enable data replication tools on your Azure SQL Database.
     - Monitor your deployments to ensure the data replication tools work successfully on your database.
 prerequisites: |
-  - "Experience working with, maintaining, and developing with SQL Server."
-  - "Experience with Azure, such as deploying and managing resources."
+  - Experience working with, maintaining, and developing with SQL Server.
+  - Experience with Azure, such as deploying and managing resources.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - beginner
