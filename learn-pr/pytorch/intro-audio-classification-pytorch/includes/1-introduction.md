@@ -1,7 +1,7 @@
 Have you ever wondered how the voice assistants we use everyday works? How do they understand the words that we say?  The assistant must convert the speech to text, then the NLP step which is the word embedding (turning words into numbers). Lastly, you have a classification of the utterance (what people say) to the intent (what they want the voice assistant to do). If you are following this learning path, this technique is covered in the "Introduction to natural language processing" module in this PyTorch learning path.
 
 However, how about when a dog barks or a cat meows? These sounds cannot be converted into text.
-
+                         
 <img alt="variety of sounds" src="images/1-introduction-1.png" align="middle" />
 
 In this module, we'll look at how to extract sound wave patterns from an audio of words spoken. Of course, audio classification is useful for many things, not just speech assistants. There are a variety of sound sources that an application needs to recognize.  For example, in music, you can classify genres or detect illness by the tone in someone's voice, and even more applications that we haven't even thought of yet.
