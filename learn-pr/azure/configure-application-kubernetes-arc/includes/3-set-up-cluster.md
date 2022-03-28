@@ -22,12 +22,16 @@ This is the second in this module's sequence of exercises. These exercises guide
 
 ## Task 1: Deploy an AKS cluster
 
-To support the Azure App Service on Kubernetes with Azure Arc, an AKS cluster must satisfy the following requirements:
+To support the Azure App Service on Kubernetes with Azure Arc, deploy a supported AKS cluster with the following requirements:
 
-- Run Kubernetes version 1.18.14 or newer.
+- Run a supported Kubernetes version 1.20.x or newer.
+- Kubectl version 1.20.x or newer.
 - Feature a load balancer as its front-end service.
 - Have Azure AD enabled.
 - Constitute an approved Azure App Service on Kubernetes with Azure Arc distribution.
+
+> [!NOTE]
+> At the time of this writing, when you deploy using Azure portal, it will at least deploy AKS version 2.21.9. and Azure Cloud Shell includes *kubectl* version 1.23.x.
 
 Use the following steps to deploy an AKS cluster that supports Azure App Service on Kubernetes with Azure Arc:
 
@@ -52,10 +56,10 @@ Use the following steps to deploy an AKS cluster that supports Azure App Service
 
 ## Task 2: Connect to the AKS cluster
 
-The AKS cluster you deployed is Azure AD enabled. Therefore, you've got the option to use a device code-based login to authenticate. However, to keep it simple, you'll instead retrieve the cluster's admin credentials by using the Azure Kubernetes Service Cluster Admin built-in role: 
+The AKS cluster you deployed is Azure AD enabled. Therefore, you've got the option to use a device code-based login to authenticate. However, to keep it simple, you'll instead retrieve the cluster's admin credentials by using the Azure Kubernetes Service Cluster Admin built-in role:
 
 > [!NOTE]
-> For more information about AKS integration with Azure AD, refer to [AKS-managed Azure Active Directory integration](https://docs.microsoft.com/azure/aks/managed-aad).
+> For more information about AKS integration with Azure AD, refer to [AKS-managed Azure Active Directory integration](/azure/aks/managed-aad).
 
 1. Run the following command to retrieve the admin credentials from the cluster and merge them into your local kubeconfig file:
 

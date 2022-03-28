@@ -20,14 +20,16 @@ This exercise is the first in this module's sequence of exercises. They guide yo
 The implementation process relies on Azure CLI, kubectl, and Helm. Microsoft Azure portal-based implementation process is also available. In this module, you will use the Azure CLI based approach so that you are able to experience various parts of the implementation.
 
 > [!IMPORTANT]
-> Skip this task when using [Azure Cloud Shell](https://shell.azure.com). Azure Cloud Shell provides a convenient lab environment. It has the prerequisite software tools already installed and simplifies authenticating to your Azure subscription. Azure Cloud Shell is available on the latest versions of Microsoft Edge, Google Chrome, Mozilla Firefox, and Apple Safari. However, Safari in private mode isn't supported.
+> Skip this task when using [Azure Cloud Shell](https://shell.azure.com). Azure Cloud Shell provides a convenient lab environment. It has the latest prerequisite software tools already installed and simplifies authenticating to your Azure subscription. Azure Cloud Shell is available on the latest versions of Microsoft Edge, Google Chrome, Mozilla Firefox, and Apple Safari. However, Safari in private mode isn't supported.
 
 > [!NOTE]
 > This module's exercises use Azure Cloud Shell to implement Azure App Service on Kubernetes with Azure Arc.
 
-- Azure CLI (version 2.19.1 or later). For installation instructions, refer to [the Install the Azure CLI page on Microsoft Docs](https://docs.microsoft.com/cli/azure/install-azure-cli).
-- kubectl (version 1.13.2 or later). After you install Azure CLI, use it to install kubectl by running `az aks install-cli`.
-- Helm (version 3.4.0 or later). For information about Helm and installation, refer to [the Install existing applications with Helm in Azure Kubernetes Service (AKS) page on Microsoft Docs](https://docs.microsoft.com/azure/aks/kubernetes-helm).
+Prefer to install at least the below version on your system if you are not using Azure Cloud Shell.
+
+- Azure CLI (version 2.29.x or later). For installation instructions, refer to [the Install the Azure CLI page on Microsoft Docs](/cli/azure/install-azure-cli).
+- kubectl (version 1.20.x or later). After you install Azure CLI, use it to install kubectl by running `az aks install-cli`.
+- Helm (version 3.4.0 or later). For information about Helm and installation, refer to [the Install existing applications with Helm in Azure Kubernetes Service (AKS) page on Microsoft Docs](/azure/aks/kubernetes-helm).
 
 ## Task 2: Enable required preview features in the Azure subscription
 
