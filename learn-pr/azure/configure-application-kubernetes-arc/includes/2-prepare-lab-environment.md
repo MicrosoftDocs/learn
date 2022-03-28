@@ -17,7 +17,7 @@ This exercise is the first in this module's sequence of exercises. They guide yo
 
 ## Task 1: Install the prerequisite software tools
 
-The implementation process relies on Azure CLI, kubectl, and Helm. Microsoft Azure portal-based implementation process is also available for most part of the configuration. However, for this module, we will take Azure CLI based approach so that you are able to understand various parts of the implementation.
+The implementation process relies on Azure CLI, kubectl, and Helm. Microsoft Azure portal-based implementation process is also available. In this module, you will use the Azure CLI based approach so that you are able to experience various parts of the implementation.
 
 > [!IMPORTANT]
 > Skip this task when using [Azure Cloud Shell](https://shell.azure.com). Azure Cloud Shell provides a convenient lab environment. It has the prerequisite software tools already installed and simplifies authenticating to your Azure subscription. Azure Cloud Shell is available on the latest versions of Microsoft Edge, Google Chrome, Mozilla Firefox, and Apple Safari. However, Safari in private mode isn't supported.
@@ -31,7 +31,7 @@ The implementation process relies on Azure CLI, kubectl, and Helm. Microsoft Azu
 
 ## Task 2: Enable required preview features in the Azure subscription
 
-Azure App Service on Kubernetes with Azure Arc currently available in public preview. [Microsoft documentation](https://docs.microsoft.com/en-us/azure/app-service/overview-arc-integration#public-preview-limitations) contains more about various limitations on this public preview feature. Your Azure subscription may not have necessary resources providers registered to be able to test all these capabilities. You must explicitly enable these providers in your subscription before continuing.
+Azure App Service on Kubernetes with Azure Arc currently available in public preview. [Microsoft documentation](/azure/app-service/overview-arc-integration#public-preview-limitations) contains more about various limitations on this public preview feature. Your Azure subscription may not have necessary resources providers registered to be able to test all these capabilities. You must explicitly enable these providers in your subscription before continuing.
 
 1. Start any Azure Cloud Shell-compatible web browser, navigate to [Azure Cloud Shell](https://shell.azure.com), and, if prompted, authenticate with a Microsoft account or an Azure AD account that has an Owner role in the Azure subscription.
 1. If prompted to select either **Bash** or **PowerShell**, select **Bash**.
@@ -79,7 +79,7 @@ Use the following steps to install the Azure CLI extensions that are required to
     ```azurecli-interactive
     az extension add --upgrade --yes -n connectedk8s
     az extension add --upgrade --yes -n customlocation
-    az extension add --upgrade --yes --name k8s-extension
+    az extension add --upgrade --yes -n k8s-extension
     az extension add --upgrade --yes -n appservice-kube
     ```
 

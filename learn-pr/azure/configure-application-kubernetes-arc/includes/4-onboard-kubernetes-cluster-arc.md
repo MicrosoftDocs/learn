@@ -60,7 +60,7 @@ Use the following steps to connect the AKS cluster to Azure Arc:
 1. In the browser window that displays the Bash session in the **Azure Cloud Shell** pane, run the following command to connect the cluster to Azure Arc:
 
     ```azurecli-interactive
-    az connectedk8s connect -g $ARC_RG_NAME -n $ARC_CLUSTER_NAME -l eastus
+    az connectedk8s connect -g $ARC_RG_NAME -n $ARC_CLUSTER_NAME -l "<azure_region>"
     ```
 
     > [!NOTE]
