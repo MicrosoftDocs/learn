@@ -18,36 +18,36 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 <!-- TODO decide on starting point -->
 
-1. Open Visual Studio Code.
+1. In Visual Studio Code, expand the `.github` folder in the root of the repository. Then, expand the `workflows` folder, and the `template-specs` subfolder.
 
-1. Create a folder named `.github` in the root of the repository, and within that folder, create a folder named `workflows`.
-
-1. Create a file named `template-spec.yml` within the `workflows` folder.
+1. Open the file named `linux-app-service.yml`.
 
    <!-- TODO sshot -->
 
-1. Add the following content into the `template-spec.yml` file:
+1. At the bottom of the file, where you see a comment saying *To be added*, add the following job definition:
 
-   :::code language="yaml" source="code/4-workflow.yml" range="18-23" :::
+   :::code language="yaml" source="code/4-workflow.yml" range="17-23" :::
+
+   <!-- TODO yaml files sensitive to indentation -->
 
 ## Add a publish job to your workflow
 
 Now, you can add a second job to publish the template spec to Azure.
 
-1. Add the following code at the end of the `template-spec.yml` file:
+1. Add the following code at the end of the `linux-app-service.yml` file:
 
    :::code language="yaml" source="code/4-workflow.yml" range="25-44" :::
 
    This job checks out the code from your repository, signs in to Azure by using GitHub secret you created earlier, and runs the `az ts create` command to publish the template spec to Azure.
 
    > [!TIP]
-   > To keep things simple, your workflow uses the workflow's *number* as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
+   > To keep things simple, your workflow uses the workflow's *run number* as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
 
 1. Save your changes to the file.
 
 ## Verify and commit your workflow definition
 
-1. Verify that your *template-specs-workflow.yml* file looks like the following:
+1. Verify that your *linux-app-service.yml* file looks like the following:
 
    :::code language="yaml" source="code/4-workflow.yml" :::
 
@@ -57,7 +57,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
    ```bash
    git add .
-   git commit -m "Add lint and publish steps to template spec workflow."
+   git commit -m "Add lint and publish steps to Linux App Service template spec workflow."
    git push
    ```
 
@@ -95,7 +95,7 @@ You can also view the published template spec in the Azure portal.
 
 1. Navigate to the `ToysReusable` resource group.
 
-1. Select the `appService` template spec.
+1. Select the `linux-app-service` template spec.
 
     :::image type="content" source="../media/4-portal-template-spec.png" alt-text="A screenshot of the Azure Portal with a template spec.":::
 

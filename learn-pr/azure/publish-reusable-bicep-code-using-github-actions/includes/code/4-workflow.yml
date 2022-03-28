@@ -1,18 +1,18 @@
-name: publish-template-specs
-concurrency: publish-template-spec-${{ env.TEMPLATE_SPEC_NAME }}
+name: template-spec-linux-app-service
+concurrency: template-spec-linux-app-service
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'template-specs/app-service/**'
+      - 'template-specs/linux-app-service/**'
 
 env:
   AZURE_RESOURCEGROUP_NAME: ToysReusable
   AZURE_REGION: westus3
-  TEMPLATE_SPEC_NAME: app-service
-  TEMPLATE_SPEC_FILE_PATH: template-specs/app-service/app-service.bicep
+  TEMPLATE_SPEC_NAME: linux-app-service
+  TEMPLATE_SPEC_FILE_PATH: template-specs/linux-app-service/main.bicep
 
 jobs:
   lint:
@@ -24,14 +24,14 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
-    needs: [lint]
+    needs: [ lint ]
     steps:
     - uses: actions/checkout@v2
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - uses: azure/CLI@v1
+    - uses: azure/cli@v1
       name: Publish template spec
       with:
         inlineScript: |
