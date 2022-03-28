@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/07/2021
+  ms.date: 03/28/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
@@ -22,43 +21,32 @@ quiz:
     choices:
     - content: "Azure Queue storage"
       isCorrect: false
-      explanation: "That’s incorrect. Azure queues are for simple queues to organize messages. It would not be able to group messages into a transaction."
+      explanation: "Incorrect. Azure queues are for simple queues to organize messages. It would not be able to group messages into a transaction."
     - content: "Azure Service Bus queues"
       isCorrect: true
-      explanation: "That’s correct. Azure Service Bus queues provide advanced message handing. For example, the ability to group messages into a transaction."
+      explanation: "Correct. Azure Service Bus queues provide advanced message handing. For example, the ability to group messages into a transaction."
     - content: "Azure Service Bus topics"
       isCorrect: false
-      explanation: "That’s incorrect. Azure Service Bus topics is better for multiple receivers with multiple destinations."
+      explanation: "Incorrect. Azure Service Bus topics is better for multiple receivers with multiple destinations."
   - content: "Which of the following solutions should be used for the update management requirement?"
     choices:
     - content: "Azure Resource Manager templates"
       isCorrect: false
-      explanation: "That’s incorrect. Azure Resource Manager templates define the infrastructure and configuration for your deployment."
+      explanation: "Incorrect. Azure Resource Manager templates define the infrastructure and configuration for your deployment."
     - content: "Azure Bicep templates"
       isCorrect: false
-      explanation: "That’s incorrect. Azure Bicep is a template language that's used to declaratively deploy Azure resources."
+      explanation: "Incorrect. Azure Bicep is a template language that's used to declaratively deploy Azure resources."
     - content: "Azure Automation"
       isCorrect: true
-      explanation: "That’s correct. Azure Automation gives you complete control of update management."
+      explanation: "Correct. Azure Automation gives you complete control of update management."
   - content: "Which of the following solutions should be used for the event handling requirement?"
     choices:
     - content: "Azure Event Hub"
       isCorrect: true
-      explanation: "That’s correct. Azure Event Hub can handle millions of events with low latency. Azure Event Hub can stream events to blob storage."
+      explanation: "Correct. Azure Event Hub can handle millions of events with low latency. Azure Event Hub can stream events to blob storage."
     - content: "Azure Event Grid"
       isCorrect: false
-      explanation: "That’s incorrect. Azure Event Grid distributes events from different sources to different handlers."
+      explanation: "Incorrect. Azure Event Grid distributes events from different sources to different handlers."
     - content: "Azure IoT Hub"
       isCorrect: false
-      explanation: "That’s incorrect. Azure IoT Hub enables secure and reliable communication between an IoT solution and the devices it manages."
-  - content: "Which of the following solutions should be used for the GitHub code update trigger?"
-    choices:
-    - content: "Azure Event Grid"
-      isCorrect: false
-      explanation: "That’s incorrect. Azure Event Grid is a fully managed event routing service. Azure Event Grid distributes events from different sources to different handlers."
-    - content: "Azure API Management"
-      isCorrect: false
-      explanation: "That’s incorrect. Azure API Management gives you a platform for publishing, securing, maintaining, and analyzing all your company's APIs."
-    - content: "Azure Webhook."
-      isCorrect: true
-      explanation: "That’s correct. Azure Webhooks provide a lightweight mechanism for apps to be notified when something of interest happens."
+      explanation: "Incorrect. Azure IoT Hub enables secure and reliable communication between an IoT solution and the devices it manages."

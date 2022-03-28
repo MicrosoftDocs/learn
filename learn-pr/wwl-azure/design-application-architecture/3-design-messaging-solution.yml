@@ -4,13 +4,12 @@ title: Design a messaging solution
 metadata:
   title: Design a messaging solution
   description: "Design a messaging solution"
-  ms.date: 12/07/2021
+  ms.date: 03/28/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |

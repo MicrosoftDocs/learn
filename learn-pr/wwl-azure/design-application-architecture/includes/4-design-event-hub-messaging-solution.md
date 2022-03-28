@@ -20,7 +20,7 @@ This diagram shows how event hubs could be used in the aircraft engine applicati
 
 - The data is stored in Azure blob storage.
 
-- Azure Stream Analytics to look for patterns in the sensor data. 
+- Azure Stream Analytics to identify patterns in the sensor data. 
 
 - Power BI is used to make decisions on manufacturing improvements. 
 
