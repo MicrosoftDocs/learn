@@ -30,7 +30,7 @@ This diagram shows how Event Hubs could be used in the aircraft engine applicati
 
 ## Considerations for Event Hub
 
-When selecting Event Hub, consider the following: 
+When selecting Event Hub, consider the following guidance: 
 
 - **Expect language and framework integration**. You can send and receive events in many different languages. Messages can also be received from Event Hubs using Apache Storm.
 
@@ -40,8 +40,8 @@ When selecting Event Hub, consider the following:
 
 	- Egress: Up to 2 MB per second or 4096 events per second.
 
-- **Remember Event Hubs uses a pull model**. The pull model used by Event Hubs differentiates it from some other messaging services, such as Azure Service Bus Queues. The pull model means that Event Hubs simply holds the message in its cache and allows it to be read. When a message is read from Event Hubs, it isn't deleted but is left to be read, as needed, by more consumers.
+- **Remember Event Hubs uses a pull model**. The pull model used by Event Hubs differentiates it from some other messaging services, such as Azure Service Bus Queues. The pull model means that Event Hubs simply holds the message in its cache and allows it to be read. When a message is read from Event Hubs, it isn't deleted. The message remains for other consumers.
 
-- **Account for data failures.** There's no built-in mechanism to handle messages that aren't processed as you expect them. For example, imagine your consumer malfunctions because of data format. Event Hubs won't detect this and delete the message once its time-to-live has expired. 
+- **Account for data failures.** There's no built-in mechanism to handle messages that aren't processed as you expect them. For example, imagine your consumer malfunctions because of data format. Event Hubs won't detect this issue. The message remains until its time-to-live has expired. 
 
 - **Process the data stream.** Events received by Event Hubs are added to the end of its data stream. This data stream orders events by the time they are received, and consumers can seek along this stream using time offsets.
