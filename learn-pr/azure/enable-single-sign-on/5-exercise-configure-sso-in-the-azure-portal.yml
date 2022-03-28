@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.enable-single-sign-on.exercise-configure-single-sign-on-azure-portal
+uid: learn.enable-single-sign-on.exercise-configure-sso-in-the-azure-portal
 title: Exercise - Configure single sign-on for the application in the Azure portal.
 metadata:
   unitType: exercise
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-exercise-configure-single-sign-on-azure-portal.md)]
+  [!include[](includes/5-exercise-configure-sso-in-the-azure-portal.md)]

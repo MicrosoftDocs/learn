@@ -9,16 +9,16 @@ metadata:
   ms.author: davidmu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: enable-single-sign-on
+title: Enable single sign-on for applications by using Azure Active Directory
 summary: "Define the URLs that are necessary for secure access, create a signing certificate, and configure single sign-on properties for the application. When the user attempts to sign in, the appropriate URLs are accessed to enable a single sign-on experience."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Upon completion of this module, the learner will be able to configure Azure Active Directory and applications to enable users to sign in once to access all the applications they need."
+    - Configure Azure Active Directory and applications to enable users to sign in once to access all the applications they need.
 prerequisites: |
-  - "An Azure AD subscription. If you don't have a subscription, you can get a free account."
-  - "The Global Administrator, Cloud Application Administrator, or Application Administrator role."
-  - "A single sign-on enabled subscription for the application that you intend to use."
-  - "Familiarity with URLs and how they are used."
+  - An Azure AD subscription. If you don't have a subscription, you can get a free account.
+  - The Global Administrator, Cloud Application Administrator, or Application Administrator role.
+  - A single sign-on enabled subscription for the application that you intend to use.
+  - Familiarity with URLs and how they are used.
 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -30,13 +30,13 @@ products:
 - azure-active-directory
 units:
 - learn.enable-single-sign-on.introduction
-- learn.enable-single-sign-on.add-new-enterprise-application
-- learn.enable-single-sign-on.exercise-add-new-enterprise-application
-- learn.enable-single-sign-on.configure-single-sign-on-azure-portal
-- learn.enable-single-sign-on.exercise-configure-single-sign-on-azure-portal
-- learn.enable-single-sign-on.configure-single-sign-on-application-host
-- learn.enable-single-sign-on.exercise-configure-single-sign-on-application-host
-- learn.enable-single-sign-on.test-single-sign-on
+- learn.enable-single-sign-on.identify-an-application-that-supports-sso
+- learn.enable-single-sign-on.exercise-add-an-sso-supported-application
+- learn.enable-single-sign-on.identify-sso-properties-for-an-application
+- learn.enable-single-sign-on.exercise-configure-sso-in-the-azure-portal
+- learn.enable-single-sign-on.discover-sso-configuration-at-the-application-host
+- learn.enable-single-sign-on.exercise-configure-sso-at-the-application-host
+- learn.enable-single-sign-on.verify-sso-property-configuration
 - learn.enable-single-sign-on.exercise-test-single-sign-on
 - learn.enable-single-sign-on.knowledge-check
 - learn.enable-single-sign-on.summary

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.enable-single-sign-on.test-single-sign-on
+uid: learn.enable-single-sign-on.verify-sso-property-configuration
 title: Test the single sign-on configuration
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-test-single-sign-on.md)]
+  [!include[](includes/8-verify-sso-property-configuration.md)]

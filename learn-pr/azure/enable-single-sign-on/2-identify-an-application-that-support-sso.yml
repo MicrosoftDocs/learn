@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.enable-single-sign-on.add-new-enterprise-application
+uid: learn.enable-single-sign-on.identify-an-application-that-supports-sso
 title: Add a new enterprise application
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-add-new-enterprise-application.md)]
+  [!include[](includes/2-identify-an-application-that-supports-sso.md)]

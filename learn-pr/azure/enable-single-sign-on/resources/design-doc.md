@@ -59,11 +59,11 @@ Add more units as needed for your content
 
     Provide a scenario of a real-world job task that shows how the technology is used in practice:
 
-    Suppose you’re an IT administrator at a retail company that provides access to several applications for users that perform tasks, such as marketing, sales, and operations. A new application is requested to be added to assist in company promotion and needs to be integrated into the corporate processes and made available to users as appropriate.
+    Suppose you’re an IT administrator at a retail company that depends on many applications for users to complete their work, such as marketing, sales, and operations. A team asked for a new application to be added to help with company promotion. The application needs to be made available to team members as appropriate.
 
-    You realize that this addition causes users to sign in to yet another application using specific credentials for it. Each application requires its own set of credentials causing users to have to sign in multiple times if they use multiple applications. You want to be able to configure the system so that a user can sign in once and get access to all applications and resources that they need to work effectively.
+    You realize that this addition causes users to sign in to yet another application using specific credentials for it. Users get frustrated because they have to sign in many times a day depending on the applications they use. You want to be able to configure the system so that a user can sign in once and get access to all applications and resources that they need to work effectively.
 
-1. Add a new enterprise application
+1. Identify enterprise applications that support SSO
 
     - Search for an application in the gallery
         - Navigate to Enterprise applications in the Azure portal
@@ -73,7 +73,14 @@ Add more units as needed for your content
     - Add the application to the Azure AD tenant
         - Click Create
 
-1. Exercise - Add a new enterprise application
+    Knowledge check
+
+    How does an administrator know which SSO methods an application supports?
+    - Find the information on the overview page in the gallery.
+    - Find the information on the applications list page in Enterprise applications.
+    - Contact the owner of the application and ask what methods are supported.
+
+1. Exercise - Add an SSO supported enterprise application
 
     List the steps that apply the learning content from previous unit:
 
@@ -86,15 +93,7 @@ Add more units as needed for your content
 
     If you choose to install an application that uses OpenID Connect based SSO, instead of seeing a **Create** button, you see a button that redirects you to the application sign-in or sign-up page depending on whether you already have an account there.
 
-    Knowledge check
-
-    How does an administrator know which SSO methods an application supports?
-    - Run a script that queries the application for SSO support.
-    - Find the information on the overview page in the gallery.
-    - Find the information on the applications list page in Enterprise applications.
-    - Contact the owner of the application and ask what methods are supported.
-
-1. Configure single sign-on for the application in the Azure portal
+1. Identify the SSO properties and resources for an enterprise application
 
     - Set Basic SAML Configuration values
         - Identifier (Entity ID)
@@ -108,6 +107,13 @@ Add more units as needed for your content
         - Download certificate
         - Record App Federation Metadata Url
     - Create a test user account
+  
+    Knowledge check
+
+    Which SSO properties are needed to configure the application at its host?
+    - **Reply URL**, **Azure AD Identifier**, and **Logout URL**.
+    - **Sign on URL**, **Reply URL**, and **Sign out URL**.
+    - **Login URL**, **Azure AD Identifier**, and **Logout URL**.
 
 1. Exercise - Configure single sign-on for the application in the Azure portal
 
@@ -138,15 +144,7 @@ Add more units as needed for your content
     1. Select **Select**.
     1. On the **Add Assignment** pane, select **Assign** at the bottom of the pane.
 
-    Knowledge check
-
-    Which SSO properties are needed to configure the application at its host?
-    - **Reply URL**, **Azure AD Identifier**, and **Logout URL**.
-    - **Sign on URL**, **Reply URL**, and **Sign out URL**.
-    - **Login URL**, **Azure AD Identifier**, and **Logout URL**.
-    - **Name**, **Description**, and **Azure AD Identifer**.
-
-1. Configure single sign-on properties for the application at its host
+1. Discover how to configure SSO for the application at its host
 
     - Set previously copied URLs
         - Login URL
@@ -154,6 +152,13 @@ Add more units as needed for your content
         - Logout URL
     - Enter App Federation Metadata Url or upload certificate
     - Create a test user account
+
+    Knowledge check
+
+    What is the purpose of the **Azure AD Identifier**?
+    - Identifies the application in the Azure portal.
+    - Identifies the Azure AD tenant where the application is registered.
+    - Identifies the service principal that represents the application.
 
 1. Exercise - Configure single sign-on properties for the application at its host
 
@@ -183,15 +188,7 @@ Add more units as needed for your content
     1. For **Sign on URL**, enter the **SP Initiated Login URL** value that you previously recorded.
     1. Select **Save**.
 
-    Knowledge check
-
-    What is the purpose of the **Azure AD Identifier**?
-    - Identifies the application in the Azure portal.
-    - Identifies the Azure AD tenant where the application is registered.
-    - Identifies the installation of Azure AD.
-    - Identifies the service principal that represents the application.
-
-1. Test SSO
+1. Verify SSO property configuration
 
     In the Test single sign-on with Azure AD SAML Toolkit 1 section, on the Set up single sign-on pane, select **Test**. Sign in to the application using the Azure AD credentials of the user account that you assigned to the application.
 

@@ -19,7 +19,7 @@ quiz:
     - content: "Find the information on the overview page in the gallery."
       isCorrect: true
       explanation: "SSO supportability information can be found on the overview page for the application."
-    - content: "SSO information is not available in the applications list page."
+    - content: "Find the information on the applications list page in Enterprise applications."
       isCorrect: false
       explanation: "SSO supportability information can be found on the overview page for the application."
     - content: "Contact the owner of the application and ask what methods are supported."

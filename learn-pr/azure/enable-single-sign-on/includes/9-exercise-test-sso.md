@@ -1,3 +1,4 @@
+# Heading
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
     Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
@@ -101,6 +102,7 @@ TODO: describe the end-state
 1. <!-- Step 1 (if multiple steps are needed) -->
 1. <!-- Step 2 (if multiple steps are needed) -->
 1. <!-- Step n (if multiple steps are needed) -->
+
 Optional "exercise-solution" video
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

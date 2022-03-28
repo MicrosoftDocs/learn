@@ -1,3 +1,4 @@
+# Heading
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
     Goal: briefly summarize the key skill this unit will teach
@@ -51,7 +52,9 @@ TODO: add a visual element
 -->
 
 <!-- Pattern for simple chunks (repeat as needed) -->
+
 ## H2 heading
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
@@ -59,15 +62,21 @@ Paragraph (optional)
 Paragraph (optional)
 
 <!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
+
+## H2 heading 1
+
 Strong lead sentence; remainder of paragraph.
 Visual (image, table, list)
-### H3 heading
+
+### H3 heading 2
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list)
 Paragraph (optional)
-### H3 heading
+
+### H3 heading 3
+
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list)
