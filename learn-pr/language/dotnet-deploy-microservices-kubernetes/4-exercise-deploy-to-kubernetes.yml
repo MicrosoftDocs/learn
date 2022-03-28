@@ -9,8 +9,10 @@ metadata:
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
-  ms.contributors: masoucou-09032021
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - masoucou-09032021
 durationInMinutes: 7
 content: |
   [!include[](includes/4-exercise-deploy-to-kubernetes.md)]

@@ -9,8 +9,11 @@ metadata:
   ms.date: 11/23/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen, team=cloud_advocates
-  ms.contributors: fldrees-11052021
+  ms.custom:
+  - team=nextgen
+  - team=cloud_advocates
+  ms.contributors:
+  - fldrees-11052021
 durationInMinutes: 2
 content: |
   [!include[](includes/5-next-steps.md)]

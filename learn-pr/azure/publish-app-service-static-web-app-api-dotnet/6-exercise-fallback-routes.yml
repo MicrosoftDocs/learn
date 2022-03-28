@@ -8,8 +8,10 @@ metadata:
   ms.author: aapowell
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
-  ms.contributors: aapowell-09242020
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - aapowell-09242020
 azureSandbox: true
 title: Exercise - Create your fallback routes
 durationInMinutes: 4

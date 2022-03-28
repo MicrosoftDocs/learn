@@ -9,8 +9,10 @@ metadata:
   ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
-  ms.contributors: apspeigh-02142021
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - apspeigh-02142021
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-azure-remote-rendering.md)]
