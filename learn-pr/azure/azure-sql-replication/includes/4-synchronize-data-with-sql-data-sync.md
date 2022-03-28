@@ -1,10 +1,10 @@
 ## Scenario
 
-As the CTO of our healthcare company, you may decide to build a solution that automatically synchronizes data bi-drectionally between your national and regional inventory databases. For such a use cases, SQL Data Sync might be a great solution. 
+As the CTO of our healthcare company, you may decide to build a solution that automatically synchronizes data bidirectionally between your national and regional inventory databases. For such a use case, SQL Data Sync might be a great solution.
 
 ## How it works
 
-SQL Data Sync is a service built on Azure SQL Database that lets you synchronize the data you select bi-directionally across multiple databases, both on-premises and in the cloud (SQL Server and Azure SQL Databases). Data Sync is based around the concept of a sync group. A sync group is a group of databases that you want to synchronize, using a hub and spoke topology. You define one of the databases in the sync group as the hub database, while the rest of the databases are member databases. 
+SQL Data Sync is a service built on Azure SQL Database that lets you synchronize the data you select bi-directionally across multiple databases, both on-premises and in the cloud (SQL Server and Azure SQL Databases). Data Sync is based around the concept of a sync group. A sync group is a group of databases that you want to synchronize, using a hub and spoke topology. You define one of the databases in the sync group as the hub database, while the rest of the databases are member databases.
 
 Within a sync group:
 
@@ -21,16 +21,13 @@ Additionally, a sync group has the following properties:
 
 ## Using SQL Data Sync
 
-SQL Data Sync tracks changes using insert, update, and delete triggers. The changes are recorded in a side table in the user's database. While synchronizing data, the hub database syncs with each member individually within a sync group. More specifically, changes from the hub are downloaded to the member and then changes from the member are uploaded to the hub. Is a conflict occurs during the synchronization process, SQL Data Sync provides two options for conflict resolution: Hub wins or Member wins. If you select Hub wins, the changes in the hub always overwrite changes in the member.
-If you select Member wins, the changes in the member overwrite changes in the hub. If there's more than one member, the final value depends on which member syncs first.
+SQL Data Sync tracks changes using insert, update, and delete triggers. The changes are recorded in a side table in the user's database. During the Sync process, the hub database syncs with each member individually within a sync group. More specifically, changes from the hub are downloaded to the member and then changes from the member are uploaded to the hub. Is a conflict occurs during the synchronization process, SQL Data Sync provides two options for conflict resolution: Hub wins or Member wins. If the user selects Hub wins, the changes in the hub always overwrite changes in the member. If the user selects Member wins, the changes in the member overwrite changes in the hub. If there's more than one member, the final value depends on which member syncs first.
 
-Additionally, the Private Link for SQL Data Sync allows you to choose a service managed private endpoint to establish a secure connection between the sync service and your member/hub databases during the data synchronization process. A service managed private endpoint is a private IP address within a specific virtual network and subnet. Within Data Sync, the service managed private endpoint is created by Microsoft and is exclusively used by the Data Sync service for a given sync operation. Currently, the service managed private endpoint must be manually approved in order for the sync group to be created. Additionally, when using the SQL Data Sync Private Link, both the hub and member databases must be hosted in Azure (same or different regions) and in the same cloud type (e.g. both in public cloud or both in government cloud). For more details on how Private Link works, check the diagram below:
-
-(insert image)
+Additionally, the Private Link for SQL Data Sync allows you to choose a service managed private endpoint to establish a secure connection between the sync service and your member/hub databases during the data synchronization process. A service managed private endpoint is a private IP address within a specific virtual network and subnet. Within Data Sync, the service managed private endpoint is created by Microsoft and is exclusively used by the Data Sync service for a given sync operation. Currently, the service managed private endpoint must be manually approved in order for the sync group to be created. Additionally, when using the SQL Data Sync Private Link, both the hub and member databases must be hosted in Azure (same or different regions) and in the same cloud type (e.g. both in public cloud or both in government cloud).
 
 ## User interface options
 
-You can use SQL Data Sync through the Azure Portal, PowerShell, REST API. 
+You can use SQL Data Sync through the Azure Portal, PowerShell, REST API.
 
 ## Key use cases
 

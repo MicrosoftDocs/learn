@@ -34,7 +34,7 @@ units:
 - learn.azure-sql-replication.exercise-track-data-changes-with-cdc
 - learn.azure-sql-replication.synchronize-data-with-sql-data-sync
 - learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking
-- learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking-
+- learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking
 - learn.azure-sql-replication.summary
 - learn.azure-sql-replication.knowledge-check
 badge:

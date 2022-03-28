@@ -6,7 +6,7 @@ Applications can use the following functions to obtain the changes that are made
 
 This rowset function is used to query for change information. The function queries the data stored in the internal change tracking tables. The function returns a results set that contains the primary keys of rows that have changed together with other change information such as the operation, columns updated and version for the row.
 
-Below is an example on how to use this function to obtain changes for a SalesLT.Product table:
+Below is an example of how to use this function to obtain changes for a SalesLT.Product table:
 
 *declare @last_synchronization_version bigint;*
 *SELECT*  
@@ -25,4 +25,4 @@ This function is used to obtain the minimum valid version that a client can have
 
 ## User interface options
 
-You can enable Change Tracking on your databases and tables by running T-SQL. You can also enable Change Tracking on SQL Server Management Studio (SSMS), by using the Database Properties (ChangeTracking page) dialog box. However, if a database contains memory optimized tables, you can’t enable Change Tracking with SQL Server Management Studio and you need to use T-SQL.
+You can enable Change Tracking on your databases and tables by running T-SQL. You can also enable Change Tracking on SQL Server Management Studio, by using the Database Properties (ChangeTracking page) dialog box. However, if a database contains memory optimized tables, you can’t enable Change Tracking with SQL Server Management Studio and you need to use T-SQL.
