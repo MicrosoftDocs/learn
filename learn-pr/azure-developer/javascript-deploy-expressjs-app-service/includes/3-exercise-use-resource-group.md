@@ -12,10 +12,6 @@ Use the **Sign in to activate sandbox** button to sign in.
 
 Make sure you use the same account to sign into the sandbox and Azure from Visual Studio Code. 
 
-|Subscription name|Value|
-|--|--|
-|**Subscription name**|`Concierge Subscription`|
-
 
 ## Find the subscription in Visual Studio Code
 
