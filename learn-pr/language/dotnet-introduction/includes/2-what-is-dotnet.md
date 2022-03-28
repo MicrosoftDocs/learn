@@ -93,7 +93,7 @@ Additionally, the .NET ecosystem has momentum:
 - The results of Stack Overflow polls in 2019 and 2020 showed that .NET Core is the most loved framework.
 - Students love .NET; 40 percent of developers who are new to .NET are students.
 - The GitHub repositories for .NET and ASP.NET are ranked among the top 30 highest-velocity open-source software (OSS) projects.
-- GitHub lists C# in the top five programming languages, qnd the language is increasing in popularity according to the 2020 TIOBE programming community index.
+- GitHub lists C# in the top five programming languages, and the language is increasing in popularity according to the 2020 TIOBE programming community index.
 - .NET has the fastest web framework on the planet according to [TechEmpower benchmarks](https://www.techempower.com/benchmarks/#section=data-r19&hw=ph&test=plaintext&a=2?azure-portal=true), an independent, open-source set of web performance benchmarks that measure dozens of languages and application frameworks.
 
 
