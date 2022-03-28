@@ -4,7 +4,7 @@ Now that you've created the network virtual appliance (NVA) and virtual machines
 
 ## Create public and private virtual machines
 
-The next steps deploy a VM into the public and private subnets:
+The next steps deploy a VM into the public and private subnets.
 
 1. Open the Cloud Shell editor and create a file named cloud-init.txt.
 

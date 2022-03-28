@@ -9,14 +9,10 @@ In Azure Machine Learning, data for model training and other operations is usual
 2. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Datasets** page. Datasets represent specific data files or tables that you plan to work with in Azure ML.
 3. Create a new dataset **from web files**, using the following settings:
     * **Basic Info**:
+        * **Web URL**: [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true)
         * **Name**: bike-rentals
         * **Dataset type**: Tabular
         * **Description**: Bicycle rental data
-    * **Datastore and file selection**
-        * **Select or create a datastore**: *do not change*
-        * **Create new datastore**: *do not change*
-        * **Select files for your dataset**: select [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) to download the data file. Then select the csv file to upload. 
-        * **Skip data validation**: *do not select*
     * **Settings and preview**:
         * **File format**: Delimited
         * **Delimiter**: Comma

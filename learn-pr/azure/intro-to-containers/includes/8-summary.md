@@ -2,7 +2,7 @@ Packaging an app in a Docker image gives you a convenient way to deploy and run 
 
 ## Clean up resources
 
-In this module, you created resources by using your Azure subscription. You want to clean up these resources so that you will not continue to be charged for them.
+In this module, you created resources by using your Azure subscription. You want to clean up these resources so that you won't continue to be charged for them.
 
 1. In the Azure portal, select **Home**, and then select **Resource groups**.
 

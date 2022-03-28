@@ -4,9 +4,16 @@ Machine learning is a data science technique that allows computers to learn to u
 
 Azure’s advanced machine learning capabilities allow your business to quickly and easily build, train, and deploy machine learning models using Azure Machine Learning, Azure Databricks, and ONNX (Open Neural Network Exchange). You can use tools and frameworks of your choice without being locked in to specific technologies, develop models faster using automated machine learning, and manage models across the cloud and the edge.
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn about the different layers of machine learning.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn about the different layers of machine learning.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqOXa]
 
@@ -27,9 +34,16 @@ Azure Machine Learning service provides a cloud-based environment that you can u
 
 ## Machine learning in action
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Discover how TAL, a 150-year-old life insurance company, is embracing AI with Microsoft Azure Machine Learning to transform its business.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Discover how TAL, a 150-year-old life insurance company, is embracing AI with Microsoft Azure Machine Learning to transform its business.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NAE7]
 

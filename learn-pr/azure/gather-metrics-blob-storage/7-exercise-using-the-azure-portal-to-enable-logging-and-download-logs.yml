@@ -13,11 +13,12 @@ azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Follow the directions to create a custom dashboard with storage metrics."
-  azure:
-    resource:
-      type: "Microsoft.Storage/storageAccounts"
-      kind: "StorageV2"
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   hint: "Follow the directions to create a custom dashboard with storage metrics."
+#   azure:
+#     resource:
+#       type: "Microsoft.Storage/storageAccounts"
+#       kind: "StorageV2"

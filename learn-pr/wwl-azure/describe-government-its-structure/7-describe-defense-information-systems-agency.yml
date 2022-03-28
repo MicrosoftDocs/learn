@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-government-its-structure.defense-information-systems-agency-disa
+title: Describe the Defense Information Systems Agency (DISA)
+metadata:
+  title: Describe the Defense Information Systems Agency (DISA)
+  description: "Describe the Defense Information Systems Agency (DISA)"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-describe-defense-information-systems-agency.md)]

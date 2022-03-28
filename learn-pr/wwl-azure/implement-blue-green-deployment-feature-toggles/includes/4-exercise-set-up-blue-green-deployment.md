@@ -1,8 +1,5 @@
 In this demonstration, you'll investigate Blue-Green Deployment.
 
-> [!NOTE]
-> *Before starting this exercise, ensure you've done the steps in the prerequisites section and the previous exercises.*
-
 ## Steps
 
 Let's now look at how a release pipeline can be used to implement blue-green deployments.
@@ -11,10 +8,10 @@ We'll start by creating a new project with a release pipeline that can deploy th
 
 ## An initial app deployment
 
-1.  In a browser, navigate to Azure DevOps Demo Generator: https://azuredevopsdemogenerator.azurewebsites.net and click **Sign in**.
+1.  Navigate to Azure DevOps Demo Generator in a browser: https://azuredevopsdemogenerator.azurewebsites.net and click **Sign in**.
     
     You'll be prompted to sign in if necessary.
-2.  In the **Create New Project** window, select your existing Organization, set the **Project Name** to **PU Hosted,** and click **Choose template** .
+2.  In the **Create New Project** window, select your existing Organization, set the **Project Name** to **PU Hosted,** and click **Choose template**.
     
     :::image type="content" source="../media/11-01-choose-template-a9d229dd.png" alt-text="Choose template.":::
     
@@ -28,19 +25,19 @@ We'll start by creating a new project with a release pipeline that can deploy th
     
     :::image type="content" source="../media/11-02-build-succeeded-58a5cd6c.png" alt-text="Build succeeded with warnings.":::
     
-5.  In the main menu, click **Releases**. Because a continuous integration trigger was in place, a release was attempted. However, we haven't yet configured the release, so that it will have failed. Click **Edit** to enter edit mode for the release.
+5.  In the main menu, click **Releases**. Because a continuous integration trigger was in place, a release was attempted. However, we haven't yet configured the release so it will have failed. Click **Edit** to enter edit mode for the release.
     
     :::image type="content" source="../media/11-03-release-pipeline-edit-42a741fc.png" alt-text="Release pipeline edit.":::
     
 6.  Select the Dev stage from the drop-down list beside **Tasks**, then click to select the **Azure Deployment** task.
-7.  In the **Azure resource group deployment** pane, select your Azure subscription, then click **Authorize** when prompted. When authorization completes, select a **Location** for the web app.
+7.  In the **Azure resource group deployment** pane, select your Azure subscription, then click **Authorize** when prompted. When authorization completes, choose a **Location** for the web app.
     
     > [!NOTE]
-    > *You might be prompted to log in to Azure at this point.*
+    > *You might be prompted to sign in to Azure at this point.*
     
     :::image type="content" source="../media/11-04-resource-group-deployment-ae04074a.png" alt-text="Resource group deployment.":::
     
-8.  In the task list, click **Azure App Service Deploy** to open its settings. Again, select your Azure subscription. Set the **Deployment slot** to **Staging**.
+8.  Click **Azure App Service Deploy** in the task list to open its settings. Again, select your Azure subscription. Set the **Deployment slot** to **Staging**.
     
     :::image type="content" source="../media/11-05-staging-app-service-deploy-fa348f16.png" alt-text="Staging app service deploy.":::
     
@@ -55,7 +52,7 @@ We'll start by creating a new project with a release pipeline that can deploy th
 
 10. From the top menu, click **Pipelines**. Click the **Dev** stage, and in the properties window, rename it to **Green Site**. Click the **QA** stage and click **Delete** and **Confirm**. Click the **Production** stage and click **Delete** and **Confirm**. Click **Save,** then **OK**.
 
-    :::image type="content" source="../media/11-07-green-site-stage-complete-299a2e9b.png" alt-text="Green site stage complete.":::
+    :::image type="content" source="../media/11-07-green-site-stage-complete-299a2e9b.png" alt-text="Green site stages complete.":::
 
 
 11. Hover over the **Green Site** stage and click the **Clone** icon when it appears. Change the **Stage name** to **Production**. From the **Tasks** drop-down list, select **Production**.
@@ -70,7 +67,7 @@ We'll start by creating a new project with a release pipeline that can deploy th
 
     The production site isn't deployed to a deployment slot. It's deployed to the main site.
 
-13. Click **Create release,** then **Create** to create the new release. When it has been created, click the release link to view its status.
+13. Click **Create release,** then **Create** to create the new release. When created, click the release link to view its status.
 
     :::image type="content" source="../media/11-08-release-link-9339550b.png" alt-text="Release link.":::
 
@@ -82,7 +79,7 @@ We'll start by creating a new project with a release pipeline that can deploy th
 
 ## Test the green site and the production site
 
-14. In the **Azure portal**, open the blade for the **ASPDOTNET** resource group created by the project deployment. Notice the names of the web apps that have been deployed. Click to open the *Staging*\* web app's blade. Copy the URL from the top left-hand side.
+14. Open the blade for the **ASPDOTNET** resource group created by the project deployment in the Azure portal. Notice the names of the web apps that have been deployed. Click to open the *Staging*\* web app's blade. Copy the URL from the top left-hand side.
 
     :::image type="content" source="../media/11-14-url-location-2bfaccfe.png" alt-text="Resource group and URL.":::
 
@@ -105,7 +102,7 @@ We'll start by creating a new project with a release pipeline that can deploy th
 
 ## Configure blue-green swap and approval
 
-Now that both sites are working let's configure the release pipeline for blue-green deployment.
+Now that both sites are working, let's configure the release pipeline for blue-green deployment.
 
 17. In **Azure DevOps**, in the main menu for the **PU Hosted** project, click **Pipelines**, then click **Releases**, then click **Edit** to return to edit mode.
 18. Click the **Production** stage, click **Delete**, then **Confirm** to remove it. Click **+Add** to add an extra stage and click **Empty job** for the template. Set **Swap Blue-Green** for the **Stage name**.
@@ -148,7 +145,7 @@ Now that both sites are working let's configure the release pipeline for blue-gr
     :::image type="content" source="../media/11-22-index-view-code-30ec90bd.png" alt-text="Index view code.":::
 
 
-    We will make a cosmetic change so that we can see that the website has been updated. We'll change the word **tires** in the main page rotation to **tyres** to target an international audience.
+    We'll make a cosmetic change to see that the website has been updated. We'll change the word **tires** in the main page rotation to **tyres** to target an international audience.
 
 26. Click **Edit** to allow editing, then find the word **tires** and replace it with the word **tyres**. Click **Commit** and **Commit** to save the changes and trigger a build and release.
 
@@ -191,4 +188,4 @@ Now that both sites are working let's configure the release pipeline for blue-gr
 
 If you check the production site, you'll see it has the previous version of the code.
 
-This is the key difference with Swap, rather than just a typical deployment process from one staged site to the next. You have a rapid fallback option by swapping the sites back again if needed.
+It's the critical difference with Swap, rather than just a typical deployment process from one staged site to another. You have a rapid fallback option by swapping the sites back if needed.

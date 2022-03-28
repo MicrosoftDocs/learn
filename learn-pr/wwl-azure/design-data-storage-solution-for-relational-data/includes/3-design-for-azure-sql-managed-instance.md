@@ -22,7 +22,7 @@ SQL Managed Instance instance-scoped features include:
 
 - Machine Learning Services
 
-Let us look at another industry scenario. Komatsu is a manufacturing company that produces and sells heavy equipment for construction. The company had multiple mainframe applications for different types of data.
+Let us explore at another industry scenario. Komatsu is a manufacturing company that produces and sells heavy equipment for construction. The company had multiple mainframe applications for different types of data.
 
 Komatsu wanted to consolidate these applications to get an overall view. Additionally, Komatsu wanted a way to reduce overhead.
 

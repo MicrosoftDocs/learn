@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This unit has three questions to test your knowledge of the learning objectives
-  ms.date: 03/31/2021
+  ms.date: 02/25/2022
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
   ms.prod: learning-github
+  ms.custom: devdivchpfy22
 durationInMinutes: 3
 quiz:
   questions:
@@ -16,32 +17,32 @@ quiz:
     choices:
     - content: Enter your GitHub username and password in the command line.
       isCorrect: false
-      explanation: Your GitHub credentials aren't enough to sign in. You also need to generate and manage SSH keys for your account. Visual Studio can do this for you when you sign in through the **Account Settings** window.
+      explanation: Your GitHub credentials aren't enough to sign in. You also need to generate and manage SSH keys for your account. Visual Studio can do it for you when you sign in through the **Account Settings** window.
     - content: Use the Visual Studio **Account Settings** window.
       isCorrect: true
-      explanation: The Visual Studio **Account Settings** window allows you to store a GitHub account in your keychain, and it handles all the authentication for you.
+      explanation: The Visual Studio **Account Settings** window lets you store a GitHub account in your key chain, and it handles all the authentication for you.
     - content: Generate and store SSH keys from the GitHub website. 
       isCorrect: false
       explanation: Manually generating SSH keys is a tedious and multiple-step process that you can automate by using the Visual Studio **Account Settings** window.
   - content: Which files does Visual Studio add for you when you're creating a GitHub repository?
     choices:
-    - content: Visual Studio does not add any new files.
+    - content: Visual Studio doesn't add any new files.
       isCorrect: false
       explanation: Visual Studio expedites the steps of repository creation by automatically generating standard .gitignore and .gitattributes files.
     - content: Visual Studio adds a new .gitignore file.
       isCorrect: false
-      explanation: With the first commit in the new repository, Visual Studio generates .gitignore as well as .gitattributes files from a standard template.
+      explanation: With the first commit in the new repository, Visual Studio generates .gitignore and .gitattributes files from a standard template.
     - content: Visual Studio adds new .gitignore and .gitattributes files.
       isCorrect: true
       explanation: With the first commit in the new repository, Visual Studio generates .gitignore and .gitattributes files from a standard template.
-  - content: After you stage and commit changes to your local branch, what is the next logical step that Visual Studio helps you remember to do before you push your commits?
+  - content: After staging and committing the changes to your local branch, what is the next logical step that Visual Studio helps you remember before you can push your commits?
     choices:
     - content: Pull any incoming commits from the remote branch.
       isCorrect: true
-      explanation: If you try to push without pulling incoming commits, Visual Studio will open a dialog that reminds you to pull before pushing so that you can resolve any merge conflicts.
+      explanation: If you try to push without pulling incoming commits, Visual Studio opens a dialog that reminds you to pull before pushing to resolve any merge conflicts.
     - content: Nothing, just push the local branch.
       isCorrect: false
-      explanation: If you try to push without pulling incoming commits, Visual Studio will open a dialog that reminds you to pull before pushing so that you can resolve any merge conflicts.
+      explanation: If you try to push without pulling incoming commits, Visual Studio opens a dialog that reminds you to pull before pushing to resolve any merge conflicts.
     - content: Create a pull request to merge your branch.
       isCorrect: false
-      explanation: Visual Studio suggests that you create a pull request only after pushing local commits. But after you commit, if you try to push without pulling incoming commits, Visual Studio will open a dialog that reminds you to pull before pushing so that you can resolve any merge conflicts.
+      explanation: Visual Studio suggests that you create a pull request only after pushing local commits. If you try to push your commits without pulling the incoming commits, Visual Studio opens a dialog that reminds you to pull before pushing to resolve any merge conflicts.

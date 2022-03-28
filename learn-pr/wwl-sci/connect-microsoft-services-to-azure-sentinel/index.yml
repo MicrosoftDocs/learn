@@ -3,7 +3,7 @@ uid: learn.wwl.connect-microsoft-services-to-azure-sentinel
 metadata:
   title: Connect Microsoft services to Microsoft Sentinel
   description: "Connect Microsoft services to Microsoft Sentinel"
-  ms.date: 11/05/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial

@@ -1,6 +1,6 @@
-After you've created a few scripts, you might notice that your scripts aren't flexible. Going into your scripts to change them isn't efficient. There's a better way to handle changes: use parameters.
+After you've created a few scripts, you might notice your scripts aren't flexible. Going into your scripts to change them isn't efficient. There's a better way to handle changes: use parameters.
 
-Using parameters makes your scripts flexible because it allows users to select options or send input to the scripts. You won't need to change your scripts as frequently because in some cases you'll just need to change a parameter value.
+Using parameters makes your scripts flexible, because it allows users to select options or send input to the scripts. You won't need to change your scripts as frequently, because in some cases you'll just need to change a parameter value.
 
 Cmdlets, functions, and scripts all accept parameters.
 
@@ -12,7 +12,7 @@ To declare a parameter, you need to use the keyword `Param` with an open and clo
 Param()
 ```
 
-Inside the parentheses, you define your parameters, separating them with commas. A typical parameter declaration might look like this one:
+Inside the parentheses, you define your parameters, separating them with commas. A typical parameter declaration might look like this:
 
 ```powershell
 # CreateFile.ps1
@@ -37,23 +37,23 @@ To call a script with a parameter, you need to provide a name and a value. Assum
 Because you used a parameter, you don't need to change the script file when you want to call the file something else.
 
 > [!NOTE]
-> This particular script might not benefit much from using a parameter because it only calls `New-Item`. But as soon as your script is a few lines long, using the parameter will pay off.
+> This particular script might not benefit much from using a parameter, because it only calls `New-Item`. As soon as your script is a few lines long, using the parameter will pay off.
 
 ## Improve your parameters
 
-When you first create a script that uses parameters, you might remember exactly what the parameters are for and what values are reasonable for them. As time passes, you might forget those details. You might also want to give a script to a colleague. The solution to these problems is to be explicit, which makes your scripts easy to use. You want a script to fail early if it's passed unreasonable parameter values. Here are some things to consider when you define parameters:
+When you first create a script that uses parameters, you might remember exactly what the parameters are for and what values are reasonable for them. As time passes, you might forget those details. You might also want to give a script to a colleague. The solution in these cases is to be explicit, which makes your scripts easy to use. You want a script to fail early if it passes unreasonable parameter values. Here are some things to consider when you define parameters:
 
 - **Is it mandatory?** Is the parameter optional or required?
 - **What values are allowed?** What values are reasonable?
 - **Does it accept more than one type of value?** Does the parameter accept any type of value, like string, Boolean, integer, and object?
-- **Can the parameter rely on a default?** Would it be OK to omit the value altogether and rely on a default value instead?
+- **Can the parameter rely on a default?** Can you omit the value altogether and rely on a default value instead?
 - **Can you further improve the user experience?** Can you be even clearer to your user by providing a Help message?
 
 ## Select an approach
 
-All parameters are optional by default. That default might work in some cases. But sometimes you need your user to provide parameter values, and the values need to be reasonable ones. If the user doesn't provide a value to a parameter, the script should quit or tell the user how to fix the problem. The worst thing that can happen is for the script to continue and do things that you don't want it to do.
+All parameters are optional by default. That default might work in some cases, but sometimes you need your user to provide parameter values, and the values need to be reasonable ones. If the user doesn't provide a value to a parameter, the script should quit or tell the user how to fix the problem. The worst scenario is for the script to continue and do things you don't want it to do.
 
-There are a couple of approaches you can use to make your script safer. You can write custom code to inspect the parameter value. Or you can use decorators that do roughly the same thing. Let's look at both approaches.
+There are a couple of approaches you can use to make your script safer. You can write custom code to inspect the parameter value. Or, you can use decorators that do roughly the same thing. Let's look at both approaches.
 
 - **Use `If/Else`**. The `If/Else` construct allows you to check the value of a parameter and then decide what to do. Here's an example:
 
@@ -90,7 +90,7 @@ There are a couple of approaches you can use to make your script safer. You can 
    Path:
    ```
 
-   You can improve this decorator by providing a Help message that users will see when they run the script:  
+   You can improve this decorator by providing a Help message users will see when they run the script:  
 
    ```powershell
    [Parameter(Mandatory, HelpMessage = "Please provide a valid path")]
@@ -106,7 +106,7 @@ There are a couple of approaches you can use to make your script safer. You can 
    Please provide a valid path  # Your Help message.
    ```
 
-- **Assign a type**. If you assign a type to a parameter, you can say, for example, that the parameter accepts only strings, not Booleans. So the user knows what to expect. You can assign a type to a parameter by preceding it with the type, enclosed in brackets:
+- **Assign a type**. If you assign a type to a parameter, you can say, for example, that the parameter accepts only strings, not Booleans. That way, the user knows what to expect. You can assign a type to a parameter by preceding it with the type enclosed in brackets:
 
    ```powershell
    Param(

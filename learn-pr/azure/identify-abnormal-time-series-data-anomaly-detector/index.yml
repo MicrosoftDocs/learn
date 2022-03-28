@@ -4,13 +4,13 @@ metadata:
   moduleType: standard
   title: Identify abnormal time-series data with Anomaly Detector
   description: Learn how to detect anomalies in real-time from an IoT time-series data stream using univariate Azure Anomaly Detector API. In addition, users will learn how to train an AI model using the multivariate Anomaly Detector API to identify outliers, unexpected data patterns or data that deviate significantly from the norm.
-  ms.date: 02/15/2022
+  ms.date: 03/2/2022
   author: ruyakubu
   ms.author: ruyakubu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Identify abnormal time-series data with Anomaly Detector
-summary: Anomaly Detection is a technique in artificial intelligence to find outliers in time series data.  We will demonstrate how to use Azure Cognitive Services in your apps or systems to quickly catch unexpected problems with the Azure Anomaly Detector service. 
+summary: Anomaly Detection is a technique in artificial intelligence to find outliers in time series data.  You will learn how to collect real-time data from a smart device; send the telemetry data to the cloud with Azure IoT Hub; and use Azure Anomaly Detector to catch unexpected data deviations.
 # see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master"
 abstract: | # see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master
   By the end of this module, you'll be able to: 

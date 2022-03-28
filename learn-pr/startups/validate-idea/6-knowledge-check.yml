@@ -16,13 +16,13 @@ quiz:
     choices:
     - content: "Costs, revenues, and channels."
       isCorrect: false
-      explanation: "Incorrect. A Value Proposition Canvas isn't concerned with costs, revenues, or channels. Instead, it helps you understand the needs of your target customer. Then it helps you design your value proposition to meet those needs."
+      explanation: "Incorrect. A Value Proposition Canvas isn't concerned with costs, revenues, or channels."
     - content: "Acquisition, retention, and referral."
       isCorrect: false
-      explanation: "Incorrect. A Value Proposition Canvas isn't concerned with acquisitions, retentions, or referrals. Instead, it helps you understand the needs of your target customer. Then it helps you design your value proposition to meet those needs."
-    - content: "Customer jobs-to-be-done, pains, and gains."
+      explanation: "Incorrect. A Value Proposition Canvas isn't concerned with acquisitions, retentions, or referrals."
+    - content: "Customer jobs to be done, pains, and gains."
       isCorrect: true
-      explanation: "Correct. A Value Proposition Canvas helps you understand the needs of your target customer. It looks at jobs-to-be-done, pains, and gains. Then it helps you design your value proposition to meet those needs."
+      explanation: "Correct. A Value Proposition Canvas helps you understand the needs of your target customers. It looks at jobs to be done, pains, and gains. Then it helps you design your value proposition to meet those needs."
 
   - content: "Which of these business model blocks should you populate first when using the Lean Canvas?"
     choices:
@@ -32,11 +32,11 @@ quiz:
     - content: "Problem, solution, and customer segments."
       isCorrect: true
       explanation: "Correct. The Lean Canvas helps founders identify assumptions about their startup's business model. Founders should populate the problem, solution, and customer segments first because assumptions in these areas are the most critical ones."
-    - content: "Any business model blocks about which you have some information."
+    - content: "Any business model blocks about which some information is available."
       isCorrect: false
       explanation: "Incorrect. The Lean Canvas helps founders identify assumptions about their startup's business model. Founders should populate the most critical segments first, not segments that they happen to have information on."
 
-  - content: "Which category of assumption are you testing by creating a simple landing page and tracking whether customers will provide their email address?"
+  - content: "Which category of assumptions are you testing by creating a simple landing page and tracking whether customers will provide their email address?"
     choices:
     - content: "Desirability."
       isCorrect: true
@@ -66,17 +66,17 @@ quiz:
       isCorrect: true
       explanation: "Correct. During customer interviews, your goal is to gather information. Before you've validated your idea, it's too early to invest a significant amount of time in selling your product."
 
-  - content: "What's the main difference between a Concierge experiment and a Wizard of Oz experiment?"
+  - content: "What's the main difference between a concierge experiment and a Wizard of Oz experiment?"
     choices:
-    - content: "In Concierge, the customer doesn't provide feedback."
+    - content: "In a concierge experiment, customers don't provide feedback."
       isCorrect: false
-      explanation: "Incorrect. In Concierge and Wizard of Oz, it's important to make it easy for customers to leave written feedback."
-    - content: "In Wizard of Oz, you don't attempt to make any sales."
+      explanation: "Incorrect. In both concierge and Wizard of Oz experiments, it's important to make it easy for customers to leave written feedback."
+    - content: "In a Wizard of Oz experiment, you don't try to make any sales."
       isCorrect: false
-      explanation: "Incorrect. In Concierge and Wizard of Oz, you can attempt to make sales as long as customers see sufficient value in the outcome."
-    - content: "In Wizard of Oz, the customer is unaware that the process is being completed manually."
+      explanation: "Incorrect. In both concierge and Wizard of Oz experiments, you can try to make sales as long as customers see enough value in the outcome."
+    - content: "In a Wizard of Oz experiment, customers are unaware that the process is being completed manually."
       isCorrect: true
-      explanation: "Correct. Concierge and Wizard of Oz are similar. But in Wizard of Oz, the customer doesn't know that the behind-the-scenes process is manual."
-    - content: "In Concierge, you don't need a landing page."
+      explanation: "Correct. Concierge and Wizard of Oz experiments are similar. But in Wizard of Oz, customers don't know that the behind-the-scenes process is manual."
+    - content: "A concierge experiment doesn't require a landing page."
       isCorrect: false
-      explanation: "Incorrect. In Concierge and Wizard of Oz, it's good to have a landing page where customers can sign up and provide input."
+      explanation: "Incorrect. In both concierge and Wizard of Oz experiments, it's good to have a landing page where customers can sign up and provide input."

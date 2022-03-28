@@ -3,7 +3,7 @@ uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api
 metadata:
   title: Configure multi-region write in Azure Cosmos DB SQL API
   description: "Write data to multiple regions using Azure Cosmos DB SQL API."
-  ms.date: 12/09/2021
+  ms.date: 03/09/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Use the .NET SDK to select a write region for operations.
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-multi-region.svg
+iconUrl: /learn/achievements/azure-cosmos-db-sql-api-multi-region.svg
 levels:
 - intermediate
 roles:

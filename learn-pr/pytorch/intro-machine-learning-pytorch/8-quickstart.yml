@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.pytorch.intro-machine-learning.ml-overview
+title: The full model building process
+metadata:
+  title: The full model building process
+  description: This section runs through the API for common tasks in machine learning. Refer to the links in each section to dive deeper.
+  author: cassiebreviu
+  ms.author: ruyakubu
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 5
+sandbox: true
+notebook: notebooks/8-quickstart.ipynb

@@ -75,7 +75,7 @@ To get a notification that a bus is within the geofence and you need to start to
 
 ### Host the web application with Azure Static Web Apps
 
-To visualize geospatial data, which represents the geofences and bus positions on a map, you can create a static HTML page, using the well-known Vue.js framework and the OpenLayers library. The static page will need to fetch data from a server-side REST API that will be provided by another Azure Function. As both the client and back end parts are needed to make the visualization page work, you can take advantage of Azure Static Web Apps. Azure Static Web Apps makes it easy to develop and deploy the solution, since it combines the capabilities of Azure Web Apps and Azure Functions, plus it has integration with GitHub Actions built-in.
+To visualize geospatial data, which represents the geofences and bus positions on a map, you can create a static HTML page, using the well-known jQuery and the OpenLayers libraries. The static page will need to fetch data from a server-side REST API that will be provided by another Azure Function. As both the client and back end parts are needed to make the visualization page work, you can take advantage of Azure Static Web Apps. Azure Static Web Apps makes it easy to develop and deploy the solution, since it combines the capabilities of Azure Web Apps and Azure Functions, plus it has integration with GitHub Actions built-in.
 
 ### Automate deployment with GitHub Actions
 

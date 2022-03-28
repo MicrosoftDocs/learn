@@ -215,7 +215,7 @@ You can get these values from the connection string.
         --namespace-name <namespace-name>
     ```
 
-1. Run the `dotnet run` command again, and then run the `servicebus queue show` command again. Each time you run the dotnet app, a new message is added to the queue. You'll see the `messageCount` increase each time you run the Azure command.
+1. Run the `dotnet run` command from step 1 again, then run the `servicebus queue show` command again. Each time you run the dotnet app, a new message is added to the queue. You'll see the `messageCount` increase each time you run the Azure command.
   
 ## Write code to receive messages from the queue
 
@@ -428,7 +428,6 @@ You can get these values from the connection string.
 1. Check the notifications in Cloud Shell. In the Azure portal, go to your Service Bus namespace and check your **Messages** chart:
 
     ```command
-    Received: $10,000 order for bicycle parts from retailer Adventure Works.
     Received: $10,000 order for bicycle parts from retailer Adventure Works.
     ```
 

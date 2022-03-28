@@ -1,6 +1,6 @@
 You successfully deployed the video rendering service website to your cluster. But you noticed that you couldn't access the website from any client external to the cluster. The problem is that you haven't exposed your application to the internet yet. By default, Kubernetes blocks all external traffic. You'll need to add an *ingress rule* to allow traffic into the cluster.
 
-[!INCLUDE [azure-exercise-subscription-prerequisite](./include-sandbox-subscription-alert.md)]
+[!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create the service manifest
 
@@ -9,7 +9,7 @@ Like all resources, services also have manifest files that describe how they sho
 1. Sign in to Azure Cloud Shell if you haven't done so already.
 
     > [!div class="nextstepaction"]
-    > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
+    > [Azure Cloud Shell](https://shell.azure.com/bash?azure-portal=true)
 
 1. In Cloud Shell, create a manifest file for the Kubernetes service called `service.yaml`.
 

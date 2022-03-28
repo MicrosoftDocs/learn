@@ -14,16 +14,17 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-setup-dsc-configuration.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Run the `az vm create` command as shown to create your virtual machine."
-  azure:
-    resource:
-      type: "Microsoft.Compute/virtualMachines"
-- action: exists
-  environment: azure
-  hint: "Create an Azure Automation account in the Azure portal."
-  azure:
-    resource:
-      type: "Microsoft.Automation/automationAccounts"
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   hint: "Run the `az vm create` command as shown to create your virtual machine."
+#   azure:
+#     resource:
+#       type: "Microsoft.Compute/virtualMachines"
+# - action: exists
+#   environment: azure
+#   hint: "Create an Azure Automation account in the Azure portal."
+#   azure:
+#     resource:
+#       type: "Microsoft.Automation/automationAccounts"

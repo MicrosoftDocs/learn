@@ -11,7 +11,7 @@ Azure Static Web Apps has been selected as the best solution for the bus-catchin
 
 ### Build applications where server side rendering is not required
 
-Static web apps are commonly built using libraries and frameworks like Angular, React, Svelte, Vue, or Blazor where server side rendering is not required. These apps include HTML, CSS, JavaScript, and image assets that make up the application. With a traditional web server, these assets are served from a single server alongside any required API endpoints.
+Static web apps are commonly built using libraries and frameworks like Angular, React, Svelte, Vue, jQuery, or Blazor where server side rendering is not required. These apps include HTML, CSS, JavaScript, and image assets that make up the application. With a traditional web server, these assets are served from a single server alongside any required API endpoints.
 
 ### Build applications that use serverless APIs
 
@@ -23,7 +23,7 @@ Azure Static Web Apps combines the power of static web apps with Azure Functions
 
 ## Create a solution for catching the bus using Azure Static Web Apps
 
-To visualize geospatial data and project geofences and bus positions on a map, you'll need a static HTML page, and one possible solution is to use the well-known Vue.js framework and the OpenLayers library. The static page will need to fetch data from a server-side REST API that will be provided by another Azure Function. As both the client and the back end are needed to make the visualization page work, Azure Static Web Apps is the perfect option to develop and deploy the end-to-end visualization solution.
+To visualize geospatial data and project geofences and bus positions on a map, you'll need a static HTML page, and one possible solution is to use the well-known jQuery and the OpenLayers libraries. The static page will need to fetch data from a server-side REST API that will be provided by another Azure Function. As both the client and the back end are needed to make the visualization page work, Azure Static Web Apps is the perfect option to develop and deploy the end-to-end visualization solution.
 
 ### Deploy the solution using Azure Static Web Apps
 

@@ -43,7 +43,7 @@ You need to configure the basic parameters of your Ubuntu virtual machine. If so
     | Virtual machine name  | Enter *test-ubuntu-cus-vm* |
     | Region | From the dropdown list, select a geographical location close to you. |
     | Availability options  | No infrastructure redundancy required |
-    | Image | Ubuntu Server 18.04 LTS - Gen1 |
+    | Image | Ubuntu Server 18.04 LTS - Gen2 |
     | Azure Spot instance | Unchecked |
     | Size | Standard D2s V3 |
     | **Administrator account** |

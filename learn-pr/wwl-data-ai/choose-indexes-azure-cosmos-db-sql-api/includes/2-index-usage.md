@@ -85,14 +85,14 @@ SELECT
 FROM
     products p
 WHERE
-    p.name IN ('Road-200 Red', 'Road-200 Blue')
+    p.name IN ('Road-200 Red', 'Mountain-400-W Silver')
 ```
 
 The query engine then traverses the tree in the following order:
 
 1. The engine will start at the root. Right now, all items are still potential matches.
 1. The engine will traverse the **name** node. Still, all items match.
-1. Finally, the engine will traverse the exact matches. This includes the **Road-200Red** and **Mountain-400-W** nodes. Only items **#1** and **#3** matches at this point
+1. Finally, the engine will traverse the exact matches. This includes the **Road-200Red** and **Mountain-400-W Silver** nodes. Only items **#1** and **#3** matches at this point
 1. The query engine will then load the entire JSON content for both items #1 and #3 and then return that in the result set.
 
 This tree diagram illustrates the traversal process for the matching child values in the **name** node.

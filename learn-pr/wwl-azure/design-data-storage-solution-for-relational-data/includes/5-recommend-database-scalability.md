@@ -28,17 +28,6 @@ There are two types of scaling you can implement in Azure SQL Database. These ar
 
 - **Horizontal** - Horizontal scaling refers to adding or removing databases in order to adjust capacity or overall performance, also called "scaling out". Horizontal scaling is managed using the [Elastic Database client library](/azure/azure-sql/database/elastic-database-client-library).
 
- 
-
-Let us explore these in more detail.  
-‎The following figure is a representation of how databases can be scaled.
-
- 
-
-:::image type="content" source="../media/horizontal-verticl-scaling.png" alt-text="Diagram showing how databases can be scaled.":::
-
-
-
 ## Design Vertical scaling solution
 
 Imagine a scenario where a small business experiences rapid growth globally and needs to maintain and scale separate Azure SQL databases for each location. However, the rates of growth and database load vary significantly, so resource requirements are unpredictable. How would you manage scaling to meet the demands of this organization?
@@ -73,7 +62,7 @@ The following table shows Read Scale-out provisioning for Azure SQL DB and Azure
 | **Azure SQL DB Managed Instance**| **Azure SQL DB** |
 | - | - |
 | For the basic, standard and general purpose tier, read scale-out feature is unavailable| For the basic, standard and general purpose tier, read scale-out feature is unavailable |
-| For the Premium and Business Critical tier, read scale-out is auto-provisioned| For the Premium and Business Critical tier, read scale-out is auto-provisioned |
+| For the Business Critical tier, read scale-out is auto-provisioned| For the Premium and Business Critical tier, read scale-out is auto-provisioned |
 | Hyperscale tier is unavailable in Azure Managed Instance| Read scale-put feature is available in Hyperscale tier if atleast one secondary replica is created |
 
 
@@ -95,7 +84,7 @@ In the image above, in Business Critical scenario, the data and log files are al
 
  
 
-In the High Availability architecture shown above for a premium/business critical tier of Azure SQL DB or Azure Managed Instance, we can see that it is configured as an Always On Availability Group for disaster recovery and high-availability of the application. There is a primary read-write replica and several secondary read-only replicas. The secondary replicas are provisioned with the same compute size as the primary replica. You set the connection string option to decide whether the connection is routed to the write replica or to a read-only replica.
+The premium/business critical tier of Azure SQL DB or Azure Managed Instance has an Always On Availability Group. This group is for disaster recovery and high-availability of the application. There is a primary read-write replica and several secondary read-only replicas. The secondary replicas are provisioned with the same compute size as the primary replica. You set the connection string option to decide whether the connection is routed to the write replica or to a read-only replica.
 
 You can disable and re-enable read scale-out on single databases and elastic pool databases in the Premium or Business Critical service tiers using the following methods:
 
@@ -125,19 +114,6 @@ Reasons for Sharding include:
 - When different customers or tenents' data needs physical isolation from each other
 
 - Within an organization, there is a geographical separation of data for compliance reasons
-
- 
-
-:::image type="content" source="../media/shard-map-manager.png" alt-text="Image shows the use a shard map manager for scaling out databases on Azure SQL Database.":::
-
-
-The image above shows the use a shard map manager for scaling out databases on Azure SQL Database. The shard map manager is a special database that maintains global mapping information about all shards (databases) in a shard set. The metadata allows an application to connect to the correct database based upon the value of the sharding key. In addition, every shard in the set contains maps that track the local shard data (known as shardlets).
-
-Azure SQL offers the [Azure Elastic Database tools](/azure/azure-sql/database/elastic-scale-introduction). This provides a number of tools to help you create, maintain, and query sharded SQL databases in Azure from your application logic.
-
-Always design for scale-in. It is important that your application easily handle scaling back down as the load drops.
-
- 
 
 **Adopt suitable database scaling strategy**
 

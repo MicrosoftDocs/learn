@@ -4,11 +4,12 @@ title: Commit your changes
 metadata:
   title: Commit your changes
   description: This unit explains the parts of the Git Changes window in Visual Studio
-  ms.date: 03/31/2021
+  ms.date: 02/25/2022
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
   ms.prod: learning-github
+  ms.custom: devdivchpfy22
 durationInMinutes: 6
 content: |
   [!include[](includes/6-commit-changes.md)]
