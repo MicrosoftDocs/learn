@@ -1,6 +1,6 @@
 Environment variables enable you to dynamically configure the application or script the container runs. You can use the Azure CLI, PowerShell, or the Azure portal to set variables when you create the container. Secured environment variables enable you to prevent sensitive information from displaying in the container's output.
 
-Here, you'll create an Azure Cosmos DB instance and use environment variables to pass the connection information to an Azure container instance. An application in the container uses the variables to write and read data from Azure Cosmos DB. You will create both an environment variable and a secured environment variable so you can see the difference between them.
+Here, you'll create an Azure Cosmos DB instance and use environment variables to pass the connection information to an Azure container instance. An application in the container uses the variables to write and read data from Azure Cosmos DB. You'll create both an environment variable and a secured environment variable so you can see the difference between them.
 
 ## Deploy Azure Cosmos DB
 
@@ -111,7 +111,7 @@ In this part, you'll learn how to prevent sensitive information, such as connect
     ]
     ```
 
-    Although these values don't appear to your users through the voting application, it's a good security practice to ensure that sensitive information, such as connection keys, are not stored in plain text.
+    Although these values don't appear to your users through the voting application, it's a good security practice to ensure that sensitive information, such as connection keys, aren't stored in plain text.
 
     Secure environment variables prevent clear text output. To use secure environment variables, you use the `--secure-environment-variables` argument instead of the `--environment-variables` argument.
 
@@ -140,7 +140,7 @@ In this part, you'll learn how to prevent sensitive information, such as connect
       --query containers[0].environmentVariables
     ```
 
-    This time, you see that your environment variables do not appear in plain text.
+    This time, you see that your environment variables don't appear in plain text.
 
     ```json
     [
@@ -157,4 +157,4 @@ In this part, you'll learn how to prevent sensitive information, such as connect
     ]
     ```
 
-    In fact, the values of your environment variables do not appear at all. That's OK because these values refer to sensitive information. Here, all you need to know is that the environment variables exist.
+    In fact, the values of your environment variables don't appear at all. That's OK because these values refer to sensitive information. Here, all you need to know is that the environment variables exist.
