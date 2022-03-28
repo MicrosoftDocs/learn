@@ -1,17 +1,18 @@
-## Completed tasks
+You've deployed an Express.js (Node.js) app to Azure App Service from Visual Studio Code. 
 
-Using Visual Studio Code or the Azure portal, you were able to:
+As an experienced developer, new to Azure, you learned how to deploy and configure the Azure resources needed to securely deploy the web app.
 
-- Use the free Learn sandbox subscription and resource group
-- Create and configure the Azure App Service for an Express.js app
-- Deploy the web app from your local computer
-- View the cloud-based files from your local computer
-- View web logs 
-You've successfully created and deployed an Express.js web application to Azure App Service.
+- Used the free Learn sandbox subscription and resource group
+- Created and configured the Azure App Service for an Express.js app
+- Deployed the web app from your local computer
+- Viewed the cloud-based files from your local computer
+- Analyzed web logs 
+
+You used VS Code and the Azure portal to create, deploy, and analyze your web app. Now, you can bring your own Express.js app to App Service. 
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-## Learn More
+## References
 
 - [Deploy a Node.js + MongoDB web app](/azure/app-service/tutorial-nodejs-mongodb-app?tabs=azure-portal%2Cterminal-bash%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cdeploy-zip-linux-mac%2Cdeploy-instructions--zip-azcli)
 - [Configure a Node.js app for Azure App Service](/azure/app-service/configure-language-nodejs?pivots=platform-linux)
