@@ -1,6 +1,7 @@
-## Deploy files
+When you deploy to App Service, you move all files to the hosting environment that are necessary to run the web app. You can also instruct the deployment to install the npm dependency packages.
 
-When you deploy to App Service, you move all files to the hosting environment that are necessary to run the web app. 
+
+## Deploy files
 
 Because this is a Node.js app, it needs to have the npm modules required by the app. As the deployment engineer, you can choose to move the modules as part of deployment or you can have the deployment process on Azure install the resources. 
 

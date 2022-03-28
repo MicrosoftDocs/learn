@@ -1,4 +1,4 @@
-## Your tasks
+To understand the deployment process, this module provides an Express.js sample, which you need to fork on GitHub, then clone down to your local computer. Once the source code is on your local computer, you deploy the app to your existing App Service from VS Code. 
 
 In this exercise, you need to: 
 
@@ -78,7 +78,9 @@ The local project has several folders, each representing a Learn module. The `2-
     |3:08:19 PM jimb-rentals: Deployment successful.|
     |3:08:29 PM: Deployment to "jimb-rentals" completed.|
 
-## What did this exercise accomplish? 
+## Check your work
+
+At this point, the sample Express.js is deployed to Azure successfully.
 
 * You forked then cloned the GitHub sample repository.
 * You deployed a subfolder of your local forked repository to App Service.

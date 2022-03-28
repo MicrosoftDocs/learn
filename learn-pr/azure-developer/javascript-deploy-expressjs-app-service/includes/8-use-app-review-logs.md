@@ -1,8 +1,10 @@
-This unit focuses on how you know your app is working correctly. 
+App Service collects the same kinds of monitoring data as other Azure resources. These metrics and logs are provided as part of Azure Monitor, integrated with App Service. 
+
+:::image type="content" source="../media/azure-monitor-conceptual-overview.png" alt-text="Conceptual diagram displaying Azure Monitor metrics and logging.":::
 
 ## Monitoring
 
-App Service collects the same kinds of monitoring data as other Azure resources. App Service also provides built-in diagnostics to assist with debugging apps. 
+Azure Monitor provides several sets of data and functionality to allow you to watch your app. 
 
 * **Platform metrics** and the **Activity log** are collected and stored **automatically**, but can be routed to other locations by using a diagnostic setting. 
 * **Resource Logs** are **not automatically collected** and stored until you create a diagnostic setting and route them to one or more locations.

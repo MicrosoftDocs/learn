@@ -1,4 +1,4 @@
-## Your tasks
+Now that the sample application is deployed, you need to use it to generate log files. Use the failure report to understand how you would debug a 404 error. 
 
 In this exercise, you need to: 
 
@@ -119,3 +119,10 @@ The App Service keeps logs in the hosting environment, which you can use to reso
 
 1. On the **Create an alert rule** panel, select the **Review + create** button at the bottom of the panel.
 -->
+
+## Check your work
+
+At this point, you've used your Azure resources to understand your app's current state and failures.
+
+* You've found your start up and runtime logs from VS Code.
+* You've found your failures in the Azure portal for 404, file not found errors.

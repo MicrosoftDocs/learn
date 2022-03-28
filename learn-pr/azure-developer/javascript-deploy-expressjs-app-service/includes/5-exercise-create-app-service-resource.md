@@ -1,4 +1,4 @@
-## Your tasks
+When you create your own instance of an Azure service, that is called a resource. You need to know a few key details before you create your resource such as the pricing tier and the Azure geographical region of the cloud.
 
 In this exercise, you need to: 
 
@@ -6,7 +6,7 @@ In this exercise, you need to:
 
 As part of the resource creation, these resources are created for you:
 * An App Service Plan resource.
-* An Application Insights resource.
+* An Azure Monitor (Application Insights) resource.
 
 ## Create the resource from Visual Studio Code
 
@@ -55,7 +55,9 @@ When you created the resource, you also created and connected Application Insigh
 1. Select **Turn on Application Insights**.
 1. Select  **Apply** to send metrics and log collections to Application Insights.
 
-## What did this exercise accomplish? 
+## Check your work  
+
+At this point, you have an App Service plan with a single App Service, and its monitoring resource. Before you deploy your own app, your resource's default app is available at the public URL. 
 
 * You created your web app, its plan, and the logging resource (Application Insights).
 * You reviewed the default HTML file.

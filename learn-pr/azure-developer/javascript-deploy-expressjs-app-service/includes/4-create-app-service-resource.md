@@ -1,3 +1,7 @@
+App Service is the Azure service for hosting an Express.js app. To use the App Service correctly, you need to understand the App Service plan and app settings. 
+
+:::image type="content" source="../media/app-service-plan-with-three-services.png" alt-text="Diagram displaying App Service plan with three app services.":::
+
 ## Choose Azure App Service for hosting
 
 Azure provides several hosting choices, each with tradeoffs for intended purpose, degree of configuration, and app type. An Express.js app is a server-side app. The server-side hosting choices include:
