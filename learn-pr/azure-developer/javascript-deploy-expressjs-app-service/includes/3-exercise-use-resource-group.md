@@ -6,18 +6,6 @@ In this exercise, you need to:
 * Sign into the Learn sandbox with a user account you use for the entire module. This sandbox gives you a free subscription and resource group to complete this module from Visual Studio Code.
 * Find the free sandbox subscription and resource group in Visual Studio Code.
 
-## Install required software
-
-This module uses a locally installed Visual Studio Code to deploy the Express.js app to Azure App Service. To complete that task, install the following software:
-
-* [Visual Studio Code](https://code.visualstudio.com/d)
-    * Azure Resource Group extension
-    * Azure App Service extension 
-
-:::image type="content" source="../media/visual-studio-code-azure-extension-app-service.png" alt-text="Partial screenshot of Visual Studio Code showing Azure sidebar with App Service and Resource groups visible.":::
-
-While you may have Node.js LTS installed on your local computer, it isn't used in this module. 
-
 ## Sign into the Learn sandbox
 
 Use the **Sign in to activate sandbox** button to sign in. 

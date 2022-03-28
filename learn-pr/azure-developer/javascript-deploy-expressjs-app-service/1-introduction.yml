@@ -3,13 +3,13 @@ uid: learn.javascript-on-azure.deploy-expressjs-app-service.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
+  title: Introduction
   description: "In this module, you're a web developer or devops engineer who needs to deploy a web app to Azure. As an experienced developer, new to Azure, you'll learn how to deploy and configure the Azure resources needed to securely deploy the web app."
   ms.date: 2/4/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 40
+durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]
