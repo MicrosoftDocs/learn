@@ -1,4 +1,4 @@
-# SQL Data Sync - Track, load, and replicate data changes on your Azure SQL Databases
+## Scenario
 
 As the CTO of our healthcare company, you may decide to build a solution that automatically synchronizes data bi-drectionally between your national and regional inventory databases. For such a use cases, SQL Data Sync might be a great solution. 
 

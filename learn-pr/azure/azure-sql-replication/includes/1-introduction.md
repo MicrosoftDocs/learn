@@ -1,5 +1,3 @@
-# Introduction - Data Replication and Streaming on Azure SQL Databases
-
 ## Common data replication use cases and tools
 
 For the purposes of this Microsoft Learn Module, we will use the umbrella term "replication tools" to cover all change data tracking, loading, streaming, synchronizing functionalities. Therefore, we will refer to Change Data Capture (CDC), SQL Data Sync, and Change Tracking as "replication tools".

@@ -1,5 +1,3 @@
-# Summary - Data Replication and Streaming on Azure SQL Databases
-
 ## Reviewing what you learned
 
 In this data replication module, you learned how to:

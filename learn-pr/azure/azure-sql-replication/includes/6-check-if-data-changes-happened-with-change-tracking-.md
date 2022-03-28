@@ -1,5 +1,3 @@
-# Change Tracking - Track, load, and replicate data changes on your Azure SQL Databases
-
 ## Obtain changes and information about the changes made to a database
 
 Applications can use the following functions to obtain the changes that are made in a database and information about the changes:

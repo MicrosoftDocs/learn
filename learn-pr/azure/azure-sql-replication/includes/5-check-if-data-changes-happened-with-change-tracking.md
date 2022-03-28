@@ -1,4 +1,4 @@
-# Change Tracking - Track, load, and replicate data changes on your Azure SQL Databases
+## Scenario
 
 As the CTO of our healthcare company, you may decide to only track whether a change (e.g. insert / update / delete) has happened on any of your regional inventory databases, not necessarily track all historical data changes. This may be a more optimal approach that has less of an impact on your source database. In order to implement this, we need to first better understand Change Tracking. 
 
