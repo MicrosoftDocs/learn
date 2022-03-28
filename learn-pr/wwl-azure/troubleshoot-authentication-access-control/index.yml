@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.troubleshoot-authentication-access-control
+metadata:
+  title: Troubleshoot authentication and access control issues in Microsoft Azure
+  description: "Microsoft Azure has a sophisticated authentication and access control system to provide high security. Azure Active Directory (AD) authentication includes Self-service password reset, Multi-Factor Authentication, hybrid integration, and passwordless authentication."
+  ms.date: 03/28/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot authentication and access control issues in Microsoft Azure
+summary: Microsoft Azure has a sophisticated authentication and access control system to provide high security. Azure Active Directory (AD) authentication includes Self-service password reset, Multi-Factor Authentication, hybrid integration, and passwordless authentication.
+abstract: |
+  By the end of this module, you will be able to:
+  - Troubleshoot Azure AD authentication
+  - Troubleshoot hybrid authentication
+  - Troubleshoot authorization issues
+prerequisites: |
+  - Demonstrate an understanding of the OSI model
+  - Demonstrate an understanding of PowerShell
+  - Demonstrate an understanding of Azure CLI
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- network-engineer
+- support-engineer
+products:
+- azure
+- azure-active-directory
+- azure-active-directory-domain
+units:
+- learn.wwl.troubleshoot-authentication-access-control.introduction
+- learn.wwl.troubleshoot-authentication-access-control.troubleshoot-azure-ad-authentication
+- learn.wwl.troubleshoot-authentication-access-control.troubleshoot-hybrid-authentication
+- learn.wwl.troubleshoot-authentication-access-control.troubleshoot-authorization-issues
+- learn.wwl.troubleshoot-authentication-access-control.exercise
+- learn.wwl.troubleshoot-authentication-access-control.knowledge-check
+- learn.wwl.troubleshoot-authentication-access-control.summary
+badge:
+  uid: learn.wwl.troubleshoot-authentication-access-control.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-authentication-access-control.troubleshoot-hybrid-authentication
+title: Troubleshoot hybrid authentication in Microsoft Azure
+metadata:
+  title: Troubleshoot hybrid authentication in Microsoft Azure
+  description: "Troubleshoot hybrid authentication in Microsoft Azure"
+  ms.date: 03/28/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-troubleshoot-hybrid-authentication.md)]

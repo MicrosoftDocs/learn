@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-authentication-access-control.exercise
+title: 'Exercise: Troubleshoot authentication and access control issues'
+metadata:
+  title: 'Exercise: Troubleshoot authentication and access control issues'
+  description: "Exercise: Troubleshoot authentication and access control issues"
+  ms.date: 03/28/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-exercise.md)]

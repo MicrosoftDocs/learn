@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-authentication-access-control.troubleshoot-azure-ad-authentication
+title: Troubleshoot Azure AD authentication
+metadata:
+  title: Troubleshoot Azure AD authentication
+  description: "Troubleshoot Azure AD authentication"
+  ms.date: 03/28/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-troubleshoot-azure-ad-authentication.md)]
