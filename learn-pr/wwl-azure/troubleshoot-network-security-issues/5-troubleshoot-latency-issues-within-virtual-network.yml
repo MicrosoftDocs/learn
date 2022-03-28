@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-network-security-issues.troubleshoot-latency-issues-within-virtual-network
+title: Troubleshoot latency issues within a virtual network
+metadata:
+  title: Troubleshoot latency issues within a virtual network
+  description: "Troubleshoot latency issues within a virtual network"
+  ms.date: 03/28/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-troubleshoot-latency-issues-within-virtual-network.md)]

@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-network-security-issues.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/28/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is used to examine a request if it is blocked by the WAF?"
+    choices:
+    - content: "WAF logs"
+      isCorrect: true
+      explanation: "That'scorrect. WAF logs work as a ledger of all evaluated requests that are matched or blocked by the WAF."
+    - content: "Root Certificates"
+      isCorrect: false
+      explanation: "That'sincorrect. A root certificate is generated for the purpose of P2S connections."
+    - content: "Private endpoints"
+      isCorrect: false
+      explanation: "That'sincorrect. Azure Private Endpoint is a network interface."
+  - content: "How should you troubleshoot connectivity problem when default security rules block inbound access from the internet?"
+    choices:
+    - content: "Add security rules with a higher priority than default rules."
+      isCorrect: true
+      explanation: "That'scorrect. Default security rules block inbound access from the internet, and only permit inbound traffic from the virtual network. To allow inbound traffic from the Internet, add security rules with a higher priority than default rules."
+    - content: "Redirect internet traffic to the on-premises network."
+      isCorrect: false
+      explanation: "That'sincorrect. This is called forced-tunneling. If you force tunnel internet traffic to a virtual appliance, or on-premises, you may not be able to connect to the VM from the internet."
+    - content: "Apply an NSG to the subnet the network interface."
+      isCorrect: false
+      explanation: "That'sincorrect. This step is recommended if you have a public IP address assigned to a VM."
+  - content: "You can override the built-in infrastructure rule collection by which of the following options?"
+    choices:
+    - content: "By configuring IDPS in Alert mode for inbound and outbound flows."
+      isCorrect: false
+      explanation: "That'sincorrect. IDPS monitors network for suspicious activities. It doesnt override the built-in infrastructure rule collection."
+    - content: "By adding a specific Internet source to allow DNAT access to the network."
+      isCorrect: false
+      explanation: "Insert the second incorrect answer feedback in this cell. That'sincorrect. DNAT translates and filters inbound Internet traffic to the subnets. It doesnt override the built-in infrastructure rule collection"
+    - content: "By creating a deny all application rule collection that is processed last."
+      isCorrect: true
+      explanation: "That'scorrect. This will override the built-in infrastructure rule collection and will always be processed before the infrastructure rule collection."
+  - content: "Network Watcher is designed to monitor and repair the network health of which of the following?"
+    choices:
+    - content: "Software As a Service (SaaS)"
+      isCorrect: false
+      explanation: "That'sincorrect. Azure Network Watcher will not work for SaaS."
+    - content: "Infrastructure As s Service (IaaS)"
+      isCorrect: true
+      explanation: "That'scorrect. Azure Network Watcher provides tools to monitor and diagnose the network health of IaaS, such as Virtual Machines, Virtual Networks, Application Gateways, Load balancers, etc."
+    - content: "Platform As a Service (PaaS)"
+      isCorrect: false
+      explanation: "That'sincorrect. Azure Network Watcher is not intended for PaaS monitoring or Web analytics."
+  - content: "Inbound Internet connectivity can be enabled by configuring which of the following option?"
+    choices:
+    - content: "Azure Diagnostics and Logging (MDS)."
+      isCorrect: false
+      explanation: "That'sincorrect. MDS is a part of built-in rule collection for infrastructure Fully Qualified Domain Names (FQDNs)."
+    - content: "Distributed denial of service (DDoS)."
+      isCorrect: false
+      explanation: "That'sincorrect. A DDoS is a type of attack that aims to exhaust an application's resources to make it unavailable to legitimate users."
+    - content: "Destination Network Address Translation (DNAT)."
+      isCorrect: true
+      explanation: "That'scorrect. DNAT rules allow or deny inbound traffic he firewall public IP address(es)."

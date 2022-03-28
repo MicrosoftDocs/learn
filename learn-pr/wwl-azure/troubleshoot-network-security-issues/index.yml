@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.troubleshoot-network-security-issues
+metadata:
+  title: Troubleshoot network security issues with Microsoft Azure
+  description: "Troubleshoot network issues revolving around WAF, NSG, Azure Firewall, latency within a virtual network."
+  ms.date: 03/28/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot network security issues with Microsoft Azure
+summary: Troubleshoot network issues revolving around WAF, NSG, Azure Firewall, latency within a virtual network.
+abstract: |
+  By the end of this module, you will be able to:
+  *   Troubleshoot network security issues
+  *   Troubleshoot NSGs
+  *   Troubleshoot Azure Firewall
+  *   Troubleshoot latency issues within a virtual network
+prerequisites: |
+  *   Experience with the OSI model
+  *   Demonstrate an awareness of Azure Bastion
+  *   Experience with Powershell and Azure CLI
+  *   Know how to get to cloud shell to run commands
+  *   Experience with Visual Studio Code
+  *   Demonstrate an understanding of JSON
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- network-engineer
+- support-engineer
+products:
+- azure
+- azure-active-directory
+- azure-active-directory-domain
+- azure-cdn
+- azure-firewall
+- azure-firewall-manager
+- azure-private-link
+- azure-virtual-machines
+- azure-virtual-network
+units:
+- learn.wwl.troubleshoot-network-security-issues.introduction
+- learn.wwl.troubleshoot-network-security-issues.troubleshoot-network-security-issues
+- learn.wwl.troubleshoot-network-security-issues.troubleshoot-nsgs
+- learn.wwl.troubleshoot-network-security-issues.troubleshoot-azure-firewall
+- learn.wwl.troubleshoot-network-security-issues.troubleshoot-latency-issues-within-virtual-network
+- learn.wwl.troubleshoot-network-security-issues.exercise
+- learn.wwl.troubleshoot-network-security-issues.knowledge-check
+- learn.wwl.troubleshoot-network-security-issues.summary-resources
+badge:
+  uid: learn.wwl.troubleshoot-network-security-issues.badge
