@@ -9,9 +9,12 @@ metadata:
   ms.date: 08/03/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen, team=cloud_advocates
+  ms.custom:
+  - team=nextgen
+  - team=cloud_advocates
   ms.product: learning-tensorflow
-  ms.contributors: cassieb-08202021
+  ms.contributors:
+  - cassieb-08202021
 durationInMinutes: 3
 content: |
   [!include[](includes/5-summary.md)]

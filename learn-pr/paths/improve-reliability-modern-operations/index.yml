@@ -9,8 +9,11 @@ metadata:
   ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.contributors: dnb-06032020
-  ms.custom: team=cloud_advocates
+  ms.contributors:
+  - dnb-06032020
+  - aapowell-09102021
+  ms.custom:
+  - team=cloud_advocates
 title: Improve your reliability with modern operations practices
 summary: The reliability of your systems, services and products has a direct impact on your success. Learn the modern operations principles and practices (and the Azure features that support them) that will help you achieve the level of reliability you need.
 prerequisites: None

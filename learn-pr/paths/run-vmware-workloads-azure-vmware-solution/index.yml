@@ -9,8 +9,11 @@ metadata:
   ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.contributors: shkuehn-01272022
-  ms.custom: team=cloud_advocates
+  ms.contributors:
+  - shkuehn-01272022
+  - aapowell-09102021
+  ms.custom:
+  - team=cloud_advocates
 title: Run VMware workloads on Azure VMware Solution
 summary:  |
   Learn about Azure VMware Solution, how to deploy the resource, and how to migrate VMware virtual machines on-premises.

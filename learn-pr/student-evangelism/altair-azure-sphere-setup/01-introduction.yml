@@ -9,8 +9,11 @@ metadata:
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-  ms.custom: nextgen, team=cloud_advocates
-  ms.contributors: dglover-10272021
+  ms.custom:
+  - nextgen
+  - team=cloud_advocates
+  ms.contributors:
+  - dglover-10272021
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/01-introduction.md)]
