@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.cloud-hybrid-connectivity.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/28/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You want to test that peering connectivity has been configured correctly. Which option should you choose from the ExpressRoute circuit page?"
+    choices:
+    - content: "Connections"
+      isCorrect: false
+      explanation: "That'sincorrect. This option will not test whether peering connectivity has been configured correctly."
+    - content: "Diagnose and solve problems"
+      isCorrect: true
+      explanation: "That'scorrect. This option will test whether peering connectivity has been configured correctly."
+    - content: "Configuration"
+      isCorrect: false
+      explanation: "That'sincorrect. This option will not test whether peering connectivity has been configured correctly."
+  - content: "You are configuring peering connections between four VNets. You have created peering connections between VNetA and VNetB, between VNetB and VNetC, and between VNetC and VNetD. When you test the configuration, you find that everything works well, except between VNetA and VNetD. What is the cause of this problem?"
+    choices:
+    - content: "There is an error in one of the peerings. Check the configuration and retest"
+      isCorrect: false
+      explanation: "That's incorrect. This is not due to an error in one of the peerings."
+    - content: "This is by design, and the configuration is not supported"
+      isCorrect: true
+      explanation: "That's correct. This configuration is not supported. You must create an additional peering or use a hub-and-spoke configuration."
+    - content: "Peerings must have a bidirectional link. Create two links for each peering"
+      isCorrect: false
+      explanation: "That's incorrect. The error is not due to a missing link."
+  - content: "You are troubleshooting failed connections on your WAN. On investigating the problem, you find that the Routing Status on your virtual hub is displaying \"Failed\". What should you do?"
+    choices:
+    - content: "Reset both the router and the hub"
+      isCorrect: false
+      explanation: "That's incorrect. This will not bring failed resources such as route tables, hub router, or the virtual hub resource back to the provisioning state."
+    - content: "Select the Reset Router option for the virtual hub"
+      isCorrect: true
+      explanation: "That's correct. This will bring failed resources such as route tables, hub router, or the virtual hub resource back to the provisioning state."
+    - content: "Select the Reset Hub option for the Virtual Router"
+      isCorrect: false
+      explanation: "That's incorrect. This will not bring failed resources such as route tables, hub router, or the virtual hub resource back to the provisioning state."
