@@ -37,7 +37,7 @@ units:
 - learn.enable-single-sign-on.discover-sso-configuration-at-the-application-host
 - learn.enable-single-sign-on.exercise-configure-sso-at-the-application-host
 - learn.enable-single-sign-on.verify-sso-property-configuration
-- learn.enable-single-sign-on.exercise-test-single-sign-on
+- learn.enable-single-sign-on.exercise-test-sso
 - learn.enable-single-sign-on.knowledge-check
 - learn.enable-single-sign-on.summary
 badge:

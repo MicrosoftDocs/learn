@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.enable-single-sign-on.exercise-test-single-sign-on
+uid: learn.enable-single-sign-on.exercise-test-sso
 title: Exercise - Test the single sign-on configuration
 metadata:
   unitType: exercise
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-exercise-test-single-sign-on.md)]
+  [!include[](includes/9-exercise-test-sso.md)]
