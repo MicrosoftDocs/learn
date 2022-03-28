@@ -1,3 +1,4 @@
+<!-- TODO edits -->
 You are determined to support internal DevOps teams at your toy company and publish several security-hardened template specs that are compliant with the new governance model. Those published artifacts provide a guarantee that resource deployments referencing them won't be blocked by Azure policies.
 
 You selected a subscription and a resource group to deploy the template spec to. This will be your _deployment target_ in the publishing pipeline we are about to create.
@@ -7,10 +8,10 @@ Now that your environment is configured to work with GitHub Actions and your Azu
 In this exercise, you'll:
 
 > [!div class="checklist"]
-> * Add a lint job to the workflow
-> * Add a publish job to the workflow
-> * Verify that your workflow is working
-> * Check the published template spec in Azure
+> * Add a lint job to the workflow.
+> * Add a workflow job to publish the template spec.
+> * Verify that your workflow is working.
+> * Check the published template spec in Azure.
 
 ## Add a lint job to your workflow
 
@@ -57,7 +58,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
    ```bash
    git add .
-   git commit -m "Add lint and publish steps to Linux App Service template spec workflow."
+   git commit -m "Add lint and publish steps to Linux App Service template spec workflow"
    git push
    ```
 
