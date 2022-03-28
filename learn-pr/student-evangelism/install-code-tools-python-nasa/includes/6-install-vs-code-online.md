@@ -5,10 +5,10 @@ Joining the [GitHub Codespaces](https://github.com/features/codespaces?azure-por
 
 ## Benefits of GitHub Codespaces
 
-You can find [a quick startup guide to Codespaces here](https://docs.github.com/en/github/developing-online-with-codespaces?azure-portal=true).
+You can find [a quick startup guide to Codespaces here](https://docs.github.com/github/developing-online-with-codespaces?azure-portal=true).
 
 > [!WARNING]
-> GitHub Codespaces does have a minimal fee paid for through your Azure subscription. To understand more [about billing for Codespaces.](https://docs.github.com/en/codespaces/codespaces-reference/understanding-billing-for-codespaces?azure-portal=true) and cost for using a basic instance refer to [Github Codespaces](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-codespaces?azure-portal=true).
+> GitHub Codespaces does have a minimal fee paid for through your Azure subscription. To understand more [about billing for Codespaces.](https://docs.github.com/codespaces/codespaces-reference/understanding-billing-for-codespaces?azure-portal=true) and cost for using a basic instance, see [Github Codespaces](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-codespaces?azure-portal=true).
 
 The benefits of GitHub Codespaces include:
 

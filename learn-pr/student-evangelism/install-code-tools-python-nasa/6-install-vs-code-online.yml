@@ -3,7 +3,7 @@ uid: learn.student-evangelism.install-code-tools-python-nasa.6-install-vs-code-o
 metadata:
   title: (Optional) Exercise - Run Visual Studio Code in your browser for data exploration
   description: Use Codespaces to run Visual Studio Code in a browser.
-  ms.date: 03/18/2022
+  ms.date: 03/28/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial

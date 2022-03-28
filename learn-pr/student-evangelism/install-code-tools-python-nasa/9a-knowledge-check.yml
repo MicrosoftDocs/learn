@@ -3,7 +3,7 @@ uid: learn.student-evangelism.install-code-tools-python-nasa.9a-knowledge-check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 03/18/2022
+  ms.date: 03/28/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
       explanation: "Sounds right, but unfortunately technology language is a made-up term."
     - content: "Numbers"
       isCorrect: false
-      explanation: "Close! While computers can read binary, they can’t work with just numbers."
+      explanation: "Close! While computers can read binary, they can't work with just numbers."
   - content: "When software is open-source, it means"
     choices:
     - content: "You need a friend to give you access to it."
@@ -36,14 +36,14 @@ quiz:
       explanation: "While your friend could help you find the software, you don't need anyone to give you access to it."
     - content: "If you pay, your features will be added."
       isCorrect: false
-      explanation: "Paying someone won't necessarily mean that they'll make the feature for you. Anyone can make whatever they want."
+      explanation: "Paying someone doesn't necessarily mean that they'll make the feature for you. Anyone can make whatever they want."
     - content: "No one can see the code."
       isCorrect: false
       explanation: "Actually, open-source is the opposite: everyone can see the code."
     - content: "Anyone can develop it and add content to it."
       isCorrect: true
-      explanation: "Correct! It's exactly what open-source means."
-  - content: "Visual Studio Code is all of the following, except?"
+      explanation: "Correct! This is exactly what open-source means."
+  - content: "Visual Studio Code is all of the following, except:"
     choices:
     - content: "Code editor"
       isCorrect: false
