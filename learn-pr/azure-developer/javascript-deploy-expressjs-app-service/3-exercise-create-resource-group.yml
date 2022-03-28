@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service.exercise-create-resource-group
-title: "Exercise: Azure subscriptions and resources"
+title: "Exercise - Azure subscriptions and resources"
 metadata:
   unitType: exercise
-  title: "Exercise: Azure subscriptions and resources"
+  title: "Exercise - Azure subscriptions and resources"
   description: "Use the sandbox to create a free subscription then use that subscription in Visual Studio Code."
   ms.date: 2/4/2022
   author: diberry

@@ -22,16 +22,6 @@ By the end of this module, using Visual Studio Code or the Azure portal, you'll 
 - View the cloud-based files from your local computer
 - View web logs 
 
-## Prerequisites
-
-Experience with: 
-
-- JavaScript server apps
-- Forking and cloning GitHub repositories
-- Deploying code to the cloud
-- Configuring web apps
-- Finding and resolving cloud app runtime issues 
-
 ## What will you complete?
 
 When you complete this module, you have a deployed Express.js app on your own App Service resource. You know the top app settings to configure the app correctly and you've found the log files and 404 errors for the web app.
