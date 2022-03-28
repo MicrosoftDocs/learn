@@ -1,11 +1,6 @@
-<!-- TODO edits -->
-You are determined to support internal DevOps teams at your toy company and publish several security-hardened template specs that are compliant with the new governance model. Those published artifacts provide a guarantee that resource deployments referencing them won't be blocked by Azure policies.
+Your team has built some security-hardened Bicep files that are compliant with your company's new governance model. One of the hardened Bicep files deploys a Linux-based App Service app. In this exercise, you'll use a deployment workflow to publish the Bicep file as a template spec.
 
-You selected a subscription and a resource group to deploy the template spec to. This will be your _deployment target_ in the publishing pipeline we are about to create.
-
-Now that your environment is configured to work with GitHub Actions and your Azure subscription, you will extend an existing workflow that was part of the template repository and publish a template spec to Azure.
-
-In this exercise, you'll:
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Add a lint job to the workflow.
@@ -17,8 +12,6 @@ In this exercise, you'll:
 
 Your repository contains a draft of a workflow that you can use as a starting point.
 
-<!-- TODO decide on starting point -->
-
 1. In Visual Studio Code, expand the `.github` folder in the root of the repository. Then, expand the `workflows` folder, and the `template-specs` subfolder.
 
 1. Open the file named `linux-app-service.yml`.
@@ -29,7 +22,8 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
    :::code language="yaml" source="code/4-workflow.yml" range="17-23" :::
 
-   <!-- TODO yaml files sensitive to indentation -->
+   > [!TIP]
+   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
 
 ## Add a publish job to your workflow
 
