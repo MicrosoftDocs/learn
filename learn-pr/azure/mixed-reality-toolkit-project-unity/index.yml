@@ -8,8 +8,11 @@ metadata:
   ms.author: "apspeigh"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
-  ms.contributors: apspeigh-03182021
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - apspeigh-03182021
+  - aapowell-09102021
 title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
 summary: Import the Mixed Reality Toolkit into your Unity project to accelerate your mixed reality development.
 abstract: |

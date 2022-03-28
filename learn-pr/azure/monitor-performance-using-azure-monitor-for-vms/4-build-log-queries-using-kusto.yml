@@ -9,8 +9,10 @@ metadata:
   ms.prod: learning-azure
   ms.topic: interactive-tutorial
   ms.date: 11/20/2020
-  ms.custom: team=cloud_advocates
-  ms.contributors: shkuehn-12042020
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - shkuehn-12042020
 azureSandbox: false
 durationInMinutes: 5
 content: |

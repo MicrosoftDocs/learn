@@ -10,8 +10,10 @@ metadata:
   ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.contributors: shkuehn-07022021
-  ms.custom: team=cloud_advocates
+  ms.contributors:
+  - shkuehn-07022021
+  ms.custom:
+  - team=cloud_advocates
 durationInMinutes: 10
 content: |
   [!include[](includes/3-vmware-hcx-deployment-installation.md)]

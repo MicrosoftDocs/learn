@@ -9,8 +9,11 @@ metadata:
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.contributors: ropreddy-07092021
-  ms.custom: team=cloud_advocates
+  ms.contributors:
+  - ropreddy-07092021
+  - aapowell-09102021
+  ms.custom:
+  - team=cloud_advocates
 title: Monitoring Java applications on Azure
 summary: Learn how to use monitoring for your Java applications on Azure
 abstract: |
