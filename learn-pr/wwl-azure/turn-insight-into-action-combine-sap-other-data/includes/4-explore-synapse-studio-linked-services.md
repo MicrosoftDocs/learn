@@ -4,7 +4,7 @@ Linked services in Azure Synapse Studio work similarly to the data connectors in
 
 Synapse includes more than 90 linked services, including six for SAP, plus an OData linked service that is used extensively by SAP for integration. You can also customize or build your own linked service .
 
-![Screenshot of Azure Synapse Studio with linked services available for SAP.](../media/azure-synapse-studio-linked-services.png)
+[![Screenshot of Azure Synapse Studio with linked services available for SAP.](../media/azure-synapse-studio-linked-services.png)](../media/azure-synapse-studio-linked-services.png#lightbox)
 
 To locate the SAP-specific linked services in the Synapse Studio UI, select Manage, then Linked services, then select + New and Search for SAP in the New linked service panel. To find the OData linked service, choose the Generic protocol category or search for OData. 
  

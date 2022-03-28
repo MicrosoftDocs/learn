@@ -13,7 +13,7 @@ Many organizations want to make sure they are working with quality data before s
 At this point, you’ve validated the accuracy of your historical data. You’re ready to predict which vendors have the highest likelihood of delivering high quality parts in the shortest possible time.
 Machine learning requires data inputs, a data model that helps you achieve your results, and outputs, also known as a score. Your vendor analysis, for example, would output a score for each vendor.
 
-To run your analysis, tap machine learning capabilities in Azure Synapse Analytics. T-SQL includes a [PREDICT T-SQL](/sql/t-sql/queries/predict-transact-sql?view=sql-server-ver15) function to generate prediction values for data inputs in near real time. Use it with the combined data the pipeline extracted into your dedicated SQL pool. 
+To run your analysis, tap machine learning capabilities in Azure Synapse Analytics. T-SQL includes a [PREDICT T-SQL](/sql/t-sql/queries/predict-transact-sql) function to generate prediction values for data inputs in near real time. Use it with the combined data the pipeline extracted into your dedicated SQL pool. 
 
 The PREDICT function uses the native C++ extension capabilities in SQL machine learning. This methodology offers the fastest possible processing speed for forecasting and prediction workloads. It supports models created in [Open Neural Network Exchange (ONNX)](https://onnx.ai/get-started.html) format and other model creation methods. ONNX is an online community that enables data scientists and others to create and share machine learning models.
 
