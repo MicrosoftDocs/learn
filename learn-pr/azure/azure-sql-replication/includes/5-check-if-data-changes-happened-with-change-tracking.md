@@ -1,6 +1,6 @@
 ## Scenario
 
-As the CTO of our healthcare company, you may decide to only track whether a change (e.g. insert / update / delete) has happened on any of your regional inventory databases, not necessarily track all historical data changes. This may be a more optimal approach that has less of an impact on your source database. In order to implement this, we need to first better understand Change Tracking. 
+As the CTO of our healthcare company, you may decide to only track whether a change (e.g. insert / update / delete) has happened on any of your regional inventory databases, not necessarily track all historical data changes. This may be a more optimal approach that has less of an impact on your source database. In order to implement this, we need to first better understand Change Tracking.
 
 ## How it works
 
@@ -22,7 +22,7 @@ Information about the change that was made to each row can also be obtained by u
 
 ### Enabling Change Tracking on your database
 
-Before you can use change tracking, you must enable change tracking at the database level. The following example shows how to enable change tracking by using ALTER DATABASE: 
+Before you can use change tracking, you must enable change tracking at the database level. The following example shows how to enable change tracking by using ALTER DATABASE:
 
 *ALTER DATABASE AdventureWorks2012*
 *SET CHANGE_TRACKING = ON*  
@@ -40,7 +40,7 @@ You can use the AUTO_CLEANUP option to enable or disable the cleanup task that r
 
 Similarly to Change Data Capture, Change tracking must be enabled for each table that you want tracked. When change tracking is enabled, change tracking information is maintained for all rows in the table that are affected by a DML operation.
 
-The following example shows how to enable change tracking for a table by using ALTER TABLE: 
+The following example shows how to enable change tracking for a table by using ALTER TABLE:
 
 *ALTER TABLE Person.Contact*  
 *ENABLE CHANGE_TRACKING*  
@@ -54,7 +54,7 @@ When the TRACK_COLUMNS_UPDATED option is set to ON, the SQL Server Database Engi
 
 Change tracking must first be disabled for all change-tracked tables before change tracking can be set to OFF for the database. To determine the tables that have change tracking enabled for a database, use the sys.change_tracking_tables catalog view.
 
-When no tables in a database track changes, you can disable change tracking for the database. The following example shows how to disable change tracking for a database by using ALTER DATABASE: 
+When no tables in a database track changes, you can disable change tracking for the database. The following example shows how to disable change tracking for a database by using ALTER DATABASE:
 
 *ALTER DATABASE AdventureWorks2012*
 *SET CHANGE_TRACKING = OFF;*

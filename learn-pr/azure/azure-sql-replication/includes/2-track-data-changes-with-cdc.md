@@ -18,10 +18,6 @@ Therefore, below are the steps highlighting how CDC works on Azure SQL Databases
 
 5. Query functions are provided to allow systematic access to the change data stored in the change tables.
 
-This process is highlighted in the diagran below:
-
-(insert image)
-
 ## Enabling and disabling CDC
 
 ### Enabling CDC on your database
@@ -43,8 +39,6 @@ Once you enabled CDC on the database, you should enable it on the tables that yo
 *@captured_column_list = 'column1', 'column2'*
 
 To determine whether a source table has already been enabled for change data capture, examine the is_tracked_by_cdc column in the sys.tables catalog view.
-
-Members of db_owner role (on Azure SQL Databases) have full access to the data in the change tables. All other users must have SELECT permission on all the captured columns of the source table. In addition, when a role is specified, users who are not members of db_owner role must also be members of the specified role. If you do not want to use a gating role, explicitly set the **@role_name** parameter to NULL.
 
 By default, the change table is located in the default filegroup of the database. Database owners who want to control the placement of individual change tables can use the **@filegroup_name** parameter to specify a particular filegroup for the change table associated with the capture instance. The named filegroup must already exist. Generally, it is recommended that change tables be placed in a filegroup separate from source tables.
 

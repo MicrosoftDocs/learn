@@ -4,9 +4,7 @@ As the CTO of our healthcare company, you may decide to build a solution that au
 
 ## How it works
 
-SQL Data Sync is a service built on Azure SQL Database that lets you synchronize the data you select bi-directionally across multiple databases, both on-premises and in the cloud (SQL Server and Azure SQL Databases). Data Sync is based around the concept of a sync group. A sync group is a group of databases that you want to synchronize, using a hub and spoke topology. You define one of the databases in the sync group as the hub database, while the rest of the databases are member databases. Sync occurs only between the hub and individual members, as shown in the diagram below:
-
-(insert image)
+SQL Data Sync is a service built on Azure SQL Database that lets you synchronize the data you select bi-directionally across multiple databases, both on-premises and in the cloud (SQL Server and Azure SQL Databases). Data Sync is based around the concept of a sync group. A sync group is a group of databases that you want to synchronize, using a hub and spoke topology. You define one of the databases in the sync group as the hub database, while the rest of the databases are member databases. 
 
 Within a sync group:
 
