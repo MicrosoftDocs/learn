@@ -1,8 +1,10 @@
+The Azure platform organizes cloud services which you subscribe to. The virtual organizational units are important to understand so you know what you need to create as well as what the free Microsoft Learn sandbox provides for you while you use this module. Here, you will learn about subscriptions, resource groups, and resources.
+
+:::image type="content" source="../media/azure-subscription-resource-group.png" alt-text="Diagram that shows the relationship of management hierarchy levels.":::
+
 ## How do you organize Azure services? 
 
 When you use Azure, you need a subscription. Then inside the subscription, you create resource groups, and resources inside the resource groups.
-
-:::image type="content" source="../media/azure-subscription-resource-group.png" alt-text="Diagram that shows the relationship of management hierarchy levels.":::
 
 * **Management groups** are enterprise level units of Azure management. This won't be used in this module.
 * The **Subscription**, used in the sandbox, associates your account with the resources created in this module. The Learn sandbox provides a free subscription, without any need to enter credit card information.
