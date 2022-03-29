@@ -114,7 +114,7 @@ Typical errors likely to be certificate-based are:
 
 - A certificate chain processed but terminated in a root certificate that is not trusted by the trust provider.
 
-- Failed to save virtual network gateway<gateway name>. Data for certificate <certificate ID> is invalid.
+- Failed to save virtual network gateway &lt;gateway name&gt;. Data for certificate &lt;certificate ID&gt; is invalid.
 
 - The message received was unexpected or badly formatted. (Error 0x80090326.)
 
