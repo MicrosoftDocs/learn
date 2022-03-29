@@ -3,7 +3,7 @@ uid: learn.wwl.design-for-user-identities-profiles
 metadata:
   title: Design for user identities and profiles
   description: "Design for user identities and profiles"
-  ms.date: 02/18/2022
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -19,14 +19,13 @@ abstract: |
   *  Deploy Windows Desktop client to multiple devices.
   *  Describe Hybrid Identity for Azure Virtual Desktop.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/3-design-for-user-identities-and-profiles.svg
 levels:
 - intermediate
 roles:
 - administrator
 - solution-architect
 products:
-- ai-builder
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
