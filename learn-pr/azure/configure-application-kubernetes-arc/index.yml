@@ -24,9 +24,11 @@ prerequisites: |
   - 	Foundational understanding of Azure Web Apps.
   - 	Conceptual understanding of Azure App Service on Kubernetes with Azure Arc.
   - 	Understanding of container orchestration
+
   To complete this module's exercises, you'll need:
   -	An Azure subscription
   -	A Microsoft account or an Azure Active Directory (Azure AD) account with the Owner role in the Azure subscription.
+  
 iconUrl: /learn/achievements/configure-application-kubernetes-arc.svg
 levels:
 - advanced
