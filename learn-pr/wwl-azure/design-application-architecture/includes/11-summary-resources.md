@@ -6,7 +6,7 @@ Now that you've completed this module, you should be able to:
 
 - Design a messaging architecture. 
 
-- Recommend an event driven architecture.
+- Recommend an event-driven architecture.
 
 - Evaluate automated deployment solutions for your applications.
 
@@ -49,3 +49,9 @@ Now that you've completed this module, you should be able to:
 - [Message queues and stream processing - Learn ](/learn/modules/cmu-message-queues-streams/)
 
 - [Communicate between applications with Azure Queue storage - Learn ](/learn/modules/communicate-between-apps-with-azure-queue-storage/)
+
+- [Introduction to Azure Cache for Redis - Learn](/learn/modules/intro-to-azure-cache-for-redis/)
+
+## Learn more with optional hands-on exercises
+
+- [Exercise - Implement a Service Bus topic and queue](/learn/modules/implement-message-workflows-with-service-bus/3-exercise-implement-a-service-bus-topic-and-queue)

@@ -3,7 +3,7 @@ uid: learn.wwl.provide-services-for-azure-stack-hub
 metadata:
   title: Provide services for Azure Stack Hub
   description: Provide services for Azure Stack Hub
-  ms.date: 12/14/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ prerequisites: |
   *   Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.
 summary: |
   This learning path helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/provide-services-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:
