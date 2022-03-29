@@ -14,25 +14,26 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-implement-vnets.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Network/virtualNetworks"
-      name: CoreServicesVnet
-  hint: "Make sure you have created the CoreServicesVnet virtual network."
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Network/virtualNetworks"
-      name: ManufacturingVnet
-  hint: "Make sure you have created the ManufacturingVnet virtual network."
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Network/virtualNetworks"
-      name: ResearchVnet
-  hint: "Make sure you have created the ResearchVnet virtual network."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Network/virtualNetworks"
+#       name: CoreServicesVnet
+#   hint: "Make sure you have created the CoreServicesVnet virtual network."
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Network/virtualNetworks"
+#       name: ManufacturingVnet
+#   hint: "Make sure you have created the ManufacturingVnet virtual network."
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Network/virtualNetworks"
+#       name: ResearchVnet
+#   hint: "Make sure you have created the ResearchVnet virtual network."

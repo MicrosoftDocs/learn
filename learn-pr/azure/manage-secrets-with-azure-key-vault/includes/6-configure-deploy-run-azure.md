@@ -34,7 +34,7 @@ The *plan* name only needs to be unique within your subscription, so you can use
     ```azurecli
     az webapp create \
         --plan keyvault-exercise-plan \
-        --runtime "node|10.6" \
+        --runtime "node|16LTS" \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name <your-unique-app-name>
     ```

@@ -15,6 +15,9 @@ prerequisites: |
   - Local installation of [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio Code](https://code.visualstudio.com)
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
+video:
+  title: "Build .NET applications with C#"
+  url: https://www.microsoft.com/videoplayer/embed/RWVEF1
 iconUrl: /learn/achievements/build-dotnet-applications-csharp.svg
 levels:
 - beginner
