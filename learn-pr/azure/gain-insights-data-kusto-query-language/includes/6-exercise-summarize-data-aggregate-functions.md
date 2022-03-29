@@ -66,7 +66,7 @@ For absolute maximum or minimum values, use the `min()` and `max()` aggregation 
     :::image type="content" source="../media/6-max.png" alt-text="Screenshot of max aggregation function results.":::
 
 1. Take a look at the results. Notice that to make the column names friendlier, you renamed the summarized columns within the query to *MinDamage* and *MaxDamage*.
-1. Try changing the query to use the `minif()` and `maxif()` functions. These functions are similar to the `min()` and `max()` functions, but only return the minimum or maximum of the provided expression for records where the predicate returns true. Similarly, you can use the `sumif()` function to return the sum of the provided expression for records where the predicate returns .
+1. Try changing the query to use the `minif()` and `maxif()` functions. These functions are similar to the `min()` and `max()` functions, but only return the minimum or maximum of the provided expression for records where the predicate returns true. Similarly, you can use the `sumif()` function to return the sum of the provided expression for records where the predicate returns true.
 
 ## Use the `percentiles()` function
 
