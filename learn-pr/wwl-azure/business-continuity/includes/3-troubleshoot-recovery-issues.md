@@ -26,20 +26,21 @@ This may appear if the script is unable to access the recovery point. To resolve
 
 1. Check that the machine running the script has access to the recovery vault.
 
-1. Verify the connection to the Azure target IP addresses. To check, run the following from an elevated command prompt:
-```
+2. Verify the connection to the Azure target IP addresses. To check, run the following from an elevated command prompt:
+
+  ```
      nslookup download.microsoft.com
-
-     or
-
-     ping download.microsoft.com
+  ```
+   or
 
 ```
-1. Ensure access to iSCSI outbound port 3260.
+    ping download.microsoft.com
+```
+3. Ensure access to iSCSI outbound port 3260.
 
-1. Check for a firewall or NSG blocking traffic to Azure target IPs or recovery service URLs.
+4. Check for a firewall or NSG blocking traffic to Azure target IPs or recovery service URLs.
 
-1. Check that antivirus software isn't preventing the script from running.
+5. Check that antivirus software isn't preventing the script from running.
 
 Also check the following common error messages:
 

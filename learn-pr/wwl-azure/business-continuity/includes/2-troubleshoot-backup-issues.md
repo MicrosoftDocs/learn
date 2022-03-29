@@ -56,7 +56,7 @@ By default, the summary displays open alerts in the last 24 hours. You can also 
 
 - Time range (24 hours, week, two weeks, 30 days, or custom)
 
-![Backup center](../media/m01backupcenter.png)
+:::image type="content" source="../media/m01backupcenter.png" alt-text="Screenshot that shows the Backup Center":::
 
 ### Alerts by email notification
 
