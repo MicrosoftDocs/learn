@@ -24,7 +24,7 @@ The user enters the key into a TOTP-compliant app, such as:
 
 Entering the key into the app can be streamlined with a QR code. The app uses the key and time to generate and display unique codes every 30 seconds. If the code the app generates matches what the server expects, the authentication succeeds. The algorithm is designed to be forgiving of slight differences between client and server clocks.
 
-As a form of MFA, the user is prompted for a TOTP often in combination with a password. The password is *something you know*, and the code is *something you have*. The only way to generate it is with the key stored in the app.
+As a form of MFA, the user is typically prompted for a TOTP in combination with a password. The password is *something you know*, and the code is *something you have*. The only way to generate it is with the key stored in the app.
 
 By default, the ASP.NET Core project templates using Identity include multi-factor authentication support for TOTP authenticator apps. The Razor Pages template's **Configure authenticator app** form provides a 32-character registration key to seed the token value. However, the template doesn't generate a QR code by default.
 
