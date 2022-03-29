@@ -16,7 +16,7 @@ The Azure Security Benchmark (ASB) provides prescriptive best practices and reco
 
 Other pieces of information in the ASB include links to information on implementation, links to information about security stakeholders, and guidance on mapping to Azure policy.  These aren't shown in the image below.
 
-:::image type="content" source="../media/azure-sec-benchmark.png" alt-text="A subset of information from the Azure Security Benchmark v3":::
+:::image type="content" source="../media/azure-security-benchmark.png" alt-text="A subset of information from the Azure Security Benchmark v3":::
 
 Microsoft Defender for Cloud continuously assesses an organization's hybrid cloud environment to analyze the risk factors according to the controls and best practices in Azure Security Benchmark. Some of the controls used in the ASB include network security, identity and access control, data protection, data recovery, incident response, and more.  
 
@@ -37,7 +37,7 @@ Each Azure security baseline includes the following information:
 - **Responsibility**: Who is responsible for implementing the control? Possible scenarios are customer responsibility, Microsoft responsibility, or shared responsibility.
 - **Microsoft Defender for Cloud monitoring**: Does Microsoft Defender for Cloud monitor the control?
 
-:::image type="content" source="../media/aad-security-baseline.png" alt-text="A subset of information from the Azure Active Directory security baseline":::
+:::image type="content" source="../media/azure-ad-security-baseline.png" alt-text="A subset of information from the Azure Active Directory security baseline":::
 
 Refer to [Azure Security Benchmark documentation](/azure/security/benchmarks/) for a complete listing of the available baselines.
 
