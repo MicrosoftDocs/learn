@@ -114,7 +114,7 @@ The following graphic summarizes the steps to troubleshoot a backup recovery:
 
 1. Troubleshoot connection/replication issues.
 
-![Steps to troubleshoot a backup recovery](../media/m01stepstotroubleshootbackuprecovery.png)
+:::image type="content" source="../media/../media/m01stepstotroubleshootbackuprecovery.png" alt-text="Screenshot of Steps to troubleshoot a backup recoveryr":::
 
 ## Troubleshoot restore issues from Microsoft Azure Backup Server (MABS)
 
@@ -360,11 +360,11 @@ Azure to Azure site recovery allows you to replicate Azure virtual machines (VMs
 
 Azure Site Recovery creates an event if the data change rate on the source virtual machine is higher than the supported limits. Go to **Replicated items** > **VM** > **Events** - **last 72 hours**. You should see the event **Data change rate beyond supported limits**:
 
-![Data change rate beyond supported limits](../media/m01datachangeratebeyondsupportedlimits.png)
+:::image type="content" source="../media/m01backupcenter.png" alt-text="Screenshot that shows Data change rate beyond supported limitsr":::
 
 Select the event to display disk information:
 
-![Event details](../media/m01diskinformation.png)
+:::image type="content" source="../media/m01diskinformation.png" alt-text="Screenshot that shows disk information":::
 
 ### Azure site recovery limits
 
@@ -372,7 +372,7 @@ Azure site recovery limits are data churn per disk and data churn per virtual ma
 
 To find out whether this is a recurring problem, check the data change rate of the relevant virtual machine under **Monitoring**. You will need to add the metrics shown in the following screen shot:
 
-![Add OS Disk Writes Bytes/Sec and Data Disk Writes Bytes/Sec](../media/m01datachangerate.png)
+:::image type="content" source="../media/m01datachangerate.png" alt-text="Screenshot that shows OS Disk Writes Bytes/Sec":::
 
 ### Network connectivity problems
 

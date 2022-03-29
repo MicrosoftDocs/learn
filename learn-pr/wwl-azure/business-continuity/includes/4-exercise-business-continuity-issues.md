@@ -41,7 +41,7 @@ Using the cloud shell on the right, run these commands to create the example top
 
    - Choose backup policy: **DefaultPolicy-labdemo**
 
-    ![Screen shot showing the back up welcome screen.](../media/4-az-backup-welcome.png)
+    :::image type="content" source="../media/4-az-backup-welcome.png" alt-text="Screen shot showing the back up welcome screen":::
 
 1. This takes you back to the **Virtual machines** page, click **labvm**.
 
