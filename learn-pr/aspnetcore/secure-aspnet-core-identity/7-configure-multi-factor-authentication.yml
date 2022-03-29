@@ -9,6 +9,6 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/7-configure-multi-factor-authentication.md)]

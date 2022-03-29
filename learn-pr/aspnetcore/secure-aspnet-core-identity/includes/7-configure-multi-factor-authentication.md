@@ -8,8 +8,6 @@ Multiple strategies exist for generating the QR code. An example in the document
 
 Let's build everything you need to generate QR codes on the **Configure authenticator app** form.
 
-WIP:
-
 1. In the terminal pane, install the `QRCoder` NuGet package:
 
     ```dotnetcli
@@ -102,7 +100,6 @@ Now that you can generate QR codes, you can inject a QR code into the **Configur
     1. Scan the QR code as indicated.
 
 1. Enter the verification code provided by your TOTP app in the **Verification Code** text box.
-
 1. Select **Verify**.
 
     Upon successful verification, the page displays a **Your authenticator app has been verified** banner and some recovery codes.
@@ -116,9 +113,7 @@ Now that you can generate QR codes, you can inject a QR code into the **Configur
     For the logged in user, the output shows that the `TwoFactorEnabled` column is equal to `1`. Because multi-factor authentication hasn't been enabled for the other registered user, the record's column value is `0`.
 
 1. Select **Logout**, and then log in again with the same user.
-
 1. Enter the verification code from the TOTP authenticator app in the **Authenticator code** text box. Select the **Log in** button.
-
 1. Select **Hello, [First name] [Last name]!**. Then, select the **Two-factor authentication** tab.
 
     Because Microsoft Authenticator has been set up, the following buttons appear:
@@ -127,6 +122,8 @@ Now that you can generate QR codes, you can inject a QR code into the **Configur
     * **Reset recovery codes**
     * **Set up authenticator app**
     * **Reset authenticator app**
+
+1. In the terminal pane in Code, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
 
 ## Summary
 
