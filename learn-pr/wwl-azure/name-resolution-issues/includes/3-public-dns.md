@@ -126,7 +126,7 @@ For example, the zone contoso.net might be assigned name servers:
 
 - ns2-01.azure-dns.net
 
-- *ns3-01.azure-dns.org
+- ns3-01.azure-dns.org
 
 - ns4-01.azure-dns.info
 

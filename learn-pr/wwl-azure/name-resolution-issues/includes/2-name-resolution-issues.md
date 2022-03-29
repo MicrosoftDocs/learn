@@ -6,7 +6,7 @@ You’ll troubleshoot a name resolution problem in a later exercise. Use the fol
 In the sandbox to the right, follow these steps:
 
 ## Create the exercise environment
-Using the cloud shell on the right, run these commands to create the example topology.  The environment will take approximately 13 minutes to build.
+Using the Ccloud Shell on the right, run these commands to create the example topology.  The environment will take approximately 13 minutes to build.
 
 1. Clone the setup script from GitHub.
 

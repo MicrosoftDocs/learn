@@ -114,8 +114,7 @@ To troubleshoot resolving DNS records:
 
 1. Check that the DNS domain name has been correctly [delegated to Azure DNS](/azure/dns/dns-domain-delegation). Use nslookup to validate that the zone is delegated to in-built Azure DNS. 
 
-> [!NOTE]
-> If your environment uses a hybrid approach and uses both private zone DNS and public zone, records in private zone DNS will be resolved first.
+NOTE: If your environment uses a hybrid approach and uses both private zone DNS and public zone, records in private zone DNS will be resolved first.
 
 To troubleshoot resolving DNS records:
 
@@ -153,15 +152,15 @@ There are some limitations with Azure custom DNS:
 
 - You cannot do zone transfers.
 
-> [!NOTE]
-> Updating from in-built DNS (Inherit from virtual network) to custom DNS will restart all affected VMs.
+NOTE: Updating from in-built DNS (Inherit from virtual network) to custom DNS will restart all affected VMs.
 
 In DNS settings, you can choose whether to inherit DNS settings from the virtual network or use custom DNS. Check that you have saved any change from Azure in-built DNS to custom DNS, otherwise, the changes will not persist.
 
 To test whether custom DNS is working, use the PowerShell command:
-
+```
 test-netconnection -computername -port  
-
+```
 To check your custom DNS is using the correct DNS server, from a command prompt type:
-
+```
 Ipconfig /all
+```
