@@ -55,7 +55,7 @@ In this section, you're going to create and customize the Identity UI files to b
 
 1. In *:::no-loc text="Program.cs":::*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted changes. (Example reformatted for readability.)
 
-    [!code-csharp[](../code/program-after-customization.cs?range=1-3,7-15&highlight=3,11-12)]
+    [!code-csharp[](../code/program-after-customization.cs?range=1-3,7-15&highlight=3,8-9)]
 
 1. Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to incorporate the following highlighted changes. Save your changes.
 
