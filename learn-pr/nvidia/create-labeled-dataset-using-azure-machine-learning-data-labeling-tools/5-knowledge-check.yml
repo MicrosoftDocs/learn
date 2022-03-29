@@ -27,7 +27,7 @@ quiz:
     - content: 'File Share in an Azure Storage Account.'
       isCorrect: false
       explanation: Incorrect. While it's possible to reference data using a File Share in an Azure Storage Account, this strategy wasn't used in this module.
-  - content: 'ML-assisted labeling wasn't required in this module, but how might it be beneficial to a data labeling project?'
+  - content: 'ML-assisted labeling was not required in this module,  how might it be beneficial to a data labeling project?'
     choices: 
     - content: 'ML-assisted labeling creates a model that can pre-label data in new image samples that may be reviewed later by team members for accuracy.'
       isCorrect: true
