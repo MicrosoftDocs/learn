@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.azure-support-engineer-for-connectivity-specialty
+metadata:
+  title: Azure Support Engineer for Connectivity Specialty
+  description: Azure Support Engineer for Connectivity Specialty
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Support Engineer for Connectivity Specialty
+prerequisites: |
+  - Demonstrate an understanding of the OSI model
+  - Demonstrate an understanding of Azure CLI
+  - Demonstrate an understanding of PowerShell
+  - Know how to run cloud shell to run commands
+summary: |
+  Networking is essential, particularly when you have cloud-based assets. This learning path covers the different connectivity issues that a network engineer will typically encounter, and the troubleshooting steps to resolve these issues.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- network-engineer
+- support-engineer
+products:
+- azure
+- azure-backup
+- azure-bastion
+- azure-cdn
+- azure-expressroute
+- azure-load-balancer
+- azure-virtual-machines
+- azure-virtual-machines-windows
+- azure-virtual-network
+- azure-virtual-wan
+modules:
+- learn.wwl.business-continuity
+trophy:
+  uid: learn.wwl.azure-support-engineer-for-connectivity-specialty.trophy
