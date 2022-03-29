@@ -2,7 +2,7 @@ In the previous unit, you customized and extended ASP.NET Core Identity. In this
 
 ## Multi-factor authentication
 
-Multi-factor authentication (MFA) is a process in which a user is requested during a sign-in event for additional forms of identification. This prompt could be for a code from an app, a hardware token value, or a biometric scan. When you require a second type of authentication, security is enhanced. The additional factor isn't easily obtained or duplicated by an attacker.
+Multi-factor authentication (MFA) is a process in which a user is prompted for additional forms of identification while signing in. This prompt could be for a code from an app, a hardware token value, or a biometric scan. When you require a second type of authentication, security is enhanced. The additional factor isn't easily obtained or duplicated by an attacker.
 
 When talking about multi-factor authentication, the proof required for authentication is categorized into three types:
 
