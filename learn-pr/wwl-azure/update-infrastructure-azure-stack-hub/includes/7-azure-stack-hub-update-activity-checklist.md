@@ -47,7 +47,7 @@ Review this checklist in order to prepare for an Azure Stack Hub update. This un
     Apply latest hotfixes.
   :::column-end:::
   :::column:::
-    Apply the latest hotfixes that apply to the currently installed release. For a list of the latest hotfixes, see the [release notes Hotfixes](https://docs.microsoft.com/azure-stack/operator/release-notes?view=azs-2102#hotfixes) section.
+    Apply the latest hotfixes that apply to the currently installed release. For a list of the latest hotfixes, see the [release notes Hotfixes](/azure-stack/operator/release-notes?view=azs-2102#hotfixes) section.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -129,4 +129,4 @@ Review this checklist in order to prepare for an Azure Stack Hub update. This un
 
 
 > [!IMPORTANT]
-> Do not run `Test-AzureStack` during an update, as this causes the update to stall. Do not run node repair during an update regardless of its state. Contact Microsoft Support if node repair is needed during update.
+> Do not run Test-AzureStack during an update, as this causes the update to stall. Do not run node repair during an update regardless of its state. Contact Microsoft Support if node repair is needed during update.
