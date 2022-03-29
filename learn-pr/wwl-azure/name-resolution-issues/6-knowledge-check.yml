@@ -19,26 +19,26 @@ quiz:
   questions:
   - content: "You want to analyze DNS audit logs. What is required to use DNS Analytics (Preview) for this task?"
     choices:
-    - content: "Download Log Analytics from the Azure marketplace"
+    - content: "Download Log Analytics from the Azure Marketplace"
       isCorrect: false
-      explanation: "That's incorrect. You cannot download log analytics from the Azure marketplace."
+      explanation: "That's incorrect. You can't download log analytics from the Azure Marketplace."
     - content: "Install Windows or Operations Manager agent on each DNS server you want to monitor"
       isCorrect: true
-      explanation: "That'scorrect. To analyze DNS audit logs this is required."
+      explanation: "That's correct. To analyze DNS audit logs, this step is required."
     - content: "You can analyze data without installing any additional software"
       isCorrect: false
-      explanation: "That's incorrect. You cannot analyze DNS audit logs without installing any additional software."
-  - content: "You are troubleshooting name resolution, and a colleague suggests you use digwebinterface. What problems does this third-party solution help with?"
+      explanation: "That's incorrect. You can't analyze DNS audit logs without installing any other software."
+  - content: "You're troubleshooting name resolution, and a colleague suggests you use digwebinterface. What problems does this third-party solution help with?"
     choices:
     - content: "Removing cached name resolution"
       isCorrect: true
       explanation: "That's correct. Digwebinterface removes problems caused by cached name resolution."
     - content: "Displaying information held by a domains registrar"
       isCorrect: false
-      explanation: "That's incorrect. The purpose of Digwebinerface is not to show information held by the registrar. For your own domain names, go direct to the registrars web site to find information held there."
+      explanation: "That's incorrect. The purpose of Digwebinerface isn't to show information held by the registrar. For your own domain names, go direct to the registrars web site to find information held there."
     - content: "Mis-typed DNS server name"
       isCorrect: false
-      explanation: "That's incorrect. Digwebinterface cannot diagnose whether you have mis-typed the DNS server name."
+      explanation: "That's incorrect. Digwebinterface can't diagnose whether you've mis-typed the DNS server name."
   - content: "What is the purpose of the A record?"
     choices:
     - content: "Specifies a computers IP address"
