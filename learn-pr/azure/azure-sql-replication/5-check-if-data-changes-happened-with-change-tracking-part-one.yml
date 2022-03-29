@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking
+uid: learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking-part-one
 title: Change Tracking - Track, load, and replicate data changes on your Azure SQL Databases
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-check-if-data-changes-happened-with-change-tracking.md)]
+  [!include[](includes/5-check-if-data-changes-happened-with-change-tracking-part-one.md)]
