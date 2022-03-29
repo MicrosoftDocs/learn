@@ -3,7 +3,7 @@ uid: learn.wwl.troubleshoot-vpn-gateways
 metadata:
   title: Troubleshoot VPN gateways in Microsoft Azure
   description: "Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module we will look at how to monitor and troubleshoot site-to-site and point-to-site VPNs."
-  ms.date: 03/24/2022
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial
@@ -37,6 +37,7 @@ units:
 - learn.wwl.troubleshoot-vpn-gateways.troubleshoot-site-to-site
 - learn.wwl.troubleshoot-vpn-gateways.troubleshoot-point-to-site
 - learn.wwl.troubleshoot-vpn-gateways.exercise-troubleshoot-site-to-site-vpn-gateway-connectivity
+- learn.wwl.troubleshoot-vpn-gateways.exercise-resolve-site-to-site-vpn-gateway-connection
 - learn.wwl.troubleshoot-vpn-gateways.knowledge-check
 - learn.wwl.troubleshoot-vpn-gateways.summary
 badge:

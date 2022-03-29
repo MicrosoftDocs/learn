@@ -1,20 +1,20 @@
-Having completed this module, you now have a better understanding of how Log Analytics and Alerts can help highlight issues before they become a problem, understand the different gateways, and know when to reset them. You also understand the different tools available to you and understand some key issues which can cause problems with certificate-based VPN connections.
+Having completed this module, you now have a better understanding of how Log Analytics and alerts can help highlight issues before they become a problem. You know about the different gateways, and when to reset them. Also, you understand the tools available, and why some key issues can cause problems with certificate-based VPN connections.
 
-Now that you’ve completed this module you should be able to:
+Now you’ve completed this module, you should be able to:
 
-- Explore Log Analytics to determine which Logs can help to resolve key issues in your organization.
+- Explore Log Analytics to determine which logs can help to resolve key issues in your organization.
 
 - Understand the different gateways and SKUs.
 
 - Determine when it is necessary to reset VPN Gateways.
 
-- Differentiate between different error types to troubleshoot connections
+- Differentiate between error types to troubleshoot connections.
 
 - Outline the key issues with certificate-based VPN connections.
 
 ## Learn more
 
-For more information about the topics discussed in this module, see:
+Use these resources to discover more about the topics covered.
 
 [Tutorial - Connect an on-premises network and a virtual network: S2S VPN: Azure portal - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/tutorial-site-to-site-portal)
 
@@ -51,4 +51,3 @@ For more information about the topics discussed in this module, see:
 [Troubleshoot Point-to-Site VPN clients - Azure AD authentication - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/troubleshoot-ad-vpn-client)
 
 [Troubleshoot Azure point-to-site connection problems - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/vpn-gateway-troubleshoot-vpn-point-to-site-connection-problems)
-

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-vpn-gateways.exercise-resolve-site-to-site-vpn-gateway-connection
+title: 'Exercise: Resolve site-to-site VPN gateway connection'
+metadata:
+  title: 'Exercise: Resolve site-to-site VPN gateway connection'
+  description: "Exercise: Resolve site-to-site VPN gateway connection"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-exercise-resolve-site-to-site-vpn-gateway-connection.md)]
