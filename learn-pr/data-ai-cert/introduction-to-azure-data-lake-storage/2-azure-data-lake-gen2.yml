@@ -3,12 +3,14 @@ uid: learn.data-ai-introduction-to-azure-data-lake-storage.azure-data-lake-gen2
 title: Understand Azure Data Lake Storage Gen2
 metadata:
   title: Understand Azure Data Lake Storage Gen2
-  description: Understand Azure Data Lake Storage Gen2
-  ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chtestao
+  description: "Understand Azure Data Lake Storage Gen2"
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-azure-data-lake-gen2.md)]

@@ -2,7 +2,7 @@ You can use Azure Container Registry to hold Docker images, and you can construc
 
 ## Clean up resources
 
-In this module you created resources using your Azure subscription. You want to clean up these resources so that you will not continue to be charged for them.
+In this module, you created resources using your Azure subscription. You want to clean up these resources so that you won't continue to be charged for them.
 
    1. In Azure, select **Resource groups**.
 
