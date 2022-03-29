@@ -5,16 +5,16 @@ During the process, you'll:
 > [!div class="checklist"]
 > * Add a lint job to the workflow.
 > * Add a workflow job to publish the template spec.
-> * Verify that your workflow runs successfully.
+> * Manually run the workflow and verify that it completes successfully.
 > * Check the published template spec in Azure.
 
 ## Add a lint job to your workflow
 
 Your repository contains a draft of a workflow that you can use as a starting point.
 
-1. In Visual Studio Code, expand the `.github` folder in the root of the repository. Then, expand the `workflows` folder, and the `template-specs` subfolder.
+1. In Visual Studio Code, expand the *.github* folder in the root of the repository. Then, expand the *workflows* folder, and the *template-specs* subfolder.
 
-1. Open the file named `linux-app-service.yml`.
+1. Open the file named *linux-app-service.yml*.
 
    <!-- TODO sshot -->
 
@@ -29,7 +29,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 Now, you can add a second job to publish the template spec to Azure.
 
-1. Add the following code at the end of the `linux-app-service.yml` file:
+1. Add the following code at the end of the *linux-app-service.yml* file:
 
    :::code language="yaml" source="code/4-workflow.yml" range="25-44" :::
 
@@ -68,21 +68,23 @@ Now, you can add a second job to publish the template spec to Azure.
 
 1. In your browser, select the **Actions** tab.
 
-    :::image type="content" source="../media/4-action-run.png" alt-text="A screenshot showing the result of a GitHub Actions workflow run.":::
+    :::image type="content" source="../media/4-action-run.png" alt-text="A screenshot showing the result of a GitHub Actions workflow run."::: <!-- TODO sshot -->
 
 1. Select the **module-storage-account** workflow, then select the **Run workflow** button, and select **Run workflow**.
 
-   <!-- TODO -->
+   <!-- TODO sshot -->
 
    GitHub starts a new workflow run. You might need to refresh your browser window to see the run appear.
 
 1. Select the latest run in the list.
 
-   :::image type="content" source="../media/4-action-run-details.png" alt-text="A screenshot of a specific workflow run in GitHub Actions.":::
+   :::image type="content" source="../media/4-action-run-details.png" alt-text="A screenshot of a specific workflow run in GitHub Actions."::: <!-- TODO sshot -->
 
    Wait for the workflow run to finish. The template spec is published to Azure.
 
-   Note the workflow's run number.
+1. Note the workflow's run number.
+
+   <!-- TODO sshot -->
 
 ## Review the template spec in Azure
 
@@ -92,8 +94,10 @@ You can also view the published template spec in the Azure portal.
 
 1. Navigate to the **ToyReusable** resource group.
 
+   <!-- TODO sshot -->
+
 1. Select the **linux-app-service** template spec.
 
-    :::image type="content" source="../media/4-portal-template-spec.png" alt-text="A screenshot of the Azure Portal with a template spec.":::
+   :::image type="content" source="../media/4-portal-template-spec.png" alt-text="A screenshot of the Azure Portal with a template spec."::: <!-- TODO sshot -->
 
-   Notice that the version number corresponds with the GitHub Actions workflow's run number.
+   Notice that the version number corresponds with the workflow's run number.

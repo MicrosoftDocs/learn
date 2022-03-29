@@ -1,4 +1,4 @@
-Your team has been using Bicep modules as reusable components for some time. You started with sharing them in a single private GitHub repository. Later on, you were publishing those modules into a _private registry_ but the publishing was done manually. You want to enable your development teams and share your modules within the organization. This time, you want to create a workflow to handle the publishing. <!-- TODO edit -->
+In your toy company, you've been publishing your Bicep modules into a registry, but you've been running the publishing process manually from your own computer. Now, you want to create a workflow to handle the publishing process.
 
 In this exercise, you'll:
 
@@ -42,7 +42,7 @@ Before you can publish modules, you need to create a registry for your organizat
 
 In the precending unit, you learned about the importance of having a versioning strategy for your modules. You also learned how to use module metadata files to specify the major and minor version number of your module. Here, you add a metadata file for your storage account's module.
 
-1. In Visual Studio Code, expand the `modules` folder in the root of your repository. Then, expand the `storage-account` folder.
+1. In Visual Studio Code, expand the *modules* folder in the root of your repository. Then, expand the *storage-account* folder.
 
 1. Create a new file here called `metadata.json`.
 
@@ -60,9 +60,9 @@ In the precending unit, you learned about the importance of having a versioning 
 
 Your repository contains a draft of a workflow that you can use as a starting point.
 
-1. In Visual Studio Code, expand the `.github` folder in the root of the repository. Then, expand the `workflows` folder, and the `modules` subfolder.
+1. In Visual Studio Code, expand the *.github* folder in the root of the repository. Then, expand the **workflows* folder, and the *modules* subfolder.
 
-1. Open the file named `storage-account.yml`.
+1. Open the file named *storage-account.yml•.
 
    <!-- TODO sshot -->
 
@@ -72,9 +72,9 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
    :::code language="yaml" source="code/6-workflow.yml" range="12-16" highlight="3" :::
 
-1. At the bottom of the file, where you see a comment saying _To be added_, add the following *lint* job definition:
+1. At the bottom of the file, where there's comment saying _To be added_, add the following *lint* job definition:
 
-   :::code language="yaml" source="code/6-workflow.yml" range="17-23" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="18-24" :::
 
 ## Add a publish job to your workflow
 
@@ -90,7 +90,7 @@ Now, you can add a second job to publish the module to your container registry.
 
    :::code language="yaml" source="code/6-workflow.yml" range="35-39" :::
 
-   The step uses the jq command-line application, which parses JSON files.
+   The step runs a script, which uses the jq command-line application to parse the JSON file.
 
 1. Below the step you just created, add a step to publish the module to the registry:
 
