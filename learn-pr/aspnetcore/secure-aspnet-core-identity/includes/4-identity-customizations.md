@@ -6,7 +6,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
 :::image type="content" source="../media/razorpagespizzauser.png" alt-text="RazorPagesPizzaUser class derived from IdentityUser" lightbox="../media/razorpagespizzauser.png":::
 
-Extending the data model requires changes to the underlying database. Luckily, Entity Framework Core makes this task simple.
+Extending the data model requires changes to the underlying database. Luckily, Entity Framework Core makes this task simple with a feature called *migrations*.
 
 ## Customizing the Identity user interface
 

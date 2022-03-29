@@ -230,7 +230,7 @@ In order to send the confirmation email, you need to create an implementation of
     > [!NOTE]
     > The validation constraints on the **First name** and **Last name** fields reflect the data annotations on the `FirstName` and `LastName` properties of `InputModel`.
 
-1. After registering, you're redirected to the **Register confirmation** screen. In the terminal, find the console output that resembles the following:
+1. After registering, you're redirected to the **Register confirmation** screen. In the terminal pane, scroll up to find the console output that resembles the following:
 
     ```console
     Email Confirmation Message

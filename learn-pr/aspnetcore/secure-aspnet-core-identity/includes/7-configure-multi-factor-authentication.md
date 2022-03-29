@@ -59,47 +59,38 @@ Now that you can generate QR codes, you can inject a QR code into the **Configur
 1. Open *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs":::* and make the following changes:
     1. Add the following property to the `EnableAuthenticatorModel` class to store the QR code's base-64 string representation:
 
-        [!code-csharp[](../code/areas/identity/pages/account/manage/5-enableauthenticator.cshtml.cs?name=snippet_qrcodeasbase64&highlight=7)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/enableauthenticator.cshtml.cs?name=snippet_qrcodeasbase64&highlight=7)]
 
     1. Incorporate the highlighted changes in the `OnGetAsync` page handler:
 
-        [!code-csharp[](../code/areas/identity/pages/account/manage/5-enableauthenticator.cshtml.cs?name=snippet_ongetasync&highlight=1,10)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/enableauthenticator.cshtml.cs?name=snippet_ongetasync&highlight=1,10)]
 
-        In the preceding page handler, parameter injection provides a reference to the `QRCodeService` singleton service. `QRCodeService` is responsible for interactions with a third-party library that generates QR codes.
+        In the preceding page handler, parameter injection provides a reference to the `QRCodeService` singleton service.
 
     1. Add the following `using` statement to the top of the file to resolve the reference to `QRCodeService`. Save your changes.
 
         ```csharp
-        using ContosoPets.Ui.Services;
+        using RazorPagesPizza.Services;;
         ```
+
+    1. Incorporate the highlighted change to the `GenerateQrCodeUri` method.
+
+        [!code-csharp[](../code/areas/identity/pages/account/manage/enableauthenticator.cshtml.cs?name=snippet_generateqrcodeuri&highlight=6)]
+
+        This sets the display name of the key in your TOTP app.
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml":::*, make the following highlighted changes and save:
 
-    [!code-cshtml[](../code/areas/identity/pages/account/manage/5-enableauthenticator.cshtml?highlight=4-6)]
+    [!code-cshtml[](../code/areas/identity/pages/account/manage/enableauthenticator.cshtml?highlight=3-5)]
 
     The preceding markup embeds the base-64 encoded image in the page.
 
 ## Test multi-factor authentication
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
-
-1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
-
+1. Ensure you've saved all your changes.
+1. Build and run the app with `dotnet run`.
 1. Navigate to the site and log in with either registered user (if not already logged in). Select **Hello, [First name] [Last name]!** link to navigate to the profile management page, and then select **Two-factor authentication**.
-
-    Notice the presence of the following message on the page:
-
-    ```console
-    Privacy and cookie policy have not been accepted.
-    You must accept the policy before you can enable two factor authentication.
-    ```
-
-1. Click the **Accept** link in the privacy and cookie use policy banner to accept the policy. Refresh the page.
-
-    A cookie named *:::no-loc text=".AspNet.Consent":::* is created to mark acceptance of the policy. The cookie expires one year from the acceptance date.
-
 1. Select the **Add authenticator app** button.
-
 1. Follow the on-screen instructions to register and verify your authenticator app for this user.
 
     Using Microsoft Authenticator on Android as an example, follow these steps to add the account to the app:
@@ -109,7 +100,6 @@ Now that you can generate QR codes, you can inject a QR code into the **Configur
     1. Select **Add account**.
     1. Select **Other account (Google, Facebook, etc.)**.
     1. Scan the QR code as indicated.
-    1. Select **Finish** to verify the 32-character key.
 
 1. Enter the verification code provided by your TOTP app in the **Verification Code** text box.
 
@@ -117,10 +107,10 @@ Now that you can generate QR codes, you can inject a QR code into the **Configur
 
     Upon successful verification, the page displays a **Your authenticator app has been verified** banner and some recovery codes.
 
-1. Run the following command to see the effect on the `AspNetUsers` table's `TwoFactorEnabled` column:
+1. In the *SQL Server* tab in Code, right-click the **RazorPagesPizza** database and select **New query**. Enter the following query and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to run it.
 
-    ```bash
-    db -Q "SELECT FirstName, LastName, Email, TwoFactorEnabled FROM dbo.AspNetUsers" -Y 25
+    ```sql
+    SELECT FirstName, LastName, Email, TwoFactorEnabled FROM dbo.AspNetUsers
     ```
 
     For the logged in user, the output shows that the `TwoFactorEnabled` column is equal to `1`. Because multi-factor authentication hasn't been enabled for the other registered user, the record's column value is `0`.
@@ -137,3 +127,7 @@ Now that you can generate QR codes, you can inject a QR code into the **Configur
     * **Reset recovery codes**
     * **Set up authenticator app**
     * **Reset authenticator app**
+
+## Summary
+
+In this unit, you added the ability to generate a QR code to the **Configure authenticator app** form. In the next unit, you'll learn about using Identity to store claims and apply authorization policies.
