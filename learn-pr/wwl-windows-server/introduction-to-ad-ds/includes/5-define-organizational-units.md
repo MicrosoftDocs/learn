@@ -1,18 +1,18 @@
 An OU is a container object within a domain that you can use to consolidate users, computers, groups, and other objects. You can link Group Policy Objects (GPOs) directly to an OU to manage the users and computers contained in the OU. You can also assign an OU manager and associate a COM+ partition with an OU.
 
-You can create new OUs in AD DS by using: 
+You can create new OUs in AD DS by using:
 
-- Active Directory Administrative Center.
-- Active Directory Users and Computers.
-- Windows Admin Center.
-- Windows PowerShell with the Active Directory PowerShell module.
+ -  Active Directory Administrative Center.
+ -  Active Directory Users and Computers.
+ -  Windows Admin Center.
+ -  Windows PowerShell with the Active Directory PowerShell module.
 
 ## Why create OUs?
 
 There are two reasons to create an OU:
 
-- To consolidate objects to make it easier to manage them by applying GPOs to the collective. When you assign GPOs to an OU, the settings apply to all the objects within the OU. GPOs are policies that administrators create to manage and configure settings for computers or users. You deploy the GPOs by linking them to OUs, domains, or sites.
-- To delegate administrative control of objects within the OU. You can assign management permissions on an OU, thereby delegating control of that OU to a user or a group within AD DS, in addition to the Domain Admins group.
+ -  To consolidate objects to make it easier to manage them by applying GPOs to the collective. When you assign GPOs to an OU, the settings apply to all the objects within the OU. GPOs are policies that administrators create to manage and configure settings for computers or users. You deploy the GPOs by linking them to OUs, domains, or sites.
+ -  To delegate administrative control of objects within the OU. You can assign management permissions on an OU, thereby delegating control of that OU to a user or a group within AD DS, in addition to the Domain Admins group.
 
 You can use OUs to represent the hierarchical, logical structures within your organization. For example, you can create OUs that represent the departments within your organization, the geographic regions within your organization, or a combination of both departmental and geographic regions. You can use OUs to manage the configuration and use of user, group, and computer accounts based on your organizational model.
 
@@ -20,27 +20,70 @@ You can use OUs to represent the hierarchical, logical structures within your or
 
 AD DS has several built-in containers, or generic containers, such as Users and Computers. These containers store system objects or function as the default parent objects to new objects that you create. Don't confuse these generic container objects with OUs. The primary difference between OUs and containers is the management capabilities. Containers have limited management capabilities. For example, you can't apply a GPO directly to a container.
 
-:::image type="content" source="../media/m6-objects.png" alt-text="A screenshot of Active Directory Users and Computers. The administrator has selected the Computers container `Contoso.com` domain. Other containers that are displayed are described in the following tables.":::
+:::image type="content" source="../media/m6-objects-4501913a.png":::
+
 
 Installing AD DS creates the Domain Controllers OU and several generic container objects by default. AD DS primarily uses some of these default objects, which are also hidden by default. The following objects are displayed by default:
 
-- Domain. The top level of the domain organizational hierarchy.
-- Builtin container. A container that stores several default groups.
-- Computers container. The default location for new computer accounts that you create in the domain.
-- Foreign Security Principals container. The default location for trusted objects from domains outside the local AD DS domain that you add to a group in the local AD DS domain.
-- Managed Service Accounts container. The default location for managed service accounts. AD DS provides automatic password management in managed service accounts.
-- Users container. The default location for new user accounts and groups that you create in the domain. The Users container also holds the administrator, the guest accounts for the domain, and some default groups.
-- Domain Controllers OU. The default location for domain controllers' computer accounts. This is the only OU that is present in a new installation of AD DS.
+ -  Domain. The top level of the domain organizational hierarchy.
+ -  Builtin container. A container that stores several default groups.
+ -  Computers container. The default location for new computer accounts that you create in the domain.
+ -  Foreign Security Principals container. The default location for trusted objects from domains outside the local AD DS domain that you add to a group in the local AD DS domain.
+ -  Managed Service Accounts container. The default location for managed service accounts. AD DS provides automatic password management in managed service accounts.
+ -  Users container. The default location for new user accounts and groups that you create in the domain. The Users container also holds the administrator, the guest accounts for the domain, and some default groups.
+ -  Domain Controllers OU. The default location for domain controllers' computer accounts. This is the only OU that is present in a new installation of AD DS.
 
 There are several containers that you can review when you select Advanced Features. The following table describes the objects that are hidden by default.
 
-|Object|Description|
-|--|--|
-|LostAndFound|This container holds orphaned objects.|
-|Program Data|This container holds Active Directory data for Microsoft applications, such as Active Directory Federation Services (AD FS).|
-|System|This container holds the built-in system settings.|
-|NTDS Quotas| This container holds directory service quota data.|
-|TPM Devices| This container stores the recovery information for Trusted Platform Module (TPM) devices.|
+:::row:::
+  :::column:::
+    **Object**
+  :::column-end:::
+  :::column:::
+    **Description**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    LostAndFound
+  :::column-end:::
+  :::column:::
+    This container holds orphaned objects.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Program Data
+  :::column-end:::
+  :::column:::
+    This container holds Active Directory data for Microsoft applications, such as Active Directory Federation Services (AD FS).
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    System
+  :::column-end:::
+  :::column:::
+    This container holds the built-in system settings.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    NTDS Quotas
+  :::column-end:::
+  :::column:::
+    This container holds directory service quota data.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    TPM Devices
+  :::column-end:::
+  :::column:::
+    This container stores the recovery information for Trusted Platform Module (TPM) devices.
+  :::column-end:::
+:::row-end:::
+
 
 > [!NOTE]
 > Containers in an AD DS domain cannot have GPOs linked to them. To link GPOs to apply configurations and restrictions, create a hierarchy of OUs and then link the GPOs to them.
