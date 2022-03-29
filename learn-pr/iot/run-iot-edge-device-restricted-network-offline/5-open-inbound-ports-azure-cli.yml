@@ -8,6 +8,10 @@ metadata:
   ms.author: abartolo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - abartolo-05192020
 title: Open an IoT Edge gateway device inbound ports using Azure CLI
 # azureSandbox: true
 durationInMinutes: 15
