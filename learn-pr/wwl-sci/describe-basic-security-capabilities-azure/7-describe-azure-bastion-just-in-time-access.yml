@@ -4,7 +4,7 @@ title: Describe Azure Bastion and JIT Access
 metadata:
   title: Describe Azure Bastion and JIT Access
   description: "Describe Azure Bastion and JIT Access"
-  ms.date: 03/25/2022
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/7-describe-azure-bastion-jit-access.md)]
+  [!include[](includes/7-describe-azure-bastion-just-in-time-access.md)]
