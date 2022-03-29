@@ -21,13 +21,13 @@ quiz:
     choices:
     - content: "Azure Bastion and JIT together."
       isCorrect: false
-      explanation: "That's incorrect. This is the most expensive, but the the most secure way to enable access to VMs in Azure."
+      explanation: "That's incorrect. This is the most expensive, but the most secure way to enable access to VMs in Azure."
     - content: "Azure Bastion."
       isCorrect: false
-      explanation: "That's incorrect. Azure Bastion requires the Azure Bastion Service to deployed. There is a cost associated with running the service."
+      explanation: "That's incorrect. Azure Bastion requires the Azure Bastion Service to deployed. There's a cost associated with running the service."
     - content: "Just-in-time VM access."
       isCorrect: true
-      explanation: "That's correct. There is a cost associated with Microsoft Defender for Cloud enhanced security. However, when its enabled in a subscription, there are no additional charges to provide JIT access on each VM."
+      explanation: "That's correct. There's a cost associated with Microsoft Defender for Cloud enhanced security. However, when it's enabled in a subscription, there are no additional charges to provide JIT access on each VM."
   - content: "Where do you enable the enhanced security features for Microsoft Defender for Cloud?"
     choices:
     - content: "You enable this on the resource group that you want to protect."
@@ -35,7 +35,7 @@ quiz:
       explanation: "That's incorrect. Microsoft Defender for Cloud is not configured at the resource group level."
     - content: "You enable this on each VM you want to access securely."
       isCorrect: true
-      explanation: "That's incorrect. You cant enable the enhanced features of Microsoft Defender for Cloud at the VM."
+      explanation: "That's correct. You can't enable the enhanced features of Microsoft Defender for Cloud at the VM."
     - content: "You enable this in the subscription section of the Azure portal."
       isCorrect: false
       explanation: "That's incorrect. Microsoft Defender for Cloud is enabled at the subscription level, but not the enhanced security features."

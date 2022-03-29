@@ -80,4 +80,4 @@ Bastion is not supported in the Learn sandbox environment. Watch the video at th
 
 You can watch the following video to see all the steps above:
 
-!VIDEO https://www.microsoft.com/videoplayer/embed/RE4RYRS
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4RYRS]

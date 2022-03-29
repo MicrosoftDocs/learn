@@ -32,13 +32,13 @@ Step 3 allows you to select the tier, basic or standard. You can then create or 
 
 To begin resolving connection issues between your Azure Bastion Service and a VM, check the VM is running.
 
-The VM doesn’t need to have a public IP address, but it must be in a virtual network that supports IPv4. At present, IPv6-only environments aren’t supported.
+The VM doesn’t need to have a public IP address, but it must be in a virtual network that supports IPv4. Currently, IPv6-only environments aren’t supported.
 
 Azure Bastion can’t work with VMs that are in an Azure Private DNS zone with **core.windows.net** or **azure.com** in the suffixes. This isn’t supported because it could allow overlaps with internal endpoints. Azure Private DNS zones in national clouds are also unsupported.
 
-If the connection to the VM is working but you can’t sign in, check if it is domain-joined. If the VM is domain-joined, you’ll need to specify the credentials in the Azure portal using the **username@domain** format, instead of **domain\username**. This will not resolve the issues if the VM is Azure AD-joined only—this kind of authentication isn’t supported.
+If the connection to the VM is working but you can’t sign in, check if it is domain-joined. If the VM is domain-joined, you’ll need to specify the credentials in the Azure portal using the **username@domain** format, instead of **domain\username**. This won't resolve the issues if the VM is Azure AD-joined only—this kind of authentication isn’t supported.
 
-In the earlier section you’ll note that, by default, the AzureBastionSubnet is not assigned an NSG. If your organization needs an NSG you should ensure that it’s configured correctly:
+In the earlier section you’ll note that, by default, the AzureBastionSubnet isn't assigned an NSG. If your organization needs an NSG, you should ensure that it’s configured correctly:
 
 Inbound rules
 
@@ -60,5 +60,5 @@ The Azure Bastion Service and AzureBastionSubnet
 
 If it’s a peered network, the virtual network
 
-If all these are correct and the user is still seeing a black screen when they try to connect with Azure Bastion, there’s likely a network connectivity issue .Either between the user’s web browser and Azure Bastion
+If all these resources are correct and the user is still seeing a black screen when they try to connect with Azure Bastion, there’s likely a network connectivity issue. Either between the user’s web browser and Azure Bastion
 

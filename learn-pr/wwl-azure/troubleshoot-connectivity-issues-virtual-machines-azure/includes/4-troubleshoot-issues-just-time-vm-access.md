@@ -2,7 +2,7 @@ Unlike Azure Bastion, there are only two high-level issues you might need to tro
 
 ## Availability
 
-JIT VM access is one of the enhanced security features of Microsoft Defender for Cloud. Your organization has to have enhanced security enabled at the subscription level. To check this, go to the Azure portal, select **Microsoft Defender for Cloud**, and under **Management**, select **Environment settings**.
+JIT VM access is one of the enhanced security features of Microsoft Defender for Cloud. Your organization has to have enhanced security enabled at the subscription level. To check, go to the Azure portal, select **Microsoft Defender for Cloud**, and under **Management**, select **Environment settings**.
 
 ![A screenshot of the Azure portal, selecting Microsoft Defender for Cloud, and then Environment settings.](../media/defender-environment-settings.png)
 
@@ -12,7 +12,7 @@ If you haven’t enabled Microsoft Defender for Cloud on your subscription, you�
 
 Select **Enable Microsoft Defender for Cloud** to be taken to a page that allows you to select your subscription.
 
-If you have multiple subscriptions, select the one with the resources you are troubleshooting. Then select the large **Enable all Microsoft Defender for Cloud plans** box.
+If you have multiple subscriptions, select the one with the resources you're troubleshooting. Then select the large **Enable all Microsoft Defender for Cloud plans** box.
 
 ![A screenshot showing how to enable all Microsoft Defender for Cloud plans.](../media/enable-enhanced-security.png)
 
@@ -40,7 +40,7 @@ This page can also help you diagnose your VMs that aren’t supported by JIT VM 
 
 ## Access
 
-With JIT VM access enabled on your machines, users might still have issues when they request access to a specific protected VMs. You request access to a VM using the Azure portal as follows:
+With JIT VM access enabled on your machines, users might still have issues when they request access to a specific protected VM. You request access to a VM using the Azure portal as follows:
 
 - From inside the Connect options for a VM.
 
