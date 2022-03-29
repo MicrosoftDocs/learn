@@ -1,8 +1,8 @@
-You work as an administrator looking after your company’s Azure Active Directory (Azure AD) authentication and access control. Because authentication and access control is crucial to the robust, secure, and effective functioning of both Azure-based and hybrid systems, it is essential that you can react both proactively and reactively to any authentication and authorization issues.
+You work as an administrator looking after your company’s Azure Active Directory (Azure AD) authentication and access control. Because authentication and access control is crucial to the robust, secure, and effective functioning of both Azure-based and hybrid systems, you can react both proactively and reactively to any authentication and authorization issues.
 
-Microsoft Azure has a sophisticated authentication and access control system to provide high security. Azure AD authentication includes self-service password reset, multifactor authentication, hybrid integration, and passwordless authentication.
+Microsoft Azure has a sophisticated authentication and access control system to provide high security. Azure AD authentication includes self-service password reset, multi-factor authentication, hybrid integration, and passwordless authentication.
 
-In this module, you’ll learn how to troubleshoot a deployment of Azure AD that is based entirely in the cloud and a hybrid deployment of Azure AD that is part cloud-based and part on-premises. You will also learn how to troubleshoot authorization issues when using Microsoft Azure.
+In this module, you’ll learn how to troubleshoot a deployment of Azure AD that is based entirely in the cloud and a hybrid deployment of Azure AD that is part cloud-based and part on-premises. You'll also learn how to troubleshoot authorization issues when using Microsoft Azure.
 
 ## Learning objectives
 
