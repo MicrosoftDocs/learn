@@ -18,9 +18,9 @@ The value of the primary key column is the only information from the tracked tab
 
 Information about the change that was made to each row can also be obtained by using change tracking. For example, the type of DML operation that caused the change (insert, update, or delete) or the columns that were changed as part of an update operation.
 
-## Enabling and disabling change tracking
+## Enabling and disabling Change tracking
 
-### Enabling change tracking on your database
+### Enabling Change tracking on your database
 
 Before you can use change tracking, you must enable change tracking at the database level. The following example shows how to enable change tracking by using ALTER DATABASE:
 
@@ -36,7 +36,7 @@ The change retention value specifies the time period for which change tracking i
 
 You can use the AUTO_CLEANUP option to enable or disable the cleanup task that removes old change tracking information. This can be useful when there is a temporary problem that prevents applications from synchronizing and the process for removing change tracking information older than the retention period must be paused until the problem is resolved.
 
-### Enabling change tracking on your tables
+### Enabling Change tracking on your tables
 
 Similarly to Change Data Capture, Change tracking must be enabled for each table that you want tracked. When change tracking is enabled, change tracking information is maintained for all rows in the table that are affected by a DML operation.
 
@@ -50,7 +50,7 @@ You can also enable change tracking for a table in SQL Server Management Studio 
 
 When the TRACK_COLUMNS_UPDATED option is set to ON, the SQL Server Database Engine stores extra information about which columns were updated to the internal change tracking table. Column tracking can enable an application to synchronize only those columns that were updated. This can improve efficiency and performance. However, because maintaining column tracking information adds some extra storage overhead, this option is set to OFF by default.
 
-### Disabling change tracking on your database or tables
+### Disabling Change tracking on your database or tables
 
 Change tracking must first be disabled for all change-tracked tables before change tracking can be set to OFF for the database. To determine the tables that have change tracking enabled for a database, use the sys.change_tracking_tables catalog view.
 

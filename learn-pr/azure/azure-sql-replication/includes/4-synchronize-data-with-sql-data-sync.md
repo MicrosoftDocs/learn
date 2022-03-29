@@ -27,7 +27,7 @@ Additionally, the Private Link for SQL Data Sync allows you to choose a service 
 
 ## User interface options
 
-You can use SQL Data Sync through the Azure Portal, PowerShell, REST API.
+You can use SQL Data Sync through the Azure portal, PowerShell, REST API.
 
 ## Key use cases
 

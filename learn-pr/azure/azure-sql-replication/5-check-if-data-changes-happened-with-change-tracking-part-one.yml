@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking-part-one
-title: Change Tracking - Track, load, and replicate data changes on your Azure SQL Databases
+title: Track data changes on your Azure SQL Databases with Change tracking - Part 1
 metadata:
   unitType: learning-content
-  title: Change Tracking - Track, load, and replicate data changes on your Azure SQL Databases
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Track data changes on your Azure SQL Databases with Change tracking - Part 1
+  description: "Learning how Change Tracking helps track whether a changed happened on a database table and understanding the steps to enable and disable it."
   ms.date: 3/21/2022
   author: MaraSteiu
   ms.author: masteiu

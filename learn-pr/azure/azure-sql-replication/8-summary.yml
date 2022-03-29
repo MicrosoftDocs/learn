@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-replication.summary
-title: Summary - Data replication and streaming on Azure SQL Databases
+title: Summary - Data replication on Azure SQL Databases
 metadata:
   unitType: learning-content
-  title: Summary - data replication and streaming on Azure SQL Databases
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Summary - Data replication on Azure SQL Databases
+  description: "Reviewing all Azure SQL data replication tools covered in this Learn Module - Change Data Capture (CDC), SQL Data Sync, and Change Tracking."
   ms.date: 3/21/2022
   author: MaraSteiu
   ms.author: masteiu

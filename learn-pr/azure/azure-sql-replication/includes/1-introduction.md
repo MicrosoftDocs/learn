@@ -1,12 +1,12 @@
 ## Common data replication use cases and tools
 
-For the purposes of this Microsoft Learn Module, we will use the umbrella term "replication tools" to cover all change data tracking, loading, streaming, synchronizing functionalities. Therefore, we will refer to Change Data Capture (CDC), SQL Data Sync, and Change Tracking as "replication tools".
+We will use the umbrella term "replication tools" to cover all change data tracking, loading, streaming, synchronizing functionalities. Therefore, we will refer to Change Data Capture (CDC), SQL Data Sync, and Change Tracking as "replication tools".
 
-Tracking, loading, replicating, and streaming data changes among different source and target systems is important for many organizations and business needs. There is a wide range of use cases and business scenarios that require replication tools. For instance, imagine that you are the CTO of a healthcare business that sells medical equipment in different regions around the country. You have different inventory databases in each region and you want to ensure that these databases are all replicating data changes to a central country-wide inventory database which offers you a status on each sale. This central database is essential because based on the inventory you have, you know how much more equipment to produce and deliver regionally. Thus, you need to select the right data replication tool that will help you synchronize your central inventory database with all regional databases.
+There is a wide range of use cases and business scenarios that require replication tools for tracking, loading, replicating, and streaming data changes. For instance, imagine that you are the CTO of a healthcare business that sells medical equipment in different regions around the country. You have different inventory databases in each region and you want to ensure that these databases are all replicating data changes to a central country-wide inventory database which offers you a status on each sale. This central database is essential because based on the inventory you have, you know how much more equipment to produce and deliver regionally. Thus, you need to select the right data replication tool that will help you synchronize your central inventory database with all regional databases.
 
 With a multitude of replication tools available and various use cases and business needs, it is often difficult to decide what tools to use in what specific scenarios. Below is a table that highlights some of the common scenarios and the associated tools that could be used in that context. However, please be aware that this is not the most comprehensive list and many other 1st or 3rd party tools could be used in these use cases.
 
-*Common use cases and potential replication tools to use for each*
+Popular use cases and potential replication tools:
 
 | Use case | Potential tools |
 | ---- | ---- |
