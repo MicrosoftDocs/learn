@@ -4,7 +4,7 @@ Within the Azure portal, resources such as Azure Firewall, Network Watcher, Azur
 
 In this module, you’ll learn how to troubleshoot network security, configuration, latency, bandwidth, and Azure Firewall issues.
 
-## Learning objectives
+## Learning objectives 
 
 After completing this module, you’ll be able to: 
 
