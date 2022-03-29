@@ -1,10 +1,10 @@
-Cascading Style Sheets (CSS) let you specify how your page should look. The basic idea is to define what the style should be for the elements that you use within your HTML pages.
+Cascading Style Sheets (CSS) let you specify how your page should look. The basic idea is to define what the style should be for the elements that you use within your HTML pages. While the HTML elements define your content, CSS styles define what this content looks like.
 
-For example, you can apply rounded corners or give a gradient background to an element. Or you can use CSS to specify how your hyperlinks look and respond when you interact with them (although you define the destination address for your hyperlinks in your HTML code).
+For example, you can apply rounded corners or give a gradient background to an element. Or you can use CSS to specify how hyperlinks look and respond when you interact with them. You can also perform sophisticated page layouts and animation effects.
 
-You can apply styles to specific elements, or all elements of a specific type, or you can use classes to specify styles that can be applied to a number of different elements. In CSS, you can also perform sophisticated animation effects.
+You can apply styles to specific elements, all elements of a specific type, or use classes to style many different elements.
 
-In this exercise, you'll apply CSS styles to HTML page elements, then you'll add some CSS code to define your light and dark themes, and then you'll check the results in your browser's developer tools.
+In this exercise, you'll apply CSS styles to HTML page elements and add some CSS code to define your light and dark themes. You'll also check the results in your browser's developer tools.
 
 ## External CSS
 
@@ -21,9 +21,9 @@ In the previous unit about HTML, you linked to an external CSS file from HTML.
 ...
 ```
 
-One benefit of external CSS is that multiple HTML pages can link to the same CSS file. If you make a change to the CSS, your styling will update for each page. Designating an HTML file for the structure of the page, a CSS file for the styling, and JavaScript file for interaction or events is called *separation of concerns*.
+One benefit of external CSS is that multiple HTML pages can link to the same CSS file. If you make a change to the CSS, your styling will update for each page. Using an HTML file for your page content, a CSS file for styling, and a JavaScript file for interaction is called *separation of concerns*.
 
-As described previously, you can also write CSS directly in HTML, which is called *internal CSS*. Even for a basic website, there are so many CSS rules the HTML page can become cluttered very quickly. With more than one page, the same CSS would often be repeated and challenging to manage.
+As described previously, you can also write CSS directly in HTML, which is called *internal CSS*. Even for a basic website, there are so many CSS rules the HTML page can become cluttered quickly. With more than one page, the same CSS would often be repeated and challenging to manage.
 
 ## CSS rules
 
@@ -41,12 +41,12 @@ ul {
 }
 ```
 
-The above code snippet contains 2 rules. Each rule has:
+The above code snippet contains two rules. Each rule has:
 
-* A *selector*. `body` and `ul` are the selectors of the 2 rules and are used to select which element(s) the styles apply to.
+* A *selector*. `body` and `ul` are the selectors of the two rules and are used to select which element(s) the styles apply to.
 * An opening curly brace (`{`).
-* A list of style *declarations* which determine what the selected elements should look like.
-* An closing curly brace (`}`).
+* A list of style *declarations* that determine what the selected elements should look like.
+* A closing curly brace (`}`).
 
 For example, the `ul` selector selects the `<ul>` HTML element in the page, to apply styles to it. The declaration is `font-family: helvetica` and determines what the style should be. The *property name* is `font-family`, and the *value* is `helvetica`.
 
@@ -72,7 +72,7 @@ As you'll see next, you can define your own custom names for elements.
     }
     ```
 
-   The preceding code contains 3 CSS rules, with the last 2 rules using custom attributes to select elements: `.list` and `#msg`.
+   The preceding code contains 3 CSS rules, with the last two rules using custom attributes to select elements: `.list` and `#msg`.
 
    * `.list` is a *class selector*. Each HTML element that contains a `class` attribute set to `list` will get the styles that are defined within this selector.
 
@@ -93,11 +93,11 @@ As you'll see next, you can define your own custom names for elements.
 
    ![Screenshot of website with font styles applied.](../media/applied-font-styles.png)
 
-Are the font styles what you expected to see? It's interesting how styles applied to the `<body>` are inherited on the `<h1>` element. We didn't define anything for `<h1>`, but it still got the font that was defined on `<body>`. This inheritance mechanism from parent elements to their descendants is one of the key aspects of CSS. However, the `<li>` elements have a different font, overriding the one set on `<body>` because they are also descendants of the `<ul>` element which you specifically defined a style for.
+Are the font styles what you expected to see? It's interesting how styles applied to the `<body>` are inherited on the `<h1>` element. We didn't define anything for `<h1>`, but it still got the font that was defined on `<body>`. This inheritance mechanism from parent elements to their descendants is one of the key aspects of CSS. However, the `<li>` elements have a different font, overriding the one set on `<body>` because they're also descendants of the `<ul>` element which you defined a style for.
 
-Note that using **Open In Default Browser** in **VS Code** opens a new tab in the browser every time. To avoid this, you can reload the tab that contains your website instead.
+Note that using **Open In Default Browser** in **VS Code** opens a new tab in the browser every time. To avoid opening a new tab, you can reload the tab that already contains your website instead.
 
-To reload the tab press <kbd>F5</kbd> which is the refresh keyboard shortcut, or press <kbd>Ctrl+R</kbd> on Windows or Linux, and <kbd>Command+R</kbd> on a Mac.
+To reload the tab press <kbd>F5</kbd>, which is the refresh keyboard shortcut, or press <kbd>Ctrl+R</kbd> on Windows or Linux, and <kbd>Command+R</kbd> on a Mac.
 
 ## Add a light theme
 
@@ -162,7 +162,7 @@ To add support for a dark theme to your CSS, use the following steps.
     }
     ```
 
-   The `:root` selector represents the `<html>` element in the HTML page. For this kind of task, a best practice is to define a set of global CSS variables in a CSS rule with the `:root` selector. In this example, you've defined three color variables. You will next be able to use these variables in other CSS rules.
+   The `:root` selector represents the `<html>` element in the HTML page. For this kind of task, a best practice is to define a set of global CSS variables in a CSS rule with the `:root` selector. In this example, you've defined three color variables. You'll next be able to use these variables in other CSS rules.
 
 1. At the end of the CSS file, replace the `light-theme` rule with the following code to update it and to add the `dark-theme` selector.
 
@@ -177,7 +177,7 @@ To add support for a dark theme to your CSS, use the following steps.
     }
     ```
 
-   In the preceding code, you defined 2 new variables, `bg` and `fontColor`, which specify a background and font color. These variables use the `var` keyword to set their property values the variables previously specified in your `:root` selector.
+   In the preceding code, you defined two new variables, `bg` and `fontColor`, which specify a background and font color. These variables use the `var` keyword to set their property values the variables previously specified in your `:root` selector.
 
 1. Next, in your CSS file, replace the current `body` selector with the following code.
 
@@ -189,7 +189,7 @@ To add support for a dark theme to your CSS, use the following steps.
     }
     ```
 
-   In this example, you use the `body` selector to set the `background` and `color` properties and, because the elements that are visible on the web page are all inside the `<body>` element, they will inherit the colors set on `<body>`.
+   In this example, you use the `body` selector to set the `background` and `color` properties and, because the elements that are visible on the web page are all inside the `<body>` element, they'll inherit the colors set on `<body>`.
 
 1. In your CSS file, remove the rules with the `#msg` and `ul` selectors so that they also inherit the same font from `<body>`.
 

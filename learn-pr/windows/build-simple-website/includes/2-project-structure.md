@@ -1,6 +1,6 @@
 There are different ways to create and manage website projects. Some of these differences depend on the specific tools you have and the preferences of your organization. When creating a website, it's not uncommon for your project structure to change over time as it becomes more complicated. The key is to maintain a semblance of organization, and there are common strategies to help you do this. Large projects often require a higher degree of care and attention so that many people can keep everything organized.
 
-In this unit, you'll create a simple project structure using Visual Studio Code. The project will have three files: an HTML file, a CSS file, and a JavaScript file. You'll also add a Visual Studio Code extension to simplify running the website in your browser.
+In this unit, you'll create a small project structure using Visual Studio Code. The project will have three files: an HTML file, a CSS file, and a JavaScript file. You'll also add a Visual Studio Code extension to simplify running the website in your browser.
 
 ## Create a new folder for your website
 
@@ -12,7 +12,7 @@ In this unit, you'll create a simple project structure using Visual Studio Code.
 
    If the **Get Started** page isn't visible, you can display it by selecting **Help > Get Started** on the menu. (Alternatively, you can display the **Get Started** page by opening the **Command Palette** using the keyboard shortcut <kbd>Shift+Ctrl+P</kbd> on a Windows computer or <kbd>Shift+Cmd+P</kbd> on a macOS, or by selecting **View > Command Palette** from the Visual Studio Code menu. When the **Command Palette** displays, enter **>Help: Get Started** in the search field to open the **Get Started** page.)
 
-1. Select **Open folder** in the **Start** list of the **Welcome** page, or select **File > Open Folder** from the Visual Studio Code menu.
+1. Select **Open folder** in the **Start** list of the **Get Started** page, or select **File > Open Folder** from the Visual Studio Code menu.
 
    ![Screenshot of Visual Studio Code open folder.](../media/vs-code-open-folder.png)
 
@@ -30,7 +30,7 @@ In this unit, you'll create a simple project structure using Visual Studio Code.
 
 1. Enter `index.html` for the file name, and then select **Save**.
 
-1. Repeat the preceding steps to create two more files: `main.css` and `app.js`. When you're finished, in Visual Studio Code Explorer, you see your project folder **simple-website** contains the following file, which comprise your website:
+1. Repeat the preceding steps to create two more files: `main.css` and `app.js`. When you're finished, in Visual Studio Code Explorer, you see your project folder **simple-website** contains the following files, which comprise your website:
 
    - index.html
    - main.css
@@ -38,7 +38,7 @@ In this unit, you'll create a simple project structure using Visual Studio Code.
 
    ![Screenshot of your files in Visual Studio Code Explorer view.](../media/vs-code-explorer-view.png)
 
-You could build a website by including all of your HTML, CSS styles, and JavaScript code within a single file. However, in this exercise you're using an HTML file for your content and page structure, a CSS file for your presentation and styling, and a JavaScript file for your behaviors and interactivity.
+You could build a website by including all of your HTML, CSS styles, and JavaScript code within a single file. However, in this exercise you're using an HTML file for your content, a CSS file for your styling, and a JavaScript file for your interactivity.
 
 Setting up three files helps keep your website project organized. The separation of content, styles, and logic is an example of *progressive enhancement*. If JavaScript isn't enabled or supported by your customers, your CSS and HTML will still work. However, if CSS isn't supported by your customers, at least your HTML content will appear.
 

@@ -1,4 +1,4 @@
-In this module, you set up a working environment for web development. You also created a website and tested that everything is working in a web browser. We've covered a lot of ground. Look at all you accomplished:
+In this module, you set up a working environment for web development. You also created a website and tested that everything is working in a web browser. Let's look at all you accomplished:
 
 * You downloaded and installed the tools you need for web development, and customized the editor with basic packages.
 * You created a project directory and the files to build a website.

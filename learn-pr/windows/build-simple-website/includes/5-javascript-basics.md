@@ -2,11 +2,11 @@ JavaScript (or *ECMAScript*) is a programming language that helps you add intera
 
 For example, you can use JavaScript to define the behavior that will happen when a user selects a button; for example, open a pop-up window. Using JavaScript, you can add or remove content from a web page without reloading it.
 
-In this unit, you'll set up an example JavaScript file for your web page. You'll create a button to switch between light and dark themes, and then you'll attach the button to JavaScript code that performs the actual theme switching. When this is done, you'll check the finished project using your browser's developer tools.
+In this unit, you'll set up an example JavaScript file for your web page. You'll create a button to switch between light and dark themes. Then you'll attach the button to JavaScript code that performs the actual theme switching. Finally, you'll check the finished project using your browser's developer tools.
 
 ## Link to JavaScript
 
-Like CSS, you could add JavaScript directly to the HTML file, but a recommended best practice is to save your JavaScript in a separate file, which makes it easier to reuse your JavaScript code across several web pages. For example, you could create a pop-up alert by adding `<script>alert('Hello World')</script>` anywhere within the body of your web pages; however, it is better to add your JavaScript code to a separate file that can be linked to every file that needs your custom functionality.
+Like CSS, you could add JavaScript directly to the HTML file, but a recommended best practice is to save your JavaScript in a separate file. Adding your JavaScript code to a separate file makes it easier to reuse it across several web pages. For example, you could create a pop-up alert by adding `<script>alert('Hello World')</script>` anywhere within the body of your web pages; however, it's better to add your JavaScript code to a separate file that can be linked to every file that needs your custom functionality.
 
 The HTML script tag `<script>` will let us link to an external JavaScript file, which is how you'll configure your web app in this exercise.
 
@@ -14,7 +14,7 @@ The HTML script tag `<script>` will let us link to an external JavaScript file, 
 
 1. On a new line before the closing `</body>` element, enter `script:src`, and then select <kbd>Enter</kbd>. The opening and closing tags for a script are added to your code.
 
-1. Modify the `<script>` element to load your `app.js` file as shown in the following example, and ensure that it is located after the closing `</ul>` element for the list.
+1. Modify the `<script>` element to load your `app.js` file as shown in the following example, and ensure that it's located after the closing `</ul>` element for the list.
 
     ```html
     ...
@@ -44,7 +44,9 @@ The `<script>` element could be placed in the `<head>` or elsewhere in the `<bod
 
 ## Set strict mode
 
-As you get started with JavaScript, your initial focus is often going to be working with numbers, math, text manipulation, dates, and storing information. Sometimes JavaScript makes assumptions about the type of data you enter; for example, assignment, math, or logical equality can give you unexpected results. JavaScript tries to be friendly, make your code work, and provide you with a solution, even if the result should be an error. To override this behavior, you can activate *strict mode*, which reduces silent errors, improves performance and provides you with more warnings and fewer unsafe features.
+JavaScript was designed to be easy to learn and allows certain mistakes to be made by the developer. For example, JavaScript does not throw an error when you use a misspelled variable, and instead creates a new global one. While having fewer errors is tempting when you start learning JavaScript, it can lead to writing code that is harder for browsers to optimize and harder for you to debug.
+
+Switch to strict mode to get more useful errors when you make mistakes.
 
 - In **VS Code**, open the `app.js` file, and enter the following.
 
@@ -54,7 +56,7 @@ As you get started with JavaScript, your initial focus is often going to be work
 
 ## Add a button
 
-You need a way to let your users switch between the light and dark themes in your web page. In this exercise, you will implement that functionality with an HTML `<button>` element.
+You need a way to let your users switch between the light and dark themes in your web page. In this exercise, you'll implement that functionality with an HTML `<button>` element.
 
 1. In your HTML file, add a `<button>` element. Put the button at the end of the list inside of a `<div>` element.
 
@@ -72,9 +74,9 @@ You need a way to let your users switch between the light and dark themes in you
     ...
     ```
 
-    Notice that the `<button>` element in this example has a *class* attribute that you will use to apply CSS styles.
+    Notice that the `<button>` element in this example has a *class* attribute that you'll use to apply CSS styles.
 
-1. In your CSS file, add a new rule with a `.btn` class selector for your HTML button. To make the button colors different from the general light or dark theme colors, set the `color` and `background-color` properties in this rule. They will override the default ones set in the `body` rule of your CSS file.
+1. In your CSS file, add a new rule with a `.btn` class selector for your HTML button. To make the button colors different from the general light or dark theme colors, set the `color` and `background-color` properties in this rule. They'll override the default ones set in the `body` rule of your CSS file.
 
     ```css
     .btn {
@@ -140,11 +142,11 @@ Before you can add the event handler, you need a reference to the button element
     });
     ```
 
-In the preceding code, you used the `toggle` method to modify the `<body>` element's class attribute. This method automatically adds or remove the `light-theme` and `dark-theme` classes. This applies the dark styles instead of light styles on click, and then light styles instead of dark if you click again.
+In the preceding code, you used the `toggle` method to modify the `<body>` element's class attribute. This method automatically adds or removes the `light-theme` and `dark-theme` classes. This code applies the dark styles instead of light styles on click, and then light styles instead of dark if you click again.
 
 However, the label for the button also needs to be updated to show the correct theme, so you need to add an `if` statement to determine the current theme, and update the button label.
 
-Here is what the complete JavaScript code should look like.
+Here's what the complete JavaScript code should look like.
 
 ```js
 'use strict';
@@ -168,7 +170,7 @@ It's a JavaScript convention to use *camel case* for variable names with more th
 
 ## Console message
 
-As a web developer, you can create hidden messages that won't appear on your webpage, but that you can read in the Developer Tools, in the **Console** tab. Using *console messages* can be really helpful for seeing the result of your code.
+As a web developer, you can create hidden messages that won't appear on your webpage, but that you can read in the Developer Tools, in the **Console** tab. Using *console messages* is helpful for seeing the result of your code.
 
 - Add a call to `console.log` after the `if` statement, but inside the event listener.
 

@@ -4,7 +4,7 @@ In this unit, you add basic HTML content, open the HTML page in a browser, and g
 
 ## Add some HTML code
 
-Visual Studio Code provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting.
+Visual Studio Code provides basic support for HTML programming out of the box. There's syntax highlighting, smart completions with IntelliSense, and customizable formatting.
 
 1. Open your website in **Visual Studio Code**, then open the `index.html` file by selecting the `index.html` file in **Explorer**.
 
@@ -13,7 +13,7 @@ Visual Studio Code provides basic support for HTML programming out of the box. T
     > [!NOTE]
     > If the HTML5 template code is not added to the `index.html` file, try closing and reopening the file.
 
-1. Edit your code so that it resembles the following, and then save the file by selecting <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
+1. Edit your code so that it resembles the following. Then save the file by selecting <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
 
    ```html
    <!DOCTYPE html>
@@ -30,9 +30,9 @@ Visual Studio Code provides basic support for HTML programming out of the box. T
    </html>
    ```
 
-There have been different versions of HTML. The document type `<!DOCTYPE html>` indicates this is HTML5 code.
+There have been different versions of HTML. The *doctype* `<!DOCTYPE html>` indicates this HTML document contains HTML5 code.
 
-While we aren't going to delve deeply into the meaning of all the HTML elements, we will point out a few important items. The `meta` tag indicates *metadata* information that won't typically be visible to the viewer unless they view the source code in their browser. Meta elements or tags provide descriptive information about the webpage. For example, they help search engines process which information in your webpages to return in search results.
+While we aren't going to delve deeply into the meaning of all the HTML elements, we'll point out a few important items. The `meta` tag indicates *metadata* information that won't typically be visible to the viewer unless they view the source code in their browser. Meta elements or tags provide descriptive information about the webpage. For example, they help search engines process which information in your webpages to return in search results.
 
 The *character set* (`charset`) for UTF-8 may seem insignificant, but is crucial for establishing how computers interpret characters. If the metadata for the character set is missing, that can lead to compromised security. There's quite a bit of history and technical information behind the charset attribute, but important takeaway from this exercise is that the **VS Code** boilerplate provides some sensible defaults.
 
@@ -59,7 +59,7 @@ The *title* of a webpage appears at the top of a browser window, and is signific
    ...
    ```
 
-To apply styles to the HTML elements on the webpage, you could write the CSS code directly in the head of the webpage; this is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with replicated CSS code, you can make changes to a single CSS file, and have those updates applied to all of the dependent web pages. Let's link to an external stylesheet.
+To apply styles to the HTML elements on the webpage, you could write the CSS code directly in the head of the webpage. Writing CSS in the HTML page is called *internal CSS*. However, it's a best practice to separate HTML structure and CSS styling. Having a separate CSS page is called *external CSS*. Code tends to be easier to read when it's concise and compartmentalized. You can use one or more external style sheets to service multiple webpages. Rather than updating each HTML page with replicated CSS code, you can make changes to a single CSS file, and have those updates applied to all of the dependent web pages. Let's link to an external stylesheet.
 
 1. In the **VS Code** editor, add a blank line after the `<title>` element, type `link`, and then select <kbd>Enter</kbd>. **VS Code** should add the following line to your `index.html` file.
 
@@ -132,7 +132,7 @@ You can preview your webpage locally by opening the HTML file in a browser. Inst
 
 ## View the page using developer tools
 
-You can inspect a webpage by using the developer tools in your browser. Let's give this a try.
+You can inspect a webpage by using the developer tools in your browser. Let's give it a try.
 
 1. Open Developer Tools by right-clicking in the web page and selecting **Inspect**, or try these shortcuts:
 
@@ -150,6 +150,6 @@ You can inspect a webpage by using the developer tools in your browser. Let's gi
 
 1. Move your mouse over the HTML elements displayed in the **Elements** tab, and expand the contents of the various elements.
 
-The **Elements** tab in developer tools shows you the document object model (DOM) as rendered in the browser. When debugging, it is often important to see how the browser interprets your source code.
+The **Elements** tab in developer tools shows you the document object model (DOM) as rendered in the browser. When debugging, it's often important to see how the browser interprets your source code.
 
 Inspecting the page in a browser provides all sorts of useful information and can help you troubleshoot problems. You can also view CSS details with the inspector, as you'll see in the next section.
