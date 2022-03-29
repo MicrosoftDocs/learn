@@ -27,13 +27,14 @@ This may appear if the script is unable to access the recovery point. To resolve
 1. Check that the machine running the script has access to the recovery vault.
 
 1. Verify the connection to the Azure target IP addresses. To check, run the following from an elevated command prompt:
+```
+     nslookup download.microsoft.com
 
-nslookup download.microsoft.com
+     or
 
-or
+     ping download.microsoft.com
 
-ping download.microsoft.com
-
+```
 1. Ensure access to iSCSI outbound port 3260.
 
 1. Check for a firewall or NSG blocking traffic to Azure target IPs or recovery service URLs.
@@ -174,8 +175,7 @@ If you get an error message saying that “the encryption passphrase for this se
 
 1. If the scratch location exists, try re-registering by using the old passphrase.
 
-> [!NOTE]
-> When you configure an encryption passphrase, always save it in a secure location.
+NOTE: When you configure an encryption passphrase, always save it in a secure location.
 
 ## Troubleshoot hybrid scenarios
 
@@ -195,7 +195,7 @@ When recovering an on-premises Hyper-V VM to Azure, use Azure Site Recovery. If 
 
   - [Troubleshoot](/windows/win32/wmisdk/wmi-troubleshooting) WMI.
 
-  - [Troubleshoot](https://docs.microsoft.com/en-us/previous-versions/tn-archive/ff406382(v=msdn.10)) problems with WMI scripts and services.
+  - [Troubleshoot](https://docs.microsoft.com/previous-versions/tn-archive/ff406382(v=msdn.10)) problems with WMI scripts and services.
 
 - On the guest VM, ensure that you have the latest version of Integration Services and it is running. Microsoft recommends keeping integration services up-to-date.
 
@@ -267,8 +267,8 @@ In some scenarios, failover requires additional processing that takes around 8 t
 
 - VMware VMs that don't have the following boot drivers: storvsc, vmbus, storflt, intelide, atapi.
 
-> [!NOTE]
-> Don’t cancel a failover in progress. If you cancel a failover in progress, the VM won’t replicate again.
+NOTE: Don’t cancel a failover in progress. If you cancel a failover in progress, the VM won’t replicate again.
+
 
 If you have problems, try the following troubleshooting steps:
 
@@ -280,7 +280,7 @@ If you have problems, try the following troubleshooting steps:
 
 - Check that two VMs don’t have the same UUID. Refer to [Azure Site Recovery VMware-to-Azure: How to clean up duplicate or stale entries](https://social.technet.microsoft.com/wiki/contents/articles/32026.asr-vmware-to-azure-how-to-clean/icatestale-entries.aspx).
 
-1. Ensure the **vCenter credentials** are correct when you set up the configuration server, by using the OVF template or unified setup. To verify the credentials, see [Modify credentials for automatic discovery](https://docs./ft.com/en-us/azure/site-recovery/vmware-azure-manage-configuration-server).
+1. Ensure the **vCenter credentials** are correct when you set up the configuration server, by using the OVF template or unified setup. To verify the credentials, see [Modify credentials for automatic discovery](https://docs./ft.com/azure/site-recovery/vmware-azure-manage-configuration-server).
 
 1. If insufficient permissions are provided to access vCenter, failure to discover virtual machines might occur. Ensure that the permissions described in [Prepare an account for automatic discovery](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises) are added to the vCenter user account.
 
@@ -290,7 +290,7 @@ If you have problems, try the following troubleshooting steps:
 
 1. Check if vCenter is in connected state. To verify, go to **Recovery Services vault** > **Site Recovery Infrastructure** > **Configuration Servers** > **Click on respective configuration server**. A blade opens on the right with details of associ/rvers. Check if vCenter is connected. If it's in a "Not Connected" state, resolve the issue and then [refresh the configuration server](/azure/site-recovery/vmware-azure-manage-configuration-server) on the portal. After this, virtual machine will be listed on the portal.
 
-1. If the ESXi host under which the VM resides is in powered off state, then virtual machine will not be listed or will not be selectable on the Azure portal. Power on the ESXi host, an/esh the configuration server](<https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-manage-configuration-server>) on the portal. After this, virtual machine will be listed on the portal.
+1. If the ESXi host under which the VM resides is in powered off state, then virtual machine will not be listed or will not be selectable on the Azure portal. Power on the ESXi host, an/esh the configuration server](<https://docs.microsoft.com/azure/site-recovery/vmware-azure-manage-configuration-server>) on the portal. After this, virtual machine will be listed on the portal.
 
 1. If there is a pending reboot, you will not be able to select the VM on the Azure portal. Complete the pending reboot and [refresh the configuration server](/azure/site-recovery/vmware-azure-manage-configuration-server). Th/ould then be listed on the portal.
 
@@ -302,7 +302,7 @@ A System Center Configuration Manager (SCCM) site recovery is needed if a site f
 
 If you experience problems, try the following troubleshooting issues:
 
-1. Check that previous configurations are not on the site server, as this can cause conflicts. Remove previous configurations before restoring Configuration Manager:
+####Check that previous configurations are not on the site server, as this can cause conflicts. Remove previous configurations before restoring Configuration Manager:
 
 - Restoring to a new server.
 
@@ -310,7 +310,7 @@ If you experience problems, try the following troubleshooting issues:
 
 - Cleaning an existing server, including deleting registry entries starting with SMS from HKLM\System\CurrentControlSet\Services.
 
-1. For site database recovery only before restoring Configuration Manager:
+####For site database recovery only before restoring Configuration Manager:
 
 - Back up the site database, including supporting databases such as WSUS.
 
@@ -320,7 +320,7 @@ If you experience problems, try the following troubleshooting issues:
 
 - Restart the SQL Server.
 
-1. Clean an existing server for full recovery before restoring Configuration Manager:
+####Clean an existing server for full recovery before restoring Configuration Manager:
 
 - Back up the site database, including supporting databases such as WSUS.
 
@@ -336,7 +336,7 @@ If you experience problems, try the following troubleshooting issues:
 
 - Restore the content library and other databases like WSUS.
 
-1. Use a supported version and the same edition of SQL Server:
+####Use a supported version and the same edition of SQL Server:
 
 - Check that the version of SQL Server is both supported, and the same edition as the original. Restoring to a newer version of SQL Server is supported, providing you don’t change the edition—you can restore Standard to Standard and Enterprise to Enterprise.
 
@@ -344,11 +344,11 @@ If you experience problems, try the following troubleshooting issues:
 
 - Make sure the MDF and LDF files are valid. When you recover a site, there's no check for the state of the files.
 
-1. SQL Server Always On availability groups:/
+####SQL Server Always On availability groups:/
 
 - If you use SQL Server Always On availability groups to host the site database, modify your recovery plans as described in [Prepare to use SQL Server Always On](/mem/configmgr/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database).
 
-1. Database replicas:
+####Database replicas:
 
 - After you restore a site database that you configured for database replicas, reconfigure each replica. Before you can use the database replicas, recreate both the publications and subscriptions.
 

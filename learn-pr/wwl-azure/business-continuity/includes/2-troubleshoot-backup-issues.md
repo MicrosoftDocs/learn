@@ -1,12 +1,12 @@
 ## Review backup status in the Azure portal
 
-The Azure Backup Centre is a one-stop location to manage Azure backups including:
+The Azure Backup Center is a one-stop location to manage Azure backups including:
 
 - Azure VM backup
 
 - SQL in Azure VM backup
 
-- SAPA HANA in Azure VM backup
+- SAP HANA in Azure VM backup
 
 - Azure Files backup
 
@@ -16,7 +16,7 @@ The Azure Backup Centre is a one-stop location to manage Azure backups including
 
 - Azure Database for PostgreSQL Server backup
 
-For information about supported scenarios, see thr  [Support matrix for Backup center](/azure/backup/backup-center-support-matrix).
+For information about supported scenarios, see the  [Support matrix for Backup center](/azure/backup/backup-center-support-matrix).
 
 In the Azure portal, search for Backup center in the Search bar. You can then pin the Backup center to your dashboard. Use the filter options to view the specific jobs you are interested in. You can filter on the following parameters:
 
@@ -66,7 +66,7 @@ You can get email notifications when alerts are triggered by creating an alert p
 
 - From the left menu, select Alerts (Preview)**.**
 
-- From the top menu, **s**elect Alert processing rules (preview).
+- From the top menu, select Alert processing rule (preview).
 
 - From the top menu, select Create.
 
@@ -114,7 +114,8 @@ The following views are available from the tabs:
 
 - Policy adherence – success of backups per day for every backup instance.
 
-![Backup reports](../media/m01backupreports.png)
+
+:::image type="content" source="<folderPath>" alt-text="Backup Report" link="/Modules/M01-business-continuity/media/M01backupcenter.png":::
 
 ## Troubleshooting backups with Microsoft Azure Recovery Services (MARS)
 
