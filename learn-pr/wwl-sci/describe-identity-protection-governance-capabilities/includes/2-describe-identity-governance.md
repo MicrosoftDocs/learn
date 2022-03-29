@@ -27,7 +27,7 @@ For many organizations, this identity lifecycle for employees is tied to the rep
 
 Azure AD Premium offers integration with cloud-based HR systems.  When a new employee is added to an HR system, Azure AD can create a corresponding user account. Similarly, when their properties, such as department or employment status, change in the HR system, synchronization of those updates to Azure AD ensures consistency.
 
-Azure AD Premium also includes Microsoft Identity Manager, which can import records from on-premises HR systems such as SAP HCM, Oracle eBusiness, and Oracle PeopleSoft. For more information, refer to the Microsoft Identity Manager documentation that is listed in the Learn More section of the Summary and resources unt.
+Azure AD Premium also includes Microsoft Identity Manager, which can import records from on-premises HR systems such as SAP HCM, Oracle eBusiness, and Oracle PeopleSoft. For more information, refer to the Microsoft Identity Manager documentation that is listed in the Learn More section of the Summary and resources unit.
 
 In general, managing the lifecycle of an identity is about updating the access that users need, whether through integration with an HR system, or through the user provisioning applications.
 
