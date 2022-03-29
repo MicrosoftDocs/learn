@@ -3,7 +3,7 @@ uid: learn.wwl.manage-usage-billing-for-azure-stack-hub
 metadata:
   title: Manage usage and billing for Azure Stack Hub
   description: "Manage usage and billing for Azure Stack Hub"
-  ms.date: 12/10/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   * Conceptual knowledge of governance policies, resource organization, and subscription management.
   * Working experience with organizing resources, applying governance policies, and enforcing compliance requirements.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/5-manage-usage-and-billing-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:
