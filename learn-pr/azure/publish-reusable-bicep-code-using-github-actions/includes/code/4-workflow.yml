@@ -2,6 +2,7 @@ name: template-spec-linux-app-service
 concurrency: template-spec-linux-app-service
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
