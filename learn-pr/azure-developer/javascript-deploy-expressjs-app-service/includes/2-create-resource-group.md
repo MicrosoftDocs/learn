@@ -58,7 +58,7 @@ Because a subscription has a limited number of allowed tags (50), complex data f
 **Don't use tags** for:
 * Secrets because tags aren't guaranteed to be secure. 
 
-## Use the Learn Sandbox?
+## Use the Learn Sandbox
 
 This module uses the Learn sandbox with a **4-hour subscription**. The subscription and its resources are deleted after that time period.  
 

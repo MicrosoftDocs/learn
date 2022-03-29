@@ -7,7 +7,7 @@ In this exercise, you need to:
 
 ## Sign into the Learn sandbox
 
-Use the **Sign in to activate sandbox** button to sign in. 
+Use the **Sign in to activate sandbox** button to sign in. This may include reviewing permissions. When you see **Sandbox activated!** with a time remaining on this page, this step is complete.
 
 Make sure you use the same account to sign into the sandbox and Azure from Visual Studio Code. 
 

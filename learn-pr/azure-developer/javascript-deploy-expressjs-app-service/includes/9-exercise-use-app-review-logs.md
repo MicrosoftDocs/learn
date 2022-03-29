@@ -9,7 +9,7 @@ In this exercise, you need to:
 ## View the app
 
 1. In Visual Studio Code, use the key combination to open the **Azure** sidebar: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
-1. Right-click on your App Service resource and select **Browser website**.
+1. Right-click on your App Service resource and select **Browse website**.
 1. The Express.js web app should display successfully. You can add, edit, and delete properties in the web site. 
 1. The data is loaded in memory, if you want to refresh the data, go back to the Azure sidebar, right-click on your App Service and select **Restart**.
 1. Spend a few minutes using the website. 
@@ -57,8 +57,9 @@ The App Service keeps logs in the hosting environment, which you can use to reso
     :::image type="content" source="../media/azure-application-insights-failures.png" alt-text="Screenshot of web browser showing Azure portal with Application Insights resource listing of web app failures, including 404, file not found." lightbox="../media/azure-application-insights-failures.png":::
 
 
+    If the graph doesn't show errors, wait a couple of minutes and try again by selecting **Refresh**. 
 
-<!--
+
 ## Create a 404 alert
 
 1. Still in the web browser for your Application Insights resource, select **Monitoring > Alerts**. 
@@ -108,7 +109,7 @@ The App Service keeps logs in the hosting environment, which you can use to reso
     DO NOT USE THIS SETTING IN PRODUCTION.
 
 1. Once the condition is created, the **Estimated monthly cost** is calculated for you on the **Create an alert rule** panel.
-1. 1. On the **Create an alert rule** panel, select the **Details** panel, use the following table to finish configuring the details: 
+1.  On the **Create an alert rule** panel, select the **Details** panel, use the following table to finish configuring the details: 
 
     |Setting|Value|
     |--|--|
@@ -118,7 +119,7 @@ The App Service keeps logs in the hosting environment, which you can use to reso
     Don't change any other settings.
 
 1. On the **Create an alert rule** panel, select the **Review + create** button at the bottom of the panel.
--->
+
 
 ## Check your work
 
