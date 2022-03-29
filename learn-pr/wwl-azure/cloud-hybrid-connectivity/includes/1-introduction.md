@@ -18,4 +18,4 @@ By the end of this module, you will be able to:
 
 - Demonstrate an understanding of PowerShell.
 
-- Know how to run cloud shell to run commands.
+- Know how to run Cloud Shell to run commands.

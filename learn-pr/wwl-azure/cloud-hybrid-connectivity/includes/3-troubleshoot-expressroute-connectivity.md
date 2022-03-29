@@ -2,7 +2,7 @@ ExpressRoute works over a private fiber-optic connection to provide a fast conne
 
 The following diagram shows connectivity between your network (Customer network) and Azure (Microsoft Datacenter):
 
-:::image type="content" source="../media/1-connectivity.png" alt-text="Diagram of connectivity between your network (Customer network) and Azure (Microsoft Datacenter)":::
+![connectivity between your network (Customer network) and Azure (Microsoft Datacenter)](../media/1-connectivity.png)
 
 Before you can use ExpressRoute, you must have an active Microsoft Azure account.
 
@@ -10,7 +10,9 @@ If you also want to connect to Microsoft 365 services, you will need at least on
 
 You will also need to work with a service provider to manage the private connection.
 
-| Subscription required| Microsoft Azure only| Microsoft Azure and Microsoft 365|
+| Subscription required| Microsoft Azure only| Microsoft Azure and
+
+Microsoft 365|
 | :--- | :--- | :--- |
 | Microsoft Azure account| (| (|
 | Microsoft 365| (| (|

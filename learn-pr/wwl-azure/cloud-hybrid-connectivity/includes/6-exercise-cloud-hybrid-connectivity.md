@@ -87,5 +87,4 @@ The **Traffic forwarded from remote virtual network** must be set to **Allow**.
 
 It should now be possible on VM1 to ping VM2.
 
-> [!NOTE]
-> There will be a short delay before the new settings take effect. If the ping fails at first, try again.
+NOTE: There will be a short delay before the new settings take effect. If the ping fails at first, try again.

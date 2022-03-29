@@ -149,7 +149,7 @@ tcping64.exe -t <destination VM address> 3389
 
       1. After the **TcpPing** is complete, stop the network trace on the destination. If packets arrive from the source, there is no networking issue. Examine both the VM firewall and the application listening on that port to locate the configuration issue.
 
-> **NOTE**: You can't connect to the following resource types over global virtual network peering (virtual networks in different regions):
+ **NOTE**: You can't connect to the following resource types over global virtual network peering (virtual networks in different regions):
 
 - VMs behind Basic ILB SKU
 
