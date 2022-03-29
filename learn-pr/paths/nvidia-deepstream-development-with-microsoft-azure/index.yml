@@ -9,6 +9,10 @@ metadata:
   ms.author: pdecarlo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.contributors:
+  - pdecarlo-01212022
+  ms.custom:
+  - team=cloud_advocates
 title: NVIDIA DeepStream development with Microsoft Azure
 prerequisites: |
   - Knowledge of containers  
