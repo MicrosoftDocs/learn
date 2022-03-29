@@ -40,8 +40,10 @@ units:
 - learn.secure-aspnet-core-identity.3-add-identity
 - learn.secure-aspnet-core-identity.identity-customizations
 - learn.secure-aspnet-core-identity.4-customize-identity
-- learn.secure-aspnet-core-identity.5-multi-factor-authentication
-- learn.secure-aspnet-core-identity.6-claims-policy-authorization
+- learn.secure-aspnet-core-identity.multi-factor-authentication
+- learn.secure-aspnet-core-identity.configure-multi-factor-authentication
+- learn.secure-aspnet-core-identity.claims-policy-authorization
+- learn.secure-aspnet-core-identity.enable-claims-policy-authorization
 - learn.secure-aspnet-core-identity.8-summary
 badge:
   uid: learn.secure-aspnet-core-identity.badge

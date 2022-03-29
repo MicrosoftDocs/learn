@@ -40,3 +40,7 @@ Using the *.devcontainer* requires only:
 * [Docker Desktop](https://www.docker.com)
 
 You can also use the *.devcontainer* without **any** local tools using [GitHub Codespaces](https://github.com/features/codespaces).
+
+## Get started
+
+In the next unit, you'll learn about ASP.NET Core Identity architecture.

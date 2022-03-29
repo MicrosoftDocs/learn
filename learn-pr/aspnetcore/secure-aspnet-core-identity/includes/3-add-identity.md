@@ -44,9 +44,9 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
     > [!IMPORTANT]
     > If you're using the *.devcontainer* in Docker, the SSL certificate from inside the container won't be trusted by your browser. To view the web app, you must do **one** of the following:
     >
-    > * Ignore the certificate error and select **Continue to localhost (not recommended)**. Exact wording may vary by browser.
+    > * Ignore the certificate error. If using Microsoft Edge, select **Advanced** and **Continue to localhost (not recommended)**. Details vary by browser.
     > * Save the certificate and add it to your trusted certificate authorities.
-    > * Import an existing development certificate inside the container. For more details, see the comments in *./devcontainer/devcontainter.json*.
+    > * Import an existing development certificate inside the container. For more details, see the generated comments in *./devcontainer/devcontainter.json*.
     >
     > If you choose to import an existing development certificate inside the container, the container path */root/.aspnet/* is exposed as *.devcontainer\persisted-data\.aspnet* outside the container. This is for your convenience.
     >
@@ -202,12 +202,11 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
           );
     ```
 
-1. The SQL Server extension was added to Visual Studio Code (if needed) when you opened the project. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>D</kbd> to switch to the SQL Server pane.
-
+1. The SQL Server extension was added to Visual Studio Code (if needed) when you accepted the recommended extensions. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>D</kbd> to switch to the SQL Server pane.
 1. Expand the nodes under the existing database connection. Expand the **Databases** node, the **RazorPagesPizza** node, and finally the **Tables** node.
 1. Note the list of tables. This confirms the migration succeeded.
 
-    :::image type="content" source="../media/sql-server-successful-migration.png" alt-text="The RazorPagesPizza database with the newly created tables" lightbox="../media/sql-server-successful-migration.png":::
+    :::image type="content" source="../media/sql-server-successful-migration.png" alt-text="The RazorPagesPizza database with the newly created tables. Pictured is using SQL Server Express LocalDB. In the .devcontainer, the top node will display \"mssql-container\"" lightbox="../media/sql-server-successful-migration.png":::
 
 ## Add the login and registration links
 
@@ -250,4 +249,4 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
 
 ## Summary
 
-In this unit, you added the default Identity implementation to an existing web app. In the next unit, you'll customize the Identity implementation.
+In this unit, you added the default Identity implementation to an existing web app. In the next unit, you'll learn about extending and customizing Identity.

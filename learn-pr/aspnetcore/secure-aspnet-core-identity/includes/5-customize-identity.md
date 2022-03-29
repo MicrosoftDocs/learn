@@ -245,7 +245,7 @@ In order to send the confirmation email, you need to create an implementation of
     Navigate to the URL with <kbd>Ctrl</kbd>+*click*. The confirmation screen displays.
 
 1. Click **Login** and log in with the new user. The app's header now contains **Hello, [First name] [Last name]!**.
-1. In the **SQL Server** pane, right-click on the **RazorPagesPizza** database and select **New query**. In the tab that appears, enter the following query and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to run it.
+1. In the **SQL Server** pane in Code, right-click on the **RazorPagesPizza** database and select **New query**. In the tab that appears, enter the following query and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to run it.
 
     ```sql
     SELECT UserName, Email, FirstName, LastName FROM dbo.AspNetUsers
@@ -273,8 +273,8 @@ In order to send the confirmation email, you need to create an implementation of
 
     The app's header updates to **Hello, [First name] [Last name]!**.
 
-1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane to stop the app.
+1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane in Code to stop the app.
 
 ## Summary
 
-In this unit, you customized Identity to store custom user information. You also customized the confirmation email. In the next unit, you'll learn about implementing multi-factor authentication with Identity.
+In this unit, you customized Identity to store custom user information. You also customized the confirmation email. In the next unit, you'll learn about implementing multi-factor authentication in Identity.

@@ -16,4 +16,4 @@ When customizing the UI, you must first use the `aspnet-codegenerator` tool agai
 
 ## Summary
 
-In this unit, you learned about customizing ASP.NET Core Identity. In the next unit, you will apply these learnings to customize the Identity UI.
+In this unit, you learned about extending and customizing ASP.NET Core Identity. In the next unit, you will customize the Identity UI.

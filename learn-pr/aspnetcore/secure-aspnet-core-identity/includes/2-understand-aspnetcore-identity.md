@@ -8,7 +8,7 @@ As an alternative to local account creation, Identity supports external login pr
 
 Membership data is persisted using a data store and data access technology of your choosing. The default data access technology is an Object-Relational Mapper (O/RM) called Entity Framework (EF) Core. The default data store is SQL Server.
 
-The intricacies of interacting with the underlying database are abstracted away by EF Core. Therefore, EF Core generally makes it possible to use any of its database providers with Identity. Database providers are available for PostgreSQL, SQLite, and several other data stores. PostgreSQL, however, is a third-party provider and is therefore not eligible for support from Microsoft. Identity also provides the flexibility to use a data access technology of your choosing. Dapper is one popular alternative.
+The intricacies of interacting with the underlying database are abstracted away by EF Core. Therefore, EF Core generally makes it possible to use any of its database providers with Identity. Database providers are available for SQL Server, SQLite, and several other data stores. Identity also provides the flexibility to use a data access technology of your choosing. Dapper is one popular alternative.
 
 The following diagram depicts the Identity architecture used in this module:
 
@@ -23,12 +23,11 @@ In the preceding diagram:
 
 After applying the initial EF Core migration, the supporting database tables are created. The following diagram depicts the schemas of the supporting tables:
 
-<!-- TODO: Replace with Mermaid diagram -->
 :::image type="content" source="../media/identity-tables.png" alt-text="Identity database schema" lightbox="../media/identity-tables.png":::
 
-  > [!NOTE]
-  > The above image shows the key(s) and relationships in the database. The key is a one, and the infinity (sideways 8) is a many. A database can have one-to-one, one-to-many, and many-to-many relationship types. Keys are unique. The diagram shows how these joins are created, and the relationships.
+> [!NOTE]
+> The above image shows the key(s) and relationships in the database. The key is a one, and the infinity (sideways 8) is a many. A database can have one-to-one, one-to-many, and many-to-many relationship types. Keys are unique. The diagram shows how these joins are created, and the relationships.
 
-## Get started
+## Summary
 
-In the next unit, you'll add the default ASP.NET Core Identity implementation to an existing app.
+In this unit, you learned about ASP.NET Core Identity architecture. In the next unit, you'll add the default ASP.NET Core Identity implementation to an existing app.
