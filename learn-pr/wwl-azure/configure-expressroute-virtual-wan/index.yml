@@ -3,7 +3,7 @@ uid: learn.wwl.configure-expressroute-virtual-wan
 metadata:
   title: Configure ExpressRoute and Virtual WAN
   description: "You will learn how to configure ExpressRoute and Virtual WAN to provide connection services."
-  ms.date: 12/17/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

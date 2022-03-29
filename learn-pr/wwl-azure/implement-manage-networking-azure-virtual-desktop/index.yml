@@ -3,7 +3,7 @@ uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop
 metadata:
   title: Implement and manage networking for Azure Virtual Desktop
   description: "Implement and manage networking for Azure Virtual Desktop"
-  ms.date: 12/06/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *  Configure Azure Virtual Desktop session hosts using Microsoft Bastion.
   *  Monitor communication between a virtual machine and an endpoint.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-implement-and-manage-networking-for-azure-virtual-desktop.svg
 levels:
 - intermediate
 roles:

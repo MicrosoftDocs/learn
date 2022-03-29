@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints
 metadata:
   title: Manage Azure Stack Hub by using privileged endpoints
   description: "Manage Azure Stack Hub by using privileged endpoints"
-  ms.date: 12/09/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   * Working experience creating, assigning, and securing corporate identities.
   * Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/6-manage-azure-stack-hub-by-using-privileged-endpoints.svg
 levels:
 - advanced
 roles:
