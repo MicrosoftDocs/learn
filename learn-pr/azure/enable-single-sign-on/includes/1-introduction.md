@@ -1,4 +1,4 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+<!-- 1. Article sentences --------------------------------------------------------------------------------
 
     Goal: orient the learner to the area covered in this module
 
@@ -6,11 +6,13 @@
 
     Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
 
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
+    Recommended: visual like an image, table, list, etc. that supports the article sentence(s)
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
+
+TODO: add your article sentences
+
 TODO: add a visual element
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
@@ -28,7 +30,9 @@ TODO: add a visual element
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
     [Scenario video guidance](TBD)
  -->
+
 ## Example scenario
+
 TODO: add your scenario
 TODO: add a visual element
 
@@ -44,7 +48,9 @@ TODO: add a visual element
                 * **Route**: branch based on the sentiment score"
 
  -->
+
 ## What will we be doing?
+
 TODO: add your activities
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
@@ -56,7 +62,9 @@ TODO: add your activities
     Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
 
  -->
+
 ## What is the main goal?
+
 By the end of this session, you'll be able to (TODO)
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

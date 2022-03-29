@@ -1,5 +1,4 @@
-# Heading
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+<!-- 1. Article sentences --------------------------------------------------------------------------------
 
     Goal: briefly summarize the key skill this unit will teach
 
@@ -9,26 +8,29 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+TODO: add your article sentences
+
+<!-- 2. Scenario subtask --------------------------------------------------------------------------------
 
     Goal: Describe the part of the scenario that will be solved by the content in this unit
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+    Heading: none, combine this with the article sentence into a single paragraph
 
     Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
 -->
-TODO: add your scenario sub-task
+
+TODO: add your scenario subtask
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
     Goal: State concisely what's covered in this unit
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+    Heading: none, combine this with the article sentence into a single paragraph
 
     Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
 -->
+
 TODO: write your prose table-of-contents
 
 <!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
@@ -37,11 +39,12 @@ TODO: write your prose table-of-contents
 
     Heading: none
 -->
+
 TODO: add a visual element
 
 <!-- 5. Chunked content-------------------------------------------------------------------------------------
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+    Goal: Provide all the information the learner needs to perform this subtask.
 
     Structure: Break the content into 'chunks' where each chunk has three things:
         1. An H2 or H3 heading describing the goal of the chunk

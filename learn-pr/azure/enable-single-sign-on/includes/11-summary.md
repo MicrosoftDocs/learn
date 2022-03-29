@@ -8,6 +8,7 @@
 
     [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=main)
 -->
+
 TODO: restate the scenario problem
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
@@ -24,6 +25,7 @@ TODO: restate the scenario problem
         * Replaced fire-industry jargon with everyday words, which made the instructions accessible to a wider audience.
         * Replaced a comma-delimited list with a bulleted list, which made the steps to activate the fire extinguisher easier to follow."
  -->
+
 TODO: add your lead-in sentence(s)
 TODO: add your list of techniques used to solve the scenario problem
 
@@ -36,6 +38,7 @@ TODO: add your list of techniques used to solve the scenario problem
     Example: "Fire extinguishers are critical safety equipment for both homes and businesses. Despite their importance, many customers don't read the instructions ahead of time. Confusing instructions could mean customers don't use the extinguisher correctly when they're needed. This can result in loss of property or life."
 
  -->
+
 TODO: describe the experience without the product
 
 <!-- 4. Describe the business impact ----------------------------------------------------
@@ -46,6 +49,7 @@ TODO: describe the experience without the product
 
     Example: "The test for effective instructions is whether customers can use your extinguishers correctly during an emergency. Users that fail might blame the instructions or the product. In either case, it's not good for business. On the other hand, successful customers are likely to share their stories and become advocates for your product."
  -->
+
 TODO: describe the business impact
 
 <!-- 5. References (optional) ----------------------------------------------------

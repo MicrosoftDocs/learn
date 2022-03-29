@@ -30,11 +30,11 @@ products:
 - azure-active-directory
 units:
 - learn.enable-single-sign-on.introduction
-- learn.enable-single-sign-on.identify-an-application-that-supports-sso
-- learn.enable-single-sign-on.exercise-add-an-sso-supported-application
-- learn.enable-single-sign-on.identify-sso-properties-for-an-application
-- learn.enable-single-sign-on.exercise-configure-sso-in-the-azure-portal
-- learn.enable-single-sign-on.discover-sso-configuration-at-the-application-host
+- learn.enable-single-sign-on.identify-sso-supported-application
+- learn.enable-single-sign-on.exercise-add-sso-supported-application
+- learn.enable-single-sign-on.identify-application-sso-properties
+- learn.enable-single-sign-on.exercise-configure-sso-azure-portal
+- learn.enable-single-sign-on.discover-sso-configuration-application-host
 - learn.enable-single-sign-on.exercise-configure-sso-at-the-application-host
 - learn.enable-single-sign-on.verify-sso-property-configuration
 - learn.enable-single-sign-on.exercise-test-sso

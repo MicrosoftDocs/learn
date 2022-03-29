@@ -3,7 +3,7 @@ uid: learn.enable-single-sign-on.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
+  title: Introduction
   description: "Define the URLs that are necessary for secure access, create a signing certificate, and configure single sign-on properties for the application. When the user attempts to sign in, the appropriate URLs are accessed to enable them to use the same credentials to sign in to all the applications they need."
   ms.date: 3/23/2022
   author: davidmu1
