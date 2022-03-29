@@ -1,5 +1,5 @@
 #region snippet_LoadAsync
-private async Task LoadAsync(ContosoPetsUser user)
+private async Task LoadAsync(RazorPagesPizzaUser user)
 {
     var userName = await _userManager.GetUserNameAsync(user);
     var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
@@ -10,7 +10,7 @@ private async Task LoadAsync(ContosoPetsUser user)
     {
         PhoneNumber = phoneNumber,
         FirstName = user.FirstName,
-        LastName = user.LastName,
+        LastName = user.LastName
     };
 }
 #endregion
@@ -40,8 +40,8 @@ public async Task<IActionResult> OnPostAsync()
         var setPhoneResult = await _userManager.SetPhoneNumberAsync(user, Input.PhoneNumber);
         if (!setPhoneResult.Succeeded)
         {
-            var userId = await _userManager.GetUserIdAsync(user);
-            throw new InvalidOperationException($"Unexpected error occurred setting phone number for user with ID '{userId}'.");
+            StatusMessage = "Unexpected error when trying to set phone number.";
+            return RedirectToPage();
         }
     }
 

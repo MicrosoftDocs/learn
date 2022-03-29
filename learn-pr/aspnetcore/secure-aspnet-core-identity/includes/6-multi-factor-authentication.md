@@ -17,11 +17,11 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 1. Open *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs":::* and make the following changes and save:
     1. Add the following property to the `EnableAuthenticatorModel` class to store the QR code's base-64 string representation:
 
-        [!code-csharp[](../code/areas/identity/pages/account/manage/5-enableauthenticator.cshtml.cs?name=snippet_qrcodeasbase64&highlight=7)]
+        <!--[!code-csharp[](../code/areas/identity/pages/account/manage/5-enableauthenticator.cshtml.cs?name=snippet_qrcodeasbase64&highlight=7)]-->
 
     1. Incorporate the highlighted changes in the `OnGetAsync` page handler:
 
-        [!code-csharp[](../code/areas/identity/pages/account/manage/5-enableauthenticator.cshtml.cs?name=snippet_ongetasync&highlight=1,10)]
+        <!--[!code-csharp[](../code/areas/identity/pages/account/manage/5-enableauthenticator.cshtml.cs?name=snippet_ongetasync&highlight=1,10)]-->
 
         In the preceding page handler, parameter injection provides a reference to the `QRCodeService` singleton service. `QRCodeService` is responsible for interactions with a third-party library that generates QR codes.
 
@@ -33,7 +33,7 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml":::*, make the following highlighted changes and save:
 
-    [!code-cshtml[](../code/areas/identity/pages/account/manage/5-enableauthenticator.cshtml?highlight=4-6)]
+    <!--[!code-cshtml[](../code/areas/identity/pages/account/manage/5-enableauthenticator.cshtml?highlight=4-6)]-->
 
     The preceding markup embeds the base-64 encoded image in the page.
 

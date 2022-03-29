@@ -55,7 +55,7 @@ In this section, you're going to create and customize the Identity UI files to b
 
 1. In *:::no-loc text="Program.cs":::*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted change. (Example reformatted for readability.)
 
-    [!code-csharp[](../code/program-after-customization.cs?range=1-14&highlight=7)]
+    [!code-csharp[](../code/program-after-customization.cs?range=1-3,6-14,21-22&highlight=10-11)]
 
 1. Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to incorporate the following highlighted changes. Save your changes.
 
@@ -105,7 +105,8 @@ Now that the model changes have been made, accompanying changes must be made to 
         Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
         ALTER TABLE [AspNetUsers] ADD [LastName] nvarchar(100) NOT NULL DEFAULT N'';
     ```
-1.  Examine the database to analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema.
+
+1. Examine the database to analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema.
 
     In the **SQL Server** pane, expand the **Columns** node on the **dbo.AspNetUsers** table.
 
@@ -117,20 +118,20 @@ Now that the model changes have been made, accompanying changes must be made to 
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml":::*, add the following highlighted markup:
 
-    [!code-cshtml[](../code/areas/identity/pages/account/4-register-firstandlastname.cshtml?range=1-19&highlight=5-14)]
+    [!code-cshtml[](../code/areas/identity/pages/account/register-firstandlastname.cshtml?range=1-19&highlight=5-14)]
 
     With the preceding markup, **First name** and **Last name** text boxes are added to the user registration form.
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml.cs":::*, add support for the name text boxes.
     1. Add the `FirstName` and `LastName` properties to the `InputModel` nested class:
 
-        [!code-csharp[](../code/areas/identity/pages/account/4-register-firstandlastname.cshtml.cs?name=snippet_inputmodel&highlight=3-6,8-11)]
+        [!code-csharp[](../code/areas/identity/pages/account/register-snippets.cshtml.cs?name=snippet_inputmodel&highlight=3-6,8-11)]
 
         The `[Display]` attributes define the label text to be associated with the text boxes.
 
-    1. Modify the `OnPostAsync` method to set the `FirstName` and `LastName` properties on the `ContosoPetsUser` object. Make the following highlighted changes:
+    1. Modify the `OnPostAsync` method to set the `FirstName` and `LastName` properties on the `RazorPagesPizza` object. Add the following highlighted lines:
 
-        [!code-csharp[](../code/areas/identity/pages/account/4-register-firstandlastname.cshtml.cs?name=snippet_onpostasync&highlight=6-12)]
+        [!code-csharp[](../code/areas/identity/pages/account/register-firstandlastname.cshtml.cs?name=snippet_onpostasync&range=1-16&highlight=9-10)]
 
         The preceding change sets the `FirstName` and `LastName` properties to the user input from the registration form.
 
@@ -140,71 +141,122 @@ Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the fi
 
 [!code-cshtml[](../code/pages/shared/_loginpartial.cshtml?highlight=9-10,13)]
 
-
-TODO: WIP from here on
 ## Customize the profile management form
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/Index.cshtml":::*, add the following highlighted markup. Save your changes.
 
-    [!code-cshtml[](../code/areas/identity/pages/account/manage/4-index-firstandlastname.cshtml?range=1-16&highlight=3-12)]
+    [!code-cshtml[](../code/areas/identity/pages/account/manage/index-firstandlastname.cshtml?range=1-16&highlight=3-12)]
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/Index.cshtml.cs":::*, make the following changes to support the name text boxes.
     1. Add the `FirstName` and `LastName` properties to the `InputModel` nested class:
 
-        [!code-csharp[](../code/areas/identity/pages/account/manage/4-index.cshtml.cs?name=snippet_firstandlastnameinputmodel&highlight=3-6,8-11)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/index-snippets.cshtml.cs?name=snippet_firstandlastnameinputmodel&highlight=3-6,8-11)]
 
     1. Incorporate the highlighted changes in the `LoadAsync` method:
 
-        [!code-csharp[](../code/areas/identity/pages/account/manage/4-index.cshtml.cs?name=snippet_loadasync&highlight=10-12)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/index-snippets.cshtml.cs?name=snippet_loadasync&highlight=10-12)]
 
         The preceding code supports retrieving the first and last names for display in the corresponding text boxes of the profile management form.
 
     1. Incorporate the highlighted changes in the `OnPostAsync` method. Save your changes.
 
-        [!code-csharp[](../code/areas/identity/pages/account/manage/4-index.cshtml.cs?name=snippet_onpostasync&highlight=15-17)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/index-snippets.cshtml.cs?name=snippet_onpostasync&highlight=15-17)]
 
         The preceding code supports updating the first and last names in the database's `AspNetUsers` table.
 
 ## Configure the confirmation email sender
 
-In order to send the confirmation email, you need to create an implementation of `IEmailSender` and register it in the dependency injection system.
+In order to send the confirmation email, you need to create an implementation of <xref:Microsoft.AspNetCore.Identity.UI.Services.IEmailSender> and register it in the dependency injection system. To keep things simple, your implementation won't actually send email to an SMTP server. It'll just write the email content to the console.
 
-1. TODO: Create the class
-1. TODO: Register the DI
+1. Since you're going to view the email in plain text in the console, you should change the generated message to exclude HTML-encoded text. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, find the following code:
+
+    ```csharp
+    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
+        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+    ```
+
+    Change it to:
+
+    ```csharp
+    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
+        $"Please confirm your account by visiting the following URL:\r\n\r\n{callbackUrl}");
+    ```
+
+1. In the **Explorer** pane, right-click the *Services* folder and create a new file named *EmailSender.cs*. Open the file and add the following code:
+
+    ```csharp
+    using Microsoft.AspNetCore.Identity.UI.Services;
+    namespace RazorPagesPizza.Services;
+    
+    public class EmailSender : IEmailSender
+    {
+        public EmailSender() {}
+    
+        public Task SendEmailAsync(string email, string subject, string htmlMessage)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Email Confirmation Message");
+            Console.WriteLine("--------------------------");
+            Console.WriteLine($"TO: {email}");
+            Console.WriteLine($"SUBJECT: {subject}");
+            Console.WriteLine($"CONTENTS: {htmlMessage}");
+            Console.WriteLine();
+            
+            return Task.CompletedTask;
+        }
+    }
+    ```
+
+    The preceding code creates an implementation of <xref:Microsoft.AspNetCore.Identity.UI.Services.IEmailSender> that writes the contents of the message to the console. In a real-world implementation, `SendEmailAsync` would connect to an external mail service or some other action to send email.
+
+1. In *Program.cs*, add the highlighted lines:
+
+    [!code-csharp[](../code/program-after-customization.cs?range=1-5,7-16,22-23&highlight=4-5,16)]
+
+    The preceding registers `EmailSender` in the dependency injection system. As seen in *Register.cshtml.cs*, the page won't display the link since there's an implementation of `IEmailSender` registered.
 
 ## Test the changes to the registration form
 
-1. TODO: dotnet run
+1. Make sure you've saved all your changes.
+1. In the terminal pane, build the project and run the app:
+
+    ```dotnetcli
+    dotnet run
+    ```
+
 1. In your browser, navigate to the app. Select **Logout** if you're still logged in.
-
-    > [!TIP]
-    > If you need the URL to your app, display it with the following command:
-    >
-    > ```bash
-    > echo $webAppUrl
-    > ```
-
 1. Select **Register** and use the updated form to register a new user.
 
     > [!NOTE]
     > The validation constraints on the **First name** and **Last name** fields reflect the data annotations on the `FirstName` and `LastName` properties of `InputModel`.
 
-    After registering, you're redirected to the homepage. The app's header now contains **Hello, [First name] [Last name]!**.
-
-1. Run the following command to confirm that the first and last names are stored in the database:
-
-    ```bash
-    db -Q "SELECT UserName, Email, FirstName, LastName FROM dbo.AspNetUsers" -Y 25
-    ```
-
-    A variation of the following output displays:
+1. After registering, you're redirected to the **Register confirmation** screen. In the terminal, find the console output that resembles the following:
 
     ```console
-    UserName                  Email                     FirstName                 LastName
-    ------------------------- ------------------------- ------------------------- -------------------------
-    kai.klein@contoso.com     kai.klein@contoso.com
-    jana.heinrich@contoso.com jana.heinrich@contoso.com Jana                      Heinrich
+    Email Confirmation Message
+    --------------------------
+    TO: jana.heinrich@contoso.com
+    SUBJECT: Confirm your email
+    CONTENTS: Please confirm your account by visiting the following URL:
+    
+    https://localhost:7192/Identity/Account/ConfirmEmail?<query string removed>
     ```
+
+    Navigate to the URL with <kbd>Ctrl</kbd>+*click*. The confirmation screen displays.
+
+1. Click **Login** and log in with the new user. The app's header now contains **Hello, [First name] [Last name]!**.
+1. In the **SQL Server** pane, right-click on the **RazorPagesPizza** database and select **New query**. In the tab that appears, enter the following query and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to run it.
+
+    ```sql
+    SELECT UserName, Email, FirstName, LastName FROM dbo.AspNetUsers
+    ```
+
+    A tab with results similar to the following appears:
+
+    | UserName                  | Email                     | FirstName | LastName |
+    |---------------------------|---------------------------|-----------|----------|
+    | kai.klein@contoso.com     | kai.klein@contoso.com     |           |          |
+    | jana.heinrich@contoso.com | jana.heinrich@contoso.com | Jana      | Heinrich |
 
     The first user registered prior to adding `FirstName` and `LastName` to the schema. Consequently, the associated `AspNetUsers` table record doesn't have data in those columns.
 
@@ -220,3 +272,9 @@ In order to send the confirmation email, you need to create an implementation of
 1. Enter valid values for **First name** and **Last name**. Select **Save**.
 
     The app's header updates to **Hello, [First name] [Last name]!**.
+
+1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane to stop the app.
+
+## Summary
+
+In this unit, you customized Identity to store custom user information. You also customized the confirmation email. In the next unit, you'll learn about implementing multi-factor authentication with Identity.
