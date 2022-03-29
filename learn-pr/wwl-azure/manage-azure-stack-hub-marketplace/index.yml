@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-stack-hub-marketplace
 metadata:
   title: Manage Azure Stack Hub Marketplace
   description: "Manage Azure Stack Hub Marketplace"
-  ms.date: 12/10/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   * Conceptual knowledge of Azure compute solutions.
   * Working experience with virtual machines, containers, and app service.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-manage-azure-stack-hub-marketplace.svg
 levels:
 - advanced
 roles:
