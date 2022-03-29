@@ -11,7 +11,7 @@ on:
 
 env:
   MODULE_NAME: storage-account
-  MODULE_REGISTRY_SERVER: YOUR_LOGIN_SERVER.azurecr.io
+  MODULE_REGISTRY_SERVER: yourregistryname.azurecr.io
   MODULE_FILE_PATH: modules/storage-account/main.bicep
   MODULE_METADATA_FILE_PATH: modules/storage-account/metadata.json
 
@@ -28,15 +28,15 @@ jobs:
     needs: [ lint ]
     steps:
     - uses: actions/checkout@v2
+    - uses: azure/login@v1
+      name: Sign in to Azure
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: Get module version number
       run: |
         majorMinorVersionNumber=$(jq '(.version.major | tostring) + "." + (.version.minor | tostring)' ${{ env.MODULE_METADATA_FILE_PATH }} -r )
         versionNumber="$majorMinorVersionNumber.${{ github.run_number }}"
         echo "MODULE_VERSION=$versionNumber" >> $GITHUB_ENV
-    - uses: azure/login@v1
-      name: Sign in to Azure
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
     - uses: azure/cli@v1
       name: Publish module
       with:

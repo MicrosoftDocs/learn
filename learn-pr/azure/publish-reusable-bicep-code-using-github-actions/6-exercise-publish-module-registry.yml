@@ -10,6 +10,7 @@ metadata:
   ms.author: dapazd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
 durationInMinutes: 1
 content: |
   [!include[](includes/6-exercise-publish-module-registry.md)]

@@ -5,7 +5,7 @@ During the process, you'll:
 > [!div class="checklist"]
 > * Add a lint job to the workflow.
 > * Add a workflow job to publish the template spec.
-> * Verify that your workflow is working.
+> * Verify that your workflow runs successfully.
 > * Check the published template spec in Azure.
 
 ## Add a lint job to your workflow
@@ -18,7 +18,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
    <!-- TODO sshot -->
 
-1. At the bottom of the file, where you see a comment saying *To be added*, add the following job definition:
+1. At the bottom of the file, where you see a comment saying *To be added*, add the following *lint* job definition:
 
    :::code language="yaml" source="code/4-workflow.yml" range="17-23" :::
 
@@ -62,21 +62,23 @@ Now, you can add a second job to publish the template spec to Azure.
 
    On macOS, select **Authorize**.
 
-1. A browser window appears. You may need to sign in to GitHub again. Select **Authorize**.
+1. A browser window appears. You might need to sign in to GitHub again. Select **Authorize**.
 
-   Immediately after you push, GitHub Actions starts a new workflow run.
-
-## View the workflow run
-
-You can view the workflow run in the GitHub Actions web interface.
+## Trigger the workflow
 
 1. In your browser, select the **Actions** tab.
 
     :::image type="content" source="../media/4-action-run.png" alt-text="A screenshot showing the result of an Azure Actions workflow run.":::
 
+1. Select the **module-storage-account** workflow, then select the **Run workflow** button, and select **Run workflow**.
+
+   <!-- TODO -->
+
+   GitHub starts a new workflow run. You might need to refresh your browser window to see the run appear.
+
 1. Select the latest run in the list.
 
-    :::image type="content" source="../media/4-action-run-details.png" alt-text="A screenshot of a specific workflow run in GitHub Actions.":::
+   :::image type="content" source="../media/4-action-run-details.png" alt-text="A screenshot of a specific workflow run in GitHub Actions.":::
 
    Wait for the workflow run to finish. The template spec is published to Azure.
 

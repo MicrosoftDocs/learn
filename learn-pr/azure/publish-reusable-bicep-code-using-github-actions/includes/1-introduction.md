@@ -11,7 +11,6 @@ To make it easy for your colleagues, you've created a set of security-hardened B
 You've previously used GitHub Actions to automate the deployment of your Azure resources. Now, you want to find a way to automate the validation and publishing of your reusable Bicep code, too.
 
 :::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram that shows two GitHub Actions workflows. One publishes a complete Bicep file to a template spec, and the other published a module to a Bicep registry." border="false":::
-<!-- TODO create a new diagram to match the changes in the module -->
 
 ## What will we be doing?
 
