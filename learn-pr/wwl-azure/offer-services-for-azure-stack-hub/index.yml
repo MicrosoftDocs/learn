@@ -3,7 +3,7 @@ uid: learn.wwl.offer-services-for-azure-stack-hub
 metadata:
   title: Offer services for Azure Stack Hub
   description: "Offer services for Azure Stack Hub"
-  ms.date: 12/13/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -20,9 +20,9 @@ abstract: |
   * Manage subscriptions, plans, and offers using PowerShell for Azure Stack Hub.
   * Change user subscription owner for Azure Stack Hub.
 prerequisites: |
-  * Working experience with deploying cloud applications.
-  * Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.
-iconUrl: /learn/achievements/generic-badge.svg
+  *   Working experience with deploying cloud applications.
+  *   Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.
+iconUrl: /learn/achievements/4-offer-services-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:
