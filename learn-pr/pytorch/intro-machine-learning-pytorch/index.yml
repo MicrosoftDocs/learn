@@ -8,6 +8,10 @@ metadata:
   ms.author: ruyakubu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - sejuare-04262021
 title: Introduction to PyTorch
 summary: Learn key concepts used to build machine learning models with PyTorch.  We will train a neural network model that recognizes and classifies images.
 abstract: |

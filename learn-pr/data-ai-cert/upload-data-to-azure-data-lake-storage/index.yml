@@ -2,19 +2,20 @@
 uid: learn.data-ai.upload-data-to-azure-data-lake-storage
 metadata:
   title: Upload data to Azure Data Lake Storage
-  description: Learn about creating an Azure Data Lake Storage account and uploading data to Data Lake Storage Gen 2 through the Azure Storage Explorer.
-  ms.date: 01/31/2019
+  description: "Learn about creating an Azure Data Lake Storage account and uploading data to Data Lake Storage Gen 2 through the Azure Storage Explorer."
+  ms.date: 03/25/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Upload data to Azure Data Lake Storage
-summary: Learn various ways to upload data to Data Lake Storage Gen 2. Upload data through the Azure portal, Azure Storage Explorer, or .NET. Or copy the data in Azure Data Factory. 
-abstract: | 
+summary: Learn various ways to upload data to Data Lake Storage Gen 2. Upload data through the Azure portal, Azure Storage Explorer, or .NET. Or copy the data in Azure Data Factory.
+abstract: |
   In this module you will:
-  - Create an Azure Data Lake Storage account.
-  - Upload data to Azure Data Lake Storage Gen2 by using Azure Storage Explorer.
-prerequisites: An Azure account or active trial
+    - Create an Azure Data Lake Storage account.
+    - Upload data to Azure Data Lake Storage Gen2 by using Azure Storage Explorer.
+prerequisites: |
+  An Azure account or active trial
 iconUrl: /learn/achievements/data-ai/upload-data-to-azure-data-lake-storage-badge.svg
 levels:
 - beginner
@@ -26,8 +27,6 @@ units:
 - learn.data-ai.upload-data-to-azure-data-lake-storage.introduction
 - learn.data-ai.upload-data-to-azure-data-lake-storage.create-azure-data-lake
 - learn.data-ai.upload-data-to-azure-data-lake-storage.upload-data-using-explorer
-#- learn.data-ai.upload-data-to-azure-data-lake-storage.upload-files-with-rest-api
-#- learn.data-ai.upload-data-to-azure-data-lake-storage.copy-data-from-gen1-to-gen2
 - learn.data-ai.upload-data-to-azure-data-lake-storage.summary
 badge:
   uid: learn.data-ai.upload-data-to-azure-data-lake-storage.badge
