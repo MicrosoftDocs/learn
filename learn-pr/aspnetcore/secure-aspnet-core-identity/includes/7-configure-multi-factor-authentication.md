@@ -2,11 +2,11 @@ In the previous unit, you learned how ASP.NET Core Identity implements TOTP for 
 
 ## Generating QR codes
 
-Multiple strategies exist for generating the QR code. An example in the documentation includes [using a third-party JavaScript library](/aspnet/core/security/authentication/identity-enable-qrcodes). In this unit, however, a third-party NuGet package is used to generate the QR code with C#. The resulting QR code image is injected into an HTML placeholder element as a base-64 encoded string.
+Multiple strategies exist for generating the QR code. An example in the documentation includes [using a client-side JavaScript library](/aspnet/core/security/authentication/identity-enable-qrcodes). In this unit, however, a third-party NuGet package is used to generate the QR code with C# on the server. The resulting QR code image is injected into an HTML placeholder element as a base-64 encoded string.
 
 ## Add a QR code service
 
-Let's build everything you need to generate QR codes on the server.
+Let's build everything you need to generate QR codes on the **Configure authenticator app** form.
 
 WIP:
 
@@ -16,8 +16,8 @@ WIP:
 
 * The NuGet package, `QRCoder`, has already been installed in the project.
 * All interactions with the `QRCoder` library are abstracted away in the *:::no-loc text="Services/QRCodeService.cs":::* file. The `QRCodeService` class:
-    * Uses constructor injection to gain access to an instance of the library's `QRCodeGenerator` class.
-    * Exposes the `GetQRCodeAsBase64` method to return the base-64 encoded string. The QR code dimensions are determined by the integer value passed to `GetGraphic`. In this case, the generated QR code will be composed of blocks sized four pixels squared.
+  * Uses constructor injection to gain access to an instance of the library's `QRCodeGenerator` class.
+  * Exposes the `GetQRCodeAsBase64` method to return the base-64 encoded string. The QR code dimensions are determined by the integer value passed to `GetGraphic`. In this case, the generated QR code will be composed of blocks sized four pixels squared.
 * `QRCodeService` is registered as a singleton service in the IoC container within *:::no-loc text="Startup.cs":::*.
 
 ## Customize multi-factor authentication
