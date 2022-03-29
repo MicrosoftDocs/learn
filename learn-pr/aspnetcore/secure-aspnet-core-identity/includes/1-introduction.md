@@ -28,7 +28,7 @@ Before you start, ensure you have the following tools installed:
 
 * [Visual Studio Code](https://code.visualstudio.com)
 * [.NET 6 SDK](https://dotnet.microsoft.com/download)
-* [SQL Server Express LocalDB](https://docs.microsoft.com/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver15)
+* [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb)
 * [Git CLI](https://git-scm.com/docs/gitcli)
 
 Alternatively, this module includes a *[.devcontainer](https://code.visualstudio.com/docs/remote/create-dev-container)* file. The *.devcontainer* file defines a container pre-configured with the .NET 6 SDK and SQL Server. We recommend this approach for the best experience.

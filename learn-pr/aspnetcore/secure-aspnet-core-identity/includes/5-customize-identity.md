@@ -59,7 +59,7 @@ In this section, you're going to create and customize the Identity UI files to b
 
 1. Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to incorporate the following highlighted changes. Save your changes.
 
-    [!code-cshtml[](../code/pages/shared/loginpartial.cshtml?range=1-6&highlight=2-4)]
+    [!code-cshtml[](../code/pages/shared/_loginpartial.cshtml?range=1-6&highlight=2-4)]
 
     The preceding changes update the user type passed to both `SignInManager<T>` and `UserManager<T>` in the `@inject` directives. Instead of the default `IdentityUser` type, `RazorPagesPizzaUser` user is now referenced. The `@using` directive was added to resolve the `RazorPagesPizzaUser` references.
 
@@ -131,7 +131,7 @@ Now that the model changes have been made, accompanying changes must be made to 
 
     1. Modify the `OnPostAsync` method to set the `FirstName` and `LastName` properties on the `RazorPagesPizza` object. Add the following highlighted lines:
 
-        [!code-csharp[](../code/areas/identity/pages/account/register-firstandlastname.cshtml.cs?name=snippet_onpostasync&range=1-16&highlight=9-10)]
+        [!code-csharp[](../code/areas/identity/pages/account/register-snippets.cshtml.cs?name=snippet_onpostasync&range=1-16&highlight=9-10)]
 
         The preceding change sets the `FirstName` and `LastName` properties to the user input from the registration form.
 
