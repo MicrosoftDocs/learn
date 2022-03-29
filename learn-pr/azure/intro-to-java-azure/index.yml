@@ -12,7 +12,6 @@ metadata:
   - team=cloud_advocates
   ms.contributors:
   - sakriema-01262021
-  - aapowell-09102021
 title: Introduction to Java on Azure
 summary: In this module, we discuss Java's various frameworks and architectures. We then give an overview of typical deployment offers for your Java solutions on Azure.
 abstract: |
