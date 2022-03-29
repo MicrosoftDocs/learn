@@ -92,22 +92,21 @@ In the Azure portal, select your virtual network, select **Subnets**, and then s
 
 When you create your virtual network gateway, gateway VMs are deployed to the gateway subnet and configured with the required ExpressRoute gateway settings.
 
-> [!NOTE]
-> NOTE: It can take up to 45 minutes for the gateway to be created and ready for use.
+>NOTE: It can take up to 45 minutes for the gateway to be created and ready for use.
 
 ## Determine whether an ExpressRoute circuit is operational
 
 In the Azure portal, view existing ExpressRoute circuits by selecting **All services** > **Networking** > **ExpressRoute** circuits from the left menu.
 
-![Screenshot of Expressroute circuits settings](../media/1-expressroutecircuits.png)
+:::image type="content" source="../media/1-expressroutecircuits.png" alt-text="Screenshot of Expressroute circuits settings":::
 
 All ExpressRoute circuits created in the subscription will appear here.
 
-![Screenshot of Expressroute circuits list](../media/1-expressroutecircuitlist.png)
+:::image type="content" source="../media/1-expressroutecircuitlist.png" alt-text="Screenshot of Expressroute circuits list":::
 
 To make the circuit operational, you must send the service key to the service provider. Each service key is specific to one circuit. Select the relevant circuit, and on the **Overview** page find the service key field for your provider.
 
-![Screenshot of service key field](../media/1-servicekeyfield.png)
+:::image type="content" source="../media/1-servicekeyfield.png" alt-text="Screenshot of service key field":::
 
 The **Provider status** displays the state of provisioning on the service-provider side.
 
@@ -146,7 +145,7 @@ The peerings are configured by your service provider. If the peering in the port
 
 The status of an ExpressRoute circuit peering can be checked in the Azure portal, on the ExpressRoute Circuit **Overview** page. Any ExpressRoute peerings are displayed under the **Peerings** section.
 
-![Screenshot of Expressroute peerings](../media/1-peerings.png)
+:::image type="content" source="../media/1-peerings.png" alt-text="Screenshot of Expressroute peerings":::
 
 In the screenshot above, Azure private peering is provisioned, but Azure public and Microsoft peerings are not. A successfully provisioned peering would also have the primary and secondary point-to-point subnets listed. 
 
@@ -174,21 +173,21 @@ You can validate that routes are live and configurated correctly by testing peer
 
 1. Select the **Connectivity issues**, under **Common Problems**.
 
-![Screenshot of connectivity issues](../media/1-connectivityissues.png)
+:::image type="content" source="../media/1-connectivityissues.png" alt-text="Screenshot of connectivity issues":::
 
 1. In the dropdown for **Tell us more about the problem you're experiencing**, select **Connectivity to Azure Private, Azure Public, or Dynamics 365 services**.
 
-![Connectivity to Azure Private, Azure Public, or Dynamics 365 services](../media/1-connectivitytoazure.png)
+:::image type="content" source="../media/1-connectivitytoazure.png" alt-text="Screenshot showing connection to Azure Private, Azure Public, or Dynamics 365 services":::
 
 - Scroll down to the **Test your private peering connectivity** section and expand it.
 
-![Test your private peering connectivity ](../media/1-testprivatepeeringconnectivity .png)
+:::image type="content" source="../media/1-testprivatepeeringconnectivity .png" alt-text="Screenshot showing Testing of private peering connectivity":::
 
 - Execute the [PsPing](/sysinternals/downloads/psping) test from your on-premises IP address to your Azure IP address and keep it running during the connectivity test.
 
 - Fill out the fields of the form, making sure to enter the same on-premises and Azure IP addresses used in <!--CE: Please check - I'm not sure what step 5 refers to.-->Step 5. Select **Submit** and wait for the results. When your results are ready, review the information for interpreting them below.
 
-![Connectivity test](../media/1-connectivitytest.png)
+:::image type="content" source="../media/1-connectivitytest.png" alt-text="Screenshot of Connectivity test":::
 
 You'll have two sets of results for the primary and secondary MSEE devices. Review the number of matches in and out and use the following scenarios to interpret the results:
 
