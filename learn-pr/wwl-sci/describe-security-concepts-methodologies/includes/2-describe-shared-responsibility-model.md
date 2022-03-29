@@ -13,7 +13,7 @@ The following diagram illustrates the areas of responsibility between the custom
 
 :::image type="content" source="../media/3-shared-responsibility-model-responsibilites-type.png" alt-text="The Shared responsibility model responsibilities by type.":::
 
-- **On-premises datacenters (Prem)**. In an on-premises datacenter, you have responsibility for everything from physical security to encrypting sensitive data.
+- **On-premises datacenters (On-Prem)**. In an on-premises datacenter, you have responsibility for everything from physical security to encrypting sensitive data.
 
 - **Infrastructure as a Service (IaaS)**. Of all cloud services, IaaS requires the most management by the cloud customer. With IaaS, you're using the cloud provider’s computing infrastructure. The cloud customer isn't responsible for the physical components, such as computers, the network, or the physical security of the datacenter. However, the cloud customer still has responsibility for software components such as operating systems, network controls, applications, and protecting data.
 
