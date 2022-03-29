@@ -28,58 +28,36 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What type of object can help organize data sources into logical groups?"
     choices:
-    - content: ""
+    - content: "Collections"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Azure Purview uses Collections to organize data sources to reflect your data use landscape."
+    - content: "Buckets"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Azure Purview does not use buckets to organize data."
+    - content: "Groups"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Azure Purview does not use groups to organize data."
+  - content: "At which point does Azure Purview begin to populate the data catalog with assets?"
     choices:
-    - content: ""
+    - content: "After an Azure Purview account is created"
+      isCorrect: false
+      explanation: "Data sources need to be registered and scanned before any information is added to the data catalog."
+    - content: "After a Data Source has been registered"
+      isCorrect: false
+      explanation: "When a data source is registered, that source is added to the data map, but no assets in that source are added until the source has been scanned."
+    - content: "After a Data Source has been scanned"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Azure purview captures technical metadata information like names, file size, and schema during scanning, and adds data assets to the catalog once scanning is complete."
+  - content: "Which of the following attributes is not automatically assigned to an asset as a result of the system-built scanning functionality?"
     choices:
-    - content: ""
+    - content: "Technical Metadata (e.g. Fully Qualified Name, Path, Schema, etc)"
+      isCorrect: false
+      explanation: "Technical metadata is captured as part of the scanning process and is recorded for all assets. The kind of metadata recorded is dependant on the data type."
+    - content: "Glossary Terms (e.g. column Sales Tax is tagged with the Sales Tax glossary term)"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Business glossary terms define a business vocabulary for an organization to help bridge data gaps between departments. These are created by businesses and associated manually with data assets using tagging after an asset has been added to the catalog."
+    - content: "Classifications (e.g. column ccnum is tagged with the Credit Card Number classification)"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Classifications and sensitivity lables are automatiacally applied to data as it is scanned, to organize your data into logical categories, and identify sensitive data in your data assets."
