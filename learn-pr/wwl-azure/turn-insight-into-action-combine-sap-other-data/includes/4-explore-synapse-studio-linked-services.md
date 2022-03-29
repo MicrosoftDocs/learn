@@ -2,7 +2,7 @@ Linked services in Azure Synapse Studio work similarly to the data connectors in
 
 ## Linking to SAP systems
 
-Synapse includes more than 90 linked services, including six for SAP, plus an OData linked service that is used extensively by SAP for integration. You can also customize or build your own linked service .
+Synapse includes more than 90 linked services, including six for SAP, plus an OData linked service that is used extensively by SAP for integration. You can also customize or build your own linked service.
 
 [![Screenshot of Azure Synapse Studio with linked services available for SAP.](../media/azure-synapse-studio-linked-services.png)](../media/azure-synapse-studio-linked-services.png#lightbox)
 
@@ -36,8 +36,7 @@ To find other linked services, use the search bar in the New linked service pane
  
 If your business scenario requires data from other sources, search for an available linked service, or create a custom linked service. For example, to analyze data for demand forecasting, you might link to weather data, social sentiment data, or store sales reports.
 
-![Screenshot of Azure Synapse Studio linked service categories.
-](../media/new-linked-service-categories.png)
+![Screenshot of Azure Synapse Studio linked service categories.](../media/new-linked-service-categories.png)
   
 You can also view available linked services by category. Select a category from the options across the top of the UI to see available linked services.
 
