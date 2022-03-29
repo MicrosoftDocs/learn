@@ -9,7 +9,11 @@ metadata:
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure
-  ms.custom: team=nextgen
+  ms.custom:
+  - team=nextgen
+  - team=cloud_advocates
+  ms.contributors:
+  - cassieb-08182021
 durationInMinutes: 10
 sandbox: true
 notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/audio-pytorch/2-understand-audio-data.ipynb
