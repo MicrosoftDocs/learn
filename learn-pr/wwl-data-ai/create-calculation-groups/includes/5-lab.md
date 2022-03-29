@@ -33,21 +33,20 @@ can edit a BIM file without accessing any data in the model.
 1.  Ensure Power BI Desktop is closed.
 
 2.  To open File Explorer, on the taskbar, select the **File Explorer** shortcut.
+
     ![A picture containing graphical user interface Description automatically
     generated](../media/image1.png)
 
 3.  In File Explorer, go to **D:\\DP500\\Software**.
 
-4.  To install Tabular Editor, double-click the **TabularEditor.Installer.msi**
-    file.
+4.  To install Tabular Editor, double-click the **TabularEditor.Installer.msi** file.
 
 5.  In the Tabular Editor installer window, select **Next**.
 
     ![Graphical user interface, application Description automatically
     generated](../media/image2.png)
 
-6.  At the **License Agreement** step, if you agree, select **I agree**, and
-    then select **Next**.
+6.  At the **License Agreement** step, if you agree, select **I agree**, and then select **Next**.
 
     ![Graphical user interface, application Description automatically
     generated](../media/image3.png)
@@ -131,7 +130,7 @@ In this task, you will review the data model.
     review the fields.
 
     ![Text Description automatically generated with low
-    confidence](../media/12.png)
+    confidence](../media/image12.png)
 
 5.  Notice that the two **Sales** table fields are decorated with the sigma
     symbol (∑).
@@ -162,7 +161,7 @@ In this task, you will create three sales-related measures.
 
     DAX
 
-    Sales = SUM ( 'Sales'[Sales Amount] )
+    ```Sales = SUM ( 'Sales'[Sales Amount] )```
 
 3.  On the **Measure tools** contextual ribbon, from inside the **Formatting**
     group, set the decimals places to **2**.
@@ -175,14 +174,14 @@ In this task, you will create three sales-related measures.
 
     DAX
 
-    Cost = SUM ( 'Sales'[Total Product Cost] )
+    ```Cost = SUM ( 'Sales'[Total Product Cost] )```
 
 5.  Create and similarly format a third measure named **Profit** by using the
     following definition:
 
     DAX
 
-    Profit = [Sales] - [Cost]
+    ```Profit = [Sales] - [Cost]```
 
 6.  In the **Fields** pane, right-click the **Sales Amount** field, and then
     select **Hide**.
@@ -265,7 +264,7 @@ groups.
 
     DAX
 
-    SELECTEDMEASURE ()
+    ```SELECTEDMEASURE ()```
 
     ![Graphical user interface, text, application, Word Description
     automatically generated](../media/image22.png)
@@ -283,7 +282,7 @@ groups.
 
     DAX
 
-    CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+    ```CALCULATE ( SELECTEDMEASURE (), SAMEPERIODLASTYEAR ( 'Date'[Date] ) )```
 
     The prior year (PY) formula calculates the value for the selected measure in
     the prior year.
@@ -292,11 +291,10 @@ groups.
     formula:
 
     DAX
-
-    SELECTEDMEASURE ()
-
-    \- CALCULATE ( SELECTEDMEASURE (), 'Time Intelligence'[Time Calculation] =
-    "PY" )
+    ```
+    SELECTEDMEASURE () 
+        - CALCULATE ( SELECTEDMEASURE (), 'Time Intelligence'[Time Calculation] = "PY" )
+    ```
 
     The year-over-year (YoY) formula calculates the difference of the selected
     measure of the current year to the prior year.
@@ -305,17 +303,12 @@ groups.
     formula:
 
     DAX
-
+    ```
     DIVIDE (
-
-    CALCULATE ( SELECTEDMEASURE (), 'Time Intelligence'[Time Calculation] =
-    "YoY" ),
-
-    CALCULATE ( SELECTEDMEASURE (), 'Time Intelligence'[Time Calculation] = "PY"
+        CALCULATE ( SELECTEDMEASURE (), 'Time Intelligence'[Time Calculation] = "YoY" ),
+        CALCULATE ( SELECTEDMEASURE (), 'Time Intelligence'[Time Calculation] = "PY" )
     )
-
-    )
-
+    ```
     The year-over-year percentage (YoY %) formula calculates the percentage
     change of the selected measure over the prior year.
 
@@ -403,7 +396,7 @@ currency. It will also apply appropriate formatting for the selected currency.
 
 1.  In Power BI Desktop, switch to **Data** view.
 
-    ![](../media/image34.png)
+    ![Data view.](../media/image34.png)
 
 2.  In the **Fields** pane, select the **Currency** table.
 
@@ -435,25 +428,16 @@ currency. It will also apply appropriate formatting for the selected currency.
     following formula:
 
     DAX
-
+    ```
     IF (
-
-    HASONEVALUE ( 'Currency'[Currency] ),
-
-    SUMX (
-
-    VALUES ( 'Date'[Date] ),
-
-    CALCULATE (
-
-    DIVIDE ( SELECTEDMEASURE (), MAX ( 'Currency Rate'[EndOfDayRate] ) )
-
+        HASONEVALUE ( 'Currency'[Currency] ),
+        SUMX (
+            VALUES ( 'Date'[Date] ),    CALCULATE (
+                DIVIDE ( SELECTEDMEASURE (), MAX ( 'Currency Rate'[EndOfDayRate] ) )
+            )
+        )
     )
-
-    )
-
-    )
-
+    ```
     When there’s only one currency in the filter context, the formula sums daily
     values of the selected measure that are divided by that day’s end of day
     rate.
@@ -462,9 +446,9 @@ currency. It will also apply appropriate formatting for the selected currency.
     the following formula:
 
     DAX
-
+    ```
     SELECTEDVALUE ( 'Currency'[FormatString] )
-
+    ```
     This formula returns the format string of the selected currency. This way,
     formatting is dynamically driven by the data in the **Currency** dimension
     table.

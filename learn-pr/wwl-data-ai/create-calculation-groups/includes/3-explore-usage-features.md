@@ -1,6 +1,4 @@
-Before creating calculation groups, let's explore their properties.
-
-Calculation groups are made up of *calculation items*, which are simply DAX statements containing a substitute or placeholder for existing explicit measures in your model. For example, a calculation group, Time Intelligence, may contain the calculation items, Year to Date, Quarter to Date, and Month to Date.
+Before creating calculation groups, let's explore their properties. Calculation groups are made up of *calculation items*, which are simply DAX statements containing a substitute or placeholder for existing explicit measures in your model. For example, a calculation group, Time Intelligence, may contain the calculation items, Year to Date, Quarter to Date, and Month to Date.
 
 ## Calculation group properties
 Anyone using calculation groups needs to be aware of the precedence property of a calculation group. 
@@ -34,8 +32,6 @@ Calculation groups can also be used to define conditional format strings to a me
 
 A simple example of using dynamic format strings may be having a different format for totals compared to other values.
 
-Dynamic format strings are particularly useful for currency conversion. For example, report consumers may want to see sales by country, with the correct currency formatting applied for each. 
+Dynamic format strings are particularly useful for currency conversion. For example, report consumers may want to see sales by country, with the correct currency formatting applied for each. This is accomplished by adding a format string column to the currency dimension table and then creating a currency conversion calculation group and item.
 
 ![Animated GIF of Power BI report switching from sales values in Argentina to Mexico to Venezuela.](../media/dynamic-format-strings.gif)
-
-This is accomplished by adding a format string column to the currency dimension table and then creating a currency conversion calculation group and item.
