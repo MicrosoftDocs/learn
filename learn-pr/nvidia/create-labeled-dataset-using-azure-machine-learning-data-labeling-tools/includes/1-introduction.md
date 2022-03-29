@@ -8,7 +8,7 @@ In this module, you'll learn how to create a labeled dataset using Azure Machine
 
 ## Scenario: Create a labeled dataset using Azure Machine Learning data labeling tools
 
-You're a data scientist who has been assigned the task of improving automation in a manufacturing facility using computer vision. Azure Machine Learning studio was recently chosen as the development environment for managing the development of Machine Learning projects within your organization.  You work in a team that plans to use features of this platform to collaborate on the gathering and labeling of image data to produce a training set for use in development of a custom object detection model.  Previously, your raw data was made accessible using a secure Datastore and it is now ready to undergo the task of labeling.
+You're a data scientist who has been assigned the task of improving automation in a manufacturing facility using computer vision. Azure Machine Learning studio was recently chosen as the development environment for managing the development of Machine Learning projects in your organization.  You work in a team that plans to use features of this platform to collaborate on gathering and labeling of image data to produce a training set for use in development of a custom object detection model.  Previously, your raw data was made accessible using a secure Datastore and it's now ready to undergo the task of labeling.
 
 ## What will you learn?
 

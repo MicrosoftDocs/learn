@@ -1,4 +1,4 @@
-A common task when developing a custom object detection model is the need to process unlabeled image data so that it can be converted into a labeled dataset for model training and validation purposes.  Unlabeled data will often feature various samples that reflect the type of data that would be captured at the site where the object detection model is to be employed.  This data could include subtle transformations, for example, introduction of "noise" into the image data to produce a more robust training set. Azure Machine Learning Data Tools in Azure Machine Learning Studio allow teams to manage their collections of unlabeled data into labeled datasets that accomodate the classes that would be detected by the trained object detection model.
+A common task when developing a custom object detection model is the need to process unlabeled image data so that it can be converted to a labeled dataset for model training and validation purposes.  Unlabeled data often features various samples that reflect the type of data that would be captured at the site where the object detection model is to be employed.  This data could include subtle transformations, for example, introduction of "noise" into the image data to produce a more robust training set. Azure Machine Learning Data Tools in Azure Machine Learning studio allow teams to manage their collections of unlabeled data into labeled datasets that accommodate the classes that would be detected by the trained object detection model.
 
 ## Create an Azure Machine Learning Data Labeling Project
 
@@ -16,7 +16,7 @@ A common task when developing a custom object detection model is the need to pro
 
     :::image type="content" source="../media/2-project-details.png" alt-text="A screenshot showing the Project Details options." lightbox="../media/2-project-details.png":::  
 
-1. In the **Add workforce (optional)** screen, we will leave the option disabled and select **Next** to continue.
+1. In the **Add workforce (optional)** screen, we'll leave the option disabled and select **Next** to continue.
 
     :::image type="content" source="../media/2-add-workforce.png" alt-text="A screenshot showing Add workforce is disabled." lightbox="../media/2-add-workforce.png"::: 
 
@@ -24,11 +24,11 @@ A common task when developing a custom object detection model is the need to pro
 
     :::image type="content" source="../media/2-select-from-datastore.png" alt-text="A screenshot showing the from datastore option is highlighted." lightbox="../media/2-select-from-datastore.png"::: 
 
-1. Give your new dataset the unique name e.g. **sodaObjects** that reflects the images captured in support of the detection task and select **Next**.
+1. Give your new dataset the unique name, for example, **sodaObjects** that reflects the images captured in support of the detection task and select **Next**.
 
-    :::image type="content" source="../media/2-basic-info.png" alt-text="A screenshot showing the from datastore option is highlighted." lightbox="../media/2-basic-info.png"::: 
+    :::image type="content" source="../media/2-basic-info.png" alt-text="A screenshot showing the basic info section of the datastore creation prompt is shown." lightbox="../media/2-basic-info.png"::: 
 
-1. Under **Datastore selection**, choose the datastore name that you added previously which contains the untagged image data. Here, you can also provide a wildcarded path if you wish to pull only images from specified partitions. If you wish to pull all images from the container, enter / as the path and select **Next**. 
+1. Under **Datastore selection**, choose the datastore name that you added previously, which contains the untagged image data. Here, you can also provide a wildcard path if you wish to pull only images from specified partitions. If you wish to pull all images from the container, enter / as the path and select **Next**. 
 
     :::image type="content" source="../media/2-datastore-selection.png" alt-text="A screenshot showing the Datastore selection options." lightbox="../media/2-datastore-selection.png"::: 
 
@@ -40,7 +40,7 @@ A common task when developing a custom object detection model is the need to pro
 
     :::image type="content" source="../media/2-select-dataset.png" alt-text="A screenshot showing the newly created dataset has been chosen." lightbox="../media/2-select-dataset.png"::: 
 
-1. You will be prompted to Enable incremental refresh at regular intervals. This will automatically add newly captured images to your data labeling project. Enable this option as shown, then select **Next**.
+1. You'll be prompted to Enable incremental refresh at regular intervals. This feature will automatically add newly captured images to your data labeling project. Enable this option as shown, then select **Next**.
 
     :::image type="content" source="../media/2-enable-refresh.png" alt-text="A screenshot showing the incremental refresh option is enabled." lightbox="../media/2-enable-refresh.png"::: 
 
@@ -48,7 +48,7 @@ A common task when developing a custom object detection model is the need to pro
 
     :::image type="content" source="../media/2-label-classes.png" alt-text="A screenshot showing the list of label classes." lightbox="../media/2-label-classes.png"::: 
 
-1. You may optionally add labeling instructions in the following section, we will leave this empty and select **Next**.
+1. You may optionally add labeling instructions in the following section, we'll leave this section empty and select **Next**.
 
     :::image type="content" source="../media/2-labeling-instructions.png" alt-text="A screenshot showing the labeling instructions options." lightbox="../media/2-labeling-instructions.png"::: 
 
