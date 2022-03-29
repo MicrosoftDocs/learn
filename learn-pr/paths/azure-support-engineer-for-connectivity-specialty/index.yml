@@ -35,6 +35,6 @@ products:
 - azure-virtual-network
 - azure-virtual-wan
 modules:
-- learn.wwl.business-continuity
+- learn.wwl.troubleshoot-platform-as-service-issues
 trophy:
   uid: learn.wwl.azure-support-engineer-for-connectivity-specialty.trophy
