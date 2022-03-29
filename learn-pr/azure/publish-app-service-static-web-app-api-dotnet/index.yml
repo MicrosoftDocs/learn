@@ -12,7 +12,6 @@ metadata:
   - team=cloud_advocates
   ms.contributors:
   - aapowell-12032021
-  - aapowell-09102021
 title: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
 summary: Automatically deploy and update a Blazor web application and its API from a GitHub repository.
 abstract: |

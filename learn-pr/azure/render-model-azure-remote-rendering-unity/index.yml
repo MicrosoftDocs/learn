@@ -12,7 +12,6 @@ metadata:
   - team=cloud_advocates
   ms.contributors:
   - apspeigh-03262021
-  - aapowell-09102021
 title: Render a model with Azure Remote Rendering
 summary: >
   Create an Azure Remote Rendering session and render a 3D model.
