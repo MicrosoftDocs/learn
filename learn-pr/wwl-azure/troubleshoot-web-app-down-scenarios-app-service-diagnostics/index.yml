@@ -3,7 +3,7 @@ uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics
 metadata:
   title: Troubleshoot Web App Down Scenarios with App Service Diagnostics
   description: "Utilize Web App Down, Crash Monitoring, and Ask Genie for troubleshooting. Use these tools to monitor application and platform availability, identify unhandled exceptions, capture memory dumps and callstack, and find areas of investigation and diagnostics."
-  ms.date: 03/28/2022
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: lauraalv
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   *   Mitigate application crashes with Crash Monitoring
   *   Use Ask Genie to identify relevant diagnostics information
 prerequisites: |
-  -	Ability to navigate the Azure Portal
+  -	Ability to navigate the Azure portal
   -	A basic understanding of web app performance would be helpful but is not required
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
