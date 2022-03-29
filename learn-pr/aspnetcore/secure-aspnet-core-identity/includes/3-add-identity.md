@@ -206,7 +206,7 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
 1. Expand the nodes under the existing database connection. Expand the **Databases** node, the **RazorPagesPizza** node, and finally the **Tables** node.
 1. Note the list of tables. This confirms the migration succeeded.
 
-    :::image type="content" source="../media/sql-server-successful-migration.png" alt-text="The RazorPagesPizza database with the newly created tables. Pictured is using SQL Server Express LocalDB. In the .devcontainer, the top node will display \"mssql-container\"" lightbox="../media/sql-server-successful-migration.png":::
+    :::image type="content" source="../media/sql-server-successful-migration.png" alt-text="The RazorPagesPizza database with the newly created tables. Pictured is using SQL Server Express LocalDB. In the .devcontainer, the top node will display 'mssql-container'" lightbox="../media/sql-server-successful-migration.png":::
 
 ## Add the login and registration links
 

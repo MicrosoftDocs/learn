@@ -10,19 +10,53 @@ Let's build everything you need to generate QR codes on the **Configure authenti
 
 WIP:
 
-1. Install NuGet package
-1. Build `QRCodeService`
-1. Register it for DI
+1. In the terminal pane, install the `QRCoder` NuGet package:
 
-* The NuGet package, `QRCoder`, has already been installed in the project.
-* All interactions with the `QRCoder` library are abstracted away in the *:::no-loc text="Services/QRCodeService.cs":::* file. The `QRCodeService` class:
-  * Uses constructor injection to gain access to an instance of the library's `QRCodeGenerator` class.
-  * Exposes the `GetQRCodeAsBase64` method to return the base-64 encoded string. The QR code dimensions are determined by the integer value passed to `GetGraphic`. In this case, the generated QR code will be composed of blocks sized four pixels squared.
-* `QRCodeService` is registered as a singleton service in the IoC container within *:::no-loc text="Startup.cs":::*.
+    ```dotnetcli
+    dotnet add package QRCoder --version 1.4.3
+    ```
+
+1. In the **Explorer** pane, right-click on the *Services* folder and add a new file named *QRCodeService.cs*. Add the following code:
+
+    ```csharp
+    using QRCoder;
+
+    namespace RazorPagesPizza.Services;
+    public class QRCodeService
+    {
+        private readonly QRCodeGenerator _generator;
+    
+        public QRCodeService(QRCodeGenerator generator)
+        {
+            _generator = generator;
+        }
+        
+        public string GetQRCodeAsBase64(string textToEncode)
+        {
+            QRCodeData qrCodeData = _generator.CreateQrCode(textToEncode, QRCodeGenerator.ECCLevel.Q);
+            var qrCode = new PngByteQRCode(qrCodeData);
+    
+            return Convert.ToBase64String(qrCode.GetGraphic(4));
+        }
+    }
+    ```
+
+    The preceding code:
+
+    * Uses constructor injection to gain access to an instance of the library's `QRCodeGenerator` class.
+    * Exposes the `GetQRCodeAsBase64` method to return the base-64 encoded string. The QR code dimensions are determined by the integer value passed to `GetGraphic`. In this case, the generated QR code will be composed of blocks sized four pixels squared.
+
+1. In *Program.cs*, add the highlighted lines:
+
+    [!code-csharp[](../code/program-after-customization.cs?range=1-17,22-23&highlight=5-6,17)]
+
+    `QRCodeService` is registered as a singleton service in the IoC container within *Program.cs*.
 
 ## Customize multi-factor authentication
 
-1. Open *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs":::* and make the following changes and save:
+Now that you can generate QR codes, you can inject a QR code into the **Configure authenticator app** form.
+
+1. Open *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs":::* and make the following changes:
     1. Add the following property to the `EnableAuthenticatorModel` class to store the QR code's base-64 string representation:
 
         [!code-csharp[](../code/areas/identity/pages/account/manage/5-enableauthenticator.cshtml.cs?name=snippet_qrcodeasbase64&highlight=7)]
