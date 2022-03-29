@@ -56,7 +56,8 @@ By default, the summary displays open alerts in the last 24 hours. You can also 
 
 - Time range (24 hours, week, two weeks, 30 days, or custom)
 
-:::image type="content" source="../media/M01backupreports.png" alt-text="Screenshot that shows Backup Report":::
+:::image type="content" source="../media/m01backupreports.png" alt-text="Screenshot that shows Backup Report.":::
+
 ### Alerts by email notification
 
 You can get email notifications when alerts are triggered by creating an alert processing rule.
@@ -113,8 +114,7 @@ The following views are available from the tabs:
 
 - Policy adherence – success of backups per day for every backup instance.
 
-
-:::image type="content" source="<folderPath>" alt-text="Backup Report" link="/Modules/M01-business-continuity/media/M01backupcenter.png":::
+:::image type="content" source="../media/m01backupcenter.png" alt-text="Screenshot of Backup Center.":::
 
 ## Troubleshooting backups with Microsoft Azure Recovery Services (MARS)
 
