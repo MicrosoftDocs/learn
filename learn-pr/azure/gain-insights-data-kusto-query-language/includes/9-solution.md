@@ -17,14 +17,14 @@ This solution provides one possible way to construct a query that answers the pr
 
 The previous steps are all included in the following query:
 
-<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy2NQQuCQBSE74H/YfCkFYkQdAhP5T3QP7DqKwV3V94+LaMfn1ue5s18b5ieBPnIyJAe0uMZSVJbMxG7zhqwEgo2hVjW+URGXLD54NkSE36+nAdCqxzCe29tE3pMLyHT4Kq0elAW/fXGdiCWGbsVXJbAxdj6bd9yo9aKuzf5ay3FqGZUnUFUiGIpO017nJrY//OyQYza9qM2dbvgLznThJzJAAAA" target="_blank">Click to run query</a>
+<a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAy2OwQ6CQAxE73zFhBOokZCYeDCelLsJ/MACVTZhd0m3oBg/3kW5Tfs6nelJUIyMM/J9fjghy9A4OxF77SxYCUWlODbFRFZ89MGzIyb8xmoeCJ3yiO+9c20cKL2EbIurMupB4WnyVzd2A7HM2K7oEhY+xWbJDjY/GqNYv2lRqydFPaPWNilFsVTa0A7HNg3XHCKIQ89+NLbpAv0CgO3x88YAAAA=" target="_blank">Click to run query</a>
 
 ```kusto
-let Eur = 1.14; //conversion rate
+let Eur = 1.14; // conversion rate
 StormEvents
 | where EventType has "flood"
-| extend Damage=(DamageProperty + DamageCrops) * Eur
-| summarize sum(Damage) by bin (StartTime, 7d)
+| extend Damage = (DamageProperty + DamageCrops) * Eur
+| summarize sum(Damage) by bin(StartTime, 7d)
 | render columnchart
 ```
 

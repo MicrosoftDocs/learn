@@ -2,7 +2,7 @@ We've used a meteorological dataset to aggregation and visualize data. Here, you
 
 `let` statements are useful for breaking up a complex expression into multiple parts, defining constants outside of the query body for readability, or defining a variable once and using it multiple times within a query. `let` statements can be used to create well-organized complex queries. You can use multiple let statements; each statement must be followed by a semicolon (`;`).
 
-`let` statements can be used in different kinds of situations. On the simplest level, you can define scalar values that will later be referenced in a query, such as an integer, string, date/time, or any other value. You can create a tabular filtered view of a table that will be used as the tabular input for the query. You can also create a function using a `let` statement.
+`let` statements can be used in different kinds of situations. On the simplest level, you can define scalar values that will later be referenced in a query, such as an int, string, date/time, or any other value. You can create a tabular filtered view of a table that will be used as the tabular input for the query. You can also create a function using a `let` statement.
 
 ## Define a scalar with a `let` statement
 

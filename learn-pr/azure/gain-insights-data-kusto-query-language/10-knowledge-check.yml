@@ -25,18 +25,18 @@ quiz:
     - content: "`distinct()`"
       isCorrect: false
       explanation: "Try again. The `distinct()` function returns a list of distinct values of a particular column."
-  - content: "Which function groups distributed data?"
+  - content: "Which of the following can be used to summarize storm event data by week?"
     choices:
-    - content: "`bin()`"
+    - content: "`summarize ... by bin(StartTime, 7d)`"
       isCorrect: true
-      explanation: "Correct. The `bin()` function groups a distributed set of values into a smaller set of specific values. It's used in combination with the `summarize by` operator."
-    - content: "`summarize by`"
+      explanation: "Correct. The `bin()` function groups a scattered set of values into a smaller set of specific values."
+    - content: "`summarize ... by StartTime`"
       isCorrect: false
-      explanation: "Try again. The `summarize by` operator aggregates data but doesn't redistribute it into a smaller set of specific values."
-    - content: "`render`"
+      explanation: "Try again. This solution aggregates data by the start time but doesn't group it by week."
+    - content: "`summarize ... by 1week`"
       isCorrect: false
-      explanation: "Try again. The `render` operator is used to visualize the results of a query."
-  - content: "Which function returns a frequency distribution for each group?"
+      explanation: "Try again. Grouping `by `week` isn't a valid syntax."
+  - content: "Which function can be used with the `summarize` operator to return the median of storm events per state?"
     choices:
     - content: "`avg()`"
       isCorrect: false
@@ -47,14 +47,14 @@ quiz:
     - content: "`percentiles()`"
       isCorrect: true
       explanation: "Correct. The `percentiles()` function returns the frequency distribution for each group."
-  - content: "What kind of variables can you create with the `let` statement?"
+  - content: "Which of the following best describes the `let` statement?"
     choices:
-    - content: "The `let` statement can be used to define scalar values, tabular filtered views, and user-defined function."
-      isCorrect: true
-      explanation: "Correct. The `let` statement can be used to define scalar values, tabular filtered views, and user-defined function."
+    - content: "The `let` statement is useful for building complex expression and using them as part of a query."
+      isCorrect: false
+      explanation: "Try again. The answer doesn't describe the `let` statement."
     - content: "The `let` statement is useful for breaking up a complex expression into multiple parts, defining constants outside of the query body for readability, or defining a variable once and using it multiple times within a query."
-      isCorrect: false
-      explanation: "Try again. Whilst the `let` state is useful for the described reasons, the answer doesn't describe the kinds of variable that can be created."
-    - content: "The `var` statement is used to define a variable that can be used in the query body."
-      isCorrect: false
-      explanation: "Try again. `var` isn't a valid statement in Kusto Query Language."
+      isCorrect: true
+      explanation: "Try again. The answer accurately describes they key the `let` statement."
+    - content: "The `let` statement are reusable subqueries that can be defined as part of the query itself (ad-hoc functions), or persisted as part of the database metadata (stored functions). They're invoked through a name, are provided with zero or more input arguments (which can be scalar or tabular), and produce a single value (which can be scalar or tabular) based on the `let` statement body."
+      isCorrect: true
+      explanation: "Try again. The answer describes the difference between user-defined and stored functions, how they're invoked, and values they can return."

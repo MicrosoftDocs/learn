@@ -2,7 +2,7 @@ We've used a meteorological dataset to aggregation and compare the number of cer
 
 ## Use the `render` operator
 
-Recall that you've used the `summarize` operator to group events by a common field such as *State*. In the last query of the previous unit, you used different versions of the `count` operator to compare the number and types of events by state. Visualizing these results can be a helpful aid in comparing activity across states.
+Recall that you've used the `summarize` operator to group events by a common field such as *State*. In the previous unit, you used different versions of the `count` operator to compare the number and types of events by state. Visualizing these results can be a helpful aid in comparing activity across states.
 
 To visualize results, you'll use the `render` operator. This operator comes at the end of a query. Within the `render` operator, you'll specify which type of visualization to use, such as `columnchart`, `barchart`, `piechart`, `scatterchart`, `pivotchart`, and others. You can also optionally define different properties of the visualization, such as the x-axis or y-axis.
 
@@ -33,7 +33,7 @@ In this example, you'll visualize the previous query using a bar chart.
 
 ## Group values using the `bin()` function
 
-Until now, you've used aggregation functions to group events by *State*. Let's now look at the distribution of storms throughout the year, by grouping data by time. The time values we have are start time and end time values. Let's group the event start times by week, so we can see how many storms happened each week during the year 2007.
+Until now, you've used aggregation functions to group events by *State*. Let's now look at the distribution of storms throughout the year, by grouping data by time. The time values we have in every record are the start time and end time. Let's group the event start times by week, so we can see how many storms happened each week during the year 2007.
 
 You'll use the `bin()` function, which groups values into set intervals. For example, you may have a data from every day of the year and you'd like to group these dates by week. Or, you want to group population data by age bins. The syntax of this operator is:
 
@@ -91,6 +91,6 @@ In the following query, you'll first create a calculated column that adds these 
 
     You should get results that look like the following image:
 
-    :::image type="content" source="../media/5-pie-chart.png" alt-text="Screen shot of kusto query with pie chart and results.":::
+    :::image type="content" source="../media/5-pie-chart.png" alt-text="Screen shot of Kusto query with pie chart and results.":::
 
 1. Hover over one of the slices of the pie chart. You should see the absolute value (total damage caused by this event type) and the corresponding percentage of the overall damage.

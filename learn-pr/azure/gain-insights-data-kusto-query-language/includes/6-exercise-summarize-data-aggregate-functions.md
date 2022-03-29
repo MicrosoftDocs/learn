@@ -47,7 +47,7 @@ The following query creates a calculated column using the `extend` operator to a
 
 Let's now look at the damage extremes.
 
-For absolute maximum or minimum values, use the `min()` and `max()` aggregation functions. Within these functions, you have to define the column on which to calculate the maximum or minimum value, and the field on which to aggregation the data. The following query builds on the previously calculated `damage` column, adding `min()` and `max()` values for the same column.
+For absolute maximum or minimum values, use the `min()` and `max()` aggregation functions. Within these functions, you have to define the column on which to calculate the minimum or maximum value, and the field on which to aggregate the data. The following query builds on the previously calculated `damage` column, adding `min()` and `max()` values for the same column.
 
 1. Run the following query:
 
@@ -66,7 +66,7 @@ For absolute maximum or minimum values, use the `min()` and `max()` aggregation 
     :::image type="content" source="../media/6-max.png" alt-text="Screenshot of max aggregation function results.":::
 
 1. Take a look at the results. Notice that to make the column names friendlier, you renamed the summarized columns within the query to *MinDamage* and *MaxDamage*.
-1. Try changing the query to use the `minif()` and `maxif()` functions. These functions are similar to the `min()` and `max()` functions, but only return the minimum or maximum value for which the predicate is true. Note that you can use the `sumif()` function in similar way for the `sum()` function.
+1. Try changing the query to use the `minif()` and `maxif()` functions. These functions are similar to the `min()` and `max()` functions, but only return the minimum or maximum of the provided expression for records where the predicate returns true. Similarly, you can use the `sumif()` function to return the sum of the provided expression for records where the predicate returns .
 
 ## Use the `percentiles()` function
 
