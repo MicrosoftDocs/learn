@@ -85,7 +85,7 @@ Apps can access user and organizational data if they are given consent. You shou
 
 The default access level is to allow access to all enterprise applications for every user. However, applications can be assigned to just a subset of users. In Azure Active Directory admin center, select **Enterprise applications**. Select the relevant application and select **Users and groups**. You can now see a list of assigned users and groups and, if necessary, add more.
 
-![Assign user account to zn application in your Azure AD tenant.](../media/2_add_users.png)
+![Assign user account to zn application in your Azure AD tenant.](../media/2-add-users.png)
 
 Troubleshoot issues where users become locked out of their account
 

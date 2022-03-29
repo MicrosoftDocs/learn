@@ -5,6 +5,7 @@ Determine why on-premises systems cannot connect to Azure AD resources
 To troubleshoot Azure AD Connect, you should use the Azure AD Connect Health portal at [Azure Active Directory Connect Health](https://portal.azure.com/) to view performance monitors and alerts.
 
 ![Screen shot of the Azure AD Connect Health screen.](../media/3-connect-health.png)
+:::image type="content" source="../media/3-connect-health.png" alt-text="Screen shot of the Azure AD Connect Health screen.":::
 
 You can also install the Azure AD Connect Administration Agent on an Azure Active Directory Connect server. The Azure AD Connect Administration Agent presents diagnostic data to Microsoft support engineers. Azure AD Connect Administration Agent is not installed by default and doesn’t store any data. It is specifically intended for live troubleshooting. You can disable the reporting of data by the Azure AD Connect Administration Agent if you edit the service config file. For more information on the Azure AD Connect Administration Agent and how to install and disable it, see [What is the Azure AD Connect Admin Agent](/azure/active-directory/hybrid/whatis-aadc-admin-agent)?
 
@@ -16,7 +17,7 @@ To troubleshoot connectivity issues, you must first have installed AD Connect in
 
 To troubleshoot pass-through authentication, you should first check that it is enabled and that the authentication agents are **Active**. To view the status, go to **Azure Active Directory Admin** Center and select **Azure AD Connect**.
 
-![Sscreenshot of Azure Active Directory admin center - Azure AD Connect blade](../media/3-az-ad-connect.png)
+![Screenshot of Azure Active Directory admin center - Azure AD Connect blade](../media/3-az-ad-connect.png)
 
 You should then check if the user is getting errors, or if errors are reported in the **Azure Active Directory admin center**. For more information, see [Troubleshoot Azure Active Directory Pass-through Authentication](/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication).
 
