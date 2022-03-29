@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure
+metadata:
+  title: Troubleshoot connectivity issues with virtual machines in Microsoft Azure
+  description: "Troubleshoot deployment, connectivity, and authorization issues with Azure Bastion and just in time access to Virtual Machines."
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot connectivity issues with virtual machines in Microsoft Azure
+summary: Troubleshoot deployment, connectivity, and authorization issues with Azure Bastion and just in time access to Virtual Machines.
+abstract: |
+  By the end of this module, you will be able to:
+  - Choose between Azure Bastion or just in time VM access
+  - Troubleshoot issues with Azure Bastion
+  - Troubleshoot just in time VM access
+prerequisites: |
+  - Experience using the Azure portal
+  - Experience using Remote Desktop
+  - Knowledge of Azure Bastion
+  - Familiarity with server and client management concepts and tools
+  - Familiarity with Microsoft Azure and cloud concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- support-engineer
+products:
+- azure
+- azure-bastion
+- azure-portal
+- azure-virtual-machines
+units:
+- learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.introduction
+- learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.choose-between-azure-bastion-just-time-vm-access
+- learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.troubleshoot-issues-azure-bastion
+- learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.troubleshoot-issues-just-time-vm-access
+- learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.exercise-azure-bastion
+- learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.knowledge-check
+- learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.summary
+badge:
+  uid: learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.badge
