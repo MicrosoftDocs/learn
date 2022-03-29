@@ -11,7 +11,7 @@ From the main menu, you access:
     - **Data Protection** contains a wealth of resources such as audited controls, white papers, FAQs, penetration tests, risk assessment tools, and compliance guides.
     - **Azure Stack** contains documents that provide security and compliance solutions and support, tailored to the needs of Azure Stack customers.
 - **Industries & Regions** – This link provides access to compliance information about Microsoft Cloud services organized by industry and region. 
-    - **Industry Solutions** directs users to the landing page the for the Financial Services industry. This contains information such as compliance offerings, FAQs, and success stories. Resources for more industries will be released in the future, however you can find resources for more industries by going to the Trust Documents > Data Protection page in the STP.
+    - **Industry Solutions** directs users to the landing page for the Financial Services industry. This contains information such as compliance offerings, FAQs, and success stories. Resources for more industries will be released in the future, however you can find resources for more industries by going to the Trust Documents > Data Protection page in the STP.
     - **Regional Solutions** provides documents on Microsoft Cloud services compliance with the laws of various countries/regions. Specific countries/regions include Australia, Canada, Czech Republic, Denmark, Germany, Poland, Romania, Spain, and the United Kingdom. links currently have information for: Australia, Canada, Czech Republic, Denmark, Germany, Poland, Romania, Spain, and the United Kingdom.
 
 - **Trust Center** – The option links to the Microsoft Trust Center, which provides more information about privacy, security, and compliance in the Microsoft Cloud.
@@ -21,4 +21,4 @@ From the main menu, you access:
 
 In this interactive guide, you will explore a few of the menu options available on the Service Trust Portal. Select the image below to get started and follow the prompts on the screen.
 
-[![Interactive guide](../media/2a-stp-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP04M01-Explore-the-Service-Trust-Portal/index.html?azure-portal=true)
+[![Interactive guide](../media/stp-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP04M01-Explore-the-Service-Trust-Portal/index.html?azure-portal=true)
