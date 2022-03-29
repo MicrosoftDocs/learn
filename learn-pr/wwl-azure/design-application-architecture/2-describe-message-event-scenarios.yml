@@ -4,13 +4,12 @@ title: Describe message and event scenarios
 metadata:
   title: Describe message and event scenarios
   description: "Describe message and event scenarios"
-  ms.date: 12/07/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
