@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.name-resolution-issues.troubleshoot-name-resolution-issues
+title: Troubleshoot name resolution issues
+metadata:
+  title: Troubleshoot name resolution issues
+  description: "Troubleshoot name resolution issues"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-troubleshoot-name-resolution-issues.md)]

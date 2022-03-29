@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.name-resolution-issues
+metadata:
+  title: Troubleshoot name resolution issues in Microsoft Azure
+  description: "Name resolution is the process of matching the name of a computer to its network address. This module looks at name resolution issues for public networks, private networks, and internal networks that connect to Azure."
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot name resolution issues in Microsoft Azure
+summary: Name resolution is the process of matching the name of a computer to its network address. This module looks at name resolution issues for public networks, private networks, and internal networks that connect to Azure.
+abstract: |
+  By the end of this module, you will be able to:
+  - Troubleshoot Azure internal name resolution issues
+  - Troubleshoot public DNS issues
+prerequisites: |
+  - Demonstrate an understanding of the OSI model
+  - Demonstrate an understanding of Azure CLI
+  - Demonstrate an understanding of PowerShell
+  - Know how to run cloud shell to run commands
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- network-engineer
+- support-engineer
+products:
+- azure-dns
+units:
+- learn.wwl.name-resolution-issues.introduction
+- learn.wwl.name-resolution-issues.name-resolution-issues
+- learn.wwl.name-resolution-issues.public-dns
+- learn.wwl.name-resolution-issues.troubleshoot-name-resolution-issues
+- learn.wwl.name-resolution-issues.exercise-name-resolution-issues
+- learn.wwl.name-resolution-issues.knowledge-check
+- learn.wwl.name-resolution-issues.summary
+badge:
+  uid: learn.wwl.name-resolution-issues.badge
