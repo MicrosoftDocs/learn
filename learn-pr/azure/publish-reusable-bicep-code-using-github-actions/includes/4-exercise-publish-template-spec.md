@@ -68,7 +68,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
 1. In your browser, select the **Actions** tab.
 
-    :::image type="content" source="../media/4-action-run.png" alt-text="A screenshot showing the result of an Azure Actions workflow run.":::
+    :::image type="content" source="../media/4-action-run.png" alt-text="A screenshot showing the result of a GitHub Actions workflow run.":::
 
 1. Select the **module-storage-account** workflow, then select the **Run workflow** button, and select **Run workflow**.
 
@@ -90,9 +90,9 @@ You can also view the published template spec in the Azure portal.
 
 1. In your browser, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Navigate to the `ToysReusable` resource group.
+1. Navigate to the **ToyReusable** resource group.
 
-1. Select the `linux-app-service` template spec.
+1. Select the **linux-app-service** template spec.
 
     :::image type="content" source="../media/4-portal-template-spec.png" alt-text="A screenshot of the Azure Portal with a template spec.":::
 

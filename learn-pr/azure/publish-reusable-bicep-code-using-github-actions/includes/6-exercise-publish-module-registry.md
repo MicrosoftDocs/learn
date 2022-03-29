@@ -15,7 +15,7 @@ Before you can publish modules, you need to create a registry for your organizat
 
 1. In your browser, [create a new container registry within the Azure portal](https://portal.azure.com/#create/Microsoft.ContainerRegistry).
 
-1. In the **Basics** tab, select your target subscription and the `ToysReusable` resource group you created earlier.
+1. In the **Basics** tab, select your target subscription and the **ToyReusable** resource group you created earlier.
 
 1. Enter a name for your registry, and a location that's close to you.
 
@@ -142,7 +142,7 @@ You can also view the published module in the Azure portal.
 
 1. In your browser, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Navigate to the **ToysReusable** resource group.
+1. Navigate to the **ToyReusable** resource group.
 
 1. Select the container registry you created previously.
 
