@@ -102,7 +102,7 @@ New-AzResourceGroupDeployment `
 
 1. Select the deployment called **main**, then select **Deployment details** to expand the list of deployed resources.
 
-    Notice that our module deployment appears in the list.  In fact, it appears twice, because we referenced it as an output too.
+    Notice that our module deployment appears in the list.
 
     :::image type="content" source="../media/8-addmodule-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one resource listed." border="true":::
 

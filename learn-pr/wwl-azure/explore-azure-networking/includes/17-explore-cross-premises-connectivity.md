@@ -3,15 +3,15 @@ From the point of view of the location of SAP landscape, there are two basic hig
  -  **Cross-premises** \- a single or multiple Azure IaaS–hosted SAP workloads with the requirement of being fully integrated into the existing on-premises SAP environment
  -  **Cloud-only** \- the complete SAP landscape runs on Azure IaaS (typically with the customer's on-premises infrastructure extended into Azure).
 
-It is important to note that in cross-premises scenarios between Azure and on-premises customers’ environments, SAP systems must reside entirely in either one of the two environments. In particular, the following deployments are not supported in cross-premises scenarios:
+It's important to note that in cross-premises scenarios between Azure and on-premises customers’ environments, SAP systems must reside entirely in either one of the two environments. In particular, the following deployments aren't supported in cross-premises scenarios:
 
  -  **Running different layers of SAP applications in different deployment methods**. For example, running the DBMS layer on-premises, but the SAP application layer in VMs deployed as Azure VMs or vice versa.
  -  **Some components of an SAP layer in Azure and some on-premises**. For example, splitting Instances of the SAP application layer between on-premises and Azure VMs.
- -  **Distribution of VMs running SAP instances of one system over multiple Azure regions is not supported**.
+ -  **Distribution of VMs running SAP instances of one system over multiple Azure regions isn't supported**.
 
 The reason for these restrictions is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system.
 
-Special planning of the systems and regions must occur when using multiple SAP systems which are highly integrated. Make sure to deploy these systems as close as possible to each other to minimize network latency. Examples of highly integrated SAP systems are:
+Special planning of the systems and regions must occur when using multiple SAP systems that are highly integrated. Make sure to deploy these systems as close as possible to each other to minimize network latency. Examples of highly integrated SAP systems are:
 
  -  SAP BW reading data from SAP OLTP systems like ERP or CRM or SRM; or
  -  SAP SLT being used to replicate data between multiple SPA systems or even between SAP and non-SAP systems; or SAP S/4 connected to an SAP ERP system
@@ -23,7 +23,7 @@ When connecting Microsoft Azure Virtual Networks back to the enterprise, there a
 
 Site-to-site connectivity via VPN or ExpressRoute is necessary for production scenarios. This type of connection is also needed for non-production scenarios that feed into production scenarios where SAP software is being used.
 
-When you have site-to-site connectivity into Azure via VPN or ExpressRoute, you must have at least one Azure virtual network that is connected through a Virtual Gateway to the VPN tunnel or ExpressRoute circuit. In simple deployments, the Virtual Gateway can be deployed in a subnet of the Azure virtual network (VNet) that hosts the SAP application and database instances as well. To install SAP workloads, create at least two additional subnets within the Azure virtual network. One subnet contains Azure VMs hosting SAP DMBS. The other subnet runs jumpbox or management Azure VMs to host SAP HANA Studio, other management software, or your application software.
+When you have site-to-site connectivity into Azure via VPN or ExpressRoute, you must have at least one Azure virtual network that's connected through a Virtual Gateway to the VPN tunnel or ExpressRoute circuit. In simple deployments, the Virtual Gateway can be deployed in a subnet of the Azure virtual network (VNet) that hosts the SAP application and database instances as well. To install SAP workloads, create at least two additional subnets within the Azure virtual network. One subnet contains Azure VMs hosting SAP DMBS. The other subnet runs jumpbox or management Azure VMs to host SAP HANA Studio, other management software, or your application software.
 
 For larger deployments, consider implementing the virtual datacenter network architecture in Azure. This architecture recommends deployment of the virtual gateway that connects to on-premises into a separate Azure VNet. This separate VNet should serve as the transit network for all the traffic between the SAP deployment and the on-premises environment or internet. This approach allows you to deploy software for auditing and logging traffic that enters the virtual datacenter in Azure in this separate hub VNet. Effectively, you have one VNet that hosts all the software and configurations that relate to incoming and outgoing traffic for your Azure deployment.
 
@@ -40,7 +40,7 @@ For SAP enterprise applications, there are few use cases where they can function
  -  Backups
  -  Monitoring
 
-The fact that part of the SAP components is running on Azure should not be perceivable to end users. Hence SAP Transport Correction System (STMS), RFC Communication, Printing, and Security (such as SSO) need to operate seamlessly when SAP systems reside in Azure.
+The fact that part of the SAP components is running on Azure shouldn't be perceivable to end users. Hence SAP Transport Correction System (STMS), RFC Communication, Printing, and Security (such as SSO) need to operate seamlessly when SAP systems reside in Azure.
 
 Setting up your on-premises TCP/IP based network printers in an Azure VM is overall the same as in your corporate network, assuming you do have a VPN Site-To-Site tunnel or ExpressRoute connection established.
 
@@ -52,6 +52,6 @@ For more information, see [Transport Management System - Concept](https://help.s
 
 To facilitate RFC traffic between systems residing on-premises and in Azure, set up a connection call transaction SM59 in a source system where you need to define an RFC connection towards the target system. The configuration is like the standard setup of an RFC Connection.
 
-We assume that in the cross-premises scenario, the VMs, which run SAP systems that need to communicate with each other are in the same domain. Therefore, the setup of an RFC connection between SAP systems does not differ from the setup steps and inputs in on-premises scenarios.
+We assume that in the cross-premises scenario, the VMs, which run SAP systems that need to communicate with each other are in the same domain. Therefore, the setup of an RFC connection between SAP systems doesn't differ from the setup steps and inputs in on-premises scenarios.
 
 SAP instances located in Azure may need to access on-premises file shares. In addition, on-premises SAP instances may need to access file shares hosted in Azure. To enable cross-premises file sharing, you must configure the permissions and sharing options on the local system. In addition, you must make sure to open the relevant ports on the VPN or ExpressRoute connection between Azure and your datacenter.

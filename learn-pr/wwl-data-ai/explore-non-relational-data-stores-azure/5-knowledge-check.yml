@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-non-relational-data-stores-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/10/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which API should you use to store and query JSON documents in Azure Cosmos DB?"
+    choices:
+    - content: "Core (SQL) API"
+      isCorrect: true
+      explanation: "That's correct.  The core (SQL) API is designed to store and query JSON documents."
+    - content: "Cassandra API"
+      isCorrect: false
+      explanation: "That's incorrect. Cassandra API stores data in column families."
+    - content: "Table API"
+      isCorrect: false
+      explanation: "That's incorrect. The Table API stores data in key/value tables."
+  - content: "Which Azure Cosmos DB API should you use to work with data in which entities and their relationships to one another are represented in a graph using vertices and edges?"
+    choices:
+    - content: "MongoDB API"
+      isCorrect: false
+      explanation: "That's incorrect. The MongoDB API stores data in binary JSON format."
+    - content: "Core (SQL) API"
+      isCorrect: false
+      explanation: "That's incorrect. The core (SQL) API is designed to store and query JSON documents."
+    - content: "Gremlin API"
+      isCorrect: true
+      explanation: "That's correct. The Gremlin API is used to manage a network of nodes (vertices) and the relationships between them (edges)."
+  - content: "How can you enable globally distributed users to work with their own local replica of a Cosmos DB database?"
+    choices:
+    - content: "Create an Azure Cosmos DB account in each region where you have users."
+      isCorrect: false
+      explanation: "That's incorrect. You only need a single Azure Cosmos DB account to manage a globally distributed database."
+    - content: "Use the Table API to copy data to Azure Table Storage in each region where you have users."
+      isCorrect: false
+      explanation: "That's incorrect. You do not need to use Azure Table storage to distribute data from Cosmos DB."
+    - content: "Enable multi-region writes and add the regions where you have users."
+      isCorrect: true
+      explanation: "That's correct. You can enable multi-region writes in the regions where you want users to work with the data."

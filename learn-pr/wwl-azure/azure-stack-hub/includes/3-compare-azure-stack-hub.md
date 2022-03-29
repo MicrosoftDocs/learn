@@ -1,6 +1,8 @@
 While Azure Stack Hub, Azure Stack HCI, and Azure Stack Edge have their distinct use cases, it might be sometimes difficult to determine which of them is optimal in a given scenario.
 
 :::image type="content" source="../media/stack-overview-image-large-1-dca21d7e.png" alt-text="Diagram shows the differences between global Azure, Azure Stack Hub, and Azure Stack HCI capabilities.":::
+
+
 Use the same application model, self-service portals, and APIs with Azure Resource Manager to deliver cloud-based capabilities whether your business uses global Azure or on-premises resources.
 
 This unit summarizes the differences between global Azure, Azure Stack Hub, and Azure Stack HCI capabilities. It provides common scenario recommendations to help you make the best choice for delivering Microsoft cloud-based services for your organization.

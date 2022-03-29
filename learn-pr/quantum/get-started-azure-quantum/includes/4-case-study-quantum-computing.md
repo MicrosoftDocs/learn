@@ -4,8 +4,6 @@ Quantum mechanics is the underlying "operating system" of our universe. It descr
 
 Classical computing, which uses binary states, is increasingly challenged as the size of the system grows. As we've seen throughout the [learning path](../../../paths/quantum-computing-fundamentals/index.yml?azure-portal=true), quantum computing makes use of quantum mechanical phenomena such as *superposition*, *interference*, and *entanglement* to address some of these challenges. For simulating intrinsically quantum mechanical problems, quantum computing is promising, because quantum states can be used to represent the natural states in question.
 
-![Figure of Azure Quantum computing with Q D K.](../media/4-azure-quantum-computing-with-qdk.png)
-
 Superposition enables other quantum mechanical effects, such as *interference* and *entanglement*. Those effects, in turn, empower [quantum algorithms](https://wikipedia.org/wiki/Shor%27s_algorithm?azure-portal=true) for faster searching, better optimization, and greater security.
 
 When quantum systems are designed to scale, they'll have capabilities that exceed our most powerful supercomputers. As the global community of quantum researchers, scientists, engineers, and business leaders continues to collaborate to advance the quantum ecosystem, we expect to see quantum impact accelerate across every industry.

@@ -69,7 +69,7 @@ Now we will consider whether Azure Data Lake Storage is the right choice for you
 
 ### When to choose Azure Blob Storage over Azure Data Lake
 
-Let us look at some criteria that will help you decide when to pick one storage solution over the other. In the following table, the two storage solutions are compared against a set of criteria.
+Here are some criteria that will help you decide when to pick one storage solution over the other. In the following table, the two storage solutions are compared against a set of criteria.
 
 | **Criteria**| **Azure Data Lake**| **Azure Blob Storage** |
 | - | -| - |

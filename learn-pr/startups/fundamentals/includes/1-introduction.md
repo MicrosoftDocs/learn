@@ -6,13 +6,13 @@ We'll start by discussing some personal considerations:
 - How to manage your time and energy.
 - When to transition to building your business full-time.
 
-We'll also discuss what makes a startup successful, why having a business model that is repeatable and scalable is essential, as well as cover some of the most common reasons that startups fail – so you can avoid making these mistakes.
+We'll also discuss what makes a startup successful, and why having a business model that is repeatable and scalable is essential. Just as importantly, you'll learn about some of the most common reasons that startups fail, so you can avoid making these mistakes.
 
-Finally, we're going to talk about what founders should focus on in the first year of managing their startup so you can map out the next few steps you'll take in your own journey.
+Finally, we're going to talk about what founders should focus on in the first year of managing their startup. This discussion helps you map out the next few steps of your own journey.
 
 ## Learning objectives
 
-In this module you'll learn:
+In this module, you'll learn:
 
 - How to think about the startup journey from a personal perspective and prepare for the road ahead.
 - How to decide if you're ready to pursue your idea full-time.

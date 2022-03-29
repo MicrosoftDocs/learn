@@ -5,13 +5,13 @@ metadata:
   title: What are Tensors?
   description: Tensors are specialized data structures that are similar to arrays and matrices.
   author: cassiebreviu
-  ms.author: cassieb
+  ms.author: ruyakubu
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure
-durationInMinutes: 10
+durationInMinutes: 3
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/intro-to-pytorch/2-tensors.ipynb
+notebook: notebooks/2-tensors.ipynb
 quiz:
   title: Check your knowledge
   questions:

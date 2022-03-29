@@ -3,7 +3,7 @@ uid: learn.wwl.measure-index-azure-cosmos-db-sql-api
 metadata:
   title: Measure index performance in Azure Cosmos DB SQL API
   description: "Measure the performance of an indexing policy in Azure Cosmos DB SQL API."
-  ms.date: 12/21/2021
+  ms.date: 03/03/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

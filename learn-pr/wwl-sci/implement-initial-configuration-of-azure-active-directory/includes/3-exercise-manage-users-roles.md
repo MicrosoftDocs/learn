@@ -12,7 +12,7 @@ The tasks in this exercise and the exercises in this learning path require you t
 4.  Use the wizard to sign up for your Azure trial subscription.
 5.  You will need to an Azure AD P2 license to complete some of the exercises. In the organization you created, search for and then select **Azure Active Directory**.
 6.  Select **Licenses** in the menu.
-7.  In the right **Quick tasks** menu of the Licenses - Overview page, select **Get a free trial**.<br>
+7.  In the right **Quick tasks** menu of the Licenses - Overview page, select **Get a free trial**
 8.  Under Getting started with Azure AD, select **Get a free trial for Azure AD Premium**.
 9.  In the Activate pane, under **AZURE AD PREMIUM P2**, select **Free trial** and then select **Activate**.
 10. In the navigation menu on the left, select **Overview**.
@@ -86,9 +86,9 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
 1.  In Azure Active Directory, All users blade, select **Chris Green**.
 2.  On the **user’s profile** page, select **Assigned roles**. The **Assigned roles** page appears.
 3.  Select **Add assignments**, select the role to assign to the user (for example, *Application administrator*), and then select **Add**.
-
-:::image type="content" source="../media/directory-role-select-role-86324f35.png" alt-text="Assigned roles page - showing the selected role":::
-
+    
+    :::image type="content" source="../media/directory-role-select-role-86324f35.png" alt-text="Assigned roles page - showing the selected role":::
+    
 
 The newly assigned Application administrator role appears on the user’s **Assigned roles** page.
 
@@ -101,8 +101,8 @@ If you need to remove the role assignment from a user, you can also do that from
 1.  In **Azure Active Directory**, select **Users**, and then select the user getting the role assignment removed. For example, *Chris Green*.
 2.  Select **Assigned roles**, then select the name of the role your wish to removed - `Application Administrator`.
 3.  Select the check box for the user `Chris Green` who will be removed from the role, and then select **Remove assignments**.
-
-:::image type="content" source="../media/directory-role-remove-role-ce35b984.png" alt-text="Screen image displaying the Remove assignments dialog box with Yes highlighted":::
-
+    
+    :::image type="content" source="../media/directory-role-remove-role-ce35b984.png" alt-text="Screen image displaying the Remove assignments dialog box with Yes highlighted":::
+    
 
 The Application administrator role is removed from the user and it no longer appears on the **Chris Green – Assigned roles** page.

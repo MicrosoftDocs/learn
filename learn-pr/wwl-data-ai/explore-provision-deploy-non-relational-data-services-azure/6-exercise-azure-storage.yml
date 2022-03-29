@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.exercise-azure-storage
+title: 'Exercise: Explore Azure Storage'
+metadata:
+  title: 'Exercise: Explore Azure Storage'
+  description: "Exercise: Explore Azure Storage"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-environment
+azureSandbox: true
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-azure-storage.md)]

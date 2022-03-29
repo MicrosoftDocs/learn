@@ -109,7 +109,7 @@ In the Hierarchy window, expand the **ClippingObjects** object to expose the thr
 
     :::image type="content" source="../media/enable-clip-feature.png" alt-text="Screenshot of Configure Clipping Objects to enable clipping feature." lightbox="../media/enable-clip-feature.png":::
 
-2. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the Clipping objects.
+2. Make sure the Clipping objects are turned on by enabling the ClippingObjects prefab in the Hierarchy window.
 
 ## Configure eye-tracking to highlight tooltips
 

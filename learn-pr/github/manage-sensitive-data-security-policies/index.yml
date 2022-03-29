@@ -20,7 +20,7 @@ prerequisites:  |
   - A GitHub Enterprise Cloud or Enterprise Server account
   - Working knowledge of GitHub Actions and workflows
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/manage-sensitive-data-security-policies.svg
 levels:
   - intermediate
 roles:

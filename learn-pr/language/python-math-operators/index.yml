@@ -19,7 +19,7 @@ abstract: |
 prerequisites: | 
   - Ability to add and run cells in a Jupyter notebook.
   - Experience with Python, including declaring variables and using `input` to read values from a user.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/python-math-operators.svg
 levels:
   - beginner
 roles:

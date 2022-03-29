@@ -53,7 +53,7 @@ Direct federation limitations include those described in the following table.
      -  `okta.com`
      -  `federation.exostar.com`
      -  (This list is subject to change.)
- -  For example, when setting up direct federation for **`fabrikam.com`**, the authentication URL `https://fabrikam.com/adfs` will pass the validation. A host in the same domain will also pass, for example `https://sts.fabrikam.com/adfs`. However, the authentication URL `https://fabrikamconglomerate.com/adfs` or `https://fabrikam.com.uk/adfs` for the same domain won't pass.
+ -  For example, when setting up direct federation for `fabrikam.com`, the authentication URL `https://fabrikam.com/adfs` will pass the validation. A host in the same domain will also pass, for example `https://sts.fabrikam.com/adfs`. However, the authentication URL `https://fabrikamconglomerate.com/adfs` or `https://fabrikam.com.uk/adfs` for the same domain won't pass.
 
 
   :::column-end:::
@@ -301,29 +301,25 @@ First, create a new project in the Google Developers Console to obtain a client 
 1.  Go to the Google APIs at [https://console.developers.google.com](https://console.developers.google.com/), and sign in with your Google account. We recommend that you use a shared team Google account.
 2.  Accept the terms of service if you're prompted to do so.
 3.  Create a new project: On the dashboard, select **Create Project**, give the project a name (for example, **Azure AD B2B**), and then select **Create**:
-
-:::image type="content" source="../media/google-new-project-4886301c.png" alt-text="Screenshot that shows a New Project page":::
-
-
+    
+    :::image type="content" source="../media/google-new-project-4886301c.png" alt-text="Screenshot that shows a New Project page":::
+    
 4.  On the **APIs and Services** page, select **View** under your new project.
 5.  Select **Go to APIs overview** on the APIs card. Select **OAuth consent screen**.
 6.  Select **External**, and then select **Create**.
 7.  On the **OAuth consent screen**, enter an **Application name**:
-
-:::image type="content" source="../media/google-oauth-consent-screen-c7e4f331.png" alt-text="Screenshot that shows the Google OAuth consent screen":::
-
-
+    
+    :::image type="content" source="../media/google-oauth-consent-screen-c7e4f331.png" alt-text="Screenshot that shows the Google OAuth consent screen":::
+    
 8.  Scroll to the **Authorized domains** section and enter **microsoftonline.com**:
-
-:::image type="content" source="../media/google-oauth-authorized-domains-735b92b1.png" alt-text="Screenshot that shows the Authorized domains section":::
-
-
+    
+    :::image type="content" source="../media/google-oauth-authorized-domains-735b92b1.png" alt-text="Screenshot that shows the Authorized domains section":::
+    
 9.  Select **Save**.
 10. Select **Credentials**. On the **Create credentials** menu, select **OAuth client ID**:
-
-:::image type="content" source="../media/google-api-credentials-9fed305a.png" alt-text="Screenshot that shows the Google APIs Create credentials menu":::
-
-
+    
+    :::image type="content" source="../media/google-api-credentials-9fed305a.png" alt-text="Screenshot that shows the Google APIs Create credentials menu":::
+    
 11. Under **Application type**, select **Web application**. Give the application a suitable name, like **Azure AD B2B**. Under **Authorized redirect URIs**, enter the following URIs:
     
      -  `https://login.microsoftonline.com`
@@ -331,14 +327,13 @@ First, create a new project in the Google Developers Console to obtain a client 
     
     > [!NOTE]
     > To find your tenant ID, go to the [Azure portal](https://portal.azure.com/). Under Azure Active Directory, select Properties and copy the Tenant ID.
-
-:::image type="content" source="../media/google-create-oauth-client-id-79adf860.png" alt-text="Screenshot that shows the Authorized redirect URIs section":::
-
-
+    
+    :::image type="content" source="../media/google-create-oauth-client-id-79adf860.png" alt-text="Screenshot that shows the Authorized redirect URIs section":::
+    
 12. Select **Create**. Copy the client ID and client secret. You'll use them when you add the identity provider in the Azure portal.
-
-:::image type="content" source="../media/google-auth-client-id-secret-91256368.png" alt-text="Screenshot that shows the OAuth client ID and client secret":::
-
+    
+    :::image type="content" source="../media/google-auth-client-id-secret-91256368.png" alt-text="Screenshot that shows the OAuth client ID and client secret":::
+    
 
 ## Step 2: Configure Google federation in Azure AD
 
@@ -350,9 +345,9 @@ You'll now set the Google client ID and client secret. You can use the Azure por
 2.  Select **External Identities**.
 3.  Select **All identity providers**, and then select the **Google** button.
 4.  Enter the client ID and client secret you obtained earlier. Select **Save**:
-
-:::image type="content" source="../media/google-identity-provider-f34833f9.png" alt-text="Screenshot that shows the Add Google identity provider page":::
-
+    
+    :::image type="content" source="../media/google-identity-provider-f34833f9.png" alt-text="Screenshot that shows the Add Google identity provider page":::
+    
 
 ## How do I remove Google federation?
 
@@ -364,10 +359,9 @@ You can delete your Google federation setup. If you do so, Google guest users wh
 2.  Select **External Identities**.
 3.  Select **All identity providers**.
 4.  On the **Google** line, select the ellipsis button (**...**) and then select **Delete**.
-
-:::image type="content" source="../media/google-social-identity-providers-81f10127.png" alt-text="Screenshot that shows the Delete button for the social identity provider":::
-
-
+    
+    :::image type="content" source="../media/google-social-identity-providers-81f10127.png" alt-text="Screenshot that shows the Delete button for the social identity provider":::
+    
 5.  Select **Yes** to confirm the deletion.
 
 ## Add Facebook as an identity provider for external identities
@@ -418,10 +412,9 @@ Now you'll set the Facebook client ID and client secret, either by entering it i
 4.  Select **All identity providers**, then select **Facebook**.
 5.  For the **Client ID**, enter the **App ID** of the Facebook application that you created earlier.
 6.  For the **Client secret**, enter the **App Secret** that you recorded.
-
-:::image type="content" source="../media/add-social-identity-provider-page-973ef9ae.png" alt-text="Screenshot showing the Add social identity provider page":::
-
-
+    
+    :::image type="content" source="../media/add-social-identity-provider-page-973ef9ae.png" alt-text="Screenshot showing the Add social identity provider page":::
+    
 7.  Select **Save**.
 
 ## How do I remove Facebook federation?

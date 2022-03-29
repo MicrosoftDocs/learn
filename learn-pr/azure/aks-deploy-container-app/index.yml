@@ -3,7 +3,8 @@ uid: learn.aks-deploy-container-app
 metadata:
   title: Deploy a containerized application on Azure Kubernetes Service
   description: Explore how to create and deploy a containerized application by using Azure Kubernetes Service declarative manifest files.
-  ms.date: 07/31/2020
+  ms.published: 07/31/2020
+  ms.date: 03/01/2022
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial

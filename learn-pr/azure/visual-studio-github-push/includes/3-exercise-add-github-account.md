@@ -8,7 +8,7 @@ In this exercise, you'll add a GitHub account to your Visual Studio keychain and
 
 2. If you're not already signed in to Visual Studio, select the **Sign in** button in the upper-right corner of the Visual Studio window. Continue to sign in with your work or personal account.
 
-    :::image type="content" source="../media/3-sign-in-button.png" alt-text="Screenshot of the Visual Studio account sign-in button.":::
+    :::image type="content" source="../media/3-sign-in-button.png" alt-text="Screenshot of the Visual Studio account sign in button.":::
 
 3. After you're signed in to Visual Studio, you see an avatar button in the upper-right corner. Select it and then select **Account settings** from the dropdown list.
 
@@ -18,9 +18,9 @@ In this exercise, you'll add a GitHub account to your Visual Studio keychain and
 
     :::image type="content" source="../media/3-github-account-button.png" alt-text="Screenshot of the button for adding a GitHub account.":::
 
-5. You're redirected to the GitHub sign-in page in your default browser. Enter your GitHub credentials and select **Sign in**. You might need to enter an authentication code for two-factor authentication.
+5. You're redirected to the GitHub sign in page in your default browser. Enter your GitHub credentials and select **Sign in**. You might need to enter an authentication code for two-factor authentication.
 
-    :::image type="content" source="../media/3-github-sign-in.png" alt-text="Screenshot of the GitHub sign-in screen.":::
+    :::image type="content" source="../media/3-github-sign-in.png" alt-text="Screenshot of the GitHub sign in screen.":::
 
 When you get a success message, you're signed in. That's it!
 
