@@ -21,7 +21,7 @@ For hybrid environments in which Active Directory Federation Services (AD FS) is
 
 ### Identify suspicious activities and advanced attacks across the cyberattack kill-chain
 
-Typically, attacks are launched against any accessible entity, such as a low-privileged user. Attacks then quickly move laterally until the attacker accesses valuable assets. These assets might include sensitive accounts, domain administrators, and highly sensitive data. Defender for Identity identifies these advanced threats at the source throughout the entire cyberattack kill chain:
+Typically, attacks are launched against any accessible entity, such as a low-privileged user. Attacks then quickly move laterally until the attacker accesses valuable assets. These assets might include sensitive accounts, domain administrators, and highly sensitive data. Defender for Identity identifies these advanced threats at the source throughout the entire cyberattack kill-chain:
 
 - Reconnaissance
 - Compromised credentials
