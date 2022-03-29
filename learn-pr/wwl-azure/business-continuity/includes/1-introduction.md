@@ -12,7 +12,7 @@ By the end of this module, you will be able to:
 
 - Troubleshoot backing up and restoring servers.
 
-- Troubleshoot Azure to Azure site recovery.
+- Troubleshoot Azure to Azure Site Recovery.
 
 - Troubleshoot site recovery with Hyper-V, SCCM, and VMware.
 
@@ -24,4 +24,4 @@ By the end of this module, you will be able to:
 
 - Demonstrate an understanding of PowerShell
 
-- Know how to run cloud shell to run commands
+- Know how to run Cloud Shell to run commands

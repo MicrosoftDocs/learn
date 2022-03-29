@@ -227,7 +227,7 @@ Verify properties as follows:
 
    1. Target size
 
-   1. [Availability set](/azure/virtual-machines/windows/tutorial-availability-sets)
+   1. Availability set (https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets)
 
    1. Managed disk settings
 
@@ -382,7 +382,7 @@ To check for latency problems, use the command-line utility [AzCopy](/azure/stor
 
 Microsoft recommends creating a network service endpoint in your virtual network for "Storage" so that the replication traffic doesn't go to the NVA.
 
-### Network connectivity/
+### Network connectivity
 
 Site Recovery needs the VM to provide outbound connectivity to specific URLs or IP ranges. You might have your VM behind a firewall or use network security group (NSG) rules to/l outbound connectivity. If so, you might experience issues. Make sure all the URLs are connected. For more information, see [Outbound connectivity for URLs](/azure/site-recovery/azure-to-azure-about-networking).
 
