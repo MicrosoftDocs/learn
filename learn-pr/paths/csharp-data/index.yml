@@ -25,6 +25,9 @@ prerequisites: |
     - Beginner level experience with C# concepts including declaring, initializing, and using variables
     - Beginner level experience with the `if-elseif-else` statement
     - Beginner level experience with arrays and the `foreach` statement
+video:
+  title: "Work with data in C#"
+  url: https://www.microsoft.com/videoplayer/embed/RWVrBc
 iconUrl: /learn/achievements/csharp-data.svg
 levels:
 - beginner
