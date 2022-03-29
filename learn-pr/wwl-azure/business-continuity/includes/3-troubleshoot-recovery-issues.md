@@ -18,41 +18,39 @@ To recover files, select the **File Recovery** option. It is then a three-step p
 
 1. Unmount the drives and close the connection.
 
-The following sections provide troubleshooting information when common error messages appear.
+The following sections provide troubleshooting information when common error messages appear:
 
-### Exception caught while connecting to target
+### Error message: Exception caught while connecting to target
 
 This may appear if the script is unable to access the recovery point. To resolve this issue:
 
 1. Check that the machine running the script has access to the recovery vault.
 
-2. Verify the connection to the Azure target IP addresses. To check, run the following from an elevated command prompt:
+1. Verify the connection to the Azure target IP addresses. To check, run the following from an elevated command prompt:
 
-  ```
-     nslookup download.microsoft.com
-  ```
-   or
+nslookup download.microsoft.com
 
-```
-    ping download.microsoft.com
-```
-3. Ensure access to iSCSI outbound port 3260.
+or
 
-4. Check for a firewall or NSG blocking traffic to Azure target IPs or recovery service URLs.
+ping download.microsoft.com
 
-5. Check that antivirus software isn't preventing the script from running.
+1. Ensure access to iSCSI outbound port 3260.
+
+1. Check for a firewall or NSG blocking traffic to Azure target IPs or recovery service URLs.
+
+1. Check that antivirus software isn't preventing the script from running.
 
 Also check the following common error messages:
 
-### The target has already been logged in via an iSCSI session
+### Error message: The target has already been logged in via an iSCSI session
 
 This might be caused by the script already running on the same machine, and the drives are already attached. Browse the available volumes using File Explorer to find the mounted drives.
 
-### This script is invalid because the disks have been dismounted via portal/exceeded the 12-hr limit. Download a new script from the portal
+### Error message: This script is invalid because the disks have been dismounted via portal/exceeded the 12-hr limit. Download a new script from the portal
 
 This message appears if you attempt to run the script more than 12 hours after you downloaded it. You need to download another script from the portal.
 
-### ExtensionSnapshotFailedCOM
+### Error message: ExtensionSnapshotFailedCOM
 
 The backup operation failed due to an issue with the Windows service COM+ System application. To resolve this issue, follow these steps:
 
@@ -176,7 +174,8 @@ If you get an error message saying that “the encryption passphrase for this se
 
 1. If the scratch location exists, try re-registering by using the old passphrase.
 
-NOTE: When you configure an encryption passphrase, always save it in a secure location.
+> [!NOTE]
+> When you configure an encryption passphrase, always save it in a secure location.
 
 ## Troubleshoot hybrid scenarios
 
@@ -228,7 +227,7 @@ Verify properties as follows:
 
    1. Target size
 
-   1. Availability set (https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets)
+   1. [Availability set](/azure/virtual-machines/windows/tutorial-availability-sets)
 
    1. Managed disk settings
 
@@ -268,8 +267,8 @@ In some scenarios, failover requires additional processing that takes around 8 t
 
 - VMware VMs that don't have the following boot drivers: storvsc, vmbus, storflt, intelide, atapi.
 
-NOTE: Don’t cancel a failover in progress. If you cancel a failover in progress, the VM won’t replicate again.
-
+> [!NOTE]
+> Don’t cancel a failover in progress. If you cancel a failover in progress, the VM won’t replicate again.
 
 If you have problems, try the following troubleshooting steps:
 
@@ -303,7 +302,7 @@ A System Center Configuration Manager (SCCM) site recovery is needed if a site f
 
 If you experience problems, try the following troubleshooting issues:
 
-####Check that previous configurations are not on the site server, as this can cause conflicts. Remove previous configurations before restoring Configuration Manager:
+1. Check that previous configurations are not on the site server, as this can cause conflicts. Remove previous configurations before restoring Configuration Manager:
 
 - Restoring to a new server.
 
@@ -311,7 +310,7 @@ If you experience problems, try the following troubleshooting issues:
 
 - Cleaning an existing server, including deleting registry entries starting with SMS from HKLM\System\CurrentControlSet\Services.
 
-####For site database recovery only before restoring Configuration Manager:
+1. For site database recovery only before restoring Configuration Manager:
 
 - Back up the site database, including supporting databases such as WSUS.
 
@@ -321,7 +320,7 @@ If you experience problems, try the following troubleshooting issues:
 
 - Restart the SQL Server.
 
-####Clean an existing server for full recovery before restoring Configuration Manager:
+1. Clean an existing server for full recovery before restoring Configuration Manager:
 
 - Back up the site database, including supporting databases such as WSUS.
 
@@ -337,7 +336,7 @@ If you experience problems, try the following troubleshooting issues:
 
 - Restore the content library and other databases like WSUS.
 
-####Use a supported version and the same edition of SQL Server:
+1. Use a supported version and the same edition of SQL Server:
 
 - Check that the version of SQL Server is both supported, and the same edition as the original. Restoring to a newer version of SQL Server is supported, providing you don’t change the edition—you can restore Standard to Standard and Enterprise to Enterprise.
 
@@ -345,11 +344,11 @@ If you experience problems, try the following troubleshooting issues:
 
 - Make sure the MDF and LDF files are valid. When you recover a site, there's no check for the state of the files.
 
-####SQL Server Always On availability groups:/
+1. SQL Server Always On availability groups:/
 
 - If you use SQL Server Always On availability groups to host the site database, modify your recovery plans as described in [Prepare to use SQL Server Always On](/mem/configmgr/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database).
 
-####Database replicas:
+1. Database replicas:
 
 - After you restore a site database that you configured for database replicas, reconfigure each replica. Before you can use the database replicas, recreate both the publications and subscriptions.
 
@@ -377,13 +376,13 @@ To find out whether this is a recurring problem, check the data change rate of t
 
 ### Network connectivity problems
 
-Site Recovery sends replicated data to the cache storage account. You might experience network / if uploading the data from a virtual machine to the cache storage account is slower than 4MB in three seconds.
+Site Recovery sends replicated data to the cache storage account. You might experience network errors if uploading the data from a virtual machine to the cache storage account is slower than 4MB in three seconds.
 
 To check for latency problems, use the command-line utility [AzCopy](/azure/storage/common/storage-use-azcopy-v10). This uploads data from the virtual machine to the cache storage account. If the latency is high, check whether you're using a network virtual appliance (NVA) to control outbound network traffic from VMs. The appliance might get throttled if all the replication traffic passes through the NVA.
 
 Microsoft recommends creating a network service endpoint in your virtual network for "Storage" so that the replication traffic doesn't go to the NVA.
 
-### Network connectivity
+### Network connectivity/
 
 Site Recovery needs the VM to provide outbound connectivity to specific URLs or IP ranges. You might have your VM behind a firewall or use network security group (NSG) rules to/l outbound connectivity. If so, you might experience issues. Make sure all the URLs are connected. For more information, see [Outbound connectivity for URLs](/azure/site-recovery/azure-to-azure-about-networking).
 

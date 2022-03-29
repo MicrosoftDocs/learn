@@ -81,7 +81,7 @@ When the first phase has completed, you can see that it is **Crash Consistent**.
 
     ![Screen shot showing multiple backup instances.](../media/4-multiple-backups.png)
 
-1. Click **labvm**. This shows that the backup is **Crash Consistent**. This is incorrect, the backup should be **Application Consistent**. You need to find out why, and fix the problem.
+1. Scroll down until you see **labvm** and select **labvm**. This shows that the backup is **Crash Consistent**. This is incorrect, the backup should be **Application Consistent**. You need to find out why, and fix the problem.
 
     > **NOTE**:
     > Only the first phase has completed, and the data will now be transferring to the vault. You can continue with the lab; you don’t have to wait for this to complete.
