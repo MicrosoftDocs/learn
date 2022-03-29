@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing.troubleshoot-routing-traffic-control
+title: Troubleshoot routing and traffic control
+metadata:
+  title: Troubleshoot routing and traffic control
+  description: "Troubleshoot routing and traffic control"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-troubleshoot-routing-traffic-control.md)]
