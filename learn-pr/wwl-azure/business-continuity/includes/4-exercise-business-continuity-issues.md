@@ -1,10 +1,7 @@
-This module requires a sandbox to complete. A sandbox gives you access to free resources. Your personal subscription will not be charged. The sandbox may only be used to complete training on Microsoft Learn. Use for any other reason is prohibited, and may result in permanent loss of access to the sandbox.
-
-Microsoft provides this lab experience and related content for educational purposes. All presented information is owned by Microsoft and intended solely for learning about the products and services in this Microsoft Learn module.
-
-Sign in to activate the sandbox.
-
 You have been asked to make a backup of a virtual machine. The backup must be application consistent.
+
+> [!IMPORTANT]
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
 ## Create the exercise environment
 Using the cloud shell on the right, run these commands to create the example topology. The environment will take approximately 5 minutes to build.
