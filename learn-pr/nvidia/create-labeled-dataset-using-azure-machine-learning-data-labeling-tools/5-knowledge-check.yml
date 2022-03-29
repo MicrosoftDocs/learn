@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 03/14/2022
+  author: toolboc
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: 'In this module, our image data was referenced using a datastore that attached to an existing ...'
+    choices: 
+    - content: 'Azure Blob Storage in an Azure Storage account'
+      isCorrect: true
+      explanation: Correct. An existing Azure Blob Storage resource was referenced by our datastore.
+    - content: 'Azure Synapse Analytics data pipeline'
+      isCorrect: false
+      explanation: Incorrect. While it is possible to reference data using an Azure Synapse Analytics data pipeline, this strategy was not used in this module.
+    - content: 'File Share in an Azure Storage Account.'
+      isCorrect: false
+      explanation: Incorrect. While it is possible to reference data using a File Share in an Azure Storage Account, this strategy was not used in this module.
+  - content: 'ML-assisted labeling was not required in this module, but how might it be beneficial to a data labeling project?'
+    choices: 
+    - content: 'ML-assisted labeling creates a model that can pre-label data in new image samples which may then be reviewed later by team members for accuracy.'
+      isCorrect: true
+      explanation: Correct. This is a great benefit that can reduce the time required to label image data in new samples.
+    - content: 'ML-assisted labeling can determine objects in an image using an existing model that detects a variety of common objects.'
+      isCorrect: false
+      explanation: Incorrect. This is not a functionality of ML-assisted labeling.
+    - content: 'Allows you to submit unlabeled to be labeled by a third party service that employs human labelers.'
+      isCorrect: false
+      explanation: Incorrect. This is not a functionality of ML-assisted labeling. 
+  - content: 'The reason we labeled 50 images in our dataset was to satisfy the following requirement:'
+    choices: 
+    - content: 'This is the total number of images that make up our dataset'
+      isCorrect: false
+      explanation: Incorrect. The unlabeled dataset contains over 200 unlabeled image samples.
+    - content: '50 is the maximum number of images that can used to train an object detection model with Anaconda.'
+      isCorrect: false
+      explanation: Incorrect. Anaconda can train using a significantly large amount of labeled samples that far exceeds 50.
+    - content: 'Anaconda requires a minimum of 50 labeled samples in order to successfully train our object detection model'
+      isCorrect: true
+      explanation: Correct.  If we supply less images, we will receive an error when attempting to train an object detection model using our exported dataset.
