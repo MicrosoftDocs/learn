@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-single-sign-on.exercise-add-sso-supported-application
+title: Exercise - Add a single sign-on supported application
+metadata:
+  unitType: exercise
+  title: Exercise - Add a single sign-on supported application
+  description: "Learn how to add an application that supports SAML-based single sign-on from the application gallery to an Azure AD tenant."
+  ms.date: 3/23/2022
+  author: davidmu1
+  ms.author: davidmu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise-add-sso-supported-application.md)]

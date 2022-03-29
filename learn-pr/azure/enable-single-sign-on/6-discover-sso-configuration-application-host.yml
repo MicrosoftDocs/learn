@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-single-sign-on.discover-sso-configuration-application-host
+title: Configure single sign-on at the application host
+metadata:
+  unitType: learning-content
+  title: Configure single sign-on at the application host
+  description: "Configure the application properties for single sign-on at the host of the application."
+  ms.date: 3/24/2022
+  author: davidmu1
+  ms.author: davidmu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-discover-sso-configuration-application-host.md)]

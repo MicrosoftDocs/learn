@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-single-sign-on.exercise-configure-sso-azure-portal
+title: Exercise - Configure single sign-on for the application in the Azure portal.
+metadata:
+  unitType: exercise
+  title: Exercise - Configure single sign-on for the application in the Azure portal.
+  description: "Configure the appropriate single sign-on URLs needed in the Azure AD tenant. URLs and a certificate will also be gathered for configuring the application at the host."
+  ms.date: 3/24/2022
+  author: davidmu1
+  ms.author: davidmu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise-configure-sso-azure-portal.md)]
