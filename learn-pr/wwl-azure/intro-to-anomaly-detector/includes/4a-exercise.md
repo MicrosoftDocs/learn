@@ -39,7 +39,7 @@ To test the capabilities of the Anomaly Detector service, we'll use a simple com
 
 ## Configure and run a client application
 
-Now that you have a Cloud Shell environment, you can run a simple application that uses the Anomaly Detector service to analyze an image.
+Now that you have a Cloud Shell environment, you can run a simple application that uses the Anomaly Detector service to analyze data.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -75,7 +75,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
 5. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
-    The sample client application will use your Anomaly Detector service to analyze a file containing a series of date/times and numeric values.
+    Remember, anomaly detection is an artificial intelligence technique used to determine whether values in a series are within expected parameters. The sample client application will use your Anomaly Detector service to analyze a file containing a series of date/times and numeric values. The application should return results indicating at each time point, whether the numeric value is within expected parameters.   
 
 6. In the PowerShell pane, enter the following commands to run the code:
 
@@ -84,7 +84,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     .\detect-anomalies.ps1
     ```
 
-7. Review the results, noting that the final column in the results is **True** or **False** to indicate if the value is considered an anomaly or not. 
+7. Review the results, noting that the final column in the results is **True** or **False** to indicate if the value recorded at each date/time is considered an anomaly or not. Consider how we could use this information in a real-life situation. What action could the application trigger if the values were of fridge temperature or blood pressure and anomalies were detected?  
 
 ## Learn more
 
