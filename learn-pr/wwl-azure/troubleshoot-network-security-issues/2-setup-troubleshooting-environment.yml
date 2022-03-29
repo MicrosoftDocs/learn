@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-network-security-issues.setup-troubleshooting-environment
+title: Setup troubleshooting environment
+metadata:
+  title: Setup troubleshooting environment
+  description: "Setup troubleshooting environment"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-setup-troubleshooting-environment.md)]

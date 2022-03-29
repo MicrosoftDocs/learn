@@ -3,7 +3,7 @@ uid: learn.wwl.troubleshoot-network-security-issues
 metadata:
   title: Troubleshoot network security issues with Microsoft Azure
   description: "Troubleshoot network issues revolving around WAF, NSG, Azure Firewall, latency within a virtual network."
-  ms.date: 03/28/2022
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial
@@ -42,12 +42,14 @@ products:
 - azure-virtual-network
 units:
 - learn.wwl.troubleshoot-network-security-issues.introduction
+- learn.wwl.troubleshoot-network-security-issues.setup-troubleshooting-environment
 - learn.wwl.troubleshoot-network-security-issues.troubleshoot-network-security-issues
 - learn.wwl.troubleshoot-network-security-issues.troubleshoot-nsgs
 - learn.wwl.troubleshoot-network-security-issues.troubleshoot-azure-firewall
 - learn.wwl.troubleshoot-network-security-issues.troubleshoot-latency-issues-within-virtual-network
-- learn.wwl.troubleshoot-network-security-issues.exercise
+- learn.wwl.troubleshoot-network-security-issues.exercise-troubleshoot-issue-connecting-virtual-machine-scale-set
+- learn.wwl.troubleshoot-network-security-issues.exercise-resolve-issue-connecting-virtual-machine-scale-set
 - learn.wwl.troubleshoot-network-security-issues.knowledge-check
-- learn.wwl.troubleshoot-network-security-issues.summary-resources
+- learn.wwl.troubleshoot-network-security-issues.summary
 badge:
   uid: learn.wwl.troubleshoot-network-security-issues.badge

@@ -1,20 +1,20 @@
-As a support engineer, you have investigated various network security issues. Having completed this module, now you can troubleshoot issues arising in the security infrastructure using Azure Portal and other tools.
+As a support engineer, you have investigated various network security issues. Having completed this module, you can troubleshoot issues arising in the security infrastructure using the Azure portal and other tools.
 
-You have gained an understanding on how to protect your Azure Virtual Network through network security policies and resources.
+You now understand how to protect your Azure Virtual Network through network security policies and resources.
 
 Now that you’ve completed this module, you should be able to:
 
 - Troubleshoot network security issues.
 
-- Troubleshoot Network Security Group (NSG)
+- Troubleshoot Network Security Group (NSG).
 
-- Troubleshoot Azure Firewall
+- Troubleshoot Azure Firewall.
 
-- Troubleshoot latency issues within a virtual network
+- Troubleshoot latency issues within a virtual network.
 
-## Resources
+## Learn more
 
-Use these resources to discover more.
+Use these resources to discover more:
 
 [WAF overview](/azure/web-application-firewall/ag/ag-overview)
 
@@ -38,9 +38,9 @@ Use these resources to discover more.
 
 [Diagnose connectivity problems](/azure/private-link/troubleshoot-private-endpoint-connectivity)
 
-[IPsec/IKE parameters](/azure-stack/user/azure-stack-vpn-gateway-settings?view=azs-2102)
+[IPsec/IKE parameters](/azure-stack/user/azure-stack-vpn-gateway-settings)
 
-[Steps to configure an IPsec/IKE policy for site-to-site (S2S) VPN connections in Azure Stack Hub](/azure-stack/user/azure-stack-vpn-s2s?view=azs-2102&tabs=az1%2Caz2%2Caz3%2Caz4%2Caz5%2Caz8%2Caz6%2Caz7)
+[Steps to configure an IPsec/IKE policy for site-to-site (S2S) VPN connections in Azure Stack Hub](/azure-stack/user/azure-stack-vpn-s2s)
 
 [Azure limits](/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=/azure/virtual-network/toc.json)
 
