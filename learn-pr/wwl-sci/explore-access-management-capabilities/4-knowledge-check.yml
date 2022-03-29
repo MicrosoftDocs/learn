@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/25/2022
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -28,17 +28,17 @@ quiz:
     - content: "Amend your apps to allow Conditional Access."
       isCorrect: false
       explanation: "Incorrect. Conditional Access doesn't require apps to be changed in any way."
-  - content: "Sign in risk is a signal used by Conditional Access policies to decide whether to grant or deny access. What is sign in risk?"
+  - content: "Sign-in risk is a signal used by Conditional Access policies to decide whether to grant or deny access. What is sign-in risk?"
     choices:
     - content: "The probability that the device is owned by the identity owner."
       isCorrect: false
-      explanation: "Incorrect. Sign in risk doesn't calculate any probability relating to users’ devices."
+      explanation: "Incorrect. Sign-in risk doesn't calculate any probability relating to users’ devices."
     - content: "The probability that the authentication request isn't authorized by the identity owner."
       isCorrect: true
-      explanation: "Correct. Sign in risk is the real-time calculation that a given authentication request isn't authorized by the identity owner."
+      explanation: "Correct. Sign-in risk is the real-time calculation that a given authentication request isn't authorized by the identity owner."
     - content: "The probability that the user is authorized to view data from a particular application."
       isCorrect: false
-      explanation: "Incorrect. Sign in risk doesn't calculate the probability that a user is authorized to view data."
+      explanation: "Incorrect. Sign-in risk doesn't calculate the probability that a user is authorized to view data."
   - content: "IT admins have been asked to review Azure AD roles assigned to users, to improve organizational security. Which of the following should they implement?"
     choices:
     - content: "Remove all global admin roles assigned to users."
