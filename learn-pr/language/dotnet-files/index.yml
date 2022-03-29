@@ -12,7 +12,6 @@ metadata:
   - team=cloud_advocates
   ms.contributors:
   - masoucou-06132021
-  - aapowell-09102021
 title: Work with files and directories in a .NET app
 summary: Build an app that manipulates files and directories with C# and .NET.
 abstract: |   

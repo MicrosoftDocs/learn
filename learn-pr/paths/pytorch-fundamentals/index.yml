@@ -14,7 +14,6 @@ metadata:
   - team=cloud_advocates
   ms.contributors:
   - cassieb-08182021
-  - aapowell-09102021
 prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks

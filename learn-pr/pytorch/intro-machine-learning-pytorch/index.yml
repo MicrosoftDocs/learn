@@ -12,7 +12,6 @@ metadata:
   - team=cloud_advocates
   ms.contributors:
   - sejuare-04262021
-  - aapowell-09102021
 title: Introduction to PyTorch
 summary: Learn key concepts used to build machine learning models with PyTorch.  We will train a neural network model that recognizes and classifies images.
 abstract: |
