@@ -70,8 +70,7 @@ Refer to [WAF configuration](/azure/web-application-firewall/ag/application-gate
 
 1. Select **Manage exclusions** under **Managed rules**.
 
-:::image type="content" source="../media/2-wafpolicysettings.png" alt-text="Screenshot showing WAF policy settings. Manage exclusions tab under Managed rules is
-highlighted.":::
+:::image type="content" source="../media/2-wafpolicysettings.png" alt-text="Screenshot showing WAF policy settings. Manage exclusions tab under Managed rules is highlighted.":::
 
 :::image type="content" source="../media/2-wafmanagedrules.png" alt-text="Screenshot showing Managed rules in WAF portal. The option of Add is highlighted.":::
 

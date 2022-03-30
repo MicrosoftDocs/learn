@@ -1,15 +1,15 @@
-After investigating the connection issues to your website, you’ve found an issue with the load balancer rule user by the virtual machine scale set.
+After investigating the connection issues to your website, you've found an issue with the load balancer rule user by the virtual machine scale set.
 
-In this exercise, you’ll resolve the issue and check that the website can now be accessed.
+In this exercise, you'll resolve the issue and check that the website can now be accessed.
 
 > [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you have not already run the script in unit 2, please do so now so you can follow the exercise below. If you don't have an Azure subscription, you can still read along.
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
 ## Validate load balancer rules
 
 1. In the Azure portal, search for **load balancers**, and then under **Services**, click **Load balancers**.
 
-:::image type="content" source="../media/7-load-balancer.png" alt-text="A screenshot showing searching for load balancers.":::
+:::image type="content" source="../media/7-load-balancers.png" alt-text="A screenshot showing searching for load balancers.":::
 
 1. Click the **myScaleSetLB** load balancer.
 
@@ -19,7 +19,7 @@ In this exercise, you’ll resolve the issue and check that the website can now 
 
 1. From the list of rules, click **myLoadBalancerRuleWeb**.
 
-:::image type="content" source="../media/7-load-balancer-rule-web.png" alt-text="A screenshot of the load balancer rule, showing the port set to 80 and backend port set to 443. This is the error.":::
+:::image type="content" source="../media/7-my-load-balancer-rule-web.png" alt-text="A screenshot of the load balancer rule, showing the port set to 80 and backend port set to 443. This is the error.":::
 
 1. To resolve the backend issue, change the **Backend port** from **443** to **80**, and then click **Save**.
 
@@ -28,7 +28,7 @@ In this exercise, you’ll resolve the issue and check that the website can now 
 
 1. Wait until the rule has been deployed successfully.
 
-:::image type="content" source="../media/7-rule-successful.png" alt-text="A screenshot showing the successful deployment of the updated load balancer rule.":::
+:::image type="content" source="../media/7-successful-rule.png" alt-text="A screenshot showing the successful deployment of the updated load balancer rule.":::
 
 ## Verify that the website can now be reached
 
@@ -44,6 +44,6 @@ In this exercise, you’ll resolve the issue and check that the website can now 
     > --output tsv
     > ```
 
-    If the website is online, you’ll see a page with a **Hello World** message from the backend instance.
+    If the website is online, you'll see a page with a **Hello World** message from the backend instance.
 
-:::image type="content" source="../media/7-hello-world.png" alt-text="A screenshot of the website showing it’s online.":::
+:::image type="content" source="../media/7-hello-world.png" alt-text="A screenshot of the website showing it's online.":::

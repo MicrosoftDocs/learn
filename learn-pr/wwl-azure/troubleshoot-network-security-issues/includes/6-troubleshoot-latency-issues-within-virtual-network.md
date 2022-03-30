@@ -31,7 +31,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 1. Search for **Network security groups**.
 
-:::image type="content" source="../media/6-search-nsg.png" alt-text="A screenshot showing the virtual machine scale set highlighted.":::
+:::image type="content" source="../media/6-search-nsg.png" alt-text="A screenshot showing the virtual machine scale set is shown on screen.":::
 
 1. Under **Services**, click **Network Security Groups**.
 
@@ -41,7 +41,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 1. In the Azure portal, search for **scale set**, and then under **Services**, click **Virtual machine scale sets**.
 
-:::image type="content" source="../media/6-search-vm-scale-sets.png" alt-text="A screenshot showing the virtual machine scale set highlighted.":::
+:::image type="content" source="../media/6-search-vm-scale-sets.png" alt-text="A screenshot showing the virtual machine scale set is highlighted.":::
 
 2. In the list, click **myScaleSet** to view the details.
 
