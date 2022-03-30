@@ -58,7 +58,7 @@ The App Service keeps logs in the hosting environment, which you can use to reso
 
 
     If the graph doesn't show errors, wait a couple of minutes and try again by selecting **Refresh**. 
-
+<!--
 
 ## Create a 404 alert
 
@@ -120,6 +120,7 @@ The App Service keeps logs in the hosting environment, which you can use to reso
 
 1. On the **Create an alert rule** panel, select the **Review + create** button at the bottom of the panel.
 
+-->
 
 ## Check your work
 
