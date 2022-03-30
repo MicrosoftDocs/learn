@@ -1,6 +1,6 @@
 ## Overview
 
-You have studied many ThreadX concepts and techniques, but there is much more to learn. In this unit, we will concentrate on a useful and authoritative source of information. That source is the ThreadX user guide, and it covers every aspect of ThreadX in detail.
+You have studied many ThreadX concepts and techniques, but there's much more to learn. In this unit, we'll concentrate on a useful and authoritative source of information. That source is the ThreadX user guide, and it covers every aspect of ThreadX in detail.
 
 ## Organization of the user guide
 
@@ -15,7 +15,7 @@ Following is the organization of the ThreadX user guide.
 |`5` | Describes writing I/O drivers for ThreadX applications|
 |`6` | Describes the demonstration application that is supplied with every ThreadX processor support package|
 
-We will concentrate on Chapter 4 because that chapter contains details about ThreadX services.
+We'll concentrate on Chapter 4 because that chapter contains details about ThreadX services.
 
 ## Groups of ThreadX services
 
@@ -35,7 +35,7 @@ For example, the service that would cause a thread to sleep 20 timer ticks is `t
 
 ## Example of a ThreadX service description
 
-All ThreadX service descriptions are organized using the same format. For this example, we will restrict our attention to the `tx_thread_sleep` service. For reference, you should access the [ThreadX user guide](https://docs.microsoft.com/en-us/azure/rtos/threadx/about-this-guide), go to Chapter 4, and then go to the `tx_thread_sleep` service. Following are the components of the `tx_thread_sleep` service.
+All ThreadX service descriptions are organized using the same format. For this example, we'll restrict our attention to the `tx_thread_sleep` service. For reference, you should access the [ThreadX user guide](https://docs.microsoft.com/azure/rtos/threadx/about-this-guide), go to Chapter 4, and then go to the `tx_thread_sleep` service. Following are the components of the `tx_thread_sleep` service.
 
 |Component|Description|
 |-------------|-----|
@@ -52,4 +52,4 @@ All ThreadX service descriptions are organized using the same format. For this e
 
 A typical method of invoking the `tx_thread_sleep` service is: `status = tx_thread_sleep (20)` where status is a UINT variable. If the service call was successfully completed, the value of status would be `TX_SUCCESS`. You could also check for other possibilities for this service call.
 
-The ThreadX user guide provides much information, and it is a valuable resource that you should use. In the next unit, we will study another resource for you to use.
+The ThreadX user guide provides much information, and it's a valuable resource that you should use. In the next unit, we'll study another resource for you to use.
