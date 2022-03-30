@@ -18,11 +18,11 @@ To avoid sign-in problems with Conditional Access, be very cautious if policies 
 
 To troubleshoot sign-in problems, you should initially review the error message. This will typically list the policy that is causing the problem and allow you to identify the policy to update. By clicking **More details** on the error message you can find the specific sign-in event.
 
-![More details from a Conditional Access interrupted web browser sign-in.](../media/4-more-details-sign-on.png)
+![More details from a Conditional Access interrupted web browser sign-in.](../media/4-more-details-sign.png)
 
 When you have the details of the sign-in event, you can open the Azure portal, select **Azure Active Directory** then select **Sign-ins**. Add filters to find the correct type of events, such as Conditional Access failures, and find the specific event.
 
-![Selecting the Conditional access filter in the sign-ins log](../media/4-more-details-sign-on.png)
+![Selecting the Conditional access filter in the sign-ins log](../media/4-more-details-sign.png)
 
 You can then select the event to view more details and the policy details for that event.
 

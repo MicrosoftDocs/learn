@@ -16,7 +16,7 @@ To troubleshoot connectivity issues, you must first have installed AD Connect in
 
 To troubleshoot pass-through authentication, you should first check that it is enabled and that the authentication agents are **Active**. To view the status, go to **Azure Active Directory Admin** Center and select **Azure AD Connect**.
 
-:::image type="content" source="../media/3-az-ad-connect.png" alt-text="Screenshot of Azure Active Directory admin center - Azure AD Connect blade.":::
+:::image type="content" source="../media/3-azure-active-directory-connect.png" alt-text="Screenshot of Azure Active Directory admin center - Azure AD Connect blade.":::
 
 You should then check if the user is getting errors, or if errors are reported in the **Azure Active Directory admin center**. For more information, see [Troubleshoot Azure Active Directory Pass-through Authentication](/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication).
 
@@ -30,11 +30,11 @@ To resolve object sync issues, start by running the troubleshooting task in the 
 
 - Start the Azure AD Connect wizard, select **Tasks**, select **Troubleshoot** then select **Next**.
 
-:::image type="content" source="../media/3-az-ad-additional-tasks.png" alt-text="Screenshot of troubleshoot object synchronization.":::
+   :::image type="content" source="../media/3-azure-active-directory-additional-tasks.png" alt-text="Screenshot of troubleshoot object synchronization.":::
 
 - Click **Launch** and type **1** to **Troubleshoot Object Synchronization**.
 
-:::image type="content" source="../media/3-az-ad-troubleshoot-object-synchronization.png" alt-text="Screenshot of global administrator credentials.":::
+   :::image type="content" source="../media/3-azure-active-directory-troubleshoot-object-synchronization.png" alt-text="Screenshot of global administrator credentials.":::
 
 For more information, see [Troubleshoot object synchronization with Azure AD Connect sync](/azure/active-directory/hybrid/tshoot-connect-objectsync).
 
