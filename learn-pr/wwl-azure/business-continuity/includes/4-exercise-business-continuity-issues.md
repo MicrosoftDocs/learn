@@ -9,7 +9,7 @@ Using the cloud shell on the right, run these commands to create the example top
 1. Clone the setup script from GitHub.
 
     ```console
-    git clone https://github.com/MicrosoftDocs/mslearn-business-continuity/blob/main/setup.md networking
+    git clone https://github.com/MicrosoftDocs/mslearn-business-continuity networking
     ```
 
 1. Run the setup script.
@@ -46,8 +46,8 @@ Using the cloud shell on the right, run these commands to create the example top
 
 1. Click **Backup now**, and then click **OK**.
 
-    ![Screen shot showing the backup screen.](../media/4-virtual machine-1-backupscreen.png)
-
+    :::image type="content" source="../media/4-vm1-backupscreen.png" alt-text="Screen shot showing the backup screen":::
+   
 1. The backup starts, and runs in two phases.
 
    - In the first phase, it takes a snapshot of the VM. This takes about 10 minutes.
@@ -62,11 +62,11 @@ You won't see anything in the Backup page of the VM until the backup has complet
 
 1. In the left navigation pane, under **Monitoring + reporting**, click **Backup jobs**. You should see your job running.
 
-    ![Screenshot showing multiple backup instances.](../media/4-backup-instances.png)
+    :::image type="content" source="../media//4-backup-instances.png" alt-text="Screenshot showing multiple backup instances."
 
 1. Click the backup job to see more info. You can see in the screen picture that the first phase has completed.
 
-    ![Screen shot showing a single backup intance.](../media/4-single-backup.png)
+    :::image type="content" source="../media/4-single-backup.png" alt-text="Screen shot showing a single backup instance."
 
 ## View results of first phase
 
@@ -76,15 +76,15 @@ When the first phase has completed, you can see that it is **Crash Consistent**.
 
 1. In the left navigation pane, under **Manage**, click **Backup instances**.
 
-    ![Screen shot showing multiple backup instances.](../media/4-multiple-backups.png)
-
-1. Scroll down until you see **labvm** and select **labvm**. This shows that the backup is **Crash Consistent**. This is incorrect, the backup should be **Application Consistent**. You need to find out why, and fix the problem.
+    :::image type="content" source="../media/4-multiple-backups.png" alt-text="Screen shot showing multiple backup instances."
+    
+    1. Scroll down until you see **labvm** and select **labvm**. This shows that the backup is **Crash Consistent**. This is incorrect, the backup should be **Application Consistent**. You need to find out why, and fix the problem.
 
     > ![NOTE]
     > Only the first phase has completed, and the data will now be transferring to the vault. You can continue with the lab; you don’t have to wait for this to complete.
 
-    ![Screenshot of the backup screen.](../media/4-backup-screen.png)
-
+    :::image type="content" source="../media/4-backup-screen.png" alt-text="Screenshot of the backup screen."
+ 
 ## Resolution
 
 The VM was in a **Stopped** state. You need to start the VM and wait for it to come to running state before making another backup.
@@ -99,7 +99,7 @@ The VM was in a **Stopped** state. You need to start the VM and wait for it to c
 
 1. Click **Backup now**.
 
-    ![Screenshot showing the crash consistent restore point.](../media/4-crash-instance-restore-point.png)
+    :::image type="content" source="../media/4-crash-instance-restore-point.png" alt-text="Screenshot showing the crash consistent restore point."
 
 1. On the **Backup now** page, click **OK**. The second backup will be an incremental backup and should take less time than the first backup.
 
@@ -107,4 +107,5 @@ The VM was in a **Stopped** state. You need to start the VM and wait for it to c
 
 1. When the first phase is complete, navigate to the **Backup** page of the VM. The send backup is **Application Consistent**.
 
-    ![Screenshot showing a crash consistent restore point.](../media/4-send-backup.png)
+    :::image type="content" source="../media/4-send-backup.png" alt-text="Screenshot showing backup screen."
+  

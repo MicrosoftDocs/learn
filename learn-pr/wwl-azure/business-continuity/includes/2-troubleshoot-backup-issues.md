@@ -56,7 +56,7 @@ By default, the summary displays open alerts in the last 24 hours. You can also 
 
 - Time range (24 hours, week, two weeks, 30 days, or custom)
 
-:::image type="content" source="../media/m01-backup-reports.png" alt-text="Screenshot that shows Backup Report.":::
+    :::image type="content" source="../media/2-backup-reports.png" alt-text="Screenshot that shows Backup Report.":::
 
 ### Alerts by email notification
 
@@ -114,7 +114,7 @@ The following views are available from the tabs:
 
 - Policy adherence – success of backups per day for every backup instance.
 
-:::image type="content" source="../media/m01-backup-center.png" alt-text="Screenshot of Backup Center.":::
+    :::image type="content" source="../media/2-backup-center.png" alt-text="Screenshot of Backup Center.":::
 
 ## Troubleshooting backups with Microsoft Azure Recovery Services (MARS)
 
