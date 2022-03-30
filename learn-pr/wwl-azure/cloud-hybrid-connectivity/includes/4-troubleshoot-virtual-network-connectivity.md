@@ -30,9 +30,9 @@ To troubleshoot connectivity between peers, do the following:
 
 1. Check the status of the peering connection:
 
-- **Initiated** indicates that you do not have a bidirectional link. For example, to peer VNetA to VNetB, two links must be created, one from VNetA to VNetB and another from VNetB to VNetA. Creating both links will change the state to **Connected**.
+   - **Initiated** indicates that you do not have a bidirectional link. For example, to peer VNetA to VNetB, two links must be created, one from VNetA to VNetB and another from VNetB to VNetA. Creating both links will change the state to **Connected**.
 
-- **Disconnected** indicates that one of the links was deleted. To re-establish a peering connection, you will need to delete and recreate both links.
+   - **Disconnected** indicates that one of the links was deleted. To re-establish a peering connection, you will need to delete and recreate both links.
 
 1. Check that two VNets do not have matching or overlapping address ranges. 
 
@@ -40,7 +40,7 @@ To troubleshoot connectivity between peers, do the following:
 
 [Gateway transit](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/virtual-network/virtual-network-peering-overview.md) is a peering property that allows a virtual network to use the VPN gateway in the peered virtual network for VNet-to-VNet connectivity. In the following diagram, you can see how gateway transit works with virtual network peering:
 
-:::image type="content" source="../media/2-gatewaytransit.png" alt-text="Screenshot of gateway transit with virtual network peering":::
+:::image type="content" source="../media/2-gateway-transit.png" alt-text="Screenshot of gateway transit with virtual network peering":::
 
 The following constraints apply when virtual networks are globally peered:
 
@@ -66,13 +66,13 @@ Transitive peering is when you:
 
 This is not supported with Azure peering. To achieve peering between VNetA and VNetC, you must peer them together. Alternatively, use a hub-and-spoke configuration and go through an NVA in the hub.
 
-![All vnets peered to each other](../media/2-vnetpeering.png)
+![All vnets peered to each other](../media/2-virtual-network-peering.png)
 
 ## Troubleshoot hub-and-spoke VNet configurations
 
 With a hub-and-spoke configuration, the hub virtual network acts as a central point of connectivity to many spoke virtual networks. The hub can also be used as the connectivity point to your on-premises networks. The spoke virtual networks peer with the hub and can be used to isolate workloads.
 
-:::image type="content" source="../media/2-hubspoke.png" alt-text="Screenshot showing Hub-and-spoke configuration":::
+:::image type="content" source="../media/2-hub-spoke.png" alt-text="Screenshot showing Hub-and-spoke configuration":::
 
 Here's how to troubleshoot connectivity between a hub-spoke virtual network and an on-premises resource.
 
@@ -138,18 +138,19 @@ If you're using a firewall or NVA:
 
    1. Take a network trace:
 
-    - Start a network trace on the destination VM. For Windows, you can use **Netsh**. For Linux, use **TCPDump**.
+     - Start a network trace on the destination VM. For Windows, you can use **Netsh**. For Linux, use **TCPDump**.
 
-    - Run **TcpPing** or **PsPing** from the source to the destination IP. This is an example of a **TcpPing** command: 
+     - Run **TcpPing** or **PsPing** from the source to the destination IP. This is an example of a **TcpPing** command: 
 
-```console
-tcping64.exe -t <destination VM address> 3389
+      ```console
+      tcping64.exe -t <destination VM address> 3389
 
-```
+      ```
 
-      1. After the **TcpPing** is complete, stop the network trace on the destination. If packets arrive from the source, there is no networking issue. Examine both the VM firewall and the application listening on that port to locate the configuration issue.
+  1. After the **TcpPing** is complete, stop the network trace on the destination. If packets arrive from the source, there is no networking issue. Examine both the VM firewall and the application listening on that port to locate the configuration issue.
 
- **NOTE**: You can't connect to the following resource types over global virtual network peering (virtual networks in different regions):
+ > [!NOTE]
+ > You can't connect to the following resource types over global virtual network peering (virtual networks in different regions):
 
 - VMs behind Basic ILB SKU
 

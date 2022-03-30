@@ -4,7 +4,8 @@ There are two types of Azure virtual WANs:
 
 - Standard – can include ExpressRoute, User VPN (P25), VPN (site-to-site), inter-hub and VNet to VNet transiting, Azure Firewall, and NVA in a virtual WAN.
 
-**NOTE**: You can upgrade from Basic to Standard, but not the other way around.
+> [!NOTE]
+> You can upgrade from Basic to Standard, but not the other way around.
 
 ## Monitor virtual WANs
 
@@ -26,11 +27,11 @@ To access Azure Monitor Insights for Azure Virtual WAN:
 
 1. Under **Monitoring**, select **Insights (preview)**. The **Insights** view is displayed.
 
-![Screenshot of Insights view](../media/3-insightsview.png)
+![Screenshot of Insights view](../media/3-insights-view.png)
 
 The Insights view displays the virtual WAN resources with color-coded symbols to indicate their status. When you select a resource, the Insights view is displayed.
 
-![Virtual WAN resources](../media/3-virtualwanresources.png)
+![Virtual WAN resources](../media/3-virtual-wan-resources.png)
 
 The Insights view is diagrammatic, with each resource state color-coded. Metrics are displayed in a mini workbook on the right.
 
@@ -46,11 +47,11 @@ You can:
 
 - Right-click to access the Azure portal page for that resource.
 
-:::image type="content" source="../media/3-dependencymap.png" alt-text="Screenshot of dependency map":::
+:::image type="content" source="../media/3-dependency-map.png" alt-text="Screenshot of dependency map":::
 
 Select **View detailed metrics** to display information about your virtual WAN resource capacity, performance, and utilization at the virtual WAN level, hub level, and for individual connections.
 
-:::image type="content" source="../media/3-detailedmetrics.png" alt-text="Screenshot of detailed metrics":::
+:::image type="content" source="../media/3-detailed-metrics.png" alt-text="Screenshot of detailed metrics":::
 
 ## Determine whether sites are configured correctly
 

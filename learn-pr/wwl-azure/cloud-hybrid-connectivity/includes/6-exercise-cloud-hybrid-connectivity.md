@@ -7,11 +7,11 @@ There are three Azure virtual networks (VNets) in a hub and spoke topology.
 
 :::image type="content" source="../media/4-spoke-hub-topology.png" alt-text="Screenshot of spoke and hub topology":::
 
-:::image type="content" source="../media/4-vn1-topology.png" alt-text="Diagram of the 1st virtual network topology.":::
+:::image type="content" source="../media/4-virtual-network-1-topology.png" alt-text="Diagram of the 1st virtual network topology.":::
 
-:::image type="content" source="../media/4-vn2-topology.png" alt-text="iagram of the 2nd virtual network topology.":::
+:::image type="content" source="../media/4-virtual-network-2-topology.png" alt-text="iagram of the 2nd virtual network topology.":::
 
-:::image type="content" source="../media/4-vn3-topology.png" alt-text="Diagram of the 3rd virtual network topology.":::
+:::image type="content" source="../media/4-virtual-network-3-topology.png" alt-text="Diagram of the 3rd virtual network topology.":::
 
 ## Diagnosis
 

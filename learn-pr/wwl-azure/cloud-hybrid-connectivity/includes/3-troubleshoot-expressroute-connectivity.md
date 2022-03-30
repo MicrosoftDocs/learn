@@ -90,21 +90,22 @@ In the Azure portal, select your virtual network, select **Subnets**, and then s
 
 When you create your virtual network gateway, gateway VMs are deployed to the gateway subnet and configured with the required ExpressRoute gateway settings.
 
->NOTE: It can take up to 45 minutes for the gateway to be created and ready for use.
+> [!NOTE] 
+> It can take up to 45 minutes for the gateway to be created and ready for use.
 
 ## Determine whether an ExpressRoute circuit is operational
 
 In the Azure portal, view existing ExpressRoute circuits by selecting **All services** > **Networking** > **ExpressRoute** circuits from the left menu.
 
-:::image type="content" source="../media/1-expressroutecircuits.png" alt-text="Screenshot of Expressroute circuits settings":::
+:::image type="content" source="../media/1-expressroute-circuits.png" alt-text="Screenshot of Expressroute circuits settings":::
 
 All ExpressRoute circuits created in the subscription will appear here.
 
-:::image type="content" source="../media/1-expressroutecircuitlist.png" alt-text="Screenshot of Expressroute circuits list":::
+:::image type="content" source="../media/1-expressroute-circuit-list.png" alt-text="Screenshot of Expressroute circuits list":::
 
 To make the circuit operational, you must send the service key to the service provider. Each service key is specific to one circuit. Select the relevant circuit, and on the **Overview** page find the service key field for your provider.
 
-:::image type="content" source="../media/1-servicekeyfield.png" alt-text="Screenshot of service key field":::
+:::image type="content" source="../media/1-service-key-field.png" alt-text="Screenshot of service key field":::
 
 The **Provider status** displays the state of provisioning on the service-provider side.
 
@@ -149,7 +150,8 @@ In the screenshot above, Azure private peering is provisioned, but Azure public 
 
 If enabling a peering fails, check if the primary and secondary subnets assigned match the configuration on the linked CE/PE-MSEE. Also check if the correct VlanId, AzureASN, and PeerASN are used on MSEEs and if these values map to the ones used on the linked CE/PE-MSEE. If MD5 hashing is chosen, the shared key should be the same on MSEE and PE-MSEE/CE pair. For security reasons, the previously configured shared key would not be displayed.
 
-**NOTE**: The **Peering Location** indicates the [physical location](/azure/expressroute/expressroute-locations) where you are peering with Microsoft. The Location property indicates where the Azure Network Resource Provider is located. It is good practice to choose a Network Resource Provider geographically close to the Peering Location of the circuit.
+> [!NOTE]
+> The **Peering Location** indicates the [physical location](/azure/expressroute/expressroute-locations) where you are peering with Microsoft. The Location property indicates where the Azure Network Resource Provider is located. It is good practice to choose a Network Resource Provider geographically close to the Peering Location of the circuit.
 
 You can also test your private peering connectivity by counting packets arriving and leaving the Microsoft Enterprise Edge (MSEE) devices. This tool will allow you to confirm connectivity by answering the questions such as:
 
@@ -167,25 +169,25 @@ You can validate that routes are live and configurated correctly by testing peer
 
 1. To access this diagnostic tool, select **Diagnose and solve problems** from your ExpressRoute circuit in the Azure portal.
 
-![Diagnose and solve problems from the ExpressRoute circuit in the Azure portal](../media/1-diagnosesolveproblems.png)
+   ![Diagnose and solve problems from the ExpressRoute circuit in the Azure portal](../media/1-diagnose-solve-problems.png)
 
 1. Select the **Connectivity issues**, under **Common Problems**.
 
-:::image type="content" source="../media/1-connectivityissues.png" alt-text="Screenshot of connectivity issues":::
+   :::image type="content" source="../media/1-connectivity-issues.png" alt-text="Screenshot of connectivity issues":::
 
 1. In the dropdown for **Tell us more about the problem you're experiencing**, select **Connectivity to Azure Private, Azure Public, or Dynamics 365 services**.
 
-:::image type="content" source="../media/1-connectivitytoazure.png" alt-text="Screenshot showing connection to Azure Private, Azure Public, or Dynamics 365 services":::
+   :::image type="content" source="../media/1-connectivity-azure.png" alt-text="Screenshot showing connection to Azure Private, Azure Public, or Dynamics 365 services":::
 
 - Scroll down to the **Test your private peering connectivity** section and expand it.
 
-:::image type="content" source="../media/1-testprivatepeeringconnectivity .png" alt-text="Screenshot showing Testing of private peering connectivity":::
+   :::image type="content" source="../media/1-test-private-peering-connectivity .png" alt-text="Screenshot showing Testing of private peering connectivity":::
 
 - Execute the [PsPing](/sysinternals/downloads/psping) test from your on-premises IP address to your Azure IP address and keep it running during the connectivity test.
 
 - Fill out the fields of the form, making sure to enter the same on-premises and Azure IP addresses used in <!--CE: Please check - I'm not sure what step 5 refers to.-->Step 5. Select **Submit** and wait for the results. When your results are ready, review the information for interpreting them below.
 
-:::image type="content" source="../media/1-connectivitytest.png" alt-text="Screenshot of Connectivity test":::
+   :::image type="content" source="../media/1-connectivity-test.png" alt-text="Screenshot of Connectivity test":::
 
 You'll have two sets of results for the primary and secondary MSEE devices. Review the number of matches in and out and use the following scenarios to interpret the results:
 
@@ -283,11 +285,11 @@ Create a filter rule:
 
 - To add and update rules, select the **manage rule** tab for your route filter.
 
-:::image type="content" source="../media/1-managerule.png" alt-text="Screenshot of Manage rule tab":::
+  :::image type="content" source="../media/1-manage-rule.png" alt-text="Screenshot of Manage rule tab":::
 
 - From the dropdown list, select the allowed service communities you want to connect to. Save the rule when you have finished.
 
-:::image type="content" source="../media/1-rulesettings.png" alt-text="Screenshot of Rule settings":::
+  :::image type="content" source="../media/1-rule-settings.png" alt-text="Screenshot of Rule settings":::
 
 ## Troubleshoot redundant configurations
 
@@ -317,34 +319,34 @@ You use iPerf for basic performance tests, by copying the files to a directory o
 
 1. Install the PowerShell Module.
 
-```console
-(new-object Net.WebClient).DownloadString("https://aka.ms/AzureCT") | Invoke-Expression
+   ```console
+   (new-object Net.WebClient).DownloadString("https://aka.ms/AzureCT") | Invoke-Expression
 
-```
+   ```
 
-This command downloads the PowerShell module and installs it locally.
+   This command downloads the PowerShell module and installs it locally.
 
 1. Install the supporting applications.
 
-```console
-Install-LinkPerformance
+   ```console
+   Install-LinkPerformance
 
-```
+   ```
 
-This AzureCT command installs iPerf and PSPing in a new directory, "C:\ACTTools". It also opens the Windows Firewall ports to allow ICMP and port 5201 (iPerf) traffic.
+   This AzureCT command installs iPerf and PSPing in a new directory, "C:\ACTTools". It also opens the Windows Firewall ports to allow ICMP and port 5201 (iPerf) traffic.
 
 1. Run the performance test.
 
-First, on the remote host, you must install and run iPerf in server mode. Ensure the remote host is listening on either 3389 (RDP for Windows) or 22 (SSH for Linux) and allowing traffic on port 5201 for iPerf. If the remote host is Windows, install the AzureCT and run the Install-LinkPerformance command. The command will set up iPerf and the necessary firewall rules.
+   First, on the remote host, you must install and run iPerf in server mode. Ensure the remote host is listening on either 3389 (RDP for Windows) or 22 (SSH for Linux) and allowing traffic on port 5201 for iPerf. If the remote host is Windows, install the AzureCT and run the Install-LinkPerformance command. The command will set up iPerf and the necessary firewall rules.
 
-When the remote machine is ready, open PowerShell on the local machine and start the test:
+   When the remote machine is ready, open PowerShell on the local machine and start the test:
 
-```powershell
-Get-LinkPerformance -RemoteHost 10.0.0.1 -TestSeconds 10
+   ```powershell
+   Get-LinkPerformance -RemoteHost 10.0.0.1 -TestSeconds 10
 
-```
+   ```
 
-This command runs a series of concurrent load and latency tests to help estimate the bandwidth capacity and latency of your network link.
+   This command runs a series of concurrent load and latency tests to help estimate the bandwidth capacity and latency of your network link.
 
 1. Review the output of the tests.
 
