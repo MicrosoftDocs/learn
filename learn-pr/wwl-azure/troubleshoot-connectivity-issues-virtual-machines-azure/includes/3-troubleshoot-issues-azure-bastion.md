@@ -22,7 +22,7 @@ Step 1 has been completed for you because you’re creating the Azure Bastion Se
 
 For step 2, you can accept the defaults and create a new subnet named AzureBastionSubnet. The wizard will create the subnet with these attributes:
 
-:::image type="content" source="../media/azurebastionsubnet-settings.png" alt-text="A screenshot of the AzureBastionSubnet subnet settings.":::
+:::image type="content" source="../media/azure-bastion-subnet-settings.png" alt-text="A screenshot of the AzureBastionSubnet subnet settings.":::
 
 Step 3 allows you to select the tier, basic or standard. You can then create or use a public IP address to connect to the Azure Bastion Service. Finally, accept the Microsoft supplied defaults to create the service.
 

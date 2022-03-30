@@ -9,25 +9,25 @@ Bastion is not supported in the Learn sandbox environment. Watch the video at th
 
 1. In the Azure portal, in the search box, type **Bastions**.
 
-:::image type="content" source="../media/checking-bastion-setup.png" alt-text="A screenshot showing the Bastion service being searched for and then selected.":::
+   :::image type="content" source="../media/check-bastion-setup.png" alt-text="A screenshot showing the Bastion service being searched for and then selected.":::
 
 1. From the results, under **Services**, click **Bastions**.
 
 1. You should see the Bastion service listed.
 
 :::image type="content" source="../media/bastion-list.png" alt-text="A screenshot showing the list of created Azure Bastions.":::
-    > **NOTE**:
+    > [!NOTE]
     > If there isn’t any Bastion services listed, create one.
 
 ## Check if there’s a private DNS zone
 
 1. In the Azure portal, in the search box, type **private dns**.
 
-:::image type="content" source="../media/private-dns-zones.png" alt-text="A screenshot of the Azure portal, searching for private dns, and selecting Private DNS zones.":::
+   :::image type="content" source="../media/private-dns-zones.png" alt-text="A screenshot of the Azure portal, searching for private dns, and selecting Private DNS zones.":::
 
 1. From the results, under **Services**, click **Private DNS zones**.
 
-:::image type="content" source="../media/no-private-dns-zones.png" alt-text="A screenshot showing that no private DNS zones are being used.":::
+   :::image type="content" source="../media/no-private-dns-zones.png" alt-text="A screenshot showing that no private DNS zones are being used.":::
 1. You shouldn’t see any private DNS zones.
 
 1. If there are any zones listed, check that they don’t end in **azure.com** or **core.windows.net**.
@@ -41,17 +41,17 @@ Bastion is not supported in the Learn sandbox environment. Watch the video at th
 
 1. Select the Bastion you are troubleshooting.
 
-:::image type="content" source="../media/azurebastionsubnet-link.png" alt-text="A screenshot showing the Virtual network/subnet link on the Bastion pane.":::
+   :::image type="content" source="../media/azure-bastion-subnet-link.png" alt-text="A screenshot showing the Virtual network/subnet link on the Bastion pane.":::
 
 1. In the top right, click the **Virtual network/subnet** link.
 
-:::image type="content" source="../media/virtual-network-subnets.png" alt-text="A screenshot of the subnets menu highlighted on the virtual network pane. With the AzureBastionSubnet selected..":::
+   :::image type="content" source="../media/virtual-network-subnets.png" alt-text="A screenshot of the subnets menu highlighted on the virtual network pane. With the AzureBastionSubnet selected..":::
 
 1. Under **Settings**, click **Subnets**, and then click **AzureBastionSubnet**.
 
-:::image type="content" source="../media/azurebastionsubnet-settings-nsg.png" alt-text="A screenshot showing that the AzureBastionSubnet has no Network Security Group associated with it.":::
+:::image type="content" source="../media/azure-bastion-subnet-settings-nsg.png" alt-text="A screenshot showing that the AzureBastionSubnet has no Network Security Group associated with it.":::
 
-    > **NOTE**:
+    > [!NOTE]
     > If Azure Bastion has a **Network security group** associated with the subnet, you need to check that it has all the inbound and outbound rules created.
 
 ## Run the Connection Troubleshoot tool to check for issues

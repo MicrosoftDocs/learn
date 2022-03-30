@@ -26,11 +26,11 @@ You can enable JIT access from the VM connection pane, from Workload protections
 
 1. Select **Just-in-time VM** access.
 
-:::image type="content" source="../media/select-jit-access-workload-protections.png" alt-text="A screenshot showing selecting Workload protections, and then selecting Just-in-time VM access.":::
+:::image type="content" source="../media/select-just-time-access-workload-protections.png" alt-text="A screenshot showing selecting Workload protections, and then selecting Just-in-time VM access.":::
 
 You can then select the **Not Configured** tab to show all the VMs in your subscription that don’t have JIT access enabled.
 
-:::image type="content" source="../media/enable-jit-access-defender.png" alt-text="A screenshot showing the Not Configured tab selected, and a check against the VM to protect it. The Enable JIT button on 1 VM is highlighted.":::
+:::image type="content" source="../media/enable-just-time-access-defender.png" alt-text="A screenshot showing the Not Configured tab selected, and a check against the VM to protect it. The Enable JIT button on 1 VM is highlighted.":::
 
 Select the check next to the VM you want to protect.
 
@@ -60,8 +60,8 @@ If your users are unable to request JIT access, check that their role has these 
 
 You use Access control (IAM) to check which users have been granted access to a VM. In the Azure portal, select Virtual machine, and then select Access control (IAM).
 
-:::image type="content" source="../media/checking-virtual-machine-access.png" alt-text="A screenshot showing a VM’s Access control (IAM) settings. The View button for View access to this resource is highlighted.":::
+:::image type="content" source="../media/check-virtual-machine-access.png" alt-text="A screenshot showing a VM’s Access control (IAM) settings. The View button for View access to this resource is highlighted.":::
 
 You can review the currently enabled and used JIT VM access in the Microsoft Defender for Cloud advanced protection section.
 
-:::image type="content" source="../media/current-jit-access.png" alt-text="A screenshot of the currently configured JIT VM access. Showing two VM’s and their current status of access.":::
+:::image type="content" source="../media/current-just-time-access.png" alt-text="A screenshot of the currently configured JIT VM access. Showing two VM’s and their current status of access.":::

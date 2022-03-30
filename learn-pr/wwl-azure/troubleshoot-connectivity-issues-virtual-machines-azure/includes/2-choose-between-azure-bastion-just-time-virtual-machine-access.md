@@ -20,7 +20,7 @@ As your VMs no longer have a public facing IP address, they are automatically pr
 
 ## Capabilities of just-in-time VM access
 
-:::image type="content" source="../media/jit-network-diagram.png" alt-text="A diagram showing how to connect to a VM using just-in-time VM access.":::
+:::image type="content" source="../media/just-time-network-diagram.png" alt-text="A diagram showing how to connect to a VM using just-in-time VM access.":::
 
 In comparison to Azure Bastion, just-in-time VM access is a feature of Microsoft Defender for Cloud. When enabled in your subscription, you can authorize JIT access to a specific VM for a set amount of time. When that time has passed the access is removed. Microsoft Defender for Cloud allows this access by automatically changing the inbound port rules in the NSG and Azure Firewall.
 
@@ -45,7 +45,7 @@ Both of your options greatly reduce the attack surface that malicious users migh
 
 If you want the maximum security, you can combine Azure Bastion and JIT VM access.
 
-:::image type="content" source="../media/bastion-jit-together.png" alt-text="A diagram showing how Azure Bastion and JIT VM access can be combined to get the benefits of both.":::
+:::image type="content" source="../media/bastion-just-time-together.png" alt-text="A diagram showing how Azure Bastion and JIT VM access can be combined to get the benefits of both.":::
 
 You get the benefits of browser-based SSL connection to an Azure VM, with no public IP address or RDP ports open, and the time-based restriction of just-in-time access.
 
