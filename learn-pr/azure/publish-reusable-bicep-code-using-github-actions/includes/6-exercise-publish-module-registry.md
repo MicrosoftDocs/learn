@@ -86,7 +86,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 Now, you can add a second job to publish the module to your container registry.
 
-1. At the bottom of the *storage-account.yml* file, add the first part of the job definition for the *publish* job:
+1. At the bottom of the *storage-account.yml* file, add the first part of the *publish* job's definition:
 
    :::code language="yaml" source="code/6-workflow.yml" range="26-34" :::
 

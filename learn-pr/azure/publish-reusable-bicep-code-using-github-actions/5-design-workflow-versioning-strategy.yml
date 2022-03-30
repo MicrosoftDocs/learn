@@ -10,6 +10,6 @@ metadata:
   ms.author: dapazd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 7
 content: |
   [!include[](includes/5-design-workflow-versioning-strategy.md)]
