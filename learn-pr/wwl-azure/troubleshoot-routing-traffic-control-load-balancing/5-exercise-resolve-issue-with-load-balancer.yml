@@ -9,7 +9,7 @@ metadata:
   ms.author: lola
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
+azureSandbox: true
 labModal: false
 durationInMinutes: 7
 content: |

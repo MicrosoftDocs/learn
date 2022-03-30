@@ -28,7 +28,7 @@ The main problems that occur when setting up a user-defined route are:
 
 - Have you added the DMZ subnet name as the subnet in Settings, in the NVA?
 
-:::image type="content" source="../media/m01backupcenter.png" alt-text="Screenshot of Propagate gateway routes dialog box.":::
+:::image type="content" source="../media/3-propagate-gateway-routes.png" alt-text="Screenshot of Propagate gateway routes dialog box.":::
 
 - The route table overrides any default routing in the network. Have you allowed the gateway route to propagate?
 

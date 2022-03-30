@@ -1,6 +1,7 @@
 You work as a support engineer supporting Azure infrastructure. You’ve been contacted by your web team about an issue with the website not responding. The web team has a pool of webservers behind a load balancer and public IP address.
 
-:::image type="content" source="../media/6-network-topology-diagram.png" alt-text="Screenshot of a network topology diagram showing a pool of webservers behind a load balancer and public IP address.":::
+:::image type="content" source="../media/4-network-topology-diagram.png" alt-text="Screenshot of a network topology diagram showing a pool of webservers behind a load balancer and public IP address.":::
+
 In this exercise, you’ll use what you’ve learned to go through steps to troubleshoot the connection issues to the virtual machines.
 
 > [!IMPORTANT]
