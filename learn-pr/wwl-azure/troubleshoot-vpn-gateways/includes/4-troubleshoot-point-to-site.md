@@ -164,7 +164,7 @@ Some key areas to investigate are:
 
 - Disable the caching of domain credentials from the following key.
 
-:::image type="content" source="../media/4-disable-domain.png" alt-text="Screenshot of code to disable caching of domain credentials.":::
+   :::image type="content" source="../media/4-disable-domain.png" alt-text="Screenshot of code to disable caching of domain credentials.":::
 
 - Check the VPN is active by opening an elevated command prompt and running:
 
@@ -174,7 +174,7 @@ ipconfig/all.
 
 The results should have an IP address contained within the Client Address Pool as specified in your configuration.
 
-:::image type="content" source="../media/4-ipconfig.png" alt-text="Screenshot showing typical results from running ipconfig/all.":::
+:::image type="content" source="../media/4-ip-configure.png" alt-text="Screenshot showing typical results from running ipconfig/all.":::
 
 ### Connection problems
 
@@ -256,17 +256,15 @@ Have you opened the Azure VPN client screen and viewed the status log for any er
 
 - Have you cleared the signed-in information and tried to connect?
 
-![Screenshot of sign-in screen.](../media/4-azure-signin-screen.png)
-:::image type="content" source="../media/4-azure-signin-screen.png" alt-text="Screenshot of sign-in screen.":::
+   :::image type="content" source="../media/4-azure-signin-screen.png" alt-text="Screenshot of sign-in screen.":::
 
 - Have you run diagnostics on the connection?
 
-:::image type="content" source="../media/4-azure-diagnostic-page.png" alt-text="Screenshot of Azure AD diagnostic page.":::
+   :::image type="content" source="../media/4-azure-diagnostic-page.png" alt-text="Screenshot of Azure AD diagnostic page.":::
 
 - Have you viewed the client log files?
 
-
-:::image type="content" source="../media/4-azure-log-directory.png" alt-text="Screenshot of Log Directory area within Azure AD..":::
+   :::image type="content" source="../media/4-azure-log-directory.png" alt-text="Screenshot of Log Directory area within Azure AD..":::
 
 ## Troubleshoot OpenVPN connectivity issues
 
@@ -314,15 +312,15 @@ Are you using the correct version? Point-to-site only uses OS version 10.11 or h
 
    - Local ID – is the local ID the same as the subject of the client certificate?
 
-:::image type="content" source="../media/4-mac-os-settings.jpg" alt-text="[Screenshot of Mac OS X setting screen.":::
+   :::image type="content" source="../media/4-mac-os-settings.jpg" alt-text="[Screenshot of Mac OS X setting screen.":::
 
 1. Select **Authentication Settings** – select **Certificate** from the dropdown list then check you have the correct certificate.
 
-:::image type="content" source="../media/4-mac-os-certificate-authentication.png" alt-text="Screenshot of Mac OS X authentication certificate screen.":::
+   :::image type="content" source="../media/4-mac-os-certificate-authentication.png" alt-text="Screenshot of Mac OS X authentication certificate screen.":::
 
 1. Still In **Authentication Settings**, change the dropdown to show **Username** and check the credentials are correct.
 
-:::image type="content" source="../media/4-mac-os-username-authentication.png" alt-text="Screenshot of Mac OS X authentication username screen..":::
+   :::image type="content" source="../media/4-mac-os-username-authentication.png" alt-text="Screenshot of Mac OS X authentication username screen..":::
 
 1. If you still experience problems, download Wireshark and run a packet capture.
 

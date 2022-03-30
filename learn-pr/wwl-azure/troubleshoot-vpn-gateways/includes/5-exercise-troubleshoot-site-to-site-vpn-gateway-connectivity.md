@@ -16,27 +16,27 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue.
 
 1. In the search bar, type **virtual machines** then, under Services, select **Virtual machines**.
 
-:::image type="content" source="../media/5-virtual-machines.png" alt-text="Screenshot showing the search bar and the results of searching for virtual machines.":::
+   :::image type="content" source="../media/5-virtual-machines.png" alt-text="Screenshot showing the search bar and the results of searching for virtual machines.":::
 
 1. From the list of VMs, select VM1.
 
-:::image type="content" source="../media/5-two-virtual-machines.png" alt-text="Screenshot showing the two virtual machines.":::
+   :::image type="content" source="../media/5-two-virtual-machines.png" alt-text="Screenshot showing the two virtual machines.":::
 
 1. Make a note of the **Public IP address** and **Private IP address**.
 
-:::image type="content" source="../media/5-networking-ip-address.png" alt-text="Screenshot of VM1 showing networking the private and public IP addresses." lightbox="../media/5-networking-ip-address-lightbox.png":::
+   :::image type="content" source="../media/5-network-ip-address.png" alt-text="Screenshot of VM1 showing networking the private and public IP addresses." lightbox="../media/5-networking-ip-address-lightbox.png":::
 
 1. Repeat the last two steps for VM2 and note the Public IP address and Private IP address.
 
 1. On the right, in the Cloud Shell, connect to VM1 with SSH to the public IP address:
 
-```azurecli
+   ```azurecli
 
-ssh azureuser@<VM1 public IP address>;
+   ssh azureuser@<VM1 public IP address>;
 
-```
-> [!NOTE]
-> Replace &lt;VM1 public IP address&gt; with the public IP address you noted for VM1.
+   ```
+   > [!NOTE]
+   > Replace <VM1 public IP address> with the public IP address you noted for VM1.
 
 1. At the prompt, ` Are you sure you want to continue connecting (yes/no)? ` type yes.
 
@@ -48,16 +48,16 @@ ssh azureuser@<VM1 public IP address>;
 
 1. Ping the private IP address of VM2.
 
-```
+   ```
 
-ping <private IP address VM2>
+   ping <private IP address VM2>
 
-```
+   ```
 
-> [!NOTE]
-> Replace <private IP address VM2> with the private IP address you noted for VM2. 
+   > [!NOTE]
+   > Replace <private IP address VM2> with the private IP address you noted for VM2. 
 
-:::image type="content" source="../media/5-ping-request.png" alt-text="Screenshot showing the ping command to check whether machines can connect.":::
+   :::image type="content" source="../media/5-ping-request.png" alt-text="Screenshot showing the ping command to check whether machines can connect.":::
 
 1. We can confirm that the two machines cannot connect, as there is no response from VM2.
 
@@ -69,19 +69,19 @@ You’ll check the types are correct for both gateways.
 
 1. In the search bar, type **virtual network gateways**, and then select the service to continue.
 
-:::image type="content" source="../media/5-virtual-network-gateways.png" alt-text="Screenshot showing the virtual gateway service.":::
+   :::image type="content" source="../media/5-virtual-network-gateways.png" alt-text="Screenshot showing the virtual gateway service.":::
 
 1. Select **VNet1GW**.
 
-:::image type="content" source="../media/5-virtual-network-gateways-result.png" alt-text="Screenshot of the virtual gateways.":::
+   :::image type="content" source="../media/5-virtual-network-gateways-result.png" alt-text="Screenshot of the virtual gateways.":::
 
 1. Confirm that the VPN type is route-based, and the gateway type is VPN.
 
-:::image type="content" source="../media/5-vpn-routebased.png" alt-text="Screenshot showing the Gateway and VPN Type." lightbox="../media/5-vpn-routebasedlightbox.png":::
+   :::image type="content" source="../media/5-vpn-routebased.png" alt-text="Screenshot showing the Gateway and VPN Type." lightbox="../media/5-vpn-routebasedlightbox.png":::
 
 1. Scroll down the page to check the tunnel Ingress and Egress. Can you see a time when something might have happened to cause a problem?
 
-:::image type="content" source="../media/5-tunnel-ingress.png" alt-text="Screenshot of the Tunnel ingress and Egress stats.":::
+   :::image type="content" source="../media/5-tunnel-ingress.png" alt-text="Screenshot of the Tunnel ingress and Egress stats.":::
 
 1. Repeat for VNet2GW.
 
@@ -93,15 +93,15 @@ You’ll now check the address spaces don’t overlap for the two virtual networ
 
 1. Select **VNet1**.
 
-:::image type="content" source="../media/5-vnets.png" alt-text="Screenshot showing the virtual networks.":::
+   :::image type="content" source="../media/5-virtual-networks.png" alt-text="Screenshot showing the virtual networks.":::
 
 1. Make a note of the **Address space**.
 
-:::image type="content" source="../media/5-address-space.png" alt-text="Screenshot showing the address spacer.":::
+   :::image type="content" source="../media/5-address-space.png" alt-text="Screenshot showing the address spacer.":::
 
 1. Select **VNet2**, and check that the address spaces do not overlap.
 
-:::image type="content" source="../media/5-dns-server.png" alt-text="Screenshot showing the address space of VNet2":::
+   :::image type="content" source="../media/5-dns-server.png" alt-text="Screenshot showing the address space of VNet2":::
 
 1. The two address spaces are different, so we can rule out any problems with them.
 
@@ -109,13 +109,13 @@ You’ll now check the address spaces don’t overlap for the two virtual networ
 
 1. Select **VNet1**, then select **Subnets**.
 
-:::image type="content" source="../media/5-subnets.png" alt-text="Screenshot showing the subnet menu.":::
+   :::image type="content" source="../media/5-subnets.png" alt-text="Screenshot showing the subnet menu.":::
 
 1. Check the **subnet address** is a subset of the **address space**.
 
 1. Repeat for **VNet2**.
 
-:::image type="content" source="../media/5-gateway-subnet.png" alt-text="Screenshot showing the Gateway subnet address.":::
+   :::image type="content" source="../media/5-gateway-subnet.png" alt-text="Screenshot showing the Gateway subnet address.":::
 
 1. The **GatewaySubnet** addresses have been correctly created and correspond with the default range.
 
@@ -127,19 +127,19 @@ You’ll now check the address spaces don’t overlap for the two virtual networ
 
 1. Select **VNet1GW**.
 
-:::image type="content" source="../media/5-gateway-connections.png" alt-text="Screenshot of the VNet1 gateway.":::
+   :::image type="content" source="../media/5-gateway-connections.png" alt-text="Screenshot of the VNet1 gateway.":::
 
 1. Select **Connections**.
 
-:::image type="content" source="../media/5-vnet-gateway-connection.png" alt-text="Screenshot of the Connections optior.":::
+   :::image type="content" source="../media/5-virtual-network-gateway-connection.png" alt-text="Screenshot of the Connections optior.":::
 
 1. The issue seems to be with the connections between the gateways.
 
-:::image type="content" source="../media/5-vnet-to-vnet.png" alt-text="Screenshot showing the two virtual networks not connected.":::
+   :::image type="content" source="../media/5-virtual-network-to-virtual-network.png" alt-text="Screenshot showing the two virtual networks not connected.":::
 
 1. Select **Refresh** to check that there is still an issue with connection.
 
-:::image type="content" source="../media/5-vnet-to-vnet-connection.png" alt-text="Screenshot of the refresh button.":::
+   :::image type="content" source="../media/5-virtual-network-to-virtual-network-connection.png" alt-text="Screenshot of the refresh button.":::
 
 1. A connection can still not be made, so you’ll check the shared keys.
 
@@ -147,17 +147,17 @@ You’ll now check the address spaces don’t overlap for the two virtual networ
 
 1. Select **Shared key**.
 
-:::image type="content" source="../media/5-shared-key.png" alt-text="Screenshot showing the Shared Key option.":::
+   :::image type="content" source="../media/5-shared-key.png" alt-text="Screenshot showing the Shared Key option.":::
 
 1. Make a note of the **Shared key**.
 
-:::image type="content" source="../media/5-correct-shared-key.png" alt-text="Screenshot of the shared key.":::
+   :::image type="content" source="../media/5-correct-shared-key.png" alt-text="Screenshot of the shared key.":::
 
 1. On the breadcrumb trail, select **VNet1GW**, then select **VNet2-VNet1**.
 
 1. Select **Shared key**.
 
-:::image type="content" source="../media/5-incorrect-key.png" alt-text="Screenshot of the second shared key showing it is different to the first shared key.":::
+   :::image type="content" source="../media/5-incorrect-key.png" alt-text="Screenshot of the second shared key showing it is different to the first shared key.":::
 
 1. The shared keys are not the same. For the connections to work, the shared key must be identical.
 

@@ -140,7 +140,7 @@ A range of pre-written queries are available for you to use such as:
 
 - Gateway configuration changes.
 
-:::image type="content" source="../media/3-ms-azure-log-screen.png" alt-text="Screenshot of the Microsoft Azure log screen showing a query and its results.":::
+:::image type="content" source="../media/3-microsoft-azure-log-screen.png" alt-text="Screenshot of the Microsoft Azure log screen showing a query and its results.":::
 
 When you first set up your queries, preview the information in the different tables to ensure that you are accessing the correct information to help understand what is happening on your network. The samples shown above are just a few of the several hundred pre-written queries available. There are [tutorials](/azure/azure-monitor/logs/log-analytics-tutorial) to read if you want to write more complex queries.
 
@@ -178,11 +178,11 @@ If your connection has been working correctly and suddenly stops, use the follow
 
 - Check that the on-premises device is validated and configured correctly.
 
-:::image type="content" source="../media/3-gateway-overview-screen.png" alt-text="Screenshot showing the Gateway overview screen.":::
+   :::image type="content" source="../media/3-gateway-overview-screen.png" alt-text="Screenshot showing the Gateway overview screen.":::
 
 - Check that the shared keys on each connection match.
 
-:::image type="content" source="../media/3-shared-key.png" alt-text="Screenshot of shared key option and shared key field.":::
+   :::image type="content" source="../media/3-shared-key.png" alt-text="Screenshot of shared key option and shared key field.":::
 
 - Does the Local Network Gateway IP definition in Azure match the on-premises device IP?
 
@@ -196,13 +196,13 @@ If your connection has been working correctly and suddenly stops, use the follow
 
 - If you experience sporadic disconnection problems and have perfect forward secrecy enabled on your device, disable the feature and update the VPN gateway IPsec policy.
 
-:::image type="content" source="../media/3-resource-health.png" alt-text="Screenshot showing the Resource health area":::
+   :::image type="content" source="../media/3-resource-health.png" alt-text="Screenshot showing the Resource health area":::
 
 - Check the resource health.
 
 - Use troubleshooting tools within Azure.
 
-:::image type="content" source="../media/3-diagnose-solve-problems.png" alt-text="Screenshot of the diagnose and solve problems feature.":::
+   :::image type="content" source="../media/3-diagnose-solve-problems.png" alt-text="Screenshot of the diagnose and solve problems feature.":::
 
 ## Identify the root cause for latency issues within site-to-site VPNs
 
@@ -216,7 +216,7 @@ Follow the steps below to access the metrics within Azure:
 
 - Select **Overview** to view tunnel ingress and egress metrics.
 
-:::image type="content" source="../media/3-azure-metrics.png" alt-text="Screenshot of the Azure metrics screen":::
+   :::image type="content" source="../media/3-azure-metrics.png" alt-text="Screenshot of the Azure metrics screen":::
 
 - Click **Metric** on the side panel to view additional metrics as required.
 
@@ -226,7 +226,7 @@ The tracert command checks for cumulative delays exceeding 100 ms:
 
 - Open a command window on a client machine in the on-premises network.
 
-- Type **tracert &lt;VIP for the Azure Gateway&gt;**.
+- Type **tracert <VIP for the Azure Gateway>**.
 
 - When the result shows * you have hit the Azure edge.
 
