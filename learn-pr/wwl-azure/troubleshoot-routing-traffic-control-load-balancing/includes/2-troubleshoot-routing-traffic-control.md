@@ -28,7 +28,7 @@ The main problems that occur when setting up a user-defined route are:
 
 - Have you added the DMZ subnet name as the subnet in Settings, in the NVA?
 
-![Propagate gateway routes dialog](../media/3-propagate-gateway-routes.png)
+:::image type="content" source="../media/m01backupcenter.png" alt-text="Screenshot of Propagate gateway routes dialog box.":::
 
 - The route table overrides any default routing in the network. Have you allowed the gateway route to propagate?
 
@@ -40,11 +40,11 @@ The main problems that occur when setting up a user-defined route are:
 
 - Have you added the route table to the public virtual network?
 
-![Screenshot showing how to add a route table to a virtual network.](../media/3-route-table-creation.png)
+:::image type="content" source="../media/3-route-table-creation.png" alt-text="Screenshot showing how to add a route table to a virtual network.":::
 
 - Have you enabled the IP forwarding on the NVA?
 
-![Screenshot showing how to enable IP forwarding for a virtual network appliance.](../media/3-ip-config-screen.png)
+:::image type="content" source="../media/3-ip-config-screen.png" alt-text="Screenshot showing how to enable IP forwarding for a virtual network appliance.":::
 
 ## Review route tables
 
@@ -56,7 +56,7 @@ Important points to note:
 
 - Each subnet must be associated with a route table. You can assign a user-defined route table, or the system will allocate a default table.
 
-![Screenshot showing a typical route table.](../media/3-route-table.png)
+:::image type="content" source="../media/3-route-table.png" alt-text="Screenshot showing a typical route table.":::
 
 A typical route table holds an address prefix and the next hop type.
 
@@ -78,11 +78,11 @@ Log in to the Azure portal then search for and select the virtual machine you wa
 
 - Select **Settings** > **Networking** and select the **network interface resource**.
 
-![Screenshot of the network interface screen.](../media/3-network-interface.png)
+:::image type="content" source="../media/3-network-interface.png" alt-text="Screenshot of the network interface screen.":::
 
 •	Select **Effective Routes** and the route table will be displayed.
 
-![Screenshot of the route table.](../media/3-az-route-table.png)
+:::image type="content" source="../media/3-az-route-table.png" alt-text="Screenshot of the route table.":::
 
 ### Diagnose routes using PowerShell
 
@@ -122,7 +122,7 @@ To resolve a route problem, try the following actions:
 
 - Use the next hop feature in Azure Network Watcher.
 
-![Screenshot of the next hop option.](../media/3-next-hop.png)
+:::image type="content" source="../media/3-next-hop.png" alt-text="Screenshot of the next hop option.":::
 
 ## Troubleshoot asymmetric routing
 
@@ -140,7 +140,7 @@ Check the following:
 
 ### Source-based NAT
 
-![Diagram of a network with SNAT incorporated.](../media/3-source-based-nat.png)
+:::image type="content" source="../media/3-source-based-nat.png" alt-text="Diagram of a network with SNAT incorporated.":::
 
 If you experience dropped packets, SNAT can help to direct them via the same route. In the above example, instead of using ExpressRoute to advertise the public IP address of an on-premises Simple Mail Transfer Protocol (SMTP) server, you could choose to use the internet path. The process will work effectively if:
 
@@ -165,7 +165,7 @@ pathping [/n] [/h <maximumhops>] [/g <hostlist>] [/p <Period>] [/q <numqueries> 
 
 Forced tunneling lets you direct all internet-bound traffic back to your on-premises location via a site-to-site VPN tunnel for inspection and auditing.
 
-![Diagram of a network with forced tunneling.](../media/3-forced-tunnelling.png)
+:::image type="content" source="../media/3-forced-tunnelling.png" alt-text="Diagram of a network with forced tunneling.":::
 
 Check the following points to resolve routing problems:
 
@@ -183,7 +183,7 @@ Follow the steps below to access the BGP metrics within Azure:
 
 - Navigate to BGP peers.
 
-![Screenshot of the BGP peers screen.](../media/3-bgp-peers.png)
+:::image type="content" source="../media/3-bgp-peers.png" alt-text="Screenshot of the BGP peers screen.":::
 
 ## Troubleshoot multi-VNet configuration
 
@@ -218,7 +218,7 @@ Points to remember:
 
 - Consider building a hub and spoke network topology so the hub virtual network hosts the infrastructure. The spoke networks then peer with the hub, with traffic flowing through the network virtual applicant or VPN gateway on the hub.
 
-![Diagram of a spoke and hub network.](../media/3-service-chaining.png)
+:::image type="content" source="../media/3-service-chaining.png" alt-text="Screenshot of spoke and hub network.":::
 
 ### Troubleshoot routing configuration of Azure VMs that function as routers
 
