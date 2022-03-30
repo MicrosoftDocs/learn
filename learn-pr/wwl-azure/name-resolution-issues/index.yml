@@ -3,7 +3,7 @@ uid: learn.wwl.name-resolution-issues
 metadata:
   title: Troubleshoot name resolution issues in Microsoft Azure
   description: "Name resolution is the process of matching the name of a computer to its network address. This module looks at name resolution issues for public networks, private networks, and internal networks that connect to Azure."
-  ms.date: 03/29/2022
+  ms.date: 03/30/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial
