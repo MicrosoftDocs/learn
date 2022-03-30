@@ -10,7 +10,7 @@ After completing this module, you’ll be able to:
 
 - Troubleshoot Azure Storage.
 
-- Troubleshoot Azure Private Link connectivity problems and Firewalls for PaaS services.
+- Troubleshoot Azure Private Link connectivity problems and Firewalls for PaaS services. 
 
 - Troubleshoot Content Delivery Network issues.
 
@@ -20,8 +20,8 @@ After completing this module, you’ll be able to:
 
 ## Prerequisites
 
-- Demonstrate an understanding of the OSI model
+- Demonstrate an understanding of the OSI model 
 
-- Demonstrate an understanding of PowerShell
+- Demonstrate an understanding of PowerShell 
 
 - Demonstrate an understanding of Azure CLI
