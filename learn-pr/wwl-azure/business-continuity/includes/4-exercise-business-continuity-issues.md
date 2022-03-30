@@ -38,7 +38,7 @@ Using the cloud shell on the right, run these commands to create the example top
 
    - Choose backup policy: **DefaultPolicy-labdemo**
 
-    :::image type="content" source="../media/4-az-backup-welcome.png" alt-text="Screen shot showing the back up welcome screen":::
+    :::image type="content" source="../media/4-azure-backup-welcome.png" alt-text="Screen shot showing the back up welcome screen":::
 
 1. This takes you back to the **Virtual machines** page, click **labvm**.
 
@@ -46,7 +46,7 @@ Using the cloud shell on the right, run these commands to create the example top
 
 1. Click **Backup now**, and then click **OK**.
 
-    ![Screen shot showing the backup screen.](../media/4-vm1-backupscreen.png)
+    ![Screen shot showing the backup screen.](../media/4-virtual machine-1-backupscreen.png)
 
 1. The backup starts, and runs in two phases.
 
@@ -80,7 +80,7 @@ When the first phase has completed, you can see that it is **Crash Consistent**.
 
 1. Scroll down until you see **labvm** and select **labvm**. This shows that the backup is **Crash Consistent**. This is incorrect, the backup should be **Application Consistent**. You need to find out why, and fix the problem.
 
-    > **NOTE**:
+    > ![NOTE]
     > Only the first phase has completed, and the data will now be transferring to the vault. You can continue with the lab; you don’t have to wait for this to complete.
 
     ![Screenshot of the backup screen.](../media/4-backup-screen.png)

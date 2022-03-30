@@ -27,12 +27,9 @@ This may appear if the script is unable to access the recovery point. To resolve
 1. Check that the machine running the script has access to the recovery vault.
 
 1. Verify the connection to the Azure target IP addresses. To check, run the following from an elevated command prompt:
-
-nslookup download.microsoft.com
-
-or
-
-ping download.microsoft.com
+   nslookup download.microsoft.com
+   or
+   ping download.microsoft.com
 
 1. Ensure access to iSCSI outbound port 3260.
 
@@ -114,7 +111,7 @@ The following graphic summarizes the steps to troubleshoot a backup recovery:
 
 1. Troubleshoot connection/replication issues.
 
-:::image type="content" source="../media/../media/m01stepstotroubleshootbackuprecovery.png" alt-text="Screenshot of Steps to troubleshoot a backup recovery.":::
+:::image type="content" source="../media/m01-step-troubleshoot-backup-recovery.png" alt-text="Screenshot of Steps to troubleshoot a backup recovery.":::
 
 ## Troubleshoot restore issues from Microsoft Azure Backup Server (MABS)
 
@@ -277,8 +274,7 @@ If you have problems, try the following troubleshooting steps:
 1. Check connectivity between the source server and the process server, and between the process server and Azure.
 
 1. Check that the source machine is available for replication, specifically:
-
-- Check that two VMs don’t have the same UUID. Refer to [Azure Site Recovery VMware-to-Azure: How to clean up duplicate or stale entries](https://social.technet.microsoft.com/wiki/contents/articles/32026.asr-vmware-to-azure-how-to-clean/icatestale-entries.aspx).
+   - Check that two VMs don’t have the same UUID. Refer to [Azure Site Recovery VMware-to-Azure: How to clean up duplicate or stale entries](https://social.technet.microsoft.com/wiki/contents/articles/32026.asr-vmware-to-azure-how-to-clean/icatestale-entries.aspx).
 
 1. Ensure the **vCenter credentials** are correct when you set up the configuration server, by using the OVF template or unified setup. To verify the credentials, see [Modify credentials for automatic discovery](https://docs./ft.com/azure/site-recovery/vmware-azure-manage-configuration-server).
 
@@ -304,53 +300,53 @@ If you experience problems, try the following troubleshooting issues:
 
 1. Check that previous configurations are not on the site server, as this can cause conflicts. Remove previous configurations before restoring Configuration Manager:
 
-- Restoring to a new server.
+   - Restoring to a new server.
 
-- Formatting the disks and reinstalling the operating system.
+   - Formatting the disks and reinstalling the operating system.
 
-- Cleaning an existing server, including deleting registry entries starting with SMS from HKLM\System\CurrentControlSet\Services.
+   - Cleaning an existing server, including deleting registry entries starting with SMS from HKLM\System\CurrentControlSet\Services.
 
 1. For site database recovery only before restoring Configuration Manager:
 
-- Back up the site database, including supporting databases such as WSUS.
+   - Back up the site database, including supporting databases such as WSUS.
 
-- Note the SQL Server name and instance name.
+   - Note the SQL Server name and instance name.
 
-- Delete the site database from the SQL Server.
+   - Delete the site database from the SQL Server.
 
-- Restart the SQL Server.
+   - Restart the SQL Server.
 
 1. Clean an existing server for full recovery before restoring Configuration Manager:
 
-- Back up the site database, including supporting databases such as WSUS.
+   - Back up the site database, including supporting databases such as WSUS.
 
-- Make a copy of the content library.
+   - Make a copy of the content library.
 
-- Uninstall the Configuration Manager site.
+   - Uninstall the Configuration Manager site.
 
-- Manually delete the site database from the SQL Server.
+   - Manually delete the site database from the SQL Server.
 
-- Manually delete the Configuration Manager installation folder, and any other Configuration Manager folders.
+   - Manually delete the Configuration Manager installation folder, and any other Configuration Manager folders.
 
-- Restart the server.
+   - Restart the server.
 
-- Restore the content library and other databases like WSUS.
+   - Restore the content library and other databases like WSUS.
 
 1. Use a supported version and the same edition of SQL Server:
 
-- Check that the version of SQL Server is both supported, and the same edition as the original. Restoring to a newer version of SQL Server is supported, providing you don’t change the edition—you can restore Standard to Standard and Enterprise to Enterprise.
+   - Check that the version of SQL Server is both supported, and the same edition as the original. Restoring to a newer version of SQL Server is supported, providing you don’t change the edition—you can restore Standard to Standard and Enterprise to Enterprise.
 
-- Ensure SQL Server is not set to **single-user mode**.
+   - Ensure SQL Server is not set to **single-user mode**.
 
-- Make sure the MDF and LDF files are valid. When you recover a site, there's no check for the state of the files.
+   - Make sure the MDF and LDF files are valid. When you recover a site, there's no check for the state of the files.
 
 1. SQL Server Always On availability groups:/
 
-- If you use SQL Server Always On availability groups to host the site database, modify your recovery plans as described in [Prepare to use SQL Server Always On](/mem/configmgr/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database).
+   - If you use SQL Server Always On availability groups to host the site database, modify your recovery plans as described in [Prepare to use SQL Server Always On](/mem/configmgr/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database).
 
 1. Database replicas:
 
-- After you restore a site database that you configured for database replicas, reconfigure each replica. Before you can use the database replicas, recreate both the publications and subscriptions.
+   - After you restore a site database that you configured for database replicas, reconfigure each replica. Before you can use the database replicas, recreate both the publications and subscriptions.
 
 ## Troubleshoot site-to-site recovery
 
@@ -360,11 +356,11 @@ Azure to Azure site recovery allows you to replicate Azure virtual machines (VMs
 
 Azure Site Recovery creates an event if the data change rate on the source virtual machine is higher than the supported limits. Go to **Replicated items** > **VM** > **Events** - **last 72 hours**. You should see the event **Data change rate beyond supported limits**:
 
-:::image type="content" source="../media/m01backupcenter.png" alt-text="Screenshot that shows Data change rate beyond supported limits.":::
+:::image type="content" source="../media/m01-backup-center.png" alt-text="Screenshot that shows Data change rate beyond supported limits.":::
 
 Select the event to display disk information:
 
-:::image type="content" source="../media/m01diskinformation.png" alt-text="Screenshot that shows disk information.":::
+:::image type="content" source="../media/m01-disk-information.png" alt-text="Screenshot that shows disk information.":::
 
 ### Azure site recovery limits
 
@@ -372,7 +368,7 @@ Azure site recovery limits are data churn per disk and data churn per virtual ma
 
 To find out whether this is a recurring problem, check the data change rate of the relevant virtual machine under **Monitoring**. You will need to add the metrics shown in the following screen shot:
 
-:::image type="content" source="../media/m01datachangerate.png" alt-text="Screenshot that shows OS Disk Writes Bytes/Sec.":::
+:::image type="content" source="../media/m01-data-change-rate.png" alt-text="Screenshot that shows OS Disk Writes Bytes/Sec.":::
 
 ### Network connectivity problems
 
@@ -382,7 +378,7 @@ To check for latency problems, use the command-line utility [AzCopy](/azure/stor
 
 Microsoft recommends creating a network service endpoint in your virtual network for "Storage" so that the replication traffic doesn't go to the NVA.
 
-### Network connectivity/
+### Network connectivity
 
 Site Recovery needs the VM to provide outbound connectivity to specific URLs or IP ranges. You might have your VM behind a firewall or use network security group (NSG) rules to/l outbound connectivity. If so, you might experience issues. Make sure all the URLs are connected. For more information, see [Outbound connectivity for URLs](/azure/site-recovery/azure-to-azure-about-networking).
 

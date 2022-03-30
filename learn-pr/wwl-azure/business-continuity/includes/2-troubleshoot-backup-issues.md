@@ -56,7 +56,7 @@ By default, the summary displays open alerts in the last 24 hours. You can also 
 
 - Time range (24 hours, week, two weeks, 30 days, or custom)
 
-:::image type="content" source="../media/m01backupreports.png" alt-text="Screenshot that shows Backup Report.":::
+:::image type="content" source="../media/m01-backup-reports.png" alt-text="Screenshot that shows Backup Report.":::
 
 ### Alerts by email notification
 
@@ -64,7 +64,7 @@ You can get email notifications when alerts are triggered by creating an alert p
 
 - From the Azure portal, go to the Backup center.
 
-- From the left menu, select Alerts (Preview)**.**
+- From the left menu, select Alerts (Preview).
 
 - From the top menu, select Alert processing rule (preview).
 
@@ -98,7 +98,7 @@ Configure diagnostics settings for a Recovery Services vault by going to the vau
 
 The following views are available from the tabs:
 
-- Overview **–** select specific subscriptions and workspaces, and links to more information.
+- Overview – select specific subscriptions and workspaces, and links to more information.
 
 - Summary – a high-level overview of your backup estate.
 
@@ -114,11 +114,12 @@ The following views are available from the tabs:
 
 - Policy adherence – success of backups per day for every backup instance.
 
-:::image type="content" source="../media/m01backupcenter.png" alt-text="Screenshot of Backup Center.":::
+:::image type="content" source="../media/m01-backup-center.png" alt-text="Screenshot of Backup Center.":::
 
 ## Troubleshooting backups with Microsoft Azure Recovery Services (MARS)
 
-NOTE: Microsoft documentation refers to both the backup agent and MARS interchangeably: both refer to the same service. In this module, it is referred to as Microsoft Azure Recovery Services (MARS).
+> [!NOTE] 
+> Microsoft documentation refers to both the backup agent and MARS interchangeably: both refer to the same service. In this module, it is referred to as Microsoft Azure Recovery Services (MARS).
 
 Microsoft Azure Recovery Services is also known as the backup agent. This is the Azure service that is used to back up data. The MARS agent can run on:
 
