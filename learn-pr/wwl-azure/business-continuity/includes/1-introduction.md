@@ -22,6 +22,6 @@ By the end of this module, you will be able to:
 
 - Demonstrate an understanding of Azure CLI
 
-- Demonstrate an understanding of PowerShell  
+- Demonstrate an understanding of PowerShell
 
-- Know how to run Cloud Shell to run commands  
+- Know how to run Cloud Shell to run commands
