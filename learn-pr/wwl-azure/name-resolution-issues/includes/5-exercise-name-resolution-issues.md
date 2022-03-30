@@ -58,7 +58,7 @@ The IP addresses are:
 
 The DNS server address is 168.63.129.16, which is the wire server.
 
-:::image type="content" source="../media/5-ipconfig-dns.png" alt-text="Screen shot of command prompt results after running ipconfig/all.":::
+:::image type="content" source="../media/5-ipconfigure-dns.png" alt-text="Screen shot of command prompt results after running ipconfig/all.":::
 
 ### Test network connectivity
 
@@ -78,7 +78,7 @@ There is a private DNS zone, which is contoso.com.
 
 The private DNS zone has vm1 and vm2 automatically registered, but vm3 does not appear.
 
-:::image type="content" source="./media/5-no-vm3.png" alt-text="Screen shot showing that that vm 3 is not appearing.":::
+:::image type="content" source="../media/5-no-vm3.png" alt-text="Screen shot showing that that vm 3 is not appearing.":::
 
 Go to **Settings** > **Virtual network links**. We see that the private DNS zone is linked to VNet1, but not to VNet2.
 
@@ -115,7 +115,7 @@ Nslookup on VM1 and VM2 should resolve vm3.contoso.com.
 > [!TIP]
 > If VM3 does not appear after several minutes, try restarting the VM.
 
-:::image type="content" source="./media/5-dns-table.png" alt-text="Screen shot showing the dns table.":::
+:::image type="content" source="../media/5-dns-table.png" alt-text="Screen shot showing the dns table.":::
 
 :::image type="content" source="../media/5-command-prompt-vms.png" alt-text="Screen shot showing the results of running the nslookup commands.":::
 
