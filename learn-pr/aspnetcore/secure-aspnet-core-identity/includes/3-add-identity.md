@@ -30,6 +30,8 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
     cd RazorPagesPizza
     ```
 
+1. In the **Explorer** pane, expand the *RazorPagesPizza* directory to view the code.
+
 ## Explore the app
 
 1. In the terminal pane, build the project and run the app:

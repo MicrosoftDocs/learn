@@ -112,7 +112,7 @@ Now that you can generate QR codes, you can inject a QR code into the **Configur
 
     For the logged in user, the output shows that the `TwoFactorEnabled` column is equal to `1`. Because multi-factor authentication hasn't been enabled for the other registered user, the record's column value is `0`.
 
-1. Select **Logout**, and then log in again with the same user.
+1. In the web app, select **Logout**, and then log in again with the same user.
 1. Enter the verification code from the TOTP authenticator app in the **Authenticator code** text box. Select the **Log in** button.
 1. Select **Hello, [First name] [Last name]!**. Then, select the **Two-factor authentication** tab.
 

@@ -213,7 +213,7 @@ In order to send the confirmation email, you need to create an implementation of
 
     [!code-csharp[](../code/program-after-customization.cs?range=1-5,7-16,22-23&highlight=4-5,16)]
 
-    The preceding registers `EmailSender` in the dependency injection system. As seen in *Register.cshtml.cs*, the page won't display the link since there's an implementation of `IEmailSender` registered.
+    The preceding registers `EmailSender` as an `IEmailSender` in the dependency injection system.
 
 ## Test the changes to the registration form
 
