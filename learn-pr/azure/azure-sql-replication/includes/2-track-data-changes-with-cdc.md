@@ -46,7 +46,7 @@ If the parameter **@supports_net_changes** is set to 1, a net changes function i
 
 By default, all of the columns in the source table are identified as captured columns. If only a subset of columns need to be tracked, such as for privacy or performance reasons, use the **@captured_column_list** parameter to specify the subset of columns that you want to track changes for.
 
-### Disablig CDC on your tables
+### Disabling CDC on your tables
 
 Members of the db_owner fixed database role can remove a capture instance for individual source tables by using the stored procedure sys.sp_cdc_disable_table. To determine whether a source table is currently enabled for change data capture, examine the is_tracked_by_cdc column in the sys.tables catalog view. If there are no tables enabled for the database after the disabling takes place, the change data capture jobs are also removed.
 
@@ -59,7 +59,7 @@ If a change data capture-enabled table is dropped, change data capture metadata 
 
 It is not necessary to disable individual tables before you disable the database.
 
-### Disablig CDC on your database
+### Disabling CDC on your database
 
 Disabling the database removes all associated change data capture metadata, including the cdc user and schema and the change data capture jobs. However, any gating roles created by change data capture will not be removed automatically and must be explicitly deleted. To determine if a database is enabled, query the is_cdc_enabled column in the sys.databases catalog view.
 
