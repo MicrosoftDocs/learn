@@ -1,6 +1,6 @@
 We'll now export our labeled dataset.  This task will produce a json file stored in an Azure Blog Storage container assigned to our Azure Machine Learning studio instance. The file contains url references to the raw image data and the label metadata for each image. We'll reference this dataset later to use in model training through a Jupyter Notebook instance.
 
-## Export a labeled Azure Machine Learning Dataset
+## Export a labeled Azure Machine Learning dataset
 
 1. After labeling all of your images (remember to label a minimum of 50 in order to prepare for training), we're now ready to export an annotation file. Navigate to the data labeling project and select **Export** then select **Azure ML Dataset**. This operation will export your image dataset as an AutoML-compatible Azure ML dataset named according to the format 'NAME_DATE_TIME'. 
 

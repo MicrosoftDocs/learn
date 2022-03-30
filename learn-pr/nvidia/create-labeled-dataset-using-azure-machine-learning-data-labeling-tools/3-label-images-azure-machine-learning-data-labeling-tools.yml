@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.label-images-azure-machine-learning-data-labeling-tools
-title: Label images with Azure Machine Learning Data Labeling tools
+title: Label images with Azure Machine Learning data labeling tools
 metadata:
-  title: Label images with Azure Machine Learning Data Labeling tools
-  description: Label images with Azure Machine Learning Data Labeling tools.
+  title: Label images with Azure Machine Learning data labeling tools
+  description: Label images with Azure Machine Learning data labeling tools.
   author: toolboc
   ms.author: chnoring
   ms.date: 03/14/2022

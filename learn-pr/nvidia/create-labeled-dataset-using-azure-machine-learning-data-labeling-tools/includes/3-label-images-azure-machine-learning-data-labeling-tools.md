@@ -1,6 +1,6 @@
 We're now ready to begin working with our newly created Azure Machine Learning Data Labeling project. To prepare our images for training an object detection model, we'll need to label our image data appropriately. This task will involve drawing a bounding box around the objects of interest in our dataset, which will be stored as metadata. This metadata will then be referenced during training to allow us to gauge the accuracy of our model as it is trained over time. The accuracy of our model is verified by referencing our labeled image data to determine that detected objects are being identified within the regions we've defined.
 
-## Label images with Azure Machine Learning Data Labeling tools
+## Label images with Azure Machine Learning data labeling tools
 
 1. Navigate to your Azure Machine Learning Data Labeling project by locating the **Manage** section on the left-hand pane and select **Data Labeling**, then select your newly created project.
 

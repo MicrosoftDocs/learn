@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.export-labeled-azure-machine-learning-dataset
-title: Export a labeled Azure Machine Learning Dataset
+title: Export a labeled Azure Machine Learning dataset
 metadata:
-  title: Export a labeled Azure Machine Learning Dataset
-  description: Export a labeled Azure Machine Learning Dataset.
+  title: Export a labeled Azure Machine Learning dataset
+  description: Export a labeled Azure Machine Learning dataset.
   author: toolboc
   ms.author: chnoring
   ms.date: 03/14/2022

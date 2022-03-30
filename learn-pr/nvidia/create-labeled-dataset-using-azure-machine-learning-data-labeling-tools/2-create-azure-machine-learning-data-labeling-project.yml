@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.create-azure-machine-learning-data-labeling-project
-title: Create an Azure Machine Learning Data Labeling Project
+title: Create an Azure Machine Learning data labeling project
 metadata:
-  title: Create an Azure Machine Learning Data Labeling Project
-  description: Create an Azure Machine Learning Data Labeling Project.
+  title: Create an Azure Machine Learning data labeling project
+  description: Create an Azure Machine Learning data labeling project.
   author: toolboc
   ms.author: chnoring
   ms.date: 03/14/2022

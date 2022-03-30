@@ -1,6 +1,6 @@
 A common task when developing a custom object detection model is the need to process unlabeled image data so that it can be converted to a labeled dataset for model training and validation purposes.  Unlabeled data often features various samples that reflect the type of data that would be captured at the site where the object detection model is to be employed.  This data could include subtle transformations, for example, introduction of "noise" into the image data to produce a more robust training set. Azure Machine Learning Data Tools in Azure Machine Learning studio allow teams to manage their collections of unlabeled data into labeled datasets that accommodate the classes that would be detected by the trained object detection model.
 
-## Create an Azure Machine Learning Data Labeling Project
+## Create an Azure Machine Learning data labeling project
 
 1. If you haven't already launched the Azure Machine Learning studio from the Machine Learning Overview mentioned at the end of the previous section, sign in to [Azure Machine Learning studio](https://ml.azure.com/) now, and select your workspace.
 
