@@ -8,7 +8,7 @@ Using the Cloud Shell on the right, run these commands to create the example top
 1. Clone the setup script from GitHub.
 
    ```console
-   git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-platform-as-service-issues/blob/main/setup.sh networking
+   git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-platform-as-service-issues networking
    ```
 
 1. Run the setup script.
