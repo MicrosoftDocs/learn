@@ -30,7 +30,7 @@ quiz:
       explanation: Incorrect. The `push` trigger fires whenever a change is committed or pushed to a specific branch or set of branches, whether or not there's an active pull request.
   - content: Which of the following is a benefit of using ephemeral environments within your pull request review process?
     choices:
-    - content: You can see how your changes will work when they're deployed.
+    - content: You'll see how your changes will work when they're deployed.
       isCorrect: true
       explanation: Correct. When you use ephemeral environments, your changes in each pull request are deployed to a temporary environment for you to inspect.
     - content: You'll reduce the cost of your Azure resources.

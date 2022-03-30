@@ -103,7 +103,7 @@ Now that you've cloned the repository locally to your computer, you will sign in
 Later in this Microsoft Learn module, your pull request workflow will create resource groups and resources in your subscription. To do this, you need to create a service principal and grant it the Contributor role on your subscription.
 
 > [!WARNING]
-> The service principal you create here will have a high level of access to your Azure subscription. To avoid any accidental issues, use a non-production subscription. Don't execute these steps in an environment that holds any of your production workloads.
+> The service principal you create here has a high level of access to your Azure subscription. To avoid any accidental issues, use a non-production subscription. Don't execute these steps in an environment that holds any of your production workloads.
 >
 > In your own pull request validation workflows, we recommend you use a dedicated Azure subscription.
 

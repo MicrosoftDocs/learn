@@ -1,6 +1,6 @@
-When you work on Bicep code, it's important for all of your changes to be reviewed and tested. Even when your deployment workflows and processes are designed to detect bugs or problems, it's less time-consuming for any problems to be found and fixed as early as possible. Pull requests provide an opportunity for code changes to be reviewed. When you work with Azure deployments, it's a good practice not only to validate the code changes, but also to verify that the changes deploy successfully and function as you expect.
+When you work on Bicep code, it's important for all of your changes to be reviewed and tested. Even when your deployment workflows and processes are designed to detect bugs or problems, it's less time-consuming for any problems to be found and fixed as early as possible. Pull requests provide an opportunity for code changes to be reviewed. When you review Azure deployments, it's a good practice not only to validate the code changes, but also to verify that the changes deploy successfully and function as you expect.
 
-In this module, you'll learn how to add automated checks to your pull request review process. You'll learn how to validate changes to your Bicep code within a pull request, well before it's merged or deployed to a real environment. You'll also learn how you can automatically deploy your changes to ephemeral environments - temporary environments where collaborators and reviewers can test the code changes before they're approved and merged into the repository's main branch.
+In this module, you'll learn how to add automated checks to your pull request review process. You'll learn how to validate changes to your Bicep code within a pull request, long before it's merged or deployed to a real environment. You'll also learn how you can automatically deploy your changes to *ephemeral environments* - temporary environments where collaborators and reviewers can test the code changes before they're approved and merged into the repository's main branch.
 
 ## Example scenario
 
@@ -8,7 +8,9 @@ Suppose you're the Azure administrator at a toy company. You've been working wit
 
 Your website team is growing, and it's getting more difficult to keep control of all of the changes that everyone is making. You recently started to use pull requests to ensure that changes are reviewed before they are merged to the main branch of your project's GitHub repository. Each of the reviewers validates the Bicep code changes in the pull request, and many reviewers even deploy the changes to a temporary environment so they can try them out.
 
-Your colleagues have told you that the current manual review process is cumbersome and time consuming. It's important that your pull request reviews are easy for everybody on the team, so you decide to automate some of the review process within the pull requests. You need to make some changes to the configuration of your website, so it's a great opportunity to try out a new process.
+Your colleagues have told you that the current manual review process is cumbersome and time consuming. It's important that your pull request reviews are easy for everybody on the team, so you decide to automate some of the review process within the pull requests.
+
+You need to make some changes to the configuration of your website, so it's a great opportunity to establish and try out a new process.
 
 ## What will you be doing?
 

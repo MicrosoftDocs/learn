@@ -1,12 +1,12 @@
 Your team has told you they appreciate getting the automated Bicep linter feedback on their code changes before they send them to other team members to review. Now, you've decided to give your contributors and reviewers the ability to deploy and review their code in an ephemeral environment.
 
-In this exercise, you'll update your pull request workflow to deploy an ephemeral environment whenever a pull request is opened and redeploy it when code is pushed to the pull request branch. You'll also create another workflow to automatically delete the environment when the pull request is closed. You'll test your changes by creating a pull request for your website to use a Docker container image.
+In this exercise, you'll update your pull request workflow to deploy an ephemeral environment whenever a pull request is opened, and redeploy it when code is pushed to the pull request branch. You'll also create another workflow to automatically delete the environment when the pull request is closed. You'll test your changes by creating a pull request for your website to use a Docker container image.
 
 During the process, you'll:
 
 > [!div class="checklist"]
 > * Update the pull request workflow to deploy an ephemeral environment.
-> * Create a pull request deletion workflow to remove the ephemeral environment.
+> * Create a pull request deletion workflow to delete the ephemeral environment.
 > * Create a pull request and watch the ephemeral environment get created.
 > * Approve the pull request and watch the ephemeral enivronment get deleted.
 
@@ -20,13 +20,13 @@ As a first step, you need to update your *pr-validation* workflow to create an e
    git checkout main
    ```
 
-1. Pull the latest version of the code from GitHub.
+1. Pull the latest version of the code from GitHub, which includes the changes you merged in the previous exercise.
 
    ```bash
    git pull
    ```
 
-1. Open the *.github/workflows/pr-validation.yml* file.
+1. Open the *.github/workflows/pr-validation.yml* file in Visual Studio Code.
 
 1. Near the top of the file, below the `name` setting, add a `concurrency` setting:
 
@@ -48,12 +48,12 @@ As a first step, you need to update your *pr-validation* workflow to create an e
 
    The job first checks out all the code onto the GitHub runner, and then signs into your Azure environment.
 
+   > [!TIP]
+   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
+
 1. Add a step to create the resource group with the name defined in the environment variable:
 
    :::code language="yaml" source="code/6-pr-validation.yml" range="22-28" :::
-
-   > [!TIP]
-   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
 
 1. After the resource group creation step, add a step to deploy the Bicep file to the resource group:
 
@@ -96,7 +96,7 @@ You've created a workflow that automatically deploys the changes in each pull re
 
    The resource group name is the same as the one you used for the pull request validation workflow.
 
-1. Below the code you added, define a new job named **remove**, and configure it to sign in to Azure:
+1. Below the code you added, define a new job named `remove`, and configure it to sign in to Azure:
 
    :::code language="yaml" source="code/6-pr-closed.yml" range="11-18" :::
 
