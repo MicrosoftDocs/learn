@@ -5,7 +5,7 @@ metadata:
   unitType: summary
   title: Summary
   description: "Gain insights in your data using the Kusto Query Language"
-  ms.date: 11/30/2021
+  ms.date: 03/30/2022
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial
