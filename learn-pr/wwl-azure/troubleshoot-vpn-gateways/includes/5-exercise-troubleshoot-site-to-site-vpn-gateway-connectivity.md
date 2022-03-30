@@ -25,7 +25,7 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue. If you
 
 1. Make a note of the **Public IP address** and **Private IP address**.
 
-   :::image type="content" source="../media/5-network-ip-address.png" alt-text="Screenshot of VM1 showing networking the private and public IP addresses." lightbox="../media/5-networking-ip-address-lightbox.png":::
+   :::image type="content" source="../media/5-network-ip-address.png" alt-text="Screenshot of VM1 showing networking the private and public IP addresses." lightbox="../media/5-network-ip-address-lightbox.png":::
 
 1. Repeat the last two steps for VM2 and note the Public IP address and Private IP address.
 
@@ -37,7 +37,7 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue. If you
 
    ```
    > [!NOTE]
-   > Replace <VM1 public IP address> with the public IP address you noted for VM1.
+   > Replace &lt;VM1 public IP address&gt; with the public IP address you noted for VM1.
 
 1. At the prompt, ` Are you sure you want to continue connecting (yes/no)? ` type yes.
 
@@ -56,7 +56,7 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue. If you
    ```
 
    > [!NOTE]
-   > Replace <private IP address VM2> with the private IP address you noted for VM2. 
+   > Replace &lt;private IP address&gt; VM2 with the private IP address you noted for VM2. 
 
    :::image type="content" source="../media/5-ping-request.png" alt-text="Screenshot showing the ping command to check whether machines can connect.":::
 

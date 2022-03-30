@@ -226,7 +226,7 @@ The tracert command checks for cumulative delays exceeding 100 ms:
 
 - Open a command window on a client machine in the on-premises network.
 
-- Type **tracert <VIP for the Azure Gateway>**.
+- Type **tracert &lt;VIP for the Azure Gateway&gt;**.
 
 - When the result shows * you have hit the Azure edge.
 

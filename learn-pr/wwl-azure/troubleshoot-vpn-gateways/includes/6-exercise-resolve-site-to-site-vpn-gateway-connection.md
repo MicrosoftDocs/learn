@@ -66,7 +66,7 @@ Repeat the steps you did in the previous exercise to see if the two VMs can conn
    ```
 
    > [!NOTE]
-   > Replace <VM1 public IP address> with the public IP address you noted for VM1.
+   > Replace &lt;VM1 public IP address&gt; with the public IP address you noted for VM1.
 
 1. At the prompt, ` Are you sure you want to continue connecting (yes/no)? ` type yes.
 
@@ -85,7 +85,7 @@ Repeat the steps you did in the previous exercise to see if the two VMs can conn
    ```
 
    > [!NOTE]
-   > Replace <private IP address VM2> with the private IP address you noted for VM2. 
+   > Replace &lt;private IP address VM2&gt; with the private IP address you noted for VM2. 
 
    :::image type="content" source="../media/6-ping-virtual-machine-2.png" alt-text="Screen shot showing the ping command working.":::
 
