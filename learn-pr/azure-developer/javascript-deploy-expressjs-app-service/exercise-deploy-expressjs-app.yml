@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-exercise-deploy-expressjs-app.md)]
+  [!include[](includes/exercise-deploy-expressjs-app.md)]

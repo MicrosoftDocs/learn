@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Deploy Express.js to App Service
   description: "Deploy an Express.js web app with APIs to Azure App Service."
-  ms.date: 2/4/2022
+  ms.date: 03/30/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial

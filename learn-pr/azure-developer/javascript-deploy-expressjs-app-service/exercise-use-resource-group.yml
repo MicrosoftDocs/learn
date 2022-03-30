@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 5
 azureSandbox: true
 content: |
-  [!include[](includes/3-exercise-use-resource-group.md)]
+  [!include[](includes/exercise-use-resource-group.md)]

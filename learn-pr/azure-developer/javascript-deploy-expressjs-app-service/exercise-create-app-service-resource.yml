@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-exercise-create-app-service-resource.md)]
+  [!include[](includes/exercise-create-app-service-resource.md)]
