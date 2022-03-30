@@ -112,7 +112,7 @@ Now that the model changes have been made, accompanying changes must be made to 
 
     :::image type="content" source="../media/aspnetusers-custom.png" alt-text="The schema of the AspNetUsers table" lightbox="../media/aspnetusers-custom.png":::
 
-    The `FirstName` and `LastName` properties in the `RazorPagesPizzaUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `nvarchar(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because `FirstName` and `LastName` in the class are non-nullable strings. Existing rows show empty strings in the new columns.
+    The `FirstName` and `LastName` properties in the `RazorPagesPizzaUser` class correspond to the `FirstName` and `LastName` columns in the preceding image. A data type of `nvarchar(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because `FirstName` and `LastName` in the class are non-nullable strings. Existing rows show empty strings in the new columns.
 
 ## Customize the user registration form
 
@@ -211,7 +211,7 @@ In order to send the confirmation email, you need to create an implementation of
 
 1. In *Program.cs*, add the highlighted lines:
 
-    [!code-csharp[](../code/program-after-customization.cs?range=1-5,7-16,22-23&highlight=4-5,16)]
+    [!code-csharp[](../code/program-after-customization.cs?range=1-5,7-16,22-23&highlight=4-5,15)]
 
     The preceding registers `EmailSender` as an `IEmailSender` in the dependency injection system.
 
