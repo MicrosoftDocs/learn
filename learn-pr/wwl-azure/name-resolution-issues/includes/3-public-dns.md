@@ -10,7 +10,7 @@ Public DNS servers convert domain names to IP addresses to allow people to find 
 
 1. From a command prompt, run nslookup:
 
-   nslookup <name> <IP address of the DNS server>
+   nslookup &lt;name&gt; &lt;IP address of the DNS server&gt;
 
    For example:
 
@@ -32,9 +32,9 @@ Public DNS servers convert domain names to IP addresses to allow people to find 
 
    - Right click Command Prompt and choose ‘Run as administrator’
 
-   Type dnscmd [<servername>] /clearcache
+   Type dnscmd &lt;servername&gt; /clearcache
 
-   The <servername> is its IP address, FQDN, or hostname. If omitted, the local server is used.
+   The &lt;servername&gt; is its IP address, FQDN, or hostname. If omitted, the local server is used.
 
    You can also use **ipconfig -flushdns** to clear the DNS cache.
 
@@ -48,7 +48,7 @@ Public DNS servers convert domain names to IP addresses to allow people to find 
 
 1. The [dig command](https://phoenixnap.com/kb/linux-dig-command-examples) (domain information groper) gives DNS information which is helpful in troubleshooting problems. It is a free utility which needs to be installed on Windows machines. To get dig information, run the following command:
 
-   dig <domain name or IP>
+   dig &lt;domain name or IP&gt;
 
    DIG displays the **status** of whether a query was successful.
 
@@ -77,7 +77,7 @@ Public DNS servers convert domain names to IP addresses to allow people to find 
 
    If running on a Windows machine:
 
-   tracert <domain name or IP>
+   tracert &lt;domain name or IP&gt;
 
 1. If the computer uses the ISP's DNS, and you cannot resolve the issue, contact the ISP.
 

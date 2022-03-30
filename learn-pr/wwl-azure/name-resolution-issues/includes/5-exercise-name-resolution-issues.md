@@ -58,7 +58,7 @@ The IP addresses are:
 
 The DNS server address is 168.63.129.16, which is the wire server.
 
-:::image type="content" source="../media/5-ipconfigure-dns.png" alt-text="Screen shot of command prompt results after running ipconfig/all.":::
+:::image type="content" source="../media/5-ip-configure-dns.png" alt-text="Screen shot of command prompt results after running ipconfig/all.":::
 
 ### Test network connectivity
 
@@ -94,7 +94,7 @@ Navigate to the private DNS zone (contoso.com) and select the Virtual network li
 
 - [  ] I know the resource ID of virtual network – leave unchecked
 
-- Subscription: <the name of your subscription>
+- Subscription: &lt;the name of your subscription&gt;
 
 - Virtual network: VNet2
 
