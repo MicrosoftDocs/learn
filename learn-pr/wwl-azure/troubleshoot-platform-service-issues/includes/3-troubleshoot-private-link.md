@@ -27,7 +27,7 @@ az network vnet subnet update \
 
 - Browse [Private Link Center](https://portal.azure.com/) in the Azure portal.
 
-   :::image type="content" source="../media/2-private-endpoints.png" alt-text="Screenshot of Private endpoints.":::
+   :::image type="content" source="../media/3-private-endpoints.png" alt-text="Screenshot of Private endpoints.":::
 
 - Verify that the **Alias** and **Resource ID** for the private link service are correct.
 
@@ -48,3 +48,4 @@ When troubleshooting firewall issues ensure that you include the following steps
 - Review the [Azure Firewall](/azure/firewall/firewall-faq) FAQ and ensure that firewalls are correctly configured.
 
 - For Azure storage firewalls review any error messages and also download and review the storage diagnostics logs and resolve any issues. 
+

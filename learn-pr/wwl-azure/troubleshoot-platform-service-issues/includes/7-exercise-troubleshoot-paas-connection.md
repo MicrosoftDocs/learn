@@ -1,4 +1,3 @@
-
 > [!IMPORTANT]
 > You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
@@ -36,11 +35,11 @@ Go to the [Azure portal](https://portal.azure.com/) and make sure you're in the 
 
 1. On the top row of the **LabClientVM Overview** page, select **Connect** and select **SSH**.
 
-   ![screen shot showing the connect option for a virtual machine..](../media/m04-exercise-1-connect.png)
+:::image type="content" source="../media/7-exercise-1-connect.png" alt-text="screen shot showing the connect option for a virtual machine.":::
 
-1. Select **Test your connection.**
-
-   ![Screen shot showing the test your connection option.](../media/m04-exercise-1-test-connection.png)
+  1. Select **Test your connection.**
+  
+  :::image type="content" source="../media/7-exercise-1-test-connection.png" alt-text="Screen shot showing the test your connection option.":::
 
 1. Select Use Network Watcher for detailed connection tracing.
 
@@ -52,15 +51,15 @@ Go to the [Azure portal](https://portal.azure.com/) and make sure you're in the 
 
 1. In Destination port type 22 (the port for SSH).
 
-   ![Screen shot showing the TCP protocol setting.](../media/m04-exercise-1-network-watcher.png)
+:::image type="content" source="../media/7-exercise-1-network-watcher.png" alt-text="Screen shot showing the TCP protocol setting.":::
 
-1. Select **Check**.
+   1. Select **Check**.
 
 1. Wait until the connectivity check completes.
 
 1. If the **Status** is **Reachable**, a connection can be made from a virtual machine in the same virtual network.
 
-   ![Screen shot showing the status of the connectivity check as reachable.](../media/m04-exercise-1-reachable.png)
+:::image type="content" source="../media/7-exercise-1-reachable.png" alt-text="Screen shot showing the status of the connectivity check as reachable.":::
 
 1. At the top of the screen, select **All resources.**
 
@@ -72,11 +71,10 @@ Go to the [Azure portal](https://portal.azure.com/) and make sure you're in the 
 
 1. Select **Test connection.**
 
-   ![Screen shot showing the test connection button.](../media/m04-exercise-1-test-connection-button.png)
+:::image type="content" source="../media/7-exercise-1-test-connection-button.png" alt-text="Screen shot showing the test connection button.":::
 
 1. Notice that there's a warning that connectivity is blocked by a security group rule.
 
-![Screen shot showing the warning that connectivity is blocked due to a security group rule.](../media/m04-exercise-1-connectivity-error.png)
+:::image type="content" source="../media/7-exercise-1-connectivity-error.png" alt-text="Screen shot showing the warning that connectivity is blocked due to a security group rule.":::
 
 1. Keep the connection open to the Azure portal for the next exercise.
-
