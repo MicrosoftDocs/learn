@@ -49,7 +49,7 @@ Multi-factor authentication (MFA) improves security because it requires you to u
 
 There are several common issues that you should resolve when troubleshooting MFA:
 
-- You don’t receive a voice call or text message with the verification code. If this occurs:
+- You don't receive a voice call or text message with the verification code. If this occurs:
 
 - Select **Other verification options** and then try again. If this succeeds, check that your phone numbers are correct in user settings.
 
@@ -107,14 +107,15 @@ To search for lockout entries, you should use the filter where **OperationName h
 
 ![Screen shot of the create logs area.](../media/2-create-log.png)
 
-For example, you could run this query to find account lockout data for the last seven days:
+For example, you could run this kusto query to find account lockout data for the last seven days:
 
-Kusto
-
+```
 AADDomainServicesAccountManagement
 
 | where TimeGenerated >= ago(7d)
 
 | where OperationName has "4740"
+```
+
 
 For more information, see [Troubleshoot account lockout problems with an Azure Active Directory Domain Services managed domain](/azure/active-directory-domain-services/troubleshoot-account-lockout).
