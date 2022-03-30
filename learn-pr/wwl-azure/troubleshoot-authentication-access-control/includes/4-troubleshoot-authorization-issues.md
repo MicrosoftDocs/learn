@@ -1,4 +1,4 @@
-When a user has been authenticated, they must be authorized to carry out actions. If a user cannot complete a required action, but there identity is correctly authenticated, you need to troubleshoot authorization issues.
+When a user has been authenticated, they must be authorized to carry out actions. If a user can't complete a required action, but their identity is correctly authenticated, you need to troubleshoot authorization issues.
 
 ## Troubleshoot Conditional Access
 
