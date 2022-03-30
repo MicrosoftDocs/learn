@@ -20,7 +20,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 1. At the bottom of the file, where you see a comment saying *To be added*, add the following *lint* job definition:
 
-   :::code language="yaml" source="code/4-workflow.yml" range="18-24" :::
+   :::code language="yaml" source="code/4-workflow.yml" range="18-24" highlight="2-7" :::
 
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
@@ -52,7 +52,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
    ```bash
    git add .
-   git commit -m "Add lint and publish steps to Linux App Service template spec workflow"
+   git commit -m "Add lint and publish jobs to Linux App Service template spec workflow"
    git push
    ```
 

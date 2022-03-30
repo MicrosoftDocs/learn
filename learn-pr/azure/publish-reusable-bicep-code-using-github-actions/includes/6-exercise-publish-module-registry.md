@@ -118,7 +118,7 @@ Now, you can add a second job to publish the module to your container registry.
 
    ```bash
    git add .
-   git commit -m "Add lint and publish steps to storage account module workflow"
+   git commit -m "Add lint and publish jobs to storage account module workflow"
    git push
    ```
 
