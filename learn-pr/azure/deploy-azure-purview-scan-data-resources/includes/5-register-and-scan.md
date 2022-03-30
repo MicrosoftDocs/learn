@@ -1,184 +1,130 @@
+<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
-After data sources are registered in your Azure Purview account, the next step is to scan the data sources. The scanning process establishes a connection to the data source and captures technical metadata like names, file size, columns, and so on. It also extracts schema for structured data sources, applies classifications on schemas, and applies sensitivity labels if your Azure Purview account is connected to a Microsoft 365 Security and Compliance Center (SCC). The scanning process can be triggered to run immediately or can be scheduled to run on a periodic basis to keep your Azure Purview account up to date.
+    1. Understand what registration and scanning are.
+    2. Understand what is necessary to complete each process.
+    3. Understand what you need to do/where you need to start for any data type.
+-->
 
-For each scan there are customizations you can apply so that you're only scanning your sources for the information you need.
+Now that \<Corporation Name> has an Azure Purview account and created collections that reflect their business structure, the next step to understanding their data is to connect Azure Purview to their data sources and giving Azure Purview access to process these sources.
 
-Choose an authentication method for your scans
-Azure Purview is secure by default. No passwords or secrets are stored directly in Azure Purview, so you’ll need to choose an authentication method for your sources. There are four possible ways to authenticate your Azure Purview account, but not all methods are supported for each data source.
+This connection is a two step process in Azure Purview:
 
-Managed Identity
-Service Principal
-SQL Authentication
-Account Key or Basic Authentication
-Whenever possible, a Managed Identity is the preferred authentication method because it eliminates the need for storing and managing credentials for individual data sources. This can greatly reduce the time you and your team spend setting up and troubleshooting authentication for scans. When you enable a managed identity for your Azure Purview account, an identity is created in Azure Active Directory and is tied to the lifecycle of your account.
+1. Registration - maps data sources in your environment to your collections
+1. Scanning - classifies your data and captures technical metadata (file names, file size, columns, data types, and so on)
 
-Scope your scan
-When scanning a source, you have a choice to scan the entire data source or choose only specific entities (folders/tables) to scan. Available options depend on the source you're scanning, and can be defined for both one-time and scheduled scans.
+Azure Purview has many applications and features to help you understand your data, but registration and scanning are the two most important processes. This is how your data is aligned with your business, how permission and data discovery can be strategized for your organization, and data assets (for example: files, resource sets, or tables) are described and classified.
 
-For example, when creating and running a scan for an Azure SQL Database, you can choose which tables to scan, or select the entire database.
+This is how your data map and data catalog are populated, and all of Azure Purview's other features build off of this connection.
 
-Scan rule set
-A scan rule set determines the kinds of information a scan will look for when it's running against one of your sources. Available rules depend on the kind of source you're scanning, but include things like the file types you should scan, and the kinds of classifications you need.
+## Registration
 
-There are system scan rule sets already available for many data source types, but you can also create your own scan rule sets to tailor your scans to your organization.
+Registering a data source tells Azure Purview where to find that data source, and associates your source to one of your collections. Think of it as providing an address book for your collection.  This doesn't affect the data in the source: your data remains in it's current location. 
 
-Schedule your scan
-Azure Purview gives you a choice of scanning weekly or monthly at a specific time you choose. Weekly scans may be appropriate for data sources with structures that are actively under development or frequently change. Monthly scanning is more appropriate for data sources that change infrequently. A good best practice is to work with the administrator of the source you want to scan to identify a time when compute demands on the source are low.
+You'll want to chose a collection that relates your data source to its logical location in your organization. Where that will be depends on how you've structured your collections.
 
-The technical metadata or classifications identified by the scanning process are then sent to Ingestion. The ingestion process is responsible for populating the data map and is managed by Azure Purview. Ingestion analyses the input from scan, applies resource set patterns, populates available lineage information, and then loads the data map automatically. Assets/schemas can be discovered or curated only after ingestion is complete. So, if your scan is completed but you haven't seen your assets in the data map or catalog, you'll need to wait for the ingestion process to finish.
+In our example \<Corporation Name> has \<these collections>. Registering a resource to \<restricted low level collection> will restrict discovery to that priveleged group, which may be useful for sensitived data repositories. Registering the resource to \<higher level collection> will allow all users in that \<region or organization> to discover and use the data source. This would be useful for general data used by many teams for reporting.
 
+When you're choosing which collection to register your data source to, consider who might want to access it, the sensitivity of the data, and useability of the data.
 
-To scan a source, Azure Purview requires a set of credentials. For Azure Data Lake Storage Gen2, Azure Purview supports the following authentication methods.
+Once you've decided on a collection, we can register the data source from within the Azure Purview studio by going to the Data Map and selecting **Register**
 
-Managed Identity (recommended)
-Service Principal
-Account Key
-In this module we will walk through how to grant the Azure Purview Managed Identity the necessary access to successfully configure and run a scan.
+<!-- SCREENSHOT -->
 
-Navigate to your Azure Data Lake Storage Gen2 account (e.g. pvlab{randomId}adls) and select Access Control (IAM) from the left navigation menu.
+Azure Purview supports an array of data sources that span on-premises, multi-cloud, and software-as-a-service (SaaS) options. For any one of these data sources, information is needed to be able to register the source, and different information is required depending on the source. For example, if your data source resides in your Azure subscription, you will choose the necessary subscription, storage source name, and the collection where it will reside.
 
-Azure Purview
+<!-- SCREENSHOT -->
 
-Click Add role assignments.
+For all data sources available in Azure Purview, requirements for registration depend on where the data is located, and what information is needed to build a connection. Each source page in the documentation will tell you what information you'll need.
+For example, sources in Azure typically require a subscription ID and the name of the resource, while data stored in Amazon S3 bucket requires a bucket URL.
 
-Azure Purview
+Once you have provided these details and select **Register** your data source will be listed under your selected collection.
 
-Filter the list of roles by searching for Storage Blob Data Reader, click the row to select the role, and then click Next.
+<!-- SCREENSHOT -->
 
-Access Control Role
+## Scanning
 
-Under Assign access to, select Managed identity, click + Select members, select Purview account from the Managed Identity drop-down menu, select the managed identity for your Azure Purview account (e.g. pvlab-{randomId}-pv), click Select. Finally, click Review + assign.
+Scanning is the process Azure Purview uses to access your data sources to gather technical metadata, schema information, and classify your data assets. This is one of the most important actions within Azure Purview. Scanning data assets allows you to understand:
 
-Access Control Members
+- What kind of data is stored in your data sources.
+- How that data is structured.
+- If any data is sensitive.
 
-Click Review + assign once more to perform the role assignment.
+This will allow you to audit and govern your data sources without having to manually investigate each individual file and source.
 
-Access Control Assign
 
-To confirm the role has been assigned, navigate to the Role assignments tab and filter the Scope to This resource. You should be able to see that the Azure Purview managed identity has been granted the Storage Blob Data Reader role.
+### Authentication
 
-Role Assignment
+While the registration process was straight forward, the scanning process is a little more complex. Registration only required the connection information, or the address, of your data source. Scanning requires that Azure Purview is able to authenticate directly with your data source to be able to access the metadata and schema information. Again, this does not affect the data in the source, or move it, but it does require that Azure Purview has permissions to the source. Depending on your network and security, this can be a complex process. You can store the credentials in an Azure Key Vault for security and ease of access by your scan rules.
 
-↥ back to top
-2. Upload Data to Azure Data Lake Storage Gen2 Account
-Before proceeding with the following steps, you will need to:
+Each data source has different authentication requirements. Data sources outside of Azure will use their native authentication systems that will require a profile to be in place with the details provided to Azure Purview. For example, if connecting to Snowflake, basic authentication is supported and you'll provide a username and password for Azure Purview to connect with your Snowflake source.
 
-Download and install Azure Storage Explorer.
-Open Azure Storage Explorer.
-Sign in to Azure via View > Account Management > Add an account....
-Download a copy of the Bing Coronavirus Query Set to your local machine. Note: This data set was originally sourced from Microsoft Research Open Data.
+For authentication within Azure there are several options available:
 
-Locate the downloaded zip file via File Explorer and unzip the contents by right-clicking the file and selecting Extract All....
+- Azure Purview system or user assigned Managed Identity
+- Account Key (using Key Vault)
+- Service Principal (using Key Vault)
 
-Extract zip file
+If you're enabling connectivity for the first time, it can be difficult to choose between these different kinds of authenitcation. Each source will have its own best practices, that you can find in the documentation, but here are some good general guidelines:
 
-Click Extract.
+- **Azure Purview system or user assigned Managed Identity** - This authentication method is usually the recommended method for Azure sources, and is one of the most straight-forward authentication methods between Azure resources. A managed identity is an indentity in active directory that can be assigned roles just like a user or a group, but rather than being associated with a person, it is associated directly with an Azure resource. In this instance, Azure Purview. This allowes Azure Purview to directly authenticate against your resource, rather than using a go-between identity. This allows you assign permissions to your Azure Purview account, instead of needing to manage a separate role. A system-assigned managed identity is created automatically when a resource is deployed. User-assigned managed identities can be used in the same way, but are user created, assigned, and managed, rather than being managed by Azure.
 
-Extract
+- **Service Principal** - A service principal is a good option if you need a single role to authenticate against multiple resources in your Azure subscription. A service principal is an application that functions as an identity that you can use to authenticate against Azure resources. Once it is created, you can assign roles to a service principal like you would for any user or group. One benefit of using a service principal, is that it has certificates and secrets that can be set to expire after a set time limit.
 
-Open Azure Storage Explorer, click on the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-click on Blob Containers and select Create Blob Container. Name the container raw.
+- **Account Key** - for storage accounts in Azure, an account key gives you general access to a storage account without needing to provide authorization to a specific role or user. These keys can be rotated and regenerated to maintain security for your storage accounts. Account keys can be useful to securely manage broad-spectrum access across multiple applications without needing to provide roles for individual users.
 
-Create Blob Container
+Once you've decided on authentication method and gathered the connection information, you can authenticate with your source through the Azure Portal. In your Data Map in the Azure Purview Studio, select your data source and select **New Scan**.
 
-With the container name selected, click on the Upload button and select Upload Folder....
+<!-- SCREENSHOT -->
 
-Upload Folder
+Initially you will be able to input your credentials and test your connection. Often this is where users run into trouble. If you do:
+1. Check your credentials to confirm that they are correct.
+1. Check documentation for your source to confirm any special cases or unsupported scenarios.
+1. Confirm network connectivity between Azure and your source. Source documentation should have further information to check this connection as well.
 
-Click on the ellipsis to select a folder.
 
-Browse
+### Scanning 
 
-Navigate to the extracted BingCoronavirusQuerySet folder (e.g. Downloads\BingCoronavirusQuerySet) and click Select Folder.
+Once your credentials are successfully validated, it's time to set up your scan. Scanning has two three parts: scope, rule set, and schedule.
 
-Folder
+The **scope** of a scan determines what parts of a data source you want to scan. For example, in Data Lake you can choose to scan an entire data lake, or a subset of folders.
 
-Click Upload.
+<!-- SCREENSHOT -->
 
-Upload
+Choosing a subset of folders might be useful if your organization has a single data lake that is organized by team or effort. The scope will be dependant on the data source type.
 
-Monitor the Activities until the transfer is complete.
 
-Transfer Complete
+The **scan rule set** is a set of instructions that allow you customize the kinds of data that will have their metadata and schema extracted, as well as the kinds of data that will be extracted.
 
-↥ back to top
-3. Create a Collection
-💡 Did you know?
+For example, the default Data Lake scan rule set extracts metadata from these kinds of files:
 
-Collections in Azure Purview can be used to organize data sources, scans, and assets in a hierarchical model based on how your organization plans to use Azure Purview. The collection hierarchy also forms the security boundary for your metadata to ensure users don't have access to data they don't need (e.g. sensitive metadata).
+CSV, JSON, PSV, SSV, TSV, GZIP, TXT, XML, PARQUET, AVRO, ORC, DOC, DOCM, DOCX, DOT, ODP, ODS, ODT, PDF, POT, PPS, PPSX, PPT, PPTM, PPTX, XLC, XLS, XLSB, XLSM, XLSX, XLT
 
-For more information, check out Collection Architectures and Best Practices.
+It also tags data with all availalbe classifications. This can be useful for broad-spectrum scanning. But if you are storing a certain kind of information, or only a certain file type, you can streamline the scanning process by creating a custom scan rule set. This allows you to choose file and data types to extract metadata from during a scan, as well as classification types you're looking for. For example, if your data is only for customers in the Americas, you can use a custom scan rule set to exclue European drivers license number from your scan, as your data won't contain that information.
 
-Open Purview Studio, navigate to Data Map > Collections, and click Add a collection.
+The **schedule** of your scan will determine how often your scan will run. This is an important descision as scanning is how your Azure Purview data catalog maintains an accurate understanding of your data landscape, but Azure Purview is also billed by compute power used during scanning.
 
-New Collection
+There are two types of scans: Once and reoccurring.
 
-Provide the collection a Name (e.g. Contoso) and click Create.
+- **Once** - This scan will only run one time and is useful for proof of concept scenarios, or for legacy datasets that will remain completely unchanged.
+- **Recurring** - This scan will be set to run on a schedule, either monthly or weekly, at a specific time. Schedule a reoccuring scan for data sets that are regularly updated or changing. This will allow you to maintain an accurate picture of your data landscape, and audit sensitive data.
 
-New Collection
+Here are some best practices to consider when scheduling your scan:
+- Run scans during non-business or off-peak hours to avoid process overhead.
+- For some sources, when using a recurring scan, the first scan scans the entire source, but all scans after that scan only new or updated information.
+- Scan frequency should align with your change management schedule for a source.
 
-↥ back to top
-4. Register a Source (ADLS Gen2)
-Open Purview Studio, navigate to Data Map > Sources, and click on Register.
 
-Register
+Once you have determined your scope, rule set, and schedule select save and run and your scan will begin running. 
 
-Select Azure Data Lake Storage Gen2 and click Continue.
+<!-- SCREENSHOT -->
 
-Sources
+Depending on the size of your data source and the scope of your scan, a scan can take a long time to run. You can check its progress in your data source details.
 
-Select the Azure subscription, Storage account name, Collection, and click Register.
+<!-- SCREENSHOT -->
 
-💡 Did you know?
+Select Refresh to periodically update the status of the scan.
 
-At this point, we have simply registered a data source. Assets are not written to the catalog until after a scan has finished running.
+> [!NOTE]
+> After a scan has completed, Azure Purview runs an ingestion process where it adds all the new metadata and information into the catalog. This process depends on the size of the source data as well, and you won't see new assets in your Azure Purview catalog until this process is complete.
 
-Source Properties
-
-↥ back to top
-5. Scan a Source with the Azure Purview Managed Identity
-Open Purview Studio, navigate to Data Map > Sources, and within the Azure Data Lake Storage Gen2 tile, click the New Scan button.
-
-New Scan
-
-Click Test connection to ensure the Azure Purview managed identity has the appropriate level of access to read the Azure Data Lake Storage Gen2 account. If successful, click Continue.
-
-Test Connection
-
-Expand the hierarchy to see which assets will be within the scans scope, and click Continue.
-
-Scan Scope
-
-Select the system default scan rule set and click Continue.
-
-💡 Did you know?
-
-Scan Rule Sets determine which File Types and Classification Rules are in scope. If you want to include a custom file type or custom classification rule as part of a scan, a custom scan rule set will need to be created.
-
-Scan rule set
-
-Select Once and click Continue.
-
-Scan Trigger
-
-Click Save and Run.
-
-Run Scan
-
-To monitor the progress of the scan run, click View Details.
-
-View Details
-
-Click Refresh to periodically update the status of the scan. Note: It will take approximately 5 to 10 minutes to complete.
-
-Monitor Scan
-
-↥ back to top
-6. View Assets
-Navigate to Purview Studio > Data catalog, and perform a wildcard search by typing the asterisk character (*) into the search box and hitting the Enter key to submit the query.
-
-
-
-You should be able to see a list of assets within the search results, which is a result of the scan.
-
-
-
+Once the scan and ingestion are complete, all your data source's metadata is added to your data catalog where it can be audited, managed, and discovered.
