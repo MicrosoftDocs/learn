@@ -210,7 +210,7 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
     :::image type="content" source="../media/sql-server-successful-migration.png" alt-text="The RazorPagesPizza database with the newly created tables." lightbox="../media/sql-server-successful-migration.png":::
 
     > [!NOTE]
-    > The image above shows an example using SQL Server Express LocalDB. When using the *.devcontainer*, the top node will display **mssql-container**.
+    > The image above shows an example using SQL Server Express LocalDB. When using the *.devcontainer*, the connection is named **mssql-container**.
 
 ## Add the login and registration links
 
@@ -222,7 +222,7 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
 
     The preceding markup renders the `_LoginPartial` partial view within the header of any page that uses the default layout. `_LoginPartial` was added by the Identity scaffold. This partial view presents the user with **Login** and **Register** links if the user isn't signed in.
 
-## Test changes
+## Test the Identity functionality
 
 1. Make sure you've saved all your changes.
 1. In the terminal pane, build the project and run the app:
