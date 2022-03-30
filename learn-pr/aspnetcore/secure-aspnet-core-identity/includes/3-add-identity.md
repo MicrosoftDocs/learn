@@ -117,7 +117,7 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
                 * *:::no-loc text="_ViewStart.cshtml":::*
 
     > [!TIP]
-    > If the *:::no-loc text="Areas":::* directory doesn't appear in the Explorer pane automatically, select the **Refresh Explorer** button at the top of the **Explorer** pane.
+    > If the *:::no-loc text="Areas":::* directory doesn't appear in the Explorer pane automatically, select the **Refresh Explorer** button on the **MSLEARN-SECURE-ASPNET-CORE-IDENTITY** header in the **Explorer** pane.
 
     Areas provide a way to partition an ASP.NET Core web app into smaller functional groups.
 
@@ -147,7 +147,7 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
     }
     ```
 
-    This connection string points to an instance of SQL Server Express LocalDB by default. **If you are using the *.devcontainer***, change the connection string as follows:
+    This connection string points to an instance of SQL Server Express LocalDB by default. **If you are using the *.devcontainer***, change the connection string as follows. Save your changes.
 
     ```json
     "ConnectionStrings": {
