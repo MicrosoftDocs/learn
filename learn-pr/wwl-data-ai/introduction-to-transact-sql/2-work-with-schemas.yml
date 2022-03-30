@@ -4,13 +4,12 @@ title: Work with schemas
 metadata:
   title: Work with schemas
   description: "Work with schemas"
-  ms.date: 09/13/2021
+  ms.date: 03/30/2022
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
