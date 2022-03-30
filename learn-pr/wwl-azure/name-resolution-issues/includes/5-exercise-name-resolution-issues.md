@@ -1,6 +1,6 @@
+[!IMPORTANT] You need your own Azure subscription  to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
-> [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
+If you have not already run the script in unit 2, please do so now so you can follow the exercise below.
 
 You work for Contosto as a network engineer, and users are complaining that they cannot access VM1 or VM2. You have configured two Azure virtual networks: VNet1 and VNet2. They are connected with peering.
 
@@ -10,9 +10,9 @@ You work for Contosto as a network engineer, and users are complaining that they
 ||| Subnet2| 10.1.2.0/24|
 | VNet2| 10.2.0.0/16| Default| 10.2.0.0/24|
 
-![Topology of vnet 1.](../media/4-virtual-network-1.png)
+:::image type="content" source="../media/5-vnet1.png" alt-text="Topology of vnet 1.":::
 
-![Topology of vnet 2.](../media/4-virtual-network-2.png)
+:::image type="content" source="../media/5-vnet2.png" alt-text="Topology of vnet 2.":::
 
 | **Virtual machine**| **Operating system**| **VNet and subnet**| **DNS domain**|
 | :--- | :--- | :--- | :--- |
@@ -30,7 +30,7 @@ Use Nslookup on VM1 and VM2 and check you get the following results:
 
 - vm3.contoso.com – can’t find
 
-![Screen shot showing the results of ns lookup in the command prompt.](../media/4-nslookup.png)
+:::image type="content" source="../media/5-nslookup.png" alt-text="Screen shot showing the results of ns lookup in the command prompt.":::
 
 Nslookup on VM3 gives these results:
 
@@ -40,7 +40,7 @@ Nslookup on VM3 gives these results:
 
 - vm3.contoso.com – can’t find
 
-![screen shot of results of running nslookup in the command prompt on vm3.](../media/4-nslookup-virtual-machine-3.png)
+:::image type="content" source="../media/5-nslookup-vm3.png" alt-text="Screen shot of results of running nslookup in the command prompt on vm3.":::
 
 ## Diagnosis
 
@@ -58,7 +58,7 @@ The IP addresses are:
 
 The DNS server address is 168.63.129.16, which is the wire server.
 
-![Screen shot of command prompt results after running ipconfig/all.](../media/4-ip-configure-dns.png)
+:::image type="content" source="../media/5-ipconfig-dns.png" alt-text="Screen shot of command prompt results after running ipconfig/all.":::
 
 ### Test network connectivity
 
@@ -66,7 +66,7 @@ Use **ping** to test network connectivity between the three virtual machines.
 
 All three VMs are able to ping each other, so network connectivity is good at the IP level (OSI Layer 3).
 
-![Screen shot of command shot after pinging for network connectivity.](../media/4-ping-connectivity.png)
+:::image type="content" source="../media/5-ping-connectivity.png" alt-text="Screen shot of command screen after pinging for network connectivity.":::
 
 ### Examine the Azure resource group
 
@@ -74,15 +74,15 @@ There are two VNets called VNet1 and VNet2.
 
 There is a private DNS zone, which is contoso.com.
 
-![Screen shot showing the resources with the resource group.](../media/4-resource-group.png)
+:::image type="content" source="../media/5-resourcegroup.png" alt-text="Screen shot showing the resources within the resource group.":::
 
 The private DNS zone has vm1 and vm2 automatically registered, but vm3 does not appear.
 
-![Screen shot showing that that vm 3 is not appearing.](../media/4-no-virtual-machines-3.png)
+:::image type="content" source="./media/5-no-vm3.png" alt-text="Screen shot showing that that vm 3 is not appearing.":::
 
 Go to **Settings** > **Virtual network links**. We see that the private DNS zone is linked to VNet1, but not to VNet2.
 
-![Screen shot showing the virtual links.](../media/4-virtual-network.png)
+:::image type="content" source="../media/5-virtual-network.png" alt-text="Screen shot showing the virtual links.":::
 
 ## Resolution
 
@@ -100,7 +100,7 @@ Navigate to the private DNS zone (contoso.com) and select the Virtual network li
 
 - Configuration: [X] Enable auto registration
 
-![Screen shot showing the add virtual network link screen.](../media/4-add-virtual-network.png)
+:::image type="content" source="../media/5-add-virtual-network.png" alt-text="Screen shot showing the add virtual network link screen.":::
 
 After you click OK, it may take a few minutes for the link to be created. Click Refresh occasionally to see the latest status. Wait until the link status says Completed.
 
@@ -115,11 +115,11 @@ Nslookup on VM1 and VM2 should resolve vm3.contoso.com.
 > [!TIP]
 > If VM3 does not appear after several minutes, try restarting the VM.
 
-![Screen shot showing the dns table.](../media/4-dns-table.png)
+:::image type="content" source="./media/5-dns-table.png" alt-text="Screen shot showing the dns table.":::
 
-![Screen shot showing the results of running the nslookup commands.](../media/4-command-prompt-virtual machines.png)
+:::image type="content" source="../media/5-command-prompt-vms.png" alt-text="Screen shot showing the results of running the nslookup commands.":::
 
-![Screen shot of the command prompt showing the results of nslookup.](../media/4-command-prompt-nslookup.png)
+:::image type="content" source="../media/5-command-prompt-nslookup.png" alt-text="Screen shot of the command prompt showing the results of nslookup.":::
 
 Optionally, you can test pinging the VMs, using their DNS names.
 

@@ -6,12 +6,12 @@ You’ll troubleshoot a name resolution problem in a later exercise. Use the fol
 In the sandbox to the right, follow these steps:
 
 ## Create the exercise environment
-Using the Ccloud Shell on the right, run these commands to create the example topology.  The environment will take approximately 13 minutes to build.
+Using the Cloud Shell on the right, run these commands to create the example topology.  The environment will take approximately 13 minutes to build.
 
 1. Clone the setup script from GitHub.
 
    ```console
-   git clone https://github.com/MicrosoftDocs/mslearn-name-resolution-issues/blob/main/setup.md networking
+   git clone https://github.com/MicrosoftDocs/mslearn-name-resolution-issues networking
    ```
 
 1. Run the setup script.

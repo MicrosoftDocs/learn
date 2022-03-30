@@ -44,7 +44,7 @@ You can link a private DNS zone to one or more virtual networks by creating [v
 
 NOTE: a Virtual Network can only have autoregistration enabled on one Private DNS Zone link. If you try to link two private DNS zones to the same VNet, only one of the links will be enabled for autoregistration.
 
-![Diagram of private DNS zones on the same Vnet.](../media/2-link-dns-zones.png)
+:::image type="content" source="../media/4-link-dns-zones.png" alt-text="Diagram of private DNS zones on the same Vnet.":::
 
 There are limits on how many private DNS zones you can create, how many records sets, and records per record set.
 

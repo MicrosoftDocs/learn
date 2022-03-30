@@ -137,7 +137,7 @@ Now you have the name servers, you can update the parent domain. Each registrar 
 
 The image shows an example DNS query, with contoso.net and partners.contoso.net in Azure DNS zones:
 
-![Diagram of a DNS query in the Azure DN zones.](../media/3-dns-zones.png)
+:::image type="content" source="../media/3-dns-zones.png" alt-text="Diagram of a DNS query in the Azure DN zones.":::
 
 Each delegation has two copies of the NS records - one in the parent zone pointing to the child, and another in the child zone itself. The 'contoso.net' zone contains the NS records for 'contoso.net', in addition to the NS records in 'net'. These records are called authoritative NS records and they sit at the apex of the child zone.
 
