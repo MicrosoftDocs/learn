@@ -26,9 +26,9 @@ Before you can publish modules, you need to create a registry for your organizat
 
    Leave the default values for the other configuration settings.
 
-   <!-- TODO sshot -->
-
 1. Select **Review + create**.
+
+   :::image type="content" source="../media/6-create-registry.png" alt-text="A screenshot of the Azure portal that shows the container registry creation page.":::
 
 1. Review the settings, then select **Create**.
 
@@ -36,29 +36,29 @@ Before you can publish modules, you need to create a registry for your organizat
 
 1. When the **Deployment succeeded** message appears, select **Go to resource** to open the container registry.
 
-   <!-- TODO sshot -->
+   :::image type="content" source="../media/6-registry-created.png" alt-text="A screenshot of the Azure portal that shows the container registry deployment, with the 'Go to resource button' highlighted.":::
 
 1. In the container registry's **Overview**, note the value of the *Login server* setting. It will look like *yourregistryname.azurecr.io*.
 
-   <!-- TODO sshot -->
+   :::image type="content" source="../media/6-registry-login-server.png" alt-text="A screenshot of the Azure portal that shows the container registry's details, with the login server highlighted.":::
 
    You'll need this value shortly.
 
 ## Add a module metadata file
 
-In the precending unit, you learned about the importance of having a versioning strategy for your modules. You also learned how to use module metadata files to specify the major and minor version number of your module. Here, you add a metadata file for your storage account's module.
+In the precending unit, you learned about the importance of having a versioning strategy for your modules. You also learned how to use module metadata files to specify the major and minor version number of your module within a workflow. Here, you add a metadata file for your storage account module.
 
 1. In Visual Studio Code, expand the *modules* folder in the root of your repository. Then, expand the *storage-account* folder.
 
 1. Create a new file named *metadata.json*.
 
-   <!-- TODO sshot -->
+   :::image type="content" source="../media/6-visual-studio-code-metadata-json.png" alt-text="A screenshot of Visual Studio Code showing the location of the metadata dot J S O N file.":::
 
 1. Add the following content to the file:
 
    :::code language="json" source="code/6-metadata.json" :::
 
-   Notice that you separately define the major and minor version numbers. Your workflow will combine these, along with the workflow's run number, into a complete version number for the module.
+   Notice that, in the metadata file, you separately define the major and minor version numbers. Your workflow will combine these numbers, along with the workflow's run number, into a complete version number each time the workflow runs.
 
 1. Save your changes to the file.
 
@@ -70,7 +70,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 1. Open the file named *module-storage-account.yml*.
 
-   <!-- TODO sshot -->
+   :::image type="content" source="../media/6-visual-studio-code-workflow.png" alt-text="A screenshot of Visual Studio Code showing the location of the workflow definition file.":::
 
 1. On line 14, update the value of the `MODULE_REGISTRY_SERVER` environment variable to your container registry's server name, which you copied earlier in this exercise. 
 
@@ -124,15 +124,15 @@ Now, you can add a second job to publish the module to your container registry.
 
 ## Trigger the workflow
 
-1. In your browser, select the **Actions** tab.
+1. In your browser, navigate to your GitHub repository and select the **Actions** tab.
 
-    :::image type="content" source="../media/6-action-run.png" alt-text="A screenshot showing the result of an Azure Actions workflow run.":::
+1. Select the **module-storage-account** workflow.
 
-1. Select the **template-spec-linux-app-service** workflow. Notice that a workflow run is already in progress. The push trigger fired because you modified the *metadata.json* file within the module's folder.
-
-   <!-- TODO sshot -->
+   Notice that a workflow run is already in progress. The push trigger fired because you modified the *metadata.json* file within the module's folder.
 
 1. Select the latest run in the list.
+
+   :::image type="content" source="../media/6-workflow-runs-list.png" alt-text="A screenshot of GitHub that highlights the latest run of the module's workflow.":::
 
    Wait for the workflow run to finish. The Bicep module is published to your container registry.
 
@@ -150,9 +150,9 @@ You can also view the published module in the Azure portal.
 
 1. Select the **Repositories** blade from the menu. Then, select the **modules\storage-account** repository, which represents the module that your workflow published.
 
-   There's one *tag*, which is the version number of the module:
+   :::image type="content" source="../media/6-registry-portal.png" alt-text="A screenshot of the Azure portal that shows a Bicep module in the container registry.":::
 
-   :::image type="content" source="../media/6-portal-module-registry.png" alt-text="A screenshot of the Azure portal that shows a Bicep module in the container registry."::: <!-- TODO sshot -->
+   Notice that there's a single *tag*, which matches the version number of the module that your workflow published. The major version (1) and minor version (2) match the version numbers you defined in the *metadata.json* file, and the revision number (3) matches the workflow's run number.
 
 ## Clean up the resources
 

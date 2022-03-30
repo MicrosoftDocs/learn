@@ -16,7 +16,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 1. Open the file named *template-spec-linux-app-service.yml*.
 
-   :::image type="content" source="../media/4-visual-studio-code-files.png" alt-text="A screenshot of Visual Studio Code showing the location of the workflow definition file.":::
+   :::image type="content" source="../media/4-visual-studio-code-workflow.png" alt-text="A screenshot of Visual Studio Code showing the location of the workflow definition file.":::
 
 1. At the bottom of the file, where you see a comment saying *To be added*, add the following *lint* job definition:
 
