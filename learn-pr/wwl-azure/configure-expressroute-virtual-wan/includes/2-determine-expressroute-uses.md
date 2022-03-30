@@ -15,7 +15,7 @@ ExpressRoute gives you a fast and reliable connection to Azure with bandwidths u
 
 ## Extend and connect your datacenters
 
-Use ExpressRoute to connect and add compute and storage capacity to your existing datacenters. With high throughput and fast latencies, Azure will feel like a natural extension to or between your datacenters, so you enjoy the scale and economics of the public cloud without having to compromise on network performance.
+Use ExpressRoute to connect and add compute and storage capacity to your existing datacenters. With high throughput and low latencies, Azure will feel like a natural extension to or between your datacenters, so you enjoy the scale and economics of the public cloud without having to compromise on network performance.
 
 ## Build hybrid applications
 
