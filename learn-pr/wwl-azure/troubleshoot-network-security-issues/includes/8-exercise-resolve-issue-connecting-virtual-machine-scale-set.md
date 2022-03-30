@@ -1,22 +1,23 @@
 After investigating the connection issues to your website, you’ve found an issue with the load balancer rule user by the virtual machine scale set.
 
 In this exercise, you’ll resolve the issue and check that the website can now be accessed.
-
+[!IMPORTANT]
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 ## Validate load balancer rules
 
 1. In the Azure portal, search for **load balancers**, and then under **Services**, click **Load balancers**.
 
-    ![A screenshot showing searching for load balancers.](../media/7-load-balancer.png)
+:::image type="content" source="../media/7-load-balancer.png" alt-text="A screenshot showing searching for load balancers.":::
 
 1. Click the **myScaleSetLB** load balancer.
 
 1. Under **Settings**, click **Load balancing rules**.
 
-    ![A screenshot showing the load balancer rule highlighted.](../media/7-load-balancer-rules.png)
+:::image type="content" source="../media/7-load-balancer-rules.png" alt-text="A screenshot showing the load balancer rule highlighted.":::
 
 1. From the list of rules, click **myLoadBalancerRuleWeb**.
 
-    ![A screenshot of the load balancer rule, showing the port set to 80 and backend port set to 443. This is the error.](../media/7-load-balancer-rule-web.png)
+:::image type="content" source="../media/7-load-balancer-rule-web.png" alt-text="A screenshot of the load balancer rule, showing the port set to 80 and backend port set to 443. This is the error.":::
 
 1. To resolve the backend issue, change the **Backend port** from **443** to **80**, and then click **Save**.
 
@@ -25,7 +26,7 @@ In this exercise, you’ll resolve the issue and check that the website can now 
 
 1. Wait until the rule has been deployed successfully.
 
-    ![A screenshot showing the successful deployment of the updated load balancer rule.](../media/7-rule-successful.png)
+:::image type="content" source="../media/7-rule-successful.png" alt-text="A screenshot showing the successful deployment of the updated load balancer rule.":::
 
 ## Verify that the website can now be reached
 
@@ -43,4 +44,4 @@ In this exercise, you’ll resolve the issue and check that the website can now 
 
     If the website is online, you’ll see a page with a **Hello World** message from the backend instance.
 
-    ![A screenshot of the website showing it’s online.](../media/7-hello-world.png)
+:::image type="content" source="../media/7-hello-world.png" alt-text="A screenshot of the website showing it’s online.":::
