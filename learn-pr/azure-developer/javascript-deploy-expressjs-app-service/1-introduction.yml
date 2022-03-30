@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: "In this module, you're a web developer or devops engineer who needs to deploy a web app to Azure. As an experienced developer, new to Azure, you'll learn how to deploy and configure the Azure resources needed to securely deploy the web app."
-  ms.date: 2/4/2022
+  ms.date: 03/30/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial

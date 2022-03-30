@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Check your App Service knowledge for deploying Express.js (Node.js) apps to Azure."
-  ms.date: 2/4/2022
+  ms.date: 03/30/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial

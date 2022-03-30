@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: "Exercise - Azure subscriptions and resources"
   description: "Use the sandbox to create a free subscription then use that subscription in Visual Studio Code."
-  ms.date: 2/4/2022
+  ms.date: 03/30/2022
   author: diberry
   ms.author: diberry
   ms.topic: interactive-tutorial
