@@ -1,6 +1,8 @@
 > [!IMPORTANT]
 > You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
+If you have not already run the script in unit 2, please do so now so you can follow the exercise below.
+
 You have configured your network as shown in the diagram below. You want VM1 and VM2 to communicate via the VnetHub. Users are complaining that VM1 cannot communicate with VM2. You need to investigate to diagnose the problem, and then fix it.
 
 There are three Azure virtual networks (VNets) in a hub and spoke topology.

@@ -40,7 +40,7 @@ To troubleshoot connectivity between peers, do the following:
 
 [Gateway transit](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/virtual-network/virtual-network-peering-overview.md) is a peering property that allows a virtual network to use the VPN gateway in the peered virtual network for VNet-to-VNet connectivity. In the following diagram, you can see how gateway transit works with virtual network peering:
 
-:::image type="content" source="../media/2-gateway-transit.png" alt-text="Screenshot of gateway transit with virtual network peering":::
+:::image type="content" source="../media/4-gateway-transit.png" alt-text="Screenshot of gateway transit with virtual network peering":::
 
 The following constraints apply when virtual networks are globally peered:
 
@@ -66,13 +66,13 @@ Transitive peering is when you:
 
 This is not supported with Azure peering. To achieve peering between VNetA and VNetC, you must peer them together. Alternatively, use a hub-and-spoke configuration and go through an NVA in the hub.
 
-![All vnets peered to each other](../media/2-virtual-network-peering.png)
+:::image type="content" source="./media/4-virtual-network-peering.png" alt-text="All vnets peered to each other":::
 
 ## Troubleshoot hub-and-spoke VNet configurations
 
 With a hub-and-spoke configuration, the hub virtual network acts as a central point of connectivity to many spoke virtual networks. The hub can also be used as the connectivity point to your on-premises networks. The spoke virtual networks peer with the hub and can be used to isolate workloads.
 
-:::image type="content" source="../media/2-hub-spoke.png" alt-text="Screenshot showing Hub-and-spoke configuration":::
+:::image type="content" source="../media/4-hub-spoke.png" alt-text="Screenshot showing Hub-and-spoke configuration":::
 
 Here's how to troubleshoot connectivity between a hub-spoke virtual network and an on-premises resource.
 
@@ -205,3 +205,4 @@ Tracing route to myvmprivate.q04q2hv50taerlrtdyjz5nza1f.bx.internal.cloudapp.net
 Trace complete.
 
 ```
+

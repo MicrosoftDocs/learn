@@ -2,7 +2,7 @@ ExpressRoute works over a private fiber-optic connection to provide a fast conne
 
 The following diagram shows connectivity between your network (Customer network) and Azure (Microsoft Datacenter):
 
-![connectivity between your network (Customer network) and Azure (Microsoft Datacenter)](../media/1-connectivity.png)
+:::image type="content" source="../media/3-connectivity.png" alt-text="connectivity between your network (Customer network) and Azure (Microsoft Datacenter)":::
 
 Before you can use ExpressRoute, you must have an active Microsoft Azure account.
 
@@ -90,22 +90,22 @@ In the Azure portal, select your virtual network, select **Subnets**, and then s
 
 When you create your virtual network gateway, gateway VMs are deployed to the gateway subnet and configured with the required ExpressRoute gateway settings.
 
-> [!NOTE] 
+> [!NOTE]
 > It can take up to 45 minutes for the gateway to be created and ready for use.
 
 ## Determine whether an ExpressRoute circuit is operational
 
 In the Azure portal, view existing ExpressRoute circuits by selecting **All services** > **Networking** > **ExpressRoute** circuits from the left menu.
 
-:::image type="content" source="../media/1-expressroute-circuits.png" alt-text="Screenshot of Expressroute circuits settings":::
+:::image type="content" source="../media/3-expressroute-circuits.png" alt-text="Screenshot of Expressroute circuits settings":::
 
 All ExpressRoute circuits created in the subscription will appear here.
 
-:::image type="content" source="../media/1-expressroute-circuit-list.png" alt-text="Screenshot of Expressroute circuits list":::
+:::image type="content" source="../media/3-expressroute-circuit-list.png" alt-text="Screenshot of Expressroute circuits list":::
 
 To make the circuit operational, you must send the service key to the service provider. Each service key is specific to one circuit. Select the relevant circuit, and on the **Overview** page find the service key field for your provider.
 
-:::image type="content" source="../media/1-service-key-field.png" alt-text="Screenshot of service key field":::
+:::image type="content" source="../media/3-service-key-field.png" alt-text="Screenshot of service key field":::
 
 The **Provider status** displays the state of provisioning on the service-provider side.
 
@@ -144,7 +144,7 @@ The peerings are configured by your service provider. If the peering in the port
 
 The status of an ExpressRoute circuit peering can be checked in the Azure portal, on the ExpressRoute Circuit **Overview** page. Any ExpressRoute peerings are displayed under the **Peerings** section.
 
-:::image type="content" source="../media/1-peerings.png" alt-text="Screenshot of Expressroute peerings":::
+:::image type="content" source="../media/3-peerings.png" alt-text="Screenshot of Expressroute peerings":::
 
 In the screenshot above, Azure private peering is provisioned, but Azure public and Microsoft peerings are not. A successfully provisioned peering would also have the primary and secondary point-to-point subnets listed. 
 
@@ -164,30 +164,31 @@ To access this diagnostic tool from the Azure portal, select your ExpressRoute c
 ## Validate that routes are live and configured correctly
 
 You can validate that routes are live and configurated correctly by testing peering connectivity. Count the packets arriving and leaving the Microsoft edge of your ExpressRoute circuit, on the Microsoft Enterprise Edge (MSEE) devices. This diagnostic tool works by applying an Access Control List (ACL) to the MSEE to count the number of packets that hit specific ACL rules. Using this tool will allow you to confirm connectivity by answering the questions such as:
+
 - Are my packets getting to Azure? 
 - Are they getting back to on-premises?
 
 1. To access this diagnostic tool, select **Diagnose and solve problems** from your ExpressRoute circuit in the Azure portal.
 
-   ![Diagnose and solve problems from the ExpressRoute circuit in the Azure portal](../media/1-diagnose-solve-problems.png)
+:::image type="content" source="../media/3-diagnose-solve-problems.png" alt-text="Diagnose and solve problems from the ExpressRoute circuit in the Azure portal":::
 
 1. Select the **Connectivity issues**, under **Common Problems**.
 
-   :::image type="content" source="../media/1-connectivity-issues.png" alt-text="Screenshot of connectivity issues":::
+   :::image type="content" source="../media/3-connectivity-issues.png" alt-text="Screenshot of connectivity issues":::
 
 1. In the dropdown for **Tell us more about the problem you're experiencing**, select **Connectivity to Azure Private, Azure Public, or Dynamics 365 services**.
 
-   :::image type="content" source="../media/1-connectivity-azure.png" alt-text="Screenshot showing connection to Azure Private, Azure Public, or Dynamics 365 services":::
+   :::image type="content" source="../media/3-connectivity-azure.png" alt-text="Screenshot showing connection to Azure Private, Azure Public, or Dynamics 365 services":::
 
 - Scroll down to the **Test your private peering connectivity** section and expand it.
 
-   :::image type="content" source="../media/1-test-private-peering-connectivity .png" alt-text="Screenshot showing Testing of private peering connectivity":::
+   :::image type="content" source="../media/3-test-private-peering-connectivity .png" alt-text="Screenshot showing Testing of private peering connectivity":::
 
 - Execute the [PsPing](/sysinternals/downloads/psping) test from your on-premises IP address to your Azure IP address and keep it running during the connectivity test.
 
 - Fill out the fields of the form, making sure to enter the same on-premises and Azure IP addresses used in <!--CE: Please check - I'm not sure what step 5 refers to.-->Step 5. Select **Submit** and wait for the results. When your results are ready, review the information for interpreting them below.
 
-   :::image type="content" source="../media/1-connectivity-test.png" alt-text="Screenshot of Connectivity test":::
+   :::image type="content" source="../media/3-connectivity-test.png" alt-text="Screenshot of Connectivity test":::
 
 You'll have two sets of results for the primary and secondary MSEE devices. Review the number of matches in and out and use the following scenarios to interpret the results:
 
@@ -285,11 +286,11 @@ Create a filter rule:
 
 - To add and update rules, select the **manage rule** tab for your route filter.
 
-  :::image type="content" source="../media/1-manage-rule.png" alt-text="Screenshot of Manage rule tab":::
+  :::image type="content" source="../media/3-manage-rule.png" alt-text="Screenshot of Manage rule tab":::
 
 - From the dropdown list, select the allowed service communities you want to connect to. Save the rule when you have finished.
 
-  :::image type="content" source="../media/1-rule-settings.png" alt-text="Screenshot of Rule settings":::
+  :::image type="content" source="../media/3-rule-settings.png" alt-text="Screenshot of Rule settings":::
 
 ## Troubleshoot redundant configurations
 
@@ -354,7 +355,7 @@ The detailed results of iPerf tests are in individual text files in the AzureCT 
 
 The PowerShell output format looks similar to:
 
-:::image type="content" source="../media/1-powershelloutput.png" alt-text="Screenshot of PowerShell output of test":::
+:::image type="content" source="../media/3-powershelloutput.png" alt-text="Screenshot of PowerShell output of test":::
 
 If the performance test doesn’t give the results you expected results, use a step-by-step process to resolve the issue.
 
@@ -365,5 +366,6 @@ Second, start at the edges between routing domains to try to isolate the problem
 When you've identified the major routing domain that appears to contain the problem, create a diagram. Seeing the area in a diagram allows you to work methodically by planning points to test. Divide the network into segments to narrow down the problem and update the diagram as you get results.
 
 Also, don't forget to look at other layers of the OSI model. It's easy to focus on the network and layers 1-3 (Physical, Data, and Network) but the problem could be at Layer 7 in the application layer. Keep an open mind and verify assumptions.
->
-> **NOTE**: Geographic latency between endpoints is the largest component of latency. Equipment latency that has, for example, physical and virtual components, and number of hops, is involved. But geography has been shown to have a greater impact on overall latency when dealing with WAN connections. Remember that the distance of the fiber run is not the straight-line or roadmap distance. Use a city distance calculator which, although inaccurate, is good enough.
+
+> [!NOTE]
+> Geographic latency between endpoints is the largest component of latency. Equipment latency that has, for example, physical and virtual components, and number of hops, is involved. But geography has been shown to have a greater impact on overall latency when dealing with WAN connections. Remember that the distance of the fiber run is not the straight-line or roadmap distance. Use a city distance calculator which, although inaccurate, is good enough.
