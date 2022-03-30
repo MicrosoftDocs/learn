@@ -46,11 +46,11 @@ You can:
 
 - Right-click to access the Azure portal page for that resource.
 
-![Screenshot of dependency map](../media/3-dependencymap.png)
+:::image type="content" source="../media/3-dependencymap.png" alt-text="Screenshot of dependency map":::
 
 Select **View detailed metrics** to display information about your virtual WAN resource capacity, performance, and utilization at the virtual WAN level, hub level, and for individual connections.
 
-![view of detailed metrics](../media/3-detailedmetrics.png)
+:::image type="content" source="../media/3-detailedmetrics.png" alt-text="Screenshot of detailed metrics":::
 
 ## Determine whether sites are configured correctly
 

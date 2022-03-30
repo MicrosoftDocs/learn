@@ -8,13 +8,13 @@ You have configured your network as shown in the diagram below. You want VM1 and
 
 There are three Azure virtual networks (VNets) in a hub and spoke topology.
 
-![Diagram of spoke and hub topology](../media/4-spoke-hub-topology.png)
+:::image type="content" source="../media/4-spoke-hub-topology.png" alt-text="Screenshot of spoke and hub topology":::
 
-![Diagram of the 1st virtual network topology.](../media/4-vn1-topology.png)
+:::image type="content" source="../media/4-vn1-topology.png" alt-text="Diagram of the 1st virtual network topology.":::
 
-![Diagram of the 2nd virtual network topology.](../media/4-vn2-topology.png)
+:::image type="content" source="../media/4-vn2-topology.png" alt-text="iagram of the 2nd virtual network topology.":::
 
-![Diagram of the 3rd virtual network topology.](../media/4-vn3-topology.png)
+:::image type="content" source="../media/4-vn3-topology.png" alt-text="Diagram of the 3rd virtual network topology.":::
 
 ## Diagnosis
 
@@ -42,9 +42,9 @@ There are three Azure virtual networks (VNets) in a hub and spoke topology.
 
 1. Ping the private IP address of the Azure firewall (FW1).
 
-![Screen shot showing the command prompt with the ping request results.](../media/4-private-address-ping.png)
+:::image type="content" source="../media/4-private-address-ping.png" alt-text="Screen shot showing the command prompt with the ping request results.":::
 
-![Screen shot showing the command prompt with the ping request results.](../media/4-private-address-ping-working.png)
+:::image type="content" source="../media/4-private-address-ping-working.png" alt-text="SScreen shot showing the command prompt with the ping request results.":::
 
 ### Troubleshoot the problem
 
@@ -60,7 +60,7 @@ There are three Azure virtual networks (VNets) in a hub and spoke topology.
 
 The diagram shows the effective routes on VM1-nic.
 
-![Screen shot showing the effective routes.](../media/4-effective-routes.png)
+:::image type="content" source="../media/4-effective-routes.png" alt-text="Screen shot showing the effective routes.":::
 
 ## Resolution
 
@@ -73,9 +73,9 @@ When you examined the peering connections, you would have found that the peering
 | VnetSpoke1| Spoke1-Hub| Allow (default)|
 | VnetSpoke2| Spoke2-Hub| Block traffic that originates from outside this virtual network|
 
-![Screen shot showing peerings.](../media/4-peerings.png)
+:::image type="content" source="../media/4-peerings.png" alt-text="Screen shot showing peerings.":::
 
-![Screen shot showing the incorrect spoke traffic forwarding setting.](../media/4-incorrect-traffic-forwarding.png)
+:::image type="content" source="../media/4-incorrect-traffic-forwarding.png" alt-text="Screen shot showing the incorrect spoke traffic forwarding setting.":::
 
 To fix the problem, you must change the setting in both sides of the peering between VnetHub and VnetSpoke2.
 

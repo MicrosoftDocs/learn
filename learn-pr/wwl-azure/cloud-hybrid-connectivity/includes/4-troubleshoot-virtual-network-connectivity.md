@@ -40,7 +40,7 @@ To troubleshoot connectivity between peers, do the following:
 
 [Gateway transit](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/virtual-network/virtual-network-peering-overview.md) is a peering property that allows a virtual network to use the VPN gateway in the peered virtual network for VNet-to-VNet connectivity. In the following diagram, you can see how gateway transit works with virtual network peering:
 
-![gateway transit with virtual network peering](../media/2-gatewaytransit.png)
+:::image type="content" source="../media/2-gatewaytransit.png" alt-text="Screenshot of gateway transit with virtual network peering":::
 
 The following constraints apply when virtual networks are globally peered:
 
@@ -72,7 +72,7 @@ This is not supported with Azure peering. To achieve peering between VNetA and V
 
 With a hub-and-spoke configuration, the hub virtual network acts as a central point of connectivity to many spoke virtual networks. The hub can also be used as the connectivity point to your on-premises networks. The spoke virtual networks peer with the hub and can be used to isolate workloads.
 
-![Hub-and-spoke configuration](../media/2-hubspoke.png)
+:::image type="content" source="../media/2-hubspoke.png" alt-text="Screenshot showing Hub-and-spoke configuration":::
 
 Here's how to troubleshoot connectivity between a hub-spoke virtual network and an on-premises resource.
 

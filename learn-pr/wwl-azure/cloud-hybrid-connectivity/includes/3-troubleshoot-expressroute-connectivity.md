@@ -10,9 +10,7 @@ If you also want to connect to Microsoft 365 services, you will need at least on
 
 You will also need to work with a service provider to manage the private connection.
 
-| Subscription required| Microsoft Azure only| Microsoft Azure and
-
-Microsoft 365|
+| Subscription required| Microsoft Azure only| Microsoft Azure and Microsoft 365|
 | :--- | :--- | :--- |
 | Microsoft Azure account| (| (|
 | Microsoft 365| (| (|
@@ -285,11 +283,11 @@ Create a filter rule:
 
 - To add and update rules, select the **manage rule** tab for your route filter.
 
-![Manage rule tab](../media/1-managerule.png)
+:::image type="content" source="../media/1-managerule.png" alt-text="Screenshot of Manage rule tab":::
 
 - From the dropdown list, select the allowed service communities you want to connect to. Save the rule when you have finished.
 
-![Rule settings](../media/1-rulesettings.png)
+:::image type="content" source="../media/1-rulesettings.png" alt-text="Screenshot of Rule settings":::
 
 ## Troubleshoot redundant configurations
 
@@ -354,7 +352,7 @@ The detailed results of iPerf tests are in individual text files in the AzureCT 
 
 The PowerShell output format looks similar to:
 
-![PowerShell output of test](../media/1-powershelloutput.png)
+:::image type="content" source="../media/1-powershelloutput.png" alt-text="Screenshot of PowerShell output of test":::
 
 If the performance test doesn’t give the results you expected results, use a step-by-step process to resolve the issue.
 
