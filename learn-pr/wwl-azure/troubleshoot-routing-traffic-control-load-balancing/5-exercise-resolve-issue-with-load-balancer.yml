@@ -9,8 +9,8 @@ metadata:
   ms.author: lola
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
+azureSandbox: true
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/5-exercise-resolve-issue-with-load-balancer.md)]

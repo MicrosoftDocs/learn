@@ -3,7 +3,7 @@ You work as a support engineer supporting Azure infrastructure. You’ve been co
 :::image type="content" source="../media/6-network-topology-diagram.png" alt-text="Screenshot of a network topology diagram showing a pool of webservers behind a load balancer and public IP address.":::
 In this exercise, you’ll use what you’ve learned to go through steps to troubleshoot the connection issues to the virtual machines.
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
 ## Create the exercise environment
@@ -13,7 +13,7 @@ In this exercise, you’ll use what you’ve learned to go through steps to trou
 1. Clone the setup script from GitHub.
 
     ```
-    git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-connectivity-issues-virtual-machines/blob/main/setup.sh
+    git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-connectivity-issues-virtual-machines/blob/main networking
     ```
 
 1. Run the setup script.
@@ -24,7 +24,7 @@ In this exercise, you’ll use what you’ve learned to go through steps to trou
 
 1. The script will create all the resources. Wait until it completes, you should see a **Webserver Pool Created** message.
 
-    ![Screenshot of the Azure cloud shell showing the Webserver Pool created message.](../media/6-webserver-pool.png)
+    :::image type="content" source="../media/4-webserver-pool.png" alt-text="Screenshot of the Azure cloud shell showing the Webserver Pool created message.":::
 
 ## Check the Load Balancer settings
 
@@ -32,11 +32,11 @@ In this exercise, you’ll use what you’ve learned to go through steps to trou
 
 1. Search for **Load balancers**.
 
-    ![A screenshot of the Azure portal showing Load balancers being selected.](../media/6-load-balancers.png)
+  :::image type="content" source="../media/4-load-balancers.png" alt-text="A screenshot of the Azure portal showing Load balancers being selected.":::
 
 1. Under **Services**, click **Load balancers**.
 
-    ![A screenshot showing the load balancers.](../media/6-list-of-load-balancers.png)
+    :::image type="content" source="../media/4-list-of-load-balancers.png" alt-text="A screenshot showing the load balancers.":::
 
 1. Click **myScaleSetLB**.
 
@@ -44,4 +44,4 @@ In this exercise, you’ll use what you’ve learned to go through steps to trou
 
 - Select each **Settings** category and look for settings that could cause the routing issue.
 
-    ![A screenshot showing the load balancer settings categories.](../media/6-load-balancer-settings.png)
+    :::image type="content" source="../media/4-load-balancer-settings.png" alt-text="A screenshot showing the load balancer settings categories.":::
