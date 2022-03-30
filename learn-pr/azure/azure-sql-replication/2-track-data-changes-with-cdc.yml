@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-replication.track-data-changes-with-cdc
+title: Track and load data changes on your Azure SQL Databases with Change Data Capture (CDC) - Part 1
+metadata:
+  unitType: learning-content
+  title: Track, load, and replicate data changes on your Azure SQL Databases with Change Data Capture (CDC) - Part 1
+  description: "Introducing Change Data Capture (CDC) for Azure SQL Databases - the technical architecture of the product and the procedures to enable and disable it."
+  ms.date: 3/21/2022
+  author: MaraSteiu
+  ms.author: masteiu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-track-data-changes-with-cdc.md)]

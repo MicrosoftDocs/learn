@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-replication.introduction
+title: Introduction - Data replication on Azure SQL Databases
+metadata:
+  unitType: learning-content
+  title: Introduction - Data replication on Azure SQL Databases
+  description: "Introducing data replication concepts such as common use cases, tools, and performance considerations."
+  ms.date: 3/21/2022
+  author: MaraSteiu
+  ms.author: masteiu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
