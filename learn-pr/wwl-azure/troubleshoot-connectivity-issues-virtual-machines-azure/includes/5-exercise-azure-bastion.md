@@ -1,8 +1,10 @@
 You’ve been contacted by one of the teams you support. The team is having problems connecting to their VM using Bastion. In this exercise you'll see how to troubleshoot the Azure Bastion Service.
 
 Bastion is not supported in the Learn sandbox environment. Watch the video at the end to view this exercise. If you'd like to follow along in your own subscription, you can use the following steps.
-[!IMPORTANT]
+
+> [!IMPORTANT]
 > You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
+
 ## Check that Bastion has been deployed
 
 1. In the Azure portal, in the search box, type **Bastions**.
