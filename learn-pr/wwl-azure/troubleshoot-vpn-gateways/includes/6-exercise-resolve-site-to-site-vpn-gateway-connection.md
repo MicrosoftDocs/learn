@@ -2,13 +2,16 @@ You've explored the possible reasons why your two machines can't connect to each
 
 In this exercise, you’ll see how to change the shared key on a VPN gateway connection, and then test that this has resolved the issue.
 
+[!IMPORTANT]
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
+
 ## Change a gateway connection’s shared key
 
 Follow these steps to check the shared key for both the VPN gateways connections:
 
 1. In the Azure portal, search for virtual network gateways.
 
-![Screen shot showing virtual gateway search](../media/6-search-gateways.png)
+:::image type="content" source="../media/6-search-gateways.png" alt-text="Screen shot showing virtual gateway search.":::
 
 1. Under Services, select **Virtual network gateways**.
 
@@ -16,13 +19,13 @@ Follow these steps to check the shared key for both the VPN gateways connections
 
 1. Under Settings, select **Connections**.
 
-![Screen shot showing all vnet to vnet connections](../media/6-gateway-connections.png)
+:::image type="content" source="../media/6-gateway-connections.png" alt-text="Screen shot showing all vnet to vnet connections.":::
 
 1. Select the first connection, **VNet1-VNet2**.
 
 1. Under Settings, select **Shared key**.
 
-![Screen shot showing the first shared key](../media/6-copy-shared-key.png)
+:::image type="content" source="../media/6-copy-shared-key.png" alt-text="Screen shot showing the first shared key.":::
 
 1. Copy the text in the **Shared key (PSK)**.
 
@@ -30,7 +33,7 @@ Follow these steps to check the shared key for both the VPN gateways connections
 
 1. Select the second connection, **VNet2-VNet1**.
 
-![Screen shot showing the second vnet to vnet connection](../media/6-gateway-second-connection.png)
+:::image type="content" source="../media/6-gateway-second-connection.png" alt-text="Screen shot showing the second vnet to vnet connection.":::
 
 1. Under Settings, select **Shared key**.
 
@@ -44,11 +47,11 @@ Repeat the steps you did in the previous exercise to see if the two VMs can conn
 
 1. Search for **virtual machines** then, under Services, select **Virtual machines**.
 
-![Screen shot showing search screen for virtual machines](../media/6-search-virtual-machines.png)
+:::image type="content" source="../media/6-search-virtual-machines.png" alt-text="Screen shot showing search screen for virtual machines.":::
 
 1. From the list of VMs, select **VM1**.
 
-![Screen shot showing the IP address of the first virtual machine](../media/6-vm1-ip-addresses.png)
+:::image type="content" source="../media/6-vm1-ip-addresses.png" alt-text="Screen shot showing the IP address of the first virtual machine.":::
 
 1. Make a note of the Public IP address and Private IP address.
 
@@ -84,6 +87,6 @@ ping <private IP address VM2>
 > [!NOTE]
 > **NOTE**: Replace <private IP address VM2> with the private IP address you noted for VM2. 
 
-![Screen shot showing the ping command working](../media/6-ping-vm2.png)
+:::image type="content" source="../media/6-ping-vm2.png" alt-text="Screen shot showing the ping command working.":::
 
 1. If you have resolved the connection issue, you should see a response from VM2.

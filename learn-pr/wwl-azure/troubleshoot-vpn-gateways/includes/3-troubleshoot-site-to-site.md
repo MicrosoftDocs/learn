@@ -4,7 +4,7 @@ When you use site-to-site VPN gateways there are many steps and numerous areas w
 
 If you have a business with offices in different locations, you can establish a secure connection between the Local Area Networks (LANs) over the network. A site-to-site VPN gateway creates a secure connection between computer resources at different locations.
 
-![Screenshot showing a site-to-site VPN set-up.](../media/3-site-to-site-vpn.png)
+:::image type="content" source="../media/3-site-to-site-vpn.png" alt-text="Screenshot showing a site-to-site VPN set-up.":::
 
 The key steps to deploy a site-to-site VPN gateway are:
 
@@ -68,7 +68,7 @@ If you have set up the VPN type incorrectly, you will need to delete the virtual
 
 ## Border Gateway Protocol (BGP)
 
-![Screenshot of the BGP configuration screen.](../media/3-bgp-configuration-screen.png)
+:::image type="content" source="../media/3-bgp-configuration-screen.png" alt-text="Screenshot of the BGP configuration screen.":::
 
 [BGP](/azure/vpn-gateway/vpn-gateway-bgp-overview) is an optional feature that can be used with Azure route-based gateways. BGP has the same technology that’s used on the internet, but it's within Azure. This enables the Azure VPN gateway and any connected on-premises gateways to exchange information about the IP ranges being used.
 
@@ -104,7 +104,7 @@ To complete a cross-premises connection, download and complete a [configuration 
 
 - Open the script in a text editor and locate the Replace sections. Have you amended the parameter information correctly?
 
-![Screenshot showing the REPLACE text highlighting the information that needs replacing in a configuration script.](../media/3-configuration-text.png)
+:::image type="content" source="../media/3-configuration-text.png" alt-text="Screenshot showing the REPLACE text highlighting the information that needs replacing in a configuration script.":::
 
 - Double check the following values on your device:
 
@@ -140,7 +140,7 @@ A range of pre-written queries are available for you to use such as:
 
 - Gateway configuration changes.
 
-![Screenshot of the Microsoft Azure log screen showing a query and its results.](../media/3-ms-azure-log-screen.png)
+:::image type="content" source="../media/3-ms-azure-log-screen.png" alt-text="Screenshot of the Microsoft Azure log screen showing a query and its results.":::
 
 When you first set up your queries, preview the information in the different tables to ensure that you are accessing the correct information to help understand what is happening on your network. The samples shown above are just a few of the several hundred pre-written queries available. There are [tutorials](/azure/azure-monitor/logs/log-analytics-tutorial) to read if you want to write more complex queries.
 
@@ -178,11 +178,11 @@ If your connection has been working correctly and suddenly stops, use the follow
 
 - Check that the on-premises device is validated and configured correctly.
 
-![Screenshot showing the Gateway overview screen.](../media/3-gateway-overview-screen.png)
+:::image type="content" source="../media/3-gateway-overview-screen.png" alt-text="Screenshot showing the Gateway overview screen.":::
 
 - Check that the shared keys on each connection match.
 
-![Screenshot of shared key option and shared key field.](../media/3-shared-key.png)
+:::image type="content" source="../media/3-shared-key.png" alt-text="Screenshot of shared key option and shared key field.":::
 
 - Does the Local Network Gateway IP definition in Azure match the on-premises device IP?
 
@@ -196,13 +196,13 @@ If your connection has been working correctly and suddenly stops, use the follow
 
 - If you experience sporadic disconnection problems and have perfect forward secrecy enabled on your device, disable the feature and update the VPN gateway IPsec policy.
 
-![Screenshot showing the Resource health area.](../media/3-resource-health.png)
+:::image type="content" source="../media/3-resource-health.png" alt-text="Screenshot showing the Resource health area":::
 
 - Check the resource health.
 
 - Use troubleshooting tools within Azure.
 
-![Screenshot of the diagnose and solve problems feature.](../media/3-diagnose-solve-problems.png)
+:::image type="content" source="../media/3-diagnose-solve-problems.png" alt-text="Screenshot of the diagnose and solve problems feature.":::
 
 ## Identify the root cause for latency issues within site-to-site VPNs
 
@@ -216,7 +216,7 @@ Follow the steps below to access the metrics within Azure:
 
 - Select **Overview** to view tunnel ingress and egress metrics.
 
-![Screenshot of the Azure metrics screen](../media/3-azure-metrics.png)
+:::image type="content" source="../media/3-azure-metrics.png" alt-text="Screenshot of the Azure metrics screen":::
 
 - Click **Metric** on the side panel to view additional metrics as required.
 
@@ -232,4 +232,4 @@ The tracert command checks for cumulative delays exceeding 100 ms:
 
 - When the DNS names shows msm you have hit the Microsoft backbone.
 
-![Screenshot of the tracert screen.](../media/3-tracert.png)
+:::image type="content" source="../media/3-tracert.png" alt-text="Screenshot of the tracert screen.":::

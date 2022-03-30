@@ -2,7 +2,7 @@
 
 If you have individuals working remotely, then a point-to-site connection is a secure way of allowing them to connect to Azure resources using Windows, Linux or macOS.
 
-![A diagram showing a sample point-to-site connection.](../media/4-point-to-site.png)
+:::image type="content" source="../media/4-point-to-site.png" alt-text="A diagram showing a sample point-to-site connection.":::
 
 The key steps to deploy a site-to-site VPN gateway are:
 
@@ -70,13 +70,13 @@ Azure Monitor also identifies issues before they become a problem. It monitors a
 
 - Gain visibility and control over your Azure network.
 
-![A diagram showing an overview of Azure Monitor features.](../media/4-azure-monitor.jpg)
+:::image type="content" source="../media/4-azure-monitor.jpg" alt-text="A diagram showing an overview of Azure Monitor features.":::
 
 ## Network Watcher
 
 Network Watcher is an area where a range of monitoring and diagnostic tools are available.
 
-![Screenshot of Network watcher troubleshooting area.](../media/4-network-watcher.png)
+:::image type="content" source="../media/4-network-watcher.png" alt-text="Screenshot of Network watcher troubleshooting area.":::
 
 ## Troubleshoot issues with certificate-based connections
 
@@ -164,7 +164,7 @@ Some key areas to investigate are:
 
 - Disable the caching of domain credentials from the following key.
 
-![Screenshot of code to disable caching of domain credentials.](../media/4-disable-domain.png)
+:::image type="content" source="../media/4-disable-domain.png" alt-text="Screenshot of code to disable caching of domain credentials.":::
 
 - Check the VPN is active by opening an elevated command prompt and running:
 
@@ -174,7 +174,7 @@ ipconfig/all.
 
 The results should have an IP address contained within the Client Address Pool as specified in your configuration.
 
-![Screenshot showing typical results from running ipconfig/all.](../media/4-ipconfig.png)
+:::image type="content" source="../media/4-ipconfig.png" alt-text="Screenshot showing typical results from running ipconfig/all.":::
 
 ### Connection problems
 
@@ -202,7 +202,7 @@ A RADIUS server integrates with the Active Directory (AD) Server to allow users 
 
 - A VPN client configuration package for the Windows devices that will connect to the VNet.
 
-![A diagram showing the integration of a RADIUS server.](../media/4-radius-setup.png)
+:::image type="content" source="../media/4-radius-setup.png" alt-text="A diagram showing the integration of a RADIUS server.":::
 
 Although many of the principles are like site-to-site, there are some important differences:
 
@@ -252,19 +252,21 @@ The following checklist can help you troubleshoot VPN connections using point-to
 
 Have you opened the Azure VPN client screen and viewed the status log for any error messages?
 
-![Screenshot of AZ status log screen.](../media/4-azure-status-screen.png)
+:::image type="content" source="../media/4-azure-status-screen.png" alt-text="Screenshot of AZ status log screen.":::
 
 - Have you cleared the signed-in information and tried to connect?
 
 ![Screenshot of sign-in screen.](../media/4-azure-signin-screen.png)
+:::image type="content" source="../media/4-azure-signin-screen.png" alt-text="Screenshot of sign-in screen.":::
 
 - Have you run diagnostics on the connection?
 
-![Screenshot of Azure AD diagnostic page.](../media/4-azure-diagnostic-page.png)
+:::image type="content" source="../media/4-azure-diagnostic-page.png" alt-text="Screenshot of Azure AD diagnostic page.":::
 
 - Have you viewed the client log files?
 
-![Screenshot of Log Directory area within Azure AD.](../media/4-azure-log-directory.png)
+
+:::image type="content" source="../media/4-azure-log-directory.png" alt-text="Screenshot of Log Directory area within Azure AD..":::
 
 ## Troubleshoot OpenVPN connectivity issues
 
@@ -272,7 +274,7 @@ If the Open VPN tunnel is failing to connect to an OpenVPN Access Server, the fo
 
 - Have you checked the OpenVPN Access Server log files? If you have trouble starting the server, stop it, remove the logs, then start and stop the log immediately to remove unnecessary information. The following commands should be used to obtain the log file:
 
-![OpenVPN commands to obtain log files.](../media/4-open-vpn-commands.png)
+:::image type="content" source="../media/4-open-vpn-commands.png" alt-text="OpenVPN commands to obtain log files.":::
 
 Check the client log files:
 
@@ -312,15 +314,15 @@ Are you using the correct version? Point-to-site only uses OS version 10.11 or h
 
    - Local ID – is the local ID the same as the subject of the client certificate?
 
-![Screenshot of Mac OS X setting screen.](../media/4-mac-os-settings.jpg)
+:::image type="content" source="../media/4-mac-os-settings.jpg" alt-text="[Screenshot of Mac OS X setting screen.":::
 
 1. Select **Authentication Settings** – select **Certificate** from the dropdown list then check you have the correct certificate.
 
-![Screenshot of Mac OS X authentication certificate screen.](../media/4-mac-os-certificate-authentication.png)
+:::image type="content" source="../media/4-mac-os-certificate-authentication.png" alt-text="Screenshot of Mac OS X authentication certificate screen.":::
 
 1. Still In **Authentication Settings**, change the dropdown to show **Username** and check the credentials are correct.
 
-![Screenshot of Mac OS X authentication username screen.](../media/4-mac-os-username-authentication.png)
+:::image type="content" source="../media/4-mac-os-username-authentication.png" alt-text="Screenshot of Mac OS X authentication username screen..":::
 
 1. If you still experience problems, download Wireshark and run a packet capture.
 
