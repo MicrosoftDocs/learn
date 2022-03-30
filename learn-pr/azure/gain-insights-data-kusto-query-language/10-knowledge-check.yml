@@ -54,7 +54,7 @@ quiz:
       explanation: "Try again. The answer doesn't describe the `let` statement."
     - content: "The `let` statement is useful for breaking up a complex expression into multiple parts. It defines a scalar or tabular variable, or a user-defined function that can be used multiple times within a query."
       isCorrect: true
-      explanation: "The answer accurately describes they key the `let` statement."
+      explanation: "The answer accurately describes key benefits of using the `let` statement."
     - content: "The `let` statement creates persisted functions as part of the database metadata (stored functions). They're invoked through a name, are provided with zero or more input arguments, and return a single value."
       isCorrect: false
       explanation: "Try again. The answer describes stored functions that are stored within the database. They can be invoked in a query by using their name."
