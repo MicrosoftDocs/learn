@@ -70,7 +70,7 @@ The single-server deployment option for PostgreSQL provides similar benefits as 
 
 ### Azure Database for PostgreSQL Flexible Server
 
-The flexible-server deploymnet option for PostgreSQL is a fully managed database service. It provides more control and server configuration customizations, and has better cost optimization controls.
+The flexible-server deploymnet option for PostgreSQL is a fully managed database service. It provides more control and server configuration customizations, and has better cost optimization controls. 
 
 ### Azure Database for PostgreSQL Hyperscale (Citus)
 
