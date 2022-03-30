@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: true
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 9
 content: |
   [!include[](includes/5-exercise-troubleshoot-site-to-site-vpn-gateway-connectivity.md)]

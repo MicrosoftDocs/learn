@@ -1,14 +1,15 @@
-As your organization’s support engineer, you’ve been asked to help fix an issue between your resources in the US and northern Europe. You have existing infrastructure of virtual networks in two different regions. The VMs in the US virtual network (VNet1) are unable to get a ping response from the VMs in northern Europe (VNet2).
+As your organization's support engineer, you've been asked to help fix an issue between your resources in the US and northern Europe. You have existing infrastructure of virtual networks in two different regions. The VMs in the US virtual network (VNet1) are unable to get a ping response from the VMs in northern Europe (VNet2).
 
 Checking the topology, you can see that there are VPN gateways and connections.
 
 :::image type="content" source="../media/5-network-diagram.png" alt-text="Diagram of the topology of the network that needs troubleshooting.":::
 
-In this exercise, you'll troubleshoot and resolve the connectivity issue.
+In this exercise, you'll troubleshoot and resolve the connectivity issue. If you have not already run the script in unit 2, please do so now so you can follow the exercise below.
 
-1. Open the Azure portal in a new tab.
+> [!IMPORTANT]
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
-![Azure icon](../media/azure-icon.png)
+1. Open the [Azure portal](https://portal.azure.com) in a new tab.
 
 ## Test the connection
 
@@ -63,7 +64,7 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue.
 
 ## Troubleshoot the gateways
 
-You’ll check the types are correct for both gateways.
+You'll check the types are correct for both gateways.
 
 1. Go to the Azure portal.
 
@@ -87,7 +88,7 @@ You’ll check the types are correct for both gateways.
 
 ## Troubleshoot the virtual networks
 
-You’ll now check the address spaces don’t overlap for the two virtual networks.
+You'll now check the address spaces don't overlap for the two virtual networks.
 
 1. In the search bar, type **virtual networks**, and then select the **Virtual network** service.
 
@@ -105,7 +106,7 @@ You’ll now check the address spaces don’t overlap for the two virtual networ
 
 1. The two address spaces are different, so we can rule out any problems with them.
 
-1. You’ll now check the subnets are correctly set up.
+1. You'll now check the subnets are correctly set up.
 
 1. Select **VNet1**, then select **Subnets**.
 
@@ -141,7 +142,7 @@ You’ll now check the address spaces don’t overlap for the two virtual networ
 
    :::image type="content" source="../media/5-virtual-network-to-virtual-network-connection.png" alt-text="Screenshot of the refresh button.":::
 
-1. A connection can still not be made, so you’ll check the shared keys.
+1. A connection can still not be made, so you'll check the shared keys.
 
 1. Select **VNet1-VNet2**.
 
@@ -161,4 +162,4 @@ You’ll now check the address spaces don’t overlap for the two virtual networ
 
 1. The shared keys are not the same. For the connections to work, the shared key must be identical.
 
-1. Now that you’ve found the issue, you’ll resolve it in the next exercise.
+1. Now that you've found the issue, you'll resolve it in the next exercise.

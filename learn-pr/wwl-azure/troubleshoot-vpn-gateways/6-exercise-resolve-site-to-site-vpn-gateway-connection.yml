@@ -9,8 +9,8 @@ metadata:
   ms.author: lola
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
+azureSandbox: true
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 9
 content: |
   [!include[](includes/6-exercise-resolve-site-to-site-vpn-gateway-connection.md)]
