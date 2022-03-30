@@ -3,7 +3,7 @@ uid: learn.wwl.azure-monitor-azure-stack-hub
 metadata:
   title: Azure Monitor on Azure Stack Hub
   description: "Azure Monitor on Azure Stack Hub"
-  ms.date: 12/09/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   * Working experience with monitoring and logging cloud environments.
   * Conceptual knowledge of monitoring and logging.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-azure-monitor-on-azure-stack-hub.svg
 levels:
 - advanced
 roles:
