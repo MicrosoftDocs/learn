@@ -1,13 +1,13 @@
-You work as a support engineer supporting Azure infrastructure. You’ve been contacted by your web team about an issue with the website not responding. The web team have a pool of webservers behind a load balancer and public IP address.
+You work as a support engineer supporting Azure infrastructure. You've been contacted by your web team about an issue with the website not responding. The web team have a pool of webservers behind a load balancer and public IP address.
 
 :::image type="content" source="../media/6-topology.png" alt-text="Screenshot of a network topology diagram showing a pool of webservers behind a load balancer.":::
 
-[!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
+> [!IMPORTANT]
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along. If you have not already run the script in unit 2, please do so now so you can follow the exercise below.
 
-In this exercise, you’ll use what you’ve learned to go through steps to troubleshoot the connection issues to the virtual machines.
+In this exercise, you'll use what you've learned to go through steps to troubleshoot the connection issues to the virtual machines.
 
-## Verify that the website can’t be reached
+## Verify that the website can't be reached
 
  Use the cloud shell on the right.
 
@@ -68,9 +68,9 @@ In this exercise, you’ll use what you’ve learned to go through steps to trou
 
 :::image type="content" source="../media/6-networking.png" alt-text="A screenshot showing the instances without NSG setup.":::
 
-1. There isn’t an NSG being used by this instance.
+1. There isn't an NSG being used by this instance.
 
-1. In the breadcrumb trail, click **myScaleSet**, and then repeat steps 2 to 4 to see that there isn’t an NSG on the other instance.
+1. In the breadcrumb trail, click **myScaleSet**, and then repeat steps 2 to 4 to see that there isn't an NSG on the other instance.
 
 ## Check the load balancer for a scale set
 
@@ -102,6 +102,6 @@ In this exercise, you’ll use what you’ve learned to go through steps to trou
 
 1. Scroll down and read the insight found.
 
-:::image type="content" source="../media/6-no-connectivity-back-end-pool.png" alt-text="Screen shot of the connectivity results showing the backend pool can’t be connected to over port 443.":::
+:::image type="content" source="../media/6-no-connectivity-back-end-pool.png" alt-text="Screen shot of the connectivity results showing the backend pool can't be connected to over port 443.":::
 
-    The insight points to the fact that the backend instances in the pool aren’t listening for port **443**. The website instances should be listening to port **80**. This insight points to a problem in the load balancer rule.
+    The insight points to the fact that the backend instances in the pool aren't listening for port **443**. The website instances should be listening to port **80**. This insight points to a problem in the load balancer rule.

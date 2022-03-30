@@ -1,8 +1,10 @@
 After investigating the connection issues to your website, you’ve found an issue with the load balancer rule user by the virtual machine scale set.
 
 In this exercise, you’ll resolve the issue and check that the website can now be accessed.
-[!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
+
+> [!IMPORTANT]
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you have not already run the script in unit 2, please do so now so you can follow the exercise below. If you don't have an Azure subscription, you can still read along.
+
 ## Validate load balancer rules
 
 1. In the Azure portal, search for **load balancers**, and then under **Services**, click **Load balancers**.

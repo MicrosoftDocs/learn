@@ -1,188 +1,106 @@
-## Troubleshoot latency issues within a virtual network
+You work as a support engineer supporting Azure infrastructure. You've been contacted by your web team about an issue with the website not responding. The web team have a pool of webservers behind a load balancer and public IP address.
 
-The following [Tutorial: Diagnose a VM network traffic filter problem - Azure portal - Azure Network Watcher](/azure/network-watcher/diagnose-vm-network-traffic-filtering-problem) can help you determine the cause of a communication failure and how you can resolve it.
+:::image type="content" source="../media/6-topology.png" alt-text="Screenshot of a network topology diagram showing a pool of webservers behind a load balancer.":::
 
-### Azure Network Watcher
+> [!IMPORTANT]
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
-Azure Network Watcher has tools to monitor, diagnose, and gain insight into your Azure virtual network. Network Watcher is designed to monitor and repair the network performance and health of virtual machines, virtual networks, application gateways, load balancers, and so on. It does this through metrics and enabling or disabling logs for resources in a virtual environment.
+In this exercise, you'll use what you've learned to go through steps to troubleshoot the connection issues to the virtual machines.
 
-**Connection Monitor** enables you to monitor the latency, reachability, and network topology changes between a virtual machine (VM) and the endpoint. It also provides the minimum, average, and maximum latency observed over time.
+## Verify that the website can't be reached
 
-**Network Performance Monitor** is a cloud-based hybrid network monitoring solution that enables you to monitor network performance in Azure and on-premises resources using VPN or ExpressRoute. The advanced detection ability in Network Performance Monitor helps identify network issues like traffic blackholing, routing errors, and other issues that escape detection through conventional monitoring methods.
+ Use the cloud shell on the right.
 
-### Troubleshoot using packet capture in Azure Network Watcher
+1. Use this Azure CLI command to get the public IP address of the scale set.
 
-Packet capture is one the network diagnostic tools you use to create packet capture sessions to track traffic to and from a virtual machine. Packet capture diagnoses network anomalies, gathers network statistics, and provides information on network intrusions to debug client-server communications.
+    ```
+    az network public-ip show \
+    --resource-group cloud-shell-storage-westeurope \
+    --name myScaleSetLBPublicIP \
+    --query '[ipAddress]' \
+    --output tsv
+    ```
 
-Packet capture can be launched through the Network Watcher portal, PowerShell, CLI, or REST API. Packet capture comprises of filters that are based on five-tuple (protocol, local IP address, remote IP address, local port, and remote port) information. Advanced filters and fine-tuned controls for the capture session ensure you capture traffic you want to monitor. You can store the captured data on the VM's disk or a storage blob, or both. You can then review the capture file using network capture analysis tools.
+2. Copy the IP address, in a new tab in your browser, try to navigate to it.
 
-Keep in mind the following options when performing a packet capture session:
+:::image type="content" source="../media/6-website-not-responding.png" alt-text="Screenshot of the website not responding.":::
 
-Capture configuration
+## Check that Network Security Groups are configured correctly
 
-| Property| Description|
-| :--- | :--- |
-| Maximum bytes per packet (bytes)| The number of bytes from each packet that are captured—all bytes are captured if left blank. If you need only the IPv4 header, indicate 34 here.|
-| Maximum bytes per session (bytes)| Total number of bytes captured—when the value is reached the session ends.|
-| Time limit (seconds)| Sets a time constraint on the packet capture session. The default value is 18000 seconds or five hours.|
+1. In another browser tab, navigate to the Azure portal.
 
-Filtering (optional)
+1. Search for **Network security groups**.
 
-| Property| Description|
-| :--- | :--- |
-| Protocol| The protocol to filter for the packet capture. The available values are TCP, UDP, and All.|
-| Local IP address| This value filters the packet capture to packets where the local IP address matches this filter value.|
-| Local port| This value filters the packet capture to packets where the local port matches this filter value.|
-| Remote IP address| This value filters the packet capture to packets where the remote IP matches this filter value.|
-| Remote port| This value filters the packet capture to packets where the remote port matches this filter value.|
+:::image type="content" source="../media/6-search-nsg.png" alt-text="A screenshot showing the virtual machine scale set highlighted.":::
 
-### Azure Monitor
+1. Under **Services**, click **Network Security Groups**.
 
-Azure Monitor is used to monitor the performance of your applications and services across subscriptions and regions from a centralized location. It collects, analyzes, and acts on telemetry from your cloud and on-premises environments. It also provides an insight on how your applications are performing, and identifies issues affecting them, and the resources they rely on.
+:::image type="content" source="../media/6-no-network-security-groups.png" alt-text="A screenshot showing that in this environment there are no NSGs created.":::
 
-The following diagram gives a high-level view of Azure Monitor. At the center of the diagram are the data stores for metrics and logs, which are the two fundamental types of data used by Azure Monitor. On the left are the sources of monitoring data that populate these stores. On the right are the different functions that Azure Monitor performs with this collected data. This includes such actions as analysis, alerting, and streaming to external systems.
+## Check the port rules for the scale set
 
-![Diagram showing a high-level view of Azure Monitor](../media/5-azuremonitor.png)
+1. In the Azure portal, search for **scale set**, and then under **Services**, click **Virtual machine scale sets**.
 
-Watch this video to learn more about Azure Monitoring Tutorial:
+:::image type="content" source="../media/6-search-vm-scale-sets.png" alt-text="A screenshot showing the virtual machine scale set highlighted.":::
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qXeL?postJsllMsg=true]
+2. In the list, click **myScaleSet** to view the details.
 
-## Identify the root cause for latency issues connecting to Azure VMs
+:::image type="content" source="../media/6-my-scale-set.png" alt-text="A screenshot showing the current scale set selected.":::
 
-You can tools to measure your Azure VM network latency. The tools, SockPerf (for Linux) and latte.exe (for Windows) can isolate and measure network latency. These tools exclude other types of latency, such as application latency, and focus on the kind of network traffic that affects application performance. For example, Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) traffic.
+3. On the left, under **Settings**, click **Networking**.
 
-Ping is not recommended to measure latency as it employs the Internet Control Message Protocol (ICMP). Results from ICMP which don't represent the network traffic that's used in real workloads—for example, TCP and UDP payload delivery times.
+:::image type="content" source="../media/6-inbound-outbound-port-rules.png" alt-text="A screenshot of Networking selected, with inbound and outbound port rules highlighted.":::
 
-To test Azure virtual machine network latency in an Azure virtual network, refer to [Test VM network latency](/azure/virtual-network/virtual-network-test-latency).
+4. Click the **Inbound port rules** tab, and then click the **Outbound port rules** tab.
 
-For testing Azure VM network throughput, refer to [Bandwidth/Throughput testing (NTTTCP)](/azure/virtual-network/virtual-network-bandwidth-testing).
+   Note that there are no network security groups (NSG) on this network interface.
 
-### RichCopy
+## Check the network settings for the pool instances
 
-RichCopy is a free utility multithreaded copying tool. It enables you to open multiple threads simultaneously, allowing many files to be copied in parallel. You can also pause and resume file copy operations.
+1. On the left, under **Settings**, click **Instances**.
 
-The following image shows features of RichCopy. You can customize various aspects of file copying, such as filtering files, saving attributes, adjusting cache size, and so on.
+:::image type="content" source="../media/6-instances.png" alt-text="A screenshot showing an instance in the scale set highlighted.":::
 
-![Screenshot showing File copy options window of RichCopy tool](../media/5-richcopy.png)
+1. Click the first instance listed, in the above example this is **myScaleSet_2**. In your environment this could be different.
 
-> [!NOTE]
-> **NOTE**: RichCopy is provided as is, and is not supported by Microsoft.
+1. On the left, under **Settings**, click **Networking**.
 
-## Determine whether resource response time is within an allowable range
+:::image type="content" source="../media/6-networking.png" alt-text="A screenshot showing the instances without NSG setup.":::
 
-Response time is a key element when you monitor the performance of VMs. In Azure, there is a range of different VM sizes and types, each with a separate mix of capabilities and features. One capability is network throughput (or bandwidth), measured in megabits per second (Mbps). The network capacity is shared within the VMs, and hosted on shared hardware. This means larger VMs are allocated relatively more bandwidth than smaller ones.
+1. There isn't an NSG being used by this instance.
 
-The allocated bandwidth is the total limit of all network traffic leaving the VM, irrespective of destination. For example, if a VM has a 1,000 Mbps limit, that applies whether the outbound traffic is destined for another VM in the same virtual network, or outside of Azure. The network bandwidth of each VM is metered on its egress (outbound) traffic.
+1. In the breadcrumb trail, click **myScaleSet**, and then repeat steps 2 to 4 to see that there isn't an NSG on the other instance.
 
-Another feature is accelerated networking, which is designed to improve network performance, including latency, throughput, and CPU utilization. Accelerated networking improves a VM’s throughput, but only up to its allocated bandwidth.
+## Check the load balancer for a scale set
 
-Azure VMs can have one or several network interfaces attached to them.
+1. Click the **Load balancing** tab, and then click the **myScaleSetLB** load balancer.
 
-### Expected network throughput
+:::image type="content" source="../media/6-load-balancer.png" alt-text="A screenshot showing the myScaleSetLB highlighted.":::
 
-The throughput limit applies to the VM, and remains unaffected by the following factors:
+1. On the left, under **Settings**, click **Frontend IP configuration**.
 
-- **Number of network interfaces**: The bandwidth limit is increased for all outbound traffic from the VM.
+:::image type="content" source="../media/6-front-end-ip-configuration.png" alt-text="A screenshot showing  the frontend IP address highlighted.":::
 
-- **Accelerated networking**: This feature can be helpful in achieving the published limit, but it doesn’t change it.
+1. Check that there is a frontend IP address, and that this is the IP you tested at the beginning of this exercise.
 
-- **Traffic destination**: All destinations count toward the outbound limit.
+1. On the left, under **Settings**, click **Load balancing rules**.
 
-- **Protocol**: All outbound traffic over all protocols counts towards the limit.
+:::image type="content" source="../media/6-load-balancing-rules.png" alt-text="Screen shot showing the load balancing rules.":::
 
-To learn about expected outbound throughput and the number of network interfaces supported by each VM size, see Azure [Windows](/azure/virtual-machines/sizes?toc=/azure/virtual-network/toc.json) and [Linux](/azure/virtual-machines/sizes?toc=/azure/virtual-network/toc.json) VM sizes.
+    Note that there is a rule for port **80** and port **443**.
 
-### Network flow limits
+1. On the left, click **Diagnose and solve problems**.
 
-Apart from bandwidth, another factor that can affect network performance is the number of network connections active on a VM at any given time. For each direction of a TCP/UDP connection in data structures, the Azure networking stack maintains state, which is referred to as "flows". A typical TCP/UDP connection has two flows created, for the inbound and outbound direction.
+## Use the Diagnose and solve problems troubleshooter
 
-When data transfer happens between endpoints, several flows are required in addition to those that do the data transfer. For example, flows are created for DNS resolution and load balancer health probes.
+1. Click the **No connectivity to the backend pool** troubleshooter.
 
-Also, network virtual appliances (NVAs) such as gateways, proxies, and firewalls, consider flows that are created for connections terminated at the appliance and originated by the appliance.
+:::image type="content" source="../media/6-no-connectivity.png" alt-text="A screenshot showing the No connectivity to backend pool troubleshooter.":::
 
-![Diagram showing flows for the inbound and the outbound direction](../media/5-inboundoutboundflows.png)
+1. In the **Tell us more about the problem you are experiencing** drop-down box, click **Intermittent connectivity**.
 
-### Flow limits and active connections recommendations
+1. Scroll down and read the insight found.
 
-The Azure networking stack supports 1M total flows (500k inbound and 500k outbound) for a VM. Here are the different scenarios of total active connections that can be handled by a VM:
+:::image type="content" source="../media/6-no-connectivity-back-end-pool.png" alt-text="Screen shot of the connectivity results showing the backend pool can't be connected to over port 443.":::
 
-- VMs that belong to VNET can handle 500k active connections for all VM sizes, with 500k active flows in each direction.
-
-- VMs with NVAs such as gateway, proxy, and firewall can handle 250k active connections with 500k active flows in each direction. This is due to the forwarding and additional flow creation on new connection setup to the next hop, as shown in the diagram above.
-
-When it<!--CE: I think we need to define 'it' here.--> hits the limit, additional connections are dropped. Connection establishment and termination rates can also affect network performance. This is because connection establishment and termination shares CPU with packet processing routines. It’s recommended to benchmark workloads against expected traffic patterns, and scale out workloads appropriately to match your performance needs.
-
-You can track the number of network flows and the flow creation rate on your VM or VMSS instances with the help of metrics in Azure Monitor.
-
-![Screenshot displaying metrics in Azure Monitor](../media/5-azuremonitormetrics.png)
-
-## Determine root cause for throttling at VM level
-
-Log Analytics in Azure Monitor can reduce end-to-end run time in a virtual network. To achieve this, you need to first upload the disk and VM throttling limits to a custom log in Log Analytics. To configure Log Analytics, consider the following steps: 
-
-- List all the VMs and disks in a subscription.
-
-- Configure Azure Compute capabilities for each SKU using Azure REST API.
-
-- Match disks to each corresponding VM.
-
-- Add the VM IOPS, and disk bytes limit.
-
-- Post disk\VM data to Log Analytics.
-
-- Run a log analytics query that will output disks and VMs that were throttled.
-
-- Output results displayed.
-
-For detailed steps, refer to [Azure VM and Disk Throttling](https://devblogs.microsoft.com/premier-developer/azure-vm-and-disk-throttling/)
-
-> [!NOTE]
-> **NOTE**: It's quicker to run the throttling queries in Log Analytics as compared to doing it locally.
-
-## Determine root cause for throttling between sources and targets
-
-A VPN gateway connection establishes a secure, cross-premises connectivity between your virtual network within Azure and on-premises IT infrastructure.
-
-The VPN gateway connection comprises of the following components:
-
-- On-premises VPN device (view a list of validated VPN devices).
-
-- Public internet.
-
-- Azure VPN gateway.
-
-- Azure VM.
-
-The following diagram shows the logical connectivity of an on-premises network to an Azure virtual network through VPN.
-
-![Diagram showing the logical connectivity of an on-premises network to an Azure virtual network through VPN](../media/5-onpremisestoavn.png)
-
-### Calculate the maximum expected ingress/egress
-
-- Determine your application's baseline throughput requirements.
-
-- Determine your Azure VPN gateway throughput limits. For help, see the "Gateway SKUs" section of [About VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways).
-
-- Determine the [Azure VM throughput guidance](/azure/virtual-machines/sizes?toc=/azure/virtual-network/toc.json) for your VM size.
-
-- Determine your Internet Service Provider (ISP) bandwidth.
-
-- Calculate your expected throughput by taking the least bandwidth of either the VM, VPN Gateway, or ISP, which is measured in Mbps divided by eight.
-
-If the calculated throughput doesn’t meet the application's baseline requirements, you can increase the bandwidth of the resource identified as the bottleneck. To resize an Azure VPN Gateway, refer to [Changing a gateway SKU](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings). To resize a virtual machine, see [Resize a VM](/azure/virtual-machines/resize-vm?tabs=portal). If you are not experiencing the expected internet bandwidth, contact your ISP.
-
-## Validate network throughput by using performance tools
-
-You use iPerf to validate network throughput. This tool works on Windows and Linux, and has both client and server modes. It's limited to 3Gbps for Windows VMs.
-
-However, iPerf is not the only tool. NTTTCP is an alternative solution for testing.
-
-To learn more, refer to [iPerf tool](/azure/vpn-gateway/vpn-gateway-validate-throughput-to-vnet).
-
-## Troubleshoot bandwidth availability issues
-
-Distributed denial of service (DDoS) attacks are the biggest security concerns for cloud-based applications. A DDoS can occur when attackers employ multiple servers to strike your web services. This type of attack aims to exhaust an application's resources so that it becomes unavailable to legitimate users.
-
-Azure DDoS Protection Standard filters out the malicious traffic so legitimate users can carry on without any disruption. Combined with application design best practices, Azure DDoS Protection Standard provides enhanced DDoS mitigation features to defend against these attacks.
-
+The insight points to the fact that the backend instances in the pool aren't listening for port **443**. The website instances should be listening to port **80**. This insight points to a problem in the load balancer rule.

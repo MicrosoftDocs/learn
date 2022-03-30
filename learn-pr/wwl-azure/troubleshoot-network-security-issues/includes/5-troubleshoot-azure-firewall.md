@@ -176,6 +176,9 @@ To view the results of some of the rule combinations, refer to [Azure Firewall r
 
 Azure Firewall Manager is a security management service. You can use it to create secured virtual hubs to secure cloud network traffic destined for private IP addresses, Azure PaaS, and the internet.
 
+:::image type="content" source="../media/3-applicationsecuritygroups.png" alt-text="Diagram demonstration Application security groups.":::
+
+
 ![Diagram showing secured virtual hub using Azure Firewall Manager](../media/4-azurefirewallmanager.png)
 
 The following [Tutorial: Secure your virtual hub using Azure Firewall Manager](/azure/firewall-manager/secure-cloud-network) can help you learn how to:

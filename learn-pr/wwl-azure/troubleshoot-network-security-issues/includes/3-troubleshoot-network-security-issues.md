@@ -60,7 +60,7 @@ For more information, see [Anomaly Scoring mode](/azure/web-application-firewall
 
 To fix false positives and avoid the issues of blocked traffic, you can use an exclusion list. Using an exclusion list is only applicable to a specific part of a request, or a rule set that is being disabled. You can decide to exclude either body, headers, or cookies for a certain condition instead of excluding the whole request. In a global setting environment, the specific exclusion applies to all traffic passing through your WAF.
 
-![Screenshot showing Web application firewall settings](../media/2-wafgateway.png)
+:::image type="content" source="../media/2-wafgateway.png" alt-text="Screenshot showing Web application firewall settings.":::
 
 Refer to [WAF configuration](/azure/web-application-firewall/ag/application-gateway-waf-configuration) for more information about exclusion lists.
 
@@ -70,15 +70,16 @@ Refer to [WAF configuration](/azure/web-application-firewall/ag/application-gate
 
 1. Select **Manage exclusions** under **Managed rules**.
 
-![Screenshot showing WAF policy settings. Manage exclusions tab under Managed rules is
-highlighted
-](../media/2-wafpolicysettings.png)
+:::image type="content" source="../media/2-wafpolicysettings.png" alt-text="Screenshot showing WAF policy settings. Manage exclusions tab under Managed rules is
+highlighted.":::
 
-![Screenshot showing Managed rules in WAF portal. The option of Add is highlighted](../media/2-wafmanagedrules.png)
+:::image type="content" source="../media/2-wafmanagedrules.png" alt-text="Screenshot showing Managed rules in WAF portal. The option of Add is highlighted.":::
 
 An example exclusion list:
 
 ![Screenshot displaying an example exclusion list](../media/2-ruleexclusion.png)
+
+:::image type="content" source="../media/2-ruleexclusion.png" alt-text="Screenshot displaying an example exclusion list.":::
 
 - **Disable the rule**: Disabling a rule allows you to treat a certain condition as a non-threat that would otherwise be flagged as malicious and be blocked. In a global setting environment, disabling a rule for the entire WAF is a risk and can weaken your security.
 
@@ -90,7 +91,7 @@ An example exclusion list:
 
 1. Select **Managed Rules**.
 
-![Screenshot showing Web application firewall gateway](../media/2-firewallgateway.png)<!--CE: Should the numbers below follow on from the 1,2,3 above?-->
+:::image type="content" source="../media/2-firewallgateway.png" alt-text="Screenshot showing Web application firewall gateway.":::
 
 1. Search for the rules or rule groups that you want to disable.
 
@@ -100,7 +101,7 @@ An example exclusion list:
 
 1. Select **Save**.
 
-![Screenshot showing Managed rules window. The option of Disable rule is highlighted](../media/2-managedruleswindow.png)
+:::image type="content" source="../media/2-managedruleswindow.png" alt-text="Screenshot showing Managed rules window. The option of Disable rule is highlighted.":::
 
 A third-party tool called Fiddler can provide additional information. Fiddler will help you to:
 
@@ -114,7 +115,7 @@ A third-party tool called Fiddler can provide additional information. Fiddler wi
 
 - **Disable request body inspection**: Certain bodies that are not a threat to your application can be prevented from being evaluated by your WAF by setting **Inspect request body** to off. This way, only the request body is not inspected. The headers and cookies will still be inspected, unless they're on the exclusion list.
 
-![Screenshot showing WAF policy. The option of Inspect request body to off](../media/2-wafpolicy.png)
+:::image type="content" source="../media/2-wafpolicy.png" alt-text="Screenshot showing WAF policy. The option of Inspect request body to off.":::
 
 - **File size limits**: The possibility of an attack to web servers and applications can be reduced by limiting the file size for your WAF. Permitting large files increases the risk of your back end being exhausted. To prevent attacks, it is advisable to limit the file size to a typical case for your application.
 
@@ -224,7 +225,7 @@ A point-to-site (P2S) VPN connection is initiated by a single endpoint and is us
 
 P2S VPN supports Secure Socket Tunneling Protocol (SSTP), and IKEv2. You can securely connect different clients running Windows, Linux, or macOS to an Azure VNet through point-to-site connection.
 
-![Diagram showing point-to-site VPN connection](../media/2-point-to-site.png)
+:::image type="content" source="../media/2-point-to-site.png" alt-text="Diagram showing point-to-site VPN connection.":::
 
 ## Generate certificates
 

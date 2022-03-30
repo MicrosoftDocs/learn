@@ -122,7 +122,7 @@ In the following task, the examples are for a VM named **myVM** with a network i
 
 1. Under **SETTINGS**, select **Networking**, as shown in the picture below:
 
-![Screenshot showing the VM window. Networking tab under Settings is highlighted](../media/3-vm-window.png)
+:::image type="content" source="../media/3-vm-window.png" alt-text="Screenshot showing the VM window. Networking tab under Settings is highlighted.":::
 
 The rules you see listed in the following picture are for a network interface named **myVMVMNic**. There are **INBOUND PORT RULES** for the network interface from two different network security groups:
 
@@ -136,19 +136,19 @@ Under **OUTBOUND PORT RULES**, at the bottom, there are outbound port rules for 
 
 1. Ensure that the VM is in the running state, and then select **Effective security rules**, as shown  in the following image:
 
-![Screenshot displaying Effective security rules](../media/3-effectivesecurityrules.png)
+:::image type="content" source="../media/3-effectivesecurityrules.png" alt-text="Screenshot displaying Effective security rules.":::
 
 You can see that there are different tabs for the NSG associated to the network interface and the subnet. The rules listed are the same as in step 3<!--CE: Please check - which one is Step 3?--> although, as shown in the picture, only the first 50 rules are displayed. To download a .csv file that contains all the rules, select **Download**.
 
 To see which prefixes each service tag represents, select a rule, such as **AllowAzureLoadBalancerInbound**. The picture below shows the prefixes for the **AzureLoadBalancer** service tag:
 
-![Screenshot showing prefixes for the AzureLoadBalancer service tag](../media/3-azureloadbalancer.png)
+:::image type="content" source="../media/3-azureloadbalancer.png" alt-text="Screenshot showing prefixes for the AzureLoadBalancer service tag.":::
 
 1. The VM in this example has two network interfaces, **myVMVMNic** and **myVMVMNic2** attached to it. The effective security rules can be different for each network interface. Select **myVMVMNic2** to view the rules for this network interface.
 
 The following image shows that the **myVMVMNic2** network interface has the same rules associated to its subnet as the **myVMVMNic** network interface, because both are in the same subnet. When you associate an NSG to a subnet, its rules are applied to all network interfaces.
 
-![Screenshot displaying rules for the myVMVMNic2 network interface](../media/3-myvmvmnic2.png)
+:::image type="content" source="../media/3-myvmvmnic2.png" alt-text="Screenshot displaying rules for the myVMVMNic2 network interface.":::
 
 You can see that the **myVMVMNic2** network interface does not have a network security group associated to it, as the **myVMVMNic** network interface does. Each network interface and subnet can have zero, or one, NSG associated to it. The NSG associated to each network interface or subnet can be the same, or different. You can associate the same NSG to as many network interfaces and subnets as you choose.
 
@@ -190,7 +190,7 @@ To troubleshoot connectivity problems:
 
 The NSG flow logs feature in Azure Network Watcher allows you to log information about IP traffic flowing through an NSG. The flow data is sent to Azure Storage accounts and from there you can export it to any visualization tool, SIEM, or IDS.
 
-![Screenshot showing Network Watcher window that displays NSG flow logs](../media/3-nsgflowlogs.png)
+:::image type="content" source="../media/3-nsgflowlogs.png" alt-text="Screenshot showing Network Watcher window that displays NSG flow logs.":::
 
 ## Why use flow logs?
 
@@ -250,7 +250,7 @@ IP flow verify considers the rules for all NSGs applied to the network interface
 
 IP flow verify validates if a rule in an NSG is blocking ingress or egress traffic to or from a virtual machine. It also evaluates the Azure Virtual Network Manager rules and NSG rules.
 
-![Screenshot displaying IP flow verify window](../media/3-ipflowverify.png)
+:::image type="content" source="../media/3-ipflowverify.png" alt-text="Screenshot displaying IP flow verify window.":::
 
 To learn more about troubleshooting NSG flow logs, see [Troubleshooting common issues](/azure/network-watcher/network-watcher-nsg-flow-logging-overview).
 
@@ -258,7 +258,7 @@ To learn more about troubleshooting NSG flow logs, see [Troubleshooting common i
 
 Application security groups allow you to group virtual machines located in Azure virtual network, and define network security policies based on those groups. This helps in reducing the maintenance effort of explicit IP addresses. Consider the following picture for a better understanding of ASGs:
 
-![Diagram demonstration Application security groups](../media/3-applicationsecuritygroups.png)
+:::image type="content" source="../media/3-applicationsecuritygroups.png" alt-text="Diagram demonstration Application security groups.":::
 
 In the previous picture, NIC1 and NIC2 are members of the AsgWeb ASG. NIC3 is a member of the AsgLogic ASG, and NIC4 a member of the AsgDb ASG. In this example, each network interface is a member of only one network security group. However, a network interface can be a member of multiple ASGs, up to the Azure limits.
 
