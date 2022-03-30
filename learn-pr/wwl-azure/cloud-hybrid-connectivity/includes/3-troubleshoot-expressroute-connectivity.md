@@ -355,7 +355,7 @@ The detailed results of iPerf tests are in individual text files in the AzureCT 
 
 The PowerShell output format looks similar to:
 
-:::image type="content" source="../media/3-powershelloutput.png" alt-text="Screenshot of PowerShell output of test":::
+:::image type="content" source="../media/3-powershell-output.png" alt-text="Screenshot of PowerShell output of test":::
 
 If the performance test doesn’t give the results you expected results, use a step-by-step process to resolve the issue.
 
