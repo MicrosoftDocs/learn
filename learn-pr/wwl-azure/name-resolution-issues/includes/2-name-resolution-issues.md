@@ -1,6 +1,6 @@
 You’ll troubleshoot a name resolution problem in a later exercise. Use the following instructions and the Azure Cloud Shell on the right of the screen to create the environment for this exercise.
 
-> **NOTE**:
+> [!NOTE]
 > The resource group **sandbox-rg** has been created automatically. Use this as your resource group name. You won't have permission to create additional resource groups in the sandbox.
 
 In the sandbox to the right, follow these steps:
@@ -10,15 +10,15 @@ Using the Ccloud Shell on the right, run these commands to create the example to
 
 1. Clone the setup script from GitHub.
 
-```console
-git clone https://github.com/MicrosoftDocs/mslearn-name-resolution-issues/blob/main/setup.md networking
-```
+   ```console
+   git clone https://github.com/MicrosoftDocs/mslearn-name-resolution-issues/blob/main/setup.md networking
+   ```
 
 1. Run the setup script.
 
-```console
-bash networking/setup.sh
-```
+   ```console
+   bash networking/setup.sh
+   ```
 
 1. The script will create all the resources. Wait until it completes, you should see a Lab Environment Created message.
 

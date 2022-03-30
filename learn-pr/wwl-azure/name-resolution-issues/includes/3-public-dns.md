@@ -10,73 +10,74 @@ Public DNS servers convert domain names to IP addresses to allow people to find 
 
 1. From a command prompt, run nslookup:
 
-nslookup <name> <IP address of the DNS server>
+   nslookup <name> <IP address of the DNS server>
 
-For example:
+   For example:
 
-nslookup app1 10.0.0.1
+   nslookup app1 10.0.0.1
 
-If you get a failure or time-out response, check for recursion problems. Check the server that was used in your original query forwards queries by examining the Forwarders tab in the Server properties in the DNS console. If the Enable forwarders check box is selected, and one or more servers are listed, this server forwards queries.
+   If you get a failure or time-out response, check for recursion problems. Check the server that was used in your original query forwards queries by examining the Forwarders tab in the Server properties in the DNS console. If the Enable forwarders check box is selected, and one or more servers are listed, this server forwards queries.
 
-With recursion, all DNS servers that are used in the path of a recursive query must be able to respond and forward correct data. If they can't, a recursive query can fail because:
+   With recursion, all DNS servers that are used in the path of a recursive query must be able to respond and forward correct data. If they can't, a recursive query can fail because:
 
-- The query times out before it can be completed.
+   - The query times out before it can be completed.
 
-- A server failed to respond.
+   - A server failed to respond.
 
-- A server provides incorrect data.
+   - A server provides incorrect data.
 
-Nslookup will also tell you whether the name has been resolved by an authoritative or non-authoritative server.
+   Nslookup will also tell you whether the name has been resolved by an authoritative or non-authoritative server.
 
 1. Flush the resolver cache by running the dnscmd /clearcache command in an Elevated Command Prompt window:
 
-- Right click Command Prompt and choose ‘Run as administrator’
+   - Right click Command Prompt and choose ‘Run as administrator’
 
-Type dnscmd [<servername>] /clearcache
+   Type dnscmd [<servername>] /clearcache
 
-The <servername> is its IP address, FQDN, or hostname. If omitted, the local server is used.
+   The <servername> is its IP address, FQDN, or hostname. If omitted, the local server is used.
 
-You can also use **ipconfig -flushdns** to clear the DNS cache.
+   You can also use **ipconfig -flushdns** to clear the DNS cache.
 
-Alternatively, in an Elevated PowerShell window, run the following cmdlet:
+   Alternatively, in an Elevated PowerShell window, run the following cmdlet:
 
-Clear-DnsServerCache
+   Clear-DnsServerCache
 
-Once you have cleared the cache, try again.
+   Once you have cleared the cache, try again.
 
 1. Check the DNS server address. If necessary, correct the address.
 
 1. The [dig command](https://phoenixnap.com/kb/linux-dig-command-examples) (domain information groper) gives DNS information which is helpful in troubleshooting problems. It is a free utility which needs to be installed on Windows machines. To get dig information, run the following command:
 
-dig <domain name or IP>
+   dig <domain name or IP>
 
-DIG displays the **status** of whether a query was successful.
+   DIG displays the **status** of whether a query was successful.
 
-The **ANSWER SECTION** shows a response to a request sent in the **QUESTION SECTION.**
+   The **ANSWER SECTION** shows a response to a request sent in the **QUESTION SECTION.**
 
-The **SERVER** displays the address for the public DNS server.
+   The **SERVER** displays the address for the public DNS server.
 
-By default, dig looks up the **[A record](https://phoenixnap.com/kb/dns-record-types)** for a domain and shows which IP address the domain points to when resolving the name.
+   By default, dig looks up the **[A record](https://phoenixnap.com/kb/dns-record-types)** for a domain and shows which IP address the domain points to when resolving the name.
 
-Use **dig** with the **+trace** tag to see the full path to the destination:
+   Use **dig** with the **+trace** tag to see the full path to the destination:
 
-dig contoso.com +trace
+   dig contoso.com +trace
 
-To check the delegated name servers, use the ns option:
+   To check the delegated name servers, use the ns option:
 
-dig contoso.com ns
+   dig contoso.com ns
 
 1. If a computer cannot be reached, try using the commands IPCONFIG / RELEASE and IPCONFIG /RENEW from the computer’s command prompt to refresh cached information. 
-IMPORTANT: IPCONFIG /RELEASE will disconnect the computer from the internet. Run 
-IPCONFIG /ALL to check the current information.
+   > [!IMPORTANT] 
+   > IPCONFIG /RELEASE will disconnect the computer from the internet. Run 
+   > IPCONFIG /ALL to check the current information.
 
 1. To check the IP configuration of a computer, run ipconfig /all at a command prompt. Scroll down to verify the IP address, subnet mask, and default gateway. The default gateway will be a router or firewall.
 
 1. The tracert tools displays the route from source to destination. When troubleshooting DNS issues, it helps to identify where packets stopped on the network. Install the traceroute tool using the [apt package manager](https://phoenixnap.com/kb/how-to-manage-packages-ubuntu-debian-apt-get).
 
-If running on a Windows machine:
+   If running on a Windows machine:
 
-tracert <domain name or IP>
+   tracert <domain name or IP>
 
 1. If the computer uses the ISP's DNS, and you cannot resolve the issue, contact the ISP.
 
@@ -136,7 +137,7 @@ Now you have the name servers, you can update the parent domain. Each registrar 
 
 The image shows an example DNS query, with contoso.net and partners.contoso.net in Azure DNS zones:
 
-![Diagram of a DNS query in the Azure DN zones.](../media/3_dns_zones.png)
+![Diagram of a DNS query in the Azure DN zones.](../media/3-dns-zones.png)
 
 Each delegation has two copies of the NS records - one in the parent zone pointing to the child, and another in the child zone itself. The 'contoso.net' zone contains the NS records for 'contoso.net', in addition to the NS records in 'net'. These records are called authoritative NS records and they sit at the apex of the child zone.
 

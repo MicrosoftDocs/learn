@@ -22,7 +22,7 @@ For more information about the topics discussed in this module, see:
 
 [Name resolution for resources in Azure virtual networks | Microsoft Docs](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)
 
-[Tutorial: Host your domain and subdomain - Azure DNS | Microsoft Docs](/azure/dns/dns-delegate-domain-azure-dns)
+[Tutorial: Host your domain and subdomain - Azure DNS | Microsoft Docs](//azure/dns/dns-delegate-domain-azure-dns)
 
 [Create a DNS zone](/azure/dns/dns-getstarted-powershell)
 
@@ -52,7 +52,7 @@ For more information about the topics discussed in this module, see:
 
 [Connect Operations Manager to Azure Monitor - Azure Monitor | Microsoft Docs](/azure/azure-monitor/agents/om-agents)
 
-[Microsoft Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/Microsoft.DnsAnalyticsOMS?tab=Overview)
+[Microsoft Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.DnsAnalyticsOMS?tab=Overview)
 
 [Monitoring solutions in Azure Monitor - Azure Monitor | Microsoft Docs](/azure/azure-monitor/insights/solutions?tabs=portal)
 

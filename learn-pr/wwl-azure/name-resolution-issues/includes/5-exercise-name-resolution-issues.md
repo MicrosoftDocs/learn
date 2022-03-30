@@ -10,9 +10,9 @@ You work for Contosto as a network engineer, and users are complaining that they
 ||| Subnet2| 10.1.2.0/24|
 | VNet2| 10.2.0.0/16| Default| 10.2.0.0/24|
 
-![Topology of vnet 1.](../media/4-vnet1.png)
+![Topology of vnet 1.](../media/4-virtual-network-1.png)
 
-![Topology of vnet 2.](../media/4-vnet2.png)
+![Topology of vnet 2.](../media/4-virtual-network-2.png)
 
 | **Virtual machine**| **Operating system**| **VNet and subnet**| **DNS domain**|
 | :--- | :--- | :--- | :--- |
@@ -40,7 +40,7 @@ Nslookup on VM3 gives these results:
 
 - vm3.contoso.com – can’t find
 
-![screen shot of results of running nslookup in the command prompt on vm3.](../media/4-nslookup-vm3.png)
+![screen shot of results of running nslookup in the command prompt on vm3.](../media/4-nslookup-virtual-machine-3.png)
 
 ## Diagnosis
 
@@ -58,7 +58,7 @@ The IP addresses are:
 
 The DNS server address is 168.63.129.16, which is the wire server.
 
-![Screen shot of command prompt results after running ipconfig/all.](../media/4-ipconfig-dns.png)
+![Screen shot of command prompt results after running ipconfig/all.](../media/4-ip-configure-dns.png)
 
 ### Test network connectivity
 
@@ -74,11 +74,11 @@ There are two VNets called VNet1 and VNet2.
 
 There is a private DNS zone, which is contoso.com.
 
-![Screen shot showing the resources with the resource group.](../media/4-resourcegroup.png)
+![Screen shot showing the resources with the resource group.](../media/4-resource-group.png)
 
 The private DNS zone has vm1 and vm2 automatically registered, but vm3 does not appear.
 
-![Screen shot showing that that vm 3 is not appearing.](../media/4-no-vm3.png)
+![Screen shot showing that that vm 3 is not appearing.](../media/4-no-virtual-machines-3.png)
 
 Go to **Settings** > **Virtual network links**. We see that the private DNS zone is linked to VNet1, but not to VNet2.
 
@@ -117,7 +117,7 @@ Nslookup on VM1 and VM2 should resolve vm3.contoso.com.
 
 ![Screen shot showing the dns table.](../media/4-dns-table.png)
 
-![Screen shot showing the results of running the nslookup commands.](../media/4-command-prompt-vms.png)
+![Screen shot showing the results of running the nslookup commands.](../media/4-command-prompt-virtual machines.png)
 
 ![Screen shot of the command prompt showing the results of nslookup.](../media/4-command-prompt-nslookup.png)
 
