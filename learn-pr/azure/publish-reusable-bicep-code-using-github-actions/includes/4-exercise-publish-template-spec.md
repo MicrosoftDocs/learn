@@ -12,15 +12,15 @@ During the process, you'll:
 
 Your repository contains a draft of a workflow that you can use as a starting point.
 
-1. In Visual Studio Code, expand the *.github* folder in the root of the repository. Then, expand the *workflows* folder, and the *template-specs* subfolder.
+1. In Visual Studio Code, expand the *.github* folder in the root of the repository. Then, expand the *workflows* folder.
 
-1. Open the file named *linux-app-service.yml*.
+1. Open the file named *template-spec-linux-app-service.yml*.
 
-   <!-- TODO sshot -->
+   :::image type="content" source="../media/4-visual-studio-code-files.png" alt-text="A screenshot of Visual Studio Code showing the location of the workflow definition file.":::
 
 1. At the bottom of the file, where you see a comment saying *To be added*, add the following *lint* job definition:
 
-   :::code language="yaml" source="code/4-workflow.yml" range="17-23" :::
+   :::code language="yaml" source="code/4-workflow.yml" range="18-24" :::
 
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
@@ -29,9 +29,9 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 Now, you can add a second job to publish the template spec to Azure.
 
-1. Add the following code at the end of the *linux-app-service.yml* file:
+1. Add the following code at the end of the *template-spec-linux-app-service.yml* file:
 
-   :::code language="yaml" source="code/4-workflow.yml" range="25-44" :::
+   :::code language="yaml" source="code/4-workflow.yml" range="26-45" :::
 
    This job checks out the code from your repository, signs in to Azure by using GitHub secret you created earlier, and runs the `az ts create` command to publish the template spec to Azure.
 
@@ -42,9 +42,9 @@ Now, you can add a second job to publish the template spec to Azure.
 
 ## Verify and commit your workflow definition
 
-1. Verify that your *linux-app-service.yml* file looks like the following:
+1. Verify that your *template-spec-linux-app-service.yml* file looks like the following:
 
-   :::code language="yaml" source="code/4-workflow.yml" :::
+   :::code language="yaml" source="code/4-workflow.yml" highlight="19-45" :::
 
    If it doesn't, update it to match this example, and then save it.
 
@@ -68,23 +68,27 @@ Now, you can add a second job to publish the template spec to Azure.
 
 1. In your browser, select the **Actions** tab.
 
-    :::image type="content" source="../media/4-action-run.png" alt-text="A screenshot showing the result of a GitHub Actions workflow run."::: <!-- TODO sshot -->
+   :::image type="content" source="../media/4-actions.png" alt-text="A screenshot of GitHub that shows the Actions tab.":::
 
-1. Select the **module-storage-account** workflow, then select the **Run workflow** button, and select **Run workflow**.
+   There are failed workflow runs listed already, but you don't need to worry about them. They failed because the workflows weren't yet completed.
 
-   <!-- TODO sshot -->
+1. Select the **template-spec-linux-app-service** workflow, then select the **Run workflow** button, and select **Run workflow**.
+
+   :::image type="content" source="../media/4-workflow-run.png" alt-text="A screenshot of GitHub that shows the Run workflow button for the template spec's workflow.":::
 
    GitHub starts a new workflow run. You might need to refresh your browser window to see the run appear.
 
 1. Select the latest run in the list.
 
-   :::image type="content" source="../media/4-action-run-details.png" alt-text="A screenshot of a specific workflow run in GitHub Actions."::: <!-- TODO sshot -->
+   :::image type="content" source="../media/4-workflow-runs-list.png" alt-text="A screenshot of GitHub that highlights the latest run of the template spec's workflow.":::
 
-   Wait for the workflow run to finish. The template spec is published to Azure.
+   Wait for the workflow run to finish.
+   
+   The run succeeds, and the template spec is published to Azure.
 
-1. Note the workflow's run number.
+1. Note the workflow's run number, which is probably **2**.
 
-   <!-- TODO sshot -->
+   :::image type="content" source="../media/4-run-success.png" alt-text="A screenshot of GitHub that shows the workflow's run has succeeded, and highlights the run number.":::
 
 ## Review the template spec in Azure
 
@@ -92,12 +96,12 @@ You can also view the published template spec in the Azure portal.
 
 1. In your browser, navigate to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Navigate to the **ToyReusable** resource group.
+1. Navigate to the **ToyReusable** resource group, and select the **linux-app-service** template spec.
 
-   <!-- TODO sshot -->
+   :::image type="content" source="../media/4-template-spec-portal.png" alt-text="A screenshot of the Azure portal that shows the resource group, with the template spec highlighted.":::
 
-1. Select the **linux-app-service** template spec.
+1. The template spec details are showed.
 
-   :::image type="content" source="../media/4-portal-template-spec.png" alt-text="A screenshot of the Azure Portal with a template spec."::: <!-- TODO sshot -->
+   :::image type="content" source="../media/4-template-spec-details-portal.png" alt-text="A screenshot of the Azure portal that shows the template spec details.":::
 
-   Notice that the version number corresponds with the workflow's run number.
+   Notice that the **Latest version** number and the **Version** is the same as the workflow's run number, because your workflow uses the run number for the template spec's version number.

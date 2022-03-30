@@ -13,7 +13,7 @@ In this exercise, you'll:
 
 Before you can publish modules, you need to create a registry for your organization to use. Here, you use the Azure portal to create a registry.
 
-1. In your browser, [create a new container registry within the Azure portal](https://portal.azure.com/#create/Microsoft.ContainerRegistry).
+1. In your browser, [create a new container registry within the Azure portal](https://portal.azure.com/#create/Microsoft.ContainerRegistry?azure-portal=true).
 
 1. In the **Basics** tab, select your target subscription and the **ToyReusable** resource group you created earlier.
 
@@ -28,15 +28,21 @@ Before you can publish modules, you need to create a registry for your organizat
 
    <!-- TODO sshot -->
 
-1. Select **Review + create**. Review the settings, then select **Create**.
+1. Select **Review + create**.
+
+1. Review the settings, then select **Create**.
 
    Wait for the deployment to complete, which usually takes 1-2 minutes.
 
-1. When the **Deployment succeeded** message appears, select the container registry.
+1. When the **Deployment succeeded** message appears, select **Go to resource** to open the container registry.
 
    <!-- TODO sshot -->
 
-1. In the **Overview** page, note the value of the *Login server* setting. It will look like *yourregistryname.azurecr.io*. You'll need this value shortly.
+1. In the container registry's **Overview**, note the value of the *Login server* setting. It will look like *yourregistryname.azurecr.io*.
+
+   <!-- TODO sshot -->
+
+   You'll need this value shortly.
 
 ## Add a module metadata file
 
@@ -44,7 +50,7 @@ In the precending unit, you learned about the importance of having a versioning 
 
 1. In Visual Studio Code, expand the *modules* folder in the root of your repository. Then, expand the *storage-account* folder.
 
-1. Create a new file here called `metadata.json`.
+1. Create a new file named *metadata.json*.
 
    <!-- TODO sshot -->
 
@@ -60,9 +66,9 @@ In the precending unit, you learned about the importance of having a versioning 
 
 Your repository contains a draft of a workflow that you can use as a starting point.
 
-1. In Visual Studio Code, expand the *.github* folder in the root of the repository. Then, expand the **workflows* folder, and the *modules* subfolder.
+1. In Visual Studio Code, expand the *.github* folder in the root of the repository. Then, expand the **workflows* folder.
 
-1. Open the file named *storage-account.yml•.
+1. Open the file named *module-storage-account.yml*.
 
    <!-- TODO sshot -->
 
@@ -122,19 +128,15 @@ Now, you can add a second job to publish the module to your container registry.
 
     :::image type="content" source="../media/6-action-run.png" alt-text="A screenshot showing the result of an Azure Actions workflow run.":::
 
-1. Select the **template-spec-linux-app-service** workflow, then select the **Run workflow** button, and select **Run workflow**.
+1. Select the **template-spec-linux-app-service** workflow. Notice that a workflow run is already in progress. The push trigger fired because you modified the *metadata.json* file within the module's folder.
 
    <!-- TODO sshot -->
 
-   GitHub starts a new workflow run. You might need to refresh your browser window to see the run appear.
-
 1. Select the latest run in the list.
-
-    :::image type="content" source="../media/6-action-run-details.png" alt-text="A screenshot of a specific workflow run in GitHub Actions.":::
 
    Wait for the workflow run to finish. The Bicep module is published to your container registry.
 
-   Note the workflow's run number.
+   Note the workflow's run number, which is probably **3**.
 
 ## Review the module in the registry
 
@@ -150,7 +152,7 @@ You can also view the published module in the Azure portal.
 
    There's one *tag*, which is the version number of the module:
 
-   :::image type="content" source="../media/6-portal-module-registry.png" alt-text="A screenshot of the Azure Portal with a Bicep module in a container registry."::: <!-- TODO sshot -->
+   :::image type="content" source="../media/6-portal-module-registry.png" alt-text="A screenshot of the Azure portal that shows a Bicep module in the container registry."::: <!-- TODO sshot -->
 
 ## Clean up the resources
 
