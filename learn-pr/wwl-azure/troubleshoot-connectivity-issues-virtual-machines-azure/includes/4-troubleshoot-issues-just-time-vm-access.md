@@ -4,17 +4,17 @@ Unlike Azure Bastion, there are only two high-level issues you might need to tro
 
 JIT VM access is one of the enhanced security features of Microsoft Defender for Cloud. Your organization has to have enhanced security enabled at the subscription level. To check, go to the Azure portal, select **Microsoft Defender for Cloud**, and under **Management**, select **Environment settings**.
 
-![A screenshot of the Azure portal, selecting Microsoft Defender for Cloud, and then Environment settings.](../media/defender-environment-settings.png)
+:::image type="content" source="../media/defender-environment-settings.png" alt-text="A screenshot of the Azure portal, selecting Microsoft Defender for Cloud, and then Environment settings.":::
 
 If you haven’t enabled Microsoft Defender for Cloud on your subscription, you’ll see the error below:
 
-![A screenshot of the error shown if Microsoft Defender for Cloud isn’t enabled on a subscription. It shows there’s an Enable Microsoft Defender for Cloud button to select.](../media/defender-description-error.png)
+:::image type="content" source="../media/defender-description-error.png" alt-text="A screenshot of the error shown if Microsoft Defender for Cloud isn’t enabled on a subscription. It shows there’s an Enable Microsoft Defender for Cloud button to select.":::
 
 Select **Enable Microsoft Defender for Cloud** to be taken to a page that allows you to select your subscription.
 
 If you have multiple subscriptions, select the one with the resources you're troubleshooting. Then select the large **Enable all Microsoft Defender for Cloud plans** box.
 
-![A screenshot showing how to enable all Microsoft Defender for Cloud plans.](../media/enable-enhanced-security.png)
+:::image type="content" source="../media/enable-enhanced-security.png" alt-text="A screenshot showing how to enable all Microsoft Defender for Cloud plans.":::
 
 Choose the services you’d like to protect; at a minimum, you need to select **Server** to enable JIT VM access.
 
@@ -26,11 +26,11 @@ You can enable JIT access from the VM connection pane, from Workload protections
 
 1. Select **Just-in-time VM** access.
 
-![A screenshot showing selecting Workload protections, and then selecting Just-in-time VM access.](../media/select-jit-access-workload-protections.png)
+:::image type="content" source="../media/select-jit-access-workload-protections.png" alt-text="A screenshot showing selecting Workload protections, and then selecting Just-in-time VM access.":::
 
 You can then select the **Not Configured** tab to show all the VMs in your subscription that don’t have JIT access enabled.
 
-![A screenshot showing the Not Configured tab selected, and a check against the VM to protect it. The Enable JIT button on 1 VM is highlighted.](../media/enable-jit-access-defender.png)
+:::image type="content" source="../media/enable-jit-access-defender.png" alt-text="A screenshot showing the Not Configured tab selected, and a check against the VM to protect it. The Enable JIT button on 1 VM is highlighted.":::
 
 Select the check next to the VM you want to protect.
 
@@ -60,8 +60,8 @@ If your users are unable to request JIT access, check that their role has these 
 
 You use Access control (IAM) to check which users have been granted access to a VM. In the Azure portal, select Virtual machine, and then select Access control (IAM).
 
-![A screenshot showing a VM’s Access control (IAM) settings. The View button for View access to this resource is highlighted.](../media/checking-virtual-machine-access.png)
+:::image type="content" source="../media/checking-virtual-machine-access.png" alt-text="A screenshot showing a VM’s Access control (IAM) settings. The View button for View access to this resource is highlighted.":::
 
 You can review the currently enabled and used JIT VM access in the Microsoft Defender for Cloud advanced protection section.
 
-![A screenshot of the currently configured JIT VM access. Showing two VM’s and their current status of access.](../media/current-jit-access.png)
+:::image type="content" source="../media/current-jit-access.png" alt-text="A screenshot of the currently configured JIT VM access. Showing two VM’s and their current status of access.":::

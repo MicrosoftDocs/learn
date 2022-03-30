@@ -4,11 +4,11 @@ There are three main categories of issues you might see when troubleshooting Azu
 
 First, you go to the Azure VM where you’re having trouble deploying Azure Bastion.
 
-![A screenshot showing how to use Azure Bastion to connect to an Azure VM.](../media/navigate-bastion-connection.png)
+:::image type="content" source="../media/navigate-bastion-connection.png" alt-text="A screenshot showing how to use Azure Bastion to connect to an Azure VM.":::
 
 In the Azure portal, on the left navigation pane, select **Virtual machines**, then select the machine you’re troubleshooting. Select **Connect** from the top of the pane, then select **Bastion**.
 
-![A screenshot that shows the Azure Bastion options](../media/bastion-screenshot.png)
+:::image type="content" source="../media/bastion-screenshot.png" alt-text="A screenshot that shows the Azure Bastion options":::
 
 You should see the options to create an Azure Bastion Service. If you don’t, check that you have met these prerequisites:
 
@@ -22,11 +22,11 @@ Step 1 has been completed for you because you’re creating the Azure Bastion Se
 
 For step 2, you can accept the defaults and create a new subnet named AzureBastionSubnet. The wizard will create the subnet with these attributes:
 
-![A screenshot of the AzureBastionSubnet subnet settings.](../media/azurebastionsubnet-settings.png)
+:::image type="content" source="../media/azurebastionsubnet-settings.png" alt-text="A screenshot of the AzureBastionSubnet subnet settings.":::
 
 Step 3 allows you to select the tier, basic or standard. You can then create or use a public IP address to connect to the Azure Bastion Service. Finally, accept the Microsoft supplied defaults to create the service.
 
-![A screenshot of the Bastion creation wizard, showing how to select the Standard Tier, public IP address name, and the Create Azure Bastion using the defaults button.](../media/deploy-bastion.png)
+:::image type="content" source="../media/deploy-bastion.png" alt-text="A screenshot of the Bastion creation wizard, showing how to select the Standard Tier, public IP address name, and the Create Azure Bastion using the defaults button.":::
 
 ## Connectivity
 
@@ -42,11 +42,11 @@ In the earlier section you’ll note that, by default, the AzureBastionSubnet is
 
 Inbound rules
 
-![A screenshot of inbound rules in the Azure portal showing port 443 over TCP with these sources: Internet, GatewayManager, and AzureLoadBalancer. For port 8080 and 5701 over Any protocol, the source is VirtualNetwork.](../media/inbound.png)
+:::image type="content" source="../media/inbound.png" alt-text="A screenshot of inbound rules in the Azure portal showing port 443 over TCP with these sources: Internet, GatewayManager, and AzureLoadBalancer. For port 8080 and 5701 over Any protocol, the source is VirtualNetwork.":::
 
 Outbound rules
 
-![A screenshot of outbound rules in the Azure portal showing port 22 and 3389 over Any protocol with the destination VirtualNetwork. Port 443 over TCP with the destination AzureCloud. Port 8080 and 5701 over Any protocol with the destination VirtualNetwork. Port 80 over Any protocol—source is Internet.](../media/outbound.png)
+:::image type="content" source="../media/outbound.png" alt-text="A screenshot of outbound rules in the Azure portal showing port 22 and 3389 over Any protocol with the destination VirtualNetwork. Port 443 over TCP with the destination AzureCloud. Port 8080 and 5701 over Any protocol with the destination VirtualNetwork. Port 80 over Any protocol—source is Internet.":::
 
 ## Access
 
