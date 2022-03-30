@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Publish reusable Bicep code by using GitHub Actions
   description: Build GitHub Actions deployment workflows for template specs and Bicep modules. Lint your Bicep code, apply versioning, and publish it to Azure or to a Bicep registry.
-  ms.date: 03/14/2022
+  ms.date: 03/29/2022
   author: pazdedav
   ms.author: dapazd
   ms.topic: interactive-tutorial
@@ -16,6 +16,7 @@ abstract: |
   After completing this module, you'll be able to:
     - Publish Bicep modules to a private registry from a GitHub Actions workflow
     - Publish Bicep files to a template spec from a GitHub Actions workflow
+    - Automatically add version numbers to your modules and template specs
 prerequisites: |
   You should be familiar with using:
 
