@@ -3,7 +3,7 @@ uid: learn.wwl.implement-manage-storage-for-azure-virtual-desktop
 metadata:
   title: Implement and manage storage for Azure Virtual Desktop
   description: "Implement and manage storage for Azure Virtual Desktop"
-  ms.date: 12/03/2021
+  ms.date: 03/30/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   * Configure a new managed data disk to a Windows virtual machine for Azure Virtual Desktop.
   * Create file shares for a storages account for Azure Virtual Desktop.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-implement-and-manage-storage-for-azure-virtual-desktop.svg
 levels:
 - intermediate
 roles:
