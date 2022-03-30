@@ -35,7 +35,6 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue.
 ssh azureuser@<VM1 public IP address>;
 
 ```
-
 > [!NOTE]
 > Replace &lt;VM1 public IP address&gt; with the public IP address you noted for VM1.
 
@@ -56,7 +55,7 @@ ping <private IP address VM2>
 ```
 
 > [!NOTE]
-> Replace &lt;private IP address VM2&gt; with the private IP address you noted for VM2. 
+> Replace <private IP address VM2> with the private IP address you noted for VM2. 
 
 :::image type="content" source="../media/5-ping-request.png" alt-text="Screenshot showing the ping command to check whether machines can connect.":::
 

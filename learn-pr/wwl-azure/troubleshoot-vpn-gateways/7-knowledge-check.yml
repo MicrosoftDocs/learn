@@ -38,7 +38,7 @@ quiz:
       explanation: "That's incorrect. You can't use a basic SKU with BGP"
     - content: "Advanced"
       isCorrect: false
-      explanation: "That's incorrect. This isn't a valid SKU."
+      explanation: "That's incorrect. Advanced isn't a valid SKU."
   - content: "It's necessary to monitor latency issues. Which two tools can be used?"
     choices:
     - content: "Microsoft Sentinel and Tracert"
