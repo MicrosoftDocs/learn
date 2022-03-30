@@ -5,13 +5,13 @@ You have configured your network as shown in the diagram below. You want VM1 and
 
 There are three Azure virtual networks (VNets) in a hub and spoke topology.
 
-:::image type="content" source="../media/4-spoke-hub-topology.png" alt-text="Screenshot of spoke and hub topology":::
+:::image type="content" source="../media/6-spoke-hub-topology.png" alt-text="Screenshot of spoke and hub topology":::
 
-:::image type="content" source="../media/4-virtual-network-1-topology.png" alt-text="Diagram of the 1st virtual network topology.":::
+:::image type="content" source="../media/6-virtual-network-1-topology.png" alt-text="Diagram of the 1st virtual network topology.":::
 
-:::image type="content" source="../media/4-virtual-network-2-topology.png" alt-text="iagram of the 2nd virtual network topology.":::
+:::image type="content" source="../media/6-virtual-network-2-topology.png" alt-text="Diagram of the 2nd virtual network topology.":::
 
-:::image type="content" source="../media/4-virtual-network-3-topology.png" alt-text="Diagram of the 3rd virtual network topology.":::
+:::image type="content" source="../media/6-virtual-network-3-topology.png" alt-text="Diagram of the 3rd virtual network topology.":::
 
 ## Diagnosis
 
@@ -39,9 +39,9 @@ There are three Azure virtual networks (VNets) in a hub and spoke topology.
 
 1. Ping the private IP address of the Azure firewall (FW1).
 
-:::image type="content" source="../media/4-private-address-ping.png" alt-text="Screen shot showing the command prompt with the ping request results.":::
+:::image type="content" source="../media/6-private-address-ping.png" alt-text="Screen shot showing the command prompt with the ping request results.":::
 
-:::image type="content" source="../media/4-private-address-ping-working.png" alt-text="SScreen shot showing the command prompt with the ping request results.":::
+:::image type="content" source="../media/6-private-address-ping-working.png" alt-text="SScreen shot showing the command prompt with the ping request results.":::
 
 ### Troubleshoot the problem
 
@@ -57,7 +57,7 @@ There are three Azure virtual networks (VNets) in a hub and spoke topology.
 
 The diagram shows the effective routes on VM1-nic.
 
-:::image type="content" source="../media/4-effective-routes.png" alt-text="Screen shot showing the effective routes.":::
+:::image type="content" source="../media/6-effective-routes.png" alt-text="Screen shot showing the effective routes.":::
 
 ## Resolution
 
@@ -70,9 +70,9 @@ When you examined the peering connections, you would have found that the peering
 | VnetSpoke1| Spoke1-Hub| Allow (default)|
 | VnetSpoke2| Spoke2-Hub| Block traffic that originates from outside this virtual network|
 
-:::image type="content" source="../media/4-peerings.png" alt-text="Screen shot showing peerings.":::
+:::image type="content" source="../media/6-peerings.png" alt-text="Screen shot showing peerings.":::
 
-:::image type="content" source="../media/4-incorrect-traffic-forwarding.png" alt-text="Screen shot showing the incorrect spoke traffic forwarding setting.":::
+:::image type="content" source="../media/6-incorrect-traffic-forwarding.png" alt-text="Screen shot showing the incorrect spoke traffic forwarding setting.":::
 
 To fix the problem, you must change the setting in both sides of the peering between VnetHub and VnetSpoke2.
 
@@ -84,4 +84,6 @@ The **Traffic forwarded from remote virtual network** must be set to **Allow**.
 
 It should now be possible on VM1 to ping VM2.
 
-NOTE: There will be a short delay before the new settings take effect. If the ping fails at first, try again.
+< [!NOTE]
+< There will be a short delay before the new settings take effect. If the ping fails at first, try again.
+

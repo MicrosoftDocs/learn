@@ -12,8 +12,8 @@ You will also need to work with a service provider to manage the private connect
 
 | Subscription required| Microsoft Azure only| Microsoft Azure and Microsoft 365|
 | :--- | :--- | :--- |
-| Microsoft Azure account| (| (|
-| Microsoft 365| (| (|
+| Microsoft Azure account| Recommended | Recommended|
+| Microsoft 365| **Not Recommended**| Recommended|
 
 ## Gateways and SKUs
 
