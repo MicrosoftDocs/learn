@@ -70,7 +70,7 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
     Accept the remaining settings at their default values.<br><br>
 6. Select **Review + create**, and after passing validation, select **Create**.<br><br>Wait for deployment to successfully complete.<br>
 7. Select **Go to resource**.
-8.  ake note of some of the details about your key vault.<br><br>For example, the **Vault URI** field shows the URI that your application can use to access your vault from the REST API.<br><br>Here's an example for a key vault that's named **my-keyvault-321**: :::image type="content" source="../media/5-portal-key-vault-overview-90fc2a40.png" alt-text="A screenshot of the Azure portal showing details about a key vault. It shows fields such as the parent resource group, location, and DNS name.":::
+8. Take note of some of the details about your key vault.<br><br>For example, the **Vault URI** field shows the URI that your application can use to access your vault from the REST API.<br><br>Here's an example for a key vault that's named **my-keyvault-321**: :::image type="content" source="../media/5-portal-key-vault-overview-90fc2a40.png" alt-text="A screenshot of the Azure portal showing details about a key vault. It shows fields such as the parent resource group, location, and DNS name.":::
     <br><br>
 9. As an optional step, on the left menu pane, under **Settings**, examine some of the other features.<br><br>Although they're initially empty, here you'll find places where you can store keys, secrets, and certificates.
     
