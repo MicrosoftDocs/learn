@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.javascript-on-azure.deploy-expressjs-app-service.exercise-create-resource-group
+uid: learn.javascript-on-azure.deploy-expressjs-app-service.exercise-use-resource-group
 title: "Exercise - Azure subscriptions and resources"
 metadata:
   unitType: exercise

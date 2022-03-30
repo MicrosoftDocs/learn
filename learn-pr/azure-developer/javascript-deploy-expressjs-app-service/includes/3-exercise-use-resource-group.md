@@ -2,10 +2,10 @@ When you use Azure, you need a subscription. Then inside the subscription, you c
 
 In this exercise, you need to:
 
-* Sign into the Learn sandbox with a user account you use for the entire module. This sandbox gives you a free subscription and resource group to complete this module from Visual Studio Code.
+* Sign in to the Learn sandbox with a user account you use for the entire module. This sandbox gives you a free subscription and resource group to complete this module from Visual Studio Code.
 * Find the free sandbox subscription and resource group in Visual Studio Code.
 
-## Sign into the Learn sandbox
+## Sign in to the Learn sandbox
 
 Use the **Sign in to activate sandbox** button to sign in. This may include reviewing permissions. When you see **Sandbox activated!** with a time remaining on this page, this step is complete.
 

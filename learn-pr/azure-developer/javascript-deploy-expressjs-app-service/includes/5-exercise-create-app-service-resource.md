@@ -26,7 +26,7 @@ As part of the resource creation, these resources are created for you:
     |Pricing tier|Free|
     |Application Insights|Create a new Application Insights resource and select the default name.|
 
-1. When creation is finished. You'll see the new web app listed in the App Service section of the Azure sidebar. 
+1. When creation is finished, you'll see the new web app listed in the App Service section of the Azure sidebar. 
 1. Expand the web app to see the subnodes:
 
     |Subnode|Purpose|
@@ -41,7 +41,8 @@ As part of the resource creation, these resources are created for you:
 1. Expand the **Files** section to see the **hostingstart.html** file. 
 1. Open the file. This is a basic HTML page that displays until you deploy the app. 
 
-    **TIP**: When you're still working on your project and not ready to show it, create a new slot named `temporary` with a custom version of this file. The custom version can be branded. If you have deployment or app issues, you can swap over to the `Temporary` slot quickly while you resolve your issues. 
+    > [!TIP]
+    > When you're still working on your project and not ready to show it, create a new slot named `temporary` with a custom version of this file. The custom version can be branded. If you have deployment or app issues, you can swap over to the `Temporary` slot quickly while you resolve your issues. 
 
 1. Expand the **Logs** section to see the various logs. This section will be more interesting after your first deployment.
 
