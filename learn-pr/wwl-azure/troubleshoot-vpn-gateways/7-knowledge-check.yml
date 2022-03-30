@@ -28,25 +28,25 @@ quiz:
     - content: "OpenVPN and SSTP"
       isCorrect: false
       explanation: "That's incorrect. Although OpenVPN supports Mac devices, SSTP only supports Windows devices."
-  - content: "It has been decided to use Border Gateway Protocol. Which SKU will not work with BGP?"
+  - content: "It has been decided to use Border Gateway Protocol. Which SKU won't work with BGP?"
     choices:
     - content: "VpnGw1"
       isCorrect: true
       explanation: "That's correct. You can use this SKU with BGP."
     - content: "Basic"
       isCorrect: false
-      explanation: "That's incorrect. You cannot use a basic SKU with BGP"
+      explanation: "That's incorrect. You can't use a basic SKU with BGP"
     - content: "Advanced"
       isCorrect: false
-      explanation: "That's incorrect. This is not a valid SKU."
+      explanation: "That's incorrect. This isn't a valid SKU."
   - content: "It's necessary to monitor latency issues. Which two tools can be used?"
     choices:
-    - content: "Microsoft Sentinel and tracert"
+    - content: "Microsoft Sentinel and Tracert"
       isCorrect: false
       explanation: "That's incorrect. Microsoft Sentinel is used for security.}"
     - content: "Azure Monitor and Microsoft Sentinel"
       isCorrect: false
       explanation: "That's incorrect. Microsoft Sentinel is used for security."
-    - content: "Azure Monitor and tracert"
+    - content: "Azure Monitor and Tracert"
       isCorrect: true
       explanation: "That's correct. Both tools can help to identify issues."

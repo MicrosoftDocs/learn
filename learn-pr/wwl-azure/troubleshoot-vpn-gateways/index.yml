@@ -2,23 +2,23 @@
 uid: learn.wwl.troubleshoot-vpn-gateways
 metadata:
   title: Troubleshoot VPN gateways in Microsoft Azure
-  description: "Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module we will look at how to monitor and troubleshoot site-to-site and point-to-site VPNs."
+  description: "Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we'll look at how to monitor and troubleshoot site-to-site and point-to-site VPNs."
   ms.date: 03/30/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Troubleshoot VPN gateways in Microsoft Azure
-summary: Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module we will look at how to monitor and troubleshoot site-to-site and point-to-site VPNs.
+summary: Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we'll look at how to monitor and troubleshoot site-to-site and point-to-site VPNs.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
   - Troubleshoot site to site VPNs
   - Troubleshoot point to site VPNs
 prerequisites: |
   - Demonstrate an understanding of the OSI model
   - Demonstrate an understanding of Azure CLI
   - Demonstrate an understanding of PowerShell
-  - Know how to run cloud shell to run commands
+  - Know how to run Cloud Shell to run commands
   - Have an understanding of how to set up site-to-site VPNs
 iconUrl: /learn/achievements/vnp-gateway-troubleshoot.svg
 levels:

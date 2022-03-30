@@ -2,7 +2,7 @@ You've explored the possible reasons why your two machines can't connect to each
 
 In this exercise, you’ll see how to change the shared key on a VPN gateway connection, and then test that this has resolved the issue.
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
 ## Change a gateway connection’s shared key
