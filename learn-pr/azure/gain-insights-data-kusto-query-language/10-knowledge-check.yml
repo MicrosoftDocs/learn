@@ -49,12 +49,12 @@ quiz:
       explanation: "Correct. The `percentiles()` function returns the frequency distribution for each group."
   - content: "Which of the following best describes the `let` statement?"
     choices:
-    - content: "The `let` statement is useful for building complex expression and using them as part of a query."
+    - content: "The `let` statement is useful for building complex expressions and using them as part of a query."
       isCorrect: false
       explanation: "Try again. The answer doesn't describe the `let` statement."
-    - content: "The `let` statement is useful for breaking up a complex expression into multiple parts, defining constants outside of the query body for readability, or defining a variable once and using it multiple times within a query."
+    - content: "The `let` statement is useful for breaking up a complex expression into multiple parts. It defines a scalar or tabular variable, or a user-defined function that can be used multiple times within a query."
       isCorrect: true
       explanation: "The answer accurately describes they key the `let` statement."
-    - content: "The `let` statement creates reusable subqueries that can be defined as part of the query itself (ad-hoc functions), or persisted as part of the database metadata (stored functions). They're invoked through a name, are provided with zero or more input arguments (which can be scalar or tabular), and produce a single value (which can be scalar or tabular) based on the `let` statement body."
+    - content: "The `let` statement creates persisted functions as part of the database metadata (stored functions). They're invoked through a name, are provided with zero or more input arguments, and return a single value."
       isCorrect: false
-      explanation: "Try again. The answer describes the difference between user-defined and stored functions, how they're invoked, and values they can return."
+      explanation: "Try again. The answer describes stored functions that are stored within the database. They can be invoked in a query by using their name."
