@@ -27,8 +27,6 @@ In this module, you'll create ephemeral environments to help you to build up con
 
 When you work with ephemeral environments, it's best to create a separate Azure resource group for each pull request that your team creates. If one author has two separate pull requests open, each will have its own ephemeral environment. This helps to keep each change separated, and avoids confusion or accidentally overwriting resources.
 
-:::image type="content" source="../media/5-dedicated-resource-groups.png" alt-text="Diagram that shows a resource group created for each pull request." border="false":::
-
 For this approach to work, your pull request validation workflow needs to create resource groups dynamically. Resource groups require unique names, and you also need to be able to easily find the resource group to test the resources - and to delete them when your pull request is closed. To handle resource group names effectively, you can use the pull request number within the resource group name. You'll see how to do this in the next exercise.
 
 When it's time to delete the ephemeral environment, it's easy for your workflow to find and delete the entire resource group. All of the resources used in the ephemeral environment will be deleted together.
