@@ -181,7 +181,7 @@ You can validate that routes are live and configurated correctly by testing peer
 
 1. Scroll down to the **Test your private peering connectivity** section and expand it.
 
-   :::image type="content" source="../media/3-test-private-peering-connectivity .png" alt-text="Screenshot showing Testing of private peering connectivity.":::
+   :::image type="content" source="../media/3-test-private-peering-connectivity.png" alt-text="Screenshot showing Testing of private peering connectivity.":::
 
 1. Execute the [PsPing](/sysinternals/downloads/psping) test from your on-premises IP address to your Azure IP address and keep it running during the connectivity test.
 

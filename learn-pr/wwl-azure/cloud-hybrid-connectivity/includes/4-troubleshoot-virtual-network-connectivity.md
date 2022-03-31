@@ -12,7 +12,7 @@ Global virtual network peering has the following constraints:
 
 - Some services that use a Basic load balancer don't work over global virtual network peering. 
 
-- You can't peer across clouds. 
+- You can't peer across clouds. For example, a VNet in Azure public cloud cannot be peered to a VNet in Azure China cloud.
 
 - The virtual networks you peer must have non-overlapping IP address spaces.
 
@@ -40,7 +40,7 @@ To troubleshoot connectivity between peers, do the following:
 
 [Gateway transit](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/virtual-network/virtual-network-peering-overview.md) is a peering property that allows a virtual network to use the VPN gateway in the peered virtual network for VNet-to-VNet connectivity. In the following diagram, you can see how gateway transit works with virtual network peering:
 
-:::image type="content" source="../media/4-gateway-transit.png" alt-text="Screenshot of gateway transit with virtual network peering.:::
+:::image type="content" source="../media/4-gateway-transit.png" alt-text="Screenshot of gateway transit with virtual network peering." border="false":::
 
 The following constraints apply when virtual networks are globally peered:
 
@@ -66,13 +66,13 @@ Transitive peering is when you:
 
 This is not supported with Azure peering. To achieve peering between VNetA and VNetC, you must peer them together. Alternatively, use a hub-and-spoke configuration and go through an NVA in the hub.
 
-:::image type="content" source="../media/4-virtual-network-peering.png" alt-text="All vnets peered to each other." border="false":::
+:::image type="content" source="../media/4-virtual-network-peering.png" alt-text="All vnets peered to each other":::
 
 ## Troubleshoot hub-and-spoke VNet configurations
 
 With a hub-and-spoke configuration, the hub virtual network acts as a central point of connectivity to many spoke virtual networks. The hub can also be used as the connectivity point to your on-premises networks. The spoke virtual networks peer with the hub and can be used to isolate workloads.
 
-:::image type="content" source="../media/4-hub-spoke.png" alt-text="Screenshot showing Hub-and-spoke configuration." lightbox="../media/4-hub-spoke.png" border="false":::
+:::image type="content" source="../media/4-hub-spoke.png" alt-text="Screenshot showing Hub-and-spoke configuration":::
 
 Here's how to troubleshoot connectivity between a hub-spoke virtual network and an on-premises resource.
 
@@ -137,15 +137,13 @@ If you're using a firewall or NVA:
   1. Remove the UDR from the source VM subnet or NIC that points to the NVA as the next hop. Verify connectivity from the source VM directly to the destination that is bypassing the NVA.
 
   1. Take a network trace:
-        - Start a network trace on the destination VM. For Windows, you can use **Netsh**. For Linux, use **TCPDump**.
-        - Run **TcpPing** or **PsPing** from the source to the destination IP. This is an example of a **TcpPing** command: 
+    - Start a network trace on the destination VM. For Windows, you can use **Netsh**. For Linux, use **TCPDump**.
+    - Run **TcpPing** or **PsPing** from the source to the destination IP. This is an example of a **TcpPing** command: 
 
-        ```console
-        tcping64.exe -t <destination VM address> 3389
-        ```
-
-
-  1. After the **TcpPing** is complete, stop the network trace on the destination. If packets arrive from the source, there is no networking issue. Examine both the VM firewall and the application listening on that port to locate the configuration issue.
+```console
+tcping64.exe -t <destination VM address> 3389
+```
+After the **TcpPing** is complete, stop the network trace on the destination. If packets arrive from the source, there is no networking issue. Examine both the VM firewall and the application listening on that port to locate the configuration issue.
 
  > [!NOTE]
  > You can't connect to the following resource types over global virtual network peering (virtual networks in different regions):
