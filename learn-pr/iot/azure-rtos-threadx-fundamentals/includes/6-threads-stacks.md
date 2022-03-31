@@ -42,5 +42,5 @@ When a thread is created, several attributes need to be specified.
 | **Stack** | Every thread must have a stack, so a pointer to the actual stack location is specified, including the stack size. |
 | **Priority** | The thread priority must be specified, but it can be changed during run-time. |
 | **Preemption-threshold** | This is an optional value; a value equal to the priority disables the preemption-threshold feature. |
-| **Time-slice** | An optional time-slice may be assigned, which specifies the number of timer-ticks that this thread is allowed to execute before other ready threads with the same priority are permitted to run.<br>Note that use of preemption-threshold disables the time-slice option. A time-slice value of zero (0) disables time-slicing for this thread. |
+| **Time-slice** | An optional time-slice may be assigned, which specifies the number of timer-ticks that this thread is allowed to execute before other ready threads with the same priority are permitted to run. Note that use of preemption-threshold disables the time-slice option. A time-slice value of zero (0) disables time-slicing for this thread. |
 | **Start option** | A start option must be specified that indicates whether the thread starts immediately or whether it's placed in a suspended state where it must wait for another thread to activate it. |
