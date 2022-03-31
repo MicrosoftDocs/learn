@@ -88,7 +88,7 @@ Combining augmented security rules with service tags or application security gro
 
 - **Service tags**: A service tag represents a group of IP address prefixes from a given Azure service. It helps to minimize the complexity of frequent updates on network security rules. Refer to [Azure service tags](/azure/virtual-network/service-tags-overview).
 
-- For an example of how to use the Storage service tag to restrict network access, go to: Tutorial - [Restrict network access to PaaS resources with virtual network service endpoints using the Azure portal](/azure/virtual-network/tutorial-restrict-network-access-to-resources).
+- For an example of how to use the Storage service tag to restrict network access, go to [Restrict network access to PaaS resources with virtual network service endpoints using the Azure portal](/azure/virtual-network/tutorial-restrict-network-access-to-resources).
 
 - **[Application security groups](/azure/virtual-network/application-security-groups)**: Application security groups enable you to configure network security as a natural extension of an application's structure. This allows you to group virtual machines and define network security policies based on those groups. You can reuse your security policy at scale without manual maintenance of explicit IP addresses. To learn more, see Application security groups.
 

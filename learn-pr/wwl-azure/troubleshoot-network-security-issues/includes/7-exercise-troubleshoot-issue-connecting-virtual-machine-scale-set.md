@@ -2,9 +2,6 @@ You work as a support engineer supporting Azure infrastructure. You've been cont
 
 :::image type="content" source="../media/6-topology.png" alt-text="Screenshot of a network topology diagram showing a pool of webservers behind a load balancer." lightbox="../media/6-topology.png":::
 
-> [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along. If you have not already run the script in unit 2, please do so now so you can follow the exercise below.
-
 In this exercise, you'll use what you've learned to go through steps to troubleshoot the connection issues to the virtual machines.
 
 ## Verify that the website can't be reached
