@@ -6,8 +6,6 @@ Checking the topology, you can see that there are VPN gateways and connections.
 
 In this exercise, you'll troubleshoot and resolve the connectivity issue. If you've not already run the script in unit 2, please do so now so you can follow the exercise below.
 
-> [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
 - Open the [Azure portal](https://portal.azure.com) in a new tab.
 
