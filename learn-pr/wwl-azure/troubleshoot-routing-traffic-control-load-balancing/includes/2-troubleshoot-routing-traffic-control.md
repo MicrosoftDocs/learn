@@ -28,7 +28,7 @@ The main problems that occur when setting up a user-defined route are:
 
 - Have you added the DMZ subnet name as the subnet in Settings, in the NVA?
 
-  :::image type="content" source="../media/3-propagate-gateway-routes.png" alt-text="Screenshot of Propagate gateway routes dialog box.":::
+   :::image type="content" source="../media/3-propagate-gateway-routes.png" alt-text="Screenshot of Propagate gateway routes dialog box.":::
 
 - The route table overrides any default routing in the network. Have you allowed the gateway route to propagate?
 
@@ -40,11 +40,11 @@ The main problems that occur when setting up a user-defined route are:
 
 - Have you added the route table to the public virtual network?
 
-  :::image type="content" source="../media/3-route-table-creation.png" alt-text="Screenshot showing how to add a route table to a virtual network.":::
+   :::image type="content" source="../media/3-route-table-creation.png" alt-text="Screenshot showing how to add a route table to a virtual network.":::
 
 - Have you enabled the IP forwarding on the NVA?
 
-  :::image type="content" source="../media/3-ip-configure-screen.png" alt-text="Screenshot showing how to enable IP forwarding for a virtual network appliance.":::
+   :::image type="content" source="../media/3-ip-configure-screen.png" alt-text="Screenshot showing how to enable IP forwarding for a virtual network appliance.":::
 
 ## Review route tables
 
@@ -76,13 +76,13 @@ To diagnose any connection problems, you can use:
 
 Log in to the Azure portal then search for and select the virtual machine you want to check:
 
-- Select **Settings** > **Networking** and select the **network interface resource**.
+* Select **Settings** > **Networking** and select the **network interface resource**.
 
-:::image type="content" source="../media/3-network-interface.png" alt-text="Screenshot of the network interface screen.":::
+   :::image type="content" source="../media/3-network-interface.png" alt-text="Screenshot of the network interface screen.":::
 
-•	Select **Effective Routes** and the route table will be displayed.
+*	Select **Effective Routes** and the route table will be displayed.
 
-:::image type="content" source="../media/3-azure-route-table.png" alt-text="Screenshot of the route table.":::
+   :::image type="content" source="../media/3-azure-route-table.png" alt-text="Screenshot of the route table.":::
 
 ### Diagnose routes using PowerShell
 
@@ -140,7 +140,7 @@ Check the following:
 
 ### Source-based NAT
 
-:::image type="content" source="../media/3-source-based-nat.png" alt-text="Diagram of a network with SNAT incorporated.":::
+:::image type="content" source="../media/3-source-based-network-address-translation.png" alt-text="Diagram of a network with SNAT incorporated.":::
 
 If you experience dropped packets, SNAT can help to direct them via the same route. In the above example, instead of using ExpressRoute to advertise the public IP address of an on-premises Simple Mail Transfer Protocol (SMTP) server, you could choose to use the internet path. The process will work effectively if:
 
@@ -183,7 +183,7 @@ Follow the steps below to access the BGP metrics within Azure:
 
 - Navigate to BGP peers.
 
-:::image type="content" source="../media/3-bgp-peers.png" alt-text="Screenshot of the BGP peers screen.":::
+:::image type="content" source="../media/3-border-gateway-protocol-peers.png" alt-text="Screenshot of the BGP peers screen.":::
 
 ## Troubleshoot multi-VNet configuration
 
@@ -191,10 +191,10 @@ Read through the list to troubleshoot configuration problems:
 
 - If the peering status shows as Connected, use the Connection Troubleshooter and IP Flow in Azure to verify from the source VM to the destination VM, to see if a network security group (NSG) or user-defined route is the issue. You can then run a network trace from the source to the destination IP.
 
-```console
-tcping64.exe -t <destination VM address> 3389
+   ```console
+   tcping64.exe -t <destination VM address> 3389
 
-```
+   ```
 
 - If the peering status is Disconnected, delete the peering from both networks and recreate it.
 

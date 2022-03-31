@@ -14,4 +14,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/4-exercise-troubleshoot-issue-with-load-balancer.md)]
-interactive: powershell
+interactive: bash

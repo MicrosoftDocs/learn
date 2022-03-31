@@ -30,4 +30,4 @@ In this exercise, you’ll resolve the issue.
 
 1. Wait until the rule has been deployed successfully.
 
-:::image type="content" source="../media/5-rule-deployed.png" alt-text="A screenshot showing the successful deployment of the updated load balancer rule.":::
+   :::image type="content" source="../media/5-rule-deployed.png" alt-text="A screenshot showing the successful deployment of the updated load balancer rule.":::
