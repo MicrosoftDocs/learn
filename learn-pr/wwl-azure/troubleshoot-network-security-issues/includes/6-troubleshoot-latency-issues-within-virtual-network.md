@@ -31,41 +31,42 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 1. Search for **Network security groups**.
 
-:::image type="content" source="../media/6-search-nsg.png" alt-text="A screenshot showing the virtual machine scale set is shown on screen.":::
+   :::image type="content" source="../media/6-search-nsg.png" alt-text="A screenshot showing the virtual machine scale set is shown on screen.":::
 
 1. Under **Services**, click **Network Security Groups**.
 
-:::image type="content" source="../media/6-no-network-security-groups.png" alt-text="A screenshot showing that in this environment there are no NSGs created.":::
+   :::image type="content" source="../media/6-no-network-security-groups.png" alt-text="A screenshot showing that in this environment there are no NSGs created.":::
 
 ## Check the port rules for the scale set
 
 1. In the Azure portal, search for **scale set**, and then under **Services**, click **Virtual machine scale sets**.
 
-:::image type="content" source="../media/6-search-vm-scale-sets.png" alt-text="A screenshot showing the virtual machine scale set is highlighted.":::
+   :::image type="content" source="../media/6-search-virtual-machine-scale-sets.png" alt-text="A screenshot showing the virtual machine scale set is highlighted.":::
 
 2. In the list, click **myScaleSet** to view the details.
 
-:::image type="content" source="../media/6-my-scale-set.png" alt-text="A screenshot showing the current scale set selected.":::
+   :::image type="content" source="../media/6-my-scale-set.png" alt-text="A screenshot showing the current scale set selected.":::
 
 3. On the left, under **Settings**, click **Networking**.
 
-:::image type="content" source="../media/6-inbound-outbound-port-rules.png" alt-text="A screenshot of Networking selected, with inbound and outbound port rules highlighted.":::
+   :::image type="content" source="../media/6-inbound-outbound-port-rules.png" alt-text="A screenshot of Networking selected, with inbound and outbound port rules highlighted.":::
 
 4. Click the **Inbound port rules** tab, and then click the **Outbound port rules** tab.
 
-   Note that there are no network security groups (NSG) on this network interface.
+> [!Note]
+> There are no network security groups (NSG) on this network interface.
 
 ## Check the network settings for the pool instances
 
 1. On the left, under **Settings**, click **Instances**.
 
-:::image type="content" source="../media/6-instances.png" alt-text="A screenshot showing an instance in the scale set highlighted.":::
+   :::image type="content" source="../media/6-instances.png" alt-text="A screenshot showing an instance in the scale set highlighted.":::
 
 1. Click the first instance listed, in the above example this is **myScaleSet_2**. In your environment this could be different.
 
 1. On the left, under **Settings**, click **Networking**.
 
-:::image type="content" source="../media/6-networking.png" alt-text="A screenshot showing the instances without NSG setup.":::
+   :::image type="content" source="../media/6-network.png" alt-text="A screenshot showing the instances without NSG setup.":::
 
 1. There isn't an NSG being used by this instance.
 
@@ -75,19 +76,20 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 1. Click the **Load balancing** tab, and then click the **myScaleSetLB** load balancer.
 
-:::image type="content" source="../media/6-load-balancer.png" alt-text="A screenshot showing the myScaleSetLB highlighted.":::
+   :::image type="content" source="../media/6-load-balancer.png" alt-text="A screenshot showing the myScaleSetLB highlighted.":::
 
 1. On the left, under **Settings**, click **Frontend IP configuration**.
 
-:::image type="content" source="../media/6-front-end-ip-configuration.png" alt-text="A screenshot showing  the frontend IP address highlighted.":::
+   :::image type="content" source="../media/6-front-end-ip-configuration.png" alt-text="A screenshot showing  the frontend IP address highlighted.":::
 
 1. Check that there is a frontend IP address, and that this is the IP you tested at the beginning of this exercise.
 
 1. On the left, under **Settings**, click **Load balancing rules**.
 
-:::image type="content" source="../media/6-load-balancing-rules.png" alt-text="Screen shot showing the load balancing rules.":::
+   :::image type="content" source="../media/6-load-balancing-rules.png" alt-text="Screen shot showing the load balancing rules.":::
 
-    Note that there is a rule for port **80** and port **443**.
+   > [!Note]
+   > There is a rule for port **80** and port **443**.
 
 1. On the left, click **Diagnose and solve problems**.
 
@@ -95,7 +97,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 1. Click the **No connectivity to the backend pool** troubleshooter.
 
-:::image type="content" source="../media/6-no-connectivity.png" alt-text="A screenshot showing the No connectivity to backend pool troubleshooter.":::
+   :::image type="content" source="../media/6-no-connectivity.png" alt-text="A screenshot showing the No connectivity to backend pool troubleshooter.":::
 
 1. In the **Tell us more about the problem you are experiencing** drop-down box, click **Intermittent connectivity**.
 

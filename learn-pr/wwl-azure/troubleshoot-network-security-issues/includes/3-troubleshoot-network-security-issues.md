@@ -60,29 +60,28 @@ For more information, see [Anomaly Scoring mode](/azure/web-application-firewall
 
 To fix false positives and avoid the issues of blocked traffic, you can use an exclusion list. Using an exclusion list is only applicable to a specific part of a request, or a rule set that is being disabled. You can decide to exclude either body, headers, or cookies for a certain condition instead of excluding the whole request. In a global setting environment, the specific exclusion applies to all traffic passing through your WAF.
 
-:::image type="content" source="../media/2-wafgateway.png" alt-text="Screenshot showing Web application firewall settings.":::
+:::image type="content" source="../media/2-web-application-firewall-gateway.png" alt-text="Screenshot showing Web application firewall settings.":::
 
 Refer to [WAF configuration](/azure/web-application-firewall/ag/application-gateway-waf-configuration) for more information about exclusion lists.
 
-**To configure exclusion lists using the Azure portal**
+### To configure exclusion lists using the Azure portal
 
 1. Go to the WAF portal.
 
 1. Select **Manage exclusions** under **Managed rules**.
 
-:::image type="content" source="../media/2-wafpolicysettings.png" alt-text="Screenshot showing WAF policy settings. Manage exclusions tab under Managed rules is highlighted.":::
+:::image type="content" source="../media/2-web-application-firewall-policy-settings.png" alt-text="Screenshot showing WAF policy settings. Manage exclusions tab under Managed rules is highlighted.":::
 
-:::image type="content" source="../media/2-wafmanagedrules.png" alt-text="Screenshot showing Managed rules in WAF portal. The option of Add is highlighted.":::
+:::image type="content" source="../media/2-web-application-firewall-managed-rules.png" alt-text="Screenshot showing Managed rules in WAF portal. The option of Add is highlighted.":::
 
 An example exclusion list:
 
-![Screenshot displaying an example exclusion list](../media/2-ruleexclusion.png)
 
-:::image type="content" source="../media/2-ruleexclusion.png" alt-text="Screenshot displaying an example exclusion list.":::
+:::image type="content" source="../media/2-rule-exclusion.png" alt-text="Screenshot displaying an example exclusion list.":::
 
 - **Disable the rule**: Disabling a rule allows you to treat a certain condition as a non-threat that would otherwise be flagged as malicious and be blocked. In a global setting environment, disabling a rule for the entire WAF is a risk and can weaken your security.
 
-**To disable rule groups or specific rules**
+### To disable rule groups or specific rules
 
 1. Browse to the application gateway, and then select **Web application firewall**.
 
@@ -90,7 +89,7 @@ An example exclusion list:
 
 1. Select **Managed Rules**.
 
-:::image type="content" source="../media/2-firewallgateway.png" alt-text="Screenshot showing Web application firewall gateway.":::
+   :::image type="content" source="../media/2-firewall-gateway.png" alt-text="Screenshot showing Web application firewall gateway.":::
 
 1. Search for the rules or rule groups that you want to disable.
 
@@ -100,7 +99,7 @@ An example exclusion list:
 
 1. Select **Save**.
 
-:::image type="content" source="../media/2-managedruleswindow.png" alt-text="Screenshot showing Managed rules window. The option of Disable rule is highlighted.":::
+:::image type="content" source="../media/2-managed-rules-window.png" alt-text="Screenshot showing Managed rules window. The option of Disable rule is highlighted.":::
 
 A third-party tool called Fiddler can provide additional information. Fiddler will help you to:
 
@@ -114,21 +113,21 @@ A third-party tool called Fiddler can provide additional information. Fiddler wi
 
 - **Disable request body inspection**: Certain bodies that are not a threat to your application can be prevented from being evaluated by your WAF by setting **Inspect request body** to off. This way, only the request body is not inspected. The headers and cookies will still be inspected, unless they're on the exclusion list.
 
-:::image type="content" source="../media/2-wafpolicy.png" alt-text="Screenshot showing WAF policy. The option of Inspect request body to off.":::
+   :::image type="content" source="../media/2-web-application-firewall-policy.png" alt-text="Screenshot showing WAF policy. The option of Inspect request body to off.":::
 
 - **File size limits**: The possibility of an attack to web servers and applications can be reduced by limiting the file size for your WAF. Permitting large files increases the risk of your back end being exhausted. To prevent attacks, it is advisable to limit the file size to a typical case for your application.
 
-**NOTE**:
+>[!NOTE]
 
-Firewall Metrics (WAF_v1 only)
+> Firewall Metrics (WAF_v1 only)
 
-For v1 Web Application Firewalls, the following metrics are now available in the portal:
+> For v1 Web Application Firewalls, the following metrics are now available in the portal:
 
-- **Web Application Firewall Blocked Request Count** - the number of requests that were blocked.
+> - **Web Application Firewall Blocked Request Count** - the number of requests that were blocked.
 
-- **Web Application Firewall Blocked Rule Count** - all rules that were matched and the request was blocked.
+> - **Web Application Firewall Blocked Rule Count** - all rules that were matched and the request was blocked.
 
-- **Web Application Firewall Total Rule Distribution** - all rules that were matched during evaluation
+> - **Web Application Firewall Total Rule Distribution** - all rules that were matched during evaluation
 
 To enable metrics, select the **Metrics** tab in the portal, and select one of the three metrics.
 
@@ -216,7 +215,8 @@ static void EnableTls12()
 For more information, refer to [Support for TLS 1.2](/dotnet/framework/network-programming/tls).
 
 
-> **NOTE**: Fiddler or a similar tool can help you verify that the specified version of TLS was used by the client to send a request.
+> [!NOTE] 
+> Fiddler or a similar tool can help you verify that the specified version of TLS was used by the client to send a request.
 
 ## Troubleshoot encryption/certificate-related issues for point-to-site scenarios
 
@@ -236,26 +236,26 @@ First, obtain the public key (.cer file) for a root certificate. After creating 
 
 1. The following example creates a self-signed root certificate named "P2SRootCert" that is automatically installed in "Certificates-Current User\Personal\Certificates". You can view the certificate by opening **certmgr.msc**, or **Manage User Certificates**.
 
-You can modify and run the following command:
+   You can modify and run the following command:
 
-```powershell
-$cert = New-SelfSignedCertificate -Type Custom -KeySpec Signature `
+   ```powershell
+   $cert = New-SelfSignedCertificate -Type Custom -KeySpec Signature `
 
--Subject "CN=P2SRootCert" -KeyExportPolicy Exportable `
+   -Subject "CN=P2SRootCert" -KeyExportPolicy Exportable `
 
--HashAlgorithm sha256 -KeyLength 2048 `
+   -HashAlgorithm sha256 -KeyLength 2048 `
 
--CertStoreLocation "Cert:\CurrentUser\My" -KeyUsageProperty Sign -KeyUsage CertSign
+   -CertStoreLocation "Cert:\CurrentUser\My" -KeyUsageProperty Sign -KeyUsage CertSign
 
-```
+   ```
 
 1. Leave the PowerShell console open and proceed with the next steps to generate a client certificate.
 
-- Generate client certificates
+   - Generate client certificates
 
-A client certificate is automatically installed on the computer where it is generated from a self-signed root certificate. For installing a client certificate on another client computer, you need to export it as a .pfx file, along with the entire certificate chain. The .pfx file will contain the root certificate information required for client authentication. There are two methods to create client certificates, enterprise certificate, or self-signed root certificate.
+   A client certificate is automatically installed on the computer where it is generated from a self-signed root certificate. For installing a client certificate on another client computer, you need to export it as a .pfx file, along with the entire certificate chain. The .pfx file will contain the root certificate information required for client authentication. There are two methods to create client certificates, enterprise certificate, or self-signed root certificate.
 
-It is recommended to generate a unique certificate for each client instead of using the same certificate. This is because, if you want to revoke a particular client certificate, you don’t need to generate and install a new one for every client that uses the same certificate. To generate client certificate, consider the following steps:
+   It is recommended to generate a unique certificate for each client instead of using the same certificate. This is because, if you want to revoke a particular client certificate, you don’t need to generate and install a new one for every client that uses the same certificate. To generate client certificate, consider the following steps:
 
 1. Use the following example if the PowerShell console session is still open:
 

@@ -97,7 +97,7 @@ The rule processing will be in the following order: DNATRC1, DNATRC3, ChDNATRC3,
 For more information about Firewall Policy rule sets, refer to [Azure Firewall Policy rule sets](/azure/firewall/policy-rule-sets).
 
 > [!NOTE]
-> **NOTE**: Application rules are always processed after Network rules, which are processed after DNAT rules, regardless of Rule Collection Group or Rule Collection priority and policy inheritance.
+> Application rules are always processed after Network rules, which are processed after DNAT rules, regardless of Rule Collection Group or Rule Collection priority and policy inheritance.
 
 If you enable threat intelligence-based filtering, those rules are highest priority and are always processed first. For more information, see [Azure Firewall threat intelligence-based filtering](/azure/firewall/threat-intel).
 
@@ -150,7 +150,7 @@ Adding security layers to the virtual machine (VM) networks protects inbound and
 
 ### Outbound connectivity
 
-**Network rules and applications rules**
+### Network rules and applications rules
 
 Network rules are applied in priority order before application rules. This means if a match is found in a network rule, no other rules are processed. IDPS may alert and/or block suspicious traffic.
 
@@ -162,7 +162,7 @@ In both HTTP and TLS-inspected HTTPS cases, the firewall uses the DNS resolved I
 
 ### Inbound connectivity
 
-**DNAT rules and network rules**
+### DNAT rules and network rules
 
 Inbound internet connectivity is enabled by configuring Destination Network Address Translation (DNAT). NAT rules are applied in priority before network rules.
 
@@ -176,10 +176,10 @@ To view the results of some of the rule combinations, refer to [Azure Firewall r
 
 Azure Firewall Manager is a security management service. You can use it to create secured virtual hubs to secure cloud network traffic destined for private IP addresses, Azure PaaS, and the internet.
 
-:::image type="content" source="../media/3-applicationsecuritygroups.png" alt-text="Diagram demonstration Application security groups.":::
+:::image type="content" source="../media/3-application-security-groups.png" alt-text="Diagram demonstration Application security groups.":::
 
 
-![Diagram showing secured virtual hub using Azure Firewall Manager](../media/4-azurefirewallmanager.png)
+![Diagram showing secured virtual hub using Azure Firewall Manager](../media/4-azure-firewall-manager.png)
 
 The following [Tutorial: Secure your virtual hub using Azure Firewall Manager](/azure/firewall-manager/secure-cloud-network) can help you learn how to:
 
