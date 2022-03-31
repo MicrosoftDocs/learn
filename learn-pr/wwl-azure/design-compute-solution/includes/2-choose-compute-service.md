@@ -26,7 +26,7 @@ This [flowchart](/azure/architecture/guide/technology-choices/compute-decision-t
 On the diagram, **Cloud optimized** is a strategy for migrating to the cloud. Cloud optimized refactors an application to take advantage of cloud-native features and capabilities. A **lift and shift** strategy migrates workloads without redesigning the application or making code changes. Lift-and-shift lets organizations keep running their applications with minimal changes and disruption.
 
 > [!TIP]
-> The output from this flowchart is a **starting point** for consideration. You’ll need to do a more detailed evaluation of the service to see if it meets your needs. The next sections will help with this analysis.
+> The output from this flowchart is a **starting point** for consideration. You’ll need to do a more detailed evaluation of the service to determine if it meets your needs. The next sections will help with this analysis.
 
 **Review the compute hosting options**
 

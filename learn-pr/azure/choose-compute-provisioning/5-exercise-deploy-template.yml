@@ -14,11 +14,12 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-deploy-template.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: Microsoft.Compute/virtualMachines
-      name: hostVM1
-  hint: "Make sure you've successfully deployed the template."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: Microsoft.Compute/virtualMachines
+#       name: hostVM1
+#   hint: "Make sure you've successfully deployed the template."

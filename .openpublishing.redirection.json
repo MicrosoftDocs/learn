@@ -11950,6 +11950,281 @@
       "source_path": "learn-pr/wwl-azure/configure-resources-arm-templates/7-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-resources-arm-templates/8-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/2-understand-devsecops.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/3-explore-secure-devops-pipeline.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/4-explore-software-composition-analysis-sca.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/5-integrate-whitesource-azure-devops-pipeline.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/6-integrate-micro-focus-fortify-azure-pipelines.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/7-integrate-checkmarx-azure-devops.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/8-integrate-veracode-azure-devops.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/9-integrate-software-composition-analysis-checks-into-pipelines.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/10-implement-pipeline-security.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/11-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/12-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-security-pipeline/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-security-center/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-security-center/2-explore-azure-security-center.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-security-center/3-examine-azure-security-center-usage-scenarios.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-security-center/4-explore-azure-policy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-security-center/5-understand-policies.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-security-center/6-explore-initiatives.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-security-center/7-explore-resource-locks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-security-center/8-explore-azure-blueprints.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-security-center/9-understand-microsoft-defender-identity.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-security-center/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-security-center/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduction-to-azure-security-center/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-open-source-software/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-open-source-software/2-explore-how-software-built.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-open-source-software/3-what-open-source-software.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-open-source-software/4-explore-corporate-concerns-components.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-open-source-software/5-introduction-to-licenses.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-open-source-software/6-explore-common-licenses.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-open-source-software/7-examine-license-implications-ratings.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-open-source-software/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-open-source-software/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-open-source-software/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-anti-malware-spam-policies/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-anti-malware-spam-policies/2-inspect-validate-code-bases-for-compliance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-anti-malware-spam-policies/3-plan-to-implement-owasp-secure-coding-practices.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-anti-malware-spam-policies/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-anti-malware-spam-policies/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-anti-malware-spam-policies/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/2-implement-continuous-security-validation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/3-explore-owasp-zap-penetration-test.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/4-explore-owasp-zap-results-bugs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/5-examine-tools-for-assess-package-security-license-rate.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/6-explore-sonarcloud.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/7-interpret-alerts-from-scanner-tools.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/8-explore-codeql-github.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/9-implement-github-dependabot-alerts-security-updates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/integrate-license-vulnerability-scans/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-security-validate-code-bases-compliance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/learn-mrtk-tutorials/1-2-configure-unity-for-windows-mixed-reality.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/learn-mrtk-tutorials/1-1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/explore-conversational-ai/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
+      "redirect_document_id": false
     }
   ]
 }

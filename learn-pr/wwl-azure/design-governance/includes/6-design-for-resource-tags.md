@@ -7,7 +7,7 @@
 
 - A resource tag consists of a name-value pair. For example, env: production or env: test.
 
-- You can assign one or more tags to each Azure resource.
+- You can assign one or more tags to each Azure resource, resource group, or subscription.
 
 - You can add, modify, or delete resource tags. These actions can be done with PowerShell, the Azure CLI, Azure Resource Manager templates, the REST API, or the Azure portal.
 
@@ -45,7 +45,7 @@ Resource tags generally fall into five categories functional, classification, ac
 
 - **Consider starting with a few tags and then scaling out.** Your resource tagging approach can be simple or complex. Rather than identifying all the possible tags your organization needs, prototype using a few important or critical tags. Determine how effective the tagging is before adding more resource tags. 
 
-- **Consider using Azure policy to apply tags and enforce tagging rules and conventions**. Resource tagging is only effective if it’s used consistently across an organization. You can use Azure policy to require you can require that certain tags be added to new resources as they're provisioned. You can also define rules that reapply tags that have been removed.
+- **Consider using Azure policy to apply tags and enforce tagging rules and conventions**. Resource tagging is only effective if it’s used consistently across an organization. You can use Azure policy to require that certain tags be added to new resources as they're provisioned. You can also define rules that reapply tags that have been removed.
 
 - **Consider which resources require tagging.** Keep in mind that you don't need to enforce that a specific tag is present on all your resources. For example, you might decide that only mission-critical resources have the Impact tag. All non-tagged resources would then not be considered as mission critical.
 
