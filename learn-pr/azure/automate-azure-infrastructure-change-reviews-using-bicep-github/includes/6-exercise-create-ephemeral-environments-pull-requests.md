@@ -84,7 +84,7 @@ You've created a workflow that automatically deploys the changes in each pull re
 
 1. Create a new file named *pr-closed.yml* in the *.github/workflows* folder.
 
-   :::image type="content" source="../media/6-visual-studio-code-pr-closed-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the P R closed dot Y M L file within the workflows folder.":::
+   :::image type="content" source="../media/6-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the P R closed dot Y M L file within the workflows folder.":::
 
 1. At the top of the file, name the workflow, configure the same concurrency key that you used in the pull request validation workflow, and configure the workflow to run whenever a pull request is closed:
 
@@ -174,7 +174,7 @@ You've defined workflows to create and manage ephemeral environments automatical
 
 1. Select the URL in the log.
 
-   :::image type="content" source="../media/6-website-address.png" alt-text="Screenshot of the GitHub Actions deployment log. The website URL in the 'Show website hostname' step is highlighted.":::
+   :::image type="content" source="../media/6-website-address.png" alt-text="Screenshot of the GitHub Actions deployment log. The website U R L in the 'Show website hostname' step is highlighted.":::
 
    The website loads. It displays a message showing *Hello Docker!*, which indicates the website is running from the container defined in the pull request change.
 

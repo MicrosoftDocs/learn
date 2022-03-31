@@ -13,7 +13,7 @@ During the process, you'll:
 
 1. In Visual Studio Code, create a new file named *pr-validation.yml* in the *.github/workflows* folder.
 
-   :::image type="content" source="../media/4-visual-studio-code-pr-validation-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the P R validation dot Y M L file within the workflows folder.":::
+   :::image type="content" source="../media/4-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the P R validation dot Y M L file within the workflows folder.":::
 
 1. Add the following code into the file:
 
