@@ -39,13 +39,13 @@ az network vnet subnet update \
 
 For more information on troubleshooting Azure Private Link connectivity problems, see [Troubleshoot Azure Private Link connectivity problems](/azure/private-link/troubleshoot-private-link-connectivity).
 
-## Troubleshoot Firewalls for PaaS services
+## Troubleshoot firewalls for PaaS services
 
-Azure Firewall is intended to filter network traffic to protect your resources. A misconfigured firewall can lead to legitimate traffic also being blocked.
+Azure firewall is intended to filter network traffic to protect your resources. A misconfigured firewall can lead to legitimate traffic also being blocked.
 
 When troubleshooting firewall issues ensure that you include the following steps:
 
-- Review the [Azure Firewall](/azure/firewall/firewall-faq) FAQ and ensure that firewalls are correctly configured.
+- Review the [Azure firewall](/azure/firewall/firewall-faq) FAQ and ensure that firewalls are correctly configured.
 
 - For Azure storage firewalls review any error messages and also download and review the storage diagnostics logs and resolve any issues. 
 

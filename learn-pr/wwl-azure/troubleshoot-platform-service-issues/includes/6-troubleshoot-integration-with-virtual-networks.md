@@ -16,7 +16,7 @@ If the Azure service is not accessible, consider the following points:
 
 - Virtual network service tags allow you to deny traffic to your Azure service to or from public endpoints. In the following diagram all traffic to Azure Storage and Azure SQL Database is allowed, but any other outbound traffic is denied.
 
-   :::image type="content" source="../media/6-deny-outbound-traffic.png" alt-text="Deny most outbound traffic.":::
+   :::image type="content" source="../media/6-deny-outbound-traffic.png" alt-text="Screenshot showing deny most outbound traffic.":::
 
 ## Troubleshoot Azure Private Endpoint connectivity problems
 
@@ -24,11 +24,11 @@ Perform the following steps to Troubleshoot Azure Private Endpoint connectivity 
 
 - In [Private Link Center](https://portal.azure.com/), select **Private endpoints**, and select the endpoint that you want to troubleshoot.
 
-   :::image type="content" source="../media/6-private-link-center.png" alt-text="Private Link Center.":::
+   :::image type="content" source="../media/6-private-link-center.png" alt-text="Screenshot of the private Link Center.":::
 
 - Verify that the connection is approved and that the IP address and DNS settings are correct.
 
-   :::image type="content" source="../media/6-private-endpoint-metrics.png" alt-text="Private endpoint metrics.":::
+   :::image type="content" source="../media/6-private-endpoint-metrics.png" alt-text="Screenshot showing the private endpoint metrics.":::
 
 - Select **Metrics** and verify that data is moving in and out.
 
