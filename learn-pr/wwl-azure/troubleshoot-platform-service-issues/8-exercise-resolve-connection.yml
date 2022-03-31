@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-platform-service-issues.exercise-resolve-paas-connection
+title: 'Exercise: Resolve PaaS connection'
+metadata:
+  title: 'Exercise: Resolve PaaS connection'
+  description: "Exercise: Resolve PaaS connection"
+  ms.date: 03/31/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-exercise-resolve-connection.md)]
+interactive: powershell
