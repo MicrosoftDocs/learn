@@ -7,13 +7,7 @@ You have configured your network as shown in the diagram below. You want VM1 and
 
 There are three Azure virtual networks (VNets) in a hub and spoke topology.
 
-:::image type="content" source="../media/6-spoke-hub-topology.png" alt-text="Screenshot of spoke and hub topology":::
-
-:::image type="content" source="../media/6-virtual-network-1-topology.png" alt-text="Diagram of the 1st virtual network topology.":::
-
-:::image type="content" source="../media/6-virtual-network-2-topology.png" alt-text="Diagram of the 2nd virtual network topology.":::
-
-:::image type="content" source="../media/6-virtual-network-3-topology.png" alt-text="Diagram of the 3rd virtual network topology.":::
+:::image type="content" source="../media/6-spoke-hub-topology.png" alt-text="Screenshot of spoke and hub topology" border="false":::
 
 ## Diagnosis
 
@@ -21,7 +15,7 @@ There are three Azure virtual networks (VNets) in a hub and spoke topology.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com)  using the same account you used to activate the sandbox.
 
-1. Familiarise yourself with the network topology and check it matches the diagram above.
+1. Familiarize yourself with the network topology and check it matches the diagram above.
 
 1. Check the private IP addresses of the firewall (FW1) and virtual machines (VM1 and VM2). These are allocated automatically. Make a note of the correct IP addresses if they are different from the diagram.
 
@@ -41,25 +35,25 @@ There are three Azure virtual networks (VNets) in a hub and spoke topology.
 
 1. Ping the private IP address of the Azure firewall (FW1).
 
-:::image type="content" source="../media/6-private-address-ping.png" alt-text="Screen shot showing the command prompt with the ping request results.":::
+    :::image type="content" source="../media/6-private-address-ping.png" alt-text="Screen shot showing the command prompt with the ping request results.":::
 
-:::image type="content" source="../media/6-private-address-ping-working.png" alt-text="SScreen shot showing the command prompt with the ping request results.":::
+    :::image type="content" source="../media/6-private-address-ping-working.png" alt-text="SScreen shot showing the command prompt with the ping request results.":::
 
 ### Troubleshoot the problem
 
-- To understand what is causing the problem, try the following troubleshooting steps:
+1. To understand what is causing the problem, try the following troubleshooting steps:
 
-- Examine ipconfig /all on both VM1 and VM2.
+1. Examine ipconfig /all on both VM1 and VM2.
 
-- Examine the Network Security Groups, and routing tables.
+1. Examine the Network Security Groups, and routing tables.
 
-- Examine the firewall and the firewall rules.
+1. Examine the firewall and the firewall rules.
 
-- Examine the peering connection properties.
+1. Examine the peering connection properties.
 
-The diagram shows the effective routes on VM1-nic.
+    The diagram shows the effective routes on VM1-nic.
 
-:::image type="content" source="../media/6-effective-routes.png" alt-text="Screen shot showing the effective routes.":::
+    :::image type="content" source="../media/6-effective-routes.png" alt-text="Screen shot showing the effective routes.":::
 
 ## Resolution
 

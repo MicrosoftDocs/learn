@@ -1,6 +1,6 @@
 ## Determine whether traffic is allowed between peers
 
-Peering lets you connect two or more virtual networks in Azure. The traffic between the virtual networks is routed through Microsoft’s backbone infrastructure, not through a gateway or over the public internet. There are two types of peering in Azure:
+Peering lets you connect two or more virtual networks in Azure. The traffic between the virtual networks is routed through Microsoft's backbone infrastructure, not through a gateway or over the public internet. There are two types of peering in Azure:
 
 - **Virtual network peering** – connecting virtual networks within the same Azure region.
 
@@ -12,7 +12,7 @@ Global virtual network peering has the following constraints:
 
 - Some services that use a Basic load balancer don't work over global virtual network peering. 
 
-- You can't peer across clouds. For example, a VNet in Azure public cloud cannot be peered to a VNet in Azure China cloud.
+- You can't peer across clouds. 
 
 - The virtual networks you peer must have non-overlapping IP address spaces.
 
@@ -20,7 +20,7 @@ Global virtual network peering has the following constraints:
 
 - You can't peer two virtual networks created through the classic deployment model.
 
-- Azure inbuilt name resolution won’t resolve names in peered virtual networks. To resolve names in other virtual networks, you must use Azure private zones, or a custom DNS Server.
+- Azure inbuilt name resolution won't resolve names in peered virtual networks. To resolve names in other virtual networks, you must use Azure private zones, or a custom DNS Server.
 
 - A virtual network can be peered to another virtual network, and also be connected to it, with an Azure virtual network gateway. When virtual networks are connected through both peering and a gateway, traffic between the virtual networks flows through the peering configuration, rather than the gateway.
 
@@ -40,7 +40,7 @@ To troubleshoot connectivity between peers, do the following:
 
 [Gateway transit](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/virtual-network/virtual-network-peering-overview.md) is a peering property that allows a virtual network to use the VPN gateway in the peered virtual network for VNet-to-VNet connectivity. In the following diagram, you can see how gateway transit works with virtual network peering:
 
-:::image type="content" source="../media/4-gateway-transit.png" alt-text="Screenshot of gateway transit with virtual network peering":::
+:::image type="content" source="../media/4-gateway-transit.png" alt-text="Screenshot of gateway transit with virtual network peering.:::
 
 The following constraints apply when virtual networks are globally peered:
 
@@ -66,13 +66,13 @@ Transitive peering is when you:
 
 This is not supported with Azure peering. To achieve peering between VNetA and VNetC, you must peer them together. Alternatively, use a hub-and-spoke configuration and go through an NVA in the hub.
 
-:::image type="content" source="../media/4-virtual-network-peering.png" alt-text="All vnets peered to each other":::
+:::image type="content" source="../media/4-virtual-network-peering.png" alt-text="All vnets peered to each other." border="false":::
 
 ## Troubleshoot hub-and-spoke VNet configurations
 
 With a hub-and-spoke configuration, the hub virtual network acts as a central point of connectivity to many spoke virtual networks. The hub can also be used as the connectivity point to your on-premises networks. The spoke virtual networks peer with the hub and can be used to isolate workloads.
 
-:::image type="content" source="../media/4-hub-spoke.png" alt-text="Screenshot showing Hub-and-spoke configuration":::
+:::image type="content" source="../media/4-hub-spoke.png" alt-text="Screenshot showing Hub-and-spoke configuration." lightbox="../media/4-hub-spoke.png" border="false":::
 
 Here's how to troubleshoot connectivity between a hub-spoke virtual network and an on-premises resource.
 

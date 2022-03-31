@@ -8,13 +8,13 @@ In the sandbox to the right, follow these steps:
 ## Create the exercise environment
 Using the Cloud Shell on the right, run these commands to create the example topology.  The environment will take approximately 13 minutes to build.
 
-1. Clone the setup script from GitHub.
+1. Clone the set up script from GitHub.
 
    ```console
    git clone https://github.com/MicrosoftDocs/mslearn-cloud-hybrid-connectivity networking
    ```
 
-1. Run the setup script.
+1. Run the set up script.
 
    ```console
    networking/setup.ps1

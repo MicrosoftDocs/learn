@@ -1,6 +1,6 @@
 In this module, you saw how to troubleshoot ExpressRoute connectivity, including whether ExpressRoute is operational. You also learned about virtual network connectivity, including the traffic allowed between peers, and how to troubleshoot global peering. Finally, you learned how to troubleshoot virtual WAN issues, including monitoring, and how to determine whether sites are configured correctly.
 
-Now that you have completed this module, you should be able to:
+Now that you've completed this module, you should be able to:
 
 - Troubleshoot ExpressRoute connectivity.
 
@@ -36,7 +36,7 @@ For more information about the topics discussed in this module, see:
 
 [Troubleshoot Azure VPN Gateway using diagnostic logs](/azure/vpn-gateway/troubleshoot-vpn-with-azure-diagnostics)
 
-[azure-docs/virtual-network-peering-overview.md at main · MicrosoftDocs/azure-docs · GitHub](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/virtual-network/virtual-network-peering-overview.md)
+[Virtual network peering](/azure/virtual-network/virtual-network-peering-overview)
 
 [Troubleshooting network virtual appliance issues in Azure | Microsoft Docs](/azure/virtual-network/virtual-network-troubleshoot-nva)
 

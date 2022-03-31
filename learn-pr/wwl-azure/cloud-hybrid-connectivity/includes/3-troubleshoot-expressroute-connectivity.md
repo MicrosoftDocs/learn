@@ -1,8 +1,10 @@
-ExpressRoute works over a private fiber-optic connection to provide a faster connection to Azure than would otherwise be possible over the internet. In this unit, you will learn how to troubleshoot issues you might encounter with ExpressRoute connectivity.
+ExpressRoute works over a private fiber-optic connection to provide a faster connection to Azure compared to connecting directly over the internet. In this unit, you will learn how to troubleshoot issues you might encounter with ExpressRoute connectivity.
 
 The following diagram shows connectivity between your network (Customer network) and Azure (Microsoft Datacenter):
 
-:::image type="content" source="../media/3-connectivity.png" alt-text="connectivity between your network (Customer network) and Azure (Microsoft Datacenter)":::
+:::image type="content" source="../media/3-connectivity.png" alt-text="connectivity between your network (Customer network) and Azure (Microsoft Datacenter)."  border="false" lightbox="../media/3-connectivity.png":::
+
+
 
 Before you can use ExpressRoute, you must have an active Microsoft Azure account.
 
@@ -50,7 +52,7 @@ Resize-AzVirtualNetworkGateway
 
 ```
 
-Alternatively, change the configuration in the **Azure portal virtual network gateway** configuration blade. The following upgrades are supported:
+Alternatively, change the configuration in the **Azure portal virtual network gateway** configuration pane. The following upgrades are supported:
 
 - Standard to High Performance
 
@@ -97,7 +99,7 @@ When you create your virtual network gateway, gateway VMs are deployed to the ga
 
 In the Azure portal, view existing ExpressRoute circuits by selecting **All services** > **Networking** > **ExpressRoute** circuits from the left menu.
 
-:::image type="content" source="../media/3-expressroute-circuits.png" alt-text="Screenshot of Expressroute circuits settings":::
+:::image type="content" source="../media/3-expressroute-circuits.png" alt-text="Screenshot of Expressroute circuits settings" lightbox="../media/3-expressroute-circuits.png":::
 
 All ExpressRoute circuits created in the subscription will appear here.
 
@@ -144,7 +146,7 @@ The peerings are configured by your service provider. If the peering in the port
 
 The status of an ExpressRoute circuit peering can be checked in the Azure portal, on the ExpressRoute Circuit **Overview** page. Any ExpressRoute peerings are displayed under the **Peerings** section.
 
-:::image type="content" source="../media/3-peerings.png" alt-text="Screenshot of Expressroute peerings":::
+:::image type="content" source="../media/3-peerings.png" alt-text="Screenshot of Expressroute peerings" lightbox="../media/3-peerings.png":::
 
 In the screenshot above, Azure private peering is provisioned, but Azure public and Microsoft peerings are not. A successfully provisioned peering would also have the primary and secondary point-to-point subnets listed. 
 
@@ -163,42 +165,39 @@ To access this diagnostic tool from the Azure portal, select your ExpressRoute c
 
 ## Validate that routes are live and configured correctly
 
-You can validate that routes are live and configurated correctly by testing peering connectivity. Count the packets arriving and leaving the Microsoft edge of your ExpressRoute circuit, on the Microsoft Enterprise Edge (MSEE) devices. This diagnostic tool works by applying an Access Control List (ACL) to the MSEE to count the number of packets that hit specific ACL rules. Using this tool will allow you to confirm connectivity by answering the questions such as:
-
-- Are my packets getting to Azure? 
-- Are they getting back to on-premises?
+You can validate that routes are live and configurated correctly by testing peering connectivity. Count the packets arriving and leaving the edge of your ExpressRoute circuit, on the Microsoft Enterprise Edge (MSEE) devices. This diagnostic tool works by applying an Access Control List (ACL) to the MSEE to count the number of packets that hit specific ACL rules. Using this tool will allow you to confirm the connectivity is working as expected.
 
 1. To access this diagnostic tool, select **Diagnose and solve problems** from your ExpressRoute circuit in the Azure portal.
 
-   :::image type="content" source="../media/3-diagnose-solve-problems.png" alt-text="Diagnose and solve problems from the ExpressRoute circuit in the Azure portal":::
+   :::image type="content" source="../media/3-diagnose-solve-problems.png" alt-text="Screenshot showing the diagnose and solve problems from the ExpressRoute circuit in the Azure portal.":::
 
 1. Select the **Connectivity issues**, under **Common Problems**.
 
-   :::image type="content" source="../media/3-connectivity-issues.png" alt-text="Screenshot of connectivity issues":::
+   :::image type="content" source="../media/3-connectivity-issues.png" alt-text="Screenshot of connectivity issues.":::
 
 1. In the dropdown for **Tell us more about the problem you're experiencing**, select **Connectivity to Azure Private, Azure Public, or Dynamics 365 services**.
 
-   :::image type="content" source="../media/3-connectivity-azure.png" alt-text="Screenshot showing connection to Azure Private, Azure Public, or Dynamics 365 services":::
+   :::image type="content" source="../media/3-connectivity-azure.png" alt-text="Screenshot showing connection to Azure Private, Azure Public, or Dynamics 365 services.":::
 
-- Scroll down to the **Test your private peering connectivity** section and expand it.
+1. Scroll down to the **Test your private peering connectivity** section and expand it.
 
-   :::image type="content" source="../media/3-test-private-peering-connectivity .png" alt-text="Screenshot showing Testing of private peering connectivity":::
+   :::image type="content" source="../media/3-test-private-peering-connectivity .png" alt-text="Screenshot showing Testing of private peering connectivity.":::
 
-- Execute the [PsPing](/sysinternals/downloads/psping) test from your on-premises IP address to your Azure IP address and keep it running during the connectivity test.
+1. Execute the [PsPing](/sysinternals/downloads/psping) test from your on-premises IP address to your Azure IP address and keep it running during the connectivity test.
 
-- Fill out the fields of the form, making sure to enter the same on-premises and Azure IP addresses used previously. Select **Submit** and wait for the results. When your results are ready, review the information for interpreting them below.
+1. Fill out the fields of the form, making sure to enter the same on-premises and Azure IP addresses used previously. Select **Submit** and wait for the results. When your results are ready, review the information for interpreting them below.
 
-   :::image type="content" source="../media/3-connectivity-test.png" alt-text="Screenshot of Connectivity test":::
+   :::image type="content" source="../media/3-connectivity-test.png" alt-text="Screenshot of connectivity test.":::
 
-You'll have two sets of results for the primary and secondary MSEE devices. Review the number of matches in and out and use the following scenarios to interpret the results:
+   You'll have two sets of results for the primary and secondary MSEE devices. Review the number of matches in and out and use the following scenarios to interpret the results:
 
-- **You see packet matches sent and received on both MSEEs**: This indicates healthy traffic inbound to and outbound from the MSEE on your circuit. If loss is occurring either on-premises or in Azure, it's happening downstream from the MSEE.
+      - **You see packet matches sent and received on both MSEEs**: This indicates healthy traffic inbound to and outbound from the MSEE on your circuit. If loss is occurring either on-premises or in Azure, it's happening downstream from the MSEE.
 
-- **If testing PsPing from on-premises to Azure (received) results show matches, but sent results show NO matches**: This indicates that traffic is getting inbound to Azure but isn't returning to on-premises. Check for return path routing issues. Check whether you are advertising the appropriate prefixes to Azure. Check if there is an UDR overriding prefixes.
+      - **If testing PsPing from on-premises to Azure (received) results show matches, but sent results show NO matches**: This indicates that traffic is getting inbound to Azure but isn't returning to on-premises. Check for return path routing issues. Check whether you are advertising the appropriate prefixes to Azure. Check if there is an UDR overriding prefixes.
 
-- **If testing PsPing from Azure to on-premises (sent) results show NO matches, but (received) results show matches**: This indicates that traffic is getting to on-premises, but not getting back. You should work with your provider to find out why traffic isn't being routed to Azure via your ExpressRoute circuit.
+      - **If testing PsPing from Azure to on-premises (sent) results show NO matches, but (received) results show matches**: This indicates that traffic is getting to on-premises, but not getting back. You should work with your provider to find out why traffic isn't being routed to Azure via your ExpressRoute circuit.
 
-- **One MSEE shows NO matches, while the other shows good matches**: This indicates that one MSEE isn't receiving or passing any traffic. Check whether it is offline, for example, BGP/ARP down.
+      - **One MSEE shows NO matches, while the other shows good matches**: This indicates that one MSEE isn't receiving or passing any traffic. Check whether it is offline, for example, BGP/ARP down.
 
 Example:
 
@@ -218,35 +217,35 @@ This test result has the following properties:
 
 When an operation on an ExpressRoute circuit doesn't complete successfully, the circuit might go into a "failed" state. You can reset a failed ExpressRoute circuit using Azure PowerShell. You will need the latest version of the Azure Resource Manager PowerShell cmdlets.
 
-- Open your PowerShell console with elevated privileges and connect to your account. Use the following example to help you connect:
+1. Open your PowerShell console with elevated privileges and connect to your account. Use the following example to help you connect:
 
-```powershell
-Connect-AzAccount
+   ```powershell
+   Connect-AzAccount
 
-```
+   ```
 
-- If you have multiple Azure subscriptions, check the subscriptions for the account.
+1. If you have multiple Azure subscriptions, check the subscriptions for the account.
 
-```powershell
-Get-AzSubscription
+   ```powershell
+   Get-AzSubscription
 
-```
+   ```
 
-- Specify the subscription that you want to use.
+1. Specify the subscription that you want to use.
 
-```powershell
-Select-AzSubscription -SubscriptionName "Replace_with_your_subscription_name"
+   ```powershell
+   Select-AzSubscription -SubscriptionName "Replace_with_your_subscription_name"
 
-```
+   ```
 
-- Run the following commands to reset a circuit that is in a failed state:
+1. Run the following commands to reset a circuit that is in a failed state:
 
-```powershell
-$ckt = Get-AzExpressRouteCircuit -Name "ExpressRouteARMCircuit" -ResourceGroupName "ExpressRouteResourceGroup"
+   ```powershell
+   $ckt = Get-AzExpressRouteCircuit -Name "ExpressRouteARMCircuit" -ResourceGroupName "ExpressRouteResourceGroup"
 
-Set-AzExpressRouteCircuit -ExpressRouteCircuit $ckt
+   Set-AzExpressRouteCircuit -ExpressRouteCircuit $ckt
 
-```
+   ```
 
 The circuit should now be reset. 
 
@@ -272,11 +271,11 @@ A request originating from Microsoft that goes to your on-premises SMTP server t
 
 ## Troubleshoot route filtering
 
-When you configure peering on your ExpressRoute circuit, the Microsoft edge routers establish a pair of Border Gateway Protocol (BGP) sessions with the edge routers through your connectivity provider. At this point, no routes are advertised to your network. To enable route advertisements to your network, you must configure a route filter.
+When you configure peering on your ExpressRoute circuit, the edge routers establish a pair of Border Gateway Protocol (BGP) sessions with the edge routers through your connectivity provider. At this point, no routes are advertised to your network. To enable route advertisements to your network, you must configure a route filter.
 
 A route filter lets you identify services you want to consume. It's a list of allowed BGP community values. Once a route filter resource is defined and attached to an ExpressRoute circuit, all prefixes that map to the BGP community values get advertised to your network.
 
-You must have authorization to consume Microsoft 365 services through ExpressRoute to attach route filters with Microsoft 365 services. If you don’t have this authorization, the operation will fail.
+You must have authorization to consume Microsoft 365 services through ExpressRoute to attach route filters with Microsoft 365 services. If you don't have this authorization, the operation will fail.
 
 BGP community values associated with services accessible through Microsoft peering is available here: [ExpressRoute routing requirements](/azure/expressroute/expressroute-routing).
 
@@ -286,11 +285,11 @@ Create a filter rule:
 
 - To add and update rules, select the **manage rule** tab for your route filter.
 
-  :::image type="content" source="../media/3-manage-rule.png" alt-text="Screenshot of Manage rule tab":::
+  :::image type="content" source="../media/3-manage-rule.png" alt-text="Screenshot of Manage rule tab." lightbox="../media/3-manage-rule.png":::
 
 - From the dropdown list, select the allowed service communities you want to connect to. Save the rule when you have finished.
 
-  :::image type="content" source="../media/3-rule-settings.png" alt-text="Screenshot of Rule settings":::
+  :::image type="content" source="../media/3-rule-settings.png" alt-text="Screenshot of Rule settings.":::
 
 ## Troubleshoot redundant configurations
 
@@ -304,7 +303,7 @@ Network routing is the way that network traffic determines its path to reach a d
 
 Azure Route Server allows you to configure, maintain, and deploy NVAs in your virtual network. Route Server also keeps virtual network address information up-to-date. Route Server eliminates the administrative overhead of maintaining route tables.
 
-Alternatively, you can define static routes that override Azure’s default routes. Or you can add additional routes to a subnet’s route table. You produce custom routes by either creating [user-defined](/azure/virtual-network/virtual-networks-udr-overview) routes, or by exchanging [border gateway protocol](/azure/virtual-network/virtual-networks-udr-overview) (BGP) routes between your on-premises network gateway and an Azure virtual network gateway.
+Alternatively, you can define static routes that override Azure's default routes. Or you can add additional routes to a subnet's route table. You produce custom routes by either creating [user-defined](/azure/virtual-network/virtual-networks-udr-overview) routes, or by exchanging [border gateway protocol](/azure/virtual-network/virtual-networks-udr-overview) (BGP) routes between your on-premises network gateway and an Azure virtual network gateway.
 
 To troubleshoot route updates, try the following:
 
@@ -355,9 +354,9 @@ The detailed results of iPerf tests are in individual text files in the AzureCT 
 
 The PowerShell output format looks similar to:
 
-:::image type="content" source="../media/3-powershell-output.png" alt-text="Screenshot of PowerShell output of test":::
+:::image type="content" source="../media/3-powershell-output.png" alt-text="Screenshot of PowerShell output of test.":::
 
-If the performance test doesn’t give the results you expected results, use a step-by-step process to resolve the issue.
+If the performance test doesn't give the results you expected results, use a step-by-step process to resolve the issue.
 
 First, challenge your assumptions. If you have a 1Gbps ExpressRoute circuit and 100ms of latency, it's not reasonable to expect the full 1Gbps of traffic, given the characteristics of TCP over high latency links.
 

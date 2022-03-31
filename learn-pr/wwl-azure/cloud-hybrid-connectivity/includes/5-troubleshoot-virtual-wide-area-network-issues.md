@@ -27,11 +27,11 @@ To access Azure Monitor Insights for Azure Virtual WAN:
 
 1. Under **Monitoring**, select **Insights (preview)**. The **Insights** view is displayed.
 
-:::image type="content" source="../media/5-insights-view.png" alt-text="Screenshot of Insights view":::
+:::image type="content" source="../media/5-insights-view.png" alt-text="Screenshot of Insights view" lightbox="../media/5-insights-view.png":::
 
 The Insights view displays the virtual WAN resources with color-coded symbols to indicate their status. When you select a resource, the Insights view is displayed.
 
-:::image type="content" source="../media/5-virtual-network-resources.png" alt-text="Virtual WAN resources":::
+:::image type="content" source="../media/5-virtual-network-resources.png" alt-text="Virtual WAN resources" lightbox="../media/5-virtual-network-resources.png":::
 
 The Insights view is diagrammatic, with each resource state color-coded. Metrics are displayed in a mini workbook on the right.
 
@@ -47,11 +47,11 @@ You can:
 
 - Right-click to access the Azure portal page for that resource.
 
-:::image type="content" source="../media/5-dependency-map.png" alt-text="Screenshot of dependency map":::
+:::image type="content" source="../media/5-dependency-map.png" alt-text="Screenshot of dependency map" border="false" lightbox="../media/5-dependency-map.png":::
 
 Select **View detailed metrics** to display information about your virtual WAN resource capacity, performance, and utilization at the virtual WAN level, hub level, and for individual connections.
 
-:::image type="content" source="../media/5-detailed-metrics.png" alt-text="Screenshot of detailed metrics":::
+:::image type="content" source="../media/5-detailed-metrics.png" alt-text="Screenshot of detailed metrics" lightbox="../media/5-detailed-metrics.png":::
 
 ## Determine whether sites are configured correctly
 
@@ -63,7 +63,7 @@ Display the routing status by going to the **Virtual Hub** page in the Azure por
 
 - **Provisioning** – indicates that the virtual hub is in the process of being provisioned.
 
-- **None** – indicates that the virtual hub did not provision the router. This can happen if the virtual WAN is of Basic type, or if the virtual hub was deployed before the service was made available.
+- **None** – indicates that the virtual hub wasn't able to create the router. This can happen if the virtual WAN is of Basic type, or if the virtual hub was deployed before the service was made available.
 
 - **Failed** – indicates failure during instantiation. To reset the router, go to the virtual hub **Overview** page locate and select the **Reset Router** option. Resetting is a way to bring failed resources such as route tables, the hub router, or the virtual hub resource back to the provisioning state. 
 
@@ -101,25 +101,25 @@ You use a secured virtual hub to provide automated routing to filter traffic bet
 
 - Traffic to the internet (B2I/V2I).
 
-You don’t need to configure user-defined routes (UDRs) to route traffic through your firewall.
+You don't need to configure user-defined routes (UDRs) to route traffic through your firewall.
 
 Secured virtual hubs can either be created as secured virtual hubs or converted from an existing virtual hub.
 
 When you troubleshoot issues with secured virtual hubs, be aware of the following limitations:
 
-- A secured hub doesn’t support branch-to-branch (B2B) filtering and filtering across multiple hubs. 
+- A secured hub doesn't support branch-to-branch (B2B) filtering and filtering across multiple hubs. 
 
 - You cannot configure more than one secured hub per Azure region.
 
 - Local policies must be created in the same region as the base policy. However, a policy that was created in one region can be applied to a secured hub in another region.
 
-- Communication filtering between secured virtual hubs is not supported. However, hub-to-hub communication still works if private traffic filtering via Azure Firewall isn't enabled.
+- Communication filtering between secured virtual hubs isn't supported. However, hub-to-hub communication still works if private traffic filtering via Azure Firewall isn't enabled.
 
 - Secured virtual hubs sharing the same virtual WAN must be in the same resource group.
 
 - The secure hub firewall goes into a failed state if you add multiple public IP addresses.
 
-- DDoS Protection Standard is not supported with secured virtual hubs.
+- DDoS Protection Standard isn't supported with secured virtual hubs.
 
 - Activity logs are not fully supported.
 
