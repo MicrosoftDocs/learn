@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Troubleshoot authentication and access control issues in Microsoft Azure
-summary: Microsoft Azure has a sophisticated authentication and access control system to provide high security. Azure Active Directory (AD) authentication includes Self-service password reset, Multi-Factor Authentication, hybrid integration, and passwordless authentication.
+summary: Microsoft Azure has a sophisticated authentication and access control system to provide high security. Azure Active Directory (AD) authentication includes Self-service password reset, multifactor authentication, hybrid integration, and passwordless authentication.
 abstract: |
   By the end of this module, you will be able to:
   - Troubleshoot Azure AD authentication

@@ -6,7 +6,7 @@ The following table shows the high-level difference between Azure AD editions. F
 
 | Feature name| Free| Office 365| Azure Active Directory Premium P1| Azure Active Directory Premium P2|
 | :--- | :--- | :--- | :--- | :--- |
-| Authentication, single sign-on and multi-factor authentication (MFA)| Partially included | Partially included | Included| Included|
+| Authentication, single sign-on and multifactor authentication (MFA)| Partially included | Partially included | Included| Included|
 | Applications access| Partially included | Partially included | Included| Included|
 | Authorization and conditional access| Partially included | Partially included | Partially included | Included|
 | Administration and hybrid identity| Partially included | Partially included | Included| Included|
@@ -43,9 +43,9 @@ If you want to test SSPR for a specific user, you should open a browser window u
 
 For more information on setting up and troubleshooting SSPR, see [How it works: Azure AD self-service password reset](/azure/active-directory/authentication/concept-sspr-howitworks).
 
-## Troubleshoot multi-factor authentication issues
+## Troubleshoot multifactor authentication issues
 
-Multi-factor authentication (MFA) improves security because it requires you to use an additional authentication method and a password.
+Multifactor authentication (MFA) improves security because it requires you to use an additional authentication method and a password.
 
 There are several common issues that you should resolve when troubleshooting MFA:
 
@@ -59,13 +59,13 @@ There are several common issues that you should resolve when troubleshooting MFA
 
 - You receive a "Sorry! We can't process your request" error when you try to set up SSPR. If this happens, ensure that you complete the setup process in less than 10 minutes.
 
-- You lose your phone or your phone number has changed, preventing you from using MFA. If this occurs, you need to ask a cloud services admin to select **Require selected users to provide contact methods again** in **Manage user settings** on the multi-factor authentication settings.
+- You lose your phone or your phone number has changed, preventing you from using MFA. If this occurs, you need to ask a cloud services admin to select **Require selected users to provide contact methods again** in **Manage user settings** on the multifactor authentication settings.
 
 - You receive a "We didn't receive the expected response" error message. Ensure that you enter the correct code or select **Verify** in the mobile app.
 
 - You receive an "Account verification system is having trouble" error message. Ensure that you enter the correct verification code and, if using the call option, you must press the pound (#) key.
 
-For more information, see [Troubleshoot Azure Active Directory Multi-Factor Authentication issues](/troubleshoot/azure/active-directory/troubleshoot-azure-mfa-issue).
+For more information, see [Troubleshoot Azure Active Directory Multifactor Authentication issues](/troubleshoot/azure/active-directory/troubleshoot-azure-mfa-issue).
 
 ## Review customer access level to enterprise apps in Azure
 
@@ -89,7 +89,7 @@ The default access level is to allow access to all enterprise applications for e
 
 Troubleshoot issues where users become locked out of their account
 
-To protect the Azure AD domain, an account will be locked out after a defined number of incorrect log-on attempts. This could be caused by a brute force malicious attack, or by a user repeatedly entering the wrong password.
+To protect the Azure AD domain, an account will be locked out after a defined number of incorrect log in attempts. This could be caused by a brute force malicious attack, or by a user repeatedly entering the wrong password.
 
 You should check whether a user could be using an incorrect password, or whether an app might be using an old or incorrect password. It may be that a password has recently changed in on-premises Active Directory Services (AD DS) and might not have had time to synchronize with Azure AD.
 

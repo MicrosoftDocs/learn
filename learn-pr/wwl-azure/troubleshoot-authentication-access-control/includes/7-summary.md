@@ -14,7 +14,7 @@ For more information about the topics discussed in this module, see:
 
 [How it works: Azure AD self-service password reset.](/azure/active-directory/authentication/concept-sspr-howitworks)
 
-[Troubleshoot Azure Multi-Factor Authentication issues.](/troubleshoot/azure/active-directory/troubleshoot-azure-mfa-issue)
+[Troubleshoot Azure AD Multifactor Authentication issues.](/troubleshoot/azure/active-directory/troubleshoot-azure-mfa-issue)
 
 [Tutorials for integrating SaaS applications with Azure Active Directory.](/azure/active-directory/saas-apps/tutorial-list)
 
