@@ -73,7 +73,7 @@ As you diagnose and troubleshoot issues, you may need to run commands directly o
       --exec-command /bin/sh
     ```
 
-    At this point, you are effectively working inside of the container.
+    At this point, you're effectively working inside of the container.
 
 1. Run the `ls` command to display the contents of the working directory.
 
@@ -166,7 +166,7 @@ Here you'll see how to monitor CPU and memory usage on your container.
 
 ## Clean up resources
 
-In this module you created resources using your Azure subscription. You want to clean up these resources so that you will not continue to be charged for them.
+In this module, you created resources using your Azure subscription. You want to clean up these resources so that you won't continue to be charged for them.
 
 1. In the Azure **home** page, select **All resources**.
 

@@ -25,7 +25,7 @@ Azure Functions are best when handling specific definable actions triggered by a
 
 - **Avoid long running functions.** Large, long-running functions can cause unexpected timeout issues. Whenever possible, refactor large functions into smaller function sets that work together and return responses faster. The default timeout is 300 seconds for Consumption Plan functions, 30 minutes for any other plan.
 
-- **Know when to use durable functions**. [Durable functions](/azure/azure-functions/durable/durable-functions-overview?tabs=csharp) let you write stateful functions. So, behind the scenes, the function manages app state, checkpoints, and restarts. An example application pattern for durable functions is function chaining. Function chaining executes a sequence of functions in a specific order. The output of one function is applied to the input of another function. Can you see how timeout issues can be overcome with durable functions and smaller function sets?
+- **Know when to use durable functions**. [Durable functions](/azure/azure-functions/durable/durable-functions-overview?tabs=csharp) let you write stateful functions. So, behind the scenes, the function manages app state, checkpoints, and restarts. An example application pattern for durable functions is function chaining. Function chaining executes a sequence of functions in a specific order. The output of one function is applied to the input of another function. Do you understand how timeout issues can be overcome with durable functions and smaller function sets?
 
 :::image type="content" source="../media/durable-functions.png" alt-text="Durable functions pass information.":::
 
@@ -35,7 +35,7 @@ Azure Functions are best when handling specific definable actions triggered by a
 
 - **Write defensive functions.** Design your functions assuming an exception could occur at any time. Downstream services, network outages, or memory limits could cause the function to fail. Plan out how you continue from a failure point. 
 
-- **A****void sharing storage accounts.** When you create a function app, you must associate it with a storage account. To maximize performance, use a separate storage account for each function app. This is important if your function generates a high volume of storage transactions.
+- **Avoid sharing storage accounts.** When you create a function app, you must associate it with a storage account. To maximize performance, use a separate storage account for each function app. This is important if your function generates a high volume of storage transactions.
 
 > [!TIP]
 > Take a few minutes to read about other [Azure Function best practices](/azure/azure-functions/functions-best-practices).

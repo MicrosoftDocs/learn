@@ -89,3 +89,17 @@ In some teams, the author of the pull request should also complete it. This proc
 In some teams, the author of the pull request should also complete it. This process helps ensure that the author controls when the merge happens and can be available to monitor any automated deployments. In other teams, approvers complete the pull request. You can even use Azure DevOps to automatically complete a pull request when it meets the approval criteria. Your team should decide who merges pull requests and when.
 
 ::: zone-end
+
+## Your team's process
+
+After you start to use feature branches and pull requests, your team's process might change to something like the following:
+
+1. A team member clones your shared repository.
+1. They make local changes on a branch in their own local copy of the repository.
+1. When they're finished with their changes, they create a pull request to the shared repository.
+1. Other team members review the changes. When they're satisfied, they approve the pull request and it's merged to the shared repository's main branch.
+1. In some scenarios, the remote repository's push triggers an automated pipeline to verify, test and deploy the code. You'll learn more about pipelines in other Microsoft Learn modules.
+
+The following diagram illustrates this revised process.
+
+:::image type="content" source="../media/4-revised-process.png" alt-text="Diagram that shows the process of making local changes, opening a pull request, deleting the local branch, and triggering a pipeline." border="false":::

@@ -16,7 +16,7 @@ abstract: |
   - Understand the concept of relational annotations and how to create and leverage them
   - Create scaffold for checking the complexity of student code
   - Explore different options for creating a grading pipeline that uses PyBryt
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/advanced-pybryt.svg
 levels:
   - advanced
 roles:

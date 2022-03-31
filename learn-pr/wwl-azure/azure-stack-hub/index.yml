@@ -3,7 +3,7 @@ uid: learn.wwl.azure-stack-hub
 metadata:
   title: Azure Stack Hub
   description: "Azure Stack Hub"
-  ms.date: 12/08/2021
+  ms.date: 03/17/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   * Conceptual knowledge of Azure compute solutions.
   * Working experience with virtual machines, containers, and app service.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-azure-stack-hub.svg
 levels:
 - advanced
 roles:

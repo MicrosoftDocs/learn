@@ -3,7 +3,7 @@ uid: learn.wwl.implement-tools-to-track-usage-flow
 metadata:
   title: Implement tools to track usage and flow
   description: "Implement tools to track usage and flow"
-  ms.date: 03/02/2022
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -44,7 +44,7 @@ units:
 - learn.wwl.implement-tools-to-track-usage-flow.introduction
 - learn.wwl.implement-tools-to-track-usage-flow.understand-inner-loop
 - learn.wwl.implement-tools-to-track-usage-flow.introduction-to-continuous-monitoring
-- learn.wwl.implement-tools-to-track-usage-flow.explore-azure-log-analytics
+- learn.wwl.implement-tools-to-track-usage-flow.explore-azure-monitor-log-analytics
 - learn.wwl.implement-tools-to-track-usage-flow.examine-kusto-query-language-kql
 - learn.wwl.implement-tools-to-track-usage-flow.explore-application-insights
 - learn.wwl.implement-tools-to-track-usage-flow.implement-application-insights

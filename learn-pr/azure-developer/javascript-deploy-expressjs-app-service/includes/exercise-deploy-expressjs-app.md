@@ -1,0 +1,86 @@
+To understand the deployment process, this module provides an Express.js sample, which you need to fork on GitHub, then clone down to your local computer. Once the source code is on your local computer, you deploy the app to your existing App Service from VS Code. 
+
+In this exercise, you need to: 
+
+* Fork the GitHub sample repository.
+* Clone your fork to your local computer.
+* Deploy the sample from your local computer to App Service.
+
+## Fork the GitHub sample repository
+
+1. Open the [GitHub sample](https://github.com/Azure-Samples/msdocs-javascript-nodejs-server), `https://github.com/Azure-Samples/msdocs-javascript-nodejs-server`, repository in a new browser tab or window.
+1. Find and select the **Fork** button to create your own fork of the sample repository. 
+
+## Clone your fork to your local computer
+
+1. In Visual Studio Code, open the Command palette with <kbd>Cntl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>.
+1. Search for `Git: Clone` and select it. 
+1. Enter your fork's URL of the sample repository. It should look something like:
+
+    |URL|
+    |--|
+    |https://github.com/YOUR-GITHUB-ALIAS/msdocs-javascript-nodejs-server|
+
+1. Select a local folder on your computer.
+1. When asked if you want to open the cloned repository, select **Open**. 
+1. Visual Studio Code reopens with your local fork of the sample repository.
+
+## Browse the repository folders
+
+The local project has several folders, each representing a Learn module. The `2-Deploy-basic-app-to-azure` is the code that you'll deploy to Azure App Service. Ignore the other folders for now.
+
+1. Expand the `2-Deploy-basic-app-to-azure` folder to view the Express.js files.
+1. Open the `package.json` to understand what dependencies the App Service will install as part of the app:
+
+    ```json
+    {
+      "name": "msdocs-javascript-nodejs-server",
+      "version": "0.0.1",
+      "type": "module",
+      "scripts": {
+        "start": "cross-env-shell DEBUG=express:* node index.js",
+        "format": "prettier --write ."
+      },
+      "dependencies": {
+        "body-parser": "^1.19.2",
+        "cross-env": "^7.0.3",
+        "ejs": "^3.1.6",
+        "express": "^4.17.2",
+        "http-errors": "^2.0.0",
+        "method-override": "^3.0.0",
+        "multer": "^1.4.4",
+        "prettier": "^2.5.1",
+        "uuid": "^8.3.2"
+      }
+    }
+    ```
+
+1. Notice that the `package.json` file has a `start` script used by the deployment process to start the app.
+
+## Deploy the sample from your local computer to App Service
+
+1. In Visual Studio Code, open the Azure side bar: <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
+1. In the App Service section, find and expand the subscription's App Service resource.
+1. Your app, created in the previous exercise, such as `jimb-rentals`, should be listed.
+    1. If the app isn't listed, try the following:
+        1. At the top of this Learn unit, check that you still have time for your sandbox.
+        1. In Visual Studio Code, sign out of Azure, then in again to make sure all subscriptions are displayed.
+1. Right-click the app and select **Deploy to Web App...**.
+1. Browse to and select the subfolder `2-Deploy-basic-app-to-azure`.
+1. When asked if you're sure you want to deploy, select **Deploy**.
+1. When the notification displays with the option to check **output window**, select it.
+1. The deployment status displays with datetime stamps and actions. 
+
+1. When you see something like the following lines in the **output** terminal, the deployment is complete: 
+
+    |Log lines|
+    |--|
+    |3:08:19 PM jimb-rentals: Deployment successful.|
+    |3:08:29 PM: Deployment to "jimb-rentals" completed.|
+
+## Check your work
+
+At this point, the sample Express.js is deployed to Azure successfully.
+
+* You forked then cloned the GitHub sample repository.
+* You deployed a subfolder of your local forked repository to App Service.

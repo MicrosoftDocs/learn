@@ -8,7 +8,7 @@ This exercise can be completed using a free Microsoft Learn *sandbox* subscripti
 >
 > 1. Sign into your Azure subscription in the [Azure portal](https://portal.azure.com?azure-portal=true).
 > 2. Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
-> 3. Use the **[\>_]** button to create a new Cloud Shell in the Azure portal, creating storage if prompted, and selecting a *Bash* environment.
+> 3. Use the **[\>_]** button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, creating storage if prompted and selecting a *Bash* environment.
 > 4. Complete the exercise steps below in the Cloud Shell pane in the Azure portal.
 >
 > For more information about using the Azure Cloud Shell, see the [Azure Cloud Shell documentation](/azure/cloud-shell/overview?azure-portal=true)
@@ -43,12 +43,8 @@ This exercise can be completed using a free Microsoft Learn *sandbox* subscripti
 
 ## Explore the Azure resources
 
-1. Open the [Azure portal](https://portal.azure.com?azure-portal=true), signing in if prompted.
-
-    Ensure you're working in the directory containing your subscription - indicated at the top right of the portal under your user ID (if you are using a *sandbox* subscription, this should be **Microsoft Learn Sandbox**). If not, select the user icon and switch directory.
-
-2. On the home page, select **Resource groups** to see the resource groups in your subscription. This should include the **learn-*xxxxxxxxxxxxxxxxx...*** resource group identified by the setup script.
-3. Select the **learn-*xxxxxxxxxxxxxxxxx...*** resource group, and review the resources it contains, which should include:
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), on the home page, select **Resource groups** to see the resource groups in your subscription. This should include the **learn-*xxxxxxxxxxxxxxxxx...*** resource group identified by the setup script.
+2. Select the **learn-*xxxxxxxxxxxxxxxxx...*** resource group, and review the resources it contains, which should include:
     - An *IoT Hub* named **iothub*xxxxxxxxxxxxx***, which is used to receive incoming device data.
     - A *Storage account* named **store*xxxxxxxxxxxx***, to which the data processing results will be written.
     - A *Stream Analytics job* named **stream*xxxxxxxxxxxxx***, which will be used to process streaming data.
@@ -58,7 +54,7 @@ This exercise can be completed using a free Microsoft Learn *sandbox* subscripti
     > [!Note]
     > If you are using the learn sandbox, the resource group may also contain a second *Storage account* named **cloudshell*xxxxxxxx***, which is used to store data for the Azure Cloud Shell you used to run the setup script.
 
-4. Select the **stream*xxxxxxxxxxxxx*** Stream Analytics job and view the information on its **Overview** page, noting the following details:
+3. Select the **stream*xxxxxxxxxxxxx*** Stream Analytics job and view the information on its **Overview** page, noting the following details:
     - The job has one *input* named **iotinput**, and one *output* named **bloboutput**. These reference the IoT Hub and Storage account created by the setup script.
     - The job has a *query*, which reads data from the **iotinput** input, and aggregates it by counting the number of messages processed every 10 seconds; writing the results to the **bloboutput** output.
 
@@ -79,8 +75,8 @@ This exercise can be completed using a free Microsoft Learn *sandbox* subscripti
     ```
 
 5. While the simulation is running, back in the Azure portal, return to the page for the **learn-*xxxxxxxxxxxxxxxxx...*** resource group, and select the **store*xxxxxxxxxxxx*** storage account.
-6. In the pane on the left of the storage account blade, select the **Storage browser** tab.
-7. In the storage browser, navigate toe **Data storage >Blob Containers** and then open the **data** container.
+6. In the pane on the left of the storage account blade, select the **Containers** tab.
+7. Open the **data** container.
 8. In the **data** container, navigate through the folder hierarchy, which includes a folder for the current year, with subfolders for the month, day, and hour.
 9. In the folder for the hour, select the file that has been created, which should have a name similar to **0_xxxxxxxxxxxxxxxx.json**.
 10. On the page for the file, select **Edit**, and review the contents of the file; which should consist of a JSON record for each 10 second period, showing the number of messages received from IoT devices, like this:
