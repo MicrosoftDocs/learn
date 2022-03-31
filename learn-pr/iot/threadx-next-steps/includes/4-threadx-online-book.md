@@ -45,6 +45,6 @@ You should download the [ThreadX online book](https://github.com/Azure-Samples/a
 
 Most of the chapters have sections titled `Key Terms and Phrases` and `Problems`. You should review those sections and solve the problems. Click on the link to Chapter 4, which will take you to that chapter. Following is a portion of the first page of Chapter 4.
 
-:::image type="content" alt-text="Portion of Chapter 4--RTOS building blocks" source="../media/chapter-4-rtos-building-blocks.png" loc-scope="Azure":::
+:::image type="content" source="../media/chapter-4-rtos-building-blocks.png" alt-text="Portion of Chapter 4--RTOS building blocks" loc-scope="Azure":::
 
 Most of the chapters start with an introductory section, and contain many figures. These figures help illustrate the concepts and features of ThreadX.
