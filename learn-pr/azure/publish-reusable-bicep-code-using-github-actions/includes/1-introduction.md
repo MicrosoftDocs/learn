@@ -10,7 +10,7 @@ To make it easy for your colleagues, you've created a set of security-hardened B
 
 You've previously used GitHub Actions to automate the deployment of your Azure resources. Now, you want to find a way to automate the validation and publishing of your reusable Bicep code, too.
 
-:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram that shows two GitHub Actions workflows. One publishes a complete Bicep file to a template spec, and the other published a module to a Bicep registry." border="false":::
+:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram that shows two workflows. One publishes a complete Bicep file to a template spec, and the other publishes a module to a Bicep registry." border="false":::
 
 ## What will we be doing?
 
@@ -28,7 +28,7 @@ You should be familiar with using:
 
 - Bicep modules and module registries.
 - Azure template specs.
-- Testing Bicep code, including linting.
+- The Bicep linter, and testing your Bicep code.
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
 - GitHub Actions, including jobs, steps, and secrets.

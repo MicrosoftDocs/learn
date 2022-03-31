@@ -8,7 +8,7 @@ In previous Microsoft Learn modules, you learned about the importance of version
 
 In the preceding example, the major version is 1, the minor version is 4, and the revision number is 106.
 
-Changes in differnet parts of version numbers communicate important information about the types of changes in the code:
+Changes in different parts of version numbers communicate important information about the types of changes in the code:
 
 - **Whenever you make a breaking change, you should increment the major version number.** For example, suppose you add a new mandatory parameter or remove a parameter from your Bicep file. These are examples of breaking changes, because Bicep requires mandatory parameters to be specified at deployment time, and doesn't allow setting values for non-existent parameters. So, you would update the major version number.
 
@@ -23,7 +23,7 @@ For example, suppose you're using a Bicep module published by somebody else. The
 > [!TIP]
 > *Semantic versioning* is a formalized versioning structure that is similar to what we described above. Semantic versioning includes additional components in the version number, as well as strict rules about when you should set or reset each component. We link to more information about semantic versioning in the summary.
 
-Your team needs to decide how you define a *breaking change* for the purpose of versioning. For example, suppose you've built a Bicep module that deploys an storage account. Now, you're updating the Bicep file to enable private endpoints on your storage account, and you add a private DNS zone to your Bicep file at the same time. You might be able to make this change without affecting the Bicep file's parameters or outputs, so anybody who deploys the file might not notice that anything is different. But this change introduces a significant difference in the behavior of your resources, so you might decide to treat it as a major version update regardless.
+Your team needs to decide how you define a *breaking change* for the purpose of versioning. For example, suppose you've built a Bicep module that deploys a storage account. Now, you're updating the Bicep file to enable private endpoints on your storage account, and you add a private DNS zone to your Bicep file at the same time. You might be able to make this change without affecting the Bicep file's parameters or outputs, so anybody who deploys the file might not notice that anything is different. But this change introduces a significant difference in the behavior of your resources, so you might decide to treat it as a major version update regardless.
 
 You can also choose to use a simpler versioning strategy, such as just using the workflow run number as your version number. While this approach is easier to implement, it means you can't effectively communicate the differences between versions to anybody who uses your code.
 
@@ -35,7 +35,7 @@ One approach is to store a *metadata file* with your Bicep code, as illustrated 
 
 :::image type="content" source="../media/5-metadata-files.png" alt-text="Diagram that shows a file system hierarchy with two modules and a template spec, each with an associated metadata dot J S O N file." border="false":::
 
-Whenever you update your Bicep code, you update the version information in the correspnding metadata file. You need to ensure that you correctly identify breaking and non-breaking changes so you can increment the version numbers correctly.
+Whenever you update your Bicep code, you update the version information in the corresponding metadata file. You need to ensure that you correctly identify breaking and non-breaking changes so you can increment the version numbers correctly.
 
 > [!TIP]
 > If your team reviews your Bicep code by using pull requests, ask the reviewers to validate whether any changes to your code require changing your major or minor version numbers.

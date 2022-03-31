@@ -102,7 +102,7 @@ You can also view the published template spec in the Azure portal.
 
    :::image type="content" source="../media/4-template-spec-portal.png" alt-text="A screenshot of the Azure portal that shows the resource group, with the template spec highlighted.":::
 
-1. The template spec details are showed.
+1. The template spec details are shown.
 
    :::image type="content" source="../media/4-template-spec-details-portal.png" alt-text="A screenshot of the Azure portal that shows the template spec details.":::
 
