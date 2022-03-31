@@ -3,7 +3,7 @@ uid: learn.azure.publish-reusable-bicep-code-using-github-actions
 metadata:
   moduleType: standard
   title: Publish reusable Bicep code by using GitHub Actions
-  description: Build GitHub Actions deployment workflows for template specs and Bicep modules. Lint your Bicep code, apply versioning, and publish it to Azure or to a Bicep registry.
+  description: Build GitHub Actions deployment workflows for template specifications and Bicep modules. Lint your Bicep code, apply versioning, and publish it to Azure or to a Bicep registry.
   ms.date: 03/29/2022
   author: pazdedav
   ms.author: dapazd
@@ -11,17 +11,17 @@ metadata:
   ms.prod: learning-azure
 title: Publish reusable Bicep code by using GitHub Actions
 summary: |
-  Publish Azure template specs and Bicep modules by using a deployment workflow. Automatically validate and add versioning to your reusable Bicep code.
+  Publish Azure template specifications and Bicep modules by using a deployment workflow. Automatically validate and add versioning to your reusable Bicep code.
 abstract: |
   After completing this module, you'll be able to:
     - Publish Bicep modules to a private registry from a GitHub Actions workflow
-    - Publish Bicep files to a template spec from a GitHub Actions workflow
-    - Automatically add version numbers to your modules and template specs
+    - Publish Bicep files to a template specification from a GitHub Actions workflow
+    - Automatically add version numbers to your modules and template specifications
 prerequisites: |
   You should be familiar with using:
 
   - Bicep modules and module registries.
-  - Azure template specs.
+  - Azure template specifications.
   - The Bicep linter, and testing your Bicep code.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
   - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
@@ -29,10 +29,10 @@ prerequisites: |
   
   To work through the exercises in the module, you'll need:
   
-  - An Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
+  - An Azure account that has the ability to create resource groups, Azure Active Directory applications, and service principals.
   - A GitHub account.
   
-  You'll also need the following installed locally:
+  You'll also need the following items installed locally:
   
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)

@@ -31,7 +31,7 @@ quiz:
     - content: |
         `az ts publish`
       isCorrect: false
-      explanation: Incorrect. You don't need to publish a template spec.
+      explanation: Incorrect. You don't need to publish a template specification.
     - content: |
         `az bicep publish`
       isCorrect: false
@@ -39,7 +39,7 @@ quiz:
     - content: |
         `az deployment group create`
       isCorrect: true
-      explanation: Correct. You should deploy the resources using the `az deployment group create` command.
+      explanation: Correct. You should deploy the resources by using the `az deployment group create` command.
   - content: Suppose your team uses a multipart versioning system. Which of the following changes to a Bicep file should result in a change to the *major* version number?
     choices:
     - content: You add a new variable.
