@@ -31,7 +31,7 @@ To access Azure Monitor Insights for Azure Virtual WAN:
 
 The Insights view displays the virtual WAN resources with color-coded symbols to indicate their status. When you select a resource, the Insights view is displayed.
 
-:::image type="content" source="../media/5-virtual-wan-resources.png" alt-text="Virtual WAN resources":::
+:::image type="content" source="../media/5-virtual-network-resources.png" alt-text="Virtual WAN resources":::
 
 The Insights view is diagrammatic, with each resource state color-coded. Metrics are displayed in a mini workbook on the right.
 

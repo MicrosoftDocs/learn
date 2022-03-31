@@ -32,9 +32,9 @@ For more information about the topics discussed in this module, see:
 
 [Route network traffic - tutorial - Azure portal | Microsoft Docs](/azure/virtual-network/tutorial-create-route-table-portal)
 
-[https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-troubleshoot](/azure/vpn-gateway/vpn-gateway-troubleshoot)
+[Troubleshoot VPN Gateway](/azure/vpn-gateway/vpn-gateway-troubleshoot)
 
-[https://docs.microsoft.com/azure/vpn-gateway/troubleshoot-vpn-with-azure-diagnostics](/azure/vpn-gateway/troubleshoot-vpn-with-azure-diagnostics)
+[Troubleshoot Azure VPN Gateway using diagnostic logs](/azure/vpn-gateway/troubleshoot-vpn-with-azure-diagnostics)
 
 [azure-docs/virtual-network-peering-overview.md at main · MicrosoftDocs/azure-docs · GitHub](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/virtual-network/virtual-network-peering-overview.md)
 

@@ -1,4 +1,4 @@
-ExpressRoute works over a private fiber-optic connection to provide a fast connection to Azure than would otherwise be possible over the internet. In this unit, you will learn how to troubleshoot issues you might encounter with ExpressRoute connectivity.
+ExpressRoute works over a private fiber-optic connection to provide a faster connection to Azure than would otherwise be possible over the internet. In this unit, you will learn how to troubleshoot issues you might encounter with ExpressRoute connectivity.
 
 The following diagram shows connectivity between your network (Customer network) and Azure (Microsoft Datacenter):
 
@@ -170,7 +170,7 @@ You can validate that routes are live and configurated correctly by testing peer
 
 1. To access this diagnostic tool, select **Diagnose and solve problems** from your ExpressRoute circuit in the Azure portal.
 
-:::image type="content" source="../media/3-diagnose-solve-problems.png" alt-text="Diagnose and solve problems from the ExpressRoute circuit in the Azure portal":::
+   :::image type="content" source="../media/3-diagnose-solve-problems.png" alt-text="Diagnose and solve problems from the ExpressRoute circuit in the Azure portal":::
 
 1. Select the **Connectivity issues**, under **Common Problems**.
 
@@ -186,7 +186,7 @@ You can validate that routes are live and configurated correctly by testing peer
 
 - Execute the [PsPing](/sysinternals/downloads/psping) test from your on-premises IP address to your Azure IP address and keep it running during the connectivity test.
 
-- Fill out the fields of the form, making sure to enter the same on-premises and Azure IP addresses used in <!--CE: Please check - I'm not sure what step 5 refers to.-->Step 5. Select **Submit** and wait for the results. When your results are ready, review the information for interpreting them below.
+- Fill out the fields of the form, making sure to enter the same on-premises and Azure IP addresses used previously. Select **Submit** and wait for the results. When your results are ready, review the information for interpreting them below.
 
    :::image type="content" source="../media/3-connectivity-test.png" alt-text="Screenshot of Connectivity test":::
 

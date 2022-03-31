@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-troubleshoot-virtual-wan-issues.md)]
+  [!include[](includes/5-troubleshoot-virtual-wide-area-network-issues.md)]

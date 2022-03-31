@@ -13,5 +13,5 @@ azureSandbox: true
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-exercise-cloud-hybrid-connectivity.md)]
+  [!include[](includes/6-exercise-troubleshoot-connectivity.md)]
 interactive: powershell

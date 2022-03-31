@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You want to test that peering connectivity has been configured correctly. Which option should you choose from the ExpressRoute circuit page?"
+  - content: "To test that peering connectivity has been configured correctly, which option should be chosen from the ExpressRoute circuit page?"
     choices:
     - content: "Connections"
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
     - content: "Configuration"
       isCorrect: false
       explanation: "That's incorrect. This option won't test whether peering connectivity has been configured correctly."
-  - content: "You're configuring peering connections between four VNets. You have created peering connections between VNetA and VNetB, between VNetB and VNetC, and between VNetC and VNetD. When you test the configuration, you find that everything works well, except between VNetA and VNetD. What is the cause of this problem?"
+  - content: "While configuring peering connections between four VNets, peering connections have been created between VNetA and VNetB, between VNetB and VNetC, and between VNetC and VNetD. When the configuration is tested, there is a connection problem between VNetA and VNetD. What is the cause of this problem?"
     choices:
     - content: "There's an error in one of the peerings. Check the configuration and retest"
       isCorrect: false
@@ -39,7 +39,7 @@ quiz:
     - content: "Peerings must have a bidirectional link. Create two links for each peering"
       isCorrect: false
       explanation: "That's incorrect. The error isn't due to a missing link."
-  - content: "You're troubleshooting failed connections on your WAN. On investigating the problem, you find that the Routing Status on your virtual hub is displaying \"Failed\". What should you do?"
+  - content: "While troubleshooting failed connections on a WAN, on investigating the problem, the Routing Status on the virtual hub is displaying \"Failed\". How can this be resolved?"
     choices:
     - content: "Reset both the router and the hub"
       isCorrect: false

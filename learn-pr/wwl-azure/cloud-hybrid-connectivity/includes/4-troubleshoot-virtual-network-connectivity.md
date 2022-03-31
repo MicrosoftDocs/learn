@@ -132,20 +132,18 @@ To troubleshoot a connectivity issue between peered virtual networks:
 
 If you're using a firewall or NVA:
 
-   1. Document the UDR parameters so that you can restore them after this step is complete.
+  1. Document the UDR parameters so that you can restore them after this step is complete.
 
-   1. Remove the UDR from the source VM subnet or NIC that points to the NVA as the next hop. Verify connectivity from the source VM directly to the destination that is bypassing the NVA.
+  1. Remove the UDR from the source VM subnet or NIC that points to the NVA as the next hop. Verify connectivity from the source VM directly to the destination that is bypassing the NVA.
 
-   1. Take a network trace:
+  1. Take a network trace:
+        - Start a network trace on the destination VM. For Windows, you can use **Netsh**. For Linux, use **TCPDump**.
+        - Run **TcpPing** or **PsPing** from the source to the destination IP. This is an example of a **TcpPing** command: 
 
-     - Start a network trace on the destination VM. For Windows, you can use **Netsh**. For Linux, use **TCPDump**.
+        ```console
+        tcping64.exe -t <destination VM address> 3389
+        ```
 
-     - Run **TcpPing** or **PsPing** from the source to the destination IP. This is an example of a **TcpPing** command: 
-
-      ```console
-      tcping64.exe -t <destination VM address> 3389
-
-      ```
 
   1. After the **TcpPing** is complete, stop the network trace on the destination. If packets arrive from the source, there is no networking issue. Examine both the VM firewall and the application listening on that port to locate the configuration issue.
 

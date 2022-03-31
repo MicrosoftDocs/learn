@@ -6,7 +6,7 @@ You’ll troubleshoot a name resolution problem in a later exercise. Use the fol
 In the sandbox to the right, follow these steps:
 
 ## Create the exercise environment
-Using the cloud shell on the right, run these commands to create the example topology.  The environment will take approximately 13 minutes to build.
+Using the Cloud Shell on the right, run these commands to create the example topology.  The environment will take approximately 13 minutes to build.
 
 1. Clone the setup script from GitHub.
 
@@ -17,7 +17,7 @@ Using the cloud shell on the right, run these commands to create the example top
 1. Run the setup script.
 
    ```console
-   bash networking/setup.sh
+   networking/setup.ps1
    ```
 
 1. The script will create all the resources. Wait until it completes, you should see a Lab Environment Created message.
