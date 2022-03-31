@@ -42,7 +42,7 @@ Using the cloud shell on the right, run these commands to create the example top
 
    - Choose backup policy: **DefaultPolicy-labdemo**
 
-    :::image type="content" source="../media/4-azure-backup-welcome.png" alt-text="Screen shot showing the back up welcome screen":::
+    :::image type="content" source="../media/4-azure-backup-welcome.png" alt-text="Screen shot showing the back up welcome screen.":::
 
 1. This takes you back to the **Virtual machines** page, select **labvm**.
 
@@ -50,7 +50,7 @@ Using the cloud shell on the right, run these commands to create the example top
 
 1. Select **Backup now**, and then select **OK**.
 
-    :::image type="content" source="../media/4-machine-backupscreen.png" alt-text="Screen shot showing the backup screen":::
+    :::image type="content" source="../media/4-machine-backupscreen.png" alt-text="Screen shot showing the backup screen.":::
    
 1. The backup starts, and runs in two phases.
 
