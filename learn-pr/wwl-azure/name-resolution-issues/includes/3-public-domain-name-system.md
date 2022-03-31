@@ -1,4 +1,4 @@
-## Troubleshoot issues with DNS records at public providers
+## Troubleshoot issues with Domain Name System (DNS) records at public providers
 
 Public DNS servers convert domain names to IP addresses to allow people to find web sites and other addresses on the internet. If your VM has internet connectivity, it will need to resolve names from public DNS servers. If you have problems with resolving names from public DNS servers, try the following:
 
@@ -10,7 +10,7 @@ Public DNS servers convert domain names to IP addresses to allow people to find 
 
 1. From a command prompt, run nslookup:
 
-   nslookup &lt;name&gt; &lt;IP address of the DNS server&gt;
+   nslookup *name IP address of the DNS server*;
 
    For example:
 
@@ -30,11 +30,11 @@ Public DNS servers convert domain names to IP addresses to allow people to find 
 
 1. Flush the resolver cache by running the dnscmd /clearcache command in an Elevated Command Prompt window:
 
-   - Right click Command Prompt and choose ‘Run as administrator’
+   - Right select Command Prompt and choose ‘Run as administrator’
 
-   Type dnscmd &lt;servername&gt; /clearcache
+   Type dnscmd *servername* /clearcache
 
-   The &lt;servername&gt; is its IP address, FQDN, or hostname. If omitted, the local server is used.
+   The *servername* is its IP address, FQDN, or hostname. If omitted, the local server is used.
 
    You can also use **ipconfig -flushdns** to clear the DNS cache.
 
@@ -48,7 +48,7 @@ Public DNS servers convert domain names to IP addresses to allow people to find 
 
 1. The [dig command](https://phoenixnap.com/kb/linux-dig-command-examples) (domain information groper) gives DNS information which is helpful in troubleshooting problems. It is a free utility which needs to be installed on Windows machines. To get dig information, run the following command:
 
-   dig &lt;domain name or IP&gt;
+   dig *domain name or IP*
 
    DIG displays the **status** of whether a query was successful.
 
@@ -77,7 +77,7 @@ Public DNS servers convert domain names to IP addresses to allow people to find 
 
    If running on a Windows machine:
 
-   tracert &lt;domain name or IP&gt;
+   tracert *domain name or IP*
 
 1. If the computer uses the ISP's DNS, and you cannot resolve the issue, contact the ISP.
 
@@ -137,7 +137,7 @@ Now you have the name servers, you can update the parent domain. Each registrar 
 
 The image shows an example DNS query, with contoso.net and partners.contoso.net in Azure DNS zones:
 
-:::image type="content" source="../media/3-dns-zones.png" alt-text="Diagram of a DNS query in the Azure DN zones.":::
+:::image type="content" source="../media/3-zones.png" alt-text="Diagram of a DNS query in the Azure DN zones.":::
 
 Each delegation has two copies of the NS records - one in the parent zone pointing to the child, and another in the child zone itself. The 'contoso.net' zone contains the NS records for 'contoso.net', in addition to the NS records in 'net'. These records are called authoritative NS records and they sit at the apex of the child zone.
 
@@ -177,7 +177,7 @@ expire = 604800 (7 days)
 
 default TTL = 300 (5 mins)
 
-## Review DNS audit logs
+## Review Domain Name System (DNS) audit logs
 
 Use DNS Analytics to help you to identify:
 

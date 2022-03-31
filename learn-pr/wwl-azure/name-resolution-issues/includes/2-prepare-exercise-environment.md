@@ -1,3 +1,9 @@
+1. Select **Sign in** to activate sandbox and sign in using your own credentials.
+
+1. Select **Review permissions**, read and accept to continue.
+
+1. Azure Cloud Shell will authenticate and build and you are ready to start the exercise.
+
 You’ll troubleshoot a name resolution problem in a later exercise. Use the following instructions and the Azure Cloud Shell on the right of the screen to create the environment for this exercise.
 
 > [!NOTE]
@@ -17,7 +23,7 @@ Using the Cloud Shell on the right, run these commands to create the example top
 1. Run the setup script.
 
    ```console
-   bash networking/setup.sh
+   networking/setup.ps1
    ```
 
 1. The script will create all the resources. Wait until it completes, you should see a Lab Environment Created message.

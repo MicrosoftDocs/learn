@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You want to analyze DNS audit logs. What is required to use DNS Analytics (Preview) for this task?"
+  - content: "When analyzing DNS audit logs. What is required to use DNS Analytics (Preview) for this task?"
     choices:
     - content: "Download Log Analytics from the Azure Marketplace"
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
     - content: "You can analyze data without installing any additional software"
       isCorrect: false
       explanation: "That's incorrect. You can't analyze DNS audit logs without installing any other software."
-  - content: "You're troubleshooting name resolution, and a colleague suggests you use digwebinterface. What problems does this third-party solution help with?"
+  - content: "When troubleshooting name resolution, a colleague suggests you use digwebinterface. What problems does this third-party solution help with?"
     choices:
     - content: "Removing cached name resolution"
       isCorrect: true

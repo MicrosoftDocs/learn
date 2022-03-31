@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-public-dns.md)]
+  [!include[](includes/3-public-domain-name-system.md)]

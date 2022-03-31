@@ -10,7 +10,7 @@ In this unit you will learn how to troubleshoot each of these methods.
 
 ## 2.1 Troubleshoot built-in Azure name resolution
 
-Built-in Azure name resolution provides basic authoritative DNS capabilities. DNS names and records are managed by Azure. Built-in Azure name resolution does not allow you to control the DNS names or the life cycle of DNS records.
+Built-in Azure name resolution provides basic authoritative Domain Name System (DNS) capabilities. DNS names and records are managed by Azure. Built-in Azure name resolution does not allow you to control the DNS names or the life cycle of DNS records.
 
 Azure built-in name resolution works with public DNS names and provides internal name resolution for VMs and role instances within the same virtual network or cloud service.
 
@@ -26,7 +26,7 @@ Built-in Azure name resolution has some limitations:
 
 - Host names must be DNS-compatible. Names must use only 0-9, a-z, and '-', and cannot start or end with a '-'.
 
-- DNS query traffic is throttled for each VM. Throttling shouldn't impact most applications. If request throttling is observed, ensure that client-side caching is enabled.
+- DNS query traffic is throttled for each virtual machine (VM). Throttling shouldn't impact most applications. If request throttling is observed, ensure that client-side caching is enabled.
 
 - Only VMs in the first 180 cloud services are registered for each virtual network in a classic deployment model. This limit does not apply to virtual networks in Azure Resource Manager.
 
@@ -34,7 +34,7 @@ Built-in Azure name resolution has some limitations:
 
 - Azure Dynamic Host Configuration Protocol (DHCP) provides an internal DNS suffix (.internal.cloudapp.net) to each VM. This suffix enables host name resolution because the host name records are in the internal.cloudapp.net zone.  
 
-## 2.2 Troubleshoot DNS private zones
+## 2.2 Troubleshoot Domain Name System (DNS) private zones
 
 Azure Private DNS allows you to manage and resolve domain names in a virtual network without the need to add a custom DNS solution. You can use custom domain names, rather than the Azure-provided names.  
 
@@ -42,9 +42,10 @@ DNS resolution using a private DNS zone works only from virtual networks that ar
 
 You can link a private DNS zone to one or more virtual networks by creating [virtual network links](/azure/dns/private-dns-virtual-network-links). You can also enable the [autoregistration](/azure/dns/private-dns-autoregistration) feature to automatically manage the life cycle of the DNS records for the virtual machines that get deployed in a virtual network. With autoregistration enabled, Azure DNS will update the zone record whenever a virtual machine gets created, changes its' IP address, or gets deleted. 
 
-NOTE: a Virtual Network can only have autoregistration enabled on one Private DNS Zone link. If you try to link two private DNS zones to the same VNet, only one of the links will be enabled for autoregistration.
+< [!NOTE] 
+< A Virtual Network can only have autoregistration enabled on one Private DNS Zone link. If you try to link two private DNS zones to the same VNet, only one of the links will be enabled for autoregistration.
 
-:::image type="content" source="../media/4-link-dns-zones.png" alt-text="Diagram of private DNS zones on the same Vnet.":::
+:::image type="content" source="../media/4-link-zones.png" alt-text="Diagram of private DNS zones on the same Vnet.":::
 
 There are limits on how many private DNS zones you can create, how many records sets, and records per record set.
 
@@ -94,7 +95,7 @@ To troubleshoot issues related to DNS records:
 
 1. CNAME record sets cannot have the same name as other record sets.
 
-1. Apex records consists of the ‘@’ character.
+1. Apex records consist of the ‘@’ character.
 
 1. The maximum number of records that can be created is shown in the Azure portal, under the 'Properties' for the zone. If you've reached this limit, then either delete some record sets or contact Azure Support to raise your record limit for this zone.
 
@@ -103,7 +104,7 @@ To troubleshoot issues related to DNS records:
 
 To troubleshoot resolving DNS records:
 
-1. Check that the fully qualified name, zone name, and record type is correct.
+1. Check that the fully qualified name, zone name, and record type are correct.
 
 1. Check that no DNS records have the same name, even if they are of different types.
 
@@ -140,7 +141,7 @@ Azure Private DNS zones have the following limitations:
 
 - Conditional forwarding isn't currently natively supported. To enable resolution between Azure and on-premises networks, see [Name resolution for VMs and role instances. ](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)
 
-## 2.3 Troubleshoot custom DNS configuration issues
+## 2.3 Troubleshoot custom Domain Name System (DNS) configuration issues
 
 As well as Azure in-built DNS, you also have the option to configure a custom DNS server. For example, you might want to integrate with on-premises Active Directory or resolve names between VNets.
 

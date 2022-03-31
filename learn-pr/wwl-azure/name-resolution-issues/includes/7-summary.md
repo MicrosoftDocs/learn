@@ -14,7 +14,7 @@ Now that you have completed this module you know how to troubleshoot:
 
 ## Resources
 
-For more information about the topics discussed in this module, see:
+For more information about the articles discussed in this module, see:
 
 ### Azure Built-in Name resolution
 
