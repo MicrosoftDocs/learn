@@ -28,12 +28,12 @@ quiz:
     - content: "The password hasn't had enough time to synchronize with Azure AD and the user is using a different password to the value stored in Azure AD."
       isCorrect: true
       explanation: "That's correct. The password might not have had enough time to synchronize with Azure AD and the user is using a different password to the value stored in Azure AD."
-  - content: "When should you install the Azure AD Connect Administration Agent?"
+  - content: "When should the Azure AD Connect Administration Agent be installed?"
     choices:
-    - content: "You should install it before errors occur."
+    - content: "Before errors occur."
       isCorrect: true
       explanation: "That's correct. The Azure AD Connect Administration Agent only starts logging once it has been installed."
-    - content: "You should install it soon after errors occur."
+    - content: "Soon after errors occur."
       isCorrect: false
       explanation: "That's incorrect. If you install Azure AD Connect Administration Agent soon after errors occur it will not report on the errors."
     - content: "The Azure AD Connect Administration Agent doesn't need to be installed"

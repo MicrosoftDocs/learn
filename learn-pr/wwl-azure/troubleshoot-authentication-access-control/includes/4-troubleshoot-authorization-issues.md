@@ -30,7 +30,7 @@ You can then select the event to view more details and the policy details for th
 
 The What If tool is also available to help with troubleshooting.
 
-Open the Azure portal, select **Azure Active Directory**, select **Conditional Access** then select **What If.** You can now add conditions and see which Conditional Access policies will be applied.
+Open the Azure portal, select **Azure Active Directory**, select **Conditional Access** then select **What If**. You can now add conditions and see which Conditional Access policies will be applied.
 
 For more information, see [Azure AD Conditional Access documentation](/azure/active-directory/conditional-access/).
 

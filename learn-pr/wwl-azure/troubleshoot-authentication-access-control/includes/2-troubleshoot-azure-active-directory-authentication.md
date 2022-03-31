@@ -25,7 +25,7 @@ When you enable SSPR, many prerequisites must be met:
 
 - You must be using an account with global administrator privileges.
 
-- You must enable SSPR. This is done in the Azure portal, in **Azure Active Directory**, in **Password reset.**
+- You must enable SSPR. This is done in the Azure portal, in **Azure Active Directory**, in **Password reset**.
 
 - In the **Password reset pages**, you must select all the methods that you wish to be available to users. These are:
 
@@ -89,7 +89,7 @@ The default access level is to allow access to all enterprise applications for e
 
 Troubleshoot issues where users become locked out of their account
 
-To protect the Azure AD domain, an account will be locked out after a defined number of incorrect login attempts. This could be caused by a brute force malicious attack, or by a user repeatedly entering the wrong password.
+To protect the Azure AD domain, an account will be locked out after a defined number of incorrect log-on attempts. This could be caused by a brute force malicious attack, or by a user repeatedly entering the wrong password.
 
 You should check whether a user could be using an incorrect password, or whether an app might be using an old or incorrect password. It may be that a password has recently changed in on-premises Active Directory Services (AD DS) and might not have had time to synchronize with Azure AD.
 
@@ -103,7 +103,7 @@ For more information on enabling security audits, see [Enable security audits fo
 
 When you've enabled security events, in the Azure portal, you can select **Monitor, Log Analytics workspaces**. Select your workspace then select **Logs**. You can then write queries using the Kusto querying language.
 
-To search for lockout entries, you should use the filter where **OperationName has "4740".**
+To search for lockout entries, you should use the filter where **OperationName has "4740"**.
 
 ![Screen shot of the create logs area.](../media/2-create-log.png)
 
