@@ -88,7 +88,7 @@ Combining augmented security rules with service tags or application security gro
 
 - **Service tags**: A service tag represents a group of IP address prefixes from a given Azure service. It helps to minimize the complexity of frequent updates on network security rules. Refer to [Azure service tags](/azure/virtual-network/service-tags-overview).
 
-- For an example of how to use the Storage service tag to restrict network access, go to: Tutorial - Restrict network access to PaaS resources with virtual network service endpoints using the Azure portal](https://docs.microsoft.com/azure/virtual-network/tutorial-restrict-network-access-to-resources).
+- For an example of how to use the Storage service tag to restrict network access, go to: Tutorial - [Restrict network access to PaaS resources with virtual network service endpoints using the Azure portal](/azure/virtual-network/tutorial-restrict-network-access-to-resources).
 
 - **[Application security groups](/azure/virtual-network/application-security-groups)**: Application security groups enable you to configure network security as a natural extension of an application's structure. This allows you to group virtual machines and define network security policies based on those groups. You can reuse your security policy at scale without manual maintenance of explicit IP addresses. To learn more, see Application security groups.
 
@@ -151,7 +151,7 @@ The **myVMVMNic2** network interface does not have a network security group asso
 > - Network interface: Learn how to [view a network interface](/azure/virtual-network/virtual-network-network-interface).
 > - NSG: Learn how to [view an NSG](/azure/virtual-network/manage-network-security-group).
 
-To run the commands using Powershell, refer to [Diagnose using PowerShell](/azure/virtual-network/diagnose-network-traffic-filter-problem).
+To run the commands using PowerShell, refer to [Diagnose using PowerShell](/azure/virtual-network/diagnose-network-traffic-filter-problem).
 
 To run the commands using Azure CLI, refer to [Diagnose using Azure CLI](/azure/virtual-network/diagnose-network-traffic-filter-problem).
 
@@ -181,7 +181,6 @@ To troubleshoot connectivity problems:
 
 The NSG flow logs feature in Azure Network Watcher allows you to log information about IP traffic flowing through an NSG. The flow data is sent to Azure Storage accounts and from there you can export it to any visualization tool, SIEM, or IDS.
 
-:::image type="content" source="../media/3-nsg-flow-logs.png" alt-text="Screenshot showing Network Watcher window that displays NSG flow logs.":::
 
 ## Why use flow logs?
 

@@ -360,11 +360,11 @@ To add a trusted root certificate, refer to [Upload a trusted root certificate](
 
 To remove a trusted root certificate:
 
-- Go to the point-to-site configuration page for your virtual network gateway.
+1. Go to the point-to-site configuration page for your virtual network gateway.
 
-- In the root certificate section of the page, locate the certificate that you want to remove.
+1. In the root certificate section of the page, locate the certificate that you want to remove.
 
-- Select the ellipsis next to the certificate, and then select **Remove**.
+1. Select the ellipsis next to the certificate, and then select **Remove**.
 
 ## Revoke a client certificate
 

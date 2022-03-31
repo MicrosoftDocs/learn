@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-troubleshoot-nsgs.md)]
+  [!include[](includes/4-troubleshoot-network-security-groups.md)]

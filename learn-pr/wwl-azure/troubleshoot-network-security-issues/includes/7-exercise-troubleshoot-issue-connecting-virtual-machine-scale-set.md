@@ -1,6 +1,6 @@
 You work as a support engineer supporting Azure infrastructure. You've been contacted by your web team about an issue with the website not responding. The web team have a pool of webservers behind a load balancer and public IP address.
 
-:::image type="content" source="../media/6-topology.png" alt-text="Screenshot of a network topology diagram showing a pool of webservers behind a load balancer.":::
+:::image type="content" source="../media/6-topology.png" alt-text="Screenshot of a network topology diagram showing a pool of webservers behind a load balancer." lightbox="../media/6-topology.png":::
 
 > [!IMPORTANT]
 > You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along. If you have not already run the script in unit 2, please do so now so you can follow the exercise below.
@@ -31,11 +31,11 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 1. Search for **Network security groups**.
 
-   :::image type="content" source="../media/6-search-nsg.png" alt-text="A screenshot showing the virtual machine scale set is detailed.":::
+   :::image type="content" source="../media/6-search-nsg.png" alt-text="A screenshot showing the virtual machine scale set is detailed." lightbox="../media/6-search-nsg.png":::
 
 1. Under **Services**, click **Network Security Groups**.
 
-:::image type="content" source="../media/6-no-network-security-groups.png" alt-text="A screenshot showing that in this environment there are no NSGs created.":::
+:::image type="content" source="../media/6-no-network-security-groups.png" alt-text="A screenshot showing that in this environment there are no NSGs created." lightbox="../media/6-no-network-security-groups.png":::
 
 ## Check the port rules for the scale set
 
@@ -44,9 +44,6 @@ In this exercise, you'll use what you've learned to go through steps to troubles
    :::image type="content" source="../media/6-search-virtual-machine-scale-sets.png" alt-text="Screenshot showing the scale sets.":::
 
 2. In the list, click **myScaleSet** to view the details.
-
-   :::image type="content" source="../media/6-my-scale-set.png" alt-text="A screenshot showing the current scale set selected.":::
-
 3. On the left, under **Settings**, click **Networking**.
 
    :::image type="content" source="../media/6-inbound-outbound-port-rules.png" alt-text="A screenshot of Networking selected, with inbound and outbound port rules highlighted.":::
@@ -66,7 +63,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 1. On the left, under **Settings**, click **Networking**.
 
-   :::image type="content" source="../media/6-network.png" alt-text="A screenshot showing the instances without NSG setup.":::
+   :::image type="content" source="../media/6-network.png" alt-text="A screenshot showing the instances without NSG setup." lightbox="../media/6-network.png":::
 
 1. There isn't an NSG being used by this instance.
 

@@ -44,9 +44,6 @@ In this exercise, you'll use what you've learned to go through steps to troubles
    :::image type="content" source="../media/6-search-virtual-machine-scale-sets.png" alt-text="A screenshot showing the virtual machine scale set is highlighted.":::
 
 2. In the list, click **myScaleSet** to view the details.
-
-   :::image type="content" source="../media/6-my-scale-set.png" alt-text="A screenshot showing the current scale set selected.":::
-
 3. On the left, under **Settings**, click **Networking**.
 
    :::image type="content" source="../media/6-inbound-outbound-port-rules.png" alt-text="A screenshot of Networking selected, with inbound and outbound port rules highlighted.":::
