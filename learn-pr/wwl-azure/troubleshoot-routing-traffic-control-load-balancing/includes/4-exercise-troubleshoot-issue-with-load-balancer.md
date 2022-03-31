@@ -4,9 +4,6 @@ You work as a support engineer supporting Azure infrastructure. You've been cont
 
 In this exercise, you'll use what you've learned to go through steps to troubleshoot the connection issues to the virtual machines.
 
-> [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
-
 ## Create the exercise environment
 
  Use the Cloud Shell on the right run these commands to create the example topology.  It will take approximately 3 minutes to build the environment.
