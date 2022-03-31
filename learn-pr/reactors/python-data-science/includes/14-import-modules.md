@@ -47,5 +47,5 @@ You can add more cells to your notebook by selecting **insert cell below (+)** a
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> You'll use several Python modules regularly in conducting data science in Python. So, understanding how to import them is essential, especially in this training.
+> You'll use several Python modules regularly in conducting data science in Python, so understanding how to import them is essential, especially in this training.
 >
