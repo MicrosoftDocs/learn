@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.troubleshoot-issues-just-time-vm-access
-title: Troubleshoot issues with just in time VM access
+title: Troubleshoot issues with just in time virtual machine access
 metadata:
-  title: Troubleshoot issues with just in time VM access
-  description: "Troubleshoot issues with just in time VM access"
+  title: Troubleshoot issues with just in time virtual machine access
+  description: "Troubleshoot issues with just in time virtual machine access"
   ms.date: 03/31/2022
   author: wwlpublish
   ms.author: lola

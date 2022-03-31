@@ -28,15 +28,15 @@ quiz:
     - content: "Just-in-time VM access."
       isCorrect: true
       explanation: "That's correct. There's a cost associated with Microsoft Defender for Cloud enhanced security. However, when it's enabled in a subscription, there are no additional charges to provide JIT access on each VM."
-  - content: "Where do you enable the enhanced security features for Microsoft Defender for Cloud?"
+  - content: "Where are the enhanced security features for Microsoft Defender for Cloud enabled?"
     choices:
-    - content: "You enable this on the resource group that you want to protect."
+    - content: "They are enabled on the resource group to be protected."
       isCorrect: false
       explanation: "That's incorrect. Microsoft Defender for Cloud is not configured at the resource group level."
-    - content: "You enable this on each VM you want to access securely."
+    - content: "They are enabled on each VM that needs to be accessed securely."
       isCorrect: true
-      explanation: "That's correct. You can't enable the enhanced features of Microsoft Defender for Cloud at the VM."
-    - content: "You enable this in the subscription section of the Azure portal."
+      explanation: "That's correct. Enable the enhanced features of Microsoft Defender for Cloud at the VM."
+    - content: "They are enabled in the subscription section of the Azure portal."
       isCorrect: false
       explanation: "That's incorrect. Microsoft Defender for Cloud is enabled at the subscription level, but not the enhanced security features."
   - content: "Which VM connection method has a connection troubleshoot wizard?"

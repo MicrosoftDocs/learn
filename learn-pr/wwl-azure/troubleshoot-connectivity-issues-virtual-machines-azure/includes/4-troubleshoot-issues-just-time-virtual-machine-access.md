@@ -26,7 +26,7 @@ You can enable JIT access from the VM connection pane, from Workload protections
 
 1. Select **Just-in-time VM** access.
 
-:::image type="content" source="../media/select-just-time-access-workload-protections.png" alt-text="A screenshot showing selecting Workload protections, and then selecting Just-in-time VM access.":::
+    :::image type="content" source="../media/select-just-time-access-workload-protections.png" alt-text="A screenshot showing selecting Workload protections, and then selecting Just-in-time VM access.":::
 
 You can then select the **Not Configured** tab to show all the VMs in your subscription that don’t have JIT access enabled.
 
@@ -36,7 +36,7 @@ Select the check next to the VM you want to protect.
 
 Select **Enable JIT** on 1 VM.
 
-This page can also help you diagnose your VMs that aren’t supported by JIT VM access. The VMs having problems will likely have been deployed without using the Azure Resource Manager (ARM). Only VMs deployed through ARM are supported by JIT access.
+This page can also help you diagnose your VMs that aren’t supported by JIT VM access. The VMs having problems will likely have been deployed without using the Azure Resource Manager. Only VMs deployed through Azure Resource Manager are supported by JIT access.
 
 ## Access
 

@@ -20,4 +20,4 @@ For more information about the topics discussed in this module, see:
 
 [https://docs.microsoft.com/azure/bastion/diagnostic-logs](/azure/bastion/diagnostic-logs)
 
-[https://docs.microsoft.com/azure/bastion/bastion-overview](/azure/bastion/bastion-overviewy)
+[https://docs.microsoft.com/azure/bastion/bastion-overview](/azure/bastion/bastion-overview)
