@@ -30,7 +30,5 @@ Use these resources to discover more.
 
 [Troubleshoot outbound SMTP connectivity problems in Azure](/azure/virtual-network/troubleshoot-outbound-smtp-connectivity)
 
-[Troubleshoot Azure Private Link connectivity problems](https:/docs.microsoft.com/azure/private-link/troubleshoot-private-link-connectivity)
-
 [Integrate Azure services with virtual networks for network isolation](/azure/virtual-network/vnet-integration-for-azure-services)
 
