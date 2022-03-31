@@ -142,10 +142,11 @@ When you register to a vault, if you get an error message saying invalid vault c
 - Check to see if c:\windows\temp has more than 65000 files. Move stale files to another location or delete the items in the Temp folder.
 
 - Check the status of certificates.
-  - a. In Control Panel, open **Manage Computer Certificates**.
-  - b. Expand the **Personal** node and its child node **Certificates**.
-  - c. Remove the certificate **Windows Azure Tools**.
-  - d. Retry the registration in the Azure Backup client.
+
+  1. In Control Panel, open **Manage Computer Certificates**.
+  1. Expand the **Personal** node and its child node **Certificates**.
+  1. Remove the certificate **Windows Azure Tools**.
+  1. Retry the registration in the Azure Backup client.
 
 - Check to see if a group policy is in place.
 

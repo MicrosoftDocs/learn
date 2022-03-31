@@ -50,7 +50,7 @@ Using the cloud shell on the right, run these commands to create the example top
 
 1. Select **Backup now**, and then select **OK**.
 
-    :::image type="content" source="../media/4-vm1-backupscreen.png" alt-text="Screen shot showing the backup screen":::
+    :::image type="content" source="../media/4-machine-backupscreen.png" alt-text="Screen shot showing the backup screen":::
    
 1. The backup starts, and runs in two phases.
 
@@ -84,8 +84,7 @@ When the first phase has completed, you can see that it is **Crash Consistent**.
     
     1. Scroll down until you see **labvm** and select **labvm**. This shows that the backup is **Crash Consistent**. This is incorrect, the backup should be **Application Consistent**. You need to find out why, and fix the problem.
 
-    > ![NOTE]
-    > Only the first phase has completed, and the data will now be transferring to the vault. You can continue with the lab; you don't have to wait for this to complete.
+        - Only the first phase has completed, and the data will now be transferring to the vault. You can continue with the lab; you don't have to wait for this to complete.
 
     :::image type="content" source="../media/4-backup-screen.png" alt-text="Screenshot of the backup screen."
  
