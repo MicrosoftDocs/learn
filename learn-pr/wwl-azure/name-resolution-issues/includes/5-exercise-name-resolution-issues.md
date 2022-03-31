@@ -47,7 +47,7 @@ Nslookup on VM3 gives these results:
 
 ## Diagnosis
 
-### Examine the Internet Protocol (IP) configuration of the Virtual Machines (VMs)
+### Examine the Internet Protocol configuration of the Virtual Machines
 
 Connect to each VM using Remote Desktop. Open a command prompt window and type: ipconfig /all
 
@@ -89,7 +89,7 @@ Go to **Settings** > **Virtual network links**. We see that the private DNS zone
 
 ## Resolution
 
-### Link the private Domain Name System (DNS) zone to Virtual Network 2 (VNet2)
+### Link the private Domain Name System zone to Virtual Network 2
 
 Navigate to the private DNS zone (contoso.com) and select the Virtual network links page. Add a new link.
 
@@ -107,7 +107,7 @@ Navigate to the private DNS zone (contoso.com) and select the Virtual network li
 
 After you select OK, it may take a few minutes for the link to be created. Select Refresh occasionally to see the latest status. Wait until the link status says Completed.
 
-### Inspect the Domain Name System (DNS) name table
+### Inspect the Domain Name System name table
 
 Navigate to the Overview page and inspect the DNS name table.
 

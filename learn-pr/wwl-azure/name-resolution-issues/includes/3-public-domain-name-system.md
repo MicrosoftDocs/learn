@@ -1,4 +1,4 @@
-## Troubleshoot issues with Domain Name System (DNS) records at public providers
+## Troubleshoot issues with Domain Name System records at public providers
 
 Public DNS servers convert domain names to IP addresses to allow people to find web sites and other addresses on the internet. If your VM has internet connectivity, it will need to resolve names from public DNS servers. If you have problems with resolving names from public DNS servers, try the following:
 
@@ -52,7 +52,7 @@ Public DNS servers convert domain names to IP addresses to allow people to find 
 
    DIG displays the **status** of whether a query was successful.
 
-   The **ANSWER SECTION** shows a response to a request sent in the **QUESTION SECTION.**
+   The **ANSWER SECTION** shows a response to a request sent in the **QUESTION SECTION**.
 
    The **SERVER** displays the address for the public DNS server.
 
@@ -177,7 +177,7 @@ expire = 604800 (7 days)
 
 default TTL = 300 (5 mins)
 
-## Review Domain Name System (DNS) audit logs
+## Review Domain Name System audit logs
 
 Use DNS Analytics to help you to identify:
 

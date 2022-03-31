@@ -34,7 +34,7 @@ Built-in Azure name resolution has some limitations:
 
 - Azure Dynamic Host Configuration Protocol (DHCP) provides an internal DNS suffix (.internal.cloudapp.net) to each VM. This suffix enables host name resolution because the host name records are in the internal.cloudapp.net zone.  
 
-## 2.2 Troubleshoot Domain Name System (DNS) private zones
+## 2.2 Troubleshoot Domain Name System private zones
 
 Azure Private DNS allows you to manage and resolve domain names in a virtual network without the need to add a custom DNS solution. You can use custom domain names, rather than the Azure-provided names.  
 
@@ -141,7 +141,7 @@ Azure Private DNS zones have the following limitations:
 
 - Conditional forwarding isn't currently natively supported. To enable resolution between Azure and on-premises networks, see [Name resolution for VMs and role instances. ](/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances)
 
-## 2.3 Troubleshoot custom Domain Name System (DNS) configuration issues
+## 2.3 Troubleshoot custom Domain Name System configuration issues
 
 As well as Azure in-built DNS, you also have the option to configure a custom DNS server. For example, you might want to integrate with on-premises Active Directory or resolve names between VNets.
 

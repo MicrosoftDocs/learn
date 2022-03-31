@@ -28,7 +28,7 @@ quiz:
     - content: "You can analyze data without installing any additional software"
       isCorrect: false
       explanation: "That's incorrect. You can't analyze DNS audit logs without installing any other software."
-  - content: "When troubleshooting name resolution, a colleague suggests you use digwebinterface. What problems does this third-party solution help with?"
+  - content: "When troubleshooting name resolution, a colleague suggests the use of the digwebinterface. What problems does this third-party solution help with?"
     choices:
     - content: "Removing cached name resolution"
       isCorrect: true
