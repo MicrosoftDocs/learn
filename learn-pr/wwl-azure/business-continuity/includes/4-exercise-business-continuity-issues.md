@@ -1,12 +1,21 @@
-You have been asked to make a backup of a virtual machine. The backup must be application consistent.
-
 > [!IMPORTANT]
 > You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
 ## Create the exercise environment
+1. You have been asked to make a backup of a virtual machine. The backup must be application consistent.
+1. Select **Sign in** to activate sandbox and sign in using your own credentials.
+
+    :::image type="content" source="../media/4-sandbox-sign-in.png" alt-text="Screen shot showing the Azure sign in screen"::: 
+
+1. Select **Review permissions**, read and accept to continue.
+
+    :::image type="content" source="../media/4-review-permission.png" alt-text="Screen shot showing review permissions button."::: 
+
+1.  Azure Cloud Shell will authenticate and build and you are ready to start the exercise.
+
 Using the cloud shell on the right, run these commands to create the example topology. The environment will take approximately 5 minutes to build.
 
-1. Clone the setup script from GitHub.
+.Clone the setup script from GitHub.
 
     ```console
     git clone https://github.com/MicrosoftDocs/mslearn-business-continuity networking
@@ -19,6 +28,8 @@ Using the cloud shell on the right, run these commands to create the example top
     ```
 
 1. The script will create all the resources. Wait until it completes, you should see a **Lab Environment Created** message.
+
+    :::image type="content" source="../media/4-lab-created.png" alt-text="Screen shot showing the lab environment created message."::: 
 
 ## Create a backup
 
