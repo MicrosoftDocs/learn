@@ -1,5 +1,4 @@
-> [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
+In this exercise you'll troubleshoot connection issues between virtual machines running in Azure.
 
 ## Create the exercise environment
 Using the Cloud Shell on the right, run these commands to create the example topology.  The environment will take approximately 5 minutes to build.
