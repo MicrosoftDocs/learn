@@ -3,13 +3,13 @@ uid: learn.wwl.manage-azure-stack-hub-marketplace
 metadata:
   title: Manage Azure Stack Hub Marketplace
   description: "Manage Azure Stack Hub Marketplace"
-  ms.date: 12/10/2021
+  ms.date: 03/30/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage Azure Stack Hub Marketplace
-summary: 'Azure Stack Hub Marketplace is used to create resources, deploy apps, and choose items. This learning path help you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
+summary: 'Azure Stack Hub Marketplace is used to create resources, deploy apps, and choose items. This learning path helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
 abstract: |
   * Provide an overview of Azure Stack Hub Marketplace.
   * Download Marketplace items to Azure Stack Hub.
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   * Conceptual knowledge of Azure compute solutions.
   * Working experience with virtual machines, containers, and app service.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-manage-azure-stack-hub-marketplace.svg
 levels:
 - advanced
 roles:
