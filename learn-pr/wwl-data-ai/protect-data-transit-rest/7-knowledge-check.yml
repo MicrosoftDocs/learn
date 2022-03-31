@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/11/2022
+  ms.date: 03/31/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -39,17 +39,17 @@ quiz:
     - content: "Transparent Data Encryption"
       isCorrect: false
       explanation: "Incorrect. TDE does not encrypt the data in the tables."
-  - content: "Which is a valid location for Always Encrypted keys?"
+  - content: "Which TLS version offers the most secure option for encryption?"
     choices:
-    - content: "Azure Key Vault"
+    - content: "TLS 1.1 version"
+      isCorrect: false
+      explanation: "Incorrect. TLS 1.1 version is not the most secure option for encryption."
+    - content: "TLS 1.0 version"
+      isCorrect: false
+      explanation: "Incorrect. TLS 1.0 version is not the most secure option for encryption."
+    - content: "TLS 1.2 version"
       isCorrect: true
-      explanation: "Correct. Azure Key Vault allows for the storage of both Always Encrypted and TDE keys."
-    - content: "Azure Automation"
-      isCorrect: false
-      explanation: "Incorrect. Azure Automation does have credentials, but does not support key storage."
-    - content: "Azure Blob Storage"
-      isCorrect: false
-      explanation: "Incorrect. Azure Blob Storage does not support key storage."
+      explanation: "Correct. TLS 1.2 version is the most secure TLS version."
   - content: "Which feature provides a private IP address for an Azure SQL Database?"
     choices:
     - content: "Network Endpoints"

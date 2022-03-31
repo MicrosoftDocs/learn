@@ -1,16 +1,13 @@
-This module explores the encryption options available within Microsoft SQL Server, Azure SQL Database, Azure Database for MySQL and Azure Database for PostgreSQL. Each of the various platforms support different database encryption options. In this module students will explore these data encryption options and how to configure them.
-
-This module also explores the practices of securing the firewalls of an Azure SQL Server. Furthermore it will show you how Always Encrypted is used to protect data in transit.
+This module explores the encryption options available within Microsoft SQL Server, Azure SQL Database and Azure SQL Managed Instance. Each of the various platforms support different database encryption options. In this module students will explore these data encryption options and how to configure them.
 
 ## Learning objectives
 
 After taking this module, you will:
 
-- Understand the difference between database and instance firewalls in Azure SQL Database
+- Understand the difference between server and database firewall rules in Azure SQL Database
 - Understand the data encryption options available in the various platforms
 - Understand the role of Azure Key Vault in Transparent Data Encryption
-- Understand what Always Encrypted Enclaves are used for
-- Understand what Dynamic Data Masking is used for and how to configure it
+- Explain how to enable encrypted connections
 
 ## Pre-requisites
 
