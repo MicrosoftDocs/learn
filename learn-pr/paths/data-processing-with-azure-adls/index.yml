@@ -2,16 +2,17 @@
 uid: learn.data-ai.data-processing-with-azure-adls
 metadata:
   title: Large-Scale Data Processing with Azure Data Lake Storage Gen2
-  description: With this learning path, you'll use Azure Data Lake Storage to process your Big Data efficiently and easily while also being protected by Azure’s host of security features.
-  brand: azure
-  ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chtestao
+  description: Large-Scale Data Processing with Azure Data Lake Storage Gen2
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Large-Scale Data Processing with Azure Data Lake Storage Gen2
-summary: In this learning path, you will see how Azure Data Lake Storage can make processing Big Data analytical solutions more efficient and how easy it is to set up. You will also explore how it fits into common architectures, as well as the different methods of uploading the data to the data store. You will finally examine the myriad of security features that will ensure your data is secure.
-prerequisites: None
+prerequisites: |
+  None.
+summary: |
+  In this learning path, you will see how Azure Data Lake Storage can make processing Big Data analytical solutions more efficient and how easy it is to set up. You will also explore how it fits into common architectures, as well as the different methods of uploading the data to the data store. You will finally examine the myriad of security features that will ensure your data is secure.
 iconUrl: /learn/achievements/data-ai/data-processing-with-azure-adls-trophy.svg
 levels:
 - beginner

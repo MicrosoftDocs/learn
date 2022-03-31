@@ -4,7 +4,7 @@ When you start learning any programming language, you first try out a few statem
 
 To create a program in Python, you need to store it in a file. The file should have the extension *.py*.
 
-The idea of a program is to do something, carry out a task. To have the program do something, you need to add statements of code that perform instructions. An instruction could print some text or calculate something, for example. An example program can look something like this:
+The idea of a program is to do something, to carry out a task. To have the program do something, you need to add statements of code that perform instructions. An instruction could print some text or perform a calculation, for example. An example program can look like this:
 
 ```python
 # program.py
@@ -14,7 +14,7 @@ print(sum)
 
 ### Run a program
 
-Assume that you created a program that consists of statements. You run it by invoking the Python executable program, followed by the name of your program. Here's an example of such an invocation:
+Assume you created a program that consists of statements. You'd run it by invoking the Python executable program, followed by the name of your program. Here's an example of such an invocation:
 
 ```bash
 python3 program.py
@@ -28,15 +28,15 @@ Running such a program would show the following result on the console:
 
 ## The print() function
 
-One of the first things you're likely to do is print to a console. A console is a command-line application that lets you interact with the operating system. On the console, you can run commands and programs. You can also enter information and show information as text on the screen. 
+One of the first things you're likely to do is print to a console. A console is a command-line application that lets you interact with the operating system. On the console, you can run commands and programs. You can also enter information and show information as text on the screen.
 
-To write information to the console, you can use the function `print()` and implement it as a core function. Because it's a core function, you'll have access to it if Python is installed. To use `print()`, give it an argument:
+To write information to the console, you can use the `print()` function and implement it as a core function. Because it's a core function, you'll have access to it if Python is installed. To use `print()`, give it an argument:
 
 ```python
 print("show this in the console")
 ```
 
-Note how the preceding command invokes `print()` by using parentheses. That's how you invoke a function. If you used square brackets (`[]`) instead of parentheses, it wouldn't work:
+Note how the preceding command invokes `print()` by using parentheses. That's how you invoke a function. If you used square brackets (`[]`) instead of parentheses, it wouldn't work, as you'll notice if you run this code:
 
 ```bash
 python3 program.py
@@ -55,7 +55,7 @@ Another thing to notice is the use of double quotation marks (`""`). That's how 
 
 ## Variables
 
-To get anywhere with coding, you need to understand that you're operating on data. As your program is working on data, you might need to remember a certain value throughout the program's execution. For that, you use variables. 
+To get anywhere with coding, you need to understand that you're operating on data. As your program is working on data, you might need to remember a certain value throughout the program's execution. For that, you'll use variables.
 
 The following example makes a calculation and stores it in variables:
 
@@ -67,9 +67,9 @@ print(product)
 
 ### Data types
 
-A variable assumes a data type. In the preceding program, `sum` gets the type `int`. But there are many more data types. Here are a few that you're likely to encounter:
+A variable assumes a data type. In the preceding program, `sum` gets the type `int`. However, there are many more data types. Here are a few that you're likely to encounter:
 
-| Type          | Description                                | Example                     |
+| Type          | Description                                | Example(s)                     |
 | ------------- | ------------------------------------------ | --------------------------- |
 | Numeric type | Number, with or without decimals | `int, float, complex, no = 3` |
 | Text type    | String of characters      | `str = "a literal string"`    |
@@ -118,11 +118,11 @@ This example uses a slash (`/`) to divide the `left_side` value by the `right_si
 
 There are many more operators. This unit describes some important ones you're likely to encounter.
 
-Python uses two types of operators: arithmetic and assignment.
+Python uses two types of operators: *arithmetic* and *assignment*.
 
 ### Arithmetic operators
 
-With arithmetic operators, you perform calculations like addition, subtraction, division, and multiplication. Here's a subset of arithmetic operators that you can use:
+With *arithmetic* operators, you perform calculations like addition, subtraction, division, and multiplication. Here's a subset of arithmetic operators you can use:
 
 | Type | Description                                                                        | Example |
 | ---- | ---------------------------------------------------------------------------------- | ------- |
@@ -133,7 +133,7 @@ With arithmetic operators, you perform calculations like addition, subtraction, 
 
 ### Assignment operators
 
-Assignment operators are used to assign values to a variable throughout the lifecycle of the variable. Here are some assignment operators that you're likely to encounter as you're learning to build programs:
+You can use *assignment* operators to assign values to a variable throughout the lifecycle of the variable. Here are some assignment operators you're likely to encounter as you're learning to build programs:
 
 | Operator | Example                                                                     |
 | -------- | --------------------------------------------------------------------------- |
@@ -147,11 +147,11 @@ Assignment operators are used to assign values to a variable throughout the life
 
 When you're building programs, you're likely to interact with dates. A date in a program usually means both the calendar date and the time.
 
-A date can be used in various applications, like these examples:
+You can use a date in various applications, like these examples:
 
 - **Backup file**. Using a date as part of a backup file's name is a good way to indicate when a backup was made and when it needs to be made again.
 - **Condition**. You might want to carry a specific logic when there's a certain date.
-- **Metric**. Dates are used to check performance on code to, for example, measure the time it takes to execute a function.
+- **Metric**. Dates are used to check performance on code to (for example) measure the time it takes to execute a function.
 
 To work with a date, you need to import the `date` module:
 
@@ -173,7 +173,7 @@ print(date.today())
 
 ### Data type conversion
 
-You want to use a date with something. That something is usually a string. If you, for example, want to show today's date on the console, you might run into a problem:
+You want to use a date with something, usually a string. If you, for example, want to show today's date on the console, you might run into a problem:
 
 ```python
 print("Today's date is: " + date.today())
@@ -188,9 +188,9 @@ Traceback (most recent call last):
 TypeError: can only concatenate str (not "datetime.date") to str
 ```
 
-The last row of the message tells you what the problem is. You're trying to use the `+` operator and combine two different data types, a string and a date. 
+The last row of the message identifies the problem. You're trying to use the `+` operator and combine two different data types, a string and a date.
 
-To make this code work, you need to convert the date into a string. You accomplish such a conversion by using the utility function `str()`: 
+To make this code work, you need to convert the date into a string, which you can accomplish with the utility function `str()`:
 
 ```python
 print("Today's date is: " + str(date.today()))
