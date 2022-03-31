@@ -13,5 +13,5 @@ azureSandbox: true
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/7-exercise-troubleshoot-paas-connection.md)]
+  [!include[](includes/7-exercise-troubleshoot-connection.md)]
 interactive: bash

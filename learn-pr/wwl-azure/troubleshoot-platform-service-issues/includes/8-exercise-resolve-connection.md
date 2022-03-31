@@ -7,7 +7,7 @@
 
 1. Select **LabVM**.
 
-1. In Settings, **select Networking.**
+1. In Settings, **select Networking**.
 
    :::image type="content" source="../media/8-exercise-1-settings-networking.png" alt-text="Screen shot showing the networking option.":::
 
@@ -15,7 +15,7 @@
 
    :::image type="content" source="../media/8-exercise-1-add-inbound-port-rule.png" alt-text="Screen shot showing the add inbound rule button.":::
 
-1. On the Add inbound security rule blade, type or select the following values:
+1. On the Add inbound security rule tab, type or select the following values:
 
    1. **Destination port ranges: 22**
 
@@ -31,13 +31,13 @@
 
 1. In **Settings**, select **Connect**.
 
-1. Select **Test your connection.**
+1. Select **Test your connection**.
 
    :::image type="content" source="../media/8-exercise-1-test-connection-button.png" alt-text="screen shot showing the test connection button.":::
 
-1. Select **Test connection.**
+1. Select **Test connection**.
 
 1. Notice that connectivity is now allowed and you've resolved the connectivity issue.
 
-:::image type="content" source="../media/8-exercise-1-network-connectivity-allowed.png" alt-text="Screen shot showing that connectivity is now allowed.":::
+   :::image type="content" source="../media/8-exercise-1-network-connectivity-allowed.png" alt-text="Screen shot showing that connectivity is now allowed.":::
 

@@ -28,18 +28,18 @@ quiz:
     - content: "Proactively troubleshoot to prevent the escalation of a problem."
       isCorrect: true
       explanation: "That's correct. It's better to proactively troubleshoot and prevent a problem from escalating."
-  - content: "How does Azure Private Link connect from your private network to Azure PaaS services?"
+  - content: "How does Azure Private Link connect from a private network to Azure PaaS services?"
     choices:
     - content: "Over the Internet."
       isCorrect: false
       explanation: "That's incorrect. Azure Private Link doesn't use the public Internet."
     - content: "Over the Microsoft backbone network."
       isCorrect: true
-      explanation: "That's correct. Azure Private Link provides a link from your virtual network to the Azure PaaS services over the Microsoft backbone network rather than over the public Internet."
+      explanation: "That's correct. Azure Private Link provides a link from a virtual network to the Azure PaaS services over the Microsoft backbone network rather than over the public Internet."
     - content: "Over a private satellite network."
       isCorrect: false
       explanation: "That's incorrect. Azure Private Link isn't a satellite network."
-  - content: "If a new CDN service isn't available, what should you do."
+  - content: "If a new CDN service isn't available, how should this be resolved?"
     choices:
     - content: "Ensure that files for compression are less than 10 MB in size."
       isCorrect: false
@@ -50,7 +50,7 @@ quiz:
     - content: "Delete the CDN and recreate it."
       isCorrect: false
       explanation: "That's incorrect. The CDN might have been deployed correctly."
-  - content: "If you can't access an application running on a target VM, what should you do?"
+  - content: "If an application running on a target VM can't be accessed, how can this be resolved?"
     choices:
     - content: "Verify that you aren't blocked by NSGs."
       isCorrect: false

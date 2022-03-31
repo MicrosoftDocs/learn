@@ -13,5 +13,5 @@ azureSandbox: true
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/8-exercise-resolve-paas-connection.md)]
+  [!include[](includes/8-exercise-resolve-connection.md)]
 interactive: powershell

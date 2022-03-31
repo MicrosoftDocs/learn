@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-troubleshoot-integration-of-paas-services-with-virtual-networks.md)]
+  [!include[](includes/6-troubleshoot-integration-with-virtual-networks.md)]

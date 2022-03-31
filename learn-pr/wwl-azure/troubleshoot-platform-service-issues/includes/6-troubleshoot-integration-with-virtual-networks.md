@@ -4,7 +4,7 @@ When you delegate a subnet to an Azure service, you allow that service to perfor
 
 If a customer cannot configure a particular property, it is likely that the deployment model for that Azure service has been defined to not support changes to that property.
 
-## Integration of PaaS services with virtual networks
+## Integration of platform-as-a-service services with virtual networks
 
 Azure services can have their network access limited to your virtual network infrastructure including peered virtual networks and on-premises networks. This is defined per Azure service.
 
@@ -16,7 +16,7 @@ If the Azure service is not accessible, consider the following points:
 
 - Virtual network service tags allow you to deny traffic to your Azure service to or from public endpoints. In the following diagram all traffic to Azure Storage and Azure SQL Database is allowed, but any other outbound traffic is denied.
 
-:::image type="content" source="../media/6-deny-outbound-traffic.png" alt-text="Deny most outbound traffic.":::
+   :::image type="content" source="../media/6-deny-outbound-traffic.png" alt-text="Deny most outbound traffic.":::
 
 ## Troubleshoot Azure Private Endpoint connectivity problems
 
@@ -24,7 +24,7 @@ Perform the following steps to Troubleshoot Azure Private Endpoint connectivity 
 
 - In [Private Link Center](https://portal.azure.com/), select **Private endpoints**, and select the endpoint that you want to troubleshoot.
 
-   :::image type="content" source="../media/6-private-link-center.png" alt-text="[Private Link Center.":::
+   :::image type="content" source="../media/6-private-link-center.png" alt-text="Private Link Center.":::
 
 - Verify that the connection is approved and that the IP address and DNS settings are correct.
 

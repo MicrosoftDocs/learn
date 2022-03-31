@@ -1,6 +1,6 @@
 When troubleshooting connections between a virtual machine (VM) and a PaaS service it is important to assess whether a problem is due to the VM, the PaaS service, a network issue, or an issue with a specific service, such as email or Microsoft Graph.
 
-## Connecting to an application running on an Azure VM
+## Connecting to an application running on an Azure virtual machine
 
 To troubleshoot connectivity to an application running in an Azure VM, perform the following steps:
 
