@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-platform-service-issues.troubleshoot-paas-services
+title: Troubleshoot Azure Storage
+metadata:
+  title: Troubleshoot Azure Storage
+  description: "Troubleshoot Azure Storage"
+  ms.date: 03/31/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-troubleshoot-azure-storage.md)]
