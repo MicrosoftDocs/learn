@@ -14,8 +14,8 @@ You'd typically use a SAS for a service where users read and write their data to
 
 * Clients upload and download data through a front-end proxy service, which performs authentication. This front-end proxy service has the advantage of allowing validation of business rules. But, if the service must handle large amounts of data or high-volume transactions, you might find it complicated or expensive to scale this service to match demand.
 
-    ![A client-side diagram.](../media/4-client-flowchart.png)
+![A client-side diagram.](../media/4-client-flowchart.png)
 
 * A lightweight service authenticates the client, as needed. Next, it generates a SAS. After receiving the SAS, the client can access storage account resources directly. The SAS defines the client's permissions and access interval. It reduces the need to route all data through the front-end proxy service.
 
-    ![A server-side diagram.](../media/4-server-flowchart.png)
+![A server-side diagram.](../media/4-server-flowchart.png)

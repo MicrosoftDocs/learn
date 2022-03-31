@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-stack-hub-registration
 metadata:
   title: Manage Azure Stack Hub registration
   description: "Manage Azure Stack Hub registration"
-  ms.date: 12/07/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   * Working experience creating, assigning, and securing corporate identities.
   * Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/3-manage-azure-stack-hub-registration.svg
 levels:
 - advanced
 roles:
