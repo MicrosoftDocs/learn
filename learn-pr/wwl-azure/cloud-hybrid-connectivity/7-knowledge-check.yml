@@ -28,7 +28,7 @@ quiz:
     - content: "Configuration"
       isCorrect: false
       explanation: "That's incorrect. This option won't test whether peering connectivity has been configured correctly."
-  - content: "While configuring peering connections between four VNets, peering connections have been created between VNetA and VNetB, between VNetB and VNetC, and between VNetC and VNetD. When the configuration is tested, there is a connection problem between VNetA and VNetD. What is the cause of this problem?"
+  - content: "While configuring peering connections between four VNets, peering connections have been created between VNetA and VNetB, between VNetB and VNetC, and between VNetC and VNetD. When the configuration is tested, there's a connection problem between VNetA and VNetD. What is the cause of this problem?"
     choices:
     - content: "There's an error in one of the peerings. Check the configuration and retest"
       isCorrect: false
