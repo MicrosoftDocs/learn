@@ -14,4 +14,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-name-resolution-issues.md)]
-interactive: bash
+interactive: powershell
