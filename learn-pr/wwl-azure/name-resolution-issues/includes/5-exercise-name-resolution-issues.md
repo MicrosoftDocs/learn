@@ -1,6 +1,3 @@
-> [!IMPORTANT]
-> You need your own Azure subscription  to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
-
 Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 If you have not already run the script in unit 2, please do so now so you can follow the exercise below.
