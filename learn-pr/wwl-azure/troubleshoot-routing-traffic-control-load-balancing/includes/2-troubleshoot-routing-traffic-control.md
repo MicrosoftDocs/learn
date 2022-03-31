@@ -28,7 +28,7 @@ The main problems that occur when setting up a user-defined route are:
 
 - Have you added the DMZ subnet name as the subnet in Settings, in the NVA?
 
-:::image type="content" source="../media/3-propagate-gateway-routes.png" alt-text="Screenshot of Propagate gateway routes dialog box.":::
+  :::image type="content" source="../media/3-propagate-gateway-routes.png" alt-text="Screenshot of Propagate gateway routes dialog box.":::
 
 - The route table overrides any default routing in the network. Have you allowed the gateway route to propagate?
 
@@ -40,11 +40,11 @@ The main problems that occur when setting up a user-defined route are:
 
 - Have you added the route table to the public virtual network?
 
-:::image type="content" source="../media/3-route-table-creation.png" alt-text="Screenshot showing how to add a route table to a virtual network.":::
+  :::image type="content" source="../media/3-route-table-creation.png" alt-text="Screenshot showing how to add a route table to a virtual network.":::
 
 - Have you enabled the IP forwarding on the NVA?
 
-:::image type="content" source="../media/3-ip-config-screen.png" alt-text="Screenshot showing how to enable IP forwarding for a virtual network appliance.":::
+  :::image type="content" source="../media/3-ip-configure-screen.png" alt-text="Screenshot showing how to enable IP forwarding for a virtual network appliance.":::
 
 ## Review route tables
 
@@ -82,7 +82,7 @@ Log in to the Azure portal then search for and select the virtual machine you wa
 
 •	Select **Effective Routes** and the route table will be displayed.
 
-:::image type="content" source="../media/3-az-route-table.png" alt-text="Screenshot of the route table.":::
+:::image type="content" source="../media/3-azure-route-table.png" alt-text="Screenshot of the route table.":::
 
 ### Diagnose routes using PowerShell
 

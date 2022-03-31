@@ -94,7 +94,7 @@ When you have the HTTP group response headers, there are a number of responses f
 
 - A 503 response after a few seconds means that regular requests go to your back end without going through Azure Front Door. To resolve this issue, configure the origin response timeouts for the endpoint and extend the default timeout.
 
-:::image type="content" source="../media/4-endpoint-timeout.png" alt-text="Endpoint default timeout settings":::
+  :::image type="content" source="../media/4-endpoint-timeout.png" alt-text="Endpoint default timeout settings":::
 
 - You’re receiving 503 responses from the Azure Front Door, but only for HTTPS requests. Reasons for this could be:
 
