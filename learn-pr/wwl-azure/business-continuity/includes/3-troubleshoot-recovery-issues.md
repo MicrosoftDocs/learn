@@ -8,7 +8,7 @@ When you recover data from an Azure VM backup you have three options to restore 
 
 1. Restore VM
 
-1. Disk restore—only the disks are restored, which can then be used to create a new VM or replace a disk on an existing VM.
+1. Disk restore. Only the disks are restored, which can then be used to create a new VM or replace a disk on an existing VM.
 
 To recover files, select the **File Recovery** option. It is then a three-step process to recover the files:
 
@@ -91,7 +91,7 @@ When the MARS agent is configured, you specify how long the backup data should b
 
 ## Troubleshoot restore issues when using Azure backup agent
 
-When recovering an Azure VM from a backup, a process server is used to handle the data. If you encounter problems with restoring data, use a step-by-step methodology:
+When you recover an Azure Virtual Machine from a backup, a process server is used to handle the data. If you encounter problems with restoring data, use a step-by-step methodology:
 
 ### Step 1: Monitor process server health
 
@@ -200,7 +200,7 @@ Also, check common error messages:
 
 ### Cannot enable protection as the virtual machine is not highly available
 
-Try restarting the VMM service on the VMM machine. If that doesn’t work, try removing the virtual machine from the cluster and adding it again.
+Try restarting the VMM service on the VMM machine. If that doesn't work, try removing the virtual machine from the cluster and adding it again.
 
 ### The VSS writer NTDS failed with status 11 and writer specific failure code 0x800423F4
 
@@ -265,7 +265,7 @@ In some scenarios, failover requires additional processing that takes around 8 t
 - VMware VMs that don't have the following boot drivers: storvsc, vmbus, storflt, intelide, atapi.
 
 > [!NOTE]
-> Don’t cancel a failover in progress. If you cancel a failover in progress, the VM won’t replicate again.
+> Don't cancel a failover in progress. If you cancel a failover in progress, the VM won't replicate again.
 
 If you have problems, try the following troubleshooting steps:
 
@@ -274,23 +274,23 @@ If you have problems, try the following troubleshooting steps:
 1. Check connectivity between the source server and the process server, and between the process server and Azure.
 
 1. Check that the source machine is available for replication, specifically:
-   - Check that two VMs don’t have the same UUID. Refer to [Azure Site Recovery VMware-to-Azure: How to clean up duplicate or stale entries](https://social.technet.microsoft.com/wiki/contents/articles/32026.asr-vmware-to-azure-how-to-clean/icatestale-entries.aspx).
+   - Check that two VMs don't have the same UUID. Refer to [Azure Site Recovery VMware-to-Azure: How to clean up duplicate or stale entries](https://social.technet.microsoft.com/wiki/contents/articles/32026.asr-vmware-to-azure-how-to-cleanup-duplicatestale-entries.aspx).
 
-1. Ensure the **vCenter credentials** are correct when you set up the configuration server, by using the OVF template or unified setup. To verify the credentials, see [Modify credentials for automatic discovery](https://docs./ft.com/azure/site-recovery/vmware-azure-manage-configuration-server).
+1. Ensure the **vCenter credentials** are correct when you set up the configuration server, by using the OVF template or unified setup. To verify the credentials, see [Modify credentials for automatic discovery](/azure/site-recovery/vmware-azure-manage-configuration-server#modify-credentials-for-automatic-discovery).
 
 1. If insufficient permissions are provided to access vCenter, failure to discover virtual machines might occur. Ensure that the permissions described in [Prepare an account for automatic discovery](/azure/site-recovery/vmware-azure-tutorial-prepare-on-premises) are added to the vCenter user account.
 
 1. Management servers cannot be replicated. If the VM is used as one or more of the following roles—Configuration server / scale-out process server / Master target server—then you will not be able to choose the virtual machine from the portal.
 
-1. If the virtual machine is already protected or failed over through Site Recovery, it will not be available to select for protection in the portal. Ensure that the virtual machine isn't already protected by any other user, or under a different subscription./
+1. If the virtual machine is already protected or failed over through Site Recovery, it will not be available to select for protection in the portal. Ensure that the virtual machine isn't already protected by any other user, or under a different subscription.
 
-1. Check if vCenter is in connected state. To verify, go to **Recovery Services vault** > **Site Recovery Infrastructure** > **Configuration Servers** > **Click on respective configuration server**. A blade opens on the right with details of associ/rvers. Check if vCenter is connected. If it's in a "Not Connected" state, resolve the issue and then [refresh the configuration server](/azure/site-recovery/vmware-azure-manage-configuration-server) on the portal. After this, virtual machine will be listed on the portal.
+1. Check if vCenter is in connected state. To verify, go to **Recovery Services vault** > **Site Recovery Infrastructure** > **Configuration Servers** > **Click on respective configuration server**. A pane opens on the right with details of associ/rvers. Check if vCenter is connected. If it's in a "Not Connected" state, resolve the issue and then refresh the configuration server on the portal. After this, virtual machine will be listed on the portal.
 
-1. If the ESXi host under which the VM resides is in powered off state, then virtual machine will not be listed or will not be selectable on the Azure portal. Power on the ESXi host, an/esh the configuration server](<https://docs.microsoft.com/azure/site-recovery/vmware-azure-manage-configuration-server>) on the portal. After this, virtual machine will be listed on the portal.
+1. If the ESXi host under which the VM resides is in powered off state, then virtual machine will not be listed or will not be selectable on the Azure portal. Power on the ESXi host, and refresh the configuration server on the portal. After this, virtual machine will be listed on the portal.
 
-1. If there is a pending reboot, you will not be able to select the VM on the Azure portal. Complete the pending reboot and [refresh the configuration server](/azure/site-recovery/vmware-azure-manage-configuration-server). Th/ould then be listed on the portal.
+1. If there is a pending reboot, you will not be able to select the VM on the Azure portal. Complete the pending reboot and refresh the configuration server. They should then be listed on the portal.
 
-1. If the virtual machine doesn't have a valid IP address associated with it, you will not be able to select the machine on the Azure portal. Assign a valid IP address to the virtual machine, and [refresh the configuration server](/azure/site-recovery/vmware-azure-manage-configuration-server). This could also be caused by the machine not having a valid IP address associated with one of its NICs. Either assign a valid IP address to all NICs or remove the NIC that's missing the IP.
+1. If the virtual machine doesn't have a valid IP address associated with it, you will not be able to select the machine on the Azure portal. Assign a valid IP address to the virtual machine, and refresh the configuration server. This could also be caused by the machine not having a valid IP address associated with one of its NICs. Either assign a valid IP address to all NICs or remove the NIC that's missing the IP.
 
 ### Troubleshoot site recovery with SCCM
 
@@ -334,7 +334,7 @@ If you experience problems, try the following troubleshooting issues:
 
 1. Use a supported version and the same edition of SQL Server:
 
-   - Check that the version of SQL Server is both supported, and the same edition as the original. Restoring to a newer version of SQL Server is supported, providing you don’t change the edition—you can restore Standard to Standard and Enterprise to Enterprise.
+   - Check that the version of SQL Server is both supported, and the same edition as the original. Restoring to a newer version of SQL Server is supported, providing you don't change the edition—you can restore Standard to Standard and Enterprise to Enterprise.
 
    - Ensure SQL Server is not set to **single-user mode**.
 
@@ -350,7 +350,7 @@ If you experience problems, try the following troubleshooting issues:
 
 ## Troubleshoot site-to-site recovery
 
-Azure to Azure site recovery allows you to replicate Azure virtual machines (VMs) from one region to another. In case of problems, check the following:
+Azure to Azure Site Recovery allows you to replicate Azure virtual machines (VMs) from one region to another. In case of problems, check the following:
 
 ### High data change rate on the source virtual machine
 
@@ -362,11 +362,11 @@ Select the event to display disk information:
 
 :::image type="content" source="../media/3-disk-information.png" alt-text="Screenshot that shows disk information.":::
 
-### Azure site recovery limits
+### Azure Site Recovery limits
 
-Azure site recovery limits are data churn per disk and data churn per virtual machine. The actual limits vary according to specific configurations. For example, a single VM Site Recovery can handle 5MN/s of churn per disk and a maximum of five disks. Site Recovery has a limit of 54MB/s of total churn per VM.
+Azure Site Recovery limits are data churn per disk and data churn per virtual machine. The actual limits vary according to specific configurations. For example, a single VM Site Recovery can handle 5MN/s of churn per disk and a maximum of five disks. Site Recovery has a limit of 54MB/s of total churn per VM.
 
-To find out whether this is a recurring problem, check the data change rate of the relevant virtual machine under **Monitoring**. You will need to add the metrics shown in the following screen shot:
+To find out whether this is a recurring problem, check the data change rate of the relevant virtual machine under **Monitoring**. You will need to add the metrics shown in the following screenshot:
 
 :::image type="content" source="../media/3-data-change-rate.png" alt-text="Screenshot that shows OS Disk Writes Bytes/Sec.":::
 

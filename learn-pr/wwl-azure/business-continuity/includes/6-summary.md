@@ -10,7 +10,7 @@ Now that you have completed this module, you will be able to:
 
 - Troubleshoot backing up and restoring servers.
 
-- Troubleshoot Azure to Azure site recovery.
+- Troubleshoot Azure to Azure Site Recovery.
 
 - Troubleshoot site recovery with Hyper-V, SCCM, and VMware.
 
@@ -30,7 +30,7 @@ Use these resources to discover more.
 
 - [Configure Vault Diagnostics settings at scale - Azure Backup | Microsoft Docs](/azure/backup/azure-policy-configure-diagnostics)
 
-- [https://docs.microsoft.com/azure/backup/backup-azure-monitoring-built-in-monitor](/azure/backup/backup-azure-monitoring-built-in-monitor)
+- [Monitoring Azure Backup workloads](/azure/backup/backup-azure-monitoring-built-in-monitor)
 
 - [Alert processing rules for Azure Monitor alerts - Azure Monitor | Microsoft Docs](/azure/azure-monitor/alerts/alerts-action-rules?tabs=portal)
 
@@ -50,8 +50,6 @@ Use these resources to discover more.
 
 - [Troubleshoot backup errors with Azure VMs - Azure Backup | Microsoft Docs](/azure/backup/backup-azure-vms-troubleshoot)
 
-- Troubleshoot site recovery with SCCM
-
 - [Troubleshoot slow backup of files and folders - Azure Backup | Microsoft Docs](/azure/backup/backup-azure-troubleshoot-slow-backup-performance-issue)
 
 - [Site recovery - Configuration Manager | Microsoft Docs](/mem/configmgr/core/servers/manage/recover-sites)
@@ -63,8 +61,6 @@ Use these resources to discover more.
 - [Azure Backup Server V3 RTM protection matrix](/azure/backup/microsoft-azure-backup-server-protection-v3)
 
 - [MABS (Azure Backup Server) V3 UR1 (and later) protection matrix](/azure/backup/backup-mabs-protection-matrix)
-
-- Hyper-V Recovery
 
 - [About Azure Site Recovery - Azure Site Recovery | Microsoft Docs](/azure/site-recovery/site-recovery-overview)
 

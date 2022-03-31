@@ -70,11 +70,11 @@ You can get email notifications when alerts are triggered by creating an alert p
 
 - From the top menu, select Create.
 
-- In the Scope section, select Select scope to display the Select Scope blade.
+- In the Scope section, select Select scope to display the Select Scope pane.
 
 - Select the resource you want the alert processing rule applied to by either selecting from the drop-down list, or by typing to filter the resources. The matching resources are then displayed. Use the check boxes to select the resources you want the alert processing rule to apply to.
 
-- Alternatively, you can apply the rule for all resources within a subscription. When the Select Scope blade is displayed, select the check box next to the correct subscription.
+- Alternatively, you can apply the rule for all resources within a subscription. When the Select Scope pane is displayed, select the check box next to the correct subscription.
 
 - In the Filter section, you can apply one or more filters. For example, select Severity to generate notifications for alerts of a certain severity.
 
@@ -139,7 +139,7 @@ Check that:
 
 - You have network connectivity between the MARS backup agent and Azure.
 
-- The MARS agent is running—if necessary, restart it and ensure the MARS agent is ready.
+- The MARS agent is running. You might need restart it and ensure the MARS agent is ready.
 
 - There is 5%-10% free space in the scratch folder.
 
@@ -197,7 +197,7 @@ C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.RecoveryServices.VMSnapshot
 
 - Is the VM agent up-to-date? Azure VMs are backed up by installing a backup agent. Check that the backup agent is installed and it’s a recent version.
 
-- Is the Azure Backup option greyed out? Hover over the greyed-out option to find out the reason.
+- Is the Azure Backup option grayed out? Hover over the grayed-out option to find out the reason.
 
 - Is antivirus software blocking the extension? If there are log entries in Event Viewer Application logs with the faulting application name IaaSBcdrExtension.exe then it could be the antivirus software.
 
