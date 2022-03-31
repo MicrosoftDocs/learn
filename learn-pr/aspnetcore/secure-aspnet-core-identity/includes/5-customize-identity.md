@@ -218,12 +218,7 @@ In order to send the confirmation email, you need to create an implementation of
 ## Test the changes to the registration form
 
 1. Make sure you've saved all your changes.
-1. In the terminal pane, build the project and run the app:
-
-    ```dotnetcli
-    dotnet run
-    ```
-
+1. In the terminal pane, build the project and run the app with `dotnet run`.
 1. In your browser, navigate to the app. Select **Logout** if you're still logged in.
 1. Select **Register** and use the updated form to register a new user.
 

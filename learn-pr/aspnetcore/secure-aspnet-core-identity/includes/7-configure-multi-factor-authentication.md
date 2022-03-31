@@ -46,13 +46,13 @@ Let's build everything you need to generate QR codes on the **Configure authenti
 
 1. In *Program.cs*, add the highlighted lines:
 
-    [!code-csharp[](../code/program-after-customization.cs?range=1-17,22-23&highlight=5-6,17)]
+    [!code-csharp[](../code/program-after-customization.cs?range=1-17,22-23&highlight=5-6,16)]
 
     `QRCodeService` is registered as a singleton service in the IoC container within *Program.cs*.
 
 ## Customize multi-factor authentication
 
-Now that you can generate QR codes, you can inject a QR code into the **Configure authenticator app** form.
+Now that you can generate QR codes, you can embed a QR code into the **Configure authenticator app** form.
 
 1. Open *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs":::* and make the following changes:
     1. Add the following property to the `EnableAuthenticatorModel` class to store the QR code's base-64 string representation:
@@ -75,7 +75,7 @@ Now that you can generate QR codes, you can inject a QR code into the **Configur
 
         [!code-csharp[](../code/areas/identity/pages/account/manage/enableauthenticator.cshtml.cs?name=snippet_generateqrcodeuri&highlight=6)]
 
-        This sets the display name of the key in your TOTP app.
+        This sets the display name for the key in your TOTP app.
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml":::*, make the following highlighted changes and save:
 

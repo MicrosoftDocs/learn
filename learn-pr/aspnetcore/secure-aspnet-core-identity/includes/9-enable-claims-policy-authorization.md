@@ -1,53 +1,49 @@
-In this unit, you'll create a new user with administrative privileges. A demonstration of creating and storing user claims is provided. An authorization policy is also defined to determine whether an authenticated user has elevated privileges in the UI.
+In the previous unit, you learned the difference between authentication and authorization. You also learned how claims are used by policies for authorization. In the next unit, you'll use Identity to store claims and apply policies for conditional access.
 
-## Secure the products catalog
+## Secure the pizza list
 
-The products catalog page should be visible only to authenticated users. However, only administrators are allowed to edit, create, and delete products.
+You've received a new requirement that the Pizza List page should be visible only to authenticated users. Additionally, only administrators are allowed to  create and delete pizzas. Let's lock it down.
 
-1. In *:::no-loc text="Pages/Products/Index.cshtml.cs":::*, apply the following changes:
-    1. Replace the `// Add [Authorize] attribute` comment with the following attribute:
+1. In *Pages/Pizza.cshtml.cs*, apply the following changes:
+    1. Add an `[Authorize]` attribute to the `OnGet` method.
 
-        ```csharp
-        [Authorize]
-        ```
+        [!code-csharp[](../code/pages/pizza.cshtml.cs?range=2-3&highlight=2)]
 
-        The preceding attribute describes user authentication requirements for the page. In this case, there are no requirements beyond the user being authenticated. Anonymous users aren't allowed to view the page and are redirected to the login page.
+        The attribute describes user authorization requirements for the page. In this case, there are no requirements beyond the user being authenticated. Anonymous users aren't allowed to view the page and are redirected to the login page.
 
-    1. Uncomment the `//using Microsoft.AspNetCore.Authorization;` line at the top of the file.
-
-        The preceding change resolves the `[Authorize]` attribute in the previous step.
-
-    1. Replace the `// Add IsAdmin property` comment with the following property:
+    1. Resolve the reference to `Authorize` by adding the following line to the `using` directives at the top of the file:
 
         ```csharp
-        public bool IsAdmin =>
-            HttpContext.User.HasClaim("IsAdmin", bool.TrueString);
+        using Microsoft.AspNetCore.Authorization;
         ```
+
+    1. Add the following property to the `PizzaModel` class:
+
+        [!code-csharp[](../code/pages/pizza.cshtml.cs?name=snippet_isadmin&highlight=3)]
 
         The preceding code determines whether the authenticated user has an `IsAdmin` claim with a value of `True`. The result of this evaluation is accessed via a read-only property named `IsAdmin`.
 
-    1. Replace the `// Add IsAdmin check` comment in the `OnDelete` method with the following code:
+    1. Add `if (!IsAdmin) return Forbid();` to the beginning of **both** the `OnPost` and `OnPostDelete` methods:
 
-        ```csharp
-        if (!IsAdmin)
-        {
-            return Forbid();
-        }
-        ```
+        [!code-csharp[](../code/pages/pizza.cshtml.cs?name=snippet_admincheck&highlight=3,14)]
 
-        When an authenticated employee attempts to delete a product via the UI or by manually sending an HTTP DELETE request to this page, an HTTP 403 status code is returned.
+        You're going to hide the creation/deletion UI elements for non-administrators in the next step. That doesn't prevent an adversary with a tool like [HttpRepl](/aspnet/core/web-api/http-repl/) or Postman from accessing these endpoints directly. Adding this check ensures that if this is attempted, an HTTP 403 status code is returned.
 
-1. In *:::no-loc text="Pages/Products/Index.cshtml":::*, update the **Edit**, **Delete**, and **Add Product** links with the highlighted code:
+1. In *Pages/Pizza.cshtml*, add checks to hide administrator UI elements from non-administrators:
 
-    **Edit & Delete links:**
+    ***New pizza* form**
 
-    [!code-cshtml[](../code/pages/products/index.cshtml?name=snippet_modelisadmin&highlight=2-3,6)]
+    [!code-cshtml[](../code/pages/pizza.cshtml?name=snippet_create&highlight=2-3,20)]
 
-    **Add Product link:**
+    ***Delete pizza* button**
 
-    [!code-cshtml[](../code/pages/products/index.cshtml?name=snippet_addproductlink&highlight=1-2,4)]
+    [!code-cshtml[](../code/pages/pizza.cshtml?name=snippet_delete&highlight=8-9,11,21-22,28)]
 
-    The preceding changes cause the links to be rendered only when the authenticated user is an administrator.
+    The preceding changes cause UI elements that should be accessible only to administrators to be rendered only when the authenticated user is an administrator.
+
+## TODO: WIP beyond this point
+
+wip
 
 ## Register and apply the authorization policy
 

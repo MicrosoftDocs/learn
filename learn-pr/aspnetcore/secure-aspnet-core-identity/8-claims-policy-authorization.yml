@@ -8,7 +8,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-aspnetcore
 durationInMinutes: 2
 content: |
   [!include[](includes/8-claims-policy-authorization.md)]
