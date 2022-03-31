@@ -17,7 +17,7 @@ Follow these steps to check the shared key for both the VPN gateways connections
 
 1. Under Settings, select **Connections**.
 
-   :::image type="content" source="../media/6-gateway-connections.png" alt-text="Screenshot showing all vnet to vnet connections.":::
+   :::image type="content" source="../media/6-gateway-connections.png" alt-text="Screenshot showing all v net to v net connections.":::
 
 1. Select the first connection, **VNet1-VNet2**.
 
@@ -49,7 +49,7 @@ Repeat the steps you did in the previous exercise to see if the two VMs can conn
 
 1. From the list of VMs, select **VM1**.
 
-   :::image type="content" source="../media/6-virtual-machine-1-ip-addresses.png" alt-text="Screenshot showing the IP address of the first virtual machine.":::
+   :::image type="content" source="../media/6-virtual-machine-1-ip-addresses.png" alt-text="Screenshot showing the I P address of the first virtual machine.":::
 
 1. Make a note of the Public IP address and Private IP address.
 

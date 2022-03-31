@@ -68,7 +68,7 @@ If you have set up the VPN type incorrectly, you will need to delete the virtual
 
 ## Border Gateway Protocol (BGP)
 
-:::image type="content" source="../media/3-bgp-configuration-screen.png" alt-text="Screenshot of the BGP configuration screen.":::
+:::image type="content" source="../media/3-bgp-configuration-screen.png" alt-text="Screenshot of the B G P configuration screen.":::
 
 [BGP](/azure/vpn-gateway/vpn-gateway-bgp-overview) is an optional feature that can be used with Azure route-based gateways. BGP has the same technology that’s used on the internet, but it's within Azure. This enables the Azure VPN gateway and any connected on-premises gateways to exchange information about the IP ranges being used.
 
@@ -104,7 +104,7 @@ To complete a cross-premises connection, download and complete a [configuration 
 
 - Open the script in a text editor and locate the Replace sections. Have you amended the parameter information correctly?
 
-:::image type="content" source="../media/3-configuration-text.png" alt-text="Screenshot showing the REPLACE text highlighting the information that needs to be replaced in a configuration script.":::
+  :::image type="content" source="../media/3-configuration-text.png" alt-text="Screenshot showing the REPLACE text highlighting the information that needs to be replaced in a configuration script.":::
 
 - Double check the following values on your device:
 
@@ -220,7 +220,7 @@ Follow the steps below to access the metrics within Azure:
 
 - Click **Metric** on the side panel to view additional metrics as required.
 
-### Monitoring cumulative delays
+### Monitor cumulative delays
 
 The tracert command checks for cumulative delays exceeding 100 ms:
 

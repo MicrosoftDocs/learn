@@ -1,6 +1,6 @@
 ## What are point-to-site VPN gateways?
 
-If you have individuals working remotely, then a point-to-site connection is a secure way of allowing them to connect to Azure resources using Windows, Linux or macOS.
+If you've individuals working remotely, then a point-to-site connection is a secure way of allowing them to connect to Azure resources using Windows, Linux or macOS.
 
 :::image type="content" source="../media/4-point-to-site.png" alt-text="A diagram showing a sample point-to-site connection.":::
 
@@ -56,7 +56,7 @@ Microsoft Sentinel helps to prevent cyber-attacks. It detects threats and uses A
 
 ### Azure Activity Log events
 
-The activity log is accessible from most menus within the Azure portal and will display different information depending on what part of the network you have selected. If you select a virtual network gateway, you will see activity logs about that gateway. Activity logs can be downloaded as csv files for further analysis.
+The activity log is accessible from most menus within the Azure portal and will display different information depending on what part of the network you've selected. If you select a virtual network gateway, you'll see activity logs about that gateway. Activity logs can be downloaded as csv files for further analysis.
 
 ### Azure Monitor
 
@@ -82,7 +82,7 @@ Network Watcher is an area where a range of monitoring and diagnostic tools are 
 
 This section looks at key areas to troubleshoot when you create a certificate-based VPN connection.
 
-### Creating a VNet
+### Create a VNet
 
 If you amended the address range from the default, did you manually add the subnet? The subnet range is auto populated from the default address space. If you then amend the default address space, you must manually change the subnet.
 
@@ -90,9 +90,9 @@ If you amended the address range from the default, did you manually add the subn
 
 Typical gateway-related error messages or problems are:
 
-- File download error: Target URI is not specified.
+- File download error: Target URI isn't specified.
 
-- The connection is established, but you cannot connect to Azure resources.
+- The connection is established, but you can't connect to Azure resources.
 
 Typical troubleshooting solutions are:
 
@@ -100,9 +100,9 @@ Typical troubleshooting solutions are:
 
 - Have you specified the correct VPN type? Most configurations use a gateway type of VPN and a VPN that's route-based rather than policy-based.
 
-- Does the selected SKU support the features you need to use? For instance, if you have Mac clients connecting to your network, you cannot have a basic SKU. Is the SKU big enough for the bandwidth and CPU required?
+- Does the selected SKU support the features you need to use? For instance, if you've Mac clients connecting to your network, you can't have a basic SKU. Is the SKU large enough for the bandwidth and CPU required?
 
-- Have you selected the correct virtual network? If you cannot see the network, check that you have entered the correct subscription and region.
+- Have you selected the correct virtual network? If you can't see the network, check that you've entered the correct subscription and region.
 
 - Have you reset the gateway?
 
@@ -112,17 +112,17 @@ Typical errors likely to be certificate-based are:
 
 - A certificate that can be used with this Extensible Authentication Protocol could not be found. (Error 798.)
 
-- A certificate chain processed but terminated in a root certificate that is not trusted by the trust provider.
+- A certificate chain processed but terminated in a root certificate that isn't trusted by the trust provider.
 
 - Failed to save virtual network gateway &lt;gateway name&gt;. Data for certificate &lt;certificate ID&gt; is invalid.
 
 - The message received was unexpected or badly formatted. (Error 0x80090326.)
 
-- Cannot install the VPN client.
+- Can't install the VPN client.
 
 - Point-to-site clients are suddenly unable to connect.
 
-For any errors relating to certificates, it is worth checking the following:
+For any errors relating to certificates, it's worth checking the following:
 
 - Have you obtained the trusted.cer file for the root certificate?
 
@@ -146,7 +146,7 @@ Typical client-side messages or problems are:
 
 - Failed to download the file. Error details: error 503. The server is busy.
 
-- VPN clients cannot access network file shares.
+- VPN clients can't access network file shares.
 
 - VPN Client Error: The remote connection was not made because the attempted VPN tunnels failed. (Error 800.)
 
@@ -180,7 +180,7 @@ The results should have an IP address contained within the Client Address Pool a
 
 Common error messages are:
 
-- The network connection between your computer and the VPN server could not be established because the remote server is not responding.
+- The network connection between your computer and the VPN server could not be established because the remote server isn't responding.
 
 - The message received was unexpected or badly formatted. (Error 0x80090326.)
 
@@ -232,7 +232,7 @@ Although many of the principles are like site-to-site, there are some important 
 
 - Have you entered the Radius secret correctly?
 
-- Check you have run the [correct configuration](/azure/vpn-gateway/point-to-site-how-to-radius-ps) for the connection you require.
+- Check you've run the [correct configuration](/azure/vpn-gateway/point-to-site-how-to-radius-ps) for the connection you require.
 
 - SSTP
 
@@ -250,17 +250,17 @@ To set up an Azure authentication you need two user accounts: a Global Admin acc
 
 The following checklist can help you troubleshoot VPN connections using point-to-site and Azure Active Directory authentication:
 
-Have you opened the Azure VPN client screen and viewed the status log for any error messages?
+1. Have you opened the Azure VPN client screen and viewed the status log for any error messages?
 
-:::image type="content" source="../media/4-azure-status-screen.png" alt-text="Screenshot of AZ status log screen.":::
+:::image type="content" source="../media/4-azure-status-screen.png" alt-text="Screenshot of A Z status log screen.":::
 
 - Have you cleared the signed-in information and tried to connect?
 
-   :::image type="content" source="../media/4-azure-signin-screen.png" alt-text="Screenshot of sign-in screen.":::
+   :::image type="content" source="../media/4-azure-sign-in-screen.png" alt-text="Screenshot of sign-in screen.":::
 
 - Have you run diagnostics on the connection?
 
-   :::image type="content" source="../media/4-azure-diagnostic-page.png" alt-text="Screenshot of Azure AD diagnostic page.":::
+   :::image type="content" source="../media/4-azure-diagnostic-page.png" alt-text="Screenshot of Azure A D diagnostic page.":::
 
 - Have you viewed the client log files?
 
@@ -270,9 +270,9 @@ Have you opened the Azure VPN client screen and viewed the status log for any er
 
 If the Open VPN tunnel is failing to connect to an OpenVPN Access Server, the following pointers will help:
 
-- Have you checked the OpenVPN Access Server log files? If you have trouble starting the server, stop it, remove the logs, then start and stop the log immediately to remove unnecessary information. The following commands should be used to obtain the log file:
+- Have you checked the OpenVPN Access Server log files? If you've trouble starting the server, stop it, remove the logs, then start and stop the log immediately to remove unnecessary information. The following commands should be used to obtain the log file:
 
-:::image type="content" source="../media/4-open-vpn-commands.png" alt-text="OpenVPN commands to obtain log files.":::
+:::image type="content" source="../media/4-open-vpn-commands.png" alt-text="Open V P N commands to obtain log files.":::
 
 Check the client log files:
 
@@ -292,7 +292,7 @@ If the OpenVPN tunnel is established, but you can’t reach a specific endpoint,
 
 - Traceroute ‒ displays every hop between a source and destination address.
 
-## Using alerts to troubleshoot
+## Use alerts to troubleshoot
 
 Alerts can be set up in the Azure portal or PowerShell to monitor VPN gateway metrics and tunnel resource logs, to quickly detect issues.
 
@@ -312,15 +312,15 @@ Are you using the correct version? Point-to-site only uses OS version 10.11 or h
 
    - Local ID – is the local ID the same as the subject of the client certificate?
 
-   :::image type="content" source="../media/4-mac-os-settings.jpg" alt-text="[Screenshot of Mac OS X setting screen.":::
+   :::image type="content" source="../media/4-mac-os-settings.jpg" alt-text="[Screenshot of Mac O S X setting screen.":::
 
-1. Select **Authentication Settings** – select **Certificate** from the dropdown list then check you have the correct certificate.
+1. Select **Authentication Settings** – select **Certificate** from the dropdown list then check you've the correct certificate.
 
    :::image type="content" source="../media/4-mac-os-certificate-authentication.png" alt-text="Screenshot of Mac OS X authentication certificate screen.":::
 
 1. Still In **Authentication Settings**, change the dropdown to show **Username** and check the credentials are correct.
 
-   :::image type="content" source="../media/4-mac-os-username-authentication.png" alt-text="Screenshot of Mac OS X authentication username screen..":::
+   :::image type="content" source="../media/4-mac-os-username-authentication.png" alt-text="Screenshot of Mac O S X authentication username screen..":::
 
 1. If you still experience problems, download Wireshark and run a packet capture.
 
@@ -338,25 +338,25 @@ Examples of possible gateway issues related to certificate are:
 
 - Have you checked to see if the certificate has been revoked? This happens if the certificate becomes corrupted.
 
-- Can some people connect whilst others cannot? You might need to install another certificate to trust the affected gateway.
+- Can some people connect whilst others can't? You might need to install another certificate to trust the affected gateway.
 
 - Are you unable to save the certificate? Check whether there are any spaces in the name or if it starts with a number.
 
 Routing
 
-- Are you using non BGP Transit Routing? It isn’t supported as BGP is the recommended model.
+- Are you using non BGP Transit Routing? It isn't supported as BGP is the recommended model.
 
-- Are you running multiple VNets and connecting using an S2S VPN, but some clients cannot access particular VNets? You need to use BGP for clients to access the additional VNets.
+- Are you running multiple VNets and connecting using an S2S VPN, but some clients can't access particular VNets? You need to use BGP for clients to access the additional VNets.
 
 - If you make changes to the topology of the network, you need to download the VPN client package for Windows again for the changes to be applied.
 
 Split tunneling
 
-Split tunneling can help to reduce high loads and is recommended when you have a lot of remote users or cloud-based services. Different models can be adopted depending on the volume of remote users and/or the number of cloud-based services you have.
+Split tunneling can help to reduce high loads and is recommended when you've many remote users or cloud-based services. Different models can be adopted depending on the volume of remote users and/or the number of cloud-based services you've.
 
-You have five options to improve the efficiency of your network:
+you've five options to improve the efficiency of your network:
 
-- VPN Forced Tunnel ‒ 100 percent of traffic goes into VPN tunnel, including on-premises, internet, and all O365/M365. Where a lot of employees work remotely, this can hinder performance of corporate traffic as a high load is being put onto the infrastructure.
+- VPN Forced Tunnel ‒ 100 percent of traffic goes into VPN tunnel, including on-premises, internet, and all O365/M365. Where many employees work remotely, this can hinder performance of corporate traffic as a high load is being put onto the infrastructure.
 
 - VPN Forced Tunnel with exceptions ‒ the VPN tunnel is used by default, and a few scenarios are allowed to go direct to the Microsoft 365 service. This ensures the traffic that requires the tunnel has a lower contention for resources.
 

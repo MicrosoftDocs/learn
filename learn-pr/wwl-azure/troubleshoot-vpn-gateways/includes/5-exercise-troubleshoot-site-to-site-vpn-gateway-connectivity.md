@@ -1,15 +1,15 @@
-As your organization's support engineer, you've been asked to help fix an issue between your resources in the US and northern Europe. You have existing infrastructure of virtual networks in two different regions. The VMs in the US virtual network (VNet1) are unable to get a ping response from the VMs in northern Europe (VNet2).
+As your organization's support engineer, you've been asked to help fix an issue between your resources in the US and northern Europe. you've existing infrastructure of virtual networks in two different regions. The VMs in the US virtual network (VNet1) are unable to get a ping response from the VMs in northern Europe (VNet2).
 
 Checking the topology, you can see that there are VPN gateways and connections.
 
 :::image type="content" source="../media/5-network-diagram.png" alt-text="Diagram of the topology of the network that needs troubleshooting.":::
 
-In this exercise, you'll troubleshoot and resolve the connectivity issue. If you have not already run the script in unit 2, please do so now so you can follow the exercise below.
+In this exercise, you'll troubleshoot and resolve the connectivity issue. If you've not already run the script in unit 2, please do so now so you can follow the exercise below.
 
 > [!IMPORTANT]
 > You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 
-1. Open the [Azure portal](https://portal.azure.com) in a new tab.
+- Open the [Azure portal](https://portal.azure.com) in a new tab.
 
 ## Test the connection
 
@@ -25,7 +25,7 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue. If you
 
 1. Make a note of the **Public IP address** and **Private IP address**.
 
-   :::image type="content" source="../media/5-network-ip-address.png" alt-text="Screenshot of VM1 showing networking the private and public IP addresses." lightbox="../media/5-network-ip-address-lightbox.png":::
+   :::image type="content" source="../media/5-network-ip-address.png" alt-text="Screenshot of V M 1 showing networking the private and public IP addresses." lightbox="../media/5-network-ip-address-lightbox.png":::
 
 1. Repeat the last two steps for VM2 and note the Public IP address and Private IP address.
 
@@ -37,7 +37,7 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue. If you
 
    ```
    > [!NOTE]
-   > Replace &lt;VM1 public IP address&gt; with the public IP address you noted for VM1.
+   > Replace /<VM1 public IP address/> with the public IP address you noted for VM1.
 
 1. At the prompt, ` Are you sure you want to continue connecting (yes/no)? ` type yes.
 
@@ -45,7 +45,7 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue. If you
 
 1. Your prompt should change to `azureuser@VM1:~$`.
 
-1. This means you have successfully connected to VM1.
+1. This means you've successfully connected to VM1.
 
 1. Ping the private IP address of VM2.
 
@@ -56,11 +56,11 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue. If you
    ```
 
    > [!NOTE]
-   > Replace &lt;private IP address&gt; VM2 with the private IP address you noted for VM2. 
+   > Replace /<private IP address/> VM2 with the private IP address you noted for VM2. 
 
    :::image type="content" source="../media/5-ping-request.png" alt-text="Screenshot showing the ping command to check whether machines can connect.":::
 
-1. We can confirm that the two machines cannot connect, as there is no response from VM2.
+1. We can confirm that the two machines can't connect, as there is no response from VM2.
 
 ## Troubleshoot the gateways
 
@@ -78,7 +78,7 @@ You'll check the types are correct for both gateways.
 
 1. Confirm that the VPN type is route-based, and the gateway type is VPN.
 
-   :::image type="content" source="../media/5-vpn-routebased.png" alt-text="Screenshot showing the Gateway and VPN Type." lightbox="../media/5-vpn-routebasedlightbox.png":::
+   :::image type="content" source="../media/5-vpn-route-based.png" alt-text="Screenshot showing the Gateway and V P N Type." lightbox="../media/5-vpn-route-based-lightbox.png":::
 
 1. Scroll down the page to check the tunnel Ingress and Egress. Can you see a time when something might have happened to cause a problem?
 
@@ -102,7 +102,7 @@ You'll now check the address spaces don't overlap for the two virtual networks.
 
 1. Select **VNet2**, and check that the address spaces do not overlap.
 
-   :::image type="content" source="../media/5-dns-server.png" alt-text="Screenshot showing the address space of VNet2":::
+   :::image type="content" source="../media/5-dns-server.png" alt-text="Screenshot showing the address space of V Net 2":::
 
 1. The two address spaces are different, so we can rule out any problems with them.
 
@@ -128,7 +128,7 @@ You'll now check the address spaces don't overlap for the two virtual networks.
 
 1. Select **VNet1GW**.
 
-   :::image type="content" source="../media/5-gateway-connections.png" alt-text="Screenshot of the VNet1 gateway.":::
+   :::image type="content" source="../media/5-gateway-connections.png" alt-text="Screenshot of the V Net 1 gateway.":::
 
 1. Select **Connections**.
 
@@ -158,7 +158,7 @@ You'll now check the address spaces don't overlap for the two virtual networks.
 
 1. Select **Shared key**.
 
-   :::image type="content" source="../media/5-incorrect-key.png" alt-text="Screenshot of the second shared key showing it is different to the first shared key.":::
+   :::image type="content" source="../media/5-incorrect-key.png" alt-text="Screenshot of the second shared key showing it's different to the first shared key.":::
 
 1. The shared keys are not the same. For the connections to work, the shared key must be identical.
 

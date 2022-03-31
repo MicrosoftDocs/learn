@@ -13,4 +13,4 @@ azureSandbox: true
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-setup-troubleshooting-environment.md)]
+  [!include[](includes/2-set-up-troubleshooting-environment.md)]
