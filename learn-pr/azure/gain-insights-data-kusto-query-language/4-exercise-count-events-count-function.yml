@@ -9,7 +9,7 @@ metadata:
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial
-  ms.prod: azure-data-explorer
+  ms.prod: learning-azure-data-explorer
 durationInMinutes: 4
 content: |
   [!include[](includes/4-exercise-count-events-count-function.md)]
