@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.gain-insights-data-kql.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Gain insights in your data using the Kusto Query Language."
+  ms.date: 03/30/2022
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-data-explorer
+durationInMinutes: 1
+content: |
+quiz:
+  questions:
+  - content: "Which function returns the number of distinct values of a particular column?"
+    choices:
+    - content: "`count()`"
+      isCorrect: false
+      explanation: "Try again. The `count()` function returns the number of rows in a table."
+    - content: "`dcount()`"
+      isCorrect: true
+      explanation: "Correct. The `dcount()` function returns the number of distinct values of a particular column."
+    - content: "`distinct()`"
+      isCorrect: false
+      explanation: "Try again. The `distinct()` function returns a list of distinct values of a particular column."
+  - content: "Which of the following can be used to summarize storm event data by week?"
+    choices:
+    - content: "`summarize ... by bin(StartTime, 7d)`"
+      isCorrect: true
+      explanation: "Correct. The `bin()` function groups a scattered set of values into a smaller set of specific values."
+    - content: "`summarize ... by StartTime`"
+      isCorrect: false
+      explanation: "Try again. This solution aggregates data by the start time but doesn't group it by week."
+    - content: "`summarize ... by 1week`"
+      isCorrect: false
+      explanation: "Try again. Grouping `by `week` isn't a valid syntax."
+  - content: "Which function can be used with the `summarize` operator to return the median of storm events per state?"
+    choices:
+    - content: "`avg()`"
+      isCorrect: false
+      explanation: "Try again. The `avg()` function returns the average value (arithmetic mean) for each group."
+    - content: "`max()`"
+      isCorrect: false
+      explanation: "Try again. The `max()` function returns the maximum value for each group."
+    - content: "`percentiles()`"
+      isCorrect: true
+      explanation: "Correct. The `percentiles()` function returns the frequency distribution for each group."
+  - content: "Which of the following best describes the `let` statement?"
+    choices:
+    - content: "The `let` statement is useful for building complex expressions and using them as part of a query."
+      isCorrect: false
+      explanation: "Try again. The answer doesn't describe the `let` statement."
+    - content: "The `let` statement is useful for breaking up a complex expression into multiple parts. It defines a scalar or tabular variable, or a user-defined function that can be used multiple times within a query."
+      isCorrect: true
+      explanation: "The answer accurately describes key benefits of using the `let` statement."
+    - content: "The `let` statement creates persisted functions as part of the database metadata (stored functions). They're invoked through a name, are provided with zero or more input arguments, and return a single value."
+      isCorrect: false
+      explanation: "Try again. The answer describes stored functions that are stored within the database. They can be invoked in a query by using their name."
