@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-authentication-access-control.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/31/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "If a password has recently changed in on-premises Active Directory Services, why might an account become locked out?"
+    choices:
+    - content: "Accounts are locked out for a short period after a password change."
+      isCorrect: false
+      explanation: "That's incorrect. Accounts aren't locked out for a short period after a password change."
+    - content: "Passwords must be updated in both on-premises Directory Services and Azure Directory Services to avoid account lock-outs."
+      isCorrect: false
+      explanation: "That's incorrect. Passwords don't have to be updated in both on-premises Directory Services and Azure Directory Services."
+    - content: "The password hasn't had enough time to synchronize with Azure AD and the user is using a different password to the value stored in Azure AD."
+      isCorrect: true
+      explanation: "That's correct. The password might not have had enough time to synchronize with Azure AD and the user is using a different password to the value stored in Azure AD."
+  - content: "When should the Azure AD Connect Administration Agent be installed?"
+    choices:
+    - content: "Before errors occur."
+      isCorrect: true
+      explanation: "That's correct. The Azure AD Connect Administration Agent only starts logging once it has been installed."
+    - content: "Soon after errors occur."
+      isCorrect: false
+      explanation: "That's incorrect. If you install Azure AD Connect Administration Agent soon after errors occur it will not report on the errors."
+    - content: "The Azure AD Connect Administration Agent doesn't need to be installed"
+      isCorrect: false
+      explanation: "That's incorrect. The Azure AD Connect Administration Agent needs to be installed and isn't installed by default."
+  - content: "How long is audit log data held by default for conditional access policy changes?"
+    choices:
+    - content: "five days"
+      isCorrect: false
+      explanation: "That's incorrect. The default setting for storing audit logs isn't five days."
+    - content: "10 days"
+      isCorrect: false
+      explanation: "That's incorrect. The default setting for storing audit logs isn't 10 days."
+    - content: "30 days"
+      isCorrect: true
+      explanation: "That's correct. The default setting for storing audit logs is 30 days."
