@@ -15,11 +15,11 @@
 
 Using the cloud shell on the right, run these commands to create the example topology. The environment will take approximately 5 minutes to build.
 
-.Clone the setup script from GitHub.
+Clone the setup script from GitHub.
 
-    ```console
+
     git clone https://github.com/MicrosoftDocs/mslearn-business-continuity networking
-    ```
+
 
 1. Run the setup script.
 
