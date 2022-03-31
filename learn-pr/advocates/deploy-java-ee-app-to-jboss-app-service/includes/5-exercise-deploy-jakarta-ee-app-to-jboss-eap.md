@@ -25,14 +25,14 @@ Let's configure the application by executing the configuration goal in the Maven
 After you run the command, you'll see look like the following messages in the terminal.
 
 ```bash
-$ ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.16.1:config
+$ ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.5.0:config
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] ---------< com.microsoft.azure.samples:jakartaee-app-on-jboss >---------
 [INFO] Building jakartaee-app-on-jboss 1.0-SNAPSHOT
 [INFO] --------------------------------[ war ]---------------------------------
 [INFO] 
-[INFO] --- azure-webapp-maven-plugin:1.16.1:config (default-cli) @ jakartaee-app-on-jboss ---
+[INFO] --- azure-webapp-maven-plugin:2.5.0:config (default-cli) @ jakartaee-app-on-jboss ---
 [WARNING] The POM for com.microsoft.azure.applicationinsights.v2015_05_01:azure-mgmt-insights:jar:1.0.0-beta is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
 [INFO] Auth type: OAUTH2
 Username: YOUR_EMAIL_ADDRESS@microsoft.com
