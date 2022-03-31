@@ -1,11 +1,5 @@
-## Introduction
+## Key points
 
-Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other.
+ThreadX is one of the most widely used RTOSes in the world. It has demonstrated its reliability and has received numerous certifications.
 
-For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme.
-
-## Learning objectives
-
-Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other.
-
-For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme.
+There are many features available with ThreadX and you've learned many of them. In your future journey with ThreadX, you'll need to acquire more information to develop evermore sophisticated real-time embedded systems. You'll find that the ThreadX user guide and the online ThreadX book are valuable resources.
