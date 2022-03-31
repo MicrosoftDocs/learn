@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.exercise-set-up-environment
+title: Exercise - Set up your environment
+metadata:
+  unitType: exercise
+  title: Exercise - Set up your environment
+  description: Configure your environment to add automated reviews to your Bicep deployment workflow.
+  ms.date: 03/30/2022
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-exercise-set-up-environment.md)]
