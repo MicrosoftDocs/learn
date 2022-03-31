@@ -46,7 +46,7 @@ What if virtual machines (VMs) in a load balancer set are not responding to heal
 - The load balancer is misconfigured.  
   - If the previous tests all succeeded, analyze the network for incoming and outgoing packets from multiple VMs in the load balancer set, to try to isolate the issue.
 
-For more information, see [Troubleshoot Azure Load Balancer health probe status](/azure/traffic-manager/traffic-manager-routing-methods).
+For more information, see [Troubleshoot Azure Load Balancer health probe status](/azure/load-balancer/load-balancer-troubleshoot-health-probe-status).
 
 ## Examine load balancer rules
 
@@ -54,7 +54,7 @@ Load balancer rules define how traffic is distributed to the load balancer set. 
 
 Review load balancer rules if traffic is not behaving as expected.
 
-For more information, see [Manage rules for Azure Load Balancer using the Azure portal](/azure/virtual-network/virtual-network-troubleshoot-nva).
+For more information, see [Manage rules for Azure Load Balancer using the Azure portal](/azure/load-balancer/manage-rules-how-to).
 
 ## Determine how resources are being allocated based on the load balancer configuration
 
@@ -76,13 +76,13 @@ If a VM in the load-balanced pool appears healthy, but is not responding to requ
 
 - A back-end VM is trying to access resources through the load balancer. This is unsupported.
 
-For more information, see [Troubleshoot Azure Load Balancer back-end traffic responses](/azure/virtual-network/virtual-network-troubleshoot-peering-issues).
+For more information, see [Troubleshoot Azure Load Balancer back-end traffic responses](/azure/load-balancer/load-balancer-troubleshoot-backend-traffic).
 
 ## Troubleshoot port exhaustion issues
 
 When a load balancer is used for external connections, you should be aware of port exhaustion. There are 64,000 ports available, but each connection uses eight ports when a load balancer is in use. Therefore, if there are many back-end instances, it is possible to exhaust the available ports.
 
-For more information, see [Troubleshooting outbound connections failures](/windows-server/administration/windows-commands/pathping).
+For more information, see [Troubleshooting outbound connections failures](/azure/load-balancer/troubleshoot-outbound-connection).
 
 ## Troubleshoot Azure Front Door
 
@@ -110,7 +110,7 @@ When you have the HTTP group response headers, there are a number of responses f
 - You’re receiving 411 status codes from the front-end host.
   - These status codes are generated when your HTTP request is not fully RFC compliant.
 
-For more information, see [Troubleshoot Azure Front Door common issues](/azure/load-balancer/manage-rules-how-to).
+For more information, see [Troubleshoot Azure Front Door common issues](/azure/frontdoor/troubleshoot-issues).
 
 ## Troubleshoot Azure Application Gateway
 
@@ -128,18 +128,17 @@ There are several troubleshooting steps to consider when you use Azure Load Bala
 
 - If a VM is removed from a back-end pool but is still receiving network traffic, this could be due to storage, DNS, or other Azure functions.
 
-For more information, see [Troubleshoot Azure Load Balancer](/azure/load-balancer/load-balancer-troubleshoot-health-probe-status).
+For more information, see [Troubleshoot Azure Load Balancer](/azure/load-balancer/load-balancer-troubleshoot-backend-traffic).
 
 ## Troubleshoot Traffic Manager profile issues
 
 Azure Traffic Manager uses six traffic routing methods. These are Priority, Weighted, Performance, Geographic, Multivalue, and Subnet. If you select the incorrect traffic routing method, the expected behavior might not be achieved. Traffic may be going towards a primary service endpoint for all traffic because you are using Priority, but you want it to go to the closest endpoint—for example, by using Performance.
 
-For more information, see [Traffic Manager routing methods](/azure/virtual-network/virtual-network-troubleshoot-peering-issues).
+For more information, see [Traffic Manager routing methods](/azure/traffic-manager/traffic-manager-routing-methods).
 
 ## Troubleshoot latency issues
 
 For latency issues in your load-balanced network, you should test in the same way you would for any virtual machine network latency. You can use common connectivity tools such as Ping, but more specialist third-party tools are available to provide more information. To test latency issues, it’s a good idea to use two virtual machines, one as the sender and the other as the receiver. This allows you to test two-way communication between the virtual machines and through the load balancer.
 
-For more information, see [Test VM network latency](/azure/load-balancer/load-balancer-troubleshoot-backend-traffic).
+For more information, see [Test VM network latency](/azure/virtual-network/virtual-network-test-latency).
 
-[https://docs.microsoft.com/azure/virtual-network/virtual-network-test-latency](/azure/load-balancer/troubleshoot-outbound-connection)

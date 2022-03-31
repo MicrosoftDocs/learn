@@ -40,11 +40,7 @@ The main problems that occur when setting up a user-defined route are:
 
 - Have you added the route table to the public virtual network?
 
-   :::image type="content" source="../media/3-route-table-creation.png" alt-text="Screenshot showing how to add a route table to a virtual network.":::
-
 - Have you enabled the IP forwarding on the NVA?
-
-   :::image type="content" source="../media/3-ip-configure-screen.png" alt-text="Screenshot showing how to enable IP forwarding for a virtual network appliance.":::
 
 ## Review route tables
 
@@ -78,11 +74,7 @@ Log in to the Azure portal then search for and select the virtual machine you wa
 
 * Select **Settings** > **Networking** and select the **network interface resource**.
 
-   :::image type="content" source="../media/3-network-interface.png" alt-text="Screenshot of the network interface screen.":::
-
-*	Select **Effective Routes** and the route table will be displayed.
-
-   :::image type="content" source="../media/3-azure-route-table.png" alt-text="Screenshot of the route table.":::
+* Select **Effective Routes** and the route table will be displayed.
 
 ### Diagnose routes using PowerShell
 
