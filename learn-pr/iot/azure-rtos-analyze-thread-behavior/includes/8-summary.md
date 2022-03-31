@@ -27,6 +27,6 @@ The `tx_thread_performance_info_get` service obtains cumulative information abou
       - relinquishes
       - timeouts
       - wait_aborts
-      - last_preempted_by 
+      - last_preempted_by
    :::column-end:::
 :::row-end:::
