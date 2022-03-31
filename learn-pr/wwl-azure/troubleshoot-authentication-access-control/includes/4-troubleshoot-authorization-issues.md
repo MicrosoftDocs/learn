@@ -22,7 +22,7 @@ To troubleshoot sign-in problems, you should initially review the error message.
 
 When you have the details of the sign-in event, you can open the Azure portal, select **Azure Active Directory** then select **Sign-ins**. Add filters to find the correct type of events, such as Conditional Access failures, and find the specific event.
 
-![Selecting the Conditional access filter in the sign-ins log](../media/4-more-details-sign.png)
+![Selecting the Conditional access filter in the sign-ins log](../media/4-conditional-access-sign-log.png)
 
 You can then select the event to view more details and the policy details for that event.
 

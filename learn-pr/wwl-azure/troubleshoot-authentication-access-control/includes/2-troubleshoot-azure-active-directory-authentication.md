@@ -29,13 +29,13 @@ When you enable SSPR, many prerequisites must be met:
 
 - In the **Password reset pages**, you must select all the methods that you wish to be available to users. These are:
 
-- Mobile app notification
+    - Mobile app notification
 
-- Mobile app code
+    - Mobile app code
 
-- Email
+    - Email
 
-- Mobile phone
+    - Mobile phone
 
 - If you want notifications when SSPR is used, in the **Password reset** pages on the **Notifications** page, you must choose whether to notify the user and if you should notify all admins.
 
@@ -51,11 +51,11 @@ There are several common issues that you should resolve when troubleshooting MFA
 
 - You don't receive a voice call or text message with the verification code. If this occurs:
 
-- Select **Other verification options** and then try again. If this succeeds, check that your phone numbers are correct in user settings.
+    - Select **Other verification options** and then try again. If this succeeds, check that your phone numbers are correct in user settings.
 
-- If there are no other verification options, ask a global admin to check that your phone numbers are correct in user settings.
+    - If there are no other verification options, ask a global admin to check that your phone numbers are correct in user settings.
 
-- If you still can't connect, ask a global admin to go to the **Users** page in Azure Active Directory, in the Azure portal. Disable **Block sign in** for the user if it's enabled.
+    - If you still can't connect, ask a global admin to go to the **Users** page in Azure Active Directory, in the Azure portal. Disable **Block sign in** for the user if it's enabled.
 
 - You receive a "Sorry! We can't process your request" error when you try to set up SSPR. If this happens, ensure that you complete the setup process in less than 10 minutes.
 
@@ -97,7 +97,7 @@ You should check whether a user could be using an incorrect password, or whether
 
 To preemptively log account lockout issues, you should enable security audits for Azure AD DS. You can enable security audits in the Azure portal. Search for Azure AD Domain Services, select it and select your managed domain. **Select Diagnostic settings** then select **Add diagnostic setting**.
 
-![Screen shot showing add diagnostic settings screen.](../media/2-add-diagnostic-settings.png)
+:::image type="content" source="../media/../media/2-add-diagnostic-settings.png" alt-text="Screen shot showing add diagnostic settings screen.":::
 
 For more information on enabling security audits, see [Enable security audits for Azure Active Directory Domain Services](/azure/active-directory-domain-services/security-audit-events).
 
@@ -105,7 +105,7 @@ When you've enabled security events, in the Azure portal, you can select **Monit
 
 To search for lockout entries, you should use the filter where **OperationName has "4740"**.
 
-![Screen shot of the create logs area.](../media/2-create-log.png)
+:::image type="content" source="../media/2-create-log.png" alt-text="Screen shot of the create logs area."
 
 For example, you could run this kusto query to find account lockout data for the last seven days:
 
