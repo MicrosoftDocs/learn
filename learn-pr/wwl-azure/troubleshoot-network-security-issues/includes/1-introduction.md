@@ -22,9 +22,9 @@ After completing this module, you’ll be able to:
 
 - Demonstrate an awareness of Azure Bastion.
 
-- Experience with Powershell and Azure CLI.
+- Experience with PowerShell and Azure CLI.
 
-- Know how to get to cloud shell to run commands.
+- Know how to get to Cloud Shell to run commands.
 
 - Experience with Visual Studio Code.
 

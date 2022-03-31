@@ -9,13 +9,13 @@ In this exercise, you'll resolve the issue and check that the website can now be
 
 1. In the Azure portal, search for **load balancers**, and then under **Services**, click **Load balancers**.
 
-   :::image type="content" source="../media/7-load-balancers.png" alt-text="A screenshot showing searching for load balancers.":::
+   :::image type="content" source="../media/7-load-balancers.png" alt-text="A screenshot showing searching for load balancers." lightbox="../media/7-load-balancers.png":::
 
 1. Click the **myScaleSetLB** load balancer.
 
 1. Under **Settings**, click **Load balancing rules**.
 
-   :::image type="content" source="../media/7-load-balancer-rules.png" alt-text="A screenshot showing the load balancer rule highlighted.":::
+   :::image type="content" source="../media/7-load-balancer-rules.png" alt-text="A screenshot showing the load balancer rule highlighted." lightbox="../media/7-load-balancer-rules.png":::
 
 1. From the list of rules, click **myLoadBalancerRuleWeb**.
 
@@ -28,7 +28,7 @@ In this exercise, you'll resolve the issue and check that the website can now be
 
 1. Wait until the rule has been deployed successfully.
 
-:::image type="content" source="../media/7-successful-rule.png" alt-text="A screenshot showing the successful deployment of the updated load balancer rule.":::
+:::image type="content" source="../media/7-successful-rule.png" alt-text="A screenshot showing the successful deployment of the updated load balancer rule." lightbox="../media/7-successful-rule.png":::
 
 ## Verify that the website can now be reached
 

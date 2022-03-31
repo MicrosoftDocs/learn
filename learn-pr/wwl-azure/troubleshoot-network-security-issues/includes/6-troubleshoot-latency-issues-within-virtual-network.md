@@ -9,7 +9,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 ## Verify that the website can't be reached
 
- Use the cloud shell on the right.
+ Use the Cloud Shell on the right.
 
 1. Use this Azure CLI command to get the public IP address of the scale set.
 

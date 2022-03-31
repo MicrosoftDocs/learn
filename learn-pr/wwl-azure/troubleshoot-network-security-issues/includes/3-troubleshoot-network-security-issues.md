@@ -60,8 +60,6 @@ For more information, see [Anomaly Scoring mode](/azure/web-application-firewall
 
 To fix false positives and avoid the issues of blocked traffic, you can use an exclusion list. Using an exclusion list is only applicable to a specific part of a request, or a rule set that is being disabled. You can decide to exclude either body, headers, or cookies for a certain condition instead of excluding the whole request. In a global setting environment, the specific exclusion applies to all traffic passing through your WAF.
 
-:::image type="content" source="../media/2-web-application-firewall-gateway.png" alt-text="Screenshot showing Web application firewall settings.":::
-
 Refer to [WAF configuration](/azure/web-application-firewall/ag/application-gateway-waf-configuration) for more information about exclusion lists.
 
 ### To configure exclusion lists using the Azure portal
@@ -69,10 +67,6 @@ Refer to [WAF configuration](/azure/web-application-firewall/ag/application-gate
 1. Go to the WAF portal.
 
 1. Select **Manage exclusions** under **Managed rules**.
-
-:::image type="content" source="../media/2-web-application-firewall-policy-settings.png" alt-text="Screenshot showing WAF policy settings. Manage exclusions tab under Managed rules is highlighted.":::
-
-:::image type="content" source="../media/2-web-application-firewall-managed-rules.png" alt-text="Screenshot showing Managed rules in WAF portal. The option of Add is highlighted.":::
 
 An example exclusion list:
 
@@ -99,8 +93,6 @@ An example exclusion list:
 
 1. Select **Save**.
 
-:::image type="content" source="../media/2-managed-rules-window.png" alt-text="Screenshot showing Managed rules window. The option of Disable rule is highlighted.":::
-
 A third-party tool called Fiddler can provide additional information. Fiddler will help you to:
 
 - **Find request attribute names**: Review individual requests and determine what specific fields of a webpage are called. It also helps to exclude certain fields from inspection using exclusion lists.
@@ -117,16 +109,11 @@ A third-party tool called Fiddler can provide additional information. Fiddler wi
 
 - **File size limits**: The possibility of an attack to web servers and applications can be reduced by limiting the file size for your WAF. Permitting large files increases the risk of your back end being exhausted. To prevent attacks, it is advisable to limit the file size to a typical case for your application.
 
->[!NOTE]
-
+> [!NOTE]
 > Firewall Metrics (WAF_v1 only)
-
 > For v1 Web Application Firewalls, the following metrics are now available in the portal:
-
 > - **Web Application Firewall Blocked Request Count** - the number of requests that were blocked.
-
 > - **Web Application Firewall Blocked Rule Count** - all rules that were matched and the request was blocked.
-
 > - **Web Application Firewall Total Rule Distribution** - all rules that were matched during evaluation
 
 To enable metrics, select the **Metrics** tab in the portal, and select one of the three metrics.
@@ -230,7 +217,7 @@ P2S VPN supports Secure Socket Tunneling Protocol (SSTP), and IKEv2. You can sec
 
 - Generate a root certificate
 
-First, obtain the public key (.cer file) for a root certificate. After creating the root certificate, export the public certificate (not the private key). Then this file is uploaded to Azure. The root certificate acts as a trusted source by Azure for connection over P2S to the virtual network. There are two ways to generate a root certificate, enterprise certificate, or self-signed certificate. To create a self-signed root certificate, consider the following steps:
+   First, obtain the public key (.cer file) for a root certificate. After creating the root certificate, export the public certificate (not the private key). Then this file is uploaded to Azure. The root certificate acts as a trusted source by Azure for connection over P2S to the virtual network. There are two ways to generate a root certificate, enterprise certificate, or self-signed certificate. To create a self-signed root certificate, consider the following steps:
 
 1. Open a Windows PowerShell console.
 
@@ -253,9 +240,9 @@ First, obtain the public key (.cer file) for a root certificate. After creating 
 
    - Generate client certificates
 
-   A client certificate is automatically installed on the computer where it is generated from a self-signed root certificate. For installing a client certificate on another client computer, you need to export it as a .pfx file, along with the entire certificate chain. The .pfx file will contain the root certificate information required for client authentication. There are two methods to create client certificates, enterprise certificate, or self-signed root certificate.
+      A client certificate is automatically installed on the computer where it is generated from a self-signed root certificate. For installing a client certificate on another client computer, you need to export it as a .pfx file, along with the entire certificate chain. The .pfx file will contain the root certificate information required for client authentication. There are two methods to create client certificates, enterprise certificate, or self-signed root certificate.
 
-   It is recommended to generate a unique certificate for each client instead of using the same certificate. This is because, if you want to revoke a particular client certificate, you don’t need to generate and install a new one for every client that uses the same certificate. To generate client certificate, consider the following steps:
+      It is recommended to generate a unique certificate for each client instead of using the same certificate. This is because, if you want to revoke a particular client certificate, you don’t need to generate and install a new one for every client that uses the same certificate. To generate client certificate, consider the following steps:
 
 1. Use the following example if the PowerShell console session is still open:
 

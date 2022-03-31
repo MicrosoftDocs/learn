@@ -120,10 +120,9 @@ In the following task, the examples are for a VM named **myVM** with a network i
 
 1. At the top of the Azure portal, enter the name of the VM in the search box. When the name of the VM appears in the search results, select it.
 
-1. Under **SETTINGS**, select **Networking**, as shown in the picture below:
+1. Under **SETTINGS**, select **Networking**.
 
-   :::image type="content" source="../media/3-virtual-machine-window.png" alt-text="Screenshot showing the VM window. Networking tab under Settings is highlighted.":::
-
+ 
    The rules you see listed in the following picture are for a network interface named **myVMVMNic**. There are **INBOUND PORT RULES** for the network interface from two different network security groups:
 
     - **mySubnetNSG**: Associated to the subnet that the network interface is in.
@@ -136,8 +135,7 @@ In the following task, the examples are for a VM named **myVM** with a network i
 
 1. Ensure that the VM is in the running state, and then select **Effective security rules**, as shown  in the following image:
 
-   :::image type="content" source="../media/3-effective-security-rules.png" alt-text="Screenshot displaying Effective security rules.":::
-
+ 
    You can see that there are different tabs for the NSG associated to the network interface and the subnet. The rules listed are the same as in step 3<!--CE: Please check - which one is Step 3?--> although, as shown in the picture, only the first 50 rules are displayed. To download a .csv file that contains all the rules, select **Download**.
 
    To see which prefixes each service tag represents, select a rule, such as **AllowAzureLoadBalancerInbound**. The picture below shows the prefixes for the **AzureLoadBalancer** service tag:
@@ -146,23 +144,16 @@ In the following task, the examples are for a VM named **myVM** with a network i
 
 1. The VM in this example has two network interfaces, **myVMVMNic** and **myVMVMNic2** attached to it. The effective security rules can be different for each network interface. Select **myVMVMNic2** to view the rules for this network interface.
 
-The following image shows that the **myVMVMNic2** network interface has the same rules associated to its subnet as the **myVMVMNic** network interface, because both are in the same subnet. When you associate an NSG to a subnet, its rules are applied to all network interfaces.
-
-:::image type="content" source="../media/3-my-virtual-machine-2.png" alt-text="Screenshot displaying rules for the myVMVMNic2 network interface.":::
-
-You can see that the **myVMVMNic2** network interface does not have a network security group associated to it, as the **myVMVMNic** network interface does. Each network interface and subnet can have zero, or one, NSG associated to it. The NSG associated to each network interface or subnet can be the same, or different. You can associate the same NSG to as many network interfaces and subnets as you choose.
+The **myVMVMNic2** network interface does not have a network security group associated to it, as the **myVMVMNic** network interface does. Each network interface and subnet can have zero, or one, NSG associated to it. The NSG associated to each network interface or subnet can be the same, or different. You can associate the same NSG to as many network interfaces and subnets as you choose.
 
 > [!NOTE]
-
 > Though effective security rules were viewed through the VM, you can also look at them through an individual:
-
 > - Network interface: Learn how to [view a network interface](/azure/virtual-network/virtual-network-network-interface).
-
 > - NSG: Learn how to [view an NSG](/azure/virtual-network/manage-network-security-group).
 
-> To run the commands using Powershell, refer to [Diagnose using PowerShell](/azure/virtual-network/diagnose-network-traffic-filter-problem).
+To run the commands using Powershell, refer to [Diagnose using PowerShell](/azure/virtual-network/diagnose-network-traffic-filter-problem).
 
-> To run the commands using Azure CLI, refer to [Diagnose using Azure CLI](/azure/virtual-network/diagnose-network-traffic-filter-problem).
+To run the commands using Azure CLI, refer to [Diagnose using Azure CLI](/azure/virtual-network/diagnose-network-traffic-filter-problem).
 
 To troubleshoot connectivity problems:
 

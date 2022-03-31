@@ -50,7 +50,7 @@ Watch this video to learn more about the monitoring abilities of Azure Firewall:
 
 ### View and analyze the network and application rule logs
 
-Azure Firewall Workbook within the Azure portal is a platform where you can use Azure Firewall data analysis in an interactive way. For example, to create visual reports, combinine multiple firewalls deployed across Azure, and so on.
+Azure Firewall Workbook within the Azure portal is a platform where you can use Azure Firewall data analysis in an interactive way. For example, to create visual reports, combine multiple firewalls deployed across Azure, and so on.
 
 For access and performance logs, you can connect to your storage account and retrieve the JSON log entries. After you download the JSON files, you can convert them to CSV and view them in Excel, Power BI, or any other data visualization tool.
 

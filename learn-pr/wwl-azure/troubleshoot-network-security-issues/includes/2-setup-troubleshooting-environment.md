@@ -6,7 +6,7 @@ You’ll troubleshoot a site-to-site connection problem in a later exercise. Use
 
 ## Create the exercise environment
 
- Use the cloud shell on the right run these commands to create the example topology.
+ Use the Cloud Shell on the right run these commands to create the example topology.
 
 1. Enter this Azure CLI command:
 

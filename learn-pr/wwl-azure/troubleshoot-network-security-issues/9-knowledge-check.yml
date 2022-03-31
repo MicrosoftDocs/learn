@@ -60,7 +60,7 @@ quiz:
       explanation: "That's correct. Azure Network Watcher provides tools to monitor and diagnose the network health of IaaS, such as virtual machines, virtual networks, application gateways, and load balancers."
     - content: "Platform as a service (PaaS)"
       isCorrect: false
-      explanation: "That'sincorrect. Azure Network Watcher is not intended for PaaS monitoring or web analytics."
+      explanation: "That's incorrect. Azure Network Watcher is not intended for PaaS monitoring or web analytics."
   - content: "Inbound internet connectivity can be enabled by configuring which of the following options?"
     choices:
     - content: "Azure Diagnostics and Logging (MDS)"
