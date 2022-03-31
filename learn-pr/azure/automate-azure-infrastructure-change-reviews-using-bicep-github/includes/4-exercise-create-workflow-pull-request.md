@@ -3,11 +3,11 @@ Your website's development team has asked you to update the website to run on th
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Create a workflow for pull request create and update events.
+> * Create a workflow for pull request validation.
 > * Add Bicep linting to the workflow.
 > * Create a pull request, and watch the workflow run.
-> * Fix the errors identified by the pull request validation.
-> * Re-run the workflow, and close the pull request.
+> * Fix the errors identified by the pull request validation workflow.
+> * Re-run the workflow, and merge and close the pull request.
 
 ## Create a workflow to run when pull requests are created and updated
 
@@ -21,7 +21,7 @@ During the process, you'll:
 
    This code ensures that the workflow is executed whenever a pull request is created or updated.
 
-   > [!TIP]
+   > [!NOTE]
    > You're working directly against your repository's *main* branch. Normally, you wouldn't do this, but in this exercise you'll work against *main* to simplify the steps. In your own projects, it's important to set up branch protection rules to protect your main branch.
 
 ## Add a lint job to your workflow
@@ -31,6 +31,8 @@ When a pull request is opened or edited you want to run a linting step for your 
 1. At the bottom of the file, add the following lines to reuse the *lint* workflow defined in your repository:
 
    :::code language="yaml" source="code/4-pr-validation.yml" range="5-7" :::
+
+   Your repository has a *bicepconfig.json* file that configures the linter to emit errors instead of warnings, so any failures during the lint job will cause the workflow to fail.
 
 1. Save your changes.
 
@@ -112,7 +114,7 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
    :::image type="content" source="../media/4-checks-failed.png" alt-text="Screenshot of GitHub that shows the failed status check on the pull request details page.":::
 
    > [!TIP]
-   > Notice that you can still merge the pull request even while the status checks fail. In a real solution, you should configure a branch protection rule to prevent a pull request from being merged until its status checks have succeeded.
+   > Notice that GitHub allows you to merge the pull request even while the status checks fail. In a real solution, you should configure a branch protection rule to prevent a pull request from being merged until its status checks have succeeded.
 
 ## Fix the errors of the pull request validation
 
