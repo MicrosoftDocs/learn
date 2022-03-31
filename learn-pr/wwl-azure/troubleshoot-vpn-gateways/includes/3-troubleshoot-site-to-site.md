@@ -104,7 +104,7 @@ To complete a cross-premises connection, download and complete a [configuration 
 
 - Open the script in a text editor and locate the Replace sections. Have you amended the parameter information correctly?
 
-:::image type="content" source="../media/3-configuration-text.png" alt-text="Screenshot showing the REPLACE text highlighting the information that needs replacing in a configuration script.":::
+:::image type="content" source="../media/3-configuration-text.png" alt-text="Screenshot showing the REPLACE text highlighting the information that needs to be replaced in a configuration script.":::
 
 - Double check the following values on your device:
 
@@ -124,7 +124,7 @@ If your device is not on the list, contact your device manufacturer to see if th
 
 ## Run log analytics queries to troubleshoot gateway issues
 
-You can use Log Analytics to identify trends and analyse data collected by Azure. It's a useful tool to identify current problems and give important insights into the health of your gateways. Used proactively it might be possible to identify potential issues and be able to take preventative action, rather than troubleshooting.
+You can use Log Analytics to identify trends and analyze data collected by Azure. It's a useful tool to identify current problems and give important insights into the health of your gateways. Used proactively it might be possible to identify potential issues and be able to take preventative action, rather than troubleshooting.
 
 A range of pre-written queries are available for you to use such as:
 
@@ -158,7 +158,7 @@ The gateway reset will reboot the gateway and retain the current public IP addre
 
 Before rebooting, use the following checklist:
 
-- Are the two IP addresses for the Azure VPN gateway and the on-premises VPN gateway correctly configured in Azure and on-premises VPN polices?
+- Are the two IP addresses for the Azure VPN gateway and the on-premises VPN gateway correctly configured in Azure and on-premises VPN policies?
 
 - Is the preshared key the same on both gateways?
 
@@ -230,6 +230,6 @@ The tracert command checks for cumulative delays exceeding 100 ms:
 
 - When the result shows * you have hit the Azure edge.
 
-- When the DNS names shows msm you have hit the Microsoft backbone.
+- When the DNS name includes msm you've hit the Microsoft backbone.
 
 :::image type="content" source="../media/3-tracert.png" alt-text="Screenshot of the tracert screen.":::

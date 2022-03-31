@@ -132,7 +132,7 @@ You'll now check the address spaces don't overlap for the two virtual networks.
 
 1. Select **Connections**.
 
-   :::image type="content" source="../media/5-virtual-network-gateway-connection.png" alt-text="Screenshot of the Connections optior.":::
+   :::image type="content" source="../media/5-virtual-network-gateway-connection.png" alt-text="Screenshot of the Connections option.":::
 
 1. The issue seems to be with the connections between the gateways.
 
@@ -142,7 +142,7 @@ You'll now check the address spaces don't overlap for the two virtual networks.
 
    :::image type="content" source="../media/5-virtual-network-to-virtual-network-connection.png" alt-text="Screenshot of the refresh button.":::
 
-1. A connection can still not be made, so you'll check the shared keys.
+1. A connection still can't be made, so you'll check the shared keys.
 
 1. Select **VNet1-VNet2**.
 
