@@ -18,7 +18,7 @@ Use these resources to discover more.
 
 [Monitor, diagnose, and troubleshoot Microsoft Azure Storage](/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?tabs=dotnet)
 
-[Troubleshoot Azure Private Link connectivity problems](https:/docs.microsoft.com/azure/private-link/troubleshoot-private-link-connectivity)
+[Troubleshoot Azure Private Link connectivity problems](/azure/private-link/troubleshoot-private-link-connectivity)
 
 [Azure Firewall](/azure/firewall/firewall-faq) FAQ
 

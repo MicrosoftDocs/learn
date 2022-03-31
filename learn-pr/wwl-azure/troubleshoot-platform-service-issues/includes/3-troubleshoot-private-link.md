@@ -37,7 +37,7 @@ az network vnet subnet update \
 
 - In the private link service, select **Metrics** and verify that data is moving when you attempt to connect to the private link service.
 
-For more information on troubleshooting Azure Private Link connectivity problems, see [Troubleshoot Azure Private Link connectivity problems](https:/docs.microsoft.com/azure/private-link/troubleshoot-private-link-connectivity).
+For more information on troubleshooting Azure Private Link connectivity problems, see [Troubleshoot Azure Private Link connectivity problems](/azure/private-link/troubleshoot-private-link-connectivity).
 
 ## Troubleshoot Firewalls for PaaS services
 

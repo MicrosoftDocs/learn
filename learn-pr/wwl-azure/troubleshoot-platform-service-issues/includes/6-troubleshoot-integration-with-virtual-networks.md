@@ -38,7 +38,7 @@ Perform the following steps to Troubleshoot Azure Private Endpoint connectivity 
 
 - If the Private Endpoint and source VM are on different, non-peered, VNETs, check connectivity between the VNETs.
 
-- Check the configuration of the private link and, if necessary, run through the steps in [Troubleshoot Azure Private Link connectivity problems](https:/docs.microsoft.com/azure/private-link/troubleshoot-private-link-connectivity).
+- Check the configuration of the private link and, if necessary, run through the steps in [Troubleshoot Azure Private Link connectivity problems](/azure/private-link/troubleshoot-private-link-connectivity).
 
 - Try to find the specific issue by trying to connect from inside and outside the VNET with different virtual machines and connecting to different services.
 
