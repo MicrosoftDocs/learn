@@ -2,19 +2,19 @@ Routing errors can occur anywhere along the virtual network and the setting to c
 
 ## Troubleshoot user-defined routing issues
 
-A user-defined route overrides Azure’s default routing and is used to route traffic through a network virtual appliance (NVA). The main advantage is to help with routing and firewall optimization.
+A user-defined route overrides Azure's default routing and is used to route traffic through a network virtual appliance (NVA). The main advantage is to help with routing and firewall optimization.
 
 The key steps to set up a user-defined route are:
 
-- Create an NVA that routes traffic.
+1. Create an NVA that routes traffic.
 
-- Create a route table and a route.
+1. Create a route table and a route.
 
-- Associate the route table to a subnet.
+1. Associate the route table to a subnet.
 
-- Deploy virtual machines into different subnets.
+1. Deploy virtual machines into different subnets.
 
-- Route traffic from one subnet to another via the NVA.
+1. Route traffic from one subnet to another via the NVA.
 
 The main problems that occur when setting up a user-defined route are:
 
@@ -72,9 +72,9 @@ To diagnose any connection problems, you can use:
 
 Log in to the Azure portal then search for and select the virtual machine you want to check:
 
-* Select **Settings** > **Networking** and select the **network interface resource**.
+1. Select **Settings** > **Networking** and select the **network interface resource**.
 
-* Select **Effective Routes** and the route table will be displayed.
+1. Select **Effective Routes** and the route table will be displayed.
 
 ### Diagnose routes using PowerShell
 
@@ -128,7 +128,7 @@ Check the following:
 
 - Are your public IP addresses advertised to the correct wide area network (WAN) links?
 
-- If you want to use the internet for authentication traffic, don’t advertise your Active Directory Federation Services (AD FS) public IP address over ExpressRoute.
+- If you want to use the internet for authentication traffic, don't advertise your Active Directory Federation Services (AD FS) public IP address over ExpressRoute.
 
 ### Source-based NAT
 
@@ -146,12 +146,12 @@ If you experience dropped packets, SNAT can help to direct them via the same rou
 
 Use Tracert to check the path your traffic is traveling along.
 
-Open the command prompt and type pathping. The full path is shown below:
+- Open the command prompt and type pathping. The full path is shown below:
 
-```console
-pathping [/n] [/h <maximumhops>] [/g <hostlist>] [/p <Period>] [/q <numqueries> [/w <timeout>] [/i <IPaddress>] [/4 <IPv4>] [/6 <IPv6>][<targetname>]
+  ```console
+  pathping [/n] [/h <maximumhops>] [/g <hostlist>] [/p <Period>] [/q <numqueries> [/w <timeout>] [/i <IPaddress>] [/4 <IPv4>] [/6 <IPv6>][<targetname>]
 
-```
+  ```
 
 ## Troubleshoot forced tunneling issues
 
@@ -171,11 +171,11 @@ Within the Azure portal, you can view metrics for learned routes, BGP peers and 
 
 Follow the steps below to access the BGP metrics within Azure:
 
-- Open the gateway.
+1. Open the gateway.
 
-- Navigate to BGP peers.
+1. Navigate to BGP peers.
 
-:::image type="content" source="../media/3-border-gateway-protocol-peers.png" alt-text="Screenshot of the BGP peers screen.":::
+  :::image type="content" source="../media/3-border-gateway-protocol-peers.png" alt-text="Screenshot of the BGP peers screen.":::
 
 ## Troubleshoot multi-VNet configuration
 
@@ -210,7 +210,7 @@ Points to remember:
 
 - Consider building a hub and spoke network topology so the hub virtual network hosts the infrastructure. The spoke networks then peer with the hub, with traffic flowing through the network virtual applicant or VPN gateway on the hub.
 
-:::image type="content" source="../media/3-service-chaining.png" alt-text="Screenshot of spoke and hub network.":::
+:::image type="content" source="../media/3-service-chaining.png" alt-text="Screenshot of spoke and hub network." lightbox="../media/3-service-chaining.png":::
 
 ### Troubleshoot routing configuration of Azure VMs that function as routers
 

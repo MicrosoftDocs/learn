@@ -17,8 +17,8 @@ abstract: |
 prerequisites: |
   - Experience with the OSI model
   - Demonstrate an awareness of Azure Bastion
-  - Experience with Powershell and Azure CLI
-  - Know how to get to cloud shell to run commands
+  - Experience with PowerShell and Azure CLI
+  - Know how to get to Cloud Shell to run commands
   - Experience with Visual Studio Code
   - Demonstrate an understanding of JSON
 iconUrl: /learn/achievements/generic-badge.svg

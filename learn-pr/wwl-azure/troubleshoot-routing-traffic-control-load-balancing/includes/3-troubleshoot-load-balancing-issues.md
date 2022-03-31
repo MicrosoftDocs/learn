@@ -10,17 +10,17 @@ Each load-balancing solution requires different troubleshooting steps.
 
 To test whether your Traffic Manager settings are correct, you need to have multiple clients in multiple locations. You can then verify DNS resolution for failover using the following steps:
 
-- Flush your DNS cache by running ipconfig /flushdns.
+1. Flush your DNS cache by running ipconfig /flushdns.
 
-- Run nslookup for your company’s domain to verify that it resolves to your primary endpoint.
+1. Run nslookup for your company’s domain to verify that it resolves to your primary endpoint.
 
-- Take down your primary endpoint, wait for the Time-to-Live (TTL) time of your Traffic Manager profile, plus an additional two minutes.
+1. Take down your primary endpoint, wait for the Time-to-Live (TTL) time of your Traffic Manager profile, plus an additional two minutes.
 
-- Flush your DNS cache by running ipconfig /flushdns.
+1. Flush your DNS cache by running ipconfig /flushdns.
 
-- Repeat the nslookup request and verify that it resolves to your secondary endpoint.
+1. Repeat the nslookup request and verify that it resolves to your secondary endpoint.
 
-- Repeat these steps for each endpoint.
+1. Repeat these steps for each endpoint.
 
 You can also test for weighted traffic routing by leaving all endpoints up and repeatedly flushing the cache and running nslookup to verify that traffic is cycling through each endpoint.
 
@@ -94,9 +94,7 @@ When you have the HTTP group response headers, there are a number of responses f
 
 - A 503 response after a few seconds means that regular requests go to your back end without going through Azure Front Door. To resolve this issue, configure the origin response timeouts for the endpoint and extend the default timeout.
 
-  :::image type="content" source="../media/4-endpoint-timeout.png" alt-text="Endpoint default timeout settings":::
-
-- You’re receiving 503 responses from the Azure Front Door, but only for HTTPS requests. Reasons for this could be:
+  - You’re receiving 503 responses from the Azure Front Door, but only for HTTPS requests. Reasons for this could be:
 
   - The back-end pool is an IP address.
 
