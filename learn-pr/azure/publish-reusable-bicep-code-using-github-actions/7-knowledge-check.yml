@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-reusable-bicep-code-using-github-actions.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 03/29/2022
+  author: pazdedav
+  ms.author: dapazd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: What should you do to resolve the error?
+    choices:
+    - content: Use semantic versioning.
+      isCorrect: false
+      explanation: Incorrect. The problem is unrelated to the module versioning strategy.
+    - content: Publish the module manually at the command line, not in an automated workflow.
+      isCorrect: false
+      explanation: Incorrect. You can publish the module from a workflow, as long as the workflow's service principal is authorized to write to the container registry.
+    - content: Grant the service principal permission to write to your container registry.
+      isCorrect: true
+      explanation: Correct. The error message indicates an authorization error, so you need to authorize the service principal to write to the container registry.
+  - content: You need to test the resources defined in a Bicep module. You choose to deploy the resources to your Azure subscription. Which Azure CLI command should you use?
+    choices:
+    - content: |
+        `az ts publish`
+      isCorrect: false
+      explanation: Incorrect. You don't need to publish a template spec.
+    - content: |
+        `az bicep publish`
+      isCorrect: false
+      explanation: Incorrect. You need to deploy the resources defined in the module, not publish the module itself.
+    - content: |
+        `az deployment group create`
+      isCorrect: true
+      explanation: Correct. You should deploy the resources using the `az deployment group create` command.
+  - content: Suppose your team uses a multipart versioning system. Which of the following changes to a Bicep file should result in a change to the *major* version number?
+    choices:
+    - content: You add a new variable.
+      isCorrect: false
+      explanation: Incorrect. Adding a new variable isn't a breaking change, so you don't need to update the major version.
+    - content: You add a new mandatory parameter.
+      isCorrect: true
+      explanation: Correct. Adding a new parameter is a breaking change, because anybody who uses the Bicep file must update their deployments to provide a value for the parameter.
+    - content: You add a new output.
+      isCorrect: false
+      explanation: Incorrect. Adding a new output isn't a breaking change, so you don't need to update the major version.
