@@ -14,4 +14,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-exercise-business-continuity-issues.md)]
-interactive: bash
+interactive: powershell
