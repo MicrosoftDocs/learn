@@ -61,7 +61,7 @@ The following alert capabilities aren't yet available for the generation of moni
 
 Not every alert rule that you create needs to run forever. With Azure Monitor, you can specify one or more alert rules, and enable or disable them, as needed.
 
-As an Azure solution architect, you would use Azure Monitor to enable tightly-focused and specific alerts before any application change. You would then disable the alerts after a successful deployment.
+As an Azure solution architect, you would use Azure Monitor to enable tightly focused and specific alerts before any application change. You would then disable the alerts after a successful deployment.
 
 ## Alert summary view
 
