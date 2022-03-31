@@ -25,7 +25,7 @@ In this exercise, you’ll use what you’ve learned to go through steps to trou
 
 1. The script will create all the resources. Wait until it completes, you should see a **Webserver Pool Created** message.
 
-     :::image type="content" source="../media/4-webserver-pool.png" alt-text="Screenshot of the Azure cloud shell showing the Webserver Pool created message.":::
+     :::image type="content" source="../media/4-webserver-pool.png" alt-text="Screenshot of the Azure Cloud Shell showing the Webserver Pool created message.":::
 
 ## Check the Load Balancer settings
 
