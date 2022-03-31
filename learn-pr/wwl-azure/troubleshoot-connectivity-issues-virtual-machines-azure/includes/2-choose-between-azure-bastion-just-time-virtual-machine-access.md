@@ -10,13 +10,13 @@ The Azure Bastion Service allows you to use an HTML5 web-based client directly f
 
 There are many benefits to this approach:
 
-The web client connects an RDP or SSH session over the industry standard TLS on port 443. The same port browsers are used for HTTPS connections. Using TLS over 443 enables you to traverse your corporate firewalls securely without the need to open any more ports.
+- The web client connects an RDP or SSH session over the industry standard TLS on port 443. The same port browsers are used for HTTPS connections. Using TLS over 443 enables you to traverse your corporate firewalls securely without the need to open any more ports.
 
-You can harden your VMs as they no longer need a public facing IP address. Azure Bastion connects over a private IP address.
+- You can harden your VMs as they no longer need a public facing IP address. Azure Bastion connects over a private IP address.
 
-You no longer need to add another NSG to allow users to connect to the VMs. You just create a single secure NSG for Azure Bastion to connect over its secure private IP address.
+- You no longer need to add another NSG to allow users to connect to the VMs. You just create a single secure NSG for Azure Bastion to connect over its secure private IP address.
 
-As your VMs no longer have a public facing IP address, they are automatically protected from external port scanning by malicious users outside your virtual network.
+- As your VMs no longer have a public facing IP address, they are automatically protected from external port scanning by malicious users outside your virtual network.
 
 ## Capabilities of just-in-time VM access
 

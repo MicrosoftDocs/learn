@@ -64,4 +64,4 @@ You use Access control (IAM) to check which users have been granted access to a 
 
 You can review the currently enabled and used JIT VM access in the Microsoft Defender for Cloud advanced protection section.
 
-:::image type="content" source="../media/current-just-time-access.png" alt-text="A screenshot of the currently configured JIT VM access. Showing two VM’s and their current status of access.":::
+:::image type="content" source="../media/current-just-time-access.png" alt-text="A screenshot of the currently configured JIT VM access showing two VMs and their current status of access.":::

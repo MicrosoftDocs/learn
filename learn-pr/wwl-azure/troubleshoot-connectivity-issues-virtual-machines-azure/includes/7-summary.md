@@ -14,10 +14,10 @@ Now that you’ve completed this module, you should be able to:
 
 For more information about the topics discussed in this module, see:
 
-[https://docs.microsoft.com/azure/bastion/troubleshoot](/azure/bastion/troubleshoot)
+[Troubleshoot Azure Bastion](/azure/bastion/troubleshoot)
 
-[https://docs.microsoft.com/azure/defender-for-cloud/just-in-time-access-overview](/azure/defender-for-cloud/just-in-time-access-overview)
+[Understanding just-in-time (JIT) VM access](/azure/defender-for-cloud/just-in-time-access-overview)
 
-[https://docs.microsoft.com/azure/bastion/diagnostic-logs](/azure/bastion/diagnostic-logs)
+[Enable and work with Bastion resource logs](/azure/bastion/diagnostic-logs)
 
-[https://docs.microsoft.com/azure/bastion/bastion-overview](/azure/bastion/bastion-overview)
+[What is Azure Bastion?](/azure/bastion/bastion-overview)

@@ -52,13 +52,13 @@ Outbound rules
 
 If your users are having access issues, check that they have roles that grant them read access to all these resources:
 
-The virtual machine
+- The virtual machine
 
-The NIC
+- The NIC
 
-The Azure Bastion Service and AzureBastionSubnet
+- The Azure Bastion Service and AzureBastionSubnet
 
-If it’s a peered network, the virtual network
+- If it’s a peered network, the virtual network
 
-If all these resources are correct and the user is still seeing a black screen when they try to connect with Azure Bastion, there’s likely a network connectivity issue. Either between the user’s web browser and Azure Bastion
+If all these resources are correct and the user is still seeing a black screen when they try to connect with Azure Bastion, there’s likely a network connectivity issue between the user’s web browser and Azure Bastion.
 
