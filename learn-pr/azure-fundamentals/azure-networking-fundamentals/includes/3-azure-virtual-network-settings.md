@@ -26,7 +26,7 @@ You'll configure the following settings for a basic virtual network:
     > Subnet names must begin with a letter or number and end with a letter, number, or underscore. They may contain only letters, numbers, underscores, periods, or hyphens.
 
  -  **Service endpoints** Here, you enable service endpoints. Then you select from the list which Azure service endpoints you want to enable. Options include Azure Cosmos DB, Azure Service Bus, Azure Key Vault, and so on.
- -  **NAT gateway** A NAT gateway is a fully managed and higly resilient Network Address Translation (NAT) service. You can configure a subnet to use a static outbound IP address when accessing the internet. For more information about NAT gateway, see [Azure Virtual Network NAT overview](/azure/virtual-network/nat-gateway/nat-overview)
+ -  **NAT gateway** A NAT gateway is a fully managed and highly resilient Network Address Translation (NAT) service. You can configure a subnet to use a static outbound IP address when accessing the internet. For more information about NAT gateway, see [Azure Virtual Network NAT overview](/azure/virtual-network/nat-gateway/nat-overview)
 
 :::image type="content" source="../media/create-virtual-network-security-286df13c.png" alt-text="Screenshot of the Azure portal showing the security page of create virtual network.":::
 
