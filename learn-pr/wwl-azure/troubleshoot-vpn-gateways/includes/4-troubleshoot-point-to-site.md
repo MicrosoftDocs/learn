@@ -66,7 +66,7 @@ Azure Monitor also identifies issues before they become a problem. It monitors a
 
 - Diagnose routing issues.
 
-- Analyse network security group flow logs.
+- Analyze network security group flow logs.
 
 - Gain visibility and control over your Azure network.
 
@@ -110,7 +110,7 @@ Typical troubleshooting solutions are:
 
 Typical errors likely to be certificate-based are:
 
-- A certificate that can be used with this Extensible Authentication Protocol could not be found. (Error 798.)
+- A certificate that can be used with this Extensible Authentication Protocol couldn't be found. (Error 798.)
 
 - A certificate chain processed but terminated in a root certificate that isn't trusted by the trust provider.
 
@@ -148,7 +148,7 @@ Typical client-side messages or problems are:
 
 - VPN clients can't access network file shares.
 
-- VPN Client Error: The remote connection was not made because the attempted VPN tunnels failed. (Error 800.)
+- VPN Client Error: The remote connection wasn't made because the attempted VPN tunnels failed. (Error 800.)
 
 Some key areas to investigate are:
 
@@ -180,7 +180,7 @@ The results should have an IP address contained within the Client Address Pool a
 
 Common error messages are:
 
-- The network connection between your computer and the VPN server could not be established because the remote server isn't responding.
+- The network connection between your computer and the VPN server couldn't be established because the remote server isn't responding.
 
 - The message received was unexpected or badly formatted. (Error 0x80090326.)
 
@@ -252,7 +252,7 @@ The following checklist can help you troubleshoot VPN connections using point-to
 
 1. Have you opened the Azure VPN client screen and viewed the status log for any error messages?
 
-:::image type="content" source="../media/4-azure-status-screen.png" alt-text="Screenshot of A Z status log screen.":::
+   :::image type="content" source="../media/4-azure-status-screen.png" alt-text="Screenshot of A Z status log screen.":::
 
 - Have you cleared the signed-in information and tried to connect?
 
@@ -264,7 +264,7 @@ The following checklist can help you troubleshoot VPN connections using point-to
 
 - Have you viewed the client log files?
 
-   :::image type="content" source="../media/4-azure-log-directory.png" alt-text="Screenshot of Log Directory area within Azure AD..":::
+   :::image type="content" source="../media/4-azure-log-directory.png" alt-text="Screenshot of Log Directory area within Azure AD.":::
 
 ## Troubleshoot OpenVPN connectivity issues
 
@@ -282,11 +282,11 @@ Check the client log files:
 
 - Have you opened the required three ports: TCP 443, TCP 943, and UDP 1194?
 
-If the OpenVPN tunnel is established, but you can’t reach a specific endpoint, these tools might help you to visualise the traffic, to test which path it follows:
+If the OpenVPN tunnel is established, but you can’t reach a specific endpoint, these tools might help you to visualize the traffic, to test which path it follows:
 
-- TCPdump ‒ a Linux command-line tool that can visualise network packets.
+- TCPdump ‒ a Linux command-line tool that can visualize network packets.
 
-- WireShark ‒ a Windows GUI tool to visualise network packets.
+- WireShark ‒ a Windows GUI tool to visualize network packets.
 
 - Ping ‒ a testing tool to determine if a message can be sent back and forth between a source and destination.
 
@@ -300,7 +300,7 @@ Alerts can be set up in the Azure portal or PowerShell to monitor VPN gateway me
 
 Go to the virtual gateway resource within the Azure portal. Select **Overview** to see the total tunnel ingress and egress metrics. Other metrics for [monitoring VPN gateways](/azure/vpn-gateway/monitor-vpn-gateway) can be viewed by clicking the Metrics sections and selecting the required metric from the dropdown list. Alerts can be created for any metric by selecting **Alerts** from the **Monitoring** tab. For a resource alert, you select **Create** from the **Log Analytics** page.
 
-## Troubleshoot MacOS point-to-site issues
+## Troubleshoot macOS point-to-site issues
 
 Are you using the correct version? Point-to-site only uses OS version 10.11 or higher.
 
@@ -308,7 +308,7 @@ Are you using the correct version? Point-to-site only uses OS version 10.11 or h
 
    - Server Address – have you entered the server address as a complete Fully Qualified Domain Name (FQDN)?
 
-   - Remote ID ‒ iks the remote ID the same as the Server Address (Gateway FQDN)?
+   - Remote ID ‒ is the remote ID the same as the Server Address (Gateway FQDN)?
 
    - Local ID – is the local ID the same as the subject of the client certificate?
 
@@ -320,7 +320,7 @@ Are you using the correct version? Point-to-site only uses OS version 10.11 or h
 
 1. Still In **Authentication Settings**, change the dropdown to show **Username** and check the credentials are correct.
 
-   :::image type="content" source="../media/4-mac-os-username-authentication.png" alt-text="Screenshot of Mac O S X authentication username screen..":::
+   :::image type="content" source="../media/4-mac-os-username-authentication.png" alt-text="Screenshot of Mac O S X authentication username screen.":::
 
 1. If you still experience problems, download Wireshark and run a packet capture.
 
