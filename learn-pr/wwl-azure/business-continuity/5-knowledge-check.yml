@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What should an administrator view to see whether a scheduled backup has completed succesfully?"
+  - content: "What should an administrator view to see whether a scheduled backup has completed successfully?"
     choices:
     - content: "Azure Backup Center vault status"
       isCorrect: false
