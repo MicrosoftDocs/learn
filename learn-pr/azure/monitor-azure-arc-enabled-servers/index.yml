@@ -28,12 +28,12 @@ products:
 - azure
 - azure-arc
 units:
-- learn.azure.secure-azure-arc-enabled-servers.introduction
-- learn.azure.secure-azure-arc-enabled-servers.deploy-and-manage-observability-agents-with-ease-using-vm-extensions-for-azure-arc-enabled-servers
-- learn.azure.secure-azure-arc-enabled-servers.onboard-azure-arc-enabled-servers-to-vm-insights
-- learn.azure.secure-azure-arc-enabled-servers.develop-a-robust-data-foundation-of-azure-arc-enabled-servers-with-azure-monitor-metrics-and-logs
-- learn.azure.secure-azure-arc-enabled-servers.smart-and-scalable-alerts-for-azure-arc-enabled-servers-with-azure-monitor
-- learn.azure.secure-azure-arc-enabled-servers.knowledge-check
-- learn.azure.secure-azure-arc-enabled-servers.summary
+- learn.azure.monitor-azure-arc-enabled-servers.introduction
+- learn.azure.monitor-azure-arc-enabled-servers.deploy-and-manage-observability-agents-with-ease-using-vm-extensions-for-azure-arc-enabled-servers
+- learn.azure.monitor-azure-arc-enabled-servers.onboard-azure-arc-enabled-servers-to-vm-insights
+- learn.azure.monitor-azure-arc-enabled-servers.develop-a-robust-data-foundation-of-azure-arc-enabled-servers-with-azure-monitor-metrics-and-logs
+- learn.azure.monitor-azure-arc-enabled-servers.smart-and-scalable-alerts-for-azure-arc-enabled-servers-with-azure-monitor
+- learn.azure.monitor-azure-arc-enabled-servers.knowledge-check
+- learn.azure.monitor-azure-arc-enabled-servers.summary
 badge:
-  uid: learn.azure.secure-azure-arc-enabled-servers.badge
+  uid: learn.azure.monitor-azure-arc-enabled-servers.badge
