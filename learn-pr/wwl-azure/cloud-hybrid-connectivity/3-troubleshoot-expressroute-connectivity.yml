@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.cloud-hybrid-connectivity.troubleshoot-expressroute-connectivity
+title: Troubleshoot ExpressRoute connectivity
+metadata:
+  title: Troubleshoot ExpressRoute connectivity
+  description: "Troubleshoot ExpressRoute connectivity"
+  ms.date: 03/31/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-troubleshoot-expressroute-connectivity.md)]
