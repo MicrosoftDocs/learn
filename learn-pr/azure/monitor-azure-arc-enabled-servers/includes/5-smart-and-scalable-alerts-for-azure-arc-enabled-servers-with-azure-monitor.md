@@ -4,7 +4,7 @@ Tailwind Manufacturing is interested in setting up a system of alerts to respond
 
 Alerts proactively notify you when issues are found with your infrastructure or application using your monitoring data in Azure Monitor. They allow you to identify and address issues before the users of your system notice them. The following diagram shows the core components of Azure Monitor alerts: alert rules, action groups, and monitor conditions. 
 
-![](../media/image8.png)
+![Alert rule diagram](../media/image8.png)
 
 Alert rules are separated from alerts and the actions taken when an alert fires. The alert rule captures the target and criteria for alerting. Key attributes of an alert include:
 
@@ -31,17 +31,17 @@ Follow these steps to define a new alert rule for Azure Arc-enabled servers. We 
 1. Select the target Azure Arc-enabled servers as the scope of the rule.
 1. **Select the signal \LogicalDisk(\_Total)\% Disk Time (Azure.VM.Windows.GuestMetrics)**
 
-![Graphical user interface  Description automatically generated](../media/image9.png)
+![Create an alert rule](../media/image9.png)
 
 7. Enter the **Threshold Value **of 0.5 above which the alert rule will be triggered and select **Done**.
 
-![Graphical user interface, text, application  Description automatically generated](../media/image10.png)
+![Create signal logic](../media/image10.png)
 
 8. Select **Create a new Action Group** to define the response to the alert.
 1. For Basics, enter the Subscription, Resource Group, and Action Group Name.
 1. For Notifications, select **Email Azure Resource Manager Role **and choose **Owner** from the dropdown options. 
 
-![Graphical user interface, application  Description automatically generated](../media/image11.png)
+![Create action group](../media/image11.png)
 
 11. Enter a **Notification Name** and select **Review + Create** for the Action Group. 
 1. Select **Review + Create** for the alert rule. 
