@@ -1,6 +1,6 @@
 ## Introduction
 
-The Producer thread is restricted to putting instances on the counting semaphore (*StorageFacility*) and the Consumer thread is restricted to getting instances from the counting semaphore. It's possible because there's no concept of ownership for counting semaphores. Furthermore, the Producer thread will always succeed in putting an instance on *StorageFacility*. 
+The Producer thread is restricted to putting instances on the counting semaphore (*StorageFacility*) and the Consumer thread is restricted to getting instances from the counting semaphore. It's possible because there's no concept of ownership for counting semaphores. Furthermore, the Producer thread will always succeed in putting an instance on *StorageFacility*.
 
 The astute reader will ask the question: what if *StorageFacility* is full, that is, it contains 2<sup>31</sup>-1 instances?
 

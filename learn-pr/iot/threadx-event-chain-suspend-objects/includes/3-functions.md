@@ -24,7 +24,7 @@ Thus, when a message is sent to my_queue, an instance is placed on the semaphore
 
 Following is a three-step illustration for an application where a thread needs to get a message from any one of three queues. The thread suspends on counting semaphore Gatekeeper, waiting for a message. If the count of Gatekeeper is zero, then there are no messages on any of the three queues. Each time an instance is placed on Gatekeeper, the count increases. Consequently, the count in Gatekeeper is exactly the number of messages that are on all three queues combined.
 
-The following figure illustrates that the thread is waiting for a message for any of the now-empty queues:
+The following image illustrates that the thread is waiting for a message for any of the now-empty queues:
 
 :::image type="content" alt-text="Diagram that illustrates the thread waiting for a message for any of the queues." source="../media/thread-waits-for-message.svg" loc-scope="Azure":::
 

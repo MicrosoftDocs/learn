@@ -7,6 +7,7 @@ We'll first compare the properties of mutexes and counting semaphores, and then 
 ## Learning objectives
 
 In this module, you'll:
+
 - Use a counting semaphore in an event notification application.
 - Use two threads in a producer-consumer scenario.
 - Understand the difference between mutual exclusion and event notification.

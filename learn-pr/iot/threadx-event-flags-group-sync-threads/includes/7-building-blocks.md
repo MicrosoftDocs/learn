@@ -14,6 +14,7 @@ We'll use this code to create declarations, definitions, and prototypes:
 
 > [!NOTE]
 > The highlighted lines of code:
+>
 > - Add a synchronization value.
 > - Create an event flags group. (You'll need one more thread for this project.)
 > - Add another counter, variables for thread performance, and one more prototype.
@@ -82,5 +83,5 @@ We'll use this code to create the print_stats application timer function:
 :::code language="c" source="../code/project-event-flags.c" range="146-177" highlight="2-5":::
 
 > [!NOTE]
->  The highlighted lines of code mody the function to include data for the thread you created.
+> The highlighted lines of code mody the function to include data for the thread you created.
 >

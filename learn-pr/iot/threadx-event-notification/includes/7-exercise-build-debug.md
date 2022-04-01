@@ -29,9 +29,10 @@ You get to conduct a little experiment in this project. You'll observe whether P
 
 If all has gone well, you should see initial output appearing on the screen similar to the following image:
 
-:::image type="content" source="../media/figure-12-partial-output.png" alt-text="Sample partial output." border="false"::: 
+:::image type="content" source="../media/figure-12-partial-output.png" alt-text="Sample partial output." border="false":::
 
 > [!NOTE]
+>
 > - After 200 timer ticks, the count of *StorageFacility* is 23.
 
 It's clear that Producer is putting many more instances in *StorageFacility* than Consumer can get. The question is, what would happen if we added a second consumer? That is precisely the modification you're about to make. Let's assign the name of Consumer2 to the second consumer. Consumer2 will be identical to the original consumer, that is, it will have priority 15, and it will get an instance from *StorageFacility* every 12 timer ticks.
@@ -45,6 +46,7 @@ After you have made your modifications, build and debug *ProjectProducerConsumer
 :::image type="content" source="../media/figure-13-final-output.png" alt-text="Sample complete output." border="false":::
 
 > [!NOTE]
+>
 > - After 200 timer ticks, the count of *StorageFacility* is 6.
 
 What would happen if you decreased the sleep time of the consumers?
