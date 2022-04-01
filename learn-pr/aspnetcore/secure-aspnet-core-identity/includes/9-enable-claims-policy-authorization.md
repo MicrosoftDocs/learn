@@ -80,16 +80,16 @@ In order to determine which users should get the `IsAdmin=True` claim, your app 
 
     This will be the confirmed email address that gets the claim assigned.
 
-1. In *Areas/Identity/Pages/ConfirmEmail.cshtml.cs*, make the following changes:
+1. In *Areas/Identity/Pages/Account/ConfirmEmail.cshtml.cs*, make the following changes:
     1. Incorporate the following changes:
 
-        [!code-csharp[](../code/areas/identity/pages/confirmemail.cshtml.cs?name=snippet_configproperty&highlight=4,6-7,10)]
+        [!code-csharp[](../code/areas/identity/pages/account/confirmemail.cshtml.cs?name=snippet_configproperty&highlight=4,6-7,10)]
 
         The preceding change modifies the constructor to receives an `IConfiguration` from the IoC container. The `IConfiguration` contains values from *appsettings.json*, and is assigned to a read-only property named `Configuration`.
 
     1. Apply the highlighted changes to the `OnGetAsync` method:
 
-        [!code-csharp[](../code/areas/identity/pages/confirmemail.cshtml.cs?name=snippet_ongetasync&highlight=18-24)]
+        [!code-csharp[](../code/areas/identity/pages/account/confirmemail.cshtml.cs?name=snippet_ongetasync&highlight=18-24)]
 
         In the preceding code:
 
@@ -129,7 +129,10 @@ In order to determine which users should get the `IsAdmin=True` claim, your app 
 Using the SQL Server extension in VS Code, run the following query:
 
 ```sql
-SELECT u.Email, c.ClaimType, c.ClaimValue FROM dbo.AspNetUserClaims AS c INNER JOIN dbo.AspNetUsers AS u ON c.UserId = u.Id
+SELECT u.Email, c.ClaimType, c.ClaimValue
+FROM dbo.AspNetUserClaims AS c
+    INNER JOIN dbo.AspNetUsers AS u
+    ON c.UserId = u.Id
 ```
 
 A tab with results similar to the following appears:

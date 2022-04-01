@@ -107,7 +107,8 @@ Now that you can generate QR codes, you can embed a QR code into the **Configure
 1. In the *SQL Server* tab in VS Code, right-click the **RazorPagesPizza** database and select **New query**. Enter the following query and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to run it.
 
     ```sql
-    SELECT FirstName, LastName, Email, TwoFactorEnabled FROM dbo.AspNetUsers
+    SELECT FirstName, LastName, Email, TwoFactorEnabled
+    FROM dbo.AspNetUsers
     ```
 
     For the logged in user, the output shows that the `TwoFactorEnabled` column is equal to `1`. Because multi-factor authentication hasn't been enabled for the other registered user, the record's column value is `0`.

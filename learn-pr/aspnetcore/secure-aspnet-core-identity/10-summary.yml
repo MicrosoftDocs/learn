@@ -9,8 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Summary
-azureSandbox: true
-interactive: bash
 durationInMinutes: 2
 content: |
   [!include[](includes/10-summary.md)]

@@ -50,7 +50,7 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
     > * Save the certificate and add it to your trusted certificate authorities.
     > * Import an existing development certificate inside the container. For more details, see the generated comments in *./devcontainer/devcontainter.json*.
     >
-    > If you choose to import an existing development certificate inside the container, the container path */root/.aspnet/* is exposed as *.devcontainer\persisted-data\.aspnet* outside the container. This is for your convenience.
+    > If you choose to import an existing development certificate inside the container, the container path */root/.aspnet/* is exposed as *.devcontainer/persisted-data/.aspnet* outside the container. This is for your convenience.
     >
     > If you're using the *.devcontainer* in GitHub Codespaces, no action is required. Codespaces handles the proxy SSL connection automatically.
 

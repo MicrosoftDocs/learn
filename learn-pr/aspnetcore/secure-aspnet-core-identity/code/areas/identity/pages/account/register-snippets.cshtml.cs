@@ -14,6 +14,8 @@ public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
         var result = await _userManager.CreateAsync(user, Input.Password);
 
+#endregion
+
         if (result.Succeeded)
         {
             _logger.LogInformation("User created a new account with password.");
@@ -49,7 +51,7 @@ public async Task<IActionResult> OnPostAsync(string returnUrl = null)
     // If we got this far, something failed, redisplay form
     return Page();
 }
-#endregion
+
 
 #region snippet_InputModel
 public class InputModel
@@ -72,6 +74,7 @@ public class InputModel
     [EmailAddress]
     [Display(Name = "Email")]
     public string Email { get; set; }
+#endregion
 
     /// <summary>
     ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
@@ -92,4 +95,3 @@ public class InputModel
     [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
     public string ConfirmPassword { get; set; }
 }
-#endregion

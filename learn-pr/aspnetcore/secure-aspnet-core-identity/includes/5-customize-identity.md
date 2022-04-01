@@ -131,7 +131,7 @@ Now that the model changes have been made, accompanying changes must be made to 
 
     1. Modify the `OnPostAsync` method to set the `FirstName` and `LastName` properties on the `RazorPagesPizza` object. Add the following highlighted lines:
 
-        [!code-csharp[](../code/areas/identity/pages/account/register-snippets.cshtml.cs?name=snippet_onpostasync&range=1-16&highlight=9-10)]
+        [!code-csharp[](../code/areas/identity/pages/account/register-snippets.cshtml.cs?name=snippet_onpostasync&highlight=9-10)]
 
         The preceding change sets the `FirstName` and `LastName` properties to the user input from the registration form.
 
@@ -139,7 +139,7 @@ Now that the model changes have been made, accompanying changes must be made to 
 
 Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the first and last name collected during user registration. The highlighted lines in the following snippet are needed:
 
-[!code-cshtml[](../code/pages/shared/_loginpartial.cshtml?highlight=9-10,13)]
+[!code-cshtml[](../code/pages/shared/_loginpartial.cshtml?name=snippet_razorpagesuser&highlight=4-5,8)]
 
 ## Customize the profile management form
 
@@ -243,7 +243,8 @@ In order to send the confirmation email, you need to create an implementation of
 1. In the **SQL Server** pane in VS Code, right-click on the **RazorPagesPizza** database and select **New query**. In the tab that appears, enter the following query and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to run it.
 
     ```sql
-    SELECT UserName, Email, FirstName, LastName FROM dbo.AspNetUsers
+    SELECT UserName, Email, FirstName, LastName
+    FROM dbo.AspNetUsers
     ```
 
     A tab with results similar to the following appears:

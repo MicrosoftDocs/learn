@@ -29,17 +29,17 @@ Before you start, ensure you have the following tools installed:
 * [Visual Studio Code](https://code.visualstudio.com)
 * [.NET 6 SDK](https://dotnet.microsoft.com/download)
 * [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb)
-* [Git CLI](https://git-scm.com/docs/gitcli)
+* [Git](https://git-scm.com/docs/gitcli)
 
-Alternatively, this module includes a *[.devcontainer](https://code.visualstudio.com/docs/remote/create-dev-container)* file. The *.devcontainer* file defines a container pre-configured .NET 6 SDK and SQL Server, as well as the appropriate tools and extensions. We recommend this approach for the best experience.
+Alternatively, this module includes a *[.devcontainer](https://code.visualstudio.com/docs/remote/create-dev-container)* file. The *.devcontainer* file defines a container pre-configured with .NET 6 SDK, SQL Server, and the extensions. We recommend this approach for the best experience.
 
 Using the *.devcontainer* requires only:
 
 * [Visual Studio Code](https://code.visualstudio.com) with the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
-* [Git CLI](https://git-scm.com/docs/gitcli)
+* [Git](https://git-scm.com/docs/gitcli)
 * [Docker Desktop](https://www.docker.com)
 
-You can also use the *.devcontainer* without **any** local tools using [GitHub Codespaces](https://github.com/features/codespaces) [Regular charges apply](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-codespaces#codespaces-pricing).
+You can also use the *.devcontainer* without **any** local tools using [GitHub Codespaces](https://github.com/features/codespaces) [Charges apply](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-codespaces#codespaces-pricing).
 
 ## Get started
 
