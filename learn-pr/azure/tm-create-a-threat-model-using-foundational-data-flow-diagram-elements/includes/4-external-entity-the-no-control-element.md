@@ -21,5 +21,5 @@ Include the following context to each external entity element:
 |-------|---------|
 |Source|Is the entity internal or external?|
 |Type|Is the entity human, a service provider, or web service?|
-|Authentication|Does the process rely on Azure Active Directory for authentication? If not, what does it rely on?|
-|Authorization|Does it rely on Access Control Lists (ACL) for authorization? If not, what does it rely on?|
+|Authentication|Does the process rely on Azure Active Directory for authentication? If not, on what does it rely?|
+|Authorization|Does it rely on Access Control Lists (ACL) for authorization? If not, on what does it rely?|
