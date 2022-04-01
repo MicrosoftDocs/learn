@@ -3,7 +3,7 @@ uid: learn.tm-introduction-to-threat-modeling
 metadata:
   title: Introduction to threat modeling
   description: Explore the four high-level steps of threat modeling.
-  ms.date: 02/28/2020
+  ms.date: 03/31/2022
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial

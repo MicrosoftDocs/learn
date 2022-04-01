@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/31/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which three subnets do you need for a user-defined route?"
+    choices:
+    - content: "Public, Private, Open"
+      isCorrect: false
+      explanation: "That's incorrect. Although you need a public and private subnet, you require a different subnet to give a protection layer."
+    - content: "Two public and one private"
+      isCorrect: false
+      explanation: "That's incorrect. Although you need a public and private subnet, you require a different subnet to give a protection layer."
+    - content: "Public, Private, DMZ"
+      isCorrect: true
+      explanation: "That's correct. The perimeter network demilitarized zone (DMZ) subnet gives an added layer of protection to a local area network (LAN)."
+  - content: "Which of the following is a valid routing method used by Azure Traffic Manager?"
+    choices:
+    - content: "Premium"
+      isCorrect: false
+      explanation: "That's incorrect. This isn't a valid routing method."
+    - content: "Performance"
+      isCorrect: true
+      explanation: "That's correct. The six methods are Priority, Weighted, Performance, Geographic, Multivalue, and Subnet."
+    - content: "Basic"
+      isCorrect: false
+      explanation: "That's incorrect. This isn't a valid routing method."
+  - content: "If you experience connectivity problems with a virtual appliance, who should you contact?"
+    choices:
+    - content: "Microsoft Help Support"
+      isCorrect: false
+      explanation: "That's incorrect. Microsoft can't assist with virtual appliance connectivity issues."
+    - content: "The NVA vendor."
+      isCorrect: true
+      explanation: "That's correct. You should always check with the vendor if you have connectivity issues."
+    - content: "Azure Help and Support"
+      isCorrect: false
+      explanation: "That's incorrect. Azure can't assist with virtual appliance connectivity issues."

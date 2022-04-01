@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-network-security-issues.troubleshoot-azure-firewall
+title: Troubleshoot Azure Firewall
+metadata:
+  title: Troubleshoot Azure Firewall
+  description: "Troubleshoot Azure Firewall"
+  ms.date: 03/31/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-troubleshoot-azure-firewall.md)]

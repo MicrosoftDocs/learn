@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-authentication-access-control.troubleshoot-authorization-issues
+title: Troubleshoot authorization issues with Microsoft Azure
+metadata:
+  title: Troubleshoot authorization issues with Microsoft Azure
+  description: "Troubleshoot authorization issues with Microsoft Azure"
+  ms.date: 03/31/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-troubleshoot-authorization-issues.md)]
