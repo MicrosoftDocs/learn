@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 04/01/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
@@ -20,9 +19,9 @@ quiz:
   questions:
   - content: "What is Microsoft's Cloud Access Security Broker solution?"
     choices:
-    - content: "Microsoft Cloud App Security"
+    - content: "Microsoft Defender for Cloud Apps"
       isCorrect: true
-      explanation: "Correct. Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy."
+      explanation: "Correct. Microsoft Defender for Cloud Apps is a Cloud Access Security Broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy."
     - content: "Microsoft Cloud Computing Services"
       isCorrect: false
       explanation: "Incorrect. Microsoft Azure is Microsoft's cloud computing services."
