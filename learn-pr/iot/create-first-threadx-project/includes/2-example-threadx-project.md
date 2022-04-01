@@ -15,7 +15,7 @@ The four building blocks are defined in more detail below.
 
 ## Building block 1
 
-`#includes and definitions` is shown in the code block below. The code contains an essential header `(#include tx_api.h)` and two definitions:
+`#includes and definitions` are shown in the code block below. The code contains an essential header `#include tx_api.h` and two definitions:
 
 ```c
 #include "tx_api.h"
@@ -63,16 +63,16 @@ In this case, only one thread is created and the meanings of the thread create p
 
 |Parameter   | Meaning   |
 |---|---|
-|&my_thread | pointer to the thread control block (TCB) structure |
-|"My Thread" | pointer to a string with the thread name |
-|my_thread_entry | thread’s entry function |
-|0x1234 | entry function parameter to be used by the developer |
-|first_unused_memory | pointer to the start of the thread’s stack area |
-|1024 | thread’s stack size in bytes |
-|3 | thread’s priority level |
-|3 | thread’s preemption threshold (not used because it's the same value as the priority) |
-|TX_NO_TIME_SLICE | thread’s time slice (0 in this case) |
-|TX_AUTO_START | means that the thread will be started automatically by the kernel|
+|`&my_thread` | pointer to the thread control block (TCB) structure |
+|`"My Thread"` | pointer to a string with the thread name |
+|`my_thread_entry` | thread’s entry function |
+|`0x1234` | entry function parameter to be used by the developer |
+|`first_unused_memory` | pointer to the start of the thread’s stack area |
+|`1024` | thread’s stack size in bytes |
+|`3` | thread’s priority level |
+|`3` | thread’s preemption threshold (not used because it's the same value as the priority) |
+|`TX_NO_TIME_SLICE` | thread’s time slice (0 in this case) |
+|`TX_AUTO_START` | means that the thread will be started automatically by the kernel|
 
 ## Building block 4
 

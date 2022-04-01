@@ -2,7 +2,7 @@
 
 Finally, you get to work on your first Hello World project! We'll use GitHub Codespaces or Visual Studio, and you have a C project called *ProjectHelloWorld* to modify.
 
-If you haven't done so already you'll need to set up your development environment in accordance with the [instructions](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) in the module titled Azure RTOS ThreadX fundamentals.
+If you haven't done so already you'll need to set up your development environment in accordance with the [instructions](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) in the module titled **Azure RTOS ThreadX fundamentals**.
 
 ## Use GitHub Codespaces
 
