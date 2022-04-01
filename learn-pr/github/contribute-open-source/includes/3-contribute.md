@@ -37,6 +37,12 @@ After a pull request is created, it can be updated with new commits, comments, o
 
     :::image type="content" source="../media/3-fork.png" alt-text="Screenshot showing the Fork button of a GitHub project.":::
 
+1. Select **Your repositories** from your account profile menu.
+
+   :::image type="content" source="../media/3-my-repositories.png" alt-text="Screenshot showing the profile drop-down menu with the your repositories item identified.":::
+
+1. Select the repository fork.
+
 1. Select the **Code** button to get information on how to "clone" the Git repository to your local machine.
 
     :::image type="content" source="../media/3-clone.png" alt-text="Screenshot showing the options for cloning a GitHub project.":::

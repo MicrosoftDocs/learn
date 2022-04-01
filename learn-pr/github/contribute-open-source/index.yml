@@ -37,7 +37,7 @@ products:
   - github
   - azure
 prerequisites: |
-  - A GitHub account
+  - A [GitHub account](https://github.com/?azure-portal=true)
   - The ability to navigate and edit files in GitHub
 units:
   - learn.github.contribute-opensource.1-introduction
