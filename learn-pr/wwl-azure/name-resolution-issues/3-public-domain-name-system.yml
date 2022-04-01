@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.name-resolution-issues.public-dns
+title: Troubleshoot public DNS in Microsoft Azure
+metadata:
+  title: Troubleshoot public DNS in Microsoft Azure
+  description: "Troubleshoot public DNS in Microsoft Azure"
+  ms.date: 04/01/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-public-domain-name-system.md)]
