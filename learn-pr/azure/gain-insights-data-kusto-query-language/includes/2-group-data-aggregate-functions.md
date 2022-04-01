@@ -8,7 +8,7 @@ The data in the storm events scenario is presented on an event level, meaning th
 
 An aggregation function allows you to make these comparisons by grouping values of multiple rows to form a single summary value. The type of summary value depends on the specific function you use, and could be a count, average, maximum, minimum, or median value, just to name a few. For example, the following illustration summarizes the count of storm types by location.
 
-:::image type="content" source="../media/2-groups-of-data.svg" alt-text="Illustration that shows shows the count of storm types by location." border="false":::
+:::image type="content" source="../media/2-groups-of-data.svg" alt-text="Illustration that shows the count of storm types by location." border="false":::
 
 ## Present the results visually
 
