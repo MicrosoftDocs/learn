@@ -2,27 +2,27 @@
 uid: learn.azure.gain-insights-data-kql
 metadata:
   moduleType: standard
-  title: Gain insights in your data using Kusto Query Language
-  description: "Gain insights in your data using the Kusto Query Language"
+  title: Gain insights in your data by using Kusto Query Language
+  description: "Gain insights in your data by using the Kusto Query Language"
   ms.date: 03/30/2022
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-data-explorer
-title: Gain insights in your data using Kusto Query Language
-summary: "Write advanced queries in Kusto Query Language to help you gain insights from your data. Learn how to use the aggregation functions `count`, `dcount`, `countif`, `sum`, `min`, `max`, `avg`, `percentiles`, and others. You'll also learn how to communicate these results visually in charts."
+  ms.prod: learning-azure
+title: Gain insights in your data by using Kusto Query Language
+summary: "Write advanced queries in Kusto Query Language to help you gain insights from your data. Use the aggregation functions `count`, `dcount`, `countif`, `sum`, `min`, `max`, `avg`, `percentiles`, and others. Communicate these results visually in charts."
 abstract: |
   By the end of this module, you'll be able to:
-    - Use the Kusto Query Language to gain insights from your data by using the aggregation functions `count`, `dcount`, `countif`, `sum`, `min`, `max`, `avg`, `percentiles`, and others.
-    - Communicate query results visually using the `render` operator.
-    - Assign variables by using a `let` statement.
+    - Use the Kusto Query Language to gain insights from your data by using the aggregation functions `count`, `dcount`, `countif`, `sum`, `min`, `max`, `avg`, `percentiles`, and others
+    - Communicate query results visually using the `render` operator
+    - Assign variables by using a `let` statement
 prerequisites: |
-  - An Azure subscription. Create a [free Azure account](https://azure.microsoft.com/free/).
-  - Familiarity with database structures like tables, columns, and rows.
-  - Familiarity with Kusto Query Language operators such as count, take, project, where, and sort.
+  - An Azure subscription. Create a [free Azure account](https://azure.microsoft.com/free/)
+  - Familiarity with database structures like tables, columns, and rows
+  - Familiarity with Kusto Query Language operators such as count, take, project, where, and sort
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-  - beginner
+  - intermediate 
 roles: 
   - business-analyst
   - data-analyst

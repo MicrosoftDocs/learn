@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.gain-insights-data-kql.exercise-visualize-data-render-operator
-title: "Exercise: Visualize data with the render operator"
+title: "Exercise - Visualize data with the render operator"
 metadata:
   unitType: exercise
-  title: "Exercise: Visualize data with the render operator"
-  description: "Exercise: Visualize data with the render operator"
+  title: "Exercise - Visualize data with the render operator"
+  description: "Exercise - Visualize data with the render operator"
   ms.date: 03/30/2022
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-data-explorer
+  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/5-exercise-visualize-data-render-operator.md)]
