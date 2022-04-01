@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.intro-to-azure-application-delivery-services
+metadata:
+  title: Introduction to Azure hybrid connectivity services
+  description: Learn to connect your on-premises and Azure networks together with Azure hybrid connectivity services.
+  brand: azure
+  ms.date: 04/01/2022
+  author: duongau
+  ms.author: duau
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure hybrid connectivity services
+summary: |
+  In this learning path, you will learn how to connect your on-premises and Azure networks together with Azure hybrid connectivity services.
+
+  * Lorem ipsum dolor sit amet.
+  * Lorem ipsum dolor sit amet.
+  * Lorem ipsum dolor sit amet.
+
+prerequisites: |
+- Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, VPN, Border Gateway Protocol, and network packets.
+- Beginner-level knowledge of cloud computing, including scalability and availability.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+modules:
+- learn.azure.intro-to-azure-vpn-gateway
+- learn.azure.intro-to-azure-expressroute
+- introduction-azure-virtual-wan
+trophy:
+  uid: learn.intro-to-azure-application-delivery-services.trophy

@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.intro-to-azure-hybrid-connectivity-services
+metadata:
+  title: Introduction to Azure application delivery services
+  description: Learn to distribute network traffic to load balance workloads with Azure application delivery services.
+  brand: azure
+  ms.date: 04/01/2022
+  author: duongau
+  ms.author: duau
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure application delivery services
+summary: |
+  In this learning path, you will learn how to distribute network traffic to load balance workloads with Azure application delivery services.
+
+  * Lorem ipsum dolor sit amet.
+  * Lorem ipsum dolor sit amet.
+  * Lorem ipsum dolor sit amet.
+
+prerequisites: |
+- Beginner-level knowledge of networking, including IP addresses, load balancer, reverse proxy, Web Application Firewall, CDN, DNS, and network packets.
+- Beginner-level knowledge of cloud computing, including scalability and availability.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+modules:
+- learn.intro-to-azure-front-door
+- learn.azure.intro-to-azure-load-balancer
+- introduction-azure-web-application-firewall
+- learn.azure.intro-to-azure-application-gateway
+- learn.distribute-load-with-traffic-manager
+trophy:
+  uid: learn.intro-to-azure-hybrid-connectivity-services.trophy
