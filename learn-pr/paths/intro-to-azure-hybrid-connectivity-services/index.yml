@@ -13,8 +13,8 @@ title: Introduction to Azure application delivery services
 summary: |
   In this learning path, you will learn how to distribute network traffic to load balance workloads with Azure application delivery services.
 prerequisites: |
-- Beginner-level knowledge of networking, including IP addresses, load balancer, reverse proxy, Web Application Firewall, CDN, DNS, and network packets.
-- Beginner-level knowledge of cloud computing, including scalability and availability.
+  - Beginner-level knowledge of networking, including IP addresses, load balancer, reverse proxy, Web Application Firewall, CDN, DNS, and network packets.
+  - Beginner-level knowledge of cloud computing, including scalability and availability.
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - advanced

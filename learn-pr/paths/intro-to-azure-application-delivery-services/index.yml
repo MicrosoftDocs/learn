@@ -13,8 +13,8 @@ title: Introduction to Azure hybrid connectivity services
 summary: |
   In this learning path, you will learn how to connect your on-premises and Azure networks together with Azure hybrid connectivity services.
 prerequisites: |
-- Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, VPN, Border Gateway Protocol, and network packets.
-- Beginner-level knowledge of cloud computing, including scalability and availability.
+  - Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, VPN, Border Gateway Protocol, and network packets.
+  - Beginner-level knowledge of cloud computing, including scalability and availability.
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - advanced
