@@ -19,13 +19,13 @@ We provide two ways for setting up your environment:
     ![VSCode Web](../media/vscode-web.png)
 
 > [!TIP]
-> If you are using macOS or Linux and do not have the access to Codespaces yet in GitHub. You can use [local devcontainer](https://code.visualstudio.com/docs/remote/containers) with the same repo.
+> If you are using macOS or Linux and do not have the access to Codespaces in GitHub, then you can use [local devcontainer](https://code.visualstudio.com/docs/remote/containers) with the same repo.
 
 1. Follow the *Build and debug* unit in each module for detailed steps.
 
 ## Use Visual Studio
 
-1. Download and install latest [Visual Studio](https://visualstudio.microsoft.com/) with the **Desktop development with C++** workload. You can use Community version, which is free of charge.
+1. Download and install latest [Visual Studio](https://visualstudio.microsoft.com/) with the **Desktop development with C++** workload. You can use the Community version, which is free of charge.
 
 1. Download and unzip latest [sample projects for Visual Studio](https://github.com/Azure-Samples/azure-rtos-learn-samples/releases/tag/vs).
 

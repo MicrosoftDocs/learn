@@ -4,7 +4,7 @@ We discussed several important terms and concepts in this module, as they're rel
 
 ### Thread
 
-A thread is a semi-independent program segment; threads share the same memory space within a program. The terms "task" and "thread" are sometimes used interchangeably. However, we use the term "thread" because it's more descriptive and more accurately reflects the processing that occurs.
+A thread is a semi-independent program segment; threads share the same memory space within a program. The terms "task" and "thread" are sometimes used interchangeably. However, we use the term `thread` because it's more descriptive and more accurately reflects the processing that occurs.
 
 ### ThreadX building blocks
 

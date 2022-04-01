@@ -6,7 +6,7 @@ To get started, let's walk through the building blocks for this project before w
 
 We'll start by creating the first building block.
 
-There are more details in this block than in the illustrative example. We wish to display screen output, so we must include `stdio.h` because we need standard input and output. We also need to specify stack sizes for the two threads and the total size of the memory byte pool. There are four object control blocks for the two threads, the mutex, and the memory byte pool. Finally, we need to define the two thread entry function prototypes.
+There are more details in this block than in the illustrative example. We wish to display screen output, so we must `include stdio.h` because we need standard input and output. We also need to specify stack sizes for the two threads and the total size of the memory byte pool. There are four object control blocks for the two threads, the mutex, and the memory byte pool. Finally, we need to define the two thread entry function prototypes.
 
 The first building block contains defines, declarations, includes, and prototypes and is illustrated in the code illustrated below.
 

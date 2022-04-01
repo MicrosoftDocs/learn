@@ -12,6 +12,6 @@ Here's an example that illustrates how this service can be used:
 status = tx_thread_wait_abort(&some_thread);
 ```
 
-If the variable status contains the value `TX_SUCCESS` after this service has been executed, the sleep or suspension condition of thread *some_thread* has been aborted, and a return value of `TX_WAIT_ABORTED` becomes the value of status for the suspended thread. The previously suspended thread is then free to take whatever action it deems appropriate.
+If the variable status contains the value `TX_SUCCESS` after this service has been executed, the sleep or suspension condition of thread `&some_thread` has been aborted, and a return value of `TX_WAIT_ABORTED` becomes the value of status for the suspended thread. The previously suspended thread is then free to take whatever action it deems appropriate.
 
 We'll investigate how to detect unacceptable delays and how to break the suspension of stalled threads. The name of this project is ProjectBreakSuspension.
