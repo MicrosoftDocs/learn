@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.secure-azure-arc-enabled-servers.deploy-and-manage-observability-agents-with-ease-using-vm-extensions-for-azure-arc-enabled-servers
+title: Deploy and manage observability agents with ease using VM extensions for Azure Arc-enabled servers
+metadata:
+  title: Deploy and manage observability agents with ease using VM extensions for Azure Arc-enabled servers
+  description: TBD
+  ms.date: 04/01/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-deploy-and-manage-observability-agents-with-ease-using-vm-extensions-for-azure-arc-enabled-servers.md)]

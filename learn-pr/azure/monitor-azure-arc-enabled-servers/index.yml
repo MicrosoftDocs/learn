@@ -3,7 +3,7 @@ uid: learn.azure.secure-azure-arc-enabled-servers
 metadata:
   title: Secure your hybrid and multicloud machines through Azure Arc-enabled servers
   description: Understand the security capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Microsoft Defender for Cloud, Microsoft Defender for Servers, and Microsoft Sentinel.
-  ms.date: 03/26/2022
+  ms.date: 04/01/2022
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: interactive-tutorial
@@ -28,5 +28,12 @@ products:
 - azure
 - azure-arc
 units:
+- learn.azure.secure-azure-arc-enabled-servers.introduction
+- learn.azure.secure-azure-arc-enabled-servers.deploy-and-manage-observability-agents-with-ease-using-vm-extensions-for-azure-arc-enabled-servers
+- learn.azure.secure-azure-arc-enabled-servers.onboard-azure-arc-enabled-servers-to-vm-insights
+- learn.azure.secure-azure-arc-enabled-servers.develop-a-robust-data-foundation-of-azure-arc-enabled-servers-with-azure-monitor-metrics-and-logs
+- learn.azure.secure-azure-arc-enabled-servers.smart-and-scalable-alerts-for-azure-arc-enabled-servers-with-azure-monitor
+- learn.azure.secure-azure-arc-enabled-servers.knowledge-check
+- learn.azure.secure-azure-arc-enabled-servers.summary
 badge:
   uid: learn.azure.secure-azure-arc-enabled-servers.badge
