@@ -357,7 +357,7 @@ Azure to Azure Site Recovery allows you to replicate Azure virtual machines (VMs
 
 Azure Site Recovery creates an event if the data change rate on the source virtual machine is higher than the supported limits. Go to **Replicated items** > **VM** > **Events** - **last 72 hours**. You should see the event **Data change rate beyond supported limits**:
 
-:::image type="content" source="../media/3-backup-center-datachange.png" alt-text="Screenshot that shows Data change rate beyond supported limits.":::
+:::image type="content" source="../media/3-backup-center-data-change.png" alt-text="Screenshot that shows Data change rate beyond supported limits.":::
 
 Select the event to display disk information:
 
