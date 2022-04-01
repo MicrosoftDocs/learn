@@ -60,3 +60,47 @@ TODO: add your activities
 By the end of this session, you'll be able to (TODO)
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+
+<!-- whhender: This data upload part needs to be somewhere here in set up. Please feel free to modify! -->
+
+## Upload Data to Azure Data Lake Storage Gen2 Account
+
+Before proceeding with the following steps, you will need to:
+
+* Download and install [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/).
+* Open Azure Storage Explorer.
+* Sign in to Azure via **View > Account Management > Add an account...**.
+
+1. Download a copy of the **[Bing Coronavirus Query Set](https://github.com/tayganr/purviewlab/raw/main/assets/BingCoronavirusQuerySet.zip)** to your local machine. Note: This data set was originally sourced from [Microsoft Research Open Data](https://msropendata.com/datasets/c5031874-835c-48ed-8b6d-31de2dad0654).
+
+1. Locate the downloaded zip file via File Explorer and unzip the contents by right-selecting the file and selecting **Extract All...**.
+
+    :::image type="content" source="../media/6-register-and-scan-exercise/02.10-explorer-unzip.png" alt-text="Alt text that describes the content of the image.":::
+
+1. Select **Extract**.
+
+    :::image type="content" source="../media/6-register-and-scan-exercise/02.11-explorer-extract.png" alt-text="Alt text that describes the content of the image.":::
+
+1. Open Azure Storage Explorer, select on the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-select on Blob Containers and select **Create Blob Container**. Name the container **raw**.
+
+    :::image type="content" source="../media/6-register-and-scan-exercise/02.12-explorer-container.png" alt-text="Alt text that describes the content of the image.":::
+
+1. With the container name selected, select on the **Upload** button and select **Upload Folder...**.
+
+    :::image type="content" source="../media/6-register-and-scan-exercise/02.13-explorer-upload.png" alt-text="Alt text that describes the content of the image.":::
+
+1. Select on the **ellipsis** to select a folder.
+
+    :::image type="content" source="../media/6-register-and-scan-exercise/02.14-explorer-browse.png" alt-text="Alt text that describes the content of the image.":::
+
+1. Navigate to the extracted **BingCoronavirusQuerySet** folder (e.g. Downloads\BingCoronavirusQuerySet) and select **Select Folder**.
+
+    :::image type="content" source="../media/6-register-and-scan-exercise/02.15-explorer-folder.png" alt-text="Alt text that describes the content of the image.":::
+
+1. Select **Upload**.
+
+    :::image type="content" source="../media/6-register-and-scan-exercise/02.16-explorer-data.png" alt-text="Alt text that describes the content of the image.":::
+
+1. Monitor the **Activities** until the transfer is complete.
+
+    :::image type="content" source="../media/6-register-and-scan-exercise/02.17-explorer-transfer.png" alt-text="Alt text that describes the content of the image.":::
