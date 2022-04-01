@@ -10,7 +10,9 @@ You work for Contoso as a network engineer, and users are complaining that they 
 ||| Subnet2| 10.1.2.0/24|
 | VNet2| 10.2.0.0/16| Default| 10.2.0.0/24|
 
+:::image type="content" source="../media/5-vnet1.png" alt-text="Screenshot showing the topology of v net 1.":::
 
+:::image type="content" source="../media/5-vnet2.png" alt-text="Screenshot showing the topology of v net 2.":::
 
 | **Virtual machine**| **Operating system**| **VNet and subnet**| **DNS domain**|
 | :--- | :--- | :--- | :--- |
@@ -28,7 +30,7 @@ Use Nslookup on VM1 and VM2 and check you get the following results:
 
 - vm3.contoso.com – can’t find
 
-:::image type="content" source="../media/5-nslookup.png" alt-text="Screen shot showing the results of ns lookup in the command prompt.":::
+:::image type="content" source="../media/5-nslookup.png" alt-text="Screenshot showing the results of n s lookup in the command prompt.":::
 
 Nslookup on VM3 gives these results:
 
@@ -38,7 +40,7 @@ Nslookup on VM3 gives these results:
 
 - vm3.contoso.com – can’t find
 
-:::image type="content" source="../media/5-nslookup-3.png" alt-text="Screen shot of results of running nslookup in the command prompt on vm3.":::
+:::image type="content" source="../media/5-nslookup-3.png" alt-text="Screenshot of results of running n s lookup in the command prompt on vm3.":::
 
 ## Diagnosis
 
@@ -56,7 +58,7 @@ The IP addresses are:
 
 The DNS server address is 168.63.129.16, which is the wire server.
 
-:::image type="content" source="../media/5-network-configure.png" alt-text="Screen shot of command prompt results after running ipconfig/all.":::
+:::image type="content" source="../media/5-network-configure.png" alt-text="Screenshot of command prompt results after running i p config / all.":::
 
 ### Test network connectivity
 
@@ -64,7 +66,7 @@ Use **ping** to test network connectivity between the three virtual machines.
 
 All three VMs are able to ping each other, so network connectivity is good at the IP level (OSI Layer 3).
 
-:::image type="content" source="../media/5-ping-connectivity.png" alt-text="Screen shot of command screen after pinging for network connectivity.":::
+:::image type="content" source="../media/5-ping-connectivity.png" alt-text="Screenshot of command screen after pinging for network connectivity.":::
 
 ### Examine the Azure resource group
 
@@ -72,12 +74,15 @@ There are two virtual networks (VNets) called VNet1 and VNet2.
 
 There is a private DNS zone, which is contoso.com.
 
+:::image type="content" source="../media/5-resourcegroup.png" alt-text="Screenshot showing the resources within the resource group.":::
 
 The private DNS zone has vm1 and vm2 automatically registered, but vm3 does not appear.
 
+:::image type="content" source="../media/5-no-vm3.png" alt-text="Screenshot showing that that vm 3 is not appearing.":::
 
 Go to **Settings** > **Virtual network links**. We see that the private DNS zone is linked to VNet1, but not to VNet2.
 
+:::image type="content" source="../media/5-virtual-network.png" alt-text="Screenshot showing the virtual links.":::
 
 ## Resolution
 
@@ -95,6 +100,7 @@ Navigate to the private DNS zone (contoso.com) and select the Virtual network li
 
 - Configuration: [X] Enable auto registration
 
+:::image type="content" source="../media/5-add-virtual-network.png" alt-text="Screenshot showing the add virtual network link screen.":::
 
 After you select OK, it may take a few minutes for the link to be created. Select Refresh occasionally to see the latest status. Wait until the link status says Completed.
 
@@ -109,10 +115,11 @@ Nslookup on VM1 and VM2 should resolve vm3.contoso.com.
 > [!TIP]
 > If VM3 does not appear after several minutes, try restarting the VM.
 
+:::image type="content" source="../media/5-dns-table.png" alt-text="Screenshot showing the d n s table.":::
 
-:::image type="content" source="../media/5-command-prompt-machine.png" alt-text="Screen shot showing the results of running the nslookup commands.":::
+:::image type="content" source="../media/5-command-prompt-machine.png" alt-text="Screenshot showing the results of running the n s lookup commands.":::
 
-:::image type="content" source="../media/5-command-prompt-lookup.png" alt-text="Screen shot of the command prompt showing the results of nslookup.":::
+:::image type="content" source="../media/5-command-prompt-lookup.png" alt-text="Screenshot of the command prompt showing the results of n s lookup.":::
 
 Optionally, you can test pinging the VMs, using their DNS names.
 
