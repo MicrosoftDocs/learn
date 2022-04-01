@@ -103,9 +103,9 @@ There are a couple of common reasons that domain verification doesn't work as it
 
 1. The verification record value is incorrect. Check the value in the TXT verification record at your DNS host. This should include the "MS=" part of the record.
 
-1. The record hasn't been saved. Some DNS hosts require you to save the zone file where the DNS record is stored. If this has not been saved, it will not be visible by Microsoft 365.
+2. The record hasn't been saved. Some DNS hosts require you to save the zone file where the DNS record is stored. If this has not been saved, it will not be visible by Microsoft 365.
 
-1. The record hasn't updated across the Internet. It can take a few minutes or a few hours for a new record to be visible.
+3. The record hasn't updated across the Internet. It can take a few minutes or a few hours for a new record to be visible.
 
 ## Troubleshoot delegation issues
 

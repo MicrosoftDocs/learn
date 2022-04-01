@@ -42,7 +42,7 @@ DNS resolution using a private DNS zone works only from virtual networks that ar
 
 You can link a private DNS zone to one or more virtual networks by creating [virtual network links](/azure/dns/private-dns-virtual-network-links). You can also enable the [autoregistration](/azure/dns/private-dns-autoregistration) feature to automatically manage the life cycle of the DNS records for the virtual machines that get deployed in a virtual network. With autoregistration enabled, Azure DNS will update the zone record whenever a virtual machine gets created, changes its' IP address, or gets deleted. 
 
-< [!NOTE] 
+> [!NOTE]
 < A Virtual Network can only have autoregistration enabled on one Private DNS Zone link. If you try to link two private DNS zones to the same VNet, only one of the links will be enabled for autoregistration.
 
 :::image type="content" source="../media/4-link-zones.png" alt-text="Diagram of private DNS zones on the same Vnet.":::
