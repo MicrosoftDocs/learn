@@ -1,12 +1,6 @@
-
+You've been asked to make a backup of a virtual machine. The backup must be application consistent.
 
 ## Create the exercise environment
-1. You have been asked to make a backup of a virtual machine. The backup must be application consistent.
-1. Select **Sign in** to activate sandbox and sign in using your own credentials.
-
-1. Select **Review permissions**, read and accept to continue.
-
-1. Azure Cloud Shell will authenticate and build and you are ready to start the exercise.
 
 Using the Cloud Shell on the right, run these commands to create the example topology. The environment will take approximately 5 minutes to build.
 
@@ -33,6 +27,8 @@ Using the Cloud Shell on the right, run these commands to create the example top
 
 1. In the left navigation pane, under **Operations**, select **Backup**.
 
+    :::image type="content" source="../media/4-azure-backup-welcome.png" alt-text="Screenshot showing the back up welcome screen."::: 
+
 1. Enter the following settings, and then select **Enable Backup**.
 
    - Recovery Services vault: **Create new**
@@ -41,14 +37,14 @@ Using the Cloud Shell on the right, run these commands to create the example top
 
    - Choose backup policy: **DefaultPolicy-labdemo**
 
-
 1. This takes you back to the **Virtual machines** page, select **labvm**.
 
 1. In the left navigation pane, under **Operations**, select **Backup**.
 
 1. Select **Backup now**, and then select **OK**.
 
-   
+    :::image type="content" source="../media/4-machine-backup-screen.png" alt-text="Screenshot showing the backup screen.":::
+
 1. The backup starts, and runs in two phases.
 
    - In the first phase, it takes a snapshot of the VM. This takes about 10 minutes.
@@ -63,8 +59,11 @@ You won't see anything in the Backup page of the VM until the backup has complet
 
 -  In the left navigation pane, under **Monitoring + reporting**, select **Backup jobs**. You should see your job running.
 
+    :::image type="content" source="../media//4-backup-instances.png" alt-text="Screenshot showing multiple backup instances."
 
 -  Select the backup job to see more info. You can see in the screen picture that the first phase has completed.
+
+    :::image type="content" source="../media/4-single-backup.png" alt-text="Screenshot showing a single backup instance."
 
 ## View results of first phase
 
@@ -74,10 +73,12 @@ When the first phase has completed, you can see that it is **Crash Consistent**.
 
 1. In the left navigation pane, under **Manage**, select **Backup instances**.
 
-    
-    1. Scroll down until you see **labvm** and select **labvm**. This shows that the backup is **Crash Consistent**. This is incorrect, the backup should be **Application Consistent**. You need to find out why, and fix the problem.
+    :::image type="content" source="../media/4-multiple-backups.png" alt-text="Screenshot showing multiple backup instances."
 
-        - Only the first phase has completed, and the data will now be transferring to the vault. You can continue with the lab; you don't have to wait for this to complete.
+    1. Scroll down until you see **labvm** and select **labvm**. This shows that the backup is **Crash Consistent**. This is incorrect, the backup should be **Application Consistent**. You need to find out why and fix the problem.
+
+    > [!NOTE]
+    > Only the first phase has completed, and the data will now be transferring to the vault. You can continue with the lab; you don't have to wait for this to complete.
 
  
 ## Resolution
@@ -94,6 +95,7 @@ The VM was in a **Stopped** state. You need to start the VM and wait for it to b
 
 1. Select **Backup now**.
 
+    :::image type="content" source="../media/4-backup-screen.png" alt-text="Screenshot of the backup screen."
 
 1. On the **Backup now** page, select **OK**. The second backup will be an incremental backup and should take less time than the first backup.
 
@@ -101,4 +103,4 @@ The VM was in a **Stopped** state. You need to start the VM and wait for it to b
 
 1. When the first phase is complete, navigate to the **Backup** page of the VM. The send backup is **Application Consistent**.
 
-  
+    :::image type="content" source="../media/4-crash-instance-restore-point.png" alt-text="Screenshot showing the crash consistent restore point."

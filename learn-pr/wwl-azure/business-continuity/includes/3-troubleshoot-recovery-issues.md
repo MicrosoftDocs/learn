@@ -111,7 +111,7 @@ The following graphic summarizes the steps to troubleshoot a backup recovery:
 
 1. Troubleshoot connection/replication issues.
 
-:::image type="content" source="../media/3-steps-backup-recovery.png" alt-text="Screenshot of Steps to troubleshoot a backup recovery.":::
+:::image type="content" source="../media/3-steps-backup-recovery.png" alt-text="Screenshot of steps to troubleshoot a backup recovery.":::
 
 ## Troubleshoot restore issues from Microsoft Azure Backup Server (MABS)
 
@@ -193,7 +193,7 @@ When recovering an on-premises Hyper-V VM to Azure, use Azure Site Recovery. If 
 
   - [Troubleshoot](/windows/win32/wmisdk/wmi-troubleshooting) WMI.
 
-  - [Troubleshoot](https://docs.microsoft.com/previous-versions/tn-archive/ff406382(v=msdn.10)) problems with WMI scripts and services.
+  - [Troubleshoot](/previous-versions/tn-archive/ff406382(v=msdn.10)) problems with WMI scripts and services.
 
 - On the guest VM, ensure that you have the latest version of Integration Services and it is running. Microsoft recommends keeping integration services up-to-date.
 
@@ -369,7 +369,7 @@ Azure Site Recovery limits are data churn per disk and data churn per virtual ma
 
 To find out whether this is a recurring problem, check the data change rate of the relevant virtual machine under **Monitoring**. You will need to add the metrics shown in the following screenshot:
 
-:::image type="content" source="../media/3-data-change-rate.png" alt-text="Screenshot that shows OS Disk Writes Bytes/Sec.":::
+:::image type="content" source="../media/3-data-change-rate.png" alt-text="Screenshot that shows O S Disk Writes Bytes per Sec.":::
 
 ### Network connectivity problems
 
