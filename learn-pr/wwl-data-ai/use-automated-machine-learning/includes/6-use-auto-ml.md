@@ -33,9 +33,11 @@ In Azure Machine Learning, operations that you run are called *experiments*. Fol
         - **Explain best model**: Selected — *this option causes automated machine learning to calculate feature importance for the best model which makes it possible to determine the influence of each feature on the predicted label.*
         - **Use all supported models**: <u>Un</u>selected. *You'll restrict the experiment to try only a few specific algorithms.*
         - **Allowed models**: *Select only **RandomForest** and **LightGBM** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the experiment.*
+        > [!div class="centered"]
+        > ![Select the allowed models.](../media/allowed-models.png)            
         - **Exit criterion**:
             - **Training job time (hours)**: 0.5 — *ends the experiment after a maximum of 30 minutes.*
-            - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.08 or less, the experiment ends.*
+            - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.085 or less, the experiment ends.*
         - **Concurrency**: *do not change*
     - **Featurization settings:**
         - **Enable featurization**: Selected — *automatically preprocess the features before training.*
@@ -87,7 +89,7 @@ After the experiment has finished you can review the best performing model. In t
     > [!div class="centered"]
     > ![Residuals histogram](../media/residual-histogram.png)
 
-5. Select the **Explanations** tab. Click on the arrows >> next to **Explanation ID** to expand the explanations list. Select an explanation ID, select **View previous dashboard experience** on the right-hand side. Then select **Global Importance**. This chart shows how much each feature in the dataset influences the label prediction, like this:
+5. Select the **Explanations** tab. Select an explanation ID and then select **Aggregate feature Importance**. This chart shows how much each feature in the dataset influences the label prediction, like this:
 
     > [!div class="centered"]
     > ![Feature importance](../media/feature-importance.png)

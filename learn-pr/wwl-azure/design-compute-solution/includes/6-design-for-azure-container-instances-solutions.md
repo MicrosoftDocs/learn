@@ -39,7 +39,7 @@ Multi-container groups are useful in cases where you want to divide a single fun
 
 When working with container instances, consider these security best practices.
 
-- **Use a private registry.** Containers are built from images that are stored in one or more repositories. These repositories can belong to a public registry or to a private registry. An example of a private registry is the [Docker Trusted Registry](https://docs.docker.com/datacenter/dtr/), which can be installed on-premises or in a virtual private cloud. 
+- **Use a private registry.** Containers are built from images that are stored in one or more repositories. These repositories can belong to a public registry or to a private registry. An example of a private registry is the [Docker Trusted Registry](https://docs.docker.com/datacenter/dtr/), which can be installed on-premises or in a virtual private cloud. Another example is [Azure Container Registry](/azure/container-registry/)  to build, store, and manage container images and artifacts. 
 
 - **Ensure the integrity of images throughout the lifecycle.** Part of managing security throughout the container lifecycle is to ensure the integrity of the container images. Images with vulnerabilities, even minor, shouldn’t be allowed to run in a production environment. Keep the number of production images small to ensure that they can be managed effectively.
 

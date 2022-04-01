@@ -4,13 +4,12 @@ title: Exercise - Work with SELECT statements
 metadata:
   title: Exercise - Work with SELECT statements
   description: "Exercise - Work with SELECT statements"
-  ms.date: 09/13/2021
+  ms.date: 03/30/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: anrudduc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labId: 96510
 labModal: true
 durationInMinutes: 30
