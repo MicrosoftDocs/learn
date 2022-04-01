@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/31/2022
+  ms.date: 04/01/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What should be viewed to see whether a scheduled backup has completed succesfully?"
+  - content: "What should an administrator view to see whether a scheduled backup has completed succesfully?"
     choices:
     - content: "Azure Backup Center vault status"
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
     - content: "Azure Backup Center backup policies"
       isCorrect: false
       explanation: "That's incorrect. The Azure Backup Center backup policies won't display the status of a scheduled backup."
-  - content: "To configure email notification when a backup alert is triggered, what actions need to be taken?"
+  - content: "To configure email notification when a backup alert is triggered, what actions should an administrator take?"
     choices:
     - content: "Nothing  email alerts are automatically sent to the administrators email address."
       isCorrect: false
@@ -39,7 +39,7 @@ quiz:
     - content: "Select the email alert check box when creating the backup job."
       isCorrect: false
       explanation: "That's incorrect. When you create a backup job there isn't an option to provide email alerts in case of problems."
-  - content: "When replicating an Azure VM from one region to another, which scenarios could prevent the Azure VM from being backed up?"
+  - content: "When replicating an Azure VM from one region to another, which scenarios might cause a problem with the Azure VM backup?"
     choices:
     - content: "High data change rate on the Azure VM being replicated."
       isCorrect: false

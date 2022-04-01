@@ -4,11 +4,11 @@ When you have created a backup, you may need to recover the data as part of a pl
 
 When you recover data from an Azure VM backup you have three options to restore the data:
 
-1. File Recovery
+-  File Recovery
 
-1. Restore VM
+-  Restore VM
 
-1. Disk restore. Only the disks are restored, which can then be used to create a new VM or replace a disk on an existing VM.
+-  Disk restore. Only the disks are restored, which can then be used to create a new VM or replace a disk on an existing VM.
 
 To recover files, select the **File Recovery** option. It is then a three-step process to recover the files:
 
@@ -51,23 +51,23 @@ This message appears if you attempt to run the script more than 12 hours after y
 
 The backup operation failed due to an issue with the Windows service COM+ System application. To resolve this issue, follow these steps:
 
-- Try starting/restarting Windows service COM+ System Application (from an elevated command prompt – net start COMSysApp).
+1. Try starting/restarting Windows service COM+ System Application (from an elevated command prompt – net start COMSysApp).
 
-- Ensure Distributed Transaction Coordinator service is running as Network Service account. If not, change it to run as Network Service account and restart COM+ System Application.
+2. Ensure Distributed Transaction Coordinator service is running as Network Service account. If not, change it to run as Network Service account and restart COM+ System Application.
 
-- If unable to restart the service, then reinstall Distributed Transaction Coordinator service by following the steps below:
+3. If unable to restart the service, then reinstall Distributed Transaction Coordinator service by following the steps below:
 
-  - Stop the MSDTC service
+  1. Stop the MSDTC service
 
-  - Open a command prompt (cmd)
+  2. Open a command prompt (cmd)
 
-  - Run the command msdtc -uninstall
+  3. Run the command msdtc -uninstall
 
-  - Run the command msdtc -install
+  4. Run the command msdtc -install
 
-  - Start the MSDTC service
+  5. Start the MSDTC service
 
-- Start the Windows service COM+ System Application. After the COM+ System Application starts, trigger a backup job from the Azure portal.
+4. Start the Windows service COM+ System Application. After the COM+ System Application starts, trigger a backup job from the Azure portal.
 
 For an up-to-date list of common error messages and recommended action, see [Troubleshoot Azure VM file recovery - Azure Backup | Microsoft Docs](/azure/backup/backup-azure-vm-file-recovery-troubleshoot).
 
@@ -75,15 +75,15 @@ For an up-to-date list of common error messages and recommended action, see [Tro
 
 To restore data that has been backed up using Microsoft Azure Recovery Services (MARS):
 
-- From the MARS agent home screen, select Recover Data. The Recover Data Wizard is displayed.
+1. From the MARS agent home screen, select Recover Data. The Recover Data Wizard is displayed.
 
-- Specify where you want to restore the data.
+2. Specify where you want to restore the data.
 
-- Select the data to restore, and the date and time it was backed up. These selections determine the data recovery point.
+3. Select the data to restore, and the date and time it was backed up. These selections determine the data recovery point.
 
-- Select Mount to mount the disk containing the recovery point then select the location where you want to recover the data.
+4. Select Mount to mount the disk containing the recovery point then select the location where you want to recover the data.
 
-- Confirm your selections before starting the data recovery.
+5. Confirm your selections before starting the data recovery.
 
 When you installed the MARS agent, an encryption passphrase was generated. This is stored in a text file and should be kept somewhere safe. If the passphrase is lost, you cannot recover any data backed up by the MARS backup agent.
 
@@ -133,22 +133,22 @@ Reg query "HKLM\SOFTWARE\Microsoft\Microsoft Data Protection Manager\Setup"
 
 When you register to a vault, if you get an error message saying invalid vault credentials have been provided, either you have a corrupt file, or you provided incorrect credentials. Try the following:
 
-- Download the latest credentials file from the vault and try again.
+1. Download the latest credentials file from the vault and try again.
 
-- Try downloading the credentials to a different local directory or create a new vault.
+2. Try downloading the credentials to a different local directory or create a new vault.
 
-- Try updating the date and time settings as described in [this article](/azure/backup/backup-azure-mars-troubleshoot).
+3. Try updating the date and time settings as described in [this article](/azure/backup/backup-azure-mars-troubleshoot).
 
-- Check to see if c:\windows\temp has more than 65000 files. Move stale files to another location or delete the items in the Temp folder.
+4. Check to see if c:\windows\temp has more than 65000 files. Move stale files to another location or delete the items in the Temp folder.
 
-- Check the status of certificates.
+5. Check the status of certificates.
 
   1. In Control Panel, open **Manage Computer Certificates**.
-  1. Expand the **Personal** node and its child node **Certificates**.
-  1. Remove the certificate **Windows Azure Tools**.
-  1. Retry the registration in the Azure Backup client.
+  2. Expand the **Personal** node and its child node **Certificates**.
+  3. Remove the certificate **Windows Azure Tools**.
+  4. Retry the registration in the Azure Backup client.
 
-- Check to see if a group policy is in place.
+6. Check to see if a group policy is in place.
 
 ### Replica is inconsistent
 
@@ -156,9 +156,9 @@ In the Protection Group Wizard, verify that the automatic consistency check opti
 
 In the case of System State/BMR backup, verify that Windows Server Backup is installed on the protected server.
 
-1. Check for space-related issues in the DPM storage pool on the DPM/Microsoft Azure Backup Server and allocate storage as required.
+-  Check for space-related issues in the DPM storage pool on the DPM/Microsoft Azure Backup Server and allocate storage as required.
 
-1. Check the state of the Volume Shadow Copy Service on the protected server. If it's in a disabled state, set it to start manually. Start the service on the server then go back to the DPM/Microsoft Azure Backup Server console, and start the sync with the consistency check job.
+-  Check the state of the Volume Shadow Copy Service on the protected server. If it's in a disabled state, set it to start manually. Start the service on the server then go back to the DPM/Microsoft Azure Backup Server console, and start the sync with the consistency check job.
 
 ### Online recovery point creation failed
 
@@ -219,21 +219,21 @@ Verify properties as follows:
 
 1. In **Compute and Network**, you can modify these properties as needed:
 
-   1. Azure name
+   -  Azure name
 
-   1. Resource group
+   -  Resource group
 
-   1. Target size
+   -  Target size
 
-   1. [Availability set](/azure/virtual-machines/windows/tutorial-availability-sets)
+   -  [Availability set](/azure/virtual-machines/windows/tutorial-availability-sets)
 
-   1. Managed disk settings
+   -  Managed disk settings
 
 1. You can view and modify network settings, including:
 
-   1. The network and subnet in which the Azure VM will be located after failover.
+   -  The network and subnet in which the Azure VM will be located after failover.
 
-   1. The IP address that will be assigned to it.
+   -  The IP address that will be assigned to it.
 
 1. In **Disks**, review operating system information, and data disks on the VM.
 
