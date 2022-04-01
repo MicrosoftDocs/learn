@@ -57,7 +57,7 @@ In this section, you're going to create and customize the Identity UI files to b
 
     [!code-csharp[](../code/program-after-customization.cs?range=1-3,7-15&highlight=3,8-9)]
 
-1. Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to incorporate the following highlighted changes. Save your changes.
+1. Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to incorporate the following highlighted changes at the top. Save your changes.
 
     [!code-cshtml[](../code/pages/shared/_loginpartial.cshtml?range=1-6&highlight=2-4)]
 
