@@ -1,4 +1,4 @@
-In your toy company, you've been publishing your Bicep modules into a registry, but you've been running the publishing process manually from your own computer. Now, you want to create a workflow to handle the publishing process.
+In your toy company, you've been publishing your Bicep modules into a registry. You've been running the publishing process manually from your own computer. Now, you want to create a workflow to handle the publishing process.
 
 In this exercise, you'll:
 
@@ -15,32 +15,32 @@ Before you can publish modules, you need to create a registry for your organizat
 
 1. In your browser, [create a new container registry within the Azure portal](https://portal.azure.com/#create/Microsoft.ContainerRegistry?azure-portal=true).
 
-1. In the **Basics** tab, select your target subscription and the **ToyReusable** resource group you created earlier.
+1. On the **Basics** tab, select your target subscription and the **ToyReusable** resource group that you created earlier.
 
-1. Enter a name for your registry, and a location that's close to you.
+1. Enter a name for your registry and a location that's close to you.
 
     > [!IMPORTANT]
-    > The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. You should see a checkmark next to the registry name indicating that the name you chose is available.
+    > The registry name must be unique within Azure and contain 5-50 alphanumeric characters. A check mark next to the registry name indicates that the name you chose is available.
 
-1. For **SKU**, select 'Basic'.
+1. For **SKU**, select **Basic**.
 
    Leave the default values for the other configuration settings.
 
 1. Select **Review + create**.
 
-   :::image type="content" source="../media/6-create-registry.png" alt-text="A screenshot of the Azure portal that shows the container registry creation page.":::
+   :::image type="content" source="../media/6-create-registry.png" alt-text="Screenshot of the Azure portal that shows the container registry creation page.":::
 
-1. Review the settings, then select **Create**.
+1. Review the settings, and then select **Create**.
 
-   Wait for the deployment to complete, which usually takes 1-2 minutes.
+   Wait for the deployment to finish, which usually takes 1-2 minutes.
 
 1. When the **Deployment succeeded** message appears, select **Go to resource** to open the container registry.
 
-   :::image type="content" source="../media/6-registry-created.png" alt-text="A screenshot of the Azure portal that shows the container registry deployment, with the 'Go to resource button' highlighted.":::
+   :::image type="content" source="../media/6-registry-created.png" alt-text="Screenshot of the Azure portal that shows the container registry deployment, with the button for going to a resource highlighted.":::
 
 1. In the container registry's **Overview**, note the value of the *Login server* setting. It will look like *yourregistryname.azurecr.io*.
 
-   :::image type="content" source="../media/6-registry-login-server.png" alt-text="A screenshot of the Azure portal that shows the container registry's details, with the login server highlighted.":::
+   :::image type="content" source="../media/6-registry-login-server.png" alt-text="Screenshot of the Azure portal that shows the container registry's details, with the login server highlighted.":::
 
    You'll need this value shortly.
 
@@ -52,7 +52,7 @@ In the preceding unit, you learned about the importance of having a versioning s
 
 1. Create a new file named *metadata.json*.
 
-   :::image type="content" source="../media/6-visual-studio-code-metadata-json.png" alt-text="A screenshot of Visual Studio Code showing the location of the metadata dot J S O N file.":::
+   :::image type="content" source="../media/6-visual-studio-code-metadata-json.png" alt-text="Screenshot of Visual Studio Code showing the location of the metadata dot J S O N file.":::
 
 1. Add the following content to the file:
 
@@ -70,7 +70,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 1. Open the file named *module-storage-account.yml*.
 
-   :::image type="content" source="../media/6-visual-studio-code-workflow.png" alt-text="A screenshot of Visual Studio Code showing the location of the workflow definition file.":::
+   :::image type="content" source="../media/6-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code showing the location of the workflow definition file.":::
 
 1. On line 14, update the value of the `MODULE_REGISTRY_SERVER` environment variable to your container registry's server name, which you copied earlier in this exercise. 
 
@@ -132,7 +132,7 @@ Now, you can add a second job to publish the module to your container registry.
 
 1. Select the latest run in the list.
 
-   :::image type="content" source="../media/6-workflow-runs-list.png" alt-text="A screenshot of GitHub that highlights the latest run of the module's workflow.":::
+   :::image type="content" source="../media/6-workflow-runs-list.png" alt-text="Screenshot of GitHub that highlights the latest run of the module's workflow.":::
 
    Wait for the workflow run to finish. The Bicep module is published to your container registry.
 
@@ -150,7 +150,7 @@ You can also view the published module in the Azure portal.
 
 1. Select the **Repositories** blade from the menu. Then, select the **modules\storage-account** repository, which represents the module that your workflow published.
 
-   :::image type="content" source="../media/6-registry-portal.png" alt-text="A screenshot of the Azure portal that shows a Bicep module in the container registry.":::
+   :::image type="content" source="../media/6-registry-portal.png" alt-text="Screenshot of the Azure portal that shows a Bicep module in the container registry.":::
 
    Notice that there's a single *tag*, which matches the version number of the module that your workflow published. The major version (1) and minor version (2) match the version numbers you defined in the *metadata.json* file, and the revision number (3) matches the workflow's run number.
 
