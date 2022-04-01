@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Introduction to Azure network foundation services
 summary: |
-  In this learning path, you will learn how to manage and diagnose a network with Azure network foundation services.
+  In this learning path, you'll learn how to manage and diagnose a network with Azure network foundation services.
 prerequisites: |
   - Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, DNS, NAT, and network packets.
   - Beginner-level knowledge of cloud computing, including scalability and availability.
