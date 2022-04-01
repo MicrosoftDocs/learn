@@ -5,9 +5,9 @@ In the previous unit, you learned the difference between authentication and auth
 You've received a new requirement that the Pizza List page should be visible only to authenticated users. Additionally, only administrators are allowed to  create and delete pizzas. Let's lock it down.
 
 1. In *Pages/Pizza.cshtml.cs*, apply the following changes:
-    1. Add an `[Authorize]` attribute to the `OnGet` method.
+    1. Add an `[Authorize]` attribute to the `PizzaModel` class.
 
-        [!code-csharp[](../code/pages/pizza.cshtml.cs?range=2-3&highlight=2)]
+        [!code-csharp[](../code/pages/pizza.cshtml.cs?range=2-3&highlight=1)]
 
         The attribute describes user authorization requirements for the page. In this case, there are no requirements beyond the user being authenticated. Anonymous users aren't allowed to view the page and are redirected to the login page.
 
@@ -19,7 +19,7 @@ You've received a new requirement that the Pizza List page should be visible onl
 
     1. Add the following property to the `PizzaModel` class:
 
-        [!code-csharp[](../code/pages/pizza.cshtml.cs?name=snippet_isadmin&highlight=3)]
+        [!code-csharp[](../code/pages/pizza.cshtml.cs?name=snippet_isadmin&highlight=4)]
 
         The preceding code determines whether the authenticated user has an `IsAdmin` claim with a value of `True`. The result of this evaluation is accessed via a read-only property named `IsAdmin`.
 

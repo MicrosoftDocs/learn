@@ -46,7 +46,7 @@ Let's build everything you need to generate QR codes on the **Configure authenti
 
 1. In *Program.cs*, add the highlighted lines:
 
-    [!code-csharp[](../code/program-after-customization.cs?range=1-17,22-23&highlight=5-6,16)]
+    [!code-csharp[](../code/program-after-customization.cs?range=1-17,22-23&highlight=5-6,17)]
 
     `QRCodeService` is registered as a singleton service in the IoC container within *Program.cs*.
 

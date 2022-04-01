@@ -9,6 +9,6 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/7-configure-multi-factor-authentication.md)]

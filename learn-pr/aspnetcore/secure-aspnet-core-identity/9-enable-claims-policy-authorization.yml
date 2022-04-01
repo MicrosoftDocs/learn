@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Exercise - Use claims with policy-based authorization
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/9-enable-claims-policy-authorization.md)]
