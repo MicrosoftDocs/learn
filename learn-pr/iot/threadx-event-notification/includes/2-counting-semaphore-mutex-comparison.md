@@ -2,7 +2,7 @@
 
 The table below contains a comparison of several performance measures for mutexes and counting semaphores. The reference processor for these performance measures is the Cortex-A9 400 MHz.
 
-|Item   |Mutex    |Counting semaphore |
+|Item |Mutex |Counting semaphore |
 |---|---|---|
 |**Instruction area size** |1,134 bytes |322 bytes |
 |**RAM size (control clock)** |52 bytes |28 bytes |
@@ -19,7 +19,7 @@ The table below contains a comparison of several performance measures for mutexe
 
 For each performance item, the mutex requires more memory and requires more processor time. However, a mutex provides robust support for ensuring the mutual exclusion property.
 
-The table below contains a comparison of the features for mutexes and counting semaphores. Following is a feature-by-feature comparison of mutexes and counting semaphores:
+Following is a feature summary of mutexes and counting semaphores:
 
 - **Speed** - as noted in the table above a counting semaphore is faster
 - **Thread ownership** - the mutex is the only resource that has ownership capabilities
@@ -29,7 +29,9 @@ The table below contains a comparison of the features for mutexes and counting s
 - **Event notification** - this feature is a great strength of the counting semaphore
 - **Thread suspension** - suspension for the mutex depends on whether the mutex is owned, and suspension for the counting semaphore depends on its count
 
-|Feature  |Mutex   |Counting semaphore |
+The table below contains a comparison of the features for mutexes and counting semaphores.
+
+|Feature |Mutex |Counting semaphore |
 |---|---|---|
 |**Speed**    |Slower than a semaphore |A semaphore is faster and requires fewer system resources |
 |**Thread ownership** |Only one thread can own a mutex |There's no concept of thread ownership for a semaphore - any thread can get an instance of a counting semaphore if its current count is greater than zero |

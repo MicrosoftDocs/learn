@@ -1,6 +1,6 @@
 ## Key points
 
-We discussed several important terms and concepts in this module, as they're related to Azure ThreadX RTOS. Following are brief definitions of some key points:
+We discussed several important terms and concepts in this module, as they're related to ThreadX. Following are brief definitions of some key points:
 
 - **Event flags group**: ThreadX resource that provides a powerful tool for thread synchronization. Threads can operate on all 32 event flags in a group at the same time. There are two ThreadX services that deal with event flags groups, and they are set flags and get flags.
 - **Clearing event flags**: Event flags that satisfy a get request are consumed (set to zero) if either of the options `TX_OR_CLEAR` or `TX_AND_CLEAR` are specified by the request.

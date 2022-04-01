@@ -32,8 +32,8 @@ For example, suppose that we want to clear all flags except flags 0, 4, and 8, i
 ```c
 TX_EVENT_FLAGS_GROUP my_event_group;
 UNIT status;
-
-...
+:
+:
 /* Clear all event flags except 0, 4 and 8 */
 status = tx_event_flags_set(&my_event_group, 0x111, TX_AND);
 
@@ -49,8 +49,8 @@ Here's a code example of the set service using `TX_OR`:
 ```c
 TX_EVENT_FLAGS_GROUP my_event_group;
 UNIT status;
-
-...
+:
+:
 /* Set event flags 0, 4 and 8 */
 status = tx_event_flags_set(&my_event_group, 0x111, TX_OR);
 

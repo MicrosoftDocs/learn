@@ -10,6 +10,7 @@ We'll use this code to create declarations, definitions, and prototypes:
 
 > [!NOTE]
 > The highlighted code shows where:
+>
 > - The Monitor thread, the counting semaphore, and the thread run count variables are defined.
 > - A run count is initialized to detect idle time.
 > - A variable to store the count of wait aborts for Routine thread is added.
@@ -38,6 +39,7 @@ We'll use this code to create application definitions:
 
 > [!NOTE]
 > This code shows how these items are created:
+>
 > - Pointer for the Monitor thread stack.
 > - Monitor stack; we give it the highest priority of the three threads.
 > - Urgent thread
@@ -56,7 +58,8 @@ We'll use this code to create the Urgent thread entry function. One feature that
 :::code language="c" source="../code/project-break-suspension.c" range="98-127" highlight="16, 20":::
 
 > [!NOTE]
-> The highlighed lines of code:
+> The highlighted lines of code:
+>
 > - Use the C library function `rand()` to compute sleep time for the Urgent thread.
 > - Determine whether the suspension of Urgent thread was aborted. When this process finishes, the Urgent function places an instance back on the counting semaphore.
 >
@@ -68,7 +71,8 @@ We'll use the following code to create the Routine thread entry function. A majo
 :::code language="c" source="../code/project-break-suspension.c" range="136-167" highlight="16, 20":::
 
 > [!NOTE]
-> The highlighed lines of code:
+> The highlighted lines of code:
+>
 > - Use the C library function `rand()` to compute sleep time for the Routine thread.
 > - Detect excessive wait time.
 >
@@ -80,7 +84,8 @@ We'll use the following code to create the Monitor thread entry function. This f
 :::code language="c" source="../code/project-break-suspension.c" range="171-196" highlight="13, 17, 20, 23":::
 
 > [!NOTE]
-> The highlighed lines of code:
+> The highlighted lines of code:
+>
 > - Add a Monitor check on Urgent and Routine threads every 50 timer ticks.
 > - Get the Urgent run count.
 > - Determine whether to abort Urgent suspension.

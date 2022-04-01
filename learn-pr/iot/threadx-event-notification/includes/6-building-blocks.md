@@ -31,8 +31,9 @@ Building Block 3, part 2 contains more application definitions:
 :::code language="c" source="../code/project-producer-consumer.c" range="57-72" highlight="4-7, 11":::
 
 > [!NOTE]
-> - You need to add a second Consumer thread. Its entry function should be similar to the one above. 
-> - We initialized the counting semaphore to zero, which signifies that StorageFaciltiy is initially empty.
+>
+> - You need to add a second Consumer thread. Its entry function should be similar to the one above.
+> - We initialized the counting semaphore to zero, which signifies that StorageFacility is initially empty.
 
 ## Building block 4
 
@@ -41,13 +42,15 @@ Building Block 4, part 1 contains the Producer thread entry function:
 :::code language="c" source="../code/project-producer-consumer.c" range="74-91":::
 
 > [!NOTE]
-> - No changes are needed for the Producer thread entry function. 
+>
+> - No changes are needed for the Producer thread entry function.
 
 Building Block 4, part 2 contains the Consumer thread entry function:
 
 :::code language="c" source="../code/project-producer-consumer.c" range="95-108":::
 
 > [!NOTE]
+>
 > - Use this function as a guide to creating the second consumer.
 
 Building Block 4, part 3 contains the printstats application timer entry function:
@@ -55,4 +58,5 @@ Building Block 4, part 3 contains the printstats application timer entry functio
 :::code language="c" source="../code/project-producer-consumer.c" range="110-125" highlight="11-15":::
 
 > [!NOTE]
+>
 > - Add a `printf` to display information about the second consumer that you added.

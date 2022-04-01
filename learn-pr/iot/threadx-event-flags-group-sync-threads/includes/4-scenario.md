@@ -1,8 +1,8 @@
 ## Introduction
 
-For this project, we'll again use the messaging scenario, but with a variation. We'll again have the Urgent thread and the Routine thread, but we'll add a condition to their operation. We'll synchronize the activities of these threads by using an event flags group. 
+For this project, we'll again use the messaging scenario, but with a variation. We'll again have the Urgent thread and the Routine thread, but we'll add a condition to their operation. We'll synchronize the activities of these threads by using an event flags group.
 
-The following figure illustrates an event flags group scenario:
+The following image illustrates an event flags group scenario:
 
 :::image type="content" alt-text="Diagram that illustrates an event flags group scenario." source="../media/event-flags-group-scenario.svg" loc-scope="Azure":::
 

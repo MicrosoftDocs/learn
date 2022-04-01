@@ -1,6 +1,6 @@
 ## Producer-consumer
 
-The following diagram contains a description of the ProjectProducerConsumer activities.
+The following image contains a description of the ProjectProducerConsumer activities.
 
 :::image type="content" source="../media/producer-consumer-activities.svg" alt-text="Description of the ProjectProducerConsumer activities." border="false":::
 
