@@ -13,7 +13,7 @@ prerequisites: |
   - Demonstrate an understanding of the OSI model
   - Demonstrate an understanding of Azure CLI
   - Demonstrate an understanding of PowerShell
-  - Know how to run cloud shell to run commands
+  - Know how to run Cloud Shell to run commands
 summary: |
   Networking is essential, particularly when you have cloud-based assets. This learning path covers the different connectivity issues that a network engineer will typically encounter, and the troubleshooting steps to resolve these issues.
 iconUrl: /learn/achievements/generic-trophy.svg
