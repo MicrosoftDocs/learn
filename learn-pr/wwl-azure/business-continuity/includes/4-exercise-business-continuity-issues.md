@@ -6,9 +6,9 @@
 
 1. Select **Review permissions**, read and accept to continue.
 
-1. Azure cloud shell will authenticate and build and you are ready to start the exercise.
+1. Azure Cloud Shell will authenticate and build and you are ready to start the exercise.
 
-Using the cloud shell on the right, run these commands to create the example topology. The environment will take approximately 5 minutes to build.
+Using the Cloud Shell on the right, run these commands to create the example topology. The environment will take approximately 5 minutes to build.
 
 1. Clone the setup script from GitHub.
 
