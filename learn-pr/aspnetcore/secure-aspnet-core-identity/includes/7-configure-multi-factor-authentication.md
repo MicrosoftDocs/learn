@@ -104,7 +104,7 @@ Now that you can generate QR codes, you can embed a QR code into the **Configure
 
     Upon successful verification, the page displays a **Your authenticator app has been verified** banner and some recovery codes.
 
-1. In the *SQL Server* tab in Code, right-click the **RazorPagesPizza** database and select **New query**. Enter the following query and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to run it.
+1. In the *SQL Server* tab in VS Code, right-click the **RazorPagesPizza** database and select **New query**. Enter the following query and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to run it.
 
     ```sql
     SELECT FirstName, LastName, Email, TwoFactorEnabled FROM dbo.AspNetUsers
@@ -123,7 +123,7 @@ Now that you can generate QR codes, you can embed a QR code into the **Configure
     * **Set up authenticator app**
     * **Reset authenticator app**
 
-1. In the terminal pane in Code, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
+1. In the terminal pane in VS Code, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the app.
 
 ## Summary
 

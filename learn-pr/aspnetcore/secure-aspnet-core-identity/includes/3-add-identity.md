@@ -137,25 +137,23 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
 
 ## Configure the database connection
 
-1. Review *:::no-loc text="appsettings.json":::*.
+The `ConnectionStrings` section should look similar to the following JSON:
 
-    The `ConnectionStrings` section should look similar to the following JSON:
+```json
+"ConnectionStrings": {
+    "RazorPagesPizzaAuthConnection": "Server=(localdb)\\mssqllocaldb;Database=RazorPagesPizza;Trusted_Connection=True;MultipleActiveResultSets=true"
+}
+```
 
-    ```json
-    "ConnectionStrings": {
-        "RazorPagesPizzaAuthConnection": "Server=(localdb)\\mssqllocaldb;Database=RazorPagesPizza;Trusted_Connection=True;MultipleActiveResultSets=true"
-    }
-    ```
+This connection string points to an instance of SQL Server Express LocalDB by default. **If you are using the *.devcontainer***, change the connection string as follows. Save your changes.
 
-    This connection string points to an instance of SQL Server Express LocalDB by default. **If you are using the *.devcontainer***, change the connection string as follows. Save your changes.
+```json
+"ConnectionStrings": {
+    "RazorPagesPizzaIdentityDbContextConnection": "Data Source=localhost;Initial Catalog=RazorPagesPizza;Integrated Security=False;User Id=sa;Password=P@ssw0rd;MultipleActiveResultSets=True"
+}
+```
 
-    ```json
-    "ConnectionStrings": {
-        "RazorPagesPizzaIdentityDbContextConnection": "Data Source=localhost;Initial Catalog=RazorPagesPizza;Integrated Security=False;User Id=sa;Password=P@ssw0rd;MultipleActiveResultSets=True"
-    }
-    ```
-
-    This updates the connection string to connect to the instance of SQL Server inside the container.
+This updates the connection string to connect to the instance of SQL Server inside the container.
 
 ## Update the database
 

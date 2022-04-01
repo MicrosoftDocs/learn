@@ -51,7 +51,7 @@ In this section, you're going to create and customize the Identity UI files to b
     public class RazorPagesPizzaAuth : IdentityDbContext<RazorPagesPizzaUser>
     ```
 
-    The *:::no-loc text="EnableAuthenticator":::* Razor page was scaffolded, though it won't be modified until later in the module.
+    The *:::no-loc text="EnableAuthenticator":::* and *:::no-loc text="ConfirmEmail":::* Razor pages were scaffolded, though they won't be modified until later in the module.
 
 1. In *:::no-loc text="Program.cs":::*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted changes. (Example reformatted for readability.)
 
@@ -240,7 +240,7 @@ In order to send the confirmation email, you need to create an implementation of
     Navigate to the URL with <kbd>Ctrl</kbd>+*click*. The confirmation screen displays.
 
 1. Click **Login** and log in with the new user. The app's header now contains **Hello, [First name] [Last name]!**.
-1. In the **SQL Server** pane in Code, right-click on the **RazorPagesPizza** database and select **New query**. In the tab that appears, enter the following query and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to run it.
+1. In the **SQL Server** pane in VS Code, right-click on the **RazorPagesPizza** database and select **New query**. In the tab that appears, enter the following query and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to run it.
 
     ```sql
     SELECT UserName, Email, FirstName, LastName FROM dbo.AspNetUsers
@@ -268,7 +268,7 @@ In order to send the confirmation email, you need to create an implementation of
 
     The app's header updates to **Hello, [First name] [Last name]!**.
 
-1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane in Code to stop the app.
+1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane in VS Code to stop the app.
 
 ## Summary
 

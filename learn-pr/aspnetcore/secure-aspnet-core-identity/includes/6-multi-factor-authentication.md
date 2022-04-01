@@ -22,7 +22,7 @@ When registering, the user enters the key into a TOTP-compliant app. Such apps i
 * Google Authenticator
 * LastPass Authenticator
 
-Entering the key into the app can be streamlined with a QR code. The app uses the key and current time to generate and display unique codes every 30 seconds. If the code the app generates matches what the server expects, the authentication succeeds. The algorithm is designed to be forgiving of slight differences between client and server clocks.
+Entering the key into the app can be streamlined with a QR code. The app uses the key and current time to generate and display unique codes every 30 seconds. If the code the app generates matches what the server expects, the authentication succeeds. The algorithm is designed to be forgiving of minor differences between the clocks on your device and the server.
 
 As a form of MFA, the user is typically prompted for a TOTP code in combination with a password. The password is *something you know*, and the code is proof of *something you have*. This is because the only way to generate the code is with the key stored in the app.
 

@@ -41,121 +41,101 @@ You've received a new requirement that the Pizza List page should be visible onl
 
     The preceding changes cause UI elements that should be accessible only to administrators to be rendered only when the authenticated user is an administrator.
 
-## TODO: WIP beyond this point
+## Apply an authorization policy
 
-wip
+There's one more thing you should lock down. There's a page that should be accessible only to administrators, conveniently named *Pages/AdminsOnly.cshtml*. Let's create a policy to check the `IsAdmin=True` claim.
 
-## Register and apply the authorization policy
+1. In the *Program.cs*, make the following changes:
+    1. Incorporate the following highlighted code:
 
-The **Create Product** and **Edit Product** pages should be accessible only to administrators. To encapsulate the authorization criteria for such pages, an `Admin` policy will be created.
-
-1. In the `ConfigureServices` method of *:::no-loc text="Startup.cs":::*, make the following changes:
-    1. Replace the `// Add call to AddAuthorization` comment with the following code:
-
-        ```csharp
-        services.AddAuthorization(options =>
-            options.AddPolicy("Admin", policy =>
-                policy.RequireAuthenticatedUser()
-                    .RequireClaim("IsAdmin", bool.TrueString)));
-        ```
+        [!code-csharp[](../code/program-after-customization.cs?range=14-23&highlight=5-8)]
 
         The preceding code defines an authorization policy named `Admin`. The policy requires that the user is authenticated and has an `IsAdmin` claim set to `True`.
 
-    1. Incorporate the following highlighted code:
-
-        [!code-csharp[](../code/6-startup.cs?highlight=2-3)]
-
-        The `AuthorizePage` method call secures the *:::no-loc text="/Products/Edit":::* Razor Page route by applying the `Admin` policy. An advantage to this approach is that the Razor Page being secured requires no modifications. The authorization aspect is instead managed in *Startup.cs*. Anonymous users will be redirected to the login page. Authenticated users who don't satisfy the policy requirements are presented an **Access denied** message.
-
-1. In *:::no-loc text="Pages/Products/Create.cshtml.cs":::*, apply the following changes:
-    1. Replace the `// Add [Authorize(Policy = "Admin")] attribute` comment with the following attribute:
+    1. Modify the call to `AddRazorPages` as follows:
 
         ```csharp
-        [Authorize(Policy = "Admin")]
+        builder.Services.AddRazorPages(options =>
+            options.Conventions.AuthorizePage("/AdminsOnly", "Admin"));
         ```
 
-        The preceding code represents an alternative to the `AuthorizePage` method call in *:::no-loc text="Startup.cs":::*. The `[Authorize]` attribute enforces that the `Admin` policy requirements are satisfied. Anonymous users will be redirected to the login page. Authenticated users who don't satisfy the policy requirements are presented an **Access denied** message.
+        The `AuthorizePage` method call secures the */AdminsOnly* Razor Page route by applying the `Admin` policy. Authenticated users who don't satisfy the policy requirements are presented an **Access denied** message.
 
-    1. Uncomment the `//using Microsoft.AspNetCore.Authorization;` line at the top of the file.
+        > [!TIP]
+        > Alternatively, you could have instead modified *AdminsOnly.cshtml.cs*. In that case, you would add `[Authorize(Policy = "Admin")]` as an attribute on the `AdminsOnlyModel` class. An advantage to the `AuthorizePage` approach shown above is that the Razor Page being secured requires no modifications. The authorization aspect is instead managed in *Program.cs*.
 
-        The preceding change resolves the `[Authorize(Policy = "Admin")]` attribute in the previous step.
+1. In *Pages/Shared/_Layout.cshtml*, incorporate the following changes:
 
-## Modify the registration page
+    [!code-cshtml[](../code/pages/shared/_layout.cshtml?name=snippet_navlist&highlight=11-12,16)]
 
-Modify the registration page to allow administrators to register using the following steps.
+    The preceding change conditionally hides the **Admin** link in the header if the user isn't an administrator.
 
-1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml.cs":::*, make the following changes:
-    1. Add the following property to the `InputModel` nested class:
+## Add the `IsAdmin` claim to a user
 
-        [!code-csharp[](../code/areas/identity/pages/account/6-register.cshtml.cs?name=snippet_adminenrollmentkey&highlight=3-5)]
+In order to determine which users should get the `IsAdmin=True` claim, your app is going to rely on a confirmed email address to identify the administrator.
 
-    1. Apply the highlighted changes to the `OnPostAsync` method:
+1. In *appsettings.json*, add the highlighted property:
 
-        [!code-csharp[](../code/areas/identity/pages/account/6-register.cshtml.cs?name=snippet_onpostasync&highlight=1-3,21-23)]
+    [!code-json[](../code/appsettings.json?range=1-3&highlight=2)]
+
+    This will be the confirmed email address that gets the claim assigned.
+
+1. In *Areas/Identity/Pages/ConfirmEmail.cshtml.cs*, make the following changes:
+    1. Incorporate the following changes:
+
+        [!code-csharp[](../code/areas/identity/pages/confirmemail.cshtml.cs?name=snippet_configproperty&highlight=4,6-7,10)]
+
+        The preceding change modifies the constructor to receives an `IConfiguration` from the IoC container. The `IConfiguration` contains values from *appsettings.json*, and is assigned to a read-only property named `Configuration`.
+
+    1. Apply the highlighted changes to the `OnGetAsync` method:
+
+        [!code-csharp[](../code/areas/identity/pages/confirmemail.cshtml.cs?name=snippet_ongetasync&highlight=18-24)]
 
         In the preceding code:
 
-        * The `[FromServices]` attribute provides an instance of `AdminRegistrationTokenService` from the IoC container.
-        * The `UserManager` class's `AddClaimAsync` method is invoked to save an `IsAdmin` claim in the `AspNetUserClaims` table.
+        * The `AdminEmail` string is read from the `Configuration` property and assigned to `adminEmail`.
+        * If the user's email is successfully confirmed:
+            * The user's address is compared to `adminEmail`. `string.Compare()` is used for case-insensitive comparison.
+            * The `UserManager` class's `AddClaimAsync` method is invoked to save an `IsAdmin` claim in the `AspNetUserClaims` table.
 
-    1. Add the following code to the top of the file. It resolves the `AdminRegistrationTokenService` and `Claim` class references in the `OnPostAsync` method:
+    1. Add the following code to the top of the file. It resolves the `Claim` class references in the `OnGetAsync` method:
 
         ```csharp
-        using ContosoPets.Ui.Services;
         using System.Security.Claims;
         ```
 
-1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml":::*, add the following markup:
-
-    [!code-cshtml[](../code/areas/identity/pages/account/6-register.cshtml?highlight=6-10)]
-
 ## Test admin claim
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
+1. Make sure you've saved all your changes.
+1. Run the app with `dotnet run`.
+1. Navigate to your app and log in with an existing user, if not already logged in. Select **Pizza List** from the header. Notice the user isn't presented UI elements to delete or create pizzas.
+1. There's no **Admins** link in the header. In the browser's address bar, navigate directly to the **AdminsOnly** page. Replace `/Pizza` in the URL with `/AdminsOnly`.
 
-1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
-
-1. Navigate to your app and log in with an existing user, if not already logged in. Select **Products** from the header. Notice the user isn't presented links to edit, delete, or create products.
-
-1. In the browser's address bar, navigate directly to the **Create Product** page. That page's URL can be obtained by running the following command:
-
-    ```bash
-    echo "$webAppUrl/Products/Create"
-    ```
-
-    The user is forbidden from navigating to the page. An **Access denied** message is displayed. Similarly, the user will be forbidden from navigating to a route such as *:::no-loc text="/Products/Edit/1":::* route.
+    The user is forbidden from navigating to the page. An **Access denied** message is displayed.
 
 1. Select **Logout**.
+1. Register a new user with the address `admin@contosopizza.com`.
+1. As before, confirm the new user's email address and log in.
+1. Once logged in with the new administrative user, click the **Pizza List** link in the header.
 
-1. Obtain an administrator self-enrollment token using the following command:
+    The administrative user can create and delete pizzas.
 
-    ```bash
-    echo $(wget -q -O - $webAppUrl/admintoken)
-    ```
+1. Click the **Admins** link in the header.
 
-    > [!WARNING]
-    > The administrator self-enrollment mechanism is for illustrative purposes only. The *:::no-loc text="/api/Admin":::* endpoint for obtaining a token should be secured before using in a production environment.
-
-1. In the web app, register a new user. The token from the previous step should be provided in the **Admin enrollment key** text box.
-
-1. Once logged in with the new administrative user, click the **Products** link in the header.
-
-    The administrative user can view, edit, and create products.
+    The **AdminsOnly** page appears.
 
 ## Examine the AspNetUserClaims table
 
-Run the following command:
+Using the SQL Server extension in VS Code, run the following query:
 
-```bash
-db -Q "SELECT u.Email, c.ClaimType, c.ClaimValue FROM dbo.AspNetUserClaims AS c INNER JOIN dbo.AspNetUsers AS u ON c.UserId = u.Id" -Y25 -y10
+```sql
+SELECT u.Email, c.ClaimType, c.ClaimValue FROM dbo.AspNetUserClaims AS c INNER JOIN dbo.AspNetUsers AS u ON c.UserId = u.Id
 ```
 
-A variation of the following output appears:
+A tab with results similar to the following appears:
 
-```console
-Email                     ClaimType  ClaimValue
-------------------------- ---------- ----------
-scott@contoso.com         IsAdmin    True
-```
+| Email                  | ClaimType | ClaimValue |
+|------------------------|-----------|------------|
+| admin@contosopizza.com | IsAdmin   | True       |
 
 The `IsAdmin` claim is stored as a key-value pair in the `AspNetUserClaims` table. The `AspNetUserClaims` record is associated with the user record in the `AspNetUsers` table.
