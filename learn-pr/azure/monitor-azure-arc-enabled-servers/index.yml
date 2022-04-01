@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.monitor-azure-arc-enabled-servers
 metadata:
-  title: Secure your hybrid and multicloud machines through Azure Arc-enabled servers
+  title: Monitor your hybrid and multicloud machines through Azure Arc-enabled servers
   description: Understand the security capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Microsoft Defender for Cloud, Microsoft Defender for Servers, and Microsoft Sentinel.
   ms.date: 04/01/2022
   author: aurnovcy
