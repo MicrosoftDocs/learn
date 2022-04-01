@@ -6,7 +6,7 @@ To edit the app properties:
 
 1.  In the Azure AD portal, select **Enterprise applications**. Then find and select the application you want to configure.
 2.  In the **Manage** section, select **Properties** to open the **Properties** pane for editing.
-3.  Take a moment to understand the options available. The options available will depend on how the app is integrated with Azure AD. For example, an app that uses SAML-based SSO will have fields such as *User access URL* whereas an app that uses OIDC-based SSO will not. Note that apps added through **Azure Active Directory &gt; App registrations** are by default OIDC-based apps, while apps added **through Azure Active Directory &gt; Enterprise applications** might use any of a number of SSO standards. All apps will have fields for configuring when an app appears and can be used. These fields are:
+3.  Take a moment to understand the options available. The options available will depend on how the app is integrated with Azure AD. For example, an app that uses SAML-based SSO will have fields such as *User access URL* whereas an app that uses OIDC-based SSO won't. Apps added through **Azure Active Directory &gt; App registrations** are by default OIDC-based apps, while apps added **through Azure Active Directory &gt; Enterprise applications** might use any SSO standard. All apps will have fields for configuring when an app appears and can be used. These fields are:
     
      -  **Enabled for users to sign in?** determines whether users assigned to the application can sign in.
      -  **User assignment required?** determines whether users who aren't assigned to the application can sign in.
@@ -42,7 +42,7 @@ To edit the app properties:
         Yes
       :::column-end:::
       :::column:::
-        Assigned users can see the app and sign in.Unassigned users cannot see the app and cannot sign in.
+        Assigned users can see the app and sign in. Unassigned users can't see the app and can't sign in.
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -56,7 +56,7 @@ To edit the app properties:
         No
       :::column-end:::
       :::column:::
-        Assigned uses cannot see the app but they can sign in.Unassigned users cannot see the app and cannot sign in.
+        Assigned uses can't see the app but they can sign in. Unassigned users can't see the app and can't sign in.
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -70,7 +70,7 @@ To edit the app properties:
         Yes
       :::column-end:::
       :::column:::
-        Assigned users can see the app and sign in.Unassigned users cannot see the app but can sign in.
+        Assigned users can see the app and sign in. Unassigned users can't see the app but can sign in.
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -84,7 +84,7 @@ To edit the app properties:
         No
       :::column-end:::
       :::column:::
-        Assigned users cannot see the app but can sign in.Unassigned users cannot see the app but can sign in.
+        Assigned users can't see the app but can sign in. Unassigned users can't see the app but can sign in.
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -98,7 +98,7 @@ To edit the app properties:
         Yes
       :::column-end:::
       :::column:::
-        Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
+        Assigned users can't see the app and can't sign in. Unassigned users can't see the app and can't sign in.
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -112,7 +112,7 @@ To edit the app properties:
         No
       :::column-end:::
       :::column:::
-        Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
+        Assigned users can't see the app and can't sign in. Unassigned users can't see the app and can't sign in.
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -126,7 +126,7 @@ To edit the app properties:
         Yes
       :::column-end:::
       :::column:::
-        Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
+        Assigned users can't see the app and can't sign in. Unassigned users can't see the app and can't sign in.
       :::column-end:::
     :::row-end:::
     :::row:::
@@ -140,7 +140,7 @@ To edit the app properties:
         No
       :::column-end:::
       :::column:::
-        Assigned users cannot see the app and cannot sign in.Unassigned users cannot see the app and cannot sign in.
+        Assigned users can't see the app and can't sign in. Unassigned users can't see the app and can't sign in.
       :::column-end:::
     :::row-end:::
     
