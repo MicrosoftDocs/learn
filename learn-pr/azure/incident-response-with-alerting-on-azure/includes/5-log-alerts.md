@@ -52,4 +52,4 @@ As you can see, metric measurements greatly reduce the volume of alerts that are
 
 ## Stateless nature of log alerts
 
-One of the primary considerations when you're evaluating the use of log alerts is that they're stateless (stateful log alerts are [currently in preview](https://docs.microsoft.com/azure/azure-monitor/alerts/alerts-unified-log#state-and-resolving-alerts)). This means that a log alert will generate new alerts every time the rule criteria are triggered, regardless of whether the alert was previously recorded.
+One of the primary considerations when you're evaluating the use of log alerts is that they're stateless (stateful log alerts are [currently in preview](/azure/azure-monitor/alerts/alerts-unified-log#state-and-resolving-alerts)). This means that a log alert will generate new alerts every time the rule criteria are triggered, regardless of whether the alert was previously recorded.
