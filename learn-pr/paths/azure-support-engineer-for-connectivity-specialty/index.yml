@@ -3,7 +3,7 @@ uid: learn.wwl.azure-support-engineer-for-connectivity-specialty
 metadata:
   title: Azure Support Engineer for Connectivity Specialty
   description: Azure Support Engineer for Connectivity Specialty
-  ms.date: 03/31/2022
+  ms.date: 04/01/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial
@@ -35,9 +35,14 @@ products:
 - azure-virtual-network
 - azure-virtual-wan
 modules:
+- learn.wwl.business-continuity
+- learn.wwl.name-resolution-issues
+- learn.wwl.cloud-hybrid-connectivity
 - learn.wwl.troubleshoot-platform-service-issues
 - learn.wwl.troubleshoot-authentication-access-control
 - learn.wwl.troubleshoot-network-security-issues
 - learn.wwl.troubleshoot-routing-traffic-control-load-balancing
+- learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure
+- learn.wwl.troubleshoot-vpn-gateways
 trophy:
   uid: learn.wwl.azure-support-engineer-for-connectivity-specialty.trophy
