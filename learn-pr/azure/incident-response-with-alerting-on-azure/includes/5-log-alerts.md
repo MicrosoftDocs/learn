@@ -42,7 +42,7 @@ Metric measurement logs offer the same basic functionality as metric alert logs.
 Unlike number-of-records search logs, metric measurement logs require additional criteria to be set:
 
 - **Aggregate function**: The calculation that will be made against the result data. An example is count or average. The result of the function is called **AggregatedValue**.
-- **Group field**: A field by which the result will be grouped. This criterion is used in conjunction with the aggregated value. For example, you might specify that you want the average grouped by computer.
+- **Group field**: A field by which the result will be grouped. This criterion is used with the aggregated value. For example, you might specify that you want the average grouped by computer.
 - **Interval**: The time interval by which data is aggregated. For example, if you specify 10 minutes, an alert record is created for each aggregated block of 10 minutes.
 - **Threshold**: A point defined by an aggregated value and the total number of breaches.
 
@@ -52,4 +52,4 @@ As you can see, metric measurements greatly reduce the volume of alerts that are
 
 ## Stateless nature of log alerts
 
-One of the primary considerations when you're evaluating the use of log alerts is that they are stateless (stateful log alerts are [currently in preview](https://docs.microsoft.com/azure/azure-monitor/alerts/alerts-unified-log#state-and-resolving-alerts)). This means that a log alert will generate new alerts every time the rule criteria are triggered, regardless of whether the alert was previously recorded.
+One of the primary considerations when you're evaluating the use of log alerts is that they're stateless (stateful log alerts are [currently in preview](https://docs.microsoft.com/azure/azure-monitor/alerts/alerts-unified-log#state-and-resolving-alerts)). This means that a log alert will generate new alerts every time the rule criteria are triggered, regardless of whether the alert was previously recorded.
