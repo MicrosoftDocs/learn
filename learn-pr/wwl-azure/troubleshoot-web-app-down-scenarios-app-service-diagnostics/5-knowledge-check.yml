@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/01/2022
+  author: wwlpublish
+  ms.author: lauraalv
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A company’s web app is down and unresponsive. What are the steps in App Service Diagnostics to monitor and troubleshoot application and platform availability?"
+    choices:
+    - content: "Go to the overview page of the App Service resource and select Diagnose and Solve Problems. Then navigate to Availability and Performance and select the Web App Down feature."
+      isCorrect: true
+      explanation: "That's correct. To troubleshoot application platform and availability, you would need to navigate to the Web App Down feature under Availability and Performance."
+    - content: "Go to the overview page of the App Service resource and select Diagnose and Solve Problems. Then navigate to Configuration and Management and select the Web App Down feature."
+      isCorrect: false
+      explanation: "That's incorrect. Configuration and Management contains checks for App Service configuration on backups, slots, scaling, etc. It doesn't allow you to monitor and troubleshoot application and platform availability."
+    - content: "Go to the overview page of the App Service resource and select Diagnose and Solve Problems. Then navigate to Diagnostic Tools and select Web App Down."
+      isCorrect: false
+      explanation: "That's incorrect. Although Diagnostic Tools may be used to root cause an app’s downtime, it doesn't give you comprehensive information to troubleshoot application and platform availability."
+  - content: "A crash event occurred due to unhandled exceptions in a company’s web app. To narrow down the potential causes, Jim is going to use Crash Monitoring within App Service Diagnostics to investigate. What are the correct steps he needs to follow to configure Crash Monitoring?"
+    choices:
+    - content: "Go to Configuration Management, then Crash Monitoring, and select an existing storage account. From there, configure the start and end times, choose the number of dumps to be collected, and finally click Start Monitor."
+      isCorrect: false
+      explanation: "That's incorrect. Configuration and Management contains checks for App Service configuration on backups, slots, scaling, etc. It doesn't allow Jim to narrow down the potential causes of a crash event."
+    - content: "Go to Diagnostics Tools, then Application Crashes, and select Crash Monitoring. From there, configure the start and end times, choose the number of dumps to be collected, and finally click Start Monitor."
+      isCorrect: false
+      explanation: "That's incorrect. Application Crashes isn't available as part of Diagnostic Tools, and it will not navigate Jim to Crash Monitoring."
+    - content: "Go to Diagnostics Tools, then Crash Monitoring, and select an existing storage account. From there, configure the start and end times, choose the number of dumps to be collected, and finally click Start Monitor."
+      isCorrect: true
+      explanation: "That's correct. Jim would need to navigate to Diagnostic Tools first to configure Crash Monitoring."
+  - content: "Which of the following is a characteristic of Ask Genie?"
+    choices:
+    - content: "It's a feature within App Service Diagnostics that allows the user to open the memory dump files in VS Code to diagnose potential causes of an issue."
+      isCorrect: false
+      explanation: "That's incorrect. Ask Genie doesn't help the user to open memory dump files in VS Code."
+    - content: "It's a feature within App Service Diagnostics that allows the user to describe the problem of the application to help identify potential causes of an issue?"
+      isCorrect: true
+      explanation: "That's correct. Ask Genie is a bot which allows the user to input the technical issue your app is experiencing in your own words."
+    - content: "It's a feature within App Service Diagnostics that can only be accessed through Configuration and Management for troubleshooting potential causes of an issue."
+      isCorrect: false
+      explanation: "That's incorrect. Ask Genie can be accessed anywhere within App Service Diagnostics."
