@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.use-ask-genie-for-detector-recommendations
+title: Use Ask Genie for detector recommendations
+metadata:
+  title: Use Ask Genie for detector recommendations
+  description: "Use Ask Genie for detector recommendations"
+  ms.date: 04/01/2022
+  author: wwlpublish
+  ms.author: lauraalv
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-use-ask-genie-for-detector-recommendations.md)]

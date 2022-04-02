@@ -113,7 +113,7 @@ GET
 :::row-end:::
 :::row:::
   :::column:::
-    **`id`**
+    `id`
   :::column-end:::
   :::column:::
     Unique ID of the usage aggregate.
@@ -121,7 +121,7 @@ GET
 :::row-end:::
 :::row:::
   :::column:::
-    **`name`**
+    `name`
   :::column-end:::
   :::column:::
     Name of the usage aggregate.
@@ -129,7 +129,7 @@ GET
 :::row-end:::
 :::row:::
   :::column:::
-    **`type`**
+    `type`
   :::column-end:::
   :::column:::
     Resource definition.
@@ -137,7 +137,7 @@ GET
 :::row-end:::
 :::row:::
   :::column:::
-    **`subscriptionId`**
+    `subscriptionId`
   :::column-end:::
   :::column:::
     Subscription identifier of the Azure Stack Hub user.
@@ -145,7 +145,7 @@ GET
 :::row-end:::
 :::row:::
   :::column:::
-    **`usageStartTime`**
+    `usageStartTime`
   :::column-end:::
   :::column:::
     UTC start time of the usage bucket to which this usage aggregate belongs.
@@ -153,7 +153,7 @@ GET
 :::row-end:::
 :::row:::
   :::column:::
-    **`usageEndTime`**
+    `usageEndTime`
   :::column-end:::
   :::column:::
     UTC end time of the usage bucket to which this usage aggregate belongs.
@@ -161,15 +161,15 @@ GET
 :::row-end:::
 :::row:::
   :::column:::
-    **`instanceData`**
+    `instanceData`
   :::column-end:::
   :::column:::
-    Key-value pairs of instance details (in a new format): **`resourceUri`**: Fully qualified resource ID, which includes the resource groups and the instance name. **`location`**: Region in which this service was run. **`tags`**: Resource tags that are specified by the user. **`additionalInfo`**: More details about the resource that was consumed; for example, the OS version or image type.
+    Key-value pairs of instance details (in a new format): `resourceUri`: Fully qualified resource ID, which includes the resource groups and the instance name. `location`: Region in which this service was run. `tags`: Resource tags that are specified by the user. `additionalInfo`: More details about the resource that was consumed; for example, the OS version or image type.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    **`quantity`**
+    `quantity`
   :::column-end:::
   :::column:::
     Amount of resource consumption that occurred in this time frame.
@@ -177,10 +177,10 @@ GET
 :::row-end:::
 :::row:::
   :::column:::
-    **`meterId`**
+    `meterId`
   :::column-end:::
   :::column:::
-    Unique ID for the resource that was consumed (also called **`ResourceID`**).
+    Unique ID for the resource that was consumed (also called`ResourceID`).
   :::column-end:::
 :::row-end:::
 
