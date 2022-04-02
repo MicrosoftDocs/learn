@@ -7,7 +7,7 @@ There are many benefits for the user and the organization to enabling self-servi
  -  Users can reset their own password - no productivity loss
  -  No admin or IT intervention - enables IT to focus on bigger issues
 
-Note that a user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business license is required.
+Note that a user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Premium license is required.
 
 ## Enable self-service password reset
 

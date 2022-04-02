@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-network-security-issues.exercise-resolve-issue-connecting-virtual-machine-scale-set
+title: 'Exercise: Resolve issue connecting virtual machine scale set'
+metadata:
+  title: 'Exercise: Resolve issue connecting virtual machine scale set'
+  description: "Exercise: Resolve issue connecting virtual machine scale set"
+  ms.date: 03/31/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-exercise-resolve-issue-connecting-virtual-machine-scale-set.md)]
+interactive: powershell
