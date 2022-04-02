@@ -3,7 +3,7 @@ uid: learn.github.migrate-repository-github
 metadata:
   title: "Migrate your repository by using GitHub best practices"
   description: Learn to move your existing project to GitHub from a legacy version control system.
-  ms.date: 06/26/2020
+  ms.date: 03/31/2022
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
