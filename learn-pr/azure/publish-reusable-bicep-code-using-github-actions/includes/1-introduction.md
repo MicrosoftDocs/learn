@@ -14,7 +14,7 @@ You've previously used GitHub Actions to automate the deployment of your Azure r
 
 ## What will we be doing?
 
-In this module, you'll learn about the differences between deploying Azure resources and reusable Bicep code from a deployment workflow. You'll learn how your workflow securely identifies itself so that it can publish your code, and you'll learn how code validation and versioning can be performed within an automated deployment process.
+In this module, you'll learn about publishing reusable Bicep code from a deployment workflow. You'll learn how your workflow securely identifies itself so that it can publish your code, and you'll learn how code validation and versioning can be performed within an automated deployment process.
 
 You'll also create GitHub Actions workflows to publish two Bicep files: one as a template spec, and another as a module to a private Bicep registry.
 
@@ -35,9 +35,9 @@ You should be familiar with using:
 
 > [!TIP]
 > If you need a refresher on Bicep modules, registries, or template specs, take a look at these Microsoft Learn modules:
-> - [Create composable Bicep files by using modules](xref:learn.azure.create-composable-bicep-files-using-modules)
-> - [Share Bicep modules by using private registries](xref:learn.azure.share-bicep-modules-using-private-registries)
-> - [Publish libraries of reusable infrastructure code by using template specs](xref:learn.azure.arm-template-specs)
+> - [Create composable Bicep files by using modules](xref:learn.azure.create-composable-bicep-files-using-modules?azure-portal=true)
+> - [Share Bicep modules by using private registries](xref:learn.azure.share-bicep-modules-using-private-registries?azure-portal=true)
+> - [Publish libraries of reusable infrastructure code by using template specs](xref:learn.azure.arm-template-specs?azure-portal=true)
 
 To work through the exercises in the module, you'll need:
 

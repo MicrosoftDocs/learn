@@ -32,7 +32,9 @@ When you publish template specs to Azure yourself, your Azure Active Directory u
 When you work with an automated deployment workflow, the same principles apply. However, because you aren't the person running the deployment, you need to ensure that your workflow's service principal is given the appropriate access to the resource group for publishing the template spec, or to the container registry for publishing modules.
 
 > [!TIP]
-> When you publish a module to a registry, the service principal running the deployment probably doesn't need a lot of permission. You could consider using the security *principle of least privilege*, and provide the workflow's service principal with access only to the container registry, and not to a resource group or subscription.
+> When you publish a module to a registry, the service principal running the deployment probably doesn't need a lot of permission. When your registry uses Azure Active Directory authorization, it only need the AcrPush permission on the registry.
+>
+> Consider using the security *principle of least privilege*, and provide the workflow's service principal with access only to the container registry, and not to a resource group or subscription.
 
 ## Publish template specs and modules from a workflow
 
@@ -71,7 +73,7 @@ Similarly, when you publish a Bicep module from your own computer by using the A
 ```azurecli
 az bicep publish \
    --file module.bicep \
-   --target 'br:toycompany.azurecr.io/mymodules/modulename:moduleversion'
+   --target 'br:toycompany.azurecr.io/mymodules/myqueue:2'
 ```
 
 You can convert this Azure CLI command to a GitHub Actions step, too:
@@ -83,10 +85,10 @@ You can convert this Azure CLI command to a GitHub Actions step, too:
     inlineScript: |
       az bicep publish \
         --file module.bicep \
-        --target 'br:toycompany.azurecr.io/mymodules/modulename:moduleversion'
+        --target 'br:toycompany.azurecr.io/mymodules/myqueue:2'
 ```
 
 > [!TIP]
-> Notice that in this example, the Bicep registry hostname (`toycompany.azurecr.io`) is embedded in the workflow definition. This isn't a good practice. You'll learn some other approaches later in this Microsoft Learn module.
+> Notice that in this example, the Bicep registry hostname (`toycompany.azurecr.io`) is embedded in the workflow definition. This isn't a good practice. You can use environment variables to set configuration settings like this. You'll see how this works later in this Microsoft Learn module.
 
 Shortly, you'll see how you can publish a template spec from a workflow by using the steps described here.
