@@ -22,6 +22,7 @@ summary: |
   * Work with multiple environments, and handle parameters and approvals.
   * Deploy other Azure configuration settings, applications, and databases.
   * Use pull requests to automatically validate and deploy your Bicep code as part of your review process.
+  * Build workflows that publish reusable Bicep files to template specs and modules.
 
   [!include[](../../includes/bicep-paths.md)]
 prerequisites: |
