@@ -2,19 +2,19 @@
 uid: learn.azure.monitor-azure-arc-enabled-servers
 metadata:
   title: Monitor your hybrid and multicloud machines through Azure Arc-enabled servers
-  description: Understand the security capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Microsoft Defender for Cloud, Microsoft Defender for Servers, and Microsoft Sentinel.
-  ms.date: 04/01/2022
+  description: Understand the monitoring capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Azure Logs and Metrics, VM Insights, and Azure Monitor Alerts.
+  ms.date: 04/03/2022
   author: aurnovcy
   ms.author: aurnovc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Monitor your hybrid and multicloud machines through Azure Arc-enabled servers
-summary: Azure Arc promises to bridge the gap between on-premises and cloud environments. Azure Arc extends the consistent security, observability, and governance of the Azure platform to non-Azure machines. In this module, you'll learn about planning and securely deploying Azure Arc-enabled servers at scale.
+summary: Azure Arc promises to bridge the gap between on-premises and cloud environments. Azure Arc extends the consistent security, observability, and governance of the Azure platform to non-Azure machines. In this module, you'll learn about monitoring Azure Arc-enabled servers.
 abstract: |
   After you've completed this module, you will be able to:
-    - Understand the onboarding process for and benefits of using Microsoft Defender for Cloud with Azure Arc-enabled servers 
-    -	Evaluate the benefits of using Microsoft Defender for Servers with Azure Arc-enabled servers 
-    -	Understand the onboarding process for and benefits of using Microsoft Sentinel with Azure Arc-enabled servers 
+    - Understand the usage of VM extensions to manage observability agents with Azure Arc-enabled servers 
+    - Evaluate different Azure Monitor offerings across logs, metrics, and alerts
+    -	Understand the onboarding process for and benefits of using VM Insights with Azure Arc-enabled servers 
 prerequisites: |
   - Basic characteristics of Azure services and Azure Arc 
   - Compute, storage, networking, and virtualization technologies 
