@@ -80,4 +80,4 @@ When you consume modules from a registry or use a template spec as a Bicep modul
 By using aliases, you can make your deployment process easily work across multiple environments. For example, when you define a module you might use an alias instead of a registry name. Then, you can design a deployment workflow to configure the alias to be mapped to a development module registry when you're deploying to a sandbox environment, and to a production registry when you're deploying to other environments.
 
 > [!NOTE]
-> Aliases don't work when you publish. They only apply when you use template specs or modules.
+> Aliases don't apply when you publish. They only work when you use template specs or modules.
