@@ -17,7 +17,7 @@
 
 ### Index.yml
 - [X] *title* is set
-- [ ] *description* is set and follows guidelines (doesn't duplicate title)
+- [X] *description* is set and follows guidelines (doesn't duplicate title)
 - [X] *summary* is set and follows guidelines
 - [X] *abstract* is set and lists objectives (no periods)
 - [X] *prerequisites* are set
@@ -33,10 +33,10 @@
 - [X] *title* is set
 - [X] *ms.date* is set 
 - [X] *author* and *ms.author* are set
-- [ ] *durationInMinutes* is set and IS ACCURATE
+- [X] *durationInMinutes* is set and IS ACCURATE
 - [N/A] *interactive* is set to **bash** or **azure-portal** (if exercise)
 - [N/A] *azureSandbox* is set to true if needed
-- [ ]  Knowledge checks reviewed for spelling and accuracy
+- [X]  Knowledge checks reviewed for spelling and accuracy
 
 ### Exercises
 - [X] All exercise units have *Exercise - * prefix on titles

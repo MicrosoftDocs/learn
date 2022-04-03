@@ -10,6 +10,6 @@ metadata:
   ms.author: yaschust
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/5-exercise-visualize-data-render-operator.md)]
