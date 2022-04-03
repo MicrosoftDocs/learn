@@ -75,5 +75,9 @@ When you deploy to Azure by using Bicep, it's common to use multiple environment
 
 Some organizations also apply the same principles to Bicep modules and template specs. For example, you might first publish new versions of your modules to a non-production registry so that the users of each module can try out the new versions. Then, after they've signed off, you can publish the modules to your organization's production registry. Like regular deployments, you can use *jobs* and *reusable workflows* to define the deployment sequence across your environments. In this Microsoft Learn module, we publish to a single environment to keep the workflow simple.
 
-> [!TIP]
-> When you consume modules from a registry or a template spec, you can specify an *alias*. By using aliases, you can make your deployment process easily work across multiple environments. Aliases don't work when you publish modules, though.
+When you consume modules from a registry or use a template spec as a Bicep module, you can make use of *aliases*. Instead of specifying the registry name or template spec location every time you define a module, you use its alias.
+
+By using aliases, you can make your deployment process easily work across multiple environments. For example, when you define a module you might use an alias instead of a registry name. Then, you can design a deployment workflow to configure the alias to be mapped to a development module registry when you're deploying to a sandbox environment, and to a production registry when you're deploying to other environments.
+
+> [!NOTE]
+> Aliases don't work when you publish. They only apply when you use template specs or modules.
