@@ -1,4 +1,4 @@
-## Change group license assignments
+## Change group license assignment
 
 1.  Browse to the [Azure Active Directory](https://portal.azure.com/) blade.
 2.  In the left navigation, under **Manage**, select **Groups**.
