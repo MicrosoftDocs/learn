@@ -10,7 +10,7 @@ metadata:
   ms.author: yaschust
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
 quiz:
   questions:
