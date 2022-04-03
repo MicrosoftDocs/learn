@@ -92,3 +92,7 @@ You can convert this Azure CLI command to a GitHub Actions step, too:
 > Notice that in this example, the Bicep registry hostname (`toycompany.azurecr.io`) is embedded in the workflow definition. This isn't a good practice. You can use environment variables to set configuration settings like this. You'll see how this works later in this Microsoft Learn module.
 
 Shortly, you'll see how you can publish a template spec from a workflow by using the steps described here.
+
+## Use a module or template spec
+
+In previous Microsoft Learn modules, you learned how to deploy the resources defined in template specs, and how to use Bicep modules stored in registries. Whether you publish your template specs and modules manually or from a deployment workflow, you use and deploy them in the same way.
