@@ -1,6 +1,6 @@
-Sometimes, your Bicep code isn't deployed directly. Instead, you might want it to be *reused* in multiple deployments. Azure template specifications enable you to create reusable deployments for complete solutions. Bicep modules and registries enable you to create components that you can add to other Bicep deployments.
+Sometimes, your Bicep code isn't deployed directly. Instead, you might want it to be *reused* in multiple deployments. Azure template specs enable you to create reusable deployments for complete solutions. Bicep modules and registries enable you to create components that you can add to other Bicep deployments.
 
-Publishing reusable Bicep code comes with different concerns than normal Bicep deployments. In this Microsoft Learn module, you'll learn how to automate the validation and publishing of your template specifications and Bicep modules.
+Publishing reusable Bicep code comes with different concerns than normal Bicep deployments. In this Microsoft Learn module, you'll learn how to automate the validation and publishing of your template specs and Bicep modules.
 
 ## Example scenario
 
@@ -10,31 +10,31 @@ To make it easy for your colleagues, you've created a set of security-hardened B
 
 You've previously used GitHub Actions to automate the deployment of your Azure resources. Now, you want to find a way to automate the validation and publishing of your reusable Bicep code.
 
-:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram that shows two workflows. One publishes a complete Bicep file to a template specification, and the other publishes a module to a Bicep registry." border="false":::
+:::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram that shows two workflows. One publishes a complete Bicep file to a template spec, and the other publishes a module to a Bicep registry." border="false":::
 
 ## What will we be doing?
 
 In this module, you'll learn about publishing reusable Bicep code from a deployment workflow. You'll learn how your workflow securely identifies itself so that it can publish your code. You'll also learn how to perform code validation and versioning within an automated deployment process.
 
-You'll create GitHub Actions workflows to publish two Bicep files: one as a template specification, and another as a module to a private Bicep registry.
+You'll create GitHub Actions workflows to publish two Bicep files: one as a template spec, and another as a module to a private Bicep registry.
 
 ## What is the main goal?
 
-After you complete this module, you'll be able to publish reusable Azure template specifications and Bicep modules from your deployment workflows.
+After you complete this module, you'll be able to publish reusable Azure template specs and Bicep modules from your deployment workflows.
 
 ## Prerequisites
 
 You should be familiar with using:
 
 - Bicep modules and module registries.
-- Azure template specifications.
+- Azure template specs.
 - The Bicep linter, along with testing your Bicep code.
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
 - GitHub Actions, including jobs, steps, and secrets.
 
 > [!TIP]
-> If you need a refresher on Bicep modules, registries, or template specifications, see these Microsoft Learn modules:
+> If you need a refresher on Bicep modules, registries, or template specs, see these Microsoft Learn modules:
 > - [Create composable Bicep files by using modules](xref:learn.azure.create-composable-bicep-files-using-modules?azure-portal=true)
 > - [Share Bicep modules by using private registries](xref:learn.azure.share-bicep-modules-using-private-registries?azure-portal=true)
 > - [Publish libraries of reusable infrastructure code by using template specs](xref:learn.azure.arm-template-specs?azure-portal=true)

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-reusable-bicep-code-using-github-actions.exercise-publish-template-spec
-title: Exercise - Publish a template specification
+title: Exercise - Publish a template spec
 metadata:
   unitType: exercise
-  title: Exercise - Publish a template specification
-  description: Create a GitHub Actions workflow to publish a template specification to Azure.
+  title: Exercise - Publish a template spec
+  description: Create a GitHub Actions workflow to publish a template spec to Azure.
   ms.date: 03/29/2022
   author: pazdedav
   ms.author: dapazd

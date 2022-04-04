@@ -1,6 +1,6 @@
 Now that your organization is using Bicep so frequently, it needed to find a way to automate the publishing of reusable Bicep code. You had prepared some Bicep files to deploy security-hardened complete solutions and individual components for your colleagues to reuse.
 
-This module described approaches to automate the publishing of template specifications and Bicep modules to registries. You learned about:
+This module described approaches to automate the publishing of template specs and Bicep modules to registries. You learned about:
 
 - The differences between publishing reusable code and deploying regular Bicep files.
 - How to repurpose aspects of deployment workflows for publishing reusable code.

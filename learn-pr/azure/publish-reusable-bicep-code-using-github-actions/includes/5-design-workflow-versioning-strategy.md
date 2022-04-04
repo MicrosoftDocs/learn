@@ -4,7 +4,7 @@ When you automate the publishing process, you need to consider how to automate t
 
 ## Version numbers
 
-In previous Microsoft Learn modules, you learned about the importance of versioning for template specifications and Bicep modules. You can choose from many different versioning approaches. In many situations, it's a good practice to use a *multipart* versioning system. That system consists of a *major* version, *minor* version, and *revision* number, similar to the following example:
+In previous Microsoft Learn modules, you learned about the importance of versioning for template specs and Bicep modules. You can choose from many different versioning approaches. In many situations, it's a good practice to use a *multipart* versioning system. That system consists of a *major* version, *minor* version, and *revision* number, similar to the following example:
 
 :::image type="content" source="../media/5-version-number.png" alt-text="Diagram that shows the version number 1.4.106." border="false":::
 
@@ -23,7 +23,7 @@ Changes in different parts of version numbers communicate important information 
 For example, suppose you're using a Bicep module that somebody else has published. The module has a version number of `2.0.496`. You see that a new version of the module is available with the version number `2.1.502`. The only significant change is to the minor version number, which indicates that you shouldn't expect a breaking change when you use the new version.
 
 > [!TIP]
-> *Semantic versioning* is a formalized versioning structure that's similar to multipart versioning. Semantic versioning includes additional components in the version number, along with strict rules about when you should set or reset each component.
+> *Semantic versioning* is a formalized versioning structure that's similar to multipart versioning. Semantic versioning includes additional components in the version number, along with strict rules about when you should set or reset each component. We link to more information about semantic versioning in the summary.
 
 Your team needs to decide how to define a breaking change for the purpose of versioning. For example, suppose you've built a Bicep module that deploys a storage account. You're now updating the Bicep file to enable private endpoints on your storage account. You're adding a private DNS zone to your Bicep file at the same time. 
 
@@ -33,11 +33,11 @@ You can also choose to use a simpler versioning strategy, such as just using the
 
 ### Versions and workflows
 
-When you publish your code interactively, such as by using the Azure CLI, you probably think about the version number that you assign to your template specification or module as you publish it. But in an automated deployment workflow, you need to change your approach to assign version numbers. Your workflow can't automatically detect breaking changes, or advise you when you should increment your major or minor version numbers. Carefully consider versioning before you publish the template specification or module.
+When you publish your code interactively, such as by using the Azure CLI, you probably think about the version number that you assign to your template spec or module as you publish it. But in an automated deployment workflow, you need to change your approach to assign version numbers. Your workflow can't automatically detect breaking changes, or advise you when you should increment your major or minor version numbers. Carefully consider versioning before you publish the template spec or module.
 
 One approach is to store a *metadata file* with your Bicep code, as illustrated in the following diagram:
 
-:::image type="content" source="../media/5-metadata-files.png" alt-text="Diagram that shows a file system hierarchy with two modules and a template specification, each with an associated metadata dot J S O N file." border="false":::
+:::image type="content" source="../media/5-metadata-files.png" alt-text="Diagram that shows a file system hierarchy with two modules and a template spec, each with an associated metadata dot J S O N file." border="false":::
 
 Whenever you update your Bicep code, you update the version information in the corresponding metadata file. Ensure that you correctly identify breaking and nonbreaking changes so you can increment the version numbers correctly.
 
@@ -48,9 +48,9 @@ You'll see how you can use a metadata file in the next exercise.
 
 ## How many workflows?
 
-It's common to build up a collection of template specifications and modules. Often, it makes sense to keep these in the same Git repository.
+It's common to build up a collection of template specs and modules. Often, it makes sense to keep these in the same Git repository.
 
-By using *path filters* in GitHub Actions, you can create separate workflows for each module or template specification within your repository. This approach helps you avoid publishing a new version of every Bicep file within the repository every time you change one file. You can use *reusable workflows* to define your workflow's steps in a centralized file, which keeps each module's and template specification's workflow lightweight.
+By using *path filters* in GitHub Actions, you can create separate workflows for each module or template spec within your repository. This approach helps you avoid publishing a new version of every Bicep file within the repository every time you change one file. You can use *reusable workflows* to define your workflow's steps in a centralized file, which keeps each module's and template spec's workflow lightweight.
 
 For example, suppose you have a file structure similar to the one illustrated earlier. You could configure three separate workflows, one for each Bicep file. Select each tab to see the corresponding workflow definition and its path filter:
 
@@ -71,7 +71,7 @@ For example, suppose you have a file structure similar to the one illustrated ea
 Suppose you change only the *module-2/main.bicep* file. Only the workflow for module 2 runs. But if you change multiple files in the same commit, each of the relevant workflows is triggered.
 
 > [!NOTE]
-> The approach of creating a workflow for each of your reusable Bicep files is simple and flexible. But it can become cumbersome when you have a large number of Bicep files, or if you don't want to maintain separate workflows for each module and template specification. 
+> The approach of creating a workflow for each of your reusable Bicep files is simple and flexible. But it can become cumbersome when you have a large number of Bicep files, or if you don't want to maintain separate workflows for each module and template spec. 
 >
 > You can also write scripts within your workflow to find the code that's changed and publish just those files. This is a more complex approach, and it's beyond the scope of this Microsoft Learn module.
 
@@ -79,11 +79,11 @@ Suppose you change only the *module-2/main.bicep* file. Only the workflow for mo
 
 When you deploy to Azure by using Bicep, it's common to use multiple environments to help you to validate and test your code before it's published to a production environment. In previous Microsoft Learn modules, you learned how to work with multiple environments from a deployment workflow. 
 
-Some organizations apply the same principles to Bicep modules and template specifications. For example, you might first publish new versions of your modules to a non-production registry so that the users of each module can try out the new versions. Then, after they've signed off, you can publish the modules to your organization's production registry. 
+Some organizations apply the same principles to Bicep modules and template specs. For example, you might first publish new versions of your modules to a non-production registry so that the users of each module can try out the new versions. Then, after they've signed off, you can publish the modules to your organization's production registry. 
 
 Like regular deployments, you can use *jobs* and *reusable workflows* to define the deployment sequence across your environments. In this Microsoft Learn module, we publish to a single environment to keep the workflow simple.
 
-When you consume modules from a registry or use a template specification as a Bicep module, you can use *aliases*. Instead of specifying the registry name or the template specification's location every time you define a module, you use its alias.
+When you consume modules from a registry or use a template spec as a Bicep module, you can use *aliases*. Instead of specifying the registry name or the template spec's location every time you define a module, you use its alias.
 
 By using aliases, you can make your deployment process easily work across multiple environments. For example, when you define a module, you might use an alias instead of a registry name. Then, you can design a deployment workflow to configure the alias to be mapped to:
 
@@ -91,4 +91,4 @@ By using aliases, you can make your deployment process easily work across multip
 - A production registry when you're deploying to other environments.
 
 > [!NOTE]
-> Aliases don't apply when you publish. They work only when you use template specifications or modules.
+> Aliases don't apply when you publish. They work only when you use template specs or modules.

@@ -1,12 +1,12 @@
-Your team has built some security-hardened Bicep files that are compliant with your company's new governance model. One of the hardened Bicep files deploys a Linux-based Azure App Service app. In this exercise, you'll use a deployment workflow to publish the Bicep file as a template specification.
+Your team has built some security-hardened Bicep files that are compliant with your company's new governance model. One of the hardened Bicep files deploys a Linux-based Azure App Service app. In this exercise, you'll use a deployment workflow to publish the Bicep file as a template spec.
 
 During the process, you'll:
 
 > [!div class="checklist"]
 > * Add a lint job to the workflow.
-> * Add a workflow job to publish the template specification.
+> * Add a workflow job to publish the template spec.
 > * Manually run the workflow and verify that it finishes successfully.
-> * Check the published template specification in Azure.
+> * Check the published template spec in Azure.
 
 ## Add a lint job to your workflow
 
@@ -18,7 +18,7 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
    :::image type="content" source="../media/4-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the location of the workflow definition file.":::
 
-   The workflow definition includes two triggers. In this exercise, you won't modify the Bicep file for the template specification, so the `push` trigger never fires. To try out your workflow, you manually invoke it by using the `workflow_dispatch` trigger.
+   The workflow definition includes two triggers. In this exercise, you won't modify the Bicep file for the template spec, so the `push` trigger never fires. To try out your workflow, you manually invoke it by using the `workflow_dispatch` trigger.
 
 1. At the bottom of the file, where you see a comment that says **To be added**, add the following lint job definition:
 
@@ -31,16 +31,16 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 ## Add a publish job to your workflow
 
-Now, you can add a second job to publish the template specification to Azure.
+Now, you can add a second job to publish the template spec to Azure.
 
 1. Add the following code at the end of the *template-spec-linux-app-service.yml* file:
 
    :::code language="yaml" source="code/4-workflow.yml" range="26-45" :::
 
-   This job checks out the code from your repository and signs in to Azure by using GitHub secret that you created earlier. It then runs the `az ts create` command to publish the template specification to Azure.
+   This job checks out the code from your repository and signs in to Azure by using GitHub secret that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
 
    > [!TIP]
-   > To keep things simple, your workflow uses the workflow's *run number* as the template specification's version number. In the next unit, you'll learn about a more complex versioning scheme.
+   > To keep things simple, your workflow uses the workflow's *run number* as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
 
 1. Save your changes to the file.
 
@@ -78,32 +78,32 @@ Now, you can add a second job to publish the template specification to Azure.
 
 1. Select the **template-spec-linux-app-service** workflow, select the **Run workflow** button, and then select **Run workflow**.
 
-   :::image type="content" source="../media/4-workflow-run.png" alt-text="Screenshot of GitHub that shows selections for running the template specification's workflow.":::
+   :::image type="content" source="../media/4-workflow-run.png" alt-text="Screenshot of GitHub that shows selections for running the template spec's workflow.":::
 
    GitHub starts a new workflow run. You might need to refresh your browser window to see the run appear.
 
 1. Select the latest run in the list.
 
-   :::image type="content" source="../media/4-workflow-runs-list.png" alt-text="Screenshot of GitHub that highlights the latest run of the template specification's workflow.":::
+   :::image type="content" source="../media/4-workflow-runs-list.png" alt-text="Screenshot of GitHub that highlights the latest run of the template spec's workflow.":::
 
-   Wait for the workflow run to finish. When it does, the template specification is published to Azure.
+   Wait for the workflow run to finish. When it does, the template spec is published to Azure.
 
 1. Note the workflow's run number, which is probably **2**.
 
    :::image type="content" source="../media/4-run-success.png" alt-text="Screenshot of GitHub that shows a successful workflow run and highlights the run number.":::
 
-## Review the template specification in Azure
+## Review the template spec in Azure
 
-You can also view the published template specification in the Azure portal.
+You can also view the published template spec in the Azure portal.
 
 1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Go to the **ToyReusable** resource group, and select the **linux-app-service** template specification.
+1. Go to the **ToyReusable** resource group, and select the **linux-app-service** template spec.
 
-   :::image type="content" source="../media/4-template-spec-portal.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the template specification highlighted.":::
+   :::image type="content" source="../media/4-template-spec-portal.png" alt-text="Screenshot of the Azure portal that shows the resource group, with the template spec highlighted.":::
 
-1. Examine the details of the template specification.
+1. Examine the details of the template spec.
 
-   :::image type="content" source="../media/4-template-spec-details-portal.png" alt-text="Screenshot of the Azure portal that shows the template specification details.":::
+   :::image type="content" source="../media/4-template-spec-details-portal.png" alt-text="Screenshot of the Azure portal that shows the template spec details.":::
 
-   Notice that the **Latest version** and **Version** number is the same as the workflow's run number. Your workflow uses the run number for the template specification's version number.
+   Notice that the **Latest version** and **Version** number is the same as the workflow's run number. Your workflow uses the run number for the template spec's version number.

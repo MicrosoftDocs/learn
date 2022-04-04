@@ -31,7 +31,7 @@ quiz:
     - content: |
         `az ts publish`
       isCorrect: false
-      explanation: Incorrect. You don't need to publish a template specification.
+      explanation: Incorrect. You don't need to publish a template spec.
     - content: |
         `az bicep publish`
       isCorrect: false
