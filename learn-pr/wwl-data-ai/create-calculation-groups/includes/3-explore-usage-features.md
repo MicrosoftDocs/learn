@@ -1,12 +1,12 @@
-Before creating calculation groups, let's explore their properties. Calculation groups are made up of *calculation items*, which are simply DAX statements containing a substitute or placeholder for existing explicit measures in your model. For example, a calculation group, Time Intelligence, may contain the calculation items, Year to Date, Quarter to Date, and Month to Date.
+Before creating calculation groups, let's explore their properties. Calculation groups are made up of *calculation items*, which are simply DAX statements containing a substitute or placeholder for existing explicit measures in your model. For example, a calculation group, Time Intelligence, may contain the calculation items Year to Date, Quarter to Date, and Month to Date.
 
 ## Calculation group properties
-Anyone using calculation groups needs to be aware of the precedence property of a calculation group. 
+Anyone using calculation groups needs to be aware of the *precedence* property of a calculation group. 
 
 ### Precedence
 
-Precedence is a property defined for a calculation group. When a data model contains more than one calculation group it's essential to define the *precedence*, or the order of evaluation. 
- 
+*Precedence* is a property defined for a calculation group. When a data model contains more than one calculation group it's essential to define the *precedence*, or the order of evaluation. 
+
 Defining the precedence ensures that the different calculation groups are executed in the proper order. A higher number indicates greater precedence, meaning it will be applied before calculation groups with lower precedence.
 
 All calculation items within a single calculation group share the same precedence. 

@@ -5,13 +5,13 @@ Calculation groups can be created for tabular models in SQL Server 2019 and late
 > [!Note]
 > Implementing calculation groups in Power BI requires Power BI Premium licensing. 
 
-The matrix below contains three measures, Orders, Sales, and Profit. Using a calculation group enables you to create two calculation items, Previous Year and Year over Year, which are then applied to each of our three existing measures.
+The matrix below contains three measures: Orders, Sales, and Profit. Using a calculation group enables you to create two calculation items, Previous Year and Year over Year, which are then applied to each of our three existing measures.
 
 ![Matrix visual displaying data for orders, sales, and profit by fiscal year and quarter. Two calculation items have been created to display values for previous year and year over year for each measure.](../media/calc-groups-matrix.png)
 
 ## How to create calculation groups
 
-The best tool for creating calculation groups in Power BI is the free, open-source [Tabular Editor 2.x](https://github.com/TabularEditor/TabularEditor) tool. Tabular Editor 2.x lets you manipulate and manage measures, calculated columns, display folders, perspectives and translations in Analysis Services Tabular and Power BI XMLA Models (from Compatibility Level 1200 and onwards). Power BI Desktop doesn't have the user interface to create calculation groups.
+The best tool for creating calculation groups in Power BI is the free, open-source [Tabular Editor 2.x](https://github.com/TabularEditor/TabularEditor) tool. Tabular Editor 2.x lets you manipulate and manage measures, calculated columns, display folders, perspectives, and translations in Analysis Services Tabular and Power BI XMLA Models (from Compatibility Level 1200 and onwards). Power BI Desktop doesn't have the user interface to create calculation groups.
 
 Calculation groups are also supported in Visual Studio with Analysis Services Projects VSIX update 2.9.2 and later.
 
