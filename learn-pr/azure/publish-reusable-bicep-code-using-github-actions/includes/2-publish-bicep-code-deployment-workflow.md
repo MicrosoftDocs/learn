@@ -11,9 +11,9 @@ When you're deciding between template specs and Bicep modules, a good rule of th
 
 ## Validate reusable code in a workflow
 
-Unlike regular Bicep deployments, when you create a template spec or a module, you don't deploy the resources directly to Azure. Instead, you provide the template spec or module to another deployment. That deployment will deploy the resources you've defined. The ways that you validate and test your template specs and Bicep modules might be different from the process that you use for regular Bicep files.
+Unlike regular Bicep deployments, when you create a template specification or a module, you don't deploy the resources directly to Azure. Instead, you publish the template spec or module. Then you can use the template spec or module in another deployment. That deployment will deploy the resources you've defined. The ways that you validate and test your template specifications and Bicep modules might be different from the process that you use for regular Bicep files.
 
-Linting your Bicep code is good practice. The linter detects syntactical problems and warns you if you're not following the recommended practices.
+Linting your Bicep code is good practice. The linter detects syntactical problems, and it warns you if you're not following the recommended practices.
 
 Beyond linting, you might want to consider testing your template specs and modules by using preflight deployments. You might even consider deploying your template specs and modules to Azure and testing that the resources they create behave as you expect. However, it can be challenging to run these types of tests from a deployment workflow for two reasons:
 
