@@ -83,5 +83,12 @@ Some organizations apply the same principles to Bicep modules and template speci
 
 Like regular deployments, you can use *jobs* and *reusable workflows* to define the deployment sequence across your environments. In this Microsoft Learn module, we publish to a single environment to keep the workflow simple.
 
-> [!TIP]
-> When you consume modules from a registry or a template specification, you can specify an *alias*. By using aliases, you can make your deployment process easily work across multiple environments. Aliases don't work when you publish modules, though.
+When you consume modules from a registry or use a template specification as a Bicep module, you can use *aliases*. Instead of specifying the registry name or the template specification location every time you define a module, you use its alias.
+
+By using aliases, you can make your deployment process easily work across multiple environments. For example, when you define a module, you might use an alias instead of a registry name. Then, you can design a deployment workflow to configure the alias to be mapped to:
+
+- A development module registry when you're deploying to a sandbox environment.
+- A production registry when you're deploying to other environments.
+
+> [!NOTE]
+> Aliases don't apply when you publish. They work only when you use template specifications or modules.
