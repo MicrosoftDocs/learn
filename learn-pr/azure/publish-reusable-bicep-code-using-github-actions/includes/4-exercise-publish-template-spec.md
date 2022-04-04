@@ -74,7 +74,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
    :::image type="content" source="../media/4-actions.png" alt-text="Screenshot of GitHub that shows the Actions tab.":::
 
-   Failed workflow runs are listed already, but you don't need to worry about them. They failed because the workflows weren't yet completed.
+   Failed workflow runs are listed already, but you don't need to worry about them. They failed because the workflow definitions weren't yet completed.
 
 1. Select the **template-spec-linux-app-service** workflow, select the **Run workflow** button, and then select **Run workflow**.
 
