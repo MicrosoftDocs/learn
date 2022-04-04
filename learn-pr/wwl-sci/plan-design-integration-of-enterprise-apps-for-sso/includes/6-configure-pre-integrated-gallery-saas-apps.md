@@ -154,12 +154,12 @@ To edit the app properties:
 4.  In the **Manage** section, select **Properties** to open the **Properties** pane for editing.
 5.  Select the icon to upload the logo.
 6.  When you're finished, select **Save**.
-
-:::image type="content" source="../media/change-logo-fe12027c.png" alt-text=""Screenshot of the Properties screen that shows how to change the logo."":::
-
-
-> [!NOTE]
-> The thumbnail displayed on this Properties pane doesn't update right away. You can close and reopen the Properties pane to see the updated icon.
+    
+    :::image type="content" source="../media/change-logo-fe12027c.png" alt-text="Screenshot of the Properties screen that shows how to change the logo.":::
+    
+    
+    > [!NOTE]
+    > The thumbnail displayed on this Properties pane doesn't update right away. You can close and reopen the Properties pane to see the updated icon.
 
 ## Add notes
 
@@ -168,5 +168,6 @@ You can use the notes field to add any information that is relevant for the mana
 1.  In the Azure AD portal, select **Enterprise applications**. Then find and select the application you want to configure.
 2.  In the **Manage** section, select **Properties** to open the **Properties** pane for editing.
 3.  Update the Notes field, select **Save**.
-
-:::image type="content" source="../media/notes-application-5bc7eeff.png" alt-text="Screenshot of the Properties screen that shows how to change the notes":::
+    
+    :::image type="content" source="../media/notes-application-5bc7eeff.png" alt-text="Screenshot of the Properties screen that shows how to change the notes":::
+    
