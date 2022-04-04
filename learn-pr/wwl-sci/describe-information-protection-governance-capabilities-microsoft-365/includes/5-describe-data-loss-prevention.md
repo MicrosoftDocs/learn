@@ -33,7 +33,7 @@ The rules inside the policy are prioritized in how they’re implemented. For ex
 
 ## What is endpoint data loss prevention?
 
-Endpoint data loss prevention is how the protection and activity monitoring capabilities of DLP for sensitive content can be extended to Windows 10 devices.  Admins can choose to target Windows 10 when creating a DLP policy (after onboarding the devices to Microsoft 365 compliance solutions). Endpoint DLP enables admins to audit and manage activities that users complete on sensitive content, including:
+Endpoint data loss prevention is how the protection and activity monitoring capabilities of DLP for sensitive content can be extended to Windows 10 devices.  Admins can choose to target Windows 10 when creating a DLP policy. Endpoint DLP enables admins to audit and manage activities that users complete on sensitive content, including:
 
 - Creating an item
 - Renaming an item
