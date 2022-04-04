@@ -398,3 +398,12 @@ groups:
       title: GitHub
     - id: azurerepos
       title: Azure Repos
+- id: devops-toolset
+  title: Toolset
+  prompt: Choose a toolset
+  pivots:
+    - id: github
+      title: GitHub
+    - id: azuredevops
+      title: Azure DevOps
+
