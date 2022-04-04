@@ -3,12 +3,12 @@ uid: learn.student-evangelism.install-code-tools-python-nasa.7-install-python
 metadata:
   title: Exercise - Install Python to use in Visual Studio Code for data exploration
   description: Learn how to install Python.
-  ms.date: 06/09/2021
-  author: drguthals
-  ms.author: sguthals
+  ms.date: 03/28/2022
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, devdivchpfy22
 title: Exercise - Install Python to use in Visual Studio Code for data exploration
 durationInMinutes: 5
 content: |

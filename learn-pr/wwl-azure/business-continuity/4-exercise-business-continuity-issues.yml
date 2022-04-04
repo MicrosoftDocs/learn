@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.business-continuity.lab-exercise
+title: 'Exercise: Troubleshoot business continuity issues'
+metadata:
+  title: 'Exercise: Troubleshoot business continuity issues'
+  description: "Exercise: Troubleshoot business continuity issues"
+  ms.date: 04/01/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-business-continuity-issues.md)]
+interactive: powershell
