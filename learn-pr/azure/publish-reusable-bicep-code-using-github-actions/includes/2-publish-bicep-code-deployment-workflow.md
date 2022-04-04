@@ -96,3 +96,5 @@ Shortly, you'll see how you can publish a template specification from a workflow
 ## Use a module or template spec
 
 In previous Microsoft Learn modules, you learned how to deploy the resources defined in template specs, and how to use Bicep modules stored in registries. Whether you publish your template specs and modules manually or from a deployment workflow, you use and deploy them in the same way.
+
+For example, you deploy a template spec or Bicep file to a resource group by using the `az deployment group create` Azure CLI command, or the `New-AzResourceGroupDeployment` cmdlet with Azure PowerShell.
