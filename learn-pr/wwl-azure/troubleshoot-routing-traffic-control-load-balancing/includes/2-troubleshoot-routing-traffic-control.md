@@ -78,7 +78,7 @@ Log in to the Azure portal then search for and select the virtual machine you wa
 
 ### Diagnose routes using PowerShell
 
-```azurepowershell
+```powershell
 Get-AzEffectiveRouteTable `
 
   -NetworkInterfaceName myVMNic1 `
@@ -132,7 +132,7 @@ Check the following:
 
 ### Source-based NAT
 
-:::image type="content" source="../media/3-source-based-network-address-translation.png" alt-text="Diagram of a network with SNAT incorporated.":::
+:::image type="content" source="../media/3-source-based-network-address-translation.png" alt-text="Diagram of a network with SNAT incorporated." border="false":::
 
 If you experience dropped packets, SNAT can help to direct them via the same route. In the above example, instead of using ExpressRoute to advertise the public IP address of an on-premises Simple Mail Transfer Protocol (SMTP) server, you could choose to use the internet path. The process will work effectively if:
 
@@ -157,7 +157,7 @@ Use Tracert to check the path your traffic is traveling along.
 
 Forced tunneling lets you direct all internet-bound traffic back to your on-premises location via a site-to-site VPN tunnel for inspection and auditing.
 
-:::image type="content" source="../media/3-forced-tunnelling.png" alt-text="Diagram of a network with forced tunneling.":::
+:::image type="content" source="../media/3-forced-tunnelling.png" alt-text="Diagram of a network with forced tunneling." border="false":::
 
 Check the following points to resolve routing problems:
 
@@ -210,7 +210,7 @@ Points to remember:
 
 - Consider building a hub and spoke network topology so the hub virtual network hosts the infrastructure. The spoke networks then peer with the hub, with traffic flowing through the network virtual applicant or VPN gateway on the hub.
 
-:::image type="content" source="../media/3-service-chaining.png" alt-text="Screenshot of spoke and hub network." lightbox="../media/3-service-chaining.png":::
+:::image type="content" source="../media/3-service-chaining.png" alt-text="Screenshot of spoke and hub network." lightbox="../media/3-service-chaining.png" border="false":::
 
 ### Troubleshoot routing configuration of Azure VMs that function as routers
 

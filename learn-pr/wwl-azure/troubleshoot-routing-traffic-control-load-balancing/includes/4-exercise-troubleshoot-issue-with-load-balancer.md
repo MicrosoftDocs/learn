@@ -1,6 +1,6 @@
 You work as a support engineer supporting Azure infrastructure. You've been contacted by your web team about an issue with the website not responding. The web team has a pool of webservers behind a load balancer and public IP address.
 
-:::image type="content" source="../media/4-network-topology-diagram.png" alt-text="Screenshot of a network topology diagram showing a pool of webservers behind a load balancer and public IP address." lightbox="../media/4-network-topology-diagram.png":::
+:::image type="content" source="../media/4-network-topology-diagram.png" alt-text="Screenshot of a network topology diagram showing a pool of webservers behind a load balancer and public IP address." lightbox="../media/4-network-topology-diagram.png" border="false":::
 
 In this exercise, you'll use what you've learned to go through steps to troubleshoot the connection issues to the virtual machines.
 
@@ -11,7 +11,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 1. Clone the setup script from GitHub.
 
      ```
-     git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-connectivity-issues-virtual-machines/blob/main networking
+     git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-connectivity-issues-virtual-machines networking
      ```
 
 1. Run the setup script.
