@@ -2,11 +2,11 @@
 
 Once you are comfortable debugging in Visual Studio, there are many different tips and tricks that can speed up your debugging workflows. Listed below are useful features and shortcuts to improve your productivity.
 
-1. You can right-click in the breakpoint gutter area and to set advanced breakpoints more quickly.
+1. You can right-click in the breakpoint gutter area to set advanced breakpoints more quickly.
 
 :::image source="../media/visual-studio-advanced-breakpoint.png" alt-text="Screenshot of of inserting a Tracepoint.":::
 
-2. Pin DataTips you are interested in by hovering over a variable and clicking the pin icon. This allows you to easily inspect your variables and still navigate to other code. Pinned DataTips persists across debugging sessions and restarting Visual Studio.
+2. Pin DataTips you are interested in by hovering over a variable and clicking the pin icon. This allows you to easily inspect your variables and still navigate to other code. Pinned DataTips persist across debugging sessions and Visual Studio restarts.
 
 :::image source="../media/visual-studio-data-tips.png" alt-text="Screenshot of a DataTip.":::
 
