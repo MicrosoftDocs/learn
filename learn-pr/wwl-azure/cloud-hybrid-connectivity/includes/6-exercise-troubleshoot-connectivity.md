@@ -34,8 +34,6 @@ There are three Azure virtual networks (VNets) in a hub and spoke topology.
 
     :::image type="content" source="../media/6-private-address-ping.png" alt-text="Screenshot showing the command prompt with the ping request results.":::
 
-    :::image type="content" source="../media/6-private-address-ping-working.png" alt-text="Screenshot showing the command prompt with the ping request results.":::
-
 ### Troubleshoot the problem
 
 1. To understand what is causing the problem, try the following troubleshooting steps:
@@ -65,7 +63,7 @@ When you examined the peering connections, you would have found that the peering
 
 :::image type="content" source="../media/6-peerings.png" alt-text="Screenshot showing peerings.":::
 
-The settings on **Hub-Spoke2** are incorrect. 
+The settings on **Hub-Spoke2** are incorrect.
 
 :::image type="content" source="../media/6-incorrect-traffic-forwarding.png" alt-text="Screenshot showing the incorrect spoke traffic forwarding setting.":::
 
@@ -78,6 +76,8 @@ To fix the problem, you must change the setting in both sides of the peering bet
 The **Traffic forwarded from remote virtual network** must be set to **Allow**.
 
 It should now be possible on VM1 to ping VM2.
+
+:::image type="content" source="../media/6-private-address-ping-working.png" alt-text="Screenshot showing the command prompt with the ping request working.":::
 
 There will be a short delay before the new settings take effect. If the ping fails at first, try again.
 
