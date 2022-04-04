@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.business-continuity.troubleshoot-backup-issues
+title: Troubleshoot backup issues with Microsoft Azure
+metadata:
+  title: Troubleshoot backup issues with Microsoft Azure
+  description: "Troubleshoot backup issues with Microsoft Azure"
+  ms.date: 04/01/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-troubleshoot-backup-issues.md)]
