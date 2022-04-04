@@ -16,7 +16,7 @@ In this exercise, you'll resolve the issue and check that the website can now be
 
 1. From the list of rules, click **myLoadBalancerRuleWeb**.
 
-   :::image type="content" source="../media/7-my-load-balancer-rule-web.png" alt-text="A screenshot of the load balancer rule, showing the port set to 80 and backend port set to 443. This is the error.":::
+   :::image type="content" source="../media/7-my-load-balancer-rule-web.png" alt-text="A screenshot of the load balancer rule, showing the port set to 80 and backend port set to 443. This is the error." lightbox="../media/7-my-load-balancer-rule-web.png":::
 
 1. To resolve the backend issue, change the **Backend port** from **443** to **80**, and then click **Save**.
 
