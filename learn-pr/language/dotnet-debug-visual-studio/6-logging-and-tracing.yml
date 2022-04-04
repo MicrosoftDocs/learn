@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-dotnet
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-logging-and-tracing.md)]
+  [!include[](includes/6-logging-and-tracing.md)]
