@@ -10,7 +10,7 @@ In this module, we'll concentrate on threads, memory byte pools, and memory bloc
 
 ThreadX uses special primitive data types that map directly to data types of the underlying C compiler. The purpose of these data types is to ensure portability between different C compilers.
 
-This table contains a summary of ThreadX service call data types and their associated meanings:
+This table contains a summary of ThreadX primitive data types and their associated meanings:
 
 |Data type|Description|
 |-------------|-----|
@@ -21,7 +21,7 @@ This table contains a summary of ThreadX service call data types and their assoc
 
 In addition to the primitive data types, ThreadX uses system data types to define and declare system resources, such as threads and mutexes.
 
-This table contains a summary of these system data types:
+This table contains a summary of the ThreadX system data types:
 
 |System data type|System resource|
 |-------------|-----|

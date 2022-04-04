@@ -10,7 +10,7 @@ The first memory management technique is the memory byte pool, a continuous bloc
 
 As its name implies, the memory byte pool is a contiguous collection of bytes that may be used for any of the resources. A memory byte pool is similar to a standard C heap, but there's no limit to the number of memory byte pools that can be created. Also, threads can suspend on a memory byte pool until the requested memory is available. Allocations from a memory byte pool are based on a specified number of bytes. ThreadX allocates from the byte pool in a first-fit manner: the first free memory block that satisfies the request is allocated. Excess memory from this block is converted to a new block and placed back in the free memory list, often resulting in fragmentation. ThreadX merges adjacent free memory blocks together during a subsequent allocation search for a large enough block of free memory. This process is called defragmentation and may cause non-deterministic system behavior.
 
-### Attributes
+### Memory byte pool attributes
 
 A memory byte pool has specific attributes. This image lists the attributes of a memory byte pool:
 
@@ -32,7 +32,7 @@ The total number of memory blocks in a memory block pool can be calculated as sh
 
 Each memory block contains one pointer of overhead that's invisible to the user and is represented by the *sizeof (void*)* expression in the preceding formula. Avoid wasting memory space by correctly computing the total number of bytes to allocate, based on the number of memory blocks you want.
 
-### Attributes
+### Memory block pool attributes
 
 A memory block pool has specific attributes. This image lists the attributes of a memory block pool:
 
