@@ -34,7 +34,7 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 1. Select the **Public** option.
 
-   When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
+   When you create your own repositories, you might want to make them private. In this module, you'll use features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
 
 1. Select **Create repository from template**. 
 
@@ -140,9 +140,9 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
    az group create --name ToyReusable --location westus
    ```
 
-1. Look at the JSON output from the command. It includes an `id` property, which is the resource group's ID.
+1. Look at the JSON output from the command. It includes an `id` property, which is the resource group ID.
 
-   Copy the resource group ID to somewhere safe. You'll use it soon.
+   Copy this ID to somewhere safe. You'll use it soon.
 
 ::: zone-end
 
@@ -154,9 +154,9 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
    New-AzResourceGroup -Name ToyReusable -Location westus
    ```
 
-1. Look at the output from the command. It includes a `ResourceId` property, which is the resource group's fully qualified ID.
+1. Look at the output from the command. It includes a `ResourceId` property, which is the fully qualified ID for the resource group.
 
-   Copy the resource group ID to somewhere safe. You'll use it soon.
+   Copy this ID to somewhere safe. You'll use it soon.
 
 ::: zone-end
 

@@ -46,7 +46,7 @@ Now, you can add a second job to publish the template specification to Azure.
 
 ## Verify and commit your workflow definition
 
-1. Verify that your *template-spec-linux-app-service.yml* file looks like the following:
+1. Verify that your *template-spec-linux-app-service.yml* file looks like the following example:
 
    :::code language="yaml" source="code/4-workflow.yml" highlight="19-45" :::
 
@@ -86,9 +86,7 @@ Now, you can add a second job to publish the template specification to Azure.
 
    :::image type="content" source="../media/4-workflow-runs-list.png" alt-text="Screenshot of GitHub that highlights the latest run of the template specification's workflow.":::
 
-   Wait for the workflow run to finish.
-   
-   The run succeeds, and the template specification is published to Azure.
+   Wait for the workflow run to finish. When it does, the template specification is published to Azure.
 
 1. Note the workflow's run number, which is probably **2**.
 

@@ -4,7 +4,7 @@ This module described approaches to automate the publishing of template specific
 
 - The differences between publishing reusable code and deploying regular Bicep files.
 - How to repurpose aspects of deployment workflows for publishing reusable code.
-- How to consider designing your deployment workflows
-- How to versioning to your reusable Bicep code from within your workflows.
+- How to consider designing your deployment workflows.
+- How to add versioning to your reusable Bicep code from within your workflows.
 
 By automating the publishing of your reusable Bicep code, you can ensure that the benefits of automation apply throughout your set of Bicep code. You can also easily modify your reusable Bicep code. Those abilities can increase your confidence that the code is valid and that your organization is following its processes.

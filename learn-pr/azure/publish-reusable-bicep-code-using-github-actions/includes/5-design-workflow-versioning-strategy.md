@@ -23,13 +23,13 @@ Changes in different parts of version numbers communicate important information 
 For example, suppose you're using a Bicep module that somebody else has published. The module has a version number of `2.0.496`. You see that a new version of the module is available with the version number `2.1.502`. The only significant change is to the minor version number, which indicates that you shouldn't expect a breaking change when you use the new version.
 
 > [!TIP]
-> *Semantic versioning* is a formalized versioning structure that's similar to multipart versioning. Semantic versioning includes additional components in the version number, along with strict rules about when you should set or reset each component. We link to more information about semantic versioning in the summary.
+> *Semantic versioning* is a formalized versioning structure that's similar to multipart versioning. Semantic versioning includes additional components in the version number, along with strict rules about when you should set or reset each component.
 
-Your team needs to decide how to define a breaking change for the purpose of versioning. For example, suppose you've built a Bicep module that deploys a storage account. You're now updating the Bicep file to enable private endpoints on your storage account, and you add a private DNS zone to your Bicep file at the same time. 
+Your team needs to decide how to define a breaking change for the purpose of versioning. For example, suppose you've built a Bicep module that deploys a storage account. You're now updating the Bicep file to enable private endpoints on your storage account. You're adding a private DNS zone to your Bicep file at the same time. 
 
 In that example, you might be able to make the change without affecting the Bicep file's parameters or outputs. That way, anybody who deploys the file might not notice that anything is different. But this change introduces a significant difference in the behavior of your resources, so you might decide to treat it as a major version update regardless.
 
-You can also choose to use a simpler versioning strategy, such as just using the workflow run number as your version number. Although this approach is easier to implement, it means you can't effectively communicate the differences between versions to anybody who uses your code.
+You can also choose to use a simpler versioning strategy, such as just using the workflow's run number as your version number. Although this approach is easier to implement, it means you can't effectively communicate the differences between versions to anybody who uses your code.
 
 ### Versions and workflows
 
@@ -83,7 +83,7 @@ Some organizations apply the same principles to Bicep modules and template speci
 
 Like regular deployments, you can use *jobs* and *reusable workflows* to define the deployment sequence across your environments. In this Microsoft Learn module, we publish to a single environment to keep the workflow simple.
 
-When you consume modules from a registry or use a template specification as a Bicep module, you can use *aliases*. Instead of specifying the registry name or the template specification location every time you define a module, you use its alias.
+When you consume modules from a registry or use a template specification as a Bicep module, you can use *aliases*. Instead of specifying the registry name or the template specification's location every time you define a module, you use its alias.
 
 By using aliases, you can make your deployment process easily work across multiple environments. For example, when you define a module, you might use an alias instead of a registry name. Then, you can design a deployment workflow to configure the alias to be mapped to:
 
