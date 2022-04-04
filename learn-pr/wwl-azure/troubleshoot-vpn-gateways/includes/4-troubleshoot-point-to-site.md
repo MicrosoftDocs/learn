@@ -2,7 +2,7 @@
 
 If you've individuals working remotely, then a point-to-site connection is a secure way of allowing them to connect to Azure resources using Windows, Linux or macOS.
 
-:::image type="content" source="../media/4-point-to-site.png" alt-text="A diagram showing a sample point-to-site connection.":::
+:::image type="content" source="../media/4-point-to-site.png" alt-text="A diagram showing a sample point-to-site connection." border="false":::
 
 The key steps to deploy a site-to-site VPN gateway are:
 
@@ -42,9 +42,9 @@ This unit will help to troubleshoot the steps outlined above. It will outline th
 
 Point-to-site VPNs support three protocols:
 
-- OpenVPN® is an SSL/TLS based VPN protocol and can be used to connect from Android, iOS (version11.0 and above), Windows, Linux, and Mac devices (macOS versions10.13 and above).
+- OpenVPN&reg; is an SSL/TLS based VPN protocol and can be used to connect from Android, iOS (version11.0 and above), Windows, Linux, and Mac devices (macOS versions10.13 and above).
 
-- Secure Socket Tunneling Protocol (SSTP) is a proprietary TLS-based VPN protocol that’s only supported on Windows devices.
+- Secure Socket Tunneling Protocol (SSTP) is a proprietary TLS-based VPN protocol that's only supported on Windows devices.
 
 - IKEv2 VPN is a standards-based IPsec VPN solution used to connect from Mac devices (macOS 10.11 and above).
 
@@ -70,13 +70,26 @@ Azure Monitor also identifies issues before they become a problem. It monitors a
 
 - Gain visibility and control over your Azure network.
 
-:::image type="content" source="../media/4-azure-monitor.jpg" alt-text="A diagram showing an overview of Azure Monitor features.":::
+:::image type="content" source="../media/4-azure-monitor.jpg" alt-text="A diagram showing an overview of Azure Monitor features." border="false":::
 
 ## Network Watcher
 
 Network Watcher is an area where a range of monitoring and diagnostic tools are available.
 
-:::image type="content" source="../media/4-network-watcher.png" alt-text="Screenshot of Network watcher troubleshooting area.":::
+:::row:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        :::image type="content" source="../media/4-network-watcher.png" alt-text="Screenshot of Network watcher troubleshooting area." lightbox="../media/4-network-watcher.png":::
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+:::row-end:::
+
+
+
 
 ## Troubleshoot issues with certificate-based connections
 
@@ -202,7 +215,7 @@ A RADIUS server integrates with the Active Directory (AD) Server to allow users 
 
 - A VPN client configuration package for the Windows devices that will connect to the VNet.
 
-:::image type="content" source="../media/4-radius-setup.png" alt-text="A diagram showing the integration of a RADIUS server.":::
+:::image type="content" source="../media/4-radius-setup.png" alt-text="A diagram showing the integration of a RADIUS server." border="false":::
 
 Although many of the principles are like site-to-site, there are some important differences:
 
@@ -218,7 +231,7 @@ Although many of the principles are like site-to-site, there are some important 
 
 - Have you configured the VPN gateway as a RADIUS client on the RADIUS and specified the virtual network GatewaySubnet?
 
-- Have you obtained the RADIUS server’s IP address and the shared secret that RADIUS clients should use to talk to the server?
+- Have you obtained the RADIUS server's IP address and the shared secret that RADIUS clients should use to talk to the server?
 
 - VPN
 
@@ -244,7 +257,7 @@ Although many of the principles are like site-to-site, there are some important 
 
 ## Troubleshoot Azure AD authentication issues
 
-When using Azure AD for authentication, you must use the OpenVPN protocol. You can’t use a Basic SKU.
+When using Azure AD for authentication, you must use the OpenVPN protocol. You can't use a Basic SKU.
 
 To set up an Azure authentication you need two user accounts: a Global Admin account for setting up the gateway and a User account for everyday servicing.
 
@@ -252,19 +265,19 @@ The following checklist can help you troubleshoot VPN connections using point-to
 
 1. Have you opened the Azure VPN client screen and viewed the status log for any error messages?
 
-   :::image type="content" source="../media/4-azure-status-screen.png" alt-text="Screenshot of A Z status log screen.":::
+   :::image type="content" source="../media/4-azure-status-screen.png" alt-text="Screenshot of A Z status log screen." lightbox="../media/4-azure-status-screen.png":::
 
 - Have you cleared the signed-in information and tried to connect?
 
-   :::image type="content" source="../media/4-azure-sign-in-screen.png" alt-text="Screenshot of sign-in screen.":::
+   :::image type="content" source="../media/4-azure-sign-in-screen.png" alt-text="Screenshot of sign-in screen." lightbox="../media/4-azure-sign-in-screen.png":::
 
 - Have you run diagnostics on the connection?
 
-   :::image type="content" source="../media/4-azure-diagnostic-page.png" alt-text="Screenshot of Azure A D diagnostic page.":::
+   :::image type="content" source="../media/4-azure-diagnostic-page.png" alt-text="Screenshot of Azure A D diagnostic page." lightbox="../media/4-azure-diagnostic-page.png":::
 
 - Have you viewed the client log files?
 
-   :::image type="content" source="../media/4-azure-log-directory.png" alt-text="Screenshot of Log Directory area within Azure AD.":::
+   :::image type="content" source="../media/4-azure-log-directory.png" alt-text="Screenshot of Log Directory area within Azure AD." lightbox="../media/4-azure-log-directory.png":::
 
 ## Troubleshoot OpenVPN connectivity issues
 
@@ -282,7 +295,7 @@ Check the client log files:
 
 - Have you opened the required three ports: TCP 443, TCP 943, and UDP 1194?
 
-If the OpenVPN tunnel is established, but you can’t reach a specific endpoint, these tools might help you to visualize the traffic, to test which path it follows:
+If the OpenVPN tunnel is established, but you can't reach a specific endpoint, these tools might help you to visualize the traffic, to test which path it follows:
 
 - TCPdump ‒ a Linux command-line tool that can visualize network packets.
 
