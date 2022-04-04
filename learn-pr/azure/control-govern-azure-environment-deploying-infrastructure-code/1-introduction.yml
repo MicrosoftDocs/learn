@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Introduction to controlling and governing your Azure environment by deploying your infrastructure as code.
   ms.date: 3/22/2022
   author: johndowns
   ms.author: jodowns
