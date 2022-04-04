@@ -35,7 +35,7 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue. If you
 
    ```
    > [!NOTE]
-   > Replace /<VM1 public IP address/> with the public IP address you noted for VM1.
+   > Replace \<VM1 public IP address\> with the public IP address you noted for VM1.
 
 1. At the prompt, ` Are you sure you want to continue connecting (yes/no)? ` type yes.
 
@@ -53,7 +53,7 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue. If you
    ```
 
    > [!NOTE]
-   > Replace /<private IP address/> VM2 with the private IP address you noted for VM2. 
+   > Replace \<private IP address\> VM2 with the private IP address you noted for VM2. 
 
    :::image type="content" source="../media/5-ping-request.png" alt-text="Screenshot showing the ping command to check whether machines can connect.":::
 
