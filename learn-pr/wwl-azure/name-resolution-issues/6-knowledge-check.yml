@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.name-resolution-issues.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/01/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When analyzing DNS audit logs. What is required to use DNS Analytics (Preview) for this task?"
+    choices:
+    - content: "Download Log Analytics from the Azure Marketplace"
+      isCorrect: false
+      explanation: "That's incorrect. You can't download log analytics from the Azure Marketplace."
+    - content: "Install Windows or Operations Manager agent on each DNS server you want to monitor"
+      isCorrect: true
+      explanation: "That's correct. To analyze DNS audit logs, this step is required."
+    - content: "You can analyze data without installing any additional software"
+      isCorrect: false
+      explanation: "That's incorrect. You can't analyze DNS audit logs without installing any other software."
+  - content: "When troubleshooting name resolution, a colleague suggests the use of the digwebinterface. What problems does this third-party solution help with?"
+    choices:
+    - content: "Removing cached name resolution"
+      isCorrect: true
+      explanation: "That's correct. Digwebinterface removes problems caused by cached name resolution."
+    - content: "Displaying information held by a domains registrar"
+      isCorrect: false
+      explanation: "That's incorrect. The purpose of Digwebinerface isn't to show information held by the registrar. For your own domain names, go direct to the registrars web site to find information held there."
+    - content: "Mis-typed DNS server name"
+      isCorrect: false
+      explanation: "That's incorrect. Digwebinterface can't diagnose whether you've mis-typed the DNS server name."
+  - content: "What is the purpose of the A record?"
+    choices:
+    - content: "Specifies a computers IP address"
+      isCorrect: true
+      explanation: "That's correct. The purpose of the A record is to associate a name with the computers IP address."
+    - content: "Specifies the start-of-authority for a DNS zone"
+      isCorrect: false
+      explanation: "That's incorrect. The SOA record specifies the start-of-authority for a DNS zone."
+    - content: "Specifies a mailbox domain name"
+      isCorrect: false
+      explanation: "That's incorrect. The MB record specifies a mailbox domain name."
