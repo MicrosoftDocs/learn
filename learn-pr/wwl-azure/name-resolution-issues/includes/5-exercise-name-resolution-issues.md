@@ -10,9 +10,9 @@ You work for Contoso as a network engineer, and users are complaining that they 
 ||| Subnet2| 10.1.2.0/24|
 | VNet2| 10.2.0.0/16| Default| 10.2.0.0/24|
 
-:::image type="content" source="../media/5-vnet1.png" alt-text="Screenshot showing the topology of v net 1.":::
+:::image type="content" source="../media/5-network-1.png" alt-text="Screenshot showing the topology of v net 1.":::
 
-:::image type="content" source="../media/5-vnet2.png" alt-text="Screenshot showing the topology of v net 2.":::
+:::image type="content" source="../media/5-network-2.png" alt-text="Screenshot showing the topology of v net 2.":::
 
 | **Virtual machine**| **Operating system**| **VNet and subnet**| **DNS domain**|
 | :--- | :--- | :--- | :--- |
