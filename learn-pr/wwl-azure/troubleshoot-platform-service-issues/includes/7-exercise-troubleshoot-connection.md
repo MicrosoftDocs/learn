@@ -5,28 +5,22 @@ Using the Cloud Shell on the right, run these commands to create the example top
 
 1. Clone the setup script from GitHub.
 
-   ```console
+   ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-platform-as-service-issues networking
    ```
 
 1. Run the setup script.
 
-   ```console
+   ```bash
    bash networking/setup.sh
 
    ```
 
 ## Exercise
 
-This module requires a sandbox to complete.
+You need to find the causes of connectivity problems to an Azure virtual machine using SSH.
 
-A [sandbox](/learn/support/faq?pivots=sandbox) gives you access to free resources. Your personal subscription won't be charged. The sandbox may only be used to complete training on Microsoft Learn. Use for any other reason is prohibited, and may result in permanent loss of access to the sandbox.
-
-Microsoft provides this lab experience and related content for educational purposes. All presented information is owned by Microsoft and intended solely for learning about the covered products and services in this Microsoft Learn module.
-
-In this exercise, you need to find the causes of connectivity problems to an Azure virtual machine using SSH.
-
-Go to the [Azure portal](https://portal.azure.com/) and make sure you're in the sandbox subscription. To do that, select your avatar in the upper-right corner of the page. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+Sign in to the [Azure portal](https://portal.azure.com/) with the same credentials you used to start the sandbox.
 
 1. In the resource menu, select All **Resources**.
 
@@ -76,4 +70,4 @@ Go to the [Azure portal](https://portal.azure.com/) and make sure you're in the 
 
    :::image type="content" source="../media/7-exercise-1-connectivity-error.png" alt-text="Screen shot showing the warning that connectivity is blocked due to a security group rule.":::
 
-1. Keep the connection open to the Azure portal for the next exercise.
+1. Keep the tab open to the Azure portal for the next exercise.

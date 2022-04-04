@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-platform-service-issues.troubleshoot-vm-paas-connections
-title: Troubleshoot connections between a VM and a PaaS service in Microsoft Azure
+title: Troubleshoot connections between virtual machines in Microsoft Azure
 metadata:
-  title: Troubleshoot connections between a VM and a PaaS service in Microsoft Azure
-  description: "Troubleshoot connections between a VM and a PaaS service in Microsoft Azure"
-  ms.date: 03/31/2022
+  title: Troubleshoot connections between virtual machines in Microsoft Azure
+  description: "Troubleshoot connections between virtual machines in Microsoft Azure"
+  ms.date: 04/04/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial

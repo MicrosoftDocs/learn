@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-platform-service-issues.exercise-resolve-paas-connection
-title: 'Exercise: Resolve PaaS connection'
+title: 'Exercise: Resolve virtual machine connection'
 metadata:
-  title: 'Exercise: Resolve PaaS connection'
-  description: "Exercise: Resolve PaaS connection"
-  ms.date: 03/31/2022
+  title: 'Exercise: Resolve virtual machine connection'
+  description: "Exercise: Resolve virtual machine connection"
+  ms.date: 04/04/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial
