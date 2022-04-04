@@ -39,7 +39,7 @@ After a pull request is created, it can be updated with new commits, comments, o
 
 1. Select **Your repositories** from your account profile menu.
 
-   :::image type="content" source="../media/3-my-repositories.png" alt-text="Screenshot showing the profile drop-down menu and the entry called your repositories.":::
+   :::image type="content" source="../media/3-my-repositories.png" alt-text="Screenshot showing the profile drop-down menu and the entry called Your repositories.":::
 
 1. Select the repository fork.
 
