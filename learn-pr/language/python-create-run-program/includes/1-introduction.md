@@ -2,7 +2,7 @@ A common task is developing programs that can not only show information on a scr
 
 ## Scenario: A junior programmer building your first apps
 
-In this scenario, you're a young space cadet on a spaceship sometime in the future. Your mission is to find and explore new solar systems. You're trained as an engineer, and you're looking to develop a series of utility programs for more senior staff onboard. 
+In this scenario, you're a young space cadet on a spaceship sometime in the future. Your mission is to find and explore new solar systems. You're trained as an engineer, and you're looking to develop a series of utility programs for more senior staff onboard.
 
 ## What will you learn?
 
