@@ -299,7 +299,7 @@ A System Center Configuration Manager (SCCM) site recovery is needed if a site f
 
 If you experience problems, try the following troubleshooting issues:
 
-1. Check that previous configurations are not on the site server, as this can cause conflicts. Remove previous configurations before restoring Configuration Manager:
+1. Check that previous configurations are not on the site server, as this can cause conflicts. Remove previous configurations before restoring Configuration Manager by using one of the following methods:
 
    - Restoring to a new server.
 
