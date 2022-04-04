@@ -1,6 +1,6 @@
 You’ve explored how Microsoft 365 capabilities like data classification, records management, and data loss prevention can help provide information protection and information governance across an organization.
 
-Without these capabilities, an organization's information could be at risk, and it might not be compliant with legal and regulatory standards. However, by using these capabilities, organizations can provide information protection and governance to help avoid the risk of noncompliance.
+Without these capabilities, an organization's information could be at risk, and it might not be compliant with legal and regulatory standards. Microsoft 365 information protection and governance capabilities can help organizations address their compliance needs and mitigate risk.
 
 Now that you’ve completed this module, you should be able to:
 
@@ -10,10 +10,10 @@ Now that you’ve completed this module, you should be able to:
 
 ## Learn more
 
-- [Know your data - data classification overview](/microsoft-365/compliance/data-classification-overview)
-- [Get started with content explorer](/microsoft-365/compliance/data-classification-content-explorer)
-- [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
-- [Get started with activity explorer](/microsoft-365/compliance/data-classification-activity-explorer)
-- [Learn about retention policies and retention labels](/microsoft-365/compliance/retention)
-- [Microsoft Information Governance in Microsoft 365](/microsoft-365/compliance/manage-information-governance)
-- [Learn about records management in Microsoft 365](/microsoft-365/compliance/records-management)
+- [Know your data - data classification overview](/microsoft-365/compliance/data-classification-overview?view=o365-worldwide)
+- [Get started with content explorer](/microsoft-365/compliance/data-classification-content-explorer?view=o365-worldwide)
+- [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide)
+- [Get started with activity explorer](/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
+- [Learn about retention policies and retention labels](/microsoft-365/compliance/retention?view=o365-worldwide)
+- [Microsoft Information Governance in Microsoft 365](/microsoft-365/compliance/manage-information-governance?view=o365-worldwide)
+- [Learn about records management in Microsoft 365](/microsoft-365/compliance/records-management?view=o365-worldwide)

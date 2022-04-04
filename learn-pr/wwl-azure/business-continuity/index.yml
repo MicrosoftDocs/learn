@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.business-continuity
+metadata:
+  title: Troubleshoot business continuity with Microsoft Azure
+  description: "Businesses rely on data for decision making, compliance, and for day-to-day operations. When systems fail for any reason, data backups must be reliable so that data can be recovered. This module covers some of the issues you may encounter when troubleshooting Azure backup and recovery."
+  ms.date: 04/01/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot business continuity with Microsoft Azure
+summary: Businesses rely on data and if systems fail, data backups must be reliable so that data can be recovered. This module covers some of the issues you may encounter when troubleshooting Azure backup and recovery.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Troubleshoot Azure backup and recovery issues
+  - Restart a failed backup
+prerequisites: |
+  - Demonstrate an understanding of the OSI model
+  - Demonstrate an understanding of Azure CLI
+  - Demonstrate an understanding of PowerShell
+  - Know how to run Cloud Shell to run commands
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- support-engineer
+products:
+- azure-backup
+units:
+- learn.wwl.business-continuity.introduction
+- learn.wwl.business-continuity.troubleshoot-backup-issues
+- learn.wwl.business-continuity.troubleshoot-recovery-issues
+- learn.wwl.business-continuity.lab-exercise
+- learn.wwl.business-continuity.knowledge-check
+- learn.wwl.business-continuity.summary
+badge:
+  uid: learn.wwl.business-continuity.badge

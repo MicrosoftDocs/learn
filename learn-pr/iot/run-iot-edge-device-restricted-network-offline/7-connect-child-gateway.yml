@@ -8,6 +8,10 @@ metadata:
   ms.author: abartolo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - abartolo-05192020
 title: Connect a child IoT device to an IoT Edge gateway
 # azureSandbox: true
 durationInMinutes: 15
