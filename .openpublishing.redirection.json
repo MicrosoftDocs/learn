@@ -12285,6 +12285,26 @@
       "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-identity-principles-concepts/2-describe-common-identity-attacks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-identity-principles-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-identity-principles-concepts/4-describe-modern-authentication-role-identity-provider.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-identity-principles-concepts/4-describe-role-identity-provider",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-identity-principles-concepts/5-describe-concept-federated-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-identity-principles-concepts/6-describe-concept-federation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-identity-principles-concepts/6-describe-concept-of-directory-services-active-directory.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-identity-principles-concepts/5-describe-concept-of-directory-services-active-directory",
+      "redirect_document_id": true
     }
   ]
 }
