@@ -1,0 +1,49 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - 'modules/storage-account/**'
+
+variables: 
+- name: ServiceConnectionName
+  value: ToyReusable
+- name: ModuleName
+  value: storage-account
+- name: ModuleRegistryServer
+  value: # To be added
+- name: ModuleFilePath
+  value: modules/storage-account/main.bicep
+- name: ModuleMetadataFilePath
+  value: modules/storage-account/metadata.json
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+# TODO
+
+#  publish:
+#    runs-on: ubuntu-latest
+#    needs: [ lint ]
+#    steps:
+#    - uses: actions/checkout@v2
+#    - uses: azure/login@v1
+#      name: Sign in to Azure
+#      with:
+#        creds: ${{ secrets.AZURE_CREDENTIALS }}
+#    - name: Get module version number
+#      run: |
+#        majorMinorVersionNumber=$(jq '(.version.major | tostring) + "." + (.version.minor | tostring)' ${{ env.MODULE_METADATA_FILE_PATH }} -r )
+#        versionNumber="$majorMinorVersionNumber.${{ github.run_number }}"
+#        echo "MODULE_VERSION=$versionNumber" >> $GITHUB_ENV
+#    - uses: azure/cli@v1
+#      name: Publish module
+#      with:
+#        inlineScript: |
+#          az bicep install
+#          az bicep publish \
+#            --target 'br:${{ env.MODULE_REGISTRY_SERVER }}/${{ env.MODULE_NAME }}:${{ env.MODULE_VERSION }}' \
+#            --file ${{ env.MODULE_FILE_PATH }}
