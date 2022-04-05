@@ -8,7 +8,6 @@ When you start a program by using `python3`, you give it the name of the file to
 python3 backup.py 2022-01-01
 ```
 
-
 In the preceding code, the string "2022-01-01" can be used as instruction to the program to start a backup from that date. What you gain by using command-line arguments is flexibility. The program can behave differently depending on its outside input.
 
 ### Command-line arguments
@@ -18,8 +17,6 @@ How are these commands captured on the coding side of things? By using the `sys`
 In the preceding code, the string "2021-01-01" can be used as instruction to the program to start a backup from that date. What you gain by using command-line arguments is flexibility; the program can behave differently depending on its outside input.
 
 ### Command-line arguments
-
-
 
 ```python
 import sys
@@ -45,9 +42,7 @@ Jupiter
 
 ## User input
 
-
 Another way to pass data to the program is having the user enter the data. You can code it so the program tells the user to enter information. You save that entered data in the program and then act on it.
-
 
 To capture information from the user, you'll use the `input()` function. Here's an example:
 
@@ -85,10 +80,8 @@ second number: 4
 34
 ```
 
-
 You probably meant for this program to answer you with `7` instead of `34`. So what went wrong?
 =======
-
 
 The explanation is that `first_number` and `second_number` are strings. For the calculation to work correctly, you need to change those strings to numbers by using the `int()` function. By modifying the last line of the program to use `int()`, you can resolve the problem:
 
