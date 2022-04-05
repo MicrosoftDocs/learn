@@ -1,54 +1,52 @@
-Your team has built some security-hardened Bicep files that are compliant with your company's new governance model. One of the hardened Bicep files deploys a Linux-based Azure App Service app. In this exercise, you'll use a deployment workflow to publish the Bicep file as a template spec.
+Your team has built some security-hardened Bicep files that are compliant with your company's new governance model. One of the hardened Bicep files deploys a Linux-based Azure App Service app. In this exercise, you'll use a deployment pipeline to publish the Bicep file as a template spec.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Add a lint job to the workflow.
-> * Add a workflow job to publish the template spec.
-> * Manually run the workflow and verify that it finishes successfully.
+> * Add a lint job to the pipeline.
+> * Add a pipeline job to publish the template spec.
+> * Verify that the pipeline starts and finishes successfully.
 > * Check the published template spec in Azure.
 
-## Add a lint job to your workflow
+## Add a lint job to your pipeline
 
-Your repository contains a draft of a workflow that you can use as a starting point.
+Your repository contains a draft of a pipeline definition that you can use as a starting point.
 
-1. In Visual Studio Code, expand the *.github* folder in the root of the repository. Then, expand the *workflows* folder.
+1. In Visual Studio Code, expand the *template-specs* folder in the root of the repository. Then, expand the *linux-app-service* folder.
 
-1. Open the *template-spec-linux-app-service.yml* file.
+1. Open the *pipeline.yml* file.
 
-   :::image type="content" source="../media/4-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the location of the workflow definition file.":::
-
-   The workflow definition includes two triggers. In this exercise, you won't modify the Bicep file for the template spec, so the `push` trigger never fires. To try out your workflow, you manually invoke it by using the `workflow_dispatch` trigger.
+   :::image type="content" source="../media/4-visual-studio-code-pipeline.png" alt-text="Screenshot of Visual Studio Code that shows the location of the pipeline definition file.":::
 
 1. At the bottom of the file, where you see a comment that says **To be added**, add the following lint job definition:
 
-   :::code language="yaml" source="code/4-workflow.yml" range="18-24" highlight="2-7" :::
+   :::code language="yaml" source="code/4-pipeline.yml" range="18-24" highlight="2-7" :::
 
-   Your repository has a *bicepconfig.json* file that configures the linter to emit errors instead of warnings. Any failures during the lint job will cause the workflow to fail.
+   Your repository has a *bicepconfig.json* file that configures the linter to emit errors instead of warnings. Any failures during the lint job will cause the pipeline to fail.
 
    > [!TIP]
-   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
+   > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML pipeline definition so that you can verify that your file matches.
 
-## Add a publish job to your workflow
+## Add a publish job to your pipeline
 
 Now, you can add a second job to publish the template spec to Azure.
 
-1. Add the following code at the end of the *template-spec-linux-app-service.yml* file:
+1. Add the following code at the end of the *pipeline* file:
 
-   :::code language="yaml" source="code/4-workflow.yml" range="26-45" :::
+   :::code language="yaml" source="code/4-pipeline.yml" range="26-45" :::
 
-   This job checks out the code from your repository and signs in to Azure by using GitHub secret that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
+   This job checks out the code from your repository and signs in to Azure by using service connection that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
 
    > [!TIP]
-   > To keep things simple, your workflow uses the workflow's *run number* as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
+   > To keep things simple, your pipeline uses the pipeline's *run number* as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
 
 1. Save your changes to the file.
 
-## Verify and commit your workflow definition
+## Verify and commit your pipeline definition
 
-1. Verify that your *template-spec-linux-app-service.yml* file looks like the following example:
+1. Verify that your *pipeline.yml* file looks like the following example:
 
-   :::code language="yaml" source="code/4-workflow.yml" highlight="19-45" :::
+   :::code language="yaml" source="code/4-pipeline.yml" highlight="19-45" :::
 
    If it doesn't, update it to match this example, and then save it.
 
@@ -56,7 +54,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
    ```bash
    git add .
-   git commit -m "Add lint and publish jobs to Linux App Service template spec workflow"
+   git commit -m "Add lint and publish jobs to Linux App Service template spec pipeline"
    git push
    ```
 
@@ -68,7 +66,9 @@ Now, you can add a second job to publish the template spec to Azure.
 
 1. A browser window appears. You might need to sign in to GitHub again. Select **Authorize**.
 
-## Trigger the workflow
+## Monitor the pipeline
+
+<!-- TODO -->
 
 1. In your browser, select the **Actions** tab.
 

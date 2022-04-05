@@ -1,12 +1,12 @@
-In your toy company, you've been publishing your Bicep modules into a registry. You've been running the publishing process manually from your own computer. Now, you want to create a workflow to handle the publishing process.
+In your toy company, you've been publishing your Bicep modules into a registry. You've been running the publishing process manually from your own computer. Now, you want to create a pipeline to handle the publishing process.
 
 In this exercise, you'll:
 
 > [!div class="checklist"]
 > * Create a container registry for your Bicep modules.
-> * Add a lint job to the workflow.
-> * Add a workflow job to publish the module to your registry.
-> * Verify that your workflow runs successfully.
+> * Add a lint job to the pipeline.
+> * Add a pipeline job to publish the module to your registry.
+> * Verify that your pipeline runs successfully.
 > * Check the published module in your registry.
 
 ## Create a container registry
@@ -46,7 +46,7 @@ Before you can publish modules, you need to create a registry for your organizat
 
 ## Add a module metadata file
 
-In the preceding unit, you learned about the importance of having a versioning strategy for your modules. You also learned how to use module metadata files to specify the major and minor version number of your module within a workflow. Here, you add a metadata file for your storage account module.
+In the preceding unit, you learned about the importance of having a versioning strategy for your modules. You also learned how to use module metadata files to specify the major and minor version number of your module within a pipeline. Here, you add a metadata file for your storage account module.
 
 1. In Visual Studio Code, expand the *modules* folder in the root of your repository. Then, expand the *storage-account* folder.
 
@@ -58,59 +58,59 @@ In the preceding unit, you learned about the importance of having a versioning s
 
    :::code language="json" source="code/6-metadata.json" :::
 
-   Notice that in the metadata file, you separately define the major and minor version numbers. Your workflow will combine these numbers, along with the workflow's run number, into a complete version number each time the workflow runs.
+   Notice that in the metadata file, you separately define the major and minor version numbers. Your pipeline will combine these numbers, along with the pipeline's run number, into a complete version number each time the pipeline runs.
 
 1. Save your changes to the file.
 
-## Update your workflow definition and add a lint job
+## Update your pipeline definition and add a lint job
 
-Your repository contains a draft of a workflow that you can use as a starting point.
+Your repository contains a draft of a pipeline that you can use as a starting point.
 
-1. In Visual Studio Code, expand the *.github* folder in the root of the repository. Then, expand the *workflows* folder.
+1. In Visual Studio Code, expand the *modules* folder in the root of the repository. Then, expand the *storage-account* folder.
 
-1. Open the *module-storage-account.yml* file.
+1. Open the *pipeline.yml* file.
 
-   :::image type="content" source="../media/6-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the location of the workflow definition file.":::
+   :::image type="content" source="../media/6-visual-studio-code-pipeline.png" alt-text="Screenshot of Visual Studio Code that shows the location of the pipeline definition file.":::
 
-1. On line 14, update the value of the `MODULE_REGISTRY_SERVER` environment variable to your container registry's server name. You copied that name earlier in this exercise. 
+1. On line 14, update the value of the `ModuleRegistryServer` environment variable to your container registry's server name. You copied that name earlier in this exercise. 
 
    For example, if your registry's login server is *yourregistryname.azurecr.io*, line 14 will look like this:
 
-   :::code language="yaml" source="code/6-workflow.yml" range="12-16" highlight="3" :::
+   :::code language="yaml" source="code/6-pipeline.yml" range="12-16" highlight="3" :::
 
 1. At the bottom of the file, for the **To be added** comment, add the following lint job definition:
 
-   :::code language="yaml" source="code/6-workflow.yml" range="18-24" :::
+   :::code language="yaml" source="code/6-pipeline.yml" range="18-24" :::
 
-## Add a publish job to your workflow
+## Add a publish job to your pipeline
 
 Now, you can add a second job to publish the module to your container registry.
 
 1. At the bottom of the *storage-account.yml* file, add the first part of the publish job's definition.
 
-   :::code language="yaml" source="code/6-workflow.yml" range="26-34" :::
+   :::code language="yaml" source="code/6-pipeline.yml" range="26-34" :::
 
    The steps check out the code from your repository and sign in to Azure.
 
 1. Below the code that you just added, add a step to read the version number from your module's *metadata.json* file and set it as an environment variable.
 
-   :::code language="yaml" source="code/6-workflow.yml" range="35-39" :::
+   :::code language="yaml" source="code/6-pipeline.yml" range="35-39" :::
 
    The step runs a script that uses the jq command-line application to parse the JSON file.
 
 1. Below the step that you just created, add a step to publish the module to the registry.
 
-   :::code language="yaml" source="code/6-workflow.yml" range="40-47" :::
+   :::code language="yaml" source="code/6-pipeline.yml" range="40-47" :::
 
    Notice that this step constructs the value of the `--target` argument dynamically. It combines the value of the registry server, the module name, and the version number.
 
 1. Save your changes to the file.
 
-## Verify and commit your workflow definition
+## Verify and commit your pipeline definition
 
 1. Verify that your *storage_account_module.yml* file looks like the following example:
 
-   :::code language="yaml" source="code/6-workflow.yml" :::
+   :::code language="yaml" source="code/6-pipeline.yml" :::
 
    If it doesn't, update it to match this example, and then save it.
 
@@ -118,12 +118,13 @@ Now, you can add a second job to publish the module to your container registry.
 
    ```bash
    git add .
-   git commit -m "Add lint and publish jobs to storage account module workflow"
+   git commit -m "Add lint and publish jobs to storage account module pipeline"
    git push
    ```
 
-## Trigger the workflow
+## Trigger the pipeline
 
+<!- TODO -->
 1. In your browser, go to your GitHub repository and select the **Actions** tab.
 
 1. Select the **module-storage-account** workflow.
@@ -148,11 +149,11 @@ You can also view the published module in the Azure portal.
 
 1. Select the container registry that you created previously.
 
-1. Select the **Repositories** pane from the menu. Then, select the **modules\storage-account** repository, which represents the module that your workflow published.
+1. Select the **Repositories** pane from the menu. Then, select the **modules\storage-account** repository, which represents the module that your pipeline published.
 
    :::image type="content" source="../media/6-registry-portal.png" alt-text="Screenshot of the Azure portal that shows a Bicep module in the container registry.":::
 
-   Notice that there's a single *tag*, which matches the version number of the module that your workflow published. The major version (1) and minor version (2) match the version numbers that you defined in the *metadata.json* file. The revision number (3) matches the workflow's run number.
+   Notice that there's a single *tag*, which matches the version number of the module that your pipeline published. The major version (1) and minor version (2) match the version numbers that you defined in the *metadata.json* file. The revision number (3) matches the pipeline's run number.
 
 ## Clean up the resources
 
