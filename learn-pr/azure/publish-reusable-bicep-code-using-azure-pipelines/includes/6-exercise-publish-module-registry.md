@@ -124,7 +124,7 @@ Now, you can add a second job to publish the module to your container registry.
 
 ## Trigger the pipeline
 
-<!- TODO -->
+<!-- TODO -->
 1. In your browser, go to your GitHub repository and select the **Actions** tab.
 
 1. Select the **module-storage-account** workflow.

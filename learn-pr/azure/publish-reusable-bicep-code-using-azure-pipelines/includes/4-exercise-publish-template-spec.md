@@ -20,7 +20,7 @@ Your repository contains a draft of a pipeline definition that you can use as a 
 
 1. At the bottom of the file, where you see a comment that says **To be added**, add the following lint stage definition:
 
-   :::code language="yaml" source="code/4-pipeline.yml" range="23-35" highlight="3-11" :::
+   :::code language="yaml" source="code/4-pipeline.yml" range="25-35" highlight="3-11" :::
 
    Your repository has a *bicepconfig.json* file that configures the linter to emit errors instead of warnings. Any failures during the lint stage will cause the pipeline to fail.
 
