@@ -8,3 +8,7 @@ This module described approaches to automate the publishing of template specs an
 - How to add versioning to your reusable Bicep code from within your pipelines.
 
 By automating the publishing of your reusable Bicep code, you can ensure that the benefits of automation apply throughout your set of Bicep code. You can also easily modify your reusable Bicep code. Those abilities can increase your confidence that the code is valid and that your organization is following its processes.
+
+## More information
+
+- [Semantic versioning](https://semver.org)
