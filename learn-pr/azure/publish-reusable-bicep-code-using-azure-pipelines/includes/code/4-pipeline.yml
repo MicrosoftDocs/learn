@@ -23,34 +23,33 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-  # To be added.
 
+- stage: Lint
+  jobs:
+  - job: LintCode
+    displayName: Lint code
+    steps:
+      - script: |
+          az bicep build --file $(TemplateSpecFilePath)
+        name: LintBicepCode
+        displayName: Run Bicep linter
 
-#jobs:
-#  lint:
-#    runs-on: ubuntu-latest
-#    steps:
-#    - uses: actions/checkout@v2
-#    - name: Run Bicep linter
-#      run: az bicep build --file ${{ env.TEMPLATE_SPEC_FILE_PATH }}
-#
-#  publish:
-#    runs-on: ubuntu-latest
-#    needs: [ lint ]
-#    steps:
-#    - uses: actions/checkout@v2
-#    - uses: azure/login@v1
-#      name: Sign in to Azure
-#      with:
-#        creds: ${{ secrets.AZURE_CREDENTIALS }}
-#    - uses: azure/cli@v1
-#      name: Publish template spec
-#      with:
-#        inlineScript: |
-#          az ts create \
-#            --resource-group ${{ env.AZURE_RESOURCEGROUP_NAME }} \
-#            --name ${{ env.TEMPLATE_SPEC_NAME }} \
-#            --version ${{ github.run_number }} \
-#            --template-file ${{ env.TEMPLATE_SPEC_FILE_PATH }} \
-#            --location ${{ env.AZURE_REGION }} \
-#            --yes
+- stage: Publish
+  jobs:
+  - job: Publish
+    steps:
+      - task: AzureCLI@2
+        name: Publish
+        displayName: Publish template spec
+        inputs:
+          azureSubscription: $(ServiceConnectionName)
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            az ts create \
+              --resource-group $(AzureResourceGroupName) \
+              --name $(TemplateSpecName) \
+              --version $(Build.BuildNumber) \
+              --template-file $(TemplateSpecFilePath) \
+              --location $(AzureRegion) \
+              --yes

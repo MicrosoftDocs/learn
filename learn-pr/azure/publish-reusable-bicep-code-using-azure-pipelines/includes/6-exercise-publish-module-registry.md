@@ -58,7 +58,7 @@ In the preceding unit, you learned about the importance of having a versioning s
 
    :::code language="json" source="code/6-metadata.json" :::
 
-   Notice that in the metadata file, you separately define the major and minor version numbers. Your pipeline will combine these numbers, along with the pipeline's run number, into a complete version number each time the pipeline runs.
+   Notice that in the metadata file, you separately define the major and minor version numbers. Your pipeline will combine these numbers, along with the pipeline's build number, into a complete version number each time the pipeline runs.
 
 1. Save your changes to the file.
 
@@ -137,7 +137,7 @@ Now, you can add a second job to publish the module to your container registry.
 
    Wait for the workflow run to finish. The Bicep module is published to your container registry.
 
-   Note the workflow's run number, which is probably **3**.
+   Note the pipeline's build number, which is probably **3**.
 
 ## Review the module in the registry
 
@@ -153,7 +153,7 @@ You can also view the published module in the Azure portal.
 
    :::image type="content" source="../media/6-registry-portal.png" alt-text="Screenshot of the Azure portal that shows a Bicep module in the container registry.":::
 
-   Notice that there's a single *tag*, which matches the version number of the module that your pipeline published. The major version (1) and minor version (2) match the version numbers that you defined in the *metadata.json* file. The revision number (3) matches the pipeline's run number.
+   Notice that there's a single *tag*, which matches the version number of the module that your pipeline published. The major version (1) and minor version (2) match the version numbers that you defined in the *metadata.json* file. The revision number (3) matches the pipeline's build number.
 
 ## Clean up the resources
 

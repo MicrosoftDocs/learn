@@ -3,12 +3,12 @@ Your team has built some security-hardened Bicep files that are compliant with y
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Add a lint job to the pipeline.
-> * Add a pipeline job to publish the template spec.
+> * Add a lint stage to the pipeline.
+> * Add a pipeline stage to publish the template spec.
 > * Verify that the pipeline starts and finishes successfully.
 > * Check the published template spec in Azure.
 
-## Add a lint job to your pipeline
+## Add a lint stage to your pipeline
 
 Your repository contains a draft of a pipeline definition that you can use as a starting point.
 
@@ -18,27 +18,27 @@ Your repository contains a draft of a pipeline definition that you can use as a 
 
    :::image type="content" source="../media/4-visual-studio-code-pipeline.png" alt-text="Screenshot of Visual Studio Code that shows the location of the pipeline definition file.":::
 
-1. At the bottom of the file, where you see a comment that says **To be added**, add the following lint job definition:
+1. At the bottom of the file, where you see a comment that says **To be added**, add the following lint stage definition:
 
-   :::code language="yaml" source="code/4-pipeline.yml" range="18-24" highlight="2-7" :::
+   :::code language="yaml" source="code/4-pipeline.yml" range="23-35" highlight="3-11" :::
 
-   Your repository has a *bicepconfig.json* file that configures the linter to emit errors instead of warnings. Any failures during the lint job will cause the pipeline to fail.
+   Your repository has a *bicepconfig.json* file that configures the linter to emit errors instead of warnings. Any failures during the lint stage will cause the pipeline to fail.
 
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML pipeline definition so that you can verify that your file matches.
 
-## Add a publish job to your pipeline
+## Add a publish stage to your pipeline
 
-Now, you can add a second job to publish the template spec to Azure.
+Now, you can add a second stage to publish the template spec to Azure.
 
-1. Add the following code at the end of the *pipeline* file:
+1. Add the following code at the end of the *pipeline.yml* file:
 
-   :::code language="yaml" source="code/4-pipeline.yml" range="26-45" :::
+   :::code language="yaml" source="code/4-pipeline.yml" range="37-55" :::
 
-   This job checks out the code from your repository and signs in to Azure by using service connection that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
+   This stage checks out the code from your repository and signs in to Azure by using service connection that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
 
    > [!TIP]
-   > To keep things simple, your pipeline uses the pipeline's *run number* as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
+   > To keep things simple, your pipeline uses the pipeline's *build number* as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
 
 1. Save your changes to the file.
 
@@ -46,7 +46,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
 1. Verify that your *pipeline.yml* file looks like the following example:
 
-   :::code language="yaml" source="code/4-pipeline.yml" highlight="19-45" :::
+   :::code language="yaml" source="code/4-pipeline.yml" highlight="27-55" :::
 
    If it doesn't, update it to match this example, and then save it.
 
@@ -54,43 +54,27 @@ Now, you can add a second job to publish the template spec to Azure.
 
    ```bash
    git add .
-   git commit -m "Add lint and publish jobs to Linux App Service template spec pipeline"
+   git commit -m "Add lint and publish stages to Linux App Service template spec pipeline"
    git push
    ```
 
-1. This is the first time you've pushed to this repository, so you might be prompted to sign in.
-
-   On Windows, type <kbd>1</kbd> to authenticate by using a web browser, and then select <kbd>Enter</kbd>.
-
-   On macOS, select **Authorize**.
-
-1. A browser window appears. You might need to sign in to GitHub again. Select **Authorize**.
+   Immediately after you push, Azure Pipelines starts a new pipeline run.
 
 ## Monitor the pipeline
 
-<!-- TODO -->
+1. In your browser, select **Pipelines** > **Pipelines**.
 
-1. In your browser, select the **Actions** tab.
+   :::image type="content" source="../media/4-pipelines.png" alt-text="Screenshot of Azure Pipelines that shows the Pipelines menu item.":::
 
-   :::image type="content" source="../media/4-actions.png" alt-text="Screenshot of GitHub that shows the Actions tab.":::
+1. Select the active pipeline run.
 
-   Failed workflow runs are listed already, but you don't need to worry about them. They failed because the workflow definitions weren't yet completed.
+1. The pipeline run is displayed.
 
-1. Select the **template-spec-linux-app-service** workflow, select the **Run workflow** button, and then select **Run workflow**.
+   Wait for the pipeline run to finish. When it does, the template spec is published to Azure.
 
-   :::image type="content" source="../media/4-workflow-run.png" alt-text="Screenshot of GitHub that shows selections for running the template spec's workflow.":::
+   :::image type="content" source="../media/4-run-success.png" alt-text="Screenshot of Azure Pipelines that shows a successful pipeline run and highlights the build number.":::
 
-   GitHub starts a new workflow run. You might need to refresh your browser window to see the run appear.
-
-1. Select the latest run in the list.
-
-   :::image type="content" source="../media/4-workflow-runs-list.png" alt-text="Screenshot of GitHub that highlights the latest run of the template spec's workflow.":::
-
-   Wait for the workflow run to finish. When it does, the template spec is published to Azure.
-
-1. Note the workflow's run number, which is probably **2**.
-
-   :::image type="content" source="../media/4-run-success.png" alt-text="Screenshot of GitHub that shows a successful workflow run and highlights the run number.":::
+1. Note the pipeline's build number, which includes today's date and a unique revision number. In the example illustrated in the screenshot above, the build number is **20220405.1**.
 
 ## Review the template spec in Azure
 
@@ -106,4 +90,4 @@ You can also view the published template spec in the Azure portal.
 
    :::image type="content" source="../media/4-template-spec-details-portal.png" alt-text="Screenshot of the Azure portal that shows the template spec details.":::
 
-   Notice that the **Latest version** and **Version** number is the same as the workflow's run number. Your workflow uses the run number for the template spec's version number.
+   Notice that the **Latest version** and **Version** number is the same as the pipeline's build number. Your pipeline uses the build number for the template spec's version number.

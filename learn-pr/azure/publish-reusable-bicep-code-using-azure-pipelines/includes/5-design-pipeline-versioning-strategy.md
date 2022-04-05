@@ -18,7 +18,7 @@ Changes in different parts of version numbers communicate important information 
 
 - **Whenever you make backward-compatible bug fixes or other changes that don't affect how the code works, you should increment the revision number.** For example, suppose you refactor your Bicep code to make better use of variables and expressions. If the refactoring doesn't change your Bicep code's behavior at all, you update the revision number.
 
-- **Your pipeline can also automatically set the revision number.** The pipeline's run number can be used as the revision number. This convention helps ensure that your version numbers are always unique, even if you don't update the other components of your version numbers.
+- **Your pipeline can also automatically set the revision number.** The pipeline's build number can be used as the revision number. This convention helps ensure that your version numbers are always unique, even if you don't update the other components of your version numbers.
 
 For example, suppose you're using a Bicep module that somebody else has published. The module has a version number of `2.0.496`. You see that a new version of the module is available with the version number `2.1.502`. The only significant change is to the minor version number, which indicates that you shouldn't expect a breaking change when you use the new version.
 
@@ -29,7 +29,7 @@ Your team needs to decide how to define a breaking change for the purpose of ver
 
 In that example, you might be able to make the change without affecting the Bicep file's parameters or outputs. That way, anybody who deploys the file might not notice that anything is different. But this change introduces a significant difference in the behavior of your resources, so you might decide to treat it as a major version update regardless.
 
-You can also choose to use a simpler versioning strategy, such as just using the pipeline's run number as your version number. Although this approach is easier to implement, it means you can't effectively communicate the differences between versions to anybody who uses your code.
+You can also choose to use a simpler versioning strategy, such as just using the pipeline's build number as your version number. Although this approach is easier to implement, it means you can't effectively communicate the differences between versions to anybody who uses your code.
 
 ### Versions and pipelines
 
