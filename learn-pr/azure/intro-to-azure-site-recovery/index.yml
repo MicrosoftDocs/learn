@@ -16,8 +16,8 @@ abstract: |
   - Determine whether Azure Site Recovery meets the needs of your organization
   - Understand the difference between Azure Site Recovery and Azure Backup
 prerequisites: |
-- Understanding of basic networking concepts
-- Understanding of basic high availability and disaster recovery concepts
+  - Understanding of basic networking concepts
+  - Understanding of basic high availability and disaster recovery concepts
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
