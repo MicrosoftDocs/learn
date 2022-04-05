@@ -30,7 +30,7 @@ You should be familiar with using:
 - Azure template specs.
 - The Bicep linter, along with testing your Bicep code.
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-- Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
+- Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
 - Azure Pipelines, including stages, jobs, steps, and service connections.
 
 > [!TIP]
@@ -42,7 +42,7 @@ You should be familiar with using:
 To work through the exercises in the module, you'll need:
 
 - An Azure account that has the ability to create resource groups, Azure Active Directory applications, and service principals.
-- TODO AzDO
+- An Azure DevOps organization and account.
 
 You'll also need the following items installed locally:
 
