@@ -4,7 +4,7 @@ The Azure Machine Learning compute instance is a secure, cloud-based Azure works
 
 1. Sign in to [Azure Machine Learning studio](https://ml.azure.com/), and select your workspace.
 
-1. If you have already saved and are able to retrieve the config.json file from Module 1, you can skip the next two steps.  If you need to obtain this file again, open the [Azure [ortal](https://portal.azure.com) in a new tab and navigate to your Azure Machine Learning resource.  You can easily locate this resource by typing  “Azure Machine Learning” in the Azure search bar and choosing the Machine Learning icon.  This action will list all available Azure Machine Learning resources in your Azure Subscription.
+1. If you have already saved and are able to retrieve the config.json file from Module 1, you can skip the next two steps.  If you need to obtain this file again, open the [Azure Portal](https://portal.azure.com) in a new tab and navigate to your Azure Machine Learning resource.  You can easily locate this resource by typing  “Azure Machine Learning” in the Azure search bar and choosing the Machine Learning icon.  This action will list all available Azure Machine Learning resources in your Azure Subscription.
 
     :::image type="content" source="../media/2-find-resource.png" alt-text="A screenshot that demonstrates how to navigate to your Azure Machine Learning resource." lightbox="../media/2-find-resource.png":::  
 
