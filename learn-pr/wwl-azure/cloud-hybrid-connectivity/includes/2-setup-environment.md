@@ -1,7 +1,7 @@
-You’ll troubleshoot a name resolution problem in a later exercise. Use the following instructions and the Azure Cloud Shell on the right of the screen to create the environment for this exercise.
+You'll troubleshoot a name resolution problem in a later exercise. Use the following instructions and the Azure Cloud Shell on the right of the screen to create the environment for this exercise.
 
 > [!NOTE]
-> The resource group **sandbox-rg** has been created automatically. Use this as your resource group name. You won't have permission to create additional resource groups in the sandbox.
+> The resource group <rgn>[sandbox resource group name]</rgn> has been created automatically. Use this as your resource group name. You won't have permission to create additional resource groups in the sandbox.
 
 In the sandbox to the right, follow these steps:
 
@@ -10,13 +10,13 @@ Using the Cloud Shell on the right, run these commands to create the example top
 
 1. Clone the set up script from GitHub.
 
-   ```console
+   ```powershell
    git clone https://github.com/MicrosoftDocs/mslearn-cloud-hybrid-connectivity networking
    ```
 
 1. Run the set up script.
 
-   ```console
+   ```powershell
    networking/setup.ps1
    ```
 
