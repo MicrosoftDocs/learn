@@ -1,19 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.intro-to-azure-application-delivery-services
 metadata:
-  title: Introduction to Azure hybrid connectivity services
-  description: Learn to connect your on-premises and Azure networks together with Azure hybrid connectivity services.
+  title: Introduction to Azure application delivery services
+  description: Learn to distribute network traffic to load balance workloads with Azure application delivery services.
   brand: azure
   ms.date: 04/01/2022
   author: duongau
   ms.author: duau
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Azure hybrid connectivity services
+title: Introduction to Azure application delivery services
 summary: |
-  In this learning path, you'll learn how to connect your on-premises and Azure networks together with Azure hybrid connectivity services.
+  In this learning path, you'll learn how to distribute network traffic to load balance workloads with Azure application delivery services.
 prerequisites: |
-  - Beginner-level knowledge of networking, including IP addresses, public versus private IP addresses, hub and spoke network topology, subnets, VPN, Border Gateway Protocol, and network packets.
+  - Beginner-level knowledge of networking, including IP addresses, load balancer, reverse proxy, Web Application Firewall, CDN, DNS, and network packets.
   - Beginner-level knowledge of cloud computing, including scalability and availability.
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
@@ -24,8 +24,10 @@ roles:
 products:
 - azure
 modules:
-- learn.azure.intro-to-azure-vpn-gateway
-- learn.azure.intro-to-azure-expressroute
-- introduction-azure-virtual-wan
+- learn.intro-to-azure-front-door
+- learn.azure.intro-to-azure-load-balancer
+- introduction-azure-web-application-firewall
+- learn.azure.intro-to-azure-application-gateway
+- learn.distribute-load-with-traffic-manager
 trophy:
   uid: learn.intro-to-azure-application-delivery-services.trophy
