@@ -47,4 +47,4 @@ quiz:
           explanation: Incorrect. p isn't the standard extension for Python files.
         - content: py
           isCorrect: true
-          explanation: Correct! py is the standard extension for Python files.
+          explanation: Correct! .py is the standard extension for Python files.
