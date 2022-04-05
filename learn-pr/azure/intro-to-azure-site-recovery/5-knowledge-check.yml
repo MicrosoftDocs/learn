@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-azure-site-recovery.knowledge-check
+uid: learn.intro-to-azure-site-recovery.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: TBD
   ms.date: 04/05/2022
-  author: TBD
-  ms.author: Orin Thomas
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

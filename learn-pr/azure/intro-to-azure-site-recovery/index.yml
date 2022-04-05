@@ -1,11 +1,11 @@
 ### YamlMime:Module
-uid: learn.introduction-to-azure-site-recovery
+uid: learn.intro-to-azure-site-recovery
 metadata:
   title: TBD
   description: TBD
   ms.date: 04/05/2022
-  author: TBD
-  ms.author: Orin Thomas
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Site Recovery
@@ -19,11 +19,11 @@ roles:
 products:
 - azure
 units:
-- learn.introduction-to-azure-site-recovery.introduction
-- learn.introduction-to-azure-site-recovery.what-is-azure-site-recovery
-- learn.introduction-to-azure-site-recovery.how-azure-site-recovery-works
-- learn.introduction-to-azure-site-recovery.when-to-use-azure-site-recovery
-- learn.introduction-to-azure-site-recovery.knowledge-check
-- learn.introduction-to-azure-site-recovery.summary
+- learn.intro-to-azure-site-recovery.introduction
+- learn.intro-to-azure-site-recovery.what-is-azure-site-recovery
+- learn.intro-to-azure-site-recovery.how-azure-site-recovery-works
+- learn.intro-to-azure-site-recovery.when-to-use-azure-site-recovery
+- learn.intro-to-azure-site-recovery.knowledge-check
+- learn.intro-to-azure-site-recovery.summary
 badge:
-  uid: learn.introduction-to-azure-site-recovery-badge
+  uid: learn.intro-to-azure-site-recovery-badge
