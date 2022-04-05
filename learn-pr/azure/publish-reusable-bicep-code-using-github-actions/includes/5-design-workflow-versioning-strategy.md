@@ -91,4 +91,4 @@ By using aliases, you can make your deployment process easily work across multip
 - A production registry when you're deploying to other environments.
 
 > [!NOTE]
-> Aliases don't apply when you publish. They work only when you use template specifications or modules within a Bicep file.
+> Aliases don't apply when you publish. They work only when you use template specs or modules within a Bicep file.
