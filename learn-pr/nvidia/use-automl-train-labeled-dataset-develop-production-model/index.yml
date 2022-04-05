@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: use-automl-train-labeled-dataset-develop-production-model
+metadata:
+  title: Use AutoML to train a labeled dataset and develop a production model
+  description: Use AutoML to train a labeled dataset and develop a production model.
+  ms.date: 03/14/2022
+  author: toolboc
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use AutoML to train a labeled dataset and develop a production model
+summary: Learn how to use AutoML to train a labeled dataset and develop a production object detection model.
+abstract: |
+  In this module, you'll learn how to:
+  - Author AutoML models for vision tasks via the Azure ML Python SDK
+  - Seamlessly integrate with the Azure Machine Learning data labeling capability
+  - Optimize model performance by specifying the model algorithm and tuning the hyperparameters
+  - Operationalize at scale, leveraging Azure Machine Learning MLOps capabilities
+  - Download the resulting model for use in a production deployment
+prerequisites: |
+  - [Azure Free Trial Account](https://azure.microsoft.com/free/)
+iconUrl: /learn/achievements/setup-configure-nvidia-deepstream-development.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+products:
+- azure
+- azure-machine-learning
+units:
+- learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.introduction
+- learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.prepare-jupyter-notebook-workspace
+- learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.configure-jupyter-notebook-execution-environment
+- learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.execute-jupyter-notebook-produce-object-detection-model-automl
+- learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.knowledge-check
+- learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.summary
+badge:
+  uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.badge
