@@ -4,7 +4,7 @@ However, how about when a dog barks or a cat meows? These sounds can't be conver
                          
 ![variety of sounds](/images/1-introduction-1.png)
 
-In this module, we'll look at how to extract sound wave patterns from an audio of spoken words. Audio classification is useful for many things, not just speech assistants. There are various sound sources that an application needs to recognize.  For example, you can classify music genres or detect illness by the tone in someone's voice. There are even more applications that we haven't even thought of yet.
+In this module, we'll look at how to extract sound wave patterns from an audio recording of spoken words. Audio classification is useful for many things, not just speech assistants. There are various sound sources that an application needs to recognize.  For example, you can classify music genres or detect illness by the tone in someone's voice. There are even more applications that we haven't even thought of yet.
 
 We'll be learning how to do audio classification with PyTorch, a popular Python machine learning framework. There are multiple ways to build an audio classification model. You can use a waveform, tag sections of a wave file, or even use computer vision on a spectrogram image. This module will first break down how to understand audio data and transform sound signals into an image representation using a Spectrogram. Then we'll build a model using computer vision that can understand a `yes` or `no` speech command.
 
