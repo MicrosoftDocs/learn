@@ -85,6 +85,8 @@ Now that you can generate QR codes, you can embed a QR code into the **Configure
 
 ## Test multi-factor authentication
 
+You've made all the changes needed for a QR code on the **Configure authenticator app** form. Now you can easily test the MFA functionality.
+
 1. Ensure you've saved all your changes.
 1. Build and run the app with `dotnet run`.
 1. Navigate to the site and log in with either registered user (if not already logged in). Select **Hello, [First name] [Last name]!** link to navigate to the profile management page, and then select **Two-factor authentication**.

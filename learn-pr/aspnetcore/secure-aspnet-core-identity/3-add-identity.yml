@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-aspnet-core-identity.3-add-identity
+uid: learn.secure-aspnet-core-identity.add-identity
 metadata:
   title: Exercise - Configure Identity support
   description: Configure Identity framework support in an existing ASP.NET Core web app.

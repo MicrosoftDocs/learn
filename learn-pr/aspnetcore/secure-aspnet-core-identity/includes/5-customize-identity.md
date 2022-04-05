@@ -59,7 +59,7 @@ In this section, you're going to create and customize the Identity UI files to b
 
 1. Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to incorporate the following highlighted changes at the top. Save your changes.
 
-    [!code-cshtml[](../code/pages/shared/_loginpartial.cshtml?range=1-6&highlight=2-4)]
+    [!code-cshtml[](../code/pages/shared/_loginpartial.cshtml?range=1-5,7&highlight=2-4)]
 
     The preceding changes update the user type passed to both `SignInManager<T>` and `UserManager<T>` in the `@inject` directives. Instead of the default `IdentityUser` type, `RazorPagesPizzaUser` user is now referenced. The `@using` directive was added to resolve the `RazorPagesPizzaUser` references.
 
@@ -116,6 +116,8 @@ Now that the model changes have been made, accompanying changes must be made to 
 
 ## Customize the user registration form
 
+You've added new columns for `FirstName` and `LastName`. Now you need to edit the UI to display matching fields on the registration form.
+
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml":::*, add the following highlighted markup:
 
     [!code-cshtml[](../code/areas/identity/pages/account/register-firstandlastname.cshtml?range=1-19&highlight=5-14)]
@@ -142,6 +144,8 @@ Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the fi
 [!code-cshtml[](../code/pages/shared/_loginpartial.cshtml?name=snippet_razorpagesuser&highlight=4-5,8)]
 
 ## Customize the profile management form
+
+You've added the new fields to the user registration form, but you should also add them to the profile management form so existing users can edit them.
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/Index.cshtml":::*, add the following highlighted markup. Save your changes.
 
@@ -217,6 +221,8 @@ In order to send the confirmation email, you need to create an implementation of
 
 ## Test the changes to the registration form
 
+That's everything! Let's test the changes to the registration form and confirmation email.
+
 1. Make sure you've saved all your changes.
 1. In the terminal pane, build the project and run the app with `dotnet run`.
 1. In your browser, navigate to the app. Select **Logout** if you're still logged in.
@@ -257,6 +263,8 @@ In order to send the confirmation email, you need to create an implementation of
     The first user registered prior to adding `FirstName` and `LastName` to the schema. Consequently, the associated `AspNetUsers` table record doesn't have data in those columns.
 
 ## Test the changes to the profile management form
+
+You should also test the changes you made to the profile management form.
 
 1. In the web app, log in with the first user you created.
 

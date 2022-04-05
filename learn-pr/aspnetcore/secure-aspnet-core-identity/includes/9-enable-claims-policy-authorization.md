@@ -1,8 +1,8 @@
-In the previous unit, you learned the difference between authentication and authorization. You also learned how claims are used by policies for authorization. In the next unit, you'll use Identity to store claims and apply policies for conditional access.
+In the previous unit, you learned the difference between authentication and authorization. You also learned how claims are used by policies for authorization. In this unit, you'll use Identity to store claims and apply policies for conditional access.
 
 ## Secure the pizza list
 
-You've received a new requirement that the Pizza List page should be visible only to authenticated users. Additionally, only administrators are allowed to  create and delete pizzas. Let's lock it down.
+You've received a new requirement that the Pizza List page should be visible only to authenticated users. Additionally, only administrators are allowed to create and delete pizzas. Let's lock it down.
 
 1. In *Pages/Pizza.cshtml.cs*, apply the following changes:
     1. Add an `[Authorize]` attribute to the `PizzaModel` class.
@@ -85,7 +85,7 @@ In order to determine which users should get the `IsAdmin=True` claim, your app 
 
         [!code-csharp[](../code/areas/identity/pages/account/confirmemail.cshtml.cs?name=snippet_configproperty&highlight=4,6-7,10)]
 
-        The preceding change modifies the constructor to receives an `IConfiguration` from the IoC container. The `IConfiguration` contains values from *appsettings.json*, and is assigned to a read-only property named `Configuration`.
+        The preceding change modifies the constructor to receive an `IConfiguration` from the IoC container. The `IConfiguration` contains values from *appsettings.json*, and is assigned to a read-only property named `Configuration`.
 
     1. Apply the highlighted changes to the `OnGetAsync` method:
 
@@ -94,6 +94,7 @@ In order to determine which users should get the `IsAdmin=True` claim, your app 
         In the preceding code:
 
         * The `AdminEmail` string is read from the `Configuration` property and assigned to `adminEmail`.
+        * The null-coalescing operator `??` is used to ensure `adminEmail` is set to `string.Empty` if there is no corresponding value in *appsettings.json*.
         * If the user's email is successfully confirmed:
             * The user's address is compared to `adminEmail`. `string.Compare()` is used for case-insensitive comparison.
             * The `UserManager` class's `AddClaimAsync` method is invoked to save an `IsAdmin` claim in the `AspNetUserClaims` table.
@@ -106,9 +107,11 @@ In order to determine which users should get the `IsAdmin=True` claim, your app 
 
 ## Test admin claim
 
+Let's do one last test to verify the new administrator functionality.
+
 1. Make sure you've saved all your changes.
 1. Run the app with `dotnet run`.
-1. Navigate to your app and log in with an existing user, if not already logged in. Select **Pizza List** from the header. Notice the user isn't presented UI elements to delete or create pizzas.
+1. Navigate to your app and log in with an existing user (if not already logged in). Select **Pizza List** from the header. Notice the user isn't presented UI elements to delete or create pizzas.
 1. There's no **Admins** link in the header. In the browser's address bar, navigate directly to the **AdminsOnly** page. Replace `/Pizza` in the URL with `/AdminsOnly`.
 
     The user is forbidden from navigating to the page. An **Access denied** message is displayed.
@@ -142,3 +145,7 @@ A tab with results similar to the following appears:
 | admin@contosopizza.com | IsAdmin   | True       |
 
 The `IsAdmin` claim is stored as a key-value pair in the `AspNetUserClaims` table. The `AspNetUserClaims` record is associated with the user record in the `AspNetUsers` table.
+
+## Summary
+
+In this unit, you modified the app to store claims and apply policies for conditional access.

@@ -3,7 +3,7 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
 ## Obtain and open the starter project
 
 > [!NOTE]
-> If you wish to use the `.devcontainer` in GitHub Codespaces, navigate to the [source repository codespaces](https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity/codespaces). Create a new codespace using the `main` branch, and then skip to step 3.
+> If you wish to use the `.devcontainer` in GitHub Codespaces, navigate to [your codespaces for the repository](https://github.com/MicrosoftDocs/mslearn-secure-aspnet-core-identity/codespaces). Create a new codespace using the `main` branch, and then skip to step 3.
 
 1. In a terminal window, run the following command to obtain the starter project:
 
@@ -30,9 +30,11 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
     cd RazorPagesPizza
     ```
 
-1. In the **Explorer** pane, expand the *RazorPagesPizza* directory to view the code.
+1. In the **Explorer** pane, expand the *RazorPagesPizza* directory to view the code. *RazorPagesPizza* is the project directory. As you proceed, assume all paths discussed in this module are relative to this location.
 
 ## Explore the app
+
+Let's run the app to get a quick introduction.
 
 1. In the terminal pane, build the project and run the app:
 
@@ -63,6 +65,8 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
 1. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> in the terminal pane to stop the app.
 
 ## Add ASP.NET Core Identity to the project
+
+The default Identity implementation can be added with `dotnet` command-line tools.
 
 1. Install the ASP.NET Core code scaffolder:
 
@@ -106,7 +110,7 @@ Identity works out-of-the-box without any customization. In this unit, Identity 
     * The `--useDefaultUI` option indicates that an RCL containing the default UI elements will be used. Bootstrap will be used to style the components.
     * The `--dbContext` option to indicate the name of an EF Core database context class to generate.
 
-    An *:::no-loc text="Areas":::* directory structure appears in the project root:
+    An *:::no-loc text="Areas":::* directory structure appears in the *RazorPagesPizza* directory:
 
     * *:::no-loc text="Areas":::*
         * *:::no-loc text="Identity":::*
@@ -156,6 +160,8 @@ This connection string points to an instance of SQL Server Express LocalDB by de
 This updates the connection string to connect to the instance of SQL Server inside the container.
 
 ## Update the database
+
+Now that you've verified the connection string, you can generate and run a migration to build the database.
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 1. Install the Entity Framework Core migration tool:
@@ -212,15 +218,17 @@ This updates the connection string to connect to the instance of SQL Server insi
 
 ## Add the login and registration links
 
-1. In *:::no-loc text="Pages/Shared/_Layout.cshtml":::*, replace the `@* Add the _LoginPartial partial view *@` comment with the following.
+In *:::no-loc text="Pages/Shared/_Layout.cshtml":::*, replace the `@* Add the _LoginPartial partial view *@` comment with the following.
 
-    ```cshtml
-    <partial name="_LoginPartial" />
-    ```
+```cshtml
+<partial name="_LoginPartial" />
+```
 
-    The preceding markup renders the `_LoginPartial` partial view within the header of any page that uses the default layout. `_LoginPartial` was added by the Identity scaffold. This partial view presents the user with **Login** and **Register** links if the user isn't signed in.
+The preceding markup renders the `_LoginPartial` partial view within the header of any page that uses the default layout. `_LoginPartial` was added by the Identity scaffold. This partial view presents the user with **Login** and **Register** links if the user isn't signed in.
 
 ## Test the Identity functionality
+
+That's everything required to add the default Identity implementation. It's time to test it!
 
 1. Make sure you've saved all your changes.
 1. In the terminal pane, build the project and run the app:

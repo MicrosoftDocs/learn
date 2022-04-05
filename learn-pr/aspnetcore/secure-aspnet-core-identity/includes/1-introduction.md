@@ -31,7 +31,7 @@ Before you start, ensure you have the following tools installed:
 * [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb)
 * [Git](https://git-scm.com/docs/gitcli)
 
-Alternatively, this module includes a *[.devcontainer](https://code.visualstudio.com/docs/remote/create-dev-container)* file. The *.devcontainer* file defines a container pre-configured with .NET 6 SDK, SQL Server, and the extensions. We recommend this approach for the best experience.
+Alternatively, this module includes a *[.devcontainer](https://code.visualstudio.com/docs/remote/create-dev-container)* file. The *.devcontainer* file defines a container pre-configured with .NET 6 SDK, SQL Server, and the required extensions. We recommend this approach for the best experience.
 
 Using the *.devcontainer* requires only:
 
@@ -39,7 +39,7 @@ Using the *.devcontainer* requires only:
 * [Git](https://git-scm.com/docs/gitcli)
 * [Docker Desktop](https://www.docker.com)
 
-You can also use the *.devcontainer* without **any** local tools using [GitHub Codespaces](https://github.com/features/codespaces) [Charges apply](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-codespaces#codespaces-pricing).
+You can also use the *.devcontainer* without **any** local tools using [GitHub Codespaces](https://github.com/features/codespaces)([charges apply](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-codespaces#codespaces-pricing)).
 
 ## Get started
 

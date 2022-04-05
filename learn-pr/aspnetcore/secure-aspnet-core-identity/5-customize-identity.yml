@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-aspnet-core-identity.4-customize-identity
+uid: learn.secure-aspnet-core-identity.customize-identity
 metadata:
   title: Exercise - Customize Identity
   description: Learn how to customize the Identity framework in an ASP.NET Core web app.

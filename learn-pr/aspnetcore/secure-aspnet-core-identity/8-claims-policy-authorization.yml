@@ -12,3 +12,18 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/8-claims-policy-authorization.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which of the following is a **true** statement?"
+      choices:
+      - content: "There can be no authentication without authorization."
+        isCorrect: false
+        explanation: "Incorrect. Authorization is dependant on authentication, not the other way around."
+      - content: "There can be no authorization without authentication."
+        isCorrect: true
+        explanation: "Correct! Before you can be concerned with what a subject can *do*, you must first authenticate who the subject *is*."
+      - content: "Claims describe what a subject can do."
+        isCorrect: false
+        explanation: "Incorrect. Claims describe what a subject *is*, not what they can *do*."
