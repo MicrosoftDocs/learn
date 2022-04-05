@@ -6,7 +6,24 @@ You can use Bicep to deploy resource groups, subscriptions, management groups, p
 
 ## Controlled environments
 
-Understand that there are different categories of environments. *Controlled* environments are those that require a formal process for code review and deployment. Production should be a controlled environment, and in many organisations, they will also control some or all of their non-production environments. *Uncontrolled* environments don't need IaC - for example, sandboxes used by the development teams, ephemeral environments used in pull request reviews, and maybe environments for specialised purposes like penetration testing and performance testing. Maybe mention that controlled/uncontrolled isn't the same as long-lived vs. short-lived.
+When you plan to deploy your infrastructure automatically, it's helpful to list out the environments you plan to use. In many organizations, there are a variety of environment types. Environments often have different characteristics. For example, some environments run production code. Others run non-production versions of the same code. Some are long-lived environments that are never intended to be deleted. Others are ephemeral, which might be created automatically and destroyed when they're no longer used. Some might be used by your infrastructure or software development team. Others might be used by your security team, or even by your sales team when they need to demonstrate a product to potential customers.
+
+List out all of the environments your organization uses, or might use in the future:
+
+TODO table
+- Prod
+- Dev, Test, QA, Staging
+- Pen testing
+- Perf testing
+- Demo
+- Ephemeral environments for PR reviews
+- Dev sandboxes
+
+In some of these environments, it makes sense to require a formal process to review and apply changes. These are *controlled environments*. Production should always be a controlled environment. In addition, in many organizations, it's a good practice to control some of the non-production environments, too. By doing this, you can ensure that any restrictions imposed by the controls are well understood and tested before the production deployment.
+
+In contrast, *uncontrolled environments* don't have many, or any, formal controls. They still might have the same code and  Sandbox environments, 
+
+ need IaC - for example, sandboxes used by the development teams, ephemeral environments used in pull request reviews, and maybe environments for specialised purposes like penetration testing and performance testing. 
 
 ## Gates and checks
 
