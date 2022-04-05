@@ -5,7 +5,7 @@ metadata:
   title: Understand audio data and concepts
   description: We need to first get a better understanding of our audio data. Here we will look at some key concepts and features of audio data.
   author: cassiebreviu
-  ms.author: cassieb
+  ms.author: ruyakubu
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure
@@ -16,7 +16,7 @@ metadata:
   - cassieb-08182021
 durationInMinutes: 10
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/audio-pytorch/2-understand-audio-data.ipynb
+notebook: notebooks/2-understand-audio-data.ipynb
 quiz:
   title: Check your knowledge
   questions:
