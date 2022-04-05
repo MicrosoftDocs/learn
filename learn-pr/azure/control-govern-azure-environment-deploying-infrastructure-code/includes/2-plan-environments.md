@@ -10,9 +10,9 @@ When you plan to deploy your infrastructure automatically, it's helpful to list 
 
 In some of these environments, it makes sense to require a formal process to review and apply changes. These are *controlled environments*. Production should always be a controlled environment. In addition, in many organizations, it's a good practice to control some of the non-production environments, too. By doing this, you can ensure that any restrictions imposed by the controls are well understood and tested before the production deployment.
 
-In contrast, *uncontrolled environments* don't have many, or any, formal controls. They still might have the same code and  Sandbox environments, 
+In contrast, *uncontrolled environments* don't have many, or any, formal controls. They still might have the same code and similar configuration to your other environments, but they allow for more experimentation and ad hoc configuration changes.
 
- need IaC - for example, sandboxes used by the development teams, ephemeral environments used in pull request reviews, and maybe environments for specialised purposes like penetration testing and performance testing. 
+For example, your toy company might have these environments:
 
 | Environment name | Description | Owner | Lifetime | Control level |
 |-|-|-|-|-|
