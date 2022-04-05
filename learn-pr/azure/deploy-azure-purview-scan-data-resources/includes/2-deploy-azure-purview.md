@@ -22,12 +22,14 @@ The Azure Purview Data Map is central to the Azure Purview service as it is resp
 ![Azure Purview data map](../media/03.04-purview-data-map.png)
 
 ## Capacity Units
-All Azure Purview accounts come with one Capacity Unit by default, and elastically grow based on usage. The Data Map is **always on** while the Azure Purview account exists, in which case, there will always be a minimum of 1 Capacity Unit consumed. Each Capacity Unit:
+All Azure Purview accounts come with one Capacity Unit by default, and elastically grow based on usage. The Data Map is **always on** while the Azure Purview account exists, in which case, there will always be a minimum of 1 Capacity Unit consumed. 
+
+Each Capacity Unit:
 * Can support up to **25 data map operations per second**.
 * Includes storage of up to **10 GB** of metadata about data assets.
 
 ## Scanning
-The compute required to facilitate the automated population of the Data Map is serverless (**pay as you go**) and based on the duration of scans or ingestion jobs. Duration of these jobs can vary based on the number of systems scanned, data assets contained in the scanned systems, number of classifications selected, the shape of the data and performance of the system scanned. Scanning is billed based on the number of vCore Hours.
+The compute required to facilitate the automated population of the Data Map is serverless (**pay as you go**) and based on the duration of scans or ingestion jobs. Duration of these jobs can vary based on the number of systems scanned, data assets contained in the scanned systems, number of classifications selected, the shape of the data, and performance of the system scanned. Scanning is billed based on the number of vCore Hours consumed.
 
 ## Network connectivity
 You can connect to your Azure Purview account either publically, via public IP addresses or service endpoints, or privately, using a private endpoint. [Learn more about private endpoints for your Azure Purview account](https://docs.microsoft.com/en-us/azure/purview/catalog-private-link).
