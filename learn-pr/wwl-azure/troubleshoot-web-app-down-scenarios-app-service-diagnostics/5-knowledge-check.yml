@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/01/2022
+  ms.date: 04/05/2022
   author: wwlpublish
   ms.author: lauraalv
   ms.topic: interactive-tutorial
@@ -44,7 +44,7 @@ quiz:
     - content: "It's a feature within App Service Diagnostics that allows the user to open the memory dump files in VS Code to diagnose potential causes of an issue."
       isCorrect: false
       explanation: "That's incorrect. Ask Genie doesn't help the user to open memory dump files in VS Code."
-    - content: "It's a feature within App Service Diagnostics that allows the user to describe the problem of the application to help identify potential causes of an issue?"
+    - content: "It's a feature within App Service Diagnostics that allows the user to describe the problem of the application to help identify potential causes of an issue."
       isCorrect: true
       explanation: "That's correct. Ask Genie is a bot which allows the user to input the technical issue your app is experiencing in your own words."
     - content: "It's a feature within App Service Diagnostics that can only be accessed through Configuration and Management for troubleshooting potential causes of an issue."
