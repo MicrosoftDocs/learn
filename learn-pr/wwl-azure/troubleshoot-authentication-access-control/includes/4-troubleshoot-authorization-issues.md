@@ -2,7 +2,7 @@ When a user has been authenticated, they must be authorized to carry out actions
 
 ## Troubleshoot Conditional Access
 
-Conditional Access policies use numerous signals to decide whether a user should have access to a resource. For example, the user’s geographic location, type of device, and application being used can all be considered, alongside the user’s identity.
+Conditional Access policies use numerous signals to decide whether a user should have access to a resource. For example, the user's geographic location, type of device, and application being used can all be considered, alongside the user's identity.
 
 ### Troubleshoot Conditional Access policy changes
 
@@ -10,7 +10,7 @@ If Conditional Access was previously working successfully, but is now not functi
 
 To view the audit log in the Azure portal, select **Azure Active Directory** then select Audit logs. Select the relevant date range and, in **Activity**, select **Add conditional access policy**, or **Update conditional access policy**, or **Delete conditional access policy**.
 
-![Audit log entry showing old and new JSON values for Conditional Access policy](../media/4-audit-logs.png)
+:::image type="content" source="../media/4-audit-logs.png" alt-text="Audit log entry showing old and new JSON values for Conditional Access policy" lightbox="../media/4-audit-logs.png":::
 
 ### Troubleshoot sign-in problems with Conditional Access
 
@@ -18,11 +18,11 @@ To avoid sign-in problems with Conditional Access, be very cautious if policies 
 
 To troubleshoot sign-in problems, you should initially review the error message. This will typically list the policy that is causing the problem and allow you to identify the policy to update. By clicking **More details** on the error message you can find the specific sign-in event.
 
-![More details from a Conditional Access interrupted web browser sign-in.](../media/4-more-details-sign.png)
+:::image type="content" source="../media/4-more-details-sign.png" alt-text="More details from a Conditional Access interrupted web browser sign-in.":::
 
 When you have the details of the sign-in event, you can open the Azure portal, select **Azure Active Directory** then select **Sign-ins**. Add filters to find the correct type of events, such as Conditional Access failures, and find the specific event.
 
-![Selecting the Conditional access filter in the sign-ins log](../media/4-conditional-access-sign-log.png)
+:::image type="content" source="../media/4-conditional-access-sign-log.png" alt-text="Selecting the Conditional access filter in the sign-ins log":::
 
 You can then select the event to view more details and the policy details for that event.
 

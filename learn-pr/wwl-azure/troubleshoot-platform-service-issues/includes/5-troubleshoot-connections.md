@@ -1,4 +1,4 @@
-When troubleshooting connections between a virtual machine (VM) and a PaaS service it is important to assess whether a problem is due to the VM, the PaaS service, a network issue, or an issue with a specific service, such as email or Microsoft Graph.
+When troubleshooting connections between a virtual machine (VM) and a Platform as a Service (PaaS), it is important to assess whether a problem is due to the VM, the PaaS service, a network issue, or an issue with a specific service, such as email or Microsoft Graph.
 
 ## Connecting to an application running on an Azure virtual machine
 
