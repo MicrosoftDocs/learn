@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-ai-fundamentals
 metadata:
   title: Get started with AI on Azure
   description: "Get started with AI on Azure"
-  ms.date: 03/14/2022
+  ms.date: 04/05/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -31,7 +31,7 @@ units:
 - learn.wwl.get-started-ai-fundamentals.understand-anomaly-detection
 - learn.wwl.get-started-ai-fundamentals.understand-computer-vision
 - learn.wwl.get-started-ai-fundamentals.understand-natural-language-process
-- learn.wwl.get-started-ai-fundamentals.understand-conversational-ai
+- learn.wwl.get-started-ai-fundamentals.understand-knowledge-mining
 - learn.wwl.get-started-ai-fundamentals.explore-responsible-ai-practice
 - learn.wwl.get-started-ai-fundamentals.understand-responsible-ai
 - learn.wwl.get-started-ai-fundamentals.knowledge-check
