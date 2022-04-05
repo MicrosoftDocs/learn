@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: use-automl-train-labeled-dataset-develop-production-model
+uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model
 metadata:
   title: Use AutoML to train a labeled dataset and develop a production model
   description: Use AutoML to train a labeled dataset and develop a production model.

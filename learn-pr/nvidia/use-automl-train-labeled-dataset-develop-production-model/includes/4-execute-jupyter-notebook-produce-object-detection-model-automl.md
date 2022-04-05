@@ -1,4 +1,4 @@
-In this section, we'll continue to work in the Jupyter notebook to execute the steps that will produce our object detection model. This task will be accomplished using [AutoML for computer vision](https://docs.microsoft.com/en-us/azure/machine-learning/concept-automated-ml). You'll be able to see your model in action by performing inference on a test sample that was never before seen by the model during training. 
+In this section, we'll continue to work in the Jupyter notebook to execute the steps that will produce our object detection model. This task will be accomplished using [AutoML for computer vision](https://docs.microsoft.com/azure/machine-learning/concept-automated-ml). You'll be able to see your model in action by performing inference on a test sample that was never before seen by the model during training. 
 
 ## Execute the Jupyter Notebook to produce an object detection model using AutoML
 
@@ -6,7 +6,7 @@ In this section, we'll continue to work in the Jupyter notebook to execute the s
 
     :::image type="content" source="../media/3-open-notebook.png" alt-text="A screenshot again showing the Jupyter workspace with all necessary prerequisites." lightbox="../media/3-open-notebook.png"::: 
 
-1. Continue to the **Configuring your AutoML run for image tasks** section and begin executing the cell in the **Using default hyperparameter values for the specified algorithm**.  This step will use an[AutoMLImageConfig](https://docs.microsoft.com/azure/machine-learning/how-to-auto-train-image-models#configure-your-experiment-settings) to create a model training configuration that will assign default hyperparameters to produce an optimized object detection model.
+1. Continue to the **Configuring your AutoML run for image tasks** section and begin executing the cell in the **Using default hyperparameter values for the specified algorithm**.  This step will use an[AutoMLImageConfig](https://docs.microsoft.com/azure/machine-learning/how-to-auto-train-image-models) to create a model training configuration that will assign default hyperparameters to produce an optimized object detection model.
 
 1. Continue to execute the cells in the **Submitting an AutoML run for Computer Vision Tasks** section. This operation will submit an experiment task that will run on the training instance that was assigned in the **Compute target setup** section.  After executing these cells, you can monitor the progress in Azure Machine Learning studio by navigating locating the **Assets** section on the left-hand pane and select **Experiments**
 

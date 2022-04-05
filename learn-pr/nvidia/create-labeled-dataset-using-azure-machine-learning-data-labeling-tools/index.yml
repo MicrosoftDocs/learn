@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: create-labeled-dataset-using-azure-machine-learning-data-labeling-tools
+uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools
 metadata:
   title: Create a labeled dataset using Azure Machine Learning data labeling tools
   description: Create a labeled dataset using Azure Machine Learning data labeling tools.
