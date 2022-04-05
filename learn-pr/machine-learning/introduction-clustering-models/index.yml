@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.machine-learning.introduction-clustering-models
 metadata:
-  title: Introduction to clustering models by using R and Tidymodels
-  description: Introduction to clustering models by using R and Tidymodels.
+  title: Introduction to clustering models by using R and tidymodels
+  description: Introduction to clustering models by using R and tidymodels.
   ms.date: 02/14/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: nextgen
-title: Introduction to clustering models by using R and Tidymodels
+title: Introduction to clustering models by using R and tidymodels
 summary: Get an introduction to clustering models. Clustering is the process of grouping objects with similar objects.
 abstract:  | 
   - When to use clustering models
-  - How to train and evaluate clustering models by using the Tidymodels framework
+  - How to train and evaluate clustering models by using the tidymodels framework
   
 prerequisites: |
   - Knowledge of basic mathematics 
