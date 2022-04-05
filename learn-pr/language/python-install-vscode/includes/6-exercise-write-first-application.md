@@ -4,7 +4,7 @@ With Python and Python tools installed, you can create your first Python applica
 
 Many projects start with an empty directory, which is how you'll start yours.
 
-1. Open a terminal or command window (or return to the one you had open previously). 
+1. Open a terminal or command window (or return to the one you had open previously).
 
 1. Create a new directory, and open it in Visual Studio Code by running the following command sequence:
 
@@ -42,13 +42,13 @@ Many projects start with an empty directory, which is how you'll start yours.
 
 With Visual Studio Code open to your empty folder, you'll now create a Python file to display the class message *Hello, World*.
 
-You may see a prompt you to install [Pylint](https://pypi.org/project/pylint/), which you can install by selecting *Install*. If Visual Studio Code doesn't automatically [detect a Python interpreter](https://code.visualstudio.com/docs/languages/python#_environments), you may be prompted [select one](https://code.visualstudio.com/docs/languages/python#_environments) by selecting the default option.
+You may see a prompt you to install [Pylint](https://pypi.org/project/pylint/), which you can install by selecting **Install**. If Visual Studio Code doesn't automatically [detect a Python interpreter](https://code.visualstudio.com/docs/languages/python#_environments), you may be prompted [select one](https://code.visualstudio.com/docs/languages/python#_environments) by selecting the default option.
 
 1. In the **Explorer view**, HELLO_WORLD panel, hover over the title bar, and then select **New File**.
 
     :::image type="content" source="../media/visual-studio-code-new-file.png" alt-text="Screenshot of the Visual Studio Code Explorer window with New File highlighted.":::
 
-1. Name the new file _hello.py_ by entering it into the new textbox, and pressing <kbd>Enter</kbd>.
+1. Name the new file *hello.py* by entering it into the new textbox, and pressing <kbd>Enter</kbd>.
 
     :::image type="content" source="../media/visual-studio-code-name-file.png" alt-text="Screenshot of Explorer window with hello.py entered for new file.":::
 

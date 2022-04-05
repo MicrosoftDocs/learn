@@ -26,7 +26,7 @@ Visual Studio Code is a powerful code editor and a lightweight general-purpose I
 
 ::: zone pivot="linux"
 
-4. In either Extensions panel, or in the main panel, select **Install**.
+1. In either the Extensions panel, or in the main panel, select **Install**.
 
     :::image type="content" source="../media/visual-studio-code-extensions-install.png" alt-text="Screenshot of the search results in the Extensions panel for Linux with Install Python highlighted.":::
 
@@ -36,7 +36,7 @@ Visual Studio Code is a powerful code editor and a lightweight general-purpose I
 
 ::: zone pivot="macos"
 
-4. In either Extensions panel, or in the main panel, select **Install**.
+1. In either the Extensions panel, or in the main panel, select **Install**.
 
     :::image type="content" source="../media/visual-studio-code-extensions-install.png" alt-text="Screenshot of the search results in the Extensions panel for macOS with Python Install highlighted.":::
 
