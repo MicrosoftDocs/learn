@@ -1,6 +1,6 @@
 ## Debugging tips and tricks
 
-Once you are comfortable debugging in Visual Studio, there are many different tips and tricks that can speed up your debugging workflows. Listed below are useful features and shortcuts to improve your productivity.
+Once you are comfortable debugging in Visual Studio, there are many different tips and tricks that can speed up your debugging workflows. Listed below are useful features to improve your productivity.
 
 1. You can right-click in the breakpoint gutter area to set advanced breakpoints more quickly.
 
