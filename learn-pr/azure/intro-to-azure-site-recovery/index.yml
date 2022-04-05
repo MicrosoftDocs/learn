@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-site-recovery
 metadata:
-  title: TBD
+  title: Introduction to Azure Site Recovery
   description: TBD
   ms.date: 04/05/2022
   author: orin-thomas
@@ -18,13 +18,14 @@ abstract: |
 prerequisites: |
   - Understanding of basic networking concepts
   - Understanding of basic high availability and disaster recovery concepts
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/intro-to-azure-site-recovery.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - azure
+- azure-site-recovery
 units:
 - learn.intro-to-azure-site-recovery.introduction
 - learn.intro-to-azure-site-recovery.what-is-azure-site-recovery
