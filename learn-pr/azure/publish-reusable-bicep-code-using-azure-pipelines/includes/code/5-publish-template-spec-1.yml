@@ -1,14 +1,13 @@
-name: 'publish-template-spec-1'
+trigger:
+  batch: true
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - 'template-spec-1/**'
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'template-spec-1/**'
-
-jobs:
-  publish:
-    uses: ./.github/workflows/publish-template-spec.yml
-    with:
-      path: 'template-spec-1/main.bicep'
+stages:
+- template: pipeline-templates/publish-template-spec.yml
+  parameters:
+    path: 'template-spec-1/main.bicep'
