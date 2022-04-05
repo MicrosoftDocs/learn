@@ -20,10 +20,10 @@ For example, your toy company might have these environments:
 | Staging | TODO | Operations team | Long-lived | Controlled |
 | QA | TODO | Operations team | Long-lived | Controlled |
 | Test | TODO | Operations team | Long-lived | Controlled |
-| Development | Operations team | TODO | Long-lived | Controlled |
+| Development | TODO | Operations team | Long-lived | Controlled |
+| Demo | TODO | Sales team | Long-lived | Uncontrolled |
 | Performance testing | TODO | Test team | Short-lived | Uncontrolled |
 | Penetration testing | TODO | Security team | Short-lived | Uncontrolled |
-| Demo | TODO | Sales team | Long-lived | Uncontrolled |
 | Ephemeral PR reviews | TODO | Development team | Short-lived | Uncontrolled |
 | Development sandboxes | TODO | Development team | Short-lived | Uncontrolled |
 
