@@ -10,7 +10,7 @@ To meet these objectives, you'll:
 
 ## Get the GitHub repository
 
-Here you make sure that your GitHub repository is set up to complete the rest of this module. You set it up by creating a new repository based on a template repository. The template repository contains the files you need to get started for this module. 
+Here, you create a new GitHub repository based on a template repository. The template repository contains the files that you need to get started for this module. 
 
 The modules in this learning path are part of a progression. For learning purposes, each module has an associated GitHub template repository.
 
@@ -28,39 +28,39 @@ On the GitHub site, follow these steps to create a repository from the template:
 
 1. Select **Use this template**. 
 
-   :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
+   :::image type="content" source="../media/3-template.png" alt-text="Screenshot of the GitHub interface that shows the template repo, with the button for using the template highlighted.":::
 
-1. Enter a name for your new project, such as *toy-reusable*.
+1. Enter a name for your new project, such as **toy-reusable**.
 
 1. Select the **Public** option.
 
-   When you create your own repositories, you might want to make them private. In this module, you'll work with some features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
+   When you create your own repositories, you might want to make them private. In this module, you'll use features of GitHub that only work with public repositories and with GitHub Enterprise accounts.
 
 1. Select **Create repository from template**. 
 
-   :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface showing the repo creation page.":::
+   :::image type="content" source="../media/3-repo-settings.png" alt-text="Screenshot of the GitHub interface that shows the repo creation page.":::
 
 [!include[](../../includes/cleanup-steps.md)]
 
 ## Clone the repository
 
-You now have a copy of the template repository in your own account. You will now clone this repository locally so you can start work in it. 
+Now that you have a copy of the template repository in your own account, you'll clone this repository locally so you can start working in it. 
 
 1. Select **Code** and select the copy icon.
 
-   :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new repository, with the repository U R L copy button highlighted.":::
+   :::image type="content" source="../media/3-github-repository-clipboard.png" alt-text="Screenshot of the GitHub interface that shows the new repository, with the repository U R L copy button highlighted.":::
 
 1. Open Visual Studio Code. 
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
-1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toy-reusable_ folder, run the following command:
+1. In the terminal, go to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toy-reusable_ folder, run the following command:
 
    ```bash
    cd toy-reusable
    ```
 
-1. Type `git clone` and then paste the URL you copied earlier, which looks something like this:
+1. Type `git clone` and then paste the URL that you copied earlier, which looks something like this:
 
    ```bash
    git clone https://github.com/mygithubuser/toy-reusable.git
@@ -140,9 +140,9 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
    az group create --name ToyReusable --location westus
    ```
 
-1. Look at the JSON output from the command. It includes an `id` property, which is the resource group's ID.
+1. Look at the JSON output from the command. It includes an `id` property, which is the resource group ID.
 
-   Copy the resource group ID somewhere safe. You'll use it soon.
+   Copy this ID to somewhere safe. You'll use it soon.
 
 ::: zone-end
 
@@ -154,9 +154,9 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
    New-AzResourceGroup -Name ToyReusable -Location westus
    ```
 
-1. Look at the output from the command. It includes a `ResourceId`, which is the resource group's fully qualified ID.
+1. Look at the output from the command. It includes a `ResourceId` property, which is the fully qualified ID for the resource group.
 
-   Copy the resource group ID somewhere safe. You'll use it soon.
+   Copy this ID to somewhere safe. You'll use it soon.
 
 ::: zone-end
 
@@ -164,7 +164,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone pivot="cli"
 
-1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure CLI command in the Visual Studio Code terminal. Replace the `RESOURCE_GROUP_ID` placeholder with the resource group ID you copied in the last step.
+1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure CLI command in the Visual Studio Code terminal. Replace the `RESOURCE_GROUP_ID` placeholder with the resource group ID that you copied in the last step.
 
    ```azurecli
    az ad sp create-for-rbac \
@@ -193,13 +193,13 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
    }
    ```
 
-   Copy the entire output somewhere safe, including the curly braces. You'll use it soon. 
+   Copy the entire output to somewhere safe, including the curly braces. You'll use it soon. 
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure PowerShell code in the Visual Studio Code terminal. Replace the `RESOURCE_GROUP_ID` placeholder with the resource group ID you copied in the last step.
+1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure PowerShell code in the Visual Studio Code terminal. Replace the `RESOURCE_GROUP_ID` placeholder with the resource group ID that you copied in the last step.
 
    ```azurepowershell
    $resourceGroupId = 'RESOURCE_GROUP_ID'
@@ -230,7 +230,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
    }
    ```
 
-   Copy the entire output somewhere safe, including the curly braces. You'll use it soon.
+   Copy the entire output to somewhere safe, including the curly braces. You'll use it soon.
 
 ::: zone-end
 
@@ -238,18 +238,18 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 You've created a resource group and a service principal. Next, create a secret in GitHub Actions.
 
-1. In your browser, navigate to your GitHub repository.
+1. In your browser, go to your GitHub repository.
 
 1. Select **Settings** > **Secrets**.
 
 1. Select **New repository secret**.
 
-   :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface that shows the Secrets page, with the button for creating a repository secret highlighted." border="true":::
 
-1. Name the secret *AZURE_CREDENTIALS*.
+1. Name the secret **AZURE_CREDENTIALS**.
 
 1. In the **Value** field, paste the JSON object that you copied in the previous section.
 
 1. Select **Add secret**. 
 
-   :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface that shows the New Secret page, with the name and value completed and the button for adding a secret highlighted." border="true":::

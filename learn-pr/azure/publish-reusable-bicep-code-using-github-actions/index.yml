@@ -22,17 +22,17 @@ prerequisites: |
 
   - Bicep modules and module registries.
   - Azure template specs.
-  - The Bicep linter, and testing your Bicep code.
+  - The Bicep linter, along with testing your Bicep code.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
   - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
   - GitHub Actions, including jobs, steps, and secrets.
   
   To work through the exercises in the module, you'll need:
   
-  - An Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
+  - An Azure account that has the ability to create resource groups, Azure Active Directory applications, and service principals.
   - A GitHub account.
   
-  You'll also need the following installed locally:
+  You'll also need the following items installed locally:
   
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
