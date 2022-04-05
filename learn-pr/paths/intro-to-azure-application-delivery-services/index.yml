@@ -24,10 +24,10 @@ roles:
 products:
 - azure
 modules:
-- learn.intro-to-azure-front-door
 - learn.azure.intro-to-azure-load-balancer
-- introduction-azure-web-application-firewall
-- learn.azure.intro-to-azure-application-gateway
 - learn.distribute-load-with-traffic-manager
+- learn.azure.intro-to-azure-application-gateway
+- learn.intro-to-azure-front-door
+- introduction-azure-web-application-firewall
 trophy:
   uid: learn.intro-to-azure-application-delivery-services.trophy
