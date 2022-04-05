@@ -1,18 +1,19 @@
-You'll troubleshoot a site-to-site connection problem in a later exercise. Use the following instructions and the Azure Cloud Shell on the right of the screen to create the environment for this exercise.
-
-> [!NOTE]
-> The resource group <rgn>[sandbox resource group name]</rgn> has been created automatically. Use this as your resource group name. You won't have permission to create additional resource groups in the sandbox.
-
+You'll troubleshoot a virtual machine connection problem in a later exercise. Use the following instructions and the Azure Cloud Shell on the right of the screen to create the environmente.
 
 ## Create the exercise environment
 
  Use the Cloud Shell on the right run these commands to create the example topology.
 
-1. Enter this Azure CLI command:
+1. Copy and paste this command on the right to clone the setup script from GitHub.
 
-    ```azurecli
-    az deployment group create \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --template-uri "https://raw.githubusercontent.com/MicrosoftDocs/mslearn-troubleshoot-network-security-issues/main/arm-lab.json"
-    ```
+     ```bash
+     git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-network-security-issues networking
+     ```
+
+1. Run the setup script with this command.
+
+     ```bash
+     bash networking/setup.sh
+     ```
+
 1. You can continue to the next unit as this command runs in the background.
