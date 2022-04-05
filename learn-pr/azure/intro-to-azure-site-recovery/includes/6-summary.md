@@ -2,7 +2,7 @@ In this module, you learned how Azure Site Recovery can orchestrate and automate
 
 ## Learn more
 
-- [About Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
-- [General questions about Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-faq)
-- [Protect your Azure infrastructure with Azure Site Recovery](https://docs.microsoft.com/learn/modules/protect-infrastructure-with-site-recovery/
-- [Protect your on-premises infrastructure from disasters with Azure Site Recovery](https://docs.microsoft.com/learn/modules/protect-on-premises-infrastructure-with-azure-site-recovery/)
+- [About Site Recovery](/azure/site-recovery/site-recovery-overview)
+- [General questions about Azure Site Recovery](/azure/site-recovery/site-recovery-faq)
+- [Protect your Azure infrastructure with Azure Site Recovery](/learn/modules/protect-infrastructure-with-site-recovery/
+- [Protect your on-premises infrastructure from disasters with Azure Site Recovery](/learn/modules/protect-on-premises-infrastructure-with-azure-site-recovery/)

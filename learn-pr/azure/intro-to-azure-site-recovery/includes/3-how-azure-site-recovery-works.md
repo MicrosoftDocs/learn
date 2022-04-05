@@ -10,7 +10,7 @@ If the primary location has an issue, Azure Site Recovery can replicate protecte
 
 Replication is the process of continuously transferring the state of the protected workloads from the primary location or region to the secondary location. Replication from on-premises to Azure occurs across a TLS 1.2 connection on the public internet. 
 
-![](../media/image3.png)
+![TBD](../media/image3.png)
 
 You cannot configure replication over Azure VPN; however, you can configure replication over Azure ExpressRoute under the following conditions:
 
