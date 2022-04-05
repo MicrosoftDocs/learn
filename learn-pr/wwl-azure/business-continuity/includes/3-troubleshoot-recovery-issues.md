@@ -99,19 +99,24 @@ It is good practice to proactively monitor the process server when restoring dat
 
 The following graphic summarizes the steps to troubleshoot a backup recovery:
 
-1. Are all services running?
-
-1. Is the CPU state OK?
-
-1. Is the memory state OK?
-
-1. Is cache free space OK?
-
-1. Does the process server have a heartbeat?
-
-1. Troubleshoot connection/replication issues.
-
-:::image type="content" source="../media/3-steps-backup-recovery.png" alt-text="Screenshot of steps to troubleshoot a backup recovery.":::
+:::row:::
+    :::column span="2":::
+        1. Are all services running?
+        
+        1. Is the CPU state OK?
+        
+        1. Is the memory state OK?
+        
+        1. Is cache free space OK?
+        
+        1. Does the process server have a heartbeat?
+        
+        1. Troubleshoot connection/replication issues.
+    :::column-end:::
+    :::column:::
+       :::image type="content" source="../media/3-steps-backup-recovery.png" alt-text="Screenshot of steps to troubleshoot a backup recovery." lightbox="../media/3-steps-backup-recovery.png"::: 
+    :::column-end:::
+:::row-end:::
 
 ## Troubleshoot restore issues from Microsoft Azure Backup Server (MABS)
 
