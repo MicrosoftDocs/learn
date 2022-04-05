@@ -2,7 +2,7 @@ ExpressRoute works over a private fiber-optic connection to provide a faster con
 
 The following diagram shows connectivity between your network (Customer network) and Azure (Microsoft Datacenter):
 
-:::image type="content" source="../media/3-connectivity.png" alt-text="connectivity between your network (Customer network) and Azure (Microsoft Datacenter)."  border="false" lightbox="../media/3-connectivity.png":::
+:::image type="content" source="../media/3-connectivity.png" alt-text="Screenshot showing connectivity between your network (Customer network) and Azure (Microsoft Datacenter)."  border="false" lightbox="../media/3-connectivity.png":::
 
 
 
@@ -99,15 +99,15 @@ When you create your virtual network gateway, gateway VMs are deployed to the ga
 
 In the Azure portal, view existing ExpressRoute circuits by selecting **All services** > **Networking** > **ExpressRoute** circuits from the left menu.
 
-:::image type="content" source="../media/3-expressroute-circuits.png" alt-text="Screenshot of Expressroute circuits settings" lightbox="../media/3-expressroute-circuits.png":::
+:::image type="content" source="../media/3-expressroute-circuits.png" alt-text="Screenshot of Expressroute circuits settings." lightbox="../media/3-expressroute-circuits.png":::
 
 All ExpressRoute circuits created in the subscription will appear here.
 
-:::image type="content" source="../media/3-expressroute-circuit-list.png" alt-text="Screenshot of Expressroute circuits list":::
+:::image type="content" source="../media/3-expressroute-circuit-list.png" alt-text="Screenshot of Expressroute circuits list.":::
 
 To make the circuit operational, you must send the service key to the service provider. Each service key is specific to one circuit. Select the relevant circuit, and on the **Overview** page find the service key field for your provider.
 
-:::image type="content" source="../media/3-service-key-field.png" alt-text="Screenshot of service key field":::
+:::image type="content" source="../media/3-service-key-field.png" alt-text="Screenshot of service key field.":::
 
 The **Provider status** displays the state of provisioning on the service-provider side.
 
@@ -146,7 +146,7 @@ The peerings are configured by your service provider. If the peering in the port
 
 The status of an ExpressRoute circuit peering can be checked in the Azure portal, on the ExpressRoute Circuit **Overview** page. Any ExpressRoute peerings are displayed under the **Peerings** section.
 
-:::image type="content" source="../media/3-peerings.png" alt-text="Screenshot of Expressroute peerings" lightbox="../media/3-peerings.png":::
+:::image type="content" source="../media/3-peerings.png" alt-text="Screenshot of Expressroute peerings." lightbox="../media/3-peerings.png":::
 
 In the screenshot above, Azure private peering is provisioned, but Azure public and Microsoft peerings are not. A successfully provisioned peering would also have the primary and secondary point-to-point subnets listed. 
 
@@ -201,17 +201,18 @@ You can validate that routes are live and configurated correctly by testing peer
 
 Example:
 
+```bash
 src 10.0.0.0 dst 20.0.0.0 dstport 3389 (received): 120 matches
-
 src 20.0.0.0 srcport 3389 dst 10.0.0.0 (sent): 120 matches
+```
 
 This test result has the following properties:
 
-- IP Port: 3389
+- IP Port: **3389**
 
-- On-premises IP Address CIDR: 10.0.0.0
+- On-premises IP Address CIDR: **10.0.0.0**
 
-- Azure IP Address CIDR: 20.0.0.0
+- Azure IP Address CIDR: **20.0.0.0**
 
 ## Reset an ExpressRoute circuit
 
@@ -224,7 +225,7 @@ When an operation on an ExpressRoute circuit doesn't complete successfully, the 
 
    ```
 
-1. If you have multiple Azure subscriptions, check the subscriptions for the account.
+1. If you've multiple Azure subscriptions, check the subscriptions for the account.
 
    ```powershell
    Get-AzSubscription
@@ -251,11 +252,11 @@ The circuit should now be reset.
 
 ## Troubleshoot asymmetric routing issues
 
-Asymmetric routing is when the return network traffic takes a different path from the original outgoing flow. For example, if you have an internet path and a private path that goes to the same destination. It also happens when you have multiple private paths connected to the same destination.
+Asymmetric routing is when the return network traffic takes a different path from the original outgoing flow. For example, if you've an internet path and a private path that goes to the same destination. It also happens when you've multiple private paths connected to the same destination.
 
 Traceroute is the best way to make sure that your network traffic is traversing the expected path.
 
-When you connect through Azure ExpressRoute, you have multiple links to Microsoft. You have your existing internet connection, and the ExpressRoute connection. Traffic destined for Microsoft might go through the internet connection but return through the ExpressRoute connection. Alternatively, traffic could go through ExpressRoute but return over the internet path.
+When you connect through Azure ExpressRoute, you've multiple links to Microsoft. You have your existing internet connection, and the ExpressRoute connection. Traffic destined for Microsoft might go through the internet connection but return through the ExpressRoute connection. Alternatively, traffic could go through ExpressRoute but return over the internet path.
 
 You receive more specific IP addresses from the ExpressRoute circuit. So, when traffic from your network goes to Microsoft for services offered through ExpressRoute, traffic will be routed to the ExpressRoute connection.
 
@@ -287,9 +288,19 @@ Create a filter rule:
 
   :::image type="content" source="../media/3-manage-rule.png" alt-text="Screenshot of Manage rule tab." lightbox="../media/3-manage-rule.png":::
 
-- From the dropdown list, select the allowed service communities you want to connect to. Save the rule when you have finished.
+- From the dropdown list, select the allowed service communities you want to connect to. Save the rule when you've finished.
 
-  :::image type="content" source="../media/3-rule-settings.png" alt-text="Screenshot of Rule settings.":::
+:::row:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        :::image type="content" source="../media/3-rule-settings.png" alt-text="Screenshot of Rule settings." lightbox="../media/3-rule-settings.png":::
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+:::row-end:::
 
 ## Troubleshoot redundant configurations
 
@@ -358,9 +369,9 @@ The PowerShell output format looks similar to:
 
 If the performance test doesn't give the results you expected results, use a step-by-step process to resolve the issue.
 
-First, challenge your assumptions. If you have a 1Gbps ExpressRoute circuit and 100ms of latency, it's not reasonable to expect the full 1Gbps of traffic, given the characteristics of TCP over high latency links.
+First, challenge your assumptions. If you've a 1Gbps ExpressRoute circuit and 100ms of latency, it's not reasonable to expect the full 1Gbps of traffic, given the characteristics of TCP over high latency links.
 
-Second, start at the edges between routing domains to try to isolate the problem to a single major routing domain. You can start at the Corporate Network, the WAN, or the Azure Network. Make sure you have reasonable cause to contact your service provider or ISP, as this is outside your control. It could delay a fix that is under your control.
+Second, start at the edges between routing domains to try to isolate the problem to a single major routing domain. You can start at the Corporate Network, the WAN, or the Azure Network. Make sure you've reasonable cause to contact your service provider or ISP, as this is outside your control. It could delay a fix that is under your control.
 
 When you've identified the major routing domain that appears to contain the problem, create a diagram. Seeing the area in a diagram allows you to work methodically by planning points to test. Divide the network into segments to narrow down the problem and update the diagram as you get results.
 
