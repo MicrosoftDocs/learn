@@ -84,7 +84,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
    If **bash** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **bash**.
 
-   :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting a preferred terminal shell.":::
+   :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting a preferred terminal shell and bash selected.":::
 
 1. In the terminal, select the plus sign (**+**) to create a new terminal with Bash as the shell.
 
@@ -112,7 +112,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
    If **pwsh** or **PowerShell** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.
 
-   :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting your preferred terminal shell.":::
+   :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting your preferred terminal shell and pwsh selected.":::
 
 1. In the terminal, select the plus sign (**+**) to create a new terminal with pwsh or PowerShell as the shell.
 
@@ -186,7 +186,7 @@ Next, create a service connections in Azure Pipelines. This process automaticall
 
 1. In the **Service connection name** box, enter **ToyReusable**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
-   :::image type="content" source="../media/3-create-service-connection-principal-details-test.png" alt-text="Screenshot of Azure DevOps that shows the 'New Azure service connection' pane for the test environment, with the details completed and the 'Save' button highlighted.":::
+   :::image type="content" source="../media/3-create-service-connection-principal-details.png" alt-text="Screenshot of Azure DevOps that shows the 'New Azure service connection' pane, with the details completed and the 'Save' button highlighted.":::
 
    > [!TIP]
    > In this exercise, for simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
