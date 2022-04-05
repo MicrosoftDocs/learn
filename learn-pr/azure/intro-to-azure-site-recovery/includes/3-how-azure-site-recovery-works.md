@@ -16,7 +16,7 @@ You cannot configure replication over Azure VPN; however, you can configure repl
 
 - Azure Site Recovery replicates data to Azure Storage over a public endpoint. You need to set up Microsoft peering or use an existing public peering (deprecated for new circuits) to use ExpressRoute for Site Recovery replication.
 - Microsoft peering is the recommended routing domain for replication.
-- Replication is not supported over private peering.
+- Replication isn't supported over private peering.
 - If you're protecting VMware machines or physical machines, ensure that the networking requirements for Configuration Server are also met. Connectivity to specific URLs is required by Configuration Server for orchestration of Site Recovery replication. ExpressRoute cannot be used for this connectivity.
 - After the virtual machines are failed over to an Azure virtual network, you can access them using the private peering setup with the Azure virtual network.
 
@@ -90,7 +90,7 @@ Azure Site Recovery failover and failback can be quickly started using the Azure
 
 Failover isn't automatic when the primary location suffers an unexpected outage. You initiate failovers with single click in the portal, or you can use Azure Site Recovery PowerShell to trigger a failover. Failing back is a simple action in the Site Recovery portal.
 
-**Note**: Failback from Azure to an on-premises physical server is not currently supported, but it is possible to fail back a physical server replicated to Azure to a VMware virtual machine.
+**Note**: Failback from Azure to an on-premises physical server isn't currently supported, but it is possible to fail back a physical server replicated to Azure to a VMware virtual machine.
 
 **Note**: If the primary datacenter experiences an unexpected outage, you can trigger an unplanned failover from the secondary site. Site Recovery does not require connectivity from the primary site to perform the failover.
 
