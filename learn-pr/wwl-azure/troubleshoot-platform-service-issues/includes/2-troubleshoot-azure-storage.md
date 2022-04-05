@@ -6,7 +6,7 @@ You should aim to remove the need for retrospectively troubleshooting problems w
 
 To monitor your Storage services, you can use Azure Monitor for Storage accounts to view key Storage metrics for performance, capacity, and availability without any further configuration. Azure Monitor for Storage accounts provides a selection of dashboards and charts to give you detailed monitoring data for your Storage services. You can also enable storage metrics. The counters for storage metrics can be aggregated by hour or by minute and you can choose to display key metrics in the Azure portal. Storage metrics aren't in preview, but it does require configuration.
 
-:::image type="content" source="../media/2-storage-accounts.png" alt-text="Screenshot of Azure Monitor Storage account.":::
+:::image type="content" source="../media/2-storage-accounts.png" alt-text="Screenshot of Azure Monitor Storage account." lightbox="../media/2-storage-accounts.png":::
 
 For more information on troubleshooting Azure Storage, see [Monitor, diagnose, and troubleshoot Microsoft Azure Storage](/azure/storage/common/storage-monitoring-diagnosing-troubleshooting?tabs=dotnet).
 
