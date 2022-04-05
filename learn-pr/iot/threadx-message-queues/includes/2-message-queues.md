@@ -1,8 +1,8 @@
 ## Introduction
 
-The diagram below illustrates the activities of a message queue.
+The image below illustrates the typical activities of a message queue.
 
-:::image type="content" source="../media/message-queue-example.svg" alt-text="Illustration of a message queue example." border="false":::
+:::image type="content" source="../media/message-queue-example.svg" alt-text="Illustration of the activities of a message queue." border="false":::
 
 Message queues generally operate using a first-in, first-out protocol (FIFO). However, this protocol can be altered by a front-send feature for urgent messages as illustrated in the diagram below.
 
@@ -118,7 +118,7 @@ status = tx_queue_info_get(&my_queue, &queue_name, &enqueued, &available_storage
 
 Threads suspended on a message queue are stored in a suspension list in FIFO order based on when the thread was suspended. The priority of the thread doesn't matter after it's placed in the suspension list. However, ThreadX provides a method by which you can make certain that the highest priority thread in the suspension list gets to either read a message or send a message. The diagram below describes this action:
 
-:::image type="content" source="../media/prioritize-for-message-queue.svg" alt-text="Illustration of using prioritize for a message queue." border="false"::: 
+:::image type="content" source="../media/prioritize-for-message-queue.svg" alt-text="Illustration of using prioritize for a message queue." border="false":::
 
 In the diagram above, there's a thread with priority 5 that is fourth from the front of the suspension list, and there's a thread with priority 30 that is at the front of the suspension list. If the `Prioritize` service wasn't used, then the thread with priority 30 would be first thread to resume. However, if we use the `Prioritize` service, the thread with Priority 5 is inserted at the front of the suspension list, and then it will be the first thread to resume.
 
