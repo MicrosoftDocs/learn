@@ -1,4 +1,4 @@
-You work as a support engineer supporting Azure PaaS services. If there are connectivity issues, you should now be able to identify the cause of the issue quickly and accurately. Furthermore, where possible, you should be able to resolve the issue and re-establish connectivity.
+You work as a support engineer supporting Azure Platform as a Service (PaaS). If there are connectivity issues, you should now be able to identify the cause of the issue quickly and accurately. Furthermore, where possible, you should be able to resolve the issue and re-establish connectivity.
 
 Now that you've completed this module, you should be able to:
 
@@ -8,7 +8,7 @@ Now that you've completed this module, you should be able to:
 
 - Troubleshoot Content Delivery Network issues.
 
-- Troubleshoot connections between a VM and a PaaS service.
+- Troubleshoot connections between a virtual machine (VM) and a PaaS service.
 
 - Troubleshoot integration of PaaS services with virtual networks.
 
