@@ -2,11 +2,11 @@
 uid: learn.iot.azure-rtos-threadx
 metadata:
   title: Azure RTOS ThreadX
-  description: TBD
+  description: Learn about Real-time Operating System (RTOS), and Azure RTOS ThreadX
   brand: azure
-  ms.date: 02/27/2022
-  author: EdLamie
-  ms.author: pacorte
+  ms.date: 03/29/2022
+  author: edlamie80
+  ms.author: liydu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure RTOS ThreadX
@@ -36,5 +36,6 @@ modules:
 - learn.iot.threadx-message-queues
 - learn.iot.threadx-event-chain-suspend-objects
 - learn.iot.threadx-priority-inversion-solutions
+- learn.iot.threadx-next-steps
 trophy:
   uid: learn.iot.azure-rtos-threadx.trophy
