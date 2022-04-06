@@ -54,7 +54,7 @@ Workflow Automations are created directly in the Defender for Cloud portal.
 
 1. Scroll down to the **Templates** section and select **Security** from the Category dropdown list.
 
-1. Select **Get a notification email when Defender for Cloud detects a threat**, and then select **Use this template**. You can also select **Blank Logic App** if you wanted to create some custom logic to run in response to an alert, or if you don't have an M365-based email account.
+1. Select **Get a notification email when Defender for Cloud detects a threat**, and then select **Use this template**. You can also select **Blank Logic App** if you wanted to create some custom logic to run in response to an alert, or if you don't have a Microsoft 365-based email account.
 
     :::image type="content" source="../media/6-select-logic-app-security.png" alt-text="Screenshot that shows the security options from Logic apps.":::
 
