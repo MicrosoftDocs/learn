@@ -4,5 +4,5 @@ In this module you'll learn about the Service Trust Portal and resources it prov
 
 After completing this module, you'll be able to:
 
-- Describe the offerings of the Service Trust Portal
+- Describe the offerings of the Service Trust Portal.
 - Describe Microsoft’s privacy principles.

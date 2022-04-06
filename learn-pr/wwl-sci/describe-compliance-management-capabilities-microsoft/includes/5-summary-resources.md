@@ -2,7 +2,7 @@ In this module, you learned about the Microsoft Service Trust Portal and the var
 
 Now that you’ve completed this module, you should be able to:
 
-- Describe the offerings of the Service Trust Portal
+- Describe the offerings of the Service Trust Portal.
 - Describe Microsoft’s privacy principles.
 
 ## Learn more
