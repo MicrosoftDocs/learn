@@ -2,16 +2,16 @@ One of the driving forces that has enabled human civilization to develop is the 
 
 Artificial Intelligence (AI) can help simplify communication by translating text or speech between languages, helping to remove barriers to communication across countries and cultures.
 
-To test the capabilities of the Translation service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
+To test the capabilities of the Translator service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
 ## Create a *Cognitive Services* resource
 
-You can use the Translation service by creating either a **Translator** resource or a **Cognitive Services** resource.
+You can use the Translator service by creating either a **Translator** resource or a **Cognitive Services** resource.
 
 If you haven't already done so, create a **Cognitive Services** resource in your Azure subscription.
 
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
-2. Click the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
+2. Select the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
     - **Region**: *Choose any available region*:
@@ -24,7 +24,7 @@ If you haven't already done so, create a **Cognitive Services** resource in your
 
 ### Get the Key and Location for your Cognitive Services resource
 
-1. Wait for deployment to complete. Then go to your Cognitive Services resource, and on the **Overview** page, click the link to manage the keys for the service. You will need the endpoint and keys to connect to your Cognitive Services resource from client applications.
+1. Wait for deployment to complete. Then go to your Cognitive Services resource, and on the **Overview** page, select the link to manage the keys for the service. You will need the keys and location to connect to your Cognitive Services resource from client applications.
 
 2. View the **Keys and Endpoint** page for your resource. You will need the **location/region** and **key** to connect from client applications.
 
@@ -45,7 +45,7 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
     ![Create storage by clicking confirm.](../media/powershell-portal-guide-2.png)       
 
-4. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
+4. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
     
     ![How to find the left hand drop down menu to switch to PowerShell](../media/powershell-portal-guide-3.png) 
 
@@ -78,10 +78,7 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The editor containing code to use the Translator service](../media/translate-code.png)
 
-4. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_LOCATION** and **YOUR_KEY** placeholder values respectively.
-
-    > [!TIP]
-    > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
+4. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** and **YOUR_LOCATION** placeholder values respectively.
 
     After pasting the key and location values, the first lines of code should look similar to this:
 
@@ -95,6 +92,10 @@ Now that you have a custom model, you can run a simple client application that u
     The sample client application will use the Translator service to do several tasks:
     - Translate text from English into French, Italian, and Chinese. 
     - Translate audio from English into text in French 
+        - Use the video player below to hear the input audio the application will process:
+    
+        > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWORN0]
+    
     > [!NOTE]
     > A real application could accept the input from a microphone and send the response to a speaker, but in this simple example, we'll use pre-recorded input in an audio file.
 
@@ -105,7 +106,7 @@ Now that you have a custom model, you can run a simple client application that u
     ./translator.ps1
     ```
 
-7. Review the output. Did you see the translation from text in English to French, Italian, and Chinese?  Did you see the English audio translated text in French? 
+7. Review the output. Did you see the translation from text in English to French, Italian, and Chinese?  Did you see the English audio "hello" translated into text in French? 
 
 ## Learn more
 
