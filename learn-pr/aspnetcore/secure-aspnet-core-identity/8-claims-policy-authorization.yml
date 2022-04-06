@@ -3,7 +3,7 @@ uid: learn.secure-aspnet-core-identity.claims-policy-authorization
 title: Claims and policy-based authorization in ASP.NET Core
 metadata:
   title: Claims and policy-based authorization in ASP.NET Core
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Learn about claims and policy-based authorization in ASP.NET Core Identity.
   ms.date: 3/29/2022
   author: camsoper
   ms.author: casoper
