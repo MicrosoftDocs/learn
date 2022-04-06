@@ -22,7 +22,7 @@ iconUrl: /learn/achievements/intro-to-azure-site-recovery.svg
 levels:
 - beginner
 roles:
-- developer
+- administrator
 products:
 - azure
 - azure-site-recovery
