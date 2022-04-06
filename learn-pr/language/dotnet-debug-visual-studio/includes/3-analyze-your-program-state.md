@@ -110,7 +110,7 @@ That's where the Visual Studio **Call stack** window comes in handy. It filters 
 
 In the next unit, you'll walk through an exercise using the debugger to fix the bug in the Fibonacci code we saw previously.
 
-### Specify Debugger Settings
+### Specify debugger settings
 
 In Visual Studio, you can specify various settings for debugger behavior, including how variables are displayed, whether certain warnings are presented, how breakpoints are set, and how breaking affects running programs. You can also configure your project to build as a Debug or Release configuration.
 
