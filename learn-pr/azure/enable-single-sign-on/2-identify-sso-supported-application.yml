@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-single-sign-on.identify-sso-supported-application
+title: Identify an application that supports single sign-on
+metadata:
+  unitType: learning-content
+  title: Identify an application that supports single sign-on
+  description: "Identify an application that supports SAML-based single sign-on and add it from the application gallery to their Azure AD tenant."
+  ms.date: 3/23/2022
+  author: davidmu1
+  ms.author: davidmu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-identify-sso-supported-application.md)]
