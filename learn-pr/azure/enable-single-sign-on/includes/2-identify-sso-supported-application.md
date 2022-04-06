@@ -17,7 +17,7 @@ To access the Azure AD tenant and add an enterprise application, sign in to the 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
 1. Open the portal, select **Identity**, and then select **Azure Active Directory**.
 
-    :::image type="content" source="/media/select-azure-ad.png" alt-text="Screenshot showing where to find Azure Active Directory in the Azure portal." border="false":::
+    :::image type="content" source="../media/select-azure-ad.png" alt-text="Screenshot showing where to find Azure Active Directory in the Azure portal." border="false":::
 
 ### Access the application gallery
 
@@ -26,7 +26,7 @@ The Azure AD application gallery is accessed through the **Enterprise applicatio
 1. On the **Azure Active Directory** blade, under **Manage**, select **Enterprise applications**.
 1. In the **Enterprise applications** pane, select **All applications** and then select **+ New application**.
 
-    :::image type="content" source="/media/new-application.png" alt-text="Screenshot showing browsing to the enterprise applications pane." border="true":::
+    :::image type="content" source="../media/new-application.png" alt-text="Screenshot showing browsing to the enterprise applications pane." border="true":::
 
 ## Search for and add the requested application
 
@@ -42,12 +42,12 @@ Federated single sign-on support can be identified by looking for the **Federate
 
 1. In the **Search application** box, enter **Azure AD SAML Toolkit**, and then select the application in the list.
 
-    :::image type="content" source="/media/add-application.png" alt-text="Screenshot showing the addition of a new enterprise application." border="true":::
+    :::image type="content" source="../media/add-application.png" alt-text="Screenshot showing the addition of a new enterprise application." border="true":::
 
 1. In the application overview pane that appears, enter a name for the application.
 1. Select **Create**
 
-    :::image type="content" source="/media/create-application.png" alt-text="Screenshot showing the overview and creation of a new enterprise application." border="true":::
+    :::image type="content" source="../media/create-application.png" alt-text="Screenshot showing the overview and creation of a new enterprise application." border="true":::
 
 ## Assign a user account to the application
 
@@ -56,7 +56,7 @@ To test single sign-on for the application, assign a user account account to it.
 1. On the **Azure AD SAML Toolkit** blade, on the **Overview** pane, under **Getting Started**, select **1. Assign users and groups**. Alternatively, in the left menu, under **Manage**, select **Users and groups**.
 1. On the **Users and groups** pane, on the menu, select **+Add user/group**.
 
-    :::image type="content" source="/media/add-user-account.png" alt-text="Screenshot showing the assignment of a user account to an enterprise application." border="true":::
+    :::image type="content" source="../media/add-user-account.png" alt-text="Screenshot showing the assignment of a user account to an enterprise application." border="true":::
 
 1. On the **Add Assignment** blade, under **Users and groups**, select **None Selected**.
 1. In the **Users and groups** pane, select the administrator account and then click **Select**.

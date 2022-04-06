@@ -10,7 +10,7 @@ You realize that this addition causes users to sign in to yet another applicatio
 
 For single sign-on, a combination of tasks are required both in the Azure portal and at the application host. User accounts need to exist in both locations, a certificate is created, and URLs must be shared between both for a trusted relationship. Testing single sign-on is very important before introducing the feature to the employees.
 
-:::image type="content" source="/media/sso-flow.png" alt-text="Diagram showing the flow of single sign-on configuration." border="false":::
+:::image type="content" source="../media/sso-flow.png" alt-text="Diagram showing the flow of single sign-on configuration." border="false":::
 
 ## What is the main goal?
 
