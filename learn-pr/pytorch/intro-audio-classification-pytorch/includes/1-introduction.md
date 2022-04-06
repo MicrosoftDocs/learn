@@ -2,7 +2,7 @@ Have you ever wondered how the voice assistants we use everyday works? How do th
 
 However, how about when a dog barks or a cat meows? These sounds can't be converted into text.
                          
-![variety of sounds](/images/1-introduction-1.png)
+![variety of sounds](..\images\1-introduction-1.png)
 
 In this module, we'll look at how to extract sound wave patterns from an audio of spoken words. Audio classification is useful for many things, not just speech assistants. There are various sound sources that an application needs to recognize.  For example, you can classify music genres or detect illness by the tone in someone's voice. There are even more applications that we haven't even thought of yet.
 
