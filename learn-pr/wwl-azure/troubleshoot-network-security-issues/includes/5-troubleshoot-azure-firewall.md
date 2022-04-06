@@ -142,7 +142,7 @@ The following [Tutorial: Filter inbound Internet traffic with Azure Firewall DNA
 
 Azure Firewall Destination Network Address Translation (DNAT) translates and filters inbound internet traffic to your subnets. It allows or denies inbound traffic through the firewall public IP address(es). A DNAT rule translates a public IP address into a private IP address.
 
-It’s recommended to add a specific internet source to allow DNAT access to the network and avoid using wildcards for security reasons.
+It's recommended to add a specific internet source to allow DNAT access to the network and avoid using wildcards for security reasons.
 
 ## Troubleshoot network-level protection issues including firewalls
 
@@ -154,7 +154,7 @@ Adding security layers to the virtual machine (VM) networks protects inbound and
 
 Network rules are applied in priority order before application rules. This means if a match is found in a network rule, no other rules are processed. IDPS may alert and/or block suspicious traffic.
 
-In case there’s no network rule match, and if the protocol is HTTP, HTTPS, or MSSQL, the packet is then evaluated by the application rules in priority order.
+In case there's no network rule match, and if the protocol is HTTP, HTTPS, or MSSQL, the packet is then evaluated by the application rules in priority order.
 
 For HTTP, Azure Firewall looks for an application rule match according to the host header. For HTTPS, Azure Firewall looks for an application rule match according to SNI only.
 
@@ -176,10 +176,10 @@ To view the results of some of the rule combinations, refer to [Azure Firewall r
 
 Azure Firewall Manager is a security management service. You can use it to create secured virtual hubs to secure cloud network traffic destined for private IP addresses, Azure PaaS, and the internet.
 
-:::image type="content" source="../media/3-application-security-groups.png" alt-text="Diagram demonstration Application security groups.":::
 
-
-![Diagram showing secured virtual hub using Azure Firewall Manager](../media/4-azure-firewall-manager.png)
+| Secured virtual hub  |
+|:---------:|
+|:::image type="content" source="../media/4-azure-firewall-manager.png" alt-text="Diagram showing secured virtual hub using Azure Firewall Manager." border="false":::|
 
 The following [Tutorial: Secure your virtual hub using Azure Firewall Manager](/azure/firewall-manager/secure-cloud-network) can help you learn how to:
 
