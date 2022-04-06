@@ -31,7 +31,6 @@ products:
 units:
 - learn.enable-single-sign-on.introduction
 - learn.enable-single-sign-on.identify-sso-supported-application
-- learn.enable-single-sign-on.exercise-add-sso-supported-application
 - learn.enable-single-sign-on.identify-application-sso-properties
 - learn.enable-single-sign-on.exercise-configure-sso-azure-portal
 - learn.enable-single-sign-on.discover-sso-configuration-application-host
