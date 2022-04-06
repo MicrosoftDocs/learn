@@ -100,7 +100,7 @@ Now, you can add a second stage to publish the module to your container registry
 
 1. Verify that your *storage_account_module.yml* file looks like the following example:
 
-   :::code language="yaml" source="code/6-pipeline.yml" highight="16, 27-58" :::
+   :::code language="yaml" source="code/6-pipeline.yml" highlight="16, 27-58" :::
 
    If it doesn't, update it to match this example, and then save it.
 
