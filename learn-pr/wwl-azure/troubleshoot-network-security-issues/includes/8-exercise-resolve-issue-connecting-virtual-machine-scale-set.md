@@ -2,26 +2,23 @@ After investigating the connection issues to your website, you've found an issue
 
 In this exercise, you'll resolve the issue and check that the website can now be accessed.
 
-> [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
-
 ## Validate load balancer rules
 
-1. In the Azure portal, search for **load balancers**, and then under **Services**, click **Load balancers**.
+1. In the Azure portal, search for **load balancers**, and then under **Services**, select **Load balancers**.
 
    :::image type="content" source="../media/7-load-balancers.png" alt-text="A screenshot showing searching for load balancers." lightbox="../media/7-load-balancers.png":::
 
-1. Click the **myScaleSetLB** load balancer.
+1. Select the **myScaleSetLB** load balancer.
 
-1. Under **Settings**, click **Load balancing rules**.
+1. Under **Settings**, select **Load balancing rules**.
 
-   :::image type="content" source="../media/7-load-balancer-rules.png" alt-text="A screenshot showing the load balancer rule highlighted." lightbox="../media/7-load-balancer-rules.png":::
+   :::image type="content" source="../media/6-load-balancing-rules.png" alt-text="A screenshot showing the load balancer rule highlighted." lightbox="../media/6-load-balancing-rules.png":::
 
-1. From the list of rules, click **myLoadBalancerRuleWeb**.
+1. From the list of rules, select **webLoadBalancerRule**.
 
-   :::image type="content" source="../media/7-my-load-balancer-rule-web.png" alt-text="A screenshot of the load balancer rule, showing the port set to 80 and backend port set to 443. This is the error.":::
+   :::image type="content" source="../media/7-my-load-balancer-rule-web.png" alt-text="A screenshot of the load balancer rule, showing the port set to 80 and backend port set to 443. This is the error." lightbox="../media/7-my-load-balancer-rule-web.png":::
 
-1. To resolve the backend issue, change the **Backend port** from **443** to **80**, and then click **Save**.
+1. To resolve the backend issue, change the **Backend port** from **443** to **80**, and then select **Save**.
 
     > [!NOTE]
     > The front and backend in this environment need to be the same to get a response from the webserver to http requests.
@@ -38,8 +35,8 @@ In this exercise, you'll resolve the issue and check that the website can now be
     > If you have closed the previous browser tab, run this command to get the public IP address:
     > ```
     > az network public-ip show \
-    > --resource-group cloud-shell-storage-westeurope \
-    > --name myScaleSetLBPublicIP \
+    > --resource-group <rgn>[sandbox resource group name]</rgn> \
+    > --name webPublicIP \
     > --query '[ipAddress]' \
     > --output tsv
     > ```
