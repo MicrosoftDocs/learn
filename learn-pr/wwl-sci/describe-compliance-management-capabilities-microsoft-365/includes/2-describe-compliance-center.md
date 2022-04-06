@@ -14,7 +14,7 @@ The default compliance center home page contains several cards including:
 
 - The **Compliance Manager** card. This card leads you to the Compliance Manager solution. Compliance Manager helps simplify the way you manage compliance. It calculates a risk-based compliance score that measures progress toward completing recommended actions to reduce risks associated with data protection and regulatory standards. The Compliance Manager solution also provides workflow capabilities and built-in control mapping to help you efficiently carry out improvement actions.
 
-  :::image type="content" source="../media/3-compliance-score-card-inline.png" lightbox="../media/3-compliance-score-card-expanded.png" alt-text="The compliance score card":::
+  :::image type="content" source="../media/3-compliance-scorecard-inline.png" lightbox="../media/3-compliance-scorecard-expanded.png" alt-text="The compliance score card":::
 
 - The **Solution catalog** card, links to collections of integrated solutions to help you manage end-to-end compliance scenarios. Solutions areas included:
   - **Information protection & governance**.  These solutions help organizations classify, protect, and retain your data where it lives and wherever it goes. Included are data loss prevention, information governance, information protection, and records management.
