@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools
+metadata:
+  title: Create a labeled dataset using Azure Machine Learning data labeling tools
+  description: Create a labeled dataset using Azure Machine Learning data labeling tools.
+  ms.date: 03/14/2022
+  author: toolboc
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a labeled dataset using Azure Machine Learning data labeling tools
+summary: Learn how to use Azure Machine Learning data labeling to create, manage, and monitor data labeling projects.
+abstract: |
+  In this module, you'll learn how to:
+  - Create a Dataset of labeled images retrieved from an attached Datastore
+  - Coordinate data, labels, and team members to efficiently manage and process labeling tasks
+  - Track progress and maintain a queue of incomplete labeling tasks
+  - Review labeled data and export as an Azure Machine Learning Dataset
+prerequisites: |
+  - [Azure Free Trial Account](https://azure.microsoft.com/free/)
+iconUrl: /learn/achievements/setup-configure-nvidia-deepstream-development.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+products:
+- azure
+- azure-machine-learning
+units:
+- learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.introduction
+- learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.create-azure-machine-learning-data-labeling-project
+- learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.label-images-azure-machine-learning-data-labeling-tools
+- learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.export-labeled-azure-machine-learning-dataset
+- learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.knowledge-check
+- learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.summary
+badge:
+  uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.badge
