@@ -62,11 +62,15 @@ Azure Database for MariaDB delivers:
 
 Some features of on-premises PostgreSQL databases aren't available in Azure Database for PostgreSQL. These features are mostly concerned with the extensions that users can add to a database to perform specialized tasks, such as writing stored procedures in various programming languages (other than pgsql, which is available), and interacting directly with the operating system. A core set of the most frequently used extensions is supported, and the list of available extensions is under continuous review.
 
-Azure Database for PostgreSQL has two deployment options: Single-server and Hyperscale.
+Azure Database for PostgreSQL has three deployment options: Single Server, Flexible Server, and Hyperscale.
 
-### Azure Database for PostgreSQL single-server
+### Azure Database for PostgreSQL Single Server
 
 The single-server deployment option for PostgreSQL provides similar benefits as Azure Database for MySQL. You choose from three pricing tiers: Basic, General Purpose, and Memory Optimized. Each tier supports different numbers of CPUs, memory, and storage sizes—you select one based on the load you expect to support.
+
+### Azure Database for PostgreSQL Flexible Server
+
+The flexible-server deployment option for PostgreSQL is a fully managed database service. It provides more control and server configuration customizations, and has better cost optimization controls. 
 
 ### Azure Database for PostgreSQL Hyperscale (Citus)
 
