@@ -3,9 +3,7 @@ uid: learn.languages.python-install-vscode
 metadata:
   title: Get started with Python in Visual Studio Code
   description: Get started with learning Python by installing and configuring the tools you'll need to build real applications.
-
   ms.date: 04/05/2022
-
   author: rjmolyneaux
   ms.author: rmolyneaux
   ms.topic: interactive-tutorial
