@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing.exercise
+title: 'Exercise: Troubleshoot routing, traffic control and load balancing issues'
+metadata:
+  title: 'Exercise: Troubleshoot routing, traffic control and load balancing issues'
+  description: "Exercise: Troubleshoot routing, traffic control and load balancing issues"
+  ms.date: 03/31/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-exercise-troubleshoot-issue-with-load-balancer.md)]
+interactive: bash

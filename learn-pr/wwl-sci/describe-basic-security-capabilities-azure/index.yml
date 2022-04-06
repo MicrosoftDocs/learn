@@ -3,7 +3,7 @@ uid: learn.wwl.describe-basic-security-capabilities-azure
 metadata:
   title: Describe basic security capabilities in Azure
   description: "Describe basic security capabilities in Azure"
-  ms.date: 01/19/2022
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -29,11 +29,12 @@ products:
 - azure
 units:
 - learn.wwl.describe-basic-security-capabilities-azure.introduction
-- learn.wwl.describe-basic-security-capabilities-azure.describe-azure-network-security-groups
 - learn.wwl.describe-basic-security-capabilities-azure.describe-azure-ddos-protection
 - learn.wwl.describe-basic-security-capabilities-azure.describe-what-is-azure-firewall
-- learn.wwl.describe-basic-security-capabilities-azure.describe-what-is-azure-bastion
 - learn.wwl.describe-basic-security-capabilities-azure.describe-what-is-web-application-firewall
+- learn.wwl.describe-basic-security-capabilities-azure.describe-network-segmentation
+- learn.wwl.describe-basic-security-capabilities-azure.describe-azure-network-security-groups
+- learn.wwl.describe-basic-security-capabilities-azure.describe-what-is-azure-bastion
 - learn.wwl.describe-basic-security-capabilities-azure.describe-ways-azure-encrypts-data
 - learn.wwl.describe-basic-security-capabilities-azure.knowledge-check
 - learn.wwl.describe-basic-security-capabilities-azure.summary-resources

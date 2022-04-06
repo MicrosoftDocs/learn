@@ -12225,6 +12225,121 @@
       "source_path": "learn-pr/paths/explore-conversational-ai/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-faq-chatbot-qna-maker-azure-bot-service/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/use-resource-group.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/exercise-use-resource-group.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/create-app-service-resource.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/exercise-create-app-service-resource.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/deploy-expressjs-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/exercise-deploy-expressjs-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/use-app-review-logs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/exercise-use-app-review-logs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-developer/javascript-deploy-expressjs-app-service/summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/javascript-deploy-expressjs-app-service//",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-identity-principles-concepts/2-describe-common-identity-attacks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-identity-principles-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-identity-principles-concepts/4-describe-modern-authentication-role-identity-provider.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-identity-principles-concepts/4-describe-role-identity-provider",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-identity-principles-concepts/5-describe-concept-federated-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-identity-principles-concepts/6-describe-concept-federation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-identity-principles-concepts/6-describe-concept-of-directory-services-active-directory.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-identity-principles-concepts/5-describe-concept-of-directory-services-active-directory",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-basic-security-capabilities-azure/3-describe-azure-ddos-protection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-basic-security-capabilities-azure/2-describe-azure-ddos-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-basic-security-capabilities-azure/4-describe-what-azure-firewall.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-basic-security-capabilities-azure/3-describe-what-azure-firewall",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-basic-security-capabilities-azure/2-describe-azure-network-security-groups.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-basic-security-capabilities-azure/6-describe-azure-network-security-groups",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-basic-security-capabilities-azure/5-describe-what-azure-bastion.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-basic-security-capabilities-azure/7-describe-azure-bastion-just-in-time-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-basic-security-capabilities-azure/7-describe-ways-azure-encrypts-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-basic-security-capabilities-azure/8-describe-ways-azure-encrypts-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-basic-security-capabilities-azure/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-basic-security-capabilities-azure/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-basic-security-capabilities-azure/9-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-basic-security-capabilities-azure/10-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
