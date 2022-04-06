@@ -11,7 +11,7 @@ You can use the Translator service by creating either a **Translator** resource 
 If you haven't already done so, create a **Cognitive Services** resource in your Azure subscription.
 
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
-2. Click the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
+2. Select the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
     - **Region**: *Choose any available region*:
@@ -24,7 +24,7 @@ If you haven't already done so, create a **Cognitive Services** resource in your
 
 ### Get the Key and Location for your Cognitive Services resource
 
-1. Wait for deployment to complete. Then go to your Cognitive Services resource, and on the **Overview** page, click the link to manage the keys for the service. You will need the keys and location to connect to your Cognitive Services resource from client applications.
+1. Wait for deployment to complete. Then go to your Cognitive Services resource, and on the **Overview** page, select the link to manage the keys for the service. You will need the keys and location to connect to your Cognitive Services resource from client applications.
 
 2. View the **Keys and Endpoint** page for your resource. You will need the **location/region** and **key** to connect from client applications.
 
@@ -45,7 +45,7 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
     ![Create storage by clicking confirm.](../media/powershell-portal-guide-2.png)       
 
-4. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
+4. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
     
     ![How to find the left hand drop down menu to switch to PowerShell](../media/powershell-portal-guide-3.png) 
 
