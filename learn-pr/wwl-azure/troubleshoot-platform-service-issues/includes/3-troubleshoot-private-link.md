@@ -1,4 +1,4 @@
-Connectivity between your private network and an Azure PaaS service could be blocked by a misconfigured private link or misconfigured firewall.
+Connectivity between your private network and an Azure Platform as a Service (PaaS) could be blocked by a misconfigured private link or misconfigured firewall.
 
 ## Troubleshoot Azure Private Link connectivity problems
 
@@ -25,7 +25,7 @@ az network vnet subnet update \
 
 ### Connectivity troubleshooting
 
-- Browse [Private Link Center](https://portal.azure.com/) in the Azure portal.
+In your browser navigate to the [Private Link Center](https://portal.azure.com/) in the Azure portal.
 
    :::image type="content" source="../media/3-private-endpoints.png" alt-text="Screenshot of Private endpoints.":::
 
@@ -39,7 +39,7 @@ az network vnet subnet update \
 
 For more information on troubleshooting Azure Private Link connectivity problems, see [Troubleshoot Azure Private Link connectivity problems](/azure/private-link/troubleshoot-private-link-connectivity).
 
-## Troubleshoot firewalls for PaaS services
+## Troubleshoot firewalls for Platform as a Service (PaaS)
 
 Azure firewall is intended to filter network traffic to protect your resources. A misconfigured firewall can lead to legitimate traffic also being blocked.
 
