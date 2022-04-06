@@ -9,7 +9,7 @@ metadata:
   ms.author: yaschust
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Gain insights in your data by using Kusto Query Language
+title: Gain insights from your data by using Kusto Query Language
 summary: "Write advanced queries in Kusto Query Language to help you gain insights from your data. Use the aggregation functions `count`, `dcount`, `countif`, `sum`, `min`, `max`, `avg`, `percentiles`, and others. Communicate these results visually in charts."
 abstract: |
   By the end of this module, you'll be able to:
