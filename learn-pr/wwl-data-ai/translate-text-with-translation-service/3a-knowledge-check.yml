@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/08/2021
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -16,16 +16,16 @@ quiz:
   questions:
   - content: "You are developing an application that must take English input from a microphone and generate a real-time text-based transcription in Hindi. Which service should you use?"
     choices:
-    - content: "Translator Text"
+    - content: "Translator"
       isCorrect: false
-      explanation: "Incorrect. The Translator Text service can translate from a text source, but not from an audio source."
+      explanation: "Incorrect. The Translator service can translate from a text source, but not from an audio source."
     - content: "Speech"
       isCorrect: true
       explanation: "Correct. The Speech service can translate from audio sources to text."
-    - content: "Text Analytics"
+    - content: "Language"
       isCorrect: false
-      explanation: "Incorrect. The Text Analytics service does not support translation or speech input."
-  - content: "You need to use the Translator Text service to translate email messages from Spanish into both English and French. What is the most efficient way to accomplish this goal?"
+      explanation: "Incorrect. The Language service does not support translation or speech input."
+  - content: "You need to use the Translator service to translate email messages from Spanish into both English and French. What is the most efficient way to accomplish this goal?"
     choices:
     - content: "Make a single call to the service; specifying a \"from\" language of \"es\", a \"to\" language of \"en\", and another \"to\" language of \"fr\"."
       isCorrect: true

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-basic-security-capabilities-azure.describe-what-is-web-application-firewall
+title: Describe Web Application Firewall
+metadata:
+  title: Describe Web Application Firewall
+  description: "Describe Web Application Firewall"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-describe-web-application-firewall.md)]
