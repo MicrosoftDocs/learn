@@ -145,15 +145,15 @@ You'll now check the address spaces don't overlap for the two virtual networks.
 
 1. Select **Shared key**.
 
-:::row:::
-    :::column:::
-    :::column-end:::
-    :::column:::
-        :::image type="content" source="../media/5-shared-key.png" alt-text="Screenshot showing the Shared Key option.":::
-    :::column-end:::
-    :::column:::
-    :::column-end:::
-:::row-end:::
+   :::row:::
+       :::column:::
+       :::column-end:::
+       :::column:::
+           :::image type="content" source="../media/5-shared-key.png" alt-text="Screenshot showing the Shared Key option.":::
+       :::column-end:::
+       :::column:::
+       :::column-end:::
+   :::row-end:::
 
 1. Make a note of the **Shared key**.
 
