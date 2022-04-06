@@ -26,7 +26,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 ## Check the Load Balancer settings
 
-1. Navigate to the Azure portal in another browser tab.
+1. Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) in another browser tab.
 
 1. Search for **Load balancers**.
 
