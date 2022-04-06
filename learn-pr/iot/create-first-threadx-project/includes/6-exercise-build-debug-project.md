@@ -49,6 +49,4 @@ Using Activity 2 and the [Hello World scenario](https://docs.microsoft.com/learn
 
 :::image type="content" source="../media/figure-18-output-from-completed-project.png" alt-text="Image of completed output." border="false":::
 
-The first four lines of the initial and final output shown above are the same, but then they diverge. What caused these differences?
-
 Congratulations! You've completed your first ThreadX project. You should now investigate the module titled `Analyze thread behavior with timing facilities` because it logically follows this project.
