@@ -12,3 +12,9 @@ By automating the publishing of your reusable Bicep code, you can ensure that th
 ## More information
 
 - [Semantic versioning](https://semver.org)
+- Secure your pipeline's service principal
+  - [Principle of least privilege](/azure/active-directory/roles/best-practices#1-manage-to-least-privilege)
+  - [Azure Container Registry roles and permissions](/azure/container-registry/container-registry-roles)
+- [Bicep private registries for modules](/azure/azure-resource-manager/bicep/private-module-registry)
+  - [Aliases](/azure/azure-resource-manager/bicep/bicep-config-modules)
+- [Template specs](/azure/azure-resource-manager/templates/template-specs)

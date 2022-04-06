@@ -1,4 +1,4 @@
-Sometimes, your Bicep code isn't deployed directly. Instead, you might want it to be *reused* in multiple deployments. Azure template specs enable you to create reusable deployments for complete solutions. Bicep modules and registries enable you to create components that you can add to other Bicep deployments.
+Sometimes, your Bicep code isn't deployed directly to Azure. Instead, you might want it to be *reused* in multiple deployments. Azure template specs enable you to create reusable deployments for complete solutions. Bicep modules and registries enable you to create components that you can add to other Bicep deployments.
 
 Publishing reusable Bicep code comes with different concerns than normal Bicep deployments. In this Microsoft Learn module, you'll learn how to automate the validation and publishing of your template specs and Bicep modules.
 
