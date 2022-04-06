@@ -16,13 +16,13 @@ Workflow Automations are created directly in the Defender for Cloud portal.
     | Setting  |Value  |
     |---------|---------|
     | **General** |
-    |Name     | _RespondToMalwareAlert_      |
-    |Subscription     |_Concierge Subscription_     |
+    |Name     | *RespondToMalwareAlert*      |
+    |Subscription     |*Concierge Subscription*    |
     |Resource group     | <rgn>[Learn resource group]</rgn> |
     | **Trigger conditions** |
-   |Select Defender for Cloud data types     |  _Security alert_   |
-   |Alert name contains    | _Malware_      |
-   |Alert severity    |  _All severities selected_      |
+   |Select Defender for Cloud data types     |  *Security alert*   |
+   |Alert name contains    | *Malware*      |
+   |Alert severity    |  *All severities selected*     |
 
 1. Under **Actions** you can select an existing Azure Logic App, or create a new one. Since we don't have any yet, select the **visit the Logic Apps page** link to build a new Logic App.
 
@@ -35,10 +35,10 @@ Workflow Automations are created directly in the Defender for Cloud portal.
     | Setting  | Value  |
     |---------|---------|
     | **Project details** |
-    |Subscription     | _Concierge Subscription_     |
+    |Subscription     | *Concierge Subscription*     |
     |Resource group     | <rgn>[Learn resource group]</rgn> |
     | **Instance details** |
-    | Logic app name     | _RespondToMalwareAlert_      |
+    | Logic app name     | *RespondToMalwareAlert*      |
     | Plan type          | Consumption                  |
 
     Accept the default values for the rest of the fields.
@@ -63,9 +63,9 @@ Workflow Automations are created directly in the Defender for Cloud portal.
 
 1. Specify a target email address to send the notification to.
 
-1. On this screen, you can change the subject of the email as well as all the details that will be included.
+1. On this screen, you can change the subject of the email and any details that will be included.
 
-1. You can use the **+ New step** to create additional logic steps in the flow. In this case, we don't need any more. Select **Save** from the top menu bar.
+1. You can use the **+ New step** to create more logic steps in the flow. In this case, we don't need another step. Select **Save** from the top menu bar.
 
 1. Switch back to the Defender for Cloud pane, or tab and select **Refresh** to select your newly created Logic App.
 
@@ -89,11 +89,11 @@ In this case, in the Azure Sandbox, you likely don't have any alerts - so you ca
 
 1. Select **Home** from the left-corner sidebar. You should see your Logic App as a recently created resource. If not, try searching for it from the top search bar - recall the name is **RespondToMalwareAlert**.
 
-1. On the **Overview** pane, from the top menu bar, select **Run Trigger**.
+1. On the **Overview** pane, from the top menu bar, select the **Run Trigger** drop-down, and then select **Run**.
 
-    ![Screenshot showing the Run Trigger option in Azure Logic Apps.](../media/6-run-playbook-from-logic-apps.png)
+    :::image type="content" source="../media/6-run-trigger-playbook.png" alt-text="Screenshot that shows the Run Trigger option in Azure Logic Apps.":::
 
-1. A new entry will show up under the _Runs history_ tab in the Overview pane. You can select that entry to drill into details. For example, you can drill into the inputs and outputs of the run:
+1. A new entry will show up under the **Runs history** tab in the Overview pane. You can select that entry to drill into details. For example, you can drill into the inputs and outputs of the run:
 
 ### Inputs
 
