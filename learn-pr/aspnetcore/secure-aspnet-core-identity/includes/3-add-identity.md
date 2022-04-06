@@ -108,7 +108,7 @@ The default Identity implementation can be added with `dotnet` command-line tool
 
     * The generator identified as `identity` is used to add the Identity framework to the project.
     * The `--useDefaultUI` option indicates that an RCL containing the default UI elements will be used. Bootstrap will be used to style the components.
-    * The `--dbContext` option to indicate the name of an EF Core database context class to generate.
+    * The `--dbContext` option specifies the name of an EF Core database context class to generate.
 
     An *:::no-loc text="Areas":::* directory structure appears in the *RazorPagesPizza* directory:
 
