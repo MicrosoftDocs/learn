@@ -325,15 +325,15 @@ Are you using the correct version? Point-to-site only uses OS version 10.11 or h
 
    - Local ID – is the local ID the same as the subject of the client certificate?
 
-   :::image type="content" source="../media/4-mac-os-settings.jpg" alt-text="[Screenshot of Mac O S X setting screen.":::
+   :::image type="content" source="../media/4-mac-os-settings.jpg" alt-text="[Screenshot of macOS X setting screen.":::
 
 1. Select **Authentication Settings** – select **Certificate** from the dropdown list then check you've the correct certificate.
 
-   :::image type="content" source="../media/4-mac-os-certificate-authentication.png" alt-text="Screenshot of Mac OS X authentication certificate screen.":::
+   :::image type="content" source="../media/4-mac-os-certificate-authentication.png" alt-text="Screenshot of macOS X authentication certificate screen.":::
 
 1. Still In **Authentication Settings**, change the dropdown to show **Username** and check the credentials are correct.
 
-   :::image type="content" source="../media/4-mac-os-username-authentication.png" alt-text="Screenshot of Mac O S X authentication username screen.":::
+   :::image type="content" source="../media/4-mac-os-username-authentication.png" alt-text="Screenshot of macOS X authentication username screen.":::
 
 1. If you still experience problems, download Wireshark and run a packet capture.
 
