@@ -53,7 +53,7 @@ Most pipelines will have these components:
 
 The variable name is a bit misleading since the name is the build number format. If you don't explicitly set a name format, you'll get an integer number. It's a monotonically increasing number for run triggered off this pipeline, starting at 1. This number is stored in Azure DevOps. You can make use of this number by referencing $(Rev).
 
-To make a date-based number, you can use the format \$(Date:yyyy-mm-dd-HH-mm) to get a build number like 2020-01-16-19-22. To get a semantic number like 1.0.x, you can use something like 1.0$(Rev:.r)
+To make a date-based number, you can use the format \$(Date:yyyy-mm-dd-HH-mm) to get a build number like 2020-01-16-19-22. To get a semantic number like 1.0.x, you can use something like 1.0\$(Rev:.r)
 
 ## Triggers
 
