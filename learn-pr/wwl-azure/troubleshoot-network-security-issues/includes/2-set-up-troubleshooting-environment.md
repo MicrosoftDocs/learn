@@ -1,4 +1,4 @@
-You'll troubleshoot a virtual machine connection problem in a later exercise. Use the following instructions and the Azure Cloud Shell on the right of the screen to create the environmente.
+You'll troubleshoot a virtual machine connection problem in a later exercise. Use the following instructions and the Azure Cloud Shell on the right of the screen to create the environment.
 
 ## Create the exercise environment
 
