@@ -17,9 +17,9 @@ Microsoft Defender for Cloud Apps integrates visibility with your cloud by:
  -  Using easy-to-deploy app connectors that take advantage of provider APIs, for visibility and governance of apps that you connect to.
  -  Using Conditional Access App Control protection to get real-time visibility and control over access and activities within your cloud apps.
  -  Helping you have continuous control by setting and continually fine-tuning policies.
-
-:::image type="content" source="../media/proxy-architecture-88c27657.png" alt-text="Microsoft Defender for Cloud Apps architecture diagram.":::
-
+    
+    :::image type="content" source="../media/proxy-architecture-88c27657.png" alt-text="Microsoft Defender for Cloud Apps architecture diagram.":::
+    
 
 ### Cloud Discovery
 
@@ -91,10 +91,9 @@ The AD FS application activity report is available in the Azure portal under Azu
 1.  Sign in to the Azure portal with an admin role that has access to AD FS application activity data (global administrator, report reader, security reader, application administrator, or cloud application administrator).
 2.  Select **Azure Active Directory**, and then select **Enterprise applications**.
 3.  Under **Activity**, select **Usage &amp; insights (Preview)**, and then select **AD FS application activity** to open a list of all AD FS applications in your organization.
-
-:::image type="content" source="../media/active-directory-federation-services-application-activity-a7daa699.png" alt-text="AD FS application activity.":::
-
-
+    
+    :::image type="content" source="../media/active-directory-federation-services-application-activity-a7daa699.png" alt-text="AD FS application activity.":::
+    
 4.  For each application in the AD FS application activity list, view the **Migration status**:
     
      -  **Ready to migrate** means the AD FS application configuration is fully supported in Azure AD and can be migrated as-is.

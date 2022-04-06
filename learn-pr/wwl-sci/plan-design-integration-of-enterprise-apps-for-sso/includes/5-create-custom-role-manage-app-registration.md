@@ -14,4 +14,7 @@ Create a new custom role that can be used to grant access to manage app registra
 7.  On the **Permissions** tab, review the available permissions.
 8.  In the **Search by permission name or description** box, enter credentials.
 9.  In the results, select the **Manage** permissions and then select **Next**.
+    
+    :::image type="content" source="../media/lp3-mod1-custom-role-permissions-23d7331b.png" alt-text="Screen image displaying the New custom role Permissions tab with search, manage permissions, and Next highlighted":::
+    
 10. Review the changes and then select **Create.**

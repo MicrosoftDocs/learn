@@ -22,15 +22,13 @@ Here, you’ll add an Enterprise app that you can use for the exercise.
 2.  Open the portal menu and then select **Azure Active Directory**.
 3.  On the **Azure Active Directory** blade, under **Manage**, select **Enterprise applications**.
 4.  In the **Enterprise applications** pane, select **+ New application**.
-
-:::image type="content" source="../media/lp3-mod1-new-enterprise-application-eba8e251.png" alt-text="Screen image displaying the Enterprise applications blade with New application highlighted.":::
-
-
+    
+    :::image type="content" source="../media/lp3-mod1-new-enterprise-application-eba8e251.png" alt-text="Screen image displaying the Enterprise applications blade with New application highlighted.":::
+    
 5.  In the **Browse Azure AD Gallery (Preview)** blade, in the **Search application** box, enter **GitHub**.
-
-:::image type="content" source="../media/lp3-mod1-azure-active-directory-gallery-search-0a20a2cc.png" alt-text="Screen image displaying the Browse Azure AD Gallery (Preview) blade with the search box highlighted.":::
-
-
+    
+    :::image type="content" source="../media/lp3-mod1-azure-active-directory-gallery-search-0a20a2cc.png" alt-text="Screen image displaying the Browse Azure AD Gallery (Preview) blade with the search box highlighted.":::
+    
 6.  In the results, select **GitHub Enterprise Cloud – Enterprise Account**.
 7.  In the **GitHub Enterprise Cloud – Enterprise Account**, review the settings and then select **Create**.
 8.  Once the account is created, you will be redirected to the **GitHub Enterprise Cloud – Enterprise Account** blade.
@@ -43,8 +41,7 @@ Assign your administrator account to the recently added app.
 2.  On the **Users and groups** page, on the menu, select **+Add user/group**.
 3.  On the **Add Assignment** blade, select **Users and groups**.
 4.  In the **Users and groups** pane, select your administrator account and then **Select**.
-
-:::image type="content" source="../media/lp3-mod1-add-app-assignment-25e531ca.png" alt-text="Screen image displaying adding a user account assignment to an app with the Select button highlighted.":::
-
-
+    
+    :::image type="content" source="../media/lp3-mod1-add-app-assignment-25e531ca.png" alt-text="Screen image displaying adding a user account assignment to an app with the Select button highlighted.":::
+    
 5.  Select **Assign**.
