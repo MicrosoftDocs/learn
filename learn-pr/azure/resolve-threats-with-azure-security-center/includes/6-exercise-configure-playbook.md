@@ -41,23 +41,27 @@ Workflow Automations are created directly in the Defender for Cloud portal.
     | Logic app name     | *RespondToMalwareAlert*      |
     | Plan type          | Consumption                  |
 
+    > [!NOTE]
+    > You need a unique name for the Logic app. If the suggested name isn't available, modify it or select another name.
+
     Accept the default values for the rest of the fields.
 
     :::image type="content" source="../media/6-create-new-logic-app-2022.png" alt-text="Screenshot that shows the Create Logic App pane in the Azure portal.":::
 
 1. Select **Review + create** and then select **Create**. It takes a minute or two to create the app. You can monitor the creation through the alerts icon, or select **Refresh** to refresh the screen.
 
-1. Once the Logic App has been created, select **Go to resource**.
+1. Once the Logic App has been created, select **Go to resource**. The **Logic Apps Designer** pane displays.
 
 1. Scroll down to the **Templates** section and select **Security** from the Category dropdown list.
 
-1. Select **Get a notification email when Defender for Cloud detects a threat** as shown below. You could also select **Blank Logic App** if you wanted to create some custom logic to run in response to an alert, or if you don't have an M365-based email account.
+1. Select **Get a notification email when Defender for Cloud detects a threat**, and then select **Use this template**. You can also select **Blank Logic App** if you wanted to create some custom logic to run in response to an alert, or if you don't have an M365-based email account.
 
     :::image type="content" source="../media/6-select-logic-app-security.png" alt-text="Screenshot that shows the security options from Logic apps.":::
 
 1. Provide credentials for Office 365 Outlook to connect your email account. Once validated, the owning email will be shown on the Office 365 Outlook connector.
 
-1. Select **+** on the **Defender for Cloud Alert** connector to add support for Defender for Cloud.
+    > [!NOTE]
+    > If the pane doesn't refresh and show the next step, select **Code view**, and then select **Designer**.
 
 1. Select **Continue** to move to the details page.
 
@@ -65,7 +69,7 @@ Workflow Automations are created directly in the Defender for Cloud portal.
 
 1. On this screen, you can change the subject of the email and any details that will be included.
 
-1. You can use the **+ New step** to create more logic steps in the flow. In this case, we don't need another step. Select **Save** from the top menu bar.
+1. You can use the **+ New step** button to create more logic steps in the flow. In this case, we don't need another step. Select **Save** from the top menu bar.
 
 1. Switch back to the Defender for Cloud pane, or tab and select **Refresh** to select your newly created Logic App.
 
