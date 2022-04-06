@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Introduction to Audio Classification with PyTorch
-summary: In this learn module we will be learning how to do audio classification with PyTorch. There are multiple ways to build an audio classification model. You can use the waveform, tag sections of a wave file, or even use computer vision on a sound image. In this tutorial we will cover how to understand audio data and transform the sound signals into a visual representation called spectrograms; then we will build the model using computer vision on the spectrogram images. That's right, you can turn audio into an image format and then do computer vision to classify the word spoken!
+summary: In this learn module we will be learning how to do audio classification with PyTorch. We'll cover how to understand audio data features and transform the sound signals into a visual representation called spectrograms; then we'll build the model using computer vision on the spectrogram images. That's right, you can turn audio into an image format and then do computer vision to classify the word spoken!
 abstract: |
   In this module you will:
   - Learn the basics features of audio data
