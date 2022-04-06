@@ -4,8 +4,8 @@ In this exercise, you'll:
 
 > [!div class="checklist"]
 > * Create a container registry for your Bicep modules.
-> * Add a lint job to the pipeline.
-> * Add a pipeline job to publish the module to your registry.
+> * Add a lint stage to the pipeline.
+> * Add a pipeline stage to publish the module to your registry.
 > * Verify that your pipeline runs successfully.
 > * Check the published module in your registry.
 
@@ -62,15 +62,11 @@ In the preceding unit, you learned about the importance of having a versioning s
 
 1. Save your changes to the file.
 
-## Update your pipeline definition and add a lint job
+## Update your pipeline definition and add a lint stage
 
 Your repository contains a draft of a pipeline that you can use as a starting point.
 
-1. In Visual Studio Code, expand the *modules* folder in the root of the repository. Then, expand the *storage-account* folder.
-
-1. Open the *pipeline.yml* file.
-
-   :::image type="content" source="../media/6-visual-studio-code-pipeline.png" alt-text="Screenshot of Visual Studio Code that shows the location of the pipeline definition file.":::
+1. Open the *pipeline.yml* file in the *modules/storage-account* folder..
 
 1. On line 14, update the value of the `ModuleRegistryServer` environment variable to your container registry's server name. You copied that name earlier in this exercise. 
 
@@ -78,15 +74,15 @@ Your repository contains a draft of a pipeline that you can use as a starting po
 
    :::code language="yaml" source="code/6-pipeline.yml" range="12-16" highlight="3" :::
 
-1. At the bottom of the file, for the **To be added** comment, add the following lint job definition:
+1. At the bottom of the file, for the **To be added** comment, add the following lint stage definition:
 
    :::code language="yaml" source="code/6-pipeline.yml" range="18-24" :::
 
-## Add a publish job to your pipeline
+## Add a publish stage to your pipeline
 
-Now, you can add a second job to publish the module to your container registry.
+Now, you can add a second stage to publish the module to your container registry.
 
-1. At the bottom of the *storage-account.yml* file, add the first part of the publish job's definition.
+1. At the bottom of the *storage-account.yml* file, add the first part of the publish stage's definition.
 
    :::code language="yaml" source="code/6-pipeline.yml" range="26-34" :::
 
@@ -118,26 +114,23 @@ Now, you can add a second job to publish the module to your container registry.
 
    ```bash
    git add .
-   git commit -m "Add lint and publish jobs to storage account module pipeline"
+   git commit -m "Add lint and publish stages to storage account module pipeline"
    git push
    ```
 
-## Trigger the pipeline
+   Immediately after you push, Azure Pipelines starts a new pipeline run.
 
-<!-- TODO -->
-1. In your browser, go to your GitHub repository and select the **Actions** tab.
+## Monitor the pipeline
 
-1. Select the **module-storage-account** workflow.
+1. In your browser, select **Pipelines** > **Pipelines**.
 
-   Notice that a workflow run is already in progress. The push trigger fired because you modified the *metadata.json* file within the module's folder.
+1. Select the active pipeline run.
 
-1. Select the latest run in the list.
+1. The pipeline run is displayed.
 
-   :::image type="content" source="../media/6-workflow-runs-list.png" alt-text="Screenshot of GitHub that highlights the latest run of the module's workflow.":::
+   Wait for the pipeline run to finish. The Bicep module is published to your container registry.
 
-   Wait for the workflow run to finish. The Bicep module is published to your container registry.
-
-   Note the pipeline's build number, which is probably **3**.
+1. Note the pipeline's build number, which includes today's date and a unique revision number. In the example illustrated in the screenshot above, the build number is **20220405.TODO**.
 
 ## Review the module in the registry
 
@@ -153,7 +146,7 @@ You can also view the published module in the Azure portal.
 
    :::image type="content" source="../media/6-registry-portal.png" alt-text="Screenshot of the Azure portal that shows a Bicep module in the container registry.":::
 
-   Notice that there's a single *tag*, which matches the version number of the module that your pipeline published. The major version (1) and minor version (2) match the version numbers that you defined in the *metadata.json* file. The revision number (3) matches the pipeline's build number.
+   Notice that there's a single *tag*, which matches the version number of the module that your pipeline published. The major version (1) and minor version (2) match the version numbers that you defined in the *metadata.json* file. The revision number (TODO) matches the pipeline's build number.
 
 ## Clean up the resources
 

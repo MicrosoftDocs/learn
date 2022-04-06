@@ -30,7 +30,7 @@ stages:
     displayName: Lint code
     steps:
       - script: |
-          az bicep build --file $(TemplateSpecFilePath)
+          az bicep build --file $(ModuleFilePath)
         name: LintBicepCode
         displayName: Run Bicep linter
 
@@ -52,6 +52,7 @@ stages:
           scriptType: 'bash'
           scriptLocation: 'inlineScript'
           inlineScript: |
+            az bicep install
             az bicep publish \
               --target 'br:$(ModuleRegistryServer)/$(ModuleName):$(ModuleVersion)' \
               --file $(ModuleFilePath)
