@@ -4,9 +4,9 @@ Without these tools, organizations couldn't manage compliance, and they would be
 
 Now that you’ve completed this module, you should be able to:
 
-- Describe the Microsoft 365 Compliance center
-- Describe Compliance Manager
-- Describe the use and benefits of compliance score
+- Describe the Microsoft 365 Compliance center.
+- Describe Compliance Manager.
+- Describe the use and benefits of compliance score.
 
 
 ## Learn more

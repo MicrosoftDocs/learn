@@ -6,6 +6,6 @@ In this module, you’ll learn about the Microsoft 365 compliance center. You'll
 
 After completing this module, you'll be able to:
 
-- Describe the Microsoft 365 Compliance center
-- Describe Compliance Manager
-- Describe the use and benefits of compliance score
+- Describe the Microsoft 365 Compliance center.
+- Describe Compliance Manager.
+- Describe the use and benefits of compliance score.
