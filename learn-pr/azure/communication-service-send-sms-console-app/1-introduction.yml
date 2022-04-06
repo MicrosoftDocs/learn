@@ -4,8 +4,8 @@ title: Introduction
 metadata:
   title: Introduction
   description: Create a console application that sends SMS messages using Azure Communication Services.
-  author: mikben
-  ms.author: mikben
+  author: probableprime
+  ms.author: probableprime
   ms.date: 03/03/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
