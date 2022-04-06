@@ -2,8 +2,8 @@
 uid: learn.wwl.troubleshoot-vpn-gateways
 metadata:
   title: Troubleshoot VPN gateways in Microsoft Azure
-  description: "Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we'll look at how to monitor and troubleshoot site-to-site and point-to-site VPNs."
-  ms.date: 04/01/2022
+  description: "Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we'll look at how to monitor and troubleshoot site-to-site and point-to-site VPNs. AZ720 AZ-720 az-720 networking"
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial
