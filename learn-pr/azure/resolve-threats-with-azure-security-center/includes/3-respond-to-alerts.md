@@ -2,7 +2,7 @@ Once you have a set of alerts, you can select a security alert to learn more abo
 
 :::image type="content" source="../media/3-defender-for-cloud-alert-details-pane.png" alt-text="Screenshot that shows the security alert details pane.":::
 
-In this case, the alerts that were triggered refer to suspicious authentication activity.
+In this case, the alerts that were triggered refer to suspicious authentication activity. Each alert provides the following information:
 
 - **First column**: Alert severity
 - **Second column**: Type of alert
@@ -13,11 +13,11 @@ In this case, the alerts that were triggered refer to suspicious authentication 
 
 A security engineer reviews this information, selects an alert, and then selects **View full details** on the alert pane to get specific information about:
 
-1. **What happened?**: Possible compromised machine detected
-1. **When did it happen?**: Tuesday, March 01, 2022 10:31:00 AM
-1. **What resource was attacked?**: CPSLab01001
-1. **Where is the resource located?**: Azure subscription
-1. **What should you do about it?**: Take action
+1. **What happened?** (Possible compromised machine detected)
+1. **When did it happen?** (Tuesday, March 01, 2022 10:31:00 AM)
+1. **What resource was attacked?** (CPSLab01001)
+1. **Where is the resource located?** (Azure subscription)
+1. **What should you do about it?** (Take action)
 
 :::image type="content" source="../media/3-defender-for-cloud-alert-full-details.png" alt-text="Screenshot that shows the full details pane for an alert.":::
 

@@ -30,7 +30,7 @@ The kill chain consists of eight phases as shown in the below image. Different t
 1. **Denial of Service:** This phase involves disruption of normal access for users and systems to keep the attack from being monitored, tracked, or blocked.
 1. **Exfiltration:** The final extraction stage: getting valuable data out of the compromised systems.
 
-Defender for Cloud alerts attempt to detect and recognize known behaviors in each phase of the kill chain. Then they provide the SecOps team an opportunity to stop a cyberattack in progress. Post breach, Defender for Cloud can provide the necessary details to be able to identify the exfiltration and close off compromised systems.
+A Defender for Cloud alert tries to detect and recognize known behaviors in each phase of the kill chain. Then they provide the SecOps team an opportunity to stop a cyberattack in progress. Post breach, Defender for Cloud can provide the necessary details to be able to identify the exfiltration and close off compromised systems.
 
 The alerts contain valuable information about what triggered the alert, the resources targeted, and the source of the attack. The information included in an alert varies based on the type of analytics used to detect the threat. Incidents might also contain more contextual information that might be useful during the investigation of a threat. To address attacks during these stages, Defender for Cloud has categories of alerts:
 
