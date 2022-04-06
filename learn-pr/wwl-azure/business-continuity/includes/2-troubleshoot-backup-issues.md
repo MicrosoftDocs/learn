@@ -56,7 +56,7 @@ By default, the summary displays open alerts in the last 24 hours. You can also 
 
 - Time range (24 hours, week, two weeks, 30 days, or custom)
 
-    :::image type="content" source="../media/2-backup-reports.png" alt-text="Screenshot that shows Backup Report.":::
+    :::image type="content" source="../media/2-backup-reports.png" alt-text="Screenshot that shows Backup Report." lightbox="../media/2-backup-reports.png":::
 
 ### Alerts by email notification
 

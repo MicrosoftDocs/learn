@@ -5,7 +5,7 @@ metadata:
   title: Audio transforms and visualizations
   description: Data visualization and transformation is an important part of every model. Now that we have our dataset downloaded, lets learn more about audio data visualization and transforming this dataset.
   author: cassiebreviu
-  ms.author: cassieb
+  ms.author: ruyakubu
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure
@@ -16,7 +16,7 @@ metadata:
   - cassieb-08182021
 durationInMinutes: 10
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/audio-pytorch/3-visualizations-transforms.ipynb
+notebook: notebooks/3-visualizations-transforms.ipynb
 quiz:
   title: Check your knowledge
   questions:

@@ -30,7 +30,7 @@ Public DNS servers convert domain names to IP addresses to allow people to find 
 
 1. Flush the resolver cache by running the dnscmd /clearcache command in an Elevated Command Prompt window:
 
-   - Right select Command Prompt and choose ‘Run as administrator’
+   - Right select Command Prompt and choose 'Run as administrator'
 
    Type dnscmd *servername* /clearcache
 
@@ -66,7 +66,7 @@ Public DNS servers convert domain names to IP addresses to allow people to find 
 
    dig contoso.com ns
 
-1. If a computer cannot be reached, try using the commands IPCONFIG / RELEASE and IPCONFIG /RENEW from the computer’s command prompt to refresh cached information. 
+1. If a computer cannot be reached, try using the commands IPCONFIG / RELEASE and IPCONFIG /RENEW from the computer's command prompt to refresh cached information. 
    > [!IMPORTANT] 
    > IPCONFIG /RELEASE will disconnect the computer from the internet. Run 
    > IPCONFIG /ALL to check the current information.
@@ -137,7 +137,7 @@ Now you have the name servers, you can update the parent domain. Each registrar 
 
 The image shows an example DNS query, with contoso.net and partners.contoso.net in Azure DNS zones:
 
-:::image type="content" source="../media/3-zones.png" alt-text="Diagram of a DNS query in the Azure DN zones.":::
+:::image type="content" source="../media/3-zones.png" alt-text="Diagram of a DNS query in the Azure DN zones." lightbox="../media/3-zones.png":::
 
 Each delegation has two copies of the NS records - one in the parent zone pointing to the child, and another in the child zone itself. The 'contoso.net' zone contains the NS records for 'contoso.net', in addition to the NS records in 'net'. These records are called authoritative NS records and they sit at the apex of the child zone.
 
