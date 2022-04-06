@@ -2,7 +2,7 @@
 
 Examples include:
 
-- Modifying data temporarily stored in cache, sent over-the-wire or permanently stored in databases to compromise data integrity
+- Modifying data temporarily stored in cache, sent over-the-wire, or permanently stored in databases to compromise data integrity
 - Inserting malicious payloads into browser caches to cause erratic behavior in processes and data stores
 - Modifying memory through weak API call handling to cause crashes and disclosure of sensitive error messages
 - Redirecting data to compromised machines to take over the system
@@ -30,8 +30,8 @@ Examples include:
 **Integrity** prevents data from being maliciously modified. Examples include:
 
 - Validating input to prevent the processing of malicious payloads and mishandling of unexpected behavior
-- Signing messages with digital signatures to ensure message isn't tampered with
-- Using access control lists to apply permissions
+- Signing messages with digital signatures to ensure messages aren't tampered with
+- Using access-control lists to apply permissions
 - Using SSL/TLS to secure transmission
 - Creating an IPSec tunnel to secure communication between endpoints
 
