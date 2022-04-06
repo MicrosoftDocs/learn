@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "Security baselines for Azure apply guidance from the Azure Security Benchmark to the specific service for which it's defined and provide organizations a consistent experience when securing their environment."
       isCorrect: true
-      explanation: "Correct. Security baselines for Azure apply guidance from the Azure Security Benchmark to the specific service for which it's defined amd provide organizations a consistent experience when securing their environment."
+      explanation: "Correct. Security baselines for Azure apply guidance from the Azure Security Benchmark to the specific service for which it's defined and provide organizations a consistent experience when securing their environment."
     - content: "Security baselines continually assesses your resources, subscriptions, and organization for security issues and then aggregates all the findings into a single score so that you can tell, at a glance, your current security situation."
       isCorrect: false
       explanation: "Incorrect. Security baselines in Azure do not provide a single score so that you can tell, at a glance, your current security situation. That functionality is provided through secure score."
