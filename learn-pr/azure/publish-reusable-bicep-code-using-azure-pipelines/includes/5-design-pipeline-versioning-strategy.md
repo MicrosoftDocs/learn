@@ -54,7 +54,7 @@ By using *path filters* in Azure Pipelines, you can create separate pipelines fo
 
 For example, suppose you have a file structure similar to the one illustrated earlier. You could configure three separate pipelines, one for each Bicep file. Select each tab to see the corresponding pipeline definition and its path filter:
 
-<!-- TODO update samples below -->
+<!-- TODO test samples below -->
 
 # [module-1](#tab/module-1)
 

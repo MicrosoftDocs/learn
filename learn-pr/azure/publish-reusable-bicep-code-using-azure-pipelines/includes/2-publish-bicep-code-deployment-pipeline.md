@@ -50,12 +50,16 @@ az ts create \
   --template-file main.bicep
 ```
 
-You can convert this Azure CLI command to a pipeline step: <!-- TODO -->
+You can convert this Azure CLI command to a pipeline step:
 
 ```yaml
-- name: Publish template spec
-  uses: azure/cli@v1
-  with:
+- task: AzureCLI@2
+  name: Publish
+  displayName: Publish template spec
+  inputs:
+    azureSubscription: $(ServiceConnectionName)
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
     inlineScript: |
       az ts create \
         --name StorageWithoutSAS \
@@ -76,12 +80,16 @@ az bicep publish \
    --target 'br:toycompany.azurecr.io/mymodules/myqueue:2'
 ```
 
-You can convert this Azure CLI command to a pipeline step, too: <!-- TODO -->
+You can convert this Azure CLI command to a pipeline step, too:
 
 ```yaml
-- name: Publish Bicep module
-  uses: azure/cli@v1
-  with:
+- task: AzureCLI@2
+  name: Publish
+  displayName: Publish Bicep module
+  inputs:
+    azureSubscription: $(ServiceConnectionName)
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
     inlineScript: |
       az bicep publish \
         --file module.bicep \

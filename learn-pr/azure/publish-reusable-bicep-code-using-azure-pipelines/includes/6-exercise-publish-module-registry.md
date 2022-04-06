@@ -76,27 +76,21 @@ Your repository contains a draft of a pipeline that you can use as a starting po
 
 1. At the bottom of the file, for the **To be added** comment, add the following lint stage definition:
 
-   :::code language="yaml" source="code/6-pipeline.yml" range="18-24" :::
+   :::code language="yaml" source="code/6-pipeline.yml" range="25-35" highlight="3-11" :::
 
 ## Add a publish stage to your pipeline
 
 Now, you can add a second stage to publish the module to your container registry.
 
-1. At the bottom of the *storage-account.yml* file, add the first part of the publish stage's definition.
+1. At the bottom of the *storage-account.yml* file, define the *Publish* stage, and add a step to read the version number from your module's *metadata.json* file and set it as a pipeline variable.
 
-   :::code language="yaml" source="code/6-pipeline.yml" range="26-34" :::
-
-   The steps check out the code from your repository and sign in to Azure.
-
-1. Below the code that you just added, add a step to read the version number from your module's *metadata.json* file and set it as an environment variable.
-
-   :::code language="yaml" source="code/6-pipeline.yml" range="35-39" :::
+   :::code language="yaml" source="code/6-pipeline.yml" range="37-46" :::
 
    The step runs a script that uses the jq command-line application to parse the JSON file.
 
 1. Below the step that you just created, add a step to publish the module to the registry.
 
-   :::code language="yaml" source="code/6-pipeline.yml" range="40-47" :::
+   :::code language="yaml" source="code/6-pipeline.yml" range="47-58" :::
 
    Notice that this step constructs the value of the `--target` argument dynamically. It combines the value of the registry server, the module name, and the version number.
 
@@ -106,7 +100,7 @@ Now, you can add a second stage to publish the module to your container registry
 
 1. Verify that your *storage_account_module.yml* file looks like the following example:
 
-   :::code language="yaml" source="code/6-pipeline.yml" :::
+   :::code language="yaml" source="code/6-pipeline.yml" highight="16, 27-58" :::
 
    If it doesn't, update it to match this example, and then save it.
 
@@ -130,7 +124,7 @@ Now, you can add a second stage to publish the module to your container registry
 
    Wait for the pipeline run to finish. The Bicep module is published to your container registry.
 
-1. Note the pipeline's build number, which includes today's date and a unique revision number. In the example illustrated in the screenshot above, the build number is **20220405.TODO**.
+1. Note the pipeline's build number, which includes today's date and a unique revision number.
 
 ## Review the module in the registry
 
@@ -146,7 +140,7 @@ You can also view the published module in the Azure portal.
 
    :::image type="content" source="../media/6-registry-portal.png" alt-text="Screenshot of the Azure portal that shows a Bicep module in the container registry.":::
 
-   Notice that there's a single *tag*, which matches the version number of the module that your pipeline published. The major version (1) and minor version (2) match the version numbers that you defined in the *metadata.json* file. The revision number (TODO) matches the pipeline's build number.
+   Notice that there's a single *tag*, which matches the version number of the module that your pipeline published. The major version (1) and minor version (2) match the version numbers that you defined in the *metadata.json* file. The revision number (20220405.3) matches the pipeline's build number.
 
 ## Clean up the resources
 
