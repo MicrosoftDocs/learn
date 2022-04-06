@@ -4,7 +4,7 @@ When you use site-to-site VPN gateways there are many steps and numerous areas w
 
 If you have a business with offices in different locations, you can establish a secure connection between the Local Area Networks (LANs) over the network. A site-to-site VPN gateway creates a secure connection between computer resources at different locations.
 
-:::image type="content" source="../media/3-site-to-site-vpn.png" alt-text="Screenshot showing a site-to-site VPN set-up.":::
+:::image type="content" source="../media/3-site-to-site-vpn.png" alt-text="Screenshot showing a site-to-site VPN set-up." border="false":::
 
 The key steps to deploy a site-to-site VPN gateway are:
 
@@ -54,7 +54,7 @@ Each gateway is available in [different SKUs](/azure/vpn-gateway/vpn-gateway-abo
 
 ### VPN type
 
-When you set up a gateway you need to choose a VPN type.  Site-to-site supports route-based or policy-based VPNs. It’s not possible to change the VPN type so check that the limitations of a policy-based gateway are not impacting your system. The key limitations are of a policy-based VPN are:
+When you set up a gateway you need to choose a VPN type.  Site-to-site supports route-based or policy-based VPNs. It's not possible to change the VPN type so check that the limitations of a policy-based gateway are not impacting your system. The key limitations are of a policy-based VPN are:
 
 - You can only use the Basic SKU.
 
@@ -70,7 +70,7 @@ If you have set up the VPN type incorrectly, you will need to delete the virtual
 
 :::image type="content" source="../media/3-bgp-configuration-screen.png" alt-text="Screenshot of the B G P configuration screen.":::
 
-[BGP](/azure/vpn-gateway/vpn-gateway-bgp-overview) is an optional feature that can be used with Azure route-based gateways. BGP has the same technology that’s used on the internet, but it's within Azure. This enables the Azure VPN gateway and any connected on-premises gateways to exchange information about the IP ranges being used.
+[BGP](/azure/vpn-gateway/vpn-gateway-bgp-overview) is an optional feature that can be used with Azure route-based gateways. BGP has the same technology that's used on the internet, but it's within Azure. This enables the Azure VPN gateway and any connected on-premises gateways to exchange information about the IP ranges being used.
 
 Use the following checklist to troubleshoot BGP connections:
 
@@ -166,7 +166,7 @@ Before rebooting, use the following checklist:
 
 - If so, check that the configurations match on both gateways.
 
-When you issue the command to reboot, it shouldn’t take more than a minute. But if the problem isn’t solved and you issue the command to reboot a second time, it can take up to 45 minutes.
+When you issue the command to reboot, it shouldn't take more than a minute. But if the problem isn't solved and you issue the command to reboot a second time, it can take up to 45 minutes.
 
 If the problem still exists after two reboots, then a service ticket should be raised with the Azure portal. The reset can be instigated via portal or by using PowerShell.
 
@@ -192,7 +192,7 @@ If your connection has been working correctly and suddenly stops, use the follow
 
 - Check that the virtual network subnet address space(s) match on the Azure virtual network and the on-premises network?
 
-- Check the health probe by browsing to: **https://&lt;YourVirtualNetworkGatewayIP&gt;:8081/healthprobe**. If you don’t receive a response, then the gateway is probably unhealthy.
+- Check the health probe by browsing to: **https://&lt;YourVirtualNetworkGatewayIP&gt;:8081/healthprobe**. If you don't receive a response, then the gateway is probably unhealthy.
 
 - If you experience sporadic disconnection problems and have perfect forward secrecy enabled on your device, disable the feature and update the VPN gateway IPsec policy.
 
