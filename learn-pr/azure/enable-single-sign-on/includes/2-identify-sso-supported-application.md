@@ -1,8 +1,6 @@
 Identify an application that supports SAML-based single sign-on and add it from the application gallery to the Azure AD tenant.
 
-A team asked for a new application to be added to help with company promotion. The application needs to be made available to team members as appropriate.
-
-The first thing that must be done is to locate the Azure AD application gallery. Then, after searching for the requested application, identifying whether it supports single sign-on, and if so, add it to the Azure AD tenant.
+A team asked for a new application to be added to help with company promotion. The application needs to be made available to team members as appropriate. To make the application available to the employees, the Azure AD application gallery is located, then after searching for the requested application and identifying whether it supports single sign-on, it is added to the Azure AD tenant.
 
 Employees in the retail company likely already have an account in the Azure AD tenant for the organization and will eventually be assigned to the application. But, for the purpose of testing single sign-on for the application, the administrator account that you are using is assigned to the application for testing purposes.
 
@@ -15,7 +13,7 @@ Azure AD has a gallery that contains thousands of pre-integrated applications. M
 To access the Azure AD tenant and add an enterprise application, sign in to the Azure portal with an appropriate role.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
-1. Open the portal, select **Identity**, and then select **Azure Active Directory**.
+1. Select **Identity**, and then select **Azure Active Directory**.
 
     :::image type="content" source="../media/select-azure-ad.png" alt-text="Screenshot showing where to find Azure Active Directory in the Azure portal." border="false":::
 
@@ -53,7 +51,7 @@ Federated single sign-on support can be identified by looking for the **Federate
 
 To test single sign-on for the application, assign a user account account to it.
 
-1. On the **Azure AD SAML Toolkit** blade, on the **Overview** pane, under **Getting Started**, select **1. Assign users and groups**. Alternatively, in the left menu, under **Manage**, select **Users and groups**.
+1. On the **Azure AD SAML Toolkit** blade, on the **Overview** pane, under **Getting Started**, select **Assign users and groups**. Alternatively, in the left menu, under **Manage**, select **Users and groups**.
 1. On the **Users and groups** pane, on the menu, select **+Add user/group**.
 
     :::image type="content" source="../media/add-user-account.png" alt-text="Screenshot showing the assignment of a user account to an enterprise application." border="true":::
