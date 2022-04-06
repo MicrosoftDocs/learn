@@ -107,7 +107,7 @@ The default Identity implementation can be added with `dotnet` command-line tool
     In the preceding command:
 
     * The generator identified as `identity` is used to add the Identity framework to the project.
-    * The `--useDefaultUI` option indicates that an RCL containing the default UI elements will be used. Bootstrap will be used to style the components.
+    * The `--useDefaultUI` option indicates that a Razor class library (RCL) containing the default UI elements will be used. Bootstrap will be used to style the components.
     * The `--dbContext` option specifies the name of an EF Core database context class to generate.
 
     An *:::no-loc text="Areas":::* directory structure appears in the *RazorPagesPizza* directory:
@@ -141,7 +141,7 @@ The default Identity implementation can be added with `dotnet` command-line tool
 
 ## Configure the database connection
 
-The `ConnectionStrings` section should look similar to the following JSON:
+The `ConnectionStrings` section in *:::no-loc text="appsettings.json":::* should look similar to the following JSON:
 
 ```json
 "ConnectionStrings": {
@@ -167,7 +167,7 @@ Now that you've verified the connection string, you can generate and run a migra
 1. Install the Entity Framework Core migration tool:
 
     ```dotnetcli
-    dotnet tool install dotnet-ef --version 6.0.2 --global
+    dotnet tool install dotnet-ef --version 6.0.3 --global
     ```
 
     The migration tool is a .NET Core tool that will:
