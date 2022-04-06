@@ -13,7 +13,7 @@ variables:
 - name: ModuleName
   value: storage-account
 - name: ModuleRegistryServer
-  value: # To be added
+  value: yourregistryname.azurecr.io
 - name: ModuleFilePath
   value: modules/storage-account/main.bicep
 - name: ModuleMetadataFilePath

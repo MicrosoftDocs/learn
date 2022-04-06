@@ -68,11 +68,11 @@ Your repository contains a draft of a pipeline that you can use as a starting po
 
 1. Open the *pipeline.yml* file in the *modules/storage-account* folder..
 
-1. On line 14, update the value of the `ModuleRegistryServer` environment variable to your container registry's server name. You copied that name earlier in this exercise. 
+1. On line 16, update the value of the `ModuleRegistryServer` environment variable to your container registry's server name. You copied that name earlier in this exercise. 
 
-   For example, if your registry's login server is *yourregistryname.azurecr.io*, line 14 will look like this:
+   For example, if your registry's login server is *yourregistryname.azurecr.io*, line 16 will look like this:
 
-   :::code language="yaml" source="code/6-pipeline.yml" range="12-16" highlight="3" :::
+   :::code language="yaml" source="code/6-pipeline.yml" range="15-16" highlight="2" :::
 
 1. At the bottom of the file, for the **To be added** comment, add the following lint stage definition:
 
