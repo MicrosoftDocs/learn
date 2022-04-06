@@ -1,5 +1,10 @@
 In this module, you've added Identity to an existing ASP.NET Core Razor Pages project. The default Identity UI components were customized to satisfy the business and technical requirements. An authorization policy was created to secure certain features of the app. Finally, the authorization policy was employed to restrict access such that only administrators could view and access certain functionality.
 
+A completed sample can be found on the `solution` branch. Note the following:
+
+1. The connection string is pre-configured for the *.devcontainer*. If you're running locally, change the connection string to point to your LocalDB instance.
+1. Make sure you apply the migrations before running the app.
+
 ## Learn more about ASP.NET Core Identity
 
 - [ASP.NET Core security topics](/aspnet/core/security/)
