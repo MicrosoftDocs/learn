@@ -12305,6 +12305,26 @@
       "source_path": "learn-pr/wwl-sci/describe-identity-principles-concepts/6-describe-concept-of-directory-services-active-directory.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-identity-principles-concepts/5-describe-concept-of-directory-services-active-directory",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio/5-logging-and-tracing.yml",
+      "redirect_url": "learn-pr/language/dotnet-debug-visual-studio/6-logging-and-tracing.yml",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio/6-use-logging-and-tracing.yml",
+      "redirect_url": "learn-pr/language/dotnet-debug-visual-studio/7-use-logging-and-tracing.yml",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio/7-knowledge-check.yml",
+      "redirect_url": "learn-pr/language/dotnet-debug-visual-studio/8-knowledge-check.yml",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/language/dotnet-debug-visual-studio/8-summary.yml",
+      "redirect_url": "learn-pr/language/dotnet-debug-visual-studio/9-summary.yml",
+      "redirect_document_id": true
     }
   ]
 }
