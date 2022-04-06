@@ -21,7 +21,7 @@ In the preceding diagram:
 * The *EF Core Identity Store* layer contains classes from the `Microsoft.AspNetCore.Identity.EntityFrameworkCore` namespace. An example of such a class used implicitly in this module is `UserStore<TUser>`.
 * The *Database Provider* is a database-specific library that accepts SQL from the *EF Core Provider* (not pictured) and executes it.
 
-After applying the initial EF Core migration, the supporting database tables are created. The following diagram depicts the schemas of the supporting tables:
+EF Core uses a feature called migrations to to incrementally update the database schema to keep it in sync with the app's data model. After applying the initial EF Core migration, the supporting database tables are created. The following diagram depicts the schemas of the supporting tables:
 
 :::image type="content" source="../media/identity-tables.png" alt-text="Identity database schema" lightbox="../media/identity-tables.png":::
 

@@ -110,10 +110,10 @@ The default Identity implementation can be added with `dotnet` command-line tool
     * The `--useDefaultUI` option indicates that an RCL containing the default UI elements will be used. Bootstrap will be used to style the components.
     * The `--dbContext` option to indicate the name of an EF Core database context class to generate.
 
-    An *:::no-loc text="Areas":::* directory structure appears in the *RazorPagesPizza* directory:
+    The following *:::no-loc text="Areas":::* directory structure appears in the *RazorPagesPizza* directory:
 
     * *:::no-loc text="Areas":::*
-        * *:::no-loc text="Identity":::*
+        * *:::no-loc text="Identity":::* (displays on the same line as *Areas*)
             * *:::no-loc text="Data":::*
                 * *:::no-loc text="RazorPagesPizzaAuth.cs":::*
             * *:::no-loc text="Pages":::*
@@ -170,7 +170,7 @@ Now that you've verified the connection string, you can generate and run a migra
     dotnet tool install dotnet-ef --version 6.0.2 --global
     ```
 
-    The migration tool is a .NET Core tool that will:
+    The migration tool is a .NET tool that will:
 
     * Generate code called a migration to create and update the database that supports the Identity entity model.
     * Execute migrations against an existing database.

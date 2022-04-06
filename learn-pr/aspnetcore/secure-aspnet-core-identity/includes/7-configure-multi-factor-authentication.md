@@ -68,7 +68,7 @@ Now that you can generate QR codes, you can embed a QR code into the **Configure
     1. Add the following `using` statement to the top of the file to resolve the reference to `QRCodeService`. Save your changes.
 
         ```csharp
-        using RazorPagesPizza.Services;;
+        using RazorPagesPizza.Services;
         ```
 
     1. Incorporate the highlighted change to the `GenerateQrCodeUri` method.

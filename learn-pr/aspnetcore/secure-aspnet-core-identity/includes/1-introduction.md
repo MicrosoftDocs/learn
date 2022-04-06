@@ -1,7 +1,7 @@
 This module explores using ASP.NET Core Identity to support authentication and authorization in an ASP.NET Core Razor Pages web app.
 
 > [!NOTE]
-> This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+> This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) or [GitHub Codespaces](https://github.com/features/codespaces). After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
 
 ## What will you be doing?
 
