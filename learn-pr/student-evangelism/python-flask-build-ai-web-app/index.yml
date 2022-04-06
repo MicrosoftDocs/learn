@@ -3,7 +3,7 @@ uid: learn.student-evangelism.python-flask-build-ai-web-app
 metadata:
   title: Build an AI web app by using Python and Flask
   description: Use Python, Flask, and Azure Cognitive Services to build a web app that incorporates AI
-  ms.date: 04/15/2022
+  ms.date: 04/08/2022
   author: acomfort248
   ms.author: chnoring
   ms.topic: interactive-tutorial
