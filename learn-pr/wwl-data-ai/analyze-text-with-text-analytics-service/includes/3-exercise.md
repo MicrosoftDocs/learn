@@ -13,7 +13,7 @@ You can use the Language service by creating either a **Language** resource or a
 If you haven't already done so, create a **Cognitive Services** resource in your Azure subscription.
 
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
-2. Click the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
+2. Select the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
     - **Region**: *Choose any available region*:
@@ -25,7 +25,7 @@ If you haven't already done so, create a **Cognitive Services** resource in your
 
 ### Get the Key and Location for your Cognitive Services resource
 
-1. Wait for deployment to complete. Then go to your Cognitive Services resource, and on the **Overview** page, click the link to manage the keys for the service. You will need the endpoint and keys to connect to your Cognitive Services resource from client applications.
+1. Wait for deployment to complete. Then go to your Cognitive Services resource, and on the **Overview** page, select the link to manage the keys for the service. You will need the endpoint and keys to connect to your Cognitive Services resource from client applications.
 
 2. View the **Keys and Endpoint** page for your resource. You will need the **location/region** and **key** to connect from client applications.
 
@@ -44,7 +44,7 @@ To test the text analytics capabilities of the Language service, we'll use a sim
 
     ![Create storage by clicking confirm.](../media/powershell-portal-guide-2.png)       
 
-4. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
+4. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
     
     ![How to find the left hand drop down menu to switch to PowerShell](../media/powershell-portal-guide-3.png) 
 
@@ -77,12 +77,14 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The editor containing code to use the Language service](../media/analyze-text-code.png)
 
-4. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** and **YOUR_ENDPOINT** placeholder values respectively.
-
+4. Don't worry too much about the details of the code. In the Azure portal, navigate to your Cognitive Services resource. Then select the **Keys and Endpoints** page on the left hand pane. Copy the key and endpoint from the page and paste them into the code editor, replacing the **YOUR_KEY** and **YOUR_ENDPOINT** placeholder values respectively.
+    
     > [!TIP]
     > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
+    
+    ![Find the key and endpoint tab in your Cognitive Services resource's left hand pane.](../media/key-endpoint-support.png)
 
-    After pasting the key and endpoint values, the first lines of code should look similar to this:
+    After replacing the key and endpoint values, the first lines of code should look similar to this:
 
     ```PowerShell
     $key="1a2b3c4d5e6f7g8h9i0j...."
