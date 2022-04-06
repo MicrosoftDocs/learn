@@ -25,7 +25,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
     > [!NOTE]
     > Your IP address will be different to the one shown in the screenshot.
 
-1. Hit refresh in your browser, or on Windows press the <kbd>F5</kbd> multiple times. Notice that you are getting a response from the same webserver every time.
+1. Hit refresh in your browser, or on Windows press the <kbd>F5</kbd> ten or twenty times. Notice that you are getting the a response from the same webserver every single time.
 
 1. Leave this tab open to check you resolve the issue in the next exercise.
 
@@ -35,13 +35,23 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 1. Select **Virtual machines**.
 
-    :::image type="content" source="../media/4-portal-selectr-virtual-machines.png" alt-text="":::
+    :::image type="content" source="../media/4-portal-select-virtual-machines.png" alt-text="" lightbox="../media/4-portal-select-virtual-machines.png":::
 
-##
+1. Select **webVirtualMachine1**.
+
+1. Under **Settings**, select **Networking**.
+
+    :::image type="content" source="../media/4-virtual-machine-network-settings.png" alt-text="Screenshot of the networking settings for the virtual machine." lightbox="../media/4-virtual-machine-network-settings.png":::
+  
+1. Check that inbound traffic is allowed on port **80**.
+
+1. Repeat the above for **webVirtualMachine2**.
+
+The current settings appear to be correct.
 
 ## Check the Load Balancer settings
 
-1. Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) in another browser tab.
+1. Select **Home**.
 
 1. Search for **Load balancers**.
 
@@ -53,7 +63,28 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 1. Select **webLoadBalancer**.
 
-1. Select each **Settings** category and look for settings that could cause the routing issue.
+1. Under **Settings**, Select the **Frontend IP configuration**.
 
-    :::image type="content" source="../media/4-load-balancer-settings.png" alt-text="A screenshot showing the load balancer settings categories." lightbox="../media/4-load-balancer-settings.png":::
+    :::image type="content" source="../media/4-load-balancer-frontend.png" alt-text="Screenshot of the frontend IP settings of the load balancer." lightbox="../media/4-load-balancer-frontend.png":::
 
+    > [!NOTE]
+    > There is a correctly configured frontend IP address. Check that it matches the IP address you have in your other tab.
+
+1. Under **Settings**, select **Backend pools**.
+
+    :::image type="content" source="../media/4-load-balancer-backend-pools.png" alt-text="Screenshot of the load balancer backend pool." lightbox="../media/4-load-balancer-backend-pools.png":::
+
+    > [!NOTE]
+    > The virtual machines are both running.
+
+1. Under **Settings**, select **Load balancing rules**, then select **webLoadBalancerRule**.
+
+    :::image type="content" source="../media/4-load-balancer-rules.png" alt-text="Screenshot showing the webLoadBalancerRule to select.":::
+
+1. Check all the settings for the load balancer rule.
+
+    :::image type="content" source="../media/4-webLoadBalancerRule-settings.png" alt-text="Screenshot of the webLoadBalancerRule settings." lightbox="../media/4-webLoadBalancerRule-settings.png":::
+
+You think you have identified the issue. At the moment once a user visits the website they are routed to one virtual machine. This will persist because of the **Session persistence** setting.
+
+You'll resolve the issue in the next exercise.
