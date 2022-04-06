@@ -1,6 +1,6 @@
 In this module, you have learned how to troubleshoot common backup and restore issues when working in Azure.
 
-Now that you have completed this module, you will be able to:
+Now that you have completed this module, you're be able to:
 
 - Review the status of a backup job, manage alerts, and review logs.
 
