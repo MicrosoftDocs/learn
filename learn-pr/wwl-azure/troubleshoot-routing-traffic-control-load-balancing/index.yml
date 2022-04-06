@@ -40,12 +40,12 @@ products:
 - azure-virtual-network
 units:
 - learn.wwl.troubleshoot-routing-traffic-control-load-balancing.introduction
+- learn.wwl.troubleshoot-routing-traffic-control-load-balancing.create-troubleshooting-environment
 - learn.wwl.troubleshoot-routing-traffic-control-load-balancing.troubleshoot-routing-traffic-control
 - learn.wwl.troubleshoot-routing-traffic-control-load-balancing.troubleshoot-load-balancing-issues
 - learn.wwl.troubleshoot-routing-traffic-control-load-balancing.exercise
 - learn.wwl.troubleshoot-routing-traffic-control-load-balancing.exercise-resolve-issue-with-load-balancer
 - learn.wwl.troubleshoot-routing-traffic-control-load-balancing.knowledge-check
 - learn.wwl.troubleshoot-routing-traffic-control-load-balancing.summary-resources
-- learn.wwl.troubleshoot-routing-traffic-control-load-balancing.create-troubleshooting-environment
 badge:
   uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing.badge

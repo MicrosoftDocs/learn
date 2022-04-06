@@ -1,4 +1,4 @@
-You'll troubleshoot a load balancing problem in a later exercise. Use the following instructions and the Azure Cloud Shell on the right of the screen to create the environmente.
+You'll troubleshoot a load balancing problem in a later exercise. Use the following instructions and the Azure Cloud Shell on the right of the screen to create the environment.
 
 ## Create the exercise environment
 
@@ -7,7 +7,7 @@ You'll troubleshoot a load balancing problem in a later exercise. Use the follow
 1. Copy and paste this command on the right to clone the setup script from GitHub.
 
      ```bash
-     git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-network-security-issues networking
+     git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-connectivity-issues-virtual-machines networking
      ```
 
 1. Run the setup script with this command.

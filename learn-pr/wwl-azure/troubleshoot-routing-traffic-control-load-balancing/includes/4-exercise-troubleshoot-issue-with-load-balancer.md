@@ -1,28 +1,26 @@
-You work as a support engineer supporting Azure infrastructure. You've been contacted by your web team about an issue with the website not responding. The web team has a pool of webservers behind a load balancer and public IP address.
+You work as a support engineer supporting Azure infrastructure. You've been contacted by your web team about an issue with website performance. The web team has a pool of webservers behind a load balancer and public IP address.
 
 :::image type="content" source="../media/4-network-topology-diagram.png" alt-text="Screenshot of a network topology diagram showing a pool of webservers behind a load balancer and public IP address." lightbox="../media/4-network-topology-diagram.png" border="false":::
 
-In this exercise, you'll use what you've learned to go through steps to troubleshoot the connection issues to the virtual machines.
+The web team thinks that the internet traffic isn't being distributed equally between all the webservers.
 
-## Create the exercise environment
+In this exercise, you'll use what you've learned to go through steps to troubleshoot the performance issues with your organizations website.
 
- Use the Cloud Shell on the right run these commands to create the example topology.  It will take approximately 3 minutes to build the environment.
+## Check that the issue
 
-1. Clone the setup script from GitHub.
+1. Using the Cloud Shell to the right, run this command.
 
-     ```
-     git clone https://github.com/MicrosoftDocs/mslearn-troubleshoot-connectivity-issues-virtual-machines networking
-     ```
+    ```azurecli
+    az network public-ip show \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name webPublicIP \
+    --query '[ipAddress]' \
+    --output tsv
+    ```
 
-1. Run the setup script.
+1. Paste the IP address returned into a new browser tab.
 
-     ```azurecli
-     bash networking/setup.sh
-     ```
 
-1. The script will create all the resources. Wait until it completes, you should see a **Webserver Pool Created** message.
-
-     :::image type="content" source="../media/4-webserver-pool.png" alt-text="Screenshot of the Azure Cloud Shell showing the Webserver Pool created message.":::
 
 ## Check the Load Balancer settings
 
@@ -30,16 +28,15 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 1. Search for **Load balancers**.
 
-    :::image type="content" source="../media/4-load-balancers.png" alt-text="A screenshot of the Azure portal showing Load balancers being selected.":::
+    :::image type="content" source="../media/4-load-balancers.png" alt-text="A screenshot of the Azure portal showing Load balancers being selected." lightbox="../media/4-load-balancers.png":::
 
-1. Under **Services**, click **Load balancers**.
+1. Under **Services**, select **Load balancers**.
 
-    :::image type="content" source="../media/4-list-of-load-balancers.png" alt-text="A screenshot showing the load balancers.":::
+    :::image type="content" source="../media/4-list-of-load-balancers.png" alt-text="A screenshot showing the load balancers." lightbox="../media/4-list-of-load-balancers.png":::
 
-1. Click **myScaleSetLB**.
+1. Select **webLoadBalancer**.
 
-## Check the load balancer settings
-
-- Select each **Settings** category and look for settings that could cause the routing issue.
+1. Select each **Settings** category and look for settings that could cause the routing issue.
 
     :::image type="content" source="../media/4-load-balancer-settings.png" alt-text="A screenshot showing the load balancer settings categories.":::
+
