@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing
+metadata:
+  title: Troubleshoot routing, traffic control and load balancing in Microsoft Azure
+  description: "Troubleshoot network issues revolving around routing and traffic control and load- balancing."
+  ms.date: 03/31/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot routing, traffic control and load balancing in Microsoft Azure
+summary: Troubleshoot network issues revolving around routing and traffic control and load- balancing.
+abstract: |
+  By the end of this module, you will be able to:
+  - Troubleshoot routing and traffic control
+  - Troubleshoot load-balancing issues
+prerequisites: |
+  - Experience with the OSI model
+  - Demonstrate an awareness of Azure Bastion
+  - Experience with PowerShell and Azure CLI
+  - Know how to get to Cloud Shell to run commands
+  - Experience with Visual Studio Code
+  - Demonstrate an understanding of JSON
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- network-engineer
+- support-engineer
+products:
+- azure
+- azure-active-directory
+- azure-active-directory-domain
+- azure-cdn
+- azure-firewall
+- azure-firewall-manager
+- azure-private-link
+- azure-virtual-machines
+- azure-virtual-network
+units:
+- learn.wwl.troubleshoot-routing-traffic-control-load-balancing.introduction
+- learn.wwl.troubleshoot-routing-traffic-control-load-balancing.troubleshoot-routing-traffic-control
+- learn.wwl.troubleshoot-routing-traffic-control-load-balancing.troubleshoot-load-balancing-issues
+- learn.wwl.troubleshoot-routing-traffic-control-load-balancing.exercise
+- learn.wwl.troubleshoot-routing-traffic-control-load-balancing.exercise-resolve-issue-with-load-balancer
+- learn.wwl.troubleshoot-routing-traffic-control-load-balancing.knowledge-check
+- learn.wwl.troubleshoot-routing-traffic-control-load-balancing.summary-resources
+badge:
+  uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing.badge

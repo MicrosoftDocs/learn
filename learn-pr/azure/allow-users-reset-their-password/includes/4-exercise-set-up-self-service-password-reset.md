@@ -8,7 +8,9 @@ The default Azure Active Directory (Azure AD) organization in the Azure sandbox 
 1. Select **Create a resource** > **Identity** > **Azure Active Directory**.
 
    ![Screenshot that shows Azure Active Directory in the Azure Marketplace.](../media/4-create-active-directory.png)
-1. On the **Create tenant** page, use these values, and then select **Create**.
+1. Select **Azure Active Directory**, then select **Next : Configuration**.
+
+1. On the **Create tenant** page, use these values, select **Review + Create**, then select **Create**.
 
     | Property | Value |
     | --- | --- |
@@ -17,6 +19,7 @@ The default Azure Active Directory (Azure AD) organization in the Azure sandbox 
     | Country or region | United States. |
     | | |
 
+1. Complete the captcha, then select **Submit**.
 1. After you create the organization, select the F5 key to refresh the page. In the upper-right corner, select your user account. Then select **Switch directory**.
 1. Select the organization you just created.
 

@@ -1,4 +1,4 @@
-Normally, you have to create a repository on GitHub before you can publish your code. Visual Studio Code lets you do that right from the editor. The following steps help you create a new project and then publish that project to GitHub from Visual Studio Code.
+Normally, you have to create a repository on GitHub before you can publish your code. Visual Studio Code lets you do that right from the editor. The following steps help you create a new project and publish that project to GitHub from Visual Studio Code.
 
 ## Step 1: Create a new project
 
@@ -28,7 +28,7 @@ The README file is what people see when they visit your repo on Github.com. For 
 
 ### Create .env.development
 
-Many programs use an .env file type to define program information that's confidential. Confidential information such as database connection strings should *not* be pushed to GitHub.
+Many programs use an .env file type to define program information that's confidential. You should *not* push confidential information (such as database connection strings) to GitHub.
 
 1. On the **File** menu, select **New File**.
 
@@ -44,7 +44,7 @@ Many programs use an .env file type to define program information that's confide
 
 ## Step 2: Publish to GitHub
 
-1. Open the Source Control Management (SCM) view by selecting the SCM icon on the activity bar.
+1. Open the Source Control Management (SCM) view by selecting the **SCM** icon on the activity bar.
 
 1. Select **Publish to GitHub**.
 
@@ -52,7 +52,7 @@ Many programs use an .env file type to define program information that's confide
 
 1. In the prompt, select **Publish to GitHub public repository**.
 
-1. Clear the selection of the **.env.development** file because we don't want to publish that to GitHub.
+1. Clear the selection of the **.env.development** file, because we don't want to publish that to GitHub.
 
    :::image type="content" source="../media/files-to-publish.jpg" alt-text="Screenshot of the command palette, showing a list of files in the current project with check boxes and the .env.development option cleared.":::
 
@@ -68,9 +68,9 @@ Many programs use an .env file type to define program information that's confide
 
    :::image type="content" source="../media/first-commit.jpg" alt-text="Screenshot of the repository page on Github.com, showing the README file.":::
 
-1. Notice that the commit message is set to **first commit**.
+1. Notice the commit message is set to **first commit**.
 
-1. Notice that your project has a new file called **.gitignore**. Visual Studio Code added this file during the publishing process.
+1. Notice your project has a new file called **.gitignore**. Visual Studio Code added this file during the publishing process.
 
 ## Step 4: Examine .gitignore in Visual Studio Code
 
@@ -86,11 +86,11 @@ Many programs use an .env file type to define program information that's confide
 
 Let's recap what you did in this section:
 
-- Created a new project and a README file.
-- Published the project to GitHub from Visual Studio Code.
-- Saw that the repository was created on Github.com.
-- Examined the .gitignore file that was automatically created when you chose _not_ to include the .env.development file.
+- Created a new project and a README file
+- Published the project to GitHub from Visual Studio Code
+- Saw that the repository was created on Github.com
+- Examined the .gitignore file that was automatically created when you chose *not* to include the .env.development file
 
-Visual Studio Code handled all of the tedious work that needs to happen behind the scenes to make this publishing workflow seamless.
+Visual Studio Code handled all the tedious work that needs to happen behind the scenes to make this publishing workflow seamless.
 
-Many times, though, we start a project from GitHub, not from a local machine. In the next section, you'll see how Visual Studio Code allows you to clone repositories from your editor.
+Many times, though, you'll start a project from GitHub, not from a local machine. In the next section, you'll see how Visual Studio Code lets you clone repositories from your editor.

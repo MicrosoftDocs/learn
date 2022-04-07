@@ -4,12 +4,13 @@ title: Describe retention policies and retention labels
 metadata:
   title: Describe retention policies and retention labels
   description: "Describe retention policies and retention labels"
-  ms.date: 07/29/2021
+  ms.date: 04/02/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-describe-retention-polices-retention-labels.md)]
