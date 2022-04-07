@@ -83,7 +83,7 @@ The current settings appear to be correct.
 
 1. Check all the settings for the load balancer rule.
 
-    :::image type="content" source="../media/4-web-load-balancer-rule-settings.png" alt-text="Screenshot of the webLoadBalancerRule settings." lightbox="../media/4-webLoadBalancerRule-settings.png":::
+    :::image type="content" source="../media/4-web-load-balancer-rule-settings.png" alt-text="Screenshot of the webLoadBalancerRule settings." lightbox="../media/4-web-load-balancer-rule-settings.png":::
 
 You think you have identified the issue. At the moment once a user visits the website they are routed to one virtual machine. This will persist because of the **Session persistence** setting.
 
