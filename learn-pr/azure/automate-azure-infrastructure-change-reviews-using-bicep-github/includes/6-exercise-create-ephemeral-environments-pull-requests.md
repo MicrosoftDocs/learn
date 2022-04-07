@@ -1,4 +1,4 @@
-Your team has told you they appreciate getting the automated Bicep linter feedback on their code changes before they send them to other team members to review. Now, you've decided to give your contributors and reviewers the ability to deploy and review their code in an ephemeral environment.
+Some team members have told you they appreciate getting the automated Bicep linter feedback on their code changes before they send them to other team members to review. Now, you've decided to give your contributors and reviewers the ability to deploy and review their code in an ephemeral environment.
 
 In this exercise, you'll update your pull request workflow to deploy an ephemeral environment whenever a pull request is opened, and redeploy it when code is pushed to the pull request branch. You'll also create another workflow to automatically delete the environment when the pull request is closed. You'll test your changes by creating a pull request for your website to use a Docker container image.
 
@@ -8,11 +8,11 @@ During the process, you'll:
 > * Update the pull request workflow to deploy an ephemeral environment.
 > * Create a pull request deletion workflow to delete the ephemeral environment.
 > * Create a pull request and watch the ephemeral environment get created.
-> * Approve the pull request and watch the ephemeral enivronment get deleted.
+> * Approve the pull request and watch the ephemeral environment get deleted.
 
 ## Update the pull request workflow to deploy an ephemeral environment
 
-As a first step, you need to update your *pr-validation* workflow to create an ephemeral environment.
+To begin, you need to update your *pr-validation* workflow to create an ephemeral environment.
 
 1. In the Visual Studio Code terminal, check out the main branch of the repository.
 
@@ -20,7 +20,7 @@ As a first step, you need to update your *pr-validation* workflow to create an e
    git checkout main
    ```
 
-1. Pull the latest version of the code from GitHub, which includes the changes you merged in the previous exercise.
+1. Pull the latest version of the code from GitHub, which includes the changes you merged in an earlier exercise.
 
    ```bash
    git pull
@@ -46,9 +46,9 @@ As a first step, you need to update your *pr-validation* workflow to create an e
 
    :::code language="yaml" source="code/6-pr-validation.yml" range="10-21" highlight="5-12" :::
 
-   The job first checks out all the code onto the GitHub runner, and then signs into your Azure environment.
+   The job first checks out all the code onto the GitHub runner, and then signs in to your Azure environment.
 
-   > [!TIP]
+   > [!NOTE]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
 
 1. Add a step to create the resource group with the name defined in the environment variable:
@@ -90,7 +90,7 @@ You've created a workflow that automatically deploys the changes in each pull re
 
    :::code language="yaml" source="code/6-pr-closed.yml" range="1-6" :::
 
-1. Below the code you just entered, define an environment variable for the name of the resource group associated with the pull request's ephemeral environment:
+1. Below the code you just entered, define an environment variable for the name of the resource group that's associated with the pull request's ephemeral environment:
 
    :::code language="yaml" source="code/6-pr-closed.yml" range="8-9" :::
 
@@ -122,9 +122,9 @@ You've created a workflow that automatically deploys the changes in each pull re
 
 ## Update the Bicep file
 
-Here, you update your Bicep file to use a Docker container image for your website's application.
+Next, update your Bicep file to use a Docker container image for your website's application.
 
-1. In the Visual Studio Code terminal, run the following command to create a new branch for your changes:
+1. In the Visual Studio Code terminal, create a new branch for your changes by running the following command:
 
    ```bash
    git checkout -b feature/container-app
@@ -150,11 +150,11 @@ Here, you update your Bicep file to use a Docker container image for your websit
 
 You've defined workflows to create and manage ephemeral environments automatically in pull requests. Now, you'll create another pull request for your Bicep changes.
 
-1. In your browser, navigate to the **Code** and select **3 branches**.
+1. In your browser, select **Code**, and then select **3 branches**.
 
    :::image type="content" source="../media/6-branches.png" alt-text="Screenshot of GitHub that shows the repository's branch list.":::
 
-1. Next to the **feature/container-app** branch, select **New pull request**.
+1. Under **Your branches**, next to **feature/container-app**, select **New pull request**.
 
    :::image type="content" source="../media/6-create-pull-request.png" alt-text="Screenshot of GitHub that shows the link to create a pull request for the feature slash container app branch.":::
 
@@ -162,11 +162,11 @@ You've defined workflows to create and manage ephemeral environments automatical
 
 ## Watch the ephemeral environment get created
 
-1. On the pull request details page, wait for the status checks to appear.
+1. On the pull request details page, wait for the status check items to appear.
 
-1. Select **Details** next to the **deploy** job.
+1. In the list, next to the **deploy** job, select **Details**.
 
-   :::image type="content" source="../media/6-deploy-details.png" alt-text="Screenshot of the GitHub pull request that shows the status checks. The Details link for the 'deploy' job is highlighted.":::
+   :::image type="content" source="../media/6-deploy-details.png" alt-text="Screenshot of the GitHub pull request that shows the status check items. The 'Details' link for the 'deploy' job is highlighted.":::
 
    Wait for the deployment to finish.
 
@@ -176,11 +176,11 @@ You've defined workflows to create and manage ephemeral environments automatical
 
    :::image type="content" source="../media/6-website-address.png" alt-text="Screenshot of the GitHub Actions deployment log. The website U R L in the 'Show website hostname' step is highlighted.":::
 
-   The website loads. It displays a message showing *Hello Docker!*, which indicates the website is running from the container defined in the pull request change.
+   The website loads. It displays a message, *Hello Docker!*, which indicates that the website is running from the container that's defined in the pull request change.
 
-   :::image type="content" source="../media/6-website.png" alt-text="Screenshot of the website homepage after the deployment completes.":::
+   :::image type="content" source="../media/6-website.png" alt-text="Screenshot of the website homepage after the deployment is complete.":::
 
-1. Optionally, open the [Azure portal](https://portal.azure.com/azure-portal=true) and navigate to the ephemeral environment's resource group.
+1. Optionally, open the [Azure portal](https://portal.azure.com/azure-portal=true) and go to the ephemeral environment's resource group.
 
    Review the resources that were deployed.
 
@@ -192,9 +192,9 @@ Now that you've tested the pull request, you can merge it into the *main* branch
 
    :::image type="content" source="../media/6-reopen-pull-request.png" alt-text="Screenshot of GitHub showing the list of open pull requests in the repository.":::
 
-   Notice that the status checks have passed.
+   The status checks have passed.
 
-   :::image type="content" source="../media/6-status-checks-passed.png" alt-text="Screenshot of the GitHub pull request that shows that the two status checks have passed.":::
+   :::image type="content" source="../media/6-status-checks-passed.png" alt-text="Screenshot of the GitHub pull request showing that the two status checks have passed.":::
 
 1. Select **Merge pull request**.
 
@@ -202,15 +202,15 @@ Now that you've tested the pull request, you can merge it into the *main* branch
 
 ## Review the deletion of the resource group
 
-1. In the browser, navigate to **Actions** and select the **pr-closed** workflow.
+1. In the browser, select **Actions** and then, on the left pane, select the **pr-closed** workflow.
 
-   Notice that the workflow has been invoked automatically because a pull request was closed.
+   You can see that the workflow has been invoked automatically because a pull request was closed.
 
-   :::image type="content" source="../media/6-pull-request-closed-workflow.png" alt-text="Screenshot of the GitHub Actions page that shows the P R closed workflow is running.":::
+   :::image type="content" source="../media/6-pull-request-closed-workflow.png" alt-text="Screenshot of the GitHub Actions pane showing that the P R closed workflow is running.":::
 
 1. Select the workflow to review the log.
 
    It might take a few minutes for the workflow to finish deleting the resource group in Azure.
 
    > [!IMPORTANT]
-   > You don't need to wait for the workflow run to complete. But, remember to open the Azure portal later, to verify that the ephemeral environment's resource group has been deleted successfully and to avoid you incurring costs for the Azure resources.
+   > You don't need to wait for the workflow run to finish. But be sure to open the Azure portal later, both to verify that the ephemeral environment's resource group has been deleted successfully and to avoid incurring costs for the Azure resources.

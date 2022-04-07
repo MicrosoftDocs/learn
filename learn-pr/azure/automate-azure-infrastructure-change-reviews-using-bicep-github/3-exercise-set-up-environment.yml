@@ -4,7 +4,7 @@ title: Exercise - Set up your environment
 metadata:
   unitType: exercise
   title: Exercise - Set up your environment
-  description: Configure your environment to add automated reviews to your Bicep deployment workflow.
+  description: In this exercise, you configure your environment to add automated reviews to your Bicep deployment workflow.
   ms.date: 03/30/2022
   author: vermegi
   ms.author: givermei
