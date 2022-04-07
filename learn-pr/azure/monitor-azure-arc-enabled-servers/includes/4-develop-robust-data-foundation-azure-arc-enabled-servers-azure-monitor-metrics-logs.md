@@ -16,10 +16,10 @@ Metrics in Azure Monitor are stored in a time-series database which is optimized
 
 Metrics are available for interactive analysis in the Azure portal with Azure Metrics Explorer. They can be added to an Azure dashboard for visualization in combination with other data and used for near-real time alerting.
 
-- **Analyze** using Metrics Explorer to analyze collected metrics on a chart and compare metrics from various resources.
-- **Alert** by configuring a metric alert rule that sends a notification or takes automated action when the metric value crosses a threshold.
-- **Visualize** by pinning query results as tables or charts in Azure dashboards, creating a workbook combining multiple data sets, or exporting results to Grafana.
-- **Automate** using Autoscale to increase or decrease resources based on a metric value crossing a threshold.
+- Analyze using Metrics Explorer to analyze collected metrics on a chart and compare metrics from various resources.
+- Alert by configuring a metric alert rule that sends a notification or takes automated action when the metric value crosses a threshold.
+- Visualize by pinning query results as tables or charts in Azure dashboards, creating a workbook combining multiple data sets, or exporting results to Grafana.
+- Automate using Autoscale to increase or decrease resources based on a metric value crossing a threshold.
 
 ![Azure Metrics Architecture diagram outlining core components](../media/image5.png)
 
@@ -31,9 +31,9 @@ Logs in Azure Monitor are stored in a Log Analytics workspace that's based on Az
 
 You can work with log queries interactively with Log Analytics in the Azure portal. You can also add the results to an Azure dashboard for visualization in combination with other data. You can also create log alerts, which will trigger an alert based on the results of a schedule query.
 
-- **Analyze** using Log Analytics in the Azure portal to write log queries and interactively analyze log data by using a powerful analysis engine.
-- **Alert** by configuring a log alert rule that sends a notification or takes automated action when the results of the query match a particular result.
-- **Visualize** by pinning query results as tables or charts in Azure dashboards, creating a workbook combining multiple data sets, or exporting results to Power BI or Grafana for visualization.
+- Analyze using Log Analytics in the Azure portal to write log queries and interactively analyze log data by using a powerful analysis engine.
+- Alert by configuring a log alert rule that sends a notification or takes automated action when the results of the query match a particular result.
+- Visualize by pinning query results as tables or charts in Azure dashboards, creating a workbook combining multiple data sets, or exporting results to Power BI or Grafana for visualization.
 
 ![Azure Logs Architecture outlining core components](../media/image6.png)
 
@@ -43,6 +43,6 @@ Log Analytics is a tool in the Azure portal used to edit and run log queries wit
 
 A Log Analytics workspace is a unique environment for log data from Azure Monitor, Microsoft Sentinel, and Microsoft Defender for Cloud. Each workspace has its own data repository and configuration but may combine data from multiple services. You can use a single workspace for all your data collection, or you may create multiple workspaces based on a variety of requirements. 
 
-For Azure Arc-enabled servers, select **Logs** from the left navigation pane to run queries on collected Azure Monitor Log Analytics data. 
+For Azure Arc-enabled servers, select Logs from the left navigation pane to run queries on collected Azure Monitor Log Analytics data. 
 
 ![Azure Log Analytics workspace view outlining core components](../media/image7.png)
