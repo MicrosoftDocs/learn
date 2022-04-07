@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-what-is
-title: Describe what is Azure Active Directory
+title: Describe Azure Active Directory
 metadata:
-  title: Describe what is Azure Active Directory
-  description: "Describe what is Azure Active Directory"
-  ms.date: 12/02/2021
+  title: Describe Azure Active Directory
+  description: "Describe Azure Active Directory"
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-describe-what-azure-active-directory.md)]
+  [!include[](includes/2-describe-azure-active-directory.md)]

@@ -7,11 +7,10 @@ Azure AD simplifies the way organizations manage authorization and access by pro
 
 Azure AD also allows organizations to securely enable the use of personal devices, such as mobiles and tablets, and enable collaboration with business partners and customers.
 
-
-![Azure Active Directory works with cloud apps such as M365, devices, and on-premises applications](../media/azure-active-directory-diagram-expanded.png)
+:::image type="content" source="../media/azure-active-directory-diagram-expanded.png" alt-text="Azure Active Directory works with cloud apps such as M365, devices, and on-premises applications":::
 
 Azure AD is used by IT admins to control access to corporate apps and resources, based on business requirements. It can also be set up to require multi-factor authentication when accessing important organizational resources. Azure AD can be used to automate user provisioning between an existing Windows Server AD and cloud apps, including Microsoft 365. Finally, Azure AD provides powerful tools to automatically help protect user identities and credentials and to meet an organization’s access governance requirements.
 
-Subscribers to Azure services, Microsoft 365, or Dynamics 365 automatically use Azure AD. Each Microsoft 365, Office 365, Azure, or Dynamics 365 Online subscription automatically uses an Azure AD tenant. Users of these services can take advantage of Azure AD services such as self-service password reset, provided it has been configured by their organization’s admins.
-
 Developers use Azure AD as a standards-based approach for adding single sign-on (SSO) to their apps, so that users can sign in with their pre-existing credentials. Azure AD also provides APIs that allow developers to build personalized app experiences using existing organizational data.
+
+Subscribers to Azure services, Microsoft 365, or Dynamics 365 automatically have access to Azure AD. Users of these services can take advantage of included Azure AD services and can also enhance their Azure AD implementation by upgrading to  Azure AD Premium licenses.
