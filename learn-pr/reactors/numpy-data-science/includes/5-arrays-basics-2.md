@@ -58,7 +58,7 @@ The output is:
  [ 1  6  7  7]]
 ```
 
-The fact that slicing produces views rather than copies is useful for data-science work. As you work with large datasets, you'll often find that it's easier to access and manipulate pieces of those datasets rather than copying them entirely.
+The fact that slicing produces views rather than copies is useful for data-science work. As you work with large datasets, you'll often find it's easier to access and manipulate pieces of those datasets rather than copying them entirely.
 
 ### Copying arrays
 
@@ -106,7 +106,7 @@ The output is:
 
 ## Reshaping arrays
 
-You'll also need to manipulate arrays by reshaping them. Reshaping involves changing the number and size of dimensions of an array. This kind of manipulation can be important to get your data to meet the expectations of machine learning programs or APIs.
+You'll also need to manipulate arrays by reshaping them. Reshaping involves changing the number and size of dimensions of an array. This kind of manipulation can be important to get your data to meet the expectations of machine-learning programs or APIs.
 
 The most flexible way to do this kind of manipulation is the `reshape` method. For example, if you want to put the numbers 1 through 9 in a 3 x 3 grid, you can use this code:
 

@@ -115,7 +115,7 @@ Here, all the elements in the first and third rows are less than 7, but that isn
 >[!div class="alert is-tip"]
 >### Reminder
 >
->Python has built-in `sum()`, `any()`, and `all()` functions. These functions have a different syntax from the NumPy versions. In particular, they'll fail or produce unintended results when they're used on multidimensional arrays. Be sure that you're using `np.sum()`, `np.any()`, and `np.all()` for these examples.
+>Python has built-in `sum()`, `any()`, and `all()` functions. These functions have a different syntax from the NumPy versions. In particular, they'll fail or produce unintended results when they're used on multidimensional arrays. Be sure you're using `np.sum()`, `np.any()`, and `np.all()` for these examples.
 
 ## Boolean operators
 
