@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.describe-security-management-capabilities-of-azure.introduction
+uid: learn.wwl.describe-compliance-management-capabilities-microsoft-365.introduction
 title: Introduction
 metadata:
   title: Introduction
@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-m365
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
