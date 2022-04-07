@@ -142,7 +142,7 @@ Can you think of how to combine masking and fancy indexing in one line?
 - Your masking might be something like `countries['Population density'] > 200`.
 - Your fancy indexing might be something like `['Population', 'Population density']`.
 
-Be sure to put the the masking and fancy indexing inside the square brackets: `countries.loc[]`.
+Be sure to put the masking and fancy indexing inside the square brackets: `countries.loc[]`.
 
 <br />
 
