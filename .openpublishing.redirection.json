@@ -12360,6 +12360,31 @@
       "source_path": "learn-pr/wwl-sci/describe-basic-security-capabilities-azure/9-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-basic-security-capabilities-azure/10-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/4-describe-explore-azure-secure-score.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-management-capabilities-of-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/5-describe-enhanced-security-defender-cloud.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-management-capabilities-of-azure/4-describe-enhanced-security-defender-cloud",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/6-baselines-for-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-management-capabilities-of-azure/5-baselines-for-azure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-management-capabilities-of-azure/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/9-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-management-capabilities-of-azure/7-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
