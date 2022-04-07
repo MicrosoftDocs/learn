@@ -25,21 +25,21 @@ Follow these steps to define a new alert rule for Azure Arc-enabled servers. We 
 1. From your browser, go to the [Azure portal](https://portal.azure.com/).
 1. In the portal, browse **Monitor** and select **Alerts** from the left-navigation list.
 1. From under the **Create** section, select **Alert Rule**.
-1. From under the **Filter by Resource Type** section, select **Servers – Azure Arc**.
+1. From under the **Filter by Resource Type** section, select **Servers - Azure Arc**.
 1. Select the target Azure Arc-enabled servers as the scope of the rule.
-1. **Select the signal \LogicalDisk(\_Total)\% Disk Time (Azure.VM.Windows.GuestMetrics)**
+1. Select the signal **\LogicalDisk(\_Total)\% Disk Time (Azure.VM.Windows.GuestMetrics)**. 
 
-![Create an alert rule](../media/image9.png)
-
-7. Enter the **Threshold Value **of 0.5 above which the alert rule will be triggered and select **Done**.
-
-![Create signal logic](../media/image10.png)
-
-8. Select **Create a new Action Group** to define the response to the alert.
+   <kbd>![Create an alert rule](../media/image-9.png)<kbd>
+  
+1. Enter the **Threshold Value** of 0.5 above which the alert rule will be triggered and select **Done**.
+  
+   <kbd>![Create signal logic](../media/image-10.png)<kbd>
+     
+1. Select **Create a new Action Group** to define the response to the alert.
 1. For Basics, enter the Subscription, Resource Group, and Action Group Name.
-1. For Notifications, select **Email Azure Resource Manager Role **and choose **Owner** from the dropdown options. 
-
-![Create action group](../media/image11.png)
-
-11. Enter a **Notification Name** and select **Review + Create** for the Action Group. 
+1. For Notifications, select **Email Azure Resource Manager Role** and choose **Owner** from the dropdown options. 
+     
+   <kbd>![Create action group](../media/image-11.png)<kbd>
+     
+1. Enter a **Notification Name** and select **Review + Create** for the Action Group. 
 1. Select **Review + Create** for the alert rule. 
