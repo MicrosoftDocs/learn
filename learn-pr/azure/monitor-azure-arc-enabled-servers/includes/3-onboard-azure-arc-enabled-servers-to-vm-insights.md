@@ -8,7 +8,7 @@ VM extensions can be applied to your Arc-enabled server via the Azure portal.
 1. In the portal, browse **Servers - Azure Arc** and select your hybrid machine from the list.
 1. From the left-pane under the **Monitoring** section, select **Insights** and then **Enable**.
 
-On the Azure Monitor Insights Onboarding page, you are prompted to create a workspace. You can either select an existing Log Analytics workspace or select the default. The default is a configured workspace with a unique name in the same region as your registered the Azure Arc-enabled server. 
+On the Azure Monitor Insights Onboarding page, you are prompted to create a workspace. You can either select an existing Log Analytics workspace or select the default. The default is a configured workspace with a unique name in the same region as the Azure Arc-enabled server. 
 
 ![Azure Monitor enable VM Insights](../media/image1.png)
 
