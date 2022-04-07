@@ -10,7 +10,7 @@ Alert rules are separated from alerts and the actions taken when an alert fires.
 
 - **Target resource** defines the scope and signals available for alerting. A target can be any Azure resource. Azure Arc-enabled servers can be targets for Azure Monitor Alerts.
 - **Signal** includes the metric, activity log, Application Insights, and log emitted by the target resource. An example could be the heartbeats emitted by or the CPU Utilization threshold of an Azure Arc-enabled server. 
-- **Criteria** specifies the combination of signal and logic applied on a target resource. Examples include CPU utilization threshold passing 70% or logs less than 10 heartbeats over the last 24 hours.  
+- **Criteria** specifies the combination of signal and logic applied on a target resource. An example could be CPU utilization threshold passing 70%.  
 - **Alert name, Alert description, **and** Severity** are configured by the user. Severity ranges from 0 to 4, where Sev 0 is Critical, Sev 1 is Error, Sev 2 is Warning, Sev 3 is Informational, and Sev 4 is Verbose. 
 - **Action **specifies the corresponding action group to be notified and respond. Main action types include Automation Runbook, Azure Function, ITSM, Logic App, Secure Webhook, and Webhook.
 
