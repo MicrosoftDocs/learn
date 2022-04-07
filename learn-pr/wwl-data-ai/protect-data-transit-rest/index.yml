@@ -34,11 +34,12 @@ products:
 - sql-server
 units:
 - learn.wwl.protect-data-transit-at-rest.introduction
-- learn.wwl.protect-data-transit-at-rest.implement-encryption-at-rest
+- learn.wwl.protect-data-transit-at-rest.explore-transparent-data-encryption
 - learn.wwl.protect-data-transit-at-rest.configure-server-and-database-firewall
 - learn.wwl.protect-data-transit-at-rest.explain-object-encryption-secure-enclaves
 - learn.wwl.protect-data-transit-at-rest.enable-encrypted-connections
 - learn.wwl.protect-data-transit-at-rest.describe-sql-injection
+- learn.wwl.protect-data-transit-at-rest.understand-azure-key-vault
 - learn.wwl.protect-data-transit-at-rest.exercise-configure-azure-sql-database-firewall
 - learn.wwl.protect-data-transit-at-rest.knowledge-check
 - learn.wwl.protect-data-transit-at-rest.summary

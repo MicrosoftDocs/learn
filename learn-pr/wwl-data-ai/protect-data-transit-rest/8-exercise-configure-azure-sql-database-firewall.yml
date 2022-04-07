@@ -14,4 +14,4 @@ labId: 85891
 labModal: true
 durationInMinutes: 8
 content: |
-  [!include[](includes/7-exercise-configure-azure-sql-database-firewall.md)]
+  [!include[](includes/8-exercise-configure-azure-sql-database-firewall.md)]

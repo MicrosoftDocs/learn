@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-data-transit-at-rest.understand-azure-key-vault
+title: Understand Azure Key Vault.md
+metadata:
+  title: Understand Azure Key Vault.md
+  description: "Understand Azure Key Vault.md"
+  ms.date: 04/07/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-understand-azure-key-vault.md)]
