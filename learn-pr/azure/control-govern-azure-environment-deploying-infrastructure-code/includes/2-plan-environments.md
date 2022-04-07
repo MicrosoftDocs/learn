@@ -16,16 +16,15 @@ For example, your toy company might have these environments:
 
 | Environment name | Description | Owner | Lifetime | Control level |
 |-|-|-|-|-|
-| Production | TODO | Production Operations team | Long-lived | Controlled |
-| Staging | TODO | Operations team | Long-lived | Controlled |
-| QA | TODO | Operations team | Long-lived | Controlled |
-| Test | TODO | Operations team | Long-lived | Controlled |
-| Development | TODO | Operations team | Long-lived | Controlled |
-| Demo | TODO | Sales team | Long-lived | Uncontrolled |
-| Performance testing | TODO | Test team | Short-lived | Uncontrolled |
-| Penetration testing | TODO | Security team | Short-lived | Uncontrolled |
-| Ephemeral PR reviews | TODO | Development team | Short-lived | Uncontrolled |
-| Development sandboxes | TODO | Development team | Short-lived | Uncontrolled |
+| Development | Integrates changes from multiple developers into a single environment. | Operations team | Long-lived | Controlled |
+| Test | An environment for running manual and automated tests against changes. | Operations team | Long-lived | Controlled |
+| Staging | The final non-production environment that changes are deployed to before production. | Operations team | Long-lived | Controlled |
+| Production | Runs your production workloads. | Production Operations team | Long-lived | Controlled |
+| Demo | Used by the sales team to demonstrate the product to new customers. | Sales team | Long-lived | Uncontrolled |
+| Performance testing | Dynamically created as a duplicate of the production environment for running performance and stress tests, then deleted when the tests are completed. | Test team | Short-lived | Uncontrolled |
+| Penetration testing | Dynamically created as a duplicate of the production environment for running penetration and security tests, then deleted when the tests are completed. | Security team | Short-lived | Uncontrolled |
+| Ephemeral PR reviews | Dynamically created for each pull request (PR) that a team member creates to change the application or infrastructure, then deleted when the pull request is closed. | Development team | Short-lived | Uncontrolled |
+| Development sandboxes | Created by development team members to experiment or explore, and deleted when they no longer need them. | Development team | Short-lived | Uncontrolled |
 
 ## Gates and checks
 
