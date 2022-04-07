@@ -84,7 +84,7 @@ The output is:
 | Russia   |  Moscow   | 17125200  | 143910127.0  | 
 ```
 
-Commonly in a data-science context, you need to generate new columns of data from existing datasets. Because `DataFrame` columns behave like `Series`, you can do this is by performing operations on them as you would with `Series`:
+Commonly in a data-science context, you need to generate new columns of data from existing datasets. Because `DataFrame` columns behave like `Series`, you can do this by performing operations on them as you would with `Series`:
 
 ```python
 countries['Population Density'] = countries['Population'] / countries['Area']
@@ -239,7 +239,7 @@ The output is:
 | Debt-to-GDP ratio   | NaN      | NaN           | NaN           | 2.360000e+00  | 1.900000e-01  |
 ```
 
-Again, note that `DataFrame` columns are `Series`, and thus the data types must consistent. This is the reason you see the upcasting to floating-point numbers.
+Again, note that `DataFrame` columns are `Series`, and thus the data types must be consistent. This is the reason you see the upcasting to floating-point numbers.
 
 > [!Important]
 > If there had been strings in this `DataFrame`, everything would have been upcast to the `string` type. Use caution when transposing `DataFrames`.
