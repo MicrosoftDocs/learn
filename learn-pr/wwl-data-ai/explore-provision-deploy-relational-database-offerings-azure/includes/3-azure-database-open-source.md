@@ -24,6 +24,14 @@ Azure Database for MySQL provides a global database system that scales up to lar
 
 Certain operations aren't available with Azure Database for MySQL. These functions are primarily concerned with security and administration. Azure manages these aspects of the database server itself.
 
+Azure Database for MySQL has two deployment options: Single Server and Flexible Server.
+
+###Azure Database for MySQL Flexible Server
+Azure Database for MySQL Flexible Server is a fully managed databasea s a service offering, with predictable performance and dynamic scalability.Flexible Server provides more granular  control and flexibility over database management functions and configuration settings. Flexible server is the recommneded deployment option for for all new developments or migrations.
+
+###Azure Database for MySQL Single Server
+Azure Database for MySQL Single Server is a fully managed database as a service offering, with predictable  performance and dynamic scalability. Single servers are best for existing applications already using single server.
+
 ### Benefits of Azure Database for MySQL
 
 You get the following features with Azure Database for MySQL:
@@ -62,11 +70,15 @@ Azure Database for MariaDB delivers:
 
 Some features of on-premises PostgreSQL databases aren't available in Azure Database for PostgreSQL. These features are mostly concerned with the extensions that users can add to a database to perform specialized tasks, such as writing stored procedures in various programming languages (other than pgsql, which is available), and interacting directly with the operating system. A core set of the most frequently used extensions is supported, and the list of available extensions is under continuous review.
 
-Azure Database for PostgreSQL has two deployment options: Single-server and Hyperscale.
+Azure Database for PostgreSQL has three deployment options: Single Server, Flexible Server, and Hyperscale.
 
-### Azure Database for PostgreSQL single-server
+### Azure Database for PostgreSQL Single Server
 
 The single-server deployment option for PostgreSQL provides similar benefits as Azure Database for MySQL. You choose from three pricing tiers: Basic, General Purpose, and Memory Optimized. Each tier supports different numbers of CPUs, memory, and storage sizes—you select one based on the load you expect to support.
+
+### Azure Database for PostgreSQL Flexible Server
+
+The flexible-server deployment option for PostgreSQL is a fully managed database service. It provides more control and server configuration customizations, and has better cost optimization controls. 
 
 ### Azure Database for PostgreSQL Hyperscale (Citus)
 

@@ -30,9 +30,9 @@ BlobServiceClient sourceClient = new BlobServiceClient(sourceConnection);
 
 ## Download a blob
 
-To download a blob, you obtain a *blob container client* that has a reference to the container holding the blob, using the `BlobContainerClient` object. Through this container, you you obtain a reference to the blob itself, called `BlobClient`. You can then invoke the `DownloadToAsync` method to fetch the contents of the blob to a local file.
+To download a blob, you obtain a *blob container client* that has a reference to the container holding the blob, using the `BlobContainerClient` object. Through this container, you obtain a reference to the blob itself, called `BlobClient`. You can then invoke the `DownloadToAsync` method to fetch the contents of the blob to a local file.
 
-The blob reference also provides access to properties and other details for the blob, such as its last modified date and creation date. The following code shows an example that downloads a blob named *MyBlob.doc* to a local file named *MyFile.doc*. The code also displays the last modified date for the blob.
+The blob reference also provides access to the properties of the blob, such as its last modified date and creation date. The following code shows an example that downloads a blob named *MyBlob.doc* to a local file named *MyFile.doc*. The code also displays the last modified date for the blob.
 
 ```C#
 ...
@@ -54,7 +54,7 @@ You can stream data from a large blob with the `DownloadStreamingAsync` method o
 
 ## Upload a blob
 
-To create a new blob using a local file, the process is similar to previously described. Obtain a reference to the container that will hold the blob, and create a reference for your new blob. Specify the name for your new blob. You can then use the `UploadAsync` method to read data from a local file, and copy it to the new blob. The following code shows an example of this approach.
+To create a new blob using a local file, the process is similar to downloading. Obtain a reference to the container that will hold the blob, and create a reference for your new blob. Specify the name for your new blob. You can then use the `UploadAsync` method to read data from a local file, and copy it to the new blob. The following code shows an example of this approach.
 
 ```C#
 ...
@@ -64,7 +64,7 @@ To create a new blob using a local file, the process is similar to previously de
 BlobContainerClient destBlobContainer = destClient.GetBlobContainerClient(destContainer);
 destBlobContainer.CreateIfNotExists();
 
-BlobClient destBlob = destContainer.GetBlobClient("NewBlob.doc");
+BlobClient destBlob = destBlobContainer.GetBlobClient("NewBlob.doc");
 await destBlob.UploadAsync("MyFile.doc");
 
 ...
@@ -101,9 +101,9 @@ private static Uri GetSharedAccessUri(string blobName, BlobContainerClient conta
 }
 ```
 
-The `StartCopyFromUriAsync` method initiates the blob copy operation and the process runs in the background. As the method returns the `CopyFromUriOperation` object, you can check on the progress of the operation by retrieving a reference to the destination blob, and querying its `HasCompleted` property. The value has a value of `false` while the copy is in progress. Additionally, you can find out how many bytes have been copied using the `WaitForCompletionAsync` method of the `CopyFromUriOperation` object.
+The `StartCopyFromUriAsync` method initiates the blob copy operation and the process runs in the background. As the method returns the `CopyFromUriOperation` object, you can check on the progress of the operation by retrieving a reference to the destination blob, and querying its `HasCompleted` property. The property has a value of `false` while the copy is in progress. Additionally, you can find out how many bytes have been copied using the `WaitForCompletionAsync` method of the `CopyFromUriOperation` object.
 
-The following code sample retrieves a reference to the destination blob, and monitors the progress as it is copied. The `WaitForCompletionAsync` method updates the information how many bytes is being copied. So, to obtain the up-to-date status of the blob, fetch this information from the server in the loop.
+The following code sample retrieves a reference to the destination blob, and monitors the progress as it is copied. The `WaitForCompletionAsync` method updates the *copied* variable with the number of bytes that have been copied.
 
 ```C#
 ...
@@ -124,7 +124,7 @@ Console.WriteLine($"Blob: {destBlob.Name} Complete");
 
 ## Delete a blob
 
-To remove a blob from a container, use one of the *Delete* methods of the blob object. There are two methods available `DeleteAsync` and `DeleteIfExistsAsync`. Both methods delete the specified blob, but `DeleteIfExistsAsync` returns a boolean value indicating whether the blob actually existed before or not.
+To remove a blob from a container, use one of the *Delete* methods of the blob object. There are two methods available, `DeleteAsync` and `DeleteIfExistsAsync`. Both methods delete the specified blob, but `DeleteIfExistsAsync` returns a boolean value indicating whether the blob actually existed before or not.
 
 The following code uses `DeleteIfExistsAsync` to remove a blob, and detects whether the blob existed beforehand.
 
