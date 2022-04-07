@@ -3,7 +3,7 @@ uid: learn.azure.monitor-azure-arc-enabled-servers.deploy-and-manage-observabili
 title: Deploy and manage observability agents with ease using VM extensions for Azure Arc-enabled servers
 metadata:
   title: Deploy and manage observability agents with ease using VM extensions for Azure Arc-enabled servers
-  description: TBD
+  description: Deploy and manage observability agents with ease using VM extensions for Azure Arc-enabled servers
   ms.date: 04/01/2022
   author: aurnovcy
   ms.author: aurnovc
