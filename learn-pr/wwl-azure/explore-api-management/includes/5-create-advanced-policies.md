@@ -70,7 +70,7 @@ The `mock-response`, as the name implies, is used to mock APIs and operations. I
 The `retry` policy executes its child policies once and then retries their execution until the retry `condition` becomes `false` or retry `count` is exhausted.
 
 ```xml
-<retry>
+<retry
     condition="boolean expression or literal"
     count="number of retry attempts"
     interval="retry interval in seconds"
