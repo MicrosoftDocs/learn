@@ -10,7 +10,7 @@ VM extensions can be applied to your Arc-enabled server via the Azure portal.
 
 On the Azure Monitor Insights Onboarding page, you are prompted to create a workspace. You can either select an existing Log Analytics workspace or select the default. The default is a configured workspace with a unique name in the same region as the Azure Arc-enabled server. 
 
-![Azure Monitor enable VM Insights](../media/image1.png)
+<kbd>![Azure Monitor enable VM Insights](../media/image-1.png)<kbd>
 
 1. With VM insights enabled, you will get a message that the machine has been successfully onboarded to VM insights. This process takes a few minutes as extensions are installed on your connected machine.
 
@@ -18,10 +18,10 @@ On the Azure Monitor Insights Onboarding page, you are prompted to create a work
 
 After the deployment and configuration is completed, select **Insights**, and then select the **Performance** tab. You’ll see a select group of performance counters collected from the guest operating system of your machine at the top. Hover over a graph to view averages and percentiles taken starting from the time when the Log Analytics VM extension was installed on the machine.
 
-![VM Insights Performance View](../media/image2.png)
+<kbd>![VM Insights Performance View](../media/image-2.png)<kbd>
 
 Select **Map** to open the maps feature, which shows the processes running on the machine and their dependencies. Select **Properties** to open the property pane if it isn't already open.
 
-![VM Insights Map View](../media/image3.png)
+<kbd>![VM Insights Map View](../media/image-3.png)<kbd>
 
 Select your machine again and then select **Log Events**. You see a list of tables that are stored in the Log Analytics workspace for the machine. Select **Event** table. The **Event** table includes all events from the Windows event log. Log Analytics opens with a simple query to retrieve collected event log entries.
