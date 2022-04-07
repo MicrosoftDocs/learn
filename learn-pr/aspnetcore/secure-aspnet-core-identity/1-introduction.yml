@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-aspnet-core-identity.1-introduction
+uid: learn.secure-aspnet-core-identity.introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 08/20/2019
-  author: scottaddie
-  ms.author: scaddie
+  ms.date: 03/16/2022
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Introduction
