@@ -35,7 +35,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 1. Select **Virtual machines**.
 
-    :::image type="content" source="../media/4-portal-select-virtual-machines.png" alt-text="" lightbox="../media/4-portal-select-virtual-machines.png":::
+    :::image type="content" source="../media/4-portal-select-virtual-machines.png" alt-text="Screenshot of the virtual machines." lightbox="../media/4-portal-select-virtual-machines.png":::
 
 1. Select **webVirtualMachine1**.
 
