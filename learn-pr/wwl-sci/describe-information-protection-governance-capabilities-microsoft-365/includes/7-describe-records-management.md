@@ -1,13 +1,11 @@
-Organizations of all types require a management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management in Microsoft 365 helps an organization look after their legal obligations. It also helps to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be kept, no longer of value, or no longer required for business purposes. It provides the following capabilities:
+Organizations of all types require a management solution to manage regulatory, legal, and business-critical records across their corporate data. Records management in Microsoft 365 helps an organization look after their legal obligations. It also helps to demonstrate compliance with regulations, and increases efficiency with regular disposition of items that are no longer required to be kept, no longer of value, or no longer required for business purposes. Records management in Microsoft 365 includes many features, including:
 
 - Labeling content as a record.
-- Migrating and managing retention plans with file plan manager.
 - Establishing retention and deletion policies within the record label.
 - Triggering event-based retention.
 - Reviewing and validating disposition.
 - Proof of records deletion.
 - Exporting information about disposed items.
-- Setting specific permissions for record manager functions in the organization.
 
 When content is labeled as a record, the following happens:
 
@@ -25,7 +23,7 @@ Items might be marked as records, but they can also be shown as regulatory recor
 - A regulatory label can’t be removed when an item has been marked as a regulatory record.
 - The retention periods can’t be made shorter after the label has been applied.
 
-For more information on comparing, use the [Compare restrictions for what actions are allowed or blocked section](https://docs.microsoft.com/microsoft-365/compliance/records-management?view=o365-worldwide#compare-restrictions-for-what-actions-are-allowed-or-blocked) of the documentation.
+For more information on comparing, use the [Compare restrictions for what actions are allowed or blocked section](/microsoft-365/compliance/records-management?view=o365-worldwide#compare-restrictions-for-what-actions-are-allowed-or-blocked) of the documentation.
 
 The most important difference is that if content has been marked as a regulatory record, nobody, not even a global administrator, can remove the label. Marking an item as a regulatory record can have irreversible consequences, and should only be used when necessary. As a result, this option isn’t available by default, and has to be enabled by the administrator using PowerShell.
 

@@ -25,4 +25,4 @@ Data collector sets can use the following types of data collectors:
 - System configuration information. This data collector allows you to record the current state of registry keys and to record changes to those keys.
 
 > [!TIP]
-> You can create a data collector set from a template, from an existing set of data collectors in a Performance Monitor view, or by selecting individual data collectors, and then setting each individual option in the data collector set properties.
+> You can create a data collector set from a template, from an existing set of data collectors in a Performance Monitor view, or by selecting individual data collectors, and then setting each individual option in the data collector set properties.
