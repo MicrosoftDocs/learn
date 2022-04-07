@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-smart-and-scalable-alerts-for-azure-arc-enabled-servers-with-azure-monitor.md)]
+  [!include[](includes/5-smart-scalable-alerts-azure-arc-enabled-servers-with-azure-monitor.md)]
