@@ -4,13 +4,13 @@ title: Explain object encryption and secure enclaves
 metadata:
   title: Explain object encryption and secure enclaves
   description: "Explain object encryption and secure enclaves"
-  ms.date: 03/31/2022
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 12
+durationInMinutes: 8
 content: |
   [!include[](includes/4-explain-object-encryption-secure-enclaves.md)]
