@@ -25,7 +25,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
     > [!NOTE]
     > Your IP address will be different to the one shown in the screenshot.
 
-1. Hit refresh in your browser, or on Windows press the <kbd>F5</kbd> ten or twenty times. Notice that you are getting a response from the same webserver every single time.
+1. Hit refresh in your browser, or on Windows press the **F5** ten or twenty times. Notice that you are getting a response from the same webserver every single time.
 
 1. Leave this tab open to check you resolve the issue in the next exercise.
 
@@ -79,11 +79,11 @@ The current settings appear to be correct.
 
 1. Under **Settings**, select **Load balancing rules**, then select **webLoadBalancerRule**.
 
-    :::image type="content" source="../media/4-load-balancer-rules.png" alt-text="Screenshot showing the webLoadBalancerRule to select.":::
+    :::image type="content" source="../media/4-load-balancer-rules.png" alt-text="Screenshot showing the webLoadBalancerRule to select." lightbox"../media/4-load-balancer-rules.png":::
 
 1. Check all the settings for the load balancer rule.
 
-    :::image type="content" source="../media/4-webLoadBalancerRule-settings.png" alt-text="Screenshot of the webLoadBalancerRule settings." lightbox="../media/4-webLoadBalancerRule-settings.png":::
+    :::image type="content" source="../media/4-web-load-balancer-rule-settings.png" alt-text="Screenshot of the webLoadBalancerRule settings." lightbox="../media/4-webLoadBalancerRule-settings.png":::
 
 You think you have identified the issue. At the moment once a user visits the website they are routed to one virtual machine. This will persist because of the **Session persistence** setting.
 
