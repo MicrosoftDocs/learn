@@ -6,7 +6,7 @@ Today's complex computing environments run distributed applications that rely on
 
 Azure Monitor collects and aggregates data from a variety of sources into a common data platform where it can be used for analysis, visualization, and alerting. It provides a consistent experience on top of data from multiple sources, which gives you deep insights across all your monitored resources, and even with data from other services that store their data in Azure Monitor.
 
-![Azure Monitor architecture outlining core components](../media/image4.png)
+<kbd>![Azure Monitor architecture outlining core components](../media/image-4.png)<kbd>
 
 ## Azure Monitor metrics
 
@@ -21,7 +21,7 @@ Metrics are available for interactive analysis in the Azure portal with Azure Me
 - Visualize by pinning query results as tables or charts in Azure dashboards, creating a workbook combining multiple data sets, or exporting results to Grafana.
 - Automate using Autoscale to increase or decrease resources based on a metric value crossing a threshold.
 
-![Azure Metrics Architecture diagram outlining core components](../media/image5.png)
+<kbd>![Azure Metrics Architecture diagram outlining core components](../media/image-5.png)<kbd>
 
 ## Azure Monitor Logs
 
@@ -35,7 +35,7 @@ You can work with log queries interactively with Log Analytics in the Azure port
 - Alert by configuring a log alert rule that sends a notification or takes automated action when the results of the query match a particular result.
 - Visualize by pinning query results as tables or charts in Azure dashboards, creating a workbook combining multiple data sets, or exporting results to Power BI or Grafana for visualization.
 
-![Azure Logs Architecture outlining core components](../media/image6.png)
+<kbd>![Azure Logs Architecture outlining core components](../media/image-6.png)<kbd>
 
 ## Azure Log Analytics
 
@@ -45,4 +45,4 @@ A Log Analytics workspace is a unique environment for log data from Azure Monito
 
 For Azure Arc-enabled servers, select Logs from the left navigation pane to run queries on collected Azure Monitor Log Analytics data. 
 
-![Azure Log Analytics workspace view outlining core components](../media/image7.png)
+<kbd>![Azure Log Analytics workspace view outlining core components](../media/image-7.png)<kbd>
