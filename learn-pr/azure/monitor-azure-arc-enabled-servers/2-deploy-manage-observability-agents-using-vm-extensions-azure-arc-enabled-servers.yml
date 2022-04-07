@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-deploy-and-manage-observability-agents-with-ease-using-vm-extensions-for-azure-arc-enabled-servers.md)]
+  [!include[](includes/2-deploy-manage-observability-agents-using-vm-extensions-azure-arc-enabled-servers.md)]
