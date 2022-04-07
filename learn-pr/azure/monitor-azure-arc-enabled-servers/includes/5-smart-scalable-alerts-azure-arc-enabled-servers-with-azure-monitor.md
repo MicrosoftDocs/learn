@@ -2,17 +2,15 @@ Tailwind Manufacturing is interested in setting up a system of alerts to respond
 
 ## Overview of Azure Monitor alerts and alert rules
 
-Alerts proactively notify you when issues are found with your infrastructure or application using your monitoring data in Azure Monitor. They allow you to identify and address issues before the users of your system notice them. The following diagram shows the core components of Azure Monitor alerts: alert rules, action groups, and monitor conditions. 
-
-![Alert rule diagram](../media/image8.png)
+Alerts proactively notify you when issues are found with your infrastructure or application using your monitoring data in Azure Monitor. They allow you to identify and address issues before the users of your system notice them. The core components of Azure Monitor alerts include alert rules, action groups, and monitor conditions. 
 
 Alert rules are separated from alerts and the actions taken when an alert fires. The alert rule captures the target and criteria for alerting. Key attributes of an alert include:
 
 - **Target resource** defines the scope and signals available for alerting. A target can be any Azure resource. Azure Arc-enabled servers can be targets for Azure Monitor Alerts.
 - **Signal** includes the metric, activity log, Application Insights, and log emitted by the target resource. An example could be the heartbeats emitted by or the CPU Utilization threshold of an Azure Arc-enabled server. 
 - **Criteria** specifies the combination of signal and logic applied on a target resource. An example could be CPU utilization threshold passing 70%.  
-- **Alert name, Alert description, **and** Severity** are configured by the user. Severity ranges from 0 to 4, where Sev 0 is Critical, Sev 1 is Error, Sev 2 is Warning, Sev 3 is Informational, and Sev 4 is Verbose. 
-- **Action **specifies the corresponding action group to be notified and respond. Main action types include Automation Runbook, Azure Function, ITSM, Logic App, Secure Webhook, and Webhook.
+- **Alert name, Alert description,** and **Severity** are configured by the user. Severity ranges from 0 to 4, where Sev 0 is Critical, Sev 1 is Error, Sev 2 is Warning, Sev 3 is Informational, and Sev 4 is Verbose. 
+- **Action** specifies the corresponding action group to be notified and respond. Main action types include Automation Runbook, Azure Function, ITSM, Logic App, Secure Webhook, and Webhook.
 
 The default **Alerts** page provides a summary of alerts that are created within a particular time range. You can also manage the state of an alert to specify where it is in the resolution process. When the criteria specified in the alert rule is met, an alert is created or fired, and it has a status of New. You can change the status when you acknowledge an alert and when you close it. All state changes are stored in the history of the alert. 
 
