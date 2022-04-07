@@ -19,7 +19,7 @@ quiz:
 
     - content: "Which of the following is NOT an example of cloud middleware functionality?"
       choices:
-      - content: "An API that allows users to use manage their cloud resources"
+      - content: "An API that allows users to manage their cloud resources"
         isCorrect: false
         explanation: "Incorrect. A resource-management API is an example of a cloud middleware service."
       - content: "An authentication-management system that tracks user’s roles and grants access to various resources"
