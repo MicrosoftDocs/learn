@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-develop-a-robust-data-foundation-of-azure-arc-enabled-servers-with-azure-monitor-metrics-and-logs.md)]
+  [!include[](includes/4-develop-robust-data-foundation-azure-arc-enabled-servers-azure-monitor-metrics-logs.md)]
