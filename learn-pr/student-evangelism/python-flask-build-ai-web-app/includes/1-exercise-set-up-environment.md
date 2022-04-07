@@ -58,13 +58,13 @@ To use a virtual environment, we'll create and activate it. We create it by usin
 ```bash
 # Windows
 # Create the environment
-python3 -m venv venv
+python -m venv venv
 # Activate the environment
 .\venv\scripts\activate
 
 # macOS or Linux
 # Create the environment
-python3 -m venv venv
+python -m venv venv
 # Activate the environment
 source ./venv/bin/activate
 ```
@@ -81,7 +81,7 @@ During later exercises, we'll use a couple of other libraries, including **reque
    code .
    ```
 
-2. In Visual Studio Code, in the **Explorer** window, select **New File** next to the contoso directory
+2. In Visual Studio Code, in the **Explorer** window, select **New File** next to the **contoso** directory
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing the New File button in Visual Studio Code.](../media/create-file.png)
