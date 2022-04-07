@@ -1,0 +1,78 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-hololens.knowledge-check
+title: Check your knowledge
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 4/7/2022
+  author: qianw211
+  ms.author: qianwen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-hololens
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Does HoloLens require tethered connection to a PC or phone?"
+    choices:
+    - content: "PC"
+      isCorrect: false
+    - content: "Phone"
+      isCorrect: false
+    - content: "Untethered"
+      isCorrect: true
+    - content: "Power cable"
+      isCorrect: false
+  - content: "Dynamics 365 Guides is best used for:"
+    choices:
+    - content: "Training"
+      isCorrect: true
+    - content: "Reading manuals"
+      isCorrect: false
+    - content: "Calling"
+      isCorrect: false
+    - content: "Viewing models"
+      isCorrect: false
+  - content: "All of these Azure services exist and can be incorporated into your mixed reality apps except:"
+    choices:
+    - content: "Azure Remote Rendering"
+      isCorrect: false
+    - content: "Azure Object Anchoring"
+      isCorrect: false
+    - content: "Azure Virtual Rooms"
+      isCorrect: true
+    - content: "Azure Spatial Anchors"
+      isCorrect: false
+  - content: "Which application will allow HoloLens employees to collaborate in real time with remote colleagues?"
+    choices:  
+    - content: "Dynamics 365 Remote Assist"
+      isCorrect: true
+      explanation: "Dynamics 365 Remote Assist empowers your service technicians to collaborate and solve problems quickly by placing video calls to remote experts."
+    - content: "Dynamics 365 Guides"
+      isCorrect: false
+      explanation: "Dynamics 365 Guides help your employees create step-by-step visual interactive holographic work instructions that increase the speed at which your employees can learn new skills."
+    - content: "Dynamics 365 Business Central"
+      isCorrect: false
+      explanation: "Dynamics 365 Business Central makes it easy to work smarter and perform better across your entire business, by managing sales, inventory, and other processes to chart your future growth."
+  - content: "In which industry does HoloLens 2 have a record of zero errors in two years?"
+    choices:
+    - content: "Manufacturing"
+      isCorrect: true
+      explanation: "Lockheed Martin reported that over a two-year period, the Orion Spacecraft project had no human errors or rework requests on its manufacture and assembly."
+    - content: "Retail"
+      isCorrect: false
+      explanation: "Retailers credit HoloLens with helping them gather and visualize information that improves customer service, leading to better customer satisfaction."
+    - content: "Healthcare"
+      isCorrect: false
+      explanation: "HoloLens 2 prevents errors by training healthcare works in simulated environments, eliminating the risk of adversely impacting patient care. "
+  - content: "What is the rate of return forecasted from a three-year investment in HoloLens 2, based on the Forrester TEI study?"
+    choices:
+    - content: "177%"
+      isCorrect: true
+      explanation: "Forrester’s risk-adjusted financial analysis for a composite organization shows a three-year ROI of 177%, an NPV of $7.6 million, and a payback period of 13 months with $11.9 million in total benefits versus $4.3 million in total costs."
+    - content: "55-60%"
+      isCorrect: false
+      explanation: "Kuchen Quelle reported an increase of 55-60% in their average conversion rate."
+    - content: "50%."
+      isCorrect: false
+      explanation: "Case Western Reserve reported that students learning remotely scored 50% higher on exams when using HoloLens 2."
