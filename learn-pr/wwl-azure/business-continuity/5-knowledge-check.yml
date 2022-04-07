@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.business-continuity.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/05/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What should an administrator view to see whether a scheduled backup has completed successfully?"
+    choices:
+    - content: "Azure Backup Center vault status"
+      isCorrect: false
+      explanation: "That's incorrect. The Azure Backup Center vault status won't display the status for a scheduled backup."
+    - content: "Azure Backup Center job status"
+      isCorrect: true
+      explanation: "That's correct. The Azure Backup Center displays the number of scheduled backups, on-demand backups, and restores have completed successfully, are in progress, or failed. Select View All to see details for individual jobs."
+    - content: "Azure Backup Center backup policies"
+      isCorrect: false
+      explanation: "That's incorrect. The Azure Backup Center backup policies won't display the status of a scheduled backup."
+  - content: "To configure email notification when a backup alert is triggered, what actions should an administrator take?"
+    choices:
+    - content: "Nothing  email alerts are automatically sent to the administrators email address."
+      isCorrect: false
+      explanation: "That's incorrect. Email alerts aren't automatically sent to the administrators email address."
+    - content: "Create an alert processing rule."
+      isCorrect: true
+      explanation: "That's correct. To receive email notifications when a backup alert is triggered, you must create an alert processing rule"
+    - content: "Select the email alert check box when creating the backup job."
+      isCorrect: false
+      explanation: "That's incorrect. When you create a backup job there isn't an option to provide email alerts in case of problems."
+  - content: "When replicating an Azure VM from one region to another, which scenarios might cause a problem with the Azure VM backup?"
+    choices:
+    - content: "High data change rate on the Azure VM being replicated."
+      isCorrect: false
+      explanation: "That's incorrect. A high data change rate may affect the Azure VM being replicated, but only if the data change rate goes beyond a certain limit."
+    - content: "Azure VM is in a Stopped state."
+      isCorrect: true
+      explanation: "That's correct. The Azure VM can't be in a Stopped state if you want to replicate it."
+    - content: "Crash-consistent recovery points couldn't be created every five minutes."
+      isCorrect: false
+      explanation: "That's incorrect. This won't necessarily stop the VM from being replicated."
