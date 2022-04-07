@@ -12405,6 +12405,11 @@
       "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/6-describe-concept-of-hybrid-identities.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-basic-services-identity-types/6-describe-concept-of-hybrid-identity",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/explore-access-management-capabilities/2-describe-conditional-access-its-benefits.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-access-management-capabilities/2-describe-conditional-access-azure-ad",
+      "redirect_document_id": true
     }
   ]
 }
