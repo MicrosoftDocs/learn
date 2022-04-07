@@ -6,7 +6,9 @@ metadata:
   description: "Set up troubleshooting environment"
   ms.date: 04/07/2022
   author: wwlpublish
+  ms.author: lola
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: true
 labModal: false
 durationInMinutes: 3

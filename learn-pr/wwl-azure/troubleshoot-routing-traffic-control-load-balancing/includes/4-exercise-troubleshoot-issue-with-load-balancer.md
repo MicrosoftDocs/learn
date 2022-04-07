@@ -25,7 +25,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
     > [!NOTE]
     > Your IP address will be different to the one shown in the screenshot.
 
-1. Hit refresh in your browser, or on Windows press the <kbd>F5</kbd> ten or twenty times. Notice that you are getting the a response from the same webserver every single time.
+1. Hit refresh in your browser, or on Windows press the <kbd>F5</kbd> ten or twenty times. Notice that you are getting a response from the same webserver every single time.
 
 1. Leave this tab open to check you resolve the issue in the next exercise.
 

@@ -14,7 +14,7 @@ Use these resources to discover more.
 
 [Diagnose an Azure virtual machine routing problem | Microsoft Docs](/azure/virtual-network/diagnose-network-routing-problem)
 
-[Troubleshoot Azure Load Balancer | Microsoft Docs](/en-us/azure/load-balancer/load-balancer-troubleshoot-backend-traffic)
+[Troubleshoot Azure Load Balancer | Microsoft Docs](/azure/load-balancer/load-balancer-troubleshoot-backend-traffic)
 
 [Troubleshoot Azure Front Door common issues | Microsoft Docs](/azure/frontdoor/troubleshoot-issues)
 
