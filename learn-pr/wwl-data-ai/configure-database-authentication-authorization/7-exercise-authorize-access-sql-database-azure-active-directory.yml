@@ -4,7 +4,7 @@ title: 'Exercise: Authorize Access to Azure SQL Database with Azure Active Direc
 metadata:
   title: 'Exercise: Authorize Access to Azure SQL Database with Azure Active Directory'
   description: "Exercise: Authorize Access to Azure SQL Database with Azure Active Directory"
-  ms.date: 12/01/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -14,4 +14,4 @@ labId: 85928
 labModal: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/8-exercise-authorize-access-sql-database-azure-active-directory.md)]
+  [!include[](includes/7-exercise-authorize-access-sql-database-azure-active-directory.md)]

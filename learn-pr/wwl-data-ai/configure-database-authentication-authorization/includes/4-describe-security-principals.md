@@ -9,7 +9,7 @@ At the database level, we’ll look at users, database roles, application roles.
 
 Before we look at the details of security principals, we need to understand the concepts of securables and schemas. SQL Server and Azure SQL Database have three scopes for securables. Securables are the resources within the database to which the authorization system manages access. For example, a table is a securable. To simplify access control, SQL Server contains securables in nested hierarchies called scopes. The three securable scopes are the server, the database, and the schema. A schema is a collection of objects within your database, which allows objects to be grouped into separate namespaces.
 
-Every user has a default schema. If a user tries to access an object without specifying a schema name, as in: SELECT name FROM customers, it is assumed the object is in the user’s default schema. If there is no such object in the default schema, SQL Server will check to see if the object is in the pre-defined dbo schema. If there is no object of the specified name in either the user’s default schema, or in the dbo schema, the user will receive an error message. It is considered best practice to always specify the schema name when accessing objects, so the previous select would be something like:
+Every user has a default schema. If a user tries to access an object without specifying a schema name, as in: `SELECT name FROM customers`, it is assumed the object is in the user’s default schema. If there is no such object in the default schema, SQL Server will check to see if the object is in the pre-defined dbo schema. If there is no object of the specified name in either the user’s default schema, or in the dbo schema, the user will receive an error message. It is considered best practice to always specify the schema name when accessing objects, so the previous select would be something like:
 `SELECT name FROM SalesSchema.customers`. If a user has not been given a default schema, their default schema is set to dbo.
 
 By default, if no schema is specified when a user creates an object, SQL Server will attempt to create it in the user’s default schema. If the user has not been granted permission to create objects in their default schema, the object cannot be created.
@@ -25,7 +25,7 @@ CREATE USER [dba@contoso.com] FROM EXTERNAL PROVIDER;
 GO
 ```
 
-The create user statement is executed in the context of the user database. In the example above, the user is an Azure Active Directory user as indicated with the FROM EXTERNAL PROVIDER syntax. 
+The `CREATE USER` statement is executed in the context of the user database. In the example above, the user is an Azure Active Directory user as indicated with the `FROM EXTERNAL PROVIDER` syntax.
 
 If logins are created at the instance level in SQL Server, a user should then be created within the database, which maps the user to the server-based login as shown in the following example.
 
@@ -75,7 +75,7 @@ GRANT SELECT, EXECUTE ON SCHEMA::Sales TO [SalesReader]
 GO
 ```
 
-In the above example, you can see that two users are created, and then a role called SalesReader is created. The two new users are added to the newly created role, and then finally the role is granted SELECT and EXECUTE permissions on the Sales schema. Any user who is in that role can select from any object in the Sales schema, as well as execute any stored procedure in the schema.
+In the above example, you can see that two users are created, and then a role called SalesReader is created. The two new users are added to the newly created role, and then finally the role is granted `SELECT` and `EXECUTE` permissions on the *Sales* schema. Any user who is in that role can select from any object in the *Sales* schema, as well as execute any stored procedure in the schema.
 
 ## Application roles
 
@@ -85,36 +85,31 @@ Application roles can also be created within a SQL Server database or Azure SQL 
 
 Microsoft SQL Server contains several fixed database roles within each database for which the permissions are predefined. Users can be added as members of one or more roles. These roles give their members a pre-defined set of permissions. These roles work the same within Azure SQL Database and SQL Server.
 
-Users that need to create other users within the database can be granted membership in the role *db_accessadmin*. This role does not grant access to the schema of any of the tables, nor does it grant access to the data within the database.
+| Database role | Definition |
+|------------|-------------|
+|**db_accessadmin** | Allows users to create other users within the database. This role does not grant access to the schema of any of the tables, nor does it grant access to the data within the database. |
+|**db_backupoperator** | Allows users to back up a database in a SQL Server or Managed Instance. The role *db_backupoperator* does not confer any permissions in an Azure SQL Database. |
+|**db_datareader** | Allows users to read from every table and view within the database. |
+|**db_datawriter** | Allows users to `INSERT`, `UPDATE`, and `DELETE` data from every table and view within the database. |
+|**db_ddladmin** | Allows users to create or modify objects within the database. Members of this role can change the definition of any object, of any type, but members of this role are not granted access to read or write any data within the databases. |
+|**db_denydatareader** | Users who need to be prevented from reading data from any object in the database, when those users have been granted rights through other roles or directly. |
+|**db_denydatawriter** | Users who need to be prevented from writing data to any object in the database, when those users have been granted rights through other roles or directly. |
+|**db_securityadmin** | Users who need to be able to grant access to other users within the database. Members of this role are not specifically granted access to the data within the database; however members of this role can grant themselves access to the tables within the database. Membership in this database role should be limited to only trusted users. |
+|**db_owner** | Users who need administrative access to the database. Members of this role can perform any action within the database by default. However, unlike the actual database owner, who has the user name *dbo*, users in the `db_owner` role can be blocked from accessing data by placing them in other database roles, such as `db_denydatareader`, or by denying them access to objects. Membership in this database role should be limited to only trusted users. |
 
-Users that need to back up a database in a SQL Server or Managed Instance can be made members of the role *db_backupoperator*. The role *db_backupoperator* does not confer any permissions in an Azure SQL Database.
+All users within a database are automatically members of the `public` role. By default, this role has no permissions granted to it. Permissions can be granted to the public role, but you should consider carefully whether that is really something you want to do. Granting permissions to the public role would grant these permissions to any user, including the guest account, if the guest account was enabled.
 
-Users that need the ability to read from every table and view within the database can be made members of the role *db_datareader*.
-
-Users that need the ability to INSERT, UPDATE, and DELETE data from every table and view within the database can be made members of the role *db_datawriter*.
-
-Users who need the ability to create or modify objects within the database can be made members of the role *db_ddladmin*. Members of this role can change the definition of any object, of any type, but members of this role are not granted access to read or write any data within the databases.
-
-The role *db_denydatareader* can be used for users who need to be prevented from reading data from any object in the database, when those users have been granted rights through other roles or directly.
-
-The role *db_denydatawriter* can be used for users who need to be prevented from writing data to any object in the database, when those users have been granted rights through other roles or directly.
-
-Users who need administrative access to the database can be made members of the role db_owner. Members of the db_owner role can perform any action within the database by default. However, unlike the actual database owner, who has the user name *dbo*, users in the db_owner role can be blocked from accessing data by placing them in other database roles, such as *db_denydatareader*, or by denying them access to objects. Membership in this database role should be limited to only trusted users.
-
-Users who need to be able to grant access to other users within the database can be made members of the role *db_securityadmin*. Members of this role are not specifically granted access to the data within the database; however members of this role can grant themselves access to the tables within the database. Membership in this database role should be limited to only trusted users.
-
-All users within a database are automatically members of the public role. By default, this role has no permissions granted to it. Permissions can be granted to the public role, but you should consider carefully whether that is really something you want to do. Granting permissions to the public role would grant these permissions to any user, including the guest account, if the guest account was enabled.
-
-The built-in database roles do meet the needs of many applications; however with applications that require more granular security (for example, when you only want to grant access to a specific subset of tables) a custom role is often a better choice. 
+The built-in database roles do meet the needs of many applications; however with applications that require more granular security (for example, when you only want to grant access to a specific subset of tables) a custom role is often a better choice.
 
  > [!NOTE]
- >By default, users in roles like *db_owner* can always see all of the data in the database. Applications can take advantage of encryption options like Always Encrypted to protect sensitive data from privileged users.
+ >By default, users in roles like *db_owner* can always see all of the data in the database. Applications can take advantage of encryption options like **Always Encrypted** to protect sensitive data from privileged users.
 
 Azure SQL Database has two additional roles that are defined in the master database of Azure SQL server.
 
-The role *dbmanager* within the master database allows its members to create additional databases within the Azure SQL Database environment. This role is the equivalent of the *dbcreator* fixed server role in an on-premises Microsoft SQL Server.
-
-The role loginmanager within the master database allows its members to create additional logins at the server level. This role is the equivalent of the securityadmin fixed server role in an on-premises Microsoft SQL Server.
+| Database Role | Definition |
+|------------|-------------|
+|**dbmanager** | Allows its members to create additional databases within the Azure SQL Database environment. This role is the equivalent of the `dbcreator` fixed server role in an on-premises Microsoft SQL Server. |
+|**loginmanager** | Allows its members to create additional logins at the server level. This role is the equivalent of the `securityadmin` fixed server role in an on-premises Microsoft SQL Server. |
 
 ## Fixed server roles
 
@@ -122,12 +117,12 @@ In addition to database roles, SQL Server and Azure SQL Managed Instance both pr
 
 | Fixed server role | Definition |
 |------------|-------------|
-|**Sysadmin** | Members of the sysadmin role can perform any activity on the server.
-|**Serveradmin** | Members of the serveradmin role can change server-wide configuration settings (for example Max Server Memory) and can shut down the server. |
-|**Securityadmin** | Members of the securityadmin role can manage logins and their properties (for example, changing the password of a login). The members can also grant and revoke server and database level permissions. This role should be treated as being equivalent to the sysadmin role. |
-|**Processadmin** | Members of the processadmin role can kill processes running inside of SQL Server. |
-|**Setupadmin** | Members of the setupadmin role can add and remove linked servers using T-SQL. |
-|**Bulkadmin** | Members of the bulkadmin role can run the `BULK INSERT` T-SQL statement. |
-|**Diskadmin** | Members of the diskadmin role have the ability to manage backup devices in SQL Server. |
-|**Dbcreator** | Members of the dbcreator role have the ability to create, restore, alter, and drop any database. |
-|**Public** | Every SQL Server login belongs to the public user role. Unlike the other fixed server roles, permissions can be granted, denied, or revoked from the public role. |
+|**sysadmin** |  Allows its members to perform any activity on the server.
+|**serveradmin** |  Allows its members to change server-wide configuration settings (for example Max Server Memory) and can shut down the server. |
+|**securityadmin** | Allows its members to manage logins and their properties (for example, changing the password of a login). The members can also grant and revoke server and database level permissions. This role should be treated as being equivalent to the sysadmin role. |
+|**processadmin** | Allows its members to kill processes running inside of SQL Server. |
+|**setupadmin** | Allows its members to add and remove linked servers using T-SQL. |
+|**bulkadmin** | Allows its members to run the `BULK INSERT` T-SQL statement. |
+|**diskadmin** | Allows its members to have the ability to manage backup devices in SQL Server. |
+|**dbcreator** | Allows its members to create, restore, alter, and drop any database. |
+|**public** | Every SQL Server login belongs to the public user role. Unlike the other fixed server roles, permissions can be granted, denied, or revoked from the public role. |

@@ -4,13 +4,13 @@ title: Describe Security Principals
 metadata:
   title: Describe Security Principals
   description: "Describe Security Principals"
-  ms.date: 12/01/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 18
+durationInMinutes: 14
 content: |
   [!include[](includes/4-describe-security-principals.md)]
