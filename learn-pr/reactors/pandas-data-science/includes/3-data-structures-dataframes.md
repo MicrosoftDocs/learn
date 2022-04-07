@@ -1,6 +1,6 @@
 The other crucial data structure in pandas to get to know for data science is the `DataFrame`. Like the `Series` object, `DataFrames` can be thought of either as generalizations of `ndarrays`, or as specializations of Python dictionaries.
 
-Just as a `Series` is like a one-dimensional array with flexible indices, a `DataFrame` is like a two-dimensional array with both flexible row indices and flexible column names. A `DataFrame` represents a rectangular table of data and contains an ordered collection of labeled columns, each of which can be a different value type (for example, `string`, `int`, or `float`). The `DataFrame` has both a row and column index. You can think of it as a dictionary of `Series`, all of which share the same index.
+Just as a `Series` is like a one-dimensional array with flexible indices, a `DataFrame` is like a two-dimensional array with both flexible row indices and flexible column names. A `DataFrame` represents a rectangular table of data, and contains an ordered collection of labeled columns, each of which can be a different value type (for example, `string`, `int`, or `float`). The `DataFrame` has both a row and column index. You can think of it as a dictionary of `Series`, all of which share the same index.
 
 Let's take a look at how this works in practice. Start by creating a `Series` called `area`:
 
@@ -84,7 +84,7 @@ The output is:
 | Russia   |  Moscow   | 17125200  | 143910127.0  | 
 ```
 
-Commonly in a data science context, you need to generate new columns of data from existing datasets. Because `DataFrame` columns behave like `Series`, you can do this is by performing operations on them as you would with `Series`:
+Commonly in a data-science context, you need to generate new columns of data from existing datasets. Because `DataFrame` columns behave like `Series`, you can do this is by performing operations on them as you would with `Series`:
 
 ```python
 countries['Population Density'] = countries['Population'] / countries['Area']
@@ -143,7 +143,7 @@ Population Density        335.798
 Name: Japan, dtype: object
 ```
 
-Note that what the `.loc` method returns is an indexed object in its own right, and you can access elements within it by using familiar index syntax:
+Note that what the `.loc` method returns is an indexed object in its own right, and you can access elements within it using familiar index syntax:
 
 ```python
 countries.loc['Japan']['Area']
@@ -162,7 +162,7 @@ Can you think of a way to return the area of Japan without using the `.iloc` met
 
 ### Can you slice along these indices as well?
 
-Sometimes it's helpful in data science projects to add a column to a `DataFrame`, without assigning values to it:
+Sometimes it's helpful in data science projects to add a column to a `DataFrame` without assigning values to it:
 
 ```python
 countries['Debt-to-GDP Ratio'] = np.nan
@@ -239,7 +239,7 @@ The output is:
 | Debt-to-GDP ratio   | NaN      | NaN           | NaN           | 2.360000e+00  | 1.900000e-01  |
 ```
 
-Again, note that `DataFrame` columns are `Series`, and thus the data types must consistent. This is the reason that you see the upcasting to floating-point numbers.
+Again, note that `DataFrame` columns are `Series`, and thus the data types must consistent. This is the reason you see the upcasting to floating-point numbers.
 
 > [!Important]
 > If there had been strings in this `DataFrame`, everything would have been upcast to the `string` type. Use caution when transposing `DataFrames`.

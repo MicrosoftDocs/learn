@@ -168,7 +168,7 @@ Be sure to put the the masking and fancy indexing inside the square brackets: `c
 
 ## Indexing conventions
 
-In data science (and pandas more generally), _indexing_ refers to columns while _slicing_ refers to rows.
+In data science (and pandas more generally), *indexing* refers to columns while *slicing* refers to rows.
 
 ```python
 countries['France':'Japan']
