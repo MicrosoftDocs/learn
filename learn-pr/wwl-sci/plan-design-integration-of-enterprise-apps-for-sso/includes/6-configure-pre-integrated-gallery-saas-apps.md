@@ -17,132 +17,16 @@ To edit the app properties:
     
     The three options can be toggled independently of each other, and the resulting behavior is not always obvious. This table might help:
     
-    :::row:::
-      :::column:::
-        **Enabled for users to sign in?**
-      :::column-end:::
-      :::column:::
-        **User assignment required?**
-      :::column-end:::
-      :::column:::
-        **Visible to users?**
-      :::column-end:::
-      :::column:::
-        **Behavior for users who have either been assigned to the app or not.**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Yes
-      :::column-end:::
-      :::column:::
-        Yes
-      :::column-end:::
-      :::column:::
-        Yes
-      :::column-end:::
-      :::column:::
-        Assigned users can see the app and sign in. Unassigned users can't see the app and can't sign in.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Yes
-      :::column-end:::
-      :::column:::
-        Yes
-      :::column-end:::
-      :::column:::
-        No
-      :::column-end:::
-      :::column:::
-        Assigned uses can't see the app but they can sign in. Unassigned users can't see the app and can't sign in.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Yes
-      :::column-end:::
-      :::column:::
-        No
-      :::column-end:::
-      :::column:::
-        Yes
-      :::column-end:::
-      :::column:::
-        Assigned users can see the app and sign in. Unassigned users can't see the app but can sign in.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Yes
-      :::column-end:::
-      :::column:::
-        No
-      :::column-end:::
-      :::column:::
-        No
-      :::column-end:::
-      :::column:::
-        Assigned users can't see the app but can sign in. Unassigned users can't see the app but can sign in.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        No
-      :::column-end:::
-      :::column:::
-        Yes
-      :::column-end:::
-      :::column:::
-        Yes
-      :::column-end:::
-      :::column:::
-        Assigned users can't see the app and can't sign in. Unassigned users can't see the app and can't sign in.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        No
-      :::column-end:::
-      :::column:::
-        Yes
-      :::column-end:::
-      :::column:::
-        No
-      :::column-end:::
-      :::column:::
-        Assigned users can't see the app and can't sign in. Unassigned users can't see the app and can't sign in.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        No
-      :::column-end:::
-      :::column:::
-        No
-      :::column-end:::
-      :::column:::
-        Yes
-      :::column-end:::
-      :::column:::
-        Assigned users can't see the app and can't sign in. Unassigned users can't see the app and can't sign in.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        No
-      :::column-end:::
-      :::column:::
-        No
-      :::column-end:::
-      :::column:::
-        No
-      :::column-end:::
-      :::column:::
-        Assigned users can't see the app and can't sign in. Unassigned users can't see the app and can't sign in.
-      :::column-end:::
-    :::row-end:::
+    | **Enabled for users to sign in?** | **User assignment required?** | **Visible to users?** | **Behavior for users who have either been assigned to the app or not.**                                      |
+    |:--                                |:--                            |:--                    |:--                                                                                                           |
+    | Yes                               | Yes                           | Yes                   | Assigned users can see the app and sign in. Unassigned users can't see the app and can't sign in.            |
+    | Yes                               | Yes                           | No                    | Assigned uses can't see the app but they can sign in. Unassigned users can't see the app and can't sign in.  |
+    | Yes                               | No                            | Yes                   | Assigned users can see the app and sign in. Unassigned users can't see the app but can sign in.              |
+    | Yes                               | No                            | No                    | Assigned users can't see the app but can sign in. Unassigned users can't see the app but can sign in.        |
+    | No                                | Yes                           | Yes                   | Assigned users can't see the app and can't sign in. Unassigned users can't see the app and can't sign in.    |
+    | No                                | Yes                           | No                    | Assigned users can't see the app and can't sign in. Unassigned users can't see the app and can't sign in.    |
+    | No                                | No                            | Yes                   | Assigned users can't see the app and can't sign in. Unassigned users can't see the app and can't sign in.    |
+    | No                                | No                            | No                    | Assigned users can't see the app and can't sign in. Unassigned users can't see the app and can't sign in.    |
     
 4.  When you're finished, select **Save**.
 
@@ -156,7 +40,6 @@ To edit the app properties:
 6.  When you're finished, select **Save**.
     
     :::image type="content" source="../media/change-logo-fe12027c.png" alt-text="Screenshot of the Properties screen that shows how to change the logo.":::
-    
     
     > [!NOTE]
     > The thumbnail displayed on this Properties pane doesn't update right away. You can close and reopen the Properties pane to see the updated icon.
