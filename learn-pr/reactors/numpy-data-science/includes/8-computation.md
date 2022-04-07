@@ -63,7 +63,7 @@ You can use ufuncs between a scalar and an array and between arrays of arbitrary
 
 Computations vectorized by ufuncs are almost always more efficient than the same computations done with Python loops. This increased efficiency is especially apparent on large arrays. When possible, try to use ufuncs when you operate on NumPy arrays rather than using ordinary Python loops.
 
-Ufuncs come in two flavors: *unary ufuncs*, which take a single input, and *binary ufuncs*, which operate on two inputs. The common ufuncs we'll look at here include both kinds.
+Ufuncs come in two flavors: *unary ufuncs*, which take a single input; and *binary ufuncs*, which operate on two inputs. The common ufuncs we'll look at here include both kinds.
 
 ### Array arithmetic
 
@@ -118,7 +118,7 @@ The output is:
 array([-1.  , -2.25, -4.  , -6.25])
 ```
 
-The Python operators aren't actually the ufuncs but are rather wrappers around functions built into NumPy. So the `+` operator is actually a wrapper for the `add` function:
+The Python operators aren't actually the ufuncs, but are rather wrappers around functions built into NumPy. So the `+` operator is actually a wrapper for the `add` function:
 
 ```python
 np.add(a, 2)
