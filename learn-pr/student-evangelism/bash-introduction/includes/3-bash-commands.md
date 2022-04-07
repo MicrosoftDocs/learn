@@ -68,7 +68,7 @@ The **/etc** directory is a special one in Linux. It contains system-configurati
 
 ### `sudo` command
 
-Some Bash commands can only be run by the root user—a system administrator or superuser. If you try one of these commands without sufficient privileges, it fails. For example, only users logged in as a superuser can use `cat` to display the contents of **/etc/at.deny**:
+Some Bash commands can only be run by the root user; a system administrator or superuser. If you try one of these commands without sufficient privileges, it fails. For example, only users logged in as a superuser can use `cat` to display the contents of **/etc/at.deny**:
 
 ```bash
 cat /etc/at.deny
@@ -76,7 +76,7 @@ cat /etc/at.deny
 
 **at.deny** is a special file that determines who can use other Bash commands to submit jobs for later execution.
 
-You don't want to run as root most of the time. It's too dangerous. To run commands that require admin privilege without logging in as a superuser, you preface the commands with `sudo`:
+You don't want to run as root most of the time; it's too dangerous. To run commands that require admin privilege without logging in as a superuser, you'll preface the commands with `sudo`:
 
 ```bash
 sudo cat /etc/at.deny
@@ -98,7 +98,7 @@ You can move up a directory by specifying `..` as the directory name:
 cd ..
 ```
 
-This command changes to your home directory—the one that you land in when you first log in:
+This command changes to your home directory; the one you land in when you first log in:
 
 ```bash
 cd ~
@@ -188,7 +188,7 @@ The `-r` stands for "recursive." An added benefit of the `-r` flag is that if **
 
 ### `ps` command
 
-The `ps` command gives you a snapshot of all the currently running processes. By itself, with no arguments, it shows all your shell processes—in other words, not much. But it's a different story when you include a `-e` flag:
+The `ps` command gives you a snapshot of all the currently running processes. By itself, with no arguments, it shows all your shell processes; in other words, not much. But it's a different story when you include a `-e` flag:
 
 ```bash
 ps -e
@@ -223,13 +223,13 @@ As an aside, you might find documentation that shows `ps` being used this way:
 ps aux
 ```
 
-`ps aux` and `ps -ef` are the same. This duality traces back to historical differences between POSIX Unix systems (of which Linux is one) and BSD Unix systems (the most common of which is macOS). In the beginning, POSIX used `-ef` while the BSD required `aux`. Today, both operating-system families accept either format. 
+`ps aux` and `ps -ef` are the same. This duality traces back to historical differences between POSIX Unix systems (of which Linux is one) and BSD Unix systems (the most common of which is macOS). In the beginning, POSIX used `-ef` while the BSD required `aux`. Today, both operating-system families accept either format.
 
 This serves as an excellent reminder of why you should look closely at the manual for all Linux commands. Learning Bash is like learning English as a second language. There are many exceptions to the rules.
 
 ### `w` command
 
-Users come, users go, and sometimes you get users you don't want at all. When an employee leaves to pursue other opportunities, the sysadmin is called upon to ensure that the worker can no longer log in to the company's computer systems. Sysadmins are also expected to know who's logged in—and who shouldn't be.
+Users come, users go, and sometimes you get users you don't want at all. When an employee leaves to pursue other opportunities, the sysadmin is called upon to ensure that the worker can no longer log in to the company's computer systems. Sysadmins are also expected to know who's logged in, and who shouldn't be.
 
 To find out who's on your servers, Linux provides the `w` (for "who") command. It displays information about the users currently on the computer system and those users' activities. `w` shows user names, their IP addresses, when they logged in, what processes they're currently running, and how much time those processes are consuming. It's a valuable tool for sysadmins.
 
