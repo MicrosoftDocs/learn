@@ -3,7 +3,7 @@ uid: learn.wwl.secure-cognitive-services
 metadata:
   title: Secure Cognitive Services
   description: "Secure Cognitive Services"
-  ms.date: 06/25/2021
+  ms.date: 04/05/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -14,7 +14,6 @@ abstract: |
   After completing this module, you will know how to:
   - Consider authentication for Cognitive Services
   - Manage network security for Cognitive Services
-  - Use Azure Policy to enforce configuration policies
 prerequisites: |
   - Active Azure subscription
   - Ability to navigate the Azure portal

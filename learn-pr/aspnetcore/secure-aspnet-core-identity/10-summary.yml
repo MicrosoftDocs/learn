@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-aspnet-core-identity.summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 03/16/2022
+  author: camsoper
+  ms.author: casoper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-summary.md)]
