@@ -79,7 +79,7 @@ The current settings appear to be correct.
 
 1. Under **Settings**, select **Load balancing rules**, then select **webLoadBalancerRule**.
 
-    :::image type="content" source="../media/4-load-balancer-rules.png" alt-text="Screenshot showing the webLoadBalancerRule to select." lightbox"../media/4-load-balancer-rules.png":::
+    :::image type="content" source="../media/4-load-balancer-rules.png" alt-text="Screenshot showing the webLoadBalancerRule to select." lightbox="../media/4-load-balancer-rules.png":::
 
 1. Check all the settings for the load balancer rule.
 
