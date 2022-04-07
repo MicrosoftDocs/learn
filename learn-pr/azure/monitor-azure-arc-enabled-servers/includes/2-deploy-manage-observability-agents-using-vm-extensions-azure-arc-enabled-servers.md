@@ -16,9 +16,7 @@ Azure Arc supports the deployment of the Azure Monitor agent, Log Analytics and 
 | **Log Analytics agent** | The Log Analytics agent collects monitoring data from the guest operating system and workloads of virtual machines in Azure, other cloud providers, and on-premises machines. It sends data to a Log Analytics workspace. The Log Analytics agent is the same agent used by System Center Operations Manager, and you can multi-home agent computers to communicate with your management group and Azure Monitor simultaneously. This agent is also required by certain insights in Azure Monitor and other services in Azure. The Log Analytics agent for Windows is often referred to as Microsoft Monitoring Agent (MMA). The Log Analytics agent for Linux is often referred to as OMS agent. |
 | **Dependency agent** | The Dependency agent collects discovered data about processes running on the machine and external process dependencies. On both the Windows and Linux versions of the Dependency Agent, data collection is done using a user-space service and a kernel driver. |
 
-## 
-
-Deploying the Observability VM extensions 
+## Deploying the Observability VM extensions 
 
 There are three main ways to deploy the observability agents Azure Monitor Agent, Log Analytics Agent, and Dependency Agent:
 
