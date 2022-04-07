@@ -53,9 +53,7 @@ Azure AD has a set of built-in admin roles for granting access to manage configu
  -  Cloud Application Administrator: Users in this role have the same permissions as the Application Administrator role, excluding the ability to manage application proxy. Users assigned to this role are not added as owners when creating new application registrations or enterprise applications.
 
 > [!IMPORTANT]
-> Important
-
-Application Administrators and Cloud Application Administrators can add credentials to an application and use those credentials to impersonate the application’s identity. The application may have permissions that are an elevation of privilege over the admin role's permissions. Depending on the application's permissions, an admin in one of these roles could potentially create or update users or other objects while impersonating the application. Neither role grants the ability to manage Conditional Access settings.
+> Application Administrators and Cloud Application Administrators can add credentials to an application and use those credentials to impersonate the application’s identity. The application may have permissions that are an elevation of privilege over the admin role's permissions. Depending on the application's permissions, an admin in one of these roles could potentially create or update users or other objects while impersonating the application. Neither role grants the ability to manage Conditional Access settings.
 
 ## Create and assign a custom role
 

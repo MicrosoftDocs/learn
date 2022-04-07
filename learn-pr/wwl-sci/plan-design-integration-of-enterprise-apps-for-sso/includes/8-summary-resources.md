@@ -7,4 +7,8 @@ Now that you have reviewed this module, you should be able to:
 
 ## Resources
 
-Use these resources to discover more.
+Use these resources to discover more:
+
+- [What is single sign-on in Azure Active Directory?](/azure/active-directory/manage-apps/what-is-single-sign-on)
+- [Quickstart: Enable single sign-on for an enterprise application](/azure/active-directory/manage-apps/add-application-portal-setup-sso)
+
