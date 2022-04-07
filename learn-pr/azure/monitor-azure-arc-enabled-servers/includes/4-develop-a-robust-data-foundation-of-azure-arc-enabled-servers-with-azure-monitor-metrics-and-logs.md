@@ -10,9 +10,9 @@ Azure Monitor collects and aggregates data from a variety of sources into a comm
 
 ## Azure Monitor metrics
 
-Metrics are numerical values that describe some aspect of a system at a particular point in time. They are collected at regular intervals and are identified with a timestamp, a name, a value, and one or more defining labels. Metrics can be aggregated using a variety of algorithms, compared to other metrics, and analyzed for trends over time.
+Metrics are numerical values that describe some aspect of a system at a particular point in time. They're collected at regular intervals and are identified with a timestamp, a name, a value, and one or more defining labels. Metrics can be aggregated using a variety of algorithms, compared to other metrics, and analyzed for trends over time.
 
-Metrics in Azure Monitor are stored in a time-series database which is optimized for analyzing time-stamped data. This makes them particularly suited for alerting and fast detection of issues. They can tell you how your system is performing but typically need to be combined with logs to identify the root cause of issues. 
+Metrics in Azure Monitor are stored in a time-series database which is optimized for analyzing time-stamped data. This makes them useful for alerting and fast detection of issues. They can tell you how your system is performing but typically need to be combined with logs to identify the root cause of issues. 
 
 Metrics are available for interactive analysis in the Azure portal with Azure Metrics Explorer. They can be added to an Azure dashboard for visualization in combination with other data and used for near-real time alerting.
 
@@ -29,7 +29,7 @@ Logs are records of events that occurred within the system. They can contain dif
 
 Logs in Azure Monitor are stored in a Log Analytics workspace that's based on Azure Data Explorer, which provides a powerful analysis engine and rich query language. Logs typically provide enough information to provide complete context of the issue being identified and are valuable for identifying the root cause of issues.
 
-You can work with log queries interactively with Log Analytics in the Azure portal or add the results to an Azure dashboard for visualization in combination with other data. You can also create log alerts, which will trigger an alert based on the results of a schedule query.
+You can work with log queries interactively with Log Analytics in the Azure portal. You can also add the results to an Azure dashboard for visualization in combination with other data. You can also create log alerts, which will trigger an alert based on the results of a schedule query.
 
 - **Analyze** using Log Analytics in the Azure portal to write log queries and interactively analyze log data by using a powerful analysis engine.
 - **Alert** by configuring a log alert rule that sends a notification or takes automated action when the results of the query match a particular result.
@@ -39,9 +39,9 @@ You can work with log queries interactively with Log Analytics in the Azure port
 
 ## Azure Log Analytics
 
-Log Analytics is a tool in the Azure portal used to edit and run log queries with data in Azure Monitor Logs. You can write a simple query that returns a set of records, and then use features of Log Analytics to sort, filter, and analyze them. Or you can write a more advanced query to perform statistical analysis and visualize the results in a chart to identify a particular trend.
+Log Analytics is a tool in the Azure portal used to edit and run log queries with data in Azure Monitor Logs. You can write a query that returns a set of records. Then, you can use features of Log Analytics to sort, filter, and analyze them. Or you can write a more advanced query to perform statistical analysis and visualize the results in a chart to identify a particular trend.
 
-A Log Analytics workspace is a unique environment for log data from Azure Monitor and other Azure services such as Microsoft Sentinel and Microsoft Defender for Cloud. Each workspace has its own data repository and configuration but may combine data from multiple services. You can use a single workspace for all your data collection, or you may create multiple workspaces based on a variety of requirements. 
+A Log Analytics workspace is a unique environment for log data from Azure Monitor, Microsoft Sentinel, and Microsoft Defender for Cloud. Each workspace has its own data repository and configuration but may combine data from multiple services. You can use a single workspace for all your data collection, or you may create multiple workspaces based on a variety of requirements. 
 
 For Azure Arc-enabled servers, select **Logs** from the left navigation pane to run queries on collected Azure Monitor Log Analytics data. 
 
