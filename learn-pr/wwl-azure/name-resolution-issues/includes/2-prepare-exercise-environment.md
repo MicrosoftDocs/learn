@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
+
 1. Select **Sign in** to activate sandbox and sign in using your own credentials.
 
 1. Select **Review permissions**, read and accept to continue.
