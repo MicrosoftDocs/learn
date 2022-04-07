@@ -21,12 +21,12 @@ Bastion provides secure RDP and SSH connectivity to all the VMs in the virtual n
 
 ## Architecture
 
-Azure Bastion deployment is per virtual network, not per subscription/account or virtual machine. Once you provision an Azure Bastion service in your virtual network, the RDP/SSH experience is available to all your VMs in the same virtual network.
+Azure Bastion is deployed to a virtual network and supports virtual network peering. Specifically, Azure Bastion manages RDP/SSH connectivity to VMs created in the local or peered virtual networks.
 
 RDP and SSH are some of the fundamental means through which you can connect to your workloads running in Azure. Exposing RDP/SSH ports over the Internet isn't desired and is seen as a significant threat surface. This is often due to protocol vulnerabilities. To contain this threat surface, you can deploy bastion hosts (also known as jump-servers) at the public side of your perimeter network. Bastion host servers are designed and configured to withstand attacks. Bastion servers also provide RDP and SSH connectivity to the workloads sitting behind the bastion, as well as further inside the network.
 
 :::image type="content" source="../media/az500-bastion-b40322c2.png" alt-text="Architecture of a bastion host.":::
-
+<br>
 
 This figure shows the architecture of an Azure Bastion deployment. In this diagram:
 
