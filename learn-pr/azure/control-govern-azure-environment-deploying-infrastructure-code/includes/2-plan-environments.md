@@ -26,6 +26,11 @@ For example, your toy company might have these environments:
 | Ephemeral PR reviews | Dynamically created for each pull request (PR) that a team member creates to change the application or infrastructure, then deleted when the pull request is closed. | Development team | Short-lived | Uncontrolled |
 | Development sandboxes | Created by development team members to experiment or explore, and deleted when they no longer need them. | Development team | Short-lived | Uncontrolled |
 
+<!-- TODO diagram?
+(Sandbox, PR review)
+Dev -> Test -> Staging -> Prod -> (Demo, Perf test, Pen test)
+-->
+
 ## Gates and checks
 
 Encourage the use of automated checks, like preflight validation, functional testing, and deployment to ephemeral environments, during code review. Also discuss how manual testing and approvals can be integrated into a release process, such as propagating changes between environments.
