@@ -2,7 +2,7 @@ Threat modeling provides engineers with the ability to graphically describe thei
 
 ## The importance of depth layers
 
-Threat models can either get too complex or too high level depending on the system you're building and the required context. 
+Threat models can either get too complex or too high level, depending on the system you're building and the required context.
 
 Data-flow diagram depth layers help you understand how much context to include and when to use them.
 

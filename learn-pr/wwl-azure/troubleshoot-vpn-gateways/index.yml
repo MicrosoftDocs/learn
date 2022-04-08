@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.troubleshoot-vpn-gateways
+metadata:
+  title: Troubleshoot VPN gateways in Microsoft Azure
+  description: "Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we'll look at how to monitor and troubleshoot site-to-site and point-to-site VPNs. AZ720 AZ-720 az-720 networking"
+  ms.date: 04/07/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot VPN gateways in Microsoft Azure
+summary: Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we'll look at how to monitor and troubleshoot site-to-site and point-to-site VPNs.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Troubleshoot site to site VPNs
+  - Troubleshoot point to site VPNs
+prerequisites: |
+  - Demonstrate an understanding of the OSI model
+  - Demonstrate an understanding of Azure CLI
+  - Demonstrate an understanding of PowerShell
+  - Know how to run Cloud Shell to run commands
+  - Have an understanding of how to set up site-to-site VPNs
+iconUrl: /learn/achievements/vnp-gateway-troubleshoot.svg
+levels:
+- intermediate
+roles:
+- support-engineer
+products:
+- azure
+- azure-expressroute
+- azure-virtual-network
+- azure-virtual-wan
+- azure-vpn-gateway
+units:
+- learn.wwl.troubleshoot-vpn-gateways.introduction
+- learn.wwl.troubleshoot-vpn-gateways.setup-troubleshooting-environment
+- learn.wwl.troubleshoot-vpn-gateways.troubleshoot-site-to-site
+- learn.wwl.troubleshoot-vpn-gateways.troubleshoot-point-to-site
+- learn.wwl.troubleshoot-vpn-gateways.exercise-troubleshoot-site-to-site-vpn-gateway-connectivity
+- learn.wwl.troubleshoot-vpn-gateways.exercise-resolve-site-to-site-vpn-gateway-connection
+- learn.wwl.troubleshoot-vpn-gateways.knowledge-check
+- learn.wwl.troubleshoot-vpn-gateways.summary
+badge:
+  uid: learn.wwl.troubleshoot-vpn-gateways.badge

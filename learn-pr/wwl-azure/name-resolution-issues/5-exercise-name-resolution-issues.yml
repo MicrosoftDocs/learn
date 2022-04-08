@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.name-resolution-issues.exercise-name-resolution-issues
+title: 'Exercise: Name resolution issues'
+metadata:
+  title: 'Exercise: Name resolution issues'
+  description: "Exercise: Name resolution issues"
+  ms.date: 04/05/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-name-resolution-issues.md)]
+interactive: powershell
