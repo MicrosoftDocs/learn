@@ -33,11 +33,11 @@ quiz:
     choices:
       - content: "Unique to my resource group"
         isCorrect: false
-        explanation: "Incorrect. The name has to be unique globally across all App Services."
+        explanation: "Incorrect. The name has to be unique globally across all App Service resources."
       - content: "Unique to my Azure region"
         isCorrect: false
-        explanation: "Incorrect. The name has to be unique globally across all App Services."
-      - content: "Unique globally across all App Services"
+        explanation: "Incorrect. The name has to be unique globally across all App Service resources."
+      - content: "Unique globally across all App Service resources"
         isCorrect: true
         explanation: "Correct. The resource name must be globally unique."
     
@@ -52,7 +52,7 @@ quiz:
       - content: "APPINSIGHTS_INSTRUMENTATIONKEY"
         isCorrect: false
         explanation: "Incorrect. This is the Azure Application Insights instrumentation key that's used for logging to Application Insights."
-  - content: "What is the default port for App Server?"
+  - content: "What is the default port for App Service?"
     choices:
       - content: "3000"
         isCorrect: false
@@ -62,21 +62,21 @@ quiz:
         explanation: "Incorrect. The default port is 8080 or `process.env.PORT`."
       - content: 8080 or `process.env.PORT`
         isCorrect: true
-        explanation: "Correct. App Service forwards requests to either 8080 or the app setting of `WEBSITES_PORT`. The `WEBSITES_PORT` is used programmatically in your app as `process.env.PORT`."
+        explanation: "Correct. App Service forwards requests to either 8080 or the app setting of `WEBSITES_PORT`. The `WEBSITES_PORT` setting is used programmatically in your app as `process.env.PORT`."
   - content: "Before you deploy your own app, what website is available from your instance of App Service?"
     choices:
       - content: "The Contoso example website"
         isCorrect: false
-        explanation: "Incorrect. The `hostingstart.html` is the only file and response before you deploy your own app."
+        explanation: "Incorrect. The `hostingstart.html` file is the only file and response before you deploy your own app."
       - content: "The Azure enterprise sample"
         isCorrect: false
-        explanation: "Incorrect. The `hostingstart.html` is the only file and response before you deploy your own app."
+        explanation: "Incorrect. The `hostingstart.html` file is the only file and response before you deploy your own app."
       - content: "hostingstart.html"
         isCorrect: true
-        explanation: "Correct. The `hostingstart.html` is the only file and response before you deploy your own app."
+        explanation: "Correct. The `hostingstart.html` file is the only file and response before you deploy your own app."
   - content: "By default, where are the log files associated with your App Service resource?"
     choices:
-      - content: "The resource container and optionally Application Insights"
+      - content: "The resource container and optionally Azure Application Insights"
         isCorrect: true
         explanation: "Correct. By default, the resource container stores runtime logs for startup and web app requests."
       - content: "Azure Blob Storage"
@@ -87,10 +87,10 @@ quiz:
         explanation: "Incorrect. You can configure logs to be offloaded to third-party services, but that configuration isn't enabled by default."
   - content: "Where do you find failures such as 404 - File not found?"
     choices:
-      - content: "Blob Storage"
+      - content: "Azure Blob Storage"
         isCorrect: false
         explanation: "Incorrect. Failures are captured in Application Insights."
-      - content: "Application Insights"
+      - content: "Azure Application Insights"
         isCorrect: true
         explanation: "Correct. Failures are captured in Application Insights."
       - content: "Azure Containers"

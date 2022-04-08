@@ -4,7 +4,7 @@ The Azure platform organizes cloud services that you subscribe to. It's importan
 
 ## How do you organize Azure services?
 
-When you use Azure, you need a subscription. Inside the subscription, you create resource groups. Inside the resource groups, you create resources.
+When you use Azure, you need a subscription. Inside the subscription, you create resource groups. Inside the resource groups, you create resources. The terms are described here:
 
 * **Management groups**: Enterprise-level units of Azure management. *This feature won't be used in this module.*
 * **Subscription**: It's used in the sandbox and associates your account with the resources created in this module. The Learn sandbox provides a free subscription. There's no need to enter credit card information.
