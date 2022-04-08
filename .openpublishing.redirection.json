@@ -12405,6 +12405,36 @@
       "source_path": "learn-pr/wwl-sci/explore-basic-services-identity-types/6-describe-concept-of-hybrid-identities.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-basic-services-identity-types/6-describe-concept-of-hybrid-identity",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-threat-protection-with-microsoft-365-defender/4-describe-defender-office.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-threat-protection-with-microsoft-365-defender/3-describe-defender-office",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-threat-protection-with-microsoft-365-defender/5-describe-defender-endpoint.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-threat-protection-with-microsoft-365-defender/4-describe-defender-endpoint",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-threat-protection-with-microsoft-365-defender/6-describe-microsoft-cloud-app-security.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-threat-protection-with-microsoft-365-defender/5-describe-microsoft-cloud-app-security",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-threat-protection-with-microsoft-365-defender/3-describe-defender-identity.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-threat-protection-with-microsoft-365-defender/6-describe-defender-identity",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-threat-protection-with-microsoft-365-defender/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-threat-protection-with-microsoft-365-defender/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-threat-protection-with-microsoft-365-defender/8-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-threat-protection-with-microsoft-365-defender/9-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
