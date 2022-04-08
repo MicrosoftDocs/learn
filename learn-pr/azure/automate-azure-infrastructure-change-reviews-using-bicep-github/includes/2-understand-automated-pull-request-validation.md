@@ -43,7 +43,7 @@ In your own pull request validation workflows, you might choose to extend the va
 
 A pull request in GitHub can go through many different *lifecycle events*. For example, a pull request is *opened*. Then, the author might push changes to the source branch (*synchronize*), which affects the contents of the pull request. Next, the pull request can be *merged* - or, it might be *closed* without merging, and even *reopened* again in the future.
 
-:::image type="content" source="../media/2-pull-request-states.gif" alt-text="Diagram that shows some of the pull request events." border="false":::
+:::image type="content" source="../media/2-pull-request-states.png" alt-text="Diagram that shows some of the pull request events." border="false":::
 
 GitHub Actions enables you to define *workflow triggers* that respond to any of these events. For example, you can define a workflow that runs automatically whenever a pull request is opened, synchronized, or reopened by simply specifying the `pull_request` trigger without any additional configuration:
 

@@ -4,14 +4,13 @@ title: Describe Microsoft Defender for Identity
 metadata:
   title: Describe Microsoft Defender for Identity
   description: "Describe Microsoft Defender for Identity"
-  ms.date: 12/03/2021
+  ms.date: 04/08/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
-sandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
-  [!include[](includes/3-describe-defender-identity.md)]
+  [!include[](includes/6-describe-defender-identity.md)]

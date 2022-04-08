@@ -26,10 +26,10 @@ Certain operations aren't available with Azure Database for MySQL. These functio
 
 Azure Database for MySQL has two deployment options: Single Server and Flexible Server.
 
-###Azure Database for MySQL Flexible Server
+### Azure Database for MySQL Flexible Server
 Azure Database for MySQL Flexible Server is a fully managed databasea s a service offering, with predictable performance and dynamic scalability.Flexible Server provides more granular  control and flexibility over database management functions and configuration settings. Flexible server is the recommneded deployment option for for all new developments or migrations.
 
-###Azure Database for MySQL Single Server
+### Azure Database for MySQL Single Server
 Azure Database for MySQL Single Server is a fully managed database as a service offering, with predictable  performance and dynamic scalability. Single servers are best for existing applications already using single server.
 
 ### Benefits of Azure Database for MySQL
