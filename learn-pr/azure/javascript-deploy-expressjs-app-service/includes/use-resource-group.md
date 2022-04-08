@@ -53,7 +53,7 @@ A resource group has required and optional properties:
 * More information about the project, people, and dependencies of the resource.
 * Ability to filter or sort for ownership and billing.
 
-A subscription allows only 50 tags. Store complex data for tagging as JSON objects in the value of the tag. The maximum number of  characters is 256.
+A subscription allows only 50 tags. Store complex data for tagging as JSON objects in the value of the tag. The maximum number of characters is 256.
 
 *Don't use tags* for secrets, because tags aren't guaranteed to be secure.
 

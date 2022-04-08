@@ -1,6 +1,6 @@
 When you use Azure, you need a subscription. Inside the subscription, you create resource groups. Inside the resource groups, you create resources.
 
-In this exercise, you need to:
+In this exercise, you'll:
 
 * Sign in to the Learn sandbox with a user account you use for the entire module. This sandbox gives you a free subscription and resource group to complete this module from Visual Studio Code.
 * Find the free sandbox subscription and resource group in Visual Studio Code.
@@ -30,7 +30,7 @@ Find the free sandbox subscription in Visual Studio Code.
     1. Select <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> to open the command palette.
     1. Enter **Azure: Select Tenant**.
     1. Select **Enter custom tenent**.
-    1. In the text box, enter the sandbox tenant: `604c1504-c6a3-4080-81aa-b33091104187`.
+    1. In the text box, enter the sandbox tenant `604c1504-c6a3-4080-81aa-b33091104187`.
     1. Sign back in to Azure for this tenant:
         1. In the command palette, select **Azure: Sign In to Azure Cloud** to complete the sign-in process.
         1. When the listing of Azure clouds displays, select **Azure Cloud**.

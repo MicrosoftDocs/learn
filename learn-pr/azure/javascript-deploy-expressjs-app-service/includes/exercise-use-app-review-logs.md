@@ -1,6 +1,6 @@
 Now that the sample application is deployed, you'll use it to generate log files. Use the failure report to understand how to debug a 404 error.
 
-In this exercise, you need to:
+In this exercise, you'll:
 
 * Interact with the app to generate logs.
 * Find and view logs from Visual Studio Code.

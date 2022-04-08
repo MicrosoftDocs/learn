@@ -1,6 +1,6 @@
 To understand the deployment process, this module provides an Express.js sample. You must fork it on GitHub and then clone it to your local computer. After the source code is on your local computer, you deploy the app to Azure App Service from Visual Studio Code.
 
-In this exercise, you need to:
+In this exercise, you'll:
 
 * Fork the GitHub sample repository.
 * Clone your fork to your local computer.
@@ -13,7 +13,7 @@ In this exercise, you need to:
 
 ## Clone your fork to your local computer
 
-1. In Visual Studio Code, open the command palette by selecting <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>.
+1. In Visual Studio Code, select <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> to open the command palette.
 1. Search for **Git: Clone** and select it.
 1. Enter your fork's URL of the sample repository. It should look something like this example:
 

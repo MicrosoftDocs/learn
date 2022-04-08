@@ -6,9 +6,9 @@ Because this app is a Node.js app, it needs to have the npm modules required by 
 
 Typically, it's better to have Azure install the npm packages. This module uses that process.
 
-If you intend to deploy another app to App Service, which requires moving npm modules instead of having Azure install them, consider a strategy to make the process easier.
+If you intend to deploy another app to App Service, which requires moving npm modules instead of having Azure install them, consider the following strategy to make the process easier:
 
-Store custom npm modules in Azure Storage and install modules from there. This process speeds up the deployment and allows you to make a secure connection between Storage and App Service.
+- Store custom npm modules in Azure Storage and install modules from there. This process speeds up the deployment and allows you to make a secure connection between Storage and App Service.
 
 ## Azure installs npm packages
 
@@ -40,7 +40,7 @@ After you deploy your app, you might want to:
 Deployments to Azure hosting services, including App Service, can include many types of deployments:
 
 * **GitHub actions, Azure pipelines, and other continuous integration and continuous delivery (CI/CD) processes**: These CI/CD processes can be orchestrated to have checks before and after deployment.
-* **CLI tools**: Azure CLI, Git, and GitHub (GH) CLI provide the ability to push files to a remote location. You can configure Azure as one of your remote locations. This configuration allows you to push to Azure from your local development computer.
+* **CLI tools**: Azure CLI, Git, and GitHub CLI provide the ability to push files to a remote location. You can configure Azure as one of your remote locations. This configuration allows you to push to Azure from your local development computer.
 * **Development environments**: Visual Studio and Visual Studio Code, along with other development environments, provide mechanisms to authenticate to your Azure hosting environment, such as App Service, and push files to your hosting environment.
 
 ### Verify files on the host service

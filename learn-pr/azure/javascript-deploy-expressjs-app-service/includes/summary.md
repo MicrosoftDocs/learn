@@ -3,7 +3,7 @@ In this Learn module, you deployed an Express.js (Node.js) app to Azure App Serv
 You played the role of an experienced developer who was new to Azure. You learned how to deploy and configure the Azure resources needed to securely deploy the web app. In this module, you:
 
 - Used the free Learn sandbox subscription and resource group.
-- Created and configured the Azure App Service for an Express.js app.
+- Created and configured Azure App Service for an Express.js app.
 - Deployed the web app from your local computer.
 - Viewed the cloud-based files from your local computer.
 - Analyzed web logs.

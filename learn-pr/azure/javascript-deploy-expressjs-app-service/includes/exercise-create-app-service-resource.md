@@ -1,4 +1,4 @@
-When you create your own instance of an Azure service, it's called a resource. Before you create your resource, you need to know information such as the pricing tier and the Azure geographical region of the cloud.
+When you create your own instance of an Azure service, it's called a resource. Before you create your resource, you need to know information like the pricing tier and the Azure geographical region of the cloud.
 
 In this exercise, you'll create an Azure App Service resource.
 
@@ -22,15 +22,15 @@ As part of the resource creation, these resources are created for you:
     |OS|Select **Linux**.|
     |Location|Select a location geographically close to you.|
     |App Service plan|Create a new plan and select the default name.|
-    |Pricing tier|Confirm Free.|
+    |Pricing tier|Confirm the tier is Free.|
     |Application Insights|Create a new Application Insights resource and select the default name.|
 
-1. When you're finished, the new web app appears in the App Service section of the Azure pane on the left.
+1. When you're finished, the new web app appears in the **App Service** section of the **Azure** pane on the left.
 1. Expand the web app to see the subnodes:
 
     |Subnode|Purpose|
     |--|--|
-    |Application settings|Environment variables as name/value pairs. <br><br>Expand this node and notice the `APPINSIGHTS_INSTRUMENTATIONKEY` key stored as the Application Insights key. This key is useful when you add custom logging with the `applicationinsights` npm package.<br><br> Notice that `SCM_DO_BUILD_DURING_DEPLOYMENT` is created and set to true. This setting allows your Linux/Node.js deployment to install npm dependencies.|
+    |Application settings|Environment variables as name or value pairs. <br><br>Expand this node and notice the `APPINSIGHTS_INSTRUMENTATIONKEY` key stored as the Application Insights key. This key is useful when you add custom logging with the `applicationinsights` npm package.<br><br> Notice that `SCM_DO_BUILD_DURING_DEPLOYMENT` is created and set to true. This setting allows your Linux or Node.js deployment to install npm dependencies.|
     |Databases|If you create your database at the same time as you create your web app, the database is listed here. *This feature isn't used in this module.*|
     |Deployments|Shows a list of deployments. Deployments are covered in the next exercise of this module.|
     |Files| Files deployed to your resource. Before you deploy your app, the `hostingstart.html` file is returned for any requests.|
@@ -49,7 +49,7 @@ As part of the resource creation, these resources are created for you:
 
 When you created the resource, you also created and connected Application Insights, but it isn't enabled.
 
-1. In Visual Studio Code, open the **Azure** pane on the left by selecting <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
+1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
 1. In the **App Service** section, right-click your App Service resource. Select **Open in Portal**.
 1. In the web browser, select **Settings** > **Application Insights**.
 1. Select **Turn on Application Insights**.
