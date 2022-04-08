@@ -47,7 +47,7 @@ The first thing you should do to get a general picture of your Cloud Discovery a
  -  **Compliance risk factor** \- Lets you search for a specific standards, certification, and compliance that the app may comply with (HIPAA, ISO 27001, SOC 2, PCI-DSS, and more.).
  -  **General risk factor** \- Lets you search for general risk factors such as consumer popularity, data center locale, and more.
  -  **Risk score** \- Lets you filter apps by risk score so that you can focus on, for example, reviewing only highly risky apps. You can also override the risk score set by Microsoft Defender for Cloud Apps. For more information, see Working with the risk score.
- -  **Security risk factor** \- Enables you to filter based on specific security measures (such as Encryption at rest, multifactor authentication, etc.).
+ -  **Security risk factor** \- Enables you to filter based on specific security measures (such as Encryption at rest, multi-factor authentication, etc.).
  -  **Usage** \- Lets you filter based on the usage statistics of this app. Usage such as apps with less than or more than a specified number of data uploads, apps with more than or less than a specified number of Users.
  -  **Legal risk factor** \- Lets you filter based on all the regulations and policies that are in-place to ensure data protection and privacy of the app's users. Examples include GDPR ready cloud apps, DMCA, and data retention policy.
 
