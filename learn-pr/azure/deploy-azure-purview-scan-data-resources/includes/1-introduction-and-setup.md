@@ -8,16 +8,16 @@ Azure Purview is a unified data governance service that helps you manage and gov
 
 Azure Purview helps CDOs, data analysts, BI engineers, data stewards, givernance experts and admins to answer these kinds of questions - 
 
-What data does my org have? 
-Where did this data originate?
-Where is data stored? 
-What’s my exposure to risk?
-Is my usage compliant? 
-How do I control access & use?
-What is required by regulation X (read GDPR, CELA, HIPAA) etc.?
-What data is being collected? 
-For what business purpose?
-Where is the sensitive data?    ![image](https://user-images.githubusercontent.com/13808986/162399135-4d47746e-2ce2-4288-8941-d9979c545d5e.png)
+- What data does my org have? 
+- Where did this data originate?
+- Where is data stored? 
+- What’s my exposure to risk?
+- Is my usage compliant? 
+- How do I control access & use?
+- What is required by regulation X (read GDPR, CELA, HIPAA) etc.?
+- What data is being collected? 
+- For what business purpose?
+- Where is the sensitive data?   
 
 
 1. This learn module will walk you through the steps to set up Azure Purview and highlight the salient features supported by Azure Purview Data Catalog as we go along.
