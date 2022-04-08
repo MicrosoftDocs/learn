@@ -13,7 +13,7 @@ In the preceding code, the string "2022-01-01" can be used as instruction to the
 ### Command-line arguments
 
 How are these commands captured on the coding side of things? By using the `sys` module, you can retrieve the command-line arguments and use them in your program. Look at the following code:
-=======
+
 In the preceding code, the string "2021-01-01" can be used as instruction to the program to start a backup from that date. What you gain by using command-line arguments is flexibility; the program can behave differently depending on its outside input.
 
 ### Command-line arguments
@@ -81,7 +81,6 @@ second number: 4
 ```
 
 You probably meant for this program to answer you with `7` instead of `34`. So what went wrong?
-=======
 
 The explanation is that `first_number` and `second_number` are strings. For the calculation to work correctly, you need to change those strings to numbers by using the `int()` function. By modifying the last line of the program to use `int()`, you can resolve the problem:
 
