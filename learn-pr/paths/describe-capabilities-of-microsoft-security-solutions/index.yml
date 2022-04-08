@@ -15,6 +15,7 @@ prerequisites: |
   - General understanding of Microsoft Azure and Microsoft 365.
 summary: |
   Learn about security capabilities in Microsoft. Topics covered will include network and platform capabilities of Azure, Azure security management, and Sentinel. You’ll learn about threat protection with Microsoft 365 Defender and Microsoft 365 security management.
+  
   Here are all the learning paths in preparation for the SC-900 exam: Microsoft Security, Compliance, and Identity Fundamentals.
   :::row:::
   :::column:::
