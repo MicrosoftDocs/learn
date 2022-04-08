@@ -1,6 +1,6 @@
-In this exercise you'll start by enabling CDC to track the data changes on table and will fetch and review the changes.
+In this exercise, you'll start by enabling CDC to track the data changes on table and will fetch and review the changes.
 
-In Azure SQL Database, Change data capture (CDC) uses scheduler which invokes stored procedures to start periodic capture and cleanup of the change data capture tables. The scheduler runs capture and cleanup automatically within SQL Database, without any external dependency for reliability or performance. Users still have the option to run capture and cleanup manually on demand.
+In Azure SQL Database, Change data capture (CDC) uses scheduler, which invokes stored procedures to start periodic capture and cleanup of the change data capture tables. The scheduler runs capture and cleanup automatically within SQL Database, without any external dependency for reliability or performance. Users still have the option to run capture and cleanup manually on demand.
 
 ## Key use cases
 
@@ -11,7 +11,7 @@ In Azure SQL Database, Change data capture (CDC) uses scheduler which invokes st
 
 ## Setup: Use the scripts to deploy Azure SQL Database
 
-At the right is Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercise, you'll run a script in Cloud Shell to create your environment, AdventureWorksLT, in Azure SQL Database. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+At the right is Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercise, you'll run a script in Cloud Shell to create your environment, AdventureWorksLT, in Azure SQL Database. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
@@ -38,7 +38,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     $storageAccountName = "mslearnsa"+$uniqueID
     $location = $resourceGroup.Location
     # The logical server name has to be unique in the system
-    $serverName = "aw-server$($uniqueID)" 
+    $serverName = "dr-server$($uniqueID)" 
     ```
 
 1. Output and store in a text file the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press Enter after you paste the code, because the last line won't be run by default.
@@ -56,7 +56,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     ```powershell
     # The logical server name has to be unique in the system
-    $serverName = "aw-server$($uniqueID)"
+    $serverName = "dr-server$($uniqueID)"
     # The sample database name
     $databaseName = "AdventureWorksLT"
     # The storage account name has to be unique in the system
@@ -93,7 +93,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
         -Type "Standard_LRS"
     ```
 
-1. Open [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15), and then create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *aw-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to go to the Azure portal to get it.  
+1. Open [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15), and then create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *dr-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to go to the Azure portal to get it.  
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
@@ -125,7 +125,7 @@ GO
 
 ### Enable CDC on your tables
 
-Once you enable CDC on the database, you will notice the CDC artifacts being created in the same source database (5 system tables under cdc schema).
+Once you enable CDC on the database, you'll notice the CDC artifacts being created in the same source database (five system tables under cdc schema).
 
 1. Enable CDC on table `SalesLT.Customer`:
 
@@ -136,7 +136,7 @@ Once you enable CDC on the database, you will notice the CDC artifacts being cre
     @role_name     = Null
     ```
 
-2. Once you enable CDC on your table, you will notice 2 more CDC system tables being created – the CDC scheduler jobs for scan and cleanup (`cdc.cdc_jobs`) and the change table (`cdc.SalesLT_Customer_CT`) associated with the table you enabled for CDC. As expected, the change table is still empty because no changes were made to the source table.
+2. Once you enable CDC on your table, you'll notice two more CDC system tables being created – the CDC scheduler jobs for scan and cleanup (`cdc.cdc_jobs`) and the change table (`cdc.SalesLT_Customer_CT`) associated with the table you enabled for CDC. As expected, the change table is still empty because no changes were made to the source table.
 
 3. Insert a new customer into the `SalesLT.Customer` table that you enabled for CDC.
 
@@ -147,7 +147,7 @@ Once you enable CDC on the database, you will notice the CDC artifacts being cre
     VALUES ('Mary', 'L.', 'Smith', 'PjZGQm+Xpzc7RKwDhS11T=', '1KjXYs4=');
     ```
 
-4. Check the change table and you will see that a new record has automatically been added by the CDC scheduler which runs scan and cleanup.
+4. Check the change table and you'll see that a new record has automatically been added by the CDC scheduler, which runs scan and cleanup.
 
     ```sql
     SELECT * FROM [SalesLT].[Customer] 
@@ -167,7 +167,7 @@ Once you enable CDC on the database, you will notice the CDC artifacts being cre
     WHERE CustomerID = 1;
     ```
 
-6. Check the change table and you will notice that there are two rows since CDC records both pre-image (before update) and after image (after update) for update operations. The data columns of the row that results from an insert operation contain the column values after the insert. The data columns of the row that results from a delete operation contain the column values before the delete. An update operation requires one-row entry to identify the column values before the update, and a second row entry to identify the column values after the update.
+6. Check the change table and you'll notice that there are two rows since CDC records both pre-image (before update) and after image (after update) for update operations. The data columns of the row that results from an insert operation contain the column values after the insert. The data columns of the row that results from a delete operation contain the column values before the delete. An update operation requires one-row entry to identify the column values before the update, and a second row entry to identify the column values after the update.
 
 ### Disable CDC on your table
 

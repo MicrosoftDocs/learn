@@ -43,7 +43,7 @@ Applications can use the following functions to obtain the changes that are made
 
 This rowset function is used to query for change information. The function queries the data stored in the internal change tracking tables. The function returns a results set that contains the primary keys of rows that have changed together with other change information such as the operation, columns updated and version for the row.
 
-Below is an example of how to use this function to obtain changes for a SalesLT.Product table:
+Below is an example of how to use this function to obtain changes for a `SalesLT.Product` table:
 
 ```sql
 DECLARE @last_synchronization_version bigint;
