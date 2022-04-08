@@ -16,10 +16,15 @@ To get started, you'll need to setup your Blob Storage account so that you can c
 
 Finally you are going to set up CORS for your storage account.
 
-1. Select CORS in the menu on the left.
-2. Set a `*` for Allowed origins, Allowed headers, and Exposed headers.
-3. Select the HTTP verbs that you want to allow. In this case PUT and POST.
-4. Leave the Max age value as is.
+1. Select **Resource sharing (CORS)** under **Settings** on the left.
+
+1. Set a `*` for Allowed origins, Allowed headers, and Exposed headers.
+
+1. Select the HTTP verbs you want to allow in the **Allowed methods** dropdown. In this case, select **PUT** and **POST**.
+
+1. Leave the Max age value as is.
+
+1. Select **Save**.
 
 These values should be customized to fit the needs of your application.
 
