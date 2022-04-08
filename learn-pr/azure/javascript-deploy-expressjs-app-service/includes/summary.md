@@ -1,14 +1,14 @@
-You've deployed an Express.js (Node.js) app to Azure App Service from Visual Studio Code. 
+In this Learn module, you deployed an Express.js (Node.js) app to Azure App Service from Visual Studio Code.
 
-As an experienced developer, new to Azure, you learned how to deploy and configure the Azure resources needed to securely deploy the web app.
+You played the role of an experienced developer who was new to Azure. You learned how to deploy and configure the Azure resources needed to securely deploy the web app. In this module, you:
 
-- Used the free Learn sandbox subscription and resource group
-- Created and configured the Azure App Service for an Express.js app
-- Deployed the web app from your local computer
-- Viewed the cloud-based files from your local computer
-- Analyzed web logs 
+- Used the free Learn sandbox subscription and resource group.
+- Created and configured the Azure App Service for an Express.js app.
+- Deployed the web app from your local computer.
+- Viewed the cloud-based files from your local computer.
+- Analyzed web logs.
 
-You used VS Code and the Azure portal to create, deploy, and analyze your web app. Now, you can bring your own Express.js app to App Service. 
+You used Visual Studio Code and the Azure portal to create, deploy, and analyze your web app. Now, you can bring your own Express.js app to App Service.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
@@ -18,7 +18,7 @@ You used VS Code and the Azure portal to create, deploy, and analyze your web ap
 - [Configure a Node.js app for Azure App Service](/azure/app-service/configure-language-nodejs?pivots=platform-linux)
 - [Continuous deployment](/azure/app-service/deploy-continuous-deployment)
 - [Staging environments](/azure/app-service/deploy-staging-slots)
-- [Use Key Vault secrets](/azure/app-service/app-service-key-vault-references)
+- [Use Azure Key Vault secrets](/azure/app-service/app-service-key-vault-references)
 - [Set up quota alerts](/azure/app-service/web-sites-monitor)
 - [Pricing tier quotas](/azure/azure-resource-manager/management/azure-subscription-service-limits#app-service-limits)
 - [Enable logs](/azure/app-service/troubleshoot-diagnostic-logs)
