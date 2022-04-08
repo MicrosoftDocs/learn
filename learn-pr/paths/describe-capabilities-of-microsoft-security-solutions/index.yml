@@ -14,29 +14,30 @@ prerequisites: |
   - General IT knowledge or any general experience working in an IT environment.
   - General understanding of Microsoft Azure and Microsoft 365.
 summary: |
-  Learn about security capabilities in Microsoft. Topics covered will include network and platform capabilities of Azure, Azure security management, and Sentinel. You’ll learn about threat protection with Microsoft 365 Defender and Microsoft 365 security management. Here are all the learning paths in preparation for the SC-900 exam: Microsoft Security, Compliance, and Identity Fundamentals. :::row::: :::column::: ![The trophy for the Describe the concepts of security, compliance, and identity learning path.](/learn/achievements/describe-the-concepts-of-security-compliance-and-identity.svg) [Part 1: Describe the concepts of security, compliance, and identity](../describe-concepts-of-security-compliance-identity/index.yml) :::column-end::: :::column::: ![The trophy for the Describe the capabilities of Microsoft Identity and access management solutions learning path.](/learn/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg) [Part 2: Describe the capabilities of Microsoft Identity and access management solutions](../describe-capabilities-of-microsoft-identity-access/index.yml) :::column-end::: :::row-end::: :::row::: :::column::: ![The trophy for the Describe the capabilities of Microsoft security solutions learning path.](/learn/achievements/describe-the-capabilities-of-microsoft-security-solutions.svg) Part 3: Describe the capabilities of Microsoft security solutions :::column-end::: :::column::: ![The trophy for the Describe the capabilities of Microsoft compliance solutions learning path.](/learn/achievements/describe-the-capabilities-of-microsoft-compliance-solutions.svg) [Part 4: Describe the capabilities of Microsoft compliance solutions](../describe-capabilities-of-microsoft-compliance-solutions/index.yml) :::column-end::: :::row-end:::
-  Learn about Microsoft’s security solutions. Topics covered include network and platform capabilities of Azure, Azure security management with Microsoft Defender for Cloud, and Microsoft Sentinel. You’ll learn about threat protection with Microsoft 365 Defender.
+  Learn about security capabilities in Microsoft. Topics covered will include network and platform capabilities of Azure, Azure security management, and Sentinel. You’ll learn about threat protection with Microsoft 365 Defender and Microsoft 365 security management.
   Here are all the learning paths in preparation for the SC-900 exam: Microsoft Security, Compliance, and Identity Fundamentals.
   :::row:::
   :::column:::
-  ![The trophy for the Describe the concepts of security, compliance, and identity learning path.](/learn/achievements/describe-the-concepts-of-security-compliance-and-identity.svg)
-  [Part 1: Describe the concepts of security, compliance, and identity](../describe-concepts-of-security-compliance-identity/index.yml)
+    <img src="/learn/achievements/describe-the-concepts-of-security-compliance-and-identity.svg" width="101" alt="The trophy for the Describe the concepts of security, compliance, and identity learning path." role="presentation"></img>
+    
+    [Part 1: Describe the concepts of security, compliance, and identity](../describe-concepts-of-security-compliance-identity/index.yml)
   :::column-end:::
   :::column:::
-  ![The trophy for the Describe the capabilities of Microsoft Identity and access management solutions learning path.](/learn/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg)
-  [Part 2: Describe the capabilities of Microsoft Identity and access management solutions](../describe-capabilities-of-microsoft-identity-access/index.yml)
+    <img src="/learn/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft Identity and access management solutions learning path." role="presentation"></img>
+    
+    [Part 2: Describe the capabilities of Microsoft Identity and access management solutions](../describe-capabilities-of-microsoft-identity-access/index.yml)
   :::column-end:::
   :::row-end:::
   :::row:::
-  :::column:::
-  ![The trophy for the Describe the capabilities of Microsoft security solutions learning path.](/learn/achievements/describe-the-capabilities-of-microsoft-security-solutions.svg)
-  Part 3: Describe the capabilities of Microsoft security solutions
+   :::column:::
+    <img src="/learn/achievements/describe-the-capabilities-of-microsoft-security-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft security solutions learning path." role="presentation"></img>
+    
+    Part 3: Describe the capabilities of Microsoft security solutions
   :::column-end:::
   :::column:::
-  ![The trophy for the Describe the capabilities of Microsoft compliance solutions learning path.](/learn/achievements/describe-the-capabilities-of-microsoft-compliance-solutions.svg)
-  [Part 4: Describe the capabilities of Microsoft compliance solutions](../describe-capabilities-of-microsoft-compliance-solutions/index.yml)
-  :::column-end:::
-  :::row-end:::
+    <img src="/learn/achievements/describe-the-capabilities-of-microsoft-compliance-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft compliance solutions learning path." role="presentation"></img>
+    
+    [Part 4: Describe the capabilities of Microsoft compliance solutions](../describe-capabilities-of-microsoft-compliance-solutions/index.yml)
 iconUrl: /learn/achievements/describe-the-capabilities-of-microsoft-security-solutions.svg
 levels:
 - beginner
