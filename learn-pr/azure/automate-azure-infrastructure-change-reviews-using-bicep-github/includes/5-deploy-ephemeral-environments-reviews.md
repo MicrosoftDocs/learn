@@ -16,18 +16,18 @@ Ephemeral environments are a good choice when you deploy environments for pull r
 
 Because you're so used to building up your Azure infrastructure as code, and you've invested in building your Bicep files to deploy your resources, you can reuse those same assets to deploy an ephemeral environment. You can even deploy multiple ephemeral environments at a time, if you need to. You just need to ensure that your deployments are sufficiently *parameterized* and *generalized*, so that you can easily create independent environments. For example, you need to ensure that some Azure resources are given globally unique names, which can't be the same as resource names in any other ephemeral or long-lived environment.
 
-Ephemeral environments give you a number of benefits:
+Ephemeral environments offer a number of benefits:
 
-- They enable you to test the new features or capabilities that you're working with, as you work in an isolated environment that won't affect any of your other production or non-production workloads.
-- They enable you to demonstrate the changes you're making on your own branch, so that you can easily showcase your work to your colleagues or provide access to reviewers to check.
-- They allow multiple team members to test their separate changes at the same time - even if the changes are incompatible.
-- Because they involve executing your Bicep files on a regular basis, they help you to continually test the accuracy and completeness of your Bicep code and other scripts. You gain confidence that you can create accurate representations of your production environment from your code.
+- You can safely test new features and capabilities in an isolated environment that doesn't affect your other production or non-production workloads.
+- You can display your changes in your own branch, letting you easily showcase your work to your colleagues or provide access to reviewers.
+- You can have multiple team members test separate changes at the same time, even if the changes are incompatible.
+- Because they involve running your Bicep files regularly, ephemeral environments help you continually test the accuracy and completeness of your Bicep code and other scripts. As a result, you can be more confident that the code will run perfectly in your production environment.
 
 In this module, you'll create ephemeral environments to help you to build up confidence about the changes within pull requests. Anybody who reviews the pull request can access the ephemeral environment, including any new additions and updates, before approving and merging the pull request.
 
 ## Deployment
 
-When you work with ephemeral environments, it's best to create a separate Azure resource group for each pull request that your team creates. If one author has two separate pull requests open, each will have its own ephemeral environment. This helps to keep each change separated from the others, and helps avoid confusion or accidentally overwriting resources.
+When you work with ephemeral environments, it's best to create a separate Azure resource group for each pull request that your team creates. If one author has two separate pull requests open, each will have its own ephemeral environment. This helps to keep each change separated from the others, and it can help to avoid confusion or accidentally overwriting resources.
 
 :::image type="content" source="../media/5-pull-request-resource-groups.png" alt-text="Diagram that shows a resource group created for each pull request." border="false":::
 
