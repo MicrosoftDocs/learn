@@ -6,7 +6,7 @@ metadata:
   description: Review concepts around using Azure Communication Services to send an SMS message
   ms.date: 03/03/2021
   author: probableprime
-  ms.author: probableprime
+  ms.author: rifox
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
