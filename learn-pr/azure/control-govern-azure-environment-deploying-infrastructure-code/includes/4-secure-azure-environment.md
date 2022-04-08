@@ -6,7 +6,15 @@ Use Azure RBAC to restrict or block human access to controlled environments. At 
 
 ### What about emergencies?
 
-Plan for emergency access. Use [break-glass accounts](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access), or use [Azure AD PIM](TODO), which you can configure by using Bicep - [1]](https://docs.microsoft.com/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true#migrate-to-the-azure-resource-manager-arm-pim-api-for-azure-resource-roles), [2](https://docs.microsoft.com/rest/api/authorization/privileged-role-policy-rest-sample#update-a-role-management-policy).
+Plan for emergency access.
+
+Use [break-glass accounts](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access):
+
+:::image type="content" source="../media/4-break-glass-account.png" alt-text="Diagram showing the sequence of operations for using a break glass account to access Azure." border="false":::
+
+Or, use [Azure AD PIM](TODO), which you can configure by using Bicep - [1]](https://docs.microsoft.com/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true#migrate-to-the-azure-resource-manager-arm-pim-api-for-azure-resource-roles), [2](https://docs.microsoft.com/rest/api/authorization/privileged-role-policy-rest-sample#update-a-role-management-policy).
+
+:::image type="content" source="../media/4-privileged-identity-management.png" alt-text="Diagram showing the sequence of operations for Privileged Identity Management elevation and access to Azure." border="false":::
 
 If you use PIM or another emergency access method, ensure that you update your IaC with the latest changes after the emergency ends.
 
