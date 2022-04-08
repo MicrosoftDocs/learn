@@ -2,7 +2,7 @@
 
 ## What is Azure Purview?
 
-Azure Purview is a unified data governance service that helps you manage and govern your on-premises, software-as-a-service (SaaS) data as well as multicloud (Azure, GCP, AWS, and many more cloud providers converged into a holistic unified Data Governance experience). Easily create a comprehensive, up-to-date map of your data landscape with automated data discovery, sensitive data classification and end-to-end data lineage with business glossary, insights reports and workflows support. Empower data consumers, CDOs, data stewards, experts, BI and analytics admins to find valuable, trustworthy data and where it is located.
+Azure Purview is a unified data governance service that helps you manage and govern your on-premises, software-as-a-service (SaaS) data as well as multicloud (Azure, GCP, AWS, and many more cloud providers converged into a holistic unified Data Governance experience). Easily create a comprehensive, up-to-date map of your data landscape with automated data discovery, sensitive data classification, end-to-end data lineage, insights reports, business glossary, and approval workflows support. Empower data consumers, CDOs, data stewards, experts, BI and analytics admins to find valuable, trustworthy data and where it is located.
 
 ### How does Azure Purview benefit a CDO ?
 
@@ -23,24 +23,10 @@ Azure Purview helps CDOs, data analysts, BI engineers, data stewards, givernance
 ## What is the main goal?
 By the end of this session, you'll be able to understand and appreciate the salient features of Azure Purview service and how it encompasses a wide range of data sources across on-prem, multi-cloud (Azure, GCP, AWS), and 30+ varieties of databases and 10+ different file types including JSON, CSV, TSV, TXT, Parquet etc.
 
-1. This learn module will walk you through the steps to set up Azure Purview and highlight the salient features supported by Azure Purview Data Catalog as we go along.
+Goal: This learn module will walk you through the steps to set up Azure Purview and highlight the salient features supported by Azure Purview Data Catalog as we go along.
 
-Goal: orient the learner walking them through the steps to set up Azure Purview and highlight the salient features supported by Azure Purview Data Catalog.
-
-Heading: none
-
-Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
-
-Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
-
-[Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
-
-
-2. Scenario
-
-Goal: The CDO (Chief Data Officer) of Fabrikam Corp Inc. wants to set up a daily dashbaord view of what percentage of data across the company's data estate is classified as "Sensitive" and "Confidential".
-
-Heading: "## Example scenario"
+## Example Scenario
+Scenario: The CDO (Chief Data Officer) of Fabrikam Corp Inc. wants to set up a daily dashbaord view of what percentage of data across the company's data estate is classified as "Sensitive" and "Confidential".
 
 Problem: "Suppose you work at an athletic shoe company named Fabrikam Corp Inc as a business intelligence and analytics engineer. The CDO of your company has assigned to you the task of setting up a daily dashbaord view of what percentage of data across the company's data estate is classified as "Sensitive" and "Confidential".
 
