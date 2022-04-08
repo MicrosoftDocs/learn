@@ -176,11 +176,11 @@ You've defined workflows to create and manage ephemeral environments automatical
 
    :::image type="content" source="../media/6-website-address.png" alt-text="Screenshot of the GitHub Actions deployment log. The website U R L in the 'Show website hostname' step is highlighted.":::
 
-   The website loads. It displays a message, *Hello Docker!*, which indicates that the website is running from the container that's defined in the pull request change.
+   The website loads. It displays a message, *Hello Docker!*, which indicates that the website is running from the container image that's defined in the pull request change.
 
    :::image type="content" source="../media/6-website.png" alt-text="Screenshot of the website homepage after the deployment is complete.":::
 
-1. Optionally, open the [Azure portal](https://portal.azure.com/azure-portal=true) and go to the ephemeral environment's resource group.
+1. Optionally, open the [Azure portal](https://portal.azure.com/azure-portal=true), and go to the ephemeral environment's resource group.
 
    Review the resources that were deployed.
 
