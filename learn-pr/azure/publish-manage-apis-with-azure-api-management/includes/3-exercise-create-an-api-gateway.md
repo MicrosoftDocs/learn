@@ -1,6 +1,6 @@
 To share an API, you must first configure an API gateway.
 
-In the shoe company example, NorthWind Shoes has decided to share an inventory API with partners. This API enables partners to access inventory and product information. 
+In the shoe company example, NorthWind Shoes has decided to share an inventory API with partners. This API enables partners to access inventory and product information.
 
 Here, you'll create an API gateway to publish an inventory app that exposes an OpenAPI endpoint.
 
@@ -48,9 +48,11 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
     - **api/Products** generates a list of products
     - **api/Products/{productid}** returns the details for the specified productid
 
+![Diagram of HPC Pack hybrid.](../media/3-swagger.png)
+
     :::image type="content" source="../media/3-swagger.png" alt-text="Overview of API management." loc-scope="third-party"::: <!-- no-loc -->
 
-1. Finally, copy and save the second URL (Swagger JSON URL) from Cloud Shell output. You'll need this URL in the next exercise.
+1. Finally, copy the second URL (Swagger JSON URL) from the Cloud Shell output, and save it somewhere such as Notepad. You'll need this URL in the next exercise.
 
 ## Deploy an API gateway
 
