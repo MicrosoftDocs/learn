@@ -8,11 +8,24 @@ You can use Bicep to deploy resource groups, subscriptions, management groups, p
 
 When you plan to deploy your infrastructure automatically, it's helpful to list out the environments you plan to use. In many organizations, there are a variety of environment types. Environments often have different characteristics. For example, some environments run production code. Others run non-production versions of the same code. Some are long-lived environments that are never intended to be deleted. Others are ephemeral, which might be created automatically and destroyed when they're no longer used. Some might be used by your infrastructure or software development team. Others might be used by your security team, or even by your sales team when they need to demonstrate a product to potential customers.
 
+For example, consider the environments that your toy company might use:
+
+:::image type="content" source="../media/2-environments.png" alt-text="Diagram showing the sequence of environments." border="false":::
+
+When you make and commit changes to your application or to your infrastructure, your pipeline deploys your changes through a sequence of non-production environments: **Development**, **Test**, and **Staging**. You might have manual approval gates at different points as well. Then, your pipeline eventually deploys your changes to your **Production** environment.
+
+But in addition to those environments, your sales team has their own **Demo** environment that they use when they talk to customers. They take a copy of the production environment to create their demo environment. And, your security and test team occasionally create temporary copies of the production environment for **Penetration testing** and **Performance testing**, respectively.
+
+Your development team has their own sets of environments, too - they have **Sandboxes** for development team members to use when they're exploring new features or experimenting with changes, and they create **PR review** environments for each pull request that they review and merge.
+
 In some of these environments, it makes sense to require a formal process to review and apply changes. These are *controlled environments*. Production should always be a controlled environment. In addition, in many organizations, it's a good practice to control some of the non-production environments, too. By doing this, you can ensure that any restrictions imposed by the controls are well understood and tested before the production deployment.
 
 In contrast, *uncontrolled environments* don't have many, or any, formal controls. They still might have the same code and similar configuration to your other environments, but they allow for more experimentation and ad hoc configuration changes.
 
-For example, your toy company might have these environments:
+> [!NOTE]
+> Sometimes, an *environment* might actually represent multiple physical environments or deployments. For example, when you create ephemeral environments for pull request reviews, you might have multiple such environments active at a single time because you have multiple pull requests open. But, for the purpose of planning your environments, you can consider them to be consistent because they have the same characteristics and controls.
+
+After some discussions with your team, you might designate which environments are controlled and uncontrolled:
 
 | Environment name | Description | Owner | Lifetime | Control level |
 |-|-|-|-|-|
@@ -26,10 +39,8 @@ For example, your toy company might have these environments:
 | Ephemeral PR reviews | Dynamically created for each pull request (PR) that a team member creates to change the application or infrastructure, then deleted when the pull request is closed. | Development team | Short-lived | Uncontrolled |
 | Development sandboxes | Created by development team members to experiment or explore, and deleted when they no longer need them. | Development team | Short-lived | Uncontrolled |
 
-<!-- TODO diagram?
-(Sandbox, PR review)
-Dev -> Test -> Staging -> Prod -> (Demo, Perf test, Pen test)
--->
+> [!IMPORTANT]
+> This is an example list of environments. In your own organization, you need to decide which environments you use, what their lifetime should be, and what level of control each environment needs.
 
 ## Gates and checks
 
