@@ -20,6 +20,9 @@ Azure Purview helps CDOs, data analysts, BI engineers, data stewards, givernance
 - Where is the sensitive data?   
 
 
+## What is the main goal?
+By the end of this session, you'll be able to understand and appreciate the salient features of Azure Purview service and how it encompasses a wide range of data sources across on-prem, multi-cloud (Azure, GCP, AWS), and 30+ varieties of databases and 10+ different file types including JSON, CSV, TSV, TXT, Parquet etc.
+
 1. This learn module will walk you through the steps to set up Azure Purview and highlight the salient features supported by Azure Purview Data Catalog as we go along.
 
 Goal: orient the learner walking them through the steps to set up Azure Purview and highlight the salient features supported by Azure Purview Data Catalog.
@@ -43,8 +46,6 @@ Problem: "Suppose you work at an athletic shoe company named Fabrikam Corp Inc a
 
 Purview Solutioning: "During Purview's scanning process, Purview's classification engine will determine and apply classifications on each table or schema level hosted in the data estate. The Insights feature will help you build reports to view detailed analytics on each of the classified data sources, databases or files as well as what classifications and sensitivity labels were applied. You may even use Purview Insights APIs to build custom reports using and data visualization tools such as Power BI or Tableau etc."
 
-## What is the main goal?
-By the end of this session, you'll be able to understand and appreciate the salient features of Azure Purview service and how it encompasses a wide range of data sources across on-prem, multi-cloud (Azure, GCP, AWS), and 30+ varieties of databases and 10+ different file types including JSON, CSV, TSV, TXT, Parquet etc.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
 
