@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "After you have added a dev container configuration to a project, how do you open that project in the container?"
+    - content: "After you've added a dev container configuration to a project, how do you open that project in the container?"
       choices:
         - content: "The project automatically opens in the container."
           isCorrect: false
           explanation: "Although Visual Studio Code might notify you that it _can_ open the project in a dev container, it won't open in the container by default."
         - content: "Select **Add Development Configuration Files** from the Command Palette."
           isCorrect: false
-          explanation: "This command will add a dev container configuration. There is already a container definition present according to the question."
+          explanation: "This command will add a dev container configuration. There's already a container definition present according to the question."
         - content: "Use the **Reopen in Container** option in Visual Studio Code."
           isCorrect: true
           explanation: "The **Reopen in Container** option, from either the Visual Studio Code notification or the Command Palette, will load the project in the dev container."
@@ -36,7 +36,7 @@ quiz:
           explanation: "The postCreatecommand is for any commands that you want to have run immediately after the container is created."
         - content: "Use the post install hook in the devcontainer.json"
           isCorrect: false
-          explanation: "There is no postCreate install hook in the devcontainer.json"
+          explanation: "There's no postCreate install hook in the devcontainer.json"
         - content: "Specify the command in the Dockerfile"
           isCorrect: false
           explanation: "While you can run additional commands in the Dockerfile, the preferred way is to use the devcontainer.json file."

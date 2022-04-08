@@ -1,4 +1,4 @@
-Now that you've installed the Remote-Containers extension, let's take a look at how it is going to help developers at your agency. As you've noticed during your time at the agency, it can be a major hassle for developers to get started with new projects. Each one requires developers to install and manage specific or complicated sets of dependencies and technology stacks. 
+Now that you've installed the Remote-Containers extension, let's take a look at how it's going to help developers at your agency. As you've noticed during your time at the agency, it can be a major hassle for developers to get started with new projects. Each one requires developers to install and manage specific or complicated sets of dependencies and technology stacks.
 
 Ideally, each project is contained in its own preconfigured, containerized environment. Docker and Visual Studio Code make containerized development possible through the Remote - Containers extension.
 
@@ -12,7 +12,7 @@ The Remote - Containers extension lets you grab a dev container with the specifi
 
 Visual Studio Code extensions are installed and run inside the container. There, they have full access to the tools, platform, and file system. To you, the developer, the experience is the same as if you had opened the project normally in Visual Studio Code.
 
-You can seamlessly switch your entire development environment just by connecting to a different container. The extension handles all of the setup based on a few configuration files contained in a folder called **.devcontainer**.
+You can seamlessly switch your entire development environment just by connecting to a different container. The extension handles all of the setup based on a few configuration files contained in a folder called: **.devcontainer**.
 
 :::image type="content" source="../media/2-architecture-containers.png" alt-text="Diagram that explains the split architecture of the Remote - Containers extension.":::
 

@@ -3,12 +3,13 @@ uid: learn.use-docker-container-dev-env-vs-code.8-add-software
 title: Add software to an existing container 
 metadata:
   title: Add software to an existing container 
-  description: Explore the methods of installing additional software in an existing container, including introducing the most robust mechanism through the Dockerfile.
-  ms.date: 11/13/2020
+  description: Explore the methods of installing more software in an existing container, introducing the most robust mechanism through the Dockerfile.
+  ms.date: 04/07/2022
   author: bamurtaugh
   ms.author: brmurtau
   ms.topic: interactive-tutorial
   ms.prod: learning-vs-code
+  ms.custom: devdivchpfy22
 durationInMinutes: 5
 content: |
   [!include[](includes/7-add-software.md)]

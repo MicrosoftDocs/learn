@@ -4,11 +4,12 @@ title: Exercise - Customize project and editor settings
 metadata:
   title: Exercise - Customize project and editor settings
   description: Modify the devcontainer.json file to customize your project and editor settings.
-  ms.date: 11/13/2020
+  ms.date: 04/07/2022
   author: bamurtaugh
   ms.author: brmurtau
   ms.topic: interactive-tutorial
   ms.prod: learning-vs-code
+  ms.custom: devdivchpfy22
 durationInMinutes: 4
 content: |
   [!include[](includes/6-exercise-customize-settings.md)]
