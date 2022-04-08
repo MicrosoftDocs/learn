@@ -58,7 +58,7 @@ The output is:
  [ 1  6  7  7]]
 ```
 
-The fact that slicing produces views rather than copies is useful for data-science work. As you work with large datasets, you'll often find it's easier to access and manipulate pieces of those datasets rather than copying them entirely.
+The fact that slicing produces views rather than copies is useful for data-science work. As you work with large datasets, you'll often find that it's easier to access and manipulate pieces of those datasets rather than copying them entirely.
 
 ### Copying arrays
 
