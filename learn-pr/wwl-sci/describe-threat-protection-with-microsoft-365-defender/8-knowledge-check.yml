@@ -4,17 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/03/2021
+  ms.date: 04/08/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
-sandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
-  [!include[](includes/7-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -51,3 +50,14 @@ quiz:
     - content: "Microsoft Defender for Cloud Apps"
       isCorrect: false
       explanation: "Incorrect. Microsoft Defender for Cloud Apps is a Cloud Access Security Broker that supports various deployment modes including log collection, API connectors, and reverse proxy."
+  - content: "Admins in the organization are using the Microsoft 365 Defender portal every day. They want to quickly get an understanding of the organization's current security posture. Which capability in the Microsoft 365 Defender portal will they use?"
+    choices:
+    - content: "Reports."
+      isCorrect: false
+      explanation: "That's incorrect. Reports will provide targeted information but doesn't give a snapshot of an organization's security posture."
+    - content: "Secure Score."
+      isCorrect: true
+      explanation: "That's correct. Secure Score, in the M365 Defender portal, will give a snapshot of an organization’s security posture, and provide details on how to improve it."
+    - content: "Policies."
+      isCorrect: false
+      explanation: "That's incorrect. A snapshot of an organization's current security posture can't be found in the Policies option."
