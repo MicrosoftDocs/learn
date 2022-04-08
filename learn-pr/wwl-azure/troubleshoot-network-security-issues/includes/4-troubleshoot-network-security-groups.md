@@ -88,7 +88,7 @@ Combining augmented security rules with service tags or application security gro
 
 - **Service tags**: A service tag represents a group of IP address prefixes from a given Azure service. It helps to minimize the complexity of frequent updates on network security rules. Refer to [Azure service tags](/azure/virtual-network/service-tags-overview).
 
-- For an example of how to use the Storage service tag to restrict network access, go to: Tutorial - [Restrict network access to PaaS resources with virtual network service endpoints using the Azure portal](/azure/virtual-network/tutorial-restrict-network-access-to-resources).
+- For an example of how to use the Storage service tag to restrict network access, go to [Restrict network access to PaaS resources with virtual network service endpoints using the Azure portal](/azure/virtual-network/tutorial-restrict-network-access-to-resources).
 
 - **[Application security groups](/azure/virtual-network/application-security-groups)**: Application security groups enable you to configure network security as a natural extension of an application's structure. This allows you to group virtual machines and define network security policies based on those groups. You can reuse your security policy at scale without manual maintenance of explicit IP addresses. To learn more, see Application security groups.
 
@@ -104,7 +104,7 @@ The following articles help gain understanding of:
 
 - [Network security groups overview](/azure/virtual-network/network-security-groups-overview)
 
-In this unit, you’ll learn how to diagnose a network traffic filter problem by viewing the NSG security rules that are effective for a VM.
+In this unit, you'll learn how to diagnose a network traffic filter problem by viewing the NSG security rules that are effective for a VM.
 
 ### Diagnose using Azure portal
 
@@ -112,7 +112,7 @@ In this unit, you’ll learn how to diagnose a network traffic filter problem by
 
 When you try to connect to a VM over port 80 from the internet, the connection fails. To understand why this happens, you can examine the effective security rules for a network interface using the Azure portal, PowerShell, or the Azure CLI.
 
-If you don’t have an existing VM to view the effective security rules, you need to first deploy a Linux or Windows VM to complete the task.
+If you don't have an existing VM to view the effective security rules, you need to first deploy a Linux or Windows VM to complete the task.
 
 In the following task, the examples are for a VM named **myVM** with a network interface named **myVMVMNic**. The VM and network interface are in a resource group named **myResourceGroup** and are in the East US region. To diagnose the problem, Change the values in the steps, as appropriate, for the VM.
 
@@ -163,7 +163,7 @@ To troubleshoot connectivity problems:
 
 - Ensure that there is an NSG associated with the VM's network interface and/or subnet. Also, check that the VM is in the running state.
 
-- If the VM has a public IP address, it is recommended to apply an NSG to the <!--CE: Please check - I think there's a word missing here.-->subnet the network interface.
+- If the VM has a public IP address, it's recommended to apply an NSG to the subnet of the network interface.
 
 ### Additional diagnosis
 
@@ -248,7 +248,11 @@ To learn more about troubleshooting NSG flow logs, see [Troubleshooting common i
 
 Application security groups allow you to group virtual machines located in Azure virtual network, and define network security policies based on those groups. This helps in reducing the maintenance effort of explicit IP addresses. Consider the following picture for a better understanding of ASGs:
 
-:::image type="content" source="../media/3-application-security-groups.png" alt-text="Diagram demonstration Application security groups.":::
+
+|Application security groups  |
+|:-------:|
+|:::image type="content" source="../media/3-application-security-groups.png" alt-text="Diagram demonstration Application security groups." border="false":::|
+
 
 In the previous picture, NIC1 and NIC2 are members of the AsgWeb ASG. NIC3 is a member of the AsgLogic ASG, and NIC4 a member of the AsgDb ASG. In this example, each network interface is a member of only one network security group. However, a network interface can be a member of multiple ASGs, up to the Azure limits.
 

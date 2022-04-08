@@ -4,7 +4,7 @@ title: Enable cross-virtual network connectivity with peering
 metadata:
   title: Enable cross-virtual network connectivity with peering
   description: "Enable cross-virtual network connectivity with peering"
-  ms.date: 02/15/2022
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
     - content: "VNet peering."
       isCorrect: true
       explanation: "That is correct, virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering)."
-  - content: "When configure global peering, what changes will see in the peered VNets?"
+  - content: "When configuring global peering, what changes will occur in the peered VNets?"
     choices:
     - content: "A peering entry is added to the routing table in the source VNet only."
       isCorrect: false
