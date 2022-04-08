@@ -2,7 +2,19 @@ Deploying your infrastructure as code can help automate your deployments, increa
 
 ## Example scenario
 
-Suppose you work as the Azure administrator at a toy company. Over the last several months, you and your team have been converting your Azure deployments to use Bicep, and automated them by using Azure Pipelines and GitHub Actions. But, you still have some team members who haven't quite adopted the mindset of deploying everything as code. Your team has agreed that *all* of your future changes will be deployed using the automation tools you've adopted, and you want to enforce this rule so that you and your team can get the most benefit from your investment in automation.
+Suppose you work as the Azure administrator at a toy company. Over the last several months, you and your team have been converting your Azure deployments to use Bicep, and automated them by using Azure Pipelines and GitHub Actions. But, you still have some team members who haven't quite adopted the mindset of deploying everything as code. Recently you had several situations where people haven't followed the recommended practices:
+
+1. Somebody made a direct change to a resource by using the Azure portal.
+1. Somebody deployed a Bicep file directly from their local computer.
+1. Somebody used a pipeline's service principal to manually deploy a change to production.
+1. Somebody commited a Bicep file change directly to the repository’s main branch, bypassing pull request reviews.
+1. Somebody updated a Bicep file by using a pull request, and their changes were validated, tested, and deployed throughout the correct sequence of environments.
+
+:::image type="content" source="../media/1-risks.png" alt-text="Diagram showing several approaches to making Azure configuration changes." border="false":::
+
+Of all of these changes, only number 5 was deployed using the automation tools you've adopted and using your team's agreed process. Now, you want to enforce this rule so that you and your team can get the most benefit from your investment in automation. You've agreed with your team that you'll close off the ability to deploy to your Azure environment, except through the approved process:
+
+:::image type="content" source="../media/1-risks-controlled.png" alt-text="Diagram showing several approaches to making Azure configuration changes, which are all blocked except for the approved process." border="false":::
 
 ## What will you be doing?
 
