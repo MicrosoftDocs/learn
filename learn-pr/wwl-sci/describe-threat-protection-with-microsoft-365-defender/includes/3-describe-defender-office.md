@@ -1,4 +1,4 @@
-Microsoft Defender for Office 365, formerly Office 365 Advanced Threat Protection, safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools, including Microsoft Teams, SharePoint Online, OneDrive for Business, and other Office clients.
+Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools, including Microsoft Teams, SharePoint Online, OneDrive for Business, and other Office clients.
 
 Microsoft Defender for Office 365 covers these key areas:
 
@@ -26,7 +26,9 @@ This plan includes all the core features of Plan 1, and provides automation, inv
 - **Threat Trackers**: Provide the latest intelligence on prevailing cybersecurity issues, and allow an organization to take countermeasures before there's an actual threat.
 - **Threat Explorer**: A real-time report that allows you to identify and analyze recent threats.
 - **Automated investigation and response (AIR)**:  Includes a set of security playbooks that can be launched automatically, such as when an alert is triggered, or manually. A security playbook can start an automated investigation, provide detailed results, and recommend actions that the security team can approve or reject.
-- **Attack Simulator**: Allows you to run realistic attack scenarios in your organization to identify vulnerabilities.
+- **Attack Simulator**: Allows you to run realistic attack scenarios in your organization to identify vulnerabilities. These simulations test your security policies and practices, as well as train your employees to increase their awareness and decrease their susceptibility to attacks.
+- **Proactively hunt for threats with advanced hunting in Microsoft 365 Defender**: Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities.
+- **Investigate alerts and incidents in Microsoft 365 Defender**: Microsoft Defender for Office 365 P2 customers have access to Microsoft 365 Defender integration to efficiently detect, review, and respond to incidents and alerts.
 
 ## Microsoft Defender for Office 365 availability
 
