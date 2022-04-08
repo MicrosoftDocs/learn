@@ -110,7 +110,7 @@ Now, you can add a second job to publish the module to your container registry.
 
 1. Verify that your *storage_account_module.yml* file looks like the following example:
 
-   :::code language="yaml" source="code/6-workflow.yml" :::
+   :::code language="yaml" source="code/6-workflow.yml" highlight="14, 19-47" :::
 
    If it doesn't, update it to match this example, and then save it.
 

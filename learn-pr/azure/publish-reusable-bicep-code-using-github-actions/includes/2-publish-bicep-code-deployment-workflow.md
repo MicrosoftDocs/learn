@@ -11,11 +11,11 @@ When you're deciding between template specs and Bicep modules, a good rule of th
 
 ## Validate reusable code in a workflow
 
-Unlike regular Bicep deployments, when you create a template spec or a module, you don't deploy the resources directly to Azure. Instead, you publish the template spec or module. Then you can use the template spec or module in another deployment. That deployment will deploy the resources you've defined. The ways that you validate and test your template specs and Bicep modules might be different from the process that you use for regular Bicep files.
+Unlike regular Bicep deployments, when you create a template spec or a module, you don't deploy the resources directly to Azure. Instead, you *publish* the template spec or module. Then you can use the template spec or module in another deployment. That deployment will deploy the resources you've defined. Because of this difference, the ways that you validate and test your template specs and Bicep modules might be different from the process that you use for regular Bicep deployments.
 
 Linting your Bicep code is good practice. The linter detects syntactical problems, and it warns you if you're not following the recommended practices.
 
-Beyond linting, you might want to consider testing your template specs and modules by using preflight deployments. You might even consider deploying your template specs and modules to Azure and testing that the resources they create behave as you expect. However, it can be challenging to run these types of tests from a deployment workflow for two reasons:
+Beyond linting, you might want to consider testing your template specs and modules by using *preflight validation*. You might even consider deploying your template specs and modules to Azure and testing that the resources they create behave as you expect. However, it can be challenging to run these types of tests from a deployment workflow for two reasons:
 
 - Preflight validation and deployments require an Azure environment to deploy the resources to. You might need to maintain a dedicated Azure subscription or resource group to use for deploying and testing your modules.
 - Many template specs and modules require you to specify a set of parameters. You might need to create a test set of parameters for your template specs or modules to use when they're deployed.
@@ -32,7 +32,7 @@ When you publish template specs to Azure yourself, your Azure Active Directory (
 When you work with an automated deployment workflow, the same principles apply. However, because you aren't the person running the deployment, you need to ensure that your workflow's service principal is given the appropriate access to the resource group for publishing the template spec, or to the container registry for publishing modules.
 
 > [!TIP]
-> When you publish a module to a registry, the service principal running the deployment probably doesn't need a lot of permission. When your registry uses Azure Active Directory authorization, the service principal needs only the *AcrPush* permission on the registry.
+> When you publish a module to a registry, the service principal running the deployment probably doesn't need a lot of permission. When your registry uses Azure AD authorization, the service principal needs only the *AcrPush* permission on the registry.
 >
 > Consider using the security *principle of least privilege*. Provide the workflow's service principal with access only to the container registry, and not to a resource group or subscription.
 
@@ -89,7 +89,7 @@ You can convert this Azure CLI command to a GitHub Actions step, too:
 ```
 
 > [!TIP]
-> In this example, the Bicep registry's host name (`toycompany.azurecr.io`) is embedded in the workflow definition. This isn't a good practice. You can use environment variables to set configuration settings like this. You'll see how this works later in this Microsoft Learn module.
+> In this example, the Bicep registry's host name (`toycompany.azurecr.io`) is embedded in the workflow step definition. This isn't a good practice. You can use environment variables to set configuration settings like this. You'll see how this works later in this Microsoft Learn module.
 
 Shortly, you'll see how you can publish a template spec from a workflow by using the steps described in this unit.
 

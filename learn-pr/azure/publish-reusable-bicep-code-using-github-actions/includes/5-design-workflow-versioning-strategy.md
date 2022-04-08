@@ -1,10 +1,10 @@
 When you start to publish reusable Bicep code, you probably use a manual approach. It's easy for you to determine which Bicep file you need to publish, and you probably have a manual process for incrementing the version number. 
 
-When you automate the publishing process, you need to consider how to automate these steps. In this unit, you'll learn how to adopt a versioning system that communicates the changes you've made to your code. You'll also learn how you can scope your workflows to publish the code that you expect.
+When you automate the publishing process, you need to consider how to automate these steps. In this unit, you'll learn how to adopt a versioning system that communicates the changes you've made to your code. You'll also learn how you can scope your workflows to publish just the code that you expect.
 
 ## Version numbers
 
-In previous Microsoft Learn modules, you learned about the importance of versioning for template specs and Bicep modules. You can choose from many different versioning approaches. In many situations, it's a good practice to use a *multipart* versioning system. That system consists of a *major* version, *minor* version, and *revision* number, similar to the following example:
+In previous Microsoft Learn modules, you learned about the importance of versioning for template specs and Bicep modules. You can choose from many different versioning approaches. In many situations, it's a good practice to use a *multipart* versioning system. A multipart versioning system consists of a *major* version, *minor* version, and *revision* number, similar to the following example:
 
 :::image type="content" source="../media/5-version-number.png" alt-text="Diagram that shows the version number 1.4.106." border="false":::
 
@@ -22,7 +22,7 @@ Changes in different parts of version numbers communicate important information 
 
 For example, suppose you're using a Bicep module that somebody else has published. The module has a version number of `2.0.496`. You see that a new version of the module is available with the version number `2.1.502`. The only significant change is to the minor version number, which indicates that you shouldn't expect a breaking change when you use the new version.
 
-> [!TIP]
+> [!NOTE]
 > *Semantic versioning* is a formalized versioning structure that's similar to multipart versioning. Semantic versioning includes additional components in the version number, along with strict rules about when you should set or reset each component. We link to more information about semantic versioning in the summary.
 
 Your team needs to decide how to define a breaking change for the purpose of versioning. For example, suppose you've built a Bicep module that deploys a storage account. You're now updating the Bicep file to enable private endpoints on your storage account. You're adding a private DNS zone to your Bicep file at the same time. 
