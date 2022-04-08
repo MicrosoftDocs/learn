@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.turn-insight-into-action-combine-sap-other-data
+metadata:
+  title: Turn insight into action by combining SAP and other data
+  description: "Explore Microsoft solutions and products that can help you address analytics needs that include both SAP and other data. You’ll learn about using the Azure Synapse Analytics platform to combine data from multiple sources and examine how Power Platform is used to display and analyze business data to turn insights into action."
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Turn insight into action by combining SAP and other data
+summary: Explore using Azure Synapse Analytics to combine data from SAP and other sources, and how Power Platform is used to display and analyze business data to turn insights into action.
+abstract: |
+  After completion of this module, you will be able to:
+  *   Combine data from multiple sources with linked services in Azure Synapse Analytics.
+  *   Perform machine learning to provide predictions on data extracted from a SQL pool.
+  *   Create Power BI data visualization of your merged data.
+  *   Display actionable data and write data to SAP from a Power App.
+prerequisites: |
+  *   Azure Data Fundamentals.
+  *   Knowledge of SAP products such as SAP HANA or SAP NetWeaver.
+iconUrl: /learn/achievements/turn-insight-into-action-combine-sap-other-data.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-owner
+- data-engineer
+- data-scientist
+- functional-consultant
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-synapse-analytics
+- power-platform
+units:
+- learn.wwl.turn-insight-into-action-combine-sap-other-data.introduction
+- learn.wwl.turn-insight-into-action-combine-sap-other-data.explore-azure-synapse-analytics
+- learn.wwl.turn-insight-into-action-combine-sap-other-data.explore-azure-synapse-studio
+- learn.wwl.turn-insight-into-action-combine-sap-other-data.explore-synapse-studio-linked-services
+- learn.wwl.turn-insight-into-action-combine-sap-other-data.examine-combining-data-from-multiple-sources
+- learn.wwl.turn-insight-into-action-combine-sap-other-data.explore-predictive-analytics-azure-synapse-analytic
+- learn.wwl.turn-insight-into-action-combine-sap-other-data.examine-connecting-to-power-bi-to-display-transformed-data
+- learn.wwl.turn-insight-into-action-combine-sap-other-data.explore-power-apps-sap
+- learn.wwl.turn-insight-into-action-combine-sap-other-data.knowledge-check
+- learn.wwl.turn-insight-into-action-combine-sap-other-data.summary
+badge:
+  uid: learn.wwl.turn-insight-into-action-by-combining-sap-other-data.badge

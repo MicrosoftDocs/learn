@@ -16,7 +16,7 @@ Some popular dialects of SQL include:
 Users who plan to work specifically with a single database system should learn the intricacies of their preferred SQL dialect and platform.
 
 > [!NOTE]
-> The SQL code examples in this module are based on the Transact-SQL dialog, unless otherwise indicated. The syntax for other dialogs is generally similar, but may vary in some details.
+> The SQL code examples in this module are based on the Transact-SQL dialect, unless otherwise indicated. The syntax for other dialects is generally similar, but may vary in some details.
 
 ## SQL statement types
 
@@ -161,4 +161,4 @@ INSERT INTO Product(ID, Name, Price)
 VALUES (99, 'Drill', 4.99);
 ```
 > [!NOTE]
-> This topic describes some basic SQL statements and syntax in order to help you understand how SQL is used work with objects in a database. If you want to learn more about querying data with SQL, review the [Get Started Querying with Transact-SQL](/learn/paths/get-started-querying-with-transact-sql?azure-portal=true) learning path on Microsoft Learn.
+> This topic describes some basic SQL statements and syntax in order to help you understand how SQL is used to work with objects in a database. If you want to learn more about querying data with SQL, review the [Get Started Querying with Transact-SQL](/learn/paths/get-started-querying-with-transact-sql?azure-portal=true) learning path on Microsoft Learn.

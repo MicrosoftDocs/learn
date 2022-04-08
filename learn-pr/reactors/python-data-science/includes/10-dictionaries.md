@@ -4,7 +4,7 @@ Dictionaries in Python provide a means of mapping information between unique key
 capitals = {'France': ('Paris', 2140526)}
 ```
 
-A key for a dictionary can be one of three types: a string, a number, or a tuple. If a key is a tuple, it can contain only strings, numbers, or other tuples. The important thing is that dictionary keys be of immutable types. For example, a list can't be a key in a dictionary because lists are mutable.
+A key for a dictionary can be one of three types: a string, a number, or a tuple. If a key is a tuple, it can contain only strings, numbers, or other tuples. The important thing is that dictionary keys be of immutable types. For example, a list can't be a key in a dictionary, because lists are mutable.
 
 Here's how you add to a dictionary:
 
@@ -46,7 +46,7 @@ Try adding another country (or something else) to the capitals dictionary.
 
 ***
 
-You reference dictionary entries much like you reference parts of a string, list, or tuple. But, instead of an index, you use a key:
+You reference dictionary entries much like you reference parts of a string, list, or tuple. But instead of an index, you use a key:
 
 ```python
 capitals['France']
@@ -110,4 +110,4 @@ The output is:
 > [!div class="alert is-tip"]
 > ### Takeaway
 >
-> Regardless of the complexity and volume of the data you work with, these basic data structures will often be your means for handling and manipulating it. Comfort with these structures is essential to understanding and using Python code written by others.
+> Regardless of the complexity and volume of the data with which you work, these basic data structures will often be your means for handling and manipulating it. Comfort with these structures is essential to understanding and using Python code written by others.

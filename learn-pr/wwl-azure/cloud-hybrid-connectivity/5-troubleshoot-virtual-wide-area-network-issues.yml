@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.cloud-hybrid-connectivity.troubleshoot-virtual-wan-issues
+title: Troubleshoot virtual WAN issues in Microsoft Azure
+metadata:
+  title: Troubleshoot virtual WAN issues in Microsoft Azure
+  description: "Troubleshoot virtual WAN issues in Microsoft Azure"
+  ms.date: 04/05/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-troubleshoot-virtual-wide-area-network-issues.md)]

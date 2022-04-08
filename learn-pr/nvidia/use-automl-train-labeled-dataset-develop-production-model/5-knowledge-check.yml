@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 03/14/2022
+  author: toolboc
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: 'The AzureML Python SDK allowed us to connect and interact with our Azure Machine Learning studio workspace by ...'
+    choices: 
+    - content: 'Providing a config.json file that specified the details to connect to the appropriate workspace.'
+      isCorrect: true
+      explanation: Correct. The config.json file species the subscription_id, resource_group, and workspace_name of the Machine Learning studio workspace.
+    - content: 'Providing a connection string within a connection cell in the Jupyter notebook.'
+      isCorrect: false
+      explanation: Incorrect. A connection string was not used for authentication to the Azure Machine Learning workspace.
+    - content: 'Using our Azure credentials which were passed in transparently when accessing the Jupyter notebook.'
+      isCorrect: false
+      explanation: Incorrect. The AzureML Python SDK must explicitly reference a workspace configuration from a file (config.json).
+  - content: 'The AzureML Python SDK allowed us to provision a compute instance in our Azure Machine Learning Studio workspace.  That instance could then be referenced in Python code to submit AutoML tasks to run on that machine as a target.'
+    choices: 
+    - content: 'True'
+      isCorrect: true
+      explanation: Correct. The AzureML Python SDK can automate various tasks including provisioning a compute instance and submitting experiments.
+    - content: 'False'
+      isCorrect: false
+      explanation: Incorrect. The AzureML Python SDK can provision compute instances and submit experiments to run on those instances.
+  - content: 'Azure AutoML allows you to tune hyperparameters to automatically discover optimal settings for your model.'
+    choices: 
+    - content: 'False'
+      isCorrect: false
+      explanation: Incorrect. Azure AutoML can use default hyperparameter values or allow for sweeping of various hyperparameter values to discover optimal setting through iteration.
+    - content: 'True'
+      isCorrect: true
+      explanation: Correct. Azure AutoML can use default hyperparameter values or allow for sweeping of various hyperparameter values to discover optimal setting through iteration.
