@@ -23,7 +23,7 @@ Microsoft Defender for Cloud Apps integrates visibility with your cloud by:
 
 ### Cloud Discovery
 
-:::image type="content" source="../media/sc300-cloud-discovery-screenshot-8ba27c4b.png" alt-text="Screenshot of the MDCA Cloud Discovery report in the Azure Portal.  This report is on the Dashboard tab showing how many apps have been discovered, how much data is being actively accessed by those apps, what apps were discovered, and information about common users.":::
+:::image type="content" source="../media/sc300-cloud-discovery-screenshot-8ba27c4b.png" alt-text="Screenshot of the MDCA Cloud Discovery report in the Azure Portal.  This report is on the Dashboard tab showing how many apps have been discovered, how much data is being actively accessed by those apps, what apps were discovered, and information about common users." lightbox="../media/sc300-cloud-discovery-screenshot-8ba27c4b.png":::
 
 
 Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps your organization is using. To create a snapshot report of your organization's cloud use, manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Microsoft Defender for Cloud Apps log collectors to periodically forward your logs.
