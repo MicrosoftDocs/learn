@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.explore-analyze-data-r.challenge-data-exploration
+title: Challenge - Data exploration
+metadata:
+  title: Challenge - Data exploration
+  description: Challenge - Data exploration.
+  ms.date: 03/10/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/9-challenge-data-exploration.ipynb

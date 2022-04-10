@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.explore-analyze-data-r.exercise-visualize-data-with-ggplot2
+title: Exercise - Visualize your data by using ggplot2
+metadata:
+  title: Exercise - Visualize your data by using ggplot2
+  description: In this exercise, you'll practice visualizing data by using ggplot2.
+  ms.date: 03/10/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/5-exercise-visualize-data-with-ggplot2.ipynb
