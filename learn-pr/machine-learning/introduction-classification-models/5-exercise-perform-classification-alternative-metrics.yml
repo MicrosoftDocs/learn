@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-classification-models.exercise-perform-classification-alternative-metrics
+title: Exercise - Train a classification model by using alternative metrics
+metadata:
+  title: Exercise - Train a classification model by using alternative metrics
+  description: In this exercise, you'll train a classification model by using alternative metrics.
+  ms.date: 10/25/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: /learn/modules/introduction-classification-models/notebooks/5-exercise-perform-classification-alternative-metrics.ipynb

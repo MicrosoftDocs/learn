@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-classification-models.exercise-train-evaluate-binary-classification-model
+title: Exercise - Train and evaluate a binary classification model
+metadata:
+  title: Exercise - Train and evaluate a binary classification model
+  description: In this exercise, you'll train and evaluate a binary classification model.
+  ms.date: 10/25/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: /learn/modules/introduction-classification-models/notebooks/3-exercise-train-evaluate-binary-classification-model.ipynb
