@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.machine-learning.introduction-regression-models
+metadata:
+  title: Introduction to regression models by using R and tidymodels
+  description: Introduction to regression models by using R and tidymodels.
+  ms.date: 03/10/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: nextgen
+title: Introduction to regression models by using R and tidymodels
+summary: Get an introduction to regression models. In machine learning, the goal of regression is to create a model that can predict a numeric, quantifiable value.
+abstract:  | 
+  In this module, you'll learn:
+  - When to use regression models.
+  - How to train and evaluate regression models by using the tidymodels framework.
+  
+prerequisites: |
+  - Knowledge of basic mathematics 
+  - Some experience programming in R 
+  
+iconUrl: /learn/achievements/machine-learning/introduction-regression-models.svg
+levels:
+- beginner
+roles:
+- developer
+- data-scientist
+- student
+products:
+- azure
+units:
+- learn.machine-learning.introduction-regression-models.introduction
+- learn.machine-learning.introduction-regression-models.what-is-regression
+- learn.machine-learning.introduction-regression-models.exercise-train-evaluate-regression-model
+- learn.machine-learning.introduction-regression-models.discover-new-regression-models
+- learn.machine-learning.introduction-regression-models.exercise-experiment-powerful-regression-models
+- learn.machine-learning.introduction-regression-models.improve-models-with-hyperparameters
+- learn.machine-learning.introduction-regression-models.exercise-optimize-save-models
+- learn.machine-learning.introduction-regression-models.knowledge-check
+- learn.machine-learning.introduction-regression-models.challenge-regression
+- learn.machine-learning.introduction-regression-models.summary
+badge:
+  uid: learn.machine-learning.introduction-regression-models.badge 
