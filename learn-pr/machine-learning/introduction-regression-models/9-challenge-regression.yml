@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-regression-models.challenge-regression
+title: Challenge - Regression
+metadata:
+  title: Challenge - Regression
+  description: In this challenge, you'll work with regression.
+  ms.date: 03/10/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/9-challenge-regression.ipynb
+
