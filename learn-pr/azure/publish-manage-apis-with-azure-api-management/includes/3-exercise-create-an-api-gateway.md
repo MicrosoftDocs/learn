@@ -48,8 +48,6 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
     - **api/Products** generates a list of products
     - **api/Products/{productid}** returns the details for the specified productid
 
-![Diagram of HPC Pack hybrid.](../media/3-swagger.png)
-
     :::image type="content" source="../media/3-swagger.png" alt-text="Overview of API management." loc-scope="third-party"::: <!-- no-loc -->
 
 1. Finally, copy the second URL (Swagger JSON URL) from the Cloud Shell output, and save it somewhere such as Notepad. You'll need this URL in the next exercise.
