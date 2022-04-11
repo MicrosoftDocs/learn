@@ -15,11 +15,9 @@ abstract:  |
   In this module, you'll learn:
   - Common data exploration and analysis tasks. 
   - How to use R packages such as ggplot2, dplyr, and tidyr to turn raw data into understanding, insight, and knowledge. 
-  
 prerequisites: |
   - Knowledge of basic mathematics 
   - Some experience programming in R 
-  
 iconUrl: /learn/achievements/machine-learning/explore-analyze-data-r.svg
 levels:
 - beginner
@@ -41,4 +39,4 @@ units:
 - learn.machine-learning.explore-analyze-data-r.challenge-data-exploration
 - learn.machine-learning.explore-analyze-data-r.summary
 badge:
-  uid: learn.machine-learning.explore-analyze-data-r.badge 
+  uid: learn.machine-learning.explore-analyze-data-r.badge
