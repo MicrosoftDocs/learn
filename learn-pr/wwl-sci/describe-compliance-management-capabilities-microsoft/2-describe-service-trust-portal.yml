@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-compliance-management-capabilities-microsoft.describe-offerings-of-service-trust-portal
+title: Describe the Service Trust Portal
+metadata:
+  title: Describe the Service Trust Portal
+  description: "Describe the Service Trust Portal"
+  ms.date: 04/11/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-describe-service-trust-portal.md)]
