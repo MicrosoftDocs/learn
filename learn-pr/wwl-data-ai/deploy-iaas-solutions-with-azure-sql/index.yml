@@ -41,4 +41,4 @@ units:
 - learn.wwl.deploy-iaas-solutions-with-azure-sql.knowledge-check
 - learn.wwl.deploy-iaas-solutions-with-azure-sql.summary
 badge:
-  uid: learn.wwl.deploy-sql-server-virtual-machine.badge
+  uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.badge
