@@ -3,7 +3,7 @@ Defense in depth uses a layered approach to security, rather than relying on a s
 Example layers of security might include:
 
 - **Physical** security such as limiting access to a datacenter to only authorized personnel.
-- **Identity and access** security controls, such as multi-factor authentication or condition-based access, to control access to infrastructure and change control.
+- **Identity and access** security controls, such as multifactor authentication or condition-based access, to control access to infrastructure and change control.
 - **Perimeter** security of your corporate network includes distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
 - **Network** security, such as network segmentation and network access controls, to limit communication between resources.
 - **Compute** layer security such as securing access to virtual machines either on-premises or in the cloud by closing certain ports.

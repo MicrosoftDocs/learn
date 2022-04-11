@@ -33,9 +33,9 @@ quiz:
     - content: "Locating all its servers in a single physical location."
       isCorrect: false
       explanation: "Incorrect. Distributing the physical location of servers provides added security at the physical layer by mitigating the risk that may come from outages caused by fire, hurricanes, and other disasters."
-    - content: "Multi-factor authentication for all users."
+    - content: "Multifactor authentication for all users."
       isCorrect: true
-      explanation: "Correct. Multi-factor authentication is an example of defense in-depth at the identity and access layer."
+      explanation: "Correct. Multifactor authentication is an example of defense in-depth at the identity and access layer."
     - content: "Ensuring there's no segmentation of your corporate network."
       isCorrect: false
       explanation: "Incorrect. Splitting a network up into multiple sub-networks provides better layered security and is an example of defense in depth at the network layer."

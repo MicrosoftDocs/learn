@@ -5,15 +5,15 @@ The *shared responsibility model* identifies which security tasks are handled by
 - Software as a Service (SaaS)
 - Platform as a Service (PaaS)
 - Infrastructure as a Service (IaaS)
-- On-premises datacenter (On-prem)
+- On-premises datacenter
 
 The shared responsibility model makes responsibilities clear. When organizations move to the cloud, some responsibilities transfer to the cloud provider and some to the customer organization.
 
 The following diagram illustrates the areas of responsibility between the customer and the cloud provider, according to where data is held.
 
-:::image type="content" source="../media/3-shared-responsibility-model-responsibilites-type.png" alt-text="The Shared responsibility model responsibilities by type.":::
+:::image type="content" source="../media/3-shared-responsibility-model.png" alt-text="The Shared responsibility model responsibilities by type.":::
 
-- **On-premises datacenters (On-Prem)**. In an on-premises datacenter, you have responsibility for everything from physical security to encrypting sensitive data.
+- **On-premises datacenters**. In an on-premises datacenter, you have responsibility for everything from physical security to encrypting sensitive data.
 
 - **Infrastructure as a Service (IaaS)**. Of all cloud services, IaaS requires the most management by the cloud customer. With IaaS, you're using the cloud provider’s computing infrastructure. The cloud customer isn't responsible for the physical components, such as computers, the network, or the physical security of the datacenter. However, the cloud customer still has responsibility for software components such as operating systems, network controls, applications, and protecting data.
 
