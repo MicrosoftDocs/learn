@@ -17,17 +17,6 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How to you get access to a private preview feature?"
-    choices:
-    - content: "Microsoft needs to add your subscription to an allowlist for a given feature"
-      isCorrect: true
-      explanation: "That's correct. Private preview feature is available directly from Microsoft."
-    - content: "You need to select the private preview feature checkbox in the Azure portal"
-      isCorrect: false
-      explanation: "That's incorrect. You cannot enable the private preview feature through Azure portal."
-    - content: "Private preview features are automatically available through Azure portal"
-      isCorrect: false
-      explanation: "That's incorrect. Private preview features are not automatically available through Azure portal."
   - content: "Which tool would you use to assess and migrate your databases from an on-premises SQL Server to an Azure Virtual Machine?"
     choices:
     - content: "Microsoft Assessment and Planning Toolkit"
@@ -50,7 +39,7 @@ quiz:
     - content: "Elapsed time of queries"
       isCorrect: false
       explanation: "That's incorrect. Elapsed time of queries is not guaranteed when you upgrade versions of SQL Server but maintain the same compatibility level."
-  - content: "Which of the following is a valid reason for migrating your database to Azure SQL Database?"
+  - content: "Which of the options is a valid reason for migrating your database to Azure SQL Database?"
     choices:
     - content: "Your applications need to run older versions of SQL Server, such as SQL Server 2016"
       isCorrect: false
