@@ -44,4 +44,4 @@ units:
 - learn.wwl.deploy-paas-solutions-with-azure-sql.knowledge-check
 - learn.wwl.deploy-paas-solutions-with-azure-sql.summary
 badge:
-  uid: learn.wwl.deploy-azure-sql-database.badge
+  uid: learn.wwl.deploy-paas-solutions-with-azure-sql.badge
