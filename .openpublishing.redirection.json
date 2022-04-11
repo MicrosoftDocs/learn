@@ -12505,6 +12505,11 @@
       "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/7-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/5-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/2-describe-common-compliance-needs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
+      "redirect_document_id": false
     }
   ]
 }
