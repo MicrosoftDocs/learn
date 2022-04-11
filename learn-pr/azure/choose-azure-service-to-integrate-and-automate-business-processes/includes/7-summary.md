@@ -1,4 +1,4 @@
-Some business processes are simple, but often they include challenges such as:
+Some business processes are simple, but they often include challenges such as:
 
 - They might involve many different steps, sometimes with loops or conditional branches.
 - They may be long-running and complete over days or weeks as staff become available or because of other delays.
@@ -6,7 +6,7 @@ Some business processes are simple, but often they include challenges such as:
 - You may want to integrate a custom or third-party system, which may require a custom connector.
 - You may want non-developers to be able to modify and update the workflow.
 
-As you have seen, Azure includes the following technologies that you can use to overcome these challenges:
+As you've seen, Azure includes the following technologies that you can use to overcome these challenges:
 
 - Microsoft Power Automate
 - Azure Logic Apps
