@@ -6,8 +6,8 @@ During the process, you'll:
 > * Create a workflow for pull request validation.
 > * Add Bicep linting to the workflow.
 > * Create a pull request, and watch the workflow run.
-> * Fix the errors identified by the pull request validation workflow.
-> * Re-run the workflow, and merge and close the pull request.
+> * Fix any errors that are identified by the pull request validation workflow.
+> * Rerun the workflow, and then merge and close the pull request.
 
 ## Create a workflow to run when pull requests are created and updated
 
@@ -15,20 +15,20 @@ During the process, you'll:
 
    :::image type="content" source="../media/4-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the P R validation dot Y M L file within the workflows folder.":::
 
-1. Add the following code into the file:
+1. Add the following code to the file:
 
    :::code language="yaml" source="code/4-pr-validation.yml" range="1-3" :::
 
    This code ensures that the workflow is executed whenever a pull request is created or updated.
 
    > [!NOTE]
-   > You're working directly against your repository's *main* branch. Normally, you wouldn't do this, but in this exercise you'll work against *main* to simplify the steps. In your own projects, it's important to set up branch protection rules to protect your main branch.
+   > You're working directly against your repository's *main* branch. You wouldn't ordinarily do this, but in this exercise you'll work against *main* to simplify the steps. In your own projects, it's important to set up branch protection rules to protect your main branch.
 
 ## Add a lint job to your workflow
 
-When a pull request is opened or edited you want to run a linting step for your Bicep files. There's a reusable *lint* workflow in the repository that you can call from this workflow.
+Whenever you open or edit a pull request, you want to run a linting step for your Bicep files. There's a reusable *lint* workflow in the repository that you can call from this workflow.
 
-1. At the bottom of the file, add the following lines to reuse the *lint* workflow defined in your repository:
+1. At the end of the existing file contents, to reuse the *lint* workflow that's defined in your repository, add the following lines:
 
    :::code language="yaml" source="code/4-pr-validation.yml" range="5-7" :::
 
@@ -46,9 +46,9 @@ When a pull request is opened or edited you want to run a linting step for your 
 
 ## Update the Bicep file
 
-Here, you modify your website's Bicep file to update the website's operating system to Linux.
+Next, modify your website's Bicep file to update the website's operating system to Linux.
 
-1. In the Visual Studio Code terminal, run the following command to create a new branch for your changes:
+1. In the Visual Studio Code terminal, create a new branch for your changes by running the following command:
 
    ```bash
    git checkout -b feature/linux-app
@@ -99,30 +99,30 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
 
 1. Select **Create pull request**.
 
-   :::image type="content" source="../media/4-create-pull-request-details.png" alt-text="Screenshot of GitHub that shows the pull request creation page.":::
+   :::image type="content" source="../media/4-create-pull-request-details.png" alt-text="Screenshot of GitHub 'Open a pull request' pane, which displays the 'Create pull request' button.":::
 
-   The pull request detail page is displayed.
+   The pull request details page is displayed.
 
-1. Look at the **Checks** section of the pull request details.
+1. View the **Checks** section of the pull request details.
 
    After a moment, notice that an automatic check has been triggered. The check runs your pull request validation workflow.
 
    It might take some time for the workflow to start running. Refresh your browser window until you see the status checks.
    
-   Wait until the check completes. The check fails.
+   When the check finishes, you can see that it has failed.
 
    :::image type="content" source="../media/4-checks-failed.png" alt-text="Screenshot of GitHub that shows the failed status check on the pull request details page.":::
 
-   > [!TIP]
-   > Notice that GitHub allows you to merge the pull request even while the status checks fail. In a real solution, you should configure a branch protection rule to prevent a pull request from being merged until its status checks have succeeded.
+   > [!NOTE]
+   > GitHub allows you to merge the pull request even though the status checks have failed. In a real solution, you should configure a branch protection rule to prevent a pull request from being merged until its status checks have succeeded.
 
-## Fix the errors of the pull request validation
+## Fix the pull request validation errors
 
-1. On the status check, select **Details** to inspect the workflow log.
+1. On the status check pane, select **Details** to inspect the workflow log.
 
-   :::image type="content" source="../media/4-linter-error.png" alt-text="Screenshot of GitHub that shows the workflow log.":::
+   :::image type="content" source="../media/4-linter-error.png" alt-text="Screenshot of GitHub that shows the workflow log, including the validation error.":::
 
-   Notice that the log includes this message from the Bicep linter:
+   The log includes this message from the Bicep linter:
 
    ```output
    Error no-unused-vars: Variable "appServiceAppLinuxFrameworkVersion" is declared but never used. 
@@ -130,7 +130,7 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
 
 1. In Visual Studio Code, open the *deploy/main.bicep* file.
 
-   Notice that there is a variable named `appServiceAppLinuxFrameworkVersion` on line 20. The variable isn't used. Next, you'll fix this error.
+   At line 20, there's a variable named `appServiceAppLinuxFrameworkVersion`. The variable isn't used. Next, you'll fix this error.
 
 1. In the `appServiceApp` resource definition, update the `linuxFxVersion` property to use the variable instead of setting the property to the hard-coded value:
 
@@ -146,14 +146,14 @@ Now that the workflow is configured and your Bicep file is updated, you can crea
 
 ## Monitor and merge the pull request
 
-1. Reopen your browser back to the pull request details page.
+1. Reopen your browser to the pull request details page.
 
-   The pull request validation runs again. If you don't see the status check running, refresh your page.
+   The pull request validation runs again. If the status check isn't running, refresh your page.
    
-   Wait for the check to complete. This time, it succeeds. There are no syntax or linter errors in the Bicep file, so you're ready to merge the pull request.
+   Wait for the check to finish. This time, it has succeeded. There are no syntax or linter errors in the Bicep file, so you're ready to merge the pull request.
 
 1. Select **Merge pull request** to close the pull request and merge the changes in your main branch.
 
-   :::image type="content" source="../media/4-merge-pull-request.png" alt-text="Screenshot of GitHub that shows the Merge pull request button on the pull request details page.":::
+   :::image type="content" source="../media/4-merge-pull-request.png" alt-text="Screenshot of GitHub that shows the 'Merge pull request' button on the pull request details page.":::
 
 1. Select **Confirm merge**.
