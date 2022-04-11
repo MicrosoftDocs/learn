@@ -44,13 +44,13 @@ To test out your API calls, you can use the developer portal, or command-line to
 
 :::image type="content" source="../media/2-key-header-portal.png" alt-text="Call API from developer portal." loc-scope="other"::: <!-- no-loc -->
 
-Here's how you can pass a key in the request header using **curl**:
+Here's an example of how you would pass a key in a request header using **curl**:
 
 ```bash
 curl --header "Ocp-Apim-Subscription-Key: <key string>" https://<apim gateway>.azure-api.net/api/path
 ```
 
-Here's an example **curl** command that passes a key in the URL as a query string:
+Here's an example of how you would use a **curl** command to pass a key as a query string in a URL:
 
 ```bash
 curl https://<apim gateway>.azure-api.net/api/path?subscription-key=<key string>
