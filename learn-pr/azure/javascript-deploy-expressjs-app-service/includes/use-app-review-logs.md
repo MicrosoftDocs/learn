@@ -9,7 +9,8 @@ Azure Monitor provides several sets of data and functionality you can use to wat
 * **Platform metrics and activity log**: These metrics and the log are collected and stored *automatically*. You can route them to other locations by using a diagnostic setting.
 * **Resource logs**: These logs *aren't automatically collected* and stored. You must create a diagnostic setting and route them to one or more locations.
 * **Alerts**: They proactively notify you when important conditions are found in your monitoring data. You can use them to identify and address issues in your system before your customers notice them.
-    * If you're running an application on App Service via Azure Monitor, Azure Application Insights offers more types of alerts:
+  
+  If you're running an application on App Service via Azure Monitor, Azure Application Insights offers more types of alerts:
 
     | Alert type | Condition | Examples  |
     |:---|:---|:---|
