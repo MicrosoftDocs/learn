@@ -15,7 +15,7 @@ For this module, the hosting choice is App Service. This Express.js app doesn't 
 
 ## Azure App Service and the App Service plan
 
-The parent unit for App Service is the App Service plan. When you create the App Service, you can create a plan at the same time or use an existing plan.
+The parent unit for App Service is the App Service plan. When you create the App Service instance, you can create a plan at the same time or use an existing plan.
 
 An App Service plan defines a set of compute resources for a web app to run. These compute resources are analogous to the server farm in conventional web hosting. One or more apps can be configured to run on the same computing resources or in the same App Service plan.
 
