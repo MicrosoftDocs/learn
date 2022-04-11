@@ -44,7 +44,7 @@ A resource group has required and optional properties:
 |Property|Explanation|
 |--|--|
 |Location (required)|Azure region, such as `U.S. West`, allows you to group your resources by region.|
-|Tags (optional)|Name or value pairs that can help you add more granularity to the resource group that naming doesn't provide. |
+|Tags (optional)|Name and value pairs that can help you add more granularity to the resource group that naming doesn't provide. |
 
 ## Use tags for rich categorization
 
