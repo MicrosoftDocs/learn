@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/11/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What type of storage offers the lowest latency in Azure?"
+    choices:
+    - content: "Ultra SSD"
+      isCorrect: true
+      explanation: "That's correct. Ultra Disk offers the lowest latency of the three storage types."
+    - content: "Premium SSD"
+      isCorrect: false
+      explanation: "That's incorrect. Ultra Disk offers the lowest latency of the three storage types."
+    - content: "Standard SSD"
+      isCorrect: false
+      explanation: "That's incorrect. Ultra Disk offers the lowest latency of the three storage types."
+  - content: "To reduce the cost of an Azure SQL Server VM you intend to run full time for three years, which option should you choose?"
+    choices:
+    - content: "Availability set"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Reserved VM Instance can offer significant cost saving over pay as you go licensing."
+    - content: "Azure Reserved VM Instances"
+      isCorrect: true
+      explanation: "That's correct. Azure Reserved VM Instance can offer significant cost saving over pay as you go licensing."
+    - content: "Pay as You Go Licensing"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Reserved VM Instance can offer significant cost saving over pay as you go licensing."
+  - content: "Which option should you choose to spread workloads across data centers in a region?"
+    choices:
+    - content: "Availability sets"
+      isCorrect: false
+      explanation: "That's incorrect. To spread workloads across data centers in a region you should choose availability zones."
+    - content: "Availability zones"
+      isCorrect: true
+      explanation: "That's correct. To spread workloads across data centers in a region you should choose availability zones."
+    - content: "Availability units"
+      isCorrect: false
+      explanation: "That's incorrect. To spread workloads across data centers in a region you should choose availability zones."
+  - content: "Which service performs block level replication of your Azure virtual machine?"
+    choices:
+    - content: "Azure Site Recovery"
+      isCorrect: true
+      explanation: "That's correct. Azure Site Recovery is a low-cost solution that will perform block level replication of your Azure virtual machine."
+    - content: "Azure Backup for SQL Server"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Site Recovery is a low-cost solution that will perform block level replication of your Azure virtual machine."
+    - content: "Availability Groups"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Site Recovery is a low-cost solution that will perform block level replication of your Azure virtual machine."

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.explain-iaas-options-for-deploying-azure
+title: Explain IaaS options for deploying SQL Server in Azure
+metadata:
+  title: Explain IaaS options for deploying SQL Server in Azure
+  description: "Explain IaaS options for deploying SQL Server in Azure"
+  ms.date: 04/11/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/2-explain-iaas-options-deploying-azure.md)]
