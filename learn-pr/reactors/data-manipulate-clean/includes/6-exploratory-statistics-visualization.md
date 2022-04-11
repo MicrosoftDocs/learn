@@ -9,7 +9,7 @@ df = pd.read_csv('Data/housing_dataset.csv')
 df.head()
 ```
 
-Here's what is returned:
+Here's what's returned:
 
 ![Screenshot that shows the output of running df.head().](../media/df-head.png)
 
@@ -29,7 +29,7 @@ This dataset contains information that was collected from the U.S Census Bureau 
 * **`LSTAT`**: The percent of the lower-status portion of the population
 * **`MEDV`**: The median value of owner-occupied homes in \$1,000s
 
-One of the first methods you can use to better understand this dataset is `DataFrame.shape`. 
+One of the first methods you can use to better understand this dataset is `DataFrame.shape`.
 
 To find out how many rows and columns the dataset contains, run this command:
 
@@ -57,7 +57,7 @@ Here's the output, which shows all the values:
 
 Because a dataset can have only so many columns, often it can be useful to transpose the results of `DataFrame.describe` to use them better.
 
-Note that you can also examine specific descriptive statistics for columns, without invoking `DataFrame.describe`.
+Note that you can also examine specific descriptive statistics for columns without invoking `DataFrame.describe`.
 
 To get the mean of the median value of owner-occupied homes in the dataset (in $1,000s), run this command:
 
@@ -369,7 +369,7 @@ Let's take a moment to analyze these results in more depth. The first row report
 
 The next row shows that communities that are similar to the first row, except for being located on the Charles River, have a mean house price of $50,000.
 
-One insight that seems clear from the data is that, all else being equal, being located next to the Charles River can significantly increase the value of newer housing stock. The story is more ambiguous for communities dominated by older houses: proximity to the Charles significantly increases home prices in one community (and that one presumably farther away from the city). For all others, being situated on the river either provided a modest increase in value or actually decreased mean home prices.
+One insight that seems clear from the data is that, all else being equal, being located next to the Charles River can significantly increase the value of newer housing stock. The story is more ambiguous for communities dominated by older houses: proximity to the Charles significantly increases home prices in one community (and that one is presumably further away from the city). For all others, being situated on the river either provided a modest increase in value or actually decreased mean home prices.
 
 Although groupings like this can be a great way to begin to interrogate your data, you might not care for the tall format it comes in. In that case, you can unstack the data into a wide format:
 
@@ -448,7 +448,7 @@ Here's the output:
 
 ![Screenshot that shows the output of running df.corr with the person method.](../media/df-corr-pearson.png)
 
-Suppose you want to look only at the correlations between all the columns and one variable? Let's examine only the correlation between all other variables and the percentage of owner-occupied houses build before 1940 (`AGE`). Do this by accessing the column by index number:
+Suppose you want to look only at the correlations between all the columns and one variable? Let's examine only the correlation between all other variables and the percentage of owner-occupied houses built before 1940 (`AGE`). Do this by accessing the column by index number:
 
 ```python
 corr = df.corr(method='pearson')
@@ -591,7 +591,7 @@ Here's the output:
 
 The KDE plot is very good at showing concentrations of data points. On the other hand, finer structures, like linear relationships (such as the clear relationship between the number of rooms in homes and the house price), are lost in the KDE plot.
 
-Finally, `pairplot` in Seaborn allows you to see scatterplots and histograms for several columns in one table. Here, we have played with some of the keywords to produce a more sophisticated, and easier-to-read, `pairplot`. It incorporates both alpha blending and linear regression lines for the scatterplots:
+Finally, `pairplot` in Seaborn allows you to see scatterplots and histograms for several columns in one table. Here, we have played with some of the keywords to produce a more sophisticated and easier-to-read `pairplot`. It incorporates both alpha blending and linear regression lines for the scatterplots:
 
 ```python
 sns.pairplot(df[['RM', 'AGE', 'LSTAT', 'DIS', 'MEDV']], kind="reg", plot_kws={'line_kws':{'color':'red'}, 'scatter_kws': {'alpha': 0.1}})
