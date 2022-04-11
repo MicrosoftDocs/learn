@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.evaluate-strategies-for-migrating-to-azure-sql
+metadata:
+  title: Evaluate strategies for migrating to Azure SQL
+  description: "Evaluate strategies for migrating to Azure SQL"
+  ms.date: 04/11/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Evaluate strategies for migrating to Azure SQL
+summary: Describe database migration options and tools on Azure. Understand how compatibility level affects database behavior. Describe Azure private and public preview options.
+abstract: |
+  After completing this module, you will be able to:
+  *   Evaluate different Azure migration options when moving your SQL environment to the cloud.
+  *   Understand how SQL Server compatibility level affects database behavior.
+  *   Understand the differences between private and public preview options.
+prerequisites: |
+  *   Experience creating and configuring resources using the Azure portal.
+  *   Ability to create a on-premises SQL Server database.
+  *   Ability to write SQL statements at a beginner level.
+iconUrl: /learn/achievements/4-evaluate-strategies-for-moving-to-azure.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- azure-sql-managed-instance
+- azure-sqlserver-vm
+- sql-server
+units:
+- learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.introduction
+- learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.understand-compatibility-level
+- learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.understand-azure-preview-features
+- learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.describe-azure-database-migration-options
+- learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.knowledge-check
+- learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.summary
+badge:
+  uid: learn.wwl.evaluate-strategies-for-migrating-sql-databases-to-azure.badge
