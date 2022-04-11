@@ -1,8 +1,8 @@
 Your customized container is coming along well for your agency. With the power of Remote - Containers, you've been able to add a preconfigured dev container. And through the exercises so far, you've customized your experience through the devcontainer.json file. But what if you want to add software beyond what's available in those images or preconfigured dev containers?
 
-## Introduction to installing additional software
+## Introduction to installing more software
 
-Additional software might include another technology stack for your agency. For instance, you might want to include Node.js in any of your dev containers because you know that's part of many development workflows.
+More software might include another technology stack for your agency. For instance, you might want to include Node.js in any of your dev containers because you know that's part of many development workflows.
 
 When you ran **Remote-Containers: Add Development Container Configuration Files**, a .devcontainer folder was added to your app. It included a devcontainer.json file and a Dockerfile. These files came from the [Visual Studio Code dev containers](https://github.com/microsoft/vscode-dev-containers) repo. Although this repo gives us many options for our team, we might want to iterate on them by installing more software.
 

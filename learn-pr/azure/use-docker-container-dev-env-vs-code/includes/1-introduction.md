@@ -1,4 +1,4 @@
-You can use the Remote - Containers extension for Visual Studio Code to develop inside a Docker container. 
+You can use the Remote - Containers extension for Visual Studio Code to develop inside a Docker container.
 
 Suppose you work at an agency that does software consulting around many different languages and runtime environment. All developers are using Visual Studio Code. The agency has dozens of projects in progress, each with its own configuration and runtime requirements. Developers at your agency need to work on any project without having to set up or configure their machines first.
 

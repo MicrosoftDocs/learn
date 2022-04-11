@@ -1,4 +1,4 @@
-The devcontainer.json file helps you configure a variety of settings in your containerized Visual Studio Code setup. So far, you've configured a dev container for a Python project. However, there are still some rough edges and setup tasks that you can further automate. 
+The devcontainer.json file helps you configure various settings in your containerized Visual Studio Code setup. So far, you've configured a dev container for a Python project. However, there are still some rough edges and setup tasks that you can further automate.
 
 In this exercise, you'll use the devcontainer.json file to smooth these edges and make the project work with no setup steps from the developer.
 
@@ -6,12 +6,12 @@ In this exercise, you'll use the devcontainer.json file to smooth these edges an
 
 The container comes with the Microsoft Python extension. The Python extension enables snippets, linting, and IntelliSense in Python files. But the index.html file in the templates folder is a Jinja template, and you need to install a different extension to get syntax highlighting in that file.
 
-1.  Press <kbd>F1</kbd> to open the Command Palette.
-1.  Type **extension** and select **Extensions: Install Extensions**.
-1.  In the extension explorer on the right, search for **jinja**.
-1.  Click **Install**. 
-1.  Right-click the **Jinja** extension from **wholroyd** and select **Copy extension ID**.
-1.  Add the extension ID to the `extensions` option.
+1. Press <kbd>F1</kbd> to open the Command Palette.
+1. Type **extension** and select **Extensions: Install Extensions**.
+1. In the extension explorer on the right, search for **jinja**.
+1. Click **Install**.
+1. Right-click the **Jinja** extension from **wholroyd** and select **Copy extension ID**.
+1. Add the extension ID to the `extensions` option.
 
     ```json
     // Add the IDs of extensions you want installed when the container is created.
@@ -20,8 +20,9 @@ The container comes with the Microsoft Python extension. The Python extension en
         "wholroyd.jinja"
     ],
     ```
-1.  Return to the devcontainer.json file and notice that the Jinja extension has been added to the `extensions` section.
-1.  Save the devcontainer.json file.
+
+1. Return to the devcontainer.json file and notice that the Jinja extension has been added to the `extensions` section.
+1. Save the devcontainer.json file.
 
 ## Automate dependency installation
 
@@ -32,6 +33,7 @@ Right now, a developer who's setting up the project for the first time has to kn
     ```json
     "postCreateCommand": "pip3 install --user -r requirements.txt"
     ```
+
 1. Save the devcontainer.json file.
 
 The container will automatically install dependencies whenever a container is created.
@@ -41,7 +43,7 @@ The container will automatically install dependencies whenever a container is cr
 1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **rebuild** and select **Remote-Containers: Rebuild Container**.
 
-The container will be rebuilt with the changes you've specified in the devcontainer.json file. 
+The container will be rebuilt with the changes you've specified in the devcontainer.json file.
 
 > [!NOTE]
 > Whenever a container is rebuilt, the container is removed and completely recreated. Terminal history is not persisted when a container is rebuilt.
@@ -55,14 +57,14 @@ The container will be rebuilt with the changes you've specified in the devcontai
 
 ## Run the app
 
-1.  Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the Visual Studio Code integrated terminal.
-1.  Run the app by using the following command:
+1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the Visual Studio Code integrated terminal.
+1. Run the app by using the following command:
 
     ```bash
     python app.py
     ```
 
-1.  Notice that you didn't have to install any dependencies. The application simply runs.
+1. Notice that you didn't have to install any dependencies. The application simply runs.
 
 The container is now customized and automated for your agency. Any developer who opens this project by using Remote - Containers can immediately run it and get to work writing code.
 
