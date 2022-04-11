@@ -56,7 +56,7 @@ Azure Site Recovery is a low-cost solution that will perform block level replica
 
 Azure Site Recovery is supported for use with SQL Server, but keep in mind that you will need to set a higher recovery point which means potential loss. In this case, your RTO will essentially be your RPO.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-17.png" alt-text="Azure Backup for SQL Server Architecture":::
+:::image type="content" source="../media/module-55-optimize-queries-final-17.png" alt-text="Azure Site Recovery Architecture":::
 
 1. VM is registered with Azure Site Recovery
 1. Data is continuously replicated to cache
