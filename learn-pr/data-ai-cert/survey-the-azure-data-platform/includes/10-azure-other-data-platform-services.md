@@ -2,7 +2,7 @@ To round out your understanding of offerings on the Azure data platform, conside
 
 ## Databricks
 
-Databricks is a serverless platform that's optimized for Azure. It provides one-click setup, streamlined workflows, and an interactive workspace for Spark-based applications.
+Databricks is a data analytics platform that's optimized for Azure. It provides one-click setup, streamlined workflows, and an interactive workspace for Spark-based applications.
 
 Databricks adds capabilities to Apache Spark, including fully managed Spark clusters and an interactive workspace. You can use REST APIs to program clusters.
 
