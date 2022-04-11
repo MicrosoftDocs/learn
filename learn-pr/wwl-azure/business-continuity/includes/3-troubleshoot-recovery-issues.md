@@ -99,19 +99,24 @@ It is good practice to proactively monitor the process server when restoring dat
 
 The following graphic summarizes the steps to troubleshoot a backup recovery:
 
-1. Are all services running?
-
-1. Is the CPU state OK?
-
-1. Is the memory state OK?
-
-1. Is cache free space OK?
-
-1. Does the process server have a heartbeat?
-
-1. Troubleshoot connection/replication issues.
-
-:::image type="content" source="../media/3-steps-backup-recovery.png" alt-text="Screenshot of Steps to troubleshoot a backup recovery.":::
+:::row:::
+    :::column span="2":::
+        1. Are all services running?
+        
+        1. Is the CPU state OK?
+        
+        1. Is the memory state OK?
+        
+        1. Is cache free space OK?
+        
+        1. Does the process server have a heartbeat?
+        
+        1. Troubleshoot connection/replication issues.
+    :::column-end:::
+    :::column:::
+       :::image type="content" source="../media/3-steps-backup-recovery.png" alt-text="Screenshot of steps to troubleshoot a backup recovery." lightbox="../media/3-steps-backup-recovery.png"::: 
+    :::column-end:::
+:::row-end:::
 
 ## Troubleshoot restore issues from Microsoft Azure Backup Server (MABS)
 
@@ -193,7 +198,7 @@ When recovering an on-premises Hyper-V VM to Azure, use Azure Site Recovery. If 
 
   - [Troubleshoot](/windows/win32/wmisdk/wmi-troubleshooting) WMI.
 
-  - [Troubleshoot](https://docs.microsoft.com/previous-versions/tn-archive/ff406382(v=msdn.10)) problems with WMI scripts and services.
+  - [Troubleshoot](/previous-versions/tn-archive/ff406382(v=msdn.10)) problems with WMI scripts and services.
 
 - On the guest VM, ensure that you have the latest version of Integration Services and it is running. Microsoft recommends keeping integration services up-to-date.
 
@@ -299,7 +304,7 @@ A System Center Configuration Manager (SCCM) site recovery is needed if a site f
 
 If you experience problems, try the following troubleshooting issues:
 
-1. Check that previous configurations are not on the site server, as this can cause conflicts. Remove previous configurations before restoring Configuration Manager:
+1. Check that previous configurations are not on the site server, as this can cause conflicts. Remove previous configurations before restoring Configuration Manager by using one of the following methods:
 
    - Restoring to a new server.
 
@@ -369,7 +374,7 @@ Azure Site Recovery limits are data churn per disk and data churn per virtual ma
 
 To find out whether this is a recurring problem, check the data change rate of the relevant virtual machine under **Monitoring**. You will need to add the metrics shown in the following screenshot:
 
-:::image type="content" source="../media/3-data-change-rate.png" alt-text="Screenshot that shows OS Disk Writes Bytes/Sec.":::
+:::image type="content" source="../media/3-data-change-rate.png" alt-text="Screenshot that shows O S Disk Writes Bytes per Sec.":::
 
 ### Network connectivity problems
 
