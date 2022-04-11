@@ -62,9 +62,11 @@ The local project has several folders. Each folder represents a Learn module. Th
 1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
 1. In the **App Service** section, find and expand the subscription's App Service resource.
 1. The app you created in the previous exercise, such as `jimb-rentals`, should be listed.
-    1. If the app isn't listed, try the following steps:
-        1. At the top of this Learn unit, check that you still have time for your sandbox.
-        1. In Visual Studio Code, sign out of Azure. Then sign in again to make sure all subscriptions are displayed.
+   
+   If the app isn't listed, try the following steps:
+   
+   1. At the top of this Learn unit, check that you still have time for your sandbox.
+   1. In Visual Studio Code, sign out of Azure. Then sign in again to make sure all subscriptions are displayed.
 1. Right-click the app and select **Deploy to Web App**.
 1. Browse to the subfolder **2-Deploy-basic-app-to-azure** and select it.
 1. When you're asked if you want to deploy, select **Deploy**.
