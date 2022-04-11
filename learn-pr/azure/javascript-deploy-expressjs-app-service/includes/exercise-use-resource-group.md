@@ -18,8 +18,8 @@ Find the free sandbox subscription in Visual Studio Code.
 1. Open Visual Studio Code.
 1. Select <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> to open the command palette.
 1. Select **Azure: Sign In to Azure Cloud** to complete the sign-in process.
-1. When the listing of Azure clouds displays, select **Azure Cloud**.
-1. After the process is finished, your account displays in the bottom bar. An example is `Azure: youremail@mail.com`.
+1. When the listing of Azure clouds appears, select **Azure Cloud**.
+1. After the process is finished, your account appears in the bottom bar. An example is `Azure: youremail@mail.com`.
 1. Select your account in the bottom bar and filter the list of subscriptions to the sandbox subscription.
 
     |Subscription name|Value|
@@ -33,8 +33,8 @@ Find the free sandbox subscription in Visual Studio Code.
     1. In the text box, enter the sandbox tenant `604c1504-c6a3-4080-81aa-b33091104187`.
     1. Sign back in to Azure for this tenant:
         1. In the command palette, select **Azure: Sign In to Azure Cloud** to complete the sign-in process.
-        1. When the listing of Azure clouds displays, select **Azure Cloud**.
-        1. After the process is finished, your account displays in the bottom bar. An example is `Azure: youremail@mail.com`.
+        1. When the listing of Azure clouds appears, select **Azure Cloud**.
+        1. After the process is finished, your account appears in the bottom bar. An example is `Azure: youremail@mail.com`.
 1. Enable the sandbox subscription **Concierge Subscription**. Clear any other subscription checkboxes so that you can focus while you complete this module.
 
 ## Use the Azure resource group extension to find the sandbox resource group
