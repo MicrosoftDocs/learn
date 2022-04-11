@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking-part-two
-title: Exercise - Work with Change tracking
+title: Exercise - Work with Change Tracking
 metadata:
   unitType: learning-content
-  title: Exercise - Work with Change tracking
+  title: Exercise - Work with Change Tracking
   description: "Learning how to enable CT and query the CT changes for data changes. This section also includes a sandbox exercise to practice all CT lessons learned."
   ms.date: 3/21/2022
   author: MaraSteiu
