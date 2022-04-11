@@ -3,13 +3,13 @@ uid: learn.wwl.translate-text-with-translation-service
 metadata:
   title: Translate text and speech
   description: "Translate text and speech"
-  ms.date: 11/08/2021
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Translate text and speech
-summary: Automated translation capabilities in an AI solution enables closer collaboration by removing language barriers.
+summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
 abstract: |
   After completing this module, you will be able to perform text and speech translation using Azure Cognitive Services.
 prerequisites: |

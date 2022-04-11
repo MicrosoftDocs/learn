@@ -20,7 +20,7 @@ Two important elements of virtual networks are subnets and network security grou
 
 ![Image showing Azure Virtual Network component architecture.](../media/3-azure-VNet-arch.png)
 
-- **Subnets**: Each virtual network can include a number of subnets. Each subnet has its own unique properties.
+- **Subnets**: Each virtual network can include many subnets. Each subnet has its own unique properties.
 - **Network security groups**: These NSGs allow you to filter the inbound and outbound traffic through your virtual network or subnet. You can also use NSGs to filter traffic by source and destination IP address, port, or protocol.
 
 ## Planning and design considerations for virtual networks
@@ -44,4 +44,4 @@ Implementation of ExpressRoute does take some time. You have to work through a c
 
 Using ExpressRoute in a hub-spoke topology is no different than other architectural patterns. ExpressRoute, which underpins the connectivity between the hub and the on-premises network, works best when there's high data ingress and egress.
 
-You use circuits to manage and route traffic. Link ExpressRoute into a virtual network in Azure. The circuits to be connected to the virtual network might be in different regions or subscriptions. There are limits to the number of virtual networks per ExpressRoute circuit. For the standard tier, the limit is currently 10 networks. If you use the premium add-on, the limit is increased based on the circuit size. The lowest number is 20 virtual networks on a 50-Mbps circuit, up to 100 for circuits that are 10-Gbps or bigger.
+You use circuits to manage and route traffic. Link ExpressRoute into a virtual network in Azure. The circuits to be connected to the virtual network might be in different regions or subscriptions. There are limits to the number of virtual networks per ExpressRoute circuit. For the standard tier, the limit is currently 10 networks. If you use the premium add-on, the limit is increased based on the circuit size. The lowest number is 20 virtual networks on a 50-Mbps circuit, up to 100 for circuits that are 10 Gbps or bigger.

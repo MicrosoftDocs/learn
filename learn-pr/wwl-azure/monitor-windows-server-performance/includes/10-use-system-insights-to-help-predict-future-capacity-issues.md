@@ -1,7 +1,7 @@
 You can also use System Insights in Windows Admin Center to both measure performance, and to gain insights into future capacity needs. You can install System Insights from Server Manager, or by using the WAC console.
 
 > [!TIP]
-> You can also install System Insights using the following PowerShell command: `Add-WindowsFeature System-Insights -IncludeManagementTools`. 
+> You can also install System Insights using the following PowerShell command: `Add-WindowsFeature System-Insights -IncludeManagementTools`. 
 ## What are capabilities?
 
 After you've installed the System Insights extension, the System Insights node displays a number of capabilities. By default, these are:
@@ -21,11 +21,11 @@ You can also add the following additional capabilities:
 - Physical disk anomaly detection (Latency)
 
 > [!TIP]
-> You can add capabilities from WAC, but you can also use the `Add-InsightsCapability` cmdlet. 
+> You can add capabilities from WAC, but you can also use the `Add-InsightsCapability` cmdlet. 
 After you have installed the required capabilities, you must enable them. You can do this in the Windows Admin Center console.
 
 > [!TIP]
-> You can also enable or disable capabilities by using the `Enable-InsightsCapability` or `Disable-InsightsCapability` cmdlets.
+> You can also enable or disable capabilities by using the `Enable-InsightsCapability` or `Disable-InsightsCapability` cmdlets.
 After you've added and enabled the capabilities, you can use them to gain insights into future capacity needs. The following screenshot displays the System Insights details on a server in Windows Admin Center.
 
 ![The screenshot displays the System Insights details on a server in Windows Admin Center. These details include CPU capacity forecasting, physical disk anomaly detection, total storage consumption, and more.](../media/system-insights.png)
@@ -45,7 +45,7 @@ To use a capability to gain insights, you must invoke it. When you invoke a capa
 - None. There is no prediction available. This might be due to lack of data.
 
 > [!NOTE]
-> If there is only between 0-5 days of available data, no prediction can be made. 
+> If there is only between 0-5 days of available data, no prediction can be made. 
 You can invoke a capability using Windows Admin Center, or else by using the `Invoke-InsightsCapability` PowerShell cmdlet.
 
 ## Retrieve capability results

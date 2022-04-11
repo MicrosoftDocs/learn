@@ -27,11 +27,11 @@ To access Azure Monitor Insights for Azure Virtual WAN:
 
 1. Under **Monitoring**, select **Insights (preview)**. The **Insights** view is displayed.
 
-:::image type="content" source="../media/5-insights-view.png" alt-text="Screenshot of Insights view" lightbox="../media/5-insights-view.png":::
+:::image type="content" source="../media/5-insights-view.png" alt-text="Screenshot of Insights view." lightbox="../media/5-insights-view.png":::
 
 The Insights view displays the virtual WAN resources with color-coded symbols to indicate their status. When you select a resource, the Insights view is displayed.
 
-:::image type="content" source="../media/5-virtual-network-resources.png" alt-text="Virtual WAN resources" lightbox="../media/5-virtual-network-resources.png":::
+:::image type="content" source="../media/5-virtual-network-resources.png" alt-text="Screenshot virtual WAN resources." lightbox="../media/5-virtual-network-resources.png":::
 
 The Insights view is diagrammatic, with each resource state color-coded. Metrics are displayed in a mini workbook on the right.
 
@@ -47,11 +47,11 @@ You can:
 
 - Right-click to access the Azure portal page for that resource.
 
-:::image type="content" source="../media/5-dependency-map.png" alt-text="Screenshot of dependency map" border="false" lightbox="../media/5-dependency-map.png":::
+:::image type="content" source="../media/5-dependency-map.png" alt-text="Screenshot of dependency map." lightbox="../media/5-dependency-map.png" border="false" :::
 
 Select **View detailed metrics** to display information about your virtual WAN resource capacity, performance, and utilization at the virtual WAN level, hub level, and for individual connections.
 
-:::image type="content" source="../media/5-detailed-metrics.png" alt-text="Screenshot of detailed metrics" lightbox="../media/5-detailed-metrics.png":::
+:::image type="content" source="../media/5-detailed-metrics.png" alt-text="Screenshot of detailed metrics." lightbox="../media/5-detailed-metrics.png":::
 
 ## Determine whether sites are configured correctly
 

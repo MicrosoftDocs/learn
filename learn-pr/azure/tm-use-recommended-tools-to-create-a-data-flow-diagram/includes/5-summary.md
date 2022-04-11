@@ -8,7 +8,7 @@ In this module, you:
 - Learned more about Visio
 
 > [!NOTE]
-> There are many other tools available to help with your threat modeling needs. Some require a paid subscription while others are completely open sourced. You may even use a whiteboard, which does have a low learning curve but assumes threat modeling expertise and could be difficult to save.
+> There are many other tools available to help with your threat-modeling needs. Some require a paid subscription, while others are completely open source. You may even use a whiteboard, which does have a low learning curve but assumes threat-modeling expertise and could be difficult to save.
 
 ## Learn more
 
