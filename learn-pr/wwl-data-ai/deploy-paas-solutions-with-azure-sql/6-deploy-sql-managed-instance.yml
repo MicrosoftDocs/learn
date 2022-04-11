@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-paas-solutions-with-azure-sql.deploy-sql-managed-instance
+title: Deploy SQL managed instance
+metadata:
+  title: Deploy SQL managed instance
+  description: "Deploy SQL managed instance"
+  ms.date: 04/11/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-deploy-sql-managed-instance.md)]

@@ -1,0 +1,3 @@
+To be included later.
+
+Azure SQL Database has been limited to 4 TB of storage per database for many years. This restriction is due to a physical limitation of the Azure infrastructure. Azure SQL Database Hyperscale changes the paradigm and allows for databases to be 100 TB or more. Hyperscale introduces new horizontal scaling techniques to add compute nodes as the data sizes grow. The cost of Hyperscale is the same as the cost of Azure SQL Database; however, there is a per terabyte cost for storage. You should note that once an Azure SQL Database is converted to Hyperscale, you cannot convert it back to a “regular” Azure SQL Database.
