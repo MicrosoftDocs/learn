@@ -2,16 +2,16 @@ There are multiple algorithms you can use for clustering. Perhaps the two best-k
 
 ## Train a K-means clustering model 
 
-The algorithm we previously used to approximate the number of clusters in our dataset is called *K-means*. Let’s get to the finer details, shall we? 
+The algorithm we previously used to approximate the number of clusters in our dataset is called *K-means*. Let's get to the finer details. 
 
 The basic algorithm has the following steps: 
 
 1. Specify the number of clusters to be created (this is done by the data scientist). Taking the flowers example from the previous unit, this means deciding how many clusters you want to use to group the flowers. 
 1. The algorithm randomly selects *K* observations from the dataset to serve as the initial centers for the clusters (that is, *centroids*). 
-1. Each of the remaining observations (in this case flowers) are assigned to its closest centroid. 
+1. Each of the remaining observations (in this case, flowers) is assigned to its closest centroid. 
 1. The new mean of each cluster is computed, and the centroid is moved to the mean. 
 1. Now that the centers have been recalculated, every observation is checked again to see if it might be closer to a different cluster. All the objects are reassigned again by using the updated cluster means. The cluster assignment and centroid update steps are iteratively repeated until the cluster assignments stop changing (that is, when *convergence* is achieved). Typically, the algorithm terminates when each new iteration results in negligible movement of centroids and the clusters become static. 
-1. Note that due to randomization of the initial *K* observations used as the starting centroids, we can get slightly different results each time we apply the procedure. For this reason, most algorithms use several random starts, and choose the iteration with the lowest *within cluster sum of squares* (WCSS). As such, it's strongly recommended to always run K-means with several values of *nstart*. 
+1. Note that due to randomization of the initial *K* observations used as the starting centroids, we can get slightly different results each time we apply the procedure. For this reason, most algorithms use several random starts and choose the iteration with the lowest *within cluster sum of squares* (WCSS). As such, it's strongly recommended to always run K-means with several values of *nstart*. 
 
 So, training usually involves multiple iterations, reinitializing the centroids each time, and the model with the best (lowest) WCSS is selected. The following animation shows this process: 
 
