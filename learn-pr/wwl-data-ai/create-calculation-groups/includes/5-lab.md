@@ -1,4 +1,6 @@
-<div class="alert top-alert is-hidden-portrait" dir="ltr" lang="en-us" data-bi-name="lab-prompt" data-ux-state="launch-prompt"><!----><p><!---->This unit includes a lab to complete.<!----></p>
-		<p><!---->Use the free resources provided in the lab to complete the exercises in this unit. You will not be charged.<!----></p>
-		<p><!---->Microsoft provides this lab experience and related content for educational purposes. All presented information is owned by Microsoft and intended solely for learning about the covered products and services in this Microsoft Learn module.<!----></p>
-		<p><button type="button" class="button" data-bi-name="activate"><!---->Launch lab<!----></button></p><!----></div>
+
+> [!NOTE]
+> A virtual machine (VM) containing the client tools you need is provided, along with the exercise instructions. Use the button above to open the VM. A limited number of concurrent sessions are available - if the hosted environment is unavailable, try again later.
+
+
+When you finish the exercise, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!
