@@ -12470,6 +12470,41 @@
       "source_path": "learn-pr/wwl-sci/describe-threat-protection-with-microsoft-365-defender/8-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-threat-protection-with-microsoft-365-defender/9-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/2a-describe-offerings-of-service-trust-portal.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/2-describe-service-trust-portal",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/3-describe-compliance-center.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/2b-describe-microsofts-privacy-principles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/3-describe-microsofts-privacy-principles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/4-manager.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/5-describe-use-benefits-of-compliance-score.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/4-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/7-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/5-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
