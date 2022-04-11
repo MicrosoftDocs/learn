@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-azure-arc-enabled-servers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 04/01/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following agents can’t be deployed as a VM extension for Azure Arc-enabled servers?
+    choices:
+    - content: Azure Monitor agent
+      isCorrect: false
+      explanation: Incorrect, you can deploy the Azure Monitor agent as a VM extension for Azure Arc-enabled servers.
+    - content: Log Analytics agent
+      isCorrect: false
+      explanation: Incorrect, you can deploy the Log Analytics agent as a VM extension for Azure Arc-enabled servers.
+    - content: Dependency agent
+      isCorrect: false
+      explanation: Incorrect, you can deploy the Dependency agent as a VM extension for Azure Arc-enabled servers.
+    - content: Connected Machine agent
+      isCorrect: true
+      explanation: Correct, you can't deploy the Connected Machine agent as a VM extension for Azure Arc-enabled servers. The Connected Machine agent contains the extension manager used for VM extension deployment.
+  - content: Which of the following services can be enabled to show Performance and Map data for an individual Azure Arc-enabled server?
+    choices:
+    - content: Azure Monitor metrics
+      isCorrect: false
+      explanation: Incorrect, Azure Monitor metrics help provide the data foundation for observability, but don't show Performance and Map data for an Azure Arc-enabled server.
+    - content: VM insights
+      isCorrect: true
+      explanation: Correct, VM insights can be enabled to show Performance and Map data for an individual Azure Arc-enabled server.
+    - content: Azure Monitor Logs
+      isCorrect: false
+      explanation: Incorrect, Azure Monitor Logs help provide the data foundation for observability, but don't show Performance and Map data for an Azure Arc-enabled server.
+    - content: Azure Monitor alerts
+      isCorrect: false
+      explanation: Incorrect, Azure Monitor alerts offer smart and scalable proactive responses, but don't show Performance and Map data for an Azure Arc-enabled server.
+  - content: Which of the following services isn't a necessary component of an Azure Monitor alert rule for an Arc-enabled server?
+    choices:
+    - content: Logic App
+      isCorrect: true
+      explanation: Correct, Logic App can be specified as part of an Action Group for an Azure Monitor Alert Rule; however, it isn't a necessary component.
+    - content: Signal
+      isCorrect: false
+      explanation: Incorrect, Signal must be specified for an Azure Monitor Alert Rule.
+    - content: Target Resource
+      isCorrect: false
+      explanation: Incorrect, Target Resource must be specified for an Azure Monitor Alert Rule.
+    - content: Criteria
+      isCorrect: false
+      explanation: Incorrect, Criteria must be specified for an Azure Monitor Alert Rule.
+  - content: Which of the following actions can be performed with Azure Monitor Logs, but not with Azure Monitor Metrics, for an Azure Arc-enabled server?
+    choices:
+    - content: Analyze with Metrics Explorer
+      isCorrect: false
+      explanation: Incorrect, Azure Monitor Metrics can be analyzed with Metrics Explorer, but Azure Monitor Logs can't be analyzed with Metrics Explorer.
+    - content: Visualize with Power BI
+      isCorrect: false
+      explanation: Incorrect, both Azure Monitor Logs and Azure Monitor Metrics can be visualized with Power BI.
+    - content: Analyze with Log Analytics
+      isCorrect: true
+      explanation: Correct, Azure Monitor Logs can be analyzed with Log Analytics, but Azure Monitor Metrics can't be analyzed with Metrics Explorer.
+    - content: Visualize with Azure Dashboard
+      isCorrect: false
+      explanation: Incorrect, both Azure Monitor Logs and Azure Monitor Metrics can be visualized with Azure Dashboards.
