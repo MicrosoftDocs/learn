@@ -25,12 +25,12 @@ quiz:
     - content: "Azure SQL Database Hyperscale"
       isCorrect: false
       explanation: "That's incorrect. Azure SQL managed instance is the only offering here that supports cross-database transactions."
-    - content: "Azure SQL managed instance"
+    - content: "Azure SQL Managed Instance"
       isCorrect: true
       explanation: "That's correct. Azure SQL managed instance is the only offering here that supports cross-database transactions."
-  - content: "You are building a new cloud database that you expect to grow to 50 TB. Which is the best option for your database?"
+  - content: "You're building a new cloud database that you expect to grow to 50 TB. Which is the best option for your database?"
     choices:
-    - content: "Azure SQL Database managed instance"
+    - content: "Azure SQL Managed Instance"
       isCorrect: false
       explanation: "That's incorrect. Azure SQL Database Hyperscale is the only option that supports 50 TB of data."
     - content: "Azure SQL Database Serverless"
@@ -39,7 +39,7 @@ quiz:
     - content: "Azure SQL Database Hyperscale"
       isCorrect: true
       explanation: "That's correct. Azure SQL Database Hyperscale is the only option that supports 50 TB of data."
-  - content: "You are building a database for testing purposes that will be used less than 8 hours a day. It is expected to be 20 GB in size. What is your most cost-effective option?"
+  - content: "You're building a database for testing purposes that will be used less than 8 hours a day. It's expected to be 20 GB in size. What is your most cost-effective option?"
     choices:
     - content: "Azure SQL Database Serverless"
       isCorrect: true
@@ -47,7 +47,7 @@ quiz:
     - content: "Azure SQL Database Elastic Pools"
       isCorrect: false
       explanation: "That's incorrect. Serverless will reduce the cost significantly for a database that is only used during business hours."
-    - content: "Azure SQL Database managed instance"
+    - content: "Azure SQL Database Managed Instance"
       isCorrect: false
       explanation: "That's incorrect. Serverless will reduce the cost significantly for a database that is only used during business hours."
   - content: "How often do differential backups occur with Azure SQL managed instance?"
