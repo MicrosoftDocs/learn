@@ -38,7 +38,7 @@ As part of the resource creation, these resources are created for you:
     |Deployment slots|*This feature isn't used in this module.*|
 
 1. Expand the **Files** section to see the **hostingstart.html** file.
-1. Open the file. This file is a basic HTML page that displays until you deploy the app.
+1. Open the file. This file is a basic HTML page that appears until you deploy the app.
 
     > [!TIP]
     > When you're still working on your project and not ready to show it, create a new slot named `temporary` with a custom version of this file. The custom version can be branded. If you have deployment or app issues, you can switch to the `temporary` slot while you resolve your issues.
