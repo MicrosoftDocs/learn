@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "Microsoft Assessment and Planning Toolkit"
       isCorrect: false
-      explanation: "That's incorrect. Microsoft Assessment and Planning Toolkit does not provide the options needed to both assess and migrate your databases to an Azure Virtual Machine"
+      explanation: "That's incorrect. Microsoft Assessment and Planning Toolkit doesn't provide the options needed to both assess and migrate your databases to an Azure Virtual Machine"
     - content: "Database Experimentation Assistant"
       isCorrect: false
       explanation: "That's incorrect. Database Experimentation Assistant is an experimentation solution used for SQL Server upgrades."
@@ -32,21 +32,21 @@ quiz:
     choices:
     - content: "Syntax compatibility"
       isCorrect: false
-      explanation: "That's incorrect. Microsoft does not guarantee syntax compatibility if you upgrade versions of SQL Server but maintain the same compatibility level."
+      explanation: "That's incorrect. Microsoft doesn't guarantee syntax compatibility if you upgrade versions of SQL Server but maintain the same compatibility level."
     - content: "Execution Plan Shape"
       isCorrect: true
       explanation: "That's correct. Microsoft guarantee Execution Plan Shape if you upgrade versions of SQL Server but maintain the same compatibility level."
     - content: "Elapsed time of queries"
       isCorrect: false
-      explanation: "That's incorrect. Elapsed time of queries is not guaranteed when you upgrade versions of SQL Server but maintain the same compatibility level."
-  - content: "Which of the options is a valid reason for migrating your database to Azure SQL Database?"
+      explanation: "That's incorrect. Elapsed time of queries isn't guaranteed when you upgrade versions of SQL Server but maintain the same compatibility level."
+  - content: "What is a valid reason for migrating your database to Azure SQL Database?"
     choices:
     - content: "Your applications need to run older versions of SQL Server, such as SQL Server 2016"
       isCorrect: false
-      explanation: "That's incorrect. Running older versions of SQL Server is not a valid reason for migrating your database to Azure SQL Database."
+      explanation: "That's incorrect. Running older versions of SQL Server isn't a valid reason for migrating your database to Azure SQL Database."
     - content: "You want to eliminate the complexity of configuring and managing high availability, backups, and other database tasks"
       isCorrect: true
-      explanation: "That's correct. This is a valid reason for migrating your database to Azure SQL Database."
+      explanation: "That's correct. Eliminating the complexity of database tasks is a valid reason for migrating your database to Azure SQL Database."
     - content: "You want to improve query performance of your application"
       isCorrect: false
-      explanation: "That's incorrect. Query performance is not guaranteed when migrating to Azure SQL Database."
+      explanation: "That's incorrect. Query performance isn't guaranteed when migrating to Azure SQL Database."
