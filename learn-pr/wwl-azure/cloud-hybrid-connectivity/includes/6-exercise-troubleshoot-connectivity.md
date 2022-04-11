@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still view the demonstraition video at the bottom of this page.
 
 If you have not already run the script in unit 2, please do so now so you can follow the exercise below.
 
@@ -84,3 +84,6 @@ It should now be possible on VM1 to ping VM2.
 
 There will be a short delay before the new settings take effect. If the ping fails at first, try again.
 
+In this demonstration you will see how to proactively troubleshoot Conditional Access policies using the What if tool in the Azure portal:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TYMM]
