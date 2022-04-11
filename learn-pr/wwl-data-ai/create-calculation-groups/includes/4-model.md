@@ -21,7 +21,7 @@ In the screenshot below, Tabular Editor was launched from the Adventure Works DW
 
 Use the Tabular Editor interface to create calculation groups and calculation items within those groups.
 
-## Apply a calculaton group
+## Apply a calculation group
 
 Saving the calculation group in Tabular Editor will save changes to the connected data model. To apply those changes, you must refresh the calculation group query in Power BI desktop.
 
@@ -32,4 +32,6 @@ Saving the calculation group in Tabular Editor will save changes to the connecte
 
 ## Use your calculation group in a visual
 
-You can now add your calculation group to a visual. A simple way to understand how your calculation group is behaving is to drop the calculation group into the columns field well of a matrix visual. This will apply the calculation group to the measure you've placed in the values field.
+You can now add your calculation group to a visual. A simple way to visualize your calculation group is to drop the calculation group into the columns field of a matrix visual. This will apply the calculation group to the measure you've placed in the values field.
+
+![Matrix visual with calculation group in Columns field and Sales measure in values field.](../media/calc-groups-fields.png)

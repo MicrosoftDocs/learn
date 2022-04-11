@@ -5,6 +5,6 @@ For example, the sales manager at Contoso wants to understand sales trends for t
 ## Learning objectives
 In this module, you will: 
 
-- Explore how calculation groups work
-- Maintain calculation groups in a model
-- Use calculation groups in a Power BI report 
+- Explore how calculation groups work.
+- Maintain calculation groups in a model.
+- Use calculation groups in a Power BI report.
