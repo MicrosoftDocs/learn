@@ -42,7 +42,7 @@ Furthermore, the certificate must satisfy the following conditions:
 > [!NOTE]
 >If the correct access is not provided, restarting SQL Server service will fail.
 
-For a complete list of requirements when installing a TLS certificate, see [Enable encrypted connections to the Database Engine](/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine?view=sql-server-ver15).
+For a complete list of requirements when installing a TLS certificate, see [Enable encrypted connections to the Database Engine](/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine).
 
 ### Configure SQL Server instance
 
@@ -58,7 +58,7 @@ You can configure a SQL Server instance to use encrypted connections by followin
 
 1. On the **Flags** tab, in the **ForceEncryption** property, select **Yes**, and then click **OK**.
 
-    :::image type="content" source="../media/module-33-security-final-12_5.png" alt-text="Minimal TLS version property for Azure SQL Database":::
+    :::image type="content" source="../media/module-33-security-final-12_5.png" alt-text="Protocols for SQL Server instance properties":::
 
 1. Restart the SQL Server service.
 
