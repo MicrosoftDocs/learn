@@ -3,17 +3,17 @@ uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-a
 metadata:
   title: Describe the services and identity types of Azure AD
   description: "Describe the services and identity types of Azure AD"
-  ms.date: 12/02/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Describe the services and identity types of Azure AD
-summary: Learn about Azure Active Directory, what it is and the types of identities it supports.
+summary: Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service. Learn about Azure AD, its services and the types of identities it supports.
 abstract: |
   After completing this module, you will be able to:
   - Describe what Azure AD does.
-  - Describe the types identities Azure AD supports.
+  - Describe the types of identities Azure AD supports.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.

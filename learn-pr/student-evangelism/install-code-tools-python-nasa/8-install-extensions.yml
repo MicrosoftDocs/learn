@@ -3,12 +3,12 @@ uid: learn.student-evangelism.install-code-tools-python-nasa.8-install-extension
 metadata:
   title: Exercise - Install Visual Studio Code extensions needed for data exploration
   description: Install the necessary extensions in Visual Studio Code.
-  ms.date: 08/18/2021
-  author: drguthals
-  ms.author: sguthals
+  ms.date: 03/28/2022
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, devdivchpfy22 
 title: Exercise - Install Visual Studio Code extensions needed for data exploration
 durationInMinutes: 4
 content: |
