@@ -1,6 +1,7 @@
 Microsoft 365 provides organizations with powerful communication and collaboration capabilities. However, an organization might want to restrict communications between some groups to avoid a conflict of interest from occurring in the organization, or to restrict communications between certain people to safeguard internal information. With information barriers, the organization can restrict communications among specific groups of users.
 
-It's important to note that information barriers *only support two-way restrictions*.  One-way restrictions, such as marketing, can communicate with day traders but day traders who can't communicate with marketing are *not supported*.
+> [!NOTE]
+> It's important to note that information barriers *only support two-way restrictions*.  One-way restrictions, such as marketing, can communicate with day traders but day traders who can't communicate with marketing are *not supported*.
 
 Information barriers are policies that admins can configure to prevent individuals or groups from communicating with each other. When information barrier policies are in place, people who shouldn't communicate with other specific users can't find, select, chat, or call those users. With information barriers, checks are in place to prevent unauthorized communication.
 

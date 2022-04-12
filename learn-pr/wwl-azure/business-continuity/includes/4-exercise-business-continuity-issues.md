@@ -1,5 +1,8 @@
 You've been asked to make a backup of a virtual machine. The backup must be application consistent.
 
+> [!IMPORTANT]
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still view the demonstration video at the bottom of this page.
+
 ## Create the exercise environment
 
 Using the Cloud Shell on the right, run these commands to create the example topology. The environment will take approximately 5 minutes to build.
@@ -105,3 +108,7 @@ The VM was in a **Stopped** state. You need to start the VM and wait for it to b
 1. When the first phase is complete, navigate to the **Backup** page of the VM. The send backup is **Application Consistent**.
 
     :::image type="content" source="../media/4-crash-instance-restore-point.png" alt-text="Screenshot showing the crash consistent restore point.":::
+
+In this demonstration you will see how to proactively troubleshoot Conditional Access policies using the What if tool in the Azure portal:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Ubfe]
