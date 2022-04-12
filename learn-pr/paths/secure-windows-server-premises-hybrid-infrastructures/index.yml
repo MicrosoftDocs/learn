@@ -3,7 +3,7 @@ uid: learn.wwl.secure-windows-server-premises-hybrid-infrastructures
 metadata:
   title: Secure Windows Server on-premises and hybrid infrastructures
   description: Secure Windows Server on-premises and hybrid infrastructures
-  ms.date: 12/15/2021
+  ms.date: 03/28/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ prerequisites: |
   *   Basic knowledge of PowerShell scripting.
 summary: |
   Learn to secure your on-premises Windows Server resources and your Azure IaaS workloads. Determine if those resources have any security vulnerabilities, and remediate those potential security vulnerabilities.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/secure-windows-server-on-premises-and-hybrid-infrastructures.svg
 levels:
 - intermediate
 roles:

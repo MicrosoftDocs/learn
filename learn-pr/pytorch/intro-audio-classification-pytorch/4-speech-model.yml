@@ -3,13 +3,17 @@ uid: learn.pytorch.intro-audio-classification.speech-model
 title: Build the speech model
 metadata:
   title: Build the speech model
-  description: Now that we have created the spectrogram images its time to build the computer vision model. 
+  description: Now that we've created the spectrogram images it's time to build the computer vision model. 
   author: cassiebreviu
-  ms.author: cassieb
+  ms.author: ruyakubu
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: azure
-  ms.custom: team=nextgen
+  ms.custom:
+  - team=nextgen
+  - team=cloud_advocates
+  ms.contributors:
+  - cassieb-08182021
 durationInMinutes: 10
 sandbox: true
-notebook: https://raw.githubusercontent.com/MicrosoftDocs/pytorchfundamentals/main/audio-pytorch/4-speech-model.ipynb
+notebook: notebooks/4-speech-model.ipynb

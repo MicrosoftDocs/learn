@@ -3,7 +3,7 @@ uid: learn.dotnet-dependencies
 metadata:
   title: Create a new .NET project and work with package dependencies 
   description: Create a .NET project and learn to add packages and manage package dependencies in your project. Use the .NET Core CLI and NuGet registry to add libraries and tools to your C# applications through Visual Studio Code.
-  ms.date: 10/28/2020
+  ms.date: 01/26/2022
   author: jamesmontemagno
   ms.author: jamont
   ms.topic: interactive-tutorial
