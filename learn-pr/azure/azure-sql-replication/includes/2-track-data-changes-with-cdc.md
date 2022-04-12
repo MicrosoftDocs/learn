@@ -19,6 +19,7 @@ Below are the steps highlighting how CDC works on Azure SQL Databases:
 5. Query functions are provided to allow systematic access to the change data stored in the change tables.
 
 The following illustration shows the principal data flow for CDC.
+
    :::image type="content" source="../media/cdc-diagram.png" alt-text="CDC Workflow.":::
 
 ## Enabling and disabling CDC
