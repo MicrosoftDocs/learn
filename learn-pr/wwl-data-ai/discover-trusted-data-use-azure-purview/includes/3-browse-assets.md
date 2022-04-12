@@ -4,7 +4,7 @@ Searching a data catalog is a great tool for data discovery you know what you're
 
 If you're new to an organization or department, you may want to familiarize yourself with the contents of the data estate. From the Azure Purview Studio home page, select the “Browse assets” tile to browse either by collection or by source type.
 
-![Azure Purview Studio, with the browse assets tile on the left of the interface highlighted.](../media/azurepurview-browse.png)
+![Azure Purview Studio, with the browse assets tile on the left of the interface highlighted.](../media/azure-purview-browse.png)
 
 Here you can specify whether you'd like to browse by collection or by source type.
 
