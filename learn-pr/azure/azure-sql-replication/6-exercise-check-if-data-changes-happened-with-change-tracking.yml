@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Work with change tracking
   description: "Learning how to enable change tracking and query the change tracking changes for data changes. This section also includes a sandbox exercise to practice all change tracking lessons learned."
   ms.date: 3/21/2022
-  author: MaraSteiu
-  ms.author: masteiu
+  author: AbhimanTiwari
+  ms.author: abhimantiwari
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 8

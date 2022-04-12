@@ -5,8 +5,8 @@ metadata:
   title: Data replication on Azure SQL Databases
   description: "Azure SQL data replication module that covers database synchronization and data changes tracking and recording. The module explores tools such as change data capture (CDC), SQL Data Sync, and change tracking."
   ms.date: 3/21/2022
-  author: MaraSteiu
-  ms.author: masteiu
+  author: AbhimanTiwari
+  ms.author: abhimantiwari
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 title: Data replication on Azure SQL Databases
