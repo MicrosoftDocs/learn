@@ -19,7 +19,7 @@ prerequisites: |
   - Knowledge of basic mathematics 
   - Some experience programming in R 
   
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/machine-learning/introduction-clustering-models.svg
 levels:
 - beginner
 roles:
@@ -38,4 +38,4 @@ units:
 - learn.machine-learning.introduction-clustering-models.challenge-clustering
 - learn.machine-learning.introduction-clustering-models.summary
 badge:
-  uid: learn.service-name.module-name.badge 
+  uid: learn.machine-learning.introduction-clustering-models.badge 
