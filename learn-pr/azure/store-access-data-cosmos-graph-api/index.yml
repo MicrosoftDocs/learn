@@ -3,7 +3,7 @@ uid: learn.azure.store-access-data-cosmos-graph-api
 metadata:
   title: Store and access graph data in Azure Cosmos DB with the Graph API
   description: Find out about creating an application with Azure Cosmos DB as a graph database, then retrieve, manipulate, and visualize graph data using Data Explorer.
-  ms.date: 05/03/2019
+  ms.date: 03/03/2022
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
