@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: "Reviewing all Azure SQL data replication tools covered in this Learn Module - change data capture (CDC), SQL Data Sync, and change tracking."
   ms.date: 3/21/2022
-  author: AbhimanTiwari
-  ms.author: abhimantiwari
+  author: abhimantiwari
+  ms.author: abhtiwar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 2
