@@ -30,7 +30,7 @@ quiz:
       explanation: "That's incorrect. Standard SSD does not offer the lowest latency of the three storage types."
   - content: "What option should you select to change the auto-pause setting of a serverless SQL Database?"
     choices:
-    - content: "The auto-pause setting can't be changed, and it's fixed at 1-hour"
+    - content: "The auto-pause setting can't be changed, and it's fixed at one hour"
       isCorrect: false
       explanation: "That's incorrect. You can adjust the auto-pause setting through the Azure portal."
     - content: "Ensure that there are no active transactions in the database, as the auto-pause change will result in a disconnection"
