@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Deploy Azure Purview and scan an Azure Data Lake resource using the Azure portal
-summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master"
+summary: "Azure Purview is a data governance service that allows you to understand and manage data in your business by answering questions like: What kind of data do I have? Where is my sensitive data? Where did my data come from? This guide will help you get started with Azure Purview by deploying an Azure Purview account through the Azure Portal, and registering an Azure Storage data source."
 abstract: |
   By the end of this module, you'll be able to:
     - "Deploy an Azure Purview account using the Azure portal"
