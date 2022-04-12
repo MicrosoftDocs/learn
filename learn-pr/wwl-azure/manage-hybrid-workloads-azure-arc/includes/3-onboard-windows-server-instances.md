@@ -133,10 +133,10 @@ A typical way to onboard a computer is to generate and download a Windows PowerS
      -  Optionally, proxy server URL
 
 :::image type="content" source="../media/m14-generate-script-4-24b1b904.png" alt-text="m14-generate-script-4.png":::
-<br>
+
 
 1.  On the **Tags** section of the **Add servers with Azure Arc** page, add Tags and select **Next**.
-2.  On the **Download and run script** section of the **Add servers with Azure Arc** page, , select **Download**.
+2.  On the **Download and run script** section of the **Add servers with Azure Arc** page, select **Download**.
 3.  Sign in as a local administrator on computers that you want to onboard, and then run the downloaded script.
 
 When you install the script on target computers, the script downloads the Azure Arc agent from the Microsoft Download center, installs the agent on the server, and then creates an Azure Arc-enabled server resource to associate with the agent.

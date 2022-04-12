@@ -1,4 +1,4 @@
-After you have onboarded a Windows Server to Azure Arc, you can use Azure to manage and configure the machine. Some of the available functions are described in the following table..
+After you have onboarded a Windows Server to Azure Arc, you can use Azure to manage and configure the machine. Some of the available functions are described in the following table.
 
 :::row:::
   :::column:::
