@@ -4,12 +4,12 @@ title: 'Exercise: Troubleshoot business continuity issues'
 metadata:
   title: 'Exercise: Troubleshoot business continuity issues'
   description: "Exercise: Troubleshoot business continuity issues"
-  ms.date: 04/05/2022
+  ms.date: 04/12/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
+azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
