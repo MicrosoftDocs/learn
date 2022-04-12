@@ -16,10 +16,7 @@ Currently, Azure Active Directory detects six types of risk detections:
  -  **Sign-in from unfamiliar locations** \- This risk detection type considers past sign-in locations (IP, Latitude / Longitude and ASN) to determine new / unfamiliar locations.
  -  **Sign-ins from IP addresses with suspicious activity** \- This risk detection type identifies IP addresses from which a high number of failed sign-in attempts were seen, across multiple user accounts, over a short period of time.
 
-:::image type="content" source="../media/az500-risk-level-a2e72edc.png" alt-text="Screenshot of the risk detections blade.":::
-
-
-The insight you get for a detected risk detection is tied to your Azure AD subscription.
+The insight you get for a detected risk detection is tied to your Azure AD subscription.<br>
 
  -  With the **Azure AD Premium P2 edition**, you get the most detailed information about all underlying detections.
  -  With the **Azure AD Premium P1 edition**, advanced detections (such as unfamiliar sign-in properties) are not covered by your license, and will appear under the name Sign-in with additional risk detected. Additionally, the risk level and risk detail fields are hidden.
