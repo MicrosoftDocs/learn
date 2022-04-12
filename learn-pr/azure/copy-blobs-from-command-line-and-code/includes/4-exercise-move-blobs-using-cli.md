@@ -36,7 +36,7 @@ In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed
       --output table
     ```
 
-1. Create an environment variable for your account key; use the value of the first key retrieved by the previous command.
+1. Create an environment variable for your account key. Use the value of the first key retrieved by the previous command.
 
     ```bash
     HOT_KEY="<source account key>"

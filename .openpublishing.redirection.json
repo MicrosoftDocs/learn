@@ -12590,6 +12590,16 @@
       "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/7-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/5-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/4-describe-azure-policy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-resource-governance-capabilities-azure/2-describe-azure-policy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/2-describe-use-azure-resource-locks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-resource-governance-capabilities-azure/",
+      "redirect_document_id": false
     }
   ]
 }
