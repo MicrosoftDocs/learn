@@ -52,17 +52,16 @@ To implement natural language understanding with Conversational Language Underst
 An *intent* is an action you want to perform - for example, you might want to switch on a light, or turn off a fan. In this case, you'll define two intents: one to switch on a device, and another to switch off a device. For each intent, you'll specify sample *utterances* that indicate the kind of language used to indicate the intent.
 
 1. In the **Build schema** pane on the left, ensure that **Intents** is selected Then click **Add**, and add an intent with the name **switch_on** (in lower-case) and click **Add intent**.
-2. Click the **switch_on** intent. It will take you to the **Tag utterances** page. Next to the **switch_on** intent, type the utterance ***turn the light on*** and press **Enter** to submit this utterance to the list.
-3. On the **Tagging** pane on the right-hand side of the screen, select **Add entity** and type **device** (in lower-case) and select **Done**. 
-4. In the *turn the light on* utterance, highlight the word "light". Then in the list that appears, in the *Search for an entity* box select **device**. 
-5. Now create a second utterance for the **switch_on** intent. Type the phrase ***switch on the fan*** next to the **switch_on** intent. Then select the word "fan" and assign it to the **device** entity you created previously.
-6. The language service needs at least five different utterance examples for each intent to sufficiently train the language model. Add four more utterance examples to the **switch_on** intent:
+2. Select the **switch_on** intent. It will take you to the **Tag utterances** page. Next to the **switch_on** intent, type the utterance ***turn the light on*** and press **Enter** to submit this utterance to the list.
+3. The language service needs at least five different utterance examples for each intent to sufficiently train the language model. Now create a five more utterance examples for the **switch_on** intent:  
+    - ***switch on the fan***
     - ***put the fan on***
     - ***put the light on***
     - ***switch on the light***
     - ***turn the fan on***
-
-Tag *fan* or *light* with the device entity. When you're finished, verify that you have the following utterances and click **Save changes**: 
+4. On the **Tagging entities for training** pane on the right-hand side of the screen, select **Tags**, then **Add entity**. Type **device** (in lower-case) and select **Done**. 
+5. In the *turn the light on* utterance, highlight the word "light". Then in the list that appears, in the *Search for an entity* box select **device**. 
+6. Do the same for the utterances with "fan" in them. Select the word "fan" and assign it to the **device** entity you created previously. Tag the rest of the *fan* or *light* utterances with the **device** entity. When you're finished, verify that you have the following utterances and make sure to select **Save changes**: 
 
 | **intent** | **utterance** | **entity** |
 | --------------- | ------------------ | ------------------ |
@@ -74,15 +73,15 @@ Tag *fan* or *light* with the device entity. When you're finished, verify that y
 | switch_on   | Turn the light on   | Device - *select light* |
 
 7. In the pane on the left, click **Build schema** and verify that your **switch_on** intent is listed. Then click **Add** and add a new intent with the name **switch_off** (in lower-case).
-8. Click on the **switch_off** intent. It will take you to the **Tag utterances** page. Next to the **switch_off** intent, add the utterance ***turn the light off*** and assign the word "light" to the **device** entity.
-9. Add a second utterance to the **switch_off** intent, with the utterance ***switch off the fan***. Then connect the word "fan" to the **device** entity.
-10. Add four more utterance examples to the **switch_off** intent. 
+8. Click on the **switch_off** intent. It will take you to the **Tag utterances** page. Next to the **switch_off** intent, add the utterance ***turn the light off***. 
+9. Add five more utterance examples to the **switch_off** intent. 
+    - ***switch off the fan***
     - ***put the fan off***
     - ***put the light off***
     - ***turn off the light***
     - ***switch the fan off***
 
-Tag *fan* or *light* with the device entity. When you're finished, verify that you have the following utterances and click **Save changes**:  
+10. Assign the words *light* or *fan* with the **device** entity. When you're finished, verify that you have the following utterances and make sure to select **Save changes**:  
 
 | **intent** | **utterance** | **entity** | 
 | --------------- | ------------------ | ------------------ |
@@ -152,6 +151,8 @@ Now let's open and edit a pre-written script, which will run the client applicat
     ```
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
+   
+    >[!TIP] If you already used this command in another lab to clone the *ai-900* repository, you can skip this step.
 
 2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in this folder and work with them. Type the following commands into the shell: 
 
