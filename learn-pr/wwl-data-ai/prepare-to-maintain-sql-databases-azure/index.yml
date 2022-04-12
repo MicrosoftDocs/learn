@@ -3,18 +3,18 @@ uid: learn.wwl.prepare-to-maintain-sql-databases-azure
 metadata:
   title: Prepare to maintain SQL databases on Azure
   description: "Prepare to maintain SQL databases on Azure"
-  ms.date: 03/17/2022
+  ms.date: 04/12/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Prepare to maintain SQL databases on Azure
-summary: Explore the role of a database administrator on Azure. Describe SQL Server-based offerings on Azure. Understand open-source database platforms available on Azure, in particular PostgreSQL and MySQL.
+summary: Explore the role of a database administrator on Azure. Describe SQL Server-based offerings on Azure.
 abstract: |
   At the end of this module, you will be able to:
   *   Understand the role of Azure Database Administrator as it fits in with other data platform roles.
   *   Describe the key differences between the SQL Server-based database options in Azure.
-  *   Describe open-source database platforms available on Azure.
+  *   Describe other features for Azure SQL platforms available.
 prerequisites: |
   *   Ability to navigate the Azure the portal.
   *   Understanding of the traditional Database Administration role.
@@ -37,7 +37,6 @@ units:
 - learn.wwl.prepare-to-maintain-sql-databases-azure.understand-sql-server-azure-virtual-machine
 - learn.wwl.prepare-to-maintain-sql-databases-azure.design-azure-sql-database-for-cloud-native-applications
 - learn.wwl.prepare-to-maintain-sql-databases-azure.explore-azure-sql-database-managed-instance
-- learn.wwl.prepare-to-maintain-sql-databases-azure.understand-open-source-sql-platform
 - learn.wwl.prepare-to-maintain-sql-databases-azure.knowledge-check
 - learn.wwl.prepare-to-maintain-sql-databases-azure.summary
 badge:
