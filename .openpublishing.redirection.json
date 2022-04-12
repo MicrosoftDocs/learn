@@ -12510,6 +12510,36 @@
       "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/2-describe-common-compliance-needs.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/3-describe-shared-responsibility-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/2-describe-shared-responsibility-model",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/4-describe-defense-depth.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/3-describe-defense-depth",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/2-describe-zero-trust-methodology.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/4-describe-zero-trust-model",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/5-describe-common-threats.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/6-describe-ways-encryption-hashing-secure-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/6a-describe-cloud-adoption-framework.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/",
+      "redirect_document_id": false
     }
   ]
 }
