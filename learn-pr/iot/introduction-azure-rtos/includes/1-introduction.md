@@ -1,4 +1,4 @@
-## Introduction
+## Overview
 
 Welcome to the world of the Real-Time Operating System (RTOS). In this module, you'll be introduced to an RTOS, and you'll understand the structure and purpose of an RTOS. We'll focus on Azure RTOS ThreadX (from now on, ThreadX), which is one of the most widely used RTOSes in the world. In fact, ThreadX is deployed in over 10 billion devices worldwide.
 
