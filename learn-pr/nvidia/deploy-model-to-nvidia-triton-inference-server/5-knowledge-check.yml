@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.deploy-model-to-nvidia-triton-server.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 03/14/2022
+  author: toolboc
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: 'NVIDIA Triton is a multi-framework open-source software that supports running inference on popular machine learning frameworks including ...'
+    choices: 
+    - content: 'TensorFlow, ONNX Runtime, PyTorch, and NVIDIA TensorRT'
+      isCorrect: true
+      explanation: Correct. These frameworks are all supported by the NVIDIA Triton Inference Server.
+    - content: 'Azure Machine Learning studio and Azure Cognitive Services.'
+      isCorrect: false
+      explanation: Incorrect. NVIDIA Triton Inference Server may be able to consume model output from these services but does not interact with these services natively.
+    - content: 'Any Python based Machine Learning Framework.'
+      isCorrect: false
+      explanation: Incorrect. While Python code and frameworks may be able to make requests for inference to an NVIDIA Triton Inference Server, it is up to the developer to implement that support.
+  - content: 'The NVIDIA Triton Inference Server can process ONNX workloads on both CPU and GPU based systems.'
+    choices: 
+    - content: 'True'
+      isCorrect: true
+      explanation: Correct. The NVIDIA Triton Inference Server can run ONNX workloads on CPU based systems and can take advantage of acceleration on systems with a GPU present.
+    - content: 'False'
+      isCorrect: false
+      explanation: Incorrect. The NVIDIA Triton Inference Server is able to adapt and run on ONNX workloads on both CPU and GPU based systems.
+  - content: 'Microsoft Azure supports GPU instances in the cloud as an option when deploying a virtual machine resource.'
+    choices: 
+    - content: 'True'
+      isCorrect: true
+      explanation: Correct. Microsoft Azure allows for GPU optimized virtual machines as a size option when deploying a virtual machine resource.
+    - content: 'False'
+      isCorrect: false
+      explanation: Incorrect. Microsoft Azure supports various sizes of GPU optimized virtual machines.

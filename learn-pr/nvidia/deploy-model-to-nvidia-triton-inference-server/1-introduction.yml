@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.deploy-model-to-nvidia-triton-server.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction deploy a model to NVIDIA Triton Inference Server.
+  author: toolboc
+  ms.author: chnoring
+  ms.date: 03/14/2022
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]
