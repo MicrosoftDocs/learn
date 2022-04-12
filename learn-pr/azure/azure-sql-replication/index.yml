@@ -3,14 +3,14 @@ uid: learn.azure-sql-replication
 metadata:
   moduleType: standard
   title: Data replication on Azure SQL Databases
-  description: "Azure SQL data replication module that covers database synchronization and data changes tracking and recording. The module explores tools such as Change Data Capture (CDC), SQL Data Sync, and Change Tracking."
+  description: "Azure SQL data replication module that covers database synchronization and data changes tracking and recording. The module explores tools such as change data capture (CDC), SQL Data Sync, and change tracking."
   ms.date: 3/21/2022
   author: MaraSteiu
   ms.author: masteiu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 title: Data replication on Azure SQL Databases
-summary: "This module will introduce you to several data tracking, loading, replicating, and streaming tools that you can use to synchronize data changes from your Azure SQL Database to other destinations. More specifically, we will cover: Change Data Capture (CDC), SQL Data Sync, and Change Tracking."
+summary: "This module will introduce you to several data tracking, loading, replicating, and streaming tools that you can use to synchronize data changes from your Azure SQL Database to other destinations. More specifically, we will cover: change data capture (CDC), SQL Data Sync, and change tracking."
 abstract: |
   By the end of this module, you'll be able to:
     - Identify suitable Azure SQL Database data replication tools that fit your use case and business needs.

@@ -4,7 +4,7 @@ title: Summary
 metadata:
   unitType: learning-content
   title: Summary
-  description: "Reviewing all Azure SQL data replication tools covered in this Learn Module - Change Data Capture (CDC), SQL Data Sync, and Change Tracking."
+  description: "Reviewing all Azure SQL data replication tools covered in this Learn Module - change data capture (CDC), SQL Data Sync, and change tracking."
   ms.date: 3/21/2022
   author: MaraSteiu
   ms.author: masteiu

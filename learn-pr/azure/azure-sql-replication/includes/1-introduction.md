@@ -1,6 +1,6 @@
 ## Common data replication use cases and tools
 
-We'll use the umbrella term "replication tools" to cover all change data tracking, loading, streaming, synchronizing functionalities. Therefore, we'll refer to Change Data Capture (CDC), SQL Data Sync, and Change Tracking as "replication tools".
+We'll use the umbrella term "replication tools" to cover all change data tracking, loading, streaming, synchronizing functionalities. Therefore, we'll refer to change data capture (CDC), SQL Data Sync, and change tracking as "replication tools".
 
 There's a wide range of use cases and business scenarios that require replication tools for tracking, loading, replicating, and streaming data changes. For instance, imagine that you're the CTO of a healthcare business that sells medical equipment in different regions around the country. You have different inventory databases in each region and you want to ensure that all these databases are replicating data changes to a central country-wide inventory database, which offers you a status on each sale. This central database is essential because based on the inventory you have, you know how much more equipment to produce and deliver regionally. Thus, you need to select the right data replication tool that will help you synchronize your central inventory database with all regional databases.
 
@@ -10,10 +10,10 @@ Popular use cases and potential replication tools:
 
 | Use case | Potential tools |
 | ---- | ---- |
-| Maintaining a history of all data changes on your database, for auditing purposes | Change Data Capture |
-| Synchronizing distributed workloads and globally distributed data | SQL Data Sync, Change Data Capture |
-| Ensuring source and target systems are in sync after migrations | SQL Data Sync, Change Data Capture |
-| Recording whether changes were made to your database tables (without needing a historical record of all changes) | Change Tracking |
+| Maintaining a history of all data changes on your database, for auditing purposes | Change data capture (CDC) |
+| Synchronizing distributed workloads and globally distributed data | SQL Data Sync, Change data capture (CDC) |
+| Ensuring source and target systems are in sync after migrations | SQL Data Sync, Change data capture (CDC) |
+| Recording whether changes were made to your database tables (without needing a historical record of all changes) | Change tracking |
 
 ## Common considerations when selecting a data replication tool
 
@@ -21,13 +21,13 @@ Beyond considering use cases, you should also explore other aspects when selecti
 
 ### Performance impact
 
-It's important to understand the impact of the selected replication tool on the **size** of your database. For instance, enabling Change Data Capture (CDC) at the level of your database and tables will lead to the creation of several additional system tables on your source database (for example, the table in which changes are being tracked). Similarly, SQL Data Sync will create artifacts on your database. This is why it's important to assess your database tier size limitations before enabling replication tools and upgrade your tier if necessary.
+It's important to understand the impact of the selected replication tool on the **size** of your database. For instance, enabling change data capture (CDC) at the level of your database and tables will lead to the creation of several additional system tables on your source database (for example, the table in which changes are being tracked). Similarly, SQL Data Sync will create artifacts on your database. This is why it's important to assess your database tier size limitations before enabling replication tools and upgrade your tier if necessary.
 
 Additionally, understanding the impact of enabling replication tools on the **log throughput** is important. For instance, CDC's scan/cleanup are part of user workload (user’s resources are used). Performance impact can be substantial since entire rows are added to the change tables and for updates operations pre-image is also included. This translates to a log generation that doubles (or more) when CDC is used (relative to when CDC is not enabled).
 
 ### Tracking, loading, or streaming?
 
-It's important to clarify that some of the tools explored in this module do not stream the data changes. For instance, CDC tracks your enabled source tables for changes and records these changes in change tables on the same source database. However, if you want to replicate those changes to other targets, you must integrate with other streaming tools, such as Azure Data Factory. Unlike CDC, SQL Data Sync automatically syncs your source and target databases, either uni-directionally (SQL Server -> Azure SLQ DB) or bidirectionally (SQL Server -> Azure SQL DB -> SQL Server). However, Change Tracking only tracks whether and which rows have been changed and what the type of change was (insert, update, or delete).
+It's important to clarify that some of the tools explored in this module do not stream the data changes. For instance, CDC tracks your enabled source tables for changes and records these changes in change tables on the same source database. However, if you want to replicate those changes to other targets, you must integrate with other streaming tools, such as Azure Data Factory. Unlike CDC, SQL Data Sync automatically syncs your source and target databases, either uni-directionally (SQL Server -> Azure SLQ DB) or bidirectionally (SQL Server -> Azure SQL DB -> SQL Server). However, change tracking only tracks whether and which rows have been changed and what the type of change was (insert, update, or delete).
 
 ### Latency
 

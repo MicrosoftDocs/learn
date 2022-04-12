@@ -1,6 +1,6 @@
 In this exercise, you'll start by enabling CDC to track the data changes on table and will fetch and review the changes.
 
-In Azure SQL Database, Change data capture (CDC) uses scheduler, which invokes stored procedures to start periodic capture and cleanup of the change data capture tables. The scheduler runs capture and cleanup automatically within SQL Database, without any external dependency for reliability or performance. Users still have the option to run capture and cleanup manually on demand.
+In Azure SQL Database, CDC uses scheduler, which invokes stored procedures to start periodic capture and cleanup of the CDC tables. The scheduler runs capture and cleanup automatically within SQL Database, without any external dependency for reliability or performance. Users still have the option to run capture and cleanup manually on demand.
 
 ## Key use cases
 
@@ -93,7 +93,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
         -Type "Standard_LRS"
     ```
 
-1. Open [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15), and then create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *dr-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to go to the Azure portal to get it.  
+1. Open [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms), and then create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *dr-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to go to the Azure portal to get it.  
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
@@ -113,7 +113,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ### Enable CDC on your database
 
-In [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) open new query window and enable CDC on `AdventureWorksLT` Database by running below query:
+In [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) open new query window and enable CDC on `AdventureWorksLT` Database by running below query:
 
 ```sql
 USE AdventureWorksLT
@@ -125,7 +125,7 @@ GO
 
 ### Enable CDC on your tables
 
-Once you enable CDC on the database, you'll notice the CDC artifacts being created in the same source database (five system tables under cdc schema).
+Once you enable CDC on the database, you'll notice the CDC artifacts being created in the same source database (five system tables under CDC schema).
 
 1. Enable CDC on table `SalesLT.Customer`:
 
@@ -171,7 +171,7 @@ Once you enable CDC on the database, you'll notice the CDC artifacts being creat
 
 ### Disable CDC on your table
 
-You can disable Change data capture (CDC) on `SalesLT.Customer` table by running below query.
+You can disable CDC on `SalesLT.Customer` table by running below query.
 
 ```sql
 EXEC sys.sp_cdc_disable_table
@@ -184,7 +184,7 @@ EXEC sys.sp_cdc_disable_table
 
 ### Disable CDC on your database
 
-You can disable Change data capture (CDC) on database by executing `sys.sp_cdc_disable_db` stored procedure.
+You can disable CDC on database by executing `sys.sp_cdc_disable_db` stored procedure.
 
 ```sql
 EXEC sys.sp_cdc_disable_db

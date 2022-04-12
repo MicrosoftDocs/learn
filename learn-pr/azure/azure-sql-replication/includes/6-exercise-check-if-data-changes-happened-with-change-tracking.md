@@ -1,8 +1,8 @@
-In this exercise, you'll learn how you can enable and disable Change Tracking and obtain tracked changes.
+In this exercise, you'll learn how you can enable and disable change tracking and obtain tracked changes.
 
-### Enabling Change tracking on your database
+### Enabling change tracking on your database
 
-Enable Change tracking on Database by running the below `ALTER DATABASE` query:
+Enable change tracking on your database by running the below `ALTER DATABASE` query:
 
 ```sql
 ALTER DATABASE AdventureWorksLT
@@ -10,11 +10,11 @@ SET CHANGE_TRACKING = ON
 (CHANGE_RETENTION = 2 DAYS, AUTO_CLEANUP = ON)
 ```
 
-You can also enable change tracking in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-properties-changetracking-page?view=sql-server-ver15) dialog box. If a database contains memory optimized tables, you can’t enable change tracking with SQL Server Management Studio.
+You can also enable change tracking in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](https://docs.microsoft.com/sql/relational-databases/databases/database-properties-changetracking-page) dialog box. If a database contains memory optimized tables, you can’t enable change tracking with SQL Server Management Studio.
 
-### Enabling Change tracking on your tables
+### Enabling change tracking on your tables
 
-Enable Change tracking on Table by running the below `ALTER TABLE` query:
+Enable change tracking on the table by running the below `ALTER TABLE` query:
 
 ```sql
 ALTER TABLE SalesLT.Product
@@ -22,11 +22,11 @@ ENABLE CHANGE_TRACKING
 WITH (TRACK_COLUMNS_UPDATED = ON)
 ```
 
-You can also enable change tracking for a table in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](https://docs.microsoft.com/en-us/sql/relational-databases/databases/database-properties-changetracking-page?view=sql-server-ver15) dialog box.
+You can also enable change tracking for a table in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](https://docs.microsoft.com/sql/relational-databases/databases/database-properties-changetracking-page) dialog box.
 
 ### Update the record in table
 
-Update a record into `SalesLT.Product` table to trigger Change tracking.
+Update a record into `SalesLT.Product` table to trigger change tracking.
 
 ```sql
 UPDATE SalesLT.Product  
@@ -83,7 +83,7 @@ ON
 
 This function is used to obtain the minimum valid version that a client can have and still obtain valid results from CHANGETABLE(). The client should check the last synchronization version against the value that is returned by this function. If the last synchronization version is less than the version returned by this function, the client will be unable to obtain valid results from CHANGETABLE() and will have to reinitialize.
 
-### Disabling Change tracking on your database & tables
+### Disabling change tracking on your database & tables
 
 Change tracking must first be disabled for all change-tracked tables before change tracking can be set to OFF for the database. To determine the tables that have change tracking enabled for a database, use the `sys.change_tracking_tables` catalog view.
 
@@ -94,7 +94,7 @@ ALTER TABLE SalesLT.Product
 DISABLE CHANGE_TRACKING;
 ```
 
-When no tables in a database track changes, you can disable Change tracking for the database
+When no tables in a database are tracking changes, you can disable change tracking for the database.
 
 Disable change tracking for a database by using below `ALTER DATABASE` query:
 
