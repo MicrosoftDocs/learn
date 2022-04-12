@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking-part-two
+uid: learn.azure-sql-replication.exercise-check-if-data-changes-happened-with-change-tracking
 title: Exercise - Work with change tracking
 metadata:
   unitType: learning-content
