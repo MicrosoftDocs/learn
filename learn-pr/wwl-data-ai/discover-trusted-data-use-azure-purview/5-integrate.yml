@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.demo-interact-with-a-computer.demo-introduction
+title: Integrate with Azure Synapse Analytics
+metadata:
+  title: Demo-Introduction
+  description: "Integrate with Azure Synapse Analytics"
+  ms.date: 04/12/2022
+  author: benjiang
+  ms.author: benjiang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-integrate.md)]
