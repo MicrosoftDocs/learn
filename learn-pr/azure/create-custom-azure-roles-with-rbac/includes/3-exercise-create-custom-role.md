@@ -67,6 +67,6 @@ When the custom role is created, you can assign it to a user or group. To make t
 1. Run the following command to assign the custom role to yourself.
 
     ```azurecli
-    az role assignment create --assignee $USER --role "Virtual Machine Operator"
+    az role assignment create --assignee $USER --role "Virtual Machine Operator"  --scope /subscriptions/"your subscription id"/resourceGroups/"your resource group name"
     ```
 1. Close Cloud Shell.

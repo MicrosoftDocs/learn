@@ -11,6 +11,8 @@ metadata:
   products:
     - azure
     - azure-lighthouse
+  ms.custom: team=cloud_advocates
+  ms.contributors: socuff-04232021
 title: Introduction
 durationInMinutes: 2
 content: |

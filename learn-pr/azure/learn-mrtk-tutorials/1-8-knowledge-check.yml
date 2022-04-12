@@ -14,7 +14,7 @@ content: Choose the best response for each question. Then select Check your answ
 quiz:
   title: Check your knowledge
   questions:
-    - content: " In the Unity Build Settings, which platform should be selected to target Windows Mixed Reality?"
+    - content: " In the Unity **Build Settings** window, which platform should be selected to target Windows Mixed Reality?"
       choices:
         - content: " WebGL"
           isCorrect: false
@@ -25,7 +25,7 @@ quiz:
         - content: "Universal Windows Platform"
           isCorrect: true
           explanation: With the Universal Windows Platform (UWP), developers can target Windows 10 tablets and PCs, Windows 10 mobile devices (that is, phones), Xbox One and HoloLens with a single code base.
-    - content: "Which Mixed Reality Toolkit package is the only package required to be imported and configured to use the Mixed Reality Toolkit?"
+    - content: "Which Mixed Reality Toolkit package is the only one you're required to import and configure in order to use the Mixed Reality Toolkit?"
       choices:
         - content: "Microsoft.MixedRealityToolkit.Unity.Extensions.unitypackage"
           isCorrect: false
@@ -38,13 +38,13 @@ quiz:
           explanation: The examples package is optional and contains useful demonstration scenes for current Mixed Reality Toolkit features.
     - content: "After the Mixed Reality Toolkit is added to a Unity scene, what happens to the Main Camera object?"
       choices:
-        - content: "The Main Camera object is moved as a child to the MixedRealityToolkit object."
+        - content: "The Main Camera object becomes a child to the MixedRealityToolkit object."
           isCorrect: false
-          explanation: The MixedRealityToolkit object contains the toolkit itself.
-        - content: "The Main Camera object is moved as a child to the MixedRealityPlayspace object."
+          explanation: The MixedRealityToolkit object contains the Toolkit itself.
+        - content: "The Main Camera object becomes a child to the MixedRealityPlayspace object."
           isCorrect: true
-          explanation: This allows the playspace to manage the camera simultaneously with the SDKs.
-        - content: " The Main Camera object is deleted as it is not needed for mixed reality development."
+          explanation: This allows the play space to manage the camera simultaneously with the SDKs.
+        - content: " The Main Camera object is deleted because it's not needed for mixed reality development."
           isCorrect: false
           explanation: The Main Camera object is needed to capture and display the world to the user.
     

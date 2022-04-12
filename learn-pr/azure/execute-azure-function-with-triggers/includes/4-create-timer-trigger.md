@@ -57,18 +57,18 @@ Let's create a timer trigger in your function.
 
 ## Configure the timer trigger
 
-You have created an Azure function app with logic to print a message to the log window. We're going to set the schedule of the timer to run every 20 seconds.
+You've created an Azure function app with logic to print a message to the log window. We're going to set the schedule of the timer to run every 20 seconds.
 
 1. In the **TimerTrigger1** menu, select **Integration**. The **Integration** pane for your time function appears.
 
-1. In the **Trigger** box, select the **Trigger (myTimer)** link. The **Edit Trigger** pane appears.
+1. In the **Trigger** box, select the **Timer (myTimer)** link. The **Edit Trigger** pane appears.
 
 1. Enter the following value into the **Schedule** field.
 
     ```log
     */20 * * * * *
     ```
-    
+
     The value in this parameter represents the CRON expression with six places for time precision: {second} {minute} {hour} {day} {month} {day-of-week}. The first place value represents every 20 seconds.
 
 1. In the command bar, select **Save** to configure your timer trigger.
@@ -126,20 +126,20 @@ Let's create a timer trigger for your function.
 
 ## Configure the timer trigger
 
-You have created an Azure function app with logic to print a message to the log pane. Let's set the schedule of the timer to run every 20 seconds.
+You've created an Azure function app with logic to print a message to the log pane. Let's set the schedule of the timer to run every 20 seconds.
 
 1. In the **TimerTrigger1** menu, select **Integration**. The **Integration** pane appears.
 
-1. In the **Trigger** box, select the **Trigger (myTimer)** link. The **Edit Trigger** pane appears.
+1. In the **Trigger** box, select the **Timer (myTimer)** link. The **Edit Trigger** pane appears.
 
 1. Enter the following value into the **Schedule** box.
 
     ```log
     */20 * * * * *
     ```
- 
+
     The value in this parameter represents the CRON expression with six places for time precision: {second} {minute} {hour} {day} {month} {day-of-week}. The first value represents every 20 seconds.
-    
+
 1. In the command bar, select **Save** to configure your timer trigger.
 
 ::: zone-end
