@@ -5,14 +5,15 @@ metadata:
   description: Description TBD
   ms.date: 01/27/2022
   author: EdLamie
-  ms.author: pacorte
+  ms.author: liydu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure RTOS
-summary: Summary TBD
+summary: Learn the basics of RTOS.
 abstract:  | 
   In this module, you will:
-  - TBD
+  - Learn the basic components of an RTOS
+  - Learn what an RTOS does
 
 prerequisites: |
   - None, although a working knowledge of C or C++, GitHub and Visual Studio will be most helpful.
