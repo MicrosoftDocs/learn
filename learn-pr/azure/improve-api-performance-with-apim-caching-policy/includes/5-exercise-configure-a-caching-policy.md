@@ -11,7 +11,7 @@ In this exercise, you'll import an API into Azure API Management and add a cachi
 
 ## Create a Redis cache
 
-In this module, we're using the consumption tier for Azure API Management because Azure can set up API Management instances in this tier within a minute or so. Instances in other tiers can take 30 minutes to initiate. The consumption tier in API Management is intended for organizations who prefer to build APIs on serverless principles. This tier does not have its own internal cache, so, to use a caching policy, we must create an external Redis cache, and configure the API Management instance to use it. 
+In this module, we're using the consumption tier for Azure API Management because Azure can set up API Management instances in this tier within a minute or so. Instances in other tiers can take 30 minutes to initiate. The consumption tier in API Management is intended for organizations who prefer to build APIs on serverless principles. This tier doesn't have its own internal cache, so, to use a caching policy, we must create an external Redis cache, and configure the API Management instance to use it. 
 
 Let's create a cache now so that the process can complete while we take other steps:
 
@@ -55,17 +55,17 @@ Now, deploy the sample Web API to Azure App Service:
     bash setup.sh
     ```
 
-1. The script has seven parts that takes several minutes to run. When the script finishes, it displays three URLs:
+1. The script has seven parts that take several minutes to run. When the script finishes, it displays three URLs:
 
     - Web API test URL for testing the Web API.
     - A Swagger URL for the Swagger UI.
     - A Swagger JSON URL for the OpenAPI definition.
 
-    Note these urls; we will use them in the next task. Optionally, copy these URLs to a text file for reference.
+    Note these urls; we'll use them in the next task. Optionally, copy these URLs to a text file for reference.
 
 ## Test the deployed Web API
 
-When the Web API has been set up and successfully deployed in the Cloud Shell, let's test it. We can do that by submitting a GET request in the browser and also by checking the OpenAPI definition. These tests, run against the Web API before it is added to API Management, are in the **azurewebsites.net** domain:
+When the Web API has been set up and successfully deployed in the Cloud Shell, let's test it. We can do that by submitting a GET request in the browser and also by checking the OpenAPI definition. These tests, run against the Web API before it's added to API Management, are in the **azurewebsites.net** domain:
 
 1. On the Azure portal resource menu or from the **Home** page, select **All resources**, and then select the App Service resource type. The **BoardGamingAPI123aa456789** App Service pane appears (the numbers at the end will differ for your implementation).
 
@@ -73,7 +73,7 @@ When the Web API has been set up and successfully deployed in the Cloud Shell, l
 
 1. In a new browser tab, paste the Web API test URL that you previously copied, and press <kbd>Enter</kbd>. The browser displays a response in JSON format. Notice that the result includes the server time with the label **quotePreparedTime**.
 
-1. In a second browser tab , paste the Swagger URL that you previously copied, and press <kbd>Enter</kbd>. The browser displays the Swagger page for your *Board Gaming API*. Keep this browser tab open for later use.
+1. In a second browser tab, paste the Swagger URL that you previously copied, and press <kbd>Enter</kbd>. The browser displays the Swagger page for your *Board Gaming API*. Keep this browser tab open for later use.
 
 1. In a third browser tab, paste the Swagger JSON URL that you previously copied. The browser displays the OpenAPI specification in JSON format.
 
@@ -93,7 +93,7 @@ Now that we have a functional API, let's set up API Management:
     | --- | --- |
     | **Project details** |
     | Subscription | *Concierge Subscription* |
-    | Resource group | In the dropdown list select *<rgn>Sandbox resource group</rgn>*. |
+    | Resource group | In the dropdown list, select *<rgn>Sandbox resource group</rgn>*. |
     | **Instance details** |
     | Region | Choose the same location you used for the Redis Cache. |
     | Resource name | Choose a unique name. Make a note of it, you'll need it later on. |
@@ -111,7 +111,7 @@ Now, if the Redis cache deployment is complete, you can configure the API Manage
 
 1. On the Azure portal resource menu or from the **Home** page, select **All resources**, and then select the *Azure Cache for Redis* resource type. Your **Azure Cache for Redis** pane appears.
 
-1. Check the **Essentials** section at the top of the pane. If the status does not show **Running**, you'll have to wait until the Redis cache deployment has completed. Refresh this pane every couple of minutes to update the status.
+1. Check the **Essentials** section at the top of the pane. If the status doesn't show **Running**, you'll have to wait until the Redis cache deployment has completed. Refresh this pane every couple of minutes to update the status.
 
 1. After setup is complete, in the **Azure Cache for Redis** menu, under **Settings**, select **Access keys**. The **Access keys** pane for your Azure Cache for Redis instance appears.
 
@@ -131,7 +131,7 @@ Now, if the Redis cache deployment is complete, you can configure the API Manage
 
     ![Configuring the external cache.](../media/5-configure-external-cache.png)
 
-    The external cache you just created  is now listed on the External cache page for your API Management service.
+    The external cache you just created is now listed on the External cache page for your API Management service.
 
 ## Add the API in API Management
 
@@ -139,7 +139,7 @@ We must apply a policy to enable users to access the API. Before you can apply a
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources** and then select the API Management service you previously created.
 
-1. In the **API Management service** menu, Under **APIs**, select **APIs**. The **APIs** pane for your API Management service appears with numerous template selections.
+1. In the **API Management service** menu, under **APIs**, select **APIs**. The **APIs** pane for your API Management service appears with numerous template selections.
 
 1. Under the **Create from definition** section, select **OpenAPI**. The **Create from OpenAPI specification** dialog box appears.
 
@@ -167,7 +167,7 @@ The API is now added to the management instance. Let's test the API before any p
 
 1. Select **Send**.
 
-    ![Test the API in API Management.](../media/5-test-api-in-apim.png)
+    :::image type="content" source="../media/5-test-api-in-apim.png" alt-text="Test the API in API Management.":::
 
 1. Examine the results. Note the precise time that is included in the *HTTP response*.
 
@@ -211,17 +211,17 @@ We'll run the same test on the API in API Management and observe the results of 
     | Width | 8 |
     | | |
 
-    ![Test the API in API Management.](../media/5-test-api-in-apim.png)
+    :::image type="content" source="../media/5-test-api-in-apim.png" alt-text="Test the API in API Management.":::
 
 1. Select **Send**.
 
 1. Examine the results. Note the precise time that is included in the *HTTP response*.
 
-1. Select **Send** to resend the request. Notice that the time in the response has not changed, because the cached response has been served.
+1. Select **Send** to resend the request. Notice that the time in the response hasn't changed, because the cached response has been served.
 
 ## Configure the cache to vary by a query parameter
 
-To ensure that the system caches different responses for different board heights, you must configure the cache to vary by the *Height* query parameter. You don't want to vary by the *Width* parameter, because that value is not used in the cost calculation.
+To ensure that the system caches different responses for different board heights, you must configure the cache to vary by the *Height* query parameter. You don't want to vary by the *Width* parameter, because that value isn't used in the cost calculation.
 
 1. In the **APIs** pane for your API Management service, select the **Design** tab, and then select the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane appears.
 
@@ -239,7 +239,7 @@ To ensure that the system caches different responses for different board heights
 
 ## Test the new cache configuration
 
-The cache should now keep separate responses for different values of the *Height* query parameter. However, because the *Width* parameter does not influence the cost calculation, when you change only that parameter a cached response can be used. Let's test that:
+The cache should now keep separate responses for different values of the *Height* query parameter. However, because the *Width* parameter doesn't influence the cost calculation, when you change only that parameter a cached response can be used. Let's test that:
 
 1. In the **APIs** pane for your API Management service, select the **Test** tab, and then select the **GET - GetPriceEstimate** operation.  The **GetPriceEstimate** pane appears.
 
@@ -257,21 +257,21 @@ The cache should now keep separate responses for different values of the *Height
 
 1. Examine the results. Note the precise time that is included in the response.
 
-1. Select **Send** to resend the request. As before, notice that the time in the response has not changed, because the cached response has been served.
+1. Select **Send** to resend the request. As before, notice that the time in the response hasn't changed, because the cached response has been served.
 
 1. To test the *Height* parameter, use the following values for *Template parameters* and *Query parameters*.
 
     | NAME | VALUE |
     | --- | --- |
-    | ShippingCode | USA |
-    | Game | Chess |
+    | ShippingCode | usa |
+    | Game | chess |
     | Height | 100 |
     | Width | 8 |
     | | |
 
 1. Select **Send**.
 
-1. Examine the results. This time, because the height query parameter in the request has changed, the cached response is not used and the result is updated. This behavior is correct for our API.
+1. Examine the results. This time, because the height query parameter in the request has changed, the cached response isn't used and the result is updated. This behavior is correct for our API.
 
 1. To test the *Width* parameter, enter the following values for *Template parameters* and *Query parameters*.
 
@@ -285,4 +285,4 @@ The cache should now keep separate responses for different values of the *Height
 
 1. Select **Send**.
 
-1. Examine the results. This time, although the width query parameter in the request has changed, the cached response is used, and the result does not change.
+1. Examine the results. This time, although the width query parameter in the request has changed, the cached response is used, and the result doesn't change.

@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.introduction-data-analytics-azure
+metadata:
+  title: Introduction to data analytics on Azure
+  description: Introduction to data analytics on Azure
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to data analytics on Azure
+prerequisites: |
+  - You should be familiar with basic data concepts and terminology.
+summary: ""
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+products:
+- azure-sql-database
+- azure-synapse-analytics
+- power-bi
+modules:
+- learn.wwl.explore-azure-data-services-for-modern-analytics
+- learn.wwl.understand-concepts-of-data-analytics
+- learn.wwl.explore-data-analytics-scale
+trophy:
+  uid: learn.wwl.introduction-data-analytics-azure.trophy

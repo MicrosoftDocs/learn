@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-platform-service-issues.troubleshoot-paas-integration-issues
+title: Troubleshoot Azure Private Link connectivity problems and firewalls for virtual machines
+metadata:
+  title: Troubleshoot Azure Private Link connectivity problems and firewalls for virtual machines
+  description: "Troubleshoot Azure Private Link connectivity problems and firewalls for virtual machines"
+  ms.date: 04/05/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-troubleshoot-private-link.md)]

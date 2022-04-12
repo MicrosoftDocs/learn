@@ -8,11 +8,11 @@ Microsoft Defender for Cloud offers built-in security management and threat prot
 
 To help you protect yourself against these challenges, Defender for Cloud provides you with the tools to:
 
-- **Strengthen your security posture**: Defender for Cloud assesses your environment and enables you to understand the status of your resources, and whether they are secure.
+- **Strengthen your security posture**: Defender for Cloud assesses your environment and enables you to understand the status of your resources, and whether they're secure.
 
 - **Protect against threats**: Defender for Cloud assesses your workloads and raises threat prevention recommendations and threat detection alerts.
 
-- **Get secure faster**: In Defender for Cloud, everything is done in cloud speed. Because it is natively integrated, deployment of Defender for Cloud is easy, providing you with auto-provisioning and protection with Azure services.
+- **Get secure faster**: In Defender for Cloud, everything is done in cloud speed. Because it's natively integrated, deployment of Defender for Cloud is easy, providing you with auto-provisioning and protection with Azure services.
 
 Defender for Cloud is available to every Azure subscription through a free, basic tier. You can activate a paid tier to get more features, including integration with on-premise resources and other cloud providers.
 

@@ -2,19 +2,20 @@
 uid: learn.wwl.describe-security-concepts-methodologies
 metadata:
   title: Describe security concepts and methodologies
-  description: "Describe security and compliance concepts and methodologies"
-  ms.date: 06/23/2021
+  description: "Describe security and compliance concepts"
+  ms.date: 04/12/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Describe security and compliance concepts and methodologies
-summary: Learn about the common security threats and way to protect though the defense in depth model. Also, learn about security concepts and methodologies that are foundational to Microsoft solutions.
+title: Describe security and compliance concepts
+summary: Learn about common security and compliance concepts that are foundational to Microsoft solutions. Topics include the shared responsibility and Zero Trust models, encryption, data residency and data sovereignty, and more.
 abstract: |
   After completing this module, you will be able to:
-  - Describe the Zero-Trust and shared responsibility models.
-  - Describe common security threats and ways to protect through defense in depth.
-  - Describe the concept of encryption, hashing, and signing
+  - Describe the shared responsibility and the defense-in-depth security models.
+  - Describe the Zero-Trust model.
+  - Describe the concepts of encryption and hashing.
+  - Describe some basic compliance concepts.
 prerequisites: |
   - None
 iconUrl: /learn/achievements/describe-security-concepts-and-methodologies.svg
@@ -28,12 +29,11 @@ products:
 - m365
 units:
 - learn.wwl.describe-security-concepts-methodologies.introduction
-- learn.wwl.describe-security-concepts-methodologies.describe-zero-trust-methodology
 - learn.wwl.describe-security-concepts-methodologies.describe-shared-responsibility-model
 - learn.wwl.describe-security-concepts-methodologies.describe-defense-depth
-- learn.wwl.describe-security-concepts-methodologies.describe-common-threats
+- learn.wwl.describe-security-concepts-methodologies.describe-zero-trust-methodology
 - learn.wwl.describe-security-concepts-methodologies.describe-ways-encryption,-hashing,-signing-can-secure-your-data
-- learn.wwl.describe-security-concepts-methodologies.describe-cloud-adoption-framework
+- learn.wwl.describe-security-concepts-methodologies.describe-compliance-concepts
 - learn.wwl.describe-security-concepts-methodologies.knowledge-check
 - learn.wwl.describe-security-concepts-methodologies.summary-resources
 badge:
