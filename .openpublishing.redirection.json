@@ -12540,6 +12540,16 @@
       "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/6a-describe-cloud-adoption-framework.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/5-describe-privileged-access-management.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-insider-risk-capabilities-microsoft-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/6-describe-customer-lockbox.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-insider-risk-capabilities-microsoft-365",
+      "redirect_document_id": false
     }
   ]
 }
