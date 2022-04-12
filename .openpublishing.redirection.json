@@ -12550,6 +12550,46 @@
       "source_path": "learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/6-describe-customer-lockbox.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-insider-risk-capabilities-microsoft-365",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/2-describe-purpose-of-ediscovery.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/2-describe-ediscovery-solutions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/5a-describe-core-microsoft-365.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/3-describe-audit-solutions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/3-describe-content-search-tool.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/4-describe-core-ediscovery-workflow.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/5-describe-advanced-ediscovery-workflow.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/5b-describe-purpose-value-advanced-auditing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/4-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/7-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/5-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }
