@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.nvidia.deploy-model-to-nvidia-triton-server.create-gpu-accelerated-virtual-machine
+uid: learn.nvidia.deploy-model-nvidia-triton-inference-server.2-create-gpu-accelerated-virtual-machine
 title: Create a GPU Accelerated Virtual Machine
 metadata:
   title: Create a GPU Accelerated Virtual Machine

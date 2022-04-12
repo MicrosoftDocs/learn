@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.nvidia.deploy-model-to-nvidia-triton-server.install-prerequisites-nvidia-triton-inference-server
+uid: learn.nvidia.deploy-model-nvidia-triton-inference-server.3-install-prerequisites-nvidia-triton-inference-server
 title: Install prerequisites and NVIDIA Triton Inference Server
 metadata:
   title: Install prerequisites and NVIDIA Triton Inference Server

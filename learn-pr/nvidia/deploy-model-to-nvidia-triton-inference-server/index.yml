@@ -28,11 +28,11 @@ products:
 - azure
 - azure-machine-learning
 units:
-- learn.nvidia.deploy-model-to-nvidia-triton-server.1-introduction
-- learn.nvidia.deploy-model-to-nvidia-triton-server.2-create-gpu-accelerated-virtual-machine
-- learn.nvidia.deploy-model-to-nvidia-triton-server.3-install-prerequisites-nvidia-triton-inference-server
-- learn.nvidia.deploy-model-to-nvidia-triton-server.4-execute-inference-workload-nvidia-triton-inference-server
-- learn.nvidia.deploy-model-to-nvidia-triton-server.5-knowledge-check
-- learn.nvidia.deploy-model-to-nvidia-triton-server.6-summary
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.1-introduction
+- learn.nvidia.deploy-model-nvidia-triton-server.2-create-gpu-accelerated-virtual-machine
+- learn.nvidia.deploy-model-nvidia-triton-server.3-install-prerequisites-nvidia-triton-inference-server
+- learn.nvidia.deploy-model-nvidia-triton-server.4-execute-inference-workload-nvidia-triton-inference-server
+- learn.nvidia.deploy-model-nvidia-triton-server.5-knowledge-check
+- learn.nvidia.deploy-model-nvidia-triton-server.6-summary
 badge:
   uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.badge

@@ -29,6 +29,6 @@ modules:
 - learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning
 - learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools
 - learn.nvidia.use-automl-train-labeled-dataset-develop-production-model
-- learn.nvidia.deploy-model-to-nvidia-triton-inference-server
+- learn.nvidia.deploy-model-nvidia-triton-inference-server
 trophy:
   uid: learn.nvidia.develop-custom-object-detection-models-with-nvidia-and-azure-machine-learning.trophy

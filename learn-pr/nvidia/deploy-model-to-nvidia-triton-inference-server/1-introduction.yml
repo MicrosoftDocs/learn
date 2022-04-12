@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.nvidia.deploy-model-to-nvidia-triton-server.introduction
+uid: learn.nvidia.deploy-model-nvidia-triton-inference-server.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction deploy a model to NVIDIA Triton Inference Server.
+  description: Introduction to deploy a model to NVIDIA Triton Inference Server.
   author: toolboc
   ms.author: chnoring
   ms.date: 03/14/2022

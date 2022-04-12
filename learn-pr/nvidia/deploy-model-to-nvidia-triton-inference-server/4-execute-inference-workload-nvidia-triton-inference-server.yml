@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.nvidia.deploy-model-to-nvidia-triton-server.execute-inference-workload-nvidia-triton-inference-server
+uid: learn.nvidia.deploy-model-nvidia-triton-inference-server.4-execute-inference-workload-nvidia-triton-inference-server
 title: Execute inference workload on NVIDIA Triton Inference Server
 metadata:
   title: Execute inference workload on NVIDIA Triton Inference Server
