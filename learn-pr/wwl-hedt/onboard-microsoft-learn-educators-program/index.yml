@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.onboard-microsoft-learn-educators-program
+metadata:
+  title: Onboard to Microsoft Learn for Educators program
+  description: "Joining MSLE, getting certified in the content you'll be teaching, integrating Microsoft Official Course materials, and leveraging the various benefits will help ensure your students are well prepared for today’s job opportunities. SC-900"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Onboard to Microsoft Learn for Educators program
+summary: Joining MSLE, getting certified in the content you'll be teaching, integrating Microsoft Official Course materials, and leveraging the various benefits will help ensure your students are well prepared for today’s job opportunities.
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand the Microsoft Learn for Educators program benefits.
+  - Explore how to navigate the Microsoft Learn for Educators portal.
+  - Learn how to request practice exams and certification exam vouchers as an MSLE Educator.
+  - Learn how to access the Microsoft Learning Download Center and download content.
+  - Understand the resources available through the Microsoft curriculum and teaching materials.
+  - Explore the benefits of joining the Microsoft Learn for Educators community.
+prerequisites: |
+  - Understand the Microsoft Learn for Educators program benefits and offerings.
+  - Understand the different MSLE program participation options.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- higher-ed-educator
+products:
+- azure-security-center
+- dynamics-365
+- dynamics-customer-service
+units:
+- learn.wwl.onboard-microsoft-learn-educators-program.introduction
+- learn.wwl.onboard-microsoft-learn-educators-program.tour-microsoft-learn-educators-page
+- learn.wwl.onboard-microsoft-learn-educators-program.microsoft-learn-educators-portal
+- learn.wwl.onboard-microsoft-learn-educators-program.explore-learning-download-center
+- learn.wwl.onboard-microsoft-learn-educators-program.overview-teaching-materials
+- learn.wwl.onboard-microsoft-learn-educators-program.implementation-certification
+- learn.wwl.onboard-microsoft-learn-educators-program.join-microsoft-learn-educators-community
+- learn.wwl.onboard-microsoft-learn-educators-program.knowledge-check
+- learn.wwl.onboard-microsoft-learn-educators-program.summary
+badge:
+  uid: learn.wwl.onboard-microsoft-learn-educators-program.badge
