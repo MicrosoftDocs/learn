@@ -9,6 +9,7 @@ metadata:
   ms.author: brmurtau
   ms.topic: interactive-tutorial
   ms.prod: learning-vs-code
+  ms.custom: devdivchpfy22
 durationInMinutes: 4
 content: |
   [!include[](includes/4-exercise-add-development-container.md)]

@@ -3,7 +3,7 @@ uid: learn.azure-security.configure-security-policies-to-manage-data
 metadata:
   title: Configure security policies to manage data
   description: Learn how to set up policies to classify, retain, and protect your cloud-based data.
-  ms.date: 09/30/2019
+  ms.date: 04/12/2022
   author: adrianstevens
   ms.author: adsteven
   ms.topic: interactive-tutorial
