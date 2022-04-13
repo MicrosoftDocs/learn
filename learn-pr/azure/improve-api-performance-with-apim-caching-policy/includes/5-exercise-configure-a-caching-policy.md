@@ -1,8 +1,8 @@
-Companies that use Azure API Management to host APIs can modify their behavior without rewriting code by using policies.
+When you host an API using Azure API Management, you are able to modify its behavior without rewriting code.
 
-Suppose you want to implement caching for the Board Pricing API. You want to add the API to API Management and write the necessary policies. The cost for a board is dependent on the height of the board, but not its width. 
+Suppose you wished to implement caching for the Board Pricing API. You would first add the API to Azure API Management and then write the policies you need.
 
-In this exercise, you'll import an API into Azure API Management and add a caching policy to it.
+In the following exercise, you'll import an API into Azure API Management and add a caching policy to it.
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -61,15 +61,15 @@ Now, deploy the sample Web API to Azure App Service:
     - A Swagger URL for the Swagger UI.
     - A Swagger JSON URL for the OpenAPI definition.
 
-    Note these urls; we'll use them in the next task. Optionally, copy these URLs to a text file for reference.
+    Make a note of these urls in an app like Notepad. We'll use them in the next task.
 
 ## Test the deployed Web API
 
-When the Web API has been set up and successfully deployed in the Cloud Shell, let's test it. We can do that by submitting a GET request in the browser and also by checking the OpenAPI definition. These tests, run against the Web API before it's added to API Management, are in the **azurewebsites.net** domain:
+Wait until the Web API has been set up and successfully deployed in the Cloud Shell, then test it. Test the Web API either by submitting a GET request in the browser or by checking the OpenAPI definition. These tests run against the Web API in the **azurewebsites.net** domain, before it's been added to API Management:
 
 1. On the Azure portal resource menu or from the **Home** page, select **All resources**, and then select the App Service resource type. The **BoardGamingAPI123aa456789** App Service pane appears (the numbers at the end will differ for your implementation).
 
-1. On the **Overview** tab, in the command bar, select **Browse**. The browser displays a *No webpage found for this address* page. This is expected because the Web API doesn't implement an Azure website user interface.
+1. As a test, select **Browse** in the command bar of the **Overview** tab. Notice the error message. The browser displays a "No webpage found for this address", message. This occurs because the Web API doesn't implement an Azure website user interface.
 
 1. In a new browser tab, paste the Web API test URL that you previously copied, and press <kbd>Enter</kbd>. The browser displays a response in JSON format. Notice that the result includes the server time with the label **quotePreparedTime**.
 
