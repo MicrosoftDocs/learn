@@ -28,58 +28,36 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which of the following roles would provide a user read only access to the catalog?"
     choices:
-    - content: ""
+    - content: "Collection admin"
+      isCorrect: false
+      explanation: "Collection admins can edit the collection, its details, and add subcollections."
+    - content: "Data curator"
+      isCorrect: false
+      explanation: "Data curators can perform create, read, modify, and delete actions on catalog data objects."
+    - content: "Data reader"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Data readers have access to read catalog data objects."
+  - content: "Which of the following roles would provide a user the ability to register new data sources?"
     choices:
-    - content: ""
+    - content: "Data curator"
+      isCorrect: false
+      explanation: "Data curators can perform create, read, modify, and delete actions on catalog data objects."
+    - content: "Data source admin"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Data source admins can manage data sources and data scans."
+    - content: "Policy author"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Policy authors can create, view, update and delete policies."
+  - content: "Where are role assignments performed?"
     choices:
-    - content: ""
+    - content: "Collections"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Role assignments are applied against a collection."
+    - content: "Resource Sets"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "You are unable to perform role assignments against a resource set."
+    - content: "Data Sources"
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "You are unable to perform role assignments against a data source."
