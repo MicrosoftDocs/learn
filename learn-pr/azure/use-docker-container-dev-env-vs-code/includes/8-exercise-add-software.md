@@ -40,6 +40,6 @@ In this exercise, we'll look at how you can install a technology stack like Node
 
 1. You should see a version of Node as output in the terminal.
 
-Congratulations! You customized your dev container even further by installing another software.
+Congratulations! You customized your dev container even further by installing additional software.
 
 Continue to the next unit for a quick knowledge check about dev containers in Visual Studio Code. After that, we'll summarize what we've covered in this Learn module.

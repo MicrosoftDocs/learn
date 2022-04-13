@@ -9,7 +9,7 @@ The container comes with the Microsoft Python extension. The Python extension en
 1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **extension** and select **Extensions: Install Extensions**.
 1. In the extension explorer on the right, search for **jinja**.
-1. Click **Install**.
+1. Select **Install**.
 1. Right-click the **Jinja** extension from **wholroyd** and select **Copy extension ID**.
 1. Add the extension ID to the `extensions` option.
 

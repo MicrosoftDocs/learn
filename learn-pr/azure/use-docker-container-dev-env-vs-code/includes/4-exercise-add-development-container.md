@@ -12,7 +12,7 @@ In this exercise, you'll add a dev container and open the Products Dashboard pro
    | Option                                      | Value       |
    | ------------------------------------------- | ----------- |
    | Select a container configuration definition | Python 3    |
-   | Python version                              | 3.8         |
+   | Python version                              | 3.10         |
    | Install Node.js                             | none        |
    | Add Features                                | Select "OK" |
 
@@ -20,7 +20,7 @@ A Remote Container configuration will be added to your project. Visual Studio Co
 
 ## Inspect configuration files
 
-1. Notice that a new folder called: _.devcontainer_ has been added to the project.
+1. Notice that a new folder called _'.devcontainer'_ has been added to the project.
 1. Expand that folder and notice that it contains both a Dockerfile and a devcontainer.json file.
 
 ## Open the project in a container
@@ -33,7 +33,7 @@ The container will begin building. The initial build might take a few minutes be
 
 ## View the Remote Indicator
 
-When the container is finished building, you can see that you're connected to the container by examining the Remote Indicator. You should also now see your project files loaded in VS Code.
+When the container build is complete, you can see that you're connected to the container by examining the Remote Indicator. You should also now see your project files loaded in VS Code.
 
 - Examine the Remote Indicator by viewing the bottom left-hand corner of VS Code. Notice that it now says, "Dev Container: Python 3".
 
@@ -45,7 +45,7 @@ When the container is finished building, you can see that you're connected to th
 ## Inspect the container
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal in Visual Studio Code if it isn't already open.
-1. Notice that the terminal prompt might look different than your normal terminal prompt
+1. Notice that the terminal prompt might look different than your normal terminal prompt.
 
     :::image type="content" source="../media/terminal-prompt.png" alt-text="VS Code integrated terminal prompt":::
 
@@ -59,7 +59,7 @@ When the container is finished building, you can see that you're connected to th
 
 ## Install project dependencies
 
-- Run the following command in the terminal to install the [Flask](https://flask.palletsprojects.com/en/2.0.x/) dependencies that you need to run the project:
+- Run the following command in the terminal to install the [Flask](https://flask.palletsprojects.com/) dependencies that you need to run the project:
 
     ```bash
     pip3 install --user -r requirements.txt
@@ -77,6 +77,6 @@ When the container is finished building, you can see that you're connected to th
 
     :::image type="content" source="../media/products-dashboard.jpg" alt-text="Screenshot of the Python Products Dashboard application.":::
 
-Great work! You have a Python web application with [Flask](https://flask.palletsprojects.com/en/2.0.x/) running on your machine, and you might not know what those things even are. That's OK! You don't have to. The container takes care of setting up the entire environment.
+Great work! You have a Python web application with [Flask](https://flask.palletsprojects.com/) running on your machine, and you might not know what those things even are. That's OK! You don't have to. The container takes care of setting up the entire environment.
 
 In the next section, you'll learn how to use the "devcontainer.json" file to automate the dependency install, and customize VS Code for this Python project.

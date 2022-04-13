@@ -12,7 +12,7 @@ The Remote - Containers extension lets you grab a dev container with the specifi
 
 Visual Studio Code extensions are installed and run inside the container. There, they have full access to the tools, platform, and file system. To you, the developer, the experience is the same as if you had opened the project normally in Visual Studio Code.
 
-You can seamlessly switch your entire development environment just by connecting to a different container. The extension handles all of the setup based on a few configuration files contained in a folder called: **.devcontainer**.
+You can seamlessly switch your entire development environment just by connecting to a different container. The extension handles all of the setup based on a few configuration files contained in a folder called **'.devcontainer'**.
 
 :::image type="content" source="../media/2-architecture-containers.png" alt-text="Diagram that explains the split architecture of the Remote - Containers extension.":::
 
