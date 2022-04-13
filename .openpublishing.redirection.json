@@ -12625,6 +12625,11 @@
       "source_path": "learn-pr/wwl-sci/explore-authentication-capabilities/8-summary-resources",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-authentication-capabilities/7-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/troubleshoot-vpn-gateways/2-set-up-troubleshooting-environment.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/troubleshoot-vpn-gateways/",
+      "redirect_document_id": false
     }
   ]
 }
