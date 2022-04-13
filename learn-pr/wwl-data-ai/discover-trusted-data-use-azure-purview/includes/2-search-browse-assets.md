@@ -38,7 +38,7 @@ Before using this asset to create your report, you need to verify more details a
 
 Select an asset to see the *overview*. The overview displays information at a glance, including a description, asset classification, schema classification, collection path, asset hierarchy, and glossary terms.
 
-![Azure Purview data catalog asset overview for ReportTable_Prod.](../media/azure-purview-catalog-5.png)
+[![Azure Purview data catalog asset overview for ReportTable_Prod.](../media/azure-purview-catalog-5.png)](../media/azure-purview-catalog-5.png#lightbox)
 
 The *asset description* provides a brief explanation of the purpose of an asset. Data stewards have made data analysts lives easier in the screenshot below, by noting that this is the correct resource to use for sales reporting.
 
@@ -79,7 +79,7 @@ You can view the full asset hierarchy within the overview tab. As an example: if
 
 The *schema* view of the asset includes more granular details about the asset, such as column names, data types, column level classifications, terms, and descriptions. 
 
-![Azure Purview data catalog asset schema tab interface, displaying data classifications, glossary terms, column data types, and asset descriptions.](../media/azure-purview-assets-chema.png)
+![Azure Purview data catalog asset schema tab interface, displaying data classifications, glossary terms, column data types, and asset descriptions.](../media/azure-purview-asset-schema.png)
 
 ### Asset lineage
 
@@ -89,7 +89,7 @@ A single view on the asset lineage tab displays the data flow to and from the as
 
 The columns pane on the left side of the lineage tab allows users to select and track columns as they flow through the lineage. For example, if you select the column Full Name, you can see how the Full Name field was created and where the information comes from.
 
-![Azure Purview data catalog asset lineage interface, displaying a graphical diagram of the flow of data into and out of an Azure SWL Table.](../media/azure-purview-lineage.png)
+[![Azure Purview data catalog asset lineage interface, displaying a graphical diagram of the flow of data into and out of an Azure SWL Table.](../media/azure-purview-lineage.png)](../media/azure-purview-lineage.png#lightbox)
 
 >[!NOTE]
 >The lineage view is a powerful way to understand the transformation process an asset has undergone. Learn more about the [lineage experience in Azure Purview data catalog](/azure/purview/concept-data-lineage#lineage-experience-in-azure-purview-data-catalog)

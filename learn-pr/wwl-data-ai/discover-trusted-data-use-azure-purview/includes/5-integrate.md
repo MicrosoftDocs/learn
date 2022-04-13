@@ -29,7 +29,7 @@ Double check you're connected to your serveless instance and select **Run** to e
 
 After reviewing data, you can use the asset, for example, adding to a new dataflow in Azure Synapse. 
 
-![Create new dataflow from purview search interface in Azure Synapse studio.](../media/azure-purview-synapse-data-flow.png)
+[![Create new dataflow from purview search interface in Azure Synapse studio.](../media/azure-purview-synapse-data-flow.png)](../media/azure-purview-synapse-data-flow.png#lightbox)
 
 >[!NOTE]
 >See [Connect an Azure Purview Account](/azure/synapse-analytics/catalog-and-governance/quickstart-connect-azure-purview) for detailed information about integrating Azure Purview into Azure Synapse Analytics.

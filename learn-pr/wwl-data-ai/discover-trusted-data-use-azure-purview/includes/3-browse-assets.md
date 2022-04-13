@@ -18,7 +18,7 @@ Here you can specify whether you'd like to browse by collection or by source typ
 
 **Browse by source type** allows you to explore the hierarchies of data sources using an explorer view. 
 
-![Data catalog browse assets interface, with browse by source type selected. The interface displays 27 different source types including Azure Blob Storage, Azure Cosmos DB, and Azure Data Factory.](../media/azure-purview-browse-2.png)
+[![Data catalog browse assets interface, with browse by source type selected. The interface displays 27 different source types including Azure Blob Storage, Azure Cosmos DB, and Azure Data Factory.](../media/azure-purview-browse-2.png)](../media/azure-purview-browse-2.png#lightbox)
 
 After selecting a tile associated with a data source type, you'll see a list of assets belonging to that type. From there, you'll be able to use the explorer view to see parent and child assets.
 
