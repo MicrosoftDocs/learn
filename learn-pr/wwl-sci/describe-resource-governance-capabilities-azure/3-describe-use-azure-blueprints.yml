@@ -4,12 +4,13 @@ title: Describe the use of Azure Blueprints
 metadata:
   title: Describe the use of Azure Blueprints
   description: "Describe the use of Azure Blueprints"
-  ms.date: 06/21/2021
+  ms.date: 04/12/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/3-describe-use-azure-blueprints.md)]
