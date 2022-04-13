@@ -49,7 +49,6 @@ units:
 - learn.deploy-azure-purview-scan-data-resources.register-and-scan
 - learn.deploy-azure-purview-scan-data-resources.register-and-scan-excercise
 - learn.deploy-azure-purview-scan-data-resources.register-and-scan-knowledge-check
-- learn.deploy-azure-purview-scan-data-resources.self-hosted-integration-runtime
 - learn.deploy-azure-purview-scan-data-resources.self-hosted-integration-runtime-knowledge-check
 - learn.deploy-azure-purview-scan-data-resources.summary
 badge:
