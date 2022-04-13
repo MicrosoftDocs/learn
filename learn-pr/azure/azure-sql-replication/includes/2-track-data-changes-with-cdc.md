@@ -20,7 +20,7 @@ Below are the steps highlighting how CDC works on Azure SQL Databases:
 
 The following illustration shows the principal data flow for CDC.
 
-   :::image type="content" source="../media/cdc-diagram.png" alt-text="CDC Workflow.":::
+   :::image type="content" source="../media/cdc-diagram.png" alt-text="Diagram showing C D C Workflow.":::
 
 ## Enabling and disabling CDC
 
@@ -90,7 +90,7 @@ EXEC sys.sp_cdc_disable_table
 @capture_instance = N'dbo_MyTable'
 ```
 
-> Note: It is *not* necessary to disable individual tables before you disable the database.
+> [!NOTE] It is *not* necessary to disable individual tables before you disable the database.
 
 ### Disabling CDC on your database
 
@@ -101,7 +101,7 @@ EXEC sys.sp_cdc_disable_db
 GO
 ```
 
-> Note: If a change data capture enabled database is dropped, change data capture jobs are automatically removed.
+> [!NOTE] If a change data capture enabled database is dropped, change data capture jobs are automatically removed.
 
 ## Querying the change tables for changes
 

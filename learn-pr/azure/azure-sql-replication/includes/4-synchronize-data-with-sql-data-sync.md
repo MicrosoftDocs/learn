@@ -12,7 +12,7 @@ Within a sync group:
 - The member databases can be either databases in Azure SQL Database or in instances of SQL Server.
 - The Sync Metadata Database contains the metadata and log for Data Sync; it has to be an Azure SQL Database located in the same region as the hub database. The Sync Metadata Database is customer created and customer owned and you can only have one Sync Metadata Database per region and subscription. Sync Metadata Database cannot be deleted or renamed while sync groups or sync agents exist.
 
-   :::image type="content" source="../media/sync-data-overview.png" alt-text="Sync data between databases":::
+   :::image type="content" source="../media/sync-data-overview.png" alt-text="Diagram showing Sync data between databases.":::
 
 Additionally, a sync group has the following properties:
 

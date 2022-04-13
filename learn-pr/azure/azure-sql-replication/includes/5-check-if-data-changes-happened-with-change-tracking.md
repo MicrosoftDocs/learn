@@ -15,10 +15,10 @@ The fact that a row has changed and information about the change must be availab
 Change tracking can be used as a foundation for both one-way and two-way synchronization applications.
 
 - One-way synchronization applications, such as a client or mid-tier caching application, can be built that use change tracking. As shown in the following illustration, a caching application requires data to be stored in the Database Engine and to be cached in other data stores. The application must be able to keep the cache up-to-date with any changes that have been made to the database tables. There are no changes to pass back to the Database Engine.
-   :::image type="content" source="../media/one-waysync.gif" alt-text="Shows one-way synchronization applications":::
+   :::image type="content" source="../media/one-way-sync.gif" alt-text="Diagram showing one-way synchronization applications.":::
 
 - Two-way synchronization applications can also be built that use change tracking. In this scenario, the data in an instance of the Database Engine is synchronized with one or more data stores. The data in those stores can be updated and the changes must be synchronized back to the Database Engine.
-   :::image type="content" source="../media/two-waysync.gif" alt-text="Shows two-way synchronization applications":::
+   :::image type="content" source="../media/two-way-sync.gif" alt-text="Diagram showing two-way synchronization applications.":::
 
 After change tracking is configured for a table, any DML statement that affects rows in the table will cause change tracking information for each modified row to be recorded. To query for the rows that have changed and to obtain information about the changes, you can use change tracking functions.
 
