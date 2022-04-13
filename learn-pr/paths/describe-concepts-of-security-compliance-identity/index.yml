@@ -3,7 +3,7 @@ uid: learn.wwl.describe-concepts-of-security-compliance-identity
 metadata:
   title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity'
   description: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity'
-  ms.date: 10/29/2021
+  ms.date: 04/13/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -12,30 +12,21 @@ title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the 
 prerequisites: |
   - Recommended learning:  [Describe the basic concepts of cybersecurity](/learn/paths/describe-basic-concepts-of-cybersecurity/)
 summary: |
-  Learn about core concepts, principles, and methodologies that are foundational to security, compliance, and identity solutions, including Zero-Trust, shared responsibility, the role of identity providers, and more.
-    
+  Learn about core concepts that are foundational to security, compliance, and identity solutions, including shared responsibility, Zero Trust, data residency, the role of identity providers, and more.
   Here are all the learning paths in preparation for the SC-900 exam: Microsoft Security, Compliance, and Identity Fundamentals.
   :::row:::
   :::column:::
-    <img src="/learn/achievements/describe-the-concepts-of-security-compliance-and-identity.svg" width="101" alt="The trophy for the Describe the concepts of security, compliance, and identity learning path." role="presentation"></img>
-    
     Part 1: Describe the concepts of security, compliance, and identity
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft Identity and access management solutions learning path." role="presentation"></img>
-    
     [Part 2: Describe the capabilities of Microsoft Identity and access management solutions](../describe-capabilities-of-microsoft-identity-access/index.yml)
   :::column-end:::
   :::row-end:::
   :::row:::
    :::column:::
-    <img src="/learn/achievements/describe-the-capabilities-of-microsoft-security-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft security solutions learning path." role="presentation"></img>
-    
     [Part 3: Describe the capabilities of Microsoft security solutions](../describe-capabilities-of-microsoft-security-solutions/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/describe-the-capabilities-of-microsoft-compliance-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft compliance solutions learning path." role="presentation"></img>
-    
     [Part 4: Describe the capabilities of Microsoft compliance solutions](../describe-capabilities-of-microsoft-compliance-solutions/index.yml)
   :::column-end:::
   :::row-end:::
