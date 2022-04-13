@@ -38,7 +38,7 @@ The last section of the file deals directly with project configuration.
 // "postCreateCommand": "pip3 install --user -r requirements.txt",
 ```
 
-- You can use the `extensions` array to specify which Visual Studio Code extensions should be installed in Visual Studio Code when it connects to the container. Your normal Visual Studio Code set up and all the extensions that you already have won't be present when you're using Remote - Containers. Extensions are specified here with their ID.
+- You can use the `extensions` array to specify which Visual Studio Code extensions should be installed in Visual Studio Code when it connects to the container. Your normal Visual Studio Code setup and all the extensions that you already have won't be present when you're using Remote - Containers. Extensions are specified here with their ID.
 
 - The `postCreateCommand` option lets you run any commands that you want after the container is created. If you remember from the first exercise, you had to run the `pip3` command to install dependencies. But how would you know to do that? You might not. You can configure it here so that it will happen automatically and others won't have to worry about it.
 
