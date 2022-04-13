@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.deploy-azure-purview-scan-data-resources.register-and-scan
-title: register-and-scan
+uid: learn.deploy-azure-purview-scan-data-resources.register-and-scan-excercise
+title: register-and-scan-excercise
 metadata:
   unitType: {{patternType}}
-  title: register-and-scan
+  title: register-and-scan-excercise
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 3/3/2022
   author: whhender
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-register-and-scan.md)]
+  [!include[](includes/9-register-and-scan-excercise.md)]

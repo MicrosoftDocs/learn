@@ -43,6 +43,9 @@ units:
 - learn.deploy-azure-purview-scan-data-resources.deploy-azure-purview
 - learn.deploy-azure-purview-scan-data-resources.deploy-azure-purview-excercise
 - learn.deploy-azure-purview-scan-data-resources.deployment-knowledge-check
+- learn.deploy-azure-purview-scan-data-resources.access-control
+- learn.deploy-azure-purview-scan-data-resources.access-control-exercise
+- learn.deploy-azure-purview-scan-data-resources.access-control-knowledge-check
 - learn.deploy-azure-purview-scan-data-resources.register-and-scan
 - learn.deploy-azure-purview-scan-data-resources.register-and-scan-excercise
 - learn.deploy-azure-purview-scan-data-resources.register-and-scan-knowledge-check
