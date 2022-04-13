@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-migrating-aspnet-apps-azure
 metadata:
   title: Introduction to migrating ASP.NET apps to Azure
   description: Migrating an ASP.NET application from on-premises to Azure, along with a supporting Azure SQL database, can provide many advantages, but also challenges. Learn how to evaluate the migration process to determine if it’s right for your application.
-  ms.date: 01/16/2021
+  ms.date: 04/13/2022
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
