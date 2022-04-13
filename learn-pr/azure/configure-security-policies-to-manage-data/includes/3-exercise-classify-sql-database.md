@@ -62,7 +62,7 @@ It will take a few minutes to deploy the server with sample data. Once it's comp
 
 SQL IP brings a set of advanced services and SQL capabilities, forming a new information-protection paradigm in SQL aimed at protecting the data, not just the database:
 
-* **Azure SQL Auditing**: Azure SQL Auditing tracks database events and writes them to an audit log in your Azure storage account, Log Analytics workspace or Event Hub.
+* **Azure SQL Auditing**: Azure SQL Auditing tracks database events and writes them to an audit log in your Azure storage account, Log Analytics workspace or Event Hubs.
 * **Data Discovery & Classifications**: Data Discovery & Classifications is built into Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. It provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your databases.
 * **Dynamic data masking**: Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support dynamic data masking. Dynamic data masking limits sensitive data exposure by masking it to non-privileged users.
 * **Microsoft Defender for Cloud**: Scans your database and makes recommendations to improve security. Also allows you to set up and monitor **Security Alerts**.
