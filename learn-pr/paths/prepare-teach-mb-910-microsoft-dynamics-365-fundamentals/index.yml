@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.prepare-teach-mb-910-microsoft-dynamics-365-fundamentals
+metadata:
+  title: Prepare to teach MB-910 Microsoft Dynamics 365 Fundamentals (CRM)
+  description: Prepare to teach MB-910 Microsoft Dynamics 365 Fundamentals (CRM)
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare to teach MB-910 Microsoft Dynamics 365 Fundamentals (CRM)
+prerequisites: |
+  - None
+summary: |
+  Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft Dynamics 365 Fundamentals (CRM) in an academic program.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- higher-ed-educator
+products:
+- dynamics-365
+- dynamics-customer-service
+modules:
+- learn.wwl.introduction-microsoft-learn-educators-program
+- learn.wwl.onboard-microsoft-learn-educators-program
+- learn.wwl.microsoft-learn-educators-course-preparation
+- learn.wwl.microsoft-learn-educators-course-plan
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers
+- learn.wwl.get-tips-tricks-teach-mb-910-dynamics-365-fundamentals
+trophy:
+  uid: learn.wwl.prepare-teach-mb-910-microsoft-dynamics-365-fundamentals.trophy
