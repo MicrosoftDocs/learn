@@ -90,7 +90,8 @@ EXEC sys.sp_cdc_disable_table
 @capture_instance = N'dbo_MyTable'
 ```
 
-> [!NOTE] It is *not* necessary to disable individual tables before you disable the database.
+> [!NOTE]
+> It is *not* necessary to disable individual tables before you disable the database.
 
 ### Disabling CDC on your database
 
@@ -101,7 +102,8 @@ EXEC sys.sp_cdc_disable_db
 GO
 ```
 
-> [!NOTE] If a change data capture enabled database is dropped, change data capture jobs are automatically removed.
+> [!NOTE]
+> If a change data capture enabled database is dropped, change data capture jobs are automatically removed.
 
 ## Querying the change tables for changes
 

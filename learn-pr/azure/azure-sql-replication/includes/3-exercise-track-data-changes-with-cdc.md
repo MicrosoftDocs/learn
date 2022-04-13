@@ -157,7 +157,8 @@ Once you enable CDC on the database, you'll notice the CDC artifacts being creat
 
     The column __$operation records the operation that is associated with the change: 1 = delete, 2 = insert, 3 = update (before image), and 4 = update (after image).
 
-    > [!NOTE] In case you don't see the change data updated in the above table then you may wait for scheduler to run else you can run the scheduler manually (`EXEC sys.sp_cdc_scan`) and check again.
+    > [!NOTE]
+    > In case you don't see the change data updated in the above table then you may wait for scheduler to run else you can run the scheduler manually (`EXEC sys.sp_cdc_scan`) and check again.
 
 5. Let’s try out one more type of DML operation, this time an update statement.
 
@@ -180,7 +181,8 @@ EXEC sys.sp_cdc_disable_table
 @capture_instance = N'SalesLT_Customer'
 ```
 
-> [!NOTE] It is *not* necessary to disable individual tables before you disable the database.
+> [!NOTE]
+> It is *not* necessary to disable individual tables before you disable the database.
 
 ### Disable CDC on your database
 
