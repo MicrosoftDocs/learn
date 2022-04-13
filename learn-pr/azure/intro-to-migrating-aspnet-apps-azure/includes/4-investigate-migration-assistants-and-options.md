@@ -20,7 +20,7 @@ You can use Azure App Service to host your ASP.NET application in an App Service
 
 :::image type="content" source="../media/4-web-app-azure.png" alt-text="Web app architecture hosted on Azure with app plan, DNS, resource group, and databases.":::
 
-The app will user other resources as well, such as:
+The app will use other resources as well, such as:
 
 - Networking resources to provide access to the web application through the standard port 80 or HTTPS port 443. Networking also provides options for DNS and public IP addressing configurations.
 - Monitoring and logging options for the service.
