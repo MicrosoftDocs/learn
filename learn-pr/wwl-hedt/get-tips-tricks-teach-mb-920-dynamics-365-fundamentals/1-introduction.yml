@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.describe-basic-security-capabilities-azure.introduction
+uid: learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.introduction
 title: Introduction
 metadata:
-  title: Introduction
+  title: 1-introduction.md
   description: "Introduction"
-  ms.date: 04/13/2022
+  ms.date: 04/12/2022
   author: wwlpublish
-  ms.author: ceperezb
+  ms.author: tsheppard
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
