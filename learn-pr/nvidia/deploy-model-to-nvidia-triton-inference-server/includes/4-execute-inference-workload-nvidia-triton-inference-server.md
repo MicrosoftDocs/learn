@@ -50,5 +50,3 @@ If the model detects the objects it was trained on, the Python script will creat
     ```
 
     This command will copy all of the files from the Ubuntu virtual machine to your local device for viewing.
-
-    :::image type="content" source="../media/4-annotated-image.png" alt-text="A screenshot showing an annotated image processed by the NVIDIA Triton Inference Server." lightbox="../media/4-annotated-image.png":::

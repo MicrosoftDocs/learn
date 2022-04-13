@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.nvidia.deploy-model-nvidia-triton-inference-server.5-knowledge-check
+uid: learn.nvidia.deploy-model-nvidia-triton-inference-server.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -23,23 +23,29 @@ quiz:
       explanation: Correct. These frameworks are all supported by the NVIDIA Triton Inference Server.
     - content: 'Azure Machine Learning studio and Azure Cognitive Services.'
       isCorrect: false
-      explanation: Incorrect. NVIDIA Triton Inference Server may be able to consume model output from these services but does not interact with these services natively.
+      explanation: Incorrect. NVIDIA Triton Inference Server may be able to consume model output from these services but doesn't interact with these services natively.
     - content: 'Any Python based Machine Learning Framework.'
       isCorrect: false
-      explanation: Incorrect. While Python code and frameworks may be able to make requests for inference to an NVIDIA Triton Inference Server, it is up to the developer to implement that support.
-  - content: 'The NVIDIA Triton Inference Server can process ONNX workloads on both CPU and GPU based systems.'
+      explanation: Incorrect. While Python code and frameworks may be able to make requests for inference to an NVIDIA Triton Inference Server, it's up to the developer to implement that support.
+  - content: 'The NVIDIA Triton Inference Server can process ONNX workloads on ...'
     choices: 
-    - content: 'True'
+    - content: 'CPU and GPU equipped machines'
       isCorrect: true
       explanation: Correct. The NVIDIA Triton Inference Server can run ONNX workloads on CPU based systems and can take advantage of acceleration on systems with a GPU present.
-    - content: 'False'
+    - content: 'CPU equipped machines only'
       isCorrect: false
       explanation: Incorrect. The NVIDIA Triton Inference Server is able to adapt and run on ONNX workloads on both CPU and GPU based systems.
-  - content: 'Microsoft Azure supports GPU instances in the cloud as an option when deploying a virtual machine resource.'
+    - content: 'GPU equipped machines only'
+      isCorrect: false
+      explanation: Incorrect. The NVIDIA Triton Inference Server is able to adapt and run on ONNX workloads on both CPU and GPU based systems.
+  - content: 'Microsoft Azure supports GPU instances in the cloud as an option when deploying a virtual machine resource by specifying in the ...'
     choices: 
-    - content: 'True'
+    - content: 'Size options'
       isCorrect: true
       explanation: Correct. Microsoft Azure allows for GPU optimized virtual machines as a size option when deploying a virtual machine resource.
-    - content: 'False'
+    - content: 'Hardware capability options'
       isCorrect: false
-      explanation: Incorrect. Microsoft Azure supports various sizes of GPU optimized virtual machines.
+      explanation: Incorrect. Hardware capability options isn't a valid property when creating a virtual machine in Microsoft Azure'.
+    - content: 'Availability options'
+      isCorrect: false
+      explanation: Incorrect. Availability options allow for resiliency by replicating virtual machine instances across availability zones, this feature doesn't control whether GPU hardware is present.

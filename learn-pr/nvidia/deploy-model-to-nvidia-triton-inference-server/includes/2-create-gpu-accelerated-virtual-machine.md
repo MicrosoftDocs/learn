@@ -1,6 +1,6 @@
 The Microsoft Azure cloud offers many Virtual Machine sizes with various features.  [GPU optimized VM sizes](https://docs.microsoft.com/azure/virtual-machines/sizes-gpu) are specialized virtual machines available with single, multiple, or fractional GPUs. These sizes are designed for compute-intensive, graphics-intensive, and visualization workloads. In this section, we'll deploy a GPU Accelerated Virtual Machine to host an installation of the NVIDIA Triton Inference Server.  
 
-## Create a GPU Accelerated Virtual Machine
+## Create a GPU accelerated virtual machine
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ The Microsoft Azure cloud offers many Virtual Machine sizes with various feature
 
     1. The selected options at this point should look like the following.
     
-    :::image type="content" source="../media/2-basic-options-1.png" alt-text="The basic options up to this point are shown." lightbox="../media/2-basic-options-1.png":::
+        :::image type="content" source="../media/2-basic-options-1.png" alt-text="The basic options up to this point are shown." lightbox="../media/2-basic-options-1.png":::
 
     1. Supply a **Username** and **Password** for the **Administrator Account**.
     

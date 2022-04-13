@@ -4,8 +4,6 @@
 
 - [Azure Free Trial Account](https://azure.microsoft.com/free/)
 
-> [!VIDEO https://www.youtube.com/embed/1kOaYiNVgFs]
-
 ## Scenario: Deploy a production model to NVIDIA Triton Server for inference processing
 
 You're a data scientist who has been assigned the task of improving automation in a manufacturing facility using computer vision. Your team has developed an ONNX based object detection model using [Azure Machine Learning studio](https://ml.azure.com/) and is ready to put that model into production. [NVIDIA Triton Inference Server](https://developer.nvidia.com/nvidia-triton-inference-server) has been chosen as the inference processor due to it's ability to run the ONNX format on CPU or GPU based hardware.  Your team will target a cloud-hosted virtual machine to run the model, which will allow you to perform inference on image frames that are received from the production environment.

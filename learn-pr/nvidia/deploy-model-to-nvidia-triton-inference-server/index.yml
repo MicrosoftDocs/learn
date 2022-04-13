@@ -28,11 +28,11 @@ products:
 - azure
 - azure-machine-learning
 units:
-- learn.nvidia.deploy-model-nvidia-triton-inference-server.1-introduction
-- learn.nvidia.deploy-model-nvidia-triton-inference-server.2-create-gpu-accelerated-virtual-machine
-- learn.nvidia.deploy-model-nvidia-triton-inference-server.3-install-prerequisites-nvidia-triton-inference-server
-- learn.nvidia.deploy-model-nvidia-triton-inference-server.4-execute-inference-workload-nvidia-triton-inference-server
-- learn.nvidia.deploy-model-nvidia-triton-inference-server.5-knowledge-check
-- learn.nvidia.deploy-model-nvidia-triton-inference-server.6-summary
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.introduction
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.create-gpu-accelerated-virtual-machine
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.install-prerequisites-nvidia-triton-inference-server
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.execute-inference-workload-nvidia-triton-inference-server
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.knowledge-check
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.summary
 badge:
   uid: learn.nvidia.deploy-model-to-nvidia-triton-inference-server.badge
