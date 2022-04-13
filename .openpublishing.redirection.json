@@ -12510,6 +12510,96 @@
       "source_path": "learn-pr/wwl-sci/describe-compliance-management-capabilities-microsoft/2-describe-common-compliance-needs.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/3-describe-shared-responsibility-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/2-describe-shared-responsibility-model",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/4-describe-defense-depth.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/3-describe-defense-depth",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/2-describe-zero-trust-methodology.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/4-describe-zero-trust-model",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/5-describe-common-threats.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/6-describe-ways-encryption-hashing-secure-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/5-describe-encryption-hashing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-concepts-methodologies/6a-describe-cloud-adoption-framework.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-security-concepts-methodologies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/5-describe-privileged-access-management.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-insider-risk-capabilities-microsoft-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-insider-risk-capabilities-microsoft-365/6-describe-customer-lockbox.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-insider-risk-capabilities-microsoft-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/2-describe-purpose-of-ediscovery.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/2-describe-ediscovery-solutions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/5a-describe-core-microsoft-365.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/3-describe-audit-solutions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/3-describe-content-search-tool.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/4-describe-core-ediscovery-workflow.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/5-describe-advanced-ediscovery-workflow.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/5b-describe-purpose-value-advanced-auditing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/4-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-ediscovery-capabilities-of-microsoft-365/7-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-ediscovery-capabilities-of-microsoft-365/5-summary-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/4-describe-azure-policy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-resource-governance-capabilities-azure/2-describe-azure-policy",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/2-describe-use-azure-resource-locks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-resource-governance-capabilities-azure/",
+      "redirect_document_id": false
     }
   ]
 }
