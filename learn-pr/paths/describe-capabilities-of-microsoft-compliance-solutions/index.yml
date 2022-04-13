@@ -3,7 +3,7 @@ uid: learn.wwl.describe-capabilities-of-microsoft-compliance-solutions
 metadata:
   title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft compliance solutions'
   description: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft compliance solutions'
-  ms.date: 10/09/2021
+  ms.date: 04/13/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -52,6 +52,7 @@ products:
 - m365
 modules:
 - learn.wwl.describe-compliance-management-capabilities-microsoft
+- learn.wwl.describe-compliance-management-capabilities-microsoft-365
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365
 - learn.wwl.describe-ediscovery-capabilities-of-microsoft-365

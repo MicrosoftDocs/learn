@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers.knowledge-check
+title: Knowledge check
+metadata:
+  title: 6-Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "As we teach students worldwide about Microsoft technologies and solutions, we must include students with diverse learning needs. By creating a digitally diverse learning community with bias-free communication and inclusive design methodology what are the diverse needs being addressed?"
+    choices:
+    - content: "Content, processes, methods, and products"
+      isCorrect: false
+      explanation: "Incorrect. As we teach students worldwide about Microsoft technologies and solutions, we must include students with diverse learning needs. More than 1 billion people around the world have a disability. While some disabilities may be visually apparent, others may not be, and at some point in our lives, many of us may experience a disability, whether it’s temporary or permanent. Microsoft is proudly designing technologies with built-in accessibility tools and features. We encourage you to create a digitally diverse learning community with bias-free communication and inclusive design methodology by accommodating students' diverse needs around: hearing, mobility, vision, and neurodiversity."
+    - content: "Skills, ideas, aides, and information"
+      isCorrect: false
+      explanation: "Incorrect. As we teach students worldwide about Microsoft technologies and solutions, we must include students with diverse learning needs. More than 1 billion people around the world have a disability. While some disabilities may be visually apparent, others may not be, and at some point in our lives, many of us may experience a disability, whether it’s temporary or permanent. Microsoft is proudly designing technologies with built-in accessibility tools and features. We encourage you to create a digitally diverse learning community with bias-free communication and inclusive design methodology by accommodating students' diverse needs around: hearing, mobility, vision, and neurodiversity."
+    - content: "Hearing, mobility, vision, and neurodiversity"
+      isCorrect: true
+      explanation: "Correct. As we teach students worldwide about Microsoft technologies and solutions, we must include students with diverse learning needs. More than 1 billion people around the world have a disability. While some disabilities may be visually apparent, others may not be, and at some point in our lives, many of us may experience a disability, whether it’s temporary or permanent. Microsoft is proudly designing technologies with built-in accessibility tools and features."
+  - content: "Which resource gives you the details related to the exam and the skills measured?"
+    choices:
+    - content: "Microsoft technical program page"
+      isCorrect: false
+      explanation: "Incorrect. The exam skills measured page gives you the details related to the exam and the skills measured."
+    - content: "Exam skills measured page"
+      isCorrect: true
+      explanation: "Correct. The exam skills measured page gives you the details related to the exam and the skills measured."
+    - content: "Exam preparation page"
+      isCorrect: false
+      explanation: "Incorrect. The exam skills measured page gives you the details related to the exam and the skills measured."
+  - content: "What is a typical feature of the Microsoft Fundamentals certification exams?"
+    choices:
+    - content: "The passing score is 800"
+      isCorrect: false
+      explanation: "Incorrect. The passing score is 700 out of 1000 points. Multiple-choice questions are a typical feature of the Microsoft Fundamentals exams and include: true or false, select one correct answer, or select multiple correct answers."
+    - content: "Case studies and labs"
+      isCorrect: false
+      explanation: "Incorrect. Case studies and labs are a good way to prepare for the certification exam but are not a feature of the Microsoft Fundamentals certification exams. Multiple-choice questions are a typical feature of the Microsoft Fundamentals exams and include: true or false, select one correct answer, or select multiple correct answers."
+    - content: "True or false, select one correct answer, or select multiple correct answers"
+      isCorrect: true
+      explanation: "Correct. Multiple-choice questions are a typical feature of the Microsoft Fundamentals exams and include: true or false, select one correct answer, or select multiple correct answers."
