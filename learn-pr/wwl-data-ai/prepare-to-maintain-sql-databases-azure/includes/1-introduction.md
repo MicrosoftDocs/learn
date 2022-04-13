@@ -12,3 +12,4 @@ At the end of this module, you will be able to:
 - Understand the role of Azure Database Administrator, and other data platform roles
 - Describe the key differences between the SQL Server-based database options in Azure
 - Describe other features for Azure SQL platforms available
+
