@@ -3,18 +3,18 @@ uid: learn.wwl.describe-security-management-capabilities-of-azure
 metadata:
   title: Describe security management capabilities of Azure
   description: "Describe security management capabilities of Azure"
-  ms.date: 12/03/2021
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe security management capabilities of Azure
-summary: Learn about the capabilities and benefits of Azure’s security management functionality, including Azure Security Center, Azure Defender, security baselines and more.
+summary: Learn about cloud security posture management and how Microsoft Defender for Cloud protects your cloud through secure score, recommendations, and enhanced features that provide cloud workload protection. You’ll also learn about security baselines in Azure.
 abstract: |
-  After completing this module, you will be able to:
-  - Describe the security management capabilities of Azure
-  - Describe the benefits and use cases of Azure Defender
-  - Learn about security baselines
+  After completing this module, you'll be able to:
+  - Describe cloud security posture management.
+  - Describe the capabilities of Microsoft Defender for Cloud
+  - Understand the Azure Security Benchmark and the security baselines in Azure.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -31,7 +31,6 @@ units:
 - learn.wwl.describe-security-management-capabilities-of-azure.introduction
 - learn.wwl.describe-security-management-capabilities-of-azure.describe-cloud-security-posture-management-cspm
 - learn.wwl.describe-security-management-capabilities-of-azure.describe-&amp;-explore-azure-security-center
-- learn.wwl.describe-security-management-capabilities-of-azure.describe-&amp;-explore-azure-secure-score
 - learn.wwl.describe-security-management-capabilities-of-azure.describe-benefit-use-cases-defender
 - learn.wwl.describe-security-management-capabilities-of-azure.baselines-for-azure
 - learn.wwl.describe-security-management-capabilities-of-azure.knowledge-check

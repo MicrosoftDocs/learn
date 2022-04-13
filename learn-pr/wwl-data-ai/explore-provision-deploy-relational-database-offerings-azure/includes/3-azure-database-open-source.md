@@ -18,11 +18,21 @@ PostgreSQL has its own query language called *pgsql*. This language is a variant
 
 The Azure Database for MySQL service includes high availability at no additional cost, and scalability as required. You only pay for what you use. Automatic backups are provided, with point-in-time restore.
 
-The server provides connection security to enforce firewall rules and, optionally, require SSL connections. Many server parameters enable you to configure server settings such as lock modes, maximum number of connections, and timeouts. 
+The server provides connection security to enforce firewall rules and, optionally, require SSL connections. Many server parameters enable you to configure server settings such as lock modes, maximum number of connections, and timeouts.
 
 Azure Database for MySQL provides a global database system that scales up to large databases without the need to manage hardware, network components, virtual servers, software patches, and other underlying components.
 
 Certain operations aren't available with Azure Database for MySQL. These functions are primarily concerned with security and administration. Azure manages these aspects of the database server itself.
+
+Azure Database for MySQL has two deployment options: Single Server and Flexible Server.
+
+### Azure Database for MySQL Flexible Server
+
+Azure Database for MySQL Flexible Server is a fully managed database as a service offering, with predictable performance and dynamic scalability. Flexible Server provides more granular control and flexibility over database management functions and configuration settings. Flexible server is the recommended deployment option for all new developments or migrations.
+
+### Azure Database for MySQL Single Server
+
+Azure Database for MySQL Single Server is a fully managed database as a service offering, with predictable performance and dynamic scalability. Single servers are best for existing applications already using single server.
 
 ### Benefits of Azure Database for MySQL
 
@@ -62,11 +72,15 @@ Azure Database for MariaDB delivers:
 
 Some features of on-premises PostgreSQL databases aren't available in Azure Database for PostgreSQL. These features are mostly concerned with the extensions that users can add to a database to perform specialized tasks, such as writing stored procedures in various programming languages (other than pgsql, which is available), and interacting directly with the operating system. A core set of the most frequently used extensions is supported, and the list of available extensions is under continuous review.
 
-Azure Database for PostgreSQL has two deployment options: Single-server and Hyperscale.
+Azure Database for PostgreSQL has three deployment options: Single Server, Flexible Server, and Hyperscale.
 
-### Azure Database for PostgreSQL single-server
+### Azure Database for PostgreSQL Single Server
 
-The single-server deployment option for PostgreSQL provides similar benefits as Azure Database for MySQL. You choose from three pricing tiers: Basic, General Purpose, and Memory Optimized. Each tier supports different numbers of CPUs, memory, and storage sizes—you select one based on the load you expect to support.
+The single-server deployment option for PostgreSQL provides similar benefits as Azure Database for MySQL. You choose from three pricing tiers: Basic, General Purpose, and Memory Optimized. Each tier supports different numbers of CPUs, memory, and storage sizes; you select one based on the load you expect to support.
+
+### Azure Database for PostgreSQL Flexible Server
+
+The flexible-server deployment option for PostgreSQL is a fully managed database service. It provides more control and server configuration customizations, and has better cost optimization controls.
 
 ### Azure Database for PostgreSQL Hyperscale (Citus)
 
@@ -74,8 +88,8 @@ Hyperscale (Citus) is a deployment option that scales queries across multiple se
 
 ### Benefits of Azure Database for PostgreSQL
 
-Azure Database for PostgreSQL is a highly available service. It contains built-in failure detection and failover mechanisms. 
+Azure Database for PostgreSQL is a highly available service. It contains built-in failure detection and failover mechanisms.
 
 Users of PostgreSQL will be familiar with the **pgAdmin** tool, which you can use to manage and monitor a PostgreSQL database. You can continue to use this tool to connect to Azure Database for PostgreSQL. However, some server-focused functionality, such as performing server backup and restore, aren't available because the server is managed and maintained by Microsoft.
 
-Azure Database for PostgreSQL records information about the queries run against databases on the server, and saves them in a database named *azure_sys*. You query the *query_store.qs_view* view to see this information, and use it to monitor the queries that users are running. This information can prove invaluable if you need to fine-tune the queries performed by your applications.
+Azure Database for PostgreSQL records information about queries run against databases on the server, and saves them in a database named *azure_sys*. You query the *query_store.qs_view* view to see this information, and use it to monitor the queries that users are running. This information can prove invaluable if you need to fine-tune the queries performed by your applications.

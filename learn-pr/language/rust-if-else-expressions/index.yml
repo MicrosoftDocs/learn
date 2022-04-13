@@ -3,7 +3,7 @@ uid: learn.language.rust-if-else-expressions
 metadata:
   title: Test conditions with if/else expressions in Rust
   description: Explore Rust compound data types like arrays, vectors, and hash maps. Discover how to use if/else statements to test conditions.
-  ms.date: 09/20/2021
+  ms.date: 01/14/2022
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial

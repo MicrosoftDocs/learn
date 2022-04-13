@@ -15,10 +15,11 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/6-configure-deploy-run-azure.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Web/sites"
-  hint: "Use the instructions above to create a web app and deploy your site."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Web/sites"
+#   hint: "Use the instructions above to create a web app and deploy your site."

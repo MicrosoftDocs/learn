@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.azure.gain-insights-data-kql
+metadata:
+  moduleType: standard
+  title: Gain insights from your data by using Kusto Query Language
+  description: "Learn how to write advanced queries in Kusto Query Language (KQL) by using the aggregation functions, the render operator, and variables."
+  ms.date: 03/30/2022
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Gain insights from your data by using Kusto Query Language
+summary: "Write advanced queries in Kusto Query Language to help you gain insights from your data. Use the aggregation functions `count`, `dcount`, `countif`, `sum`, `min`, `max`, `avg`, `percentiles`, and others. Communicate these results visually in charts."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Use the Kusto Query Language to gain insights from your data by using the aggregation functions `count`, `dcount`, `countif`, `sum`, `min`, `max`, `avg`, `percentiles`, and others
+    - Communicate query results visually using the `render` operator
+    - Assign variables by using a `let` statement
+prerequisites: |
+  - An Azure subscription. Create a [free Azure account](https://azure.microsoft.com/free/)
+  - Familiarity with database structures like tables, columns, and rows
+  - Familiarity with Kusto Query Language operators such as count, take, project, where, and sort
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate 
+roles: 
+  - business-analyst
+  - data-analyst
+  - data-scientist
+  - developer
+  - security-operations-analyst
+products: 
+- azure-data-explorer
+- azure
+units:
+- learn.azure.gain-insights-data-kql.introduction
+- learn.azure.gain-insights-data-kql.group-data-aggregate-functions
+- learn.azure.gain-insights-data-kql.exercise-connect-to-resources
+- learn.azure.gain-insights-data-kql.exercise-count-events-count-function
+- learn.azure.gain-insights-data-kql.exercise-visualize-data-render-operator
+- learn.azure.gain-insights-data-kql.exercise-summarize-data-aggregate-functions
+- learn.azure.gain-insights-data-kql.exercise-introduce-variables-let-statement
+- learn.azure.gain-insights-data-kql.challenge
+- learn.azure.gain-insights-data-kql.solution
+- learn.azure.gain-insights-data-kql.knowledge-check
+- learn.azure.gain-insights-data-kql.summary
+badge:
+  uid: learn.azure.gain-insights-data-kql.badge
