@@ -10,6 +10,6 @@ metadata:
   ms.author: abhtiwar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
