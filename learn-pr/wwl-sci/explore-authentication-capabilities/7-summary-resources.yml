@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-authentication-capabilities-of-azure-ad.summary-resources
-title: Summary & resources
+title: Summary and resources
 metadata:
-  title: Summary & resources
-  description: "Summary & resources"
-  ms.date: 01/07/2022
+  title: Summary and resources
+  description: "Summary and resources"
+  ms.date: 04/13/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-summary-resources.md)]
+  [!include[](includes/7-summary-resources.md)]
