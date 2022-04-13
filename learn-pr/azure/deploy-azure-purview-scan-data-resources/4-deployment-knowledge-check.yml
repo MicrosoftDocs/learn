@@ -28,58 +28,36 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which component is responsible for storing and serving metadata, lineage, classifications, and other annotations associated with data assets?"
     choices:
-    - content: ""
+    - content: "Data Policies"
+      isCorrect: false
+      explanation: "Data policies in Azure Purview enable you to manage access to different data systems across your data estate."
+    - content: "Data Map"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "The Azure Purview data map provides the foundation for storing and serving metadata about your data estate."
+    - content: "Data Insights"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Insights provides customers a single pane of glass view into their data catalog with several pre-canned reports."
+  - content: "Which of the following Azure Purview components is elastic, auto-scales, and always on?"
     choices:
-    - content: ""
+    - content: "Data Map (Capacity Units)"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Azure Purview accounts come provisioned with a Data Map of at least 1 Capacity Unit, is always on, and elastically scales based on request load."
+    - content: "Scanning (vCore Hours)"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Billing for automated population of the Data Map via scanning is serverless and based on the duration of scans or ingestion jobs."
+    - content: "Resource Sets (vCore Hours)"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Billing for processing resource set data assets is serverless and based on the duration of processing."
+  - content: "Which of the following Azure Purview components is billed based on vCore Hours consumed?"
     choices:
-    - content: ""
+    - content: "Data Map"
+      isCorrect: false
+      explanation: "Azure Purview accounts come provisioned with a Data Map of at least 1 Capacity Unit, is always on, and elastically scales based on request load."
+    - content: "Scanning"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Billing for automated population of the Data Map via scanning is serverless, measured in vCore Hours, and based on the duration of scans or ingestion jobs."
+    - content: "Business Glossary"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "The glossary consists of business terms that can be related to each other and mapped to data assets."
