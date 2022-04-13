@@ -36,7 +36,7 @@ Organizations that fail to protect data in transit are more susceptible to man-i
 
 ## Data discovery
 
-Data discovery and classification (currently in preview) provides advanced capabilities built into Azure SQL Database for discovering, classifying, labeling and protecting sensitive data (such as business, personal data (PII), and financial information) in your databases. Finding and classifying this data can play a pivotal role in your organizational information protection stature. It can serve as infrastructure for:
+Data discovery and classification (currently in preview) provides advanced capabilities built into Azure SQL Database for discovering, classifying, labeling and protecting sensitive data (such as business, personal data (customer content), and financial information) in your databases. Finding and classifying this data can play a pivotal role in your organizational information protection stature. It can serve as infrastructure for:
 
 * Helping meet data privacy standards and regulatory compliance requirements
 * Addressing various security scenarios such as monitoring, auditing, and alerting on anomalous access to sensitive data
@@ -49,7 +49,7 @@ Data discovery and classification introduces a set of advanced services and SQL 
 * **Discovery and recommendations**: The classification engine scans your database and identifies columns containing potentially sensitive data. It then provides you with a more natural way to review and apply the appropriate classification recommendations via the Azure portal.
 * **Labeling**: Sensitivity classification labels can be persistently tagged on columns using new classification metadata attributes introduced into the SQL Server Engine. You can then use this metadata for advanced sensitivity-based auditing and protection scenarios.
 * **Query result set sensitivity**: The sensitivity of the query result set is calculated in real time for auditing purposes.
-* **Visibility** - You can view the database classification state in a detailed dashboard in the Azure portal. Additionally, you can download a report (in Microsoft Excel format) that you can use for compliance and auditing purposes, in addition to other needs.
+* **Visibility**: You can view the database classification state in a detailed dashboard in the Azure portal. Additionally, you can download a report (in Microsoft Excel format) that you can use for compliance and auditing purposes, in addition to other needs.
 
 ### Steps for discovery, classification, and labeling
 
