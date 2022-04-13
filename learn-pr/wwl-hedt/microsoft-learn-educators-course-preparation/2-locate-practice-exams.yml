@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-learn-educators-course-preparation.locate-practice-exams
+title: Locate practice exams
+metadata:
+  title: 2-Locate practice exams
+  description: "Locate practice exams"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-locate-practice-exams.md)]
