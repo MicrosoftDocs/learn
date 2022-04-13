@@ -1,62 +1,90 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+# Azure Purview Workshop
 
-    Goal: orient the learner to the area covered in this module
+## What is Azure Purview?
 
-    Heading: none
+Azure Purview is a unified data governance service that helps you manage and govern your on-premises, software-as-a-service (SaaS) data as well as multicloud (Azure, GCP, AWS, and many more cloud providers converged into a holistic unified Data Governance experience). Easily create a comprehensive, up-to-date map of your data landscape with automated data discovery, sensitive data classification, end-to-end data lineage, insights reports, business glossary, and approval workflows support. Empower data consumers, CDOs, data stewards, experts, BI and analytics admins to find valuable, trustworthy data and where it is located.
 
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
+### How does Azure Purview benefit a CDO ?
 
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
+Azure Purview helps CDOs, data analysts, BI engineers, data stewards, givernance experts and admins to answer these kinds of questions - 
 
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+- What data does my org have? 
+- Where did this data originate?
+- Where is data stored? 
+- What’s my exposure to risk?
+- Is my usage compliant? 
+- How do I control access & use?
+- What is required by regulation X (read GDPR, CELA, HIPAA) etc.?
+- What data is being collected? 
+- For what business purpose?
+- Where is the sensitive data?   
 
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=master#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
-## What will we be doing?
-TODO: add your activities
-
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
-
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
+By the end of this session, you'll be able to understand and appreciate the salient features of Azure Purview service and how it encompasses a wide range of data sources across on-prem, multi-cloud (Azure, GCP, AWS), and 30+ varieties of databases and 10+ different file types including JSON, CSV, TSV, TXT, Parquet etc.
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+Goal: This learn module will walk you through the steps to set up Azure Purview and highlight the salient features supported by Azure Purview Data Catalog as we go along.
+
+## Prerequisites
+
+* An [Azure account](https://azure.microsoft.com/en-us/free/) with an active subscription.
+* Owner permissions within a Resource Group to create resources and manage role assignments.
+
+## Example Scenario
+Scenario: The CDO (Chief Data Officer) of Fabrikam Corp Inc. wants to set up a daily dashbaord view of what percentage of data across the company's data estate is classified as "Sensitive" and "Confidential".
+
+Problem: "Suppose you work at an athletic shoe company named Fabrikam Corp Inc as a business intelligence and analytics engineer. The CDO of your company has assigned to you the task of setting up a daily dashbaord view of what percentage of data across the company's data estate is classified as "Sensitive" and "Confidential".
+
+Purview Solutioning: "During Purview's scanning process, Purview's classification engine will determine and apply classifications on each table or schema level hosted in the data estate. The Insights feature will help you build reports to view detailed analytics on each of the classified data sources, databases or files as well as what classifications and sensitivity labels were applied. You may even use Purview Insights APIs to build custom reports using and data visualization tools such as Power BI or Tableau etc."
+
+## Prepare environment
+
+To provide data for Azure Purview to classify, we will set up an ADLS Gen 2 account with some sample data. Follow the steps below to create the resource.
+
+1. Sign in to the [Azure portal](https://portal.azure.com) with your Azure account.
+
+1. Select **Create a resource**.
+1. Search for and select **Storage account**.
+1. Select the **Storage account** plan, and select **Create**.
+1. Select an existing resource group, or create a new one.
+1. Create a unique storage account name.
+1. Select **Standard** performance.
+1. Select **Locally-redundant storage**.NET
+1. Select **Next: Advanced**.
+1. Select **Enable hierarchical namespace**.
+1. Select **Review + create**.
+1. Download and install [Azure Storage Explorer](https://azure.microsoft.com/en-us/features/storage-explorer/).
+1. Open Azure Storage Explorer.
+1. Sign in to Azure via **View > Account Management > Add an account...**.
+1. Download a copy of the **[Bing Coronavirus Query Set](https://github.com/tayganr/purviewlab/raw/main/assets/BingCoronavirusQuerySet.zip)** to your local machine. Note: This data set was originally sourced from [Microsoft Research Open Data](https://msropendata.com/datasets/c5031874-835c-48ed-8b6d-31de2dad0654).
+
+1. Locate the downloaded zip file via File Explorer and unzip the contents by right-clicking the file and selecting **Extract All...**.
+
+    :::image type="content" source="../media/02.10-explorer-unzip.png" alt-text="<alt text>":::
+
+1. Select **Extract**.
+
+    :::image type="content" source="../media/02.11-explorer-extract.png" alt-text="<alt text>":::
+
+1. Open Azure Storage Explorer, select the Toggle Explorer icon, expand the Azure Subscription to find your Azure Storage Account. Right-click on Blob Containers and select **Create Blob Container**. Name the container **raw**.
+
+    :::image type="content" source="../media/02.12-explorer-container.png" alt-text="<alt text>":::
+
+1. With the container name selected, select the **Upload** button and select **Upload Folder...**.
+
+    :::image type="content" source="../media/02.13-explorer-upload.png" alt-text="<alt text>":::
+
+1. Select the **ellipsis** to select a folder.
+
+    :::image type="content" source="../media/02.14-explorer-browse.png" alt-text="<alt text>":::
+
+1. Navigate to the extracted **BingCoronavirusQuerySet** folder (e.g. Downloads\BingCoronavirusQuerySet) and select **Select Folder**.
+
+    :::image type="content" source="../media/02.15-explorer-folder.png" alt-text="<alt text>":::
+
+1. Select **Upload**.
+
+    :::image type="content" source="../media/02.16-explorer-data.png" alt-text="<alt text>":::
+
+1. Monitor the **Activities** until the transfer is complete.
+
+    :::image type="content" source="../media/02.17-explorer-transfer.png" alt-text="<alt text>":::
