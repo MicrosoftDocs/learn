@@ -31,37 +31,53 @@ To implement natural language understanding with Conversational Language Underst
     - **Azure Directory**: The Azure directory containing your subscription.
     - **Azure subscription**: Your Azure subscription.
     - **Language resource**: The Language resource you created previously.
-3. If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
-    1. On the bar at the top if the page, click the **Settings (&#9881;)** button.
-    2. On the **Settings** page, view the **Resources** tab.
-    3. Select your language resource, and click **Switch resource**.
-    4. At the top of the page, click **Language Studio** to return to the Language Studio home page.
-4. At the top of the portal, in the **Create new** menu, select **Conversational language understanding**.
-5. In the **Create a project** dialog box, in the **Choose project type** page, select **Conversation**, and click **Next**.
-6. On the **Enter basic information** page, enter the following details and click **Next**:
-    - **Choose project type**: *Conversation project*
-    - **Name**: HomeAutomation 
-        - Use this exact name
+
+    >[!TIP]
+    >If you are ***not*** prompted to choose a language resource, it may be because you have multiple Language resources in your subscription; in which case:
+        1. On the bar at the top if the page, click the **Settings (&#9881;)** button.
+        2. On the **Settings** page, view the **Resources** tab.
+        3. Select your language resource, and click **Switch resource**.
+        4. At the top of the page, click **Language Studio** to return to the Language Studio home page.
+3. At the top of the portal, in the **Create new** menu, select **Conversational language understanding**.
+
+4. In the **Create a project** dialog box, on the **Enter basic information** page, enter the following details and click **Next**:
+    - **Name**: HomeAutomation
     - **Description**: Simple home automation
     - **Utterances primary language**: English
     - **Enable multiple languages in project**: *Do not select*
-7. On the *Review and finish* page, click **Create**. 
 
-### Create intents and entities
+    ![Enter details for the project.](../media/create-project.png)
+
+5. On the *Review and finish* page, click **Create**. 
+
+### Create intents, utterances, and entities
 
 An *intent* is an action you want to perform - for example, you might want to switch on a light, or turn off a fan. In this case, you'll define two intents: one to switch on a device, and another to switch off a device. For each intent, you'll specify sample *utterances* that indicate the kind of language used to indicate the intent.
 
-1. In the **Build schema** pane on the left, ensure that **Intents** is selected Then click **Add**, and add an intent with the name **switch_on** (in lower-case) and click **Add intent**.
+1. In the **Build schema** pane, ensure that **Intents** is selected Then click **Add**, and add an intent with the name **switch_on** (in lower-case) and click **Add intent**.
+
+    ![Click on add under Intents on the Build Schema pane.](../media/build-schema.png)
+    ![Add the switch_on intent then select Add intent.](../media/add-intent.png)        
 2. Select the **switch_on** intent. It will take you to the **Tag utterances** page. Next to the **switch_on** intent, type the utterance ***turn the light on*** and press **Enter** to submit this utterance to the list.
-3. The language service needs at least five different utterance examples for each intent to sufficiently train the language model. Now create a five more utterance examples for the **switch_on** intent:  
+
+    ![Add an utterance to the training set by typing in "turn the light on" under Utterance.](../media/add-utterance-on.png) 
+
+3. The language service needs at least five different utterance examples for each intent to sufficiently train the language model. Add five more utterance examples for the **switch_on** intent:  
     - ***switch on the fan***
     - ***put the fan on***
     - ***put the light on***
     - ***switch on the light***
     - ***turn the fan on***
-4. On the **Tagging entities for training** pane on the right-hand side of the screen, select **Tags**, then **Add entity**. Type **device** (in lower-case) and select **Done**. 
-5. In the *turn the light on* utterance, highlight the word "light". Then in the list that appears, in the *Search for an entity* box select **device**. 
-6. Do the same for the utterances with "fan" in them. Select the word "fan" and assign it to the **device** entity you created previously. Tag the rest of the *fan* or *light* utterances with the **device** entity. When you're finished, verify that you have the following utterances and make sure to select **Save changes**: 
+4. On the **Tagging entities for training** pane on the right-hand side of the screen, select **Tags**, then select **Add entity**. Type **device** (in lower-case), select **List** and select **Done**. 
+
+    ![Add an entity by selecting Tags on the Tagging entities for training panel, then select Add entity.](../media/add-entity.png) 
+    ![Type in device under Entity name and select List, then select Add entity.](../media/add-entity-device.png)        
+
+5. In the ***turn the fan on*** utterance, highlight the word "fan". Then in the list that appears, in the *Search for an entity* box select **device**. 
+
+    ![Highlight the word fan in the utterance and select device.](../media/switch-on-entity.png) 
+
+6. Do the same for all the utterances. Tag the rest of the *fan* or *light* utterances with the **device** entity. When you're finished, verify that you have the following utterances and make sure to select **Save changes**: 
 
 | **intent** | **utterance** | **entity** |
 | --------------- | ------------------ | ------------------ |
@@ -72,7 +88,12 @@ An *intent* is an action you want to perform - for example, you might want to sw
 | switch_on   | Switch on the fan   | Device - *select fan* |
 | switch_on   | Turn the light on   | Device - *select light* |
 
+![Once you are done, select Save changes.](../media/save-changes.png) 
+
 7. In the pane on the left, click **Build schema** and verify that your **switch_on** intent is listed. Then click **Add** and add a new intent with the name **switch_off** (in lower-case).
+
+    ![Return to the Build Schema screen and add a switch_off intent.](../media/add-switch-off.png) 
+
 8. Click on the **switch_off** intent. It will take you to the **Tag utterances** page. Next to the **switch_off** intent, add the utterance ***turn the light off***. 
 9. Add five more utterance examples to the **switch_off** intent. 
     - ***switch off the fan***
@@ -81,7 +102,7 @@ An *intent* is an action you want to perform - for example, you might want to sw
     - ***turn off the light***
     - ***switch the fan off***
 
-10. Assign the words *light* or *fan* with the **device** entity. When you're finished, verify that you have the following utterances and make sure to select **Save changes**:  
+10. Tag the words *light* or *fan* with the **device** entity. When you're finished, verify that you have the following utterances and make sure to select **Save changes**:  
 
 | **intent** | **utterance** | **entity** | 
 | --------------- | ------------------ | ------------------ |
@@ -107,11 +128,17 @@ Now you're ready to use the intents and entities you have defined to train the c
 To use your trained model in a client application, you must deploy it as an endpoint to which the client applications can send new utterances; from which intents and entities will be predicted.
 
 1. On the left-hand side of Language Studio, click **Deploy model**.
-2. Select your model name and click **Deploy Model**, and wait for it to be deployed.
-3. When the model is deployed, click **Test model** on the left-hand side of the page, and then select your model.
+2. Select your model name and click **Add deployment**. Use these settings: 
+    - **Create a new deployment name**: *Create a unique name*
+    - **Assign trained model to your deployment name**: *Select the name of the trained model*
+    Click **Submit**.
+
+3. When the model is deployed, click **Test model** on the left-hand side of the page, and then select your deployed model under **Deployment name**.
 4. Enter the following text, and then click **Run the test**:
 
     *switch the light on*
+
+    ![Test your model by selecting your deployed model, then entering text and selecting Run the test.](../media/test-model.png) 
 
     Review the result that is returned, noting that it includes the predicted intent (which should be **switch_on**) and the predicted entity (**device**) with confidence scores that indicates the probability the model calculated for the predicted intent and entity. The JSON tab shows the comparative confidence for each potential intent (the one with the highest confidence score is the predicted intent)
 
