@@ -1,10 +1,6 @@
-Legacy applications have relied on a single form of authentication, most often a password. However, passwords are problematic for users, and easily compromised. *Multi-factor authentication* requires more than one form of verification, such as a trusted device or a fingerprint scan, to prove that an identity is legitimate. It means that, even when an identity’s password has been compromised, a hacker can't access a resource.
+Multi-factor authentication requires more than one form of verification, such as a trusted device or a fingerprint scan, to prove that an identity is legitimate. It means that, even when an identity’s password has been compromised, a hacker can't access a resource.
 
 Multi-factor authentication dramatically improves the security of an identity, while still being simple for users. The extra authentication factor must be something that's difficult for an attacker to obtain or duplicate.
-
-The following video explains the problem with passwords, and why multi-factor authentication is so important.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zhD7]
 
 Azure Active Directory Multi-Factor Authentication works by requiring:
 
@@ -16,16 +12,19 @@ Multi-factor authentication verification prompts are configured to be part of th
 
 An administrator can require certain verification methods, or the user can access their MyAccount to edit or add verification methods.
 
-The following extra forms of verification can be used with Azure Active Directory Multi-Factor Authentication:
+The following additional forms of verification, described in the previous unit, can be used with Azure AD Multi-Factor Authentication:
 
 - Microsoft Authenticator app
+- Windows Hello for Business
+- FIDO2 security key
+- OATH hardware token (preview)
+- OATH software token
 - SMS
 - Voice call
-- OATH Hardware token
 
 :::image type="content" source="../media/2-microsoft-authenticator-app.png" alt-text="Microsoft authenticator app":::
 
-## Security defaults and multi-factor authentication
+### Security defaults and multi-factor authentication
 
 Security defaults are a set of basic identity security mechanisms recommended by Microsoft. When enabled, these recommendations will be automatically enforced in your organization. The goal is to ensure that all organizations have a basic level of security enabled at no extra cost. These defaults enable some of the most common security features and controls, including:
 
