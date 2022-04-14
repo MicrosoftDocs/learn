@@ -11,13 +11,13 @@ In the following exercise, you'll import an API into Azure API Management and ad
 
 ## Create a Redis cache
 
-In this module, we're using the Consumption tier for Azure API Management. This is because Azure configures API Management instances within a minute or so in this tier. Other tiers can take up to 30 minutes. The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. This tier doesn't have its own internal cache. We must create an external Redis cache and configure API Management to use a caching policy.
+In this module, we're using the Consumption tier for Azure API Management. That's because Azure configures API Management instances within a minute or so in this tier. Other tiers can take up to 30 minutes. The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. This tier doesn't have its own internal cache. We must create an external Redis cache and configure API Management to use a caching policy.
 
-Let's create a cache now. The process will be completed behind the scenes, while we take other steps:
+Let's create a cache now. This will allow the process to be completed behind the scenes, while we take other steps:
 
 1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), using the same login ID you used to activate the sandbox.
 
-1. Navigate to the Azure portal resource menu or the **Home** page, and select **Create a resource**. The **Create a resource** pane appears.
+1. Navigate to the Azure portal resource menu or the **Home** page, and select **Create a resource**. The **Create a resource** pane will appear.
 
 1. In the **Create a resource** menu, select **Databases**, and then search for and select **Azure Cache for Redis**. The **New Redis Cache** pane appears.
 
