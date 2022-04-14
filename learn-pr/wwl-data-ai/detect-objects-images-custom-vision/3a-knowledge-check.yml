@@ -19,7 +19,7 @@ quiz:
     - content: "A class label and probability score for the image"
       isCorrect: false
       explanation: "Incorrect: The classes returned by an object detection model are applicable to individual objects in the image, not the image as a whole"
-    - content: "Bounding box coordinates that indicate the region of the image where all of the objects it contains are located"
+    - content: "Bounding box coordinates that indicates the region of the image where all of the objects it contains are located"
       isCorrect: false
       explanation: "Incorrect: The bounding boxes returned by an object detection model indicates the location of a single object."
     - content: "A class label, probability, and bounding box for each object in the image"
