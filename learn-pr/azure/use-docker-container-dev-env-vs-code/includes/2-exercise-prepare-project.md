@@ -25,7 +25,7 @@ The project should now be open in Visual Studio Code.
 
 ## Install the Remote - Containers extension
 
-1. Select on the "Extensions" icon in the Activity Bar to open the **Extensions** viewlet.
+1. Select the "Extensions" icon in the Activity Bar to open the **Extensions** viewlet.
 
    :::image type="content" source="../media/extensions-icon.png" alt-text="Screenshot of the Visual Studio Code activity bar with Extension icon highlighted"::: <!-- no-loc -->
 
