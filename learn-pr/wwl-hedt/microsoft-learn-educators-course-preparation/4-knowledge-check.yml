@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-learn-educators-course-preparation.knowledge-check
+title: Knowledge check
+metadata:
+  title: 4-Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "If you are teaching the Microsoft Fundamentals courses which options are available to get trained?"
+    choices:
+    - content: "Microsoft Learn and Microsoft Virtual Training Days"
+      isCorrect: true
+      explanation: "Correct. Microsoft Learn offers free self-paced learning paths and modules with step-by-step tutorials and interactive coding environments. Microsoft Virtual Training Days are free, in-depth, virtual training events."
+    - content: "Microsoft Learn for Educators and Microsoft Virtual Training Days"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Learn offers free self-paced learning paths and modules with step-by-step tutorials and interactive coding environments. Microsoft Virtual Training Days are free, in-depth, virtual training events."
+    - content: "Microsoft Learn for Educators portal and Microsoft Virtual Training Days"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Learn offers free self-paced learning paths and modules with step-by-step tutorials and interactive coding environments. Microsoft Virtual Training Days are free, in-depth, virtual training events."
+  - content: "Where do you go to request certification practice tests and exam vouchers?"
+    choices:
+    - content: "Microsoft Learn"
+      isCorrect: false
+      explanation: "Incorrect. While Microsoft Learn offers free self-paced learning paths and modules with step-by-step tutorials and interactive coding environments, to request a practice exam or an exam voucher log into the Microsoft Learn for Educators portal."
+    - content: "Microsoft Learn for Educators"
+      isCorrect: false
+      explanation: "Incorrect. While Microsoft Learn for Educators is a program that provides faculty members and higher education institutions with free curriculum, training, and tools for teaching technical skills, to request a practice exam or an exam voucher log into the Microsoft Learn for Educators portal."
+    - content: "Microsoft Learn for Educators portal"
+      isCorrect: true
+      explanation: "Correct. To request a practice exam or an exam voucher log into the Microsoft Learn for Educators portal."
+  - content: "How can you take an advanced role-based certification exam?"
+    choices:
+    - content: "Certiport Authorized Testing Center"
+      isCorrect: false
+      explanation: "Incorrect. If you are taking a Microsoft Fundamentals Certification exam you can test at a PearsonVUE Testing Center or through a Certiport Authorized Testing Center, however if you are taking an advanced role-based certification exam, you will need to take your exam at a PearsonVUE Testing Center or use the Online Proctoring option."
+    - content: "Microsoft Learn for Educators testing center"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Learn for Educators does not offer certification exam testing. If you are taking an advanced role-based certification exam, you will need to take your exam at a PearsonVUE Testing Center or use the Online Proctoring option."
+    - content: "PearsonVUE Testing Center or Online Proctoring"
+      isCorrect: true
+      explanation: "Correct. If you are taking an advanced role-based certification exam, you will need to take your exam at a PearsonVUE Testing Center or use the Online Proctoring option."

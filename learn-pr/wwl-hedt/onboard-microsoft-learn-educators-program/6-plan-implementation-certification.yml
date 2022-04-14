@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.onboard-microsoft-learn-educators-program.implementation-certification
+title: Plan for implementation and certification
+metadata:
+  title: 6-Plan for implementation and certification
+  description: "Plan for implementation and certification"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-plan-implementation-certification.md)]
