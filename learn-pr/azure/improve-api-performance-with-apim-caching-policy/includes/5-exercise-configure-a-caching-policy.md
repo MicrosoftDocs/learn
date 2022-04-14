@@ -13,7 +13,7 @@ In the following exercise, we'll import an API into Azure API Management and add
 
 In this module, we're using the Consumption tier for Azure API Management. That's because Azure configures API Management instances within a minute or so for this tier. Other tiers can take up to 30 minutes. The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. This tier doesn't have its own internal cache. Instead, we must create an external Redis cache and configure API Management to use a caching policy.
 
-Let's create a cache now. This allows the process to run behind the scenes, while we work on other steps:
+Let's create a cache now. That will allow the set up to run behind the scenes, while we work on other steps:
 
 1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), using the same login ID you used to activate the sandbox.
 
@@ -40,7 +40,7 @@ Let's create a cache now. This allows the process to run behind the scenes, whil
 
 ## Create a Web API in Azure Apps Service
 
-Now, let's deploy the sample Web API to Azure App Service:
+Now let's deploy the sample Web API to Azure App Service:
 
 1. Run the following command in Azure Cloud Shell, to clone the sample Web API:
 
@@ -55,9 +55,9 @@ Now, let's deploy the sample Web API to Azure App Service:
     bash setup.sh
     ```
 
-1. The script has seven parts that take several minutes to run. When the script is complete, three urls will be displayed:
+1. The script has seven parts that take several minutes to run. When the script is complete, you will see three urls displayed:
 
-    - Web API test URL for testing the Web API.
+    - A Web API test URL for testing the Web API.
     - A Swagger URL for the Swagger UI.
     - A Swagger JSON URL for the OpenAPI definition.
 
@@ -65,13 +65,13 @@ Now, let's deploy the sample Web API to Azure App Service:
 
 ## Test the deployed Web API
 
-Check to be sure the Web API has deployed successfully in Azure Cloud Shell. When deployment is complete, you'll be able to test it. Tests can be performed in the Web API by submitting a GET request in the browser or by checking the OpenAPI definition. These tests will run against the Web API in the **azurewebsites.net** domain, before it's been added to API Management:
+Check to be sure the Web API has deployed successfully in Azure Cloud Shell. When deployment is complete, you'll be able to test it. Tests can be performed in the Web API by submitting a GET request in the browser or by checking the OpenAPI definition. These tests will run against the Web API in the **azurewebsites.net** domain, before it's added to API Management:
 
-1. Navigate to the Azure portal resource menu or the **Home** page, and select **All resources**. Then select the App Service resource type. The **BoardGamingAPI123aa456789** App Service pane appears (the numbers at the end will differ for your implementation).
+1. Navigate to the Azure portal resource menu or the **Home** page, and select **All resources**. Then select the App Service resource. The **BoardGamingAPI123aa456789** App Service pane appears (the numbers at the end will differ for your implementation).
 
 1. As a test, select **Browse** in the command bar of the **Overview** tab. Notice the error message. The browser displays a **No webpage found for this address**, message. This occurs because the Web API doesn't implement an Azure website user interface.
 
-1. In a new browser tab, paste the Web API test URL that you previously copied, and press <kbd>Enter</kbd>. The browser displays a response in JSON format. Notice that the result includes the server time with the label **quotePreparedTime**.
+1. In a new browser tab, paste the Web API test URL that you previously copied, and press <kbd>Enter</kbd>. The browser displays a response in JSON format. Notice that the result includes the server time, with the label **quotePreparedTime**.
 
 1. In a second browser tab, paste the Swagger URL that you copied previously, then press <kbd>Enter</kbd>. The browser will display the Swagger page for your *Board Gaming API*. Keep this browser tab open for later use.
 
@@ -111,7 +111,7 @@ Check to ensure that the Redis cache deployment is complete. If so, you can now 
 
 1. Navigate to the Azure portal resource menu or the **Home** page, and select **All resources**. Then select the *Azure Cache for Redis* resource type. An **Azure Cache for Redis** pane will appear.
 
-1. Check the status message, found just below the **Essentials** headline. The resource should have a status of **Running**. If not, continue to check the status every few minutes, by clicking the **Refresh** link. Wait until the Redis cache deployment is complete before proceeding.
+1. Check the status message, which can be found just below the **Essentials** headline. The resource should have a status of **Running**. If not, continue to check the status every few minutes, by clicking the **Refresh** link. Wait until the Redis cache deployment is complete before proceeding.
 
 1. Select **Access Keys**, in the **Azure Cache for Redis** menu. This is found under **Settings** in the left navigation. The **Access keys** pane will appear for the Azure Cache for Redis instance that you just created.
 
@@ -133,7 +133,7 @@ Check to ensure that the Redis cache deployment is complete. If so, you can now 
 
     The external cache you just created is now listed on the External cache page for your API Management service.
 
-## Add the API in API Management
+## Add the API to API Management
 
 We must apply a policy to enable users to access the API. However before you can apply a policy, you must add the API to the API Management instance.
 
@@ -197,7 +197,7 @@ We can now enable caching. This is done by adding policies to inbound processing
 
 ## Test the cache
 
-We'll run the same test on the API in API Management and observe the results of the cache.
+We'll run the same test on the API in API Management and review the results.
 
 1. Select your API Management service, then click the **APIs** link. Then select the **Test** tab and choose the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane will appear.
 
@@ -217,7 +217,7 @@ We'll run the same test on the API in API Management and observe the results of 
 
 1. Review the results. Notice that the precise time has been included in the *HTTP response*.
 
-1. Click **Send** again to re-send the request. Notice that the time value in the response hasn't changed. That's because a cached response was served.
+1. Click **Send** again to repeat the request. Notice that the time value in the response hasn't changed. That's because a cached response was served.
 
 ## Configure cache to vary results based on a query parameter
 
@@ -285,4 +285,4 @@ The cache will now deliver unique responses depending upon the *Height* query pa
 
 1. Click **Send**.
 
-1. Review the results. This time, although the Width query parameter was changed, the result didn't change.  cached response was served.
+1. Review the results. This time, although the Width query parameter was changed, the result didn't change. A cached response was served.
