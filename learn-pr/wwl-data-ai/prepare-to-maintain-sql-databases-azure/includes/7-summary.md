@@ -3,6 +3,6 @@ Microsoft provides a great deal of options for deploying SQL Server to Azure. Mi
 
 Now that you've reviewed this module, you should be able to:
 
-- Understand the role of Azure Database Administrator, as well as other data platform roles.
-- Explain the key differences between the SQL Server-based database options in Azure.
-- Describe open-source SQL database platforms available on Azure.
+- Understand the role of Azure Database Administrator, and other data platform roles
+- Describe the key differences between the SQL Server-based database options in Azure
+- Describe other features for Azure SQL platforms available
