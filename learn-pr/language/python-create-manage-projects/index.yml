@@ -3,7 +3,7 @@ uid: learn.beginner-python.create-manage-projects
 metadata:
   title: Create and manage projects in Python
   description: Learn how to use virtual environments and packages as you create and manage projects in Python.
-  ms.date: 12/02/2021
+  ms.date: 02/15/2022
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
