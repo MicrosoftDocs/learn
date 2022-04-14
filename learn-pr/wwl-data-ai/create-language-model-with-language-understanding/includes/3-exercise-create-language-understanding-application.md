@@ -179,8 +179,8 @@ Now let's open and edit a pre-written script, which will run the client applicat
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
    
->[!NOTE]
->If you already used this command in another lab to clone the *ai-900* repository, you can skip this step.
+    >[!NOTE]
+    >If you already used this command in another lab to clone the *ai-900* repository, you can skip this step.
 
 2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in this folder and work with them. Type the following commands into the shell: 
 
