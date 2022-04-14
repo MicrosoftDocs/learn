@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.data-management-analytics.knowledge-check-data-management-landing-zone
+title: Knowledge Check - Data Management Landing Zone
+metadata:
+  unitType: knowledge_check
+  title: knowledge-check-data-management-landing-zone
+  description: "enterprise scale data management and analytics scenario"
+  ms.date: 1/28/2022
+  author: lapate
+  ms.author: lapate
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: "What is Data Management Landing zone classified as?"
+    choices:
+    - content: "A centralized management function"
+      isCorrect: true
+      explanation: "The data management landing zone is classified as a management function and is central to the data management and analytics scenario. It's responsible for the governance of the platform and enables communication to ingest data sources from Azure, third-party clouds, and on-premises data sources."
+    - content: "A place to explore data management"
+      isCorrect: false
+      explanation: ""
+    - content: "A physical location in the data center"
+      isCorrect: false
+      explanation: ""
+    - content: "None of the above"
+      isCorrect: false
+      explanation: ""
+  - content: "Which Azure resource is provisioned for centralized data governance as part of the deployment?"
+    choices:
+    - content: "Azure SQL server database"
+      isCorrect: false
+      explanation: ""
+    - content: "Azure Purview"
+      isCorrect: true
+      explanation: "Data management and analytics scenario relies on Azure Purview to serve as: System of registration, Discovery for enterprise data sources, Data classification engine, Policy store, API for registering and reading data information, Compliance dashboard hub"
+    - content: "Azure Databricks Workspace"
+      isCorrect: false
+      explanation: ""
+    - content: "None of the above"
+      isCorrect: false
+      explanation: ""
+  - content: "What resource group is created to host automation account"
+    choices:
+    - content: "XXX-XXXX-azautomate"
+      isCorrect: false
+      explanation: ""
+    - content: "XXX-XXXX-automation"
+      isCorrect: true
+      explanation: "Data management and analytics scenario creates three resource groups to help with the creation of your custom onboarding solutions for your data estate. Typically, user interfaces are in the 'governance' resource group. The application layer and database are in automation and automationdb, respectively."
+    - content: "XXX-dev-automatic"
+      isCorrect: false
+      explanation: ""
+    - content: "All of the above"
+      isCorrect: false
+      explanation: ""  

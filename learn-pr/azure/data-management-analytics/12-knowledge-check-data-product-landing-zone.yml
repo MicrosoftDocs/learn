@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.data-management-analytics.knowledge-check-data-product-landing-zone
+title: Knowledge Check - Data Product Landing Zone
+metadata:
+  unitType: knowledge_check
+  title: knowledge-check-data-product-landing-zone
+  description: "enterprise scale data management and analytics scenario"
+  ms.date: 1/28/2022
+  author: lapate
+  ms.author: lapate
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: What is the significance of Data Product? "
+    choices:
+    - content: "It's a computes or polyglot persistence service"
+      isCorrect: false
+      explanation: ""
+    - content: "It combines functionality or one more data services and presents it as a single service for consumer"
+      isCorrect: false
+      explanation: ""
+    - content: "It's tied to providing a business value, for example,  reports, workbooks, bespoke database, or data API"
+      isCorrect: false
+      explanation: ""
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "At a high level, data products are computed or polyglot persistence services that might be required depending on certain use cases. A data product is anything that drives business value, for example, reports, workbooks, bespoke database, or data API. It can use other services and technologies that aren't part of data landing zone core services. One example is reporting with niche requirements, such as compliance and tax reporting or specialized capabilities that address gaps in the baseline policies."
+
+  - content: Power BI in the Visualization layer is an example of Data Product? "
+    choices:
+    - content: "False"
+      isCorrect: false
+      explanation: ""
+    - content: "True"
+      isCorrect: true
+      explanation: "Visualization is a data product, and depending on the complexity, can be created via a self-serve process or managed by a data product team."

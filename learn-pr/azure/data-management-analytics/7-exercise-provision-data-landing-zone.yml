@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-management-analytics.exercise-provision-data-landing-zone
+title: Exercise Provision Data Landing Zone
+metadata:
+  unitType: exercise
+  title: 7-exercise-provision-data-landing-zone
+  description: "enterprise scale data management and analytics scenario"
+  ms.date: 1/28/2022
+  author: lapate
+  ms.author: lapate
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-exercise-provision-data-landing-zone.md)]
