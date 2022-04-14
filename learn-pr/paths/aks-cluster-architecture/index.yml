@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.aks-cluster-architecture
+metadata:
+  title: Azure Kubernetes Service (AKS) cluster architecture and operations
+  description: Azure Kubernetes Service (AKS) cluster architecture and operations
+  brand: azure
+  ms.date: 04/01/2022
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Kubernetes Service (AKS) cluster architecture and operations
+summary: |
+  In this learning path, you’ll understand some of the fundamental cluster architecture decisions you’ll be faced with and be given the tools to help you make decisions for them.  Likewise, you’ll learn about some of the governance and operations features available to AKS clusters.
+prerequisites: |
+  - An Azure subscription 
+  - Ability to use the Azure CLI 
+  - Ability to navigate the Azure portal 
+  - Basic knowledge of Kubernetes and its concepts 
+  - Basic knowledge of Azure Networking fundamentals 
+  - Basic knowledge of Azure Policy 
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- developer
+products:
+- azure
+modules:
+- learn.choose-best-networking-plugin-for-aks
+- learn.aks-network-design-azure-container-network-interface
+- learn.aks-cluster-upgrades-patches
+- learn.aks-governance-azure-policy
+trophy:
+  uid: learn.aks-cluster-architecture.trophy
