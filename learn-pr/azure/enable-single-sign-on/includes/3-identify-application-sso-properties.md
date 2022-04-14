@@ -1,6 +1,6 @@
-After successfully adding an application that supports single sign-on, properties must be configured for the it.
+After successfully adding an application that supports single sign-on, properties must be configured for it.
 
-Choose SAML single sign-on whenever possible for existing applications that do not use OpenID Connect or OAuth. The Azure AD SAML Toolkit application that was added supports both Linked and SAML based single sign-on methods.
+Choose SAML single sign-on whenever possible for existing applications that don't use OpenID Connect or OAuth. The `Azure AD SAML Toolkit` application that was added supports both Linked and SAML based single sign-on methods.
 
 To configure single sign-on for the application in the Azure portal:
 
@@ -11,13 +11,13 @@ To configure single sign-on for the application in the Azure portal:
 
 ## Define URLs
 
-The basic configuration for SAML-based single sign-on for an application requires these properties:
-
-- **Identifier (Entity ID)** - The unique ID that identifies your application to Azure Active Directory. This value must be unique across all applications in your Azure Active Directory tenant. It should follow the pattern of `https://{application-name}.azurewebsites.net`.
-- **Reply URL (Assertion Consumer Service URL)** - The location where the application expects to receive the authentication token. This is also referred to as the "Assertion Consumer Service" (ACS) in SAML. It should follow the pattern of `https://{application-name}.azurewebsites.net/SAML/Consume`.
-- **Sign on URL** - Sign on URL is used if you would like to perform service provider-initiated single sign-on. This value is the sign-in page URL for your application. This field is unnecessary if you want to perform identity provider-initiated single sign-on.
+The basic configuration for SAML-based single sign-on requires properties that are unique to the application. Refer to the integration documentation for the application to identify the appropriate values. The following properties are required:
 
 :::image type="content" source="../media/saml-urls.png" alt-text="Screenshot showing the URLs that need to be defined for SAML single sign-on." border="false":::
+
+- **Identifier (Entity ID)** - The unique ID that identifies your application to Azure Active Directory. This value must be unique across all applications in your Azure Active Directory tenant.
+- **Reply URL (Assertion Consumer Service URL)** - The location where the application expects to receive the authentication token. This is also referred to as the "Assertion Consumer Service" (ACS) in SAML.
+- **Sign on URL** - Sign on URL is used if you would like to perform service provider-initiated single sign-on. This value is the sign-in page URL for your application. This field is unnecessary if you want to perform identity provider-initiated single sign-on.
 
 Optional URLs that can be defined are:
 
@@ -28,7 +28,7 @@ Optional URLs that can be defined are:
 
 When a user authenticates to an application using the SAML 2.0 protocol, a token is sent to the application by using an HTTP POST. And then, the application validates and uses the token to sign the user in instead of prompting for a username and password. These SAML tokens contain pieces of information about the user known as claims.
 
-A claim is information that an identity provider states about a user inside the token they issue for that user. In SAML token, this data is typically contained in the SAML Attribute Statement.
+A claim is information that an identity provider states about a user inside the token they issue for that user. In a SAML token, this data is typically contained in the SAML Attribute Statement.
 
 :::image type="content" source="../media/saml-claims.png" alt-text="Screenshot showing the claims that can be defined for SAML single sign-on." border="false":::
 
@@ -49,7 +49,7 @@ Attributes define the source of the claim. Many source attributes are provided f
 
 ## Download a SAML certificate
 
-When you add a new application from the gallery and configure SAML-based sign-on, Azure AD generates a certificate for the application that is valid for three years.
+When you add a new application from the gallery and configure SAML-based single sign-on, Azure AD generates a certificate for the application that is valid for three years.
 
 :::image type="content" source="../media/saml-cert.png" alt-text="Screenshot showing the certificate created for SAML single sign-on." border="false":::
 

@@ -2,7 +2,7 @@ Identify an application that supports SAML-based single sign-on and add it from 
 
 A team asked for a new application to be added to help with company promotion. The application needs to be made available to team members as appropriate. To make the application available to the employees, the Azure AD application gallery is located, then after searching for the requested application and identifying whether it supports single sign-on, it is added to the Azure AD tenant.
 
-Employees in the retail company likely already have an account in the Azure AD tenant for the organization and will eventually be assigned to the application. But, for the purpose of testing single sign-on for the application, the administrator account that you are using is assigned to the application for testing purposes.
+Employees in the retail company likely already have an account in the Azure AD tenant for the organization and will eventually be assigned to the application. But, for the purpose of testing single sign-on for the application, the administrator creates a test account for testing purposes and after successful testing, rolls the application out to the employees.
 
 ## Locate the Azure AD application gallery
 
@@ -10,7 +10,7 @@ Azure AD has a gallery that contains thousands of pre-integrated applications. M
 
 ### Access the Azure AD tenant
 
-To access the Azure AD tenant and add an enterprise application, sign in to the Azure portal with an appropriate role.
+Access the Azure AD tenant.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
 1. Select **Identity**, and then select **Azure Active Directory**.
@@ -19,7 +19,7 @@ To access the Azure AD tenant and add an enterprise application, sign in to the 
 
 ### Access the application gallery
 
-The Azure AD application gallery is accessed through the **Enterprise applications** pane in the Azure portal.
+Access the application gallery through the **Enterprise applications** pane in the Azure portal.
 
 1. On the **Azure Active Directory** pane, under **Manage**, select **Enterprise applications**.
 1. On the **Enterprise applications** pane, select **All applications** and then select **+ New application**.
