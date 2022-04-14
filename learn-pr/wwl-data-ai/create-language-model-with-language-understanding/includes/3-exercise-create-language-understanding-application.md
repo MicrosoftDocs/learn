@@ -79,16 +79,16 @@ An *intent* is an action you want to perform - for example, you might want to sw
 
 6. Do the same for all the utterances. Tag the rest of the *fan* or *light* utterances with the **device** entity. When you're finished, verify that you have the following utterances and make sure to select **Save changes**: 
 
-| **intent** | **utterance** | **entity** |
-| --------------- | ------------------ | ------------------ |
-| switch_on   | Put on the fan      | Device - *select fan* |
-| switch_on   | Put on the light    | Device - *select light* |
-| switch_on   | Switch on the light | Device - *select light* |
-| switch_on   | Turn the fan on     | Device - *select fan* |
-| switch_on   | Switch on the fan   | Device - *select fan* |
-| switch_on   | Turn the light on   | Device - *select light* |
+    | **intent** | **utterance** | **entity** |
+    | --------------- | ------------------ | ------------------ |
+    | switch_on   | Put on the fan      | Device - *select fan* |
+    | switch_on   | Put on the light    | Device - *select light* |
+    | switch_on   | Switch on the light | Device - *select light* |
+    | switch_on   | Turn the fan on     | Device - *select fan* |
+    | switch_on   | Switch on the fan   | Device - *select fan* |
+    | switch_on   | Turn the light on   | Device - *select light* |
 
-![Once you are done, select Save changes.](../media/save-changes.png) 
+    ![Once you are done, select Save changes.](../media/save-changes.png) 
 
 7. In the pane on the left, click **Build schema** and verify that your **switch_on** intent is listed. Then click **Add** and add a new intent with the name **switch_off** (in lower-case).
 
@@ -104,14 +104,14 @@ An *intent* is an action you want to perform - for example, you might want to sw
 
 10. Tag the words *light* or *fan* with the **device** entity. When you're finished, verify that you have the following utterances and make sure to select **Save changes**:  
 
-| **intent** | **utterance** | **entity** | 
-| --------------- | ------------------ | ------------------ |
-| switch_off   | Put the fan off    | Device - *select fan* | 
-| switch_off   | Put the light off  | Device - *select light* |
-| switch_off   | Turn off the light | Device - *select light* |
-| switch_off   | Switch the fan off | Device - *select fan* |
-| switch_off   | Switch off the fan | Device - *select fan* |
-| switch_off   | Turn the light off | Device - *select light* |
+    | **intent** | **utterance** | **entity** | 
+    | --------------- | ------------------ | ------------------ |
+    | switch_off   | Put the fan off    | Device - *select fan* | 
+    | switch_off   | Put the light off  | Device - *select light* |
+    | switch_off   | Turn off the light | Device - *select light* |
+    | switch_off   | Switch the fan off | Device - *select fan* |
+    | switch_off   | Switch off the fan | Device - *select fan* |
+    | switch_off   | Turn the light off | Device - *select light* |
 
 ### Train the model
 
@@ -179,7 +179,8 @@ Now let's open and edit a pre-written script, which will run the client applicat
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
    
-    >[!TIP] If you already used this command in another lab to clone the *ai-900* repository, you can skip this step.
+>[!NOTE]
+>If you already used this command in another lab to clone the *ai-900* repository, you can skip this step.
 
 2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in this folder and work with them. Type the following commands into the shell: 
 
