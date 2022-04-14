@@ -3,13 +3,13 @@ uid: learn.wwl.manage-usage-billing-for-azure-stack-hub
 metadata:
   title: Manage usage and billing for Azure Stack Hub
   description: "Manage usage and billing for Azure Stack Hub"
-  ms.date: 12/10/2021
+  ms.date: 03/30/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage usage and billing for Azure Stack Hub
-summary: 'Azure Commerce bills you for Azure Stack Hub usage as it bills for Azure usage. This learning path help you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
+summary: 'Azure Commerce bills you for Azure Stack Hub usage as it bills for Azure usage. This learning path helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
 abstract: |
   * Understand usage and billing for Azure Stack Hub.
   * Set up usage data reporting for Azure Stack Hub.
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   * Conceptual knowledge of governance policies, resource organization, and subscription management.
   * Working experience with organizing resources, applying governance policies, and enforcing compliance requirements.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/5-manage-usage-and-billing-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:

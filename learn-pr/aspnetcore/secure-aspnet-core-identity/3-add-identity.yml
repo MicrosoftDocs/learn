@@ -3,15 +3,12 @@ uid: learn.secure-aspnet-core-identity.3-add-identity
 metadata:
   title: Exercise - Configure Identity support
   description: Configure Identity framework support in an existing ASP.NET Core web app.
-  ms.date: 08/20/2019
-  author: scottaddie
-  ms.author: scaddie
+  ms.date: 03/16/2022
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  zone_pivot_groups: aspnet-core-identity-data-store
 title: Exercise - Configure Identity support
-azureSandbox: true
-interactive: bash
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/3-add-identity.md)]

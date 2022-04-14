@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing.create-troubleshooting-environment
+title: Set up troubleshooting environment
+metadata:
+  title: Set up troubleshooting environment
+  description: "Set up troubleshooting environment"
+  ms.date: 04/07/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1a-create-troubleshooting-environment.md)]
+interactive: bash

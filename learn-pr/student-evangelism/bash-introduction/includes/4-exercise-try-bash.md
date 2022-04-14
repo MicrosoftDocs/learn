@@ -1,6 +1,6 @@
-On your own Linux computer, you can run Bash commands locally. If you have access to Linux servers, you can remote in to them and run Bash commands there. But nobody wants to experiment on a live production system—particularly on their first day at Northwind.
+On your own Linux computer, you can run Bash commands locally. If you have access to Linux servers, you can remote in to them and run Bash commands there. But nobody wants to experiment on a live production system, particularly on their first day at Northwind.
 
-In this unit, you use Azure Cloud Shell on the right as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at <https://shell.azure.com>. You don't have to install anything on your PC or laptop to use it.
+In this unit, you'll use Azure Cloud Shell on the right as your Linux terminal. Azure Cloud Shell is a shell you can access through the Azure portal or at <https://shell.azure.com>. You don't have to install anything on your PC or laptop to use it.
 
 ## Familiarize yourself with Cloud Shell
 
@@ -19,7 +19,7 @@ First, let's explore what's in Cloud Shell by using the Bash commands we've lear
     clouddrive
     ```
 
-    **clouddrive** is a subdirectory of your current directory. It's a mounted file share that persists if you're using Cloud Shell on your own account. Right now you're using it on the Microsoft Learn sandbox.
+    **clouddrive** is a subdirectory of your current directory. It's a mounted file share that persists if you're using Cloud Shell on your own account. Right now, you're using it on the Microsoft Learn sandbox.
 
 1. But wait, what *is* the current directory? Let's use the `pwd` command to find out. `pwd` stands for "print working directory." It prints out the long-form path to what directory you're in now.
 
