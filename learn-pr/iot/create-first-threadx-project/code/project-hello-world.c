@@ -113,10 +113,10 @@ ULONG current_time;
    while(1)
    {
       /* Activity 3: 2 timer ticks  *** preparation ***  */
-      /* Get the mutex with suspension */
       tx_thread_sleep(2);
 
       /* Activity 4: 7 timer ticks *** critical section *** */
+      /* Get the mutex with suspension */
       /******* complete Activity 4 here -- use Activity 2 as a guide *****/
 
       current_time = tx_time_get();
