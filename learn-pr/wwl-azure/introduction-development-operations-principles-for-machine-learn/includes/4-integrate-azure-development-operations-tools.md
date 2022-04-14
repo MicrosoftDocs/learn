@@ -53,6 +53,8 @@ Start by signing in to [GitHub](https://github.com/?portal=true).
 
 After signing in to GitHub, you can choose whether you as an individual want to own the repository, or whether it should be owned by a GitHub organization. 
 
+![New repo in GitHub](../media/04-04-github-repository.png)
+
 > [!TIP]
 > Learn more about [using GitHub organizations to manage repositories](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch).
 
