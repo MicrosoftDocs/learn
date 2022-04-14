@@ -17,7 +17,7 @@ A cloud gateway enables you to manage your IoT devices and brokers the communica
 
 Given the centrality of data in an IoT solution, figuring out the right cloud-based data storage and retrieval options ranks high on the list in terms of importance. IoT devices can generate enormous amounts of data quickly and storing high volumes of data in the cloud cannot become expensive but also unwieldy--you have to be able to do something with the data and too much of it can make analytics and decision-making harder.
 
-Cloud service providers are continually updating their data services to make it easier and more cost-effective for organizations to store, manage, and analyze data. Even so, a thorough analysis of cloud storage technical options and prices should be a fundamental part of any IoT architecture. For example, some architectures may demand a multi-tiered approach with some data being stored on the device, other stored in on-premise databases and other data stored in the cloud. Depending on the needed architecture, you should be sure the cloud services you choose supports your needs.
+Cloud service providers are continually updating their data services to make it easier and more cost-effective for organizations to store, manage, and analyze data. Even so, a thorough analysis of cloud storage technical options and prices should be a fundamental part of any IoT architecture. For example, some architectures may demand a multi-tiered approach with some data being stored on the device, other stored in on-premise databases and other data stored in the cloud. Depending on the needed architecture, you should be sure the cloud services you choose supports your need.
 
 Here are some other concepts to be aware of when considering cloud storage.
 
