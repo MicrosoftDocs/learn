@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-microsoft-learn-educators-program
+metadata:
+  title: Introduction to Microsoft Learn for Educators program
+  description: "The Microsoft Learn for Educators program provides eligible educators and faculty members at colleges, universities, community colleges, polytechnics, and some STEM-focused secondary schools access to Microsoft's ready-to-teach curriculum and teaching materials aligned to industry-recognized Microsoft Certifications. The Microsoft certifications enhance your students' credibility by giving them a professional advantage through globally recognized, industry-endorsed evidence of skills mastery."
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Microsoft Learn for Educators program
+summary: Microsoft Learn for Educators provides eligible educators and faculty members at colleges, universities, community colleges, polytechnics, and some STEM-focused secondary schools access to Microsoft's ready-to-teach curriculum and teaching materials aligned to industry-recognized Microsoft certifications.
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand the Microsoft Learn for Educators program benefits and offerings.
+  - Understand the different MSLE program participation options.
+  - Review the resources included in the Microsoft Learn for Educators program for Institutions, Educators and Students.
+  - Review the steps to signing up to the Microsoft Learn for Educators program.
+prerequisites: |
+  Familiarity with the Microsoft Learn for Educators Program and related certification.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- higher-ed-educator
+products:
+- azure-security-center
+- dynamics-365
+- dynamics-customer-service
+units:
+- learn.wwl.introduction-microsoft-learn-educators-program.introduction
+- learn.wwl.introduction-microsoft-learn-educators-program.what-microsoft-learn-educators-why-join
+- learn.wwl.introduction-microsoft-learn-educators-program.what-included-microsoft-learn-educators
+- learn.wwl.introduction-microsoft-learn-educators-program.what-resources-benefits-my-students
+- learn.wwl.introduction-microsoft-learn-educators-program.how-join-microsoft-learn-educators
+- learn.wwl.introduction-microsoft-learn-educators-program.knowledge-check
+- learn.wwl.introduction-microsoft-learn-educators-program.summary
+badge:
+  uid: learn.wwl.introduction-microsoft-learn-educators-program.badge

@@ -37,9 +37,9 @@ You have an ASP.NET Core web application running locally. In this exercise, you'
 
 1. Your new publishing profile appears in the dropdown near the top of the property page. Select **Publish** to publish the web app to App Service.
 
-1. Congratulations! Your ASP.NET Core web application is now published and live. The final URL for your site is in the build output and also on the publishing page in Visual Studio.
+1. Congratulations! When you see a *Publish succeeded* message in the **Output** window, your ASP.NET Core web application is now published and live. The final URL for your site is in the build output and also on the publishing page in Visual Studio.
 
-1. To test your website, go to the URL indicated.
+1. To test your website, go to the URL indicated. Visual Studio might also automatically launch this URL for you.
 
     :::image type="content" source="../media/5-WebPageLive.png" alt-text="Live site." loc-scope="vs":::
 

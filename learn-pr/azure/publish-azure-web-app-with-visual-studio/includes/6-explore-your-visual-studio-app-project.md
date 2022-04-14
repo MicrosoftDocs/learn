@@ -2,15 +2,15 @@ You've successfully created your web app and published it to Azure, but what hap
 
 ## Explore the project structure
 
-We've created an ASP.NET Core web app in Visual Studio, and now you'll need to edit and customize your website. Let's explore the project structure to see what Visual Studio has created.
+You've created an ASP.NET Core web app in Visual Studio, and now you'll need to edit and customize your website. Let's explore the project structure to see what Visual Studio has created.
 
 ### Dependencies
 
-Dependencies folder contains the ASP.NET Core internals to get your app up and running. Unless you're adding specific third-party packages, you won't need to spend much time in this folder.
+The dependencies folder contains the ASP.NET Core internals to get your app up and running. Unless you're adding specific third-party packages, you won't need to spend much time in this folder.
 
 ### Properties
 
-The properties folder contains configuration data for where you are hosting your web app. If you expand the **PublishProfiles** folder now, you should see the URL for the Alpine Ski Hill site. Each publishing profile is an .xml file containing publishing configuration information, such as the Azure address that Visual Studio uses to upload your files.
+The properties folder contains configuration data for where you're hosting your web app. If you expand the **PublishProfiles** folder now, you should see the URL for the Alpine Ski Hill site. Each publishing profile is an .xml file containing publishing configuration information, such as the Azure address that Visual Studio uses to upload your files.
 
 ### wwwroot
 
@@ -18,8 +18,7 @@ The wwwroot file contains all of your static assets for your site, such as the c
 
 ### Pages
 
-The **Pages** folder has _**Razor**_ templates for the pages of your site.
-Razor is a markup syntax for embedding server code into ASP.NET web pages. It includes HTML and has special conventions for displaying data and executing logic on your site.
+The **Pages** folder has _**Razor**_ templates for the pages of your site. Razor is a markup syntax for embedding server code into ASP.NET web pages. It includes HTML, and has special conventions for displaying data and executing logic on your site.
 
 Each page in your site is represented with two code files:
 
@@ -61,7 +60,7 @@ For example, take a look at the code in the `Privacy.cshtml` page:
 - The `@page` directive is telling ASP.NET to process this file as a Razor page.
 - The `@model` directive is telling ASP.NET to tie this Razor page with a C# class called `PrivacyModel`.
 
-Razor also uses the `@` symbol to transition between code and HTML. If you look at the preceding snippet, you'll notice `@{ ... }`. This is a **Razor code block**, which is _executed but not rendered_.
+Razor also uses the `@` symbol to transition between code and HTML. If you look at the preceding snippet, you'll notice `@{ ... }`. This is a **Razor code block**, which is *executed but not rendered*.
 
 To render the output of a code statement, use the `@` in front of a C# expression. There's an example in the preceding code block in the `<h1>` tag.
 
