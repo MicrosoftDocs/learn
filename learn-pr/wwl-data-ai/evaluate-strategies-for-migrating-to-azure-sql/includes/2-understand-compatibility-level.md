@@ -2,7 +2,7 @@ Historically, software vendors who build software for SQL Server have certified 
 
 SQL Server compatibility level has always been a database level setting. Setting compatibility level to a specific version allows for specific T-SQL keywords to be used as it also determines certain query optimizer behaviors. For example, if you had a database at a specific compatibility level and migrated it to SQL Server 2019, the execution plan shapes and query syntax should remain the same as they did originally before the migration, if it is a supported release.
 
-The database engine version for Azure SQL Database and Azure SQL Database Managed Instance are not comparable with SQL Server internal build numbers, but they do refer to the same compatibility level.
+The database engine version for Azure SQL Database and Azure SQL Managed Instance are not comparable with SQL Server internal build numbers, but they do refer to the same compatibility level.
 
 You can check the compatibility level of your databases by executing the query as shown below:
 

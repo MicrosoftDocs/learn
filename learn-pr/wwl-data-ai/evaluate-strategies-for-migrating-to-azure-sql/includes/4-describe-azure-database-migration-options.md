@@ -43,7 +43,7 @@ The offline source and target pairs are shown in Table 2 below:
 | **Azure SQL Database**| SQL Server |
 | | RDS SQL |
 | | Oracle |
-| **Azure SQL Database Managed Instance**| SQL Server |
+| **Azure SQL Managed Instance**| SQL Server |
 | | RDS SQL |
 | | Oracle |
 | **Azure SQL Virtual Machine**| SQL Server |
@@ -61,7 +61,7 @@ The source and target pairs for online migration are shown in Table 3 below:
 | **Azure SQL Database**| SQL Server |
 | | RDS SQL |
 | | Oracle |
-| **Azure SQL Database Managed Instance**| SQL Server |
+| **Azure SQL Managed Instance**| SQL Server |
 | | RDS SQL |
 | | Oracle |
 | **Azure SQL Virtual Machine**| SQL Server |
