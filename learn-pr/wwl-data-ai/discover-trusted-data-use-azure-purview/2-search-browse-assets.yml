@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-trusted-data-use-azure-purview.search-browse-assets
+title: Search for assets
+metadata:
+  title: Search for assets
+  description: "Search for assets"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-search-browse-assets.md)]
