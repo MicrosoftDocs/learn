@@ -4,9 +4,10 @@ Choose SAML single sign-on whenever possible for existing applications that do n
 
 To configure single sign-on for the application in the Azure portal:
 
-- Define the URLs that are used to access the application
+- Define the identifier and URLs that are used to identify the application in Azure AD
 - Define any attributes or claims that are needed by the application
 - Download a SAML signing certificate
+- Register a user account and configure single sign-on at the application host
 
 ## Define URLs
 
@@ -23,7 +24,7 @@ Optional URLs that can be defined are:
 - **Relay State** - Instructs the application where to redirect users after authentication is completed. The value is typically a URL or URL path that takes users to a specific location within the application.
 - **Logout URL** - Used to send the SAML logout response back to the application.
 
-## Define attributes or claims
+## Add attributes or claims
 
 When a user authenticates to an application using the SAML 2.0 protocol, a token is sent to the application by using an HTTP POST. And then, the application validates and uses the token to sign the user in instead of prompting for a username and password. These SAML tokens contain pieces of information about the user known as claims.
 
@@ -53,3 +54,11 @@ When you add a new application from the gallery and configure SAML-based sign-on
 :::image type="content" source="../media/saml-cert.png" alt-text="Screenshot showing the certificate created for SAML single sign-on." border="false":::
 
 The certificate can be used as a raw (binary) certificate or a Base64 (base 64-encoded text) certificate. For gallery applications, the certificate might also be downloaded as federation metadata XML (an .xml file), depending on the requirement of the application.
+
+## Configure single sign-on at the application host
+
+All applications that have been added to the application gallery have their own way of registering user accounts and configuring single sign-on. To make single sign on work, an account must exist for the user both in Azure AD and at the application host. For all applications, the following URLs and identifier are defined at the application host:
+
+- **Login URL** - The URL that is used to sign in to the application in Azure AD. For example, `https://login.microsoftonline.com/8ff45583-0000-0000-0000-2edcc572b1c8/saml2`.
+- **Azure AD Identifier** - The identifier of the application in Azure AD. For example, `https://sts.windows.net/8ff45583-0000-0000-0000-2edcc572b1c8/`.
+- **Logout URL** - The URL that is used to sign out of the application. For example, `https://login.microsoftonline.com/8ff45583-0000-0000-0000-2edcc572b1c8/saml2`.

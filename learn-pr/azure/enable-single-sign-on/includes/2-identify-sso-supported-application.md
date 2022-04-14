@@ -8,7 +8,7 @@ Employees in the retail company likely already have an account in the Azure AD t
 
 Azure AD has a gallery that contains thousands of pre-integrated applications. Many of the applications that the retail company uses are probably already in the gallery. If an application is added to the company's Azure AD tenant, properties can be configured for it, user access can be managed, and single sign-on can be set up so that the employees can sign in to it with their Azure AD credentials.
 
-### Sign in to Azure and access the Azure AD tenant
+### Access the Azure AD tenant
 
 To access the Azure AD tenant and add an enterprise application, sign in to the Azure portal with an appropriate role.
 
@@ -19,16 +19,16 @@ To access the Azure AD tenant and add an enterprise application, sign in to the 
 
 ### Access the application gallery
 
-The Azure AD application gallery is accessed through the **Enterprise applications** blade in the Azure portal.
+The Azure AD application gallery is accessed through the **Enterprise applications** pane in the Azure portal.
 
-1. On the **Azure Active Directory** blade, under **Manage**, select **Enterprise applications**.
-1. In the **Enterprise applications** pane, select **All applications** and then select **+ New application**.
+1. On the **Azure Active Directory** pane, under **Manage**, select **Enterprise applications**.
+1. On the **Enterprise applications** pane, select **All applications** and then select **+ New application**.
 
     :::image type="content" source="../media/new-application.png" alt-text="Screenshot showing browsing to the enterprise applications pane." border="true":::
 
 ## Search for and add the requested application
 
-When searching for an application, the following filters can be used:
+When searching for an application to add from the gallery, the following filters can be used:
 
 - **Single sign-on options** – Search for applications that support these SSO options: SAML, OpenID Connect (OIDC), Password, or Linked.
 - **User account management** – The only option available is automated provisioning.
@@ -47,15 +47,28 @@ Federated single sign-on support can be identified by looking for the **Federate
 
     :::image type="content" source="../media/create-application.png" alt-text="Screenshot showing the overview and creation of a new enterprise application." border="true":::
 
-## Assign a user account to the application
+## Assign a test user account to the application
+
+To test the single sign-on configuration between Azure AD and the application host, user accounts need to be created at both locations and assigned to the application.
+
+### Create a test user account
+
+1. On the **Azure Active Directory** pane, under **Manage**, select **Users**.
+1. Select **New user** at the top of the pane.
+1. In the **User name** field, enter the username of the user account. For example, `contosouser1@contoso.com`. Be sure to change `contoso.com` to the name of your tenant domain.
+1. In the **Name** field, enter the name of the user of the account. For example, `contosouser1`.
+1. Leave **Auto-generate password** selected, and then select **Show password**. Write down the value that's displayed in the **Password** box.
+1. Select **Create**.
+
+### Assign the test user account to the application
 
 To test single sign-on for the application, assign a user account account to it.
 
-1. On the **Azure AD SAML Toolkit** blade, on the **Overview** pane, under **Getting Started**, select **Assign users and groups**. Alternatively, in the left menu, under **Manage**, select **Users and groups**.
+1. On the application overview pane, under **Getting Started**, select **Assign users and groups**. Alternatively, in the left menu, under **Manage**, select **Users and groups**.
 1. On the **Users and groups** pane, on the menu, select **+Add user/group**.
 
     :::image type="content" source="../media/add-user-account.png" alt-text="Screenshot showing the assignment of a user account to an enterprise application." border="true":::
 
-1. On the **Add Assignment** blade, under **Users and groups**, select **None Selected**.
-1. In the **Users and groups** pane, select the administrator account and then click **Select**.
+1. On the **Add Assignment** pane, under **Users and groups**, select **None Selected**.
+1. In the **Users and groups** pane, select the test user account and then click **Select**.
 1. Select **Assign**.
