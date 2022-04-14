@@ -1,8 +1,8 @@
-When you host an API using Azure API Management, you are able to modify its behavior without rewriting code.
+When you host APIs using Azure API Management, you are able to modify their behavior without re-writing code.
 
-Let's say, you wish to implement caching for the Board Pricing API. You would first add the API to Azure API Management and then write caching policies.
+Let's say, you want to implement caching for the Board Pricing API. You would first add the API to Azure API Management and then write your caching policies.
 
-In the following exercise, you'll import an API into Azure API Management and add a caching policy to it.
+In the following exercise, we'll import an API into Azure API Management and add a caching policy to it.
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -11,15 +11,15 @@ In the following exercise, you'll import an API into Azure API Management and ad
 
 ## Create a Redis cache
 
-In this module, we're using the Consumption tier for Azure API Management. That's because Azure configures API Management instances within a minute or so in this tier. Other tiers can take up to 30 minutes. The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. This tier doesn't have its own internal cache. We must create an external Redis cache and configure API Management to use a caching policy.
+In this module, we're using the Consumption tier for Azure API Management. That's because Azure configures API Management instances within a minute or so for this tier. Other tiers can take up to 30 minutes. The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. This tier doesn't have its own internal cache. Instead, we must create an external Redis cache and configure API Management to use a caching policy.
 
-Let's create a cache now. This will allow the process to be completed behind the scenes, while we take other steps:
+Let's create a cache now. This allows the process to run behind the scenes, while we work on other steps:
 
 1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), using the same login ID you used to activate the sandbox.
 
 1. Navigate to the Azure portal resource menu or the **Home** page, and select **Create a resource**. The **Create a resource** pane will appear.
 
-1. In the **Create a resource** menu, select **Databases**, and then search for and select **Azure Cache for Redis**. The **New Redis Cache** pane appears.
+1. In the **Create a resource** menu, select **Databases**, and then search for and select **Azure Cache for Redis**. The **New Redis Cache** pane will appear.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -55,7 +55,7 @@ Now, let's deploy the sample Web API to Azure App Service:
     bash setup.sh
     ```
 
-1. The script has seven parts that take several minutes to run. When the script finishes, it will display three URLs:
+1. The script has seven parts that take several minutes to run. When the script is complete, three urls will be displayed:
 
     - Web API test URL for testing the Web API.
     - A Swagger URL for the Swagger UI.
@@ -65,7 +65,7 @@ Now, let's deploy the sample Web API to Azure App Service:
 
 ## Test the deployed Web API
 
-Check to be sure the Web API has deployed successfully in Azure Cloud Shell. When deployment is complete, you are able to test it. Tests can be performed in the Web API by submitting a GET request in the browser or by checking the OpenAPI definition. These tests will run against the Web API in the **azurewebsites.net** domain, before it's been added to API Management:
+Check to be sure the Web API has deployed successfully in Azure Cloud Shell. When deployment is complete, you'll be able to test it. Tests can be performed in the Web API by submitting a GET request in the browser or by checking the OpenAPI definition. These tests will run against the Web API in the **azurewebsites.net** domain, before it's been added to API Management:
 
 1. Navigate to the Azure portal resource menu or the **Home** page, and select **All resources**. Then select the App Service resource type. The **BoardGamingAPI123aa456789** App Service pane appears (the numbers at the end will differ for your implementation).
 
@@ -85,9 +85,9 @@ Now that we have a functional API, let's set up API Management:
 
 1. Navigate to the Azure portal resource menu or the **Home** page, and select **Create a resource**. The **Create a resource** pane will appear.
 
-1. In the **Create a Resource** menu, select **Web**, and then select **API Management** from the result list. The **Create API Management** pane appears.
+1. In the **Create a Resource** menu, select **Web**, and then select **API Management** from the result list. The **Create API Management** pane will appear.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. Enter the following values for each setting in the **Basics** tab.
 
     | Setting | Value |
     | --- | --- |
@@ -127,7 +127,7 @@ Check to ensure that the Redis cache deployment is complete. If so, you can now 
 
 1. Choose **Custom** from the **Cache instance** dropdown list. Then select the same location you used for the API Management instance from the **Use from** textbox.
 
-1. Place your cursor in the **Connection string** textbox and paste there the primary connection string that you copied. Then click **Save** in the command bar.
+1. Place your cursor in the **Connection string** textbox and paste the primary connection string that you have copied. Then click **Save** in the command bar.
 
     ![Configuring the external cache.](../media/5-configure-external-cache.png)
 
@@ -151,7 +151,7 @@ We must apply a policy to enable users to access the API. However before you can
 
 ## Test the API in API Management
 
-The API has now been added to the management instance. Let's test the API before any policies have been applied.
+The API has now been added to the management instance. Let's test the API before any policies are applied.
 
 1. Select your API Management service, then click the **APIs** link. Now click the **Test** tab and choose the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane will appear.
 
@@ -171,7 +171,7 @@ The API has now been added to the management instance. Let's test the API before
 
 1. Review the results. Notice that the precise time has been included in the *HTTP response*.
 
-1. Click **Send** again to re-send the request. Notice that the time in the *HTTP response* has changed.
+1. Click **Send** again to  the repeat request. Notice that the time in the *HTTP response* has changed.
 
 ## Add a caching policy
 
@@ -257,7 +257,7 @@ The cache will now deliver unique responses depending upon the *Height* query pa
 
 1. Review the results. Notice that the precise time has been included in the response.
 
-1. Click **Send** to re-send the request. Notice that the time in the response hasn't changed, just like before. This is because a cached response was served.
+1. Click **Send** to repeat the request. Notice that like before the time value in the response hasn't changed. This is because a cached response was served.
 
 1. To test the *Height* parameter, use the following values as *Template parameters* and *Query parameters*.
 
@@ -285,4 +285,4 @@ The cache will now deliver unique responses depending upon the *Height* query pa
 
 1. Click **Send**.
 
-1. Review the results. This time, a cached response was served. Although the Width query parameter was changed, the result didn't change.
+1. Review the results. This time, although the Width query parameter was changed, the result didn't change.  cached response was served.
