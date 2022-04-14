@@ -27,7 +27,7 @@ For each project, you'll have access to tools like **Boards**, **Repos**, and **
 
 To securely access your Azure Machine Learning workspace from Azure DevOps, you'll have to create a **service connection**. 
 
-When you create a service connection, you define how Azure DevOps will be authenticated to connect to another service. When working with Azure Machine Learning, the recommended option is to let Azure DevOps create a service principal.
+When you create a service connection, you define how Azure DevOps will be authenticated to connect to another service. When you work with Azure Machine Learning, the recommended option is to let Azure DevOps create a service principal for you.
 
 A **service principal** is created as an identity in the **Azure Active Directory**. Instead of using a team member's credentials to connect with Azure Machine Learning, Azure DevOps uses the service principal's credentials.
 
