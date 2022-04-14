@@ -26,6 +26,7 @@ products:
 modules:
 - learn.wwl.introduction-to-azure-virtual-networks
 - introduction-azure-private-link
+- learn.introduction-to-azure-dns
 - learn.azure.intro-to-azure-nat-gateway
 - learn.azure.intro-to-azure-route-server
 - learn.azure.intro-to-azure-network-watcher
