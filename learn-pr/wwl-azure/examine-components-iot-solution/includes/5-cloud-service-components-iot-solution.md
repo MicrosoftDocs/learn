@@ -67,6 +67,6 @@ As the name states, the technology gives computers the ability to "learn" (predi
 
 Using big data and machine learning to predict purchasing decisions is one simple example. Suppose a retailer has warehouse space in various cities and needs to determine which items to stock in those cities in order to be able to get products to customers in the most efficient and timely way. Using machine learning the retailer can predict, for example, that a given set of users that purchase a specific television tend to buy a particular type of cable and other accessories like tv stands and audio equipment. This would allow the retailer to keep those items in the warehouse near where those television sales are popular so that if a customer orders the cable or other accessory, the item can be shipped more and get to the customer more quickly.
 
-Can you think of other, IoT-specific scenarios where machine learning would be help enable various scenarios that can make the IoT architecture more effective?
+Can you think of other, IoT-specific scenarios where machine learning would help enabling various scenarios that can make the IoT architecture more effective?
 
 Because of the tremendous amount of computer power needed to perform the calculations needed to do this type of analysis, cloud-based ML technology tends to be the most effective at providing the type of insights machine learning promises.
