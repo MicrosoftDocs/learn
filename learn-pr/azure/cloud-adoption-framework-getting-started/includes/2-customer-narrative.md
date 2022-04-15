@@ -2,7 +2,7 @@
 
 *Figure 1: The Tailwind Traders logo.*
 
-Tailwind Traders is a modern commerce company. For more than 30 years, the company has been a popular retail destination. It has grown to more than 50 physical stores. Several years ago, its chief executive officer (CEO) anticipated changes in retail and bought a competing e-commerce startup that was growing aggressively in niche markets. Today, the company is seen as an innovative leader with customer-focused local storefronts.
+Tailwind Traders is a modern commerce company. For more than 30 years, the company has been a popular retail destination. It has grown to more than 50 physical stores. Several years ago, its Chief Executive Officer (CEO) anticipated changes in retail and bought a competing e-commerce startup that was growing aggressively in niche markets. Today, the company is seen as an innovative leader with customer-focused local storefronts.
 
 ## Retail innovation
 
@@ -12,7 +12,7 @@ The Tailwind Traders retail innovation team uses technology to continually redef
 
 *Figure 2: The website and application that started the retail innovation efforts.*
 
-The retail innovation team reports to the company's chief technology officer (CTO), who was the CEO of the acquired e-commerce startup. Those technology solutions are the main hub for interactions with customers. Those solutions affect 60 percent of global revenue and produce 30 percent of annual gross sales. Examples of those innovations include:
+The retail innovation team reports to the company's Chief Technology Officer (CTO), who was the CEO of the acquired e-commerce startup. Those technology solutions are the main hub for interactions with customers. Those solutions affect 60 percent of global revenue and produce 30 percent of annual gross sales. Examples of those innovations include:
 
 - **Boundless commerce:** Originally a simple e-commerce solution, this custom-built platform now provides online and offline experiences for customers. Customers can make purchases from the platform. The mobile app gathers information from customers' viewing history to customize the retail experience with in-store ads, shopping lists, and other interactions.
 - **Analytics, AI, and robotics innovation:** The team is experimenting with drone delivery, autonomous warehousing, and other AI-led approaches to reduce costs, scale through automation, and improve customer experiences. These experiments are built on big data, analytics, and AI solutions.
@@ -25,7 +25,7 @@ Beyond new innovations, Tailwind Traders' central IT teams support the back offi
 
 *Figure 3: A balance of speed and control.*
 
-The retail innovation team is a division of the company's IT team. It's led by Tailwind Traders' chief information officer (CIO). E-commerce and innovation are just the beginning of the company's technical capability, and they're a small portion of the overall IT spend. The company supports 3,500 employees, and less than 100 are dedicated to IT. The innovation team consists of only 20 employees who are mostly developers. 
+The retail innovation team is a division of the company's IT team. It's led by Tailwind Traders' Chief Information Officer (CIO). E-commerce and innovation are just the beginning of the company's technical capability, and they're a small portion of the overall IT spend. The company supports 3,500 employees, and fewer than 100 are dedicated to IT. The innovation team consists of only 20 employees who are mostly developers.
 
 Beyond core innovation, the IT team supports the following types of technologies:
 
@@ -46,7 +46,7 @@ A cornerstone of this strategy will be a shift in the operating model: moving fr
 
 ## IT portfolio overview
 
-Tailwind Traders currently has three datacenters. One is located in the same office building where employees work; the company owns this building and datacenter. The two other datacenters are in separate locations and are leased from datacenter providers. 
+Tailwind Traders currently has three datacenters. One is located in the same office building where employees work; the company owns this building and datacenter. The two other datacenters are in separate locations and are leased from datacenter providers.
 
 The datacenters are a mix of physical and virtual servers. The virtualization platforms are a mix between Hyper-V and VMware, because various people with different strategy ideas have led the IT department over the years.
 
@@ -63,5 +63,5 @@ The leases for the two external datacenters are due to run out in 18 months and 
 - **Project managers:** Part of the IT department, project managers help to keep projects on time and on budget. They ensure that all the right stakeholders are involved.
 - **Central operations or infrastructure team:** The operations team is currently in charge of the datacenters. This team oversees areas like hardware maintenance, operating systems, patch management, networking, and out-of-hours support. Most team members are familiar with the current infrastructure but have little coding experience. The majority hold Microsoft qualifications related to Windows Server.
 - **Developer:** The in-house development team makes the website for the online store that Tailwind Traders hosts from its own datacenter.
-- **IT manager:** The IT manager is in charge of the operations, developer, and project management teams. This manager wants to make the IT department run better, replace old servers, and make Tailwind Traders more competitive. Another goal is to make things better for the operations team, which juggles many different systems.
+- **IT manager:** The IT manager is in charge of the operations, developer, and project-management teams. This manager wants to make the IT department run better, replace old servers, and make Tailwind Traders more competitive. Another goal is to make things better for the operations team, which juggles many different systems.
 - **Finance director:** The finance director wants to reduce costs from the budget where possible. This director is familiar with the capital expenditure for the IT department and equipment.
