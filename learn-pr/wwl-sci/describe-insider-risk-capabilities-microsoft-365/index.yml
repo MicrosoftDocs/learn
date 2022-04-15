@@ -3,17 +3,18 @@ uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365
 metadata:
   title: Describe insider risk capabilities in Microsoft 365
   description: "Describe insider risk capabilities in Microsoft 365"
-  ms.date: 06/16/2021
+  ms.date: 04/12/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Describe insider risk capabilities in Microsoft 365
-summary: Learn how Microsoft 365 enables organizations to identify critical insider risks and take the appropriate action.
+summary: Insider risks are a top concern for organizations. These risks can be challenging to identify and mitigate. Learn how Microsoft 365 enables organizations to identify, analyze, and remediate internal risks before they cause harm.
 abstract: |
-  After completing this module, you will be able to:
-  - Describe how Microsoft 365 can help organizations identify insider risks and take appropriate action.
-  - Describe how Microsoft 365 helps organizations identify, investigate, and remediate malicious and inadvertent activities in your organization.
+  After completing this module, you'll be able to:
+  - Describe the Insider risk management solution
+  - Describe communication compliance
+  - Describe information barriers
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -31,8 +32,6 @@ units:
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.management-solution
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.describe-communication-compliance
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.describe-information-barriers
-- learn.wwl.describe-insider-risk-capabilities-microsoft-365.describe-privileged-access-management
-- learn.wwl.describe-insider-risk-capabilities-microsoft-365.describe-customer-lockbox
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.knowledge-check
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.summary-resources
 badge:
