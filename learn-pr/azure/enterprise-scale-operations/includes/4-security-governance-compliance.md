@@ -6,9 +6,9 @@ Encryption is a vital step towards ensuring data privacy, compliance, and data r
 
 Azure supports various encryption models, including:
 
-- Server-side encryption by using service-managed keys.
-- Customer-managed keys in Azure Key Vault.
-- Customer-managed keys on customer-controlled hardware.
+- Server-side encryption by using service-managed keys
+- Customer-managed keys in Azure Key Vault
+- Customer-managed keys on customer-controlled hardware
 
 With client-side encryption, you can manage and store keys on-premises or in another secure location. An organization should define its encryption requirements for the services it uses, and enforce encryption configurations via Azure Policy.
 
