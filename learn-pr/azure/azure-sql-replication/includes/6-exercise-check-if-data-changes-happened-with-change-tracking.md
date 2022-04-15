@@ -35,7 +35,7 @@ FROM SalesLT.Product AS P
 WHERE ProductID = 680   --pass any ProductID 
 ```
 
-### Obtain changes by using change tracking Functions
+### Obtain changes by using change tracking functions
 
 Applications can use the following functions to obtain the changes that are made in a database and information about the changes:
 
