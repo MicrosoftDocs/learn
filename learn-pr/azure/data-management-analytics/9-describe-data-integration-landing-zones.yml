@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure 
 durationInMinutes: 2
 content: |
-  [!include[](includes/9-describe-data-integration-landing-zones.md)]
+  [!include[Describe data integration landing zones](includes/9-describe-data-integration-landing-zones.md)]

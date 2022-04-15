@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise-provision-data-management-landing-zone.md)]
+  [!include[Exercise - Provision data management landing zone](includes/4-exercise-provision-data-management-landing-zone.md)]

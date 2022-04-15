@@ -37,7 +37,7 @@ A data product could also use data services from other data products as below an
 
 ### Here is an example for a banking data product
 
-![Banking Example Data Product](../media/banking-industry-example-dataproduct.png)
+![Banking Example Data Product](../media/banking-industry-example-data-product.png)
 
 ## Other references
 

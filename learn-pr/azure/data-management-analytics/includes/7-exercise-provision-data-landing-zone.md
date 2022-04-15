@@ -8,7 +8,7 @@ A Data Management Zone deployed. Refer to Exercise 1 for details.
 
 ### Step 2 - Initiate the workflow to complete the data management landing zone using the portal wizard UI
 
-<a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-landing-zone%2Fmain%2Finfra%2Fmain.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-landing-zone%2Fmain%2Fdocs%2Freference%2Fportal.dataLandingZone.json"> ![Deploy DLZ to Azure](../media/deploytoazure.svg) </a>
+<a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-landing-zone%2Fmain%2Finfra%2Fmain.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-landing-zone%2Fmain%2Fdocs%2Freference%2Fportal.dataLandingZone.json"> ![Deploy DLZ to Azure](../media/deploy-to-azure.svg) </a>
 
 ![DLZ creation 1](../media/data-landing-zone-creation-1.png)
 

@@ -8,7 +8,7 @@ This module walks you through the process of provisioning a "Data Product" with 
 
 ## Step 2 - Initiate the workflow to complete the data management landing zone using the portal wizard UI
 
-<a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-product-batch%2Fmain%2Finfra%2Fmain.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-product-batch%2Fmain%2Fdocs%2Freference%2Fportal.dataProduct.json"> ![Deploy Data Product Zone to Azure](../media/deploytoazure.svg) </a>
+<a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-product-batch%2Fmain%2Finfra%2Fmain.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-product-batch%2Fmain%2Fdocs%2Freference%2Fportal.dataProduct.json"> ![Deploy Data Product Zone to Azure](../media/deploy-to-azure.svg) </a>
 
 ![DPLZ Deployment](../media/data-product-landing-zone-deployment.png)
 
@@ -26,7 +26,7 @@ In this Step 2, provide the following information
 
 ## Step 3 - select next for General Settings
 
-![DPLZ General settings](../media/data-product-landing-zonegeneral-settings.png)
+![DPLZ General settings](../media/data-product-landing-zone-general-settings.png)
 
 In this step 3, provide the following information
 

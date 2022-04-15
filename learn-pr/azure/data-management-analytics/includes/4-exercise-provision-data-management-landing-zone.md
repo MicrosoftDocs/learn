@@ -14,7 +14,7 @@ Follow the link below to register if not registered already
 
 ### Step 2 - Initiate the workflow to complete the data management landing zone using the portal wizard UI
 
-<a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-management-zone%2Fmain%2Finfra%2Fmain.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-management-zone%2Fmain%2Fdocs%2Freference%2Fportal.dataManagementZone.json"> ![Deploy Data Management Landing Zone](../media/deploytoazure.svg) </a>
+<a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-management-zone%2Fmain%2Finfra%2Fmain.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-management-zone%2Fmain%2Fdocs%2Freference%2Fportal.dataManagementZone.json"> ![Deploy Data Management Landing Zone](../media/deploy-to-azure.svg) </a>
 
 ![Initial Step](../media/data-management-landing-zone-deployment-1.png)
 
