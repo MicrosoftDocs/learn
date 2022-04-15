@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Azure Kubernetes Service (AKS) Application and Cluster Scalability
 summary: |
-  In this learning path, you’ll understand how autoscaling of your AKS workloads can be achieved and how workload scale changes will help drive how your cluster itself scales to meet those workload needs.
+  In this learning path, you'll understand how autoscaling of your AKS workloads can be achieved and how workload scale changes drive how your cluster scales to meet workload needs.
 prerequisites: |
   - An Azure subscription 
   - Ability to use the Azure CLI 
@@ -23,6 +23,11 @@ levels:
 - advanced
 roles:
 - developer
+- solution-architect
+- devops-engineer
+- developer
+- administrator
+- student
 products:
 - azure
 modules:
