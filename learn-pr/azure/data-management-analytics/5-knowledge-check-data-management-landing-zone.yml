@@ -21,10 +21,10 @@ quiz:
       explanation: "The data management landing zone is classified as a management function and is central to the data management and analytics scenario. It's responsible for the governance of the platform and enables communication to ingest data sources from Azure, third-party clouds, and on-premises data sources."
     - content: "A place to explore data management"
       isCorrect: false
-      explanation: "This refers to a sandbox environment. Not relevant here."
+      explanation: "This option refers to a sandbox environment. Not relevant here."
     - content: "A physical location in the data center"
       isCorrect: false
-      explanation: "This refers to a data center and so not relevant here. Data Management Landing zone is logical."
+      explanation: "This option refers to a data center and so not relevant here. Data Management Landing zone is logical."
     - content: "None of the above"
       isCorrect: false
       explanation: ""
@@ -32,13 +32,13 @@ quiz:
     choices:
     - content: "Azure SQL server database"
       isCorrect: false
-      explanation: "This refers to a Azure sql database instance, which could be added for a data workload in to data landing zone. However it is not provisioned by default"
+      explanation: "This option refers to an Azure sql database instance, which could be added for a data workload in to data landing zone. However it isn't provisioned by default"
     - content: "Azure Purview"
       isCorrect: true
       explanation: "Data management and analytics scenario relies on Azure Purview to serve as: System of registration, Discovery for enterprise data sources, Data classification engine, Policy store, API for registering and reading data information, Compliance dashboard hub"
     - content: "Azure Databricks Workspace"
       isCorrect: false
-      explanation: "This refers to a Databricks workspace instance, which could be added to enable a data movement in to data landing zone. However it is not provisioned by default"
+      explanation: "This option refers to a Databricks workspace instance, which could be added to enable a data movement in to data landing zone. However it isn't provisioned by default"
     - content: "None of the above"
       isCorrect: false
       explanation: ""
