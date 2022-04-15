@@ -3,7 +3,7 @@ uid: learn.azure.enterprise-scale-introduction
 metadata:
   title: Introduction to enterprise-scale landing zones in the Microsoft Cloud Adoption Framework for Azure
   description: The Microsoft Cloud Adoption Framework for Azure provides many landing zone options. This module focuses on enterprise-scale landing zones.
-  ms.date: 09/21/2020
+  ms.date: 04/14/2022
   author: JefferyMitchell
   ms.author: jemitche
   ms.topic: interactive-tutorial
