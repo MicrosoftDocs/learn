@@ -31,7 +31,7 @@ Beyond core innovation, the IT team supports the following types of technologies
 
 - **Smart storefronts:** Storefronts include environmental controls, doors, lighting, interactive shelves, in-store displays and advertisements, and more than 500 point-of-sale systems.
 - **Corporate headquarters:** More than 900 employees work in corporate headquarters. Technology systems cover best-of-breed solutions to support processes across areas like real estate, logistics, supply chain, pricing, human resources, employee schedules/tracking, and payroll.
-- **User workstations:** Workstations are mostly desktop-based. A growing percentage of employees are opting for mobile and BYOD (bring you own device) options, in-store kiosks, and virtual desktop solutions.
+- **User workstations:** Workstations are mostly desktop-based. A growing number of employees are opting for mobile and BYOD (bring you own device) options, in-store kiosks, and virtual desktop solutions.
 - **Central operations:** The IT team provides ongoing technical operations for all IT and retail innovation assets.
 
 ## CIO transition (new strategy)
@@ -61,7 +61,7 @@ The leases for the two external datacenters are due to run out in 18 months and 
 - **CIO:** This is the first transformation effort to start since the new CIO accepted the role. The CIO will closely monitor the project and will examine how IT operates in the cloud.
 - **CTO:** The smaller of the two external datacenters hosts IT assets, including the experiments that the retail innovations team is developing. That datacenter also hosts mainstreamed innovations that are now considered production IT assets. The CTO wants to ensure that the company continues to innovate and that the existing innovations will be properly supported.
 - **Project managers:** Part of the IT department, project managers help to keep projects on time and on budget. They ensure that all the right stakeholders are involved.
-- **Central operations or infrastructure team:** The operations team is currently in charge of the datacenters. This team oversees areas like hardware maintenance, operating systems, patch management, networking, and out-of-hours support. Most team members are familiar with the current infrastructure but have little coding experience. The majority hold Microsoft qualifications related to Windows Server.
+- **Central operations or infrastructure team:** The operations team is currently in charge of the datacenters. This team oversees areas like hardware maintenance, operating systems, patch management, networking, and out-of-hours support. Most team members are familiar with the current infrastructure but have little coding experience. The majority holds Microsoft qualifications related to Windows Server.
 - **Developer:** The in-house development team makes the website for the online store that Tailwind Traders hosts from its own datacenter.
 - **IT manager:** The IT manager is in charge of the operations, developer, and project-management teams. This manager wants to make the IT department run better, replace old servers, and make Tailwind Traders more competitive. Another goal is to make things better for the operations team, which juggles many different systems.
 - **Finance director:** The finance director wants to reduce costs from the budget where possible. This director is familiar with the capital expenditure for the IT department and equipment.
