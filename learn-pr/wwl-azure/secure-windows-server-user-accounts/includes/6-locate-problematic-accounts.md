@@ -7,7 +7,7 @@ Accounts with fixed passwords are less secure than accounts that are required to
 When you find accounts that haven’t signed in for a specified number of days, you can disable those accounts. Disabling them allows you to reenable them should the person return. After you’ve located accounts that are configured with passwords that don't expire, you can take steps to ensure that an appropriate password update policy is enforced.
 
 > [!NOTE]
-> Note: User accounts with credentials shared by multiple IT staff members should be avoided, even if they have a strong password policy. Shared accounts make it hard to track which individual  performed a specific administrative task.
+> Note: User accounts with credentials shared by multiple IT staff members should be avoided, even if they have a strong password policy. Shared accounts make it hard to track which individual  performed a specific administrative task.
 You can use Windows PowerShell or the AD DS Administrative Center to find problematic users. To use Windows PowerShell to find active users with passwords set to never expire, use the following command:
 
 ```powershell
