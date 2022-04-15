@@ -56,7 +56,7 @@ In this Step 4, provide the following information
 
 ## Step 5 - select "Review + Create" for final review and create
 
-![DPLZ Deployment Create](../media/data-product-deployment-create.png.png)
+![DPLZ Deployment Create](../media/data-product-deployment-create.png)
 
 ## Step 6 - Validation after deployment
 
