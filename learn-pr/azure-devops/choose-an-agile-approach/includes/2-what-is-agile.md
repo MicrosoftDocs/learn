@@ -1,4 +1,4 @@
-Agile is a term that's used to describe approaches to software development, emphasizing incremental delivery, team collaboration, continual planning, and continual learning. Agile isn't a process as much as it is a philosophy or mindset for planning the work that a team will do. It's based on iterative development and helps a team better plan for and react to the inevitable changes that occur in software development. Let's listen in on Mara's discussion with Andy after the latest release.
+Agile is a term that's used to describe approaches to software development, emphasizing incremental delivery, team collaboration, continual planning, and continual learning. Agile isn't a process as much as it's a philosophy or mindset for planning the work that a team will do. It's based on iterative development and helps a team better plan for and react to the inevitable changes that occur in software development. Let's listen in on Mara's discussion with Andy after the latest release.
 
 Mara felt she'd made a few small steps toward interesting the team in DevOps, but progress has stalled. The team has been too busy fixing bugs in the last release to think about anything else.
 
@@ -73,6 +73,6 @@ Good tools can help your Agile team members collaborate more effectively, both w
 
 * [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software?azure-portal=true). This is an application that provides a workplace for chat, meetings, notes, and file storage.
 * [Skype](https://www.skype.com/?azure-portal=true). Skype is easy to use and a good general-purpose tool. Many people have it already installed.
-* [Slack](https://slack.com/?azure-portal=true). Slack provides many separate communication channels, all from a single interface. These can be organized in many ways, such as by project, team, or topic. Conversations are retained and are searchable. It is very easy to add both internal and external team members. Slack directly integrates with many third-party tools, like GitHub for source code.
+* [Slack](https://slack.com/?azure-portal=true). Slack provides many separate communication channels, all from a single interface. These can be organized in many ways, such as by project, team, or topic. Conversations are retained and are searchable. It's easy to add both internal and external team members. Slack directly integrates with many third-party tools, like GitHub for source code.
 
 Other common tools include Google Hangouts, Asana, Trello, GoToMeeting and monday.com. Try to familiarize yourself with the options to see which of them suit the needs of your team and your company.
