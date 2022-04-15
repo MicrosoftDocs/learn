@@ -1,6 +1,6 @@
-The Azure CLI includes a series of commands that you can use to interact with Azure storage. Run CLI commands to upload and download files between the local file system, and transfer data between blobs in Azure Blob storage.
+The Azure CLI includes a series of commands you can use to interact with Azure storage. Run CLI commands to upload and download files between the local file system and transfer data between blobs in Azure Blob storage.
 
-In this unit, you'll learn how to use the Azure CLI to move data to and from Azure Blob storage, and migrate move data between blob storage accounts.
+In this unit, you'll learn how to use the Azure CLI to move data to and from Azure Blob storage and move data between blob storage accounts.
 
 ## Create blobs and upload data
 
@@ -50,7 +50,7 @@ az storage blob upload \
   --file blobdata.dat
 ```
 
-If a blob with the given name already exists in the container, it will be overwritten. Use the `--if-match` parameter with an ETag to specify that the blob should only be overwritten with the new data if its ETag matches the value given. The `--if-none-match` parameter overwrites the blob if none of the ETags supplied in the command match that of the blob. Other options are `--if-modified-since` which overwrites the blob only if it has been modified since a specified date, and `--if-unmodified-since`, which makes sure that the blob hasn't changed since the date given. The following example uploads a file to blob storage, and overwrites an existing blob with the same name only if the blob hasn't changed since the date and time specified.
+If a blob with the given name already exists in the container, it will be overwritten. Use the `--if-match` parameter with an ETag to specify that the blob should only be overwritten with the new data if its ETag matches the value given. The `--if-none-match` parameter overwrites the blob if none of the ETags supplied in the command match that of the blob. Other options are `--if-modified-since`, which overwrites the blob only if it has been modified since a specified date, and `--if-unmodified-since`, which makes sure that the blob hasn't changed since the date given. The following example uploads a file to blob storage and overwrites an existing blob with the same name only if the blob hasn't changed since the date and time specified.
 
 ```azurecli
 az storage blob upload \
@@ -101,7 +101,7 @@ az storage blob show \
 
 As with uploading a blob, the `az storage blob copy` command can overwrite an existing blob with the same name in the destination container. You can provide ETags with the `--destination-if-match` and `--destination-if-none-match` parameters to only overwrite the destination of the ETag matches (or not). Also, this command has the `--destination-if-modified-since` and `--destination-if-unmodified-since` parameters, which will only overwrite the destination blob if it has or hasn't changed since a specified date and time. There are similar parameters for validating the source blob (`--source-if-match`, `--source-if-none-match`,  `--source-if-modified-since`, and `--source-if-unmodified-since`). Use these parameters to conditionally copy a blob only if it hasn't changed recently. They're useful if you're migrating older blobs to cool storage from hot storage.
 
-If you're moving a collection of blobs, run the `az storage blob copy start-batch` command. This command copies blobs from a source storage account and container to a destination storage account and container, but keeps the names of the blobs the same in both containers. Specify a pattern for matching the names of the source blobs, but the ETag and date condition options aren't available with this command. The following example copies all blobs with names that match the pattern *\*.dat* from one storage account to another. You can also include the `--dryrun` parameter, which causes the command to display the names of the blobs to be copied, but doesn't actually copy them.
+If you're moving a collection of blobs, run the `az storage blob copy start-batch` command. This command copies blobs from a source storage account and container to a destination storage account and container, but keeps the names of the blobs the same in both containers. you can specify a pattern for matching the names of the source blobs, but the ETag and date condition options aren't available with this command. The following example copies all blobs with names that match the pattern *\*.dat* from one storage account to another. You can also include the `--dryrun` parameter, which causes the command to display the names of the blobs to be copied, but doesn't actually copy them.
 
 ```azurecli
 az storage blob copy start-batch \
