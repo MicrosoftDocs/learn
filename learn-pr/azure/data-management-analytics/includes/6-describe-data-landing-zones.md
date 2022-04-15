@@ -1,4 +1,4 @@
-#
+
 
 The data landing zone is classified as a hosting area for the data centric workloads. It's always connected to the data management landing zone via networking components to allow for centralized governance and monitoring.
 
@@ -48,3 +48,7 @@ Details of Data Integration will be covered in next module
 ### Data Visualization
 
 For every data landing zone, an empty visualization resource group will be created. This group can be filled with services required to implement your visualization solution.
+
+## Other references
+
+<a href="/azure/cloud-adoption-framework/scenarios/data-management">Data Management and Analytics</a>

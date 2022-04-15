@@ -1,4 +1,3 @@
-#
 
 This module walks you through the process of provisioning a "Data Product" with in a "Data landing zone" into your own Azure subscription
 
@@ -57,7 +56,7 @@ In this Step 4, provide the following information
 
 ## Step 5 - select "Review + Create" for final review and create
 
-![DPLZ Deployment Create](../media/dp-deployment-create.png)
+![DPLZ Deployment Create](../media/data-product-deployment-create.png.png)
 
 ## Step 6 - Validation after deployment
 
@@ -65,7 +64,7 @@ You can use the details here to validate the deployment.
 
 ### Resource Group Name - XXXX-dev-dp001
 
-![DPLZ Data Product Validation](../media/dev-dp001-validation.png)
+![DPLZ Data Product Validation](../media/dev-data-product-001-validation.png)
 
 ## Other references
 

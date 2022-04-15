@@ -1,5 +1,5 @@
-#
 ##
+
 This module walks you through the process of provisioning the "Data Management landing zone" into your own Azure subscription
 
 ### Step 1 - Complete Pre-requisites
@@ -16,7 +16,7 @@ Follow the link below to register if not registered already
 
 <a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-management-zone%2Fmain%2Finfra%2Fmain.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-management-zone%2Fmain%2Fdocs%2Freference%2Fportal.dataManagementZone.json"> ![Deploy Data Management Landing Zone](../media/deploytoazure.svg) </a>
 
-![Initial Step](../media/dmlz-deployment-1.png)
+![Initial Step](../media/data-management-landing-zone-deployment-1.png)
 
 In this page, provide the following information
 
@@ -36,19 +36,19 @@ This step is required only if a user other than yourself has to be added as a co
 
 ### Step 4 - select  General Settings
 
-![General Settings](../media/dmlz-purview-root-collection-id.png)
+![General Settings](../media/data-management-landing-zone-purview-root-collection-id.png)
 
-In this step enter the root collection admin object id in the previous step
+In this step enter the root collection admin object ID in the previous step
 
 ### Step 5 - select Connection Settings
 
-![Connection Settings](../media/dmlz-deployment-connection-settings.png)
+![Connection Settings](../media/data-management-landing-zone-deployment-connection-settings.png)
 
-In this step select weather you would like to deploy this management into existing enterprise scale landing zone
+In this step select whether you would like to deploy this management into existing enterprise scale landing zone
 
 ### Step 6a - click "Review + Create"
 
-![Create Deployment](../media/dmlz-deployment-create.png)
+![Create Deployment](../media/data-management-landing-zone-deployment-create.png)
 
 This will trigger the deployment validation to check for any errors.
 
@@ -64,37 +64,37 @@ This will trigger the deployment. The deployment will take around 20 minutes to 
 
 This resource group is a placeholder for hosting any automation account
 
-![Automation Resource Group](../media/dmlz-automation-validation.png)
+![Automation Resource Group](../media/data-management-landing-zone-automation-validation.png)
 
 ##### Resource Group Name - XXXX-dev-consumption
 
 Azure Synapse Analytics private link hubs are Azure resources, which act as connectors between your secured network and the Synapse Studio web experience
 
-![Consumption Resource Group](../media/dmlz-consumption-validation.png)
+![Consumption Resource Group](../media/data-management-landing-zone-consumption-validation.png)
 
 ##### Resource Group Name - XXXX-dev-container
 
 To allow the Data Platform Ops to deploy standard containers for use in data science projects, the Data Management Landing Zone hosts an Azure Container Registry.
 
-![Container Registry Resource Group](../media/dmlz-container-validation.png)
+![Container Registry Resource Group](../media/data-management-landing-zone-container-validation.png)
 
 ##### Resource Group Name - XXXX-dev-global-dns
 
 The Enterprise Scale Analytics and AI solution pattern makes us of Private Links, which relies on having a private DNS zone. You should see 46 private link resources within this resource group.
 
-![Global DNS Resource Group](../media/dmlz-dns-validation.png)
+![Global DNS Resource Group](../media/data-management-landing-zone-dns-validation.png)
 
 ##### Resource Group Name - XXXX-dev-governance
 
 The Purview instance and private endpoints for communication between Purview and other services within the same private network.
 
-![Governance Resource Group](../media/dmlz-governance-validation.png)
+![Governance Resource Group](../media/data-management-landing-zone-governance-validation.png)
 
 ##### Resource Group Name - XXXX-dev-network
 
 The Enterprise Scale Analytics and AI solution pattern makes use of Private Links, which relies on having a private DNS zone.
 
-![Network Resource Group](../media/dmlz-network-validation.png)
+![Network Resource Group](../media/data-management-landing-zone-network-validation.png)
 
 ##### Resource Group Name - XXXX-dev-mgmt
 

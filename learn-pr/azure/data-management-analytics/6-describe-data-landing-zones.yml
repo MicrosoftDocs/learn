@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-management-analytics.describe-data-landing-zones
-title: Describe Data Landing Zones
+title: Describe data landing zones
 metadata:
   unitType: learning-content
-  title: describe-data-landing-zones
-  description: "enterprise scale data management and analytics scenario"
+  title: Describe data landing zones
+  description: "Describe data landing zones."
   ms.date: 1/28/2022
   author: lapate
   ms.author: lapate

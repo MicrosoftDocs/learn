@@ -1,7 +1,6 @@
-#
 ##
 
-It is very important to define a long term data strategy that when executed results in incremental value returns for the business. Business outcomes is the direct measure of how well the strategy is executed based on the priority.
+It is very important to define a long term data strategy that when executed results in incremental value returns for the business. Business outcomes are the direct measure of how well the strategy is executed based on the priority.
 
 ### Integration of Data Management and Analytics into the Cloud Adoption Strategy
 
@@ -49,7 +48,7 @@ Choose right storage technologies based on workloads.  For advanced analytics su
 
 ### Data Processing
 
-Once data is persisted in the storage, data processing deals with transforming it to a usable format. When defining data processing, it's important to consider real-time Vs batch, compute scaling, GPU support, memory limits etc.
+Once data is persisted in the storage, data processing deals with transforming it to a usable format. When defining data processing, it's important to consider real-time versus batch, compute scaling, GPU support, memory limits etc.
 
 ### Analytics
 

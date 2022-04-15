@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-management-analytics.exercise-provision-data-management-landing-zone
-title: Exercise Provision Data Management Landing Zone
+title: Exercise - Provision data management landing zone
 metadata:
   unitType: exercise
-  title: exercise-provision-data-management-landing-zone
-  description: "enterprise scale data management and analytics scenario"
+  title: Exercise - Provision data management landing zone
+  description: "Exercise to provision a data management landing zone."
   ms.date: 1/28/2022
   author: lapate
   ms.author: lapate

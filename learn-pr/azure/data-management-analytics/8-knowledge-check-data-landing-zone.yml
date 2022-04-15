@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-management-analytics.knowledge-check-data-landing-zone
-title: Knowledge Check - Data Landing Zone
+title: Knowledge check - Data landing zone
 metadata:
   unitType: knowledge_check
-  title: knowledge-check-data-landing-zone
-  description: "enterprise scale data management and analytics scenario"
+  title: Knowledge check - Data landing zone
+  description: "Knowledge check for Data landing zone."
   ms.date: 1/28/2022
   author: lapate
   ms.author: lapate
@@ -18,11 +18,11 @@ quiz:
     choices:
     - content: "Core Services"
       isCorrect: false
-      explanation: ""
-    - content: "Core Services, Data Integration, Data Products"
-      isCorrect: false
-      explanation: ""
+      explanation: "This is only one of several layers of a data landing zone"
     - content: "Core Services, Data Integration"
+      isCorrect: false
+      explanation: "The list is missing one of the most important layer."
+    - content: "Core Services, Data Integration, Data Products"
       isCorrect: true
       explanation: "A data landing zone has several layers to enable agility to service data integrations and data products within it. You can deploy a new data landing zone with a standard set of services to enable the data landing zone to start ingesting and analyzing data."
     - content: "Core Services, Data Integration, Data Products, Visualization"
@@ -36,10 +36,10 @@ quiz:
       explanation: "Data landing zones are connected to the data management landing zone by virtual network (VNet) peering. They're considered a landing zone related to the enterprise-scale architecture."
     - content: "Not connected at all"
       isCorrect: false
-      explanation: ""
+      explanation: "Data landing zones are connected to the data management landing zone by virtual network (VNet) peering. They're considered a landing zone related to the enterprise-scale architecture."
     - content: "Shared Virtual Network"
       isCorrect: false
-      explanation: ""
+      explanation: "The shared virtual network is not a concept for the platform"
     - content: "None of these"
       isCorrect: false
       explanation: ""
@@ -48,13 +48,13 @@ quiz:
     choices:
     - content: "Connect Data Management and Data landing zones"
       isCorrect: false
-      explanation: ""
+      explanation: "This setup is required to establish data governance. However it is not part of data integration layer."
     - content: "Data Enrichment and ingestion from external data sources like CRM"
       isCorrect: true
       explanation: "A data integration resource group is responsible for data ingestion and enrichment only from external sources such a telemetry, finance, and CRM. This layer can operate in both real-time, batch and micro-batch."
     - content: "A subnet to host connectivity to on-premises data center"
       isCorrect: false
-      explanation: ""
+      explanation: "This setup is required for Virtual Private Network or Express Route.However it is not part of data integration layer."
     - content: All of the above"
       isCorrect: false
       explanation: ""

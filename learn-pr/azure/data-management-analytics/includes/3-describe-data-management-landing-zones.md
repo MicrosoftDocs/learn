@@ -1,4 +1,3 @@
-#
 
 The data management landing zone is classified as a management function and is central to the data management and analytics scenario. It's responsible for the governance of the platform and enables communication to ingest data sources from Azure, third-party clouds, and on-premises data sources. It's the heart of the data governance flow.
 
@@ -64,6 +63,10 @@ From a consumer perspective, data quality is:
 • "data that are fit for use by data consumers"
 • data "meeting or exceeding consumer expectations"
 
+#### Below is a typical data management landing zone architecture. 
+
+![Multiple data landing zones](../media/high-level-design-multiple-landing-zones.png)
+
 ### Azure Purview Context
 
 Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and software-as-a-service (SaaS) data. Create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Enable data curators to manage and secure your data estate. Empower data consumers to find valuable, trustworthy data.
@@ -73,3 +76,7 @@ High-level architecture of Azure Purview, showing multi-cloud and on premises so
 Azure Purview automates data discovery by providing data scanning and classification as a service for assets across your data estate. Metadata and descriptions of discovered data assets are integrated into a holistic map of your data estate. Atop this map, there are purpose-built apps that create environments for data discovery, access management, and insights about your data landscape.
 
 ![High Level Purview Overview](../media/high-level-overview-purview.png)
+
+## Other references
+
+<a href="/azure/cloud-adoption-framework/scenarios/data-management">Data Management and Analytics</a>

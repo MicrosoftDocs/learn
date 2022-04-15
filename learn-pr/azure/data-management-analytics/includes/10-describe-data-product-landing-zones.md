@@ -1,4 +1,3 @@
-# 
 
 A data product landing zone serves as a design area where all data products could be hosted. A data product brings all siloed, hidden, non-discoverable data together in a systematic domain driven approach. It makes this dataset available as a high quality data asset to the consumer. A data product is similar to software product who has an owner.  The business values it serves is in the form of data as a business critical service.
 
@@ -24,6 +23,22 @@ A data product is a result of data from one or many data integrations and/or oth
 
 ![Data Landing Zone Product](../media/data-landing-zone-product.png)
 
+
+## A typical data product components are shown below
+
 ![Data Landing Zone Architecture Details](../media/data-product-landing-zone-arch-detail.png)
 
-![Banking Example Data Product(../media/banking-industry-example-dataproduct.png)
+
+## Cross-product flow
+
+A data product could also use data services from other data products as below and provide a composite product as depicted below 
+
+![Data Product polyglot](../media/data-product-landing-zone-polyglot.png)
+
+### Here is an example for a banking data product
+
+![Banking Example Data Product](../media/banking-industry-example-dataproduct.png)
+
+## Other references
+
+<a href="/azure/cloud-adoption-framework/scenarios/data-management">Data Management and Analytics</a>

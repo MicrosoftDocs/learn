@@ -1,6 +1,4 @@
 
-#
-
 In this module, we learned about building blocks of enterprise scale data management and analytics
 
 Azure landing zones represent the strategic design path and target technical state for your environment. The landing zones are for ease of deployment and governance to provide greater agility and compliance. They also ensure that when a new application or workload lands in your environment, the proper ‘plumbing’ is already in place.

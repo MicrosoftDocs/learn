@@ -1,5 +1,4 @@
-
-#
+##
 
 As the data grows with the business need, building an enterprise scale analytics solution requires careful thinking. It forces organizations to think strategically on the resource setup, utilization, governance and plumbing that must exist before actual workloads gets on-boarded to Azure.
 
