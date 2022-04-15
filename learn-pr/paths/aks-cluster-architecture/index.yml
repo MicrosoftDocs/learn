@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Azure Kubernetes Service (AKS) cluster architecture and operations
 summary: |
-  In this learning path, you’ll understand some of the fundamental cluster architecture decisions you’ll be faced with and be given the tools to help you make decisions for them.  Likewise, you’ll learn about some of the governance and operations features available to AKS clusters.
+  In this learning path, you'll understand some of the fundamental cluster architecture decisions you'll be faced with and be given the tools to help you make decisions for them.  You'll also learn about some of the governance and operations features available to AKS clusters.
 prerequisites: |
   - An Azure subscription 
   - Ability to use the Azure CLI 
@@ -24,6 +24,10 @@ levels:
 - advanced
 roles:
 - developer
+- solution-architect
+- devops-engineer
+- administrator
+- auditor
 products:
 - azure
 modules:
