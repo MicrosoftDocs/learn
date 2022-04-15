@@ -12,10 +12,10 @@ title: Deploy Azure AD identity protection
 summary: Protect identities in Azure AD using Conditional Access, MFA, access reviews, and other capabilities.
 abstract: |
   By the end of this module, you'll will be able to:
-  - Deploy and configure Identity Protection
-  - Configure MFA for users, groups, and applications
-  - Create Conditional Access policies to ensure your security
-  - Create and follow an access review process
+  *   Deploy and configure Identity Protection
+  *   Configure MFA for users, groups, and applications
+  *   Create Conditional Access policies to ensure your security
+  *   Create and follow an access review process
 prerequisites: |
   - None
 iconUrl: /learn/achievements/azure-ad-identity-protection.svg
