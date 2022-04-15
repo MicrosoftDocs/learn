@@ -52,7 +52,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     Remember to note your password, unique ID, and region. You'll use them throughout the module.
 
-1. Run the following script to deploy an Azure SQL Database instance and logical server with the AdventureWorksLT sample. The script will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units. Allow several minutes for this script to complete. 
+1. Run the following script to deploy an Azure SQL Database instance and logical server with the AdventureWorksLT sample. The script will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units. Allow several minutes for this script to complete.
 
     ```powershell
     # The logical server name has to be unique in the system
@@ -150,7 +150,7 @@ Once you enable CDC on the database, you'll notice the CDC artifacts being creat
 4. Check the change table and you'll see that a new record has automatically been added by the CDC scheduler, which runs scan and cleanup.
 
     ```sql
-    SELECT * FROM [SalesLT].[Customer] 
+    SELECT * FROM cdc.SalesLT_Customer_CT 
     ```
 
     The entire row is added and the _$operation record is 2 as expected, which represents an insert statement.
@@ -168,7 +168,11 @@ Once you enable CDC on the database, you'll notice the CDC artifacts being creat
     WHERE CustomerID = 1;
     ```
 
-6. Check the change table and you'll notice that there are two rows since CDC records both pre-image (before update) and after image (after update) for update operations. The data columns of the row that results from an insert operation contain the column values after the insert. The data columns of the row that results from a delete operation contain the column values before the delete. An update operation requires one-row entry to identify the column values before the update, and a second row entry to identify the column values after the update.
+6. Check the change table again and now you'll notice that there are two more rows, since CDC records both pre-image (before update) and after image (after update) for update operations. The data columns of the row that results from an insert operation contain the column values after the insert. The data columns of the row that results from a delete operation contain the column values before the delete. An update operation requires one-row entry to identify the column values before the update, and a second row entry to identify the column values after the update.
+
+    ```sql
+    SELECT * FROM cdc.SalesLT_Customer_CT 
+    ```
 
 ### Disable CDC on your table
 
