@@ -12,7 +12,7 @@ On the Azure Monitor Insights Onboarding page, you are prompted to create a work
 
 <kbd>![Azure Monitor enable VM Insights](../media/image-1.png)<kbd>
 
-1. With VM insights enabled, you will get a message that the machine has been successfully onboarded to VM insights. This process takes a few minutes as extensions are installed on your connected machine.
+With VM insights enabled, you will get a message that the machine has been successfully onboarded to VM insights. This process takes a few minutes as extensions are installed on your connected machine.
 
 ## View collected data
 
