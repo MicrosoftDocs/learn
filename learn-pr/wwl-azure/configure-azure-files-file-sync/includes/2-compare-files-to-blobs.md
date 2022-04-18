@@ -32,7 +32,7 @@ Sometimes it is difficult to decide when to use file shares instead of blobs or 
     **Azure Files**
   :::column-end:::
   :::column:::
-    Provides an SMB interface, client libraries, and a REST interface that allows access from anywhere to stored files.
+    Provides SMB, NFS, client libraries, and a REST interface that allows access from anywhere to stored files.
   :::column-end:::
   :::column:::
     You want to "lift and shift" an application to the cloud that already uses the native file system APIs to share data between it and other applications running in Azure. You want to store development and debugging tools that need to be accessed from many virtual machines.
