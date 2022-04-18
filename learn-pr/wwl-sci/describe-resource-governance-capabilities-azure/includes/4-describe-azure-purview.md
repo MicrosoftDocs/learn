@@ -14,3 +14,4 @@ With the Azure Purview Data Catalog, business and technical users can quickly an
 
 ### Data Insights
 With the Azure Purview Data Insights, data officers and security officers can get a bird’s eye view and at a glance understand what data is actively scanned, where sensitive data is, and how it moves.
+
