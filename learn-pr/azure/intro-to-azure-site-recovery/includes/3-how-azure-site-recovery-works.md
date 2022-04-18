@@ -2,7 +2,7 @@ Azure Site Recovery manages the orchestration of disaster recovery. Azure Site R
 
 You can perform a failover if you wish to shift where your workloads are running, or if there is an issue that is causing disruption at the primary location. After you perform a failover, the workloads that were running in the primary location or region can run in the secondary location. Once the issue at the primary location has been resolved, you can failback the workloads to the primary location.
 
-![Diagram showing source and target replication.](../media/source-and-target-environments.png)
+[![Diagram showing source and target replication.](../media/source-and-target-environments-smaller.png)](../media/source-and-target-environments.png#lightbox)
 
 If the primary location has an issue, Azure Site Recovery can replicate protected VMs to another Azure region.
 
@@ -104,8 +104,7 @@ Failover isn't automatic when the primary location suffers an unexpected outage.
 
 > [!NOTE]
 > Failback from Azure to an on-premises physical server isn't currently supported, but it is possible to fail back a physical server replicated to Azure to a VMware virtual machine.
-
-> [!NOTE]
+> 
 > If the primary datacenter experiences an unexpected outage, you can trigger an unplanned failover from the secondary site. Site Recovery does not require connectivity from the primary site to perform the failover.
 
 ## VM reprotection

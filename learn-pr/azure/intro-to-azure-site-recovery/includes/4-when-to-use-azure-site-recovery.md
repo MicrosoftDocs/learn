@@ -1,8 +1,11 @@
 Azure Site Recovery is the appropriate solution for Adatum for the following reasons:
 
 - Azure Site Recovery can orchestrate the replication of virtual machines in Adatum's Sydney datacenter to the Australia East Azure region. If necessary, Adatum can temporarily failover these workloads to Australia East Azure region and fail them back at a later point in time.
+
 - Azure Site Recovery can orchestrate the replication of virtual machines in the Australia East Azure region to the Australia Southeast region.
+
 - Azure Site Recovery can be configured to store recovery points for two weeks, which meets Adatum's goals for recovering from data corruption problems.
+
 - Azure Site Recovery allows test failovers to be performed without performing an actual failover, allowing you to verify that the existing virtual machine protection configuration meets Adatum's needs.
 
 ## When not to use Azure Site Recovery
