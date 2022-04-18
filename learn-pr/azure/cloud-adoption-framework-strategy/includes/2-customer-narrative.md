@@ -17,7 +17,7 @@ In addition to new innovations, Tailwind Traders' central IT team supports the b
 
 - **Smart storefronts**: Environmental controls, doors, lighting, interactive shelves, in-store displays and advertisements, and more than 500 point-of-sale systems.
 - **Corporate headquarters**: More than 900 employees hosted in corporate headquarters, with technology systems that offer best-in-class solutions to support processes like real estate, logistics, supply chain, pricing, human resources, employee schedules and tracking, and payroll.
-- **User workstations**: Mostly desktop-based, with a growing percentage of employees opting for mobile, bring you own device (BYOD), in-store kiosks, and virtual desktop solutions.
+- **User workstations**: Mostly desktop-based, with a growing percentage of employees opting for mobile, bring your own device (BYOD), in-store kiosks, and virtual desktop solutions.
 - **Central operations**: Ongoing technical operations for all IT and retail innovation assets.
 
 Tailwind Traders currently has three datacenters. The leases for two of its datacenters are due to end in 18 months and 24 months. The IT manager and finance director have been talking, and they don't want to renew the leases. Instead, they are considering a project to upgrade, consolidate, and use the cloud as a replacement for the two expiring datacenters. The CIO sees this project as an opportunity to rethink IT operations for the company.
