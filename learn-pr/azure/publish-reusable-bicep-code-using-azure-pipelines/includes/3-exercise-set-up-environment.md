@@ -22,7 +22,7 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps project.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-staging.azurewebsites.net/?name=bicepreusable&azure-portal=true) <!-- TODO wait for prod link -->
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreusable&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, do the following:
 
@@ -132,29 +132,21 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone pivot="cli"
 
-1. To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
+To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
-   ```azurecli
-   az group create --name ToyReusable --location westus3
-   ```
-
-1. Look at the JSON output from the command. It includes an `id` property, which is the resource group ID.
-
-   Copy this ID to somewhere safe. You'll use it soon.
+```azurecli
+az group create --name ToyReusable --location westus3
+```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
+To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
 
-   ```azurepowershell
-   New-AzResourceGroup -Name ToyReusable -Location westus3
-   ```
-
-1. Look at the output from the command. It includes a `ResourceId` property, which is the fully qualified ID for the resource group.
-
-   Copy this ID to somewhere safe. You'll use it soon.
+```azurepowershell
+New-AzResourceGroup -Name ToyReusable -Location westus3
+```
 
 ::: zone-end
 
