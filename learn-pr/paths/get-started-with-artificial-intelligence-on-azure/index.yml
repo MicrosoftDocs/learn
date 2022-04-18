@@ -28,6 +28,8 @@ products:
 - azure-bot-service
 - azure-cognitive-services
 - azure-machine-learning
+subject:
+- artificial-intelligence
 modules:
 - learn.wwl.get-started-ai-fundamentals
 trophy:
