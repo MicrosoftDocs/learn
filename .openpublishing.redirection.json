@@ -12715,6 +12715,41 @@
       "source_path": "learn-pr/wwl-sci/describe-endpoint-security-with-microsoft-intune/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/2-understand-compatibility-level.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/3-understand-azure-preview-features.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/4-describe-azure-database-migration-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
     }
   ]
 }
