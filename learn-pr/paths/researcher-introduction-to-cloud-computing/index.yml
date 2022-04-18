@@ -35,6 +35,9 @@ products:
 - azure
 - azure-storage
 - azure-virtual-machines
+subject:
+- cloud-computing
+- storage
 modules:
 - learn.azure.intro-to-azure-fundamentals
 - learn.azure.azure-architecture-fundamentals
