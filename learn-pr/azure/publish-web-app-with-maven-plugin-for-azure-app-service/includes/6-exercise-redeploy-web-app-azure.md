@@ -1,4 +1,4 @@
-In the previous exercise, you learned how to configure your web app to use the Maven Plugin for Azure App Service. Your Maven project is properly configured and tested, and you can iterate, improve, and then redeploy your app to Azure. For example, let's say you want to retrieve some specific details about where Azure has deployed your application code and redeploy your web app.
+In the previous exercise, you learned how to configure your web app to use the Maven Plugin for Azure App Service. Your Maven project is properly configured and tested. You can iterate, improve, and then redeploy your app to Azure. For example, let's say you want to retrieve some specific details about where Azure has deployed your application code and redeploy your web app.
 
 In this exercise, you'll update the `index.jsp` page for your web app to include some information about the server. After testing those changes locally, you'll redeploy your web app to Azure.
 
@@ -45,7 +45,7 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
 
 1. Quit the code editor by typing <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
-1. You'll need to open a port to make the local web server available to view in a browser. In the cloud shell, use `CURL`.
+1. You'll need to open a port to make the local web server available to view in a browser. In the Cloud Shell, use `CURL`.
 
     ```bash
     curl -X POST http://localhost:8888/openPort/8000;
@@ -61,6 +61,8 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
     ![Example web app running on Tomcat in a web browser.](../media/6-web-app-on-tomcat-server.png)
 
 1. Visit the deployed app by selecting the URL in the shell to see the deployed app running on App Services.
+
+1. Stop the web app with <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 1. Close the open port using `CURL`.
 
@@ -110,7 +112,7 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
 
 ## Stream logs in real time
 
-1. Now you have your app deployed and running on App Service. In case for troubleshoot, you can use the simple Azure CLI command to get real time log streaming from the app:
+1. Now you've deployed and run your app on App Service. If you need to troubleshoot, you can use this Azure CLI command to get real time log streaming from the app:
 
     ```azcli
     az webapp log tail -n <app name> -g <sandbox resource group name>
