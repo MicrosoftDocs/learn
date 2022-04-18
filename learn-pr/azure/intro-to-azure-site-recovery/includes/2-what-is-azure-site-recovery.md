@@ -4,7 +4,7 @@ Because Azure Site Recovery is built natively into Azure, you can use it to run 
 
 Use Azure Site Recovery to seamlessly protect your VM instances in Azure by mirroring the source VM configuration and creating required or associated resource groups, storage accounts, virtual networks, and availability sets to a secondary Azure region.
 
-## Failover and Failback
+## Failover and failback
 
 There are two terms that you should understand when working with Azure Site Recovery:
 
