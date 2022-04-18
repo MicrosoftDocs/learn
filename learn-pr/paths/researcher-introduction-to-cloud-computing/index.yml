@@ -35,7 +35,7 @@ products:
 - azure
 - azure-storage
 - azure-virtual-machines
-subject:
+subjects:
 - cloud-computing
 - storage
 modules:
