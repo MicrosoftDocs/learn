@@ -6,7 +6,7 @@ To meet these objectives, you'll:
 > * Set up an Azure DevOps project for this module.
 > * Clone the project's repository to your computer.
 > * Create a resource group in Azure.
-> * Create a service connections in Azure Pipelines.
+> * Create a service connection in Azure Pipelines.
 
 ## Get the Azure DevOps project
 
@@ -22,7 +22,7 @@ The modules in this learning path are part of a progression. For learning purpos
 Run a template that sets up your Azure DevOps project.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-staging.azurewebsites.net/?name=bicepreusable&azure-portal=true) <!-- TODO wait for prod link -->
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=bicepreusable&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, do the following:
 
@@ -132,35 +132,27 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone pivot="cli"
 
-1. To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
+To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
-   ```azurecli
-   az group create --name ToyReusable --location westus3
-   ```
-
-1. Look at the JSON output from the command. It includes an `id` property, which is the resource group ID.
-
-   Copy this ID to somewhere safe. You'll use it soon.
+```azurecli
+az group create --name ToyReusable --location westus3
+```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
+To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
 
-   ```azurepowershell
-   New-AzResourceGroup -Name ToyReusable -Location westus3
-   ```
-
-1. Look at the output from the command. It includes a `ResourceId` property, which is the fully qualified ID for the resource group.
-
-   Copy this ID to somewhere safe. You'll use it soon.
+```azurepowershell
+New-AzResourceGroup -Name ToyReusable -Location westus3
+```
 
 ::: zone-end
 
-## Create service connections in Azure Pipelines
+## Create a service connection in Azure Pipelines
 
-Next, create a service connections in Azure Pipelines. This process automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to be deploy into the resource group.
+Next, create a service connection in Azure Pipelines. This process automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy into the resource group.
 
 1. In your browser, select **Project settings**.
 
