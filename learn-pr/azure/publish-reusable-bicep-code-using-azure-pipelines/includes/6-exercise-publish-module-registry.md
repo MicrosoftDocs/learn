@@ -66,7 +66,7 @@ In the preceding unit, you learned about the importance of having a versioning s
 
 Your repository contains a draft of a pipeline that you can use as a starting point.
 
-1. Open the *pipeline.yml* file in the *modules/storage-account* folder..
+1. Open the *pipeline.yml* file in the *modules/storage-account* folder.
 
 1. On line 16, update the value of the `ModuleRegistryServer` environment variable to your container registry's server name. You copied that name earlier in this exercise. 
 
