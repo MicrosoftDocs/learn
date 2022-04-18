@@ -112,7 +112,7 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
 
 ## Stream logs in real time
 
-1. Now you've deployed and run your app on App Service. If you need to troubleshoot, you can use this Azure CLI command to get real time log streaming from the app:
+- Now you've deployed and run your app on App Service. If you need to troubleshoot, you can use this Azure CLI command to get real time log streaming from the app:
 
     ```azcli
     az webapp log tail -n <app name> -g <sandbox resource group name>
