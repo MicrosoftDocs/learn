@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-site-recovery.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: TBD
+  description: Knowledge check
   ms.date: 04/05/2022
   author: orin-thomas
   ms.author: orthomas
@@ -25,7 +25,7 @@ quiz:
       explanation: Correct. App-consistent recovery points are created from app-consistent snapshots. They capture the same data as crash-consistent snapshots, and in addition capture data in memory, and all transactions in process.
     - content: Hyper-V Snapshot
       isCorrect: false
-      explanation: Incorrect. TBD.
+      explanation: Incorrect. App-consistent recovery points are created from app-consistent snapshots.
   - content: You are replicating Hyper-V virtual machines from an on-premises datacenter to Azure. Which of the following Azure Site Recovery items can you use during a failover to recover the virtual machine and its memory state at the time the recovery point was taken?Which of the following paths to Azure can be the conduit for Azure Site Recovery replication traffic from an on-premises primary site to an Azure secondary site?
     choices:
     - content: Azure Point-to-Site VPN

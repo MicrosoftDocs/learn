@@ -1,8 +1,8 @@
-Azure Site Recovery manages the orchestration of disaster recovery. ASR is designed to replicate workloads from a primary location or region to a secondary location. 
+Azure Site Recovery manages the orchestration of disaster recovery. Azure Site Recovery is designed to replicate workloads from a primary location or region to a secondary location. 
 
 You can perform a failover if you wish to shift where your workloads are running, or if there is an issue that is causing disruption at the primary location. After you perform a failover, the workloads that were running in the primary location or region can run in the secondary location. Once the issue at the primary location has been resolved, you can failback the workloads to the primary location.
 
-![Diagram showing source and target replication.](../media/image2.png)
+![Diagram showing source and target replication.](../media/source-and-target-environments.png)
 
 If the primary location has an issue, Azure Site Recovery can replicate protected VMs to another Azure region.
 
@@ -10,7 +10,7 @@ If the primary location has an issue, Azure Site Recovery can replicate protecte
 
 Replication is the process of continuously transferring the state of the protected workloads from the primary location or region to the secondary location. Replication from on-premises to Azure occurs across a TLS 1.2 connection on the public internet. 
 
-![TBD](../media/image3.png)
+![Diagram showing on-premises Hyper-V site replication to Azure.](../media/on-premises-hyper-v-site-to-azure.png)
 
 You cannot configure replication over Azure VPN; however, you can configure replication over Azure ExpressRoute under the following conditions:
 
@@ -40,7 +40,7 @@ The frequency of replication data transmission between primary and secondary loc
 
 **Note**: You cannot perform an offline replication using Azure Data Box or other storage technologies for the initial replication to Azure.
 
-For scenarios where you are replicating from one Azure region to another, it is possible to replicate between Azure subscriptions if those subscriptions are associated with the same Azure AD tenant. 
+For scenarios where you're replicating from one Azure region to another, it is possible to replicate between Azure subscriptions if those subscriptions are associated with the same Azure AD tenant. 
 
 ## Recovery points
 
