@@ -8,8 +8,8 @@ Like most businesses, Tailwind Traders is attempting to balance two competing bu
 
 The Tailwind Traders retail innovation team uses technology to continually redefine the company's position as a leader in modern commerce. Those technology solutions are the primary hub for interactions with Tailwind customers. The solutions affect 60 percent of global revenue and produce 30 percent of annual gross sales. A few examples of those innovations include:
 
-- **Boundless commerce**: Originally a simple e-commerce solution, this custom-built platform now provides online and offline experiences for customers. Purchases can be made from the platform. The mobile app gathers information from the customer's viewing history to customize the retail experience with in-store ads, shopping lists, and other interactions.
-- **Analytics, AI, and robotics innovation**: Tailwind is experimenting with drone delivery, autonomous warehousing, and other AI-lead approaches to reduce costs, scale through automation, and improve customer experiences. These experiments are built on big data, analytics, and AI solutions.
+- **Boundless commerce**: Originally a simple e-commerce solution, this custom-built platform now provides online and offline experiences for customers. Customers can make purchases from the platform. The mobile app gathers information from the customers' viewing history to customize the retail experience with in-store ads, shopping lists, and other interactions.
+- **Analytics, AI, and robotics innovation**: Tailwind is experimenting with drone delivery, autonomous warehousing, and other AI-led approaches to reduce costs, scale through automation, and improve customer experiences. These experiments are built on big data, analytics, and AI solutions.
 
 ## Migration objectives
 
