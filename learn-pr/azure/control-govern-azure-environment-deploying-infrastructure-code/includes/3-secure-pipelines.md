@@ -14,6 +14,8 @@ Protect your service connections/secrets to ensure that their credentials can't 
 
 (When it's GA) Use conditional access for service principals - e.g. to look for risky sign-ins and behaviours.
 
+Use separate SPs for each environment.
+
 ## Assess third-party components
 
 If you use community-provided GitHub Actions or Azure DevOps extensions, ensure you understand their provenance and consider the security risk.
