@@ -6,7 +6,7 @@ To meet these objectives, you'll:
 > * Set up an Azure DevOps project for this module.
 > * Clone the project's repository to your computer.
 > * Create a resource group in Azure.
-> * Create a service connections in Azure Pipelines.
+> * Create a service connection in Azure Pipelines.
 
 ## Get the Azure DevOps project
 
@@ -150,9 +150,9 @@ New-AzResourceGroup -Name ToyReusable -Location westus3
 
 ::: zone-end
 
-## Create service connections in Azure Pipelines
+## Create a service connection in Azure Pipelines
 
-Next, create a service connections in Azure Pipelines. This process automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to be deploy into the resource group.
+Next, create a service connection in Azure Pipelines. This process automatically creates a service principal in Azure. It also grants the service principal the Contributor role on your resource group, which allows your pipeline to deploy into the resource group.
 
 1. In your browser, select **Project settings**.
 
