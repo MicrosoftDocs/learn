@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: You are replicating Hyper-V virtual machines from an on-premises datacenter to Azure. Which of the following Azure Site Recovery items can you use during a failover to recover the virtual machine and its memory state at the time the recovery point was taken?
+  - content: You're replicating Hyper-V virtual machines from an on-premises datacenter to Azure. Which of the following Azure Site Recovery items can you use during a failover to recover the virtual machine and its memory state at the time the recovery point was taken?
     choices:
     - content: Crash consistent recovery point
       isCorrect: false
@@ -26,18 +26,18 @@ quiz:
     - content: Hyper-V Snapshot
       isCorrect: false
       explanation: Incorrect. App-consistent recovery points are created from app-consistent snapshots.
-  - content: You are replicating Hyper-V virtual machines from an on-premises datacenter to Azure. Which of the following Azure Site Recovery items can you use during a failover to recover the virtual machine and its memory state at the time the recovery point was taken?Which of the following paths to Azure can be the conduit for Azure Site Recovery replication traffic from an on-premises primary site to an Azure secondary site?
+  - content: You're replicating Hyper-V virtual machines from an on-premises datacenter to Azure. Which of the following Azure Site Recovery items can you use during a failover to recover the virtual machine and its memory state at the time the recovery point was taken?Which of the following paths to Azure can be the conduit for Azure Site Recovery replication traffic from an on-premises primary site to an Azure secondary site?
     choices:
     - content: Azure Point-to-Site VPN
       isCorrect: false
-      explanation: Incorrect. You cannot configure replication to occur over an Azure VPN.
+      explanation: Incorrect. You can't configure replication to occur over an Azure VPN.
     - content: Azure Site-to-Site VPN
       isCorrect: false
-      explanation: Incorrect. You cannot configure replication to occur over an Azure VPN.
+      explanation: Incorrect. You can't configure replication to occur over an Azure VPN.
     - content: Azure ExpressRoute
       isCorrect: true
-      explanation: Correct. While you cannot configure replication to occur over a VPN, you can configure replication to occur over Azure ExpressRoute.
-  - content: You are replicating Hyper-V virtual machines from an on-premises datacenter to Azure. Which of the following Azure Site Recovery items can you use during a failover to recover the virtual machine and its memory state at the time the recovery point was taken?What's the longest period of time that recovery points are stored?
+      explanation: Correct. While you can't configure replication to occur over a VPN, you can configure replication to occur over Azure ExpressRoute.
+  - content: You're replicating Hyper-V virtual machines from an on-premises datacenter to Azure. Which of the following Azure Site Recovery items can you use during a failover to recover the virtual machine and its memory state at the time the recovery point was taken?What's the longest period of time that recovery points are stored?
     choices:
     - content: 24 hours
       isCorrect: false

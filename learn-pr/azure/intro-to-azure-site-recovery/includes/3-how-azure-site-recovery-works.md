@@ -55,9 +55,9 @@ The two types of snapshots available are Crash-consistent and App-consistent:
 
 - Crash-consistent recovery represents the data on-disk at the time the snapshot is taken. The snapshots are captured every 5 minutes, by default. The crash-consistent recovery point doesn't include anything that was in memory when the snapshot was taken.
 
-- App-consistent recovery captures the same data as crash-consistent but also includes all in-memory data and in-process transactions. Including the in-memory data means that the Site Recovery can restore a VM and any running apps without any data loss. The snapshots are not captured by default. You can enable them in the Replication policy if required. 
+- App-consistent recovery captures the same data as crash-consistent but also includes all in-memory data and in-process transactions. Including the in-memory data means that the Site Recovery can restore a VM and any running apps without any data loss. The snapshots are not captured by default. You can enable them in the Replication policy if necessary. 
 
-All recovery points are kept for 24 hours by default, and you can extend this period to 14 days if required. If a disruption occurs, and new recovery points can't be created, the oldest recovery points will not be overwritten. This is because Azure Site Recovery only replaces the oldest point if it generates new points. Until there are new recovery points, all the old points remain after you reach the retention window.
+All recovery points are kept for 24 hours by default, and you can extend this period to 14 days if necessary. If a disruption occurs, and new recovery points can't be created, the oldest recovery points will not be overwritten. This is because Azure Site Recovery only replaces the oldest point if it generates new points. Until there are new recovery points, all the old points remain after you reach the retention window.
 
 ## Recovery plans
 
