@@ -16,7 +16,7 @@ You can use the Azure portal to register and configure your application and use 
 
 The following diagram depicts the Microsoft identity experience at a high level, including the app registration experience, software development kits (SDKs), endpoints, and supported identities.
 
-:::image type="content" source="../media/MSFT%20Identity%20Platform%20for%20Developers1A.jpg-4a8416c5.png":::
+:::image type="content" source="../media/MSFT%20Identity%20Platform%20for%20Developers1A.jpg-4a8416c5.png" alt-text="Microsoft identity platform fro developers":::
 
 
 The Microsoft identity platform has two endpoints (v1.0 and v2.0) however, when developing a new application, consider it's highly recommended that you use the v2.0 (default) endpoint to benefit from the latest features and capabilities:
