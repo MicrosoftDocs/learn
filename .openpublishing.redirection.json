@@ -12645,6 +12645,111 @@
       "source_path": "learn-pr/wwl-data-ai/prepare-to-maintain-sql-databases-azure/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-to-maintain-sql-databases-azure/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-microsoft-365/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-microsoft-365/2-describe-m365-defender-portal.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-microsoft-365/3-describe-how-to-use-microsoft-secure-score.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-microsoft-365/4-explore-security-reports-dashboards.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-microsoft-365/5-describe-incidents-capabilities.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-microsoft-365/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-microsoft-365/7-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-management-capabilities-of-microsoft-365/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-endpoint-security-with-microsoft-intune/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-endpoint-security-with-microsoft-intune/2-describe-what-intune.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-endpoint-security-with-microsoft-intune/3-intune.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-endpoint-security-with-microsoft-intune/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-endpoint-security-with-microsoft-intune/5-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-endpoint-security-with-microsoft-intune/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/describe-capabilities-of-microsoft-security-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/2-understand-compatibility-level.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/3-understand-azure-preview-features.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/4-describe-azure-database-migration-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
     }
   ]
 }
