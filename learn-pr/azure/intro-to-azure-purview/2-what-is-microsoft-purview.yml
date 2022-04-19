@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-purview.what-is-microsoft-purview
+title: What is Microsoft Purview?
+metadata:
+  unitType: learning-content
+  title: what-is-Azure-Purview
+  description: "This unit describes what Microsoft Purview is and provides high-level overview of the product."
+  ms.date: 8/19/2021
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-is-microsoft-purview.md)]

@@ -13,16 +13,16 @@ Annotating data sources with descriptive metadata is often a lost effort. Client
 
 Not having an end-to-end data lineage across the data estate leads to data consumers spending a lot of time tracing root cause problems created by upstream data pipelines that are owned by other teams. Further, data producers make changes to their dataset and inadvertently impact downstream reports that are business or mission critical.
 
-Azure Purview is designed to address these issues and to help enterprises get the most value from their existing information assets. The catalog makes data sources easily discoverable and understandable by the users who manage the data.
+Microsoft Purview is designed to address these issues and to help enterprises get the most value from their existing information assets. The catalog makes data sources easily discoverable and understandable by the users who manage the data.
 
 :::image type="content" source="../media/data-governance.png" alt-text="Depiction of data governance showing a Chief Data Officer in the middle, with connections to an icon representing discovery considerations and a second icon for compliance issues.":::
 
 ## What will we be doing?
-We'll get a high-level overview of Azure Purview and discover the key aspects that make it the tool of choice for mapping out your enterprise data. We'll learn how it can help you:
+We'll get a high-level overview of Microsoft Purview and discover the key aspects that make it the tool of choice for mapping out your enterprise data. We'll learn how it can help you:
 * Manage and govern your data across various platforms and locations.
 * Map out your data landscape
 * Classify sensitive data
 * Empower customers fo find trustworthy data
 
 ## What is the main goal?
-By the end of this session, you'll be able to decide if Azure Purview is the right choice to help you manage your enterprise data environment and get a handle on your various data sources.
+By the end of this session, you'll be able to decide if Microsoft Purview is the right choice to help you manage your enterprise data environment and get a handle on your various data sources.

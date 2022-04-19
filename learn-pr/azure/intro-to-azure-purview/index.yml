@@ -2,8 +2,8 @@
 uid: learn.intro-to-azure-purview
 metadata:
   moduleType: introduction        
-  title: Introduction to Azure Purview          
-  description: "Introduction to Azure Purview"
+  title: Introduction to Microsoft Purview          
+  description: "Introduction to Microsoft Purview"
   ms.date: 8/19/2021 
   author: gerryaobrien 
   ms.author: gerryo 
@@ -11,14 +11,14 @@ metadata:
   ms.prod: learning-azure 
   ms.service: purview
 
-title: Introduction to Azure Purview
+title: Introduction to Microsoft Purview
 
-summary: "In this module, you will evaluate whether Azure Purview is the right choice for your data discovery and governance needs."
+summary: "In this module, you will evaluate whether Microsoft Purview is the right choice for your data discovery and governance needs."
 
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether Azure Purview is appropriate for data discovery and governance needs.
-    - Describe how the features of Azure Purview work to provide data discovery and governance.
+    - Evaluate whether Microsoft Purview is appropriate for data discovery and governance needs.
+    - Describe how the features of Microsoft Purview work to provide data discovery and governance.
 
 prerequisites: |
   - Knowledge of Microsoft Azure accounts and services
@@ -45,11 +45,10 @@ products:
 
 units:
 - learn.intro-to-azure-purview.introduction
-- learn.intro-to-azure-purview.what-is-azure-purview
-- learn.intro-to-azure-purview.how-azure-purview-works
-- learn.intro-to-azure-purview.when-to-use-azure-purview
+- learn.intro-to-azure-purview.what-is-microsoft-purview
+- learn.intro-to-azure-purview.how-microsoft-purview-works
+- learn.intro-to-azure-purview.when-to-use-microsoft-purview
 - learn.intro-to-azure-purview.knowledge-check
 - learn.intro-to-azure-purview.summary
-
 badge:
   uid: learn.introduction-to-azure-purview.badge

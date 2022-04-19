@@ -1,0 +1,26 @@
+Let's start with a few definitions and a quick tour of the core features of Microsoft Purview. We won't list every possible feature of the service here but we will introduce you to the key features.
+
+## What is Microsoft Purview?
+Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and software-as-a-service (SaaS) data. Easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Empower data consumers to find valuable, trustworthy data.
+
+The main elements are the Microsoft Purview Data Map, Purview Data Catalog, and Purview data insights. Microsoft Purview Data Map powers the Purview Data Catalog and Purview data insights as unified experiences within the Purview Studio.
+
+:::image type="content" source="../media/data-map-sources.png" alt-text="Screenshot depicting the data map view in Microsoft Purview with data sources from Azure Data Lake Storage, Azure Files, CosmosDB, Azure Blob storage, and Azure SQL Database on the map.":::
+
+Data insights, one of the key pillars of Microsoft Purview, offers a bird's eye view into your data catalog, covering these key facets:
+
+* Asset insights - a report on the data estate and source type distribution. You can view by source type, classification, and file size. View the insights as a graph or key performance indicators (KPI).
+* Scan insights - this report provides information on the health of your scans (successes, failures, or canceled).
+* Glossary insights - a status report on the glossary to help users understand the distribution of glossary terms by status, or to view how the terms are attached to assets.
+* Classification insights - a report showing where classified data is located. It enables security administrators to understand the types of information found in their organization's data estate.
+* Sensitivity insights - this report focuses on sensitivity labels that are found during scans. Security administrators can make use of this information to ensure security is appropriate for the data estate.
+* File extension insights - detailed reporting on file extensions, or file types, found during scans. Use this to understand the number of files, of each type, that exist. It also indicates where these files are located and if they can be scanned for sensitive information.
+
+:::image type="content" source="../media/insights.png" alt-text="Depiction of a computer monitor displaying the Purview Insights graphs and data.":::
+
+## Microsoft Purview definition
+Microsoft Purview is a data governance solution. It helps customers gain deep knowledge of all their data while maintaining control over its use. With Microsoft Purview, organizations discover and curate data. They gain insights into their data estate, and centrally govern access to data.
+
+Microsoft Purview is designed to help enterprises get the most value from their existing information assets. It is a cloud-based service where you can register your various data sources with Microsoft Purview. Registering your data in Microsoft Purview helps in the discovery and understanding of data sources. Your data sources remain in place but a copy of the metadata for the source, is added to Microsoft Purview. The following image displays some of the data sources supported by Microsoft Purview.
+
+:::image type="content" source="../media/register-sources.png" alt-text="Screenshot depicting the register sources dialog for Microsoft Purview data map. It displays some of the supported data sources such as Azure Blob Storage, Cosmos DB, Amazon S3, and Azure SQL Database, among others. The displayed list is also not comprehensive.":::
