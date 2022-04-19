@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.monitor-azure-arc-enabled-servers
+metadata:
+  title: Monitor your hybrid and multicloud machines through Azure Arc-enabled servers
+  description: Understand the monitoring capabilities of Azure Arc-enabled servers. Learn about the benefits of and how to onboard Azure Arc-enabled servers to Azure Logs and Metrics, VM Insights, and Azure Monitor Alerts.
+  ms.date: 04/03/2022
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor your hybrid and multicloud machines through Azure Arc-enabled servers
+summary: Azure Arc promises to bridge the gap between on-premises and cloud environments. Azure Arc extends the consistent security, observability, and governance of the Azure platform to non-Azure machines. In this module, you'll learn about monitoring Azure Arc-enabled servers.
+abstract: |
+  After you've completed this module, you will be able to:
+    - Understand the usage of VM extensions to manage observability agents with Azure Arc-enabled servers 
+    - Evaluate different Azure Monitor offerings across logs, metrics, and alerts
+    -	Understand the onboarding process for and benefits of using VM Insights with Azure Arc-enabled servers 
+prerequisites: |
+  - Basic characteristics of Azure services and Azure Arc 
+  - Compute, storage, networking, and virtualization technologies 
+  - Basic Windows Server and Linux administration tasks 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-arc
+units:
+- learn.azure.monitor-azure-arc-enabled-servers.introduction
+- learn.azure.monitor-azure-arc-enabled-servers.deploy-manage-observability-agents-using-vm-extensions-azure-arc-enabled-servers
+- learn.azure.monitor-azure-arc-enabled-servers.onboard-azure-arc-enabled-servers-to-vm-insights
+- learn.azure.monitor-azure-arc-enabled-servers.develop-robust-data-foundation-azure-arc-enabled-servers-azure-monitor-metrics-logs
+- learn.azure.monitor-azure-arc-enabled-servers.smart-scalable-alerts-azure-arc-enabled-servers-with-azure-monitor
+- learn.azure.monitor-azure-arc-enabled-servers.knowledge-check
+- learn.azure.monitor-azure-arc-enabled-servers.summary
+badge:
+  uid: learn.azure.monitor-azure-arc-enabled-servers.badge

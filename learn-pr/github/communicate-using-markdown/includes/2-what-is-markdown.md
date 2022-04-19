@@ -112,7 +112,7 @@ Here is the markdown for an unordered list.
 
 ### Building tables
 
-Tables can be constructed using a combination of pipes (`|`) for column breaks and dashes (`-`) to designate the prviour row as a header.
+Tables can be constructed using a combination of pipes (`|`) for column breaks and dashes (`-`) to designate the prior row as a header.
 
 ```
 First|Second

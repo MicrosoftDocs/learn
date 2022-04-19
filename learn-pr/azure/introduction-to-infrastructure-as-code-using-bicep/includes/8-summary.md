@@ -4,7 +4,7 @@ In this module, you learned how using infrastructure as code makes it possible f
 
 Imagine how much time it would take to deploy new environments manually by using only the Azure portal. You must deploy each resource one by one, making sure to keep configurations identical. When you want to add a new resource or change an existing resource, you must manually create the resource for each environment. Infrastructure as code can help you define your resources in a single place and then apply the same configuration to all your environments.
 
-You learned how you create your infrastructure as code code base by using a declarative or imperative approach. With imperative code, you execute a sequence of commands, in a specific order, to reach an end configuration. This process defines what the code should accomplish, and it also defines how to accomplish the task. When you use declarative code, you specify only the end configuration. Declarative code doesn't define how to accomplish the task.
+You learned how to create a code base for your infrastructure as code using an imperative or declarative approach. With imperative code, you execute a sequence of commands, in a specific order, to reach an end configuration. This process defines what the code should accomplish, and it also defines how to accomplish the task. When you use declarative code, you specify only the end configuration. Declarative code doesn't define how to accomplish the task.
 
 After choosing to take a declarative approach to infrastructure as code, you learned about Azure Resource Manager and ARM templates. These JSON and Bicep templates declaratively describe your Azure infrastructure, and you can use them to deploy resources to your Azure subscription.
 
