@@ -1,10 +1,10 @@
-In this exercise, you deploy a project plan template to Azure DevOps. That template will give you a sense of the work that needs to be done during this cloud adoption effort. In later exercises, you expand that plan to include data gathered from the assessment features of Azure Migrate. This allows you to create a refined plan for both migration and new innovation projects.
+In this exercise, you'll deploy a project plan template to Azure DevOps. That template will give you a sense of the work that needs to be done during this cloud adoption effort. In later exercises, you'll expand that plan to include data gathered from the assessment features of Azure Migrate. This allows you to create a refined plan for both migration and new innovation projects.
 
 ## Introduction to the cloud adoption plans
 
 Azure DevOps is the set of cloud-based tools for Azure customers who manage iterative projects. It also includes tools for managing deployment pipelines and other important aspects of DevOps.
 
-In this unit, you learn how to quickly deploy a backlog to Azure DevOps by using a template. This template aligns cloud adoption efforts to a standardized process based on the guidance in the Cloud Adoption Framework for Azure.
+In this unit, you'll learn how to quickly deploy a backlog to Azure DevOps by using a template. This template aligns cloud-adoption efforts to a standardized process based on the guidance in the Cloud Adoption Framework for Azure.
 
 ## Prerequisites
 
@@ -80,7 +80,8 @@ The backlog lists all of the different tasks in the project. But there's a bette
 :::image type="content" source="../media/new-project-epics.png" alt-text="Screenshot that shows how to change the view to the Epic hierarchy." border="false":::
 
 This new view is hierarchical. To drill into each phase, select the caret next to any work item. That will expose its child work items.
-:::image type="content" source="../media/new-project-home.png" alt-text="Screenshot that shows expanding nodes in the hierarchy." border="false":::
+
+:::image type="content" source="../media/expanding_nodes.png" alt-text="Screenshot that shows expanding nodes in the hierarchy." border="false":::
 
 The following list explains Azure DevOps terminology in more traditional project terms:
 
@@ -94,4 +95,4 @@ The following list explains Azure DevOps terminology in more traditional project
 
 ## Next steps
 
-You now have your first cloud adoption plan deployed. In future units, you update this plan to reflect the actual work you need to complete specific to your business objectives.
+You now have your first cloud-adoption plan deployed. In future units, you update this plan to reflect the actual work you need to complete specific to your business objectives.
