@@ -26,15 +26,13 @@ Common drivers for Data management and analytics are aligned to innovation
 
 The following key themes outline how you can realize these motivations in your strategy. Carefully analyze them and think about how they relate to a coherent data strategy.
 
-![Key Themes](../media/strategy-key-themes.png)
+[![Key Themes](../media/strategy-key-themes.png)](../media/strategy-key-themes.png)
 
 ### Develop a data-driven culture
 
 Here focus is on how an organization can become matured overtime by applying systematic principled approach. Below is an example
 
-![Data Strategy Maturity](../media/data-strategy-maturity.png)
-
-
+[![Data Strategy Maturity](../media/data-strategy-maturity.png)](../media/data-strategy-maturity.png)
 
 ### A principled approach to your data strategy
 
@@ -65,7 +63,7 @@ The Data Management & Analytics architecture consists of two core building block
 
 The following diagram is an overview of a data platform with a central data management landing zone and multiple data landing zones:
 
-![Single landing zones](../media/high-level-design-single-data-landing-zone.png)
+[![Single landing zones](../media/high-level-design-single-data-landing-zone.png)](../media/high-level-design-single-data-landing-zone.png)
 
 In this module, we'll work on provisioning these major components
 

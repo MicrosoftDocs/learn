@@ -1,7 +1,7 @@
 
 This module walks you through the process of provisioning a "Data Product" with in a "Data landing zone" into your own Azure subscription
 
-## Step 1 - Complete Pre-requisites
+## Step 1 - Complete Prerequisites
 
 - A Data Management Landing Zone deployed. Refer to Exercise 1 for details.
 - A Data Landing Zone deployed. Refer to Exercise 2 for details.
@@ -10,7 +10,7 @@ This module walks you through the process of provisioning a "Data Product" with 
 
 <a href="https://portal.azure.com/#blade/Microsoft_Azure_CreateUIDef/CustomDeploymentBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-product-batch%2Fmain%2Finfra%2Fmain.json/uiFormDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fdata-product-batch%2Fmain%2Fdocs%2Freference%2Fportal.dataProduct.json"> ![Deploy Data Product Zone to Azure](../media/deploy-to-azure.svg) </a>
 
-![DPLZ Deployment](../media/data-product-landing-zone-deployment.png)
+[![DPLZ Deployment](../media/data-product-landing-zone-deployment.png)](../media/data-product-landing-zone-deployment.png)
 
 In this Step 2, provide the following information
 
@@ -26,7 +26,7 @@ In this Step 2, provide the following information
 
 ## Step 3 - select next for General Settings
 
-![DPLZ General settings](../media/data-product-landing-zone-general-settings.png)
+[![DPLZ General settings](../media/data-product-landing-zone-general-settings.png)](../media/data-product-landing-zone-general-settings.png)
 
 In this step 3, provide the following information
 
@@ -44,7 +44,7 @@ In this step 3, provide the following information
 
 ## Step 4 - select next for Connectivity Settings
 
-![DPLZ Connectivity Settings](../media/data-product-landing-zone-connectivity-settings.png)
+[![DPLZ Connectivity Settings](../media/data-product-landing-zone-connectivity-settings.png)](../media/data-product-landing-zone-connectivity-settings.png)
 
 In this Step 4, provide the following information
 
@@ -56,7 +56,7 @@ In this Step 4, provide the following information
 
 ## Step 5 - select "Review + Create" for final review and create
 
-![DPLZ Deployment Create](../media/data-product-deployment-create.png)
+[![DPLZ Deployment Create](../media/data-product-deployment-create.png)](../media/data-product-deployment-create.png)
 
 ## Step 6 - Validation after deployment
 
@@ -64,7 +64,7 @@ You can use the details here to validate the deployment.
 
 ### Resource Group Name - XXXX-dev-dp001
 
-![DPLZ Data Product Validation](../media/dev-data-product-001-validation.png)
+[![DPLZ Data Product Validation](../media/dev-data-product-001-validation.png)](../media/dev-data-product-001-validation.png)
 
 ## Other references
 

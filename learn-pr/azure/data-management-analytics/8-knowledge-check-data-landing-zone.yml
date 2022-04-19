@@ -27,7 +27,7 @@ quiz:
       explanation: "A data landing zone has several layers to enable agility to service data integrations and data products within it. You can deploy a new data landing zone with a standard set of services to enable the data landing zone to start ingesting and analyzing data."
     - content: "Core Services, Data Integration, Data Products, Visualization"
       isCorrect: false
-      explanation: ""
+      explanation: "This is not a valid option"
 
   - content: "How is Data Management landing zone connected to Data Management Landing zone?"
     choices:
@@ -42,7 +42,7 @@ quiz:
       explanation: "The shared virtual network is not a concept for the platform"
     - content: "None of these"
       isCorrect: false
-      explanation: ""
+      explanation: "This is not a valid option"
 
   - content: "What is the purpose of data integration layer?"
     choices:
@@ -55,6 +55,6 @@ quiz:
     - content: "A subnet to host connectivity to on-premises data center"
       isCorrect: false
       explanation: "This setup is required for Virtual Private Network or Express Route.However it is not part of data integration layer."
-    - content: All of the above"
+    - content: All of the above
       isCorrect: false
-      explanation: ""
+      explanation: "This is not a valid option"
