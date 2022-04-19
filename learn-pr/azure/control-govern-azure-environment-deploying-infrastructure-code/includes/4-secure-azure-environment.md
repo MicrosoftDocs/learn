@@ -1,4 +1,4 @@
-TODO
+Now that you understand how to control your environments and secure your deployment pipelines, you can take the final step: disabling human access to your controlled environments. In this unit, you'll learn how you can structure your users' permissions to Azure environments, how to allow access in emergency situations, and how to audit any changes that happen in your Azure estate.
 
 ## Block human access
 
