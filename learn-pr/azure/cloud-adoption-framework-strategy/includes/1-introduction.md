@@ -6,14 +6,14 @@ In this executive-level module, you'll compare motivations, define business obje
 
 In this module, you'll:
 
-- Create clarity for a corporate strategy to ensure that all team members are working toward common goals. 
-- Establish metrics to create clarity, help the team learn, and systematically work toward your organizational objectives.
-- Evaluate financial considerations to understand the value of cloud adoption.
-- Evaluate technical considerations to help the team prepare for successful cloud adoption projects.
+- Create clarity for a corporate strategy to ensure that all team members are working toward common goals
+- Establish metrics to create clarity, help the team learn, and systematically work toward your organizational objectives
+- Evaluate financial considerations to understand the value of cloud adoption
+- Evaluate technical considerations to help the team prepare for successful cloud adoption projects
 
 To support these learning objectives, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true) to record strategic decisions you make while completing this module.
 
 ## Prerequisites
 
-- Foundational understanding of cloud adoption.
-- Willingness to pursue more learning about the business and financial terminology you'll be introduced to in this module.
+- Foundational understanding of cloud adoption
+- Willingness to pursue more learning about the business and financial terminology you'll be introduced to in this module

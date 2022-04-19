@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.aks-cluster-scalability
+metadata:
+  title: Azure Kubernetes Service (AKS) application and cluster scalability
+  description: Azure Kubernetes Service (AKS) application and cluster scalability
+  brand: azure
+  ms.date: 04/01/2022
+  author: johnmarco
+  ms.author: johnmarc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Kubernetes Service (AKS) application and cluster scalability
+summary: |
+  In this learning path, you'll understand how autoscaling of your AKS workloads can be achieved and how workload scale changes drive how your cluster scales to meet workload needs.
+prerequisites: |
+  - An Azure subscription 
+  - Ability to use the Azure CLI 
+  - Ability to navigate the Azure portal 
+  - Basic knowledge of Kubernetes and its concepts 
+  - Basic knowledge of developing and deploying applications on Kubernetes 
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- developer
+- solution-architect
+- devops-engineer
+- developer
+- administrator
+- student
+products:
+- azure
+modules:
+- learn.aks-application-autoscaling-native
+- learn.aks-app-scaling-keda
+- learn.aks-cluster-autoscaling
+- learn.aks-optimize-compute-costs
+trophy:
+  uid: learn.aks-cluster-scalability.trophy

@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-ready
 metadata:
   title: Choose the best Azure landing zone to support your requirements for cloud operations
   description: Azure landing zones help accelerate how you configure your environment to meet your operational requirements.
-  ms.date: 09/22/2020
+  ms.date: 04/14/2022
   author: BrianBlanchard
   ms.author: bblanch
   ms.topic: interactive-tutorial

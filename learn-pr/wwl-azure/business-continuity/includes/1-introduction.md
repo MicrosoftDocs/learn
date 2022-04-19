@@ -14,7 +14,7 @@ By the end of this module, you will be able to:
 
 - Troubleshoot Azure to Azure Site Recovery.
 
-- Troubleshoot site recovery with Hyper-V, SCCM, and VMware.
+- Troubleshoot site recovery with Hyper-V, VMM, and VMware.
 
 ## Prerequisites
 

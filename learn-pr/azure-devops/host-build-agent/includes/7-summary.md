@@ -16,7 +16,7 @@ The Tailspin web team has finished their experiment with private build agents. L
 
 **Mara:** Good point, Tim. Because we set up that build configuration on a Git branch, those changes are isolated from the main sources. We can leave the build agent running a bit longer while you demo this to the other teams.
 
-**Tim:** Sounds good. Thanks for your help here. This was all relatively easy to set up. And now I know little bit more about how VMs work on Azure!
+**Tim:** Sounds good. Thanks for your help here. This was all relatively easy to set up. And now I know a little bit more about how VMs work on Azure!
 
 ## How is the team measuring up?
 

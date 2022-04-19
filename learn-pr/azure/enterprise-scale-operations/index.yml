@@ -3,7 +3,7 @@ uid: learn.azure.enterprise-scale-operations
 metadata:
   title: Enterprise-scale architecture operational design principles 
   description: Learn how to operationalize an Azure enterprise estate by using centralized management to enable the organization's path to the cloud.
-  ms.date: 09/21/2020
+  ms.date: 04/15/2022
   author: ejhenry
   ms.author: erhenry
   ms.topic: interactive-tutorial
