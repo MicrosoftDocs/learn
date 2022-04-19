@@ -61,7 +61,7 @@ Data lineage provides the audit trail of the data points at the highest granular
 Defining data quality in a sentence is difficult due to the many contexts data are used in, and the varying perspectives among end users, producers, and custodians of data.
 From a consumer perspective, data quality is:
 
-- data that are fit for use by data consumers
+- data fit for use by data consumers
 - date meeting or exceeding consumer expectations
 
 #### Below is a typical data management landing zone architecture
