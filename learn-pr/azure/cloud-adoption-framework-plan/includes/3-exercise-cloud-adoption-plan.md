@@ -10,9 +10,9 @@ In this unit, you'll learn how to quickly deploy a backlog to Azure DevOps by us
 
 In Azure DevOps, users have different access levels: basic, stakeholder, or Visual Studio subscriber. Access levels determine what features are available to each user. In order to provision projects by using the demo generator, you need at least a basic access level. For example, you might get an error that indicates the user has a stakeholder license, which doesn't grant permissions to writing shared queries.
 
-### Create an Azure DevOps account
+### Create an Azure DevOps organization
 
-If you don't have an Azure DevOps account, you can create one for free.
+If you don't have an Azure DevOps organization, you can create one for free.
 
 1. Go to the [Azure DevOps homepage](https://azure.microsoft.com/services/devops/?azure-portal=true).
 
@@ -25,7 +25,7 @@ If you don't have an Azure DevOps account, you can create one for free.
 
 ### Create a new organization in Azure DevOps
 
-If you have an existing Azure DevOps account but don't have access to create new projects in your organization, you might want to create a new organization to use in this module.
+If you have an existing Azure DevOps organization but don't have access to create new projects in your organization, you might want to create a new organization to use in this module.
 
 1. [Sign in to the Azure DevOps portal](https://azure.microsoft.com/services/devops/?nav=min), and select **New organization**.
 
