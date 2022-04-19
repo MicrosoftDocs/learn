@@ -19,6 +19,8 @@ The following diagram depicts the Microsoft identity experience at a high level,
 :::image type="content" source="../media/MSFT%20Identity%20Platform%20for%20Developers1A.jpg-4a8416c5.png":::
 
 
+The Microsoft identity platform has two endpoints (v1.0 and v2.0) however, when developing a new application, consider it's highly recommended that you use the v2.0 (default) endpoint to benefit from the latest features and capabilities:
+
 MSAL can be used in many application scenarios, including the following:
 
  -  Single-page applications (JavaScript)
@@ -29,6 +31,8 @@ MSAL can be used in many application scenarios, including the following:
  -  Desktop application calling a web API on behalf of the signed-in user
  -  Mobile application calling a web API on behalf of the user who's signed in interactively.
  -  Desktop/service daemon application calling web API on behalf of itself
+
+### Languages and frameworks
 
 :::row:::
   :::column:::
@@ -120,23 +124,6 @@ MSAL can be used in many application scenarios, including the following:
 :::row-end:::
 
 
-The Microsoft identity platform has two endpoints (v1.0 and v2.0) and two sets of client libraries to handle these endpoints. When developing a new application, consider the advantages and the current state of the endpoints and the authentication libraries. Also, consider that:<br>
-
- -  The supported platforms are as follows:
-    
-     -  The Azure AD Authentication Library (ADAL) supports Microsoft .NET, JavaScript, iOS, Android, Java, and Python.
-     -  The Microsoft Authentication Library (MSAL) supports .NET, JavaScript, and in preview iOS, and Android.
-     -  Other endpoints support .NET and Node.js server middleware for protecting APIs and sign-in.
- -  The bulk of innovation, such as dynamic consent and incremental consent, is happening on the v2.0 endpoint and MSAL while Microsoft continues to support v1.0 and ADAL.
-
-These are the five primary application scenarios that Azure AD supports:
-
- -  Single-page application (SPA) - A user needs to sign in to a single-page application that Azure AD helps secure.
- -  Web browser to web application - A user needs to sign in to a web application that Azure AD helps secure.
- -  Native application to web API - A native application that runs on a phone, tablet, or computer needs to authenticate a user to get resources from a web API that Azure AD helps secure.
- -  Web application to web API - A web application needs to get resources from a web API that Azure AD helps secure.
- -  Daemon or server application to web API - A daemon application or a server application with no web user interface needs to get resources from a web API that Azure AD helps secure.
-
-### Migrate apps that use ADAL to MSAL
+### Migrate apps that use ADAL to MSAL<br>
 
 Active Directory Authentication Library (ADAL) integrates with the Azure AD for developers (v1.0) endpoint, where MSAL integrates with the Microsoft identity platform. The v1.0 endpoint supports work accounts, but not personal accounts. The v2.0 endpoint is the unification of Microsoft personal accounts and works accounts into a single authentication system. Additionally, with MSAL you can also get authentications for Azure AD B2C.
