@@ -24,7 +24,7 @@ Here's a list of what we know about the company's digital estate:
 - Operations management is inconsistent:
   - Patching is inconsistent.
   - Basic datacenter sprawl has datacenter resource consumption at 25 percent over planned targets.
-  - Backup appliances has exceeded its storage capacity. Backups for low-priority workloads are local backups only.
+  - Backup appliance has exceeded its storage capacity. Backups for low-priority workloads are local backups only.
   - Active monitoring and optimization are limited to mission critical workloads.
   - The operations team is over-taxed and understaffed.
   - The service now expert on the team left three years ago, shortly after a vendor completed configuration of the configuration management database (CMDB). Since then, there has been no new discovery or mapping of assets.
@@ -206,7 +206,7 @@ As a first wave, the following workloads were identified by Tailwind Traders due
   - Video shelf, a video distribution system that pushes video down to a tracked set of displays in a small number of pilot stores. This system uses 20 servers to manage and distribute video.
   - Remote store POS, instances of the POS systems used by remote locations that aren't able to connect to the organization's MPLS for high-speed transactions. This system uses 15 servers.
 - **Corporate headquarters:**
-  - Employee scheduling application, a simple application for managing and displaying employee schedules. This system only uses two servers, but must connect back to central ERP and HR systems for personally identifiable information.
+  - Employee scheduling application, a simple application for managing and displaying employee schedules. This system only uses two servers, but must connect back to central ERP and HR systems for customer content.
 - **End-user workstations:**
   - Virtual desktops require a 30-server solution to support as many as 500 desktops. Current business demands would suggest a 3x growth of demand, if it were available.
 - **Central operations:**
