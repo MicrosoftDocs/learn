@@ -3,7 +3,7 @@ uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory
 metadata:
   title: Orchestrating data movement and transformation in Azure Data Factory
   description: "Orchestrate data movement and transformation in Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 01/05/2022
+  ms.date: 04/19/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
