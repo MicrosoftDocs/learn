@@ -3,7 +3,7 @@ uid: learn.wwl.design-container-build-strategy
 metadata:
   title: Design a container build strategy
   description: "Design a container build strategy"
-  ms.date: 12/29/2021
+  ms.date: 02/22/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Explain Docker microservices and containers
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-design-a-container-build-strategy.svg
 levels:
 - advanced
 roles:

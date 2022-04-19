@@ -3,7 +3,7 @@ uid: learn.wwl.implement-terraform
 metadata:
   title: Implement Terraform
   description: "Implement Terraform"
-  ms.date: 12/02/2021
+  ms.date: 02/25/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Run Terraform in Azure Cloud Shell and Visual Studio Code
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/8-implement-terraform.svg
 levels:
 - advanced
 roles:

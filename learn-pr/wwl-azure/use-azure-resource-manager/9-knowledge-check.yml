@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/26/2022
+  ms.date: 04/13/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Azure templates"
       isCorrect: false
-      explanation: "That's incorrect. Azure templates are for deploying resources."
+      explanation: "Incorrect. Azure templates are for deploying resources, not administrative management."
     - content: "Azure resource groups"
       isCorrect: true
-      explanation: "That's correct. Resource groups make administering resources easy."
+      explanation: "Correct. Resource groups make administering resources easy."
     - content: "Azure subscriptions"
       isCorrect: false
-      explanation: "That's incorrect. Azure subscriptions may help with billing, but resource groups would be a better choice."
-  - content: "Which of the following would be good example of when to use a resource lock?"
+      explanation: "Incorrect. Azure subscriptions may help with billing, but resource groups would be a better choice."
+  - content: "Which of the following situations would be good example of when to use a resource lock?"
     choices:
     - content: "A ExpressRoute circuit with connectivity back to the on-premises network."
       isCorrect: true
-      explanation: "That's correct. This is a critical resources Resource locks prevent other users in the organization from accidentally deleting or modifying critical resources."
+      explanation: "Correct. An ExpressRoute Circuit is a critical resources Resource locks prevent other users in the organization from accidentally deleting or modifying critical resources."
     - content: "A non-production virtual machine used to test occasional application builds."
       isCorrect: false
-      explanation: "That's incorrect. This non-production resource would not need to be protected from accidental deletion or modification."
+      explanation: "Incorrect. A non-production VM resource doesn't need to be protected from accidental deletion or modification."
     - content: "A storage account used to temporarily store images processed in a development environment."
       isCorrect: false
-      explanation: "That's incorrect. This temporary resource would not need to be protected from accidental deletion or modification."
+      explanation: "Incorrect. A temporary resource doesn't need to be protected from accidental deletion or modification."
   - content: "Which of the following features doesn't apply to resource groups?"
     choices:
-    - content: "Resources can only be in one resource group"
+    - content: "Resources can be in only one resource group."
       isCorrect: false
-      explanation: "That's incorrect. It does apply, as resources can be in only one resource group."
+      explanation: "Incorrect. Resources can be in only one resource group."
     - content: "Role-based access control can be applied to a resource group"
       isCorrect: false
-      explanation: "That's incorrect. It does apply, as role-based access control can be applied to the resource group."
+      explanation: "Incorrect. Role-based access control can be applied to a resource group."
     - content: "Resource groups can be nested."
       isCorrect: true
-      explanation: "That's correct. It does not apply, as resource groups can't be nested."
+      explanation: "Correct. Resource groups cannot be nested."

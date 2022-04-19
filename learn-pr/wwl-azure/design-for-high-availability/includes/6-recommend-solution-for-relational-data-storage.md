@@ -8,7 +8,7 @@ There are two purchasing models to consider: DTU and vCore. Lets focus on the vC
 
 Databases and managed instances in the General Purpose service tier have the same availability architecture. Using the following figure as a guide, first consider the application and control ring. The application connects to the server name, which then connects to a gateway (GW) that points the application to the server to connect to, running on a VM. With General Purpose, the primary replica uses locally attached SSD for the tempdb. The data and log files are stored in Azure Premium Storage, which is locally redundant storage (multiple copies in one region). The backup files are then stored in Azure Standard Storage, which is RA-GRS by default. In other words, it's globally redundant storage (with copies in multiple regions).
 
-All of Azure SQL is built on Azure Service Fabric, which serves as the Azure backbone. If Azure Service Fabric determines that a failover needs to occur, the failover will be similar to that of a failover cluster instance (FCI). The service fabric will look for a node with spare capacity and spin up a new SQL Server instance. The database files will then be attached, recovery will be run, and gateways will be updated to point applications to the new node. No virtual network or listener or updates are required. This capability is built in.
+All of Azure SQL is built on Azure Service Fabric, which serves as the Azure backbone. If Azure Service Fabric determines that a failover needs to occur, the failover will be similar to that of a failover cluster instance (FCI). The service fabric will identify a node with spare capacity and spin up a new SQL Server instance. The database files will then be attached, recovery will be run, and gateways will be updated to point applications to the new node. No virtual network or listener or updates are required. This capability is built in.
 
 :::image type="content" source="../media/azure-sql-fail-over.png" alt-text="Diagram of the application and control ring.":::
 
@@ -31,7 +31,7 @@ If any type of failure occurs and the service fabric determines a failover needs
 
 ## Hyperscale
 
-The Hyperscale service tier is available only in Azure SQL Database. This service tier has a unique architecture because it uses a tiered layer of caches and page servers to expand the ability to quickly access database pages without having to access the data file directly.
+The Hyperscale service tier is currently available for Azure SQL Database, and not Azure SQL Managed Instance. This service tier has a unique architecture because it uses a tiered layer of caches and page servers to expand the ability to quickly access database pages without having to access the data file directly.
 
 :::image type="content" source="../media/sql-hyper-scale-service-tier.png" alt-text="Diagram of SQL hyperscale service tier.":::
 
@@ -46,7 +46,7 @@ Business Critical maintains the highest performance and availability for workloa
 
 ## Database service tiers for availability
 
-Azure SQL Database and Azure SQL Managed Instance provide great availability options by default in the various service tiers. There are some additional things you can do to increase or modify the availability of your databases/instances. You'll be able to directly see the impact on the service-level agreement (SLA). In this unit, you'll see how you can go further with various options for availability in Azure SQL.
+Azure SQL Database and Azure SQL Managed Instance provide great availability options by default in the various service tiers. There are some additional things you can do to increase or modify the availability of your databases/instances. You'll be able to determine the impact on the service-level agreement (SLA). In this unit, you'll learn how you can go further with various options for availability in Azure SQL.
 
 ## Availability Zones
 
@@ -152,10 +152,7 @@ Use auto-failover groups when:
 
 - You’re implementing Azure SQL DB managed instance.
 
->[!IMPORTANT]
-> Auto-failover groups support both Azure SQL DB and Azure SQL Database. However, Active geo-replication supports only Azure SQL Database.
 
- 
 
 ## Geo-replication and auto-failover groups
 

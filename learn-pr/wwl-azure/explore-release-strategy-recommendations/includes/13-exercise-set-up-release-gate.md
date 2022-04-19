@@ -1,8 +1,5 @@
 In this exercise walkthrough, you'll investigate Release Gates.
 
-> [!NOTE]
-> *Before starting this exercise, make sure you've done the steps in the introduction prerequisites session.*
-
 ## Steps
 
 Let's now look at when our release pipeline needs to do automated checks for issues like code quality before continuing with the deployments. That automated approval phase is achieved by using Release Gates.

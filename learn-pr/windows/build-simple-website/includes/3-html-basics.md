@@ -115,7 +115,7 @@ Before the next step, make sure your file is saved by selecting <kbd>Control+S</
 
 ## Open in browser
 
-You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with `https://`, your browser points to the local file path, which should  look similar to *file:///Users/<username>/Desktop/public/index.html*, where <username> is your ID.
+You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with `https://`, your browser points to the local file path, which should  look similar to *file:///Users/\<username\>/Desktop/public/index.html*, where \<username\> is your ID.
 
 - To preview using **Visual Studio Code**, right-click `index.html`, and select **Open In Default Browser**, or select the `index.html` file and use the keyboard shortcut <kbd>Alt+B</kbd>.
 

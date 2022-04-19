@@ -12,17 +12,15 @@ The following diagram and table outline several scenarios that follow the same i
 
 *Figure 1: Technology platforms that the Migrate methodology supports.*
 
-| | | | |
-|---------|---------|---------|---------|
-| **Virtual machines** | Servers running Windows Server | Linux servers | Virtual desktops |
-| **Applications** | ASP.NET | Java | PHP |
-| **Data** | SQL Server | Open-source systems (OSS) databases | Analytics |
-| **Hybrid** | Azure Stack | VMware | Containers |
-| **Additional scenarios** | Secure workloads | Mainframes | NetApp and SAP HANA |
+| Virtual machines | Applications | Data | Hybrid | Additional scenarios
+|---|---|---|---|---|
+| Servers running Windows Server | ASP.NET | SQL Server | Azure Stack | Secure workloads |
+| Linux servers | Java  | Open-source systems (OSS) databases | VMware | Mainframes |
+| Virtual desktops | PHP | Analytics | Containers | NetApp and SAP HANA |
 
 ## Preparing for common tech platforms
 
-Each technology platform might have subtle differences in how the migration should be executed. Later in this module, you can bookmark the links in the summary for a reference on those considerations. For now, this unit can help you understand the ways a technology platform might affect your migration at a high level. 
+Each technology platform might have subtle differences in how the migration should be executed. Later in this module, you can bookmark the links in the summary for a reference on those considerations. For now, this unit can help you understand the ways a technology platform might affect your migration at a high level.
 
 Here are a few examples to illustrate the impact:
 
@@ -40,17 +38,17 @@ Here are a few examples to illustrate the impact:
 
 ## Preparing for diverse tech platforms in your sprint plan
 
-The same methodology applies to each of these technology platforms. During initial cloud adoption planning, little effort is applied to prepare for these differences. The individual technology platforms typically don't materially affect that level of planning.
+The same methodology applies to each of these technology platforms. During initial cloud-adoption planning, little effort is applied to prepare for these differences. The individual technology platforms typically don't materially affect that level of planning.
 
 However, there are subtle differences in the underlying tasks required to be successful with some of these platforms. Those differences are addressed in the following critical planning activities, which will aid in sprint planning:
 
-- **Priority alignment:** The overall cloud adoption plan will outline the sequence of workloads to be migrated based on the business impact. But the priority must also consider the team's ability to execute. 
+- **Priority alignment:** The overall cloud-adoption plan will outline the sequence of workloads to be migrated based on the business impact, but the priority must also consider the team's ability to execute.
 
-  Before migration teams begin any sprint, they should evaluate the technology platforms required to migrate each workload. When possible, rearrange migration priorities to group workload waves based on the technology platform. For example, migrate Windows and SQL Server instances in sprints 1-3. Then migrate Linux servers and OSS data in sprints 4-6.
+  Before migration teams begin any sprint, they should evaluate the technology platforms required to migrate each workload. When possible, rearrange migration priorities to group workload waves based on the technology platform. For example, migrate Windows and SQL Server instances in sprints 1-3, then migrate Linux servers and OSS data in sprints 4-6.
 
   > [!CAUTION]
-  > Realigning priorities in this way is not always applicable. There might be situations that require a mixture of Windows and OSS assets to migrate a workload. In those situations, it's best to keep the workload contained as a single deliverable. You might want to move more complex workloads to a later sprint, to ensure that the team has time to develop the required skills.
+  > Realigning priorities in this way is not always applicable. There might be situations that require a mixture of Windows and OSS assets to migrate a workload. In those situations, it's best to keep the workload contained as a single deliverable. You might want to move more complex workloads to a later sprint to ensure that the team has time to develop the required skills.
 
-- **Modernization review:** If your migration groups all three task areas (assess, migrate, and release) into a single migration team and single migration sprint, then you'll want to include a modernization review into each sprint plan. 
+- **Modernization review:** If your migration groups all three task areas (assess, migrate, and release) into a single migration team and single migration sprint, then you'll want to include a modernization review into each sprint plan.
 
   In this type of review, the team will evaluate the assets to be migrated with a focus on modernization to platform as a service (PaaS) options. For example, should SQL Server or OSS databases be converted to Azure SQL Database to minimize dependence on infrastructure? Should the application be moved from an infrastructure as a service (IaaS) server to a web app or container instance? Each decision will shape how you engage each of the common technology platforms.

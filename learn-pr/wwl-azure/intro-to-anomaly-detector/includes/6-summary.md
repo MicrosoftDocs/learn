@@ -3,3 +3,7 @@ The Anomaly Detector detects anomalies automatically in time series data. It sup
 Packaging your time series data into a JSON object and passing it to the API, anomalies can be detected in the time series data. Using the returned results can help you identify issues with industrial processes or recorded events. Batch series data is best used to evaluate recorded events that represent seasonal patterns and don't require immediate action. Streaming data points into the API can offer real-time awareness of anomalies that may require immediate action.
 
 The API can be integrated into your applications by using REST calls or by incorporating the appropriate SDK into your code. Using the Anomaly Detector service does not require you to devise, or to be knowledgeable in, machine learning algorithms.
+
+## Learn more
+
+To learn more about Anomaly Detector, consider reviewing the [Identify abnormal time-series data with Anomaly Detector](/learn/modules/identify-abnormal-time-series-data-anomaly-detector/) module on Microsoft Learn.

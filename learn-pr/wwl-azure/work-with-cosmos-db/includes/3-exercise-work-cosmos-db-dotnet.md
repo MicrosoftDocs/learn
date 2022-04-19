@@ -21,7 +21,7 @@ Perform the following actions to prepare Azure, and your local environment, for 
 
 1. Log in to Azure by using the command below. A browser window should open letting you choose which account to log in with.
 
-    ```bash
+    ```
     az login
     ```
 
@@ -29,13 +29,13 @@ Perform the following actions to prepare Azure, and your local environment, for 
 
 1. Create a resource group for the resources needed for this exercise. Replace `<myLocation>` with a region near you.
 
-    ```bash
+    ```
     az group create --location <myLocation> --name az204-cosmos-rg
     ```
 
 1. Create the Azure Cosmos DB account. Replace `<myCosmosDBacct>` with a *unique* name to identify your Azure Cosmos account. The name can only contain lowercase letters, numbers, and the hyphen (-) character. It must be between 3-31 characters in length. *This command will take a few minutes to complete.*
 
-    ```bash
+    ```
     az cosmosdb create --name <myCosmosDBacct> --resource-group az204-cosmos-rg
     ```
 
@@ -43,7 +43,7 @@ Perform the following actions to prepare Azure, and your local environment, for 
 
 1. Retrieve the primary key for the account by  using the command below. Record the `primaryMasterKey` from the command results it will be used in the code below.
 
-     ```bash
+     ```
     # Retrieve the primary key
     az cosmosdb keys list --name <myCosmosDBacct> --resource-group az204-cosmos-rg
     ```
@@ -54,20 +54,20 @@ Now that the needed resources are deployed to Azure the next step is to set up t
 
 1. Create a folder for the project and change in to the folder.
 
-    ```bash
+    ```
     md az204-cosmos
     cd az204-cosmos
     ```
 
 1. Create the .NET console app.
 
-    ```bash
+    ```
     dotnet new console
     ```
 
 1. Open the current folder in VS Code using the command below. The `-r` option will open the folder without launching a new VS Code window.
 
-    ```bash
+    ```
     code . -r
     ```
 
@@ -81,7 +81,7 @@ It's time to start adding the packages and code to the project.
 
 1. Open the terminal in VS Code and use the command below to add the `Microsoft.Azure.Cosmos` package to the project.
 
-    ```bash
+    ```
     dotnet add package Microsoft.Azure.Cosmos
     ```
 
@@ -199,7 +199,7 @@ It's time to start adding the packages and code to the project.
 
 1. Save your work and, in a terminal in VS Code, run the `dotnet run` command. The console will display the following messages.
 
-    ```bash
+    ```
     Beginning operations...
     
     Created Database: az204Database
@@ -215,6 +215,6 @@ It's time to start adding the packages and code to the project.
 
 You can now safely delete the *az204-cosmos-rg* resource group from your account by running the command below.
 
-```bash
+```
 az group delete --name az204-cosmos-rg --no-wait
 ```

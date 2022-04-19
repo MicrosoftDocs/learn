@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/21/2021
+  ms.date: 01/27/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "LRS"
       isCorrect: false
-      explanation: "That’s incorrect. LRS only protect if a node within a data center becomes unavailable."
+      explanation: "That’s incorrect. LRS only protects if a node within a data center becomes unavailable."
     - content: "ZRS"
       isCorrect: false
       explanation: "That’s incorrect. ZRS provides the same protection as LRS plus protection at the data center level."
@@ -60,7 +60,7 @@ quiz:
       explanation: "That’s incorrect. Azure Backup isn’t used for databases unless the databases are running on virtual machines."
     - content: "Active geo-replication."
       isCorrect: true
-      explanation: "That’s correct. Active geo-replication can failover to a secondary database if your primary database fails or needs to be taken offline."
+      explanation: "That’s correct. Active geo-replication can fail over to a secondary database if your primary database fails or needs to be taken offline."
   - content: "‎To address the company’s concern with accidental data deletion, which of these solutions is best?"
     choices:
     - content: "Disk caching"
@@ -68,7 +68,7 @@ quiz:
       explanation: "That’s incorrect. Disk caching is about optimizing read and write access to the VHD files."
     - content: "Soft delete"
       isCorrect: true
-      explanation: "That’s correct. With container or blob soft delete you can specify a retention period. The data is retained during the retention period and can be recovered."
+      explanation: "That’s correct. With soft delete you can specify a retention period. The data is retained during the retention period and can be recovered."
     - content: "Add a resource lock to the storage account"
       isCorrect: false
-      explanation: "That’s incorrect. Resource locks prevent resources from being accidentally deleted or changed. The lock will not help with restoring data."
+      explanation: "That’s incorrect. Resource locks prevent resources from being accidentally deleted or changed. The lock won't help with restoring data."

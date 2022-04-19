@@ -108,7 +108,7 @@ The two API tokens you created each have the permission set associated their rol
       --headers Authorization="$ADMIN_TOKEN"
     ```
 
-1. The following command fails because the **App Operator** role lets you work with API tokens:
+1. The following command fails because the **App Operator** role doesn't let you work with API tokens:
 
     ```azurecli
     az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/apiTokens \

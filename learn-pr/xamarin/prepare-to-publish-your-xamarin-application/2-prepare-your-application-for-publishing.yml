@@ -4,11 +4,10 @@ metadata:
   title: Prepare your app for publishing
   description: "Explore the steps you take to get your app ready for publishing."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Prepare your app for publishing
 durationInMinutes: 5
 content: |

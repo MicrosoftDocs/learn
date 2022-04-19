@@ -19,7 +19,7 @@ summary: |
     - Assign file access permissions
     - Script tasks
 prerequisites: None
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/shell-linux-command-line.svg
 levels:
 - beginner
 - intermediate

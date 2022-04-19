@@ -3,7 +3,7 @@ uid: learn.wwl.implement-azure-kubernetes-service-aks
 metadata:
   title: Implement Azure Kubernetes Service (AKS)
   description: "Implement Azure Kubernetes Service (AKS)"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   *   Implement continuous deployment with AKS
   *   Update container images
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/3-implement-azure-kubernetes-service-aks.svg
 levels:
 - advanced
 roles:

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-significant-government-strategy-actions.describe-memorandum-making-smarter-use-of-common-contract-solution
+title: 'Describe OMB Memorandum M-19-13: Making Smarter Use of Common Contract Solutions and Practices of 2019'
+metadata:
+  title: 'Describe OMB Memorandum M-19-13: Making Smarter Use of Common Contract Solutions and Practices of 2019'
+  description: "Describe OMB Memorandum M-19-13: Making Smarter Use of Common Contract Solutions and Practices of 2019"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/22-describe-memorandum-making-smarter-use-of-common-contract-solution.md)]

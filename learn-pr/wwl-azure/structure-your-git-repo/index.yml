@@ -3,7 +3,7 @@ uid: learn.wwl.structure-your-git-repo
 metadata:
   title: Structure your Git Repo
   description: "Structure your Git Repo"
-  ms.date: 12/29/2021
+  ms.date: 02/25/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Explain how to structure Git Repos
   - Implement a change log
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-structure-your-git-repo.svg
 levels:
 - advanced
 roles:

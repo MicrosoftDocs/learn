@@ -4,19 +4,18 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices is the minimum feed permission that will allow you to list available packages and install them?"
     choices:
@@ -33,10 +32,10 @@ quiz:
     choices:
     - content: "Owner."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. When creating an Azure Artifacts feed, the Project Collection Build Service is given contributor rights by default. This organization-wide build identity in Azure Pipelines can access the feeds it needs when running tasks."
     - content: "Reader."
       isCorrect: false
-      explanation: "Incorrect."
+      explanation: "Incorrect. When creating an Azure Artifacts feed, the Project Collection Build Service is given contributor rights by default. This organization-wide build identity in Azure Pipelines can access the feeds it needs when running tasks."
     - content: "Contributor."
       isCorrect: true
       explanation: "Correct. When creating an Azure Artifacts feed, the Project Collection Build Service is given contributor rights by default. This organization-wide build identity in Azure Pipelines can access the feeds it needs when running tasks."

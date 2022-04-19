@@ -3,7 +3,7 @@ uid: learn.wwl.implement-application-configuration
 metadata:
   title: Implement application configuration
   description: "Implement application configuration"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Implement application configuration
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/8-implement-application-configuration.svg
 levels:
 - advanced
 roles:

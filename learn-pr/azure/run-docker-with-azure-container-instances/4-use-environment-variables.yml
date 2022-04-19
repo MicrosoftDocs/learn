@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Set environment variables
   description: Set environment variables in Azure Container Instances.
   ms.date: 09/07/2021
-  author: cryophobia
-  ms.author: chrvaw
+  author: v-tcassi
+  ms.author: tomcassidy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Set environment variables

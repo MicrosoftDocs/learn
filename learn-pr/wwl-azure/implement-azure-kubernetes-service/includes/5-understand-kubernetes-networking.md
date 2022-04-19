@@ -26,16 +26,17 @@ It would be best to determine how to configure your Kubernetes cluster to make t
 
 The following Service types are available:
 
--  **ClusterIP** This service creates an internal IP address for use within the AKS cluster. However, it's suitable for internal-only applications that support other workloads within the cluster.
-
+ -  **ClusterIP** This service creates an internal IP address for use within the AKS cluster. However, it's suitable for internal-only applications that support other workloads within the cluster.
+    
     :::image type="content" source="../media/clusterip-c2a72445.png" alt-text="A workflow graphic of internal traffic being routed over port 80 to a ClusterIP and then to three pods over port 80.":::
+    
 
-
--  **NodePort** This service creates a port mapping on the underlying node, enabling the application to be accessed directly with the node IP address and port.
-
+ -  **NodePort** This service creates a port mapping on the underlying node, enabling the application to be accessed directly with the node IP address and port.
+    
     :::image type="content" source="../media/nodeport-5998cf88.png" alt-text="A workflow graphic of incoming traffic being routed over port 31000 to three AKS nodes, which are all routed to a single NodePort, and from there to three pods over port 80.":::
+    
 
-
--  **LoadBalancer** This service creates an Azure Load Balancer resource, configures an external IP address, and connects the requested pods to the load balancer backend pool. Load-balancing rules are created on the desired ports to allow customers' traffic to reach the application.
-
+ -  **LoadBalancer** This service creates an Azure Load Balancer resource, configures an external IP address, and connects the requested pods to the load balancer backend pool. Load-balancing rules are created on the desired ports to allow customers' traffic to reach the application.
+    
     :::image type="content" source="../media/loadbalancer-b2942699.png" alt-text="A workflow graphic of incoming traffic being routed through a load balancer to three AKS nodes, and then to two pods on port 80.":::
+    

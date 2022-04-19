@@ -1,20 +1,20 @@
 Blazor includes layouts to make it easy to code common user interface (UI) elements that will appear on many pages in your app.
 
-Suppose you're working in the pizza delivery company's website and you've created the content for most of the main pages as a set of Blazor components. You want to ensure that these pages have the same branding, navigation menus, and footer section but you don't want to have to copy and paste that code into multiple files.
+Suppose you're working in the pizza delivery company's website and you've created the content for most of the main pages as a set of Blazor components. You want to ensure that these pages have the same branding, navigation menus, and footer section, but you don't want to have to copy and paste that code into multiple files.
 
 Here, you'll learn how to use layout components in Blazor to render common HTML on multiple pages.
 
 ## What are Blazor layouts?
 
-In most websites, the arrangement of UI elements is shared across multiple pages. For example, there might be a branded banner at the top of the page, the main site navigation links down the left-hand side, and a legal disclaimer at the bottom. Once you've coded these common UI elements in one page, it's tedious to copy and paste them into the code for all the other pages. Worse, if there's a change later, such as a new major section of the site to link to, or a site rebranding, you'll have to make the same changes repeat in all the individual components. Instead, use a **layout component** to streamline and reuse common UI elements.
+In most websites, the arrangement of UI elements is shared across multiple pages. For example, there might be a branded banner at the top of the page, the main site navigation links down the left side, and a legal disclaimer at the bottom. After you've coded these common UI elements in one page, it's tedious to copy and paste them into the code for all the other pages. Worse, if there's a change later, such as a new major section of the site to link to or a site rebranding, you'll have to make the same changes repeat in all the individual components. Instead, use a *layout component* to streamline and reuse common UI elements.
 
-A layout component in Blazor is one that shares its rendered markup with all the components that reference it. You place common UI elements like navigation menus, branding, and footers on the layout. Then you reference that layout from multiple other components. When the page is rendered, common elements come from the layout and unique elements, such as the details of the requested pizza, come from the referencing component. You only have to code the common UI elements once, in the layout. Moreover, if there is a rebranding or some other change, you only have to correct them in the layout and the change automatically applies to all the referencing components.
+A layout component in Blazor is one that shares its rendered markup with all the components that reference it. You place common UI elements like navigation menus, branding, and footers on the layout. Then you reference that layout from multiple other components. When the page is rendered, common elements come from the layout and unique elements, such as the details of the requested pizza, come from the referencing component. You only have to code the common UI elements once, in the layout. Then if there's a rebranding or some other change, you only have to correct the layout. The change automatically applies to all the referencing components.
 
 ## Code a Blazor layout
 
-A Blazor layout is specific type of component, so writing a Blazor layout is a similar task to writing other components to render UI in your app. For example, you use `@code` block, and many directives in the same way. Layouts are defined in files with a **.razor** extension. The file is often stored in the **Shared** folder within your app but you can choose to store it in any location that is accessible to the components that use it. 
+A Blazor layout is a specific type of component, so writing a Blazor layout is a similar task to writing other components to render UI in your app. For example, you use `@code` block and many directives in the same way. Layouts are defined in files with a **.razor** extension. The file is often stored in the **Shared** folder within your app, but you can choose to store it in any location that's accessible to the components that use it.
 
-There are two requirements that unique to layout components:
+Two requirements are unique to layout components:
 
 - You must inherit the `LayoutComponentBase` class.
 - You must include the `@Body` directive in the location where you want referencing components' content to be rendered.
@@ -45,9 +45,9 @@ There are two requirements that unique to layout components:
 ```
 
 > [!NOTE]
-> Layout components don't include a `@page` directive, because they don't handle requests directly and should not have a route created for them. Instead the referencing components use the `@page` directive.
+> Layout components don't include a `@page` directive because they don't handle requests directly and shouldn't have a route created for them. Instead, the referencing components use the `@page` directive.
 
-If you created your Blazor app from a Blazor project template, then the app's default layout is the **Shared/MainLayout.razor** component. 
+If you created your Blazor app from a Blazor project template, the app's default layout is the **Shared/MainLayout.razor** component.
 
 ## Use a layout in a Blazor component
 
@@ -71,12 +71,12 @@ This diagram illustrates how a component and a layout are combined to render the
 
 :::image type="content" source="../media/render-layout.png" alt-text="Diagram showing how the markup from a component is combined with the markup from a layout to create the final HTML for a page.":::
 
-If you want to apply a template to all the Blazor components in a folder, you can use a shortcut: the **_Imports.razor** file. When the Blazor compiler finds this file, it includes its directives in all the components in the folder automatically. This technique removes the need to add the `@layout` directive to every component and applies to components in the same folder as the **_Imports.razor** file and all its subfolders.
+If you want to apply a template to all the Blazor components in a folder, you can use the **_Imports.razor** file as a shortcut. When the Blazor compiler finds this file, it includes its directives in all the components in the folder automatically. This technique removes the need to add the `@layout` directive to every component and applies to components in the same folder as the **_Imports.razor** file and all its subfolders.
 
 > [!IMPORTANT]
 > Don't add a `@layout` directive to the **_Imports.razor** file in the root folder of your project because that results in an infinite loop of layouts.
 
-If you want to apply a default layout to every component in all folders of your web app, you can do so in the **App.razor** component, where you configure the **Router** component, as you learned in unit 2. In the `<RouteView>` tag, use the `DefaultLayout` attribute:
+If you want to apply a default layout to every component in all folders of your web app, you can do so in the **App.razor** component, where you configure the **Router** component, as you learned in unit 2. In the `<RouteView>` tag, use the `DefaultLayout` attribute.
 
 ```razor
 <Router AppAssembly="@typeof(Program).Assembly">

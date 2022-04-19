@@ -1,20 +1,20 @@
-Azure Databases extension provides a highly scalable document store suitable for holding a wide range of document types. The SQL API enables you to write applications that can easily query and maintain documents.
+Azure Cosmos DB provides a highly scalable document store suitable for holding a wide range of document types. The SQL API enables you to write applications that can easily query and maintain documents.
 
-In the sample scenario, you're using Azure Databases extension to store the details of students, and the course grades they achieved. You've written and tested code to create student objects in memory. You now need to add functionality to save these documents to Cosmos DB, and to query documents held in Cosmos DB.
+In the sample scenario, you're using Azure Cosmos DB to store the details of students, and the course grades they achieved. You've written and tested code to create student objects in memory. You now need to add functionality to save these documents to Cosmos DB, and to query documents held in Cosmos DB.
 
-In this exercise, you'll extend the JavaScript app you wrote previously. You'll add code that saves student documents to the Azure Databases extension container you created in the first exercise of this module. You'll add a query capability that enables users to find the course grades achieved by a specified student in a given academic year. Then you'll see the grades received by students who took a particular course.
+In this exercise, you'll extend the JavaScript app you wrote previously. You'll add code that saves student documents to the Azure Cosmos DB container you created in the first exercise of this module. You'll add a query capability that enables users to find the course grades achieved by a specified student in a given academic year. Then you'll see the grades received by students who took a particular course.
 
 This exercise runs on your desktop computer and uses an Azure sandbox for your resources.
 
-## Configure a connection to Azure Databases extension
+## Configure a connection to Azure Cosmos DB
 
-The first task is to enable your application to connect to the Azure Databases extension account you created in the first exercise.
+The first task is to enable your application to connect to the Azure Cosmos DB account you created in the first exercise.
 
 1. Start Visual Studio Code if it isn't already running, and open the **grades** folder, holding the **studentgrades.js** file.
 
 1. On the **Terminal** menu, select **New Terminal** if you don't currently have a terminal window open.
 
-1. In the **Terminal** window, run the following command to install the Azure Databases extension package for JavaScript.
+1. In the **Terminal** window, run the following command to install the Azure Cosmos DB package for JavaScript.
 
     ```bash
     npm install @azure/cosmos
@@ -38,7 +38,7 @@ The first task is to enable your application to connect to the Azure Databases e
 
 1. In the toolbar on the left side of Visual Studio Code, select the **Azure** icon.
 
-1. Expand your Cosmos DB account, right-click your Azure Databases extension account, and then select **Copy Connection String**.
+1. Expand your Cosmos DB account, right-click your Azure Cosmos DB account, and then select **Copy Connection String**.
 
     ![Screenshot of Azure DB pane in Visual Studio Code. The user is copying the connection string for the Azure DB account to the clipboard.](../media/7-connection.png)
 
@@ -85,7 +85,7 @@ You'll now use the Cosmos DB client to insert, update, and delete student docume
     }
     ```
 
-    This function takes a **Student** object and adds it to the container in the Azure Databases extension. If the insert was successful, the function displays a message indicating that the student document was added.
+    This function takes a **Student** object and adds it to the container in the Azure Cosmos DB. If the insert was successful, the function displays a message indicating that the student document was added.
 
     > [!NOTE]
     > If the **create** method returns an HTTP status code outside of the 200-299 range, it throws an exception. The empty **catch** handler is intended to catch and discard this exception as it's handled by the **isOK** statement.
@@ -110,7 +110,7 @@ You'll now use the Cosmos DB client to insert, update, and delete student docume
     }
     ```
 
-    This function removes the document for the specified student from the container in the Azure Databases extension.
+    This function removes the document for the specified student from the container in the Azure Cosmos DB.
 
 ## Query and retrieve student documents from a container
 
@@ -240,11 +240,11 @@ You can now create and run a test harness that verifies that your code creates s
 
     1. It creates two students, and adds them to the container using the **addStudent** function. The test verifies that the students were created using the **getStudent** function.
 
-    2. It assigns grades for each course to both students, then updates the student documents in the Azure Databases extension container with the **updateStudent** function. The **getStudent** function is run to retrieve and display the details of each student. These details should now include the course grade data.
+    2. It assigns grades for each course to both students, then updates the student documents in the Azure Cosmos DB container with the **updateStudent** function. The **getStudent** function is run to retrieve and display the details of each student. These details should now include the course grade data.
 
     3. It runs the **queryStudents** function to display the grades for all students who have taken each course.
 
-    4. It removes student documents from the container in Azure Databases extension with the **deleteStudent** function. The students removed are those created manually, in the first exercise in this module. The **getStudent** function is used to retrieve the student data afterward. In both cases, the documents should no longer be present, and nothing will appear.
+    4. It removes student documents from the container in Azure Cosmos DB with the **deleteStudent** function. The students removed are those created manually, in the first exercise in this module. The **getStudent** function is used to retrieve the student data afterward. In both cases, the documents should no longer be present, and nothing will appear.
 
 2. Save the file.
 
@@ -267,7 +267,7 @@ You can now create and run a test harness that verifies that your code creates s
     | Enter the student's forename: | ABC |
     | Enter the student's last name: | DEF |
 
-    The following messages should appear. This is the data displayed by the **getStudent** function, after the course has been added to the Azure Databases extension container by the **addStudent** function.
+    The following messages should appear. This is the data displayed by the **getStudent** function, after the course has been added to the Azure Cosmos DB container by the **addStudent** function.
 
     ```text
     Added student with id: S901
@@ -283,7 +283,7 @@ You can now create and run a test harness that verifies that your code creates s
     | Enter the student's forename: | TUV |
     | Enter the student's last name: | XYZ |
 
-    The following message should appear, indicating that the document for this student has also been added to the Azure Databases extension container.
+    The following message should appear, indicating that the document for this student has also been added to the Azure Cosmos DB container.
 
     ```text
     Added student with id: S902

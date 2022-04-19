@@ -51,7 +51,7 @@ fn main() {
 
 Here we can see that the inner `'b` lifetime block is shorter than the outer `'a` block.
 
-The Rust compiler can verify if the borrows are valid by using the *borrow checker*. The borrow checker compares the two lifetimes at compile time. In this scenario, `x` has a lifetime of `'a` but it refers to a value with a lifetime of `'b`. The reference subject *(`y` at lifetime `'b`)* a shorter time than the reference *(`x` at lifetime `'a`)* so the program doesn't to compile.
+The Rust compiler can verify if the borrows are valid by using the *borrow checker*. The borrow checker compares the two lifetimes at compile time. In this scenario, `x` has a lifetime of `'a` but it refers to a value with a lifetime of `'b`. The reference subject *(`y` at lifetime `'b`)* is a shorter time than the reference *(`x` at lifetime `'a`)* so the program doesn't compile.
 
 ## Annotating lifetimes in functions
 
@@ -99,7 +99,7 @@ The help text says Rust can't tell whether the reference that's being returned r
 
 It's possible that lifetimes could be different whenever the function is called. We don't know the concrete lifetimes of the references that will be passed to our `longest_word` function, and we can't determine if the reference that will be returned will always be a valid one.
 
-The borrow checker can't determine if the reference will be a valid one either. It doesn't know how the input parameters' lifetime relate to the return value's lifetime. This is why we need to annotate the lifetimes manually.
+The borrow checker can't determine if the reference will be a valid one either. It doesn't know how the input parameters' lifetime relates to the return value's lifetime. This is why we need to annotate the lifetimes manually.
 
 Luckily, the compiler gave us a hint on how to fix this error. We can add generic lifetime parameters to our function signature. These parameters define the relationship between the references so the borrow checker can complete its analysis:
 
@@ -115,10 +115,10 @@ fn longest_word<'a>(x: &'a String, y: &'a String) -> &'a String {
 
 You can try this code at the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=6a5bee8873e751122eaf382858131b0e&azure-portal=true).
 
-Make sure to declare generic lifetime parameters inside angle brackets, and add the declaration between the parameter list and the function name. 
+Make sure to declare generic lifetime parameters inside angle brackets, and add the declaration between the parameter list and the function name.
 
 > [!NOTE]
-> In the signature,the return value and all the parameter references must have the same lifetime. As such, use the same lifetime name, for example `'a`. Then, add the name to each reference in the function signature.
+> In the signature, the return value and all the parameter references must have the same lifetime. As such, use the same lifetime name, for example `'a`. Then, add the name to each reference in the function signature.
 
 There's nothing special about the name `'a` in this case. It would be just as fine to use any other word, such as `'response` or `'program`. The important thing to keep in mind is that all parameters and the returned value will live at least as long as the lifetime associated with each of them.
 
@@ -170,7 +170,7 @@ The reference's lifetime that the `longest_word` function returns matches the sm
 
 Whenever a struct or enum holds a reference in one of its fields, we must annotate that type definition with the lifetime of each reference that it carries along with it.
 
-For example, consider the following example code. We have a `text` string *(which owns its contents)* and a `Highlight` tuple struct. The struct has one field, `part`, that holds a string slice. The slice is a borrowed value from another part of our program.
+For example, consider the following example code. We have a `text` string *(which owns its contents)* and a `Highlight` tuple struct. The struct has one field that holds a string slice. The slice is a borrowed value from another part of our program.
 
 ```rust
 #[derive(Debug)]
@@ -187,7 +187,7 @@ fn main() {
 
 The preceding code is available at the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e992388f5a562abf9301a3bd6c6bdc0d&azure-portal=true).
 
-We place the name of the generic lifetime parameter inside angle brackets after the name of the struct. This placement so we can use the lifetime parameter in the body of the struct definition. This instance of `Highlight` can't live longer than the reference in the `part` field because of the declaration. 
+We place the name of the generic lifetime parameter inside angle brackets after the name of the struct. This placement is so we can use the lifetime parameter in the body of the struct definition. This instance of `Highlight` can't live longer than the reference in its field because of the declaration.
 
 In the preceding code, we annotated our struct with a lifetime called `'document`. This annotation is a reminder that the
 `Highlight` struct can't outlive the source of the `&str` that it borrows, a supposed document.

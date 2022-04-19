@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.beginner-python.python-loops
+metadata:
+  moduleType: standard
+  title: Use 'while' and 'for' loops in Python
+  description: With Python, you can use `while` loops to run the same task multiple times and `for` loops to loop once over list data. In this module, you'll learn about the two loop types and when to apply each.
+  ms.date: 12/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-language
+title: Use 'while' and 'for' loops in Python
+summary: With Python, you can use `while` loops to run the same task multiple times and `for` loops to loop once over list data. In this module, you'll learn about the two loop types and when to apply each.
+abstract: | 
+  After you've completed this module, you'll be able to:
+  - Identify when to use `while` and `for` loops.
+  - Run a task multiple times by using `while` loops.  
+  - Loop over list data by using `for` loops. 
+prerequisites: | 
+  - Basic Python programming knowledge, including the use of variables, strings, integers, and math.
+  - Experience working with lists in Python.
+  - Experience modifying and running code in Jupyter notebooks.
+iconUrl: /learn/achievements/python-loops.svg
+levels: 
+  - beginner
+roles: 
+  - student
+  - developer
+products:
+  - vs-code
+units:
+- learn.beginner-python.python-loops.introduction
+- learn.beginner-python.python-loops.while-loops
+- learn.beginner-python.python-loops.exercise-while-loops
+- learn.beginner-python.python-loops.for-loops
+- learn.beginner-python.python-loops.exercise-for-loops
+- learn.beginner-python.python-loops.knowledge-check
+- learn.beginner-python.python-loops.summary
+badge:
+  uid: learn.beginner-python.python-loops.badge

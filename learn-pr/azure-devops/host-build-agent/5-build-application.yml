@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Build the application by using your agent
   description: Configure the pipeline to use your build agent, and watch the build in action.
   ms.date: 06/04/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

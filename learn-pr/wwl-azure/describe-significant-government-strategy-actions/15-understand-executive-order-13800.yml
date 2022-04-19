@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-significant-government-strategy-actions.understand-executive-order-13800
+title: Understand Executive Order (EO) 13800
+metadata:
+  title: Understand Executive Order (EO) 13800
+  description: "Understand Executive Order (EO) 13800"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/15-understand-executive-order-13800.md)]

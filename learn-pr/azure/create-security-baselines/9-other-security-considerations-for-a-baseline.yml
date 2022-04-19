@@ -3,8 +3,8 @@ uid: learn.azure-security.create-security-baselines.other-security-consideration
 title: Other baseline security considerations
 metadata:
   title: Other baseline security considerations
-  description: Other baseline security considerations
-  ms.date: 09/9/2019
+  description: Learn about other baseline security considerations, like expiration dates on Azure Key Vault keys and secrets.
+  ms.date: 02/03/2022
   author: msmbaldwin
   ms.author: mbaldwin
   ms.topic: interactive-tutorial

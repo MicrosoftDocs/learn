@@ -652,7 +652,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
 After completing the steps in the Upgrade Assistant, you will need complete some manual steps to complete the upgrade.
 
 > [!NOTE]
-> Since both NuGet packages and the Upgrade Assistant are regularly updated, you may not hit the issues listed below, or you may encounter different issues. Troubleshooting steps are provided in the [Upgrade Assistant documentation](/aspnet/core/migration/upgrade-assistant).
+> Since both NuGet packages and the Upgrade Assistant are regularly updated, you may not hit the issues listed below, or you may encounter different issues. Troubleshooting steps are provided in the [Upgrade Assistant documentation](/dotnet/core/porting/upgrade-assistant-aspnetmvc).
 
 ### Remove unneeded NuGet packages
 

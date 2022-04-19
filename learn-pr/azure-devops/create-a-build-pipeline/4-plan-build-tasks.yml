@@ -5,8 +5,8 @@ metadata:
   title: Plan your build tasks
   description: See how the team maps scripted build steps to Azure Pipelines tasks.
   ms.date: 05/24/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

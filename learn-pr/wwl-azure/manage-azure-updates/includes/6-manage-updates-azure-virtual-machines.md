@@ -7,7 +7,7 @@ In this demonstration, you'll learn to:
 - Schedule an update deployment programmatically.
 - Check deployment status.
 
->[!VIDEO https://aka.ms/manage-updates-for-your-azure-vms]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zwXz]
 
 ## Next steps
 

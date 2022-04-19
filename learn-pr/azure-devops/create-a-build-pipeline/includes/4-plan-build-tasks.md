@@ -130,7 +130,7 @@ Now, you'll follow along as Mara maps commands from her script to Azure Pipeline
 
 To map each command, Mara refers to the [reference documentation](/azure/devops/pipelines/tasks/?azure-portal=true). The documentation categorizes tasks by function, like build or deploy.
 
-For example, the [.NET Core task](/azure/devops/pipelines/tasks/build/dotnet-core?azure-portal=true) `DotNetCoreCLI@2` helps you run `dotnet` commands.
+For example, the [.NET Core CLI task](/azure/devops/pipelines/tasks/build/dotnet-core-cli?azure-portal=true) `DotNetCoreCLI@2` helps you run `dotnet` commands.
 
 This table associates the script commands with the new Azure Pipelines tasks:
 

@@ -16,7 +16,7 @@ Now that you've completed this module, you should be able to:
 
 - Design for Azure Site Recovery.
 
-**Learn more with Azure documentation**
+## Learn more with Azure documentation
 
 - [About Azure file share backup - Azure Backup | Microsoft Docs](/azure/backup/azure-file-share-backup-overview?toc=/azure/storage/files/toc.json)
 
@@ -36,7 +36,7 @@ Now that you've completed this module, you should be able to:
 
 - [Back up Azure file shares](/azure/backup/backup-afs?azure-portal=true)
 
-**Learn more with self-paced training**
+## Learn more with self-paced training
 
 - [Disaster recovery and backup - Learn | Microsoft Docs](/learn/modules/cmu-disaster-recovery-backup/)
 
@@ -49,3 +49,7 @@ Now that you've completed this module, you should be able to:
 - [Microsoft Azure Well-Architected Framework - Reliability - Learn | Microsoft Docs](/learn/modules/azure-well-architected-reliability/)
 
 - [Describe high-availability and disaster-recovery strategies - Learn | Microsoft Docs](/learn/modules/describe-high-availability-disaster-recovery-strategies/)
+
+## Learn more with optional hands-on labs
+
+- [Backup and restore your Azure SQL database - Learn | Microsoft Docs](/learn/modules/backup-restore-azure-sql/)

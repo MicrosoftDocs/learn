@@ -6,7 +6,7 @@ The key to unlocking the advantages of VDC is a centralized hub and spoke networ
  -  Network security groups
  -  Virtual network peering
  -  User-defined routes
- -  Azure Identity with role-based access control (RBAC)
+ -  Azure Identity with role-based access control (RBAC role)
  -  Azure DNS
  -  Azure Firewall
  -  Azure Front Door

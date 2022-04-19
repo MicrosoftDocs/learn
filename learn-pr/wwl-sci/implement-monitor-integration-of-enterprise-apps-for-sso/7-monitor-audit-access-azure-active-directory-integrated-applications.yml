@@ -4,12 +4,13 @@ title: Monitor and audit access to Azure Active Directory integrated application
 metadata:
   title: Monitor and audit access to Azure Active Directory integrated applications
   description: "Monitor and audit access to Azure Active Directory integrated applications"
-  ms.date: 08/20/2021
+  ms.date: 02/22/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/7-monitor-audit-access-azure-active-directory-integrated-applications.md)]

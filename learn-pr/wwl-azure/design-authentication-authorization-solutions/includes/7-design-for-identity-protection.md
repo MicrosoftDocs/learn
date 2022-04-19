@@ -31,7 +31,7 @@ A [user risk](/azure/active-directory/identity-protection/concept-identity-prote
 > [!TIP]
 > Microsoft's recommendation is to set the user risk policy threshold to **High.**
 
-**Sign-in risk policies**
+## Sign-in risk policies
 
 A [sign-in risk](/azure/active-directory/identity-protection/concept-identity-protection-risks) represents the probability that a given sign-in (authentication request) isn't authorized by the identity owner. Sign-in risk can be calculated in real-time or calculated offline. Here are some sign-in risks that can be identified.
 

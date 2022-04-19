@@ -5,8 +5,8 @@ metadata:
   title: Manage Azure custom roles
   description: Learn how to manage Azure custom roles
   ms.date: 02/10/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: rolyon
+  ms.author: rolyon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

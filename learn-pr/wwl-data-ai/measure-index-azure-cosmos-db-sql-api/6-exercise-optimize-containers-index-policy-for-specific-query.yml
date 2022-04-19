@@ -4,13 +4,12 @@ title: Exercise - Optimize an Azure Cosmos DB SQL API container's index policy f
 metadata:
   title: Exercise - Optimize an Azure Cosmos DB SQL API container's index policy for a specific query
   description: "Exercise - Optimize an Azure Cosmos DB SQL API container's index policy for a specific query"
-  ms.date: 12/21/2021
+  ms.date: 03/03/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labId: 107592
 labModal: true
 durationInMinutes: 15

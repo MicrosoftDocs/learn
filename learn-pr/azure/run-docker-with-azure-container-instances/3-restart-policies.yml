@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Control Azure Container Instances restart behavior
   description: Control Container Instances restart behavior.
   ms.date: 09/07/2021
-  author: cryophobia
-  ms.author: chrvaw
+  author: v-tcassi
+  ms.author: tomcassidy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Control restart behavior

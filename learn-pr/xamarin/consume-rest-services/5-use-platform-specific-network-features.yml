@@ -5,11 +5,10 @@ metadata:
   title: Use platform-specific network features
   description: Use platform-specific network features
   ms.date: 4/15/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 durationInMinutes: 10
 content: |
   [!include[](includes/5-use-platform-specific-network-features.md)]

@@ -5,8 +5,8 @@ metadata:
   title: Create an image from a generalized VM
   description: Create an image of a VM
   ms.date: 03/18/2020
-  author: adrianstevens
-  ms.author: adsteven
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

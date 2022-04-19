@@ -4,11 +4,10 @@ metadata:
   title: Platform-specific values in XAML
   description: "Learn how to manage platform-specific UI elements using XAML"
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Platform-specific values in XAML
 durationInMinutes: 5
 content: |

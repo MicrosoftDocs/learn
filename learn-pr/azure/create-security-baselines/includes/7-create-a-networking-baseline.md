@@ -10,17 +10,17 @@ It's possible to reach Azure virtual machines (VMs) by using **Remote Desktop Pr
 
 The potential security problem with using these protocols over the internet is that attackers can use brute force techniques to gain access to Azure VMs. After the attackers gain access, they can use your VM as a launching pad for compromising other machines on your virtual network or even attack networked devices outside Azure.
 
-We recommended that you disable direct RDP and SSH access to your Azure VMs from the internet. 
+We recommended that you disable direct RDP and SSH access to your Azure VMs from the internet.
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the Azure **home** page, in the top search bar, search for and select *Virtual machines*. The **Virtual machines** pane appears.
+1. On the Azure **home** page, in the top search bar, search for and select *Virtual machines*. The **Virtual machines** pane displays.
 
-1. For each VM selection, in the middle menu pane, under **Settings**, select **Networking**. The **Networking** pane appears for the VM.
+1. For each VM selection, in the middle menu pane, under **Settings**, select **Networking**. The **Networking** pane displays for the VM.
 
-1. Verify that the **Inbound port rules** tab does not have a rule for RDP, for example: `port=3389, protocol = TCP, Source = Any or Internet`
+1. Verify that the **Inbound port rules** tab doesn't have a rule for RDP, for example: `port=3389, protocol = TCP, Source = Any or Internet`
 
-1. Verify that the **Inbound port rules** tab does not have a rule for SSH, for example: `port=22, protocol = TCP, Source = Any or Internet`
+1. Verify that the **Inbound port rules** tab doesn't have a rule for SSH, for example: `port=22, protocol = TCP, Source = Any or Internet`
 
     :::image type="content" source="../media/7-rdp.png" alt-text="Screenshot the VM networking pane." lightbox="../media/7-rdp.png#lightbox":::
 
@@ -37,11 +37,11 @@ Firewall systems help prevent unauthorized access to computer resources. If a fi
 
 To access an instance of the SQL Server through a firewall, you must configure the firewall on the computer that is running SQL Server. Allowing ingress for the IP range `0.0.0.0/0` (Start IP of `0.0.0.0` and End IP of `0.0.0.0`) allows open access to any/all traffic, potentially making the SQL database vulnerable to attacks. Ensure that no SQL databases allow ingress from the internet.
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the Azure **home** page, in the top search bar, search for and select *SQL servers*. The **SQL servers** pane appears.
+1. On the Azure **home** page, in the top search bar, search for and select *SQL servers*. The **SQL servers** pane displays.
 
-1. For each SQL server selection, in the middle menu pane, under **Security**, select **Firewalls and virtual networks**. The **Firewalls and virtual networks** pane appears for the SQL server.
+1. For each SQL server selection, in the middle menu pane, under **Security**, select **Firewalls and virtual networks**. The **Firewalls and virtual networks** pane displays for the SQL server.
 
 1. Ensure that the firewall rules exist, and no rule has a **Start IP** of `0.0.0.0` and **End IP** of `0.0.0.0` or other combinations that allow access to wider public IP ranges.
 
@@ -51,25 +51,23 @@ To access an instance of the SQL Server through a firewall, you must configure t
 
 ### Configure the NSG flow log retention period for more than 90 days - Level 2
 
-When you create or update a virtual network in your subscription, Network Watcher will be enabled automatically in your virtual network's region. There is no impact to your resources or associated charge for automatically enabling Network Watcher.
+When you create or update a virtual network in your subscription, Network Watcher will be enabled automatically in your virtual network's region. There's no impact to your resources or associated charge for automatically enabling Network Watcher.
 
 Network security group (NSG) flow logs are a feature of Network Watcher that allows you to view information about ingress and egress IP traffic through an NSG. Flow logs are written in JSON format, and show:
 
 - Outbound and inbound flows on a per rule basis
 - Network interface (NIC) the flow applies to
-- 5-tuple information about the flow (Source/destination IP, source/destination port, and protocol)
+- 5-tuple information about the flow: source/destination IP, source/destination port, and protocol
 - If the traffic was allowed or denied
-- In Version 2, throughput information (Bytes and Packets).
+- In Version 2, throughput information like bytes and packets
 
 Logs can be used to check for anomalies and give insight into suspected breaches.
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the Azure **home** page, in the top search bar, search for and select *Network Watcher*. The **Network Watcher** pane appears.
+1. On the Azure **home** page, in the top search bar, search for and select *Network Watcher*. The **Network Watcher** pane displays.
 
-1. In the left menu pane, under **Logs**, select **NSG flow logs**. The **NSG flow logs** pane appears.
-
-1. Select **NSG flow logs** under the **Logs** section in the left nav bar.
+1. In the left menu pane, under **Logs**, select **NSG flow logs**. The **NSG flow logs** pane displays.
 
 1. Ensure **Retention (days)** setting is greater than 90 days.
 
@@ -81,11 +79,11 @@ Logs can be used to check for anomalies and give insight into suspected breaches
 
 Network security group (NSG) flow logs are a feature of Network Watcher that allows you to view information about ingress and egress IP traffic through an NSG.
 
-1. Sign in to the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. On the Azure **home** page, in the top search bar, search for and select *Network Watcher*. The **Network Watcher** pane appears.
+1. On the Azure **home** page, in the top search bar, search for and select *Network Watcher*. The **Network Watcher** pane displays.
 
-1. Select the *Network watcher* from the appropriate subscription and location you choose. The **Network Watcher** pane appears for your subscription/location.
+1. Select the *Network watcher* from the appropriate subscription and location you choose. The **Network Watcher** pane displays for your subscription/location.
 
 > [!TIP]
 > Remember to select **Save** if you make changes to any of the settings.

@@ -16,4 +16,4 @@ The corresponding package manager can inspect the version information. The tooli
 
 Additionally, a package type might have its conventions for versioning and a particular versioning scheme.
 
-See also [Publish to NuGet feeds](https://docs.microsoft.com/azure/devops/pipelines/artifacts/nuget#package-versioning).
+See also [Publish to NuGet feeds](/azure/devops/pipelines/artifacts/nuget#package-versioning).

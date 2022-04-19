@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-chef-puppet
 metadata:
   title: Introduction to Chef and Puppet
   description: "Introduction to Chef and Puppet"
-  ms.date: 12/02/2021
+  ms.date: 02/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Deploy Puppet in Azure
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/6-introduction-to-chef-and-puppet.svg
 levels:
 - advanced
 roles:

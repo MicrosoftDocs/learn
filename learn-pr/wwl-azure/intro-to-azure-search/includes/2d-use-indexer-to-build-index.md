@@ -18,8 +18,6 @@ The search services overview page has a dashboard that lets you quickly see the 
 
 When loading new documents into an index, the progress can be monitored by clicking on the index's associated indexer. The document count will grow as documents are loaded into the index. In some instances, the portal page can take a few minutes to display up-to-date document counts. Once the index is ready for querying, you can then use Search explorer to verify the results. An index is ready when the first document is successfully loaded.
 
-![Screenshot of the portal, showing the indexer status.](../media/indexer-status.png)
-
 Indexers only import new or updated documents, so it is normal to see zero documents indexed.
 
 The Search explorer can perform quick searches to check the contents of an index, and ensure that you are getting expected search results. Having this tool available in the portal enables you to easily check the index by reviewing the results that are returned as JSON documents.

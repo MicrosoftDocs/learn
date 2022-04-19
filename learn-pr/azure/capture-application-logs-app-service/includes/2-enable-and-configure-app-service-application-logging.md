@@ -89,7 +89,7 @@ After configuring the logs, select **Save**.
 
 ## Enable logging using the Azure CLI
 
-The current version of Azure CLI does not enable you to manage app logging to blob storage. To enable app logging to the file system, run this command.
+To enable app logging to the file system, run this command.
 
 ```azurecli
 az webapp log config --application-logging true --level verbose --name <app-name> --resource-group <resource-group-name>

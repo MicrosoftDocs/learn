@@ -12,7 +12,7 @@ A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Austr
  -  Regions preserve data residency and offer comprehensive compliance and resiliency options for customers.
  -  For most Azure services, when you deploy a resource in Azure, you choose the region where you want your resource to be deployed.
  -  Some services or virtual machine features are only available in certain regions, such as specific virtual machine sizes or storage types.
- -  Some global Azure services do not require you to select a region. These services include Azure Active Directory, Microsoft Azure Traffic Manager, and Azure DNS.
+ -  Some global Azure services that do not require you to select a region. These services include Azure Active Directory, Microsoft Azure Traffic Manager, and Azure DNS.
  -  Each Azure region is paired with another region within the same geography, together making a regional pair. The exception is Brazil South, which is paired with a region outside its geography.
 
 > [!NOTE]
@@ -27,4 +27,4 @@ A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Austr
  -  **Data residency**. A region resides within the same geography as its pair (except for Brazil South) to meet data residency requirements for tax and law enforcement jurisdiction purposes.
 
 > [!NOTE]
-> View the complete list of [region pairs](https://docs.microsoft.com/azure/best-practices-availability-paired-regions#what-are-paired-regions).
+> View the complete list of [region pairs](/azure/best-practices-availability-paired-regions#what-are-paired-regions).

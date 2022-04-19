@@ -14,12 +14,12 @@ An ExpressRoute circuit two peering options associated with it: Azure private, a
 
 The following table compares the two peering. Public peering is deprecated for new peering.
 
-| **Max. \# prefixes supported per peering** |                                    **Private Peering**                                     |                                  **Microsoft Peering**                                   |
+| **Features**                               |                                    **Private Peering**                                     |                                  **Microsoft Peering**                                   |
 |:------------------------------------------:|:------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------:|
-|        IP address ranges supported         |                     4000 by default, 10,000 with ExpressRoute Premium                      |                                           200                                            |
-|           AS Number requirements           |                           Any valid IP address within your WAN.                            |             Public IP addresses owned by you or your connectivity provider.              |
-|           IP protocols supported           | Private and public AS numbers. You must own the public AS number if you choose to use one. | Private and public AS numbers. However, you must prove ownership of public IP addresses. |
-|       Routing Interface IP addresses       |                                    IPv4, IPv6 (preview)                                    |                                        IPv4, IPv6                                        |
+|   Max. \# prefixes supported per peering   |                     4000 by default, 10,000 with ExpressRoute Premium                      |                                           200                                            |
+|         IP address ranges supported        |                           Any valid IP address within your WAN.                            |             Public IP addresses owned by you or your connectivity provider.              |
+|           AS Number requirements           | Private and public AS numbers. You must own the public AS number if you choose to use one. | Private and public AS numbers. However, you must prove ownership of public IP addresses. |
+|       IP protocols supported               |                                    IPv4, IPv6 (preview)                                    |                                        IPv4, IPv6                                        |
 |       Routing Interface IP addresses       |                              RFC1918 and public IP addresses                               |               Public IP addresses registered to you in routing registries.               |
 |              MD5 Hash support              |                                            Yes                                             |                                           Yes                                            |
 
@@ -37,7 +37,6 @@ Azure compute services, namely virtual machines (IaaS) and cloud services (PaaS)
 
 You can connect more than one virtual network to the private peering domain. You can visit the [Azure Subscription and Service Limits, Quotas, and Constraints](/azure/azure-resource-manager/management/azure-subscription-service-limits) page for up-to-date information on limits.
 
-To watch a demonstration of configuring private peering, see [Azure ExpressRoute - How to set up Azure private peering for your ExpressRoute circuit \| Azure \| Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-set-up-Azure-private-peering-for-your-ExpressRoute-circuit?term=ExpressRoute&amp;lang-en=true&amp;pageSize=15&amp;skip=15).
 
 ## Configure Microsoft peering
 
@@ -45,7 +44,6 @@ Microsoft 365 was created to be accessed securely and reliably via the Internet.
 
 Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) occurs through Microsoft peering. You can enable bidirectional connectivity between your WAN and Microsoft cloud services through the Microsoft peering routing domain. You must connect to Microsoft cloud services only over public IP addresses that are owned by you or your connectivity provider and you must adhere to all the defined rules.
 
-To watch a demonstration of configuring Microsoft peering, see [Azure ExpressRoute - How to set up Microsoft peering for your ExpressRoute circuit \| Azure \| Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-set-up-Microsoft-peering-for-your-ExpressRoute-circuit?term=ExpressRoute&amp;lang-en=true&amp;pageSize=15&amp;skip=15).
 
 ## Configure route filters for Microsoft Peering
 

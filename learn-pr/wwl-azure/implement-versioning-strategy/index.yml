@@ -3,7 +3,7 @@ uid: learn.wwl.implement-versioning-strategy
 metadata:
   title: Implement a versioning strategy
   description: "Implement a versioning strategy"
-  ms.date: 12/02/2021
+  ms.date: 02/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Describe semantic and explore best practices for versioning
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/4-implement-a-versioning-strategy.svg
 levels:
 - advanced
 roles:

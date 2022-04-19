@@ -1,6 +1,6 @@
-The Pizza company's app has better navigation and you've simplified the app by using layouts to share common page arrangements across the whole app. You've seen how you can share data between page parameters and Blazor components to improve the functionality of the app.
+The pizza company's app now has better navigation. You've simplified the app by using layouts to share common page arrangements across the whole app. You've seen how you can share data between page parameters and Blazor components to improve the functionality of the app.
 
-Blazor lets you re-use your C# experience and bring it to front-end web development.
+Blazor lets you reuse your C# experience and bring it to front-end web development.
 
 ## Learn more
 

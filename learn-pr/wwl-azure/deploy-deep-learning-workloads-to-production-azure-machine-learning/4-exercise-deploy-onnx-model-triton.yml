@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.exercise-deploy-onnx-model-triton
+title: 'Exercise: Deploy an ONNX model with Triton in Azure Machine Learning'
+metadata:
+  title: 'Exercise: Deploy an ONNX model with Triton in Azure Machine Learning'
+  description: "Exercise: Deploy an ONNX model with Triton in Azure Machine Learning"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-exercise-deploy-onnx-model-triton.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.examine-device-provisioning-service-coding-tools-access
 metadata:
   title: Examine Device Provisioning Service coding tools and access
   description: "This module introduces you to the Device Provisioning Service SDKs, Azure CLI support for DPS, and how to control access to the service."
-  ms.date: 12/15/2021
+  ms.date: 03/30/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -26,6 +26,7 @@ roles:
 - developer
 products:
 - azure
+- azure-iot
 - azure-iot-dps
 - azure-iot-hub
 - azure-portal

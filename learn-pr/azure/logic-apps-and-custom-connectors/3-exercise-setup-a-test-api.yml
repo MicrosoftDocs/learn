@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Set up a test API
   description: In this exercise, you will create a Web API, hosted in Azure, to call from Logic Apps.
   ms.date: 04/11/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: ecfan
+  ms.author: estfan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: INDEX,FOLLOW

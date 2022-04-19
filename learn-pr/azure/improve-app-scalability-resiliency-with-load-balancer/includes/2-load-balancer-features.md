@@ -53,7 +53,7 @@ Basic load balancers allow:
 - Outbound connections through source network address translation (SNAT)
 - Diagnostics through Azure Log Analytics for public-facing load balancers
 
-Basic load balancers can be used only with availability sets.
+Basic load balancers can be used only with a single availability set or scale set.
 
 Standard load balancers support all of the basic load balancer features. They also allow:
 

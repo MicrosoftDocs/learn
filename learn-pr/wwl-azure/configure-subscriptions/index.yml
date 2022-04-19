@@ -3,21 +3,22 @@ uid: learn.wwl.configure-subscriptions
 metadata:
   title: Configure subscriptions
   description: "You will learn how to configure subscriptions including obtaining a subscription, implementing cost management, and applying resource tags."
-  ms.date: 10/11/2021
+  ms.date: 04/15/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure subscriptions
-summary: You will learn how to configure subscriptions. This includes getting a subscription, implementing cost management, and applying resource tags.
+summary: You'll learn how to configure subscriptions. This includes getting a subscription, implementing cost management, and applying resource tags.
 abstract: |
-  After completing this module, you will be able to:
-  - Identify the features and uses of Azure Active Directory.
-  - Define the main Azure Active Directory components such as identity, account, and tenant.
-  - Compare Azure Active Directory to Azure Directory Domain Services.
-  - Identify features of Azure Active Directory editions.
-  - Identify features and usage cases for Azure AD Join.
-  - Identify features and usage cases for Self-Service Password Reset.
+  After completing this module, you'll be able to:
+   -  Determine the correct region to locate Azure services.
+   -  Identify features and usage cases for Azure subscriptions.
+   -  Identify how to obtain an Azure subscription.
+   -  Understand billing and features for different Azure subscriptions.
+   -  Use the Cost Management product for cost analysis.
+   -  Determine when to use resource tagging.
+   -  Identify ways to reduce costs.
 prerequisites: |
   None
 iconUrl: /learn/achievements/subscriptions-configure.svg

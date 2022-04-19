@@ -8,6 +8,8 @@ Azure Stream Analytics is a service for complex event processing and analysis of
 
 Once started, a Stream Analytics query will run perpetually, processing new data as it arrives in the input and storing results in the output.
 
+Azure Stream Analytics is a great technology choice when you need to continually capture data from a streaming source, filter or aggregate it, and send the results to a data store or downstream process for analysis and reporting.
+
 ## Azure Stream Analytics jobs and clusters
 
 The easiest way to use Azure Stream Analytics is to create a Stream Analytics *job* in an Azure subscription, configure its input(s) and output(s), and define the query that the job will use to process the data. The query is expressed using structured query language (SQL) syntax, and can incorporate static reference data from multiple data sources to supply lookup values that can be combined with the streaming data ingested from an input.

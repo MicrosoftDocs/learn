@@ -110,7 +110,7 @@ The Fibonacci sequence is a suite of numbers that starts with the numbers 0 and 
     The program '[88820] DotNetDebugging.dll' has exited with code 0 (0x0).
     ```
 
-The lines at the top tell you that the default debugging settings enable the "Just My Code" option. This means that the debugger will only debug your code and won't step into the source code for .NET unless you disable this mode. This option allows you to focus on debugging your code.
+The lines at the top tell you that the default debugging settings enable the "Just My Code" option. This means the debugger will only debug your code and won't step into the source code for .NET unless you disable this mode. This option allows you to focus on debugging your code.
 
 At the end of the debug console output, you'll see the program writes 3 to the console and then exits with code 0. Usually a program exit code of 0 indicates that the program ran and exited without crashing. However, there's a difference between crashing and returning the correct value. In this case, we asked the program to calculate the fifth value of the Fibonacci sequence:
 
@@ -126,7 +126,7 @@ The fifth value in this list is 5, but our program returned 3. Let's use the deb
 
    :::image source="../media/breakpoint.png" alt-text="Screenshot of the breakpoint location in the code.":::
 
-1. Start debugging again. The program begins to execute. It breaks (pauses execution) on line 9 because of the breakpoint you set. Use the debugger controls to step into the `Fibonacci()` function.
+1. Start debugging again. The program begins to execute. It breaks (pauses execution) on line 1 because of the breakpoint you set. Use the debugger controls to step into the `Fibonacci()` function.
 
    :::image source="../media/step-into.png" alt-text="Screenshot of the Step into button.":::
 
@@ -270,7 +270,7 @@ When we're doing this, it's important to be strategic about where we put our bre
     for (int i = 2; i < n; i++)
     ```
 
-    Okay, wait a minute! That means that it will exit as soon as the top of the for loop sees `i` equals as `n`. That means that the loop code won't run for the case where `i` equals `n`. It seems like what we wanted was to run until `i <= n`, instead:
+    Okay, wait a minute! That means that it will exit as soon as the top of the for loop sees `i` is less than `n`. That means that the loop code won't run for the case where `i` equals `n`. It seems like what we wanted was to run until `i <= n`, instead:
 
     ```csharp
     for (int i = 2; i <= n; i++)
@@ -301,9 +301,9 @@ When we're doing this, it's important to be strategic about where we put our bre
 
 1. Stop the debugging session if you haven't already.
 
-1. Next, make the preceding change to line 18, and leave our breakpoint on line 25.
+1. Next, make the preceding change to line 10, and leave our breakpoint on line 17.
 
-1. Restart the debugger. This time, when we hit the breakpoint on line 25, we'll see the following values:
+1. Restart the debugger. This time, when we hit the breakpoint on line 17, we'll see the following values:
 
     ```text
     n [int]: 5

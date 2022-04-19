@@ -2,13 +2,13 @@ Azure VMs make up the primary infrastructure as a service (IaaS) compute service
 
 Azure VMs share most of their characteristics with the Microsoft Hyper V virtual machines that customers deploy in their on-premises datacenter. However, several important differences exist between them.
 
-Azure VMs that you deploy are available in specific sizes. You cannot specify arbitrary amounts of processing, memory, or storage resources when deploying an Azure VM. Instead, you must select one of the predefined choices. This restriction does not impose significant constraints, since Microsoft offers a wide range of virtual machine sizes. The sizes are grouped into several categories, including the following:
+Azure VMs that you deploy are available in specific sizes. You can't specify arbitrary amounts of processing, memory, or storage resources when deploying an Azure VM. Instead, you must select one of the predefined choices. This restriction doesn't impose significant constraints, since Microsoft offers a wide range of virtual machine sizes. The sizes are grouped into several categories, including the following virtual machine sizes:
 
  -  **General purpose** (including the B, Dsv3, Dv3, DSv2, Dv2, Av2, and DC sizes) providing balanced CPU-to-memory ratio, ideal for testing and development, small to medium databases, and low to medium traffic web servers.
  -  **Compute optimized** (including the Fsv2 size) providing high CPU-to-memory ratio, good for medium traffic web servers, network appliances, batch processes, and application servers.
  -  **Memory optimized** (including the Esv3, Ev3, M, GS, G, DSv2, Dv2 sizes) providing high memory-to-CPU ratio, great for relational database servers, medium to large caches, and in-memory analytics.
  -  **Storage optimized** (including the Lsv2 and Ls sizes) providing high disk throughput and IO, ideal for Big Data, SQL, NoSQL databases, data warehousing, and large transactional databases.
- -  **GPU** (including the NV, NVv2, NC, NCv2, NCv3, ND, and NDv2 sizes) providing specialized virtual machines targeted for heavy graphic rendering and video editing, as well as model training and inferencing (ND) with deep learning, available with single or multiple GPUs.
+ -  **GPU** (including the NV, NVv2, NC, NCv2, NCv3, ND, and NDv2 sizes) providing specialized virtual machines targeted for heavy graphic rendering and video editing, as well as model training and inferencing (ND) with deep learning, available with single, or multiple GPUs.
  -  **High performance compute** (including the H size) providing the fastest and most powerful CPU Azure VMs with optional high-throughput network interfaces (RDMA).
 
 Every individual VM size represents a combination of the following capacity characteristics:
@@ -20,12 +20,12 @@ Every individual VM size represents a combination of the following capacity char
 
 Information regarding performance characteristics (including maximum uncached disk throughput and the expected network bandwidth) are available in [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes).
 
-There is a 2 terabyte (TB) size limit on a virtual disk that host the operating system of an Azure VM and a 32 TB size limit on any additional virtual disk that you attach to an Azure VM (Ultra SSD disks offer disk sizes of up to 64 TB). This does not imply a limit on the size of data volumes. You can create multiple-disk volumes by using Storage Spaces in Windows Server or volume managers, such as Logical Volume Manager (LVM) in Linux. Considering that the largest Azure VM size supports up to 64 data disks, this allows you to create petabyte (PB) size volumes. The maximum volume size depends on the size of the virtual machine, which determines the maximum number of disks you can attach to that virtual machine.
+There's a 2 terabyte (TB) size limit on a virtual disk that host the operating system of an Azure VM and a 32 TB size limit on any additional virtual disk that you attach to an Azure VM (Ultra SSD disks offer disk sizes of up to 64 TB). This doesn't imply a limit on the size of data volumes. You can create multiple-disk volumes by using Storage Spaces in Windows Server or volume managers, such as using Logical Volume Manager (LVM) in Linux. Considering that the largest Azure VM size supports up to 64 data disks, this allows you to create petabyte (PB) size volumes. The maximum volume size depends on the size of the virtual machine, which determines the maximum number of disks you can attach to that virtual machine.
 
 A limit also exists on the throughput and input/output operations per second (IOPS) that individual disks support. With Standard HDD storage, you should expect about 60 megabytes per second (MBps) or 500 8-kilobyte (KB) IOPS. With Azure Premium SSD storage, performance depends on the disk size, with 32 TB disks supporting up to 900 MBps and 20,000 256-KB IOPS (Ultra SSD storage will offer 2,000 MBps and 160,000 IOPS per disk, regardless of its size). If you need to increase per-volume performance beyond these limits, you can accomplish this by creating multiple-disk volumes.
 
 > [!NOTE]
-> At the time of writing, any virtual disks that you intend to attach to Azure VMs must be in the .vhd format. There is also no support for Generation 2 Hyper V virtual machines in Azure. Additionally, no support exists for dynamically expanding or differencing virtual disks—they all must be fixed.
+> At the time of writing, any virtual disks that you intend to attach to Azure VMs must be in the .vhd format. There's also no support for Generation 2 Hyper V virtual machines in Azure. Additionally, no support exists for dynamically expanding or differencing virtual disks—they all must be fixed.
 
 ## Optional demos:
 

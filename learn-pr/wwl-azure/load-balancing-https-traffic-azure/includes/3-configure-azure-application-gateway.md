@@ -5,9 +5,7 @@ Application Gateway has a series of components that combine to route requests to
 
 ### Frontend configuration
 
-For the Application Gateway v2 SKU, there must be a public frontend IP configuration. You can still have both a Public and a Private frontend IP configuration, but Private only frontend IP configuration (Only ILB mode) is currently not enabled for the v2 SKU.
-
-You can configure the Frontend IP to be Public or Private as per your use case.
+You can configure the application gateway to have a public IP address, a private IP address, or both. A public IP address is required when you host a back end that clients must access over the Internet via an Internet-facing virtual IP.
 
 ### Backend configuration
 

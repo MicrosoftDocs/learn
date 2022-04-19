@@ -3,7 +3,7 @@ uid: learn.wwl.offer-app-services-resource-provider-for-azure-stack-hub
 metadata:
   title: Offer an App Services resource provider  for Azure Stack Hub
   description: "Offer an App Services resource provider  for Azure Stack Hub"
-  ms.date: 12/09/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   * Working experience with deploying cloud applications.
   * Conceptual knowledge of messaging, events, code deployments, configurations, API management, and app caching.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-offer-an-app-services-resource-provider-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:

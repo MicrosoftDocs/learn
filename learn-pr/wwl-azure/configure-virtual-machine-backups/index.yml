@@ -3,7 +3,7 @@ uid: learn.wwl.configure-virtual-machine-backups
 metadata:
   title: Configure virtual machine backups
   description: "You will learn how to configure virtual machine backups including restore operations."
-  ms.date: 11/22/2021
+  ms.date: 03/11/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

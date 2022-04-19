@@ -4,8 +4,8 @@ metadata:
   title: Create a multistage pipeline by using Azure Pipelines
   description: Design and create a realistic release pipeline that promotes changes to various testing and staging environments.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create a multistage pipeline by using Azure Pipelines

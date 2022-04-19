@@ -2,7 +2,7 @@ The Azure command-line interface (CLI) is Microsoft's cross-platform command-lin
 
 From a purely IoT perspective, Azure CLI enables you to manage Azure IoT Hub resources, Device Provisioning service instances, and linked-hubs out of the box. The IoT extension enriches Azure CLI with features such as device management and full IoT Edge capability.
 
-You can access the full list of Azure CLI resources from the Microsoft Docs site here: [https://docs.microsoft.com/cli/azure](/cli/azure)
+You can access the full list of Azure CLI resources from the Microsoft Docs site here: [Azure Command-Line Interface (CLI) documentation](/cli/azure)
 
 ## Command-line tools
 
@@ -21,9 +21,9 @@ When running in a Windows environment, two convenient options for running Azure 
 
 ## Install or run in Azure Cloud Shell
 
-Instructions for installing Azure CLI on your local machine can be found here: [https://docs.microsoft.com/cli/azure/install-azure-cli](/cli/azure/install-azure-cli)
+Instructions for installing Azure CLI on your local machine can be found here: [How to install the Azure CLI](/cli/azure/install-azure-cli)
 
-The Azure Cloud Shell environment, which is accessible through the Azure portal, is perhaps the easiest way to get started with Azure CLI. To learn about Cloud Shell, try out the following Quickstart activity: [https://docs.microsoft.com/azure/cloud-shell/quickstart](/azure/cloud-shell/quickstart).
+The Azure Cloud Shell environment, which is accessible through the Azure portal, is perhaps the easiest way to get started with Azure CLI. To learn about Cloud Shell, try out the following Quickstart activity: [Quickstart for Bash in Azure Cloud Shell](/azure/cloud-shell/quickstart).
 
 After installing the CLI for the first time, check that it's installed and you've got the correct version by running an `az --version` command.
 
@@ -39,7 +39,7 @@ Before using any CLI commands with a local install, you need to sign in with the
     ```
     
     If the CLI can open your default browser, it will do so and load an Azure sign-in page. Otherwise, open a browser page at [https://aka.ms/devicelogin](https://aka.ms/devicelogin) and enter the authorization code displayed in your terminal.
-2.  In the browser, follow the on-screen instructions to sign in with your account credentials. After logging in, you see a list of subscriptions associated with your Azure account. The subscription information with isDefault: true is the currently activated subscription after logging in. To select a different subscription, use the `az account set` command with the subscription ID for the subscription that you want to switch to. For more information about subscription selection, see [https://docs.microsoft.com/cli/azure/manage-azure-subscriptions-azure-cli](/cli/azure/manage-azure-subscriptions-azure-cli).
+2. In the browser, follow the on-screen instructions to sign in with your account credentials. After logging in, you see a list of subscriptions associated with your Azure account. The subscription information with isDefault: true is the currently activated subscription after logging in. To select a different subscription, use the `az account set` command with the subscription ID for the subscription that you want to switch to. For more information about subscription selection, see [How to manage Azure subscriptions with the Azure CLI](/cli/azure/manage-azure-subscriptions-azure-cli).
 
 ## Extensions
 

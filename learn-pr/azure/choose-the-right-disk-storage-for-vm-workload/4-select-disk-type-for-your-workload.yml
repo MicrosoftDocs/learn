@@ -5,8 +5,8 @@ metadata:
   title: Select a disk type for your workload
   description: Select a disk type for your workload
   ms.date: 11/06/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: roygara
+  ms.author: rogarana
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

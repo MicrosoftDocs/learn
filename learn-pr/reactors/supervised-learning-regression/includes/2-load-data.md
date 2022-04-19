@@ -35,14 +35,14 @@ df.head()
 
 > [!div class="alert is-tip"]
 > Output
-> 
+>
 > |  | region | group | fertility | ppgdp | lifeExpF | pctUrban |
 > | --- | --- | --- | --- | --- | --- | --- |
-> | 0 | Asia | other | 5.968 | 499.0 | 49.49 | 23 |
-> | 1 | Europe | other | 1.525 | 3677.2 | 80.40 | 53 |
-> | 2 | Africa | africa | 2.142 | 4473.0 | 75.00 | 67 |
-> | 3 | Africa | africa | 5.135 | 4321.9 | 53.17 | 59 |
-> | 4 | Caribbean | other | 2.000 | 13750.1 | 81.10 | 100 |
+> | **0** | Asia | other | 5.968 | 499.0 | 49.49 | 23 |
+> | **1** | Europe | other | 1.525 | 3677.2 | 80.40 | 53 |
+> | **2** | Africa | africa | 2.142 | 4473.0 | 75.00 | 67 |
+> | **3** | Africa | africa | 5.135 | 4321.9 | 53.17 | 59 |
+> | **4** | Caribbean | other | 2.000 | 13750.1 | 81.10 | 100 |
 
 ```python
 df['pctUrban'].min()

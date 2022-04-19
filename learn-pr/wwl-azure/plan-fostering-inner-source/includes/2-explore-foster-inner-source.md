@@ -4,7 +4,7 @@ You don't need to be an existing contributor or write access to a project to off
 
 This workflow isn't just for open source: forks also help support inner source workflows within your company.
 
-Before forks, you can always contribute to a project-using Pull Requests.
+Before forks, you could contribute to a project-using Pull Requests.
 
 The workflow is simple enough: push a new branch up to your repository, open a pull request to get a code review from your team, and have Azure Repos evaluate your branch policies.
 

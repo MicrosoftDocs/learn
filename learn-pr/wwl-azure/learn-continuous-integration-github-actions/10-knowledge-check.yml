@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 03/03/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -15,28 +15,28 @@ durationInMinutes: 4
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices is where the database passwords that are needed in a CI pipeline should be stored?"
     choices:
-    - content: "Repo"
+    - content: "Repo."
       isCorrect: false
       explanation: "Incorrect. Secrets are similar to environment variables but encrypted."
-    - content: "action.yml"
+    - content: "action.yml."
       isCorrect: false
       explanation: "Incorrect. Secrets are similar to environment variables but encrypted."
-    - content: "Encrypted Secrets"
+    - content: "Encrypted Secrets."
       isCorrect: true
       explanation: "Correct. Secrets are similar to environment variables but encrypted."
   - content: "Which of the following files is the metadata for an action held?"
     choices:
-    - content: "workflow.yml"
+    - content: "workflow.yml."
       isCorrect: false
       explanation: "Incorrect. Add details action.yml metadata. At the root of your action, you will have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
-    - content: "action.yml"
+    - content: "action.yml."
       isCorrect: true
       explanation: "Correct. Add details action.yml metadata. At the root of your action, you will have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
-    - content: "meta.yml"
+    - content: "meta.yml."
       isCorrect: false
       explanation: "Incorrect. Add details action.yml metadata. At the root of your action, you will have an action.yml file. Make sure it has been populated with author, icon, any expected inputs, and outputs."
   - content: "Which of the following choices is how can the status of a workflow be shown in a repository?"

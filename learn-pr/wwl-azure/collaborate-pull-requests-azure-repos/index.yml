@@ -3,7 +3,7 @@ uid: learn.wwl.collaborate-pull-requests-azure-repos
 metadata:
   title: Collaborate with pull requests in Azure Repos
   description: "Collaborate with pull requests in Azure Repos"
-  ms.date: 12/02/2021
+  ms.date: 02/25/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   * Use GitHub mobile for pull requests approvals
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/3-collaborate-with-pull-requests-in-azure-repos.svg
 levels:
 - advanced
 roles:

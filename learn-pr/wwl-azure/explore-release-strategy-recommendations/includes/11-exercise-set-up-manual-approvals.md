@@ -1,8 +1,5 @@
 In this exercise, you'll investigate Manual Approval.
 
-> [!NOTE]
-> *Before starting this exercise, make sure you've done the steps in the introduction prerequisites session.*
-
 ## Steps
 
 Let's now look at when our release pipeline needs manual approval before deployment of a stage starts or manual approval that the deployment is completed as expected.

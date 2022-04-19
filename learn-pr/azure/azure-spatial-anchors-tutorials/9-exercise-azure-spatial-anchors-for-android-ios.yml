@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.9-exercise-azure-spatial-anchors-for-android-ios
-title: Exercise - Azure Spatial Anchors for android and iOS
+title: Exercise - Build Azure spatial anchors for Android and iOS
 metadata:
-  title: Exercise - Azure Spatial Anchors for Android and iOS
-  description: Exercise on Azure Spatial Anchors for Android and iOS
+  title: Exercise - Build Azure spatial anchors for Android and iOS
+  description: Build a project for Android and iOS devices by using AR Foundation, ARCore XR Plugin, and ARKit XR Plugin.
   ms.date: 09/09/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"

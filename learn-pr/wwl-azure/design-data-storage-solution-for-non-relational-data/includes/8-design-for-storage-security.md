@@ -3,7 +3,13 @@ Azure Storage provides a layered security model. This model enables you to secur
 :::image type="content" source="../media/storage-security.png" alt-text="Firewall policies, customer-managed keys, and endpoints.":::
 
 
-### Grant limited access to Azure Storage resources using shared access signatures (SAS)
+### Grant limited access to Azure Storage resources 
+
+The [Azure security baseline for Azure Storage baseline](/security/benchmark/azure/baselines/storage-security-baseline#data-protection) provides a comprehensive list of ways to secure your Azure storage. 
+
+### Use Shared Access Signatures
+
+One of the most common ways is to use a [Shared Access Signature](/azure/storage/common/storage-sas-overview). A SAS provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
 
 A [shared access signature](/azure/storage/common/storage-sas-overview) (SAS) provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
 

@@ -1,8 +1,5 @@
 In this exercise, you'll investigate Artifact Sources.
 
-> [!NOTE]
-> *Before starting this exercise, make sure you've done the steps in the introduction prerequisites session.*
-
 ## Steps
 
 Let's look at how to work with one or more artifact sources in the release pipeline.

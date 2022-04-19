@@ -3,7 +3,7 @@ uid: learn.wwl.implement-blue-green-deployment-feature-toggles
 metadata:
   title: Implement blue-green deployment and feature toggles
   description: "Implement blue-green deployment and feature toggles"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Understand deployment slots
   - Implement and manage feature toggles&quot;
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/5-implement-blue-green-deployment-and-feature-toggles.svg
 levels:
 - advanced
 roles:

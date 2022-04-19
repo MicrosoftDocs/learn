@@ -3,7 +3,7 @@ uid: learn.wwl.design-azure-virtual-desktop-architecture
 metadata:
   title: Design the Azure Virtual Desktop architecture
   description: "Design the Azure Virtual Desktop architecture"
-  ms.date: 12/03/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
   *  Recommendation subscriptions and management groups for Azure Virtual Desktop.
   *  Recommend a configuration for performance requirements.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-design-the-azure-virtual-desktop-architecture.svg
 levels:
 - intermediate
 roles:

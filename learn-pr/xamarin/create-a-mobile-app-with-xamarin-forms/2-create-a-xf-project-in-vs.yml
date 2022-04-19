@@ -4,11 +4,10 @@ metadata:
   title: Create a Xamarin.Forms project in Visual Studio
   description: Get started with Xamarin.Forms by creating a new project based on a Visual Studio template.
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Create a Xamarin.Forms project in Visual Studio
 durationInMinutes: 12
 content: |

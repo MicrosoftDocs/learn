@@ -4,13 +4,12 @@ title: Implement DSC and Linux Automation on Azure
 metadata:
   title: Implement DSC and Linux Automation on Azure
   description: "Implement DSC and Linux Automation on Azure"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 1
 content: |

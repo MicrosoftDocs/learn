@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Push a change to your package
   description: Practice the entire process by pushing a change to the package, and then updating the application to use the new package.
   ms.date: 05/28/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

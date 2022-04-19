@@ -1,12 +1,12 @@
 ### YamlMime:LearningPath
 uid: learn.languages.csharp-first-steps
 metadata:
-  title: Take your first steps with C#
-  description: Interested in learning a programming language but aren't sure where to start?  Start here!  Learn the basic syntax and thought processes required to build simple applications using C#.
+  title: 'Take your first steps with C#'
+  description: 'Interested in learning a programming language but aren''t sure where to start?  Start here!  Learn the basic syntax and thought processes required to build simple applications using C#.'
   brand: azure
   ms.date: 10/30/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   #ms.learn-contact: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -22,6 +22,9 @@ summary: |
   
   Once you complete this learning path, you will have a great foundation to build upon in subsequent C# Learning Paths.
 prerequisites: None
+video:
+  title: "Take your first steps with C#"
+  url: https://www.microsoft.com/videoplayer/embed/RWVrB4 
 iconUrl: /learn/achievements/csharp-first-steps.svg
 levels:
 - beginner

@@ -3,7 +3,7 @@ uid: learn.wwl.explore-kubernetes-tooling
 metadata:
   title: Explore Kubernetes tooling
   description: "Explore Kubernetes tooling"
-  ms.date: 11/29/2021
+  ms.date: 02/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   * Explain Kubernetes tooling
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/4-explore-kubernetes-tooling.svg
 levels:
 - advanced
 roles:

@@ -6,7 +6,7 @@ Auto-instrumentation allows you to enable application monitoring with Applicatio
 
 Application Insights is integrated with various resource providers and works on different environments. In essence, all you have to do is enable and - in some cases - configure the agent, which will collect the telemetry automatically. In no time, you'll see the metrics, requests, and dependencies in your Application Insights resource, which will allow you to spot the source of potential problems before they occur, and analyze the root cause with end-to-end transaction view.
 
-The list of services that are supported by auto-instrumentation changes rapidly, visit this [page](/azure/azure-monitor/app/codeless-overview) for a list of what is currently supported.
+The list of services that are supported by auto-instrumentation changes rapidly, visit this [page](/azure/azure-monitor/app/codeless-overview#supported-environments-languages-and-resource-providers) for a list of what is currently supported.
 
 ## Instrumenting for distributed tracing
 

@@ -17,6 +17,3 @@ When you're selecting a region to create Azure Virtual Desktop service objects i
 To make sure you understand which region would work best for your deployment, take a look at [our Azure global infrastructure map](https://azure.microsoft.com/global-infrastructure/geographies/).
 
 The stored metadata is encrypted at rest, and geo-redundant mirrors are maintained within the geography. All customer data, such as app settings and user data, resides in the location the customer chooses and isn't managed by the service. More geographies will become available as the service grows.
-
-Service metadata is replicated within the Azure geography for disaster recovery purposes.:::image type="content" source="../media/client-access-af6b0cff.png" alt-text="Image of service metadata is replicated within the Azure geography for disaster recovery purposes.":::
-.

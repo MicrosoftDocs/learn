@@ -4,8 +4,8 @@ metadata:
   title: Connect to virtual machines through the Azure portal by using Azure Bastion
   description: Learn how to deploy Azure Bastion to securely connect to Azure virtual machines directly within the Azure portal.
   ms.date: 11/12/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: cherylmc
+  ms.author: cherylmc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect to virtual machines through the Azure portal by using Azure Bastion

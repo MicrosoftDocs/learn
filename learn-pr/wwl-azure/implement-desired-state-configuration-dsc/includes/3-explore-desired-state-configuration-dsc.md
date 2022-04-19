@@ -6,7 +6,7 @@ Windows PowerShell DSC is a management platform in PowerShell that provides desi
 
 PowerShell DSC lets you manage, deploy, and enforce configurations for physical or virtual machines, including Windows and Linux.
 
-For more information, visit [Windows PowerShell Desired State Configuration Overview](/powershell/scripting/dsc/overview/overview?view=powershell-6).
+For more information, visit [Windows PowerShell Desired State Configuration Overview](/powershell/dsc/overview).
 
 ## DSC components
 

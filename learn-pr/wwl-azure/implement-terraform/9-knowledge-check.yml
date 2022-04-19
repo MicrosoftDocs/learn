@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 02/25/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -15,17 +15,17 @@ durationInMinutes: 4
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices isn't a supported Terraform extension?"
     choices:
-    - content: "terraform"
+    - content: "terraform."
       isCorrect: true
       explanation: "Correct. Terraform supports configuration files with the file extensions .tf and .tf.json."
-    - content: "tf"
+    - content: "tf."
       isCorrect: false
       explanation: "Incorrect. Terraform supports configuration files with the file extensions .tf and .tf.json."
-    - content: "tf.json"
+    - content: "tf.json."
       isCorrect: false
       explanation: "Incorrect. Terraform supports configuration files with the file extensions .tf and .tf.json."
   - content: "Which of the following core Terraform components can modify Terraform behavior without editing the Terraform configuration?"

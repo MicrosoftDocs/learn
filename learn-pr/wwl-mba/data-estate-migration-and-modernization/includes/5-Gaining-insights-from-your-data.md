@@ -2,9 +2,16 @@
 
 Organizations have enormous amounts of data, and the ultimate goal is getting important insights that can help you drive your business forward. Organizations that are taking steps to evolve how they leverage data, analytics, and the cloud generate an average of $100 million dollars, or eight percentage points, more operating income each year than those who lag behind. It all starts with data.
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this short video to learn how Microsoft Power BI helps organizations generate business insights, create a culture of data-driven decision making, and address common challenges.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this short video to learn how Microsoft Power BI helps organizations generate business insights, create a culture of data-driven decision making, and address common challenges.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqGZf]
 
@@ -12,9 +19,16 @@ Organizations have enormous amounts of data, and the ultimate goal is getting im
 
 Businesses want to empower people with insights at the point of decision. 
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about how Microsoft Power BI helps organizations experience their data in a real-time, customized, and intuitive way.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn more about how Microsoft Power BI helps organizations experience their data in a real-time, customized, and intuitive way.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqWCC]
 
@@ -35,9 +49,16 @@ The Microsoft BI platform offers the flexibility that organizations need to tran
 
 Modern BI is used across industries. 
 
-|  |  |
-| ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch the following video on customer momentum.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch the following video on customer momentum.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqWCA]
 

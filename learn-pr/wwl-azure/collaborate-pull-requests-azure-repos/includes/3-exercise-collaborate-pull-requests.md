@@ -17,17 +17,12 @@ The out-of-the-box branch policies include several policies, such as build valid
     :::image type="content" source="../media/open-branches-9ad34c7c.png" alt-text="Open branches.":::
 
 
-2.  In the policies view, check the option to protect this branch:
-
-    :::image type="content" source="../media/protect-branch-0e5463b6.png" alt-text="Protect branch.":::
-
-
-3.  It presents out-of-the-box policies. Check this option to select a minimum number of reviewers. Set the minimum number of reviewers to 1. Check the option to reset the code reviewer's votes when there are new changes:
+3.  In the policies view, It presents out-of-the-box policies. Set the minimum number of reviewers to 1:
 
     :::image type="content" source="../media/require-minimum-number-reviewers-4e4d2d64.png" alt-text="Require a minimum number of reviewers.":::
 
 
-    The Allow users to approve their own changes option allows the submitter to self-approve their changes.
+    The Allow requestors to approve their own changes option allows the submitter to self-approve their changes.
 
     It's OK for mature teams, where branch policies are used as a reminder for the checks that need to be performed by the individual.
 
@@ -41,7 +36,7 @@ The out-of-the-box branch policies include several policies, such as build valid
     :::image type="content" source="../media/check-linked-work-items-9f9a5589.png" alt-text="Check for linked work items.":::
 
 
-6.  Select the option to add code reviewers when a pull request is raised automatically. You can map which reviewers are added based on the area of the code being changed:
+6.  Select the option to automatically include reviewers when a pull request is raised automatically. You can map which reviewers are added based on the area of the code being changed:
 
     :::image type="content" source="../media/add-automatic-reviewers-528e31d0.png" alt-text="Add automatic reviewers.":::
 

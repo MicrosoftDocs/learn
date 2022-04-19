@@ -8,16 +8,16 @@ In this unit, you'll learn about the key concepts and processes involved in runn
 
 Docker is a tool for running containerized apps. A containerized app includes the app and the filesystem that makes up the environment in which it runs. For example, a containerized app could consist of a database and other associated software and configuration information needed to run the app.
 
-A containerized app typically has a much smaller footprint than a virtual machine configured to run the same app. This smaller footprint is because a virtual machine has to supply the entire operating system and associated supporting environment. A Docker container doesn't have this overhead because Docker uses the operating system kernel of the host computer to power the container. Downloading and starting a Docker image is typically much faster and more space-efficient than downloading and running a virtual machine that provides similar functionality.
+A containerized app typically has a much smaller footprint than a virtual machine configured to run the same app. This smaller footprint is because a virtual machine has to supply the entire operating system and associated supporting environment. A Docker container doesn't have this overhead because Docker uses the operating system kernel of the host computer to power the container. Downloading and starting a Docker image is faster and more space-efficient than downloading and running a virtual machine that provides similar functionality.
 
-You create a containerized app by building an **image** that contains a set of files and a section of configuration information used by Docker. You run the app by asking Docker to start a container based on the image. When the container starts, Docker uses the image configuration to determine what application to run inside the container. Docker provides the operating system resources and the necessary security to ensure that containers are running concurrently and remain *relatively* isolated.
+You create a containerized app by building an **image** that contains a set of files and a section of configuration information used by Docker. You run the app by asking Docker to start a container based on the image. When the container starts, Docker uses the image configuration to determine what application to run inside the container. Docker provides the operating system resources and the necessary security. It ensures that containers are running concurrently and remain *relatively* isolated.
 
 > [!IMPORTANT]
 > Docker does not provide the level of isolation available with virtual machines. A virtual machine implements isolation at the hardware level. Docker containers share underlying operating system resources and libraries. However, Docker ensures that one container cannot access the resources of another unless the containers are configured to do so.
 
 You can run Docker on your desktop or laptop if you're developing and testing locally. For production systems, Docker is available for server environments, including many variants of Linux and Microsoft Windows Server 2016. Many vendors also support Docker in the cloud. For example, you can store Docker images in Azure Container Registry and run containers with Azure Container Instances.
 
-In this unit, you'll use Docker locally to build and run an image, then upload it to Azure Container Registry and run it in an Azure Container Instance. This version of Docker is suitable for local development and testing of Docker images.
+In this module, you'll use Docker locally to build and run an image. Then you'll upload the image to Azure Container Registry and run it in an Azure Container Instance. This version of Docker is suitable for local development and testing of Docker images.
 
 ## Linux and Windows Docker images
 
@@ -25,9 +25,9 @@ Docker was initially developed for Linux and has expanded to support Windows. In
 
 Authors of Docker images who wish to offer similar functionality in both Linux-based and Windows-based images can build those images separately. For example, Microsoft offers Windows and Linux Docker images containing an ASP.NET Core environment that can be used as the basis for containerized ASP.NET Core applications.
 
-Linux computers with Docker installed can only run Linux containers. Windows computers with Docker installed can run both kinds of containers. Windows accomplishes this by using a virtual machine to run a Linux system and uses the virtual Linux system to run Linux containers.
+Linux computers with Docker installed can only run Linux containers. Windows computers with Docker installed can run both kinds of containers. Windows runs both by using a virtual machine to run a Linux system and uses the virtual Linux system to run Linux containers.
 
-In this module, you will build and run a Linux-based image.
+In this module, you'll build and run a Linux-based image.
 
 ## Docker registries and Docker Hub
 
@@ -54,7 +54,7 @@ A repository is also the unit of privacy for an image. If you don't wish to shar
 
 ## Browse Docker Hub and pull an image
 
-Often you'll find that there's an image in Docker Hub that closely matches the type of app you want to containerize. You can download such an image and extend it with your application code.
+Often you'll find there's an image in Docker Hub that closely matches the type of app you want to containerize. You can download such an image and extend it with your application code.
 
 Docker Hub contains many thousands of images. You can search and browse a registry using Docker from the command line or the Docker Hub website. The website allows you to search, filter, and select images by type and publisher. The figure below shows an example of the search page.
 
@@ -121,11 +121,11 @@ The command maps port 80 in the container to port 8080 on your computer. If you 
 
 ## Containers and files
 
-If a running container makes changes to the files in its image, those changes only exist in the container where the changes are made. Unless you take specific steps to preserve the state of a container, these changes will be lost when the container is removed. Similarly, multiple containers based on the same image that run simultaneously do not share the files in the image - each container has its own independent copy. Any data written by one container to its filesystem are not visible to the other.
+If a running container makes changes to the files in its image, those changes only exist in the container where the changes are made. Unless you take specific steps to preserve the state of a container, these changes will be lost when the container is removed. Similarly, multiple containers based on the same image that run simultaneously don't share the files in the image - each container has its own independent copy. Any data written by one container to its filesystem aren't visible to the other.
 
 It's possible to add writable volumes to a container. A volume represents a filesystem that can be mounted by the container, and is made available to the application running in the container. The data in a volume does persist when the container stops, and multiple containers can share the same volume. The details for creating and using volumes are outside the scope of this module.
 
-It is a best practice to avoid the need to make changes to the image filesystem for applications deployed with Docker. Only use it for temporary files that can afford to be lost.
+It's a best practice to avoid the need to make changes to the image filesystem for applications deployed with Docker. Only use it for temporary files that can afford to be lost.
 
 ## Manage Docker containers
 
@@ -135,9 +135,9 @@ You can view active containers with the `docker ps` command.
 docker ps
 ```
 
-The output includes the status of the container. *Up* if it is running, *Exited* if it has terminated, among other values such as the command line flags specified when the image was started, and additional information. Docker lets you run multiple containers from the same image simultaneously, so each container is assigned a unique ID as well as a unique human-readable name. Most Docker commands used to manage individual containers can use either the ID or the name to refer to a specific container.
+The output includes the status of the container. *Up* if it's running, *Exited* if it has terminated, among other values such as the command line flags specified when the image was started, and additional information. Docker lets you run multiple containers from the same image simultaneously, so each container is assigned a unique ID and a unique human-readable name. Most Docker commands used to manage individual containers can use either the ID or the name to refer to a specific container.
 
-In the following output, you can see two containers. The *PORTS* field shows that the container with ID `elegant_ramanujan` is the image running with port 80 on the Docker host mapped to port 8080 on your computer. The `youthful_heisenberg` instance is the container for the previous run of the image. The *COMMAND* field shows the command that the container ran to start the application in the image. In this case, for both containers, it is *dotnet aspnetapp.dll*. Note that the image ID for the containers is also the same because both containers are executing the same image.
+In the following output, you can see two containers. The *PORTS* field shows that the container with ID `elegant_ramanujan` is the image running with port 80 on the Docker host mapped to port 8080 on your computer. The `youthful_heisenberg` instance is the container for the previous run of the image. The *COMMAND* field shows the command that the container ran to start the application in the image. In this case, for both containers, it's *dotnet aspnetapp.dll*. The image ID for the containers is also the same because both containers are executing the same image.
 
 ```console
 CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
@@ -174,7 +174,7 @@ Typically, once a container is stopped, it should also be removed. Removing a co
 docker rm elegant_ramanujan
 ```
 
-You can't remove a container that is running, but you can force a container to be stopped and removed with the *-f* flag to the `docker rm` command. This is a quick way to stop and remove a container, but should only be used if the app inside the container does not need to perform a graceful shutdown.
+You can't remove a container that is running, but you can force a container to be stopped and removed with the *-f* flag to the `docker rm` command. This is a quick way to stop and remove a container, but should only be used if the app inside the container doesn't need to perform a graceful shutdown.
 
 ```bash
 docker container rm -f elegant_ramanujan

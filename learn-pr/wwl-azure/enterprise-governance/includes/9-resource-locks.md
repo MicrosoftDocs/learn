@@ -6,9 +6,6 @@ As an administrator, you may need to lock a subscription, resource group, or res
  -  **CanNotDelete** means authorized users can still read and modify a resource, but they can't delete the resource.
  -  **ReadOnly** means authorized users can read a resource, but they can't delete or update the resource. Applying this lock is similar to restricting all authorized users to the permissions granted by the Reader role.
 
-Once a resource has been locked, the resource lock must first be removed before the resource can be modified or deleted.
+### Who can create or delete locks
 
-> [!IMPORTANT]
-> Not every Azure user should have permission to create or remove locks. The role a user is a member of should have permission to set and remove locks. This requires access to one of the following RBAC
-
-permissions: **Microsoft.Authorization**/**\***, **Microsoft.Authorization/locks/\*** action. The Owner and User Access Administrator roles have access to those actions. However, these actions can be added to custom roles as required.
+To create or delete management locks, you must have access to **`Microsoft.Authorization/*`**or `Microsoft.Authorization/locks/*` actions. Of the built-in roles, only **Owner** and **User Access Administrator** are granted those actions.

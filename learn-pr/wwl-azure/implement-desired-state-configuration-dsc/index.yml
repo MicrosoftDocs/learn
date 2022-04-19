@@ -3,7 +3,7 @@ uid: learn.wwl.implement-desired-state-configuration-dsc
 metadata:
   title: Implement Desired State Configuration (DSC)
   description: "Implement Desired State Configuration (DSC)"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Plan for hybrid management
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/5-implement-desired-state-configuration-dsc.svg
 levels:
 - advanced
 roles:

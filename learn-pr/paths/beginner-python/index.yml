@@ -29,7 +29,7 @@ summary: |
  
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/beginner-python.svg
 levels:
 - beginner
 roles:
@@ -39,6 +39,7 @@ products:
 - vs-code
 modules:
 - learn.beginner-python.create-run-jupyter-notebook
+- learn.languages.python-install-vscode
 - learn.beginner-python.create-run-program
 - learn.beginner-python.create-manage-projects
 - learn.beginner-python.use-boolean-types

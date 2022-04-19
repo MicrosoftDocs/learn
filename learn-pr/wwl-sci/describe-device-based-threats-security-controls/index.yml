@@ -3,7 +3,7 @@ uid: learn.wwl.describe-device-based-threats-security-controls
 metadata:
   title: Describe device-based threats and security controls
   description: "Describe device-based threats and security controls"
-  ms.date: 12/03/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ abstract: |
   - Describe how devices and become cybersecurity threats
   - Describe how to mitigate against device-related threats
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/5-describe-device-based-threats-and-security-controls.svg
 levels:
 - beginner
 roles:

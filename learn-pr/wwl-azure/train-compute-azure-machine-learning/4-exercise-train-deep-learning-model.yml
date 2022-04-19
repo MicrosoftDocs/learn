@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-compute-azure-machine-learning.exercise-train-deep-learning-model
+title: 'Exercise: Train a deep learning model with Azure Machine Learning'
+metadata:
+  title: 'Exercise: Train a deep learning model with Azure Machine Learning'
+  description: "Exercise: Train a deep learning model with Azure Machine Learning"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-exercise-train-deep-learning-model.md)]

@@ -4,13 +4,12 @@ title: Examine Kubernetes extension for Visual Studio Code
 metadata:
   title: Examine Kubernetes extension for Visual Studio Code
   description: "Examine Kubernetes extension for Visual Studio Code"
-  ms.date: 11/29/2021
+  ms.date: 02/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 1
 content: |

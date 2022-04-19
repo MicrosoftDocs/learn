@@ -6,7 +6,7 @@ Suppose your team has decided to build a graph database in your e-commerce compa
 
 To build a graph database, we use a similar methodology to relational databases: we create a database and then run queries against it. For this application, there are no libraries or concepts that are specific to Azure Cosmos DB. The graph API presented by Azure Cosmos DB is entirely standards-based.
 
-Azure Cosmos DB is the globally distributed, multi-model database service from Microsoft for mission-critical applications. It is a multi-model database that supports document, key-value, graph, and columnar data models. The Azure Cosmos DB Gremlin API is used to store and operate on graph data. Gremlin API supports modeling graph data and provides APIs to traverse through the graph data.
+Azure Cosmos DB is the globally distributed, multi-model database service from Microsoft for mission-critical applications. It's a multi-model database that supports document, key-value, graph, and columnar data models. The Azure Cosmos DB Gremlin API is used to store and operate on graph data. Gremlin API supports modeling graph data and provides APIs to traverse through the graph data.
 
 Azure Cosmos DB is a fully managed graph database that offers global distribution, elastic scaling of storage and throughput, automatic indexing and query, tunable consistency levels, and support for the TinkerPop standard.
 

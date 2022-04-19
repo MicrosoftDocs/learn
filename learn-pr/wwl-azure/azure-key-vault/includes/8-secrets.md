@@ -12,7 +12,7 @@ Key Vault also supports a contentType field for secrets. Clients may specify the
 As shown above, the values for Key Vault Secrets are:
 
  -  Name-vaule pair - **Name must be unique in the Vault**
- -  Value can ve any UTF-8 string - max of 25 KB in size
+ -  Value can be any UTF-8 string - max of 25 KB in size
  -  Manual or certificate creation
  -  Activation date
  -  Expiration date

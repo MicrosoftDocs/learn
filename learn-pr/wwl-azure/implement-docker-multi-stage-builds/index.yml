@@ -3,7 +3,7 @@ uid: learn.wwl.implement-docker-multi-stage-builds
 metadata:
   title: Implement Docker multi-stage builds
   description: "Implement Docker multi-stage builds"
-  ms.date: 11/30/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Add Docker support to an existing application
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-implement-docker-multi-stage-builds.svg
 levels:
 - advanced
 roles:

@@ -1,4 +1,4 @@
-This module uses the **.NET 6.0 SDK**. Before beginning the module, ensure that you have .NET 6.0 installed by running the following command in your preferred terminal:
+This module uses the .NET 6.0 SDK. Ensure that you have .NET 6.0 installed by running the following command in your preferred terminal:
 
 ```dotnetcli
 dotnet --list-sdks
@@ -12,4 +12,4 @@ Output similar to the following appears:
 6.0.100 [C:\program files\dotnet\sdk]
 ```
 
-Ensure that a version starting with `6` is listed. If none is listed or the command is not found, [install the most recent **.NET 6.0 SDK**](https://dotnet.microsoft.com/download).
+Ensure that a version that starts with `6` is listed. If none is listed or the command isn't found, [install the most recent .NET 6.0 SDK](https://dotnet.microsoft.com/download).

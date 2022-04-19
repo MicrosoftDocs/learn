@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/03/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is used to estimate the connection round-trip time (RTT) from a specific location through the Azure Virtual Desktop service to an Azure region?"
+  - content: "What is used to estimate the connection round-trip time from a specific location through the Azure Virtual Desktop service to an Azure region?"
     choices:
     - content: "Azure Pricing Calculator"
       isCorrect: false

@@ -3,7 +3,7 @@ uid: learn.wwl.create-release-pipeline
 metadata:
   title: Create a release pipeline
   description: "Create a release pipeline"
-  ms.date: 12/02/2021
+  ms.date: 02/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Implement release jobs
   - Differentiate between multi-agent and multi-configuration release job
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-create-a-release-pipeline.svg
 levels:
 - advanced
 roles:

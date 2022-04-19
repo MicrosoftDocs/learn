@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 02/11/2022
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: repository-hosting-platform
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: Which of these statements is true?
+    choices:
+    - content: Anybody on the team can push a change directly to the main branch.
+      isCorrect: false
+      explanation: Incorrect. The rules are configured to prevent direct commits or pushes.
+    - content: The manager of the team must review all pull requests.
+      isCorrect: false
+      explanation: Incorrect. The rules don't identify specific reviewers who must approve pull requests.
+    - content: The pull request's author can push a change to the pull request's source branch.
+      isCorrect: true
+      explanation: Correct. Pull request authors can continue to push changes to their source branch while the pull request is open.
+  - content: You want to get your colleagues' input on a change you're making to a Bicep file, but you aren't finished with the change yet. What should you do?
+    choices:
+    - content: Create a pull request, and configure branch protection rules to prohibit the branch from being merged.
+      isCorrect: false
+      explanation: Incorrect. Branch protection rules affect all changes to the branch in the repository, not just a single pull request.
+    - content: Create a pull request and mark it as a draft.
+      isCorrect: true
+      explanation: Correct. Draft pull requests are useful when you need to get feedback but you aren't yet ready to merge your changes.
+    - content: Email your colleagues a link to your branch.
+      isCorrect: false
+      explanation: Incorrect. You can discuss the changes inside the repository, not in a separate email thread.
+  - content: You're reviewing a pull request from a colleague. You notice that the Bicep file has a typo in a variable name. The typo will cause an error when the template is deployed. What should you do?
+    choices:
+    - content: Add a comment to the pull request's author to let them know.
+      isCorrect: true
+      explanation: Correct. It's a good practice to add a comment to notify the author that their file has an error. They can revise the code and update the pull request. After the change is made, you can approve the pull request.
+    - content: Reject the pull request.
+      isCorrect: false
+      explanation: Incorrect. That's not the best way to communicate that the file has an error.
+    - content: Approve the pull request. The author will notice the problem when they deploy the Bicep file.
+      isCorrect: false
+      explanation: Incorrect. The pull request process is designed to stop these kinds of issues before changes are merged.

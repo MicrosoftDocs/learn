@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/07/2021
+  ms.date: 04/14/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which access tier is considered to be offline and cannot be read or modified?"
+  - content: "Which access tier is considered to be offline and can't be read or modified?"
     choices:
     - content: "Cool"
       isCorrect: false

@@ -4,8 +4,8 @@ metadata:
   title: Create a build pipeline with Azure Pipelines
   description: Set up a continuous integration (CI) pipeline that automates the process of building your application.
   ms.date: 05/24/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create a build pipeline with Azure Pipelines
@@ -33,6 +33,7 @@ roles:
 - solution-architect
 products:
 - azure-devops
+- azure-pipelines
 units:
 - learn.azdo.create-a-build-pipeline.1-introduction
 - learn.azdo.create-a-build-pipeline.2-what-is-azure-pipelines

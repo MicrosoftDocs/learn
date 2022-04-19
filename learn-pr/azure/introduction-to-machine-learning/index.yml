@@ -25,6 +25,7 @@ roles:
 - student
 products: 
 - azure
+- azure-machine-learning
 units:
 - learn.machinelearning.introduction-to-machine-learning.introduction
 - learn.machinelearning.introduction-to-machine-learning.creating-ml-models

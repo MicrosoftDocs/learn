@@ -3,7 +3,7 @@ uid: learn.wwl.automate-inspection-of-health
 metadata:
   title: Automate inspection of health
   description: "Automate inspection of health"
-  ms.date: 11/30/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   *   Configure notifications
   *   Create service hooks to monitor pipeline
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/4-automate-inspection-of-health.svg
 levels:
 - advanced
 roles:

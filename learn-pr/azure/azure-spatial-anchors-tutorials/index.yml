@@ -2,21 +2,21 @@
 uid: learn.azure.azure-spatial-anchors-tutorials-mrtk
 metadata:
   title: Use Azure Spatial Anchors to anchor objects in the real world
-  description: This course explores the use of Azure Spatial Anchors by integrating it to a HoloLens 2 application. 
+  description: This course explores the use of Azure Spatial Anchors by integrating it into a HoloLens 2 application. 
   ms.date: 09/09/2021
   author: "Sean-Kerawala"
   ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 title: Use Azure Spatial Anchors to anchor objects in the real world
-summary: This course explores the use of Azure Spatial Anchors by integrating it to a HoloLens 2 application. 
+summary: This course explores the use of Azure Spatial Anchors by integrating it into a HoloLens 2 application. 
 abstract: |
-  By the end of this module you will be able to:
-  - You would have  learned the fundamentals of Azure Spatial Anchors
-  - You explored various steps required to start and stop an Azure Spatial Anchors session. Also, to create, upload, and download Azure Spatial Anchors on a single device.
-  - You learned how to persist Azure Spatial Anchors between app sessions and app restarts by saving the Azure Spatial Anchor ID to the local disk on HoloLens.
-  - You also learned how to share Azure Spatial Anchors between multiple devices for a basic multi-user, static hologram shared experience.
-iconUrl: /learn/achievements/generic-badge.svg
+  By the end of this module, you'll be able to:
+  - Describe the fundamentals of Azure Spatial Anchors.
+  - Start and stop an Azure Spatial Anchors session, along with creating, uploading, and downloading spatial anchors on a single device.
+  - Persist spatial anchors between app sessions and app restarts by saving an anchor ID to the local disk on HoloLens.
+  - Share spatial anchors between multiple devices for a basic multiuser, static hologram shared experience.
+iconUrl: /learn/achievements/azure-spatial-anchors-tutorials-mrtk.svg
 levels:
 - beginner
 roles:
@@ -28,15 +28,16 @@ products:
 - hololens
 - azure
 - mrtk
+- azure-spatial-anchors
 prerequisites: |
   - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
-  - (Optional) A HoloLens 2 device configured for development
+  - A HoloLens 2 device configured for development (optional) 
   - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
-  - [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
+  - [A mixed reality project set up in the Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
-  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
-  - Completed the [Create a Spatial Anchors resource](/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors tutorial
+  - Basic familiarity with Unity: interface, scene creation, package import, and addition of GameObjects to a scene
+  - Completion of the [Create a Spatial Anchors resource](/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the tutorial about creating a Unity HoloLens app that uses Azure Spatial Anchors
 units: 
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.1-introduction
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.2-get-started-with-azure-spatial-anchors

@@ -14,7 +14,7 @@ summary: |
 prerequisites: |
   - An Azure subscription
   - Local installations of [Java JDK (8+)](https://www.azul.com/downloads/azure-only/zulu/), [Maven (3+)](https://maven.apache.org/download.cgi) and [Azure CLI (2.12+)](/cli/azure/install-azure-cli)
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/get-started-java-azure.svg
 levels:
 - beginner
 - intermediate
@@ -50,7 +50,7 @@ modules:
 - learn.azure-spring-cloud-workshop
 - learn.azure.deploy-event-driven-real-time
 - learn.azure.deploy-java-ee-app-to-app-service
-# - Containerize
+- learn.containerize-deploy-java-app-aks
 - learn.azure.migrate-java-app-azure-app-service
 trophy:
   uid: learn.get-started-java-azure.trophy

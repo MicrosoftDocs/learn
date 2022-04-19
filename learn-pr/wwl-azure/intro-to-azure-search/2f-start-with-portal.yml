@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-introduction-to-azure-search.2f-start-with-portal
-title: Start with portal
+title: Create an index in the Azure portal
 metadata:
-  title: Start with portal
-  description: "Start with portal"
-  ms.date: 01/26/2022
-  author: wwlpublish
-  ms.author: robmcm
+  title: Create an index in the Azure portal
+  description: "Create an index in the Azure portal"
+  ms.date: 02/07/2022
+  author: heidisteen
+  ms.author: heidist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -4,11 +4,10 @@ metadata:
   title: Define and use resources
   description: "Learn how to define and use resources in XAML pages."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Define and use resources
 durationInMinutes: 5
 content: |

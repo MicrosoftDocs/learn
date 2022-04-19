@@ -33,3 +33,11 @@ In this module, you’ve learned how to design with governance in mind. You have
 - [Describe core Azure architectural components - Learn | Microsoft Docs](/learn/modules/azure-architecture-fundamentals/)
 
 - [Microsoft Cloud Adoption Framework for Azure - Learn | Microsoft Docs](/learn/modules/microsoft-cloud-adoption-framework-for-azure/)
+
+- [Introduction to Azure Blueprints - Learn](/learn/modules/intro-to-azure-blueprints/)
+
+- [Secure your Azure resources with Azure role-based access control (Azure RBAC) - Learn](/learn/modules/secure-azure-resources-with-rbac/)
+
+## Learn more with optional hands-on exercises
+
+- [List access using Azure RBAC and the Azure portal](/learn/modules/secure-azure-resources-with-rbac/4-list-access?source=learn)

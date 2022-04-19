@@ -6,8 +6,8 @@ metadata:
   title: When to Use Azure API Management
   description: Examine criteria and use cases to help you decide whether Azure API Management is right for your organization
   ms.date: 06/16/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

@@ -4,11 +4,10 @@ metadata:
   title: Exercise - Use the factory pattern to access a dependency from shared code
   description: "Implement a factory in the GreatQuotes Xamarin.Forms application."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Exercise - Use the factory pattern to access a dependency from shared code
 durationInMinutes: 15
 content: |

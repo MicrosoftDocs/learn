@@ -172,4 +172,4 @@ The output is:
 ***
 
 > [!NOTE]
-> You can supply your own _lambda function_ for the `sort()` method, for use in comparing items in a list. We'll cover lambda functions in a later unit.
+> You can supply your own *lambda function* for the `sort()` method, for use in comparing items in a list. We'll cover lambda functions in a later unit.

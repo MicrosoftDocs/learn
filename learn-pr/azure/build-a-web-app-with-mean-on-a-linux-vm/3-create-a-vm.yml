@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a VM to host your web application
   description: Exercise - Create a VM to host your web application
   ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash
@@ -14,11 +14,12 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-create-a-vm.md)]
-#tasks:
-# Verify the VM named "MeanStack" exists.
-#- action: exists
-#  environment: azure
-#  azure:
-#    resource:
-#      type: "Microsoft.Compute/virtualMachines"
-#  hint: "Run the `az vm create` command as shown to create your virtual machine."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+#  Verify the VM named "MeanStack" exists.
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Compute/virtualMachines"
+#   hint: "Run the `az vm create` command as shown to create your virtual machine."

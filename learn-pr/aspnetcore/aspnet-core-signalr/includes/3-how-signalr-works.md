@@ -1,26 +1,17 @@
-<!--
-# How ASP.NET Core SignalR works?
-
-Parts
-Parts working together
-Apply to scenario
-
--->
-
 ## Servers and the `Hub` class
 
-The `Hub` class is a SignalR server concept. It's defined within the `Microsoft.AspNetCore.SignalR` namespace and is part of the [Microsoft.AspNetCore.SignalR](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR) NuGet package. ASP.NET Core web apps targeting the `Microsoft.NET.Sdk.Web` SDK do not need to add a package reference for SignalR, as it's part of the [shared framework](/aspnet/core/fundamentals/metapackage-app). In other words, it's already available.
+The `Hub` class is a SignalR server concept. It's defined within the `Microsoft.AspNetCore.SignalR` namespace and is part of the [Microsoft.AspNetCore.SignalR](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR) NuGet package. ASP.NET Core web apps that target the Microsoft.NET.Sdk.Web SDK don't need to add a package reference for SignalR, because it's part of the [shared framework](/aspnet/core/fundamentals/metapackage-app). In other words, it's already available.
 
-A `Hub` is exposed through a route, for example; the `"https://www.contoso-pizza.com/hubs/orders"` route could be used to represent an `OrdersHub` implementation. The various hub APIs allow authors to define methods and events.
+A `Hub` is exposed through a route. For example, the `https://www.contoso-pizza.com/hubs/orders` route could be used to represent an `OrdersHub` implementation. Through the various hub APIs, authors can define methods and events.
 
-There are two modalities to expose methods on a hub, you create a subclass of the following types and write [methods](#methods):
+There are two modalities to expose methods on a hub. You create a subclass of the following types and write [methods](#methods):
 
-- <xref:Microsoft.AspNetCore.SignalR.Hub>: Standard hub.
-- <xref:Microsoft.AspNetCore.SignalR.Hub%601>: Strongly-typed generic hub.
+- <xref:Microsoft.AspNetCore.SignalR.Hub>: A standard hub.
+- <xref:Microsoft.AspNetCore.SignalR.Hub%601>: A strongly typed generic hub.
 
 ### Example `Hub`
 
-As a point of reference consider the following `Notification` object:
+As a point of reference, consider the following `Notification` object:
 
 ```csharp
 namespace RealTime.Models;
@@ -28,7 +19,7 @@ namespace RealTime.Models;
 public record Notification(string Text, DateTime Date);
 ```
 
-The object can be shared when using the .NET client SDK, so that the server and client have the exact same object. Imagine a simple notification hub:
+The object can be shared when you use the .NET client SDK, so that the server and client have exactly the same object. Imagine a simple notification hub:
 
 ```csharp
 using Microsoft.AspNetCore.SignalR;
@@ -45,21 +36,21 @@ public class NotificationHub : Hub
 }
 ```
 
-When discussing the difference between methods and events, the method in the preceding hub implementation is `NotifyAll` while the event is `"NotificationReceived"`. The `NotificationHub` is a subclass of `Hub`. The `NotifyAll` method is `Task` returning, and accepts a single `Notification` parameter. The method is expressed as the invocation to `SendAsync` from `Clients.All`, which represents all connected clients. The `"NotificationReceived"` event is fired, given the `notification` instance.
+As for the difference between methods and events, the method in the preceding hub implementation is `NotifyAll`, and the event is `NotificationReceived`. `NotificationHub` is a subclass of `Hub`. The `NotifyAll` method is `Task` returning, and it accepts a single `Notification` parameter. The method is expressed as the invocation to `SendAsync` from `Clients.All`, which represents all connected clients. The `NotificationReceived` event is fired, depending on the `notification` instance.
 
-### The `IHubContext`
+### The `IHubContext` instance
 
-You fire [events](#events) from either a `Hub` or `IHubContext` instance. The SignalR hub is the core abstraction for sending messages to clients connected to the SignalR server. It's also possible to send messages from other places in your app using either of the following types:
+You fire [events](#events) from either a `Hub` or `IHubContext` instance. The SignalR hub is the core abstraction for sending messages to clients that are connected to the SignalR server. It's also possible to send messages from other places in your app by using either of the following types:
 
-- <xref:Microsoft.AspNetCore.SignalR.IHubContext%601>: A context where `THub` represents the standard hub.
-- <xref:Microsoft.AspNetCore.SignalR.IHubContext%602>: A context where `THub` represents the strongly-typed generic hub, and `T` represents the corresponding type of client.
+- <xref:Microsoft.AspNetCore.SignalR.IHubContext%601>: A context where `THub` represents a standard hub.
+- <xref:Microsoft.AspNetCore.SignalR.IHubContext%602>: A context where `THub` represents the strongly typed generic hub, and `T` represents the corresponding type of client.
 
 > [!IMPORTANT]
-> The `IHubContext` is for sending notifications to clients, it _**is not**_ used to call methods on the `Hub`.
+> `IHubContext` is for sending notifications to clients. It is *not* used to call methods on the `Hub`.
 
-#### Example `IHubContext`
+#### An example `IHubContext`
 
-Considering the previous notification hub implementation, you could use an `IHubContext<NotificationHub>` as follows:
+Considering the previous notification hub implementation, you could use `IHubContext<NotificationHub>`, as follows:
 
 ```csharp
 using Microsoft.AspNetCore.SignalR;
@@ -83,40 +74,40 @@ public class NotificationService
 }
 ```
 
-The preceding C# code relies on the `IHubContext<NotificationHub>` to access the contextual listing of clients, exposing the ability to broadcast notifications. The `_hubContext` is used to fire the `"NotificationReceived"` event, but it is not intended to be used to call the hub's `NotifyAll` method.
+The preceding C# code relies on `IHubContext<NotificationHub>` to access the contextual listing of clients, exposing the ability to broadcast notifications. `_hubContext` is used to fire the `"NotificationReceived"` event, but it isn't intended to be used to call the hub's `NotifyAll` method.
 
 ### Methods
 
-`Hub` or `Hub<T>` methods are just like any other C# method, they define a return type, method name, and parameter(s).
+`Hub` or `Hub<T>` methods are just like any other C# method. They define a return type, method name, and parameters.
 
 - The most common return type for a hub method is `Task` or `Task<TResult>`, which represents the asynchronous hub operation.
-- The method name is used to call the method from clients, it can be customized using the <xref:Microsoft.AspNetCore.SignalR.HubMethodNameAttribute>.
+- The method name is used to call the method from clients. You can customize it by using <xref:Microsoft.AspNetCore.SignalR.HubMethodNameAttribute>.
 - Parameters are optional, but when they're defined, clients are expected to provide corresponding arguments.
 
 Methods are not required to fire events, but they often do.
 
 ### Events
 
-An event can be subscribed to by name from a client. The server is responsible for raising events. `Hub`, `Hub<T>`, `IHubContext<THub>`, or `IHubContext<THub, T>` events are *named* and define up to ten parameters. Events are fired on the server and handled by interested clients. A client is considered interested when it subscribes to events on its hub's connection. Clients can indirectly trigger events when calling hub methods that fire events as a result of their invocation. However; events cannot be directly triggered by clients as that is the responsibility of the server.
+An event can be subscribed to by name from a client. The server is responsible for raising events. `Hub`, `Hub<T>`, `IHubContext<THub>`, and `IHubContext<THub, T>` events are *named* and can define up to ten parameters. Events are fired on the server and handled by interested clients. A client is considered interested when it subscribes to events on its hub's connection. Clients can indirectly trigger events when they call hub methods that fire events as a result of their invocation. Events can't be directly triggered by clients, though, because that's the responsibility of the server.
 
 #### Event client scopes
 
-You call events from an <xref:Microsoft.AspNetCore.SignalR.IClientProxy> instance. The <xref:Microsoft.AspNetCore.SignalR.IHubClients> and <xref:Microsoft.AspNetCore.SignalR.IHubCallerClients> interfaces are implemented from the <xref:Microsoft.AspNetCore.SignalR.Hub.Clients%2A> type. There are many ways to scope to a specific `IClientProxy` instance, you can target the following scopes from the `Hub.Clients` property:
+You call events from an <xref:Microsoft.AspNetCore.SignalR.IClientProxy> instance. You implement the <xref:Microsoft.AspNetCore.SignalR.IHubClients> and <xref:Microsoft.AspNetCore.SignalR.IHubCallerClients> interfaces from the <xref:Microsoft.AspNetCore.SignalR.Hub.Clients%2A> type. There are many ways to scope to a specific `IClientProxy` instance. You can target the following scopes from the `Hub.Clients` property:
 
-| Member                             | Details                                                                                           |
-|------------------------------------|---------------------------------------------------------------------------------------------------|
-| [`All`][all]                       | All connected clients (such as a broadcast).                                                      |
-| [`AllExcept`][all-except]          | All connected clients, excluding the specified connections (such as filtered broadcast).          |
-| [`Caller`][caller]                 | The connected client that triggered the method (such as an echo).                                 |
-| [`Client`][client]                 | Specified client connection (single connection).                                                  |
-| [`Clients`][clients]               | Specified client connections (multiple connections).                                              |
-| [`Group`][group]                   | All connected clients within the specified group.                                                 |
-| [`GroupExcept`][group-except]      | All connected clients within the specified group, excluding the specified connections.            |
-| [`Groups`][groups]                 | All connected clients within the specified groups (multiple groups).                              |
-| [`Others`][others]                 | All connected clients, excluding the client that triggered the method.                            |
+| Member | Details |
+|---|---|
+| [`All`][all] | All connected clients (such as a broadcast). |
+| [`AllExcept`][all-except] | All connected clients, excluding the specified connections (such as a filtered broadcast). |
+| [`Caller`][caller] | The connected client that triggered the method (such as an echo). |
+| [`Client`][client] | The specified client connection (single connection). |
+| [`Clients`][clients] | The specified client connections (multiple connections). |
+| [`Group`][group] | All connected clients within the specified group. |
+| [`GroupExcept`][group-except] | All connected clients within the specified group, excluding the specified connections. |
+| [`Groups`][groups] | All connected clients within the specified groups (multiple groups). |
+| [`Others`][others] | All connected clients, excluding the client that triggered the method. |
 | [`OthersInGroup`][others-in-group] | All connected clients within the specified group, excluding the client that triggered the method. |
-| [`User`][user]                     | All connected clients for the specified user (a single user can connect on more than one device). |
-| [`Users`][users]                   | All connected clients for the specified users.                                                    |
+| [`User`][user] | All connected clients for the specified user (a single user can connect on more than one device). |
+| [`Users`][users] | All connected clients for the specified users. |
 
 [all]: xref:Microsoft.AspNetCore.SignalR.IHubClients%601.All%2A
 [all-except]: xref:Microsoft.AspNetCore.SignalR.IHubClients%601.AllExcept%2A
@@ -131,39 +122,39 @@ You call events from an <xref:Microsoft.AspNetCore.SignalR.IClientProxy> instanc
 [user]: xref:Microsoft.AspNetCore.SignalR.IHubClients%601.User%2A
 [users]: xref:Microsoft.AspNetCore.SignalR.IHubClients%601.Users%2A
 
-##### Example scopes
+#### **Example scopes**
 
-Consider the following figures which help to visualize the hub sending messages to targeted clients. See the images below to expand them for improved readability.
+Consider the following images, which can help you visualize how the hub sends messages to targeted clients. You can expand the images for improved readability.
 
-###### Broadcast to all
+* **Broadcast to all**
 
-:::image type="content" source="../media/signalr-all.png" lightbox="../media/signalr-all-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.All syntax.":::
+    :::image type="content" source="../media/signalr-all.png" lightbox="../media/signalr-all-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.All syntax.":::
 
-All connected clients will receive this message, regardless of the group they may or may not belong to.
+    All connected clients receive this message, regardless of the group that they might or might not belong to.
 
-###### Isolated user
+* **Isolated user**
 
-:::image type="content" source="../media/signalr-user.png" lightbox="../media/signalr-user-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.User syntax.":::
+    :::image type="content" source="../media/signalr-user.png" lightbox="../media/signalr-user-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.User syntax.":::
 
-A single user will receive this message, regardless of how many devices they're currently using.
+    A single user receives this message, regardless of how many devices they're currently using.
 
-###### Isolated group
+* **Isolated group**
 
-:::image type="content" source="../media/signalr-group.png" lightbox="../media/signalr-group-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.Group syntax.":::
+    :::image type="content" source="../media/signalr-group.png" lightbox="../media/signalr-group-large.png" alt-text="ASP.NET Core SignalR hub sending message with Clients.Group syntax.":::
 
-All clients that belong to the given group name will receive this message, but no clients outside this group.
+    Only clients that belong to a certain group receive this message.
 
 ## Clients and the `HubConnection` class
 
-The `HubConnection` class is a SignalR client concept, which represents the client's connection to the [server `Hub`](#servers-and-the-hub-class). It's defined within the `Microsoft.AspNetCore.SignalR.Client` namespace, and is part of the [Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client) NuGet package.
+The `HubConnection` class is a SignalR client concept, which represents the client's connection to the [server `Hub`](#servers-and-the-hub-class). It's defined within the `Microsoft.AspNetCore.SignalR.Client` namespace, and it's part of the [Microsoft.AspNetCore.SignalR.Client](https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Client) NuGet package.
 
-A `HubConnection` is created using the builder pattern, and the corresponding `HubConnectionBuilder` type. Given the hub's route (or <xref:System.Uri?displayProperty=fullName>) a `HubConnection` can be created. The builder can also specify additional configuration options, such as but not limited to; logging, the desired protocol, authentication token forwarding, and automatic reconnection.
+You create `HubConnection` by using the builder pattern and the corresponding `HubConnectionBuilder` type. Given the hub's route (or <xref:System.Uri?displayProperty=fullName>), you can create `HubConnection`. The builder can also specify additional configuration options, such as, but not limited to, logging, the desired protocol, authentication token forwarding, and automatic reconnection.
 
-The `HubConnection` API exposes start and stop functions, used to start and stop the connection to the server respectively. Additionally, there are capabilities for streaming, calling [hub methods](#methods), and subscribing to [events](#events).
+The `HubConnection` API exposes start and stop functions, which you use to start and stop the connection to the server. Additionally, there are capabilities for streaming, calling [hub methods](#methods), and subscribing to [events](#events).
 
-### Example `HubConnection` creation
+### An example `HubConnection` creation
 
-To create a `HubConnection` object from the .NET SignalR client SDK, you build one using the `HubConnectionBuilder` type:
+To create a `HubConnection` object from the .NET SignalR client SDK, you use the `HubConnectionBuilder` type:
 
 ```csharp
 using Microsoft.AspNetCore.SignalR.Client;
@@ -204,14 +195,14 @@ public sealed class Consumer : IAsyncDisposable
 
 ### Call hub methods
 
-Given a client `HubConnection` instance that has successfully started, the client can call methods on a hub using the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A> or <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A> extensions. If the hub method returns a `Task<TResult>` the result of the `InvokeAsync<TResult>` is of type `TResult`. If the hub method returns `Task`, then there is no result. Both `InvokeAsync` and `SendAsync` expect the name of the hub method, and zero to ten parameters.
+If it is given a client `HubConnection` instance that has successfully started, the client can call methods on a hub by using the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A> or <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A> extensions. If the hub method returns a `Task<TResult>`, the result of `InvokeAsync<TResult>` is of type `TResult`. If the hub method returns `Task`, there is no result. Both `InvokeAsync` and `SendAsync` expect the name of the hub method, and zero to ten parameters.
 
-- <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A>: Invokes a hub method on the server using the specified method name and optional arguments.
-- <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A>: Invokes a hub method on the server using the specified method name and optional arguments. This method *does not wait* for a response from the receiver.
+- <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.InvokeAsync%2A>: Invokes a hub method on the server by using the specified method name and optional arguments.
+- <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.SendAsync%2A>: Invokes a hub method on the server by using the specified method name and optional arguments. This method does *not* wait for a response from the receiver.
 
-### Example hub method invocation
+### An example hub method invocation
 
-Adding a method to the previous `Consumer` class, the `SendNotificationAsync` delegates out to the `_hubConnection` and calls the `NotifyAll` method on the server's hub given the `Notification` instance.
+When it adds a method to the previous `Consumer` class, the `SendNotificationAsync` delegates out to the `_hubConnection` and calls the `NotifyAll` method on the server's hub, depending on the `Notification` instance.
 
 ```csharp
 public Task SendNotificationAsync(string text) =>
@@ -220,19 +211,19 @@ public Task SendNotificationAsync(string text) =>
 ```
 
 <!--
-### Steam APIs
+### Streaming APIs
 
-SignalR supports streaming and provides the following APIs. To invoke a streaming hub method on the server using the specified method name and return type use one of the following APIs:
+SignalR supports streaming and provides the following APIs. To invoke a streaming hub method on the server by using the specified method name and return type, use one of the following APIs:
 
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.StreamAsChannelAsync%2A>: Returns `Task<ChannelReader<TResult>>`.
 - <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.StreamAsync%2A>: Returns `IAsyncEnumerable<TResult>`.
 
-While streaming is not a requirement of Contoso Pizza's live map feature, it's still good to know it's available.
+Although streaming isn't a requirement of Contoso Pizza's live map feature, it's still good to know that it's available.
 -->
 
 ### Handle events
 
-To handle events, you register a handler with the `HubConnection` instance. Call one of the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.On%2A?displayProperty=nameWithType> overloads given the name of the hub method and zero to eight parameters. The handler can satisfy any of the following `Action` variations:
+To handle events, you register a handler with the `HubConnection` instance. Call one of the <xref:Microsoft.AspNetCore.SignalR.Client.HubConnectionExtensions.On%2A?displayProperty=nameWithType> overloads when you know the name of the hub method and have zero to eight parameters. The handler can satisfy any of the following `Action` variations:
 
 - <xref:System.Action>
 - <xref:System.Action%601>
@@ -244,7 +235,7 @@ To handle events, you register a handler with the `HubConnection` instance. Call
 - <xref:System.Action%607>
 - <xref:System.Action%608>
 
-Alternatively, you can use the asynchronous handler APIs which are `Func<TResult>` where the `TResult` is a `Task` variations:
+Alternatively, you can use the asynchronous handler APIs, which are `Func<TResult>` where the `TResult` is a `Task` variation:
 
 - [`Func<Task>`][func1]
 - [`Func<T,Task>`][func2]
@@ -266,11 +257,11 @@ Alternatively, you can use the asynchronous handler APIs which are `Func<TResult
 [func8]: xref:System.Func%608
 [func9]: xref:System.Func%609
 
-The result from registering an event handler is an `IDisposable`, which serves as the subscription. To unsubscribe the handler call <xref:System.IDisposable.Dispose%2A>.
+The result of registering an event handler is `IDisposable`, which serves as the subscription. To unsubscribe the handler, call <xref:System.IDisposable.Dispose%2A>.
 
-### Example event registration
+### An example event registration
 
-Updating the previous `Consumer` class, you register to an event by providing a handler and calling `On`:
+By updating the previous `Consumer` class, you register to an event by providing a handler and calling `On`:
 
 ```csharp
 using Microsoft.AspNetCore.SignalR.Client;
@@ -313,4 +304,4 @@ The `OnNotificationReceivedAsync` method is called when the server's hub instanc
 
 The server code for the web application needs to have a `Hub` implementation and expose a route to clients. The `Hub` could use the order object's unique identifier to create a group for tracking. All order status change updates could then be communicated in this group.
 
-The client code would also need to be updated, the Contoso Pizza application is a Blazor WebAssembly app. You could use either the JavaScript or .NET client SDK. You'd then replace the client-side polling functionality with code that builds a `HubConnection`, and start the connection to the server. As the user navigates to the order tracking page, the code would have to join the order's specific group where the change updates will be sent. You'd subscribe to the event for order status changes, and handle it accordingly.
+The client code would also need to be updated to indicate that the Contoso Pizza application is a Blazor WebAssembly app. You could use either the JavaScript SDK or the .NET client SDK. You would replace the client-side polling functionality with code that builds a `HubConnection`, and then start the connection to the server. As it navigates to the order tracking page, the code would have to join the order's specific group where the change updates will be sent. You subscribe to the event for order status changes, and then handle it accordingly.

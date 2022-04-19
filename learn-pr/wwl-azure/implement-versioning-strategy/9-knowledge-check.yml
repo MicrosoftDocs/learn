@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 02/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ durationInMinutes: 4
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices is a correct fix if an existing package is broken or buggy?"
     choices:

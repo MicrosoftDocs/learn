@@ -17,7 +17,7 @@ With infrastructure as code, you can maintain both your application code and eve
 
 ARM templates are JavaScript Object Notation (JSON) files that define the infrastructure and configuration for your deployment. The template uses a *declarative syntax*. The declarative syntax is a way of building the structure and elements that outline what resources will look like without describing its control flow. Declarative syntax is different than *imperative syntax*, which uses commands for the computer to perform. Imperative scripting focuses on specifying each step in deploying the resources.
 
-ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it. In an ARM template, you specify the resources and the properties for those resources. Then [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview?azure-portal=true) uses that information to deploy the resources in an organized and consistent manner.
+ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it. In an ARM template, you specify the resources and the properties for those resources. Then [Azure Resource Manager](/azure/azure-resource-manager/management/overview?azure-portal=true) uses that information to deploy the resources in an organized and consistent manner.
 
 ### Benefits of using ARM templates
 
@@ -48,7 +48,7 @@ When writing an ARM template, you need to understand all the parts that make up 
 | **apiProfile** | An optional section that defines a collection of API versions for resource types. You can use this value to avoid having to specify API versions for each resource in the template. |
 | **parameters** | An optional section where you define values that are provided during deployment. These values can be provided by a parameter file, by command-line parameters, or in the Azure portal. |
 | **variables** | An optional section where you define values that are used to simplify template language expressions. |
-| **functions** | An optional section where you can define [user-defined functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-user-defined-functions?azure-portal=true) that are available within the template. User-defined functions can simplify your template when complicated expressions are used repeatedly in your template. |
+| **functions** | An optional section where you can define [user-defined functions](/azure/azure-resource-manager/templates/template-user-defined-functions?azure-portal=true) that are available within the template. User-defined functions can simplify your template when complicated expressions are used repeatedly in your template. |
 | **resources** | A required section that defines the actual items you want to deploy or update in a resource group or a subscription. |
 | **output** | An optional section where you specify the values that will be returned at the end of the deployment. |
 
@@ -62,7 +62,7 @@ You can deploy an ARM template to Azure in one of the following ways:
 
 This module focuses on deploying a local ARM template. In future Learn modules, you'll learn how to deploy more complicated infrastructure and how to integrate with Azure Pipelines.
 
-To deploy a local template, you need to have either [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.2.0&azure-portal=true) or the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) installed locally. 
+To deploy a local template, you need to have either [Azure PowerShell](/powershell/azure/install-az-ps?view=azps-4.2.0&azure-portal=true) or the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) installed locally.
 
 First, sign in to Azure by using the Azure CLI or Azure PowerShell.
 
@@ -100,7 +100,7 @@ New-AzResourceGroup `
 
 ---
 
-To start a template deployment at the resource group, use either the Azure CLI command [az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest#az_deployment_group_create) or the Azure PowerShell command [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true).
+To start a template deployment at the resource group, use either the Azure CLI command [az deployment group create](/cli/azure/deployment/group#az-deployment-group-create) or the Azure PowerShell command [New-AzResourceGroupDeployment](/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.2.0&azure-portal=true).
 
 > [!TIP]
 > The difference between az deployment group create and az group deployment create is that az group deployment create is an old command to be deprecated and will be replaced by az deployment group create. Therefore, it is recommended to use az deployment group create to deploy resources under the resource group scope.
@@ -133,15 +133,15 @@ New-AzResourceGroupDeployment `
 
 Use linked templates to deploy complex solutions. You can break a template into many templates and deploy these templates through a main template. When you deploy the main template, it triggers the deployment of the linked template. You can store and secure the linked template by using a SAS token.
 
-A CI/CD pipeline automates the creation and deployment of development projects, which includes ARM template projects. The two most common pipelines used for template deployment are [Azure Pipelines](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](https://docs.microsoft.com/learn/paths/automate-workflow-github-actions/?azure-portal=true).
+A CI/CD pipeline automates the creation and deployment of development projects, which includes ARM template projects. The two most common pipelines used for template deployment are [Azure Pipelines](/learn/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](/learn/paths/automate-workflow-github-actions/?azure-portal=true).
 
 More information on these two types of deployment is covered in other modules.
 
 ## Add resources to the template
 
-To add a resource to your template, you'll need to know the resource provider and its types of resources. The syntax for this combination is in the form of *{resource-provider}/{resource-type}*. For example, to add a storage account resource to your template, you'll need the *Microsoft.Storage* resource provider. One of the types for this provider is *storageAccount*. So your resource type will be displayed as *Microsoft.Storage/storageAccounts*. You can use a list of [resource providers for Azure services](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers?azure-portal=true) to find the providers you need.
+To add a resource to your template, you'll need to know the resource provider and its types of resources. The syntax for this combination is in the form of *{resource-provider}/{resource-type}*. For example, to add a storage account resource to your template, you'll need the *Microsoft.Storage* resource provider. One of the types for this provider is *storageAccount*. So your resource type will be displayed as *Microsoft.Storage/storageAccounts*. You can use a list of [resource providers for Azure services](/azure/azure-resource-manager/management/azure-services-resource-providers?azure-portal=true) to find the providers you need.
 
-After you've defined the provider and resource type, you need to understand the properties for each resource type you want to use. For details, see [Define resources in Azure Resource Manager templates](https://docs.microsoft.com/azure/templates?azure-portal=true). View the list in the left column to find the resource. Notice that the properties are sorted by API version.
+After you've defined the provider and resource type, you need to understand the properties for each resource type you want to use. For details, see [Define resources in Azure Resource Manager templates](/azure/templates?azure-portal=true). View the list in the left column to find the resource. Notice that the properties are sorted by API version.
 
 ![Microsoft documentation page showing the storage account documentation selected.](../media/2-resource-type-properties.png)
 

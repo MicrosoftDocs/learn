@@ -4,13 +4,12 @@ title: Explore deployment options for SAP solutions on Azure
 metadata:
   title: Explore deployment options for SAP solutions on Azure
   description: "Explore deployment options for SAP solutions on Azure"
-  ms.date: 12/08/2021
+  ms.date: 01/31/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 content: |

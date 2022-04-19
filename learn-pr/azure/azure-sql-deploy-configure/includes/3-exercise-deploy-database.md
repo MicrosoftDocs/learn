@@ -35,7 +35,6 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
     | | **Authentication method**: Use SQL authentication. |
     | | **Server admin login**: cloudadmin |
     | | **Password/Confirm Password**:  Use a complex password that meets [strong password requirements](/sql/relational-databases/security/strong-passwords?azure-portal=true). Note this password for later use.|
-    || **Location**: Use a region that's close to you. |
     |**Want to use SQL elastic pool?**     |   No      |
     |**Compute + storage**     |  Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage**       |
     |**Backup storage redundancy**     |  Leave the default of **Geo-redundant backup storage**       |

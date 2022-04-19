@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/29/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which the following solutions should be used for the HR application SLA requirement?"
+  - content: "Which of the following solutions should be used for the HR application SLA requirement?"
     choices:
     - content: "Availability Zones"
       isCorrect: true

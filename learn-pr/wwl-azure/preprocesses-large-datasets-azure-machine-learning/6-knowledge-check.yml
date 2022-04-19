@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "In which situation can a data scientist benefit the most from using GPU compute?"
+    choices:
+    - content: "When training a forecasting model on time-series data."
+      isCorrect: false
+      explanation: "That's incorrect. Standard machine learning models don't necessarily require GPU compute."
+    - content: "When training a computer vision model to classify images."
+      isCorrect: true
+      explanation: "That's correct. Deep learning algorithms are highly likely to benefit from GPU because of the complexity of the algorithm and the need for a large dataset."
+    - content: "When training a logistic regression model to predict customer churn."
+      isCorrect: false
+      explanation: "That's incorrect. Standard machine learning models don't necessarily require GPU compute."
+  - content: "Which storage solution is recommended when training a computer vision model with Azure Machine Learning?"
+    choices:
+    - content: "Azure Blob Storage"
+      isCorrect: false
+      explanation: "That's incorrect. Although often used, a blob storage doesn't provide a hierarchical namespace."
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "That's incorrect. An SQL database isn't optimized to store images."
+    - content: "Azure Data Lake Storage Gen2"
+      isCorrect: true
+      explanation: "That's correct. Files can be stored using a nested folder structure in a data lake because of the hierarchical namespace."

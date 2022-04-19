@@ -1,0 +1,86 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-government-its-structure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which level of government addresses issues that are national or global in scope?"
+    choices:
+    - content: "Federal"
+      isCorrect: true
+      explanation: "That is correct. The National Government, also known as the United States Government (USG) or the Federal Government, provides for national defense, conducts foreign affairs, and addresses issues that are national or global in scope. These issues cannot be addressed at only a state or local level, such as air pollution, climate, or interstate commerce."
+    - content: "State"
+      isCorrect: false
+      explanation: "That is incorrect. States are responsible for their own self-rule and only operate within their geographic boundaries. They do not operate at a national or global level, such as the Federal Government."
+    - content: "Local"
+      isCorrect: false
+      explanation: "That is incorrect. Local government provides services such as police, firefighting, schools, libraries, recreational capabilities, and public works (such as local roads and waste treatment). These services are local to counties, municipalities, parishes, and are not national or global as the Federal Government."
+    - content: "Tribal"
+      isCorrect: false
+      explanation: "That is incorrect. Tribal governments are considered sovereign nations with their own legal jurisdiction over their own land and do not address national nor global issues."
+  - content: "Which branch of the government may issue executive orders and memorandums to set forth a cloud strategy?"
+    choices:
+    - content: "Legislative"
+      isCorrect: false
+      explanation: "That is incorrect. The legislative branch drafts proposed laws, confirms or rejects presidential nominations for positions within federal agencies, and controls spending authority of the US government."
+    - content: "Judicial"
+      isCorrect: false
+      explanation: "That is incorrect. The judicial branch reviews laws that the legislative branch has created."
+    - content: "Executive"
+      isCorrect: true
+      explanation: "That is correct. The Executive branch of the government may issue executive orders and memorandums to set forth a cloud strategy."
+  - content: "Who controls spending and is responsible for producing an annual budget to fund all federal programs?"
+    choices:
+    - content: "United States Congress"
+      isCorrect: true
+      explanation: "That is correct. It is the United States Congress that controls spending and is responsible for producing an annual budget to fund all federal programs."
+    - content: "Office of Management and Budget"
+      isCorrect: false
+      explanation: "That is incorrect. While the program examiners of the Office of Management and Budget determine what is put into the President's budget request, it is the United States Congress that controls spending. The United States Congress is also responsible for producing an annual budget to fund all federal programs."
+    - content: "National Institute of Standard and Technology"
+      isCorrect: false
+      explanation: "That is incorrect. The National Institute of Standard and Technology is a physical sciences laboratory and a non-regulatory agency of the United States Department of Commerce to promote innovation and industrial competitiveness."
+    - content: "Department of Homeland Security"
+      isCorrect: false
+      explanation: "That is incorrect. The Department of Homeland Security is responsible for public security."
+  - content: "Which entity provides information technology and communications support to the President of the United States?"
+    choices:
+    - content: "Department of Homeland Security"
+      isCorrect: false
+      explanation: "That is incorrect. The Department of Homeland Security is responsible for public security."
+    - content: "Defense Information Systems Agency"
+      isCorrect: true
+      explanation: "That is correct. Defense Information Systems Agency provides information technology and communications support to the President, Vice President, Secretary of Defense, military services, combatant commands, and any individual or system contributing to the defense of the United States."
+    - content: "General Services Administration"
+      isCorrect: false
+      explanation: "That is incorrect. The General Services Administration helps manage and support the basic functioning of federal agencies."
+    - content: "National Institute of Standard and Technology"
+      isCorrect: false
+      explanation: "That is incorrect. The National Institute of Standard and Technology is a physical sciences laboratory and a non-regulatory agency of the United States Department of Commerce to promote innovation and industrial competitiveness."
+  - content: "Which entity is responsible for the response system, risk management program, and requirements for cyber-security in the U.S.?"
+    choices:
+    - content: "Defense Information Systems Agency"
+      isCorrect: false
+      explanation: "That is incorrect. The Defense Information Systems Agency provides information technology and communications support to the President, Vice President, Secretary of Defense, military services, combatant commands, and any individual or system contributing to the defense of the United States."
+    - content: "National Institute of Standard and Technology"
+      isCorrect: false
+      explanation: "That is incorrect. The National Institute of Standard and Technology is a physical sciences laboratory and a non-regulatory agency of the United States Department of Commerce to promote innovation and industrial competitiveness."
+    - content: "Department of Defense"
+      isCorrect: false
+      explanation: "That is incorrect. The United States Department of Defense is a cabinet-level agency charged with coordinating and supervising all agencies and functions of the government directly related to national security and the United States Armed Forces."
+    - content: "Department of Homeland Security"
+      isCorrect: true
+      explanation: "That is correct. The Department of Homeland Security includes the National Cyber Security Division (NCSD), which is responsible for the response system, risk management program, and requirements for cyber-security in the U.S."

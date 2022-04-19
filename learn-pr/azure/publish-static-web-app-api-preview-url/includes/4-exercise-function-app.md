@@ -33,7 +33,7 @@ To complete the API, you'll start by moving the starter API code to a folder nam
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
 
-1. Enter and select **Terminal: Create New Integrated Terminal**.
+1. Enter and select **Terminal: Create New Terminal (In Active Workspace)**.
 
 1. Make sure you are in the root folder of the project.
 
@@ -226,7 +226,7 @@ Now it's time to watch your web app and Azure Functions project work together. S
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
 
-1. Enter and select **Terminal: Create New Integrated Terminal**.
+1. Enter and select **Terminal: Create New Terminal (In Active Workspace)**.
 
 1. Go to the _api_ folder:
 
@@ -294,7 +294,7 @@ Your API is already running on port 7071. Now, when you run your web app, it wil
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
 
-1. Enter and select **Terminal: Create New Integrated Terminal**.
+1. Enter and select **Terminal: Create New Terminal (In Active Workspace)**.
 
 1. Next, go to the folder of your preferred front-end framework, as follows:
 

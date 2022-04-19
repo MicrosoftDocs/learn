@@ -3,7 +3,7 @@ uid: learn.wwl.create-azure-resources-by-using-azure-cli
 metadata:
   title: Create Azure resources by using Azure CLI
   description: "Create Azure resources by using Azure CLI"
-  ms.date: 12/02/2021
+  ms.date: 02/25/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Explains Azure CLI commands
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/3-create-azure-resources-by-using-azure-cli.svg
 levels:
 - advanced
 roles:

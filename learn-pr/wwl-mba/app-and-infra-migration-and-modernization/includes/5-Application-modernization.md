@@ -1,9 +1,15 @@
 In this unit, we’ll learn about application modernization—modifying an app to better take advantage of the cloud.
 
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
 
-|  |  |
-| ------------ | -------------|
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about key capabilities for application modernization.|
+:::column:::
+Watch this video to learn more about key capabilities for application modernization.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWqMf5]
 
@@ -18,8 +24,8 @@ To address their challenges, The Absolut Company chose to move its web propertie
 :::row:::
 :::column:::
 ![Absolut Logo Banner](../media/absolutelogobanner.png)
-:::column-end:::
 
+:::column-end:::
 :::row-end:::
 
 Now that we’ve seen how the Azure App Services enabled a successful modernization journey for The Absolut Company, let’s learn how cloud services can enable modernization.

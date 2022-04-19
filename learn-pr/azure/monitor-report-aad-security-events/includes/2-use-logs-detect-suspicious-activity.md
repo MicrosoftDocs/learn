@@ -43,7 +43,7 @@ The first time the sign-in logging service is enabled, it can take up to an hour
 
 1. In the Azure portal, go to your Azure AD instance.
 
-1. In the **Monitor** section, select **Sign-ins**.
+1. In the **Monitoring** section, select **Sign-ins**.
 
 A page similar to the following displays a typical view of the sign-in table data:
 
@@ -84,7 +84,7 @@ Here are a few key filters and what you would use them for:
 
 - **User**: Lets you target specific users, by either their name or their user principal name.
 - **Application**: Lets you find sign-in requests made by specific applications.
-- **Sign-in status**: Lets you narrow the results to users who successfully signed in and those who failed.
+- **Status**: Lets you narrow the results to users who successfully signed in and those who failed.
 - **Conditional Access**: Lets you examine whether any applicable Conditional Access policies have been applied.
 - **Date**: Lets you adjust the timeframe of the data you're looking at, from a month to a single day.
 
@@ -104,7 +104,7 @@ Decide which format you want to use for the data, CSV or JSON.
 
 Analysis of failed sign-ins is key to maintaining a secure and healthy Azure environment. When you review your sign-in log files, you can filter on the status to show only failed sign-ins.  
 
-![Screenshot of the "Sign-in status" drop-down control, with Failure selected.](../media/2-sign-in-status-failure.png)
+![Screenshot of the Sign-in status drop-down control, with Failure selected.](../media/2-sign-in-status-failure.png)
 
 As previously described, when this filter is applied, the table displays only failed sign-ins.
 

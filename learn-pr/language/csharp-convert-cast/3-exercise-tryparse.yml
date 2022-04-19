@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Use the TryParse() method as a safe way to convert a string into a numeric data type value.
   ms.date: 10/03/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

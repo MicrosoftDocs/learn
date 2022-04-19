@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Specify and monitor blob metrics
   description: Specify and monitor blob metrics.
   ms.date: 03/26/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash
@@ -14,11 +14,12 @@ azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-specify-monitor-blob-metrics.md)]
-tasks:
-- action: exists
-  environment: azure
-  hint: "Follow the directions to move files into Azure BLOB storage."
-  azure:
-    resource:
-      type: "Microsoft.Storage/storageAccounts"
-      kind: "StorageV2"
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   hint: "Follow the directions to move files into Azure BLOB storage."
+#   azure:
+#     resource:
+#       type: "Microsoft.Storage/storageAccounts"
+#       kind: "StorageV2"

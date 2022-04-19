@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
     - content: "Developer."
       isCorrect: false
       explanation: "Incorrect. It's the Configuration Custodian. It includes CRUD on keys, ensuring the security of secrets, regeneration of keys and tokens, defining configuration settings such as Log levels for each environment."
-  - content: "Which of the following choices enables applications to have no direct access to the secrets, which helps improving the security & control?"
+  - content: "Which of the following choices enables applications to have no direct access to the secrets, which helps improve the security &amp; control?"
     choices:
     - content: "Library."
       isCorrect: false

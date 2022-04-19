@@ -70,6 +70,6 @@ Dependencies that you use in your apps can be updated often and may contain new 
    dotnet add package Humanizer --prerelease
    ```
 
-   Your results might be slightly different. The listed version should correspond to the latest available versions of the package.
+   Your results might be slightly different. The listed version should correspond to the latest available version of the package.
 
 Congratulations. You've upgraded the dependency in your app. Well done!

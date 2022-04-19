@@ -3,7 +3,7 @@ uid: learn.wwl.configure-provision-environments
 metadata:
   title: Configure and provision environments
   description: "Configure and provision environments"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   *   Configure functional test automation and run availability tests
   *   Setup test infrastructure
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-configure-and-provision-environments.svg
 levels:
 - advanced
 roles:

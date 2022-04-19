@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-components-of-modern-data-warehouse.exercise-explore-azure-data-services-azure-portal
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/11/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Azure services can you use to create a pipeline for data ingestion and processing?"
+    choices:
+    - content: "Azure SQL Database and Azure Cosmos DB"
+      isCorrect: false
+      explanation: "That's incorrect. Azure SQL Database and Azure Cosmos DB are data stores."
+    - content: "Azure Synapse Analytics and Azure Data Factory"
+      isCorrect: true
+      explanation: "That's correct. Both Azure Synapse Analytics and Azure Data Factory include the capability to create pipelines."
+    - content: "Azure HDInsight and Azure Databricks"
+      isCorrect: false
+      explanation: "That's incorrect. Azure HDInsight and Azure Databricks are big data processing systems, but they do not include the capability to create pipelines."
+  - content: "What must you define to implement a pipeline that reads data from Azure Blob Storage?"
+    choices:
+    - content: "A linked service for your Azure Blob Storage account"
+      isCorrect: true
+      explanation: "That's correct. You need to create linked services for external services you want to use in the pipeline."
+    - content: "A dedicated SQL pool in your Azure Synapse Analytics workspace"
+      isCorrect: false
+      explanation: "That's incorrect. A dedicated SQL pool is required to support a relational data warehouse."
+    - content: "An Azure HDInsight cluster in your subscription"
+      isCorrect: false
+      explanation: "That's incorrect. An Azure HDInsight cluster provides a big data processing system for open source technologies."
+  - content: "Which open-source distributed processing engine does Azure Synapse Analytics include?"
+    choices:
+    - content: "Apache Hadoop"
+      isCorrect: false
+      explanation: "That's incorrect. To use Apache Hadoop, provision an Azure HDInsight cluster."
+    - content: "Apache Spark"
+      isCorrect: true
+      explanation: "That's correct. Azure Synapse Analytics includes an Apache Spark runtime."
+    - content: "Apache Storm"
+      isCorrect: false
+      explanation: "That's incorrect. To use Apache Storm, provision an Azure HDInsight cluster."

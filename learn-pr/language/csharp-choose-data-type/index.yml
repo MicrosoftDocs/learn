@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-choose-data-type
 metadata:
-  title: Choose the correct data type in your C# code
+  title: 'Choose the correct data type in your C# code'
   description: Learn the difference between many data types, how they work, what they do, and how to choose one over another.
   ms.date: 09/05/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the correct data type in your C# code

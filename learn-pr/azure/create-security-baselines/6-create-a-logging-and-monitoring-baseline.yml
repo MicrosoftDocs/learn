@@ -3,8 +3,8 @@ uid: learn.azure-security.create-security-baselines.create-a-logging-and-monitor
 title: Create a logging and monitoring baseline
 metadata:
   title: Create a logging and monitoring baseline
-  description: Create a logging and monitoring baseline
-  ms.date: 09/9/2019
+  description: Learn how to create a logging and monitoring baseline. This baseline helps to identify, track, and mitigate threats.
+  ms.date: 02/03/2022
   author: msmbaldwin
   ms.author: mbaldwin
   ms.topic: interactive-tutorial

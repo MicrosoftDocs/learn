@@ -5,8 +5,8 @@ metadata:
   title: Use dashboards in the Azure portal
   description: Use dashboards in the Azure portal.
   ms.date: 03/26/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

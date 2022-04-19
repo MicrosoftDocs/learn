@@ -13,7 +13,7 @@ The first part of the exercise is to import Northwind Shoes into an API Manageme
 
 1. In the Azure portal resource menu or from the **Home** page, select **All Resources**, and then select your API Management service.
 
-1. In thelAPI Management service menu, Under **APIs**, select **APIs**. The **APIS** pane appears.
+1. In the API Management service menu, under **APIs**, select **APIs**. The **APIS** pane appears.
 
 1. Under **Create from definition**, select **OpenAPI**. The **Create from OpenAPI specification** pane appears.
 
@@ -32,13 +32,13 @@ The first part of the exercise is to import Northwind Shoes into an API Manageme
    > [!NOTE]
    > You'll notice that by entering the JSON URL, several other fields auto-populate for you. This is because we have used OpenAPI, which specifies all of the required connection details.
 
-1. Select **Create**. The **apim-NorthwindShoesNNNN|APIs** pane displays all of the operations for the NorthWindShoes Products API.
+1. Select **Create**. The **apim-NorthwindShoesNNNN | APIs** pane displays all of the operations for the NorthWindShoes Products API.
 
 ## Visualize the API
 
 The last part of the exercise is to test the API and visualize the results using two tests. First, issue a basic GET request, passing in a single parameter.
 
-1. On the API details page**apim-NorthwindShoesNNNN|APIs** pane, select the **Test** tab. 
+1. On the API details page **apim-NorthwindShoesNNNN | APIs** pane, select the **Test** tab.
 
 1. Select the first GET operation, **Find the details of the specified product**. The Console details appear.
 
@@ -54,7 +54,7 @@ The last part of the exercise is to test the API and visualize the results using
 
    Now, test using a basic GET request without any parameters.
 
-1. Select the third GET operation, **Retrieve the entire product inventory for the company**, and make sure the Test tab is selected.
+1. Select the third GET operation, **Retrieve the entire product inventory for the company**, and make sure the **Test** tab is selected.
 
    :::image type="content" source="../media/5-test-without-param.png" alt-text="Test pane with third GET request." lightbox="../media/5-test-without-param.png":::
 

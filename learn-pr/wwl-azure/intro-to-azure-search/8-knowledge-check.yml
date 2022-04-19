@@ -4,47 +4,47 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Test your knowledge by answering questions about skills you learned in this module."
-  ms.date: 01/26/2022
-  author: wwlpublish
-  ms.author: robmcm
+  ms.date: 02/07/2022
+  author: heidisteen
+  ms.author: heidist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 4
+durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which one of the following statements about query requests is true?"
-    choices:
-    - content: "All query composition is based on the full Lucene syntax."
-      isCorrect: false
-      explanation: "Incorrect. Azure Cognitive Search provides a simple syntax as the default. The optional full Lucene syntax is used for more advanced queries such as fuzzy search, proximity search, and regular expressions."
-    - content: "Query requests include search criteria, but nothing for shaping search results."
-      isCorrect: false
-      explanation: "Incorrect. A query request is a comprehensive instruction to the search engine. A single call can combine a search expression, a $filter expression, pagination, which fields to search, and which fields to return."
-    - content: "Search explorer returns results in JSON only."
-      isCorrect: true
-      explanation: "Correct. Search explorer returns results in JSON only."
-  - content: "Which of the following data sources can be used as an input data source?"
-    choices:
-    - content: "Azure Virtual Machines."
-      isCorrect: false
-      explanation: "Incorrect. Azure Virtual Machines are not a supported data source. SQL Server installed on a virtual machine is a supported source however."
-    - content: "Azure SQL Database."
-      isCorrect: true
-      explanation: "Correct. Azure SQL Database is one of the supported external data sources in Azure Cognitive Search. Azure SQL Database has a built-in indexer ready made for Azure Cognitive Search."
-    - content: "Azure Queue Storage."
-      isCorrect: false
-      explanation: "Incorrect. Azure Queue Storage is not supported. Only Blob and Table Storage are supported external sources within Azure Storage."
-  - content: "Which data format is accepted by Azure Cognitive Search when you are pushing data to the service?"
+  - content: "Which data format is accepted by Azure Cognitive Search when you are pushing data to the index?"
     choices:
     - content: "CSV."
       isCorrect: false
-      explanation: "Incorrect. CSV isn't supported."
+      explanation: "Incorrect. Your Azure Storage blob can contain all types of files, but CSV isn't supported for the Search index."
     - content: "SQL."
       isCorrect: false
       explanation: "Incorrect. SQL isn't supported."
     - content: "JSON."
       isCorrect: true
       explanation: "Correct. Documents are stored in the search index as JSON documents. JSON is also used to define index schemas, indexers, and data source objects."
+  - content: "What is a correct explanation of an indexer and an index?"
+    choices:
+    - content: "Azure's indexer exports incoming documents into JSON and pushes the JSON to an index for storage."
+      isCorrect: true
+      explanation: "Correct. Documents in Azure blob storage are exported to JSON before getting stored in the search index. Azure's indexer is a tool that automates the document export process."
+    - content: "Azure's indexer can be used instead of an index if the files are already in the proper format."
+      isCorrect: false
+      explanation: "Incorrect. Azure's indexer is not a replacement for an index."
+    - content: "Azure's indexer is only used to implement a knowledge store which is stored in the index."
+      isCorrect: false
+      explanation: "Incorrect. Azure's indexer is not only used with AI skillsets to create knowledge stores."
+  - content: "If you set up a search index without including any AI skillsets, which would you still be able to query?"
+    choices:
+    - content: "Sentiment."
+      isCorrect: false
+      explanation: "Incorrect. Detecting the sentiment in content requires an AI skillset."
+    - content: "Text content."
+      isCorrect: true
+      explanation: "Correct. Text from content can be directly saved as a field in an index."
+    - content: "Image captions."
+      isCorrect: false
+      explanation: "Incorrect. Creating captions for images requires an AI skillset."

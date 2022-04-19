@@ -3,7 +3,7 @@ uid: learn.wwl.understand-package-management
 metadata:
   title: Understand package management
   description: "Understand package management"
-  ms.date: 12/02/2021
+  ms.date: 02/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Publish packages
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-understand-package-management.svg
 levels:
 - advanced
 roles:

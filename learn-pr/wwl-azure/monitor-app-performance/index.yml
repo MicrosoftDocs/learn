@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-app-performance
 metadata:
   title: Monitor app performance
   description: "Learn how to use the tools offered in Application Insights to enhance the performance and stability of your applications."
-  ms.date: 01/05/2022
+  ms.date: 02/22/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   *   You should be familiar with developer concepts and terminology.
   *   An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/monitoring-app-performance.svg
 levels:
 - intermediate
 roles:

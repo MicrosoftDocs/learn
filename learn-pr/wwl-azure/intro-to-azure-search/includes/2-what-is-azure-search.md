@@ -2,7 +2,7 @@ Azure Cognitive Search provides the infrastructure and tools to create search so
 
 ![Infographic of Azure Search.](../media/2-what-is-azure-search.png)
 
-Azure Cognitive Search results contain only your data, which can include text inferred or extracted from images, or new entities and key phrases detection through text analytics. It's a Platform as a Service (PaaS) so Microsoft manages the infrastructure and availability, allowing your organization to benefit without the need to purchase or manage additional hardware resources.
+Azure Cognitive Search results contain only your data, which can include text inferred or extracted from images, or new entities and key phrases detection through text analytics. It's a Platform as a Service (PaaS) solution so Microsoft manages the infrastructure and availability, allowing your organization to benefit without the need to purchase or manage additional hardware resources.
 
 ## Azure Cognitive Search features 
 

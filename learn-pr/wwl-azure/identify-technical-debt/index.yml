@@ -3,7 +3,7 @@ uid: learn.wwl.identify-technical-debt
 metadata:
   title: Identify technical debt
   description: "Identify technical debt"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Describe complexity and quality metrics
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/6-identify-technical-debt.svg
 levels:
 - advanced
 roles:

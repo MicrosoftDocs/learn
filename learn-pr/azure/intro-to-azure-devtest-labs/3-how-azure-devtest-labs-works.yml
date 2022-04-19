@@ -5,8 +5,8 @@ metadata:
   title: How Azure DevTest Labs works
   description: In this unit, you'll learn about the ways you can set up DevTest Labs to build test and training environments.
   ms.date: 04/09/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: j-martens
+  ms.author: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: How Azure DevTest Labs works

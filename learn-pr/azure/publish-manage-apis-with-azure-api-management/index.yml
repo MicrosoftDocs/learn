@@ -3,9 +3,9 @@ uid: learn.publish-manage-apis-with-azure-api-management
 metadata:
   title: Publish and manage your APIs with Azure API Management
   description: Learn about using an Azure API gateway to share APIs with partners, and how to use subscription keys to control access to your APIs.
-  ms.date: 05/02/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  ms.date: 02/24/2022
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Publish and manage your APIs with Azure API Management

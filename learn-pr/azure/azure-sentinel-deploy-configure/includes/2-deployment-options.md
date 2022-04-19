@@ -40,7 +40,7 @@ The lead system engineer at Contoso performed research and determined these key 
 - To enable Microsoft Sentinel, you need Contributor permissions to the subscription in which the Microsoft Sentinel workspace resides.
 - To use Microsoft Sentinel, you need either Contributor or Reader permissions for the resource group to which the workspace belongs.
 
-Microsoft Sentinel runs on workspaces in any general availability region of Log Analytics except the China and Germany regions. Certain data that Microsoft Sentinel generates might contain customer data sourced from these workspaces. For example, incidents, bookmarks, and alert rules. This data is saved in Europe for European workspaces, in Australia for Australian workspaces, or in East US for workspaces in any other region.
+Microsoft Sentinel runs on workspaces in most regions where Log Analytics is generally available. Regions where Log Analytics is newly available may take some time to onboard the Microsoft Sentinel service. Certain data that Microsoft Sentinel generates might contain customer data sourced from these workspaces. For example, incidents, bookmarks, and alert rules. This data is saved in Europe for European workspaces, in Australia for Australian workspaces, or in East US for workspaces in any other region.
 
 ### How to deploy Microsoft Sentinel
 

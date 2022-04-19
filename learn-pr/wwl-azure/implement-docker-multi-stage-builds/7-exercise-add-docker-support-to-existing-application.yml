@@ -4,13 +4,12 @@ title: Exercise - Add Docker support to an existing application
 metadata:
   title: Exercise - Add Docker support to an existing application
   description: "Exercise - Add Docker support to an existing application"
-  ms.date: 11/30/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 1
 content: |

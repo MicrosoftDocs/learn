@@ -4,8 +4,8 @@ metadata:
   title: Design a hybrid network architecture on Azure
   description: You have a traditional on-premises infrastructure that you need to connect to resources in Azure. In this module, you learn how to select a connectivity method for your use cases that balances functionality, cost, and security.
   ms.date: 01/14/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: duongau
+  ms.author: duau
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

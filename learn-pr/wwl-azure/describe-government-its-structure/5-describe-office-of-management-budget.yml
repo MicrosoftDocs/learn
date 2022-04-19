@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-government-its-structure.describe-office-of-management-budget-omb
+title: Describe the Office of Management and Budget (OMB)
+metadata:
+  title: Describe the Office of Management and Budget (OMB)
+  description: "Describe the Office of Management and Budget (OMB)"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-describe-office-of-management-budget.md)]

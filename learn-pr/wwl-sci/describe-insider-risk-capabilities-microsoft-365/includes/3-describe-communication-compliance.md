@@ -19,6 +19,6 @@ Some important compliance areas where communication compliance policies can assi
 
 Watch the video below for a walkthrough of communication compliance in compliance center:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4xlaF]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4xlaF]
 
 Communication compliance is a powerful tool, that can help maintain and safeguard your staff, your data and your organization.

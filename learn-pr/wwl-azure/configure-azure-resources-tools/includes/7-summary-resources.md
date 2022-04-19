@@ -9,13 +9,13 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Azure portal documentation](/azure/azure-portal/)
  -  [Azure Cloud Shell overview](/azure/cloud-shell/overview)
  -  [Azure PowerShell documentation](/powershell/azure)
  -  [Azure CLI Reference](/cli/azure/?view=azure-cli-latest).
- -  [Learn - Manage services with the Azure portal](/learn/modules/tour-azure-portal/)
- -  [Learn - Introduction to PowerShell](/learn/modules/introduction-to-powershell/)
- -  [Learn - Automate Azure tasks using scripts with PowerShell](/learn/modules/automate-azure-tasks-with-powershell/)
- -  [Learn - Control Azure services with the CLI](/learn/modules/control-azure-services-with-cli/)
+ -  [Learn - Manage services with the Azure portal (Sandbox)](/learn/modules/tour-azure-portal/)
+ -  [Learn - Introduction to PowerShell (Sandbox)](/learn/modules/introduction-to-powershell/)
+ -  [Learn - Control Azure services with the CLI (Sandbox)](/learn/modules/control-azure-services-with-cli/)
+ -  [Learn - Control and organize Azure resources with Azure Resource Manager](/learn/modules/control-and-organize-with-azure-resource-manager/)

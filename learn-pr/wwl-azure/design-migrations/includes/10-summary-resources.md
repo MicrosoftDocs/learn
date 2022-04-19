@@ -34,8 +34,6 @@ Now that you've completed this module, you should be able to:
 
 ### Learn more with self-paced training
 
- 
-
 - [Design your migration to Azure - Learn | Microsoft Docs](/learn/modules/design-your-migration-to-azure/)
 
 - [Accelerate your migration journey to Azure - Learn | Microsoft Docs](/learn/modules/accelerate-azure-migration-journey/)

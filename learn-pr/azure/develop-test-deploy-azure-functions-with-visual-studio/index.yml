@@ -3,9 +3,9 @@ uid: learn.develop-test-deploy-azure-functions-with-visual-studio
 metadata:
   title: Develop, test, and deploy an Azure Function with Visual Studio
   description: Use Visual Studio together with a test framework to create, deploy, and test an Azure Function.
-  ms.date: 04/18/2019
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 03/18/2022
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Develop, test, and deploy an Azure Function with Visual Studio

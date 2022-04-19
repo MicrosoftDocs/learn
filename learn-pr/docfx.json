@@ -59,6 +59,19 @@
                 "dest": "modules"
             },
             {
+                "src": "autonomous-systems",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "azure",
                 "files": [
                     "**/*.yml",
@@ -436,6 +449,19 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
+            },
+            {
+                "src": "wwl-hedt",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
             },  
             {
                 "src": "wwl-iot",
@@ -683,9 +709,6 @@
         },
         "fileMetadata": {
             "sandbox-disabled": {},
-            "adobe-target": {
-                "azure/*/*-*.yml": true
-            },
             "localization_scopes": {
                 "azure/**/*.yml": [
                     "de-de",
@@ -1084,6 +1107,12 @@
                     "zh-tw"
                 ],
                 "wwl-azure/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl-hedt/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
                     "zh-cn",

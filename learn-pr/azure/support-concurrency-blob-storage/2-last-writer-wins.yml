@@ -5,8 +5,8 @@ metadata:
   title: Last Writer Wins
   description: Understanding concurrency issues with cloud based storage
   ms.date: 04/06/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

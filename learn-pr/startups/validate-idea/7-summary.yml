@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.validate-idea.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review how to identify and test assumptions about your startup. Gain an overview of useful tools and strategies.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

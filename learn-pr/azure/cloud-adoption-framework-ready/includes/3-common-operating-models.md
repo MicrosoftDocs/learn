@@ -1,8 +1,8 @@
-In this exercise, you'll review common operating models to see which ones best align to the Tailwind Traders narrative. You'll also learn how to evaluate and map the operating model that best fits your cloud adoption plans. This information will help you choose the most relevant Azure landing zone to begin building your cloud environment.
+In this exercise, you'll review common operating models to see which ones best align to the Tailwind Traders narrative. You'll also learn how to evaluate and map the operating model that best fits your cloud-adoption plans. This information will help you choose the most relevant Azure landing zone to begin building your cloud environment.
 
 ## Comparing common operating models
 
-Four common operating models show up across countless cloud adoption efforts. We use these operating models to shape conversations about environmental design and configuration. Each operating model maps to one or more Azure landing zones to accelerate initial deployment.
+Four common operating models show up across countless cloud-adoption efforts. We use these operating models to shape conversations about environmental design and configuration. Each operating model maps to one or more Azure landing zones to accelerate initial deployment.
 
 :::image type="content" source="../media/operating-model-complexity.png" alt-text="Diagram that shows four common operating models: decentralized, centralized, enterprise, and distributed." border="false":::
 
@@ -34,11 +34,11 @@ The least complex operating model is a fully decentralized model. This model is 
 
 *Figure 2: Decentralized operations focus on individual workloads and dependent assets.*
 
-**Strategic priority:** Decentralization is most commonly seen when organizations prioritize *innovation over control*. This model is common in startup organizations but is also an increasing trend in larger organizations.
+**Strategic priority:** Decentralization is most commonly seen when organizations prioritize *innovation over control*. This model is common in startup organizations, but is also an increasing trend in larger organizations.
 
 **Organization:** Teams are organized around workloads or business processes, which contrasts with the other three operating models.
 
-**Portfolio scope:** The scope of the portfolio is also isolated to workload levels. When an organization is entirely decentralized, the organization is unlikely to invest much time in management of portfolio alignment.
+**Portfolio scope:** The portfolio's scope is also isolated to workload levels. When an organization is entirely decentralized, the organization is unlikely to invest much time in management of portfolio alignment.
 
 **Accountability (separation of duties):** The workload team is entirely accountable for operations, governance, and security decisions. There is no shared accountability model in decentralized operations.
 

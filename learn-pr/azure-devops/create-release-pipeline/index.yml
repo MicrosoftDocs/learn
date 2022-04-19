@@ -4,8 +4,8 @@ metadata:
   title: Create a release pipeline in Azure Pipelines
   description: Set up a continuous delivery (CD) pipeline that automates the process of deploying your application.
   ms.date: 06/21/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure

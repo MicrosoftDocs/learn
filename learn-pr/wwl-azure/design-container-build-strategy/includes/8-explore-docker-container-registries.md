@@ -8,7 +8,7 @@ Common public container registries are:
 
 [Red Hat Container Catalog](https://access.redhat.com/containers)
 
-[Microsoft Container Registry](https://mcr.microsoft.com)
+Microsoft Container Registry
 
 While Microsoft Container Registry offers a public registry, you can also create your private registries using it.
 

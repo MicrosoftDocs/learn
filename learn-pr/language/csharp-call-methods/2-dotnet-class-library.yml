@@ -5,8 +5,8 @@ metadata:
   title: Introducing the .NET Class Library
   description: What is the .NET Class Library?
   ms.date: 09/17/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

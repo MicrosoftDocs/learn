@@ -5,8 +5,8 @@ metadata:
   title: Manage blob data using properties and metadata
   description: Manage blob data using properties and metadata
   ms.date: 09/30/2021
-  author: rmcmurray
-  ms.author: robmcm
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

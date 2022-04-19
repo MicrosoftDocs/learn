@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-identity-management-systems
 metadata:
   title: Integrate with identity management systems
   description: "Integrate with identity management systems"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Create managed service identities
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/7-integrate-identity-management-systems.svg
 levels:
 - advanced
 roles:

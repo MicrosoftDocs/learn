@@ -1,4 +1,4 @@
-To complete the exercises in this module, you've been logged into the sandbox environment. Because this environment is interactive, all of your deployments have been authenticated using the credentials that you used when you initialized the sandbox. However, your deployments will not use this interactive environment if you're automating your build process. In an automation scenario, you'll need to configure your project to use one of the supported authentication methods.
+To complete the exercises in this module, you've been logged into the sandbox environment. Because this environment is interactive, all of your deployments have been authenticated using the credentials that you used when you initialized the sandbox. However, your deployments won't use this interactive environment if you're automating your build process. In an automation scenario, you'll need to configure your project to use one of the supported authentication methods.
 
 In this unit, you'll learn how your company can configure Maven to use Azure authentication.
 
@@ -12,13 +12,13 @@ Azure gives you the flexibility to decide how you want to authenticate your app.
 
 - Create an Azure service principal, add your service principal credentials to a Maven `settings.xml` file, and modify your project's `pom.xml` file to use the Maven settings
 
-Microsoft recommends the third option, as it provides the most reliable, flexible, and consistent approach to authentication. In a real world setting, your company's existing Java web apps might be running on local servers that don't have the Azure CLI tools installed. With that in mind, you would probably implement the recommendation to add authentication using a service principal and a Maven `settings.xml` file. However, for this exercise, the sandbox does not have sufficient privileges to create service principals.
+Microsoft recommends the third option, as it provides the most reliable, flexible, and consistent approach to authentication. In a real world setting, your company's existing Java web apps might be running on local servers that don't have the Azure CLI tools installed. With that in mind, you would probably implement the recommendation to add authentication using a service principal and a Maven `settings.xml` file. However, for this exercise, the sandbox doesn't have sufficient privileges to create service principals.
 
 ### Authentication with the Azure CLI
 
 The easiest way to authenticate Maven is to sign in with the Azure CLI. The Maven Plugin for Azure App Service can then deploy the app using your credentials, with no extra configuration required.
 
-If you're using the Azure Cloud Shell, as you've been when completing the exercises with the Microsoft Learn Sandbox in this module, then you're logged in to Azure by default – you don't need to run any additional commands. However, if you're using the Azure CLI from a separate computer, then you'll need to sign in by using the `az login` command.
+If you're using the Azure Cloud Shell, as you've been when completing the exercises with the Microsoft Learn Sandbox in this module, then you're logged in to Azure by default – you don't need to run any more commands. However, if you're using the Azure CLI from a separate computer, then you'll need to sign in by using the `az login` command.
 
 ### Authentication with an authentication file
 
@@ -29,7 +29,7 @@ To create an Azure service principal with the Azure CLI, use the following steps
 1. Run the following command from the Azure CLI to create an Azure service principal:
 
     ```azurecli
-    az ad sp create-for-rbac --name https://mywebapp-1234567890.azurewebsites.net/ --role Contributor
+    az ad sp create-for-rbac --name https://mywebapp-1234567890.azurewebsites.net/ --role Contributor --scopes /subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss
     ```
 
     Where `https://mywebapp-1234567890.azurewebsites.net/` is the URL of your web app.
@@ -182,7 +182,7 @@ The steps to create an Azure service principal with the Azure CLI are the same a
 1. Run the following command from the Azure CLI to create an Azure service principal:
 
     ```azurecli
-    az ad sp create-for-rbac --name https://mywebapp-1234567890.azurewebsites.net/ --role Contributor
+    az ad sp create-for-rbac --name https://mywebapp-1234567890.azurewebsites.net/ --role Contributor --scopes /subscriptions/ssssssss-ssss-ssss-ssss-ssssssssssss
     ```
 
     Where `https://mywebapp-1234567890.azurewebsites.net/` is the URL of your web app.

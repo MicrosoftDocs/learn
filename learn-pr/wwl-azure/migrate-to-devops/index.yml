@@ -3,7 +3,7 @@ uid: learn.wwl.migrate-to-devops
 metadata:
   title: Migrate to DevOps
   description: "Migrate to DevOps"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
   - Design a strategy for integrating on-premises and cloud resources
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/4-migrate-to-devops.svg
 levels:
 - advanced
 roles:

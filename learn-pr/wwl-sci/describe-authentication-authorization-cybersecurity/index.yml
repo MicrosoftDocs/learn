@@ -3,7 +3,7 @@ uid: learn.wwl.describe-authentication-authorization-cybersecurity
 metadata:
   title: Describe authentication and authorization in cybersecurity
   description: "Describe authentication and authorization in cybersecurity"
-  ms.date: 01/20/2022
+  ms.date: 02/08/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   *   Describe common authentication-based attacks
   *   Describe authorization security techniques
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/cybersecurity-authentication-authorization.svg
 levels:
 - beginner
 roles:

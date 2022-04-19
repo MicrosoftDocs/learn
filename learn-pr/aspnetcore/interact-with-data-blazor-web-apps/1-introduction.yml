@@ -3,8 +3,8 @@ uid: learn.interact-with-data-blazor-web-apps.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
-  description: "Learn about a scenario where Blazor components make it easier and quicker for web developers to create a user interface and display data to the users."
+  title: Introduction
+  description: "Learn about a scenario where Blazor components make it easier and quicker for web developers to create a user interface and display data to users."
   ms.date: 8/13/2021
   author: csharpfritz
   ms.author: jefritz

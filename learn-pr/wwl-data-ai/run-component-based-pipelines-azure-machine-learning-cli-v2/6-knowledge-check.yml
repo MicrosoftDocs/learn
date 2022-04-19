@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/21/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "A data scientist wants to create multiple pipelines quickly to test different algorithms. A machine learning engineer as created components for such pipelines. What is the preferred method for the data scientist to save time when testing component-based pipelines?"
+    choices:
+    - content: "Using the Azure Machine Learning CLI (v2)."
+      isCorrect: false
+      explanation: "Creating a pipeline job YAML file may be a time-consuming and complex task and is not ideal for quick experimentation."
+    - content: "Using the Azure Machine Learning designer."
+      isCorrect: true
+      explanation: "Using the UI, a user can quickly drag and drop different components to the pipeline."
+    - content: "Using the Azure Machine Learning workspace."
+      isCorrect: false
+      explanation: "A data scientist can create a pipeline with the CLI (v2) or designer, both options connect with the workspace."
+  - content: "What prefix should you use when you want to use the pipeline's inputs for a component input in the pipeline's YAML file?"
+    choices:
+    - content: "`jobs.`"
+      isCorrect: false
+      explanation: "Use when you want to use the output of another component."
+    - content: "`outputs.`"
+      isCorrect: false
+      explanation: "Details the pipeline's output."
+    - content: "`inputs.`"
+      isCorrect: true
+      explanation: "That is correct."

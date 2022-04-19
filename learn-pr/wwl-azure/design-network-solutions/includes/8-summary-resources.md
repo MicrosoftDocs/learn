@@ -42,3 +42,11 @@ Use these resources to discover more.
 - [Introduction to Azure Web Application Firewall - Learn](/learn/modules/introduction-azure-web-application-firewall/)
 
 - [Introduction to Azure Firewall - Learn](/learn/modules/introduction-azure-firewall/)
+
+- [Introduction to Azure Front Door - Learn](/learn/modules/intro-to-azure-front-door/)
+
+### Learn more with optional hands-on exercises
+
+- [Distribute your services across Azure virtual networks and integrate them by using virtual network peering - Learn | Microsoft Docs](/learn/modules/integrate-vnets-with-vnet-peering/)
+
+- [Secure and isolate access to Azure resources by using network security groups and service endpoints - Learn | Microsoft Docs](/learn/modules/secure-and-isolate-with-nsg-and-service-endpoints/)

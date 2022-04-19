@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/01/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 quiz:
   questions:
@@ -46,17 +47,6 @@ quiz:
     - content: "Perform a **Data Export** from MySQL Workbench, and select the required objects."
       isCorrect: true
       explanation: "That's correct. All of the options would work, but MySQL Workbench allows you to select which objects to export in a straightforward manner."
-  - content: "You're performing an online migration on a live MySQL database. What happens to transactions that occur during the migration?"
-    choices:
-    - content: "They're applied to the source database and need to be captured so they can be applied to the destination database after migration."
-      isCorrect: false
-      explanation: "That's incorrect. Transactions don't need to be manually applied by database administrators."
-    - content: "They're applied to the source database and synchronized to the destination database."
-      isCorrect: true
-      explanation: "That's incorrect. The Azure Database Migration Service copies all of your existing data to Azure, and then continuously performs a synchronization operation from the source database. Any new transactions performed against the on-premises system will be copied to the new database in Azure."
-    - content: "They're blocked and client applications will receive an error. The database should be taken offline before migration."
-      isCorrect: false
-      explanation: "That's incorrect. Transactions can continue to occur during a migration."
   - content: "You have many user accounts in MySQL. How are these accounts migrated to Azure Database for MySQL when using the Azure Database Migration Service?"
     choices:
     - content: "The accounts are automatically migrated by the Azure Database Migration Service."

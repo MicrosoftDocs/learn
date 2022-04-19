@@ -7,7 +7,7 @@ The strategy of copying the /hbase folder is typically used for periodic backups
 > [!NOTE] 
 > This process does not offer the real time replication between clusters and neither does not offer granularity of migrating specific tables.
 
-Run the below steps in sequence to back up/migrate a HDInsight cluster HDInsight /hbase is stored at the below location wasbs://<containername>@<accountname>.blob.core.windows.net/hbase
+Run the below steps in sequence to back up/migrate a HDInsight cluster. HDInsight /hbase is stored at the following location: `wasbs://<containername>@<accountname>.blob.core.windows.net/hbase`
 
 1. Figure out the path where the /hbase folder is located in the source cluster
 1. Stop all writes into the source cluster and force a flush to disk to ensure nothing is in memory.  

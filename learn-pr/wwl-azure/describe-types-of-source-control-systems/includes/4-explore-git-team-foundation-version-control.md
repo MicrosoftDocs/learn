@@ -1,24 +1,14 @@
 ## Git (distributed)
 
-Git is a distributed version control system. Each developer has a copy of the source repository on their development system.
+Git is a distributed version control system. Each developer has a copy of the source repository on their development system. Developers can commit each set of changes on their dev machine.
 
-Developers can commit each set of changes on their dev machine. Also, they can version control operations such as history and compare without a network connection.
-
-Branches are lightweight. When you need to switch contexts, you can create a private local branch.
-
-You can quickly switch from one branch to another to pivot among different variations of your codebase.
-
-Later, you can merge, publish, or dispose of the branch.
+Branches are lightweight. When you need to switch contexts, you can create a private local branch. You can quickly switch from one branch to another to pivot among different variations of your codebase. Later, you can merge, publish, or dispose of the branch.
 
 ## Team Foundation Version Control (TFVC-centralized)
 
 Team Foundation Version Control (TFVC) is a centralized version control system.
 
-Typically, team members have only one version of each file on their dev machines.
-
-Historical data is maintained only on the server.
-
-Branches are path-based and created on the server.
+Typically, team members have only one version of each file on their dev machines. Historical data is maintained only on the server. Branches are path-based and created on the server.
 
 TFVC has two workflow models:
 

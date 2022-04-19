@@ -5,8 +5,8 @@ metadata:
   description: Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.
   brand: github
   ms.date: 07/02/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-github
 title: Automate your workflow with GitHub Actions

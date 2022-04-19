@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-source-control
 metadata:
   title: Introduction to source control
   description: "Introduction to source control"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Describe the benefits of using source control
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/5-introduction-to-source-control.svg
 levels:
 - advanced
 roles:

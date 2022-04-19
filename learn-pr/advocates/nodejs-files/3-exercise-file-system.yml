@@ -9,6 +9,8 @@ metadata:
   ms.date: 04/20/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
+  ms.custom: team=cloud_advocates
+  ms.contributors: buhollan-09022020
 interactive: bash
 azureSandbox: true
 durationInMinutes: 7

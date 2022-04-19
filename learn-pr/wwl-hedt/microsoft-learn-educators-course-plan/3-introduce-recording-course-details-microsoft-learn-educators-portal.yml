@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-learn-educators-course-plan.introduce-recording-course-details-microsoft-learn-educators-portal
+title: Introduce recording course details Microsoft Learn Educators portal
+metadata:
+  title: 3-Introduce recording course details Microsoft Learn Educators portal
+  description: "Introduce recording course details Microsoft Learn Educators portal"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-introduce-recording-course-details-microsoft-learn-educators-portal.md)]

@@ -5,10 +5,12 @@ metadata:
   title: Create and deploy a voice activated WebXR app with BabylonJS and Azure Cognitive Services
   description: Create a voice activated WebXR app using BabylonJS and the Azure Speech-to-text API under Azure Cognitive Services, and then deploy the app using Static Website Hosting provided by Azure Blob Storage. The app can be viewed on devices such as HoloLens, Windows Mixed Reality devices, mobile phones, etc.
   ms.date: 07/20/2021
-  author: aprilspeight
-  ms.author: apspeigh
+  author: eric-urban
+  ms.author: eur
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.contributors: apspeigh-07202021
+  ms.custom: team=cloud_advocates
 title: Create and deploy a voice activated WebXR app with Babylon.js and Azure Cognitive Services
 summary: Create a voice activated WebXR app using Babylon.js and the Azure Speech-to-text API under Azure Cognitive Services, and then deploy the app using Azure Blob Storage.
 abstract: | 
@@ -22,7 +24,7 @@ prerequisites: |
   - NodeJS (v14.17.X or above) and npm (v6.14.X or above) installed on your computer
   - Basic familiarity with Babylon.js (creating a scene, adding meshes to a scene)
   - Basic familiarity with JavaScript or TypeScript
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/create-voice-activated-webxr-app-with-babylonjs.svg
 levels:
   - beginner
 roles:

@@ -121,8 +121,8 @@ In this section you will open your terminal and create some variables that will 
                 // try adding a message to the batch
                 if (!messageBatch.TryAddMessage(new ServiceBusMessage($"Message {i}")))
                 {
-                    // if it is too large for the batch
-                    throw new Exception($"The message {i} is too large to fit in the batch.");
+                    // if an exception occurs
+                    throw new Exception($"Exception {i} has occurred.");
                 }
             }
     

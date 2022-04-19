@@ -20,9 +20,9 @@
 
 ### Things to consider when using Azure policy
 
-Tailwind Traders is now ready to consider applying Azure policy to their apps. Some policies will be applied at the IT management group level. Other policies will be assigned at the app level. 
+Tailwind Traders is now ready to consider applying Azure policy to their apps. Some policies will be applied at the Production management group level. Other policies will be assigned at the app level. 
 
-:::image type="content" source="../media/azure-policy-choices.png" alt-text="Azure policies are applied at the management group and resource group level.":::
+:::image type="content" source="../media/azure-policy-choices.png" alt-text="Different Azure policies are applied at the Production and Application resource group levels.":::
 
 - **Consider using the Azure policy compliance dashboard.** The Azure policy compliance dashboard provides an aggregated view to help evaluate the overall state of the environment. You can drill down to a per-resource, or per-policy level granularity. You can also use capabilities like bulk remediation for existing resources and automatic remediation for new resources, to resolve issues rapidly and effectively.
 

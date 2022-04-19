@@ -24,7 +24,7 @@ Consider a timeline of the activities that you perform when you write code. The 
 
 :::image type="content" source="../../includes/media/shift-left.png" alt-text="Chart with a timeline on the horizontal axis, cost on the vertical axis, and a line showing that the cost increases the later an error is identified." border="false":::
 
-It's a well-understood rule in software development that the earlier in the process that you find an error - the closer to the left of the timeline - the easier, quicker, and cheaper it is to fix. The later in your process that you catch an error, the harder and more complicated it is to fix. 
+It's a well-understood rule in software development that the earlier in the process that you find an error - the closer to the left of the timeline - the easier, quicker, and cheaper it is to fix. The later in the process that you catch an error, the harder and more complicated it is to fix.
 
 So, the goal is to shift the discovery of problems toward the left of the preceding diagram. Throughout this module, you'll see how you can add more validation and testing to your pipeline as it progresses.
 

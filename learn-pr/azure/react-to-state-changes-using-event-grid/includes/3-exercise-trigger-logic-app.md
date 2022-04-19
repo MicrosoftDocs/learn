@@ -1,6 +1,6 @@
 One easy way to use Azure Event Grid is to include it in a logic app.
 
-Suppose you've chosen to use Event Grid to alert your administrators when a virtual machine is reconfigured. 
+Suppose you've chosen to use Event Grid to alert your administrators when a virtual machine is reconfigured.
 
 Here, you'll set up a virtual machine and create a logic app with an Event Grid trigger that responds to the events produced by the virtual machine.
 
@@ -14,7 +14,7 @@ Let's start by creating a new virtual machine in the Azure portal.
 
 1. In the left menu pane, select **Compute**, and in the results list, select **Virtual machine**. The **Create a virtual machine** pane appears.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Basics** tab, enter the following values for each setting:
 
     | Setting | Value |
     | --- | --- |
@@ -26,7 +26,7 @@ Let's start by creating a new virtual machine in the Azure portal.
     | Region | Select a region near you |
     | Availability options | No infrastructure redundancy required |
     | Security type | Standard |
-    | Image | Windows Server 2019 Datacenter - Gen1 |
+    | Image | Windows Server 2019 Datacenter - Gen2 |
     | Azure Spot instance | No checkmark |
     | Size | Standard DS1 v2 |
     | **Administrator account** |
@@ -35,7 +35,7 @@ Let's start by creating a new virtual machine in the Azure portal.
     | **Inbound port rules** |
     | Public inbound ports | None |
 
-1. Select **Review and create**, and after validation passes, select **Create**.
+1. Select **Review and create**. Once validation passes, select **Create**.
 
     Wait for deployment to complete, and then select **Go to resource**. The **Overview** pane for **vm1** *Virtual machine* appears.
 
@@ -60,13 +60,13 @@ Let's create a logic app that will run whenever a virtual machine change is dete
     | Region | Select a region near you |
     | Enable log analytics | No |
 
-1. Select **Review + create**, and then select **Create**.
+1. Select **Review + create**, then select **Create**.
 
-1. Wait for deployment to complete, and then select **Go to resource**. The **Logic Apps Designer** pane appears.
+1. Wait for deployment to complete, then select **Go to resource**. The **Logic Apps Designer** pane appears.
 
 ## Add an Event Grid trigger to the logic app
 
-1. In the **Logic Apps Designer** pane, scroll down to **Templates** section, and then select **Blank Logic App**.  The **Logic Apps Designer** pane appears.
+1. In the **Logic Apps Designer** pane, scroll down to **Templates** section, then select **Blank Logic App**.  The **Logic Apps Designer** pane appears.
 
     :::image type="content" source="../media/3-choose-logic-app-template.png" alt-text="Template for a blank logic app.":::
 
@@ -83,8 +83,8 @@ Let's create a logic app that will run whenever a virtual machine change is dete
     | **Subscription** | Concierge Subscription |
     | **Resource Type** | `Microsoft.Resources.ResourceGroups` |
     | **Resource Name** | <rgn>[sandbox resource group]</rgn> |
-    | **Event Type Item - 1** | `Microsoft.Resources.ResourceActionSuccess`, and then select **Add new item** |
-    | **Event Type Item - 2** | `Microsoft.Resources.ResourceDeleteSuccess`, and then select **Add new item** |
+    | **Event Type Item - 1** | `Microsoft.Resources.ResourceActionSuccess`, then select **Add new item** |
+    | **Event Type Item - 2** | `Microsoft.Resources.ResourceDeleteSuccess`, then select **Add new item** |
     | **Event Type Item - 3** | `Microsoft.Resources.ResourceWriteSuccess` |
     | | |
 

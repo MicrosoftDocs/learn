@@ -56,4 +56,4 @@ Here's an example **curl** command that passes a key in the URL as a query strin
 curl https://<apim gateway>.azure-api.net/api/path?subscription-key=<key string>
 ```
 
-If the key is not passed in the header, or as a query string in the URL, you'll get a **401 Access Denied** response from the API gateway.
+If the key isn't passed in the header, or as a query string in the URL, you'll get a **401 Access Denied** response from the API gateway.

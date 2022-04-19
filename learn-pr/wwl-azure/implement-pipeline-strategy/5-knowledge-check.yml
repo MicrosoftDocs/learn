@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 02/15/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -15,17 +15,17 @@ durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices could be a user capability?"
     choices:
-    - content: "Agent.ComputerName"
+    - content: "Agent.ComputerName."
       isCorrect: false
       explanation: "Incorrect. There are two philosophies on how to organize your repos: Monorepo or Multiple repos."
-    - content: "Agent.OS"
+    - content: "Agent.OS."
       isCorrect: false
       explanation: "Incorrect. There are two philosophies on how to organize your repos: Monorepo or Multiple repos."
-    - content: "ContosoApplication.Path"
+    - content: "ContosoApplication.Path."
       isCorrect: true
       explanation: "Correct. The capabilities such as Agent.ComputerName and Agent.OS that is automatically discovered is referred to as system capabilities. The ones that you define such ContosoApplication.Path is called user capabilities."
   - content: "Which of the following choices is the scope of where parallel jobs are defined?"

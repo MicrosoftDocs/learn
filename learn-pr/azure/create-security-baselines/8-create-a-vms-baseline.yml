@@ -3,8 +3,8 @@ uid: learn.azure-security.create-security-baselines.create-a-vms-baseline
 title: Create an Azure VM baseline
 metadata:
   title: Create an Azure VM baseline
-  description: Create an Azure VM baseline
-  ms.date: 09/9/2019
+  description: Learn how to create an Azure Virtual Machine (VM) baseline using Azure Policy to comply with corporate standards and service level agreements.
+  ms.date: 02/03/2022
   author: msmbaldwin
   ms.author: mbaldwin
   ms.topic: interactive-tutorial

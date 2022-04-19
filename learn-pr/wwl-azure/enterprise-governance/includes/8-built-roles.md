@@ -15,7 +15,7 @@ The four general built-in roles are:
     **Contributor**
   :::column-end:::
   :::column:::
-    Lets you manage everything except granting access to resources.
+    Grants full access to manage all resources, but does not allow you to assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -23,7 +23,7 @@ The four general built-in roles are:
     **Owner**
   :::column-end:::
   :::column:::
-    Lets you manage everything, including access to resources.
+    Grants full access to manage all resources, including the ability to assign roles in Azure RBAC.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -31,7 +31,7 @@ The four general built-in roles are:
     **Reader**
   :::column-end:::
   :::column:::
-    Lets you view everything, but not make any changes.
+    View all resources, but does not allow you to make any changes.
   :::column-end:::
 :::row-end:::
 :::row:::

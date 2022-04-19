@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.aspnet-core-signalr-polling-fix.refactor-to-signalr
-title: Refactor using ASP.NET Core SignalR
+title: Refactor by using ASP.NET Core SignalR
 metadata:
   unitType: exercise
-  title: Refactor using ASP.NET Core SignalR
-  description: "Refactor the existing client-side polling to instead use ASP.NET Core SignalR."
+  title: Refactor by using ASP.NET Core SignalR
+  description: "In this unit, you'll refactor the existing client-side polling to instead use ASP.NET Core SignalR."
   ms.date: 11/09/2021
   author: IEvangelist
   ms.author: dapine

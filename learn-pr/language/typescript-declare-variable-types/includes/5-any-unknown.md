@@ -20,7 +20,7 @@ Using the `any` type in this example allows you to call:
 - `randomValue` as a function.
 - A method that only applies to a `string` type.
 
-Because `randomValue` is registered as `any`, all of the following examples are valid TypeScript and will **not** generate a runtime error. Runtime errors may occur depending on the actual datatype of the variable. Given the above example where `randomValue` is set to a Boolean value, the following lines of code will generate issues at runtime:
+Because `randomValue` is registered as `any`, all of the following examples are valid TypeScript and will **not** generate a compile-time error. However, runtime errors may occur depending on the actual datatype of the variable. Given the previous example where `randomValue` is set to a Boolean value, the following lines of code will generate issues at runtime:
 
 ```typescript
 console.log(randomValue.name);  // Logs "undefined" to the console

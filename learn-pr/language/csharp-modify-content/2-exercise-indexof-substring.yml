@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Use the string's IndexOf() and Substring() helper methods
   description: Determine the position of characters, and extract a target string from a source string
   ms.date: 11/05/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

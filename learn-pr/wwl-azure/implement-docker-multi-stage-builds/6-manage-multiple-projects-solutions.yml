@@ -4,13 +4,12 @@ title: Manage multiple projects and solutions
 metadata:
   title: Manage multiple projects and solutions
   description: "Manage multiple projects and solutions"
-  ms.date: 11/30/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |

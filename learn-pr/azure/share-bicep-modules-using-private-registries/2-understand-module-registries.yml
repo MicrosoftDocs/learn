@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.share-bicep-modules-using-private-registries.understand-module-registries
+title: Understand module registries
+metadata:
+  unitType: learning-content
+  title: Understand module registries
+  description: Learn what a module registry is and how you can use them in your organization.
+  ms.date: 02/10/2022
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-understand-module-registries.md)]

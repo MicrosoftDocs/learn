@@ -1,4 +1,4 @@
-In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
+In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
 
 First, you'll learn how to set up a profile so you can customize your working environment the way you want it. You'll then write some basic scripts and get a feeling for interpolation and scope.
 
@@ -18,7 +18,7 @@ A profile is a script that runs when you start a new session. Having a customize
    $Profile | Select-Object *
    ```
 
-   The command will display something similar to this text:
+   The output will display something similar to this text:
 
    ```output
    CurrentUserAllHosts                        CurrentUserCurrentHost
@@ -45,7 +45,7 @@ A profile is a script that runs when you start a new session. Having a customize
 
 ## Create and run a script
 
-Now that you have a profile set up, it's time to learn to create and run a script.
+Now that you have a profile set up, it's time to create and run a script.
 
 1. Ensure you have an existing PowerShell session running. In the console window, enter this code:
 
@@ -60,7 +60,7 @@ Now that you have a profile set up, it's time to learn to create and run a scrip
    code PI.ps1
    ```
 
-1. Add the following content to the file and save it:
+1. Add the following content to the file and save it. You can use **CTRL+S** on Windows and Linux or **CMD+S** on Mac to save your file.
 
    ```powershell
    $PI = 3
@@ -73,7 +73,7 @@ Now that you have a profile set up, it's time to learn to create and run a scrip
    ./PI.ps1
    ```
 
-   Your script displays the following text:
+   Your output displays the following text:
 
    ```output
    The value of $PI is now 3, inside the script

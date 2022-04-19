@@ -58,4 +58,4 @@ The connection used by Blazor Server to communicate with the browser is also use
 
 You can build Blazor apps by using the latest version of Visual Studio 2019, Visual Studio for Mac, or Visual Studio Code. In this module, you'll use Visual Studio Code.
 
-Whatever your development environment, you need to install the .NET 5 SDK. After installation, you'll have everything you need to start building Blazor apps. You'll install all of the requirements to build a Blazor WebAssembly app with Visual Studio Code in the next exercise.
+Whatever your development environment, you need to install the **.NET 6.0 SDK**. After installation, you'll have everything you need to start building Blazor apps. You'll install all of the requirements to build a Blazor WebAssembly app with Visual Studio Code in the next exercise.

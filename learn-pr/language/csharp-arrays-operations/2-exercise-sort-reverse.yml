@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Sort() and Reverse()
   description: Use the `Sort()` and `Reverse()` helper methods to organize the data in your arrays.
   ms.date: 10/14/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

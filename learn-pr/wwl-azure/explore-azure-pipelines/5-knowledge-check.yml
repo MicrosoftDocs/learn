@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 03/21/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices aren't characteristic of a pipeline?"
     choices:
@@ -28,7 +28,7 @@ quiz:
     - content: "Immutable."
       isCorrect: true
       explanation: "Correct. The core pipeline idea is to create a repeatable, reliable, and incrementally improving process."
-  - content: "Which of the following statements is true?"
+  - content: "Which of the following is a correct statement about Azure Pipelines?"
     choices:
     - content: "Azure Pipelines works exclusively with Azure and Microsoft Technology. For open-source, GitHub is recommended."
       isCorrect: false

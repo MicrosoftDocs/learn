@@ -3,7 +3,7 @@ uid: learn.wwl.az-400-implement-continuous-feedback
 metadata:
   title: 'AZ-400: Implement continuous feedback'
   description: 'AZ-400: Implement continuous feedback'
-  ms.date: 12/01/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   This learning path introduces the continuous feedback concept and describes how to implement it in your DevOps cycle.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/az-400-implement-continuous-feedback.svg
 levels:
 - advanced
 roles:

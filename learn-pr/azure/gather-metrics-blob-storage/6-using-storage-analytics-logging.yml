@@ -5,8 +5,8 @@ metadata:
   title: Enable Storage Analytics logging
   description: Enable Storage Analytics logging.
   ms.date: 03/26/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

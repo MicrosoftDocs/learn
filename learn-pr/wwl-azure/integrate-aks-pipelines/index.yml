@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-aks-pipelines
 metadata:
   title: Integrate AKS with pipelines
   description: "Integrate AKS with pipelines"
-  ms.date: 12/02/2021
+  ms.date: 02/09/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Explain readiness and liveness probes
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/5-integrate-aks-with-pipelines.svg
 levels:
 - advanced
 roles:

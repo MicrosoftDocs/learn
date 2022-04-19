@@ -3,7 +3,7 @@ uid: learn.wwl.datacenter-integration-for-azure-stack-hub
 metadata:
   title: Datacenter integration for Azure Stack Hub
   description: "Datacenter integration for Azure Stack Hub"
-  ms.date: 12/15/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ prerequisites: |
   - Conceptual knowledge of Azure compute solutions.
   - Working experience with virtual machines, containers, and app service.
   - Working experience with database solutions.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-datacenter-integration-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:

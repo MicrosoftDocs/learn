@@ -12,7 +12,7 @@ Part of your pipeline is the people who approve the release or the deployment to
 
 The release itself is something different. The release is an instance of the release pipeline.
 
-You can compare it with object inheritance. In Object Orientation, a class contains the blueprint or definition of an object.
+You can compare it with object instantiation. In Object Orientation, a class contains the blueprint or definition of an object.
 
 But the object itself is an instance of that blueprint.
 

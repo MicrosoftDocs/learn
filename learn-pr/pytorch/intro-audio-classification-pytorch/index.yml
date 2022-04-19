@@ -10,12 +10,12 @@ metadata:
   ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Introduction to Audio Classification with PyTorch
-summary: In this learn module we will be learning how to do audio classification with PyTorch. There are multiple ways to build an audio classification model. You can use the waveform, tag sections of a wave file, or even use computer vision on the spectrogram image. In this tutorial we will first break down how to understand audio data, from analog to digital representations, then we will build the model using computer vision on the spectrogram images. That's right, you can turn audio into an image representation and then do computer vision to classify the word spoken!
+summary: In this learn module we will be learning how to do audio classification with PyTorch. We'll cover how to understand audio data features and transform the sound signals into a visual representation called spectrograms; then we'll build the model using computer vision on the spectrogram images. That's right, you can turn audio into an image format and then do computer vision to classify the word spoken!
 abstract: |
   In this module you will:
-  - Learn the basics of audio data
-  - Learn how to visualize and transform audio data
-  - Build a binary classification speech model that can recognize "yes" and "no"
+  - Learn the basics features of audio data
+  - Learn how to transform sound signals to a visual image format using spectrograms
+  - Build a speech classification model that can recognize sounds or spoken words using CNNs
 iconUrl: /learn/achievements/pytorch-audio-data.svg
 levels:
 - beginner
@@ -28,7 +28,7 @@ products:
 prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
-  - Basic understanding of machine learning
+  - Basic understanding of Convolutional Neural Networks (CNNs).  See "Introduction to Computer Vision with PyTorch" module in this learning path
 units:
 - learn.pytorch.intro-audio-classification.introduction
 - learn.pytorch.intro-audio-classification.understand-audio-data

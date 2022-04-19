@@ -1,4 +1,4 @@
-In this module, you learned about some of the foundational technology used to create digital twins of wind farms.  Connecting operation IoT data to a digital representation of wind turbines using Azure Digital Twin and Unity, you saw how the creation of a Digital Twin Mixed Reality experience can create an immersive experience for operators.  You learned how a Digital Twin becomes a powerful tool to interact with real-time or right-time data using Azure SignalR.s
+In this module, you learned about some of the foundational technology used to create digital twins of wind farms.  Connecting operation IoT data to a digital representation of wind turbines using Azure Digital Twins and Unity, you saw how the creation of a Digital Twins Mixed Reality experience can create an immersive experience for operators.  You learned how a Digital Twins becomes a powerful tool to interact with real-time or right-time data using Azure SignalR.s
 
 ## References
 

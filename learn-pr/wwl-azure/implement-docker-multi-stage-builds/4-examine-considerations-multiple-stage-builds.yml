@@ -4,13 +4,12 @@ title: Examine considerations for multiple stage builds
 metadata:
   title: Examine considerations for multiple stage builds
   description: "Examine considerations for multiple stage builds"
-  ms.date: 11/30/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 1
 content: |

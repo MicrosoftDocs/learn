@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/29/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -15,16 +15,16 @@ durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices isn't automatically identified by the Augmented Search algorithm analysis?"
     choices:
     - content: "Waiver factors."
-      isCorrect: false
-      explanation: "Incorrect. The analysis algorithm automatically identifies errors, risk factors, and problem indicators."
-    - content: "Errors."
       isCorrect: true
       explanation: "Correct. The analysis algorithm automatically identifies errors, risk factors, and problem indicators."
+    - content: "Errors."
+      isCorrect: false
+      explanation: "Incorrect. The analysis algorithm automatically identifies errors, risk factors, and problem indicators."
     - content: "Risk factors."
       isCorrect: false
       explanation: "Incorrect. The analysis algorithm automatically identifies errors, risk factors, and problem indicators."

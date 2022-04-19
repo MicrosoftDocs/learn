@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/04/2022
+  ms.date: 01/27/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -47,9 +47,9 @@ quiz:
     - content: "OAuth"
       isCorrect: true
       explanation: "OAuth is used for authorization."
-    - content: "Open Connect ID"
+    - content: "OpenID Connect"
       isCorrect: false
-      explanation: "Open Connect ID is not an authentication protocol used for web apps in Azure."
+      explanation: "OpenID Connect is not an authentication protocol used for web apps in Azure."
   - content: "Which of the following is an authentication option that integrates with Azure Active Directory, requiring you to use several differing methods, like your phone, to confirm your identity?"
     choices:
     - content: "FIDO2 security keys"

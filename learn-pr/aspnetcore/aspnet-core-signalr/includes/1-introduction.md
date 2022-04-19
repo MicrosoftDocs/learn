@@ -1,13 +1,17 @@
-ASP.NET Core SignalR is an open-source library that simplifies adding real-time web functionality to apps. Real-time web functionality enables server-side code to push events to connected clients as they fire on the server. In addition to this, clients can also send messages to the server, thus exhibiting duplex communication.
+ASP.NET Core SignalR is an open-source library that simplifies adding real-time web functionality to apps. Real-time web functionality enables server-side code to push events to connected clients as they fire on the server. With SignalR, clients can also send messages to the server, a capability that demonstrates duplex communication.
 
 ## Example scenario
 
-Imagine you're part of a development team that is hired to update an existing website's live map feature. The live map is part of an ordering system where customers of Contoso Pizza can track their order progress. The current solution is implemented using client-side polling for order status change updates. This method is less than ideal as it has the potential to flood the server with requests. Contoso Pizza has been getting reports of orders that fail to be processed, resulting in a loss of sales and potential repeat customers. The failures reported in the logs are around the peak hours of the sales day and are correlated to customers watching the live order map. Their clients are flooding the server with too many requests, and it fails. We'll use SignalR to address these concerns.
+Imagine you're part of a development team that's been asked to update the live app feature of an existing website. The live map is part of an ordering system that lets Contoso Pizza customers track the progress of their orders. 
+
+The current solution is implemented through client-side polling for order status change updates. This method is less than ideal, because it has the potential to flood the server with requests. Contoso Pizza has been receiving reports of orders that fail to be processed, resulting in a loss of sales and, potentially, repeat customers. 
+
+The failures that are reported in the logs occur during peak hours of the sales day. When too many customers view the live order map at the same time, the server is overwhelmed with requests and the process fails. In this module, you'll use SignalR to address these concerns.
 
 ## What will we be doing?
 
-In this module, you'll learn the common nomenclature of SignalR to familiarize yourself with the terminology. You'll discover what SignalR is, and how it works. You'll learn when it is appropriate to use, and when it's not the best solution. Finally, you'll assert your knowledge of SignalR by answering a knowledge check.
+In this module, you'll learn the common terminology associated with SignalR, what it is, and how it works. You'll learn when SignalR is appropriate to use and when it's not the best solution. Finally, you'll check your knowledge of SignalR by answering a few key questions.
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to use your learnings to help decide if SignalR is a viable option. You'll have an introductory understanding of its capabilities and limitations. You'll become familiar with the various terminology associated with SignalR.
+By the end of this session, you'll be familiar with SignalR terminology. You'll have a fundamental understanding of its capabilities and limitations. And, armed with this knowledge, you'll be able to help decide whether SignalR is a viable option for your team. 

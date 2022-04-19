@@ -6,15 +6,18 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
 ## Create a *Cognitive Services* resource
 
-You can use the Custom Vision service by creating either a **Custom Vision** resource or a **Cognitive Services** resource.
+You can use the Custom Vision service by creating either a **Custom Vision** resource or a **Cognitive Services** resource. 
 
-If you haven't already done so, create a **Cognitive Services** resource in your Azure subscription.
+>[!NOTE]
+>Not every resource is available in every region. Whether you create a Custom Vision or Cognitive Services resource, only resources created in [certain regions](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services) can be used to access Custom Vision services. For simplicity, a region is pre-selected for you in the configuration instructions below.   
+
+Create a **Cognitive Services** resource in your Azure subscription.
 
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
 2. Click the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
-    - **Region**: *Choose any available region*:
+    - **Region**: East US
     - **Name**: *Enter a unique name*.
     - **Pricing tier**: S0
     - **I confirm I have read and understood the notices**: Selected.
@@ -119,16 +122,12 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
     Get the *prediction URL* from the dialog box in your Custom Vision project. 
 
-    >[!NOTE]
+   >[!NOTE]
     >Remember, you reviewed the *prediction URL* after you published the image classification model. To find the *prediction URL*, navigate to the **Performance** tab in your project, then click on **Prediction URL** (if the screen is compressed, you may just see a globe icon). A dialogue box will appear. Copy the url for **If you have an image URL**. Paste it into the code editor, replacing **YOUR_PREDICTION_URL**. 
 
+    Using the same dialog box, get the *prediction key*. Copy the prediction key displayed after *Set Prediction-Key Header to*. Paste it in the code editor, replacing the **YOUR_PREDICTION_KEY** placeholder value. 
+    
     ![Screenshot of the prediction URL.](../media/find-prediction-url.png)
-
-    Now, get the *prediction key*. Click on the *project gallery page** icon on the top left hand side of the custom vision portal. Then click on the settings icon on the top right hand side of the custom vision portal. Look for your prediction resource and click on it.   
-
-    ![Screenshot of the prediction key.](../media/custom-vision-pred-key.png)
-
-    Copy the prediction key. Paste it in the code editor, replacing the **YOUR_PREDICTION_KEY** placeholder value.
 
     After pasting the Prediction URL and Prediction Key values, the first two lines of code should look similar to this:
 

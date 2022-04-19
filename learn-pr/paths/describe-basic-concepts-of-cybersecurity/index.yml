@@ -3,7 +3,7 @@ uid: learn.wwl.describe-basic-concepts-of-cybersecurity
 metadata:
   title: Describe the basic concepts of cybersecurity
   description: Describe the basic concepts of cybersecurity
-  ms.date: 11/24/2021
+  ms.date: 02/08/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   Knowing the fundamentals of cybersecurity is a first step toward protecting against cyberthreats. In this learning path you will learn about cybersecurity concepts and ways to protect yourself and your business from cyberattacks.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/cybersecurity-basic-concepts.svg
 levels:
 - beginner
 roles:

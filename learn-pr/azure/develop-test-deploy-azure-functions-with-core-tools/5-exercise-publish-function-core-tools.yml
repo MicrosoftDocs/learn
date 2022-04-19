@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Publish a function to Azure using Core Tools
   description: In this exercise, we'll create a function app in Azure and publish our project.
   ms.date: 12/11/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Publish a function to Azure using Core Tools
@@ -14,11 +14,12 @@ azureSandbox: true
 durationInMinutes: 4
 content: |
   [!include[](includes/5-exercise-publish-function-core-tools.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Web/sites"
-      kind: functionapp
-  hint: "Follow the instructions to create a function app in Azure and publish your functions."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Web/sites"
+#       kind: functionapp
+#   hint: "Follow the instructions to create a function app in Azure and publish your functions."

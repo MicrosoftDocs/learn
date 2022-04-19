@@ -3,7 +3,7 @@
 :::image type="content" source="../media/tailwind-traders.png" alt-text="The Tailwind Traders logo.":::
 
 
-[Tailwind Traders](https://www.tailwindtraders.com/) is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online. The Tailwind Trader’s CTO asks, “What is our identity solution?” At first, this seems like a simple question. But managing and protecting your corporate identities requires planning and careful design. In this module, we’ll answer the questions:
+Tailwind Traders is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online. The Tailwind Trader’s CTO asks, “What is our identity solution?” At first, this seems like a simple question. But managing and protecting your corporate identities requires planning and careful design. In this module, we’ll answer the questions:
 
 - What identity providers does Azure offer?
 

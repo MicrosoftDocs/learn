@@ -6,8 +6,8 @@ metadata:
   description: "Build strategies around security and compliance and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure
   ms.date: 06/25/2020
-  author: tpetchel
-  ms.author: thpetche
+  author: chcomley
+  ms.author: chcomley
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "AZ-400: Develop a security and compliance plan"
