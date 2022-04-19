@@ -20,6 +20,9 @@ Of all of these changes, only number 5 was deployed using the automation tools y
 
 In this module, you'll learn how you can enforce the deployment of your Azure infrastructure as code. You'll look at how to consider the controls you need to apply to each of your environments, and you'll apply Azure governance and controls to protect your resources. You'll also learn how to secure your pipelines and repositories, ensuring that all of the aspects of your Azure configuration follow a recommended and hardened process.
 
+> [!TIP]
+> In this module, you'll be introduced to many security features. Links to more information about each feature are provided in the summary unit.
+
 ## What is the main goal?
 
 By the end of this module, you'll be able to identify the security controls and governance that you should apply to your Azure environment, repositories, and pipelines, so that you can deploy all of your infrastructure as code.

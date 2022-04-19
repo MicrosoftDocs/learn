@@ -6,5 +6,9 @@ Now, you’re able to increase your confidence in, and the security of, your Azu
 
 ## More resources
 
+- Secure your pipelines
+  - Managed identities, workload identities
+  - Service principal conditional access
+  - [Azure AD SSO integration with a GitHub Enterprise Cloud Organization](/azure/active-directory/saas-apps/github-tutorial)
 - TODO Bicep scenarios
 - TODO anything from Julie Ng? https://docs.microsoft.com/en-us/azure/architecture/example-scenario/governance/end-to-end-governance-in-azure
