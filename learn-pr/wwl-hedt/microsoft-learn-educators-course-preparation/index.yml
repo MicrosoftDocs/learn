@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.microsoft-learn-educators-course-preparation
+metadata:
+  title: Microsoft Learn for Educators Course Preparation
+  description: "Your students want skills that make them employable. Using the resources available from Microsoft will help you feel confident to teach your students the skills they need to help them pass a Microsoft Certification exam."
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Microsoft Learn for Educators Course Preparation
+summary: Your students want skills that make them employable. Using the resources available from Microsoft will help you feel confident to teach your students the skills they need to help them pass a Microsoft Certification exam.
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand the resources available to you help you get prepared to teach Microsoft Fundamentals or Advanced Role-Based curriculum in your classes.
+  - Understand how faculty members can prepare to take a certification exam.
+  - Request a free or discounted practice test key.
+  - Access free or discounted certification exam vouchers.
+prerequisites: |
+  *   Understand the Microsoft Learn for Educators program benefits.
+  *   Navigate the Microsoft Learn for Educators portal.
+  *   Request practice exams and certification exam vouchers as an MSLE Educator.
+  *   Access the Microsoft Learning Download Center and download content.
+  *   Understand the resources available through the Microsoft curriculum and teaching materials.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- higher-ed-educator
+products:
+- azure-security-center
+- dynamics-365
+- dynamics-customer-service
+units:
+- learn.wwl.microsoft-learn-educators-course-preparation.introduction
+- learn.wwl.microsoft-learn-educators-course-preparation.locate-practice-exams
+- learn.wwl.microsoft-learn-educators-course-preparation.demonstrate-how-get-certified
+- learn.wwl.microsoft-learn-educators-course-preparation.knowledge-check
+- learn.wwl.microsoft-learn-educators-course-preparation.summary
+badge:
+  uid: learn.wwl.microsoft-learn-educators-course-preparation,badge

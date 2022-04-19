@@ -3,7 +3,7 @@ uid: learn.wwl.secure-windows-server-user-accounts
 metadata:
   title: Secure Windows Server user accounts
   description: "Protect your Active Directory environment by securing user accounts to least privilege and placing them in the Protected Users group. Learn how to limit authentication scope and remediate potentially insecure accounts."
-  ms.date: 11/12/2021
+  ms.date: 04/18/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   *   Familiarity with managing Active Directory Domain Services security principals
   *   Ability to edit Active Directory Group Policy settings
   *   Experience performing basic Windows Server administration tasks
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/8-secure-windows-server-user-accounts.svg
 levels:
 - intermediate
 roles:

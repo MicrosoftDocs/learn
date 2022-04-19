@@ -3,19 +3,17 @@ uid: learn.wwl.describe-ediscovery-capabilities-of-microsoft-365
 metadata:
   title: Describe the eDiscovery and audit capabilities of Microsoft 365
   description: "Describe the eDiscovery and audit capabilities of Microsoft 365"
-  ms.date: 08/23/2021
+  ms.date: 04/12/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Describe the eDiscovery and audit capabilities of Microsoft 365
-summary: Learn how the eDiscovery and audit capabilities of Microsoft 365 helps organizations find relevant data quickly.
+summary: Organizations may need to identify, collect, and/or audit information for legal, regulatory, or business reasons. Learn how the eDiscovery and audit capabilities of Microsoft 365 help organizations find relevant data quickly.
 abstract: |
-  After completing this module, you will be able to:
-  - Describe the purpose of eDiscovery.
-  - Describe the capabilities of the content search tool.
-  - Describe the core and advanced eDiscovery workflows.
-  - Describe the core and advanced auditing capabilities of Microsoft 365.
+  After completing this module, you'll be able to:
+  - Describe the eDiscovery capabilities of Microsoft 365.
+  - Describe the auditing capabilities of Microsoft 365.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -31,11 +29,7 @@ products:
 units:
 - learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.introduction
 - learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.describe-purpose-of-ediscovery
-- learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.describe-content-search-tool
-- learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.describe-core-ediscovery-workflow
-- learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.describe-advanced-ediscovery-workflow
 - learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.describe-core-microsoft-365
-- learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.describe-purpose-value-of-advanced-auditing
 - learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.knowledge-check
 - learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.summary-resources
 badge:

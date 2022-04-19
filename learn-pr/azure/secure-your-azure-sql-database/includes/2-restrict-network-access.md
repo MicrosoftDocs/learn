@@ -1,8 +1,8 @@
-Users will connect to our app server to enter orders, update their account, and perform similar activities, which will in turn update the database with these changes. Because we have personal data stored in the database it's critical to ensure that we only allow access from trusted and necessary resources. Let's take a look at a number of ways you can control access to your SQL database over the network.
+Users will connect to our app server to enter orders, update their account, and perform similar activities, which will in turn update the database with these changes. Because we have personal data stored in the database, it's critical to ensure that we only allow access from trusted and necessary resources. Let's take a look at a number of ways you can control access to your SQL database over the network.
 
 ## Firewall rules
 
-Azure SQL Database has a built-in firewall that is used to allow and deny network access to both the database server itself, as well as individual databases. Initially, all public access to your Azure SQL Database is blocked by the SQL Database firewall. To access a database server, you must specify one or more server-level IP firewall rules that enable access to your Azure SQL Database. You use the IP firewall rules to specify which IP address ranges from the Internet are allowed, and whether Azure applications can attempt to connect to your Azure SQL Database.
+Azure SQL Database has a built-in firewall that is used to allow and deny network access to both the database server itself, and individual databases. Initially, all public access to your Azure SQL Database is blocked by the SQL Database firewall. To access a database server, you must specify one or more server-level IP firewall rules that enable access to your Azure SQL Database. You use the IP firewall rules to specify which IP address ranges from the Internet are allowed, and whether Azure applications can attempt to connect to your Azure SQL Database.
 
 Firewall rules are configured at the server and/or database level, and will specifically state which network resources are allowed to establish a connection to the database. Depending on the level, the rules you can apply will be as follows:
 
@@ -22,7 +22,7 @@ Let's take a closer look at how these rules work.
 
 These rules enable clients to access your entire Azure SQL server, that is, all the databases within the same logical server. There are three types of rules that can be applied at the server level.
 
-The **Allow access to Azure services** rule allows services within Azure to connect to your Azure SQL Database. When enabled, this setting allows communications from all Azure public IP addresses. This includes all Azure Platform as a Service (PaaS) services, such as Azure App Service and Azure Container Service, as well as Azure VMs that have outbound Internet access. This rule can be configured through the **ON/OFF** option in the firewall pane in the portal, or by an IP rule that has 0.0.0.0 as the start and end IP addresses.
+The **Allow access to Azure services** rule allows services within Azure to connect to your Azure SQL Database. When enabled, this setting allows communications from all Azure public IP addresses. This includes all Azure Platform as a Service (PaaS) services, such as Azure App Service and Azure Container Service, and Azure VMs that have outbound Internet access. This rule can be configured through the **ON/OFF** option in the firewall pane in the portal, or by an IP rule that has 0.0.0.0 as the start and end IP addresses.
 
 ![Allow access to Azure services network diagram.](../media/2-allow-azure-services.png)
 
@@ -51,7 +51,7 @@ These rules allow access to an individual database on a logical server and are s
 
 ![Database IP address rule network diagram.](../media/2-db-ip-rule-1.png)
 
-The benefits of database-level rules are their portability. When replicating a database to another server, the database-level rules will be replicated, since they are stored in the database itself.
+The benefits of database-level rules are their portability. When replicating a database to another server, the database-level rules will be replicated, since they're stored in the database itself.
 
 The downside to database-level rules is that you can only use IP address rules. This may limit the flexibility you have and can increase administrative overhead.
 
@@ -65,7 +65,7 @@ Let's take a look at how these work in practice, and how you can secure network 
 
 Let's go through the firewall settings and see how they work. We'll use both the portal and Cloud Shell for these exercises.
 
-The database we created currently does not allow access from any connections. This is by design based on the commands that we ran to create the logical server and database. Let's confirm this.
+The database we created currently doesn't allow access from any connections. This is by design based on the commands that we ran to create the logical server and database. Let's confirm this.
 
 1. In Cloud Shell, SSH into your Linux VM if you aren't already connected. Replace `nnn.nnn.nnn.nnn` with the value from the `publicIpAddress` in the previous unit.
 
@@ -99,7 +99,7 @@ Because our VM has outbound internet access, we can use the **Allow access to Az
 
 1. In the SQL server pane, in the left menu pane, under **Security**, select **Firewalls and virtual networks**.
 
-1. Set **Allow access to Azure services** to **YES**, and select **Save**. Wait until the system acknowledges this change.
+1. Set **Allow Azure services and resources to access this server** to **Yes**, and select **Save**. Wait until the system acknowledges this change.
 
 1. Back in your SSH session, let's try to connect to your database again.
 
@@ -137,9 +137,9 @@ EXECUTE sp_set_database_firewall_rule N'My Firewall Rule', '40.112.128.214', '40
 
     After the command completes, enter `exit` to exit sqlcmd. Remain connected via SSH.
 
-1. In the portal, on the **Firewalls and virtual networks** pane for your SQL server, set **Allow access to Azure services** to **OFF**, and select **Save**. This will disable access from all Azure services, but we'll still be able to connect because we have a database-level IP rule for our server.
+1. In the portal, on the **Firewalls and virtual networks** pane for your SQL server, set **Allow Azure services and resources to access this server** to **No**, and select **Save**. This will disable access from all Azure services, but we'll still be able to connect because we have a database-level IP rule for our server.
 
-1. Back in Cloud Shell, in the VM you are connected via SSH to, try connecting to your database again.
+1. Back in Cloud Shell, in the VM you're connected via SSH to, try connecting to your database again.
 
     ```bash
     sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
@@ -221,4 +221,4 @@ In this case, because our VM is running in Azure, we can use a server-level virt
     1>
     ```
 
-What we've done here effectively removes any public access to the SQL server, and only permits access from the specific subnet in the Azure VNet we defined. If we were to add additional app servers in that subnet, no additional configuration would be necessary, as any server in that subnet would have the ability to connect to the SQL server. This limits our exposure to services outside of our scope of control, and eases administration if we were to add additional servers. This is an effective method of securing network access to an Azure SQL Database.
+What we've done here effectively removes any public access to the SQL server, and only permits access from the specific subnet in the Azure VNet we defined. If we were to add additional app servers in that subnet, no extra configuration would be necessary, as any server in that subnet would have the ability to connect to the SQL server. This limits our exposure to services outside of our scope of control, and eases administration if we were to add additional servers. This is an effective method of securing network access to an Azure SQL Database.

@@ -3,7 +3,7 @@ uid: learn.microservices-architecture
 metadata:
   title: Decompose a monolithic application into a microservices architecture
   description: Improve development agility, deployment, fault tolerance, and scalability by modernizing your application with a microservices architecture.
-  ms.date: 08/30/2019
+  ms.date: 03/04/2022
   author: davidcberry13
   ms.author: daberry
   ms.topic: interactive-tutorial

@@ -1,4 +1,4 @@
-Azure landing zones provide cloud adoption teams with a well-managed environment for their workloads. Each of the following implementation options applies a predetermined set of design considerations for landing zones to provide an implementation and architecture to guide your environment configuration.
+Azure landing zones provide cloud-adoption teams with a well-managed environment for their workloads. Each of the following implementation options applies a predetermined set of design considerations for landing zones to provide an implementation and architecture to guide your environment configuration.
 
 ## Partner implementation options
 
