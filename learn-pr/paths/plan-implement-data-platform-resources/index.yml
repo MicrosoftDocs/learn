@@ -3,7 +3,7 @@ uid: learn.wwl.plan-implement-data-platform-resources
 metadata:
   title: Plan and implement data platform resources
   description: Plan and implement data platform resources
-  ms.date: 11/02/2021
+  ms.date: 04/19/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal.
 summary: |
-  Deploy data platform resources in Azure for SQL Server and Open Source databases. Explore options for upgrade and migration.  Calculate resource requirements and create templates.
+  Deploy data platform resources in Azure SQL. Explore options for deployment and migration. Calculate resource requirements and create templates.
 iconUrl: /learn/achievements/plan-and-implement-data-platform-resources.svg
 levels:
 - intermediate
@@ -28,8 +28,10 @@ products:
 - azure-sql-database
 - sql-server
 modules:
-- learn.wwl.deploy-sql-server-virtual-machine
-- learn.wwl.deploy-azure-sql-database
-- learn.wwl.deploy-mariadb-mysql-postgresql-azure
+- learn.wwl.deploy-iaas-solutions-with-azure-sql
+- learn.wwl.deploy-paas-solutions-with-azure-sql
+- learn.wwl.evaluate-strategies-for-migrating-to-azure-sql
+- learn-wwl.migrate-sql-workloads-azure-sql-databases
+- learn-wwl.migrate-sql-workloads-azure-managed-instances
 trophy:
   uid: learn.wwl.plan-implement-data-platform-resources.trophy
