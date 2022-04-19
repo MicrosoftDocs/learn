@@ -13,7 +13,7 @@ Perhaps while reading a project's README file you find a broken link or some typ
 
 ## Use GitHub search
 
-You can also use GitHub search to explore topics and related projects. Head to [GitHub search](https://github.com/search), and enter your topic word.
+You can also use GitHub search to explore topics and related projects. Head to [GitHub search](https://github.com/search?azure-portal=true), and enter your topic word.
 
 Let's say you're interested in machine learning.
 

@@ -19,11 +19,11 @@ In this exercise, you will:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with your Azure subscription.
 
-2. Select **Create a resource**, then select **Containers**, and then select **Container Registry**.
+1. Select **Create a resource**, then select **Containers**, and then select **Container Registry**.
 
-   ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace](../media/3-search-container-registry-annotated.png)
+    :::image type="content" source="../media/3-search-container-registry-annotated.png" alt-text="Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace":::
 
-3. Specify the values in the following table for each of the properties:
+1. Specify the values in the following table for each of the properties:
 
    | Property | Value |
    |---|---|
@@ -35,61 +35,60 @@ In this exercise, you will:
 
     * Remember to take a note of your `Registry name` and the name of your `Resource Group` - we'll need them soon.
 
-4. Select **Review + create**, and wait for validation to process.
+1. Select **Review + create**, and wait for validation to process.
 
-5. Select **Create**. Wait until the container registry has been created before you continue. It should only take a few seconds and the webpage will display `Your deployment is complete`.
+1. Select **Create**. Wait until the container registry has been created before you continue. It should only take a few seconds and the webpage will display `Your deployment is complete`.
 
 ### Build a Docker image and upload it to Azure Container Registry
 
-6. Go to Azure Cloud Shell.
+1. Go to Azure Cloud Shell.
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com)
 
     1. If no storage is mounted, select `Bash`, and then select the same subscription you used to create the Container Registry.
 
-7. In the Azure Cloud Shell in the portal, copy and paste the following command, but replace `{registry_name}` with the Registry name you chose in step 3.
+1. In the Azure Cloud Shell in the portal, copy and paste the following command, but replace `{registry_name}` with the Registry name you chose in step 3.
 
     ```bash
     REGISTRYNAME={registry_name}
     ```
 
-8. Select <kbd>Enter</kbd> to run the code and set your registry name.
+1. Select <kbd>Enter</kbd> to run the code and set your registry name.
 
-9. In the Azure Cloud Shell, copy and paste the following command, but replace `{resource-group-name}` with the Resource Group you chose in step 3. Then, select <kbd>Enter</kbd> to run the code and set your Resource Group name.
+1. In the Azure Cloud Shell, copy and paste the following command, but replace `{resource-group-name}` with the Resource Group you chose in step 3. Then, select <kbd>Enter</kbd> to run the code and set your Resource Group name.
 
     ```bash
     RESOURCEGROUP={resource-group-name}
     ```
 
-10. In the Azure Cloud Shell, run the following command to download the source code for the Node.js app. This app is simple - it accepts a POST request from smart fridges.
+1. In the Azure Cloud Shell, run the following command to download the source code for the Node.js app. This app is simple - it accepts a POST request from smart fridges.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-cloud-native-apps-express.git
     ```
 
-11. Move to the source folder for express:
+1. Move to the source folder for express:
 
     ```bash
     cd mslearn-cloud-native-apps-express/src
     ```
 
-12. Run the following command. This command sends the folder's contents to Azure Container Registry, which uses the instructions in the Docker file to build the image and store it. Take care not to remove the `.` character at the end of the command.
+1. Run the following command. This command sends the folder's contents to Azure Container Registry, which uses the instructions in the Docker file to build the image and store it. Take care not to remove the `.` character at the end of the command.
 
     ```bash
     az acr build --registry $REGISTRYNAME --image expressimage .
     ```
 
     > [!TIP]
-    >  
     > If an error is returned, remember to set your `REGISTRYNAME` and `RESOURCEGROUP` in the Cloud Shell.
 
-13. Return to the main directory of the source code.
+1. Return to the main directory of the source code.
 
     ```bash
     cd ..
     ```
 
-14. Leave the Cloud Shell open, and return to this exercise unit.
+1. Leave the Cloud Shell open, and return to this exercise unit.
 
 The Docker file contains the step-by-step instructions for building a Docker image from the source code for the Node.js application. Azure Container Registry runs these steps to build the image, and as each step completes, a message is generated. The build process should finish after a couple of minutes.
 
@@ -108,40 +107,42 @@ In this section, we'll create an Azure Kubernetes Service instance in the Azure 
 
     To create an AKS cluster, complete the following steps:
 
-2. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-3. Select **Containers** >  **Kubernetes Service**.
+1. Select **Containers** >  **Kubernetes Service**.
     :::image type="content" source="../media/3-d-select-aks.png" alt-text="Select AKS in Azure portal.":::
 
-4. On the **Basics** tab, enter the following information:  
+1. On the **Basics** tab, enter the following information:  
 
-    |Parameter  |Value  |
-    |---------|---------|
-    |**Subscription**     |  Select the same subscription as you used to set up the container registry  |
-    |**Resource group**     | Select the same resource group as you used to set up the container registry      |
-    |**Kubernetes cluster name** |  **Choose a unique name**, such as cna-demo-aks |
-    |**Region**| Leave the default, or use a region that's close to you |
-    |**Availability zones**| Leave as default |
-    |**Kubernetes version**     |  Leave as default       |
-    |**Node size**| Leave as default |
-    |**Node count**|  Leave as default|
+    |Parameter | Value |
+    |--- | --- |
+    |**Subscription** |  Select the same subscription as you used to set up the container registry |
+    |**Resource group** | Select the same resource group as you used to set up the container registry |
+    |**Kubernetes cluster name** |  **Choose a unique name**, such as *cna-demo-aks* |
+    |**Region** | Leave the default, or use a region that's close to you |
+    |**Availability zones** | Leave as default |
+    |**Kubernetes version** |  Leave as default |
+    |**API server availability** | Leave as default |
+    |**Node size** | Leave as default |
+    |**Scale method** | Select **Manual** |
+    |**Node count** |  Leave as default |
 
     :::image type="content" source="../media/3-create-cluster.png" alt-text="Configuration form.":::
 
-    * Remember to take a note of your `Kubernetes cluster name`.
+    * Remember to make note of your `Kubernetes cluster name`.
 
-5. Select **Networking**.
-6. **Under Traffic routing**, select **Enable HTTP application routing**.
+1. Select **Networking**.
+1. **Under Traffic routing**, select **Enable HTTP application routing**.
 
-7. Select **Integrations**.
-8. Select the container registry you just created.
+1. Select **Integrations**.
+1. Select the container registry you just created.
 
-9. Select **Review + create**, in the blue box at the bottom of the page - this will take a few seconds.
-10. Select **Create**, in the blue box at the bottom of the page.
+1. Select **Review + create**, in the blue box at the bottom of the page - this will take a few seconds.
+1. Select **Create**, in the blue box at the bottom of the page.
 
     It takes a few minutes to create the AKS cluster.
 
-11. Return to the Azure Cloud Shell, copy and paste the following command, but replace `{cluster-name}` with the Kubernetes cluster name you chose in step 3. Then, select <kbd>Enter</kbd> to run the command and set your Kubernetes cluster name.
+1. Return to the Azure Cloud Shell, copy and paste the following command, but replace `{cluster-name}` with the Kubernetes cluster name you chose in step 3. Then, select <kbd>Enter</kbd> to run the command and set your Kubernetes cluster name.
 
     ```bash
     CLUSTERNAME={cluster-name}
@@ -151,22 +152,22 @@ In this section, we'll create an Azure Kubernetes Service instance in the Azure 
 
 While AKS gets set up, you can upload the management webapp to the Container Registry.
 
-12. Move to the source folder:
+1. Move to the source folder:
 
     ```bash
-    cd mslearn-cloud-native-apps-express/react
+    cd react/
     ```
 
-13. Run the following command to build the image and store it. Take care not to remove the `.` character at the end of the command.
+1. Run the following command to build the image and store it. Take care not to remove the `.` character at the end of the command.
 
     ```bash
     az acr build --registry $REGISTRYNAME --image webimage .
     ```
 
-14. Return to the main directory
+1. Return to the main directory
 
     ```bash
-    cd ../../..
+    cd ..
     ```
 
 Congratulations! You just created a container registry, built express.js and Next.js container images, and stored the images in the registry. You also created a Kubernetes cluster in AKS that's connected to your container registry.
