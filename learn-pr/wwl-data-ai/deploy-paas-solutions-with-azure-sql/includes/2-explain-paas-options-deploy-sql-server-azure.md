@@ -4,7 +4,7 @@ Azure SQL Database and Azure SQL Managed Instance are part of PaaS offering for 
 
 - **Azure SQL Database –** Part of a family of products built upon the SQL Server engine, in the cloud. It gives developers a great deal of flexibility in building new application services, and granular deployment options at scale. SQL Database offers a low maintenance solution that can be a great option for certain workloads.
 
-- **Azure SQL Database Managed Instance–** It is best for most migration scenarios to the cloud as it provides fully managed services and capabilities.
+- **Azure SQL Managed Instance–** It is best for most migration scenarios to the cloud as it provides fully managed services and capabilities.
 
 :::image type="content" source="../media/module-22-plan-implement-final-25.png" alt-text="Platform Management for PaaS Solutions":::
 
