@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "False"
       isCorrect: false
-      explanation: ""
+      explanation: "This is not a valid option"
     - content: "True"
       isCorrect: true
       explanation: "Visualization is a data product, and depending on the complexity, can be created via a self-serve process or managed by a data product team."

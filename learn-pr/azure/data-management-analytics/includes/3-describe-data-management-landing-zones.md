@@ -42,11 +42,11 @@ When implemented it provides a bridge between IT professionals and process or ap
 
 Data classification needs to take into account the following:
 
-Regulatory requirements
-Strategic or proprietary worth
-Organization specific policies
-Ethical and privacy considerations
-Contractual agreements
+- Regulatory requirements
+- Strategic or proprietary worth
+- Organization specific policies
+- Ethical and privacy considerations
+- Contractual agreements
 
 ### Data Lineage
 
@@ -60,12 +60,13 @@ Data lineage provides the audit trail of the data points at the highest granular
 
 Defining data quality in a sentence is difficult due to the many contexts data are used in, and the varying perspectives among end users, producers, and custodians of data.
 From a consumer perspective, data quality is:
-• "data that are fit for use by data consumers"
-• data "meeting or exceeding consumer expectations"
 
-#### Below is a typical data management landing zone architecture. 
+- data fit for use by data consumers
+- date meeting or exceeding consumer expectations
 
-![Multiple data landing zones](../media/high-level-design-multiple-landing-zones.png)
+#### Below is a typical data management landing zone architecture
+
+[![Multiple data landing zones](../media/high-level-design-multiple-landing-zones.png)](../media/high-level-design-multiple-landing-zones.png)
 
 ### Azure Purview Context
 
@@ -75,7 +76,7 @@ High-level architecture of Azure Purview, showing multi-cloud and on premises so
 
 Azure Purview automates data discovery by providing data scanning and classification as a service for assets across your data estate. Metadata and descriptions of discovered data assets are integrated into a holistic map of your data estate. Atop this map, there are purpose-built apps that create environments for data discovery, access management, and insights about your data landscape.
 
-![High Level Purview Overview](../media/high-level-overview-purview.png)
+[![High Level Purview Overview](../media/high-level-overview-purview.png)](../media/high-level-overview-purview.png)
 
 ## Other references
 

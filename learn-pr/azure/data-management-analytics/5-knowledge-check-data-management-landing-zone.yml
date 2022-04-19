@@ -27,7 +27,7 @@ quiz:
       explanation: "This option refers to a data center and so not relevant here. Data Management Landing zone is logical."
     - content: "None of the above"
       isCorrect: false
-      explanation: ""
+      explanation: "This isn't a valid option"
   - content: "Which Azure resource is provisioned for centralized data governance as part of the deployment?"
     choices:
     - content: "Azure SQL server database"
@@ -41,18 +41,18 @@ quiz:
       explanation: "This option refers to a Databricks workspace instance, which could be added to enable a data movement in to data landing zone. However it isn't provisioned by default"
     - content: "None of the above"
       isCorrect: false
-      explanation: ""
+      explanation: "This isn't a valid option"
   - content: "What resource group is created to host automation account"
     choices:
     - content: "XXX-XXXX-azautomate"
       isCorrect: false
-      explanation: ""
+      explanation: "This isn't a valid option"
     - content: "XXX-XXXX-automation"
       isCorrect: true
       explanation: "Data management and analytics scenario creates three resource groups to help with the creation of your custom onboarding solutions for your data estate. Typically, user interfaces are in the 'governance' resource group. The application layer and database are in automation and automationdb, respectively."
     - content: "XXX-dev-automatic"
       isCorrect: false
-      explanation: ""
+      explanation: "This isn't a valid option"
     - content: "All of the above"
       isCorrect: false
-      explanation: ""  
+      explanation: "This isn't a valid option"  
