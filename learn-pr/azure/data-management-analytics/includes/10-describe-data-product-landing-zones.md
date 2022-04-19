@@ -24,7 +24,7 @@ A data product is a result of data from one or many data integrations and/or oth
 [![Data Landing Zone Product](../media/data-landing-zone-product.png)](../media/data-landing-zone-product.png)
 
 
-## A typical data product components are shown below
+## Typical data product components are shown below
 
 [![Data Landing Zone Architecture Details](../media/data-product-landing-zone-arch-detail.png)](../media/data-product-landing-zone-arch-detail.png)
 
