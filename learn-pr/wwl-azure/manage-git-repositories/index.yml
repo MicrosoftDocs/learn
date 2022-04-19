@@ -3,7 +3,7 @@ uid: learn.wwl.manage-git-repositories
 metadata:
   title: Manage Git repositories
   description: "Manage Git repositories"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Use Git Large File Storage (LFS)
   - Purge repository data
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/6-manage-git-repositories.svg
 levels:
 - advanced
 roles:

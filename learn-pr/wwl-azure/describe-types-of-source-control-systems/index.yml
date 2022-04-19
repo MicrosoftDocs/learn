@@ -3,7 +3,7 @@ uid: learn.wwl.describe-types-of-source-control-systems
 metadata:
   title: Describe types of source control systems
   description: "Describe types of source control systems"
-  ms.date: 12/02/2021
+  ms.date: 02/25/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Develop using Git
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/6-describe-types-of-source-control-systems.svg
 levels:
 - advanced
 roles:

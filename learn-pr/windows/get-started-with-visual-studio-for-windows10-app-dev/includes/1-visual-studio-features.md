@@ -82,16 +82,16 @@ Now that you have Visual Studio ready and waiting to go, let's quickly create a 
 
 6. You'll be asked to set a **Target version** and **Minimum version** for your app. For the exercises to come, you need to set the **Minimum version** to **Windows 10, version 1803** or later.
 
-  ![ Visual Studio versions.](../media/vs-select-version.png)
+  ![Visual Studio versions.](../media/vs-select-version.png)
 
    Your project will be created. The project won't be entirely empty: some files and settings are created for you.
 
 7. Make sure your settings are the same as those shown in the following screenshot, and then select the green **Run** button in the middle of the menu bar to build and run your app (or select F5).
 
-   ![ Visual Studio build.](../media/vs-build.png)
+   ![Screenshot that shows a cursor over Local Machine in the Visual Studio menu bar.](../media/vs-build.png)
 
 8. Soon you'll see an empty window. This is your app running. (The small black rectangle containing icons at the top of your app's window is added by Visual Studio to help debugging. It won't be in your final app.)
 
-   ![ Visual Studio build.](../media/vs-running.png)
+   ![Screenshot that shows a window with the words Hello World and a toolbar to help debugging.](../media/vs-running.png)
 
 10. Stop your app by selecting the red square on the menu bar.

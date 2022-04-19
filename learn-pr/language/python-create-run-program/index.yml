@@ -3,10 +3,10 @@ uid: learn.beginner-python.create-run-program
 metadata:
   title: Write your first Python programs
   description: Learn how to write your first Python programs, and to print and gather input on the console.
-  ms.date: 12/02/2021
+  ms.date: 04/01/2022
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 title: Write your first Python programs
@@ -19,7 +19,7 @@ abstract: |
   - Use type conversion to convert between data types.
 prerequisites: |
   Be familiar with the concept of programming.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/python-create-run-program.svg
 levels:
   - beginner
 roles:

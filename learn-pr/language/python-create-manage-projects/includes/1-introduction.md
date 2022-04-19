@@ -1,6 +1,6 @@
 At this point, you've created small programs that used the libraries that come with the installation of Python. They work well. But as you build more advanced programs, you need to ask yourself a question: how much of this new functionality do I write, and how much is already written that I can use in my own programs?
 
-As a developer, you're likely to build many programs on one machine. Those programs might also be used on other machines. However, some of these machines might have versions of Python installed that are not what you expect. Or, they might have libraries installed that are of lower or higher version than your program needs. 
+As a developer, you're likely to build many programs on one machine. Those programs might also be used on other machines. However, some of these machines might have versions of Python installed that aren't what you expect. Or, they might have libraries installed that are of lower or higher version than your program needs. 
 
 So what do you do? You need to find a way for your program to work in isolation, so it doesn't disturb what's installed on the target machine. You also want to make sure that a machine doesn't disable your program because it has the wrong Python version or library version installed.
 

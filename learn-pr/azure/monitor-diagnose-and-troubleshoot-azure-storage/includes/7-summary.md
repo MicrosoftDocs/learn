@@ -1,6 +1,6 @@
-In this module, you learned how to troubleshoot and diagnose Azure storage performance issues. You identified the tools that you can use to troubleshoot issues with Azure storage. You saw how to configure a storage account to capture metrics and generate diagnostic log information. 
+In this module, you learned how to troubleshoot and diagnose Azure storage performance issues. You identified the tools you can use to troubleshoot issues with Azure storage. You learned how to configure a storage account to capture metrics and generate diagnostic log information. 
 
-You also saw how to use the desktop version of Azure Storage Explorer and Microsoft Message Analyzer to examine these metrics and log files.
+You also learned how to use the desktop version of Azure Storage Explorer to examine these metrics and log files.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

@@ -3,17 +3,18 @@ uid: learn.wwl.explore-authentication-capabilities-of-azure-ad
 metadata:
   title: Describe the authentication capabilities of Azure AD
   description: "Describe the authentication capabilities of Azure AD"
-  ms.date: 01/07/2022
+  ms.date: 04/13/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Describe the authentication capabilities of Azure AD
-summary: Learn about the different authentication capabilities of Azure AD.  Topics include multi-factor authentication, password protection and management.
+summary: Learn about the authentication capabilities of Azure AD, multi-factor authentication, and how it improves security. You'll also learn about the password protection and management capabilities of Azure AD.
 abstract: |
-  After completing this module, you will be able to:
-  - Describe the secure authentication methods of Azure AD
-  - Describe the password protection and management capabilities of Azure AD
+  After completing this module, you'll be able to:
+  - Describe the authentication methods of Azure AD.
+  - Describe multi-factor authentication in Azure AD
+  - Describe the password protection and management capabilities of Azure AD.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -30,7 +31,6 @@ units:
 - learn.wwl.explore-authentication-capabilities-of-azure-ad.introduction
 - learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-different-authentication-methods
 - learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-multi-factor-authentication-mfa
-- learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-windows-hello-for-business
 - learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-self-service-password-reset
 - learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-password-protection-&amp;-management
 - learn.wwl.explore-authentication-capabilities-of-azure-ad.knowledge-check

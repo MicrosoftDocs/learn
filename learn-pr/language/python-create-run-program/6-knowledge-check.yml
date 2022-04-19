@@ -4,10 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 12/02/2021
+  ms.date: 04/01/2022
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 durationInMinutes: 4
@@ -16,9 +16,9 @@ quiz:
   questions:
     - content: To show a string on the console, what code would you enter?
       choices:
-        - content: The code `print('my message')`
+        - content: The code `print(my message)`
           isCorrect: false
-          explanation: Incorrect. You need to use double quotation marks to print.
+          explanation: Incorrect. You need to use quotation marks to print.
         - content: The code `println("my message")`
           isCorrect: false
           explanation: Incorrect. You need to use the `print()` function.
@@ -43,7 +43,7 @@ quiz:
           explanation: Incorrect. You need to convert the string to an integer for this statement to work. 
         - content: It will give an error.
           isCorrect: true
-          explanation: Correct. It will show the error message "cannot concatenate 'str' and 'int' objects".
+          explanation: Correct. It will show the error message "can only concatenate str (not "int") to str".
         - content: It will become "12".
           isCorrect: false
           explanation: Incorrect. You need to convert the string to an integer for this statement to work. For the answer to become "12", both values would need to be strings, as in "1" + "2".

@@ -6,7 +6,7 @@ It's difficult to make sense of unordered data. Let's make it a bit easier to un
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwAEoVFOVnpSaXKASXJJak6iiAtYRUFgCZqMqBSovzi0oUkirRzUlJLU4GAC8Pmw5vAAAA" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwAEoVFOVnpSaXKASXJJak6iiAtYRUFgCZqMqBSovzi0oUkirRzUlJLU4GAC8Pmw5vAAAA" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -27,7 +27,7 @@ Each region has unique weather patterns, so now you want to know which events in
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwAEoVFOVnpSaXKASXJJak6iiAtYRUFgCZqMqBSovzi0oUkiohShUSi5PR1QAA36YINHUAAAA=" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwAEoVFOVnpSaXKASXJJak6iiAtYRUFgCZqMqBSovzi0oUkiohShUSi5PR1QAA36YINHUAAAA=" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -48,7 +48,7 @@ Instead of sorting and scanning the top for a certain number of results, you can
 
 1. Run the following query:
     
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUHLz8Q/ydHFUAkqV5BcoGBooJFUquCTmJqanBhTlF6QWlVQCpQqK8rNSk0sg+nQUwKaFVBYAmahKAYKJ63RsAAAA" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUHLz8Q/ydHFUAkqV5BcoGBooJFUquCTmJqanBhTlF6QWlVQCpQqK8rNSk0sg+nQUwKaFVBYAmahKAYKJ63RsAAAA" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents

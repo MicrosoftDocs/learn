@@ -8,6 +8,7 @@ metadata:
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: intro-internal
 title: Explore Azure Functions
 summary: Learn how Azure Functions can be a great solution for data processing, systems integration, and building simple APIs and microservices.
 abstract: |

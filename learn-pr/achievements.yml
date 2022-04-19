@@ -887,3 +887,63 @@ achievements:
   title: Create reusable functionality with functions in Python
   summary: Define functions to create encapsulated modular code
   iconUrl: /learn/achievements/python-functions.svg
+- uid: learn.wwl.explore-non-relational-data-offerings-azure.badge
+  type: badge
+  title: Explore non-relational data offerings in Azure
+  summary: Learn about Azure Table Storage, Azure Blob Storage, Azure File Storage, and Azure Cosmos DB, and explore situations for using them.
+  iconUrl: /learn/achievements/explore-non-relational-data-offerings-azure.svg
+- uid: learn.wwl.explore-azure-synapse-analytics.badge
+  type: badge
+  title: Explore large-scale data analytics
+  summary: Explore data ingestion options to build a data warehouse with Azure, services to perform data analytics, and features of Azure Synapse Analytics. Create a Synapse Analytics workspace and use it to ingest and analyze data.
+  iconUrl: /learn/achievements/synapse-analytics-explore.svg
+- uid: learn.wwl.introduction-security-development-process.badge
+  type: badge
+  title: Introduction to security development process
+  summary: This module introduces development security practices describing SQL injection attacks, threat modeling, and security for continuous integration. You will learn the key validation points and how to secure your pipeline.
+  iconUrl: /learn/achievements/5-introduction-to-security-development-process.svg
+- uid: learn.wwl.understand-security-pipeline.badge
+  type: badge
+  title: Understand security in the Pipeline
+  summary: This module introduces you DevSecOps concepts, integration with security tools, and integration with Azure Pipelines.
+  iconUrl: /learn/achievements/1-understand-security-in-the-pipeline.svg
+- uid: learn.wwl.introduction-to-azure-security-center.badge
+  type: badge
+  title: Introduction to Azure Security Center
+  summary: This module describes Azure Security Center and its usage scenarios, Azure Policies, Microsoft Defender for Identity, and security practices related to the tools.
+  iconUrl: /learn/achievements/azure-security-center-introduction.svg
+- uid: learn.wwl.implement-open-source-software.badge
+  type: badge
+  title: Implement open-source software
+  summary: This module explores open-source software and corporate concerns with software components. Also, it explains common open-source licenses, license implications, and ratings.
+  iconUrl: /learn/achievements/3-implement-open-source-software.svg
+- uid: learn.wwl.manage-anti-malware-spam-policies.badge
+  type: badge
+  title: Manage anti-malware and anti-spam policies
+  summary: This module describes anti-malware and anti-spam policies and explains inspection and validation code bases for compliance.
+  iconUrl: /learn/achievements/4-manage-anti-malware-and-anti-spam-policies.svg
+- uid: learn.wwl.integrate-license-vulnerability-scans.badge
+  type: badge
+  title: Integrate license and vulnerability scans
+  summary: This module details continuous security validation and explores OWASP ZAP penetration testing, results, and bugs. Also, it introduces SonarCloud, CodeQL at GitHub, and GitHub Dependabot alerts and security updates.
+  iconUrl: /learn/achievements/5-integrate-license-and-vulnerability-scans.svg
+- uid: learn.wwl.explore-conversational-ai.trophy
+  type: trophy
+  title: 'Microsoft Azure AI Fundamentals: Explore conversational AI'
+  summary: Conversational AI is an artificial intelligence workload that deals with dialogs between AI agents and human users.
+  iconUrl: /learn/achievements/explore-conversational-ai.svg
+- uid: learn.wwl.describe-security-management-capabilities-of-microsoft-365.badge
+  type: badge
+  title: Describe security management capabilities of Microsoft 365
+  summary: Learn about the security management capabilities of Microsoft 365.  Topics include Microsoft 365 Security Center, Secure score, incident management capabilities, and reports and dashboard.
+  iconUrl: /learn/achievements/describe-security-management-capabilities-of-microsoft-365.svg
+- uid: learn.wwl.describe-endpoint-security-with-microsoft-intune.badge
+  type: badge
+  title: Describe endpoint security with Microsoft Intune
+  summary: Learn how Microsoft Intune provides endpoint security. Topics include security baselines, compliance policies, integration with Microsoft 365 Defender for Endpoint, more.  Also, explore the Microsoft Endpoint Manager admin portal.
+  iconUrl: /learn/achievements/describe-endpoint-security-with-microsoft-intune.svg
+- uid: learn.wwl.evaluate-strategies-for-migrating-sql-databases-to-azure.badge
+  type: badge
+  title: Evaluate strategies for migrating SQL Databases to Azure
+  summary: Describe database migration options and tools on Azure. Understand how compatibility level affects database behavior. Describe Azure private and public preview options.
+  iconUrl: /learn/achievements/4-evaluate-strategies-for-moving-to-azure.svg

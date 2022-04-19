@@ -3,7 +3,7 @@ uid: learn.wwl.migrate-windows-server-roles
 metadata:
   title: Migrate Windows Server roles
   description: "Learn how to install and use the Windows Server Migration Tools cmdlets to migrate commonly used server roles from earlier versions of Windows Server."
-  ms.date: 11/26/2021
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ prerequisites: |
   -  Working knowledge of common Windows Server management tools
   -   Some experience managing typical Windows Server workloads
   -  Familiarity with basic PowerShell commands and syntax
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/5-migrate-windows-server-roles.svg
 levels:
 - intermediate
 roles:

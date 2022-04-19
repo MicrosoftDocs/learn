@@ -4,7 +4,7 @@ You'll either approach your decision from a green fields or a lift-and-shift pro
 
 We saw earlier that there are several features that enhance the AKS Kubernetes offering. Each of these features can be a compelling factor in your decision to use AKS.
 
-|||
+| | Consideration |
 | --- | --- |
 | **Identity and security management** | Do you already use existing Azure resources and make use of Azure AD? You can configure an AKS cluster to integrate with Azure AD and reuse existing identities and group membership. |
 | **Integrated logging and monitoring** | AKS includes Azure Monitor for containers to provide performance visibility of the cluster. With a custom Kubernetes installation, you normally decided on a monitoring solution that requires installation and configuration. |

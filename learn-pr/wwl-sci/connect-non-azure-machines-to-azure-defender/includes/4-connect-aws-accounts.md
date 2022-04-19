@@ -122,7 +122,7 @@ Configure the options in the AWS authentication tab:
 
     - Enter the Service Principal ID and Service Principal Client Secret for Azure Arc as described here Create a Service Principal for onboarding at scale
 
-    - If the machine connects to the internet via a proxy server, specify the proxy server IP address or the name and port number that the machine uses to communicate with the proxy server. Enter the value in the format http://<proxyURL>:<proxyport>
+    - If the machine connects to the internet via a proxy server, specify the proxy server IP address or the name and port number that the machine uses to communicate with the proxy server. Enter the value in the format http://\<proxyURL\>:\<proxyport\>
 
 1. Select **Review + create**.
 

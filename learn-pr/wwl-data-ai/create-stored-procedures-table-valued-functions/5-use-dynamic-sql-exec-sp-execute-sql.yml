@@ -4,7 +4,7 @@ title: Use dynamic SQL with EXEC and sp-execute-sql
 metadata:
   title: Use dynamic SQL with EXEC and sp-execute-sql
   description: "Use dynamic SQL with EXEC and sp-execute-sql"
-  ms.date: 12/17/2021
+  ms.date: 02/22/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial

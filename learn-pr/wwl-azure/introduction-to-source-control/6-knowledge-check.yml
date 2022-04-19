@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 03/18/2022
   author: wwlpublish
-  ms.author: luiz.macedo
+  ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -15,17 +15,17 @@ durationInMinutes: 5
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices isn't a benefit of source control?"
     choices:
-    - content: "Manageability"
+    - content: "Manageability."
       isCorrect: false
       explanation: "Incorrect. Source control is the practice of tracking and managing changes to code. Benefits include but are not limited to manageability and efficiency."
-    - content: "Efficiency"
+    - content: "Efficiency."
       isCorrect: false
       explanation: "Incorrect. Source control is the practice of tracking and managing changes to code. Benefits include but are not limited to manageability and efficiency."
-    - content: "Accountability"
+    - content: "Accountability."
       isCorrect: true
       explanation: "Correct. Source control is the practice of tracking and managing changes to code. Benefits include but are not limited to manageability and efficiency."
   - content: "Which of the following choices isn't a source control best practice?"

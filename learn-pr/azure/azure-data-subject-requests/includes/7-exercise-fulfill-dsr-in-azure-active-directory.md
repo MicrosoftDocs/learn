@@ -1,7 +1,7 @@
 As Contoso’s administrator, you must evaluate the DSR process in the Microsoft Cloud. You plan to create a use-case scenario for responding to a DSR that requests Microsoft cloud-based data be deleted.
 
 > [!Note]
-> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost refer to [Azure Pricing](https://azure.microsoft.com/en-us/pricing/calculator/).
+> If you choose to perform the exercise in this module, be aware you might incur costs in your Azure Subscription. To estimate the cost refer to [Azure Pricing](https://azure.microsoft.com/pricing/calculator/).
 
 In this exercise you will complete the following tasks:
 - Task 1: Create a user

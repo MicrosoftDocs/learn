@@ -12,7 +12,7 @@ First, we need to define some requirements for our logic:
 
 As we described in the preceding unit, Azure provides templates that help you build functions. In this unit, we'll use the `HttpTrigger` template to implement the temperature service.
 
-1. In the previous exercise, you deployed your function app and opened it. If it is not already open, you can open it from the Home page by selecting **All resources**, and then selecting your function app, named something like **escalator-functions-xxx**.
+1. In the previous exercise, you deployed your function app and opened it. If it isn't already open, you can open it from the Home page by selecting **All resources**, and then selecting your function app, named something like **escalator-functions-xxx**.
 
 1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears. This lists any functions you defined for your function app.
 
@@ -24,7 +24,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
 
 5. Select **Create**. The **HttpTrigger1** is created and displays in the **HttpTrigger1** Function pane.
 
-1. In the Developer menu on the left, select **Code + Test**. The code editor opens, displaying contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
+1. In the Developer menu on the left, select **Code + Test**. The code editor opens, displaying the contents of the *index.js* code file for your function. The default code that the HTTP template generated appears in the following snippet.
 
     ```javascript
     module.exports = async function (context, req) {
@@ -71,7 +71,7 @@ As we described in the preceding unit, Azure provides templates that help you bu
     This configuration file declares that the function runs when it receives an HTTP request. The output binding declares that the response will be sent as an HTTP response.
 
 ::: zone-end
-    
+
 ::: zone pivot="powershell"
 
 5. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and then select **Create** to create the function. The Overview pane for your *DriveGearTemperatureService* Function appears.
@@ -93,18 +93,15 @@ As we described in the preceding unit, Azure provides templates that help you bu
         $name = $Request.Body.Name
     }
 
+    $body = "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
+
     if ($name) {
-        $status = [HttpStatusCode]::OK
-        $body = "Hello $name"
-    }
-    else {
-        $status = [HttpStatusCode]::BadRequest
-        $body = "Please pass a name on the query string or in the request body."
+        $body = "Hello, $name. This HTTP triggered function executed successfully."
     }
 
     # Associate values to output bindings by calling 'Push-OutputBinding'.
     Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
-        StatusCode = $status
+        StatusCode = [HttpStatusCode]::OK
         Body = $body
     })
     ```
@@ -129,9 +126,9 @@ As we described in the preceding unit, Azure provides templates that help you bu
         {
           "type": "http",
           "direction": "out",
-          "name": "res"
+          "name": "Response"
         }
-      ],
+      ]
     }
     ```
 
@@ -187,19 +184,22 @@ Because you specified *Function* when you created this function, you need to sup
     - Passed the Function Key as the header value `x-functions-key`.
     - Used a `POST` request.
     - Passed the Azure Function with the URL for your function.
-    
 
 1. Select **Run**.
 
-    The **Code + Test** pane should open session displaying a log file output. 
-    
-    1. Press r<Kbd>Enter</kbd> to run your function in the session window.  The log file updates with the status of your request, which should look something like this:
+    The **Code + Test** pane should open a session displaying log file output. The log file updates with the status of your request, which should look something like this for JavaScript:
 
-    ```bash
-    2021-07-23T18:07:51.625 [Information] Executing 'Functions.HttpTrigger1' (Reason='This function was programmatically called via the host APIs.', 
-    Id=3f7baf30-e564-4545-9a9c-c3c8a36914af)
-    2021-07-23T18:07:51.736 [Information] JavaScript HTTP trigger function processed a request.
-    2021-07-23T18:07:51.772 [Information] Executed 'Functions.HttpTrigger1' (Succeeded, Id=3f7baf30-e564-4545-9a9c-c3c8a36914af, Duration=157ms)
+    ```output
+    2022-02-16T22:34:10.473 [Information] Executing 'Functions.HttpTrigger1' (Reason='This function was programmatically called via the host APIs.', Id=4f503b35-b944-455e-ba02-5205f9e8b47a)
+    2022-02-16T22:34:10.539 [Information] JavaScript HTTP trigger function processed a request.
+    2022-02-16T22:34:10.562 [Information] Executed 'Functions.HttpTrigger1' (Succeeded, Id=4f503b35-b944-455e-ba02-5205f9e8b47a, Duration=114ms)
+    ```
+
+    and something like this for PowerShell:
+
+    ```output
+    2022-02-16T21:07:11.340 [Information] INFORMATION: PowerShell HTTP trigger function processed a request.
+    2022-02-16T21:07:11.449 [Information] Executed 'Functions.DriveGearTemperatureService' (Succeeded, Id=25e2edc3-542f-4629-a152-cf9ed99680d8, Duration=1164ms)
     ```
 
     Under the **Output** pane, for **HTTP response code**, the function responds with the text `200 OK`.
@@ -358,9 +358,9 @@ We're going to use the **Test/Run** feature in *Developer* > *Code + Test* to te
     }
     ```
 
-1. Select **Run**. The **Output** tab displays the response, and the . To see log messages, open the **Logs** tab in the bottom flyout of the pane. The following image shows an example response in the output pane and messages in the **Logs** pane.
+1. Select **Run**. The **Output** tab displays the HTTP response code and content. To see log messages, open the **Logs** tab in the bottom flyout of the pane (if it is not already open). The following image shows an example response in the output pane and messages in the **Logs** pane.
 
-   :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::   
+   :::image type="content" source="../media/5-portal-testing.png" alt-text="Screenshot of the Azure function editor, with the Test and Logs tabs showing." lightbox="../media/5-portal-testing.png":::  
 
     The **Output** tab shows that a status field has been correctly added to each of the readings.
 

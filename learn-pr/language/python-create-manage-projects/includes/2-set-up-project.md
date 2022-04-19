@@ -26,7 +26,7 @@ Take the following steps:
 1. Use the following command to call the `venv` module. The command differs slightly depending on your operating system.
 
    ```bash
-   python3 -m venv env
+   python -m venv env
    ```
 
    At this point, some directories are created for you:
@@ -48,11 +48,11 @@ Take the following steps:
 
 ### Activate the virtual environment
 
-At this point, you have a virtual environment, but you haven't started using it. To use it, you need to activate it by calling an `activate` script in your `env` directory. Here's how the activation can look on macOS:
+At this point, you have a virtual environment, but you haven't started using it. To use it, you need to activate it by calling an `activate` script in your `env` directory. Here's how the activation can look on Windows, Linux, and macOS:
 
 ```bash
 # Windows
-env\bin\activate
+source env/Scripts/activate
 
 # Linux, WSL or macOS
 source env/bin/activate

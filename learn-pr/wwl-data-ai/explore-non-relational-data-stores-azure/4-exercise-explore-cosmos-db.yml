@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-non-relational-data-stores-azure.exercise-azure-cosmos-db
+title: 'Exercise: Explore Azure Cosmos DB'
+metadata:
+  title: 'Exercise: Explore Azure Cosmos DB'
+  description: "Exercise: Explore Azure Cosmos DB"
+  ms.date: 03/10/2022
+  author: wwlpublish
+  ms.author: wwlpub
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-explore-cosmos-db.md)]

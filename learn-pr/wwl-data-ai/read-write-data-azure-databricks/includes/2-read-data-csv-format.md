@@ -34,7 +34,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 4. Select **Create Cluster** to add a new cluster.
 
-   ![The create cluster page.](../media/create-cluster.png)
+:::image type="content" source="../media/create-cluster.png" alt-text="The create cluster page":::
 
 5. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
 

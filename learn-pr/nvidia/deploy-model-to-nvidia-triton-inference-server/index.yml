@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.nvidia.deploy-model-nvidia-triton-inference-server
+metadata:
+  title: Deploy model to NVIDIA Triton Inference Server
+  description: Deploy model to NVIDIA Triton Inference Server.
+  ms.date: 04/11/2022
+  author: toolboc
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy model to NVIDIA Triton Inference Server
+summary: NVIDIA Triton Inference Server is a multi-framework, open-source software that is optimized for inference. It supports popular machine learning frameworks like TensorFlow, ONNX Runtime, PyTorch, NVIDIA TensorRT, and more. It can be used for your CPU or GPU workloads.  In this module, you'll deploy your production model to NVIDIA Triton server to perform inference on a cloud-hosted virtual machine.
+abstract: |
+  In this module, you'll learn how to:
+  - Create an NVIDIA GPU Accelerated Virtual Machine
+  - Configure NVIDIA Triton Inference Server and related prerequisites
+  - Execute an inference workload on NVIDIA Triton Inference Server
+prerequisites: |
+  - [Azure Free Trial Account](https://azure.microsoft.com/free/)
+iconUrl: /learn/achievements/introduction-nvidia-deepstream-graph-composer-azure.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+products:
+- azure
+- azure-machine-learning
+units:
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.introduction
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.create-gpu-accelerated-virtual-machine
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.install-prerequisites-nvidia-triton-inference-server
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.execute-inference-workload-nvidia-triton-inference-server
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.knowledge-check
+- learn.nvidia.deploy-model-nvidia-triton-inference-server.summary
+badge:
+  uid: learn.nvidia.deploy-model-to-nvidia-triton-inference-server.badge

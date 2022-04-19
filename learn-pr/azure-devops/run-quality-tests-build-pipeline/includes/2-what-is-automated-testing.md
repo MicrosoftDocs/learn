@@ -1,4 +1,4 @@
-In this unit, you learn about the benefits of automated testing and the kinds of testing you can perform. You also learn what makes a good test and be introduced to the various testing tools that are available to you.
+In this unit, you'll learn about the benefits of automated testing and the kinds of testing you can perform. You'll also learn what makes a good test and be introduced to some of the testing tools that are available to you.
 
 Let's begin by checking in with the Tailspin web team.
 
@@ -100,7 +100,7 @@ There are many types of automated testing. Each test serves a separate purpose. 
 
 When we mention continuous integration and the build pipeline, we're typically referring to _development testing_. Development testing refers to tests you can run before you deploy the application to a test or production environment.
 
-For example, _lint testing_, a form of static code analysis, checks your source code to determine whether it conforms to your team's style guide. Code that's formatted consistently is usually easier for everyone to read and maintain.
+For example, _lint testing_, a form of static code analysis, checks your source code to determine whether it conforms to your team's style guide. Code that's formatted consistently is easier for everyone to read and maintain.
 
 In this module, you work with _unit testing_ and _code coverage testing_.
 
@@ -138,7 +138,7 @@ You'll be better able to identify a good test as you gain experience writing you
 
 The testing tools you use depend on the type of application you're building and the type of testing you want to perform. For example, you can use Selenium to perform UI testing on many types of web browsers and operating systems.
 
-No matter what language your application is written in, there's likely a number of test tools available to you.
+No matter what language your application is written in, there are many test tools available to you.
 
 For example, for Java applications, you might choose Checkstyle to perform lint testing and JUnit to perform unit testing.
 

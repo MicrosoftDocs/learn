@@ -1,4 +1,4 @@
-What if you also want your program to run a piece of code when your test expression is `False`? Or what if you want to include another test expression? Python has other keywords you can use to make more complex `if` statements, `else` and `elif`. When you use `if`, `else`, and `elif` in combination, you can write complex programs with multiple test expressions and statements to run. 
+What if you also want your program to run a piece of code when your test expression is `False`? Or what if you want to include another test expression? Python has other keywords you can use to make more complex `if` statements, `else` and `elif`. When you use `if`, `else`, and `elif` in combination, you can write complex programs with multiple test expressions and statements to run.
 
 ## Work with `else`
 

@@ -8,7 +8,7 @@ The `where` operator filters results that satisfy a certain condition. In this f
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwAEoVFOVnpSaXKASXJJak6iiAtYRUFgCZqMqBSksSs1MVDA0AnGdDg1sAAAA=" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwAEoVFOVnpSaXKASXJJak6iiAtYRUFgCZqMqBSksSs1MVDA0AnGdDg1sAAAA=" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -17,15 +17,15 @@ The `where` operator filters results that satisfy a certain condition. In this f
     | take 10
     ```
 
-1. You should get results that look like the following image: 
-    
+1. You should get results that look like the following image:
+
     :::image type="content" source="../media/5-where-1.png" alt-text="Screenshot of query results of a where operator with a numerical operator of greater than zero.":::
-    
+
 1. Notice that all rows returned do, in fact, have **DamageProperty** values greater than zero.
-    
+
 1. Similarly, you can filter where the time of an event occurred more than a certain number of days ago. For example, run the following query, where `365d` means 365 days:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwgEsFlyQWlYRk5qYCRRPT8zWMzUxTNIGyBUX5WanJJSD5klQdBbCBIZUFQCaqYQC5Vx5sbwAAAA==" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwgEsFlyQWlYRk5qYCRRPT8zWMzUxTNIGyBUX5WanJJSD5klQdBbCBIZUFQCaqYQC5Vx5sbwAAAA==" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -38,11 +38,11 @@ The `where` operator filters results that satisfy a certain condition. In this f
 
 ## Filter by using a string operator
 
-It looks like quite a few types of storms have caused damage all over the US. Let's narrow that down to storms that happened in a certain location, like the state of Florida. 
+It looks like quite a few types of storms have caused damage all over the US. Let's narrow that down to storms that happened in a certain location, like the state of Florida.
 
 1. Run the following query, which uses `"FLORIDA"` as a string:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPdS7KLyhWsFMwgIsHlySWpCrY2iooufn4B3m6OCoBpQqK8rNSk0sgkjoKYKNCKguATCRjAF6MrQhmAAAA" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPdS7KLyhWsFMwgIsHlySWpCrY2iooufn4B3m6OCoBpQqK8rNSk0sgkjoKYKNCKguATCRjAF6MrQhmAAAA" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -50,8 +50,8 @@ It looks like quite a few types of storms have caused damage all over the US. Le
     | where State == "FLORIDA"
     | project State, EventType, DamageCrops
     ```
-    
-1. You should get results that look like the following image: 
+
+1. You should get results that look like the following image:
 
     :::image type="content" source="../media/5-where-2.png" alt-text="Screenshot of query results for two where operators.":::
 
@@ -63,7 +63,7 @@ One of the event types in the results of the last query is called **Thunderstorm
 
 1. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwgEsFlySWpCrY2iooufn4B3m6OCrBpcCGhFQWpCpkJBYrKJVn5qWAJAuK8rNSk0tAOotKQjJzU3UQKnXQrAIAa+mmro0AAAA=" target="_blank"> Click to run query</a>    
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVcEnMTUxPDSjKL0gtKqlUsFMwgEsFlySWpCrY2iooufn4B3m6OCrBpcCGhFQWpCpkJBYrKJVn5qWAJAuK8rNSk0tAOotKQjJzU3UQKnXQrAIAa+mmro0AAAA=" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents
@@ -72,8 +72,8 @@ One of the event types in the results of the last query is called **Thunderstorm
     | where EventType has "wind"
     | project StartTime, EventType, DamageProperty
     ```
-    
-1. You should get results that look like the following image: 
+
+1. You should get results that look like the following image:
 
     :::image type="content" source="../media/5-where-has.png" alt-text="Screenshot of query results for where and has operators.":::
 
@@ -82,7 +82,7 @@ One of the event types in the results of the last query is called **Thunderstorm
 The `contains` operator is similar to `has`, but it matches on any substring. For example, the following query will return results such as *Freezing fog* and *Frost/Freeze*.
 
 ```kusto
-StormEvents | where EventType contains "free" 
+StormEvents | where EventType contains "free"
 ```
 
 The `has` operator is more performant than the `contains` operator, so use `has` wherever you have a choice between the two.
@@ -95,11 +95,11 @@ Because time ranges are bounded by two extremes, it's most efficient to construc
 
 The syntax for constructing this date range is as follows:
 
-> `where` *time* `between` `( datetime(`*value*`)..datetime(`*value*`)`
+> `where` *time* `between` `(datetime(`*value*`)..datetime(`*value*`))`
 
 1. Let's incorporate this `datetime` range into a kind of query you've already seen. Run the following query:
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLCoJycxNVUhKLSlPTc1T0EhJLEktAYpoGBkYmOsaGAKRpp4emqgZSFQTboxLYm5iempAUX5BalFJpYKdggGyDSWpCra2CkpuPv5Bni6OSkCpgqL8rNTkEoT1Ogpgh4VUFgCZqKYBlZckZqcqmBoAABGBmQnBAAAA" target="_blank"> Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLCoJycxNVUhKLSlPTc1T0EhJLEktAYpoGBkYmOsaGAKRpp4emqgZSFQTboxLYm5iempAUX5BalFJpYKdggGyDSWpCra2CkpuPv5Bni6OSkCpgqL8rNTkEoT1Ogpgh4VUFgCZqKYBlZckZqcqmBoAABGBmQnBAAAA" target="_blank">Click to run query</a>
 
     ```kusto
     StormEvents

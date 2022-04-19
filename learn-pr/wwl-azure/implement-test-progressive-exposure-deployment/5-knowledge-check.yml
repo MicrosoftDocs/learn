@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/02/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge."
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following choices is a deployment pattern extension of Canary Release?"
     choices:
@@ -43,10 +43,10 @@ quiz:
     choices:
     - content: "A/B testing isn't part of Continuous Delivery or a pre-requisite for Continuous Delivery."
       isCorrect: true
-      explanation: "Correct. A/B testing is not part of Continuous Delivery or a pre-requisite for Continuous Delivery."
-    - content: "A/B testing can be implemented using a combination of feature toggles, traffic routing, and deployment slots."
+      explanation: "Correct. A/B testing is not part of Continuous Delivery or a pre-requisite for Continuous Delivery. It's more the other way around."
+    - content: "A/B testing can be implemented using Azure Artifacts and multiple environments."
       isCorrect: false
-      explanation: "Incorrect. A/B testing is not part of Continuous Delivery or a pre-requisite for Continuous Delivery."
+      explanation: "Incorrect. A/B testing is not part of Continuous Delivery or a pre-requisite for Continuous Delivery. It's more the other way around."
     - content: "A/B testing is a pre-requisite and part of Continuous Delivery."
       isCorrect: false
-      explanation: "Incorrect. A/B testing is not part of Continuous Delivery or a pre-requisite for Continuous Delivery."
+      explanation: "Incorrect. A/B testing is not part of Continuous Delivery or a pre-requisite for Continuous Delivery. It's more the other way around."

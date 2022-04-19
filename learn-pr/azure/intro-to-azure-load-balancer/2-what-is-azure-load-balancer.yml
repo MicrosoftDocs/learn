@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-load-balancer.what-is-azure-load-balancer
+title: What is Azure Load Balancer?
+metadata:
+  title: What is Azure Load Balancer?
+  description: Learn what Azure Load Balancer does and how your organization can use it.
+  ms.date: 02/16/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom: team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-azure-load-balancer.md)]

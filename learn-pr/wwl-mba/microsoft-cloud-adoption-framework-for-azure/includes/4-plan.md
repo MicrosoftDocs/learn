@@ -7,9 +7,16 @@ In this stage, you focus on two main actions:
 - **Rationalize your digital estate:** Understand the organization's current digital estate to maximize return and minimize risks by running a workload assessment.
 - **Create your cloud adoption plan:** Develop a plan where prioritized workloads are defined and aligned with business outcomes.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn more.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn more.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3WHND]
 
@@ -169,8 +176,8 @@ Key steps to build this plan are to:
 
 :::row:::
 ![Icon of key](../media/key-takeaway.png)
-:::column:::
 
+:::column:::
 Here are the key points from this unit:
 
 :::column-end:::

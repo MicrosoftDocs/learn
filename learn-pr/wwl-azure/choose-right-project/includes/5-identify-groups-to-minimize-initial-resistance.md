@@ -2,13 +2,13 @@ Not all staff members within an organization will be receptive to the change req
 
 In discussions around continuous delivery, we usually categorize users into three general buckets:
 
- -  **Canary** users voluntarily test bleeding edge features as soon as they are available.
+ -  **Canary** users voluntarily test bleeding edge features as soon as they're available.
  -  **Early adopters** who voluntarily preview releases, considered more refined than the code that exposes canary users.
  -  **Users** who consume the products after passing through canary and early adopters.
 
-It is essential to find staff members keen to see new features as soon as they are available when choosing Canary. Also, it is highly tolerant of issues that might arise.
+It's essential to find staff members keen to see new features as soon as they're available and highly tolerant of issues when choosing Canary.
 
-Early adopters have similar characteristics to the Canaries. They have often work requirements that make them less tolerant to issues and interruptions to their ability to work.
+Early adopters have similar characteristics to the Canaries. They often have work requirements that make them less tolerant of issues and interruptions to work.
 
 While development and IT operations staff might generally be less conservative than users.
 
@@ -16,9 +16,9 @@ The staff will also range from traditional to early adopters, and others happy t
 
 ## Ideal target improvements
 
-It is also important to roll out changes incrementally. There is an old saying in the industry that any successful large IT system was previously a successful small IT system.
+It's also important to roll out changes incrementally. There is an old saying in the industry that any successful large IT system was previously a successful small IT system.
 
-Large-scale systems that are rolled out all at once have an abysmal record of success. Most fail, no matter how much support management has provided.
+Large-scale systems rolled out all at once have an abysmal record of success. Most fail, no matter how much support management has provided.
 
 When starting, it is essential to find an improvement goal that:
 
@@ -26,7 +26,7 @@ When starting, it is essential to find an improvement goal that:
  -  It is small enough to be achievable in a reasonable timeframe.
  -  Has benefits that are significant enough to be evident to the organization.
 
-It allows constant learning from rapid feedback and the ability to recover from mistakes quickly.
+It allows constant learning from rapid feedback and recovering from mistakes quickly.
 
 > [!NOTE]
-> The aim is to build a snowball effect where each new successful outcome adds to previous successful results. It will maximize the buy-in from all those affected.
+> The aim is to build a snowball effect where each new successful outcome adds to previous successful results. It will maximize the buy-in from all affected.

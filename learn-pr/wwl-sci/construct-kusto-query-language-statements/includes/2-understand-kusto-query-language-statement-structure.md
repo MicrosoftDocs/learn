@@ -17,6 +17,9 @@ Microsoft provides access to an environment to practice writing KQL statements. 
 
 You can access the demo environment at [https://aka.ms/lademo](https://aka.ms/lademo?azure-portal=true)
 
+> [!IMPORTANT]
+> The log analytics demo database is a dynamic environment.  The events recorded in the tables in that environment are continuously updating with different security events. This is similar to what a person would experience in a real-world security operations setting.  As a result, finite queries in this training may show no results depending on the state of the demo database at the time the query is run.  For example, a query on the *SecurityEvent* table for "discardEventID = 4688" within the last day may show no results if that particular event last took place three days ago.  Therefore, you may need to adjust variables in the scripts listed in this training ad hoc depending on what data is in the demo database at the time you run the script in order for the query to show results.  These script adjustments are similar to what you would perform in the real world and should help you learn how the specific parts of the script function.  
+
 [![Log Analytics Demo Environment](../media/log-analytics-demo-2.png)](../media/log-analytics-demo-2.png#lightbox)
 
 The Query window has three primary sections:

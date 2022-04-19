@@ -3,7 +3,7 @@ uid: learn.wwl.describe-capabilities-of-microsoft-identity-access-management-sol
 metadata:
   title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Identity and access management solutions'
   description: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Identity and access management solutions'
-  ms.date: 02/09/2022
+  ms.date: 04/13/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -21,24 +21,24 @@ summary: |
   :::column:::
     <img src="/learn/achievements/describe-the-concepts-of-security-compliance-and-identity.svg" width="101" alt="The trophy for the Describe the concepts of security, compliance, and identity learning path." role="presentation"></img>
     
-    [Part 1: Describe the concepts of security, compliance, and identity](/wwl-sci/describe-security-concepts-methodologies/index.yml)
+    [Part 1: Describe the concepts of security, compliance, and identity](../describe-concepts-of-security-compliance-identity/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft Identity and access management solutions learning path." role="presentation"></img>
     
-    [Part 2: Describe the capabilities of Microsoft Identity and access management solutions](/wwl-sci/describe-security-management-capabilities-of-azure/index.yml)
+    Part 2: Describe the capabilities of Microsoft Identity and access management solutions
   :::column-end:::
   :::row-end:::
   :::row:::
    :::column:::
     <img src="/learn/achievements/describe-the-capabilities-of-microsoft-security-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft security solutions learning path." role="presentation"></img>
     
-    [Part 3: Describe the capabilities of Microsoft security solutions](/wwl-sci/describe-basic-security-capabilities-azure/index.yml)
+    [Part 3: Describe the capabilities of Microsoft security solutions](../describe-capabilities-of-microsoft-security-solutions/index.yml)
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/describe-the-capabilities-of-microsoft-compliance-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft compliance solutions learning path." role="presentation"></img>
     
-    [Part 4: Describe the capabilities of Microsoft compliance solutions](/wwl-sci/describe-compliance-management-capabilities-microsoft/index.yml)
+    [Part 4: Describe the capabilities of Microsoft compliance solutions](../describe-capabilities-of-microsoft-compliance-solutions/index.yml)
   :::column-end:::
   :::row-end:::
 iconUrl: /learn/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg

@@ -3,7 +3,8 @@ uid: learn.aks-deploy-container-app.8-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 07/31/2020
+  ms.published: 07/31/2020
+  ms.date: 03/01/2022
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial

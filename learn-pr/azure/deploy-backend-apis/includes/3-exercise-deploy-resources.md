@@ -26,20 +26,20 @@ In order to complete the exercises, you'll need to configure your environment. I
     1. **SQL Server (mssql)**: This extension includes tools for querying SQL Server and Azure SQL resources.
     1. **Live Server**: This extension enables you to run web applications locally with ease.
 
-1. Sign in to GitHub in Visual Studio Code using your GitHub account. 
- 
+1. Sign in to GitHub in Visual Studio Code using your GitHub account.
+
     > [!NOTE]
     > If you do not have a GitHub account, [create one here](https://github.com/join).
 
-1. In a browser, sign in to GitHub with your GitHub account and navigate to the [Azure-Samples repository](https://github.com/Azure-Samples/serverless-full-stack-apps-azure-sql). 
- 
-1. In the top-right corner of your browser, select **Fork** to create your own copy the the repository. The label for the fork in the top left should now read **<yourID>/serverless-fullstack-apps-azure-sql**.
+1. In a browser, sign in to GitHub with your GitHub account and navigate to the [Azure-Samples repository](https://github.com/Azure-Samples/serverless-full-stack-apps-azure-sql).
+
+1. In the top-right corner of your browser, select **Fork** to create your own copy the the repository. The label for the fork in the top left should now read **\<yourID\>/serverless-fullstack-apps-azure-sql**.
 
 1. Below the toolbar, select the green **Code** button and copy the HTTPS Clone URL; for example, *`https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git`*.
 
-1. In Visual Studio Code, select **Source Control** > **...** > **Clone** (or select **View, Command Palette** and enter **Git:Clone**), paste the Git repository URL you copied in the previous step, and then select <kbd>Enter</>. 
-    
-1. In the file explorer dialog, select or create a local folder where you would like the repository to be copied to, and then select **Select Repository Location**.  Your forked repo of the Azure Samples is copied to your local folder. Visual Studio Code displays a notification that the repository was cloned. 
+1. In Visual Studio Code, select **Source Control** > **...** > **Clone** (or select **View, Command Palette** and enter **Git:Clone**), paste the Git repository URL you copied in the previous step, and then select <kbd>Enter</>.
+
+1. In the file explorer dialog, select or create a local folder where you would like the repository to be copied to, and then select **Select Repository Location**.  Your forked repo of the Azure Samples is copied to your local folder. Visual Studio Code displays a notification that the repository was cloned.
 
 1. In the resulting popup notification, select **Open**. Visual Studio displays the folder in your the Explorer pane of you Visual Studio Code session.
 
@@ -149,10 +149,6 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
 
-1. Edit the file **`azuresqldatabase.yml`**, and update the server-name `bus-server.database.windows.net` to the name of your Azure SQL Database logical server (for example, **bus-server123456.database.windows.net**).
-
-1. Save the file.
-
 1. Select the **Source Control** icon on the left-hand taskbar.
 
 1. In the *Message* box, enter "Enable database yaml" or some other message and select the **checkmark**.
@@ -168,7 +164,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     bash
     ```
 
-1. Copy the following code to a text file, update <server-name> with your server name and <password> with password. Then enter this in the Cloud Shell. This will start a sqlcmd session.
+1. Copy the following code to a text file, update \<server-name\> with your server name and \<password\> with password. Then enter this in the Cloud Shell. This will start a sqlcmd session.
 
     ```bash
     TERM=dumb

@@ -4,7 +4,7 @@ title: 'Exercise: Connect multi-region write account with the Azure Cosmos DB SQ
 metadata:
   title: 'Exercise: Connect multi-region write account with the Azure Cosmos DB SQL API SDK'
   description: "Exercise: Connect multi-region write account with the Azure Cosmos DB SQL API SDK"
-  ms.date: 12/09/2021
+  ms.date: 03/09/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

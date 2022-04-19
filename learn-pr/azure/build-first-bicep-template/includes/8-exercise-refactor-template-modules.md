@@ -1,4 +1,4 @@
-In this exercise, you'll update the Bicep template that you previously created so that it uses a module for the Azure App Service resources. Modules help to keep the intention of the main template clearer. You can reuse the App Service module in other templates if you choose to.
+In this exercise, you'll update the Bicep template you previously created so it uses a module for the Azure App Service resources. Modules help to keep the intention of the main template clearer. You can reuse the App Service module in other templates if you choose to.
 
 During the process, you'll:
 
@@ -44,7 +44,7 @@ Now that you have a complete module to deploy the App Service resources, you can
 
 1. Save the changes to the file.
 
-   This output is declared within a Bicep file that we'll use as a module, so it's going to be available only to the parent template. You also need to return the output to the person who's deploying the template.
+   This output is declared within a Bicep file we'll use as a module, so it's going to be available only to the parent template. You also need to return the output to the person who's deploying the template.
 
 1. Open the *main.bicep* file and add the following code at the bottom of the file:
 
@@ -100,9 +100,9 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/8-addmodule-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the two deployments listed and succeeded statuses." border="true":::
 
-1. Select the deployment called **main**, and then select **Deployment details** to expand the list of deployed resources. 
+1. Select the deployment called **main**, then select **Deployment details** to expand the list of deployed resources.
 
-    Notice that our module deployment appears in the list.  In fact, it appears twice, because we referenced it as an output too.
+    Notice that our module deployment appears in the list.
 
     :::image type="content" source="../media/8-addmodule-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one resource listed." border="true":::
 
@@ -110,7 +110,7 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/8-addmodule-outputs.png" alt-text="Screenshot of the Azure portal interface for the specific deployment's outputs." border="true":::
 
-1. Open a new browser tab and paste the host name that you just copied. You should see the default App Service welcome page. 
+1. Open a new browser tab and paste the host name that you just copied. You should see the default App Service welcome page.
 
      :::image type="content" source="../media/8-addmodule-appservice.png" alt-text="Screenshot of the default App Service welcome page." border="true":::
 

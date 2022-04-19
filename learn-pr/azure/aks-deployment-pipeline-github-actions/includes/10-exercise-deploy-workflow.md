@@ -24,57 +24,77 @@ Start by deploying the staging pipeline.
 
 1. In GitHub, go to your fork of the repository.
 
-1. Go to the **.github/workflows** directory in the repository, and then open the **build-latest.yml** file.
+1. Go to the `.github/workflows` directory in the repository, and then open the `build-staging.yml` file.
 
    The file should look like this example:
 
     ```yaml
+    name: Build and push the latest build to staging
+    
     on:
       push:
         branches: [ main ]
-
+    
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
-
+        runs-on: ubuntu-20.04
+    
         steps:
           - uses: actions/checkout@v2
-
-          - name: Build and push staging image
-            uses: docker/build-push-action@v1.1.1
+    
+          - name: Set up Buildx
+            uses: docker/setup-buildx-action@v1
+    
+          - name: Docker Login
+            uses: docker/login-action@v1
             with:
+              registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
-              registry: ${{ secrets.ACR_NAME }}
-              repository: contoso-website
-              tags: latest
+    
+          - name: Build and push staging images
+            uses: docker/build-push-action@v2
+            with:
+              context: .
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest
+              push: true   
     ```
 
 1. To add another job, below the `build_push_image` key, create a new key called `deploy`:
 
     ```yaml
+    name: Build and push the latest build to staging
+    
     on:
       push:
         branches: [ main ]
-
+    
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
-
+        runs-on: ubuntu-20.04
+    
         steps:
           - uses: actions/checkout@v2
-
-          - name: Build and push staging image
-            uses: docker/build-push-action@v1.1.1
+    
+          - name: Set up Buildx
+            uses: docker/setup-buildx-action@v1
+    
+          - name: Docker Login
+            uses: docker/login-action@v1
             with:
+              registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
-              registry: ${{ secrets.ACR_NAME }}
-              repository: contoso-website
-              tags: latest
-
+    
+          - name: Build and push staging images
+            uses: docker/build-push-action@v2
+            with:
+              context: .
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest
+              push: true
+      
       deploy:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         needs: build_push_image # Will wait for the execution of the previous job
     ```
 
@@ -84,25 +104,30 @@ Start by deploying the staging pipeline.
 
     ```yaml
       deploy:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         needs: build_push_image
-
-        - uses: actions/checkout@v2
+        
+        steps:
+          - uses: actions/checkout@v2
     ```
 
 ### Install Helm
 
 In this exercise, you use Helm version `v3.3.1`. Azure has a built action that downloads and installs Helm.
 
-1. Below the `runs-on` key, add a new `steps` key. Then, search for and then select **Helm tool installer**.
+1. Below the `runs-on` key, add a new `steps` key. Then, search for **Helm tool installer**. Select the first result published by **Azure**.
 
     :::image type="content" source="../media/10-helm-tool-installer.png" alt-text="Screenshot that shows the search results for the Helm installer action.":::
+
+    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
+
+    :::image type="content" source="../media/10-helm-tool-installer-copy.png" alt-text="Screenshot that shows the copy function after selecting the Helm installer action.":::
 
 1. Copy the YAML that appears, and then paste it below the `uses` key:
 
     ```yaml
       deploy:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         needs: build_push_image
 
         steps:
@@ -115,25 +140,29 @@ In this exercise, you use Helm version `v3.3.1`. Azure has a built action that d
               version: # default is latest
     ```
 
- 1. Rename the step name `Install Helm`, and then pin the `version` key to `v3.3.1`:
+1. Rename the step name `Install Helm`, and then pin the `version` key to `v3.3.1`:
 
      ```yaml
-        deploy:
-          runs-on: ubuntu-latest
-          needs: build_push_image
+      deploy:
+        runs-on: ubuntu-20.04
+        needs: build_push_image
 
-          steps:
-            - uses: actions/checkout@v2
+        steps:
+          - uses: actions/checkout@v2
 
-            - name: Install Helm
-              uses: Azure/setup-helm@v1
-              with:
-                version: v3.3.1
+          - name: Install Helm
+            uses: Azure/setup-helm@v1
+            with:
+              version: v3.3.1
       ```
 
-1. Sign in to your AKS cluster by using the Azure CLI through another action that Azure provides. In the search bar, enter **Set Context**. In the search results, select **Azure Kubernetes Set Context**.
+1. Sign in to your AKS cluster by using the Azure CLI through another action that Azure provides. In the search bar, enter **Set Context**. In the search results, select **Azure Kubernetes Set Context** published by **Azure**.
 
-    :::image type="content" source="../media/10-aks-set-context.png" alt-text="Screenshot that shows the results for a Set Context search.":::
+    :::image type="content" source="../media/10-azure-kubernetes-set-context.png" alt-text="Screenshot that shows the results for a Set Context search.":::
+
+    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
+
+    :::image type="content" source="../media/10-azure-kubernetes-set-context-copy.png" alt-text="Screenshot that shows the copy function after selecting the Azure Kubernetes set context action.":::
 
 1. Copy the YAML, and then paste it below the previous `Install Helm` step:
 
@@ -149,7 +178,7 @@ In this exercise, you use Helm version `v3.3.1`. Azure has a built action that d
       - name: Azure Kubernetes set context
         uses: Azure/aks-set-context@v1
         with:
-          # Azure credentials, i.e., output of `az ad sp create-for-rbac --role Contributor --sdk-auth`
+          # Azure credentials, i.e., output of `az ad sp create-for-rbac --scopes /subscriptions/<SUBSCRIPTION-ID> --role Contributor --sdk-auth`
           creds: # default is
           # Resource group name
           resource-group: # optional, default is
@@ -177,46 +206,54 @@ Next, you use an action that uses the Azure CLI to get the AKS credentials. Then
 
     ```yaml
     name: Build and push the latest build to staging
-
+    
     on:
       push:
         branches: [ main ]
-
+    
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
-
+        runs-on: ubuntu-20.04
+    
         steps:
           - uses: actions/checkout@v2
-
-          - name: Build and push staging image
-            uses: docker/build-push-action@v1.1.1
+    
+          - name: Set up Buildx
+            uses: docker/setup-buildx-action@v1
+    
+          - name: Docker Login
+            uses: docker/login-action@v1
             with:
+              registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
-              registry: ${{ secrets.ACR_NAME }}
-              repository: contoso-website
-              tags: latest
-
+    
+          - name: Build and push staging images
+            uses: docker/build-push-action@v2
+            with:
+              context: .
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest
+              push: true
+      
       deploy:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         needs: build_push_image
-
+        
         steps:
           - uses: actions/checkout@v2
-
+          
           - name: Install Helm
             uses: Azure/setup-helm@v1
             with:
               version: v3.3.1
-
+    
           - name: Get AKS Credentials
             uses: Azure/aks-set-context@v1
             with:
               creds: ${{ secrets.AZURE_CREDENTIALS }}
-              resource-group: <your-resource-group>
-              cluster-name: contoso-video
-    ```
+              resource-group: {resource-group}
+              cluster-name: contoso-video    
+      ```
 
 
 ### Create a secret
@@ -228,7 +265,7 @@ You've set the credential secret, but the secret isn't created yet. Let's create
 1. Create a new secret called `AZURE_CREDENTIALS`. The value of this secret will be the output of the following command, a JSON object:
 
     ```azurecli-interactive
-    az ad sp create-for-rbac --role Contributor --sdk-auth
+    az ad sp create-for-rbac --role Contributor --scopes /subscriptions/<SUBSCRIPTION-ID> --sdk-auth
     ```
 
 1. Copy the output and paste it in the secret value. Then, save the secret and close the tab.
@@ -250,7 +287,7 @@ Now, you have access to your cluster and you have Helm installed. The next step 
 
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
 
         steps:
           - uses: actions/checkout@v2
@@ -265,7 +302,7 @@ Now, you have access to your cluster and you have Helm installed. The next step 
               tags: latest
 
       deploy:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         needs: build_push_image
 
         steps:
@@ -281,7 +318,7 @@ Now, you have access to your cluster and you have Helm installed. The next step 
             with:
               creds: ${{ secrets.AZURE_CREDENTIALS }}
               # Resource Group Name
-              resource-group: mslearn-gh-pipelines-6667
+              resource-group: {resource-group}
               # AKS Cluster Name
               cluster-name: contoso-video
 
@@ -347,21 +384,21 @@ Now, you have access to your cluster and you have Helm installed. The next step 
 
     Save the secret and close the browser tab.
 
-1. To commit the changes, select the green **Start commit** button. Enter a description for the commit, and then select **Commit new file**:
+1. To commit the changes, select the **Start commit** button. Enter a description for the commit, and then select **Commit new file**:
 
     :::image type="content" source="../media/6-5-commit-staging.png" alt-text="Screenshot that shows the Start commit and Commit new file button in the Commit new file pane.":::
 
     The build starts running on the **Actions** tab.
 
-### Test the deployment
+### Test the staging deployment
 
 To test the staging deployment, in your browser, go to **contoso-staging.\<your-dns-name\>** and confirm that the website appears.
 
-## Create the production deploy
+## Create the production deployment
 
 With the staging workflow created, the next step is to create the production workflow. This step is simpler because you can copy the whole `deploy` job and just change its parameters.
 
-1. In the **Code** view on the GitHub website, go to the **.github/workflows** directory. Select the **build-production.yaml** file and edit it.
+1. In the **Code** view on the GitHub website, go to the `.github/workflows` directory. Select the `build-production.yaml` file and edit it.
 
 1. Copy the `deploy` step from the previous pipeline and paste it below the last line of the YAML file.
 
@@ -369,32 +406,42 @@ With the staging workflow created, the next step is to create the production wor
 
     ```yaml
     name: Build and push the tagged build to production
-
+    
     on:
       push:
         tags:
           - 'v*'
-
+    
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
-
+        runs-on: ubuntu-20.04
+    
         steps:
           - uses: actions/checkout@v2
-
-          - name: Build and Push production image
-            # You can pin to the exact commit or the version.
-            # uses: docker/build-push-action@ab83648e2e224cfeeab899e23b639660765c3a89
-            uses: docker/build-push-action@v1.1.1
+    
+          - name: Fetch latest version
+            id: fetch_version
+            run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
+    
+          - name: Set up Buildx
+            uses: docker/setup-buildx-action@v1
+    
+          - name: Docker Login
+            uses: docker/login-action@v1
             with:
-              username: ${{secrets.ACR_LOGIN}}
-              password: ${{secrets.ACR_PASSWORD}}
               registry: ${{ secrets.ACR_NAME }}
-              repository: contoso-website
-              tag_with_ref: true
+              username: ${{ secrets.ACR_LOGIN }}
+              password: ${{ secrets.ACR_PASSWORD }}
+    
+          - name: Build and push production images
+            uses: docker/build-push-action@v2
+            with:
+              context: .
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
+              push: true
 
       deploy:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         needs: build_push_image
 
         steps:
@@ -410,7 +457,7 @@ With the staging workflow created, the next step is to create the production wor
             with:
               creds: ${{ secrets.AZURE_CREDENTIALS }}
               # Resource group name
-              resource-group: mslearn-gh-pipelines-6667
+              resource-group: {resource-group}
               # AKS cluster name
               cluster-name: contoso-video
 
@@ -442,32 +489,42 @@ With the staging workflow created, the next step is to create the production wor
 
     ```yaml
     name: Build and push the tagged build to production
-
+    
     on:
       push:
         tags:
           - 'v*'
-
+    
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
-
+        runs-on: ubuntu-20.04
+    
         steps:
           - uses: actions/checkout@v2
-
-          - name: Build and Push production image
-            # You can pin to the exact commit or the version.
-            # uses: docker/build-push-action@ab83648e2e224cfeeab899e23b639660765c3a89
-            uses: docker/build-push-action@v1.1.1
+    
+          - name: Fetch latest version
+            id: fetch_version
+            run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
+    
+          - name: Set up Buildx
+            uses: docker/setup-buildx-action@v1
+    
+          - name: Docker Login
+            uses: docker/login-action@v1
             with:
-              username: ${{secrets.ACR_LOGIN}}
-              password: ${{secrets.ACR_PASSWORD}}
               registry: ${{ secrets.ACR_NAME }}
-              repository: contoso-website
-              tag_with_ref: true
+              username: ${{ secrets.ACR_LOGIN }}
+              password: ${{ secrets.ACR_PASSWORD }}
+    
+          - name: Build and push production images
+            uses: docker/build-push-action@v2
+            with:
+              context: .
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
+              push: true
 
       deploy:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
         needs: build_push_image
 
         steps:
@@ -483,7 +540,7 @@ With the staging workflow created, the next step is to create the production wor
             with:
               creds: ${{ secrets.AZURE_CREDENTIALS }}
               # Resource group name
-              resource-group: mslearn-gh-pipelines-6667
+              resource-group: {resource-group}
               # AKS cluster name
               cluster-name: contoso-video
 
@@ -502,16 +559,18 @@ With the staging workflow created, the next step is to create the production wor
                 --set image.tag=${GITHUB_REF##*/}
     ```
 
-1. To commit the changes, select the green **Start commit** button. Enter a description for the commit, and then select **Commit new file**.
+1. To commit the changes, select the **Start commit** button. Enter a description for the commit, and then select **Commit new file**.
 
 1. In Cloud Shell, run `git pull` to fetch the latest changes. Then, run the following command to tag and push the changes:
 
     ```bash
-    git tag -a v1.0.1 -m'Creating first production deployment' && git push --tags
+    git tag -a v2.0.1 -m 'Creating first production deployment' && git push --tags
     ```
+
+1. When prompted, provide your GitHub username, and the PAT created previously as the password.
 
 1. Open the **Actions** tab and see the running process.
 
-### Test the deployment
+### Test the production deployment
 
 To test the production deployment, go to **contoso-production.\<your-dns-name\>** in your browser and confirm that the website appears.

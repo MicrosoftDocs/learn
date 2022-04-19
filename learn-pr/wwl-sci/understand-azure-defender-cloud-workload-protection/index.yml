@@ -3,7 +3,7 @@ uid: learn.wwl.understand-azure-defender-cloud-workload-protection
 metadata:
   title: Explain cloud workload protections in Microsoft Defender for Cloud
   description: "Explain cloud workload protections in Microsoft Defender for Cloud"
-  ms.date: 11/19/2021
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -36,7 +36,6 @@ units:
 - learn.wwl.understand-azure-defender-cloud-workload-protection.for-key-vault
 - learn.wwl.understand-azure-defender-cloud-workload-protection.for-resource-manager
 - learn.wwl.understand-azure-defender-cloud-workload-protection.for-dns
-- learn.wwl.understand-azure-defender-cloud-workload-protection.for-kubernetes
 - learn.wwl.understand-azure-defender-cloud-workload-protection.for-container-registries
 - learn.wwl.understand-azure-defender-cloud-workload-protection.additional-protection
 - learn.wwl.understand-azure-defender-cloud-workload-protection.knowledge-check

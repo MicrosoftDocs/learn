@@ -31,6 +31,9 @@ roles:
 - solution-architect
 products:
 - azure
+- azure-kubernetes-service
+- azure-arc
+- azure-monitor
 units:
 - learn.azure.intro-to-arc-enabled-kubernetes.1-introduction
 - learn.azure.intro-to-arc-enabled-kubernetes.2-kubernetes-arc-overview

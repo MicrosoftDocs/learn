@@ -1,4 +1,4 @@
-Now that we have created a function app, let's look at how to build, configure, and execute a function.
+Now that we've created a function app, let's look at how to build, configure, and execute a function.
 
 ### Triggers
 
@@ -19,7 +19,7 @@ Azure supports triggers for the following services.
 
 ### Bindings
 
-A binding is a declarative way to connect data and services to your function. Bindings interact with various data sources, which means you don't have to write the code in your function to connect to data sources and manage connections--the platform takes care of that complexity for you as part of the binding code. Each binding has a direction--your code reads data from *input* bindings, and writes data to *output* bindings. Each function can have zero or more bindings to manage the input and output data processed by the function.
+A binding is a declarative way to connect data and services to your function. Bindings interact with various data sources, which means you don't have to write the code in your function to connect to data sources and manage connections. The platform takes care of that complexity for you as part of the binding code. Each binding has a direction--your code reads data from *input* bindings, and writes data to *output* bindings. Each function can have zero or more bindings to manage the input and output data processed by the function.
 
 A trigger is a type of input binding that has the ability to initiate execution of some code.
 
@@ -68,7 +68,7 @@ Azure provides several predefined function templates for common scenarios:
 
 ### Function templates
 
-When you create your first function in the Azure **Create function** pane, you can select a predefined trigger for your function. Based on your selections, Azure generates default code and configuration information, such creating an event log entry when input data is received.
+When you create your first function in the Azure **Create function** pane, you can select a predefined trigger for your function. Based on your selections, Azure generates default code and configuration information, such as creating an event log entry when input data is received.
 
 Selecting a template from the **Add function** pane provides easy access to the most common development environments, triggers, dependencies. When you create a function in the Azure portal, you can choose from more than 20 templates. Once created you can further customize the code.
 
@@ -93,7 +93,7 @@ After you've created a function, you'll want to test it. There are two approache
 
 ### Run function manually
 
-You can start a function by manually triggering the configured trigger. For instance, if you are using an HTTP trigger, you can use a tool, such as Postman or cURL, to initiate an HTTP request to your function endpoint URL, which is available from the function definition (**Get function URL**).
+You can start a function by manually triggering the configured trigger. For instance, if you're using an HTTP trigger, you can use a tool, such as Postman or cURL, to initiate an HTTP request to your function endpoint URL, which is available from the function definition (**Get function URL**).
 
 ### Test in the Azure portal
 
@@ -109,25 +109,25 @@ The ability to monitor your functions is critical during development and in prod
 
 After you've enabled Application Insights in the Azure portal, you can add logging statements to your function for debugging. The called methods for each language are passed a "logging" object, which can be used to add log information to the Logs pane in the **Code + Test** pane when running a test.
 
-The following code snippets show how to create a log message: 
+The following code snippets show how to create a log message:
 
-  - In JavaScript, the `context` object is passed to the handler.
+- In JavaScript, the `context` object is passed to the handler.
 
-    ```javascript
-    context.log('Enter your logging statement here');
-    ```
+  ```javascript
+  context.log('Enter your logging statement here');
+  ```
 
-  - In C#, `log.LogInformation` method, the `log` object is passed to the C# method processing the function.
+- In C#, `log.LogInformation` method, the `log` object is passed to the C# method processing the function.
 
-    ```csharp
-    log.LogInformation("Enter your logging statement here");
-    ```
+  ```csharp
+  log.LogInformation("Enter your logging statement here");
+   ```
 
-  - In PowerShell, use `Write-Host` cmdlet to write to the log:
+- In PowerShell, use `Write-Host` cmdlet to write to the log:
 
-    ```powershell
-    Write-Host "Enter your logging statement here"
-    ```
+   ```powershell
+  Write-Host "Enter your logging statement here"
+   ```
 
 ### Errors, failures, warnings, and anomalies
 

@@ -10,6 +10,7 @@ metadata:
   ms.custom: team=cloud_advocates
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.contributors: orthomas-01082022
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

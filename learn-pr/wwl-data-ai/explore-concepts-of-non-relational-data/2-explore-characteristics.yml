@@ -4,12 +4,13 @@ title: Explore characteristics of non-relational data
 metadata:
   title: Explore characteristics of non-relational data
   description: "Explore characteristics of non-relational data"
-  ms.date: 04/12/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-explore-characteristics.md)]

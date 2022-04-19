@@ -1,18 +1,18 @@
-So far, you've seen how adding parameters and flow-control constructs can make your scripts flexible and safer to use. But sometimes you'll get errors in your scripts. You need a way to handle those errors. 
+So far, you've seen how adding parameters and flow-control constructs can make your scripts flexible and safer to use. But sometimes, you'll get errors in your scripts. You need a way to handle those errors. 
 
 Here are some factors to consider:
 
-- **How to handle the error**. Sometimes you get errors you can recover from. Sometimes it's better to stop the script. It's important to think about the kinds of errors that can happen and how to best manage them.
+- **How to handle the error**. Sometimes you get errors you can recover from, and sometimes it's better to stop the script. It's important to think about the kinds of errors that can happen and how to best manage them.
 
 - **How severe the error is**. There are various kinds of error messages. Some are more like warnings to the user that something isn't OK. Some are more severe, and the user really needs to pay attention. Your error-handling approach depends on the type of error. The approach could be anything from presenting a message to raising the severity level and potentially stopping the script.
 
 ## Errors
 
- A cmdlet or function, for example, might generate many types of errors. We recommend that you write code to manage each type of error that might occur and that you manage them appropriately, given the type. For example, say you're trying to write to a file. You might get various types of errors, depending on what's wrong. If you're not allowed to write to the file, you might get one type of error. If the file doesn't exist, you might get another type of error, and so on.
+ A cmdlet or function, for example, might generate many types of errors. We recommend that you write code to manage each type of error that might occur, and that you manage them appropriately given the type. For example, say you're trying to write to a file. You might get various types of errors depending on what's wrong. If you're not allowed to write to the file, you might get one type of error. If the file doesn't exist, you might get another type of error, and so on.
 
 There are two types of errors you can get when you run PowerShell:
 
-- **Terminating error**. An error of this type will stop execution on the row where the error occurred. You can handle this kind of error by using either `Try-Catch` or `Trap`. If the error isn't handled, the script will quit at that point and no statements will run.
+- **Terminating error**. An error of this type will stop execution on the row where the error occurred. You can handle this kind of error using either `Try-Catch` or `Trap`. If the error isn't handled, the script will quit at that point and no statements will run.
 
    > [!NOTE]
    > The `Trap` construct is outside the scope of this module. If you're interested, see [About Trap](/powershell/module/microsoft.powershell.core/about/about_trap?preserve-view=true&view=powershell-7.1).
@@ -25,7 +25,7 @@ You can think of a terminating error as an unexpected error. These errors are se
 
 There are three related constructs that can help you manage this type of error:
 
-- `Try`. You use a `Try` block to encapsulate one or more statements. You place the code that you want to run, for example, code that writes to a data source, inside braces. A `Try` must have at least one `Catch` or `Finally` block. Here's what it looks like:
+- `Try`. You'll use a `Try` block to encapsulate one or more statements. You'll place the code that you want to run &mdash; for example, code that writes to a data source &mdash; inside braces. A `Try` must have at least one `Catch` or `Finally` block. Here's how it looks:
 
 
    ```powershell
@@ -35,7 +35,7 @@ There are three related constructs that can help you manage this type of error:
    }
    ```
 
-- `Catch`. You use this keyword to _catch_ or _manage_ an error when it occurs. You then inspect the exception object to understand what type of error occurred, where it occurred, and whether the script can recover from it. A `Catch` follows immediately after a `Try`. You can include more than one `Catch`. You can include one for each type of error if you want. Here's an example: 
+- `Catch`. You'll use this keyword to *catch* or *manage* an error when it occurs. You'll then inspect the exception object to understand what type of error occurred, where it occurred, and whether the script can recover. A `Catch` follows immediately after a `Try`. You can include more than one `Catch` &mdash; one for each type of error &mdash; if you want. Here's an example:
 
    ```powershell
    Try {
@@ -65,7 +65,7 @@ There are three related constructs that can help you manage this type of error:
 
 ### Inspecting errors
 
-We've talked about exception objects in the context of catching errors. You use these objects to inspect what went wrong and take appropriate measures. An exception object contains:
+We've talked about exception objects in the context of catching errors. You can use these objects to inspect what went wrong and take appropriate measures. An exception object contains:
 
 - **A message**. The message tells you in a few words what went wrong.
 
@@ -99,9 +99,9 @@ In some situations, you might want to cause an error:
    }
    ```
 
-   By using the `-ErrorAction` parameter and the value `Stop`, you can cause an error that can be caught by `Try/Catch`.
+   By using the `-ErrorAction` parameter and the value `Stop`, you can cause an error that `Try/Catch` can catch.
 
-- **Business rules**. You might have a situation where the code doesn't actually stop responding, but for business reasons you want it to. Imagine you're sanitizing input and you check whether a parameter is a path. A business requirement might be that only certain paths are allowed or that the path needs to look a certain way. If the checks fail, it makes sense to _throw_ an error. In a situation like this one, you can use a `Throw` block:
+- **Business rules**. You might have a situation where the code doesn't actually stop responding, but you want it to for business reasons. Imagine you're sanitizing input and you check whether a parameter is a path. A business requirement might specify only certain paths are allowed, or the path needs to look a certain way. If the checks fail, it makes sense to *throw* an error. In a situation like this, you can use a `Throw` block:
 
    ```powershell
    Try {

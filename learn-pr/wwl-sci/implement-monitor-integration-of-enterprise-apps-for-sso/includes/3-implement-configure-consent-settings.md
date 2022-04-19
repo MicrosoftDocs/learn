@@ -21,8 +21,7 @@ By choosing which app consent policies apply for all users, you can set limits o
 
 - **Custom app consent policy** – For even more options over the conditions governing when users consent, you can [create custom app consent policies](/azure/active-directory/manage-apps/manage-app-consent-policies) and configure those to apply for user consent.
 
-> [!div class="mx-imgBorder"]
->![User consent settings.](../media/set-for-all-users.png)
+![User consent settings.](../media/set-for-all-users.png)
 
 > [!TIP]
 > [Enable the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) to allow users to request an administrator's review and approval of an application that the user is not allowed to consent to—for example, when user consent has been disabled or when an application is requesting permissions that the user is not allowed to grant.
@@ -33,7 +32,7 @@ Risk-based step-up consent helps reduce user exposure to malicious apps that mak
 
 When a risky consent request is detected, the consent prompt will display a message indicating that admin approval is needed. If the admin consent request workflow is enabled, the user can send the request to an administrator for further review directly from the consent prompt. If it is not enabled, the following message will be displayed:
 
-- **AADSTS90094:** <clientAppDisplayName> needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
+- **AADSTS90094:** \<clientAppDisplayName\> needs permission to access resources in your organization that only an admin can grant. Ask an admin to grant permission to this app before you can use it.
 
 In this case, an audit event will also be logged with a Category of **ApplicationManagement**, an Activity Type of **Consent to application**, and a Status Reason of **Risky application detected.**
 

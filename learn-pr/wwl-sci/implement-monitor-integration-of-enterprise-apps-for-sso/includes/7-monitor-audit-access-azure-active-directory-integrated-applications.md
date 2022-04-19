@@ -14,8 +14,7 @@ With Azure AD reports, you can get the information needed to determine how your 
 
 1. From the **Activity** section, select **Usage & insights** to open the report.
 
-> [!div class="mx-imgBorder"]
->![Screenshot shows Usage & insights selected from the Activity section.](../media/main-menu.png)
+![Screenshot shows Usage & insights selected from the Activity section.](../media/main-menu.png)
 
 ## Use the report
 
@@ -27,8 +26,7 @@ You can also set the focus on a specific application. Select **view sign-in acti
 
 When you select a day in the application usage graph, you get a detailed list of the sign-in activities for the application.
 
-> [!div class="mx-imgBorder"]
->[ ![Screenshot shows Usage & insights for Application activity where you can select a range and view sign-in activity for different apps.](../media/usage-and-insights-report.png) ](../media/usage-and-insights-report.png#lightbox)
+[ ![Screenshot shows Usage & insights for Application activity where you can select a range and view sign-in activity for different apps.](../media/usage-and-insights-report.png) ](../media/usage-and-insights-report.png#lightbox)
 
 ## Audit logs
 

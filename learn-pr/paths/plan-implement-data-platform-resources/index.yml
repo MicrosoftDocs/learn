@@ -31,6 +31,5 @@ modules:
 - learn.wwl.deploy-sql-server-virtual-machine
 - learn.wwl.deploy-azure-sql-database
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure
-- learn.wwl.evaluate-strategies-for-migrating-sql-databases-to-azure
 trophy:
   uid: learn.wwl.plan-implement-data-platform-resources.trophy

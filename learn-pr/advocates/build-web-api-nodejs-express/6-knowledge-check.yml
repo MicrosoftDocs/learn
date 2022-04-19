@@ -45,16 +45,16 @@ quiz:
           explanation: "These method calls are valid ways of sending something as JSON but are considered more advanced. The res.json() helper method is by far the easiest way."
     - content: "How would set up Express to handle a post request with JSON data?"
       choices:
-        - content: "Call app.use(bodyParser.json()) at the top, register a route by using the post method as in app.post(<route>, () =>{}), read from req.body"
+        - content: "Call app.use(bodyParser.json()) at the top, register a route by using the post method as in app.post(`<route>`, () =>{}), read from req.body"
           isCorrect: true
           explanation: Correct, that's how you would configure `bodyParser` to interpret the incoming data as JSON.
-        - content: "Register a route by using the post method as in app.post(<route>, () =>{}), read from req.body"
+        - content: "Register a route by using the post method as in app.post(`<route>`, () =>{}), read from req.body"
           isCorrect: false
           explanation: "You need to configure a body paring middleware or the posted data won't be available on req.body."
-        - content: "Configure body parsing middleware, register a route by using the post method as in app.post(<route>, () =>{}), read from req.data"
+        - content: "Configure body parsing middleware, register a route by using the post method as in app.post(`<route>`, () =>{}), read from req.data"
           isCorrect: false
           explanation: "The posted data is available on req.body, not req.data."
-        - content: "Call app.use(bodyParser.urlencoded({ extended: false })) at the top, register a route by using the post method as in app.post(<route>, () =>{}), read from req.body"
+        - content: "Call app.use(bodyParser.urlencoded({ extended: false })) at the top, register a route by using the post method as in app.post(`<route>`, () =>{}), read from req.body"
           isCorrect: false
           explanation: "The configuration at the top is wrong. That configuration will instruct it to receive posted data from a form that is URL encoded. It needs to be app.use(bodyParser.json())."
   

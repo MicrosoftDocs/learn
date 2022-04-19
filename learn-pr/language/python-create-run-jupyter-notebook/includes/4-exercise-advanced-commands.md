@@ -47,7 +47,7 @@ Next, you want to show the time that your ship needs to take to get up to a good
    ```md
    ## Ship's velocity
 
-   Show the seconds needed needed to get from 0 to 60 meters per second, given the ship's acceleration in meters per second.
+   Show the seconds needed to get from 0 to 60 meters per second, given the ship's acceleration in meters per second.
    ```
 
 1. Add a code block for the equation:

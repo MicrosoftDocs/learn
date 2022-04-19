@@ -4,13 +4,12 @@ title: Configure IoT Hub monitoring
 metadata:
   title: Configure IoT Hub monitoring
   description: "Configure IoT Hub monitoring"
-  ms.date: 11/24/2021
+  ms.date: 03/11/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labId: 110077
 labModal: true
 durationInMinutes: 60

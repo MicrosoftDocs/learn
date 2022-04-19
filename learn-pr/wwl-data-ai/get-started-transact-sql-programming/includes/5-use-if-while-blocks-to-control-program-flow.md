@@ -59,7 +59,7 @@ END;
 
 ## Understand looping using WHILE statements
 
-The WHILE statement is used to execute code in a loop based on a predicate. Like the IF statement, the WHILE statement determines whether the following statement or block (if BEGIN...END is used) executes. The loop ends when the predicate evaluates to FALSE or UNKNOWN. Typically, you control the loop with a variable tested by the predicate and manipulated in the body of the loop itself.
+The WHILE statement is used to execute code in a loop based on a predicate. Like the IF statement, the WHILE statement determines whether the following statement or block (if BEGIN...END is used) executes. The loop continues to execute as long as the condition evaluates to TRUE. Typically, you control the loop with a variable tested by the predicate and manipulated in the body of the loop itself..
 
 The following example uses the @empid variable in the predicate and changes its value in the BEGIN...END block:
 
@@ -74,7 +74,5 @@ WHILE @empid <=5
    END;
 ```
 
-> [!NOTE]
-> Remember that if SELECT returns UNKNOWN, the variable retains its current value. If there is no employee with an ID equal to @empid, the variable doesn't change from one iteration to another. This would lead to an infinite loop.
 
 For extra options within a WHILE loop, you can use the CONTINUE and BREAK keywords to control the flow.

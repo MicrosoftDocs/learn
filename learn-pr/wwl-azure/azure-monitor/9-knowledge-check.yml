@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/04/2022
+  ms.date: 02/17/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "Events and Alerts"
       isCorrect: false
-      explanation: "Events and alerts are what Azure Monitor is looking for and how you are notified."
+      explanation: "Events and alerts are what Azure Monitor is looking for and how you're notified."
     - content: "Logs and Metrics"
       isCorrect: true
       explanation: "Logs, Metrics. All data collected by Azure Monitor fits into one of two fundamental types, metrics and logs. Metrics are numerical values that describe some aspect of a system at a point in time. They are lightweight and capable of supporting near real-time scenarios. Logs contain different kinds of data organized into records with different sets of properties for each type. Telemetry such as events and traces are stored as logs in addition to performance data so that it can all be combined for analysis."

@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.troubleshoot-platform-service-issues
+metadata:
+  title: Troubleshoot platform-as-a-service issues in Microsoft Azure
+  description: "To benefit from Azure PaaS services, you must be able to troubleshoot connectivity issues quickly and effectively both from an on-premises user to an Azure PaaS service and between PaaS services. AZ720 AZ-720 az-720 networking"
+  ms.date: 04/05/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot platform-as-a-service issues in Microsoft Azure
+summary: To benefit from Azure PaaS services, you must be able to troubleshoot connectivity issues quickly and effectively both from an on-premises user to an Azure PaaS service and between PaaS services.
+abstract: |
+  By the end of this module, you will be able to:
+  - Troubleshoot PaaS services
+  - Troubleshoot PaaS integration issues
+prerequisites: |
+  - Demonstrate an understanding of the OSI model
+  - Demonstrate an understanding of PowerShell
+  - Demonstrate an understanding of Azure CLI
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- network-engineer
+- support-engineer
+products:
+- azure
+- azure-active-directory
+- azure-active-directory-domain
+- azure-cdn
+- azure-firewall
+- azure-firewall-manager
+- azure-private-link
+- azure-virtual-machines
+- azure-virtual-network
+units:
+- learn.wwl.troubleshoot-platform-service-issues.introduction
+- learn.wwl.troubleshoot-platform-service-issues.troubleshoot-paas-services
+- learn.wwl.troubleshoot-platform-service-issues.troubleshoot-paas-integration-issues
+- learn.wwl.troubleshoot-platform-service-issues.troubleshoot-cdn
+- learn.wwl.troubleshoot-platform-service-issues.troubleshoot-vm-paas-connections
+- learn.wwl.troubleshoot-platform-service-issues.troubleshoot-paas-vn-integration
+- learn.wwl.troubleshoot-platform-service-issues.exercise-troubleshoot-paas-connection
+- learn.wwl.troubleshoot-platform-service-issues.exercise-resolve-paas-connection
+- learn.wwl.troubleshoot-platform-service-issues.knowledge-check
+- learn.wwl.troubleshoot-platform-service-issues.summary
+badge:
+  uid: learn.wwl.troubleshoot-platform-as-service-issues.badge

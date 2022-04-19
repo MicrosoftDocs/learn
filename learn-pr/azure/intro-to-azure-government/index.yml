@@ -28,6 +28,7 @@ roles:
 - administrator
 products: 
 - azure
+- azure-sovereign-us
 units:
 - learn.intro-to-azure-government.1-introduction
 - learn.intro-to-azure-government.2-what-is-azure-government

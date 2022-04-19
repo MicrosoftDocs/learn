@@ -3,7 +3,7 @@ uid: learn.wwl.manage-security
 metadata:
   title: Manage security for Azure Virtual Desktop
   description: "Manage security for Azure Virtual Desktop"
-  ms.date: 12/10/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *  Manage security by using Azure Security Center.
   *  Understand Microsoft Defender Antivirus for session hosts.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-manage-security.svg
 levels:
 - intermediate
 roles:

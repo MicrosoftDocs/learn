@@ -1,8 +1,15 @@
-Our goal was to outline some core concepts relating to articulating and testing the assumptions on which your startup is based so that you can validate your core assumptions before investing time and money in building a product.
+This module outlined core concepts that relate to articulating and testing the assumptions on which your startup is based. This information can help you validate your core assumptions before investing time and money in building a product.
 
-We used the Value Proposition Canvas to capture the jobs your customer needs done, the pains they want removed, and the gains they'd like to achieve. We used the Lean Canvas to capture assumptions relating to your business model and then used design thinking principles and a simple Assumptions Matrix to prioritize which of these assumptions should be tested.
+Here's a summary of what you learned:
 
-We created a basic customer persona to represent your target customer and looked at various ways to test your most important assumptions, including customer interviews and experiments ranging from low-fidelity to high-fidelity.
+- You're engaging in business model innovation, so don't even think about writing a 50-page business plan.
+- The value that a product creates for a company's customers can be described with reference to the jobs that it helps customers get done, the pains that it takes away, and the gains that it creates.
+- The Value Proposition Canvas is a useful tool for designing a value proposition. It helps you engage with customers to understand their jobs to be done, pains, and gains, and then create a product that accurately addresses these elements.
+- The Lean Canvas can help you capture assumptions about your business model.
+- The only way to know whether your assumptions are correct is to test them with customers.
+- Use an assumptions matrix to prioritize testing your assumptions based on how critical each is to the success of the business and how much you already know.
+- Create a basic customer persona to help you understand the needs of your target customers.
+- There are many ways to test your assumptions. Interviewing potential customers is a good place to start. Aim to run multiple low-fidelity experiments before you commit to building your product.
 
 ## Useful resources
 
@@ -10,11 +17,11 @@ Consider these additional resources.
 
 ### Books
 
-We'd recommend these books for additional guidance on testing assumptions and interviewing customers:
+These books can give you more guidance on testing assumptions and interviewing customers:
 
 - *Testing Business Ideas* by David Bland and Alex Osterwalder
 - *Lean Customer Development: Build Products Your Customers Will Buy* by Cindy Alvarez
-- *The Four Steps to the Epiphany: Successful Strategies For Products That Win* by Steve Blank
+- *The Four Steps to the Epiphany: Successful Strategies for Products That Win* by Steve Blank
 
 ### Tools
 

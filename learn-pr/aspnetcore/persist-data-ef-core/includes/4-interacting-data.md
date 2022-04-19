@@ -293,7 +293,7 @@ You've coded the CRUD operations for `PizzaService`, but it will be easier to te
 
     - The `DbIntializer.Initialize` method is called, passing the `PizzaContext` as a parameter.
 
-1. In *Program.cs*, replace `// Add the CreateDbInNotExists method call` comment with the following code:
+1. In *Program.cs*, replace `// Add the CreateDbIfNotExists method call` comment with the following code:
 
     ```csharp
     app.CreateDbIfNotExists();

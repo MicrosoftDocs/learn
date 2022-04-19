@@ -7,7 +7,7 @@ Before you start, create a virtual environment and place yourself in it. By doin
 1. Run `venv env`, to create a virtual environment called *env*:
 
    ```bash
-   python3 -m venv env
+   python -m venv env
    ```
 
    You should now see a new _env_ subdirectory.
@@ -19,7 +19,7 @@ Before you start, create a virtual environment and place yourself in it. By doin
    source env/bin/activate
 
    # On Windows
-   env\Scripts\activate.bat
+   source env/Scripts/activate
    ```
 
    Your command prompt should start with `(env)` to indicate the name of the virtual environment.
@@ -33,8 +33,8 @@ You have access to some source code and a _requirements.txt_ file. The .txt file
     ```bash
     mkdir src
     cd src
-    touch app.py # on Windows, type nul > app.py
-    touch requirements.txt # on Windows, type nul > requirements.txt 
+    touch app.py 
+    touch requirements.txt
     ```
 
     These are your files:
@@ -42,7 +42,7 @@ You have access to some source code and a _requirements.txt_ file. The .txt file
     ```output
     src/
       app.py
-    requirements.txt
+      requirements.txt
     ```
 
 1. Add the following content to _app.py_:

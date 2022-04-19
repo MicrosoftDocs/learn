@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud
 metadata:
   title: Build applications on the cloud
   description: Carnegie Mellon University's Cloud Developer course. Learn how developers write programs that run on the cloud, including how to deploy, be fault-tolerant, load balance, scale, and deal with latency.
-  ms.date: 02/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -30,6 +30,7 @@ prerequisites: |
   - Know how datacenters are set up, powered, and provisioned
   - Understand how cloud resources are provisioned and metered
 iconUrl: /learn/achievements/cmu-cloud-developer/build-applications-on-the-cloud.svg
+hidden: true
 levels:
 - beginner
 roles:

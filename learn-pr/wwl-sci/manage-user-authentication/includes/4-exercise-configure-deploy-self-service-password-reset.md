@@ -7,7 +7,7 @@ There are many benefits for the user and the organization to enabling self-servi
  -  Users can reset their own password - no productivity loss
  -  No admin or IT intervention - enables IT to focus on bigger issues
 
-Note that a user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business license is required.
+Note that a user has to be enrolled into self-service password reset, and that an Azure AD Premium P1 or P2 license or a Microsoft 365 Business Premium license is required.
 
 ## Enable self-service password reset
 
@@ -119,7 +119,7 @@ Enable SSPR for the group.
 
 Now that the SSPR configuration is complete, register a mobile phone number for the user you created.
 
-1.  Open a different browser or open an InPrivate or Incognito browser session and then browse to [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup). This is to ensure you well be prompted for user authentication.
+1.  Open a different browser or open an InPrivate or Incognito browser session and then browse to [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup). This is to ensure you will be prompted for user authentication.
 2.  Sign in as **julieta@*organization-domain-name*.onmicrosoft.com** with the password that you noted earlier. Replace the organization-domain-name with your domain name.
 3.  When prompted to update your password, enter a new password of your choice. Be sure to record the new password.
 4.  In the **More information required** dialog box, select **Next**.

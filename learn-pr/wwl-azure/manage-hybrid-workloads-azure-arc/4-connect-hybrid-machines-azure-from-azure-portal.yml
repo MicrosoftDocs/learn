@@ -4,7 +4,7 @@ title: Connect hybrid machines to Azure from the Azure portal
 metadata:
   title: Connect hybrid machines to Azure from the Azure portal
   description: "Connect hybrid machines to Azure from the Azure portal"
-  ms.date: 12/13/2021
+  ms.date: 04/12/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ durationInMinutes: 4
 content: |
   [!include[](includes/4-connect-hybrid-machines-azure-from-azure-portal.md)]
 quiz:
-  title: "Quick review"
+  title: "Check your knowledge"
   questions:
   - content: "In the video, at time index 2:05, what does the script do in the Azure onboarding process?"
     choices:

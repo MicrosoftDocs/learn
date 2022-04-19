@@ -4,20 +4,19 @@ In this exercise, you'll learn how to use virtual environments as a way to not a
 
 Create a virtual environment by using `venv`.
 
-1. Run `python3 -m venv env` in your terminal:
+1. Open a new Bash window and run `python -m venv env`:
 
    ```bash
-   python3 -m venv env
+   python -m venv env
    ```
 
-   You now have an *env* directory created in your terminal.   
+   You now have an *env* directory created in your terminal.
 
 1. Run `source env/bin/activate` to activate the virtual environment:
 
    ```bash
-    source env/bin/activate
     # Windows
-    env\bin\activate
+    source env/Scripts/activate
 
     # Linux, WSL or macOS
     source env/bin/activate

@@ -3,7 +3,7 @@ uid: learn.wwl.design-processes-to-automate-application-analytics
 metadata:
   title: Design processes to automate application analytics
   description: "Design processes to automate application analytics"
-  ms.date: 11/29/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   *   Implement monitoring tools and technologies
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/7-design-processes-to-automate-application-analytics.svg
 levels:
 - advanced
 roles:

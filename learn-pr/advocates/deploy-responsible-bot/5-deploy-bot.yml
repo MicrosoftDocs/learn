@@ -9,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-advocates
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, devx-track-azurecli
 durationInMinutes: 6
 content: |
   [!include[](includes/5-deploy-bot.md)]

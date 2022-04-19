@@ -59,7 +59,7 @@ In this exercise, you'll update your function to parse information from the GitH
 
 1. Return to your GitHub account.
 
-1. Select the repository you are using for this module.
+1. Select the repository you're using for this module.
 
 1. In the top menu bar, select **Settings**. The **Settings** pane appears.
 

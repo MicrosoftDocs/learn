@@ -19,11 +19,12 @@ prerequisites: |
   - Knowledge of networking, compute, and database systems
 iconUrl: /learn/achievements/design-your-migration-to-azure.svg
 levels:
-- intermediate
+- beginner
 roles:
 - solution-architect
 products:
 - azure
+- azure-migrate
 units:
 - learn.design-your-migration-to-azure.1-introduction
 - learn.design-your-migration-to-azure.2-plan-your-azure-migration

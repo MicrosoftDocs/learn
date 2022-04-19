@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-iot-solution-architecture
 metadata:
   title: Examine the architecture of an IoT solution
   description: "This module introduces you to the architecture, subsystems, and workflows of an Azure IoT solution."
-  ms.date: 11/25/2021
+  ms.date: 03/02/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   Ability to:
   *   Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/iot-architecture-solution.svg
 levels:
 - intermediate
 roles:
