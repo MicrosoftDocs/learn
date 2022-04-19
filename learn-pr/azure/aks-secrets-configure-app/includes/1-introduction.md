@@ -2,6 +2,8 @@ Imagine you work for a freight company that transports goods all over the world 
 
 Some configurations were hardcoded in the app, and some sensitive values like connection strings were left as plain text. They required changes before this application could be deployed to production.
 
+[!INCLUDE [azure-optional-exercise-subscription-prerequisite](../../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 ## Learning objectives
 
 By the end of this module, you'll be able to:
