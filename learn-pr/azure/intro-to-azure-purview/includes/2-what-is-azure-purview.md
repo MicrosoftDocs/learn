@@ -13,7 +13,7 @@ Data insights, one of the key pillars of Azure Purview, offers a bird's eye view
 * Scan insights - this report provides information on the health of your scans (successes, failures, or canceled).
 * Glossary insights - a status report on the glossary to help users understand the distribution of glossary terms by status, or to view how the terms are attached to assets.
 * Classification insights - a report showing where classified data is located. It enables security administrators to understand the types of information found in their organization's data estate.
-* Sensitivity insights - this report focuses on sensitivity labels that are found during scans. Security administrators can make use of this information for ensure security is appropriate for the data estate.
+* Sensitivity insights - this report focuses on sensitivity labels that are found during scans. Security administrators can make use of this information to ensure security is appropriate for the data estate.
 * File extension insights - detailed reporting on file extensions, or file types, found during scans. Use this to understand the number of files, of each type, that exist. It also indicates where these files are located and if they can be scanned for sensitive information.
 
 :::image type="content" source="../media/insights.png" alt-text="Depiction of a computer monitor displaying the Purview Insights graphs and data.":::
