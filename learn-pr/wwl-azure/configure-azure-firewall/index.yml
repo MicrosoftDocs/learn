@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-firewall
 metadata:
   title: Configure Azure Firewall
   description: "You will learn how to configure the Azure Firewall including firewall rules."
-  ms.date: 09/23/2021
+  ms.date: 04/19/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
