@@ -81,7 +81,7 @@ The backlog lists all of the different tasks in the project. But there's a bette
 
 This new view is hierarchical. To drill into each phase, select the caret next to any work item. That will expose its child work items.
 
-:::image type="content" source="../media/expanding_nodes.png" alt-text="Screenshot that shows expanding nodes in the hierarchy." border="false":::
+:::image type="content" source="../media/expanding-nodes.png" alt-text="Screenshot that shows expanding nodes in the hierarchy." border="false":::
 
 The following list explains Azure DevOps terminology in more traditional project terms:
 

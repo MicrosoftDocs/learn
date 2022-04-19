@@ -49,7 +49,7 @@ Each of the inventoried assets required to support a workload needs to be added 
 
 - **Open the form to add a new asset:** Expand the **Mobile Coupon** feature in your backlog. Select the ellipsis to the right of **Mobile Coupon** to see the menu. In the pop-up menu, hover on **Add link**, and select **New item**.
 
-  :::image type="content" source="../media/customize-plan-new-asset_2.png" alt-text="Screenshot that shows the menu options for adding an asset." border="false":::
+  :::image type="content" source="../media/customize-plan-new-asset-2.png" alt-text="Screenshot that shows the menu options for adding an asset." border="false":::
 
 - **Add a new asset in the plan:** Similar to the process for adding a new workload, the first form asks for some basic data to add this asset to your plan. All assets to be migrated should be added to the backlog as child elements of the relevant workload feature. All assets are entered as user stories, because the migration of that asset is a discrete and measurable outcome based on a series of tasks. Enter the asset name to complete this form. For this exercise, select **Child** for the Link type, select **User story** for the Work item type, and enter **Asset #1** as the title of your first asset. Select **OK** at the bottom of the form.
 
