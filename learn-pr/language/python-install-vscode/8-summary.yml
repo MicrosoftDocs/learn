@@ -4,12 +4,12 @@ title: Summary
 metadata:
   title: Summary
   description: Recap of important ideas in this module.
-  ms.date: 07/06/2021
+  ms.date: 04/05/2022
   author: rjmolyneaux
   ms.author: rmolyneaux
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom: team=nextgen, devdivchpfy22
 durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]

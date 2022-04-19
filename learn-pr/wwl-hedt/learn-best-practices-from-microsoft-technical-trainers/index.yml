@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers
+metadata:
+  title: Learn best practices from Microsoft Technical Trainers
+  description: "Learn best practices from Microsoft Technical Trainers"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Learn best practices from Microsoft Technical Trainers
+summary: Utilizing tips and tricks from Microsoft technical trainers, including creating a digitally diverse learning community with bias-free communication and inclusive design methodology by accommodating students' diverse needs, can help your students succeed.
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand the Microsoft technical training program.
+  - Utilize the built-in accessibility features.
+  - Understand using the objective domains when preparing to teach.
+  - Prepare for the exam by understanding the exam structure.
+  - Prepare to teach the fundamentals courses leveraging best practices.
+prerequisites: |
+  - Explain the different approaches to curriculum integration.
+  - Plan how to promote certification awareness and benefits.
+  - Integrate content from Microsoft Learn into your Learning Management System.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- higher-ed-educator
+products:
+- azure-security-center
+- dynamics-365
+- dynamics-customer-service
+units:
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers.introduction
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers.discovery-accessibility-features
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers.understand-objective-domains
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers.prepare-exam
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers.explore-teaching-best-practices
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers.knowledge-check
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers.summary
+badge:
+  uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers.badge

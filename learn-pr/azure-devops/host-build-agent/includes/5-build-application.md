@@ -67,7 +67,7 @@ Watch the build run in the pipeline by using your build agent.
 
     From the **Initialize job** task, you see that the build uses your build agent.
 
-    :::image type="content" source="../media/5-build-results-private-pool.png" alt-text="A screenshot of Azure Pipelines running the build. The Initialize job task shows that it is running the build on the private agent named MyLinxuAgent.":::
+    :::image type="content" source="../media/5-build-results-private-pool.png" alt-text="A screenshot of Azure Pipelines running the build. The Initialize job task shows that it's running the build on the private agent named MyLinxuAgent.":::
 
 ## Optional: Remove your build pool
 

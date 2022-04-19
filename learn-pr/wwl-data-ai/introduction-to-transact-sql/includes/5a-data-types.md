@@ -207,6 +207,9 @@ The following table shows common data types supported in a SQL Server database.
 
 Values of compatible data types can be implicitly converted as required. For example, suppose you can use the **+** operator to add an *integer* number to a *decimal* number, or to concatenate a fixed-length *char* value and a variable length *varchar* value. However, in some cases you may need to explicitly convert values from one data type to another - for example, trying to use **+** to concatenate a *varchar* value and a *decimal* value will result in an error unless you first convert the numeric value to a compatible string data type.
 
+> [!NOTE]
+> For the full list of data type conversions, see the [Transact-SQL reference documentation](/sql/t-sql/data-types/data-type-conversion-database-engine).
+
 T-SQL includes functions to help you convert between data types:
 
 ### CAST and TRY_CAST
@@ -264,7 +267,7 @@ This query results in the following error message:
 
 > Error: Conversion failed when converting the nvarchar value 'M' to data type int.
 
-Given that at least *some* of the values in the column are numeric, you might want to convert those values and ignore the others. You can use the TRY\_CAST function to convert data types.
+Given that at least *some* of the values in the column are numeric, you might want to convert those values and ignore the others. You can use the TRY_CAST function to convert data types.
 
 ```sql
 SELECT TRY_CAST(Size AS integer) As NumericSize
@@ -309,7 +312,7 @@ The values that can be converted to a numeric data type are returned as *decimal
 > [!NOTE]
 > We'll explore considerations for handling *NULL* values later in this unit.
 
-### CONVERT and TRY\CONVERT
+### CONVERT and TRY_CONVERT
 
 CAST is the ANSI standard SQL function for converting between data types, and is used in many database systems. In Transact-SQL, you can also use the CONVERT function, as shown here:
 
@@ -351,7 +354,7 @@ Once again, this query returns the value converted to the specified data type, l
   :::column-end:::
 :::row-end:::
 
-Like CAST, CONVERT has a TRY\_CONVERT variant that returns *NULL* for incompatible values.
+Like CAST, CONVERT has a TRY_CONVERT variant that returns *NULL* for incompatible values.
 
 Another benefit of using CONVERT over CAST, is that CONVERT also includes a parameter that enables you specify a format style when converting numeric and date values to strings. For example, consider the following query:
 
@@ -433,7 +436,7 @@ The results from this query might look something like this:
 
 
 > [!NOTE]
-> To find out more about *style* formatting codes you can use with CONVERT, see the [Transact-SQL reference documentation](/sql/t-sql/functions/cast-and-convert-transact-sql).
+> To find out more about *style formatting* codes you can use with CONVERT, see the [Transact-SQL reference documentation](/sql/t-sql/functions/cast-and-convert-transact-sql).
 
 ### PARSE and TRY_PARSE
 
@@ -464,6 +467,9 @@ The results of this query look like this:
 :::row-end:::
 
 Similarly to CAST and CONVERT, PARSE has a TRY_PARSE variant that returns incompatible values as *NULL*.
+
+> [!NOTE]
+> When working with decimal or numeric data types, you may need to round to a whole number or set the decimal point, which can be achieved through precision and scale.  To better understand this concept of precision and scale, see the [Transact-SQL reference documentation](/sql/t-sql/data-types/decimal-and-numeric-transact-sql).
 
 ### STR
 
@@ -518,3 +524,5 @@ The results would look something like this:
     ...
   :::column-end:::
 :::row-end:::
+
+
