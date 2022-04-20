@@ -49,4 +49,4 @@ quiz:
       explanation: "Correct. Power BI provides secure distribution and sharing options for distribution of insights across an organization."
     - content: "Calculation group name."
       isCorrect: false
-      explanation: "Incorrect. Calcuation group naming does not have an impact on the order of application of calculation groups."
+      explanation: "Incorrect. Calculation group naming does not have an impact on the order of application of calculation groups."

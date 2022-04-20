@@ -32,6 +32,6 @@ Calculation groups can also be used to define conditional format strings to a me
 
 A simple example of using dynamic format strings may be having a different format for totals compared to other values.
 
-Dynamic format strings are particularly useful for currency conversion. For example, report consumers may want to see sales by country, with the correct currency formatting applied for each. This is accomplished by adding a format string column to the currency dimension table and then creating a currency conversion calculation group and item.
+Dynamic format strings are particularly useful for currency conversion. For example, report consumers may want to see sales by country/region, with the correct currency formatting applied for each. This is accomplished by adding a format string column to the currency dimension table and then creating a currency conversion calculation group and item.
 
 ![Animated GIF of Power BI report switching from sales values in Argentina to Mexico to Venezuela.](../media/dynamic-format-strings.gif)
