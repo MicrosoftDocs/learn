@@ -128,6 +128,9 @@ The results of this query might look similar to the following:
   :::column-end:::
 :::row-end:::
 
+
+### OVER ###
+
 You can use the OVER clause to define partitions, or groupings within the data. For example, the following query extends the previous example to calculate price-based rankings for products within each category.
 
 ```sql
@@ -309,6 +312,11 @@ The results of this query might look something like this:
     ...
   :::column-end:::
 :::row-end:::
+
+
+> [!NOTE]
+> Notice that several rows have the same rank value and some values are skipped. This is because we are using RANK only. Depending on the requirement, you may want to avoid ties at the same rank value. You can control the rank value with other functions, DENSE_RANK, NTILE, and ROW_NUMBER, as needed.   For details on these functions, see the [Transact-SQL reference documentation](/sql/t-sql/functions/ranking-functions-transact-sql).
+
 
 ## Rowset functions
 
