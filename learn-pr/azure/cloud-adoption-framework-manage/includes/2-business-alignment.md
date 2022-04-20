@@ -12,12 +12,12 @@ A company-wide scale for criticality makes sure everyone involved in the convers
 
 - **Mission-critical:** The workload affects the company's mission and might noticeably affect corporate profit-and-loss statements.
 - **Unit-critical:** The workload affects the mission of a specific business unit and its profit-and-loss statements.
-- **High:** The workload might not affect the company's mission but affects high-importance processes.
+- **High:** The workload might not affect the company's mission, but affects high-importance processes.
 - **Medium:** Impact on processes is likely. Losses are low or immeasurable, but brand damage or upstream losses are possible.
 - **Low:** Impact on business processes isn't measurable. No brand damage or upstream losses are likely. Localized impact on a single team is expected.
 - **Unsupported:** No business owner, team, or process associated with this workload can justify any investment in the workload's ongoing management.
 
-Some workloads might not be classified as critical but can be vital indirectly. For example, if a non-critical compliance management tool goes offline, maintaining business-critical compliance requirements is challenging. It can affect the company's mission in the long run.
+Some workloads might not be classified as critical, but can be vital indirectly. For example, if a non-critical compliance-management tool goes offline, maintaining business-critical compliance requirements is challenging. It can affect the company's mission in the long run.
 
 A workload can also be critical because customers who bring the most income use it. Another soft-cost factor can be that the board or CEO is using the workload daily.
 

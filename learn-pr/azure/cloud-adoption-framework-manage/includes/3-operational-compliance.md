@@ -7,7 +7,7 @@ The discipline of operational compliance is the cornerstone for maintaining the 
 - **Update consistency:** All updates to the environment should be done in a scheduled, controlled, and possibly automated way. Controlled change management will reduce unnecessary outages and troubleshooting.
 - **Remediation automation:** Automation for quick remediation of common incidents is a great way to increase customer satisfaction and minimize outages. Known issues should be fixed by their root cause. Fixing a root cause is often a long process, and automation is a quick fix.
 
-Operational compliance can be fulfilled per workload--for example, in one of your landing zones.
+Operational compliance can be fulfilled per workload: for example, in one of your landing zones.
 
 The following table lists some of the Azure tools for operational compliance. Remember that not all of these tools need to be part of the default management baseline.
 
