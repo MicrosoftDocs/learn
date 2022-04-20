@@ -1,4 +1,4 @@
-Have you ever wondered how the voice assistants we use everyday work? How do they understand the words that we say?
+Have you ever wondered how the voice assistants that we use every day work? How do they understand the words that we say?
 
 The assistant must convert the speech to text, and then convert that text into numbers (called *word embedding*). The assistant then classifies the utterance and correlates it to the intent (what the speaker wants the voice assistant to do). For more details on this process, see the "Introduction to natural language processing" module in this PyTorch learning path.
 
