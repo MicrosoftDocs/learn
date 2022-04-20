@@ -13,7 +13,7 @@ When a security principal (a user, group, or application) attempts to access a q
 
 The authentication step requires that an application request an OAuth 2.0 access token at runtime. If an application is running from within an Azure entity such as an Azure VM, a virtual machine scale set, or an Azure Functions app, it can use a managed identity to access queues. To learn how to authorize requests made by a managed identity.
 
-The authorization step requires that one or more Azure roles be assigned to the security principal. Azure Storage provides Azure roles that encompass common sets of permissions for queue data. The roles that are assigned to a security principal determine the permissions that that principal will have. To learn more about assigning Azure roles for queue access.
+The authorization step requires that one or more Azure roles be assigned to the security principal. Azure Storage provides Azure roles that encompass common sets of permissions for queue data. The roles that are assigned to a security principal determine the permissions that that principal will have.
 
 Native applications and web applications that make requests to the Azure Queue service can also authorize access with Azure AD. To learn how to request an access token and use it to authorize requests.
 
