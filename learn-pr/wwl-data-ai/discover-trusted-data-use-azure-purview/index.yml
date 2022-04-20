@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.discover-trusted-data-use-azure-purview
 metadata:
-  title: Discover trusted data using Azure Purview
+  title: Discover trusted data using Microsoft Purview
   description: "purview, enterprise data analyst"
-  ms.date: 04/13/2022
+  ms.date: 04/20/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Discover trusted data using Azure Purview
-summary: Use Azure Purview Studio to discover trusted organizational assets for reporting.
+title: Discover trusted data using Microsoft Purview
+summary: Use Microsoft Purview Studio to discover trusted organizational assets for reporting.
 abstract: |
   After completing this module, you'll be able to:
   *   Browse, search, and manage data catalog assets.
   *   Use data catalog assets with Power BI.
-  *   Use Azure Purview in Azure Synapse Studio.
+  *   Use Microsoft Purview in Azure Synapse Studio.
 prerequisites: |
   - Experience using the Azure data ecosystem.
 iconUrl: /learn/achievements/generic-badge.svg
