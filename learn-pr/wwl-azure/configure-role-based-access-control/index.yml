@@ -3,7 +3,7 @@ uid: learn.wwl.configure-role-based-access-control
 metadata:
   title: Configure role-based access control
   description: "You will learn how to use role-based access control to ensure resources are protected, but users can still access the resources they need."
-  ms.date: 04/19/2022
+  ms.date: 04/20/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
