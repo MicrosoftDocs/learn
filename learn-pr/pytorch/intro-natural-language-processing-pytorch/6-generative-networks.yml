@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.pytorch.intro-natural-language-processing.generative-networks
+title: Generate text with recurrent networks
+metadata:
+  title: Generate text with recurrent networks
+  description: In this unit, we learn how to use recurrent networks to generate text, by using the output at each network layer.
+  author: shwars
+  ms.author: dmitryso
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.custom: team=nextgen
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/6-generative-networks.ipynb
+quiz:
+  questions:
+    - content: "Recurrent neural network is called recurrent, because:"
+      choices:
+        - content: "A network is applied for each input element, and output from the previous application is passed to the next one"
+          isCorrect: true
+          explanation: "This is correct."
+        - content: "It is trained by a recurrent process"
+          isCorrect: false
+          explanation: "Recurrent neural network is trained in the same manner as any other neural network"
+        - content: "It consists of layers which include other subnetworks"
+          isCorrect: false
+          explanation: "While you can consider recurrent block to be a combination of two linear layers, it has nothing to do with recurrence"

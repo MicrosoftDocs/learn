@@ -1,6 +1,6 @@
-In this module, we will explore different neural network architectures for dealing with natural language texts. In the recent years, **Natural Language Processing** (NLP) has experiences fast growth as a field, primarily because performance of the language models depend on their overall ability to "understand" text, and that can be trained in unsupervised manner on large text corpora. Thus, pre-trained text models such as BERT simplified many NLP tasks, and dramatically improved the performance.
+In this module, we will explore different neural network architectures for dealing with natural language texts. In the recent years, **Natural Language Processing** (NLP) has experienced fast growth primarily due to the performance of the language models’ ability to accurately "understand" human language faster while using unsupervised training on large text corpora. For instance, pre-trained text models such as BERT simplified many NLP tasks, and dramatically improved the performance.
 
-We will focus on the fundamental aspects of representing NLP as tensors in PyTorch, and on classical NLP architectures, such as using bag-of-words, embeddings and recurrent neural networks.
+We will focus on the fundamental aspects of representing NLP as tensors in PyTorch, and on classical NLP architectures such as using bag-of-words (BoW), embeddings and recurrent neural networks.
 
 ## Natural Language Tasks
 
@@ -14,16 +14,16 @@ There are several NLP tasks that we traditionally try to solve using neural netw
 * **Text Summarization** extracts the most meaningful pieces of text, giving a user a compressed version that contains most of the meaning. 
 * **Question/Answer** is a task of extracting an answer from a piece of text. This model gets text fragment and a question as an input, and needs to find exact place within the text that contains answer. For example, the text "*John is a 22 year old student who loves to use Microsoft Learn*", and the question *How old is John* should provide us with the answer *22*.
 
-In this module, we will mostly focus on the **text classification** task. However, we'll learn all the important concepts needed to handle more difficult tasks in the future.
+For the scope of this module, we will mostly focus on the **text classification** task. We'll use text from news headlines to classify which one of the 4 categories they belong to:  _World, Sports, Business and Sci/Tech_.
 
 ## Learning objectives
 
 In this module you will:
 
 - Understand how text is processed for natural language processing tasks
-- Get introduced to Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
-- Learn about Attention Mechanisms
+- Get introduced to using Recurrent Neural Networks (RNNs) and Generative Networks 
 - Learn how to build text classification models  
+
 
 ## Prerequisites
 

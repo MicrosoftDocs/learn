@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.pytorch.intro-natural-language-processing.embeddings
+title: Represent words with embeddings
+metadata:
+  title: Represent words with embeddings
+  description: Embeddings are a way to represent words using some vector representation that has nice semantic properties. We discuss different embeddings, and how using embeddings can improve classification accuracy.
+  author: shwars
+  ms.author: dmitryso
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.custom: team=nextgen
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/4-embeddings.ipynb
+quiz:
+  questions:
+    - content: "Suppose your text corpus contains 80000 different words. What is typically done to reduce the dimensionality of input vector to neural classifier?"
+      choices:
+        - content: "Randomly select 10% of the words and ignore the rest"
+          isCorrect: false
+          explanation: "It is definitely not a good idea, especially because you risk omitting semantically-important words"
+        - content: "Use convolutional layer before fully-connected classifier layer"
+          isCorrect: false
+          explanation: "Convolutional layers do not reduce the dimensionality of input vectors"
+        - content: "Use embedding layer before fully-connected classifier layer"
+          isCorrect: true
+          explanation: "This is correct"
+        - content: "Select 10% of most frequently used words and ignore the rest"
+          isCorrect: false
+          explanation: "While ignoring some words might be a good way to limit vocabulary, leaving most frequently used words is not a good idea because they are often not semantically important"
