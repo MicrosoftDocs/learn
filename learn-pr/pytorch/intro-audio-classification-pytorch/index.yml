@@ -12,10 +12,10 @@ metadata:
 title: Introduction to audio classification with PyTorch
 summary: In this Learn module, you learn how to do audio classification with PyTorch. You'll understand more about audio data features and how to transform the sound signals into a visual representation called spectrograms. Then you'll build the model by using computer vision on the spectrogram images. That's right, you can turn audio into an image format, and then do computer vision to classify the word spoken!
 abstract: |
-  In this module you will:
-  - Learn the basics features of audio data
-  - Learn how to transform sound signals to a visual image format by using spectrograms
-  - Build a speech classification model that can recognize sounds or spoken words by using convolutional neural networks (CNNs)
+  In this module, you will:
+  - Learn the basics features of audio data.
+  - Learn how to transform sound signals to a visual image format by using spectrograms.
+  - Build a speech classification model that can recognize sounds or spoken words by using convolutional neural networks (CNNs).
 iconUrl: /learn/achievements/pytorch-audio-data.svg
 levels:
 - beginner
@@ -26,8 +26,8 @@ roles:
 products:
 - azure
 prerequisites: |
-  - Basic Python knowledge
-  - Basic knowledge about how to use Jupyter Notebooks
+  - Basic Python knowledge.
+  - Basic knowledge about how to use Jupyter Notebooks.
   - Basic understanding of CNNs. The "Introduction to Computer Vision with PyTorch" module in this learning path is a good place to start.
 units:
 - learn.pytorch.intro-audio-classification.introduction
