@@ -1,33 +1,79 @@
-Now that you understand how to control your environments and secure your deployment pipelines, you can take the final step: disabling human access to your controlled environments. In this unit, you'll learn how you can structure your users' permissions to Azure environments, how to allow access in emergency situations, and how to audit any changes that happen in your Azure estate.
+Now that you understand how to control your environments and secure your deployment pipelines, you can consider disabling human access to your controlled environments. In this unit, you'll learn how you can structure your users' permissions to Azure environments, how to allow access in emergency situations, and how to audit any changes that happen in your Azure estate.
 
 ## Block human access
 
-Use Azure RBAC to restrict or block human access to controlled environments. At most, humans should get *Reader* access. Ensure access is granted at the appropriate scope. Don't allow any wiggle room. (Example scenario - someone has the prod and dev environments open in the portal, switches tabs a few times, and accidentally breaks or deletes prod.)
+By blocking human access to your controlled environments, you ensure that there is no opportunity for accidental or malicious changes that bypass your team's review and deployment processes. If you don't block human access, somebody could inadvertently circumvent the controls you've spent so much time planning and implementing throughout your repository and pipelines. It's also easy for somebody to accidentally break something. For example, suppose a user has two copies of the Azure portal open - one for a test environment, and another for the production environment. As they're switching back and forth, it's easy to accidentally make changes to a production environment that were meant for a test environment.
 
-### What about emergencies?
+To block human access, you can use Azure role-based access control (RBAC). You create a *role assignment* to define which users, groups, or service principals can access a defined set of Azure resources, and what they can do when they access them. The set of resources covered by a role assignment is called the *scope*, and the *role* defines what they can do. Azure RBAC provides many built-in role types, including *Reader* (which has read-only access to the environment), *Contributor* (which can modify resources), and *Owner* (which can modify resources and grant access to others).
 
-Plan for emergency access.
+It's important to grant access at an appropriate scope. If your organization uses a single Azure subscription for all of your environments, then avoid granting humans access to the entire subscription, because that permission will be inherited by all of the resources - including your controlled environments. If your organization uses multiple Azure subscriptions, consider using Azure management groups to simplify the scope of your role assignments.
 
-Use break-glass accounts:
+> [!TIP]
+> Role assignments are Azure Resource Manager (ARM) resources. This means that you can configure your Azure RBAC role assignments in code, such as by using Bicep.
+
+When you plan out your role assignments, you need to decide on the policies that make sense for your organization. For example, suppose your organization creates separate subscriptions for each of your environments. You might choose to grant your administrators and developers *Reader* access to your production environment, so that they can access the environment within the Azure portal to review the configuration of your resources, view metrics and logs, and so forth. Here's how you might configure your role assignments:
+
+<!-- TODO -->
+| Environment type | Environment name | User | Role | Scope |
+|-|-|-|-|-|
+| Uncontrolled | Administrator | Owner |
+| Uncontrolled | Developer | Contributor |
+| Controlled | Administrator | Reader |
+| Controlled | Developer | Reader |
+
+When you plan your role assignments, ensure that you test them thoroughly. Sometimes, management operations might require permissions that aren't obvious. Ensure that your team has the opportunity to test all of their day-to-day operations with the permissions you plan to use, and review any problems they experience.
+
+### Data plane access
+
+TODO
+
+### Emergency access
+
+Sometimes, emergencies happen and somebody needs to quickly get access to a production environment to investigate or resolve a problem. It's important to consider how you'll respond to these situations - and to plan this before an emergency occurs, because you don't want to have to consider this in the middle of an outage.
+
+One approach you can consider is to use a *break-glass account*, which is a special user account that has higher levels of permissions than normal users. You can provide a way for your operators to get access to the credentials for the break-glass account, and they can then sign in as the account to perform emergency changes:
 
 :::image type="content" source="../media/4-break-glass-account.png" alt-text="Diagram showing the sequence of operations for using a break glass account to access Azure." border="false":::
 
-Or, use Azure AD PIM:
+The sequence of steps for using a break-glass account is:
+
+1. The user tries to perform an emergency change by using their normal account, but the operation is blocked because their normal user account doesn't have sufficient permission.
+1. The user accesses the credentials for the break-glass account, and signs in as that user.
+1. The user (acting as the break-glass account) is allowed to perform the operation.
+
+Break-glass accounts require a high level of discipline. They should only be used in emergencies, and their credentials should be carefully managed and protected because the account is so highly privileged. It's also important to carefully audit any use of the break-glass accounts, to ensure they're not used inappropriately. Their use should be reserved for true emergency situations.
+
+An alternative approach to break-glass accounts is Azure AD privileged identity management (PIM), which allows a user's own account to be temporarily granted a higher level of permission:
 
 :::image type="content" source="../media/4-privileged-identity-management.png" alt-text="Diagram showing the sequence of operations for Privileged Identity Management elevation and access to Azure." border="false":::
 
-If you use PIM or another emergency access method, ensure that you update your IaC with the latest changes after the emergency ends.
+The sequence of steps for using PIM is:
 
-<!--
+1. The user tries to perform an emergency change by using their normal account, but the operation is blocked because their normal user account doesn't have sufficient permission.
+1. The user contacts PIM and requests their permissions to be *elevated* temporarily. PIM might perform additional validation of their identity, or ask for approval from somebody. If the PIM request is authorized, it updates the user's permissions temporarily.
+1. The user (acting as themselves) is allowed to perform the operation. After the defined time period has elapsed, PIM revokes the additional permissions it granted the user.
 
-You can configure PIM by using ARM (and probably Bicep) - [1]](https://docs.microsoft.com/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true#migrate-to-the-azure-resource-manager-arm-pim-api-for-azure-resource-roles), [2](https://docs.microsoft.com/rest/api/authorization/privileged-role-policy-rest-sample#update-a-role-management-policy).
+Both PIM and Azure write audit logs, to help you understand who has requested elevated permissions and what they did in your environment when they were granted.
 
--->
+#### After the emergency ends
+
+After an emergency ends, it's important to have a process to return to normal operations.
+
+You should carefully review the Azure and PIM audit logs to understand the changes that were performed in your controlled environments, and especially your production environment.
+
+> [!IMPORTANT]
+> Somebody who uses PIM or a break-glass account might have the opportunity to grant their regular user account broader access than they should have. They might also use the temporary permissions to gain access to data plane keys that they can continue to use after their permissions are revoked. Carefully audit all use of your break-glass accounts or PIM, and revoke or rotate any keys that might have been exposed during the emergency.
+
+Soon after the emergency, it's important to *resynchronize* your infrastructure as code assets with any changes that were made during the emergency. For example, suppose that as part of resolving an urgent issue, an administrator manually increased the SKU of an Azure App Service plan. You should update your deployment templates to include the new SKU. Otherwise, during the next regular deployment from your pipeline, the SKU might be reset to the previous value.
 
 ## Audit changes to your environment
+
+
 
 Consider using a SIEM like Azure Sentinel. You can stream/import pipeline event/audit logs to a SIEM and even trigger alerts based on some criteria (e.g. when a project admin changes a branch protection policy).
 
 ## Audit your security configuration
+
+TODO
 
 Audit your privileged accounts, and your role assignments, regularly. Ensure you haven't accidentally granted access to the wrong people, or granted access that's too wide.
