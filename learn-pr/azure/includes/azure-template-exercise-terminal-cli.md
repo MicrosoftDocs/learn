@@ -17,7 +17,7 @@ ms.author: jodowns
 
 1. If a shell other than **bash** appears, select the dropdown, and then select **Git Bash (Default)**.
 
-    :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and bash selected..":::
+    :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and bash selected.":::
 
 1. In the list of terminal shells, select **bash**.
 
