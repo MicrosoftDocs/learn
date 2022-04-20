@@ -3,7 +3,7 @@ uid: learn.static-apps-gatsby.6-build-deploy-static-app
 title: Build and deploy to Azure Static Web Apps
 metadata:
   title: Build and deploy to Azure Static Web Apps
-  description: This will teach you how to build a Gatsby app. You will also learn how you can deploy the app.
+  description: This module will teach you how to build a Gatsby app. You'll also learn how you can deploy the app.
   author: acomfort248
   ms.author: chnoring
   ms.date: 04/22/2022
