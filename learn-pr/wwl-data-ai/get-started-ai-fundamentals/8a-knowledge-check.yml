@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/05/2022
+  ms.date: 04/12/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -25,17 +25,17 @@ quiz:
     - content: "Language"
       isCorrect: false
       explanation: "That is incorrect. The Language Service is used for understanding and analyzing text, and creating intelligent applications."
-  - content: "You are designing an AI application that detects cracks in car windshields and warns drivers when a windshield should be repaired or replaced. What Cognitive Service could you use to design this app? ​​"
+  - content: "You are designing an AI application that uses images to detect cracks in car windshields and warn drivers when a windshield should be repaired or replaced. What AI workload is described? ​​"
     choices:
-    - content: "Custom Vision"
+    - content: "Computer Vision"
       isCorrect: true
-      explanation: "That is correct. Vision enables you to train models that  classify images."
+      explanation: "That is correct. Images of the car windshield can be analyzed with computer vision and classified into groups based on windshield condition."
     - content: "Anomaly Detection"
       isCorrect: false
       explanation: "That is incorrect. Anomaly Detection is used to analyze data over time and identify unusual changes."
-    - content: "Language"
+    - content: "Natural Language Processing"
       isCorrect: false
-      explanation: "That is incorrect. Language is used to understand and analyze text, and create intelligent applications."
+      explanation: "That is incorrect. Natural Language Processing is used to understand and analyze text, and create intelligent applications."
   - content: "A predictive app provides audio output for visually impaired users. Which principle of Responsible AI is reflected here?"
     choices:
     - content: "Transparency"

@@ -3,7 +3,7 @@ uid: learn.azure-scale-azure-sql-dbs-elastic-pools
 metadata:
   title: "Scale multiple Azure SQL Databases with SQL elastic pools"
   description: Learn how to create SQL elastic pools and how to use them to manage performance and cost for a collection of SQL databases.
-  ms.date: 5/03/2019
+  ms.date: 02/02/2022
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial

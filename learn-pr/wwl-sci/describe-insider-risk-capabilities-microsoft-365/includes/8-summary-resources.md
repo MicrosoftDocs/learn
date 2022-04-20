@@ -3,13 +3,12 @@ Without these capabilities, organizations wouldn’t be protected from insider r
 
 Now that you’ve completed this module, you should be able to:
 
-- Describe how Microsoft 365 can help organizations identify insider risks and take appropriate action.
-- Describe how Microsoft 365 helps organizations identify, investigate, and remediate malicious and inadvertent activities.
+- Describe the insider risk management solution
+- Describe communication compliance
+- Describe information barriers
 
 ## Learn more
 
-- [Insider risk management in Microsoft 365](/microsoft-365/compliance/insider-risk-management)
-- [eDiscovery](/microsoft-365/compliance/overview-ediscovery-20)
-- [Privileged access management](/microsoft-365/compliance/privileged-access-management-overview)
-- [Customer Lockbox in Office 365](/microsoft-365/compliance/customer-lockbox-requests)
-- [Get started with communication compliance](/microsoft-365/compliance/communication-compliance-configure#before-you-begin )
+- [Insider risk management in Microsoft 365](/microsoft-365/compliance/insider-risk-management?view=o365-worldwide)
+- [Get started with communication compliance](/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#before-you-begin)
+- [Information barriers in Microsoft 365](/microsoft-365/compliance/information-barriers-solution-overview?view=o365-worldwide)

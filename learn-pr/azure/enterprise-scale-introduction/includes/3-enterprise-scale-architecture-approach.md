@@ -20,7 +20,7 @@ Enterprise-scale design comes with a set of design principles for managing the p
 
   :::image type="content" source="../media/3-enterprise-scale-landing-zone.png" alt-text="Diagram of an enterprise-scale landing zone." lightbox="../media/3-enterprise-scale-landing-zone-large.png":::
 
-- **Scope**: With enterprise-scale landing zones, the scope of a landing zone grows considerably to support application migrations and green field development at scale in Azure. This expansion allows for design that can scale across your organization's full IT portfolio, which looks well beyond a short-term cloud adoption plan.
+- **Scope**: With enterprise-scale landing zones, the scope of a landing zone grows considerably to support application migrations and green field development at scale in Azure. This expansion allows for design that can scale across your organization's full IT portfolio, which looks well beyond a short-term cloud-adoption plan.
 
 - **Refactoring**: The number of subscriptions that are required to support a full enterprise-scale IT portfolio can be large. Initially, the Cloud Adoption Framework encourages a high frequency of refactoring, which should stabilize before the tenth production workload is deployed to the cloud. When you work across an enterprise portfolio, ten applications can be deployed quickly and make refactoring impractical. Instead, a central IT team or a cloud center of excellence should deliver a more complete landing zone during the first release.
 
@@ -32,6 +32,6 @@ To use an analogy, shared city utilities such as water, gas, and electricity are
 
 In addition to the key aspects noted here, the design, configuration, deployment, and integration of each landing zone should meet your organization's critical requirements as they relate to:
 
-- Business continuity and disaster recovery at platform and application levels.
-- Service management, such as incident response and support.
-- A service catalog, such as configuration management database.
+- Business continuity and disaster recovery at platform and application levels
+- Service management, such as incident response and support
+- A service catalog, such as configuration management database

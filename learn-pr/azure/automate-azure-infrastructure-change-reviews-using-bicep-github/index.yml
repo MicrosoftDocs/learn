@@ -13,7 +13,7 @@ title: Automate Azure infrastructure change reviews by using Bicep and GitHub
 summary: |
   Add checks to pull requests that run automatically during your code reviews. Run the Bicep linter on your code, and deploy the resources to a temporary environment to enable further automated and manual testing.
 abstract: |
-  After you've completed this module, you'll be able to:
+  After completing this module, you'll be able to:
     - Run automatic checks during a pull request.
     - Determine how you want to create ephemeral environments in your Azure environment.
     - Create ephemeral environments within pull requests.

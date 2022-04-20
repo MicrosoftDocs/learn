@@ -76,7 +76,7 @@ On the other hand, if CPU is 25% and memory is 51% autoscale does not scale-in. 
 
 ### Always select a safe default instance count
 
-The default instance count is important autoscale scales your service to that count when metrics are not available. Therefore, select a default instance count that's safe for your workloads.
+The default instance count is important because autoscale scales your service to that count when metrics are not available. Therefore, select a default instance count that's safe for your workloads.
 
 ### Configure autoscale notifications
 
