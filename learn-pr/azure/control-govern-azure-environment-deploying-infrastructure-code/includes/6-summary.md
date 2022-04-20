@@ -6,6 +6,7 @@ Now, you’re able to increase your confidence in, and the security of, your Azu
 
 ## More resources
 
+- [End-to-end governance in Azure when using CI/CD](/azure/architecture/example-scenario/governance/end-to-end-governance-in-azure)
 - Secure your pipelines
   - Manage users, groups. and permissions
     - [Conditional Access](/azure/active-directory/conditional-access/overview)
@@ -18,6 +19,7 @@ Now, you’re able to increase your confidence in, and the security of, your Azu
     - [Managed identities](/azure/active-directory/managed-identities-azure-resources/overview)
     - [Workload identity federation](/azure/active-directory/develop/workload-identity-federation)
     - [Azure DevOps security](/azure/devops/organizations/security/quick-reference-index-security)
+  - [Auditing in Azure DevOps](/azure/devops/organizations/audit/azure-devops-auditing)
   - Use GitHub security features
     - [Security hardening for GitHub Actions](https://docs.github.com//actions/security-guides/security-hardening-for-github-actions)
     - [Dependsabot](https://docs.github.com/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates)
@@ -30,4 +32,3 @@ Now, you’re able to increase your confidence in, and the security of, your Azu
   - [Create Azure RBAC resources by using Bicep](/azure/azure-resource-manager/bicep/scenarios-rbac)
   - [Manage secrets by using Bicep](/azure/azure-resource-manager/bicep/scenarios-secrets)
   - [Create virtual network resources by using Bicep](/azure/azure-resource-manager/bicep/scenarios-virtual-networks)
-- [End-to-end governance in Azure when using CI/CD](/azure/architecture/example-scenario/governance/end-to-end-governance-in-azure)

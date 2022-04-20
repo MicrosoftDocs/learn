@@ -29,13 +29,13 @@ It's a good practice to use your organization's Azure AD as your pipeline's iden
 
 ::: zone pivot="github"
 
-You can also create *teams*, which represent sets of users. It's a good practice to define teams and then to assign permissions to the teams instead of to individual users. That way, it's easy to change the permissions of users by adding them to and removing them from teams.
+You can also create *teams*, which represent sets of users who can be granted permissions together. It's a good practice to define teams and then to assign permissions to the teams instead of to individual users. That way, it's easy to change the permissions of users by adding them to and removing them from teams.
 
 ::: zone-end
 
 ::: zone pivot="azuredevops"
 
-You can also create *groups*, which represent sets of users. It's a good practice to define groups and then to assign permissions to the groups instead of to individual users. That way, it's easy to change the permissions of users by adding them to and removing them from groups.
+You can also use *groups*, which represent sets of users who can be granted permissions together. It's a good practice to define groups and then to assign permissions to the groups instead of to individual users. That way, it's easy to change the permissions of users by adding them to and removing them from groups.
 
 ::: zone-end
 
@@ -84,3 +84,10 @@ GitHub provides a suite of security features, which you should evaluate and use.
 
 ::: zone-end
 
+::: zone pivot="azuredevops"
+
+## Use Azure DevOps audit logging
+
+Azure DevOps provides *audit logs*, to help you to understand who has made changes to your pipelines, branch policies, repositories, and other resources. It's a good practice to enable auditing and review your logs regularly.
+
+::: zone-end
