@@ -4,8 +4,8 @@ title: Exercise - Send an SMS using Azure Communication Services
 metadata:
   title: Exercise - Send an SMS using Azure Communication Services
   description: Send an SMS with an SMS-enabled telephone number provisioned via Azure Communication Services.
-  author: probableprime
-  ms.author: rifox
+  author: softchris
+  ms.author: chnoring
   ms.date: 03/03/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
