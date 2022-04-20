@@ -28,12 +28,12 @@ Creating a Log Analytics workspace is straightforward.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Select **More service**, and then, in the **Search** box, enter **log analytics**.
+1. Select **Create resource**, and then, in the **Search** box, enter **log analytics**.
 
-1. In the results list, select **Log Analytics workspaces**, and then select **New** to create a new Log Analytics workspace. To create a new Log Analytics workspace, supply the following details:
+1. In the results list, select **Log Analytics Workspace**, and then select **New** to create a new Log Analytics workspace. Select or enter the following details:
 
-   a. Select **Create New**, because this workspace is unique to the user who's signing in. Each workspace needs a **Name** that's globally unique among Azure Monitor subscriptions.  
-   b. Select the subscription, and then select the workspace you want to use, such as an existing **Resource group**.
+   1. Select **Create New**, because this workspace is unique to the user who's signing in. Each workspace needs a **Name** that's globally unique among Azure Monitor subscriptions.  
+   1. Select the subscription, and then select the workspace you want to use, such as an existing **Resource group**.
 
    The pricing tier is automatically assigned as **pay-as-you-go** and is based on a per-gigabyte (GB) cost.
 
@@ -57,12 +57,13 @@ To stream the audit and sign-in logs to your Log Analytics workspace, you need t
 
 1. In the menu, under **Monitoring** section, select **Diagnostics settings**.
 
-   The **Diagnostics settings** pane appears. You can create the connection between the log files and your Log Analytics workspace. Each setting needs a name.  
+1. Select **Add diagnostic setting**.
 
-1. Select the **Send to Log Analytics** option, and then specify or create a Log Analytics workspace. In our scenario, select the Log Analytics workspace you've just created, and then do the following:  
+1. In **Diagnostic setting name**, enter a name to use for the setting. For example, **SendToLogAnalytics**.
 
-   a. Select the **Configure** option, and then select the Log Analytics workspace you created earlier.  
-   b. Decide which of the log files you want to stream to the workspace. You can select **Audit log**, **Sign-in log**, or both.
+1. Under **Logs**, for categories, select **AuditLogs** and **SignInLogs**.
+
+1. Select the **Send to Log Analytics** option, and then specify or create a Log Analytics workspace. In our scenario, select the Log Analytics workspace you've just created.
 
 1. Select **Save**.  
 
@@ -157,7 +158,7 @@ Or, if you want to see how many of your users were flagged as risky in the last 
 ```kusto
 SigninLogs
 | where CreatedDateTime >= ago(14d)
-| where isRisky == true
+| where isRisky = true
 ```
 
 #### Example audit query
@@ -175,35 +176,43 @@ AuditLogs
 
 Alerts are similar to queries, the principal difference being that they run automatically. You can set a threshold against the result set, and if it's met, trigger an alert to let you know about it.
 
-1. To get started, select **Set alert**.
+1. To get started, in the Azure portal, go to your Log Analytics workspace.
 
-   ![Screenshot of the "Set alert" button.](../media/3-set-query-alert.png)
+1. In the left menu under **Monitoring**, select **Alerts**, and then select **Create alert rule**,
 
-   The **Create rule** pane opens.
+1. Scope is automatically set to your Log Analytics workspace. Select the **Condition** tab.
 
-   If you want to be alerted when more than 10 applications are used in the past week, you would run the following query.
+1. In the **Select a signal** pane, for **Signal type**, select **Activity Log**.
 
-   ```kusto
-   SignInLogs
-   | where CreatedDateTime >= ago(7d)
-   | summarize signInCount = count() by AppDisplayName
-   | sort by signInCount desc
-   ```
+1. In **Signal name**, select a name that matches the activity logs you want to monitor.
 
-1. Because this is an alert, indicate how often the query is to be run against the data. You can specify the frequency down to the minute, but you should consider both the volume of data and the time it takes to run the query.
+1. Select values for the settings for the alert logic. The alert logic is defined by the condition and the evaluation time. The alert fires when this condition is true. Provide a threshold value for your alert rule and modify the operator and aggregation type to define the logic you need. You can accept the default time granularity or modify it to your requirements. Frequency of evaluation defines how often the alert logic is evaluated. Aggregation granularity defines the time interval over which the collected values are aggregated.
 
-1. Assign the alert logic to specify the threshold limits that will trigger the alert.
+1. You can add more conditions, then, select the **Next: Actions >**.
 
-   | Field     | Value                 |
-   | --------- | --------------------- |
-   | Based On  | *Number of results* |
-   | Condition | *Greater than*      |
-   | Threshold | *10*                |
+1. On the **Actions** tab, if you haven't already created an action group that you want to use, select **Create action group**. Select a subscription and resource group for the action group and give it an action group name that appear in the portal and a display name that appears in email and SMS notifications.
 
-1. Give the alert a name and description, and assign the severity of the alert when it's triggered. Because this is a low-level alert, let's set it to **Informational**.
+1. Select **Next: Notifications >**.
 
-1. Select the action group that will receive the alert. This group could be your support team, your security team, or any other group that needs to be alerted when the threshold conditions are met.
+1. Select a notification type and enter a name for the notification. Enter the details to continue to set up the action group.
 
-1. Select the type of alert you want. You can choose from a variety of alerting methods, from a simple email to text messages. Or you could link to more complex Azure resources, such as Azure functions, webhooks, or logic apps.
+1. You can optionally set up actions and tags. Then, select **Review + create**. 
 
-1. When you're satisfied with your alert, select **Create alert** to enable it.
+1. Review the action group information, and then select **Create**.
+
+1. In **Create an alert rule**, on the **Details** tab, select a subscription and resource group for the alert rule. Enter an alert rule name and optionally enter a description of the alert rule.
+
+1. You can optionally set tags for the alert rule. Then, select **Review + create**. 
+
+1. Review the action group information, and then select **Create**.
+
+## View alert rules
+
+When an alert fires, it will send any notifications in its action groups. You can also view the alert in the Azure portal.
+
+In the left menu, select **Alerts**. If there are any open alerts for the resources, they are included in the view.
+
+Click on a severity to show the alerts with that severity. To view only open alerts, select **Alert state** and clear the **Closed** option.
+
+Click on the name of an alert to view its detail.
+
