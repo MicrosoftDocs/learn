@@ -12,7 +12,7 @@ Now, you’re able to increase your confidence in, and the security of, your Azu
     - [Multi-factor authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
     - [Azure AD SSO integration with a GitHub Enterprise Cloud Organization](/azure/active-directory/saas-apps/github-tutorial)
   - Protect important code branches
-    - [Azure Repos branch policies](/azure/devops/repos/git/branch-policies?view=azure-devops&tabs=browser)
+    - [Azure Repos branch policies](/azure/devops/repos/git/branch-policies)
     - [Protected branches in GitHub](https://docs.github.com/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches)
   - Protect your pipeline's service principals
     - [Managed identities](/azure/active-directory/managed-identities-azure-resources/overview)
