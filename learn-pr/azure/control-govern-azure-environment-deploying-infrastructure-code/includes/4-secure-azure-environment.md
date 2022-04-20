@@ -11,15 +11,19 @@ It's important to grant access at an appropriate scope. If your organization use
 > [!TIP]
 > Role assignments are Azure Resource Manager (ARM) resources. This means that you can configure your Azure RBAC role assignments in code, such as by using Bicep.
 
-When you plan out your role assignments, you need to decide on the policies that make sense for your organization. For example, suppose your organization creates separate subscriptions for each of your environments. You might choose to grant your administrators and developers *Reader* access to your production environment, so that they can access the environment within the Azure portal to review the configuration of your resources, view metrics and logs, and so forth. Here's how you might configure your role assignments:
+When you plan out your role assignments, you need to decide on the policies that make sense for your organization. For example, suppose your organization creates separate subscriptions for each of your environments. You might choose to grant your administrators and developers *Reader* access to your production environment, so that they can access the environment within the Azure portal to review the configuration of your resources, view metrics and logs, and so forth. Here's how you might configure your role assignments for your environments, both for your Azure administrators and the developers who write your code and scripts:
 
-<!-- TODO -->
-| Environment type | Environment name | User | Role | Scope |
-|-|-|-|-|-|
-| Uncontrolled | Administrator | Owner |
-| Uncontrolled | Developer | Contributor |
-| Controlled | Administrator | Reader |
-| Controlled | Developer | Reader |
+| Environment name      | Control level | Administrator permission | Developer permission |
+|-----------------------|---------------|-|-|
+| Development           | Controlled    | Reader | Reader |
+| Test                  | Controlled    | Reader | Reader |
+| Staging               | Controlled    | Reader | Reader |
+| Production            | Controlled    | Reader | Reader |
+| Demo                  | Uncontrolled  | Owner | Contributor |
+| Performance testing   | Uncontrolled  | Owner | None |
+| Penetration testing   | Uncontrolled  | Owner | None |
+| Ephemeral PR reviews  | Uncontrolled  | Owner | Owner |
+| Development sandboxes | Uncontrolled  | Owner | Owner |
 
 When you plan your role assignments, ensure that you test them thoroughly. Sometimes, management operations might require permissions that aren't obvious. Ensure that your team has the opportunity to test all of their day-to-day operations with the permissions you plan to use, and review any problems they experience.
 
@@ -72,9 +76,8 @@ You should carefully review the Azure and PIM audit logs to understand the chang
 
 Soon after the emergency, it's important to *resynchronize* your infrastructure as code assets with any changes that were made during the emergency. For example, suppose that as part of resolving an urgent issue, an administrator manually increased the SKU of an Azure App Service plan. You should update your deployment templates to include the new SKU. Otherwise, during the next regular deployment from your pipeline, the SKU might be reset to the previous value.
 
-## Audit changes to your environment
+## Audit changes to your Azure environment
 
-<!-- TODO -->
+It's also a good practice to configure auditing and logging across your entire Azure environment, and to monitor for specific events or threats.
 
-Consider using a SIEM like Azure Sentinel. You can stream/import pipeline event/audit logs to a SIEM and even trigger alerts based on some criteria (e.g. when a project admin changes a branch protection policy).
-
+Consider using a security information and event management (SIEM) tool, like Microsoft Sentinel. Sentinel collects and analyzes logs from your Azure estate, and even from Azure DevOps, GitHub, and other systems. You can use Sentinel to monitor for unexpected or unauthorized changes to your Azure resources. And you can import your pipeline's audit logs, and trigger alerts when events happen like when an administrator changes a branch protection policy.

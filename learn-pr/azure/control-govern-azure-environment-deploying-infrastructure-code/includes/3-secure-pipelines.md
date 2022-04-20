@@ -14,7 +14,7 @@ There are many different parts of your Azure DevOps organization, repository, an
 
 Throughout the rest of this unit, you'll learn about some of the approaches you can use to apply governance and controls around your code repository and deployment pipelines.
 
-## Manage users, groups, and permissions
+## Manage users and permissions
 
 Consider how you'll grant access to your Azure DevOps organization or GitHub repository, including both who has access and what they can do.
 
@@ -86,8 +86,14 @@ GitHub provides a suite of security features, which you should evaluate and use.
 
 ::: zone pivot="azuredevops"
 
+## Protect your pipeline's service connections
+
+In Azure Pipelines, a *service connection* contains the credentials for a service principal to use to access your Azure environment. It's important that you protect your service connections, and that you control which pipelines use each service connection. Otherwise, you might accidentally enable a non-production environment to use a service principal with access to production resources. When you create a service connection, you can configure it to require your approval before it can be used by a new pipeline.
+
+You can also associate *checks* with specific service connections, which adds a further layer of protection. For example, you can configure a production service connection to include a check that verifies it's only used on code from your repository's *main* branch. This check helps to prevent unauthorized code from being deployed to your production environment.
+
 ## Use Azure DevOps audit logging
 
-Azure DevOps provides *audit logs*, to help you to understand who has made changes to your pipelines, branch policies, repositories, and other resources. It's a good practice to enable auditing and review your logs regularly.
+Azure DevOps provides *audit logs*, to help you to understand who has made changes to your pipelines, branch policies, repositories, and other resources. It's a good practice to enable auditing, and to review the audit logs regularly.
 
 ::: zone-end

@@ -28,6 +28,7 @@ Now, you’re able to increase your confidence in, and the security of, your Azu
 - Secure your Azure environment
   - [Break-glass accounts in Azure AD](/azure/active-directory/roles/security-emergency-access)
   - [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)
+  - [Microsoft Sentinel](/azure/sentinel/overview)
 - Bicep scenario-based documentation
   - [Create Azure RBAC resources by using Bicep](/azure/azure-resource-manager/bicep/scenarios-rbac)
   - [Manage secrets by using Bicep](/azure/azure-resource-manager/bicep/scenarios-secrets)
