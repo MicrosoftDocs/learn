@@ -75,7 +75,7 @@ To get started with Azure Cost Management + Billing, create your first budget wi
 
 ### Exercise: Find opportunities to optimize
 
-If you have existing deployments in your Azure environment, you likely have recommendations in the Azure portal that might affect your overall spending. Complete the [Optimize costs from recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true) tutorial to view recommendations from Azure Adviser and other recommendations that might reduce your costs. The recommendations identify opportunities to apply the operational best practices described in this unit.
+If you have existing deployments in your Azure environment, you likely have recommendations in the Azure portal that might affect your overall spending. Complete the [Optimize costs from recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true) tutorial to view recommendations from Azure Advisor and other recommendations that might reduce your costs. The recommendations identify opportunities to apply the operational best practices described in this unit.
 
 ### Exercise: Limit cost risks by using Azure Policy
 
