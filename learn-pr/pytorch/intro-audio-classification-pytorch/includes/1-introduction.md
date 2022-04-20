@@ -16,7 +16,7 @@ That's right! You can turn audio into an image representation, and then use comp
 
 ## Learning objectives
 
-In this module you will:
+In this module, you will:
 
 - Learn the basic features of audio data.
 - Learn how to transform sound signals to a visual image format by using spectrograms.
@@ -24,6 +24,6 @@ In this module you will:
 
 ## Prerequisites
 
-- Basic Python knowledge
-- Basic knowledge about how to use Jupyter Notebooks
+- Basic Python knowledge.
+- Basic knowledge about how to use Jupyter Notebooks.
 - Basic understanding of CNNs. (A good place to start is the "Introduction to Computer Vision with PyTorch" module in this learning path.)
