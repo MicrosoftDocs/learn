@@ -23,9 +23,15 @@ When you plan out your role assignments, you need to decide on the policies that
 
 When you plan your role assignments, ensure that you test them thoroughly. Sometimes, management operations might require permissions that aren't obvious. Ensure that your team has the opportunity to test all of their day-to-day operations with the permissions you plan to use, and review any problems they experience.
 
+Audit your role assignments regularly. Ensure you haven't accidentally granted access to the wrong people, or granted access that's too wide.
+
 ### Data plane access
 
-TODO
+There are two types of operations in Azure: *control plane operations* and *data plane operations*. Control plane operations are used to manage the resources in your subscription. Data plane operations are used to access features that are exposed by a resource. For example, you use a control plane operation to create a storage account, but you use a data plane operation to connect to the storage account and access the data it contains.
+
+When you block direct user access to your Azure resources, consider how this restriction applies to data plane operations, too. For example, if your deployment process stores the account key for a storage account somewhere that an administrator can access, then it might be possible for them to circumvent some of your controls and access the storage account's data plane directly by using that key.
+
+An increasing number of Azure resources support configuring their data plane access control by using Azure AD, which reduces the likelihood that you'll leak keys or grant data plane access inadvertently.
 
 ### Emergency access
 
@@ -68,12 +74,7 @@ Soon after the emergency, it's important to *resynchronize* your infrastructure 
 
 ## Audit changes to your environment
 
-
+<!-- TODO -->
 
 Consider using a SIEM like Azure Sentinel. You can stream/import pipeline event/audit logs to a SIEM and even trigger alerts based on some criteria (e.g. when a project admin changes a branch protection policy).
 
-## Audit your security configuration
-
-TODO
-
-Audit your privileged accounts, and your role assignments, regularly. Ensure you haven't accidentally granted access to the wrong people, or granted access that's too wide.
