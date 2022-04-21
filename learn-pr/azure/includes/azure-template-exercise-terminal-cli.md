@@ -13,11 +13,11 @@ ms.author: jodowns
 
 1. If a shell other than **bash** appears, select the shell dropdown, and then select **Git Bash (Default)**.
 
-    :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and bash selected.":::
+    :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and Git Bash Default selected.":::
 
 1. In the list of terminal shells, select **bash**.
 
-   :::image type="content" source="media/select-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal selected.":::Z
+   :::image type="content" source="media/select-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal selected.":::
 
 1. In the terminal, go to the directory where you saved your template. For example, if you saved your template to the *templates* folder, you can use this command:
 
