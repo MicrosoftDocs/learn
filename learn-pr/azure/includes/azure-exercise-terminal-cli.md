@@ -7,7 +7,7 @@ ms.author: jodowns
 ---
 1. In the **Terminal** menu, select **New Terminal**. The terminal window usually opens in the lower half of your screen.
 
-1. If the shell shown on the right side of the terminal window is **bash**, the correct shell is open and you and you can skip to the next section.
+1. If the shell shown on the right side of the terminal window is **bash**, the correct shell is open and you can skip to the next section.
 
     :::image type="content" source="media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash option shown.":::
 
