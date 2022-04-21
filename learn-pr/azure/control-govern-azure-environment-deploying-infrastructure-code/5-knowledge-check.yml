@@ -14,58 +14,39 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: |
+      You're concerned that applying controls to your production Azure environment might cause problems with automated deployments. In particular, you're concerned that you won't find out about any problems until your changes are deployed to production, when it's too late to fix them.
+      
+      What can you do to mitigate this risk?
     choices:
-    - content: ""
+    - content: Apply the same controls to some of your non-production environments.
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: Correct. When you apply controls to your non-production environments, your code is exposed to the controls that you have in your production environment sooner and with less risk. If the controls cause problems, you'll find out more quickly and can correct the problem without causing an issue in production.
+    - content: Disable the controls on your production environment.
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: Incorrect. You shouldn't disable the controls on your production environment. Instead, look for opportunities to discover the problems sooner.
+    - content: Apply branch protection rules to your repository's *main* branch.
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Incorrect. Branch protection rules don't help in this situation.
+  - content: You decide to enforce the deployment of your infrastructure as code. You want to prohibit manual changes to your resources. Which of the following tools should you implement?
     choices:
-    - content: ""
+    - content: Azure Monitor
+      isCorrect: false
+      explanation: Incorrect. Azure Monitor doesn't prohibit manual changes to resources.
+    - content: Azure Role-Based Access Control (Azure RBAC)
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: Correct. Azure RBAC is used to control who has access to your Azure resources. You can configure Azure RBAC to disallow users to access resources, and only grant access to your pipeline's service principal.
+    - content: Resource tags
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Incorrect. Resource tags don't prohibit manual changes to resources.
+  - content: Which of the following statements describes a benefit of using Privileged Identity Management (PIM)?
     choices:
-    - content: ""
+    - content: PIM prevents all unauthorized changes to your Azure environment.
+      isCorrect: false
+      explanation: Incorrect. PIM doesn't prevent all unauthorized changes, but it helps to reduce them by allowing your users to have a small set of permissions usually, and to temporarily elevate their permissions when required.
+    - content: PIM enables you to use a separate user account to access your Azure environment with higher permissions than you usually have.
+      isCorrect: false
+      explanation: Incorrect. Unlike break-glass accounts, PIM doesn't require that you use a separate user account.
+    - content: PIM enables you to request that your user account is temporarily granted higher permissions than you usually have.
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: Correct. PIM allows you to use your own user account and identity, with a set of additional permissions granted temporarily.
