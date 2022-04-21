@@ -10,7 +10,6 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: devops-toolset
 durationInMinutes: 1
 content: |
   [!include[](includes/3-secure-pipelines.md)]

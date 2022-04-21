@@ -1,6 +1,6 @@
 When you use automation to deploy your infrastructure, your pipeline and repository becomes very powerful and important because they represent the only way that changes are applied to your controlled environments.
 
-There are many different parts of your Azure DevOps organization, repository, and pipeline that each need to be protected. The table below provides some of the most important elements to protect, and an example of a vulnerability that might occur if you don't protect it adequately.
+There are many different parts of your Azure DevOps organization, GitHub repository, and pipelines that each need to be protected. The table below provides some of the most important elements to protect, and an example of a vulnerability that might occur if you don't protect it adequately.
 
 | Element to protect | Example vulnerability |
 |-|-|
@@ -20,24 +20,10 @@ Consider how you'll grant access to your Azure DevOps organization or GitHub rep
 
 It's a good practice to use your organization's Azure AD as your pipeline's identity provider. Then, you can ensure that whenever somebody joins or leaves your organization, access to your pipeline is automatically granted or revoked. By using Azure AD, you can also easily implement protections like conditional access and multifactor authentication.
 
-::: zone pivot="github"
-
 > [!NOTE]
-> Azure AD integration requires a GitHub Enterprise license.
+> To use Azure AD integration with GitHub, your organization needs a GitHub Enterprise license.
 
-::: zone-end
-
-::: zone pivot="github"
-
-You can also create *teams*, which represent sets of users who can be granted permissions together. It's a good practice to define teams and then to assign permissions to the teams instead of to individual users. That way, it's easy to change the permissions of users by adding them to and removing them from teams.
-
-::: zone-end
-
-::: zone pivot="azuredevops"
-
-You can also use *groups*, which represent sets of users who can be granted permissions together. It's a good practice to define groups and then to assign permissions to the groups instead of to individual users. That way, it's easy to change the permissions of users by adding them to and removing them from groups.
-
-::: zone-end
+You can also create *teams* (in GitHub) or *groups* (in Azure DevOps), which represent sets of users who can be granted permissions together. It's a good practice to define teams and then to assign permissions to the teams instead of to individual users. That way, it's easy to change the permissions of users by adding them to and removing them from teams.
 
 ## Protect important code branches
 
@@ -71,7 +57,11 @@ Next, think about the permissions that your service principals are granted:
 * Carefully consider the permissions that you grant to each service principal. For example, suppose you have a service principal that you use to read the configuration of a shared resource. Consider whether you can grant *Reader* access to that service principal, since it doesn't need to do anything more.
 * Use separate service principals for each of your environments. That way, even if a principal's credentials are compromised or if somebody gets access to one environment, they can't access other environments.
 
-::: zone pivot="github"
+## Protect your Azure Pipelines service connections
+
+In Azure Pipelines, a *service connection* contains the credentials for a service principal to use to access your Azure environment. It's important that you protect your service connections, and that you control which pipelines use each service connection. Otherwise, you might accidentally enable a non-production environment to use a service principal with access to production resources. When you create a service connection, you can configure it to require your approval before it can be used by a new pipeline.
+
+You can also associate *checks* with specific service connections, which adds a further layer of protection. For example, you can configure a production service connection to include a check that verifies it's only used on code from your repository's *main* branch. This check helps to prevent unauthorized code from being deployed to your production environment.
 
 ## Use GitHub security features
 
@@ -82,18 +72,6 @@ GitHub provides a suite of security features, which you should evaluate and use.
 - Auditing, to understand who has made changes to your GitHub environment.
 - Security overview, which consolidates all of your security alerts across your organization's repositories.
 
-::: zone-end
-
-::: zone pivot="azuredevops"
-
-## Protect your pipeline's service connections
-
-In Azure Pipelines, a *service connection* contains the credentials for a service principal to use to access your Azure environment. It's important that you protect your service connections, and that you control which pipelines use each service connection. Otherwise, you might accidentally enable a non-production environment to use a service principal with access to production resources. When you create a service connection, you can configure it to require your approval before it can be used by a new pipeline.
-
-You can also associate *checks* with specific service connections, which adds a further layer of protection. For example, you can configure a production service connection to include a check that verifies it's only used on code from your repository's *main* branch. This check helps to prevent unauthorized code from being deployed to your production environment.
-
 ## Use Azure DevOps audit logging
 
 Azure DevOps provides *audit logs*, to help you to understand who has made changes to your pipelines, branch policies, repositories, and other resources. It's a good practice to enable auditing, and to review the audit logs regularly.
-
-::: zone-end
