@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.deploy-paas-solutions-with-azure-sql.deploy-sql-edge
-title: Deploy SQL Edge
+uid: learn.wwl.deploy-paas-solutions-with-azure-sql.describe-sql-edge
+title: Describe SQL Edge
 metadata:
-  title: Deploy SQL Edge
-  description: "Deploy SQL Edge"
+  title: Describe SQL Edge
+  description: "Describe SQL Edge"
   ms.date: 04/21/2022
   author: wwlpublish
   ms.author: jupadrao
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/7-deploy-sql-edge.md)]
+  [!include[](includes/7-describe-sql-edge.md)]
