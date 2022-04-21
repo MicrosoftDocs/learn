@@ -17,9 +17,14 @@ Azure Blob storage is Microsoft's object storage solution for the cloud. Blob st
 
 Objects in Blob storage can be accessed from anywhere in the world via HTTP or HTTPS. Users or client applications can access blobs via URLs, the Azure Storage REST API, Azure PowerShell, Azure CLI, or an Azure Storage client library. The storage client libraries are available for multiple languages, including .NET, Java, Node.js, Python, PHP, and Ruby.
 
+> [!NOTE]
+> [You can access data from Azure Blob Storage by using the NFS protocol.](/learn/modules/access-data-azure-blob-storage-multiple-protocols/4-access-data-azure-blob-storage-nfs-protocoll)
+
+
+
 ## Azure files
 
-Azure Files enables you to set up highly available network file shares that can be accessed by using the standard Server Message Block (SMB) protocol. That means that multiple VMs can share the same files with both read and write access. You can also read the files using the REST interface or the storage client libraries.
+Azure Files enables you to set up highly available network file shares. Shares can be accessed the Server Message Block (SMB) protocol and the Network File System (NFS) protocol. That means that multiple VMs can share the same files with both read and write access. You can also read the files using the REST interface or the storage client libraries.
 
 One thing that distinguishes Azure Files from files on a corporate file share is that you can access the files from anywhere in the world using a URL that points to the file and includes a shared access signature (SAS) token. You can generate SAS tokens; they allow specific access to a private asset for a specific amount of time.
 

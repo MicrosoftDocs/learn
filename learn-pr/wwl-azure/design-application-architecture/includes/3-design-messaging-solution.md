@@ -59,13 +59,13 @@ Use Azure Service Bus queues if you need/have:
 
 - An At-Most-Once delivery guarantee.
 
-- A first-in-first-out guarantee.
+- At-Least-Once message processing  (PeekLock receive mode)
+
+- At-Most-Once message processing (ReceiveAndDelete receive mode)
 
 - To group messages into transactions.
 
 - To receive messages without polling the queue.
-
-- To provide a role-based access model to the queues.
 
 - To handle messages larger than 64 KB but less than 256 KB.
 

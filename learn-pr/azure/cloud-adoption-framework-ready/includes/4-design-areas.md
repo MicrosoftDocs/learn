@@ -35,7 +35,7 @@ Use Azure Policy to provide guardrails and to help ensure continued compliance w
 
 <!-- cSpell:ignore AppOps -->
 
-Enterprise-scale architecture shouldn't consider any abstraction layers such as customer-developed portals or tooling. It should provide a consistent experience for both centrally managed operations teams and dedicated workload operations teams. 
+Enterprise-scale architecture shouldn't consider any abstraction layers, such as customer-developed portals or tooling. It should provide a consistent experience for both centrally managed operations teams and dedicated workload operations teams.
 
 Azure provides a unified and consistent control plane across all Azure resources and provisioning channels that are subject to role-based access and policy-driven controls. You can use Azure to establish a standardized set of policies and controls for governing the entire enterprise estate.
 
@@ -55,7 +55,7 @@ The enterprise-scale architecture approach advocates using Azure-native platform
 
 ### Recommendations
 
-Be prepared to trade off functionality because it's unlikely that everything will be required on day one. Use preview services and take dependencies on service roadmaps to remove technical blockers.
+Be prepared to trade off functionality, because it's unlikely that everything will be required on day one. Use preview services and take dependencies on service roadmaps to remove technical blockers.
 
 **Design impact:** Not all aspects of the desired operating model will be in general availability when you're using this approach.
 
@@ -77,7 +77,7 @@ Rather than provide opinionated solutions, the start-small approach uses decisio
 
 ### Deferred decisions
 
-When you're building out an environment to support existing operations processes, you don't always know what you'll need in the beginning. The start-small approach demonstrates ways to use cloud-first tools like Azure Resource Manager, Azure Policy, and Azure Blueprints to start building your environment. Rich configuration decisions are then deferred to run in parallel to your cloud adoption plan. As adoption progresses, the Govern, Manage, and Secure methodologies of the Cloud Adoption Framework for Azure guide implementation of those individual disciplines.
+When you're building out an environment to support existing operations processes, you don't always know what you'll need in the beginning. The start-small approach demonstrates ways to use cloud-first tools like Azure Resource Manager, Azure Policy, and Azure Blueprints to start building your environment. Rich configuration decisions are then deferred to run in parallel to your cloud-adoption plan. As adoption progresses, the Govern, Manage, and Secure methodologies of the Cloud Adoption Framework for Azure guide implementation of those individual disciplines.
 
 **Design impact:** You might need to complete a foundational implementation of the Govern, Manage, and Secure methodologies in parallel to landing zone deployment.
 
@@ -91,7 +91,7 @@ The concept of refactoring a landing zone is simple, but execution requires prop
 1. After that landing zone is deployed, use the decision trees in the articles under [Expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) (in the table of contents) to refactor and add to your initial landing zone.
 1. Repeat decision trees and refactoring until you have an enterprise-ready environment that meets the enhanced requirements of your security, operations, and governance teams.
 
-**Design impact:** Minor refactoring is common. Significant shifts from one operations model to another might result in major restructuring. In other words, customers who deploy one subscription to host workloads and foundational utilities might hit scale restrictions. If your portfolio is much broader, requiring multiple landing zones in this approach might require restructuring or redesigning common elements such as Active Directory or networking to expand to an enterprise operating model.
+**Design impact:** Minor refactoring is common. Significant shifts from one operations model to another might result in major restructuring. In other words, customers who deploy one subscription to host workloads and foundational utilities might hit scale restrictions. If your portfolio is much broader, requiring multiple landing zones in this approach might require restructuring or redesigning common elements, such as Active Directory or networking, to expand to an enterprise operating model.
 
 #### Development approach
 
@@ -101,21 +101,21 @@ The advantage of a refactoring-based approach is the ability to create parallel 
 
 *Figure 1: Parallel iterations for a landing zone.*
 
-In the example iteration paths, the cloud adoption team is migrating its portfolio of 100 workloads to the cloud. In parallel, the cloud platform team is focused on staying ahead of the cloud adoption plan to ensure that the environment is prepared for those workloads.
+In the example iteration paths, the cloud-adoption team is migrating its portfolio of 100 workloads to the cloud. In parallel, the cloud-platform team is focused on staying ahead of the cloud-adoption plan to ensure that the environment is prepared for those workloads.
 
 In this example, the planned iterations run as follows:
 
-1. The cloud platform team starts the development efforts by deploying an initial landing zone. That landing zone allows the cloud adoption team to deploy and begin testing its first workload.
-1. To prepare for the cloud adoption team's next deployment of 10 workloads, the cloud platform team works ahead to refactor and add a connected environment, treating the cloud as a perimeter network.
+1. The cloud-platform team starts the development efforts by deploying an initial landing zone. That landing zone allows the cloud-adoption team to deploy and begin testing its first workload.
+1. To prepare for the cloud-adoption team's next deployment of 10 workloads, the cloud-platform team works ahead to refactor and add a connected environment, treating the cloud as a perimeter network.
 1. Before the adoption team can release its first production workload, the security team requires a security review. While the adoption team deploys its first 10 workloads, the platform team moves ahead to define and implement security requirements.
 1. By the time the first workload is released to production, both teams should have enough learnings to prepare for a longer-term shared service model. Centralizing core service architectures will help align governance and operations teams. Centralizing core services will help prepare the adoption team to scale and release the next several waves of production workloads.
-1. As the team approaches its goal of migrating 100 workloads, it will naturally begin to move toward	a cloud center of excellence (CCoE) collaboration model and team structure.
+1. As the team approaches its goal of migrating 100 workloads, it will naturally begin to move toward a cloud center of excellence (CCoE) collaboration model and team structure.
 
 Configuring an enterprise-ready environment will take time. This approach will not eliminate that requirement. Instead, this approach is designed to remove early blockers and create opportunities for the platform and adoption teams to learn together.
 
 #### Guardrails for refactoring a landing zone
 
-All initial templates for landing zones have limitations. Guardrails or policies during refactoring should reflect those limitations. Before you begin the process of refactoring a landing zone, it's important to understand the long-term requirements of the cloud adoption plan and classification of the candidate workloads. Compare those requirements to the initial template limitations.
+All initial templates for landing zones have limitations. Guardrails or policies during refactoring should reflect those limitations. Before you begin the process of refactoring a landing zone, it's important to understand the long-term requirements of the cloud-adoption plan and classification of the candidate workloads. Compare those requirements to the initial template limitations.
 
 As an example of establishing refactoring guardrails, let's compare the development approach in the prior example and the CAF Migration landing zone blueprint from the Cloud Adoption Framework.
 
@@ -123,16 +123,16 @@ In accordance with the [assumptions of the CAF Migration landing zone blueprint]
 
 To balance these two competing requirements, the adoption team and platform team will agree to and operate under the following conditions:
 
-- The cloud adoption team will prioritize production workloads that don't have access to sensitive data and are not mission critical.
+- The cloud-adoption team will prioritize production workloads that don't have access to sensitive data and are not mission critical.
 - Before production release, the security and operations teams will validate alignment to the prior policy.
-- The cloud platform team will work with the security and governance teams to implement a security baseline. After the security team approves the implementation, the adoption team will be cleared to migrate workloads that have access to some sensitive data.
-- The cloud platform team will work with the operations team to implement a management baseline. After the operations team approves the implementation, the adoption team will be cleared to migrate workloads with a higher level of criticality.
+- The cloud-platform team will work with the security and governance teams to implement a security baseline. After the security team approves the implementation, the adoption team will be cleared to migrate workloads that have access to some sensitive data.
+- The cloud-platform team will work with the operations team to implement a management baseline. After the operations team approves the implementation, the adoption team will be cleared to migrate workloads with a higher level of criticality.
 
 For this example, the preceding conditions will allow the adoption team to start its migration effort. These conditions will also help the platform team shape its interactions with other teams as they build toward a longer-term enterprise ready environment.
 
 #### Meeting long-term requirements while refactoring
 
-The section of the Ready methodology on expanding your landing zone will aid in moving toward the longer-term requirements. As the cloud adoption team progresses with its adoption plan, review [Expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) for guidance to help make decisions and refactor to meet the evolving requirements of various teams.
+The section of the Ready methodology on expanding your landing zone will aid in moving toward the longer-term requirements. As the cloud-adoption team progresses with its adoption plan, review [Expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) for guidance to help make decisions and refactor to meet the evolving requirements of various teams.
 
 :::image type="content" source="../media/refactor-methodologies.png" alt-text="Diagram that shows parallel landing zone iteration." border="false":::
 

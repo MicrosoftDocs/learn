@@ -932,3 +932,18 @@ achievements:
   title: 'Microsoft Azure AI Fundamentals: Explore conversational AI'
   summary: Conversational AI is an artificial intelligence workload that deals with dialogs between AI agents and human users.
   iconUrl: /learn/achievements/explore-conversational-ai.svg
+- uid: learn.wwl.describe-security-management-capabilities-of-microsoft-365.badge
+  type: badge
+  title: Describe security management capabilities of Microsoft 365
+  summary: Learn about the security management capabilities of Microsoft 365.  Topics include Microsoft 365 Security Center, Secure score, incident management capabilities, and reports and dashboard.
+  iconUrl: /learn/achievements/describe-security-management-capabilities-of-microsoft-365.svg
+- uid: learn.wwl.describe-endpoint-security-with-microsoft-intune.badge
+  type: badge
+  title: Describe endpoint security with Microsoft Intune
+  summary: Learn how Microsoft Intune provides endpoint security. Topics include security baselines, compliance policies, integration with Microsoft 365 Defender for Endpoint, more.  Also, explore the Microsoft Endpoint Manager admin portal.
+  iconUrl: /learn/achievements/describe-endpoint-security-with-microsoft-intune.svg
+- uid: learn.wwl.evaluate-strategies-for-migrating-sql-databases-to-azure.badge
+  type: badge
+  title: Evaluate strategies for migrating SQL Databases to Azure
+  summary: Describe database migration options and tools on Azure. Understand how compatibility level affects database behavior. Describe Azure private and public preview options.
+  iconUrl: /learn/achievements/4-evaluate-strategies-for-moving-to-azure.svg

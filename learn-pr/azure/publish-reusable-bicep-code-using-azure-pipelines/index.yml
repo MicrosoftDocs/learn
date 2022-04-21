@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.azure.publish-reusable-bicep-code-using-azure-pipelines
+metadata:
+  moduleType: standard
+  title: Publish reusable Bicep code by using Azure Pipelines
+  description: Build Azure Pipelines deployment pipelines for template specs and Bicep modules. Lint your Bicep code, apply versioning, and publish it to Azure or to a Bicep registry.
+  ms.date: 03/29/2022
+  author: pazdedav
+  ms.author: dapazd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Publish reusable Bicep code by using Azure Pipelines
+summary: |
+  Publish Azure template specs and Bicep modules by using a deployment pipeline. Automatically validate and add versioning to your reusable Bicep code.
+abstract: |
+  After completing this module, you'll be able to:
+    - Publish Bicep modules to a private registry from a deployment pipeline
+    - Publish Bicep files to a template spec from a deployment pipeline
+    - Automatically add version numbers to your modules and template specs
+prerequisites: |
+  You should be familiar with using:
+
+  - Bicep modules and module registries.
+  - Azure template specs.
+  - The Bicep linter, along with testing your Bicep code.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+  - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
+  - Azure Pipelines, including stages, jobs, steps, and service connections.
+  
+  To work through the exercises in the module, you'll need:
+  
+  - An Azure account that has the ability to create resource groups, Azure Active Directory applications, and service principals.
+  - An Azure DevOps organization and account.
+  
+  You'll also need the following items installed locally:
+  
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
+  - [Git](https://git-scm.com/download?azure-portal=true)
+iconUrl: /learn/achievements/bicep/publish-reusable-bicep-code-using-azure-pipelines.svg
+levels:
+  - advanced
+roles:
+  - devops-engineer
+  - developer
+  - administrator
+languages:
+  - bicep
+products:
+  - azure-resource-manager
+  - azure-devops
+units:
+- learn.azure.publish-reusable-bicep-code-using-azure-pipelines.introduction
+- learn.azure.publish-reusable-bicep-code-using-azure-pipelines.publish-bicep-code-deployment-pipeline
+- learn.azure.publish-reusable-bicep-code-using-azure-pipelines.exercise-set-up-environment
+- learn.azure.publish-reusable-bicep-code-using-azure-pipelines.exercise-publish-template-spec
+- learn.azure.publish-reusable-bicep-code-using-azure-pipelines.design-pipeline-versioning-strategy
+- learn.azure.publish-reusable-bicep-code-using-azure-pipelines.exercise-publish-module-registry
+- learn.azure.publish-reusable-bicep-code-using-azure-pipelines.knowledge-check
+- learn.azure.publish-reusable-bicep-code-using-azure-pipelines.summary
+badge:
+  uid: learn.azure.publish-reusable-bicep-code-using-azure-pipelines.badge
