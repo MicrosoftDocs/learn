@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.data-management-analytics
+metadata:
+  moduleType: standard
+  title: Get started with enterprise scale data management and analytics scenario
+  description: "Enterprise scale data management and analytics scenario provides a prescriptive data platform design coupled with Azure best practices to define best course for the data journey."
+  ms.date: 1/28/2022
+  author: lapate
+  ms.author: lapate
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with enterprise scale data management and analytics scenario
+summary: "In this module, you'll learn how data management and analytics scenario help organizations build the strategic design to on board and govern modern data analytics workloads.  The module prepares you to design the enterprise scale architecture patterns focused on data first approach"
+abstract: |
+  By the end of this module, you'll be able to:
+
+    - Define your strategy and plan
+    - Design Considerations
+    - Provision Data Management Landing Zone
+    - Provision Data Landing Zone
+    - Provision Data Product Landing Zone
+prerequisites: |
+  - Basic knowledge of Azure
+  - Azure subscription ownership
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - beginner
+roles: 
+  - developer
+products: 
+- azure
+units:
+- learn.data-management-analytics.introduction
+- learn.data-management-analytics.define-a-strategy
+- learn.data-management-analytics.describe-data-management-landing-zones
+- learn.data-management-analytics.exercise-provision-data-management-landing-zone
+- learn.data-management-analytics.knowledge-check-data-management-landing-zone
+- learn.data-management-analytics.describe-data-landing-zones
+- learn.data-management-analytics.exercise-provision-data-landing-zone
+- learn.data-management-analytics.knowledge-check-data-landing-zone
+- learn.data-management-analytics.describe-data-integration-landing-zones
+- learn.data-management-analytics.describe-data-product-landing-zones
+- learn.data-management-analytics.exercise-provision-data-product-landing-zone
+- learn.data-management-analytics.knowledge-check-data-product-landing-zone
+- learn.data-management-analytics.summary
+badge:
+  uid: learn.LearnModules.badge

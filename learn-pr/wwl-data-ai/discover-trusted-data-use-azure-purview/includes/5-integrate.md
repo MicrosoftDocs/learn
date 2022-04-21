@@ -1,15 +1,15 @@
-Azure Purview can be integrated directly into Azure Synapse. If Azure Synapse Studio is massively deployed in your organization, you can get the data catalog experience directly in Azure Synapse Studio.
+Microsoft Purview can be integrated directly into Azure Synapse. If Azure Synapse Studio is massively deployed in your organization, you can get the data catalog experience directly in Azure Synapse Studio.
 
-This integrated experience allows you to discover Azure Purview assets, interact with them through Synapse capabilities, and push lineage information to Azure Purview.
+This integrated experience allows you to discover Microsoft Purview assets, interact with them through Synapse capabilities, and push lineage information to Microsoft Purview.
 
 >[!NOTE]
->To connect an Azure Purview Account to a Synapse workspace, you need 2 types of permissions. You need a contributor role in Synapse workspace from Azure portal identity and access management (IAM). You also need access to that Azure Purview Account. For more information, see [Azure Purview permissions](/azure/purview/catalog-permissions).
+>To connect an Microsoft Purview Account to a Synapse workspace, you need 2 types of permissions. You need a contributor role in Synapse workspace from Azure portal identity and access management (IAM). You also need access to that Microsoft Purview Account. For more information, see [Microsoft Purview permissions](/azure/purview/catalog-permissions).
 
-Let’s imagine you need to find and understand some assets before working with them in pipelines or notebooks. From Azure Synapse Studio, you can easily query your Azure Purview data catalog.
+Let’s imagine you need to find and understand some assets before working with them in pipelines or notebooks. From Azure Synapse Studio, you can easily query your Microsoft Purview data catalog.
 
 In Azure Synapse Studio, from the **Data** blade on the left, select **Purview** in the dropdown next to the search bar.
 
-![Dropdown on the left of the search bar displays the option to search the Synapse Workspace or Azure Purview.](../media/azure-purview-integrate-synapse-1.png)
+![Dropdown on the left of the search bar displays the option to search the Synapse Workspace or Microsoft Purview.](../media/azure-purview-integrate-synapse-1.png)
 
 Search for the asset that exists in Purview. Imagine you're looking for movie files. Enter the keyword **movie** in the search bar, and fine tune your search by selecting **Files** as the object type and **Raw** as the collection.
 
@@ -32,4 +32,4 @@ After reviewing data, you can use the asset, for example, adding to a new datafl
 [![Create new dataflow from purview search interface in Azure Synapse studio.](../media/azure-purview-synapse-data-flow.png)](../media/azure-purview-synapse-data-flow.png#lightbox)
 
 >[!NOTE]
->See [Connect an Azure Purview Account](/azure/synapse-analytics/catalog-and-governance/quickstart-connect-azure-purview) for detailed information about integrating Azure Purview into Azure Synapse Analytics.
+>See [Connect an Microsoft Purview Account](/azure/synapse-analytics/catalog-and-governance/quickstart-connect-azure-purview) for detailed information about integrating Microsoft Purview into Azure Synapse Analytics.

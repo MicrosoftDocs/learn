@@ -5,15 +5,15 @@ metadata:
   title: Knowledge check
   description: Review concepts around using Azure Communication Services to send an SMS message
   ms.date: 03/03/2021
-  author: probableprime
-  ms.author: rifox
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
 quiz:
   title: 'Knowledge check'
   questions:
-  - content: 'How can you use Azure Communication Services to send an SMS message?'
+  - content: 'How can Azure Communication Services be used to send an SMS message?'
     choices:
     - content: 'I can create a Communication Services resource using the Azure portal. This allows me to provision phone numbers.'
       isCorrect: false
