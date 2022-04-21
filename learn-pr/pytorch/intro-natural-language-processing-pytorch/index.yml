@@ -18,25 +18,25 @@ abstract: |
   - Learn how to build text classification models  
 iconUrl: /learn/achievements/pytorch-natural-language-process.svg
 levels:
-- beginner
+  - beginner
 roles:
-- data-scientist
-- developer
-- student
+  - data-scientist
+  - developer
+  - student
 products:
-- azure
+  - azure
 prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
 units:
-- learn.pytorch.intro-machine-learning.introduction
-- learn.pytorch.intro-natural-language-processing.introduction
-- learn.pytorch.intro-natural-language-processing.representing-text
-- learn.pytorch.intro-natural-language-processing.bow-tfidf
-- learn.pytorch.intro-natural-language-processing.embeddings
-- learn.pytorch.intro-natural-language-processing.recurrent-networks
-- learn.pytorch.intro-natural-language-processing.generative-networks
-- learn.pytorch.intro-natural-language-processing.summary
+  - learn.pytorch.intro-natural-language-processing.introduction
+  - learn.pytorch.intro-natural-language-processing.representing-text
+  - learn.pytorch.intro-natural-language-processing.bow-tfidf
+  - learn.pytorch.intro-natural-language-processing.embeddings
+  - learn.pytorch.intro-natural-language-processing.recurrent-networks
+  - learn.pytorch.intro-natural-language-processing.generative-networks
+  - learn.pytorch.intro-natural-language-processing.summary
+
 badge:
   uid: learn.pytorch.intro-natural-language-processing.badge
