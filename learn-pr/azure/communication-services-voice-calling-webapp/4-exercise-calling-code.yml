@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.communication-services-voice-calling-webapp.exercise-calling-code
+title: Exercise - Add Voice Calling code
+metadata:
+  title: Exercise - Exercise - Add Voice Calling code
+  description: Adding code to provide voice calling with Azure Communication Services.
+  author: ProbablePrime
+  ms.author: rifox
+  ms.date: 06/04/2022
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-exercise-calling-code.md)]
