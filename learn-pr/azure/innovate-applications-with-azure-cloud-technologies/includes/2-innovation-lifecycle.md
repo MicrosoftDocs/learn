@@ -5,7 +5,7 @@ Tailwind Traders has questions about innovation that affect many other organizat
 
 The answer to both questions is that Tailwind Traders needs to embrace change as part of its organizational culture. One reason why change-averse organizations often have change-related outages is that those changes are too large and impactful. The changes are hard to test in controlled and realistic environments.
 
-If processes are established to introduce changes frequently, those changes will be smaller in size and risk. Note that this process does not just involve adopting certain tools or technologies. It requires a culture that fosters change and accepts failures.
+If processes are established to introduce changes frequently, those changes will be smaller in size and risk. However, this process does not just involve adopting certain tools or technologies. It requires a culture that fosters change and accepts failures.
 
 The concept of accepting failures might seem counterintuitive, but it's vital to the innovation cycle. If people are afraid to fail because errors will put them at the center of blame games, new approaches to problem solving will likely not be pursued in the fear of failure. The whole organization will then be a prisoner of its established practices.
 
