@@ -56,7 +56,7 @@ Now, create a storage account for the NSG flow logs.
 
 To view the NSG flow logs, you'll use Log Analytics.
 
-1. On the Azure portal menu or from the **Home** page, search for and select **Log Analytics Workspaces**. The **Log Analytics Workspaces** pane appears.
+1. On the Azure portal menu or from the **Home** page, search for and select **Log Analytics workspaces**. The **Log Analytics workspaces** pane appears.
 
 1. In the command bar, select **Create**. The **Create Log Analytics workspace** pane appears.
 
@@ -71,8 +71,6 @@ To view the NSG flow logs, you'll use Log Analytics.
     | Name | `testsworkspace` |
     | Region | Select the same region as your resource group |
 
-1. Select **Next : Pricing tier**. On the **Pricing tier** tab, select **Pay-as-you-go (Per GB 2018)** for **Pricing tier**.
-
 1. Select **Review + Create**, and after validation passes, select **Create**.
 
 ## Enable flow logs
@@ -81,9 +79,9 @@ To set up flow logs, you must configure the NSG to connect to the storage accoun
 
 1. On the Azure portal menu, select **All resources**. Then, select the **MyNsg** network security group.
 
-1. In MyNsg menu, under **Monitoring**, select **NSG flow logs**. The **MyNsg | NSG flow logs** pane appears.
+1. In the MyNsg menu, under **Monitoring**, select **NSG flow logs**. The **MyNsg | NSG flow logs** pane appears.
 
-1. Select **Create NSG flow log**. The **Create a flow log** pane appears. 
+1. Select **Create**. The **Create a flow log** pane appears. 
 
 1. On the **Basics** tab, select or enter the following values.
 
@@ -91,12 +89,13 @@ To set up flow logs, you must configure the NSG to connect to the storage accoun
     | --- | --- |
     | **Project details**  |
     | Subscription | Select your subscription from the dropdown list. |
-    | Network Security Group| MyNsg |
+    | + Select NSG| On the **Select network security group** pane, search for and select MyNsg and **Confirm selection**. |
     | **Instance details**  |
     | Subscription | Select your subscription from the dropdown list. |
-    | Storage Accounts | Select `testworkspace`  |
+    | Storage Accounts | Select your unique storage account name.  |
+    | Retention (days) | 1 |
 
-1. Select the **Configuration** tab.
+1. Select **Next: Configuration**, then select or enter the following values.
 
     | Setting | Value |
     | --- | --- |
@@ -121,10 +120,10 @@ Now, you're ready to generate some network traffic between VMs to catch in the f
 1. From the command bar, select **Connect**, then select **RDP**, and then select **Download RDP File**. If you see a warning about the publisher of the remote connection, select **Connect**.
 
 1. Launch the **FrontendVM.rdp** file and select **Connect**. 
- 
+
 1. When asked for your credentials, select **More choices** and sign in with the username **azureuser** and the password you specified when you created the VM.
- 
-1. When asked for security a certificate, select **Yes**.
+
+1. When asked for a security certificate, select **Yes**.
 
 1. In the RDP session, if prompted, allow your device to be discoverable ONLY if on a private network.
  

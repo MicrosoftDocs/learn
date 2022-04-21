@@ -1,0 +1,13 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - 'module-2/**'
+
+stages:
+- template: pipeline-templates/publish-module.yml
+  parameters:
+    path: 'module-2/main.bicep'
