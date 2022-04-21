@@ -1,7 +1,7 @@
 Business-continuity and disaster-recovery requirements at the application layer drive platform-level capabilities. These capabilities must be available for consumption by application teams to meet their *availability targets* and *recovery targets*:
 
-- Availability targets are typically measured by service-level objectives (SLOs) and service-level agreements (SLAs).
-- Recovery targets are typically measured by recovery-point objectives (RPOs) and recovery-time objectives (RTOs). 
+- *Availability targets* are typically measured by service-level objectives (SLOs) and service-level agreements (SLAs).
+- *Recovery targets* are typically measured by recovery-point objectives (RPOs) and recovery-time objectives (RTOs).
 
 These targets should be well understood by central IT and must inform many of the platform-level architectural decisions. A platform that can't meet application availability targets and recovery targets puts the business at risk.
 
@@ -21,7 +21,7 @@ Key components in the platform design for HA include a network architecture that
 
 ## Disaster recovery
 
-*Disaster recovery (DR)* is the ability to recover from high-impact events that result in downtime and data loss. A disaster is a major event with an impact much larger and long lasting than the application can mitigate through the HA portion of its design.
+*Disaster recovery (DR)* is the ability to recover from high-impact events that result in downtime and data loss. A disaster is a major event with an impact much larger and longer lasting than the application can mitigate through the HA portion of its design.
 
 From the platform perspective, ensuring that an application team can meet its recovery targets requires understanding the organization's application DR strategies and their supporting infrastructure. Typical DR strategies require:
 
