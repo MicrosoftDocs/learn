@@ -17,4 +17,4 @@ ms.author: jodowns
 
 1. In the list of terminal shells, select **bash**, and then select the plus sign to open a new terminal that uses the **bash** shell.
 
-   :::image type="content" source="media/select-bash-plus.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal selected.":::
+   :::image type="content" source="media/select-bash-plus.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal and the plus sign selected.":::

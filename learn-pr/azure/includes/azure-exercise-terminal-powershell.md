@@ -17,4 +17,4 @@ ms.author: jodowns
 
 1. In the list of terminal shells, select **powershell** or **pwsh**, and then select the plus sign to open a new terminal that uses the **powershell** or **pwsh** shell.
 
-   :::image type="content" source="media/select-powershell-plus.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the powershell terminal selected.":::
+   :::image type="content" source="media/select-powershell-plus.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the powershell terminal and the plus sign selected.":::

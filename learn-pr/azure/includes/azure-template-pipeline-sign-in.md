@@ -19,13 +19,11 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 1. If a shell other than **bash** appears, select the shell dropdown, and then select **Git Bash (Default)**.
 
-    :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and bash selected.":::
+    :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and Git Bash (Default) selected.":::
 
-1. In the list of terminal shells, select **bash**.
+1. In the list of terminal shells, select **bash**, and then select the plus sign to open a new terminal that uses the **bash** shell.
 
-   :::image type="content" source="media/select-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal selected.":::
-
-1. In the terminal, select the plus sign (**+**) to create a new terminal with Bash as the shell.
+   :::image type="content" source="media/select-bash-plus.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal and the plus sign selected.":::
 
 ### Sign in to Azure by using the Azure CLI
 
@@ -53,11 +51,9 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
     :::image type="content" source="media/select-shell-powershell.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and powershell selected.":::
 
-1. In the list of terminal shells, select **powershell** or **pwsh**.
+1. In the list of terminal shells, select **powershell** or **pwsh**, and then select the plus sign to open a new terminal that uses the **powershell** or **pwsh** shell.
 
-   :::image type="content" source="media/select-powershell.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the powershell terminal selected.":::
-
-1. In the terminal, select the plus sign (**+**) to create a new terminal with pwsh or PowerShell as the shell.
+   :::image type="content" source="media/select-powershell-plus.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the powershell terminal and the plus sign selected.":::
 
 ### Sign in to Azure by using Azure PowerShell
 
