@@ -30,6 +30,7 @@ prerequisites: |
   - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
 units:
+- learn.pytorch.intro-machine-learning.introduction
 - learn.pytorch.intro-natural-language-processing.introduction
 - learn.pytorch.intro-natural-language-processing.representing-text
 - learn.pytorch.intro-natural-language-processing.bow-tfidf
@@ -37,6 +38,5 @@ units:
 - learn.pytorch.intro-natural-language-processing.recurrent-networks
 - learn.pytorch.intro-natural-language-processing.generative-networks
 - learn.pytorch.intro-natural-language-processing.summary
-
 badge:
   uid: learn.pytorch.intro-natural-language-processing.badge
