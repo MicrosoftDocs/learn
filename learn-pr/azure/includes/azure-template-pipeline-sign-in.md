@@ -11,15 +11,19 @@ ms.author: jodowns
 
 To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
 
-1. To open a Visual Studio Code terminal window, select **Terminal** > **New Terminal**. The window usually opens at the bottom of your screen.
+1. In the **Terminal** menu, select **New Terminal**. The terminal window usually opens in the lower half of your screen.
 
-1. If the dropdown control on the right displays **bash**, the correct shell is open and you can skip to the next section.
+1. If the shell shown on the right side of the terminal window is **bash**, the correct shell is open and you and you can skip to the next section.
 
-   :::image type="content" source="media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash displayed in the dropdown control.":::
+    :::image type="content" source="media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash option shown.":::
 
-   If **bash** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **bash**.
+1. If a shell other than **bash** appears, select the shell dropdown, and then select **Git Bash (Default)**.
 
-   :::image type="content" source="media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting a preferred terminal shell.":::
+    :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and bash selected.":::
+
+1. In the list of terminal shells, select **bash**.
+
+   :::image type="content" source="media/select-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal selected.":::
 
 1. In the terminal, select the plus sign (**+**) to create a new terminal with Bash as the shell.
 
@@ -39,15 +43,19 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true).
 
-1. To open a Visual Studio Code terminal window, select **Terminal** > **New Terminal**. The window usually opens at the bottom of your screen.
+1. In the **Terminal** menu, select **New Terminal**. The terminal window usually opens in the lower half of your screen.
 
-1. If the dropdown control at the right displays **pwsh** or **PowerShell**, the correct shell is open and you can skip to the next section.
+1. If the shell shown on the right side of the terminal window is **powershell** or **pwsh**, the correct shell is open and you can skip to the next section.
 
-   :::image type="content" source="media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with text signifying PowerShell displayed in the dropdown control.":::
+    :::image type="content" source="media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the p w s h option displayed in the shell dropdown.":::
 
-   If **pwsh** or **PowerShell** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.
+1. If a shell other than **powershell** or **pwsh** appears, select the shell dropdown, and then select **PowerShell**.
 
-   :::image type="content" source="media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting your preferred terminal shell.":::
+    :::image type="content" source="media/select-shell-powershell.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and powershell selected.":::
+
+1. In the list of terminal shells, select **powershell** or **pwsh**.
+
+   :::image type="content" source="media/select-powershell.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the powershell terminal selected.":::
 
 1. In the terminal, select the plus sign (**+**) to create a new terminal with pwsh or PowerShell as the shell.
 
