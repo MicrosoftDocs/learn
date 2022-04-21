@@ -1,13 +1,13 @@
-Deploying your infrastructure as code can help automate your deployments, increase confidence in your deployments, and increase efficiency and repeatability. But, these benefits only apply if you and your team are diligent and avoid making ad hoc manual changes to your environment. In this module, you'll learn how to apply configuration and governance to your Azure environment and pipelines to avoid unexpected or uncontrolled changes.
+When you deploy your infrastructure as code you can automate your deployments, improve your confidence in your deployments, and increase the efficiency of your team's work. But, these benefits only apply if you and your team are diligent and avoid making manual changes to your environment. In this module, you'll learn how to apply configuration and governance to your Azure environment and pipelines to avoid unexpected or uncontrolled changes.
 
 ## Example scenario
 
-Suppose you work as the Azure administrator at a toy company. Over the last several months, you and your team have been converting your Azure deployments to use Bicep, and automated them by using Azure Pipelines and GitHub Actions. But, you still have some team members who haven't quite adopted the mindset of deploying everything as code. Recently you had several situations where people haven't followed the recommended practices:
+Suppose you work as the Azure administrator at a toy company. Over the last several months, you and your team have been converting your Azure deployments to use Bicep, and automated them by using Azure Pipelines and GitHub Actions. But, you still have some team members who haven't quite adopted the mindset of deploying all of their changes as code. Recently you had several situations where people haven't followed the recommended practices:
 
 1. Somebody made a direct change to a resource by using the Azure portal.
 1. Somebody deployed a Bicep file directly from their local computer.
 1. Somebody used a pipeline's service principal to manually deploy a change to production.
-1. Somebody commited a Bicep file change directly to the repository’s main branch, bypassing pull request reviews.
+1. Somebody committed a Bicep file change directly to the repository’s main branch, bypassing pull request reviews.
 1. Somebody updated a Bicep file by using a pull request, and their changes were validated, tested, and deployed throughout the correct sequence of environments.
 
 :::image type="content" source="../media/1-risks.png" alt-text="Diagram showing several approaches to making Azure configuration changes." border="false":::
@@ -33,5 +33,5 @@ You should be familiar with using:
 
 - Infrastructure as code and its benefits, and technology such as Bicep or Terraform.
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-- Managing your code in Git, including branching and pull requests.
+- Git for managing your code, including branching and pull requests.
 - Automated deployments by using either GitHub Actions or Azure Pipelines.

@@ -4,7 +4,7 @@ There are many different parts of your Azure DevOps organization, GitHub reposit
 
 | Element to protect | Example vulnerability |
 |-|-|
-| Your Azure DevOps organization or GitHub repository, including who has access to it and what they're allowed to do. | A disgrunted ex-employee deletes your code repository. |
+| Your Azure DevOps organization or GitHub repository, including who has access to it and what they're allowed to do. | A disgruntled ex-employee deletes your code repository. |
 | Important branches in your repository, and what needs to happen to change the code on those branches. | Somebody accidentally commits some insecure Bicep code onto your repository's *main* branch. |
 | The code inside your repository, including your infrastructure definitions, tests, and application code. | Somebody forgets to test the code they've just written, and it doesn't work correctly when it's released to production. |
 | The pipeline definition. | Somebody inadvertently adds a pipeline step that logs a database connection string into the pipeline's log. |
@@ -48,12 +48,12 @@ Pipelines use service principals to access Azure and other environments. It's im
 First, you can consider protecting the credentials for your service principals:
 
 * Whenever possible, use *managed identities* or *workload identities* to avoid storing credentials entirely. While you can't use managed identities or workload identities with all pipelines, if you can, it's a good practice to do so.
-* Plan how you will change, or *rotate*, your service principal's credentials on a regular basis. For example, your organization might have a policy to rotate credentials every 90 or 120 days. Consider who will be responsible for doing so, and how you'll update all of the places where the credential is used.
+* Plan how you'll change, or *rotate*, your service principal's credentials on a regular basis. For example, your organization might have a policy to rotate credentials every 90 or 120 days. Consider who will be responsible for doing so, and how you'll update all of the places where the credential is used.
 * Consider designating a *secret custodian* - somebody whose role is to handle and manage secrets, keys, and certificates, to avoid exposing them to other parts of the organization.
 
 Next, think about the permissions that your service principals are granted:
 
-* Apply Azure Active Directory (Azure AD) *conditional access* policies to your service principals, which helps to identify risky sign-ins and behaviors.
+* Apply Azure Active Directory (Azure AD) *conditional access* policies to your service principals, which help to identify risky sign-ins and behaviors.
 * Carefully consider the permissions that you grant to each service principal. For example, suppose you have a service principal that you use to read the configuration of a shared resource. Consider whether you can grant *Reader* access to that service principal, since it doesn't need to do anything more.
 * Use separate service principals for each of your environments. That way, even if a principal's credentials are compromised or if somebody gets access to one environment, they can't access other environments.
 
@@ -61,7 +61,7 @@ Next, think about the permissions that your service principals are granted:
 
 In Azure Pipelines, a *service connection* contains the credentials for a service principal to use to access your Azure environment. It's important that you protect your service connections, and that you control which pipelines use each service connection. Otherwise, you might accidentally enable a non-production environment to use a service principal with access to production resources. When you create a service connection, you can configure it to require your approval before it can be used by a new pipeline.
 
-You can also associate *checks* with specific service connections, which adds a further layer of protection. For example, you can configure a production service connection to include a check that verifies it's only used on code from your repository's *main* branch. This check helps to prevent unauthorized code from being deployed to your production environment.
+You can also associate *checks* with specific service connections, which add a further layer of protection. For example, you can configure a production service connection to include a check that verifies it's only used on code from your repository's *main* branch. This check helps to prevent unauthorized code from being deployed to your production environment.
 
 ## Use GitHub security features
 

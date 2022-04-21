@@ -21,7 +21,7 @@ prerequisites: |
   You should be familiar with:
     - Infrastructure as code and its benefits, and technology such as Bicep or Terraform.
     - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-    - Managing your code in Git, including branching and pull requests.
+    - Git for managing your code, including branching and pull requests.
     - Automated deployments by using either GitHub Actions or Azure Pipelines.
 iconUrl: /learn/achievements/bicep/control-govern-azure-environment-deploying-infrastructure-code.svg
 levels:

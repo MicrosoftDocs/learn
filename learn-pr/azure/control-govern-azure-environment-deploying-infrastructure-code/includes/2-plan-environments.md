@@ -13,7 +13,7 @@ Azure deployment and configuration is a broad area, covering far more than appli
 
 When you first start defining your infrastructure as code, you might not be aware that all of these items can be defined in your templates or definitions. They can, though, and as your use of automation matures, it’s a good practice to define everything about your environment as code. By doing so, you can use a consistent, tested, and approved process for *all* of your Azure configuration. And you can track how your Azure environment has changed over time, and trace the history of each change.
 
-For example, suppose you need to configure your Azure Monitor alerts. At first, you might think that alerts don’t need any automation. But alerts are an important part of your Azure configuration, and if an alert isn’t created correctly you might miss out on notifications of critical production issues. By defining your alerts in code, your team members can review the alerts, you can deploy them to non-productions environments first if you need to, and you’ll have full traceability of the changes to your Azure configuration.
+For example, suppose you need to configure your Azure Monitor alerts. At first, you might think that alerts don’t need any automation. But alerts are an important part of your Azure configuration, and if an alert isn’t created correctly you might miss notifications of critical production issues. By defining your alerts in code, your team members can review the alerts, you can deploy them to non-productions environments first if you need to, and you’ll have full traceability of the changes to your Azure configuration.
 
 ## Environments
 
@@ -88,7 +88,7 @@ When automated or manual checks need to succeed in order to continue with a depl
 
 ### Manual intervention
 
-It’s a good idea to automate as many checks as possible during your code review and deployment processes. However, your organisation might require manual approval for deployment to production or other controlled environments.
+It’s a good idea to automate as many checks as possible during your code review and deployment processes. However, your organization might require manual approval for deployment to production or other controlled environments.
 
 If you use manual approval gates for deployments, follow these recommended practices:
 
@@ -101,7 +101,7 @@ Azure provides a set of tools and capabilities to help you to govern your enviro
 
 - Policies, to detect resources that have been configured in ways that don’t fit with your organization’s requirements, or even to prevent resources from being created or reconfigured in a way that will cause them to be out of compliance.
 - Locks, to prevent changes or deletion of important resources.
-- Management groups, to help you organise your Asure subscriptions and configure role-based access control and policies across your environments.
+- Management groups, to help you organize your Azure subscriptions and configure role-based access control and policies across your environments.
 - Azure Monitor, to record metrics and logs from your resources, present them in dashboards, and automatically alert you when they deviate from your requirements.
 
 When you build your Azure estate, you can consider using the Azure Landing Zones. By using a landing zone, you can build governance into your environment from the start, and there are prebuilt Bicep files for Azure's landing zones.
