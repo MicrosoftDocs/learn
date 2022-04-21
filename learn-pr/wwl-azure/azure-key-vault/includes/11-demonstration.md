@@ -6,11 +6,11 @@ In this demonstration, we will explore the Azure Key Vault.
 
 In this task, we will create a key vault.
 
-1.  Sign in the to the Azure portal and search for **Key Vaults**.
-2.  On the Virtual Networks page, click **+ Add**.
+1.  Sign in to the Azure portal and search for **Key Vaults**.
+2.  On the Key vaults page, click **+ Create**.
 3.  On the **Basics** tab, fill out the required information.
     
-     -  Discuss the **Pricing tier** selections, Standard and Premium. Premium supports HSM backed keys.
+     -  Discuss the **Pricing tier** selections, Standard and Premium. Premium supports HSM-backed keys.
      -  Discuss **Soft delete** and **Retention period**.
 4.  Click **Review and Create** and then **Create**.
 5.  Wait for the new key vault to be created, or move to a key vault that has already been created.
@@ -23,7 +23,7 @@ In this task, we will review key vault settings.
 2.  Under **Settings**, click **Keys**.
 3.  Click **Generate/Import** and review the Keys configuration information.
 4.  Under **Settings**, click **Secrets**.
-5.  Click **Generate/Import**, review the Secrets configuration information and click **Create**.
+5.  Click **Generate/Import**, review the Secrets configuration information, and click **Create**.
 6.  View the new Secret and note that keys support versioning.
 7.  Under **Settings**, click **Certificates**.
 8.  Click **Generate/Import** and review the Certificates configuration information.
@@ -57,7 +57,7 @@ In this task, we will configure access policies and test access.
     
     ```
 12. Return to the Global Administrator account in the portal.
-13. Add the Key Vault Contributor role to you test user.
+13. Add the Key Vault Contributor role to your test user.
 14. Try the test user's access. Access is denied.
     
     ```CLI
@@ -68,7 +68,7 @@ In this task, we will configure access policies and test access.
 16. Return to your Key Vault and create an access policy.
 17. Under **Settings**, select **Access policies** and then **Add Access Policy**.
     
-     -  Configure from template (optional): **Key, Secret, &amp; Certificate Management**
+     -  Configure from the template (optional): **Key, Secret, &amp; Certificate Management**
      -  Key permissions: **none**
      -  Secret permissions: **Get, List**
      -  Certificate permissions: **none**

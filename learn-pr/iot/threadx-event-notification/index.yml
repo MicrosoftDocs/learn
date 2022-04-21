@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.iot.threadx-event-notification
+metadata:
+  title: Use a counting semaphore for event notification in Azure RTOS ThreadX
+  description: Learn when to use a mutex and a counting semaphore and consolidate your understanding of the differences.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: pacorte
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use a counting semaphore for event notification in Azure RTOS ThreadX
+summary: Learn when to use a mutex and a counting semaphore and consolidate your understanding of the differences.
+abstract:  | 
+   In this module, you will:
+   - Use a counting semaphore in an event notification application.
+   - Use two threads in a producer-consumer scenario.
+   - Understand the difference between mutual exclusion and event notification.
+   - Design and debug the ThreadX solution using a hands-on approach with GitHub Codespace or Visual Studio. 
+prerequisites: |
+  - [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
+  - Working knowledge of C or C++, GitHub and Visual Studio
+  - Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)
+iconUrl: /learn/achievements/iot/threadx-event-notification.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-iot
+- azure-iot-hub
+- azure-rtos
+units:
+- learn.iot.threadx-event-notification.introduction
+- learn.iot.threadx-event-notification.counting-semaphore-mutex-comparison
+- learn.iot.threadx-event-notification.scenario
+- learn.iot.threadx-event-notification.activities
+- learn.iot.threadx-event-notification.design
+- learn.iot.threadx-event-notification.building-blocks
+- learn.iot.threadx-event-notification.exercise-build-debug
+- learn.iot.threadx-event-notification.knowledge-check
+- learn.iot.threadx-event-notification.summary
+
+badge:
+  uid: learn.iot.threadx-event-notification.badge 
