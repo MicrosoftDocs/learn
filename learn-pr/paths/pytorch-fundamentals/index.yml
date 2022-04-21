@@ -23,18 +23,18 @@ video:
   title: PyTorch Fundamentals
   url: https://www.microsoft.com/videoplayer/embed/RE4Nci7
 levels:
-- beginner
-- intermediate
+  - beginner
+  - intermediate
 roles:
-- data-scientist
-- developer
-- student
+  - data-scientist
+  - developer
+  - student
 products: 
-- azure-machine-learning
+  - azure-machine-learning
 modules:
-- learn.pytorch.intro-machine-learning
-- learn.pytorch.intro-computer-vision
-- learn.pytorch.intro-natural-language-processing
-- learn.pytorch.intro-audio-classification
+  - learn.pytorch.intro-machine-learning
+  - learn.pytorch.intro-computer-vision
+  - learn.pytorch.intro-natural-language-processing
+  - learn.pytorch.intro-audio-classification
 trophy:
   uid: learn.pytorch.pytorch-fundamentals.trophy
