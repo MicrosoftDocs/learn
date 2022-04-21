@@ -7,6 +7,7 @@ Now, you’re able to increase your confidence in, and the security of, your Azu
 ## More resources
 
 - [End-to-end governance in Azure when using CI/CD](/azure/architecture/example-scenario/governance/end-to-end-governance-in-azure)
+- [Azure landing zones](/azure/cloud-adoption-framework/ready/landing-zone/)
 - Secure your pipelines
   - Manage users, groups. and permissions
     - [Conditional Access](/azure/active-directory/conditional-access/overview)
