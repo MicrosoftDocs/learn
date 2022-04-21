@@ -53,7 +53,7 @@ First, you can consider protecting the credentials for your service principals:
 
 Next, think about the permissions that your service principals are granted:
 
-* Apply Azure Active Directory (Azure AD) *conditional access* policies to your service principals, which helps to identify risky sign-ins and behaviors. <!-- TODO when it's GA? -->
+* Apply Azure Active Directory (Azure AD) *conditional access* policies to your service principals, which helps to identify risky sign-ins and behaviors.
 * Carefully consider the permissions that you grant to each service principal. For example, suppose you have a service principal that you use to read the configuration of a shared resource. Consider whether you can grant *Reader* access to that service principal, since it doesn't need to do anything more.
 * Use separate service principals for each of your environments. That way, even if a principal's credentials are compromised or if somebody gets access to one environment, they can't access other environments.
 
