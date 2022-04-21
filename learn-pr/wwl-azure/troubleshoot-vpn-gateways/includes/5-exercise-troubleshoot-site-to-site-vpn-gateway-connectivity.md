@@ -1,23 +1,28 @@
+> [!IMPORTANT]
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still view the demonstration video at the bottom of this page.
+
 As your organization's support engineer, you've been asked to help fix an issue between your resources in the US and northern Europe. you've existing infrastructure of virtual networks in two different regions. The VMs in the US virtual network (VNet1) are unable to get a ping response from the VMs in northern Europe (VNet2).
 
 Checking the topology, you can see that there are VPN gateways and connections.
 
 :::image type="content" source="../media/5-network-diagram.png" alt-text="Diagram of the topology of the network that needs troubleshooting." border="false" lightbox="../media/5-network-diagram.png":::
 
-In this exercise, you'll troubleshoot and resolve the connectivity issue. If you've not already run the script in unit 2, please do so now so you can follow the exercise below.
+In this exercise, you'll troubleshoot and resolve the connectivity issue.
 
-
-- Open the [Azure portal](https://portal.azure.com) in a new tab.
-
+> [!IMPORTANT]
+> You need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true) to complete the exercises in this module. If you don't have an Azure subscription, you can still read along.
 ## Test the connection
 
 1. We're going to test the connection between the two VMs, by sending a ping request between them.
+
+1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) in a new tab.
+
 
 1. In the search bar, type **virtual machines** then, under Services, select **Virtual machines**.
 
    :::image type="content" source="../media/5-virtual-machines.png" alt-text="Screenshot showing the search bar and the results of searching for virtual machines.":::
 
-1. From the list of VMs, select VM1.
+1. From the list of VMs, select **virtualMachine1**.
 
    :::image type="content" source="../media/5-two-virtual-machines.png" alt-text="Screenshot showing the two virtual machines.":::
 
@@ -25,39 +30,39 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue. If you
 
    :::image type="content" source="../media/5-network-ip-address.png" alt-text="Screenshot of V M 1 showing networking the private and public IP addresses." lightbox="../media/5-network-ip-address-lightbox.png":::
 
-1. Repeat the last two steps for VM2 and note the Public IP address and Private IP address.
+1. Repeat the last two steps for **virtualMachine2** and note the Public IP address and Private IP address.
 
-1. On the right, in the Cloud Shell, connect to VM1 with SSH to the public IP address:
+1. On the right, in the Cloud Shell, connect to virtualMachine1 with SSH to the public IP address:
 
    ```azurecli
 
-   ssh azureuser@<VM1 public IP address>;
+   ssh azureuser@<virtualMachine1 public IP address>;
 
    ```
    > [!NOTE]
-   > Replace \<VM1 public IP address\> with the public IP address you noted for VM1.
+   > Replace \<virtualMachine1 public IP address\> with the public IP address you noted for virtualMachine1.
 
 1. At the prompt, ` Are you sure you want to continue connecting (yes/no)? ` type yes.
 
-1. At the prompt for a password, type azur3Pa55w.rd.
+1. Your prompt should change to `azureuser@virtualMachine1:~$`.
 
-1. Your prompt should change to `azureuser@VM1:~$`.
+1. This means you've successfully connected to virtualMachine1.
 
-1. This means you've successfully connected to VM1.
-
-1. Ping the private IP address of VM2.
+1. Ping the private IP address of virtualMachine2.
 
    ```bash
-   ping <private IP address VM2>
+   ping <private IP address virtualMachine2>
 
    ```
 
    > [!NOTE]
-   > Replace \<private IP address\> VM2 with the private IP address you noted for VM2. 
+   > Replace \<private IP address\> virtualMachine2 with the private IP address you noted for virtualMachine2. 
 
    :::image type="content" source="../media/5-ping-request.png" alt-text="Screenshot showing the ping command to check whether machines can connect.":::
 
-1. We can confirm that the two machines can't connect, as there is no response from VM2.
+1. We can confirm that the two machines can't connect, as there is no response from virtualMachine2.
+
+1. Press **CTRL** + **C** keys to quit the ping command.
 
 ## Troubleshoot the gateways
 
@@ -168,3 +173,7 @@ You'll now check the address spaces don't overlap for the two virtual networks.
 1. The shared keys are not the same. For the connections to work, the shared key must be identical.
 
 1. Now that you've found the issue, you'll resolve it in the next exercise.
+
+In this demonstration you will see how to proactively troubleshoot Conditional Access policies using the What if tool in the Azure portal:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Ubff]

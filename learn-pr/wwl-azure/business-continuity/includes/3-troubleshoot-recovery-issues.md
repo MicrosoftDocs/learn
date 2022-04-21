@@ -370,7 +370,7 @@ Select the event to display disk information:
 
 ### Azure Site Recovery limits
 
-Azure Site Recovery limits are data churn per disk and data churn per virtual machine. The actual limits vary according to specific configurations. For example, a single VM Site Recovery can handle 5MN/s of churn per disk and a maximum of five disks. Site Recovery has a limit of 54MB/s of total churn per VM.
+Azure Site Recovery limits are data churn per disk and data churn per virtual machine. The actual limits vary according to specific configurations. For example, a single VM Site Recovery can handle 5MB/s of churn per disk and a maximum of five disks. Site Recovery has a limit of 54MB/s of total churn per VM.
 
 To find out whether this is a recurring problem, check the data change rate of the relevant virtual machine under **Monitoring**. You will need to add the metrics shown in the following screenshot:
 

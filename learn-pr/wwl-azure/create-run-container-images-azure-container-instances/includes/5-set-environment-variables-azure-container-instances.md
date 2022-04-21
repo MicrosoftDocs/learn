@@ -5,12 +5,12 @@ If you need to pass secrets as environment variables, Azure Container Instances 
 In the example below two variables are passed to the container when it is created. The example below is assuming you are running the CLI in a Bash shell or Cloud Shell, if you use the Windows Command Prompt, specify the variables with double-quotes, such as `--environment-variables "NumWords"="5" "MinLength"="8"`.
 
 ```bash
-az container create 
-    --resource-group myResourceGroup 
-    --name mycontainer2 
+az container create \
+    --resource-group myResourceGroup \
+    --name mycontainer2 \
     --image mcr.microsoft.com/azuredocs/aci-wordcount:latest 
-    --restart-policy OnFailure 
-    --environment-variables 'NumWords'='5' 'MinLength'='8'
+    --restart-policy OnFailure \
+    --environment-variables 'NumWords'='5' 'MinLength'='8'\
 ```
 
 ## Secure values
@@ -49,7 +49,7 @@ type: Microsoft.ContainerInstance/containerGroups
 You would run the following command to deploy the container group with YAML:
 
 ```bash
-az container create --resource-group myResourceGroup 
-    --file secure-env.yaml
+az container create --resource-group myResourceGroup \
+    --file secure-env.yaml \
 ```
 

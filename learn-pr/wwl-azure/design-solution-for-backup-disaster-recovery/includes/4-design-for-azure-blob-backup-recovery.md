@@ -17,7 +17,7 @@ Soft delete protects an individual blob, snapshot, container, or version from ac
  
 
 > [!TIP]
-> Container soft delete doesn’t protect against the deletion of a storage account, but only against the deletion of containers in that account. To protect a storage account from deletion, configure a resource lock on the storage account resource.
+> Container soft delete doesn’t protect against the deletion of a storage account, but only against the deletion of containers in that account. 
 
  
 
