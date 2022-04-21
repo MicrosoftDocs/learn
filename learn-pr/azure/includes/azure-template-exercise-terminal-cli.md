@@ -17,7 +17,7 @@ ms.author: jodowns
 
 1. In the list of terminal shells, select **bash**.
 
-   :::image type="content" source="media/select-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal selected.":::
+   :::image type="content" source="media/select-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal selected.":::Z
 
 1. In the terminal, go to the directory where you saved your template. For example, if you saved your template to the *templates* folder, you can use this command:
 
