@@ -38,15 +38,15 @@ Consider using *branch protection rules* (in GitHub) or *branch policies* (in Az
 
 Make sure your team understands your expectations for reviewing and testing all code, including your infrastructure definitions.
 
-Remember that your pipeline definitions are YAML files, so they're a form of code too. Changes to your pipeline definitions need to be reviewed and evaluated. Otherwise, somebody might accidentally or maliciously create a pipeline step that leaks your service principal's credentials or makes a dangerous change to your Azure environment. Ensure your team is aware that any changes to pipeline definition files needs to be thoroughly reviewed, and that everybody understands that pipelines are so highly privileged that they need to be given special attention.
+Remember that your pipeline definitions are YAML files, so they're a form of code too. Changes to your pipeline definitions need to be reviewed and evaluated. Otherwise, somebody might accidentally or maliciously create a pipeline step that leaks your service principal's credentials or makes a dangerous change to your Azure estate. Ensure your team is aware that any changes to pipeline definition files needs to be thoroughly reviewed, and that everybody understands that pipelines are so highly privileged that they need to be given special attention.
 
 ## Assess third-party components that run within your pipeline
 
-If you use community-provided GitHub Actions or Azure DevOps extensions, understand who built them and what they do. Third-party pipeline components might have access to your service principal's credentials, and therefore they might have access to your entire Azure environment. Consider the security risk involved in each component you use, and remember that you're responsible for verifying that they're trustworthy and safe to use in your environment.
+If you use community-provided GitHub Actions or Azure DevOps extensions, understand who built them and what they do. Third-party pipeline components might have access to your service principal's credentials, and therefore they might have access to your entire environment in Azure. Consider the security risk involved in each component you use, and remember that you're responsible for verifying that they're trustworthy and safe to use.
 
 ## Protect your pipeline's service principals
 
-Pipelines use service principals to access Azure and other environments. It's important to protect your service principals, and ensure that their credentials can't be used inappropriately. Consider applying multiple layers of protection.
+Pipelines use service principals to access Azure and other services. It's important to protect your service principals, and ensure that their credentials can't be used inappropriately. Consider applying multiple layers of protection.
 
 First, you can consider protecting the credentials for your service principals:
 
@@ -76,7 +76,7 @@ GitHub provides a suite of security features, which you should evaluate and use.
 
 - Dependsabot, which scans your source code's dependencies for known vulnerabilities.
 - Secret scanning, which identifies text in your repository that looks like keys or credentials. It's a bad practice to store secrets in a repository, so if you're alerted to a secret in your repository you should consider the secret's value to be compromised and you should revoke or change it.
-- Auditing, to understand who has made changes to your GitHub environment.
+- Auditing, to understand who has made changes to your GitHub configuration.
 - Security overview, which consolidates all of your security alerts across your organization's repositories.
 
 ## Use Azure DevOps audit logging
