@@ -53,17 +53,23 @@ The sequence of steps for using a break-glass account is:
 
 Break-glass accounts require a high level of discipline. They should only be used in emergencies, and their credentials should be carefully managed and protected because the account is so highly privileged. It's also important to carefully audit any use of the break-glass accounts, to ensure they're not used inappropriately. Their use should be reserved for true emergency situations.
 
-An alternative approach to break-glass accounts is Azure AD privileged identity management (PIM), which allows a user's own account to be temporarily granted a higher level of permission:
+An alternative approach to break-glass accounts is to adopt Azure AD privileged identity management (PIM), which allows a user's own account to be temporarily granted a higher level of permission:
 
 :::image type="content" source="../media/4-privileged-identity-management.png" alt-text="Diagram showing the sequence of operations for Privileged Identity Management elevation and access to Azure." border="false":::
 
 The sequence of steps for using PIM is:
 
 1. The user tries to perform an emergency change by using their normal account, but the operation is blocked because their normal user account doesn't have sufficient permission.
-1. The user contacts PIM and requests their permissions to be *elevated* temporarily. PIM might perform additional validation of their identity, or ask for approval from somebody. If the PIM request is authorized, it updates the user's permissions temporarily.
-1. The user (acting as themselves) is allowed to perform the operation. After the defined time period has elapsed, PIM revokes the additional permissions it granted the user.
+1. The user contacts PIM and requests their permissions to be *elevated* temporarily.
+   - PIM might perform additional validation of their identity, or ask for approval from somebody, depending on how you configure it.
+   - If the PIM request is authorized, it updates the user's permissions temporarily.
+1. The user (acting as themselves) is allowed to perform the operation.
+   - After the defined time period has elapsed, PIM revokes the additional permissions it granted the user.
 
 Both PIM and Azure write audit logs, to help you understand who has requested elevated permissions and what they did in your environment when they were granted.
+
+> [!NOTE]
+> PIM requires a premium license for Azure AD.
 
 #### After the emergency ends
 

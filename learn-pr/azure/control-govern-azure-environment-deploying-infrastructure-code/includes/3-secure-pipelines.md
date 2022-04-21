@@ -22,8 +22,8 @@ It's a good practice to use your organization's Azure AD as your pipeline's iden
 
 ::: zone pivot="github"
 
-> [!TIP]
-> Azure AD integration requires GitHub Enterprise.
+> [!NOTE]
+> Azure AD integration requires a GitHub Enterprise license.
 
 ::: zone-end
 
