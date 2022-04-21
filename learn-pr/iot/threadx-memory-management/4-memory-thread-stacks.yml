@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.threadx-memory-management.memory-thread-stacks
+title: Memory thread stacks
+metadata:
+  title: Memory thread stacks
+  description: Memory thread stacks.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: liydu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-memory-thread-stacks.md)]
