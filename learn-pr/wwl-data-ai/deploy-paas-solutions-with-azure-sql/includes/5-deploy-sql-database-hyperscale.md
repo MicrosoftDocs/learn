@@ -78,7 +78,7 @@ To deploy Azure SQL Database with the Hyperscale tier:
 1. Browse to the **Select SQL Deployment** option page.
 1. Under **SQL databases**, leave **Resource type** set to **Single database**, and select **Create**.
 
-    :::image type="content" source="../media/module-22-plan-implement-final-39.png" alt-text="Deploying Hyperscale"::: 
+    :::image type="content" source="../media/module-22-plan-implement-final-39.png" alt-text="Deploying an Azure SQL Database Hyperscale"::: 
 
 1. From the **Basics** tab of the **Create SQL Database** page, select the desired subscription, resource group, and database name.
 
@@ -86,7 +86,7 @@ To deploy Azure SQL Database with the Hyperscale tier:
 
 1. Under **Compute + storage**, select the **Configure database** link.
 
-    :::image type="content" source="../media/module-22-plan-implement-final-40.png" alt-text="Deploying Hyperscale":::
+    :::image type="content" source="../media/module-22-plan-implement-final-40.png" alt-text="Configuring an Azure SQL Database Hyperscale":::
     
 1. For **Service tier**, select **Hyperscale**.
 
@@ -102,7 +102,7 @@ To deploy Azure SQL Database with the Hyperscale tier:
 
 1. Select **Next: Networking** at the bottom of the page.
 
-    :::image type="content" source="../media/module-22-plan-implement-final-42.png" alt-text="Deploying Hyperscale":::
+    :::image type="content" source="../media/module-22-plan-implement-final-42.png" alt-text="Network page when provisioning an Azure SQL Database Hyperscale":::
 
 1. For **Firewall rules** on the **Networking** tab, set **Add current client IP address** to **Yes**. Leave **Allow Azure services and resources to access this server** set to **No**.
 
@@ -110,4 +110,4 @@ To deploy Azure SQL Database with the Hyperscale tier:
 
 1. On the **Review + create** tab, select **Create**.
 
-    :::image type="content" source="../media/module-22-plan-implement-final-44.png" alt-text="Deploying Hyperscale":::
+    :::image type="content" source="../media/module-22-plan-implement-final-44.png" alt-text="Review and create page when provisioning an Azure SQL Database Hyperscale":::
