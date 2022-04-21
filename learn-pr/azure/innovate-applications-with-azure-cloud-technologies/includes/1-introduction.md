@@ -6,4 +6,4 @@ One obstacle is the large effort that the existing applications require to intro
 
 The change rate has traditionally been slow for Tailwind Traders' applications. The new competitive threats in the e-commerce sector demand a higher innovation speed and as much uptime as possible.
 
-After migrating the on-premises applications to Azure with a lift-and-shift process, Tailwind Traders wants to rearchitect them. The goal is to reach the required innovation rate that will allow for the company to survive in the new competitive ecosystem.
+Tailwind Traders wants to rearchitect the on-premises applications after migrating them to Azure with a lift-and-shift process. The goal is to reach the required innovation rate that will allow for the company to survive in the new competitive ecosystem.
