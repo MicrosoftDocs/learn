@@ -23,7 +23,7 @@ As you'll see in the next unit, the Tailwind Traders policy on protected data fa
 
 ## Define corporate policy
 
-Defining corporate policy requires a focus on identifying and mitigating business risks, regardless of the cloud platform the organization uses. Healthy cloud governance strategy begins with sound corporate policy. The following three-step process guides the iterative development of sound corporate policies:
+Defining corporate policy requires a focus on identifying and mitigating business risks, regardless of the cloud platform the organization uses. Healthy cloud-governance strategy begins with sound corporate policy. The following three-step process guides the iterative development of sound corporate policies:
 
 | &nbsp; | &nbsp;  |
 |--|--|
@@ -40,19 +40,19 @@ During cloud adoption, you'll encounter various risks. Here are some examples of
 - As more workloads come online, risks change at each release. New applications go live and risks change.
 - When a company brings the first 10 or 20 applications online, the risk profile is much different than when the thousandth application goes into production in the cloud.
 
-Risk is relative. A small company with a few IT assets in a building that's offline has little risk. Add users and an internet connection with access to those assets and the risk intensifies. When that small company grows to Fortune 500 status, the risks are exponentially greater. As revenue, business process, employee counts, and IT assets accumulate, risks increase and coalesce. IT assets that help generate revenue are at tangible risk of stopping that revenue stream if an outage occurs. Every moment of downtime equates to loss. Likewise, as data accumulates, the risk of harm to customers grows.
+Risk is relative. A small company with a few IT assets in a building that's offline has little risk. Add users and an internet connection with access to those assets and the risk intensifies. When that small company grows to Fortune 500 status, the risks are exponentially greater. As revenue, business processes, employee counts, and IT assets accumulate, risks increase and coalesce. IT assets that help generate revenue are at tangible risk of stopping that revenue stream if an outage occurs. Every moment of downtime equates to loss. Likewise, as data accumulates, the risk of harm to customers grows.
 
 According to the outline from the Tailwind Traders customer narrative unit, here are the risks the Tailwind CIO is most concerned about:
 
-- Overspending in the cloud.
-- The organization not meeting security or compliance requirements.
-- Asset configuration creating operations management issues or oversights.
-- Unauthorized access compromising systems or data.
-- Inconsistent governance due to immature processes and lack of skills on the team.
+- Overspending in the cloud
+- The organization not meeting security or compliance requirements
+- Asset configuration creating operations-management issues or oversights
+- Unauthorized access compromising systems or data
+- Inconsistent governance due to immature processes and lack of skills on the team
 
 It's important to note that none of the concerns are related to "a specific network segment of the existing datacenters," as cited in Tailwind's current policy. To create sound governance policies that scale to the cloud, we need to dig a bit deeper and look at the tangible risks that are captured in the current policy versus the current-state solution.
 
-Deeper investigation of stakeholder concerns and the cloud adoption plan likely will show more risks that the organization can't tolerate. But for now, we have enough to start shaping governance policies that address these tangible risks.
+Deeper investigation of stakeholder concerns and the cloud-adoption plan likely will show more risks that the organization can't tolerate. But for now, we have enough to start shaping governance policies that address these tangible risks.
 
 ## Policy and compliance
 
@@ -72,17 +72,17 @@ The cloud provides guardrails to help reduce the human overhead of recurring pro
 
 | Risk | Sample trigger | Sample action |
 |-----------------------------|----------------|---------------|
-| Overspending in the cloud. | Monthly cloud spending is 20 percent higher than expected. | Notify the billing unit leader, who will start reviewing resource usage. |
-| Overspending in the cloud. | Deployed assets aren't using the allocated CPU or memory. | Notify the billing unit leader and automatically resize to fit actual usage, when possible. |
-| The organization not meeting security or compliance requirements. | Detect any deviation from defined security or compliance. | Notify the IT security team and automate remediation, when possible. |
-| Asset configurations creating operations management issues or oversights. | CPU utilization for a workload is greater than 90 percent. | Notify the IT operations team and scale out additional resources to handle the load. |
-| Asset configurations creating operations management issues or oversights. | Assets that fail to meet patching or business continuity and disaster requirements trigger operational compliance warning. | Notify the IT security team and automatically resolve the deviation, when possible. |
-| Unauthorized access compromising systems or data. | Traffic patterns deviate from approved network topologies. | Notify the IT security team and automatically close attack vectors, when possible. |
-| Unauthorized access compromising systems or data. | Assets are configured without proper role assignments or elevated privileges. | Notify the IT security team and automatically resolve the deviation, when possible. |
-| Inconsistent governance due to immature processes and lack of skills on the team. | Assets identified that aren't included in required governance processes. | Notify the IT governance team and automatically resolve the deviation, when possible. |
+| Overspending in the cloud | Monthly cloud spending is 20 percent higher than expected | Notify the billing unit leader, who will start reviewing resource usage |
+| Overspending in the cloud | Deployed assets aren't using the allocated CPU or memory | Notify the billing unit leader and automatically resize to fit actual usage, when possible |
+| The organization not meeting security or compliance requirements | Detect any deviation from defined security or compliance | Notify the IT security team and automate remediation, when possible |
+| Asset configurations creating operations management issues or oversights | CPU utilization for a workload is greater than 90 percent | Notify the IT operations team and scale out additional resources to handle the load |
+| Asset configurations creating operations management issues or oversights | Assets that fail to meet patching or business continuity and disaster requirements trigger operational compliance warning | Notify the IT security team and automatically resolve the deviation, when possible |
+| Unauthorized access compromising systems or data | Traffic patterns deviate from approved network topologies | Notify the IT security team and automatically close attack vectors, when possible |
+| Unauthorized access compromising systems or data | Assets are configured without proper role assignments or elevated privileges | Notify the IT security team and automatically resolve the deviation, when possible |
+| Inconsistent governance due to immature processes and lack of skills on the team | Assets identified that aren't included in required governance processes | Notify the IT governance team and automatically resolve the deviation, when possible |
 
 You can automate each of these triggers and actions by using Azure governance tools. Other cloud providers might require a more manual approach, but the defined policies would still be applicable. Take care to avoid defining policies that would lock you into using a specific vendor to avoid having to repeat this process again in the future.
 
-After establishing your cloud policy statements and drafting a design guide, you'll need to create a strategy to ensure that your cloud deployment stays in compliance with your policy requirements. This strategy must encompass your cloud governance team's ongoing review and communication processes, establish criteria for when policy violations require action, and define the requirements for automated monitoring and compliance systems that will detect violations and trigger remediation actions.
+After establishing your cloud policy statements and drafting a design guide, you'll need to create a strategy to ensure that your cloud deployment stays in compliance with your policy requirements. This strategy must encompass your cloud-governance team's ongoing review and communication processes, establish criteria for when policy violations require action, and define the requirements for automated monitoring and compliance systems that will detect violations and trigger remediation actions.
 
 In the next unit, we'll group these types of risks into actionable cloud disciplines.
