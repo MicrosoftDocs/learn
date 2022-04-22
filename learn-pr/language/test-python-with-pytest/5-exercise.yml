@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.python-testing-with-pytest.exercise
+uid: learn.test-python-with-pytest.exercise
 title: exercise
 metadata:
   title: Exercise - write test classes and method for Pytest

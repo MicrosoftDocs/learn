@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.python-testing-with-pytest.pytest-basics
+uid: learn.test-python-with-pytest.pytest-basics
 title: Pytest basics
 metadata:
   title: Testing Conventions

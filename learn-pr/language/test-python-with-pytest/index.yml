@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.python-testing-with-pytest
+uid: learn.test-python-with-pytest
 metadata:
   moduleType: standard
   title: Testing with Pytest
@@ -30,11 +30,11 @@ roles:
 products:
   - vs-code
 units:
-- learn.python-testing-with-pytest.introduction
-- learn.python-testing-with-pytest.pytest-basics
-- learn.python-testing-with-pytest.test-classes-and-methods
-- learn.python-testing-with-pytest.exercise
-- learn.python-testing-with-pytest.knowledge-check
-- learn.python-testing-with-pytest.summary
+- learn.test-python-with-pytest.introduction
+- learn.test-python-with-pytest.pytest-basics
+- learn.test-python-with-pytest.test-classes-and-methods
+- learn.test-python-with-pytest.exercise
+- learn.test-python-with-pytest.knowledge-check
+- learn.test-python-with-pytest.summary
 badge:
-  uid: learn.python-testing-with-pytest.badge
+  uid: learn.test-python-with-pytest.badge
