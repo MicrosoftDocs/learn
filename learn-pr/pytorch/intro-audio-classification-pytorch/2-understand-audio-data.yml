@@ -3,7 +3,7 @@ uid: learn.pytorch.intro-audio-classification.understand-audio-data
 title: Understand audio data and concepts
 metadata:
   title: Understand audio data and concepts
-  description: We need to first get a better understanding of our audio data. Here we will look at some key concepts and features of audio data.
+  description: Learn about some key concepts and features of audio data.
   author: cassiebreviu
   ms.author: ruyakubu
   ms.date: 04/14/2020
@@ -24,10 +24,10 @@ quiz:
       choices:
         - content: "Frequency mapped to time."
           isCorrect: false
-          explanation: "Incorrect, frequency mapped to time is a Spectrogram."
+          explanation: "Incorrect, frequency mapped to time is a spectrogram."
         - content: "The audio channels."
           isCorrect: false
-          explanation: "Although audio channels can be used in sampling, this is not what sample rate is"
+          explanation: "Although audio channels can be used in sampling, this is not what the sample rate is."
         - content: "Sampling analog sound at consistent intervals of time to create a digital sound representation."
           isCorrect: true
           explanation: "Correct!"
@@ -35,10 +35,10 @@ quiz:
       choices:
         - content: "Frequency mapped to time."
           isCorrect: false
-          explanation: "Incorrect, frequency mapped to time is a Spectrogram."
+          explanation: "Incorrect, frequency mapped to time is a spectrogram."
         - content: "Sample rate and frequency visualized."
           isCorrect: true
-          explanation: "Correct! We can visualize our data using a waveform to map sample rate and frequency"
+          explanation: "Correct! You can visualize your data by using a waveform to map the sample rate and frequency."
         - content: "The audio channels."
           isCorrect: false
           explanation: "Incorrect."
