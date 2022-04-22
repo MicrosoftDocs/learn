@@ -96,7 +96,7 @@ If you use manual approval gates for deployments, follow these recommended pract
 
 > [!div class="checklist"]
 >
-> * **Clearly define who is allowed to approve a deployment.** Use Azure AD groups to define approvers instead of specifying individual users, so that yuo can easily change the list of approvers in the future.
+> * **Clearly define who is allowed to approve a deployment.** Use Azure AD groups to define approvers instead of specifying individual users, so that you can easily change the list of approvers in the future.
 > * **Ensure you have a process for emergency deployments.** Understand who can approve a deployment if the normal approvers aren't available.
 > * **Limit human intervention to just approving or rejecting the deployment.** Avoid having humans executing the deployment operations, unless there's a step that you can't automate.
 
