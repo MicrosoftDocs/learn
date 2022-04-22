@@ -15,17 +15,7 @@ This exercise requires that you have permissions to create applications and serv
 
 To work with service principals in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
 
-1. To open a Visual Studio Code terminal window, select **Terminal** > **New Terminal**. The window usually opens at the bottom of your screen.
-
-1. If the dropdown control on the right displays **bash**, the correct shell is open and you can skip to the next section.
-
-   :::image type="content" source="../../includes/media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash displayed in the dropdown control.":::
-
-   If **bash** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **bash**.
-
-   :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting a preferred terminal shell.":::
-
-1. In the terminal, select the plus sign (**+**) to create a new terminal with Bash as the shell.
+[!include[](../../includes/azure-exercise-terminal-cli.md)]
 
 ### Sign in to Azure by using the Azure CLI
 
@@ -43,17 +33,7 @@ To work with service principals in Azure, sign in to your Azure account from the
 
 To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true), and sign in to the same account that you used to activate the sandbox.
 
-1. To open a Visual Studio Code terminal window, select **Terminal** > **New Terminal**. The window usually opens at the bottom of your screen.
-
-1. If the dropdown control at the right displays **pwsh** or **PowerShell**, the correct shell is open and you can skip to the next section.
-
-   :::image type="content" source="../../includes/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with 'pwsh' displayed in the dropdown control.":::
-
-   If **pwsh** or **PowerShell** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.
-
-   :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting your preferred terminal shell.":::
-
-1. In the terminal, select the plus sign (**+**) to create a new terminal with pwsh or PowerShell as the shell.
+[!include[](../../includes/azure-exercise-terminal-powershell.md)]
 
 ### Sign in to Azure by using Azure PowerShell
 
