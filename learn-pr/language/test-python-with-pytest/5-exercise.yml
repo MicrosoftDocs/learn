@@ -2,7 +2,7 @@
 uid: learn.test-python-with-pytest.exercise
 title: exercise
 metadata:
-  title: Exercise - write test classes and method for Pytest
+  title: Exercise - Write test classes and method for Pytest
   description: Practice writing test classes and methods for tests with Pytest
   ms.date: 1/25/2022
   author: alfredodeza
