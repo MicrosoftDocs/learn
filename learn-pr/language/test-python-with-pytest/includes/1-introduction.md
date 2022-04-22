@@ -4,7 +4,7 @@ Pytest is one of the most popular testing tools and frameworks for Python. Altho
 
 A crucial aspect of Pytest is that it makes writing tests much easier. You can write a test function with no dependencies or configuration and run the test right away.
 
-In this module will cover some of the basics needed to get started with Pytest so that you can take your test suite to the next level. 
+In this module we'll cover some of the basics needed to get started with Pytest so that you can take your test suite to the next level. 
 
 ## What you will learn
 

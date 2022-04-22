@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.test-python-with-pytest.exercise
-title: exercise
+title: Exercise
 metadata:
   title: Exercise - Write test classes and method for Pytest
   description: Practice writing test classes and methods for tests with Pytest
