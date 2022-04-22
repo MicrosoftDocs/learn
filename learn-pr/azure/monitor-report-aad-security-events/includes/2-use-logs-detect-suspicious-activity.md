@@ -1,28 +1,28 @@
-Data loss occurs most primarily when user accounts are compromised and used to access confidential assets or resources on your network. Azure offers logging and auditing capabilities that can help you assess whether your users' recent behavior is consistent with their typical behavior. When user behavior deviates from normal, it's flagged as suspicious. 
+Data loss occurs primarily when user accounts are compromised and then used to access confidential assets or resources on your network. Azure offers logging and auditing capabilities that can help you assess whether your users' recent behavior is consistent with their typical behavior. When user behavior deviates from normal, it's flagged as suspicious. 
 
-Your security team members are worried about a repeat of a previous breach, and they want to know what Azure features and services might help prevent it. To reassure the team, you want to learn more about what Azure offers for logging user activities, and how to use this logging to identify suspicious sign-in behavior.
+Your security team members are worried about a repeat of a recent breach, and they want to know what Azure features and services might help prevent it. To reassure the team, you want to learn more about what Azure offers for logging user activities and how to use logging to identify suspicious sign-in behavior.
 
-In this unit, you'll see two different approaches to monitoring user behavior. The first approach focuses on users' sign-in details, which are stored in sign-in log files. The second approach looks at the activities that the users carry out while they're signed in. These activities are stored in audit files.
+In this unit, you'll see two approaches to monitoring user behavior. The first approach focuses on users' sign-in details, which are stored in *sign-in* log files. The second approach looks at users' activities when they're signed in. These activities are stored in *audit* files.
 
 ## Azure Active Directory logs
 
-Azure Active Directory (Azure AD) captures log information across your entire Azure tenant. You can use this information in analysis and reporting. When you assess user behavior, you want to look at the activity and security logs.  
+Azure AD captures log information across your entire Azure tenant. You can use this information in analysis and reporting. When you assess user behavior, you want to look at the activity and security logs.  
 
-Activity logs cover all of a user's behaviors and interactions with your network and their assets. You want to pay attention to two types of log files in particular:
+Activity logs cover all of a user's behaviors and interactions with your network and its assets. You want to pay particular attention to two types of log files:
 
-- **Sign-in logs**: Hold details about all user activity and the applications that requested them.
-- **Audit logs**: Show what a user or group did while signed in to your network.
+- **Sign-in logs**: The logs hold details about all user activity and the applications that requested them.
+- **Audit logs**: The logs show what a user or group did while they were signed in to your network.
 
-Security logs represent a list of the exceptions found in the activity logs. Worthy of note are two key log files:
+Security logs represent a list of the exceptions found in the activity logs. It's important to pay attention to two key log files:
 
-- **Risky sign-ins**: Hold data about user accounts where the sign-in behavior is inconsistent with previous sign-in attempts.
-- **Users flagged for risk**: Show you all users who have been assigned a risky user flag.
+- **Risky sign-ins**: The logs hold data about user accounts where the sign-in behavior is inconsistent with earlier sign-in attempts.
+- **Users flagged for risk**: The logs show all users who have been flagged as a risky user.
 
 For the moment, though, you're interested in tracking only user sign-ins and activity logs.
 
 ## Azure sign-in log files
 
-Sign-in log files hold a copy of all attempts to sign in to your network.  However, this applies only to actual traditional sign-ins with user credentials.  The sign-in log files don't record automatic authentication that's used in server-to-server connections.
+Sign-in log files hold a copy of all attempts to sign in to your network.  However, this applies only to actual traditional sign-ins that use user credentials. The sign-in log files don't record automatic authentication that's used in server-to-server connections.
 
 You can use sign-in log files to identify:
 
@@ -32,14 +32,14 @@ You can use sign-in log files to identify:
 
 ### Prerequisites
 
-Because of the nature of the log data that's captured by the sign-in logs, access is reserved and limited.  To use the sign-in log files, you need:
+Because of the sensitive nature of log data that's captured by sign-in logs, access to the logs is reserved and limited. To use the sign-in log files, you need:
 
 - An Azure AD Premium or better subscription.
-- At least one user who has a *Global Administrator*, *Report Reader*, *Security Reader*, or *Security Administrator* role or permissions.
+- At least one user who has a Global Administrator, Report Reader, Security Reader, or Security Administrator role or permissions.
 
 ### Structure of a sign-in log file
 
-The first time the sign-in logging service is enabled, it can take up to an hour before any data is available.  Azure captures a wide range of data about user activity, from access periods to the application that made the request, and more.  You access the sign-in log file through the Azure portal.  
+The first time the sign-in logging service is enabled, data might not be available until after an hour. Azure captures a wide range of data about user activity, from access periods to the application that made the request, and more.  You access the sign-in log file through the Azure portal.  
 
 1. In the Azure portal, go to your Azure AD instance.
 
