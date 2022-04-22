@@ -36,7 +36,7 @@ let addNumbers = function (x: number, y: number): number {
 addNumbers(1, 2);
 ```
 
-This shows what the named function `sum` from the earlier example looks like when written as an anonymous function. Notice that the name `add` has been replaced with function and the function has been implemented as an expression in a variable declaration.
+This shows what the named function `sum` looks like when written as an anonymous function. Notice that the name `add` has been replaced with function and the function has been implemented as an expression in a variable declaration.
 
 ```typescript
 let total = function (input: number[]): number {
