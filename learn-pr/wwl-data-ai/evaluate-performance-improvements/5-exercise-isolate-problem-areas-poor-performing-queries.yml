@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-performance-improvements.exercise-isolate-problem-areas-poor-performing-queries
+title: 'Exercise: Isolate problem areas in poorly performing queries'
+metadata:
+  title: 'Exercise: Isolate problem areas in poorly performing queries'
+  description: "Exercise: Isolate problem areas in poorly performing queries"
+  ms.date: 04/22/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 119515
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-isolate-problem-areas-poor-performing-queries.md)]
