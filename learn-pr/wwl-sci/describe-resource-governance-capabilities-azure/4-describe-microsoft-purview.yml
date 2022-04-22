@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-resource-governance-capabilities-azure.describe-azure-purview
-title: Describe Azure Purview
+title: Describe Microsoft Purview
 metadata:
-  title: Describe Azure Purview
-  description: "Describe Azure Purview"
-  ms.date: 04/18/2022
+  title: Describe Microsoft Purview
+  description: "Describe Microsoft Purview"
+  ms.date: 04/22/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-describe-azure-purview.md)]
+  [!include[](includes/4-describe-microsoft-purview.md)]
