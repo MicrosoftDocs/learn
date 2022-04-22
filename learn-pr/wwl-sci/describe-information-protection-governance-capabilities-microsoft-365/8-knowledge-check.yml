@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/02/2022
+  ms.date: 04/22/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -47,17 +47,17 @@ quiz:
     - content: "Use sensitivity labels"
       isCorrect: true
       explanation: "​​​Correct. Sensitivity labels help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.​​​"
-    - content: "Use Records Management"
+    - content: "Use records management"
       isCorrect: false
-      explanation: "​​​Incorrect. You don't use Record Management to encrypt emails. Instead, use sensitivity labels to help ensure that emails can only be decrypted only by users authorized by the label's encryption settings.​​​"
+      explanation: "​​​Incorrect. You don't use record management to encrypt emails. Instead, use sensitivity labels to help ensure that emails can only be decrypted by users authorized by the label's encryption settings.​​​"
   - content: "Your organization uses Microsoft Teams to collaborate on all projects. The compliance admin wants to prevent users from accidentally sharing sensitive information in a Microsoft Teams chat session. What capability can address this requirement?"
     choices:
     - content: "Use data loss prevention policies"
       isCorrect: true
       explanation: "Correct. With data loss prevention policies, administrators can now define policies that can prevent users from sharing sensitive information in a Microsoft Teams chat session or Teams channel, whether this information is in a message, or in a file.​​​​​​"
-    - content: "Use Records Management capabilities"
+    - content: "Use records management capabilities"
       isCorrect: false
-      explanation: "​​​Incorrect. Records Management won't let you do this. Instead, use data loss prevention policies.​​​"
+      explanation: "​​​Incorrect. records management won't let you do this. Instead, use data loss prevention policies.​​​"
     - content: "Use retention policies"
       isCorrect: false
       explanation: "​​​Incorrect. Retention policies won't let you do this. Instead, use data loss prevention policies.​​​"
