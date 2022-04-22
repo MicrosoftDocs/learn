@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/12/2022
+  ms.date: 04/22/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -30,23 +30,23 @@ quiz:
       explanation: "Incorrect. You use insider risk management to protect against risks like an employee sharing confidential information."
   - content: "To comply with corporate policies, the compliance admin needs to be able to identify and scan for offensive language across the organization.  What solution can the admin implement to address this need?"
     choices:
-    - content: "Use Policy Compliance in Microsoft 365."
+    - content: "Use Policy Compliance in Microsoft Purview."
       isCorrect: false
-      explanation: "Incorrect. This doesn't exist. Instead, use Communication Compliance."
-    - content: "Use Communication Compliance."
+      explanation: "Incorrect. This doesn't exist. Instead, use Microsoft Purview Communication Compliance."
+    - content: "Use Microsoft Purview Communication Compliance."
       isCorrect: true
-      explanation: "Correct. Communication Compliance helps minimize communication risks by enabling you to detect, capture, and take remediation actions for inappropriate messages in the organization."
-    - content: "Use information barriers."
+      explanation: "Correct. Microsoft Purview Communication Compliance helps minimize communication risks by enabling you to detect, capture, and take remediation actions for inappropriate messages in the organization."
+    - content: "Use Microsoft Purview Information Barriers."
       isCorrect: false
-      explanation: "Incorrect. You don't use information barriers to scan for offensive language. Instead, use Communication Compliance."
+      explanation: "Incorrect. You don't use Microsoft Purview Information Barriers to scan for offensive language. Instead, use Microsoft Purview Communication Compliance."
   - content: "Your organization has many departments that collaborate through Microsoft Teams. To comply with business policies, the IT organization needs to make sure that users from one particular department are limited in their access and interactions with other departments. What solution can address this need?"
     choices:
-    - content: "Use Communication Compliance."
+    - content: "Use Microsoft Purview Communication Compliance."
       isCorrect: false
-      explanation: "Incorrect. You don't use Communication Compliance to block information from being accessed across departments. Instead, use information barriers."
+      explanation: "Incorrect. You don't use Microsoft Purview Communication Compliance to block information from being accessed across departments. Instead, use Microsoft Purview Information Barriers."
     - content: "Use activity explorer."
       isCorrect: false
       explanation: "Incorrect. Activity explorer won't enable you to do this. Activity explorer provides visibility into what content has been discovered and labeled, and where that content is. Instead, use information barriers to block information from being accessed across departments."
-    - content: "Use information barriers."
+    - content: "Use Microsoft Purview Information Barriers."
       isCorrect: true
-      explanation: "Correct. With information barriers, you're able to restrict communications among specific groups of users when necessary."
+      explanation: "Correct. With Microsoft Purview Information Barriers, you're able to restrict communications among specific groups of users when necessary."
