@@ -15,12 +15,6 @@ ms.author: jodowns
 
     :::image type="content" source="media/select-shell-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and Git Bash Default selected.":::
 
-1. In the list of terminal shells, select **bash**.
+1. In the list of terminal shells, select **bash**, and then select the plus sign to open a new terminal that uses the **bash** shell.
 
-   :::image type="content" source="media/select-bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal selected.":::
-
-1. In the terminal, go to the directory where you saved your template. For example, if you saved your template to the *templates* folder, you can use this command:
-
-    ```azurecli
-    cd templates
-    ```
+   :::image type="content" source="media/select-bash-plus.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the bash terminal and the plus sign selected.":::

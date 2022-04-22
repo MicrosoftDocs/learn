@@ -15,12 +15,6 @@ ms.author: jodowns
 
     :::image type="content" source="media/select-shell-powershell.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the terminal shell dropdown shown and powershell selected.":::
 
-1. In the list of terminal shells, select **powershell** or **pwsh**.
+1. In the list of terminal shells, select **powershell** or **pwsh**, and then select the plus sign to open a new terminal that uses the **powershell** or **pwsh** shell.
 
-   :::image type="content" source="media/select-powershell.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the powershell terminal selected.":::
-
-1. In the terminal, go to the directory where you saved your template. For example, if you saved your template in the *templates* folder, you can use this command:
-
-   ```azurepowershell
-   cd templates
-   ```
+   :::image type="content" source="media/select-powershell-plus.png" alt-text="Screenshot of the Visual Studio Code terminal window, with the powershell terminal and the plus sign selected.":::

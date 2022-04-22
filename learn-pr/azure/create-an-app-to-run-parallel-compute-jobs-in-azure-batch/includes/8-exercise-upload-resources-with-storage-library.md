@@ -168,7 +168,7 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
     }
     ```
 
-    The above code uses the `CloudBlobClient` to asynchronously upload the files. It builds a resource file that gets added to a list that will be used by the task added in the next exercise.
+    The above code uses the `CloudBlobClient` to asynchronously upload the files. It builds a resource file that is added to a list that will be used by the task added in the next exercise.
 
 ## Enable access to the output folder
 
