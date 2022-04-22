@@ -32,6 +32,7 @@ units:
 - learn.communication-services-voice-calling-webapp.introduction
 - learn.communication-services-voice-calling-webapp.exercise-create-account
 - learn.communication-services-voice-calling-webapp.exercise-create-app
+- learn.communication-services-voice-calling-webapp.exercise-calling-code
 - learn.communication-services-voice-calling-webapp.knowledge-check
 - learn.communication-services-voice-calling-webapp.summary
 badge:
