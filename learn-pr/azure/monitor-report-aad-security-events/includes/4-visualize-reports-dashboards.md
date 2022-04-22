@@ -54,7 +54,7 @@ AuditLogs
 
 1. When you're satisfied that you have the data you want, select **Done editing**, and then select the **Save** icon in the menu bar.
 
-   :::image type="content" source="../media/4-save-query.png" alt-text="Screenshot of the "Save" and "Pin to dashboard" buttons for a Log Analytics query.":::
+    :::image type="content" source="../media/4-save-query.png" alt-text="Screenshot of the Save and Pin to dashboard buttons for a Log Analytics query.":::
 
 1. Enter a descriptive name, like *Common User Events Last 7 days*.  
 
@@ -71,7 +71,7 @@ When you're satisfied with the report, you can export it to Excel or the Power B
 - **Export to Power BI (M query)**
 - **Open in Excel**
 
-:::image type="content" source="../media/4-export-options.png" alt-text="Screenshot of the options in the "Export" drop-down.":::
+:::image type="content" source="../media/4-export-options.png" alt-text="Screenshot of the options in the Export dropdown.":::
 
 ### Export a report to Excel
 

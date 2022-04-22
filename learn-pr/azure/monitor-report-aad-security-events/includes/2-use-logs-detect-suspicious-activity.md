@@ -74,7 +74,7 @@ In the **Columns** pane, you can add or remove columns based on your need. In ad
 
 ### Filter log data
 
-Even after you've selected all the sign-in columns you're interested in viewing, you still have a lot of data. To manage data volumes and to get to the data you need, you can apply filters. For example, you might want to see only sign-in records in which users have been flagged as a risk, or records in which multifactor authentication failed.  By using filters, you can view the raw data in various ways to identify trends or patterns.
+Even after you've selected all the sign-in columns you're interested in viewing, you still have a large amount of data. To manage data volumes and to get to the data you need, you can apply filters. For example, you might want to see only sign-in records in which users have been flagged as a risk, or records in which multifactor authentication failed.  By using filters, you can view the raw data in various ways to identify trends or patterns.
 
 To use filters, in the menu bar, select **Add filters**, and then select the filters you want to use.
 
@@ -117,8 +117,8 @@ In the summary unit of this module, you'll find a link to a complete list of err
 | Error | Description                                                  |
 | :---- | :----------------------------------------------------------- |
 | 50002 | Sign-in failed because of restricted proxy access on the tenant. If it's your own tenant policy, you can change your restricted tenant settings to fix this issue. |
-| 50005 | Users tried to log in to a device from a platform that's currently not supported through Conditional Access policy. |
-| 50020 | The user is unauthorized for one of the following reasons: the user is attempting to log in with an MSA account with the v1 endpoint, or the user doesn't exist in the tenant. Contact the application owner. |
+| 50005 | Users tried to sign in to a device from a platform that's currently not supported through Conditional Access policy. |
+| 50020 | The user is unauthorized for one of the following reasons: the user is attempting to sign in with an MSA account with the v1 endpoint, or the user doesn't exist in the tenant. Contact the application owner. |
 | 50055 | Invalid password entered or expired password.                  |
 | 50057 | User account is disabled. The account has been disabled by an administrator. |
 | 50074 | User didn't pass the multifactor authentication (MFA) challenge.                         |

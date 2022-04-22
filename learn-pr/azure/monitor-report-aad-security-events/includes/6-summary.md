@@ -4,7 +4,7 @@ Your role is to demonstrate to the team the reporting capabilities of Azure AD, 
 
 By using sign-in and activity logs, Azure Monitor can provide alerts about unusual or unexpected user behaviors. With Azure Monitor, you can build custom dashboards that display metrics and essential data about user activity and security across Azure AD.
 
-Without Azure Monitor alerts and its single, at-a-glance, dashboard view of your team's Azure AD estate, the team might have no warning about unexpected incidents until it is too late. 
+Without Azure Monitor alerts and its single, at-a-glance, dashboard view of your team's Azure AD estate, the team might have no warning about unexpected incidents until it's too late. 
 
 In this module, you've learned to build that dashboard view and help prevent and alert about such unexpected incidents.
 

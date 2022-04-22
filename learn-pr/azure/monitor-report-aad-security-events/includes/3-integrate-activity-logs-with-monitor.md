@@ -69,7 +69,7 @@ To stream the audit and sign-in logs to your Log Analytics workspace:
 
 1. Select **Save**.  
 
-You've now set up a data streaming process that will push audit and sign-in data to the Log Analytics workspace. Because this is a new service, it takes about 15 minutes for any data to appear in the workspace.
+You've now set up a data streaming process that will push audit and sign-in data to the Log Analytics workspace. Because it's a new service, it takes about 15 minutes for any data to appear in the workspace.
 
 ## Analyze the log files in Azure Monitor logs
 
@@ -139,7 +139,7 @@ Other common filter commands include:
 | `take *n*` | Ideally suited to small result sets. Take returns *n* rows from the result set in no particular order. | AuditLogs \| Take 10 |
 | `top *n* by *field*` | Use this filter command to return the top *n* rows, sorted by the nominated *field*. | AuditLogs \| Top 10 by timeGenerated |
 | `sort by *field* (desc)` | If you want to sort only the result set, you can use the sort command. You need to specify the field to sort on, and then you can optionally add the *desc* instruction to specify a descending sort pattern. | AuditLogs \| Sort by timeGenerated desc |
-| Where *field* (expression) *value* | This is the principal filtering command.  You nominate the field, expression, and comparator value.  You can stack multiple where commands, each separated by a pipe. | AuditLogs \| where CreatedDateTime >= ago(2d) |
+| Where *field* (expression) *value* | The principal filtering command.  You nominate the field, expression, and comparator value.  You can stack multiple where commands, each separated by a pipe. | AuditLogs \| where CreatedDateTime >= ago(2d) |
 | project *fields* | If you want to restrict the result set to display only nominated fields or columns, you can use the project command with a comma-separated list of the fields. | AuditLogs \| project timeGenerated, OperationName, ResourceGroup, Result |
 
 You can use many other commands to build queries. To learn more about queries and filters, see the references at the end of this module.
@@ -190,9 +190,9 @@ Alerts are similar to queries, but they run automatically in response to specifi
 
 1. Select values for the settings for the alert logic. The alert logic is defined by the condition and the evaluation time. The alert fires when this condition is true. Provide a threshold value for your alert rule and modify the operator and aggregation type to define the logic you need. You can accept the default time granularity or modify it to your requirements. Frequency of evaluation defines how often the alert logic is evaluated. Aggregation granularity defines the time interval over which the collected values are aggregated.
 
-1. You can add more conditions, then, select the **Next: Actions >**.
+1. You can add more conditions, and then select **Next: Actions >**.
 
-1. On the **Actions** tab, if you haven't already created an action group that you want to use, select **Create action group**. Select a subscription and resource group for the action group and give it an action group name that appear in the portal and a display name that appears in email and SMS notifications.
+1. On the **Actions** tab, if you haven't already created an action group that you want to use, select **Create action group**. Select a subscription and resource group for the action group and give it an action group name that appears in the portal and a display name that appears in email and SMS notifications.
 
 1. Select **Next: Notifications >**.
 

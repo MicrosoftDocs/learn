@@ -8,7 +8,7 @@ In this module, you'll learn how to set up Azure Monitor to process your Azure A
 
 In this module, you will:
 
-- Store Azure audit activity and sign-in activity logs in Azure Monitor.
+- Store Azure audit logs and sign-in activity logs in Azure Monitor.
 - Create alerts for security events in Azure Monitor.
 - Create and view dashboards to support improved monitoring.
 

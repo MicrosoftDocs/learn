@@ -1,4 +1,4 @@
-So far, you've learned about the various user-based logging methods provided by Azure. You've learned how to route the audit and sign-in data to an Azure Log Analytics workspace. Also, you've seen how to use this data to create a variety of views and reports for your security team.
+So far, you've learned about the various user-based logging methods provided by Azure. You've learned how to route the audit and sign-in data to an Azure Log Analytics workspace. Also, you've seen how to use this data to create various views and reports for your security team.
 
 You want to implement a dashboard for the security team so they can see the potential of Azure Monitor logs and alerting to help them better understand user behavior.
 
@@ -23,7 +23,7 @@ In this exercise, you create a Log Analytics workspace in your Azure sandbox by 
 
    1. Under **Instance details**, enter a name for the workspace. For this exercise, enter **ContosoWorkspace**, and append it with several characters to create a unique workspace name. For **Region**, Select the location nearest you.
 
-   :::image type="content" source="../media/5-log-analytics-workspace.png" alt-text="Screenshot that shows new Log Analytics workspace options.":::
+   :::image type="content" source="../media/5-log-analytics-workspace-add.png" alt-text="Screenshot that shows new Log Analytics workspace options.":::
 
 1. Optionally create tags to use for the workspace, then select **Next : Review + Create >**.
 
@@ -92,7 +92,7 @@ You can use existing workbooks to display common views of your audit and sign-in
 
 1. To view the workbook, in the left menu under **General**, select **Workbooks**. Look for the workbook tile under **Recently modified workbooks**.
 
-    :::image type="content" source="../media/5-recently-modified-workbooks.png" alt-text="Screenshot that shows how to find modified workboooks.":::
+    :::image type="content" source="../media/5-recently-modified-workbooks.png" alt-text="Screenshot that shows how to find modified workbooks.":::
 
 ## Create a security dashboard
 
@@ -118,7 +118,7 @@ You can use existing workbooks to display common views of your audit and sign-in
    
 1. Select **Publish** to make the empty dashboard available.
 
-    :::image type="content" source="../media/5-dashboard-share.png" alt-text="Screenshot of the "Sharing + access control" pane.":::
+    :::image type="content" source="../media/5-dashboard-share.png" alt-text="Screenshot of the Sharing + access control pane.":::
 
 ## Pin a workbook to a dashboard
 

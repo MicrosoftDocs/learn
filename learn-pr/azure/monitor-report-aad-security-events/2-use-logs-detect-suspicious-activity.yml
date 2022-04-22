@@ -3,7 +3,7 @@ uid: learn.monitor-report-aad-security-events.2-use-logs-detect-suspicious-activ
 metadata:
   title: Use sign-in, audit, and risky sign-in logs to detect suspicious activity
   description: Use sign-in, audit, and risky sign-in logs to detect suspicious activity.
-  ms.date: 03/27/2020
+  ms.date: 04/22/2022
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'In which log would you find information about the multifactor authentication method that's used?'
+  - content: In which log would you find information about the multifactor authentication method that is used?
     choices:
     - content: Audit log files
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
     - content: Risky sign-ins log
       isCorrect: false
       explanation: This log holds data about user accounts in which the user's sign-in behavior is inconsistent with earlier sign-in attempts.
-  - content: 'In which log would you find information about identity protection?'
+  - content: In which log would you find information about identity protection?
     choices:
     - content: Audit log files
       isCorrect: true
