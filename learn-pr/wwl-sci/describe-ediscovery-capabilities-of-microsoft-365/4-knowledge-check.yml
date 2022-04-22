@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/12/2022
+  ms.date: 04/22/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -17,11 +17,11 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A new admin has joined the compliance team and needs access to Core eDiscovery to be able to add and remove members, create and edit searches, and export content from a case. To which role should the admin be assigned?"
+  - content: "A new admin has joined the compliance team and needs access to eDiscovery (Standard) to be able to add and remove members, create and edit searches, and export content from a case. To which role should the admin be assigned?"
     choices:
     - content: "Add them as a member of the eDiscovery Manager role group."
       isCorrect: true
-      explanation: "Correct. Members of this role group can create and manage Core eDiscovery cases. They can also add and remove members, place an eDiscovery hold on users, create and edit searches, and export content from a Core eDiscovery case.​​"
+      explanation: "Correct. Members of this role group can create and manage eDiscovery cases. They can also add and remove members, place an eDiscovery hold on users, create and edit searches, and export content from an eDiscovery case.​​"
     - content: "Add them as a member of the eDiscovery review role."
       isCorrect: false
       explanation: "Incorrect. This role would be useful for reviewing, but wouldn’t provide all the necessary permissions. Instead, use the eDiscovery Manager role group.​​​"
@@ -30,23 +30,23 @@ quiz:
       explanation: "Incorrect. This role isn’t suitable for managing eDiscovery cases. Instead, use the eDiscovery Manager role group."
   - content: "The compliance admin needs to be able to collect and copy data into review sets and to be able filter, search, and tag content, which solution can best address his need?"
     choices:
-    - content: "Basic audit."
+    - content: "Audit (Standard)."
       isCorrect: false
-      explanation: "Incorrect. Basic Audit provides with you with the ability to log and search for audited activities and power your forensic, IT, compliance, and legal investigations."
+      explanation: "Incorrect. Audit (Standard) provides with you with the ability to log and search for audited activities and power your forensic, IT, compliance, and legal investigations."
     - content: "Search"
       isCorrect: false
       explanation: "Incorrect. Use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to a local computer."
-    - content: "Advanced eDiscovery."
+    - content: "eDiscovery (Premium)."
       isCorrect: true
-      explanation: "Correct. Advanced eDiscovery allows you to collect and copy data into review sets, where you can filter, search, and tag content so you can identify and focus on content that's most relevant."
+      explanation: "Correct. The eDiscovery (Premium) solution allows you to collect and copy data into review sets, where you can filter, search, and tag content so you can identify and focus on content that's most relevant."
   - content: "The compliance team needs to preserve the records for high-value crucial events that can help the organization investigate possible security or compliance breaches and determine the scope of compromise. Which solution can best address that need?"
     choices:
-    - content: "Advanced Auditing."
+    - content: "Auditing (Premium)."
       isCorrect: true
-      explanation: "Correct. Advanced Auditing helps organizations to conduct forensic and compliance investigations by providing access to these crucial events."
+      explanation: "Correct. Auditing (Premium) helps organizations to conduct forensic and compliance investigations by providing access to these crucial events."
     - content: "Search."
       isCorrect: false
       explanation: "Incorrect. Use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to a local computer."
-    - content: "Core eDiscovery."
+    - content: "eDiscovery (Standard)."
       isCorrect: false
-      explanation: "Incorrect. Core eDiscovery also lets you associate searches and exports with a case and lets you place an eDiscovery hold on content locations relevant to the case."
+      explanation: "Incorrect. The eDiscovery (Standard) lets you associate searches and exports with a case and lets you place an eDiscovery hold on content locations relevant to the case."
