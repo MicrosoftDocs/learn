@@ -26,14 +26,14 @@ quiz:
     - content: Table-based and search-based
       isCorrect: true
       explanation: You can run both table-based and search-based queries in Azure Monitor.
-  - content: 'What query filter command would you use to get n rows in no particular order?'
+  - content: 'What query filter command would you use to get *n* rows in no specific order?'
     choices:
     - content: sort by
       isCorrect: false
-      explanation: Sort by is used to order the result set.
+      explanation: Use sort by to order the result set.
     - content: take
       isCorrect: true
-      explanation: Take is used on small datasets. It returns n rows from the result set in no particular order.
+      explanation: Use take on small datasets. It returns *n* rows from the result set in no specific order.
     - content: top
       isCorrect: false
-      explanation: Top returns the top n rows of the result set.
+      explanation: Top returns the top *n* rows of the result set.

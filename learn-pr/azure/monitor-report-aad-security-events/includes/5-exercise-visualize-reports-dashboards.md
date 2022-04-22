@@ -14,14 +14,16 @@ In this exercise, you create a Log Analytics workspace in your Azure sandbox by 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. Select **Create resource**. In the **Search** box, enter **log analytics**.
-
-   ![Screenshot of Log Analytics search results.](../media/3-log-analytics.png)
+  
+   :::image type="content" source="../media/5-log-analytics.png" alt-text="Screenshot of Log Analytics search results.":::
 
 1. In the results list, select **Log Analytics Workspace**, and then select **Create** to create a new Log Analytics workspace. Select or enter the following details:
 
    1. Under **Project details**, select the subscription to use for your workspace. Select an existing resource group or select **Create new** to create a new resource group.
 
    1. Under **Instance details**, enter a name for the workspace. For this exercise, enter **ContosoWorkspace**, and append it with several characters to create a unique workspace name. For **Region**, Select the location nearest you.
+
+   :::image type="content" source="../media/5-log-analytics-workspace.png" alt-text="Screenshot that shows new Log Analytics workspace options.":::
 
 1. Optionally create tags to use for the workspace, then select **Next : Review + Create >**.
 
@@ -33,21 +35,23 @@ You've now created a Log Analytics workspace, where you can gather and do analyt
 
 ## Send log files to a Log Analytics workspace
 
-To stream the audit and sign-in logs to your Log Analytics workspace, do the following:
+To stream the audit and sign-in logs to your Log Analytics workspace:
 
-1. In the Azure portal, open Azure Active Directory.
+1. In the Azure portal, go to your Azure AD instance.
 
 1. Select the **Monitoring** tab, and then select **Diagnostics settings**.
 
 1. Select **Add diagnostic setting**.
 
-   Here, you create a connection between the two log files and your Log Analytics workspace.
+   :::image type="content" source="../media/5-add-diagnostic-setting.png" alt-text="Screenshot that shows adding a new diagnostic setting.":::
 
-1. In **Diagnostics setting** pane, do the following:
+1. In the **Diagnostics setting** pane:
 
-    1. In **Diagnostic setting name**, enter a name for the setting.
-    1. In **Logs** under **Categories**, select **AuditLogs** and **SignInLogs**.  
-    1. In **Destination details**, select **Send to Log Analytics workspace**. Select or enter the subscription and Log Analytics workspace to use. For this exercise, select the Log Analytics workspace that you created earlier, **ContosoWorkspace** appended with unique characters.  
+   1. In **Diagnostic setting name**, enter a name for the setting.
+   1. In **Logs**, for **Categories**, select **AuditLogs** and **SignInLogs**.  
+   1. In **Destination details**, select **Send to Log Analytics workspace**. Select or enter the subscription and Log Analytics workspace to use. For this exercise, select the Log Analytics workspace that you created, **ContosoWorkspace** appended with unique characters.
+
+   :::image type="content" source="../media/5-create-diagnostic-setting.png" alt-text="Screenshot that shows the details of a new diagnostic setting.":::
 
 1. Select **Save**.  
 
@@ -57,13 +61,13 @@ You can use existing workbooks to display common views of your audit and sign-in
 
 1. In the Azure portal, go to your Log Analytics workspace.
 
-1. In the left menu, under **General**, select **Workbooks**.
+1. In the left menu under **General**, select **Workbooks**.
 
-1. In the workbooks gallery, you can select a tile that contains a view you'd like to use. You also can start with a default template or an empty workbook.
+1. In the workbooks gallery, you can select a tile that contains a view you'd like to use. You also can start with a default template or an empty workbook. Select the **Default template** tile.
 
-1. Select the **Default template** tile.
+   :::image type="content" source="../media/5-workbooks-gallery-tiles.png" alt-text="Screenshot that shows the details of a new diagnostic setting.":::
 
-1. For this exercise, you want to know the most common user event for last week. In your query editor, paste the following query.
+1. For this exercise, you want to know the most common user event for last week. In your query editor, paste the following query:
 
     ```kusto
     AuditLogs
@@ -73,6 +77,8 @@ You can use existing workbooks to display common views of your audit and sign-in
     ```
 
 1. In the menu bar, select **Run** to ensure that the query returns data.
+
+   :::image type="content" source="../media/5-new-workbooks-query.png" alt-text="Screenshot that shows the details of a new diagnostic setting.":::
 
 1. When you're satisfied that you have the data you want, select **Done editing**, and then select the **Save** icon in the menu bar.
 
@@ -86,19 +92,23 @@ You can use existing workbooks to display common views of your audit and sign-in
 
 1. To view the workbook, in the left menu under **General**, select **Workbooks**. Look for the workbook tile under **Recently modified workbooks**.
 
+    :::image type="content" source="../media/5-recently-modified-workbooks.png" alt-text="Screenshot that shows how to find modified workboooks.":::
+
 ## Create a security dashboard
 
-1. In the Azure portal, search for **Dashboard**, and then select **New dashboard**.
+1. In the Azure portal, search for **Dashboard**.
 
-   ![Screenshot of the "New dashboard" button.](../media/4-dashboard-new.png)
+1. Select **New dashboard** > **Blank dashboard**.
+
+    :::image type="content" source="../media/5-dashboard-blank.png" alt-text="Screenshot that shows how to create a new dashboard.":::
 
 1. At the prompt, name the dashboard **SecurityDashboard**, and then select **Done**. For now, leave the dashboard blank. In the next few steps, you'll be adding a report query to the dashboard.
 
-   To make the dashboard accessible to your workspace, you need to share it. Even though the dashboard contains no data, you can still share it.  
+    :::image type="content" source="../media/5-dashboard-save.png" alt-text="Screenshot that shows how to save a dashboard.":::
 
 1. Select **Share**.
 
-   ![Screenshot of the Share button.](../media/4-dashboard-share-option.png)
+    :::image type="content" source="../media/5-dashboard-share.png" alt-text="Screenshot of the Share button.":::
 
 1. In the **Sharing + access control** pane, confirm that the information is correct:  
 
@@ -108,7 +118,7 @@ You can use existing workbooks to display common views of your audit and sign-in
    
 1. Select **Publish** to make the empty dashboard available.
 
-   ![Screenshot of the "Sharing + access control" pane.](../media/4-dashboard-share.png)
+    :::image type="content" source="../media/5-dashboard-share.png" alt-text="Screenshot of the "Sharing + access control" pane.":::
 
 ## Pin a workbook to a dashboard
 
@@ -120,11 +130,13 @@ You can pin a workbook to a dashboard so that it's easy to find or to share it w
 
 1. In the **Pin to dashboard** pane, select the options you want to use. For this exercise, select **SecurityDashboard**, the dashboard you created.
 
+    :::image type="content" source="../media/5-pin-workbook.png" alt-text="Screenshot of pinning workbook.":::
+
 1. Select **Pin**.
 
 1. Go to the dashboard to view your analytics results.
 
-   ![Screenshot of the updated dashboard with the edited name and the Edit button highlighted.](../media/4-log-analytics-modify-dashboard.png)
+   ![Screenshot of the updated dashboard with the edited name and the Edit button highlighted.](../media/5-view-dashboard.png)
 
 To change the title of the report in the dashboard, do the following:
 
@@ -134,7 +146,9 @@ To change the title of the report in the dashboard, do the following:
 
 1. Remove the subtitle, which you don't need for this report.
 
-You've now imported the prebuilt workspace views to your workspace. You can use them to display common views of your audit and sign-in data.
+    :::image type="content" source="../media/5-query-rename.png" alt-text="Screenshot of renaming query.":::
+
+You can use them to display common views of your audit and sign-in data.
 
 In the next section, you set up a dashboard that your security team can begin to use.
 
@@ -157,9 +171,9 @@ In the next section, you set up a dashboard that your security team can begin to
 
 1. In the menu bar, select **Run** to ensure that the query returns data.
 
-1. When you're satisfied that you have the data you want, select **Done editing**, and then select the **Save** icon in the menu bar.
+    :::image type="content" source="../media/5-logs-search.png" alt-text="Screenshot of searching logs.":::
 
-   ![Screenshot of the "Save" and "Pin to dashboard" buttons for a Log Analytics query.](../media/4-save-query.png)
+1. When you're satisfied that you have the data you want, select **Done editing**, and then select the **Save** icon in the menu bar.
 
 1. Enter a descriptive name, like *Common User Events Last 7 days*.  
 
@@ -181,11 +195,11 @@ You can pin query results to a dashboard so that they're easy to find or to shar
 
 1. Select **Pin**.
 
+    :::image type="content" source="../media/5-pin-query.png" alt-text="Screenshot of pinning a query.":::
+
 1. Go to the dashboard to view your analytics results.
 
-   ![Screenshot of the updated dashboard with the edited name and the Edit button highlighted.](../media/4-log-analytics-modify-dashboard.png)
-
-## Edit an item in a dashboard
+## Edit or customize an item in a dashboard
 
 To change the title of an item in a dashboard or change the dashboard view:
 
@@ -195,8 +209,12 @@ To change the title of an item in a dashboard or change the dashboard view:
 
 1. Select **Apply**.
 
+    :::image type="content" source="../media/5-pin-query.png" alt-text="Screenshot of pinning a query.":::
+
 1. To change how an item appears in the dashboard, select **Customize** (pencil icon)), and then select from the options.
 
 1. Select **Save**.
+
+    :::image type="content" source="../media/5-customize-dashboard.png" alt-text="Screenshot of pinning a query.":::
 
 You've now created a dashboard with a query report embedded in it.

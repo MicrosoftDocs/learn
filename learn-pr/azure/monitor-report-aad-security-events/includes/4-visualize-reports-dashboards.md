@@ -16,7 +16,7 @@ To create a new dashboard for your security team, do the following:
 
 1. Select **New dashboard** > **Blank dashboard**.
 
-1. Enter a name for the dashboard a name, for example, **SecurityDashboard**.
+1. Enter a name for the dashboard a name.
 
 1. Select **Add tiles**, and then select **Save**.
 
@@ -26,7 +26,7 @@ Now that you've created a dashboard, you need to add a query report to it. It mi
 
 ### Build a dashboard query
 
-From the Log Analytics workspace, create a new query. Let's suppose you want to identify the most common user event for the last week. You would use a query like this one.
+From the Log Analytics workspace, create a new query. Let's suppose you want to identify the most common user event for the last week. You would use a query like this one:
 
 ```kusto
 AuditLogs
@@ -54,7 +54,7 @@ AuditLogs
 
 1. When you're satisfied that you have the data you want, select **Done editing**, and then select the **Save** icon in the menu bar.
 
-   ![Screenshot of the "Save" and "Pin to dashboard" buttons for a Log Analytics query.](../media/4-save-query.png)
+   :::image type="content" source="../media/4-save-query.png" alt-text="Screenshot of the "Save" and "Pin to dashboard" buttons for a Log Analytics query.":::
 
 1. Enter a descriptive name, like *Common User Events Last 7 days*.  
 
@@ -71,7 +71,7 @@ When you're satisfied with the report, you can export it to Excel or the Power B
 - **Export to Power BI (M query)**
 - **Open in Excel**
 
-![Screenshot of the options in the "Export" drop-down.](../media/4-export-options.png)
+:::image type="content" source="../media/4-export-options.png" alt-text="Screenshot of the options in the "Export" drop-down.":::
 
 ### Export a report to Excel
 
@@ -101,8 +101,8 @@ Power BI lets you build complex and dynamic reports and dashboards from the data
 
 Because this query originated in Azure, you'll need to use the **Organizational account** option, and your Azure authentication credentials to grant Power BI access to your Azure instance.
 
-Now that you've created the link, you can select a reporting chart style to represent your data in the way you want.  
+Now that you've created the link, you can select a reporting chart style to represent your data in the way you want.
 
-![Screenshot of a report in the Power BI query editor pane.](../media/4-power-bi-analytics-visualize.png)
+:::image type="content" source="../media/4-power-bi-analytics-visualize.png" alt-text="Screenshot of a report in the Power BI query editor pane.":::
 
 After you've designed the report as you want it, you can select **Publish to Web** to publish it to your Azure Power BI cloud workspace. From there, you can display the report on other webpages as well.

@@ -1,36 +1,36 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.2-use-logs-detect-suspicious-activity
 metadata:
-  title: Use sign-in, audit, and provisioning logs to detect suspicious activity
-  description: Use sign-in, audit, and provisioning logs to detect suspicious activity.
+  title: Use sign-in, audit, and risky sign-in logs to detect suspicious activity
+  description: Use sign-in, audit, and risky sign-in logs to detect suspicious activity.
   ms.date: 03/27/2020
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use sign-in, audit, and provisioning logs to detect suspicious activity
+title: Use sign-in, audit, and risky sign-in logs to detect suspicious activity
 durationInMinutes: 8
 content: |
   [!include[](includes/2-use-logs-detect-suspicious-activity.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'In which log would you find information about the multi-factor authentication method that is being used?'
+  - content: 'In which log would you find information about the multifactor authentication method that's used?'
     choices:
     - content: Audit log files
       isCorrect: false
       explanation: The audit log file provides a history of every task that's done in your tenant.
     - content: Sign-in log files
       isCorrect: true
-      explanation: The sign-in log file contains information about multi-factor authentication.
+      explanation: The sign-in log file contains information about multifactor authentication.
     - content: Risky sign-ins log
       isCorrect: false
-      explanation: This log holds data about user accounts where the user's sign-in behavior is inconsistent with previous sign-in attempts.
+      explanation: This log holds data about user accounts in which the user's sign-in behavior is inconsistent with earlier sign-in attempts.
   - content: 'In which log would you find information about identity protection?'
     choices:
-    - content: Audit log
+    - content: Audit log files
       isCorrect: true
-      explanation: You can use the services column to obtain information about identity protection.
+      explanation: You can use the Services column to see information about identity protection.
     - content: Sign-in log files
       isCorrect: false
       explanation: The sign-in log file tracks details about user authentication, but it doesn't contain information about identity protection.

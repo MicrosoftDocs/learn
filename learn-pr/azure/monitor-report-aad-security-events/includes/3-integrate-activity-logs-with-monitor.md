@@ -1,24 +1,26 @@
-Azure provides advanced logging, which lets you see both the users who have signed in to your system and what they did while connected. 
+You can use advanced logging in Azure both to see the users who have signed in to your system and to see what they did while connected. 
 
-You've seen how to access the sign-in and audit logs, and how you might use them to search for unexpected user behavior.  Having access to this data is a significant first step in protecting your network, assets, and resources. Gathering and processing the log files can be labor-intensive. This process might identify suspicious user behavior after the event, but it still doesn't meet your security team's need for a real-time view of such behavior.
+You've seen how to access the sign-in and audit logs, and how you might use the logs to search for unexpected user behavior.  Having access to this data is a significant first step in protecting your network, assets, and resources. Gathering and processing the log files can be labor-intensive. This process might identify suspicious user behavior after the event, but it still doesn't meet your security team's need for a real-time view of such behavior.
 
 Azure Monitor can provide the real-time views and alerting that your security team needs. To reassure your team, you want to learn more about Azure Monitor and how it's used to identify suspicious sign-in behavior.
 
-In this unit, you set up a Log Analytics workspace to hold and store the audit and sign-in log data. You then learn how to send the log files to Azure Monitor. Finally, you see how to create Azure Monitor alerts to notify the team when there's suspicious user behavior or activity.
+This unit describes how to set up a Log Analytics workspace to hold and store the audit and sign-in log data. You then learn how to send the log files to Azure Monitor. Finally, you see how to create Azure Monitor alerts to notify the team when there's suspicious user behavior or activity. 
+
+In a later exercise, you can try it yourself.
 
 ## Prerequisites
 
-To use the Log Analytics workspace and Azure Monitor logs, make sure that you have the following items available or set up:
+To use a Log Analytics workspace and Azure Monitor logs, make sure that you have the following items available or set up:
 
-- Access to the Log Analytics workspace
+- Access to a Log Analytics workspace
 - Access to Azure Monitor logs
-- Access to Azure Active Directory (Azure AD) diagnostic settings
+- Access to Azure AD diagnostics settings
 - An Azure AD Premium 1 or Premium 2 subscription
 - Any of the following Azure AD roles:
-  - *Security Administrator*
-  - *Security Reader*
-  - *Report Reader*
-  - *Global Administrator*
+  - Security Administrator
+  - Security Reader
+  - Report Reader
+  - Global Administrator
 
 ## Log Analytics workspace
 
@@ -26,44 +28,44 @@ You know that Azure collects user data in the form of audit and sign-in log file
 
 Creating a Log Analytics workspace is straightforward.
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
-
-1. Select **Create resource**, and then, in the **Search** box, enter **log analytics**.
+1. In the Azure portal, select **Create resource**. In the **Search** box, enter **log analytics**.
 
 1. In the results list, select **Log Analytics Workspace**, and then select **New** to create a new Log Analytics workspace. Select or enter the following details:
 
    1. Select **Create New**, because this workspace is unique to the user who's signing in. Each workspace needs a **Name** that's globally unique among Azure Monitor subscriptions.  
-   1. Select the subscription, and then select the workspace you want to use, such as an existing **Resource group**.
+   1. Select the subscription, and then select the workspace you want to use, such as an existing resource group.
 
-   The pricing tier is automatically assigned as **pay-as-you-go** and is based on a per-gigabyte (GB) cost.
+   The pricing tier is automatically assigned as **Pay-as-you-go** and is based on a per-gigabyte (GB) cost.
 
 1. Select **Create** to create the workspace.
 
-You've now created a Log Analytics workspace, where you can gather and do analytics on your user audit and sign-in data.
+With a Log Analytics workspace created, you can gather and do analytics on your user audit and sign-in data.
 
 ### Storage sizes for activity logs
 
 It's important to understand how much storage your workspace is likely to consume. A typical sign-in event log is about 4 kilobytes (KB) in size, and the audit log takes up about 2 KB.
 
-To put that into some perspective, if your tenant has 1,000 users, your audit log would generate about 15,000 events each day. There would be a daily storage volume of about 30 megabytes (MB) per day, or 900 MB per month. The numbers are a little larger for the sign-in logs. Assuming an Azure tenant of 1,000 users, the sign-in logs will generate 34,800 events per day, which is about 140 MB per day, or 4 GB of storage per month.
+To put that into perspective, if your tenant has 1,000 users, your audit log would generate about 15,000 events each day. There would be a daily storage volume of about 30 megabytes (MB) per day or 900 MB per month. The numbers are a little larger for the sign-in logs. Assuming an Azure tenant of 1,000 users, the sign-in logs will generate 34,800 events per day, which is about 140 MB per day or 4 GB of storage per month.
 
 ## Send user logs to the Log Analytics workspace
 
 Now that you've created a Log Analytics workspace, you assign the user audit and sign-in logs. All the data you want to use in Azure Monitor logs must be stored in a Log Analytics workspace.
 
-To stream the audit and sign-in logs to your Log Analytics workspace, you need to:
+To stream the audit and sign-in logs to your Log Analytics workspace:
 
-1. Open Azure Active Directory.
+1. In the Azure portal, go to your Azure AD instance.
 
-1. In the menu, under **Monitoring** section, select **Diagnostics settings**.
+1. Select the **Monitoring** tab, and then select **Diagnostics settings**.
 
 1. Select **Add diagnostic setting**.
 
-1. In **Diagnostic setting name**, enter a name to use for the setting. For example, **SendToLogAnalytics**.
+   Here, you create a connection between the two log files and your Log Analytics workspace.
+
+1. In **Diagnostic setting name**, enter a name to use for the setting.
 
 1. Under **Logs**, for categories, select **AuditLogs** and **SignInLogs**.
 
-1. Select the **Send to Log Analytics** option, and then specify or create a Log Analytics workspace. In our scenario, select the Log Analytics workspace you've just created.
+1. Select the **Send to Log Analytics** option, and then specify or create a Log Analytics workspace.
 
 1. Select **Save**.  
 
@@ -121,7 +123,7 @@ Each Kusto query follows a common pattern:
 
 Unless you nominate specific columns, the result set you see contains all schema fields.
 
-The *where* command is the most common means of filtering the data in your query.  When you write a condition to filter your data, the following expressions are valid:
+The `where` command is the most common means of filtering the data in your query.  When you write a condition to filter your data, the following expressions are valid:
 
 | Expression  | Description                                       | Example                                                    |
 | :---------- | :------------------------------------------------ | :--------------------------------------------------------- |
@@ -142,9 +144,9 @@ Other common filter commands include:
 
 You can use many other commands to build queries. To learn more about queries and filters, see the references at the end of this module.
 
-#### Example sign-in query
+#### Example sign-in queries
 
-Let's suppose you want to know the most-used applications requested and signed in to over the last week. Your query would look something like this:
+Suppose you want to know the most-used applications requested and signed in to over the last week. Your query would look like this example:
 
 ```kusto
 SigninLogs
@@ -153,7 +155,7 @@ SigninLogs
 | sort by signInCount desc
 ```
 
-Or, if you want to see how many of your users were flagged as risky in the last 14 days, you would use:
+Or, if you want to see how many of your users were flagged as risky in the last 14 days, you would use this query:
 
 ```kusto
 SigninLogs
@@ -163,7 +165,7 @@ SigninLogs
 
 #### Example audit query
 
-Now let's suppose you want to know the most common user event for the last week. You would use a query like this:
+Now, suppose you want to know the most common user event for the last week. You would use a query like this example:
 
 ```kusto
 AuditLogs
@@ -174,13 +176,13 @@ AuditLogs
 
 ## Create alerts from your activity log data
 
-Alerts are similar to queries, the principal difference being that they run automatically. You can set a threshold against the result set, and if it's met, trigger an alert to let you know about it.
+Alerts are similar to queries, but they run automatically in response to specific events. You can set a threshold against the result set, and if it's met, trigger an alert to let you know about it.
 
-1. To get started, in the Azure portal, go to your Log Analytics workspace.
+1. In the Azure portal, go to your Log Analytics workspace.
 
-1. In the left menu under **Monitoring**, select **Alerts**, and then select **Create alert rule**,
+1. In the left menu under **Monitoring**, select **Alerts**, and then select **Create alert rule**.
 
-1. Scope is automatically set to your Log Analytics workspace. Select the **Condition** tab.
+1. Scope is automatically set to your Log Analytics workspace, so select the **Condition** tab.
 
 1. In the **Select a signal** pane, for **Signal type**, select **Activity Log**.
 
@@ -196,13 +198,13 @@ Alerts are similar to queries, the principal difference being that they run auto
 
 1. Select a notification type and enter a name for the notification. Enter the details to continue to set up the action group.
 
-1. You can optionally set up actions and tags. Then, select **Review + create**. 
+1. You can optionally set up actions and tags. Then, select **Review + create**.
 
 1. Review the action group information, and then select **Create**.
 
 1. In **Create an alert rule**, on the **Details** tab, select a subscription and resource group for the alert rule. Enter an alert rule name and optionally enter a description of the alert rule.
 
-1. You can optionally set tags for the alert rule. Then, select **Review + create**. 
+1. You can optionally set tags for the alert rule. Then, select **Review + create**.
 
 1. Review the action group information, and then select **Create**.
 
@@ -210,9 +212,8 @@ Alerts are similar to queries, the principal difference being that they run auto
 
 When an alert fires, it will send any notifications in its action groups. You can also view the alert in the Azure portal.
 
-In the left menu, select **Alerts**. If there are any open alerts for the resources, they are included in the view.
+In the left menu, select **Alerts**. Any open alerts for the resources are included in the view.
 
-Click on a severity to show the alerts with that severity. To view only open alerts, select **Alert state** and clear the **Closed** option.
+To view alerts that have that severity, select a severity. To view only open alerts, select **Alert state** and clear the **Closed** option.
 
-Click on the name of an alert to view its detail.
-
+To view details about an alert, select the name of the alert.
