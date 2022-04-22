@@ -61,7 +61,7 @@ Just like in other programming languages, variables let you do things like:
 * Define values that might change between runs of your pipeline.
 * Store information that's repeated throughout your pipeline, like a version number or a file path, in one place. That way, you don't need to update all occurrences when your needs change.
 
-Azure Pipelines provides a number of built-in variables. These variables describe aspects of the build process, like the build identifier and the directory names where your software is built and staged.
+Azure Pipelines provides many built-in variables. These variables describe aspects of the build process, like the build identifier and the directory names where your software is built and staged.
 
 You can also define your own variables. Here's an example that shows a variable named `buildConfiguration` that defines the Release build configuration.
 
