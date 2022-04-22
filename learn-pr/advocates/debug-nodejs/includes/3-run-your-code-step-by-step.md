@@ -18,7 +18,7 @@ There are multiple ways of defining breakpoints in your code based on your debug
 
 You can add this statement at any point in your code, like this:
 
-:::code language="javascript" source="/code/add-debugger-statement.cs" highlight="3":::
+:::code language="javascript" source="./code/add-debugger-statement.cs" highlight="3":::
 
 ## Node.js inspect mode
 
