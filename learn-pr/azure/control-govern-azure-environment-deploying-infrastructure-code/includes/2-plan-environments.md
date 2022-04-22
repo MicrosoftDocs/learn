@@ -4,7 +4,7 @@ In this unit, you'll learn about the benefit of consistently using code for all 
 
 ## Define your infrastructure as code
 
-Azure deployment and configuration covers far more than applications, virtual machines, storage services, networking, and the like. For example, each of the following items is a form of configuration, with corresponding Azure resources:
+Azure deployment and configuration cover far more than applications, virtual machines, storage services, networking, and the like. For example, each of the following items is a form of configuration, with corresponding Azure resources:
 
 - Creating resource groups, subscriptions, and management groups to organize your resources.
 - Defining and applying Azure Policy definitions, initiatives, and assignments to control how other resources should be configured.
