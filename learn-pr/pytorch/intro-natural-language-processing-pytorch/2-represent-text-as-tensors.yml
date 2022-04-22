@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure
   ms.custom: team=nextgen
-durationInMinutes: 10
+durationInMinutes: 8
 sandbox: true
 notebook: notebooks/2-represent-text-as-tensors.ipynb
