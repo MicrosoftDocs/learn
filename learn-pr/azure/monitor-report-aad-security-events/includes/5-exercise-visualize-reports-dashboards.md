@@ -65,7 +65,7 @@ You can use existing workbooks to display common views of your audit and sign-in
 
 1. In the workbooks gallery, you can select a tile that contains a view you'd like to use. You also can start with a default template or an empty workbook. Select the **Default template** tile.
 
-   :::image type="content" source="../media/5-workbooks-gallery-tiles.png" alt-text="Screenshot that shows the details of a new diagnostic setting.":::
+   :::image type="content" source="../media/5-workbooks-gallery-tiles.png" alt-text="Screenshot that shows a default workbooks template.":::
 
 1. For this exercise, you want to know the most common user event for last week. In your query editor, paste the following query:
 
@@ -78,7 +78,7 @@ You can use existing workbooks to display common views of your audit and sign-in
 
 1. In the menu bar, select **Run** to ensure that the query returns data.
 
-   :::image type="content" source="../media/5-new-workbooks-query.png" alt-text="Screenshot that shows the details of a new diagnostic setting.":::
+   :::image type="content" source="../media/5-new-workbooks-query.png" alt-text="Screenshot that shows adding a query to a workbooks template and selecting run.":::
 
 1. When you're satisfied that you have the data you want, select **Done editing**, and then select the **Save** icon in the menu bar.
 
@@ -209,12 +209,12 @@ To change the title of an item in a dashboard or change the dashboard view:
 
 1. Select **Apply**.
 
-    :::image type="content" source="../media/5-pin-query.png" alt-text="Screenshot of pinning a query.":::
+    :::image type="content" source="../media/5-pin-query.png" alt-text="Screenshot of editing a report on the dashboard.":::
 
 1. To change how an item appears in the dashboard, select **Customize** (pencil icon)), and then select from the options.
 
 1. Select **Save**.
 
-    :::image type="content" source="../media/5-customize-dashboard.png" alt-text="Screenshot of pinning a query.":::
+    :::image type="content" source="../media/5-customize-dashboard.png" alt-text="Screenshot of customizing a report on the dashboard.":::
 
 You've now created a dashboard with a query report embedded in it.
