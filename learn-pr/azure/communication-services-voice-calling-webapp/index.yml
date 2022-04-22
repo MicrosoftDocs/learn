@@ -26,7 +26,8 @@ levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/m
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - developer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  {{products}}
+- azure-communication-services
+- azure
 units:
 - learn.communication-services-voice-calling-webapp.introduction
 - learn.communication-services-voice-calling-webapp.exercise-create-account
