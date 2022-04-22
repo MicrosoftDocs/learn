@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.govern-azure-databases-with-microsoft-purview.2-discover-govern-data-different-sources-using-microsoft-purview
+title: Introduction
+metadata:
+  title: Discover and govern data from different sources by using Azure Purview
+  description: Discover and govern data from different sources by using Azure Purview.
+  ms.date: 4/19/2022
+  author: stamatm
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-discover-govern-data-different-sources-using-microsoft-purview.md)]
