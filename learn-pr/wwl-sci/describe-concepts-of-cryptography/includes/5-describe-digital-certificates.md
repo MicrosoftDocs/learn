@@ -10,15 +10,15 @@ The lifespan of a digital certificate tends to be one year, after which the cert
 
 A common of application of digital certificates, that is transparent to the user, is in web-based communication.  Digital certificates are employed by websites that use secure *HTTPS* communication, and is denoted by a padlock icon in the browser's address bar.  Selecting the padlock on the address bar provides several options that can be selected and provide additional information.
 
-:::image type="content" source="../media/digital-certificates-step1-inline.png" lightbox="../media/digital-certificates-step1-expanded.png" alt-text="Diagram showing padlock icon on website address bar.":::
+:::image type="content" source="../media/digital-certificates-step-1-inline.png" lightbox="../media/digital-certificates-step-1-expanded.png" alt-text="Diagram showing padlock icon on website address bar.":::
 
 Selecting "Connection is secure," provides information about the connection, as shown in the image below.
 
-:::image type="content" source="../media/digital-certificates-step2-inline.png" lightbox="../media/digital-certificates-step2-expanded.png" alt-text="The site has a valid certificate issued by a trusted authority. Information will be securely sent to the site and can't be intercepted.":::
+:::image type="content" source="../media/digital-certificates-step-2-inline.png" lightbox="../media/digital-certificates-step-2-expanded.png" alt-text="The site has a valid certificate issued by a trusted authority. Information will be securely sent to the site and can't be intercepted.":::
 
 Selecting the certificate icon provides details about the digital certificate.
 
-:::image type="content" source="../media/digital-certificates-step3-inline.png" lightbox="../media/digital-certificates-step3-expanded.png" alt-text="This image provides details about the digital certificate.  Information provided includes the purpose of the certificate, to whom it was issued, who issued the certificate, and for how long the certificate is valid.":::
+:::image type="content" source="../media/digital-certificates-step-3-inline.png" lightbox="../media/digital-certificates-step-3-expanded.png" alt-text="This image provides details about the digital certificate.  Information provided includes the purpose of the certificate, to whom it was issued, who issued the certificate, and for how long the certificate is valid.":::
 
 ### Why do we need digital certificates?
 
