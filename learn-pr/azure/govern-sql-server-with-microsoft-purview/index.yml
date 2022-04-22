@@ -41,4 +41,5 @@ units:
 - learn.azure.govern-azure-databases-with-microsoft-purview.5-knowledge-check
 - learn.azure.govern-azure-databases-with-microsoft-purview.6-summary
 badge:
-  uid: learn.azure.govern-azure-databases-with-microsoft-purview.badge 
+  uid: learn.azure.govern-azure-databases-with-microsoft-purview.badge
+  
