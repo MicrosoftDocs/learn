@@ -1,24 +1,26 @@
-When you deploy your infrastructure as code you can automate your deployments, improve your confidence in your deployments, and increase the efficiency of your team's work. But, these benefits only apply if you and your team are diligent and avoid making manual changes to your environment. In this module, you'll learn how to apply configuration and governance to your Azure environment and pipelines to avoid unexpected or uncontrolled changes.
+When you deploy your infrastructure as code you can automate your deployments, improve your confidence in your deployments, and increase the efficiency of your team's work. But these benefits only apply if you and your team are diligent and avoid making manual changes to your environment. In this module, you'll learn how to apply configuration and governance to your Azure environment and pipelines to avoid unexpected or uncontrolled changes.
 
 ## Example scenario
 
-Suppose you work as the Azure administrator at a toy company. Over the last several months, you and your team have been converting your Azure deployments to use Bicep, and automated them by using Azure Pipelines and GitHub Actions. But, you still have some team members who haven't quite adopted the mindset of deploying all of their changes as code. Recently you had several situations where people haven't followed the recommended practices:
+Suppose you work as the Azure administrator at a toy company. Over the last several months, you and your team have been converting your Azure deployments to use Bicep, and you've automated your deployment processes by using Azure Pipelines and GitHub Actions. But your team still has some members who haven't quite adopted the mindset of deploying all of their changes as code.
 
-1. Somebody made a direct change to a resource by using the Azure portal.
-1. Somebody deployed a Bicep file directly from their local computer.
-1. Somebody used a pipeline's service principal to manually deploy a change to production.
-1. Somebody committed a Bicep file change directly to the repository’s main branch, bypassing pull request reviews.
+Recently you had several situations where people haven't followed the recommended practices:
+
+1. Somebody made a direct change to a website's configuration by using the Azure portal.
+1. Somebody deployed a new Bicep file directly from their own computer.
+1. Somebody copied a pipeline's service principal credentials, and used them to access the production environment by using the Azure CLI.
+1. Somebody committed a Bicep file change directly to the repository’s *main* branch, bypassing pull request reviews.
 1. Somebody updated a Bicep file by using a pull request, and their changes were validated, tested, and deployed throughout the correct sequence of environments.
 
 :::image type="content" source="../media/1-risks.png" alt-text="Diagram showing several approaches to making Azure configuration changes." border="false":::
 
-Of all of these changes, only number 5 was deployed using the automation tools you've adopted and using your team's agreed process. Lucky, none of the other changes caused any damage, but you don't want to push your luck. Your team has decided to enforce your process so that you can get the most benefit from your investment in automation. You've agreed with your team that you'll close off the ability to deploy to your Azure environment, except through the approved process:
+Of all of these changes, only number 5 was deployed using the automation tools you've adopted and using the process that your team agreed on. Fortunately none of the other changes caused any damage, but you don't want to push your luck. Your team has decided to enforce your process so that you can get the most benefit from your investment in automation. You've agreed with your team that you'll close off the ability to deploy to your Azure environment, except through the approved process:
 
 :::image type="content" source="../media/1-risks-controlled.png" alt-text="Diagram showing several approaches to making Azure configuration changes, which are all blocked except for the approved process." border="false":::
 
 ## What will you be doing?
 
-In this module, you'll learn how you can enforce the deployment of your Azure infrastructure as code. You'll look at how to consider the controls you need to apply to each of your environments, and you'll apply Azure governance and controls to protect your resources. You'll also learn how to secure your pipelines and repositories, ensuring that all of the aspects of your Azure configuration follow a recommended and hardened process.
+In this module, you'll learn how to enforce the deployment of your Azure infrastructure as code. You'll look at how to consider the controls you need to apply to each of your environments, and you'll apply governance and security policies to protect your Azure resources. You'll also learn how to secure your pipelines and repositories, ensuring that all of the aspects of your Azure configuration follow a recommended and hardened process.
 
 > [!TIP]
 > In this module, you'll be introduced to many security features. Links to more information about each feature are provided in the summary unit.
