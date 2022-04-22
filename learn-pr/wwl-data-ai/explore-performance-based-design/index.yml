@@ -3,19 +3,18 @@ uid: learn.wwl.explore-performance-based-design
 metadata:
   title: Explore performance-based design
   description: "Explore performance-based design"
-  ms.date: 01/21/2022
+  ms.date: 04/22/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore performance-based design
-summary: Explore normalization for relational databases.  Investigate the impact of proper datatype usage. Compare types of indexes. Determine where data compression can be useful.
+summary: Explore normalization for relational databases. Investigate the impact of proper datatype usage. Compare types of indexes.
 abstract: |
   After completing this module, you will be able to:
   - Explore normal forms and how they affect database design
   - Choose appropriate datatypes for your data
   - Evaluate appropriate index types
-  - Investigate the value of data compression
 prerequisites: |
   - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
@@ -37,7 +36,7 @@ units:
 - learn.wwl.explore-performance-based-design.describe-normalization
 - learn.wwl.explore-performance-based-design.choose-appropriate-data-types
 - learn.wwl.explore-performance-based-design.design-indexes
-- learn.wwl.explore-performance-based-design.describe-data-compression
+- learn.wwl.explore-performance-based-design.exercise-identify-issues-database-design
 - learn.wwl.explore-performance-based-design.knowledge-check
 - learn.wwl.explore-performance-based-design.summary
 badge:

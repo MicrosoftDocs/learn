@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-performance-based-design.exercise-identify-issues-database-design
+title: 'Exercise: Identify database design issues'
+metadata:
+  title: 'Exercise: Identify database design issues'
+  description: "Exercise: Identify database design issues"
+  ms.date: 04/22/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 119403
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-identify-issues-database-design.md)]

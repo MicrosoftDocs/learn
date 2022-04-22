@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/21/2022
+  ms.date: 04/22/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "Star Schema"
       isCorrect: false
       explanation: "That's incorrect. Star schema would increase the size of your data volume."
-    - content: "3rd normal form"
+    - content: "Third normal form"
       isCorrect: false
       explanation: "That's incorrect. 3rd normal form would not be a good fit for a data warehouse structure."
   - content: "What is the minimum number of rows you need to bulk insert into a columnstore index?"
@@ -35,18 +35,18 @@ quiz:
       explanation: "That's correct. 102,400 is the minimum number of rows to bulk insert into a columnstore index, fewer rows will use a normal insert operation."
     - content: "1,000,000"
       isCorrect: false
-      explanation: "That's incorrect. While this row count would be bulk inserted it is well above the minimum."
+      explanation: "That's incorrect. While this row count would be bulk inserted, it is well above the minimum."
     - content: "1000"
       isCorrect: false
       explanation: "That's incorrect. This row count would not be bulk loaded."
-  - content: "Which compression type offers the highest level of compression?"
+  - content: "Which index type is recommended for queries that run large aggregation workloads?"
     choices:
-    - content: "Columnstore Archival"
+    - content: "Columnstore index"
       isCorrect: true
-      explanation: "That's correct. Columnstore archival provides the highest level of compression in SQL Server."
-    - content: "Page Compression"
+      explanation: "That's correct. Columnstore index is recommended for queries that run large aggregation workloads."
+    - content: "Clustered index"
       isCorrect: false
-      explanation: "That's incorrect. Page compression, while compressing more than row compression will not compress more than columnstore archival."
-    - content: "Row Compression"
+      explanation: "That's incorrect. Clustered index is recommended for primary key column."
+    - content: "Nonclustered index"
       isCorrect: false
-      explanation: "That's incorrect. Row compression will not deduplicate data which means it has a lower rate of compression."
+      explanation: "That's incorrect. Columnstore index is recommended for queries that run large aggregation workloads."

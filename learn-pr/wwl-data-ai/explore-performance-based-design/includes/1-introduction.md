@@ -5,5 +5,5 @@ Database design is an important aspect of database performance, even though itâ€
 In this module, you will:
 
 - Understand normal form and how it affects database design
-- Choose appropriate datatypes for your database
+- Choose appropriate data types for your database
 - Understand types of indexes
