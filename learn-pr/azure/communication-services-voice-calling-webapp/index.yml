@@ -8,24 +8,26 @@ metadata:
   author: ProbablePrime
   ms.author: rifox
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 title: Create a voice calling web app with Azure Communication Services
 summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+  - Create and configure an Azure Communication Services resource
+  - Setup a basic voice calling web application
+  - Make a voice call to an echo bot using Azure Communication Services
+  - Make a voice call to another user using Azure Communication Services
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - Basic familiarity with JavaScript and Node.js
+  - The LTS(Long Term Support) or latest version of Node.js
+  - An Azure account with an active subscription and a billing address in the United States. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels:
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles:
   - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - student
+products:
 - azure-communication-services
 - azure
 units:

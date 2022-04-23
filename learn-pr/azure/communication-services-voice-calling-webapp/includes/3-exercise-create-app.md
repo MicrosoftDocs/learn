@@ -27,7 +27,7 @@ Now we'll add the required dependencies.
     npm install --save @azure/communication-common @azure/communication-calling
     ```
 
-1. Followed by Parcel which will allow us to run our application in a browser.
+1. Followed by Parcel which will allow us to run our app in a browser.
 
     ```console
     npm install --save-dev parcel
@@ -35,7 +35,7 @@ Now we'll add the required dependencies.
 
 ## Create the index HTML file
 
-1. Create a new file in your application directory called `index.html`.
+1. Create a new file in your app directory called `index.html`.
 1. Enter the following text for the contents of this file. This is the basic structure of most HTML files.
 
     ```html
@@ -57,7 +57,7 @@ Now we'll add the required dependencies.
 
 ## Create the app's JavaScript file
 
-1. Create a new file in the application directory called `app.js`
+1. Create a new file in the app directory called `app.js`
 1. For now this can be left blank, we'll add to it during the next unit.
 
 ## Test your new app

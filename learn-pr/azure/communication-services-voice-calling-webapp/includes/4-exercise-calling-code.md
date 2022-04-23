@@ -53,20 +53,20 @@ So let's also add these underneath the inputs from the previous step:
 
 ## Testing the HTML
 
-With this done, we've completed the majority of the HTML for this application. If you run the application with the same command as the previous unit: `npx parcel index.html` and then open the application, you should see the following in your browser:
+With this done, we've completed the majority of the HTML for this app. If you run the app with the same command as the previous unit: `npx parcel index.html` and then open the app, you should see the following in your browser:
 :::image type="content" source="../media/4-html-complete.png" alt-text="Our blank web app showing in a browser.":::
 
-This may not look like a lot, but its all we the visual elements we need to create a simple voice calling application.
+This may not look like a lot, but its all we the visual elements we need to create a simple voice calling app.
 
 ## Create and link the JavaScript file
 
-Next we'll need a JavaScript file to contain our application's code and actually make and handle the call. To do this create a new file in your application directory called `app.js`. Its ok to leave it blank just for now. Now inside `index.html` add the following HTML, just underneath our hang up button:
+Next we'll need a JavaScript file to contain our app's code and actually make and handle the call. To do this create a new file in your app directory called `app.js`. Its ok to leave it blank just for now. Now inside `index.html` add the following HTML, just underneath our hang up button:
 
 ```html
 <script src="./app.js" type="module"></script>
 ```
 
-This links our JavaScript file into our HTML so it loads when we open the application. Its also the last line of HTML we need. The rest of this unit will deal with the JavaScript.
+This links our JavaScript file into our HTML so it loads when we open the app. Its also the last line of HTML we need. The rest of this unit will deal with the JavaScript.
 
 ## Import some dependencies
 
@@ -81,7 +81,7 @@ The first import, imports CallClient, which will be used later to actually make 
 
 ## Getting references to our HTML
 
-Earlier, we created a lot of HTML elements which users will use to control the application. To listen to the user interacting with them we'll need to get references to them in our JavaScript.
+Earlier, we created a lot of HTML elements which users will use to control the app. To listen to the user interacting with them we'll need to get references to them in our JavaScript.
 
 Additionally we need a couple of variables to hold some items which are used throughout our code. Add the following code to `app.js` underneath the imports.
 
@@ -185,7 +185,7 @@ const incomingCallHandler = async (args) => {
 
 ## Testing
 
-We're done, If you run the application with the same command as the previous unit: `npx parcel index.html` and then open the application in your browser. You'll have a functional basic calling application! 
+We're done, If you run the app with the same command as the previous unit: `npx parcel index.html` and then open the app in your browser. You'll have a functional basic calling app!
 
 ### Getting test credentials
 
@@ -193,7 +193,7 @@ To test actually making a call you'll need some credentials. You can obtain thes
 
 :::image type="content" source="../media/4-identities-menu-option.png" alt-text="Azure Portal, showing the Identities & User Access Tokens menu option highlighted.":::
 
-On the page that appears, you can generate test credentials. For this application we just need the "Voice and video calling (VOIP)" permission so check this and press generate:
+On the page that appears, you can generate test credentials. For this app we just need the "Voice and video calling (VOIP)" permission so check this and press generate:
 
 :::image type="content" source="../media/4-generate-button.png" alt-text="Token generation window with VOIP option checked.":::
 
@@ -203,13 +203,13 @@ This will then present you with a single Azure Communication Services identity w
 
 If you'd like to try calling another user then please generate **two sets of credentials**, one for the calling user and one for the receiving user.
 
-In a real world application, you should use our identity systems and client libraries to create and store these credentials. This way a real-world user doesn't need to manually copy and enter these items. For more information on this concept check the links at the end of this module.
+In a real world app, you should use our identity systems and client libraries to create and store these credentials. This way a real-world user doesn't need to manually copy and enter these items. For more information on this concept check the links at the end of this module.
 
 ### Calling the Echo Bot
 
-Azure Communication Services has an Echo Bot which you can call to test your microphone. It is compatible with this application. To call the Echo Bot:
+Azure Communication Services has an Echo Bot which you can call to test your microphone. It is compatible with this app. To call the Echo Bot:
 
-1. Open the application in your browser
+1. Open the app in your browser
 1. Paste a saved token into the user token input element.
 1. Press the "Submit" button
 1. Enter the Echo Bot's user ID `8:echo123`
@@ -219,12 +219,12 @@ Your browser may prompt you with some microphone permission dialogs so please en
 
 ### Calling another user
 
-You can also call another user with this application. To do this:
+You can also call another user with this app. To do this:
 
-1. Open two copies of the application, multiple tabs or windows should be used to simulate calling another user.
+1. Open two copies of the app, multiple tabs or windows should be used to simulate calling another user.
 1. In the first copy, enter the first user token saved from the credential generator and press "Submit"
 1. In the second copy, enter the second user token saved from the credential generator and press "Submit"
-1. From the first copy, enter the **second user id**, into the "Who would you like to call?" input element. 
+1. From the first copy, enter the **second user id**, into the "Who would you like to call?" input element.
 1. Again from the first copy, click "Start Call".
 
-This will call the second window/tab's user. If both tabs/windows are on the same device this may result in echoes but it does show the process and calls working between two browser tabs. If you deploy your application to a web server that multiple machines can access, you'll be able to have a true voice call without echo.
+This will call the second window/tab's user. If both tabs/windows are on the same device this may result in echoes but it does show the process and calls working between two browser tabs. If you deploy your app to a web server that multiple machines can access, you'll be able to have a true voice call without echo.
