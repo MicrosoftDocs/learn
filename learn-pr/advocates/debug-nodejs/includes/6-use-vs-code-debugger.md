@@ -360,7 +360,7 @@ Let's test our change.
 
 You should now see the expected result in the console without any crash.
 
-```text
+```console
 The value of 10 EUR is:
 - 11.36 USD
 - 1220.45 JPY
