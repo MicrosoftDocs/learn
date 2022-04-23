@@ -1,11 +1,11 @@
-In this unit, we'll add additional code to the web app created in the previous unit in order to create calls with Azure Communication Services.
+In this unit, we'll add more code to the web app created in the previous unit. This will enable us to make voice calls with Azure Communication Services.
 
 ## Add input HTML elements
 
-To make a call we'll need 2 important pieces of information:
+To make a call, we'll need two important pieces of information:
 
-1. Who the user making the call is. This will be in the form of an Azure Communication Services authentication token.
-1. Who the user wants to call. This will be in the form of an Azure Communication Services user id.
+1. Who the user making the call is, an Azure Communication Services authentication token.
+1. Who the user wants to call, an Azure Communication Services user ID.
 
 To get this information from the user, we'll use some standard HTML form inputs. So let's add them to our `index.html` file:
 
@@ -30,7 +30,7 @@ To get this information from the user, we'll use some standard HTML form inputs.
     />
     ```
 
-The first input element will be for the token of the user making the call. The submit button will be used to instantiate some Azure Communication Services objects once the token has been provided. The second input will be for entering the user id of the person we want to call.
+The first input element will be for the token of the user making the call. The submit button will be used to instantiate some Azure Communication Services objects once the token has been provided. The second input will be for entering the user ID of the person we want to call.
 
 ## Add basic call action buttons
 
@@ -39,7 +39,7 @@ We'll also need some buttons for some basic call actions that allow the user to 
 1. Start Call
 1. Hang Up
 
-So let's also add these underneath the inputs from the previous step:
+So let's also add these buttons underneath the inputs from the previous step:
 
 ```html
 <button id="call-button" type="button" disabled="true">
@@ -53,10 +53,10 @@ So let's also add these underneath the inputs from the previous step:
 
 ## Testing the HTML
 
-With this done, we've completed the majority of the HTML for this app. If you run the app with the same command as the previous unit: `npx parcel index.html` and then open the app, you should see the following in your browser:
+With this done, we've completed most the HTML for this app. If you run the app with the same command as the previous unit: `npx parcel index.html` and then open the app, you should see the following app in your browser:
 :::image type="content" source="../media/4-html-complete.png" alt-text="Our blank web app showing in a browser.":::
 
-This may not look like a lot, but its all we the visual elements we need to create a simple voice calling app.
+This app may not look like a lot, but its all we the visual elements we need to create a simple voice calling app.
 
 ## Create and link the JavaScript file
 
@@ -66,7 +66,7 @@ Next we'll need a JavaScript file to contain our app's code and actually make an
 <script src="./app.js" type="module"></script>
 ```
 
-This links our JavaScript file into our HTML so it loads when we open the app. Its also the last line of HTML we need. The rest of this unit will deal with the JavaScript.
+This line links our JavaScript file into our HTML so it loads when we open the app. Its also the last line of HTML we need. The rest of this unit will deal with the JavaScript.
 
 ## Import some dependencies
 
@@ -77,7 +77,7 @@ import { CallClient } from "@azure/communication-calling";
 import { AzureCommunicationTokenCredential } from '@azure/communication-common';
 ```
 
-The first import, imports CallClient, which will be used later to actually make our calls. It handles microphones, audio etc all for you. The second import is used to handle the authentication requirements for Azure Communication Services such that we know who a user is when they place a call.
+The first import, imports CallClient, which will be used later to actually make our calls. It handles microphones, audio etc all for you. The second import is used to handle the authentication requirements for Azure Communication Services. Authentication ensures know who a user is when they place a call.
 
 ## Getting references to our HTML
 
@@ -146,7 +146,7 @@ callButton.addEventListener("click", () => {
   callButton.disabled = true;
 });
 ```
-This code, registers a click handler on the "Start Call" button. It retrieves the callee id from the matching input element and then uses the Call Agent to make a call.
+This code, registers a click handler on the "Start Call" button. It retrieves the callee ID from the matching input element and then uses the Call Agent to make a call.
 
 ## Hanging up
 
@@ -203,11 +203,11 @@ This will then present you with a single Azure Communication Services identity w
 
 If you'd like to try calling another user then please generate **two sets of credentials**, one for the calling user and one for the receiving user.
 
-In a real world app, you should use our identity systems and client libraries to create and store these credentials. This way a real-world user doesn't need to manually copy and enter these items. For more information on this concept check the links at the end of this module.
+In a real world app, you should use our identity systems and client libraries to create and store these credentials. This way a real-world user doesn't need to manually copy and enter these items. For more info on this concept, check the links at the end of this module.
 
 ### Calling the Echo Bot
 
-Azure Communication Services has an Echo Bot which you can call to test your microphone. It is compatible with this app. To call the Echo Bot:
+Azure Communication Services has an Echo Bot which you can call to test your microphone. I's compatible with this app. To call the Echo Bot:
 
 1. Open the app in your browser
 1. Paste a saved token into the user token input element.
@@ -215,7 +215,7 @@ Azure Communication Services has an Echo Bot which you can call to test your mic
 1. Enter the Echo Bot's user ID `8:echo123`
 1. Press "Start Call"
 
-Your browser may prompt you with some microphone permission dialogs so please ensure you accept them. If everything worked out correctly you should be on a call with the Echo Bot. It will enable you to record a short message which it will then play back to you.
+Your browser may prompt you with some microphone permission dialogs so please ensure you accept them. If everything worked out correctly you should be on a call with the Echo Bot. It will enable you to record a short message, which it will then play back to you.
 
 ### Calling another user
 
@@ -224,7 +224,7 @@ You can also call another user with this app. To do this:
 1. Open two copies of the app, multiple tabs or windows should be used to simulate calling another user.
 1. In the first copy, enter the first user token saved from the credential generator and press "Submit"
 1. In the second copy, enter the second user token saved from the credential generator and press "Submit"
-1. From the first copy, enter the **second user id**, into the "Who would you like to call?" input element.
+1. From the first copy, enter the **second user ID**, into the "Who would you like to call?" input element.
 1. Again from the first copy, click "Start Call".
 
 This will call the second window/tab's user. If both tabs/windows are on the same device this may result in echoes but it does show the process and calls working between two browser tabs. If you deploy your app to a web server that multiple machines can access, you'll be able to have a true voice call without echo.
