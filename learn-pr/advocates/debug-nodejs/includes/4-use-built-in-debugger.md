@@ -161,7 +161,7 @@ That's it, we just found our bug! Instead of updating the sum for the iteration 
 
 We need to fix the loop condition in the fibonacci.js code. In the code editor, change the value of the test statement from less than `<` to less than or equal to `<=`:
 
-:::code language="javascript" source="/learn/modules/advocates/debug-nodejs/code/fix-loop-condition.cs" highlight="1":::
+:::code language="javascript" source="../code/fix-loop-condition.js" highlight="1":::
 
 Save your changes in the code editor, and then exit the debugger by selecting <kbd>Ctrl+D</kbd>.
 
