@@ -3,7 +3,7 @@ uid: learn.wwl.distributed-deep-learning-horovod-azure-databricks
 metadata:
   title: Distributed deep learning with Horovod and Azure Databricks
   description: "Distributed deep learning with Horovod and Azure Databricks"
-  ms.date: 01/12/2022
+  ms.date: 04/22/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
