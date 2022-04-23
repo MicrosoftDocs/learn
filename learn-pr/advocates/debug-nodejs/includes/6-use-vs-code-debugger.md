@@ -329,19 +329,18 @@ Let's fix the code for the conversion rate issue.
    rates[sourceCurrency][targetCurrency] = rate;
    rates[targetCurrency][sourceCurrency] = 1 / rate;
    ```
+   with this updated code:
 
-  with this updated code:
-
-  ```js
-  for (const currency in rates) {
-    if (currency !== targetCurrency) {
-      // Use a pivot rate for currencies that don't have the direct conversion rate
-      const pivotRate = currency === sourceCurrency ? 1 : rates[currency][sourceCurrency];
-      rates[currency][targetCurrency] = rate * pivotRate;
-      rates[targetCurrency][currency] = 1 / (rate * pivotRate);
-    }
-  }
-  ```
+   ```js
+   for (const currency in rates) {
+     if (currency !== targetCurrency) {
+       // Use a pivot rate for currencies that don't have the direct conversion rate
+       const pivotRate = currency === sourceCurrency ? 1 : rates[currency][sourceCurrency];
+       rates[currency][targetCurrency] = rate * pivotRate;
+       rates[targetCurrency][currency] = 1 / (rate * pivotRate);
+     }
+   }
+   ```
 
 1. Save the changes to your file.
 
