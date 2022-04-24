@@ -257,9 +257,9 @@ The cache should now deliver unique responses depending on the *Height* query pa
 
 1. Select **Send**.
 
-1. Review the results. Notice that the precise time has been included in the response.
+1. Review the results. Notice that the precise time is included in the response.
 
-1. Click **Send** to repeat the request. Notice that like before the time value in the response hasn't changed. This is because a cached response was served.
+1. Select **Send** to repeat the request. Notice that like before, the time value in the response hasn't changed. That's because a cached response was served.
 
 1. To test the *Height* parameter, use the following values as *Template parameters* and *Query parameters*.
 
@@ -271,9 +271,9 @@ The cache should now deliver unique responses depending on the *Height* query pa
     | Width | 8 |
     | | |
 
-1. Click **Send**.
+1. Select **Send**.
 
-1. Review the results. This time, the results are updated and changed. A cache wasn't used because the Height query parameter in the request was changed. This is the correct response for our API.
+1. Review the results. This time, the results are updated and changed. A cache wasn't used because the Height query parameter was changed in the request. The response is correct for our API.
 
 1. Let's test the *Width* parameter. Enter the following values as *Template parameters* and *Query parameters*.
 
@@ -285,6 +285,6 @@ The cache should now deliver unique responses depending on the *Height* query pa
     | Width | 500 |
     | | |
 
-1. Click **Send**.
+1. Select **Send**.
 
-1. Review the results. This time, although the Width query parameter was changed, the result didn't change. A cached response was served.
+1. Review the results. This time, although the Width query parameter changed, the result didn't change. That's because a cached response was served.
