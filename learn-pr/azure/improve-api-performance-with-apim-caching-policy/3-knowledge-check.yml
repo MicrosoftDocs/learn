@@ -26,7 +26,7 @@ quiz:
     - content: "Find and replace string in body"
       isCorrect: false
       explanation: "This policy finds a specified string and replaces it with another. To ensure XML output, use Convert JSON to XML."
-  - content: 'Where would you place your policy to ensure XML responses?'
+  - content: 'Where would you configure your policy to ensure XML responses?'
     choices:
     - content: "Inbound"
       isCorrect: false
