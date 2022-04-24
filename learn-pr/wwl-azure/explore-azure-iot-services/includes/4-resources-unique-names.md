@@ -3,7 +3,7 @@ When creating Azure resources, it is essential to adopt a sensible naming conven
  -  [Naming rules and restrictions for Azure resources](/azure/azure-resource-manager/management/resource-name-rules)
  -  [Recommended naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging)
 
-During this training, you will be creating Azure resources that are used to develop your IoT solution. To ensure consistency across the labs and to help in tidying up resources whenever you have finished with them, the lab instructions will include resource names that you should use. Theses names comply with many of the conventions suggested above. Many of these resources expose services that can be consumed across the web, which means they must have globally unique names. To achieve this, you will be using a unique identifier that will be added to the end of the resource name. The following instructions will help you to create your unique ID.
+During this training, you will be creating Azure resources that are used to develop your IoT solution. To ensure consistency across the labs and to help in tidying up resources whenever you have finished with them, the lab instructions will include resource names that you should use. These names comply with many of the conventions suggested above. Many of these resources expose services that can be consumed across the web, which means they must have globally unique names. To achieve this, you will be using a unique identifier that will be added to the end of the resource name. The following instructions will help you to create your unique ID.
 
 ## Unique ID
 
