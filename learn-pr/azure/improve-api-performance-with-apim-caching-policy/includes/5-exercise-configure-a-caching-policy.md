@@ -181,27 +181,27 @@ We can now enable caching. This is done by adding policies to inbound processing
 
 1. Select your API Management service, then Click the **APIs** link. Next select the **Design** tab and choose the **GET - GetPriceEstimate** operation.  The **GetPriceEstimate** pane appears.
 
-1. Select **Add policy** from the **Inbound processing** section. The **Add inbound policy** pane will appear.
+1. Select **Add policy** from the **Inbound processing** section. The **Add inbound policy** pane appears.
 
-    ![Adding a policy.](../media/5-add-policy.png)
+    ![Screenshot that shows how to add a caching policy.](../media/5-add-policy.png)
 
-1. Click on **Cache responses**. The **Inbound processing** pane will then re-appear.
+1. Select **Cache responses**. The **Inbound processing** pane reappears.
 
-1. Enter **600** in the **Duration in seconds** textbox, found under **Cache responses**. Click **Save**.
+1. Under **Cache responses**, in the **Duration in seconds** textbox, found, enter **600**. Then select **Save**.
 
-1. Select **</>** in the **Inbound processing** section. The policy XML editor will appear.
+1. In the **Inbound processing** section, select **</>**. The policy XML editor appears.
 
-1. Notice that a **&lt;cache-lookup&gt;** tag has been added to the **&lt;inbound&gt;** section, and a **&lt;cache-store&gt;** tag has been added to the **&lt;outbound&gt;** section.
+1. Notice that a **&lt;cache-lookup&gt;** tag has been added to the **&lt;inbound&gt;** section. A **&lt;cache-store&gt;** tag has also been added to the **&lt;outbound&gt;** section.
 
-    ![Policy editor with caching policies.](../media/5-policy-editor-with-caching-policies.png)
+    ![Screenshot that shows a policy editor with caching policies.](../media/5-policy-editor-with-caching-policies.png)
 
-1. Click **Save**.
+1. Select **Save**.
 
 ## Test the cache
 
 We'll run the same test on the API in API Management and review the results.
 
-1. Select your API Management service, then click the **APIs** link. Then select the **Test** tab and choose the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane will appear.
+1. In the **APIs** pane for your API Management service, select the **Test** tab. Then select the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane appears.
 
 1. Enter the following values as **Template parameters** and **Query parameters**.
 
@@ -213,21 +213,21 @@ We'll run the same test on the API in API Management and review the results.
     | Width | 8 |
     | | |
 
-    :::image type="content" source="../media/5-test-api-in-apim.png" alt-text="Test the API in API Management.":::
+    :::image type="content" source="../media/5-test-api-in-apim.png" alt-text="Screenshot that shows how to test the API in API Management.":::
 
-1. Click **Send**.
+1. Select **Send**.
 
 1. Review the results. Notice that the precise time has been included in the *HTTP response*.
 
-1. Click **Send** again to repeat the request. Notice that the time value in the response hasn't changed. That's because a cached response was served.
+1. Select **Send** again to repeat the request. Notice that the time value in the response hasn't changed. That's because a cached response has been served.
 
-## Configure cache to vary results based on a query parameter
+## Configure the cache to vary results based on query parameters
 
-The cache must be configured to serve unique prices based on the *Height* query parameter. Board *Width* isn't used to calculate cost, so it won't be configured.
+The cache needs to be configured for it to serve unique prices based on the *Height* query parameter. Board *Width* isn't used to calculate cost, so it won't be configured.
 
-1. Select your API Management service, then click the **APIs** link. Next select the **Design** tab and choose the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane will appear.
+1. In the **APIs** pane for your API Management service, select the **Design** tab. Then select the **GET - GetPriceEstimate** operation. The **GetPriceEstimate** pane appears.
 
-1. Select **</>** in the **Inbound processing** section, to edit the policy code.
+1. In the **Inbound processing** section, select **</>** to edit the policy code.
 
 1. Replace the entire `<cache-lookup>` tag, with the following XML:
 
@@ -237,13 +237,13 @@ The cache must be configured to serve unique prices based on the *Height* query 
     </cache-lookup>
     ```
 
-1. Click **Save**.
+1. Select **Save**.
 
 ## Test the new cache configuration
 
-The cache will now deliver unique responses depending upon the *Height* query parameter. Since the *Width* parameter doesn't affect cost, a cached response can be used when the Width parameter is changed. Let's test that:
+The cache should now deliver unique responses depending on the *Height* query parameter. Since the *Width* parameter doesn't affect cost, a cached response can be used when the Width parameter is changed. Let's test that:
 
-1. Select the **Test** tab in the **APIs** pane for your API Management service. Then choose the **GET - GetPriceEstimate** operation.  The **GetPriceEstimate** pane will appear.
+1. In the **APIs** pane for your API Management service, select the **Test** tab. Then select the **GET - GetPriceEstimate** operation.  The **GetPriceEstimate** pane appears.
 
 1. Enter the following values as **Template parameters** and **Query parameters**.
 
@@ -255,7 +255,7 @@ The cache will now deliver unique responses depending upon the *Height* query pa
     | Width | 8 |
     | | |
 
-1. Click **Send**.
+1. Select **Send**.
 
 1. Review the results. Notice that the precise time has been included in the response.
 
