@@ -11,10 +11,10 @@ metadata:
 title: Describe the compliance management capabilities in Microsoft 365
 summary: Explore the Microsoft 365 compliance center, the portal for organizations to manage their compliance needs.  Learn about the Compliance Manager and compliance score, which can help organizations manage, simplify, and improve compliance across their organization.
 abstract: |
-  After completing this module, you will be able to:
-  - Describe the Microsoft 365 Compliance center
-  - Describe Compliance Manager
-  - Describe the use and benefits of compliance score
+  After completing this module, you'll be able to:
+  *   Describe the Microsoft 365 Compliance center
+  *   Describe Compliance Manager
+  *   Describe the use and benefits of compliance score
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
