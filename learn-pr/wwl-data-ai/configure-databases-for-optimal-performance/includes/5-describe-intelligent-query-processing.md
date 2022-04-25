@@ -26,7 +26,7 @@ These features are all automatically enabled under compatibility mode 150 and re
 
 ## Table variable deferred compilation
 
-Like MSTVFs, table variables in SQL Server execution plans carried a fixed row count estimate of one row. Much like MSTVFs, this fixed estimate led to poor performance when the variable had a much larger row count than expected. With SQL Server 2019, table variables are now analyzed and have an actual row count. Deferred compilation is similar in nature to interleaved execution for MSTVFs, except that it's performed at the first compilation of the query rather than dynamically within the execution plan.
+Like MSTVFs, table variables in SQL Server execution plans carry a fixed row count estimate of one row. Much like MSTVFs, this fixed estimate led to poor performance when the variable had a much larger row count than expected. With SQL Server 2019, table variables are now analyzed and have an actual row count. Deferred compilation is similar in nature to interleaved execution for MSTVFs, except that it's performed at the first compilation of the query rather than dynamically within the execution plan.
 
 ## Batch mode on row store
 

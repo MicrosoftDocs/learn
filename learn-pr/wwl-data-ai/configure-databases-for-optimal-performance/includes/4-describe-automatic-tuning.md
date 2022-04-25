@@ -2,13 +2,13 @@ Automatic tuning is a monitoring and analysis feature that continuously learns a
 
 The automatic tuning recommendations are based on the data collected from Query Store. Execution plans evolve over time due to schema changes, index modifications, or changes to the data that cause updates to the statistics. This evolution can cause queries to perform poorly as the execution plan no longer meets the demands of the given query.
 
-Furthermore, automatic tuning allows for the gathering and applying machine learning services against performance metrics to provide suggested improvements or even allow for self-correction. 
+Furthermore, automatic tuning allows for the gathering and applying machine learning services against performance metrics to provide suggested improvements or even allow for self-correction.
 
-Whether on-premises or in the cloud, automatic tuning allows you to identify issues caused by query execution plan regression. Additionally, in Azure SQL Database you have the option to further improve query performance by index tuning. Azure SQL Database automatic tuning can identify indexes that should be added or even removed from the database to enhance query performance.
+Whether on-premises or in the cloud, automatic tuning allows you to identify issues caused by query execution plan regression. Additionally, in Azure SQL Database you can improve query performance by index tuning. Azure SQL Database automatic tuning can identify indexes that should be added or even removed from the database to enhance query performance.
 
 ## Automatic plan correction
 
-By using the Query Store data, the database engine can identify when query execution plans have regressed in their performance. While you can manually identify a regressed plan through the user interface, the Query Store also provides the option to notify you automatically.
+With the help of the Query Store data, the database engine can determine when query execution plans have regressed in performance. While you can manually identify a regressed plan through the user interface, the Query Store also provides the option to notify you automatically.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-25.png" alt-text="Query Store view of Automatic Plan Correction":::
 
@@ -36,7 +36,7 @@ Azure SQL Database can perform automatic index tuning. Over time, the database w
 
 :::image type="content" source="../media/module-44-optimize-resources-final-26.png" alt-text="Automatic tuning Options":::
 
-When enabled, the **Performance Recommendations** blade will identify indexes that can be created or dropped depending on query performance. Remember this feature isn't available for on-premises databases and only available for Azure SQL Database.
+When enabled, the **Performance Recommendations** page will identify indexes that can be created or dropped depending on query performance. Remember this feature isn't available for on-premises databases and only available for Azure SQL Database.
 
 Alternatively, use the following query to see the automatic tuning features enabled in your database:
 
@@ -48,8 +48,8 @@ SELECT name,
 FROM sys.database_automatic_tuning_options
 ```
 
-Creating new indexes can consume resources, and the timing of the index creations is critical to ensure no negative impact is felt on your workloads.
+Creating new indexes can consume resources, and the timing of the index creations is critical to ensure no negative effect is felt on your workloads.
 
-Azure SQL Database will monitor the resources required to implement new indexes to avoid causing performance degradation. If resources are needed for existing workloads and potentially not available to create an index, the tuning action is postponed until such time as resources are available.
+Azure SQL Database will monitor the resources required to implement new indexes to avoid causing performance degradation. The tuning action is postponed until the available resources are available, for example if resources are required for existing workloads and not available for creating an index.
 
 Monitoring ensures any action taken won't harm performance. If an index is dropped and query performance noticeably degrades, the recently dropped index will be automatically recreated.

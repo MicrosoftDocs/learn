@@ -8,7 +8,7 @@ Having healthy indexes and statistics will ensure that any given plan will perfo
 
 Index fragmentation occurs when logical ordering within index pages doesn't match the physical ordering. Pages can out of order during routine data modification statements such as `UPDATE`, `DELETE`, and `INSERT`. Fragmentation can introduce performance issues because of the extra I/O that is required to locate the data that is being referenced by the pointers within the index pages.
 
-As data is inserted, updated, and deleted from indexes the logical ordering in the index will no longer match the physical ordering inside of the pages, and between the pages, making up the indexes. Also, over time the data modifications can cause the data to become scattered or fragmented in the database. This fragmentation can degrade query performance when the database engine needs to read additional pages in order to locate needed data.
+As data is inserted, updated, and deleted from indexes the logical ordering in the index will no longer match the physical ordering inside of the pages, and between the pages, making up the indexes. Also, over time the data modifications can cause the data to become scattered or fragmented in the database. Fragmentation can degrade query performance when the database engine needs to read extra pages in order to locate needed data.
 
 A reorganization of an index is an online operation that will defrag the leaf level of the index (both clustered and nonclustered). This defragmentation process will physically reorder the leaf-level pages to match the logical order of the nodes from left to right. During this process, the index pages are also compacted based on the configured fillfactor value.
 
@@ -24,9 +24,9 @@ Use these numbers as general recommendations. Depending on your workload and dat
 
 The SQL Server and Azure SQL platforms offer DMVs that allow you to detect fragmentation in your objects. The most commonly used DMVs for this purpose are `sys.dm_db_index_physical_stats` for b-tree indexes, and `sys.dm_db_colum_store_row_group_physical_stats` for columnstore indexes.
 
-One other thing to note is that index rebuilds cause the statistics on the index to be updated, which can further help performance. Index reorganization does not update statistics.
+One other thing to note is that index rebuilds cause the statistics on the index to be updated, which can further help performance. Index reorganization doesn't update statistics.
 
-Starting with SQL Server 2017, Microsoft introduced the ability to have resumable rebuild operations. This option provides more flexibility in controlling how much time a rebuild operation might impose on a given instance. With SQL Server 2019, the ability to control an associated maximum degree of parallelism was introduced further providing more granular control to database administrators.
+Microsoft introduced resumable rebuild index operations with SQL Server 2017. Resumable rebuild index operations option provides more flexibility in controlling how much time a rebuild operation might impose on a given instance. With SQL Server 2019, the ability to control an associated maximum degree of parallelism was introduced further providing more granular control to database administrators.
 
 ## Statistics
 
@@ -59,7 +59,7 @@ These methods provide high-quality query plans for most queries. At times, you m
 
 It's recommended to keep the `AUTO_CREATE_STATISTICS` option enabled as it will allow the query optimizer to create statistics for query predicate columns automatically.
 
-Consider creating statistics when you encounter any of the following:
+Whenever you encounter the following situations, consider creating statistics:
 
 - The Database Engine Tuning Advisor suggests creating statistics
 - The query predicate contains multiple columns that aren't already in the same index
@@ -72,7 +72,7 @@ Azure SQL provides native tools to perform database maintenance tasks for automa
 
 ### SQL Server on an Azure Virtual Machine
 
-With SQL Server being installed within an Azure virtual machine you have access to scheduling services such as the SQL Agent or the Windows Task Scheduler. These automation tools can help keeping the amount of fragmentation within indexes to a minimum. With larger databases, a balance between a rebuild and a reorganization of indexes must be found to ensure optimal performance. The flexibility provided by SQL Agent or Task Scheduler allows you to run custom jobs.
+You have access to scheduling services such as the SQL Agent or the Windows Task Scheduler. These automation tools can help keeping the amount of fragmentation within indexes to a minimum. With larger databases, a balance between a rebuild and a reorganization of indexes must be found to ensure optimal performance. The flexibility provided by SQL Agent or Task Scheduler allows you to run custom jobs.
 
 ### Azure SQL Database
 

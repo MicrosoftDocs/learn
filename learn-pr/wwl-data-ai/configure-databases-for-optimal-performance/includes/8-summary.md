@@ -1,4 +1,4 @@
-Azure SQL have included many features in recent releases to improve performance. Many of these features can be enabled at the individual database level, and may also be controlled using the compatibility level of the database.
+Azure SQL has included many features in recent releases to improve performance. Many of these features can be enabled at the individual database level, and may also be controlled using the compatibility level of the database.
 
 Maintaining indexes and statistics can help provide consistent performance for your queries. Additionally, Azure SQL Database automates the creation of new indexes and the removal of unused indexes.
 
