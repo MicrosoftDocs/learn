@@ -6,17 +6,17 @@ In this unit, you'll see two approaches to monitoring user behavior. The first a
 
 ## Azure Active Directory logs
 
-Azure AD captures log information for your entire Azure tenant. You can use this information in analysis and reporting. When you assess user behavior, you want to look at the activity and security logs.  
+Azure AD captures log information for your entire Azure tenant. You can use the information in analysis and reporting. When you assess user behavior, you want to look at the activity logs and security logs that are collected for your tenant.  
 
 Activity logs cover all of a user's behaviors and interactions with your network and its assets. You want to pay particular attention to two types of log files:
 
-- **Sign-in logs**: The logs hold details about all user activity and the applications that requested them.
-- **Audit logs**: The logs show what a user or group did while they were signed in to your network.
+- **Sign-in logs**: Hold details about all user activity and the applications that requested them.
+- **Audit logs**: Show what a user or group did while they were signed in to your network.
 
 Security logs represent a list of the exceptions found in the activity logs. It's important to pay attention to two key log files:
 
-- **Risky sign-ins**: The logs hold data about user accounts where the sign-in behavior is inconsistent with earlier sign-in attempts.
-- **Users flagged for risk**: The logs show all users who have been flagged as a risky user.
+- **Risky sign-ins**: Hold data about user accounts where the sign-in behavior is inconsistent with earlier sign-in attempts.
+- **Users flagged for risk**: Show all users who have been flagged as a risky user.
 
 For the moment, though, you're interested in tracking only user sign-ins and activity logs.
 
@@ -39,28 +39,22 @@ Because of the sensitive nature of log data that's captured by sign-in logs, acc
 
 ### Structure of a sign-in log file
 
-The first time the sign-in logging service is enabled, you might not see data for up to an hour. Azure captures a wide range of data about user activity, from access periods to the application that made the request, and more.  Access the sign-in log file through the Azure portal.  
+The first time the sign-in logging service is enabled, you might not see data for up to an hour. Azure captures a wide range of data about user activity, from access periods to the application that made the request, and more.  Access the sign-in log file in your Azure AD instance in the Azure portal.
 
-1. In the Azure portal, go to your Azure AD instance.
+To see the sign-in logs for your tenant, in the left menu under **Monitoring**, select **Sign-ins**. The following example displays a typical view of the sign-in table data:
 
-1. In the left menu under **Monitoring**, select **Sign-ins**.
-
-A page similar to the following displays a typical view of the sign-in table data:
-
-:::image type="content" source="../media/2-sign-in-activity.png" alt-text="Screenshot of the default sign-in table columns.":::
+:::image type="content" source="../media/sign-in-activity.png" alt-text="Screenshot that shows the default table columns in the sign-in logs.":::
 
 The default table columns display the following information:
 
 - Sign-in date
-- User making the sign-in request
-- Application making the sign-in request
+- User name
+- Application the user accessed
 - Sign-in status
 - Risk detection status
 - Multifactor authentication status
 
-As with all reporting in Azure, you can customize the report structure by adding and removing columns. To change the columns, in the menu bar, select **Columns**.
-
-In the **Columns** pane, you can add or remove columns based on your need. In addition to the default columns, you can choose columns that display the following options:
+As with all reporting in Azure, you can customize the report structure by adding and removing columns. To change the columns, in the menu bar, select **Columns**. In the **Columns** pane, you can add or remove columns based on your needs. In addition to the default columns, you can choose columns that display the following options:
 
 - Request ID
 - User
@@ -78,15 +72,15 @@ Even after you've selected all the sign-in columns you're interested in viewing,
 
 To use filters, in the menu bar, select **Add filters**, and then select the filters you want to use.
 
-![Screenshot of the "Add filters" button and the list of filters.](../media/2-sign-in-activity-filter-list.png)
+![Screenshot of the "Add filters" button and the list of filters.](../media/sign-in-activity-filter-list.png)
 
 Here are a few key filters and what you would use them for:
 
-- **User**: Look for specific users, by either name or by user principal name.
-- **Application**: Find sign-in requests from specific applications.
-- **Status**: Narrow results to users who successfully signed or those who failed.
-- **Conditional Access**: Examine whether any applicable Conditional Access policies have been applied.
-- **Date**: Adjust the timeframe of the data you're looking at, from a month to a single day.
+- **User**: Use to look for specific users, by either name or by user principal name.
+- **Application**: Use to find sign-in requests from specific applications.
+- **Status**: Use to narrow results to users who successfully signed or those who failed.
+- **Conditional Access**: Use to examine whether any applicable Conditional Access policies have been applied.
+- **Date**: Use to adjust the timeframe of the data you're looking at, from a month to a single day.
 
 ### Download the sign-in logs
 

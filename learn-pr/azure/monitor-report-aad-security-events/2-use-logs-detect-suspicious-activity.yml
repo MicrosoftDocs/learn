@@ -8,7 +8,7 @@ metadata:
   ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use sign-in, audit, and risky sign-in logs to detect suspicious activity
+title: Use logs to detect suspicious activity
 durationInMinutes: 8
 content: |
   [!include[](includes/2-use-logs-detect-suspicious-activity.md)]

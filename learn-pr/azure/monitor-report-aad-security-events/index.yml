@@ -12,7 +12,7 @@ title: Monitor and report on security events in Azure AD
 summary: Keep tabs on security events in your Azure AD resources by using built-in reporting and monitoring capabilities. Respond to events as they happen, and address security risks before they become a problem.
 abstract: | 
   In this module, you will:
-  - Store Azure audit activity and sign-in activity logs in Azure Monitor.
+  - Store Azure audit logs and sign-in activity logs in Azure Monitor.
   - Create alerts for security events in Azure Monitor.
   - Create and view dashboards to support improved monitoring.
 prerequisites: | 
