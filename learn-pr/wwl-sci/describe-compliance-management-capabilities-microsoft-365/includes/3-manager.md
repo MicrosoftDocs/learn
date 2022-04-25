@@ -1,6 +1,14 @@
-Microsoft Compliance Manager is a feature in the Microsoft 365 compliance center that helps admins to manage an organization’s compliance requirements with greater ease and convenience. Compliance Manager can help organizations throughout their compliance journey, from taking inventory of data protection risks, to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+> [!NOTE]
+> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. Microsoft Compliance Manager is now Microsoft Purview Compliance Manager. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
 
-The following video provides a quick overview of Compliance Manager:
+Microsoft Purview Compliance Manager is a feature in the Microsoft Purview compliance portal that helps admins to manage an organization’s compliance requirements with greater ease and convenience. Compliance Manager can help organizations throughout their compliance journey, from taking inventory of data protection risks, to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+
+The following video provides a quick overview of Compliance Manager.
+
+> [!NOTE]
+> The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the video may not reflect the most recent updates.
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
 
@@ -13,7 +21,7 @@ Compliance Manager helps simplify compliance and reduce risk by providing:
 
 The Compliance Manager dashboard shows the current compliance score, helps admins to see what needs attention, and guides them to key improvement actions.
 
-:::image type="content" source="../media/4-overview-pane-inline.png" lightbox="../media/4-overview-pane-expanded.png" alt-text="Compliance manager overview pane":::
+:::image type="content" source="../media/4-overview-pane-v2-inline.png" lightbox="../media/4-overview-pane-v2-expanded.png" alt-text="Compliance manager overview pane":::
 
 Compliance Manager uses several data elements to help manage compliance activities. As admins use Compliance Manager to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of the key elements: controls, assessments, templates, and improvement actions.
 
@@ -57,5 +65,8 @@ Compliance Manager provides many benefits, including:
 ### Interactive guide
 
 In this interactive guide, you’ll explore Compliance Manager. Select the image below to get started and follow the prompts on the screen.
+
+> [!NOTE]
+> The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the interactive guide may not reflect the most recent updates.
 
 [![Interactive guide](../media/5-compliance-manager-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP04M01-Explore-Compliance-Manager/index.html?azure-portal=true)
