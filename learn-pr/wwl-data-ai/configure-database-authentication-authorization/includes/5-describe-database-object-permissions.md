@@ -1,4 +1,4 @@
-All Relational Database Management platforms have 4 basic permissions which control data manipulation language (DML) operations. These permissions are `SELECT`, `INSERT`, `UPDATE`, and `DELETE`, and they apply to all SQL Server platforms. All of these permissions can be granted, revoked or denied on tables and views. If a permission is granted using the `GRANT` statement, then the permission is given to the user or role referenced in the `GRANT` statement. Users can also be denied permissions using the `DENY` command. If a user is granted a permission and denied the same permission, the DENY will always supersede the grant, and the user will be denied access to the specific object.
+All Relational Database Management platforms have four basic permissions, which control data manipulation language (DML) operations. These permissions are `SELECT`, `INSERT`, `UPDATE`, and `DELETE`, and they apply to all SQL Server platforms. All of these permissions can be granted, revoked or denied on tables and views. If a permission is granted using the `GRANT` statement, then the permission is given to the user or role referenced in the `GRANT` statement. Users can also be denied permissions using the `DENY` command. If a user is granted a permission and denied the same permission, the `DENY` will always supersede the grant, and the user will be denied access to the specific object.
 
 :::image type="content" source="../media/module-33-security-final-03.png" alt-text="A T-SQL Example of a DENY overriding a GRANT":::
 
@@ -6,7 +6,7 @@ In the above example, the user Demo is granted `SELECT` and then denied `SELECT`
 
 ## Table and view permissions
 
-Tables and views represent the objects on which permissions can be granted within a database. Within those tables and views, you can additionally restrict the columns that are accessible to a given security principal (user or login). SQL Server and Azure SQL Database also include row-level security which can be used to further restrict access.
+Tables and views represent the objects on which permissions can be granted within a database. Within those tables and views, you can additionally restrict the columns that are accessible to a given security principal (user or login). SQL Server and Azure SQL Database also include row-level security, which can be used to further restrict access.
 
 | Permission | Definition |
 |------------|-------------|
@@ -15,11 +15,11 @@ Tables and views represent the objects on which permissions can be granted withi
 |`UPDATE` | Allows the user the update data within the object. When denied, the user will be prevented from updating data in the object. |
 |`DELETE` | Allows the user to delete data within the object. When denied, the user will be prevented from deleting data from the object. |
 
-Azure SQL Database and Microsoft SQL Server have additional permissions which can be granted, revoked or denied as needed.
+Azure SQL Database and Microsoft SQL Server have other permissions, which can be granted, revoked or denied as needed.
 
 | Permission | Definition |
 |------------|-------------|
-|`CONTROL` | Grants all rights to the objects. This allows the user who has this permission to perform any action they wish against the object, including deleting the object. |
+|`CONTROL` | Grants all rights to the objects. It allows the user who has this permission to perform any action they wish against the object, including deleting the object. |
 |`REFERENCES` | Grants the user the ability to view the foreign keys on the object. |
 |`TAKE OWNERSHIP` | Allows the user the ability to take ownership of the object. |
 |`VIEW CHANGE TRACKING` | Allows the user to view the change tracking setting for the object. |
@@ -27,7 +27,7 @@ Azure SQL Database and Microsoft SQL Server have additional permissions which ca
 
 ## Function and stored procedure permissions
 
-Like tables and views, functions and stored procedures have several permissions which can be granted or denied.
+Like tables and views, functions and stored procedures have several permissions, which can be granted or denied.
 
 | Permission | Definition |
 |------------|-------------|
@@ -45,7 +45,7 @@ If a user has a permission and the user no longer needs to have that permission,
 
 ### Ownership Chains
 
-A concept called chaining applies to permissions, which allows users to inherit permissions from other objects. The most common example of chaining is a function or stored procedure that accesses a table during its execution. If the procedure has the same owner as the table, the stored procedure is able to be executed and access the table, even though the user does not have rights to access the table directly. This access is available because the user inherits the rights to access the table from the stored procedure, but only for the duration of the execution of the stored procedure, and only within the context of the stored procedures execution.
+A concept called chaining applies to permissions, which allows users to inherit permissions from other objects. The most common example of chaining is a function or stored procedure that accesses a table during its execution. If the procedure has the same owner as the table, the stored procedure is able to be executed and access the table, even though the user doesn't have rights to access the table directly. This access is available because the user inherits the rights to access the table from the stored procedure, but only during the execution of the stored procedure, and only within the context of the stored procedures execution.
 
 In the example below, run as a database owner or server administrator, a new user is created and added as a member of a new *SalesReader* role, which is then granted permission to select from any object and execute any procedure in the Sales schema. A stored procedure is then created in the Sales schema that accesses a table in the Production schema.
 
@@ -94,7 +94,7 @@ GROUP BY P.Name,
 ORDER BY TotalSales DESC;
 ```
 
-The above query results in an error that the user *DP300User1* does not have `SELECT` permission, because the role that the user belongs to does not have any privileges in the Production schema. Now we can try to execute the stored procedure:
+The above query results in an error that the user *DP300User1* doesn't have `SELECT` permission, because the role that the user belongs to doesn't have any privileges in the Production schema. Now we can try to execute the stored procedure:
 
 ```sql
 EXECUTE AS USER = 'DP300User1';
@@ -102,9 +102,9 @@ EXECUTE AS USER = 'DP300User1';
 EXECUTE Sales.DemoProc;
 ```
 
-The *DP300User1* user has `EXECUTE` permission on the stored procedure in the *Sales* schema, because the role the user belongs to has `EXECUTE` permission on the *Sales* schema. Because the table has the same owner as the procedure, we have an unbroken ownership chain, and the execution will succeed and results will be returned.
+The *DP300User1* user has `EXECUTE` permission on the stored procedure in the *Sales* schema, because the user's role has `EXECUTE` permission on the *Sales* schema. Because the table has the same owner as the procedure, we have an unbroken ownership chain, and the execution will succeed and results will be returned.
 
-Permission changes do not apply when dynamic SQL is being used within stored procedures. The reason that dynamic SQL breaks the permission chain is due to the fact that the dynamic SQL is executed outside of the context of the calling stored procedure. You can see this behavior by changing the above stored procedure to execute using dynamic SQL as shown below.
+Permission changes don't apply when dynamic SQL is being used within stored procedures. The reason that dynamic SQL breaks the permission chain is because the dynamic SQL is executed outside of the context of the calling stored procedure. You can see this behavior by changing the above stored procedure to execute using dynamic SQL as shown below.
 
 ```sql
 CREATE OR ALTER PROCEDURE Sales.DemoProc
@@ -130,7 +130,7 @@ EXECUTE AS USER = 'DP300User1'
 EXECUTE Sales.DemoProc
 ```
 
-The *DP300User1* user will receive an error that the user does not have `SELECT` permission on the *Production.Product* table, just like the user tried to execute the query directly. Permission chains do not apply and the user account that is executing the dynamic SQL must have rights to the tables and views that are being used by the code within the dynamic SQL.
+The *DP300User1* user will receive an error that the user doesn't have `SELECT` permission on the *Production.Product* table, just like the user tried to execute the query directly. Permission chains don't apply and the user account that is executing the dynamic SQL must have rights to the tables and views that are being used by the code within the dynamic SQL.
 
 ## Principle of least privilege
 

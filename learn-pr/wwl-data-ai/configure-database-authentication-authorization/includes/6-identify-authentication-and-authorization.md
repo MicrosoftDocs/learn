@@ -51,7 +51,8 @@ The Azure portal allows you to retrieve the connection string you need to intera
 1. From the Azure portal, select **All services**, and then **SQL databases**. Filter and select your database.
 1. On the blade for your database, select **Connection strings**.
 
-    :::image type="content" source="../media/azure-portal-connection-strings.png" alt-text="Connection string page for a selected SQL Database":::
+    > [!div class="mx-imgBorder"]
+    > [![Connection string page for a selected SQL Database](../media/azure-portal-connection-strings.png)](../media/azure-portal-connection-strings.png#lightbox)
 
 1. Copy and edit the connection string by including your password, or replacing the server name as needed.
 1. Reference the connection string updated in the client application.
