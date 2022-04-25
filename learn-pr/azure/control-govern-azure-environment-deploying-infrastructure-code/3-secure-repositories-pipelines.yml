@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.secure-repositories-pipelines
-title: Secure your repositories pipelines
+title: Secure your repositories and pipelines
 metadata:
   unitType: learning-content
   title: Secure your repositories and pipelines
@@ -10,6 +10,6 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 7
 content: |
   [!include[](includes/3-secure-repositories-pipelines.md)]
