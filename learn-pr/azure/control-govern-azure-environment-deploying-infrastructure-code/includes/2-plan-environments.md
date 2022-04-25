@@ -33,7 +33,7 @@ Your development team has their own sets of environments, too - they have **Sand
 
 In some of these environments, it makes sense to require a formal process to review and apply changes. These are *controlled environments*. **Production** should always be a controlled environment. In addition, it's a good practice to apply controls to some of the non-production environments, too. By doing this, you can ensure that any restrictions imposed by the controls are well understood and tested before the production deployment.
 
-In contrast, *uncontrolled environments* don't have many, or any, formal controls. They still might have the same code and similar configuration to your other environments, but they allow for more experimentation and ad hoc configuration changes. In an uncontrolled environment, users might be allowed to modify the configuration by using the Azure portal, or through direct Azure CLI statements, and they might be able to create resources without using the organization's approved process. But, changes made in uncontrolled environments must be captured in code before they can start to be applied to controlled environments like **Production**.
+In contrast, *uncontrolled environments* don't have many, or any, formal controls. They still might have the same code and similar configuration to your other environments, but they allow for more experimentation and ad hoc configuration changes. In an uncontrolled environment, users might be allowed to modify the configuration by using the Azure portal or by directly executing Azure CLI/Azure PowerShell commands, and they might be able to create resources without using the organization's approved process. But, changes made in uncontrolled environments must be captured in code before they can start to be applied to controlled environments like **Production**.
 
 > [!NOTE]
 > Sometimes, an *environment* might actually represent multiple physical environments or deployments. For example, when you create ephemeral environments for pull request reviews, you might have multiple such environments active at a single time because your team has multiple pull requests open. But, for the purpose of planning your environments, you can consider them to be equivalent because they have the same characteristics and controls.
@@ -86,7 +86,7 @@ You might run some of these checks multiple times within your deployment process
 > [!TIP]
 > When you design your deployment process, list all of the steps you need to perform for a deployment, no matter how small or obvious.  Be as detailed as you can. You might not choose to automate everything at first, but following this practice will help you to create a blueprint for your automated deployment processes in future.
 
-When automated or manual checks need to succeed in order to continue with a deployment or deploy to a new environment, these are called *gates*.
+A *gate* is an automated or a manual check that must succeed in order to continue with a deployment.
 
 ### Manual intervention
 

@@ -1,10 +1,13 @@
 When you deploy your infrastructure as code you can automate your deployments, improve your confidence in your deployments, and increase the efficiency of your team's work. But these benefits only apply if you and your team are diligent and avoid making manual changes to your environment. In this module, you'll learn how to apply configuration and governance to your Azure environment and pipelines to avoid unexpected or uncontrolled changes.
 
+> [!NOTE]
+> The GitHub Actions term for a pipeline is *workflow*. For simplicity, we use *pipeline* throughout this module to refer to both Azure Pipelines pipelines and GitHub Actions workflows.
+
 ## Example scenario
 
 Suppose you work as the Azure administrator at a toy company. Over the last several months, you and your team have been converting your Azure deployments to use Bicep, and you've automated your deployment processes by using Azure Pipelines and GitHub Actions. But your team still has some members who haven't quite adopted the mindset of deploying all of their changes as code.
 
-Recently you had several situations where people haven't followed the recommended practices:
+Recently you had several situations where people have deployed to Azure using different processes:
 
 1. Somebody made a direct change to a website's configuration by using the Azure portal.
 1. Somebody deployed a new Bicep file directly from their own computer.
