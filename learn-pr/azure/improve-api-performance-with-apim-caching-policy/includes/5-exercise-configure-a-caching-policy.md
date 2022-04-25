@@ -1,8 +1,6 @@
 When you host APIs using Azure API Management, you can modify their behavior without rewriting code, by using policies.
 
-As a developer for a board game company, you decide to implement caching for the Board Pricing API. First, add the API to Azure API Management and then write your caching policies.
-
-In the following exercise, we'll import an API into Azure API Management and we'll add a caching policy to it.
+As the developer for a board game company, you decide to implement caching for the Board Pricing API. You first need to add the API to Azure API Management and then write your caching policies. We'll do this in the next exercise.
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -11,15 +9,15 @@ In the following exercise, we'll import an API into Azure API Management and we'
 
 ## Create a Redis cache
 
-In this module, we're using the Consumption tier for Azure API Management. That's because Azure configures API Management instances for this tier within a minute or so. Other tiers can take up to 30 minutes. 
+We're using the Consumption tier for Azure API Management in this module. That's because Azure configures API Management instances for this tier within a minute or so. Other tiers can take up to 30 minutes.
 
 The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. This tier doesn't have its own internal cache. Instead, we need to create an external Redis cache and then configure a caching policy for API Management to use.
 
-Let's create a cache now. That will allow the setup to run behind the scenes, while we work on other steps:
+Let's create a cache now. Doing this will allow the setup to run behind the scenes while we work on other steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Use the same ID that you used to activate the sandbox.
 
-1. On the Azure portal resource menu, or the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal resource menu, or on the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the **Create a resource** menu, select **Databases**, and then search for and select **Azure Cache for Redis**. The **New Redis Cache** pane appears.
 
@@ -42,9 +40,9 @@ Let's create a cache now. That will allow the setup to run behind the scenes, wh
 
 ## Create a Web API in Azure Apps Service
 
-We create a Web API in Azure Apps Service by using a two-step process, in this sandbox environment: 
+Now in the sandbox environment create a Web API in Azure Apps Service. We do this by using a two-step process:
 
-1.	In Azure Cloud Shell, clone the sample Web API by running the following command: 
+1. In Azure Cloud Shell, clone the sample Web API by running the following command:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-improve-api-performance-with-apim-caching-policy.git
@@ -57,9 +55,9 @@ We create a Web API in Azure Apps Service by using a two-step process, in this s
     bash setup.sh
     ```
 
-Setup.sh has seven parts that take several minutes to run.  When setup.sh is complete, three URLs are displayed:
+Setup.sh has seven parts that take several minutes to run.  When it is complete, three URLs are displayed:
 
-    - A Web API test URL for testing the Web API.
+    - A Web API, test URL, for testing the Web API.
     - A Swagger URL for the Swagger UI.
     - A Swagger JSON URL for the OpenAPI definition.
 
@@ -69,11 +67,11 @@ Setup.sh has seven parts that take several minutes to run.  When setup.sh is com
 
 When the Web API is successfully created in Cloud Shell, then you can test it. Run tests by submitting a GET request in the browser or by checking the OpenAPI definition. The tests run against the Web API in the **azurewebsites.net** domain before it's added to API Management:
 
-1. On the Azure portal resource menu, or from the **Home** page, select **All resources**. Then select the App Service resource. The **BoardGamingAPI123aa456789** App Service pane appears (the numbers at the end will differ for your implementation).
+1. On the Azure portal **Resource** menu, or the **Home** page, select **All resources**. Then select the App Service resource. The **BoardGamingAPI123aa456789** App Service pane appears (the numbers at the end will differ for your implementation).
 
-1. In the command bar of the **Overview** tab, as a test, select **Browse**. Notice the error message. The browser displays the message "No webpage found for this address". This occurs because the Web API doesn't implement an Azure website user interface.
+1. In the command bar of the **Overview** tab, as a test, select **Browse**. Notice the error message, the browser displays the message "No webpage found for this address". This occurs because the Web API doesn't implement an Azure website user interface.
 
-1. In a new browser tab, paste the Web API test URL that you previously copied, and select <kbd>Enter</kbd>. The browser displays a response in JSON format. Notice that the result includes the server time, with the label **quotePreparedTime**.
+1. In a new browser tab, paste the Web API, test URL that you previously copied, and select <kbd>Enter</kbd>. The browser displays a response in JSON format. Notice that the result includes the server time, with the label **quotePreparedTime**.
 
 1. In a second browser tab, paste the Swagger URL that you copied previously, then select <kbd>Enter</kbd>. The browser displays the Swagger page for your *Board Gaming API*. Keep this browser tab open for later use.
 
@@ -85,7 +83,7 @@ Leave these tabs open; they'll be handy later.
 
 Now that we have a functional API, let's set up API Management:
 
-1. On the Azure portal resource menu, or the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal **Resource** menu, or the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the **Create a Resource** menu, select **Web**, and then select **API Management** from the result list. The **Create API Management** pane appears.
 
@@ -109,13 +107,13 @@ Now that we have a functional API, let's set up API Management:
 
 ## Configure API Management to use the external cache
 
-You can configure the API Management instance to use your Redis cache as an external cache, only when the Redis cache deployment is complete:
+You can configure the API Management instance to use your Redis cache as an external cache, only when the Redis cache is completely deployed:
 
-1. On the Azure portal resource menu, or the **Home** page, select **All resources**. Then select the *Azure Cache for Redis* resource type. An **Azure Cache for Redis** pane appears.
+1. On the Azure portal **Resource** menu, or the **Home** page, select **All resources**. Then select the *Azure Cache for Redis* resource type. An **Azure Cache for Redis** pane appears.
 
-1. In the **Essentials** section of the pane, the resource status should be **Running**. Continue to check the status every few minutes, by clicking the **Refresh** link. Proceed when the Redis cache deployment is complete.
+1. In the **Essentials** section of the pane, the resource status should display as **Running**. Continue to check the status every few minutes, by clicking the **Refresh** link. Proceed only when the Redis cache deployment is complete.
 
-1. In the **Azure Cache for Redis** menu, in the **Settings** section of the left navigation, select **Access Keys**. The **Access keys** pane appears, for the Azure Cache for Redis instance that you just created.
+1. In the **Azure Cache for Redis** menu, in the **Settings** section of the left navigation, select **Access Keys**. The **Access keys** pane appears for the Azure Cache for Redis instance that you just created.
 
 1. In the right corner of the **Primary connection string (StackExchange.Redis)** textbox, select the *Copy to clipboard* icon.
 
@@ -127,7 +125,7 @@ You can configure the API Management instance to use your Redis cache as an exte
 
 1. Select **Add** from the command bar. The **External cache** pane for your API Management service appears.
 
-1. In the **Cache instance** dropdown list, select **Custom**. Then in the **Use from** textbox, select the same location you used for the API Management instance.
+1. In the **Cache instance** dropdown list, select **Custom**. Then in the **Use from** textbox, select the same location that you used for the API Management instance.
 
 1. In the **Connection string** textbox, paste the primary connection string that you have copied. Then in the command bar, select **Save**.
 
@@ -135,7 +133,7 @@ You can configure the API Management instance to use your Redis cache as an exte
 
     The external cache you just created is now listed on the External cache page for your API Management service.
 
-## Add the API to API Management
+## Add your API to API Management
 
 We must apply a policy to enable users to access the API. However before you can apply a policy, you must add the API to the API Management instance.
 
