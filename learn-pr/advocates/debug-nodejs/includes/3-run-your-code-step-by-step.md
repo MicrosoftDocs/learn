@@ -16,9 +16,19 @@ Using breakpoints, you can make your program run normally up until you reach the
 
 There are multiple ways of defining breakpoints in your code based on your debugger and code editor. There's one universal way to force any JavaScript debugger to pause at a given point. You use the `debugger` statement.
 
-You can add this statement at any point in your code, like this:
+<!-- You can add this statement at any point in your code, like this: -->
 
-:::code language="javascript" source="../code/add-debugger-statement.js" highlight="3":::
+<!-- :::code language="javascript" source="../code/add-debugger-statement.js" highlight="3"::: -->
+
+
+## TESTING
+
+We need to fix the loop condition in the fibonacci.js code. In the code editor, change the value of the test statement from less than `<` to less than or equal to `<=`:
+
+:::code language="javascript" source="../code/fix-loop-condition.js" highlight="1":::
+
+Save your changes in the code editor, and then exit the debugger by selecting <kbd>Ctrl+D</kbd>.
+
 
 ## Node.js inspect mode
 
