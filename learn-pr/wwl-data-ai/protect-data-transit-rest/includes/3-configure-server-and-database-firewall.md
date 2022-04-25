@@ -1,4 +1,4 @@
-Firewalls are used to prevent unauthorized users from accessing protected resources. Each Azure SQL Database maps to a public IP address which is hosted by Microsoft. Each Azure region will have one or more public IP addresses where you can reach your database gateway, which will then take you to your database.
+Firewalls are used to prevent unauthorized users from accessing protected resources. Each Azure SQL Database maps to a public IP address, which is hosted by Microsoft. Each Azure region will have one or more public IP addresses where you can reach your database gateway, which will then take you to your database.
 
 ## How firewall works
 
@@ -10,7 +10,7 @@ As we can see in the image above, Azure provides built-in firewalls to limit acc
 
 ### Server-level firewall rules
 
-Both server and database level firewalls use IP Address rules instead of SQL Server Logins. This allows all users at the same public IP Address to access the SQL Server. At most companies this will be the outbound IP address of the company.
+Both server and database level firewalls use IP Address rules instead of SQL Server Logins, and allow all users at the same public IP Address to access the SQL Server. For most companies, this is their outbound IP address.
 
 Server level firewalls are configured to allow users to connect to all databases on the server. Database level firewalls are used to grant or block specific IP Addresses from accessing specific databases.
 
@@ -25,7 +25,7 @@ Database level firewall rules are configured through T-SQL only using the `sp_se
 
 Upon connection, Azure SQL Database will look first for a server level firewall rule in the *master* database and then a database level firewall rule, if the connection string specifies a database name. If either of these exist, the connection will be completed.
 
-If neither exist and the user is connecting through SQL Server Management Studio or Azure Data Studio, they will be prompted to create a firewall rule as shown below.
+If neither exist and the user is connecting through SQL Server Management Studio or Azure Data Studio, they'll be prompted to create a firewall rule as shown below.
 
 :::image type="content" source="../media/module-33-security-final-15.png" alt-text="New Firewall Rule Screen from SQL Server Management Studio":::
 
@@ -35,14 +35,14 @@ Virtual network endpoints allow traffic from a specific Azure Virtual Network. T
 
 Additionally, the service endpoint applies to only one region, which is the underlying endpoint’s region.
 
-One additional concern is that the virtual network that is connecting to the Azure SQL Database must have outbound access to the public IP address for Azure SQL Database, which can be configured using service tags for Azure SQL Database.
+An extra concern is that the virtual network that is connecting to the Azure SQL Database must have outbound access to the public IP address for Azure SQL Database, which can be configured using service tags for Azure SQL Database.
 
 ## Private link
 
-The Private Link feature allows you connect to Azure SQL Database and other PaaS offerings using a private endpoint.
+The Private Link feature allows you to connect to Azure SQL Database and other PaaS offerings using a private endpoint.
 
 A private endpoint allows for a connection to your Azure SQL Database to go entirely over the Azure backbone network and not over the public internet.
 
 This feature provides a private IP address on your Virtual Network. Another feature of private link is that it allows for Azure Express Route connections through that circuit.
 
-Private link offers several additional benefits including cross-region private connectivity and protection against data leakage by only allowing connections to specific resources.
+Private link offers several benefits including cross-region private connectivity and protection against data leakage by only allowing connections to specific resources.

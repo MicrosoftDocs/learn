@@ -1,4 +1,4 @@
-This module explored the encryption options available within Microsoft SQL Server and Azure SQL. Each of the various platforms support different database encryption options. You also explored these data encryption options and how to configure them.
+This module explored the encryption options available within Microsoft SQL Server and Azure SQL. Each of the various platforms supports different database encryption options. You also explored these data encryption options and how to configure them.
 
 Now that you've reviewed this module, you should be able to:
 
