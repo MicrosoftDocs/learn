@@ -1,4 +1,4 @@
-You're a solution architect, and your organization, Lamna Healthcare, has moved its workloads to the cloud. Recently, the bill for these resources and workflows has increased more than Lamna had anticipated. You've been asked to determine whether the increase is the result of natural, efficient growth, or whether the cost can be reduced by improving efficiency with the organization's cloud resources.
+You're a solution architect, and your organization, Lamna Healthcare, has moved its workloads to the cloud. Recently, the bill for these resources and workflows has increased more than Lamna had anticipated. You've been asked to deFtermine whether the increase is the result of natural, efficient growth, or whether the cost can be reduced by improving efficiency with the organization's cloud resources.
 
 ## How the cloud changes your expenses
 
@@ -108,7 +108,7 @@ Azure Storage offers three tiers for blob object storage:
 
 - **Cool access tier**: Lower storage costs and higher access costs compared to hot storage. This tier is optimized for storing data that's infrequently accessed and stored for at least 30 days.
 
-- **Archive access tier**: Lowest storage cost and highest data retrieval costs compared to hot and cool storage. This tier is optimized for storing data that is rarely accessed and stored for at least 180 days, with flexible latency requirements (for example, several hours of retrieval latency).
+- **Archive access tier**: Lowest storage cost and highest data-retrieval cost compared to hot and cool storage. This tier is optimized for storing data that is rarely accessed and stored for at least 180 days, with flexible latency requirements (for example, several hours of retrieval latency).
 
 ### Consumption pricing models
 
