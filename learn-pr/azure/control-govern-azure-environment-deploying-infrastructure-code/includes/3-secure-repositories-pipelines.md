@@ -26,7 +26,9 @@ It's a good practice to use your organization's Azure AD as your pipeline's iden
 You can also create *teams* (in GitHub) or *groups* (in Azure DevOps), which represent sets of users who can be granted permissions together. It's a good practice to define teams or groups. and then to assign permissions to the teams or groups instead of to individual users. That way, it's easy to change the permissions of users by adding them to and removing them from a team or group.
 
 > [!TIP]
-> Azure DevOps uses a different permission model to Azure. Ensure you understand how permissions are assigned, especially to groups.
+> Azure DevOps uses a *least privilege* permission model, which is different to the model used by Azure. In Azure DevOps, *deny* permissions override *allow* permissions, so if you're assigned to multiple groups with different sets of permissions, you'll only be allowed to do the actions permitted by both groups.
+>
+> Ensure you understand how permissions are assigned, especially to groups.
 
 ## Protect important code branches
 
@@ -42,7 +44,9 @@ Remember that your pipeline definitions are YAML files, so they're a form of cod
 
 ## Assess third-party components that run within your pipeline
 
-If you use community-provided GitHub Actions or Azure DevOps extensions, understand who built them and what they do. Third-party pipeline components might have access to your service principal's credentials, and therefore they might have access to your entire environment in Azure. Consider the security risk involved in each component you use, and remember that you're responsible for verifying that they're trustworthy and safe to use.
+If you use community-provided GitHub Actions or Azure DevOps extensions, understand who built them and what they do. Third-party pipeline components might have access to your service principal's credentials, and therefore they might have access to your entire environment in Azure.
+
+In Azure DevOps, the organization administrator typically approves every extension before it can be used. If you're the administrator for your organization, you should consider the security risk involved in each component you use. Remember that you're responsible for verifying that they're trustworthy and safe to use.
 
 ## Protect your pipeline's service principals
 
@@ -60,15 +64,19 @@ Next, think about the permissions that your service principals are granted:
 
 > [!div class="checklist"]
 >
-> * Apply Azure Active Directory (Azure AD) *conditional access* policies to your pipeline's service principals, which help to identify risky sign-ins and behaviors.
+> * Apply Azure Active Directory (Azure AD) *conditional access* policies to your pipeline's service principals, which help to identify risky sign-ins and behaviors. For example, if your pipeline service principals always sign in from one geographic region, conditional access can detect and prevent sign-ins from unexpected locations, which might indicate that the credentials have been compromised.
 > * Carefully consider the permissions that you grant to each service principal. For example, suppose you have a service principal that you use to read the configuration of a shared resource. Consider whether you can grant *Reader* access to that service principal, instead of a more privileged role, since the service principal doesn't need to do anything more.
 > * Use separate service principals for each of your environments. That way, even if a principal's credentials are compromised or if somebody gets access to one environment, they can't access other environments.
 
-## Protect your Azure Pipelines service connections
+## Protect your service connections and secrets
 
-In Azure Pipelines, a *service connection* contains the credentials for the service principal the pipeline uses to access your Azure environment. It's important that you protect your service connections, and that you control which pipelines use each service connection. Otherwise, you might accidentally enable a non-production environment to use a service principal with access to production resources. When you create a service connection, you can configure it to require your approval before it can be used by a new pipeline or environment.
+A *service connection* (in Azure Pipelines) or *secret* (in GitHub) contains the credentials for the service principal the pipeline uses to access your Azure environment. It's important that you protect your service connections and secrets, and that you control which pipelines use each service connection and secret. Otherwise, you might accidentally enable a non-production environment to use a service principal with access to production resources.
 
-You can also associate *checks* with specific service connections, which add a further layer of protection. For example, you can configure a check on a production service connection to verify that it's only used on code from your repository's *main* branch. This check helps to prevent unauthorized code from being deployed to your production environment.
+In Azure DevOps, when you create a service connection, you can configure it to require your approval before it can be used by a new pipeline or environment.
+
+Azure DevOps also enables you to associate *checks* with specific service connections, which add a further layer of protection. For example, you can configure a check on a production service connection to verify that it's only used on code from your repository's *main* branch. This check helps to prevent unauthorized code from being deployed to your production environment.
+
+In GitHub, you can configure environment-specific secrets. GitHub Actions only provides the secret value when the workflow is working with that environment. By using environment-specific secrets and environment controls like approvals, you can reduce the risk that a non-production deployment is used to deploy to your production environment. You can also use workload identities to avoid using any credentials in your GitHub Actions workflows, and eliminate the possibility that credentials might be exposed.
 
 ## Use GitHub security features
 
@@ -82,3 +90,17 @@ GitHub provides a suite of security features, which you should evaluate and use.
 ## Use Azure DevOps audit logging
 
 Azure DevOps provides *audit logs*, to help you to understand who has made changes to your pipelines, branch policies, repositories, and other resources. It's a good practice to enable auditing, and to review the audit logs regularly.
+
+## Protect your repository and pipeline
+
+Now that you understand some of the important controls you can apply to your repository and pipeline, let's consider the list of elements from earlier in this unit, and include some of the features you might use to protect each element: 
+
+| Element to protect | Controls to apply |
+|-|-|
+| Your Azure DevOps organization or GitHub repository, including who has access to it and what they're allowed to do. | <ul><li>Use Azure AD for authentication.</li><li>Use teams and groups to assign permissions.</li><li>Enable audit logging, and review audit logs regularly.</li></ul> |
+| Important branches in your repository, and what needs to happen to change the code on those branches. | Apply branch protection rules/branch policies. |
+| The code inside your repository, including your infrastructure definitions, tests, and application code. | <ul><li>Enforce code review requirements.</li><li>Add automated or manual tests.</li><li>On GitHub, use Dependabot and secret scanning.</li></ul> |
+| The pipeline definition. | Enforce code review requirements. |
+| Any third-party tasks or components that might run within your pipeline. | Review the security risk associated with all third-party extensions and tasks. |
+| The service principals that your pipeline uses to access Azure. | <ul><li>Use workload identities in GitHub Actions. For Azure Pipelines, use service principals and regularly rotate their credentials.</li><li>Use separate service principals for each environment.</li><li>Apply conditional access policies.</li></ul> |
+| The secrets that your pipeline uses to access external systems. | <ul><li>On Azure DevOps, use approvals and checks on service connections.</li><li>On GitHub, use environment-specific secrets and workload identities.</li></ul> |

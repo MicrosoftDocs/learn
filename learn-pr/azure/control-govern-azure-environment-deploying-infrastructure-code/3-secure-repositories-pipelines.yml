@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.secure-pipelines
-title: Secure your pipelines
+uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.secure-repositories-pipelines
+title: Secure your repositories pipelines
 metadata:
   unitType: learning-content
-  title: Secure your pipelines
+  title: Secure your repositories and pipelines
   description: Learn about some of the areas of Azure DevOps and GitHub with potential vulnerabilities, and approaches you can use to secure and control them.
   ms.date: 04/21/2022
   author: johndowns
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-secure-pipelines.md)]
+  [!include[](includes/3-secure-repositories-pipelines.md)]

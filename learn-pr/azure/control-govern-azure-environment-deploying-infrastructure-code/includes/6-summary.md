@@ -23,7 +23,7 @@ Now, you’re able to increase your confidence in, and the security of, your Azu
   - [Auditing in Azure DevOps](/azure/devops/organizations/audit/azure-devops-auditing)
   - Use GitHub security features
     - [Security hardening for GitHub Actions](https://docs.github.com//actions/security-guides/security-hardening-for-github-actions)
-    - [Dependsabot](https://docs.github.com/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates)
+    - [Dependabot](https://docs.github.com/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates)
     - [Secret scanning](https://docs.github.com/code-security/secret-scanning/about-secret-scanning)
     - [GitHub security overview](https://docs.github.com/code-security/security-overview/about-the-security-overview)
 - Secure your Azure environment

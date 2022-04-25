@@ -69,7 +69,9 @@ Avoid connecting from one environment to another. For example, don't peer a prod
 
 ## Checks and gates
 
-As your deployment process proceeds, it should run a series of checks to increase your confidence in the deployment. Checks for infrastructure often include:
+As your deployment process proceeds, it should run a series of checks to increase your confidence in the deployment. You need to determine the checks that make sense for each of your environments that your deployments progress through.
+
+Checks for infrastructure often include:
 
 - Code reviews.
 - Deployment of your in-review code to ephemeral environments, and running automated or manual tests against the environment.
@@ -97,10 +99,11 @@ If you use manual approval gates for deployments, follow these recommended pract
 > [!div class="checklist"]
 >
 > * **Clearly define who is allowed to approve a deployment.** Use Azure AD groups to define approvers instead of specifying individual users, so that you can easily change the list of approvers in the future.
-> * **Ensure you have a process for emergency deployments.** Understand who can approve a deployment if the normal approvers aren't available.
-> * **Limit human intervention to just approving or rejecting the deployment.** Avoid having humans executing the deployment operations, unless there's a step that you can't automate.
+> * **Ensure you have a process for emergency deployments.** Plan who can approve a deployment if the normal approvers aren't available, such as for an emergency deployment in the middle of the night or during a vacation period.
+> * **Limit human intervention to just approving or rejecting the deployment.** Avoid requiring humans to execute any of the deployment operations, unless there's a step that you can't automate.
 
 ## Governance
+
 Azure provides a set of tools and capabilities to help you to govern your environment, including:
 
 - Azure Policy, to detect resources that have been configured in ways that don't fit with your organization's requirements, or even to prevent resources from being created or reconfigured in a way that will cause them to be out of compliance.

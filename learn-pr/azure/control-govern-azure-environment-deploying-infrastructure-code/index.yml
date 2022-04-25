@@ -42,7 +42,7 @@ products:
 units:
 - learn.azure.control-govern-azure-environment-deploying-infrastructure-code.introduction
 - learn.azure.control-govern-azure-environment-deploying-infrastructure-code.plan-environments
-- learn.azure.control-govern-azure-environment-deploying-infrastructure-code.secure-pipelines
+- learn.azure.control-govern-azure-environment-deploying-infrastructure-code.secure-repositories-pipelines
 - learn.azure.control-govern-azure-environment-deploying-infrastructure-code.secure-azure-environment
 - learn.azure.control-govern-azure-environment-deploying-infrastructure-code.knowledge-check
 - learn.azure.control-govern-azure-environment-deploying-infrastructure-code.summary
