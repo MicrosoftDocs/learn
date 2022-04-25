@@ -37,7 +37,7 @@ Back to the **SQL (preview)** page, select the **Manage profile** tab, and then 
 
 :::image type="content" source="../media/module-44-optimize-resources-final-15_2.png" alt-text="Add monitoring machine on SQL Insights main page":::
 
->[NOTE]
+>[!NOTE]
 >Make sure you have a dedicated virtual machine created before proceed to the next step. At this time, the only supported virtual machine OS is Ubuntu 18.04.
 
 On the **Add monitoring virtual machine** page, ensure you select the virtual machine name, the SQL Server connection strings, and that the following pre-requisites are satisfied:
