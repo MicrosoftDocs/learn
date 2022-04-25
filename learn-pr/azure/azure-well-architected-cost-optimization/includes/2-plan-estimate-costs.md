@@ -44,7 +44,7 @@ It's also important to set up an organizational framework to enable the control,
 
 Use Azure Policy to create limitations for the size or tier of resources that can be provisioned. For example, you can prevent users from creating virtual machines from the G or M series, which have higher costs. If a need arises for VMs of those sizes, requests for those VMs can flow through an exception process, where individual scenarios can be reviewed and approved on a case-by-case basis. These types of policies will prevent your organization from facing unexpected large bills from your users creating resources that are larger than your projects need.
 
-Enable your users to view reports and billing as needed by creating roles that allow them to view services such as Azure Cost Management. Enabling your users to view costs will help them see the impact of their business decisions. It also provides for transparency across the organization with respect to cloud resource costs.
+Enable your users to view reports and billing as needed by creating roles that allow them to view services such as Microsoft Cost Management. Enabling your users to view costs will help them see the impact of their business decisions. It also provides for transparency across the organization with respect to cloud resource costs.
 
 Organize your resources into resource groups or subscriptions. They can serve as boundaries for projects, business units, or services. You can also use Azure Policy to enforce the tagging of resources. Subscriptions, resource groups, and tags are exposed in billing reports. These reports will enable you to account for the usage of resources by product, business unit, or project.
 

@@ -1,4 +1,4 @@
-You use the Azure Cost Management connector for Power BI Desktop to make powerful, customized visualizations and reports that help you better understand your Azure spending. The connector is a wrapper for an API that allows Power BI to communicate with Azure. It connects to your Azure account, imports your Cost Management data, and it uses a set of pre-built actions and triggers to help you build your own apps and reports. The connector currently supports customers with a [Microsoft Customer Agreement](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) or an [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/).
+You use the Microsoft Cost Management connector for Power BI Desktop to make powerful, customized visualizations and reports that help you better understand your Azure spending. The connector is a wrapper for an API that allows Power BI to communicate with Azure. It connects to your Azure account, imports your Cost Management data, and it uses a set of pre-built actions and triggers to help you build your own apps and reports. The connector currently supports customers with a [Microsoft Customer Agreement](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) or an [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/).
 
 The connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next time you sign in. OAuth 2.0 is the standard for the process that happens behind the scenes to ensure permissions are handled securely.
 
@@ -9,15 +9,15 @@ To connect, you must use one of the following account types. Other account types
 
 You must have Power BI Desktop installed.
 
-## Connect to Azure Cost Management
+## Connect to Microsoft Cost Management
 
-To connect to using the **Azure Cost Management connector** in Power BI Desktop:
+To connect to using the **Microsoft Cost Management connector** in Power BI Desktop:
 
 1. Open Power BI Desktop.
 1. In the **Home** ribbon, select **Get Data**.
 1. Select **Azure** from the list of data categories. You might need to select **More** at the end of the list.
 1. Select **Azure Cost Management** and then select **Connect**.  
-    :::image type="content" source="../media/5-power-bi-desktop-get-data.png" alt-text="Screenshot showing Connect to Azure Cost Management in Power B I Desktop." :::
+    :::image type="content" source="../media/5-power-bi-desktop-get-data.png" alt-text="Screenshot showing Connect to Microsoft Cost Management in Power B I Desktop." :::
 1. In the dialog that appears for **Choose Scope**, select either your **Billing Profile ID** for **Microsoft Customer Agreements**, or your **Enrollment Number** for **Enterprise Agreements (EA)**.
 
 ### Connect with a Microsoft Customer Agreement account

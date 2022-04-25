@@ -1,4 +1,4 @@
-Azure Cost Management gives you the tools to plan for, analyze, and reduce your spending to maximize your cloud investment. Azure makes it easy to build and deploy cloud solutions. However, it's important that those solutions are optimized to minimize the cost to your organization.
+Microsoft Cost Management gives you the tools to plan for, analyze, and reduce your spending to maximize your cloud investment. Azure makes it easy to build and deploy cloud solutions. However, it's important that those solutions are optimized to minimize the cost to your organization.
 
 ## Principles
 
@@ -15,7 +15,7 @@ Your answers will help you select the offerings that are right for you. They det
 
 **Visibility**
 
-When structured well, Cost Management helps you to inform people about the Azure costs they're responsible for or for the money they spend. Azure Cost Management has a tool called Cost Analysis, which you will learn to use in this lesson. It's designed to give you insight into where your money is spent. Take advantage of this tool. It can help you find identify key cost drivers and trends within your environments.
+When structured well, Cost Management helps you to inform people about the Azure costs they're responsible for or for the money they spend. Microsoft Cost Management has a tool called Cost Analysis, which you will learn to use in this lesson. It's designed to give you insight into where your money is spent. Take advantage of this tool. It can help you find identify key cost drivers and trends within your environments.
 
 **Accountability**
 

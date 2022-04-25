@@ -2,7 +2,7 @@ If your organization has Azure Hybrid Benefits (AHB), it helps to reduce the lic
 
 If you're already using your benefit, then use the Windows Server AHB Usage report to identify the servers that have AHB enabled. When you're not using your benefit, the report shows you where you can use it. In either case, the report helps maximize your benefit usage by showing recommendations that help save you money. Because of the complicated nature of the benefit, the report can give you confidence to fully use your Windows Server licensing benefit without unintentionally exceeding it.
 
-In the Azure Cost Management Power BI App, navigate to the **Windows Server AHB Usage** page.
+In the Microsoft Cost Management Power BI App, navigate to the **Windows Server AHB Usage** page.
 
 The report shows the number of virtual machines that have Azure Hybrid Benefit enabled over time. It also shows a count of cores/vCPUs currently used by the virtual machines.
 

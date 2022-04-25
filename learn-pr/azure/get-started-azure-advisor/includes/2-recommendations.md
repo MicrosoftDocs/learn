@@ -72,7 +72,7 @@ Advisor gives you several recommendations for each of these categories. Here are
 - FTPS should be required in your web app.
 - Container images should be deployed from trusted registries only.
 
-Advisor integrates with [Microsoft Defender for Cloud](/azure/security-center/security-center-recommendations?azure-portal=true) to provide security recommendations on the Advisor dashboard Security tab and with Azure Cost Management and Billing to offer cost recommendations on the Advisor dashboard Cost tab.
+Advisor integrates with [Microsoft Defender for Cloud](/azure/security-center/security-center-recommendations?azure-portal=true) to provide security recommendations on the Advisor dashboard Security tab and with Microsoft Cost Management to offer cost recommendations on the Advisor dashboard Cost tab.
 
 ## Remediating issues found by Advisor recommendations
 

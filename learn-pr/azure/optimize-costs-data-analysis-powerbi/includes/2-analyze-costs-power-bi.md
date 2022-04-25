@@ -1,10 +1,10 @@
-Azure Cost Management provides a solution that you can use to start analyzing costs immediately in Power BI with a set of reports. This unit explains how to install the app and which reports are used to get an understanding of your organization's costs. Reports provide a way to quickly see costs for your subscriptions and resource groups, to determine your top cost drivers, and find anomalous spending patterns over time.
+Microsoft Cost Management provides a solution that you can use to start analyzing costs immediately in Power BI with a set of reports. This unit explains how to install the app and which reports are used to get an understanding of your organization's costs. Reports provide a way to quickly see costs for your subscriptions and resource groups, to determine your top cost drivers, and find anomalous spending patterns over time.
 
 ## Install and configure
 
 To install the app:
 
-Open [Azure Cost Management Power BI App](https://aka.ms/costmgmt/ACMApp) and get the app. Agree to the terms of use and privacy policy and then continue. Install the app and then go to it. In **Get started with your new app**, under **Connect your data**, select **Connect**.
+Open [Microsoft Cost Management Power BI App](https://aka.ms/costmgmt/ACMApp) and get the app. Agree to the terms of use and privacy policy and then continue. Install the app and then go to it. In **Get started with your new app**, under **Connect your data**, select **Connect**.
 
 In the dialog that appears, enter your EA enrollment number for **BillingProfileIdOrEnrollmentNumber**. Specify the number of months of data to get. Leave the default **Scope** value of **Enrollment Number**, then select **Next**.
 
@@ -27,7 +27,7 @@ To check the data refresh status, select the **Datasets + dataflows** tab in the
 
 :::image type="content" source="../media/2-data-refresh-status.png" alt-text="Screenshot showing data refresh status indicator." lightbox="../media/2-data-refresh-status.png" :::
 
-After the data refresh is complete, select the Azure Cost Management App to view the pre-created reports.
+After the data refresh is complete, select the Microsoft Cost Management App to view the pre-created reports.
 
 ## Analyze your costs using the app
 

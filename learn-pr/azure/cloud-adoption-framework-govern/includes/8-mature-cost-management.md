@@ -63,15 +63,15 @@ Work with the central operations and workload teams to ensure proper ownership o
 
 After you align roles, establish recurring processes to meet and hold each other accountable for this important recurring task.
 
-## Azure Cost Management + Billing
+## Microsoft Cost Management
 
-Azure Cost Management + Billing is your default tool in Azure to bring together all the data for managing your cost strategy.
+Microsoft Cost Management is your default tool in Azure to bring together all the data for managing your cost strategy.
 
-Azure Cost Management + Billing brings together resource organization, Azure Advisor alerts, and your governance foundation to meet your cost management needs.
+Microsoft Cost Management brings together resource organization, Azure Advisor alerts, and your governance foundation to meet your cost management needs.
 
 ### Exercise: Create a budget
 
-To get started with Azure Cost Management + Billing, create your first budget with the [Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?azure-portal=true) tutorial.
+To get started with Microsoft Cost Management, create your first budget with the [Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?azure-portal=true) tutorial.
 
 ### Exercise: Find opportunities to optimize
 

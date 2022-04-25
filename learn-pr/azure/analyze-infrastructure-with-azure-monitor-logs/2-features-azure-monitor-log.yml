@@ -22,7 +22,7 @@ quiz:
       explanation: "This answer is correct."
     - content: "Azure billing details"
       isCorrect: false
-      explanation: "Azure Monitor does not collect information related to billing. You can use Azure Cost Management to track this information."
+      explanation: "Azure Monitor does not collect information related to billing. You can use Microsoft Cost Management to track this information."
     - content: "Backups of database transaction logs"
       isCorrect: false
       explanation: "Azure Monitor does not perform backups of database transaction logs. You can use Azure Backup for backups of your systems."

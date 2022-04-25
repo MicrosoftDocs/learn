@@ -14,4 +14,4 @@ You should now have even more confidence in both your Bicep code and the Azure i
 
 - [GitHub Actions pull request trigger](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#pull_request)
 - [What is the Azure Dev/Test offer?](/azure/devtest/offer/overview-what-is-devtest-offer-visual-studio)
-- [Azure Cost Management budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets)
+- [Microsoft Cost Management budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets)

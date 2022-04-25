@@ -44,7 +44,7 @@ quiz:
     - content: Deploy a dedicated subscription for your ephemeral environments, and grant the service principal access to that subscription only.
       isCorrect: true
       explanation: Correct. By creating a narrowly scoped role assignment, you can ensure that your service principal is limited to working only with your ephemeral environments.
-    - content: Use Azure Cost Management budgets to control access to your production environment.
+    - content: Use Microsoft Cost Management budgets to control access to your production environment.
       isCorrect: false
       explanation: Incorrect. Cost Management budgets are a useful cost management tool, but they don't help you manage access to your environments.
     - content: Deploy resource locks to block the service principal from making changes to your production environment.

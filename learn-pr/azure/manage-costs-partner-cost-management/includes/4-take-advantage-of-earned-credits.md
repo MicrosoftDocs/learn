@@ -6,7 +6,7 @@ To learn more about important eligibility conditions to receive partner earned c
 
 ## Determine resources that have the partner earned credit applied
 
-In Azure Cost Management, Fabrikam can use cost analysis to view costs that received partner earned credits. Take the following steps:
+In Microsoft Cost Management, Fabrikam can use cost analysis to view costs that received partner earned credits. Take the following steps:
 
 1. In the Azure portal, sign into Fabrikam's tenant and select  **Cost Management + Billing**. Under  **Cost Management**, select  **Cost analysis**.
 2. The **Cost analysis** view shows costs of the billing account for the partner. Select the scope of **Billing Profile** or a specific **Customer** scope.
@@ -17,7 +17,7 @@ When the **PartnerEarnedCreditApplied** property is **True**, the associated cos
 
 When the **PartnerEarnedCreditApplied** property is **False**, the associated cost hasn't met the required eligibility for the credit. Or, the purchased service isn't eligible for partner earned credit.
 
-Service usage data normally takes 8 to 24 hours to appear in Azure Cost Management. For more information, see [Cost and usage data updates and retention](/azure/cost-management-billing/costs/understand-cost-mgt-data#cost-and-usage-data-updates-and-retention). Partner earned credits appear within 48 hours from time of access in Azure Cost Management.
+Service usage data normally takes 8 to 24 hours to appear in Cost Management. For more information, see [Cost and usage data updates and retention](/azure/cost-management-billing/costs/understand-cost-mgt-data#cost-and-usage-data-updates-and-retention). Partner earned credits appear within 48 hours from time of access in Cost Management.
 
 You can also group and filter by the **PartnerEarnedCreditApplied** property by using the **Group by** options. Use the options to examine costs that do and don't have partner earned credit.
 

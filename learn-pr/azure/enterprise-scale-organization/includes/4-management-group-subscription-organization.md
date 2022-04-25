@@ -74,4 +74,4 @@ Cost transparency across a technical estate is a critical management challenge f
 
 Consider a potential need for chargeback models where shared platform as a service (PaaS) resources are concerned, such as Azure App Service Environment and Azure Kubernetes Service, which might need to be shared to achieve higher density. Use a shutdown schedule for nonproduction workloads to optimize costs. Use Azure Advisor to check cost optimization recommendations.
 
-We recommend the use of Azure Cost Management + Billing for cost aggregation. Make it available to application owners. Use Azure resource tags for cost categorization and resource grouping. Using tags allows you to have a chargeback mechanism for workloads that share a subscription or for a given workload that spans across multiple subscriptions.
+We recommend the use of Microsoft Cost Management for cost aggregation. Make it available to application owners. Use Azure resource tags for cost categorization and resource grouping. Using tags allows you to have a chargeback mechanism for workloads that share a subscription or for a given workload that spans across multiple subscriptions.
