@@ -21,6 +21,7 @@ Now, you’re able to increase your confidence in, and the security of, your Azu
     - [Workload identity federation](/azure/active-directory/develop/workload-identity-federation)
     - [Azure DevOps security](/azure/devops/organizations/security/quick-reference-index-security)
   - [Auditing in Azure DevOps](/azure/devops/organizations/audit/azure-devops-auditing)
+  - [Workload identity federation for GitHub Actions workflows](/azure/developer/github/connect-from-azure#use-the-azure-login-action-with-openid-connect)
   - Use GitHub security features
     - [Security hardening for GitHub Actions](https://docs.github.com//actions/security-guides/security-hardening-for-github-actions)
     - [Dependabot](https://docs.github.com/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates)
