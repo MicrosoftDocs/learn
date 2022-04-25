@@ -6,7 +6,7 @@ metadata:
   description: This unit explains how to update the dependencies in your app and how to do so in a predictable way.
   author: softchris
   ms.author: chnoring
-  ms.date: 06/25/2020
+  ms.date: 04/29/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

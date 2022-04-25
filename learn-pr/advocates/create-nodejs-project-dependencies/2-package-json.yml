@@ -6,7 +6,7 @@ metadata:
   description: This unit will explain how you can configure a package.json file to describe a project better. It will also cover how to create and run various scripts that can help you manage a project throughout its lifetime.
   author: softchris
   ms.author: chnoring
-  ms.date: 06/25/2020
+  ms.date: 04/29/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
