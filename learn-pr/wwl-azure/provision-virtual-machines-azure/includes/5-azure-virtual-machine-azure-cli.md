@@ -28,7 +28,7 @@ In this exercise you'll create a Linux virtual machine by performing the followi
     az group create --name az204-vm-rg --location <myLocation>
     ```
 
-1. Create a VM with the `az vm create` command. The command below creates a Linux VM named *az204vm* with an admin user named *azureuser*. After executing the command you will need to supply a password that meets the password requirements.
+1. Create a VM with the `az vm create` command. The command below creates a Linux VM named *az204vm* with an admin user named *azureuser*.
 
     ```bash
     az vm create \
