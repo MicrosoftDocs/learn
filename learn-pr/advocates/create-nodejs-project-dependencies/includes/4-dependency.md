@@ -32,7 +32,7 @@ A typical installation command looks like this one: `npm install <name of packag
 
 When you run the `install` command, the command-line tool connects to a global registry, fetches the code, and places it in a node_modules folder for your project. After the installation, your project directory looks something like this:
 
-```Console
+```output
 -| node_modules/
 ---| <name of dependency>/
 ------| <files included in the dependency>

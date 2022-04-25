@@ -4,35 +4,42 @@ The developers at Tailwind Traders realize that they're about to put extensive r
 
 You're given some code that parses an address from a string. Your task should be fairly straightforward. It involves installing the test framework, writing a couple tests, and running them.
 
-1. Clone `https://github.com/MicrosoftDocs/node-essentials/` by running this command:
+> [!Note]
+> If you closed your terminal window after the previous exercise, you might need to set up your environment again.
+>
+> Open a terminal window, and clone the `https://github.com/MicrosoftDocs/node-essentials/` repo by running this command:
+> 
+> ```bash
+> git clone https://github.com/MicrosoftDocs/node-essentials/
+> ```
+>
+> You can ignore messages about the cloned folder already existing or the directory not being empty.
 
-   ```bash
-   git clone `https://github.com/MicrosoftDocs/node-essentials/`
-   ```
-
-1. Go to your files by running this command:
+1. In your terminal window, change to the folder that has the cloned files for this exercise:
 
    ```bash
    cd node-essentials/node-dependencies/5-exercise-dependency
    ```
 
-   You should now have access to these files:
+   In this folder, you should see two JavaScript files:
 
    ```bash
    -| address-parser.js
    -| package.json
    ```
 
-1. Open address-parser.js. It should look like this file:
+1. Open the **address-parser.js** file. It should look like this file:
 
    ```javascript
    exports.parse = function parseOrder(order) {
      const match = order.match(/order:\s(?<order>\w+\s\w+).*address:\s(?<address>\w+\s\w+\s\w+).*payment info:\s(?<payment>\w+)/)
-    return match.groups;
+   return match.groups;
    }
    ```
 
-   The preceding function takes a string and parses out information about what a customer orders, where it should be delivered, and how it will be paid for. Let's add Jest and write some tests for the function.
+   This function takes a string and parses out information about what a customer orders, where it should be delivered, and how it will be paid for. We'll add Jest and write some tests for the function.
+
+   Close the file.
 
 1. Install the Jest library by running this command:
 
@@ -40,26 +47,21 @@ You're given some code that parses an address from a string. Your task should be
    npm install jest --save-dev
    ```
 
-   Open the package.json file and find the `devDependencies` section. You should now have an entry that looks like this one:
+   Open the package.json file and find the `devDependencies` section. You should see en entry that looks like this example:
 
    ```json
    "devDependencies": {
-      "jest": "^25.4.0"
+      "jest": "^28.0.0"
     }
    ```
 
-1. Create a \_\_tests\_\_ folder. Inside of it, create an address-parser.js file.
+   Close the file.
 
-   Your project structure should now look like this one:
+1. In the terminal, create a new folder named **\_\_tests\_\_**.
 
-   ```bash
-   -| package.json
-   -| address-parser.js
-   -| __tests__/
-   ---| address-parser.js
-   ```
+1. Change to the new folder.
 
-1. Add the following content to \_\_tests\_\_\/address-parser.js:
+1. In the \_\_tests\_\_ folder, create a new file named **address-parser.js** and add the following content to the file:
 
    ```javascript
    const { parse } = require("../address-parser");
@@ -81,11 +83,23 @@ You're given some code that parses an address from a string. Your task should be
 
    The preceding test is written to test the parsing of address-parser.js and ensure it correctly parses out the needed information.
 
+   Your project structure should now look like this example:
+
+   ```bash
+   -| package.json
+   -| address-parser.js
+   -| __tests__/
+   ---| address-parser.js
+   ```
+
+
 1. Open the package.json file and find the `scripts` section. Add this entry:
 
    ```json
    "test": "jest"
    ```
+
+   Close the file.
 
 1. Run the tests by entering this command in the terminal:
 

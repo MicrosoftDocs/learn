@@ -10,7 +10,7 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
    git clone https://github.com/MicrosoftDocs/node-essentials/
    ```
 
-1. Move to the folder that has the cloned files by running this command:
+1. Change to the folder that has the cloned files for this exercise:
 
    ```bash
    cd node-essentials/node-dependencies/3-exercise-package-json
@@ -18,7 +18,7 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
 
    In this folder, you should see a **src** subfolder with an **index.js** file:
 
-   ```Console
+   ```output
    -| src/
    ---| index.js
    ```
@@ -33,7 +33,7 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
 
     ```json
     {
-      "name": "package-json",
+      "name": "<your project>",
       "version": "1.0.0",
       "description": "",
       "main": "script.js",
