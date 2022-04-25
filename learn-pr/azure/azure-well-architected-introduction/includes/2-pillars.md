@@ -4,9 +4,9 @@ Solution architecture is concerned with the planning, design, implementation, an
 
 ## Azure Well-Architected Framework
 
-The Azure Well-Architected Framework is a set of guiding tenets to build high-quality solutions on Azure. There's no one-size-fits-all approach to designing an architecture. But there are some universal concepts that will apply regardless of the architecture, technology, or cloud provider. 
+The Azure Well-Architected Framework is a set of guiding tenets to build high-quality solutions on Azure. There's no one-size-fits-all approach to designing an architecture, but there are some universal concepts that will apply regardless of the architecture, technology, or cloud provider. 
 
-These concepts are not all-inclusive. But focusing on them will help you build a reliable, secure, and flexible foundation for your application.
+These concepts are not all-inclusive, but focusing on them will help you build a reliable, secure, and flexible foundation for your application.
 
 The Azure Well-Architected Framework consists of five pillars:
 
@@ -20,13 +20,13 @@ The Azure Well-Architected Framework consists of five pillars:
 
 ### Cost optimization
 
-You'll want to design your cloud environment so that it's cost-effective for operations and development. Identify inefficiency and waste in cloud spending to ensure you're spending money where you can make the greatest use of it. 
+You'll want to design your cloud environment so that it's cost-effective for operations and development. Identify inefficiency and waste in cloud spending to ensure you're spending money where you can make the greatest use of it.
 
 ![An illustration that shows increasing quality, speed, and efficiency while maintaining decreasing costs.](../media/efficiency.png)
 
 ### Operational excellence
 
-By taking advantage of modern development practices, such as DevOps, you can enable faster development and deployment cycles. You need to have a good monitoring architecture in place so that you can detect failures and problems before they happen or, at a minimum, before your customers notice. Automation is a key aspect of this pillar to remove variance and error while increasing operational agility.
+By taking advantage of modern development practices such as DevOps, you can enable faster development and deployment cycles. You need to have a good monitoring architecture in place so that you can detect failures and problems before they happen or, at a minimum, before your customers notice. Automation is a key aspect of this pillar to remove variance and error while increasing operational agility.
 
 ### Performance efficiency
 
@@ -42,7 +42,7 @@ Every architect's worst fear is having an architecture fail with no way to recov
 
 ### Security
 
-Data is the most valuable piece of your organization's technical footprint. In this pillar, you'll focus on securing access to your architecture through authentication and protecting your application and data from network vulnerabilities. The integrity of your data should be protected too, through tools like encryption.
+Data is the most valuable piece of your organization's technical footprint. In this pillar, you'll focus on securing access to your architecture through authentication and protecting your application and data from network vulnerabilities. You should protect the integrity of your data too, through tools like encryption.
 
 You must think about security throughout for the entire lifecycle of your application, from design and implementation to deployment and operations. The cloud provides protections against a variety of threats, such as network intrusion and DDoS attacks. But you still need to build security into your application, processes, and organizational culture.
 
@@ -62,17 +62,17 @@ In addition to each of these pillars, there are some consistent design principle
 
 ## Shared responsibility
 
-Moving to the cloud introduces a model of shared responsibility. In this model, your cloud provider will manage certain aspects of your application, leaving you with the remaining responsibility. 
+Moving to the cloud introduces a model of shared responsibility. In this model, your cloud provider will manage certain aspects of your application, leaving you with the remaining responsibility.
 
-In an on-premises environment, you're responsible for everything. As you move to infrastructure as a service (IaaS), then to platform as a service (PaaS) and software as a service (SaaS), your cloud provider will take on more of this responsibility. 
+In an on-premises environment, you're responsible for everything. As you move to infrastructure as a service (IaaS), then to platform as a service (PaaS) and software as a service (SaaS), your cloud provider will take on more of this responsibility.
 
-This shared responsibility will play a role in your architectural decisions, because these decisions can have implications on cost, security, and the technical and operational capabilities of your application. By shifting these responsibilities to your provider, you can focus on bringing value to your business and move away from activities that aren't a core business function.
+This shared responsibility will play a role in your architectural decisions, because these decisions can have implications on cost, security, and your application's technical and operational capabilities. By shifting these responsibilities to your provider, you can focus on bringing value to your business and move away from activities that aren't a core business function.
 
 ![An illustration that shows the level of shared responsibilities in each type of cloud service models.](../media/cloud-responsibility-model.png)
 
 ## Design choices
 
-In an ideal architecture, you would build the most secure, high-performance, highly available, and efficient environment possible. However, as with everything, there are trade-offs. 
+In an ideal architecture, you would build the most secure, high-performance, highly available, and efficient environment possible. However, as with everything, there are trade-offs.
 
 To build an environment with the highest level of all these pillars, there's a cost. That cost might be in money, time to deliver, or operational agility. Every organization will have different priorities that will affect the design choices that are made in each pillar. As you design your architecture, you'll need to determine which trade-offs are acceptable, and which are not.
 
