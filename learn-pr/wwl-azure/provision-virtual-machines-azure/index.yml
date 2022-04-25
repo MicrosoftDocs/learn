@@ -3,7 +3,7 @@ uid: learn.wwl.provision-virtual-machines-azure
 metadata:
   title: Provision virtual machines in Azure
   description: "Learn the availability and sizing options of Azure Virtual Machines, and how to create a virtual machine by using the Azure CLI."
-  ms.date: 12/09/2021
+  ms.date: 04/24/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
