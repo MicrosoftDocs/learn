@@ -82,7 +82,7 @@ In GitHub, you can configure environment-specific secrets. GitHub Actions only p
 
 GitHub provides a suite of security features, which you should evaluate and use. These features include:
 
-- Dependsabot, which scans your source code's dependencies for known vulnerabilities.
+- Dependabot, which scans your source code's dependencies for known vulnerabilities.
 - Secret scanning, which identifies text in your repository that looks like keys or credentials. It's a bad practice to store secrets in a repository, so if you're alerted to a secret in your repository you should consider the secret's value to be compromised and you should revoke or change it.
 - Auditing, to understand who has made changes to your GitHub configuration.
 - Security overview, which consolidates all of your security alerts across your organization's repositories.
