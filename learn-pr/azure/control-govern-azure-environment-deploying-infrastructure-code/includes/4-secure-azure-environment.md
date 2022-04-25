@@ -55,7 +55,7 @@ The sequence of steps for using a break-glass account is:
 1. The user accesses the credentials for the break-glass account, and signs in as that user.
 1. The user (acting as the break-glass account) is allowed to perform the operation.
 
-The use of break-glass accounts require a high level of discipline. They should only be used in emergencies, and their credentials should be carefully managed and protected because the account is so highly privileged. It's also important to carefully audit any use of the break-glass accounts, to ensure they're not used inappropriately. Their use should be reserved for true emergency situations.
+The use of break-glass accounts require a high level of discipline. They should only be used in emergencies, and their credentials should be carefully managed and protected because the account is so highly privileged. It's a good practice to change their credentials frequently, to minimize the chance that they've been exposed or compromised. It's also important to carefully audit any use of the break-glass accounts, to ensure they're not used inappropriately. Their use should be reserved for true emergency situations.
 
 Break-glass accounts are often shared within a team, so it's hard to trace who has used them and what they did. An alternative approach to break-glass accounts is to adopt Azure AD's Privileged Identity Management (PIM) feature, which allows a user's own account to be temporarily granted a higher level of permission:
 

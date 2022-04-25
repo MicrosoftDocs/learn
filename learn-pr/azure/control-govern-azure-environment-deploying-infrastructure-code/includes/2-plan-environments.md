@@ -4,7 +4,7 @@ In this unit, you'll learn about the benefit of consistently using code for all 
 
 ## Define your infrastructure as code
 
-Azure deployment and configuration covers far more than applications, virtual machines, storage services, networking, and the like. For example, each of the following items is a form of configuration, with corresponding Azure resources:
+Azure deployment and configuration cover far more than applications, virtual machines, storage services, networking, and the like. For example, each of the following items is a form of configuration, with corresponding Azure resources:
 
 - Creating resource groups, subscriptions, and management groups to organize your resources.
 - Defining and applying Azure Policy definitions, initiatives, and assignments to control how other resources should be configured.
@@ -33,7 +33,7 @@ Your development team has their own sets of environments, too - they have **Sand
 
 In some of these environments, it makes sense to require a formal process to review and apply changes. These are *controlled environments*. **Production** should always be a controlled environment. In addition, it's a good practice to apply controls to some of the non-production environments, too. By doing this, you can ensure that any restrictions imposed by the controls are well understood and tested before the production deployment.
 
-In contrast, *uncontrolled environments* don't have many, or any, formal controls. They still might have the same code and similar configuration to your other environments, but they allow for more experimentation and ad hoc configuration changes. In an uncontrolled environment, users might be allowed to modify the configuration by using the Azure portal, and they might be able to create resources without using the organization's approved process. But, changes made in uncontrolled environments must be captured in code before they can start to be applied to controlled environments like **Production**.
+In contrast, *uncontrolled environments* don't have many, or any, formal controls. They still might have the same code and similar configuration to your other environments, but they allow for more experimentation and ad hoc configuration changes. In an uncontrolled environment, users might be allowed to modify the configuration by using the Azure portal or by directly executing Azure CLI/Azure PowerShell commands, and they might be able to create resources without using the organization's approved process. But, changes made in uncontrolled environments must be captured in code before they can start to be applied to controlled environments like **Production**.
 
 > [!NOTE]
 > Sometimes, an *environment* might actually represent multiple physical environments or deployments. For example, when you create ephemeral environments for pull request reviews, you might have multiple such environments active at a single time because your team has multiple pull requests open. But, for the purpose of planning your environments, you can consider them to be equivalent because they have the same characteristics and controls.
@@ -69,7 +69,9 @@ Avoid connecting from one environment to another. For example, don't peer a prod
 
 ## Checks and gates
 
-As your deployment process proceeds, it should run a series of checks to increase your confidence in the deployment. Checks for infrastructure often include:
+As your deployment process proceeds, it should run a series of checks to increase your confidence in the deployment. You need to determine the checks that make sense for each of your environments that your deployments progress through.
+
+Checks for infrastructure often include:
 
 - Code reviews.
 - Deployment of your in-review code to ephemeral environments, and running automated or manual tests against the environment.
@@ -86,7 +88,7 @@ You might run some of these checks multiple times within your deployment process
 > [!TIP]
 > When you design your deployment process, list all of the steps you need to perform for a deployment, no matter how small or obvious.  Be as detailed as you can. You might not choose to automate everything at first, but following this practice will help you to create a blueprint for your automated deployment processes in future.
 
-When automated or manual checks need to succeed in order to continue with a deployment or deploy to a new environment, these are called *gates*.
+A *gate* is an automated or a manual check that must succeed in order to continue with a deployment.
 
 ### Manual intervention
 
@@ -96,11 +98,12 @@ If you use manual approval gates for deployments, follow these recommended pract
 
 > [!div class="checklist"]
 >
-> * **Clearly define who is allowed to approve a deployment.** Use Azure AD groups to define approvers instead of specifying individual users, so that yuo can easily change the list of approvers in the future.
-> * **Ensure you have a process for emergency deployments.** Understand who can approve a deployment if the normal approvers aren't available.
-> * **Limit human intervention to just approving or rejecting the deployment.** Avoid having humans executing the deployment operations, unless there's a step that you can't automate.
+> * **Clearly define who is allowed to approve a deployment.** Use Azure AD groups to define approvers instead of specifying individual users, so that you can easily change the list of approvers in the future.
+> * **Ensure you have a process for emergency deployments.** Plan who can approve a deployment if the normal approvers aren't available, such as for an emergency deployment in the middle of the night or during a vacation period.
+> * **Limit human intervention to just approving or rejecting the deployment.** Avoid requiring humans to execute any of the deployment operations, unless there's a step that you can't automate.
 
 ## Governance
+
 Azure provides a set of tools and capabilities to help you to govern your environment, including:
 
 - Azure Policy, to detect resources that have been configured in ways that don't fit with your organization's requirements, or even to prevent resources from being created or reconfigured in a way that will cause them to be out of compliance.
@@ -108,4 +111,4 @@ Azure provides a set of tools and capabilities to help you to govern your enviro
 - Management groups, to help you organize your Azure subscriptions and configure role-based access control and policies consistently across your environments.
 - Azure Monitor, to record metrics and logs from your resources, present them in dashboards, and automatically alert you when they deviate from your expected values.
 
-When you build your Azure estate, you can consider using the *Azure landing zones*. By using a landing zone, you can build governance into your environment from the start. Many landing zones include prebuilt Bicep files to help you to configure your environment. We link to more information in the summary.
+When you build your Azure estate, you can consider using the *Azure landing zones*. By using a landing zone, you can build governance into your environment from the start. Many landing zones include prebuilt Bicep and Terraform files to help you to configure your environment. We link to more information in the summary.
