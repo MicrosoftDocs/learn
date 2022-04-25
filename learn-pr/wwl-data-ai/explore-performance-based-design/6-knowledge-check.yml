@@ -27,7 +27,7 @@ quiz:
       explanation: "That's incorrect. Star schema would increase the size of your data volume."
     - content: "Third normal form"
       isCorrect: false
-      explanation: "That's incorrect. 3rd normal form wouldn't be a good fit for a data warehouse structure."
+      explanation: "That's incorrect. Third normal form wouldn't be a good fit for a data warehouse structure."
   - content: "What is the minimum number of rows you need to bulk insert into a columnstore index?"
     choices:
     - content: "102,400"
@@ -35,7 +35,7 @@ quiz:
       explanation: "That's correct. 102,400 is the minimum number of rows to bulk insert into a columnstore index, fewer rows will use a normal insert operation."
     - content: "1,000,000"
       isCorrect: false
-      explanation: "That's incorrect. While this row count would be bulk inserted, it is well above the minimum."
+      explanation: "That's incorrect. While this row count would be bulk inserted, it's well above the minimum."
     - content: "1000"
       isCorrect: false
       explanation: "That's incorrect. This row count wouldn't be bulk loaded."
