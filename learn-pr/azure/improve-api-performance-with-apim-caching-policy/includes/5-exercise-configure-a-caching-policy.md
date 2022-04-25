@@ -9,7 +9,7 @@ As the developer for a board game company, you decide to implement caching for t
 
 ## Create a Redis cache
 
-We're using the Consumption tier for Azure API Management in this module. That's because Azure configures API Management instances for this tier within a minute or so. Other tiers can take up to 30 minutes.
+We're using the Consumption tier for Azure API Management, for this module. That's because Azure configures API Management instances for this tier within a minute or so. Other tiers can take up to 30 minutes.
 
 The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. This tier doesn't have its own internal cache. Instead, we need to create an external Redis cache and then configure a caching policy for API Management to use.
 
@@ -17,7 +17,7 @@ Let's create a cache now. Doing this will allow the setup to run behind the scen
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Use the same ID that you used to activate the sandbox.
 
-1. On the Azure portal resource menu, or on the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal **Resource** menu, or on the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the **Create a resource** menu, select **Databases**, and then search for and select **Azure Cache for Redis**. The **New Redis Cache** pane appears.
 
@@ -40,7 +40,7 @@ Let's create a cache now. Doing this will allow the setup to run behind the scen
 
 ## Create a Web API in Azure Apps Service
 
-Now in the sandbox environment create a Web API in Azure Apps Service. We do this by using a two-step process:
+In the sandbox environment, create a Web API in Azure Apps Service. We do this by using a two-step process:
 
 1. In Azure Cloud Shell, clone the sample Web API by running the following command:
 
