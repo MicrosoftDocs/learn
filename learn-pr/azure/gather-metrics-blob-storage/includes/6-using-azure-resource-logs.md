@@ -2,7 +2,7 @@ You're now satisfied that metrics will provide enough statistical information ab
 
 But before you commit to the platform, you want to be sure that can troubleshoot any issues that might occur with files that are shared with the customer. For example, you want to be able to detect if files aren't downloaded successfully. You want to see what troubleshooting information Azure provides, and how to access the log files.
 
-## Storage Analytics logging
+## Resource Logs in Azure Monitor
 
 Sometimes you want to see more detail about storage transactions than performance-related metrics. Metrics are useful for tracking overall trends in performance or demand, but monitoring the transaction metrics can't reveal the requested URLs. Also, none of the available storage metrics can give error messages that relate to a specific request.
 
@@ -26,7 +26,9 @@ When you enable logging, these types of requests are logged:
 
 ## Storage of resource logs in Azure Monitor
 
-When you create a diagnostic setting, you'll choose the type of storage that you want to enable logs for (For example: `blob` or `file`). Then, you'll choose the log categories (For example: read, write, or delete operations). Finally, you'll choose where you would like logs to be sent. You can send log to any of these locations:
+Resource logs are automatically generated for your storage account, but those logs aren't available to be viewed unless you send them to a destination. You specify where to send them by using a diagnostic setting. 
+
+When you create a diagnostic setting, you'll choose the type of storage that you are interested in routing logs for (For example: Blob Storage or File Storage). Then, you'll choose which types of operations you want to appear in logs (For example: read, write, or delete operations). Finally, you'll choose where you would like logs to be sent. You can send log to any of these locations:
 
 - Log Analytics
 - Storage account
@@ -35,9 +37,9 @@ When you create a diagnostic setting, you'll choose the type of storage that you
 You can't set a retention policy. However, you can manage the data retention period of Log Analytics at the workspace level or even specify different retention settings by data type.
 
 You can access logs sent to a Log Analytics workspace by using Azure Monitor log queries.
+
 If you route logs to a storage account, those logs appear as blobs stored to a container. Data is collected and stored inside a single blob as a line-delimited JSON payload. The name of the blob follows this naming convention:
 
 `https://<destination-storage-account>.blob.core.windows.net/insights-logs-<storage-operation>/resourceId=/subscriptions/<subscription-ID>/resourceGroups/<resource-group-name>/providers/Microsoft.Storage/storageAccounts/<source-storage-account>/blobServices/default/y=<year>/m=<month>/d=<day>/h=<hour>/m=<minute>/PT1H.json`
 
 Logs sent to an event hub aren't stored as a file, but you can verify that the event hub received the log information by opening your event hub in the Azure portal, and then examining the incoming messages count.
-
