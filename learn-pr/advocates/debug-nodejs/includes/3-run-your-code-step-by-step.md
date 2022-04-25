@@ -18,15 +18,7 @@ There are multiple ways of defining breakpoints in your code based on your debug
 
 You can add this statement at any point in your code, like this:
 
-### ACTUAL
-
 :::code language="javascript" source="../code/add-debugger-statement.js" highlight="3":::
-
-### BORROWED
-
-:::code language="javascript" source="../code/fix-loop-condition.js" highlight="1":::
-
-Save your changes in the code editor, and then exit the debugger by selecting <kbd>Ctrl+D</kbd>.
 
 
 ## Node.js inspect mode
