@@ -58,7 +58,7 @@ The Hyperscale service tier is intended for customers who have large on-premises
 
 Hyperscale provides the following performance capabilities:
 
-- Nearly instantaneous database backups (based on file snapshots stored in Azure Blob storage) regardless of size with no IO affect on compute resources.
+- Nearly instantaneous database backups (based on file snapshots stored in Azure Blob storage) regardless of size with no IO effect on compute resources.
 - Fast database restores (based on file snapshots) in minutes rather than hours or days (not a size of data operation).
 - Higher overall performance due to higher transaction log throughput and faster transaction commit times regardless of data volumes.
 - Rapid scale out - you can provision one or more read-only replicas for offloading your read workload and for use as hot-standbys.
