@@ -16,7 +16,7 @@ There are always a multitude of design considerations when you build out an appl
 
 * **VM limits**: Your subscription has default quota limits in place that could impact the deployment of many VMs for your project. The current limit on a per subscription basis is 20 VMs per region. Limits can be raised by filing a [support ticket requesting an increase](/azure/azure-portal/supportability/regional-quota-requests).
 
-* **VM image**: You can either use your own image, or you can use one of the images in the Azure Marketplace.  You can get a list of images in the marketplace by using the `az vm image list` command. See [list popular images](https://docs.microsoft.com/azure/virtual-machines/linux/cli-ps-findimage#list-popular-images) for more information on using the command.
+* **VM image**: You can either use your own image, or you can use one of the images in the Azure Marketplace.  You can get a list of images in the marketplace by using the `az vm image list` command. See [list popular images](/azure/virtual-machines/linux/cli-ps-findimage#list-popular-images) for more information on using the command.
 
 * **VM disks**: There are two components that make up this area. The type of disks which determines the performance level and the storage account type that contains the disks. Azure provides two types of disks:
 
