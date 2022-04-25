@@ -1,0 +1,60 @@
+### YamlMime:Module
+uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database-with-database
+metadata:
+  moduleType: standard
+  title: Deploy Express.js data web app to Azure App Service
+  description: "Deploy an Express.js data web app to Azure App Service."
+  ms.date: 03/30/2022
+  author: diberry
+  ms.author: diberry
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.custom: team=devex
+title: Deploy Express.js with a database to Azure App Service
+summary: "Create Azure service resources for an Express.js database web app. Configure and deploy the data web app. "
+abstract: |
+  By the end of this module, you'll be able to:
+    - Configure your Express.js app to connect to a MongoDB database.
+    - Use a local emulator for Cosmos DB.
+    - Create and configure Cosmos DB for MongoDB API.
+    - Deploy an Express.js data web application to Azure.
+    - Understand how to CosmosDB logs.
+prerequisites: |
+  - GitHub user account
+  - Visual Studio Code
+  - Visual Studio Code extension - Azure resource group 
+  - Visual Studio Code extension - Azure App Service extension 
+  - Visual Studio Code extension - Azure Database extension   
+  - JavaScript Express.js web development experience
+  - Familiarity with deployment concepts
+  - Familiarity with cloud security concepts
+  - Forking and cloning GitHub repositories
+  - Deploying code to the cloud
+  - Configuring web apps
+  - Finding and resolving cloud app runtime issues 
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
+  - beginner
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+  - developer
+  - devops-engineer
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
+- azure
+- azure-app-service
+- azure-cosmos-db
+units:
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.introduction
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.add-mongodb-to-app
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-add-mongodb-to-app
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.use-database-emulator
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-use-database-emulator
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.create-cosmosdb-resource
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-create-cosmosdb-resource
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.configure-app-service-connection-to-cosmosdb
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-app-service-connection-to-cosmosdb
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.deploy-expressjs-app
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-deploy-expressjs-app
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.knowledge-check
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.summary
+badge:
+  uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.badge
