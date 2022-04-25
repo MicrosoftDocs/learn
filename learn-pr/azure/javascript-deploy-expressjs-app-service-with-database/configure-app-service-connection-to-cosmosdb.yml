@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.configure-app-service-connection-to-cosmosdb
+title: 
+metadata:
+  unitType: learning-content
+  title:
+  description: "For this module, "
+  ms.date: 05/02/2022
+  author: diberry
+  ms.author: diberry
+  ms.topic: interactive-tutorial
+  ms.prod: developing-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 5
+content: |
+  [!include[](includes/configure-app-service-connection-to-cosmosdb.md)]
