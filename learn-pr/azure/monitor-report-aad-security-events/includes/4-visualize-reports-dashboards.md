@@ -81,28 +81,16 @@ When you export to Excel, you have two choices. You can export the whole report 
 
 Power BI lets you build complex and dynamic reports and dashboards from the data you supply it. From your Log Analytics workspace, you export the report to Power BI by selecting the **Export** dropdown, and then selecting the **Export to Power BI (M query)** option. This sequence doesn't export the data directly, but it builds a complex M query. The Power BI desktop application uses the M query to make a connection to your Azure instance and pull active data from it.
 
-1. Select **Save** to save the report text file to your local computer.
+Select **Save** to save the report text file to your local computer. Then, open the saved file in a text editor. In a moment, you'll copy the content to Power BI.
 
-1. Open the saved file in a text editor. In a moment, you'll copy the content to Power BI.
+Open Power BI Desktop. Select **Get Data**, and then select **Blank Query**. The Power BI query editor appears.
 
-1. Open Power BI Desktop.
-
-1. Select **Get Data**, and then select **Blank Query**.
-
-   The Power BI query editor appears.
-
-1. Select the **View** menu option, and then select **Advanced Editor**.
-
-1. Copy the content from the saved Power BI (M query) file.
-
-1. Paste the **M Language script** into the editor pane.
-
-1. Select **Done**.
+Select the **View** menu option, and then select **Advanced Editor**. Then, opy the content from the saved Power BI (M query) file and paste the **M Language script** into the editor pane. Select **Done**.
 
 Because this query originated in Azure, you'll need to use the **Organizational account** option, and your Azure authentication credentials to grant Power BI access to your Azure instance.
 
 Now that you've created the link, you can select a reporting chart style to represent your data in the way you want.
 
-:::image type="content" source="../media/4-power-bi-analytics-visualize.png" alt-text="Screenshot of a report in the Power BI query editor pane.":::
+:::image type="content" source="../media/power-bi-analytics-visualize.png" alt-text="Screenshot of a report in the Power BI query editor pane.":::
 
 After you've designed the report as you want it, you can select **Publish to Web** to publish it to your Azure Power BI cloud workspace. From there, you can display the report on other webpages as well.

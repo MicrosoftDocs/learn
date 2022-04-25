@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-report-aad-security-events.exercise-set-up-audit-sign-in-logs
+title: Exercise - Set up and view audit logs and sign-in logs
+metadata:
+  title: Exercise - Set up and view audit logs and sign-in logs
+  description: Exercise - Set up and view audit logs and sign-in logs.
+  ms.date: 04/22/2022
+  author: MarkusVi
+  ms.author: markvi
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2a-exercise-set-up-audit-sign-in-logs.md)]

@@ -72,7 +72,7 @@ Even after you've selected all the sign-in columns you're interested in viewing,
 
 To use filters, in the menu bar, select **Add filters**, and then select the filters you want to use.
 
-![Screenshot of the "Add filters" button and the list of filters.](../media/sign-in-activity-filter-list.png)
+:::image type="content" source="../media/sign-in-activity-filter-list.png" alt-text="Screenshot of the Add filters button and the list of filters.":::
 
 Here are a few key filters and what you would use them for:
 
@@ -84,27 +84,23 @@ Here are a few key filters and what you would use them for:
 
 ### Download the sign-in logs
 
-You've determined which columns have the information you want, and you've applied the filters to narrow the data to a specific, manageable subset. Now you can process the data. Although Azure offers some great tools for data visualization and further analysis, you might already use specific applications to process data. With Azure, you can download the sign-in data based on your current filters.
+You've determined which columns have the information you want, and you've applied the filters to narrow the data to a specific, manageable subset of data. Now you can process the data. Although Azure offers some great tools for data visualization and further analysis, you might already use specific applications to process data. With Azure, you can download the sign-in data based on your current filters.
 
-When you download sign-in log records, you're limited to the most recent 250,000 records, based on the filter criteria that you've applied.
+When you download sign-in logs, you're limited to the most recent 250,000 records, based on the filter criteria that you've applied.
 
-To download the data in your view, in the menu bar, select **Download**.
-
-:::image type="content" source="../media/2-sign-in-change-download.png" alt-text="Screenshot of the menu bar with the Download button selected.":::
-
-In the **Download Sign-ins** pane, select a format to use for the data, CSV or JSON. Enter a file name, and then select **Download**.
+To download the data in your view, in the menu bar, select **Download**. In the **Download Sign-ins** pane, select a format to use for the data, CSV or JSON. Enter a file name, and then select **Download**.
 
 ### Sign-in error codes
 
 Analyzing failed sign-ins is key to maintaining a secure and healthy Azure environment. When you review your sign-in log files, you can filter on the status to show only failed sign-ins.  
 
-:::image type="content" source="../media/2-sign-in-status-failure.png" alt-text="Screenshot of the Sign-in status drop-down control, with Failure selected.":::
+:::image type="content" source="../media/sign-in-status-failure.png" alt-text="Screenshot of the Sign-in status drop-down control, with Failure selected.":::
 
 As described earlier, when this filter is applied, the table displays only failed sign-ins.
 
 When you select any sign-in record in the results list, you see a snapshot of the record, including sign-in status, sign-in error code, and the failure reason.  
 
-:::image type="content" source="../media/2-sign-in-failure-codes.png" alt-text="Screenshot of a sign-in failure details pane with the error code and failure reason highlighted.":::
+:::image type="content" source="../media/sign-in-failure-codes.png" alt-text="Screenshot of a sign-in failure details pane with the error code and failure reason highlighted.":::
 
 In the summary unit of this module, you'll find a link to a complete list of error codes. A few example error codes and their official descriptions are listed in the following table:
 
@@ -129,17 +125,13 @@ In the summary unit of this module, you'll find a link to a complete list of err
 
 Audit files provide a history of every task that's done in your Azure AD tenant. Audit logs are maintained for compliance. They keep records of all your system activities. Recent activities might not be included in results for up to an hour after they occur.
 
-### Prerequisites
+### Audit log prerequisites
 
 To access the audit log files, at least one user in your tenant must have a Global Administrator, Report Reader, Security Reader, or Security Administrator role.
 
 ### Structure of an audit log file
 
-Access the audit logs through the Azure portal:
-
-1. In the Azure portal, go to your Azure AD instance.
-
-1. In the left menu under **Monitoring**, select **Audit logs**.
+Access the audit logs through the Azure portal. In the Azure portal, go to your Azure AD instance. In the left menu under **Monitoring**, select **Audit logs**.
 
 Like sign-in logs, you can modify audit logs to meet your specific needs. The default audit log view displays the following columns:
 
@@ -177,12 +169,6 @@ In the **Download Audit Logs** pane, select a format to use for the data, CSV or
 
 You access audit log data through your Azure AD instance. But you can also access the audit log directly through users, groups, and enterprise applications. The data is prefiltered according to the access point that's being used.  If you access the audit logs through users, you see only audit log data that's related to users. The same applies to groups and enterprise applications.
 
-To access the user audit logs from your Azure AD instance:
-
-1. In the left menu under **Manage**, select **Users**.
-
-1. In the left menu under **Activity**, select **Audit logs**:
-
-:::image type="content" source="../media/2-audit-logs-users.png" alt-text="Screenshot of the Users Audit logs option.":::
+To access the user audit logs from your Azure AD instance, in the left menu under **Manage**, select **Users**. Then, under **Activity**, select **Audit logs**.
 
 To access a group's audit logs from your Azure AD instance, select **Groups** in the left menu.

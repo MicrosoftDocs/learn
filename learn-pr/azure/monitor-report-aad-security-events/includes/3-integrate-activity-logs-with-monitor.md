@@ -26,18 +26,11 @@ To use a Log Analytics workspace and Azure Monitor logs, make sure that you have
 
 You know that Azure collects user data in the form of audit and sign-in log files, but the data can't be directly imported into Azure Monitor. First, it needs to be gathered in a Log Analytics workspace. Each workspace is unique and has its own data repository and configuration. When you configure the workspace, you can analyze the data by using log searches and table-based queries.
 
-Creating a Log Analytics workspace is straightforward.
+Creating a Log Analytics workspace is straightforward. In the Azure portal, select **Create resource**. In the **Search** box, enter **log analytics**.
 
-1. In the Azure portal, select **Create resource**. In the **Search** box, enter **log analytics**.
+In the results list, select **Log Analytics Workspace**, and then select **New** to create a new Log Analytics workspace. Select or enter the following details. Select **Create New**, because this workspace is unique to the user who's signing in. Each workspace needs a **Name** that's globally unique among Azure Monitor subscriptions. Select the subscription, and then select the workspace you want to use, such as an existing resource group.
 
-1. In the results list, select **Log Analytics Workspace**, and then select **New** to create a new Log Analytics workspace. Select or enter the following details:
-
-   1. Select **Create New**, because this workspace is unique to the user who's signing in. Each workspace needs a **Name** that's globally unique among Azure Monitor subscriptions.  
-   1. Select the subscription, and then select the workspace you want to use, such as an existing resource group.
-
-   The pricing tier is automatically assigned as **Pay-as-you-go** and is based on a per-gigabyte (GB) cost.
-
-1. Select **Create** to create the workspace.
+The pricing tier is automatically assigned as **Pay-as-you-go** and is based on a per-gigabyte (GB) cost. Select **Create** to create the workspace.
 
 With a Log Analytics workspace created, you can gather and do analytics on your user audit and sign-in data.
 
@@ -49,25 +42,13 @@ To put that into perspective, if your tenant has 1,000 users, your audit log wou
 
 ## Send user logs to the Log Analytics workspace
 
-Now that you've created a Log Analytics workspace, you assign the user audit and sign-in logs. All the data you want to use in Azure Monitor logs must be stored in a Log Analytics workspace.
+Now that you've created a Log Analytics workspace, you assign the user audit and sign-in logs. All the data you want to use in Azure Monitor logs must be stored in a Log Analytics workspace. In the Azure portal, go to your Azure AD instance. Select the **Monitoring** tab, and then select **Diagnostics settings**.
 
-To stream the audit and sign-in logs to your Log Analytics workspace:
+Select **Add diagnostic setting**. Here, you create a connection between the two log files and your Log Analytics workspace.
 
-1. In the Azure portal, go to your Azure AD instance.
+In **Diagnostic setting name**, enter a name to use for the setting. Under **Logs**, for categories, select **AuditLogs** and **SignInLogs**.
 
-1. Select the **Monitoring** tab, and then select **Diagnostics settings**.
-
-1. Select **Add diagnostic setting**.
-
-   Here, you create a connection between the two log files and your Log Analytics workspace.
-
-1. In **Diagnostic setting name**, enter a name to use for the setting.
-
-1. Under **Logs**, for categories, select **AuditLogs** and **SignInLogs**.
-
-1. Select the **Send to Log Analytics** option, and then specify or create a Log Analytics workspace.
-
-1. Select **Save**.  
+Select the **Send to Log Analytics** option, and then specify or create a Log Analytics workspace, and then select **Save**.  
 
 You've now set up a data streaming process that will push audit and sign-in data to the Log Analytics workspace. Because it's a new service, it takes about 15 minutes for any data to appear in the workspace.
 
@@ -174,46 +155,27 @@ AuditLogs
 | sort by auditCount desc
 ```
 
-## Create alerts from your activity log data
+## Use existing workbooks or templates in your Log Analytics workspace
 
-Alerts are similar to queries, but they run automatically in response to specific events. You can set a threshold against the result set, and if it's met, trigger an alert to let you know about it.
+You can use existing workbooks to display common views of your audit and sign-in data. If you don't find a workbook that does what you need, you can begin with a template and modify the query.
 
-1. In the Azure portal, go to your Log Analytics workspace.
+In the Azure portal, go to your Log Analytics workspace. In the left menu under **General**, select **Workbooks**.
 
-1. In the left menu under **Monitoring**, select **Alerts**, and then select **Create alert rule**.
+If you don't find an existing workbook that has the query you need, you can select the **Default template** tile and create a query.
 
-1. Scope is automatically set to your Log Analytics workspace, so select the **Condition** tab.
+If you want to know the most common user event for last week, paste this query in your query editor:
 
-1. In the **Select a signal** pane, for **Signal type**, select **Activity Log**.
+```kusto
+AuditLogs
+| where TimeGenerated >= ago(7d)
+| summarize auditCount = count() by OperationName
+| sort by auditCount desc
+```
 
-1. In **Signal name**, select a name that matches the activity logs you want to monitor.
+In the menu bar, select **Run** to check for results. When you're satisfied that you have the data you want, select **Done editing**, and then select the **Save** icon in the menu bar.
 
-1. Select values for the settings for the alert logic. The alert logic is defined by the condition and the evaluation time. The alert fires when this condition is true. Provide a threshold value for your alert rule and modify the operator and aggregation type to define the logic you need. You can accept the default time granularity or modify it to your requirements. Frequency of evaluation defines how often the alert logic is evaluated. Aggregation granularity defines the time interval over which the collected values are aggregated.
+Enter a descriptive name, like *Common User Events Last 7 days*, and then Select or enter the subscription, resource group, and location you want to use. Select **Save**.
 
-1. You can add more conditions, and then select **Next: Actions >**.
+To view the workbook, in the left menu under **General**, select **Workbooks**. Look for the workbook tile under **Recently modified workbooks**.
 
-1. On the **Actions** tab, if you haven't already created an action group that you want to use, select **Create action group**. Select a subscription and resource group for the action group and give it an action group name that appears in the portal and a display name that appears in email and SMS notifications.
-
-1. Select **Next: Notifications >**.
-
-1. Select a notification type and enter a name for the notification. Enter the details to continue to set up the action group.
-
-1. You can optionally set up actions and tags. Then, select **Review + create**.
-
-1. Review the action group information, and then select **Create**.
-
-1. In **Create an alert rule**, on the **Details** tab, select a subscription and resource group for the alert rule. Enter an alert rule name and optionally enter a description of the alert rule.
-
-1. You can optionally set tags for the alert rule. Then, select **Review + create**.
-
-1. Review the action group information, and then select **Create**.
-
-## View alert rules
-
-When an alert fires, it will send any notifications in its action groups. You can also view the alert in the Azure portal.
-
-In the left menu, select **Alerts**. Any open alerts for the resources are included in the view.
-
-To view alerts that have that severity, select a severity. To view only open alerts, select **Alert state** and clear the **Closed** option.
-
-To view details about an alert, select the name of the alert.
+:::image type="content" source="../media/workbooks-recently-modified.png" alt-text="Screenshot that shows how to find modified workbooks.":::

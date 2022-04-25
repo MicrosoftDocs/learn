@@ -30,7 +30,9 @@ products:
 units:
 - learn.monitor-report-aad-security-events.1-introduction
 - learn.monitor-report-aad-security-events.2-use-logs-detect-suspicious-activity
+- learn.monitor-report-aad-security-events.exercise-set-up-audit-sign-in-logs
 - learn.monitor-report-aad-security-events.3-integrate-activity-logs-with-monitor
+- learn.monitor-report-aad-security-events.exercise-integrate-logs-azure-monitor
 - learn.monitor-report-aad-security-events.4-visualize-reports-dashboards
 - learn.monitor-report-aad-security-events.5-exercise-visualize-reports-dashboards
 - learn.monitor-report-aad-security-events.6-summary
