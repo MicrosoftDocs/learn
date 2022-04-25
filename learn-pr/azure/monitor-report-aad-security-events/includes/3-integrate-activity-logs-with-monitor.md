@@ -28,7 +28,7 @@ You know that Azure collects user data in the form of audit and sign-in log file
 
 Creating a Log Analytics workspace is straightforward. In the Azure portal, select **Create resource**. In the **Search** box, enter **log analytics**.
 
-In the results list, select **Log Analytics Workspace**, and then select **New** to create a new Log Analytics workspace. Select or enter the following details. Select **Create New**, because this workspace is unique to the user who's signing in. Each workspace needs a **Name** that's globally unique among Azure Monitor subscriptions. Select the subscription, and then select the workspace you want to use, such as an existing resource group.
+In the results list, select **Log Analytics Workspace**, and then select **New** to create a new Log Analytics workspace. Select or enter details for the workspace. Select **Create New**, because this workspace is unique to the user who's signing in. Each workspace needs a name that's globally unique among Azure Monitor subscriptions. Select the subscription, and then select the workspace you want to use, such as an existing resource group. Optionally create tags to use for the workspace,
 
 The pricing tier is automatically assigned as **Pay-as-you-go** and is based on a per-gigabyte (GB) cost. Select **Create** to create the workspace.
 

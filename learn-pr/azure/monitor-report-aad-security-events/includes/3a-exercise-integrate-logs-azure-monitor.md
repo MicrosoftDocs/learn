@@ -9,11 +9,13 @@ In this exercise, you create a Log Analytics workspace in your Azure sandbox by 
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. Select **Create resource**. In the **Search** box, enter **log analytics**.
+1. Select **Create resource**.
+
+1. In the **Search** box, enter **log analytics**.
   
    :::image type="content" source="../media/log-analytics-search.png" alt-text="Screenshot of Log Analytics search results.":::
 
-1. In the results list, select **Log Analytics Workspace**, and then select **Create** to create a new Log Analytics workspace. Select or enter the following details:
+1. In the results list, select **Log Analytics Workspace**, and then select **Create**. Select or enter the following details:
 
    1. Under **Project details**, select the subscription to use for your workspace. Select an existing resource group or select **Create new** to create a new resource group.
 
@@ -21,31 +23,27 @@ In this exercise, you create a Log Analytics workspace in your Azure sandbox by 
 
    :::image type="content" source="../media/log-analytics-workspace-add.png" alt-text="Screenshot that shows new Log Analytics workspace options.":::
 
-1. Optionally create tags to use for the workspace, then select **Next : Review + Create >**.
+1. Select **Next : Review + Create >**, and then check the settings. The pricing tier is automatically set to **Pay-as-you-go** and is based on a per-gigabyte (GB) cost.
 
-1. Check the settings. The pricing tier is automatically set to **Pay-as-you-go** and is based on a per-gigabyte (GB) cost.
-
-1. Select **Create** to create the workspace.
-
-You've now created a Log Analytics workspace, where you can gather and do analytics on your user audit and sign-in data.
+1. Select **Create**.
 
 ## Send log files to a Log Analytics workspace
+
+You've now created a Log Analytics workspace, where you can gather and do analytics on your user audit and sign-in data.
 
 To stream the audit and sign-in logs to your Log Analytics workspace:
 
 1. In the Azure portal, go to your Azure AD instance.
 
-1. Select the **Monitoring** tab, and then select **Diagnostic settings**.
-
-1. Select **Add diagnostic setting**.
+1. In the left menu, under **Monitoring**, select **Diagnostic settings**. Select **Add diagnostic setting**.
 
    :::image type="content" source="../media/diagnostic-setting-add.png" alt-text="Screenshot that shows adding a new diagnostic setting.":::
 
 1. In the **Diagnostics setting** pane:
 
-   1. In **Diagnostic setting name**, enter a name for the setting.
-   1. In **Logs**, for **Categories**, select **AuditLogs** and **SignInLogs**.  
-   1. In **Destination details**, select **Send to Log Analytics workspace**. Select or enter the subscription and Log Analytics workspace to use. For this exercise, select the Log Analytics workspace that you created, **ContosoWorkspace** appended with unique characters.
+   1. In **Diagnostic setting name**, enter a name for the setting, like *SendToLogAnalytics*.
+   1. Under **Logs** > **Categories**, select **AuditLogs** and **SignInLogs**.  
+   1. Under **Destination details**, select **Send to Log Analytics workspace**. Select or enter the subscription and Log Analytics workspace to use. For this exercise, select the Log Analytics workspace you created, **ContosoWorkspace** appended with unique characters.
 
    :::image type="content" source="../media/diagnostic-setting-create.png" alt-text="Screenshot that shows the details of a new diagnostic setting.":::
 
@@ -53,13 +51,13 @@ To stream the audit and sign-in logs to your Log Analytics workspace:
 
 ## Use existing workbooks or templates in your Log Analytics workspace
 
-You can use existing workbooks to display common views of your audit and sign-in data. If you don't find a workbook that does what you need, you can begin with a template and modify the query.
+Next, begin with a workbook template to create a workbook to create a query report:
 
 1. In the Azure portal, go to your Log Analytics workspace.
 
 1. In the left menu under **General**, select **Workbooks**.
 
-1. Select the **Default template** tile.
+1. Select the **Default Template** tile.
 
    :::image type="content" source="../media/workbooks-gallery-tiles.png" alt-text="Screenshot that shows a default workbooks template.":::
 
@@ -72,21 +70,22 @@ You can use existing workbooks to display common views of your audit and sign-in
     | sort by auditCount desc
     ```
 
-1. In the menu bar, select **Run**.
+1. In the menu bar, select **Run**, and then select **Done editing**:
 
-   :::image type="content" source="../media/workbooks-new-query.png" alt-text="Screenshot that shows adding a query to a workbooks template and selecting run.":::
+   :::image type="content" source="../media/workbooks-new-workbook.png" alt-text="Screenshot that shows adding a query to a workbooks template and selecting run.":::
 
-1. When you're satisfied that you have the data you want, select **Done editing**, and then select the **Save** icon in the menu bar.
+1. In the menu bar, select **Save**.
 
-      :::image type="content" source="../media/query-save.png" alt-text="Screenshot that shows the Save button for a Log Analytics query.":::
+   :::image type="content" source="../media/query-save.png" alt-text="Screenshot that shows the Save menu option for a Log Analytics query.":::
 
 1. Enter a descriptive name, like *Common User Events Last 7 days*.  
 
-1. Select or enter the subscription, resource group, and location you want to use.
+1. Select or enter the subscription, resource group, and location you want to use. Select **Save**.
 
-1. Select **Save**.
+   :::image type="content" source="../media/query-save-details.png" alt-text="Screenshot that shows details and the Save button for a Log Analytics query.":::
 
-1. To view the workbook, in the left menu under **General**, select **Workbooks**. Look for the workbook tile under **Recently modified workbooks**.
+## View a saved workbook
 
-    :::image type="content" source="../media/workbooks-recently-modified.png" alt-text="Screenshot that shows how to find modified workbooks.":::
+To view the workbook you saved, in the left menu under **General**, select **Workbooks**. Look for the workbook tile under **Recently modified workbooks**.
 
+   :::image type="content" source="../media/workbooks-recently-modified.png" alt-text="Screenshot that shows how to find modified workbooks.":::
