@@ -3,7 +3,7 @@ uid: learn.wwl.consider-message-processing-options-constraints
 metadata:
   title: Consider message processing options and constraints
   description: "This module introduces you to services and service features that can be used with, or as an alternative to, IoT Hub message routing to process messages, and examines IoT Hub message processing limits."
-  ms.date: 12/22/2021
+  ms.date: 04/22/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
