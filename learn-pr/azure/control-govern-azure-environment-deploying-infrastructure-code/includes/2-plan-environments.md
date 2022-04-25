@@ -108,4 +108,4 @@ Azure provides a set of tools and capabilities to help you to govern your enviro
 - Management groups, to help you organize your Azure subscriptions and configure role-based access control and policies consistently across your environments.
 - Azure Monitor, to record metrics and logs from your resources, present them in dashboards, and automatically alert you when they deviate from your expected values.
 
-When you build your Azure estate, you can consider using the *Azure landing zones*. By using a landing zone, you can build governance into your environment from the start. Many landing zones include prebuilt Bicep files to help you to configure your environment. We link to more information in the summary.
+When you build your Azure estate, you can consider using the *Azure landing zones*. By using a landing zone, you can build governance into your environment from the start. Many landing zones include prebuilt Bicep and Terraform files to help you to configure your environment. We link to more information in the summary.
