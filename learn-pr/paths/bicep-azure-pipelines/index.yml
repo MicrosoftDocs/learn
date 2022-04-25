@@ -4,7 +4,7 @@ metadata:
   title: Deploy Azure resources by using Bicep and Azure Pipelines
   description: Learn how to use Azure Pipelines to deploy your Bicep code in an automated way.
   brand: azure
-  ms.date: 10/26/2021
+  ms.date: 04/04/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
@@ -21,6 +21,7 @@ summary: |
   * Ensure your Bicep code quality by validating and testing it within your pipeline.
   * Work with multiple environments, and handle parameters and approvals.
   * Deploy other Azure configuration settings, applications, and databases.
+  * Build pipelines that publish reusable Bicep files to template specs and modules.
 
   [!include[](../../includes/bicep-paths.md)]
 prerequisites: |
@@ -41,5 +42,6 @@ modules:
 - learn.azure.test-bicep-code-using-azure-pipelines
 - learn.azure.manage-multiple-environments-using-bicep-azure-pipelines
 - learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines
+- learn.azure.publish-reusable-bicep-code-using-azure-pipelines
 trophy:
   uid: learn.bicep-pipelines-azdo.trophy

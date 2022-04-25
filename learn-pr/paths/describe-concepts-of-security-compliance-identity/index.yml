@@ -3,7 +3,7 @@ uid: learn.wwl.describe-concepts-of-security-compliance-identity
 metadata:
   title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity'
   description: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the concepts of security, compliance, and identity'
-  ms.date: 10/29/2021
+  ms.date: 04/13/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -12,8 +12,8 @@ title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the 
 prerequisites: |
   - Recommended learning:  [Describe the basic concepts of cybersecurity](/learn/paths/describe-basic-concepts-of-cybersecurity/)
 summary: |
-  Learn about core concepts, principles, and methodologies that are foundational to security, compliance, and identity solutions, including Zero-Trust, shared responsibility, the role of identity providers, and more.
-    
+  Learn about core concepts that are foundational to security, compliance, and identity solutions, including shared responsibility, Zero Trust, data residency, the role of identity providers, and more.
+  
   Here are all the learning paths in preparation for the SC-900 exam: Microsoft Security, Compliance, and Identity Fundamentals.
   :::row:::
   :::column:::

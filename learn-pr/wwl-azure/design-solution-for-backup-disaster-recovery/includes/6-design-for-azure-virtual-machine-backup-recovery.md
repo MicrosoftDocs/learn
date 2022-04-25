@@ -10,7 +10,7 @@ An Azure backup job consists of two phases. First, a virtual machine snapshot is
 
 
 > [!NOTE]
-> A recovery point is considered created only after both steps are completed. The recovery point is used to perform a restore. 
+> A recovery point is created only after both steps are completed. The recovery point is used to perform a restore. 
 
  
 

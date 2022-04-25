@@ -15,18 +15,18 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
 
 ## Before we start
 
-Let's assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure no other clusters or resources are already created:
+[!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+Before creating a new cluster, run the following commands to create a resource group. Update the LOCATION variable with the region closest to you; for example, `eastus`:
 
 ```azurecli-interactive
-export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+export RESOURCE_GROUP=rg-ship-manager
 export CLUSTER_NAME=ship-manager-cluster
+export LOCATION={location}
+az group create --location $LOCATION --name $RESOURCE_GROUP
 ```
 
-```azurecli-interactive
-az aks show -n $CLUSTER_NAME -g $RESOURCE_GROUP
-```
-
-If the list is empty, create your AKS cluster by running the following command in a Cloud Shell environment:
+Then, create your AKS cluster by running the following command in a Cloud Shell environment:
 
 ```azurecli-interactive
 az aks create \
@@ -38,7 +38,7 @@ az aks create \
  --enable-addons http_application_routing
 ```
 
-If the list is not empty, or after your cluster is created, get the administration config:
+After your cluster is created, get the administration config:
 
 ```azurecli-interactive
 az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
@@ -206,7 +206,7 @@ Let's create the application and apply the secret to this application.
 1. Let's add the Ingress so that we can access the application. Below the last three dashes, add the following code:
 
     ```yaml
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-backend
@@ -219,9 +219,12 @@ Let's create the application and apply the secret to this application.
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: ship-manager-backend
-                  servicePort: http
+                  service:
+                    name: ship-manager-backend
+                    port:
+                      name: http
     ```
 
 1. Save and close the file.
@@ -229,7 +232,7 @@ Let's create the application and apply the secret to this application.
 1. Apply the changes by running the following command:
 
     ```bash
-    kubectl apply -f backend-application.yaml`.
+    kubectl apply -f backend-application.yaml
     ```
 
     The changes can take up to five minutes to propagate.
