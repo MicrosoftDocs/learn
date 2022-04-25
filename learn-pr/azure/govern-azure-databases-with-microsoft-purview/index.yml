@@ -32,7 +32,7 @@ roles:
 - database-administrator 
 - data-analyst
 products:
-- microsoft-purview
+- azure-purview
 - sql-server
 units:
 - learn.azure.govern-azure-databases-with-microsoft-purview.1-introduction
