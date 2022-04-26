@@ -54,12 +54,13 @@ The process is to add different prefixes to your package entries in the package.
 
 Here are some patterns that you can configure for major/minor/patch version:
 
-|Pattern | Update level | 
-|---|---|
-|x.0.0 or * (asterisk) &nbsp;&nbsp;&nbsp;&nbsp;| Update to the highest major version.  |
-|1.x.1 or ^ (insert) &nbsp;&nbsp;&nbsp;&nbsp;  | Update to only the minor version.     |
-|1.1.x or ~ (tilde) &nbsp;&nbsp;&nbsp;&nbsp;   | Update to the latest patch version. You can use the pattern "~1.0.0" to update only the patch version. The pattern says to update to the value that's "equal to or greater than in the same range."  |
+|Pattern                    | Update level                          | 
+|---------------------------|---------------------------------------|
+|x.0.0 or *&nbsp;(asterisk) | Update to the highest _major_ version.  |
+|1.x.1 or ^&nbsp;(insert)   | Update to only the _minor_ version.     |
+|1.1.x or ~&nbsp;(tilde)    | Update to the latest _patch_ version. <sup>1</sup>  |
 
+<sup>**1**</sup> You can use the pattern "~1.0.0" to update only the patch version. The pattern causes an update to the value "equal to or greater than in the same range."
 
 ## package-lock.json
 
@@ -95,7 +96,7 @@ The columns in the output include:
 - **Location**: The location of the package dependency. The `outdated` command crawls through all installed packages in the various node_modules folders.
 - **Depended by**: The package that has the dependency.
 
-The recommended workflow is to run these commands, in this order:
+The recommended workflow is to run these commands in this order:
 
 1. Run the `npm outdated` command to list all the outdated packages. This command provides information in the **Wanted**, **Latest**, and **Location** columns.
 1. Run the `npm update <optional package name>` command to update the installed packages. If you run this command with a package name specified, the command tries to update only the specified package. If you don't specify a package, the command tries to update all the packages in the package.json file.

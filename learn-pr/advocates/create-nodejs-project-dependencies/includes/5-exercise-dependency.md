@@ -39,7 +39,7 @@ You're given some code that parses an address from a string. Your task should be
    npm install jest --save-dev
    ```
 
-   Open the package.json file and find the `devDependencies` section. You should see an entry that looks like this example:
+1. After the Jest library installs, open the package.json file and find the `devDependencies` section. You should see an entry that looks like this example:
 
    ```json
    "devDependencies": {
@@ -47,11 +47,19 @@ You're given some code that parses an address from a string. Your task should be
     }
    ```
 
-   Close the file.
+   Notice that the Jest library has an identified development dependency.
+
+1. In the package.json file, find the `scripts` section. Replace the existing `test` action entry with the following code:
+
+   ```json
+   "test": "jest"
+   ```
+
+   Save your changes and close the package.json file.
 
 1. In the terminal, create a new folder named **\_\_tests\_\_**.
 
-1. In the \_\_tests\_\_ folder, create a file named **address-parser.js**. Add the following content to the file:
+1. In the \_\_tests\_\_ folder, create a file named **address-parser.js**, and then add the following content to the file:
 
    ```javascript
    const { parse } = require("../address-parser");
@@ -71,7 +79,7 @@ You're given some code that parses an address from a string. Your task should be
    })
    ```
 
-   The test is written to check the parsing ability of the address-parser.js function. The test ensures the function can correctly parse out the needed information.
+   Save your changes and close the file.
 
    Your project structure should now look like this example:
 
@@ -82,13 +90,7 @@ You're given some code that parses an address from a string. Your task should be
    ---| address-parser.js
    ```
 
-1. Open the package.json file and find the `scripts` section. Replace the existing `test` action entry with the following code:
-
-   ```json
-   "test": "jest"
-   ```
-
-   Save your changes and close the package.json file.
+   The test script checks the parsing ability of the address-parser.js function. The test ensures the function can correctly parse out the needed information.
 
 1. Run the tests by entering this command in the terminal:
 
