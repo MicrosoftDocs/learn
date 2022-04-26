@@ -10,13 +10,13 @@ Azure Active Directory (Azure AD) captures log information across your entire Az
 
 Activity logs cover all of a user's behaviors and interactions with your network and their assets. You want to pay attention to two types of log files in particular:
 
-- **Sign-in logs**: Hold details about all user activity and the applications that requested them.
-- **Audit logs**: Show what a user or group did while signed in to your network.
+- **Sign-in logs**: Information about sign-ins and how your resources are used by your users
+- **Audit logs**: Information about changes applied to your tenant such as users and group management or updates applied to your tenant’s resources
 
 Security logs represent a list of the exceptions found in the activity logs. Worthy of note are two key log files:
 
-- **Risky sign-ins**: Hold data about user accounts where the sign-in behavior is inconsistent with previous sign-in attempts.
-- **Users flagged for risk**: Show you all users who have been assigned a risky user flag.
+- **Risky sign-ins**: Hold data about user accounts where the sign-in behavior is inconsistent with previous sign-in attempts
+- **Users flagged for risk**: Show you all users who have been assigned a risky user flag
 
 For the moment, though, you're interested in tracking only user sign-ins and activity logs.
 
@@ -26,16 +26,16 @@ Sign-in log files hold a copy of all attempts to sign in to your network.  Howev
 
 You can use sign-in log files to identify:
 
-- Patterns of user sign-in behavior.
-- Trends in user sign-in activity over time.
-- The overall status of all users who access your network.
+- Patterns of user sign-in behavior
+- Trends in user sign-in activity over time
+- The overall status of all users who access your network
 
 ### Prerequisites
 
 Because of the nature of the log data that's captured by the sign-in logs, access is reserved and limited.  To use the sign-in log files, you need:
 
-- An Azure AD Premium or better subscription.
-- At least one user who has a *Global Administrator*, *Report Reader*, *Security Reader*, or *Security Administrator* role or permissions.
+- An Azure AD Premium or better subscription
+- At least one user who has a *Global Administrator*, *Report Reader*, *Security Reader*, or *Security Administrator* role or permissions
 
 ### Structure of a sign-in log file
 
@@ -82,11 +82,11 @@ To use filters, select **Add filters**, and then select the filters you want to 
 
 Here are a few key filters and what you would use them for:
 
-- **User**: Lets you target specific users, by either their name or their user principal name.
-- **Application**: Lets you find sign-in requests made by specific applications.
-- **Status**: Lets you narrow the results to users who successfully signed in and those who failed.
-- **Conditional Access**: Lets you examine whether any applicable Conditional Access policies have been applied.
-- **Date**: Lets you adjust the timeframe of the data you're looking at, from a month to a single day.
+- **User**: Lets you target specific users, by either their name or their user principal name
+- **Application**: Lets you find sign-in requests made by specific applications
+- **Status**: Lets you narrow the results to users who successfully signed in and those who failed
+- **Conditional Access**: Lets you examine whether any applicable Conditional Access policies have been applied
+- **Date**: Lets you adjust the timeframe of the data you're looking at, from a month to a single day
 
 ### Download the sign-in logs
 

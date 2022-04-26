@@ -12750,6 +12750,31 @@
       "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-database-authentication-authorization/6-explain-execute-user.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-database-authentication-authorization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-database-authentication-authorization/8-exercise-authorize-access-sql-database-azure-active-directory.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-database-authentication-authorization/7-exercise-authorize-access-sql-database-azure-active-directory",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-database-authentication-authorization/7-explain-policy-least-privilege.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-database-authentication-authorization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-database-authentication-authorization/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-database-authentication-authorization/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-database-authentication-authorization/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-database-authentication-authorization/9-summary",
+      "redirect_document_id": true
     }
   ]
 }

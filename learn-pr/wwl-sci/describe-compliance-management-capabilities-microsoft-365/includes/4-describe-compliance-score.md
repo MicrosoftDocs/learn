@@ -1,3 +1,6 @@
+> [!NOTE]
+> Microsoft 365 compliance is now called Microsoft Purview and the solutions within the compliance area have been rebranded. Microsoft Compliance Manager is now Microsoft Purview Compliance Manager. For more information about Microsoft Purview, see the [blog announcement](https://www.microsoft.com/security/blog/2022/04/19/the-future-of-compliance-and-data-governance-is-here-introducing-microsoft-purview/)
+
 Compliance score measures progress in completing recommended improvement actions within controls. The score can help an organization to understand its current compliance posture. It also helps organizations to prioritize actions based on their potential to reduce risk.
 
 Admins can get a breakdown of the compliance score in the Compliance Manager overview pane.
@@ -28,6 +31,6 @@ Organizations accumulate points for every action completed. And the compliance s
 
 ### What is the difference between Compliance Manager and compliance score?
 
-Compliance Manager is an end-to-end solution in Microsoft 365 compliance center to enable admins to manage and track compliance activities.  Compliance score is a calculation of the overall compliance posture across the organization. The compliance score is available through Compliance Manager.
+Compliance Manager is an end-to-end solution in the Microsoft Purview compliance portal to enable admins to manage and track compliance activities.  Compliance score is a calculation of the overall compliance posture across the organization. The compliance score is available through Compliance Manager.
 
 Compliance Manager gives admins the capabilities to understand and increase their compliance score, so they can ultimately improve the organization’s compliance posture and help it to stay in line with compliance requirements.
