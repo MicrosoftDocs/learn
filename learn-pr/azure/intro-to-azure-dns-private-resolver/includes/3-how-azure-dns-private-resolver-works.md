@@ -16,11 +16,10 @@
         * Control actions
         * Logic Apps Designer"
 -->
-TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+Suppose you run all your workloads natively on Azure and register your Virtual Machine DNS records, and Private Endpoint DNS records on Azure Private DNS Zones. You’ll want to connect from on-prem or VPN and for that you need to be able to resolve the names hosted in Azure Private DNS Zones. 
+
+You would provision Azure DNS Private Resolver on an Azure Virtual Network, provision an inbound endpoint which will have a private IP address from your Virtual Network address space and conditionally forward your queries from on-prem to this IP address. This will enable you to resolve DNS names with a native cloud service. 
+
 
 <!-- 2. Chunked content-------------------------------------------------------------------------------------
 
