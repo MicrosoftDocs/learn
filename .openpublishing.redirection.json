@@ -12775,6 +12775,11 @@
       "source_path": "learn-pr/wwl-data-ai/configure-database-authentication-authorization/10-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-database-authentication-authorization/9-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/4-describe-azure-purview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-resource-governance-capabilities-azure/4-describe-microsoft-purview",
+      "redirect_document_id": true
     }
   ]
 }
