@@ -54,11 +54,11 @@ The process is to add different prefixes to your package entries in the package.
 
 Here are some patterns that you can configure for major/minor/patch version:
 
-|Pattern                    | Update level                              | 
-|---------------------------|-------------------------------------------|
-|`*` (asterisk) or `x.0.0`  | Update to the highest major version.  |
-|`^` (insert) or `1.x.1`    | Update to only the minor version.     |
-|`~` (tilde) or `1.1.x`     | Update to the latest patch version. If you want only the patch version to update, use the pattern `~1.0.0`, which means "equal to or greater than in the same range."  |
+|Pattern | Update level | 
+|---|---|
+|x.0.0 or * (asterisk) &nbsp;&nbsp;&nbsp;&nbsp;| Update to the highest major version.  |
+|1.x.1 or ^ (insert) &nbsp;&nbsp;&nbsp;&nbsp;  | Update to only the minor version.     |
+|1.1.x or ~ (tilde) &nbsp;&nbsp;&nbsp;&nbsp;   | Update to the latest patch version. You can use the pattern "~1.0.0" to update only the patch version. The pattern says to update to the value that's "equal to or greater than in the same range."  |
 
 
 ## package-lock.json
@@ -82,20 +82,22 @@ The package-lock.json file also provides other features. It makes it easy to see
 The `npm outdated` command lists outdated packages. This command can help you identify when newer versions of packages are available. Here's a typical output from the command:
 
 ```output
-Package     Current  Wanted   Latest  Location
-lodash        1.0.0   1.0.0  4.17.19  lock-test
-node-fetch    1.2.0   1.2.0    2.6.0  lock-test
+Package       Current    Wanted   Latest     Location     Depended by
+lodash        1.0.0      1.0.0    4.17.19    lock-test    main-code-file
+node-fetch    1.2.0      1.2.0    2.6.0      lock-test    function-code-file
 ```
 
-Here are the meanings of the names of the columns in the output:
-
-- Wanted: The latest version that matches the semantic pattern you specified in the package.json file.
-- Latest: The latest version of the package.
-- Location: The package that has the dependency. The `outdated` command crawls through all installed packages in the various node_modules folders.
+The columns in the output include:
+- **Package**: The outdated package.
+- **Current**: The current installed version of the package.
+- **Wanted**: The latest version that matches the semantic pattern you specified in the package.json file.
+- **Latest**: The latest version of the package.
+- **Location**: The location of the package dependency. The `outdated` command crawls through all installed packages in the various node_modules folders.
+- **Depended by**: The package that has the dependency.
 
 The recommended workflow is to run these commands, in this order:
 
-1. Run the `npm outdated` command to list all the outdated packages. This command provides information in the Wanted, Latest, and Location columns.
+1. Run the `npm outdated` command to list all the outdated packages. This command provides information in the **Wanted**, **Latest**, and **Location** columns.
 1. Run the `npm update <optional package name>` command to update the installed packages. If you run this command with a package name specified, the command tries to update only the specified package. If you don't specify a package, the command tries to update all the packages in the package.json file.
 
 ## Manage security issues
