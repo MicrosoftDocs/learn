@@ -12,7 +12,7 @@ title: Plan and implement data platform resources
 prerequisites: |
   - Familiarity with on-premises virtualization technologies, including: VMs, virtual networking, and virtual hard disks.
   - Familiarity with network configuration, including TCP/IP, Domain Name System (DNS), virtual private networks (VPNs), firewalls, and encryption technologies.
-  - Ability to create a on-premises SQL Server database, including the configuration  of data files and log files.
+  - Ability to create an on-premises SQL Server database, including the configuration  of data files and log files.
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal.
 summary: |
