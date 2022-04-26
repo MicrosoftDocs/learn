@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.azure.govern-azure-databases-with-microsoft-purview
+metadata:
+  title: 'Govern data from Azure databases with Microsoft Purview'
+  description: Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and Software-as-a-Service (SaaS) data.
+  ms.date: 4/19/2022
+  author: stamatm
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Govern data from Azure databases with Microsoft Purview'
+summary: Govern data from Azure databases with Microsoft Purview.
+abstract:  | 
+  After completing this module, you’ll be able to:
+  - Govern and manage data from Azure SQL Database by using Microsoft Purview.
+  - Govern and manage data from an Azure SQL Database managed instance by using Microsoft Purview.
+
+prerequisites: |
+  To get the best learning experience from this module, you should have:
+  - Knowledge of Azure services
+  - Knowledge of various data sources such as Azure SQL database and Azure SQL database managed instances 
+  - Knowledge of the concepts around data governance
+
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- data-engineer
+- solution-architect 
+- database-administrator 
+- data-analyst
+products:
+- microsoft-purview
+- sql-server
+units:
+- learn.azure.govern-azure-databases-with-microsoft-purview.1-introduction
+- learn.azure.govern-azure-databases-with-microsoft-purview.2-discover-govern-data-different-sources-using-microsoft-purview
+- learn.azure.govern-azure-databases-with-microsoft-purview.3-govern-manage-data-sql-server
+- learn.azure.govern-azure-databases-with-microsoft-purview.4-govern-manage-data-from-amazon-relational-database-service
+- learn.azure.govern-azure-databases-with-microsoft-purview.5-knowledge-check
+- learn.azure.govern-azure-databases-with-microsoft-purview.6-summary
+badge:
+  uid: learn.azure.govern-azure-databases-with-microsoft-purview.badge 
