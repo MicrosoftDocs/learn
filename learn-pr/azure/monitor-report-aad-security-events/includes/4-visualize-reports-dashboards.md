@@ -18,7 +18,7 @@ Now that you've created a dashboard, you need to add a query report to it. It mi
 
 ### Build a dashboard query
 
-From the Log Analytics workspace, create a new query. Let's suppose you want to identify the most common user event for the last week. You would use a query like this one:
+In your Log Analytics workspace, create a new query. Let's suppose you want to identify the most common user event for the last week. You would use a query like this one:
 
 ```kusto
 AuditLogs
@@ -27,61 +27,48 @@ AuditLogs
 | sort by auditCount desc
 ```
 
-1. In the Azure portal, select **All resources**.
+To build the dashboard, first, go to your logs in your Log Analytics workspace. In the left menu under **General**, select **Logs**.
 
-1. Select the Log Analytics workspace you created earlier.
+You want to know the most common user event for last week, so in your query editor, paste the query. Select **Run** to ensure that the query returns data.
 
-1. Under **General**, select **Logs**.
+When you're satisfied that you have the data you want, select **Done editing**, and then save the query with a name, subscription, resource group, and location.
 
-1. For this exercise, you want to know the most common user event for last week. In your query editor, paste the following query.
+## Pin query results to a dashboard
 
-    ```kusto
-    AuditLogs
-    | where TimeGenerated >= ago(7d)
-    | summarize auditCount = count() by OperationName
-    | sort by auditCount desc
-    ```
+You can pin query results to the dashboard so that they are easy to find and share:
 
-1. In the menu bar, select **Run** to ensure that the query returns data.
+In your Log Analytics workspace, under **General**, select **Logs**. In the **Queries** dialog, search for the query you created and run the query.
 
-1. When you're satisfied that you have the data you want, select **Done editing**, and then select the **Save** icon in the menu bar.
+To pin query results to a dashboard, in the menu bar, select the **Pin** icon. Select the options you want to use, and select a dashboard. Select **Pin**.
 
-    :::image type="content" source="../media/4-save-query.png" alt-text="Screenshot of the Save and Pin to dashboard buttons for a Log Analytics query.":::
+You can go to the dashboard to view your analytics results.
 
-1. Enter a descriptive name, like *Common User Events Last 7 days*.  
+## Export a report from a dashboard
 
-1. Select or enter the subscription, resource group, and location you want to use.
+When you're satisfied with the report, you can export it to Excel or the Power BI Desktop application. 
 
-1. Select **Save**.
+In a report tile on a dashboard, select the **Open in Logs blade** icon:
 
-## Export reports
+:::image type="content" source="../media/report-open-logs-view.png" alt-text="Screenshot that shows the Open in Logs blade icon.":::
 
-When you're satisfied with the report, you can export it to Excel or the Power BI Desktop application. In the log query view, select the **Export** dropdown, and then select one of these options:
+Run the log query, and then select the **Export** dropdown. Select an export options:
 
 - **Export to CSV - all columns**
 - **Export to CSV - displayed columns**
 - **Export to Power BI (M query)**
 - **Open in Excel**
 
-:::image type="content" source="../media/4-export-options.png" alt-text="Screenshot of the options in the Export dropdown.":::
-
-### Export a report to Excel
-
-When you export to Excel, you have two choices. You can export the whole report or selected columns. This action exports all the result set data for the query you've built. You can save the CSV file to your local computer.
-
 ### Export a report to Power BI (M query)
 
-Power BI lets you build complex and dynamic reports and dashboards from the data you supply it. From your Log Analytics workspace, you export the report to Power BI by selecting the **Export** dropdown, and then selecting the **Export to Power BI (M query)** option. This sequence doesn't export the data directly, but it builds a complex M query. The Power BI desktop application uses the M query to make a connection to your Azure instance and pull active data from it.
+You can use Power BI to build complex and dynamic reports and dashboards from the data you supply it. In your Log Analytics workspace, export the report to Power BI by selecting the **Export** dropdown, and then selecting the **Export to Power BI (M query)** option. This sequence doesn't export the data directly, but it builds a complex M query. The Power BI desktop application uses the M query to make a connection to your Azure instance and pull active data from it.
 
-Select **Save** to save the report text file to your local computer. Then, open the saved file in a text editor. In a moment, you'll copy the content to Power BI.
+Select **Save** to save the report text file to your local computer. Then, open the saved file in a text editor. In a moment, you'll copy the content to Power BI. In Power BI Desktop, select **Get Data**, and then select **Blank Query**. 
 
-Open Power BI Desktop. Select **Get Data**, and then select **Blank Query**. The Power BI query editor appears.
+In the Power BI query editor, select the **View** menu option, and then select **Advanced Editor**. Then, copy the content from the saved Power BI (M query) file and paste the **M Language script** into the editor pane.
 
-Select the **View** menu option, and then select **Advanced Editor**. Then, opy the content from the saved Power BI (M query) file and paste the **M Language script** into the editor pane. Select **Done**.
+Because this query originated in Azure, you'll need to use the **Organizational account** option and your Azure authentication credentials to give Power BI access to your Azure instance.
 
-Because this query originated in Azure, you'll need to use the **Organizational account** option, and your Azure authentication credentials to grant Power BI access to your Azure instance.
-
-Now that you've created the link, you can select a reporting chart style to represent your data in the way you want.
+Then, select a reporting chart style to represent your data in the way you want. The following screenshot shows an example:
 
 :::image type="content" source="../media/power-bi-analytics-visualize.png" alt-text="Screenshot of a report in the Power BI query editor pane.":::
 

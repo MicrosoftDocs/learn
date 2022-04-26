@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which one of the following is a valid prebuilt view that you can download and install in your Log Analytics workspace?'
+  - content: 'Which Azure resource do you use to create a dashboard?'
     choices:
-    - content: Audit Events
+    - content: Log Analytics
       isCorrect: false
-      explanation: There are only two downloadable prebuilt views. Audit Events isn't one of them.
-    - content: Azure AD Account Auditing Events
+      explanation: You use Log Analytics to create queries that you can pin to a dashboard, but you don't create a dashboard in the Log Analytics workspace.
+    - content: Azure Active Directory
       isCorrect: false
-      explanation: There are only two downloadable prebuilt views. Azure AD Account Auditing Events isn't one of them.
-    - content: Sign-ins Events
+      explanation: You use data that's collected in your Azure Active Directory tenant to create queries you can pin to a dashboard, but you don't create a dashboard in Azure Active Directory.
+    - content: Your Azure subscription
       isCorrect: true
-      explanation: Sign-ins Events and Azure AD Account Provisioning Events are the two prebuilt views you can download and install in your Log Analytics workspace.
-  - content: 'When you export reports, which one of the following is not a supported export type?'
+      explanation: A dashboard is created for your Azure subscription. You can pin resources from different Azure resources to a dashboard you create for your Azure subscription.
+  - content: 'When you export reports, which one of the following is a supported export type?'
     choices:
     - content: Excel
-      isCorrect: false
-      explanation: You can export your report data as a CSV file to Excel.
-    - content: PowerPoint
       isCorrect: true
-      explanation: You can export your report data to either Excel or Power BI.
-    - content: Power BI
+      explanation: You can export your report data as an Excel file.
+    - content: PowerPoint
       isCorrect: false
-      explanation: You can export your report data to Power BI.
+      explanation: You can't export your report data to PowerPoint.
+    - content: Power BI in an Office 365 subscription
+      isCorrect: false
+      explanation: You can export your report data to Power BI Desktop, but you can't use the data directly in a Power BI subscription to Office 365.

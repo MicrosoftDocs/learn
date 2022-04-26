@@ -1,12 +1,9 @@
-So far, you've learned about the various user-based logging methods provided by Azure. You've learned how to route the audit and sign-in data to an Azure Log Analytics workspace. Also, you've seen how to use this data to create various views and reports for your security team.
-
 In this exercise, you implement a dashboard for the security team, so they can see the potential of Azure Monitor logs and alerting to help them better understand user behavior. You'll do these tasks:
 
 - Create a security dashboard
-- Pin a workbook to a dashboard
 - Build a query for the dashboard
-- Pin query results to a dashboard
-- Edit or customize an item in a dashboard
+- Pin query results to your dashboard
+- Edit or customize an item in your dashboard
 - Export a report to Excel
 
 > [!NOTE]
@@ -40,24 +37,6 @@ In this exercise, you implement a dashboard for the security team, so they can s
 
     :::image type="content" source="../media/dashboard-share-access.png" alt-text="Screenshot of the Sharing + access control pane.":::
 
-## Pin a workbook to a dashboard
-
-Next, pin a workbook to a dashboard so that it's easy to find or to share it with other users:
-
-1. To pin a workbook to a dashboard, in the left menu under **General**, select **Workbooks**. Open the workbook you want to pin.
-
-1. In the menu bar, select the **Pin** icon.
-
-1. In the **Pin to dashboard** pane, select the options you want to use. For this exercise, select **SecurityDashboard**, the dashboard you created.
-
-    :::image type="content" source="../media/workbook-pin.png" alt-text="Screenshot of pinning workbook.":::
-
-1. Select **Pin**.
-
-1. Go to the dashboard to view your analytics results.
-
-   :::image type="content" source="../media/dashboard-view.png" alt-text="Screenshot of the updated dashboard with the edited name and the Edit button highlighted.":::
-
 ## Build a query for the dashboard
 
 To build a query for a dashboard:
@@ -89,7 +68,7 @@ To build a query for a dashboard:
 
 1. Select **Save**.
 
-## Pin query results to a dashboard
+## Pin query results to your dashboard
 
 Next, pin query results to the dashboard you created:
 
@@ -107,7 +86,7 @@ Next, pin query results to the dashboard you created:
 
 1. Go to the dashboard to view your analytics results.
 
-## Edit or customize an item in a dashboard
+## Edit or customize a report in your dashboard
 
 To change the title of an item in a dashboard or change the dashboard view:
 

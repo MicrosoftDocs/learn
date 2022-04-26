@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-report-aad-security-events.exercise-integrate-logs-azure-monitor
+uid: learn.monitor-report-aad-security-events.exercise-set-alerts
 metadata:
-  title: Exercise - Integrate audit logs and sign-in logs with Azure Monitor
-  description: Exercise - Integrate audit logs and sign-in logs with Log Analytics workspace in Azure Monitor.
+  title: Exercise - Set an alert in your Log Analytics workspace
+  description: Exercise - Set and view an alert in your Log Analytics workspace.
   ms.date: 04/22/2022
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Integrate audit logs and sign-in logs with Azure Monitor
+title: Exercise - Set an alert in your Log Analytics workspace
 durationInMinutes: 10
 content: |
-  [!include[](includes/3a-exercise-integrate-logs-azure-monitor.md)]
+  [!include[](includes/3c-exercise-set-alerts.md)]

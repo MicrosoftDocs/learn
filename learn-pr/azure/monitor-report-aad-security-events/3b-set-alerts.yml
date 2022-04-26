@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-report-aad-security-events.3-integrate-activity-logs-with-monitor
+uid: learn.monitor-report-aad-security-events.set-alerts
 metadata:
   title: Integrate activity logs with Azure Monitor logs
   description: Integrate activity logs with Azure Monitor logs.
@@ -11,29 +11,4 @@ metadata:
 title: Integrate activity logs with Azure Monitor logs
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-integrate-activity-logs-with-monitor.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: 'What are the two types of queries you can write in Azure Monitor?'
-    choices:
-    - content: Kusto and search-based
-      isCorrect: false
-      explanation: Kusto is the query language used by Azure Monitor to build queries.
-    - content: Table-based and Kusto
-      isCorrect: false
-      explanation:  Kusto is the query language used by Azure Monitor to build queries.
-    - content: Table-based and search-based
-      isCorrect: true
-      explanation: You can run both table-based and search-based queries in Azure Monitor.
-  - content: 'What query filter command would you use to get *n* rows in no specific order?'
-    choices:
-    - content: sort by
-      isCorrect: false
-      explanation: Use sort by to order the result set.
-    - content: take
-      isCorrect: true
-      explanation: Use take on small datasets. It returns *n* rows from the result set in no specific order.
-    - content: top
-      isCorrect: false
-      explanation: Top returns the top *n* rows of the result set.
+  [!include[](includes/3b-set-alerts.md)]
