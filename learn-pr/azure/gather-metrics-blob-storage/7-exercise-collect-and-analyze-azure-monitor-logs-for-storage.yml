@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.gather-metrics-from-blob-storage.7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs
-title: Exercise - Use the Azure portal to enable logging
+uid: learn.azure.gather-metrics-from-blob-storage.7-exercise-collect-and-analyze-azure-monitor-logs-for-storage
+title: Exercise - Use the Azure portal to collect and analyze Azure resource logs
 metadata:
-  title: Exercise - Use the Azure portal to enable logging
+  title: Exercise - Use the Azure portal to collect and analyze Azure resource logs
   description: Use the Azure portal to enable logging.
   ms.date: 04/25/2022
   author: normesta

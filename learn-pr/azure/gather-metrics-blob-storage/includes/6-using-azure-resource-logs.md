@@ -33,8 +33,7 @@ When you create a diagnostic setting, you'll choose the type of storage that you
 - Log Analytics
 - Storage account
 - Event hub
-
-You can't set a retention policy. However, you can manage the data retention period of Log Analytics at the workspace level or even specify different retention settings by data type.
+- A partner solution
 
 You can access logs sent to a Log Analytics workspace by using Azure Monitor log queries.
 
@@ -43,3 +42,7 @@ If you route logs to a storage account, those logs appear as blobs stored to a c
 `https://<destination-storage-account>.blob.core.windows.net/insights-logs-<storage-operation>/resourceId=/subscriptions/<subscription-ID>/resourceGroups/<resource-group-name>/providers/Microsoft.Storage/storageAccounts/<source-storage-account>/blobServices/default/y=<year>/m=<month>/d=<day>/h=<hour>/m=<minute>/PT1H.json`
 
 Logs sent to an event hub aren't stored as a file, but you can verify that the event hub received the log information by opening your event hub in the Azure portal, and then examining the incoming messages count.
+
+You can also send platform metrics and logs to certain Azure Monitor partners. You must first install a partner integration into your subscription. Configuration options will vary by partner.
+
+You can't set a retention policy for log data. If you send logs to Log Analytics, you can manage the data retention period at the workspace level or even specify different retention settings by data type. If you archive logs to a storage account, you can manage the retention policy of a log container by defining a lifecycle management policy.
