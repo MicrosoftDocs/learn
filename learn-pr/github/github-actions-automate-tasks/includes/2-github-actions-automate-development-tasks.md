@@ -2,9 +2,9 @@ Here, you're introduced to GitHub Actions and workflows. You learn the types of 
 
 ## GitHub decreases time from idea to deployment
 
-GitHub is designed to help teams of developers and DevOps engineers build and deploy applications quickly.  There are many features in GitHub that enable this, but they generally fall into one of two categories:
+GitHub is designed to help teams of developers and DevOps engineers build and deploy applications quickly. There are many features in GitHub that enable this, but they generally fall into one of two categories:
 
-- **Communication** - Consider all of the ways that GitHub makes it easy for a team of developers to communicate about the software development project: code reviews in pull requests, GitHub issues, project boards, wikis, notifications, and so on.  
+- **Communication** - Consider all of the ways that GitHub makes it easy for a team of developers to communicate about the software development project: code reviews in pull requests, GitHub issues, project boards, wikis, notifications, and so on. 
 - **Automation** - GitHub Actions enables your team to automate workflows at every step in the software development process, from integration to delivery to deployment, or even adding labels to pull requests and checking for stale issues and pull requests.
 
 When combined, these features have enabled thousands of development teams to effectively decrease the amount of time it takes from their initial idea to deployment.
@@ -13,7 +13,7 @@ When combined, these features have enabled thousands of development teams to eff
 
 In this module, we focus on automation, so let's take a moment to understand how teams can use automation to reduce the amount of time it takes to complete a typical development and deployment workflow.
 
-Consider all of the tasks that must happen *after* the code is written, but before the code can be reliably used for its intended purpose.  Depending on your organization's goals, you will likely need to perform one or more of the following tasks:
+Consider all of the tasks that must happen *after* the code is written, but before the code can be reliably used for its intended purpose. Depending on your organization's goals, you'll likely need to perform one or more of the following tasks:
 
 - Ensure the code passes all unit tests
 - Perform code quality and compliance checks to ensure the source code meets the organization's standards
@@ -25,23 +25,23 @@ Consider all of the tasks that must happen *after* the code is written, but befo
 - Deploy the new binaries to one or more servers
 - If any of these tasks do not pass, report the issue to the proper individual or team for resolution
 
-The challenge is to do these tasks reliably, consistently, and in a sustainable manner: this is an ideal job for workflow automation.  If you're already relying on GitHub, you'll likely want to set up your workflow automation using GitHub Actions.
+The challenge is to do these tasks reliably, consistently, and in a sustainable manner: this is an ideal job for workflow automation. If you're already relying on GitHub, you'll likely want to set up your workflow automation using GitHub Actions.
 
 ## What is GitHub Actions?
 
-*GitHub Actions* are packaged scripts to automate tasks in a software development workflow in GitHub.  GitHub Actions can be configured to trigger complex workflows that meet your organization's needs: each time developers check new source code into a specific branch, at timed intervals, or manually.  The result is a reliable and sustainable automated workflow, which leads to a significant decrease in development time.
+*GitHub Actions* are packaged scripts to automate tasks in a software development workflow in GitHub. GitHub Actions can be configured to trigger complex workflows that meet your organization's needs: each time developers check new source code into a specific branch, at timed intervals, or manually. The result is a reliable and sustainable automated workflow, which leads to a significant decrease in development time.
 
 ## Where can you find GitHub Actions?
 
-GitHub Actions are scripts that adhere to a yml data format.  Each repository has an **Actions** tab that provides a quick and easy way to get started with setting up your first script.  If you see a workflow that you think might be a great starting point, you simply need to click the **Set up this workflow** button to add the script and begin editing the source yml.
+GitHub Actions are scripts that adhere to a yml data format. Each repository has an **Actions** tab that provides a quick and easy way to get started with setting up your first script. If you see a workflow that you think might be a great starting point, just select the **Set up this workflow** button to add the script and begin editing the source yml.
 
 :::image type="content" source="../media/github-actions-automate-development-tasks-01.png" alt-text="Screenshot of the GitHub Actions *Actions tab* displaying a simple workflow and a button to set up this workflow.":::
 
 However, beyond those GitHub Actions featured on the Actions tab, you can:
 
 - Search for GitHub Actions in the [GitHub Marketplace](https://github.com/marketplace?type=actions&azure-portal=true). The GitHub Marketplace allows you to discover and purchase tools that extend your workflow.
-- Search for open-source projects.  For example, the [GitHub Actions](https://github.com/actions?azure-portal=true) organization features many popular open-source repos containing GitHub Actions you can use.
-- Write your own GitHub Actions from scratch.  Furthermore, if you want, you could make them open source, or even publish them to the GitHub Marketplace.
+- Search for open-source projects. For example, the [GitHub Actions](https://github.com/actions?azure-portal=true) organization features many popular open-source repos containing GitHub Actions you can use.
+- Write your own GitHub Actions from scratch. Furthermore, if you want, you could make them open source, or even publish them to the GitHub Marketplace.
 
 ## Using open-source GitHub Actions
 
@@ -62,15 +62,15 @@ With **container actions**, the environment is part of the action's code. These 
 
 ### The anatomy of a GitHub action
 
-Here is an example of an action that performs a git checkout of a repository. This action, [actions/checkout@v1](https://github.com/actions/checkout?azure-portal=true), is part of a step in a workflow. This step also builds the Node.js code that was checked out. We'll talk about workflows, jobs, and steps in the next section.
+Here's an example of an action that performs a git checkout of a repository. This action, [actions/checkout@v1](https://github.com/actions/checkout?azure-portal=true), is part of a step in a workflow. This step also builds the Node.js code that was checked out. We'll talk about workflows, jobs, and steps in the next section.
 
 ```yml
 steps:
-    - uses: actions/checkout@v1
-    - name: npm install and build webpack
+  - uses: actions/checkout@v1
+  - name: npm install and build webpack
     run: |
-        npm install
-        npm run build
+      npm install
+      npm run build
 ```
 
 Suppose you want to use a container action to run containerized code. Your action might look like this:
@@ -125,7 +125,7 @@ jobs:
         MY_NAME: "Mona"
 ```
 
-Notice the ```on:``` attribute. This is a *trigger* to specify when this workflow will run. Here, it triggers a run when there is a push event to your repository. You can specify single events like ```on: push```, an array of events like ```on: [push, pull_request]```, or an event configuration map that schedules a workflow or restricts the execution of a workflow to specific files, tags, or branch changes. The map might look something like this:
+Notice the ```on:``` attribute. This is a *trigger* to specify when this workflow will run. Here, it triggers a run when there's a push event to your repository. You can specify single events like ```on: push```, an array of events like ```on: [push, pull_request]```, or an event configuration map that schedules a workflow or restricts the execution of a workflow to specific files, tags, or branch changes. The map might look something like this:
 
 ```yml
 on:
