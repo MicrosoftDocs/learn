@@ -39,7 +39,7 @@ products:
   - azure-active-directory
   - azure-rbac
   - github
-subject:
+subjects:
   - devops
   - cloud-computing
   - cloud-security
