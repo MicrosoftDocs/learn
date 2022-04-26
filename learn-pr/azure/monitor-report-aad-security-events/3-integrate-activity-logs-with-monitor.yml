@@ -28,12 +28,12 @@ quiz:
       explanation: You can run both table-based and search-based queries in your Log Analytics workspace.
   - content: 'What query filter command would you use to get *n* rows in no specific order?'
     choices:
-    - content: `sort by``
+    - content: The `sort by` query command
       isCorrect: false
-      explanation: Use `sort by`` to order the result set.
-    - content: `take``
+      explanation: Use `sort by` to order the result set.
+    - content: The `take` query command
       isCorrect: true
-      explanation: Use `take`` on small datasets. It returns *n* rows from the result set in no specific order.
-    - content: `top``
+      explanation: Use `take` on small datasets. It returns *n* rows from the result set in no specific order.
+    - content: The `top` query command
       isCorrect: false
-      explanation: The `top` command returns the top *n* rows of the result set.
+      explanation: The `top` query command returns the top *n* rows of the result set.
