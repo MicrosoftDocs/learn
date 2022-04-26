@@ -14,7 +14,7 @@ In this module, you will:
 
 - View blob metrics in the Azure portal
 - Add Azure Monitor metrics charts to a custom portal dashboard
-- Use the Azure portal to enable logging and to download the logs
+- Use the Azure portal to route logs to Log Analytics and then use queries to view log entries.
 
 ## Prerequisites
 

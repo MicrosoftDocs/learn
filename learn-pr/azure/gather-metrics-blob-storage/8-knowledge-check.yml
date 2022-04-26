@@ -70,17 +70,17 @@ quiz:
     - content: Internal users, individually and as part of a security group, and external users
       isCorrect: false
       explanation: 'Azure portal dashboards can only be shared with internal users, assigned individually and as part of a security group.'
-  - content: Which log destination enables you to monitor transaction detail by running queries in a query editor. 
+  - content: Which log destination enables you to view a list of transactions by running queries in a query editor. 
     choices:
     - content: A storage account
       isCorrect: false
-      explanation: 'Log Analytics enables you to query log data by running queries in a query editor'
+      explanation: 'Log Analytics enables you to query log data by running queries in a query editor.'
     - content: Event hub
       isCorrect: false
-      explanation: 'Log Analytics enables you to query log data by running queries in a query editor'
+      explanation: 'Log Analytics enables you to query log data by running queries in a query editor.'
     - content: Log Analytics
       isCorrect: true
-      explanation: 'resource logs are available for Blob Storage, Queue Storage, and Table Storage.'
+      explanation: 'Log Analytics enables you to query log data by running queries in a query editor.'
     - content: A partner solution
       isCorrect: false
-      explanation: 'Log Analytics enables you to query log data by running queries in a query editor'
+      explanation: 'Log Analytics enables you to query log data by running queries in a query editor.'

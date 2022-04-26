@@ -46,7 +46,7 @@ Before you move customer proofs into Azure Blob Storage, you want to see how you
 
 1. In the **Monitoring** section, select **Logs**.
 
-   The **Queries** window appears. This window provides you with a several queries that you can run. You can also customize any of these queries by hovering over the query, and then selecting the **Load to Editor** that appears for the query. For this exercise we will create a query from scratch.
+   The **Queries** window appears. This window provides you with several queries that you can run. You can also customize any of these queries by hovering over the query, and then selecting the **Load to Editor** that appears for the query. For this exercise, we will create a query from scratch.
 
 2. Close the **Queries** window by selecting **X** in the corner of the window.
 
