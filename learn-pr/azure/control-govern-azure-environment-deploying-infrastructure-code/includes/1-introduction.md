@@ -15,6 +15,8 @@ Recently you had several situations where people have deployed to Azure using di
 1. Somebody committed a Bicep file change directly to the repository’s *main* branch, bypassing pull request reviews.
 1. Somebody updated a Bicep file by using a pull request, and their changes were validated, tested, and deployed throughout the correct sequence of environments.
 
+The following diagram illustrates the scenarios listed above:
+
 :::image type="content" source="../media/1-risks.png" alt-text="Diagram showing several approaches to making Azure configuration changes." border="false":::
 
 Of all of these changes, only number 5 was deployed using the automation tools you've adopted and using the process that your team agreed on. Fortunately none of the other changes caused any damage, but you don't want to push your luck. Your team has decided to enforce your process so that you can get the most benefit from your investment in automation. You've agreed with your team that you'll close off the ability to deploy to your Azure environment, except through the approved process:
