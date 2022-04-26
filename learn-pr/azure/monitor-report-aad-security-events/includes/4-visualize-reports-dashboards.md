@@ -10,17 +10,9 @@ In this unit, you learn how to enhance and customize the underlying report queri
 
 Dashboards provide an organized view of the resources in your Azure cloud instance. From a dashboard, you can organize and arrange your day-to-day and recurring operational tasks and activities. Each dashboard can be built around a specific activity, such as a task or a project.
 
-To create a new dashboard for your security team, do the following:
+To create a new dashboard for your security team, in the Azure portal menu, select **Dashboard**. Select **New dashboard** > **Blank dashboard**.
 
-1. In the Azure portal menu, select **Dashboard**.
-
-1. Select **New dashboard** > **Blank dashboard**.
-
-1. Enter a name for the dashboard a name.
-
-1. Select **Add tiles**, and then select **Save**.
-
-1. Even though the dashboard contains no data, you have the option to share the dashboard. Select the **Share** option, and then confirm that the sharing and access controls are correct. To share, select **Publish**.
+Enter a name for the dashboard a name. Select **Add tiles**, and then save the dashboard. Even though the dashboard contains no data, you have the option to share the dashboard. Select the **Share** option, and then confirm that the sharing and access controls are correct. To share, select **Publish**.
 
 Now that you've created a dashboard, you need to add a query report to it. It might seem as though you can add audit or sign-in log data directly to the dashboard, but you can't yet. To build a query to add to the dashboard, you need to return to the Log Analytics workspace you created earlier.
 

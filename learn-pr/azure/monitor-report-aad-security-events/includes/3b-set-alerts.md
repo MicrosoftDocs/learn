@@ -22,6 +22,6 @@ When an alert fires, it sends any notifications in its action groups. You can al
 
 In the left menu, select **Alerts**. Any open alerts for the resources are included in the view.
 
-To view alerts that have that severity, select a severity. To view only open alerts, select **Alert state** and clear the **Closed** option.
+To view alerts that have that severity, select a severity. You can add filters to view subsets of alert results.
 
 To view details about an alert, select the name of the alert.

@@ -14,7 +14,7 @@ In this exercise, you'll:
 
 ## Create a Log Analytics workspace
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. Select **Create resource**.
 

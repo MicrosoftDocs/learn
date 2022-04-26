@@ -13,38 +13,34 @@ Alerts are similar to queries, but they run automatically in response to specifi
 
 1. In the left menu under **Monitoring**, select **Alerts**, and then select **Create alert rule**. Scope is automatically set to your Log Analytics workspace.
 
+   :::image type="content" source="../media/alert-rule-new.png" alt-text="Screenshot that shows how to create a new alert rule.":::
+
 1. Select the **Condition** tab.
 
 1. In the **Select a signal** pane, for **Signal type**, select **Activity Log**.
 
-1. In **Signal name**, select a name that matches the activity logs you want to monitor.
+1. In **Signal name**, for this exercise, select **All administrative operations**.
 
-1. Select values for the settings for the alert logic.
+   :::image type="content" source="../media/alert-conditions.png" alt-text="Screenshot that shows selecting details for an alert condition.":::
 
-1. Select **Next: Actions >**.
+1. Leave the default values for the settings for the alert logic, then select **Next: Actions >**, and then select **Next: Details >**.
 
-1. On the **Actions** tab, if you haven't already created an action group that you want to use, select **Create action group**. Select a subscription and resource group for the action group and give it an action group name that appears in the portal and a display name that appears in email and SMS notifications.
+1. On the **Details** tab, select a subscription and resource group for the alert rule. Enter an alert rule name and optionally enter a description of the alert rule. Then, select **Review + create**.
 
-1. Select **Next: Notifications >**.
+   :::image type="content" source="../media/alert-details.png" alt-text="Screenshot that shows how to enter details for a new alert rule.":::
 
-1. Select a notification type and enter a name for the notification. Enter the details to continue to set up the action group.
-
-1. You can optionally set up actions and tags. Then, select **Review + create**.
-
-1. Review the action group information, and then select **Create**.
-
-1. In **Create an alert rule**, on the **Details** tab, select a subscription and resource group for the alert rule. Enter an alert rule name and optionally enter a description of the alert rule.
-
-1. You can optionally set tags for the alert rule. Then, select **Review + create**.
-
-1. Review the action group information, and then select **Create**.
+1. Review the new alert details, and then select **Create**.
 
 ## View alert rules
 
-When an alert fires, it will send any notifications in its action groups. You can also view the alert in the Azure portal.
+Next, view the alert in your Log Analytics workspace in the Azure portal:
 
-1. In the left menu, select **Alerts**.
+1. In the left menu under **Monitoring**, select **Alerts**.
 
-1. To view alerts that have that severity, select a severity. To view only open alerts, select **Alert state** and clear the **Closed** option.
+1. To view alerts that have that severity, select a severity:
 
-1. To view details about an alert, select the name of the alert.
+   :::image type="content" source="../media/alerts-severity.png" alt-text="Screenshot that shows filtering alerts by severity.":::
+
+1. To view details about an alert, select the name of the alert:
+
+   :::image type="content" source="../media/alert-results.png" alt-text="Screenshot that shows a summary of alerts.":::

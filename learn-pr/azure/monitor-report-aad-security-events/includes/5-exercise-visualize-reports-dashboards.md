@@ -1,6 +1,18 @@
 So far, you've learned about the various user-based logging methods provided by Azure. You've learned how to route the audit and sign-in data to an Azure Log Analytics workspace. Also, you've seen how to use this data to create various views and reports for your security team.
 
-In this exercise, you implement a dashboard for the security team, so they can see the potential of Azure Monitor logs and alerting to help them better understand user behavior.
+In this exercise, you implement a dashboard for the security team, so they can see the potential of Azure Monitor logs and alerting to help them better understand user behavior. You'll do these tasks:
+
+- Create a security dashboard
+- Pin a workbook to a dashboard
+- Build a query for the dashboard
+- Pin query results to a dashboard
+- Edit or customize an item in a dashboard
+- Export a report to Excel
+
+> [!NOTE]
+> This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics and dashboards.
+>
+> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you can create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Create a security dashboard
 
@@ -30,7 +42,7 @@ In this exercise, you implement a dashboard for the security team, so they can s
 
 ## Pin a workbook to a dashboard
 
-You can pin a workbook to a dashboard so that it's easy to find or to share it with other users.
+Next, pin a workbook to a dashboard so that it's easy to find or to share it with other users:
 
 1. To pin a workbook to a dashboard, in the left menu under **General**, select **Workbooks**. Open the workbook you want to pin.
 
@@ -44,23 +56,11 @@ You can pin a workbook to a dashboard so that it's easy to find or to share it w
 
 1. Go to the dashboard to view your analytics results.
 
-   ![Screenshot of the updated dashboard with the edited name and the Edit button highlighted.](../media/dashboard-view.png)
-
-To change the title of the report in the dashboard, do the following:
-
-1. Select **Edit** (pencil icon) in the report tile.
-
-1. Select the title, and change it to **Top User Events past seven days**.
-
-1. Remove the subtitle, which you don't need for this report.
-
-    :::image type="content" source="../media/query-rename.png" alt-text="Screenshot of renaming query.":::
-
-You can use them to display common views of your audit and sign-in data.
-
-In the next section, you set up a dashboard that your security team can begin to use.
+   :::image type="content" source="../media/dashboard-view.png" alt-text="Screenshot of the updated dashboard with the edited name and the Edit button highlighted.":::
 
 ## Build a query for the dashboard
+
+To build a query for a dashboard:
 
 1. In the Azure portal, select **All resources**.
 
@@ -91,7 +91,7 @@ In the next section, you set up a dashboard that your security team can begin to
 
 ## Pin query results to a dashboard
 
-You can pin query results to a dashboard so that they're easy to find or to share them with other users.
+Next, pin query results to the dashboard you created:
 
 1. In your Log Analytics workspace, under **General**, select **Logs**.
 
@@ -111,29 +111,36 @@ You can pin query results to a dashboard so that they're easy to find or to shar
 
 To change the title of an item in a dashboard or change the dashboard view:
 
-1. Select **Configure tile settings** (gear icon) in the item tile.
+1. In the Azure portal menu, select **Dashboard**.
+
+   :::image type="content" source="../media/dashboard-menu.png" alt-text="Screenshot that shows selecting Dashboard in the portal menu.":::
+
+1. If you have multiple dashboards, in the dashboard dropdown menu, select **SecurityDashboard**.
+
+1. On a tile, select the horizontal ellipsis, and then select **Configure tile settings** (gear icon) in the item tile.
 
 1. In the **Configure tile settings** pane, change the title to **Top User Events past week**.
 
 1. Select **Apply**.
 
-    :::image type="content" source="../media/5-pin-query.png" alt-text="Screenshot of editing a report on the dashboard.":::
+    :::image type="content" source="../media/dashboard-edit.png" alt-text="Screenshot of editing a report on the dashboard.":::
 
-1. To change how an item appears in the dashboard, select **Customize** (pencil icon), and then select from the options.
+1. To change how an item appears in the dashboard, select the horizontal ellipsis, and then select **Customize** (pencil icon). Select from the options to change the tile appearance on the dashboard.
+
+   :::image type="content" source="../media/dashboard-customize.png" alt-text="Screenshot of customizing a report on the dashboard.":::
 
 1. Select **Save**.
 
-    :::image type="content" source="../media/5-customize-dashboard.png" alt-text="Screenshot of customizing a report on the dashboard.":::
-
-You've now created a dashboard with a query report embedded in it.
-
 ## Export a report to Excel
 
-When you're satisfied with the report, export it to Excel:
+Finally, export the report to Excel:
 
-1. In the log query view, select the **Export** dropdown, and then select **Open in Excel**.
+1. In the report tile on the dashboard, select the **Open in Logs blade** icon:
+
+   :::image type="content" source="../media/report-open-logs-view.png" alt-text="Screenshot that shows the Open in Logs blade icon.":::
+
+1. In the **Logs** pane, select **Run**, and then select **Export** > **Open in Excel**.
 
    :::image type="content" source="../media/export-excel.png" alt-text="Screenshot of the options in the Export dropdown.":::
 
-You can save the CSV file to your local computer.
-
+1. Open the downloaded file, and then save the file to your computer.
