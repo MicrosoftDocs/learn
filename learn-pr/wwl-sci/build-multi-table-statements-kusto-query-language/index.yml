@@ -3,7 +3,7 @@ uid: learn.wwl.build-multi-table-statements-kql
 metadata:
   title: Build multi-table statements using KQL
   description: "Build multi-table statements using KQL"
-  ms.date: 12/20/2021
+  ms.date: 04/26/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial

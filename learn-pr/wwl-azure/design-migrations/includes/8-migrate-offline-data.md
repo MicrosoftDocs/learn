@@ -38,7 +38,6 @@ There are several products to fit different scenarios: [Data Box](/azure/databox
 After you receive your storage device, you can quickly set it up using the local web-based management interface. Assuming you’re exporting data to Azure, copy the required data to the storage device, and then return it to Azure.
 
 
-After you receive your storage device, you can quickly set it up using the local web-based management interface. Assuming you’re exporting data to Azure, copy the required data to the storage device, and then return it to Azure.
 
  
 
