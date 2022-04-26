@@ -8,5 +8,4 @@ Now that you've reviewed this module, you should be able to:
 - Explain authentication Options for Azure SQL Database
 - Describe security principals
 - Explain object permissions
-- Describe Execute as user
-- Explain the concept of least privilege
+- Identify authentication and authorization failures
