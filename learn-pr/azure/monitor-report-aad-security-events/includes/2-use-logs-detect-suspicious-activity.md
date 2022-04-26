@@ -26,9 +26,9 @@ Sign-in log files hold a copy of all attempts to sign in to your network. The lo
 
 You can use sign-in log files to identify:
 
-- Patterns of user sign-in behavior.
-- Trends in user sign-in activity over time.
-- The overall status of all users who access your network.
+- Patterns of user sign-in behavior
+- Trends in user sign-in activity over time
+- The overall status of all users who access your network
 
 ### Prerequisites
 
@@ -41,7 +41,7 @@ Because of the sensitive nature of log data that's captured by sign-in logs, acc
 
 The first time the sign-in logging service is enabled, you might not see data for up to an hour. Azure captures a wide range of data about user activity, from access periods to the application that made the request, and more.  Access the sign-in log file in your Azure AD instance in the Azure portal.
 
-To see the sign-in logs for your tenant, in the left menu under **Monitoring**, select **Sign-ins**. The following example displays a typical view of the sign-in table data:
+To see the sign-in logs for your tenant, in the left menu under **Monitoring**, select **Sign-in logs**. The following example displays a typical view of the sign-in table data:
 
 :::image type="content" source="../media/sign-in-activity.png" alt-text="Screenshot that shows the default table columns in the sign-in logs.":::
 

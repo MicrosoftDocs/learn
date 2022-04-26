@@ -1,5 +1,12 @@
 In this exercise, you create a Log Analytics workspace in your Azure sandbox by using the Azure portal. You then direct the audit and sign-in log files to your workspace. Next, you download and install the prebuilt user sign-in and audit log views from GitHub.
 
+In this exercise, you'll:
+
+- Create a Log Analytics workspace.
+- Send log files to your Log Analytics workspace.
+- Use a template in your Log Analytics workspace.
+- View your saved workbook.
+
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics and dashboards.
 >
@@ -35,7 +42,7 @@ To stream the audit and sign-in logs to your Log Analytics workspace:
 
 1. In the Azure portal, go to your Azure AD instance.
 
-1. In the left menu, under **Monitoring**, select **Diagnostic settings**. Select **Add diagnostic setting**.
+1. In the left menu under **Monitoring**, select **Diagnostic settings**, and then select **Add diagnostic setting**.
 
    :::image type="content" source="../media/diagnostic-setting-add.png" alt-text="Screenshot that shows adding a new diagnostic setting.":::
 
@@ -49,7 +56,7 @@ To stream the audit and sign-in logs to your Log Analytics workspace:
 
 1. Select **Save**.  
 
-## Use existing workbooks or templates in your Log Analytics workspace
+## Use a template in your Log Analytics workspace
 
 Next, begin with a workbook template to create a workbook to create a query report:
 

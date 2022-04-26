@@ -159,7 +159,7 @@ AuditLogs
 
 You can use existing workbooks to display common views of your audit and sign-in data. If you don't find a workbook that does what you need, you can begin with a template and modify the query.
 
-In the Azure portal, go to your Log Analytics workspace. In the left menu under **General**, select **Workbooks**.
+In your Log Analytics workspace in the Azure portal, in the left menu under **General**, select **Workbooks**.
 
 If you don't find an existing workbook that has the query you need, you can select the **Default template** tile and create a query.
 
@@ -172,10 +172,10 @@ AuditLogs
 | sort by auditCount desc
 ```
 
-In the menu bar, select **Run** to check for results. When you're satisfied that you have the data you want, select **Done editing**, and then select the **Save** icon in the menu bar.
+In the menu bar, select **Run** to check for results. When you're satisfied that you have the data you want, select **Done editing**, and then save the workbook.
 
-Enter a descriptive name, like *Common User Events Last 7 days*, and then Select or enter the subscription, resource group, and location you want to use. Select **Save**.
+Enter a descriptive name, like *Common User Events Last 7 days*, and then Select or enter the subscription, resource group, and location you want to use, and then save the workbook.
 
 To view the workbook, in the left menu under **General**, select **Workbooks**. Look for the workbook tile under **Recently modified workbooks**.
 
-:::image type="content" source="../media/workbooks-recently-modified.png" alt-text="Screenshot that shows how to find modified workbooks.":::
+:::image type="content" source="../media/workbooks-recently-modified.png" alt-text="Screenshot that shows how to find recently modified workbooks.":::

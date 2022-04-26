@@ -1,5 +1,13 @@
 In this exercise, you view your Azure AD instance sign-in logs, select columns and filter data for the logs, and then download the logs. You also view your Azure AD instance audit logs through the **Users** menu.
 
+In this exercise, you'll:
+
+- View sign-in logs for your Azure AD instance.
+- Change columns to use in your sign-in logs.
+- Filter data to include in your sign-in logs view.
+- Download sign-in logs.
+- View audit logs through the **Users** menu
+
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics and dashboards.
 >
@@ -17,13 +25,13 @@ To see the sign-in logs for your Azure AD tenant:
 
 ## Change columns for sign-in logs
 
-To change the columns that appear for sign-in logs:
+Then, change the columns that appear for sign-in logs:
 
 1. In the menu bar, select **Columns**.
 
    :::image type="content" source="../media/columns-menu.png" alt-text="Screenshot that shows selecting the Columns option in the sign-in logs menu.":::
 
-1. In the **Columns** pane, add a couple columns, like **Operating system** and **Flagged for review**. Clear **IP address**.
+1. In the **Columns** pane, add a couple columns, like **Operating system** and **Flagged for review**. For this exercise, clear **IP address**.
 
 1. Select **Save**.
 
@@ -31,9 +39,9 @@ To change the columns that appear for sign-in logs:
 
 ## Filter data in sign-in logs
 
-To use add filters for the data in your sign-in logs:
+Next, use add filters for the data in your sign-in logs:
 
-1. In the menu bar, select **Add filters**
+1. In the menu bar, select **Add filters**:
 
    :::image type="content" source="../media/add-filters-menu.png" alt-text="Screenshot of the Add filters button in the sign-in logs menu.":::
 
@@ -45,13 +53,13 @@ To use add filters for the data in your sign-in logs:
 
 ## Download the sign-in logs
 
-To download the data in your view:
+Now, download the data in your view:
 
 1. In the menu bar, select **Download**:
 
    :::image type="content" source="../media/download-menu.png" alt-text="Screenshot of the menu bar with the Download button selected.":::
 
-1. In the **Download Sign-ins** pane, select a format to use for the data, CSV or JSON. Enter a file name, and then select **Download**.
+1. In the **Download Sign-ins** pane, select a format to use for the data: CSV or JSON. Enter a file name, and then select **Download**:
 
    :::image type="content" source="../media/download-select.png" alt-text="Screenshot of the Download dialog details.":::
 
@@ -65,6 +73,6 @@ To access audit logs through your Azure AD **Users** menu:
 
    :::image type="content" source="../media/users-menu.png" alt-text="Screenshot of the Users menu.":::
 
-1. Under **Activity** in the **Users** menu, select **Audit logs**:
+1. In the **Users** menu under **Activity**, select **Audit logs**:
 
    :::image type="content" source="../media/audit-logs-users.png" alt-text="Screenshot of the Audit logs in the Users menu.":::

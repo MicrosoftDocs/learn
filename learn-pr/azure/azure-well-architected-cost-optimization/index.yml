@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-cost-optimization
 metadata:
   title: Microsoft Azure Well-Architected Framework - Cost optimization
   description: Learn how to use the cost optimization pillar of the Microsoft Azure Well-Architected Framework to design a cloud-based architecture that is efficient, eliminates waste, and gives you full visibility into where your money is spent on cloud resources.
-  ms.date: 05/19/2020
+  ms.date: 04/15/2022
   author: robbyatmicrosoft
   ms.author: robbymillsap
   ms.topic: interactive-tutorial
