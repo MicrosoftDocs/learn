@@ -139,7 +139,7 @@ Use the following steps to scan an on-premises SQL Server instance:
 
 1. Select the SQL Server source that you registered previously and then select the **New scan** button.
 
-:::image type="content" source="../media/image16.png" alt-text="The New scan button to initiate a scan for data sources hosted in an on-premises SQL Server instance."  border="false":::
+:::image type="content" source="../media/3-New-Scan.png" alt-text="The New scan button to initiate a scan for data sources hosted in an on-premises SQL Server instance."  border="false":::
 
 1. In the **Scan** pane, provide the following information:
 
