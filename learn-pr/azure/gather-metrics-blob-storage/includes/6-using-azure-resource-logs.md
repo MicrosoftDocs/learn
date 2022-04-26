@@ -8,7 +8,7 @@ Sometimes you want to see more detail about storage transactions than performanc
 
 Resource logs in Azure Monitor capture this kind of detailed information and they are useful for examining the detail behind specific requests. For example, you can use these logs if you want to know how many requests for a specific resource are authenticated or anonymous, or successful or failed.
 
-To collect resource logs, you must create a diagnostic setting. Resource logs will list successful and failed requests for a storage account. Requests are recorded as read, write, or delete operations against the specific storage service: Azure Blob Storage, Table Storage, or Queue Storage. By using a diagnostic setting, you can route logs to Log Analytics, a storage account or stream them to an event hub.
+To collect resource logs, you must create a diagnostic setting. Resource logs will list successful and failed requests for a storage account. Requests are recorded as read, write, or delete operations against the specific storage service: Azure Blob Storage, Table Storage, or Queue Storage. By using a diagnostic setting, you can route logs to Log Analytics, a storage account, stream them to an event hub, or to a partner solution.
 
 You can use resource logs to review different types and frequency of requests, or to troubleshoot failed requests. Logs are generated only when transactions occur, and only for the specific service endpoint. So if you're using storage in the Blob Storage and Queue Storage endpoints, but only the Blob Storage endpoint has requests or transactions, then the system will create logs only for Blob Storage.
 
@@ -26,7 +26,7 @@ When you enable logging, these types of requests are logged:
 
 ## Storage of resource logs in Azure Monitor
 
-Resource logs are automatically generated for your storage account, but those logs aren't available to be viewed unless you send them to a destination. You specify where to send them by using a diagnostic setting. 
+Resource logs are automatically generated for your storage account, but those logs aren't available to be viewed unless you send them to a destination. You specify where to send them by using a diagnostic setting.
 
 When you create a diagnostic setting, you'll choose the type of storage that you are interested in routing logs for (For example: Blob Storage or File Storage). Then, you'll choose which types of operations you want to appear in logs (For example: read, write, or delete operations). Finally, you'll choose where you would like logs to be sent. You can send log to any of these locations:
 

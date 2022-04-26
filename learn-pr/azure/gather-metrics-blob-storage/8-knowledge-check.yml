@@ -70,17 +70,17 @@ quiz:
     - content: Internal users, individually and as part of a security group, and external users
       isCorrect: false
       explanation: 'Azure portal dashboards can only be shared with internal users, assigned individually and as part of a security group.'
-  - content: Which services is Azure Storage Analytics logging available for?
+  - content: Which log destination enables you to monitor transaction detail by running queries in a query editor. 
     choices:
-    - content: Blob Storage only
+    - content: A storage account
       isCorrect: false
-      explanation: 'Storage Analytics logging is available for Blob Storage, Queue Storage, and Table Storage.'
-    - content: Blob Storage and Queue Storage
+      explanation: 'Log Analytics enables you to query log data by running queries in a query editor'
+    - content: Event hub
       isCorrect: false
-      explanation: 'Storage Analytics logging is available for Blob Storage, Queue Storage, and Table Storage.'
-    - content: Blob Storage, Queue Storage, and Table Storage
+      explanation: 'Log Analytics enables you to query log data by running queries in a query editor'
+    - content: Log Analytics
       isCorrect: true
-      explanation: 'Storage Analytics logging is available for Blob Storage, Queue Storage, and Table Storage.'
-    - content: Blob Storage, Queue Storage, and Azure Files
+      explanation: 'resource logs are available for Blob Storage, Queue Storage, and Table Storage.'
+    - content: A partner solution
       isCorrect: false
-      explanation: 'Storage Analytics logging is available for Blob Storage, Queue Storage, and Table Storage.'
+      explanation: 'Log Analytics enables you to query log data by running queries in a query editor'
