@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-performance-efficiency
 metadata:
   title: 'Microsoft Azure Well-Architected Framework - Performance efficiency'
   description: Learn how to adjust your capacity based on workload and how to optimize network performance, storage, and database performance.
-  ms.date: 05/19/2020
+  ms.date: 04/26/2022
   author: robbyatmicrosoft
   ms.author: robbymillsap
   ms.topic: interactive-tutorial
