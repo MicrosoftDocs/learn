@@ -3,7 +3,7 @@ uid: learn.test-python-with-pytest
 metadata:
   moduleType: standard
   title: Testing with Pytest
-  description: Use Pytest, a popular test framework to write and run tests in Python. Find about useful patterns, utilities, and helpful reporting that make Pytest a solid choice for testing.
+  description: Use Pytest, a popular test framework to write and run tests in Python. Learn about useful patterns, utilities, and helpful reporting that make Pytest a solid choice for testing.
   ms.date: 1/12/2022
   author: alfredodeza
   ms.author: alfredodeza

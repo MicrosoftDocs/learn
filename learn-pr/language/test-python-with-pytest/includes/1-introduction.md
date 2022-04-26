@@ -16,6 +16,6 @@ This will allow you to:
 - Use Pytest's error reporting to accurately determine failures.
 - Use Pytest as a library as well as a command-line tool.
 
-## What is the main goal
+## What is the main goal?
 
 You should feel comfortable working with Pytest and writing tests for Pytest. This will make  you a more efficient engineer, as you'll be writing more and better tests.
