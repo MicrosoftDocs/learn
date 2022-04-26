@@ -7,7 +7,7 @@ To use the IDENTITY property, define a column using a numeric data type with a s
 An optional seed (starting value), and an increment (step value) can also be specified. Leaving out the seed and increment will set them both to 1.
 
 > [!NOTE]
-> The IDENTITY property is specified in place of specifying NOT or NOT NULL in the column definition. Any column with the IDENTITY property is automatically not nullable. You can specify NOT NULL just for self-documentation, but if you specify the column as NULL (meaning nullable), the table creation statement will generate an error.
+> The IDENTITY property is specified in place of specifying NULL or NOT NULL in the column definition. Any column with the IDENTITY property is automatically not nullable. You can specify NOT NULL just for self-documentation, but if you specify the column as NULL (meaning nullable), the table creation statement will generate an error.
 
 Only one column in a table may have the IDENTITY property set; it's frequently used as either the PRIMARY KEY or an alternate key.
 
@@ -28,7 +28,7 @@ Notes nvarchar(max) NULL
 > [!NOTE]
 > The full details of the CREATE TABLE statement are beyond the scope of this module.
 
-## Inserting data into an identity column
+### Inserting data into an identity column
 
 When the IDENTITY property is defined for a column, INSERT statements into the table generally don't specify a value for the IDENTITY column. The database engine generates a value using the next available value for the column.
 
@@ -107,7 +107,7 @@ If this row is the first one inserted into the table, the result is a new row li
 
 When the table was created, no seed or increment values were set for the IDENTITY column, so the first row is inserted with a value of 1. The next row to be inserted will be assigned a **PromotionID** value of 2, and so on.
 
-## Retrieving an identity value
+### Retrieving an identity value
 
 To return the most recently assigned IDENTITY value within the same session and scope, use the SCOPE_IDENTITY function; like this:
 
@@ -121,7 +121,7 @@ The SCOPE_IDENTITY function returns the most recent identity value generated in 
 SELECT IDENT_CURRENT('Sales.Promotion');
 ```
 
-## Overriding identity values
+### Overriding identity values
 
 If you want to override the automatically generated value and assign a specific value to the IDENTITY column, you first need to enable identity inserts by using the SET IDENTITY INSERT *table_name* ON statement. With this option enabled, you can insert an explicit value for the identity column, just like any other column. When you're finished, you can use the SET IDENTITY INSERT *table_name* OFF statement to resume using automatic identity values, using the last value you explicitly entered as a seed.
 
@@ -151,10 +151,17 @@ INSERT INTO Sales.ResellerInvoice
 VALUES
 (NEXT VALUE FOR Sales.InvoiceNumber, 2, GETDATE(), 'PO12345', 107.99);
 ```
+### Reseeding an identity column
+Occasionally, you will need to reset or skip identity values for the column. To do this, you will be "reseeding" the column using the DBCC CHECKIDENT function. 
+You can use this to skip many values, or to reset the next identity value to 1 after you have deleted all of the rows in the table. 
+For full details using DBCC CHECKIDENT, see the 
+[Transact-SQL reference documentation](/sql/t-sql/database-console-commands/dbcc-checkident-transact-sql). 
+
+
 
 ## IDENTITY or SEQUENCE
 
-When deciding whether to use IDENTITY columns or a SEQUENCE object for autopopulating values, keep the following points in mind:
+When deciding whether to use IDENTITY columns or a SEQUENCE object for auto-populating values, keep the following points in mind:
 
  *  Use SEQUENCE if your application requires sharing a single series of numbers between multiple tables or multiple columns within a table.
  *  SEQUENCE allows you to sort the values by another column. The NEXT VALUE FOR construct can use the OVER clause to specify the sort column. The OVER clause guarantees that the values returned are generated in the order of the OVER clause's ORDER BY clause. This functionality also allows you to generate row numbers for rows as they’re being returned in a SELECT. In the following example, the **Production.Product** table is sorted by the **Name** column, and the first returned column is a sequential number.
