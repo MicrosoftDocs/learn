@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.govern-azure-databases-with-microsoft-purview.4-govern-manage-azure-sql-data
+title: Govern and manage Azure SQL Database data using Microsoft Purview
+metadata:
+  title: Govern and manage Azure SQL Database data using Microsoft Purview
+  description: Govern and manage Azure SQL Database data using Microsoft Purview.
+  ms.date: 4/19/2022
+  author: stamatm
+  ms.author: terrychr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-govern-manage-azure-sql-data.md)]
