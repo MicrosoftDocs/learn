@@ -52,7 +52,7 @@ If you see the above, you successfully created your first Gatsby app. Congrats!
 
 Now you'll create a component that you can navigate to in the browser: a *page component*.
 
-Open the myApp project folder in your text editor. Find the `pages/` directory and create a file and name it `about.js`. Give the file the following content:
+Open the "myApp" project folder in your text editor. Find the `pages/` directory and create a file and name it *about.js*. Give the file the following content:
 
 ```jsx
 import React from 'react';
