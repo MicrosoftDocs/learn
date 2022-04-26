@@ -12,7 +12,7 @@ metadata:
 azureSandbox: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs.md)]
+  [!include[](includes/7-exercise-collect-and-analyze-azure-monitor-logs-for-storage.md)]
 # NOTE: Task validation is failing for learners, so that is disabled for now.
 # tasks:
 # - action: exists
