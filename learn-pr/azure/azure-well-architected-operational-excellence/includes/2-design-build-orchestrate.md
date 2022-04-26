@@ -1,4 +1,4 @@
-Development and operational practices have evolved over the years to become more seamless and integrated. Modern practices involve organizational shifts and adopting new tooling in order to improve the operational agility of an organization. In this unit, you'll learn some of the key concepts to improving your organization's ability to build and deploy applications.
+Development and operational practices have evolved over the years to become more seamless and integrated. Modern practices involve organizational shifts and adopting new tooling in order to improve an organization's operational agility. In this unit, you'll learn some of the key concepts to improving your organization's ability to build and deploy applications.
 
 ## DevOps
 
@@ -8,29 +8,29 @@ The DevOps culture stresses small, multidisciplinary teams that work autonomousl
 
 There are several services and tools that are available from Microsoft to help an organization adopt and develop DevOps practices. Azure DevOps is a suite of products and tools that teams adopting DevOps practices can use to plan, develop, deliver, and operate their solutions.
 
-Azure Boards is a part of Azure DevOps that helps teams plan and track work. Azure Boards has modern agile tools like Kanban boards, backlogs, dashboards and scrum boards to enable your team to have greater visibility into the work that is planned, and what has been delivered.
+Azure Boards is a part of Azure DevOps that helps teams plan and track work. Azure Boards has modern agile tools like Kanban boards, backlogs, dashboards, and scrum boards to help your team to have greater visibility into the work that's planned and what's been delivered.
 
 :::image type="content" source="../media/2-kanban.png" alt-text="Screenshot of a Kanban board on Azure Boards.":::
 
-GitHub is the most widely-used platform to build, deliver, and share software. At its core, GitHub is a version control platform that enables a global community of individuals and teams to collaborate on software development projects, whether these projects are kept private within their organizations or shared through public communities of disparate software developers. GitHub also includes features to build and test deployments, track issues, and create custom workflows in your repositories.
+GitHub is the most widely-used platform to build, deliver, and share software. At its core, GitHub is a version-control platform that allows a global community of individuals and teams to collaborate on software development projects, whether these projects are kept private within their organizations or shared through public communities of disparate software developers. GitHub also includes features to build and test deployments, track issues, and create custom workflows in your repositories.
 
-Azure DevOps and GitHub integrate together, and these services are often used together by organizations that are operating or adopting a DevOps model.
+Azure DevOps and GitHub integrate together, and organizations that are operating or adopting a DevOps model often use these services together.
 
 ## Continuous Integration and Continuous Delivery (CI/CD)
 
-*Continuous Integration (CI)* is the practice of building and testing code every time a team member commits changes to version control. CI encourages developers to share their code and unit tests by merging their changes into a shared version control repository after every small task completion. Committing code triggers an automated build system to grab the latest code from the shared repository, and then build, test, and validate the full master branch.
+*Continuous Integration (CI)* is the practice of building and testing code every time a team member commits changes to version control. CI encourages developers to share their code and unit tests by merging their changes into a shared version-control repository after every small task completion. Committing code triggers an automated build system to grab the latest code from the shared repository, and then build, test, and validate the full main branch.
 
-CI helps developers to identify bugs earlier, and it improves software quality since code is checked in, built, and verified more frequently. Instead of working on code for a month and discovering numerous issues when changes are eventually checked in, developers can check in smaller sets of changes and be confident that their code doesn't introduce large volumes of issues into the master branch.
+CI helps developers to identify bugs earlier, and it improves software quality since code is checked in, built, and verified more frequently. Instead of working on code for a month and discovering numerous issues when changes are eventually checked in, developers can check in smaller sets of changes and be confident that their code doesn't introduce large volumes of issues into the main branch.
 
-*Continuous Delivery (CD)* is the process to build, test, configure and deploy from a build environment to a production environment. Multiple testing or staging environments create a release pipeline to automate the creation of infrastructure and deployment of a new build. Successive environments support progressively longer-running activities of integration, load, and user acceptance testing. 
+*Continuous Delivery (CD)* is the process to build, test, configure and deploy from a build environment to a production environment. Multiple testing or staging environments create a release pipeline to automate the creation of infrastructure and deployment of a new build. Successive environments support progressively longer-running activities of integration, load, and user-acceptance testing.
 
-Continuous integration and continuous delivery are often combined into a single pipeline known as *CI/CD*. Continuous integration starts the continuous delivery process, and the CI/CD pipeline stages changes from each successive environment to the next upon successful completion of the tests that are defined at each stage. As a developer, you can check in code, validate that it passes all tests and introduces no new issues into the master branch, and then roll it out to production with the confidence that it will not impact the operation of your production environment.
+Continuous integration and continuous delivery are often combined into a single pipeline known as *CI/CD*. Continuous integration starts the continuous delivery process, and the CI/CD pipeline stages changes from each successive environment to the next upon successful completion of the tests that are defined at each stage. As a developer, you can check in code, validate that it passes all tests and introduces no new issues into the main branch, then roll it out to production with the confidence that it will not impact the operation of your production environment.
 
-Azure Pipelines is a cloud service that you can use to automatically build and test your code project and make it available to others. It works with just about any language or project type, and integrates with GitHub, GitHub Enterprise, Azure Repos, and other version control systems. Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to constantly and consistently test and build your code and ship it to any target.
+Azure Pipelines is a cloud service you can use to automatically build and test your code project and make it available to others. It works with just about any language or project type, and integrates with GitHub, GitHub Enterprise, Azure Repos, and other version-control systems. Azure Pipelines combines continuous integration (CI) and continuous delivery (CD) to constantly and consistently test and build your code and ship it to any target.
 
 :::image type="content" source="../media/2-agents.jpg" alt-text="Visualization of CI/CD pipeline.":::
 
-GitHub Actions can also be used to build CI/CD capabilities in your GitHub repositories. With GitHub Actions, you can build workflows that are custom automated processes to build, test, package, release, and deploy code.
+You can also use GitHub Actions to build CI/CD capabilities in your GitHub repositories. With GitHub Actions, you can build workflows that are custom automated processes to build, test, package, release, and deploy code.
 
 ## Microservices
 
@@ -48,6 +48,6 @@ Microservice architectures are technology agnostic, but you often see containers
 
 ## Environment consistency
 
-A key piece of ensuring that you can develop and deploy applications with confidence is by ensuring that your environments are consistent between development, test, and production. As your CI/CD processes move your code through your environments, any variation risks introducing areas where testing can fail or overlook defects. Through automation, you can spin up and tear down environments as needed, which can be included as part of your CI/CD processes.
+A key piece of ensuring that you can develop and deploy applications with confidence is by making sure that your environments are consistent between development, test, and production. As your CI/CD processes move your code through your environments, any variation risks introducing areas where testing can fail or overlook defects. Through automation, you can spin up and tear down environments as needed, which can be included as part of your CI/CD processes.
 
-Imagine an environment where you were building a .NET Core application, and your test and production environments were running different versions. Your deployment may succeed in your test environment, but cause issues in your production environment because it's running a different version of your application. Including your environment definitions as part of your deployment will help ensure that your code is built and deployed on a consistent, end-to-end infrastructure.
+Imagine an environment where you're building a .NET Core application, and your test and production environments are running different versions. Your deployment may succeed in your test environment, but cause issues in your production environment because it's running a different version of your application. Including your environment definitions as part of your deployment will help ensure that your code is built and deployed on a consistent, end-to-end infrastructure.

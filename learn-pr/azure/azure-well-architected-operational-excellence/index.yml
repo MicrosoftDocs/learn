@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-operational-excellence
 metadata:
   title: Microsoft Azure Well-Architected Framework - Operational excellence
   description: Learn how to design an Azure architecture that uses modern practices and gives you full visibility into what's happening in your environment.
-  ms.date: 05/19/2020
+  ms.date: 04/26/2022
   author: robbyatmicrosoft
   ms.author: robbymillsap
   ms.topic: interactive-tutorial
