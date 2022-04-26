@@ -1,6 +1,6 @@
 Testing is one of the fundamental components of DevOps and agile development in general. If automation gives DevOps the required speed and agility to deploy software quickly, only through extensive testing will those deployments achieve the required reliability that customers demand.
 
-A main tenet of a DevOps practice to achieve system reliability is the *shift left* principle. If your process for developing and deploying an application is depicted as a series of steps that are listed from left to right, your testing should be shifted as much as possible toward the beginning of your process (e.g. to the left), and not just at the very end of your process (e.g. to the right). Errors are far cheaper to repair when they are caught early, and issues can be expensive or impossible to fix later in your application's lifecycle.
+A main tenet of a DevOps practice to achieve system reliability is the *shift left* principle. If your process for developing and deploying an application is depicted as a series of steps that are listed from left to right, your testing should be shifted as much as possible toward the beginning of your process (e.g. to the left), and not just at the very end of your process (e.g. to the right). Errors are far cheaper to repair when they're caught early, and issues can be expensive or impossible to fix later in your application's lifecycle.
 
 Testing should occur on both application code and infrastructure code, and they should both be subject to the same quality controls. The environment where applications are running should be version-controlled, and deployed through the same mechanisms as application code. As a result, you can test and validate both application code and infrastructure code using DevOps testing paradigms.
 
@@ -10,17 +10,17 @@ There are multiple stages at which you can perform tests in the code's lifecycle
 
 ## Automated Testing
 
-Automating tests is the best way to make sure that they're executed. Depending on how frequently your automated tests are performed, they are typically limited in duration and scope, and the following descriptions will list some of the things you need to consider when creating your test strategy.
+Automating tests is the best way to make sure that they're executed. Depending on how frequently your automated tests are performed, they're typically limited in duration and scope, and the following descriptions will list some of the things you need to consider when creating your test strategy.
 
 ### Unit Testing
 
-Unit tests are tests typically run by each new version of code that's committed into your version-control system. Unit Tests should be extensive (they should ideally cover 100% of the code), and quick (typically under 30 seconds, although this number is not a rule set in stone). Unit testing could verify things like the syntax correctness of application code, Resource Manager templates or Terraform configurations, that the code is following best practices, or that the code produces the expected results when provided certain inputs.
+Unit tests are tests typically run by each new version of code that's committed into your version-control system. Unit Tests should be extensive (they should ideally cover 100% of the code), and quick (typically under 30 seconds, although this number isn't a rule set in stone). Unit testing could verify things like the syntax correctness of application code, Resource Manager templates or Terraform configurations, that the code is following best practices, or that the code produces the expected results when provided certain inputs.
 
 Unit tests should be applied both to application code and infrastructure code.
 
 ### Smoke Testing
 
-Smoke tests are more exhaustive than unit tests, but still not as much as integration tests. Smoke tests normally run in less than 15 minutes. While smoke tests do not verify the interoperability of your different components with each other, they verify that each component can be correctly built, and each component meets your criteria for expected functionality and performance.
+Smoke tests are more exhaustive than unit tests, but still not as much as integration tests. Smoke tests normally run in less than 15 minutes. While smoke tests don't verify the interoperability of your different components with each other, they verify that each component can be correctly built, and each component meets your criteria for expected functionality and performance.
 
 Smoke tests usually involve building the application code, and if you're deploying infrastructure as part of your process, then possibly testing the deployment in a test environment.
 
@@ -36,7 +36,7 @@ Manual testing is much more expensive than automated testing, and consequently i
 
 There are many different ways of confirming that the application is doing what it should.
 
-- **Blue/Green deployments**: when deploying a new application version, you can deploy it in parallel to the existing one. This way, you can start redirecting your clients to the new version. If everything goes well, you will decommission the old version. If there is any problem with the new deployment, you can always redirect your clients back to the older deployment.
+- **Blue/Green deployments**: when deploying a new application version, you can deploy it in parallel to the existing one. This way, you can start redirecting your clients to the new version. If everything goes well, you'll decommission the old version. If there's any problem with the new deployment, you can always redirect your clients back to the older deployment.
 
 - **Canary releases**: you can expose new functionality of your application (ideally using feature flags) to a select group of users. If these users are satisfied with the new functionality, you can extend it to the rest of your user community. In this scenario, we're talking about releasing functionality, and not necessarily about deploying a new version of the application.
 
