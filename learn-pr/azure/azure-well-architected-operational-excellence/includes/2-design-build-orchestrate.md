@@ -12,7 +12,7 @@ Azure Boards is a part of Azure DevOps that helps teams plan and track work. Azu
 
 :::image type="content" source="../media/2-kanban.png" alt-text="Screenshot of a Kanban board on Azure Boards.":::
 
-GitHub is the most widely-used platform to build, deliver, and share software. At its core, GitHub is a version-control platform that allows a global community of individuals and teams to collaborate on software development projects, whether these projects are kept private within their organizations or shared through public communities of disparate software developers. GitHub also includes features to build and test deployments, track issues, and create custom workflows in your repositories.
+GitHub is the most widely used platform to build, deliver, and share software. At its core, GitHub is a version-control platform that allows a global community of individuals and teams to collaborate on software development projects, whether these projects are kept private within their organizations or shared through public communities of disparate software developers. GitHub also includes features to build and test deployments, track issues, and create custom workflows in your repositories.
 
 Azure DevOps and GitHub integrate together, and organizations that are operating or adopting a DevOps model often use these services together.
 
