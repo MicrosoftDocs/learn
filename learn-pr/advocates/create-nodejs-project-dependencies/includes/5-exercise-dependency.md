@@ -7,13 +7,9 @@ You're given some code that parses an address from a string. Your task should be
 > [!Note]
 > If you closed your terminal window after the previous exercise, you might need to set up your environment again.
 >
-> Open a terminal window, and clone the `https://github.com/MicrosoftDocs/node-essentials/` repo by running this command:
-> 
-> ```bash
-> git clone https://github.com/MicrosoftDocs/node-essentials/
-> ```
+> Open a terminal window, and clone the `https://github.com/MicrosoftDocs/node-essentials/` repo by running the command `git clone https://github.com/MicrosoftDocs/node-essentials/`.
 >
-> You can ignore messages about the cloned folder already existing or the directory not being empty.
+> You can ignore warning messages about the cloned folder already existing or the directory not being empty.
 
 1. In your terminal window, change to the folder that has the cloned files for this exercise:
 
@@ -23,7 +19,7 @@ You're given some code that parses an address from a string. Your task should be
 
    In this folder, you should see two JavaScript files:
 
-   ```bash
+   ```output
    -| address-parser.js
    -| package.json
    ```
@@ -39,7 +35,7 @@ You're given some code that parses an address from a string. Your task should be
 
    This function takes a string and parses out information about what a customer orders, where it should be delivered, and how it will be paid for. We'll add Jest and write some tests for the function.
 
-   Close the file.
+   Close the address-parser.js file.
 
 1. Install the Jest library by running this command:
 
@@ -47,7 +43,7 @@ You're given some code that parses an address from a string. Your task should be
    npm install jest --save-dev
    ```
 
-   Open the package.json file and find the `devDependencies` section. You should see en entry that looks like this example:
+   Open the package.json file and find the `devDependencies` section. You should see an entry that looks like this example:
 
    ```json
    "devDependencies": {
@@ -59,9 +55,7 @@ You're given some code that parses an address from a string. Your task should be
 
 1. In the terminal, create a new folder named **\_\_tests\_\_**.
 
-1. Change to the new folder.
-
-1. In the \_\_tests\_\_ folder, create a new file named **address-parser.js** and add the following content to the file:
+1. In the \_\_tests\_\_ folder, create a file named **address-parser.js**. Add the following content to the file:
 
    ```javascript
    const { parse } = require("../address-parser");
@@ -81,25 +75,24 @@ You're given some code that parses an address from a string. Your task should be
    })
    ```
 
-   The preceding test is written to test the parsing of address-parser.js and ensure it correctly parses out the needed information.
+   The test is written to check the parsing ability of the address-parser.js function. The test ensures the function can correctly parse out the needed information.
 
    Your project structure should now look like this example:
 
-   ```bash
+   ```output
    -| package.json
    -| address-parser.js
    -| __tests__/
    ---| address-parser.js
    ```
 
-
-1. Open the package.json file and find the `scripts` section. Add this entry:
+1. Open the package.json file and find the `scripts` section. Replace the existing `test` action entry with the following code:
 
    ```json
    "test": "jest"
    ```
 
-   Close the file.
+   Save your changes and close the package.json file.
 
 1. Run the tests by entering this command in the terminal:
 
@@ -120,6 +113,6 @@ You're given some code that parses an address from a string. Your task should be
    Ran all test suites.
    ```
 
-   Success! Your test passes, and you've added testing by installing a dependency.
+   Success! Your test passes, and you added testing by installing a dependency.
 
-Congratulations. You've managed to successfully install Jest as a dependency, write tests for application code, and run the tests. Jest seems to deliver on its promise, and Tailwind Traders is likely to be happy with this evaluation.
+Congratulations. You successfully installed Jest as a dependency, wrote tests for application code, and ran the tests. Jest seems to deliver on its promise, and Tailwind Traders is likely to be happy with this evaluation.

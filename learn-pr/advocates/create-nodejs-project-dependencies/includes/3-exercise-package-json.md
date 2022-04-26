@@ -50,11 +50,11 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
 
 1. Edit the package.json file and modify these property values:
 
-    - `name`: `"tailwind-trader-api"`
-    - `description`: `"HTTP API to manage items from the Tailwind Traders database"`
-    - `main`: `"index.js"`
-    - `keywords`: `["api", "database"]`
-    - `author`: `"Sam"`
+    - `name`: "tailwind-trader-api"
+    - `description`: "HTTP API to manage items from the Tailwind Traders database"
+    - `main`: "index.js"
+    - `keywords`: ["api", "database"]
+    - `author`: "Sam"
 
    Your package.json file should now look like this code:
 
@@ -81,7 +81,7 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
    "start": "node ./src/index.js",
    ```
 
-1. Save and close the package.json file.
+   Save your changes and close the package.json file.
 
 1. Start your project with the `start` action by entering this command:
 
