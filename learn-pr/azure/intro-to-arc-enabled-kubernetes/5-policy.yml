@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-arc-enabled-kubernetes.5-policy
 metadata:
   title: Integrate an Azure Arc-enabled Kubernetes cluster with Azure Policy for Kubernetes
-  description: In this unit, you'll learn what is Azure Policy for Kubernetes and how to implement it.
+  description: In this unit, you'll learn about Azure Policy for Kubernetes and how to implement it.
   ms.date: 05/05/2022
   author: micrum
   ms.author: micrum
