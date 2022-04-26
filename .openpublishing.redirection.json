@@ -12750,11 +12750,6 @@
       "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/4-describe-azure-purview.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-resource-governance-capabilities-azure/4-describe-microsoft-purview",
-      "redirect_document_id": true
     }
   ]
 }
