@@ -10,12 +10,13 @@ metadata:
   ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Introduction to Natural Language Processing with PyTorch
-summary: In this module, we will explore different neural network architectures for dealing with natural language texts. In the recent years, **Natural Language Processing** (NLP) has experienced fast growth primarily due to the performance of the language models’ ability to accurately "understand" human language faster while using unsupervised training on large text corpora. We will learn about different NLP techniques such as using bag-of-words (BoW), embeddings and recurrent neural networks for classifying text from news headlines to one of the 4 categories (World, Sports, Business and Sci-Tech).
+summary: In this module, we will explore different neural network architectures for dealing with natural language texts. In the recent years, **Natural Language Processing** (NLP) has experienced fast growth primarily due to the performance of the language models’ ability to accurately "understand" human language faster while using unsupervised training on large text corpora. We will learn about different NLP techniques such as using bag-of-words (BoW), word embeddings and recurrent neural networks for classifying text from news headlines to one of the 4 categories (World, Sports, Business and Sci-Tech).
 abstract: |
   In this module you will:
   - Understand how text is processed for natural language processing tasks
   - Get introduced to using Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
   - Learn how to build text classification models  
+
 iconUrl: /learn/achievements/pytorch-natural-language-process.svg
 levels:
   - beginner
