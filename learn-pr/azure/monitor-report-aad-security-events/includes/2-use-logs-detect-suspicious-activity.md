@@ -167,7 +167,7 @@ In the **Download Audit Logs** pane, select a format to use for the data, CSV or
 
 ### Access audit logs through users, groups, and enterprise applications
 
-You access audit log data through your Azure Active Directory instance. But you can also access the audit log directly through users, groups, and enterprise applications. The data is prefiltered according to the access point that's being used.  If you access the audit logs through users, you see only audit log data that's related to users. The same applies to groups and enterprise applications.
+You also can access audit log data through your Azure Active Directory instance. But you also can access the audit logs directly through users, groups, and enterprise applications. The data is prefiltered according to the access point that's being used.  If you access the audit logs through users, you see only audit log data that's related to users. The same applies to groups and enterprise applications.
 
 To access the user audit logs from your Azure Active Directory instance, in the left menu under **Manage**, select **Users**. Then, under **Activity**, select **Audit logs**.
 

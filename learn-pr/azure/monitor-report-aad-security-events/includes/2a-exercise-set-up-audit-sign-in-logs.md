@@ -1,37 +1,37 @@
-In this exercise, you view your Azure Active Directory instance sign-in logs, select columns and filter data for the logs, and then download the logs. You also view your Azure Active Directory instance audit logs through the **Users** menu.
+In this exercise, you view your Azure Active Directory sign-in logs, select columns and filter data for the logs, and then download the logs. You also view your Azure Active Directory instance audit logs through the **Users** menu.
 
 In this exercise, you'll:
 
 - View sign-in logs for your Azure Active Directory instance.
-- Change columns to use in your sign-in logs.
+- Change columns to view in your sign-in logs.
 - Filter data to include in your sign-in logs view.
 - Download sign-in logs.
 - View audit logs through the **Users** menu
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics and dashboards.
+> This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics to view your sign-in and audit logs.
 >
 > If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you can create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## View Azure Active Directory sign-in logs
 
-To see the sign-in logs for your Azure Active Directory tenant:
+To see the sign-in logs for Azure Active Directory:
 
 1. In the Azure portal, go to your Azure Active Directory instance.
 
-1. In the left menu under **Monitoring**, select **Sign-ins**:
+1. In the left menu under **Monitoring**, select **Sign-in logs**:
 
 :::image type="content" source="../media/sign-in-activity.png" alt-text="Screenshot that shows the default table columns in the sign-in logs.":::
 
-## Change columns for sign-in logs
+## Change columns to use in your sign-in logs view
 
 Then, change the columns that appear for sign-in logs:
 
-1. In the menu bar, select **Columns**.
+1. In **Sign-in logs** in your Azure Active Directory instance, in the menu bar, select **Columns**.
 
    :::image type="content" source="../media/columns-menu.png" alt-text="Screenshot that shows selecting the Columns option in the sign-in logs menu.":::
 
-1. In the **Columns** pane, add a couple columns, like **Operating system** and **Flagged for review**. For this exercise, clear **IP address**.
+1. In the **Columns** pane, for this exercise, select **Operating system** and **Flagged for review** to add those columns. Clear **Resource ID** to remove that column.
 
 1. Select **Save**.
 
@@ -39,9 +39,9 @@ Then, change the columns that appear for sign-in logs:
 
 ## Filter data in sign-in logs
 
-Next, use add filters for the data in your sign-in logs:
+Next, add filters for the data in your sign-in logs:
 
-1. In the menu bar, select **Add filters**:
+1. In **Sign-in logs** in your Azure Active Directory instance, in the menu bar, select **Add filters**:
 
    :::image type="content" source="../media/add-filters-menu.png" alt-text="Screenshot of the Add filters button in the sign-in logs menu.":::
 
@@ -55,7 +55,7 @@ Next, use add filters for the data in your sign-in logs:
 
 Now, download the data in your view:
 
-1. In the menu bar, select **Download**:
+1. In **Sign-in logs** in your Azure Active Directory instance, in the menu bar, select **Download**:
 
    :::image type="content" source="../media/download-menu.png" alt-text="Screenshot of the menu bar with the Download button selected.":::
 
@@ -63,13 +63,11 @@ Now, download the data in your view:
 
    :::image type="content" source="../media/download-select.png" alt-text="Screenshot of the Download dialog details.":::
 
-## View audit logs through the Users menu
-
-You access audit log data through your Azure Active Directory instance. But you can also access the audit log directly through users, groups, and enterprise applications.
+## View audit logs by using the Users menu
 
 To access audit logs through your Azure Active Directory **Users** menu:
 
-1. In the left menu under **Manage**, select **Users**
+1. In the left menu under **Manage**, select **Users**:
 
    :::image type="content" source="../media/users-menu.png" alt-text="Screenshot of the Users menu.":::
 

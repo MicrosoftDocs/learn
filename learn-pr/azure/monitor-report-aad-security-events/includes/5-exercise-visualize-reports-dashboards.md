@@ -19,7 +19,7 @@ In this exercise, you implement a dashboard for the security team, so they can s
 
     :::image type="content" source="../media/dashboard-blank.png" alt-text="Screenshot that shows how to create a new dashboard.":::
 
-1. At the prompt, name the dashboard **SecurityDashboard**, and then select **Done**. For now, leave the dashboard blank. In the next few steps, you'll be adding a report query to the dashboard.
+1. At the prompt, name the dashboard **SecurityDashboard**, and then select **Save**. For now, leave the dashboard blank. In the next few steps, you'll be adding a report query to the dashboard.
 
     :::image type="content" source="../media/dashboard-save.png" alt-text="Screenshot that shows how to save a dashboard.":::
 

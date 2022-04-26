@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.exercise-set-alerts
 metadata:
-  title: Exercise - Set an alert in your Log Analytics workspace
+  title: Exercise - Set an alert in your Log Analytics workspace and view alerts
   description: Exercise - Set and view an alert in your Log Analytics workspace.
   ms.date: 04/22/2022
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Set an alert in your Log Analytics workspace
+title: Exercise - Set an alert in your Log Analytics workspace and view alerts
 durationInMinutes: 10
 content: |
   [!include[](includes/3c-exercise-set-alerts.md)]

@@ -48,7 +48,7 @@ Select **Add diagnostic setting**. Here, you create a connection between the two
 
 In **Diagnostic setting name**, enter a name to use for the setting. Under **Logs**, for categories, select **AuditLogs** and **SignInLogs**.
 
-Select the **Send to Log Analytics** option, and then specify or create a Log Analytics workspace, and then select **Save**.  
+Select the **Send to Log Analytics** option, then specify or create a Log Analytics workspace, and then select **Save**.  
 
 You've now set up a data streaming process that will push audit and sign-in data to the Log Analytics workspace. Because it's a new service, it takes about 15 minutes for any data to appear in the workspace.
 

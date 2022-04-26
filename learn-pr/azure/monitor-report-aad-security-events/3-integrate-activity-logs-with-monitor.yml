@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.3-integrate-activity-logs-with-monitor
 metadata:
-  title: Integrate Azure Active Directory activity logs with Azure Monitor
-  description: Integrate Azure Active Directory activity logs with Azure Monitor.
+  title: Integrate Azure Active Directory activity logs with Log Analytics
+  description: Integrate Azure Active Directory activity logs with Log Analytics.
   ms.date: 04/22/2022
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Integrate activity logs with Azure Monitor logs
+title: Integrate activity logs with Log Analytics
 durationInMinutes: 7
 content: |
   [!include[](includes/3-integrate-activity-logs-with-monitor.md)]
@@ -28,12 +28,12 @@ quiz:
       explanation: You can run both table-based and search-based queries in your Log Analytics workspace.
   - content: 'What query filter command would you use to get *n* rows in no specific order?'
     choices:
-    - content: sort by
+    - content: `sort by``
       isCorrect: false
-      explanation: Use sort by to order the result set.
-    - content: take
+      explanation: Use `sort by`` to order the result set.
+    - content: `take``
       isCorrect: true
-      explanation: Use take on small datasets. It returns *n* rows from the result set in no specific order.
-    - content: top
+      explanation: Use `take`` on small datasets. It returns *n* rows from the result set in no specific order.
+    - content: `top``
       isCorrect: false
-      explanation: Top returns the top *n* rows of the result set.
+      explanation: The `top` command returns the top *n* rows of the result set.

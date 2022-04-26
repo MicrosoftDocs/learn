@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.exercise-integrate-logs-azure-monitor
 metadata:
-  title: Exercise - Integrate Azure Active Directory activity logs with Azure Monitor
-  description: Exercise - Integrate Azure Active Directory activity logs with Azure Monitor.
+  title: Exercise - Integrate Azure Active Directory activity logs with Log Analytics
+  description: Exercise - Integrate Azure Active Directory activity logs with Log Analytics.
   ms.date: 04/22/2022
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Integrate Azure Active Directory activity logs with Azure Monitor
+title: Exercise - Integrate Azure Active Directory activity logs with Log Analytics
 durationInMinutes: 10
 content: |
   [!include[](includes/3a-exercise-integrate-logs-azure-monitor.md)]

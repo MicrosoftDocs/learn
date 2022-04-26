@@ -1,13 +1,13 @@
 In this exercise, you create an alert from your activity log data, and then you view a saved alert.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics and dashboards.
+> This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics and alerts.
 >
 > If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you can create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Create an alert from your activity log data
 
-Alerts are similar to queries, but they run automatically in response to specific events. You can set a threshold against the result set, and if it's met, trigger an alert to let you know about it.
+First, set an alert for all administrative operations:
 
 1. In the Azure portal, go to your Log Analytics workspace.
 
@@ -23,7 +23,7 @@ Alerts are similar to queries, but they run automatically in response to specifi
 
    :::image type="content" source="../media/alert-conditions.png" alt-text="Screenshot that shows selecting details for an alert condition.":::
 
-1. Leave the default values for the settings for the alert logic, then select **Next: Actions >**, and then select **Next: Details >**.
+1. Then select **Next: Actions >**, and select **Next: Details >**.
 
 1. On the **Details** tab, select a subscription and resource group for the alert rule. Enter an alert rule name and optionally enter a description of the alert rule. Then, select **Review + create**.
 

@@ -1,14 +1,14 @@
-In this exercise, you create a Log Analytics workspace in your Azure sandbox by using the Azure portal. You then direct the audit and sign-in log files to your workspace. Next, you download and install the prebuilt user sign-in and audit log views from GitHub.
+In this exercise, you create a Log Analytics workspace in the Azure portal. You then direct the audit and sign-in log files to your Log Analytics workspace. Finally, you use a template workbook to create a workbook that holds a query report.
 
 In this exercise, you'll:
 
 - Create a Log Analytics workspace.
 - Send log files to your Log Analytics workspace.
-- Use a template in your Log Analytics workspace.
+- Use a workbook template to hold a query report.
 - View your saved workbook.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics and dashboards.
+> This exercise is optional. If you don't have an Azure account, you can read through the following instructions to understand how to use Log Analytics and workbooks.
 >
 > If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you can create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
@@ -16,7 +16,7 @@ In this exercise, you'll:
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Select **Create resource**.
+1. Select **Create a resource**.
 
 1. In the **Search** box, enter **log analytics**.
   
@@ -26,7 +26,7 @@ In this exercise, you'll:
 
    1. Under **Project details**, select the subscription to use for your workspace. Select an existing resource group or select **Create new** to create a new resource group.
 
-   1. Under **Instance details**, enter a name for the workspace. For this exercise, enter **ContosoWorkspace**, and append it with several characters to create a unique workspace name. For **Region**, Select the location nearest you.
+   1. Under **Instance details**, enter a name for the workspace. For this exercise, enter **ContosoWorkspace** and append the name with several characters to create a unique workspace name. For **Region**, select the location nearest you.
 
    :::image type="content" source="../media/log-analytics-workspace-add.png" alt-text="Screenshot that shows new Log Analytics workspace options.":::
 
@@ -34,9 +34,7 @@ In this exercise, you'll:
 
 1. Select **Create**.
 
-## Send log files to a Log Analytics workspace
-
-You've now created a Log Analytics workspace, where you can gather and do analytics on your user audit and sign-in data.
+## Send log files to your Log Analytics workspace
 
 To stream the audit and sign-in logs to your Log Analytics workspace:
 
@@ -46,7 +44,7 @@ To stream the audit and sign-in logs to your Log Analytics workspace:
 
    :::image type="content" source="../media/diagnostic-setting-add.png" alt-text="Screenshot that shows adding a new diagnostic setting.":::
 
-1. In the **Diagnostics setting** pane:
+1. In the **Diagnostic setting** pane:
 
    1. In **Diagnostic setting name**, enter a name for the setting, like *SendToLogAnalytics*.
    1. Under **Logs** > **Categories**, select **AuditLogs** and **SignInLogs**.  
@@ -56,9 +54,9 @@ To stream the audit and sign-in logs to your Log Analytics workspace:
 
 1. Select **Save**.  
 
-## Use a template in your Log Analytics workspace
+## Use a workbook template to hold a query report
 
-Next, begin with a workbook template to create a workbook to create a query report:
+Next, begin with a workbook template to create a workbook that will hold a query report:
 
 1. In the Azure portal, go to your Log Analytics workspace.
 
@@ -68,7 +66,7 @@ Next, begin with a workbook template to create a workbook to create a query repo
 
    :::image type="content" source="../media/workbooks-gallery-tiles.png" alt-text="Screenshot that shows a default workbooks template.":::
 
-1. For this exercise, you want to know the most common user event for last week. In your query editor, paste the following query:
+1. For this exercise, you want to know the most common user event for the past week. In your query editor, paste the following query:
 
     ```kusto
     AuditLogs
@@ -93,6 +91,6 @@ Next, begin with a workbook template to create a workbook to create a query repo
 
 ## View a saved workbook
 
-To view the workbook you saved, in the left menu under **General**, select **Workbooks**. Look for the workbook tile under **Recently modified workbooks**.
+To view the workbook you saved, still in your Log Analytics workspace, in the left menu under **General**, select **Workbooks**. Look for the workbook tile under **Recently modified workbooks**.
 
    :::image type="content" source="../media/workbooks-recently-modified.png" alt-text="Screenshot that shows how to find modified workbooks.":::
