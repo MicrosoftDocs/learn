@@ -14,9 +14,9 @@ To use a Log Analytics workspace and Azure Monitor logs, make sure that you have
 
 - Access to a Log Analytics workspace
 - Access to Azure Monitor logs
-- Access to Azure AD diagnostics settings
-- An Azure AD Premium 1 or Premium 2 subscription
-- Any of the following Azure AD roles:
+- Access to Azure Active Directory diagnostics settings
+- An Azure Active Directory Premium 1 or Premium 2 subscription
+- Any of the following Azure Active Directory roles:
   - Security Administrator
   - Security Reader
   - Report Reader
@@ -42,7 +42,7 @@ To put that into perspective, if your tenant has 1,000 users, your audit log wou
 
 ## Send user logs to the Log Analytics workspace
 
-Now that you've created a Log Analytics workspace, you assign the user audit and sign-in logs. All the data you want to use in Azure Monitor logs must be stored in a Log Analytics workspace. In the Azure portal, go to your Azure AD instance. Select the **Monitoring** tab, and then select **Diagnostics settings**.
+Now that you've created a Log Analytics workspace, you assign the user audit and sign-in logs. All the data you want to use in Azure Monitor logs must be stored in a Log Analytics workspace. In the Azure portal, go to your Azure Active Directory instance. Select the **Monitoring** tab, and then select **Diagnostics settings**.
 
 Select **Add diagnostic setting**. Here, you create a connection between the two log files and your Log Analytics workspace.
 

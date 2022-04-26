@@ -6,7 +6,7 @@ In this unit, you'll see two approaches to monitoring user behavior. The first a
 
 ## Azure Active Directory logs
 
-Azure AD captures log information for your entire Azure tenant. You can use the information in analysis and reporting. When you assess user behavior, you want to look at the activity logs and security logs that are collected for your tenant.  
+Azure Active Directory captures log information for your entire Azure tenant. You can use the information in analysis and reporting. When you assess user behavior, you want to look at the activity logs and security logs that are collected for your tenant.  
 
 Activity logs cover all of a user's behaviors and interactions with your network and its assets. You want to pay particular attention to two types of log files:
 
@@ -26,20 +26,20 @@ Sign-in log files hold a copy of all attempts to sign in to your network. The lo
 
 You can use sign-in log files to identify:
 
-- Patterns of user sign-in behavior
-- Trends in user sign-in activity over time
-- The overall status of all users who access your network
+- Patterns of user sign-in behavior.
+- Trends in user sign-in activity over time.
+- The overall status of all users who access your network.
 
 ### Prerequisites
 
 Because of the sensitive nature of log data that's captured by sign-in logs, access to the logs is reserved and limited. To use the sign-in log files, you must have:
 
-- An Azure AD Premium or higher subscription.
+- An Azure Active Directory Premium or higher subscription.
 - At least one user who has a Global Administrator, Report Reader, Security Reader, or Security Administrator role.
 
 ### Structure of a sign-in log file
 
-The first time the sign-in logging service is enabled, you might not see data for up to an hour. Azure captures a wide range of data about user activity, from access periods to the application that made the request, and more.  Access the sign-in log file in your Azure AD instance in the Azure portal.
+The first time the sign-in logging service is enabled, you might not see data for up to an hour. Azure captures a wide range of data about user activity, from access periods to the application that made the request, and more.  Access the sign-in log file in your Azure Active Directory instance in the Azure portal.
 
 To see the sign-in logs for your tenant, in the left menu under **Monitoring**, select **Sign-in logs**. The following example displays a typical view of the sign-in table data:
 
@@ -123,7 +123,7 @@ In the summary unit of this module, you'll find a link to a complete list of err
 
 ## Azure audit log files
 
-Audit files provide a history of every task that's done in your Azure AD tenant. Audit logs are maintained for compliance. They keep records of all your system activities. Recent activities might not be included in results for up to an hour after they occur.
+Audit files provide a history of every task that's done in your Azure Active Directory tenant. Audit logs are maintained for compliance. They keep records of all your system activities. Recent activities might not be included in results for up to an hour after they occur.
 
 ### Audit log prerequisites
 
@@ -131,7 +131,7 @@ To access the audit log files, at least one user in your tenant must have a Glob
 
 ### Structure of an audit log file
 
-Access the audit logs through the Azure portal. In the Azure portal, go to your Azure AD instance. In the left menu under **Monitoring**, select **Audit logs**.
+Access the audit logs through the Azure portal. In the Azure portal, go to your Azure Active Directory instance. In the left menu under **Monitoring**, select **Audit logs**.
 
 Like sign-in logs, you can modify audit logs to meet your specific needs. The default audit log view displays the following columns:
 
@@ -167,8 +167,8 @@ In the **Download Audit Logs** pane, select a format to use for the data, CSV or
 
 ### Access audit logs through users, groups, and enterprise applications
 
-You access audit log data through your Azure AD instance. But you can also access the audit log directly through users, groups, and enterprise applications. The data is prefiltered according to the access point that's being used.  If you access the audit logs through users, you see only audit log data that's related to users. The same applies to groups and enterprise applications.
+You access audit log data through your Azure Active Directory instance. But you can also access the audit log directly through users, groups, and enterprise applications. The data is prefiltered according to the access point that's being used.  If you access the audit logs through users, you see only audit log data that's related to users. The same applies to groups and enterprise applications.
 
-To access the user audit logs from your Azure AD instance, in the left menu under **Manage**, select **Users**. Then, under **Activity**, select **Audit logs**.
+To access the user audit logs from your Azure Active Directory instance, in the left menu under **Manage**, select **Users**. Then, under **Activity**, select **Audit logs**.
 
-To access a group's audit logs from your Azure AD instance, select **Groups** in the left menu.
+To access a group's audit logs from your Azure Active Directory instance, select **Groups** in the left menu.

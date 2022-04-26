@@ -10,7 +10,7 @@ In this unit, you learn how to enhance and customize the underlying report queri
 
 Dashboards provide an organized view of the resources in your Azure cloud instance. From a dashboard, you can organize and arrange your day-to-day and recurring operational tasks and activities. Each dashboard can be built around a specific activity, such as a task or a project.
 
-To create a new dashboard for your security team, in the Azure portal menu, select **Dashboard**. Select **New dashboard** > **Blank dashboard**.
+To create a new dashboard for your security team, in the Azure portal menu, select **Dashboard**. Begin with a blank dashboard.
 
 Enter a name for the dashboard a name. Select **Add tiles**, and then save the dashboard. Even though the dashboard contains no data, you have the option to share the dashboard. Select the **Share** option, and then confirm that the sharing and access controls are correct. To share, select **Publish**.
 
@@ -35,7 +35,7 @@ When you're satisfied that you have the data you want, select **Done editing**, 
 
 ## Pin query results to a dashboard
 
-You can pin query results to the dashboard so that they are easy to find and share:
+You can pin query results to the dashboard so that they're easy to find and share:
 
 In your Log Analytics workspace, under **General**, select **Logs**. In the **Queries** dialog, search for the query you created and run the query.
 
@@ -51,7 +51,7 @@ In a report tile on a dashboard, select the **Open in Logs blade** icon:
 
 :::image type="content" source="../media/report-open-logs-view.png" alt-text="Screenshot that shows the Open in Logs blade icon.":::
 
-Run the log query, and then select the **Export** dropdown. Select an export options:
+Run the log query, and then select the **Export** dropdown. Select an export option:
 
 - **Export to CSV - all columns**
 - **Export to CSV - displayed columns**

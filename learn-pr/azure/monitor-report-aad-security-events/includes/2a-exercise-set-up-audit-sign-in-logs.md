@@ -1,8 +1,8 @@
-In this exercise, you view your Azure AD instance sign-in logs, select columns and filter data for the logs, and then download the logs. You also view your Azure AD instance audit logs through the **Users** menu.
+In this exercise, you view your Azure Active Directory instance sign-in logs, select columns and filter data for the logs, and then download the logs. You also view your Azure Active Directory instance audit logs through the **Users** menu.
 
 In this exercise, you'll:
 
-- View sign-in logs for your Azure AD instance.
+- View sign-in logs for your Azure Active Directory instance.
 - Change columns to use in your sign-in logs.
 - Filter data to include in your sign-in logs view.
 - Download sign-in logs.
@@ -13,9 +13,9 @@ In this exercise, you'll:
 >
 > If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you can create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-## View Azure AD sign-in logs
+## View Azure Active Directory sign-in logs
 
-To see the sign-in logs for your Azure AD tenant:
+To see the sign-in logs for your Azure Active Directory tenant:
 
 1. In the Azure portal, go to your Azure Active Directory instance.
 
@@ -65,9 +65,9 @@ Now, download the data in your view:
 
 ## View audit logs through the Users menu
 
-You access audit log data through your Azure AD instance. But you can also access the audit log directly through users, groups, and enterprise applications.
+You access audit log data through your Azure Active Directory instance. But you can also access the audit log directly through users, groups, and enterprise applications.
 
-To access audit logs through your Azure AD **Users** menu:
+To access audit logs through your Azure Active Directory **Users** menu:
 
 1. In the left menu under **Manage**, select **Users**
 

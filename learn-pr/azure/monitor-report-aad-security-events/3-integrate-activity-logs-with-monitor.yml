@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.3-integrate-activity-logs-with-monitor
 metadata:
-  title: Integrate activity logs with Azure Monitor logs
-  description: Integrate activity logs with Azure Monitor logs.
+  title: Integrate Azure Active Directory activity logs with Azure Monitor
+  description: Integrate Azure Active Directory activity logs with Azure Monitor.
   ms.date: 04/22/2022
   author: MarkusVi
   ms.author: markvi
@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What are the two types of queries you can write in Azure Monitor?'
+  - content: 'What are the two types of queries you can write to view your Azure Active Directory logs?'
     choices:
     - content: Kusto and search-based
       isCorrect: false
-      explanation: Kusto is the query language used by Azure Monitor to build queries.
+      explanation: Kusto is the *query language* you use to build queries.
     - content: Table-based and Kusto
       isCorrect: false
-      explanation:  Kusto is the query language used by Azure Monitor to build queries.
+      explanation: Kusto is the *query language* you use to build queries.
     - content: Table-based and search-based
       isCorrect: true
-      explanation: You can run both table-based and search-based queries in Azure Monitor.
+      explanation: You can run both table-based and search-based queries in your Log Analytics workspace.
   - content: 'What query filter command would you use to get *n* rows in no specific order?'
     choices:
     - content: sort by
