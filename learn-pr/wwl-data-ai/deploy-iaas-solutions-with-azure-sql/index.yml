@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-iaas-solutions-with-azure-sql
+metadata:
+  title: Deploy IaaS solutions with Azure SQL
+  description: "Deploy IaaS solutions with Azure SQL"
+  ms.date: 04/26/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy IaaS solutions with Azure SQL
+summary: Configure virtual machine sizing, storage, and networking options to ensure adequate performance for your database workloads. Choose and configure appropriate high availability options.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore the basics of SQL Server in an Infrastructure as a Service (IaaS) offering
+  - Learn the available options for provisioning and deployment
+  - Deploy SQL Server into an Azure Virtual Machine
+prerequisites: |
+  - Familiarity with on-premises virtualization technologies, including: VMs, virtual networking, and virtual hard disks.
+  - Familiarity with network configuration, including TCP/IP, Domain Name System (DNS), virtual private networks (VPNs), firewalls, and encryption technologies.
+  - Ability to create a on-premises SQL Server database, including the configuration  of data files and log files.
+  - Experience creating and configuring resources using the Azure portal.
+iconUrl: /learn/achievements/deploy-sql-server-in-a-virtual-machine.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- database-administrator
+products:
+- azure
+- azure-sql-database
+- sql-server
+units:
+- learn.wwl.deploy-iaas-solutions-with-azure-sql.introduction
+- learn.wwl.deploy-iaas-solutions-with-azure-sql.explain-iaas-options-deploy-azure
+- learn.wwl.deploy-iaas-solutions-with-azure-sql.understand-hybrid-scenarios
+- learn.wwl.deploy-iaas-solutions-with-azure-sql.explore-performance-and-security
+- learn.wwl.deploy-iaas-solutions-with-azure-sql.explain-high-availability-and-disaster-recovery-options
+- learn.wwl.deploy-iaas-solutions-with-azure-sql.provision-on-azure-virtual-machines
+- learn.wwl.deploy-iaas-solutions-with-azure-sql.knowledge-check
+- learn.wwl.deploy-iaas-solutions-with-azure-sql.summary
+badge:
+  uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.badge
