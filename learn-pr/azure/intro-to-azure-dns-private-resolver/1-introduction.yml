@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-dns-private-resolver.introduction
-title: Introduction
+title: Introduction 
 metadata:
   unitType: introduction
-  title: introduction
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Introduction
+  description: "Introduction to Azure DNS Private Resolver and how use to resolve DNS queries from on-premises to cloud."
   ms.date: 4/26/2022
   author: ricmmartins
   ms.author: ricmart
