@@ -104,7 +104,7 @@ To change the title of an item in a dashboard or change the dashboard view:
 
     :::image type="content" source="../media/dashboard-edit.png" alt-text="Screenshot of editing a report on the dashboard.":::
 
-1. To change how an item appears in the dashboard, select the horizontal ellipsis, and then select **Customize** (pencil icon). Select from the options to change the tile appearance on the dashboard.
+1. To change how an item appears in the dashboard, select the horizontal ellipsis, and then select **Customize** (pencil icon). Select from the options to change the tile appearance on the dashboard, and then select **Done customizing**.
 
    :::image type="content" source="../media/dashboard-customize.png" alt-text="Screenshot of customizing a report on the dashboard.":::
 

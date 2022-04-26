@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.set-alerts
 metadata:
-  title: Integrate activity logs with Azure Monitor logs
-  description: Integrate activity logs with Azure Monitor logs.
+  title: Set and view alerts for Azure Monitor logs
+  description: Set and view alerts for Azure Monitor logs.
   ms.date: 04/22/2022
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Integrate activity logs with Azure Monitor logs
+title: Set and view alerts for Azure Monitor logs
 durationInMinutes: 7
 content: |
   [!include[](includes/3b-set-alerts.md)]
