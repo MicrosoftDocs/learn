@@ -3,7 +3,7 @@ uid: learn.cloud-adoption-framework-strategy
 metadata:
   title: Prepare for successful cloud adoption with a well-defined strategy
   description: Success in cloud adoption depends on having a clear strategy that helps a team understand executive direction and regularly measure progress. This module will help you capture the cloud adoption strategy you need to drive your success.
-  ms.date: 04/18/2022
+  ms.date: 04/25/2022
   author: BrianBlanchard
   ms.author: bblanch
   ms.topic: interactive-tutorial
@@ -15,6 +15,7 @@ abstract: |
   - Create clarity for a corporate strategy to ensure that all team members are working toward common goals. 
   - Establish metrics to create clarity, help the team learn, and systematically work toward your organizational objectives.
   - Evaluate financial considerations to understand the value of cloud adoption.
+  - Assess your strategy using the Cloud Adoption Strategy.
   - Evaluate technical considerations to help the team prepare for successful cloud adoption projects.
 prerequisites: | 
   - Foundational understanding of cloud adoption.
