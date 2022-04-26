@@ -136,7 +136,7 @@ Each of these approaches has a few specific and some shared considerations to ke
 
 - With both approaches, you'll want to ensure that you address configuration drift; as new configuration is rolled out, you'll need to ensure that existing systems are updated accordingly.
 
-Automating resource deployment can be a massive benefit to your environment. The amount of time saved and the amount of errors that are reduced can move your operational capabilities to another level.
+Automating resource deployment can be a massive benefit to your environment. The amount of time saved and the number of errors that are reduced can move your operational capabilities to another level.
 
 ## Automation of operational tasks
 
