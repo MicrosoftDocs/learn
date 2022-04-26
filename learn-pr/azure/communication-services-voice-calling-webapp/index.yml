@@ -3,14 +3,14 @@ uid: learn.communication-services-voice-calling-webapp
 metadata:
   moduleType: standard
   title: Create a voice calling web app with Azure Communication Services
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: "In this module, you'll create a basic web app that can be used for voice calling with Azure Communication Services."
   ms.date: 04/20/2022
   author: ProbablePrime
   ms.author: rifox
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create a voice calling web app with Azure Communication Services
-summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: "In this module, you'll create a basic web app that can be used for voice calling with Azure Communication Services."
 abstract: |
   By the end of this module, you'll be able to:
   - Create and configure an Azure Communication Services resource
