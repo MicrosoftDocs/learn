@@ -47,20 +47,20 @@ Azure Arc is an example of such solution. It consists of a set of technologies t
 
 Azure Arc supports Azure integration in several scenarios for different types of resources residing outside of Azure in the following scenarios:
 
-- Azure Arc enabled servers - physical and virtual machines (VMs) running Windows or Linux operating system. 
-- Azure Arc enabled SQL Server - SQL Server instances running on Azure Arc enabled servers.
-- Azure Arc enabled Kubernetes - a wide range of Kubernetes distributions.
+- Azure Arc-enabled servers - physical and virtual machines (VMs) running Windows or Linux operating system.
+- SQL Server on Azure Arc-enabled servers - SQL Server instances running on Azure Arc-enabled servers.
+- Azure Arc-enabled Kubernetes - a wide range of Kubernetes distributions.
 - Azure Stack HCI - physical clusters with virtualized workloads and containerized workloads.
 - Azure Kubernetes Service on Azure Stack HCI - Azure Kubernetes Service (AKS) running on Azure Stack HCI clusters.
-- Azure Arc enabled data services - Azure SQL Managed Instance and PostgreSQL Hyperscale services running on Azure Arc enabled Kubernetes or Azure Kubernetes Service on Azure Stack HCI.
+- Azure Arc-enabled data services - Azure SQL Managed Instance and PostgreSQL Hyperscale services running on Azure Arc-enabled Kubernetes or Azure Kubernetes Service on Azure Stack HCI.
 
 > [!NOTE]
-> You can use Azure Arc enabled servers to manage nodes of Kubernetes clusters.
+> You can use Azure Arc-enabled servers to manage nodes of Kubernetes clusters.
 
 > [!NOTE]
 > Verify that the Azure Arc features you intend to use in your production environment are generally available.
 
-In each of the Azure Arc enabled scenarios, Azure Arc relies on a locally installed agent to establish a logical connection between the local resource and Azure. By virtue of establishing this connection, a non-Azure resource automatically becomes a hybrid Azure resource, with its own identity represented by an Azure Resource Manager resource ID. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources. Once you Arc-enable a non-Azure resource, you can use Azure Resource Manager to manage and monitor its configuration and operations. 
+In each of the Azure Arc-enabled scenarios, Azure Arc relies on a locally installed agent to establish a logical connection between the local resource and Azure. By virtue of establishing this connection, a non-Azure resource automatically becomes a hybrid Azure resource, with its own identity represented by an Azure Resource Manager resource ID. Azure Resource Manager serves as the management interface that allows you to create, modify, and delete Azure resources. Once you Arc-enable a non-Azure resource, you can use Azure Resource Manager to manage and monitor its configuration and operations. 
 
 ### What are the key benefits of Azure Arc?
 
@@ -68,9 +68,9 @@ A number of Azure Arc benefits are independent of the resource type, since they 
 
 - The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.
 - A single, comprehensive inventory of organizational assets across multi-clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.
-- A consolidated view of Azure and Azure Arc enabled resources via the Azure portal, Azure Command Line Interface (CLI), Azure PowerShell, and Representational State Transfer (REST) Application Programming Interface (API).
+- A consolidated view of Azure and Azure Arc-enabled resources via the Azure portal, Azure Command Line Interface (CLI), Azure PowerShell, and Representational State Transfer (REST) Application Programming Interface (API).
 - Delegation of permissions on the management plane by using Azure Role Based Access Control (RBAC).
-- Support for the resource context access to Log Analytics data. Resource context allows you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because each Azure Arc enabled server, cluster, or data service exists as an Azure resource, you can control access to its Log Analytics logs by relying on RBAC permissions assigned to that resource.
+- Support for the resource context access to Log Analytics data. Resource context allows you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because each Azure Arc-enabled server, cluster, or data service exists as an Azure resource, you can control access to its Log Analytics logs by relying on RBAC permissions assigned to that resource.
 - Integration with Azure Monitor. You can use Azure Monitor to help monitor and manage your server resources. Azure Monitor is a core component of the Microsoft strategy to extend comprehensive, cloud-based monitoring functionality beyond Azure to on-premises datacenters and to Microsoft and other cloud providers.
 
 Choose the best response for each of the following questions. Then select "Check your answers".

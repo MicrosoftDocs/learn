@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-enabled-kubernetes.5-policy
 metadata:
-  title: Integrate an Azure Arc enabled Kubernetes cluster with Azure Policy for Kubernetes
+  title: Integrate an Azure Arc-enabled Kubernetes cluster with Azure Policy for Kubernetes
   description: In this unit, you'll learn what is Azure Policy for Kubernetes and how to implement it.
-  ms.date: 12/14/2020
+  ms.date: 05/05/2022
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
-title: Integrate an Azure Arc enabled Kubernetes cluster with Azure Policy for Kubernetes
+title: Integrate an Azure Arc-enabled Kubernetes cluster with Azure Policy for Kubernetes
 durationInMinutes: 6
 content: |
   [!include[](includes/5-policy.md)]
@@ -35,7 +35,7 @@ quiz:
     - content: "Azure Kubernetes Service running on Azure Stack HCI"
       isCorrect: false
       explanation: "This is supported."
-    - content: "Azure Arc enabled Kubernetes"
+    - content: "Azure Arc-enabled Kubernetes"
       isCorrect: false
       explanation: "This is supported."
     - content: "AKS Engine"
@@ -43,4 +43,4 @@ quiz:
       explanation: "This is supported."
     - content: "OpenShift"
       isCorrect: true
-      explanation: "This is unsupported directly, although it is supported if the cluster has the Azure Arc enabled Kubernetes installed."
+      explanation: "This is unsupported directly, although it is supported if the cluster has the Azure Arc-enabled Kubernetes installed."

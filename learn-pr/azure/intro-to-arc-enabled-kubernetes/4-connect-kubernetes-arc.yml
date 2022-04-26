@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
 metadata:
   title: Connect Kubernetes clusters to Azure Arc
   description: In this unit you'll learn how to connect an Azure Arc-enabled Kubernetes cluster.
-  ms.date: 12/14/2020
+  ms.date: 05/05/2022
   author: micrum
   ms.author: micrum
   ms.topic: interactive-tutorial
@@ -34,7 +34,7 @@ quiz:
     choices:
     - content: "2.15"
       isCorrect: true
-      explanation: "You need an Azure CLI version 2.15 or newer installed on your management computer. This is necessary to install Azure Arc enabled Kubernetes CLI extensions."
+      explanation: "You need an Azure CLI version 2.15 or newer installed on your management computer. This is necessary to install Azure Arc-enabled Kubernetes CLI extensions."
     - content: "1.15"
       isCorrect: false
       explanation: "The version 2.15 of an Azure CLI is sufficient."

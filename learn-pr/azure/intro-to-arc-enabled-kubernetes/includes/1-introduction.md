@@ -16,8 +16,8 @@ After completing this module, you'll be able to:
 
 - Describe Kubernetes, Azure Arc, and Azure Arc-enabled Kubernetes.
 - Connect Kubernetes clusters to Azure Arc.
-- Manage Azure Arc enabled Kubernetes clusters by using GitOps.
-- Integrate Azure Arc enabled Kubernetes cluster with Azure services like Azure Monitor and Azure Policy.
+- Manage Azure Arc-enabled Kubernetes clusters by using GitOps.
+- Integrate Azure Arc-enabled Kubernetes cluster with Azure services like Azure Monitor and Azure Policy.
 
 ## Prerequisites
 
