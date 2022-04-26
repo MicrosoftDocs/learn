@@ -58,7 +58,7 @@ Here are some patterns that you can configure for major/minor/patch version:
 |---------------------------|---------------------------------------|
 |x.0.0 or *&nbsp;(asterisk) | Update to the highest _major_ version.  |
 |1.x.1 or ^&nbsp;(insert)   | Update to only the _minor_ version.     |
-|1.1.x or ~&nbsp;(tilde)    | Update to the latest _patch_ version. <sup>1</sup>  |
+|1.1.x or ~&nbsp;(tilde)    | Update to the latest _patch_ version.<sup>1</sup>  |
 
 <sup>**1**</sup> You can use the pattern "~1.0.0" to update only the patch version. The pattern causes an update to the value "equal to or greater than in the same range."
 
