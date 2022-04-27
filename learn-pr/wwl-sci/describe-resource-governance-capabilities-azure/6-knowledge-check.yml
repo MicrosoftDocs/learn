@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/18/2022
+  ms.date: 04/26/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -39,14 +39,14 @@ quiz:
     - content: "Use Azure resource locks."
       isCorrect: false
       explanation: "Incorrect. Azure resource locks prevent resources from being accidentally deleted or changed."
-  - content: "Which application of Azure Purview is used to capture metadata about enterprise data, to identify and classify sensitive data?"
+  - content: "Which application of Microsoft Purview is used to capture metadata about enterprise data, to identify and classify sensitive data?"
     choices:
     - content: "Data Catalog."
       isCorrect: false
-      explanation: "Incorrect. Data Catalog enables business and technical users to quickly and easily find relevant data."
+      explanation: "Incorrect. Microsoft Purview Data Catalog enables business and technical users to quickly and easily find relevant data."
     - content: "Data Map."
       isCorrect: true
-      explanation: "Correct. Azure Purview Data Map is able to capture metadata about enterprise data, to identify and classify sensitive data."
+      explanation: "Correct. Microsoft Purview Data Map is able to capture metadata about enterprise data, to identify and classify sensitive data."
     - content: "Data Insights."
       isCorrect: false
-      explanation: "Incorrect. Data Insights provides a bird’s eye view of what data is actively scanned, where sensitive data is, and how it moves."
+      explanation: "Incorrect. Microsoft Purview Data Insights provides a bird’s eye view of what data is actively scanned, where sensitive data is, and how it moves."

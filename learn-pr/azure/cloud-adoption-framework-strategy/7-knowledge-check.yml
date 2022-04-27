@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Test your knowledge of strategy methodology.
-  ms.date: 06/14/2021
+  ms.date: 04/25/2022
   author: BrianBlanchard
   ms.author: bblanch
   ms.topic: interactive-tutorial
@@ -70,3 +70,17 @@ quiz:
     - content: IT and cloud vendors.
       isCorrect: false
       explanation: Although these personas are important, it's imperative to achieve organizational alignment among all key stakeholders.
+  - content: What tool can you use to estimate your cost savings against pay-as-you-go pricing by optimizing Azure offers and benefits for VMs? 
+    choices:
+    - content: The Azure Pricing Calculator
+      isCorrect: false
+      explanation: Incorrect. The Azure Pricing Calculator is used solely to configure and estimate the costs for Azure products.
+    - content: The Cloud Adoption Strategy Evaluator
+      isCorrect: false
+      explanation: Incorrect. The Cloud Adoption Strategy Evaluator is used to assess your strategy posture across distinct areas of the Strategy methodology.
+    - content: The VM Cost Estimator
+      isCorrect: true
+      explanation: Correct. The VM Cost Estimator allows you to estimate your cost savings against pay-as-you-go pricing by optimizing Azure offers and benefits for VMs like Azure Hybrid Benefit and reserved instances.
+    - content: ROI
+      isCorrect: false
+      explanation: Incorrect. ROI is the amount of return produced from an initial investment.
