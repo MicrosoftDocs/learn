@@ -61,7 +61,7 @@ You can get these values from the connection string.
 
    Paste the connection string between the quotation marks.
 
-2. If you used a name different from **salesmessages** for the queue name, update the value for variable `QueueName` in the code.
+2. If you used a name different from **salesmessages** for the queue name, update the value for `QueueName` property in the code.
 
     ```csharp
     const string QueueName = "salesmessages";
