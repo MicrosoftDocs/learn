@@ -105,4 +105,4 @@ The **Sensitivity label insights** report has details about the sensitivity labe
 
 - Labeling activity
 
-:::image type="content" source="../media/4-sensitivity-labels" alt-text="Screenshot that depicts the Sensitivity labels insights (preview) pane." border="false":::
+:::image type="content" source="../media/4-sensitivity-labels.png" alt-text="Screenshot that depicts the Sensitivity labels insights (preview) pane." border="false":::
