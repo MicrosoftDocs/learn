@@ -6,7 +6,7 @@ Now, you’re able to increase your confidence in, and the security of, your Azu
 
 ## More resources
 
-- To learn more about governance of your deplloyment processes, see [End-to-end governance in Azure when using CI/CD](/azure/architecture/example-scenario/governance/end-to-end-governance-in-azure).
+- To learn more about governance of your deployment processes, see [End-to-end governance in Azure when using CI/CD](/azure/architecture/example-scenario/governance/end-to-end-governance-in-azure).
 - Learn more about [Azure landing zones](/azure/cloud-adoption-framework/ready/landing-zone/).
 - In the Bicep documentation, there is guidance about using Bicep to deploy several types of Azure resources:
   - [Create Azure RBAC resources by using Bicep](/azure/azure-resource-manager/bicep/scenarios-rbac)
