@@ -5,7 +5,7 @@ When you deploy your infrastructure as code you can automate your deployments, i
 
 ## Example scenario
 
-Suppose you work as the Azure administrator at a toy company. Over the last several months, you and your team have been converting your Azure deployments to use Bicep, and you've automated your deployment processes by using Azure Pipelines and GitHub Actions. But your team still has some members who haven't quite adopted the mindset of deploying all of their changes as code.
+Suppose you work as the Azure administrator at a toy company. Over the last several months, you and your team have been converting your Azure deployments to use Bicep, and you've automated your deployment processes by using pipelines. But your team still has some members who haven't quite adopted the mindset of deploying all of their changes as code.
 
 Recently you had several situations where people have deployed to Azure using different processes:
 
