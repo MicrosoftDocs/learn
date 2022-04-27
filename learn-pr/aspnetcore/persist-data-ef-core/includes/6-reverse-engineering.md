@@ -20,7 +20,7 @@ ContosoPizza's manager has asked you to add an endpoint to list coupons from an 
     - Specifies the `Microsoft.EntityFrameworkCore.Sqlite` database provider should be used.
     - Specifies directories for the resulting `DbContext` and model classes.
 
-1. Open *Models\Coupon.cs*. The `Expiration` property is defined as a string, since Sqlite doesn't have a datetime type. Change `Expiration`'s type to a from a `string?` to a `DateTime`. EF Core will manage the conversion of datetime to string data.
+1. Open *Models\Coupon.cs*. The `Expiration` property is defined as a string, since SQLite doesn't have a datetime type. Change `Expiration`'s type to a from a `string?` to a `DateTime`. EF Core will manage the conversion of datetime to string data.
 
     ```csharp
     using System;
@@ -81,7 +81,7 @@ ContosoPizza's manager has asked you to add an endpoint to list coupons from an 
 1. In *Program.cs*, replace the `// Add the PromotionsContext` comment with the following code:
 
     ```csharp
-    builder.Services.AddSqlite<PromotionsContext>("Data Source=./Promotions/Promotions.db"));
+    builder.Services.AddSqlite<PromotionsContext>("Data Source=./Promotions/Promotions.db");
     ```
 
     The preceding registers `PromotionsContext` with the dependency injection system.
