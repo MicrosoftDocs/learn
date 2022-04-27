@@ -14,7 +14,7 @@ GraphiQL allows you to do the following:
 
 ## Use data in a page component
 
-When you create a page component that wants to use data from the above mentioned graph, there are two things you will do:
+When you create a page component that wants to use data from the above mentioned graph, there are three things you will do:
 
 1. **Define a query**. Craft a query in the GraphQL query language that asks for a resource and some columns on that resource.
 1. **Write the code to Execute the query**. In your page's `.js` file, call the `graphql()` function with your query as an input and store the result in a variable named `query`. Here's an example:
@@ -28,7 +28,7 @@ When you create a page component that wants to use data from the above mentioned
 
 ## A plugin example: loading images from files
 
-Data can be almost anything. Gatsby helps you pull in data and place it in its data graph using plugins. The plugin `gatsby-source-filesystem` looks at your file system and populates its data graph based on that. What it does is that it looks through the file system, on a place we specify and make the results available in the Graph. Let's have look at how this plugin is configured in `gatsby-config.js`:
+Data can be almost anything. Gatsby helps you pull in data and place it in its data graph using plugins. The plugin `gatsby-source-filesystem` looks at your file system and populates its data graph based on that. What it does is that it looks through the file system, on a place we specify and makes the results available in the Graph. Let's have look at how this plugin is configured in `gatsby-config.js`:
 
 ```javascript
 {
