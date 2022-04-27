@@ -156,7 +156,7 @@ Containers in the same container group will share some properties, such as the u
     az container create -g $rg --file $aci_yaml_file
     ```
 
-1. You can now extract the IP address of the Azure Container Instances (it should be a private IP address) and access it via HTTPS from the test Virtual Machine. You should use the flag `-k` with curl so that it disables certificate validation, since you are using self-signed certificate in this unit. The `api/healthcheck` endpoint of the API should response with an `OK`:
+1. You can now extract the IP address of the Azure Container Instances (it should be a private IP address) and access it via HTTPS from the test Virtual Machine. You should use the flag `-k` with curl so that it disables certificate validation, since you are using self-signed certificate in this unit. The `api/healthcheck` endpoint of the API should respond with an `OK`:
 
     ```azurecli
     # Test
