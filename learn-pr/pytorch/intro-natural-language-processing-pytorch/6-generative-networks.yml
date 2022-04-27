@@ -14,8 +14,10 @@ durationInMinutes: 8
 sandbox: true
 notebook: notebooks/6-generative-networks.ipynb
 quiz:
+  title: Check your knowledge
   questions:
-    - content: "Recurrent neural network is called recurrent, because:"
+    - content: |  
+    	Recurrent neural network is called recurrent, because:
       choices:
         - content: "A network is applied for each input element, and output from the previous application is passed to the next one"
           isCorrect: true

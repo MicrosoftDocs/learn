@@ -14,8 +14,10 @@ durationInMinutes: 15
 sandbox: true
 notebook: notebooks/5-recurrent-networks.ipynb
 quiz:
+  title: Check your knowledge
   questions:
-    - content: "We want to train a neural network to generate new funny words for children's book. Which architecture can we use?"
+    - content: | 
+	We want to train a neural network to generate new funny words for children's book. Which architecture can we use?
       choices:
         - content: "Word-level LSTM"
           isCorrect: false
