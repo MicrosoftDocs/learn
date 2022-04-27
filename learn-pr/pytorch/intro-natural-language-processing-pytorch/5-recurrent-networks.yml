@@ -32,7 +32,7 @@ quiz:
           isCorrect: false
           explanation: "Fully connected linear network (perceptron) isn't a good architecture for text modeling, because they can't capture common patterns effectively."
     - content: |  
-      Recurrent neural network is called recurrent, because:
+       Recurrent neural network is called recurrent, because:
       choices:
         - content: "A network is applied for each input element, and output from the previous application is passed to the next one"
           isCorrect: true
