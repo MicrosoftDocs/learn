@@ -6,6 +6,7 @@ This module uses the Learn sandbox with a *four-hour subscription*. The subscrip
 
 With the Learn sandbox, you can create and use resources without creating your own subscription with a credit card. The subscription and resource group are already created for you. As part of the sandbox, you use that subscription to create the resources necessary to deploy your web app.
 
+
 ## Create resources from Visual Studio Code
 
 In order to use Visual Studio Code with Azure, you need to:

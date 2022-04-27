@@ -1,5 +1,24 @@
 In this exercise, you'll create your App Service and Application Insights resources.
 
+## Fork the GitHub sample repository
+
+1. Open the [GitHub sample](https://github.com/Azure-Samples/msdocs-javascript-nodejs-server) `https://github.com/Azure-Samples/msdocs-javascript-nodejs-server` repository in a new browser tab or window.
+1. Select the **Fork** button to create your own fork of the sample repository.
+
+## Clone your fork to your local computer
+
+1. In Visual Studio Code, select <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> to open the command palette.
+1. Search for **Git: Clone** and select it.
+1. Enter your fork's URL of the sample repository. It should look something like this example:
+
+    |URL|
+    |--|
+    |https://github.com/YOUR-GITHUB-ALIAS/msdocs-javascript-nodejs-server|
+
+1. Select a local folder on your computer.
+1. When asked if you want to open the cloned repository, select **Open**.
+1. Visual Studio Code reopens with your local fork of the sample repository.
+
 ## Sign in to the Learn sandbox
 
 Select the **Sign in to activate sandbox** button to sign in. This step might include reviewing permissions. When you see **Sandbox activated!** with a time remaining on this page, this step is complete.
