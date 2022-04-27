@@ -111,12 +111,12 @@ To scan an Azure SQL Database that’s been configured using managed identities,
 
 1. On the **Review your scan** pane, select **Save and run**.
 
-### <a id="#sqlsp">Scan an Azure SQL Database configured with service principal for authentication</a>
+### Scan an Azure SQL Database configured with service principal for authentication</a>
 
 The service principal created in Azure AD must be granted the necessary permission to get metadata from your Azure SQL Database. To grant this permission, configure the Azure SQL Database with Azure AD authentication. Additionally, create an Azure AD user in the Azure SQL Database for your service principal.
 
 >[!Tip]
->Microsoft provides a PowerShell script that simplifies the process to [Create an Azure AD user in SQL Database using an Azure AD service principal](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-service-principal-tutorial#create-an-azure-ad-user-in-sql-database-using-an-azure-ad-service-principal).
+>Microsoft provides a PowerShell script that simplifies the process to [Create an Azure AD user in SQL Database using an Azure AD service principal](/azure/azure-sql/database/authentication-aad-service-principal-tutorial#create-an-azure-ad-user-in-sql-database-using-an-azure-ad-service-principal).
 
 The credentials for the service principal must be stored in Azure Key Vault. Use the same procedure described earlier to connect Azure Key Vault with your Microsoft Purview account. The secret that you create in Azure Key Vault will be used for your service principal and must contain the **Client credentials** value. You can retrieve this value from the app registration page representing your service principal.
 
@@ -139,7 +139,7 @@ To configure a scan of a database configured with SQL authentication, you need t
 
 After you establish a connection with Azure Key Vault, create credentials that use **SQL** **authentication** for your Azure SQL database.
 
-When you create the scan for Azure SQL Database, follow the same procedure described for <a href="#sqlsp">creating a scan configured with service principal for authentication</a>, but select **SQLAuthentication** for **Credentials**.
+When you create the scan for Azure SQL Database, follow the same procedure described for creating a scan configured with service principal for authentication, but select **SQLAuthentication** for **Credentials**.
 
 ### Manage the existing scan
 
