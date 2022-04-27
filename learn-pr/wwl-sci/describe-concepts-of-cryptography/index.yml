@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.describe-concepts-of-cryptography
+metadata:
+  title: Describe concepts of cryptography
+  description: "Describe concepts of cryptography"
+  ms.date: 04/22/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe concepts of cryptography
+summary: Cryptography is foundational to protecting the confidentiality, integrity, and availability of information; and defending against cyberattacks.  Throughout this module you learn about the different elements of cryptography and their application in cybsecurity.
+abstract: |
+  After completing this module, you will be able to:
+  *   Describe some of the basic concepts of cryptography
+  *   Describe encryption and is uses in cybersecurity
+  *   Describe hashing and digital signing
+  *   Describe the concept and use of digital certificates
+prerequisites: ""
+iconUrl: /learn/achievements/cryptography-describe-concepts.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+- student
+products:
+- azure
+- m365
+units:
+- learn.wwl.describe-concepts-of-cryptography.introduction
+- learn.wwl.describe-concepts-of-cryptography.describe-cryptography
+- learn.wwl.describe-concepts-of-cryptography.describe-encryption-its-use-cybersecurity
+- learn.wwl.describe-concepts-of-cryptography.describe-hashing-its-application-digital-signing
+- learn.wwl.describe-concepts-of-cryptography.describe-digital-certificates
+- learn.wwl.describe-concepts-of-cryptography.knowledge-check
+- learn.wwl.describe-concepts-of-cryptography.summary-resources
+badge:
+  uid: learn.wwl.describe-concepts-of-cryptography.badge

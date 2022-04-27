@@ -4,11 +4,12 @@ title: Flask fundamentals
 metadata:
   title: Flask fundamentals
   description: Learn the fundamentals of Flask.
-  ms.date: 10/23/2020
-  author: GeekTrainer
+  ms.date: 04/08/2022
+  author: acomfort248
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
+  ms.custom: team=nextgen
 durationInMinutes: 10
 content: |
   [!include[](includes/2-flask-fundamentals.md)]

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-roles-responsibilities-world-of-data.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which one of the following tasks is the responsibility of a database administrator?"
+    choices:
+    - content: "Backing up and restoring databases"
+      isCorrect: true
+      explanation: "Correct. Database Administrators back up the database and restore it when data is lost or corrupted."
+    - content: "Creating dashboards and reports"
+      isCorrect: false
+      explanation: "Incorrect. Database Administrators do not create dashboards and reports. They're generally created by a data analyst."
+    - content: "Creating pipelines to process data in a data lake"
+      isCorrect: false
+      explanation: "Incorrect. Data Engineers generally build data pipelines."
+  - content: "Which role is most likely to use Azure Data Factory to define a data pipeline for an ETL process?"
+    choices:
+    - content: "Database Administrator"
+      isCorrect: false
+      explanation: "Incorrect. Database administrators manage databases."
+    - content: "Data Engineer"
+      isCorrect: true
+      explanation: "Correct. Data engineers create data pipelines."
+    - content: "Data Analyst"
+      isCorrect: false
+      explanation: "Incorrect. Data analysts focus on data modeling and reporting."
+  - content: "Which single service would you use to implement data pipelines, SQL analytics, and Spark analytics?"
+    choices:
+    - content: "Azure SQL Database"
+      isCorrect: false
+      explanation: "Incorrect. Azure SQL Database does not include native functionality for data pipelines or Spark."
+    - content: "Microsoft Power BI"
+      isCorrect: false
+      explanation: "Incorrect. Power BI does not provide native support for data pipelines, SQL, or Spark."
+    - content: "Azure Synapse Analytics"
+      isCorrect: true
+      explanation: "Correct. Azure Synapse Analytics includes native support for data pipelines, SQL, and Spark."

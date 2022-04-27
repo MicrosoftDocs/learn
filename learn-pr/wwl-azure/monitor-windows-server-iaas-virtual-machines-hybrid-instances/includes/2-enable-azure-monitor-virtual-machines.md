@@ -37,7 +37,7 @@ You can also store and analyze near real-time and historical data by using Log A
 
 To learn more, review this five minute tutorial video on Azure Monitoring:
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qXeL]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qXeL]
 
 ## Monitor VMs
 

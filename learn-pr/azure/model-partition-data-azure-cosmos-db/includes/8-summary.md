@@ -12,6 +12,7 @@ We also modeled the product category and product tag entities. And we used a spe
 
 ## Learn more
 
+- [Optimize databases by using advanced modeling patterns for Azure Cosmos DB](/learn/modules/advanced-modeling-patterns-azure-cosmos-db/)
 - [Understanding the differences between NoSQL and relational databases](/azure/cosmos-db/relational-nosql)
 - [Data modeling in Azure Cosmos DB](/azure/cosmos-db/modeling-data)
 - [How to model and partition data on Azure Cosmos DB using a real-world example](/azure/cosmos-db/how-to-model-partition-example)

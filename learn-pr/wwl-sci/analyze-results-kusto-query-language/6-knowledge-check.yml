@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/22/2021
+  ms.date: 04/26/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -29,15 +30,15 @@ quiz:
       explanation: "Correct. `dcount` provides a distinct count."
   - content: "The `arg_max()` function will do which of the following?"
     choices:
-    - content: "Return the maximum value across a group."
+    - content: "Returns the maximum value for each column passed to the function."
       isCorrect: false
       explanation: "Incorrect. The `max()` function will return the maximum value across a group."
-    - content: "Return a JSON Array of the max values."
+    - content: "Returns a JSON Array of maximum values for each column passed to the function."
       isCorrect: false
-      explanation: "Incorrect. The `arg_max` function returns the most current row in the result set based on the by clause."
-    - content: "Return the most current row."
+      explanation: "Incorrect. The `arg_max` function returns a row selected based on the row having the max value for an expression."
+    - content: "Returns a row selected based on the row having the max value for an expression."
       isCorrect: true
-      explanation: "Correct. The `arg_max` function returns the most current row in the result set based on the by clause."
+      explanation: "Correct. The `arg_max` function returns a row selected based on the row having the max value for an expression."
   - content: "The `bin()` function provides the most value to which type of chart?"
     choices:
     - content: "`scatterchart`"

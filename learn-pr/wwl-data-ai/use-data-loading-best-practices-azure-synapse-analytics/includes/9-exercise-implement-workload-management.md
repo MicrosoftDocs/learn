@@ -218,7 +218,7 @@ Let's start by experimenting with different parameters.
         --- Creates a workload group 'CEODemo'.
             Create  WORKLOAD GROUP CEODemo WITH  
         (MIN_PERCENTAGE_RESOURCE = 26 -- integer value
-            ,REQUEST_MIN_RESOURCE_GRANT_PERCENT = 3.25 -- factor of 26 (guaranteed more than 4 concurrencies)
+            ,REQUEST_MIN_RESOURCE_GRANT_PERCENT = 3.25 -- factor of 26 (guaranteed more than 8 concurrencies)
         ,CAP_PERCENTAGE_RESOURCE = 100
         )
         --- Creates a workload Classifier 'CEODreamDemo'.

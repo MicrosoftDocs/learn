@@ -3,9 +3,9 @@ uid: learn.azure-sql-secure-data
 metadata:
   title: Secure your data with Azure SQL
   description: Secure your data with Azure SQL
-  ms.date: 08/05/2020
+  ms.date: 01/07/2022
   author: amthomas46
-  ms.author: antho
+  ms.author: bobward
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your data with Azure SQL

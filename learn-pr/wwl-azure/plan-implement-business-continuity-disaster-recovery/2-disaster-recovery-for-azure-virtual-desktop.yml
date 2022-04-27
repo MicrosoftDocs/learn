@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-business-continuity-disaster-recovery.disaster-recovery-for-azure-virtual-desktop
+title: Disaster recovery for Azure Virtual Desktop
+metadata:
+  title: Disaster recovery for Azure Virtual Desktop
+  description: "Disaster recovery for Azure Virtual Desktop"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-disaster-recovery-for-azure-virtual-desktop.md)]

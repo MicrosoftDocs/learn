@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop
+metadata:
+  title: Implement and manage networking for Azure Virtual Desktop
+  description: "Implement and manage networking for Azure Virtual Desktop"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement and manage networking for Azure Virtual Desktop
+summary: See how to monitor and repair health of their Azure Virtual Desktop including virtual machines, virtual networks, application gateways, and load balancers.
+abstract: |
+  After completing this module, you'll be able to:
+  *  Recommend a solution for Azure Virtual Desktop network connectivity.
+  *  Implement Azure virtual network connectivity for Azure Virtual Desktop.
+  *  Describe network security for Azure Virtual Desktop.
+  *  Configure Azure Virtual Desktop session hosts using Microsoft Bastion.
+  *  Monitor communication between a virtual machine and an endpoint.
+prerequisites: ""
+iconUrl: /learn/achievements/1-implement-and-manage-networking-for-azure-virtual-desktop.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-desktop
+- azure-virtual-machines
+units:
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.introduction
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.implement-network-connectivity
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.manage-connectivity-to-internet-premises-networks
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.understanding-network-connectivity
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.network-security
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.configure-avd-session-hosts-using-azure-bastion
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.monitor-and-troubleshoot-network-connectivity
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.knowledge-check
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.Summary
+badge:
+  uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.badge

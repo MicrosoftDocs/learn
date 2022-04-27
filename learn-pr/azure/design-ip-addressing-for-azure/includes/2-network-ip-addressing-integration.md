@@ -47,7 +47,7 @@ In Azure, you typically would implement a network security group and a firewall.
 
 A virtual network is your network in the cloud. You can divide your virtual network into multiple subnets. Each subnet has a portion of the IP address space that is assigned to your virtual network. You can add, remove, expand, or shrink a subnet if there are no VMs or services deployed in it.
 
-By default, all subnets in an Azure virtual network can communicate with each other. However, you can use a network security group to deny communication between subnets. The smallest subnet that is supported uses a /29 subnet mask. The largest supported subnet uses a /8 subnet mask.
+By default, all subnets in an Azure virtual network can communicate with each other. However, you can use a network security group to deny communication between subnets. The smallest subnet that is supported uses a /29 subnet mask. The largest supported subnet uses a /2 subnet mask.
 
 ## Integrate Azure with on-premises networks
 

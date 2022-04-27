@@ -3,10 +3,10 @@ uid: learn.languages.csharp-literals-variables.challenge
 title: Challenge
 metadata:
   title: Challenge
-  description: Use what you just learned about C# to print a message using literal and variable values.
+  description: 'Use what you just learned about C# to print a message using literal and variable values.'
   ms.date: 09/03/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

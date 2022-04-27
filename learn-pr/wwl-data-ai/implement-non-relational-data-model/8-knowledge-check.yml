@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-non-relational-data-model.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/01/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which of the following criteria would define a good candidate to embed two entities in a single document schema?"
+    choices:
+    - content: "``Many:Many relationship``"
+      isCorrect: false
+      explanation: "That's incorrect. ``Many:Many relationship`` This is especially false if the relationship is unbounded. Azure Cosmos DB has a maximum document size of 2 MB. So, in situations where the 1:Many relationship is unbounded or can grow large, data should be referenced, not embedded."
+    - content: "Read or updated together"
+      isCorrect: true
+      explanation: "That's correct. This is correct because Data that's read or updated together is nearly always modeled as a single document. This is especially true because our objective for our NoSQL model is to reduce the number of requests to our database."
+    - content: "Read or updated independently"
+      isCorrect: false
+      explanation: "That's incorrect. This is especially false with large documents. Updates in Azure Cosmos DB require the entire item to be replaced. If a document has a few properties that are frequently updated alongside a large number of mostly static properties, it's much more efficient to split the document into two."
+  - content: "Consider the following scenario: Your company has customers across four countries, with hundreds of thousands of customers for countries 1, and 2 and a few thousand customers for countries 3 and 4.  Requests for each country total approximately 50,000 RU/s every hour of the day. Your application team proposes to use ``countryId`` as the partition key for this container. Which of the following statements is true?"
+    choices:
+    - content: "This partition key will prevent throughput hot partitions."
+      isCorrect: false
+      explanation: "That's incorrect. Throughput hot partitions would still be possible."
+    - content: "This partition key will cause fan outs when filtering by ``countryId``."
+      isCorrect: false
+      explanation: "That's incorrect. This partition will actually prevent Fan outs since we will be always going one partition per ``countryId``."
+    - content: "This partition key could cause storage hot partitions"
+      isCorrect: true
+      explanation: "That's correct. Storage hot partitions are likely for regions 1 or 2 since they would have to bulk of the data stored."
+  - content: "Why is understanding the access pattern of your application and how to use this information in your data model design important?"
+    choices:
+    - content: "Understanding the access pattern of your application helps you identify where to save space when storing our data."
+      isCorrect: false
+      explanation: "That's incorrect. Since we usually embed the data of multiple related tables together, we many times increase the space used by the data compared to a relational model."
+    - content: "Understanding the access pattern of your application helps you identify how to access your data with fewer requests."
+      isCorrect: true
+      explanation: "That's correct. The main goal of your application is usually to process the data as soon as possible, so we usually design our NoSQL databases to reduce the number of requests the app does to read and/or write the data."
+    - content: "Understanding the access pattern of your applications wouldn't helps you identify the correct schema of your data."
+      isCorrect: false
+      explanation: "That's incorrect. By understanding the access patterns, it also allows you to understand the way your documents and containers can be design to better improve the performances."

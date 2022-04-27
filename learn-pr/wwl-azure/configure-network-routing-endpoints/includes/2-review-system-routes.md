@@ -3,7 +3,6 @@ Azure uses **system routes** to direct network traffic between virtual machines,
  -  Traffic between VMs in the same subnet.
  -  Between VMs in different subnets in the same virtual network.
  -  Data flow from VMs to the Internet.
- -  Site-to-Site and ExpressRoute communication through the VPN gateway.
 
 For example, consider this virtual network with two subnets. Communication between the subnets and from the frontend to the internet are all managed by Azure using the default system routes.
 
@@ -11,4 +10,4 @@ For example, consider this virtual network with two subnets. Communication betwe
 
 
 > [!NOTE]
-> Information about the system routes is recorded in a route table. A route table contains a set of rules, called routes, that specifies how packets should be routed in a virtual network. Route tables are associated to subnets, and each packet leaving a subnet is handled based on the associated route table. Packets are matched to routes using the destination. The destination can be an IP address, a virtual network gateway, a virtual appliance, or the internet. If a matching route can't be found, then the packet is dropped.
+> Information about the system routes is recorded in a route table. A route table contains a set of rules, called routes, that specifies how packets should be routed in a virtual network. Routing tables are associated to subnets, and each packet leaving a subnet is handled based on the associated route table. Packets are matched to routes using the destination. The destination can be an IP address, a virtual network gateway, a virtual appliance, or the internet. If a matching route can't be found, then the packet is dropped.

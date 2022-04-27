@@ -3,18 +3,18 @@ uid: learn.wwl.describe-resource-governance-capabilities-azure
 metadata:
   title: Describe resource governance capabilities in Azure
   description: "Describe resource governance capabilities in Azure"
-  ms.date: 06/21/2021
+  ms.date: 04/26/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe resource governance capabilities in Azure
-summary: Learn about Azure resource governance capabilities in Azure, including Azure resources locks, Blueprints,  and Azure policy.
+summary: Azure governance capabilities provide mechanisms and processes for organizations to maintain control over their applications and resources. Learn how Azure policy, Blueprints, and Azure Purview help organizations govern their resources and applications.
 abstract: |
-  After completing this module, you will be able to:
-  - Describe the capabilities of Azure resource locks.
-  - Describe the function of Azure Blueprints.
-  - Describe how Azure policy helps organizations assess compliance.
+  After completing this module, you'll be able to:
+  - Describe Azure Policy.
+  - Describe Azure Blueprints
+  - Describe Azure Purview
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -29,9 +29,9 @@ products:
 - azure
 units:
 - learn.wwl.describe-resource-governance-capabilities-azure.introduction
-- learn.wwl.describe-resource-governance-capabilities-azure.describe-use-azure-resource-locks
-- learn.wwl.describe-resource-governance-capabilities-azure.describe-use-azure-blueprints
 - learn.wwl.describe-resource-governance-capabilities-azure.describe-azure-policy
+- learn.wwl.describe-resource-governance-capabilities-azure.describe-use-azure-blueprints
+- learn.wwl.describe-resource-governance-capabilities-azure.describe-azure-purview
 - learn.wwl.describe-resource-governance-capabilities-azure.knowledge-check
 - learn.wwl.describe-resource-governance-capabilities-azure.summary-resources
 badge:

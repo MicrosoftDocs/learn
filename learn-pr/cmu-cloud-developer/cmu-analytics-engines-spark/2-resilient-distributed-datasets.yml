@@ -9,6 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 16
 content: |
   [!include[](includes/2-resilient-distributed-datasets.md)]

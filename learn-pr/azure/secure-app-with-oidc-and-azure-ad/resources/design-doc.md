@@ -78,7 +78,7 @@ Identify the subtasks of *Secure your application with OpenID Connect and Azure 
 
     Complete the steps for this exercise by using Cloud Shell, its code editor and the Azure CLI.
 
-    Use Azure CLI commands to create a user (i.e. az ad sp create-for-rbac --name ServicePrincipalName --password <Choose a strong password>)
+    Use Azure CLI commands to create a user (i.e. `az ad sp create-for-rbac --name ServicePrincipalName --role Contributor --scopes /subscriptions/<subscription id> --password <Choose a strong password>`)
 
     Steps to create tenant and configure app.
 

@@ -4,12 +4,13 @@ title: Deploy Azure DDoS Protection by using the Azure portal
 metadata:
   title: Deploy Azure DDoS Protection by using the Azure portal
   description: "Deploy Azure DDoS Protection by using the Azure portal"
-  ms.date: 07/16/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-deploy-azure-ddos-protection-by-using-azure-portal.md)]

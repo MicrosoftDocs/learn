@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-user-experience-settings.configure-device-redirections
+title: Configure device redirections
+metadata:
+  title: Configure device redirections
+  description: "Configure device redirections"
+  ms.date: 12/02/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-configure-device-redirections.md)]

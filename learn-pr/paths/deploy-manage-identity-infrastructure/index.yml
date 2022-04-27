@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.deploy-manage-identity-infrastructure
+metadata:
+  title: Deploy and manage identity infrastructure
+  description: Deploy and manage identity infrastructure
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy and manage identity infrastructure
+prerequisites: |
+  - Windows Server 2012 or Windows Server 2016.
+  - Core networking technologies
+summary: |
+  Learn about Active Directory Domain Services fundamentals, and then learn to configure and manage AD DS, Group Policy Objects, and how to implement hybrid identity with Windows Server.
+iconUrl: /learn/achievements/deploy-and-manage-identity-infrastructure.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+modules:
+- learn.wwl.introduction-to-ad-ds
+- learn.wwl.manage-ad-ds-domain-controllers-fsmo-roles
+- learn.wwl.implement-group-policy-objects
+- learn.wwl.manage-advanced-features-of-ad-ds
+- learn.wwl.implement-hybrid-identity-with-windows-server
+- learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure
+trophy:
+  uid: learn.wwl.deploy-manage-identity-infrastructure.trophy

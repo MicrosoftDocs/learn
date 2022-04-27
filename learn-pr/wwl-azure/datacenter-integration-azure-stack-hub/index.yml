@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.datacenter-integration-for-azure-stack-hub
+metadata:
+  title: Datacenter integration for Azure Stack Hub
+  description: "Datacenter integration for Azure Stack Hub"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Datacenter integration for Azure Stack Hub
+summary: |
+  For Azure Stack Hub, you apply the same governance to assets in your datacenter as in Azure.
+  This module aligns with the exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
+abstract: |
+  - Describe what is necessary for running Azure in your datacenter.
+  - Outline capacity planning considerations.
+  - Choose an identity provider for Azure Stack Hub.
+  - Describe connection models for Azure Stack Hub.
+  - Distinguish licensing models  for Azure Stack Hub.
+  - Identify naming decisions for Azure Stack Hub.
+  - Describe certificate requirements for Azure Stack Hub.
+  - Describe how to connect Azure Stack Hub to Azure.
+  - Outline hybrid connectivity options for Azure Stack Hub.
+prerequisites: |
+  - Conceptual knowledge of Azure compute solutions.
+  - Working experience with virtual machines, containers, and app service.
+  - Working experience with database solutions.
+iconUrl: /learn/achievements/2-datacenter-integration-for-azure-stack-hub.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack-hub
+units:
+- learn.wwl.datacenter-integration-for-azure-stack-hub.introduction
+- learn.wwl.datacenter-integration-for-azure-stack-hub.run-azure-datacenter
+- learn.wwl.datacenter-integration-for-azure-stack-hub.capacity-plan-considerations
+- learn.wwl.datacenter-integration-for-azure-stack-hub.identity-considerations
+- learn.wwl.datacenter-integration-for-azure-stack-hub.connection-models
+- learn.wwl.datacenter-integration-for-azure-stack-hub.license-model
+- learn.wwl.datacenter-integration-for-azure-stack-hub.name-decisions
+- learn.wwl.datacenter-integration-for-azure-stack-hub.certificate-requirements
+- learn.wwl.datacenter-integration-for-azure-stack-hub.connect-azure-stack-hub
+- learn.wwl.datacenter-integration-for-azure-stack-hub.hybrid-connectivity-options
+- learn.wwl.datacenter-integration-for-azure-stack-hub.using-expressroute
+- learn.wwl.datacenter-integration-for-azure-stack-hub.external-monitor
+- learn.wwl.datacenter-integration-for-azure-stack-hub.backup-disaster-recovery
+- learn.wwl.datacenter-integration-for-azure-stack-hub.knowledge-check
+- learn.wwl.datacenter-integration-for-azure-stack-hub.summary
+badge:
+  uid: learn.wwl.datacenter-integration-for-azure-stack-hub.badge

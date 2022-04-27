@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ha-sap-netweaver-anydb.set-required-dns-ip-addresses
+title: Set the required DNS IP addresses
+metadata:
+  title: Set the required DNS IP addresses
+  description: "Set the required DNS IP addresses"
+  ms.date: 10/18/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-set-required-dns-ip-addresses.md)]

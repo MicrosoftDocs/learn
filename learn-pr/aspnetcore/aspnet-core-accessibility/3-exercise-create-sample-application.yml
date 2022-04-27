@@ -2,7 +2,7 @@
 uid: learn.languages.aspnetcore-accessibility.3-exercise-create-sample-application
 metadata:
   title: Exercise - Create the sample application
-  description: Create a sample ASP.NET Core web application with some common accessibility issues.
+  description: Create a sample ASP.NET Core web application that has common accessibility issues.
   ms.date: 04/20/2021
   author: jongalloway
   ms.author: jogallow

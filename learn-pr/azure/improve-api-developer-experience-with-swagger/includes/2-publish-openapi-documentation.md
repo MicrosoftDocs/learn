@@ -1,6 +1,6 @@
 An API can have great value, but it won't gain traction unless developers know how to use it. Developers want to integrate an API as quickly as they can. Good API documentation helps a developer understand the API's capabilities and how it should be used, making integration more efficient.
 
-Traditionally, all documentation that described an API and how to use it was written by hand. Now we have a standard API-description specification called OpenAPI. Swagger UI provides implementation and even testing tooling of the OpenAPI specification for your APIs. And Swashbuckle is an open-source package that provides automatic generation of OpenAPI description documents directly from Web API controllers using .NET reflection. Swashbuckle helps you automate the description process, making it easier for teams to generate, maintain, and use OpenAPI-based API documentation. You describe your API and let tools generate rich documentation.
+Traditionally, all documentation that described an API and how to use it was written by hand. Now we have a standard API-description specification called OpenAPI. Swagger UI provides implementation and testing tooling of the OpenAPI specification for your APIs. Swashbuckle is an open-source package that provides automatic generation of OpenAPI description documents directly from Web API controllers using .NET reflection. Swashbuckle helps you automate the description process, making it easier for teams to generate, maintain, and use OpenAPI-based API documentation. You describe your API and let tools generate rich documentation.
 
 ## What is OpenAPI?
 
@@ -31,6 +31,6 @@ There are three main components to Swashbuckle:
 
 - **Swashbuckle.AspNetCore.SwaggerUI**: This package is an embedded version of the Swagger UI tool. It interprets Swagger JSON to build a rich, customizable experience for describing the web API functionality. It includes built-in test harnesses for the public methods.
 
-- **Swashbuckle CLI**: This is a .NET global tool that once installed enables the ability of generating OpenAPI specifications during build/publish. There's a link to download this tool at the end of this module.
+- **Swashbuckle CLI**: This is a .NET global tool that once installed enables the ability of generating OpenAPI specifications during build/publish. There's a link to download Swashbuckle CLI at the end of this module.
 
 Because these libraries are added to your app, they generate and visualize your API documentation from the latest version of your API. This is **living** documentation, always in sync with the latest code.

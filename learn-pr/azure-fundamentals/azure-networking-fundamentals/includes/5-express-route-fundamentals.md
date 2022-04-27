@@ -4,25 +4,24 @@ Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethern
 
 :::image type="content" source="../media/azure-expressroute-overview-5520731d.png" alt-text="Visualization that shows a high-level overview of the Azure ExpressRoute service.":::
 
-
 As part of your work for Tailwind Traders, you should understand what Azure ExpressRoute is and how it integrates with on-premises and Azure networks. In this unit, you'll learn about the benefits that ExpressRoute provides compared to other site-to-site connectivity options. As a result, you'll learn whether ExpressRoute can provide your company with the best possible network performance.
 
 Throughout this unit, we'll focus on two different layers of the Open Systems Interconnection (OSI) model:
 
- -  **Layer 2 (L2)**: This layer is the Data Link Layer, which provides node-to-node communication between two nodes on the same network.
- -  **Layer 3 (L3)**: This layer is the Network Layer, which provides addressing and routing between nodes on a multi-node network.
+- **Layer 2 (L2)**: This layer is the Data Link Layer, which provides node-to-node communication between two nodes on the same network.
+- **Layer 3 (L3)**: This layer is the Network Layer, which provides addressing and routing between nodes on a multi-node network.
 
 ## Features and benefits of ExpressRoute
 
 There are several benefits to using ExpressRoute as the connection service between Azure and on-premises networks.
 
- -  Layer 3 connectivity between your on-premises network and the Microsoft Cloud through a connectivity provider. Connectivity can be from an any-to-any (IPVPN) network, a point-to-point Ethernet connection, or through a virtual cross-connection via an Ethernet exchange.
- -  Connectivity to Microsoft cloud services across all regions in the geopolitical region.
- -  Global connectivity to Microsoft services across all regions with the ExpressRoute premium add-on.
- -  Dynamic routing between your network and Microsoft via BGP.
- -  Built-in redundancy in every peering location for higher reliability.
- -  Connection uptime SLA.
- -  QoS support for Skype for Business.
+- Layer 3 connectivity between your on-premises network and the Microsoft Cloud through a connectivity provider. Connectivity can be from an any-to-any (IPVPN) network, a point-to-point Ethernet connection, or through a virtual cross-connection via an Ethernet exchange.
+- Connectivity to Microsoft cloud services across all regions in the geopolitical region.
+- Global connectivity to Microsoft services across all regions with the ExpressRoute premium add-on.
+- Dynamic routing between your network and Microsoft via BGP.
+- Built-in redundancy in every peering location for higher reliability.
+- Connection uptime SLA.
+- QoS support for Skype for Business.
 
 ### Layer 3 connectivity
 
@@ -36,12 +35,12 @@ Each connectivity provider uses redundant devices to ensure that connections est
 
 ExpressRoute enables direct access to the following services in all regions:
 
- -  Microsoft Office 365
- -  Microsoft Dynamics 365
- -  Azure compute services, such as Azure Virtual Machines
- -  Azure cloud services, such as Azure Cosmos DB and Azure Storage
+- Microsoft Office 365
+- Microsoft Dynamics 365
+- Azure compute services, such as Azure Virtual Machines
+- Azure cloud services, such as Azure Cosmos DB and Azure Storage
 
-Office 365 was created to be accessed securely and reliably via the internet. For this reason, we recommend the use of ExpressRoute for specific scenarios. The "Learn more" section at the end of this module includes a link about using ExpressRoute to access Office 365.
+Microsoft 365 was created to be accessed securely and reliably via the internet. For this reason, we recommend the use of ExpressRoute for specific scenarios. The "Learn more" section at the end of this module includes a link about using ExpressRoute to access Office 365.
 
 ### Across on-premises connectivity with ExpressRoute Global Reach
 
@@ -53,14 +52,14 @@ ExpressRoute uses the Border Gateway Protocol (BGP) routing protocol. BGP is use
 
 ## ExpressRoute connectivity models
 
-ExpressRoute supports three models that you can use to connect your on-premises network to the Microsoft cloud:
+ExpressRoute supports the following models that you can use to connect your on-premises network to the Microsoft cloud:
 
- -  CloudExchange colocation
- -  Point-to-point Ethernet connection
- -  Any-to-any connection
+- CloudExchange colocation
+- Point-to-point Ethernet connection
+- Any-to-any connection
+- Directly from ExpressRoute sites
 
 :::image type="content" source="../media/azure-connectivity-models-4deabab1.png" alt-text="Visualization of Azure connectivity models.":::
-
 
 ### Colocation at a cloud exchange
 
@@ -75,6 +74,10 @@ Point-to-point connections provide Layer 2 and Layer 3 connectivity between your
 With any-to-any connectivity, you can integrate your wide area network (WAN) with Azure by providing connections to your offices and datacenters. Azure integrates with your WAN connection to provide a connection like you would have between your datacenter and any branch offices.
 
 With any-to-any connections, all WAN providers offer Layer 3 connectivity. For example, if you already use Multiprotocol Label Switching to connect to your branch offices or other sites in your organization, an ExpressRoute connection to Microsoft behaves like any other location on your private WAN.
+
+### Directly from ExpressRoute sites
+
+You can connect directly into the Microsoft's global network at a peering location strategically distributed across the world. ExpressRoute Direct provides dual 100 Gbps or 10-Gbps connectivity, which supports Active/Active connectivity at scale.
 
 ## Security considerations
 

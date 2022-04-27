@@ -5,8 +5,8 @@ metadata:
   title: What is the Azure Data Box family?
   description: In this unit, you'll learn about the online and offline data transfer products in the Azure Data Box family.
   ms.date: 07/26/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: alkohli
+  ms.author: alkohli
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

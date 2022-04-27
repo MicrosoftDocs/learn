@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.career-interview.3-exercise-practice-code
+title: Exercise - Practice code
+metadata:
+  title: Exercise - Practice code
+  description: In this exercise, you get guidance on how to practice code writing.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 08/19/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise-practice-code.md)]

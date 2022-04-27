@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.update-infrastructure-for-azure-stack-hub.update-activity-checklist
+title: Azure Stack Hub update activity checklist
+metadata:
+  title: Azure Stack Hub update activity checklist
+  description: "Azure Stack Hub update activity checklist"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-azure-stack-hub-update-activity-checklist.md)]

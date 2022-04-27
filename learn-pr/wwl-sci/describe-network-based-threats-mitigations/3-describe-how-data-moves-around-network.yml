@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-network-based-threats-mitigations.describe-how-data-moves-around-network
+title: Describe how data moves around a network
+metadata:
+  title: Describe how data moves around a network
+  description: "Describe how data moves around a network"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-describe-how-data-moves-around-network.md)]

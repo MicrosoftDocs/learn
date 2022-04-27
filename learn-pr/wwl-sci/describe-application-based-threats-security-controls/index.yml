@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.describe-application-based-threats-security-controls
+metadata:
+  title: Describe application-based threats and how to protect against them
+  description: "Describe application-based threats and security controls"
+  ms.date: 02/14/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe application-based threats and how to protect against them
+summary: The proliferation of applications across the digital landscape presents an increased opportunity for cybercriminals.  Throughout this module, you’ll learn about the threat landscape of application-based attacks and how to protect your applications.
+abstract: |
+  -	Describe what are applications
+  -	Describe the threat landscape of applications
+  -	Describe how to protect your applications
+prerequisites: ""
+iconUrl: /learn/achievements/6-describe-application-based-threats-security-controls.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+- student
+products:
+- azure
+- m365
+units:
+- learn.wwl.describe-application-based-threats-security-controls.introduction
+- learn.wwl.describe-application-based-threats-security-controls.describe-topology-used-applications
+- learn.wwl.describe-application-based-threats-security-controls.describe-threat-landscape-of-applications
+- learn.wwl.describe-application-based-threats-security-controls.describe-how-application-hardening-improves-application-security
+- learn.wwl.describe-application-based-threats-security-controls.knowledge-check
+- learn.wwl.describe-application-based-threats-security-controls.summary-resources
+badge:
+  uid: learn.wwl.describe-application-based-threats-security-controls.badge

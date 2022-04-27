@@ -65,7 +65,7 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     :::image type="content" source="../media/dp-3300-module-33-lab-10.png" alt-text="Database Settings.":::
 
-1. On the **Summary** screen select **Finish**. When your import completes you will see the results below.
+1. On the **Summary** screen select **Finish**. When your import completes you will see the results below. Then click **Close**
 
     :::image type="content" source="../media/dp-3300-module-33-lab-11.png" alt-text="Results.":::
 

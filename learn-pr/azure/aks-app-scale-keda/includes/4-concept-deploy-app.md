@@ -24,6 +24,7 @@ kind: Deployment
 metadata:
   name: contoso-microservice
 spec:
+  replicas: 10                     # Here we are telling K8S the number of pods to process the Redis list items
   selector:                         # Define the wrapping strategy
     matchLabels:                    # Match all pods with the defined labels
       app: contoso-microservice     # Labels follow the `name: value` template
@@ -32,7 +33,6 @@ spec:
       labels:
         app: contoso-microservice
     spec:
-      replicas: 10                  # here we are telling K8S the number of pods to process the Redis list items
       containers:
         - image: mcr.microsoft.com/mslearn/samples/redis-client:latest
           name: contoso-microservice

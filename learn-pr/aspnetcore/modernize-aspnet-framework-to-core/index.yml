@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.modernize-aspnet-framework-to-core
+metadata:
+  title: Modernize ASP.NET Framework to ASP.NET Core with the .NET Upgrade Assistant
+  description: In this module, you'll learn to when, why, and how to modernize an ASP.NET Framework app to ASP.NET Core using the Upgrade Assistant.
+  ms.date: 01/11/2022
+  author: jongalloway
+  ms.author: jogallow
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Modernize ASP.NET Framework to ASP.NET Core with the .NET Upgrade Assistant
+summary: In this module, you'll learn to modernize an ASP.NET Framework app to ASP.NET Core using the Upgrade Assistant.
+abstract: | 
+  In this module, you will:
+  - Understand when and why to modernize an existing ASP.NET application running on .NET Framework to ASP.NET Core.
+  - Understand modernization options and opportunities for ASP.NET applications running on .NET Framework.
+  - Understand how the Upgrade Assistant helps you to analyze and incrementally upgrade an existing ASP.NET application.
+  - Update an existing ASP.NET application running on .NET Framework to ASP.NET Core.
+prerequisites: |
+ - Local installation of [.NET SDK](https://dotnet.microsoft.com/download)
+ - A local installation of Visual Studio 2019 or Visual Studio 2022 on Windows
+ - Experience using the command line
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- aspnet
+- aspnet-core
+units:
+- learn.modernize-aspnet-framework-to-core.1-introduction
+- learn.modernize-aspnet-framework-to-core.2-why-modernize-to-aspnet-core
+- learn.modernize-aspnet-framework-to-core.3-evaluate-modernization-options
+- learn.modernize-aspnet-framework-to-core.4-what-is-upgrade-assistant
+- learn.modernize-aspnet-framework-to-core.5-exercise-upgrade-aspnet-app
+- learn.modernize-aspnet-framework-to-core.6-summary
+iconUrl: /learn/achievements/generic-badge.svg
+badge:
+  uid: learn.modernize-aspnet-framework-to-core.badge

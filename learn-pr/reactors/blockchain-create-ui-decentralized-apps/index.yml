@@ -3,11 +3,12 @@ uid: learn.reactors.blockchain-create-ui-decentralized-apps
 metadata:
   title: Create a user interface with decentralized apps
   description: Learn about decentralized apps and how to build your own.
-  ms.date: 06/21/2021
+  ms.date: 02/11/2022
   author: danmabee
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Create a user interface with decentralized apps
 summary: Learn about decentralized apps and how to build your own.
 abstract:  |

@@ -5,10 +5,10 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 03/12/2021  
-  author: micrum  
-  ms.author: micrum  
-  ms.topic: interactive-tutorial 
+  ms.date: 04/05/2022
+  author: cherylmc
+  ms.author: cherylmc
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
@@ -70,5 +70,3 @@ quiz:
     - content: "The VMs you want to connect to require a public IP."
       isCorrect: false
       explanation: "Incorrect. Your VMs have only private IPs."
-
-

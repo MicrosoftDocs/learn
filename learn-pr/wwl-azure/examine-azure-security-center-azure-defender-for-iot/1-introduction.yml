@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-azure-security-center-azure-defender-for-iot.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

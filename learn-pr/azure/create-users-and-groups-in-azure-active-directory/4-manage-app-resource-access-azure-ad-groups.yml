@@ -5,8 +5,8 @@ metadata:
   title: Manage app and resource access by using Azure Active Directory groups
   description: Manage app and resource access by using Azure Active Directory groups
   ms.date: 10/25/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: curtand
+  ms.author: curtand
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

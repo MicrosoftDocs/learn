@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-stored-procedures-table-valued-functions.exercise
+title: 'Exercise: Create stored procedures and table-valued functions'
+metadata:
+  title: 'Exercise: Create stored procedures and table-valued functions'
+  description: "Exercise: Create stored procedures and table-valued functions"
+  ms.date: 02/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 105120
+labModal: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise.md)]

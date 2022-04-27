@@ -2,10 +2,10 @@
 uid: learn.store-app-data-with-azure-blob-storage
 metadata:
   title: Store application data with Azure Blob storage
-  description: Discover how to build an app that stores user files with Azure Blob storage, use Blob storage in a web app, and use the Azure Storage SDK for .NET Core.
-  ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  description: Discover how to build an app that stores user files with Azure Blob storage, use Blob storage in a web app, and use the Azure Storage SDK.
+  ms.date: 02/23/2022
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Store application data with Azure Blob storage

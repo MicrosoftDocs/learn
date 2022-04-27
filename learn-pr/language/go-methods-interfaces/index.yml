@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Use methods and interfaces in Go
 summary: Learn about best practices for writing methods and interfaces in Go.
 abstract:  |

@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-loop-expressions.3-for-while-loop
+metadata:
+  title: Use for, while, and loop expressions
+  description: Learn how to use for, while, and loop expressions to iterate through data.
+  ms.date: 09/20/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Use for, while, and loop expressions
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-for-while-loop.md)]
+
+quiz:
+  questions:
+  
+  - content: "What kind of iteration works best to ensure all data in a collection is processed?"
+    choices:
+    - content: "`while <x> is true`"
+      isCorrect: false
+      explanation: "Incorrect. A `while` expression repeats actions as long as a condition remains true. If the condition evaluates to false, the `while` loop might stop before all data is processed."
+    - content: "`for <i> in <x>`"
+      isCorrect: true
+      explanation: "Correct. A `for` expression repeats actions for all values in a collection. The `for` loop works best when you want to ensure all data in a collection is processed."
+    - content: "`loop until stopped`"
+      isCorrect: false
+      explanation: "Incorrect. A `loop` expression repeats actions until a manual stop occurs. A `loop` can continue after all data in a collection is processed. The same data might be processed more than once."
+
+  - content: "What keyword causes a `loop` expression to end?"
+    choices:
+    - content: "`stop`"
+      isCorrect: false
+      explanation: "Incorrect. `Stop!` can be seen at street intersections, but it's not used to end a `loop` process."
+    - content: "`halt`"
+      isCorrect: false
+      explanation: "Incorrect. `Halt!` occurs in medieval literature, but it's not used to end a `loop` process."
+    - content: "`break`"
+      isCorrect: true
+      explanation: "Correct! To end a `loop` process, we use the `break` keyword."

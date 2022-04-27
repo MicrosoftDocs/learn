@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-create-program.2-variables
+metadata:
+  title: Create and use variables in Rust
+  description: Learn about how variables work in Rust, how to declare them, and how to use their properties.
+  ms.date: 09/20/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Create and use variables in Rust
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-variables.md)]
+
+quiz:
+  questions:
+
+  - content: "Which Rust statement both declares a variable and binds a value?"
+    choices:
+    - content: "`let continents = 7;`"
+      isCorrect: true
+      explanation: "Correct! The `let` keyword declares the variable and the equals sign `=` binds the value."
+    - content: "`continents = 7;`"
+      isCorrect: false
+      explanation: "Incorrect. This statement is missing the `let` keyword to declare the variable."
+    - content: "`let continents;`"
+      isCorrect: false
+      explanation: "Incorrect. This statement is missing a value to bind to the variable."
+
+  - content: "What Rust keyword is used to make the value of a variable changeable?"
+    choices:
+    - content: "`mutable`"
+      isCorrect: false
+      explanation: "Incorrect. The keyword to use is a shorter form of the word `mutable`."
+    - content: "`immutable`"
+      isCorrect: false
+      explanation: "Incorrect. To be `immutable` means to not be changeable. What is the opposite?"     
+    - content: "`mut`"
+      isCorrect: true
+      explanation: "Correct! The `mut` keyword is used to declare the value of a variable to be changeable." 

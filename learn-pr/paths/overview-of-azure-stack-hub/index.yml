@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.overview-of-azure-stack-hub
+metadata:
+  title: Overview of Azure Stack Hub
+  description: Overview of Azure Stack Hub
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Overview of Azure Stack Hub
+prerequisites: |
+  *   Conceptual knowledge of Azure compute solutions.
+  *   Working experience with virtual machines, containers, and app service.
+summary: |
+  Azure and Azure Stack Hub unlock hybrid cloud scenarios for customer-facing and line-of-business apps. This learning path will help you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
+iconUrl: /learn/achievements/overview-of-azure-stack-hub.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack
+modules:
+- learn.wwl.azure-stack-hub
+- learn.wwl.datacenter-integration-for-azure-stack-hub
+- learn.wwl.azure-stack-hub-powershell
+trophy:
+  uid: learn.wwl.overview-of-azure-stack-hub.trophy

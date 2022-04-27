@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-mlflow-to-track-experiments-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/15/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which of the following options is the name of an MLflow component?"
+    choices:
+    - content: "MLflow Framework"
+      isCorrect: false
+      explanation: "That's incorrect. MLflow Framework is not an existing component of MLflow."
+    - content: "MLflow Tracking"
+      isCorrect: true
+      explanation: "That's correct. MLflow is made up of four key components: a Model component, which provides a standard for shaping models; a Model Registry, which allows registration and versioning of models; Projects, which package data science code; and Tracking, which retains information on the execution of data science code."
+    - content: "MLflow Training"
+      isCorrect: false
+      explanation: "That's incorrect. MLflow Training is not an existing component of MLflow."
+  - content: "An **experiment** is best defined as which of the following statements?"
+    choices:
+    - content: "A collection of tests"
+      isCorrect: false
+      explanation: "That's incorrect. Test is not a term used in MLflow."
+    - content: "A collection of runs"
+      isCorrect: true
+      explanation: "That's correct. An experiment is defined as a collection of runs. A run is defined as the execution of code for a data science task."
+    - content: "A collection of notebooks"
+      isCorrect: false
+      explanation: "That's incorrect. A notebook is a web-based interface to a document that contains code, descriptive text and visualizations."
+  - content: "What are two necessary assets included in a MLflow project?"
+    choices:
+    - content: "A model and its metrics."
+      isCorrect: false
+      explanation: "That's incorrect. A model can be the output of the code included in a project but is not a necessary asset."
+    - content: "A Python script and an experiment."
+      isCorrect: false
+      explanation: "That's incorrect. A project does include a file as an entry point, but not an experiment."
+    - content: "A Python script and the environment."
+      isCorrect: true
+      explanation: "That's correct. A project is a method of packaging data science code which includes at least one entry point, which is a file such as a Python script, and details about the environment."

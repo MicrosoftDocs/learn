@@ -4,12 +4,13 @@ title: Provision and deploy SQL Server to Azure virtual machines
 metadata:
   title: Provision and deploy SQL Server to Azure virtual machines
   description: "Provision and deploy SQL Server to Azure virtual machines"
-  ms.date: 03/12/2021
+  ms.date: 11/09/2021
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 14
 content: |
   [!include[](includes/6-provision-azure-virtual-machines.md)]

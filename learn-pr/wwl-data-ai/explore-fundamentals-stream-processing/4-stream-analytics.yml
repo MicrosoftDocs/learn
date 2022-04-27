@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-fundamentals-of-stream-processing.explore-azure-stream-analytics
+title: Explore Azure Stream Analytics
+metadata:
+  title: Explore Azure Stream Analytics
+  description: "Explore Azure Stream Analytics"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-stream-analytics.md)]

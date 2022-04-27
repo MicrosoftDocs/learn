@@ -74,7 +74,7 @@ from
 
 ```
 
-The JSON document in the preceding sample query includes an array of objects. The query returns each object as a separate row in the result set. Make sure that you can access this file. If your file is protected with SAS key or custom identity, you would need to set up [server level credential for sql login]( /azure/synapse-analytics/sql/develop-storage-files-storage-access-control#server-scoped-credential)
+The JSON document in the preceding sample query includes an array of objects. The query returns each object as a separate row in the result set. Make sure that you can access this file. If your file is protected with SAS key or custom identity, you would need to set up [server level credential for sql login](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature)
 
 ## Define a data source
 
@@ -106,7 +106,7 @@ from
     ) with (doc nvarchar(max)) as rows
 ```
 
-If a data source is protected with SAS key or custom identity, you can configure [data source with database scoped credential]( /azure/synapse-analytics/sql/develop-storage-files-storage-access-control#database-scoped-credential)
+If a data source is protected with SAS key or custom identity, you can configure [data source with database scoped credential](/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature)
 
 In the following sections, you can see how to query various types of JSON files.
 
@@ -147,7 +147,7 @@ Which is a json file containing the following structure:
 
 ## Query JSON files using JSON_VALUE
 
-The following query below shows you how to use [JSON_VALUE]( /sql/t-sql/functions/json-value-transact-sql) to retrieve scalar values (title, publisher) from JSON documents:
+The following query below shows you how to use [JSON_VALUE](/sql/t-sql/functions/json-value-transact-sql?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json&view=azure-sqldw-latest) to retrieve scalar values (title, publisher) from JSON documents:
 
 ```json
 select 
@@ -168,7 +168,7 @@ order by JSON_VALUE(doc, '$.geo_id') desc
 
 ## Query JSON files using OPENJSON
 
-The following query uses [OPENJSON]( /sql/t-sql/functions/openjson-transact-sql). It will retrieve COVID statistics reported in Serbia:
+The following query uses [OPENJSON](/sql/t-sql/functions/openjson-transact-sql?toc=/azure/synapse-analytics/toc.json&bc=/azure/synapse-analytics/breadcrumb/toc.json&view=azure-sqldw-latest). It will retrieve COVID statistics reported in Serbia:
 
 ```sql
 select * 

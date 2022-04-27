@@ -1,10 +1,21 @@
-In addition to defending your Azure environment, you can add Azure Defender capabilities to your hybrid environment to:
+Today, companies struggle to control and govern increasingly complex environments. These environments extend across data centers, multiple clouds, and edge. Each environment and cloud possesses its own set of disjointed management tools that you need to learn and operate.
 
-- Protect your non-Azure servers
+In parallel, new DevOps and ITOps operational models are hard to implement, as existing tools fail to provide support for new cloud native patterns.
 
-- Protect your virtual machines in other clouds (such as AWS and GCP)
+Azure Arc simplifies governance and management by delivering a consistent multi-cloud and on-premises management platform. Azure Arc enables you to:
 
-- Protect SQL databases
+- Manage your entire environment, with a single pane of glass, by projecting your existing non-Azure, on-premises, or other-cloud resources into Azure Resource Manager.
+- Manage virtual machines, Kubernetes clusters, and databases as if they are running in Azure.
+- Use familiar Azure services and management capabilities, regardless of where they live.
+- Continue using traditional ITOps, while introducing DevOps practices to support new cloud native patterns in your environment.
+- Configure Custom Locations as an abstraction layer on top of Azure Arc-enabled Kubernetes cluster, cluster connect, and cluster extensions.
 
-For machines, the Log Analytics agent is the only required technology.  To provide more insights for security alerts, connecting other cloud providers (AWS, GCP) resources will provide cloud security posture management information.
+>[!div class="mx-imgBorder"]
+>![aws account overview.](../media/azure-arc-control-plane.png)
 
+Today, Azure Arc allows you to manage the following resource types hosted outside of Azure:
+
+Servers - both physical and virtual machines running Windows or Linux.
+Kubernetes clusters - supporting multiple Kubernetes distributions.
+Azure data services - Azure SQL Managed Instance and PostgreSQL Hyperscale services.
+SQL Server - enroll instances from any location with SQL Server on Azure Arc-enabled servers.

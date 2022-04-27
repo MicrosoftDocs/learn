@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transform-data-by-implementing-pivot-unpivot-rollup-cube.write-queries-that-pivot-unpivot-result-sets
+title: Write queries that pivot and unpivot result sets
+metadata:
+  title: Write queries that pivot and unpivot result sets
+  description: "Write queries that pivot and unpivot result sets"
+  ms.date: 10/14/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-write-queries-that-pivot-unpivot-result-sets.md)]

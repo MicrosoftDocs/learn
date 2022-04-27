@@ -5,8 +5,8 @@ metadata:
   title: Deploy a web app to Azure
   description: Deploying a web app to Azure from Eclipse using the Azure Toolkit
   ms.date: 02/01/2020
-  author: rmcmurray
-  ms.author: robmcm
+  author: cephalin
+  ms.author: cephalin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

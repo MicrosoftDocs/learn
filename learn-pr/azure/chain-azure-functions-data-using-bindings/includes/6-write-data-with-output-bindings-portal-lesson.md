@@ -1,4 +1,4 @@
-As with input bindings, there are multiple types of output bindings. However, not all types support both input and output. You'll use them anytime you want to send or store data. Here, we'll look at the types that support output bindings and when to use them.
+As with input bindings, there are multiple types of output bindings. However, not all types of bindings support both input and output. You'll use bindings whenever you want to send or store data. Let's look at the types that support output bindings and when to use them.
 
 ## Output binding types
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-regression-model-azure-machine-learning-designer.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 03/07/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

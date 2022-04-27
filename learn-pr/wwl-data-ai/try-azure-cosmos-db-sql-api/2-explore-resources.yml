@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.try-azure-cosmos-db-sql-api.explore-resources
+title: Explore resources
+metadata:
+  title: Explore resources
+  description: "Explore resources"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explore-resources.md)]

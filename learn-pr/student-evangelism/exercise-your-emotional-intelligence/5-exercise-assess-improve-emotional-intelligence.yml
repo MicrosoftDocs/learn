@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.exercise-your-emotional-intelligence.exercise-assess-improve-emotional-intelligence
+title: Assess your emotional intelligence and reflect on ways to improve it
+metadata:
+  title: Assess your emotional intelligence and reflect on ways to improve it
+  description: In this exercise, you're faced with a scenario, and you assess your emotional intelligence and that of your team.
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-assess-improve-emotional-intelligence.md)]

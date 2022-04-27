@@ -3,7 +3,7 @@ uid: learn.wwl.configure-storage-accounts
 metadata:
   title: Configure storage accounts
   description: "You will learn to configure storage accounts including replication and endpoints."
-  ms.date: 07/27/2021
+  ms.date: 04/15/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
   - Secure storage endpoints.
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/storage-accounts-configure.svg
 levels:
 - intermediate
 roles:

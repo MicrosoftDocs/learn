@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.github-administration-for-enterprise-support-adoption
+metadata:
+  title: GitHub administration for enterprise support and adoption
+  description: Learn how GitHub Enterprise can make your administrative duties easier.
+  ms.date: 10/08/2021
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: GitHub administration for enterprise support and adoption
+summary: In this module, you'll learn about some fundamental features and best practices that can improve the administrative operations of your GitHub Enterprise. 
+
+abstract: |
+  By the end of this module, you'll be able to:
+  - Set up authentication with SAML single sign-on and a connection between Enterprise Server and Enterprise Cloud with GitHub Connect.
+  - Automate security and version updates for your project's dependencies, as well as administrative duties and user interactions with GitHub.
+  - Identify when to open a ticket with GitHub Enterprise Support to resolve issues.
+  - Recognize the capabilities of centrally managing your GitHub enterprise members through GitHub Enterprise Managed User accounts (EMUs).
+prerequisites: |
+  - A GitHub account
+  - The ability to navigate and edit files in GitHub
+  - A repository
+ratingEnabled: true
+iconUrl: /learn/achievements/github-administration-for-enterprise-support-adoption.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+- developer
+- solution-architect
+products:
+- github
+units:
+- learn.github-administration-for-enterprise-support-adoption.introduction
+- learn.github-administration-for-enterprise-support-adoption.github-enterprise-tools-features
+- learn.github-administration-for-enterprise-support-adoption.support-for-github-enterprise
+- learn.github-administration-for-enterprise-support-adoption.scale-your-github-enterprise-deployment
+- learn.github-administration-for-enterprise-support-adoption.enterprise-managed-user-accounts
+- learn.github-administration-for-enterprise-support-adoption.knowledge-check
+- learn.github-administration-for-enterprise-support-adoption.summary
+
+badge:
+  uid: learn.github-administration-for-enterprise-support-adoption.badge

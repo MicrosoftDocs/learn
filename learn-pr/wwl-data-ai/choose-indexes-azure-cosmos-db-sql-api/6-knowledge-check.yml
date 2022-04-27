@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Your team has written a SQL query for Azure Cosmos DB SQL API with the following text: ``SELECT * FROM c WHERE c.sku = 'RD3387G'``. Which lookup method will the query engine use for the **sku** filter?"
+    choices:
+    - content: "``Full scan``"
+      isCorrect: false
+      explanation: "Incorrect. The query uses an equality filter that can be evaluated using the inverted tree."
+    - content: "``Index scan``."
+      isCorrect: false
+      explanation: "Incorrect. The query uses an equality filter that can be evaluated directly with a seek instead of a scan within the inverted tree."
+    - content: "``Index seek``."
+      isCorrect: true
+      explanation: "Correct. The equality filter allows the query engine to perform a seek of a specific value."
+  - content: "Which property of an indexing policy should you set to disable all indexing for a container?"
+    choices:
+    - content: "``indexingMode``"
+      isCorrect: true
+      explanation: "Correct. Setting the ``indexingMode`` property to ``none`` disables all indexing."
+    - content: "``excludedPaths``"
+      isCorrect: false
+      explanation: "Incorrect. The ``excludedPaths`` property determines which paths are excluded from the index, not whether the indexer will run."
+    - content: "``automatic``"
+      isCorrect: false
+      explanation: "Incorrect. Disabling ``automatic`` indexing using a boolean value of ``false`` doesn't disable all indexing for the container."

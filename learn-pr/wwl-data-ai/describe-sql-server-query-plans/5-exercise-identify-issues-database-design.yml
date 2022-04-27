@@ -4,13 +4,14 @@ title: 'Exercise: Identify issues with a database design'
 metadata:
   title: 'Exercise: Identify issues with a database design'
   description: "Exercise: Identify issues with a database design"
-  ms.date: 04/12/2021
+  ms.date: 01/20/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labId: 85895
+labModal: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-identify-issues-database-design.md)]

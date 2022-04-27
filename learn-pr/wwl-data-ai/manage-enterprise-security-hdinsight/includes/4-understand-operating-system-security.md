@@ -1,4 +1,4 @@
-Operating system patching, installing security updates, and rebooting VMs are recommended to keep the underlying OS up to date. HDInsight is a PaaS service and at time of writing this document the underlying operating system in HDInsight VMs is Ubuntu 16.0.4 LTS. Updated information of HDInsight OS versions is available at the [component versioning](https://docs.microsoft.com/azure/hdinsight/hdinsight-component-versioning) 
+Operating system patching, installing security updates, and rebooting VMs are recommended to keep the underlying OS up to date. HDInsight is a PaaS service and at time of writing this document the underlying operating system in HDInsight VMs is Ubuntu 16.0.4 LTS. Updated information of HDInsight OS versions is available at the [component versioning](/azure/hdinsight/hdinsight-component-versioning) 
 documentation page. 
 Post patching, Linux VMs need to be rebooted for the patches to be applicable and may lead to HDInsight nodes getting rebooted which may interfere with customer plans and workload executions. 
 

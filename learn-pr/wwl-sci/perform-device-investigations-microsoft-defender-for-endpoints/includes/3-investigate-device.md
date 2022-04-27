@@ -1,5 +1,3 @@
-The Device page
-
 Investigate the details of an alert raised on a specific device to identify other behaviors or events that might be related to the alert or the potential scope of the breach.
 
 You can select affected devices whenever you see them in the portal to open a detailed report about that device. Affected devices are identified in the following areas:
@@ -25,8 +23,6 @@ When you investigate a specific device, you'll see:
 - Tabs (overview, alerts, timeline, security recommendations, software inventory, discovered vulnerabilities, missing KBs)
 
 - Cards (active alerts, logged on users, security assessment)
-
-:::image type="content" source="../media/device-page.png" alt-text="Device page display" lightbox="../media/device-page.png":::
 
 ## Device details
 
@@ -64,7 +60,7 @@ The Overview tab displays the cards for active alerts, logged on users, and secu
 
 **Active alerts**
 
-You can view the overall number of active alerts from the last 30 days in your network from the tile. Alerts are grouped into New and In progress. Each group is further sub-categorized into their corresponding alert severity levels. Click the number of alerts inside each alert ring to see a sorted view of that category's queue (New or In progress).
+You can view the overall number of active alerts from the last 30 days in your network from the tile. Alerts are grouped into New and In progress. Each group is further subcategorized into their corresponding alert severity levels. Select the number of alerts inside each alert ring to see a sorted view of that category's queue (New or In progress).
 
 **Logged on users**
 

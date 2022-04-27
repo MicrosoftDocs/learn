@@ -1,15 +1,11 @@
-In this module, you have learned about some important security concepts and methodologies. You have learned about the Zero Trust methodology, and how the guiding principles of *verify explicitly, least privilege access*, and *assume breach* strengthens security. You learned how the six foundational elements of identity, devices, applications, data, infrastructure, and networks are used in the Zero Trust model.
+In this module you were introduced to some important security and compliance concepts. You learned about the shared responsibility model and how the workload responsibilities vary depending on where the workload is hosted.  You learned how a defense in-depth strategy uses a series of mechanisms to slow the advance of an attack.  You learned about the guiding principles of  Zero Trust and how the six foundational pillars work together to enforce organization security policies. Lastly, you were introduced to the concepts of encryption and hashing as ways to secure your data and some basic concepts related to data compliance.
 
-This module also looked at the shared responsibility model, which considers who is responsible for what as organizations migrate their workloads to the cloud.  You learned about the Microsoft Cloud Adoption Framework. You also learned about defense in depth, and how the security principles of *confidentiality, integrity*, and *availability* help to guide security decisions.
+Now that you've completed this module, you should be able to:
 
-Finally, you learned about common cybersecurity threats including threats to business and personal data and how to protect your data.  
-
-Now that you've reviewed this module, you can:
-
-- Describe the Zero Trust and shared responsibility models.
-- Describe common security threats and ways to protect through the defense in-depth security model.
+- Describe the shared responsibility and the defense in-depth security models.
+- Describe the Zero-Trust model.
 - Describe the concepts of encryption and hashing.
-- Describe the cloud adoption framework.
+- Describe some basic compliance concepts.
 
 ### Learn more
 
@@ -18,4 +14,4 @@ To learn more about the topics discussed in this module, see:
 - [Zero Trust Resource Center](/security/zero-trust/)
 - [Shared responsibility in the cloud](/azure/security/fundamentals/shared-responsibility)
 - [Azure defense in depth](https://azure.microsoft.com/resources/videos/defense-in-depth-security-in-azure/)
-- [What is the Microsoft Cloud Adoption Framework for Azure?](/azure/cloud-adoption-framework/overview)
+- [Enabling Data Residency and Data Protection in Microsoft Azure Regions](https://azure.microsoft.com/mediahandler/files/resourcefiles/achieving-compliant-data-residency-and-security-with-azure/Enabling_Data_Residency_and_Data_Protection_in_Azure_Regions-2021.pdf)

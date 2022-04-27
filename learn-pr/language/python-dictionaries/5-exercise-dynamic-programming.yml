@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.python-dictionaries.exercise-dynamic-programming
+title: Exercise - Dynamic programming with dictionaries
+metadata:
+  unitType: exercise
+  title: Exercise - Dynamic programming with dictionaries 
+  description: In this exercise, you use keys and values to perform calculations on the data inside a dictionary.
+  ms.date: 12/08/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 1
+sandbox: true
+notebook: notebooks/5-exercise-dynamic-programming.ipynb

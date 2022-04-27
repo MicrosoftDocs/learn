@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spark-architecture-fundamentals.understand-architecture-of-spark-job
+title: Understand the architecture of spark job
+metadata:
+  title: Understand the architecture of spark job
+  description: "Understand the architecture of spark job"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-understand-architecture-of-spark-job.md)]

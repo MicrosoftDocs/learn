@@ -1,5 +1,5 @@
 > [!TIP]
-> The following keyboard shortcuts are useful within the Cloud Shell editor.
+> The following keyboard shortcuts are useful within the Azure Cloud Shell editor.
 >
 > | Keyboard shortcut                                      | Command |
 > |--------------------------------------------------------|---------|

@@ -10,7 +10,7 @@ You should now be able to:
 
 You can learn more by reviewing the following.
 
- -  [Get started with Storage Explorer](/azure/vs-azure-tools-storage-manage-with-storage-explorer)
+ -  [Get started with Storage Explorer](/azure/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows)
  -  [Azure Import and Export Service](https://azure.microsoft.com/documentation/articles/storage-import-export-service/)
  -  [Get started with AzCopy](/azure/storage/common/storage-use-azcopy)
  -  [Learn - Upload, download, and manage data with Azure Storage Explorer](/learn/modules/upload-download-and-manage-data-with-azure-storage-explorer/)

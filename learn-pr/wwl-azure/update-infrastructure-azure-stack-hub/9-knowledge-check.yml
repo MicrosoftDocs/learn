@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.update-infrastructure-for-azure-stack-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Azure Stack Hub Original Equipment Manufacturers (OEMs) release regular updates for Azure Stack Hub hardware, such as driver and firmware updates. Where are the updates uploaded?"
+    choices:
+    - content: "The updateadminaccount storage account."
+      isCorrect: true
+      explanation: "Correct. The OEM package updates are uploaded into the updateadminaccount storage account."
+    - content: "To a OneDrive account for the Azure Stack operator."
+      isCorrect: false
+      explanation: "That’s incorrect. The OEM package updates are uploaded into the updateadminaccount storage account."
+    - content: "To an Azure Files share."
+      isCorrect: false
+      explanation: "That’s incorrect. The OEM package updates are uploaded into the updateadminaccount storage account."
+  - content: "Where are frequently released tools and PowerShell modules supporting Azure Stack Hub found?"
+    choices:
+    - content: "The updateadminaccount storage account."
+      isCorrect: false
+      explanation: "Incorrect. The OEM package updates are located into the updateadminaccount storage account."
+    - content: "The Azure Stack tools GitHub repository."
+      isCorrect: true
+      explanation: "Correct. Frequently released tools and PowerShell modules supporting Azure Stack Hub found in the Azure Stack tools GitHub repository."
+    - content: "Azure Tools for Visual Studio Code."
+      isCorrect: false
+      explanation: "That’s incorrect. Azure Tools for Visual Studio Code is a set of tools and extensions for Visual Studio Code."

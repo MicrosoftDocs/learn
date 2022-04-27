@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-aks-pipelines.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices describes the integration between Azure Pipelines and AKS correctly?"
+    choices:
+    - content: "The AKS cluster will need to retrieve the image from the container registry. You'll need to create a user and password to grant the AKS permission to access the new container registry."
+      isCorrect: false
+      explanation: "Incorrect. The AKS cluster will need to retrieve the image from the container registry. You'll need to grant the AKS service principal permission to access the new container registry."
+    - content: "The AKS cluster will need to retrieve the image from the Azure Artifacts. The permission to grant the AKS service principal access to the new container registry will be applied automatically."
+      isCorrect: false
+      explanation: "Incorrect. The AKS cluster will need to retrieve the image from the container registry. You'll need to grant the AKS service principal permission to access the new container registry."
+    - content: "The AKS cluster will need to retrieve the image from the container registry. You'll need to grant the AKS service principal permission to access the new container registry."
+      isCorrect: true
+      explanation: "Correct. The AKS cluster will need to retrieve the image from the container registry. You'll need to grant the AKS service principal permission to access the new container registry."
+  - content: "Which of the following choices Azure Key Vault provides that isn't just secret management but also Certificates and Key management as part of the service?"
+    choices:
+    - content: "Secure Store as a Service."
+      isCorrect: true
+      explanation: "Correct. Azure Key Vault gives the ability to provide a distributed \"Secure Store as a Service\" option that provides not just secret management but also Certificates and Key management as part of the service."
+    - content: "ConfigMap."
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault gives the ability to provide a distributed \"Secure Store as a Service\" option that provides not just secret management but also Certificates and Key management as part of the service."
+    - content: "Secret store."
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault gives the ability to provide a distributed \"Secure Store as a Service\" option that provides not just secret management but also Certificates and Key management as part of the service."
+  - content: "Which of the following choices isn't the type of readiness probe that Kubernetes offers and you can configure in the configuration YAML file?"
+    choices:
+    - content: "readinessProbe."
+      isCorrect: false
+      explanation: "Incorrect. Kubernetes offers a variety of readiness probes. In the configuration YAML file, you can configure the type of probe:startupProbe, livenessProbe, readinessProbe."
+    - content: "livenessProbe."
+      isCorrect: false
+      explanation: "Incorrect. Kubernetes offers a variety of readiness probes. In the configuration YAML file, you can configure the type of probe:startupProbe, livenessProbe, readinessProbe."
+    - content: "setupProbe."
+      isCorrect: true
+      explanation: "Correct. Kubernetes offers a variety of readiness probes. In the configuration YAML file, you can configure the type of probe:startupProbe, livenessProbe, readinessProbe."

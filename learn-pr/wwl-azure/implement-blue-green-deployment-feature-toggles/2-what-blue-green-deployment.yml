@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-blue-green-deployment-feature-toggles.what-blue-green-deployment
+title: What is blue-green deployment?
+metadata:
+  title: What is blue-green deployment?
+  description: "What is blue-green deployment?"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-blue-green-deployment.md)]

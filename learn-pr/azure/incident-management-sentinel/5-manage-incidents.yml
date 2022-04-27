@@ -2,10 +2,10 @@
 uid: learn.azure.incident-management-sentinel.5-manage-incidents
 metadata:
   title: Manage incidents
-  description: Manage incidents in Azure Sentinel
+  description: Manage incidents in Microsoft Sentinel
   ms.date: 12/15/2020
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage incidents
@@ -29,7 +29,7 @@ quiz:
     - content: "Username"
       isCorrect: false
       explanation: "Username is an incident entity and can't be changed."
-  - content: "What Azure Sentinel interface enables someone to view timelines and relationships between incident resources?"
+  - content: "What Microsoft Sentinel interface enables someone to view timelines and relationships between incident resources?"
     choices:
     - content: "Investigation graph"
       isCorrect: true

@@ -3,11 +3,12 @@ uid: learn.student-evangelism.install-code-tools-python-nasa.9a-knowledge-check
 metadata:
   title: Knowledge check
   description: Interactive questions that validate whether the learner achieved the learning objectives.
-  ms.date: 05/05/2021
-  author: drguthals
-  ms.author: sguthals
+  ms.date: 03/28/2022
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen, devdivchpfy22
 title: Knowledge check
 durationInMinutes: 3
 content: |
@@ -27,22 +28,22 @@ quiz:
       explanation: "Sounds right, but unfortunately technology language is a made-up term."
     - content: "Numbers"
       isCorrect: false
-      explanation: "Close! While computers can read binary, they cannot work with just numbers."
-  - content: "When software is open-source it means"
+      explanation: "Close! While computers can read binary, they can't work with just numbers."
+  - content: "When software is open-source, it means"
     choices:
     - content: "You need a friend to give you access to it."
       isCorrect: false
       explanation: "While your friend could help you find the software, you don't need anyone to give you access to it."
     - content: "If you pay, your features will be added."
       isCorrect: false
-      explanation: "Paying someone will not necessarily mean that they will make the feature for you. Anyone can make whatever they want."
+      explanation: "Paying someone doesn't necessarily mean that they'll make the feature for you. Anyone can make whatever they want."
     - content: "No one can see the code."
       isCorrect: false
       explanation: "Actually, open-source is the opposite: everyone can see the code."
     - content: "Anyone can develop it and add content to it."
       isCorrect: true
       explanation: "Correct! This is exactly what open-source means."
-  - content: "Visual Studio Code is all of the following except?"
+  - content: "Visual Studio Code is all of the following, except:"
     choices:
     - content: "Code editor"
       isCorrect: false
@@ -52,5 +53,5 @@ quiz:
       explanation: "Visual Studio Code is open-source"
     - content: "Priced at $50"
       isCorrect: true
-      explanation: "Correct! Visual Studio Code is free, meaning it is not $50."
+      explanation: "Correct! Visual Studio Code is free, meaning it isn't $50."
  

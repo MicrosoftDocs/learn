@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.explore-azure-databases
+metadata:
+  title: Explore Azure for SAP databases
+  description: "This module explores SAP on Azure database support and best practices for Azure for SAP workloads. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore Azure for SAP databases
+summary: This module explores SAP on Azure database support and best practices for Azure for SAP workloads.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore database support of Azure for SAP workloads.
+  - Explore storing database files directly on Azure Blob Storage.
+  - Explore Azure virtual machine and blob storage security.
+  - Examine SQL Server and Oracle recommendations.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/6-explore-azure-databases.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.explore-azure-databases.introduction
+- learn.wwl.explore-azure-databases.explore-database-support-of-azure-for-sap-workloads
+- learn.wwl.explore-azure-databases.explore-sql-server
+- learn.wwl.explore-azure-databases.consider-database-compression
+- learn.wwl.explore-azure-databases.store-database-files-directly-azure-blob-storage
+- learn.wwl.explore-azure-databases.virtual-machine-security
+- learn.wwl.explore-azure-databases.consider-security-recommendations-for-blob-storage
+- learn.wwl.explore-azure-databases.apply-sql-server-transparent-data-encryption
+- learn.wwl.explore-azure-databases.explore-sql-server-2014-buffer-pool-extension
+- learn.wwl.explore-azure-databases.examine-oracle-recommendations
+- 'learn.wwl.explore-azure-databases.implement-linux-clustering '
+- learn.wwl.explore-azure-databases.implement-windows-clustering
+- learn.wwl.explore-azure-databases.knowledge-check
+- learn.wwl.explore-azure-databases.summary
+badge:
+  uid: learn.wwl.explore-azure-databases.badge

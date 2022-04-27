@@ -4,8 +4,8 @@ metadata:
   title: Choose an Agile approach to software development
   description: Learn with the Space Game web team how to use Azure Boards to implement Agile software practices along with DevOps transparency and collaboration.
   ms.date: 05/20/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: kathrynee
+  ms.author: kaelli
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure

@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/28/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An Azure Stack Hub operator wants to deploy using an Azure Active Directory identity provider. They acquire the certificates and want to determine if the certificates meet the requirements for Azure Stack Hub. Which PowerShell cmdlet should they run?"
+    choices:
+    - content: "Invoke-AzsHubDeploymentCertificateValidation."
+      isCorrect: true
+      explanation: "Correct. Run the PowerShell cmdlet Invoke-AzsHubDeploymentCertificateValidation to validate readiness."
+    - content: "Setting up their own datacenter."
+      isCorrect: false
+      explanation: "Incorrect. Change the value for -CertificateType in Invoke-AzsHubDBAdapterCertificateValidation to validate certificates for other Azure Stack Hub services."
+    - content: "Run Get-PfxCertificate."
+      isCorrect: false
+      explanation: "Incorrect. The Get-PfxCertificate cmdlet receives an object for each PFX certificate file."
+  - content: "An Azure Stack Hub operator receives an alert for an external certificate about to expire. They acquire new certificates to validate if the certificates are in a healthy state. Which three actions should they perform?"
+    choices:
+    - content: "Run New-RegistrationToken cmdlet and specify UsageReportingEnabled."
+      isCorrect: false
+      explanation: "Incorrect. Running New-RegistrationToken creates a new registration token."
+    - content: "Run the Register-DirectoryService cmdlet and specify the -CustomADAdminCredential parameter."
+      isCorrect: false
+      explanation: "Incorrect. Running the Register-DirectoryService cmdlet registers customer Active Directory (Azure AD) with Graph Service."
+    - content: "Copy the certificates to a file share is accessible from the privileged endpoint (PEP). Then run the Test-AzureStack cmdlet and specify the -Group SecretRotationReadiness parameter. Lastly, run the Start-SecretRotation and specify the PfxFilePath parameter."
+      isCorrect: true
+      explanation: "Correct. They should copy the certificates to a file share is accessible from the privileged endpoint (PEP). The, Run the Test-AzureStack cmdlet and specify the -Group SecretRotationReadiness parameter. Lastly, run the Start-SecretRotation and specify the PfxFilePath parameter"

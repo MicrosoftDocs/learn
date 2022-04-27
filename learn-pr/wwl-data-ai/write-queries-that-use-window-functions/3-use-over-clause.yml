@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-queries-that-use-window-functions.use-over-clause
+title: Use the OVER clause
+metadata:
+  title: Use the OVER clause
+  description: "Use the OVER clause"
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-use-over-clause.md)]

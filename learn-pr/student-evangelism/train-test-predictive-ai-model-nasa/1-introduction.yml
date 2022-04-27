@@ -4,10 +4,11 @@ metadata:
   title: Introduction
   description: Introduction to the lesson about how to build an AI model to predict types of space rocks in images. 
   ms.date: 04/28/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Introduction
 durationInMinutes: 2
 content: |

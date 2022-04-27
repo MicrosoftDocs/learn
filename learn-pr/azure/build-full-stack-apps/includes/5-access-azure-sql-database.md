@@ -4,9 +4,9 @@ In the bus-catching scenario, Azure SQL Database is used from functions to execu
 
 In this unit, you'll look closely at the solution design as relates to accessing the data from Azure SQL Database. In the exercise that follows, you'll configure the connection to Azure SQL Database and monitor the solution.
 
-## Access data for the front end using a Vue.js application
+## Access data for the front end using a jQuery application
 
-The front end, a static web page, has been created with a popular framework Vue.js. It's a simple application with goals to display a map, real-time bus data points, and geofence(s).
+The front end, a static web page, has been created using the well-known jQuery and the OpenLayers libraries. It's a simple application with goals to display a map, real-time bus data points, and geofence(s).
 
 > [!NOTE]
 > The code created was inspired by https://github.com/clydedacruz/openstreetmap-wkt-playground

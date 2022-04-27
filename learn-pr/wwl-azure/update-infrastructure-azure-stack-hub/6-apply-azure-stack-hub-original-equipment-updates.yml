@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.update-infrastructure-for-azure-stack-hub.apply-oem-updates
+title: Apply Azure Stack Hub OEM updates
+metadata:
+  title: Apply Azure Stack Hub OEM updates
+  description: "Apply Azure Stack Hub OEM updates"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-apply-azure-stack-hub-original-equipment-updates.md)]

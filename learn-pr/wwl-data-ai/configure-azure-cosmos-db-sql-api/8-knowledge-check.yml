@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Your Azure Cosmos DB container has manually provisioned throughput. Incoming requests have exceeded the provisioned request units per second (RU/s). What happens next?"
+    choices:
+    - content: "Azure Cosmos DB will rate-limit subsequent requests."
+      isCorrect: true
+      explanation: "That's correct. Manually provisioned throughput will rate-limit requests, with a response indicating that a wait should be attempted before retrying."
+    - content: "Azure Cosmos DB will scale RU/s up to a service maximum of 50,000 RU/s."
+      isCorrect: false
+      explanation: "That's incorrect. The container has manually provisioned throughput where RU/s will not change and remain static."
+    - content: "Azure Cosmos DB will scale RU/s up to a maximum RU/s that you have previously configured."
+      isCorrect: false
+      explanation: "That's incorrect. The container has manually provisioned throughput where RU/s will always remain static and not scale up or down."
+  - content: "While building a proof of concept, your web development team was able to successfully estimate the throughput needs of your application within a 5% margin of error and does not expect any significant variances over time. When running in production, the team expects your workload to be extraordinarily stable. What type of throughput option should you consider?"
+    choices:
+    - content: "Autoscale"
+      isCorrect: false
+      explanation: "That's incorrect. Autoscale throughput is better suited for unpredictable traffic."
+    - content: "Serverless"
+      isCorrect: false
+      explanation: "That's incorrect. Serverless can better handle workloads that have wildly varying traffic and low average-to-peak traffic ratios."
+    - content: "Standard"
+      isCorrect: true
+      explanation: "That's correct. Standard throughput is suited for workloads with steady traffic."

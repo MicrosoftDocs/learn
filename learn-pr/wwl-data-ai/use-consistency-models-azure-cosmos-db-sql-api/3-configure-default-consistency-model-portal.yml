@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.configure-default-consistency-model-portal
+title: Configure default consistency model in the portal
+metadata:
+  title: Configure default consistency model in the portal
+  description: "Configure default consistency model in the portal"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-configure-default-consistency-model-portal.md)]

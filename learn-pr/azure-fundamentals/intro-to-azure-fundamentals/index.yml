@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-azure-fundamentals
 metadata:
   title: Introduction to Azure fundamentals
   description: "This module introduces you to the basics of Azure. Prepare for AZ-900."
-  ms.date: 06/11/2021
+  ms.date: 09/01/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
@@ -28,6 +28,7 @@ roles:
 - student
 products:
 - azure
+- azure-cloud-services
 units:
 - learn.azure.intro-to-azure-fundamentals.introduction
 - learn.azure.intro-to-azure-fundamentals.what-is-cloud-computing

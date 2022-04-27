@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Build serverless apps with Go
 summary: When you're authoring Azure functions, custom handlers allow you to use any language or runtime that supports HTTP primitives. In this module, you'll use the programming language Go and custom handlers.
 abstract: |
@@ -15,7 +16,7 @@ abstract: |
   - Understand when to use custom handlers.
   - Build serverless apps by using Go.
   - Handle different triggers like HTTP and queue.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/serverless-go.svg
 levels:
   - beginner
 roles:

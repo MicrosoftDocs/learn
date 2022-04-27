@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.migrate-file-server-workloads-using-storage-migration-service
+metadata:
+  title: Migrate file server workloads using Storage Migration Service
+  description: "Learn to use Storage Migration Service to migrate files and files shares from existing file server to new servers running Windows Server 2022. Configure storage migration for optimum performance of data migration."
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migrate file server workloads using Storage Migration Service
+summary: Learn to use Storage Migration Service to migrate files and files shares from existing file server to new servers running Windows Server 2022. Configure storage migration for optimum performance of data migration.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe Storage Migration Service and its usage scenarios
+  - Identify the requirements for using Storage Migration Service
+  - Describe how to migrate a server with storage migration
+  - List the considerations for using Storage Migration Service
+prerequisites: |
+  - Experience performing basic Windows Server administration tasks
+  - General understanding of Windows Server file servers
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+units:
+- learn.wwl.migrate-file-server-workloads-using-storage-migration-service.introduction
+- learn.wwl.migrate-file-server-workloads-using-storage-migration-service.overview-usage-scenarios
+- learn.wwl.migrate-file-server-workloads-using-storage-migration-service.requirements
+- learn.wwl.migrate-file-server-workloads-using-storage-migration-service.migrate-server
+- learn.wwl.evaluate-storage-migration-considerations
+- learn.wwl.migrate-file-server-workloads-using-storage-migration-service.knowledge-check
+- learn.wwl.migrate-file-server-workloads-using-storage-migration-service.summary
+badge:
+  uid: learn.wwl.migrate-file-server-workloads-using-storage-migration-service.badge

@@ -27,4 +27,4 @@ A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Austr
  -  **Data residency**. A region resides within the same geography as its pair (except for Brazil South) to meet data residency requirements for tax and law enforcement jurisdiction purposes.
 
 > [!NOTE]
-> View the complete list of [region pairs](https://docs.microsoft.com/azure/best-practices-availability-paired-regions#what-are-paired-regions).
+> View the complete list of [region pairs](/azure/best-practices-availability-paired-regions#what-are-paired-regions).

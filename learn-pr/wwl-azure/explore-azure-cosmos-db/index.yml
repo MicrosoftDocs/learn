@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.explore-azure-cosmos-db
+metadata:
+  title: Explore Azure Cosmos DB
+  description: "Learn the core features and functionality of Azure Cosmos DB."
+  ms.date: 04/27/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore Azure Cosmos DB
+summary: Learn the core features and functionality of Azure Cosmos DB.
+abstract: |
+  After completing this module, you'll be able to:
+  * Identify the key benefits provided by Azure Cosmos DB
+  * Describe the elements in an Azure Cosmos DB account and how they are organized
+  * Explain the different consistency levels and choose the correct one for your project
+  * Explore the APIs supported in Azure Cosmos DB and choose the appropriate API for your solution
+  * Describe how request units impact costs
+  * Create Azure Cosmos DB resources by using the Azure portal.
+prerequisites: |
+  * You should be familiar with developer concepts and terminology.
+  * Experience working with data solutions.
+  * An understanding of cloud computing and some experience with the Azure portal.
+iconUrl: /learn/achievements/1-explore-azure-cosmos-db.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-cosmos-db
+units:
+- learn.wwl.explore-azure-cosmos-db.introduction
+- learn.wwl.explore-azure-cosmos-db.identify-key-benefits-of
+- learn.wwl.explore-azure-cosmos-db.explore-resource-hierarchy
+- learn.wwl.explore-azure-cosmos-db.explore-consistency-levels
+- learn.wwl.explore-azure-cosmos-db.choose-right-consistency-level
+- learn.wwl.explore-azure-cosmos-db.explore-supported-apis
+- learn.wwl.explore-azure-cosmos-db.discover-request-units
+- learn.wwl.explore-azure-cosmos-db.exercise-create-resources-by-using-azure-portal
+- learn.wwl.explore-azure-cosmos-db.knowledge-check
+- learn.wwl.explore-azure-cosmos-db.summary
+badge:
+  uid: learn.wwl.explore-azure-cosmos-db.badge

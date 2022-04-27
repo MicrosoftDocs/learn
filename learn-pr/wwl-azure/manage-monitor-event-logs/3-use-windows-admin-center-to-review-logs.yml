@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitor-event-logs.use-windows-admin-center-to-review-logs
+title: Use Windows Admin Center to review logs
+metadata:
+  title: Use Windows Admin Center to review logs
+  description: "Use Windows Admin Center to review logs"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-use-windows-admin-center-to-review-logs.md)]

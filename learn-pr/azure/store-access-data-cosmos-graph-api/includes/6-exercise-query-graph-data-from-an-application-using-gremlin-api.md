@@ -1,10 +1,10 @@
-In this unit, you will execute queries against the graph database using the .NET Core application that you created in an earlier unit.
+In this unit, you'll execute queries against the graph database using the .NET Core application that you created in an earlier unit.
 
 ## Modify the application to return detailed results
 
 ::: zone pivot="csharp"
 
-1. Add an additional package to your app for JSON parsing.
+1. In Cloud Shell, add an additional package to your app for JSON parsing.
 
    ```bash
    dotnet add package Newtonsoft.Json
@@ -33,7 +33,7 @@ In this unit, you will execute queries against the graph database using the .NET
    }
    ```
 
-1. To save your changes, press **Ctrl-S** to save the file, and then press **Ctrl-Q** to exit the editor.
+1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
 
 ::: zone-end
 
@@ -45,7 +45,7 @@ In this unit, you will execute queries against the graph database using the .NET
    code .
    ```
 
-1. Open your app.js file in the editor and insert the following code after ``console.log(`{"Returned": "${result.length}"}`);``. This code will serialize the JSON returned from the queries and add it to the output.
+1. Open your app.js file in the editor, and insert the following code after ``console.log(`{"Returned": "${result.length}"}`);``. This code will serialize the JSON returned from the queries and add it to the output.
 
    ```javascript
    for (const item of result._items) {
@@ -53,7 +53,7 @@ In this unit, you will execute queries against the graph database using the .NET
    }
    ```
 
-1. To save your changes, press **Ctrl-S** to save the file, and then press **Ctrl-Q** to exit the editor.
+1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
 
 ::: zone-end
 
@@ -71,7 +71,7 @@ To retrieve all the vertices/nodes in your graph, run the following command:
 dotnet run "g.V()"
 ```
 
-Your app should display a message indicating the number of vertices/nodes in your graph, together with all of the information for your vertices/nodes; for example:
+Your app should display a message indicating the number of vertices/nodes in your graph, together with all of the information for your vertices/nodes. For example:
 
 ```json
 {"Returned": "5"}
@@ -90,7 +90,7 @@ To retrieve all the edges/relationships in your graph, run the following command
 dotnet run "g.E()"
 ```
 
-Your app should display a message indicating the number of edges/relationships in your graph, together with all of the information for your edges/relationships; for example:
+Your app should display a message indicating the number of edges/relationships in your graph, together with all of the information for your edges/relationships. For example:
 
 ```json
 {"Returned": "3"}
@@ -101,143 +101,143 @@ Your app should display a message indicating the number of edges/relationships i
 
 ### Count the number of vertices/nodes or edges/relationships in the graph
 
-To count the vertices/nodes in your graph, run the following command:
+1. To count the vertices/nodes in your graph, run the following command:
 
-```bash
-dotnet run "g.V().count()"
-```
+   ```bash
+   dotnet run "g.V().count()"
+   ```
 
-Your app should display a message indicating that one item was returned, (the count itself), followed by the number of vertices/nodes in your graph; for example:
+   Your app should display a message indicating that one item was returned, (the count itself), followed by the number of vertices/nodes in your graph. For example:
 
-```json
-{"Returned": "1"}
-5
-```
+   ```json
+   {"Returned": "1"}
+   5
+   ```
 
-Similar to the above example, to count the edges/relationships in your graph, run the following command:
+1. Similar to the previous example, to count the edges/relationships in your graph, run the following command:
 
-```bash
-dotnet run "g.E().count()"
-```
+   ```bash
+   dotnet run "g.E().count()"
+   ```
 
-Your app should display a message indicating that one item was returned, (the count itself), followed by the number of edges/relationships in your graph; for example:
+   Your app should display a message indicating that one item was returned, (the count itself), followed by the number of edges/relationships in your graph. For example:
 
-```json
-{"Returned": "1"}
-3
-```
+   ```json
+   {"Returned": "1"}
+   3
+   ```
 
-### Applying filters to queries
+### Apply filters to queries
 
 You can perform filters using Gremlin's `has` and `hasLabel` steps. You can also combine them using `and`, `or`, and `not` to build more complex filters. Azure Cosmos DB provides schema-agnostic indexing of all properties within your vertices and degrees for fast queries.
 
-First, let's display all of the vertices/nodes in your graph with a particular label:
+1. First, let's display all of the vertices/nodes in your graph with a particular label:
 
-```bash
-dotnet run "g.V().hasLabel('Category')"
-```
+   ```bash
+   dotnet run "g.V().hasLabel('Category')"
+   ```
 
-Your app should display a message indicating the number of vertices/nodes in your graph with *Category* as a label, followed by the detailed vertices/nodes; for example:
+   Your app should display a message indicating the number of vertices/nodes in your graph with *Category* as a label, followed by the detailed vertices/nodes. For example:
 
-```json
-{"Returned": "2"}
-{"id":"c1","label":"Category","type":"vertex","properties":{"name":[{"id":"9f3712d4-ed99-4fc6-b50d-bfe7659ca4fe","value":"Mobile Phones"}]}}
-{"id":"c2","label":"Category","type":"vertex","properties":{"name":[{"id":"b9de2a42-d50d-4d1e-bc8e-a88ef9606c69","value":"Gardening"}]}}
-```
+   ```json
+   {"Returned": "2"}
+   {"id":"c1","label":"Category","type":"vertex","properties":{"name":[{"id":"9f3712d4-ed99-4fc6-b50d-bfe7659ca4fe","value":"Mobile Phones"}]}}
+   {"id":"c2","label":"Category","type":"vertex","properties":{"name":[{"id":"b9de2a42-d50d-4d1e-bc8e-a88ef9606c69","value":"Gardening"}]}}
+   ```
 
-Next, Let's filter results for a particular label with a specific property:
+1. Next, Let's filter results for a particular label with a specific property:
 
-```bash
-dotnet run "g.V().hasLabel('Product').has('id','p1')"
-```
+   ```bash
+   dotnet run "g.V().hasLabel('Product').has('id','p1')"
+   ```
 
-Your app should display a message indicating the number of vertices/nodes in your graph with *Product* as a label and a *name* property of *p1*, followed by the detailed vertice/node; for example:
+   Your app should display a message indicating the number of vertices/nodes in your graph with *Product* as a label and a *name* property of *p1*, followed by the detailed vertice/node. For example:
 
-```json
-{"Returned": "1"}
-{"id":"p1","label":"Product","type":"vertex","properties":{"name":[{"id":"7f10b6bb-0a8a-4cf2-b2ac-8d8e4888c007","value":"Phone Charger"}],"price":[{"id":"5d93bfcf-f74c-4fba-81d9-a003964db00d","value":12.99}]}}
-```
+   ```json
+   {"Returned": "1"}
+   {"id":"p1","label":"Product","type":"vertex","properties":{"name":[{"id":"7f10b6bb-0a8a-4cf2-b2ac-8d8e4888c007","value":"Phone Charger"}],"price":[{"id":"5d93bfcf-f74c-4fba-81d9-a003964db00d","value":12.99}]}}
+   ```
 
 ### Projection from your query results
 
-You can project specific properties in your query results by specifying which value to return; for example:
+1. You can project specific properties in your query results by specifying which value to return. For example:
 
-```bash
-dotnet run "g.V().hasLabel('Category').values('name')"
-```
+   ```bash
+   dotnet run "g.V().hasLabel('Category').values('name')"
+   ```
 
-Your app should display a list of results like the following example:
+   Your app should display a list of results like the following example:
 
-```json
-{"Returned": "2"}
-"Mobile Phones"
-"Gardening"
-```
+   ```json
+   {"Returned": "2"}
+   "Mobile Phones"
+   "Gardening"
+   ```
 
-You can project multiple properties in your query results by specifying a list of values to return; for example:
+1. You can project multiple properties in your query results by specifying a list of values to return. For example:
 
-```bash
-dotnet run "g.V().hasLabel('Product').values('name','price')"
-```
+   ```bash
+   dotnet run "g.V().hasLabel('Product').values('name','price')"
+   ```
 
-Your app should display a list of results like the following example:
+   Your app should display a list of results, like the following example:
 
-```json
-{"Returned": "6"}
-"Phone Charger"
-12.99
-"USB C Cable Charger"
-8.99
-"Gardening Gloves"
-2.99
-```
+   ```json
+   {"Returned": "6"}
+   "Phone Charger"
+   12.99
+   "USB C Cable Charger"
+   8.99
+   "Gardening Gloves"
+   2.99
+   ```
 
-## Sorting queries
+## Sort queries
 
-To return a list of products sorted by name in ascending order, use the following command:
+1. To return a list of products sorted by name in ascending order, run the following command:
 
-```bash
-dotnet run "g.V().hasLabel('Product').order().by('name', incr).values('name','price')"
-```
+   ```bash
+   dotnet run "g.V().hasLabel('Product').order().by('name', incr).values('name','price')"
+   ```
 
-Your app should display a list of results like the following example:
+   Your app should display a list of results, like the following example:
 
-```json
-{"Returned": "6"}
-"Gardening Gloves"
-2.99
-"Phone Charger"
-12.99
-"USB C Cable Charger"
-8.99
-```
+   ```json
+   {"Returned": "6"}
+   "Gardening Gloves"
+   2.99
+   "Phone Charger"
+   12.99
+   "USB C Cable Charger"
+   8.99
+   ```
 
-To return a list of products sorted by price in descending order, use the following command:
+1. To return a list of products sorted by price in descending order, run the following command:
 
-```bash
-dotnet run "g.V().hasLabel('Product').order().by('price', decr).values('name','price')"
-```
+   ```bash
+   dotnet run "g.V().hasLabel('Product').order().by('price', decr).values('name','price')"
+   ```
 
-Your app should display a list of results like the following example:
+   Your app should display a list of results, like the following example:
 
-```json
-"Phone Charger"
-12.99
-"USB C Cable Charger"
-8.99
-"Gardening Gloves"
-2.99
-```
+   ```json
+   "Phone Charger"
+   12.99
+   "USB C Cable Charger"
+   8.99
+   "Gardening Gloves"
+   2.99
+   ```
 
 ### Update properties of vertices
 
-You can update the properties of a specific vertice/node by applying a filter and then assigning the property a new value; for example
+You can update the properties of a specific vertice/node by applying a filter and then assigning the property a new value. For example:
 
 ```bash
 dotnet run "g.V('p1').property('price', 15.99)"
 ```
 
-Your app should display a list of results like the following example:
+Your app should display a list of results, like the following example:
 
 ```json
 {"Returned": "1"}
@@ -257,7 +257,7 @@ cd gremlinapp
 node app.js "g.V()"
 ```
 
-Your app should display a message indicating the number of vertices/nodes in your graph, together with all of the information for your vertices/nodes; for example:
+Your app should display a message indicating the number of vertices/nodes in your graph, together with all of the information for your vertices/nodes. For example:
 
 ```json
 {"Returned": "5"}
@@ -276,7 +276,7 @@ To retrieve all the edges/relationships in your graph, run the following command
 node app.js "g.E()"
 ```
 
-Your app should display a message indicating the number of edges/relationships in your graph, together with all of the information for your edges/relationships; for example:
+Your app should display a message indicating the number of edges/relationships in your graph, together with all of the information for your edges/relationships. For example:
 
 ```json
 {"Returned": "3"}
@@ -287,143 +287,143 @@ Your app should display a message indicating the number of edges/relationships i
 
 ### Count the number of vertices/nodes or edges/relationships in the graph
 
-To count the vertices/nodes in your graph, run the following command:
+1. To count the vertices/nodes in your graph, run the following command:
 
-```bash
-node app.js "g.V().count()"
-```
+   ```bash
+   node app.js "g.V().count()"
+   ```
 
-Your app should display a message indicating that one item was returned, (the count itself), followed by the number of vertices/nodes in your graph; for example:
+   Your app should display a message indicating that one item was returned, (the count itself), followed by the number of vertices/nodes in your graph. For example:
 
-```json
-{"Returned": "1"}
-5
-```
+   ```json
+   {"Returned": "1"}
+   5
+   ```
 
-Similar to the above example, to count the edges/relationships in your graph, run the following command:
+1. Similar to the above example, to count the edges/relationships in your graph, run the following command:
 
-```bash
-node app.js "g.E().count()"
-```
+   ```bash
+   node app.js "g.E().count()"
+   ```
 
-Your app should display a message indicating that one item was returned, (the count itself), followed by the number of edges/relationships in your graph; for example:
+   Your app should display a message indicating that one item was returned, (the count itself), followed by the number of edges/relationships in your graph. For example:
 
-```json
-{"Returned": "1"}
-3
-```
+   ```json
+   {"Returned": "1"}
+   3
+   ```
 
-### Applying filters to queries
+### Apply filters to queries
 
 You can perform filters using Gremlin's `has` and `hasLabel` steps. You can also combine them using `and`, `or`, and `not` to build more complex filters. Azure Cosmos DB provides schema-agnostic indexing of all properties within your vertices and degrees for fast queries.
 
-First, let's display all of the vertices/nodes in your graph with a particular label:
+1. First, let's display all of the vertices/nodes in your graph with a particular label:
 
-```bash
-node app.js "g.V().hasLabel('Category')"
-```
+   ```bash
+   node app.js "g.V().hasLabel('Category')"
+   ```
 
-Your app should display a message indicating the number of vertices/nodes in your graph with *Category* as a label, followed by the detailed vertices/nodes; for example:
+   Your app should display a message indicating the number of vertices/nodes in your graph with *Category* as a label, followed by the detailed vertices/nodes. For example:
 
-```json
-{"Returned": "2"}
-{"id":"c1","label":"Category","type":"vertex","properties":{"name":[{"id":"9f3712d4-ed99-4fc6-b50d-bfe7659ca4fe","value":"Mobile Phones"}]}}
-{"id":"c2","label":"Category","type":"vertex","properties":{"name":[{"id":"b9de2a42-d50d-4d1e-bc8e-a88ef9606c69","value":"Gardening"}]}}
-```
+   ```json
+   {"Returned": "2"}
+   {"id":"c1","label":"Category","type":"vertex","properties":{"name":[{"id":"9f3712d4-ed99-4fc6-b50d-bfe7659ca4fe","value":"Mobile Phones"}]}}
+   {"id":"c2","label":"Category","type":"vertex","properties":{"name":[{"id":"b9de2a42-d50d-4d1e-bc8e-a88ef9606c69","value":"Gardening"}]}}
+   ```
 
-Next, Let's filter results for a particular label with a specific property:
+1. Next, Let's filter results for a particular label with a specific property:
 
-```bash
-node app.js "g.V().hasLabel('Product').has('id','p1')"
-```
+   ```bash
+   node app.js "g.V().hasLabel('Product').has('id','p1')"
+   ```
 
-Your app should display a message indicating the number of vertices/nodes in your graph with *Product* as a label and a *name* property of *p1*, followed by the detailed vertice/node; for example:
+   Your app should display a message indicating the number of vertices/nodes in your graph with *Product* as a label and a *name* property of *p1*, followed by the detailed vertice/node. For example:
 
-```json
-{"Returned": "1"}
-{"id":"p1","label":"Product","type":"vertex","properties":{"name":[{"id":"7f10b6bb-0a8a-4cf2-b2ac-8d8e4888c007","value":"Phone Charger"}],"price":[{"id":"5d93bfcf-f74c-4fba-81d9-a003964db00d","value":12.99}]}}
-```
+   ```json
+   {"Returned": "1"}
+   {"id":"p1","label":"Product","type":"vertex","properties":{"name":[{"id":"7f10b6bb-0a8a-4cf2-b2ac-8d8e4888c007","value":"Phone Charger"}],"price":[{"id":"5d93bfcf-f74c-4fba-81d9-a003964db00d","value":12.99}]}}
+   ```
 
 ### Projection from your query results
 
-You can project specific properties in your query results by specifying which value to return; for example:
+1. You can project specific properties in your query results by specifying which value to return. For example:
 
-```bash
-node app.js "g.V().hasLabel('Category').values('name')"
-```
+   ```bash
+   node app.js "g.V().hasLabel('Category').values('name')"
+   ```
 
-Your app should display a list of results like the following example:
+   Your app should display a list of results, like the following example:
 
-```json
-{"Returned": "2"}
-"Mobile Phones"
-"Gardening"
-```
+   ```json
+   {"Returned": "2"}
+   "Mobile Phones"
+   "Gardening"
+   ```
 
-You can project multiple properties in your query results by specifying a list of values to return; for example:
+1. You can project multiple properties in your query results by specifying a list of values to return. For example:
 
-```bash
-node app.js "g.V().hasLabel('Product').values('name','price')"
-```
+   ```bash
+   node app.js "g.V().hasLabel('Product').values('name','price')"
+   ```
 
-Your app should display a list of results like the following example:
+   Your app should display a list of results, like the following example:
 
-```json
-{"Returned": "6"}
-"Phone Charger"
-12.99
-"USB C Cable Charger"
-8.99
-"Gardening Gloves"
-2.99
-```
+   ```json
+   {"Returned": "6"}
+   "Phone Charger"
+   12.99
+   "USB C Cable Charger"
+   8.99
+   "Gardening Gloves"
+   2.99
+   ```
 
-## Sorting queries
+## Sort queries
 
-To return a list of products sorted by name in ascending order, use the following command:
+1. To return a list of products sorted by name in ascending order, run the following command:
 
-```bash
-node app.js "g.V().hasLabel('Product').order().by('name', incr).values('name','price')"
-```
+   ```bash
+   node app.js "g.V().hasLabel('Product').order().by('name', incr).values('name','price')"
+   ```
 
-Your app should display a list of results like the following example:
+   Your app should display a list of results, like the following example:
 
-```json
-{"Returned": "6"}
-"Gardening Gloves"
-2.99
-"Phone Charger"
-12.99
-"USB C Cable Charger"
-8.99
-```
+   ```json
+   {"Returned": "6"}
+   "Gardening Gloves"
+   2.99
+   "Phone Charger"
+   12.99
+   "USB C Cable Charger"
+   8.99
+   ```
 
-To return a list of products sorted by price in descending order, use the following command:
+1. To return a list of products sorted by price in descending order, run the following command:
 
-```bash
-node app.js "g.V().hasLabel('Product').order().by('price', decr).values('name','price')"
-```
+   ```bash
+   node app.js "g.V().hasLabel('Product').order().by('price', decr).values('name','price')"
+   ```
 
-Your app should display a list of results like the following example:
+   Your app should display a list of results, like the following example:
 
-```json
-"Phone Charger"
-12.99
-"USB C Cable Charger"
-8.99
-"Gardening Gloves"
-2.99
-```
+   ```json
+   "Phone Charger"
+   12.99
+   "USB C Cable Charger"
+   8.99
+   "Gardening Gloves"
+   2.99
+   ```
 
 ### Update properties of vertices
 
-You can update the properties of a specific vertice/node by applying a filter and then assigning the property a new value; for example
+You can update the properties of a specific vertice/node by applying a filter and then assigning the property a new value. For example:
 
 ```bash
 node app.js "g.V('p1').property('price', 15.99)"
 ```
 
-Your app should display a list of results like the following example:
+Your app should display a list of results, like the following example:
 
 ```json
 {"Returned": "1"}

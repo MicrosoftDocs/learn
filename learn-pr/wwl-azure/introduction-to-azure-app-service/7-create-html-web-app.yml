@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-app-service.exercise-create-static-html-web-app-by-using-azure-cloud-shell
+title: 'Exercise: Create a static HTML web app by using Azure Cloud Shell'
+metadata:
+  title: 'Exercise: Create a static HTML web app by using Azure Cloud Shell'
+  description: "Exercise: Create a static HTML web app by using Azure Cloud Shell"
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-create-html-web-app.md)]

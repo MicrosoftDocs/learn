@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-azure-blob-storage
+title: Design for Azure blob storage
+metadata:
+  title: Design for Azure blob storage
+  description: "Design for Azure blob storage"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-design-for-azure-blob-storage.md)]

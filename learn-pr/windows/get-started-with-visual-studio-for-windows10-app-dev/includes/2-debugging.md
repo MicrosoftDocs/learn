@@ -10,7 +10,7 @@ Here's how to add these messages to the Universal Windows Platform (UWP) project
 
 1. In the Solution Explorer view on the right, select **MainPage.xaml** to expand it, and then select **MainPage.xaml.cs**. This is the C# code that's associated with the main window that your app will display.
 
-![Visual Studio.](../media/debug1.png)
+![Screenshot shows the code editor in Visual Studio for the Main Page dot x a m l dot c s file.](../media/debug1.png)
 
 2. Scroll down the source code editor window until you find this code:
 
@@ -38,7 +38,7 @@ public void Hello()
 
 Now Visual Studio will look like this: 
 
-![Visual Studio.](../media/debug2.png)
+![Screenshot shows the code editor in Visual Studio with changes to the Main Page dot x a m l dot c s file.](../media/debug2.png)
 
 3. To run the project, select F5 or select the green **Run** button. After a few seconds, your app will open as a large, empty window. Minimize the window to bring Visual Studio back into view.
 
@@ -75,17 +75,17 @@ This app really wants to get the value 4. Unfortunately, there's a bug because a
 
 2. Click in the margin at the far left side of the screen, next to the code `int c = a + b;`. A red dot will appear. This is your *breakpoint*. Here's how it will look:
 
-![Visual Studio.](../media/debug3.png)
+![Screenshot shows the code editor in Visual Studio with changes to the Main Page c s file edited to expose a bug.](../media/debug3.png)
 
 3. Press F5 or select **Run** again. This time the app will immediately stop and bring Visual Studio back to the foreground. A small yellow arrow will appear in the margin, and a line of code will be highlighted in yellow. The highlight shows you the line of code that will run next.
 
 4. Hover over the variable `c`. A little pop-up window will show you its current value. It's 3, not 4 like our code expected! Looks like we found the bug!
 
-![Visual Studio.](../media/debug4.png)
+![Screenshot shows the code editor in Visual Studio. Mouseover c, on line 37, shows the correct value of 3.](../media/debug4.png)
 
 5. While your program is paused, you can step through it line by line by using the **Step into**, **Step over**, and **Step out** buttons on the toolbar. Try it now. Select **Step over** and watch the yellow arrow as it follows the flow of control.
 
-![Visual Studio.](../media/debug5.png)
+![Screenshot shows the code editor in Visual Studio. C equal 4, on line 37, is highlighted in a red box.](../media/debug5.png)
 
 6. If you move your pointer down to hover near one of the closing braces, a little green arrow will appear. This lets you keep running the app until that location is reached, which can be useful. Try it out.
 

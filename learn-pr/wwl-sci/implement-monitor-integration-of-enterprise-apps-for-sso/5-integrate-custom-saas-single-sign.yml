@@ -4,12 +4,13 @@ title: Integrate custom SaaS apps for single sign-on
 metadata:
   title: Integrate custom SaaS apps for single sign-on
   description: "Integrate custom SaaS apps for single sign-on"
-  ms.date: 08/04/2021
+  ms.date: 02/22/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/5-integrate-custom-saas-single-sign.md)]

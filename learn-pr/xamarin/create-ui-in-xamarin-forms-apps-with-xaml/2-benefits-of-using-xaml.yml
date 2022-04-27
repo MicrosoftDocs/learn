@@ -4,11 +4,10 @@ metadata:
   title: Benefits of using XAML
   description: "Explore the benefits XAML introduces into your development process"
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Benefits of using XAML
 durationInMinutes: 5
 content: |

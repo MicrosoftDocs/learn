@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-integration.solution-azure-data-lake
+title: Design a data integration solution with Azure Data Lake
+metadata:
+  title: Design a data integration solution with Azure Data Lake
+  description: "Design a data integration solution with Azure Data Lake"
+  ms.date: 03/16/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-solution-azure-data-lake.md)]

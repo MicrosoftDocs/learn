@@ -3,11 +3,12 @@ uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization-case-studies
 metadata:
   title: Virtualization case study
   description: Carnegie Mellon University's Cloud Developer course. Dive deeper into resource sharing and virtualization with case studies of how real cloud providers use virtualization.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Virtualization case study
 summary: Dive deeper into resource sharing and virtualization with case studies of how real cloud providers use virtualization.
 abstract: | 

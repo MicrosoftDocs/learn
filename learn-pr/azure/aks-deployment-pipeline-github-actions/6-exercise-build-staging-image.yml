@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Build the staging application image
   description: Practice what you've learned by building the staging application image. Then, automatically deploy the image to Azure Container Registry by using GitHub Actions.
   ms.date: 10/08/2020
-  author: khaosdoctor
-  ms.author: ludossan
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: github
 title: Exercise - Build the staging application image

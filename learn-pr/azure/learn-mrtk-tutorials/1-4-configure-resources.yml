@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.learn-introduction-tutorials-mrtk.1-4-configure-resources
+title: Import and configure resources
+metadata:
+  title:  Import and configure resources
+  description: Introduction for Import and configure resources
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-4-import-resources.md)]

@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.design-data-storage-solution-for-non-relational-data
+metadata:
+  title: Design a data storage solution for non-relational data
+  description: "Azure Architects design and recommend non-relational data storage solutions."
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a data storage solution for non-relational data
+summary: Azure Architects design and recommend non-relational data storage solutions.
+abstract: |
+  In this module, you’ll learn how to:
+  - Design for data storage.
+  - Design for Azure storage accounts.
+  - Design for Azure blob storage.
+  - Design for data redundancy.
+  - Design for Azure files.
+  - Design an Azure disk solution.
+  - Design for storage security.
+prerequisites: |
+  • Conceptual knowledge of storage accounts, blobs, files, disks, and data protection.
+  • Working experience with creating and securing storage systems.
+iconUrl: /learn/achievements/data-storage-solution-non-relation-data.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure-blob-storage
+- azure-disk-storage
+- azure-storage
+- azure-storage-accounts
+units:
+- learn.wwl.design-data-storage-solution-for-non-relational-data.introduction
+- learn.wwl.design-data-storage-solution-for-non-relational-data.design-for
+- learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-azure-storage-accounts
+- learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-data-redundancy
+- learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-azure-blob-storage
+- learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-azure-files
+- learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-azure-disk-solutions
+- learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-storage-security
+- learn.wwl.design-data-storage-solution-for-non-relational-data.knowledge-check
+- learn.wwl.design-data-storage-solution-for-non-relational-data.summary-resources
+badge:
+  uid: learn.wwl.design-data-storage-solution-for-non-relational-data.badge

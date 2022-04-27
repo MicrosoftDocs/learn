@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.write-first-query-kusto-query-language.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Check your knowledge
+  description: Review what you've learned.
+  ms.date: 11/22/2021
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+durationInMinutes: 5 
+content: |
+quiz:
+  questions:
+  - content: "What is the input and output data format of each operator in a Kusto query?"
+    choices:
+    - content: "String"
+      isCorrect: false
+      explanation: "False. String is just one of many data types that can be included in the tabular data."
+    - content: "Tabular"
+      isCorrect: true
+      explanation: 'True. Each operator starts with a tabular input and returns a tabular output.'
+    - content: "JSON"
+      isCorrect: false
+      explanation: "False. JSON is just one of many data types that can be included in the tabular data."
+  - content: "Which operator will return a specific number of arbitrary rows of data?"
+    choices:
+    - content: "`take`"
+      isCorrect: true
+      explanation: "True. The `take` operator returns up to the specified number of arbitrary data rows."
+    - content: "`between`"
+      isCorrect: false
+      explanation: "False. The `between` operator filters a record set for data that matches the values in an inclusive range."
+    - content: "`contain`"
+      isCorrect: false
+      explanation: "False. The `contain` operator filters a record set for data that contains a case-insensitive string."
+  - content: "Which operator can be used to insert new computed columns?"
+    choices:
+    - content: "`print`"
+      isCorrect: false
+      explanation: "False. The `print` operator outputs a single row with one or more scalar expressions."
+    - content: "`render`"
+      isCorrect: false
+      explanation: "False. The `render` operator instructs the user agent to render the results of the query in a particular way."
+    - content: "`project`"
+      isCorrect: true
+      explanation: "True. The `project` operator can be used to include, rename, or insert new computed columns."
+  - content: "Which of the following queries best answers the following question: Which types of storms caused the most property damage in the state of Texas?"
+    choices:
+    - content: StormEvents | where DamageProperty > 0 | where State == "TEXAS" | project State, EventType, DamageProperty | sort by DamageProperty 
+      isCorrect: true
+      explanation: "True."
+    - content: StormEvents | where DamageCrops > 0 | where State == "TEXAS" | project State, EventType, DamageCrops | sort by DamageCrops
+      isCorrect: false
+      explanation: "False. This query sorts on `DamageCrops`, not `DamageProperty`."
+    - content: StormEvents | where DamageProperty > 0 | where State == "FLORIDA" | where EventType contains "thunder" | project StartTime, EventType, DamageProperty 
+      isCorrect: false
+      explanation: "False. This query looks at thunder-containing events in the state of Florida."

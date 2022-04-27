@@ -8,7 +8,7 @@ To follow along in this section, you will need to sign in to the Azure CLI with 
 
 To sign into an Azure subscription using a service principal, you first need access to a service principal. If you already have a service principal, you can skip this part of the section.
 
-Automated tools that deploy or use Azure services such as Terraform should always have restricted permissions. Instead of signing in to applications as a fully privileged user, Azure offers service principals. There are many options when [creating a service principal with the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli). We'll use [az ad sp create-for-rbac](https://docs.microsoft.com/cli/azure/ad/sp?#az_ad_sp_create_for_rbac) to create a service principal with a Contributor role. The Contributor role (the default) has full permissions to read and write to an Azure account. 
+Automated tools that deploy or use Azure services such as Terraform should always have restricted permissions. Instead of signing in to applications as a fully privileged user, Azure offers service principals. There are many options when [creating a service principal with the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli?). We'll use [az ad sp create-for-rbac](https://docs.microsoft.com/cli/azure/ad/sp?#az-ad-sp-create-for-rbac) to create a service principal with a Contributor role. The Contributor role (the default) has full permissions to read and write to an Azure account. 
  
 ### Create an Azure service principal 
 
@@ -20,7 +20,7 @@ az ad sp create-for-rbac --role Contributor --scopes /subscriptions/{SubID}
 
 > [!IMPORTANT]
 > - Upon successful completion, `az ad sp create-for-rbac` displays several values. The `name`, `password`, and `tenant` values are used in the next step.
-> - The password can't be retrieved if lost. As such, you should store your password in a safe place. If you forget your password, you'll need to [reset the service principal credentials](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli#reset-credentials).
+> - The password can't be retrieved if lost. As such, you should store your password in a safe place. If you forget your password, you'll need to [reset the service principal credentials](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli#6-reset-credentials).
  
 ### Sign in using an Azure service principal
 
@@ -32,7 +32,7 @@ az login --service-principal -u <service_principal_name> -p "<service_principal_
  
 ## Terraform configuration files
 
-Terraform language is designed to be readable.
+Terraform HCL (HashiCorp Configuration Language) is designed to be readable.
 
 ![Example of Azure Resource Manager Template Syntax vs HCL Syntax.](../media/example-azure-resource-manager-template-syntax-hcl-syntax.png)
 
@@ -279,7 +279,7 @@ With your Terraform template created, the next steps are:
  
 ### Init: Initialize the working folder
 
-To initialize the Terraform deployment, run [terraform init](https://www.terraform.io/docs/commands/init.html). This command downloads the Azure modules required to create an Azure resource group.
+To initialize the Terraform deployment, run [terraform init](https://www.terraform.io/docs/commands/init.html) from the working directory containing Terraform configuration files. This command downloads the Azure modules required to create an Azure resource group.
 
 ```cmd
     terraform init
@@ -287,10 +287,10 @@ To initialize the Terraform deployment, run [terraform init](https://www.terrafo
 
 ### Plan: pre-flight validation
 
-After initialization, you create an execution plan by running [terraform plan](https://www.terraform.io/docs/commands/plan.html).
+After initialization, you create an execution plan by running [terraform plan](https://www.terraform.io/docs/commands/plan.html). We choose the simple file name `terraform_plan`, any name can be used.
 
 ```cmd
-    terraform plan -out <terraform_plan>.tfplan
+    terraform plan -out terraform_plan.tfplan
 ```
 
 - The `terraform plan` command creates an execution plan but doesn't execute it. Instead, it determines what actions are necessary to create the configuration specified in your configuration files. This pattern allows you to verify whether the execution plan matches your expectations before making any changes to actual resources.
@@ -303,7 +303,7 @@ After initialization, you create an execution plan by running [terraform plan](h
 Once you're ready to apply the execution plan to your cloud infrastructure, you run [terraform apply](https://www.terraform.io/docs/commands/apply.html).
 
 ```cmd
-    terraform apply <terraform_plan>.tfplan
+    terraform apply terraform_plan.tfplan
 ``` 
  
 ### Destroy: Reverse a Terraform execution plan
@@ -311,11 +311,11 @@ Once you're ready to apply the execution plan to your cloud infrastructure, you 
 1. To reverse, or undo, the execution plan, you run [terraform plan](https://www.terraform.io/docs/commands/plan.html) and specify the `destroy` flag as follows:
 
     ```cmd
-    terraform plan -destroy -out <terraform_plan>.destroy.tfplan
+    terraform plan -destroy -out terraform_plan.destroy.tfplan
     ```
 
 2. Run [terraform apply](https://www.terraform.io/docs/commands/apply.html) to apply the execution plan reversal.
     
     ```cmd
-    terraform apply <terraform_plan>.destroy.tfplan
+    terraform apply terraform_plan.destroy.tfplan
     ```

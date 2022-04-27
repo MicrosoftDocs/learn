@@ -2,20 +2,31 @@ To control devices programmatically, you use the IoT Central REST API.
 
 You want to enable your existing fleet management application to control devices connected your IoT Central application programmatically.
 
-In this unit, you use the IoT Central REST API to set a writeable property on a vehicle monitoring device and then send a reboot command to the device.
+In this unit, you use the IoT Central REST API to query your devices, set a writeable property on a vehicle monitoring device, and then send a reboot command to the device.
+
+*The query REST API is currently in preview.*
 
 ## View device telemetry
 
-You can use the REST API to view the last known value for a device's telemetry measurement. Run the following commands to view the last known location and temperature values from the **sim-truck-001** device. You may need to wait a few minutes before the simulated device starts sending telemetry and this command can run successfully:
+You can use the REST API to query for a device's telemetry measurement. Run the following commands to view the five last known location and temperature values from the **sim-truck-001** device. You may need to wait a few minutes before the simulated device starts sending telemetry and this command can run successfully:
 
 ```azurecli
-az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/telemetry/Location \
+# The FROM clause in the query needs the device template id.
+
+TEMPLATE_ID=`az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001 \
 --url-parameters api-version=1.0 \
---headers Authorization="$OPERATOR_TOKEN"
-az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-001/telemetry/ContentsTemperature \
---url-parameters api-version=1.0 \
---headers Authorization="$OPERATOR_TOKEN"
+--headers Authorization="$OPERATOR_TOKEN" \
+--query "template" -o tsv`
+
+az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/query \
+--url-parameters api-version=1.1-preview \
+--headers Authorization="$OPERATOR_TOKEN" Content-Type=application/json \
+--body '{
+    "query": "SELECT TOP 5 $id AS device-id, $ts AS timestamp, ContentsTemperature, Location FROM '"$TEMPLATE_ID"' WHERE device-id = '"'sim-truck-001'"' ORDER BY timestamp DESC"
+}'
 ```
+
+To learn more, see [How to use the IoT Central REST API to query devices](/azure/iot-central/core/howto-query-with-rest-api).
 
 ## View device properties
 

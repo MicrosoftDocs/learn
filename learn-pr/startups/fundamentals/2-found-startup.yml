@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundamentals.found-startup
+title: Should you found a startup?
+metadata:
+  title: Should you found a startup?
+  description: Consider questions that explore your suitability for founding a startup. Examples include your motivation, expertise, financial freedom, and risk tolerance.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-found-startup.md)]

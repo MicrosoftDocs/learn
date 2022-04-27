@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.create-manage-projects.exercise-create-package
+title: Exercise - Create a package
+metadata:
+  title: Exercise - Create a package
+  description: In this exercise, you'll create a virtual environment, install a library, and learn how to activate and deactivate your virtual environment.
+  ms.date: 12/02/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise-create-package.md)]

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.azure-virtual-desktop-architecture
+metadata:
+  title: Azure Virtual Desktop Architecture
+  description: "Azure Virtual Desktop Architecture"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Virtual Desktop Architecture
+summary: Azure Virtual Desktop manages the infrastructure and brokering components, while customers manage their own desktop host virtual machines (VMs) and clients. Microsoft manages the Remote Connection Gateway, and Connection Broker services as part of Azure.
+abstract: |
+  After completing this module, you'll be able to:
+  *  Explain the Azure Virtual Desktop components.
+  *  Describe the Azure Virtual Desktop architecture.
+  *  Choose between personal and pooled desktops.
+  *  Identify the Azure limitations for Azure Virtual Desktop.
+  *  Describe the options for Azure Virtual Desktop pricing.
+prerequisites: ""
+iconUrl: /learn/achievements/1-azure-virtual-desktop-architecture.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-desktop
+- azure-virtual-machines
+units:
+- learn.wwl.azure-virtual-desktop-architecture.introduction
+- learn.wwl.azure-virtual-desktop-architecture.for-enterprise
+- learn.wwl.azure-virtual-desktop-architecture.components
+- learn.wwl.azure-virtual-desktop-architecture.personal-pooled-desktops
+- learn.wwl.azure-virtual-desktop-architecture.service-updates-for
+- learn.wwl.azure-virtual-desktop-architecture.azure-limitations-for
+- learn.wwl.azure-virtual-desktop-architecture.vm-sizing
+- learn.wwl.azure-virtual-desktop-architecture.pricing
+- learn.wwl.azure-virtual-desktop-architecture.knowledge-check
+- learn.wwl.azure-virtual-desktop-architecture.summary
+badge:
+  uid: learn.wwl.azure-virtual-desktop-architecture.badge

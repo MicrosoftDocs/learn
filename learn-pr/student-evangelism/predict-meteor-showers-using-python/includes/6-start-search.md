@@ -131,7 +131,7 @@ Here's the output:
 
 |  | city | latitude | country |
 |--|------|----------|---------|
-| 0 | Abu Dhabi | 24.47 | United Arab Emirates |
+| **0** | Abu Dhabi | 24.47 | United Arab Emirates |
 
 ### `cities.loc[cities['city'] == city, 'latitude']`
 

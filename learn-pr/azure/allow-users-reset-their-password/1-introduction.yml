@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: In this unit, you'll learn about a business scenario where self-service password resets can reduce administrative costs.
   ms.date: 11/18/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: Justinha
+  ms.author: justinha
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-remote-management.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "There are two basic methods for connecting into Azure VMs for remote management purposes. Which method is required for a production scenario with an SAP workload on Azure?"
+    choices:
+    - content: "Connect through public endpoints on a Jumpbox VM"
+      isCorrect: false
+      explanation: "Incorrect. Site-to-site connectivity via VPN or ExpressRoute is necessary for production scenarios. This type of connection is also needed for non-production scenarios that feed into production scenarios where SAP software is being used."
+    - content: "Connect through a VPN or Azure ExpressRoute"
+      isCorrect: true
+      explanation: "Correct. Site-to-site connectivity via VPN or ExpressRoute is necessary for production scenarios. This type of connection is also needed for non-production scenarios that feed into production scenarios where SAP software is being used."
+    - content: "Either method is acceptable for a production scenario"
+      isCorrect: false
+      explanation: "Incorrect. Site-to-site connectivity via VPN or ExpressRoute is necessary for production scenarios. This type of connection is also needed for non-production scenarios that feed into production scenarios where SAP software is being used."
+  - content: "Which role-based access control built-in role can create and manage all types of Azure resources but can’t grant access to others?"
+    choices:
+    - content: "Owner"
+      isCorrect: false
+      explanation: "Incorrect. The Owner has full access to all resources including the right to delegate access to others."
+    - content: "Contributor"
+      isCorrect: true
+      explanation: "Correct. Contributors can create and manage all types of Azure resources but can’t grant access to others."
+    - content: "User Access Administrator"
+      isCorrect: false
+      explanation: "Incorrect. The User Access Administrator can manage user access to Azure resources."
+  - content: "Which Azure service allows customers to connect to a virtual machine using a browser and the Azure portal?"
+    choices:
+    - content: "Azure Bastion"
+      isCorrect: true
+      explanation: "Correct. Azure Bastion is a service you deploy that lets you connect to a virtual machine using your browser and the Azure portal. The Azure Bastion service is a fully platform-managed PaaS service that you provision inside your virtual network."
+    - content: "Azure Resource Manager"
+      isCorrect: false
+      explanation: "Incorrect. Azure Bastion is a service you deploy that lets you connect to a virtual machine using your browser and the Azure portal. The Azure Bastion service is a fully platform-managed PaaS service that you provision inside your virtual network."
+    - content: "Azure Front Door"
+      isCorrect: false
+      explanation: "Incorrect. Azure Bastion is a service you deploy that lets you connect to a virtual machine using your browser and the Azure portal. The Azure Bastion service is a fully platform-managed PaaS service that you provision inside your virtual network."

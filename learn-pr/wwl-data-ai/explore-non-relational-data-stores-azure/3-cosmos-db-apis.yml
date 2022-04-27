@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-non-relational-data-stores-azure.azure-cosmos-db-apis
+title: Identify Azure Cosmos DB APIs
+metadata:
+  title: Identify Azure Cosmos DB APIs
+  description: "Identify Azure Cosmos DB APIs"
+  ms.date: 03/10/2022
+  author: wwlpublish
+  ms.author: wwlpub
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-cosmos-db-apis.md)]

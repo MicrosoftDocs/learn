@@ -12,9 +12,9 @@ Even when using a container, you must provision a Cognitive Services resource in
 
 ## Cognitive Services container images
 
-Each container provides a subset of Cognitive Services functionality. For example, not all features of the Text Analytics service are in a single container. Language detection, translation, and sentiment analysis are each separate container images. However, the setup steps are similar for each container.
+Each container provides a subset of Cognitive Services functionality. For example, not all features of the Language service are in a single container. Language detection, translation, and sentiment analysis are each separate container images. However, the setup steps are similar for each container.
 
-For the Text Analytics service, each of the three core features maps to a separate image:
+For the Language service, each of the three core features maps to a separate image:
 
 | Feature | Image |
 |---|---|

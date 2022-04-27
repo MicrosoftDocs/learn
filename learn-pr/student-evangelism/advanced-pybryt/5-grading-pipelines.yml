@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.advanced-pybryt.5-grading-pipelines
+title: Grading pipelines
+metadata:
+  title: Grading pipelines
+  description: How to create a grading pipeline that uses PyBryt
+  author: chrispyles
+  ms.author: leestott
+  ms.date: 1/10/2022
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-grading-pipelines.md)]

@@ -4,11 +4,12 @@ title: Create a static app with Gatsby
 metadata:
   title: Create a static app with Gatsby
   description: This unit will explain what Gatsby is and how you can use its CLI to scaffold, host and build static apps
-  author: softchris
+  author: acomfort248
   ms.author: chnoring
-  ms.date: 11/18/2020
+  ms.date: 04/22/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 2
 content: |
   [!include[](includes/2-create-app.md)]

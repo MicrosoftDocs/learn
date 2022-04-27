@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-marketplace.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An Azure Stack Hub administrator plans to publish a custom Azure Stack Hub Marketplace image. They need to define the publisher legal name, the name of the offer, and the tenant they deploy the image to. Which JSON file should they modify?"
+    choices:
+    - content: "Manifest.json"
+      isCorrect: true
+      explanation: "That's correct. The administrator should modify manifest.json to define the image name, template version, offer name, and tenant name."
+    - content: "Createduidefinition.json"
+      isCorrect: false
+      explanation: "Incorrect. The Azure portal uses createduidefinition.json to define the user interface for creating a managed application."
+    - content: "UIDefinition.json"
+      isCorrect: false
+      explanation: "Incorrect. The UIDefinition.json defines the user interface for creating a managed application."
+  - content: "Which tool enables creation of a custom Azure Gallery package to upload to Azure Stack Hub Marketplace?"
+    choices:
+    - content: "Microsoft Azure Media Services"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Azure Media Services delivers media source file formats, media streaming formats, and content protection formats to client technologies."
+    - content: "Azure Gallery Packager tool"
+      isCorrect: true
+      explanation: "Correct. The Azure Gallery Packager tool enables creation of custom Azure Gallery packages. The packages are uploaded to the Azure Stack Hub Marketplace."
+    - content: "Windows Package Manager"
+      isCorrect: false
+      explanation: "Incorrect. Windows Package Manager consists of command line tools and services for installing applications on Windows 10."

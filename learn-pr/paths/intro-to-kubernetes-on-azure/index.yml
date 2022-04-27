@@ -2,11 +2,11 @@
 uid: learn.intro-to-kubernetes-on-azure
 metadata:
   title: Introduction to Kubernetes on Azure
-  description: Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service. 
+  description: Learn about the basics of Docker containers, container orchestration with Kubernetes, and managed clusters on Azure Kubernetes Service.
   brand: azure
   ms.date: 5/19/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Kubernetes on Azure

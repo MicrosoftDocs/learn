@@ -3,9 +3,9 @@ uid: learn.wwl.data-integration-scale-azure-data-factory
 metadata:
   title: Data integration at scale Azure Data Factory
   description: Data integration at scale with Azure Data Factory or Azure Synapse Pipeline
-  ms.date: 03/31/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Data integration at scale with Azure Data Factory or Azure Synapse Pipeline
@@ -33,6 +33,5 @@ modules:
 - learn.wwl.orchestrate-data-movement-transformation-azure-data-factory
 - learn.wwl.execute-existing-ssis-packages-azure-data-factory
 - learn.wwl.operationalize-your-azure-data-factory-pipelines
-- learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory
 trophy:
   uid: learn.wwl.data-integration-scale-azure-data-factory.trophy

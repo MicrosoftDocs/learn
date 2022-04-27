@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.create-resources
+title: Create resources
+metadata:
+  title: Create resources
+  description: "Create resources"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-create-resources.md)]

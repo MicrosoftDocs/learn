@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.academic-program-certifications
+metadata:
+  title: Implement certifications in academic programs
+  description: Learn how to implement certifications in academic programs.
+  ms.date: 07/21/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement certifications in academic programs
+prerequisites: |
+  None
+video:
+  title: "Implement certifications in academic programs"
+  url: https://www.microsoft.com/videoplayer/embed/RWK4UU
+summary: |
+  In this learning path, you'll learn how to implement Microsoft Certifications in new or existing academic degree programs. You'll be introduced to different approaches for implementing certification at the course and program level and the benefits it offers students. A real-life case study and contextualized examples are used throughout the learning path to walk through a complete cycle of designing a new technical degree program that implements certification.
+  
+  By the end of this learning path you will be able to: 
+   - Understand the benefits of implementing certification in degree programs
+   - Choose the level of certification that is suitable for your course or program needs
+   - Identify the academic and industry requirements for implementing certifications
+   - Describe the processes involved in creating a new program proposal document
+   - Choose the most suitable learning outcomes for your course or program
+   - Map certification outcomes to academic learning outcomes
+   - Understand how to launch a new course or program with certification
+iconUrl: /learn/achievements/student-evangelism/academic-program-certifications-path.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+- higher-ed-educator
+- school-leader
+products:
+- azure
+modules:
+- learn.student-evangelism.academic-program-certifications-define-requirements
+- learn.student-evangelism.academic-program-certifications-design-program-curricula
+- learn.student-evangelism.academic-program-certifications-prepare-program-approval
+- learn.student-evangelism.academic-program-certifications-design-program-launch
+trophy:
+  uid: learn.academic-program-certifications.trophy

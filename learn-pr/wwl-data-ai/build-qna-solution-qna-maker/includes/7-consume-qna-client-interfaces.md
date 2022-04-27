@@ -1,10 +1,10 @@
-To consume the published knowledge base, you can use the REST interface or one of the programming language-specific SDKs, which provide classes with methods to call the **generateAnswer** REST function.
+To consume the published knowledge base, you can use the REST interface.
 
-The request body for the function contains a question, like this:
+The minimal request body for the function contains a question, like this:
 
 ```JSON
 {
-  "question": "I want to book a hotel."
+  "question": "What do I need to do to cancel a reservation?"
 }
 ```
 
@@ -12,22 +12,21 @@ The response includes the closest question match that was found in the knowledge
 
 ```JSON
 {
-  "answers":[
-    {"questions":[
-      "How do I book a hotel?"
+  "answers": [
+    {
+      "questions": [
+        "How can I cancel a reservation?"
       ],
-     "answer":"Call 555-123-4567 to book.",
-     "score":76.55,
-     "id":2,
-     "source":"https://...source.docx",
-     "isDocumentText":false,
-     "metadata":[],
-     "context":{
-       "isContextOnly":false,
-       "prompts":[]
+      "answer": "Call us on 555 123 4567 to cancel a reservation.",
+      "confidenceScore": 1.0,
+      "id": 6,
+      "source": "https://margies-travel.com/faq",
+      "metadata": {},
+      "dialog": {
+        "isContextOnly": false,
+        "prompts": []
       }
-    },
-  ],
-  "activeLearningEnabled":true
+    }
+  ]
 }
 ```

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-calculation-groups.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/24/2022
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What calculation item property should a report creator define to allow conditional application of format strings to measures?"
+    choices:
+    - content: "Dynamic format strings."
+      isCorrect: true
+      explanation: "Correct. Dynamic format strings enable report creators to overwrite the format string by setting the format string expression property."
+    - content: "Precedence."
+      isCorrect: false
+      explanation: "Incorrect. Precedence is defined for calculation groups, not calculation items."
+    - content: "Ordering."
+      isCorrect: false
+      explanation: "Incorrect. The ordinal property does not allow conditional application of format strings to measures."
+  - content: "What limitation of calculation groups should Power BI report authors be aware of?"
+    choices:
+    - content: "There are no limitations of calculation groups."
+      isCorrect: false
+      explanation: "Incorrect. There are limitations of calculation groups that report authors should be aware of."
+    - content: "Applying calculation groups to a model disables the use of implicit measures in a Power BI report."
+      isCorrect: true
+      explanation: "Correct. Implicit measures are not supported in reports with calculation groups applied."
+    - content: "Applying calculation groups disables the ability to refresh data models in the Power BI service."
+      isCorrect: false
+      explanation: "Incorrect. Applying calculation groups does not disable the ability to automate refreshes in the Power BI service."
+  - content: "Authors working with data models containing multiple calculation groups must be sure to specify what to control the order of application of calculation groups?"
+    choices:
+    - content: "Ordering."
+      isCorrect: false
+      explanation: "Incorrect. Ordering refers to calculation items rather than calculation groups."
+    - content: "Precedence."
+      isCorrect: true
+      explanation: "Correct. Power BI provides secure distribution and sharing options for distribution of insights across an organization."
+    - content: "Calculation group name."
+      isCorrect: false
+      explanation: "Incorrect. Calculation group naming does not have an impact on the order of application of calculation groups."

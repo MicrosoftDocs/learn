@@ -1,0 +1,19 @@
+on:
+  workflow_call:
+    inputs:
+      environmentType:
+        required: true
+        type: string
+      # ...
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    # ...
+    - uses: azure/arm-deploy@v1
+      with:
+        failOnStdErr: false
+        resourceGroupName: ${{ inputs.resourceGroupName }}
+        template: ./deploy/main.bicep
+        parameters: ./deploy/azuredeploy.parameters.${{ inputs.environmentType }}.json

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.exercise-create-run-basic-workflow
+title: Exercise - Create and run a basic workflow
+metadata:
+  unitType: exercise
+  title: Exercise - Create and run a basic workflow
+  description: Create a basic workflow to run deployments.
+  ms.date: 08/11/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-exercise-create-run-basic-workflow.md)]

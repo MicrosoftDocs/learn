@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.language.rust-create-program
+metadata:
+  title: Create your first Rust program
+  description: Learn about Rust concepts, including variables, data types, and functions.
+  ms.date: 01/05/2022
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Create your first Rust program
+summary: Learn about Rust concepts, including variables, data types, and functions.
+abstract:  |
+  In this module, you will:
+  - Explore core Rust language concepts, including functions, data types, and variables
+  - Understand basic Rust types for text, numbers, boolean values, and compound data
+  - Create, compile, and run a basic Rust program
+  - Discover how to print output from your program
+prerequisites: | 
+  - Have your [Rust environment ready for development](../rust-set-up-environment/index.yml?azure-portal=true)
+iconUrl: /learn/achievements/rust-understand-common-concepts.svg 
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- vs-code
+- azure
+units:
+- learn.language.rust-create-program.0-introduction
+- learn.language.rust-create-program.1-program-structure
+- learn.language.rust-create-program.2-variables
+- learn.language.rust-create-program.3-basic-data-types
+- learn.language.rust-create-program.4-tuples-structs
+- learn.language.rust-create-program.5-enum-variants
+- learn.language.rust-create-program.6-functions
+- learn.language.rust-create-program.7-exercise
+- learn.language.rust-create-program.8-summary
+# Change badge UID value back to learn.language.rust-understand-common-concepts.badge after split is complete
+badge:
+  uid: learn.language.rust-create-program.badge

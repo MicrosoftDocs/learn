@@ -2,9 +2,9 @@ You can limit network traffic to resources in a virtual network using a network 
 
 ## Subnets
 
-You can assign NSGs to subnets and create protected screened subnets (also called a DMZ). These NSGs can restrict traffic flow to all the machines that reside within that subnet. Each subnet can have zero, or one, associated network security groups.
+You can assign Network Security Groups to subnets and create protected screened subnets (also called a DMZ). These NSGs can restrict traffic flow to all the machines that reside within that subnet. Each subnet can have zero, or one, associated network security groups.
 
-## Network Interfaces
+## Network interfaces
 
 You can assign NSGs to a NIC so that all the traffic that flows through that NIC is controlled by NSG rules. Each network interface that exists in a subnet can have zero, or one, associated network security groups.
 
@@ -12,4 +12,4 @@ You can assign NSGs to a NIC so that all the traffic that flows through that NIC
 
 When you create an NSG the Overview blade provides information about the NSG such as, associated subnets, associated network interfaces, and security rules.
 
-:::image type="content" source="../media/network-security-groups-1ebf7bed.png" alt-text="Screenshot of the virtual machine Overview blade in the Azure portal. The Security rules and Associated with information is highlighted.":::
+:::image type="content" source="../media/network-security-groups-1ebf7bed.png" alt-text="Screen shot of the virtual machine Overview blade in the Azure portal. The Security rules and Associated with information is highlighted.":::

@@ -1,0 +1,13 @@
+{
+    "moduleAliases": {
+      "br": {
+        "MyRegistry": {
+          "registry": "myregistry.azurecr.io"
+        },
+        "MyRegistryWithPath": {
+          "registry": "myregistry.azurecr.io",
+          "modulePath": "bicep"
+        }
+      }
+    }
+  }

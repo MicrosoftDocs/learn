@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-usage-billing-for-azure-stack-hub.usage-reporting-infrastructure-for-cloud-solution-providers
+title: Usage reporting infrastructure for Cloud Solution Providers
+metadata:
+  title: Usage reporting infrastructure for Cloud Solution Providers
+  description: "Usage reporting infrastructure for Cloud Solution Providers"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-usage-report-infrastructure-cloud-solution-providers.md)]

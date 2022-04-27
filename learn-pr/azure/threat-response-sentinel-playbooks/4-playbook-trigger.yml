@@ -4,8 +4,8 @@ metadata:
   title: Trigger a playbook in real-time
   description: Explain how to trigger a playbook in real time.
   ms.date: 12/17/2020
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Trigger a playbook in real-time
@@ -30,10 +30,10 @@ quiz:
     choices:
     - content: "Azure Active Directory connector."
       isCorrect: false
-      explanation: "No, the logic app should start with the trigger from Azure Sentinel Connector."
+      explanation: "No, the logic app should start with the trigger from Microsoft Sentinel Connector."
     - content: "Connector for Office 365."
       isCorrect: false
-      explanation: "No, the logic app should start with the trigger from Azure Sentinel Connector."
-    - content: "Azure Sentinel Connector."
+      explanation: "No, the logic app should start with the trigger from Microsoft Sentinel Connector."
+    - content: "Microsoft Sentinel Connector."
       isCorrect: true
-      explanation: "Azure Sentinel playbooks start with a trigger from Azure Sentinel Connector."
+      explanation: "Microsoft Sentinel playbooks start with a trigger from Microsoft Sentinel Connector."

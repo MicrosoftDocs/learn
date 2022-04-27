@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-network-based-threats-mitigations.describe-different-types-of-networks
+title: Describe the different types of networks
+metadata:
+  title: Describe the different types of networks
+  description: "Describe the different types of networks"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-describe-different-types-of-networks.md)]

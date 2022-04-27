@@ -4,12 +4,13 @@ title: Describe authentication and identities
 metadata:
   title: Describe authentication and identities
   description: "Describe authentication and identities"
-  ms.date: 04/08/2021
+  ms.date: 04/26/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-describe-authentication-identities.md)]

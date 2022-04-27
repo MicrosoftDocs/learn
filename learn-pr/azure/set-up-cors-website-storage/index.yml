@@ -4,9 +4,9 @@ metadata:
   title: Set up Cross-Origin Resource Sharing for your website and storage assets
   description: Set up Cross-Origin Resource Sharing (CORS) for your Azure website and storage assets in order to allow cross-domain access to your resources.
   ms.date: 04/23/2019
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial  
+  author: tamram
+  ms.author: tamram
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Core Cloud Services - Set up CORS for your website and storage assets
 summary: Set up Cross-Origin Resource Sharing (CORS) for your Azure website and storage assets in order to allow cross-domain access to your resources.

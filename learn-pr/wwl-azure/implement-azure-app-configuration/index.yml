@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.implement-azure-app-configuration
+metadata:
+  title: Implement Azure App Configuration
+  description: "Implement Azure App Configuration"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement Azure App Configuration
+summary: Learn how to use Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features.
+abstract: |
+  After completing this module, you'll be able to:
+  * Explain the benefits of using Azure App Configuration
+  * Describe how Azure App Configuration stores information
+  * Implement feature management
+  * Securely access your app configuration information
+prerequisites: |
+  * You should be experienced with developer concepts and terminology.
+  * An understanding of cloud computing and some experience with the Azure portal.
+iconUrl: /learn/achievements/azure-app-implement-configuration.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-app-configuration
+units:
+- learn.wwl.implement-azure-app-configuration.introduction
+- learn.wwl.implement-azure-app-configuration.explore-service
+- learn.wwl.implement-azure-app-configuration.create-paired-keys-values
+- learn.wwl.implement-azure-app-configuration.manage-application-features
+- learn.wwl.implement-azure-app-configuration.secure-data
+- learn.wwl.implement-azure-app-configuration.knowledge-check
+- learn.wwl.implement-azure-app-configuration.summary
+badge:
+  uid: learn.wwl.implement-azure-app-configuration.badge

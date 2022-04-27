@@ -3,9 +3,9 @@ uid: learn.wwl.operationalize-your-azure-data-factory-pipelines
 metadata:
   title: Operationalize your Azure Data Factory or Azure Synapse Pipeline
   description: "Operationalize your Azure Data Factory or Azure Synapse Pipeline"
-  ms.date: 07/06/2021
+  ms.date: 03/22/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Operationalize your Azure Data Factory or Azure Synapse Pipeline
@@ -24,7 +24,7 @@ prerequisites: |
   The student should be able to:
   - Log into the Azure portal
   - Explain and create resource groups
-  - Describe Azure Data Factory and it's core components
+  - Describe Azure Data Factory and its core components
 iconUrl: /learn/achievements/operationalize-your-azure-data-factory-pipelines.svg
 levels:
 - intermediate

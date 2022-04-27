@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-concepts-of-cryptography.describe-hashing-its-application-digital-signing
+title: Describe hashing and its application in digital signing
+metadata:
+  title: Describe hashing and its application in digital signing
+  description: "Describe hashing and its application in digital signing"
+  ms.date: 04/22/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-describe-hashing-its-application-digital-signing.md)]

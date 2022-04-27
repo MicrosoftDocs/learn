@@ -9,4 +9,4 @@ The DEA is an essential tool that determines the outcome of applying a single ch
 ## Further reading
 
 - [Download the Database Experimentation Assistant](https://www.microsoft.com/download/details.aspx?id=54090)
-- [Overview of Database Experimentation Assistant](https://docs.microsoft.com/sql/dea/database-experimentation-assistant-overview)
+- [Overview of Database Experimentation Assistant](/sql/dea/database-experimentation-assistant-overview)

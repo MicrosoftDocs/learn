@@ -4,12 +4,13 @@ title: Configure and manage device registration
 metadata:
   title: Configure and manage device registration
   description: "Configure and manage device registration"
-  ms.date: 07/22/2021
+  ms.date: 03/04/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/5-configure-manage-device-registration.md)]

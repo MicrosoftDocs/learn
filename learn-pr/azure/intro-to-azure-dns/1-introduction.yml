@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-dns.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 12/10/2021
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: orthomas-12162021
+durationInMinutes: 2
+content:   |
+  [!include[](includes/1-introduction.md)]

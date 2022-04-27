@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is the best disaster recovery strategy for providing a point-in-time recovery capability for SAP HANA on Azure (Large Instances)?"
+    choices:
+    - content: "Storage replication"
+      isCorrect: true
+      explanation: "Correct. Storage replication enables you to perform point-in-time recovery. Multi-tier HSR with a third replica in the DR region supports a faster recovery time, but does not support a point-in-time recovery."
+    - content: "Multi-tier HRS with a third replica in the DR region"
+      isCorrect: false
+      explanation: "Incorrect. Storage replication enables you to perform point-in-time recovery. Multi-tier HSR with a third replica in the DR region supports a faster recovery time, but does not support a point-in-time recovery."
+    - content: "Either of the above"
+      isCorrect: false
+      explanation: "Incorrect. Storage replication enables you to perform point-in-time recovery. Multi-tier HSR with a third replica in the DR region supports a faster recovery time, but does not support a point-in-time recovery."
+  - content: "\"A separate set of disk volumes is attached to each node. Only disk volumes of secondary replica in the production site get replicated to the disaster recovery location. One set of volumes is required at the disaster recovery site.\" Which HANA Large Instances-supported high availability and disaster recovery scenario does this describe?"
+    choices:
+    - content: "Single node"
+      isCorrect: false
+      explanation: "Incorrect. With host auto-failover, HANA volume sets are attached to all the nodes, and the DR site must have the same number of nodes. With HANA system replication, a separate set of disk volumes is attached to each node."
+    - content: "Host auto-failover: Scale-out (with or without standby) including 1+1"
+      isCorrect: false
+      explanation: "Incorrect. With host auto-failover, HANA volume sets are attached to all the nodes, and the DR site must have the same number of nodes. With HANA system replication, a separate set of disk volumes is attached to each node."
+    - content: "HANA system replication"
+      isCorrect: true
+      explanation: "Correct. With host auto-failover, HANA volume sets are attached to all the nodes, and the DR site must have the same number of nodes. With HANA system replication, a separate set of disk volumes is attached to each node."
+  - content: "Which script should be run to monitor the status of the storage replication progress when carrying out storage replication in a HANA Large Instances environment?"
+    choices:
+    - content: "azure_hana_storage_replication"
+      isCorrect: false
+      explanation: "Incorrect. To monitor the status of your storage replication progress, run the script azure_hana_replication_status. This command must be run from a unit that runs in the disaster recovery location to function as expected. The command works no matter whether replication is active. The command can be run for every HANA Large Instance unit of your tenant in the disaster recovery location. It can't be used to obtain details about the boot volume."
+    - content: "azure_hana_replication_status"
+      isCorrect: true
+      explanation: "Correct. To monitor the status of your storage replication progress, run the script azure_hana_replication_status. This command must be run from a unit that runs in the disaster recovery location to function as expected. The command works no matter whether replication is active. The command can be run for every HANA Large Instance unit of your tenant in the disaster recovery location. It can't be used to obtain details about the boot volume."
+    - content: "azure_hana_monitor_replication"
+      isCorrect: false
+      explanation: "Incorrect. To monitor the status of your storage replication progress, run the script azure_hana_replication_status. This command must be run from a unit that runs in the disaster recovery location to function as expected. The command works no matter whether replication is active. The command can be run for every HANA Large Instance unit of your tenant in the disaster recovery location. It can't be used to obtain details about the boot volume."
+  - content: "When disaster recovery functionality for HANA Large Instances is implemented by paying for another HANA Large Instance unit in the disaster recovery region, multiple volumes are replicated from the production region to the DR site. Which of the following volumes fails to be replicated?"
+    choices:
+    - content: "/hana/log"
+      isCorrect: true
+      explanation: "Correct. The /hana/log volume is not replicated because it is not necessary to restore the replicated SAP HANA database to a consistent state in the disaster recovery site. The /hana/data, /hana/logbackups, and /hana/shared (includes /usr/sap) volumes are replicated."
+    - content: "/hana/data"
+      isCorrect: false
+      explanation: "Incorrect. The /hana/data volume is replicated."
+    - content: "/hana/logbackups"
+      isCorrect: false
+      explanation: "Incorrect. The /hana/logbackups volume is replicated."

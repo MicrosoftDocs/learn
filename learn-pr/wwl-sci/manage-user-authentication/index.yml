@@ -2,14 +2,14 @@
 uid: learn.wwl.manage-user-authentication
 metadata:
   title: Manage user authentication
-  description: "Manage user authentication"
-  ms.date: 07/23/2021
+  description: "There are multiple options for authentication in Azure AD. Learn how to implement and manage the right authentications for users based on business needs."
+  ms.date: 04/02/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage user authentication
-summary: There are multiple options for authentication in Azure AD.  Learn how to implement and manage the right authentications for users based on business needs.
+summary: There are multiple options for authentication in Azure AD. Learn how to implement and manage the right authentications for users based on business needs.
 abstract: |
   By the end of this module, you will be able to:
   - Administer authentication methods (FIDO2 / Passwordless)

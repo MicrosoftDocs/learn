@@ -97,3 +97,9 @@ JEA allows you to lock down administrative sessions so that only a specific set 
 
 > [!IMPORTANT]
 > JEA only supports Windows PowerShell remoting.
+
+---
+
+
+
+---

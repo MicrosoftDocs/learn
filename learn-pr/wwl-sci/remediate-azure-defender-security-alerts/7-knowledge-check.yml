@@ -4,19 +4,20 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/20/2021
+  ms.date: 01/11/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Security Center employs which advanced security analytics?"
+  - content: "Defender for Cloud employs which advanced security analytics?"
     choices:
     - content: "Biometric analytics"
       isCorrect: false

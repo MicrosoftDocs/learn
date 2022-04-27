@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "A machine learning engineer wants to deploy a model to an endpoint to get real-time predictions. What kind of endpoint will meet the requirements?"
+    choices:
+    - content: "A managed online endpoint."
+      isCorrect: true
+      explanation: "For real-time predictions, a managed online endpoint is best suited."
+    - content: "A batch inference endpoint."
+      isCorrect: false
+      explanation: "A batch inference endpoint will trigger a pipeline to generate batch predictions."
+    - content: "A model deployment."
+      isCorrect: false
+      explanation: "A model can be deployed to both a managed online and batch inference endpoint. It depends on what kind of endpoint you use whether you can get real-time predictions."
+  - content: "When deploying a MLflow model, what isn't necessary to include in the deployment?"
+    choices:
+    - content: "The model files and environment."
+      isCorrect: false
+      explanation: "When deploying a MLflow model, the model files still need to be included in the deployment."
+    - content: "The scoring script and model files."
+      isCorrect: false
+      explanation: "When deploying a MLflow model, the model files still need to be included in the deployment."
+    - content: "The scoring script and environment."
+      isCorrect: true
+      explanation: "That is correct. The scoring script and environment don't need to be included."

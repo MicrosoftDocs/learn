@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.wwl.design-implement-replication-strategy-cosmos-db-sql-api
+metadata:
+  title: Design and implement a replication strategy for Azure Cosmos DB SQL API
+  description: Design and implement a replication strategy for Azure Cosmos DB SQL API
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design and implement a replication strategy for Azure Cosmos DB SQL API
+prerequisites: |
+  Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+summary: |
+  Plan and implement techniques to replicate data across the globe in Azure Cosmos DB SQL API.
+iconUrl: /learn/achievements/azure-cosmos-db-sql-api-replication-strategy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+modules:
+- learn.wwl.configure-replication-manage-failovers-azure-cosmos-db
+- learn.wwl.use-consistency-models-azure-cosmos-db-sql-api
+- learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api
+trophy:
+  uid: learn.wwl.design-implement-replication-strategy-cosmos-db-sql-api.trophy

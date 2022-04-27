@@ -1,6 +1,6 @@
-You've been hired as a Senior Database Administrator help ensure the security of the database environment. These tasks will focus on Azure SQL Database. You will learn how to configure advanced security and classification.
+You've been hired as a Senior Database Administrator help ensure the security of the database environment. These tasks will focus on Azure SQL Database. You will learn how to configure advanced SQL security capabilities and classification.
 
-## Enable Advanced Data Security and Data Classification
+## Enable Microsoft Defender for SQL on an Azure SQL database
 
 1. When the VM lab environment opens use the password on the **Resources** tab for the Student account to sign in to Windows.
 
@@ -20,33 +20,23 @@ You've been hired as a Senior Database Administrator help ensure the security of
 
     :::image type="content" source="../media/dp-3300-module-33-lab-19.png" alt-text="Screenshot of the Azure portal home page, selecting All resources":::
 
-1. Select the Azure SQL Database server starting with **azurelsq-lab**.
+1. Select the Azure SQL Database server starting with **azuresql-lab**.
 
     :::image type="content" source="../media/dp-3300-module-33-lab-20.png" alt-text="Screenshot of selecting the Azure SQL server.":::
 
-1. From the main blade of your Azure SQL server, navigate to the **Security** section, and select **Security Center**.
+1. From the main blade of your Azure SQL server, navigate to the **Security** section, and select **Microsoft Defender for Cloud**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-24.png" alt-text="Screenshot of selecting the Security Center.":::
+    :::image type="content" source="../media/dp-3300-module-33-lab-24.png" alt-text="Screenshot of selecting the Microsoft Defender for Cloud option.":::
 
-1. Select the toggle switch under **AZURE DEFENDER FOR SQL** to **ON**, and then select **Storage account**.
+    On the **Microsoft Defender for Cloud** page, select **Enable Microsoft Defender for SQL**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-21.png" alt-text="Screenshot of switching on AZURE DEFENDER FOR SQL.":::
+1. After Azure Defender for SQL is successfully enabled, select **Configure** option. You may need to refresh the page to see this option.
 
-    On the **Choose storage account** page, select **+ Create new**.
+    :::image type="content" source="../media/dp-3300-module-33-lab-25-2.png" alt-text="Screenshot of selecting the Configure option.":::
 
-1. On the **Create storage account** page, in the **Name** field enter a unique name starting with **securesqllab** and append some additional random numbers until you have a valid name.
+1. On the **Server Settings** page, make sure the toggle switch under **MICROSOFT DEFENDER FOR SQL** is set to **ON**, and that the **Storage account** name is provided. Enter the Azure account email in the **Send scan reports to**, and select **Save**.
 
-    :::image type="content" source="../media/dp-3300-module-33-lab-22.png" alt-text="Screenshot of creating a storage account.":::
-
-1. Select **OK** and wait for the storage account to be created.
-
-1. Toggle the switch for **Periodic recurring scans** to **ON**. Enter the Azure account email in the **Send scan reports to** and **Send alerts to** dialog boxes. Deselect **Also send email notification to admins and subscription owners**.
-
-    Select **Advanced Threat Detection types** and review the selections. Leave all of the boxes checked and select **OK**.
-
-    :::image type="content" source="../media/dp-3300-module-33-lab-25.png" alt-text="Screenshot of entering email details.":::    
-
-1. Select **Save**
+    :::image type="content" source="../media/dp-3300-module-33-lab-25-3.png"alt-text="Screenshot of Server settings page.":::
 
 ## Enable data classification on an Azure SQL database
 

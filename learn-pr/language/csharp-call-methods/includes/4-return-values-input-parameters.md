@@ -137,7 +137,7 @@ In the *Parameters* section, we read that the `maxValue` input parameter is the 
 
 We can also read in the next line: "`maxValue` must be greater than or equal to 0." What happens if we ignore this statement? We can see in the *Exceptions* section that the method will return an `ArgumentOutOfRangeException` when `maxValue` is less than 0.
 
-Like we described earlier, docs.microsoft.com is the ultimate source of truth. It's important to take the time to read the documentation to understand how a given method will work.
+Like we described earlier, docs.microsoft.com is the source of truth for the .NET Class Library. It's important to take the time to read the documentation to understand how a given method will work.
 
 ## Recap
 

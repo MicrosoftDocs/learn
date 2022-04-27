@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.intro-python-lists.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check - Python lists
+  description: Check your knowledge of Python lists.
+  ms.date: 12/03/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 1 # user input: the estimate time to complete the unit
+content: |
+quiz:
+  questions:
+  - content: "What symbols are used to start and finish a list?"
+    choices:
+    - content: "Parentheses: `()`"
+      isCorrect: false
+      explanation: "Incorrect. Parentheses aren't used to create a list."
+    - content: "Brackets: `[]`"
+      isCorrect: true
+      explanation: "Correct! Brackets are used to create a list."
+    - content: "Braces: `{}`"
+      isCorrect: false
+      explanation: "Incorrect. Braces aren't used to create a list."
+  - content: "Which statement would return the *first* value in the list `planets`?"
+    choices:
+    - content: "`planets[-1]`"
+      isCorrect: false
+      explanation: "Incorrect. This statement doesn't return the first item in a list."
+    - content: "`planets[1]`"
+      isCorrect: false
+      explanation: "Incorrect. This statement doesn't return the first item in a list."
+    - content: "`planets[0]`"
+      isCorrect: true
+      explanation: "Correct! The number in this statement returns the first item in a list."
+  - content: "Which statement would return the *last* value in the list `planets`?"
+    choices:
+    - content: "`planets[-1]`"
+      isCorrect: true
+      explanation: "Correct! The number in this statement returns the last value in a list."
+    - content: "`planets[last]`"
+      isCorrect: false
+      explanation: "Incorrect. This statement doesn't return the last value in a list."
+    - content: "`planets[]`"
+      isCorrect: false
+      explanation: "Incorrect. This statement doesn't return the last value in a list."
+  - content: "Which statement would sort the list `planets`?"
+    choices:
+    - content: "`planets.sort()`"
+      isCorrect: true
+      explanation: "Correct! The sort() method sorts the items in a list."
+    - content: "`planets.in_order()`"
+      isCorrect: false
+      explanation: "Incorrect. This statement doesn't sort the items in a list."
+    - content: "`planets.sorted()`"
+      isCorrect: false
+      explanation: "Incorrect. This statement doesn't sort the items in a list."

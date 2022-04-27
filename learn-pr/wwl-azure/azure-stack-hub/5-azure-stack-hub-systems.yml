@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-stack-hub.systems
+title: Azure Stack Hub systems
+metadata:
+  title: Azure Stack Hub systems
+  description: "Azure Stack Hub systems"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-azure-stack-hub-systems.md)]

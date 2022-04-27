@@ -4,12 +4,13 @@ title: Orchestrate data integration with Azure Synapse pipelines
 metadata:
   title: Orchestrate data integration with Azure Synapse pipelines
   description: "Orchestrate data integration with Azure Synapse pipelines"
-  ms.date: 06/03/2021
+  ms.date: 04/19/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/7-orchestrate-data-integration-with-pipelines.md)]

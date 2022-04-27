@@ -5,9 +5,10 @@ metadata:
   description: Learn to create components with Vue CLI and JavaScript.
   ms.date: 03/01/2021
   author: GeekTrainer
-  ms.author: chrhar
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-vue
+  ms.custom: team=nextgen
 title: Getting started with Vue CLI and single-file components in Vue.js.
 summary: Although it's possible to create Vue.js applications by using purely JavaScript, most developers need more power and flexibility. By using Vue CLI and single-file components, you can use more robust tooling to enhance the development experience. We'll see how to use Vue CLI to bootstrap an application, and how to create reusable components in Vue.
 abstract: | 

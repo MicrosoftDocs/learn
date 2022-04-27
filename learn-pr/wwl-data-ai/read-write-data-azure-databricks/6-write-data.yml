@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-write-data-azure-databricks.write-data
+title: Write data
+metadata:
+  title: Write data
+  description: "Write data"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-write-data.md)]

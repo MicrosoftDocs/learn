@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-event-grid.control-access-to-events
+title: Control access to events
+metadata:
+  title: Control access to events
+  description: "Control access to events"
+  ms.date: 03/08/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-authorize-access-event-grid.md)]

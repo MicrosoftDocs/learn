@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.build-interactive-components-blazor-web-apps
+metadata:
+  moduleType: standard
+  title: Build rich interactive components for your Blazor web apps
+  description: Learn to use advanced features of Blazor in web apps. You'll learn how to interoperate with JavaScript code, use templated components, and handle events in the lifecycle of components.
+  ms.date: 08/18/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-blazor
+title: Build rich interactive components for your Blazor web apps
+summary: Learn to use advanced features of Blazor in web apps. You'll learn how to interoperate with JavaScript code, use templated components, and handle events in the lifecycle of components.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Call JavaScript functions from .NET code and call .NET code from JavaScript in Blazor apps
+    - Handle events in the lifecycle of Blazor components.
+    - Create reusable components that can be incorporated into Blazor Server apps using templates
+prerequisites: |
+  - Familiarity with HTML and CSS in web development.
+  - Familiarity with JavaScript syntax.
+  - Ability to write C# code at a novice level.
+  - Ability to create a Blazor web application.
+  - Ability to create Blazor components, forms, and layouts.
+iconUrl: /learn/achievements/build-interactive-components-blazor-web-apps.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+  - solution-architect
+products: 
+  - blazor
+  - dotnet-core
+  - aspnet
+units:
+- learn.build-interactive-components-blazor-web-apps.introduction
+- learn.build-interactive-components-blazor-web-apps.use-javascript-libraries-blazor-apps
+- learn.build-interactive-components-blazor-web-apps.exercise-use-javascript-libraries-blazor-apps
+- learn.build-interactive-components-blazor-web-apps.improve-app-interactivity-lifecycle-events
+- learn.build-interactive-components-blazor-web-apps.exercise-improve-app-interactivity-lifecycle-events
+- learn.build-interactive-components-blazor-web-apps.reuse-components-creating-templates
+- learn.build-interactive-components-blazor-web-apps.exercise-reuse-components-creating-templates
+- learn.build-interactive-components-blazor-web-apps.summary
+badge:
+  uid: learn.build-interactive-components-blazor-web-apps.badge

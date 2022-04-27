@@ -4,12 +4,13 @@ title: Enable digital transformation with Azure
 metadata:
   title: Enable digital transformation with Azure
   description: "Enable digital transformation with Azure"
-  ms.date: 08/03/2021
+  ms.date: 12/06/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-enabling-digital-transformation-with-azure.md)]

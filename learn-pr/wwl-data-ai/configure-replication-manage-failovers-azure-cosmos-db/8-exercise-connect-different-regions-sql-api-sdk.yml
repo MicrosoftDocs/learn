@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.exercise-connect-to-different-regions-sql-api-sdk
+title: 'Exercise: Connect different regions with the Azure Cosmos DB SQL API SDK'
+metadata:
+  title: 'Exercise: Connect different regions with the Azure Cosmos DB SQL API SDK'
+  description: "Exercise: Connect different regions with the Azure Cosmos DB SQL API SDK"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107588
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-exercise-connect-different-regions-sql-api-sdk.md)]

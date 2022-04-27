@@ -6,10 +6,11 @@ metadata:
   title: Exercise - Create the social media tracker Logic App
   description: Exercise - Create the social media tracker Logic App
   ms.date: 5/10/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: ecfan
+  ms.author: estfan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: INDEX,FOLLOW
 
 azureSandbox: true
 durationInMinutes: 5

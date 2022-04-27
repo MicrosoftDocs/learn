@@ -4,8 +4,8 @@ metadata:
   title: Enhance your service availability and data locality by using Azure Traffic Manager
   description: Discover how Azure Traffic Manager provides DNS load balancing for your application to improve the performance and availability of your application.
   ms.date: 04/15/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: KumudD
+  ms.author: kumud
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enhance your service availability and data locality by using Azure Traffic Manager

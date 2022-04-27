@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solution-to-log-monitor-azure-resources.design-for-azure-monitor-data-sources
+title: Design for Azure Monitor data sources
+metadata:
+  title: Design for Azure Monitor data sources
+  description: "Design for Azure Monitor data sources"
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-design-for-azure-monitor-data-sources.md)]

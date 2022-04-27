@@ -1,12 +1,12 @@
 
 > [!IMPORTANT]
-> The web application is developed using Vue. However, the language selected will be the language you need to use for the rest of module for the Azure Functions, so choose wisely!
+> The web application is developed using jQuery. However, the language selected will be the language you need to use for the rest of module for the Azure Functions, so choose wisely!
 
 Azure Static Web Apps are great for deploying static content with associated serverless APIs via Azure Functions.
 
 Recall in the bus-catching scenario, a webpage to monitor where buses are with respect to a monitored geofence is desired. This application will allow users to view how close buses on their route are to arriving, before they enter the geofence.
 
-Here, you'll deploy a Vue app with Azure Static Web Apps using the Azure portal and your GitHub repository.
+Here, you'll deploy a jQuery app with Azure Static Web Apps using the Azure portal and your GitHub repository.
 
 ## Deploy an Azure Static Web App using the Azure portal
 
@@ -31,7 +31,7 @@ The main goal is to deploy an Azure Static Web App using the Azure portal.
 
 8. Fill in the *Organization*, *Repository*, and *Branch* drop-downs with the corresponding information for the GitHub repository you've been using for this module.
 
-9. Select **Vue.js** in the *Build Presets* drop-down.
+9. Select **Custom** in the *Build Presets* drop-down.
 
 ::: zone pivot="csharp"
 

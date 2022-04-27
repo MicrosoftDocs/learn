@@ -1,18 +1,18 @@
 Azure Active Directory comes in four editions—**Free**, **Microsoft 365 Apps**, **Premium P1**, and **Premium P2**. The Free edition is included with an Azure subscription. The Premium editions are available through a Microsoft Enterprise Agreement, the Open Volume License Program, and the Cloud Solution Providers program. Azure and Microsoft 365 subscribers can also buy Azure Active Directory Premium P1 and P2 online.
 
-| Feature                                                         |   Free    | Microsoft 365 Apps | Premium P1 | Premium P2 |
-|:--------------------------------------------------------------- |:---------:|:------------------:|:----------:|:----------:|
-| Directory Objects                                               |  500,000  |     Unlimited      | Unlimited  | Unlimited  |
-| Single Sign-On                                                  | Unlimited |     Unlimited      | Unlimited  | Unlimited  |
-| Core Identity and Access Management                             |     X     |         X          |     X      |     X      |
-| Business to Business Collaboration                              |     X     |         X          |     X      |     X      |
-| Identity &amp; Access Management for Microsoft 365 apps |           |         X          |     X      |     X      |
-| Premium Features                                                |           |                    |     X      |     X      |
-| Hybrid Identities                                               |           |                    |     X      |     X      |
-| Advanced Group Access Management                                |           |                    |     X      |     X      |
-| Conditional Access                                              |           |                    |     X      |     X      |
-| Identity Protection                                             |           |                    |            |     X      |
-| Identity Governance                                             |           |                    |            |     X      |
+| **Feature**                                                     | **Free**  | **Microsoft 365 Apps** | **Premium P1** | **Premium P2** |
+|:--------------------------------------------------------------- |:---------:|:----------------------:|:--------------:|:--------------:|
+| Directory Objects                                               |  500,000  |       Unlimited        |   Unlimited    |   Unlimited    |
+| Single Sign-On                                                  | Unlimited |       Unlimited        |   Unlimited    |   Unlimited    |
+| Core Identity and Access Management                             |     X     |           X            |       X        |       X        |
+| Business to Business Collaboration                              |     X     |           X            |       X        |       X        |
+| Identity &amp; Access Management for Microsoft 365 apps |           |           X            |       X        |       X        |
+| Premium Features                                                |           |                        |       X        |       X        |
+| Hybrid Identities                                               |           |                        |       X        |       X        |
+| Advanced Group Access Management                                |           |                        |       X        |       X        |
+| Conditional Access                                              |           |                        |       X        |       X        |
+| Identity Protection                                             |           |                        |                |       X        |
+| Identity Governance                                             |           |                        |                |       X        |
 
 **Azure Active Directory Free**. Provides user and group management, on-premises directory synchronization, basic reports, and single sign-on across Azure, Microsoft 365, and many popular SaaS apps.
 

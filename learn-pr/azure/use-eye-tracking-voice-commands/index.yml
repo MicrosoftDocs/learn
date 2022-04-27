@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.azure.using-eyetracking-and-voice-commands-mrtk
+metadata:
+  title: Enable eye-tracking and voice commands for objects on the HoloLens 2
+  description: This course provides the user an overall understanding on how to use eye-tracking and voice commands
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+title: Enable eye-tracking and voice commands for objects on the HoloLens 2
+summary: Use eye-tracking and voice commands in your unity project and enhance user experience
+abstract: |
+  By the end of this module you will be able to:
+  - Learn how to enable eye-tracking for HoloLens 2
+  - Learn how to use eye-tracking to trigger action
+  - Learn how to create speech commands
+  - Learn how to control speech commands globally and locally
+
+iconUrl: /learn/achievements/using-eyetracking-and-voice-commands-mrtk.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- windows
+- windows-mixed-reality
+- mrtk
+- hololens
+- azure
+- mrtk
+prerequisites: |
+  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
+  - Windows 10 SDK 10.0.18362.0 or later
+  - (Optional) A HoloLens 2 device configured for development
+  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
+  - [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
+  - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
+  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+
+
+units: 
+- learn.azure.use-eye-tracking-voice-commands-mrtk.6-1-introduction
+- learn.azure.use-eye-tracking-voice-commands-mrtk.6-2-eye-tracking
+- learn.azure.use-eye-tracking-voice-commands-mrtk.6-3-exercise-eye-tracking
+- learn.azure.use-eye-tracking-voice-commands-mrtk.6-4-voice-commands
+- learn.azure.use-eye-tracking-voice-commands-mrtk.6-5-exercise-voice-commands
+- learn.azure.use-eye-tracking-voice-commands-mrtk.6-6-knowledge-check
+- learn.azure.use-eye-tracking-voice-commands-mrtk.6-7-summary
+
+
+badge:
+  uid: learn.azure.using-eyetracking-and-voice-commands-mrtk-badge

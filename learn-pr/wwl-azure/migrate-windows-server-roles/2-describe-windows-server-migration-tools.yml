@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-windows-server-roles.describe-migration-tools
+title: Describe the Windows Server Migration Tools
+metadata:
+  title: Describe the Windows Server Migration Tools
+  description: "Describe the Windows Server Migration Tools"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-describe-windows-server-migration-tools.md)]

@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2
+metadata:
+  title: Use MLflow with Azure Machine Learning jobs submitted with CLI (v2)
+  description: "Use MLflow with Azure Machine Learning jobs submitted with CLI (v2)"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use MLflow with Azure Machine Learning jobs submitted with CLI (v2)
+summary: Use MLflow to track model metrics and artifacts when training and registering models with the Azure Machine Learning CLI (v2).
+abstract: |
+  In this module, you'll learn how to:
+  *   Automatically track model metrics with MLflow when using common machine learning libraries.
+  *   Track custom metrics with MLflow.
+  *   Use MLflow model assets to register a model in the Azure Machine Learning workspace.
+prerequisites: |
+  *   Some familiarity with the Azure Machine Learning service.
+  *   Some experience in training machine learning models using frameworks such as scikit-learn.
+iconUrl: /learn/achievements/3-use-mlflow-with-azure-ml-jobs-submitted-with-cli-v2.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+units:
+- learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.introduction
+- learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.track-view-model-metrics-mlflow
+- learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.manage-models-mlflow
+- learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.exercise-train-track-model-mlflow
+- learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.knowledge-check
+- learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.summary
+badge:
+  uid: learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2.badge

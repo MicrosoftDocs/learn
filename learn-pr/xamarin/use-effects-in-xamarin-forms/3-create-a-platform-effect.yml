@@ -4,11 +4,10 @@ metadata:
   title: Create an effect to use native APIs
   description: Create an effect to use native APIs
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Create an effect to use native APIs
 durationInMinutes: 7
 content: |

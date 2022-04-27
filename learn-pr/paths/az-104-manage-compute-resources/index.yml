@@ -4,9 +4,9 @@ metadata:
   title: "AZ-104: Deploy and manage Azure compute resources"
   description: "Learn how to deploy and configure Azure compute resources and prepare for Exam AZ-104: Microsoft Azure Administrator."
   brand: azure
-  ms.date: 05/14/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 08/06/2021
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "AZ-104: Deploy and manage Azure compute resources"
@@ -52,8 +52,6 @@ summary: |
     [AZ-104: Monitor and back up Azure resources](/learn/paths/az-104-monitor-backup-resources/)
   :::column-end:::
   :::row-end:::
-
-  Complete all of the learning paths in the series if you are preparing for [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104). 
 prerequisites:  | 
   - [Azure Fundamentals Part 1: Describe core Azure concepts](../az-900-describe-cloud-concepts/index.yml)
   - [Azure Fundamentals Part 2: Describe core Azure services](../az-900-describe-core-azure-services/index.yml)
@@ -77,19 +75,16 @@ products:
 - azure-container-registry
 - azure-kubernetes-service
 modules:
-- learn.create-linux-vm-in-azure
-- learn.create-a-windows-vm-in-azure
+- learn.wwl.configure-virtual-machines
+- learn.wwl.configure-virtual-machine-availability
+- learn.wwl.configure-virtual-machine-extensions
+- learn.wwl.configure-app-service-plans
+- learn.wwl.configure-azure-app-services
+- learn.wwl.configure-azure-container-instances
+- learn.wwl.configure-azure-kubernetes-service
 - learn.manage-vms-with-azure-cli
-- learn.add-and-size-disks-in-azure-virtual-machines
-- learn.secure-your-azure-virtual-machine-disks
-- learn.keep-your-virtual-machines-updated
-- learn.azure.create-resource-manager-template-vs-code
-- learn.deploy-vms-from-vhd-templates
-- learn.build-app-with-scale-sets
+- learn.create-a-windows-vm-in-azure
+- learn.host-a-web-application-with-azure-web-apps
 - learn.azure.protect-vm-settings-with-dsc
-- learn.azure.deploy-run-container-app-service
-- learn.azure.app-service-scale-up-scale-out
-- learn.run-docker-containers-aci
-- learn.intro-to-azure-kubernetes-service
 trophy:
   uid: learn.az-104-manage-compute-resources.trophy

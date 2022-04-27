@@ -6,11 +6,10 @@ metadata:
   title: Customize data bindings with specific capabilities
   description: Customize data bindings with specific capabilities
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 content: |
   [!include[](includes/4-customize-databinding-capabilities.md)]
 quiz:

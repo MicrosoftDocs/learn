@@ -4,12 +4,13 @@ title: Remediate alerts and automate responses
 metadata:
   title: Remediate alerts and automate responses
   description: "Remediate alerts and automate responses"
-  ms.date: 07/20/2021
+  ms.date: 01/11/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/3-remediate-alerts.md)]

@@ -5,8 +5,8 @@ metadata:
   title: How does Azure Bastion work?
   description: How does Azure Bastion work?
   ms.date: 11/12/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: cherylmc
+  ms.author: cherylmc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

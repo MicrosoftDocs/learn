@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.move-data-by-using-spark-connector
+title: Move data by using the Azure Cosmos DB Spark connector
+metadata:
+  title: Move data by using the Azure Cosmos DB Spark connector
+  description: "Move data by using the Azure Cosmos DB Spark connector"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-move-data-by-using-spark-connector.md)]

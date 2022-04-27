@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: Summary for reviewing your Azure infrastructure changes by using Bicep and pull requests.
+  ms.date: 02/11/2022
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

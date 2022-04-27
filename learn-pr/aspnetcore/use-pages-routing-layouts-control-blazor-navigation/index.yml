@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.use-pages-routing-layouts-improve-blazor-navigation
+metadata:
+  moduleType: standard
+  title: Use pages, routing, and layouts to improve Blazor navigation
+  description: Learn how to optimize your app's navigation, use parameters from the URL, and create reusable layouts in a Blazor web app.
+  ms.date: 8/24/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-blazor
+title: Use pages, routing, and layouts to improve Blazor navigation
+summary: Learn how to manage request routing by using the @page directive, Blazor routing, NavLink, and NavMenu components. Increase an app's flexibility by adding routing parameters in your Blazor components. Use layouts to improve your app by reducing duplicate code.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Improve your Blazor app's navigation by using the router component and NavLinks.
+    - Enhance functionality with route parameters.
+    - Reduce duplicate code by using layouts in your Blazor app.
+prerequisites: |
+  - Basic knowledge of web app concepts
+  - C# .NET experience at a beginner level
+  - Local installations of the .NET SDK and Visual Studio Code
+  - C# extension for Visual Studio Code
+  - Experience with using the command line
+  - Knowledge of Blazor components
+iconUrl: /learn/achievements/use-pages-routing-layouts-improve-blazor-navigation.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+  - solution-architect
+products: 
+  - blazor
+  - dotnet-core
+  - aspnet
+units:
+- learn.use-pages-routing-layouts-improve-blazor-navigation.introduction
+- learn.use-pages-routing-layouts-improve-blazor-navigation.use-router-component-control-apps-navigation
+- learn.use-pages-routing-layouts-improve-blazor-navigation.exercise-change-navigation-blazor-using-page-directive
+- learn.use-pages-routing-layouts-improve-blazor-navigation.explore-route-parameters-effect-apps-routing
+- learn.use-pages-routing-layouts-improve-blazor-navigation.exercise-route-parameters-improve-apps-navigation
+- learn.use-pages-routing-layouts-improve-blazor-navigation.build-reusable-component-using-layouts
+- learn.use-pages-routing-layouts-improve-blazor-navigation.exercise-add-blazor-layouts-reduce-duplicate-code
+- learn.use-pages-routing-layouts-improve-blazor-navigation.summary
+badge:
+  uid: learn.use-pages-routing-layouts-improve-blazor-navigation.badge

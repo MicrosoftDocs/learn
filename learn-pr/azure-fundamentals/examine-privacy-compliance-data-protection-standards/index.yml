@@ -1,10 +1,10 @@
 ### YamlMime:Module
 uid: learn.azure.examine-privacy-compliance-data-protection-standards
 metadata:
-  title: Examine privacy, compliance, and data protection standards on Azure (AZ-900)
-  description: Learn about Microsoft's commitment to privacy, how Azure adheres to common regulatory and compliance standards, and additional considerations government agencies need to make. Prepare for AZ-900.
-  ms.date: 09/14/2020
-  author: Randall-Knapp
+  title: Examine privacy, compliance, and data protection standards on Azure
+  description: "Learn about Microsoft's commitment to privacy, how Azure adheres to common regulatory and compliance standards, and additional considerations government agencies need to make. Prepare for AZ-900."
+  ms.date: 09/28/2021
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -12,7 +12,6 @@ title: Examine privacy, compliance, and data protection standards on Azure
 summary: Learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
 abstract: |
   After completing this module, you'll be able to:
-
   * Explain the types of compliance offerings that are available on Azure.
   * Access the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum to learn what personal data Microsoft collects, how Microsoft uses it, and for what purposes.
   * Gain insight into regulatory standards and compliance on Azure from the Trust Center and from the Azure compliance documentation.
@@ -25,13 +24,16 @@ levels:
 - beginner
 roles:
 - administrator
-- developer
 - business-owner
 - business-user
+- developer
 - student
 - technology-manager
 products:
 - azure
+subjects:
+- security
+- compliance
 units:
 - learn.azure.examine-privacy-compliance-data-protection-standards.1-introduction
 - learn.azure.examine-privacy-compliance-data-protection-standards.2-explore-compliance-terms-requirements

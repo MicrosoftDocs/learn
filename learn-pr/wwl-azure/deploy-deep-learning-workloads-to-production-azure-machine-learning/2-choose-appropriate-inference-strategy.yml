@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.choose-appropriate-inference-strategy
+title: Choose the appropriate inference strategy
+metadata:
+  title: Choose the appropriate inference strategy
+  description: "Choose the appropriate inference strategy"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-choose-appropriate-inference-strategy.md)]

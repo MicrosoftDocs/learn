@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.tune-hyperparameters-azure-databricks
+metadata:
+  title: Tune hyperparameters with Azure Databricks
+  description: "Tune hyperparameters with Azure Databricks"
+  ms.date: 01/11/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Tune hyperparameters with Azure Databricks
+summary: In Azure Databricks, you can automate the process of hyperparameter tuning to more easily identify the best model.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand hyperparameter tuning and its role in machine learning.
+  - Learn how to use the two open-source tools - automated MLflow and Hyperopt - to automate the process of model selection and hyperparameter tuning.
+prerequisites: |
+  Before starting this module, you should be familiar with using Python to train machine learning models in Azure Databricks.
+iconUrl: /learn/achievements/hyperparameters-azure-databricks.svg
+levels:
+- advanced
+roles:
+- data-scientist
+products:
+- azure-databricks
+units:
+- learn.wwl.tune-hyperparameters-azure-databricks.introduction
+- learn.wwl.tune-hyperparameters-azure-databricks.understand-hyperparameter-tuning
+- learn.wwl.tune-hyperparameters-azure-databricks.automated-mlflow-for-model-tuning
+- learn.wwl.tune-hyperparameters-azure-databricks.hyperparameter-tuning-hyperopt
+- learn.wwl.tune-hyperparameters-azure-databricks.exercise
+- learn.wwl.tune-hyperparameters-azure-databricks.knowledge-check
+- learn.wwl.tune-hyperparameters-azure-databricks.summary
+badge:
+  uid: learn.wwl.tune-hyperparameters-azure-databricks.badge

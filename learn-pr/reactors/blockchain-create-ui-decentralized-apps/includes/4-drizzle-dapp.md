@@ -4,7 +4,7 @@ For this exercise, we'll use the [Drizzle box](https://www.trufflesuite.com/boxe
 
 The Drizzle box comes with several out-of-the-box smart contracts to check out. It also comes with a simplified truffle-config.js file that's designed for development and testing.
 
-## Use Drizzle to wire smart contacts to a front-end server
+## Use Drizzle to wire smart contracts to a front-end server
 
 Unboxing Drizzle results in essentially two separate projects within a
 single directory: a **truffle** project and a **drizzle-react client**

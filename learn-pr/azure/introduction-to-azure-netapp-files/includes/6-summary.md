@@ -29,3 +29,5 @@ Implementing today's enterprise workloads requires the highest storage performan
 - [Resource limits for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-resource-limits)
 - [FAQs About Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-faqs)
 - [Azure Files and Azure NetApp Files comparison](/azure/storage/files/storage-files-netapp-comparison)
+- [Cross-region replication of Azure NetApp Files volumes](/azure/azure-netapp-files/cross-region-replication-introduction)
+- [Create a dual-protocol volume for Azure NetApp Files](/azure/azure-netapp-files/create-volumes-dual-protocol)

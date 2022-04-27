@@ -4,12 +4,13 @@ title: Serve data for analysis with Azure Synapse Analytics
 metadata:
   title: Serve data for analysis with Azure Synapse Analytics
   description: "Serve data for analysis with Azure Synapse Analytics"
-  ms.date: 04/19/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/8-serve-data-for-analysis.md)]

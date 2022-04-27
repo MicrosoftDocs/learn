@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.customize-indexes-azure-cosmos-db-sql-api.customize-indexing-policy
+title: Customize the indexing policy
+metadata:
+  title: Customize the indexing policy
+  description: "Customize the indexing policy"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-customize-indexing-policy.md)]

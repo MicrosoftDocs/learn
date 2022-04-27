@@ -105,6 +105,6 @@ A key goal of Windows PowerShell remoting is to enable batch administration, whi
 
 ## PowerShell Direct
 
-Many administrators choose to run some of their servers in virtualized environments. To enable a simpler administration of Hyper-V VMs running Windows 10 or Windows Server 2019, you can use a feature called PowerShell Direct.
+Many administrators choose to run some of their servers in virtualized environments. To enable a simpler administration of Hyper-V VMs running Windows 10 or Windows Server, you can use a feature called PowerShell Direct.
 
 PowerShell Direct enables you to run a Windows PowerShell cmdlet or script inside a VM from the host operating system regardless of network, firewall, and remote management configurations.

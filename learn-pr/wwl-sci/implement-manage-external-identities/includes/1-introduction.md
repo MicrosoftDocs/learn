@@ -2,14 +2,13 @@ Being able to invite external users to use your Azure resources is a great benef
 
 ## Learning objectives
 
-In this module, you will: 
+In this module, you will:
 
-- Manage external collaboration settings in Azure AD
-- Invite external users (individually or in bulk)
-- Manage external user accounts in Azure AD
-- Configure identity providers (social and SAML/WS-fed)
+ -  Manage external collaboration settings in Azure AD
+ -  Invite external users (individually or in bulk)
+ -  Manage external user accounts in Azure AD
+ -  Configure identity providers (social and SAML/WS-fed)
 
 ## Prerequisites
 
 None
-

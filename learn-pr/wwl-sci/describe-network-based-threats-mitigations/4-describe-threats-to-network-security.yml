@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-network-based-threats-mitigations.describe-threats-to-network-security
+title: Describe threats to network security
+metadata:
+  title: Describe threats to network security
+  description: "Describe threats to network security"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-describe-threats-to-network-security.md)]

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.student-evangelism.academic-program-certifications-design-program-curricula
+metadata:
+  title: Design degree program curricula that implement certification
+  description: Design academic curricula that include Microsoft certification implemented at the course and program levels, and determine how students can earn academic credit for certification courses. 
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Design degree program curricula that implement certification
+summary: Design academic curricula that include Microsoft certification implemented at the course and program levels, and determine how students can earn academic credit for certification courses.
+abstract: |
+    When you finish this module, you'll be able to:
+     - Choose the Microsoft certifications that meet the needs of your program.
+     - Design your program and your approach to implementing certifications.
+     - Map your academic learning outcomes to certification outcomes.
+prerequisites: |
+    - Familiarity with academic processes for course development in higher education.
+    - Experience creating and managing learning resources for academic courses.
+iconUrl: /learn/achievements/student-evangelism/academic-program-certifications-design-program-curricula.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+- higher-ed-educator
+- school-leader
+products:
+- azure
+units:
+- learn.student-evangelism.academic-program-certifications-design-program-curricula.introduction
+- learn.student-evangelism.academic-program-certifications-design-program-curricula.understand-degree-program-design
+- learn.student-evangelism.academic-program-certifications-design-program-curricula.explore-certification-types
+- learn.student-evangelism.academic-program-certifications-design-program-curricula.describe-implementation-approaches
+- learn.student-evangelism.academic-program-certifications-design-program-curricula.develop-curricula-map-learning-outcomes
+- learn.student-evangelism.academic-program-certifications-design-program-curricula.knowledge-check
+- learn.student-evangelism.academic-program-certifications-design-program-curricula.summary
+badge:
+  uid: learn.student-evangelism.academic-program-certifications-design-program-curricula.badge

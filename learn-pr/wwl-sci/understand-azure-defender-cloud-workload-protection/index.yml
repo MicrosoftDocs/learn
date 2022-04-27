@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-azure-defender-cloud-workload-protection
 metadata:
-  title: Explain cloud workload protections in Azure Defender
-  description: "Explain cloud workload protections in Azure Defender"
-  ms.date: 04/02/2021
+  title: Explain cloud workload protections in Microsoft Defender for Cloud
+  description: "Explain cloud workload protections in Microsoft Defender for Cloud"
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explain cloud workload protections in Azure Defender
-summary: Learn about the protections and detections provided by Azure Defender for each cloud workload.
+title: Explain cloud workload protections in Microsoft Defender for Cloud
+summary: Learn about the protections and detections provided by Microsoft Defender for Cloud with each cloud workload.
 abstract: |
   Upon completion of this module, the learner will be able to:
-  - Explain which workloads are protected by Azure Defender
-  - Describe the benefits of the protections offered by Azure Defender
-  - Explain how Azure Defender protections function
+  - Explain which workloads are protected by Microsoft Defender for Cloud
+  - Describe the benefits of the protections offered by Microsoft Defender for Cloud
+  - Explain how Microsoft Defender for Cloud protections function
 prerequisites: |
   - Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage.
   - Familiarity with Azure virtual machines and virtual networking.
@@ -32,10 +32,10 @@ units:
 - learn.wwl.understand-azure-defender-cloud-workload-protection.for-app-service
 - learn.wwl.understand-azure-defender-cloud-workload-protection.for-storage
 - learn.wwl.understand-azure-defender-cloud-workload-protection.for-sql
+- learn.wwl.understand-azure-defender-cloud-workload-protection.understand-azure-defender-for-open-source-databases
 - learn.wwl.understand-azure-defender-cloud-workload-protection.for-key-vault
 - learn.wwl.understand-azure-defender-cloud-workload-protection.for-resource-manager
 - learn.wwl.understand-azure-defender-cloud-workload-protection.for-dns
-- learn.wwl.understand-azure-defender-cloud-workload-protection.for-kubernetes
 - learn.wwl.understand-azure-defender-cloud-workload-protection.for-container-registries
 - learn.wwl.understand-azure-defender-cloud-workload-protection.additional-protection
 - learn.wwl.understand-azure-defender-cloud-workload-protection.knowledge-check

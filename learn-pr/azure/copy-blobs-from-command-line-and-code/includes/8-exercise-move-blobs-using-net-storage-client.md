@@ -1,4 +1,4 @@
-The .NET Client library provides support for Azure storage. You can use this library to write your own custom applications tha move data around Azure storage.
+The .NET Client library provides support for Azure storage. You can use this library to write your own custom applications that move data around Azure storage.
 
 In this exercise, you'll see how to write an application that can migrate blobs from hot to cool storage.
 
@@ -32,15 +32,15 @@ We'll start by downloading and building an existing .NET Core application. You m
 1. Build the sample application.
 
     ```bash
-    dotnet build
+    dotnet build TransferBlobs
     ```
 
-## Examine the ArchiveBlobs application
+## Examine the TransferBlobs application
 
-1. Move to the *ArchiveBlobs* subdirectory. This subdirectory contains the source code for the sample application.
+1. Move to the *TransferBlobs* subdirectory. This subdirectory contains the source code for the sample application.
 
     ```bash
-    cd ArchiveBlobs
+    cd TransferBlobs
     ```
 
 1. Open the *Program.cs* file using the `Code` editor.
@@ -56,99 +56,100 @@ We'll start by downloading and building an existing .NET Core application. You m
     string sourceContainer = args[1];
     string destConnection = args[2];
     string destContainer = args[3];
-    DateTime transferBlobsNotModifiedSince = DateTime.Parse(args[4]);
-    Console.WriteLine($"Moving blobs not modified since {transferBlobsNotModifiedSince}");
+    DateTimeOffset transferBlobsModifiedSince = DateTimeOffset.Parse(args[4]);
+    Console.WriteLine($"Moving blobs modified since {transferBlobsModifiedSince}");
     ```
 
-    The *ArchiveBlobs* application takes the following command-line parameters:
+    The *TransferBlobs* application takes the following command-line parameters:
 
     - A connection string for accessing the source storage account
     - The name of the container in the source storage account containing the blobs that you want to move
     - A connection string for accessing the destination storage account
     - The name of the container in the destination storage account for holding the blobs after they've been moved
-    - A date/time string ([in UTC](https://www.bing.com/search?q=utc+time)). Blobs in the source container that haven't been modified since this date and time will be moved to the destination
+    - A date/time string ([in UTC](https://www.bing.com/search?q=utc+time)). Blobs in the source container that **have been modified** since this date and time will be moved to the destination
 
     > [!NOTE]
     > This application performs no validation or error handling. This is to keep the code short and concise. In a production system, you should validate all input carefully, and implement error handling for all storage account operations.
 
 1. Examine the code under the comment `Connect to Azure Storage`.
 
-    ```C##
+    ```C#
     // Connect to Azure Storage
-    CloudStorageAccount sourceAccount = CloudStorageAccount.Parse(sourceConnection);
-    CloudStorageAccount destAccount = CloudStorageAccount.Parse(destConnection);
-    CloudBlobClient sourceClient = sourceAccount.CreateCloudBlobClient();
-    CloudBlobClient destClient = destAccount.CreateCloudBlobClient();
-    CloudBlobContainer sourceBlobContainer = sourceClient.GetContainerReference(sourceContainer);
+    BlobServiceClient sourceClient = new BlobServiceClient(sourceConnection);
+    BlobServiceClient destClient = new BlobServiceClient(destConnection);
+
+    BlobContainerClient sourceBlobContainer = sourceClient.GetBlobContainerClient(sourceContainer);
+    sourceBlobContainer.CreateIfNotExists();
+
+    BlobContainerClient destBlobContainer = destClient.GetBlobContainerClient(destContainer);
+    destBlobContainer.CreateIfNotExists();
     ```
 
-    This block of code creates `CloudStorageAccount` objects for the source and destination accounts, and then creates `CloudBlobClient` objects that you can use to access blobs in these accounts. The *sourceBlobContainer* variable is a reference to the container in the source account, containing the blobs to be moved.
+    This block of code creates `BlobServiceClient` objects for the source and destination accounts. Then, it creates `BlobContainerClient` objects that you can use to access blobs in these accounts. The *sourceBlobContainer* variable is a reference to the container in the source account, containing the blobs to be moved. The *destBlobContainer* variable is a reference to the container in the destination account, where the blobs to be transferred and stored.
 
 1. Scroll down to the method `FindMatchingBlobsAsync`.
 
     ```C#
-    // Find all blobs that haven't been modified since the specified date and time
-    private static async Task<IEnumerable<ICloudBlob>> FindMatchingBlobsAsync(CloudBlobContainer blobContainer, DateTime transferBlobsNotModifiedSince)
+    // Find all blobs that have been modified since the specified date and time
+    private static async Task<IEnumerable<BlobClient>> FindMatchingBlobsAsync(BlobContainerClient blobContainer, DateTimeOffset transferBlobsModifiedSince)
     {
-        List<ICloudBlob> blobList = new List<ICloudBlob>();
-        BlobContinuationToken token = null;
+        List<BlobClient> blobList = new List<BlobClient>();
 
         // Iterate through the blobs in the source container
-        do
+        List<BlobItem> segment = await blobContainer.GetBlobsAsync(prefix: "").ToListAsync();
+        foreach (BlobItem blobItem in segment)
         {
-            BlobResultSegment segment = await
-                blobContainer.ListBlobsSegmentedAsync(prefix: "", currentToken: token);
+            BlobClient blob = blobContainer.GetBlobClient(blobItem.Name);
 
-            foreach (CloudBlockBlob blobItem in segment.Results)
+            // Check the source file's metadata
+            Response<BlobProperties> propertiesResponse = await blob.GetPropertiesAsync();
+            BlobProperties properties = propertiesResponse.Value;
+            
+            // Check the last modified date and time
+            // Add the blob to the list if has been modified since the specified date and time
+            if (DateTimeOffset.Compare(properties.LastModified.ToUniversalTime(), transferBlobsModifiedSince.ToUniversalTime()) > 0)
             {
-                ICloudBlob blob = await blobContainer.GetBlobReferenceFromServerAsync(blobItem.Name);
-
-                // Check the last modified date and time
-                // Add the blob to the list if has not been modified since the specified date and time
-                if (DateTime.Compare(blob.Properties.LastModified.Value.UtcDateTime, transferBlobsNotModifiedSince) <= 0)
-                {
-                    blobList.Add(blob);
-                }
+                blobList.Add(blob);
             }
-        } while (token != null);
+        }
 
         // Return the list of blobs to be transferred
         return blobList;
     }
     ```
 
-    This method takes a blob container and a `DateTime` object. The method iterates through the container to find all blobs that have a last modified date before the value specified in the `DateTime` object. The *blobList* collection is populated with a reference to each matching blob. When the method finishes, the *blobList* collection is passed back to the caller.
+    This method takes a blob container and a `DateTimeOffset` object. The method iterates through the container to find all blobs that have a last modified date after the value specified in the `DateTimeOffset` object. The *blobList* collection is populated with a reference to each matching blob. When the method finishes, the *blobList* collection is passed back to the caller.
 
     In the *Main* method, this method is invoked by the following statement.
 
     ```C#
-    // Find all blobs that haven't changed since the specified date and time
-     Enumerable<ICloudBlob> sourceBlobRefs = FindMatchingBlobsAsync(sourceBlobContainer, transferBlobsNotModifiedSince).Result;
+    // Find all blobs that have been changed since the specified date and time
+    IEnumerable<BlobClient> sourceBlobRefs = await FindMatchingBlobsAsync(sourceBlobContainer, transferBlobsModifiedSince);
     ```
 
-1. Scroll down to the `MoveMatchingBlobsAsync` method.
+2. Scroll down to the `MoveMatchingBlobsAsync` method.
 
     ```C#
     // Iterate through the list of source blobs, and transfer them to the destination container
-    private static async Task MoveMatchingBlobsAsync(
-        IEnumerable<ICloudBlob> sourceBlobRefs,
-        CloudBlobContainer sourceContainer,
-        CloudBlobContainer destContainer)
+    private static async Task MoveMatchingBlobsAsync(IEnumerable<BlobClient> sourceBlobRefs, BlobContainerClient sourceContainer, BlobContainerClient destContainer)
     {
-        foreach (ICloudBlob sourceBlobRef in sourceBlobRefs)
+        foreach (BlobClient sourceBlobRef in sourceBlobRefs)
         {
             // Copy the source blob
-            CloudBlockBlob destBlob = destContainer.GetBlockBlobReference(sourceBlobRef.Name);
+            BlobClient sourceBlob = sourceContainer.GetBlobClient(sourceBlobRef.Name);
 
-            await destBlob.StartCopyAsync(new Uri(GetSharedAccessUri(sourceBlobRef.Name, sourceContainer)));
+            // Check the source file's metadata
+            Response<BlobProperties> propertiesResponse = await sourceBlob.GetPropertiesAsync();
+            BlobProperties properties = propertiesResponse.Value;
+            BlobClient destBlob = destContainer.GetBlobClient(sourceBlobRef.Name);
+            CopyFromUriOperation ops = await destBlob.StartCopyFromUriAsync(GetSharedAccessUri(sourceBlobRef.Name, sourceContainer));
 
             // Display the status of the blob as it is copied
-            ICloudBlob destBlobRef = await destContainer.GetBlobReferenceFromServerAsync(sourceBlobRef.Name);
-            while (destBlobRef.CopyState.Status == CopyStatus.Pending)
+            while(ops.HasCompleted == false)
             {
-                Console.WriteLine($"Blob: {destBlobRef.Name}, Copied: {destBlobRef.CopyState.BytesCopied ?? 0} of  {destBlobRef.CopyState.TotalBytes ?? 0}");
-                await Task.Delay(500);
-                destBlobRef = await destContainer.GetBlobReferenceFromServerAsync(sourceBlobRef.Name);
+                long copied = await ops.WaitForCompletionAsync();
+                Console.WriteLine($"Blob: {destBlob.Name}, Copied: {copied} of {properties.ContentLength}");
+                    await Task.Delay(500);
             }
             Console.WriteLine($"Blob: {destBlob.Name} Complete");
 
@@ -158,11 +159,18 @@ We'll start by downloading and building an existing .NET Core application. You m
     }
     ```
 
-    The parameters to this method are the list of blobs to be moved, and the source and destination containers. The code iterates through the list of blobs and uses the `StartCopyAsync` method to start copying each blob in turn. Once the copy operation has been initiated, the code queries the status of the destination blob at 0.5-second intervals, displaying the progress of the operation, until the copy is complete. When the blob has been copied, it is removed from the source container.
+    The parameters to this method are the list of blobs to be moved, and the source and destination containers. The code iterates through the list of blobs and uses the `StartCopyFromUriAsync` method to start copying each blob in turn. Once the copy operation has been initiated, the code queries the status of the destination blob at 0.5-second intervals, displaying the progress of the operation, until the copy is complete. When the blob has been copied, it is removed from the source container.
 
-    The `StartCopyAsync` method call takes a URL containing a SAS token for the source object, as described in the previous unit.
+    The `StartCopyFromUriAsync` method call takes a URL containing a SAS token for the source object, as described in the previous unit.
 
-## Test the ArchiveBlobs application
+    In the *Main* method, this method is invoked by the following statement.
+
+    ```C#
+    // Move matching blobs to the destination container
+    await MoveMatchingBlobsAsync(sourceBlobRefs, sourceBlobContainer, destBlobContainer);
+    ```
+
+## Test the TransferBlobs application
 
 1. Using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), move to your source (hot) storage account.
 
@@ -178,7 +186,7 @@ To have some blobs with a different modified date from the batch upload time, yo
 
 1. Select the **Edit** tab from the blob panel, and add any text you want.
 
-1. select **Save** to commit the changes to the blob.
+1. Select **Save** to commit the changes to the blob.
 
 1. Repeat this for one or two additional blob files.
 
@@ -187,7 +195,7 @@ With several blobs showing newer modification dates, you can differentiate betwe
 1. In the list of blobs in this container, note the modification date for the blobs. Select a date and time that is roughly in the middle of the modification date for the blobs (some blobs should have a modification time before your selected date, and others after).
 
     > [!NOTE]
-    > The Azure portal will show you times in your local time zone, but our program will expect them in [UTC time](https://www.bing.com/search?q=utc+time&PC=U316&FORM=CHROMN). Adjust your date from what the Azure portal has shown to it's UTC value. For example, if your time was edit date was `6/15/2021, 10:04:27 AM` in Pacific Daylight Time (PDT), you would need to add 7 hours to UTC: `6/15/2021, 17:04:27 PM`.
+    > The Azure portal will show you times in your local time zone, but our program will expect them in [UTC time](https://www.bing.com/search?q=utc+time&PC=U316&FORM=CHROMN). Adjust your date from what the Azure portal has shown to it's UTC value. For example, if your time was edit date was `6/15/2021, 10:04:27 AM` in Korean Standard Time (KST), you would need to subtract 9 hours to UTC: `6/15/2021, 01:04:27 AM`.
 
 1. Using the portal, move to your destination (cool) storage account.
 
@@ -195,16 +203,16 @@ With several blobs showing newer modification dates, you can differentiate betwe
 
 1. In the **Data storage** section, click **Containers**.
 
-1. Select **+ Container**, and create a new container named **archive-test**.
+1. Select **+ Container**, and create a new container named **transfer-test**.
 
 1. In the Cloud Shell window, run the following command. Replace *\<source connection string>* and *\<destination connection string>* with the connection strings you recorded in notepad. Replace *\<selected date and time>* with the date and time for your blobs, in the same format as it appeared in the Azure portal. Enclose the connection strings and date/time in double quotes, to prevent them being interpreted by the Bash shell:
 
     ```bash
-    dotnet run "<source connection string>" specifications "<destination connection string>" archive-test "<selected date and time>"
+    dotnet run "<source connection string>" specifications "<destination connection string>" transfer-test "<selected date and time>"
     ```
     
     > [!NOTE]
-    > If your file does not find any files to move, you may need to adjust your date from what the Azure portal has customized to your timezone to it's UTC time as it is used by the program. For example, if your time was edit date was `6/15/2021, 10:04:27 AM` in Pacific Daylight Time (PDT), you would need to add 7 hours to UTC: `6/15/2021, 17:04:27 PM`.
+    > If your file does not find any files to move, you may need to adjust your date from what the Azure portal has customized to your timezone to it's UTC time as it is used by the program. For example, if your time was edit date was `6/15/2021, 10:04:27 AM` in Korea Standard Time (KST), you would need to subtract 9 hours to UTC: `6/15/2021, 01:04:27 AM`.
 
 1. The application should list the name of each matching blob that it finds, and move them.
 
@@ -212,7 +220,7 @@ With several blobs showing newer modification dates, you can differentiate betwe
 
 1. Move to your destination (cool) storage account.
 
-1. Browse the **archive-test** folder. Verify it contains the blobs that were moved.
+1. Browse the **transfer-test** folder. Verify it contains the blobs that were moved.
 
 1. Move to your source (hot) storage account.
 

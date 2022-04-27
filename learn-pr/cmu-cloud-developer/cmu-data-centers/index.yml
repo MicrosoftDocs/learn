@@ -3,11 +3,12 @@ uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-centers
 metadata:
   title: Datacenter trends in cloud computing
   description: Carnegie Mellon University's Cloud Developer course. Datacenters are what power the cloud. Learn what they are, how they work, and challenges in managing them.
-  ms.date: 02/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Datacenter trends in cloud computing
 summary: Datacenters power the cloud. Learn what they are, how they work, and challenges in managing them.
 abstract: | 
@@ -22,6 +23,7 @@ prerequisites: |
   - Know the technologies that enable cloud computing
   - Understand how cloud service providers pay for and bill for the cloud  
 iconUrl: /learn/achievements/cmu-cloud-developer/understand-data-centers.svg
+hidden: true
 levels:
 - beginner
 roles:

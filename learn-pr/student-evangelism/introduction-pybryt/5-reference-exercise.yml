@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-pybryt.5-reference-exercise
+title: "Exercise: Build an assignment"
+metadata:
+  title: "Exercise: Build an assignment"
+  description: An exercise in annotating solutions and creating reference implementations
+  author: chrispyles
+  ms.author: leestott
+  ms.date: 10/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-pybryt/main/5-reference-exercise.ipynb

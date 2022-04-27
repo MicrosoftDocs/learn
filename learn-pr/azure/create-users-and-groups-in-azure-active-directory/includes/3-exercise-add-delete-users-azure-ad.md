@@ -2,7 +2,7 @@ You need to add member user accounts for the new developer team in your organiza
 
 In this exercise, you'll create a new Azure Active Directory (Azure AD) organization to hold all of your user accounts. You'll also create a user account, delete a user account, and learn how to recover a deleted user account.
 
-## Create an Azure AD organization
+## Create an Azure Active Directory organization
 
 To hold all of the users you create in this exercise, create a new organization.
 
@@ -10,11 +10,11 @@ To hold all of the users you create in this exercise, create a new organization.
 
 1. On the Azure portal home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the search box, search for and select **Azure Active Directory**. The **Azure Active Directory** pane appears.
+1. In the *Search services and marketplace* search box, search for and select **Azure Active Directory**. The **Azure Active Directory** pane appears.
 
 1. Select **Create**. The **Create a tenant** pane appears.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Basics** tab, enter the following value for the setting.
 
     | Setting | Value |
     |---|---|
@@ -26,38 +26,42 @@ To hold all of the users you create in this exercise, create a new organization.
     | Setting | Value |
     |---|---|
     | **Directory details** |
-    | Organization name |From the dropdown list, select *Contoso Marketing Company* |
-    | Initial domain name| *contosomarketingXXXX* where you replace XXXX with numbers or letters to make your domain name unique
+    | Organization name | Enter *Contoso Marketing Company* |
+    | Initial domain name| Enter *contosomarketingXXXX* where you replace XXXX with numbers or letters to make your domain name unique
 
 1. Select **Next : Review + create**.
 
-1. After validation passes, select **Create**. Wait for the creation of your tenant to be completed.
+1. After validation passes, select **Create**. The **Help us prove you're not a robot** pane appears.
 
-1. Go to the new tenant by selecting **Click here to manage your new tenant**. The **Overview** pane for *Contoso Marketing Company* appears.
+1. Enter the appropriate match to the request, and select **Submit**. Wait for the creation of your tenant to be completed.
+
+1. On the **Help us prove you're not a robot** pane, select the **Click here to navigate to your new tenant: Contoso Marketing Company** link.
 
     :::image type="content" source="../media/3-switch-directory.png" alt-text="Screenshot that shows the link to manage your new organization.":::
+
+    The **Overview** pane for *Contoso Marketing Company* appears.
 
 ## Get a free trial for Azure AD Premium
 
 For Azure AD Premium to complete all the exercises in this module, you'll need to activate a free trial.
 
-1. In the left menu pane, select **Getting started**.
+1. In the left menu pane, under **Manage**, select **Licenses**. The **Overview** pane for *Licenses* appears.
 
-1. Under **Getting started with Azure AD**, select **Get a free trial for Azure AD Premium**.
+1. On the right side of the pane, under **Quick tasks**, select **Get a free trial**.
 
     ![Screenshot that shows the link to create free trial.](../media/3-ad-get-started-get-trial.png)
 
-1. Under **Azure AD Premium 2**, select **Free trial** > **Activate**. If you don't have that option, that's ok. You can complete most of the exercises without it.
+    The **Activate** pane appears.
 
-1. In the left menu pane, select **Overview**.
+1. Under **Azure AD Premium P2**, expand **Free trial**, and then select **Activate**. If you don't have that option, that's ok. You can complete most of the exercises without it. After the premium license activates, the **Overview** pane for *Licenses* reappears.
 
-1. Refresh the browser until you see **Azure AD Premium P2** under the organization name. It may take a couple of minutes.
+1. Return to the **Overview** pane for Azure Active Directory for Contoso Marketing Company. On the **Overview** tab, under the **Basic information** section, refresh the browser until you see **Azure AD Premium P2** appear aside **License**. It may take a couple of minutes.
 
     :::image type="content" source="../media/3-azure-ad-premium-2.png" alt-text="Screenshot that shows Azure AD Premium P2 on the Overview page under Tenant information.":::
 
-   You should also see *Your role* listed as the **Global administrator**.
+   Under **My feed**, you should also see your role listed as the **Global administrator**.
 
-1. Copy the **Primary domain** name to use in the next section.
+1. Under **Basic information**, copy the **Primary domain** name to use in the next section.
 
 ## Add a new user
 

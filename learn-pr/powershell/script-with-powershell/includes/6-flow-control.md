@@ -1,10 +1,10 @@
-*Flow control* refers to how your code runs in your console or script. It describes the _flow_ the code follows and how you control the flow. There are various constructs available that help you control the flow. The code can run all the statements or only some of them. It can also repeat certain statements until it meets a certain condition. 
+*Flow control* refers to how your code runs in your console or script. It describes the *flow* the code follows and how you control that flow. There are various constructs available to help you control the flow. The code can run all the statements, or only some of them. It can also repeat certain statements until it meets a certain condition. 
 
 Let's examine these flow-control constructs to see what they can do:
 
-- **Sanitize input**. If you use parameters in a script, you need to ensure your parameters hold reasonable values so your script works as intended. Writing code to manage this process is called _sanitizing_ input.
+- **Sanitize input**. If you use parameters in a script, you need to ensure your parameters hold reasonable values so your script works as intended. Writing code to manage this process is called *sanitizing* input.
 
-- **Control execution flow**. The previous technique ensures you get reasonable and correct input data. This one is more about deciding how to run code. The values set can determine which group of statements runs.
+- **Control execution flow**. The previous technique ensures you get reasonable and correct input data. This technique is more about deciding how to run code. The values set can determine which group of statements runs.
 
 - **Iterate over data**. Sometimes your data takes the form of an array, which is a data structure that contains many items. For such data, you might need to examine each item and perform an operation for each one. Many constructs in PowerShell can help you with that process.
 
@@ -30,9 +30,9 @@ If (<expression that evaluates to True or False>)
 - `$True` indicates that an expression is `True`.
 - `$False` indicates that an expression is `False`.
 
-You use operators to determine if an expression is `True` or `False`. There are a few operators. The basic idea is usually to determine if something on the left side of the operator matches something on the right side, given the operator's condition. An operator can express conditions like whether something is equal to something else, larger than something else, or matches a regular expression.
+You can use operators to determine if an expression is `True` or `False`. There are a few operators. The basic idea is usually to determine if something on the left side of the operator matches something on the right side, given the operator's condition. An operator can express conditions like whether something is equal to something else, larger than something else, or matches a regular expression.
 
-Here's an example of using an operator. The `-le` operator determines if the value on the left side of the operator is smaller than or equal to the value on the right side:
+Here's an example of using an operator. The `-le` operator determines if the value on the left side of the operator is less than or equal to the value on the right side:
 
 ```powershell
 $Value = 3
@@ -58,14 +58,14 @@ If ($Value -le 0)
 }
 ```
 
-Because we put the `Else` next to the ending brace for the `If`, we created a joined construct that's works as one. If you run this code in the console, you'll see that `Is Positive` prints. That's because `If` evaluates to `False`, but `Else` evaluates to `True`. So `Else` prints its statement.
+Because we put the `Else` next to the ending brace for the `If`, we created a joined construct that works as one. If you run this code in the console, you'll see that `Is Positive` prints. That's because `If` evaluates to `False`, but `Else` evaluates to `True`. So `Else` prints its statement.
 
 > [!NOTE]
 > You can use `Else` only if there's an `If` construct defined immediately above it.
 
 ### `ElseIf`
 
-`If` and `Else` work great to cover all the paths code can take. `ElseIf` is another construct that can be helpful. `ElseIf` is meant to be used with `If`. It says "the expression in this construct will be evaluated if the preceding `If` statement evaluates to `False`." Like `If`, `ElseIf` can take an expression, so it helps to think of `ElseIf` as a _secondary if_.
+`If` and `Else` work great to cover all the paths code can take. `ElseIf` is another construct that can be helpful. `ElseIf` is meant to be used with `If`. It says "the expression in this construct will be evaluated if the preceding `If` statement evaluates to `False`." Like `If`, `ElseIf` can take an expression, so it helps to think of `ElseIf` as a *secondary If*.
 
 Here's an example that uses `ElseIf`:
 
@@ -83,7 +83,7 @@ If ($Status -eq 'Minor')
 }
 ```
 
-It's possible to write this code in a more compact way, but it does show the use of `ElseIf`. It shows how `If` is evaluated first, then `ElseIf`, and then `Else`.
+It's possible to write this code in a more compact way, but this way does show the use of `ElseIf`. It shows how `If` is evaluated first, then `ElseIf`, and then `Else`.
 
 > [!Note]
 > As with `Else`, you can't use `ElseIf` if you don't define an `If` above it.

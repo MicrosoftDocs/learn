@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.implement-change-feed-estimator
+title: Implement the change feed estimator
+metadata:
+  title: Implement the change feed estimator
+  description: "Implement the change feed estimator"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-implement-change-feed-estimator.md)]

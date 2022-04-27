@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.communicate-strategically-mirror-coach.what-is-mirror
+title: What is a mirror? 
+metadata:
+  title: What is a mirror? 
+  description: Overview of the mirror role.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-what-is-mirror.md)]

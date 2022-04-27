@@ -1,0 +1,60 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-nat-gateway.6-knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: This is a knowledge check unit.
+  ms.date: 11/23/2021
+  author: LBN-commits
+  ms.author: v-lanai
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Can an administrator configure inbound connections handling by using the Azure Virtual Network NAT service?"
+    choices:
+    - content: "No. You can’t use Azure Virtual Network NAT to configure inbound connections handling."
+      isCorrect: true
+      explanation: "Correct. Azure Virtual Network NAT doesn’t manage inbound connections."
+    - content: "Yes. Azure Virtual Network NAT provides options to configure inbound connections handling."
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Network NAT doesn’t provide options for inbound connections."
+    - content: "Yes. However, you need to install an add-on."
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Network NAT doesn’t have an add-on for this purpose."
+  - content: "In a deployment, an Azure VM with a public IP assigned is placed in the subnet to which the Azure Virtual Network NAT service is assigned. Will the public IP address be used after Azure Virtual Network NAT deployment?"
+    choices:
+    - content: "No. The public IP address won’t be used after Azure Virtual Network NAT is deployed."
+      isCorrect: false
+      explanation: "Incorrect. The Azure VM keeps the public IP address for inbound connections."
+    - content: "Yes. The public IP address will be used, but only for inbound connections."
+      isCorrect: true
+      explanation: "Correct. Azure VMs with public IP addresses continue to use the address for connections initiated from the internet."
+    - content: "No. The public IP address will be removed from the Azure VM after Azure Virtual Network NAT is deployed."
+      isCorrect: false
+      explanation: "Incorrect. The Azure Virtual Network NAT service doesn’t remove public IP addresses."
+  - content: "A virtual network has four subnets. Azure VMs within these subnets frequently experience port exhaustion. An administrator decides to deploy the Azure Virtual Network NAT service. How many instances of Azure Virtual Network NAT should they deploy?"
+    choices:
+    - content: "The administrator should deploy four instances of Azure Virtual Network NAT."
+      isCorrect: false
+      explanation: "Incorrect. There’s no need to deploy four instances, because Azure Virtual Network NAT supports multiple subnets within the same virtual network."
+    - content: "A multiple subnets scenario isn’t supported with Azure Virtual Network NAT."
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Network NAT supports multiple subnets within the same virtual network."
+    - content: "Only one instance of Azure Virtual Network NAT is needed."
+      isCorrect: true
+      explanation: "Correct. Azure Virtual Network NAT supports multiple subnets."
+  - content: "Configuring an Azure Virtual Network NAT service requires configuring a public IP address as well. Is it mandatory to create both a public IP address object and public IP prefix object?"
+    choices:
+    - content: "No. It isn’t mandatory to create any IP object."
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Network NAT requires that you create at least one IP object—address or prefix."
+    - content: "Yes. You need to create both objects."
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Network NAT doesn’t require you to create both the address and prefix for IP addresses."
+    - content: "You don’t need to create both objects. Only one object is mandatory."
+      isCorrect: true
+      explanation: "Correct. Azure Virtual Network NAT requires that you create at least one IP object—address or prefix."

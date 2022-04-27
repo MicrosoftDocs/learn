@@ -4,12 +4,13 @@ title: Evaluate a classification model
 metadata:
   title: Evaluate a classification model
   description: "Evaluate a classification model"
-  ms.date: 08/02/2021
+  ms.date: 03/07/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/6-evaluate-model.md)]

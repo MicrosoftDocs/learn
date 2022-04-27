@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-qna-solution-qna-maker.compare-to-language-understanding
-title: Compare QnA Maker to Language Understanding
+title: Compare question answering to language understanding
 metadata:
-  title: Compare QnA Maker to Language Understanding
-  description: "Compare QnA Maker to Language Understanding"
-  ms.date: 07/08/2021
+  title: Compare question answering to language understanding
+  description: "Compare question answering to language understanding"
+  ms.date: 01/05/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-compare-to-language-understanding.md)]

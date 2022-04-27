@@ -43,25 +43,23 @@ Now that you've created a test environment, you're ready to set up the Azure ali
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Resource groups**. The **Resource groups** pane appears.
 
-1. Select the resource group: <rgn>[sandbox resource group]</rgn>.
+1. Select the resource group: <rgn>[sandbox resource group]</rgn>. The **Resource group** pane appears.
 
-1. Select your DNS zone (wideworldimportsXXXX.com).
+1. In the list of resources, select the DNS zone you created in a previous exercise, wideworldimportsXXXX.com. The **wideworldimportsXXXX.com DNS zone** pane appears.
 
-1. Select **Record set**. The **Add record set** pane appears.
+1. In the menu bar, select **Record set**. The **Add record set** pane appears.
 
-1. Enter the following values to create an alias record.
+1. Enter the following values for each setting to create an alias record.
 
     | Setting | Value |
     | ---- | ---- |
     | Name | Leave the name blank. By leaving it blank, it indicates the DNS zone for wideworldimportsXXXX.com. |
-    | Type | **A**. Even though we're creating an alias, the base record type must still be either A, AAAA, or CNAME. |
-    | Alias record set | **Yes** |
-    | Alias type | You can select either **Azure resource** or **Zone record set**. In this case, select the **Azure resource**. |
-    | Azure resource | From the list of resources, select **myPublicIP**. If this resource isn't listed, wait several minutes and try creating the record set again. |
+    | Type | A. Even though we're creating an alias, the base record type must still be either A, AAAA, or CNAME. |
+    | Alias record set | Yes |
+    | Alias type | Azure resource |
+    | Azure resource | From the list of resources, select **myPublicIP**. It may take up to 15 minutes for the deployments to propagate. If this resource isn't listed, wait several minutes, refresh the portal, and try again. |
 
-    When you're done, it should look like this.
-
-    ![Screenshot of Add record set.](../media/6-aliasrecord-azurelb.png)
+    :::image type="content" source="../media/6-aliasrecord-azurelb.png" alt-text="Screenshot of Add record set.":::
 
 1. Select **OK** to add the record to your zone.
 
@@ -73,9 +71,9 @@ When the new alias record is created, it should look something like this:
 
 Now, you need to verify that the alias record is set up correctly. In a real-world scenario, you'll have an actual domain, and would have completed the domain delegation to Azure DNS. You would use the registered domain name for this exercise. Because this unit assumes there's no registered domain, you'll use the public IP address.
 
-1. If you didn't copy the public IP address in a previous step, go to the resource group, and select **myPublicIP**. The IP address is on the upper-right side.
+1. In the Azure portal, go to the resource group,  select **myPublicIP**, and then select the IP address.
 
-   ![Screenshot of the DNS zone with an alias record created.](../media/6-publicIpaddress.png)
+   :::image type="content" source="../media/6-publicIpaddress.png" alt-text="Screenshot of the DNS zone with an alias record created.":::
 
 1. In a web browser, paste the public IP address as the URL.
 

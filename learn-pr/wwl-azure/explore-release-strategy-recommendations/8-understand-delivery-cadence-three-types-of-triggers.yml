@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-release-strategy-recommendations.understand-delivery-cadence-three-types-of-triggers
+title: Understand the delivery cadence and three types of triggers
+metadata:
+  title: Understand the delivery cadence and three types of triggers
+  description: "Understand the delivery cadence and three types of triggers"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-understand-delivery-cadence-three-types-of-triggers.md)]

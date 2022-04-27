@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.manage-access-for-azure-stack-hub
+metadata:
+  title: Manage access for Azure Stack Hub
+  description: "Manage access for Azure Stack Hub"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage access for Azure Stack Hub
+summary: |
+  You configure Azure Stack Hub to support users from multiple Azure Active Directory (Azure AD) tenants.
+  This module helps you prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
+abstract: |
+  * Describe Hybrid Identity for Azure Stack Hub.
+  * Identify an appropriate method for access (service principal, users, groups) for Azure Stack Hub.
+  * Explain authentication and authorization for Azure Stack Hub.
+  * Provision a service principal for Azure Stack Hub
+  * Create a service principal that uses a certificate credential for Azure Stack Hub.
+  * Create a service principal that uses client secret credentials for Azure Stack Hub.
+  * Recommend a permission model for Azure Stack Hub.
+  * Set access permissions using role-based access control for Azure Stack Hub.
+  * Add a new Azure Stack Hub user account in AAD for Azure Stack Hub.
+  * Create an Azure custom role using Azure PowerShell for Azure Stack Hub.
+prerequisites: |
+  * Working experience creating, assigning, and securing corporate identities.
+  * Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
+iconUrl: /learn/achievements/2-manage-access-for-azure-stack-hub.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack
+- azure-stack-hub
+units:
+- learn.wwl.manage-access-for-azure-stack-hub.introduction
+- learn.wwl.manage-access-for-azure-stack-hub.hybrid-identity
+- learn.wwl.manage-access-for-azure-stack-hub.identify-appropriate-method-for-access-service-principal-users-groups
+- learn.wwl.manage-access-for-azure-stack-hub.authentication-authorization
+- learn.wwl.manage-access-for-azure-stack-hub.provision-service-principal
+- learn.wwl.manage-access-for-azure-stack-hub.create-service-principal-that-uses-certificate-credential
+- learn.wwl.manage-access-for-azure-stack-hub.create-service-principal-that-uses-client-secret-credentials
+- learn.wwl.manage-access-for-azure-stack-hub.recommend-permission-model
+- learn.wwl.manage-access-for-azure-stack-hub.set-access-permissions-using-role-based-access-control
+- learn.wwl.manage-access-for-azure-stack-hub.add-new-user-account-aad
+- learn.wwl.manage-access-for-azure-stack-hub.create-azure-custom-role-using-azure-powershell
+- learn.wwl.manage-access-for-azure-stack-hub.knowledge-check
+- learn.wwl.manage-access-for-azure-stack-hub.summary
+badge:
+  uid: learn.wwl.manage-access-for-azure-stack-hub.badge

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Promote to the Test stage
   description: Promote to the Test stage by using a scheduled trigger.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

@@ -1,4 +1,4 @@
-Microsoft 365 Defender provides a cross domain threat correlation and purpose-driven portal to investigate threats.  Incidents are based on related alerts created when a malicious event or activity is seen on your network. Individual alerts provide valuable clues about an on-going attack. However, attacks typically employ various vectors and techniques to carry out a breach. Piecing individual clues together can be challenging and time-consuming.
+Microsoft 365 Defender provides a cross-domain threat correlation and purpose-driven portal to investigate threats.  Incidents are based on related alerts created when a malicious event or activity is seen on your network. Individual alerts provide valuable clues about an on-going attack. However, attacks typically employ various vectors and techniques to carry out a breach. Piecing individual clues together can be challenging and time-consuming.
 
 This short video gives an overview of incidents in Microsoft 365 Defender.
 
@@ -22,7 +22,7 @@ The Incidents queue shows a collection of flagged incidents from across devices,
 
 [ ![Incident Queue.](../media/incidents-queue.png) ](../media/incidents-queue.png#lightbox)
 
-By default, the queue in the Microsoft 365 security center displays incidents seen in the last 30 days. The most recent incident is at the top of the list so that you can see it first.
+By default, the queue in the Microsoft 365 Defender portal displays incidents seen in the last 30 days. The most recent incident is at the top of the list so that you can see it first.
 
 The incident queue exposes customizable columns that give you visibility into different characteristics of the incident or the contained entities. This helps you make an informed decision regarding the prioritization of incidents to handle.
 
@@ -80,7 +80,7 @@ You can choose to limit the list of incidents shown based on their status to see
 
 ## Preview incidents
 
-The portal pages provide preview information for most list related data.
+The portal pages provide preview information for most list-related data.
 
 In this screenshot, the three highlighted areas are the circle, the greater than symbol, and the actual link.
 

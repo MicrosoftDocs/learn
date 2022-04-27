@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 08/11/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  questions:
+  - content: |
+      When you execute your workflow you get the following error message:
+      
+      `Az CLI Login failed. Please check the credentials.`
+
+      What should you do to fix this error?
+    choices:
+    - content: Check your GitHub secrets. Confirm that there is a secret named `AZURE_CREDENTIALS`. Then, regenerate your service principal and paste the service principal's details into the AZURE_CREDENTIALS secret value.
+      isCorrect: true
+      explanation: Correct. The `azure/login` action makes use of the `AZURE_CREDENTIALS` secret. This secret should exist in your GitHub secret settings and should have a valid value.
+    - content: Confirm the name of the resource group you are deploying to. It is probably incorrect.
+      isCorrect: false
+      explanation: Incorrect. Your workflow output indicates it is not able to sign in using its credentials. You should check that the `AZURE_CREDENTIALS` secret exists, and then refresh the service principal's credentials.
+    - content: Check the runner your workflow is running on. It is not able to sign in to Azure.
+      isCorrect: false
+      explanation: Incorrect. Your runner only executes the `azure/login` action with the credentials you provide to it. You should check that the `AZURE_CREDENTIALS` secret exists, and then refresh the service principal's credentials.
+  - content: |
+      Which of these situations will trigger the R&D team's workflow to run?
+    choices:
+    - content: It will execute when there's a change in the _README.md_ file in the root directory on the _main_ branch.
+      isCorrect: false
+      explanation: Incorrect. The trigger only includes all files in the _deploy_ folder.
+    - content: It will execute when there's a change in any of the files in the _deploy_ folder on any branch. 
+      isCorrect: false
+      explanation: Incorrect. While it's true that the trigger will only run the workflow for changes in files in the _deploy_ folder, this only happens when the changes are on the _main_ branch.
+    - content: It will execute when there's a change to a file named _main.bicep_ in the _deploy_ folder on the _main_ branch. 
+      isCorrect: true
+      explanation: Correct. The file _deploy/main.bicep_ is included by the path filter. Since this change happens on the _main_ branch, both conditions are met and the trigger starts the workflow.
+  - content: |
+      Which of the following statements is true?
+    choices:
+    - content: Before you run your workflow with a GitHub-hosted runner, you need to make sure the runner has started. When the workflow run is finished, you need to shut down the runner so that it doesn't use up any resources unnecessarily.
+      isCorrect: false
+      explanation: Incorrect. You don't need to start or stop GitHub-hosted runners. GitHub manages the runner for you.
+    - content: GitHub-hosted runners contain all the software that's needed to deploy Bicep files.
+      isCorrect: true
+      explanation: Correct. GitHub-hosted runners include a set of predefined software, and it includes Bicep.
+    - content: When your workflow is finished running, you can sign in to the GitHub-hosted runner machine to check the logs of the workflow run.
+      isCorrect: false
+      explanation: Incorrect. GitHub-hosted runners exist only during the lifetime of your workflow run. When the workflow is finished, the runner is no longer available and can't be accessed. If you want to see the logs of your workflow run, use the GitHub web interface.

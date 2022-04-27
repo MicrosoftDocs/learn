@@ -1,14 +1,11 @@
 Application Gateway has a series of components that combine to route requests to a pool of web servers and to check the health of these web servers.
 
-![Flowchart top to bottom: frontend IP, listener, rule, and backend instances](../media/app-gateway-config.png)
+:::image type="content" source="../media/app-gateway-config-f068f2b5.png" alt-text="Diagram showing how Azure Application Gateway routes requests to a pool of web servers":::
 
- 
 
 ### Frontend configuration
 
-For the Application Gateway v2 SKU, there must be a public frontend IP configuration. You can still have both a Public and a Private frontend IP configuration, but Private only frontend IP configuration (Only ILB mode) is currently not enabled for the v2 SKU.
-
-You can configure the Frontend IP to be Public or Private as per your use case.
+You can configure the application gateway to have a public IP address, a private IP address, or both. A public IP address is required when you host a back end that clients must access over the Internet via an Internet-facing virtual IP.
 
 ### Backend configuration
 
@@ -20,13 +17,9 @@ Azure Application Gateway by default monitors the health of all resources in its
 
 The source IP address Application Gateway uses for health probes depends on the backend pool:
 
-- If the server address in the backend pool is a public endpoint, then the source address is the application gateway's frontend public IP address.
-
-- If the server address in the backend pool is a private endpoint, then the source IP address is from the application gateway subnet's private IP address space.
-
-   ![example heath probe for Azure App Gateway ](../media/app-gateway-probe.png)
-
- 
+ -  If the server address in the backend pool is a public endpoint, then the source address is the application gateway's frontend public IP address.
+ -  If the server address in the backend pool is a private endpoint, then the source IP address is from the application gateway subnet's private IP address space. :::image type="content" source="../media/app-gateway-probe-6300f27a.png" alt-text="example heath probe for Azure App Gateway":::
+    
 
 ### Default health probe
 
@@ -40,17 +33,12 @@ If the default probe check fails for server A, the application gateway stops for
 
 The following table lists the default health probe settings:
 
-
-
-| **Probe property**  | **Value**                      | **Description**                                              |
-|:-:|:-:|:-:|
-| Probe URL           | `<protocol>://127.0.0.1:<port>/` | The protocol and port are inherited from the backend HTTP settings to which the probe is associated |
-| Interval            | 30                             | The amount of time in seconds to wait before the next health probe is sent. |
-| Time-out            | 30                             | The amount of time in seconds the application gateway waits for a probe response before marking the probe as unhealthy. If a probe returns as healthy, the corresponding backend is immediately marked as healthy. |
-| Unhealthy threshold | 3                              | Governs how many probes to send in case there's a failure of the regular health probe. In v1 SKU, these additional health probes are sent in quick succession to determine the health of the backend quickly and don't wait for the probe interval. In the case of v2 SKU, the health probes wait the interval. The back-end server is marked down after the consecutive probe failure count reaches the unhealthy threshold. |
-
-
-
+| **Probe property**  |            **Value**             |                                                                                                                                                                                                        **Description**                                                                                                                                                                                                        |
+|:-------------------:|:--------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|      Probe URL      | `<protocol>://127.0.0.1:<port>/` |                                                                                                                                                              The protocol and port are inherited from the backend HTTP settings to which the probe is associated                                                                                                                                                              |
+|      Interval       |                30                |                                                                                                                                                                          The amount of time in seconds to wait before the next health probe is sent.                                                                                                                                                                          |
+|      Time-out       |                30                |                                                                                                      The amount of time in seconds the application gateway waits for a probe response before marking the probe as unhealthy. If a probe returns as healthy, the corresponding backend is immediately marked as healthy.                                                                                                       |
+| Unhealthy threshold |                3                 | Governs how many probes to send in case there's a failure of the regular health probe. In v1 SKU, these additional health probes are sent in quick succession to determine the health of the backend quickly and don't wait for the probe interval. In the case of v2 SKU, the health probes wait the interval. The back-end server is marked down after the consecutive probe failure count reaches the unhealthy threshold. |
 
 **Probe intervals**
 
@@ -66,20 +54,16 @@ Custom probes give you more granular control over the health monitoring. When us
 
 The following table provides definitions for the properties of a custom health probe.
 
-
-| **Probe property**  | **Description**                                              |
-|:-:|:-:|
-| Name                | Name of the probe. This name is used to identify and refer to the probe in back-end HTTP settings. |
-| Protocol            | Protocol used to send the probe. This must match with the protocol defined in the back-end HTTP settings it is associated to |
-| Host                | Host name to send the probe with. In v1 SKU, this value will be used only for the host header of the probe request. In v2 SKU, it will be used both as host header as well as SNI |
-| Path                | Relative path of the probe. A valid path starts with '/'     |
-| Port                | If defined, this is used as the destination port. Otherwise, it uses the same port as the HTTP settings that it is associated to. This property is only available in the v2 SKU |
-| Interval            | Probe interval in seconds. This value is the time interval between two consecutive probes |
-| Time-out            | Probe time-out in seconds. If a valid response isn't received within this time-out period, the probe is marked as failed |
-| Unhealthy threshold | Probe retry count. The back-end server is marked down after the consecutive probe failure count reaches the unhealthy threshold |
-
-
-
+| **Probe property**  |                                                                                  **Description**                                                                                  |
+|:-------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|        Name         |                                        Name of the probe. This name is used to identify and refer to the probe in back-end HTTP settings.                                         |
+|      Protocol       |                           Protocol used to send the probe. This must match with the protocol defined in the back-end HTTP settings it is associated to                            |
+|        Host         | Host name to send the probe with. In v1 SKU, this value will be used only for the host header of the probe request. In v2 SKU, it will be used both as host header as well as SNI |
+|        Path         |                                                             Relative path of the probe. A valid path starts with '/'                                                              |
+|        Port         |  If defined, this is used as the destination port. Otherwise, it uses the same port as the HTTP settings that it is associated to. This property is only available in the v2 SKU  |
+|      Interval       |                                             Probe interval in seconds. This value is the time interval between two consecutive probes                                             |
+|      Time-out       |                             Probe time-out in seconds. If a valid response isn't received within this time-out period, the probe is marked as failed                              |
+| Unhealthy threshold |                          Probe retry count. The back-end server is marked down after the consecutive probe failure count reaches the unhealthy threshold                          |
 
 ### Probe matching
 
@@ -87,9 +71,8 @@ By default, an HTTP(S) response with status code between 200 and 399 is consider
 
 The following are matching criteria:
 
-- HTTP response status code match - Probe matching criterion for accepting user specified http response code or response code ranges. Individual comma-separated response status codes or a range of status code is supported.
-
-- HTTP response body match - Probe matching criterion that looks at HTTP response body and matches with a user specified string. The match only looks for presence of user specified string in response body and isn't a full regular expression match.
+ -  HTTP response status code match - Probe matching criterion for accepting user specified http response code or response code ranges. Individual comma-separated response status codes or a range of status code is supported.
+ -  HTTP response body match - Probe matching criterion that looks at HTTP response body and matches with a user specified string. The match only looks for presence of user specified string in response body and isn't a full regular expression match.
 
 Match criteria can be specified using the New-AzApplicationGatewayProbeHealthResponseMatch cmdlet.
 
@@ -99,17 +82,15 @@ A listener is a logical entity that checks for incoming connection requests by u
 
 When you create an application gateway by using the Azure portal, you also create a default listener by choosing the protocol and port for the listener. You can choose whether to enable HTTP2 support on the listener. After you create the application gateway, you can edit the settings of that default listener (appGatewayHttpListener) or create new listeners.
 
-![app gateway listener configuration ](../media/app-gateway-error-codes.png)
+:::image type="content" source="../media/app-gateway-error-codes-acd1bd6a.png" alt-text="app gateway listener configuration":::
 
- 
 
 ### Listener type
 
 When you create a new listener, you must choose between basic and multi-site.
 
-- **Basic:** All requests for any domain will be accepted and forwarded to backend pools.
-
-- **Multi-site:** Forward requests to different backend pools based on the host header or host names. You must specify a host name that matches with the incoming request. This is because Application Gateway relies on HTTP 1.1 host headers to host more than one website on the same public IP address and port. 
+ -  **Basic:** All requests for any domain will be accepted and forwarded to backend pools.
+ -  **Multi-site:** Forward requests to different backend pools based on the host header or host names. You must specify a host name that matches with the incoming request. This is because Application Gateway relies on HTTP 1.1 host headers to host more than one website on the same public IP address and port.
 
 ### Order of processing listeners
 
@@ -129,13 +110,12 @@ Choose the front-end port. Select an existing port or create a new one. Choose a
 
 Choose HTTP or HTTPS:
 
-- **HTTP:** traffic between the client and the application gateway is unencrypted.
-
-- **HTTPS:** enables TLS termination or end-to-end TLS encryption. The TLS connection terminates at the application gateway. Traffic between the client and the application gateway is encrypted. If you want end-to-end TLS encryption, you must choose HTTPS and configure the back-end HTTP setting. This ensures that traffic is re-encrypted when it travels from the application gateway to the back end.
+ -  **HTTP:** traffic between the client and the application gateway is unencrypted.
+ -  **HTTPS:** enables TLS termination or end-to-end TLS encryption. The TLS connection terminates at the application gateway. Traffic between the client and the application gateway is encrypted. If you want end-to-end TLS encryption, you must choose HTTPS and configure the back-end HTTP setting. This ensures that traffic is re-encrypted when it travels from the application gateway to the back end.
 
 To configure TLS termination and end-to-end TLS encryption, you must add a certificate to the listener to enable the application gateway to derive a symmetric key. This is dictated by the TLS protocol specification. The symmetric key is used to encrypt and decrypt the traffic that's sent to the gateway. The gateway certificate must be in Personal Information Exchange (PFX) format. This format lets you export the private key that the gateway uses to encrypt and decrypt traffic.
 
-## Redirection overview 
+## Redirection overview
 
 You can use application gateway to redirect traffic. It has a generic redirection mechanism which allows for redirecting traffic received at one listener to another listener or to an external site. This simplifies application configuration, optimizes the resource usage, and supports new redirection scenarios including global and path-based redirection.
 
@@ -143,23 +123,18 @@ A common redirection scenario for many web applications is to support automatic 
 
 The following types of redirection are supported:
 
-- 301 Permanent Redirect
-
-- 302 Found
-
-- 303 See Other
-
-- 307 Temporary Redirect
+ -  301 Permanent Redirect
+ -  302 Found
+ -  303 See Other
+ -  307 Temporary Redirect
 
 Application Gateway redirection support offers the following capabilities:
 
-- **Global redirection:** Redirects from one listener to another listener on the gateway. This enables HTTP to HTTPS redirection on a site.
+ -  **Global redirection:** Redirects from one listener to another listener on the gateway. This enables HTTP to HTTPS redirection on a site.
+ -  **Path-based redirection:** Enables HTTP to HTTPS redirection only on a specific site area, for example a shopping cart area denoted by /cart/\*.
+ -  **Redirect to external site:** Requires a new redirect configuration object, which specifies the target listener or external site to which redirection is desired. The configuration element also supports options to enable appending the URI path and query string to the redirected URL. The redirect configuration is attached to the source listener via a new rule.
 
-- **Path-based redirection:** Enables HTTP to HTTPS redirection only on a specific site area, for example a shopping cart area denoted by /cart/*.
-
-- **Redirect to external site:** Requires a new redirect configuration object, which specifies the target listener or external site to which redirection is desired. The configuration element also supports options to enable appending the URI path and query string to the redirected URL. The redirect configuration is attached to the source listener via a new rule. 
-
-For more information on configuring redirection in Application Gateway, see [URL path-based redirection using PowerShell - Azure Application Gateway | Microsoft Docs](/azure/application-gateway/tutorial-url-redirect-powershell).
+For more information on configuring redirection in Application Gateway, see [URL path-based redirection using PowerShell - Azure Application Gateway \| Microsoft Docs](/azure/application-gateway/tutorial-url-redirect-powershell).
 
 ## Application Gateway request routing rules
 
@@ -167,9 +142,8 @@ When you create an application gateway using the Azure portal, you create a defa
 
 Rule types:
 
-- Basic forwards all requests on the associated listener (for example, blog.contoso.com/*) to a single back-end pool.
-
-- Path-based routes requests from specific URL paths to specific back-end pools. 
+ -  Basic forwards all requests on the associated listener (for example, blog.contoso.com/\*) to a single back-end pool.
+ -  Path-based routes requests from specific URL paths to specific back-end pools.
 
 ### Order of processing rules
 
@@ -197,7 +171,7 @@ For a path-based rule, add multiple back-end HTTP settings that correspond to ea
 
 ### Redirection setting
 
-If redirection is configured for a basic rule, all requests on the associated listener are redirected to the target. This is global redirection. If redirection is configured for a path-based rule, only requests in a specific site area are redirected. An example is a shopping cart area that's denoted by /cart/*. This is path-based redirection.
+If redirection is configured for a basic rule, all requests on the associated listener are redirected to the target. This is global redirection. If redirection is configured for a path-based rule, only requests in a specific site area are redirected. An example is a shopping cart area that's denoted by /cart/\*. This is path-based redirection.
 
 **Redirection type**
 
@@ -283,14 +257,12 @@ The urlPathMap element is used to specify Path patterns to back-end server pool 
  }
 
 }]
+
 ```
-
-
-
 
 ### PathPattern
 
-PathPattern is a list of path patterns to match. Each must start with / and the only place a "*" is allowed is at the end following a "/." The string fed to the path matcher does not include any text after the first ? or #, and those chars are not allowed here. Otherwise, any characters allowed in a URL are allowed in PathPattern. The supported patterns depend on whether you deploy Application Gateway v1 or v2.
+PathPattern is a list of path patterns to match. Each must start with / and the only place a "\*" is allowed is at the end following a "/." The string fed to the path matcher does not include any text after the first ? or \#, and those chars are not allowed here. Otherwise, any characters allowed in a URL are allowed in PathPattern. The supported patterns depend on whether you deploy Application Gateway v1 or v2.
 
 **PathBasedRouting rule**
 
@@ -312,31 +284,26 @@ HTTP headers allow a client and server to pass additional information with a req
 
 Application Gateway allows you to add, remove, or update HTTP request and response headers while the request and response packets move between the client and back-end pools.
 
-![HTTP header rewrite](../media/header-rewrite-overview.png)
+:::image type="content" source="../media/header-rewrite-overview-026d12c8.png" alt-text="HTTP header rewrite":::
+
 
 **URL path and query string**
 
 With URL rewrite capability in Application Gateway, you can:
 
-- Rewrite the host name, path, and query string of the request URL
-
-- Choose to rewrite the URL of all requests on a listener or only those requests which match one or more of the conditions you set. These conditions are based on the request and response properties (request, header, response header and server variables).
-
-- Choose to route the request (select the backend pool) based on either the original URL or the rewritten URL.
-
-  ![Application Gateway URL rewrite](../media/url-rewrite-overview.png)
+ -  Rewrite the host name, path, and query string of the request URL
+ -  Choose to rewrite the URL of all requests on a listener or only those requests which match one or more of the conditions you set. These conditions are based on the request and response properties (request, header, response header and server variables).
+ -  Choose to route the request (select the backend pool) based on either the original URL or the rewritten URL. :::image type="content" source="../media/url-rewrite-overview-a5378a09.png" alt-text="Application Gateway URL rewrite":::
+    
 
 ### Rewrite actions
 
 You use rewrite actions to specify the URL, request headers or response headers that you want to rewrite and the new value to which you intend to rewrite them to. The value of a URL or a new or existing header can be set to these types of values:
 
-- Text
-
-- Request header. To specify a request header, you need to use the syntax {http_req_headerName}
-
-- Response header. To specify a response header, you need to use the syntax {http_resp_headerName}
-
-- Server variable. To specify a server variable, you need to use the syntax {var_serverVariable}. See the list of supported server variables
+ -  Text
+ -  Request header. To specify a request header, you need to use the syntax \{http\_req\_headerName\}
+ -  Response header. To specify a response header, you need to use the syntax \{http\_resp\_headerName\}
+ -  Server variable. To specify a server variable, you need to use the syntax \{var\_serverVariable\}. See the list of supported server variables
 
 A combination of text, a request header, a response header, and a server variable.
 
@@ -344,11 +311,9 @@ A combination of text, a request header, a response header, and a server variabl
 
 You can use rewrite conditions, an optional configuration, to evaluate the content of HTTP(S) requests and responses and perform a rewrite only when one or more conditions are met. The application gateway uses these types of variables to evaluate the content of requests and responses:
 
-- HTTP headers in the request
-
-- HTTP headers in the response
-
-- Application Gateway server variables
+ -  HTTP headers in the request
+ -  HTTP headers in the response
+ -  Application Gateway server variables
 
 You can use a condition to evaluate whether a specified variable is present, whether a specified variable matches a specific value, or whether a specified variable matches a specific pattern.
 
@@ -358,24 +323,16 @@ To configure a rewrite rule, you need to create a rewrite rule set and add the r
 
 A rewrite rule set contains:
 
-- **Request routing rule association:** The rewrite configuration is associated to the source listener via the routing rule. When you use a basic routing rule, the rewrite configuration is associated with a source listener and is a global header rewrite. When you use a path-based routing rule, the rewrite configuration is defined on the URL path map. In that case, it applies only to the specific path area of a site. You can create multiple rewrite sets and apply each rewrite set to multiple listeners. But you can apply only one rewrite set to a specific listener.
+ -  **Request routing rule association:** The rewrite configuration is associated to the source listener via the routing rule. When you use a basic routing rule, the rewrite configuration is associated with a source listener and is a global header rewrite. When you use a path-based routing rule, the rewrite configuration is defined on the URL path map. In that case, it applies only to the specific path area of a site. You can create multiple rewrite sets and apply each rewrite set to multiple listeners. But you can apply only one rewrite set to a specific listener.
+ -  **Rewrite Condition:** It is an optional configuration. Rewrite conditions evaluate the content of the HTTP(S) requests and responses. The rewrite action will occur if the HTTP(S) request or response matches the rewrite condition. If you associate more than one condition with an action, the action occurs only when all the conditions are met. In other words, the operation is a logical AND operation.
+ -  **Rewrite type:** There are 3 types of rewrites available:
+    
+     -  Rewriting request headers
+     -  Rewriting response headers
+     -  Rewriting URL components
+        
+         -  **URL path:** The value to which the path is to be rewritten to.
+         -  **URL Query String:** The value to which the query string is to be rewritten to.
+         -  **Re-evaluate path map:** Used to determine whether the URL path map is to be re-evaluated or not. If kept unchecked, the original URL path will be used to match the path-pattern in the URL path map. If set to true, the URL path map will be re-evaluated to check the match with the rewritten path. Enabling this switch helps in routing the request to a different backend pool post rewrite.
 
-- **Rewrite Condition:** It is an optional configuration. Rewrite conditions evaluate the content of the HTTP(S) requests and responses. The rewrite action will occur if the HTTP(S) request or response matches the rewrite condition. If you associate more than one condition with an action, the action occurs only when all the conditions are met. In other words, the operation is a logical AND operation.
-
-- **Rewrite type:** There are 3 types of rewrites available:
-
-  - Rewriting request headers
-
-  - Rewriting response headers
-
-  - Rewriting URL components
-
-    - **URL path:** The value to which the path is to be rewritten to.
-
-    - **URL Query String:** The value to which the query string is to be rewritten to.
-
-    - **Re-evaluate path map:** Used to determine whether the URL path map is to be re-evaluated or not. If kept unchecked, the original URL path will be used to match the path-pattern in the URL path map. If set to true, the URL path map will be re-evaluated to check the match with the rewritten path. Enabling this switch helps in routing the request to a different backend pool post rewrite.
-
- 
-
-For more information on Configuring rewrites in application Gateway, see [Rewrite HTTP headers and URL with Azure Application Gateway | Microsoft Docs](/azure/application-gateway/rewrite-http-headers-url).
+For more information on Configuring rewrites in application Gateway, see [Rewrite HTTP headers and URL with Azure Application Gateway \| Microsoft Docs](/azure/application-gateway/rewrite-http-headers-url).

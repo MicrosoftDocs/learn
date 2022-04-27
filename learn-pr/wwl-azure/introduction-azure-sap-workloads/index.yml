@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-azure-sap-workloads
 metadata:
   title: Introduction to Azure for SAP workloads
   description: "Introduction to Azure for SAP workloads"
-  ms.date: 03/17/2021
+  ms.date: 10/19/2021
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -23,6 +23,7 @@ roles:
 - administrator
 products:
 - azure
+- azure-sap
 units:
 - learn.wwl.introduction-azure-sap-workloads.introduction
 - learn.wwl.introduction-azure-sap-workloads.azure-compute-sap-workloads

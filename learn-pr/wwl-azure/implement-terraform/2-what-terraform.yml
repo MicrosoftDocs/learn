@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-terraform.what-is-terraform
+title: What is Terraform?
+metadata:
+  title: What is Terraform?
+  description: "What is Terraform?"
+  ms.date: 02/25/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-terraform.md)]

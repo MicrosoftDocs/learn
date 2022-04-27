@@ -1,4 +1,4 @@
-Apache Cassandra is a fully distributed, structured key-value storage system. Cassandra marries the best aspects of both HBase and Amazon's set of storage techniques, referrred to as Dynamo.<sup>[3][^3]</sup> Cassandra uses the data model of HBase and the implementation architecture of Dynamo. The following video covers Cassandra.
+Apache Cassandra is a fully distributed, structured key-value storage system. Cassandra marries the best aspects of both HBase and Amazon's set of storage techniques, referred to as Dynamo.<sup>[3][^3]</sup> Cassandra uses the data model of HBase and the implementation architecture of Dynamo. The following video covers Cassandra.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pQ3Z]
 
@@ -24,7 +24,7 @@ _Figure 8: Ranges and slices in Cassandra_
 
 ### Cassandra architecture
 
-As a distributed data store, Cassandra is designed to run on a cluster of nodes, similar to HBase. However, unlike HBase, Cassandra follows a **decentralized architecture** (i.e., there is no master-slave architecture, and every node in Cassandra has the same role)<!-- . This way -->, which means Cassandra is designed without a single point of failure (SPOF). Although HBase is designed to be failure resilient, it relies on the Hadoop Distributed File System (HDFS) for persistent storage, where the NameNode is a SPOF. Cassandra does not require an underlying distributed file system (DFS); the nodes in a Cassandra cluster simply use the local storage on each node. Coordination between cluster nodes in Cassandra is handled in a peer-to-peer fashion. 
+As a distributed data store, Cassandra is designed to run on a cluster of nodes, similar to HBase. However, unlike HBase, Cassandra follows a **decentralized architecture** (i.e., there is no primary-secondary architecture, and every node in Cassandra has the same role)<!-- . This way -->, which means Cassandra is designed without a single point of failure (SPOF). Although HBase is designed to be failure resilient, it relies on the Hadoop Distributed File System (HDFS) for persistent storage, where the NameNode is a SPOF. Cassandra does not require an underlying distributed file system (DFS); the nodes in a Cassandra cluster simply use the local storage on each node. Coordination between cluster nodes in Cassandra is handled in a peer-to-peer fashion. 
 
 ### Data distribution in Cassandra
 
@@ -90,7 +90,7 @@ Unlike other NoSQL database systems, Cassandra has a tunable consistency model. 
 
 #### Accrual failure detection
 
-With no centralized master to keep track of the nodes in the cluster, Cassandra uses a special **gossip protocol** to communicate in all nodes in the token ring. In Cassandra, failures are expressed as a probability using an **accrual failure detection (AFD)**<sup>[2][^2]</sup> algorithm, which can be summarized as follows.
+With no centralized primary to keep track of the nodes in the cluster, Cassandra uses a special **gossip protocol** to communicate in all nodes in the token ring. In Cassandra, failures are expressed as a probability using an **accrual failure detection (AFD)**<sup>[2][^2]</sup> algorithm, which can be summarized as follows.
 
 Every second or so, each node in the Cassandra token ring contacts another random member in the ring to inquire about its status. This communication happens using a handshake protocol similar to a TCP handshake. In case the node cannot be contacted, a failure **suspicion** is raised. Therefore, the failure monitoring system outputs a continuous level of suspicion regarding how confident it is that a node has failed, which is desirable because it can <!-- take into -->account for fluctuations in the network environment. For example, just because one connection gets caught up, it does not necessarily mean that the whole node is dead. So a suspicion offers a more fluid and proactive indication of the weaker or stronger possibility of failure based on interpretation, as opposed to a simple binary assessment, such as dead or alive in heartbeat mechanisms. 
 

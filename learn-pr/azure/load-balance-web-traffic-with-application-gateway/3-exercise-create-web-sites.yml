@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Create web sites
   description: Create a virtual network and virtual machines for hosting the vehicle registration web app, and an App Service for hosting the license renewal web app
   ms.date: 05/02/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: vhorne
+  ms.author: victorh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create web sites

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-provision-environments.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices isn't a technology or tool for configuring a target server during the deployment?"
+    choices:
+    - content: "PowerShell Desired State Configuration (DSC)."
+      isCorrect: false
+      explanation: "Incorrect. Azure App Configuration provides a service to manage application settings and feature flags centrally. When you want to configure the server, you should look at technologies like PowerShell Desired State Configuration(DSC), or use tools like Puppet and Chef."
+    - content: "Chef."
+      isCorrect: false
+      explanation: "Incorrect. Azure App Configuration provides a service to manage application settings and feature flags centrally. When you want to configure the server, you should look at technologies like PowerShell Desired State Configuration(DSC), or use tools like Puppet and Chef."
+    - content: "Azure App Configuration."
+      isCorrect: true
+      explanation: "Correct. Azure App Configuration provides a service to manage application settings and feature flags centrally. When you want to configure the server, you should look at technologies like PowerShell Desired State Configuration(DSC), or use tools like Puppet and Chef."
+  - content: "Which of the following choices do you need to create when a pipeline needs access to resources?"
+    choices:
+    - content: "Service Hook."
+      isCorrect: false
+      explanation: "Incorrect. When a pipeline needs access to resources, you will often need to provision service connections."
+    - content: "Service Connection."
+      isCorrect: true
+      explanation: "Correct. When a pipeline needs access to resources, you will often need to provision service connections."
+    - content: "Agent Pool."
+      isCorrect: false
+      explanation: "Incorrect. When a pipeline needs access to resources, you will often need to provision service connections."
+  - content: "Which of the following choices is recommended to authenticate to Azure with Service Connections?"
+    choices:
+    - content: "User and Password."
+      isCorrect: false
+      explanation: "Incorrect. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a very safe way to connect from the pipeline."
+    - content: "Personal Access Token."
+      isCorrect: false
+      explanation: "Incorrect. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a very safe way to connect from the pipeline."
+    - content: "Service Principal."
+      isCorrect: true
+      explanation: "Correct. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a very safe way to connect from the pipeline."

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-databricks.create-workspace-cluster
+title: Create an Azure Databricks workspace and cluster
+metadata:
+  title: Create an Azure Databricks workspace and cluster
+  description: "Create an Azure Databricks workspace and cluster"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-create-workspace-cluster.md)]

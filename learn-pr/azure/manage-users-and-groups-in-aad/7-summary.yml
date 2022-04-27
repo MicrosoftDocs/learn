@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 09/9/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: curtand
+  ms.author: curtand
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

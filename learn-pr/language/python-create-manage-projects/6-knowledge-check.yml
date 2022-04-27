@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.create-manage-projects.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 12/02/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: How do you know you're in a virtual environment named `env`?
+      choices:
+        - content: Run `ven isActive` in the terminal.
+          isCorrect: false
+          explanation: Incorrect. Running this command doesn't show that you're in a virtual environment.
+        - content: Run `venv list environments`.
+          isCorrect: false
+          explanation: Incorrect. Running this command doesn't show that you're in a virtual environment.
+        - content: Your console prompt has changed to start with `(env) ->`.
+          explanation: Correct. That's how you see if you're in a virtual environment.
+          isCorrect: true
+    - content: How would you get a list of installed libraries?
+      choices: 
+        - content: Run `pip installed`.
+          explanation: Incorrect. There's no such command.
+          isCorrect: false
+        - content: Run `pip freeze`.
+          explanation: Correct. This command will show a list of installed libraries.
+          isCorrect: true
+        - content: Open the file *requirements.txt*.
+          explanation: Incorrect. The file usually does contain installed libraries, but there's a command that you can run to see a list of these libraries.
+          isCorrect: false
+    - content: How would you upgrade a package named "Flask"?
+      choices:
+        - content: Run `pip install Flask`.
+          explanation: Incorrect. That's how you install a package.
+          isCorrect: false
+        - content: Run `pip install Flask --upgrade`.
+          explanation: Correct. That's how you upgrade a package.
+          isCorrect: true
+        - content: Run `pip upgrade Flask`.
+          explanation: Incorrect. There's no `upgrade` command.
+          isCorrect: false
+
+
+        

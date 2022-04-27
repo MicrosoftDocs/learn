@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundraising.funding-rounds
+title: Raise a funding round
+metadata:
+  title: Raise a funding round
+  description: Learn about funding rounds. See how to contact investors and understand term sheets. Find out how to make it easy for investors to complete due diligence.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-funding-rounds.md)]

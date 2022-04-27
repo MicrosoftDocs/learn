@@ -1,32 +1,125 @@
 With the proliferation of devices of all shapes and sizes and the bring your own device (BYOD) concept, IT professionals are faced with two somewhat opposing goals:
 
-- Allow end users to be productive wherever and whenever
-
-- Protect the organization's assets
+ -  Allow end users to be productive wherever and whenever and on any device
+ -  Protect the organization's assets
 
 To protect these assets, IT staff need to first manage the device identities. IT staff can build on the device identity with tools like Microsoft Intune to ensure standards for security and compliance are met. Azure Active Directory (Azure AD) enables single sign-on to devices, apps, and services from anywhere through these devices.
 
-- Your users get access to your organization's assets they need.
-
-- Your IT staff get the controls they need to secure your organization.
+ -  Your users get access to your organization's assets they need.
+ -  Your IT staff get the controls they need to secure your organization.
 
 ## Azure AD registered devices
 
 The goal of Azure AD registered devices is to provide your users with support for the BYOD or mobile device scenarios. In these scenarios, a user can access your organization’s Azure Active Directory controlled resources using a personal device.
 
-| **Azure AD registered**| **Description**|
-| :--- | :--- |
-| Definition| Registered to Azure AD without requiring organizational account to sign in to the device|
-| Primary audience| <ul><li>Applicable to all users with the following criteria:</li> <li>--Bring your own device (BYOD)</li> <li>--Mobile devices</li></ul>|
-| Device ownership| User or Organization|
-| Operating systems| Windows 10, iOS, Android, and macOS|
-| Provisioning| <ul><li>Windows 10 – Settings</li> <li>iOS/Android – Company Portal or Microsoft Authenticator app</li> <li>macOS – Company Portal</li></ul>|
-| Device sign in options| <ul><li>End-user local credentials</li> <li>Password</li> <li>Windows Hello</li> <li>PIN</li> <li>Biometrics or Pattern for other devices</li></ul>|
-| Device management| <ul><li>Mobile Device Management (example: Microsoft Intune)</li> <li>Mobile Application Management</li></ul>|
-| Key capabilities| <ul><li>SSO to cloud resources</li> <li>Conditional Access when enrolled into Intune</li> <li>Conditional Access via App protection policy</li> <li>Enables Phone sign in with Microsoft Authenticator app</li></ul>|
+:::row:::
+  :::column:::
+    **Azure AD registered**
+  :::column-end:::
+  :::column:::
+    **Description**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Definition
+  :::column-end:::
+  :::column:::
+    Registered to Azure AD without requiring organizational account to sign in to the device
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Primary audience
+  :::column-end:::
+  :::column:::
+    
 
-> [!div class="mx-imgBorder"]
-> ![Azure AD registered devices.](../media/azure-active-directory-registered-device.png)
+ -  Applicable to all users with the following criteria:
+ -  \--Bring your own device (BYOD)
+ -  \--Mobile devices
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Device ownership
+  :::column-end:::
+  :::column:::
+    User or Organization
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Operating systems
+  :::column-end:::
+  :::column:::
+    Windows 10, iOS, Android, and macOS
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Provisioning
+  :::column-end:::
+  :::column:::
+    
+
+ -  Windows 10 – Settings
+ -  iOS/Android – Company Portal or Microsoft Authenticator app
+ -  macOS – Company Portal
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Device sign in options
+  :::column-end:::
+  :::column:::
+    
+
+ -  End-user local credentials
+ -  Password
+ -  Windows Hello
+ -  PIN
+ -  Biometrics or Pattern for other devices
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Device management
+  :::column-end:::
+  :::column:::
+    
+
+ -  Mobile Device Management (example: Microsoft Intune)
+ -  Mobile Application Management
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Key capabilities
+  :::column-end:::
+  :::column:::
+    
+
+ -  SSO to cloud resources
+ -  Conditional Access when enrolled into Intune
+ -  Conditional Access via App protection policy
+ -  Enables Phone sign in with Microsoft Authenticator app
+
+
+  :::column-end:::
+:::row-end:::
+
+
+:::image type="content" source="../media/azure-active-directory-registered-device-601a46a0.png" alt-text="Azure AD registered devices.":::
+
 
 Azure AD registered devices are signed in to using a local account like a Microsoft account on a Windows 10 device, but additionally have an Azure AD account attached for access to organizational resources. Access to resources in the organization can be further limited based on that Azure AD account and Conditional Access policies applied to the device identity.
 
@@ -42,18 +135,116 @@ Another user wants to access their organizational email on their personal Androi
 
 ## Azure AD joined devices
 
-Azure AD join is intended for organizations that want to be cloud-first or cloud-only. Any organization can deploy Azure AD joined devices no matter the size or industry. Azure AD join works even in a environment, enabling access to both cloud and on-premises apps and resources.
+Azure AD join is intended for organizations that want to be cloud-first or cloud-only. Any organization can deploy Azure AD joined devices no matter the size or industry. Azure AD join enables access to both cloud and on-premises apps and resources.
 
-| **Azure AD joined**| **Description**|
-| :--- | :--- |
-| Definition| Joined only to Azure AD requiring organizational account to sign in to the device|
-| Primary audience| <ul><li>Suitable for both cloud-only and hybrid organizations</li> <li>Applicable to all users in an organization</li></ul>|
-| Device ownership| Organization|
-| Operating systems| <ul><li>All Windows 10 devices except Windows 10 Home</li> <li>Windows Server 2019 Virtual Machines running in Azure (Server core is not supported)</li></ul>|
-| Provisioning| <ul><li>Self-service: Windows OOBE or Settings</li> <li>Bulk enrollment</li> <li>Windows Autopilot</li></ul>|
-| Device sign in options| <ul><li>Organizational accounts using:</li> <li>--Password</li> <li>--Windows Hello for Business</li> <li>--FIDO2.0 security keys (preview)</li></ul>|
-| Device management| <ul><li>Mobile Device Management (example: Microsoft Intune)</li> <li>Co-management with Microsoft Intune and Microsoft Endpoint Configuration Manager</li></ul>|
-| Key capabilities| <ul><li>SSO to both cloud and on-premises resources</li> <li>Conditional Access through MDM enrollment and MDM compliance evaluation</li> <li>Self-service Password Reset and Windows Hello PIN reset on lock screen</li> <li>Enterprise State Roaming across devices</li></ul>|
+:::row:::
+  :::column:::
+    **Azure AD joined**
+  :::column-end:::
+  :::column:::
+    **Description**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Definition
+  :::column-end:::
+  :::column:::
+    Joined only to Azure AD requiring organizational account to sign in to the device
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Primary audience
+  :::column-end:::
+  :::column:::
+    
+
+ -  Suitable for both cloud-only and hybrid organizations
+ -  Applicable to all users in an organization
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Device ownership
+  :::column-end:::
+  :::column:::
+    Organization
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Operating systems
+  :::column-end:::
+  :::column:::
+    
+
+ -  All Windows 10 devices except Windows 10 Home
+ -  Windows Server 2019 Virtual Machines running in Azure (Server core is not supported)
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Provisioning
+  :::column-end:::
+  :::column:::
+    
+
+ -  Self-service: Windows OOBE or Settings
+ -  Bulk enrollment
+ -  Windows Autopilot
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Device sign in options
+  :::column-end:::
+  :::column:::
+    
+
+ -  Organizational accounts using:
+ -  \--Password
+ -  \--Windows Hello for Business
+ -  \--FIDO2.0 security keys (preview)
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Device management
+  :::column-end:::
+  :::column:::
+    
+
+ -  Mobile Device Management (example: Microsoft Intune)
+ -  Co-management with Microsoft Intune and Microsoft Endpoint Configuration Manager
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Key capabilities
+  :::column-end:::
+  :::column:::
+    
+
+ -  SSO to both cloud and on-premises resources
+ -  Conditional Access through MDM enrollment and MDM compliance evaluation
+ -  Self-service Password Reset and Windows Hello PIN reset on lock screen
+ -  Enterprise State Roaming across devices
+
+
+  :::column-end:::
+:::row-end:::
+
 
 Azure AD joined devices are signed in to using an organizational Azure AD account. Access to resources in the organization can be further limited based on that Azure AD account and Conditional Access policies applied to the device identity.
 
@@ -67,30 +258,23 @@ Azure AD joined devices can still maintain single sign-on access to on-premises 
 
 Although Azure AD join is primarily intended for organizations that do not have an on-premises Windows Server Active Directory infrastructure, you can certainly use it in scenarios where:
 
-- You want to transition to cloud-based infrastructure using Azure AD and MDM like Intune.
-
-- You can’t use an on-premises domain join, for example, if you need to get mobile devices such as tablets and phones under control.
-
-- Your users primarily need to access Microsoft 365 or other SaaS apps integrated with Azure AD.
-
-- You want to manage a group of users in Azure AD instead of in Active Directory. This scenario can apply, for example, to seasonal workers, contractors, or students.
-
-- You want to provide joining capabilities to workers in remote branch offices with limited on-premises infrastructure.
+ -  You want to transition to cloud-based infrastructure using Azure AD and MDM like Intune.
+ -  You can’t use an on-premises domain join, for example, if you need to get mobile devices such as tablets and phones under control.
+ -  Your users primarily need to access Microsoft 365 or other SaaS apps integrated with Azure AD.
+ -  You want to manage a group of users in Azure AD instead of in Active Directory. This scenario can apply, for example, to seasonal workers, contractors, or students.
+ -  You want to provide joining capabilities to workers in remote branch offices with limited on-premises infrastructure.
 
 You can configure Azure AD joined devices for all Windows 10 devices with the exception of Windows 10 Home.
 
 The goal of Azure AD joined devices is to simplify:
 
-- Windows deployments of work-owned devices
+ -  Windows deployments of work-owned devices
+ -  Access to organizational apps and resources from any Windows device
+ -  Cloud-based management of work-owned devices
+ -  Users to sign in to their devices with their Azure AD or synced Active Directory work or school accounts.
 
-- Access to organizational apps and resources from any Windows device
+:::image type="content" source="../media/azure-active-directory-joined-device-087ba716.png" alt-text="Azure AD joined devices.":::
 
-- Cloud-based management of work-owned devices
-
-- Users to sign in to their devices with their Azure AD or synced Active Directory work or school accounts.
-
-    > [!div class="mx-imgBorder"]
-    > ![Azure AD joined devices.](../media/azure-active-directory-joined-device.png)
 
 Azure AD Join can be deployed by using a number of different methods.
 
@@ -98,37 +282,130 @@ Azure AD Join can be deployed by using a number of different methods.
 
 For more than a decade, many organizations have used the domain join to their on-premises Active Directory to enable:
 
-- IT departments to manage work-owned devices from a central location.
-
-- Users to sign in to their devices with their Active Directory work or school accounts.
+ -  IT departments to manage work-owned devices from a central location.
+ -  Users to sign in to their devices with their Active Directory work or school accounts.
 
 Typically, organizations with an on-premises footprint rely on imaging methods to provision devices, and they often use **Configuration Manager** or **group policy (GP)** to manage them.
 
 If your environment has an on-premises AD footprint and you also want benefit from the capabilities provided by Azure Active Directory, you can implement hybrid Azure AD joined devices. These devices are devices that are joined to your on-premises Active Directory and registered with your Azure Active Directory.
 
-| **Hybrid Azure AD joined**| **Description**|
-| :--- | :--- |
-| Definition| Joined to on-premises AD and Azure AD requiring organizational account to sign in to the device|
-| Primary audience| <ul><li>Suitable for hybrid organizations with existing on-premises AD infrastructure</li> <li>Applicable to all users in an organization</li></ul>|
-| Device ownership| Organization|
-| Operating systems| <ul><li>Windows 10, 8.1 and 7</li> <li>Windows Server 2008/R2, 2012/R2, 2016 and 2019</li></ul>|
-| Provisioning| <ul><li>Windows 10, Windows Server 2016/2019</li> <li>Domain join by IT and autojoin via Azure AD Connect or ADFS config</li> <li>Domain join by Windows Autopilot and autojoin via Azure AD Connect or ADFS config</li> <li>Windows 8.1, Windows 7, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2 - Require MSI</li></ul>|
-| Device sign in options| <ul><li>Organizational accounts using:</li> <li>--Password</li> <li>--Windows Hello for Business for Win10</li></ul>|
-| Device management| <ul><li>Group Policy</li> <li>Configuration Manager standalone or co-management with Microsoft Intune</li></ul>|
-| Key capabilities| <ul><li>SSO to both cloud and on-premises resources</li> <li>Conditional Access through Domain join or through Intune if co-managed</li> <li>Self-service Password Reset and Windows Hello PIN reset on lock screen</li> <li>Enterprise State Roaming across devices</li></ul>|
+:::row:::
+  :::column:::
+    **Hybrid Azure AD joined**
+  :::column-end:::
+  :::column:::
+    **Description**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Definition
+  :::column-end:::
+  :::column:::
+    Joined to on-premises AD and Azure AD requiring organizational account to sign in to the device
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Primary audience
+  :::column-end:::
+  :::column:::
+    
 
-> [!div class="mx-imgBorder"]
-> ![Hybrid Azure AD joined devices.](../media/azure-active-directory-hybrid-joined-device.png)
+ -  Suitable for hybrid organizations with existing on-premises AD infrastructure
+ -  Applicable to all users in an organization
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Device ownership
+  :::column-end:::
+  :::column:::
+    Organization
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Operating systems
+  :::column-end:::
+  :::column:::
+    
+
+ -  Windows 10, 8.1 and 7
+ -  Windows Server 2008/R2, 2012/R2, 2016 and 2019
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Provisioning
+  :::column-end:::
+  :::column:::
+    
+
+ -  Windows 10, Windows Server 2016/2019
+ -  Domain join by IT and autojoin via Azure AD Connect or ADFS config
+ -  Domain join by Windows Autopilot and autojoin via Azure AD Connect or ADFS config
+ -  Windows 8.1, Windows 7, Windows Server 2012 R2, Windows Server 2012, and Windows Server 2008 R2 - Require MSI
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Device sign in options
+  :::column-end:::
+  :::column:::
+    
+
+ -  Organizational accounts using:
+ -  \--Password
+ -  \--Windows Hello for Business for Win10
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Device management
+  :::column-end:::
+  :::column:::
+    
+
+ -  Group Policy
+ -  Configuration Manager standalone or co-management with Microsoft Intune
+
+
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Key capabilities
+  :::column-end:::
+  :::column:::
+    
+
+ -  SSO to both cloud and on-premises resources
+ -  Conditional Access through Domain join or through Intune if co-managed
+ -  Self-service Password Reset and Windows Hello PIN reset on lock screen
+ -  Enterprise State Roaming across devices
+
+
+  :::column-end:::
+:::row-end:::
+
+
+:::image type="content" source="../media/azure-active-directory-hybrid-joined-device-f39879a9.png" alt-text="Hybrid Azure AD joined devices.":::
+
 
 ### Scenarios
 
 Use Azure AD hybrid joined devices if:
 
-- You have Win32 apps deployed to these devices that rely on Active Directory machine authentication.
-
-- You want to continue to use Group Policy to manage device configuration.
-
-- You want to continue to use existing imaging solutions to deploy and configure devices.
-
-- You must support down-level Windows 7 and 8.1 devices in addition to Windows 10.
-
+ -  You have Win32 apps deployed to these devices that rely on Active Directory machine authentication.
+ -  You want to continue to use Group Policy to manage device configuration.
+ -  You want to continue to use existing imaging solutions to deploy and configure devices.
+ -  You must support down-level Windows 7 and 8.1 devices in addition to Windows 10.

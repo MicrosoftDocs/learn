@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-write-data-azure-databricks.read-data-parquet-format
+title: Read data in Parquet format
+metadata:
+  title: Read data in Parquet format
+  description: "Read data in Parquet format"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-read-data-parquet-format.md)]

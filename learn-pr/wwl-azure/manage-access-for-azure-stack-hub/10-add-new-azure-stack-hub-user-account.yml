@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-access-for-azure-stack-hub.add-new-user-account-aad
+title: Add a new Azure Stack Hub user account in AAD
+metadata:
+  title: Add a new Azure Stack Hub user account in AAD
+  description: "Add a new Azure Stack Hub user account in AAD"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/10-add-new-azure-stack-hub-user-account.md)]

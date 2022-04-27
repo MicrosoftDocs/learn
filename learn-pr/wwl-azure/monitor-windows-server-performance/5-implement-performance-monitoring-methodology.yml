@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-performance.implement-performance-monitoring-methodology
+title: Implement a performance monitoring methodology
+metadata:
+  title: Implement a performance monitoring methodology
+  description: "Implement a performance monitoring methodology"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-implement-performance-monitoring-methodology.md)]

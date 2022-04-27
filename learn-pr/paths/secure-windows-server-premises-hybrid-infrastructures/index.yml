@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.wwl.secure-windows-server-premises-hybrid-infrastructures
+metadata:
+  title: Secure Windows Server on-premises and hybrid infrastructures
+  description: Secure Windows Server on-premises and hybrid infrastructures
+  ms.date: 03/28/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure Windows Server on-premises and hybrid infrastructures
+prerequisites: |
+  *   Experience with managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS, DNS, DFS, Hyper-V, and File and Storage Services.
+  *   Basic experience with implementing and managing IaaS services in Microsoft Azure.
+  *   Basic knowledge of Azure Active Directory.
+  *   Basic understanding security-related technologies (firewalls, encryption, multi-factor authentication, SIEM/SOAR).
+  *   Basic knowledge of PowerShell scripting.
+summary: |
+  Learn to secure your on-premises Windows Server resources and your Azure IaaS workloads. Determine if those resources have any security vulnerabilities, and remediate those potential security vulnerabilities.
+iconUrl: /learn/achievements/secure-windows-server-on-premises-and-hybrid-infrastructures.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-active-directory
+- windows-server
+modules:
+- learn.wwl.implement-windows-server-iaas-vm-network-security
+- learn.wwl.audit-security-of-windows-server-iaas-vms
+- learn.wwl.manage-azure-updates
+- learn.wwl.create-implement-application-allowlists-with-adaptive-application-control
+- learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms
+- learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms
+- learn.wwl.secure-windows-server-dns
+- learn.wwl.secure-windows-server-user-accounts
+- learn.wwl.hardening-windows-server
+- learn.wwl.windows-server-update-management
+trophy:
+  uid: learn.wwl.secure-windows-server-premises-hybrid-infrastructures.trophy

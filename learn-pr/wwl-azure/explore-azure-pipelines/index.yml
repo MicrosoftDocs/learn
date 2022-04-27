@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.explore-azure-pipelines
+metadata:
+  title: Explore Azure Pipelines
+  description: "Explore Azure Pipelines"
+  ms.date: 03/21/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore Azure Pipelines
+summary: This module introduces Azure Pipelines concepts and explains key terms and components of the tool, helping you decide your pipeline strategy and responsibilities.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe Azure Pipelines
+  - Explain the role of Azure Pipelines and its components
+  - Decide Pipeline automation responsibility
+  - Understand Azure Pipeline key terms
+prerequisites: ""
+iconUrl: /learn/achievements/1-explore-azure-pipelines.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.explore-azure-pipelines.introduction
+- learn.wwl.explore-azure-pipelines.explore-concept-of-pipelines-devops
+- learn.wwl.explore-azure-pipelines.describe-azure-pipelines
+- learn.wwl.explore-azure-pipelines.understand-key-terms
+- learn.wwl.explore-azure-pipelines.knowledge-check
+- learn.wwl.explore-azure-pipelines.summary
+badge:
+  uid: learn.wwl.explore-azure-pipelines.badge

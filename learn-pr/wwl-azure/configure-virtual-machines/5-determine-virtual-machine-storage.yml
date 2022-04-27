@@ -4,12 +4,13 @@ title: Determine virtual machine storage
 metadata:
   title: Determine virtual machine storage
   description: "Determine virtual machine storage"
-  ms.date: 07/28/2021
+  ms.date: 12/13/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-determine-virtual-machine-storage.md)]

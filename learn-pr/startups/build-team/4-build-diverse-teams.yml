@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.build-team.build-diverse-teams
+title: Build diverse teams
+metadata:
+  title: Build diverse teams
+  description: Find out how inclusive hiring can give your startup an advantage. Learn practical tips for building a diverse team.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-build-diverse-teams.md)]

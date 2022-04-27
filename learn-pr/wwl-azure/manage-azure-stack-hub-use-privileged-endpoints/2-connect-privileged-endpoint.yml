@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.connect-to-privileged-endpoint
+title: Connect to a privileged endpoint
+metadata:
+  title: Connect to a privileged endpoint
+  description: "Connect to a privileged endpoint"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-connect-privileged-endpoint.md)]

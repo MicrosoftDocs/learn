@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-apps-app-service.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of these statements best describes autoscaling?"
+    choices:
+    - content: "Autoscaling requires an administrator to actively monitor the workload on a system."
+      isCorrect: false
+      explanation: "That's incorrect. Autoscaling is an automated process that doesn't require manual intervention."
+    - content: "Autoscaling is a scale out/scale in solution."
+      isCorrect: true
+      explanation: "That's correct. The system can scale out when specified resource metrics indicate increasing usage, and scale in when these metrics drop."
+    - content: "Scaling up/scale down provides better availability than autoscaling."
+      isCorrect: false
+      explanation: "That's incorrect. Autoscaling increases availability by adding more instances of services. If one of these instances fails, the others should still be available."
+  - content: "Which of these scenarios is a suitable candidate for autoscaling?"
+    choices:
+    - content: "The number of users requiring access to an application varies according to a regular schedule. For example, more users use the system on a Friday than other days of the week."
+      isCorrect: true
+      explanation: "That's correct. Changes in application load that are predictable are good candidates for autoscaling."
+    - content: "The system is subject to a sudden influx of requests that grinds your system to a halt."
+      isCorrect: false
+      explanation: "That's incorrect. The increasing burst of activity could be caused by a Denial of Service attack that is attempting to overwhelm your system. Autoscaling wouldn't solve the problem."
+    - content: "Your organization is running a promotion and expects to see increased traffic to their web site for the next couple of weeks."
+      isCorrect: false
+      explanation: "That's incorrect. Manual scaling is a better option here since this is a one-off event with a known duration."
+  - content: "There are multiple rules in an autoscale profile. Which of the following scale operations will run if any of the rule conditions are met?"
+    choices:
+    - content: "scale-out"
+      isCorrect: true
+      explanation: "That's correct. Scale-out operations will trigger if any of the rule conditions are met."
+    - content: "scale-in"
+      isCorrect: false
+      explanation: "That's incorrect. Scale-in operations will only trigger if all of the rule conditions are met."
+    - content: "scale-out/in"
+      isCorrect: false
+      explanation: "That's incorrect. These are two scale operations each with different sets of rules and threshold requirements."

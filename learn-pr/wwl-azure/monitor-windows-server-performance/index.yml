@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-windows-server-performance
+metadata:
+  title: Monitor Windows Server performance
+  description: "Learn to use a range of Windows Server tools to monitor the operating system and applications on a server computer. You'll also learn to configure your system to optimize efficiency and to troubleshoot problems."
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor Windows Server performance
+summary: Learn to use a range of Windows Server tools to monitor the operating system and applications on a server computer. You'll also learn to configure your system to optimize efficiency and to troubleshoot problems.
+abstract: |
+  After completing this module, you will be able to:
+  - Use built-in tools in Windows Server to monitor server performance
+  - Understand the fundamentals of server performance tuning
+prerequisites: |
+  - Working knowledge of common Windows Server management tools
+  - Some experience managing typical Windows Server workloads
+  - Familiarity with basic PowerShell commands and syntax
+iconUrl: /learn/achievements/4-monitor-windows-server-performance.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+units:
+- learn.wwl.monitor-windows-server-performance.introduction
+- learn.wwl.monitor-windows-server-performance.use-performance-monitor-to-identify-performance-problems
+- learn.wwl.monitor-windows-server-performance.use-resource-monitor-to-review-current-resource-usage
+- learn.wwl.monitor-windows-server-performance.review-reliability-reliability-monitor
+- learn.wwl.monitor-windows-server-performance.implement-performance-monitoring-methodology
+- learn.wwl.monitor-windows-server-performance.use-data-collector-sets-to-analyze
+- learn.wwl.monitor-windows-server-performance.monitor-network-infrastructure-services
+- learn.wwl.monitor-windows-server-performance.monitor-virtual-machines-running
+- learn.wwl.monitor-windows-server-performance.monitor-performance-windows-admin-center
+- learn.wwl.monitor-windows-server-performance.use-system-insights-to-help-predict-future-capacity-issues
+- learn.wwl.monitor-windows-server-performance.optimize-performance-of
+- learn.wwl.monitor-windows-server-performance.knowledge-check
+- learn.wwl.monitor-windows-server-performance.summary-resources
+badge:
+  uid: learn.wwl.monitor-windows-server-performance.badge

@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-access.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "For an Azure Virtual Desktop session host with virtual machines (VMs), how is a group of users allowed access to the VMs?"
+    choices:
+    - content: "Assign a role"
+      isCorrect: true
+      explanation: "That's correct. Azure Virtual Desktop has a delegated access model that lets you define the amount of access a user can have by assigning them a role. A role assignment has three components: security principal, role definition, and scope. The Azure Virtual Desktop delegated access model is based on the Azure RBAC model."
+    - content: "Assign the the Desktop Virtualization Reader role to the group."
+      isCorrect: false
+      explanation: "That's incorrect. The Desktop Virtualization Reader role lets you view everything in the deployment but doesn't let you make any changes."
+    - content: "Create a Conditional Access policy"
+      isCorrect: false
+      explanation: "That's incorrect. a Conditional Access policy is an if-then statement, of Assignments and Access controls. A Conditional Access policy brings signals together, to make decisions, and enforce organizational policies."
+  - content: "What role should be assigned to allow a user to manage all aspects of Azure Virtual Desktop host pools, including access to resources?"
+    choices:
+    - content: "Application Group Reader"
+      isCorrect: false
+      explanation: "That's incorrect. The Application Group Reader role lets you view everything in the app group and will not allow you to make any changes."
+    - content: "Host Pool Contributor"
+      isCorrect: true
+      explanation: "That's correct. The Host Pool Contributor role lets you manage all aspects of host pools, including access to resources."
+    - content: "Workspace Contributor"
+      isCorrect: false
+      explanation: "That's incorrect. The Workspace Contributor role lets you manage all aspects of workspaces. To get information on applications added to the app groups, you'll also need to be assigned the Application Group Reader role."

@@ -4,12 +4,13 @@ title: Create an app service
 metadata:
   title: Create an app service
   description: "Create an app service"
-  ms.date: 07/26/2021
+  ms.date: 11/03/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-create-app-service.md)]

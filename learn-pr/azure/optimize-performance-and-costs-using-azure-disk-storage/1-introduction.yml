@@ -3,10 +3,10 @@ uid: learn.azure.optimize-performance-and-costs-using-azure-disk-storage.introdu
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to Azure Disk Storage solutions for optimizing performance and costs. 
+  description: Introduction to Azure Disk Storage solutions for optimizing performance and costs.
   ms.date: 06/25/2021
-  author: ndelgado
-  ms.author: nedelgad
+  author: roygara
+  ms.author: rogarana
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

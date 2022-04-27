@@ -165,7 +165,7 @@ Identify the subtasks of *Authenticate apps to Azure services with service princ
 - <https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-api-authentication>
 - <https://docs.microsoft.com/powershell/azure/create-azure-service-principal-azureps?view=azps-1.6.0>
 - <https://azure.microsoft.com/resources/samples/aad-dotnet-manage-service-principals/>
-- <https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest>
+- <https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli>
 - <https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals#overview>
 - <https://docs.microsoft.com/azure/data-lake-store/data-lake-store-service-to-service-authenticate-net-sdk>
 - <https://docs.microsoft.com/azure/key-vault/service-to-service-authentication#running-the-application-using-managed-identity-or-user-assigned-identity>

@@ -1,0 +1,13 @@
+stages:
+
+- stage: Test
+  jobs:
+  - job: Test
+
+- stage: DeployUS
+  jobs: 
+  - job: DeployUS
+
+- stage: DeployEurope
+  jobs: 
+  - job: DeployEurope

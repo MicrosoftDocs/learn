@@ -3,13 +3,13 @@ uid: learn.wwl.analyze-results-kql
 metadata:
   title: Analyze query results using KQL
   description: "Analyze query results using KQL"
-  ms.date: 04/22/2021
+  ms.date: 04/26/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Analyze query results using KQL
-summary: Learn how to summarize and visualize data with a KQL statement provides the foundation to build detections in Azure Sentinel.
+summary: Learn how to summarize and visualize data with a KQL statement provides the foundation to build detections in Microsoft Sentinel.
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Summarize data using KQL statements

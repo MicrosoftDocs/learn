@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-cloud-services-tutorials-mrtk.12-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 09/13/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: Choose the best response for each question. Then select Check your answers.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What are the different types of services provided by the cloud?"
+      choices:
+        - content: "PaaS"
+          isCorrect: false
+          explanation: Platform as a service (PaaS) is a cloud computing model where a third-party provider delivers hardware and software tools to users over the internet.
+        - content: "IaaS"
+          isCorrect: false
+          explanation: Infrastructure as a service (IaaS) is a type of cloud computing service that offers essential compute, storage and networking resources on demand, on a pay-as-you-go basis.
+        - content: "All of the above"
+          isCorrect: true
+          explanation: Includes both PaaS and IaaS
+    - content: "Which of the following element is a non-relational storage system for large-scale storage?"
+      choices:
+        - content: "Application"
+          isCorrect: false
+          explanation: An application program is a computer program designed to carry out a specific task other than one relating to the operation of the computer itself, typically to be used by end-users.
+        - content: "Compute"
+          isCorrect: false
+          explanation: Compute, in modern computing, refers to activities, applications or workloads that require more processing resources than its memory or I/O resource requirements.
+        - content: "Storage"
+          isCorrect: true
+          explanation: Azure Storage Service lets you create drives, manage queues, and store BLOBs.
+    - content: "Which Azure Service helps developers to create intelligent bots that can maintain natural conversation with users?"
+      choices:
+        - content: "Azure Spatial Anchors"
+          isCorrect: false
+          explanation: Azure Spatial Anchors empowers developers with essential capabilities to build spatially aware mixed reality applications. 
+        - content: " Azure Bot Service"
+          isCorrect: true
+          explanation: Bot Framework Composer, built on the Bot Framework SDK, is an open-source IDE for developers to author, test, provision, and manage conversational experiences. 
+        - content: "Azure Cloud Service"
+          isCorrect: false
+          explanation: Azure Cloud Services is an example of a platform as a service (PaaS). Like Azure App Service, this technology is designed to support applications that are scalable, reliable, and inexpensive to operate.
+        
+   

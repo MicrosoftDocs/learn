@@ -3,35 +3,42 @@ uid: learn.wwl.explore-core-data-concepts
 metadata:
   title: Explore core data concepts
   description: "Explore core data concepts"
-  ms.date: 06/08/2021
+  ms.date: 03/25/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore core data concepts
-summary: Discover how you can organize and process data, explore relational and non-relational databases, and discover how you can process data in batches or using streams.
+summary: Data powers the digital transformation that is sweeping across organizations and society in general. But what is &quot;data&quot;, and how is it represented and used?
 abstract: |
-  In this module, you will:
-  * Identify how data is defined and stored
-  * Identify characteristics of relational and non-relational data
-  * Describe and differentiate data workloads
-  * Describe and differentiate batch and streaming data
+  In this module you will learn how to:
+  - Identify common data formats
+  - Describe options for storing data in files
+  - Describe options for storing data in databases
+  - Describe characteristics of transactional data processing solutions
+  - Describe characteristics of analytical data processing solutions
 prerequisites: |
   None
 iconUrl: /learn/achievements/explore-core-data-concepts.svg
 levels:
 - beginner
 roles:
-- administrator
 - business-user
+- data-analyst
 - data-engineer
+- database-administrator
+- developer
+- solution-architect
+- student
 products:
 - azure
 units:
 - learn.wwl.explore-core-data-concepts.introduction
-- learn.wwl.explore-core-data-concepts.identify-need-for-data-solutions
-- learn.wwl.explore-core-data-concepts.identify-types-of-data-data-storage
-- learn.wwl.explore-core-data-concepts.describe-difference-between-batch-streaming-data
+- learn.wwl.explore-core-data-concepts.identify-data-formats
+- learn.wwl.explore-core-data-concepts.explore-file-storage
+- learn.wwl.explore-core-data-concepts.explore-databases
+- learn.wwl.explore-core-data-concepts.transactional-data-processing
+- learn.wwl.explore-core-data-concepts.analytical-data-processing
 - learn.wwl.explore-core-data-concepts.knowledge-check
 - learn.wwl.explore-core-data-concepts.summary
 badge:

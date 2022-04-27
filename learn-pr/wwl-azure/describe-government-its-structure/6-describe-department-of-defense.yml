@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-government-its-structure.describe-department-of-defense-dod
+title: Describe the Department of Defense (DOD)
+metadata:
+  title: Describe the Department of Defense (DOD)
+  description: "Describe the Department of Defense (DOD)"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-describe-department-of-defense.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.datacenter-integration-for-azure-stack-hub.license-model
+title: Licensing model
+metadata:
+  title: Licensing model
+  description: "Licensing model"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-license-model.md)]

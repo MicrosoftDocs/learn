@@ -4,11 +4,12 @@ metadata:
   title: Introduction to version control with Git
   description: Git is the leading version control tool, and it's essential for developers. Learn how to use Git to track your own changes and collaborate with others.
   brand: azure
-  ms.date: 03/16/2021
+  ms.date: 10/08/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Introduction to version control with Git
 summary: Git is the leading version control tool, and it's essential for developers. Learn how to use Git to track your own changes and collaborate with others.
 prerequisites: None
@@ -22,6 +23,7 @@ products:
 - github
 modules:
 - learn.student-evangelism.introduction-to-git
+- learn.create-git-project
 - learn.student-evangelism.collaborate-with-git
 - learn.student-evangelism.branch-merge-git
 trophy:

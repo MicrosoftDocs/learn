@@ -3,11 +3,12 @@ uid: learn.student-evangelism.install-code-tools-python-nasa.2-about-programming
 metadata:
   title: Understand what defines a programming language
   description: Learn what a programming language is.
-  ms.date: 06/09/2021
-  author: drguthals
-  ms.author: sguthals
+  ms.date: 03/28/2022
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen, devdivchpfy22 
 title: Understand what defines a programming language
 durationInMinutes: 2
 content: |

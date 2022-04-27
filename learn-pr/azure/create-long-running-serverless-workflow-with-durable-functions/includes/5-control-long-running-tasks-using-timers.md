@@ -2,7 +2,7 @@ When you are working with a long-running workflow, it is important to consider s
 
 In the example scenario, you've been asked to amend your new workflow to incorporate an escalation step to take action if a project design proposal isn't approved in a timely fashion.
 
-In this unit you'll learn how to control long running tasks using durable timers, and how to add an escalation path based on the timer.
+In this unit, you'll learn how to control long running tasks using durable timers, and how to add an escalation path based on the timer.
 
 ## Timers in Durable Functions
 
@@ -57,4 +57,4 @@ module.exports = df.orchestrator(function*(context) {
 });
 ```
 
-In the following exercise, you'll use this information to add an escalation path to our sample scenario in the orchestrator function. 
+In the next exercise, you'll use this information to add an escalation path to our sample scenario in the orchestrator function. 

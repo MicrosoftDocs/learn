@@ -5,7 +5,7 @@ In this unit, you'll learn how to create the code for your web application, and 
 Now that you created the resources for deploying your web application, you have to prepare the code you want to deploy. There are many ways to bootstrap a new web application, so what we'll see here may be different to what you're used to. The goal is to quickly provide you a starting point to complete a full cycle up to the deployment.
 
 > [!NOTE]
-> All the code and commands shown on this page are only for explanation purpose, you do not need to execute any of them. We'll do this in the next exercise.
+> All the code and commands shown on this page are only for explanation purposes, **you do not need to execute any of them**. We'll use them in a subsequent exercise.
 
 ::: zone pivot="csharp"
 

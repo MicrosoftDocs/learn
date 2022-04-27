@@ -84,4 +84,4 @@ The following video demonstrates how to deploy Windows Server by using WDS. The 
     - In the boot image section, verify **Microsoft Windows Setup (x64)** is selected.
     - Review the multicast settings.
 
- >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4McIa]
+ >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McIa]

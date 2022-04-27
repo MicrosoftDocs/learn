@@ -12,8 +12,6 @@ Now that you have reviewed this module, you should be able to:
 
 Learn [how AI is helping businesses boost their team collaborations](https://info.microsoft.com/ww-landing-augment-the-employee-experience-website.html) and motivating employees to strengthen their existing skills, Check out this [e-book](https://info.microsoft.com/ww-landing-aI-basics-for-business-eBook.html) for an introduction to AI and tips on how to implement intelligent technologies and to learn even more about transforming your organization with AI, read our [whitepaper on Microsoft’s vision for AI in action the enterprise](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CKw1).
 
-Azure Machine Learning and Cortana Intelligence Suite enable analysts at Microsoft to make [financial forecasts faster](https://www.microsoft.com/itshowcase/Article/Content/771/Using-predictive-analytics-to-improve-financial-forecasting). New predictive analytics tools allow us to analyze larger data sets and do more sophisticated calculations, which frees financial analysts to do more interesting, profitable, and creative work.
-
 [See how Microsoft uses blockchain](https://customers.microsoft.com/story/microsoft-financial-operations-professional-services-azure) to deliver royalty statement to Xbox game publishers faster with significant efforts reduction.
 
 Explore [Anomaly Detection API](/azure/machine-learning/team-data-science-process/apps-anomaly-detection-api) is an example built with Azure Machine Learning that detects anomalies in time series data with numerical values that are uniformly spaced in time.

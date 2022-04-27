@@ -24,9 +24,10 @@ The IntelliSense features are at different levels of maturity for different lang
 |Languages| Syntax Highlight | Syntax Error Marker  | Syntax Code Completion | Variable Code Completion| System Function Code Completion| User Function Code Completion| Smart Indent | Code Folding|
 |--|--|--|--|--|--|--|--|--|
 |PySpark (Python)|Yes|Yes|Yes|Yes|Yes|Yes|Yes|Yes|
-|Spark (Scala)|Yes|Yes|Yes|Yes|-|-|-|Yes|
-|SparkSQL|Yes|Yes|-|-|-|-|-|-|
-|.NET for Spark (C#)|Yes|-|-|-|-|-|-|-|
+|Spark (Scala)|Yes|Yes|Yes|Yes|Yes|Yes|-|Yes|
+|SparkSQL|Yes|Yes|Yes|Yes|Yes|-|-|-|
+|.NET for Spark (C#)|Yes|Yes|Yes|Yes|Yes|Yes|Yes|Yes|
+
 
 
 

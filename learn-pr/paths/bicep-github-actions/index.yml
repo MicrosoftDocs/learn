@@ -1,0 +1,49 @@
+### YamlMime:LearningPath
+uid: learn.bicep-github-actions
+metadata:
+  title: Deploy Azure resources by using Bicep and GitHub Actions
+  description: Learn how to use GitHub Actions to deploy your Bicep code in an automated way.
+  brand: azure
+  ms.date: 03/30/2022
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy Azure resources by using Bicep and GitHub Actions
+summary: | 
+  Gain all of the benefits of infrastructure as code by using an automated workflow to deploy your Bicep templates, 
+  and integrate other deployment activities with your workflows. You'll build workflows using GitHub Actions.
+
+  Take this learning path to learn how to:
+
+  * Build a workflow that deploys your Bicep files.
+  * Create a service principal that can securely connect your workflow to Azure.
+  * Ensure your Bicep code quality by validating and testing it within your workflow.
+  * Work with multiple environments, and handle parameters and approvals.
+  * Deploy other Azure configuration settings, applications, and databases.
+  * Use pull requests to automatically validate and deploy your Bicep code as part of your review process.
+  * Build workflows that publish reusable Bicep files to template specs and modules.
+
+  [!include[](../../includes/bicep-paths.md)]
+prerequisites: |
+  This learning path assumes you have familiarity with deploying infrastructure using Bicep.
+iconUrl: /learn/achievements/bicep/bicep-github-actions.svg
+levels:
+- intermediate
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+- azure-resource-manager
+modules:
+- learn.azure.build-first-bicep-deployment-workflow-using-github-actions
+- learn.azure.authenticate-azure-deployment-pipeline-service-principals
+- learn.azure.test-bicep-code-using-github-actions
+- learn.azure.manage-multiple-environments-using-bicep-github-actions
+- learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions
+- learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github
+- learn.azure.publish-reusable-bicep-code-using-github-actions
+trophy:
+  uid: learn.bicep-pipelines-github-actions.trophy

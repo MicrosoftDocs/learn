@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Deploy an Azure Functions app to Azure
   description: Extend the CI/CD pipeline to build and deploy an Azure Functions app.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

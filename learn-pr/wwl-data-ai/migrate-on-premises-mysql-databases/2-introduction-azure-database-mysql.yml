@@ -4,12 +4,13 @@ title: Introduction to Azure Database for MySQL
 metadata:
   title: Introduction to Azure Database for MySQL
   description: "Introduction to Azure Database for MySQL"
-  ms.date: 02/01/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 14
 content: |
   [!include[](includes/2-introduction-azure-database-mysql.md)]

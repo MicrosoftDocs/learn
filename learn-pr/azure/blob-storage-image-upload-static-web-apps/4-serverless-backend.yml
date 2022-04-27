@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.blob-storage-image-upload-static-web-apps.serverless-backend
+title: Describe the serverless backend
+metadata:
+  title: Describe the serverless backend
+  description: Describe how to generate shared access signatures from a serverless backend
+  author: videlalvaro
+  ms.author: alvidela
+  ms.date: 11/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: alvidela-11122021
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-serverless-backend.md)]

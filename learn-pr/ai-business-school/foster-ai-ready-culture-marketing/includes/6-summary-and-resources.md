@@ -12,8 +12,6 @@ Now that you have reviewed this module, you should be able to:
 
 Learn [how AI is helping businesses boost their team collaborations](https://info.microsoft.com/ww-landing-augment-the-employee-experience-website.html) and motivating employees to strengthen their existing skills, Check out this [e-book](https://info.microsoft.com/ww-landing-aI-basics-for-business-eBook.html) for an introduction to AI and tips on how to implement intelligent technologies and to learn even more about transforming your organization with AI, read our [whitepaper on Microsoft’s vision for AI in action the enterprise](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CKw1).
 
-[Explore how Microsoft weeds out fake marketing leads](https://www.microsoft.com/en-us/itshowcase/microsoft-weeds-out-fake-marketing-leads-with-naive-bayes-and-machine-learning-server) with Naïve Bayes and Machine Learning Server
-
 * [Download PDF](https://aka.ms/AIBSCULTMKTCONDWL) of the case study introduction to share with others.
 * [Download PDF](https://aka.ms/AIBSCULTMKTRESDWL)  of the case study resolution to share with others.
 

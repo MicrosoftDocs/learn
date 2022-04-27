@@ -1,57 +1,85 @@
-Use the Action center to see the results of current and past investigations across your organization's devices and mailboxes. Depending on the type of threat and resulting verdict, remediation actions can occur automatically or upon approval by your organization's security operations team. All remediation actions, whether they are pending approval or already approved, are consolidated in the Action center.
+The unified Action center of the Microsoft 365 Defender portal lists pending and completed remediation actions for your devices, email & collaboration content, and identities in one location.
 
-The Action center provides a "single pane of glass" experience for tasks, such as:
+The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions and provides a unified investigation experience. Your security operations team has a "single pane of glass" experience to view and manage remediation actions.
 
-- Approving pending remediation actions;
+The Action Center consists of pending and historical items:
 
-- Viewing an audit log of already approved remediation actions; and
+- **Pending** displays a list of ongoing investigations that require attention. Recommended actions are presented that your security operations team can approve or reject. The Pending tab appears only if there are pending actions to be approved (or rejected).
 
-- Reviewing completed remediation actions.
+- **History** as an audit log for all of the following items:
 
-Your security operations team can operate more effectively and efficiently because the Action center provides a comprehensive view of Microsoft 365 Defender at work.
+  - Remediation actions that were taken as a result of an automated investigation
 
-In the Action center, you'll see two tabs: Pending and History.
+  - Remediation actions that were approved by your security operations team (some actions, such as sending a file to quarantine, can be undone)
 
-- The **Pending** tab lists investigations that require review and approval by someone in your security operations team to continue. Make sure to review and take action on pending items you see here.
+  - Commands that were run and remediation actions that were applied in Live Response sessions (some actions can be undone)
 
-- The **History** tab lists past investigations and remediation actions that were taken automatically. You can view data for the past day, week, month, or six months.
+  - Remediation actions that were applied by Microsoft Defender Antivirus (some actions can be undone)
 
-Select an item in the list to view more details about an investigation. The investigation details view opens.
+Select Automated Investigations, then Action center.
 
-## Available actions
+[ ![Action center.](../media/action-center.png) ](../media/action-center.png#lightbox)
 
-As remediation actions are taken, they're listed on the History tab in the Action center. Such actions include the following:
+When an automated investigation runs, a verdict is generated for each piece of evidence investigated. Verdicts can be Malicious, Suspicious, or No threats found depending on:
 
-- Collect investigation package
+- Type of threat
 
-- Isolate device (this action can be undone)
+- Resulting verdict
 
-- Offboard machine
+- How your organization's device groups are configured
 
-- Release code execution
+Remediation actions can occur automatically or only upon approval by your organization’s security operations team.
 
-- Release from quarantine
+### Review pending actions
 
-- Request sample
+To approve or reject a pending action:
 
-- Restrict code execution (this action can be undone)
+- Select any item on the Pending tab.
 
-- Run antivirus scan
+- Select an investigation from any of the categories to open a panel where you can approve or reject remediation actions.
 
-- Stop and quarantine
+Other details, such as file or service details, investigation details, and alert details are displayed. From the panel, you can select the Open investigation page link to see the investigation details. You can also select multiple investigations to approve or reject actions on multiple investigations.
 
-## Action source
+### Review completed actions
 
-The following table describes possible Action source values:
+To review completed actions:
 
-| Action source value| Description|
-| :--- | :--- |
-| Manual device action| A manual action taken on a device. Examples include device isolation or file quarantine.|
-| Manual email action| A manual action taken on email. An example includes soft-deleting email messages or remediating an email message.|
-| Automated device action| An automated action taken on an entity, such as a file or process. Examples of automated actions include sending a file to quarantine, stopping a process, and removing a registry key. (See Remediation actions in Microsoft Defender for Endpoint.)|
-| Automated email action| An automated action taken on email content, such as an email message, attachment, or URL. Examples of automated actions include soft-deleting email messages, blocking URLs, and turning off external mail forwarding. (See Remediation actions in Microsoft Defender for Office 365.)|
-| Advanced hunting action| Actions taken on devices or email with advanced hunting.|
-| Explorer action| Actions taken on email content with Explorer.|
-| Manual live response action| Actions taken on a device with live response. Examples include deleting a file, stopping a process, and removing a scheduled task.|
-| Live response action| Actions taken on a device with Microsoft Defender for Endpoint APIs. Examples of actions include isolating a device, running an antivirus scan, and getting information about a file.|
+- Select the History tab. (If need be, expand the time period to display more data.)
 
+- Select an item to view more details about that remediation action.
+
+### Undo completed actions
+
+If you’ve determined that a device or a file is not a threat, you can undo remediation actions that were taken, whether those actions were taken automatically or manually. You can undo any of the following actions:
+
+- Source
+
+  - Automated investigation
+
+  - Microsoft Defender Antivirus
+
+  - Manual response actions
+
+- Supported Actions
+
+  - Isolate device
+
+  - Restrict code execution
+
+  - Quarantine a file
+
+  - Remove a registry key
+
+  - Stop a service
+
+  - Disable a driver
+
+  - Remove a scheduled task
+
+### Remove a file from quarantine across multiple devices
+
+To remove a file from quartile across multiple devices:
+
+- On the History tab, select a file that has the Action type Quarantine file.
+
+- In the pane on the right side of the screen, select Apply to X more instances of this file, and then select Undo.

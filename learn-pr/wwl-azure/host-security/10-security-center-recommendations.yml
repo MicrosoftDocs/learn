@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.host-security.security-center-recommendations
+title: Explore Microsoft Defender for Cloud recommendations
+metadata:
+  title: Explore Microsoft Defender for Cloud recommendations
+  description: "Explore Microsoft Defender for Cloud recommendations"
+  ms.date: 04/12/2022
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/10-security-center-recommendations.md)]

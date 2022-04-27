@@ -4,12 +4,13 @@ title: Azure subscriptions and management groups
 metadata:
   title: Azure subscriptions and management groups
   description: "In this unit, you'll learn about Azure subscriptions and management groups."
-  ms.date: 08/02/2021
+  ms.date: 09/28/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/5-management-groups-subscriptions.md)]
