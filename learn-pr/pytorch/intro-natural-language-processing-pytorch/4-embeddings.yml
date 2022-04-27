@@ -16,7 +16,7 @@ notebook: notebooks/4-embeddings.ipynb
 quiz:
   title: Check your knowledge
   questions:
-    - content: | 
+    - content: |
         Suppose your text corpus contains 80000 different words. What is typically done to reduce the dimensionality of input vector to neural classifier?
       choices:
         - content: "Randomly select 10% of the words and ignore the rest"
