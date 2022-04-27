@@ -28,7 +28,7 @@ To obtain the Microsoft Account ID and the External ID, in **Microsoft Purview S
 
 Obtain the **Role ARN** value from the created AWS role. You’ll need it in the next step to create an Microsoft Purview credential.
 
-:::image type="content" alt-text="The New credential pane displaying authentication method, Microsoft account ID, and external ID." source="..media/4-new-credential.png" lightbox="../media/4-new-credential.png":::
+:::image type="content" source="../media/4-new-crediential.png" alt-text="The New credential pane displaying authentication method, Microsoft account ID, and external ID." border="false":::
 
 ### Create an Microsoft Purview credential for your Amazon RDS
 
@@ -56,7 +56,7 @@ To deploy an Azure Multicloud Scanning Connector:
 
 9.  Use AWS PrivateLink to connect to the VPC where your RDS database resides.
 
-:::image type="content" alt-text="Illustration depicting use AWS PrivateLink to connect to the VPC where the RDS database resides." source="..media/4-Amazon-vpc.png" lightbox="../media/4-Amazon-vpc.png":::
+:::image type="content" source="../media/4-Amazon-vpc.png"  alt-text="Illustration depicting use AWS PrivateLink to connect to the VPC where the RDS database resides." border="false":::
 
 >[!Note]
 >*Amazon VPC* is a virtual network in an AWS account. Use Amazon VPC to configure IP addresses to use for resources within Amazon VPC. Additionally, Amazon VPC hosts other network services such as load balancers or firewalls. AWS PrivateLink provides private connectivity between VPCs, AWS services (in this case Amazon RDS), and your on-premises networks.
@@ -103,7 +103,7 @@ Once you establish a connection, you should start sourcing your data by register
 
 1. From the available sources, select either **Amazon RDS (SQL)** or **Amazon RDS (PostgreSQL)**, and then select **Continue**.
 
-    :::image type="content" alt-text="Register sources Amazon RDS (SQL) pane" source="../media/4-register-sources" lightbox="../media/4-register-sources":::
+    :::image type="content" source="../media/4-register-sources.png" alt-text="Register sources Amazon RDS (SQL) pane" border="false":::
 
 1. Provide the following information, and then select **Register**:
 
