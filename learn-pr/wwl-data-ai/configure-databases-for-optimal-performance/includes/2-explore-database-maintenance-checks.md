@@ -16,9 +16,9 @@ A rebuild can be either online or offline depending on the command executed or t
 
 The common guidance for index maintenance is:
 
-- &gt;5% but &lt;30%   Reorganize the index
+- **< 5% but < 30%** - Reorganize the index
 
-- &gt;30%  Rebuild the index
+- **`>` 30%** - Rebuild the index
 
 Use these numbers as general recommendations. Depending on your workload and data, you may need to be more assertive, or in some cases you may be able to defer index maintenance for databases that mostly perform queries that seek specific pages.
 

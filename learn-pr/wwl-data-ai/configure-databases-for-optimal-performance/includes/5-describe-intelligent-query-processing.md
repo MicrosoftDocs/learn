@@ -2,7 +2,7 @@ In SQL Server 2017 and 2019, and with Azure SQL, Microsoft has introduced many n
 
 These features break down into a few families of features:
 
-:::image type="content" source="../media/module-44-optimize-resources-final-27.png" alt-text="Automatic tuning Options":::
+:::image type="content" source="../media/module-44-optimize-resources-final-27.png" alt-text="Screenshot of Intelligent Query Processing architecture.":::
 
 Intelligent query processing includes features that improve existing workload performance with minimal implementation effort.
 

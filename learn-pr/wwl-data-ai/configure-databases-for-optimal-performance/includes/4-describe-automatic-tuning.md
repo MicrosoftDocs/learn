@@ -10,13 +10,13 @@ Whether on-premises or in the cloud, automatic tuning allows you to identify iss
 
 With the help of the Query Store data, the database engine can determine when query execution plans have regressed in performance. While you can manually identify a regressed plan through the user interface, the Query Store also provides the option to notify you automatically.
 
-:::image type="content" source="../media/module-44-optimize-resources-final-25.png" alt-text="Query Store view of Automatic Plan Correction":::
+:::image type="content" source="../media/module-44-optimize-resources-final-25.png" alt-text="Screenshot of the Query Store view for regressed plan correction.":::
 
 In the example above, you can see a check mark on **Plan ID 1**, which means that the plan has been forced. After the feature is enabled, the database engine will automatically force any recommended query execution plan, when:
 
-1. The previous plan had a higher error rate than the recommended plan
-1. The estimated CPU gain was greater than 10 seconds
-1. The force plan has performed better than the previous one
+- The previous plan had a higher error rate than the recommended plan
+- The estimated CPU gain was greater than 10 seconds
+- The force plan has performed better than the previous one
 
 The plan will revert back to the last known good plan after 15 executions of the query.
 
@@ -34,7 +34,7 @@ You can examine the automatic tuning recommendations through a dynamic managemen
 
 Azure SQL Database can perform automatic index tuning. Over time, the database will learn about existing workloads and provide recommendations on adding or removing indexes in order to provide better performance. Like forcing improved query plans, the database can be configured to allow for automatic index creation or removal depending on existing index performance, as shown below:
 
-:::image type="content" source="../media/module-44-optimize-resources-final-26.png" alt-text="Automatic tuning Options":::
+:::image type="content" source="../media/module-44-optimize-resources-final-26.png" alt-text="Screenshot of Automatic tuning Options for Azure SQL Database.":::
 
 When enabled, the **Performance Recommendations** page will identify indexes that can be created or dropped depending on query performance. Remember this feature isn't available for on-premises databases and only available for Azure SQL Database.
 
