@@ -206,6 +206,21 @@ For larger enterprises, a showback or awareness-back model is a safer first step
 
 This model provides a balance between a true chargeback model and more traditional models of IT accounting.
 
+## Cloud accounting tools
+
+There are several valuable tools you can leverage to project the costs involved in migrating to the cloud up front. Predicting and estimating costs will provide your organization with KPIs you can later use to compare predicted versus actual costs once you’ve completed your cloud migration.
+
+**Azure Pricing Calculator**: Use the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/) to configure and estimate the costs for Azure products.
+
+Try the Azure Pricing Calculator [here](https://azure.microsoft.com/pricing/calculator/).
+
+**Azure Virtual Machine (VM) Cost Estimator**: The Azure VM Cost Estimator is a Power BI template that allows you to estimate your cost savings against pay-as-you-go pricing by optimizing Azure offers and benefits for VMs like Azure Hybrid Benefit and reserved instances. When you’re evaluating large-scale data centers, more than a hundred compute units, for example, using the web-based Azure Pricing Calculator can be challenging because it requires you to input a significant number of technical criteria. The Azure VM Cost Estimator includes an Excel file that feeds data into the BI template, allowing you to input a much larger list of criteria, along with additional technical specifications like the number of cores assigned to a specific compute unit or the memory footprint and associated utilization. You can even specify the currency value you want the price list generated in, and the different Azure targets you want to place your workloads in. In that way, the Azure VM Cost Estimator helps you automate the cloud cost estimation process.
+
+Download the following files to use the Power BI model:
+
+- [Power BI template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/strategy/azure-virtual-machine-cost-estimator.pbix)
+- [Excel file that feeds data into the Power BI template](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FCloudAdoptionFramework%2Fmaster%2Fstrategy%2Fon-premises-compute-unit-lists.xlsx&wdOrigin=BROWSELINK) 
+
 ## Impact of cloud accounting models
 
 The choice of accounting models is crucial in system design. The choice of accounting model can affect subscription strategies, naming standards, tagging standards, and policy and blueprint designs.
