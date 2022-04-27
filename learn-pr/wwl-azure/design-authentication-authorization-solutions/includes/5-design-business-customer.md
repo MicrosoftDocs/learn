@@ -10,7 +10,7 @@ Use Azure AD B2C to:
 
 - Provide branded registration and sign in experiences.
 
-- Provide separation of your organizational accounts your customer accounts.
+- Separate the organization account from the customer account.
 
 ## How does Azure B2C work?
 
