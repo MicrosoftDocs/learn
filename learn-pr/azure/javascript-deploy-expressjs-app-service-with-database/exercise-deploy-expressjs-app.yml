@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-deploy-expressjs-app
-title: "Exercise - "
+title: "Exercise - Deploy an Express.js data app to Azure App Service"
 metadata:
   unitType: exercise
-  title: "Exercise - "
-  description: "Create your "
+  title: "Exercise - Deploy an Express.js data app to Azure App Service"
+  description: "Deploy your sample an Express.js data app from your local computer to Azure App Service"
   ms.date: 04/25/2022
   author: diberry
   ms.author: diberry

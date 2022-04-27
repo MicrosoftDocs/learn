@@ -18,6 +18,12 @@ In this exercise, you'll create your App Service and Application Insights resour
 1. Select a local folder on your computer.
 1. When asked if you want to open the cloned repository, select **Open**.
 1. Visual Studio Code reopens with your local fork of the sample repository.
+1. In the Explorer, select the **3-Add-cosmosdb-mongodb** folder and select **Open in Integrated Terminal**.
+1. Install the npm packages with the following command. 
+
+    ```bash
+    npm install
+    ```
 
 ## Sign in to the Learn sandbox
 

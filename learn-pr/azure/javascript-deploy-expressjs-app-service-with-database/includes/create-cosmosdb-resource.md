@@ -39,7 +39,7 @@ When you select serverless or provisioned throughput, you are select the capacit
 | Criteria | Provisioned throughput | Serverless |
 | --- | --- | --- |
 | Best suited for | Workloads with sustained traffic requiring predictable performance | Workloads with intermittent or unpredictable traffic and low average-to-peak traffic ratio |
-| How it works | For each of your containers, you provision some amount of throughput expressed in [Request Units](request-units.md) per second. Every second, this amount of Request Units is available for your database operations. Provisioned throughput can be updated manually or adjusted automatically with [autoscale](provision-throughput-autoscale.md). | You run your database operations against your containers without having to provision any capacity. |
+| How it works | For each of your containers, you provision some amount of throughput expressed in [Request Units](/azure/cosmos-db/request-units) per second. Every second, this amount of Request Units is available for your database operations. Provisioned throughput can be updated manually or adjusted automatically with [autoscale](/azure/cosmos-db/provision-throughput-autoscale). | You run your database operations against your containers without having to provision any capacity. |
 | Geo-distribution | Available (unlimited number of Azure regions) | Unavailable (serverless accounts can only run in 1 Azure region) |
 | Maximum storage per container | Unlimited | 50 GB |
 | Performance | < 10 ms latency for point-reads and writes covered by SLA | < 10 ms latency for point-reads and < 30 ms for writes covered by SLO |
@@ -54,7 +54,7 @@ The throughput selection in the previous section impacts the pricing tier option
 Specific pricing tier information for Cosmos DB API for MongoDB include: 
 
 
-Cosmos DB supports the MongoDB wire protocol for applications written against MongoDB. You can find the supported commands and protocol versions at [Supported MongoDB features and syntax](mongodb/feature-support-32.md).
+Cosmos DB supports the MongoDB wire protocol for applications written against MongoDB. You can find the supported commands and protocol versions at [Supported MongoDB features and syntax](/azure/cosmos-db/mongodb/feature-support-32).
 
 The following table lists the limits specific to MongoDB feature support. Other service limits mentioned for the SQL (core) API also apply to the MongoDB API.
 
@@ -66,7 +66,7 @@ The following table lists the limits specific to MongoDB feature support. Other 
 | Maximum level of nesting for embedded objects / arrays on index definitions | 6 |
 | Idle connection timeout for server side connection closure* | 30 minutes |
 
-\* The client application should set the idle connection timeout in the driver settings to 2-3 minutes because the [default timeout for Azure LoadBalancer is 4 minutes](../load-balancer/load-balancer-tcp-idle-timeout.md).  This timeout will ensure that idle connections are not closed by an intermediate load balancer between the client machine and Azure Cosmos DB.
+\* The client application should set the idle connection timeout in the driver settings to 2-3 minutes because the [default timeout for Azure LoadBalancer is 4 minutes](/azure/load-balancer/load-balancer-tcp-idle-timeout).  This timeout will ensure that idle connections are not closed by an intermediate load balancer between the client machine and Azure Cosmos DB.
 
 ## Create database and container
 

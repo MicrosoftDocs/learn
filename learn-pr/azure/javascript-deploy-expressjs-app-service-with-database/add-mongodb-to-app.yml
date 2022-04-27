@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.add-mongodb-to-app
-title: my-data
+title: Create a CosmosDB API for MongoDB resource
 metadata:
   unitType: learning-content
-  title: my-data
-  description: "For this module, "
+  title: Create a CosmosDB API for MongoDB resource
+  description: "For this module, learn how to create a Cosmos DB API for MongoDB resource and configure your sample applications."
   ms.date: 04/25/2022
   author: diberry
   ms.author: diberry

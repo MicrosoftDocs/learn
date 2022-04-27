@@ -3,8 +3,8 @@ uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.create
 title: Create an Azure Cosmos DB for MongoDB API resource
 metadata:
   unitType: learning-content
-  title: Create an Azure Cosmos DB resource
-  description: "For this module, "
+  title: Create an Azure Cosmos DB for MongoDB API resource
+  description: "Learn about the Azure Cosmos DB for MongoDB API resource in order to create the right resource for your needs."
   ms.date: 04/25/2022
   author: diberry
   ms.author: diberry
