@@ -297,7 +297,7 @@
     },
     {
       "source_path": "learn-pr/azure/gather-metrics-blob-storage/6-using-storage-analytics-logging.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/gather-metrics-blob-storage/6-using-azure-resource-logs",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/gather-metrics-blob-storage/6-use-azure-resource-logs",
       "redirect_document_id": false
     },
     {

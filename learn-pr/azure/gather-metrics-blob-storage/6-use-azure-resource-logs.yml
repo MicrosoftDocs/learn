@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-using-azure-resource-logs.md)]
+  [!include[](includes/6-use-azure-resource-logs.md)]
