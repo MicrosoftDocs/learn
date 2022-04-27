@@ -26,7 +26,7 @@ It's a good practice to use your organization's Azure AD as your pipeline's iden
 You can also create *teams* (in GitHub) or *groups* (in Azure DevOps), which represent sets of users who can be granted permissions together. It's a good practice to define teams or groups. and then to assign permissions to the teams or groups instead of to individual users. That way, it's easy to change the permissions of users by adding them to and removing them from a team or group.
 
 > [!TIP]
-> Azure DevOps uses a *least privilege* permission model, which is different to the model used by Azure. In Azure DevOps, *deny* permissions override *allow* permissions, so if you're assigned to multiple groups with different sets of permissions, you'll only be allowed to do the actions permitted by both groups.
+> Azure DevOps uses a *least privilege* permission model, which is different to the model used by Azure. In Azure DevOps, *deny* permissions override *allow* permissions, so if you're assigned to multiple groups with different sets of permissions, you'll only be allowed to do the actions permitted by all groups.
 >
 > Ensure you understand how permissions are assigned, especially to groups.
 
