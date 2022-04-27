@@ -18,7 +18,7 @@ Establish connectivity with an on-premises network by using either a virtual pri
 
 ## Create and manage self-hosted integration runtime
 
-The next step is to create a [self-hosted integration runtime (SHIR)](https://docs.microsoft.com/en-us/azure/purview/manage-integration-runtimes) in your Microsoft Purview account. Microsoft Purview uses the SHIR component to run data scans across different network environments. You first must create a Microsoft integration runtime in your Microsoft Purview account, and then download and install binaries on the on-premises machine that runs any supported 64-bit version of the Windows operating system.
+The next step is to create a [self-hosted integration runtime (SHIR)](/azure/purview/manage-integration-runtimes) in your Microsoft Purview account. Microsoft Purview uses the SHIR component to run data scans across different network environments. You first must create a Microsoft integration runtime in your Microsoft Purview account, and then download and install binaries on the on-premises machine that runs any supported 64-bit version of the Windows operating system.
 
 :::image type="content" source="../media/3-data-map-integration-runtime-settings.png" alt-text="The Data map integration runtime settings pane" border="false":::
 
