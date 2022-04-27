@@ -158,7 +158,8 @@ Transaction metrics are updated hourly, so you should see changes in these value
 10. Change the **Aggregation** option to **Min**. It's unlikely that an Azure outage happened during that time, so the line should stay at 100%. This information generally doesn't change much.
 
 11. Select the **X** to the right of the monitor ellipsis to close it.
-![Screenshot monitor ellipsis.](../media/3-monitor-ellipsis.png)
+
+    ![Screenshot monitor ellipsis.](../media/3-monitor-ellipsis.png)
 
 12. Select **Add metric**. Both the **Resource** and **Metric Namespace** values should already be selected.
 
