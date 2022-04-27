@@ -130,7 +130,7 @@ To configure a scan of a database configured with SQL authentication, you need t
 
 1. On the **Manage Key Vault connections** pane, select **New**, provide a name for the connection, and then select the existing Key Vault.
 
-:::image type="content" source="../media/image5.png" alt-text="Screenshot depicting the steps to scan an Azure SQL Database configured with SQL authentication by connecting your Microsoft Purview Account with the Azure Key Vault service." border="false":::
+:::image type="content" source="../media/2-register-key-vault-connection.png" alt-text="Screenshot depicting the steps to scan an Azure SQL Database configured with SQL authentication by connecting your Microsoft Purview Account with the Azure Key Vault service." border="false":::
 
 >[!Note]
 >Be sure to configure the access policy for Azure Key Vault to grant **Get** and **List** secret permission for your Microsoft Purview account.
