@@ -4,7 +4,7 @@ The query consists of a sequence of query statements. At least one statement is 
 
 The tabular expression statement's syntax has tabular data flow from one tabular query operator to another, starting with the data source and then flowing through a set of data transformation operators bound together by using the pipe (|) delimiter.
 
-For example, the following Kusto query has a single statement, which is a tabular expression statement. The statement starts with a table called SecurityEvent. The EventID column's value then filters the data (rows) for that table and then summarizes the results by creating a new column for the count by Account.  Next, in the Prepare phase, the results are then limited to 10 rows.
+For example, the following query has a single statement, which is a tabular expression statement. The statement starts with a table called SecurityEvent. The EventID column's value filters the data (rows) and then the results are summarized by creating a new column for the count() by Account.  Next, in the Prepare phase, the results are then limited to 10 rows.
 
 ![Sample KQL Statement](../media/kql-pipe.png)
 
