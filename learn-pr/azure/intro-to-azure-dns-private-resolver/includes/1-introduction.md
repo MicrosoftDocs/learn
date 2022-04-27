@@ -1,10 +1,10 @@
 Domain Name System (DNS) is a critical design topic in the overall landing zone architecture. Implementing a DNS solution on Azure through virtual machines could require too much effort in comparison with a native solution, running on top of the Azure Platform. 
 
-Azure DNS private resolver bridges on-premises DNS namespaces with private DNS zones hosted on Azure DNS without the burden of deploying VM-based custom DNS servers. You can resolve DNS queries from on-premesis networks and do conditional forwarding to on-premises DNS zones.
+Azure DNS private resolver bridges on-premises DNS namespaces with private DNS zones hosted on Azure DNS without the burden of deploying VM-based custom DNS servers. You can resolve DNS queries from on-premises networks and do conditional forwarding to on-premises DNS zones.
 
 ## What will we be doing?
 
-During this module you will be able learn about how use Azure DNS Private Resolver to resolve DNS queries from on-premises to cloud.
+During this module you'll be able learn about how to use Azure DNS Private Resolver to resolve DNS queries from on-premises to cloud.
 
 
 ## What is the main goal?

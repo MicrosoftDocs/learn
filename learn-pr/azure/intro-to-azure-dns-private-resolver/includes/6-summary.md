@@ -1,4 +1,4 @@
-You have explored in detail what is the Azure DNS Private Resolver and how your organization can benefit from the usage to address your naming resolution needs from on-premises to Azure.
+You've explored in detail what is the Azure DNS Private Resolver and how your organization can benefit from the usage to address your naming resolution needs from on-premises to Azure.
 
 ## Additional reading
 
