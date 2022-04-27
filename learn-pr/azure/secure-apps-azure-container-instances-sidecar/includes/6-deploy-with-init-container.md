@@ -1,9 +1,9 @@
 
-Your customers have asked you to be able to reach the API using a Fully Qualified Domain Name (FQDN) instead of an IP address, and to make sure that the FQDN does not change in case the container needs to be recreated. You can use init containers to provide this functionality. Some times you need to perform certain tasks before the actual application starts. These tasks could include many different things such as configuring certain services to accept inbound connectivity from the container, or injecting secrets from an Azure Key Vault into a volume. In this unit, you will use an init container to update DNS so that customers can access the API using a domain name, instead of an IP address.
+Your customers have asked you to be able to reach the API using a Fully Qualified Domain Name (FQDN) instead of an IP address and to make sure that the FQDN does not change in case the container needs to be recreated. You can use initialization (init) containers to provide this functionality. Sometimes you need to perform certain tasks before the actual application starts. These tasks could include many different things such as configuring certain services to accept inbound connectivity from the container or injecting secrets from an Azure Key Vault into a volume. In this unit, you will use an init container to update the DNS so that customers can access the API using a domain name instead of an IP address.
 
-An initialization container is one of the practical uses of the Sidecar Pattern that you saw in a previous unit. However, the initialization container will be run before any other container in the container group is started. Hence, you can implement different concepts in init containers such as prerequisite validation or initialization tasks.
+An init container is one of the practical uses of the Sidecar Pattern that you saw in a previous unit. However, the initialization container will be run before any other container in the container group is started. Hence, you can implement different concepts in init containers, such as prerequisite validation or initialization tasks.
 
-The actual application containers in your Azure Container instance will only be started when any defined init containers have completed their execution successfully.
+The actual application containers in your Azure Container Instance will only be started when any defined init containers have completed their execution successfully.
 
 ACI Init Containers are the same concept as Kubernetes Init Containers.
 
@@ -13,7 +13,7 @@ In this unit, the init container will retrieve the IP address allocated to the A
 
 ## Create the initialization script
 
-1. The first thing you will do is creating an Azure Service Principal that will be used by the init container to interact with Azure, to retrieve its IP address and update DNS. In this example you will assign it Contributor access to the resource group for simplicity reasons, in production environments you might want to be more restrictive.
+1. The first thing you will do is create an Azure Service Principal that will be used by the init container to interact with Azure to retrieve its IP address and update the DNS. In this example you'll assign it Contributor access to the resource group for simplicity reasons; you might want to be more restrictive in production environments.
 
     ```azurecli
     # Create SP
@@ -64,7 +64,7 @@ In this unit, the init container will retrieve the IP address allocated to the A
     - There is now a `initContainers` section
     - The `initContainer` is using the `microsoft/azure-cli:latest` image, which already has the Azure CLI installed
     - The init container runs a script stored in the `/mnt/init/` folder, which is mounted from an Azure Files volume
-    - The resource group, Azure Container Instance name and Service Principal Credentials are passed as environment variables
+    - The resource group, Azure Container Instance name, and Service Principal Credentials are passed as environment variables
     - The Service Principal secret is passed as a secure environment variable
     - The rest of the container YAML definitions are unchanged when compared to the previous unit
     
@@ -159,7 +159,7 @@ In this unit, the init container will retrieve the IP address allocated to the A
     EOF
     ```
     
-1. You may want to verify the generated YAML file, to check that variable substitution worked correctly
+1. You may want to verify the generated YAML file to check that variable substitution worked correctly
 
     ```azurecli
     # Check YAML file
@@ -173,7 +173,7 @@ In this unit, the init container will retrieve the IP address allocated to the A
     az container create -g $rg --file $aci_yaml_file
     ```
     
-1. You can use the SQL API endpoints to test that the container is now reachable. In this case, you are using the domain name to access the container, and not its IP address:
+1. You can use the SQL API endpoints to test that the container is now reachable. In this case, you are using the domain name to access the container and not its IP address:
 
     ```azurecli
     # Test
@@ -200,4 +200,4 @@ In this unit, the init container will retrieve the IP address allocated to the A
 
 ## Summary
 
-You used an init container inside of an Azure Container Instance to update an Azure Private DNS Zone, so that other applications can find the Container Instance using DNS names instead of IP addresses.
+You used an init container inside of an Azure Container Instance to update an Azure Private DNS Zone so that other applications can find the Container Instance using DNS names instead of IP addresses.

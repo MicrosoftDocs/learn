@@ -19,13 +19,13 @@ Containers in the same container group will share some properties, such as the u
     openssl req -new -newkey rsa:2048 -nodes -keyout ssl.key -out ssl.csr -subj "/C=US/ST=WA/L=Redmond/O=AppDev/OU=IT/CN=contoso.com"
     openssl x509 -req -days 365 -in ssl.csr -signkey ssl.key -out ssl.crt
     ```
-    
+
 1. You will create a file containing the configuration for NGINX. You do not need to understand every detail, but some aspects of it are important:
 
-    - The `proxy_pass` property points to `http://127.0.0.1:8080`. This is where the application container will be. The containers inside a container group (the NGINX and the application container) share the same network namespace. In other words, they can communicate with each other using the `localhost` or `127.0.0.1` address
+    - The `proxy_pass` property points to `http://127.0.0.1:8080`. This is where the application container will be. The containers inside the container group (the NGINX and the application container) share the same network namespace. In other words, they can communicate with each other using the `localhost` or `127.0.0.1` address
     - The certificate file and key will be read from the `/etc/nginx/` directory, so you will have to insert the files generated above in the corresponding directory later in this unit
     - The sidecar container will listen to the TCP port 443
-    
+
     ```azurecli
     # Create nginx.conf for SSL
     nginx_config_file=/tmp/nginx.conf
@@ -64,7 +64,7 @@ Containers in the same container group will share some properties, such as the u
     }
     EOF
     ```
-    
+
 1. Now you will collect the files that you want to pass on to the NGINX sidecar container in base64-encoded variables:
 
     ```azurecli
@@ -82,15 +82,15 @@ Containers in the same container group will share some properties, such as the u
     # Get network profile ID (it was created the first time you deployed an Azure Container Instance to the Virtual Network)
     nw_profile_id=$(az network profile list -g $rg --query '[0].id' -o tsv) && echo $nw_profile_id
     ```
-    
+
 1. Now you have all the required information to create the YAML file. You can combine all the information you have stored in variables in this unit in a single file. Here are a few things that you need to be aware of:
 
     - The SQL password is passed on as secured environment variable, so it is not exposed after creating Azure Container Instances
-    - The NGINX container mounts the config volume in the `/etc/nginx/` directory, where the certificates are expected to be found as you saw earlier in this unit. The volume contents are specified as secrets, that is why you had to base64-encode the variables before.
+    - The NGINX container mounts the config volume in the `/etc/nginx/` directory, where the certificates are expected to be found as you saw earlier in this unit. The volume contents are specified as secrets, which is why you had to base64-encode the variables before.
     - The NGINX container exposes port 443, and the application container exposes port 8080. However, the container group only exposes port 443. This makes the application only reachable via the NGINX sidecar container.
-    
+
     You will use YAML to specify these properties for the Azure Container Instance:
-    
+
     ```azurecli
     # Create YAML
     aci_yaml_file=/tmp/aci_ssl.yaml
@@ -148,24 +148,24 @@ Containers in the same container group will share some properties, such as the u
     type: Microsoft.ContainerInstance/containerGroups
     EOF
     ```
-    
+
 1. After you put all the required configuration in the YAML file, the command to create Azure Container Instances is simple:
 
     ```azurecli
     # Deploy ACI
     az container create -g $rg --file $aci_yaml_file
     ```
-    
-1. You can now extract the IP address of Azure Container Instances (it should be a private IP address) and access it via HTTPS from the test Virtual Machine. You should use the flag `-k` with curl so that it disables certificate validation, since you are using self-signed certificate in this unit. The `api/healthcheck` endpoint of the API should response with an `OK`:
+
+1. You can now extract the IP address of the Azure Container Instances (it should be a private IP address) and access it via HTTPS from the test Virtual Machine. You should use the flag `-k` with curl so that it disables certificate validation, since you are using self-signed certificate in this unit. The `api/healthcheck` endpoint of the API should response with an `OK`:
 
     ```azurecli
     # Test
     aci_ip=$(az container show -n $aci_name -g $rg --query 'ipAddress.ip' -o tsv) && echo $aci_ip
     ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "curl -ks https://$aci_ip/api/healthcheck"
     ```
-    
-    Do not delete Azure Container Instances, since you will still use it in the next unit.
+
+    Do not delete these Azure Container Instances, because you'll still use them in the next unit.
 
 ## Summary
 
-You included an NGINX sidecar container next to the application inside of an Azure Container Instance. The sidecar container enhanced the application container with SSL functionality, without having to modify the application code.
+You included an NGINX sidecar container next to the application inside of an Azure Container Instance. The sidecar container enhanced the application container with SSL functionality without having to modify the application code.
