@@ -2,7 +2,7 @@ HoloLens is a mixed reality device that has been successfully deployed in manufa
 
 ### HoloLens 2 return on investment
 
-The Forrester Consulting TEI study on HoloLens 2<sup>1</sup> estimates the following benefits to adopting HoloLens:
+The Commissioned Forrester Consulting TEI study on HoloLens 2<sup>1</sup> estimates the following benefits to adopting HoloLens:
 
 *"An immense breadth of mixed reality use cases across industries and roles are possible with HoloLens 2, powered by a comprehensive ecosystem of applications and services from Microsoft and myriad third-party partners. Mixed reality on HoloLens 2 is broadly extensible; its support for custom code and cloud services has led to a growing market of customers and partners that continually expand the bounds of possibility."*
 

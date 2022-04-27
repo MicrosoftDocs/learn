@@ -14,7 +14,7 @@ Independent software vendors that build mixed reality solutions on Azure are lar
 
 ## Additional reading
 
-1. [The Total Economic Impact™ Of Mixed Reality Using Microsoft HoloLens 2 Report, Forrester, 2022](https://tools.totaleconomicimpact.com/go/microsoft/HoloLens2/)
+1. [The Total Economic Impact™ Of Mixed Reality Using Microsoft HoloLens 2, a commissioned study conducted by Forrester Consulting, November 2021](https://tools.totaleconomicimpact.com/go/microsoft/HoloLens2/)
 1. [Engineering and construction full customer story](https://customers.microsoft.com/story/1397624343978709058-microsoft-partner-professional-services-dynamics-365-hololens)
 1. [Imperial College Healthcare NHS Trust customer story](https://customers.microsoft.com/story/825289-imperial-nhs)
 1. [Case Western customer story](https://customers.microsoft.com/story/851349-case-western-reserve-university-higher-education-hololens-en-united-states)
