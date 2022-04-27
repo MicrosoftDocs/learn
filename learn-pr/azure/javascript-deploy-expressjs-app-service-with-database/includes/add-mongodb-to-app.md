@@ -1,18 +1,9 @@
 Adding MongoDB to an Express.js app includes several steps. In this module, many of the steps are done for you as part of the sample application.
 
-## Adding MongoDB to an Express.js app
 
-In order to add MongoDB to a Node.js app, such as Express.js, the complete connection requires:
 
-* Connection data: adding the MongoDB connection string, database name and collection name to the app. You'll complete this step next.
-* NPM package: Adding an appropriate npm package to connect to your remote MongoDB database. This module uses the native MongoDB driver, specified in the package.json file. 
-* JavaScript code: Adding MongoDB API code to your Express.js app. This code is already provided for you. 
 
-## MongoDB connection data
-
-Connection data for this sample app is contained in the `.env` file. In the next exercise, you'll find your Cosmos DB connection string, and add that to the `.env` file, along with the database and collection you entered in the last exercise.
-
-## Connection string requirements
+## Azure Connection string requirements
 
 > [!Important]
 > Azure Cosmos DB has strict security requirements and standards. Azure Cosmos DB accounts require authentication and secure communication via *TLS*.
