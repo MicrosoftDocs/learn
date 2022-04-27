@@ -1,64 +1,47 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+## How Azure Private DNS Resolver Works
 
-    Goal: state what's in this unit and how it aligns to the 'describe' learning objective.
-
-    Pattern:
-        One paragraph of 2-3 sentences:
-            Sentence 1: State that this unit addresses ("how it works").
-            Sentence 2: State that this unit targets this learning objective: "Describe how (features) of (product) work to (solve problem)."
-            Sentence 3-4 (optional): Give the rationale ("helps you decide if it will meet your needs").
-        Table-of-contents as a bulleted list (do not simply list every heading you'll have on the page, group them into about 3 high-level areas).
-
-    Heading: none
-
-    Example: "Here, we'll discuss how Logic Apps works behind the scenes. You'll learn about all the pieces of Logic apps and see how they fit together into an app. This knowledge will help you decide whether Logic Apps will work for you without any customization. In cases where you do need to create custom components, you'll be able to determine how difficult it will be.
-        * Connectors, triggers, actions
-        * Control actions
-        * Logic Apps Designer"
--->
 Suppose you run all your workloads natively on Azure and register your Virtual Machine DNS records, and Private Endpoint DNS records on Azure Private DNS Zones. You’ll want to connect from on-prem or VPN and for that you need to be able to resolve the names hosted in Azure Private DNS Zones. 
 
-You would provision Azure DNS Private Resolver on an Azure Virtual Network, provision an inbound endpoint which will have a private IP address from your Virtual Network address space and conditionally forward your queries from on-prem to this IP address. This will enable you to resolve DNS names with a native cloud service. 
+You would provision Azure DNS Private Resolver on an Azure Virtual Network, provision an inbound endpoint which will have a private IP address from your Virtual Network address space and conditionally forward your queries from on-prem to this IP address. This will enable you to resolve DNS names with a native cloud service.
 
+There are some capabilities you should be aware:
 
-<!-- 2. Chunked content-------------------------------------------------------------------------------------
+* Conditional forwarding to on-prem DNS or external DNS servers via outbound endpoints of Azure DNS Private Resolver
 
-    Goal:
-        Cover the components of (product) and how they work.
-        Repeat this pattern multiple times as needed.
+This is a managed services which allows hybrid name resolution, used to do conditional forwarding from Azure to on-prem and other target DNS servers
 
-    Pattern:
-        Break the content into 'chunks' where each chunk has three things:
-            1. An H2 or H3 heading describing the goal of the chunk.
-            2. 1-3 paragraphs of text, with a strong lead sentence in the first paragraph.
-            3. Visual like an image, table, list, code sample, or blockquote.
+* Resolve Azure Private DNS Zone records with inbound endpoints
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+Conditionally forward from on-prem to the inbound endpoint and resolve names on Azure, enabling you to perform name resolution of workloads registered on Azure Private DNS Zones from on-prem.
 
-<!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+* Inbound Endpoints
 
-<!-- Pattern for complex topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list, code sample, blockquote)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+DNS private resolver’s inbound endpoint that receives the name resolution request from Azure & on-premises network and resolve names.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+The Azure DNS private resolver’s inbound endpoint has a private IP that is part of a subnet where the endpoint has been created. The IP address of the DNS private resolver inbound endpoint is then set as a DNS server on the on-premises VMs. Now, these VMs can send the DNS traffic to the private resolver’s Inbound endpoint IP address. When a name resolution request (from on-premises) is received by the inbound endpoint, DNS private resolver can resolve the name from Azure Private DNS zones linked to the VNET where resolver is deployed or from public internet DNS namespace.
 
-<!-- Do not add a unit summary or references/links -->
+* Outbound Endpoints
+
+DNS resolver’s outbound endpoint conditionally forwards the request to on-premises or other target DNS servers.
+
+When the Azure VM wanted to perform name resolution for specific domain/fqdn that exist in on-premises or on other cloud providers or in an external DNS server, the Azure DNS private resolver’s conditionally forwards the request through DNS resolver’s outbound endpoint. The outbound endpoint leverages “Forwarding Rulesets” to forward the traffic to the specific target DNS servers.
+
+* Forwarding Ruleset
+
+Ruleset can be understand as a group of forwarding rules.
+
+Forwarding Ruleset is one or more Forwarding Rules which can be applied to outbound endpoints and can be linked to VNETs. The VNETs that are linked to the Forwarding Ruleset use the Forwarding Rules to send matching traffic to the target DNS servers.
+
+* Forwarding rules
+
+Contains matching domain with target DNS server IP addresses.
+
+The Forwarding Rules includes one or more target DNS servers that are used for conditional forwarding. The forwarding rules contains domain name, the target DNS server IP, and the port (53) to forward the name resolution traffic.
+
+## How those features work together
+
+In a hybrid environment, name resolution from on-premises is sent to Azure DNS private resolver’s Inbound Endpoint IP address then resolves the name from Azure Private DNS zones linked to the VNET where resolver is deployed or from public internet DNS namespace.
+
+When there is a name resolution from Azure to on-premises, other clouds or to an external DNS, the Azure DNS private resolver’s Outbound Endpoint conditionally forwards that request to target DNS server.
+
+The Outbound Endpoint uses DNS Forwarding Ruleset which comprises one or more DNS Forwarding Rules.
