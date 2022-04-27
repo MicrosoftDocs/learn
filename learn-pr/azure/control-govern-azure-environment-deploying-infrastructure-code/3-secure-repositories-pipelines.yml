@@ -10,6 +10,6 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 8
 content: |
   [!include[](includes/3-secure-repositories-pipelines.md)]
