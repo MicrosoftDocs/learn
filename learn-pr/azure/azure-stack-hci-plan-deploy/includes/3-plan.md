@@ -141,5 +141,5 @@ SDN scenarios on virtualized networks:
 SDN has three infrastructure components, and you can choose to deploy some or all of them based on your needs.
 
 - **Network Controller:** This is the primary component of SDN. Network Controller is the centralized control plane for SDN. It receives policy from the management plane and configures the data plane with the policy. With Network Controller, customers can manage network services like microsegmentation and QoS for traditional VLAN networks and virtualized networks.
-- **Software Load Balancer (SLB):** This in the infrastructure component responsible for providing the load balancing and NAT capabilities for workloadson traditional VLAN networks and virtualized networks.
+- **Software Load Balancer (SLB):** This in the infrastructure component responsible for providing the load balancing and NAT capabilities for workloads on traditional VLAN networks and virtualized networks.
 - **Gateways:** This is the infrastructure components responsible for providing virtual network connectivity to external networks.
