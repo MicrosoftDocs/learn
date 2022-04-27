@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.gather-metrics-from-blob-storage.6-using-azure-resource-logs
+uid: learn.azure.gather-metrics-from-blob-storage.6-using-storage-analytics-logging
 title: Collect and analyze Azure resource logs
 metadata:
   title: Collect and analyze Azure resource logs
