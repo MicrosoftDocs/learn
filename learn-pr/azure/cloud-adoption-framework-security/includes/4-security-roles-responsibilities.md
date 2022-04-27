@@ -4,7 +4,7 @@ Security is a team sport. It is critical that individuals on the security team s
 
 This diagram depicts the specific organizational functions within security. It represents an ideal view of a complete enterprise security team and may be an aspirational view for some security teams. Each function may be performed by one or more people, and each person may perform one or more functions depending on various factors such as culture, budget, and available resources.
 
-:::image type="content" source="../media/security-organizational-functions.png" alt-text="A diagram illustrating the organizational functions within security." border="false":::
+:::image type="content" source="../media/security-organizational-functions.png" lightbox="../media/security-organizational-functions.png" alt-text="A diagram illustrating the organizational functions within security." border="false":::
 
 Each of the following articles provides information about each function including a summary of objectives, how the function can evolve because of the threat environment or cloud technology changes, and the relationships and dependencies that are critical to its success.
 
@@ -23,11 +23,11 @@ Each of the following articles provides information about each function includin
 
 The following diagram summarizes the roles and responsibilities in a security program to help you familiarize yourself with these roles.
 
-:::image type="content" source="../media/security-roles-responsibilities.png" alt-text="A diagram summarizing the roles and responsibilities of a security program." border="false":::
+:::image type="content" source="../media/security-roles-responsibilities.png" lightbox="../media/security-roles-responsibilities.png" alt-text="A diagram summarizing the roles and responsibilities of a security program." border="false":::
 
 For more information, see [Cloud security functions](/azure/cloud-adoption-framework/organize/cloud-security).
 
-## Mapping security to business outcomes
+## Map security to business outcomes
 
 At the organizational level, the security disciplines map to standard plan-build-run phases seen widely across industries and organizations. While this cycle is accelerating into a continuous change cycle with the digital age and the advent of DevOps, this illustrates how security maps to normal business processes.
 

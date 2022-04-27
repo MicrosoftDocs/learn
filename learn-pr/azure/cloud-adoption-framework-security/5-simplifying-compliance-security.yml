@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-security.simplifying-compliance-security
-title: Simplifying compliance and security
+title: Simplify compliance and security
 metadata:
   unitType: learning-content
-  title: Simplifying compliance and security
+  title: Simplify compliance and security
   description: How Azure Security Benchmarks can be used to quickly secure cloud deployments.
   ms.date: 04/26/2022
   author: BrianBlanchard

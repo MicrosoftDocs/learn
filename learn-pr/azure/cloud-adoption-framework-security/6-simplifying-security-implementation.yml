@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-security.simplifying-security-implementation
-title: Simplifying security implementation
+title: Simplify security implementation
 metadata:
   unitType: learning-content
-  title: Simplifying security implementation
+  title: Simplify security implementation
   description: How Landing Zones provide cloud adoption teams with a well-managed environment for their workloads.
   ms.date: 04/26/2022
   author: BrianBlanchard
