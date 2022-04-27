@@ -48,6 +48,8 @@ If you use community-provided GitHub Actions or Azure DevOps extensions, underst
 
 In Azure DevOps, the organization administrator typically approves every extension before it can be used. If you're the administrator for your organization, you should consider the security risk involved in each component you use. Remember that you're responsible for verifying that they're trustworthy and safe to use.
 
+Whenever you use a third-party action or task, you specify the version of the task you want to use. Consider specifying the exact version number of the version that you've reviewed, rather than allowing the pipeline to automatically use a later version, which might introduce a risk that you haven't reviewed.
+
 ## Protect your pipeline's service principals
 
 Pipelines use service principals to access Azure and other services. It's important to protect your service principals, and ensure that their credentials can't be used inappropriately. Consider applying multiple layers of protection.
