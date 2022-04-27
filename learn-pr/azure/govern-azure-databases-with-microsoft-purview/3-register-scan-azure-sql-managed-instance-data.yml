@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.govern-azure-databases-with-microsoft-purview.1-introduction
+uid: learn.azure.govern-azure-databases-with-microsoft-purview.3-register-scan-azure-sql-managed-instance-data
 title: Register and scan an Azure SQL Database managed instance data source by using Microsoft Purview
 metadata:
   title: Register and scan an Azure SQL Database managed instance data source by using Microsoft Purview
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/3-register-scan-azure-sql-managed-instance-data.md)]
