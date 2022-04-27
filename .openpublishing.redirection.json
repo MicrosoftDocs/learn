@@ -12780,6 +12780,26 @@
       "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/4-describe-azure-purview.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-resource-governance-capabilities-azure/4-describe-microsoft-purview",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-monitoring/6-describe-azure-intelligent-insights.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-performance-monitoring/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-monitoring/7-exercise-isolate-problems.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-performance-monitoring/8-exercise-isolate-problems",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-monitoring/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-performance-monitoring/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-monitoring/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-performance-monitoring/10-summary",
+      "redirect_document_id": true
     }
   ]
 }
