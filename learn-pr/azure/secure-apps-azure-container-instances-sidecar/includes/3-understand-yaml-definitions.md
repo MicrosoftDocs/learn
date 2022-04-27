@@ -71,7 +71,7 @@ YAML is one of the different ways in which you can declaratively deploy Azure Co
 
     There are some interesting characteristics of this YAML description that are worth highlighting:
 
-    - Note that YAML is very sensitive to indentation. If you remove or add a blank space in the previous file, it won't be syntactically correct. Only spaces are supported for indentation (no tabs), so be careful with the your text editor.
+    - Note that YAML is very sensitive to indentation. If you remove or add a blank space in the previous file, it won't be syntactically correct. Only spaces are supported for indentation (no tabs), so be careful with your text editor.
     - Properties and attributes are specified hierarchically in key-value pairs.
     - If you are familiar with Kubernetes, you will recognize many of the labels. For example, resource requests follow the same syntax. However, do not expect all properties to be identical with Kubernetes. For example, ACI environment variables are defined in the `environmentVariables` property, while Kubernetes would use the `env` key word.
     - If you look into the environment variables, you see them in clear text. While this is probably acceptable for most environment variables, others should not be written in the open, such as the SQL password used in this example. A better way of defining this sensitive information would be with ACI Secure Values. In your case, you don't want your customer to be able to see the database password, so you need to mask it.
