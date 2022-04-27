@@ -79,6 +79,7 @@ Next, think about the permissions that your service principals are granted:
 >
 > * Apply Azure Active Directory (Azure AD) *conditional access* policies to your pipeline's service principals, which help to identify risky sign-ins and behaviors. For example, if your pipeline service principals always sign in from one geographic region, conditional access can detect and prevent sign-ins from unexpected locations, which might indicate that the credentials have been compromised.
 > * Carefully consider the permissions that you grant to each service principal. For example, suppose you have a service principal that you use to read the configuration of a shared resource. Consider whether you can grant *Reader* access to that service principal, instead of a more privileged role, since the service principal doesn't need to do anything more.
+> * Use the minimum *scope* for each permission you assign to a service principal. For example, if your service principal only needs to deploy to a single resource group, then scope the role assignment to that resource group instead of the whole subscription.
 > * Use separate service principals for each of your environments. That way, even if a principal's credentials are compromised or if somebody gets access to one environment, they can't access other environments.
 
 ## Protect your service connections and secrets
