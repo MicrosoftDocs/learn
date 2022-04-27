@@ -8,6 +8,7 @@ There are many different parts of your Azure DevOps organization, GitHub reposit
 | Important branches in your repository, and what needs to happen to change the code on those branches. | Somebody accidentally commits some insecure Bicep code onto your repository's *main* branch. |
 | The code inside your repository, including your infrastructure definitions, tests, and application code. | Somebody forgets to test the code they've just written, and it doesn't work correctly when it's released to production. |
 | The pipeline definition. | Somebody inadvertently adds a pipeline step that writes a database connection string into the pipeline's log. |
+| The agents or runners that execute your pipeline. | A pipeline running against a draft pull request installs a security vulnerability onto the agent, which is later used for a production deployment. |
 | Any third-party tasks or components that might run within your pipeline. | A third-party pipeline task sends your service principal's credentials to a malicious website. |
 | The service principals that your pipeline uses to access Azure. | A non-production service principal accidentally makes a change to your production environment. |
 | The secrets that your pipeline uses to access external systems. | A team member writes a new pipeline definition file for a prototype, and accidentally connects it to your production environment. |
@@ -41,6 +42,16 @@ Consider using *branch protection rules* (in GitHub) or *branch policies* (in Az
 Make sure your team understands your expectations for reviewing and testing all code, including your infrastructure definitions.
 
 Remember that your pipeline definitions are YAML files, so they're a form of code too. Changes to your pipeline definitions need to be reviewed and evaluated. Otherwise, somebody might accidentally or maliciously create a pipeline step that leaks your service principal's credentials or makes a dangerous change to your Azure estate. Ensure your team is aware that any changes to pipeline definition files needs to be thoroughly reviewed, and that everybody understands that pipelines are so highly privileged that they need to be given special attention.
+
+## Protect your pipeline agents and runners
+
+Your pipeline executes on *agents* (for Azure Pipelines) or *runners* (for GitHub Actions). You can think of agents and runners as being virtual machines that your pipeline definition controls.
+
+Both Azure Pipelines and GitHub Actions provide *hosted* agents and runners, which are configured and maintained by Microsoft or GitHub. The platform owner configures the machines to be compliant with recommended security practices, and takes responsibility to patch operating system vulnerabilities. You can choose to use your own physical or virtual machines for your agents and runners, which are called *self-hosted* agents and runners. If you do this, you're responsible for ensuring the machines are configured correctly and protected against threats.
+
+Microsoft-hosted agents and GitHub-hosted runners are also *ephemeral*, which means that any files or configuration changes to the agent or runner are destroyed when a pipeline run ends. If you self-host your agent or runner, the same machine is likely to be used for multiple separate pipelines or environments, including production and non-production environments. Suppose that somebody creates a pipeline definition that modifies some important files on the agent's operating system, and runs the pipeline from a pull request. The next time that a deployment runs against your production environment, it might reuse the same agent, and now you have no way to predict what the impact of the corrupted file might be on your production environment.
+
+For these reasons, it's a good practice to use Microsoft-hosted agents and GitHub-hosted runners whenever you can. If you must use self-hosted runners, carefully evaluate the risks involved in their configuration and use.
 
 ## Assess third-party components that run within your pipeline
 
@@ -103,6 +114,7 @@ Now that you understand some of the important controls you can apply to your rep
 | Important branches in your repository, and what needs to happen to change the code on those branches. | Apply branch protection rules/branch policies. |
 | The code inside your repository, including your infrastructure definitions, tests, and application code. | <ul><li>Enforce code review requirements.</li><li>Add automated or manual tests.</li><li>On GitHub, use Dependabot and secret scanning.</li></ul> |
 | The pipeline definition. | Enforce code review requirements. |
+| The agents or runners that execute your pipeline. | <ul><li>On Azure Pipelines, use Microsoft-hosted agents.</li><li> On GitHub Actions, use GitHub-hosted runners.</li></ul> |
 | Any third-party tasks or components that might run within your pipeline. | Review the security risk associated with all third-party extensions and tasks. |
 | The service principals that your pipeline uses to access Azure. | <ul><li>Use workload identities in GitHub Actions. For Azure Pipelines, use service principals and regularly rotate their credentials.</li><li>Use separate service principals for each environment.</li><li>Apply conditional access policies.</li></ul> |
 | The secrets that your pipeline uses to access external systems. | <ul><li>On Azure DevOps, use approvals and checks on service connections.</li><li>On GitHub, use environment-specific secrets and workload identities.</li></ul> |
