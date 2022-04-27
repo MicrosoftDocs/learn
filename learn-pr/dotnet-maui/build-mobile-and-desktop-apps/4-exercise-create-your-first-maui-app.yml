@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.build-mobile-and-desktop-apps.exercise-create-your-first-maui-app
+title: "Exercise: Create your first .NET MAUI app"
+metadata:
+  unitType: exercise
+  title: "Exercise: Create your first .NET MAUI app"
+  description: "Use Visual Studio to create and run a default .NET MAUI app"
+  ms.date: 01/14/2022
+  author: jamesmontemagno  
+  ms.author: jamont  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-languages
+durationInMinutes: 5 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/4-exercise-create-your-first-maui-app.md)]

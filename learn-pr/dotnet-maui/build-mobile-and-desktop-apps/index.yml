@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.dotnet-maui.build-mobile-and-desktop-apps
+metadata:
+  moduleType: standard
+  title: "Create a cross-platform app with .NET MAUI"
+  description: "Learn how to use Visual Studio with .NET MAUI to create a cross-platform app"
+  ms.date: 01/14/2022
+  author: jamesmontemagno 
+  ms.author: jamont 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+title: Create a cross-platform mobile app with .NET MAUI
+summary: "Learn how to use Visual Studio with .NET MAUI to create a cross-platform app" 
+abstract: | 
+  In this module, you will:
+  - Learn the basic architecture of .NET MAUI
+  - Create .NET MAUI app
+  - Define a shared UI for the platforms supported by .NET MAUI
+  - Deploy a .NET MAUI app from Visual Studio
+  - Dial a number from within the app
+prerequisites: | 
+  - Visual Studio 2022 with the MAUI workload installed
+  - Familiarity with C# and .NET
+iconUrl: /learn/achievements/build-mobile-and-desktop-apps.svg
+levels: 
+  - beginner
+roles: 
+  - developer
+  - student
+products:
+  - vs
+  - dotnet
+  # - maui # not yet available as a product in Learn
+units:
+- learn.dotnet-maui.build-mobile-and-desktop-apps.introduction
+- learn.dotnet-maui.build-mobile-and-desktop-apps.describe-maui-architecture
+- learn.dotnet-maui.build-mobile-and-desktop-apps.create-a-maui-project-visual-studio
+- learn.dotnet-maui.build-mobile-and-desktop-apps.exercise-create-your-first-maui-app
+- learn.dotnet-maui.build-mobile-and-desktop-apps.add-controls-to-the-ui
+- learn.dotnet-maui.build-mobile-and-desktop-apps.exercise-create-phone-number-translator-app
+- learn.dotnet-maui.build-mobile-and-desktop-apps.summary
+badge:
+  uid: learn.dotnet-maui.build-mobile-and-desktop-apps.badge

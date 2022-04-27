@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.build-mobile-and-desktop-apps.exercise-create-phone-number-translator-app
+title: "Exercise: Create the phone number translator app" 
+metadata:
+  unitType: exercise 
+  title: "Exercise: Create the phone number translator app"
+  description: "Create the UI and write the logic for the phone number translator app"
+  ms.date: 01/14/2022
+  author: jamesmontemagno  
+  ms.author: jamont  
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-languages
+durationInMinutes: 10 
+content: |
+  [!include[](includes/6-exercise-create-phone-number-translator-app.md)]

@@ -1,0 +1,356 @@
+In this exercise, you'll construct the UI for the grocery store app and implement the logic behind this UI.
+
+You'll build a UI that takes advantage of the UI capabilities of .NET MAUI and the .NET MAUI Essentials package to dial the phone.
+
+The app will let the user type text into an input field, and will translate that text to numeric digits. It will use the letters that show up on a telephone keypad as the basis for translation. For example, the letters **cab** translate to **222** because the digit **2** has all three letters **abc**.
+
+You'll continue with the Phoneword solution you created in the previous exercise.
+
+## Add a new C# source file to the app
+
+1. Open the **Phoneword** solution in Visual Studio if you don't already have it open.
+
+1. In the Solution Explorer window, right-click the **Phoneword** project, select **Add**, and then select **Class**.
+
+    :::row:::
+        :::column span="2":::
+            :::image type="content" source="../media/6-add-class.png" alt-text="Adding a new class to the Phoneword project":::
+        :::column-end:::
+        :::column span="":::
+        :::column-end:::
+        :::column:::
+        :::column-end:::
+    :::row-end:::
+
+1. In the **Add New Item** dialog box, name the class file **PhonewordTranslator.cs**, and then select **Add**.
+
+    :::image type="content" source="../media/6-add-new-item.png" alt-text="The Add New Item dialog box. The user has named the class file PhonewordTranslator.cs":::
+
+## Add the translation logic
+
+Replace the content of the class file with the following code. The static method `ToNumber` in the `PhonewordTranslator` class will translate the number from alphanumeric text into a regular numeric phone number.
+
+```csharp
+using System.Text;
+
+namespace Core
+{
+    public static class PhonewordTranslator
+    {
+        public static string ToNumber(string raw)
+        {
+            if (string.IsNullOrWhiteSpace(raw))
+                return null;
+
+            raw = raw.ToUpperInvariant();
+
+            var newNumber = new StringBuilder();
+            foreach (var c in raw)
+            {
+                if (" -0123456789".Contains(c))
+                    newNumber.Append(c);
+                else
+                {
+                    var result = TranslateToNumber(c);
+                    if (result != null)
+                        newNumber.Append(result);
+                    // Bad character?
+                    else
+                        return null;
+                }
+            }
+            return newNumber.ToString();
+        }
+
+        static bool Contains(this string keyString, char c)
+        {
+            return keyString.IndexOf(c) >= 0;
+        }
+
+        static readonly string[] digits = {
+            "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"
+        };
+
+        static int? TranslateToNumber(char c)
+        {
+            for (int i = 0; i < digits.Length; i++)
+            {
+                if (digits[i].Contains(c))
+                    return 2 + i;
+            }
+            return null;
+        }
+    }
+}
+```
+
+## Create the UI
+
+1. Open the **MainPage.xaml** file in the **Phoneword** project.
+
+1. Remove the `ScrollView` control and its contents, leaving just the `ContentPage` control:
+
+    ```xml
+    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Phoneword.MainPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+    </ContentPage>
+    ```
+
+1. Add a padding of 20 units to the `ContentPage` control, after the line that sets the `BackgroundColor` property:
+
+    ```xml
+    <ContentPage ...
+             ...
+             BackgroundColor="{DynamicResource PageBackgroundColor}" 
+             Padding="30,60,30,30">
+
+    </ContentPage>
+    ```
+
+1. Add a `StackLayout` control with vertical orientation and a spacing of 15 units to the ContentPage:
+
+    ```xml
+    <ContentPage ... >
+        <StackLayout Orientation="Vertical" Spacing="15">
+        
+        </StackLayout>
+    </ContentPage>
+    ```
+
+1. Add a `Label` control to the StackLayout:
+
+    ```xml
+    <ContentPage ... >
+        <StackLayout ...>
+            <Label Text = "Enter a Phoneword"
+                   FontSize ="Large"/>
+        </StackLayout>
+    </ContentPage>
+    ```
+
+1. Add an `Entry` control to the StackLayout, below the label. An `Entry` control provides a text box into which the user can enter data. In this code, the property `x:Name` gives the control a name. You'll reference this control in the code for the app later:
+
+    ```xml
+    <ContentPage ... >
+        <StackLayout ...>
+            <Label .../>
+            <Entry x:Name = "PhoneNumberText"
+                   Text = "1-555-NETMAUI" />
+        </StackLayout>
+    </ContentPage>
+    ```
+
+1. Add two `Button` controls to the StackLayout, after the Entry control. Both buttons currently do nothing, and the second is disabled initially. You'll add the code to handle the `Clicked` event for these two buttons in the next task:
+
+    ```xml
+    <ContentPage ... >
+        <StackLayout ...>
+            <Label .../>
+            <Entry ... />
+        <Button x:Name = "TranslateButton"
+                Text = "Translate"
+                Clicked = "OnTranslate"/>
+        <Button x:Name = "CallButton"
+                Text = "Call"
+                IsEnabled = "False"
+                Clicked = "OnCall"/>
+        </StackLayout>
+    </ContentPage>
+    ```
+
+## Respond to the **TranslateButton** button tap
+
+1. In the Solution Explorer window, expand the **MainPage.xaml** file, and then open the **MainPage.xaml.cs** code-behind file.
+
+1. In the `MainPage` class, remove the `count` variable and the `OnCounterClicked` method. The class should look like this:
+
+    ```csharp
+    using Microsoft.Maui.Controls;
+    using Microsoft.Maui.Essentials;
+    using System;
+    
+    namespace Phoneword
+    {
+        public partial class MainPage : ContentPage, IPage
+        {
+            public MainPage()
+            {
+                InitializeComponent();
+            }
+        }
+    }
+    ```
+
+1. Add the `translatedNumber` string variable and the following `OnTranslate` method to the `MainPage` class, after the constructor. The `OnTranslate` method retrieves the phone number from the `Text` property of the `Entry` control and passes it to the static ToNumber method of the `PhonewordTranslator` class that you created earlier.
+
+    > [!NOTE]
+    > The editor window might display warnings or errors stating that the PhoneNumberText control doesn't exist. You can ignore these errors and warnings; they will be resolved when you build the application.
+
+    ```csharp
+    public class MainPage : ContentPage
+    {
+        ...
+        string translatedNumber;
+    
+        private void OnTranslate(object sender, EventArgs e)
+        {
+            string enteredNumber = PhoneNumberText.Text;
+            translatedNumber = Core.PhonewordTranslator.ToNumber(enteredNumber);
+    
+            if (!string.IsNullOrEmpty(translatedNumber))
+            {
+                // TODO:
+            }
+            else
+            {
+                // TODO:
+            }
+        }
+    }
+    ```
+
+    > [!NOTE]
+    > You'll fill in the missing TODO bits of this code in the next step.
+
+1. In the `OnTranslate` method, add code to change the `Text` property of the **Call** button to include the phone number when it's successfully translated. You can use the value you stored in the translatedNumber field. Also, enable and disable the button based on the successful translation. For example, if `TranslateNumber` returned null, disable the button, but if it was successful, enable it.
+
+    ```csharp
+    private void OnTranslate(object sender, EventArgs e)
+    {
+        string enteredNumber = PhoneNumberText.Text;
+        translatedNumber = Core.PhonewordTranslator.ToNumber(enteredNumber);
+    
+        if (!string.IsNullOrEmpty(translatedNumber))
+        {
+            CallButton.IsEnabled = true;
+            CallButton.Text = "Call " + translatedNumber;
+        }
+        else
+        {
+            CallButton.IsEnabled = false;
+            CallButton.Text = "Call";
+        }
+    }
+    ```
+
+## Create the event method for the **CallButton** button
+
+1. Add the `OnCall` event handling method to the end of the `MainPage` class. Note that this method will make use of asynchronous operations, so mark it as `async`:
+
+    ```csharp
+    public class MainPage : ContentPage
+    {
+    
+        ...
+        async void OnCall(object sender, System.EventArgs e)
+        {
+
+        }
+    }
+    ```
+
+1. In the `OnCall` method, prompt the user, by using the static **Page.DisplayAlert** method, to ask if they'd like to dial the number.
+
+    The parameters to `DisplayAlert` are a title, a message, and two strings used for the Accept and Cancel button text. It returns a Boolean indicating whether the Accept button was pressed to dismiss the dialog box.
+
+    ```csharp
+    async void OnCall(object sender, System.EventArgs e)
+    {
+        if (await this.DisplayAlert(
+            "Dial a Number",
+            "Would you like to call " + translatedNumber + "?",
+            "Yes",
+            "No"))
+        {
+            // TODO: dial the phone
+        }
+    }
+    ```
+
+## Test the application
+
+1. In the Visual Studio toolbar, select the **Windows Machine** profile and start debugging.
+
+1. Tap the **Translate** button to convert the default text to a valid phone number. The caption on the **Call** button should change to **Call 1-555-6386284**:
+
+    :::image type="content" source="../media/6-phoneword-ui.png" alt-text="The Phoneword UI. The user has translated the text to a valid phone number.":::
+
+1. Tap the **Call** button. Verify that a prompt appears asking you to confirm the operation. Select **No**.
+
+    :::image type="content" source="../media/6-prompt.png" alt-text="The Dial a Number prompt":::
+
+1. Return to Visual Studio and stop debugging.
+
+## Dial the phone number
+
+1. In the **MainPage.xaml.cs** code-behind file, edit the **OnCall** method and replace the **TODO** comment with the `try/catch` blocks:
+
+    ```csharp
+    async void OnCall(object sender, System.EventArgs e)
+    {
+        if (await this.DisplayAlert(
+            "Dial a Number",
+            "Would you like to call " + translatedNumber + "?",
+            "Yes",
+            "No"))
+        {
+            try
+            {
+                PhoneDialer.Open(translatedNumber);
+            }
+            catch (ArgumentNullException)
+            {
+                await DisplayAlert("Unable to dial", "Phone number was not valid.", "OK");
+            }
+            catch (FeatureNotSupportedException)
+            {
+                await DisplayAlert("Unable to dial", "Phone dialing not supported.", "OK");
+            }
+            catch (Exception)
+            {
+                // Other error has occurred.
+                await DisplayAlert("Unable to dial", "Phone dialing failed.", "OK");
+            }
+        }
+    }
+    ```
+
+    The **PhoneDialer** class in the **Microsoft.Maui.Essentials** namespace provides an abstraction of the phone dialing functionality for the WinUI, Android, iOS (and iPadOS), and macOS platforms. The static **Open** method attempts to use the phone dialer to call the number provided as the parameter.
+
+    The following steps show how to update the Android application manifest to enable Android to use the phone dialer. Windows, iOS, and MacCatalyst, applications follow the same general principle, except that you specify a different operating-system dependent capability in the manifest.
+
+1. In the Solution Explorer window, expand the **Platforms** folder, expand the **Android** folder, and open the **AndroidManifest.xml** file in this folder.
+
+1. Add the following XML snippet inside the **manifest** node, after the existing content for this node.
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+        ...
+        <queries>
+            <intent>
+                <action android:name="android.intent.action.DIAL" />
+                <data android:scheme="tel"/>
+            </intent>
+        </queries>
+    </manifest>
+    ```
+
+1. Save the file.
+
+1. In the Visual Studio toolbar, select the **Android Emulators/Pixel 3a - API 30** profile and start debugging.
+
+1. When the app appears in the emulator, enter a phone number (or accept the default) tap **Translate**, and then tap **Call**.
+
+1. In the **Dial a Number** alert, select **Yes**. Verify that the Android phone dialer appears with the number you provided in the app.
+
+    :::image type="content" source="..\media\6-android-phone-dialer.png" alt-text="The Android phone dialer containing the number provided by the app.":::
+
+1. Return to Visual Studio and stop debugging.
+
+## Summary
+
+In this exercise, you've added a custom UI to your application by using pages and views. You also added support for placing a call by using platform-specific APIs available in Android.
