@@ -35,9 +35,9 @@ products:
 - sql-server
 units:
 - learn.azure.govern-azure-databases-with-microsoft-purview.1-introduction
-- learn.azure.govern-azure-databases-with-microsoft-purview.2-discover-govern-data-different-sources-using-microsoft-purview
-- learn.azure.govern-azure-databases-with-microsoft-purview.3-govern-manage-data-sql-server
-- learn.azure.govern-azure-databases-with-microsoft-purview.4-govern-manage-data-from-amazon-relational-database-service
+- learn.azure.govern-azure-databases-with-microsoft-purview.2-register-scan-azure-sql-data
+- learn.azure.govern-azure-databases-with-microsoft-purview.3-register-scan-azure-sql-managed-instance-data
+- learn.azure.govern-azure-databases-with-microsoft-purview.4-govern-manage-azure-sql-data
 - learn.azure.govern-azure-databases-with-microsoft-purview.5-knowledge-check
 - learn.azure.govern-azure-databases-with-microsoft-purview.6-summary
 badge:
