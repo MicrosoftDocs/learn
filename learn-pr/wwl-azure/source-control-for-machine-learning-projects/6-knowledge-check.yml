@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.source-control-for-machine-learning-projects.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/27/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What's the first thing a data scientist should do when assigned a work item to improve a model (which is already in production)?"
+    choices:
+    - content: "Create a repo."
+      isCorrect: false
+      explanation: "Incorrect. As the model is already in production, a repo already should exist."
+    - content: "Create an issue."
+      isCorrect: false
+      explanation: "Incorrect. The data scientist is already assigned a work item or issue."
+    - content: "Create a branch in the repo."
+      isCorrect: true
+      explanation: "Correct. Based on an assigned work item or issue, a data scientist should create a branch."
+  - content: "When should a data scientist commit when working locally in Visual Studio Code?"
+    choices:
+    - content: "After all changes have been made."
+      isCorrect: false
+      explanation: "Incorrect. If all changes are committed at once, it'll be harder for team members to review or undo the changes."
+    - content: "After a small change."
+      isCorrect: true
+      explanation: "Correct. It's best practice to commit small changes and do it often."
+    - content: "To upload all changes to the main repo."
+      isCorrect: false
+      explanation: "Incorrect. After committing all changes, you push the commits to the repo."
