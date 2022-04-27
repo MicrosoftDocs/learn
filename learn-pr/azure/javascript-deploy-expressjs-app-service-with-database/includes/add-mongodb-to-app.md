@@ -10,4 +10,4 @@ The Azure Cosmos DB API for MongoDB makes it easy to use Cosmos DB as if it were
 * Serverless consumption.
 * Compatible with several MongoDB server versions.
 
-:::image type="content" source="./media/cosmosdb-mongodb.png" alt-text="Azure Cosmos DB's API for MongoDB":::
+:::image type="content" source="../media/cosmosdb-mongodb.png" alt-text="Azure Cosmos DB's API for MongoDB":::
