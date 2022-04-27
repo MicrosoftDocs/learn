@@ -288,18 +288,17 @@ Your manager at Contoso Pizza has given you some new requirements that force you
 
         > [!NOTE]
         > The message "An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy." is displayed. This is because we have changed the relationship from `Pizza` to `Topping` from one-to-many to many-to-many, which requires that an existing foreign key column is dropped. This is OK because we don't yet have any data in our database. However, in general it is a good idea to check the generated migration when this warning is displayed to make sure no data is deleted or truncated by the migration.
-6. 
-7. Run the following command to apply the *:::no-loc text="ModelRevisions":::* migration:
+6. Run the following command to apply the *:::no-loc text="ModelRevisions":::* migration:
 
     ```dotnetcli
     dotnet ef database update --context PizzaContext
     ```
 
-8. In the title bar of the **SQLITE EXPLORER** pane, select the **Refresh Databases** button.
+7. In the title bar of the **SQLITE EXPLORER** pane, select the **Refresh Databases** button.
 
     :::image type="content" source="../media/refresh-database.png" alt-text="The Refresh Database button in the SQLite Explorer tab.":::
 
-9. In the **SQLITE EXPLORER** pane, right-click **ContosoPizza.db**. Select **Show Table 'sqlite_master'** to view the full database schema and constraints.
+8. In the **SQLITE EXPLORER** pane, right-click **ContosoPizza.db**. Select **Show Table 'sqlite_master'** to view the full database schema and constraints.
 
     > [!IMPORTANT]
     > The SQLite extension will re-use open **SQLite** tabs.
@@ -314,6 +313,6 @@ Your manager at Contoso Pizza has given you some new requirements that force you
     > [!TIP]
     > EF Core database providers handle mapping model schema to a particular database's features. While SQLite doesn't implement a corresponding constraint for `MaxLength`, other databases like SQL Server and PostgreSQL do.
 
-10. In the **SQLITE EXPLORER** pane, right-click the `_EFMigrationsHistory` table and select **Show Table**. The table contains a list of all migrations applied to the database.
+9. In the **SQLITE EXPLORER** pane, right-click the `_EFMigrationsHistory` table and select **Show Table**. The table contains a list of all migrations applied to the database.
 
 You've used migrations to define and update a database schema. In the next unit, you'll finish the methods in `PizzaService` that manipulate data.
