@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning
+metadata:
+  title: Deploy deep learning workloads to production with Azure Machine Learning
+  description: "Deploy deep learning workloads to production with Azure Machine Learning"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy deep learning workloads to production with Azure Machine Learning
+summary: Deploying large-scale models for real-time inferencing is challenging because of the model's size. Learn what you can do and which frameworks you can use to optimize your model's performance during model scoring.
+abstract: |
+  In this module, you'll learn:
+  - To choose the appropriate inference strategy
+  - To optimize model scoring with ONNX
+  - To deploy Triton as a managed online endpoint
+prerequisites: |
+  Before starting this module, you should be familiar with the Azure Machine Learning service and training machine learning and deep learning models.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+units:
+- learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.introduction
+- learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.choose-appropriate-inference-strategy
+- learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.standardize-model-formats-scale-model-deployment-onnx-triton
+- learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.exercise-deploy-onnx-model-triton
+- learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.knowledge-check
+- learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.summary
+badge:
+  uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.badge

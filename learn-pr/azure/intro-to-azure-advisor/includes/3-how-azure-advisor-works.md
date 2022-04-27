@@ -21,7 +21,7 @@ Under  the **Rules** option, it is possible to configure the average CPU utiliza
 
 ## Download recommendations
 
-You can download a summary of the recommendations from Advisor in a CSV or PDF format. Downloading the file, makes easy to share with your coworkers, or perform your own analysis. You can choose to download only data for specific recommendations or categories that you are viewing. It can help you target actions that may be necessary on specific areas of your subscription.
+You can download a summary of the recommendations from Advisor in a CSV or PDF format. Downloading the file makes easy to share with your coworkers, or you can perform your own analysis. You can choose to download only data for specific recommendations or categories that you are viewing. It can help you target actions that may be necessary on specific areas of your subscription.
 
 :::image type="content" source="../media/3-advisor-download-recommendations.png" alt-text="A screenshot depicting the location of the download buttons for the .csv or PDF options.":::
 
@@ -33,7 +33,7 @@ You can choose to receive alerts from Advisor. When a new recommendation is dete
 
 Configuring the alert requires that you define a scope by selecting a subscription and, optionally, a resource group.
 
-Alerts ar driven by conditions. Here you have two mutually exclusive options:
+Alerts are driven by conditions. Here you have two mutually exclusive options:
 
 * Category and impact level: In this option, you could select one of the categories (Cost, Performance, Reliability, and Operational excellence) and an impact level (Low, Medium, and High). Both of these are optional configurations.
 * Recommendation Type: If you choose by recommendation type, you would select the recommendation type that is most appropriate for your needs. You can view the available selections from the dropdown list.
@@ -77,7 +77,7 @@ The estimate cost savings will be displayed for the recommended actions to help 
 
 ### Security Recommendations
 
-Security recommendations are integrated with Azure Security Center. You can get security recommendations from the Security tab on the Advisor dashboard.
+Security recommendations are integrated with Microsoft Defender for Cloud. You can get security recommendations from the Security tab on the Advisor dashboard.
 
 :::image type="content" source="../media/3-advisor-security.png" alt-text="A screenshot depicting some security recommendations for a subscription. Displayed information indicates impact (high, medium, or low), a description of the recommendation, the impacted resource, and a date-time stamp for when the recommendation was last updated.":::
 

@@ -4,12 +4,13 @@ title: Setup availability sets
 metadata:
   title: Setup availability sets
   description: "Setup availability sets"
-  ms.date: 07/28/2021
+  ms.date: 01/06/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-setup-availability-sets.md)]

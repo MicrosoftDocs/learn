@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Send an email when virtual machines change
   description: Check an event and trigger an email
   ms.date: 04/30/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Send an email when virtual machines change
@@ -13,16 +13,3 @@ durationInMinutes: 7
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-email-vm-change.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: Microsoft.Compute/virtualMachines
-  hint: "Please make sure you have a VM deployed to test Event Grid."
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: Microsoft.Logic/workflows
-  hint: "Please make sure you have a logic app deployed to test Event Grid."

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-application-configuration-data.understand-external-configuration-store-patterns
+title: Understand external configuration store patterns
+metadata:
+  title: Understand external configuration store patterns
+  description: "Understand external configuration store patterns"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-understand-external-configuration-store-patterns.md)]

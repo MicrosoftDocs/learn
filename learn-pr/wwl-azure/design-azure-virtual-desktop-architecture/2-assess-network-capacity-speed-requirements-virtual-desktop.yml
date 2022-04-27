@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-azure-virtual-desktop-architecture.assess-network-capacity-speed-requirements-for
+title: Assess network capacity and speed requirements for Azure Virtual Desktop
+metadata:
+  title: Assess network capacity and speed requirements for Azure Virtual Desktop
+  description: "Assess network capacity and speed requirements for Azure Virtual Desktop"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-assess-network-capacity-speed-requirements-virtual-desktop.md)]

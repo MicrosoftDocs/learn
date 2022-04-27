@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Configure network settings
   description: Configure network settings
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Build a local API
 durationInMinutes: 5
 content: |

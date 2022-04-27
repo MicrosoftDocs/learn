@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.support-sdk
+title: Configure multi-region support in the SDK
+metadata:
+  title: Configure multi-region support in the SDK
+  description: "Configure multi-region support in the SDK"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-support-sdk.md)]

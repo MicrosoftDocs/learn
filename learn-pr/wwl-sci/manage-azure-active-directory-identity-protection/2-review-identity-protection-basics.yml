@@ -4,12 +4,13 @@ title: Review identity protection basics
 metadata:
   title: Review identity protection basics
   description: "Review identity protection basics"
-  ms.date: 07/23/2021
+  ms.date: 03/07/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-review-identity-protection-basics.md)]

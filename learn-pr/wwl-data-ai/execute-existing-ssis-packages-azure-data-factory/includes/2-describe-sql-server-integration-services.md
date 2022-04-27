@@ -11,4 +11,3 @@ From SQL Server 2012, a project is the unit of deployment for SSIS solutions. Yo
 ## SSIS packages
 
 A project contains one or more packages, each defining a workflow of tasks to be executed. The workflow of tasks in a package is referred to as its control flow. A package control flow can include one or more Data Flow task, each of which encapsulates its own data flow pipeline. Packages can include package-level parameters so that dynamic values can be passed to the package at run time. In previous releases of SSIS, deployment was managed at the package level. 
-

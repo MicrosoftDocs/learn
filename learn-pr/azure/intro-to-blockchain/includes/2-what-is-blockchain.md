@@ -8,7 +8,7 @@ We could use a centralized database that all participants use to track shipments
 
 ![A farm, factory, shipper, and a shop use a single centralized database.](../media/centralized-database.png)
 
-The advantage of the centralized database is that it's easy to control access and consistency. Everyone is using the same database and there's a trusted authority controlling access. Because there is only one database, all participants are using the same set of data. All participants need to trust the database is correct, and by extension they need to trust the owner of the database not to modify historical data for any reason.
+The advantage of a centralized database is that it's easy to control access and consistency. Everyone is using the same database and there's a trusted authority controlling access. Because there is only one database, all participants are using the same set of data. All participants need to trust the database is correct, and by extension they need to trust the owner of the database not to modify historical data for any reason.
 
 What if our scenario doesn't allow for a trusted central authority? What if no one company wants to be responsible for hosting a centralized database? Perhaps the requirements for system integration with each participant system can't be met.
 

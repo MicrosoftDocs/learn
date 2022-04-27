@@ -1,37 +1,39 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-non-relational-data-stores-azure
 metadata:
-  title: Manage non-relational data stores in Azure
-  description: "Manage non-relational data stores in Azure"
-  ms.date: 07/28/2021
+  title: Explore fundamentals of Azure Cosmos DB
+  description: "Explore fundamentals of Azure Cosmos DB"
+  ms.date: 03/10/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage non-relational data stores in Azure
-summary: Learn how to upload and retrieve data held in Azure Cosmos DB, Azure Blob storage, and Azure File storage.
+title: Explore fundamentals of Azure Cosmos DB
+summary: Azure Cosmos DB provides a highly scalable store for non-relational data.
 abstract: |
-  In this module, you will:
-  * Describe Azure Cosmos DB APIs
-  * Describe non-relational Azure storage management
+  In this module, you'll learn how to:
+  - Describe key features and capabilities of Azure Cosmos DB
+  - Identify the APIs supported in Azure Cosmos DB
+  - Provision and use an Azure Cosmos DB instance
 prerequisites: |
-  None
+  Before starting this module you should have some familiarity with Microsoft Azure concepts and the Azure portal.
 iconUrl: /learn/achievements/explore-non-relational-data-stores-azure.svg
 levels:
 - beginner
 roles:
-- administrator
-- business-user
+- data-analyst
 - data-engineer
+- database-administrator
+- developer
 - student
 products:
 - azure
 units:
 - learn.wwl.explore-non-relational-data-stores-azure.introduction
-- learn.wwl.explore-non-relational-data-stores-azure.manage-azure-cosmos-db
-- learn.wwl.explore-non-relational-data-stores-azure.query-azure-cosmos-db
-- learn.wwl.explore-non-relational-data-stores-azure.manage-azure-blob-storage
-- learn.wwl.explore-non-relational-data-stores-azure.manage-azure-file-storage
+- learn.wwl.explore-non-relational-data-stores-azure.azure-cosmos-db
+- learn.wwl.explore-non-relational-data-stores-azure.azure-cosmos-db-apis
+- learn.wwl.explore-non-relational-data-stores-azure.exercise-azure-cosmos-db
+- learn.wwl.explore-non-relational-data-stores-azure.knowledge-check
 - learn.wwl.explore-non-relational-data-stores-azure.summary
 badge:
   uid: learn.wwl.explore-non-relational-data-stores-azure.badge

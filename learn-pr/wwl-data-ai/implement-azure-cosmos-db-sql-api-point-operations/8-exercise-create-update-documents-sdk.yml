@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.exercise-create-update-documents-sdk
+title: 'Exercise: Create and update documents with the Azure Cosmos DB SQL API SDK'
+metadata:
+  title: 'Exercise: Create and update documents with the Azure Cosmos DB SQL API SDK'
+  description: "Exercise: Create and update documents with the Azure Cosmos DB SQL API SDK"
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107576
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-exercise-create-update-documents-sdk.md)]

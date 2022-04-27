@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-transact-sql-programming.use-if-while-blocks-to-control-program-flow
+title: Use IF and WHILE blocks to control program flow
+metadata:
+  title: Use IF and WHILE blocks to control program flow
+  description: "Use IF and WHILE blocks to control program flow"
+  ms.date: 02/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-use-if-while-blocks-to-control-program-flow.md)]

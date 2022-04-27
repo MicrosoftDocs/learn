@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: In this unit, you'll review what you've learned about Azure Functions and how to use API Management to integrate them into APIs.
   ms.date: 09/26/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

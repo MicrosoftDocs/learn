@@ -18,9 +18,11 @@ Each Attack Surface Reduction rule contains one of three settings:
 
 - **Audit**: Evaluate how the attack surface reduction rule would impact your organization if enabled
 
+- **Warn**: Enable the Attack Surface Reduction rule but allow the end user to bypass the block
+
 ## Attack surface reduction rules
 
-Attack Surface Reduction rules currently supports all of the rules below:
+Attack Surface Reduction rules currently support the rules below:
 
 - Block executable content from email client and webmail
 - Block all Office applications from creating child processes
@@ -52,7 +54,7 @@ Use audit mode to evaluate how attack surface reduction rules would impact your 
 
 ## Notifications when a rule is triggered
 
-Whenever a rule is triggered, a notification will be displayed on the device. You can customize the notification with your company details and contact information. The notification also displays within the Microsoft Defender Security Center and the Microsoft 365 security center.
+Whenever a rule is triggered, a notification will be displayed on the device. You can customize the notification with your company details and contact information. The notification also displays within the Microsoft 365 Defender portal.
 
 ## Configure attack surface reduction rules
 
@@ -62,6 +64,9 @@ You can set these rules for devices running any of the following editions and ve
 - Windows 10 Enterprise, version 1709 or later
 - Windows Server, version 1803 (Semi-Annual Channel) or later
 - Windows Server 2019
+- Windows Server 2016
+- Windows Server 2012 R2
+- Windows Server 2022
 
 You can enable attack surface reduction rules by using any of these methods:
 
@@ -75,7 +80,7 @@ Enterprise-level management such as Intune or Microsoft Endpoint Configuration M
 
 ### Intune
 
-To manage the Attack Surface Reduction rules in Intune:
+#### Device Configuration Profiles:
 
 1. Select **Device configuration > Profiles**. Choose an existing endpoint protection profile or create a new one. To create a new one, select **Create profile** and enter information for this profile. For Profile type, select **Endpoint protection**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
 
@@ -86,6 +91,18 @@ To manage the Attack Surface Reduction rules in Intune:
     C:\folder, %ProgramFiles%\folder\file, C:\path
 
 1. Select **OK** on the three configuration panes. Then select Create if you're creating a new endpoint protection file or Save if you're editing an existing one.
+
+#### Endpoint security policy:
+
+1.  Select **Endpoint Security > Attack surface reduction**. Choose an existing rule or create a new one. To create a new one, select **Create Policy** and enter information for this profile. For Profile type, select **Attack surface reduction rules**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
+
+1. In the Configuration settings pane, select **Attack Surface Reduction** and then select the desired setting for each rule.
+
+1. Under **List of additional folders that need to be protected, List of apps that have access to protected folders, and Exclude files and paths from attack surface reduction rules**, enter individual files and folders. You can also select Import to import a CSV file that contains files and folders to exclude from attack surface reduction rules. Each line in the CSV file should be formatted as follows:  
+
+    C:\folder, %ProgramFiles%\folder\file, C:\path
+
+1. Select **Next** on the three configuration panes, then select **Create** if you're creating a new policy or **Save** if you're editing an existing policy.
 
 ### Mobile device management
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-fundamentals-of-stream-processing.exercise-process-streaming-data-using-spark
+title: 'Exercise: Process streaming data using Spark'
+metadata:
+  title: 'Exercise: Process streaming data using Spark'
+  description: "Exercise: Process streaming data using Spark"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/7-exercise-spark-streaming.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates.explore-template-components
+title: Explore template components
+metadata:
+  title: Explore template components
+  description: "Explore template components"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-explore-template-components.md)]

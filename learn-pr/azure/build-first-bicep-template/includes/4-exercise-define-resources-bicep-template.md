@@ -20,14 +20,14 @@ During the process, you'll:
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
  
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *templates* folder in which to save the file.
 
-1. Add the following content into the file. You'll deploy the template soon. It's a good idea to type this in yourself instead of copying and pasting, so that you can see how the tooling helps you to write your Bicep files.
+1. Add the following content into the file. You'll deploy the template soon. It's a good idea to type this in yourself instead of copying and pasting, so you can see how the tooling helps you to write your Bicep files.
 
    :::code language="bicep" source="code/4-template.bicep" range="1-11":::
 
    > [!TIP]
-   > Bicep is strict about where you put line breaks, so make sure you don't put line breaks in different places than what's listed here.
+   > Bicep is strict about where you put line breaks, so make sure you don't put line breaks in different places than listed here.
 
    Notice that Visual Studio Code automatically suggests property names as you type. The Bicep extension for Visual Studio Code understands the resources you're defining in your template, and it lists the available properties and values that you can use.
 
@@ -59,7 +59,7 @@ You'll see `Running...` in the terminal.
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to complete, and then you'll see a successful deployment. 
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to complete, and you'll see a successful deployment. 
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -120,7 +120,7 @@ In the previous task, you learned how to create a template that contains a singl
 
 1. In the *main.bicep* file in Visual Studio Code, add the following code to the bottom of the file:
 
-   :::code language="bicep" source="code/4-template.bicep" range="13-29":::
+   :::code language="bicep" source="code/4-template.bicep" range="13-28":::
 
 1. Update the name of the App Service app from `toy-product-launch-1` to something that's likely to be unique. Make sure the name is all lowercase, contains only alphanumerics and hyphens, doesn't start or end with a hyphen, and has 2 to 60 characters.
 

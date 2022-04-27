@@ -3,9 +3,9 @@ uid: learn.design-ip-addressing-for-azure.5-exercise-implement-vnets
 metadata:
   title: Exercise - Design and implement IP addressing for Azure virtual networks
   description: Exercise - Design and implement IP addressing for Azure virtual networks
-  ms.date: 10/17/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 03/01/2022
+  author: asudbring
+  ms.author: allensu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Design and implement IP addressing for Azure virtual networks
@@ -14,25 +14,26 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-implement-vnets.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Network/virtualNetworks"
-      name: CoreServicesVnet
-  hint: "Make sure you have created the CoreServicesVnet virtual network."
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Network/virtualNetworks"
-      name: ManufacturingVnet
-  hint: "Make sure you have created the ManufacturingVnet virtual network."
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Network/virtualNetworks"
-      name: ResearchVnet
-  hint: "Make sure you have created the ResearchVnet virtual network."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Network/virtualNetworks"
+#       name: CoreServicesVnet
+#   hint: "Make sure you have created the CoreServicesVnet virtual network."
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Network/virtualNetworks"
+#       name: ManufacturingVnet
+#   hint: "Make sure you have created the ManufacturingVnet virtual network."
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.Network/virtualNetworks"
+#       name: ResearchVnet
+#   hint: "Make sure you have created the ResearchVnet virtual network."

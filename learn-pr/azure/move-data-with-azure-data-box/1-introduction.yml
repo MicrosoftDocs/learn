@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: In this unit, you'll learn about a business problem that you can address by using Azure Data Box products.
   ms.date: 07/26/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: alkohli
+  ms.author: alkohli
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

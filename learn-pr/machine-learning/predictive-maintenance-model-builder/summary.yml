@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.predictive-maintenance-model-builder.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: "You've trained a machine learning model with ML.NET and Model Builder! Review what you've learned and discover next steps."
+  ms.date: 10/25/2021
+  author: luisquintanilla
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+  ms.custom: team=nextgen
+durationInMinutes: 1
+content: |
+  [!include[](includes/summary.md)]

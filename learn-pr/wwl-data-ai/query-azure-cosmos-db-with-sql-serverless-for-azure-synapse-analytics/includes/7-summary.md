@@ -8,4 +8,4 @@ Now you have completed this module, you'll be able to:
 - Perform complex queries with JSON data
 - Visualize Azure Cosmos DB data in Power BI
 
-The official technical documentation supporting this module can be found [here](/azure/synapse-analytics/sql/query-cosmos-db-analytical-store)
+The official technical documentation supporting this module can be found [here](/azure/synapse-analytics/sql/query-cosmos-db-analytical-store?toc=%2Fazure%2Fcosmos-db%2Ftoc.json&bc=%2Fazure%2Fcosmos-db%2Fbreadcrumb%2Ftoc.json&tabs=openrowset-key)

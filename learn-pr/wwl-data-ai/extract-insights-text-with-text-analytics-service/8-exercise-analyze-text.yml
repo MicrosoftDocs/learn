@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.extract-insights-text-with-text-analytics-service.exercise
-title: Exercise - Analyze text with the Text Analytics Service
+title: Exercise - Analyze text
 metadata:
-  title: Exercise - Analyze text with the Text Analytics Service
-  description: "Exercise - Analyze text with the Text Analytics Service"
-  ms.date: 06/28/2021
+  title: Exercise - Analyze text
+  description: "Exercise - Analyze text"
+  ms.date: 12/09/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

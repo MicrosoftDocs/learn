@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.use-consistency-models-azure-cosmos-db-sql-api
+metadata:
+  title: Use consistency models in Azure Cosmos DB SQL API
+  description: "Configure consistency on a sliding scale for Azure Cosmos DB SQL API."
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use consistency models in Azure Cosmos DB SQL API
+summary: Configure consistency on a sliding scale for Azure Cosmos DB SQL API.
+abstract: |
+  After completing this module, you'll be able to:
+  - Configure default consistency level for an Azure Cosmos DB account
+  - Change the consistency level on a per-request basis
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+iconUrl: /learn/achievements/azure-cosmos-db-sql-api-consistency-models.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.introduction
+- learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.understand
+- learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.configure-default-consistency-model-portal
+- learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.change-consistency-model-sdk
+- learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.use-session-tokens
+- learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.exercise-configure-consistency-models-portal-sdk
+- learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.knowledge-check
+- learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.summary
+badge:
+  uid: learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-authentication-authorization-solutions.design-for-identity-protection
+title: Design for identity protection
+metadata:
+  title: Design for identity protection
+  description: "Design for identity protection"
+  ms.date: 04/27/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-design-for-identity-protection.md)]

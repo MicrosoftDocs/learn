@@ -3,46 +3,44 @@ uid: learn.persist-data-ef-core
 metadata:
   title: Persist and retrieve relational data with Entity Framework Core
   description: This module guides you through creating a data access project, connecting to a relational database, and writing CRUD queries.
-  ms.date: 09/24/2019
-  author: scottaddie
-  ms.author: scaddie
+  ms.date: 12/13/2021
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: learning-dotnet
 title: Persist and retrieve relational data with Entity Framework Core
-summary: Query and manage relational data in a .NET Core app with an Object-Relational Mapper (O/RM).
+summary: Query and manage relational data in a .NET Core app with an Object-Relational Mapper (ORM).
 abstract: | 
   In this module, you will:
-  - Configure a connection to a relational database hosted in Azure.
-  - Create a domain model representing the relational data model.
-  - Add tables and data to the relational database.
-  - Write and test CRUD queries.
-  - Enable logging of the generated SQL.
+  - Review object-relational mapper (ORM) concepts.
+  - Understand Entity Framework Core (EF Core) architecture.
+  - Write C# code to interact with a database using EF Core.
+  - Use EF Core Migrations to keep the code and database in sync.
+  - Use reverse engineering to generate entity models from an existing database.
+  - Seed a database on app startup.
 prerequisites: |
   - Experience writing C# at the beginner level
-  - Experience using relational databases and SQL as a developer
+  - A basic understanding of relational databases
+  - Visual Studio Code
+  - .NET SDK 6.0 or greater
+  - Git command-line client
+iconUrl: /learn/achievements/aspnetcore/persist-data-ef-core.svg
 levels:
-- intermediate
+- beginner
 roles:
 - developer
 products:
 - dotnet
 - aspnet-core
 - dotnet-core
-- dotnet-standard
 - ef-core
-- azure
-- azure-monitor
-- azure-sql-database
 units:
-- learn.persist-data-ef-core.1-introduction
-- learn.persist-data-ef-core.2-setup-environment
-- learn.persist-data-ef-core.3-configure-db-connection
-- learn.persist-data-ef-core.4-design-domain-model
-- learn.persist-data-ef-core.5-write-crud-queries
-- learn.persist-data-ef-core.6-call-crud-queries
-- learn.persist-data-ef-core.7-enable-sql-logging
-- learn.persist-data-ef-core.8-knowledge-check
-- learn.persist-data-ef-core.9-summary
-iconUrl: /learn/achievements/aspnetcore/persist-data-ef-core.svg
+- learn.persist-data-ef-core.introduction
+- learn.persist-data-ef-core.understanding-ef-core
+- learn.persist-data-ef-core.migrations
+- learn.persist-data-ef-core.interacting-data
+- learn.persist-data-ef-core.test-db-operations
+- learn.persist-data-ef-core.reverse-engineering
+- learn.persist-data-ef-core.summary
 badge:
   uid: learn.persist-data-ef-core.badge

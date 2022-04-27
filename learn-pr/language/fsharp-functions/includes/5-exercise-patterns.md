@@ -8,12 +8,12 @@ As mentioned, your colleagues have been busy writing code. Here it is:
 ```fsharp
 let cards = [21; 3; 1; 7; 9; 23]
 let cardFace card = 
-       let no = card % 13
-       if no = 14 || no = 1 then "Ace"
-       elif no = 13 then "King"
-       elif no = 12 then "Queen"
-       elif no = 11 then "Jack"
-       else string no
+    let no = card % 13
+    if no = 1 then "Ace"
+    elif no = 0 then "King"
+    elif no = 12 then "Queen"
+    elif no = 11 then "Jack"
+    else string no
 
 let suit card =
     let no = card / 13
@@ -23,13 +23,14 @@ let suit card =
     else "Clubs"
 
 let shuffle list =
-    let random = new System.Random()
+    let random = System.Random()
     list |> List.sortBy (fun x -> random.Next())
 
-let take list = List.take list 
 let printCard card = printfn "%s of %s" (cardFace card) (suit card)
 
 let printAll list = List.iter(fun x -> printCard(x)) list
+
+let take (no:int) (list) = List.take no list 
 ```
 
 The code consists of different parts that will help you implement a card game. So, what's the task? Your task is to take a deck of cards, shuffle it, take the top three cards, and then print the results.
@@ -41,9 +42,9 @@ The code consists of different parts that will help you implement a card game. S
     cd Cards
     ```
 
-1. Take the code you've been given and place it above the `main()` method in the _Program.fs_ file.
+1. Replace the code in the _Program.fs_ file with the code you've been given.
 
-1. Create a pipeline by adding the following line in the `main()` method:
+1. Create a pipeline by adding the following line at the end:
 
    ```fsharp
    cards |> shuffle |> take 3 |> printAll
@@ -58,7 +59,6 @@ The code consists of different parts that will help you implement a card game. S
    ```
 
    You should see three cards being printed with their proper description and suit. Here's an example output of what it can look like:
-
 
     ```output
     Ace of Hearts

@@ -4,11 +4,10 @@ metadata:
   title: Use multiple cell layouts in a ListView
   description: "Use different cell layouts for different types of rows in a ListView."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Use multiple cell layouts in a ListView
 durationInMinutes: 6
 content: |

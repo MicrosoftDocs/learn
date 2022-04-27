@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-user-experience-settings.virtual-desktop-optimization-principles
+title: Virtual desktop optimization principles
+metadata:
+  title: Virtual desktop optimization principles
+  description: "Virtual desktop optimization principles"
+  ms.date: 12/02/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-virtual-desktop-optimization-principles.md)]

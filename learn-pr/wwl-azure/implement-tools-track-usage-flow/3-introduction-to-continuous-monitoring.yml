@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-tools-to-track-usage-flow.introduction-to-continuous-monitoring
+title: Introduction to continuous monitoring
+metadata:
+  title: Introduction to continuous monitoring
+  description: "Introduction to continuous monitoring"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-introduction-to-continuous-monitoring.md)]

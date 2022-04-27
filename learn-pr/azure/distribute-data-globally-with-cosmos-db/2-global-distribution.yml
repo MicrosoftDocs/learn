@@ -3,7 +3,7 @@ uid: learn.distribute-data-globally-with-cosmos-db.2-global-distribution
 metadata:
   title: Exercise - Distribute data globally
   description: Learn how to use Azure Cosmos DB to replicate your data in multiple regions around the world.
-  ms.date: 09/24/2018
+  ms.date: 01/20/2022
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
@@ -13,10 +13,11 @@ azureSandbox: true
 durationInMinutes: 8
 content: |
   [!include[](includes/2-global-distribution.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.DocumentDB/databaseAccounts"
-  hint: "Follow the directions to create an Azure Cosmos DB account."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.DocumentDB/databaseAccounts"
+#   hint: "Follow the directions to create an Azure Cosmos DB account."

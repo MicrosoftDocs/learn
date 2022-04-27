@@ -42,24 +42,25 @@ Next, we want to integrate with the OpenZeppelin contracts library.
 
 To do that, in the terminal, run `npm install @openzeppelin/contracts`.
 
-Wait for the package to install to your project successfully. You should see the following output in your terminal:
+Wait for the package to install to your project successfully. You should see output like the following in your terminal:
 
 ```output
-+ @openzeppelin/contracts@3.2.0
-added 1 package from 1 contributor and audited 1 package in 0.589s
++ @openzeppelin/contracts@4.5.0
+added 2 packages from 1 contributor and audited 1 package in 1s
 found 0 vulnerabilities
 ```
 
 Notice that a couple things happened:
 
 1. The package was added as a dependency in the package.json file.
-1. A node_modules folder imported all the available contracts from OpenZeppelin, in the subfolder \@openzeppelin/contracts. Inspecting the contents of that folder returns the following output:
+1. A node_modules folder imported all the available contracts from OpenZeppelin, in the subfolder \@openzeppelin/contracts.
 
-  ```output
-  $ ls node_modules/@openzeppelin/contracts
-  GSN		build		math		presets		utils
-  README.md	cryptography	package.json	proxy
-  access		introspection	payment		token
-  ```
+Inspecting the contents of that folder returns the following output:
 
-Take some time to look through the available contract source files that are now available to your project. Pay special attention to the *token* contracts. Get a better understanding of the implementation of each contract and which functions typically are made available.
+```output
+$  ls node_modules/@openzeppelin/contracts
+README.md  build/    governance/  metatx/       proxy/     token/
+access/    finance/  interfaces/  package.json  security/  utils/
+```
+
+Take some time to look through the available contract source files that are now available to your project. Pay special attention to the *token* contracts. Get a better understanding of the implementation of each contract and which functions are typically made available.

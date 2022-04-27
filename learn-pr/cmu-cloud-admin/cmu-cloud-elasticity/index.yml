@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
+  ms.custom: team=nextgen
 title: Scale your cloud resources with elasticity
 summary: Discover what cloud elasticity means and different ways to scale your cloud resources.
 abstract: | 

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.exercise-create-stored-procedure-azure-portal
+title: 'Exercise: Create a stored procedure with the Azure portal'
+metadata:
+  title: 'Exercise: Create a stored procedure with the Azure portal'
+  description: "Exercise: Create a stored procedure with the Azure portal"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107599
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-create-stored-procedure-azure-portal.md)]

@@ -4,8 +4,8 @@ metadata:
   title: What is Hyper-V?
   description: Describe Windows Server Hyper-V and its components
   ms.date: 12/09/2020
-  author: micrum
-  ms.author: micrum
+  author: sethmanheim
+  ms.author: sethm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

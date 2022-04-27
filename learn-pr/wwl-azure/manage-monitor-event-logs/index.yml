@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.manage-monitor-event-logs
+metadata:
+  title: Manage and monitor Windows Server event logs
+  description: "Learn how Event Viewer provides a convenient and accessible location for you to observe events that occur. Access event information quickly and conveniently. Learn how to interpret the data in the event log."
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage and monitor Windows Server event logs
+summary: Learn how Event Viewer provides a convenient and accessible location for you to observe events that occur. Access event information quickly and conveniently. Learn how to interpret the data in the event log.
+abstract: |
+  After completing this module, you will be able to:
+  *   Describe event logs
+  *   Use Server Manager and Windows Admin Center to - Review event logs
+  *   Implement custom views
+  *   Configure an event subscription
+prerequisites: |
+  *   Working knowledge of common Windows Server management tools
+  *   Some experience managing typical Windows Server workloads
+  *   Familiarity with basic PowerShell commands and syntax
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+units:
+- learn.wwl.manage-monitor-event-logs.introduction
+- learn.wwl.manage-monitor-event-logs.describe-windows-server
+- learn.wwl.manage-monitor-event-logs.use-windows-admin-center-to-review-logs
+- learn.wwl.manage-monitor-event-logs.use-server-manager-to-review-logs
+- learn.wwl.manage-monitor-event-logs.use-custom-views
+- learn.wwl.manage-monitor-event-logs.implement-event-log-subscriptions
+- learn.wwl.manage-monitor-event-logs.knowledge-check
+- learn.wwl.manage-monitor-event-logs.summary
+badge:
+  uid: learn.wwl.manage-monitor-event-logs.badge

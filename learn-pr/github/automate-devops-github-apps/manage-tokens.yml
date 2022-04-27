@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.automate-devops-github-apps.manage-tokens
+title: Identify supported Access Tokens
+metadata:
+  title: Identify supported Access Tokens
+  description: Learn to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
+  ms.date: 10/07/2021
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/manage-tokens.md)]

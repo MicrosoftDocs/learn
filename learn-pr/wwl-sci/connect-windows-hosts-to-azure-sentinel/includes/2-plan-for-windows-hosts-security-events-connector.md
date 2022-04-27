@@ -1,8 +1,8 @@
-The Security Events connector lets you stream all security events from your Windows systems (servers and workstations, physical and virtual) to your Azure Sentinel workspace. This enables you to view Windows security events in your dashboards, use them to create custom alerts, and rely on them to improve your investigations, giving you more insight into your organization's network and expanding your security operations capabilities. You can select which events to stream from among the following sets:
+The Security Events connector lets you stream all security events from your Windows systems (servers and workstations, physical and virtual) to your Microsoft Sentinel workspace. This enables you to view Windows security events in your dashboards, use them to create custom alerts, and rely on them to improve your investigations, giving you more insight into your organization's network and expanding your security operations capabilities. You can select which events to stream from among the following sets:
 
 - All events - All Windows security and AppLocker events.
 
-- Common - A standard set of events for auditing purposes. A full user audit trail is included in this set. For example, it contains both user sign-in and user sign-out events (event IDs 4624, 4634). There are also auditing actions such as security group changes, key domain controller Kerberos operations, and other types of events in line with accepted best practices.
+- Common - A standard set of events for auditing purposes. A full user audit trail is included in this set. For example, it contains both user sign-in and user sign out events (event IDs 4624, 4634). There are also auditing actions such as security group changes, key domain controller Kerberos operations, and other types of events in line with accepted best practices.
 
 - The Common event set may contain some types of events that aren't so common. This is because the main point of the Common set is to reduce the volume of events to a more manageable level while still maintaining full audit trail capability.
 
@@ -28,7 +28,7 @@ To view the connector page:
 
 1. For each virtual machine that you want to connect, select its name in the list that appears on the right, and then select **Connect**.
 
-1. Select which event set ([All, Common, or Minimal](/azure/sentinel/connect-windows-security-events)) you want to stream.
+1. Select which event set ([All, Common, or Minimal](/azure/sentinel/connect-windows-security-events?azure-portal=true)) you want to stream.
 
 1. Select **Apply Changes**.
 

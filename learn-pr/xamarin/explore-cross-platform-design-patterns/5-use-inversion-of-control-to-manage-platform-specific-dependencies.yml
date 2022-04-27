@@ -4,11 +4,10 @@ metadata:
   title: Use inversion of control (IoC) to manage platform-specific dependencies
   description: "Learn how to use inversion of control (IoC) to manage platform-specific dependencies."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Use inversion of control (IoC) to manage platform-specific dependencies
 durationInMinutes: 5
 content: |

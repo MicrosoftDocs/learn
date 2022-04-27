@@ -5,10 +5,11 @@ metadata:
   title: Deploy a Logic Apps workflow using an Azure Resource Manager template
   description: Deploy a Logic Apps workflow using an Azure Resource Manager template
   ms.date: 05/03/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: ecfan
+  ms.author: estfan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: INDEX,FOLLOW
 durationInMinutes: 10
 content: |
   [!include[](includes/3-deploy-logic-app-using-arm-template.md)]

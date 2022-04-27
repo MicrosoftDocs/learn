@@ -16,7 +16,7 @@ SecurityAlert
 
 ## Let's take a look at a real-world example
 
-The following is an Azure Sentinel detection rule.  The essential concepts to review are;
+The following is a Microsoft Sentinel detection rule.  The essential concepts to review are;
 
 First, the use of **let** to define the timeframe variable enables maintenance and readability.
 
@@ -25,6 +25,9 @@ Second, the **dynamic** list creation is stored in the let variable DomainList.
 Third, the use of **extend** to create two new columns HTTP_Status_Code and Domain.
 
 Fourth, the results sets' progression via the pipe statement allows us to use the newly created columns as filters.
+
+> [!NOTE]
+> These KQL statements may not produce results in the Log Analytics Demo Environment due to the dynamic nature of the log analytics demo database. 
 
 ```kusto
 let timeframe = 1d;

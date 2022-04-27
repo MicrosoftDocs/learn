@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-terraform.exercise-run-terraform-visual-studio-code
+title: Exercise - Run Terraform in Visual Studio Code
+metadata:
+  title: Exercise - Run Terraform in Visual Studio Code
+  description: "Exercise - Run Terraform in Visual Studio Code"
+  ms.date: 02/25/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-exercise-run-terraform-visual-studio-code.md)]

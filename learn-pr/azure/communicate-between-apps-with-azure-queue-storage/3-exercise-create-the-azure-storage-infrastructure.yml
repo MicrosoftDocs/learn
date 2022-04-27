@@ -4,9 +4,9 @@ title: Exercise - Create a storage account
 metadata:
   title: Exercise - Create a storage account
   description: Create a storage account
-  ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 10/07/2021
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash

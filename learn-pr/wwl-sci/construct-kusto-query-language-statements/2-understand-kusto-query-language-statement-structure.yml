@@ -4,12 +4,13 @@ title: Understand the Kusto Query Language statement structure
 metadata:
   title: Understand the Kusto Query Language statement structure
   description: "Understand the Kusto Query Language statement structure"
-  ms.date: 03/04/2021
+  ms.date: 04/27/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-kusto-query-language-statement-structure.md)]

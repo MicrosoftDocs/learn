@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-queries-that-use-window-functions.describe-window-functions
+title: Describe window functions
+metadata:
+  title: Describe window functions
+  description: "Describe window functions"
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-describe-window-functions.md)]

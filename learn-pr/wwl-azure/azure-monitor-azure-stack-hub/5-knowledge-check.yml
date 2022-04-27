@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-monitor-azure-stack-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which resource provider should be registered on an Azure Stack Hub subscription using Azure Monitor?"
+    choices:
+    - content: "Microsoft.Advisor"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft.Advisor resource provide is part of the Azure Advisor service."
+    - content: "Microsoft.Management"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft.Management resource provide is part of the Azure Management service."
+    - content: "Microsoft.insights"
+      isCorrect: true
+      explanation: "Correct. The Microsoft.Insights resource provide is part of the Azure Insights service. Register the Microsoft.insights resource provider on a subscription offer."
+  - content: "An Azure Stack Hub operator is monitoring scale sets using Azure Monitor. Which resource provider includes Azure scale sets in Azure Stack Hub?"
+    choices:
+    - content: "Microsoft.EventHub"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft.EventHub resource provide is part of the Azure Event Hubs service and does not include Azure virtual machines and scale sets."
+    - content: "Microsoft.Compute"
+      isCorrect: true
+      explanation: "Correct. The Microsoft.Compute resource provider is in Azure Stack Hub includes scale sets."
+    - content: "Microsoft.Automation"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft.Automation resource provide is part of the Azure Automation service and does not include Azure scale sets."

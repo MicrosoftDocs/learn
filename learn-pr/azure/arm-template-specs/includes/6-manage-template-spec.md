@@ -29,7 +29,7 @@ Although you can use any versioning scheme you like, it's a good idea to choose 
 
 Template specs give you the flexibility to choose when to create new versions or to update an existing version. For example, you can effectively opt out of versioning by creating and publishing a single version named `latest`. Whenever you need to change your template spec, you simply update that version. Although this policy works, it's not a good practice. 
 
-Conversely, if you make a small change to an existing template that doesn't affect how it's used, creating a new version is probaby not a good idea. You would need to communicate the new version number to anyone who uses the template spec.
+Conversely, if you make a small change to an existing template that doesn't affect how it's used, creating a new version is probably not a good idea. You would need to communicate the new version number to anyone who uses the template spec.
 
 Here's a versioning policy that often works well:
 
@@ -58,7 +58,7 @@ The same cmdlet is used to view a template spec version. Add the `-Version` para
 
 :::code language="azurepowershell" source="code/6-get-templatespec-2.ps1" highlight="4" :::
 
-You can access the JSON template by reading the `Template` property from within the `Versions` array:
+You can access the JSON template by reading the `MainTemplate` property from within the `Versions` array:
 
 :::code language="azurepowershell" source="code/6-get-templatespec-3.ps1" highlight="5" :::
 

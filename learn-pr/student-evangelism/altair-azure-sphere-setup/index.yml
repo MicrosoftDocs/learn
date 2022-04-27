@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.student-evangelism.altair-azure-sphere-setup
+metadata:
+  title: Set up the Altair emulator and Azure Sphere
+  description: Learn how to set up the Altair 8800 emulator and the Azure Sphere development environment.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+title: Set up the Altair emulator and Azure Sphere
+summary: Learn how to set up the Altair 8800 emulator and the Azure Sphere development environment.
+abstract:  |
+  In this module, you will:
+  - Learn the hardware and software requirements for the Altair 8800 emulator. 
+  - Learn about the five components to a cloud-connected Altair on Azure Sphere solution.
+  - Install and configure the components.
+prerequisites: |
+  - A computer with an x86-64-based processor running one of the following operating systems:
+    - Windows 10 Anniversary Update or later
+    - 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS
+  - An Azure Sphere developer board that has one of the following kits:
+    - Avnet Azure Sphere Starter Kit Rev 1 or 2
+    - Seeed Studio Azure Sphere MT3620 Development Kit
+  - A GitHub account.
+  - An Azure account. Sign up for a free [Azure for Students account](https://azure.microsoft.com/free/students?azure-portal=true) or a free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
+iconUrl: /learn/achievements/student-evangelism/altair-azure-sphere-setup.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- azure-iot-central
+- azure-sphere
+- azure-app-service-static
+- azure-virtual-machines
+units:
+- learn.student-evangelism.altair-azure-sphere-setup.introduction
+- learn.student-evangelism.altair-azure-sphere-setup.hardware
+- learn.student-evangelism.altair-azure-sphere-setup.setup
+- learn.student-evangelism.altair-azure-sphere-setup.exercise-set-up-azure-sphere
+- learn.student-evangelism.altair-azure-sphere-setup.knowledge-check
+- learn.student-evangelism.altair-azure-sphere-setup.summary
+badge:
+  uid: learn.student-evangelism.altair-azure-sphere-setup.badge
+

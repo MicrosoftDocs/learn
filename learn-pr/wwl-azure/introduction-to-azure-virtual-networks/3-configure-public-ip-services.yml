@@ -4,12 +4,13 @@ title: Configure public IP services
 metadata:
   title: Configure public IP services
   description: "Configure public IP services"
-  ms.date: 07/28/2021
+  ms.date: 04/27/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/3-configure-public-ip-services.md)]
@@ -18,23 +19,23 @@ quiz:
   questions:
   - content: "Which of the following statements about Azure VNets is correct?"
     choices:
-    - content: "Azure VNets enable communication between Azure resources."
-      isCorrect: true
-      explanation: "Correct. Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure virtual machine scale sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts."
     - content: "Outbound communication with the internet must be configured for each resource on the VNet."
       isCorrect: false
       explanation: "Incorrect. All resources in a VNet can communicate outbound to the internet, by default."
+    - content: "Azure VNets enable communication between Azure resources."
+      isCorrect: true
+      explanation: "Correct. Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure virtual machine scale sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts."
     - content: "Azure VNets cannot be configured to communicate with on-premises resources."
       isCorrect: false
       explanation: "Incorrect. You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute."
-  - content: "Which of the following statements about subnets is NOT correct?"
+  - content: "Which of the following statements about Azure Public IP addresses is correct?"
     choices:
-    - content: "You can assign the same IP address range to multiple subnets within the same VNet."
+    - content: "Standard Public IPs are Dynamically allocated."
+      isCorrect: false
+      explanation: "That's incorrect, Standard SKU public IP addresses always use the static allocation method."
+    - content: "Basic Public IPs are supported in Availability Zones."
+      isCorrect: false
+      explanation: "That's incorrect, Basic Public IPs are not supported in Availability Zones."
+    - content: "Public IP addresses allow Internet resources to communicate inbound to Azure resources."
       isCorrect: true
-      explanation: "That is correct. Each subnet must have a unique address range, specified in Classless Inter-Domain Routing (CIDR) format."
-    - content: "You can create multiple subnets within one VNet."
-      isCorrect: false
-      explanation: "That is incorrect. You can create multiple virtual networks per subscription and per region, and multiple subnets within each virtual network."
-    - content: "You can use Network Security Groups (NSGs) to control access to a subnet and the resources on it."
-      isCorrect: false
-      explanation: "That is incorrect. You can associate zero or one NSG to each subnet to control access to the subnet and the resources on it."
+      explanation: "That's Correct! An IP address is assigned from a pool of available addresses, based on the location of the resource."

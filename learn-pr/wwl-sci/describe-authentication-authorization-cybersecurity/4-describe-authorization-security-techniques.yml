@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-authentication-authorization-cybersecurity.describe-authorization-security-techniques
+title: Describe authorization security techniques
+metadata:
+  title: Describe authorization security techniques
+  description: "Describe authorization security techniques"
+  ms.date: 02/08/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-describe-authorization-security-techniques.md)]

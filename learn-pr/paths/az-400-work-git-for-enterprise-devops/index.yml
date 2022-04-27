@@ -1,0 +1,47 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-400-work-git-for-enterprise-devops
+metadata:
+  title: 'AZ-400: Work with Git for enterprise DevOps'
+  description: 'AZ-400: Work with Git for enterprise DevOps'
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-400: Work with Git for enterprise DevOps'
+prerequisites: |
+  None
+summary: |
+  This learning path examines the key Git features that organizations must plan for when designing their enterprise DevOps.
+iconUrl: /learn/achievements/az-400-work-with-git-for-enterprise-devops.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+modules:
+- learn.wwl.structure-your-git-repo
+- learn.wwl.manage-git-branches-workflows
+- learn.wwl.collaborate-pull-requests-azure-repos
+- learn.wwl.identify-technical-debt
+- learn.wwl.explore-git-hooks
+- learn.wwl.plan-foster-inner-source
+- learn.wwl.manage-git-repositories
+trophy:
+  uid: learn.wwl.az-400-work-git-for-enterprise-devops.trophy

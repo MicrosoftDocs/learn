@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Enable cluster scalability on AKS
   description: In this exercise, you'll enable the cluster autoscaler module in an AKS cluster that's already created. After that, you'll test the scalability of your applications against the cluster autoscaler.
   ms.date: 04/27/2021
-  author: khaosdoctor
-  ms.author: ludossan
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

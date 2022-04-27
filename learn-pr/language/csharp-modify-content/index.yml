@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-modify-content
 metadata:
-  title: Modify the content of strings using built-in string data type methods in C#
+  title: 'Modify the content of strings using built-in string data type methods in C#'
   description: Use built in methods to extract, remove, or replace data in strings.
   ms.date: 11/05/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Modify the content of strings using built-in string data type methods in C#

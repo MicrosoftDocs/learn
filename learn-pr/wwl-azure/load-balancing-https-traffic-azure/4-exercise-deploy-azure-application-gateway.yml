@@ -4,12 +4,13 @@ title: 'Exercise: deploy Azure Application Gateway'
 metadata:
   title: 'Exercise: deploy Azure Application Gateway'
   description: "Exercise: deploy Azure Application Gateway"
-  ms.date: 07/15/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-exercise-deploy-azure-application-gateway.md)]

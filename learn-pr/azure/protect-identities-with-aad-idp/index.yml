@@ -4,8 +4,8 @@ metadata:
   title: Protect your identities with Azure AD Identity Protection
   description: Use the advanced detection and remediation of identity-based threats to protect your Azure Active Directory identities and applications from compromise.
   ms.date: 03/23/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Protect your identities with Azure AD Identity Protection

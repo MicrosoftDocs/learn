@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.share-bicep-modules-using-private-registries.exercise-use-modules-from-your-registry
+title: Exercise - Use modules from your registry
+sandbox: true
+metadata:
+  unitType: exercise
+  title: Exercise - Use modules from your registry
+  description: Create a Bicep file that uses modules from your private registry.
+  ms.date: 02/10/2022
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-exercise-use-modules-from-your-registry.md)]

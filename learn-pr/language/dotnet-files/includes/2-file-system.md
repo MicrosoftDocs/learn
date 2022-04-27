@@ -1,24 +1,22 @@
-.NET contains built-in types for working with the file system that can be found in the `System.IO` namespace.
+.NET contains built-in types for working with the file system that you can find in the `System.IO` namespace.
 
-Here, you'll learn how to use the types in `System.IO` by using C# to read the file system to discover files and directories.
+Here, you'll learn about the types available in `System.IO` by using C# to read a file system to discover files and directories.
 
 ## The scenario
 
-Large retailers often write data to files so that it can be processed later in batches.
+Large retailers often write data to files so it can be processed later in batches.
 
-Tailwind Traders has each of its stores write its sales total to a file, and send that file to a central location. To use those files, the company needs to create a batch process that can work with the file system.
+Tailwind Traders has each of its stores write its sales total to a file and send that file to a central location. To use those files, the company needs to create a batch process that can work with the file system.
 
 ## Include the System.IO namespace
 
-In .NET, `System.IO` namespaces contain types to interact with files and directories. For example, you can get and set properties for files and directories, and retrieve collections of files and directories based on search criteria.
+The System.IO namespace contains built-in types that allow you to interact with files and directories. For example, you can `get` and `set` properties for files and directories and retrieve collections of files and directories based on search criteria. You can also use `System.IO` namespace types to synchronously and asynchronously read and write data streams and files.
 
-You can also use the types in the `System.IO` namespaces to read and write, both synchronously and asynchronously, data streams and files.
-
-For now, we're going to focus on what you need to know to work with directories by using the `Directory` class contained in the `System.IO` namespace.
+For now, we're going to focus on what you need to know to work with directories by using the `Directory` class contained in the `System.IO` namespace. The Directory class exposes static methods for creating, moving, and enumerating through directories and subdirectories.
 
 ## List all directories
 
-One task that you'll often do with the `Directory` class is list out or *enumerate* directories. For instance, Tailwind Traders has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders are the sales-total and inventory files. The structure looks like this:
+One task that you'll often do with the `Directory` class is list out &mdash; or *enumerate* &mdash; directories. For instance, Tailwind Traders has a root folder called *stores*. In that folder are subfolders organized by store number and inside those folders are the sales-total and inventory files. The structure looks like this example:
 
 ```
 📂 stores
@@ -31,7 +29,7 @@ One task that you'll often do with the `Directory` class is list out or *enumera
     📂 202
 ```
 
-To read through and list the names of the top-level directories, you can use the `Directory.EnumerateDirectories` function.
+To read through and list the names of the top-level directories, use the `Directory.EnumerateDirectories` function.
 
 ```csharp
 IEnumerable<string> listOfDirectories = Directory.EnumerateDirectories("stores");

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.datacenter-integration-for-azure-stack-hub.external-monitor
+title: External monitoring
+metadata:
+  title: External monitoring
+  description: "External monitoring"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/12-external-monitor.md)]

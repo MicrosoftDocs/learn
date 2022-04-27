@@ -18,18 +18,17 @@ In the catching the bus example, there are three key services using GitHub Actio
 
 There is a specific GitHub Action available through Azure called the **SQL Action**. This action was created to work with Azure SQL services. Let's review how the main part of the workflow (YAML) file is constructed. As an example, let's use the catch the bus sample.
 
-Below you are looking at the job within the workflow file. When a push happens or a pull request is merged, this job will run. The workflow uses `Azure/sql-action@v1`, which does most of the heavy lifting. You just have to provide the items under `with`: the server name, the connection string (stored as a secret in the repository), and the location of the .dacpac file. A .dacpac file contains the necessary database schema that is required for the database. The action will incrementally update the database schema to match the schema of the source .dacpac file.
+Below you are looking at the job within the workflow file. When a push happens or a pull request is merged, this job will run. The workflow uses `Azure/sql-action@v1.2`, which does most of the heavy lifting. You just have to provide the items under `with`: the connection string (stored as a secret in the repository), and the location of the .dacpac file. A .dacpac file contains the necessary database schema that is required for the database. The action will incrementally update the database schema to match the schema of the source .dacpac file.
 
 ```yml
   deploy_database_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     name: Deploy Database Job
     steps:
-      - uses: actions/checkout@v1
-      - uses: Azure/sql-action@v1
+      - uses: actions/checkout@v2
+      - uses: Azure/sql-action@v1.2
         with:
-          server-name: bus-server.database.windows.net
           connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
           # uses dacpac to deploy database schema
           dacpac-package: './Database/dacpac/bus-db.dacpac'
@@ -50,7 +49,7 @@ By default, the following code makes up the first job. Regardless of how you dep
 ```yml
       - name: Build And Deploy
         id: builddeploy
-        uses: Azure/static-web-apps-deploy@v0.0.1-preview
+        uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)

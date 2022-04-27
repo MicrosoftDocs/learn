@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Prepare Azure and on-premises virtual networks by using Azure CLI commands
   description: Exercise - Prepare Azure and on-premises virtual networks by using Azure CLI commands
   ms.date: 04/26/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: cherylmc
+  ms.author: cherylmc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

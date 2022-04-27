@@ -64,7 +64,7 @@ Identify the subtasks of *Enable secure external user access for your applicatio
 
 3. **Use multi-factor authentication to protect your application**
 
-    In the scenario, the health care organization has an application. You need to allow patients to access their health records from this application. You can implement automated access control decisions for accessing your cloud apps that are based on conditions. Conditional access policies are enforced after the first-factor authentication has been completed. Cover the following points:
+    In the scenario, the health care organization has an application. You need to allow patients to access their health records from this application. You can implement automated access control decisions for accessing your cloud apps that are based on conditions. Conditional Access policies are enforced after the first-factor authentication has been completed. Cover the following points:
 
     - The additional layers of protection available to your applications with MFA.
     - Options for implementing multi-factor authentication in Azure (brief - details are in the next unit)
@@ -72,7 +72,7 @@ Identify the subtasks of *Enable secure external user access for your applicatio
 
     **Unit Notes:**
 
-    Conditional access policy has two key parts:
+    Conditional Access policy has two key parts:
 
     - Conditions – Specified conditions that need to be met
     - Action – defined action steps once the conditions are met.
@@ -94,7 +94,7 @@ Identify the subtasks of *Enable secure external user access for your applicatio
 
     **Knowledge check**
 
-    - You want to set up multi-factor authentication for the application. You notice you are unable to set up new conditional access policies. What might have happened?
+    - You want to set up multi-factor authentication for the application. You notice you are unable to set up new Conditional Access policies. What might have happened?
     - Your organization wants to enable users in the local office to sign in to the application without being prompted for multi-factor authentication.  How could you meet this expectation?
 
 4. **Configure Azure AD B2C with MFA**

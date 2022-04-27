@@ -3,47 +3,48 @@ uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines
 metadata:
   moduleType: standard
   title: Build your first Bicep deployment pipeline by using Azure Pipelines
-  description: Build a basic deployment pipeline for Bicep infrastructure as code templates by using Azure DevOps and Azure Pipelines. Learn how to use service connections to authenticate your deployment pipeline to Azure. Add triggers to configure the Bicep deployment pipeline to run whenever your main branch is updated.
-  ms.date: 07/20/2021
+  description: Build a basic deployment pipeline for Bicep infrastructure as code templates by using Azure DevOps and Azure Pipelines.
+  ms.date: 08/30/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build your first Bicep deployment pipeline by using Azure Pipelines
 summary: |
-  Build a basic deployment pipeline for Bicep code. Use a service connection to securely identify your pipeline to Azure. Configure when the pipeline runs by using triggers.
+  Create an automated pipeline in Azure Pipelines that securely deploys resources to Azure from Bicep code. Configure your pipeline to run on a schedule or when your configuration changes.
 abstract: |
   After completing this module, you'll be able to:
     - Automate Bicep deployments by using a pipeline in Azure Pipelines
-    - Configure a service connection to authenticate a pipeline to Azure
+    - Set up a service connection to authenticate a pipeline to Azure
     - Select an appropriate pipeline trigger and set of tasks for a Bicep deployment
 prerequisites: |
-  You should be familiar with:
+  You should be familiar with using:
 
-  - Creating and deploying basic Bicep files.
+  - Bicep, including creating and deploying basic files.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-  - Service principals.
   - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
   
-  To follow along with the exercises in the module, you'll need an Azure account, with the ability to create resource groups and to create Azure Active Directory applications and service principals.
+  To work through the exercises in the module, you'll need an Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
   
   You'll also need the following installed locally:
   
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
-  - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools.
-    - The latest [Azure PowerShell](/powershell/azure/install-az-ps).
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
   - [Git](https://git-scm.com/download?azure-portal=true).
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/bicep/build-first-bicep-deployment-pipeline-using-azure-pipelines.svg
 levels:
   - intermediate
 roles:
   - devops-engineer
   - developer
   - administrator
+languages:
+  - bicep
 products:
   - azure-resource-manager
+  - azure-devops
+  - azure-pipelines
 units:
 - learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.introduction
 - learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.understand-azure-pipelines

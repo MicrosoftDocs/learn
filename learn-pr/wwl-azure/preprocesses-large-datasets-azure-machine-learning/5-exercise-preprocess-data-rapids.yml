@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.exercise-preprocess-data-rapids
+title: 'Exercise: Preprocess data with RAPIDs'
+metadata:
+  title: 'Exercise: Preprocess data with RAPIDs'
+  description: "Exercise: Preprocess data with RAPIDs"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-exercise-preprocess-data-rapids.md)]

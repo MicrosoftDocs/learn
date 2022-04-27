@@ -1,10 +1,10 @@
 Your financial organization deals with customers and partners on a constant basis. Your organization is also active across different regions in the world. Many transactions happen every day. Each transaction must be monitored and protected regardless of its type, and regardless of the device or users involved. You've been asked to extend your earlier investigation, to focus on enterprise-wide security and monitoring.
 
-You'll detail how Azure Sentinel will help monitor and respond to security threats across your organization.
+You'll detail how Microsoft Sentinel will help monitor and respond to security threats across your organization.
 
-## Criteria for assessing Azure Sentinel
+## Criteria for assessing Microsoft Sentinel
 
-You use Azure Sentinel to:
+You use Microsoft Sentinel to:
 
 - Get a detailed overview of your organization, potentially across multiple clouds and on-premises locations.
 - Avoid reliance on complex and disparate tools.
@@ -12,7 +12,7 @@ You use Azure Sentinel to:
 
 ## Connect your data sources
 
-You create an Azure Sentinel resource in the Azure portal. The process for creating this resource involves creating a Log Analytics workspace, and then adding it to Sentinel.
+You create a Microsoft Sentinel resource in the Azure portal. The process for creating this resource involves creating a Log Analytics workspace, and then adding it to Sentinel.
 
 ![SCreenshot of create a workspace.](../media/7-sentinel-01.png)
 
@@ -91,7 +91,7 @@ The investigation map also gives you a timeline that helps you understand which 
 
 Playbooks can help you automatically respond to threats in Sentinel. You create a new playbook through the **Playbooks** pane in your Sentinel dashboard.
 
-![Screenshot of sentinel playbooks.](../media/7-sentinel-14.png)
+![Screenshot of Sentinel playbooks.](../media/7-sentinel-14.png)
 
 You add a new playbook by creating a logic app.
 
@@ -101,9 +101,9 @@ You add a new playbook by creating a logic app.
 
 ![SCreenshot of Logic Apps Designer.](../media/7-sentinel-16.png)
 
-Search for *Azure Sentinel* to find its related connectors and triggers.
+Search for *Microsoft Sentinel* to find its related connectors and triggers.
 
-![Screenshot of search for Azure Sentinel.](../media/7-sentinel-17.png)
+![Screenshot of search for Microsoft Sentinel.](../media/7-sentinel-17.png)
 
 Choose the trigger that you want. You can then put together a step-by-step process that details what should happen when a response to a Sentinel alert is triggered. You've then configured a playbook.
 

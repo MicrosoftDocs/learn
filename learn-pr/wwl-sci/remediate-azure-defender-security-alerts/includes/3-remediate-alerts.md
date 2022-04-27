@@ -1,4 +1,4 @@
-From Security Center's overview page, select the Security alerts tile at the top of the page or the link on the sidebar.
+From Defender for Cloud's overview page, select the Defender for Cloud tab at the top of the page or the link on the sidebar.
 
 >[!div class="mx-imgBorder"]
 >![Alerts list.](../media/alerts-page.png)
@@ -32,11 +32,11 @@ Also in the right pane is the Take action tab. Use this tab to take further acti
 
 Every security program includes multiple workflows for incident response. These processes might include notifying relevant stakeholders, launching a change management process, and applying specific remediation steps. Security experts recommend that you automate as many steps of those procedures as you can. Automation reduces overhead. It can also improve your security by ensuring the process steps are done quickly, consistently, and according to your predefined requirements.
 
-This feature can trigger Logic Apps on security alerts and recommendations. For example, you might want Security Center to email a specific user when an alert occurs.
+This feature can trigger Logic Apps on security alerts and recommendations. For example, you might want Defender for Cloud to email a specific user when an alert occurs.
 
 ## Create a logic app and define when it should automatically run
 
-From Security Center's sidebar, select Workflow automation.
+From Defender for Cloud's sidebar, select Workflow automation.
 
 From this page, you can create new automation rules as well as enable, disable, or delete existing ones.
 
@@ -61,21 +61,20 @@ You'll be taken to Azure Logic Apps.
 
 - In your new logic app, you can choose from built-in, predefined templates from the security category. Or you can define a custom flow of events to occur when this process is triggered.
 
-The logic app designer supports the following Security Center triggers:
+The logic app designer supports the following Defender for Cloud triggers:
 
-- When an Azure Security Center Recommendation is created or triggered - If your logic app relies on a recommendation that gets deprecated or replaced, your automation will stop working. You'll then need to update the trigger. To track changes to recommendations, see Azure Security Center release notes.
+- When a Defender for Cloud Recommendation is created or triggered - If your logic app relies on a recommendation that gets deprecated or replaced, your automation will stop working. You'll then need to update the trigger. To track changes to recommendations, see Defender for Cloud release notes.
 
-- When an Azure Security Center Alert is created or triggered - You can customize the trigger so that it relates only to alerts with the severity levels that interest you.
+- When a Defender for Cloud Alert is created or triggered - You can customize the trigger so that it relates only to alerts with the severity levels that interest you.
 
 [ ![sample logic app.](../media/sample-logic-app.png) ](../media/sample-logic-app.png#lightbox)
 
-After you've defined your logic app, return to the workflow automation definition pane ("Add workflow automation"). Click Refresh to ensure your new Logic App is available for selection.
+After you've defined your logic app, return to the workflow automation definition pane ("Add workflow automation"). Select **Refresh** to ensure your new Logic App is available for selection.
 
-Select your logic app and save the automation. The Logic App dropdown only shows Logic Apps with supporting Security Center connectors mentioned above.
+Select your logic app and save the automation. The Logic App dropdown only shows Logic Apps with supporting Defender for Cloud connectors mentioned above.
 
 ## Manually trigger a logic app
 
 You can also run Logic Apps manually when viewing any security alert or recommendation.
 
-To manually run a Logic App, open an alert or a recommendation and select Trigger Logic App
-
+To manually run a Logic App, open an alert or a recommendation and select Trigger Logic App.

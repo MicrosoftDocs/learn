@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-pipelines-concurrency.estimate-parallel-jobs
+title: Estimate parallel jobs
+metadata:
+  title: Estimate parallel jobs
+  description: "Estimate parallel jobs"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-estimate-parallel-jobs.md)]

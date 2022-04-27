@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.move-data-by-using-stream-analytics
+title: Move data by using Stream Analytics
+metadata:
+  title: Move data by using Stream Analytics
+  description: "Move data by using Stream Analytics"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-move-data-by-using-stream-analytics.md)]

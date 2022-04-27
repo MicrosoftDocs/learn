@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-system-health-azure-stack-hub.integrate-external-monitoring
+title: Integrate external monitoring with Azure Stack Hub
+metadata:
+  title: Integrate external monitoring with Azure Stack Hub
+  description: "Integrate external monitoring with Azure Stack Hub"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-integrate-external-monitoring-azure-stack-hub.md)]

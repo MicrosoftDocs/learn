@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.languages.csharp-null-safety
+metadata:
+  moduleType: standard
+  title: Null safety in C#
+  description: Learn coding practices to help prevent the occurrence of NullReferenceException.
+  ms.date: 01/31/2022
+  author: IEvangelist
+  ms.author: dapine
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Null safety in C#
+summary: Learn coding practices to help prevent the occurrence of `NullReferenceException`.
+abstract: |
+  In this module, you will:
+    - Learn how to configure the nullable context of your C# project or code.
+    - Use a nullable enabled context to perform automatic static flow analysis.
+    - Understand the different ways in which you can declare nullable types.
+    - Learn how and when to use various null-related C# operators:
+      - null-forgiving (`!`) operator
+      - null-coalescing (`??`) operator
+      - null-conditional (`?.`) operator
+prerequisites: |
+  - Experience writing C# at the beginner level
+  - Visual Studio Code
+  - .NET SDK 6.0 or greater
+  - Git command-line client
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - dotnet
+
+units:
+- learn.languages.csharp-null-safety.introduction
+- learn.languages.csharp-null-safety.understand-nullability
+- learn.languages.csharp-null-safety.express-intent
+- learn.languages.csharp-null-safety.applied-learnings
+- learn.languages.csharp-null-safety.summary
+badge:
+  uid: learn.languages.csharp-null-safety.badge

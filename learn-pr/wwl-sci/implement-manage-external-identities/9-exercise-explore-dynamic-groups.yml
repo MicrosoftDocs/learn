@@ -4,12 +4,13 @@ title: Exercise - explore dynamic groups
 metadata:
   title: Exercise - explore dynamic groups
   description: "Exercise - explore dynamic groups"
-  ms.date: 07/23/2021
+  ms.date: 03/07/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/9-exercise-explore-dynamic-groups.md)]

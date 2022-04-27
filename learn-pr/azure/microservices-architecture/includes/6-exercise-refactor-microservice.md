@@ -28,7 +28,7 @@ As requests for this service increase, resource utilization increases and is cap
 
 ### Drone delivery after
 
-If you take a look at the [DroneDelivery-after](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/before/DroneDelivery-before/Services/PackageProcessor.cs) application code that we will deploy shortly, you see that the `PackageProcessor` class was changed to a `PackageServiceCaller` class. It still implements the IPackageProcessor interface, but instead it makes an HTTP call to the microservice.
+If you take a look at the [DroneDelivery-after](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/before/DroneDelivery-before/Services/PackageProcessor.cs) application code that we'll deploy shortly, you see that the `PackageProcessor` class was changed to a `PackageServiceCaller` class. It still implements the IPackageProcessor interface, but instead it makes an HTTP call to the microservice.
 
 ```csharp
 public class PackageServiceCaller : IPackageProcessor
@@ -73,11 +73,11 @@ public static class PackageServiceFunction
 
 By putting this code on Azure Functions, this service can scale independently as user load increases. You can keep the services for the remaining application code optimized for the rest of the application. The package service scales out as more requests for drone deliveries come in to the system.
 
-Now let's redeploy the application. First, we deploy our refactored service on Azure Functions. Then we deploy the refactored application on App Service, and point it to the function.
+Now, let's redeploy the application. First, we deploy our refactored service on Azure Functions. Then, we deploy the refactored application on App Service, and point it to the function.
 
 ## Deploy the function app
 
-1. Run this command to set up environment variables pointed to our services.
+1. Run the following command to set up environment variables pointed to our services.
 
     ```azurecli
     APPSERVICENAME="$(az webapp list \
@@ -99,7 +99,7 @@ Now let's redeploy the application. First, we deploy our refactored service on A
     zip -r PackageService.zip .
     ```
 
-1. Run this command to push the code to the function app.
+1. Run the following command to push the code to the function app.
 
     ```azurecli
     az functionapp deployment source config-zip \
@@ -128,7 +128,7 @@ Now that our service is running on Azure Functions, we need to point our drone a
     echo "FunctionCode - $FUNCTIONCODE"
     ```
 
-1. In Azure Cloud Shell, run these commands to open *appsettings.json* in the code editor.
+1. In Azure Cloud Shell, run the following commands to open *appsettings.json* in the code editor.
 
     ```bash
     cd ~/mslearn-microservices-architecture/src/after
@@ -152,9 +152,9 @@ Now that our service is running on Azure Functions, we need to point our drone a
     }
     ```
 
-1. Select Ctrl+S to save the file, and select Ctrl+Q to close the code editor.
+1. Press <kbd>Ctrl+S</kbd> to save the file, and then <kbd>Ctrl+Q</kbd> to close the code editor.
 
-1. Run this command to deploy the updated application to App Service.
+1. Run the following command to deploy the updated application to App Service.
 
     ```bash
     zip -r DroneDelivery-after.zip . -x \*/obj/\* \*/bin/\*

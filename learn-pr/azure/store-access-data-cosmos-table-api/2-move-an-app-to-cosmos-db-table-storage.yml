@@ -4,7 +4,7 @@ title: Move an app to Azure Cosmos DB table storage
 metadata:
   title: Move an app to Azure Cosmos DB table storage
   description: In this unit, you will learn why and how to migrate data and apps from tables in Azure Storage accounts to Azure Cosmos DB.
-  ms.date: 04/30/2019
+  ms.date: 09/27/2021
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial

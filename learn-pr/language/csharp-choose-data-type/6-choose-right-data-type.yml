@@ -5,8 +5,8 @@ metadata:
   title: Choose the right data type
   description: Learn the criteria you should use when evaluating which data types to choose for your code.
   ms.date: 09/05/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

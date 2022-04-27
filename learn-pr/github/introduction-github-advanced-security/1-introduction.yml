@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-github-advanced-security.introduction      ## update module-folder-name and file-name
+title: Introduction                                  ## Unit title that will display at top of page 
+metadata:
+  unitType: introduction                             ## Title of unit  
+  title: Introduction                                ## Title of unit
+  description: This module introduces the Introduction to GitHub Advanced Security module   ## description of unit content
+  ms.date: 01/28/2022                               ## date unit was published
+  author: davenowell                               ## author's github name
+  ms.author: dapolite                              ## author's microsoft id
+  ms.topic: interactive-tutorial                    ## do not change 
+  ms.prod: learning-azure                           ## do not change 
+durationInMinutes: 2                                ## approximate time to complete unit 
+content: |
+  [!include[](includes/1-introduction.md)]       

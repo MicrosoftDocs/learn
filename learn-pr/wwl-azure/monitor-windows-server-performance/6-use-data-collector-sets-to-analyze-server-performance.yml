@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-performance.use-data-collector-sets-to-analyze
+title: Use Data Collector Sets to analyze server performance
+metadata:
+  title: Use Data Collector Sets to analyze server performance
+  description: "Use Data Collector Sets to analyze server performance"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-use-data-collector-sets-to-analyze-server-performance.md)]

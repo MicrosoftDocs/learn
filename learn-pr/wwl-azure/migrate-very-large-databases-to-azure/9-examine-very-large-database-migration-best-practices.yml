@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-very-large-databases-vldb-to-azure.examine-database-migration-do’s-don’ts
+title: Examine very large database migration best practices
+metadata:
+  title: Examine very large database migration best practices
+  description: "Examine very large database migration best practices"
+  ms.date: 01/26/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/9-examine-very-large-database-migration-best-practices.md)]

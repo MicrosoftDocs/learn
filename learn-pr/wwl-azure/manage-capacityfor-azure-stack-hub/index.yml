@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.manage-capacityfor-azure-stack-hub
+metadata:
+  title: Manage capacity for Azure Stack Hub
+  description: "Manage capacity for Azure Stack Hub"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage capacity for Azure Stack Hub
+summary: |
+  In this module, you will learn how to manage compute and storage capacity for Azure Stack Hub.
+  This module prepares you for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
+abstract: |
+  * Manage compute capacity for Azure Stack Hub.
+  * Manage partitioned GPUs in Azure Stack Hub.
+  * Add nodes in Azure Stack Hub.
+  * Manage storage capacity for Azure Stack Hub.
+  * Add IP pools in Azure Stack Hub.
+prerequisites: |
+  * Conceptual knowledge of Azure compute solutions.
+  * Working experience with virtual machines, containers, and app service.
+  * Working experience with database solutions.
+iconUrl: /learn/achievements/4-manage-capacity-for-azure-stack-hub.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack
+- azure-stack-hub
+units:
+- learn.wwl.manage-capacityfor-azure-stack-hub.introduction
+- learn.wwl.manage-capacityfor-azure-stack-hub.manage-compute-capacity
+- learn.wwl.manage-capacityfor-azure-stack-hub.manage-partitioned-gpus
+- learn.wwl.manage-capacityfor-azure-stack-hub.add-nodes
+- learn.wwl.manage-capacityfor-azure-stack-hub.manage-storage-capacity
+- learn.wwl.manage-capacityfor-azure-stack-hub.add-ip-pools
+- learn.wwl.manage-capacityfor-azure-stack-hub.knowledge-check
+- learn.wwl.manage-capacityfor-azure-stack-hub.summary
+badge:
+  uid: learn.wwl.manage-capacityfor-azure-stack-hub.badge

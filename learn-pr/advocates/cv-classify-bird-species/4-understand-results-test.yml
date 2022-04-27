@@ -5,10 +5,12 @@ metadata:
   title: Understand and test the model
   description: Understand and test the model
   ms.date: 01/19/2021
-  author: cassieview
+  author: cassiebreviu
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen, team=cloud_advocates
+  ms.contributors: cassieb-09032021
 durationInMinutes: 5
 content: |
   [!include[](includes/4-understand-results-test.md)]

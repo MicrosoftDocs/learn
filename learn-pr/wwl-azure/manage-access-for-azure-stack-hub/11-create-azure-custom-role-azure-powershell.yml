@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-access-for-azure-stack-hub.create-azure-custom-role-using-azure-powershell
+title: Create an Azure custom role using Azure PowerShell
+metadata:
+  title: Create an Azure custom role using Azure PowerShell
+  description: "Create an Azure custom role using Azure PowerShell"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/11-create-azure-custom-role-azure-powershell.md)]

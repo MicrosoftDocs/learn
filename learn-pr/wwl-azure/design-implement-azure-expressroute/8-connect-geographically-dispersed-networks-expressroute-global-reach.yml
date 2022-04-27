@@ -4,12 +4,13 @@ title: Connect geographically dispersed networks with ExpressRoute global reach
 metadata:
   title: Connect geographically dispersed networks with ExpressRoute global reach
   description: "Connect geographically dispersed networks with ExpressRoute global reach"
-  ms.date: 08/02/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/8-connect-geographically-dispersed-networks-expressroute-global-reach.md)]
@@ -18,23 +19,23 @@ quiz:
   questions:
   - content: "What is ExpressRoute Global Reach primarily designed for?"
     choices:
-    - content: "Connect branch offices across the world."
-      isCorrect: true
-      explanation: "Correct. ExpressRoute Global Reach is designed to complement your service provider’s WAN implementation and connect your branch offices across the world."
     - content: "Connect a data center to the public internet."
       isCorrect: false
       explanation: "Incorrect. ExpressRoute Global Reach was not primarily designed to connect a data center to public internet."
     - content: "Connect a local service provider to a data center."
       isCorrect: false
       explanation: "Incorrect. ExpressRoute Global Reach was not primarily designed to connect a local service provider to a data center."
+    - content: "Connect branch offices across the world."
+      isCorrect: true
+      explanation: "Correct. ExpressRoute Global Reach is designed to complement your service provider’s WAN implementation and connect your branch offices across the world."
   - content: "How can a network engineer for a company with offices in London and Tokyo configure communications between the two offices?"
     choices:
-    - content: "Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network."
-      isCorrect: true
-      explanation: "Correct. You can use a local service provider wherever your offices are, and GlobalReach will connect the branches using ExpressRoute and the Microsoft global network."
     - content: "Use a local service provider that has a presence in both London and Tokyo, and enable GlobalReach to connect to each local service provider location."
       isCorrect: false
       explanation: "Incorrect. You can use different local service providers in each location."
+    - content: "Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network."
+      isCorrect: true
+      explanation: "Correct. You can use a local service provider wherever your offices are, and GlobalReach will connect the branches using ExpressRoute and the Microsoft global network."
     - content: "Use GlobalReach to connect each location to a private VPN, and use local service providers for point-to-site access."
       isCorrect: false
       explanation: "Incorrect. Each location should connect to GlobalNet through a local service provider."

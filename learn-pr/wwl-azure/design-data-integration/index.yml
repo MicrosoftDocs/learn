@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.design-data-integration
+metadata:
+  title: Design data integration
+  description: "Azure Architects design and recommend data integration solutions."
+  ms.date: 03/16/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design data integration
+summary: Azure Architects design and recommend data integration solutions.
+abstract: |
+  In this module, you’ll learn how to:
+  - Design a data integration solution with Azure Data Factory.
+  - Design a data integration solution with Azure Data Lake.
+  - Design a data integration and analytics solution with Azure Databricks.
+  - Design a data integration and analytics solution with Azure Synapse Analytics.
+  - Design a strategy for hot/warm/cold data path.
+  - Design Azure Stream Analytics solution for Data Analysis.
+prerequisites: |
+  - Working experience with data integration solutions.
+  - Conceptual knowledge of data integration solutions.
+iconUrl: /learn/achievements/design-data-integration.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure
+- azure-blob-storage
+- azure-data-factory
+- azure-data-lake
+- azure-databricks
+- azure-stream-analytics
+- azure-synapse-analytics
+units:
+- learn.wwl.design-data-integration.introduction
+- learn.wwl.design-data-integration.solution-azure-data-factory
+- learn.wwl.design-data-integration.solution-azure-data-lake
+- learn.wwl.design-data-integration.solution-azure-data-brick
+- learn.wwl.design-data-integration.solution-azure-synapse-analytics
+- learn.wwl.design-data-integration.design-strategy-for-hot-warm-cold-data-path
+- learn.wwl.design-data-integration.design-azure-stream-analytics-solution-for-data-analysis
+- learn.wwl.design-data-integration.knowledge-check
+- learn.wwl.design-data-integration.summary-resources
+badge:
+  uid: learn.wwl.design-data-integration.badge

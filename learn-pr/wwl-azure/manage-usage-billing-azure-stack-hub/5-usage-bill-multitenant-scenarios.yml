@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-usage-billing-for-azure-stack-hub.multi-tenant-csp-scenarios
+title: Usage and billing in multitenant and Cloud Solution Provider scenarios
+metadata:
+  title: Usage and billing in multitenant and Cloud Solution Provider scenarios
+  description: "Usage and billing in multitenant and Cloud Solution Provider scenarios"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-usage-bill-multitenant-scenarios.md)]

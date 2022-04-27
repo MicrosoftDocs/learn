@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-azure-defender-cloud-workload-protection.for-app-service
-title: Understand Azure Defender for App Service
+title: Understand Microsoft Defender for App Service
 metadata:
-  title: Understand Azure Defender for App Service
-  description: "Understand Azure Defender for App Service"
-  ms.date: 04/02/2021
+  title: Understand Microsoft Defender for App Service
+  description: "Understand Microsoft Defender for App Service"
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-understand-azure-defender-for-app-service.md)]

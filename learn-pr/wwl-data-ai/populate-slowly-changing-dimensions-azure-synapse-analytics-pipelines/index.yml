@@ -3,9 +3,9 @@ uid: learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipel
 metadata:
   title: Populate slowly changing dimensions in Azure Synapse Analytics pipelines
   description: "Populate slowly changing dimensions in Azure Synapse Analytics pipelines"
-  ms.date: 03/31/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Populate slowly changing dimensions in Azure Synapse Analytics pipelines

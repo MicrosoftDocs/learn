@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-performance.monitor-network-infrastructure-services
+title: Monitor network infrastructure services
+metadata:
+  title: Monitor network infrastructure services
+  description: "Monitor network infrastructure services"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-monitor-network-infrastructure-services.md)]

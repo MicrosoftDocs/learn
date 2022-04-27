@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-virtual-desktop-architecture.components
+title: Azure Virtual Desktop components
+metadata:
+  title: Azure Virtual Desktop components
+  description: "Azure Virtual Desktop components"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-azure-virtual-desktop-components.md)]

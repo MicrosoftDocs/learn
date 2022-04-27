@@ -2,10 +2,10 @@
 uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query
 metadata:
   title: Perform Zero ETL analytics with HDInsight Interactive Query
-  description: Perform Zero ETL analytics with HDInsight Interactive Query
-  ms.date: 10/25/2019
+  description: "Perform Zero ETL analytics with HDInsight Interactive Query"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Perform Zero ETL analytics with HDInsight Interactive Query
@@ -17,13 +17,12 @@ abstract: |
   - Deploy a cluster for your real-estate app and query the data
   - Learn how to integrate Apache Spark and Hive LLAP queries using the Hive Warehouse Connector
   - Create a large-scale interactive query dashboard to evaluate real estate values and locations
-ratingEnabled: true
 prerequisites: |
   The following pre-requisite should be completed:
   - Successfully log in to the Azure portal
   - Understand the Azure storage options
   - Understand the Azure compute options
-  - Installation of Power BI desktop to create a dashboard
+  - Create and configure a HDInsight Cluster in the Azure portal
 iconUrl: /learn/achievements/perform-zero-etl-analytics-with-hdinsights-interactive-query.svg
 levels:
 - beginner

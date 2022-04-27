@@ -4,8 +4,8 @@ metadata:
   title: Customize layout in Xamarin.Forms XAML pages
   description: Learn how to create user interfaces that adapt to your users' many devices with the extensive control you gain with StackLayout and Grid.
   ms.date: 2/10/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: "Customize layout in Xamarin.Forms XAML pages"

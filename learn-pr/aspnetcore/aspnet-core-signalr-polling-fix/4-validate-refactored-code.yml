@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnet-core-signalr-polling-fix.validate-refactored-code
+title: Validate ASP.NET Core SignalR refactoring
+metadata:
+  unitType: knowledge_check
+  title: Validate ASP.NET Core SignalR refactoring
+  description: "In this unit, you'll validate ASP.NET Core SignalR refactoring to ensure that the source is functionally equivalent."
+  ms.date: 11/09/2021
+  author: IEvangelist
+  ms.author: dapine
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-validate-refactored-code.md)]
+quiz:
+  questions:
+    - content: "What statement is most accurate about the `OrderStatusHub` class?" 
+      choices:
+        - content: "It's an implementation of `Hub<IOrderStatusHub>`."
+          isCorrect: true
+          explanation: "Correct! The hub from the refactor implements the strongly typed `Hub<TClient>`."
+        - content: "It's an implementation of `HubConnection`."
+          isCorrect: false
+          explanation: "Incorrect. The `HubConnection` is a client-side concept."
+        - content: "It's an implementation of `Hub`."
+          isCorrect: false
+          explanation: "Incorrect. Although this is partially true, the hub implements the strongly typed `Hub<TClient>`."
+
+    - content: "Why was SignalR a preferred alternative to client-side polling?"
+      choices:
+        - content: "No reason whatsoever. They're functionally equivalent."
+          isCorrect: false
+          explanation: "Incorrect. Although the two are functionally equivalent, with SignalR, changes are broadcast to clients only as needed."
+        - content: "At peak business hours, orders were lost because the server was flooded with requests."
+          isCorrect: true
+          explanation: "Correct! With SignalR, changes are broadcast to clients only as needed."
+        - content: "It's a personal preference, client-side polling isn't a preferred alternative."
+          isCorrect: false
+          explanation: "Incorrect. Although the two are functionally equivalent, with SignalR, changes are broadcast to clients only as needed."
+
+    - content: "With a SignalR connection, which of the following statements is true?"
+      choices:
+        - content: "Both client and server can send messages (duplex communication)."
+          isCorrect: true
+          explanation: "Correct! SignalR creates a duplex communication, in which the server and client can send messages to each other."
+        - content: "Clients can send messages to the server, but the server can't send messages to clients."
+          isCorrect: false
+          explanation: "Incorrect. SignalR creates a duplex communication, in which the server and client can send messages to each other."
+        - content: "The server can send messages to clients, but clients can't send messages to the server."
+          isCorrect: false
+          explanation: "Incorrect. SignalR creates a duplex communication, in which the server and client can send messages to each other."
+
+    - content: "As part of the refactor, what parts of the code had to change?"
+      choices:
+        - content: "Only the client-side code. The server-side code was already functionally sound."
+          isCorrect: false
+          explanation: "Incorrect. The server-side code had to map and configure the `OrderStatusHub` class."
+        - content: "Only the server-side code. The client-side code was already functionally sound."
+          isCorrect: false
+          explanation: "Incorrect. The client-side code had to consume `HubConnection` to communicate with the server."
+        - content: "Both the client-side code and server-side code were updated as part of the refactor."
+          isCorrect: true
+          explanation: "Correct! The client-side code used `HubConnection` to connect to the server-side `OrderStatusHub` class."

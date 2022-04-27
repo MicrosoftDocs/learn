@@ -22,7 +22,7 @@ var integer8 int8 = 127
 var integer16 int16 = 32767
 var integer32 int32 = 2147483647
 var integer64 int64 = 9223372036854775807
-println(integer8, integer16, integer32, integer64)
+fmt.Println(integer8, integer16, integer32, integer64)
 ```
 
 Most of the time, you'll use `int`, but you need to know about the other integer types because, in Go, `int` isn't the same as `int32`, even if the integer's natural size is 32 bits. In other words, you'll need to cast explicitly when a cast is required. And if you try to perform a math operation between different types, you'll get an error. For example, suppose you have this code:
@@ -30,7 +30,7 @@ Most of the time, you'll use `int`, but you need to know about the other integer
 ```go
 var integer16 int16 = 127
 var integer32 int32 = 32767
-println(integer16 + integer32)
+fmt.Println(integer16 + integer32)
 ```
 
 When you run the program, you'll get this error:
@@ -41,18 +41,18 @@ invalid operation: integer16 + integer32 (mismatched types int16 and int32)
 
 As you can see, when you convert a value from one type to another in Go, you need to explicitly state the new type. We'll talk about how to cast types properly at the end of this module.
 
-As you progress in your Go learning, you might hear about [runes](https://www.geeksforgeeks.org/rune-in-golang/?azure-portal=true). A `rune` is simply an alias for an `int32` data type. It's used to represent a Unicode character (or a Unicode code point). For example, say you have this code:
+As you progress in your Go learning, you might hear about [runes](https://www.geeksforgeeks.org/rune-in-golang/?azure-portal=true). A `rune` is simply an alias for `int32` data type. It's used to represent a Unicode character (or a Unicode code point). For example, suppose you have the following code:
 
 ```go
 rune := 'G'
-println(rune)
+fmt.Println(rune)
 ```
 
 You might expect to see the program print `G` in the command prompt when you run the preceding code snippet. But you see the number `71`, which represents the Unicode character for `G`. We'll talk more about runes in the upcoming modules.
 
 You can learn about the ranges for each type by looking at the [Go source code](https://golang.org/src/builtin/builtin.go?azure-portal=true). Knowing the ranges of each type will help you choose the proper data type, and you'll also avoid wasting bits in memory.
 
-### Challenge 1:
+### Challenge 1
 
 Set another variable of type `int` and use the value from the `integer32` or `integer64` variable to confirm the natural size of the variable on your system. If you're on a 32-bit system and use a value higher than 2,147,483,647, you'll get an overflow error that looks like this one: `constant 9223372036854775807 overflows int`.
 
@@ -60,13 +60,15 @@ Set another variable of type `int` and use the value from the `integer32` or `in
 >```go
 >package main
 >
+>import "fmt"
+>
 >func main() {
 >    var integer32 int = 2147483648
->    println(integer32)
+>    fmt.Println(integer32)
 >}
 >```
 
-### Challenge 2:
+### Challenge 2
 
 Declare an unsigned variable like `uint`, and initialize it with a negative value like `-10`. When you try to run the program, you should get an error like this one: `constant -10 overflows uint`.
 
@@ -74,9 +76,11 @@ Declare an unsigned variable like `uint`, and initialize it with a negative valu
 >```go
 >package main
 >
+>import "fmt"
+>
 >func main() {
 >    var integer uint = -10
->    println(integer)
+>    fmt.Println(integer)
 >}
 >```
 
@@ -87,7 +91,7 @@ Go provides data types for two sizes of floating-point numbers: `float32` and `f
 ```go
 var float32 float32 = 2147483647
 var float64 float64 = 9223372036854775807
-println(float32, float64)
+fmt.Println(float32, float64)
 ```
 
 You can find the limits of these two types by using the `math.MaxFloat32` and `math.MaxFloat64` constants, which are available in the `math` package. Use the following code to print the maximum floating-point values in the command prompt:
@@ -95,10 +99,13 @@ You can find the limits of these two types by using the `math.MaxFloat32` and `m
 ```go
 package main
 
-import "math"
+import (
+    "fmt"
+    "math"
+)    
 
 func main() {
-    println(math.MaxFloat32, math.MaxFloat64)
+    fmt.Println(math.MaxFloat32, math.MaxFloat64)
 }
 ```
 
@@ -133,7 +140,7 @@ For example, the following code shows two ways to declare and initialize a strin
 ```go
 var firstName string = "John"
 lastName := "Doe"
-println(firstName, lastName)
+fmt.Println(firstName, lastName)
 ```
 
 You'll sometimes need to escape characters. To do so in Go, you use a backslash (`\`) before the character. For instance, here are the most common examples of using escape characters:
@@ -149,7 +156,7 @@ Use the following code snippet to test escape characters:
 
 ```go
 fullName := "John Doe \t(alias \"Foo\")\n"
-println(fullName)
+fmt.Println(fullName)
 ```
 
 You should see the following output (including the new line):
@@ -178,7 +185,7 @@ var defaultFloat32 float32
 var defaultFloat64 float64
 var defaultBool bool
 var defaultString string
-println(defaultInt, defaultBool, defaultFloat32, defaultFloat64, defaultString)
+fmt.Println(defaultInt, defaultBool, defaultFloat32, defaultFloat64, defaultString)
 ```
 
 You could use code like this code to determine the default value for a data type we didn't explore here.
@@ -190,7 +197,7 @@ In a previous section, we confirmed that implicit casting doesn't work in Go. In
 ```go
 var integer16 int16 = 127
 var integer32 int32 = 32767
-println(int32(integer16) + integer32)
+fmt.Println(int32(integer16) + integer32)
 ```
 
 Another approach for casting in Go is to use the [strconv package](https://golang.org/pkg/strconv/?azure-portal=true). For example, to convert a `string` to an `int`, and vice-versa, you could use this code:
@@ -198,12 +205,15 @@ Another approach for casting in Go is to use the [strconv package](https://golan
 ```go
 package main
 
-import "strconv"
+import (
+    "fmt"
+    "strconv"
+)
 
 func main() {
     i, _ := strconv.Atoi("-42")
     s := strconv.Itoa(-42)
-    println(i, s)
+    fmt.Println(i, s)
 }
 ```
 

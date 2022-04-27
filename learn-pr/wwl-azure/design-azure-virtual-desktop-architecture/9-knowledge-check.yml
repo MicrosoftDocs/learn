@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-azure-virtual-desktop-architecture.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is used to estimate the connection round-trip time from a specific location through the Azure Virtual Desktop service to an Azure region?"
+    choices:
+    - content: "Azure Pricing Calculator"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Pricing Calculator is a free management tool that estimates costs for Azure workloads."
+    - content: "Azure Synapse"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Synapse brings together SQL technologies used in data warehousing, big data, and pipelines."
+    - content: "Azure Virtual Desktop Experience Estimator"
+      isCorrect: true
+      explanation: "That's correct. The Azure Virtual Desktop Experience Estimator determines the connection round-trip time from a location, using the Azure Virtual Desktop service, to an Azure region."
+  - content: "What is used to determine the best region for an Azure Virtual Desktop deployment?"
+    choices:
+    - content: "Remote Desktop Services Diagnostics tool"
+      isCorrect: false
+      explanation: "That's incorrect. The Remote Desktop Services Diagnostic Tool provides the status of a Remote Desktop Services deployment."
+    - content: "Remote Connection Gateway service"
+      isCorrect: false
+      explanation: "That's incorrect. Remote Desktop Gateway grants users on public networks access to Windows desktops and applications hosted in Microsoft Azure's cloud services."
+    - content: "Azure datacenter map"
+      isCorrect: true
+      explanation: "That's correct. The Azure datacenter map provides information on where data is stored. Azure Virtual Desktop stores global metadata information like tenant names, host pool names, and user principal names in a datacenter."

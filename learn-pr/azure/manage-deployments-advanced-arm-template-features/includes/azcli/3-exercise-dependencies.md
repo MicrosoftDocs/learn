@@ -74,13 +74,13 @@ Here, you download an Azure Resource Manager (ARM) template from a GitHub reposi
 1. Run the following `wget` command to download the ARM template:
 
     ```bash
-    wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json
+    wget https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-linux/azuredeploy.json
     ```
 
     If you don't have `wget` installed, you can run this `curl` command:
 
     ```bash
-    curl https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json > azuredeploy.json
+    curl https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-linux/azuredeploy.json > azuredeploy.json
     ```
 
 1. Run the `az deployment group create` command to deploy the template:
@@ -91,7 +91,7 @@ Here, you download an Azure Resource Manager (ARM) template from a GitHub reposi
       --parameters adminUsername=azureuser vmName=vm1 adminPasswordOrKey='insecurepassword123!'
     ```
 
-    The command can take a few minutes to run. While the command runs, you can [examine the ARM template](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-linux/azuredeploy.json	) from a separate browser tab if you'd like.
+    The command can take a few minutes to run. While the command runs, you can [examine the ARM template](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-linux/azuredeploy.json) from a separate browser tab if you'd like.
 
     Note the resource dependencies by searching for the `dependsOn` key. For example, the virtual machine resource depends on the network interface:
 

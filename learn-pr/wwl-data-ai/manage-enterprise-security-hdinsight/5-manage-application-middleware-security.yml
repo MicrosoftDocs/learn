@@ -2,14 +2,15 @@
 uid: learn.wwl.manage-enterprise-security-in-hdinsight.manage-application-middleware-security
 title: Manage application/ middleware security
 metadata:
-  title: Manage application/middleware security
-  description: "Manage Application/ Middleware security"
-  ms.date: 02/28/2020
+  title: Manage application/ middleware security
+  description: "Manage application/ middleware security"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/5-manage-application-middleware-security.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.configure-ttl-for-document
+title: Configure time-to-live (TTL) value for a specific document
+metadata:
+  title: Configure time-to-live (TTL) value for a specific document
+  description: "Configure time-to-live (TTL) value for a specific document"
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-configure-ttl-for-document.md)]

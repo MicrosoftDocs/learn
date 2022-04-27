@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.network-security
+title: Implement and manage network security for Azure Virtual Desktop
+metadata:
+  title: Implement and manage network security for Azure Virtual Desktop
+  description: "Implement and manage network security for Azure Virtual Desktop"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-implement-manage-network-security.md)]

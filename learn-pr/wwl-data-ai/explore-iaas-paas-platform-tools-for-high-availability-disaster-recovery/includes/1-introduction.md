@@ -15,4 +15,5 @@ In this module, you will understand:
 - How to enable AGs
 - Temporal Tables
 - Active-geo replication
-- Autofailover groups
+- Autofailover groups 
+ 

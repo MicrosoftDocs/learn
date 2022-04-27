@@ -1,4 +1,4 @@
-Here, we discuss the structure and syntax used by Markdown. We also cover features of GitHub-Flavored Markdown (GFM), a series of syntax extensions that enable you to integrate GitHub features into content.
+Here, we discuss the structure and syntax of Markdown. We also cover features of GitHub-Flavored Markdown (GFM), which are syntax extensions that enable you to integrate GitHub features into content.
 
 > [!NOTE]
 > This unit is intended to give you a taste of what Markdown is about. For a more in-depth review, see [Markdown syntax description](https://daringfireball.net/projects/markdown/syntax?azure-portal=true) or [GitHub-Flavored Markdown Spec](https://github.github.com/gfm/?azure-portal=true).
@@ -9,33 +9,39 @@ Markdown exists to shield content creators from the overhead of HTML. While HTML
 
 ### Emphasizing text
 
-The most important part of any communication on GitHub is usually the text itself. But what do you do when some parts of the text are more important than others?
+The most important part of any communication on GitHub is usually the text itself. But how do you show that some parts of the text are more important than others?
 
-Using italics in text is as easy as surrounding the target text with an asterisk (`*`) or underscore (`_`). Just be sure to close an emphasis with the same character it opened with (do not mix asterisks and underscores). 
+Using italics in text is as easy as surrounding the target text with single asterisks (`*`) or single underscores (`_`). Just be sure to close an emphasis with the same character you used to open with. Be observant how you combine the use of asterisks and underscores. Here are several examples:
 
 ```markdown
 This is *italic* text.
+This is also _italic_ text.
 ```
 
 > This is *italic* text.
+> This is also _italic_ text.
 
-Bold text uses two asterisks (`**`) or underscores (`__`).
+Create bold text by using two asterisks (`**`) or two underscores (`__`).
 
 ```markdown
 This is **bold** text.
+This is also __bold__ text.
 ```
 
 > This is **bold** text.
+> This is also __bold__ text.
 
 You can also mix different emphases.
 
 ```markdown
-_This is **bold and italic** text_.
+_This is **italic and bold** text_ using a single underscore for italic and double asterisks for bold.
+__This is bold and *italic* text__ using double underscores for bold and single asterisks for italic. 
 ```
 
-> _This is **bold and italic** text_.
+>_This is **italic and bold** text_ using a single underscore for italic and double asterisks for bold.
+> __This is bold and *italic* text__ using double underscores for bold and single asterisks for italic. 
 
-To use a literal asterisk, escape it with a backslash (`\`). 
+To use a literal asterisk, precede it with an escape character--in GFM  that is a backslash (`\`). This example results in the underscores and asterisks being shown in the output.
 
 ```markdown
 \_This is all \*\*plain\*\* text\_.
@@ -71,19 +77,24 @@ Image and site links use a very similar syntax.
 
 ### Making lists
 
-You can define ordered or unordered lists. Ordered lists start with numbers and unordered lists can use asterisks or dashes (`-`).
+You can define ordered or unordered lists. You can also define nested items through indentation.
 
+ * Ordered lists start with numbers.
+ * Unordered lists can use asterisks or dashes (`-`).
+
+
+Here is the markdown for an ordered list.
 ```markdown
 1. First
 1. Second
 1. Third
 ```
 
+Result:
 > 1. First
 > 1. Second
 > 1. Third
 
-You can also define nested items through indentation.
 
 ```markdown
 - First
@@ -92,6 +103,8 @@ You can also define nested items through indentation.
 - Third
 ```
 
+Here is the markdown for an unordered list.
+
 > - First
 >   - Nested
 > - Second
@@ -99,7 +112,7 @@ You can also define nested items through indentation.
 
 ### Building tables
 
-Tables can be constructed using a combination of pipes (`|`) and dashes (`-`).
+Tables can be constructed using a combination of pipes (`|`) for column breaks and dashes (`-`) to designate the prior row as a header.
 
 ```
 First|Second
@@ -187,7 +200,7 @@ For more information, see [Autolinked references and URLs](https://help.github.c
 
 ### Linking specific commits
 
-You can link to a commit by pasting in its ID.
+You can link to a commit by pasting in its ID, or, simply using its secure hash algorithm (SHA).
 
 | Reference type | Raw reference | Short link |
 | -------------- | ------------- | ---------- |

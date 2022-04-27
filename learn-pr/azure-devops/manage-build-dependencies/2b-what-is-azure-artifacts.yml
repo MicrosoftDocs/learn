@@ -5,8 +5,8 @@ metadata:
   title: "What is Azure Artifacts?"
   description: Learn how you can use Azure Artifacts to securely create and manage packages that your apps can consume.
   ms.date: 05/28/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

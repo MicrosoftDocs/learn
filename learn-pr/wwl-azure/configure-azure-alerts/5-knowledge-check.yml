@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/26/2021
+  ms.date: 01/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -23,7 +24,7 @@ quiz:
       explanation: "That's incorrect. The Alerts page shows New when an issue has been detected and has not yet been reviewed."
     - content: "An administrator has reviewed the alert and started working on it."
       isCorrect: true
-      explanation: "That's correct. the Acknowledged state is shown when an administrator has reviewed an alert and is working on it."
+      explanation: "That's correct. The Acknowledged state is shown when an administrator has reviewed an alert and is working on it."
     - content: "An issue has been resolved."
       isCorrect: false
       explanation: "That's incorrect. The Alerts page shows Closed when an issue has been resolved."

@@ -1,14 +1,13 @@
-You’ve seen how admins can use the resource governance capabilities in Azure to ensure that resources for their organization are governed properly, so that they are secure, and in line with the organization’s compliance requirements.
+You’ve seen how admins can use the resource governance capabilities in Azure to ensure that resources for their organization are governed properly, so that they're secure, and in line with the organization’s compliance requirements.
 
-Now that you’ve completed this module, you should be able to:
+Now that you’ve completed this module, you'll be able to:
 
-- Describe the capabilities of Azure resource locks.
-- Describe the function of Azure Blueprints.
-- Describe how Azure policy helps organizations assess compliance.
+- Describe Azure Policy.
+- Describe Azure Blueprints.
+- Describe Microsoft Purview.
 
 ## Learn more
 
-- [Lock resources to prevent unexpected changes](/azure/azure-resource-manager/management/lock-resources)
-- [What is Azure Resource Manager](/azure/azure-resource-manager/management/overview)
-- [What is Azure Blueprints?](/azure/governance/blueprints/overview)
 - [What is Azure Policy?](/azure/governance/policy/overview)
+- [What is Azure Blueprints?](/azure/governance/blueprints/overview)
+- [What is Microsoft Purview?](/azure/purview/overview)

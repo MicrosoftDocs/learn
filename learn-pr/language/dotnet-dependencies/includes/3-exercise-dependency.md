@@ -1,8 +1,13 @@
 The developers at Tailwind Traders realize that they're about to put extensive resources into developing apps for the .NET platform. These apps are going to display human-readable data to users, including dates, times, and numbers. 
 
-.NET has the capabilities to do this, but the developers are certain someone has solved this problem. They need a framework. After some searching, they've found Humanizer in the NuGet package registry. It seems to be widely used and promises to meet all of their .NET needs for manipulating and displaying strings, enumerations, dates, times, timespans, numbers, and quantities. 
+.NET has the capabilities to do this, but the developers are certain someone has solved this problem. They need a framework. After some searching, they've found Humanizer in the NuGet package registry. It seems to be widely used and promises to meet all of their .NET needs for manipulating and displaying strings, enumerations, dates, times, timespans, numbers, and quantities.
 
 At this point, the developers want you to install Humanizer, write a couple of data manipulations, and run them to see if Humanizer delivers on its promise.
+
+> [!NOTE]
+> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+
+[!include[](../../../includes/dotnet6-sdk-version.md)]
 
 ## Create a sample .NET project
 
@@ -17,7 +22,7 @@ To set up a .NET project to work with dependencies, we'll use Visual Studio Code
 1. In the terminal window, copy and paste the following command.
 
     ```dotnetcli
-    dotnet new console
+    dotnet new console -f net6.0
     ```
 
     This command creates a **Program.cs** file in your folder with a basic "Hello World" program already written, along with a C# project file named **DotNetDependencies.csproj**.
@@ -25,7 +30,6 @@ To set up a .NET project to work with dependencies, we'll use Visual Studio Code
     You should now have access to these files.
 
     ```bash
-    -| bin
     -| obj
     -| DotNetDependencies.csproj
     -| Program.cs
@@ -58,18 +62,7 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
 1. Open **Program.cs**. It should look like this.
 
     ```csharp
-    using System;
-
-    namespace DotNetDependencies
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {   
-                Console.WriteLine("Hello World");
-            }
-        }    
-    }
+    Console.WriteLine("Hello, World!");
     ```
 
     The preceding function is run at the start of the application and outputs a string to the console. Let's add Humanizer and manipulate data and write it to the console.
@@ -97,22 +90,12 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     Your **Program.cs** should now look like this:
 
     ```csharp
-    using System;
     using Humanizer;
 
-    namespace DotNetDependencies
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {   
-                Console.WriteLine("Hello World");
-            }
-        }    
-    }
+    Console.WriteLine("Hello, World!");
     ```
 
-1. Add the following content to the Program.cs file to the bottom of the `Program` class, just after the closing brace for the Main method.
+1. Add the following content to the Program.cs file to the bottom of file under the `Console.WriteLine("Hello, World!");`.
 
     ```csharp
     static void HumanizeQuantities()
@@ -131,17 +114,14 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     }
     ```
 
-1. Update the `Main` method to call the new methods.
+1. Replace the `Console.WriteLine("Hello, World!");` with the following code:
 
     ```csharp
-    static void Main(string[] args)
-    {   
-        Console.WriteLine("Quantities:");
-        HumanizeQuantities();
+    Console.WriteLine("Quantities:");
+    HumanizeQuantities();
 
-        Console.WriteLine("\nDate/Time Manipulation:");
-        HumanizeDates();
-    }
+    Console.WriteLine("\nDate/Time Manipulation:");
+    HumanizeDates();
     ```
 
 1. Run the application by running the following command in the terminal.

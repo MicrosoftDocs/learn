@@ -5,10 +5,11 @@ metadata:
   title: Introduction
   description: Introduction
   author: trallard
-  ms.author: taallard
-  ms.date: 11/11/2020
+  ms.author: chnoring
+  ms.date: 04/04/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-compute-solution.design-for-azure-app-services-solutions
+title: Design for Azure App Services solutions
+metadata:
+  title: Design for Azure App Services solutions
+  description: "Design for Azure App Services solutions"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-design-for-azure-app-services-solutions.md)]

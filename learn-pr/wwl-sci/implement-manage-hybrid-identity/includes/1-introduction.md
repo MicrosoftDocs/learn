@@ -10,16 +10,15 @@ By the end of this module, you will be able to implement and manage a hybrid ide
 
 In this module, you will:
 
-- Plan, design, and implement Azure AD Connect
-- Manage Azure AD Connect
-- Implement and manage password hash synchronization (PHS)
-- Implement and manage pass-through authentication (PTA)
-- Implement and manage seamless single sign-on (Seamless SSO)
-- Implement and manage federation excluding manual AD FS deployments
-- Troubleshoot synchronization errors
-- Implement and manage Azure AD Connect Health
+ -  Plan, design, and implement Azure AD Connect
+ -  Manage Azure AD Connect
+ -  Implement and manage password hash synchronization (PHS)
+ -  Implement and manage pass-through authentication (PTA)
+ -  Implement and manage seamless single sign-on (Seamless SSO)
+ -  Implement and manage federation excluding manual AD FS deployments
+ -  Troubleshoot synchronization errors
+ -  Implement and manage Azure AD Connect Health
 
 ## Prerequisites
 
 None
-

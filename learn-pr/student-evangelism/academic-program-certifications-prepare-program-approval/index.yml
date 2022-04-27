@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.student-evangelism.academic-program-certifications-prepare-program-approval
+metadata:
+  title: Prepare for a program approval event
+  description: Organize and support the approval process for your program. Define the main processes in program approval and respond to feedback from an approval panel. 
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Prepare for a program approval event
+summary: Organize and support the approval process for your program. Define the main processes in program approval and respond to feedback from an approval panel. 
+abstract: |
+    After completing this module, you'll be able to:
+    - Describe the program approval process and requirements.
+    - Present the rationale and key outcomes of a program that implements certification.
+prerequisites: |
+    - Familiarity with academic processes in higher education for course development
+    - Experience creating and managing learning resources for academic courses
+iconUrl: /learn/achievements/student-evangelism/academic-program-certifications-prepare-program-approval.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+- higher-ed-educator
+- school-leader
+products:
+- azure
+units:
+- learn.student-evangelism.academic-program-certifications-prepare-program-approval.introduction
+- learn.student-evangelism.academic-program-certifications-prepare-program-approval.identify-program-approval-stakeholders
+- learn.student-evangelism.academic-program-certifications-prepare-program-approval.describe-approval-process
+- learn.student-evangelism.academic-program-certifications-prepare-program-approval.knowledge-check
+- learn.student-evangelism.academic-program-certifications-prepare-program-approval.summary
+badge:
+  uid: learn.student-evangelism.academic-program-certifications-prepare-program-approval.badge

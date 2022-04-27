@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.implement-windows-server-auditing-diagnostics
+metadata:
+  title: Implement Windows Server auditing and diagnostics
+  description: "Learn to audit and diagnose your Windows Server environment for regulatory compliance, user activity, and troubleshooting. Implement security best practices through regular audits of your network environment to gain early warning of potential malicious activity."
+  ms.date: 12/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement Windows Server auditing and diagnostics
+summary: Learn to audit and diagnose your Windows Server environment for regulatory compliance, user activity, and troubleshooting. Implement security best practices through regular audits of your network environment to gain early warning of potential malicious activity.
+abstract: |
+  After completing this module, you will be able to:
+  *   Audit Windows Server events
+  *   Configure Windows Server to record diagnostic information
+prerequisites: |
+  *   Working knowledge of common Windows Server management tools
+  *   Some experience of typical Windows Server workloads
+  *   Basic knowledge of Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- support-engineer
+- technology-manager
+products:
+- windows-server
+units:
+- learn.wwl.implement-windows-server-auditing-diagnostics.introduction
+- learn.wwl.implement-windows-server-auditing-diagnostics.describe-basic-auditing-categories
+- learn.wwl.implement-windows-server-auditing-diagnostics.describe-advanced-categories
+- learn.wwl.implement-windows-server-auditing-diagnostics.log-user-access
+- learn.wwl.implement-windows-server-auditing-diagnostics.enable-setup-boot-event-collection
+- learn.wwl.implement-windows-server-auditing-diagnostics.knowledge-check
+- learn.wwl.implement-windows-server-auditing-diagnostics.summary
+badge:
+  uid: learn.wwl.implement-windows-server-auditing-diagnostics.badge

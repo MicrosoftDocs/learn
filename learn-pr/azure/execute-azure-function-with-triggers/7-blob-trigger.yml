@@ -5,8 +5,8 @@ metadata:
   title: Execute an Azure function when a blob is created
   description: Execute an Azure function when a blob is created
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

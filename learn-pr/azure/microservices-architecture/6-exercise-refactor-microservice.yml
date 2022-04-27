@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Refactor a service within the monolith as a microservice
   description: Exercise - Refactor a service within the monolith as a microservice
   ms.date: 08/30/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: davidcberry13
+  ms.author: daberry
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Refactor a service within the monolith as a microservice

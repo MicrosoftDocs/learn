@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-concepts-of-cryptography.describe-encryption-its-use-cybersecurity
+title: Describe encryption and its use in cybersecurity
+metadata:
+  title: Describe encryption and its use in cybersecurity
+  description: "Describe encryption and its use in cybersecurity"
+  ms.date: 04/22/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-describe-encryption-its-use-cybersecurity.md)]

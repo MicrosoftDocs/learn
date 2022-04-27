@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which type of component in Azure Data Factory will load data out to Azure Cosmos DB SQL API after it has been transformed?"
+    choices:
+    - content: "Sink"
+      isCorrect: true
+      explanation: "That's correct. A sink is the destination for data after it has been transformed."
+    - content: "Source"
+      isCorrect: false
+      explanation: "That's incorrect. A source is the data that has been ingested prior to transformation."
+    - content: "Input"
+      isCorrect: false
+      explanation: "That's incorrect. An input is additional data that can be used in the ETL process."
+  - content: "After enabling Synapse Link at the Azure Cosmos DB SQL API account level, what should you do before you can use the Spark connector with a specific container?"
+    choices:
+    - content: "Install Apache Spark in Azure Cosmos DB SQL API"
+      isCorrect: false
+      explanation: "That's incorrect. You cannot install Apache Spark in Azure Cosmos DB SQL API."
+    - content: "No further action is necessary after enabling Synapse Link"
+      isCorrect: false
+      explanation: "That's incorrect. Enabling Synapse Link is not enough to use the Spark connector with a specific container."
+    - content: "Enable analytical storage at the container level"
+      isCorrect: true
+      explanation: "That's correct. Each container should have analytical storage enabled."

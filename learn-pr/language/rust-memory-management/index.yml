@@ -3,11 +3,12 @@ uid: learn.languages.rust-memory-management
 metadata:
   title: Understand how Rust manages memory
   description: "Discover the features that make Rust so unique: ownership and borrowing."
-  ms.date: 01/21/2021
+  ms.date: 02/09/2022
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Understand how Rust manages memory
 summary: "Discover the features that make Rust so unique: ownership and borrowing."
 abstract:  |

@@ -4,10 +4,11 @@ metadata:
   title: Create character icons within the XR environment
   description:  Create character icons within the XR environment.
   ms.date: 06/15/2021
-  author: cassieview
+  author: cassiebreviu
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Create character icons within the XR environment
 durationInMinutes: 4
 content: |

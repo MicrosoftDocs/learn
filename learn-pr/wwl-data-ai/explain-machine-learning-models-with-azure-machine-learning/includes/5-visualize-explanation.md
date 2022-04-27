@@ -7,7 +7,7 @@ Model explanations in Azure Machine Learning studio include multiple visualizati
 
 The first visualization on the **Explanations** tab for a run shows global feature importance.
 
-![Global feature importance in Azure Machine Learning studio](../media/09-00-vis-global.png)
+![Screenshot shows a bar chart of Global Importance. Income, loan amount, marital status and age are the values.](../media/09-00-vis-global.png)
 
 You can use the slider to show only the top *N* features.
 
@@ -15,7 +15,7 @@ You can use the slider to show only the top *N* features.
 
 Switching to the **Summary Importance** visualization shows the distribution of individual importance values for each feature across the test dataset.
 
-![Global feature importance in Azure Machine Learning studio](../media/09-00-vis-summary.png)
+![Screenshot shows a bar chart of Global Importance and Summary Importance. Income, loan amount, marital status and age are the values.](../media/09-00-vis-summary.png)
 
 You can view the features as a *swarm* plot (shown above), a *box* plot, or a *violin* plot.
 
@@ -23,4 +23,4 @@ You can view the features as a *swarm* plot (shown above), a *box* plot, or a *v
 
 Selecting an individual data point shows the local feature importance for the case to which the data point belongs.
 
-![Global feature importance in Azure Machine Learning studio](../media/09-00-vis-local.png)
+![Screenshot shows a bar chart of Local Feature Importance. Income, loan amount, marital status and age are the values.](../media/09-00-vis-local.png)

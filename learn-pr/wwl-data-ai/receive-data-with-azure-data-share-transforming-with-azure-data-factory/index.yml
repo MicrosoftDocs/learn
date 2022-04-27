@@ -3,9 +3,9 @@ uid: learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-f
 metadata:
   title: Send and receive data using Azure Data Share and transform data using Azure Data Factory
   description: "Send and receive data using Azure Data Share and transform data using Azure Data Factory"
-  ms.date: 07/19/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Send and receive data using Azure Data Share and transform data using Azure Data Factory

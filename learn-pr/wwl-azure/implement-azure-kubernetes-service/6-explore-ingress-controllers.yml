@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-kubernetes-service-aks.explore-ingress-controllers
+title: Explore Ingress controllers
+metadata:
+  title: Explore Ingress controllers
+  description: "Explore Ingress controllers"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-explore-ingress-controllers.md)]

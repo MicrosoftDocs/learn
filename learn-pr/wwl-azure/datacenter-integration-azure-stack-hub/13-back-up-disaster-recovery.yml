@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.datacenter-integration-for-azure-stack-hub.backup-disaster-recovery
+title: Back up and disaster recovery
+metadata:
+  title: Back up and disaster recovery
+  description: "Back up and disaster recovery"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/13-back-up-disaster-recovery.md)]

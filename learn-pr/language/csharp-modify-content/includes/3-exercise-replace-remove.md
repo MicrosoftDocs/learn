@@ -21,6 +21,7 @@ string data = "12345John Smith          5000  3  ";
 string updatedData = data.Remove(5, 20);
 Console.WriteLine(updatedData);
 ```
+
 When you run the code, you'll see the follow output.
 
 ```output
@@ -41,11 +42,13 @@ message = message.Replace("--", " ");
 message = message.Replace("-", "");
 Console.WriteLine(message);
 ```
+
 When you run the code, you should see the following output.
 
 ```output
 This is example data
 ```
+
 Here we used the `Replace()` method twice. The first time we replaced the string `--` with an empty space. The second time we replaced the string `-` with an empty string, which completely removes the character from the string.
 
 ## Recap

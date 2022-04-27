@@ -1,3 +1,6 @@
+>[!NOTE]
+> The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
+
 Helm charts make it easy to install pre-configured cloud-native apps on a Kubernetes cluster. The DevOps team is already familiar with the installation steps to install apps using manifest files and kubectl. The team decides to install an ASP.NET Core Helm chart to test the Helm installation process.
 
 In this exercise, you'll add a Helm repository to your Helm client and install an ASP.NET Core website onto your Azure Kubernetes Service cluster.
@@ -32,8 +35,8 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
     Here is an example of what the listing may look like.
 
     ```output
-    NAME                         	CHART VERSION	APP VERSION	DESCRIPTION
-    azure-marketplace/aspnet-core	0.2.0        	3.1.7      	ASP.NET Core is an open-source framework create...
+    NAME                            CHART VERSION   APP VERSION	  DESCRIPTION
+    azure-marketplace/aspnet-core   1.3.18          3.1.19        ASP.NET Core is an open-source framework create...
     ```
 
 ## Deploy a Helm chart
@@ -48,26 +51,26 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
 
     ```output
     NAME: aspnet-webapp
-    LAST DEPLOYED: Wed Sep  2 07:58:36 2020
+    LAST DEPLOYED: Mon Oct 11 17:12:43 2021
     NAMESPACE: default
     STATUS: deployed
     REVISION: 1
     TEST SUITE: None
     NOTES:
     ** Please be patient while the chart is being deployed **
-    
+
     ASP.NET Core can be accessed through the following DNS name from within your cluster:
-    
+
         aspnet-webapp-aspnet-core.default.svc.cluster.local (port 80)
-    
+
     To access ASP.NET Core from outside the cluster execute the following commands:
-    
+
     1. Get the ASP.NET Core URL by running these commands:
-    
+
         export SERVICE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].port}" services aspnet-webapp-aspnet-core)
         kubectl port-forward --namespace default svc/aspnet-webapp-aspnet-core ${SERVICE_PORT}:${SERVICE_PORT} &
         echo "http://127.0.0.1:${SERVICE_PORT}"
-    
+
     2. Access ASP.NET Core using the obtained URL.
     ```
     The above output is generated from the `templates/Notes.txt` file. The information displayed from the `Notes.txt` file is generated based on a template define in the file and values from the `values.yaml` file. 
@@ -82,9 +85,9 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
 
     The command should return a result similar to the following output.
 
-    ```bash
+    ```output
     NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                   APP VERSION
-    aspnet-webapp   default         1               2020-09-02 07:58:36.017759374 +0000 UTC deployed        aspnet-core-1.2.3       3.1.9
+    aspnet-webapp   default         1               2021-10-11 17:12:43.50734334 +0000 UTC  deployed        aspnet-core-1.3.18      3.1.19
     ```
 
     Notice the name of the release and its revision number. The name of the release is import, as you'll use the name to reference the release. The revision number increments each time you make a change to a release. In the next exercise, you'll see how the revision number is used to manage upgrades and rollbacks for a release.
@@ -134,7 +137,7 @@ In this exercise, you'll add a Helm repository to your Helm client and install a
 1. Validate that the pod is deployed by running by using the `kubectl get pods` command.
 
     ```bash
-    kubectl get pods -o wide
+    kubectl get pods -o wide -w
     ```
 
     The command should return a result similar to the following output. Use `Ctrl+c` to exit the command once done.

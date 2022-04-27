@@ -4,8 +4,8 @@ metadata:
   title: Deploy to Azure
   description: Deploy our Azure Function to the cloud and update the slack configuration to use the new production version of our code.
   ms.date: 10/18/2018
-  author: adrianstevens
-  ms.author: adsteven
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy to Azure

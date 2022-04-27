@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 07/10/2020
-  author: jamcneil
-  ms.author: jumcn
+  author: tfitzmac
+  ms.author: tomfitz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

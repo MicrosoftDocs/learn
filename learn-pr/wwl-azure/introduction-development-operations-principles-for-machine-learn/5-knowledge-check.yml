@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-development-operations-principles-for-machine-learn.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which tool can be used for agile planning when working with Azure DevOps?"
+    choices:
+    - content: "Azure Boards"
+      isCorrect: true
+      explanation: "Correct. Use Azure Boards for work item tracking, visualization, and reporting."
+    - content: "Azure Repos"
+      isCorrect: false
+      explanation: "Incorrect. Use Azure Repos to store code in repositories"
+    - content: "Azure Pipelines"
+      isCorrect: false
+      explanation: "Incorrect. Use Azure Pipelines to automate building and testing code projects."
+  - content: "Which activity may be a part of continuous integration?"
+    choices:
+    - content: "Monitoring"
+      isCorrect: false
+      explanation: "Incorrect. Monitoring isn't a key component of creating or verifying code."
+    - content: "Linting"
+      isCorrect: true
+      explanation: "Correct. With linting you can check for any programmatic or stylistic errors in your scripts."
+    - content: "Planning"
+      isCorrect: false
+      explanation: "Incorrect. Planning should occur before working on the code."

@@ -4,6 +4,6 @@ Contoso IT staff are migrating Contoso on-premises servers to Windows Server 201
 
 You can learn more by reviewing the following documents.
 
-- [Comparison of Standard and Datacenter editions of Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/editions-comparison-19?azure-portal=true).
-- [Windows Server servicing channels: LTSC and SAC](https://docs.microsoft.com/windows-server/get-started-19/servicing-channels-19?azure-portal=true).
-- [Review and Select Activation Methods](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj134256(v=ws.11)?azure-portal=true).
+- [Comparison of Standard and Datacenter editions of Windows Server 2019](/windows-server/get-started-19/editions-comparison-19?azure-portal=true).
+- [Windows Server servicing channels: LTSC and SAC](/windows-server/get-started/servicing-channels-comparison).
+- [Review and Select Activation Methods](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj134256(v=ws.11)?azure-portal=true).

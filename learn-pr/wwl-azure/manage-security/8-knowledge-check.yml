@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An administrator for an on-premises network has a subscription containing a virtual network, Azure Virtual Desktop host pool, and an Azure Firewall. The virtual network connects the on-premises network using site-to-site VPN. The administrator wants to make sure that only users in the on-premises network connect to the Azure Virtual Desktop in the host pool. What should they do?"
+    choices:
+    - content: "Run New-AzRoleAssignment cmdlet"
+      isCorrect: false
+      explanation: "Incorrect. The New-AzRoleAssignment cmdlet assigns the specified RBAC role to the specified principal."
+    - content: "Run mstsc.exe"
+      isCorrect: false
+      explanation: "Incorrect. Mstsc.exe creates connections to Remote Desktop Session Host servers or other remote computers, edits an existing Remote Desktop Connection (.rdp) configuration file."
+    - content: "Conditional Access policy assignments"
+      isCorrect: true
+      explanation: "Correct. Conditional Access policy assignments define the conditions under which the policy will apply that provides session controls that enable limited experiences."
+  - content: "An Azure Virtual Desktop administrator wants to enable security posture management for virtual machines that include a secure configuration assessment and Secure Score. What should they do?"
+    choices:
+    - content: "Utilize Azure Security Center"
+      isCorrect: true
+      explanation: "Correct. Azure Security Center provides security posture management and threat protection capabilities for Azure Virtual Desktop virtual machines including secure configuration assessment, Secure Score, host level detections, and file integrity monitoring."
+    - content: "Configure automatic assignment"
+      isCorrect: false
+      explanation: "Incorrect. Automatic assignment is the default assignment type for new personal desktop host pools created in your Azure Virtual Desktop environment."
+    - content: "Enable network security groups (NSGs)"
+      isCorrect: false
+      explanation: "Incorrect. Network Security Groups are used to limit network traffic to resources in a virtual network."

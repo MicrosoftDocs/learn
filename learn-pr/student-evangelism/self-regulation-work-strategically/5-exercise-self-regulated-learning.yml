@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.self-regulation-work-strategically.exercise-self-regulated-learning
+title: Exercise - Self-regulated learning
+metadata:
+  title:  Exercise - Self-regulated learning
+  description: In this unit, you'll apply your knowledge of self-regulated learning to a group of scenarios.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-self-regulated-learning.md)]

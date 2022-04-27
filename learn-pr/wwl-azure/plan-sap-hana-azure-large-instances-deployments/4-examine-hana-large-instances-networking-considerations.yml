@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-sap-hana-azure-large-instances-deployments.examine-networking-considerations
+title: Examine SAP HANA on Azure (Large Instances) networking considerations
+metadata:
+  title: Examine SAP HANA on Azure (Large Instances) networking considerations
+  description: "Examine SAP HANA on Azure (Large Instances) networking considerations"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-examine-hana-large-instances-networking-considerations.md)]

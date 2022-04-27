@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: In this unit, you will learn about a business problem that you can address by using Azure API Management to host Azure Functions.
   ms.date: 09/26/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

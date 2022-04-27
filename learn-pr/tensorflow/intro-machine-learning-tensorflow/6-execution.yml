@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-machine-learning-tensorflow.execution
+title: Eager execution and graph execution
+metadata:
+  title: Eager execution and graph execution
+  description: Learn about TensorFlow's two execution modes, eager execution and graph execution
+  ms.date: 07/07/2021
+  author: bstollnitz
+  ms.author: bstollnitz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-tensorflow
+  ms.product: learning-tensorflow
+  ms.contributors: bstollnitz-08202021
+  ms.custom: team=cloud_advocates
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/6-execution.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What are the main advantages of graph execution?"
+    choices:
+    - content: "We can run our model in environments without Python, and we get better performance."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "We can easily debug our code and run it anywhere."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "We can write less code and get more accurate predictions."
+      isCorrect: false
+      explanation: "Incorrect."

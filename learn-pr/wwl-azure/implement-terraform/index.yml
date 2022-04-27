@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.implement-terraform
+metadata:
+  title: Implement Terraform
+  description: "Implement Terraform"
+  ms.date: 02/25/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement Terraform
+summary: This module explains Terraform integration with Azure Cloud Shell and Visual Studio Code for environment deployment configuration.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Implement and install Terraform
+  - Understand Terraform components
+  - Use Terraform on Azure
+  - Run Terraform in Azure Cloud Shell and Visual Studio Code
+prerequisites: |
+  None
+iconUrl: /learn/achievements/8-implement-terraform.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.implement-terraform.introduction
+- learn.wwl.implement-terraform.what-is-terraform
+- learn.wwl.implement-terraform.examine-terraform-components
+- learn.wwl.implement-terraform.explore-terraform-azure
+- learn.wwl.implement-terraform.install-terraform
+- learn.wwl.implement-terraform.examine-terraform-config-file-structure
+- learn.wwl.implement-terraform.exercise-run-terraform-azure-cloud-shell
+- learn.wwl.implement-terraform.exercise-run-terraform-visual-studio-code
+- learn.wwl.implement-terraform.knowledge-check
+- learn.wwl.implement-terraform.summary
+badge:
+  uid: learn.wwl.implement-terraform.badge

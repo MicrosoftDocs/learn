@@ -3,11 +3,12 @@ uid: learn.github.contribute-opensource
 metadata:
   title: Contribute to an open-source project on GitHub
   description: Learn how to contribute to an open-source project on GitHub.
-  ms.date: 11/11/2020
-  author: sinedied
-  ms.author: yolasors
+  ms.date: 04/04/2022
+  author: ttorble
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Contribute to an open-source project on GitHub
 summary: Learn how to use GitHub to find open-source projects and tasks to contribute to. Discover how to create pull requests and communicate with project maintainers effectively to get your changes accepted. Learn about the benefits of getting involved with open-source communities.
 abstract: |
@@ -36,7 +37,7 @@ products:
   - github
   - azure
 prerequisites: |
-  - A GitHub account
+  - A [GitHub account](https://github.com/?azure-portal=true)
   - The ability to navigate and edit files in GitHub
 units:
   - learn.github.contribute-opensource.1-introduction

@@ -70,7 +70,7 @@ git commit -m "adding About page to site"
 
    ```bash
    git remote add origin https://github.com/<user>/gatsby-app.git
-   git push -u origin master
+   git push -u origin main
    ```
 
 You are now ready to deploy to Azure Static Web Apps!
@@ -84,7 +84,7 @@ This tutorial uses the Azure sandbox to provide you with a free, temporary Azure
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), making sure you use the same account to sign in as you did to activate the sandbox.
 1. In the top bar, search for **Static Web Apps**.
 1. Select **Static Web Apps**.
-1. Select **New**.
+1. Select **Create**.
 
 ### Basics
 
@@ -106,21 +106,21 @@ Next, configure your new app and link it to your GitHub repository.
    | _SKU_    | **Free**                                                                      |
 
 1. Click the **Sign-in with GitHub** button and authenticate with GitHub
-1. Enter the **Source Control Details**
+1. Enter the **Deployment Details**
 
    | Setting        | Value                                                    |
    | -------------- | -------------------------------------------------------- |
    | _Organization_ | Select the Organization where you created the repository |
    | _Repository_   | **gatsby-app**                              |
-   | _Branch_       | **master**                                               |
+   | _Branch_       | **main**                                               |
 
-1. Use the **Build Details** use the drop down list to select **Gatsby** to populate the build information.
+1. Use the **Build Details** drop down list to select **Gatsby** to populate the build information.
 
     | Setting                 | Value                |
     | ----------------------- | -------------------- |
     | _App location_          |  *Leave default*     |
     | _Api location_          |  *Leave default*     |
-    | _App artifact location_ | **public**           |
+    | _Output location_ | **public**           |
 
 1. Click the **Review + create** button
 
@@ -152,9 +152,9 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 
 Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
-:::image type="content" source="../media/static-app-portal-finished.png" alt-text="Azure Static Web Apps overview page.":::
+:::image type="content" source="../media/static-app-portal-finished.png" alt-text="Screenshot that shows the Azure portal with a link to the URL for the app.":::
 
-:::image type="content" source="../media/published.png" alt-text="Azure Static Web Apps overview page.":::
+:::image type="content" source="../media/published.png" alt-text="Screenshot that shows the published app in the browser.":::
 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 

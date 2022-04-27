@@ -5,9 +5,10 @@ metadata:
   description: Learn about programming languages and the tools that developers use to create software for web development.
   ms.date: 03/24/2021
   author: chloecodesthings
-  ms.author: chcondon
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Introduction to programming
 summary: Learn about programming languages and the tools that developers use to create software.
 abstract:  |

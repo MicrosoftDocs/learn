@@ -4,11 +4,10 @@ metadata:
   title: Add visual controls to a Xamarin.Forms mobile app
   description: Start building the custom user interface of a Xamarin.Forms app by using pages and layouts.
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Add visual controls to a Xamarin.Forms mobile app
 durationInMinutes: 12
 content: |

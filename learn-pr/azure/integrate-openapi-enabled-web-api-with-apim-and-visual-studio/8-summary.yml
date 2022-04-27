@@ -5,6 +5,8 @@ metadata:
   title: Summary
   description: |
     In this module you learned how to:
+  ms.custom: team=cloud_advocates
+  ms.contributors: juyoo-04222021
 
     * Publish an OpenAPI-enabled Web API app to Azure App Service through Visual Studio,
     * Integrate the Web API with Azure API Management through Visual Studio, and

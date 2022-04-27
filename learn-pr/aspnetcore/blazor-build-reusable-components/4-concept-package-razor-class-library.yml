@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.blazor-build-reusable-components.concept-package-razor-class-library
+title: Package a Razor class library
+metadata:
+  unitType: learning-content
+  title: Package a Razor class library
+  description: "In this unit, you'll learn how Razor class libraries are packaged when they're shared with other developers."
+  ms.date: 10/13/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-concept-package-razor-class-library.md)]
+quiz:
+    title: Check your knowledge
+    questions:
+    - content: "What project property is the default value for PackageId?"
+      choices:
+      - content: "Default namespace"
+        isCorrect: false
+        explanation: "Incorrect. The default namespace of the project might match the property that's used for the default PackageId, but this isn't the correct value."
+      - content: "Project Name"
+        isCorrect: false
+        explanation: "Incorrect. The Project Name might match the property that's used for the default PackageId, but this isn't the correct value."
+      - content: "AssemblyName"
+        isCorrect: true
+        explanation: "AssemblyName is the default value for  PackageId."

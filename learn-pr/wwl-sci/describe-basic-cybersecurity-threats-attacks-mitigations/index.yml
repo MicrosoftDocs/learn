@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations
+metadata:
+  title: Describe basic cybersecurity threats, attacks, and mitigations
+  description: "Describe basic cybersecurity threats, attacks, and mitigations"
+  ms.date: 02/08/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe basic cybersecurity threats, attacks, and mitigations
+summary: Cyberattacks are impacting individuals and businesses at alarming rates.  Being informed about the evolving threat landscape and common types of attacks are key to learning how to protect against attacks.
+abstract: |
+  After completing this module, you will be able to:
+  *   Define what is cybersecurity
+  *   Describe the basic threat landscape
+  *   Describe different types of Malware
+  *   Describe basic mitigation strategies
+prerequisites: ""
+iconUrl: /learn/achievements/cybersecurity-threats-attacks.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+- student
+products:
+- azure
+- m365
+units:
+- learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.introduction
+- learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.describe-what-is-cybersecurity
+- learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.describe-threat-landscape
+- learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.describe-malware
+- learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.mitigation-strategies
+- learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.knowledge-check
+- learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.summary-resources
+badge:
+  uid: learn.wwl.describe-basic-cybersecurity-threats-attacks-mitigations.badge

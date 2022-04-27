@@ -3,7 +3,7 @@ uid: learn.wwl.configure-storage-tools
 metadata:
   title: Configure storage with tools
   description: "You will learn how to configure storage with tools like Storage Explorer and AZCopy."
-  ms.date: 07/23/2021
+  ms.date: 03/21/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Configure and use AZCopy.
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/storage-tools-configure.svg
 levels:
 - intermediate
 roles:

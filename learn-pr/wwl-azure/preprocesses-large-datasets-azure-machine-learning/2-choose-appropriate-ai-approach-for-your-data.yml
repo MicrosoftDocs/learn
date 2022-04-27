@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.preprocessing-large-datasets-azure-machine-learning.choose-appropriate-ai-approach-for-your-data
+title: Choose the appropriate AI approach for your data
+metadata:
+  title: Choose the appropriate AI approach for your data
+  description: "Choose the appropriate AI approach for your data"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-choose-appropriate-ai-approach-for-your-data.md)]

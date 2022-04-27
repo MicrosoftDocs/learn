@@ -1,0 +1,96 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-storage.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/20/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/20-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An Azure Storage account is capable of hosting different types of objects, including blobs, tables, queues, and files. What are Azure Storage blobs?"
+    choices:
+    - content: "Unstructured files such as media content, virtual machine disks, backups, or logs."
+      isCorrect: true
+      explanation: "Correct. Blobs typically represent unstructured files such as media content, virtual machine disks, backups, or logs."
+    - content: "Non-relational and partially structured content, which consists of multiple rows of data with different sets of properties."
+      isCorrect: false
+      explanation: "Incorrect. Non-relational and partially structured content is hosted in tables, not blobs."
+    - content: "Temporary storage for messages that Azure services commonly use to asynchronously communicate with each other."
+      isCorrect: false
+      explanation: "Incorrect. Temporary storage for messages that Azure services commonly use to asynchronously communicate with each other is a queue, not a blob."
+  - content: "Which of the following are the performance tiers offered by Azure Files?"
+    choices:
+    - content: "Basic and Standard"
+      isCorrect: false
+      explanation: "Incorrect. Azure Files offers two performance tiers. Standard file shares are backed by reliable rotational hard disk drives (HDDs). Premium file shares are backed by high-performance, low-latency solid-state disks (SSDs)."
+    - content: "Standard and Premium"
+      isCorrect: true
+      explanation: "Correct. Azure Files offers two performance tiers. Standard file shares are backed by reliable rotational hard disk drives (HDDs). Premium file shares are backed by high-performance, low-latency solid-state disks (SSDs)."
+    - content: "Basic, Standard, and Premium"
+      isCorrect: false
+      explanation: "Incorrect. Azure Files offers two performance tiers. Standard file shares are backed by reliable rotational hard disk drives (HDDs). Premium file shares are backed by high-performance, low-latency solid-state disks (SSDs)."
+  - content: "What is the maximum size of a data disk attached to an Azure VM?"
+    choices:
+    - content: "1 TB"
+      isCorrect: false
+      explanation: "Incorrect. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks you can attach to the VM."
+    - content: "16 TB"
+      isCorrect: false
+      explanation: "Incorrect. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks you can attach to the VM."
+    - content: "32 TB"
+      isCorrect: true
+      explanation: "Correct. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks you can attach to the VM."
+  - content: "Which tier of Azure managed disks are recommended for IO-intensive workloads with disks larger than 35,000 GiB, IOPS peaks greater than 25,000 and max throughput greater than 1,000 MiB/s?"
+    choices:
+    - content: "Standard SSD"
+      isCorrect: false
+      explanation: "Incorrect. Standard SSDs should be used for Web servers, lightly used enterprise applications, and dev/test."
+    - content: "Premium SSD"
+      isCorrect: false
+      explanation: "Incorrect. Premium SSDs should be used for production and performance-sensitive workloads."
+    - content: "Ultra SSD"
+      isCorrect: true
+      explanation: "Correct. Ultra SSD managed disks have the highest performance of the four tiers."
+  - content: "SAP HANA Dynamic Tiering 2.0 (DT 2.0) offers the ability to offload less frequently accessed data from memory into extended storage. Which of the following statements about DT 2.0 is true?"
+    choices:
+    - content: "DT 2.0 does not need to be installed on a dedicated Azure VM."
+      isCorrect: false
+      explanation: "Incorrect. DT 2.0 does need to be installed on a dedicated Azure VM."
+    - content: "The SAP HANA and DT 2.0 VMs must be deployed with Azure accelerated networking enabled."
+      isCorrect: true
+      explanation: "Correct. To ensure supportability for SAP HANA Dynamic Tiering 2.0, the SAP HANA and DT 2.0 VMs must be deployed with Azure accelerated networking enabled."
+    - content: "SAP HANA and DT 2.0 VMs cannot be deployed within the same Azure virtual network."
+      isCorrect: false
+      explanation: "Incorrect. SAP HANA and DT 2.0 VMs can be deployed within the same Azure virtual network."
+  - content: "Are Azure Standard HDD storage-based managed disks supported for SAP workloads?"
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. SAP Note #1928533 states that Azure Standard HDD storage based managed disks are not supported for SAP workloads."
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct. SAP Note #1928533 states that Azure Standard HDD storage based managed disks are not supported for SAP workloads. Microsoft recommends using Azure Standard SSD storage as the minimum for Azure VMs hosting the SAP application layer and for non-performance sensitive DBMS deployment, and using Azure Premium SSD storage for all other Azure VMs DBMS workloads."
+    - content: "Only for the SAP application layer and for non-performance sensitive DBMS deployment"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft recommends using Azure Standard SSD storage as the minimum for Azure VMs hosting the SAP application layer and for non-performance sensitive DBMS deployment."
+  - content: "The purpose of Azure Write Accelerator is to improve I/O latency of writes against the Azure Premium Storage. Which Azure VMs can take advantage of Azure Write Accelerator functionality?"
+    choices:
+    - content: "All VM series"
+      isCorrect: false
+      explanation: "Incorrect. Only some Azure VM series can take advantage of Azure Write Accelerator."
+    - content: "E-series and M-series VMs"
+      isCorrect: false
+      explanation: "Incorrect. Azure E-series VMs cannot take advantage of Azure Write Accelerator."
+    - content: "M-series VMs only"
+      isCorrect: true
+      explanation: "Correct. Azure Write Accelerator is a functionality that is available for Azure M-Series VMs exclusively."

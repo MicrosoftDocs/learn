@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.web-terminal
+title: About the Altair web terminal
+metadata:
+  title: About the Altair web terminal
+  description: This unit describes the Altair web terminal.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 2 
+content: |
+  [!include[](includes/04-web-terminal.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-azure-pipelines.communicate-with-azure-pipelines
+title: Communicate with Azure Pipelines
+metadata:
+  title: Communicate with Azure Pipelines
+  description: "Communicate with Azure Pipelines"
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-communicate-with-azure-pipelines.md)]

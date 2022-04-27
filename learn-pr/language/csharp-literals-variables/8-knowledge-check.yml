@@ -5,8 +5,8 @@ metadata:
   title: Check your knowledge
   description: Review what you've learned
   ms.date: 09/03/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
 durationInMinutes: 3
@@ -17,7 +17,7 @@ quiz:
     choices:
     - content: "$DATA"
       isCorrect: true
-      explanation: "The `$` can't be used in a variable name.  Furthermore, you shouldn't use all upper case characters for a variable name."
+      explanation: "The `$` can't be used in a variable name. Furthermore, you shouldn't use all upper case characters for a variable name."
     - content: "registrationComplete"
       isCorrect: false
       explanation: "`registrationComplete` is a valid variable name."
@@ -37,10 +37,10 @@ quiz:
       explanation: "Correct!"
     - content: "`message` isn't a good name for a variable."
       isCorrect: false
-      explanation: "There's nothing wrong with the variable name by itself.  It might be appropriate depending on the usage."
+      explanation: "There's nothing wrong with the variable name by itself. It might be appropriate depending on the usage."
     - content: "A variable named `message` should always be a string."
       isCorrect: false
-      explanation: "This isn't necessarily true.  It depends on the context."
+      explanation: "This isn't necessarily true. It depends on the context."
   - content: "Which of the following lines of code creates a variable correctly."
     choices:
     - content: "`int x = 12.3m;`"
@@ -54,4 +54,4 @@ quiz:
       explanation: "Correct!"
     - content: "`bool x = 'False';`"
       isCorrect: false
-      explanation: "The first problem is that you can't use a single-quote to create a `string` literal.  The second problem is that you can't set a `bool` to a `string` or `char` literal."
+      explanation: "The first problem is that you can't use a single-quote to create a `string` literal. The second problem is that you can't set a `bool` to a `string` or `char` literal."

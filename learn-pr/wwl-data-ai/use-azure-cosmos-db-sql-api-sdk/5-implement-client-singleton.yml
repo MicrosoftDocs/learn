@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-cosmos-db-sql-api-sdk.implement-client-singleton
+title: Implement client singleton
+metadata:
+  title: Implement client singleton
+  description: "Implement client singleton"
+  ms.date: 12/09/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-implement-client-singleton.md)]

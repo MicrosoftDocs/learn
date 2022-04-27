@@ -48,15 +48,15 @@ quiz:
     - content: delegatedMainIdentityResourceId
       isCorrect: false
       explanation: This isn't a valid property.
-  - content: Which of these is a valid Azure Sentinel built-in role that you can assign to your users?
+  - content: Which of these is a valid Microsoft Sentinel built-in role that you can assign to your users?
     choices:
-    - content: Azure Sentinel Worker
+    - content: Microsoft Sentinel Worker
       isCorrect: false
       explanation: This isn't a valid role.
-    - content: Azure Sentinel Responder
+    - content: Microsoft Sentinel Responder
       isCorrect: true
-      explanation: Your managing users can access and perform actions directly on your customers Azure Sentinel workspaces
-    - content: Azure Sentinel Looker
+      explanation: Your managing users can access and perform actions directly on your customers Microsoft Sentinel workspaces
+    - content: Microsoft Sentinel Looker
       isCorrect: false
       explanation: This isn't a valid role.
   - content: How often will the Azure Connected Machine Agent send updates to an Azure tenant?

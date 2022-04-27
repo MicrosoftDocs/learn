@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-windows-package-manager-tool.install-uninstall-software
+title: Install and uninstall software with Windows Package Manager
+metadata:
+  title: Install and uninstall software with Windows Package Manager
+  description: "Install and uninstall software with Windows Package Manager"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-install-uninstall-software.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which install command is used to specify the language when installing an app?"
+    choices:
+    - content: "**--language**"
+      isCorrect: false
+      explanation: "That's incorrect.  This is not a valid command with Windows Package Manager."
+    - content: "**--locale**"
+      isCorrect: true
+      explanation: "That's correct. The **--locale** command specifies which locale to use (BCP47 format)."
+    - content: "**--switch**"
+      isCorrect: false
+      explanation: "That's incorrect. This is not a valid command with Windows Package Manager."

@@ -10,7 +10,7 @@ A Resource Manager template can contain sections that are expressed using JSON n
 
 ```json
 {
-    "$schema": "http://schema.management.​azure.com/schemas/2019-04- 01/deploymentTemplate.json#",​
+    "$schema": "http://schema.management.​azure.com/schemas/2019-04-01/deploymentTemplate.json#",​
     "contentVersion": "",​
     "parameters": {},​
     "variables": {},​
@@ -18,6 +18,7 @@ A Resource Manager template can contain sections that are expressed using JSON n
     "resources": [],​
     "outputs": {}​
 }
+
 ```
 
 :::row:::

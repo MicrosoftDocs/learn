@@ -1,17 +1,17 @@
 To move their application to a microservices architecture, Fabrikam needs to evaluate their current application and determine the scope and boundary of each microservice. To do this, they're going to use the *domain-driven design* (DDD) framework. Let's see how they apply it to their application.
 
 > [!NOTE]
-> This article doesn't show a complete and comprehensive domain analysis. We deliberately kept the example brief to illustrate the main points. For more information on DDD, please see the "Learn more" section in the summary at the end of this module.
+> This article doesn't show a complete and comprehensive domain analysis. We deliberately kept the example brief to illustrate the main points. For more information about DDD, see the "Learn more" section in the summary at the end of this module.
 
 ## What is domain-driven design?
 
-Domain-driven design is an approach to system design originally introduced by Erik Evans in his 2005 book *Domain-Driven Design: Tackling Complexity in the Heart of Software*. This approach includes three key elements:
+DDD is an approach to system design originally introduced by Erik Evans in the 2005 book *Domain-Driven Design: Tackling Complexity in the Heart of Software*. This approach includes three key elements:
 
 - Focus on the core domain and domain logic.
 - Structure the design on a model of the domain.
 - Drive iterative collaboration between the technical teams and business partners to constantly improve the system.
 
-Domain-driven design provides a framework that can get you most of the way to a set of well-designed microservices. DDD has two distinct phases, *strategic* and *tactical*. In strategic DDD, you define the large-scale structure of the system. Strategic DDD helps to ensure that your architecture remains focused on business capabilities. Tactical DDD provides a set of design patterns that you can use to create the domain model. These patterns include entities, aggregates, and domain services. These tactical patterns help you to design microservices that are loosely coupled and cohesive.
+DDD provides a framework that can get you most of the way to a set of well-designed microservices. It has two distinct phases, *strategic* and *tactical*. In strategic DDD, you define the large-scale structure of the system. Strategic DDD helps to ensure that your architecture remains focused on business capabilities. Tactical DDD provides a set of design patterns that you can use to create the domain model. These patterns include entities, aggregates, and domain services. These tactical patterns help you to design microservices that are loosely coupled and cohesive.
 
 ![Diagram of the steps for domain-driven design.](../media/6-ddd-process.svg)
 
@@ -30,7 +30,7 @@ Let's take a closer look at what happens at each of these steps.
 
 DDD starts by modeling the business domain and creating a domain model. The domain model is an abstract model of the business domain. It distills and organizes domain knowledge, and it provides a common language for developers and domain experts.
 
-Start by mapping all of the business functions and their connections. This will likely be a collaborative effort that involves domain experts, software architects, and other stakeholders. You don't need to use any particular formalism. Sketch a diagram or draw on whiteboard.
+Start by mapping all of the business functions and their connections. This will likely be a collaborative effort that involves domain experts, software architects, and other stakeholders. You don't need to use any particular formalism. Sketch a diagram or draw it out on a whiteboard.
 
 As you fill in the diagram, you might start to identify discrete subdomains. Which functions are closely related? Which functions are core to the business, and which provide ancillary services? What is the dependency graph? During this initial phase, you aren't concerned with technologies or implementation details. That said, you should note the place where the application needs to integrate with external systems, such as CRM, payment processing, or billing systems.
 
@@ -89,7 +89,7 @@ The development team identified one more area of functionality, which doesn't fi
 
 Now we're ready to go from domain model to application design. Here's an approach that you can use to derive microservices from the domain model.
 
-1. Start with a bounded context. In general, the functionality in a microservice should not span more than one bounded context. By definition, a bounded context marks the boundary of a particular domain model. If you find that a microservice mixes different domain models together, that's a sign that you might need to go back and refine your domain analysis.
+1. Start with a bounded context. In general, the functionality in a microservice shouldn't span more than one bounded context. By definition, a bounded context marks the boundary of a particular domain model. If you find that a microservice mixes different domain models together, that's a sign that you might need to go back and refine your domain analysis.
 1. Next, look at the aggregates in your domain model. Aggregates are often good candidates for microservices. A well-designed aggregate exhibits many of the characteristics of a well-designed microservice:
     - An aggregate is derived from business requirements rather than technical concerns, such as data access or messaging.
     - An aggregate should have high functional cohesion.

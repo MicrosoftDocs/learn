@@ -3,19 +3,20 @@ uid: learn.student-evangelism.install-code-tools-python-nasa
 metadata:
   title: Install coding tools for Python development
   description: Learn about what coding is and install tools to help you code.
-  ms.date: 06/09/2021
-  author: drguthals
-  ms.author: sguthals
+  ms.date: 03/28/2022
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen, devdivchpfy22
 title: Install coding tools for Python development
 summary: Learn about what coding is and install tools to help you code.
 abstract: |
-  In this module, you will learn:
+  In this module, you'll learn:
   - What a programming language is
   - How to install Visual Studio Code and about the benefits of this code editor
   - How to install extensions to enhance the Visual Studio Code experience
-  - How to install Python and why it is such a popular programming language
+  - How to install Python and why it's such a popular programming language
   - How to run a basic Jupyter Notebook within Visual Studio Code
 
   > [!TIP]

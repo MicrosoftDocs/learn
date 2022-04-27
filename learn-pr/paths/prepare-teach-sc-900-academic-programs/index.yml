@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.prepare-teach-sc-900-academic-programs
+metadata:
+  title: Prepare to teach SC-900 Microsoft Security, Compliance, and Identity Fundamentals in academic programs
+  description: Prepare to teach SC-900 Microsoft Security, Compliance, and Identity Fundamentals in academic programs
+  ms.date: 04/13/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare to teach SC-900 Microsoft Security, Compliance, and Identity Fundamentals in academic programs
+prerequisites: |
+  - None
+summary: |
+  The Microsoft Learn for Educators program provides eligible educators and faculty members at colleges, universities, community colleges, polytechnics, and some STEM-focused secondary schools access to Microsoft's ready-to-teach curriculum and teaching materials aligned to industry-recognized Microsoft Certifications.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- higher-ed-educator
+products:
+- azure-security-center
+modules:
+- learn.wwl.introduction-microsoft-learn-educators-program
+- learn.wwl.onboard-microsoft-learn-educators-program
+- learn.wwl.microsoft-learn-educators-course-preparation
+- learn.wwl.microsoft-learn-educators-course-plan
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers
+- learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals
+trophy:
+  uid: learn.wwl.prepare-teach-sc-900-academic-programs.trophy

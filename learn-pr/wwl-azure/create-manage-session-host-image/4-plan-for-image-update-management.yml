@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-session-host-image.plan-for-image-update-management
+title: Plan for image update and management
+metadata:
+  title: Plan for image update and management
+  description: "Plan for image update and management"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-plan-for-image-update-management.md)]

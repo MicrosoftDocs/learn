@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.learn-introduction-tutorials-mrtk.1-8-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: Choose the best response for each question. Then select Check your answers.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: " In the Unity **Build Settings** window, which platform should be selected to target Windows Mixed Reality?"
+      choices:
+        - content: " WebGL"
+          isCorrect: false
+          explanation: WebGL is a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins. 
+        - content: "PC, Mac & Linux Standalone"
+          isCorrect: false
+          explanation: The PC, Mac & Linux Standalone build settings contain options you can use to set up and begin the build process for your application on these platforms.
+        - content: "Universal Windows Platform"
+          isCorrect: true
+          explanation: With the Universal Windows Platform (UWP), developers can target Windows 10 tablets and PCs, Windows 10 mobile devices (that is, phones), Xbox One and HoloLens with a single code base.
+    - content: "Which Mixed Reality Toolkit package is the only one you're required to import and configure in order to use the Mixed Reality Toolkit?"
+      choices:
+        - content: "Microsoft.MixedRealityToolkit.Unity.Extensions.unitypackage"
+          isCorrect: false
+          explanation: The extensions package provides a set of useful optional components for the Mixed Reality Toolkit. 
+        - content: "Microsoft.MixedRealityToolkit.Unity.Foundation.unitypackage"
+          isCorrect: true
+          explanation: The foundation package is the only required package and includes the core components required to create a mixed reality application.
+        - content: "Microsoft.MixedRealityToolkit.Unity.Examples.unitypackage"
+          isCorrect: false
+          explanation: The examples package is optional and contains useful demonstration scenes for current Mixed Reality Toolkit features.
+    - content: "After the Mixed Reality Toolkit is added to a Unity scene, what happens to the Main Camera object?"
+      choices:
+        - content: "The Main Camera object becomes a child to the MixedRealityToolkit object."
+          isCorrect: false
+          explanation: The MixedRealityToolkit object contains the Toolkit itself.
+        - content: "The Main Camera object becomes a child to the MixedRealityPlayspace object."
+          isCorrect: true
+          explanation: This allows the play space to manage the camera simultaneously with the SDKs.
+        - content: " The Main Camera object is deleted because it's not needed for mixed reality development."
+          isCorrect: false
+          explanation: The Main Camera object is needed to capture and display the world to the user.
+    

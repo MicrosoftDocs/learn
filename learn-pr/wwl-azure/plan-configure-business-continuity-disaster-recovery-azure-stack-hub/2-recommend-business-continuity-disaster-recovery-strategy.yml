@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-configure-business-continuity-disaster-recovery-for-azure-stack-hub.recommend-bcdr-strategy
+title: Recommend a business continuity disaster recovery (BCDR) strategy
+metadata:
+  title: Recommend a business continuity disaster recovery (BCDR) strategy
+  description: "Recommend a business continuity disaster recovery (BCDR) strategy"
+  ms.date: 12/07/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-recommend-business-continuity-disaster-recovery-strategy.md)]

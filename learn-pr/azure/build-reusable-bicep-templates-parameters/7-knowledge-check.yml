@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 04/20/2021
+  ms.date: 10/29/2021
   author: wviriya
   ms.author: wviriya
   ms.topic: interactive-tutorial
@@ -18,34 +18,34 @@ quiz:
   questions:
   - content: What will the value of the `projectName` parameter be when this template is deployed?
     choices:
-    - content: "`alpha`"
+    - content: "`dog`"
       isCorrect: false
       explanation: Incorrect. Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your template.
-    - content: "`bravo`"
+    - content: "`cat`"
       isCorrect: false
       explanation: Incorrect. Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your template.
-    - content: "`charlie`"
+    - content: "`bird`"
       isCorrect: true
       explanation: Correct. Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your template.
   - content: Which of these values for the `projectName` parameter would result in a deployment error?
     choices:
     - content: "An empty string."
       isCorrect: false
-      explanation: Incorrect. An empty string is a valid value for the `projectName` parameter.
-    - content: "`delta`"
+      explanation: Incorrect. An empty string `''` is a valid value for the `projectName` parameter.
+    - content: "`1`"
       isCorrect: false
-      explanation: Incorrect. The value `delta` is a valid value for the `projectName` parameter, since it is less than the maximum length of five characters.
-    - content: "`foxtrot`"
+      explanation: Incorrect. The value `'1'` is a valid value for the `projectName` parameter, since it is less than the maximum length of five characters.
+    - content: "`animal`"
       isCorrect: true
-      explanation: Correct. The value `foxtrot` is not valid for the `projectName` parameter, because its length exceeds the maximum of five characters.
+      explanation: Correct. The value `'animal'` is not valid for the `projectName` parameter, because its length exceeds the maximum of five characters.
   - content: You want to view the value of the `apiKey` parameter after the deployment has completed. Which of these statements is true?
     choices:
-    - content: You can't view the value of the `apiKey` parameter for the deployment.
+    - content: You cannot view the value of the `apiKey` parameter for the deployment.
       isCorrect: true
-      explanation: Correct. The `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value isn't available to you to view.
+      explanation: Correct. The `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value is not available to you to view.
     - content: You can view the value of the `apiKey` parameter for this deployment by looking at the output of the deployment command.
       isCorrect: false
-      explanation: Incorrect. Normally, the deployment command will show you the values of each parameter. However, the `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value isn't available to you to view.
-    - content: You can view the value of the `apiKey` parameter for this deployment by using the Azure portal.
+      explanation: Incorrect. Normally, the deployment command will show you the values of each parameter. However, the `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value is not available to you to view.
+    - content: You can view the value of the `apiKey` parameter by inspecting the resource group deployments in the Azure portal.
       isCorrect: false
-      explanation: Incorrect. Normally, the Azure portal will show you the values of each parameter for a deployment. However, the `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value isn't available to you to view.
+      explanation: Incorrect. Normally, the Azure portal will show you the values of each parameter for a deployment. However, the `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value is not available to you to view.

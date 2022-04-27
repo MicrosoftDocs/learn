@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.perform-system-diagnostics-test-azurestack
+title: Perform system diagnostics by using Test-AzureStack
+metadata:
+  title: Perform system diagnostics by using Test-AzureStack
+  description: "Perform system diagnostics by using Test-AzureStack"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-perform-system-diagnostics-test-azure-stack.md)]

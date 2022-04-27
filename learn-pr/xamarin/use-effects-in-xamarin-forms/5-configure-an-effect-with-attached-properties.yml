@@ -4,11 +4,10 @@ metadata:
   title: Configure an effect by using attached bindable properties
   description: Configure an effect by using attached bindable properties
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Configure an effect by using attached bindable properties
 durationInMinutes: 7
 content: |

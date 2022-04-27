@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.blob-storage-image-upload-static-web-apps.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Overview of the concepts and scenario you'll learn about in this module.
+  author: videlalvaro
+  ms.author: alvidela
+  ms.date: 11/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: alvidela-11122021
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

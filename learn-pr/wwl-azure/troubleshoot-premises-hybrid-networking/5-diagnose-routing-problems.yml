@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-premises-hybrid-networking.diagnose-routing-problems
+title: Diagnose routing problems
+metadata:
+  title: Diagnose routing problems
+  description: "Diagnose routing problems"
+  ms.date: 11/29/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-diagnose-routing-problems.md)]

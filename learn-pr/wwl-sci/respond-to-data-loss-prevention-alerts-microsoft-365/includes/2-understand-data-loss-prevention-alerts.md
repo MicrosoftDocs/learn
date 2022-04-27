@@ -1,12 +1,12 @@
-As a Security Operations Analyst, you need to understand Compliance-related terminology and alerts.  The Data loss prevention (DLP) alerts will help you in your investigation to find the full scope of the incident.  DLP alerts can be generated from Microsoft 365 Compliance or Microsoft Cloud App Security.  You might not be the person creating the DLP Policies, but it is important for you to understand them so you can recommend changes.
+As a Security Operations Analyst, you need to understand Compliance-related terminology and alerts.  The Data loss prevention (DLP) alerts will help you in your investigation to find the full scope of the incident.  DLP alerts can be generated from Microsoft 365 Compliance or Microsoft Defender for Cloud Apps.  You might not be the person creating the DLP Policies, but it is important for you to understand them so you can recommend changes.
 
 To comply with business standards and industry regulations, organizations must protect sensitive information and prevent its inadvertent disclosure. Sensitive information can include financial data or personal information such as credit card numbers, social security numbers, or health records.
 
 With a DLP policy, you can:
 
-- Identify sensitive information across many locations, such as Exchange Online, SharePoint Online, OneDrive for Business, and Microsoft Teams.
+- Identify sensitive information across many locations, such as Exchange Online, SharePoint Online, OneDrive, and Microsoft Teams.
 
-- For example, you can identify any document containing a credit card number that's stored in any OneDrive for Business site, or you can monitor just the OneDrive sites of specific people.
+- For example, you can identify any document containing a credit card number that's stored in any OneDrive site, or you can monitor just the OneDrive sites of specific people.
 
 - Prevent the accidental sharing of sensitive information.
 
@@ -14,7 +14,7 @@ With a DLP policy, you can:
 
 - Monitor and protect sensitive information in the desktop versions of Excel, PowerPoint, and Word.
 
-- Just like in Exchange Online, SharePoint Online, and OneDrive for Business, these Office desktop programs include the same capabilities to identify sensitive information and apply DLP policies. DLP provides continuous monitoring when people share content in these Office programs.
+- Just like in Exchange Online, SharePoint Online, and OneDrive, these Office desktop programs include the same capabilities to identify sensitive information and apply DLP policies. DLP provides continuous monitoring when people share content in these Office programs.
 
 - Help users learn how to stay compliant without interrupting their workflow.
 
@@ -40,7 +40,7 @@ Sensitivity labels specify the classification of a document.  These could be ter
 
 A DLP policy contains a few basic things:
 
-- Where to protect the content: locations such as Exchange Online, SharePoint Online, and OneDrive for Business sites, as well as Microsoft Teams chat and channel messages.
+- Where to protect the content: locations such as Exchange Online, SharePoint Online, and OneDrive sites, as well as Microsoft Teams chat and channel messages.
 
 - When and how to protect the content by enforcing rules comprised of:
 
@@ -48,7 +48,6 @@ A DLP policy contains a few basic things:
 
   - Actions that you want the rule to take automatically when content matching the conditions is found. For example, a rule might be configured to block access to a document and send both the user and compliance officer an email notification.
 
-### Cloud App Security file policy
+### Defender for Cloud App file policy
 
-File policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases. Cloud App Security can monitor any file type based on more than 20 metadata filters.
-
+File policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and many more use cases. Microsoft Defender for Cloud Apps can monitor any file type based on more than 20 metadata filters.

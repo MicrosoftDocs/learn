@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-marketplace.import-publish-to-using-powershell
+title: Import and publish to Azure Stack Hub Marketplace using PowerShell
+metadata:
+  title: Import and publish to Azure Stack Hub Marketplace using PowerShell
+  description: "Import and publish to Azure Stack Hub Marketplace using PowerShell"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-import-publish-azure-stack-hub-marketplace-powershell.md)]

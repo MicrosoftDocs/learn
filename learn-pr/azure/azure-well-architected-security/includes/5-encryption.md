@@ -48,7 +48,7 @@ It's beneficial to classify this data as it relates to the impact of exposure to
 
 By taking an inventory of the types of data being stored, the organization can get a better picture of where sensitive data might be stored and where existing encryption might or might not be happening.
 
-A thorough understanding of the regulatory and business requirements that apply to data that the organization stores is also important. The regulatory requirements that an organization must adhere to often drive a large part of the data encryption requirements. 
+A thorough understanding of the regulatory and business requirements that apply to data that the organization stores is also important. The regulatory requirements that an organization must adhere to often drive a large part of the data encryption requirements.
 
 Your organization is storing sensitive data that falls under the Health Insurance Portability and Accountability Act (HIPAA), which contains requirements on how to handle and store patient data. Other industries fall under different regulatory requirements. A financial institution might store account information that falls within Payment Card Industry (PCI) standards. An organization that does business in the EU might fall under the General Data Protection Regulation (GDPR), which defines the handling of personal data in the EU. 
 
@@ -60,7 +60,7 @@ After you've classified the data and defined your requirements, you can take adv
 
 Let's take a look at some ways that Azure enables you to encrypt data across services.
 
-### Encrypting raw storage
+### Encrypt raw storage
 
 Azure Storage encryption for data at rest helps you protect your data to meet your organizational security and compliance commitments. The Azure Storage platform automatically encrypts your data with 256-bit Advanced Encryption Standard (AES) encryption before persisting it to disk and then decrypts the data during retrieval. This handling of encryption, encryption at rest, decryption, and key management in Azure Storage is transparent to applications that use the service. You don't need to add any code or turn on any features.
 
@@ -76,7 +76,7 @@ Azure Storage automatically encrypts data in:
 
 For your organization, Azure Storage encryption means that whenever someone is using services that support Azure Storage encryption, their data is encrypted on the physical medium of storage. In the unlikely event that someone gets access to the physical disk, the data will be unreadable.
 
-### Encrypting virtual machines
+### Encrypt virtual machines
 
 Azure Storage provides low-level encryption protection for data written to physical disk, but how do you protect the virtual hard disks (VHDs) of virtual machines (VMs)? If a malicious attacker gained access to your Azure subscription and exfiltrated the VHDs of your virtual machines, how would you ensure they'd be unable to access data stored on the VHD?
 
@@ -87,13 +87,13 @@ Disk Encryption for Windows IaaS and Linux VMs is in general availability in all
 - IaaS VMs are secured at rest through industry-standard encryption technology to address organizational security and compliance requirements.
 - IaaS VMs start under customer-controlled keys and policies. You can audit their usage in your key vault.
 
-In addition, if you use Azure Security Center, you're alerted if you have VMs that aren't encrypted. The alerts appear as High Severity, and the recommendation is to encrypt these VMs.
+In addition, if you use Microsoft Defender for Cloud, you're alerted if you have VMs that aren't encrypted. The alerts appear as High Severity, and the recommendation is to encrypt these VMs.
 
-![Screenshot showing the warning from Azure Security Center to encrypt the VM disks in the subscription.](../media/5-security-center-disk-encryption.png)
+![Screenshot showing the warning from Microsoft Defender for Cloud to encrypt the VM disks in the subscription.](../media/5-security-center-disk-encryption.png)
 
 Your organization can apply Disk Encryption to its virtual machines to be sure that any data stored on VHDs is secured to organizational and compliance requirements. Because startup disks are also encrypted, the organization can control and audit usage.
 
-### Encrypting databases
+### Encrypt databases
 
 Your organization has several databases that store data that needs more protection. The organization has moved many databases to Azure SQL Database and wants to ensure that data is encrypted there. The organization wants to make sure that if the data files, log files, or backup files are stolen, they're unreadable without access to the encryption keys.
 
@@ -107,7 +107,7 @@ For its on-premises SQL Server databases, your organization has turned on the SQ
 
 The Always Encrypted client driver performs the encryption and decryption processes. It rewrites the T-SQL queries as necessary to encrypt data passed to the database and decrypt the results, while keeping these operations transparent to the application.
 
-### Encrypting secrets
+### Encrypt secrets
 
 We've seen that the encryption services all use keys to encrypt and decrypt data. How do we ensure that the keys themselves are secure? You might also have passwords, connection strings, or other sensitive pieces of information that you need to securely store.
 
@@ -119,7 +119,7 @@ Because you can grant Azure Active Directory identities access to use Key Vault 
 
 Your organization can use Key Vault for the storage of all of its sensitive application information. That information includes the TLS certificates that the organization uses to secure communication between systems.
 
-### Encrypting backups
+### Encrypt backups
 
 Encrypting all of its data won't help your organization if the daily backups of systems aren't also encrypted. Your organization uses Azure Backup to back up data from on-premises machines and Azure VMs. Azure Backup lets the IT department back up and recover data at a granular level. The backups include files, folders, machine system state, and app-aware data.
 

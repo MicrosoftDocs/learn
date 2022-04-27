@@ -9,6 +9,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
+  ms.custom: team=nextgen
 durationInMinutes: 12
 content: |
   [!include[](includes/3-fit-clustering-model.md)]

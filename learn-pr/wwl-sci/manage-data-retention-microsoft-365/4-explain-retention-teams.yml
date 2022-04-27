@@ -4,12 +4,13 @@ title: Explain retention in Microsoft Teams
 metadata:
   title: Explain retention in Microsoft Teams
   description: "Explain retention in Microsoft Teams"
-  ms.date: 06/02/2021
+  ms.date: 04/15/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/4-explain-retention-teams.md)]

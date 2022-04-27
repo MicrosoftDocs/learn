@@ -4,10 +4,11 @@ metadata:
   title: Make XR image icons interactable by using buttons
   description:  Make XR image icons interactable by using buttons.
   ms.date: 06/15/2021
-  author: cassieview
+  author: cassiebreviu
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Make XR image icons interactable by using buttons
 durationInMinutes: 2
 content: |

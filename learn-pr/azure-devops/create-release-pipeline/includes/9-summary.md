@@ -24,7 +24,7 @@ After you choose where to deploy your applications, learn how to use Azure Pipel
 * [Deploy to a Linux virtual machine](/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups?azure-portal=true)
 * [Deploy to a Windows virtual machine](/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups?azure-portal=true)
 * [Deploy a Docker container app to Azure Kubernetes Service](/azure/devops/pipelines/apps/cd/deploy-aks?azure-portal=true)
-* [Build and deploy Java to Azure Functions](/azure/devops/pipelines/languages/java-function?azure-portal=true)
+* [Build and deploy Java to Azure Functions](/azure/devops/pipelines/ecosystems/java-function?azure-portal=true)
 
 ### Integrate with other CI/CD tools
 

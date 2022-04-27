@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.azure-monitor-azure-stack-hub
+metadata:
+  title: Azure Monitor on Azure Stack Hub
+  description: "Azure Monitor on Azure Stack Hub"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Monitor on Azure Stack Hub
+summary: |
+  Azure Monitor on Azure Stack Hub provides base-level infrastructure metrics and logs for most services.
+  This module prepares you for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
+abstract: |
+  * Describe the Azure Monitor service in Azure Stack Hub.
+  * Explain how to use Azure Monitor on Azure Stack Hub.
+  * Consume monitoring data from Azure Stack Hub.
+prerequisites: |
+  * Working experience with monitoring and logging cloud environments.
+  * Conceptual knowledge of monitoring and logging.
+iconUrl: /learn/achievements/2-azure-monitor-on-azure-stack-hub.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack
+- azure-stack-hub
+units:
+- learn.wwl.azure-monitor-azure-stack-hub.introduction
+- learn.wwl.azure-monitor-azure-stack-hub.azure-monitor
+- learn.wwl.azure-monitor-azure-stack-hub.overview-of
+- learn.wwl.azure-monitor-azure-stack-hub.consume-monitoring-data-from
+- learn.wwl.azure-monitor-azure-stack-hub.knowledge-check
+- learn.wwl.azure-monitor-azure-stack-hub.summary
+badge:
+  uid: learn.wwl.azure-monitor-azure-stack-hub.badge

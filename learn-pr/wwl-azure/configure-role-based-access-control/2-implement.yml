@@ -4,12 +4,13 @@ title: Implement role-based access control
 metadata:
   title: Implement role-based access control
   description: "Implement role-based access control"
-  ms.date: 07/26/2021
+  ms.date: 04/25/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-implement.md)]

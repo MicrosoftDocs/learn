@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.autoscale-java-azure
+metadata:
+  moduleType: standard
+  title: Drive higher utilization of your Java apps - autoscaling
+  description: Learn how to drive higher utilization of your Java apps on Azure using autoscaling
+  ms.date: 11/18/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors: ropreddy-12032021
+  ms.custom: team=cloud_advocates
+title: Drive higher utilization of your Java apps - autoscaling
+summary: Learn how to drive higher utilization of your Java apps on Azure using autoscaling.
+abstract: |
+  By the end of this module, you can:
+  - Set up a sample Azure Spring Cloud architecture that scales up and down based on load
+  - Understand autoscaling concepts
+  - Monitor the effects of autoscaling
+  - Understand common design patterns for autoscaling
+prerequisites: |
+  - Azure subscription
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles:
+  - developer
+  - devops-engineer
+products:
+- azure
+- azure-database-mysql
+- azure-spring-cloud
+units:
+- learn.autoscale-java-azure.introduction
+- learn.autoscale-java-azure.exercise-setup
+- learn.autoscale-java-azure.learning-content
+- learn.autoscale-java-azure.rules
+- learn.autoscale-java-azure.rules-exercise
+- learn.autoscale-java-azure.autoscale-monitoring
+- learn.autoscale-java-azure.exercise-monitor
+- learn.autoscale-java-azure.patterns
+- learn.autoscale-java-azure.knowledge-check
+- learn.autoscale-java-azure.summary
+badge:
+  uid: learn.autoscale-java-azure.badge

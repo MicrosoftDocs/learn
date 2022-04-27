@@ -73,4 +73,4 @@ cd ../m06-end
 code .
 ```
 
-Open the file **module05.ts** to see the solution to this lab. See the **Lab setup** section above for more information about setting up your development environment to run the solution.
+Open the file **module06.ts** to see the solution to this lab. See the **Lab setup** section above for more information about setting up your development environment to run the solution.

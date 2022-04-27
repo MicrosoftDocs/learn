@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-azure-functions.exercise-create-azure-function-by-using-visual-studio-code
+title: 'Exercise: Create an Azure Function by using Visual Studio Code'
+metadata:
+  title: 'Exercise: Create an Azure Function by using Visual Studio Code'
+  description: "Exercise: Create an Azure Function by using Visual Studio Code"
+  ms.date: 04/22/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-create-function-visual-studio-code.md)]

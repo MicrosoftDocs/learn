@@ -1,20 +1,46 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.describe-capabilities-of-microsoft-identity-access-management-solutions
 metadata:
-  title: 'SC-900 part 2: Describe the capabilities of Microsoft Identity and access management solutions'
-  description: 'SC-900 part 2: Describe the capabilities of Microsoft Identity and access management solutions'
-  ms.date: 06/16/2021
+  title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Identity and access management solutions'
+  description: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Identity and access management solutions'
+  ms.date: 04/13/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-title: 'SC-900 part 2: Describe the capabilities of Microsoft Identity and access management solutions'
+title: 'Microsoft Security, Compliance, and Identity Fundamentals: Describe the capabilities of Microsoft Identity and access management solutions'
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
   - General understanding of Microsoft Azure and Microsoft 365.
 summary: |
   Azure Active Directory is the tool for identity and access management in the Microsoft Cloud.  Learn about Azure AD services and identity principals, secure authentication, access management capabilities, as well as identity protection and governance.
+  
+  Here are all the learning paths in preparation for the SC-900 exam: Microsoft Security, Compliance, and Identity Fundamentals.
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/describe-the-concepts-of-security-compliance-and-identity.svg" width="101" alt="The trophy for the Describe the concepts of security, compliance, and identity learning path." role="presentation"></img>
+    
+    [Part 1: Describe the concepts of security, compliance, and identity](../describe-concepts-of-security-compliance-identity/index.yml)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft Identity and access management solutions learning path." role="presentation"></img>
+    
+    Part 2: Describe the capabilities of Microsoft Identity and access management solutions
+  :::column-end:::
+  :::row-end:::
+  :::row:::
+   :::column:::
+    <img src="/learn/achievements/describe-the-capabilities-of-microsoft-security-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft security solutions learning path." role="presentation"></img>
+    
+    [Part 3: Describe the capabilities of Microsoft security solutions](../describe-capabilities-of-microsoft-security-solutions/index.yml)
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/describe-the-capabilities-of-microsoft-compliance-solutions.svg" width="101" alt="The trophy for the Describe the capabilities of Microsoft compliance solutions learning path." role="presentation"></img>
+    
+    [Part 4: Describe the capabilities of Microsoft compliance solutions](../describe-capabilities-of-microsoft-compliance-solutions/index.yml)
+  :::column-end:::
+  :::row-end:::
 iconUrl: /learn/achievements/describe-capabilities-of-microsoft-identity-access-management-solutions.svg
 levels:
 - beginner

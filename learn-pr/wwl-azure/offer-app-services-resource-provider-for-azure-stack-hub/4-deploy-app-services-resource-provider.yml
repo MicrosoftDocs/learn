@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.offer-app-services-resource-provider-for-azure-stack-hub.deploy
+title: Deploy an App Services resource provider
+metadata:
+  title: Deploy an App Services resource provider
+  description: "Deploy an App Services resource provider"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 14
+content: |
+  [!include[](includes/4-deploy-app-services-resource-provider.md)]

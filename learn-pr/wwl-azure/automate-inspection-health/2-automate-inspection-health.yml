@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-inspection-of-health.automate-inspection-health
+title: Automate inspection of health
+metadata:
+  title: Automate inspection of health
+  description: "Automate inspection of health"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-automate-inspection-health.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-desired-state-configuration-dsc.examine-dsc-configuration-file
+title: Examine DSC configuration file
+metadata:
+  title: Examine DSC configuration file
+  description: "Examine DSC configuration file"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-examine-dsc-configuration-file.md)]

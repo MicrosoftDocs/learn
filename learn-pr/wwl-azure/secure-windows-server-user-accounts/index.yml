@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.secure-windows-server-user-accounts
+metadata:
+  title: Secure Windows Server user accounts
+  description: "Protect your Active Directory environment by securing user accounts to least privilege and placing them in the Protected Users group. Learn how to limit authentication scope and remediate potentially insecure accounts."
+  ms.date: 04/18/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure Windows Server user accounts
+summary: Protect your Active Directory environment by securing user accounts to least privilege and placing them in the Protected Users group. Learn how to limit authentication scope and remediate potentially insecure accounts.
+abstract: |
+  After completing this module, you will be able to:
+  *   Configure and manage user accounts to limit security threats across an organization
+  *   Apply Protected Users settings, policies, and authentication silos to protect highly privileged user accounts
+  *   Describe and configure Windows Defender Credential Guard
+  *   Configure Group Policy to block the use of NTLM for authentication
+prerequisites: |
+  *   Familiarity with managing Active Directory Domain Services security principals
+  *   Ability to edit Active Directory Group Policy settings
+  *   Experience performing basic Windows Server administration tasks
+iconUrl: /learn/achievements/8-secure-windows-server-user-accounts.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- windows-server
+units:
+- learn.wwl.secure-windows-server-user-accounts.introduction
+- learn.wwl.secure-windows-server-user-accounts.configure-user-account-rights
+- learn.wwl.secure-windows-server-user-accounts.protect-protected-users-group
+- learn.wwl.secure-windows-server-user-accounts.describe-windows-defender-credential-guard
+- learn.wwl.secure-windows-server-user-accounts.block-ntlm-authentication
+- learn.wwl.secure-windows-server-user-accounts.locate-problematic-accounts
+- learn.wwl.secure-windows-server-user-accounts.knowledge-check
+- learn.wwl.secure-windows-server-user-accounts.summary
+badge:
+  uid: learn.wwl.secure-windows-server-user-accounts.badge

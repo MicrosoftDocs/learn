@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.communicate-strategically-mirror-coach.what-is-coach
+title: What is a coach? 
+metadata:
+  title: What is a coach? 
+  description: Overview of the coach role.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-what-is-coach.md)]

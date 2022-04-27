@@ -4,12 +4,13 @@ title: List the functionalities, benefits, and use cases of Storage Spaces
 metadata:
   title: List the functionalities, benefits, and use cases of Storage Spaces
   description: "List the functionalities, benefits, and use cases of Storage Spaces"
-  ms.date: 03/01/2021
+  ms.date: 01/20/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-list-functionality-benefits-use-cases-storage-spaces.md)]

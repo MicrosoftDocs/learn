@@ -1,14 +1,14 @@
-Microsoft Endpoint Manager will help you maximize your return on investment and accelerate time-to-value with fast rollout of services and devices, providing end-to-end integration across the familiar Microsoft stack.
+Microsoft Endpoint Manager helps you maximize your return on investment and accelerate time-to-value with fast rollout of services and devices, providing end-to-end integration across the familiar Microsoft stack.
 
 ## Advanced endpoint analytics
 
 Proactively improve the user experience and track your progress against organization and industry baselines with the help of Integrated Endpoint Analytics. Use data-driven change management to maximize the effectiveness of IT and reduce help desk costs.
 
-By using the Technology Experience Score, Desktop Analytics, Log Analytics, Real-Time Advanced Threat Detection, and Dynamic User Risk Assessment, you can do the following:
+By using the Technology Experience Score, Desktop Analytics, Log Analytics, Real-Time Advanced Threat Detection, and Dynamic User Risk Assessment, you can:
 
 - **Proactively maintain device performance and health.**
-- **Benefit from data-driven IT management, which shows how end user's productivity can be impacted by endpoint hardware and software performance and health issues**
-- **Leverage machine-learning for recommended security and configuration settings**
+- **Benefit from data-driven IT management, which shows how end users' productivity is impacted by endpoint hardware and software performance and health issues**
+- **Leverage machine learning for recommended security and configuration settings**
 
 ## Deep Microsoft 365 Integration
 
@@ -19,8 +19,8 @@ By using role-based administration, Graph API, PowerShell, and Cloud Content Opt
 - **Unified IT administration experience** -Use role-based administration to secure the access that is needed to administer Configuration Manager.
 - **Continuous security improvements for everyone**
 - **Automated app compatibility and software updates for OS and apps** 
-- **Secure access to the objects that you manage, like collections, deployments, and sites**
-- **The capability to extend or build unique, intelligent applications using Microsoft Graph API, Device Compliance API, SDK for app protection policies**
-- **Sophisticated PowerShell scripts to accomplish complex tasks easily**
+- **Secure access to the objects that you manage, such as collections, deployments, and sites**
+- **The capability to extend or build unique, intelligent applications using Microsoft Graph API, Device Compliance API, and SDK for app protection policies**
+- **Sophisticated PowerShell scripts to easily accomplish complex tasks**
 - **Cloud content optimization**
-- **Increased end user satisfaction through native platform experiences**
+- **Increased end-user satisfaction through native platform experiences**

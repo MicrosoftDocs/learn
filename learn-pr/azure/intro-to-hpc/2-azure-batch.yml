@@ -4,8 +4,8 @@ metadata:
   title: Azure Batch
   description: In this unit, you'll learn about the Azure Batch service and how it helps you to manage high-performance compute tasks.
   ms.date: 10/10/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: lauradolan
+  ms.author: ladolan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure Batch

@@ -8,6 +8,8 @@ metadata:
   ms.author: shkuehn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: shkuehn-03222021
 title: Connect to an on-premises VMware vSphere environment
 durationInMinutes: 10
 content: |
@@ -37,4 +39,3 @@ quiz:
     - content: "Load balancer"
       isCorrect: false
       explanation: "A load balancer provides high availability by distributing incoming traffic among healthy VMs. This functionality isn't required for on-premises network traffic to reach AVS."
-

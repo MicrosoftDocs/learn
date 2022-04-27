@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.share-bicep-modules-using-private-registries.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 02/10/2022
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+  - content: When you try to deploy the preceding Bicep file, Bicep gives you an error. What should you do to resolve the problem?
+    choices:
+    - content: Add a tag to the module path.
+      isCorrect: true
+      explanation: Correct. The module path doesn't currently include a tag, so Bicep can't find the correct module file to use. Change the module path to something like `br:toycompany.azurecr.io/mymodule:v1`.
+    - content: Sign in to Azure Container Registry.
+      isCorrect: false
+      explanation: Incorrect. Bicep uses the sign-in details from the Azure CLI when it accesses the registry.
+    - content: Add a module alias.
+      isCorrect: false
+      explanation: Incorrect. A registry alias enables you to simplify the name of the registry in the module path, but it isn't required and won't resolve the error.
+  - content: Suppose you create a registry alias named `MyToyCompany`. Which of the following module paths is a valid reference that includes the alias?
+    choices:
+    - content: >
+          `br:MyToyCompany/mymodule:v1.0`
+      isCorrect: false
+      explanation: Incorrect. When you work with a registry alias, you need to use the format `br/AliasName/ModuleName:Tag`.
+    - content:  >
+          `br/MyToyCompany/mymodule:v1.0`
+      isCorrect: true
+      explanation: Correct. This is the correct syntax to refer to a module with a registry alias.
+    - content: >
+          `br::MyToyCompany/mymodule:v1.0`
+      isCorrect: false
+      explanation: Incorrect. When you work with a registry alias, you need to use the format `br/AliasName/ModuleName:Tag`.
+  - content: In which of these situations should you publish a new version of your module to a private registry?
+    choices:
+    - content: You add some comments to your module.
+      isCorrect: false
+      explanation: Incorrect. Comments in a Bicep file don't affect how the module behaves, so you don't need to publish a new version of the module.
+    - content: You remove a mandatory parameter from the module.
+      isCorrect: true
+      explanation: Correct. When you modify mandatory parameters for a module, this is a breaking change. You should publish a new version of the module.
+    - content: You need to share your module with a colleague.
+      isCorrect: false
+      explanation: Incorrect. You don't need to publish a new version of your module to share it with your colleagues. Instead, grant them access to the registry.

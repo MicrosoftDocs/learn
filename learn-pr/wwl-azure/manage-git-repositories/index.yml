@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.manage-git-repositories
+metadata:
+  title: Manage Git repositories
+  description: "Manage Git repositories"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Git repositories
+summary: This module explores how to work with large repositories and purge repository data.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand large Git repositories
+  - Explain Git Virtual File System (GVFS)
+  - Use Git Large File Storage (LFS)
+  - Purge repository data
+prerequisites: ""
+iconUrl: /learn/achievements/6-manage-git-repositories.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.manage-git-repositories.introduction
+- learn.wwl.manage-git-repositories.work-large-repositories
+- learn.wwl.manage-git-repositories.purge-repository-data
+- learn.wwl.manage-git-repositories.knowledge-check
+- learn.wwl.manage-git-repositories.summary
+badge:
+  uid: learn.wwl.manage-git-repositories.badge

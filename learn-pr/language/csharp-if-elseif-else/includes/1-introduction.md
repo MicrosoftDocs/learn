@@ -1,6 +1,6 @@
-The C# programming language allows you to build applications that employ decision-making logic.  Branching logic enables your application to perform different instructions based on a set of conditions.
+The C# programming language allows you to build applications that employ decision-making logic. Branching logic enables your application to perform different instructions based on a set of conditions.
 
-Suppose you want to display different information to the end user depending on some business rules.  For example, what if you want to display a special message on a customer's bill based on their geographic region?  What if you want to give a customer a discount based on the size of their order?  Or what if you want to display an employee's title based on their level in the company.  In each case, you would need to add decision logic.
+Suppose you want to display different information to the end user depending on some business rules. For example, what if you want to display a special message on a customer's bill based on their geographic region?  What if you want to give a customer a discount based on the size of their order?  Or what if you want to display an employee's title based on their level in the company. In each case, you would need to add decision logic.
 
 By the end of this module, you'll be able to write code that can change the flow of your code's execution based on some criteria.
 
@@ -10,7 +10,7 @@ This is one of the most exciting modules because it opens a new world of branchi
 
 In this module, you will:
 
-- Write code that evaluates conditions using the `if-elseif-else` statements.
+- Write code that evaluates conditions by using the statements `if`, `else if`, and `else`.
 - Build Boolean expressions to evaluate a condition.
 - Combine Boolean expressions using logical operators.
 - Nest code blocks within other code blocks.

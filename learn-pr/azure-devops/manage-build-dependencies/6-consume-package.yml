@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Reference the package from the application
   description: Modify the application to use your package from Azure Artifacts.
   ms.date: 05/28/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

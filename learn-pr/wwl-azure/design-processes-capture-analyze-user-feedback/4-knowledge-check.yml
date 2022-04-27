@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-processes-to-capture-analyze-user-feedback.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/14/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices describes a Pro to get a general pulse on what your customers are saying over time about your company?"
+    choices:
+    - content: "Difficult to measure and quantify which makes it nearly impossible to track performance over time."
+      isCorrect: false
+      explanation: "Incorrect. One of the pros is getting a true measure of what customers think about you as this method is entirely organic. The other answers are cons."
+    - content: "Challenging to tie social media comments back to a CRM system at scale."
+      isCorrect: false
+      explanation: "Incorrect. One of the pros is getting a true measure of what customers think about you as this method is entirely organic. The other answers are cons."
+    - content: "Get a true measure of what customers think about you as this method is entirely organic."
+      isCorrect: true
+      explanation: "Correct. One of the pros is getting a true measure of what customers think about you as this method is entirely organic. The other answers are cons."
+  - content: "Which of the following choices isn't a tool that Twitter sentiment release gate leverages to analyze sentiment on your Twitter handle and gate your release progress based on it?"
+    choices:
+    - content: "Azure Functions."
+      isCorrect: false
+      explanation: "Incorrect. Twitter sentiment release gate leverages Azure DevOps, Azure functions, and Microsoft AI to analyze sentiment on your Twitter handle and gate your release progress based on it."
+    - content: "GitHub."
+      isCorrect: true
+      explanation: "Correct. Twitter sentiment release gate leverages Azure DevOps, Azure functions, and Microsoft AI to analyze sentiment on your Twitter handle and gate your release progress based on it."
+    - content: "Microsoft AI."
+      isCorrect: false
+      explanation: "Incorrect. Twitter sentiment release gate leverages Azure DevOps, Azure functions, and Microsoft AI to analyze sentiment on your Twitter handle and gate your release progress based on it."
+  - content: "Which of the following choices isn't a valid gate?"
+    choices:
+    - content: "Invoke Azure function."
+      isCorrect: false
+      explanation: "Incorrect. The following gates are available by default: Invoke Azure function, Query Azure monitor alerts, Invoke REST API, Query Work items, Security and compliance assessment."
+    - content: "Query Work items."
+      isCorrect: false
+      explanation: "Incorrect. The following gates are available by default: Invoke Azure function, Query Azure monitor alerts, Invoke REST API, Query Work items, Security and compliance assessment."
+    - content: "Invoke PowerShell."
+      isCorrect: true
+      explanation: "Correct. The following gates are available by default: Invoke Azure function, Query Azure monitor alerts, Invoke REST API, Query Work items, Security and compliance assessment."

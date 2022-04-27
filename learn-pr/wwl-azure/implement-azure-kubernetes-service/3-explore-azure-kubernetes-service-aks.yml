@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-kubernetes-service-aks.explore-azure-kubernetes-service-aks
+title: Explore Azure Kubernetes Service (AKS)
+metadata:
+  title: Explore Azure Kubernetes Service (AKS)
+  description: "Explore Azure Kubernetes Service (AKS)"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-explore-azure-kubernetes-service-aks.md)]

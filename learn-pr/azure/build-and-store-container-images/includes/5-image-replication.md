@@ -13,7 +13,7 @@ A geo-replicated registry provides the following benefits:
 
 ## Create a replicated region for an Azure Container Registry
 
-In this exercise, you'll use the `az acr replication create` Azure CLI command to replicate your registry from one region to another.
+In this exercise, you'll run the `az acr replication create` Azure CLI command to replicate your registry from one region to another.
 
 1. Run the following command to replicate your registry to another region. In this example, we're replicating to the `japaneast` region. *$ACR_NAME* is the variable you defined earlier in the module to hold your container registry name.
 
@@ -21,7 +21,7 @@ In this exercise, you'll use the `az acr replication create` Azure CLI command t
     az acr replication create --registry $ACR_NAME --location japaneast
     ```
 
-    Here's an example of what the output from this command looks like.
+    The output from this command should be similar to the following.
 
     ```output
     {
@@ -29,18 +29,28 @@ In this exercise, you'll use the `az acr replication create` Azure CLI command t
       "location": "japaneast",
       "name": "japaneast",
       "provisioningState": "Succeeded",
-      "resourceGroup": "myresourcegroup",
-      "status": {
+       "regionEndpointEnabled": true,
+       "resourceGroup": "myresourcegroup",
+       "status": {
         "displayStatus": "Syncing",
         "message": null,
-        "timestamp": "2018-08-15T20:22:09.275792+00:00"
+        "timestamp": "2021-11-02T18:47:31.471393+00:00"
+      },
+      "systemData": {
+        "createdAt": "2021-11-02T18:47:31.471393+00:00",
+        "createdBy": "username@microsoft.com",
+        "createdByType": "User",
+        "lastModifiedAt": "2021-11-02T18:47:31.471393+00:00",
+        "lastModifiedBy": "useremailid@microsoft.com",
+        "lastModifiedByType": "User"
       },
       "tags": {},
       "type": "Microsoft.ContainerRegistry/registries/replications"
+      "zoneRedundancy": "Disabled"
     }
     ```
 
-1. As a final step, retrieve all container image replicas created by running the following command.
+1. Retrieve all container image replicas created by running the following command.
 
     ```azurecli
     az acr replication list --registry $ACR_NAME --output table
@@ -52,28 +62,28 @@ In this exercise, you'll use the `az acr replication create` Azure CLI command t
     NAME       LOCATION    PROVISIONING STATE    STATUS
     ---------  ----------  --------------------  --------
     japaneast  japaneast   Succeeded             Ready
-    eastus     eastus      Succeeded             Ready
+    westus2    westus2     Succeeded             Ready
     ```
 
-Keep in mind that you aren't limited to the Azure CLI to list your image replicas. From within the Azure portal, selecting `Replications` for an Azure Container Registry displays a map that details current replications. Container images can be replicated to additional regions by selecting the regions on the map.
+Keep in mind that you aren't limited to the Azure CLI to list your image replicas. In the Azure portal, select your container registry and from the container registry menu, select `Replications` to display a map that details current replications. Container images can be replicated and replicated images can be deleted by selecting an icon on the map.
 
-  ![Screenshot of Azure portal showing the container replication world map with many circles marked across several countries.](../media/replication-map-expanded.png)
+  ![Screenshot of Azure container registry world map showing replicated and available locations.](../media/replication-map-expanded.png)
 
 ## Summary
 
-In this module, you learned about the Azure Container Registry. You deployed your own registry, added a custom container, and created a container image. Finally, you saw how easy it's to replicate the registry across Azure regions.
+In this module, you learned about the Azure Container Registry. You deployed your own registry, added a custom container, and created a container image. Finally, you saw how easy it is to replicate a container registry across Azure regions.
 
 ## Clean up resources
 
-In this module, you created resources using your Azure subscription. You want to clean up these resources so that you won't continue to be charged for them.
+You want to clean up the resources you created using your Azure subscription in this module so that you won't continue to be charged for them.
 
 1. In Azure, select **Resource groups** on the left.
 
-1. Find the **learn-deploy-acr-rg** resource group, or whatever resource group name you used, and select it.
+1. Find the **learn-deploy-acr-rg** resource group, or the resource group name that you used, and select it.
 
 1. In the **Overview** tab of the resource group, select **Delete resource group**.
 
-1. This action opens a new dialog box. Type the name of the resource group again and select **Delete**. This option deletes all of the resources we created in this module.
+1. In the confirmation dialog box, type the name of the resource group again and select **Delete** to delete all of the resources you created in this module.
 
 ## Learn More
 

@@ -1,12 +1,12 @@
-The asset inventory page of Azure Security Center provides a single page for viewing the security posture of the resources you've connected to Security Center.
+The asset inventory page of Microsoft Defender for Cloud provides a single page for viewing the security posture of the resources you've connected to Defender for Cloud.
 
-Security Center periodically analyzes the security state of your Azure resources to identify potential security vulnerabilities. It then provides you with recommendations on how to remediate those vulnerabilities.
+Defender for Cloud periodically analyzes the security state of your Azure resources to identify potential security vulnerabilities. It then provides you with recommendations on how to remediate those vulnerabilities.
 
 When any resource has outstanding recommendations, they'll appear in the inventory.
 
 Use this view and its filters to address such questions as:
 
-- Which of my subscriptions with Azure Defender enabled have outstanding recommendations?
+- Which of my subscriptions with Microsoft Defender for Cloud enabled have outstanding recommendations?
 
 - Which of my machines with the tag 'Production' are missing the Log Analytics agent?
 
@@ -22,7 +22,7 @@ The inventory page provides the following tools:
 
 - **Summaries** - Before you define any filters, a prominent strip of values at the top of the inventory view shows:
 
-  - Total resources: The total number of resources connected to Security Center.
+  - Total resources: The total number of resources connected to Defender for Cloud.
 
   - Unhealthy resources: Resources with active security recommendations. Learn more about security recommendations.
 
@@ -38,17 +38,17 @@ The inventory page provides the following tools:
 
   - Assign tags to the filtered resources - select the checkboxes alongside the resources you want to tag.
 
-  - Onboard new servers to Security Center - use the Add non-Azure servers toolbar button.
+  - Onboard new servers to Defender for Cloud - use the Add non-Azure servers toolbar button.
 
   - Automate workloads with Azure Logic Apps - use the Trigger Logic App button to run a logic app on one or more resources. Your logic apps have to be prepared in advance and accept the relevant trigger type (HTTP request).
 
 ## How does asset inventory work?
 
-Asset inventory utilizes Azure Resource Graph (ARG), an Azure service that provides the ability to query Security Center's security posture data across multiple subscriptions.  ARG is designed to provide efficient resource exploration with the ability to query at scale. Using the Kusto Query Language (KQL), asset inventory can quickly produce deep insights by cross-referencing ASC data with other resource properties.
+Asset inventory utilizes Azure Resource Graph (ARG), an Azure service that provides the ability to query Defender for Cloud's security posture data across multiple subscriptions.  ARG is designed to provide efficient resource exploration with the ability to query at scale. Using the Kusto Query Language (KQL), asset inventory can quickly produce deep insights by cross-referencing ASC data with other resource properties.
 
 ## How to use asset inventory
 
-- From Security Center's sidebar, select Inventory.
+- From Defender for Cloud's sidebar, select Inventory.
 
 - Use the Filter by name box to display a specific resource, or use the filters as described below.
 
@@ -58,11 +58,10 @@ Asset inventory utilizes Azure Resource Graph (ARG), an Azure service that provi
 
 ![Security Findings](../media/security-findings-contain-elements.png)
 
-- To use the Azure Defender filter, select one or more options (Off, On, or Partial):
+- To use the Defender for Cloud filter, select one or more options (Off, On, or Partial):
 
-  - Off - Resources that aren't protected by an Azure Defender plan. You can right-click on any of these and upgrade them:
+  - Off - Resources that aren't protected by a Defender for Cloud plan. You can right-click on any of these and upgrade them:
 
-  - On - Resources that are protected by an Azure Defender plan
+  - On - Resources that are protected by a Defender for Cloud plan
 
-  - Partial - This applies to subscriptions that have some but not all of the Azure Defender plans disabled.
-
+  - Partial - This applies to subscriptions that have some but not all of the Defender for Cloud plans disabled.

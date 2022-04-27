@@ -48,7 +48,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="..\media\ppgdp-lifeexpf-scatter-model-polynomial.svg" alt-text="Scatter plot output":::
+:::image type="content" source="..\media\ppgdp-lifeexpf-scatter-model-polynomial.svg" alt-text="Scatter plot output.":::
 
 ***
 
@@ -122,7 +122,7 @@ The output is:
 > [!div class="alert is-tip"]
 > Output
 
-:::image type="content" source="..\media\ppgdp-lifeexpf-scatter-model-polynomial-pipeline.svg" alt-text="Scatter plot output":::
+:::image type="content" source="..\media\ppgdp-lifeexpf-scatter-model-polynomial-pipeline.svg" alt-text="Scatter plot output using make pipeline.":::
 
 ***
 
@@ -183,7 +183,7 @@ Go to the code cell in which we fitted the polynomial model by using `make_pipe
 
   The output is:
   
-  :::image type="content" source="..\media\ppgdp-lifeexpf-scatter-model-polynomial-multiple-degrees.svg" alt-text="Scatter plot output":::
+  :::image type="content" source="..\media\ppgdp-lifeexpf-scatter-model-polynomial-multiple-degrees.svg" alt-text="Scatter plot output using three degree, four degree, and five degree polynomials":::
 
 </details>
 

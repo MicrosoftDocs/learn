@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-tools-to-track-usage-flow.examine-kusto-query-language-kql
+title: Examine Kusto Query Language (KQL)
+metadata:
+  title: Examine Kusto Query Language (KQL)
+  description: "Examine Kusto Query Language (KQL)"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-examine-kusto-query-language-kql.md)]

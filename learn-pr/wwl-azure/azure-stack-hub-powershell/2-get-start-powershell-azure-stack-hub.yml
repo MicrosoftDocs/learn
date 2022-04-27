@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-stack-hub-powershell.get-started-powershell
+title: Get started with PowerShell in Azure Stack Hub
+metadata:
+  title: Get started with PowerShell in Azure Stack Hub
+  description: "Get started with PowerShell in Azure Stack Hub"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-get-start-powershell-azure-stack-hub.md)]

@@ -22,7 +22,7 @@ Let's start by using readily available Windows accessibility options on our unad
 
 2. The calculator will now look like the second image. Try entering a simple calculation. It's not a clear experience, is it?
 
-| Color Schemes|  |
+| Color Scheme | Color Scheme |
 |:--:|:--:|
 | ![Setting the light color mode.](../media/non-light-50.png) | ![Setting the dark color mode](../media/non-dark-50.png) |
 | *Light*| *Dark* |
@@ -35,7 +35,7 @@ Let's start by using readily available Windows accessibility options on our unad
 
 5. Let's look at the four pre-defined high contrast settings. One after another, choose **High Contrast #1**, **High Contrast #2**, **High Contrast Black** and **High Contrast White**. The calculator will appear as follows.
 
-| High Contrast Color Schemes|  |
+| High Contrast Color Scheme | High Contrast Color Scheme |
 |:--:|:--:|
 | ![Setting High Contrast #1.](../media/non-highcontrast1-50.png) | ![Setting High Contrast #2](../media/non-highcontrast2-50.png) |
 | *High Contrast #1*| *High Contrast #2* |

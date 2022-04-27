@@ -20,12 +20,11 @@ For more information see the link in the resources at the end of this module.
 
 ## Customize Tokens for Azure AD
 
-| Access and ID token lifetime | Refresh toke lifetime (days) | Refresh token sliding windows lifetime | Lifetime length (days) |
+| Access and ID token lifetime | Refresh token lifetime (days) | Refresh token sliding windows lifetime | Lifetime length (days) |
 | --- | --- | --- | ---|
 | The lifetime of the OAuth 2.0 bearer token an ID tokens | The maximum time period before which a refresh token can be used to acquire a new access token | The refresh token sliding window type | After time period elapses, the user is forced to reauthenticate |
 
-> [!div class="mx-imgBorder"]
->![Refresh token lifetime - token is valid for a specified amount of time and the access token must be refreshed before it expired to keep using the app.](../media/sc300-token-customize-timeline.png)
+![Refresh token lifetime - token is valid for a specified amount of time and the access token must be refreshed before it expired to keep using the app.](../media/sc300-token-customize-timeline.png)
 
 ## Configure optional claims as part of your token
 
@@ -34,10 +33,9 @@ Application developers can use optional claims in their Azure AD applications to
 You can use optional claims to:
 - Select additional claims to include in tokens for your application.
 - Change the behavior of certain claims that the Microsoft identity platform returns in tokens.
-- Add and access custom claims for your application.
+- Add access custom claims for your application.
 
 While optional claims are supported in both v1.0 and v2.0 format tokens, as well as SAML tokens, they provide most of their value when moving from v1.0 to v2.0. One of the goals of the Microsoft identity platform is smaller token sizes to ensure optimal performance by clients. As a result, several claims formerly included in the access and ID tokens are no longer present in v2.0 tokens and must be asked for specifically on a per-application basis.
 
-> [!div class="mx-imgBorder"]
->![Configure custom roles and claims for the SAML token issued when you configure sign-sign-on for your application registration.](../media/sc300-token-configuration-claims.png)
+![Configure custom roles and claims for the SAML token issued when you configure sign-sign-on for your application registration.](../media/sc300-token-configuration-claims.png)
 

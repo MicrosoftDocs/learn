@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn.azure-security.resolve-threats-with-azure-security-center
 metadata:
-  title: Resolve security threats with Azure Security Center
-  description: In this module, you’ll use the alert capabilities of Azure Security Center to watch for and respond to threats.
-  ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  title: Resolve security threats with Microsoft Defender for Cloud
+  description: In this module, you’ll use the alert capabilities of Microsoft Defender for Cloud to watch for and respond to threats.
+  ms.date: 04/04/2022
+  author: elazark
+  ms.author: memildin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Resolve security threats with Azure Security Center
-summary: In this module, you’ll use the alert capabilities of Azure Security Center to watch for and respond to threats.
+title: Resolve security threats with Microsoft Defender for Cloud
+summary: In this module, you’ll use the alert capabilities of Microsoft Defender for Cloud to watch for and respond to threats.
 abstract: | 
   In this module, you will:
-  - View security alerts in Azure Security Center
+  - View security alerts in Microsoft Defender for Cloud
   - Define an incident response plan
   - Use a Workflow automation to automate a security response
 prerequisites: |
-  - Basic familiarity with Azure Security Center
+  - Basic familiarity with Microsoft Defender for Cloud
 iconUrl: /learn/achievements/resolve-threats-with-azure-security-center.svg
 levels:
 - intermediate

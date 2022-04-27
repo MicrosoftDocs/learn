@@ -4,12 +4,14 @@ title: Understand object detection
 metadata:
   title: Understand object detection
   description: "Understand object detection"
-  ms.date: 07/12/2021
+  ms.date: 09/17/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+sandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-object-detection.md)]

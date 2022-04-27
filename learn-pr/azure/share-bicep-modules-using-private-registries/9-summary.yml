@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.share-bicep-modules-using-private-registries.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: Summary for sharing Bicep modules by using private registries.
+  ms.date: 02/10/2022
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

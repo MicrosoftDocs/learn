@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-migrations.migrate-your-databases
+title: Migrate your databases
+metadata:
+  title: Migrate your databases
+  description: "Migrate your databases"
+  ms.date: 04/20/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-migrate-your-databases.md)]

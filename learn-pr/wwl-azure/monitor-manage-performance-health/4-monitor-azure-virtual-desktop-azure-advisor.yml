@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-manage-performance-health.monitor-azure-virtual-desktop-by-using-azure-advisor
+title: Monitor Azure Virtual Desktop by using Azure Advisor
+metadata:
+  title: Monitor Azure Virtual Desktop by using Azure Advisor
+  description: "Monitor Azure Virtual Desktop by using Azure Advisor"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-monitor-azure-virtual-desktop-azure-advisor.md)]

@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-setup.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to the Altair emulator hardware options and installing Azure Sphere development software.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom:
+  - nextgen
+  - team=cloud_advocates
+  ms.contributors:
+  - dglover-10272021
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/01-introduction.md)]

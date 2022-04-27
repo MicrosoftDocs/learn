@@ -6,8 +6,9 @@ The first version looks like this:
 
 ```rust
 
-use std::fs::OpenOptions;
-use std::io::{BufReader, Result, Seek, SeekFrom};
+use std::fs::{File, OpenOptions};
+use std::path::PathBuf;
+use std::io::{Result, Seek, SeekFrom};
   // ...
 
 pub fn add_task(journal_path: PathBuf, task: Task) -> Result<()> {

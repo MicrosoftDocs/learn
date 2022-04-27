@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.blob-storage-image-upload-static-web-apps.frontend
+title: Describe the frontend
+metadata:
+  title: Describe the frontend
+  description: Describes how to fetch the Shared Access Signature from the frontend, and how to use it to upload an image to Blob Storage
+  author: videlalvaro
+  ms.author: alvidela
+  ms.date: 11/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: alvidela-11122021
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-frontend.md)]

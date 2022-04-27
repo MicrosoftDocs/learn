@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-windows-server-user-accounts.protect-protected-users-group
+title: Protect user accounts with the Protected Users group
+metadata:
+  title: Protect user accounts with the Protected Users group
+  description: "Protect user accounts with the Protected Users group"
+  ms.date: 04/18/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-protected-users-group-authentication-policies-authentication-policy-silos.md)]

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.active-directory-domain-services-migration.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/10/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the minimum domain functional level required if you want to add member servers running Windows Server 2022?"
+    choices:
+    - content: "Windows Server 2008"
+      isCorrect: true
+      explanation: "Correct. Windows Server 2008 domain functional level is the minimum required to support Windows Server 2022 member servers"
+    - content: "Windows Server 2012"
+      isCorrect: false
+      explanation: "Incorrect. Windows Server 2008 domain functional level is the minimum required to support Windows Server 2022 member servers."
+    - content: "Windows Server 2003"
+      isCorrect: false
+      explanation: "Incorrect. Windows Server 2008 domain functional level is the minimum required to support Windows Server 2022 member servers."
+  - content: "Which of the following PowerShell cmdlets would you use to move a FSMO role to a new Windows Server 2022 domain controller?"
+    choices:
+    - content: "**Move-ADDirectoryServer**"
+      isCorrect: false
+      explanation: "Incorrect. You use the **Move-ADDirectoryServerOperationsMasterRole** cmdlet to move FSMO roles."
+    - content: "**Move-ADObject**"
+      isCorrect: false
+      explanation: "Incorrect. You use the **Move-ADDirectoryServerOperationsMasterRole** cmdlet to move FSMO roles.."
+    - content: "**Move-ADDirectoryServerOperationsMasterRole**"
+      isCorrect: true
+      explanation: "Correct. You use the **Move-ADDirectoryServerOperationsMasterRole** cmdlet to move FSMO roles."
+  - content: "Which of the following PowerShell cmdlets would you use to determine which domain controller currently hosts the Schema Master FSMO role?"
+    choices:
+    - content: "**Get-ADDomain**"
+      isCorrect: false
+      explanation: "Incorrect. The Schema Master is a forest level FSMO role, so you use the **Get-ADForest** cmdlet to locate the computer that hosts this role."
+    - content: "**Get-ADForest**"
+      isCorrect: true
+      explanation: "Correct. The Schema Master is a forest level FSMO role, so you use the **Get-ADForest** cmdlet to locate the computer that hosts this role."
+    - content: "**Get-ADObject**"
+      isCorrect: false
+      explanation: "Incorrect. The Schema Master is a forest level FSMO role, so you use the **Get-ADForest** cmdlet to locate the computer that hosts this role."

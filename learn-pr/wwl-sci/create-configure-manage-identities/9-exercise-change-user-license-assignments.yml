@@ -4,12 +4,13 @@ title: Exercise - change user license assignments
 metadata:
   title: Exercise - change user license assignments
   description: "Exercise - change user license assignments"
-  ms.date: 07/21/2021
+  ms.date: 04/02/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/9-exercise-change-user-license-assignments.md)]

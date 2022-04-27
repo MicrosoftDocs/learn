@@ -15,7 +15,7 @@ prerequisites: |
   - Familiarity with command-line based applications.
   - Familiarity with basic Docker concepts.
   - Experience writing C# at the beginner level
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/create-microservices-with-dotnet.svg
 levels:
 - beginner
 - intermediate
@@ -32,6 +32,7 @@ products:
 - azure-kubernetes-service
 modules:
 - learn.languages.dotnet-microservices
+- learn.languages.dotnet-deploy-microservices-kubernetes
 - learn.microservices-aspnet-core
 - learn.microservices-resiliency-aspnet-core
 - learn.microservices-logging-aspnet-core

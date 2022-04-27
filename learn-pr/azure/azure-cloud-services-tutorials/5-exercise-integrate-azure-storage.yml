@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-cloud-services-tutorials-mrtk.5-exercise-integrate-azure-storage
+title: Exercise - Integrate Azure storage
+metadata:
+  title: Exercise - Integrate Azure storage
+  description: Introduction to Integrate Azure storage
+  ms.date: 09/13/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-integrate-azure-storage.md)]

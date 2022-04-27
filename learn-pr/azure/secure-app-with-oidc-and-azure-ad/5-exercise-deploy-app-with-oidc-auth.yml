@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Deploy an application that uses OpenID Connect to authenticate users
   description: Create a web app and configure it to use the OpenID Connect standard to authenticate with Azure AD.
   ms.date: 07/17/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: chrispine-chiedo
+  ms.author: cchiedo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Deploy an application that uses OpenID Connect to authenticate users

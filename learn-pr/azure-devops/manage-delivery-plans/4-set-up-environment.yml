@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Set up your environment
   description: Create your Azure DevOps project.
   ms.date: 05/24/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: kathrynee
+  ms.author: kaelli
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

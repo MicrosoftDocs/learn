@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-common-terms-meanings.sap-deployments-azure
+title: 'Discover common terms and meanings: SAP deployments on Azure'
+metadata:
+  title: 'Discover common terms and meanings: SAP deployments on Azure'
+  description: "Discover common terms and meanings: SAP deployments on Azure"
+  ms.date: 11/10/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-discover-common-terms-meanings-sap-on-azure.md)]

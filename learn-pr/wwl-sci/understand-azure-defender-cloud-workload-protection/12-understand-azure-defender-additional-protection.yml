@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-azure-defender-cloud-workload-protection.additional-protection
+title: Understand Microsoft Defender additional protections
+metadata:
+  title: Understand Microsoft Defender additional protections
+  description: "Understand Microsoft Defender additional protections"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/12-understand-azure-defender-additional-protection.md)]

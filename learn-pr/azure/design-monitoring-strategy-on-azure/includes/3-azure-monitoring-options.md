@@ -16,23 +16,23 @@ In most cases, you should start with Insights, which are guided monitoring and t
 
 You can further analyze the collected data using Metrics Explorer for charting and visual correlation and Log Analytics for ad hoc queries, trending, and pattern recognition. Azure Monitor enables you to manage and create alerts, notifications, and actions such as runbooks and autoscale based on metrics and logs. It’s also possible to integrate Azure Monitor with other tools using Event Hubs to export data or APIs for ingestion and export.
 
-## What is Azure Security Center?
+## What is Microsoft Defender for Cloud?
 
-Azure Security Center is a service that manages the security of your infrastructure from a centralized location. Use Security Center to monitor the security of your workloads, whether they're on-premises or in the cloud.
+Microsoft Defender for Cloud is a service that manages the security of your infrastructure from a centralized location. Use Defender for Cloud to monitor the security of your workloads, whether they're on-premises or in the cloud.
 
-Attacks are becoming more intelligent, and the number of people with the right security skills is low. Security Center helps you deal with these challenges because it provides you with tools that improve your protection against security threats. Use Security Center to monitor the health of your resources and implement recommendations.
+Attacks are becoming more intelligent, and the number of people with the right security skills is low. Defender for Cloud helps you deal with these challenges because it provides you with tools that improve your protection against security threats. Use Defender for Cloud to monitor the health of your resources and implement recommendations.
 
-![Screenshot of Azure Security Center Overview.](../media/3-azure-monitoring-options-03.png)
+![Screenshot of Microsoft Defender for Cloud Overview.](../media/3-azure-monitoring-options-03.png)
 
-Ease the configuration of your security. Security Center is natively integrated with other Azure services, such as PaaS services like Azure SQL Database. For IaaS services, enable automatic provisioning in Security Center.
+Ease the configuration of your security. Defender for Cloud is natively integrated with other Azure services, such as PaaS services like Azure SQL Database. For IaaS services, enable automatic provisioning in Defender for Cloud.
 
-![Screenshot of Azure Security Center automatic provisioning.](../media/3-azure-monitoring-options-04.png)
+![Screenshot of Microsoft Defender for Cloud automatic provisioning.](../media/3-azure-monitoring-options-04.png)
 
-Security Center creates an agent on each supported virtual machine as it's created. It then automatically starts collecting data from the machine. You use Security Center to reduce the complexity of configuring security in this way.
+Defender for Cloud creates an agent on each supported virtual machine as it's created. It then automatically starts collecting data from the machine. You use Defender for Cloud to reduce the complexity of configuring security in this way.
 
-## What is Azure Sentinel?
+## What is Microsoft Sentinel?
 
-You use Azure Sentinel to collect data on the devices, users, infrastructure, and applications across your enterprise. Built-in threat intelligence for detection and investigation can help reduce false positives. Use Sentinel to proactively hunt for threats and anomalies, and respond by using orchestration and automation.
+You use Microsoft Sentinel to collect data on the devices, users, infrastructure, and applications across your enterprise. Built-in threat intelligence for detection and investigation can help reduce false positives. Use Sentinel to proactively hunt for threats and anomalies, and respond by using orchestration and automation.
 
 You connect your data sources to Sentinel. These sources include Microsoft services such as Office 365 and Azure Advanced Threat Protection. These sources can also include external solutions, such as AWS CloudTrail or on-premises sources. The dashboard shows detailed information collected from your sources.
 
@@ -50,6 +50,6 @@ Use hunting queries to look for threats across your enterprise before alerts are
 
 ![Screenshot of hunting queries.](../media/3-azure-monitoring-options-08.png)
 
-Use notebooks to automate your investigations. Notebooks are playbooks that can consist of investigation or hunting steps that you reuse or share with others. Use Azure Notebooks for Azure Sentinel to develop and run your notebooks. For example, you might use the **Guided hunting - Anomalous Office365 Exchange Sessions** notebook to hunt for anomalous activities in Office 365 across your enterprise.
+Use notebooks to automate your investigations. Notebooks are playbooks that can consist of investigation or hunting steps that you reuse or share with others. Use Azure Notebooks for Microsoft Sentinel to develop and run your notebooks. For example, you might use the **Guided hunting - Anomalous Office365 Exchange Sessions** notebook to hunt for anomalous activities in Office 365 across your enterprise.
 
-Azure Sentinel and Azure Security Center use Azure Monitor Logs as their underlying logging data platform. These security solutions store their data in Log Analytics workspaces, which are centralized storage and management locations where your app, infrastructure, and security logs are collected and aggregated for analysis, troubleshooting, and auditing. This centralized approach enables you to perform correlation and run investigations across application performance, infrastructure performance, and security logs within the same data analytics service with a single user interface using the same query language. We recommend that you use as few workspaces as possible, and manage user and team access to subsets of log data using resource or workspace permissions. For more information, see [Designing your Azure Monitor Logs deployment](/azure/azure-monitor/logs/design-logs-deployment)
+Microsoft Sentinel and Microsoft Defender for Cloud use Azure Monitor Logs as their underlying logging data platform. These security solutions store their data in Log Analytics workspaces, which are centralized storage and management locations where your app, infrastructure, and security logs are collected and aggregated for analysis, troubleshooting, and auditing. This centralized approach enables you to perform correlation and run investigations across application performance, infrastructure performance, and security logs within the same data analytics service with a single user interface using the same query language. We recommend that you use as few workspaces as possible, and manage user and team access to subsets of log data using resource or workspace permissions. For more information, see [Designing your Azure Monitor Logs deployment](/azure/azure-monitor/logs/design-logs-deployment)

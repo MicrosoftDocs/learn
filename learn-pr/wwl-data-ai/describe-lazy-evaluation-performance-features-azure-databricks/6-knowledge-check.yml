@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which of the following statements describes a wide transformations?"
+    choices:
+    - content: "A wide transformation can be applied per partition/worker with no need to share or shuffle data to other workers"
+      isCorrect: false
+      explanation: "This answer is incorrect. It describes a narrow transformation."
+    - content: "A wide transformation requires sharing data across workers. It does so by shuffling data."
+      isCorrect: true
+      explanation: "Correct. Wide transformation shares data across workers by shuffling data between executors."
+    - content: "A wide transformation applies data transformation over a large number of columns"
+      isCorrect: false
+      explanation: "This answer is incorrect. The term \"wide\" has nothing to do with the number of columns."
+  - content: "Which feature of Spark determines how your code is executed?"
+    choices:
+    - content: "Catalyst Optimizer"
+      isCorrect: true
+      explanation: "Correct. Spark SQL uses Catalyst's general tree transformation framework in four phases - Analysis, Logical Optimization, Physical Planning, and Code Generation."
+    - content: "Tungsten Record Format"
+      isCorrect: false
+      explanation: "Incorrect. The Tungsten Record Format is an optimization used in shuffling operations during wide transformations. This format prevents the need for expensive serialization and de-serialization of objects in order to get data from one JVM to another."
+    - content: "Java Garbage Collection"
+      isCorrect: false
+      explanation: "Incorrect. Java Garbage Collection performs automatic memory management."
+  - content: "If you create a DataFrame that will read some data from Azure Blob Storage, and then you create another DataFrame by filtering the initial DataFrame. What feature of Spark causes these transformation to be analyzed?"
+    choices:
+    - content: "Tungsten Record Format"
+      isCorrect: false
+      explanation: "Incorrect. The Tungsten Record Format is an optimization used in shuffling operations during wide transformations. This format prevents the need for expensive serialization and de-serialization of objects in order to get data from one JVM to another."
+    - content: "Java Garbage Collection"
+      isCorrect: false
+      explanation: "Incorrect. Java Garbage Collection performs automatic memory management."
+    - content: "Lazy Execution"
+      isCorrect: true
+      explanation: "Correct. Transformations applied to DataFrames are lazy, meaning they will not trigger any jobs. If you pass the DataFrame to a display function, a job will be triggered because display is an action."

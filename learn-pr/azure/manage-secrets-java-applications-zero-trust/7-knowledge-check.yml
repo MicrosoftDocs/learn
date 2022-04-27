@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-secrets-in-java-applications-zero-trust.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of managing secrets in a Java application.
+  author: judubois
+  ms.author: judubois
+  ms.date: 12/23/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - judubois-12292021
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is the LESS SECURE way to store your application secrets?"
+      choices:
+        - content: "Expose them as environment variables."
+          isCorrect: false
+          explanation: "Incorrect. Environment variables are commonly used and aren't the less secure solution."
+        - content: "Store them in the application source code."
+          isCorrect: true
+          explanation: "You're correct. Storing secrets in the source code means that anybody with access to your code will know your secrets."
+        - content: "Use a Secrets store."
+          isCorrect: false
+          explanation: "Incorrect. A Secrets store, like Azure Key Vault, is the best solution for storing your secrets."
+        - content: "Store them using Kubernetes secrets."
+          isCorrect: false
+          explanation: "Incorrect. Kubernetes secrets are commonly used with Kubernetes, and aren't the less secure solution."
+    - content: "How can a Java application access secret stored in Azure Key Vault?"
+      choices:
+        - content: "The application needs to store a login/password to Azure Key Vault in its source code"
+          isCorrect: false
+          explanation: "Incorrect. Storing secrets in the application source is a bad practice."
+        - content: "All applications have automatic access to the Azure Key Vault instances stored in their resource group"
+          isCorrect: false
+          explanation: "Incorrect. Applications don't have access to any Azure Key Vault instance, unless they've been granted that access."
+        - content: "An IT Operator needs to grant the application access to Azure Key Vault"
+          isCorrect: true
+          explanation: "You're correct. An IT Operator needs to grant access permission, before the Java application can access the secrets."
+        - content: "Azure Key Vault secrets are automatically exposed as environment variables to the application"
+          isCorrect: false
+          explanation: "Incorrect. You need a specific SDK to access the secrets, and exposing them as environment variables wouldn't be secure."
+    - content: "What secrets can you store inside Azure Key Vault?"
+      choices:
+        - content: "Database passwords."
+          isCorrect: false
+          explanation: "Incorrect. You can store more than database passwords in Azure Key Vault."
+        - content: "Secret access tokens."
+          isCorrect: false
+          explanation: "Incorrect. You can store more than secret tokens in Azure Key Vault."
+        - content: "SSL/TLS certificates."
+          isCorrect: false
+          explanation: "Incorrect. You can store more than SSL/TLS certificates in Azure Key Vault."
+        - content: "All of the above."
+          isCorrect: true
+          explanation: "Correct. You can store your database passwords, secret access tokens, and SSL/TLS certificates in Azure Key Vault."

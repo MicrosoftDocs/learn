@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-databases.store-database-files-directly-azure-blob-storage
+title: Store database files directly on Azure Blob Storage
+metadata:
+  title: Store database files directly on Azure Blob Storage
+  description: "Store database files directly on Azure Blob Storage"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-store-database-files-directly-azure-blob-storage.md)]

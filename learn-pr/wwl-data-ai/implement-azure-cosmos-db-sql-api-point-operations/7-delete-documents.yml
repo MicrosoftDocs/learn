@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.delete-documents
+title: Delete documents
+metadata:
+  title: Delete documents
+  description: "Delete documents"
+  ms.date: 12/22/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-delete-documents.md)]

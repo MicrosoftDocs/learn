@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api.query-logs
+title: Query logs
+metadata:
+  title: Query logs
+  description: "Query logs"
+  ms.date: 01/12/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-query-logs.md)]

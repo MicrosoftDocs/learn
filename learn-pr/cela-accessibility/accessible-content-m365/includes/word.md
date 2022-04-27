@@ -46,7 +46,7 @@ To add alt text to an image:
 
 Use meaningful link text rather than long web addresses. This makes links easier to understand for people who use screen readers. Avoid nonspecific display text such as \"click here\" or \"learn more.\" People who use screen readers often pull a list of links for a given page they are visiting, so if every link has similar, generic text, the links are difficult to tell apart and less useful to the user.
 
-:::image type="content" source="../media/unique-links.png" alt-text="A comparison of examples of non-descriptive and descriptive, unique links":::
+:::image type="content" source="../media/unique-links.png" alt-text="Screenshot that shows several links with descriptive and non descriptive text.":::
 
 To edit link text:
 
@@ -55,7 +55,7 @@ To edit link text:
 3. Enter the web address into the **Address** field.
 4. In the **Text to display** field, ensure the text is meaningful and identifies the purpose of the link.
 
-:::image type="content" source="../media/text-display.png" alt-text="A comparison of examples of non-descriptive and descriptive, unique links":::
+:::image type="content" source="../media/text-display.png" alt-text="Screenshot that highlights the Text to display field in the Insert Hyperlink window.":::
 
 ## Lists  
 

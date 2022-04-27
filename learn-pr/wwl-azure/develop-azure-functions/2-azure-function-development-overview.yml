@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-azure-functions.explore-development
+title: Explore Azure Functions development
+metadata:
+  title: Explore Azure Functions development
+  description: "Explore Azure Functions development"
+  ms.date: 04/22/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-azure-function-development-overview.md)]

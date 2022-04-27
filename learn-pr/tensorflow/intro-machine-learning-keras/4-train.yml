@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-machine-learning-keras.train
+title: Training and testing the neural network
+metadata:
+  title: Training and testing the neural network
+  description: Learn how to train your neural network using the training data, and how to evaluate it using the test data
+  ms.date: 07/07/2021
+  author: bstollnitz
+  ms.author: bstollnitz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-tensorflow
+  ms.product: learning-tensorflow
+  ms.contributors:
+  - bstollnitz-08202021
+  ms.custom:
+  - team=cloud_advocates
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/4-train.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What's the goal of training a model?"
+    choices:
+    - content: "The goal is to make it faster."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "The goal is to find the parameters W and b that will lead to the best prediction."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "The goal is to find the best optimizer and loss function for our purposes."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "The goal is to classify each of the input examples."
+      isCorrect: false
+      explanation: "Incorrect."

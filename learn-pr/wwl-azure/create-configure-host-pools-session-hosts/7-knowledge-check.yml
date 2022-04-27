@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-host-pools-session-hosts.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What should be configured to automatically assign users to virtual machines and personal desktop host pools?"
+    choices:
+    - content: "Automatic assignment"
+      isCorrect: true
+      explanation: "That's correct. Automatic assignment is the default assignment type for new personal desktop host pools created in your Azure Virtual Desktop environment. To automatically assign users, first assign them to the personal desktop host pool so that they can see the desktop in their feed. When an assigned user launches the desktop in their feed, they will claim an available session host if they have not already connected to the host pool, which completes the assignment process."
+    - content: "Direct assignment"
+      isCorrect: false
+      explanation: "That's incorrect. Unlike automatic assignment, when you use direct assignment, you must assign the user to both the personal desktop host pool and a specific session host before they can connect to their personal desktop. If the user is only assigned to a host pool without a session host assignment, they won't be able to access resources."
+    - content: "Azure Role-based access control (RBAC)"
+      isCorrect: false
+      explanation: "That's incorrect. Azure role-based access control (Azure RBAC) helps you manage who has access to Azure resources, what they can do with those resources, and what areas they have access to."
+  - content: "What should be used to register virtual machines to the Azure Virtual Desktop host pool?"
+    choices:
+    - content: "Azure Virtual Desktop Agent"
+      isCorrect: true
+      explanation: "That's correct. Download and install the Azure Virtual Desktop Agent to register the virtual machines to the Azure Virtual Desktop host pool."
+    - content: "Create a virtual machine from a managed image"
+      isCorrect: false
+      explanation: "That's incorrect. A managed virtual machine image contains the information necessary to create a virtual machine, including the data disks."
+    - content: "Shared Image Gallery image"
+      isCorrect: false
+      explanation: "That's incorrect. A shared image from the Shared Image Gallery (SIG) is custom to share across your organization. Custom images are like marketplace images, but you create them yourself. Custom images can be used to bootstrap deployment tasks like preloading applications, application configurations, and other OS configurations."

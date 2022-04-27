@@ -2,10 +2,10 @@
 uid: learn.azure.resource-manager-template-reuse
 metadata:
   title: "Deploy to multiple Azure environments by using JSON ARM template features"
-  description: Manage multiple Azure environment deployments of your JSON Azure Resource Manager templates (ARM templates) by using functions, variables, tags, and parameter files.  
+  description: Manage multiple Azure environment deployments of your JSON Azure Resource Manager templates (ARM templates) by using functions, variables, tags, and parameter files.
   ms.date: 07/10/2020
-  author: jamcneil
-  ms.author: jumcn
+  author: tfitzmac
+  ms.author: tomfitz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Deploy to multiple Azure environments by using JSON ARM template features"

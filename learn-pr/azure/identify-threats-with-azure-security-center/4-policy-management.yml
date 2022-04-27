@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-security.identify-threats-with-azure-security-center.policy-management
-title: Centralized policy management with Azure Security Center
+title: Centralized policy management with Microsoft Defender for Cloud
 metadata:
-  title: Centralized policy management with Azure Security Center
-  description: Centralized policy management with Azure Security Center
-  ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  title: Centralized policy management with Microsoft Defender for Cloud
+  description: Centralized policy management with Microsoft Defender for Cloud
+  ms.date: 03/23/2022
+  author: elazark
+  ms.author: memildin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

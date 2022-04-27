@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.exercise-move-multiple-documents-bulk-sdk
+title: 'Exercise: Move multiple documents in bulk with the Azure Cosmos DB SQL API SDK'
+metadata:
+  title: 'Exercise: Move multiple documents in bulk with the Azure Cosmos DB SQL API SDK'
+  description: "Exercise: Move multiple documents in bulk with the Azure Cosmos DB SQL API SDK"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107578
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-move-multiple-documents-bulk-sdk.md)]
