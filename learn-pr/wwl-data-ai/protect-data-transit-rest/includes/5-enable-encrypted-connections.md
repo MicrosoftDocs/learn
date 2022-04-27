@@ -8,7 +8,7 @@ Once a private certificate is issued by a certificate authority, and it has been
 
 For Azure SQL Database, it is possible to enforce a minimal TLS version at the server level. The TLS versions currently supported are **1.0**, **1.1**, and **1.2**. If the client application supports encrypted connection, we recommend setting it to the latest TLS version supported after testing the application. Choosing the latest TLS version is a good practice as it provides additional fixes for vulnerabilities found in older versions.
 
-:::image type="content" source="../media/module-33-security-final-12_1.png" alt-text="Minimal TLS version property for Azure SQL Database":::
+:::image type="content" source="../media/module-33-security-final-12-1.png" alt-text="Minimal TLS version property for Azure SQL Database.":::
 
 The minimal TLS version setting for a SQL Database is accessible from the **Firewalls and virtual networks** screen, as shown in the image above.
 
@@ -50,15 +50,15 @@ You can configure a SQL Server instance to use encrypted connections by followin
 
 1. On the **SQL Server Configuration Manager**, expand **SQL Server Network Configuration**, right-click **Protocols for &lt;server instance&gt;**, and then select **Properties**.
 
-    :::image type="content" source="../media/module-33-security-final-12_3.png" alt-text="SQL Server Configuration Manager screen":::
+    :::image type="content" source="../media/module-33-security-final-12-3.png" alt-text="SQL Server Configuration Manager screen for a SQL Server instance.":::
 
 1. From the **Protocols for &lt;server instance&gt; Properties** dialog box, select the **Certificate** tab, then select the certificate from the **Certificate** drop-down.
 
-    :::image type="content" source="../media/module-33-security-final-12_4.png" alt-text="Protocols dialog box":::
+    :::image type="content" source="../media/module-33-security-final-12-4.png" alt-text="Protocols dialog box from Configuration Manager.":::
 
 1. On the **Flags** tab, in the **ForceEncryption** property, select **Yes**, and then click **OK**.
 
-    :::image type="content" source="../media/module-33-security-final-12_5.png" alt-text="Protocols for SQL Server instance properties":::
+    :::image type="content" source="../media/module-33-security-final-12-5.png" alt-text="Protocols for SQL Server instance properties from Configuration Manager.":::
 
 1. Restart the SQL Server service.
 
@@ -68,6 +68,6 @@ Once the necessary configuration is in place, you can test the connection throug
 
 1. On the **Connection Properties** tab, click **Encrypt connection**, and then **Connect**.
 
-    :::image type="content" source="../media/module-33-security-final-12_2.png" alt-text="Connect to Server encrypt connection feature on SSMS":::
+    :::image type="content" source="../media/module-33-security-final-12-2.png" alt-text="Connect to Server dialog showing the encrypt connection feature on SSMS.":::
 
 All steps must have been executed correctly for you to be able to authenticate through SQL Server Management Studio using TLS.

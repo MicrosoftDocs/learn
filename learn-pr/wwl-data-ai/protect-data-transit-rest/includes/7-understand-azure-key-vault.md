@@ -2,7 +2,7 @@ Azure Key Vault is a tool used for storing and accessing secrets. Whether they b
 
 SQL Server, either within an Azure Virtual Machine or on-premises, supports using Azure Key Vault to store certificates for features such as Transparent Data Encryption, Backup Encryption, or Always Encrypted. While this configuration is complex in an on-premises environment, it is easily managed when using SQL Server on Azure Virtual Machine, as shown in the image below.
 
-:::image type="content" source="../media/module-33-security-final-05.png" alt-text="Azure SQL VM Resource Provider Azure Key Vault configuration":::
+:::image type="content" source="../media/module-33-security-final-05.png" alt-text="Azure SQL VM Resource Provider Azure Key Vault configuration.":::
 
 In order to configure the Azure Key Vault integration, you need to set the Key Vault URL, the Principal name, the Principal secret, and the name of the credential. This task can be done at the virtual machine creation or to an existing VM.
 

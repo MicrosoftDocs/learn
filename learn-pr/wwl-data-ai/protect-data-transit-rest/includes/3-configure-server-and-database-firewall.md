@@ -4,7 +4,7 @@ Firewalls are used to prevent unauthorized users from accessing protected resour
 
 As shown in the following diagram, connection attempts coming from the internet and Azure must go through the firewall before they reach your server or database.
 
-:::image type="content" source="../media/module-33-security-final-05_2.png" alt-text="Database and server firewall diagram":::
+:::image type="content" source="../media/module-33-security-final-05-2.png" alt-text="Database and server firewall diagram for Azure SQL Database.":::
 
 As we can see in the image above, Azure provides built-in firewalls to limit access in order to protect your database and your data. In Azure SQL Database there are two distinct sets of firewall rules: server-level firewall rules and database-level firewall rules.
 
@@ -27,7 +27,7 @@ Upon connection, Azure SQL Database will look first for a server level firewall 
 
 If neither exist and the user is connecting through SQL Server Management Studio or Azure Data Studio, they'll be prompted to create a firewall rule as shown below.
 
-:::image type="content" source="../media/module-33-security-final-15.png" alt-text="New Firewall Rule Screen from SQL Server Management Studio":::
+:::image type="content" source="../media/module-33-security-final-15.png" alt-text="New Firewall Rule Screen from SQL Server Management Studio.":::
 
 ## Virtual network endpoints
 

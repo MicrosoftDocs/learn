@@ -16,19 +16,19 @@ Always Encrypted is based on a master encryption key and a column encryption key
 
 Here’s an example of enabling Always Encrypted. As shown below, you can see that *NationalIDNumber* and *BirthDate* columns are both in plain text.
 
- :::image type="content" source="../media/module-33-security-final-06.png" alt-text="Query from Unencrypted table":::
+ :::image type="content" source="../media/module-33-security-final-06.png" alt-text="Query from Unencrypted table for Always Encrypted.":::
 
 The next few images will show you how we can encrypt both of these columns using Always Encrypted. The encryption could be done using T-SQL, but in this example, you'll see the wizard from SQL Server Management Studio. You can reach the wizard by right-clicking on the table name in Object Explorer as shown below.
 
-:::image type="content" source="../media/module-33-security-final-07.png" alt-text="Launching the Encryption Wizard in SQL Server Management Studio":::
+:::image type="content" source="../media/module-33-security-final-07.png" alt-text="Launching the Encryption Wizard in SQL Server Management Studio.":::
 
 When you select **Encrypt Columns...**, the wizard will launch.
 
-:::image type="content" source="../media/module-33-security-final-08.png" alt-text="Always Encrypted Wizard launch screen":::
+:::image type="content" source="../media/module-33-security-final-08.png" alt-text="Always Encrypted Wizard launch screen from SSMS.":::
 
 In the image below, you'll see the Always Encrypted launch screen. Select **Next** to choose the columns you want to encrypt.
 
-:::image type="content" source="../media/module-33-security-final-09.png" alt-text="Always Encrypted Column selection":::
+:::image type="content" source="../media/module-33-security-final-09.png" alt-text="Column selection screen for Always Encrypted Wizard.":::
 
 In the image above, there are two different types of encryption specified. The *NationalIDNumber* column is encrypted with **Deterministic** encryption, and the *BirthDate* column is encrypted using **Randomized** encryption.
 
@@ -40,7 +40,7 @@ Another thing to note is that the wizard is generating a column encryption key, 
 
 After identifying the columns you're encrypting, you can select **Next** and you'll see the **Master Key Configuration** screen:
 
-:::image type="content" source="../media/module-33-security-final-10.png" alt-text="Master Key Configuration":::
+:::image type="content" source="../media/module-33-security-final-10.png" alt-text="Master Key Configuration for Always Encrypted Wizard.":::
 
 In this screen, you create the column master key, which is used to encrypt the column encryption keys. You can supply your own key, if you're using T-SQL to encrypt the columns. This key must be stored in a key store such as the Windows Certificate Store, Azure Key Vault, or a hardware security module. The database engine never stores the column master key, and only contains the metadata about where it's stored. Not storing the master key protects data access from users who have full access to the database.
 
@@ -48,7 +48,7 @@ For the highest level of security, the key should be stored within a third party
 
 In the example below, the key is being stored in Azure Key Vault. On the next screen, the wizard will provide you the option to either finish the encryption process now, or to generate a PowerShell script. Once you complete the process, the data will appear as encrypted to anyone querying the data without the key.
 
-:::image type="content" source="../media/module-33-security-final-11.png" alt-text="Employees Table with Encrypted Data":::
+:::image type="content" source="../media/module-33-security-final-11.png" alt-text="Employees Table with Encrypted Data from SSMS.":::
 
 In order to decrypt data from an Always Encrypted column, your application needs an Always Encrypted driver to connect to the database, followed by the actions below:
 
@@ -69,6 +69,6 @@ A secure enclave is a secured region of memory within the SQL Server process tha
 
 The image below shows the architecture of this process:
 
-:::image type="content" source="../media/module-33-security-final-12.png" alt-text="Secure Enclaves Architecture":::
+:::image type="content" source="../media/module-33-security-final-12.png" alt-text="Secure Enclaves Architecture for Always Encrypted.":::
 
 Always Encrypted with secure enclaves also addresses some of the limitations of Randomized encryption, which enables pattern matching, comparison operations, and indexing on columns using this encryption type.

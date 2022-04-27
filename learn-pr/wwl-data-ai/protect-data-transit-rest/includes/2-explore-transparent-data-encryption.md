@@ -7,13 +7,13 @@ TDE protects data at rest, and follows several laws, regulations, and guidelines
 
 The following image shows how TDE encryption works.
 
-:::image type="content" source="../media/module-33-security-final-05_1.png" alt-text="Transparent Data Encryption architecture":::
+:::image type="content" source="../media/module-33-security-final-05-1.png" alt-text="Transparent Data Encryption architecture.":::
 
 With Azure SQL Database, enabling TDE is simple. Databases that are created in Azure SQL Database after May 2017 have TDE enabled automatically. Databases that were created before May 2017 will have TDE disabled by default and TDE will need to be manually enabled on these databases. TDE is enabled in databases created after February 2019 with Azure SQL Managed Instance. Databases created before February 2019 will have TDE disabled.
 
 Enabling TDE within an Azure SQL Database database is simply a matter of editing the database within the Azure portal. From the **Transparent data encryption** pane, select to enable data encryption.
 
-:::image type="content" source="../media/module-33-security-final-04.png" alt-text="Transparent Data Encryption Settings for an Azure SQL Database":::
+:::image type="content" source="../media/module-33-security-final-04.png" alt-text="Transparent Data Encryption Settings for an Azure SQL Database.":::
 
 By default, databases within Azure SQL Database are encrypted using a Microsoft provided certificate. Microsoft Azure does provide a Bring Your Own Key option, which allows you to use a certificate that was created by your company and uploaded to Azure. If your company removes the certificate from Azure, then the database connections will be closed, and there will be no access to the database.
 
