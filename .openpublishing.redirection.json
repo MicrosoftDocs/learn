@@ -11759,6 +11759,36 @@
        "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/10-summary.md",
        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
        "redirect_document_id": false
+    },  
+    {
+            "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/3-embeddings.md",
+            "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch",
+            "redirect_document_id": false
+    },
+    {
+            "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/4-recurrent-networks.md",
+            "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch",
+            "redirect_document_id": false
+    },    
+    {
+             "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/5-generative-networks.md",
+             "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch",
+             "redirect_document_id": false
+    },    
+    {
+             "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/6-attention-transformers.md",
+             "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch",
+             "redirect_document_id": false
+    },
+    {
+              "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/7-knowledge-check.md",
+              "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch",
+              "redirect_document_id": false
+    },
+    {
+        "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/8-summary.md",
+        "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch",
+        "redirect_document_id": false
     },
     {
 
