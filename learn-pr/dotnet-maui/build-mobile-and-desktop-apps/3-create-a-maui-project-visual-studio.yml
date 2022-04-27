@@ -5,9 +5,9 @@ metadata:
   unitType: unit
   title: "Create a .NET MAUI project in Visual Studio"
   description: "Describe how to use the .NET MAUI template in Visual Studio to create a new .NET MAUI app"
-  ms.date: 01/27/2022
-  author: jamesmontemagno  
-  ms.author: jamont  
+  ms.date: 04/27/2022
+  author: codemillmatt  
+  ms.author: masoucou  
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-languages
 durationInMinutes: 5 # user input: the estimate time to complete the unit

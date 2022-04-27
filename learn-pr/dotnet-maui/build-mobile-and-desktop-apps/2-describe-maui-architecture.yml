@@ -5,9 +5,9 @@ metadata:
   unitType: unit 
   title: "Describe the .NET MAUI architecture"
   description: "Explain the structure of .NET MAUI"
-  ms.date: 01/14/2022
-  author: jamesmontemagno  
-  ms.author: jamont  
+  ms.date: 04/27/2022
+  author: codemillmatt  
+  ms.author: masoucou  
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-languages
 durationInMinutes: 5
