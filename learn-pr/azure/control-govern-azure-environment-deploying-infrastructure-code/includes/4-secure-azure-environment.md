@@ -45,7 +45,7 @@ An increasing number of Azure resources support configuring their data plane acc
 
 Sometimes, emergencies happen and somebody needs to quickly get access to a production environment to investigate or resolve a problem. It's important to consider how you'll respond to these situations - and to plan and rehearse your response well before an emergency occurs, because you don't want to have to scramble to respond in the middle of an outage.
 
-One approach you can consider is to use a *break-glass account*, which is a special user account that has higher levels of permissions than normal users. It's named a *break-glass* account because it requires something unusual to gain access to its credential, similarly to breaking the glass on a fire alarm panel. You can provide a secure way for your operators to get access to the credentials for the break-glass account, and they can then sign in as the account to perform emergency changes:
+One approach you can consider is to use a *break-glass account*, which is a special user account that has higher levels of permissions than normal users. It's named a *break-glass* account because it requires something unusual to gain access to its credential, similar to breaking the glass on a fire alarm panel. You can provide a secure way for your operators to get access to the credentials for the break-glass account, and they can then sign in as the account to perform emergency changes:
 
 :::image type="content" source="../media/4-break-glass-account.png" alt-text="Diagram showing the sequence of operations for using a break glass account to access Azure." border="false":::
 

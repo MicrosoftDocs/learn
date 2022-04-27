@@ -8,6 +8,7 @@ There are many different parts of your Azure DevOps organization, GitHub reposit
 | Important branches in your repository, and what needs to happen to change the code on those branches. | Somebody accidentally commits some insecure Bicep code onto your repository's *main* branch. |
 | The code inside your repository, including your infrastructure definitions, tests, and application code. | Somebody forgets to test the code they've just written, and it doesn't work correctly when it's released to production. |
 | The pipeline definition. | Somebody inadvertently adds a pipeline step that writes a database connection string into the pipeline's log. |
+| The agents or runners that execute your pipeline. | A pipeline running against a draft pull request installs a security vulnerability onto the agent, which is later used for a production deployment. |
 | Any third-party tasks or components that might run within your pipeline. | A third-party pipeline task sends your service principal's credentials to a malicious website. |
 | The service principals that your pipeline uses to access Azure. | A non-production service principal accidentally makes a change to your production environment. |
 | The secrets that your pipeline uses to access external systems. | A team member writes a new pipeline definition file for a prototype, and accidentally connects it to your production environment. |
@@ -26,7 +27,7 @@ It's a good practice to use your organization's Azure AD as your pipeline's iden
 You can also create *teams* (in GitHub) or *groups* (in Azure DevOps), which represent sets of users who can be granted permissions together. It's a good practice to define teams or groups. and then to assign permissions to the teams or groups instead of to individual users. That way, it's easy to change the permissions of users by adding them to and removing them from a team or group.
 
 > [!TIP]
-> Azure DevOps uses a *least privilege* permission model, which is different to the model used by Azure. In Azure DevOps, *deny* permissions override *allow* permissions, so if you're assigned to multiple groups with different sets of permissions, you'll only be allowed to do the actions permitted by both groups.
+> Azure DevOps uses a *least privilege* permission model, which is different to the model used by Azure. In Azure DevOps, *deny* permissions override *allow* permissions, so if you're assigned to multiple groups with different sets of permissions, you'll only be allowed to do the actions permitted by all groups.
 >
 > Ensure you understand how permissions are assigned, especially to groups.
 
@@ -42,11 +43,23 @@ Make sure your team understands your expectations for reviewing and testing all 
 
 Remember that your pipeline definitions are YAML files, so they're a form of code too. Changes to your pipeline definitions need to be reviewed and evaluated. Otherwise, somebody might accidentally or maliciously create a pipeline step that leaks your service principal's credentials or makes a dangerous change to your Azure estate. Ensure your team is aware that any changes to pipeline definition files needs to be thoroughly reviewed, and that everybody understands that pipelines are so highly privileged that they need to be given special attention.
 
+## Protect your pipeline agents and runners
+
+Your pipeline executes on *agents* (for Azure Pipelines) or *runners* (for GitHub Actions). You can think of agents and runners as being virtual machines, which your pipeline definition controls by running the tasks and scripts in your pipeline definition.
+
+Both Azure Pipelines and GitHub Actions provide *hosted* agents and runners, which are configured and maintained by Microsoft or GitHub. The platform owner configures the machines to be compliant with recommended security practices, and takes responsibility to patch operating system vulnerabilities. You can instead choose to use your own physical or virtual machines for your agents and runners, which are called *self-hosted* agents and runners. If you do this, you're responsible for ensuring the machines are configured correctly and protected against threats.
+
+Microsoft-hosted agents and GitHub-hosted runners are also *ephemeral*, which means that any files or configuration changes to the agent or runner are destroyed when a pipeline's run ends. If you self-host your agent or runner, the same machine is likely to be used for multiple separate pipelines or environments, including production and non-production environments. Suppose that somebody creates a pipeline definition that modifies some important files on the agent's operating system, and runs the pipeline from a pull request. The next time that a deployment runs against your production environment, it might reuse the agent, and now you have no way to predict what the impact of the corrupted file might be on your production environment.
+
+For these reasons, it's a good practice to use Microsoft-hosted agents and GitHub-hosted runners whenever you can. If you must use self-hosted runners, carefully evaluate the risks involved in their configuration and use.
+
 ## Assess third-party components that run within your pipeline
 
 If you use community-provided GitHub Actions or Azure DevOps extensions, understand who built them and what they do. Third-party pipeline components might have access to your service principal's credentials, and therefore they might have access to your entire environment in Azure.
 
 In Azure DevOps, the organization administrator typically approves every extension before it can be used. If you're the administrator for your organization, you should consider the security risk involved in each component you use. Remember that you're responsible for verifying that they're trustworthy and safe to use.
+
+Whenever you use a third-party action or task, you specify the version of the task you want to use. Consider specifying the exact version number of the version that you've reviewed, rather than allowing the pipeline to automatically use a later version, which might introduce a risk that you haven't reviewed.
 
 ## Protect your pipeline's service principals
 
@@ -66,6 +79,7 @@ Next, think about the permissions that your service principals are granted:
 >
 > * Apply Azure Active Directory (Azure AD) *conditional access* policies to your pipeline's service principals, which help to identify risky sign-ins and behaviors. For example, if your pipeline service principals always sign in from one geographic region, conditional access can detect and prevent sign-ins from unexpected locations, which might indicate that the credentials have been compromised.
 > * Carefully consider the permissions that you grant to each service principal. For example, suppose you have a service principal that you use to read the configuration of a shared resource. Consider whether you can grant *Reader* access to that service principal, instead of a more privileged role, since the service principal doesn't need to do anything more.
+> * Use the minimum *scope* for each permission you assign to a service principal. For example, if your service principal only needs to deploy to a single resource group, then scope the role assignment to that resource group instead of the whole subscription.
 > * Use separate service principals for each of your environments. That way, even if a principal's credentials are compromised or if somebody gets access to one environment, they can't access other environments.
 
 ## Protect your service connections and secrets
@@ -101,6 +115,7 @@ Now that you understand some of the important controls you can apply to your rep
 | Important branches in your repository, and what needs to happen to change the code on those branches. | Apply branch protection rules/branch policies. |
 | The code inside your repository, including your infrastructure definitions, tests, and application code. | <ul><li>Enforce code review requirements.</li><li>Add automated or manual tests.</li><li>On GitHub, use Dependabot and secret scanning.</li></ul> |
 | The pipeline definition. | Enforce code review requirements. |
+| The agents or runners that execute your pipeline. | <ul><li>On Azure Pipelines, use Microsoft-hosted agents.</li><li> On GitHub Actions, use GitHub-hosted runners.</li></ul> |
 | Any third-party tasks or components that might run within your pipeline. | Review the security risk associated with all third-party extensions and tasks. |
 | The service principals that your pipeline uses to access Azure. | <ul><li>Use workload identities in GitHub Actions. For Azure Pipelines, use service principals and regularly rotate their credentials.</li><li>Use separate service principals for each environment.</li><li>Apply conditional access policies.</li></ul> |
 | The secrets that your pipeline uses to access external systems. | <ul><li>On Azure DevOps, use approvals and checks on service connections.</li><li>On GitHub, use environment-specific secrets and workload identities.</li></ul> |
