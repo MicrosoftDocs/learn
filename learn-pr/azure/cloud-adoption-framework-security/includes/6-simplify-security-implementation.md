@@ -10,7 +10,7 @@ The security design area creates a foundation for security across Azure, hybrid,
 
 Continue to learn about implementation options for Azure landing zones by reviewing the best practices in the [Ready methodology](/azure/cloud-adoption-framework/ready/) of the Cloud Adoption Framework. Those practices help you to choose how and when to refactor your landing zone to better fit your needs.
 
-Learn how Microsoft Cloud Adoption Framework for Azure enterprise-scale landing zones can help your organization accelerate cloud adoption from months to weeks with the [Create an enterprise-scale architecture in Azure](/learn/paths/enterprise-scale-architecture/) learning path. 
+Learn how Microsoft Cloud Adoption Framework for Azure enterprise-scale landing zones can help your organization accelerate cloud adoption from months to weeks with the [Create an enterprise-scale architecture in Azure](/learn/paths/enterprise-scale-architecture/) learning path.
 
 ## Security implementation best practices
 
