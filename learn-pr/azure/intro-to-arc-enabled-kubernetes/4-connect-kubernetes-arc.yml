@@ -30,17 +30,17 @@ quiz:
     - content: "4"
       isCorrect: false
       explanation: "This version is not available yet."
-  - content: "What's the minimum version of Azure CLI required on your management computer to connect connect a Kubernetes cluster to Azure Arc?"
+  - content: "What is the minimum version of Azure CLI required on your management computer to connect a Kubernetes cluster to Azure Arc?"
     choices:
     - content: "2.15"
       isCorrect: true
-      explanation: "You need an Azure CLI version 2.15 or newer installed on your management computer. This is necessary to install Azure Arc-enabled Kubernetes CLI extensions."
+      explanation: "You need Azure CLI version 2.15 or newer installed on your management computer in order to install the Azure Arc-enabled Kubernetes CLI extensions."
     - content: "1.15"
       isCorrect: false
-      explanation: "The version 2.15 of an Azure CLI is sufficient."
+      explanation: "You need at least version 2.15 of Azure CLI."
     - content: "2.0"
       isCorrect: false
       explanation: "You need at least version 2.15 of Azure CLI."
     - content: "3.0"
       isCorrect: false
-      explanation: "The version 2.15 of an Azure CLI is sufficient."
+      explanation: "You need at least version 2.15 of Azure CLI."

@@ -23,7 +23,7 @@ quiz:
       explanation: "Azure Monitor Container Insights relies on a containerized version of the Log Analytics agent for Linux named omsagent, running in the monitored cluster."
     - content: "Flux"
       isCorrect: false
-      explanation: "Flux is used to implement Azure Policy for Azure Arc-enabled Kubernetes."
+      explanation: "Flux is used to configure GitOps for Azure Arc-enabled Kubernetes."
     - content: "Istio"
       isCorrect: false
       explanation: "Istio is an open source service mesh platform that provides a way to control how microservices share data with one another. It is not used directly by Azure Arc-enabled Kubernetes functionality to implement Azure Monitor."
