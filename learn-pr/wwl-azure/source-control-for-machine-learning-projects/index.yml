@@ -14,7 +14,8 @@ abstract: |
   - Trunk-based development with Git.
   - How to work with Git in Azure Repos and GitHub.
   - How to develop locally with Visual Studio Code.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
