@@ -35,11 +35,11 @@ products:
 - microsoft-purview
 - sql-server
 units:
-- learn.azure.govern-sql-server-with-microsoft-purview.1-introduction
-- learn.azure.govern-sql-server-with-microsoft-purview.2-discover-govern-data-different-sources-using-microsoft-purview
-- learn.azure.govern-sql-server-with-microsoft-purview.3-govern-manage-data-sql-server
-- learn.azure.govern-sql-server-with-microsoft-purview.4-govern-manage-data-from-amazon-relational-database-service
-- learn.azure.govern-sql-server-with-microsoft-purview.5-knowledge-check
-- learn.azure.govern-sql-server-with-microsoft-purview.6-summary
+- learn.azure.govern-sql-server-with-microsoft-purview.introduction
+- learn.azure.govern-sql-server-with-microsoft-purview.discover-govern-data-different-sources-using-microsoft-purview
+- learn.azure.govern-sql-server-with-microsoft-purview.govern-manage-data-sql-server
+- learn.azure.govern-sql-server-with-microsoft-purview.govern-manage-data-from-amazon-relational-database-service
+- learn.azure.govern-sql-server-with-microsoft-purview.knowledge-check
+- learn.azure.govern-sql-server-with-microsoft-purview.summary
 badge:
   uid: learn.azure.govern-sql-server-with-microsoft-purview.badge 
