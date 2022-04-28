@@ -7,7 +7,7 @@ There are two ways of creating dynamic SQL, either using:
 
 ## Dynamic SQL using EXECUTE or EXEC
 
-To write a simple dynamic SQL statement with EXECUTE or EXEC, the syntax is:
+To write a dynamic SQL statement with EXECUTE or EXEC, the syntax is:
 
 `EXEC (@string_variable);`
 

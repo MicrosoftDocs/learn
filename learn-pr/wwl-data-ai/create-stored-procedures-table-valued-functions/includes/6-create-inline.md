@@ -62,8 +62,6 @@ The Query Optimizer is unable to estimate how many rows will return for a multi-
 
 In SQL Server versions 2017 and higher, Microsoft introduced features for intelligent query processing to improve performance for MSTVF. See more details about the Intelligent Query Processing features in the [T-SQL Reference Documentation](/sql/relational-databases/performance/intelligent-query-processing?#interleaved-execution-for-mstvfs).
 
-# 
-
 ## Scalar user-defined function
 A scalar user-defined function returns only one value unlike table-valued functions and therefore is often used for simple, frequent statements.
 
@@ -97,5 +95,5 @@ For this function, both parameters must be provided to get the value. Depending 
 Specifying SCHEMABINDING when you create the function binds the function to the referenced objects, and the objects can't be modified without the function also being modified. The function must first be modified or dropped to remove dependencies before modifying the object. SCHEMABINDING isn't the default so you must specify, otherwise changes can be made to referenced objects and affect your function.
 
 SCHEMABINDING is removed if any of the following occur:
- - The function is dropped
- - The function is modified with ALTER statement without specifying SCHEMABINDING
+ * The function is dropped
+ * The function is modified with ALTER statement without specifying SCHEMABINDING
