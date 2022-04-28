@@ -21,6 +21,11 @@ To complete the component that sends messages about sales performance, complete 
 
     Between the quotation marks, paste the connection string you saved in the previous exercise.
 
+2. If you used a name different from **salesperformancemessages** for the queue name, update the value for `TopicName` property in the code.
+
+    ```csharp
+    const string TopicName = "salesperformancemessages";
+    ```
 1. Find the `SendPerformanceMessageAsync()` method. (*Hint*: It's at or near line 26.) Within that method, find the following line of code:
 
     ```csharp
