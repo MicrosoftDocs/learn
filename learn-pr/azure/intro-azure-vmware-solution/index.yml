@@ -4,7 +4,7 @@ metadata:
   title: Introduction to Azure VMware Solution
   description: Learn about Azure VMware Solution to host your VMware workloads in Azure.
   ms.date: 06/17/2021
-  author: exchangegoddess
+  author: Orin-Thomas
   ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

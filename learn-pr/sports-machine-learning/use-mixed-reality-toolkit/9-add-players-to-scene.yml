@@ -5,7 +5,7 @@ metadata:
   description: Create an object that loads the scene. In addition, assign the gameobjects to the spawner script.
   ms.date: 06/15/2021
   author: aprilspeight
-  ms.author: sguthals
+  ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
