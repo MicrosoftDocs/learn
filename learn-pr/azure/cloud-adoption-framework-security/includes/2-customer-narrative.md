@@ -2,7 +2,10 @@ In earlier Microsoft Learn modules for the Cloud Adoption Framework, we shared t
 
 The Tailwind Traders innovation team is rapidly deploying new products and services and migrating out of their data centers. The company's CISO is concerned that the company's risk profile is growing quickly and has become larger than originally anticipated. The company has not yet encountered a breach, but the CISO recognizes that it's only a matter of time now that adoption is ramping up quickly.
 
-Tailwind Traders previously completed the [CAF Ready](/azure/cloud-adoption-framework/ready/) module, but the company wants to be proactive to prevent future security issues. They also want to operationalize security practices across their portfolio to improve their overall security posture. As pointed out in previous Tailwind Traders narratives, the company chose a "Start Small" implementation of Azure Landing Zones. This means they don't have all the rich security tools that come with the Azure Landing Zone Accelerator. (Note: If Tailwind Traders had deployed Azure Landing Zones at an enterprise scale from the beginning, they'd already have many of these tools in place, which would accelerate their security journey.)
+Tailwind Traders previously completed the [CAF Ready](/azure/cloud-adoption-framework/ready/) module, but the company wants to be proactive to prevent future security issues. They also want to operationalize security practices across their portfolio to improve their overall security posture. As pointed out in previous Tailwind Traders narratives, the company chose a "Start Small" implementation of Azure Landing Zones. This means they don't have all the rich security tools that come with the Azure Landing Zone Accelerator.
+
+> [!NOTE]
+> If Tailwind Traders had deployed Azure Landing Zones at an enterprise scale from the beginning, they'd already have many of these tools in place, which would accelerate their security journey.
 
 The CISO wants to add proper layers of protection to reduce risk and prepare for inevitable breach situations.
 

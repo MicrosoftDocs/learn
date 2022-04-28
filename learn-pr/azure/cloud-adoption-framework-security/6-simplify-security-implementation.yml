@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.cloud-adoption-framework-security.simplifying-security-implementation
+uid: learn.azure.cloud-adoption-framework-security.simplify-security-implementation
 title: Simplify security implementation
 metadata:
   unitType: learning-content
@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-simplifying-security-implementation.md)]
+  [!include[](includes/6-simplify-security-implementation.md)]
 quiz:
   title: Check your knowledge
   questions:
