@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.explain-high-availability-and-disaster-recovery-options
+title: Explain high availability and disaster recovery options
+metadata:
+  title: Explain high availability and disaster recovery options
+  description: "Explain high availability and disaster recovery options"
+  ms.date: 04/26/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-explain-high-availability-and-disaster-recovery-options.md)]
