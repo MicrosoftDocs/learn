@@ -1,6 +1,6 @@
 Azure Arc extends the scope of Azure management plane to resources located on-premises and in other clouds. This, however, requires that you first establish an outbound connection from these resources to Azure. In this unit, you'll learn how to connect a Kubernetes cluster with Azure Arc.
 
-## Connect an Azure Arc-enabled Kubernetes cluster
+## How to connect an Azure Arc-enabled Kubernetes cluster
 
 To connect a Kubernetes cluster to Azure Arc, you first deploy the Azure Arc Agents for Kubernetes. These agents are deployed as pods into the `azure-arc` namespace. The implementation consists of the following high-level steps:
 
@@ -31,7 +31,7 @@ After you deploy the agent, you can leverage Azure Arc-enabled Kubernetes functi
 - Monitor status of the cluster and its workloads by using Azure Monitor.
 - Implement governance and validate compliance of the cluster and its pods by using Azure Policy.
 
-## Securely connect to clusters from anywhere
+## How to securely connect to clusters from anywhere
 
 Azure Arc-enabled Kubernetes provides a *cluster connect* feature, which lets you securely connect to your clusters without requiring any inbound port to be enabled on the firewall. A reverse proxy agent running on the cluster can securely start a session with the Azure Arc service in an outbound manner.
 

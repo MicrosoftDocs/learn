@@ -41,7 +41,7 @@ Azure Policy offers built-in definitions for Azure Arc-enabled Kubernetes. Some 
 
 To view additional policy definitions, start the Azure Policy service in the Azure portal, select **Definitions**, then select **Kubernetes** in the **Category** dropdown list.
 
-## How to implement Azure Policy for Kubernetes?
+## How to implement Azure Policy for Kubernetes on connected clusters
 
 To implement Azure Policy for Kubernetes, you need to install an Azure Policy add-on. The add-on is available for each of the three supported types of Kubernetes environments.
 

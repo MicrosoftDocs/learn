@@ -37,7 +37,7 @@ With Azure Monitor Container Insights you can:
 - Determine the behavior of the cluster under average and heaviest loads. This helps with assessing capacity needs and estimating the maximum load that the cluster can sustain.
 - Configure alerts to proactively notify you when resource utilization exceeds acceptable thresholds or when a health state change occurs in the cluster.
 
-## How to implement monitoring of Azure Arc-enabled Kubernetes clusters?
+## How to monitor Azure Arc-enabled Kubernetes clusters
 
 Azure Monitor Container Insights relies on a containerized version of the Log Analytics agent for Linux named omsagent, that runs in the monitored cluster to collect performance metrics and logs from its nodes and containers. The agent interacts directly with the Kubernetes Metrics API and uploads the collected  data to Azure. Metrics reside in the metrics store, while log data persists in the logs store in the Log Analytics workspace you designate.
 
