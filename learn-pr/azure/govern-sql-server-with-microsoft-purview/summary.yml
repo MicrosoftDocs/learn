@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.govern-sql-server-with-microsoft-purview.6-summary
+uid: learn.azure.govern-sql-server-with-microsoft-purview.summary
 title: Introduction
 metadata:
   title: Summary
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/summary.md)]
