@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-use-database-emulator
+uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.use-local-database
 title: Introduction
 metadata:
   unitType: introduction
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 5
 content: |
-  [!include[](includes/exercise-use-database-emulator.md)]
+  [!include[](includes/use-local-database.md)]

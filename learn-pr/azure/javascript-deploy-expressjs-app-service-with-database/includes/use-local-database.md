@@ -22,8 +22,8 @@ You can develop apps locally with MongoDB without having to install a MongoDB se
 
 |OS|Tools|
 |--|--|
-| Windows |Azure Cosmos DB Emulator<br>Visual Studio Code dev container|
-| Linux/macOS|Windows container for Cosmos DB emulator<br>Visual Studio Code dev container|
+| Windows |[Azure Cosmos DB Emulator](/azure/cosmos-db/local-emulator)<br>[Visual Studio Code dev container](https://code.visualstudio.com/docs/remote/create-dev-container#_automate-dev-container-creation)|
+| Linux/macOS|[Windows container for Cosmos DB emulator](/azure/cosmos-db/local-emulator-on-docker-windows?tabs=cli)<br>[Visual Studio Code dev container](https://code.visualstudio.com/docs/remote/create-dev-container#_automate-dev-container-creation)|
 
 ## Azure Cosmos DB Emulator 
 

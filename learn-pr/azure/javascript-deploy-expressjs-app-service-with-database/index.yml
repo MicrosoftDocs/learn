@@ -22,16 +22,9 @@ abstract: |
 prerequisites: |
   - GitHub user account
   - Visual Studio Code
-  - Visual Studio Code extension - Azure resource group 
-  - Visual Studio Code extension - Azure App Service extension 
-  - Visual Studio Code extension - Azure Database extension   
+  - Docker
   - JavaScript Express.js web development experience
-  - Familiarity with deployment concepts
-  - Familiarity with cloud security concepts
-  - Forking and cloning GitHub repositories
-  - Deploying code to the cloud
-  - Configuring web apps
-  - Finding and resolving cloud app runtime issues 
+  - Conceptual understanding of cloud development and deployment
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
   - beginner

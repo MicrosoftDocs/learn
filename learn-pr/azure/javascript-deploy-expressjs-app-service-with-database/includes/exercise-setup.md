@@ -51,10 +51,11 @@ Find the free sandbox subscription in Visual Studio Code.
 
 ## Install Azure extensions
 
-1. In Visual Studio Code, install the following extensions:
+In Visual Studio Code, install the following extensions:
 
-    * [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
-    * [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
+* [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
+* [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
+* [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) - used to provide your local computer with a database in a container
 
 ## Create setup.sh bash script
 
