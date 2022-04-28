@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-microsoft-purview-scan-data-resources.access-control
+title: Access Control
+metadata:
+  unitType: learning-content
+  title: access control
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 05/04/2022
+  author: tayganr
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-access-control.md)]

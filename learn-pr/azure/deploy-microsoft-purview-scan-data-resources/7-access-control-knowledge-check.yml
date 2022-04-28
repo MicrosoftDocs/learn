@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-microsoft-purview-scan-data-resources.access-control-knowledge-check
+title: access control knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 05/04/2022
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check) 
+###  - Questions are complete sentences ending with a question mark 
+###  - No true/false questions 
+###  - 3 answers per question 
+###  - All answers about the same length 
+###  - Numeric answers listed in sorted order 
+###  - No "All of the above" and/or "None of the above" as answer choices 
+###  - No "Not" or "Except" in questions 
+###  - No second person ("you") in the questions or answers 
+###  - Provide a meaningful explanation for both correct and incorrect answers 
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "Which of the following roles would provide a user read only access to the catalog?"
+    choices:
+    - content: "Collection admin"
+      isCorrect: false
+      explanation: "Collection admins can edit the collection, its details, and add subcollections."
+    - content: "Data curator"
+      isCorrect: false
+      explanation: "Data curators can perform create, read, modify, and delete actions on catalog data objects."
+    - content: "Data reader"
+      isCorrect: true
+      explanation: "Data readers have access to read catalog data objects."
+  - content: "Which of the following roles would provide a user the ability to register new data sources?"
+    choices:
+    - content: "Data curator"
+      isCorrect: false
+      explanation: "Data curators can perform create, read, modify, and delete actions on catalog data objects."
+    - content: "Data source admin"
+      isCorrect: true
+      explanation: "Data source admins can manage data sources and data scans."
+    - content: "Policy author"
+      isCorrect: false
+      explanation: "Policy authors can create, view, update and delete policies."
+  - content: "Where are role assignments performed?"
+    choices:
+    - content: "Collections"
+      isCorrect: true
+      explanation: "Role assignments are applied against a collection."
+    - content: "Resource Sets"
+      isCorrect: false
+      explanation: "You are unable to perform role assignments against a resource set."
+    - content: "Data Sources"
+      isCorrect: false
+      explanation: "You are unable to perform role assignments against a data source."
