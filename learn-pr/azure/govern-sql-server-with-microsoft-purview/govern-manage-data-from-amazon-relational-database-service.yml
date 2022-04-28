@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.govern-sql-server-with-microsoft-purview.4-govern-manage-data-from-amazon-relational-database-service
-title: Introduction
+title: Govern and manage data from the Amazon Relational Database Service by using Microsoft Purview
 metadata:
   title: Govern and manage data from the Amazon Relational Database Service by using Microsoft Purview
   description: Govern and manage data from the Amazon Relational Database Service by using Microsoft Purview.
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-govern-manage-data-from-amazon-relational-database-service.md)]
+  [!include[](includes/govern-manage-data-from-amazon-relational-database-service.md)]
