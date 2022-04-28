@@ -5,8 +5,8 @@ metadata:
   description: Learn to use Python for data science. Modules introduce the Python language, the NumPy and pandas libraries, basic data-preparation methods, and related tools.
   brand: azure
   ms.date: 04/22/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
 title: Introduction to Python for data science
