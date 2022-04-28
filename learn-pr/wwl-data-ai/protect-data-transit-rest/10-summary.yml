@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.protect-data-transit-at-rest.introduction
-title: Introduction
+uid: learn.wwl.protect-data-transit-at-rest.summary
+title: Summary
 metadata:
-  title: Introduction
-  description: "Introduction"
+  title: Summary
+  description: "Summary"
   ms.date: 04/27/2022
   author: wwlpublish
   ms.author: jupadrao
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/10-summary.md)]

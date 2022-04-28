@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.protect-data-transit-at-rest.introduction
-title: Introduction
+uid: learn.wwl.configure-databases-for-optimal-performance.summary
+title: Summary
 metadata:
-  title: Introduction
-  description: "Introduction"
-  ms.date: 04/27/2022
+  title: Summary
+  description: "Summary"
+  ms.date: 04/28/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/8-summary.md)]
