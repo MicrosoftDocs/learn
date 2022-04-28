@@ -1,10 +1,10 @@
 Your customers have realized that the database behind the API is exposed with a public IP address. While they are aware that this public IP address is protected by a firewall so that only the Azure Container Instance can access it, they have asked you to use private IP addresses between the API and the database.
 
-Azure PaaS services can normally be accessed with a public endpoint, using a public IP address reachable over the public Internet. However, many Azure services support creating private endpoints too, where the Azure service is only reachable from inside of a Virtual Network. You will create a private endpoint for the Azure SQL Database created in previous units, and make sure that the container is still able to reach it.
+Azure PaaS services can normally be accessed with a public endpoint by using a public IP address reachable over the public Internet. However, many Azure services also support creating private endpoints, where the Azure service is only reachable from inside of a Virtual Network. You will create a private endpoint for the Azure SQL Database created in previous units and make sure that the container is still able to reach it.
 
 Azure Private Link is a technology that can be used to secure connectivity to an Azure PaaS resource such as Azure SQL Database. In previous units, you have tested the application accessing a database which is available using a public IP address. This public IP address is protected by Azure SQL firewall rules, but the communication can be further restricted to only use private IP addressing.
 
-DNS plays a critical role in the functionality required, since the system accessing the SQL Database (the Azure Container Instance hosting the application) will need to resolve the Azure SQL Fully Qualified Domain Name (FQDN) to its private IP, instead of to its public IP.
+DNS plays a critical role in the functionality required, since the system accessing the SQL Database (the Azure Container Instance hosting the application) will need to resolve the Azure SQL Fully Qualified Domain Name (FQDN) to its private IP instead of to its public IP.
 
 ## Create private endpoint
 
@@ -25,7 +25,7 @@ DNS plays a critical role in the functionality required, since the system access
       --vnet-name $vnet_name --subnet $sql_subnet_name \
       --private-connection-resource-id $sql_server_id --group-id sqlServer --connection-name sqlConnection
     ```
-    
+
 1. You can verify the IP address assigned to the private endpoint using the `az network nic` command, since private endpoints are represented in Azure as Network Interface Cards (NICs):
 
     ```azurecli
@@ -47,16 +47,16 @@ DNS plays a critical role in the functionality required, since the system access
     az network private-endpoint dns-zone-group create --endpoint-name $sql_endpoint_name -g $rg -n zonegroup --zone-name zone1 --private-dns-zone $dns_zone_name
     ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "nslookup ${sql_server_name}.database.windows.net"
     ```
-    
+
     Note that the VM in the Virtual Network should now resolve the FQDN for the Azure SQL Database to the private IP address of the private endpoint.
-    
+
 1. If you deleted the Azure Container Instance from the previous unit you can recreate it using the same YAML file. Note that nothing has changed for the Azure Container Instance, since it is still accessing the database using the same FQDN.
 
     ```azurecli
     # Deploy ACI if you had deleted it
     az container create -g $rg --file $aci_yaml_file
     ```
-    
+
 1. You can verify that the Azure Container Instance is up and running with the `api/healthcheck` endpoint. You can verify the correct name resolution to a private IP address with the `api/dns` endpoint, and you can verify reachability to the database with the `api/sqlversion` and `api/sqlsrcip` endpoints.
 
     ```azurecli
@@ -80,4 +80,4 @@ DNS plays a critical role in the functionality required, since the system access
   
 ## Summary
 
-You configured access from the Azure Container Instance to the Azure SQL Database using private addresses. You connected the Azure SQL Database to the Virtual Network using Private Link, and you used Azure Private DNS Zones to make sure that the Azure Container Instances reaches the Azure SQL Database over its private endpoint.
+You configured access from the Azure Container Instance to the Azure SQL Database using its private address. You connected the Azure SQL Database to the Virtual Network using Private Link, and you used Azure Private DNS Zones to make sure that the Azure Container Instance reaches the Azure SQL Database over its private endpoint.
