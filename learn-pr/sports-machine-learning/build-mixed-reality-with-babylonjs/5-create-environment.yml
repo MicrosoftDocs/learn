@@ -4,8 +4,8 @@ metadata:
   title: Create a custom XR environment with TypeScript
   description:  Create a custom XR environment with TypeScript.
   ms.date: 06/15/2021
-  author: cassiebreviu
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

@@ -4,8 +4,8 @@ metadata:
   title: Initialize your custom environment in your XR experience
   description: Initialize your custom environment in your XR experience.
   ms.date: 06/15/2021
-  author: cassiebreviu
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
