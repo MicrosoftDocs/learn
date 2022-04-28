@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.govern-azure-databases-with-microsoft-purview.register-scan-azure-sql-data
+uid: learn-pr.azure.govern-azure-databases-with-microsoft-purview.register-scan-azure-sql-data
 title: Register and scan an Azure SQL Database data source by using Microsoft Purview 
 metadata:
   title: Register and scan an Azure SQL Database data source by using Microsoft Purview 
