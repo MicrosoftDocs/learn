@@ -49,12 +49,12 @@ For Azure Arc-enabled Kubernetes, the implementation consists of the following h
 
 1. Verify that you satisfy all the prerequisites. You'll need:
 
-- An Azure Arc-enabled Kubernetes cluster. You'll also need to know the Azure Resource ID for this cluster.
-- Access to the cluster with a user account that has the cluster-admin role.
-- A work or school account in the Azure Active Directory (Azure AD) tenant associated with the subscription that hosts the Azure Arc-enabled Kubernetes resource. Because you'll need to register a provider, this account should be the subscription owner. It should also have permissions to create service principals in the Azure AD tenant.
-- Helm 3. Consider installing its latest release.
-- Azure Command Line Interface (CLI) version 2.12.0 or newer.
-- Outbound connectivity to Azure. For details regarding target URLs and ports, refer to Microsoft Docs.
+   - An Azure Arc-enabled Kubernetes cluster. You'll also need to know the Azure Resource ID for this cluster.
+   - Access to the cluster with a user account that has the cluster-admin role.
+   - A work or school account in the Azure Active Directory (Azure AD) tenant associated with the subscription that hosts the Azure Arc-enabled Kubernetes resource. Because you'll need to register a provider, this account should be the subscription owner. It should also have permissions to create service principals in the Azure AD tenant.
+   - Helm 3. Consider installing its latest release.
+   - Azure Command Line Interface (CLI) version 2.12.0 or newer.
+   - Outbound connectivity to Azure. For details regarding target URLs and ports, refer to Microsoft Docs.
 
 1. Start an Azure CLI session on a computer with connectivity to the Kubernetes cluster and to Azure.
 1. Sign in to the Azure AD tenant associated with the subscription that hosts the Azure Arc-enabled Kubernetes resource.

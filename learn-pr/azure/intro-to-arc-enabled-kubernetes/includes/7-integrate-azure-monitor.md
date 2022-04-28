@@ -45,14 +45,14 @@ You can set up of Azure Monitor Container Insights for Azure Arc-enabled Kuberne
 
 1. Verify that you satisfy all the prerequisites. You'll need: 
 
-    - An Azure Arc-enabled Kubernetes cluster
-    - An Azure Log Analytics workspace that will host Kubernetes cluster metrics and logs
-    - Access to the cluster with a user account that has the cluster-admin role
-    - A work or school account in the Azure Active Directory (Azure AD) tenant associated with the subscription that hosts the Azure Arc-enabled Kubernetes resource. This account should have, at minimum, the Contributor role within the Log Analytics workspace and the Azure Arc-enabled Kubernetes resource.
-    - Helm 3. Consider installing its latest release. 
-    - Azure Command Line Interface (CLI) version 2.12.0 or newer or PowerShell Core
-    - Outbound connectivity to Azure. For details regarding target URLs and ports, refer to Microsoft Docs.
-    - Azure Resource ID of the Azure Arc-enabled Kubernetes cluster
+   - An Azure Arc-enabled Kubernetes cluster
+   - An Azure Log Analytics workspace that will host Kubernetes cluster metrics and logs
+   - Access to the cluster with a user account that has the cluster-admin role
+   - A work or school account in the Azure Active Directory (Azure AD) tenant associated with the subscription that hosts the Azure Arc-enabled Kubernetes resource. This account should have, at minimum, the Contributor role within the Log Analytics workspace and the Azure Arc-enabled Kubernetes resource.
+   - Helm 3. Consider installing its latest release. 
+   - Azure Command Line Interface (CLI) version 2.12.0 or newer or PowerShell Core
+   - Outbound connectivity to Azure. For details regarding target URLs and ports, refer to Microsoft Docs.
+   - Azure Resource ID of the Azure Arc-enabled Kubernetes cluster
 
 1. Start an Azure CLI or PowerShell Core session on a computer with connectivity to the Kubernetes cluster and to Azure.
 1. Sign in to the Azure AD tenant associated with the subscription that hosts the Azure Arc-enabled Kubernetes resource.

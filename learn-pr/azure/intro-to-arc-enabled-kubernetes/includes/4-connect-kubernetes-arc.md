@@ -6,12 +6,12 @@ To connect a Kubernetes cluster to Azure Arc, you first deploy the Azure Arc Age
 
 1. Verify that you satisfy all the prerequisites. You'll need:
 
-- An existing Kubernetes cluster.
-- Access to the cluster with a user account that has the cluster-admin role.
-- Outbound connectivity from the cluster to Azure and Microsoft container registry hosting the container images required during installation. For details regarding target URLs and ports, refer to Microsoft Docs.
-- A user account or service principal in the Azure Active Directory (Azure AD) tenant associated with the subscription that will be hosting the Azure Arc-enabled Kubernetes resource. This account must have, at minimum, the **Kubernetes Cluster - Azure Arc Onboarding** Azure role-based access control (Azure RBAC).
-- Helm 3 installed on your management computer. Consider installing its latest release.
-- Azure Command Line Interface (CLI) version 2.15 or newer installed on your management computer. This is necessary to install Azure Arc-enabled Kubernetes CLI extensions.
+   - An existing Kubernetes cluster.
+   - Access to the cluster with a user account that has the cluster-admin role.
+   - Outbound connectivity from the cluster to Azure and Microsoft container registry hosting the container images required during installation. For details regarding target URLs and ports, refer to Microsoft Docs.
+   - A user account or service principal in the Azure Active Directory (Azure AD) tenant associated with the subscription that will be hosting the Azure Arc-enabled Kubernetes resource. This account must have, at minimum, the **Kubernetes Cluster - Azure Arc Onboarding** Azure role-based access control (Azure RBAC).
+   - Helm 3 installed on your management computer. Consider installing its latest release.
+   - Azure Command Line Interface (CLI) version 2.15 or newer installed on your management computer. This is necessary to install Azure Arc-enabled Kubernetes CLI extensions.
 
 1. Start an Azure CLI session on a computer with connectivity to the Kubernetes cluster and to Azure.
 1. Sign in to the Azure AD tenant associated with the subscription that will be hosting Azure Arc-enabled Kubernetes resource. Use the account that you identified when verifying the prerequisites.
