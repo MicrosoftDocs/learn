@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-defender-for-iot-implementation.implement
+title: Implement Azure Defender for IoT
+metadata:
+  title: Implement Azure Defender for IoT
+  description: "Implement Azure Defender for IoT"
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 110078
+labModal: true
+durationInMinutes: 60
+content: |
+  [!include[](includes/2-implement-azure-defender-for-iot.md)]
+interactive: bash-editor

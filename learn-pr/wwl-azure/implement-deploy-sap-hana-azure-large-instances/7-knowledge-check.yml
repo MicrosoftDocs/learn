@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-deploy-sap-hana-azure-large-instances.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the first step that must be taken before Microsoft provisions SAP HANA on Azure (Large Instances)?"
+    choices:
+    - content: "Provide Microsoft with the Azure virtual network that is connected to your on-premises network."
+      isCorrect: false
+      explanation: "Incorrect. As the first step, you must provide Microsoft with detailed information in order to have them deploy SAP HANA on Azure (Large Instances) units. This includes names, contact information, SKU configurations, IP address ranges, and more."
+    - content: "Provide Microsoft with detailed information to provision you an SAP HANA Large Instance."
+      isCorrect: true
+      explanation: "Correct. As the first step, you must provide Microsoft with detailed information in order to have them deploy SAP HANA on Azure (Large Instances) units. This includes names, contact information, SKU configurations, IP address ranges, and more."
+    - content: "Connect the ExpressRoute circuit for HANA Large Instances to your on-premises network."
+      isCorrect: false
+      explanation: "Incorrect. As the first step, you must provide Microsoft with detailed information in order to have them deploy SAP HANA on Azure (Large Instances) units. This includes names, contact information, SKU configurations, IP address ranges, and more."
+  - content: "When connecting Azure virtual machines to HANA Large Instances, how many gateway subnets are required for each virtual network that connects to the SAP HANA on Azure (Large Instances) ExpressRoute circuit?"
+    choices:
+    - content: "1 per VNet"
+      isCorrect: true
+      explanation: "Correct. There must always be one, and only one, gateway subnet for each virtual network that connects to the SAP HANA on Azure (Large Instances) ExpressRoute circuit."
+    - content: "1 total"
+      isCorrect: false
+      explanation: "Incorrect. There must always be one, and only one, gateway subnet for each virtual network that connects to the SAP HANA on Azure (Large Instances) ExpressRoute circuit."
+    - content: "No more than 3 total"
+      isCorrect: false
+      explanation: "Incorrect. There must always be one, and only one, gateway subnet for each virtual network that connects to the SAP HANA on Azure (Large Instances) ExpressRoute circuit."
+  - content: "When connecting Azure virtual machines to HANA Large Instances, what size virtual network gateway subnet IP address range is required to use an ultra-performance ExpressRoute gateway? Select one."
+    choices:
+    - content: "/26 address block"
+      isCorrect: true
+      explanation: "Correct. The recommended size is a /26 address block (this is required for all Type II SKUs)."
+    - content: "/27 address block"
+      isCorrect: false
+      explanation: "Incorrect. The recommended size is a /26 address block (this is required for all Type II SKUs)."
+    - content: "/28 address block"
+      isCorrect: false
+      explanation: "Incorrect. The recommended size is a /26 address block (this is required for all Type II SKUs)."
+  - content: "How should time synchronization for SAP HANA database instances running on HANA Large Instances be handled?"
+    choices:
+    - content: "No special steps are required, Azure ensures that the system's time is properly synchronized."
+      isCorrect: false
+      explanation: "Incorrect. For SAP HANA on Azure (Large Instances), time synchronization that's done in Azure doesn't apply to the compute units in the Large Instance stamps. As a result, you must set up a separate time server that can be used by SAP application servers that are running on Azure VMs and by the SAP HANA database instances that are running on HANA Large Instances."
+    - content: "Set up a separate time server."
+      isCorrect: true
+      explanation: "Correct. For SAP HANA on Azure (Large Instances), time synchronization that's done in Azure doesn't apply to the compute units in the Large Instance stamps. As a result, you must set up a separate time server that can be used by SAP application servers that are running on Azure VMs and by the SAP HANA database instances that are running on HANA Large Instances."
+    - content: "Check regularly for new patches and fixes of the specific OS release/version - system time is synchronized during this process."
+      isCorrect: false
+      explanation: "Incorrect. For SAP HANA on Azure (Large Instances), time synchronization that's done in Azure doesn't apply to the compute units in the Large Instance stamps. As a result, you must set up a separate time server that can be used by SAP application servers that are running on Azure VMs and by the SAP HANA database instances that are running on HANA Large Instances."
+  - content: "How are the SAP HANA installation bits from SAP downloaded to a HANA Large Instance virtual machine?"
+    choices:
+    - content: "Download them directly via the VM's internet connection."
+      isCorrect: false
+      explanation: "Incorrect. The HANA Large Instance units aren't directly connected to the internet. You can't directly download the installation packages from SAP to the HANA Large Instance virtual machine. Instead, you download the packages to the jump box virtual machine."
+    - content: "Download them to the jump box virtual machine and then copy them to the /hana/shared volume of the HLI unit."
+      isCorrect: true
+      explanation: "Correct. The HANA Large Instance units aren't directly connected to the internet. You can't directly download the installation packages from SAP to the HANA Large Instance virtual machine. Instead, you download the packages to the jump box virtual machine."
+    - content: "The bits will already be pre-installed when you receive the HANA Large Instance from Microsoft."
+      isCorrect: false
+      explanation: "Incorrect. The HANA Large Instance units aren't directly connected to the internet. You can't directly download the installation packages from SAP to the HANA Large Instance virtual machine. Instead, you download the packages to the jump box virtual machine."

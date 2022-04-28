@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-dataframes-azure-databricks.exercise-distinct-articles
+title: 'Exercise: Distinct articles'
+metadata:
+  title: 'Exercise: Distinct articles'
+  description: "Exercise: Distinct articles"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-distinct-articles.md)]

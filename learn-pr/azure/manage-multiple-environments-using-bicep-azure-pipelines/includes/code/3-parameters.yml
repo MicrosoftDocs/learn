@@ -1,0 +1,8 @@
+steps:
+- template: script.yml
+  parameters:
+    environmentType: Test
+
+- template: script.yml
+  parameters: 
+    environmentType: Production

@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture
+metadata:
+  title: Manage alerts, blameless retrospectives and a just culture
+  description: "Manage alerts, blameless retrospectives and a just culture"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage alerts, blameless retrospectives and a just culture
+summary: This module examines alerts, blameless retrospectives and creates a just culture. It helps improving application performance, reducing meaningless and non-actionable alerts, and explains server response-time degradation.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Carry out blameless retrospectives and create a just culture
+  - Improve application performance
+  - Explain server response time degradation
+  - Reduce meaningless and non-actionable alerts
+prerequisites: |
+  None
+iconUrl: /learn/achievements/8-manage-alerts-blameless-retrospectives-and-a-just-culture.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.introduction
+- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.examine-when-get-notification
+- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.explore-how-to-fix-it
+- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.explore-smart-detection-notifications
+- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.improve-performance
+- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.understand-server-response-time-degradation
+- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.reduce-meaningless-non-actionable-alerts
+- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.examine-blameless-retrospective
+- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.develop-just-culture
+- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.knowledge-check
+- learn.wwl.manage-alerts-blameless-retrospectives-just-culture.summary
+badge:
+  uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.badge

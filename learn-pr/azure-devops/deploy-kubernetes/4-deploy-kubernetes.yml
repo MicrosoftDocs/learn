@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Deploy a multi-container solution to Kubernetes
   description: Extend the CI/CD pipeline to build and deploy a multi-container solution to Kubernetes.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

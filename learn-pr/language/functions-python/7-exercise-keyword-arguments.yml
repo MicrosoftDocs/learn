@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.functions-python.exercise-keyword-arguments
+title: Exercise - Work with keyword arguments
+metadata:
+  unitType: exercise
+  title: Exercise - Work with keyword arguments
+  description: Use keyword arguments to work with variable amounts of input. Identify variable names from function inputs to work with assigned values.
+  ms.date: 12/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+sandbox: true
+notebook: notebooks/7-exercise-keyword-arguments.ipynb

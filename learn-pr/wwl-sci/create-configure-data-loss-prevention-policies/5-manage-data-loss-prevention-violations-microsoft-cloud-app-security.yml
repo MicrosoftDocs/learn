@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-configure-data-loss-prevention-policies.manage-data-loss-prevention-violations
-title: Manage DLP violations in Microsoft Cloud App Security
+title: Manage data loss prevention violations in Microsoft Defender for Cloud Apps
 metadata:
-  title: Manage DLP violations in Microsoft Cloud App Security
-  description: "Manage DLP violations in Microsoft Cloud App Security"
-  ms.date: 03/08/2021
+  title: Manage data loss prevention violations in Microsoft Defender for Cloud Apps
+  description: "Manage data loss prevention violations in Microsoft Defender for Cloud Apps"
+  ms.date: 12/29/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-manage-data-loss-prevention-violations-microsoft-cloud-app-security.md)]

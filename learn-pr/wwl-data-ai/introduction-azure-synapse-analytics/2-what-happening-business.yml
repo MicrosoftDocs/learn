@@ -4,12 +4,13 @@ title: What is Azure Synapse Analytics
 metadata:
   title: What is Azure Synapse Analytics
   description: "What is Azure Synapse Analytics"
-  ms.date: 05/26/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-happening-business.md)]

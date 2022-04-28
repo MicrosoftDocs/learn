@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-configure-business-continuity-disaster-recovery-for-azure-stack-hub.back-up-storage-accounts
+title: Back up storage accounts on Azure Stack Hub
+metadata:
+  title: Back up storage accounts on Azure Stack Hub
+  description: "Back up storage accounts on Azure Stack Hub"
+  ms.date: 12/07/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-back-up-storage-accounts-azure-stack-hub.md)]

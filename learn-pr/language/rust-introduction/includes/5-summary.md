@@ -1,10 +1,10 @@
 In this module, you learned about the types of applications you can build by using the Rust programming language. Rust is useful for both low-level and high-level types of development. 
 
-You reviewed the Rust commands to work with your code. The `rustup` command is used to set up a development environment in Rust. The `rustc` command is used to write and compile Rust programs. 
+You reviewed the Rust commands to work with your code. The `rustc` command is used to write and compile Rust programs. 
 
-You discovered the Rust Cargo feature and learned about the module system for code organization. You use Cargo to start a new project template, and build and run it.
+You discovered the Rust Cargo feature and learned about the module system for code organization. You use Cargo to create a new project, and build and run it.
 
-You looked at the Rust playground environment and learned how to write, build, test, and run code in the IDE.
+You looked at the Rust playground environment and learned how to write, build, test, and run code.
 
 
 ## Try recipes in the Rust cookbook
@@ -15,12 +15,7 @@ The Rust Cookbook contains *recipes* for code that follows recommended practices
 ## References
 
 - [Rust `std` standard library](https://doc.rust-lang.org/std/?azure-portal=true)
-- [Rust `crates.io` I/O library](https://crates.io/?azure-portal=true)
-- [Rust `structopt` crate](https://crates.io/crates/structopt?azure-portal=true)
-- [Rust `chrono` crate](https://docs.rs/chrono/0.4.19/chrono/index.html?azure-portal=true)
-- [Rust `regex` crate](https://docs.rs/regex/1.5.4/regex/?azure-portal=true)
-- [Rust `serde` crate](https://serde.rs/?azure-portal=true)
+- [Rust `crates.io` library repository](https://crates.io/?azure-portal=true)
 - [Rust cookbook recipes](https://rust-lang-nursery.github.io/rust-cookbook/?azure-portal=true)
 - [Rust playground help](https://play.rust-lang.org/help?azure-portal=true)
-- [Lib.rs catalog of programs and libraries for Rust](https://lib.rs?azure-portal=true/)
-- [Stack overflow developer survey of 2020: Rust](https://insights.stackoverflow.com/survey?azure-portal=true)
+- [Stack overflow developer survey of 2021](https://insights.stackoverflow.com/survey?azure-portal=true)

@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-network-security-monitoring
 metadata:
   title: Design and implement network security
   description: "You will learn to design and implement network security solutions such as Azure DDoS, Azure Firewall, Network Security Groups, and Web Application Firewall."
-  ms.date: 07/16/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
   - You should have experience with network connectivity methods, such as VPN or WAN
   - You should have experience with the Azure portal and Azure PowerShell
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/6-design-and-implement-network-security-and-monitoring.svg
 levels:
 - intermediate
 roles:

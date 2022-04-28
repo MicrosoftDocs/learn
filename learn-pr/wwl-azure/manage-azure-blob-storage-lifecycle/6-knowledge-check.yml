@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-blob-storage-lifecycle.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which access tier is considered to be offline and can't be read or modified?"
+    choices:
+    - content: "Cool"
+      isCorrect: false
+      explanation: "That's incorrect. Blobs in the cool tier can be read and modified."
+    - content: "Archive"
+      isCorrect: true
+      explanation: "That's correct. Blobs in the archive tier must be rehydrated to either the hot or cool tears before it can be read or modified."
+    - content: "Hot"
+      isCorrect: false
+      explanation: "That's incorrect. Blobs in the hot tier can be read and modified."
+  - content: "Which of the following storage account types supports lifecycle policies?"
+    choices:
+    - content: "General Purpose v1"
+      isCorrect: false
+      explanation: "That's incorrect. General Purpose v1 accounts need to be upgraded to v2 before lifecycle policies are supported."
+    - content: "General Purpose v2"
+      isCorrect: true
+      explanation: "That's correct. Azure Blob storage lifecycle management offers a rich, rule-based policy for General Purpose v2 and Blob storage accounts."
+    - content: "FileStorage"
+      isCorrect: false
+      explanation: "That's incorrect. Lifecycle management is not supported on this account type."

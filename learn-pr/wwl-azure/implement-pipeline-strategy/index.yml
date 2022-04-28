@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.implement-pipeline-strategy
+metadata:
+  title: Implement a pipeline strategy
+  description: "Implement a pipeline strategy"
+  ms.date: 02/15/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement a pipeline strategy
+summary: This module describes pipeline strategies, configuring them, implementing multi-agent builds, and what source controls Azure Pipelines supports.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Define a build strategy
+  - Explain and configure demands
+  - Implement multi-agent builds
+  - Use different source control types available in Azure Pipelines
+prerequisites: ""
+iconUrl: /learn/achievements/5-implement-a-pipeline-strategy.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.implement-pipeline-strategy.introduction
+- learn.wwl.implement-pipeline-strategy.configure-agent-demands
+- learn.wwl.implement-pipeline-strategy.implement-multi-agent-builds
+- learn.wwl.implement-pipeline-strategy.explore-source-control-types-supported-by-azure-pipelines
+- learn.wwl.implement-pipeline-strategy.knowledge-check
+- learn.wwl.implement-pipeline-strategy.summary
+badge:
+  uid: learn.wwl.implement-pipeline-strategy.badge

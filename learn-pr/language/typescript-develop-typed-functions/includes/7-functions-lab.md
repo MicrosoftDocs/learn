@@ -43,15 +43,15 @@ Convert the functions to TypeScript with strongly typed parameters and return ty
    }
    ```
 
-1. Locate `TODO: Convert the sortDescending and sortAscending functions to anonymous functions`. 
+1. Locate `TODO: Convert the sortDescending and sortAscending functions to arrow functions`.
 1. Convert the `sortDescending` and `sortAscending` functions to anonymous functions and assign them to variables of the same name.
 
    ```typescript
    let sortDescending = (a, b) => {
       if (a > b) {
-          return -1;;
+          return -1;
       } else if (b > a) {
-          return 1;;
+          return 1;
       } else {
           return 0;
       }
@@ -80,9 +80,9 @@ Convert the functions to TypeScript with strongly typed parameters and return ty
    ```typescript
    let sortDescending: compareFunctionType = (a, b) => {
       if (a > b) {
-          return -1;;
+          return -1;
       } else if (b > a) {
-          return 1;;
+          return 1;
       } else {
           return 0;
       }

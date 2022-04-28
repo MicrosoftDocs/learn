@@ -5,8 +5,8 @@ metadata:
   title: Challenge
   description: Use what you learned in this module to solve a real life coding challenge.
   ms.date: 09/26/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

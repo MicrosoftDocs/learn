@@ -8,6 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Read in Moon rock data from a text file for exploration
 durationInMinutes: 7
 sandbox: true

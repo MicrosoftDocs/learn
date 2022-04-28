@@ -1,0 +1,16 @@
+parameters: 
+- name: environmentType
+  type: string
+  default: 'Test'
+
+steps:
+- script: |
+    echo Hello ${{parameters.environmentType}}!
+
+- ${{ if eq(parameters.environmentType, 'Production') }}:
+  - script: |
+      echo This step only runs for production deployments.
+
+- script: |
+    echo This step only runs for non-production deployments.
+  condition: ne('${{ parameters.environmentType }}', 'Production')

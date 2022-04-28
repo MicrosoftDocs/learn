@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.deploy-your-model-managed-endpoint
+title: Deploy your model to a managed endpoint
+metadata:
+  title: Deploy your model to a managed endpoint
+  description: "Deploy your model to a managed endpoint"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-deploy-model-managed-endpoint.md)]

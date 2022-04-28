@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-deployment-patterns.examine-classical-deployment-patterns
+title: Examine classical deployment patterns
+metadata:
+  title: Examine classical deployment patterns
+  description: "Examine classical deployment patterns"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-examine-classical-deployment-patterns.md)]

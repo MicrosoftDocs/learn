@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/19/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You are tasked with writing the shortest possible SQL query to select all items and include all fields from your container. Which of these queries is both valid and would accomplish this task?"
+    choices:
+    - content: "``SELECT FROM``"
+      isCorrect: false
+      explanation: "That's incorrect. This query is missing the data source and the specification for which fields should be returned."
+    - content: "``SELECT FROM p``"
+      isCorrect: false
+      explanation: "That's incorrect. This query is missing the specification for which fields should be returned."
+    - content: "``SELECT * FROM p``"
+      isCorrect: true
+      explanation: "That's correct. This query includes the data source and the specification for which fields should be returned."
+  - content: "Which SQL keyword is used to flatten your query results into an array of a specific field value for each item?"
+    choices:
+    - content: "``FROM``"
+      isCorrect: false
+      explanation: "That's incorrect. The ``FROM`` keyword specifies the data source."
+    - content: "``VALUE``"
+      isCorrect: true
+      explanation: "That's correct. The ``VALUE`` keyword specifies that the JSON value should be retrieved for each item instead of the complete object."
+    - content: "``DISTINCT``"
+      isCorrect: false
+      explanation: "That's incorrect. The ``DISTINCT`` keyword specifies that duplicates should be removed."
+  - content: "You have a container named products. What must the data source be named after the ``FROM`` keyword in the query?"
+    choices:
+    - content: "p"
+      isCorrect: false
+      explanation: "That's incorrect. The data source doesn't necessarily need to be named the same as the first letter of the container."
+    - content: "products"
+      isCorrect: false
+      explanation: "That's incorrect. The data source doesn't necessarily need to be named the same as the container."
+    - content: "Any of these"
+      isCorrect: true
+      explanation: "That's correct. The data source can have a unique name that's distinct from the container's name."

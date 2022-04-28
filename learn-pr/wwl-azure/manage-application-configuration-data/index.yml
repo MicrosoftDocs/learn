@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.manage-application-configuration-data
+metadata:
+  title: Manage application configuration data
+  description: "Manage application configuration data"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage application configuration data
+summary: This module explores ways to rethink application configuration data and the separation of concerns method. It helps you understand configuration patterns and how to integrate Azure Key Vault with Azure Pipelines.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Rethink application configuration data
+  *   Understand separation of concerns
+  *   Integrate Azure Key Vault with Azure Pipelines
+  *   Manage secrets, tokens and certificates
+prerequisites: |
+  None
+iconUrl: /learn/achievements/6-manage-application-configuration-data.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.manage-application-configuration-data.introduction
+- learn.wwl.manage-application-configuration-data.rethink-application-configuration-data
+- learn.wwl.manage-application-configuration-data.explore-separation-of-concerns
+- learn.wwl.manage-application-configuration-data.understand-external-configuration-store-patterns
+- learn.wwl.manage-application-configuration-data.integrate-azure-key-vault-azure-pipelines
+- learn.wwl.manage-application-configuration-data.manage-secrets-tokens-certificates
+- learn.wwl.manage-application-configuration-data.examine-devops-inner-outer-loop
+- learn.wwl.manage-application-configuration-data.knowledge-check
+- learn.wwl.manage-application-configuration-data.summary
+badge:
+  uid: learn.wwl.manage-application-configuration-data.badge

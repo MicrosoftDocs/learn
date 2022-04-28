@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-blob-storage.exercise-create-block-account
+title: 'Exercise: Create a block blob storage account'
+metadata:
+  title: 'Exercise: Create a block blob storage account'
+  description: "Exercise: Create a block blob storage account"
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-create-block-blob-storage-account.md)]

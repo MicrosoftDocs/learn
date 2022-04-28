@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-migrations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/20/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "What product would be best for the large data transfer requirement?"
+    choices:
+    - content: "Azure Import/Export service"
+      isCorrect: false
+      explanation: "Incorrect. The Azure Import/Export service requires you to provide your own disks and handle shipping."
+    - content: "Azure Data Box"
+      isCorrect: true
+      explanation: "Correct. For Azure Data Box, Microsoft provides the hardware appliance and handles the shipping."
+    - content: "Azure Migrate"
+      isCorrect: false
+      explanation: "Incorrect. Azure Migrate is an assessment and migration tool."
+  - content: "What product would be best for the migrating to new hardware requirements?"
+    choices:
+    - content: "Azure Storage Migration service"
+      isCorrect: true
+      explanation: "Correct. The Storage Migration service is used if you've one or more servers that you want to migrate to newer hardware or virtual machines. The product provides an inventory and then can rapidly transfer files."
+    - content: "Azure Migrate"
+      isCorrect: false
+      explanation: "Incorrect. Azure Migrate is an assessment and migration tool."
+    - content: "Azure File Sync"
+      isCorrect: false
+      explanation: "Incorrect. Azure File Sync is primarily a service that allows you to cache Azure file shares. These files shares can be on cloud or on-premises virtual machines."
+  - content: "What product would be best to estimate monthly costs before migrating?"
+    choices:
+    - content: "Azure Cost Management"
+      isCorrect: false
+      explanation: "Incorrect. Azure Cost Management helps monitor, optimize, and control your ongoing Azure costs."
+    - content: "Azure Advisor"
+      isCorrect: false
+      explanation: "Incorrect. Azure Advisor helps optimize your Azure resources for high availability, performance, and cost."
+    - content: "Azure TCO Calculator"
+      isCorrect: true
+      explanation: "Correct. The Azure TCO Calculator provides an estimate of monthly running costs in Azure, which enables a comparison with on-premises costs."
+  - content: "What product would be best to migrate the web apps to Azure?"
+    choices:
+    - content: "Azure App Service Migration Assistant"
+      isCorrect: true
+      explanation: "Correct. The Azure App Service Migration Assistant will help assess and migrate your web apps."
+    - content: "Azure Resource Mover"
+      isCorrect: false
+      explanation: "Incorrect. Azure Resource Mover migrates Azure resources from subscriptions, resource groups, or regions."
+    - content: "Data Migration Assistant"
+      isCorrect: false
+      explanation: "Incorrect. The Data Migration Assistant helps detects compatibility issues that can impact database functionality in a new version of SQL Server or Azure SQL Database."
+  - content: "What product would be best to migrate the on-premises SQL Server databases?"
+    choices:
+    - content: "Azure Resource Mover"
+      isCorrect: false
+      explanation: "Incorrect. Azure Resource Mover migrates Azure resources from subscriptions, resource groups, or regions."
+    - content: "Data Migration Assistant"
+      isCorrect: true
+      explanation: "Correct. The Data Migration Assistant helps detects compatibility issues that can impact database functionality in a new version of SQL Server or Azure SQL Database."
+    - content: "Azure Storage Migration service"
+      isCorrect: false
+      explanation: "Incorrect. The Storage Migration service is used if you've one or more servers that you want to migrate to newer hardware or virtual machines. The product provides an inventory and then can rapidly transfer files."

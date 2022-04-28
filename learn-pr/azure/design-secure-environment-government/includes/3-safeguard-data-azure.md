@@ -16,6 +16,6 @@ Some of the options available to customers to safeguard their data in Azure are 
 * Azure is a 24 x 7 globally operated service; however, support and troubleshooting rarely require access to customer data.
 * Customers who want added control for support and troubleshooting can use Customer Lockbox for Azure to approve or deny access to their data.
 * Microsoft will notify customers of any breach of customer or personal data within 72 hours of incident declaration.
-* Customers can monitor potential threats and respond to incidents on their own using Azure Security Center.
+* Customers can monitor potential threats and respond to incidents on their own using Microsoft Defender for Cloud.
 
 Now let’s look at a sample conceptual architecture that accounts for these various classification levels.

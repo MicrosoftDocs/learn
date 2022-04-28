@@ -1,13 +1,13 @@
-In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
+In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
 
-In this exercise, you'll use a `Try/Catch` block to ensure the script stops responding early if a certain condition isn't met. You'll again work with your backup script. 
+In this exercise, you'll use a `Try/Catch` block to ensure the script stops responding early if a certain condition isn't met. You'll again work with your backup script.
 
 Say you've noticed that you sometimes specify an erroneous path, which causes backup of files that shouldn't be backed up. You decide to add some error management.
 
 > [!NOTE]
 > Run the following commands *only* if you haven't completed any of the previous exercises in this module. We're assuming you've completed the previous exercises. If you haven't done so, you need a few files.
 
-1. If you haven't completed the previous exercises in this module, run the following commands:
+1. If you haven't completed the previous exercises in this module, run the following bash commands in a terminal:
 
     ```bash
     mkdir webapp
@@ -25,7 +25,7 @@ Say you've noticed that you sometimes specify an erroneous path, which causes ba
     code Backup.ps1
     ```
 
-    Now that you have an editor running, add the required code. Paste this code into the editor:
+    Now that you have an editor running, add the required code. Paste this code into the editor and save the file:
 
     ```powershell
     Param(
@@ -40,13 +40,13 @@ Say you've noticed that you sometimes specify an erroneous path, which causes ba
     
     $date = Get-Date -format "yyyy-MM-dd"
     
-    $DestinationFile = "$($DestinationPath + 'backup-')$date.zip"
+    $DestinationFile = "$($DestinationPath + 'backup-' + $date + '.zip')"
     If (-Not (Test-Path $DestinationFile)) 
     {
-       Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
-       Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
+      Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
+      Write-Host "Created backup at $($DestinationPath + 'backup-' + $date + '.zip')"
     } Else {
-       Write-Error "Today's backup already exists"
+      Write-Error "Today's backup already exists"
     }
     ```
 
@@ -68,10 +68,10 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
 
    You've added a _switch parameter_. If this parameter is present when the script is invoked, you perform the check on the content. After that, you can determine if a backup file should be created.
 
-1. Under the `Param` section, add this code:
+1. Under the `Param` section, add this code, then save the file:
 
    ```powershell
-    If ($PathIsWebApp -eq $True) {
+   If ($PathIsWebApp -eq $True) {
       Try 
       {
         $ContainsApplicationFiles = "$((Get-ChildItem $Path).Extension | Sort-Object -Unique)" -match  '\.js|\.html|\.css'
@@ -84,10 +84,10 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
       } Catch {
        Throw "No backup created due to: $($_.Exception.Message)"
       }
-     }
+   }
    ```
 
-   The preceding code first checks if the parameter `$PathIsWebApp` is provided at runtime. If it is, the code continues to get a list of file extensions from the directory specified by `$Path`. In our case, if you run that part of the code again on the _webapp_ directory, the following code will print a list if items:
+   The preceding code first checks if the parameter `$PathIsWebApp` is provided at runtime. If it is, the code continues to get a list of file extensions from the directory specified by `$Path`. In our case, if you run that part of the code on the _webapp_ directory, the following code will print a list of items:
 
    ```powershell
    (Get-ChildItem $Path).Extension | Sort-Object -Unique
@@ -96,8 +96,8 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
    Here's the output:
 
    ```output
-   .js
    .html
+   .js
    ```
 
    In the full statement, we're using the `-match` operator. The `-match` operator expects a regular expression pattern. In this case, the expression states "do any of the file extensions match `.html`, `.js`, or `.css`?" The result of the statement is saved to the variable `$ContainsApplicationFiles`.
@@ -111,6 +111,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
 
    > [!NOTE]
    > Before you run the script, make sure there are no .zip files present. They might have been created when you completed previous exercises in this module. Use `Remove-Item *zip` to remove them.
+
    ```powershell
    ./Backup.ps1 -PathIsWebApp -Path './webapp'
    ```
@@ -119,10 +120,10 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
 
    ```output
    Source files looks good, continuing
-   Created backup at ./backup-2021-01-21.zip
+   Created backup at ./backup-2021-12-30.zip
    ```
 
-1. Create a directory named _python-app_. In the new directory, create a file called _script.py_:
+1. Using your terminal, create a directory named _python-app_. In the new directory, create a file called _script.py_:
 
    ```bash
    mkdir python-app
@@ -142,7 +143,7 @@ Assume your company mostly builds web apps. These apps consist of HTML, CSS, and
    -| Backup.ps1
    ```
 
-1. Run the script again, but this time change the `-Path` value to point to `./python-app`:
+1. In the PowerShell shell, run the script again, but this time change the `-Path` value to point to `./python-app`:
 
    ```powershell
    ./Backup.ps1 -PathIsWebApp -Path './python-app'

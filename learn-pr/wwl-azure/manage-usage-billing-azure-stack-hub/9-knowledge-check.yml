@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-usage-billing-for-azure-stack-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An organization has Azure Stack Hub connected to the Internet. The Azure Stack Hub operator wants to enable multi-tenant billing. What should they do first?"
+    choices:
+    - content: "Email the registration subscription identification (ID), resource group name, and registration name to azstcsp@microsoft.com."
+      isCorrect: true
+      explanation: "Correct. They should email the registration subscription identification (ID), resource group name, and registration name to azstcsp@microsoft.com."
+    - content: "Use the Get By Billing Period to connect the Azure billing API to Azure Commerce."
+      isCorrect: false
+      explanation: "Incorrect. Use the price sheet for 'subscriptionId' and the billing period for Azure consumption reporting."
+    - content: "Run the Get-PSRepository -Name \"PSGallery\" cmdlet."
+      isCorrect: false
+      explanation: "Incorrect. The Get-PSRepository cmdlet retrieves PowerShell module repositories that are registered for the current user."
+  - content: "A Cloud Solution Provider (CSP) delivers Azure Stack Hub services to customers in a multi-tenant environment. The user subscriptions are linked to the Azure Cloud Solution Provider (CSP) subscriptions for billing. They need to view the usage of all customers for the final two weeks of last month. What should they do?"
+    choices:
+    - content: "Visit the Partner Center Dashboard for pricing and offers."
+      isCorrect: false
+      explanation: "Incorrect. The Partner Center Dashboard shows the latest Cloud Solution Provider (CSP) programs and offers."
+    - content: "Query the Azure Stack Hub usage application programming interface (API)."
+      isCorrect: true
+      explanation: "Correct. Query the Azure Stack Hub usage API using the 'Request' call reference. The request retrieves consumption details for the requested subscriptions and for the requested time frame."
+    - content: "Query the Partner Center REST application programming interface (API)."
+      isCorrect: false
+      explanation: "Incorrect. The Partner Center REST API integrates billing software with Microsoft systems to manage customer accounts. Details include placing orders, managing subscriptions, and handling support requests. However, it is not used for Azure Stack Hub."

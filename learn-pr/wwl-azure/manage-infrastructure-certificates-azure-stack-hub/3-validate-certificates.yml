@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.validate-certificates
+title: Validate certificates
+metadata:
+  title: Validate certificates
+  description: "Validate certificates"
+  ms.date: 02/28/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-validate-certificates.md)]

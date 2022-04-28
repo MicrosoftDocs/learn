@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security.microsoft-defender-antivirus-for-session-hosts
+title: Microsoft Defender Antivirus for session hosts
+metadata:
+  title: Microsoft Defender Antivirus for session hosts
+  description: "Microsoft Defender Antivirus for session hosts"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-microsoft-defender-antivirus-for-session-hosts.md)]

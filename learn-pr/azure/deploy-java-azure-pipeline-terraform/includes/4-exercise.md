@@ -149,7 +149,7 @@ In the Azure CLI, create a service principal by running the following command:
 > Replace *\<yourServicePrincipalName>* with the service principal name you want to use.
 
 ```azurecli
-az ad sp create-for-rbac --name "<yourServicePrincipalName>" --role contributor --sdk-auth
+az ad sp create-for-rbac --name "<yourServicePrincipalName>" --role contributor --scopes /subscriptions/<subscriptionId> --sdk-auth
 ```
 
 The preceding command returns the following JSON. Copy it for use in the next step:

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.exercise-set-up-environment
+title: Exercise - Set up your environment
+metadata:
+  unitType: exercise
+  title: Exercise - Set up your environment
+  description: In this exercise, you configure your environment to deploy applications and databases in your Bicep deployment pipeline.
+  ms.date: 10/10/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-exercise-set-up-environment.md)]

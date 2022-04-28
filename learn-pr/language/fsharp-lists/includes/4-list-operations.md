@@ -1,42 +1,43 @@
-When you store many items in a list, you will want to carry out operations on either the whole or part of the list. The list module, contains many useful operations that let you do just that.
+When you store many items in a list, you'll often carry out operations on either part or all of the list. The list module contains many useful operations that let you do just that.
 
 ## List module functions
 
-Except for properties, there's also a List module, a module full of functions that operates on a list, capable of performing commonly used operations like finding, filtering, sorting, mathematical operations and more.
+Besides properties, there's a list module, which is full of functions that operate on a list. The functions can perform commonly used operations, such as finding, filtering, sorting, carrying out mathematical operations, and more.
 
 ### Iteration
 
-To iterate, means you go through each element in a list from a starting point to an end point. For iteration there are two especially interesting functions:
+To iterate means to go through each element in a list, from a starting point to an end point. For iteration, there are two especially interesting functions:
 
-- `iter()`, lets you iterate over each item in a list:
+- `iter()`: This function lets you iterate over each item in a list, as shown here:
 
     ```fsharp
     let cards = [ 1 .. 5 ]
     List.iter(fun i -> printfn "%i" i) cards // 1 2 3 4 5
     ```
 
-    The `iter()` function takes a function, above you are providing an anonymous function using the `fun` keyword. The function takes a parameter that represents the current item as it's being iterated through. This code is the equivalent of writing the following code with a loop:
+    The `iter()` function takes a function. In the preceding code, you're providing an anonymous function by using the `fun` keyword. This function takes a parameter that represents the current item as it's being iterated through. The following code is the equivalent of writing the following code with a loop:
 
     ```fsharp
     for i in cards do printfn "%i" i
     ```
 
-- `map()`, is similar to `iter()` but with this function you are interested in transforming what you have. Here's an example:
+- `map()`: This function is similar to `iter()`, but it lets you transform what you have. Here's an example:
 
    ```fsharp
-   type Person = { FirstName: string, LastName= string  }
+   type Person = { FirstName: string; LastName: string  }
    let people = [
-     { FirstName="Albert"; LastName="Einstein" }
+     { FirstName="Albert"; LastName= "Einstein" }
      { FirstName="Marie"; LastName="Curie" }
    ]
-   let nobelPrizeWinners = people.map(fun person -> person.FirstName + person.LastName) // "Albert Einstein", "Marie Curie"
+   let nobelPrizeWinners = List.map (fun person -> person.FirstName + person.LastName) people 
+   printfn "%A" nobelPrizeWinners // ["Albert Einstein"; "Marie Curie"]
    ```
 
-   In the above code, the list of `Person` objects is transformed to a list of strings.
+   In the preceding code, the list of `Person` objects is transformed into a list of strings.
 
 ### Filter
 
-The function `filter()` also takes a function as parameter but its goal is to define what elements to keep. If the expression evaluates to `true`, the element is kept, if `false` then it won't be part of the filtered list. In the below example a list is filtered to only keep the items who's value is dividable by 2:
+The `filter()` function also takes a function as a parameter, but its purpose is to define what elements to keep. If the expression evaluates to `true`, the element is kept. If the expression is `false`, the element won't be part of the filtered list. In the following example, a list is filtered to keep only items whose value is divisible by two:
 
 ```fsharp
 let cards = [ 1 .. 5 ]
@@ -44,11 +45,11 @@ let filteredList = List.filter(fun i-> i % 2 = 0) cards
 List.iter(fun i -> printfn "item %i" i) filteredList // item 2 item 4
 ```
 
-The list `filteredList` now only contains the elements that returned `true` when being evaluated by `i % 2 = 0`, which is 2 and 4.
+The `filteredList` list now contains only the elements that return `true` when they're evaluated by `i % 2 = 0`, which is 2 and 4.
 
 ### Sort
 
-A thing you are likely to do is, sort. Here's three functions you might find useful, that sorts lists:
+Sorting lists is something you're likely to do often. Here are three functions that you might find useful when you sort lists:
 
 - `sort()`, sorts in ascending order. Here's an example:
 
@@ -57,14 +58,14 @@ A thing you are likely to do is, sort. Here's three functions you might find use
    let sortedList = List.sort list // 1 2 3 5 
    ```
 
-- `sortBy()`, the idea is to point out a key to sort by. Let's say you have a list of people and each people record has the fields `name` and `age`, then you can point out to sort by `age` for example. This function takes a function where you point out the key. Another key could be the length of a string like in this example:
+- `sortBy()`: With this function, the idea is to point out a key to sort by. Let's say you have a list of people, and each record has the fields `name` and `age`. You can then point out to sort by `age`, for example. This function takes a function where you point out the key. Another key could be the length of a string, as in this example:
 
    ```fsharp
-   let fruits = ["Banana", "Apple", "Pineapple"]
-   let sortedFruits = List.sortBy(fun fruit -> fruit.Length) // Apple, Banana, Pineapple
+   let fruits = ["Banana"; "Apple"; "Pineapple"]
+   let sortedFruits = List.sortBy (fun (fruit : string) -> fruit.Length) fruits // Apple, Banana, Pineapple
    ```
 
-- `sortWith()`. The idea with this sort is that you provide a comparator function as it might be a bit complicated, at first look to say which item should be sorted before which other item. Here's an example code:
+- `sortWith()`: With this function, you can provide a comparator function, because it might not be apparent at first which of several items should be sorted before any other item. Here's some example code:
 
    ```fsharp
    // assume a type like so
@@ -74,47 +75,48 @@ A thing you are likely to do is, sort. Here's three functions you might find use
      { Name="Orc"; Level=1; Attack=5 }
      { Name="Demon"; Level=2; Attack=10 } 
    ]
+
    // comparison function, -1 = less than, 1 = larger than, 0 = equal
-   let compareCreatures = c1 c2
+   let compareCreatures c1 c2 =
        if c1.Level < c2.Level then -1
        else if c1.Level > c2.Level then 1
        else if c1.Attack < c2.Attack then -1
        else if c1.Attack > c2.Attack then 1
        else 0
 
-   let sorted = List.sortWidth compareCreatures creatures // { Name="Orc"; Level=1; Attack=5 }, { Name="Demon"; Level=2; Attack=10 }, { Name="Dragon"; Level=2; Attack=20 }
+   let sorted = List.sortWith compareCreatures creatures // { Name="Orc"; Level=1; Attack=5 }, { Name="Demon"; Level=2; Attack=10 }, { Name="Dragon"; Level=2; Attack=20 }
    ```
 
-   The above comparison function `compareCreatures()` tries to first compare by `Level`, if that's equal, it tries to compare by `Attack`. Returning `-1` means something is considered smaller, `1` that it's larger and `0` that it's equal.
+   The preceding comparison function `compareCreatures()` first tries to compare by `Level`. If the level is equal, it tries to compare by using `Attack`. It returns `-1` if something is considered smaller, `1` if it's larger, and `0` if it's equal.
 
 ### Search
 
-Another thing you might want to do is to find a specific element. There are a few different functions to choose from namely:
+Another thing you might want to do is to find a specific element. To do so, you can choose from the following functions:
 
-- `find()`, it finds the first element that matches a condition. To use `find()`, you need to provide it function (predicate) that expresses how to find the item. Here's an example:
+- `find()`: This function finds the first element that matches a certain condition. To use `find()`, you need to provide a function (predicate) that expresses how to find the item. Here's an example:
 
    ```fsharp
-   let list = [1;2;3;4]
-   List.find( fun x -> x % 2 = 0) list 
+   let list = [1; 2; 3; 4]
+   let found = List.find( fun x -> x % 2 = 0) list // 2 - Only the first element that matches the condition is returned.
    ```
 
-- `tryFind()`, this function takes a function (predicate), that tells how to find the value and list to look into. It returns an option. Here's how you can use it:
+- `tryFind()`. This function takes a function (predicate) that tells how to find the value and a list to look into. It returns an option. Here's how you can use it:
 
    ```fsharp
    let findValue aValue aList =
-       let found= aList |> List.tryFind(fun item -> item = aValue)
+       let found = aList |> List.tryFind(fun item -> item = aValue)
            
        match found with
        | Some value -> printfn "%i" value
-       |  None -> printfn "Not found"
+       | None -> printfn "Not found"
 
    findValue 1 list // 1
    findValue 5 list // Not found
    ```
 
-   In the above code, we send in a value to compare to our list. If found, it returns `Some`, if not found, then it's a `None`.
+   In the preceding code, you send in a value to compare to your list. If it's found, it returns `Some`. If it isn't found, it returns `None`.
 
-- `tryFindIndex()`, just like `tryFind()`, it returns an option and it takes a function (predicate) that evaluates to a boolean. Here's what using it might look like:
+- `tryFindIndex()`. Like `tryFind()`, this function returns an option, and it takes a function (predicate) that evaluates to a Boolean. Here's what the code might look like:
 
    ```fsharp
    let found = List.tryFindIndex(fun x -> x = 4) list
@@ -125,15 +127,15 @@ Another thing you might want to do is to find a specific element. There are a fe
 
 ### Arithmetic operations
 
-Being able to carry out mathematical operations on a list can be valuable. There are many functions to choose from in the List module API but there are three useful ones in `sum()`, `average()`, and, `sumBy()`. Here's how they work:
+Carrying out mathematical operations on a list can be valuable. Among many functions to choose from in the List API, here are the three most useful ones:
 
-- `sum()`, using this function you iterate over each item sum thing up. Here's how you can use it:
+- `sum()`: By using this function, you iterate over each item to sum all values in the list. Here's how you can use it:
 
    ```fsharp
-   let sum - List.sum [1 .. 5] // sum = 15 
+   let sum = List.sum [1 .. 5] // sum = 15 
    ```
 
-- `sumBy()`. The idea with `sumBy()` function is to point out how to sum something. A way to do so is by pointing out the fields to sum by like in the below example:
+- `sumBy()`: With this function, the idea is to point out how to sum the values. One way to do so is to point out which fields to sum, as in the following example:
 
    ```fsharp
    type OrderItem = { Name: string; Cost:int }
@@ -148,9 +150,13 @@ Being able to carry out mathematical operations on a list can be valuable. There
    printfn "%i" sum // 517
    ```
 
-   In the above code, the `Cost` field is pointed out and each item adds to the total.
+   In the preceding code, the `Cost` field is pointed out, and each item in that field adds to the total.
 
-- `average()`. The `average()` function is similar to `sum()` in that it operates on a list of numbers. There are two differences however, the function expects the data to be floating point numbers, not integers, also it calculates an average rather than a sum. Here's an example:
+- `average()`: This function is similar to `sum()` in that it operates on a list of numbers, but with two differences:  
+  - It expects the data to be floating point numbers, not integers.
+  - It calculates an average rather than a sum.
+
+   Here's an example:
 
    ```fsharp
    let numbers = [ 1.0; 2.5; 3.0 ]
@@ -158,7 +164,7 @@ Being able to carry out mathematical operations on a list can be valuable. There
    printfn "%f" avg // 2.166667
    ```
 
-- `averageBy()`, just like `sumBy()` it takes a function where you specify what value you want. Here's an example:
+- `averageBy()`: Like `sumBy()`, `averageBy()` takes a function where you specify what value you want. Here's an example:
 
    ```fsharp
    type WeatherMeasurement = { Date: string; Temperature: float }
@@ -169,5 +175,5 @@ Being able to carry out mathematical operations on a list can be valuable. There
    ]
     
    let avgBy = List.averageBy(fun m -> m.Temperature) measurements
-   printfn "%f" avgBy
+   printfn "%f" avgBy // 21.733333
    ```

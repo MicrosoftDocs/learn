@@ -237,7 +237,7 @@ Identify the subtasks of *Application and package management using Helm*
 
     The manual management of many YAML files introduces unnecessary risk when teams want to target efficient deployment, operation, and maintenance of Kubernetes application releases.
 
-    - Revert .NET Core SDK changes
+    - Revert .NET SDK changes
 
     - Reset Azure Cloud Shell
 

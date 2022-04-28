@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.tensorflow.tensorflow-fundamentals
+title: TensorFlow fundamentals
+summary: Learn the fundamentals of deep learning with TensorFlow! This beginner friendly learning path will introduce key concepts to building machine learning models. 
+metadata:
+  title: TensorFlow fundamentals
+  description: Learn the fundamentals of deep learning with TensorFlow! This beginner friendly learning path will introduce key concepts to building machine learning models.
+  ms.date: 04/09/2021
+  author: cassiebreviu
+  ms.author: cassieb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - cassieb-08202021
+prerequisites: |
+  - Basic Python knowledge
+  - Basic knowledge about how to use Jupyter Notebooks
+  - Basic understanding of machine learning
+iconUrl: /learn/achievements/tensor-intro-trophy.svg
+levels:
+- beginner
+- intermediate
+roles:
+- data-scientist
+- developer
+- student
+products: 
+- azure-machine-learning
+modules:
+- learn.tensorflow.intro-machine-learning-keras
+- learn.tensorflow.intro-computer-vision
+- learn.tensorflow.intro-natural-language-processing
+- learn.tensorflow.intro-audio-classification-tensorflow
+- learn.tensorflow.intro-machine-learning-tensorflow
+trophy:
+  uid: learn.tensorflow.tensorflow-fundamentals.trophy

@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.use-docker-container-dev-env-vs-code.10-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: A set of questions to check the knowledge you've gained through this Learn module about Remote - Containers in Visual Studio Code.
+  ms.date: 04/07/2022
+  author: bamurtaugh
+  ms.author: brmurtau
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vs-code
+  ms.custom: devdivchpfy22
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "After you've added a dev container configuration to a project, how do you open that project in the container?"
+      choices:
+        - content: "The project automatically opens in the container."
+          isCorrect: false
+          explanation: "Although Visual Studio Code might notify you that it _can_ open the project in a dev container, it won't open in the container by default."
+        - content: "Select **Add Development Configuration Files** from the Command Palette."
+          isCorrect: false
+          explanation: "This command will add a dev container configuration. There's already a container definition present according to the question."
+        - content: "Use the **Reopen in Container** option in Visual Studio Code."
+          isCorrect: true
+          explanation: "The **Reopen in Container** option, from either the Visual Studio Code notification or the Command Palette, will load the project in the dev container."
+        - content: "Start the project from the terminal."
+          isCorrect: false
+          explanation: "Starting the project won't automatically start the container."
+    - content: "How do you run additional commands after the dev container has been created?"
+      choices:
+        - content: "Use the postCreateCommand property in the devcontainer.json"
+          isCorrect: true
+          explanation: "The postCreatecommand is for any command that you want to have run immediately after the container is created."
+        - content: "Use the post-install hook in the devcontainer.json"
+          isCorrect: false
+          explanation: "There's no postCreate install hook in the devcontainer.json"
+        - content: "Specify the command in the Dockerfile"
+          isCorrect: false
+          explanation: "While you can run additional commands in the Dockerfile, the preferred way is to use the devcontainer.json file."
+        - content: "Pass the postCreate flag to the build command."
+          isCorrect: false
+          explanation: "The recommended way to execute post create commands is with the devcontainer.json file."
+    - content: "How would you install additional software in a container so that it's saved as part of the configuration?"
+      choices:
+        - content: "Use an `apt-get` command in the devcontainer.json file's `postSetupCommand` option."
+          isCorrect: false
+          explanation: "The devcontainer.json file is primarily for project-specific configuration, and not the place to run commands like `apt-get`."
+        - content: "Use the `apt-get` command in the Dockerfile's `postSetupCommand` option."
+          isCorrect: false
+          explanation: "The `postSetupCommand` option is available only in the devcontainer.json file."
+        - content: "Install the software after the container loads via the terminal."
+          isCorrect: false
+          explanation: "Although it will work, it will be isolated to your container and not saved with the project configuration."
+        - content: "Add a `RUN apt-get` command in the Dockerfile."
+          isCorrect: true
+          explanation: "The Dockerfile is the right place to install additional software. Using the Dockerfile `RUN` command allows you to use the `apt-get` package manager."

@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 07/20/2021
+  ms.date: 08/30/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
@@ -17,9 +17,6 @@ quiz:
   questions:
   - content: You want to modify the pipeline YAML file so that it follows best practices. What should you do?
     choices:
-    - content: Update the step's `scriptType` to `pscore`.
-      isCorrect: false
-      explanation: Incorrect. You don't need to change the script language for the pipeline step.
     - content: Update the pipeline's `pool` to use a Windows agent pool.
       isCorrect: false
       explanation: Incorrect. You don't need to change the operating system for your pipeline's agent pool.
@@ -31,34 +28,34 @@ quiz:
       explanation: Incorrect. When you have a single job in the pipeline, you can safely omit the `job` declaration.
   - content: Which of these situations will trigger the R&D team's pipeline to run?
     choices:
-    - content: Someone commits an update to the _README.md_ file in the _templates_ directory on the **main** branch.
+    - content: Someone commits an update to the *README.md* file in the *templates* directory in the *main* branch.
       isCorrect: false
-      explanation: Incorrect. The _templates/README.md_ file is excluded by a path filter.
+      explanation: Incorrect. The *templates/README.md* file is excluded by a path filter.
     - content: Someone commits an update to any file anywhere in the repository, and pushes the update to a branch with a name starting with **releases/**.
       isCorrect: false
       explanation: Incorrect. Changes to the _templates/README.md_ file won't trigger the pipeline, because that filename is excluded by a path filter.
-    - content: Someone commits an update to the _template.bicep_ file in the _templates_ directory, and pushes the update to a branch with a name starting with **releases/**.
+    - content: Someone commits an update to the *template.bicep* file in the *templates* directory and pushes the update to a branch with a name that starts with *releases/*.
       isCorrect: true
-      explanation: Correct. The _templates/template.bicep_ file matches the `include` path filter, and doesn't match the `exclude` path filter. Additionally, any branch name that starts with **releases/** is included in the branch trigger.
+      explanation: Correct. The *templates/template.bicep* file matches the `include` path filter, and it doesn't match the `exclude` path filter. Also, any branch name that starts with *releases/* is included in the branch trigger.
   - content: Which of the following statements is true?
     choices:
-    - content: Before running your pipeline with a Microsoft-hosted agent, you need to make sure the agent has started. After it's done, you need to shut down the agent so that it doesn't use up any resources unnecessarily.
+    - content: Before you run your pipeline with a Microsoft-hosted agent, you need to make sure the agent has started. When the pipeline run is finished, you need to shut down the agent so that it doesn't use up any resources unnecessarily.
       isCorrect: false
-      explanation: Incorrect. You don't need to start or stop Microsoft-hosted agents. Azure Pipelines manages them for you.
-    - content: Microsoft-hosted agents contain all of the software necessary to deploy Bicep files.
+      explanation: Incorrect. You don't need to start or stop Microsoft-hosted agents. Azure Pipelines manages the agents for you.
+    - content: Microsoft-hosted agents contain all the software that's needed to deploy Bicep files.
       isCorrect: true
-      explanation: Correct. Microsoft-hosted agents include a set of predefined software, including Bicep.
-    - content: After your pipeline has finished running, you can sign in to the Microsoft-hosted agent machine to check the logs of the pipeline run.
+      explanation: Correct. Microsoft-hosted agents include a set of predefined software, and it includes Bicep.
+    - content: When your pipeline is finished running, you can sign in to the Microsoft-hosted agent machine to check the logs of the pipeline run.
       isCorrect: false
-      explanation: Incorrect. Microsoft-hosted agents only exist during the lifetime of your pipeline run. After the pipeline completes, the agent is destroyed and not used anymore. If you want to see the logs of your run, you should do so in the Azure Pipelines web interface.
-  - content: You have a Bicep file that deploys a new App Service plan and app to a resource group in Azure. Which of the following tasks could you use to deploy the Bicep file?
+      explanation: Incorrect. Microsoft-hosted agents exist only during the lifetime of your pipeline run. When the pipeline is finished, the agent is no longer available and can't be accessed. If you want to see the logs of your pipeline run, use the Azure Pipelines web interface.
+  - content: You have a Bicep file that deploys a new App Service plan and an app to a resource group in Azure. Which of the following tasks can you use to deploy the Bicep file?
     choices:
-    - content: The _Azure Web App_ task.
+    - content: The *Azure Web App* task.
       isCorrect: false
-      explanation: Incorrect. The _Azure Web App_ task deploys application code to an already-deployed web application. It doesn't deploy the App Service resources.
-    - content: The _Copy Files_ task.
+      explanation: Incorrect. The *Azure Web App* task deploys application code to a web application that's already deployed. It doesn't deploy the App Service resources.
+    - content: The *Copy Files* task.
       isCorrect: false
-      explanation: Incorrect. The _Copy Files_ task doesn't perform any deployments  to Azure.
-    - content: The _Azure CLI_ task.
+      explanation: Incorrect. The *Copy Files* task doesn't perform any deployments  to Azure.
+    - content: The *Azure CLI* task.
       isCorrect: true
-      explanation: Correct. The _Azure CLI_ task can be used to execute a deployment by using the `az deployment group create` command.
+      explanation: Correct. You can use the *Azure CLI* task to execute a deployment by running the `az deployment group create` command.

@@ -4,10 +4,11 @@ metadata:
   title: Exercise - Determine the accuracy of a neural network in classifying space rocks
   description: Learn how to determine accuracy in an AI model, and then run code to find the accuracy of your AI model.
   ms.date: 04/28/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Determine the accuracy of a neural network in classifying space rocks
 durationInMinutes: 4
 content: |

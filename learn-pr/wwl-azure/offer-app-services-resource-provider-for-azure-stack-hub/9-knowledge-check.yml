@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.offer-app-services-resource-provider-for-azure-stack-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An organization has deployed Azure Stack Hub disconnected from the Internet. The deployment includes Azure App Service. They want to be prepared for increases in App Service workloads. Which option should they choose?"
+    choices:
+    - content: "From the administrator portal, they should increase workers in the App Service."
+      isCorrect: true
+      explanation: "Correct. Azure App Service on Azure Stack Hub supports free and shared worker tiers by default."
+    - content: "Decrease user subscription quotas."
+      isCorrect: false
+      explanation: "Incorrect. Use pre-configured quotas to manage cloud capacity. Decreasing user subscription quotas will not ensure that the App Service can support the increased workloads."
+    - content: "Add another scale unit node."
+      isCorrect: false
+      explanation: "Incorrect. Increasing the capacity of a scale unit is achieved by adding another physical computer."
+  - content: "How should an Azure Stack Hub operator monitor secrets running on Azure App Service?"
+    choices:
+    - content: "Key Vault."
+      isCorrect: false
+      explanation: "Incorrect. Azure Key Vault stores credentials."
+    - content: "Regular monitoring from the Azure Stack Hub administrator portal."
+      isCorrect: true
+      explanation: "Correct. Azure Stack Hub operators monitor secrets using the Azure App Service in the Azure Stack Hub portal."
+    - content: "Azure Monitor."
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitor maximizes the availability of applications and services."

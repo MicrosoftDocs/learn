@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-stack-hub-powershell.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What tool allows an Azure Stack Hub administrator to deploy, manage, and monitor Azure Stack Hub resources?"
+    choices:
+    - content: "Azure Stack Hub Resource Manager"
+      isCorrect: true
+      explanation: "Correct. The Azure Stack Hub Resource Manager allows you to deploy, manage, and monitor Azure Stack Hub resources."
+    - content: "GitHub Actions"
+      isCorrect: false
+      explanation: "Incorrect. You use GitHub Actions to sign in to your Azure Stack Hub instance, run PowerShell, and Azure CLI scripts."
+    - content: "Azure Synapse Analytics"
+      isCorrect: false
+      explanation: "Incorrect. Azure Synapse Analytics is an analytics service that brings together data integration, enterprise data warehousing, and big data analytics."
+  - content: "Which GitHub repository contains scripts and cmdlets for Azure Stack?"
+    choices:
+    - content: "AzureStack-Tools"
+      isCorrect: true
+      explanation: "Correct. AzureStack-Tools hosts PowerShell modules for managing and deploying resources to Azure Stack Hub."
+    - content: "Azure-powershell"
+      isCorrect: false
+      explanation: "Incorrect. The azure-powershell GitHub repository contains PowerShell cmdlets for developers to develop, deploy, and manage Microsoft Azure applications."
+    - content: "Azure-cli"
+      isCorrect: false
+      explanation: "Incorrect. Azure-cli hosts guidance for a CLI multi-platform command line experience for Azure."

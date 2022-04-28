@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/11/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which deployment option offers the best compatibility when migrating an existing SQL Server on-premises solution?"
+    choices:
+    - content: "Azure SQL Database (single database)"
+      isCorrect: false
+      explanation: "Incorrect. Azure SQL Database supports many of the core database features of SQL Server, but some features are not supported."
+    - content: "Azure SQL Database (elastic pool)"
+      isCorrect: false
+      explanation: "Incorrect. Azure SQL Database supports many of the core database features of SQL Server, but some features are not supported."
+    - content: "Azure SQL Managed Instance"
+      isCorrect: true
+      explanation: "Correct. Azure SQL Managed Instance offers near 100% compatibility with SQL Server."
+  - content: "Which of the following statements is true about Azure SQL Database?"
+    choices:
+    - content: "Most database maintenance tasks are automated"
+      isCorrect: true
+      explanation: "Correct. Azure SQL Database automates most maintenance tasks."
+    - content: "You must purchase a SQL Server license"
+      isCorrect: false
+      explanation: "Incorrect. You do not need a SQL Server license to use Azure SQL Database - you pay by usage."
+    - content: "It can only support one database"
+      isCorrect: false
+      explanation: "Incorrect. You can use an elastic pool to support multiple databases."
+  - content: "Which database service is the simplest option for migrating a LAMP application to Azure?"
+    choices:
+    - content: "Azure SQL Managed Instance"
+      isCorrect: false
+      explanation: "Incorrect. LAMP standard for Linux, Apache, MySQL, and PHP."
+    - content: "Azure Database for MySQL"
+      isCorrect: true
+      explanation: "Correct. LAMP standard for Linux, Apache, MySQL, and PHP."
+    - content: "Azure Database for PostgreSQL"
+      isCorrect: false
+      explanation: "Incorrect. That's incorrect. LAMP standard for Linux, Apache, MySQL, and PHP."

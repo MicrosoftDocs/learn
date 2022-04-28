@@ -3,11 +3,12 @@ uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power
 metadata:
   title: Virtualize computing power
   description: Carnegie Mellon University's Cloud Developer course. Learn about how computing power is virtualized using virtual CPUs. Covers different types of CPU virtualization.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Virtualize computing power
 summary: Learn about how computing power is virtualized to create cloud resources. Covers different types of CPU virtualization.
 abstract: | 
@@ -38,6 +39,7 @@ prerequisites: |
   - Be familiar with the concept of virtualization
   - Know what the different types of virtualization are
 iconUrl: /learn/achievements/cmu-cloud-developer/virtualize-computing-power.svg
+hidden: true
 levels:
 - beginner
 roles:

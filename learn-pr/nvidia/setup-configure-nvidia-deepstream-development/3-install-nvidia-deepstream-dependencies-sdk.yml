@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.setup-configure-nvidia-deepstream-development.3-install-nvidia-deepstream-dependencies-sdk
+title: Exercise - Install the NVIDIA DeepStream dependencies and SDK
+metadata:
+  title: Exercise - Install the NVIDIA DeepStream dependencies and SDK
+  description: Exercise - Install the NVIDIA DeepStream dependencies and SDK.
+  author: toolboc
+  ms.author: chnoring
+  ms.date: 11/09/2021
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-install-nvidia-deepstream-dependencies-sdk.md)]

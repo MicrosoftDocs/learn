@@ -4,8 +4,8 @@ metadata:
   title: Instrument server-side web application code with Application Insights
   description: Get full information and custom telemetry about a web app in Application Insights by installing the Application Insights SDK.
   ms.date: 02/27/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Instrument server-side web application code with Application Insights

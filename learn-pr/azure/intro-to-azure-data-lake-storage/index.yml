@@ -2,12 +2,12 @@
 uid: learn.intro-to-azure-data-lake-storage
 metadata:
   ms.prod: learning-azure
-  moduleType: introduction        
-  title: Introduction to Azure Data Lake Storage          
-  description: "Evaluate whether Azure Data Lake Storage is appropriate for capturing your organization's structured and unstructured data."     
+  moduleType: introduction
+  title: Introduction to Azure Data Lake Storage
+  description: "Evaluate whether Azure Data Lake Storage is appropriate for capturing your organization's structured and unstructured data."
   ms.date: 06/17/2021
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
 title: Introduction to Azure Data Lake Storage
 summary: "Describe how unlimited storage, universal data support, and high-performance throughput enable Azure Data Lake Storage to manage big data workloads. Determine which types of big data projects can benefit from Azure Data Lake Storage."

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-monitor-event-logs.describe-windows-server
+title: Describe Windows Server event logs
+metadata:
+  title: Describe Windows Server event logs
+  description: "Describe Windows Server event logs"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-describe-windows-server-event-logs.md)]

@@ -1,3 +1,5 @@
+[!include[](../../includes/dotnet-maui-note.md)]
+
 Today, users expect devices to always be connected and have access to data. They use their devices for everything from checking the temperature of their home while they're on vacation to getting live updates for the arrival of a taxi or flight.
 
 Users need their data to be relevant, detailed, and readily available across multiple devices. And they're not used for just work. People use smart devices in many aspects of their lives. That's why the applications that run on these devices need to work everywhere - across devices, network types, and country borders.

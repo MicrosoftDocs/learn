@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.work-dataframes-azure-databricks
+metadata:
+  title: Work with DataFrames in Azure Databricks
+  description: "Work with DataFrames in Azure Databricks"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with DataFrames in Azure Databricks
+summary: Your data processing in Azure Databricks is accomplished by defining DataFrames to read and process the Data. Learn how to perform data transformations in DataFrames and execute actions to display the transformed data.
+abstract: |
+  In this module, you will:
+  - Use the count() method to count rows in a DataFrame
+  - Use the display() function to display a DataFrame in the Notebook
+  - Cache a DataFrame for quicker operations if the data is needed a second time
+  - Use the limit function to display a small set of rows from a larger DataFrame
+  - Use select() to select a subset of columns from a DataFrame
+  - Use distinct() and dropDuplicates to remove duplicate data
+  - Use drop() to remove columns from a DataFrame
+prerequisites: |
+  None
+iconUrl: /learn/achievements/work-dataframes-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.work-dataframes-azure-databricks.introduction
+- learn.wwl.work-dataframes-azure-databricks.describe-dataframe
+- learn.wwl.work-dataframes-azure-databricks.use-common-dataframe-methods
+- learn.wwl.work-dataframes-azure-databricks.use-display-function
+- learn.wwl.work-dataframes-azure-databricks.exercise-distinct-articles
+- learn.wwl.work-dataframes-azure-databricks.knowledge-check
+- learn.wwl.work-dataframes-azure-databricks.summary
+badge:
+  uid: learn.wwl.work-dataframes-azure-databricks.badge

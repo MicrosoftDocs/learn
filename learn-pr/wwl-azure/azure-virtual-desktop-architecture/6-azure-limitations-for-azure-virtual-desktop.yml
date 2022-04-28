@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-virtual-desktop-architecture.azure-limitations-for
+title: Azure limitations for Azure Virtual Desktop
+metadata:
+  title: Azure limitations for Azure Virtual Desktop
+  description: "Azure limitations for Azure Virtual Desktop"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-azure-limitations-for-azure-virtual-desktop.md)]

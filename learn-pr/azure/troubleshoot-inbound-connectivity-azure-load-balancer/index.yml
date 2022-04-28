@@ -4,8 +4,8 @@ metadata:
   title: Troubleshoot inbound network connectivity for Azure Load Balancer
   description: Learn how to troubleshoot inbound network connectivity for Azure Load Balancer.
   ms.date: 03/23/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: asudbring
+  ms.author: allensu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Troubleshoot inbound network connectivity for Azure Load Balancer

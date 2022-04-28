@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.give-receive-effective-feedback.provide-receive-wise-feedback
+title: Give and receive wise feedback
+metadata:
+  title: Give and receive wise feedback
+  description: This unit explores how to give feedback in the context of code reviews. It shows a process and some guidelines for conducting an inclusive code review.
+  ms.date: 09/07/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-provide-receive-wise-feedback.md)]
+quiz:
+  questions:
+  - content: "Which one of the following examples of feedback meets the criteria for wise feedback?"
+    choices:
+    - content: "I like the names that you gave for the variables. They're very innovative."
+      isCorrect: false
+      explanation: "Incorrect. This is empty praise and tries to put a positive spin on the feedback without providing any substantive information about what the person needs to do to improve."
+    - content: "I like what you have done so far in this code. I think you can improve it further if you make certain changes. Do you want to try incorporating some additional functions?"
+      isCorrect: true
+      explanation: "Correct. This feedback signals positive intent and expresses confidence in the person. It also provides specific guidance on how to improve the code."
+    - content: "Well, this part of the code isn't very important. Don't worry about it. I can fix it quickly."
+      isCorrect: false
+      explanation: "Incorrect. This feedback glosses over errors and doesn't express confidence that the person can meet project or team expectations."

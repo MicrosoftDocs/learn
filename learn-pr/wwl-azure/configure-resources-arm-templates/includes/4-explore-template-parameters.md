@@ -1,25 +1,25 @@
 In the parameters section of the template, you specify which values you can input when deploying the resources. The available properties for a parameter are:
 
-```json
+```JSON
 "parameters": {
-  "&lt;parameter-name&gt;" : {
-    "type" : "&lt;type-of-parameter-value&gt;",
-    "defaultValue": "&lt;default-value-of-parameter&gt;",
-    "allowedValues": [ "&lt;array-of-allowed-values&gt;" ],
-    "minValue": &lt;minimum-value-for-int&gt;,
-    "maxValue": &lt;maximum-value-for-int&gt;,
-    "minLength": &lt;minimum-length-for-string-or-array&gt;,
-    "maxLength": &lt;maximum-length-for-string-or-array-parameters&gt;,
-    "metadata": {
-      "description": "&lt;description-of-the parameter&gt;"
+    "<parameter-name>" : {
+        "type" : "<type-of-parameter-value>",
+        "defaultValue": "<default-value-of-parameter>",
+        "allowedValues": [ "<array-of-allowed-values>" ],
+        "minValue": <minimum-value-for-int>,
+        "maxValue": <maximum-value-for-int>,
+        "minLength": <minimum-length-for-string-or-array>,
+        "maxLength": <maximum-length-for-string-or-array-parameters>,
+        "metadata": {
+        "description": "<description-of-the parameter>"
+        }
     }
-  }
 }
 ```
 
 Here's an example that illustrates two parameters: one for a virtual machine's username, and one for its password:
 
-```json
+```JSON
 "parameters": {
   "adminUsername": {
     "type": "string",
@@ -33,6 +33,7 @@ Here's an example that illustrates two parameters: one for a virtual machine's u
       "description": "Password for the Virtual Machine."
     }
   }
+}
 ```
 
 > [!NOTE]

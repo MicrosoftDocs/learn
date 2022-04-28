@@ -1,4 +1,7 @@
-Here, we discuss some of the essential security tools and techniques available to GitHub repository administrators. This unit does not cover the fundamentals of writing secure code, but rather delves into some of the important considerations repository owners need to account for outside of the core development process. 
+Here, we discuss some of the essential security tools and techniques available to GitHub repository administrators. 
+
+>[!Note]
+> The following content does not cover the fundamentals of writing secure code, but rather important security considerations, tools, and features to use within a GitHub repository.
 
 ## The importance of a secure development strategy
 
@@ -18,7 +21,7 @@ There are many aspects to building and deploying secure applications. Here are t
 
 ### Security at every step
 
-:::image type="content" source="../media/shift-left-2.png" alt-text="Security is a part of every step.":::
+:::image type="content" source="../media/github-security.png" alt-text="Image of a GitHub shield with security written underneath.":::
 
 Security isn't something you can just add to an application or a system later. Secure development must be part of every stage of the software development life cycle. This is even more important for critical applications and those that process sensitive or highly confidential information.
 
@@ -30,15 +33,20 @@ With the introduction of DevOps practices however, security testing is much easi
 
 Overall, when the time for rework is taken into account, adding security to your DevOps practices earlier in the development lifecycle allows development teams to catch issues earlier and can actually reduce the overall time it takes to develop quality software.
 
-Shifting left is a process change, but it isn’t a single control or specific tool—it’s about making all of security more developer-centric, and giving developers security feedback where they are. Below are some ways to distribute security and operational responsibilities across all phases of the software development lifecycle.
+Shifting left is a process change, but it isn’t a single control or specific tool—it’s about making all of security more developer-centric, and giving developers security feedback where they are. 
 
-## Communicating security policy with SECURITY.md
+Below are some ways to distribute security and operational responsibilities across all phases of the software development lifecycle.
+
+## Communicate a security policy with SECURITY.md
 
 The community benefits of GitHub are substantial, but they also carry potential risks. The fact that anyone can propose bug fixes publicly comes with certain responsibilities. The most important is the responsible disclosure of information that could lead to security exploits before their underlying bugs can be fixed. Developers looking to report or address security issues look for a `SECURITY.md` file in the root of a repository in order to responsibly disclose their concerns. Providing guidance in this file will ultimately speed up the resolution of these critical issues. 
 
 To learn more about `SECURITY.md`, see [Adding a security policy to your repository](https://help.github.com/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository?azure-portal=true).
 
-## Keeping sensitive files out of your repository with .gitignore
+## GitHub Security Advisories
+GitHub Security Advisories allow repository maintainers to privately discuss and fix a security vulnerability in a project. After collaborating on a fix, repository maintainers can publish the security advisory to publicly disclose the security vulnerability to the project's community. By publishing security advisories, repository maintainers make it easier for their community to update package dependencies and research the impact of the security vulnerabilities. GitHub stores the published advisories in the Common Vulnerabilities and Exposures (CVE) list which are used for automatically notifying affected repositories that leverage software that has a listed vulnerability. 
+
+## Keep sensitive files out of your repository with .gitignore
 
 It's easy for developers to overlook files included in a commit. Sometimes these overlooked files are benign, such as intermediate build files. However, there is always the risk that someone may inadvertently commit sensitive data, such as an API key or private configuration data, that could be used by a malicious actor. One technique to help avoid the majority of this risk is to build and maintain `.gitignore` files. These files instruct client tools, such as the `git` command line utility, to ignore paths and patterns when aggregating files for a commit.
 
@@ -70,51 +78,30 @@ Your repository may include multiple `.gitignore` files. Settings are inherited 
 
 To learn more about `.gitignore`, see [Ignoring files](https://help.github.com/github/using-git/ignoring-files?azure-portal=true). Also check out the collection of starter `.gitignore` files offered for various platforms in the [gitignore repository](https://github.com/github/gitignore?azure-portal=true).
 
-## Removing sensitive data from a repository
+## Remove sensitive data from a repository
 
 While `.gitignore` can be useful in helping contributors avoid committing sensitive data, it's just a strong suggestion. Developers can still work around it to add files if they are motivated enough, and sometimes files may slip through because they don't meet the `.gitignore` configuration. Project participants should always be on the lookout for commits containing data that should not be included in the repository or its history.
 
 > [!IMPORTANT]
 > It should be assumed that any data committed to GitHub at any point has been compromised. Simply overwriting a commit isn't enough to ensure the data will not be accessible in the future. For the complete guide to removing sensitive data from GitHub, see [Removing sensitive data from a repository](https://help.github.com/github/authenticating-to-github/removing-sensitive-data-from-a-repository?azure-portal=true).
 
-## Detecting and fixing outdated dependencies with security vulnerabilities
+## Branch protection rules
+You can create a [branch protection rule](https://docs.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) to enforce certain workflows for one or more branches, such as requiring an approving review or passing status checks for all pull requests merged into the protected branch.  
+The workflows that protect the branch can be leveraged to: 
 
-Virtually every project these days takes dependencies on external packages. While these components can offer substantial benefits in productivity, they introduce additional security risk. Staying on top of these packages and their vulnerability status can be time-consuming, especially given how each dependency may have its own dependencies that can exponentially grow the number of packages to track. Fortunately, GitHub provides features that reduce this workload.
+* Run a build to verify the code changes can be build
+* Run a linter to check for typos and conformation to the internal coding conventions
+* Run automated tests to check for any behavior changes of the code
+* Etc.
 
-### Repository dependency graphs
+## Add a CODEOWNERS file
+By adding a [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners#codeowners-syntax) file to your repository, you can assign individual team members or entire teams as code owners to paths in your repository. These code owners are then required for pull request reviews on any changes to files in a path that they are configured for.
 
-One default feature every repository enjoys are dependency graphs. GitHub scans common package manifests, such as `package.json`, `requirements.txt`, and others. These graphs enable project owners to recursively track all of the dependencies their project relies on.
+```
+# Changes to files with the js extensions need to be reviewed by the js-owner user/group:
+*.js    @js-owner
 
-![GitHub dependency graph.](../media/2-dependency-graph.png)
-
-For the list of supported dependency manifests, see [Listing the packages that a repository depends on](https://help.github.com/github/visualizing-repository-data-with-graphs/listing-the-packages-that-a-repository-depends-on#supported-languages?azure-portal=true)
-
-### Automated dependency alerts
-
-Even with a visual dependency graph, it can still be overwhelming to stay on top of the latest security considerations for every dependency a project has. To reduce this overhead, GitHub provides automated dependency alerts that watch your dependency graphs for you. It then cross-references target versions with versions on known vulnerability lists. When a risk is discovered, the project is alerted.
-
-![A GitHub alert for a vulnerable dependency.](../media/2-dependency-alert.png)
-
-### Automated dependency updates with Dependabot
-
-Most of the time, a dependency alert leads to a project contributor bumping the offending package reference to the recommended version and creating a pull request for validation. Wouldn't it be great if there was a way to automate this effort? Well, good news! That's exactly what **Dependabot** does. It scans for dependency alerts and creates pull requests so that a contributor can validate the update and merge the request.
-
-To learn more about Dependabot's flexibility, see [Configuring GitHub Dependabot security updates](https://help.github.com/github/managing-security-vulnerabilities/configuring-github-dependabot-security-updates?azure-portal=true).
-
-### Automated code scanning
-
-Similar to how Dependabot scans your repository for dependency alerts, you can use code scanning to analyze and find security vulnerabilities and errors in the code in a GitHub repository. Code scanning has several benefits; you can use it to find, triage, and prioritize fixes for existing problems or potential security vulnerabilities. It's also useful to help prevent developers from introducing any new security problems into the code.
-
-Another advantage to code scanning is its ability to use CodeQL. CodeQL lets you query code as data. This allows you to create custom queries, or ones maintained by the open source community, for code scanning which gives you freedom to customize and maintain how the code within your repository is being scanned. 
-
-You can enable code scanning alerts and workflows in the security tab of a GitHub repository
-
-:::image type="content" source="../media/security-overview.png" alt-text="A list of policies, advisories, and alerts with links to more information.":::
-
-Learn more about [code scanning and CodeQL](https://docs.github.com/en/free-pro-team@latest/github/finding-security-vulnerabilities-and-errors-in-your-code/about-code-scanning#about-code-scanning)
-
-### Secret scanning
-
-Another automated scanning feature within a GitHub repository is secret scanning. Similar to the previous security scanning features, secret scanning looks for known secrets or credentials committed within the repository. This scanning is done to prevent the use of fraudulent behavior and to secure the integrity of any sensitive data. By default, secret scanning occurs on public repositories and can be enabled on private repositories by repository administrators or organization owners.
-
-Learn more about [secret scanning for public and private repositories](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/about-secret-scanning)
+# Changes to files in the builds folder need to be reviewed by the octocat user/group:
+/build/ @octocat
+```
+The CODEOWNERS file can be created in either the root of the repository, or in the `docs` or `.github` folder.

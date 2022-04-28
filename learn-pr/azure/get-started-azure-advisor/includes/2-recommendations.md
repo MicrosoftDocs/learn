@@ -23,7 +23,7 @@ The Advisor dashboard gives you recommendations for each of the five categories 
 | Category | Description |
 |---------|---------|
 | **Cost** | Helps optimize and reduce your overall Azure spend by identifying idle and underutilized resources. |
-| **Security** | Integrates with [Azure Security Center](/azure/security-center/security-center-recommendations?azure-portal=true) to identify potential vulnerabilities that can lead to security breaches. |
+| **Security** | Integrates with [Microsoft Defender for Cloud](/azure/security-center/security-center-recommendations?azure-portal=true) to identify potential vulnerabilities that can lead to security breaches. |
 | **Reliability** | Helps to ensure and improve the continuity of your business-critical applications. |
 | **Operational excellence** | Makes recommendations for process and workflow efficiency, resource manageability, and deployment best practices. |
 | **Performance** | Helps improve the speed and responsiveness of your business-critical applications. |
@@ -72,7 +72,7 @@ Advisor gives you several recommendations for each of these categories. Here are
 - FTPS should be required in your web app.
 - Container images should be deployed from trusted registries only.
 
-Advisor integrates with [Azure Security Center](/azure/security-center/security-center-recommendations?azure-portal=true) to provide security recommendations on the Advisor dashboard Security tab and with Azure Cost Management and Billing to offer cost recommendations on the Advisor dashboard Cost tab.
+Advisor integrates with [Microsoft Defender for Cloud](/azure/security-center/security-center-recommendations?azure-portal=true) to provide security recommendations on the Advisor dashboard Security tab and with Azure Cost Management and Billing to offer cost recommendations on the Advisor dashboard Cost tab.
 
 ## Remediating issues found by Advisor recommendations
 

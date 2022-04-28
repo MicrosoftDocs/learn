@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-transact-sql-programming
+metadata:
+  title: Get started with Transact-SQL programming
+  description: "Get started with Transact-SQL programming"
+  ms.date: 02/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with Transact-SQL programming
+summary: Transact-SQL (T-SQL) provides a robust programming language with features that let you temporarily store values in variables, apply conditional execution of commands, pass parameters to stored procedures, and control the flow of your programs.
+abstract: |
+  After completing this module, you will be able to:
+  * Describe the language elements of T-SQL used for simple programming tasks.
+  * Describe batches and how they're handled by SQL Server.
+  * Declare and assign variables and synonyms.
+  * Use IF and WHILE blocks to control program flow.
+prerequisites: |
+  Before starting this module, you should have experience of using Transact-SQL SELECT queries to retrieve and filter data from a table in a database.
+iconUrl: /learn/achievements/transact-sql-programming.svg
+levels:
+- advanced
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+- database-administrator
+- developer
+- solution-architect
+- student
+products:
+- azure-sql-database
+- azure-sql-managed-instance
+- azure-sql-virtual-machines
+- azure-sqlserver-vm
+- sql-server
+units:
+- learn.wwl.get-started-transact-sql-programming.introduction
+- learn.wwl.get-started-transact-sql-programming.describe-t-sql-for-programming
+- learn.wwl.get-started-transact-sql-programming.describe-batches
+- learn.wwl.get-started-transact-sql-programming.declare-assign-variables-synonyms
+- learn.wwl.get-started-transact-sql-programming.use-if-while-blocks-to-control-program-flow
+- learn.wwl.get-started-transact-sql-programming.exercise-program-t-sql
+- learn.wwl.get-started-transact-sql-programming.knowledge-check
+- learn.wwl.get-started-transact-sql-programming.summary
+badge:
+  uid: learn.wwl.get-started-transact-sql-programming.badge

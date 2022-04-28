@@ -4,8 +4,8 @@ metadata:
   title: Extend your on-premises file share capacity using Azure File Sync
   description: Evaluate and deploy Azure File Sync to extend the capacity of your on-premises file share.
   ms.date: 10/11/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: roygara
+  ms.author: rogarana
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Extend your on-premises file share capacity using Azure File Sync

@@ -8,23 +8,23 @@ In this unit, you will review the primary methods for setting this type metadata
 
 Using the Azure portal, you can add and edit container and blob metadata.
 
-1. Sign in to the [Azure portal](https://portal.azure.com), and click **Storage Accounts**.
+1. Sign in to the [Azure portal](https://portal.azure.com), and select **Storage Accounts**.
 
-1. Under **Blob service**, click **Blobs** and select a container.
+1. Under **Blob service**, select **Blobs** and select a container.
 
-1. On the left, click **Metadata**.
+1. On the left, select **Metadata**.
 
-1. Enter a text string in the **KEY** and **VALUE** boxes, and then click **Save**.
+1. Enter a text string in the **KEY** and **VALUE** boxes, and then select **Save**.
 
-1. On the left, click **Overview**.
+1. On the left, select **Overview**.
 
-1. Click a blob.
+1. Select a blob.
 
-1. In the **Metadata** section, enter a text string in the **KEY** and **VALUE** boxes, and then click **Save**.
+1. In the **Metadata** section, enter a text string in the **KEY** and **VALUE** boxes, and then select **Save**.
 
-## Azure Powershell
+## Azure PowerShell
 
-You can use Powershell to add and edit metadata for containers and Blobs, and the commands that you use for viewing metadata are similar to the commands you used to view properties. A key thing to remember is that you must use the `SetMetadata()` method to write your changes to the container or blob.
+You can use PowerShell to add and edit metadata for containers and Blobs, and the commands that you use for viewing metadata are similar to the commands you used to view properties. A key thing to remember is that you must use the `SetMetadata()` method to write your changes to the container or blob.
 
 Here's an example set of commands for adding metadata for a blob called **hazard-tests.docx**, and for the blob's parent container called **safety-reports**:
 
@@ -65,37 +65,37 @@ az storage blob metadata update
 az storage container metadata update
 ```
 
-When you update metadata, you are also overwriting any existing key-value pairs. So if you want to add metadata, rather than replacing existing data, you must first save the current metadata. 
+When you update metadata, you are also overwriting any existing key-value pairs. So if you want to add metadata, rather than replacing existing data, you must first save the current metadata.
 
 The following example updates the metadata of a container called **safety-reports**, in the **treyresearch** storage account:
 
 ```azurecli
 az storage container metadata update \
---name safety-reports \
---account-name treyresearch \
---metadata productClass=acids testStatus=approved
+    --name safety-reports \
+    --account-name treyresearch \
+    --metadata productClass=acids testStatus=approved
 ```
 
 The following example updates the metadata stored with the **hazard-tests.docx** blob:
 
 ```azurecli
 az storage blob metadata update \
---container-name safety-reports \
---name hazard-tests.docx \
---account-name treyresearch \ 
---metadata productType=solvent state=liquid
+    --container-name safety-reports \
+    --name hazard-tests.docx \
+    --account-name treyresearch \ 
+    --metadata productType=solvent state=liquid
 ```
 
 ## C# (.NET)
 
-In your project, import the `Microsoft.Azure.Storage.Blob` package using NuGet.
+In your project, import the `Azure.Storage.Blobs` package using NuGet.
 
 Add the following `using` directives to your code:
 
 ```csharp
-using Microsoft.WindowsAzure.Storage;
-
-using Microsoft.WindowsAzure.Storage.Blob;
+using Azure;
+using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
 ```
 
 The Azure SDK enables you to add metadata for `CloudBlockBlob` and `CloudBlobContainer` objects using the `Metadata.Add` and  `SetMetadataAsync` methods.
@@ -103,27 +103,41 @@ The Azure SDK enables you to add metadata for `CloudBlockBlob` and `CloudBlobCon
 The following code shows how to use the `SetMetadataAsync` method to update the metadata for a container:
 
 ```csharp
-public static async Task AddContainerMetadataAsync(CloudBlobContainer container)
+public static async Task AddContainerMetadataAsync(BlobContainerClient blobContainerClient)
 {
+    Response<BlobContainerProperties> response = await blobContainerClient.GetPropertiesAsync();
+    IDictionary<string, string> metadata = response.Value.Metadata;
+
     // Add metadata to the container
-    cloudBlobContainer.Metadata.Add("docType", "safetyReports");
+    metadata.Add("docType", "safetyReports");
+
     // Save the updated container metadata
-    await cloudBlobContainer.SetMetadataAsync();
+    await blobContainerClient.SetMetadataAsync(metadata);
 }
 ```
-The following code shows how to use the `SetMetadataAsync` method to update the metadata for a blob:
+
+The following code shows how to update the metadata for each blob in a container.  A `BlobClient` object is created for each blob and the `SetMetadataAsync` method is used to update the metadata for a blob:
 
 ```csharp
-public static async Task AddContainerMetadataAsync(CloudBlobContainer blob)
+public static async Task AddBlobMetadataAsync(BlobContainerClient blobContainerClient)
 {
-    // Add metadata to the blob
-    cloudBlob.Metadata.Add("reportStatus", "included");
-    // Save the updated blob metadata
-    await cloudBlob.SetMetadataAsync();
+    AsyncPageable<BlobItem> blobs = blobContainerClient.GetBlobsAsync(BlobTraits.Metadata);
+    await foreach (var blobItem in blobs)
+    {
+        // Get the current metadata for the blob
+        IDictionary<string, string> metadata = blobItem.Metadata;
+
+        // Add a value to the metadata for the blob
+        metadata.Add("reportStatus", "included");
+
+        // You need a BlobClient object to update the metadata for a blob
+        BlobClient blobClient = blobContainerClient.GetBlobClient(blobItem.Name);
+        await blobClient.SetMetadataAsync(metadata);
+    }
 }
 ```
 
-For example, if you want to create a report covering all safety documents that have been issued recently, you could call this code for all blobs that have a `LastModified` date within the last three months.
+For example, if you want to create a report covering all safety documents that have been issued recently, you could modify this code to set a status flag for all blobs that have a `LastModified` date within the last three months.
 
 ## REST
 
@@ -149,7 +163,7 @@ x-ms-meta-docType:safetyReports
 
 For a blob, use this syntax:
 
-```
+```http
 PUT https://myaccount.blob.core.windows.net/mycontainer/myblob?comp=metadata
 ```
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-usage-billing-for-azure-stack-hub.view-retrieve-usage-data-by-using-usage-api
+title: View and retrieve usage data
+metadata:
+  title: View and retrieve usage data
+  description: "View and retrieve usage data"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-view-retrieve-usage-data.md)]

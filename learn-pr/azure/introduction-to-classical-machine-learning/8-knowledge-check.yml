@@ -3,7 +3,7 @@ uid: learn.machinelearning.introduction-to-classical-machine-learning.knowledge-
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Multiple-choice questions
+  description: Multiple-choice questions.
   ms.date: 05/25/2021
   author: tomreidnz
   ms.author: jasdeb
@@ -15,13 +15,13 @@ quiz:
   questions:
   - content: 'What is the difference between supervised learning and unsupervised learning?'
     choices:
-    - content: "Supervised learning requires human supervision, while unsupervised learning doesn't"
+    - content: "Supervised learning requires human supervision, whereas unsupervised learning doesn't."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Supervised learning always uses an optimizer, but unsupervised never does"
+    - content: "Supervised learning always uses an optimizer, but unsupervised learning never does."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Supervised learning trains a model by comparing estimations to correct answers. The cost function for unsupervised learning doesn't need correct answers"
+    - content: "Supervised learning trains a model by comparing estimations to correct answers. The cost function for unsupervised learning doesn't need correct answers."
       isCorrect: true
       explanation: "Correct."
   - content: 'What is the role of the cost function in supervised learning?'
@@ -29,7 +29,7 @@ quiz:
     - content: "To maximize the cost so that the objective is reached."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "To calculate cost by comparing estimations to correct answers."
+    - content: "To calculate the cost by comparing estimations to correct answers."
       isCorrect: true
       explanation: "Correct."
     - content: "To update model parameters."
@@ -37,34 +37,34 @@ quiz:
       explanation: "Incorrect."
   - content: 'How does gradient descent know how to update parameters?'
     choices:
-    - content: "It compares costs for several combinations of parameters, and then selects the best option"
+    - content: "It compares costs for several combinations of parameters, and then it selects the best option."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "It uses an internal understanding of the relationship between features and labels to make intelligent choices"
+    - content: "It uses an internal understanding of the relationship between features and labels to make intelligent choices."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "It uses calculus to estimate the slope of the cost function"
+    - content: "It uses calculus to estimate the slope of the cost function."
       isCorrect: true
-      explanation: "Correct. Once the slope it known, it's clear whether to make parameters smaller or larger."
-  - content: 'Why are there many cost functions available?'
+      explanation: "Correct. After the slope is known, it's clear whether to make parameters smaller or larger."
+  - content: 'Why are many cost functions available?'
     choices:
-    - content: "A unique cost function is required for each processed currency or banking system"
+    - content: "A unique cost function is required for each processed currency or banking system."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Because cost functions help models process data, and many model types are available"
+    - content: "Cost functions help models process data, and many model types are available."
       isCorrect: false
-      explanation: "Incorrect. Models do not rely on other components to make an estimation. That said, cost functions can need slight adjustments so that they are compatible with different types of model output"
-    - content: "Because different cost functions can arrive at different answers, and what is best depends on our goal."
+      explanation: "Incorrect. Models don't rely on other components to make an estimation. That said, cost functions can need slight adjustments so that they're compatible with different types of model output."
+    - content: "Different cost functions can arrive at different answers, and what's best depends on the goal."
       isCorrect: true
       explanation: "Correct."
   - content: 'Why is learning rate important?'
     choices:
-    - content: "It speeds up or slows down training"
+    - content: "It speeds up or slows down training."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "If too large or too small, it can prevent a model from being trained optimally"
+    - content: "If the learning rate is too large or too small, it can prevent a model from being trained optimally."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Both options are correct "
+    - content: "Both options are correct."
       isCorrect: true
       explanation: "Correct."      

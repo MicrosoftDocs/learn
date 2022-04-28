@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security.understand-conditional-access-policy-components
+title: Understand Conditional Access policy components
+metadata:
+  title: Understand Conditional Access policy components
+  description: "Understand Conditional Access policy components"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-understand-conditional-access-policy-components.md)]

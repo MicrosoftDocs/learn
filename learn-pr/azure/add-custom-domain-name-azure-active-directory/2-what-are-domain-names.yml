@@ -5,8 +5,8 @@ metadata:
   title: What are domain names in Azure Active Directory?
   description: Explore how domain names are used in Azure Active Directory and how subdomains are supported.
   ms.date: 02/25/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: ajburnle
+  ms.author: ajburnle
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

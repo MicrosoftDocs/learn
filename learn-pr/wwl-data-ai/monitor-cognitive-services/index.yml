@@ -3,7 +3,7 @@ uid: learn.wwl.monitor-cognitive-services
 metadata:
   title: Monitor Cognitive Services
   description: "Monitor Cognitive Services"
-  ms.date: 06/25/2021
+  ms.date: 08/16/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   Before starting this module, you should:
   - Be familiar with Azure services and the Azure portal.
   - Have experience of provisioning Azure Cognitive Services resources.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/monitor-cognitive-services.svg
 levels:
 - intermediate
 roles:

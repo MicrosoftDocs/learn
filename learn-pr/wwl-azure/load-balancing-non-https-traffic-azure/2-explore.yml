@@ -4,12 +4,13 @@ title: Explore load balancing
 metadata:
   title: Explore load balancing
   description: "Explore load balancing"
-  ms.date: 07/16/2021
+  ms.date: 04/27/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-explore.md)]
@@ -27,14 +28,14 @@ quiz:
     - content: "Azure Application Gateway only."
       isCorrect: false
       explanation: "Incorrect, Secure web applications use HTTPS traffic. Azure Application Gateway does support HTTPS traffic, but it's not the only load balancer that does."
-  - content: "Which type of load balancing services distribute traffic within virtual networks across virtual machines?"
+  - content: "Which type of load balancing services distribute traffic across regional backends for web applications?"
     choices:
-    - content: "Regional."
+    - content: "Azure Application Gateway."
+      isCorrect: false
+      explanation: "Incorrect, Azure Application Gateway does not distribute traffic across regional backends."
+    - content: "Azure Front Door."
       isCorrect: true
-      explanation: "Correct, **Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region."
-    - content: "Global."
+      explanation: "Correct, Azure Front Door distributes traffic across regional backends for web applications."
+    - content: "Azure Load Balancer."
       isCorrect: false
-      explanation: "Incorrect, **Global** load-balancing services distribute traffic across regional backends, clouds, or hybrid on-premises services."
-    - content: "Regional and Global."
-      isCorrect: false
-      explanation: "Incorrect, **Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region, whereas **Global** load-balancing services distribute traffic across regional backends, clouds, or hybrid on-premises services."
+      explanation: "Incorrect, Azure Load Balancer does not distribute traffic across regional backends for web applications."

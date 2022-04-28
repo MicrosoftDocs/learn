@@ -9,6 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 12
 content: |
   [!include[](includes/06-cloud-providers.md)]
@@ -39,7 +40,7 @@ quiz:
       - content: "Microsoft"
         isCorrect: false
         explanation: "Incorrect. Microsoft Azure offers IaaS, PaaS, and SaaS services."
-      - content: "Google App Engine"
+      - content: "Google"
         isCorrect: false
         explanation: "Incorrect. Google Cloud Platform offers IaaS, PaaS, and SaaS services."
       - content: "None of the above"

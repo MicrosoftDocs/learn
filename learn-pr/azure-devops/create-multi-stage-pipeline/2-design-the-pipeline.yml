@@ -5,8 +5,8 @@ metadata:
   title: Design the pipeline
   description: Define stages in your release pipeline and promote changes from one stage to the next.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 11

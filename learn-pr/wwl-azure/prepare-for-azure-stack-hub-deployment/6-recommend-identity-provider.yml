@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-for-azure-stack-hub-deployment.recommend-identity-provider
+title: Recommend an identity provider
+metadata:
+  title: Recommend an identity provider
+  description: "Recommend an identity provider"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-recommend-identity-provider.md)]

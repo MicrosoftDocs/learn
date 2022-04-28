@@ -1,12 +1,12 @@
-There are many reasons that you might choose to change the architecture of a system. Operational agility, cost, scalability, and performance are just some of the factors that play a role in determining the architecture of a system. In our example, we'll take a closer look at how performance becomes a factor for the drone shipping system.
+There are many reasons that you might choose to change the architecture of a system. Operational agility, cost, scalability, and performance are just some of the factors that play a role in determining the architecture of a system. In our example, we'll take a closer look at how performance becomes a factor for the drone delivery system.
 
-As the Fabrikam drone shipping business grows, system load increases. The current architecture is straining under the load. Fabrikam wants to provide better flexibility in scaling the application that isn't available in the current monolithic architecture. Improving the application's scalability is one of the drivers for Fabrikam to look at moving their application to a microservices architecture.
+As the Fabrikam drone delivery business grows, system load increases. The current architecture is straining under the load. Fabrikam wants to provide better flexibility in scaling the application that isn't available in the current monolithic architecture. Improving the application's scalability is one of the drivers for Fabrikam to look at moving their application to a microservices architecture.
 
 ## Scaling monolith vs. scaling microservices
 
-One of the primary benefits to a microservices architecture comes in the increased scaling capabilities. Because services are separated out, it's much easier to scale each service individually as load increases across them.
+One of the primary benefits to a microservices architecture comes in the increased scaling capabilities. Because services are separated, it's much easier to scale each service individually as load increases across them.
 
-We can see this difference in capabilities in the drone delivery system. With a monolithic architecture, all services are contained within a single instance of the application. They expose an API interface to customers to submit and manage delivery requests. As customer requests increase, load on the system increases. More resources are required to be allocated to the system to avoid negatively affecting the end-user experience.
+We can see this difference in capabilities in the drone delivery system. With a monolithic architecture, all services are contained within a single instance of the application. They expose an API interface to customers to submit and manage delivery requests. As customer requests increase, load on the system increases. More resources are required to be allocated to the system to avoid negatively affecting the user experience.
 
 In a monolithic architecture, scaling this service individually also requires scaling the resources for the other services because they're contained within each application instance. This arrangement is inefficient because load for the other services might be minimal and not require the additional resource utilization.
 

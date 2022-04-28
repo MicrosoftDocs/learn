@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-marketplace.populate-disconnected-environment
+title: Populate Azure Stack Hub Marketplace in a disconnected environment
+metadata:
+  title: Populate Azure Stack Hub Marketplace in a disconnected environment
+  description: "Populate Azure Stack Hub Marketplace in a disconnected environment"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-populate-azure-stack-hub-marketplace-disconnected-environment.md)]

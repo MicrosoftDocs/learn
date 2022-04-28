@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-non-relational-data-model.choose-partition-key
+title: Choose a partition key
+metadata:
+  title: Choose a partition key
+  description: "Choose a partition key"
+  ms.date: 04/01/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-choose-partition-key.md)]

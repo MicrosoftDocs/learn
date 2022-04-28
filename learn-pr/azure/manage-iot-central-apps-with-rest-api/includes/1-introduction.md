@@ -6,7 +6,7 @@ In this module, you'll generate authorization tokens with different permission s
 
 The IoT Central REST API operations are *data plane* operations. You use the data plane to use capabilities that your IoT Central application exposes such as managing devices and device templates.
 
-You use the *control plane* to manage resources in your Azure subscription. For example, you can use the [Azure CLI for Azure IoT](/cli/azure/azure-cli-reference-for-iot?view=azure-cli-latest&preserve-view=true) for control plane operations such as creating an IoT Central application.
+You use the *control plane* to manage resources in your Azure subscription. For example, you can use the [Azure CLI for Azure IoT](/cli/azure/azure-cli-reference-for-iot) for control plane operations such as creating an IoT Central application.
 
 The IoT Central REST API is now generally available, but some specific APIs are still in public preview. This module highlights any uses of preview APIs.
 

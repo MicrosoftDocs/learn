@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-sentinel.2-what-is-azure-sentinel
-title: What is Azure Sentinel?
+title: What is Microsoft Sentinel?
 metadata:
-  title: What is Azure Sentinel?
-  description: What is Azure Sentinel?
+  title: What is Microsoft Sentinel?
+  description: What is Microsoft Sentinel?
   ms.date: 09/21/2020
   author: deanobalino
-  ms.author: debryen
+  ms.author: deanbryen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: debryen-11292021
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-azure-sentinel.md)]

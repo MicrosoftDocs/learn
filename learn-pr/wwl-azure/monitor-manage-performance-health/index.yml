@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-manage-performance-health
+metadata:
+  title: Monitor and manage performance and health
+  description: "Monitor and manage performance and health"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor and manage performance and health
+summary: For Azure Virtual Desktop issues, check Azure Advisor first. Azure Advisor will give you directions for how to solve the problem, or at least point you towards a resource that can help.
+abstract: |
+  After completing this module, you'll be able to:
+  *  Describe how to monitor Azure Virtual Desktop by using Azure Monitor.
+  *  How to use Log Analytics workspace for Azure Monitor.
+  *  How to monitor Azure Virtual Desktop by using Azure Advisor.
+  *  How to resolve Azure Advisor recommendations.
+  *  How to diagnose graphics performance issues.
+prerequisites: ""
+iconUrl: /learn/achievements/3-monitor-and-manage-performance-and-health.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-desktop
+- azure-virtual-machines
+units:
+- learn.wwl.monitor-manage-performance-health.introduction
+- learn.wwl.monitor-manage-performance-health.monitor-azure-virtual-desktop-by-using-azure-monitor
+- learn.wwl.monitor-manage-performance-health.log-analytics-workspace-for-azure-monitor
+- learn.wwl.monitor-manage-performance-health.monitor-azure-virtual-desktop-by-using-azure-advisor
+- learn.wwl.monitor-manage-performance-health.how-to-resolve-azure-advisor-recommendations
+- learn.wwl.monitor-manage-performance-health.diagnose-graphics-performance-issues
+- learn.wwl.monitor-manage-performance-health.knowledge-check
+- learn.wwl.monitor-manage-performance-health.summary
+badge:
+  uid: learn.wwl.monitor-manage-performance-health.badge

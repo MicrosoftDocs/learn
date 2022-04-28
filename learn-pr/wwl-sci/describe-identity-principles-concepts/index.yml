@@ -3,18 +3,18 @@ uid: learn.wwl.describe-identity-principles-concepts
 metadata:
   title: Describe identity concepts
   description: "Describe identity concepts"
-  ms.date: 06/16/2021
+  ms.date: 04/02/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Describe identity concepts
-summary: Learn about the basic identity concepts, including identity as a security perimeter, authentication, authorization, the role of active directory and the concept of federated services.
+summary: Learn about the key concepts of authentication and authorization and why identity is important in securing corporate resources. You'll also learn about some identity-related services.
 abstract: |
   After completing this module, you will be able to:
+  - Understand the difference between authentication and authorization.
   - Describe the concept of identity as a security perimeter.
-  - Learn about authentication and authorization.
-  - Describe identity related services.
+  - Describe identity-related services.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -29,11 +29,11 @@ products:
 - azure-active-directory
 units:
 - learn.wwl.describe-identity-principles-concepts.introduction
-- learn.wwl.describe-identity-principles-concepts.describe-common-identity-attacks
+- learn.wwl.describe-identity-principles-concepts.define-authentication-and-authorization
 - learn.wwl.describe-identity-principles-concepts.define-identity-as-primary-security-perimeter
 - learn.wwl.describe-identity-principles-concepts.describe-modern-authentication-role-identity-provider
-- learn.wwl.describe-identity-principles-concepts.describe-concept-federated-services
 - learn.wwl.describe-identity-principles-concepts.describe-concept-of-directory-services-active-directory
+- learn.wwl.describe-identity-principles-concepts.describe-concept-federated-services
 - learn.wwl.describe-identity-principles-concepts.knowledge-check
 - learn.wwl.describe-identity-principles-concepts.summary-resources
 badge:

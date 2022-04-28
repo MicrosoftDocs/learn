@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-windows-server-performance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When considering processor performance, in addition to the Processor\\%Processor Time counter, which additional counter should an administrator add to a Data Collector Set?"
+    choices:
+    - content: "The administrator should add the System\\Processes counter."
+      isCorrect: false
+      explanation: "Incorrect. This counter provides a point in time value for the number of processes. It's not meaningful in establishing processor performance."
+    - content: "The administrator should add the Processor\\%Idle Time counter."
+      isCorrect: false
+      explanation: "Incorrect. This counter merely provides a percentile indicator of how idle a processor is. It is the counterpoint to the %Processor Time counter."
+    - content: "The administrator should add the System\\Processor Queue Length counter."
+      isCorrect: true
+      explanation: "Correct. This counter indicates the number of threads in the processor queue, and is a good indication of performance."
+  - content: "An administrator wants to use Windows Admin Center System Insights to plan for future capacity needs. Which PowerShell cmdlet should they use to begin forecasting using System Insights?"
+    choices:
+    - content: "The administrator should use the `Enable-InsightsCapability` cmdlet."
+      isCorrect: false
+      explanation: "Incorrect. This cmdlet enables the capability, but does not start gathering or analyzing data."
+    - content: "The administrator should use the `Add-WindowsFeature System-Insights` cmdlet."
+      isCorrect: false
+      explanation: "Incorrect. This cmdlet installs the System Insights feature in WAC."
+    - content: "The administrator should use the `Invoke-InsightsCapability` cmdlet."
+      isCorrect: true
+      explanation: "Correct. This cmdlet enables System Insights to start analyzing data."
+  - content: "An administrator has begun analyzing performance-related data using Windows Admin Center. They've been using System Insights. On reviewing the event logs in Event Viewer, the administrator discovers events with the ID of 148. What should they do?"
+    choices:
+    - content: "They should investigate the referenced object, but no action is immediately required."
+      isCorrect: true
+      explanation: "Correct. Event ID 148 means a warning, and although no action is immediately required, you should investigate the capability more closely."
+    - content: "They should ignore the event. It's an error."
+      isCorrect: false
+      explanation: "Incorrect. An Event ID of 149 indicates an error."
+    - content: "They should immediately investigate the referenced object."
+      isCorrect: false
+      explanation: "Incorrect. An Event ID of 150 would suggest that immediate action is required."

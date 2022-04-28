@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.automate-inspection-of-health
+metadata:
+  title: Automate inspection of health
+  description: "Automate inspection of health"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Automate inspection of health
+summary: This module describes how to automate the inspection of health events, configure notifications, and set up service hooks to monitor pipelines.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Implement automated inspection of health
+  *   Create and configure events
+  *   Configure notifications
+  *   Create service hooks to monitor pipeline
+prerequisites: ""
+iconUrl: /learn/achievements/4-automate-inspection-of-health.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.automate-inspection-of-health.introduction
+- learn.wwl.automate-inspection-of-health.automate-inspection-health
+- learn.wwl.automate-inspection-of-health.explore-events-notifications
+- learn.wwl.automate-inspection-of-health.explore-service-hooks
+- learn.wwl.automate-inspection-of-health.exercise-set-up-service-hooks-to-monitor-pipeline
+- learn.wwl.automate-inspection-of-health.knowledge-check
+- learn.wwl.automate-inspection-of-health.summary
+badge:
+  uid: learn.wwl.automate-inspection-of-health.badge

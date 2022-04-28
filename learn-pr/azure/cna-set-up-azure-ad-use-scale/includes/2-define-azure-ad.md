@@ -11,7 +11,7 @@ Azure AD is the cloud-based identity and access management service for Microsoft
 
 Azure AD serves as an identity store, providing you with the ability to create accounts for your organization's users, groups, and devices. It also allows for creating guest accounts, representing identities of your partner organizations, making it straightforward to share resources in a secure manner in business-to-business (B2B) scenarios. You can also use Azure AD in business-to-consumer (B2C) scenarios by allowing external users to sign up for access to your apps with their existing credentials, including support for the most common social identity providers.
 
-For each of these scenarios, you can implement other controls that dictate the level of protection against potential threats. These controls include built-in support for multifactor authentication and conditional access.
+For each of these scenarios, you can implement other controls that dictate the level of protection against potential threats. These controls include built-in support for multifactor authentication and Conditional Access.
 
 Azure AD organizes its objects, such as users, groups, and apps into containers called tenants. Each tenant represents an administrative and security boundary. You can create one or more tenants for your organization. Every Azure subscription is associated with an Azure AD tenant.
 

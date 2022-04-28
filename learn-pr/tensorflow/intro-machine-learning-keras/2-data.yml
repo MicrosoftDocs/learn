@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-machine-learning-keras.data
+title: Data
+metadata:
+  title: Data
+  description: Learn how to get your data ready to be used by a neural network
+  ms.date: 07/07/2021
+  author: bstollnitz
+  ms.author: bstollnitz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-tensorflow
+  ms.product: learning-tensorflow
+  ms.contributors:
+  - bstollnitz-08202021
+  ms.custom:
+  - team=cloud_advocates
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/2-data.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why do we encapsulate our data in a `Dataset`?"
+    choices:
+    - content: "We didn't need to. For a small amount of data like in this sample, we could just use NumPy arrays."
+      isCorrect: false
+      explanation: "This is true, but other options are also true."
+    - content: "It's a good idea to learn about it, especially if we're going to work with larger data in the future."
+      isCorrect: false
+      explanation: "This is true, but other options are also true."
+    - content: "Because it returns our data in batches of 64 images when we iterate over it, which we'll use later when training."
+      isCorrect: false
+      explanation: "This is true, but other options are also true."
+    - content: "All of the above."
+      isCorrect: true
+      explanation: "Correct!"

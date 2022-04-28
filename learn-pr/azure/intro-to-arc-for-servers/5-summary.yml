@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-arc-for-servers.5-summary
+uid: learn.azure.intro-to-arc-for-servers.summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 12/14/2020
-  author: micrum
-  ms.author: micrum
+  ms.date: 12/01/2021
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

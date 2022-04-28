@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.structure-bicep-code-collaboration.exercise-refactor-bicep-file
+title: Exercise - Refactor your Bicep file
+metadata:
+  unitType: exercise
+  title: Exercise - Refactor your Bicep file
+  description: Learn how to refactor your Bicep file to follow best practices.
+  ms.date: 08/06/2021
+  author: pazdedav
+  ms.author: dapazd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-refactor-bicep-file.md)]

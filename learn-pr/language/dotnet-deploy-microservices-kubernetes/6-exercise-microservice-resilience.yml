@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.dotnet-deploy-microservices-kubernetes.exercise-microservice-resilience
+title: Exercise - Prove microservice resilience in Kubernetes
+metadata:
+  title: Exercise - Prove microservice resilience in Kubernetes
+  description: Kubernetes makes sure your microservices are running in the face of failure, see that in this exercise.
+  ms.date: 08/25/2021
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - masoucou-09032021
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-exercise-microservice-resilience.md)]
+quiz:  
+  title: Check your knowledge
+  questions: 
+    - content: "Why does Kubernetes automatically restart pods that have failed?"
+      choices:
+        - content: "Kubernetes will maintain the system state as defined in the configuration files no matter what."
+          isCorrect: true
+          explanation: "One of the benefits of Kubernetes is the support for declarative configuration management. What you define in the configuration files will be retained at all costs."
+        - content: "Kubernetes will maintain the current system state as is when a failure occurs."
+          isCorrect: false
+          explanation: "Kubernetes will recover to a state defined in the configuration files, not to a state as it was running."
+        - content: "Kubernetes will not automatically recover, rather it needs to be told to."
+          isCorrect: false
+          explanation: "A benefit of Kubernetes is that it automatically maintains system state as defined, it will recover automatically."

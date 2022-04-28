@@ -1,4 +1,4 @@
-In this exercise, you'll create a simple to do list component inside our Blazor app.
+In this exercise, you'll create a basic to do list component inside our Blazor app.
 
 ## Create the ToDo page
 
@@ -7,14 +7,13 @@ In this exercise, you'll create a simple to do list component inside our Blazor 
     ```dotnetcli
     dotnet new razorcomponent -n Todo -o Pages
     ```
-    
+
     The `-n|--name` option in the preceding command specifies the name of the new Razor component. The new component is created in the project's `Pages` folder with the `-o|--output` option.
 
     > [!IMPORTANT]
     > Razor component file names require a capitalized first letter. Open the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
-    
 
-1. Open the `Todo` component add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
+1. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
 
     ```cshtml
     @page "/todo"
@@ -32,46 +31,50 @@ In this exercise, you'll create a simple to do list component inside our Blazor 
 
 The `NavMenu` component is used in the app's layout. Layouts are components that allow you to avoid duplication of content in an app. The `NavLink` component provides a cue in the app's UI when the component URL is loaded by the app.
 
-In the unordered list (`<ul>...</ul>`) of the NavMenu component, add the following list item (`<li>...</li>`) and `NavLink` component for the `Todo` component.
+In the `<nav>...</nav>` section of the NavMenu component, add the following new `<div>...</div>` and `NavLink` component for the `Todo` component.
 
 In `Shared/NavMenu.razor`:
 
 ```razor
-<ul class="nav flex-column">
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
 
-    ...
+        ...
 
-    <li class="nav-item px-3">
-        <NavLink class="nav-link" href="todo">
-            <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
-        </NavLink>
-    </li>
-</ul>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="todo">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Todo
+            </NavLink>
+        </div>
+    </nav>
+</div>
 ```
 
-Save the `Shared/NavMenu.razor` file.  The browser should refresh automatically and now have the Todo entry on the navigation bar:
+Save the `Shared/NavMenu.razor` file. The browser should refresh automatically and now have the Todo entry on the navigation bar:
 
 ![Added Todo navigation element.](../media/todo-nav.png)
 
 ## Create a Todo Item
 
-1. Create a new file in the root of the project (the `BlazorApp` folder) named `TodoItem.cs` to hold a C# class that represents a todo item.  Use the following C# code for the `TodoItem` class.
+Create a new file in the root of the project (the `BlazorApp` folder) named `TodoItem.cs` to hold a C# class that represents a todo item.
+
+Use the following C# code for the `TodoItem` class. Declare the `Title` as a nullable string by using `?`.
 
 ```csharp
 public class TodoItem
 {
-    public string Title { get; set; }
+    public string? Title { get; set; }
     public bool IsDone { get; set; }
 }
 ```
 
-Stop and restart the `dotnet watch run` process, as it will not detect the new `TodoItem` file without being forced to restart.
+You may need to stop and restart the `dotnet watch run` process if it does not detect the new `TodoItem` file and rebuild your project.
 
 ## Bind a list of TodoItems
 
-You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor.  We'll accomplish this by:
+You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. We'll accomplish this by making the following changes in the `Pages/Todo.razor` file.
 
-- Adding a field for the todo items in the `@code` block. The `Todo` component uses this field to maintain the state of the todo list.
+- Add a field for the todo items in the `@code` block. The `Todo` component uses this field to maintain the state of the todo list.
 - Add unordered list markup and a `foreach` loop to render each todo item as a list item (`<li>`).
 
 ```cshtml
@@ -114,11 +117,11 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor.  
         private List<TodoItem> todos = new();
     }
     ```
-    
+
 1. When the `Add todo` button is selected, nothing happens because an event handler isn't attached to the button.
 
     Add an `AddTodo` method to the `Todo` component and register the method for the button using the `@onclick` attribute. The `AddTodo` C# method is called when the button is selected:
-    
+
     ```razor
     <input placeholder="Something todo" />
     <button @onclick="AddTodo">Add todo</button>
@@ -138,12 +141,12 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor.  
     ```razor
     @code {
         private List<TodoItem> todos = new();
-        private string newTodo;
+        private string? newTodo;
     
         // ... code continues ...
         }
     ```
-    
+
     Modify the `<input>` element to bind `newTodo` with the `@bind` attribute:
 
     ```razor
@@ -169,7 +172,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor.  
     
     @code {
         private List<TodoItem> todos = new();
-        private string newTodo;
+        private string? newTodo;
     
         private void AddTodo()
         {
@@ -208,4 +211,4 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor.  
 
 1. Add items, edit items, and mark todo items done to test the component.
 
-![Completed Todo Page.](../media/todo-complete.png)
+   ![Completed Todo Page.](../media/todo-complete.png)

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-identity-management-systems.integrate-github-single-sign-sso
+title: Integrate GitHub with single sign-on (SSO)
+metadata:
+  title: Integrate GitHub with single sign-on (SSO)
+  description: "Integrate GitHub with single sign-on (SSO)"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-integrate-github-single-sign-sso.md)]

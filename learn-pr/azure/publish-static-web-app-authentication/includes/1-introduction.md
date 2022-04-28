@@ -10,9 +10,9 @@ While you stay focused on developing your app, Azure Static Web Apps automatical
 
 Static web apps are commonly built using libraries and frameworks like Angular, React, Svelte, or Vue. These apps include HTML, CSS, JavaScript, and image assets that make up the application. When using a traditional web server architecture, these files are served from a single server along side any required API endpoints.
 
-With Azure Static Web Apps, static assets are separated from a traditional web server and are instead served from points globally distributed around the world. This distribution makes serving files much faster as files are physically closer to end users. API endpoints, which are optional, are hosted using a serverless architecture, which avoids the need for a full back-end server all together.
+With Azure Static Web Apps, static assets are separated from a traditional web server and are instead served from points globally distributed around the world. This distribution makes serving files much faster as files are physically closer to users. API endpoints, which are optional, are hosted using a serverless architecture, which avoids the need for a full back-end server altogether.
 
-The model for Azure Static Web Apps is that you get exactly what you need, no more, no less.
+The model for Azure Static Web Apps is that you get exactly what you need - no more, no less.
 
 :::image type="content" source="../media/static-web-apps-overview.png" alt-text="Static Apps overview.":::
 
@@ -28,12 +28,12 @@ Azure hosts and serves your web app while Azure Functions powers back-end API fu
 
 ### Key features
 
-- **Globally distributed web hosting** puts static content like HTML, CSS, JavaScript, and images closer to your users
-- **Integrated API** support provided by Azure Functions
+- **Globally distributed web hosting** puts static content like HTML, CSS, JavaScript, and images closer to your users.
+- **Integrated API** support provided by Azure Functions.
 - **First-class GitHub and Azure DevOps integration** where repository changes trigger builds and deployments.
-- **Free SSL certificates**, which are automatically renewed
-- **Unique preview URLs** for previewing pull requests
-- **Built-in authentication** with multiple providers
+- **Free SSL certificates**, which are automatically renewed.
+- **Unique preview URLs** for previewing pull requests.
+- **Built-in authentication** with multiple providers.
 
 ## Learning objectives
 
@@ -41,7 +41,7 @@ In this module, you'll create, modify, and deploy a web app and API with user au
 
 ### Choose your own path
 
-This module provides four variations of the sample application for you to choose from: Angular, React, Svelte, and Vue. The power of Azure Static Web Apps is that all of these flavors "just work".
+This module provides four variations of the sample application for you to choose from: Angular, React, Svelte, and Vue. The power of Azure Static Web Apps is that all of these flavors "just work."
 
 The starter code includes the four apps and the starting point for an API that you'll use.
 
@@ -55,12 +55,12 @@ The starter code includes the four apps and the starting point for an API that y
 
 ### What you'll do
 
-Once you choose your client application, you'll:
+After you choose your client application, you'll:
 
-1. Automatically build and deploy your web app and API to Azure from a GitHub repository with GitHub Actions
-1. Modify your web app to add login and logout buttons, and display information about the current logged in user.
-1. Modify your web app and API to block unauthenticated users and allow only specific authentication providers.
-1. Finally, you'll explore and launch your application, as shown below
+- Automatically build and deploy your web app and API to Azure from a GitHub repository with GitHub Actions.
+- Modify your web app to add login and logout buttons, and display information about the current logged in user.
+- Modify your web app and API to block unauthenticated users and allow only specific authentication providers.
+- Finally, you'll explore and launch your application, as follows.
 
 ::: zone pivot="angular"
 
@@ -88,4 +88,4 @@ Once you choose your client application, you'll:
 
 ## Next steps
 
-Right about now you might be thinking you need to create the Azure resources first, but Azure Static Web Apps has your daily workflow in mind. A more natural approach is to start with the code in GitHub first, before creating resources in Azure.
+Right about now, you might be thinking you need to create the Azure resources first, but Azure Static Web Apps has your daily workflow in mind. A more natural approach is to start with the code in GitHub first, before creating resources in Azure.

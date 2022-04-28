@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.develop-function
+title: Develop function
+metadata:
+  title: Develop function
+  description: "Develop function"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-develop-function.md)]

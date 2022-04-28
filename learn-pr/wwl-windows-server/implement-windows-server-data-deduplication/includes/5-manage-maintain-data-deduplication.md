@@ -5,7 +5,7 @@ Data deduplication is a continuous process, which might occasionally require add
 You can run Data Deduplication jobs on demand or automatically, according to the default or a custom schedule. These jobs include:
 
 |Job type|To trigger job execution, run (where the *VolumeLetter* parameter represents the target volume)|
-|-|--|
+|----|--------------|
 |Optimization|```Start-DedupJob –Volume *VolumeLetter* –Type Optimization```|
 |Data Scrubbing|```Start-DedupJob –Volume *VolumeLetter* –Type Scrubbing```|
 |Garbage Collection|```Start-DedupJob –Volume *VolumeLetter* –Type GarbageCollection```|
@@ -53,3 +53,9 @@ The main steps in the process are:
 1. Review Data Deduplication status. Use Windows PowerShell to review status of Data Deduplication jobs.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MFIg]
+
+---
+
+
+
+---

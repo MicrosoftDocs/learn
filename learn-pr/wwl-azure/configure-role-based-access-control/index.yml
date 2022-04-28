@@ -3,7 +3,7 @@ uid: learn.wwl.configure-role-based-access-control
 metadata:
   title: Configure role-based access control
   description: "You will learn how to use role-based access control to ensure resources are protected, but users can still access the resources they need."
-  ms.date: 07/26/2021
+  ms.date: 04/25/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
   - Review the built-in Azure role-based access control roles.
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/roles-based-access-control.svg
 levels:
 - intermediate
 roles:

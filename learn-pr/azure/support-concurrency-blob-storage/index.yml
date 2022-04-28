@@ -2,10 +2,10 @@
 uid: learn.support-concurrency-blob-storage
 metadata:
   title: Support concurrency in Blob storage apps with ETags and blob leases
-  description: In this module you will learn how to implement application code to manage concurrency in blob storage. 
+  description: In this module you will learn how to implement application code to manage concurrency in blob storage.
   ms.date: 04/06/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.learn-contact: nickwalk

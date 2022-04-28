@@ -4,12 +4,13 @@ title: Exercise add terms of use acceptance report
 metadata:
   title: Exercise add terms of use acceptance report
   description: "Exercise add terms of use acceptance report"
-  ms.date: 08/04/2021
+  ms.date: 02/08/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 16
 content: |
   [!include[](includes/5-add-terms-of-use-acceptance-report.md)]

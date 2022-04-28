@@ -5,11 +5,10 @@ metadata:
   title: Detect network connectivity
   description: Detect network connectivity
   ms.date: 4/15/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 durationInMinutes: 10
 content: |
   [!include[](includes/2-detect-network-connectivity.md)]

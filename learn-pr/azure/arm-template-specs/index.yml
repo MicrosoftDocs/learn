@@ -4,17 +4,14 @@ metadata:
   moduleType: standard
   title: Publish libraries of reusable infrastructure code by using template specs
   description: Learn how to create, publish, and deploy template specs, which enable you to store and reuse templates across your organization.
-  ms.date: 05/17/2021
+  ms.date: 09/30/2021
   author: johndowns
   ms.author: jodowns
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Publish libraries of reusable infrastructure code by using template specs
 summary: |
-  ARM template specs enable you to reuse and share your ARM templates across your organization.
-  As a template author, you can use template specs to publish a library of templates that deploy your organization's Azure resources, configured according to your requirements.
-  In this module, you'll learn about the benefits of template specs. You'll find out how to create and publish template specs, and how to deploy them.
-  You'll also learn how to manage template specs, including how to control access and how to safely update them by using versions.
+  Reuse and share your ARM templates across your organization. Publish template specs that deploy resources pre-configured for your organization's requirements. Control access and safely update template specs by using versions.
 abstract: |
   After completing this module, you'll be able to:
     - Create and deploy template specs
@@ -39,6 +36,8 @@ roles:
   - devops-engineer
   - developer
   - administrator
+languages:
+  - bicep
 products:
   - azure-resource-manager
 units:

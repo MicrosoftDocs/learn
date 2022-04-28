@@ -4,7 +4,7 @@ To configure automated investigation and remediation, turn on the features, and 
 
 As a global administrator or security administrator:
 
-1. In the navigation pane, select **Settings**.
+1. In the navigation pane, select **Settings > Endpoints**.
 
 1. In the General section, select **Advanced features**.
 
@@ -12,7 +12,7 @@ As a global administrator or security administrator:
 
 ## Set up device groups
 
-1. In the navigation pane, on the Settings page, under Permissions, select **Device groups**.
+1. In the navigation pane for Endpoints under Permissions, select **Device groups**.
 
 1. Select **+ Add device group**.
 
@@ -22,7 +22,7 @@ As a global administrator or security administrator:
 
         - In the Automation level list, select a level, such as Full – remediate threats automatically. The automation level determines whether remediation actions are taken automatically or only upon approval. To learn more, see How threats are remediated.
 
-        - In the Members section, use one or more conditions to identify and include devices.
+        - In the Devices section, use one or more conditions to identify and include devices.
 
         - On the User access tab, select the Azure Active Directory groups that should have access to the device group you're creating.
 

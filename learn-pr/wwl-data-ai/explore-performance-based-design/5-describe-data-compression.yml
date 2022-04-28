@@ -4,12 +4,13 @@ title: Describe data compression
 metadata:
   title: Describe data compression
   description: "Describe data compression"
-  ms.date: 10/15/2020
+  ms.date: 01/21/2022
   author: wwlpublish
-  ms.author: kadelaney
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/5-describe-data-compression.md)]

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Math Operators
   description: Perform addition, subtraction, multiplication, division, and cast data types.
   ms.date: 09/03/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

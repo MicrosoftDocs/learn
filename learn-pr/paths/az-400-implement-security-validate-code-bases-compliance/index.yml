@@ -1,0 +1,46 @@
+### YamlMime:LearningPath
+uid: learn.wwl.az-400-implement-security-validate-code-basescompliance
+metadata:
+  title: 'AZ-400: Implement security and validate code bases for compliance'
+  description: 'AZ-400: Implement security and validate code bases for compliance'
+  ms.date: 03/22/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-400: Implement security and validate code bases for compliance'
+prerequisites: |
+  None
+summary: |
+  This learning path explores an infrastructure and configuration strategy and appropriate toolset for a release pipeline and application infrastructure. It explains compliance and security implementation in your application infrastructure.
+iconUrl: /learn/achievements/implement-security-and-validate-code-bases-for-compliance.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+modules:
+- learn.wwl.introduction-to-secure-devops
+- learn.wwl.implement-open-source-software-azure
+- learn.wwl.software-composition-analysis
+- learn.wwl.static-analyzers
+- learn.wwl.owasp-and-dynamic-analyzers
+- learn.wwl.security-monitoring-and-governance
+trophy:
+  uid: learn.wwl.az-400-implement-security-validate-code-bases-compliance.trophy

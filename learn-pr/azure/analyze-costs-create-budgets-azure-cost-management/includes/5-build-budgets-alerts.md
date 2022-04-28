@@ -1,4 +1,4 @@
-You can create an Azure subscription budget for a monthly, quarterly, or annual period. Your navigational content in the Azure portal determines whether you create a budget for a subscription or for a management group.
+You can create an Azure subscription budget for a monthly, quarterly, or annual period. Your navigational context in the Azure portal determines whether you create a budget for a subscription or for a management group.
 
 To create or view a budget, open the desired scope in the Azure portal, and select **Budgets** in the menu. For example, navigate to **Subscriptions**, select a subscription from the list, and then select **Budgets** in the menu. Use the **Scope** pill to switch to a different scope, like a management group, in Budgets.
 

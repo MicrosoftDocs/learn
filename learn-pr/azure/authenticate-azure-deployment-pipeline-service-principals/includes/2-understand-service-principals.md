@@ -22,7 +22,7 @@ Azure Active Directory (Azure AD) is the service that manages identities for Azu
 
 :::image type="content" source="../media/2-security-principals.png" alt-text="Diagram that shows the four types of security principals: user, group, service principal, and managed identity." border="false":::
 
-- A *user* represents a human who usually signs in interactively by using a browser. Users often have additional security checks to perform when they sign in, such as multifactor authentication (MFA) and conditional access based on their location or network.
+- A *user* represents a human who usually signs in interactively by using a browser. Users often have additional security checks to perform when they sign in, such as multifactor authentication (MFA) and Conditional Access based on their location or network.
 - A *group* represents a collection of users. Groups don't authenticate directly, but they provide a convenient way to assign permissions to a set of users together.
 - A *service principal* represents an automated process or system that usually doesn't have a human directly running it.
 - A *managed identity* is a special type of service principal that's designed for situations where a human isn't involved in the authentication process.
@@ -49,7 +49,7 @@ When you work with pipelines, you usually can't use managed identities. This is 
 >- A _hosted agent_, which is a server that Microsoft manages
 >- A _hosted runner_, which GitHub manages 
 >
-> Hosted agents and hosted runners aren't compatible with managed identities.
+> Hosted agents and hosted runners aren't currently compatible with managed identities.
 
 > [!TIP]
 > In other parts of your solution, if you have a choice between using a managed identity or using a normal service principal, it's usually best to go with a managed identity. Those are easier to work with and can be more secure.
@@ -73,7 +73,7 @@ You might see a few different terms in use when you work with service principals
 
 Service principals are a feature of Azure AD. Azure AD is a global identity service. Many companies use Azure AD, and each company is called a _tenant_.
 
-Azure AD also has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can think of a deployment pipeline as an application too. 
+Azure AD has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can think of a deployment pipeline as an application too. 
 
 In Azure AD, applications can do many things that are beyond the scope of authentication and pipeline deployments. When you create an application and tell Azure AD about it, you create an object called an _application registration_. An application registration represents the application in Azure AD.
 

@@ -1,14 +1,43 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.rust-introduction.4-rust-playground
 metadata:
-  title: 'Exercise: Try the Rust playground'
-  description: Use the Rust playground to write, edit, build, and run a basic program.
-  ms.date: 07/26/2021
+  title: The Rust playground
+  description: Discover how to work with code in the Rust playground environment.
+  ms.date: 09/01/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Exercise: Try the Rust playground'
+  ms.custom: team=nextgen
+title: The Rust playground
 durationInMinutes: 3
 content: |
   [!include[](includes/4-rust-playground.md)]
+
+quiz:
+  questions:
+   
+  - content: "What Rust playground tool can you use to find mistakes in your code?"
+    choices:
+    - content: "rustfmt"
+      isCorrect: false
+      explanation: "Incorrect. You can use the rustfmt tool to format your Rust code to use official Rust styles."
+    - content: "Clippy"
+      isCorrect: true
+      explanation: "Correct. You can use the Clippy collection of lint tests to find mistakes in your code and see suggestions for how to improve your code."
+    - content: "Debug"
+      isCorrect: false
+      explanation: "Incorrect. Debug is a compile option."
+
+  - content: "When is a network connection not available in the Rust playground?"
+    choices:
+    - content: "When editing code."
+      isCorrect: false
+      explanation: "Incorrect. A network connection is available when you're editing code."
+    - content: "When running a program."
+      isCorrect: false
+      explanation: "This answer is partially correct. A network connection is also not available when compiling code."
+    - content: "When compiling code or running a program."
+      isCorrect: true
+      explanation: "Correct. When you compile code or run a program in the playground, a network connection isn't available."
+      

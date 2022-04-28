@@ -4,12 +4,13 @@ title: Exercise - Deploy infrastructure Azure Resource Manager template for SAP 
 metadata:
   title: Exercise - Deploy infrastructure Azure Resource Manager template for SAP on Azure
   description: "Exercise - Deploy infrastructure Azure Resource Manager template for SAP on Azure"
-  ms.date: 07/30/2021
+  ms.date: 12/10/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/3-exercise-deploy-infrastructure-azure-resource-manager-template-for-sap.md)]

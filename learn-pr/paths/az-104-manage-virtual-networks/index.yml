@@ -4,9 +4,9 @@ metadata:
   title: "AZ-104: Configure and manage virtual networks for Azure administrators"
   description: "Learn how to configure key Azure network capabilities and prepare for Exam AZ-104: Microsoft Azure Administrator."
   brand: azure
-  ms.date: 05/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 08/06/2021
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "AZ-104: Configure and manage virtual networks for Azure administrators"
@@ -52,8 +52,6 @@ summary: |
     [AZ-104: Monitor and back up Azure resources](/learn/paths/az-104-monitor-backup-resources/)
   :::column-end:::
   :::row-end:::
-
-  Complete all of the learning paths in the series if you are preparing for [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104). 
 prerequisites: |
   - [Azure Fundamentals Part 1: Describe core Azure concepts](../az-900-describe-cloud-concepts/index.yml)
   - [Azure Fundamentals Part 2: Describe core Azure services](../az-900-describe-core-azure-services/index.yml)
@@ -80,19 +78,20 @@ products:
 - azure-firewall
 - azure-virtual-desktop
 modules:
-- learn.configure-the-network-for-your-virtual-machines
+- learn.wwl.configure-virtual-networks
+- learn.wwl.configure-network-security-groups
+- learn.wwl.configure-azure-firewall
+- learn.wwl.configure-azure-dns
+- learn.wwl.configure-vnet-peering
+- learn.wwl.configure-vpn-gateway
+- learn.wwl.configure-expressroute-virtual-wan
+- learn.wwl.configure-network-routing-endpoints
+- learn.wwl.configure-azure-load-balancer
+- learn.wwl.configure-azure-application-gateway
 - learn.design-ip-addressing-for-azure
 - learn.integrate-vnets-with-vnet-peering
-- learn.secure-and-isolate-with-nsg-and-service-endpoints
-- learn.connect-vm-with-azure-bastion
 - learn.azure.host-domain-azure-dns
 - learn.control-network-traffic-flow-with-routes
-- learn.protect-virtual-desktop-deployment-azure-firewall
-- learn.connect-on-premises-network-with-vpn-gateway
-- learn.connect-on-premises-network-with-expressroute
 - learn.improve-app-scalability-resiliency-with-load-balancer
-- troubleshoot-inbound-network-connectivity-azure-load-balancer
-- learn.load-balance-web-traffic-with-application-gateway
-- learn.troubleshoot-azure-network-infrastructure
 trophy:
   uid: learn.az-104-manage-virtual-networks.trophy

@@ -1,4 +1,4 @@
-Live response gives security operations teams instantaneous access to a device (also referred to as a machine) using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time.
+Live response provides security operations teams instantaneous access to a device using a remote shell connection. Live response provides you the power to do in-depth investigation and take immediate response actions to promptly contain identified threats.
 
 Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.
 
@@ -18,9 +18,9 @@ With live response, analysts can do all of the following tasks:
 
 ## Prerequisites
 
-Before you can initiate a session on a device, make sure you fulfill the following requirements:
+Before you can start a session on a device, make sure you fulfill the following requirements:
 
-**Verify that you're running a supported version of Windows 10**
+**Verify that you're running a supported version of Windows 10 or later**
 
 Enable live response from the settings page.  You'll need to enable the live response capability in the Advanced features settings page.
 
@@ -28,7 +28,7 @@ Only users with manage security or global admin roles can edit these settings.
 
 **Ensure that the device has an Automation Remediation level assigned to it**
 
-You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you won't be able to establish a Live Response session to a member of that group.
+You'll need to enable, at least, the minimum Remediation Level for a given Device Group. Otherwise you can't establish a Live Response session to a member of that group.
 
 **Enable live response unsigned script execution (optional)**
 
@@ -36,7 +36,7 @@ Allowing the use of unsigned scripts may increase your exposure to threats.  Run
 
 **Ensure that you have the appropriate permissions**
 
-Only users who have been provisioned with the appropriate permissions can initiate a session.  The option to upload a file to the library is only available to those with the appropriate RBAC permissions. The button is greyed out for users with only delegated permissions.  Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users' permissions are controlled by RBAC custom role.
+Only users who have been provisioned with the appropriate permissions can initiate a session.  The option to upload a file to the library is only available to users with the appropriate RBAC permissions. The button is greyed out for users with only delegated permissions.  Depending on the role that's been granted to you, you can run basic or advanced live response commands. Users' permissions are controlled by RBAC custom role.
 
 ## Live response dashboard overview
 
@@ -68,23 +68,23 @@ The following commands are available for user roles that are granted the ability
 
 | Command| Description|
 | :--- | :--- |
-| cd| Changes the current directory.|
-| cls| Clears the console screen.|
-| connect| Initiates a live response session to the device.|
-| connections| Shows all the active connections.|
-| dir| Shows a list of files and subdirectories in a directory.|
-| download <file_path> &| Downloads a file in the background.|
-| drivers| Shows all drivers installed on the device.|
-| fg <command ID>| Returns a file download to the foreground.|
-| fileinfo| Get information about a file.|
-| findfile| Locates files by a given name on the device.|
-| help| Provides help information for live response commands.|
-| persistence| Shows all known persistence methods on the device.|
-| processes| Shows all processes running on the device.|
-| registry| Shows registry values.|
-| scheduledtasks| Shows all scheduled tasks on the device.|
-| services| Shows all services on the device.|
-| trace| Sets the terminal's logging mode to debug.|
+| [cd]| Changes the current directory.|
+| [cls]| Clears the console screen.|
+| [connect]| Starts a live response session to the device.|
+| [connections]| Shows all the active connections.|
+| [dir]| Shows a list of files and subdirectories in a directory.|
+| [download] <file_path> &| Downloads a file in the background.|
+| [drivers]| Shows all drivers installed on the device.|
+| [fg] \<command ID\>| Returns a file download to the foreground.|
+| [fileinfo]| Get information about a file.|
+| [findfile]| Locates files by a given name on the device.|
+| [help]| Provides help information for live response commands.|
+| [persistence]| Shows all known persistence methods on the device.|
+| [processes]| Shows all processes running on the device.|
+| [registry]| Shows registry values.|
+| [scheduledtasks]| Shows all scheduled tasks on the device.|
+| [services]| Shows all services on the device.|
+| [trace]| Sets the terminal's logging mode to debug.|
 
 ### Advanced commands
 
@@ -106,7 +106,7 @@ The commands that you can use in the console follow similar principles as Window
 
 ### Get a file from the device
 
-For scenarios when you'd like to get a file from a device you're investigating, you can use the [getfile] command. This allows you to save the file from the device for further investigation.
+For scenarios when you'd like to get a file from a device you're investigating, you can use the [getfile] command. The [getfile] command allows you to save the file from the device for further investigation.
 
 The following file size limits apply:
 
@@ -226,9 +226,9 @@ Select the Command log tab to see the commands used on the device during a sessi
 
 ## Command examples
 
-The following is a command example, which demonstrates the use of the live response commands.
+The next commands are examples that demonstrates the use of the live response commands.
 
-### analyze
+### Analyze
 
 ```console
 # Analyze the file malware.txt
@@ -262,9 +262,9 @@ Live response has the following limitations:
 
 - The following file size limits apply:
 
-  - getfile limit: 3 GB
+  - Getfile limit: 3 GB
 
-  - fileinfo limit: 10 GB
+  - Fileinfo limit: 10 GB
 
-  - library limit: 250 MB
+  - Library limit: 250 MB
 

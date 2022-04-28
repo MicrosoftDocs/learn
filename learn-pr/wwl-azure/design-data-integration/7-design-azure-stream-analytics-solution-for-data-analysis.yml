@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-data-integration.design-azure-stream-analytics-solution-for-data-analysis
+title: Design Azure Stream Analytics solution for data analysis
+metadata:
+  title: Design Azure Stream Analytics solution for data analysis
+  description: "Design Azure Stream Analytics solution for data analysis"
+  ms.date: 03/16/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-design-azure-stream-analytics-solution-for-data-analysis.md)]

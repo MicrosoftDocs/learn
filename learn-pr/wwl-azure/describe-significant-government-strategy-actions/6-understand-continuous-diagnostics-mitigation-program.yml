@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-significant-government-strategy-actions.understand-continuous-diagnostics-mitigation-program-cdm
+title: Understand the Continuous Diagnostics and Mitigation program (CDM)
+metadata:
+  title: Understand the Continuous Diagnostics and Mitigation program (CDM)
+  description: "Understand the Continuous Diagnostics and Mitigation program (CDM)"
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: jesander
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-understand-continuous-diagnostics-mitigation-program.md)]

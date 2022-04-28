@@ -1,10 +1,7 @@
-Our goal was to write code that formats strings including special characters like double-quotes, new lines, tabs and other white space, use unicode characters and combine strings together using two different techniques.
+Our goal was to write code that formats strings including special characters (like double-quotes, new lines, tabs, and other white space), use unicode characters, and combine strings together using two different techniques.
 
 Using character escape sequences, we added special characters in our literal strings by either using special escaping sequences or using verbatim strings.  We added Unicode characters from other language sets like Japanese Kanji and Russian Cyrillic in our literal strings.  We used simple string concatenation with the `+` symbol, and upgraded to string interpolation for combining values into a string template.
 
-Without the ability to format our output, we would be severely restricted in what kinds of information we could represent to the user.  However, now can provide our users with sophisticated instructions and feedback with a wide variety of formatting, symbols, and languages.
+Without the ability to format our output, we would be severely restricted in what kinds of information we could represent to the user.  However, now we can provide our users with sophisticated instructions and feedback with a wide variety of formatting, symbols, and languages.
 
-## Learn more with a Channel 9 video series
-
-- [C# 101](https://channel9.msdn.com/Series/CSharp-101/?WT.mc_id=Educationalcsharp-c9-scottha)
-- [C# Advanced](https://channel9.msdn.com/Series/C-Advanced/?&WT.mc_id=EducationalAdvancedCsharp-c9-niner)
+[!include[](../../../includes/dotnet-summary.md)]

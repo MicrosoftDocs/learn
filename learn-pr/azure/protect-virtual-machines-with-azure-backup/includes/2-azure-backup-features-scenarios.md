@@ -4,13 +4,13 @@ In this unit, you'll look at how Azure Backup works, and study some of the suppo
 
 ## What is Azure Backup?
 
-Azure Backup is a built-in Azure service that provides secure backup for all Azure-managed data assets. It uses zero-infrastructure solutions to enable self-service backups and restores, with at-scale management at a lower and predictable cost. At present, Azure Backup offers specialized backup solutions for Azure and on-premises virtual machines (VMs). Azure Backup also enables workloads like SQL Server or SAP HANA running in Azure VMs to have enterprise-class backup and restore options.
+Azure Backup is a built-in Azure service that provides secure backup for all Azure-managed data assets. It uses zero-infrastructure solutions to enable self-service backups and restores, with at-scale management at a lower and predictable cost. Azure Backup currently offers specialized backup solutions for Azure and on-premises virtual machines (VMs). Azure Backup also gives workloads like SQL Server or SAP HANA running in Azure VMs enterprise-class backup and restore options.
 
 In contrast to traditional backup solutions that can take considerable effort to set up, Azure Backup is easily managed through the Azure portal.
 
 ### Azure Backup versus Azure Site Recovery
 
-Both Backup and Site Recovery aim to make the system more resilient to faults and failures. However, while the primary goal of backup is to maintain copies of stateful data that allow you to go back in time, site-recovery replicates the data in almost real time and allows for a failover.
+Both Backup and Site Recovery aim to make the system more resilient to faults and failures. However, while the primary goal of backup is to maintain copies of stateful data that allow you to go back in time, site recovery replicates the data in almost real time and allows for a failover.
 
 In that sense, if there are issues like network or power outages, you can use availability zones. For a region-wide disaster (such as natural disasters), Site Recovery is used. Backups are used in cases of accidental data loss, data corruption, or ransomware attacks.
 
@@ -20,11 +20,11 @@ Additionally, the choice of a recovery approach depends on the criticality of th
 
 Traditional backup solutions, such as disk and tape, don't offer the highest level of integration with cloud-based solutions. Azure Backup has several benefits over more traditional backup solutions:
 
-**Zero-infrastructure backup**: Azure Backup eliminates the need to deploy and manage any backup infrastructure or storage. This means there's no overhead in maintaining backup servers or scaling the storage up or down as the needs vary.  
+**Zero-infrastructure backup**: Azure Backup eliminates the need to deploy and manage any backup infrastructure or storage, meaning there's no overhead in maintaining backup servers or scaling the storage up or down as the needs vary.  
 
 **Long-term retention**:  Meet rigorous compliance and audit needs by retaining backups for many years, beyond which the recovery points will be pruned automatically by the built-in lifecycle management capability.
 
-**Security**: Azure Backup provides security to your backup environment - both when your data is in transit and at rest.  
+**Security**: Azure Backup provides security to your backup environment - both when your data is in transit and at rest:
 
 - **Azure role-based access control**: RBAC allows you to segregate duties within your team and grant only the amount of access to users necessary to do their jobs.
 
@@ -32,15 +32,17 @@ Traditional backup solutions, such as disk and tape, don't offer the highest lev
 
 - **No internet connectivity required**: When using Azure VMs, all the data transfer happens only on the Azure backbone network without needing to access your virtual network. So no access to any IPs or FQDNs is required.
 
-- **Soft delete**: With soft delete, the backup data is retained for 14 additional days even after the deletion of the backup item. This protects against accidental deletion or malicious deletion scenarios, allowing the recovery of those backups with no data loss.
+- **Soft delete**: With soft delete, the backup data is retained for 14 more days even after the deletion of the backup item. This protects against accidental deletion or malicious deletion scenarios, allowing the recovery of those backups with no data loss.
 
 Azure Backup also offers the ability to back up virtual machines encrypted with Azure Disk Encryption.
 
 **High availability**: Azure Backup offers three types of replication:
-    - Locally redundant storage (LRS)
-    - Geo-redundant storage (GRS)
-    - Read-access geo-redundant storage (RA-GRS) (to enable customer-controlled, cross-region restore)
-to keep your backup data highly available.
+
+- Locally redundant storage (LRS): This is the lowest-cost option with basic protection against server rack and drive failures. We recommend it for non-critical scenarios.
+
+- Geo-redundant storage (GRS): This intermediate option has failover capabilities in a secondary region. We recommend it for backup scenarios.
+
+- Zone-redundant storage (ZRS): This intermediate option has protection against datacenter-level failures. We recommend it for high availability scenarios.
 
 **Centralized monitoring and management**: Azure Backup provides built-in monitoring and alerting capabilities in a Recovery Services vault. These capabilities are available without any additional management infrastructure.  
 

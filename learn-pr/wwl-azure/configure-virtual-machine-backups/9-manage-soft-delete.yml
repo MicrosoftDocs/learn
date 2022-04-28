@@ -4,12 +4,13 @@ title: Manage soft delete
 metadata:
   title: Manage soft delete
   description: "Manage soft delete"
-  ms.date: 07/26/2021
+  ms.date: 03/11/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/9-manage-soft-delete.md)]

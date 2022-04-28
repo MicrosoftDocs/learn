@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.startups.fundamentals.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review startup concepts. Examples include personal considerations to keep in mind when founding a startup, and factors that can lead to success and failure.
+  ms.date: 02/11/2022
+  author: ryanmesches
+  ms.author: ryanmesches
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

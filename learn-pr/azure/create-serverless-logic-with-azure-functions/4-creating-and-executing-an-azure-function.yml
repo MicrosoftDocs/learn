@@ -5,8 +5,8 @@ metadata:
   title: Run your code on-demand with Azure Functions
   description: Run your code on-demand with Azure Functions
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

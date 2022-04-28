@@ -93,12 +93,12 @@ No other action needed.
 
 |Issue|Solution|
 |-----|--------|
-|No automated process for security patches and updates|Use [Azure automatic update manager](/azure/virtual-machines/automatic-vm-guest-patching) or [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Integrate with [Azure security center](https://azure.microsoft.com/services/security-center) for the ultimate protection.|
+|No automated process for security patches and updates|Use [Azure automatic update manager](/azure/virtual-machines/automatic-vm-guest-patching) or [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Integrate with [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center) for the ultimate protection.|
 |No Antivirus (AV) enforcement|Use [Microsoft defender advanced threat protection](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).|
 |No timeout session enforcement on machines|Enforce [Azure group policy](/azure/active-directory-domain-services/manage-group-policy).|
 |No Mobile Device Management (MDM) solution|Implement [Microsoft endpoint manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which includes solutions like [Microsoft endpoint configuration manager](/mem/configmgr/) and [Microsoft Intune](/mem/intune/). It manages and monitors mobile devices, desktop computers, virtual machines, embedded devices, and servers.|
 |Limited logging and monitoring|Use Azure Monitor [Log analytics](/azure/azure-monitor/log-query/log-query-overview) and follow [Azure logging guidelines](/azure/security/fundamentals/log-audit).|
-|No intelligence platform or analytics service|Use [Azure sentinel](https://azure.microsoft.com/services/azure-sentinel/), Microsoft's Security Information and Event Management (SIEM) solution.|
+|No intelligence platform or analytics service|Use [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/), Microsoft's Security Information and Event Management (SIEM) solution.|
 |Limited logging history|Follow [Azure logging guidelines](/azure/security/fundamentals/log-audit).|
 
 ## Physical and environmental

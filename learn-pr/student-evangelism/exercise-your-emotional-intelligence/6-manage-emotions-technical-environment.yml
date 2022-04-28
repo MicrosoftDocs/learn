@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.exercise-your-emotional-intelligence.manage-emotions-technical-environment
+title: Manage your emotions in a technical environment
+metadata:
+  title: Manage your emotions in a technical environment
+  description: Manage your emotions in a technical environment and explore the connection between EQ and mindset.
+  ms.date: 09/03/2021
+  author: interurban
+  ms.author: jadenyer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-manage-emotions-technical-environment.md)]

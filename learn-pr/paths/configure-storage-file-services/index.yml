@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.configure-storage-file-services
+metadata:
+  title: Configure storage and file services
+  description: Configure storage and file services
+  ms.date: 03/14/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure storage and file services
+prerequisites: |
+  - Windows Server 2012 or Windows Server 2016
+  - Core Microsoft compute, storage, networking, and virtualization technologies
+  - Basic experience with implementing and managing IaaS services in Microsoft Azure.
+summary: |
+  Learn to implement and manage Windows Server file servers and storage. Implement Storage Spaces, data deduplication, and Windows Server Storage Replica. You'll also learn how to deploy Azure File Sync and configure Azure File services.
+iconUrl: /learn/achievements/configure-storage-and-file-services.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- windows-server
+modules:
+- learn.wwl.manage-windows-server-file-servers
+- learn.wwl.implement-storage-spaces-storage-spaces-direct
+- learn.wwl.implement-windows-server-data-deduplication
+- learn.wwl.implement-windows-server-iscsi
+- learn.wwl.implement-windows-server-storage-replica
+- learn.wwl.implement-hybrid-file-server-infrastructure
+trophy:
+  uid: learn.wwl.configure-storage-file-services.trophy

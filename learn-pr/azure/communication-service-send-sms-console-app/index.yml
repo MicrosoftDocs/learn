@@ -4,8 +4,8 @@ metadata:
   title: Send an SMS message from a C# console application with Azure Communication Services
   description: In this module, you'll create a C# console application that sends SMS messages using a phone number provisioned via Azure Communication Services.
   ms.date: 03/03/2021
-  author: mikben
-  ms.author: mikben
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Send an SMS message from a C# console application with Azure Communication Services
@@ -28,13 +28,11 @@ prerequisites: |
   - Basic familiarity with C#
   - The latest version of the [.NET Core client library](https://dotnet.microsoft.com/download/dotnet-core)
   - An Azure account with an active subscription and a billing address in the United States. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)
-
 units:
 - learn.azure.communication-service-send-sms-console-app.introduction
 - learn.azure.communication-service-send-sms-console-app.exercise-create-account
 - learn.azure.communication-service-send-sms-console-app.exercise-send
 - learn.azure.communication-service-send-sms-console-app.knowledge-check
 - learn.azure.communication-service-send-sms-console-app.summary
-
 badge:
   uid: learn.azure.communication-service-send-sms-console-app.badge

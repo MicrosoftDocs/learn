@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-create-program.3-basic-data-types
+metadata:
+  title: Explore data types for numbers, text, and true/false values
+  description: Review primary data types in Rust. Explore how integers, floating point numbers characters, and text strings are defined. Discover how true or false boolean values are used.
+  ms.date: 09/20/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Explore data types for numbers, text, and true/false values
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-basic-data-types.md)]
+
+quiz:
+  questions:
+
+  - content: "Which statement describes how integer number values are defined in Rust?"
+    choices:
+    - content: "Integers in Rust are identified primarily by their bit size, such as 8-bit, 16-bit, and so on."
+      isCorrect: false
+      explanation: "Incorrect. Integers are identified by both their bit size _and_ their __signed__ property value."
+    - content: "Integers in Rust are identified by their bit size and the __signed__ property."
+      isCorrect: true
+      explanation: "Correct! An integer is identified by a combination of its bit size and whether it's signed (`i`) or unsigned (`u`)."
+    - content: "A positive or negative integer in Rust can be defined as an unsigned (`u`) or signed (`i`) value."
+      isCorrect: false
+      explanation: "Incorrect. While a signed (`i`) integer can be a positive or negative number, an unsigned (`u`) integer can be *only* a positive number."
+
+  - content: "Which statement correctly describes how Rust supports text character values?"
+    choices:
+    - content: "Rust has one data type that can be used for both single characters and multi-character text strings."
+      isCorrect: false
+      explanation: "Incorrect. Rust has two basic types for multi-character text strings (`str` and `String`) and another for a single character (`char`)."
+    - content: "A character (`char`) can be only a single alpha letter like 'A' or 'z'. A string can be a series of any characters: letters, numbers, images, and so on."
+      isCorrect: false
+      explanation: "Incorrect. A character (`char`) in Rust can be any single character, including alpha letters, numbers, images, and so on."
+    - content: "In Rust, all text types are valid UTF-8 representations."
+      isCorrect: true
+      explanation: "Correct! All text types in Rust are valid UTF-8 representations." 

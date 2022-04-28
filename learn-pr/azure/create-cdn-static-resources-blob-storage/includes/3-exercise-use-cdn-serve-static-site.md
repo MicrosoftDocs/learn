@@ -12,19 +12,23 @@ Now, you'll create a CDN and connect that CDN to the website that you've created
 
 1. In the **New** pane, select **Web**.
 
-1. Under **Featured**, select **CDN** (or search for **CDN**).
+1. Search for **Front Door and CDN profiles**, then select **Create**.
 
-1. Give your CDN a name, such as **yourinitials-cdn**.
+1. Select the radio button for **Explore other offerings**, then select the radio button for **Azure CDN Standard from Microsoft (classic)**.
+
+1. Select **Continue**.
 
 1. Under **Resource Group**, select the existing Resource Group ("**<rgn>[sandbox resource group name]</rgn>**") from the drop-down list.
 
-1. Under **Pricing tier**, select **Standard Microsoft**.
+1. Give your CDN a name, such as **yourinitials-cdn**.
 
-1. Ensure that **Create a new CDN endpoint now** isn't selected, then select **Create**.
+1. Under **Pricing tier**, select **Microsoft CDN (Classic)**.
+
+1. Ensure that **Create a new CDN endpoint now** isn't selected, select **Review and Create**, then select **Create**.
 
 ![Create a new CDN Endpoint in the Azure.](../media/3-cdn-new-profile.png)
 
-When you've created the profile, select the Notifications (bell) icon, then select **Successfully created a CDN profile** to display the CDN profile pane.
+When you've created the profile, select **Go to resource** to display the CDN profile pane.
 
 ## Create a CDN Endpoint
 
@@ -45,4 +49,4 @@ You now need to create a CDN profile that connects to the source web server in t
 
 1. After 10 minutes has elapsed, select the **Endpoint hostname** link. The web site should display.
 
-![Create a new CDN endpoint in the Azure portal.](../media/3-new-cdn-endpoint.PNG)
+![Create a new CDN endpoint in the Azure portal.](../media/3-new-cdn-endpoint.png)

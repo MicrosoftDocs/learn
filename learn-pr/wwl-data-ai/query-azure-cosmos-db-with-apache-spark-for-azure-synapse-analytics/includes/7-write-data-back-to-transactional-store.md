@@ -1,5 +1,4 @@
-Whist the analytical insights that Adventure Works was able to gather from joining together operational data that was previously siloed in disconnected and hard to correlate data stores was useful, they have decided that making this information to every user across the organization though their existing application is the right way to achieve ongoing visibility of these key statistics. To do that we need to write this data back to the Azure Cosmos DB transactional stores. 
-
+Adventure Works has decided that it would like to make information available to every user across the organization through their existing application. In order to achieve this, we need to write data back to the Azure Cosmos DB transactional stores.
 As with all applications the process starts by appropriately modeling the data. Some of the things to consider as we write this data back to Azure Cosmos DB: 
 
 -	Does the document have an appropriate partition key, such that it will evenly distribute items and queries across all partitions as the data grows.
@@ -80,6 +79,6 @@ For our example, where we are wanting to write the limited number of statistic r
 
     [![Writing to the transactional store](../media/perform-query-in-transactional-store.png)](../media/perform-query-in-transactional-store.png#lightbox)
 
-    And should immediacy return a value of 273 as the result. 
+    And should immediately return a value of 273 as the result. 
 
     We have successfully updated the Azure Cosmos DB transactional store from Synapse Analytics with the results of our analytical processing done over data that was sourced from Azure Cosmos DB analytical store.

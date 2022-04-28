@@ -1,7 +1,7 @@
 The following code is one possible solution for the challenge from the previous unit.
 
 ```csharp-interactive
-string input = "<div class='product'><h2>Widgets &trade;</h2><span>5000</span></div>";
+const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
 
 string quantity = "";
 string output = "";
@@ -38,7 +38,7 @@ Console.WriteLine($"Quantity: {quantity}");
 Console.WriteLine($"Output: {output}");
 ```
 
-This code is merely "*one possible solution*".  As long as your code produces the following output, you were successful.
+This code is merely "*one possible solution*". As long as your code produces the following output, you were successful.
 
 ```output
 Quantity: 5000
@@ -48,4 +48,4 @@ Output: <h2>Widgets &reg;</h2><span>5000</span>
 If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, maybe you should review the previous units before you continue on.  All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble completing this challenge, maybe you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.

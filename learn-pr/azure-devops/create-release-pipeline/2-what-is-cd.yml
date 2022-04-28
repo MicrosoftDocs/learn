@@ -5,8 +5,8 @@ metadata:
   title: What is continuous delivery?
   description: Learn what continuous delivery is, why it's important, and what tools you can use.
   ms.date: 06/21/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

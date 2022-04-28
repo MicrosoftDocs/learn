@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.azure.create-composable-bicep-files-using-modules
+metadata:
+  moduleType: standard
+  title: Create composable Bicep files by using modules
+  description: Build Bicep modules that are reusable, flexible, and shareable. Add parameters, conditions, and outputs to make your modules composable into templates.
+  ms.date: 10/10/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create composable Bicep files by using modules
+summary: Design and build reusable modules to simplify your Bicep templates. Compose multiple modules into templates by using parameters and outputs.
+abstract: |
+  After completing this module, you'll be able to:
+
+    - Design and create reusable, well-structured Bicep modules
+    - Create Bicep files that use multiple modules together
+prerequisites: |
+  You should be familiar with using:
+
+  - Bicep, including how to use parameters, parameter decorators, and conditions, and how to deploy Bicep files to Azure.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+
+  To work through the exercises, you'll also need the following installed locally:
+  
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true)
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version
+iconUrl: /learn/achievements/bicep/create-composable-bicep-files-using-modules.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - developer
+  - administrator
+languages:
+  - bicep
+products:
+  - azure-resource-manager
+units:
+- learn.azure.create-composable-bicep-files-using-modules.introduction
+- learn.azure.create-composable-bicep-files-using-modules.create-use-bicep-modules
+- learn.azure.create-composable-bicep-files-using-modules.add-parameters-outputs-modules
+- learn.azure.create-composable-bicep-files-using-modules.exercise-create-use-module
+- learn.azure.create-composable-bicep-files-using-modules.knowledge-check
+- learn.azure.create-composable-bicep-files-using-modules.summary
+badge:
+  uid: learn.azure.create-composable-bicep-files-using-modules.badge

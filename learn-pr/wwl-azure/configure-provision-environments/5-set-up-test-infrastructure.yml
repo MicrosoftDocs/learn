@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-provision-environments.set-up-test-infrastructure
+title: Set up test infrastructure
+metadata:
+  title: Set up test infrastructure
+  description: "Set up test infrastructure"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-set-up-test-infrastructure.md)]

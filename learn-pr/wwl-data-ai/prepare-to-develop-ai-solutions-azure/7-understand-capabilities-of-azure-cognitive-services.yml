@@ -4,12 +4,13 @@ title: Understand capabilities of Azure Cognitive Services
 metadata:
   title: Understand capabilities of Azure Cognitive Services
   description: "Understand capabilities of Azure Cognitive Services"
-  ms.date: 07/20/2021
+  ms.date: 02/22/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/7-understand-capabilities-of-azure-cognitive-services.md)]

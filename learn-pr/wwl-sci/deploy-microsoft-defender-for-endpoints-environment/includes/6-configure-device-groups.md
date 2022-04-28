@@ -26,9 +26,9 @@ As part of the process of creating a device group, you'll:
 
 To create a device group:
 
-1. In the navigation pane, select **Settings > Device groups**.
+1. In the navigation pane, select **Settings**, select **Endpoints** and then under **Permissions** select **Device groups**.
 
-1. Select **Add** device group.
+1. Select **+ Add device group**.
 
 1. Enter the group name and automation settings and specify the matching rule that determines which devices belong to the group. See How the automated investigation starts.
 

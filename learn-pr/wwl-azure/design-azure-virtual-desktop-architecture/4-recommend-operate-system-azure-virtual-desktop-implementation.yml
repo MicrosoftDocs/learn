@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-azure-virtual-desktop-architecture.recommend-operating-system-for-implementation
+title: Recommend an operating system for an Azure Virtual Desktop implementation
+metadata:
+  title: Recommend an operating system for an Azure Virtual Desktop implementation
+  description: "Recommend an operating system for an Azure Virtual Desktop implementation"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-recommend-operate-system-azure-virtual-desktop-implementation.md)]

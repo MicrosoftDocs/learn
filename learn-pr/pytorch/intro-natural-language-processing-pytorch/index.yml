@@ -5,26 +5,27 @@ metadata:
   description: Learn how to handle language and solve natural language processing tasks with PyTorch
   ms.date: 06/04/2020
   author: shwars
-  ms.author: dmitryso
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Introduction to Natural Language Processing with PyTorch
-summary: In this module, we will explore different neural network architectures for dealing with natural language texts. In the recent years, **Natural Language Processing** (NLP) has experiences fast growth as a field, primarily because performance of the language models depend on their overall ability to "understand" text, and that can be trained in unsupervised manner on large text corpora. Thus, pre-trained text models such as BERT simplified many NLP tasks, and dramatically improved the performance.
+summary: In this module, we will explore different neural network architectures for dealing with natural language texts. In the recent years, **Natural Language Processing** (NLP) has experienced fast growth primarily due to the performance of the language models’ ability to accurately "understand" human language faster while using unsupervised training on large text corpora. We will learn about different NLP techniques such as using bag-of-words (BoW), word embeddings and recurrent neural networks for classifying text from news headlines to one of the 4 categories (World, Sports, Business and Sci-Tech).
 abstract: |
   In this module you will:
   - Understand how text is processed for natural language processing tasks
-  - Get introduced to Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
-  - Learn about Attention Mechanisms
+  - Get introduced to using Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
   - Learn how to build text classification models  
+
 iconUrl: /learn/achievements/pytorch-natural-language-process.svg
 levels:
-- beginner
+  - beginner
 roles:
-- data-scientist
-- developer
-- student
+  - data-scientist
+  - developer
+  - student
 products:
-- azure
+  - azure
 prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
@@ -32,11 +33,10 @@ prerequisites: |
 units:
 - learn.pytorch.intro-natural-language-processing.introduction
 - learn.pytorch.intro-natural-language-processing.representing-text
+- learn.pytorch.intro-natural-language-processing.bow-tfidf
 - learn.pytorch.intro-natural-language-processing.embeddings
 - learn.pytorch.intro-natural-language-processing.recurrent-networks
 - learn.pytorch.intro-natural-language-processing.generative-networks
-- learn.pytorch.intro-natural-language-processing.attention-transformers
-- learn.pytorch.intro-natural-language-processing.knowledge-check
 - learn.pytorch.intro-natural-language-processing.summary
 
 badge:

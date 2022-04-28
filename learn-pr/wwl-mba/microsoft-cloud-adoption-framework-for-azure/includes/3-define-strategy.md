@@ -2,9 +2,16 @@ Organizations adopt the cloud to help drive business transformation, such as pro
 
 Across organizations of all types, sizes, and industries, the decision to invest in cloud technologies is often tightly connected to a critical business event. The reason for this connection is because the cloud might enable the appropriate solution for the event. Proper cloud technology implementation might turn a reactive response into an innovation opportunity to drive growth for the organization.
 
-|||
-| :--- | :--- |
-| ![Icon indicating play video](../media/video-icon.png)| Watch this video to learn more.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this video to learn more.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3WHNE]
 
@@ -26,10 +33,14 @@ Some common migration and innovation triggers include:
 
 ![Half-circle diagram listing migration triggers on the left: save costs, reduce complexity, optimize operations, and agility. On the right, innovation triggers: disrupt markets, transform products, and improve experiences. Spanning both sides are **Prepare for new technical capabilities** and **Scale to meet demand**.](../media/caf-migrationandinnovationtriggers.png)
 
-| | |
-| ---: | ---: |
-| ![Icon of lightbulb](../media/lightbulb.png)| *There are many reasons or triggers for cloud adoption. Which triggers are most relevant to your business? Where do you see the most opportunity to take advantage of the benefits of cloud technology? Identifying these opportunities will help you develop your cloud adoption plan.* |
-|
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+
+:::column:::
+*There are many reasons or triggers for cloud adoption. Which triggers are most relevant to your business? Where do you see the most opportunity to take advantage of the benefits of cloud technology? Identifying these opportunities will help you develop your cloud adoption plan.*
+
+:::column-end:::
+:::row-end:::
 
 ### Strategy
 
@@ -43,10 +54,14 @@ Implementing the first application is key to learning and testing with confidenc
 - **Business criteria:** Identify an application currently in operation where the owner has a strong motivation to move to the cloud.
 - **Technical criteria:** Select an application that has minimum dependencies and can be moved as a small group of assets.
 
-| | |
-| --- | --- |
-| ![Icon of lightbulb](../media/lightbulb.png)| *The first application an organization deploys to the cloud is often done so in an experimental environment with no operational or governance capacity. It's important to select an application that doesn't interact with secure data. Carefully consider which application is a good candidate. As you plan subsequent releases and additional applications are deployed to the cloud, you create the first prioritized migration application and the first prioritized release backlog. Over time, you create and continue to shape the optimal environment for future deployments.* |
-|
+:::row:::
+![Icon of lightbulb](../media/lightbulb.png)
+
+:::column:::
+*The first application an organization deploys to the cloud is often done so in an experimental environment with no operational or governance capacity. It's important to select an application that doesn't interact with secure data. Carefully consider which application is a good candidate. As you plan subsequent releases and additional applications are deployed to the cloud, you create the first prioritized migration application and the first prioritized release backlog. Over time, you create and continue to shape the optimal environment for future deployments.*
+
+:::column-end:::
+:::row-end:::
 
 ## Establish clear business outcomes
 
@@ -78,6 +93,7 @@ Developing a clear business justification for cloud adoption with tangible, rele
 
 :::row:::
 ![Icon of key](../media/key-takeaway.png)
+
 :::column:::
 
 Here are the key points from this unit:

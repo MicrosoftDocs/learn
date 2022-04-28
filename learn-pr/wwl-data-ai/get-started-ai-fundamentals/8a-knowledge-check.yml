@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/27/2021
+  ms.date: 04/12/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 2
 quiz:
   questions:
@@ -18,31 +19,31 @@ quiz:
     - content: "Azure Machine Learning"
       isCorrect: true
       explanation: "That is correct. Azure Machine Learning enables you to train a predictive model from the existing data."
-    - content: "QnA Maker"
+    - content: "Azure Bot"
       isCorrect: false
-      explanation: "That is incorrect. QnA Maker is used to create a knowledge base of questions and answers."
-    - content: "Text Analytics"
+      explanation: "That is incorrect. The Azure Bot Service provides a platform for conversational AI."
+    - content: "Language"
       isCorrect: false
-      explanation: "That is incorrect. Text Analytics is used to extract insights from text data."
-  - content: "You want to train a model that classifies images of dogs and cats based on a collection of your own digital photographs. Which Azure service should you use?"
+      explanation: "That is incorrect. The Language Service is used for understanding and analyzing text, and creating intelligent applications."
+  - content: "You are designing an AI application that uses images to detect cracks in car windshields and warn drivers when a windshield should be repaired or replaced. What AI workload is described? ​​"
     choices:
-    - content: "Azure Bot Service"
-      isCorrect: false
-      explanation: "That is incorrect. Azure Bot Service is used to create conversational AI solutions."
-    - content: "Custom Vision"
-      isCorrect: true
-      explanation: "That is correct. Custom Vision enables you to train an image classification model based on your own images."
     - content: "Computer Vision"
-      isCorrect: false
-      explanation: "That is incorrect. Computer Vision can help classify images, but you can't use it to train a model from your own images."
-  - content: "You are designing an AI application that uses computer vision to detect cracks in car windshields, and warns drivers when a windshield should be repaired or replaced. When tested in good lighting conditions, the application successfully detects 99% of dangerously damaged glass. Which of the following statements should you include in the application's user interface?"
-    choices:
-    - content: "When used in good lighting conditions, this application can be used to identify potentially dangerous cracks and defects in windshields. If you suspect your windshield is damaged, even if the application does not detect any defects, you should have it inspected by a professional."
       isCorrect: true
-      explanation: "That is correct. You should be transparent about the limitations of the application."
-    - content: "This application detects damage in your windshield. If the application detects a defect, have the windshield replaced or repaired. If no defect is detected, you're good to go!"
+      explanation: "That is correct. Images of the car windshield can be analyzed with computer vision and classified into groups based on windshield condition."
+    - content: "Anomaly Detection"
       isCorrect: false
-      explanation: "That is incorrect. You should be transparent about the limitations of the application."
-    - content: "This application detects damage in any glass surface, but you must accept responsibility for using it only in appropriate lighting conditions."
+      explanation: "That is incorrect. Anomaly Detection is used to analyze data over time and identify unusual changes."
+    - content: "Natural Language Processing"
       isCorrect: false
-      explanation: "That is incorrect. You should be transparent about the limitations of the application."
+      explanation: "That is incorrect. Natural Language Processing is used to understand and analyze text, and create intelligent applications."
+  - content: "A predictive app provides audio output for visually impaired users. Which principle of Responsible AI is reflected here?"
+    choices:
+    - content: "Transparency"
+      isCorrect: false
+      explanation: "That is incorrect. Transparency is about fully communicating the purpose of the system, how it works, and what limitations may be expected."
+    - content: "Inclusiveness"
+      isCorrect: true
+      explanation: "That is correct. Inclusiveness is about how AI should bring benefits to all parts of society, regardless of physical ability, gender, sexual orientation, ethnicity, or other factors."
+    - content: "Fairness"
+      isCorrect: false
+      explanation: "That is incorrect. Fairness is about developing models and applications without incorporating any bias based on gender, ethnicity, or other factors that might result in an unfair advantage or disadvantage to specific groups."

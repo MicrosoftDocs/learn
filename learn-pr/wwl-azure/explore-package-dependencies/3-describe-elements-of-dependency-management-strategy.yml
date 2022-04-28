@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-package-dependencies.describe-elements-of-dependency-management-strategy
+title: Describe elements of a dependency management strategy
+metadata:
+  title: Describe elements of a dependency management strategy
+  description: "Describe elements of a dependency management strategy"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-describe-elements-of-dependency-management-strategy.md)]

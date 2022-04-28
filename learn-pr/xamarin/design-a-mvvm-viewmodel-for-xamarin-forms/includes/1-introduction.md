@@ -1,3 +1,5 @@
+[!include[](../../includes/dotnet-maui-note.md)]
+
 The Model-View-ViewModel (MVVM) pattern is a *software design pattern*. Design patterns are sets of rules and templates that help make application code better or more consistent. You use the MVVM pattern to help separate the app's behavior logic from the user interface-rendering code, and to do so in a way that supports unit testing.
 
 Say your company produces management software for human resources departments. They use the software to manage and review details about the employees of the company. The existing system is web-based. You were asked to create a mobile app that can be used with the same back-end APIs that the web system uses. You know that the back-end APIs and the web front end are thoroughly covered by unit tests. And you want to maintain that standard for the mobile app. You heard that the MVVM pattern can help design mobile apps for maximum testability, so you plan to try it out.

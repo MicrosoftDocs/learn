@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-azure-databricks.understand
+title: Understand Azure Databricks
+metadata:
+  title: Understand Azure Databricks
+  description: "Understand Azure Databricks"
+  ms.date: 01/25/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand.md)]

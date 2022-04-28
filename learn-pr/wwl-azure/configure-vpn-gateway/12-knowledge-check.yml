@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/26/2021
+  ms.date: 01/07/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/12-knowledge-check.md)]
@@ -20,14 +21,14 @@ quiz:
     choices:
     - content: "Policy-based"
       isCorrect: false
-      explanation: "That's incorrect. Policy-based gateways have very limited capabilities and should not be used for ExpressRoute."
+      explanation: "That's incorrect. Policy-based gateways have limited capabilities and should not be used for ExpressRoute."
     - content: "Route-based"
       isCorrect: true
       explanation: "That's correct. Typical route-based gateway scenarios include point-to-site, inter-virtual network, or multiple site-to-site connections. Route-based is also selected to coexist with an ExpressRoute gateway or when the IKEv2 protocol is used."
     - content: "Path-based"
       isCorrect: false
       explanation: "That's incorrect. Path-based is not a VPN type."
-  - content: "The infrastructure team is connecting two virtual networks. Performance is a key concern. Which of the following will most influence performance?"
+  - content: "The infrastructure team is connecting two virtual networks. Performance is a key concern. Which of the following selections will most influence performance?"
     choices:
     - content: "Selecting a route-based VPN."
       isCorrect: false
@@ -38,7 +39,7 @@ quiz:
     - content: "Selecting a policy-based VPN."
       isCorrect: false
       explanation: "That's incorrect. Although routing can affect performance, another choice will have more influence."
-  - content: "The infrastructure teams needs to configure a site-to-site VPN connection between the on-premises network and theAzure network. The on-premises network uses a Cisco ASA VPN device. Before starting the configuration, which of the following is required?"
+  - content: "The infrastructure team needs to configure a site-to-site VPN connection between the on-premises network and the Azure network. The on-premises network uses a Cisco ASA VPN device. What key piece of information will you need?"
     choices:
     - content: "The shared access signature key for the recovery services vault."
       isCorrect: false

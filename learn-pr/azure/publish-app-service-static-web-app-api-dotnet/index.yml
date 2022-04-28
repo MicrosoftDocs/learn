@@ -8,6 +8,10 @@ metadata:
   ms.author: aapowell
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - aapowell-12032021
 title: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
 summary: Automatically deploy and update a Blazor web application and its API from a GitHub repository.
 abstract: |
@@ -19,7 +23,7 @@ prerequisites: |
   - Basic knowledge of web app concepts
   - C# .NET experience at a beginner level
   - A GitHub account
-  - [Visual Studio 2019 (or newer)](https://visualstudio.microsoft.com/vs/), including the _Azure_ and _ASP.NET and web development_ workloads
+  - [Visual Studio 2022 (or newer, any edition)](https://visualstudio.microsoft.com/vs/), including the _Azure_ and _ASP.NET and web development_ workloads
   - Familiarity with basic Visual Studio operation, including interacting with Git repositories and basic debugging functions
 iconUrl: /learn/achievements/publish-static-web-app-and-api-dotnet.svg
 levels:
@@ -31,6 +35,9 @@ products:
   - azure-functions
   - azure-app-service
   - azure-app-service-static
+  - dotnet
+  - aspnet-core
+  - blazor
 units:
   - learn.azure.publish-static-web-app-and-api-dotnet.1-introduction
   - learn.azure.publish-static-web-app-and-api-dotnet.2-exercise-get-started

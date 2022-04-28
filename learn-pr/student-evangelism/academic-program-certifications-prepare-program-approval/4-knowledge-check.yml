@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-prepare-program-approval.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Test your knowledge
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: Select the best answer for each question.
+quiz:
+  questions:
+  - content: Which stakeholder group decides whether a new program proposal is aligned with institutional strategies?
+    choices:
+    - content: Teaching team
+      isCorrect: false
+      explanation: The teaching team doesn't contribute to institutional strategies for program alignment.
+    - content: Faculty administration and leadership
+      isCorrect: true
+      explanation: Correct! The faculty leadership team reviews all documentation at the program approval event to ensure that the program outcomes align with the institution's strategies, including industry alignment and employability outcomes.
+    - content: External advisors
+      isCorrect: false
+      explanation: External advisors don't make decisions about instructional strategies, but they can provide feedback.
+    - content: Students
+      isCorrect: false
+      explanation: Students don't make strategic decisions about program alignment.
+  - content: What is the main purpose of having an external industry advisor on the program approval panel?
+    choices:
+    - content: To discuss graduate salaries across the computing sector
+      isCorrect: false
+      explanation: The industry advisor won't provide guidance on graduate salaries because it's out of scope for their role on an approval panel.
+    - content: To identify and give feedback on industry transferable skills opportunities
+      isCorrect: true
+      explanation: Correct! The role of the industry advisor is to provide feedback on industry transferable skills and identify further opportunities in this space. They also discuss general job roles and duties a graduate completing the program could undertake.
+    - content: To set up a graduate scheme that is aligned with the program
+      isCorrect: false
+      explanation: The industry advisor can suggest possible graduate schemes but these won't be formulated or agreed upon at an approval event.
+    - content: To help with creating academic learning outcomes
+      isCorrect: false
+      explanation: The industry advisor role isn't part of creating academic learning outcomes. That's done by academics before an approval event.
+  - content: The program approval panel will carefully examine program outcomes. What is the main reason for this?
+    choices:
+    - content: To ensure the program is attractive to applicants
+      isCorrect: false
+      explanation: The program will have already been through the initial proposal stage where market applicability will have been reviewed.
+    - content: To ensure the program outcomes don't appear in other programs
+      isCorrect: false
+      explanation: It's ok for some program outcomes to be present in other programs, particularly across the various computer science disciplines where there is some overlap.
+    - content: To ensure 100% coverage of the program outcomes in the program courses
+      isCorrect: true
+      explanation: Correct! The program learning outcomes should be 100% covered through the courses that make up the program.  The program development team completes a mapping exercise during program development to ensure each program outcome is mapped to the appropriate course.
+    - content: To ensure there is no overlap with other program outcomes in the same program
+      isCorrect: false
+      explanation: The program learning outcomes normally have some overlap with other program outcomes. It's typical to have linked conceptual and practical outcomes.
+  - content: The program leader for a new program with certifications implemented is at the program approval event. One of the panel members asks how the learning materials of the certification content align with an academic course. What is the correct response?
+    choices:
+    - content: The course learning outcomes are mapped to the certification outcomes.
+      isCorrect: true
+      explanation: Correct! To ensure the integrity of the academic course, the learning outcomes must be robustly mapped to the certification outcomes. The educator will then be able to use any suitable learning materials that cover the learning outcomes.
+    - content: The course syllabus outlines the learning content that is mapped to the certification outcomes.
+      isCorrect: false
+      explanation: The syllabus presents only a list of topics that will be taught, not the specific outcomes.
+    - content: The course title has the same title as the certification course.
+      isCorrect: false
+      explanation: The course title doesn't inform or map to any certification outcomes.
+    - content: The program uses the official learning materials of the certification course.
+      isCorrect: false
+      explanation: It's acceptable to use the official learning materials of a certification course, but the assumption can't be made that the academic learning outcomes have been mapped to the certification outcomes.

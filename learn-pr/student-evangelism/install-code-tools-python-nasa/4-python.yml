@@ -3,11 +3,12 @@ uid: learn.student-evangelism.install-code-tools-python-nasa.4-python
 metadata:
   title: Understand the importance of Python in solving big data problems
   description: Learn what Python is.
-  ms.date: 06/09/2021
-  author: drguthals
-  ms.author: sguthals
+  ms.date: 03/28/2022
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen, devdivchpfy22
 title: Understand the importance of Python in solving big data problems
 durationInMinutes: 2
 content: |

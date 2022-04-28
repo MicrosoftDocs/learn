@@ -7,8 +7,8 @@ metadata:
   title: How Azure Data Lake Storage works
   description: Learn how Azure Data Lake Storage works.
   ms.date: 06/17/2021
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: normesta
+  ms.author: normesta
   ms.topic: interactive-tutorial
 durationInMinutes: 8
 content: |

@@ -5,8 +5,8 @@ metadata:
   title: Check your knowledge
   description: Review what you've learned.
   ms.date: 05/18/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: roygara
+  ms.author: rogarana
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
@@ -65,7 +65,7 @@ quiz:
     - content: It's a policy that sets the frequency at which the sync job runs.
       isCorrect: false
       explanation: It's not used to set a sync frequency.
-    - content: It's a feature that archives infrequently accessed files to free up space on the local file share.
+    - content: It's a feature that tiers infrequently accessed files to free up space on the local file share.
       isCorrect: true
       explanation: Cloud tiering allows frequently accessed files to be cached on the local server. Infrequently accessed files are tiered, or archived, to the Azure file share according to the policy you create.
   - content: "What's the deployment process for Azure File Sync?"

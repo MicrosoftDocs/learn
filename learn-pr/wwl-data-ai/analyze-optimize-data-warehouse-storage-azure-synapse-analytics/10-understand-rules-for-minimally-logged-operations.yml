@@ -4,12 +4,13 @@ title: Understand rules for minimally logged operations
 metadata:
   title: Understand rules for minimally logged operations
   description: "Understand rules for minimally logged operations"
-  ms.date: 06/03/2021
+  ms.date: 03/18/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/10-understand-rules-for-minimally-logged-operations.md)]

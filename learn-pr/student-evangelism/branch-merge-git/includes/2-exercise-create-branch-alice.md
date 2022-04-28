@@ -16,14 +16,14 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
     ```
 
-1. Now, use the following command to create a bare repo in the shared directory:
+1. Now, run the following command to create a bare repo in the shared directory:
 
     ```bash
     git init --bare
 
     ```
 
-1. Set the name of the default branch for the new repo. To accomplish this step, you can change the `HEAD` branch to point at a different branch, in this case, the `main` branch:
+1. Set the name of the default branch for the new repo. To accomplish this step, you can change the `HEAD` branch to point at a different branch; in this case, the `main` branch:
 
     ```bash
     git symbolic-ref HEAD refs/heads/main
@@ -43,7 +43,6 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 1. Clone and configure the repo for Bob:
 
     ```bash
-    cd ..
     cd Bob
     git clone ../Shared.git .
     git config user.name Bob
@@ -59,7 +58,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
 As a final setup step, we'll add our base website files and push them to the shared repo. For these commands, we're still working in the *Bob* directory.
 
-1. Create some files by using the Linux `touch` command, and then stage and commit them by using Git:
+1. Create some files by running the Linux `touch` command, and then stage and commit them by using Git:
 
     ```bash
     touch index.html
@@ -70,7 +69,7 @@ As a final setup step, we'll add our base website files and push them to the sha
 
     ```
 
-1. Now, add some HTML to your file by using the Cloud Shell code editor. You can open the editor by using the `code` command. Open *index.html* in the online editor by typing `code index.html` at the terminal prompt:
+1. Now, add some HTML to your file by using the Cloud Shell code editor. You can open the editor by running the `code` command. Open *index.html* in the online editor by entering `code index.html` at the terminal prompt:
 
     ```bash
     code index.html
@@ -96,7 +95,7 @@ As a final setup step, we'll add our base website files and push them to the sha
     </html>
     ```
 
-1. Save the file and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (Ctrl+S on Windows and Linux, Cmd+S on macOS).
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. Change to the *Assets* directory, and then open *site.css* in the editor:
 
@@ -116,7 +115,7 @@ As a final setup step, we'll add our base website files and push them to the sha
 
    Save the file and close the editor.
 
-1. Go back to the *Bob* directory and commit again:
+1. Go back to the *Bob* directory, and commit again:
 
     ```bash
     cd ..
@@ -129,7 +128,7 @@ As a final setup step, we'll add our base website files and push them to the sha
    > [!NOTE]
    > Because we are using a different default branch name, you have to tell git to associate your main branch to the main branch of the source repository.
 
-1. Check the output. If you see a warning like this example, don't worry. This warning is just letting users know about a change to Git's default behaviors. 
+1. Check the output. If you see a warning like this example, don't worry. This warning is just letting users know about a change to Git's default behaviors.
 
     ```output
     warning: push.default is unset; its implicit value has changed in
@@ -138,7 +137,7 @@ As a final setup step, we'll add our base website files and push them to the sha
 
       git config --global push.default matching
 
-    To squelch this message and adopt the new behavior now, use:
+    To squelch this message and adopt the new behavior now, run:
 
       git config --global push.default simple
 
@@ -177,7 +176,7 @@ As a final setup step, we'll add our base website files and push them to the sha
 
 Alice wants to create a topic branch named `add-style` to do their work in. Let's assume the role of Alice, and then create the branch and add some code to this branch.
 
-1. Move up one level from this directory and create a directory for Alice for her copy of the repo:
+1. Move up one level from this directory, and create a directory for Alice for their copy of the repo:
 
     ```bash
     cd ..
@@ -195,7 +194,7 @@ Alice wants to create a topic branch named `add-style` to do their work in. Let'
 
     ```
 
-1. You now have a current copy of the repository.  To confirm, you can list the file contents and use `git status` to confirm the state of the repository.
+1. You now have a current copy of the repository. To confirm, you can list the file contents and run `git status` to confirm the state of the repository.
 
     ```bash
     ls
@@ -203,7 +202,7 @@ Alice wants to create a topic branch named `add-style` to do their work in. Let'
 
     ```
 
-1. Use the `git branch` command to create a branch named `add-style`. Then, use the `git checkout` command to switch to that branch (make it the *current branch*).
+1. Run the `git branch` command to create a branch named `add-style`. Then, run the `git checkout` command to switch to that branch (make it the *current branch*).
 
     ```bash
     git branch add-style
@@ -217,7 +216,7 @@ Alice wants to create a topic branch named `add-style` to do their work in. Let'
     .cat { max-width: 40%; padding: 5 }
     ```
 
-   Save the changes to the file and close the editor.
+   Save the changes to the file, and close the editor.
 
 1. Commit the change:
 
@@ -234,7 +233,7 @@ Alice wants to create a topic branch named `add-style` to do their work in. Let'
 
     ```
 
-1. The output says that the `main` branch is up to date (in other words, `main` on Alice's computer matches `main` in the shared repo). So, Alice merges the `add-style` branch into the `main` branch by using `git merge --ff-only` to perform a *fast-forward* merge. Then, Alice pushes `main` from their repo to the shared repo.
+1. The output says that the `main` branch is up to date (in other words, `main` on Alice's computer matches `main` in the shared repo). So, Alice merges the `add-style` branch into the `main` branch by running `git merge --ff-only` to perform a *fast-forward* merge. Then, Alice pushes `main` from their repo to the shared repo.
 
     ```bash
     git merge --ff-only add-style

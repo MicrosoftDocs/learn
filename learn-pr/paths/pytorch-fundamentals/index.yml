@@ -6,10 +6,14 @@ metadata:
   title: PyTorch Fundamentals
   description: Learn the fundamentals of deep learning with PyTorch! This beginner friendly learning path will introduce key concepts to building machine learning models in multiple domains include speech, vision, and natural language processing.
   ms.date: 04/09/2021
-  author: cassieview
+  author: cassiebreviu
   ms.author: cassieb
   ms.topic: interactive-tutorial
   ms.prod: azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - cassieb-08182021
 prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks

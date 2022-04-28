@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.plan-deployment
+title: Plan an Event Hubs resource provider deployment
+metadata:
+  title: Plan an Event Hubs resource provider deployment
+  description: "Plan an Event Hubs resource provider deployment"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-plan-event-hubs-resource-provider-deployment.md)]

@@ -94,13 +94,13 @@ Next, let's restructure the code a little. We'll be creating our own code-based 
 
 Next, we need to describe the user interface for Phoneword. We are using controls defined in Xamarin.Forms, which will then be rendered with native implementations in each project.
 
-1. Working in the **MainPage.cs** constructor, do the following.
+1. Working in **MainPage.xaml.cs**, in the `MainPage` constructor, do the following.
 1. Set the page's `Padding` to "20" all around. Setting the margin will ensure the controls aren't against the edge of the screen.
 1. Create a `StackLayout` with `Spacing = 15`.
 1. Create the required controls for the Phoneword UI:
-    * A [`Label`](/dotnet/api/Xamarin.Forms.Label?view=xamarin-forms) with the `Text` property set to "Enter a Phoneword:".
-    * An [`Entry`](/dotnet/api/Xamarin.Forms.Entry?view=xamarin-forms) that allows the user to edit the phone number, which is used to collect the input from the user. It should be initialized with the `Text` "1-855-XAMARIN". The user can replace the initial text with their own; however, pre-populating it with a phoneword is convenient for testing.
-    * A [`Button`](/dotnet/api/Xamarin.Forms.Button?view=xamarin-forms) that runs the logic to translate the phone number. Its `Text` property should be set to "Translate".
+    * A [`Label`](/dotnet/api/Xamarin.Forms.Label?view=xamarin-forms&preserve-view=true) with the `Text` property set to "Enter a Phoneword:".
+    * An [`Entry`](/dotnet/api/Xamarin.Forms.Entry?view=xamarin-forms&preserve-view=true) that allows the user to edit the phone number, which is used to collect the input from the user. It should be initialized with the `Text` "1-855-XAMARIN". The user can replace the initial text with their own; however, pre-populating it with a phoneword is convenient for testing.
+    * A [`Button`](/dotnet/api/Xamarin.Forms.Button?view=xamarin-forms&preserve-view=true) that runs the logic to translate the phone number. Its `Text` property should be set to "Translate".
     * A second `Button` displaying the `Text` "Call", which places the call. This `Button` should be initially disabled (use the `IsEnabled` property).
     * Store the `Entry` and the two `Button` controls in class fields, so you can interact with them later.
 1. Add the controls to the `StackLayout`.
@@ -276,6 +276,9 @@ Build and run on any platform. It should display the alert, and allow you to dis
 
 Next, we'll use a cross-platform library called Xamarin.Essentials, which abstracts several platform-specific functions through a single API. Xamarin.Essentials offers a phone dialing API to make calls on the iOS and Android platforms. This library is provided as a NuGet package that we add to each of our projects. Because it provides implementations for our platforms and the shared abstraction, we add it to all of our projects.
 
+> [!NOTE]
+> If your project's Target Android version is set to **Android 11 (R API 30)**, you'll need to update your Android manifest. [Learn more](/xamarin/essentials/phone-dialer?tabs=android) about updating with queries used with the new package visibility requirements.
+
 ### Add permissions to the Android project
 
 To make calls on Android an additional step is required. We must explicitly declare the calling permission.
@@ -290,7 +293,7 @@ To make calls on Android an additional step is required. We must explicitly decl
 
 We can now call the dialer system in Xamarin.Essentials in our shared code.
 
-Open MainPage.cs, and replace the `TODO` line in the `OnCall` method with the following code. Add the `using Xamarin.Essentials` statement to make the `PhoneDialer` class available.
+Open MainPage.xaml.cs, and replace the `TODO` line in the `OnCall` method with the following code. Add the `using Xamarin.Essentials` statement to make the `PhoneDialer` class available.
 
 ```csharp
 using Xamarin.Essentials;

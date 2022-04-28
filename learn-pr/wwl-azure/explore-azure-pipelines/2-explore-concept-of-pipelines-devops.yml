@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-pipelines.explore-concept-of-pipelines-devops
+title: Explore the concept of pipelines in DevOps
+metadata:
+  title: Explore the concept of pipelines in DevOps
+  description: "Explore the concept of pipelines in DevOps"
+  ms.date: 03/21/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-explore-concept-of-pipelines-devops.md)]

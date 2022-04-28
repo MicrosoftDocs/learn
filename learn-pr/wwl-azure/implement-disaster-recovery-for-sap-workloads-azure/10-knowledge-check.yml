@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-disaster-recovery-for-sap-workloads-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/21/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following SAP tiers is it recommended be protected by replicating using Azure Site Recovery?"
+    choices:
+    - content: "Active Directory virtual machines"
+      isCorrect: false
+      explanation: "Incorrect. For Active Directory virtual machines, Active Directory replication is recommended."
+    - content: "SAP Central Services cluster"
+      isCorrect: true
+      explanation: "Correct. It is recommended that you use Azure Site Recovery to protect the SAP Web Dispatcher Pool, SAP Application server pool, and the SAP Central Services cluster. For Active Directory virtual machines, Active Directory replication is recommended, and for SQL Server databases, SQL Always On replication is recommended."
+    - content: "SQL Server databases"
+      isCorrect: false
+      explanation: "For SQL Server databases, SQL Always On replication is recommended."
+  - content: "Is simple availability between two Azure regions with manual failover a good choice for users who require RPO = 0?"
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. This configuration can't RPO = 0 because the HANA system replication mode is asynchronous."
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct. This configuration can't RPO = 0 because the HANA system replication mode is asynchronous."
+    - content: "Only if the regions are geographically adjacent"
+      isCorrect: false
+      explanation: "Incorrect. This configuration can't RPO = 0 because the HANA system replication mode is asynchronous."
+  - content: "Which configuration is recommended to implement SAP HANA high availability with RPO = 0 and resistance to natural catastrophes that affect large areas?"
+    choices:
+    - content: "Simple availability between two Azure regions"
+      isCorrect: false
+      explanation: "Incorrect. Simple availability between two regions does not allow for RPO = 0, because of asynchronous replication."
+    - content: "SAP HANA multi-tier system replication"
+      isCorrect: true
+      explanation: "Correct. Simple availability between two regions does not allow for RPO = 0, because of asynchronous replication. Multi-tier system replication allows RPO = 0 with synchronous replication and auto-failover within Region 1, while still maintaining a Region 2 secondary site at a sufficient distance to be unaffected by regional disasters."
+    - content: "Either configuration is suitable"
+      isCorrect: false
+      explanation: "Incorrect. Simple availability between two regions does not allow for RPO = 0, because of asynchronous replication. Multi-tier system replication allows RPO = 0 with synchronous replication and auto-failover within Region 1, while still maintaining a Region 2 secondary site at a sufficient distance to be unaffected by regional disasters."

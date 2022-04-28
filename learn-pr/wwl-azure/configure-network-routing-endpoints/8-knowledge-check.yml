@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/23/2021
+  ms.date: 04/02/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -18,9 +19,9 @@ quiz:
   questions:
   - content: "Which of the following statements best describes Azure routing?"
     choices:
-    - content: "The administrator can override existing system routes."
+    - content: "The administrator can create system routes."
       isCorrect: false
-      explanation: "That's incorrect. The administrator cannot create system routes, nor override existing system routes."
+      explanation: "That's incorrect. The administrator cannot create system routes, only user routes."
     - content: "Azure gateways are needed to route traffic between subnets."
       isCorrect: false
       explanation: "That's incorrect. Gateways are not needed to route traffic between subnets."
@@ -49,14 +50,3 @@ quiz:
     - content: "Virtual network endpoint"
       isCorrect: true
       explanation: "That's correct. Virtual network endpoints extend the private address space in Azure. Endpoints restrict the flow of traffic. As service endpoints are created, Azure creates routes in the route table to direct the traffic."
-  - content: "A company provides customers a virtual network in the cloud. There are dozens of Linux virtual machines in another virtual network. A load balancer must be installed between the virtual networks. Which of the following meets the requirement?"
-    choices:
-    - content: "Install an external load balancer."
-      isCorrect: false
-      explanation: "That's incorrect. Azure has two types of load balancers: public and internal."
-    - content: "Install an internal load balancer."
-      isCorrect: true
-      explanation: "That's correct. Azure has two types of load balancers: public and internal. An internal load balancer directs traffic only to resources that are inside a virtual network or that use a VPN to access Azure infrastructure."
-    - content: "Install a public load balancer."
-      isCorrect: false
-      explanation: "That's incorrect. A public load balancer maps the public IP address and port number of incoming traffic to the private IP address and port number of the VM."

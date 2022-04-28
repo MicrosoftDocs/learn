@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 10/18/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+  - content: |
+      When you try to run the pipeline, Azure Pipelines gives you an error. What's the most likely cause of the problem?
+    choices:
+    - content: The identifier of each stage isn't unique.
+      isCorrect: true
+      explanation: Correct. Currently, both environments define a stage with the identifier *Deploy*. You should add the environment name into the stage identifier so that the identifiers are unique.
+    - content: The `trigger` property is set to `none`.
+      isCorrect: false
+      explanation: |
+        Incorrect. `trigger: none` tells Azure Pipelines that you want to manually run the pipeline.
+    - content: The `ubuntu-latest` agent pool name isn't valid.
+      isCorrect: false
+      explanation: Incorrect. `ubuntu-latest` is a valid agent pool name.
+
+  - content: |
+      How can you improve the security of this pipeline?
+    choices:
+    - content: Use separate service connections for each environment.
+      isCorrect: true
+      explanation: Correct. It's good security practice to use separate service connections and service principals to deploy to each environment.
+    - content: Add a condition to deploy only when the environment name is `Production`.
+      isCorrect: false
+      explanation: Incorrect. Your deployment pipeline needs to deploy to all environments, not just to production.
+    - content: Create a new Azure role definition.
+      isCorrect: false
+      explanation: Incorrect. You generally don't need to define custom Azure roles for your deployments, and this won't help to resolve the issue that this pipeline uses a single credential to access multiple environments.
+
+  - content: |
+      You need to add a new environment named *Integration* to the pipeline. Which of these actions should you take as part of adding the new environment?
+    choices:
+    - content: Add a new pipeline file.
+      isCorrect: false
+      explanation: Incorrect. When you're adding an environment to an existing pipeline, you don't need to add a new pipeline file.
+    - content: Add a new pipeline template file.
+      isCorrect: false
+      explanation: Incorrect. When you're adding an environment to an existing pipeline, you don't need to add a new template file.
+    - content: Add a new Bicep parameters file.
+      isCorrect: true
+      explanation: Correct. You need to create a new Bicep parameters file named *parameters.Integration.json* and commit it to your Git repository.
+
+  - content: |
+      You need to add a new parameter to your deployment that contains a connection string and password to access a database. Which of these approaches should you consider?
+    choices:
+    - content: Define a variable in the *azure-pipelines.yml* file.
+      isCorrect: false
+      explanation: Incorrect. Pipeline definition files are committed to your Git repository, so they're not a secure location for secret values like passwords.
+    - content: Define a variable group in the Azure Pipelines web interface and mark the variable as secret.
+      isCorrect: true
+      explanation: Correct. Variable groups enable you to work with secret values.
+    - content: Add the parameter to the *parameters.ENVIRONMENT_NAME.json* files.
+      isCorrect: false
+      explanation: Incorrect. Bicep parameter files are committed to your Git repository, so they're not a secure location for secret values like passwords.

@@ -2,21 +2,21 @@ Your retail organization must comply with data protection regulations in your ju
 
 Here, you'll use the Azure portal to set up a policy and then check it in PowerShell. You need to set up the following retention policy to meet your regulatory requirements:
 
-|  |  |
-|---------|---------|
-| Weekly     | 8 weeks   |
-| Monthly     |  12 months       |
-| Yearly     |  5 years       |
+| Retention period | Length |
+|---|---|
+| Weekly | Eight weeks |
+| Monthly | 12 months |
+| Yearly | Five years |
 
 ## Use the Azure portal to configure long-term retention
 
-Let's start by configuring the 5-year retention by using the portal.
+Let's start by configuring the five-year retention by using the portal.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select **erpserver-NNNN**.
 
-1. Under **Settings**, select **Manage Backups**.
+1. Under **Data Management**, select **Backups**.
 
-1. In the list of databases, select **sql-erp-db**, and then select **Configure retention**.
+1. In the list of databases, select **sql-erp-db**. Select the **Retention policies** tab, and then select **Configure policies**.
 
 1. Select **Yearly LTR Backups**.
 
@@ -46,6 +46,9 @@ You can also configure long-term retention policies by using PowerShell. Let's c
     ```
 
     This step will output the retention policies for all databases on the server.
+
+    > [!NOTE]
+    > You might see a message display after the output: `Long Term Retention is not supported : Not supported for master.` This message doesn't affect completion of this module.
 
 1. Run this command to view the long-term retention policy for the **sql-erp-db** database.
 
@@ -78,7 +81,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
         -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
 
-    You should see the following policy configured. It enables a weekly retention of 8 weeks, a monthly retention of 12 months, and a yearly retention of 5 years for the first backup of the year.
+    You should see the following policy configured. It enables a weekly retention of eight weeks, a monthly retention of 12 months, and a yearly retention of five years for the first backup of the year.
 
     ```output
     ResourceGroupName : <rgn>[sandbox resource group name]</rgn>
@@ -91,7 +94,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
     Location          :
     ```
 
-1. You can also confirm this in the portal. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select **ERPServer**.
+1. You can also confirm the retention period in the portal. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select **ERPServer**.
 
 1. Under **Settings**, select **Manage Backups**. In the list of databases, check the **sql-erp-db** long-term retention properties.
 

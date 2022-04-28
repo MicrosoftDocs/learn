@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-pipeline-agents-pools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices are the two types of agents being used in pipelines?"
+    choices:
+    - content: "Client-Hosted and Server-Hosted."
+      isCorrect: false
+      explanation: "Incorrect. Self-hosted and Microsoft-hosted."
+    - content: "Self-Hosted and Microsoft-Hosted."
+      isCorrect: true
+      explanation: "Correct. Self-hosted and Microsoft-hosted."
+    - content: "Windows-Hosted and Linux-Hosted."
+      isCorrect: false
+      explanation: "Incorrect. Self-hosted and Microsoft-hosted."
+  - content: "Which of the following is a correct statement about Agent Pools?"
+    choices:
+    - content: "Agent pools are scoped to the entire project and can be shared across pipelines."
+      isCorrect: false
+      explanation: "Incorrect. Agent pools are scoped to the entire organization and can be shared across projects."
+    - content: "Agent pools are scoped to the entire repository and can be shared across pipelines."
+      isCorrect: false
+      explanation: "Incorrect. Agent pools are scoped to the entire organization and can be shared across projects."
+    - content: "Agent pools are scoped to the entire organization and can be shared across projects."
+      isCorrect: true
+      explanation: "Correct. Agent pools are scoped to the entire organization and can be shared across projects."
+  - content: "Which of the following choices is the role that can manage membership for all roles of the project agent pool?"
+    choices:
+    - content: "Administrator."
+      isCorrect: true
+      explanation: "Correct. Administrator."
+    - content: "User."
+      isCorrect: false
+      explanation: "Incorrect. Administrator."
+    - content: "Contributor."
+      isCorrect: false
+      explanation: "Incorrect. Administrator."

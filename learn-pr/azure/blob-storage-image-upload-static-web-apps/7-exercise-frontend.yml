@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.blob-storage-image-upload-static-web-apps.exercise-frontend
+title:  Exercise - create the image upload frontend
+metadata:
+  title:  Exercise - create the image upload frontend
+  description: Creates the image upload fronted, showing you how to run Webpack to package your JavaScript files, and how to set up a local test server for your Static Web App.
+  author: videlalvaro
+  ms.author: alvidela
+  ms.date: 11/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: alvidela-11122021
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-exercise-frontend.md)]

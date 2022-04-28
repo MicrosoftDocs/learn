@@ -3,11 +3,12 @@ uid: learn.student-evangelism.install-code-tools-python-nasa.1-introduction
 metadata:
   title: Introduction
   description: Introduction.
-  ms.date: 06/09/2021
-  author: drguthals
-  ms.author: sguthals
+  ms.date: 03/28/2022
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen, devdivchpfy22
 title: Introduction
 durationInMinutes: 2
 content: |

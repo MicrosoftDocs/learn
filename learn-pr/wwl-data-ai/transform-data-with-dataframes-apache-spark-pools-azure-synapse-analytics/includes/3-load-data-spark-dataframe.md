@@ -27,7 +27,6 @@ You would perform the following steps:
 4. Select **Add code** to add a notebook code cell, and then paste the following text:
 
     ```Scala
-    Copy
     %%spark
     spark.sql("CREATE DATABASE IF NOT EXISTS nyctaxi")
     val df = spark.read.sqlanalytics("SQLPOOL1.dbo.Trip") 
@@ -36,3 +35,4 @@ You would perform the following steps:
 In this code example, the spark.sql method is used to create a database named nyctaxi. A DataFrame named df reads data from a table named Trip in the SQLPOOL1 dedicated SQL pool instance. Finally, the DataFrame df writes data into it and used the saveAsTable method to save it as nyctaxi.trip.
 
 As you can see, there are various ways to load data into an Apache Spark DataFrame depending on the source.
+

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-resources-by-using-azure-cli.what-azure-cli
+title: What is Azure CLI?
+metadata:
+  title: What is Azure CLI?
+  description: "What is Azure CLI?"
+  ms.date: 02/25/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-azure-cli.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.create-git-project.exercise-fix-mistakes
+title: Exercise - Use Git to fix mistakes
+metadata:
+  title: Exercise - Use Git to fix mistakes
+  description: Practice using Git tools to fix mistakes.
+  ms.date: 10/08/2021
+  author: mshumba
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ms.custom: team=nextgen
+durationInMinutes: 10
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/5-exercise-fix-mistakes.md)]

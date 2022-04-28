@@ -8,7 +8,7 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
     metadata:
       name: quickstart
     spec:
-      version: 7.11.1
+      version: 8.1.2
       nodeSets:
       - name: default
         count: 1
@@ -27,7 +27,7 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
 1. Run the following command in Cloud Shell to see the status of the Elasticsearch cluster as it gets created.
 
     ```bash
-    kubecctl get elasticsearch
+    kubectl get elasticsearch
     ```
 
     :::image type="content" source="../media/get-elasticsearch-output.png" alt-text="A screenshot of the Elasticsearch cluster status in Azure Cloud Shell.":::
@@ -54,7 +54,7 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
     curl -u "elastic:$PASSWORD" -k "https://localhost:9200/_cat/nodes?v=true"
     ```
 
-    :::image type="content" source="../media/curl-output.png" alt-text="A screenshot of infomation about the cluster nodes.":::
+    :::image type="content" source="../media/curl-output.png" alt-text="A screenshot of information about the cluster nodes.":::
 
 1. Create kibana.yaml file with the following content:
 
@@ -64,8 +64,8 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
     metadata:
       name: quickstart
     spec:
-      version: 7.11.1
-      count: 2
+      version: 8.1.2
+      count: 1
       http:
         service:
           spec:
@@ -76,15 +76,15 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
 
 1. Next, run the following command to deploy Kibana.
 
-    ```yml
+    ```bash
     kubectl apply -f kibana.yaml    
     ```
 
-1. You can use `watch kubectl get kibana` command to see the status of Kibana deployment. Once the health of the deployment turns green, stop the watch command and run `kubectl get service quickstart-kb-http` to get details for Kibana.
+1. You can use `watch kubectl get kibana` command to see the status of Kibana deployment. Once the health of the deployment turns green, stop the `watch` command and run `kubectl get service quickstart-kb-http` to get details for Kibana.
 
-1. Copy the EXTERNAL-IP from the output and open https://<EXTERNAL-IP>:5601. Caution: Since we are using self-signed certificates for this tutorial you should see a “Your connection isn’t private” message in the browser. Please ensure to use valid certificates for any production deployments. Please refer to the TLS certificates section for more details.
+1. Copy the EXTERNAL-IP from the output and open `https://<EXTERNAL-IP>:5601`. **Caution**: Since we are using self-signed certificates for this tutorial you should see a “Your connection isn’t private” message in the browser. Please use valid certificates for any production deployments. Please refer to the TLS certificates section for more details.
 
-1. Click on Advanced and proceed to the Kibana Login page. Use the ***elastic*** user to log in.
+1. Select Advanced and proceed to the Kibana Login page. Use the ***elastic*** user to log in.
 
 1. On Azure Cloud Shell, run the following command to get the password for the elastic user and use the value to log in to the Kibana Login page in the browser.
 
@@ -96,4 +96,4 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
 
     :::image type="content" source="../media/elastic-welcome-screen.png" alt-text="A screenshot of the Elastic welcome screen and button to add data.":::
 
-    The deployment is up and running. You can click on Add data to add sample datasets and Kibana visualizations that are shipped with Kibana, or you can click on Explore on my own to explore Kibana further and add your data.
+    The deployment is up and running. You can select **Add integrations** to add sample datasets and Kibana visualizations that are shipped with Kibana, or you can select **Explore on my own** to explore Kibana further and add your data.

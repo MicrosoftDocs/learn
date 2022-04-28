@@ -1,4 +1,4 @@
-_What you can't see, you can't measure. What you can't measure, you can't improve._
+*What you can't see, you can't measure. What you can't measure, you can't improve.*
 
 Within an enterprise-scale architecture, management and monitoring focus on ensuring observability as a foundation of platform design. A centralized approach to logging is turned on by default across the Azure estate. Centralized logging prevents gaps in observability that can place an organization at risk.
 
@@ -31,7 +31,7 @@ When you operationalize an Azure estate, it's important to provide the various t
 
 Azure Monitor workbooks are the platform-visualization capability where current development efforts are focused. Workbooks provide a flexible canvas for data analysis and the creation of rich visual reports within the Azure portal. They can tap into multiple data sources from across Azure and combine them into unified, interactive experiences.
 
-Workbooks can query data from multiple sources within Azure. Authors of workbooks can transform this data to provide insights into the availability, performance, usage, and overall health of the underlying components. For example, you can analyze performance logs from VMs to identify high-CPU or low-memory instances and display the results as a grid in an interactive report.
+Workbooks can query data from multiple sources within Azure. Workbook authors can transform this data to provide insights into the availability, performance, usage, and overall health of the underlying components. For example, you can analyze performance logs from VMs to identify high-CPU or low-memory instances and display the results as a grid in an interactive report.
 
 But the real power of workbooks is the ability to combine data from disparate sources within a single report. You can create composite resource views or joins across resources to produce richer data and insights than would otherwise be possible.
 
@@ -40,10 +40,10 @@ Workbooks are currently compatible with the following data sources:
 - Logs
 - Metrics
 - Azure Resource Graph
-- Azure Monitor Alerts (preview)
-- Workload health (preview)
-- Azure Resource Health (preview)
-- Azure Data Explorer (preview)
+- Azure Monitor Alerts
+- Workload health
+- Azure Resource Health
+- Azure Data Explorer
 
 We recommend that you build a curated set of dashboards for specific personas within the organization's operating model.
 
@@ -55,9 +55,9 @@ Logs are events that occurred within the system. They can contain different kind
 
 Metrics are numerical values that describe some aspect of a system at a particular time. They're collected at regular intervals and identified by a timestamp, a name, a value, and one or more defining labels. Metrics can be:
 
-- Aggregated by using a variety of algorithms.
-- Compared with other metrics.
-- Analyzed for trends over time.
+- Aggregated by using a variety of algorithms
+- Compared with other metrics
+- Analyzed for trends over time
 
 Logs and metrics are critical components of application-centric platform monitoring. Enforcing the collection of this data via policy at the platform level ensures that the data is readily available for consumption by application teams. It also prevents unintended gaps in observability across the platform.
 
@@ -65,17 +65,17 @@ Logs and metrics are critical components of application-centric platform monitor
 
 Apply VM management configurations via policy to ensure consistent configuration across the platform. An important element of this approach is to adhere to the enterprise-scale design principle of using native Azure platform services and capabilities whenever possible.
 
-A VM-management strategy begins with backups to protect against data loss. Azure Backup is the native Azure service for VM backup. The service provides independent and isolated backups to guard against unintended destruction of the data on VMs. Backups are stored in a Recovery Services vault with built-in management of recovery points. 
+A VM-management strategy begins with backups to protect against data loss. Azure Backup is the native Azure service for VM backup. The service provides independent and isolated backups to guard against unintended destruction of the data on VMs. Backups are stored in a Recovery Services vault with built-in management of recovery points.
 
 Azure Backup removes the need to manage third-party backup software and infrastructure. As with other native Azure features, backup configurations can be set, audited, and enforced by using Azure Policy. This approach ensures that services remain compliant with the organization's governance requirements. Enforce the use of Azure Backup on all VMs via policy.
 
-Centralized Azure Automation accounts can provide application landing zones with easily consumable VM-management services. They can also provide central IT with the visibility and control required to ensure VM compliance with enterprise standards. Take advantage of the VM update-management and guest-configuration features of Azure Automation. 
+Centralized Azure Automation accounts can provide application landing zones with easily consumable VM-management services. They can also provide central IT with the visibility and control required to ensure VM compliance with enterprise standards. Take advantage of the VM update-management and guest-configuration features of Azure Automation.
 
 Enforcing update-management configurations via policy:
 
-- Ensures that all VMs are included in the patch-management regimen.
-- Gives application teams the ability to manage patch deployment for their VMs.
-- Provides visibility and enforcement capabilities to the central IT team across all VMs.
+- Ensures that all VMs are included in the patch-management regimen
+- Gives application teams the ability to manage patch deployment for their VMs
+- Provides visibility and enforcement capabilities to the central IT team across all VMs
 
 Enabling guest-configuration audit capabilities via policy helps application teams monitor their workloads for configuration drift with little effort.
 
@@ -93,4 +93,4 @@ Alerts raise notifications about significant events. Azure Monitor provides a un
 
 ## Security monitoring
 
-Azure Security Center also plays an important part in the enterprise-scale monitoring strategy. It can help monitor the security of VMs, networks, storage, data services, and applications. Security Center provides advanced threat detection by using machine learning and behavioral analytics to help identify active threats targeting Azure resources. It also provides threat protection that blocks malware or other unwanted code and reduces the surface area exposed to brute-force and other network attacks. We recommend that you enable the Standard SKU for Security Center on all subscriptions via policy.
+Microsoft Defender for Cloud also plays an important part in the enterprise-scale monitoring strategy. It can help monitor the security of VMs, networks, storage, data services, and applications. Defender for Cloud provides advanced threat detection by using machine learning and behavioral analytics to help identify active threats targeting Azure resources. It also provides threat protection that blocks malware or other unwanted code and reduces the surface area exposed to brute-force and other network attacks. We recommend that you enable the Standard SKU for Defender for Cloud on all subscriptions via policy.

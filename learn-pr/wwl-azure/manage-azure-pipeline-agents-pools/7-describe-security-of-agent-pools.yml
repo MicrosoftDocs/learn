@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-pipeline-agents-pools.describe-security-of-agent-pools
+title: Describe security of agent pools
+metadata:
+  title: Describe security of agent pools
+  description: "Describe security of agent pools"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-describe-security-of-agent-pools.md)]

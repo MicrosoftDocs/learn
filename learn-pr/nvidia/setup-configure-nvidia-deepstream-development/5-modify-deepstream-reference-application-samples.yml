@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.nvidia.setup-configure-nvidia-deepstream-development.5-modify-deepstream-reference-application-samples
+title: Exercise - Modify the DeepStream sample applications
+metadata:
+  title: Exercise - Modify the DeepStream sample applications
+  description: Exercise - Modify the DeepStream sample applications.
+  author: toolboc
+  ms.author: chnoring
+  ms.date: 11/09/2021
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-modify-deepstream-reference-application-samples.md)]

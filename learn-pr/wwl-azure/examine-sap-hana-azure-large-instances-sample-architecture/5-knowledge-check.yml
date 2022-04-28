@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+sandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How many tiers are represented in the Azure-specific SAP HANA on Azure (Large Instances) architecture?"
+    choices:
+    - content: "1"
+      isCorrect: false
+      explanation: "Incorrect. SAP HANA on Azure (Large Instances) represents an Azure-specific example of 3-tier architecture, with the SAP application layer hosted on Azure VMs and the database layer residing on SAP TDI-configured hardware located in a Microsoft-hosted Large Instance stamp in the same Azure region."
+    - content: "2"
+      isCorrect: false
+      explanation: "Incorrect. SAP HANA on Azure (Large Instances) represents an Azure-specific example of 3-tier architecture, with the SAP application layer hosted on Azure VMs and the database layer residing on SAP TDI-configured hardware located in a Microsoft-hosted Large Instance stamp in the same Azure region."
+    - content: "3"
+      isCorrect: true
+      explanation: "Correct. SAP HANA on Azure (Large Instances) represents an Azure-specific example of 3-tier architecture, with the SAP application layer hosted on Azure VMs and the database layer residing on SAP TDI-configured hardware located in a Microsoft-hosted Large Instance stamp in the same Azure region."
+  - content: "What service is used to connect HANA Large Instances with the Azure virtual network?"
+    choices:
+    - content: "ExpressRoute"
+      isCorrect: true
+      explanation: "Correct. ExpressRoute is the recommended Azure networking service for creating private connections between an on-premises network and Azure virtual networks that do not go over the public Internet. Azure VMs connect to HANA Large Instances using another ExpressRoute connection. The ExpressRoute connection between the Azure virtual network and the HANA Large Instances is set up as part of the Microsoft offering."
+    - content: "Public VPN"
+      isCorrect: false
+      explanation: "Incorrect. ExpressRoute is the recommended Azure networking service for creating private connections between an on-premises network and Azure virtual networks that do not go over the public Internet. Azure VMs connect to HANA Large Instances using another ExpressRoute connection. The ExpressRoute connection between the Azure virtual network and the HANA Large Instances is set up as part of the Microsoft offering."
+    - content: "Azure Application Gateway"
+      isCorrect: false
+      explanation: "Incorrect. ExpressRoute is the recommended Azure networking service for creating private connections between an on-premises network and Azure virtual networks that do not go over the public Internet. Azure VMs connect to HANA Large Instances using another ExpressRoute connection. The ExpressRoute connection between the Azure virtual network and the HANA Large Instances is set up as part of the Microsoft offering."

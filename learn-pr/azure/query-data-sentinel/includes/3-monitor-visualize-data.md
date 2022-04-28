@@ -1,13 +1,13 @@
-Azure Sentinel Logs provide you access to the various logs collected from the security connectors. Azure Sentinel collects these logs from its integrated connectors and stores them in the Azure Log Analytics workspace.
+Microsoft Sentinel Logs provide you access to the various logs collected from the security connectors. Microsoft Sentinel collects these logs from its integrated connectors and stores them in the Azure Log Analytics workspace.
 
 ## Log Analytics workspace
 
 The Log Analytics workspace is a repository that stores data and configuration information. You can create queries to filter important information, which you can then use to create analytics rules and detect threats.
-For example, you can use Azure Sentinel Logs in Contoso to search data from multiple sources, aggregate large data sets, and perform complex operations to locate potential security threats and vulnerabilities.
+For example, you can use Microsoft Sentinel Logs in Contoso to search data from multiple sources, aggregate large data sets, and perform complex operations to locate potential security threats and vulnerabilities.
 
-## Explore the Azure Sentinel Logs page
+## Explore the Microsoft Sentinel Logs page
 
-You can search for specific logs on the **Azure Sentinel Logs** page, which you can access from the navigation pane in Azure Sentinel.
+You can search for specific logs on the **Microsoft Sentinel Logs** page, which you can access from the navigation pane in Microsoft Sentinel.
 
 The **Logs** page has four main parts:
 
@@ -39,7 +39,7 @@ The **Query Explorer** link on the page header to access your previously saved q
 
 The **Tables** pane groups logs from different solutions into tables. You can expand the solution group and observe all the logs that are collected. You can also select one of the logs from the tables pane, and then you can either preview the data or add that log to the **Favorites** section.
 
-The following screenshot displays the logs collected in Azure Sentinel solution.
+The following screenshot displays the logs collected in Microsoft Sentinel solution.
 
 :::image type="content" source="../media/03-logs-azure-sentinel.png" alt-text="Screenshot displaying the Tables view." border="true":::
 
@@ -65,7 +65,7 @@ The header toolbar provides additional interaction with the query, as displayed 
 Save the query from the **Query** pane by selecting **Save**. This opens a new window, where you are prompted to enter the name of the saved query and category. Saved queries appear in the query explorer.
 In the **Time Range** field, you can provide a different time to change the time range for which you want to display the results of the query.
 Create a link for the query and share with other team members by selecting **Copy link to query**. You can also copy the query text.
-From the header toolbar in the **Query** pane, you can create either a **New Azure Monitor alert** or a **New Azure Sentinel alert**. If you opt to create a new Azure Sentinel alert, you will be directed to the next steps for creating an analytics rule.
+From the header toolbar in the **Query** pane, you can create either a **New Azure Monitor alert** or a **New Microsoft Sentinel alert**. If you opt to create a new Microsoft Sentinel alert, you will be directed to the next steps for creating an analytics rule.
 Export the query into one of the following formats:
 
 - **Export to CSV**. To export all the columns, both visible and hidden, into a CSV file that you can open with Microsoft Excel.

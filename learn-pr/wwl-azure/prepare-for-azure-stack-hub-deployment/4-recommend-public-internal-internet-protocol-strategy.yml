@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-for-azure-stack-hub-deployment.recommend-public-internal-ip-strategy
+title: Recommend a public and internal IP strategy
+metadata:
+  title: Recommend a public and internal IP strategy
+  description: "Recommend a public and internal IP strategy"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-recommend-public-internal-internet-protocol-strategy.md)]

@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.manage-azure-pipeline-agents-pools
+metadata:
+  title: Manage Azure Pipeline agents and pools
+  description: "Manage Azure Pipeline agents and pools"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Azure Pipeline agents and pools
+summary: This module explores differences between Microsoft-hosted and self-hosted agents, detail job types, and introduces agent pools configuration. You will understand typical situations to use agent pools and how to manage its security.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Choose between Microsoft-hosted and self-hosted agents
+  - Install and configure Azure Pipelines Agents
+  - Configure agent pools
+  - Make the agents and pools secure
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.manage-azure-pipeline-agents-pools.introduction
+- learn.wwl.manage-azure-pipeline-agents-pools.choose-between-microsoft-hosted-versus-self-hosted-agents
+- learn.wwl.manage-azure-pipeline-agents-pools.explore-job-types
+- learn.wwl.manage-azure-pipeline-agents-pools.introduction-to-agent-pools
+- learn.wwl.manage-azure-pipeline-agents-pools.explore-predefined-agent-pool
+- learn.wwl.manage-azure-pipeline-agents-pools.understand-typical-situations-for-agent-pools
+- learn.wwl.manage-azure-pipeline-agents-pools.describe-security-of-agent-pools
+- learn.wwl.manage-azure-pipeline-agents-pools.knowledge-check
+- learn.wwl.manage-azure-pipeline-agents-pools.summary
+badge:
+  uid: learn.wwl.manage-azure-pipeline-agents-pools.badge

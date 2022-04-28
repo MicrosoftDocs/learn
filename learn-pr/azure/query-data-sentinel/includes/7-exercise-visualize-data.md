@@ -1,26 +1,26 @@
-As a security engineer working for Contoso, you notice suspicious activities in your Azure subscription and you decide to analyze this activity by using Azure Sentinel workbooks.
+As a security engineer working for Contoso, you notice suspicious activities in your Azure subscription and you decide to analyze this activity by using Microsoft Sentinel workbooks.
 
-## Exercise: Query and visualize data with Azure Sentinel Workbooks
+## Exercise: Query and visualize data with Microsoft Sentinel Workbooks
 
-You want to analyze the logs in Azure Sentinel from the Azure Activity connector. You want to then further implement visualization of this data and save it in a customized workbook.
+You want to analyze the logs in Microsoft Sentinel from the Azure Activity connector. You want to then further implement visualization of this data and save it in a customized workbook.
 
-In this exercise, you will explore logs and Azure Sentinel Workbooks. You will perform the following tasks:
+In this exercise, you will explore logs and Microsoft Sentinel Workbooks. You will perform the following tasks:
 
-- Interact with logs data in the Azure Sentinel **Logs** page.
+- Interact with logs data in the Microsoft Sentinel **Logs** page.
 - Create and edit a custom workbook to visualize important data.
 
-> [!NOTE] 
+> [!NOTE]
 > You must have completed the Exercise Setup unit before you can complete this exercise. If you have not done so, complete it now, and then continue with the exercise steps.
 
-### Task 1: Work with Logs in Azure Sentinel
+### Task 1: Work with Logs in Microsoft Sentinel
 
-1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
-2. On the **Azure Sentinel** page, on the menu bar, in the **General** section, select **Logs**.
+1. In the Azure portal, search for and select Microsoft Sentinel, and then select the previously created Microsoft Sentinel workspace.
+2. On the **Microsoft Sentinel** page, on the menu bar, in the **General** section, select **Logs**.
 
     > [!NOTE]
     > When you open the **Logs** page for the first time, you may be redirected to the **Queries** window. Close the **Queries** window and return to the **New Query 1** section.
 
-3. On the **Azure Sentinel | Logs** page, in the **Tables** pane, from the **Group by: Solution** drop-down menu, select **Category**.
+3. On the **Microsoft Sentinel | Logs** page, in the **Tables** pane, from the **Group by: Solution** drop-down menu, select **Category**.
 4. In the **Tables** pane, from the list of tables, expand the **Azure Resources** category, move the cursor over the **Azure Activity** table or use the Tab key to navigate to the table, and then select **Preview data**.
 5. In the **AzureActivity** window, select **See in query editor**. This option enables you to preview the data and to check if the results will be as you expect before you actually run a query with it.
 
@@ -36,13 +36,13 @@ In this exercise, you will explore logs and Azure Sentinel Workbooks. You will p
     > [!NOTE]
     > You can try to practice writing queries in the following [demonstration environment](https://ms.portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
 
-### Task 2: Work with Workbooks in Azure Sentinel
+### Task 2: Work with Workbooks in Microsoft Sentinel
 
-1. On the **Azure Sentinel** page, on the menu bar, in the **Threat Management** section, select **Workbooks**.
-2. On the **Azure Sentinel | Workbooks** page, select the **Templates** tab.
+1. On the **Microsoft Sentinel** page, on the menu bar, in the **Threat Management** section, select **Workbooks**.
+2. On the **Microsoft Sentinel | Workbooks** page, select the **Templates** tab.
 3. In the **Search** field, enter and select **Azure Activity**.
 4. In the details pane, review the information provided for the template, and then select **Save**. In the **Save workbook to…** window, select the same location that you selected in the preparation exercise, and then select **OK**.
-5. On the **Azure Sentinel | Workbooks** page, select **My workbooks** tab. From the list of saved templates, select **Azure Activity**, and then in the details pane, select **View saved workbook**.
+5. On the **Microsoft Sentinel | Workbooks** page, select **My workbooks** tab. From the list of saved templates, select **Azure Activity**, and then in the details pane, select **View saved workbook**.
 6. On **Azure Activity-** *sentinelname* page, review all the elements of the workbook.
 7. You can interact with the workbook by selecting some of the elements.
 8. Select the **Time range:** field to select a different time range for the records presented in the **Azure Activity** table. Select the **Caller:** drop-down menu to filter the records based on the user or service that generates the events. Select the **Resource Group:** drop-down menu to filter the events based on a specific resource group.
@@ -91,11 +91,11 @@ In this exercise, you will explore logs and Azure Sentinel Workbooks. You will p
 20. When you are finished making changes, select **Done Editing**.
 
     > [!TIP]
-    > Your new workbook will be accessible from the **Azure Sentinel | Workbooks pane** in the **My workbooks** tab. If your new workbook is not listed, select the **Refresh** option.
+    > Your new workbook will be accessible from the **Microsoft Sentinel | Workbooks pane** in the **My workbooks** tab. If your new workbook is not listed, select the **Refresh** option.
 
 ### Clean up the resources
 
 1. In the Azure portal, search for **Resource groups**.
 2. Select **azure-sentinel-rg**.
 3. On the header bar, select **Delete resource group**.
-4. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group **azure-sentinel-rg** and select **Delete**. 
+4. In the **TYPE THE RESOURCE GROUP NAME:** field, enter the name of the resource group **azure-sentinel-rg** and select **Delete**.

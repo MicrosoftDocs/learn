@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-identity-platform.explore-service-principals
+title: Explore service principals
+metadata:
+  title: Explore service principals
+  description: "Explore service principals"
+  ms.date: 01/26/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-app-service-principals.md)]

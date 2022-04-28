@@ -4,14 +4,13 @@ title: Exercise - Use the Speech service
 metadata:
   title: Exercise - Use the Speech service
   description: "Exercise - Use the Speech service"
-  ms.date: 06/15/2021
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 88765
-labModal: true
+labModal: false
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-transcribe-speech-use-azure.md)]

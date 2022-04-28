@@ -4,8 +4,8 @@ metadata:
   title: Application scalability on AKS with HorizontalPodAutoscalers
   description: Explore how to scale your deployed applications with HorizontalPodAutoscalers in AKS.
   ms.date: 03/04/2021
-  author: khaosdoctor
-  ms.author: ludossan
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Application scalability on AKS with HorizontalPodAutoscalers

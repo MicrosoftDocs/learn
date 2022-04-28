@@ -4,16 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/07/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Which transformation in the Mapping Data Flow is used to routes data rows to different streams based on matching conditions?"
+  - content: "Which transformation in the Mapping Data Flow is used to route data rows to different streams based on matching conditions?"
     choices:
     - content: "Lookup."
       isCorrect: false

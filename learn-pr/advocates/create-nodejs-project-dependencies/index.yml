@@ -8,6 +8,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Create a new Node.js project and work with dependencies  
 summary: Use dependencies from the npm registry to develop Node.js applications faster. Learn how to manage dependencies for your project.
 abstract: |

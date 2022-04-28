@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.autoscale-java-azure.exercise-monitor
+title: Exercise - Autoscaling monitoring
+metadata:
+  unitType: exercise
+  title: Exercise - Autoscaling monitoring
+  description: We look at exercises for monitoring your sample application's scaling
+  ms.date: 11/18/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors: ropreddy-12032021
+  ms.custom: team=cloud_advocates
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-exercise-monitor.md)]

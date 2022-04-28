@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.examine-security-fundamentals-for-iot
+metadata:
+  title: Examine security fundamentals for IoT
+  description: "This module introduces you to the IoT security infrastructure, security best practices, threat modeling, and the security tasks that are assigned to the various roles that contribute to an IoT solution."
+  ms.date: 03/11/2022
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Examine security fundamentals for IoT
+summary: This module introduces you to the IoT security infrastructure, security best practices, threat modeling, and the security tasks that are assigned to the various roles that contribute to an IoT solution.
+abstract: |
+  After you complete this module, you will be able to:
+  - Describe security recommendations.
+  - Describe the IoT security infrastructure and security-in-depth strategy.
+  - Describe threat modeling and mitigation techniques.
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
+  - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
+  - Describe the features and capabilities of Azure IoT Edge.
+iconUrl: /learn/achievements/iot-security-fundamentals.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-iot-edge
+- azure-iot-hub
+units:
+- learn.wwl.examine-security-fundamentals-for-iot.introduction
+- learn.wwl.examine-security-fundamentals-for-iot.review-security-recommendations
+- learn.wwl.examine-security-fundamentals-for-iot.examine-iot-security-infrastructure-from-ground-up
+- learn.wwl.examine-security-fundamentals-for-iot.depth-strategy
+- learn.wwl.examine-security-fundamentals-for-iot.examine-threat-modeling-mitigation-techniques
+- learn.wwl.examine-security-fundamentals-for-iot.knowledge-check
+- learn.wwl.examine-security-fundamentals-for-iot.summary
+badge:
+  uid: learn.wwl.examine-security-fundamentals-for-iot.badge

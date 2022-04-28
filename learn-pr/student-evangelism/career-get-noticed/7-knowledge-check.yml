@@ -1,0 +1,65 @@
+### YamlMime:ModuleUnit
+uid: learn.career-get-noticed.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check for the "How to Get Noticed" learn module.
+  ms.date: 08/19/2021
+  author: gcordido
+  ms.author: gcordido
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom:
+  - team=nextgen
+  - team=cloud_advocates
+  ms.contributors:
+  - gcordido-09012021
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+    - content: You and a classmate both applied for an intern position. The classmate got the position, and you never heard back from the recruiter. What might be the reason for this?
+      choices:
+        - content: Your classmate had the better resume.
+          isCorrect: false
+          explanation: Most likely not. You both have the same education and comparable experiences.
+        - content: Your classmate participated in a hackathon that you didn't have time for, because you were studying for an exam.
+          isCorrect: true
+          explanation: At the hackathon, your classmate met recruiters for several companies, including one from the company that you both applied to for the internship. That single personal impression was enough to make the recruiter remember your classmate and pass their resume along to the hiring manager. 
+        - content: Your classmate was just lucky to be picked instead of you.
+          isCorrect: false
+          explanation: While luck might occasionally play a role, you can increase the likelihood of getting noticed and hired by participating in networking events. Whenever an opportunity arises to meet representatives from a company, do what you can to take advantage of it.
+    - content: How long does a recruiter usually take to initially scan a resume?
+      choices:
+        - content: Up to 10 seconds
+          isCorrect: true
+          explanation: Because of the volume of resumes they receive daily, recruiters have time to fully read only those that address the position's requirements and pique their interest.
+        - content: From 30 seconds to a minute
+          isCorrect: false
+          explanation: Recruiters take at most 10 seconds for an initial resume scan, which often determines whether the resume will be read in full.
+        - content: 5 minutes
+          isCorrect: false
+          explanation: Recruiters take at most 10 seconds for an initial resume scan, which often determines whether the resume will be read in full.
+    - content: What are the key sections that every student resume should have?
+      choices:
+        - content: Education, Skills, and Experience and/or Projects
+          isCorrect: true
+          explanation: When they're presented in this order, these three sections provide the most important information about a student.
+        - content: Education, Experience, and Honors and Affiliations
+          isCorrect: false
+          explanation: Although Education and Experience are two key sections, an Honors and Affiliations section is not considered a must. The other two key sections are Skills and Projects.
+        - content: Experience and/or Projects, Skills, and Volunteering
+          isCorrect: false
+          explanation: The most important section in any student resume is the Education section. Replace Volunteering with an Education section, list it first, and you'll have the three key sections.
+    - content: Which one of the following Experience descriptions best highlights a student's impact?
+      choices:
+        - content: Improved route accuracy by 15% through the implementation of a real-time updating algorithm, as measured by comparing the number of real routes generated before and after the implementation
+          isCorrect: true
+          explanation: The statement showcases impact by using an action verb to highlight the results, moves on to the "how," and finishes with how the impact was measured. For more guidance, follow the template mentioned in the "Write your resume" unit.
+        - content: Developed a real-time updating algorithm to improve route accuracy
+          isCorrect: false
+          explanation: This statement explains what was done, but lacks both an action verb that relates to impact and details about the measurable results.
+        - content: Tasked with improving route accuracy by implementing new algorithms and measuring the number of real routes
+          isCorrect: false
+          explanation: This statement describes duties and, although it includes the "how" and the measures, it doesn't tackle impact.

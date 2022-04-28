@@ -4,8 +4,8 @@ metadata:
   title: "Build and deploy applications to Azure by using GitHub Actions"
   description: Create two deployment workflows using GitHub Actions and Microsoft Azure.
   ms.date: 05/19/2020
-  author: jamcneil
-  ms.author: jumcn
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Build and deploy applications to Azure by using GitHub Actions"

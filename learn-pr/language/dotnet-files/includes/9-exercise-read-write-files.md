@@ -14,24 +14,16 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Preparation for sales data
 
-1. In `Program.cs` directly under the `FindFiles` method, add a new private class that will model the *sales.json* data.
-
-    ```csharp
-    class SalesData
-    {
-        public double Total { get; set; }
-    }
-    ```
-
-   This class will be nested within the `Program` class.
-
 1. At the top of `Program.cs`, add `using Newtonsoft.Json`.
 
     ```csharp
-    using System;
-    using System.IO;
-    using System.Collections.Generic;
-    using Newtonsoft.Json; 
+    using Newtonsoft.Json;
+    ```
+
+1. In `Program.cs` directly under the `FindFiles` method, [add a new `record`](/dotnet/csharp/language-reference/builtin-types/record/) that will model the *sales.json* data. 
+
+    ```csharp
+    record SalesData (double Total);
     ```
 
 ## Create a method to calculate sales totals
@@ -39,7 +31,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
 1. In `Program.cs`, create a new function that will calculate the sales total. This method should take an `IEnumerable<string>` of file paths that it can iterate over.
 
     ```csharp
-    static double CalculateSalesTotal(IEnumerable<string> salesFiles)
+    double CalculateSalesTotal(IEnumerable<string> salesFiles)
     {
         double salesTotal = 0;
         
@@ -52,21 +44,21 @@ In this exercise, you'll complete the project by reading the .json files, adding
 1. Within that method, replace `// READ FILES LOOP` with a loop that iterates over the `salesFiles`, reads the file, parses the content as JSON, and then increments the `salesTotal` variable with the `total` value from the file.
 
     ```csharp
-    static double CalculateSalesTotal(IEnumerable<string> salesFiles)
+    double CalculateSalesTotal(IEnumerable<string> salesFiles)
     {
         double salesTotal = 0;
         
         // Loop over each file path in salesFiles
         foreach (var file in salesFiles)
         {      
-          // Read the contents of the file
-          string salesJson = File.ReadAllText(file);
+            // Read the contents of the file
+            string salesJson = File.ReadAllText(file);
         
-          // Parse the contents as JSON
-          SalesData data = JsonConvert.DeserializeObject<SalesData>(salesJson);
+            // Parse the contents as JSON
+            SalesData? data = JsonConvert.DeserializeObject<SalesData?>(salesJson);
         
-          // Add the amount found in the Total field to the salesTotal variable
-          salesTotal += data.Total;
+            // Add the amount found in the Total field to the salesTotal variable
+            salesTotal += data?.Total ?? 0;
         }
         
         return salesTotal;
@@ -75,44 +67,38 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Call the CalculateSalesTotals method
 
-1. In the `Main` function, add a call to the `CalculateSalesTotal` function just above the `File.WriteAllText` call.
+1. In the `Program.cs` file, add a call to the `CalculateSalesTotal` function just above the `File.WriteAllText` call.
 
     ```csharp
-    static void Main(string[] args)
-    {
-        var currentDirectory = Directory.GetCurrentDirectory();
-        var storesDirectory = Path.Combine(currentDirectory, "stores");
-        
-        var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
-        Directory.CreateDirectory(salesTotalDir);
-        
-        var salesFiles = FindFiles(storesDir);
-        
-        var salesTotal = CalculateSalesTotal(salesFiles);
-        
-        File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
-    }
+    var currentDirectory = Directory.GetCurrentDirectory();
+    var storesDir = Path.Combine(currentDirectory, "stores");
+    
+    var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
+    Directory.CreateDirectory(salesTotalDir);
+    
+    var salesFiles = FindFiles(storesDir);
+    
+    var salesTotal = CalculateSalesTotal(salesFiles); // Add this line of code
+    
+    File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
     ```
 
 ## Write the total to the totals.txt file
 
-1. In the `Main` function, modify the `File.WriteAllText` block to write the value of the `salesTotal` variable to the *totals.txt* file. And while you're at it, change the `File.WriteAllText` call to `File.AppendAllText` so nothing in the file gets overwritten.
+1. In the `Program.cs` file, modify the `File.WriteAllText` block to write the value of the `salesTotal` variable to the *totals.txt* file. And while you're at it, change the `File.WriteAllText` call to `File.AppendAllText` so nothing in the file gets overwritten.
 
     ```csharp
-    static void Main(string[] args)
-    {
-        var currentDirectory = Directory.GetCurrentDirectory();            
-        var storesDir = Path.Combine(currentDirectory, "stores");
-        
-        var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
-        Directory.CreateDirectory(salesTotalDir);            
-        
-        var salesFiles = FindFiles(storesDir);
-        
-        var salesTotal = CalculateSalesTotal(salesFiles);
-        
-        File.AppendAllText(Path.Combine(salesTotalDir, "totals.txt"), $"{salesTotal}{Environment.NewLine}");
-    }
+    var currentDirectory = Directory.GetCurrentDirectory();            
+    var storesDir = Path.Combine(currentDirectory, "stores");
+    
+    var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
+    Directory.CreateDirectory(salesTotalDir);            
+    
+    var salesFiles = FindFiles(storesDir);
+    
+    var salesTotal = CalculateSalesTotal(salesFiles);
+    
+    File.AppendAllText(Path.Combine(salesTotalDir, "totals.txt"), $"{salesTotal}{Environment.NewLine}");
     ```
 
 1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the *Program.cs* file.
@@ -144,74 +130,57 @@ Outstanding work! You've written a smart, robust, and handy tool that Tailwind T
 If you got stuck during this exercise, here's the full code for this project.
 
 ```csharp
-using System;
-using System.IO;
-using System.Collections.Generic;
-using Newtonsoft.Json;
+using Newtonsoft.Json; 
 
-namespace files_module
+var currentDirectory = Directory.GetCurrentDirectory();
+var storesDirectory = Path.Combine(currentDirectory, "stores");
+
+var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
+Directory.CreateDirectory(salesTotalDir);   
+
+var salesFiles = FindFiles(storesDirectory);
+
+var salesTotal = CalculateSalesTotal(salesFiles);
+
+File.AppendAllText(Path.Combine(salesTotalDir, "totals.txt"), $"{salesTotal}{Environment.NewLine}");
+
+IEnumerable<string> FindFiles(string folderName)
 {
-    class Program
+    List<string> salesFiles = new List<string>();
+
+    var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
+
+    foreach (var file in foundFiles)
     {
-        static void Main(string[] args)
+        var extension = Path.GetExtension(file);
+        if (extension == ".json")
         {
-            var currentDirectory = Directory.GetCurrentDirectory();            
-            var storesDirectory = Path.Combine(currentDirectory, "stores");
-
-            var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
-            Directory.CreateDirectory(salesTotalDir);            
-
-            var salesFiles = FindFiles(storesDirectory);
-
-            var salesTotal = CalculateSalesTotal(salesFiles);
-
-            File.AppendAllText(Path.Combine(salesTotalDir, "totals.txt"), $"{salesTotal}{Environment.NewLine}");
+            salesFiles.Add(file);
         }
-
-        static IEnumerable<string> FindFiles(string folderName)
-        {
-            List<string> salesFiles = new List<string>();
-
-            var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
-
-            foreach (var file in foundFiles)
-            {
-                var extension = Path.GetExtension(file);
-
-                if (extension == ".json")
-                {
-                    salesFiles.Add(file);
-                }
-            }
-
-            return salesFiles;
-        }
-
-        static double CalculateSalesTotal(IEnumerable<string> salesFiles)
-        {
-            double salesTotal = 0;
-
-            // Loop over each file path in salesFiles
-            foreach (var file in salesFiles)
-            {      
-                // Read the contents of the file
-                string salesJson = File.ReadAllText(file);
-    
-                // Parse the contents as JSON
-                SalesData data = JsonConvert.DeserializeObject<SalesData>(salesJson);
-
-                // Add the amount found in the Total field to the salesTotal variable
-                salesTotal += data.Total;
-            }
-
-            return salesTotal;
-        }
-
-        class SalesData
-        {
-            public double Total { get; set; }
-        }
-
     }
+
+    return salesFiles;
 }
+
+double CalculateSalesTotal(IEnumerable<string> salesFiles)
+{
+    double salesTotal = 0;
+    
+    // Loop over each file path in salesFiles
+    foreach (var file in salesFiles)
+    {      
+        // Read the contents of the file
+        string salesJson = File.ReadAllText(file);
+    
+        // Parse the contents as JSON
+        SalesData? data = JsonConvert.DeserializeObject<SalesData?>(salesJson);
+    
+        // Add the amount found in the Total field to the salesTotal variable
+        salesTotal += data?.Total ?? 0;
+    }
+    
+    return salesTotal;
+}
+
+record SalesData (double Total);
 ```

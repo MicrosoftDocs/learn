@@ -4,11 +4,10 @@ metadata:
   title: What is Xamarin.Android?
   description: "Explore the components and developer tools you'll use to build Xamarin.Android apps."
   ms.date: 04/17/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: What is Xamarin.Android?
 durationInMinutes: 6
 content: |

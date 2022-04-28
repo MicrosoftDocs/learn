@@ -4,12 +4,13 @@ title: Azure resources and Azure Resource Manager
 metadata:
   title: Azure resources and Azure Resource Manager
   description: "In this unit, you'll learn about Azure resources and Azure Resource Manager."
-  ms.date: 08/02/2021
+  ms.date: 09/28/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/4-resources-resource-manager.md)]

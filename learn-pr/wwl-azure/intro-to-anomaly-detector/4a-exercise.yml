@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-anomaly-detector.exercise
+title: Exercise
+metadata:
+  title: Exercise
+  description: "Exercise"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4a-exercise.md)]

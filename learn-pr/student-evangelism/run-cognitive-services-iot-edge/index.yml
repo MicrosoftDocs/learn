@@ -5,9 +5,10 @@ metadata:
   description: "University of Oxford"
   ms.date: 6/12/2020
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
+  ms.custom: team=nextgen
 title: "Run Cognitive Services on IoT Edge"
 summary: "Implement a cognitive service for performing language detection on an IoT Edge device. Describe the components and steps for implementing a cognitive service on an IoT Edge device."
 abstract: |

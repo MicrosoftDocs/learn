@@ -4,12 +4,13 @@ title: Identify subscription usage
 metadata:
   title: Identify subscription usage
   description: "Identify subscription usage"
-  ms.date: 07/28/2021
+  ms.date: 04/15/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-identify-subscription-usage.md)]

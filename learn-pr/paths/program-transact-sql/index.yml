@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.wwl.program-transact-sql
+metadata:
+  title: Program with Transact-SQL
+  description: Program with Transact-SQL
+  ms.date: 10/09/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Program with Transact-SQL
+prerequisites: |
+  - Familiarity with working with tables of data
+  - Familiarity with Transact-SQL
+summary: |
+  Learn how to use programming techniques in your Transact-SQL.
+iconUrl: /learn/achievements/transact-sql-program.svg
+levels:
+- advanced
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+- database-administrator
+- developer
+- solution-architect
+- student
+- technology-manager
+products:
+- azure-sql-database
+- azure-sql-managed-instance
+- azure-sql-virtual-machines
+- azure-sqlserver-vm
+- sql-server
+modules:
+- learn.wwl.get-started-transact-sql-programming
+- learn.wwl.create-stored-procedures-table-valued-functions
+- learn.wwl.implement-error-handling-transact-sql
+- learn.wwl.implement-transactions-transact-sql
+trophy:
+  uid: learn.wwl.program-transact-sql.trophy

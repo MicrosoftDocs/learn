@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-azure-virtual-desktop-architecture.recommend-configuration-for-performance-requirements
+title: Recommend a configuration for performance requirements
+metadata:
+  title: Recommend a configuration for performance requirements
+  description: "Recommend a configuration for performance requirements"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/8-recommend-configuration-for-performance-requirements.md)]

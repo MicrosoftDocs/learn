@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-storage-for-azure-virtual-desktop.fslogix-components
+title: Storage for FSLogix components
+metadata:
+  title: Storage for FSLogix components
+  description: "Storage for FSLogix components"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-storage-fslogix-components.md)]

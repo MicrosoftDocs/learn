@@ -2,7 +2,7 @@ Storage accounts provide a flexible solution that keeps data as files, tables, a
 
 You want to enable your engineers to manage the data stored in Azure Storage, so they can maintain the data that your CRM application uses. You want to assess whether they can use Storage Explorer for this purpose.
 
-Here, you'll learn about Storage Explorer, and how you can use it to manage data from multiple storage accounts and subscriptions. You'll learn different ways of using Storage Explorer to connect to your data, Azure Stack, and data held in Azure Cosmos DB and Azure Data Lake.
+Here, you'll learn about Storage Explorer, and how you can use it to manage data from multiple storage accounts and subscriptions. You'll learn different ways of using Storage Explorer to connect to your data, Azure Stack, and data held in Azure Data Lake Storage.
 
 ## What is Storage Explorer?
 
@@ -11,7 +11,7 @@ Storage Explorer is a GUI application developed by Microsoft to simplify access 
 Some of the benefits of using Storage Explorer are:
 
 - It's easy to connect to and manage multiple storage accounts.
-- The interface lets you connect to Azure Cosmos DB and Data Lake.
+- The interface lets you connect to Data Lake Storage.
 - You can also use the interface to update and view entities in your storage accounts.
 - Storage Explorer is free to download and use.
 
@@ -35,7 +35,7 @@ Azure Storage Explorer can access many different data types from services like t
 - **Azure Table Storage**. Table storage is used to store NoSQL, semi-structured data.
 - **Azure Queue Storage**. Queue storage is used to store messages in a queue, which can then be accessed and processed by applications through HTTP(S) calls.
 - **Azure Files**. Azure Files is a file-sharing service that enables access through the Server Message Block protocol, similar to traditional file servers.
-- **Azure Data Lake Storage**. Azure Data Lake, based on Apache Hadoop, is designed for large data volumes and can store unstructured and structured data.
+- **Azure Data Lake Storage**. Azure Data Lake, based on Apache Hadoop, is designed for large data volumes and can store unstructured and structured data. Azure Data Lake Storage Gen1 is a dedicated service. Azure Data Lake Storage Gen2 is Azure Blob Storage with the hierarchical namespace feature enabled on the account.
 
 ### Manage multiple storage accounts in multiple subscriptions
 
@@ -69,8 +69,7 @@ There are many ways to connect an Azure Storage Explorer instance to your Azure 
 - Use a shared access signature URI
 - Use a name and key
 - Attach to a local emulator
-- Attach to Azure Cosmos DB through a connection string
-- Attach to Azure Data Lake by using a URI
+- Attach to Azure Data Lake Storage by using a URI
 
 We'll explore a few of these connection types, and provide an overview of the required steps to set up the connection.
 
@@ -124,10 +123,8 @@ To add a connection:
 
 When the connection is added, it appears in the resource tree as a connection node. The connection node is in this branch: **Local & attached** > **Storage Accounts**.
 
-### Manage Azure Cosmos DB and Data Lake
+### Manage Data Lake Storage Gen1
 
-You can use Storage Explorer to access and manage data stored in Azure Cosmos DB and Data Lake.
-
-To connect to an Azure Cosmos DB service, you'll need to use a connection string. You get a connection string by accessing the Azure Cosmos DB configuration through the Azure portal.
+You can use Storage Explorer to access and manage data stored in Data Lake Storage Gen1.
 
 To connect to a Data Lake service, you'll need the URI associated with the data lake. Using a URI allows you to access resources that aren't in your subscription. When you have the URI of the resource that you want to access, you connect to it by using the **Data Lake Storage Gen1** option.

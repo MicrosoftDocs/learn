@@ -3,9 +3,9 @@ uid: learn.wwl.manage-enterprise-security-in-hdinsight
 metadata:
   title: Manage enterprise security in HDInsight
   description: "Manage enterprise security in HDInsight"
-  ms.date: 02/28/2020
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage enterprise security in HDInsight
@@ -21,10 +21,10 @@ abstract: |
   8. Summary
 prerequisites: |
   The following pre-requisite should be completed:
-  1. Successfully login to the Azure Portal
-  2. Understand the Azure storage options
-  3. Understand the Azure compute options
-  4. Create and configure a HDInsight Cluster in the Azure Portal
+  -  Successfully login to the Azure portal
+  - Understand the Azure storage options
+  - Understand the Azure compute options
+  - Create and configure a HDInsight Cluster in the Azure portal
 iconUrl: /learn/achievements/manage-enterprise-security-in-hdinsight.svg
 levels:
 - intermediate

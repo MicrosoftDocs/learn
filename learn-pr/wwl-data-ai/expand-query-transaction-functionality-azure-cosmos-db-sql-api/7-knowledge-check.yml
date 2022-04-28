@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You have authored a user-defined function named **addTax**. You are writing a SQL query to return a flat array of scalar price values with the calculated tax value. Which valid SQL query should you use for this task?"
+    choices:
+    - content: "``SELECT VALUE addTax(p.price) FROM products p``"
+      isCorrect: false
+      explanation: "Incorrect. You must use the ``udf.`` prefix when utilizing a user-defined function in a SQL query."
+    - content: "``SELECT VALUE udf.addTax(p.price) FROM products p``"
+      isCorrect: true
+      explanation: "Correct. The ``udf.addTax()`` syntax is the correct syntax to user your UDF in a SQL query."
+    - content: "``SELECT VALUE p.price.addTax() FROM products p``"
+      isCorrect: false
+      explanation: "Incorrect. ``addTax`` is not a function of the price property and this is not valid SQL syntax in a query."
+  - content: "You are tasked with taking the date values that are stored in a container, and converting them to a company-specific date format in SQL query results. Which server-side programming construct should you use for this task?"
+    choices:
+    - content: "User-defined function"
+      isCorrect: true
+      explanation: "Correct. A user-defined function can be used natively in a SQL query and influence the results of that query."
+    - content: "Pre-trigger"
+      isCorrect: false
+      explanation: "Incorrect. A pre-trigger can only be used with point operations on a container."
+    - content: "Post-trigger"
+      isCorrect: false
+      explanation: "Incorrect. A post-trigger can only be used with point operations on a container."
+  - content: "Your team has written validation logic in JavaScript to make sure items are in your required format before committing them to a container. Which server-side programming construct should you use for this task?"
+    choices:
+    - content: "User-defined function"
+      isCorrect: false
+      explanation: "Incorrect. A user-defined function is only used within the context of a SQL query."
+    - content: "Pre-trigger"
+      isCorrect: true
+      explanation: "Correct. A pre-trigger will run its logic prior to the item being committed to the container. At this point, any validation logic can be executed."
+    - content: "Post-trigger"
+      isCorrect: false
+      explanation: "Incorrect. A post-trigger will run its logic too late after the item has already been committed to the container."
+  - content: "Your team has created a set of aggregate metadata items that are required to be modified anytime you successfully create or update an item within your container. Which server-side programming construct should you use for this task?"
+    choices:
+    - content: "User-defined function"
+      isCorrect: false
+      explanation: "Incorrect. A user-defined function is only used within the context of a SQL query."
+    - content: "Pre-trigger"
+      isCorrect: false
+      explanation: "Incorrect. A pre-trigger will run its logic too early before the item has successfully been created or updated."
+    - content: "Post-trigger"
+      isCorrect: true
+      explanation: "Correct. A post-trigger will run its logic after the item has successfully been created or updated. At this point, you can update the aggregate metadata item."

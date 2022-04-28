@@ -4,8 +4,8 @@ metadata:
   title: Enable multi-factor authentication in Azure AD B2B
   description: Enable multi-factor authentication in Azure AD B2B
   ms.date: 03/12/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: chrispine-chiedo
+  ms.author: cchiedo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enable multi-factor authentication in Azure AD B2B
@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: Application level, user level, and category level.
       isCorrect: false
-      explanation: There is no such thing as *category level* in multi-factor authentication enforcement that uses conditional access policies.
+      explanation: There is no such thing as *category level* in multi-factor authentication enforcement that uses Conditional Access policies.
     - content: Tenant level, user level, and application level.
       isCorrect: True
-      explanation: You can enforce multi-factor authentication at different scopes through conditional access policies. This means that you can further secure your collaboration in Azure AD B2B.
+      explanation: You can enforce multi-factor authentication at different scopes through Conditional Access policies. This means that you can further secure your collaboration in Azure AD B2B.
     - content: User level, application level, and strength level.
       isCorrect: false
-      explanation: There is no such thing as *strength level* in multi-factor authentication enforcement that uses conditional access policies.
+      explanation: There is no such thing as *strength level* in multi-factor authentication enforcement that uses Conditional Access policies.
   - content: Which of the following are valid categories for multi-factor authentication?
     choices:
     - content: Something a user possesses, and something the user does not know.

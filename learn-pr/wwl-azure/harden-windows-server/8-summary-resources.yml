@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.hardening-windows-server.summary-resources
+title: Summary and Resources
+metadata:
+  title: Summary and Resources
+  description: "Summary and Resources"
+  ms.date: 11/26/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary-resources.md)]

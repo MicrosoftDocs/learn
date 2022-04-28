@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-canary-releases-dark-launching.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following choices is an Azure-based tool can you use to divert a percentage of your web traffic to a newer version of an Azure website?"
+    choices:
+    - content: "Load Balancer."
+      isCorrect: false
+      explanation: "Incorrect. You set the traffic to be distributed to a small percentage of the users, and you carefully watch the application's behavior."
+    - content: "Application Gateway."
+      isCorrect: false
+      explanation: "Incorrect. You set the traffic to be distributed to a small percentage of the users, and you carefully watch the application's behavior."
+    - content: "Traffic Manager."
+      isCorrect: true
+      explanation: "Correct. You set the traffic to be distributed to a small percentage of the users, and you carefully watch the application's behavior."
+  - content: "Which of the following choices is a characteristic that makes users suitable for working with Canary deployments?"
+    choices:
+    - content: "Uses the app irregularly."
+      isCorrect: false
+      explanation: "Incorrect. It's a high tolerance for issues."
+    - content: "High tolerance for issues."
+      isCorrect: true
+      explanation: "Correct. It's a high tolerance for issues."
+    - content: "It depends highly on the app working all the time."
+      isCorrect: false
+      explanation: "Incorrect. It's a high tolerance for issues."
+  - content: "Which of the following choices describes the difference Dark Launching has from Canary releases?"
+    choices:
+    - content: "You're looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."
+      isCorrect: true
+      explanation: "Correct. You are looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."
+    - content: "You're looking to assess users' responses to new features in your backend and frontend."
+      isCorrect: false
+      explanation: "Incorrect. You are looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."
+    - content: "You're looking to assess users' responses to new features in your backend rather than testing the performance of the frontend."
+      isCorrect: false
+      explanation: "Incorrect. You are looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."

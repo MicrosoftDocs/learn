@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: Summary for managing multiple environments by using Bicep and Azure Pipelines.
+  ms.date: 10/18/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

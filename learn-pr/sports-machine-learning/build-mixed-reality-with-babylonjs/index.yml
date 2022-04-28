@@ -5,9 +5,10 @@ metadata:
   title: Introduction to WebXR with Babylon.js 
   description: Learn the core concepts of building Mixed Reality experiences with Babylon.js. We'll create a simple WebXR app that can be run cross-platform.
   ms.date: 06/15/2021
-  author: cassieview
-  ms.author: sguthals
+  author: cassiebreviu
+  ms.author: chnoring
   ms.topic: interactive-tutorial
+  ms.custom: team=nextgen
 title: Introduction to WebXR with Babylon.js 
 summary: In this learning module, we'll introduce you to the core concepts of building Mixed Reality experiences with Babylon.js. We'll create a simple WebXR app that can be run cross-platform.
 abstract: |
@@ -21,7 +22,7 @@ abstract: |
 prerequisites: | 
   - [Node.js](https://nodejs.org/?azure-portal=true)
   - [Visual Studio Code](https://aka.ms/LearnOnVSCode?azure-portal=true)
-iconUrl: /learn/achievements/student-evangelism/explore-mixed-reality-basketball-court-babylonjs.svg
+iconUrl: /learn/achievements/build-mixed-reality-with-babylonjs.svg
 levels:
 - beginner
 roles:

@@ -1,10 +1,11 @@
-In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell that you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
+In this unit, you'll use Azure Cloud Shell on the right side of your screen as your Linux terminal. Azure Cloud Shell is a shell you can access through the Azure portal or at https://shell.azure.com. You don't have to install anything on your computer to use it.
 
-When you write scripts, they might work as intended as long as you type in reasonable values. But if time passes or someone else runs the script, it's likely that someone will enter an unintended value or that some other precondition won't be met. To avoid situations like this, you should _sanitize_ your input. That is, you should add logic to your script to ensure it quits early if something is wrong and continues to run only if everything is fine.
+When you write scripts, they might work as intended as long as you type in reasonable values. But if time passes or someone else runs the script, it's likely that someone will enter an unintended value or that some other precondition won't be met. To avoid situations like this, you should *sanitize* your input; that is, you should add logic to your script to ensure it quits early if something is wrong and continues to run only if everything is fine.
 
 > [!NOTE]
 > Run the following commands only if you haven't completed any of the previous exercises in this module. We're assuming you've completed the previous exercises. If you haven't done so, you need a few files.
-- If you haven't completed the previous exercises in this module, run the following commands:
+
+- If you haven't completed the previous exercises in this module, run the following bash commands in a terminal:
 
    ```bash
    mkdir webapp
@@ -17,9 +18,9 @@ When you write scripts, they might work as intended as long as you type in reaso
 
 ## Add checks to your script parameters
 
-You've been working with a backup script so far. You've been adding parameters to it. You can make it even safer to use by adding checks that ensure the script only continues if it's provided reasonable parameter input.
+You've been working with a backup script so far, and you've been adding parameters to it. You can make your script even safer to use by adding checks that ensure the script only continues if it's provided reasonable parameter inputs.
 
-Let's look at the current script. If you completed the previous exercise, you should have a file called _Backup.ps1_. If not, create the file:  
+Let's look at the current script. If you completed the previous exercise, you should have a file called _Backup.ps1_. If not, create the file and open it in your code editor:  
 
 ```bash
 touch Backup.ps1
@@ -35,7 +36,7 @@ Param(
 )
 $date = Get-Date -format "yyyy-MM-dd"
 Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
-Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
+Write-Host "Created backup at $($DestinationPath + 'backup-' + $date + '.zip')"
 ```
 
 As you know, the script will stop responding if `$Path` points to a directory that doesn't exist.
@@ -46,7 +47,7 @@ As you know, the script will stop responding if `$Path` points to a directory th
    pwsh
    ```
 
-1. Add a check for the `$Path` parameter by adding this code right after the `Param` section:
+1. Add a check for the `$Path` parameter by adding this code right after the `Param` section, then save the file:
 
    ```powershell
    If (-Not (Test-Path $Path)) 
@@ -86,7 +87,7 @@ As you know, the script will stop responding if `$Path` points to a directory th
 
     If you run the script again, it will stop responding. It will notify you that the zip file already exists. Let's fix that problem. We'll add code to ensure the backup is created only if no other backup zip file from the current day exists.
 
-1. Replace the code in the file with this code:
+1. Replace the code in the file with this code, then save the file:
 
    ```powershell
    Param(
@@ -98,11 +99,11 @@ As you know, the script will stop responding if `$Path` points to a directory th
      Throw "The source directory $Path does not exist, please specify an existing directory"
    }
    $date = Get-Date -format "yyyy-MM-dd"
-   $DestinationFile = "$($DestinationPath + 'backup-')$date.zip"
+   $DestinationFile = "$($DestinationPath + 'backup-' + $date + '.zip')"
    If (-Not (Test-Path $DestinationFile)) 
    {
      Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
-     Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
+     Write-Host "Created backup at $($DestinationPath + 'backup-' + $date + '.zip')"
    } Else {
      Write-Error "Today's backup already exists"
    }
@@ -114,7 +115,7 @@ As you know, the script will stop responding if `$Path` points to a directory th
    If (-Not (Test-Path $DestinationFile)) 
    {
      Compress-Archive -Path $Path -CompressionLevel 'Fastest' -DestinationPath "$($DestinationPath + 'backup-' + $date)"
-     Write-Host "Created backup at $( $DestinationPath + 'backup-' + $date).zip"
+     Write-Host "Created backup at $($DestinationPath + 'backup-' + $date + '.zip')"
    } Else {
      Write-Error "Today's backup already exists"
    }
@@ -132,4 +133,4 @@ As you know, the script will stop responding if `$Path` points to a directory th
    Write-Error: Today's backup already exists
    ```
 
-Congratulations. You've made your script a little safer. (Note that it's still possible to provide problematic input to `$DestinationPath`, for example.) The point of this exercise is to show how to add checks. Depending on the environment the script will run in, you might want fewer checks or more. You might even want written tests. It all depends on the context.
+Congratulations. You've made your script a little safer. (Note that it's still possible to provide problematic input to `$DestinationPath`, for example.) The point of this exercise is to show how to add checks. Depending on the environment in which the script will run, you might want fewer or more checks. You might even want written tests; it all depends on the context.

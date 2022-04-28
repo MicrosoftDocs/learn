@@ -82,8 +82,8 @@ It is a significant paradigm shift to change from traditional quality assurance 
 
 ### Be aware of the challenges and risks of Continuous Quality
 
-|  |  |
-| ------------ | -------------|
+| Continuous Quality | Challenges and risks |
+|:--:|--|
 |![Icon for organizational silos](../media/4-3-icon-1.png)|Organizational silos and traditional top-down management structures can impede adoption rates. These challenges will be overcome only when organizational maturity and the necessary culture change takes effect across the whole organization, and as DevOps practices and projects mature.|
 |![Icon for internal pushback](../media/4-3-icon-2.png)|Continuous Quality requires engaging all stakeholders and empowering them to push back. Lack of clearly set goals and fear of the unknown can also cause pushback. Support from senior management is essential to success when championing a Continuous Quality mindset across the organization.|
 |![Icon for loss of productivity](../media/4-3-icon-3.png)|Using Continuous Quality in software development requires changes to role responsibilities and changing organizational culture. These changes require significant investment and time, which will affect timelines and cause a decrease in productivity prior to reaching expert levels. They will also increase the quality of your digital systems.|

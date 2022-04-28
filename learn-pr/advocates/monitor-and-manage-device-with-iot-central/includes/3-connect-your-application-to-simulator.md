@@ -10,7 +10,7 @@ To add your coffee machine to your application, you use the **Connected Coffee M
 
 1. Select **Connected Coffee Machine**, and then **+ New**.
 
-1. On the **Create new device** form, change the device ID to _ccm-001_, and the device name to _Connected Coffee Machine - Real - 001_. Make sure that **Simulated** is **Off**, and then select **Create**.
+1. On the **Create a new device** form, change the device ID to _ccm-001_, and the device name to _Connected Coffee Machine - Real - 001_. Make sure that **Simulate this device** is **No**, and then select **Create**.
 
 The **Connected Coffee Machine - Real - 001** device now shows in the list of **Connected Coffee Machine** devices with a status of **Registered**.
 
@@ -20,7 +20,7 @@ Your real device needs some connection information to connect securely to your I
 
 1. Click on **Connected Coffee Machine - Real - 001** in the list of devices to view the device details.
 
-1. Select **Connect** to open the **Device connection** panel.
+1. Select **Connect** to open the **Device connection groups** panel.
 
 1. Either keep this page open, or make a note of the **ID scope**, **Device ID**, and **Primary key** values. You need these values later:
 
@@ -97,35 +97,35 @@ The following steps show you how to create a client application that implements 
         var number = (Math.round(value * 10.0)).toString();
         return number.substr(0, 2) + '.' + number.substr(2, 1);
     }
-
+    
     // Send device simulated telemetry measurements
     function sendTelemetry() 
-    {	
+    {
         // Simulate the telemetry values
         var temperature = optimalTemperature + (Math.random() * 4) - 2;
         var humidity = 20 + (Math.random() * 80);
-
+    
         // Cup timer - every 20 seconds randomly decide if the cup is present or not
         cupTimer--;
-
+    
         if (cupTimer == 0)
         {
             cupTimer = 20;
             cupState = Math.random() < 0.5?'detected':'notdetected';
         }
-
+    
         // Brewing timer
         if (brewingTimer > 0)
         {
             brewingTimer--;
-
+    
             // Finished brewing
             if (brewingTimer == 0)
             {
                 brewingState = 'notbrewing';
             }
         }
-
+    
         // Create the data JSON package
         var data = JSON.stringify(
         { 
@@ -134,27 +134,23 @@ The following steps show you how to create a client application that implements 
             CupDetected: cupState,
             Brewing: brewingState
         });
-
+    
         // Create the message with the above defined data
         var message = new Message(data);
-
-        // Set the state flags
-        //message.properties.add('CupDetected2', cupState);
-        //message.properties.add('Brewing', brewingState);
-
+    
         // Show the information in console
         var infoTemperature = niceNumber(temperature);
         var infoHumidity = niceNumber(humidity);
         var infoCup = (cupState == 'detected') ? 'Y' :'N';
         var infoBrewing = (brewingState == 'brewing') ? 'Y':'N';
         var infoMaintenance = maintenanceState ? 'Y':'N';
-
+    
         console.log('Telemetry send: Temperature: ' + infoTemperature + 
                     ' Humidity: ' + infoHumidity + '%' + 
                     ' Cup Detected: ' + infoCup + 
                     ' Brewing: ' + infoBrewing + 
                     ' Maintenance Mode: ' + infoMaintenance);
-
+    
         // Send the message
         centralClient.sendEvent(message, function (errorMessage) 
         {
@@ -165,7 +161,7 @@ The following steps show you how to create a client application that implements 
             }
         });
     }
-
+    
     // Send device properties
     function sendDeviceProperties(deviceTwin) 
     {
@@ -173,13 +169,13 @@ The following steps show you how to create a client application that implements 
         {
             DeviceWarrantyExpired: warrantyState
         };
-
+    
         console.log(' * Property - Warranty State: ' + warrantyState.toString());
-
+    
         deviceTwin.properties.reported.update(properties, (errorMessage) => 
             console.log(` * Sent device properties ` + (errorMessage ? `Error: ${errorMessage.toString()}` : `(success)`)));
     }
-
+    
     // Optimal temperature setting
     var settings = 
     {
@@ -188,11 +184,11 @@ The following steps show you how to create a client application that implements 
             setTimeout(() => 
             {
                 optimalTemperature = newValue;
-                callback(optimalTemperature, 'completed');
+                callback(optimalTemperature, 200, "Successfully updated OptimalTemperature");
             }, 1000);
         }
     };
-
+    
     // Handle settings changes that come from Azure IoT Central via the device twin.
     function handleSettings(deviceTwin) 
     {
@@ -205,19 +201,19 @@ The following steps show you how to create a client application that implements 
                 if (settings[setting]) 
                 {
                     // Console info
-                    console.log(` * Received setting: ${setting}: ${desiredChange[setting].value}`);
-
+                    console.log(` * Received setting: ${setting}: ${desiredChange[setting]}`);
+    
                     // Update 
-                    settings[setting](desiredChange[setting].value, (newValue, status, message) => 
+                    settings[setting](desiredChange[setting], (newValue, status, message) => 
                     {
                         var patch = 
                         {
                             [setting]: 
                             {
                                 value: newValue,
-                                status: status,
-                                desiredVersion: desiredChange.$version,
-                                message: message
+                                ac: status,
+                                av: desiredChange.$version,
+                                ad: message
                             }
                         }
                         deviceTwin.properties.reported.update(patch, (err) => console.log(` * Sent setting update for ${setting} ` +
@@ -227,22 +223,22 @@ The following steps show you how to create a client application that implements 
             }
         });
     }
-
+    
     // Maintenance mode command
     function onCommandMaintenance(request, response) 
     {
         // Display console info
         console.log(' * Maintenance command received');
-
+    
         // Console warning
         if (maintenanceState)
         {
             console.log(' - Warning: The device is already in the maintenance mode.');
         }
-
+    
         // Set state
         maintenanceState = true;
-
+    
         // Respond
         response.send(200, 'Success', function (errorMessage) 
         {
@@ -253,35 +249,35 @@ The following steps show you how to create a client application that implements 
             }
         });
     }
-
+    
     function onCommandStartBrewing(request, response) 
     {
         // Display console info
         console.log(' * Brewing command received');
-
+    
         // Console warning
         if (brewingState == 'brewing')
         {
             console.log(' - Warning: The device is already brewing.');
         }
-
+    
         if (cupState == 'notdetected')
         {
             console.log(' - Warning: The cup has not been detected.');
         }
-
+    
         if (maintenanceState == true)
         {
             console.log(' - Warning: The device is in maintenance state.');
         }
-
+    
         // Set state - brew for 30 seconds
         if ((cupState == 'detected') && (brewingState == 'notbrewing') && (maintenanceState == false))
         {
             brewingState = 'brewing';
             brewingTimer = 30;
         }
-
+    
         // Respond
         response.send(200, 'Success', function (errorMessage) 
         {
@@ -292,7 +288,7 @@ The following steps show you how to create a client application that implements 
             }
         });
     }
-
+    
     // Handle device connection to Azure IoT Central
     var connectCallback = (errorMessage) => 
     {
@@ -306,14 +302,14 @@ The following steps show you how to create a client application that implements 
         {
             // Notify the user
             console.log('Device successfully connected to Azure IoT Central');
-
+    
             // Send telemetry measurements to Azure IoT Central every 1 second.
             setInterval(sendTelemetry, 1000);
-
+    
             // Set up device command callbacks
             centralClient.onDeviceMethod('SetMaintenanceMode', onCommandMaintenance);
             centralClient.onDeviceMethod('StartBrewing', onCommandStartBrewing);
-
+    
             // Get device twin from Azure IoT Central
             centralClient.getTwin((errorMessage, deviceTwin) => 
             {
@@ -327,17 +323,17 @@ The following steps show you how to create a client application that implements 
                 {
                     // Notify the user
                     console.log('Device Twin successfully retrieved from Azure IoT Central');
-
+    
                     // Send device properties once on device startup
                     sendDeviceProperties(deviceTwin);
-
+    
                     // Apply device settings and handle changes to device settings
                     handleSettings(deviceTwin);
                 }
             });
         }
     };
-
+    
     // Start the device (register and connect to Azure IoT Central).
     provisioningClient.register((err, result) => {
       if (err) {
@@ -348,7 +344,7 @@ The following steps show you how to create a client application that implements 
         console.log('DeviceId=' + result.deviceId);
         var connectionString = 'HostName=' + result.assignedHub + ';DeviceId=' + result.deviceId + ';SharedAccessKey=' + symmetricKey;
         centralClient = Client.fromConnectionString(connectionString, iotHubTransport);
-
+    
         centralClient.open(connectCallback);
       }
     });
@@ -356,7 +352,7 @@ The following steps show you how to create a client application that implements 
 
     The coffee machine is written in Node.js. It first connects to Azure IoT Central. Then the app sends initial properties to Azure IoT Central, synchronizes properties, registers two command handlers for maintenance and brewing, and finally starts the timer for sending the telemetry information every second.
 
-1. Update the placeholders `{ID scope}`, `{Device ID}`, and `{Primary key}` at the top of this code with the information you made a note of previously.
+1. Update the placeholders `{ID scope}`, `{Device ID}`, and `{Primary key}` at the top of this code with the connection information you made a note of previously.
 
 1. Select the three dots `...` to the top right of the editor to expand the editor menu. Then select **Save** to save the edits you made to `coffeeMaker.js`
 

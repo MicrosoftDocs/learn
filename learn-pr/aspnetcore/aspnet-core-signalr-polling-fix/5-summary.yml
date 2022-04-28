@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnet-core-signalr-polling-fix.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: Summary
+  description: This unit summarizes ASP.NET Core SignalR refactoring and provides links to resources and additional references.
+  ms.date: 11/09/2021
+  author: IEvangelist
+  ms.author: dapine
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]

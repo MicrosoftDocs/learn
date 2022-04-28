@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-foster-inner-source.explore-foster-inner-source
+title: Explore foster inner source
+metadata:
+  title: Explore foster inner source
+  description: "Explore foster inner source"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-explore-foster-inner-source.md)]

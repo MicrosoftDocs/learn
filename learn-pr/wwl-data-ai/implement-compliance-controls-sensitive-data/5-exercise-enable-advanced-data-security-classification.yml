@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.exercise-enable-advanced-data-security-classification
-title: 'Exercise: Enable Advanced Data Security and Data Classification'
+title: 'Exercise: Enable Microsoft Defender for SQL and Data Classification'
 metadata:
-  title: 'Exercise: Enable Advanced Data Security and Data Classification'
-  description: "Exercise: Enable Advanced Data Security and Data Classification"
-  ms.date: 08/02/2021
+  title: 'Exercise: Enable Microsoft Defender for SQL and Data Classification'
+  description: "Exercise: Enable Microsoft Defender for SQL and Data Classification"
+  ms.date: 03/15/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

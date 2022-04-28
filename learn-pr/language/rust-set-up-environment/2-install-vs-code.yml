@@ -3,11 +3,12 @@ uid: learn.language.rust-set-up-environment.2-install-vs-code
 metadata: 
   title: Install Visual Studio Code
   description: Install Visual Studio Code to write Rust code.
-  ms.date: 07/26/2021
+  ms.date: 09/26/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
   zone_pivot_groups: os
 title: Install Visual Studio Code
 durationInMinutes: 4
@@ -17,14 +18,14 @@ content: |
 quiz:
   questions:
 
-  - content: "What two commands compile a Rust program?"
+  - content: "What two ways can you use to compile a Rust program?"
     choices:
     - content: "`compile` and `rustc`"
       isCorrect: false
-      explanation: "Incorrect. The command `compile` isn't recognized in Rust."
-    - content: "`cargo compile` and `rustc`"
+      explanation: "Incorrect. The standalone command `compile` isn't recognized in Rust."
+    - content: "`build` and `rustc`"
       isCorrect: false
-      explanation: "Incorrect. The command `cargo compile` isn't recognized in Rust."
-    - content: "`cargo build` and `rustc`"
+      explanation: "Incorrect. The standalone command `build` isn't recognized in Rust."
+    - content: "Cargo and `rustc`"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! The Rust compiler (`rustc`) and the Cargo dependency manager (`cargo`) can compile code into a program."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.create-git-project.exercise-make-track-changes
+title: Exercise - Make changes and track them with Git
+metadata:
+  title: Exercise - Make changes and track them with Git
+  description: Make and track changes in your working tree with Git.
+  author: mshumba
+  ms.author: chnoring
+  ms.date: 10/08/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ms.custom: team=nextgen
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise-make-track-changes.md)]

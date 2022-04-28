@@ -2,11 +2,11 @@
 uid: learn.azure-admin-manage-storage
 metadata:
   title: Implement and manage storage for Azure administrators
-  description: Learn how to manage storage as an Azure administrators. 
+  description: Learn how to manage storage as an Azure administrators.
   brand: azure
   ms.date: 05/15/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement and manage storage for Azure administrators
@@ -79,7 +79,6 @@ modules:
 - learn.choose-the-right-disk-storage-for-vm-workload
 - learn.azure.provide-disaster-recovery-replicate-storage-data
 - learn.azure.secure-azure-storage-account
-- learn.store-and-share-with-azure-files
 - learn.upload-download-and-manage-data-with-azure-storage-explorer
 - learn.azure.export-data-with-azure-import-export
 - learn.azure.move-data-with-azure-data-box

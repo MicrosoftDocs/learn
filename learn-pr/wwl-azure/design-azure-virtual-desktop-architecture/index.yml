@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.design-azure-virtual-desktop-architecture
+metadata:
+  title: Design the Azure Virtual Desktop architecture
+  description: "Design the Azure Virtual Desktop architecture"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design the Azure Virtual Desktop architecture
+summary: Azure Virtual Desktop design requires that you assess network capacity and speed requirements,  select a load-balancing method for your Azure Virtual Desktop deployment, and choose the right Windows Desktop client.
+abstract: |
+  After completing this module, you'll be able to:
+  *  Assess network capacity and speed requirements for Azure Virtual Desktop.
+  *  Determine the connection round-trip time (RTT) from a location through the Azure Virtual Desktop service.
+  *  Recommend an operating system for a Azure Virtual Desktop implementation.
+  *  Describe the two load-balancing methods for Azure Virtual Desktop.
+  *  Recommendation subscriptions and management groups for Azure Virtual Desktop.
+  *  Recommend a configuration for performance requirements.
+prerequisites: ""
+iconUrl: /learn/achievements/2-design-the-azure-virtual-desktop-architecture.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-desktop
+- azure-virtual-machines
+units:
+- learn.wwl.design-azure-virtual-desktop-architecture.introduction
+- learn.wwl.design-azure-virtual-desktop-architecture.assess-network-capacity-speed-requirements-for
+- learn.wwl.design-azure-virtual-desktop-architecture.experience-estimator
+- learn.wwl.design-azure-virtual-desktop-architecture.recommend-operating-system-for-implementation
+- learn.wwl.design-azure-virtual-desktop-architecture.balancing-host-pools
+- learn.wwl.design-azure-virtual-desktop-architecture.recommendations-for-using-subscriptions-management-groups
+- learn.wwl.design-azure-virtual-desktop-architecture.configure-location-for-metadata
+- learn.wwl.design-azure-virtual-desktop-architecture.recommend-configuration-for-performance-requirements
+- learn.wwl.design-azure-virtual-desktop-architecture.knowledge-check
+- learn.wwl.design-azure-virtual-desktop-architecture.summary
+badge:
+  uid: learn.wwl.design-azure-virtual-desktop-architecture.badge

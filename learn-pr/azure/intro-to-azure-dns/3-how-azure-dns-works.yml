@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-dns.how-azure-dns-works
+title: How Azure DNS works
+metadata:
+  title: How Azure DNS works
+  description: How Azure DNS works
+  ms.date: 12/10/2021
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: orthomas-12162021
+durationInMinutes: 8
+content:   |
+  [!include[](includes/3-how-azure-dns-works.md)]

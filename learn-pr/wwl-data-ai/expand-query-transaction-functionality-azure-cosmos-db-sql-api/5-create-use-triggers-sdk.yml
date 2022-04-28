@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.create triggers-use-triggers-sdk
+title: Create and use triggers with the SDK
+metadata:
+  title: Create and use triggers with the SDK
+  description: "Create and use triggers with the SDK"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-create-use-triggers-sdk.md)]

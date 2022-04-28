@@ -1,0 +1,11 @@
+Azure Security Center is a unified infrastructure security management system that strengthens the security posture of your environment and provides advanced threat protection across hybrid workloads.
+
+Because Security Center is natively part of Azure, PaaS services in Azure are monitored and protected by Security Center without necessitating any deployment. In addition, Security Center offers protection of physical and virtual machines running Windows and Linux operating system, regardless of their location, if they have the Microsoft Monitoring Agent installed. Agent installation for Azure VMs can be performed directly from the Azure Security Center interface in the Azure portal.
+
+The events collected from the agents and from Azure PaaS services are correlated in the security analytics engine to provide you with threat detection alerts and tailored actionable remediation tasks. You should investigate alerts as soon as possible and implement the remediation tasks to enhance security of your workloads.
+
+When you enable Security Center, the security audit policy built-in to Security Center is reflected in Azure Policy as a built-in initiative under Security Center category. The built-in initiative is automatically assigned to all Security Center registered subscriptions.
+
+Azure Security Center helps streamline the process for meeting regulatory compliance requirements, using the Regulatory compliance dashboard. In the dashboard, Security Center provides insights into your compliance posture based on continuous assessments of your Azure environment. The assessments performed by Security Center analyze risk factors in your hybrid cloud environment in accordance with security best practices. These assessments are mapped to compliance controls from a supported set of standards. In the Regulatory compliance dashboard, you have a clear view of the status of all these assessments within your environment in the context of a standard or regulation. As you act on the recommendations and reduce risk factors in your environment, you can see your compliance posture improve.
+
+At the time of authoring of this content, supported regulatory standards include Azure CIS, PCI DSS 3.2, ISO 27001, and SOC TSP.

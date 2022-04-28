@@ -1,6 +1,5 @@
 Let's look at possible solutions for each of the exercises.
 
-
 ## Write a FizzBuzz program
 
 A solution for the exercise to use the `switch` statement could be something like this:
@@ -33,7 +32,6 @@ func main() {
 ```
 
 For the `FizzBuzz` case, you multiply 3 by 5 because the results are divisible by 3 and 5. You can also include an `AND` condition to check whether a number is divisible by 3 and 5.
-
 
 ## Find the primes
 
@@ -77,7 +75,6 @@ Here's the output:
 Prime numbers less than 20:
 2 3 5 7 11 13 17 19 
 ```
-
 
 ## Ask a number, panic if negative
 

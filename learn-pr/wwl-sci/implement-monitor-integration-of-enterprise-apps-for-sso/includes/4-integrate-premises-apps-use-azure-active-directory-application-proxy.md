@@ -38,8 +38,11 @@ The following diagram shows how Azure AD and Application Proxy work together to 
 
 ## Add an on-premises application for remote access through Application Proxy in Azure Active Directory
 
-|||
-| :--- | :--- |
-| Click and interact with this Interactive Guide to learn more about enabling integrated windows authentication to on-premises applications with Azure AD Application Proxy | [Enable Integrated Windows Authentication Interactive Guide](https://mslearn.cloudguides.com/guides/Provide%20secure%20remote%20access%20to%20on-premises%20applications%20with%20Azure%20AD%20Application%20Proxy)|
-
-
+:::row:::
+   :::column span="2":::
+      Click and interact with this Interactive Guide to learn more about enabling integrated windows authentication to on-premises applications with Azure AD Application Proxy
+   :::column-end:::
+   :::column span="":::
+      [Enable Integrated Windows Authentication Interactive Guide](https://mslearn.cloudguides.com/guides/Provide%20secure%20remote%20access%20to%20on-premises%20applications%20with%20Azure%20AD%20Application%20Proxy)
+   :::column-end:::
+:::row-end:::

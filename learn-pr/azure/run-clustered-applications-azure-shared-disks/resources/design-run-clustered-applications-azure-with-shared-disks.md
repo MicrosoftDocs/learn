@@ -207,6 +207,4 @@ In this module, you learned about Azure shared disks and their benefits. You als
 
 - [Share an Azure managed disk](https://docs.microsoft.com/en-us/azure/virtual-machines/disks-shared)
 
-- [Managed Disks pricing](https://azure.microsoft.com/en-us/pricing/details/managed-disks/)
-
- 
+- [Managed Disks pricing](https://azure.microsoft.com/pricing/details/managed-disks/)

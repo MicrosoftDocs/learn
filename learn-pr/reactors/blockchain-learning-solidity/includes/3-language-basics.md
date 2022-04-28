@@ -7,7 +7,7 @@ All Solidity contracts typically include:
 
 While there's more you'll need to know to program production level smart contracts, these things should get you off on the right foot.
 
-If you have an understanding of these concepts, you can get started writing smart contracts for a variety of uses cases right away!
+If you have an understanding of these concepts, you can get started writing smart contracts for a variety of use cases right away!
 
 ## Pragma directives
 
@@ -43,13 +43,13 @@ Additionally, you can specify the visibility of a state variable as:
 
 - **public:** part of the contract interface and can be accessed from other contracts.
 - **internal:** only accessed internally from the current contract.
-- **private:** only visible for the contract they're defined in.
+- **private:** only visible for the contract it's defined in.
 
 ## Functions
 
 Within a contract, executable units of code are known as functions. Functions describe a single action for achieving one task. They're reusable and can also be called from other source files like libraries. Functions in Solidity behave similarly to functions in other programming languages.
 
-Here's a simple example of defining a function:
+Here's a basic example of defining a function:
 
 ```solidity
 pragma solidity >0.7.0 <0.8.0;
@@ -63,9 +63,9 @@ contract Marketplace {
 
 This code shows a function with the name `buy` that has a public visibility, meaning that it can be accessed by other contracts. Functions can use one of the following visibility specifiers: **public**, **private**, **internal**, and **external**.
 
-A function can be called internally or externally from another contract. Functions can accept parameters and return variables to pass parameters and values between them. 
+A function can be called internally or externally from another contract. Functions can accept parameters and return variables to pass parameters and values between them.
 
-Here is an example of a function that accepts a parameter -  an integer called `price` - and returns an integer:
+Here's an example of a function that accepts a parameter - an integer called `price` - and returns an integer:
 
 ```solidity
 pragma solidity >0.7.0 <0.8.0;
@@ -133,4 +133,4 @@ contract Marketplace {
 }
 ```
 
-When you call an event, the event is captured as a transaction in the transaction log, which is a special data structure in the blockchain. These logs are associated with the address of the contract, are incorporated into the blockchain, and stay there forever. The log and its event data aren't accessible from within contracts, and it cannot be modified.
+When you call an event, the event is captured as a transaction in the transaction log, which is a special data structure in the blockchain. These logs are associated with the address of the contract, are incorporated into the blockchain, and stay there forever. The log and its event data aren't accessible from within contracts, and it can’t be modified.

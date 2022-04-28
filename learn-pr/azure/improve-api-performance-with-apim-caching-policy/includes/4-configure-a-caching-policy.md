@@ -1,12 +1,12 @@
 Optimal performance is essential to most organizations. By using a cache of compiled responses in Azure API Management, you can reduce the time an API takes to answer calls.
 
-Suppose there is a need for the board gaming API to provide faster responses to requests. For example, users often request prices for various sizes of the board for games. API Management policies can accelerate responses by configuring a cache of prepared responses. When a request is received from a user, API Management checks to see if there is an appropriate response in the cache already. If there is, that response can be sent to the user without building it again from the data source.
+Suppose there's a need for the board gaming API to provide faster responses to requests. For example, users often request prices for various sizes of the board for games. API Management policies can accelerate responses by configuring a cache of prepared responses. When a request is received from a user, API Management checks to see if there's an appropriate response in the cache already. If there is, that response can be sent to the user without building it again from the data source.
 
-Here, you will learn how to configure such a cache.
+Here, you'll learn how to configure such a cache.
 
 ## How to control the API Management cache
 
-To set up a cache, you use an outbound policy named `cache-store` to store responses. You also use an inbound policy named `cache-lookup` to check if there is a cached response for the current request. You can see these two policies in the example below:
+To set up a cache, you use an outbound policy named `cache-store` to store responses. You also use an inbound policy named `cache-lookup` to check if there's a cached response for the current request. You can see these two policies in the example below:
 
 ```xml
 <policies>
@@ -56,11 +56,11 @@ It's also possible to store individual values in the cache, instead of a complet
 
 ## Use vary-by tags
 
-It's important to ensure that, if you serve a response from the cache, it is relevant to the original request but also to use the cache as much as possible. Suppose, for example, that the board games Stock Management API received a GET request to the following URL and cached the result:
+It's important to ensure that, if you serve a response from the cache, it's relevant to the original request. However, you also want to use the cache as much as possible. Suppose, for example, that the board games Stock Management API received a GET request to the following URL and cached the result:
 
 `http://<boardgames.domain>/stock/api/product?partnumber=3416&customerid=1128`
 
-This request is intended to check the stock levels for a product with part number 3416. The customer ID is used by a separate policy as does not alter the response. Subsequent requests for the same part number can be served from the cache, as long as the record has not expired. So far so good.
+This request is intended to check the stock levels for a product with part number 3416. The customer ID is used by a separate policy, and doesn't alter the response. Subsequent requests for the same part number can be served from the cache, as long as the record hasn't expired. So far so good.
 
 Now suppose that a different customer requests the same product:
 
@@ -68,7 +68,7 @@ Now suppose that a different customer requests the same product:
 
 By default, the response can't be served from the cache, because the customer ID is different. 
 
-However, the developers point out that the customer ID does not alter the response. It would be more efficient if requests for the same product from different customers could be returned from the cache. Customers would still see the correct information.
+However, the developers point out that the customer ID doesn't alter the response. It would be more efficient if requests for the same product from different customers could be returned from the cache. Customers would still see the correct information.
 
 To modify this default behavior, use the &lt;vary-by-query-parameter&gt; element within the &lt;cache-lookup&gt; policy:
 
@@ -93,11 +93,11 @@ To modify this default behavior, use the &lt;vary-by-query-parameter&gt; element
 </policies>
 ```
 
-With this policy, the cache will store and separate responses for each product because they have different part numbers. The cache will not store separate responses for each customer because that query parameter is not listed.
+With this policy, the cache will store and separate responses for each product, because they have different part numbers. The cache won't store separate responses for each *customer*, because that query parameter isn't listed.
 
-Azure does not, by default, examine HTTP headers to determine whether a cached response is suitable for a given request. If a header can make a significant difference to a response use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers. Then you can decide which vary-by tags to use in your policy.
+By default, Azure doesn't examine HTTP headers to determine whether a cached response is suitable for a given request. If a header can make a significant difference to a response, use the `<vary-by-header>` tag. Work with your developer team to understand how each API uses query parameters and headers so you can decide which vary-by tags to use in your policy.
 
-Within the `<cache-lookup>` tag, there is also the `vary-by-developer` attribute, which is required to be present and set to false by default. When this attribute is set to true, API Management examines the subscription key supplied with each request. It serves a response from the cache only if it was originally requested with the same subscription key. Set this attribute to true when each user should see a different response for the same URL. If each user group should see a different response for the same URL, set the `vary-by-developer-group` attribute to true.
+Within the `<cache-lookup>` tag, there's also the `vary-by-developer` attribute, which is required and set to *false* by default. When this attribute is set to *true*, API Management examines the subscription key supplied with each request. It serves a response from the cache only if the original request had the same subscription key. Set this attribute to *true* when each user should see a different response for the same URL. If each user group should see a different response for the same URL, set the `vary-by-developer-group` attribute to *true*.
 
 ## Use an external cache
 
@@ -109,4 +109,4 @@ You might choose to use an external cache because:
 - You want to have greater control over the cache configuration than the internal cache allows.
 - You want to cache more data than can be stored in the internal cache.
 
-Another reason to configure an external cache is that you want to use caching with the consumption pricing tier. This tier follows serverless design principal and you should use it  with serverless web APIs. For this reason, it has no internal cache. If you want to use caching with an API Management instance in the consumption tier, you must use an external cache.
+Another reason to configure an external cache is that you want to use caching with the consumption pricing tier. This tier follows serverless design principles and you should use it with serverless web APIs. For this reason, it has no internal cache. If you want to use caching with an API Management instance in the consumption tier, you must use an external cache.

@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.blob-storage-image-upload-static-web-apps
+metadata:
+  title: Upload images to Azure Blob Storage from a static web app
+  description: Learn how to securely upload images to Azure Blob Storage from a static web apps by using an Azure Function to generate on demand shared access signatures.
+  ms.date: 11/12/2021
+  author: videlalvaro
+  ms.author: alvidela
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: alvidela-11122021
+title: Upload images to Azure Blob Storage from a static web app
+summary: Learn how to securely upload images to Azure Blob Storage from a static web app by using an Azure Function to generate on-demand shared access signatures.
+abstract: |
+  In this module you will:
+  - Evaluate when to use shared access signatures (SAS) to grant access to Azure Blob Storage.
+  - Generate SAS tokens on-demand to authenticate image uploads request.
+  - Use the SAS token to upload an image to Azure Blob Storage.
+  - Implement file uploads in a static web app by following security best practices.
+iconUrl: /learn/achievements/blob-storage-image-upload-static-web-apps.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - vs
+prerequisites: |
+  -	Ability to create their own Azure Storage account
+  -	Know the basic concepts of Static Web Apps
+  -	Know the basic concepts of Azure Functions
+  -	Node.js LTS and Visual Studio Code
+  - Azure Functions Extension for Visual Studio Code installed
+  - Azure Functions Core Tools installed
+units:
+  - learn.blob-storage-image-upload-static-web-apps.introduction
+  - learn.blob-storage-image-upload-static-web-apps.upload-to-blob-storage
+  - learn.blob-storage-image-upload-static-web-apps.exercise-setup-blob-storage-account
+  - learn.blob-storage-image-upload-static-web-apps.serverless-backend
+  - learn.blob-storage-image-upload-static-web-apps.exercise-serverless
+  - learn.blob-storage-image-upload-static-web-apps.frontend
+  - learn.blob-storage-image-upload-static-web-apps.exercise-frontend
+  - learn.blob-storage-image-upload-static-web-apps.knowledge-check
+  - learn.blob-storage-image-upload-static-web-apps.summary
+badge:
+  uid: learn.blob-storage-image-upload-static-web-apps.badge

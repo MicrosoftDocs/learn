@@ -3,16 +3,17 @@ uid: learn.cmu-cloud-computing.how-cloud-works.cmu-storage-network-virtualizatio
 metadata:
   title: Storage and network virtualization
   description: Carnegie Mellon University's Cloud Developer course. Learn about how storage and network resources can be virtualized to support software defined datacenters.
-  ms.date: 03/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Storage and network virtualization
 summary: Learn about how storage and network resources can be virtualized to support software defined datacenters.
 abstract: | 
   In this module, you will:
-  - Recall the design considerations in datacenter networks and describe the need for virtualizaiton to support multiple tenants
+  - Recall the design considerations in datacenter networks and describe the need for virtualization to support multiple tenants
   - Compare and contrast traditional datacenter networks and software-defined networking (SDN) for the purposes of multi-tenant networks
   - List the various types of storage systems used in datacenters
   - Compare and contrast traditional datacenter storage and software-defined storage (SDS) and list some of the benefits of SDS
@@ -31,6 +32,7 @@ prerequisites: |
   - Understand memory virtualization
   - Understand I/O virtualization
 iconUrl: /learn/achievements/cmu-cloud-developer/storage-network-virtualization.svg
+hidden: true
 levels:
 - beginner
 roles:

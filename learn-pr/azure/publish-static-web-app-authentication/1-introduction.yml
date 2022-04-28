@@ -9,7 +9,12 @@ metadata:
   ms.author: yolasors
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom:
+  - team=nextgen
+  - team=cloud_advocates
   zone_pivot_groups: dev-javascript-framework
+  ms.contributors:
+  - yolasors-05112021
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

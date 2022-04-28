@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-windows-server-user-accounts.configure-user-account-rights
+title: Configure user account rights
+metadata:
+  title: Configure user account rights
+  description: "Configure user account rights"
+  ms.date: 04/18/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-configure-user-rights.md)]

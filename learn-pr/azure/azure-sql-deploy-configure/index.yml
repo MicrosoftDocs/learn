@@ -5,7 +5,7 @@ metadata:
   description: Deploy and configure servers, instances, and databases for Azure SQL
   ms.date: 08/05/2020
   author: amthomas46
-  ms.author: antho
+  ms.author: bobward
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy and configure servers, instances, and databases for Azure SQL

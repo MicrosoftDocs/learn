@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.predictive-maintenance-model-builder.train-model-builder
+title: "Train and evaluate models in Model Builder"
+metadata:
+  unitType: learning-content
+  title: "Train and evaluate models in Model Builder"
+  description: "Use Model Builder to train a classification model for predictive maintenance."
+  ms.date: 10/25/2021
+  author: luisquintanilla
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+  ms.custom: team=nextgen
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-train-model-builder.md)]

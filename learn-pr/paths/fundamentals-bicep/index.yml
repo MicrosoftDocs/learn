@@ -1,0 +1,52 @@
+### YamlMime:LearningPath
+uid: learn.bicep-deploy-manage
+metadata:
+  title: Fundamentals of Bicep
+  description: Learn how Bicep enables you to manage infrastructure deployments on Azure.
+  brand: azure
+  ms.date: 12/03/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Fundamentals of Bicep
+summary: |
+  Bicep enables you to deploy Azure resources. Bicep uses a declarative syntax that you treat like application code.
+  Treating your infrastructure as code enables you to track changes to your infrastructure requirements and makes your
+  deployments more consistent and repeatable.
+
+  If you're familiar with the JSON syntax for writing Azure Resource Manager templates (ARM templates), you'll find that Bicep 
+  provides a more concise syntax and improved type safety. In fact, Bicep files compile to standard ARM templates.
+
+  Take this learning path to get started with Bicep. In it, you'll:
+
+  * Decide whether Bicep is the right choice for your deployments to Azure.
+  * Understand Bicep's declarative syntax and the structure of a Bicep template.
+  * Apply Bicep features such as parameters, conditions, and loops to control how your infrastructure is deployed.
+  * Define modules that break down complex deployments into smaller and more reusable components.
+
+  Each module in this learning path provides options for use with the Azure CLI and with Azure PowerShell. You'll use Visual Studio Code to write and validate your Bicep code.
+
+  > [!TIP]
+  > Want to learn Bicep live from subject matter experts? [Learn Live with our experts every Tuesday (Pacific time) beginning March 8, 2022.](https://aka.ms/learnlive-iac-and-bicep)
+
+  [!include[](../../includes/bicep-paths.md)]
+prerequisites: Familiarity with Azure Resource Manager and Azure resource groups is recommended, but not required.
+iconUrl: /learn/achievements/bicep/fundamentals-bicep.svg
+levels:
+- beginner
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+- azure-resource-manager
+modules:
+- learn.azure.introduction-infrastructure-code-using-bicep
+- learn.azure.deploy-azure-resources-bicep
+- learn.azure.build-reusable-bicep-templates-parameters
+- learn.azure.bicep-conditions-loops
+- learn.azure.create-composable-bicep-files-using-modules
+trophy:
+  uid: learn.bicep-deploy-manage.trophy

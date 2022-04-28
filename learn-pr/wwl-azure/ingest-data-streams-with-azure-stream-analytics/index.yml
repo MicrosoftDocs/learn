@@ -3,9 +3,9 @@ uid: learn.wwl.ingest-data-streams-with-azure-stream-analytics
 metadata:
   title: Ingest data streams with Azure Stream Analytics
   description: "Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results."
-  ms.date: 06/03/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Ingest data streams with Azure Stream Analytics

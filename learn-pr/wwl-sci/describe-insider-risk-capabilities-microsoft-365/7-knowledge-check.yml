@@ -4,13 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/16/2021
+  ms.date: 04/24/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
-durationInMinutes: 3
+labModal: false
+durationInMinutes: 2
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
@@ -20,54 +21,32 @@ quiz:
     choices:
     - content: "To identify and protect against risks like an employee sharing confidential information."
       isCorrect: true
-      explanation: "That's correct. Use risk management to help protect your organization against these risks."
+      explanation: "Correct. Use risk management to help protect your organization against these risks."
     - content: "To identify and protect against malicious software across your network, such as ransomware."
       isCorrect: false
-      explanation: "That's incorrect. You use insider risk management to protect against risks like an employee sharing confidential information."
+      explanation: "Incorrect. You use insider risk management to protect against risks like an employee sharing confidential information."
     - content: "To identify and protect against devices shutting down at critical moments."
       isCorrect: false
-      explanation: "That's incorrect. You use insider risk management to protect against risks like an employee sharing confidential information."
+      explanation: "Incorrect. You use insider risk management to protect against risks like an employee sharing confidential information."
   - content: "To comply with corporate policies, the compliance admin needs to be able to identify and scan for offensive language across the organization.  What solution can the admin implement to address this need?"
     choices:
-    - content: "Use Policy Compliance in Microsoft 365."
+    - content: "Use Policy Compliance in Microsoft Purview."
       isCorrect: false
-      explanation: "That's incorrect. This doesn't exist. Instead, use Communication Compliance."
-    - content: "Use Communication Compliance."
+      explanation: "Incorrect. This doesn't exist. Instead, use Microsoft Purview Communication Compliance."
+    - content: "Use Microsoft Purview Communication Compliance."
       isCorrect: true
-      explanation: "That's correct. Communication Compliance helps minimize communication risks by enabling you to detect, capture, and take remediation actions for inappropriate messages in the organization."
-    - content: "Use information barriers."
+      explanation: "Correct. Microsoft Purview Communication Compliance helps minimize communication risks by enabling you to detect, capture, and take remediation actions for inappropriate messages in the organization."
+    - content: "Use Microsoft Purview Information Barriers."
       isCorrect: false
-      explanation: "That's incorrect. You don't use information barriers to scan for offensive language. Instead, use Communication Compliance."
+      explanation: "Incorrect. You don't use Microsoft Purview Information Barriers to scan for offensive language. Instead, use Microsoft Purview Communication Compliance."
   - content: "Your organization has many departments that collaborate through Microsoft Teams. To comply with business policies, the IT organization needs to make sure that users from one particular department are limited in their access and interactions with other departments. What solution can address this need?"
     choices:
-    - content: "Use Communication Compliance."
+    - content: "Use Microsoft Purview Communication Compliance."
       isCorrect: false
-      explanation: "That's incorrect. You don't use Communication Compliance to block information from being accessed across departments. Instead, use information barriers."
-    - content: "Use Customer Lockbox."
+      explanation: "Incorrect. You don't use Microsoft Purview Communication Compliance to block information from being accessed across departments. Instead, use Microsoft Purview Information Barriers."
+    - content: "Use activity explorer."
       isCorrect: false
-      explanation: "That's incorrect. Customer Lockbox won't enable you to do this. Instead, use information barriers to block information from being accessed across departments."
-    - content: "Use information barriers."
+      explanation: "Incorrect. Activity explorer won't enable you to do this. Activity explorer provides visibility into what content has been discovered and labeled, and where that content is. Instead, use information barriers to block information from being accessed across departments."
+    - content: "Use Microsoft Purview Information Barriers."
       isCorrect: true
-      explanation: "That's correct. With information barriers, you're able to restrict communications among specific groups of users when necessary."
-  - content: "The compliance team wants to control the use privileged admin accounts with standing access to sensitive data, so that admins receive only the level of access they need, when they need it. How can this requirement be implemented?"
-    choices:
-    - content: "Use Communication Compliance."
-      isCorrect: false
-      explanation: "That's incorrect. Communication Compliance won't enable you to do this. Instead, use privileged access management."
-    - content: "Use privileged access management."
-      isCorrect: true
-      explanation: "That's correct. You can use privileged access management to require users to request just-in-time access to complete certain tasks.​​​"
-    - content: "Use the Audit log."
-      isCorrect: false
-      explanation: "That's incorrect. This helps you monitor user activity, but that won’t be enough. Instead, use privileged access management."
-  - content: "A customer has identified an issue that requires a Microsoft engineer to access the organization’s content to determine the root cause and fix the issue. To protect the organization, the engineer shouldn't be able to access content and perform service operations without explicit approval. What capability can address this requirement?"
-    choices:
-    - content: "Use privileged access management"
-      isCorrect: false
-      explanation: "That's incorrect. Privileged access management won't enable your organization to do this. Instead, use Customer Lockbox."
-    - content: "Use information barriers"
-      isCorrect: false
-      explanation: "That's incorrect. Information barriers won't enable your organization to do this. Instead, use Customer Lockbox."
-    - content: "Use Customer Lockbox"
-      isCorrect: true
-      explanation: "That's correct. Customer Lockbox brings your organization into the approval workflow. The engineer will ask for access, and will only have access for the stated duration they've requested."
+      explanation: "Correct. With Microsoft Purview Information Barriers, you're able to restrict communications among specific groups of users when necessary."

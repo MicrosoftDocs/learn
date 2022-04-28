@@ -4,12 +4,13 @@ title: Design and configure Azure Front Door
 metadata:
   title: Design and configure Azure Front Door
   description: "Design and configure Azure Front Door"
-  ms.date: 07/15/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 14
 content: |
   [!include[](includes/5-design-configure-azure-front-door.md)]
@@ -18,23 +19,23 @@ quiz:
   questions:
   - content: "What is the difference between Azure Front Door and Azure Application Gateway?"
     choices:
-    - content: "Front Door is a global service, Application Gateway is a regional service."
-      isCorrect: true
-      explanation: "Correct, Front Door and Application Gateway are layer 7 (HTTP/HTTPS) load balancers, Front Door is a global service whereas Application Gateway is a regional service."
     - content: "Front Door is a regional service, Application Gateway is a global service."
       isCorrect: false
       explanation: "Incorrect, Front Door and Application Gateway are layer 7 (HTTP/HTTPS) load balancers, Front Door is a global service whereas Application Gateway is a regional service."
+    - content: "Front Door is a global service, Application Gateway is a regional service."
+      isCorrect: true
+      explanation: "Correct, Front Door and Application Gateway are layer 7 (HTTP/HTTPS) load balancers, Front Door is a global service whereas Application Gateway is a regional service."
     - content: "Front Door uses health probes to monitor the health of backends, Application Gateway does not."
       isCorrect: false
       explanation: "Incorrect, Both Front Door and Application gateway use health probes to monitor the health of backends."
   - content: "Front Door route rules determine whether the incoming request matches the routing rule and route traffic accordingly. What properties are matched?"
     choices:
-    - content: "HTTP protocols (HTTP/HTTPS), Hosts, and Paths."
-      isCorrect: true
-      explanation: "Correct, When evaluating routing rules, Front Door looks for matches in HTTP protocols (HTTP/HTTPS), Hosts, and Paths."
     - content: "HTTP protocols (HTTP/HTTPS), Hosts, and time stamp."
       isCorrect: false
       explanation: "Incorrect, When evaluating routing rules, Front Door does not look for matches in time stamps."
+    - content: "HTTP protocols (HTTP/HTTPS), Hosts, and Paths."
+      isCorrect: true
+      explanation: "Correct, When evaluating routing rules, Front Door looks for matches in HTTP protocols (HTTP/HTTPS), Hosts, and Paths."
     - content: "Hosts, paths, and user certificates."
       isCorrect: false
       explanation: "Incorrect, When evaluating routing rules, Front Door does not look for matches in user certificates."

@@ -1,6 +1,6 @@
-Let's start with a few definitions and a look at *security information and event management* (SIEM) systems and Azure Sentinel.
+Let's start with a few definitions and a look at *security information and event management* (SIEM) systems and Microsoft Sentinel.
 
-## What is security incident and event management (SIEM)?
+## What is security information and event management (SIEM)?
 
 A SIEM system is a tool that an organization uses to collect, analyze, and perform security operations on its computer systems. Those systems can be hardware appliances, applications, or both.
 
@@ -22,20 +22,20 @@ A SIEM system might offer functionality such as:
 
 - **Querying data**: A rich query language, similar to that for log management, that you can use to query and understand your data.
 
-## What is Azure Sentinel?
+## What is Microsoft Sentinel?
 
-Azure Sentinel is a cloud-native SIEM system that a security operations team can use to:
+Microsoft Sentinel is a cloud-native SIEM system that a security operations team can use to:
 
 - Get security insights across the enterprise by collecting data from virtually any source.
 - Detect and investigate threats quickly by using built-in machine learning and Microsoft threat intelligence.
 - Automate threat responses by using playbooks and by integrating Azure Logic Apps.
 
-Unlike with traditional SIEM solutions, to run Azure Sentinel, you don't need to install any servers either on-premises or in the cloud. Azure Sentinel is a service that you deploy in Azure. You can get up and running with Sentinel in just a few minutes in the Azure portal.
+Unlike with traditional SIEM solutions, to run Microsoft Sentinel, you don't need to install any servers either on-premises or in the cloud. Microsoft Sentinel is a service that you deploy in Azure. You can get up and running with Sentinel in just a few minutes in the Azure portal.
 
-Azure Sentinel is tightly integrated with other cloud services. Not only can you quickly ingest logs, but you can also use other cloud services natively (for example, authorization and automation).
+Microsoft Sentinel is tightly integrated with other cloud services. Not only can you quickly ingest logs, but you can also use other cloud services natively (for example, authorization and automation).
 
-Azure Sentinel helps you enable end-to-end security operations including collection, detection, investigation, and response:
+Microsoft Sentinel helps you enable end-to-end security operations including collection, detection, investigation, and response:
 
-:::image type="content" source="../media/02-end-to-end.svg" alt-text="This diagram shows the end-to-end functionality of Azure Sentinel.":::
+:::image type="content" source="../media/02-end-to-end.svg" alt-text="This diagram shows the end-to-end functionality of Microsoft Sentinel.":::
 
-Let's take a look at the key components in Azure Sentinel.
+Let's take a look at the key components in Microsoft Sentinel.

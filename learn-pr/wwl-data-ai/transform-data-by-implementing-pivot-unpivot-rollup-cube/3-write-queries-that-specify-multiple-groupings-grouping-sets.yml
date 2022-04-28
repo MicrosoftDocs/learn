@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transform-data-by-implementing-pivot-unpivot-rollup-cube.write-queries-that-specify-multiple-groupings-grouping-sets
+title: Write queries that specify multiple groupings with grouping sets
+metadata:
+  title: Write queries that specify multiple groupings with grouping sets
+  description: "Write queries that specify multiple groupings with grouping sets"
+  ms.date: 10/14/2021
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-write-queries-that-specify-multiple-groupings-grouping-sets.md)]

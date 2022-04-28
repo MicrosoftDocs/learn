@@ -4,8 +4,8 @@ metadata:
   title: The Mojifier - Create a Slack bot that replaces people's faces with emojis matching their emotion
   description: Learn how to get images, calculate emotion, match emotions to emojis, and replace faces with emoji.
   ms.date: 10/18/2018
-  author: adrianstevens
-  ms.author: adsteven
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: The Mojifier - Create a Slack bot that replaces people's faces with emojis matching their emotion

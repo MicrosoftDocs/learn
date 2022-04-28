@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/12/2021
+  ms.date: 11/09/2021
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -27,17 +28,6 @@ quiz:
     - content: "Standard SSD"
       isCorrect: false
       explanation: "That's incorrect. Ultra Disk offers the lowest latency of the three storage types."
-  - content: "Which tool would you use to assess and migrate your databases from an on-premises SQL Server to an Azure VM?"
-    choices:
-    - content: "Microsoft Assessment and Planning Toolkit"
-      isCorrect: false
-      explanation: "That's incorrect. The data migration assistant provides both tooling to assess and execute a migration."
-    - content: "Database Experimentation Assistant"
-      isCorrect: false
-      explanation: "That's incorrect. The data migration assistant provides both tooling to assess and execute a migration."
-    - content: "Data Migration Assistant"
-      isCorrect: true
-      explanation: "That's correct. The data migration assistant provides both tooling to assess and execute a migration."
   - content: "To reduce the cost of an Azure SQL Server VM you intend to run full time for three years, which option should you choose?"
     choices:
     - content: "Availability set"

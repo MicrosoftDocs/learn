@@ -4,12 +4,13 @@ title: MySQL and PostgreSQL database services in Azure
 metadata:
   title: MySQL and PostgreSQL database services in Azure
   description: "MySQL and PostgreSQL database services in Azure"
-  ms.date: 04/01/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-mysql-postgresql-database-services.md)]

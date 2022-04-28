@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-fslogix.configure-profile-containers
+title: Configure Profile Containers
+metadata:
+  title: Configure Profile Containers
+  description: "Configure Profile Containers"
+  ms.date: 03/14/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-configure-profile-containers.md)]

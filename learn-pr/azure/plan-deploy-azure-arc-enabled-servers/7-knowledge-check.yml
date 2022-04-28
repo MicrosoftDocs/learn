@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.plan-deploy-azure-arc-enabled-servers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge Check
+  ms.date: 09/21/2021
+  author: aurnovcy
+  ms.author: aurnovc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following services can you not use with Azure Arc-enabled servers?"
+    choices:
+    - content: "Governance through Azure Policy and Guest Configuration"
+      isCorrect: false
+      explanation: "Azure Policy and Guest Configuration can be used for governance of Azure Arc-enabled servers."
+    - content: "Security through Microsoft Defender for Cloud and Microsoft Sentinel"
+      isCorrect: false
+      explanation: "Microsoft Defender for Cloud and Microsoft Sentinel can be used for improved security posture of Azure Arc-enabled servers."
+    - content: "Observability through Azure Monitor and Log Analytics"
+      isCorrect: false
+      explanation: "Azure Monitor and Log Analytics can be used for observability into Azure Arc-enabled servers."
+    - content: "Deploying configurations using GitOps"
+      isCorrect: true
+      explanation: "Correct. Azure Arc-enabled Kubernetes supports deploying configurations using GitOps, however Azure Arc-enabled servers does not."
+  - content: "Which of the following actions does the Azure Connected Machine Onboarding identity have permission to perform?"
+    choices:
+    - content: "Delete servers that are already registered"
+      isCorrect: false
+      explanation: "This is outside the scope of the Azure Connected Machine Onboarding identity."
+    - content: "Create new Azure Arc-enabled servers in Azure"
+      isCorrect: true
+      explanation: "Correct. This is within the scope of the Azure Connected Machine Onboarding identity."
+    - content: "Manage VM extensions for Azure Arc-enabled servers"
+      isCorrect: false
+      explanation: "This is outside the scope of the Azure Connected Machine Onboarding identity."
+    - content: "Read servers outside of Azure Arc-enabled servers within the resource group"
+      isCorrect: false
+      explanation: "This is outside the scope of the Azure Connected Machine Onboarding identity."
+  - content: "Which of the following cannot be used to automate deployment of the Connected Machine Agent to multiple machines?"
+    choices:
+    - content: "Azure Policy"
+      isCorrect: true
+      explanation: "Non Azure machines are outside of the reach of Azure Policy until they have been onboarded to Azure Arc-enabled servers."
+    - content: "Group Policy"
+      isCorrect: false
+      explanation: "Group Policy can be used with a scheduled task that runs the onboarding script for at scale deployment."
+    - content: "Systems Center Configuration Manager"
+      isCorrect: false
+      explanation: "Configuration Manager can be used to deploy the onboarding script to a collection of devices."
+    - content: "Service Principal"
+      isCorrect: false
+      explanation: "The Service Principal identity can be used instead of using your privileged identity to interactively connect to machines at scale."

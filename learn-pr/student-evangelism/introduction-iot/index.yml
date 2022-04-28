@@ -5,9 +5,10 @@ metadata:
   description: "University of Oxford"
   ms.date: 10/29/2019
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
+  ms.custom: team=nextgen
 title: "Introduction to Azure IoT"
 summary: "Explain the significance of Azure IoT and the problems it solves. Describe Azure IoT components and explain how you combine them to solve IoT solutions, which create value for enterprises."
 
@@ -29,6 +30,7 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-hub
+- azure-iot
 units:
 - learn.oxford.intro-to-iot.introduction
 - learn.oxford.intro-to-iot.what-is-iot

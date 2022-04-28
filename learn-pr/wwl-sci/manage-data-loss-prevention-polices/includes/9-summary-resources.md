@@ -10,7 +10,7 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more:
 
-- [View the reports for data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide?azure-portal=true)
+- [View the reports for data loss prevention](/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide?azure-portal=true)
 
-- [Configure and view alerts for DLP polices (preview)](https://docs.microsoft.com/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide?azure-portal=true)
+- [Configure and view alerts for DLP polices (preview)](/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide?azure-portal=true)
 

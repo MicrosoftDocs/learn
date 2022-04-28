@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Clear() and Resize()
   description: Use the `Clear()` and `Resize()` methods to modify the contents of your arrays.
   ms.date: 10/14/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

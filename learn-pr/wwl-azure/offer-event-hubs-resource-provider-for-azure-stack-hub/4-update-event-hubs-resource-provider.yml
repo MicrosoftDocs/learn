@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.update
+title: Update an Event Hubs resource provider
+metadata:
+  title: Update an Event Hubs resource provider
+  description: "Update an Event Hubs resource provider"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-update-event-hubs-resource-provider.md)]

@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Review what you've learned about automatically deploying ASP.NET web apps from GitHub using Azure Pipelines.
   ms.date: 01/26/2021
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

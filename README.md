@@ -24,13 +24,15 @@ To view all of the available landing pages, you can navigate to them from the he
 
 ## Contributions and feedback
 
-We welcome contributions and feedback. How you contribute depends on who you are and the sort of changes you'd like to contribute. For more information about how to understand the content files, view our [create a module](https://review.docs.microsoft.com/learn-docs/docs/create-a-module?branch=master#implementation) documentation.
+We welcome contributions and feedback. How you contribute depends on who you are and the sort of changes you'd like to contribute. For more information about how to understand the content files, view our [create a module](https://review.docs.microsoft.com/learn-docs/docs/create-a-module?branch=main#implementation) documentation.
 
 ### Microsoft employees
 
-* **Minor updates**: If you are contributing minor updates out of the goodness of your heart, you can fork the repository and submit updates from your fork. See the [Docs contributor guide](https://review.docs.microsoft.com/help/contribute/) for more information.
+All updates and changes require using a fork of this repository.
 
-* **New content + major changes**: If you want to create a new module or submit major changes, please fill out the new content request form at https://aka.ms/docs/welcome. Once you've agreed to a plan, you'll work with the right employees across C&L to help get training, bring that content in, or write new content. For more information about Microsoft Learn, review the [Microsoft Learn Docs](https://review.docs.microsoft.com/help/learn/?branch=master).
+* **Minor updates**: See the [Docs contributor guide](https://review.docs.microsoft.com/help/contribute/) for more information.
+
+* **New content + major changes**: If you want to create a new module or submit major changes, please fill out the new content request form at https://aka.ms/docs/welcome. Once you've agreed to a plan, you'll work with the right employees across C&L to help get training, bring that content in, or write new content. For more information about Microsoft Learn, review the [Microsoft Learn Docs](https://review.docs.microsoft.com/help/learn/?branch=main).
 
 **Report an issue + provide feedback**: Email: [learn-en-us@microsoft.com](learn-en-us@microsoft.com)
 
@@ -44,6 +46,6 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 ## Questions
 
-View the [Microsoft Learn FAQs](https://review.docs.microsoft.com/learn-docs/docs/microsoftlearn-faq?branch=master).
+View the [Microsoft Learn FAQs](https://review.docs.microsoft.com/learn-docs/docs/microsoftlearn-faq?branch=main).
 
 For questions related to repo and build issues, contact: [learn-repo-managers@microsoft.com](mailto:learn-repo-managers@microsoft.com)

@@ -4,6 +4,9 @@ You can use a **ScriptRunConfig** to run a script-based experiment that trains a
 
 When using an experiment to train a model, your script should save the trained model in the **outputs** folder. For example, the following script trains a model using Scikit-Learn, and saves it in the **outputs** folder using the **joblib** package:
 
+> [!NOTE]
+> This sample code is an incomplete extract that shows the concept of training a model using Scikit-Learn.
+
 ```Python
 from azureml.core import Run
 import pandas as pd

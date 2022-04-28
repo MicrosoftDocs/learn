@@ -13,7 +13,7 @@ In the terminology of distributed applications, **messages** have the following 
 
 - A message contains raw data, produced by one component, that will be consumed by another component.
 - A message contains the data itself, not just a reference to that data.
-- The sending component expects the message content to be processed in a certain way by the destination component. The integrity of the overall system may depend on both sender and receiver doing a specific job.
+- The sending component expects the destination component to process the message content in a certain way. The integrity of the overall system may depend on both sender and receiver doing a specific job.
 
 For example, suppose a user uploads a new song by using the mobile music-sharing app. The mobile app must send that song to the web API that runs in Azure. The song media file itself must be sent, not just an alert that indicates that a new song has been added. The mobile app expects that the web API will store the new song in the database and make it available to other users. This is an example of a message.
 
@@ -32,7 +32,7 @@ Events have the following characteristics:
 - Some events are discrete units and unrelated to other events. 
 - Some events are part of a related and ordered series.  
 
-For example, suppose the music file upload has been completed, and the new song has been added to the database. In order to inform users of the new file, the web API must inform the web front end and mobile app users of the new file. The users can choose whether to listen to the new song, so the initial notification does not include the music file but only notifies users that the song exists. The sender does not have a specific expectation that the event receivers will do anything particular in responsiveness of receiving this event.
+For example, suppose the music file upload has been completed, and the new song has been added to the database. In order to inform users of the new file, the web API must inform the web front end and mobile app users of the new file. The users can choose whether to listen to the new song, so the initial notification does not include the music file but only notifies users that the song exists. The sender does not have a specific expectation that the event receivers will do anything particular in response to this event.
 
 This scenario is an example of a discrete event.
 

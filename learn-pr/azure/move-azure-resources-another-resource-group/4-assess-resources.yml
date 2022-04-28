@@ -5,8 +5,8 @@ metadata:
   title: Assess resources that can move
   description: Assess resources that can move
   ms.date: 12/23/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: tfitzmac
+  ms.author: tomfitz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

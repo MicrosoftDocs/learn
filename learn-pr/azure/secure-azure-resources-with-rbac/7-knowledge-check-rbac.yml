@@ -4,8 +4,8 @@ metadata:
   title: Knowledge check - Using Azure RBAC
   description: Knowledge check - Using Azure RBAC
   ms.date: 09/24/2018
-  author: cwatson-cat
-  ms.author: cwatson
+  author: rolyon
+  ms.author: rolyon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Knowledge check - Using Azure RBAC
@@ -15,10 +15,10 @@ quiz:
   questions:
   - content: "Suppose a team member can't view resources in a resource group. Where would the administrator go to check the team member's access?"
     choices:
-    - content: "Check the team member's permissions by going to their Azure profile > **My permissions**."
+    - content: "Check the team member's permissions by going to their **Azure profile > My permissions**."
       isCorrect: false
-      explanation: "The Azure profile permissions show your permissions at the subscription scope. But you could view the list of assigned roles on their user profile in Active Directory.  "
-    - content: "Go to the resource group and select **Access control (IAM)** > **Role assignments**."
+      explanation: "The Azure profile permissions show permissions at the subscription scope. But an administrator could view the list of assigned roles on the user profile in Active Directory."
+    - content: "Go to the resource group and select **Access control (IAM)** > **Check Access**."
       isCorrect: true
       explanation: "Find the list of role of assignments on the resource group."
     - content: "Go to one of the resources in the resource group and select **Role assignments**."

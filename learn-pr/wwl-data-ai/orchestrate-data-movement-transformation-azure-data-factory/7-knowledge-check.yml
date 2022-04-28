@@ -4,35 +4,36 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/22/2021
+  ms.date: 04/19/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
   - content: "What is a supported connector for built-in parameterization?"
     choices:
-    - content: "Azure Data Lake Storage Gen2."
+    - content: "Azure Data Lake Storage Gen2"
       isCorrect: false
       explanation: "Incorrect. Azure Synapse Analytics is a supported connector for built-in parameterization for Linked Services in Azure Data Factory."
-    - content: "Azure Synapse Analytics."
+    - content: "Azure Synapse Analytics"
       isCorrect: true
       explanation: "Correct. Azure Synapse Analytics is a supported connector for built-in parameterization for Linked Services in Azure Data Factory."
-    - content: "Azure Key Vault."
+    - content: "Azure Key Vault"
       isCorrect: false
       explanation: "Incorrect. Azure Synapse Analytics is a supported connector for built-in parameterization for Linked Services in Azure Data Factory."
   - content: "What is an example of a branching activity used in control flows?"
     choices:
-    - content: "The If-condition."
+    - content: "The If-condition"
       isCorrect: true
       explanation: "Correct. An example of a branching activity is *The If-condition* activity which is similar to an if-statement provided in programming languages."
-    - content: "Until-condition."
+    - content: "Until-condition"
       isCorrect: false
       explanation: "Incorrect. The until activity functionality is similar to a do-until loop used in programming. What it does is running a set of activities (do) in a loop until the condition (until) is met. Therefore it is not an example of a branching activity."
-    - content: "Lookup- condition."
+    - content: "Lookup-condition"
       isCorrect: false
       explanation: "Incorrect. The Lookup activity, will read or look up a record or table name value from any external source. This output can further be referenced by succeeding activities. However, it is not an example of a branching activity."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnet-core-signalr-polling-fix.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: In this module, you'll learn how to replace client polling with real-time web functionality from ASP.NET Core SignalR.
+  ms.date: 11/09/2021
+  author: IEvangelist
+  ms.author: dapine
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

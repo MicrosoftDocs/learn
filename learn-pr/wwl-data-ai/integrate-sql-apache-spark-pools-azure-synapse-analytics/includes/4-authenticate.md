@@ -3,7 +3,7 @@ Now that you understand the integration methods between SQL and Apache Spark poo
 For this reason, there's no need to create credentials or specify them in the connector API if Azure AD-Auth is configured at the storage account and the dedicated SQL pool. If not, SQL Authentication can be specified. The only constraint is that this connector only works in Scala. 
 
 There are some prerequisites to authenticate correctly:
-- The account used needs to be a member of db_exporter role in the database or SQL pool from which you to transfer data to or from.
+- The account used needs to be a member of the db_exporter role in the database or SQL pool from which you want to transfer data to or from.
 - The account used needs to be a member of the Storage Blob Data Contributor role on the default storage account. 
 
 If you want to create users, you need to connect to the dedicated SQL pool database from which you want transfer data to or from as shown in the following example: 

@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/03/2021
+  ms.date: 04/19/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 quiz:
   questions:
@@ -28,7 +29,7 @@ quiz:
     choices:
     - content: "Azure Synapse Link."
       isCorrect: false
-      explanation: "Incorrect. The serverless resource model is the ideal resource model in this scenario as it makes use of the resources when required."
+      explanation: "Incorrect. Azure Synapse Link is the component that enables Hybrid Transactional and Analytical Processing."
     - content: "Azure Synapse shared metadata."
       isCorrect: true
       explanation: "Correct. The shared metadata gives the workspace SQL engines access to databases and tables created with Spark."

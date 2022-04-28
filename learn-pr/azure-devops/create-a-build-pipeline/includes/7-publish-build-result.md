@@ -5,7 +5,7 @@ But where do the results of the build go? Right now, the output of the build rem
 You can store build artifacts in Azure Pipelines so they're later available to others on your team after the build completes. That's what you'll do here. As a bonus, you'll also refactor the build configuration to use variables to make the configuration easier to read and keep up to date.
 
 > [!NOTE]
-> Azure Pipelines enables you to automatically deploy the built app to a testing or production environment running in the cloud or in your datacenter. For now, Mara's goal is only to produce builds that she can hand off to QA by using their existing processes.
+> Azure Pipelines lets you automatically deploy the built app to a testing or production environment running in the cloud or in your datacenter. For now, Mara's goal is only to produce builds that she can hand off to QA by using their existing processes.
 
 ## Publish the build to the pipeline
 
@@ -44,24 +44,24 @@ In .NET, you can package your app as a .zip file. You can then use the built-in 
 
 1. Expand the drop folder.
 
-    You see a *.zip* file that contains your built app and its dependencies:
+    You'll see a *.zip* file that contains your built app and its dependencies:
 
     :::image type="content" source="../media/7-artifacts-explorer.png" alt-text="The packaged web application in the Artifacts explorer.":::
 
-    If you want to try an optional exercise, you can download this *.zip* file to your computer, and explore its contents.
+    If you want to try an optional exercise, you can download this *.zip* file to your computer and explore its contents.
 
 ## Define variables to enhance readability
 
 Mara steps back to examine her work. The build configuration does what she needs, but she wants to make sure Andy and others can easily help keep it up to date and extend it.
 
-Variables enable you to define values one time and refer to those values throughout your pipeline. Azure Pipelines replaces each variable with its current value when the pipeline runs.
+Variables allow you to define values one time and refer to those values throughout your pipeline. Azure Pipelines replaces each variable with its current value when the pipeline runs.
 
-Just like in other programming languages, variables enable you to do things like:
+Just like in other programming languages, variables let you do things like:
 
 * Define values that might change between runs of your pipeline.
 * Store information that's repeated throughout your pipeline, like a version number or a file path, in one place. That way, you don't need to update all occurrences when your needs change.
 
-Azure Pipelines provides a number of built-in variables. These variables describe aspects of the build process, like the build identifier and the directory names where your software is built and staged.
+Azure Pipelines provides many built-in variables. These variables describe aspects of the build process, like the build identifier and the directory names where your software is built and staged.
 
 You can also define your own variables. Here's an example that shows a variable named `buildConfiguration` that defines the Release build configuration.
 
@@ -88,11 +88,11 @@ You now use variables to define these values one time. You then reference the va
 
     Notice the `variables` section, which defines these variables:
 
-    * `buildConfiguration`. Specifies the build configuration.
-    * `wwwrootDir`. Specifies the path to the **wwwroot** directory.
-    * `dotnetSdkVersion`. Specifies the .NET SDK version to use.
+    * `buildConfiguration`: Specifies the build configuration.
+    * `wwwrootDir`: Specifies the path to the **wwwroot** directory.
+    * `dotnetSdkVersion`: Specifies the .NET SDK version to use.
 
-    To reference these variables, you use the `$()` syntax just as you do for built-in variables. Here's the step that runs node-Sass to convert Sass files to CSS. To obtain the path to the **wwwroot** directory, it references the `wwwrootDir` variable.
+    To reference these variables, use the `$()` syntax just as you do for built-in variables. Here's the step that runs node-Sass to convert Sass files to CSS. To obtain the path to the **wwwroot** directory, it references the `wwwrootDir` variable.
 
     ```yml
     - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'

@@ -38,8 +38,6 @@ First, sign in to Azure Cloud Shell with the account you want to deploy resource
 
 > [!IMPORTANT]
 > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select "Bash" as the running shell.
-
-> [!NOTE]
 > If you're on Windows and not on Cloud Shell, execute the previous commands in WSL for a better experience.
 
 Then execute the following command.

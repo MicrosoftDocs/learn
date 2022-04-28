@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-program-emulator.configuration-options
+title: Prepare to program the Altair by using the front panel
+metadata:
+  title: Prepare to program the Altair by using the front panel
+  description: Get background information that will help you program the Altair by using the front panel.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/06-configuration-options.md)]

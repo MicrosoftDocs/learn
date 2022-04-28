@@ -4,12 +4,13 @@ title: Use the order by operator
 metadata:
   title: Use the order by operator
   description: "Use the order by operator"
-  ms.date: 03/04/2021
+  ms.date: 04/27/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/7-use-order-by-operator.md)]

@@ -1,12 +1,12 @@
 ### YamlMime:LearningPath
 uid: learn.languages.csharp-logic
 metadata:
-  title: Add logic to your applications with C#
-  description: Deepen your experience with C# logic and iteration statements, Boolean expressions, and code blocks in this Learning Path.
+  title: 'Add logic to your applications with C#'
+  description: 'Deepen your experience with C# logic and iteration statements, Boolean expressions, and code blocks in this Learning Path.'
   brand: azure
   ms.date: 10/30/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   #ms.learn-contact: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -25,6 +25,9 @@ prerequisites: |
     - Beginner level experience with C# concepts including declaring, initializing, and using variables
     - Beginner level experience with the `if-elseif-else` statement
     - Beginner level experience with arrays and the `foreach` statement
+video:
+  title: "Add logic to your applications with C#"
+  url: https://www.microsoft.com/videoplayer/embed/RWVzs6
 iconUrl: /learn/achievements/csharp-logic.svg
 levels:
 - beginner

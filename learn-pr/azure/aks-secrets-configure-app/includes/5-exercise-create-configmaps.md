@@ -1,17 +1,26 @@
 The back-end part of the application is deployed and now you need to deploy the front-end portion. You already know you're going to need a ConfigMap. So let's start by creating one.
 
+<!--
+
 ## Activate the Azure sandbox
+
+>[!NOTE]
+> The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
 
 1. Start by **activating the Azure sandbox above**.
 
 1. Once it's activated, sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
 
+-->
+
 ## Before we start
 
-We'll assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure there's no other clusters or resources already created:
+[!INCLUDE [azure-optional-exercise-subscription-note](../../../includes/azure-optional-exercise-subscription-note.md)]
+
+Let's assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure there's no other clusters or resources already created:
 
 ```azurecli-interactive
-export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+export RESOURCE_GROUP=rg-ship-manager
 export CLUSTER_NAME=ship-manager-cluster
 ```
 
@@ -146,7 +155,7 @@ The complete cluster creation can take up to five minutes.
           port: 80
           targetPort: 80
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-ship-manager-frontend
@@ -159,16 +168,23 @@ The complete cluster creation can take up to five minutes.
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: contoso-ship-manager-frontend
-                  servicePort: http
+                  service:
+                    name: contoso-ship-manager-frontend
+                    port: 
+                      name: http
     ```
 
     Change the DNS zone present in the Ingress to match the DNS you copied from the first step.
 
 1. Save and close the file.
 
-1. Deploy the application by running `kubectl apply -f frontend.yaml`.
+1. Deploy the application by running the following command:
+
+    ```bash
+    kubectl apply -f frontend.yaml
+    ```
 
 1. Check your work by querying the Kubernetes API:
 

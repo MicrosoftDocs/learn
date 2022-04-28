@@ -26,7 +26,7 @@ The Defender for Endpoint alert severity represents the severity of the detected
 
 So, for example:
 
-- The severity of a Defender for Endpoint alert about a Microsoft Defender AV detected threat that was completely prevented and did not infect the device is categorized as "Informational" because there was no actual damage.
+- The severity of a Defender for Endpoint alert about a Microsoft Defender AV detected threat that was prevented and did not infect the device is categorized as "Informational" because there was no actual damage.
 
 - An alert about a commercial malware was detected while executing, but blocked and remediated by Microsoft Defender AV, is categorized as "Low" because it may have caused some damage to the individual device but poses no organizational threat.
 
@@ -104,7 +104,7 @@ Alternatively, the team leader might assign the alert to the Resolved queue if t
 
 ### Alert classification
 
-You can choose not to set a classification or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive because it is used to monitor alert quality and make alerts more accurate. The "determination" field defines additional fidelity for a "true positive" classification.
+You can choose not to set a classification or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive because it is used to monitor alert quality and make alerts more accurate. The "determination" field defines extra fidelity for a "true positive" classification.
 
 ### Add comments and view the history of an alert
 
@@ -122,7 +122,7 @@ From the alert page, begin your investigation by selecting the affected assets o
 
 ### Investigate using the alert story
 
-The alert story details why the alert was triggered, related events that happened before and after, as well as other related entities.
+The alert story details why the alert was triggered, related events that happened before and after, and other related entities.
 
 Entities are clickable, and every entity that isn't an alert is expandable using the expand icon on the right side of that entity's card. The entity in focus will be indicated by a blue stripe to the left side of that entity's card, with the alert in the title being in focus at first.
 

@@ -1,10 +1,10 @@
-In this exercise, you'll configure CORS in Azure Functions and see the Product Manager application come to life.
+In this exercise, you'll configure Cross-Origin Resource Sharing (CORS) in Azure Functions, and see the Product Manager application come to life.
 
 ## Configure CORS
 
 1. Open the `api/local.settings.json` file.
 
-1. Add a "Host" section _below_ the "Values" property. Set the "CORS" value on "Host" to "\*".
+1. Add a "Host" section below the "Values" property. Set the "CORS" value on "Host" to "\*".
 
    ```json
    {
@@ -20,13 +20,13 @@ In this exercise, you'll configure CORS in Azure Functions and see the Product M
    }
    ```
 
-1. If the API is still running, restart the process by clicking on the "disconnect" button in the debug bar and then press <kbd>F5</kbd> to start it again.
+1. If the API is still running, restart the process by selecting **Disconnect** in the debug bar, and then pressing <kbd>F5</kbd> to start it again.
 
 ## Check the front-end app
 
 1. The front-end app should still be running in a browser tab on port 5000. Refresh the page.
 
-1. The app loads in the data from the API.
+1. The app loads the data from the API.
 
    :::image type="content" source="../media/working-application.png" alt-text="Screenshot of web browser displaying the Products Manager application shown populated with data." loc-scope="other":::
 

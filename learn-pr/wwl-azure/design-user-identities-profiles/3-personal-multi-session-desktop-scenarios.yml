@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-for-user-identities-profiles.personal-multi-session-desktop-scenarios
+title: Personal and multi-session desktop scenarios
+metadata:
+  title: Personal and multi-session desktop scenarios
+  description: "Personal and multi-session desktop scenarios"
+  ms.date: 04/07/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-personal-multi-session-desktop-scenarios.md)]

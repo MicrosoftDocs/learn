@@ -5,9 +5,10 @@ metadata:
   description: "University of Oxford"
   ms.date: 03/31/2020
   author: leestott
-  ms.author: leestott
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
+  ms.custom: team=nextgen
 title: "Connecting IoT devices to Cognitive Services using Azure Functions"
 summary: "Create and deploy an Azure function to make a language translation IoT device. The function will use Cognitive Speech Service. Your device will record a voice in a foreign language and convert the speech to a target language."
 abstract: |
@@ -28,7 +29,7 @@ prerequisites: |
     - An active Azure subscription
     - Visual Studio Code installed on your computer
     - Arduino IDE installed on your computer
-    - .NET Core SDK installed on your computer
+    - .NET SDK installed on your computer
 
 iconUrl: /learn/achievements/student-evangelism/connecting-iot-devices-to-cognitive-services-using-azure-functions.svg
 badge:

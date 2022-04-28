@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-audio-classification-tensorflow.understand-audio-data
+title: Understanding audio data
+metadata:
+  title: Understanding audio data
+  description: Understanding audio data
+  author: cassiebreviu
+  ms.author: cassieb
+  ms.date: 08/03/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom:
+  - team=nextgen
+  - team=cloud_advocates
+  ms.product: learning-tensorflow
+  ms.contributors:
+  - cassieb-08202021
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/2-understand-audio-data.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is the sample rate?"
+      choices:
+        - content: "Frequency mapped to time."
+          isCorrect: false
+          explanation: "Incorrect, frequency mapped to time is a Spectrogram."
+        - content: "The audio channels."
+          isCorrect: false
+          explanation: "Although audio channels can be used in sampling, this is not what sample rate is"
+        - content: "Sampling analog sound at consistent intervals of time to create a digital sound representation."
+          isCorrect: true
+          explanation: "Correct!"
+    - content: "What is the waveform?"
+      choices:
+        - content: "Frequency mapped to time."
+          isCorrect: false
+          explanation: "Incorrect, frequency mapped to time is a Spectrogram."
+        - content: "Sample rate and frequency visualized."
+          isCorrect: true
+          explanation: "Correct! We can visualize our data using a waveform to map sample rate and frequency"
+        - content: "The audio channels."
+          isCorrect: false
+          explanation: "Incorrect."

@@ -1,6 +1,6 @@
 In the previous exercises, you implemented a pipeline that builds the *Space Game* website. You started with a script that performs each build action and mapped each action to its corresponding pipeline task. The output of the pipeline is a *.zip* file that contains the compiled web app.
 
-In this exercise, you use a template to define build tasks that can build any configuration defined in the project file. Templates enable you to define your logic one time and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline.
+In this exercise, you'll use a template to define build tasks that can build any configuration defined in the project file. Templates let you define your logic one time and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline.
 
 Let's begin by checking in with Mara and Amita.
 
@@ -30,9 +30,9 @@ A better solution is to use a template.
 
 ## What are templates?
 
-A *template* enables you to define common build tasks one time and reuse those tasks multiple times.
+A *template* lets you define common build tasks one time and reuse those tasks multiple times.
 
-You call a template from the parent pipeline as a build step. You can pass parameters into a template from the parent pipeline.
+You'll call a template from the parent pipeline as a build step. You can pass parameters into a template from the parent pipeline.
 
 Mara can define tasks to build and publish the app as a template, and then apply that template to each configuration she needs.
 
@@ -61,9 +61,9 @@ You'll now create a template that can build any configuration that's defined in 
 
     These tasks look like the ones you defined earlier to build and publish the app. But in a template, you work with input parameters differently than you work with normal variables. Here are two differences:
 
-   - In a template file, you use the `parameters` section instead of `variables` to define inputs.
-   - In a template file, you use `${{ }}` syntax instead of `$()` to read a parameter's value.
-        When you read a parameter's value, you include the `parameters` section in its name. For example, `${{ parameters.buildConfiguration }}`.
+   - In a template file, use the `parameters` section instead of `variables` to define inputs.
+   - In a template file, use `${{ }}` syntax instead of `$()` to read a parameter's value.
+        When you read a parameter's value, you'll include the `parameters` section in its name. For example, `${{ parameters.buildConfiguration }}`.
 
 ## Call the template from the pipeline
 

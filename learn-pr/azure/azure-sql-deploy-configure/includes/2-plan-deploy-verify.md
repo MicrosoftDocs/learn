@@ -11,11 +11,11 @@ Before you start deploying things in Azure, it's important to understand what yo
 * Hardware: Gen5, or something new?
 * Sizing: number of vCores and **Data max size**?  
 
-In addition, and perhaps before answering the preceding questions, you need to pick a workload that's going to either be migrated to Azure SQL or be "born in the cloud." If you're migrating, many tools and resources are available to help you plan, assess, migrate, and optimize your databases and application. Resources are provided at the end of this module.  
+Perhaps before answering the preceding questions, you also need to pick a workload that's going to either be migrated to Azure SQL or be "born in the cloud." If you're migrating, many tools and resources are available to help you plan, assess, migrate, and optimize your databases and application. Resources are provided at the end of this module.  
 
 ### Resource limits
 
-The Azure SQL introduction module described limits, rates, and capabilities (like IOPS or in-memory OLTP).But there are other resource limits that are affected by your choice of Azure SQL Managed Instance, Azure SQL Database, or options within these choices:  
+The Azure SQL introduction module described limits, rates, and capabilities (like IOPS or in-memory OLTP). There are other resource limits affected by your choice of Azure SQL Managed Instance, Azure SQL Database, or options within these choices:  
 
 * Memory
 * Max log size
@@ -37,7 +37,7 @@ It's also important to know that Azure SQL resources have overall resource limit
 
 After you've completed your pre-deployment planning, it's time to put your plan into action. In this stage, you'll deploy Azure SQL (by using the Azure portal or the command line), determine network configuration, and make an initial connection.  
 
-For Azure SQL Database and Azure SQL Managed Instance, there are essentially five panes in the Azure portal to fill in during a deployment.  
+For Azure SQL Database and Azure SQL Managed Instance, there are essentially six panes in the Azure portal to fill in during a deployment.  
 
 :::image type="content" source="../media/2-deploy-panes.png" alt-text="Diagram of the deployment panes for Azure SQL." border="false":::
 
@@ -45,7 +45,7 @@ Let's dive into a few of these options.
 
 ### Server
 
-When you create an Azure SQL managed instance, supplying the server name is the same as in SQL Server. But for databases and elastic pools, an Azure SQL Database server is required. This is a *logical* server that acts as a central administrative point for a single or pooled database. It includes logins, firewall rules, auditing rules, threat detection policies, and failover groups. (You'll learn more about these topics later.) 
+When you create an Azure SQL managed instance, supplying the server name is the same as in SQL Server. But for databases and elastic pools, an Azure SQL Database server is required. An Azure SQL Database server is a *logical* server that acts as a central administrative point for a single or pooled database. It includes logins, firewall rules, auditing rules, threat detection policies, and failover groups. (You'll learn more about these topics later.) 
 
 This logical server does not expose any instance-level access or features as with Azure SQL Managed Instance. For Azure SQL Database servers, the server name must be unique across all of Azure.  
 
@@ -63,13 +63,13 @@ Choices for networking for Azure SQL Database and Azure SQL Managed Instance are
 
 You can then choose to select a public endpoint or private endpoint. In the exercise that follows this unit, you'll use the public endpoint and set the **Allow Azure services and resources to access this server** option to yes, meaning that other Azure services (for example, Azure Data Factory or Azure Virtual Machines) can access the database if you configure it. You can also select **Add current client IP address** if you want to be able to connect from the IP address from the client computer that you used to deploy Azure SQL Database.
 
-With Azure SQL Managed Instance, you deploy it inside an Azure virtual network and a subnet that's dedicated to managed instances. This enables you to have a secure, private IP address. Azure SQL Managed Instance provides the ability to connect an on-premises network to a managed instance, connect a managed instance to a linked server or other on-premises data store, and connect a managed instance to other resources. 
+With Azure SQL Managed Instance, you deploy inside an Azure virtual network and a subnet that's dedicated to managed instances, which lets you have a secure, private IP address. Azure SQL Managed Instance can connect an on-premises network to a managed instance, connect a managed instance to a linked server or other on-premises data store, and connect a managed instance to other resources. 
 
 You can also enable a public endpoint so you can connect to a managed instance from the internet without a virtual private network (VPN). This access is disabled by default.  
 
 ### Data source
 
-In Azure SQL Database, upon deployment you have the option to select the AdventureWorksLT database as the sample in the Azure portal. In Azure SQL Managed Instance, you deploy the instance first and then databases inside it, so there's no option to have the sample database upon deployment (similar to SQL Server). You can learn more about the AdventureWorks sample databases on GitHub.
+In Azure SQL Database, you can select the AdventureWorksLT database as the sample upon deployment in the Azure portal. In Azure SQL Managed Instance, you deploy the instance first and then databases inside it, so there's no option to have the sample database upon deployment (similar to SQL Server). You can learn more about the AdventureWorks sample databases on GitHub.
 
 You can also deploy a blank database or create a database that's based on the restore from a geo-replicated backup.
 
@@ -91,13 +91,13 @@ In Azure SQL Database, you can't set the server collation. It's set at the defau
 
 Other options are available. Examples are character widths and UTF-8 encoding. You can find more details about what you can and can't do with Azure SQL in the documentation. (Search for "collation and unicode support.")
 
-### Opt-in for Azure Defender
+### Opt-in for Microsoft Defender for Cloud
 
-When you deploy Azure SQL Database in the portal, you're prompted about whether you want to enable Azure Defender in a free trial. Select **Start free trial**. After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. 
+When you deploy Azure SQL Database in the portal, you're prompted about whether you want to enable Microsoft Defender for Cloud in a free trial. Select **Start free trial**. After the free trial, it's billed according to the Microsoft Defender for Cloud Standard Tier pricing. 
 
 After you enable it, you get functionality related to identifying/mitigating potential database vulnerabilities and threat detection. You'll learn more about these capabilities in the next security module of this learning path. 
 
-In Azure SQL Managed Instance, you can enable Azure Defender on the instance after deployment.  
+In Azure SQL Managed Instance, you can enable Microsoft Defender for Cloud on the instance after deployment.  
 
 ### Review of selections
 
@@ -164,7 +164,7 @@ SELECT * FROM sys.dm_instance_resource_governance -- Available only in Azure SQL
 SELECT * FROM sys.dm_os_job_object -- Available only in Azure SQL Database and SQL Managed Instance
 ```
 
-One query related to the OS process memory is not supported in Azure SQL Database, even though it might appear to work. This query isn't supported because with Azure SQL Database, some things related to the OS are abstracted away from you so you can focus on the database.  
+One query related to the OS process memory is not supported in Azure SQL Database, even though it might appear to work. This query isn't supported because with Azure SQL Database, some things related to the OS are abstracted away from you, allowing you to focus on the database.  
 
 The last three queries are available only in Azure SQL Database and/or Azure SQL Managed Instance. The first, `sys.dm_user_db_resource_governance`, will return the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool. You can get similar information for an Azure SQL Managed Instance with the second, `sys.dm_instance_resource_governance`. The third, `sys.dm_os_job_object`, will return a single row that describes the configuration of the job object that manages the SQL Server process, as well as resource consumption statistics.
 

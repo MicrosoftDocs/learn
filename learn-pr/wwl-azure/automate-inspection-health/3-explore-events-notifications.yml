@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-inspection-of-health.explore-events-notifications
+title: Explore events and notifications
+metadata:
+  title: Explore events and notifications
+  description: "Explore events and notifications"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-explore-events-notifications.md)]

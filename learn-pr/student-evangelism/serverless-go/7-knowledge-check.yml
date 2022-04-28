@@ -9,6 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 durationInMinutes: 2
 content: Choose the best response for each question. Then select **Check your answers**.
 quiz:
@@ -17,14 +18,14 @@ quiz:
     - content: How can you make Azure Functions find your compiled app?
       choices:
         - content: Set `defaultExecutablePath` in the _host.json_ file.
-          isCorrect: false
-          explanation: Incorrect. You should set `defaultExecutablePath` in the _function.json_ file for that endpoint.
-        - content: Set the `executionPath` property in the _function.json_ file for the function endpoint.
-          isCorrect: false
-          explanation: Incorrect. The property is called `defaultExecutionPath`.
-        - content: Set `defaultExecutablePath` in the _function.json_ file for the function endpoint.
           isCorrect: true
           explanation: Correct. That's the right place to point out the compiled app path.
+        - content: Set the `executionPath` property in the _function.json_ file for the function endpoint.
+          isCorrect: false
+          explanation: Incorrect. You should set `defaultExecutablePath` in the _host.json_ file.
+        - content: Set `defaultExecutablePath` in the _function.json_ file for the function endpoint.
+          isCorrect: false
+          explanation: Incorrect. You should set `defaultExecutablePath` in the _host.json_ file.
     - content: Can any language or runtime use custom handlers?
       choices:
         - content: Yes. There are no limitations.

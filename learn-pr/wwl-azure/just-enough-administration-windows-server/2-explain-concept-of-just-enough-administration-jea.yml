@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.just-enough-administration-windows-server.explain-concept-of-jea
+title: Explain the concept of Just Enough Administration (JEA)
+metadata:
+  title: Explain the concept of Just Enough Administration (JEA)
+  description: "Explain the concept of Just Enough Administration (JEA)"
+  ms.date: 01/14/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-explain-concept-of-just-enough-administration-jea.md)]

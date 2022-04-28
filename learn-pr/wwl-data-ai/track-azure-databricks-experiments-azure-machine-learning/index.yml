@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning
+metadata:
+  title: Track Azure Databricks experiments in Azure Machine Learning
+  description: "Track Azure Databricks experiments in Azure Machine Learning"
+  ms.date: 09/15/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Track Azure Databricks experiments in Azure Machine Learning
+summary: Azure Machine Learning is a scalable cloud platform for training, deploying, and managing machine learning solutions.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe Azure Machine Learning
+  - Run Azure Databricks experiments in Azure Machine Learning
+  - Log metrics in Azure Machine Learning with MLflow
+  - Run Azure Machine Learning pipelines on Azure Databricks compute
+prerequisites: |
+  Before starting this module, you should be familiar with using Python to train machine learning models in Azure Databricks.
+iconUrl: /learn/achievements/track-azure-databricks-experiments-in-azure-machine-learning.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-databricks
+units:
+- learn.wwl.track-azure-databricks-experiments-azure-machine-learning.introduction
+- learn.wwl.track-azure-databricks-experiments-azure-machine-learning.describe
+- learn.wwl.track-azure-databricks-experiments-azure-machine-learning.run
+- learn.wwl.track-azure-databricks-experiments-azure-machine-learning.log-metrics-mlflow
+- learn.wwl.track-azure-databricks-experiments-azure-machine-learning.run-pipelines-azure-databricks-compute
+- learn.wwl.track-azure-databricks-experiments-azure-machine-learning.exercise-use-azure-databricks
+- learn.wwl.track-azure-databricks-experiments-azure-machine-learning.knowledge-check
+- learn.wwl.track-azure-databricks-experiments-azure-machine-learning.summary
+badge:
+  uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning.badge

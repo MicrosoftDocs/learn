@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-auditing-diagnostics.describe-basic-auditing-categories
+title: Describe basic auditing categories
+metadata:
+  title: Describe basic auditing categories
+  description: "Describe basic auditing categories"
+  ms.date: 12/01/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-describe-basic-auditing-categories.md)]
