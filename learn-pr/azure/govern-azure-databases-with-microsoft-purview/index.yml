@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.govern-azure-databases-with-microsoft-purview
+uid: learn-pr.azure.govern-azure-databases-with-microsoft-purview
 metadata:
   title: 'Govern data from Azure databases with Microsoft Purview'
   description: Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and Software-as-a-Service (SaaS) data.
@@ -34,11 +34,11 @@ products:
 - sql-server
 - azure-purview
 units:
-- learn.azure.govern-azure-databases-with-microsoft-purview.introduction
-- learn.azure.govern-azure-databases-with-microsoft-purview.register-scan-azure-sql-data
-- learn.azure.govern-azure-databases-with-microsoft-purview.register-scan-azure-sql-managed-instance-data
-- learn.azure.govern-azure-databases-with-microsoft-purview.govern-manage-azure-sql-data
-- learn.azure.govern-azure-databases-with-microsoft-purview.knowledge-check
-- learn.azure.govern-azure-databases-with-microsoft-purview.summary
+- learn-pr.azure.govern-azure-databases-with-microsoft-purview.introduction
+- learn-pr.azure.govern-azure-databases-with-microsoft-purview.register-scan-azure-sql-data
+- learn-pr.azure.govern-azure-databases-with-microsoft-purview.register-scan-azure-sql-managed-instance-data
+- learn-pr.azure.govern-azure-databases-with-microsoft-purview.govern-manage-azure-sql-data
+- learn-pr.azure.govern-azure-databases-with-microsoft-purview.knowledge-check
+- learn-pr.azure.govern-azure-databases-with-microsoft-purview.summary
 badge:
-  uid: learn.azure.govern-azure-databases-with-microsoft-purview.badge 
+  uid: learn-pr.azure.govern-azure-databases-with-microsoft-purview.badge 
