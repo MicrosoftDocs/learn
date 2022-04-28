@@ -32,6 +32,7 @@ roles:
 - data-analyst
 products:
 - sql-server
+- azure-purview
 units:
 - learn.azure.govern-azure-databases-with-microsoft-purview.introduction
 - learn.azure.govern-azure-databases-with-microsoft-purview.register-scan-azure-sql-data
