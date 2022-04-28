@@ -39,8 +39,8 @@ units:
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.introduction
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.setup
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-setup
-- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.use-database-emulator
-- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-use-database-emulator
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.use-local-database
+- learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-use-local-database
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.create-cosmosdb-resource
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-create-cosmosdb-resource
 - learn.javascript-on-azure.deploy-expressjs-app-service-with-database.add-mongodb-to-app
