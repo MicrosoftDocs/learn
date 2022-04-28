@@ -6,7 +6,7 @@ We talked through identity management, and how identity becomes an integral piec
 
 You saw strategies and features to protect access to your infrastructure. Proper protection ensures that the resources you create are administered by only those who should be administering them.
 
-We talked about how encryption is often the last layer of defense against access to your data. By using encryption, you make your data unreadable to anyone without the decryption keys. You should identify and classify your data. Then you can align with encryption requirements from your business and any regulations that your organization must adhere to.
+We talked about how encryption is often the last layer of defense against access to your data. By using encryption, you make your data unreadable to anyone without the decryption keys. You should identify and classify your data. Then you can align with encryption requirements from your business and any regulations to which your organization must adhere.
 
 Finally, we talked through securing your network. We looked at ways to secure traffic flow between applications and the internet. We described some ways to secure traffic flow among applications. And we wrapped up by looking at how to secure traffic flow between users and an application.
 
