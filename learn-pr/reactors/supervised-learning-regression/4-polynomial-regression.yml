@@ -5,8 +5,8 @@ metadata:
   title: Polynomial regression
   description: Try polynomial regression models.
   ms.date: 05/15/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

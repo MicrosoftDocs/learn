@@ -5,8 +5,8 @@ metadata:
   title: Create and connect to an Azure Machine Learning Studio workspace
   description: Create and connect to an Azure Machine Learning Studio workspace for data science operations.
   ms.date: 06/30/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen
