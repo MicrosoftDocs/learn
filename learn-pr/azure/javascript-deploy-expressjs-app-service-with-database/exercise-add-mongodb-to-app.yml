@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-add-mongodb-to-app
-title: "Exercise - Add Cosmos DB to Express.js app"
+title: "Exercise - Add MongoDB code to app"
 metadata:
   unitType: exercise
-  title: "Exercise - Add Cosmos DB to Express.js app"
+  title: "Exercise - Add MongoDB code to app"
   description: "Create your Cosmos DB API for MongoDB and add the required connection information to your app."
   ms.date: 04/25/2022
   author: diberry

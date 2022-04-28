@@ -1,8 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-use-local-database
+title: Exercise - use local MongoDB database
 metadata:
-  unitType: introduction
-  title: Introduction
+  unitType: exercise
+  title: Exercise - use local MongoDB database
   description: "In this module, ."
   ms.date: 04/25/2022
   author: diberry

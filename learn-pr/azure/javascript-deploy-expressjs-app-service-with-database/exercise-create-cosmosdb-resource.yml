@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-create-cosmosdb-resource
-title: "Exercise - Create an Azure Cosmos DB for MongoDB API resource"
+title: "Exercise - create an Azure Cosmos DB for MongoDB API resource"
 metadata:
   unitType: exercise
-  title: "Exercise - Create an Azure Cosmos DB for MongoDB API resource"
+  title: "Exercise - create an Azure Cosmos DB for MongoDB API resource"
   description: "Create your Azure Cosmos DB for MongoDB API resource and set the connection information in the sample application."
   ms.date: 04/25/2022
   author: diberry

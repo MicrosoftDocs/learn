@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.exercise-view-metrics-and-logs
-title: Introduction
+title: View Cosmos DB metrics and logs
 metadata:
-  unitType: introduction
-  title: Introduction
+  unitType: learning-content
+  title: View Cosmos DB metrics and logs
   description: "In this module, ."
   ms.date: 04/25/2022
   author: diberry
