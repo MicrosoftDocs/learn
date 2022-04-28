@@ -89,9 +89,12 @@ Let's break that down:
 
 ## Code
 
-Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the `weight` is included in the definition of the `Term` objects:
+Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the `weight` is included in the definition of the `Term` objects.
+
+Click **+ Code** to add another new cell and add the following lines:
 
 ```python
+"""
 # Reminder of the relevant parameters
 ## Allowed time (jobs can only be scheduled below this limit)
 T = 10 
@@ -108,6 +111,7 @@ machines_ops_map = {
     0: [0, 1, 4, 5], # Operations 0, 1, 4 and 5 are assigned to machine 0 (the universal multi-tool)
     1: [2, 3]        # Operations 2 & 3 are assigned to machine 1 (the ship computer)
 }
+"""
 
 def no_overlap_constraint(T:int, processing_time:dict, ops_jobs_map:dict, machines_ops_map:dict, weight:float):
     """

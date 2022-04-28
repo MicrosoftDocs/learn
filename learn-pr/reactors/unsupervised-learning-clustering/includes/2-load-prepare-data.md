@@ -101,7 +101,7 @@ The output is:
 > Output
 
 `<matplotlib.collections.PathCollection at 0x1f42612a888>`
-:::image type="content" source="../media/matplotlib-scatter-1.svg" alt-text="Scatter plot output.":::
+:::image type="content" source="../media/matplotlib-scatter-1.svg" alt-text="Screenshot that shows the scatter plot output with a dramatic correlation.":::
 ***
 
 This is a dramatic correlation!
@@ -133,7 +133,7 @@ In the following code cell, run a scatterplot of another correlative pair of fea
 
   `<matplotlib.collections.PathCollection at 0x1f4261a3688>`
 
-  :::image type="content" source="../media/matplotlib-scatter-2.svg" alt-text="Scatter plot output.":::
+  :::image type="content" source="../media/matplotlib-scatter-2.svg" alt-text="Screenshot that shows the scatter plot output with a problematic correlation.":::
   ***
 
 </details>

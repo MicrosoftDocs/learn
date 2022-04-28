@@ -9,6 +9,8 @@ metadata:
   ms.date: 04/20/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
+  ms.custom: team=cloud_advocates
+  ms.contributors: buhollan-09032021
 durationInMinutes: 6
 content: |
   [!include[](includes/2-file-system.md)]

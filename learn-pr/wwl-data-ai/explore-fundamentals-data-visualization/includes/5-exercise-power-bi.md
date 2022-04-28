@@ -3,46 +3,48 @@ Now it's your chance to explore data modeling and visualization with Microsoft P
 > [!NOTE]
 > To complete this exercise, you will need a computer running Microsoft Windows.
 
-## Install Power BI Desktop
+## Install Power BI Desktop (if necessary)
 
-The first thing you'll need to do is to install Microsoft Power BI Desktop. This tool is available as a free download for Microsoft Windows.
+If Microsoft Power BI Desktop is not already installed on your Windows computer, you can download and install it for free.
 
-1. Browse to [https://powerbi.microsoft.com/desktop/](https://powerbi.microsoft.com/desktop?azure-portal=true), and download and install Power BI Desktop on your computer. This may take a few minutes.
-2. When Power BI Desktop has been installed, open it. The application interface should look similar to this:
-
-    ![The Power BI Desktop start screen](../media/power-bi-start.png)
+1. Download the Power BI Desktop installer from [https://aka.ms/power-bi-desktop](https://aka.ms/power-bi-desktop?azure-portal=true).
+2. When the file has downloaded, open it, and use the setup wizard to install Power BI Desktop on your computer. This may take a few minutes.
 
 ## Import data
 
+1. Open Power BI Desktop. The application interface should look similar to this:
+
+    ![The Power BI Desktop start screen](../media/power-bi-start.png)
+
 Now you're ready to import the data for your report.
 
-1. On the Power BI Desktop welcome screen, select **Get data**, and then in the list of data sources, select **Web** and then select **Connect**.
+2. On the Power BI Desktop welcome screen, select **Get data**, and then in the list of data sources, select **Web** and then select **Connect**.
 
     ![Selecting the web data source](../media/web-source.png)
 
-2. In the **From web** dialog box, enter the following URL and then select **OK**:
+3. In the **From web** dialog box, enter the following URL and then select **OK**:
 
     ```
     https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/power-bi/customers.csv
     ```
 
-3. Verify that the URL opens a dataset containing customer data, as shown below. Then select **Load** to load the data into the data model for your report.
+4. Verify that the URL opens a dataset containing customer data, as shown below. Then select **Load** to load the data into the data model for your report.
 
     ![A dataset of customer data](../media/customers.png)
 
-4. In the main Power BI Desktop window, in the **Get data** menu, select **Web**:
+5. In the main Power BI Desktop window, in the **Get data** menu, select **Web**:
 
     ![The Get data menu](../media/get-data.png)
 
-5. In the **From web** dialog box, enter the following URL and then select **OK**:
+6. In the **From web** dialog box, enter the following URL and then select **OK**:
 
     ```
     https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/power-bi/products.csv
     ```
 
-6. Load the product data in this file into the data model.
+7. Load the product data in this file into the data model.
 
-7. Repeat the previous three steps to import a third dataset containing order data from the following URL:
+8. Repeat the previous three steps to import a third dataset containing order data from the following URL:
 
     ```
     https://github.com/MicrosoftLearning/DP-900T00A-Azure-Data-Fundamentals/raw/master/power-bi/orders.csv
@@ -133,3 +135,5 @@ Now you're almost ready to create a report. First you need to check some setting
     ![A map shows revenue by city highlighting data for the selected city](../media/selected-data.png)
 
 13. On the **File** menu, select **Save**. Then save the file with an appropriate .pbix file name. You can open the file and explore data modeling and visualization further at your leisure.
+
+In this exercise, you have used Power BI Desktop to ingest data, create a data model, and use interactive visualizations to create a report. If you have a [Power BI service](https://www.powerbi.com/?azure-portal=true) subscription, you can sign into your account and publish the report to a Power BI workspace. 

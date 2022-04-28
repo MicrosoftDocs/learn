@@ -16,7 +16,7 @@ abstract: |
   - Create a Azure Object Anchors account and fetch the required Object Anchors ID and Key.
   - Convert your 3D model into Azure Object Anchors model.
   - Use the sample app to detect the object in physical world.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-object-anchors-tutorials.svg
 levels:
 - beginner
 roles:

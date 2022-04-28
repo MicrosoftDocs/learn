@@ -26,13 +26,13 @@ You'll configure the following settings for a basic virtual network:
     > Subnet names must begin with a letter or number and end with a letter, number, or underscore. They may contain only letters, numbers, underscores, periods, or hyphens.
 
  -  **Service endpoints** Here, you enable service endpoints. Then you select from the list which Azure service endpoints you want to enable. Options include Azure Cosmos DB, Azure Service Bus, Azure Key Vault, and so on.
- -  **NAT gateway** A NAT gateway is a fully managed and higly resilient Network Address Translation (NAT) service. You can configure a subnet to use a static outbound IP address when accessing the internet. For more information about NAT gateway, see [Azure Virtual Network NAT overview](/azure/virtual-network/nat-gateway/nat-overview.md)
+ -  **NAT gateway** A NAT gateway is a fully managed and highly resilient Network Address Translation (NAT) service. You can configure a subnet to use a static outbound IP address when accessing the internet. For more information about NAT gateway, see [Azure Virtual Network NAT overview](/azure/virtual-network/nat-gateway/nat-overview)
 
 :::image type="content" source="../media/create-virtual-network-security-286df13c.png" alt-text="Screenshot of the Azure portal showing the security page of create virtual network.":::
 
- -  **BastionHost** You can select to enable or disable Azure Bastion in your virtual network. Azure Bastion service provides a secure and seamless RDP/SSH connectivity to your virtual machines directly in the Azure portal over SSL. For more information on Azure Bastion, see [Azure Bastion overview](/azure/bastion/bastion-overview.md).
- -  **DDoS Protection Standard** You can select to enable or disable Standard DDoS protection. The Standard DDoS protection is a premium service. For more information on Standard DDoS protection, see [Azure DDoS protection Standard overview](/azure/virtual-network/ddos-protection-overview.md).
- - **Firewall** You can enable or disable Azure Firewall. Azure Firewall service is managed cloud-based network security service that protects your Azure Virtual Network resources. For more information on Azure Firewall, see [Azure Firewall overview](/azure/firewall/overview.md)
+ -  **BastionHost** You can select to enable or disable Azure Bastion in your virtual network. Azure Bastion service provides a secure and seamless RDP/SSH connectivity to your virtual machines directly in the Azure portal over SSL. For more information on Azure Bastion, see [Azure Bastion overview](/azure/bastion/bastion-overview).
+ -  **DDoS Protection Standard** You can select to enable or disable Standard DDoS protection. The Standard DDoS protection is a premium service. For more information on Standard DDoS protection, see [Azure DDoS protection Standard overview](/azure/virtual-network/ddos-protection-overview).
+ - **Firewall** You can enable or disable Azure Firewall. Azure Firewall service is managed cloud-based network security service that protects your Azure Virtual Network resources. For more information on Azure Firewall, see [Azure Firewall overview](/azure/firewall/overview)
 
 After you've configured these settings, select **Review + Create** and then select **Create** when validation is passed.
 

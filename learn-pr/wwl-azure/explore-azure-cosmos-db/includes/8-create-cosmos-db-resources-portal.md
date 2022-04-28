@@ -58,7 +58,7 @@ Add data to your new database using Data Explorer.
 
     :::image type="content" source="../media/portal-cosmos-new-data.png" alt-text="Create new item in the database.":::
 
-1. Add the following structure to the document on the right side of the **Documents** pane:
+1. Add the following structure to the item on the right side of the **Items** pane:
 
     ```json
     {
@@ -72,7 +72,7 @@ Add data to your new database using Data Explorer.
 
 1. Select **Save**.
 
-1. Select **New Document** again, and create and save another document with a unique `id`, and any other properties and values you want. Your documents can have any structure, because Azure Cosmos DB doesn't impose any schema on your data.
+1. Select **New Item** again, and create and save another item with a unique `id`, and any other properties and values you want. Your items can have any structure, because Azure Cosmos DB doesn't impose any schema on your data.
 
 ## Clean up resources
 

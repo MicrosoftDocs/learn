@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-azure-communication-services
+metadata:
+  moduleType: introduction
+  title: Introduction to Azure Communication Services
+  description: Discover the key products and services that can help you create communication applications on Azure with Communication Services.
+  ms.date: 03/09/2022
+  author: ProbablePrime
+  ms.author: rifox
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure         # Edit as appropriate for your portfolio area
+title: Introduction to Azure Communication Services
+summary: Discover the key products and services that can help you create communication applications on Azure with Communication Services.
+abstract: |
+  By the end of this module, you'll be able to: 
+    - Describe the key products and services within Azure Communication Services.
+    - List some suitable scenarios which Azure Communication Services can help with.
+    - Evaluate if Azure Communication Services is right for you.
+prerequisites: |
+  - You should be familiar with basic computing concepts and terminology.
+  - An understanding of basic communication/telephony concepts such as SMS, calling, chat etc.
+  - An understanding of cloud computing is helpful, but isn't necessary.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - solution-architect
+  - business-analyst
+  - business-owner
+  - administrator
+products:
+  - azure
+  - azure-communication-services
+units:
+  - learn.azure.intro-to-azure-communication-services.introduction
+  - learn.azure.intro-to-azure-communication-services.what-is-it
+  - learn.azure.intro-to-azure-communication-services.how-it-works
+  - learn.azure.intro-to-azure-communication-services.when-to-use-it
+  - learn.azure.intro-to-azure-communication-services.knowledge-check
+  - learn.azure.intro-to-azure-communication-services.summary
+badge:
+  uid: learn.azure.intro-to-azure-communication-services.badge

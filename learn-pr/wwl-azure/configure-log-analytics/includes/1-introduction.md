@@ -19,7 +19,7 @@ Monitor resources by using Azure Monitor
 In this module, you will learn how to:
 
  -  Identify the features and usage cases for Log Analytics.
- -  Create a Log Analytics workspace and configure connected and data sources.
+ -  Create a Log Analytics workspace.
  -  Structure a Log Analytics query and review results.
 
 ## Prerequisites

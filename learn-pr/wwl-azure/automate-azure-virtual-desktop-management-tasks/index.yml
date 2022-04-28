@@ -3,7 +3,7 @@ uid: learn.wwl.automate-azure-virtual-desktop-management-tasks
 metadata:
   title: Automate Azure Virtual Desktop management tasks
   description: "Automate Azure Virtual Desktop management tasks"
-  ms.date: 03/03/2022
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   *  Create an Azure Automation Run As account.
   *  Create the Azure Logic App and execution schedule.
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-automate-azure-virtual-desktop-management-tasks.svg
 levels:
 - intermediate
 roles:

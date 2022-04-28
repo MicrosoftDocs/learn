@@ -3,7 +3,7 @@ uid: learn.wwl.manage-virtualization-containers-hybrid-environment
 metadata:
   title: Manage virtualization and containers in a hybrid environment
   description: Manage virtualization and containers in a hybrid environment
-  ms.date: 11/08/2021
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ prerequisites: |
   - Basic experience with implementing and managing IaaS services in Microsoft Azure
 summary: |
   Learn to implement and manage Windows Server virtual machines (VMs) and container workloads using Windows Server Hyper-V. You’ll learn how to deploy and configure Azure IaaS Virtual Machine workloads.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/manage-virtualization-and-containers-in-a-hybrid-environment.svg
 levels:
 - intermediate
 roles:

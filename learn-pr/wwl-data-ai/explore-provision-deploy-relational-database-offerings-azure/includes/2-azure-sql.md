@@ -13,7 +13,7 @@ Azure SQL is a collective term for a family of Microsoft SQL Server based databa
 | | SQL Server on Azure VMs | Azure SQL Managed Instance | Azure SQL Database |
 | - | - | - | - |
 | |![SQL Server Azure VM logo](../media/azure-sql-vm.png) | ![Azure SQL Managed Instance logo](../media/azure-sql-managed-instance.png) | ![Azure SQL Database logo](../media/azure-sql-database.png) |
-| Type of cloud service | SaaS | PaaS | PaaS |
+| Type of cloud service | IaaS | PaaS | PaaS |
 | SQL Server compatibility | Fully compatible with on-premises physical and virtualized installations. Applications and databases can easily be "lift and shift" migrated without change. | Near-100% compatibility with SQL Server. Most on-premises databases can be migrated with minimal code changes by using the [Azure Database Migration service](/azure/dms?azure-portal=true) | Supports most core database-level capabilities of SQL Server. Some features depended on by an on-premises application may not be available. |
 | Architecture | SQL Server instances are installed in a virtual machine. Each instance can support multiple databases. | Each managed instance can support multiple databases. Additionally, *instance pools* can be used to share resources efficiently across smaller instances. | You can provision a *single database* in a dedicated, managed (logical) server; or you can use an *elastic pool* to share resources across multiple databases and take advantage of on-demand scalability. |
 | Availability | 99.99% | 99.99% | 99.995% |

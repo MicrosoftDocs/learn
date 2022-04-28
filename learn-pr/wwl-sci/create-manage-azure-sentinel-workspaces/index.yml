@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-azure-sentinel-workspaces
 metadata:
   title: Create and manage Microsoft Sentinel workspaces
   description: "Create and manage Microsoft Sentinel workspaces"
-  ms.date: 12/02/2021
+  ms.date: 03/15/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial

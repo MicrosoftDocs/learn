@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.exercise-azure-bastion
+title: Exercise – Troubleshoot connectivity issues with Azure Bastion
+metadata:
+  title: Exercise – Troubleshoot connectivity issues with Azure Bastion
+  description: "Exercise – Troubleshoot connectivity issues with Azure Bastion"
+  ms.date: 04/22/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-exercise-azure-bastion.md)]

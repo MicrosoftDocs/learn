@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-platform-service-issues.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/20/2022
+  author: wwlpublish
+  ms.author: lola
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the best method for troubleshooting Azure Storage?"
+    choices:
+    - content: "Use user feedback to assess what is likely to cause real-world problems."
+      isCorrect: false
+      explanation: "That's incorrect. It's more accurate to use monitoring tools than user feedback."
+    - content: "Reactively troubleshoot to provide accurate data on the problem."
+      isCorrect: false
+      explanation: "That's incorrect. It's better to prevent the problem before it escalates."
+    - content: "Proactively troubleshoot to prevent the escalation of a problem."
+      isCorrect: true
+      explanation: "That's correct. It's better to proactively troubleshoot and prevent a problem from escalating."
+  - content: "How does Azure Private Link connect from a private network to Azure PaaS services?"
+    choices:
+    - content: "Over the Internet."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Private Link doesn't use the public Internet."
+    - content: "Over the Microsoft backbone network."
+      isCorrect: true
+      explanation: "That's correct. Azure Private Link provides a link from a virtual network to the Azure PaaS services over the Microsoft backbone network rather than over the public Internet."
+    - content: "Over a private satellite network."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Private Link isn't a satellite network."
+  - content: "If a new CDN service isn't available, how should this be resolved?"
+    choices:
+    - content: "Ensure that files for compression are less than 10 MB in size."
+      isCorrect: false
+      explanation: "That's incorrect. For Verizon CDN profiles, verify that the file is between 128 bytes and 3 MB."
+    - content: "Wait for 90 minutes for the CDN service to deploy."
+      isCorrect: true
+      explanation: "That's correct. It can take up to 90 minutes for a CDN to deploy."
+    - content: "Delete the CDN and recreate it."
+      isCorrect: false
+      explanation: "That's incorrect. The CDN might have been deployed correctly."
+  - content: "If an application running on a target VM can't be accessed, how can this be resolved?"
+    choices:
+    - content: "Verify that you aren't blocked by NSGs."
+      isCorrect: false
+      explanation: "That's incorrect. NSGs would only filter data on a network."
+    - content: "Check that it's running and listening on the correct TCP and UDP ports."
+      isCorrect: true
+      explanation: "That's correct. Check that it's running and listening on the correct TCP and UDP ports."
+    - content: "Check anything that could be filtering traffic such as a firewall."
+      isCorrect: false
+      explanation: "That's incorrect. A firewall would filter traffic on a network."
+  - content: "If a customer can't configure a particular property on a delegated subnet, what is the most likely reason?"
+    choices:
+    - content: "The deployment model for that Azure service has been defined to not support changes to that property."
+      isCorrect: true
+      explanation: "That's correct. If a customer can't configure a particular property, it's likely that the deployment model for that Azure service has been defined to not support changes to that property."
+    - content: "The customer's virtual network is blocking traffic."
+      isCorrect: false
+      explanation: "That's incorrect. If the customer's virtual network was blocking traffic, they wouldn't be able to change any property."
+    - content: "The customer's subscription doesn't support configuration changes."
+      isCorrect: false
+      explanation: "That's incorrect. A customer's subscription shouldn't affect their ability to configure a delegated subnet."

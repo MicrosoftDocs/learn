@@ -9,7 +9,7 @@ This exercise can be completed using a Microsoft Learn *sandbox*, which provides
 
 ## Create a Cosmos DB account
 
-To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscription. In this exercise, you'll provision a Cosmos DB account that uses the code (SQL) API.
+To use Cosmos DB, you must provision a Cosmos DB account in your Azure subscription. In this exercise, you'll provision a Cosmos DB account that uses the core (SQL) API.
 
 1. In the Azure portal, select **+ Create a resource** at the top left, and search for *Azure Cosmos DB*.  In the results, select **Azure Cosmos DB** and select  **Create**.
 1. In the **Core (SQL) - Recommended** tile, select **Create**.
@@ -63,7 +63,7 @@ WHERE c.age > 40
 5. Use the **Execute Query** button to run the revised query and review the results, which includes JSON containing the id, firstname, and age fields for person items with an age greater than 40.
 6. Close the SQL Query editor, discarding your changes.
 
-    You've seen how to create and query JSON entities in a Cosmos DB database by using the data explorer interface in the Azure portal. In a real scenario, an application developer would use one of the many programming language specific software development kits (SDKs) to call the code (SQL) API and work with data in the database.
+    You've seen how to create and query JSON entities in a Cosmos DB database by using the data explorer interface in the Azure portal. In a real scenario, an application developer would use one of the many programming language specific software development kits (SDKs) to call the core (SQL) API and work with data in the database.
 
 > [!TIP]
 > If you used your own Azure subscription, and you have finished exploring Azure Cosmos DB, you can delete the resource group that you created in this exercise.

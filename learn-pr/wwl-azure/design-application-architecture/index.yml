@@ -3,7 +3,7 @@ uid: learn.wwl.design-application-architecture
 metadata:
   title: Design an application architecture
   description: "Design an application architecture"
-  ms.date: 12/07/2021
+  ms.date: 04/20/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -13,8 +13,8 @@ summary: Azure Architects design and recommend application architectures.
 abstract: |
   In this module, you’ll learn how to:
   *   Describe message and event scenarios.
-  *   Design a  messaging solution.
-  *   Design an event hub messaging solution.
+  *   Design a messaging solution.
+  *   Design an Event Hub messaging solution.
   *   Design an event-driven solution.
   *   Design an automated app deployment solution.
   *   Design API integration.

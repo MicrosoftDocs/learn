@@ -1,9 +1,16 @@
 Organizations that have decided to move to the cloud need to assess their application portfolio to understand the best approach for migrating and modernizing their apps.
 
 
-|  |  |
-| ------------ | -------------|
-|![Icon indicating play video](../media/video-icon.png)|Watch this short video to review the options you can use to update your company’s application portfolio.|
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
+
+:::column:::
+Watch this short video to review the options you can use to update your company’s application portfolio.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWr1XF]
 
@@ -15,10 +22,16 @@ There are several options you can choose, including IaaS (Infrastructure-as-a-Se
 
 An **Application Portfolio Assessment** helps an organization better understand its existing application environment. The assessment focuses on understanding an application’s business value and technical characteristics. These dimensions will help define the modernization technique to be used and the potential business value of the modernization approach.
 
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
 
-|  |  |
-| ------------ | -------------|
-|![Icon indicating play video](../media/video-icon.png)|Watch the video below to learn about how Microsoft assessed our own application portfolio.|
+:::column:::
+Watch the video below to learn about how Microsoft assessed our own application portfolio.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWr1XG]
 
@@ -28,10 +41,16 @@ Just as your current assets were built or acquired over a long period of time, a
 
 ## Case study – Allscripts
 
+:::row:::
+![Icon indicating play video](../media/video-icon.png)
 
-|  |  |
-| ------------ | -------------|
-|![Icon indicating play video](../media/video-icon.png)|Watch this short video to see how Allscripts evaluated their applications and infrastructure and made strategic decisions to modernize.|
+:::column:::
+Watch this short video to see how Allscripts evaluated their applications and infrastructure and made strategic decisions to modernize.
+
+:::column-end:::
+:::row-end:::
+
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NDea]
 

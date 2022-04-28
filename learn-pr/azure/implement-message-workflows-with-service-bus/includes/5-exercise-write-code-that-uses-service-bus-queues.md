@@ -61,7 +61,12 @@ You can get these values from the connection string.
 
    Paste the connection string between the quotation marks.
 
-1. To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes. Find the `SendSalesMessageAsync()` method. Within that method, locate the following line of code:
+2. If you used a name different from **salesmessages** for the queue name, update the value for `QueueName` property in the code.
+
+    ```csharp
+    const string QueueName = "salesmessages";
+    ```
+4. To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes. Find the `SendSalesMessageAsync()` method. Within that method, locate the following line of code:
 
     ```csharp
     // Create a Service Bus client here
@@ -210,7 +215,7 @@ You can get these values from the connection string.
     ```azurecli
     az servicebus queue show \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name salesperformancemessages \
+        --name salesmessages \
         --query messageCount \
         --namespace-name <namespace-name>
     ```
@@ -429,7 +434,6 @@ You can get these values from the connection string.
 
     ```command
     Received: $10,000 order for bicycle parts from retailer Adventure Works.
-    Received: $10,000 order for bicycle parts from retailer Adventure Works.
     ```
 
 1. When you see that the messages have been received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. 
@@ -441,7 +445,7 @@ Run the following code to confirm that all the messages have been removed from t
 ```azurecli
 az servicebus queue show \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name salesperformancemessages \
+    --name salesmessages \
     --query messageCount \
     --namespace-name <namespace-name>
 ```

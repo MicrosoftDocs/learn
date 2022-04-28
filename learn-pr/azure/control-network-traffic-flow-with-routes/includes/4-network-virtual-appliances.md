@@ -8,7 +8,7 @@ A network virtual appliance (NVA) is a virtual appliance that consists of variou
 - IDS/IPS
 - proxies
 
-You can deploy NVAs chosen from providers in Azure Marketplace. Such providers include Check Point, Barracuda, Sophos, WatchGuard, and SonicWall. You can use an NVA to filter traffic inbound to a virtual network, to block malicious requests, and to block requests made from unexpected resources.
+You can deploy NVAs chosen from providers in Azure Marketplace. Such providers include Cisco, Check Point, Barracuda, Sophos, WatchGuard, and SonicWall. You can use an NVA to filter traffic inbound to a virtual network, to block malicious requests, and to block requests made from unexpected resources.
 
 In the retail-organization example scenario, you must work with the security and network teams. You want to implement a secure environment that scrutinizes all incoming traffic and blocks unauthorized traffic from passing on to the internal network. You also want to secure both virtual-machine networking and Azure-services networking as part of your company's network-security strategy.
 
@@ -18,36 +18,26 @@ As part of the network-security strategy, you must control the flow of traffic w
 
 ## Network virtual appliance
 
-Network virtual appliances or NVAs are virtual machines that control the flow of network traffic by controlling routing. You typically use them to manage traffic flowing from a perimeter-network environment to other networks or subnets.
-
-An NVA often includes various protection layers like:
-
-- a firewall
-- a WAN optimizer
-- application-delivery controllers
-- routers
-- load balancers
-- proxies
-- an SD-WAN edge
+Network virtual appliances (NVAs) are virtual machines that control the flow of network traffic by controlling routing. You'll typically use them to manage traffic flowing from a perimeter-network environment to other networks or subnets.
 
 ![Visualization of a network architecture with a network virtual appliance.](../media/4-nva.svg)
 
-You can deploy firewall appliances into a virtual network in different configurations. You can put a firewall appliance in a perimeter-network subnet in the virtual network. Or if you want more control of security, implement a microsegmentation approach.
+You can deploy firewall appliances into a virtual network in different configurations. You can put a firewall appliance in a perimeter-network subnet in the virtual network or if you want more control of security, implement a microsegmentation approach.
 
-With the microsegmentation approach, you can create dedicated subnets for the firewall and then deploy web applications and other services in other subnets. All traffic is routed through the firewall and inspected by the NVAs. You enable forwarding on the virtual-appliance network interfaces to pass traffic that is accepted by the appropriate subnet.
+With the microsegmentation approach, you can create dedicated subnets for the firewall and then deploy web applications and other services in other subnets. All traffic is routed through the firewall and inspected by the NVAs. You'll enable forwarding on the virtual-appliance network interfaces to pass traffic that is accepted by the appropriate subnet.
 
 Microsegmentation lets the firewall inspect all packets at OSI Layer 4 and, for application-aware appliances, Layer 7. When you deploy an NVA to Azure, it acts as a router that forwards requests between subnets on the virtual network.
 
-Some NVAs require multiple network interfaces. One network interface is usually dedicated to the management network for the appliance. Additional network interfaces manage and control the traffic processing. After you’ve deployed the NVA, you can then configure the appliance to route the traffic through the proper interface.
+Some NVAs require multiple network interfaces. One network interface is dedicated to the management network for the appliance. Additional network interfaces manage and control the traffic processing. After you’ve deployed the NVA, you can then configure the appliance to route the traffic through the proper interface.
 
 ### User-defined routes
 
-For most environments, the default system routes already defined by Azure are enough to get the environments up and running. But in certain cases you should create a routing table and add custom routes. Examples include:
+For most environments, the default system routes already defined by Azure are enough to get the environments up and running. In certain cases, you should create a routing table and add custom routes. Examples include:
 
-- Access to the internet via on-premises network using forced tunneling.
-- Using virtual appliances to control traffic flow.
+- Access to the internet via on-premises network using forced tunneling
+- Using virtual appliances to control traffic flow
 
-You can define multiple routing tables in Azure. Each routing table is associated with one or more subnets. But each subnet is associated with only one routing table.
+You can create multiple route tables in Azure. Each route table can be associated with one or more subnets. A subnet can only be associated with one route table.
 
 ## Network virtual appliances in a highly available architecture
 

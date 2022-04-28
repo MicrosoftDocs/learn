@@ -17,7 +17,7 @@ It's intended to help organizations address these four key questions:
 
 Managing users’ identity lifecycle is at the heart of identity governance.
 
-When planning identity lifecycle management for employees, for example, many organizations model the "join, move, and leave" process. Or, when an individual first joins an organization, a new digital identity is created if one isn't already available. When an individual moves between organizational boundaries, more access authorizations may need to be added or removed to their digital identity.  When an individual leaves, access may need to be removed, and the identity might no longer be required, other than for audit purposes.
+When planning identity lifecycle management for employees, for example, many organizations model the "join, move, and leave" process. When an individual first joins an organization, a new digital identity is created if one isn't already available. When an individual moves between organizational boundaries, more access authorizations may need to be added or removed to their digital identity.  When an individual leaves, access may need to be removed, and the identity might no longer be required, other than for audit purposes.
 
 The diagram below shows a simplified version of the identity lifecycle.
 
@@ -27,7 +27,7 @@ For many organizations, this identity lifecycle for employees is tied to the rep
 
 Azure AD Premium offers integration with cloud-based HR systems.  When a new employee is added to an HR system, Azure AD can create a corresponding user account. Similarly, when their properties, such as department or employment status, change in the HR system, synchronization of those updates to Azure AD ensures consistency.
 
-Azure AD Premium also includes Microsoft Identity Manager, which can import records from on-premises HR systems such as SAP HCM, Oracle eBusiness, and Oracle PeopleSoft. For more information, see **Microsoft Identity Manager** in the Learn More section below.
+Azure AD Premium also includes Microsoft Identity Manager, which can import records from on-premises HR systems such as SAP HCM, Oracle eBusiness, and Oracle PeopleSoft. For more information, refer to the Microsoft Identity Manager documentation that is listed in the Learn More section of the Summary and resources unit.
 
 In general, managing the lifecycle of an identity is about updating the access that users need, whether through integration with an HR system, or through the user provisioning applications.
 
@@ -42,4 +42,4 @@ When any attributes of a user or device change, the system evaluates all dynamic
 
 Monitoring privileged access is a key part of identity governance. When employees, vendors, and contractors are assigned administrative rights, there should be a governance process because of the potential for misuse.
 
-Azure AD Privileged Identity Management (PIM), provides extra controls tailored to securing access rights. PIM helps you minimize the number of people who have access to resources across Azure AD, Azure, and other Microsoft online services. PIM provides a comprehensive set of governance controls to help secure your company's resources.  PIM is a feature of Azure AD Premium P2.
+Azure AD Privileged Identity Management (PIM) provides extra controls tailored to securing access rights. PIM helps you minimize the number of people who have access to resources across Azure AD, Azure, and other Microsoft online services. PIM provides a comprehensive set of governance controls to help secure your company's resources.  PIM is a feature of Azure AD Premium P2.

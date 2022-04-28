@@ -2,7 +2,7 @@ Now that you've added classes and data to your rock, paper, scissors game, it's 
 
 ## Implement behavior
 
-You've been taught that to build a program in object-oriented programming (OOP) style, you model first and then you code. The modeling produced the output of a table that represented what objects, data, and behavior your program seems to consist of. Here's that same table again.
+You've been taught that to build a program in object-oriented programming (OOP) style, first you model, then you code. The modeling produced the output of a table representing what objects, data, and behavior your program seems to consist of. Here's that same table again.
 
 |Phase     | Actor             |Behavior                                 | Data                                            |
 |----------|-------------------|-----------------------------------------|-------------------------------------------------|
@@ -12,11 +12,11 @@ You've been taught that to build a program in object-oriented programming (OOP) 
 |Processing| Game              | Check continue answer                   | Answer is true, continue, else quit             |
 |Output    | Game              | New game round or game end credit       |                                                 |
 
-This time you'll focus on the column `Behavior` and populate the column with methods that will be added to your classes. Additionally, you'll add code to those methods so they work the way they should.
+This time, you'll focus on the `Behavior` column and populate it with methods that will be added to your classes. Additionally, you'll add code to those methods so they work the way they should.
 
 Here's your code so far. Let's extend it in the following steps:
 
-1. You should have a file `rock-paper-scissor.py`, if not, then take the following steps:
+1. You should have a file `rock-paper-scissor.py`. If not, then take the following steps:
 1. Create the file `rock-paper-scissor` and open the editor:
 
    ```bash
@@ -24,7 +24,7 @@ Here's your code so far. Let's extend it in the following steps:
    code .
    ```
 
-   and add below code:
+   and add the below code:
 
    ```python
    class Participant:
@@ -45,7 +45,7 @@ Here's your code so far. Let's extend it in the following steps:
 
 The first part of the game involves setting it up, which means to instantiate the game itself and take the game to a point where it's waiting for the participants to act.
 
-1. Replace the content of `rock-paper-scissors.py` with this code:
+1. Replace the content of `rock-paper-scissor.py` with this code and save the file:
 
     ```python
     class Participant:
@@ -83,7 +83,7 @@ The first part of the game involves setting it up, which means to instantiate th
     game.start()
     ```
 
-    You've added the methods from your table to each object. The changes you've made can be expressed by a table so that it's easier to see what behavior led to what method being added.
+    You've added the methods from your table to each object. The changes you've made can be expressed by a table so it's easier to see what behavior led to what method being added.
 
     |Behavior              |Method              | Actor       |
     |----------------------|--------------------|-------------|
@@ -93,12 +93,12 @@ The first part of the game involves setting it up, which means to instantiate th
     |Check continue answer | checkEndCondition()| Game        |
     |Game end credit       | determineWinner()  | Game        |
 
-    Most of the behavior in the preceding table corresponds to methods with similar names. The exception is _Game end credit_, which becomes `determineWinner()`. The reason is that as part of ending a game, it's nice if you can check who won and print out that information. It's up to you if you want to name this method something else.
+    Most of the behavior in the preceding table corresponds to methods with similar names. The exception is *Game end credit*, which becomes `determineWinner()`. The reason is that as part of ending a game, it's nice if you can check who won and print out that information. It's up to you if you want to name this method something else.
 
 1. Run the code by invoking `python3`:
 
    ```bash
-   python3 rock-paper-scissors.py
+   python3 rock-paper-scissor.py
    ```
 
    The program produces an output like so:
@@ -121,7 +121,7 @@ The first part of the game involves setting it up, which means to instantiate th
    ```
 
 > [!NOTE]
-> The solution for this exercise can be found at [Start a game - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-0.py?azure-portal=true).
+> You can find the solution for this exercise at [Start a game - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-0.py?azure-portal=true).
 
 ### Implement rules
 
@@ -160,7 +160,7 @@ rules = [
 rules[0][1] # Rock vs Paper = -1, Paper wins over Rock
 ```
 
-1. Locate the `Participant` class and the method `toNumericalChoice()`:
+1. Locate the `Participant` class and add the method `toNumericalChoice()`:
 
    ```python
    def toNumericalChoice(self):
@@ -216,7 +216,7 @@ rules[0][1] # Rock vs Paper = -1, Paper wins over Rock
    The preceding code introduces the field `rules`, which contains an implementation of the rules for rock, paper, scissors. Additionally, the call to `self.compareChoices()` _compares_ the two choices made. Lastly, there's a row that prints reader-friendly results to the screen.
 
 > [!NOTE]
-> The solution for this exercise can be found at [Implement rules - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-1.py?azure-portal=true).
+> You can find the solution for this exercise at [Implement rules - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-1.py?azure-portal=true).
 
 ### Score the game
 
@@ -230,7 +230,7 @@ Scoring the game is about assigning points to the correct player after play has 
    ```
 
    > [!TIP]
-   > Introducing a method to change an attribute is the first step toward encapsulation. If you want, try changing the `points` field to `__points__` to _hide_ the member from the outside to practice encapsulation.
+   > Introducing a method to change an attribute is the first step toward encapsulation. If you want, try changing the `points` field to `__points__` to *hide* the member from the outside to practice encapsulation.
 
 1. Locate the `GameRound` class, and add the following code to the end of the `__init()__` method:
 
@@ -242,7 +242,7 @@ Scoring the game is about assigning points to the correct player after play has 
    ```
 
 > [!NOTE]
-> The solution for this exercise can be found at [Score game - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-2.py?azure-portal=true).
+> You can find the solution for this exercise at [Score game - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-2.py?azure-portal=true).
 
 ### Add a continuation query
 
@@ -283,10 +283,12 @@ A continuation query is a question at the end of the game round asking the playe
        self.checkEndCondition()
    ```
 
-1. Run the command `python3 rock-paper-scissors.py` to test out your program:
+1. Save the file.
+
+1. Run the command `python3 rock-paper-scissor.py` to test out your program:
 
    ```bash
-   python3 rock-paper-scissors.py
+   python3 rock-paper-scissor.py
    ```
 
    Select `rock` and `paper` as inputs, and enter `n` when you're asked to continue.
@@ -305,6 +307,6 @@ A continuation query is a question at the end of the game round asking the playe
    ```
 
 > [!NOTE]
-> The solution for this exercise can be found at [Continuation query - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-3.py?azure-portal=true).
+> You can find the solution for this exercise at [Continuation query - solution code](https://github.com/MicrosoftDocs/mslearn-python-oo/blob/main/rock-paper-scissor-3.py?azure-portal=true).
 
 Congratulations, you did it! You've implemented an OOP version of the game rock, paper, scissors.

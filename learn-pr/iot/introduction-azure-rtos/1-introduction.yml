@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.introduction-azure-rtos.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to Azure RTOS.
+  ms.date: 01/27/2022
+  author: EdLamie
+  ms.author: liydu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -28,9 +28,9 @@ With your list of services captured, you can use the [Azure Pricing Calculator](
 
 As part of your cost estimation, it's also important to understand the subscription and billing models that are available on Azure. Two of the most common models are *pay-as-you-go* and *enterprise agreement*:
 
-- Pay-as-you-go subscriptions give you the flexibility to purchase and use the services you need, with the advantage of having no up-front commitments.
+- *Pay-as-you-go* subscriptions give you the flexibility to purchase and use the services you need, with the advantage of having no up-front commitments.
 
-- Enterprise agreements enable organizations to take advantage of discounts through up-front commitments. These agreements enable organizations to centralize their Azure costs and billing. They can include other Microsoft services such as Microsoft 365.
+- *Enterprise agreements* let organizations take advantage of discounts through up-front commitments. These agreements allow organizations to centralize their Azure costs and billing. They can include other Microsoft services, such as Microsoft 365.
 
 There are additional billing models. Each gives you access to the full suite of Azure services with the flexibility to purchase only what you need, when you need it.
 
@@ -42,11 +42,11 @@ Evolving your architecture can reduce resources costs, such as moving from virtu
 
 It's also important to set up an organizational framework to enable the control, reporting, and attribution of costs throughout your environment.
 
-Use Azure Policy to create limitations for the size or tier of resources that can be provisioned. For example, you can prevent users from creating virtual machines from the G or M series, which have higher costs. If a need arises for VMs of those sizes, requests for those VMs can flow through an exception process, where individual scenarios can be reviewed and approved on a case-by-case basis. These types of policies will prevent your organization from facing unexpected large bills from your users creating resources that are larger than your projects need.
+Use Azure Policy to create limitations for the size or tier of resources that can be provisioned. For example, you can prevent users from creating virtual machines from the G or M series, which have higher costs. If a need arises for VMs of those sizes, you can flow requests for those VMs through an exception process, where individual scenarios can be reviewed and approved on a case-by-case basis. These types of policies will prevent your organization from facing unexpected large bills from your users creating resources that are larger than your projects need.
 
-Enable your users to view reports and billing as needed by creating roles that allow them to view services such as Azure Cost Management. Enabling your users to view costs will help them see the impact of their business decisions. It also provides for transparency across the organization with respect to cloud resource costs.
+Let your users view reports and billing as needed by creating roles that allow them to view services such as Azure Cost Management. Allowing your users to view costs will help them see the impact of their business decisions. It also provides for transparency across the organization with respect to cloud resource costs.
 
-Organize your resources into resource groups or subscriptions. They can serve as boundaries for projects, business units, or services. You can also use Azure Policy to enforce the tagging of resources. Subscriptions, resource groups, and tags are exposed in billing reports. These reports will enable you to account for the usage of resources by product, business unit, or project.
+Organize your resources into resource groups or subscriptions. They can serve as boundaries for projects, business units, or services. You can also use Azure Policy to enforce the tagging of resources. Subscriptions, resource groups, and tags are exposed in billing reports. These reports will allow you to account for the usage of resources by product, business unit, or project.
 
 ## Budget for education
 

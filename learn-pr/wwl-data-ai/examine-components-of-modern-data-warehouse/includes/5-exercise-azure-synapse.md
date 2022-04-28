@@ -51,7 +51,7 @@ To use Azure Synapse Analytics, you must provision an Azure Synapse Analytics Wo
 
 One of the key tasks you can perform with Azure Synapse Analytics is to define *pipelines* that transfer (and if necessary, transform) data from a wide range of sources into your workspace for analysis.
 
-1. In Synapse Studio, on the **Home** page, select **Ingest** to open the **Copy Data** tool
+1. In Synapse Studio, on the **Home** page, select **Ingest** and then choose **Built-in copy task** to open the **Copy Data tool** tool.
 2. In the Copy Data tool, on the **Properties** step, ensure that **Built-in copy task** and **Run once now** are selected, and click **Next >**.
 3. On the **Source** step, in the **Dataset** substep, select the following settings:
     - **Source type**: HTTP
@@ -146,7 +146,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
     | 772 | Mountain-100 Silver, 42 | Mountain Bikes | 3399.9900 |
     | ... | ... | ... | ... |
 
-5. Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROWS = TRUE parameters to the OPENROWSET function as shown here, and then rerun the query:
+5. Note the results consist of four columns named C1, C2, C3, and C4; and that the first row in the results contains the names of the data fields. To fix this problem, add a HEADER_ROW = TRUE parameters to the OPENROWSET function as shown here (replacing *datalakexx* and *fsxx* with the names of your data lake storage account and file system), and then rerun the query:
 
     ```SQL
     SELECT
@@ -240,6 +240,9 @@ While SQL is a common language for querying structured datasets, many data analy
     ```
 
 7.  Use the **&#9655;** icon to the left of the code cell to run it, and wait for the results. The first time you run a cell in a notebook, the Spark pool is started - so it may take a minute or so to return any results.
+> [!NOTE]
+> If an error occurs because the Python Kernel isn't available yet, run the cell again.
+
 8. Eventually, the results should appear below the cell, and they should be similar to this:
 
     | _c0_ | _c1_ | _c2_ | _c3_ |

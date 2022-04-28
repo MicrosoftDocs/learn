@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Review concepts around using Azure Communication Services to send an SMS message
   ms.date: 03/03/2021
-  author: mikben
-  ms.author: mikben
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

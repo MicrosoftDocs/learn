@@ -10,13 +10,16 @@ To test the capabilities of the Custom Vision service to detect objects in image
 
 You can use the Custom Vision service by creating either a **Custom Vision** resource or a **Cognitive Services** resource.
 
-If you haven't already done so, create a **Cognitive Services** resource in your Azure subscription.
+>[!NOTE]
+>Not every resource is available in every region. Whether you create a Custom Vision or Cognitive Services resource, only resources created in [certain regions](https://azure.microsoft.com/global-infrastructure/services/?products=cognitive-services) can be used to access Custom Vision services. For simplicity, a region is pre-selected for you in the configuration instructions below.   
+
+Create a **Cognitive Services** resource in your Azure subscription.
 
 1. In another browser tab, open the Azure portal at [https://portal.azure.com](https://portal.azure.com?azure-portal=true), signing in with your Microsoft account.
 2. Click the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
     - **Subscription**: *Your Azure subscription*.
     - **Resource group**: *Select or create a resource group with a unique name*.
-    - **Region**: *Choose any available region*:
+    - **Region**: East US
     - **Name**: *Enter a unique name*.
     - **Pricing tier**: S0
     - **I confirm I have read and understood the notices**: Selected.
@@ -100,7 +103,7 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
     ![Create storage by clicking confirm.](../media/powershell-portal-guide-2.png)       
 
-4. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
+4. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
     
     ![How to find the left hand drop down menu to switch to PowerShell](../media/powershell-portal-guide-3.png) 
 
@@ -117,6 +120,9 @@ Now that you have a custom model, you can run a simple client application that u
     ```
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
+   
+    >[!NOTE] 
+    >If you already used this command in another lab to clone the *ai-900* repository, you can skip this step.
 
 2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 

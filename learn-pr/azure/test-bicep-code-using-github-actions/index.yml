@@ -23,7 +23,7 @@ prerequisites: |
 
   - Bicep, including creating and deploying basic files.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-  - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
+  - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
   - Basic workflows in GitHub Actions, including secrets.
   
   To work through the exercises in the module, you'll need:

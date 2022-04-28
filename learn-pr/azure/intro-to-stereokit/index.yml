@@ -18,7 +18,7 @@ abstract: |
   - Basic understanding of coding, 3D model, hand stimulation, and UI button in StereoKit Ink application.
   - Learn fundamentals of drawing and interacting with Mixed Reality content.
   - Understand developing the mixed reality application with StereoKit working across OpenXR platforms like HoloLens 2, and Windows PC.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/intro-to-stereokit.svg
 levels:
 - beginner
 roles:
