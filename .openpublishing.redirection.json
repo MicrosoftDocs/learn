@@ -12860,6 +12860,11 @@
       "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/10-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-performance-based-design/5-describe-data-compression.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-performance-based-design/",
+      "redirect_document_id": false
     }
   ]
 }
