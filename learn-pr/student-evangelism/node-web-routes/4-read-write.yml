@@ -5,7 +5,7 @@ metadata:
   title: Read and write
   description: This unit explains how to configure Express differently depending on the format of the incoming data.
   author: clarkio
-  ms.author: brcl
+  ms.author: chnoring
   ms.date: 07/12/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

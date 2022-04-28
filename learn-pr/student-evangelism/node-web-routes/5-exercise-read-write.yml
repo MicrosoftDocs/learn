@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Read and write
   description: Exercise in how to configure routes for your API by using HTTP verbs.
   author: clarkio
-  ms.author: brcl
+  ms.author: chnoring
   ms.date: 07/12/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
