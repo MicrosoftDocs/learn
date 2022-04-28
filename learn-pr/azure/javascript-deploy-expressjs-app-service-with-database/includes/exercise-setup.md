@@ -25,6 +25,11 @@ In this exercise, you'll create your App Service and Application Insights resour
     npm install
     ```
 
+1. Close Visual Studio Code then reopen to the **3-Add-cosmosdb-mongodb** folder. Keep Visual Studio open at this level. 
+
+> [!Note]
+> All files used in this module is in the **3-Add-cosmosdb-mongodb** folder of the sample repo. 
+
 ## Sign in to the Learn sandbox
 
 Select the **Sign in to activate sandbox** button to sign in. This step might include reviewing permissions. When you see **Sandbox activated!** with a time remaining on this page, this step is complete.
@@ -57,7 +62,9 @@ In Visual Studio Code, install the following extensions:
 * [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
 * [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) - used to provide your local computer with a database in a container
 
-## Create setup.sh bash script
+## Create App Service and other web resources
+
+Create your web app resources. The database resource creation is handled in a later unit. 
 
 1. Copy this [setup.sh](https://raw.githubusercontent.com/Azure-Samples/msdocs-javascript-nodejs-server/main/3-Add-cosmosdb-mongodb/setup-in-sandbox.sh) script from the GitHub sample repository into your local computer's clipboard. 
 1. In the Learn sandbox terminal, open a new file with the nano editor:
@@ -75,7 +82,13 @@ In Visual Studio Code, install the following extensions:
     bash setup.sh
     ```
 
-## View the resource in Visual Studio Code
+1. Optionally, list the resources you just created by running the following Azure CLI command in the Learn sandbox terminal. 
+
+    ```azurecli
+    az resource list --query [].type --output tsv | uniq
+    ```     
+
+## View the resources in Visual Studio Code
 
 1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
 1. In the **App Service** section, right-click the sandbox subscription name. 

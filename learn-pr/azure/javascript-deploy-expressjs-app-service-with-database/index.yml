@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   - GitHub user account
   - Visual Studio Code
-  - Docker
+  - Docker for local MongoDB dev container - macOS/Linux users
   - JavaScript Express.js web development experience
   - Conceptual understanding of cloud development and deployment
 iconUrl: /learn/achievements/generic-badge.svg

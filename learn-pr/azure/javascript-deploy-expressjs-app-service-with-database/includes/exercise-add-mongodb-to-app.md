@@ -12,3 +12,5 @@ Add Cosmos DB connection information to your local sample application.
     * MONGODB_URI_COLLECTION_NAME
 
 1. Right-click on the `.env.sample` file and choose **Rename**. Enter the name `.env`. 
+ 
+## Check your work

@@ -35,3 +35,5 @@ This sample app provides JSON data to seed the collection.
 1. Right-click and select **Import Document into a Collection**. 
 1. From your local computer, within your cloned version of the sample app, select the `./3-Add-cosmosdb-mongodb/data/fake-rentals.json` file.
 1. Expand the collection to see the imported rental properties. 
+
+## Check your work
