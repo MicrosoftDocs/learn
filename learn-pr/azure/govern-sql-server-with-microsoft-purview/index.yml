@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.govern-sql-server-with-microsoft-purview
+uid: learn-pr.azure.govern-sql-server-with-microsoft-purview
 metadata:
   title: 'Govern Microsoft SQL Server anywhere by using Microsoft Purview'
   description: Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and Software-as-a-Service (SaaS) data.
@@ -35,11 +35,11 @@ products:
 - sql-server
 - azure-purview
 units:
-- learn.azure.govern-sql-server-with-microsoft-purview.introduction
-- learn.azure.govern-sql-server-with-microsoft-purview.discover-govern-data-different-sources-using-microsoft-purview
-- learn.azure.govern-sql-server-with-microsoft-purview.govern-manage-data-sql-server
-- learn.azure.govern-sql-server-with-microsoft-purview.govern-manage-data-from-amazon-relational-database-service
-- learn.azure.govern-sql-server-with-microsoft-purview.knowledge-check
-- learn.azure.govern-sql-server-with-microsoft-purview.summary
+- learn-pr.azure.govern-sql-server-with-microsoft-purview.introduction
+- learn-pr.azure.govern-sql-server-with-microsoft-purview.discover-govern-data-different-sources-using-microsoft-purview
+- learn-pr.azure.govern-sql-server-with-microsoft-purview.govern-manage-data-sql-server
+- learn-pr.azure.govern-sql-server-with-microsoft-purview.govern-manage-data-from-amazon-relational-database-service
+- learn-pr.azure.govern-sql-server-with-microsoft-purview.knowledge-check
+- learn-pr.azure.govern-sql-server-with-microsoft-purview.summary
 badge:
-  uid: learn.azure.govern-sql-server-with-microsoft-purview.badge 
+  uid: learn-pr.azure.govern-sql-server-with-microsoft-purview.badge 
