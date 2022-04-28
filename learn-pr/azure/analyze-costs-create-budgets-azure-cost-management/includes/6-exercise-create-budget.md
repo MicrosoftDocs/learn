@@ -6,7 +6,7 @@ Now that you have learned how to create a budget, it's time to create your first
 
 To start, sign in to the Azure portal using the following step.
 
-- Sign in to the [Azure portal](https://portal.azure.com) and enter your credentials.
+- Enter your credentials and sign in to the [Azure portal](https://portal.azure.com).
 
 ## Navigate to Budgets
 
@@ -28,13 +28,13 @@ Next, create a budget.
 
 1. From the Filter dropdown list, select **ResourceId**.
 
-1. Select the selection list, and then select your most expensive resource that you identified in the pervious exercise. A suggested budget appears. The budget is associated with your selection.
+1. In the selection dropdown list, select your most expensive resource that you identified in the pervious exercise. A suggested budget appears. The budget is associated with your selection.
 
 1. Name your budget, (for example, *MyFirstBudget*).
 
 1. Set the **Reset period** to **Monthly**.
 
-1. Examine the **Budget amount** recommendation based on your filter. Then, analyze the **View of monthly cost data** graph to determine if the threshold meets your needs.
+1. Examine the **Budget Amount** recommendation based on your filter. Then, analyze the **View of monthly cost data** graph to determine if the threshold meets your needs.
 
 1. Optionally, change the budget amount to any value that you like.
 

@@ -4,9 +4,9 @@ In this example scenario, you're a manager in your organization. Your team has b
 
 In this module, you'll:
 
-- Set up your organization for success when using Cost Management.
-- Analyze costs for a subscription using Cost Analysis and find your most expensive Azure resources.
-- Based on your analysis, create your first Azure budget to keep costs under control.
+- Set up your organization for success when using Cost Management
+- Analyze costs for a subscription using Cost Analysis and find your most expensive Azure resources
+- Based on your analysis, create your first Azure budget to keep costs under control
 
 ## Prerequisites
 
