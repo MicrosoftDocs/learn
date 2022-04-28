@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.govern-azure-databases-with-microsoft-purview.5-knowledge-check
+uid: learn.govern-azure-databases-with-microsoft-purview.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
   unitType: knowledge_check
@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-knowledge-check.md)]
+  [!include[](includes/knowledge-check.md)]
 quiz:
   questions:
   - content: "To register and scan a data source hosted in an Azure SQL database, it's necessary to connect to the Azure SQL Database during the initial configuration. Which one of the following settings is necessary so the Azure SQL Database can be registered in Microsoft Purview?"
