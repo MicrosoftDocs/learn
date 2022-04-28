@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-databases-for-optimal-performance.exercise
+title: 'Exercise: Detect and correct fragmentation issues'
+metadata:
+  title: 'Exercise: Detect and correct fragmentation issues'
+  description: "Exercise: Detect and correct fragmentation issues"
+  ms.date: 04/28/2022
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 119402
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-detect-correct-fragmentation-issues.md)]

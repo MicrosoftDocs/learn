@@ -296,6 +296,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/6-using-storage-analytics-logging.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/gather-metrics-blob-storage/6-use-azure-resource-logs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/gather-metrics-blob-storage/7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/gather-metrics-blob-storage/7-exercise-collect-and-analyze-azure-monitor-logs-for-storage",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/7-exercise-manage-vm.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure/8-summary",
       "redirect_document_id": false
@@ -11344,7 +11354,7 @@
       "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/4-customize-identity.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/secure-aspnet-core-identity/",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "learn-pr/aspnetcore/secure-aspnet-core-identity/5-multi-factor-authentication.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/secure-aspnet-core-identity/",
@@ -11726,42 +11736,71 @@
       "redirect_document_id": false
     },
     {
-       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/4-transforms.md",
-       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
-       "redirect_document_id": false
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/4-transforms.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+      "redirect_document_id": false
     },
     {
-       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/5-model.md",
-       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
-       "redirect_document_id": false
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/5-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+      "redirect_document_id": false
     },
     {
-       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/6-autograd.md",
-       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
-       "redirect_document_id": false
-    },
-     {
-       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/7-optimization.md",
-       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
-       "redirect_document_id": false
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/6-autograd.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+      "redirect_document_id": false
     },
     {
-       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/8-inference.md",
-       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
-       "redirect_document_id": false
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/7-optimization.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+      "redirect_document_id": false
     },
     {
-       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/9-quickstart.md",
-       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
-       "redirect_document_id": false
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/8-inference.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+      "redirect_document_id": false
     },
     {
-       "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/10-summary.md",
-       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
-       "redirect_document_id": false
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/9-quickstart.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+      "redirect_document_id": false
     },
     {
-
+      "source_path": "learn-pr/pytorch/intro-machine-learning-pytorch/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-machine-learning-pytorch",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/3-embeddings.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/4-recurrent-networks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/5-generative-networks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/6-attention-transformers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/pytorch/intro-natural-language-processing-pytorch/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/examine-components-of-modern-data-warehouse/4-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/examine-components-of-modern-data-warehouse/6-knowledge-check",
       "redirect_document_id": true
@@ -12749,6 +12788,216 @@
     {
       "source_path": "learn-pr/wwl-data-ai/evaluate-strategies-for-migrating-sql-databases-to-azure/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/evaluate-strategies-for-migrating-to-azure-sql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-database-authentication-authorization/6-explain-execute-user.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-database-authentication-authorization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-database-authentication-authorization/8-exercise-authorize-access-sql-database-azure-active-directory.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-database-authentication-authorization/7-exercise-authorize-access-sql-database-azure-active-directory",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-database-authentication-authorization/7-explain-policy-least-privilege.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-database-authentication-authorization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-database-authentication-authorization/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-database-authentication-authorization/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-database-authentication-authorization/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-database-authentication-authorization/9-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/4-describe-azure-purview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/describe-resource-governance-capabilities-azure/4-describe-microsoft-purview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/2-describe-role-firewalls.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/3-explain-encryption.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/4-describe-role-azure-key-vault-transparent-data-encryption.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/5-explain-object-encryption-secure-enclaves.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/4-explain-object-encryption-secure-enclaves",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/6-explain-dynamic-data-masking.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/6a-exercise-configure-azure-sql-database-firewall.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/8-exercise-configure-azure-sql-database-firewall",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/10-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-performance-based-design/5-describe-data-compression.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-performance-based-design/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-iaas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/2-explain-iaas-options-deploying-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-iaas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/3-describe-azure-platform-availability.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-iaas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/4-explain-high-availability-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-iaas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/5-explain-disaster-recovery-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-iaas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/6-provision-azure-virtual-machines.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-iaas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/6a-exercise-provision-sql-server-azure-virtual-machine.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-iaas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-iaas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-iaas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-sql-server-virtual-machine/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-iaas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-sql-database/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-paas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-sql-database/2-explain-paas-options-deploy-sql-server-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-paas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-sql-database/3-deploy-single.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-paas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-sql-database/4-deploy-elastic-pool.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-paas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-sql-database/5-deploy-sql-managed-instance.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-paas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-sql-database/6-exercise-deploy-azure-sql-database.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-paas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-sql-database/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-paas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-sql-database/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-paas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-azure-sql-database/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-paas-solutions-with-azure-sql/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-related-maintenance-tasks-sql-server/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-related-maintenance-tasks-sql-server/2-maintain-indexes.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-related-maintenance-tasks-sql-server/3-maintain-statistics.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-related-maintenance-tasks-sql-server/4-describe-automatic-tuning.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-related-maintenance-tasks-sql-server/5-exercise-detect-correct-fragmentation-issues.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-related-maintenance-tasks-sql-server/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-related-maintenance-tasks-sql-server/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-performance-related-maintenance-tasks-sql-server/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
       "redirect_document_id": false
     }
   ]
