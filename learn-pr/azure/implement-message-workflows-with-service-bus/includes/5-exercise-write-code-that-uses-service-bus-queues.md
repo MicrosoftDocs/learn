@@ -61,7 +61,12 @@ You can get these values from the connection string.
 
    Paste the connection string between the quotation marks.
 
-1. To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes. Find the `SendSalesMessageAsync()` method. Within that method, locate the following line of code:
+2. If you used a name different from **salesmessages** for the queue name, update the value for `QueueName` property in the code.
+
+    ```csharp
+    const string QueueName = "salesmessages";
+    ```
+4. To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes. Find the `SendSalesMessageAsync()` method. Within that method, locate the following line of code:
 
     ```csharp
     // Create a Service Bus client here
