@@ -39,7 +39,7 @@ Azure AD Connect can integrate your on-premises directories with Azure Active Di
 
 It's a single tool to provide an easy deployment experience for synchronization and sign-in.
 
-![Illustration showing Azure AD Connect being used to synchronize on-premises directories with Azure Active Directory and apps for single sign-on.](../media/3-azure-ad-connect.png)
+![Illustration showing Azure A D Connect being used to synchronize on-premises directories with Azure Active Directory and apps for single sign-on.](../media/3-azure-ad-connect.png)
 
 Your organization requires that authentication occurs primarily against on-premises domain controllers, but it also requires cloud authentication in a disaster recovery scenario. It doesn't have any requirements that Azure AD doesn't already support.
 
