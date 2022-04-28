@@ -1,19 +1,19 @@
 Many data scientists prefer working with Python or R to define machine learning workloads. You can have Jupyter notebooks or scripts to prepare data or train a model. 
 
-Working on any code assets you have, becomes easier when you use source control. **Source control** is the practice of *managing code and tracking any chances* your team makes to the code.
+Working on any code assets becomes easier when you use source control. **Source control** is the practice of *managing code and tracking any chances* your team makes to the code.
 
 If you work with DevOps tools like **Azure DevOps** or **GitHub**, the code is stored in a so-called **repository** or **repo**. 
 
 ## Repository
 
-When setting up the MLOps framework, a machine learning engineer is likely to create the repository. Whether you choose to use Azure Repos in Azure DevOps or GitHub repos, either uses **Git repositories** to store your code. 
+When setting up the MLOps framework, a machine learning engineer is likely to create the repository. Whether you choose to use Azure Repos in Azure DevOps or GitHub repos, both use **Git repositories** to store your code. 
 
 There are generally two ways to scope the repo:
 
 - **Monorepo**: Keep all machine learning workloads within the same repo.
 - **Multiple repos**: Create a separate repo for each new machine learning project.
 
-Which approach your team prefers depends on who should get access to what assets. If you want to ensure quick access to all code assets, monorepos may suit your team's requirements better. If you want to only give people access to a project if they're actively working on it, your team may prefer to work with multiple repos. Keep in mind that managing access control can create more overhead.
+Which approach your team prefers depends on who should get access to which assets. If you want to ensure quick access to all code assets, monorepos may suit your team's requirements better. If you want to only give people access to a project if they're actively working on it, your team may prefer to work with multiple repos. Keep in mind that managing access control can create more overhead.
 
 ### Structure your repo
 
@@ -27,12 +27,12 @@ Whatever approach you take, it's best practice to agree on the standard top-leve
 - `tests`: contains unit and integration tests used to detect bugs and issues in your code.
 - `notebooks`: contains Jupyter notebooks, mostly used for experimentation.
 
-> [!Note]
+> [!NOTE]
 > Training data should **not** be included in your repo. The data should be stored in a database or data lake. Azure Machine Learning can have direct access to a database or data lake by storing the connection information as a [datastore](/azure/machine-learning/how-to-access-data).
 
 By having a standard structure that each project uses, data scientists and other collaborators will find it easier to find the code they need to work on.
 
-> [!Tip]
+> [!TIP]
 > Find more [best practices for structuring data science projects](/azure/cloud-adoption-framework/scenarios/data-management/best-practices/data-science-best-practices).
 
 To learn how to work with repos as a data scientist, you'll learn about **trunk-based development**.

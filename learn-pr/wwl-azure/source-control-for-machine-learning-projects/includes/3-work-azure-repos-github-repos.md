@@ -12,7 +12,7 @@ To plan and organize the work you need to do as a data scientist, you can use **
 
 Azure Boards organizes agile planning by work item tracking, visualization, and reporting. You can customize many things to make it fit your project planning. 
 
-> [!Tip]
+> [!TIP]
 > If you want to explore how to set up and customize Azure Boards, you can learn more about using [Azure Boards for agile workloads](/learn/modules/choose-an-agile-approach/), or [review the Azure Boards documentation](/azure/devops/boards/get-started/what-is-azure-boards). 
 
 Most importantly for a data scientist, you'll get a work item assigned to you to inform you on what you need to do to contribute to the machine learning project. To organize your work, *you'll link a work item to a new branch*.
@@ -33,7 +33,7 @@ By selecting the work item, you can also view the details.
 
 In the **Development** control pane, you can select **create a branch** to create a new branch in the repo, which will automatically be linked to your work item. Once created, you'll be redirected to the new branch where you can view all assets stored in your repository. 
 
-![Azure Repos showing branch](../media/03-04-branch-repo.png)
+![Azure Repos showing branch](../media/03-04-branch-repos.png)
 
 Now that the branch is created, you can work in the branch to make any changes to the code. It's common practice that you clone the branch to an Integrated Development Environment (IDE) like **Visual Studio Code** to develop and test locally before committing and pushing the changes to the main repo.
 

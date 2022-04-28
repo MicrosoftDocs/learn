@@ -32,13 +32,13 @@ To use Flake8 locally with Visual Studio Code:
 5. Enable Python > Linting > Flake8 Enabled.
 6. Set the Flake8 path to the location in your repo where you stored your `.flake8` file.
 
-![Configure Flake8](../media/05-02-flake8-configuration.png)
+![Configure Flake8](../media/05-02-flake-8-configuration.png)
 
 To specify what your team's standards are for code quality, you can configure the Flake8 linter. A common method to define the standards is by creating a `.flake8` file that is stored with your code.
 
 The `.flake8` file should start with `[flake8]`, followed by any of the configurations you want to use. 
 
-> [!Tip]
+> [!TIP]
 > A full list of possible configuration parameters can be found in the [Flake8 documentation](https://flake8.pycqa.org/en/latest/user/options.html#full-listing-of-options-and-their-descriptions).
 
 For example, if you want to specify that the maximum length of any line can't be more than 80 characters, you'll add the following line to your `.flake8` file:
@@ -70,12 +70,12 @@ max-complexity = 10
 import-order-style = pep8
 ```
 
-> [!Tip]
+> [!TIP]
 > For an overview of error codes you can refer to, review the [Flake8 Error list](https://pycodestyle.pycqa.org/en/latest/intro.html#error-codes)
 
 When you've configured Visual Studio Code to lint your code, you can open any code file to review the lint results. Any warnings or errors will be underlined. You can select **View problem** to inspect the issue to understand the error.
 
-![Flake8 results in Visual Studio Code](../media/05-03-flake8-result.png)
+![Flake8 results in Visual Studio Code](../media/05-03-flake-8-result.png)
 
 ### Lint with Azure Pipelines or GitHub Actions
 
@@ -96,9 +96,9 @@ As a best practice, your code should exist mostly out of functions. Whether you'
 - Check the prediction level of model on new datasets.
 - Check the distribution of prediction levels.
 
-When you work with Python, your unit tests will be Python scripts. 
+When you work with Python, you can use **Pytest** and **Numpy** (which uses the Pytest framework) to test your code. To learn more about working with Pytest, [learn how to write tests with Pytest](/learn/modules/test-python-with-pytest/).
 
-> [!Tip]
+> [!TIP]
 > Review a more detailed walkthrough of [Python testing in Visual Studio Code](https://code.visualstudio.com/docs/python/testing).
 
 Imagine you created a training script `train.py`, which contains the following function:
@@ -115,7 +115,7 @@ Assume you stored the training script in the directory `src/model/train.py` with
 
 You create the `test_train.py` file in the `tests` folder. One way to test Python code is to use `numpy`. Numpy offers several `assert` functions to compare arrays, strings, objects, or items. 
 
-> [!Tip]
+> [!TIP]
 > Learn more about [testing guidelines when using Numpy testing](https://numpy.org/doc/stable/reference/testing.html), and [Numpy's test support](https://numpy.org/doc/stable/reference/routines.testing.html).
 
 For example, to test the `train_model` function, you can use a small training dataset and use `assert` to verify whether the predictions are *almost equal* to your predefined performance metrics.
@@ -155,7 +155,7 @@ To run the test in an Azure DevOps Pipeline or GitHub Action:
 
 The results of the tests will show in the output of the pipeline or workflow you run. 
 
-> [!Note]
+> [!NOTE]
 > If either during linting or unit testing, an error is returned, the CI pipeline may fail. It's therefore better to verify your code locally first, before triggering the CI pipeline.
 
 

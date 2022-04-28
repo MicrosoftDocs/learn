@@ -10,14 +10,14 @@ To work on the branch, you can clone the branch to your preferred IDE. You'll le
 
 Whether you work with **Azure Repos** or **GitHub**, you'll work with Git-based repositories. You can edit code within Azure Repos or GitHub, but it's recommended to clone the repo and work in an IDE. A commonly used IDE is **Visual Studio Code**. 
 
-> [!Tip]
+> [!TIP]
 > You can [download Visual Studio Code on Windows, Linux, and macOS](https://code.visualstudio.com/download).
 
 One of the benefits of using Visual Studio Code is that it has an extension for **Azure Machine Learning**, enabling you to run the code on Azure Machine Learning compute instances and clusters from Visual Studio Code. You can also opt to run the code using your local device. Some machine learning workloads like computer vision models however, will require more compute power. 
 
 When you want to develop your code locally, you'll follow along a typical development process when working with Git repos. The full repo is stored online, in a tool like Azure Repos or GitHub. 
 
-> [!Tip]
+> [!TIP]
 > To work on Git repos locally, [download Git for Windows, Linux, or macOS](https://git-scm.com/downloads). 
 
 ## Development process
@@ -53,7 +53,7 @@ Or use the `git clone` command in the integrated terminal.
 
 A local copy of the code will be stored on your device. Choose where you want to store the clone and wait until all files have been copied. When ready, you'll be prompted to navigate to the newly copied repo directly. Alternatively, you can open the local folder in Visual Studio Code to open the local copy. 
 
-> [!Note]
+> [!NOTE]
 > If you created a branch, verify that you're currently working in the branch and not the main repo. You can switch branches by using the `git checkout` command.
 
 ### Commit
@@ -80,5 +80,5 @@ Alternatively, you can also push changes using the **Source Control** pane. In S
 
 Ideally, you should verify your code before pushing it to the repo. To verify machine learning workloads, it's a best practice to do linting and unit tests locally.
 
-> [!Note]
+> [!NOTE]
 > If someone else has made a change to the repo while you've been working online, you can **pull** those changes to your local copy without losing your changes and commits. Git will check whether there are any clashes for you.
