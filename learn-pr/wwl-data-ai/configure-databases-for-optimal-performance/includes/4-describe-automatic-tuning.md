@@ -10,7 +10,7 @@ Whether on-premises or in the cloud, automatic tuning allows you to identify iss
 
 With the help of the Query Store data, the database engine can determine when query execution plans have regressed in performance. While you can manually identify a regressed plan through the user interface, the Query Store also provides the option to notify you automatically.
 
-:::image type="content" source="../media/module-44-optimize-resources-final-25.png" alt-text="Screenshot of the Query Store view for regressed plan correction.":::
+:::image type="content" source="../media/module-44-optimize-resources-final-25.png" alt-text="Screenshot of the Query Store view for regressed plan correction." lightbox="../media/module-44-optimize-resources-final-25.png":::
 
 In the example above, you can see a check mark on **Plan ID 1**, which means that the plan has been forced. After the feature is enabled, the database engine will automatically force any recommended query execution plan, when:
 
