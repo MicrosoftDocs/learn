@@ -12820,6 +12820,46 @@
       "source_path": "learn-pr/wwl-sci/describe-resource-governance-capabilities-azure/4-describe-azure-purview.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-resource-governance-capabilities-azure/4-describe-microsoft-purview",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/2-describe-role-firewalls.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/3-explain-encryption.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/4-describe-role-azure-key-vault-transparent-data-encryption.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/5-explain-object-encryption-secure-enclaves.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/4-explain-object-encryption-secure-enclaves",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/6-explain-dynamic-data-masking.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/6a-exercise-configure-azure-sql-database-firewall.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/8-exercise-configure-azure-sql-database-firewall",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/protect-data-transit-rest/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/protect-data-transit-rest/10-summary",
+      "redirect_document_id": true
     }
   ]
 }
