@@ -3,12 +3,14 @@ uid: learn.azure.secure-azure-storage-account.storage-security-features
 title: Explore Azure Storage security features
 metadata:
   title: Explore Azure Storage security features
-  description: Explore Azure Storage security features
-  ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chtestao
+  description: "Explore Azure Storage security features"
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-storage-security-features.md)]

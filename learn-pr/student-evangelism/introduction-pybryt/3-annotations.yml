@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-pybryt.3-annotations
+title: Annotations
+metadata:
+  title: Annotations
+  description: How to annotate a solution to allow PyBryt to assess student implementations
+  author: chrispyles
+  ms.author: leestott
+  ms.date: 10/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-annotations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which type of annotation checks that a specific value is present in the student's memory footprint?"
+      choices:
+        - content: "Value annotation"
+          isCorrect: true
+          explanation: "Correct! Value annotations check for the presence of specific annotations"
+        - content: "Relational annotation"
+          isCorrect: false
+          explanation: "Not quite. Relational annotations assert conditions between other annotations."
+        - content: "Complexity annotation"
+          isCorrect: false
+          explanation: "Not quite. Complexity annotations check the time complexity of a block of code."
+    - content: "Which of the following calls creates a value annotation for a list of values, ignoring the ordering of the list?"
+      choices:
+        - content: "`pybryt.Value(lst)`"
+          isCorrect: false
+          explanation: "Not quite. This call will only work if the list is in the same order as in the reference implementation."
+        - content: "`pybryt.Value(sorted(lst))`"
+          isCorrect: false
+          explanation: "Not quite. This call will fail if the list in the memory footprint isn't also sorted."
+        - content: "`pybryt.Value(lst, equivalence_fn=lambda l1, l2: sorted(l1) == sorted(l2))`"
+          isCorrect: true
+          explanation: "Correct! This call uses a custom equivalence function to compare the sorted versions of two lists, ignoring the original ordering."
+    - content: "What is the default behavior of the collection annotation regarding enforcing the order of its children?"
+      choices:
+        - content: "Ensure that the satisfying timestamps of its children occur in non-decreasing order"
+          isCorrect: false
+          explanation: "Not quite"
+        - content: "Ensure that the satisfying timestamps of its children occur in non-increasing order"
+          isCorrect: false
+          explanation: "Not quite"
+        - content: "Do not check the order of its children"
+          isCorrect: true
+          explanation: "Correct! The default behavior is not to check the order of the collection's children."

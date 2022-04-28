@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-machine-learning-tensorflow.train
+title: Training and testing the neural network
+metadata:
+  title: Training and testing the neural network
+  description: Learn how you can use TensorFlow's automatic differentiation features to train and evaluate a neural network
+  ms.date: 07/07/2021
+  author: bstollnitz
+  ms.author: bstollnitz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-tensorflow
+  ms.product: learning-tensorflow
+  ms.contributors: bstollnitz-08202021
+  ms.custom: team=cloud_advocates
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/5-train.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why do we need the `GradientTape` during training?"
+    choices:
+    - content: "We need it to record the difference between training and test data."
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "We need it to calculate derivatives for the gradient descent algorithm."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "We need it to help find the right mini-batch size."
+      isCorrect: false
+      explanation: "Incorrect."

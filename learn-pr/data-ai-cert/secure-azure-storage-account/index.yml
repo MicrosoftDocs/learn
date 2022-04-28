@@ -2,31 +2,32 @@
 uid: learn.azure.secure-azure-storage-account
 metadata:
   title: Secure your Azure Storage account
-  description: Learn how Azure Storage provides multilayered security to protect your data with access keys, secure networks, and Advanced Threat Protection monitoring.
-  ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chtestao
+  description: "Learn how Azure Storage provides multilayered security to protect your data with access keys, secure networks, and Advanced Threat Protection monitoring."
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your Azure Storage account
 summary: Learn how Azure Storage provides multilayered security to protect your data. Find out how to use access keys, to secure networks, and to use Advanced Threat Protection to proactively monitor your system.
-abstract: | 
+abstract: |
   In this module you will:
-  - Explore the Azure Data Lake enterprise-class security features.
-  - Understand storage account keys.
-  - Understand shared access signatures.
-  - Understand transport-level encryption with HTTPS.
-  - Understand Advanced Threat Protection.
-  - Control network access.
-prerequisites: None
+    - Explore the Azure Data Lake enterprise-class security features.
+    - Understand storage account keys.
+    - Understand shared access signatures.
+    - Understand transport-level encryption with HTTPS.
+    - Understand Advanced Threat Protection.
+    - Control network access.
+prerequisites: |
+  None
 iconUrl: /learn/achievements/data-ai/secure-azure-storage-account-badge.svg
 levels:
 - beginner
 roles:
 - administrator
 - data-engineer
-- solution-architect
 - security-engineer
+- solution-architect
 products:
 - azure
 - azure-storage

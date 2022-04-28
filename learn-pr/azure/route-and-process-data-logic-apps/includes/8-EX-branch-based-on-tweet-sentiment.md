@@ -1,6 +1,6 @@
-In this exercise, we're going to continue work on our social-media monitor app. We'll add a control action to branch based on the sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
+In this exercise, we're going to continue work on our social media monitor app. We'll add a control action to branch based on the sentiment of the tweet. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
 
-![An illustration showing the triggers and actions in the social-media monitor logic app. The third step is an action showing a control action that is testing the sentiment score. If the score is greater than 0.7 the app branches to an **Insert row** action. If the score is less than or equal to 0.7, the app branches to a **Send an Email** action.](../media/exercise-branch.png)
+![An illustration showing the triggers and actions in the social media monitor logic app. The third step is an action showing a control action that is testing the sentiment score. If the score is greater than 0.7 the app branches to an **Insert row** action. If the score is less than or equal to 0.7, the app branches to a **Send an Email** action.](../media/exercise-branch.png)
 
 ## Create SQL Server database to store positive tweets
 
@@ -31,7 +31,7 @@ When we receive a positive tweet, we want to save it to a backend database. In t
 
 This first step is to add the control action to the app in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). In programming terms, we're adding an *if statement* that will test a condition.
 
-1. Return to the Logic Apps Designer by selecting **Logic Apps Designer**. This button is located under the development tools section of the left menu bar.
+1. Return to the Logic Apps Designer by selecting **Logic Apps Designer**. This button is located under the development tools section of the left menu pane.
 
 1. Below the existing **Detect sentiment** action, select **New step**.
 
@@ -49,11 +49,11 @@ Now that we have a **Condition** control action created, we need to specify what
 
 1. In the **Dynamic** content popup, select **Score**.
 
-1. Expand the dropdown menu that currently lists **is equal to**.
+1. Expand the dropdown list that currently lists **is equal to**.
 
 1. Select **is greater than**.
 
-1. Enter **0.7** in the rightmost choose a value field.
+1. Enter **0.7** in the rightmost **Choose a value** field.
 
 1. Select **Save** to save your work.
 
@@ -75,7 +75,7 @@ Now that we have located the SQL Server action, let's create it. During creation
 
 1. Enter *SQLConnection* in the **Connection Name** field.
 
-1. Select the SQL Server that you created earlier.
+1. Select the SQL Server that you previously created.
 
 1. In the **SQL Database Name** field, select `PositiveTweetDatabase`, which is the name of the database we created with our script.
 
@@ -94,7 +94,7 @@ The SQL Server action is now created; however, we need to specify how the tweet 
 1. In the **Dynamic** content popup, select **Tweet text**.
 
     > [!NOTE]
-    > If you are using the RSS **When a feed item is published** trigger, please use the **FeedSummary** here.
+    > If you are using the RSS **When a feed item is published** trigger, use the **FeedSummary** here.
 
 1. Select `Source` from the **Add new parameter** dropdown list.
 
@@ -150,13 +150,13 @@ The **Control** action is now properly configured and running. Let's examine the
 
 1. In the Azure portal menu, select **All resources**, and then select **PositiveTweetDatabase** from the list of resources.
 
-1. In the left menu bar, select **Query editor**.
+1. In the left menu pane, select **Query editor**.
 
 1. Sign in using the **Server admin login** and **Password** that you saved when the script in the preceding unit created.
 
 1. Select **OK**.
 
-1. Select **+ New Query** on the top menu bar.
+1. Select **New Query** on the top menu bar.
 
 1. In the query editor, enter `Select * from dbo.mentions`.
 
@@ -166,4 +166,4 @@ The **Control** action is now properly configured and running. Let's examine the
 
 Finally, let's check our email account to see if we received any messages about negative tweets.
 
-1. Sign into the email account that you provided in the Outlook action, and wait for an email notification to arrive.
+Sign into the email account that you provided in the Outlook action, and wait for an email notification to arrive.

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.publish-container-image-to-azure-container-registry.exercise-build-run-container-image-by-using-tasks
+title: 'Exercise: Build and run a container image by using Azure Container Registry Tasks'
+metadata:
+  title: 'Exercise: Build and run a container image by using Azure Container Registry Tasks'
+  description: "Exercise: Build and run a container image by using Azure Container Registry Tasks"
+  ms.date: 04/28/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-build-run-image-azure-container-registry.md)]

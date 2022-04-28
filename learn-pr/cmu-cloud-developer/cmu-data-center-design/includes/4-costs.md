@@ -10,7 +10,7 @@ Capital expenditure (CapEx) for datacenters includes upfront planning, cost of p
 
 **Property costs**: A principal expense incurred in building datacenters is the cost of property. This, of course, varies significantly depending on location. Organizations typically have the option of either constructing a building from scratch or repurposing an existing building to be a datacenter.
 
-When an organization is building from scratch, many costs, such as the real estate transaction, consultant, brokerage, and building permits, apply in addition to the actual cost of building the datacenter "shell," which could include excavation, grading, roadways, utility connections, and physical security. [Reed Construction Data](http://www.reedconstructiondata.com/rsmeans/models/data-center/) has estimates for the United States that are typically between 200 to 300 dollars per square foot, depending on the type of building and labor.
+When an organization is building from scratch, many costs, such as the real estate transaction, consultant, brokerage, and building permits, apply in addition to the actual cost of building the datacenter "shell," which could include excavation, grading, roadways, utility connections, and physical security. [Reed Construction Data](http://www.reedconstructiondata.com) has estimates for the United States that are typically between 200 to 300 dollars per square foot, depending on the type of building and labor.
 
 Many organizations opt to repurpose existing buildings, particularly those that have been abandoned, such as factories or mills. Google's [Hamina datacenter](http://www.google.com/about/datacenters/locations/hamina/) in Finland was repurposed from an old paper mill. [Barcelona Supercomputing Center](https://www.bsc.es/discover-bsc/the-centre/history) is an example of an old chapel repurposed as a datacenter site.
 
@@ -49,8 +49,8 @@ One of the biggest operating expenses in running a datacenter is the power. It c
 
 1. _Rachel Dines, et al. (2011). [Build or Buy? The Economics of Data Center Facilities Forrester Research - PDF](https://www.anixter.com/content/dam/Suppliers/Viavi%20Solutions/Data%20Centre%20Case%20Studies.pdf)_
 2. _U.S. Energy Information Administration.  (May 7, 2014). [Annual Energy Outlook 2014](http://www.eia.gov/electricity/)_
-3. _Barroso, Luiz André, and Hölzle, Urs.  (2009). [The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines](http://bnrg.eecs.berkeley.edu/~randy/Courses/CS294.F09/wharehousesizedcomputers.pdf)_
+3. _Barroso, Luiz André, and Hölzle, Urs.  (2009). [The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines](https://www.morganclaypool.com/doi/pdfplus/10.2200/S00516ED2V01Y201306CAC024)_
 
 [^1]: <https://www.anixter.com/content/dam/Suppliers/Viavi%20Solutions/Data%20Centre%20Case%20Studies.pdf> "Rachel Dines, et al. (2011). *Build or Buy? The Economics of Data Center Facilities Forrester Research* PDF"
 [^2]: <http://www.eia.gov/electricity/> "U.S. Energy Information Administration. (May 7, 2014). *Annual Energy Outlook 2014*"
-[^3]: <http://bnrg.eecs.berkeley.edu/~randy/Courses/CS294.F09/wharehousesizedcomputers.pdf> "Barroso, Luiz André, and Hölzle, Urs. (2009). *The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines*"
+[^3]: <https://www.morganclaypool.com/doi/pdfplus/10.2200/S00516ED2V01Y201306CAC024> "Barroso, Luiz André, and Hölzle, Urs. (2009). *The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines*"

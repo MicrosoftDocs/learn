@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-private-access-to-azure-services
 metadata:
   title: Design and implement private access to Azure Services
   description: "You will learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints."
-  ms.date: 08/03/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
   - You should have experience with network connectivity methods, such as VPN or WAN
   - You should have experience with the Azure portal and Azure PowerShell
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/design-and-implement-private-access-to-azure-services.svg
 levels:
 - intermediate
 roles:
@@ -33,11 +33,11 @@ products:
 - azure-virtual-network
 units:
 - learn.wwl.design-implement-private-access-to-azure-services.introduction
-- learn.wwl.design-implement-private-access-to-azure-services.define-private-link-service-private-endpoint
-- learn.wwl.design-implement-private-access-to-azure-services.exercise-create-azure-private-endpoint-using-azure-powershell
 - learn.wwl.design-implement-private-access-to-azure-services.explain-virtual-network-service-endpoints
-- learn.wwl.design-implement-private-access-to-azure-services.exercise-restrict-network-paas-resources-virtual-network-service-endpoints-using
+- learn.wwl.design-implement-private-access-to-azure-services.define-private-link-service-private-endpoint
 - learn.wwl.design-implement-private-access-to-azure-services.integrate-private-link-dns
+- learn.wwl.design-implement-private-access-to-azure-services.exercise-restrict-network-paas-resources-virtual-network-service-endpoints-using
+- learn.wwl.design-implement-private-access-to-azure-services.exercise-create-azure-private-endpoint-using-azure-powershell
 - learn.wwl.design-implement-private-access-to-azure-services.integrate-your-app-service-azure-virtual-networks
 - learn.wwl.design-implement-private-access-to-azure-services.summary
 badge:

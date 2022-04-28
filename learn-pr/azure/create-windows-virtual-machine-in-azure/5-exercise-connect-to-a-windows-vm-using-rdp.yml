@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Connect to a Windows virtual machine using RDP
   description: Exercise - Connect to a Windows virtual machine using RDP
   ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  author: cynthn
+  ms.author: cynthn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Track your build history
   description: Add a widget to the dashboard to track the history of your builds.
   ms.date: 05/25/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

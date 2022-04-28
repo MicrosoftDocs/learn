@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.access-data-azure-blob-storage-multiple-protocols.6-knowledge-check
+title: Knowledge check
+metadata:
+  unitType: Knowledge_check
+  title: Knowledge check
+  description: This is a knowledge check unit.
+  ms.date: 12/27/2021
+  author: AnuSridhar-25
+  ms.author: v-anursr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "An administrator plans to mount Blob Storage on a Linux machine using the NFS 3.0 protocol. What are the requirements for Blob Storage?"
+    choices:
+    - content: "Hierarchical namespace"
+      isCorrect: true
+      explanation: "Correct. You can use the NFS 3.0 protocol to access data in Blob Storage if the hierarchical namespace feature is enabled."
+    - content: "Flat namespace provided with blobs"
+      isCorrect: false
+      explanation: "Incorrect. You need to enable hierarchical namespace on Blob Storage to use the NFS 3.0 protocol for accessing data."
+    - content: "Page blobs "
+      isCorrect: false
+      explanation: "Incorrect. You can use the NFS 3.0 protocol to access data in Blob Storage using block blobs."
+  - content: "Which of the following protocols does Blob Storage not support for data access?"
+    choices:
+    - content: "Server Message Block (SMB) "
+      isCorrect: true
+      explanation: "Correct. You use SMB primarily for accessing data in Azure Files."
+    - content: "NFS 3.0"
+      isCorrect: false
+      explanation: "Incorrect. Blob Storage supports the NFS protocol for accessing data."
+    - content: "SFTP"
+      isCorrect: false
+      explanation: "Incorrect. Blob Storage supports the SFTP protocol for accessing data."
+  - content: "An administrator is planning to access data in Blob Storage using an SFTP client. Which authentication model can the administrator use for connecting SFTP clients?"
+    choices:
+    - content: "SAS"
+      isCorrect: false
+      explanation: "Incorrect. Blob Storage doesn’t support SAS authentication."
+    - content: "Azure AD authentication"
+      isCorrect: false
+      explanation: "Incorrect. Blob Storage doesn’t support Azure AD authentication."
+    - content: "Local users with either password or SSH key pairs "
+      isCorrect: true
+      explanation: "Correct. To grant access to a connecting client, the storage account must have an identity associated with that credential. That identity is called a local user."
+content: |
+  [!include[](includes/6-knowledge-check.md)]

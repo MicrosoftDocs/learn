@@ -4,12 +4,13 @@ title: Application migration
 metadata:
   title: Application migration
   description: "Application migration"
-  ms.date: 02/01/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/4-application-migration.md)]

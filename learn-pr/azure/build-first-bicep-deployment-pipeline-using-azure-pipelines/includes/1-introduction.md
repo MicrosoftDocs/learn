@@ -1,37 +1,37 @@
-By automating Bicep deployments through Azure Pipelines, you can create a flexible and reusable process for propagating your changes to your Azure environment. A pipeline enforces the process you specify to ensure the quality of your deployments and your Azure environment. A deployment pipeline also ensures the same process is used by everyone who collaborates on your Bicep files. In this module, you'll learn how to define an Azure DevOps pipeline, and how to deploy your Bicep code by using the pipeline.
+You can use Azure Pipelines to automate Bicep deployments. Azure Pipelines provides a flexible and reusable process to propagate changes to your Azure environment. A pipeline enforces the process that you set to ensure the quality of your deployments and of your Azure environment. A deployment pipeline also ensures that everyone who collaborates on your Bicep files uses the same process. In this module, you'll learn how to define a pipeline in Azure Pipelines and how to deploy your Bicep code by using the pipeline.
+
+> [!NOTE]
+> If you're interested in using GitHub Actions instead of Azure Pipelines to deploy infrastructure to Azure, see [Build your first Bicep deployment workflow by using GitHub Actions](/learn/modules/build-first-bicep-deployment-pipeline-using-github-actions/). If you need help deciding, see [Compare and contrast GitHub Actions and Azure Pipelines](/dotnet/architecture/devops-for-aspnet-developers/actions-vs-pipelines?azure-portal=true).
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've built a Bicep template to deploy your company's website. Every time you need to reconfigure the website you update your Bicep files and redeploy them from your computer. Your website team asks for changes regularly so the deployment process has become time-consuming, and you want to find a way to automate the process so that you can focus on more important things.
+Suppose you're responsible for deploying and configuring the Azure infrastructure to support a website at a toy company. You've built a Bicep template to deploy the website. Every time you need to reconfigure the website, you update your Bicep files and redeploy them from your computer. The website team asks for changes regularly, so the deployment process has become time-consuming. You want to find a way to automate the process so that you can focus on other tasks and initiatives.
 
-You also want to enable your colleagues to make changes to the Bicep templates and deploy them themselves. But, you need to ensure they follow the same process as you. You decide to create a deployment pipeline, which will run automatically every time the Bicep code is updated in your shared repository. It will deploy your Bicep files to Azure.
+You also want your colleagues to be able to make changes to the Bicep templates and deploy the templates themselves. But, you need to make sure your colleagues follow the same process that you use. You decide to create a deployment pipeline that will run automatically every time the Bicep code is updated in your shared repository. The pipeline will deploy your Bicep files to Azure.
 
-:::image type="content" source="../media/1-workflow.png" alt-text="Diagram that shows a change to a Bicep file, which is pushed to Azure Repos. This then automatically triggers a pipeline, which deploys to Azure." border="false":::
+:::image type="content" source="../media/1-workflow.png" alt-text="Diagram that shows a change to a Bicep file pushed to Azure Repos, and then a pipeline triggers deployment to Azure." border="false":::
 
 ## What will you be doing?
 
-In this module, you'll learn how you can automate the deployment of Bicep templates by using Azure Pipelines. You'll understand the benefits of using pipelines to deploy your code, and you'll learn how to build a basic pipeline that deploys a Bicep file. Along the way, you'll learn how to give your pipeline the authorization to deploy resources to your Azure environment, and how to configure when the pipeline runs.
+In this module, you'll learn how to automate the deployment of Bicep templates by using Azure Pipelines. You'll understand the benefits of using pipelines to deploy your code, and you'll build a basic pipeline that deploys a Bicep file. You'll also learn how to authorize your pipeline to deploy resources to your Azure environment and how to set when a pipeline runs.
 
 ## What is the main goal?
 
-After completing this module, you'll be able to create a pipeline in Azure Pipelines that deploys a basic Bicep file to an Azure resource group.
+After completing this module, you'll be able to use Azure Pipelines to create a pipeline that deploys a basic Bicep file to an Azure resource group.
 
 ## Prerequisites
 
-You should be familiar with:
+You should be familiar with using:
 
-- Creating and deploying basic Bicep files.
+- Bicep, including creating and deploying basic Bicep files.
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
-- Service principals.
 - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
 
-To follow along with the exercises in the module, you'll need an Azure account, with the ability to create resource groups and to create Azure Active Directory applications and service principals.
+To work through the exercises in the module, you'll need an Azure account that can create resource groups, Azure Active Directory (Azure AD) applications, and service principals.
 
-You'll also need the following installed locally:
+You'll also need the following tools installed locally:
 
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
 - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
-- Either:
-  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools.
-  - The latest [Azure PowerShell](/powershell/azure/install-az-ps).
+- The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
 - [Git](https://git-scm.com/download?azure-portal=true).

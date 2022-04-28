@@ -9,6 +9,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
+  ms.custom: team=nextgen
 durationInMinutes: 10 # dummy number at present
 content: |
   [!include[](includes/8d-exercise-deploy-your-first-application.md)]

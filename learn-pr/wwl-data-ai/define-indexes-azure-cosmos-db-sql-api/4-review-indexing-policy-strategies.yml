@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-indexes-azure-cosmos-db-sql-api.review-index-data-types
+title: Review indexing policy strategies
+metadata:
+  title: Review indexing policy strategies
+  description: "Review indexing policy strategies"
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-review-indexing-policy-strategies.md)]

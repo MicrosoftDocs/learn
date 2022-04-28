@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-windows-server-roles.migrate-roles-using-migration-tools
+title: Migrate roles using the Migration Tools
+metadata:
+  title: Migrate roles using the Migration Tools
+  description: "Migrate roles using the Migration Tools"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-migrate-roles-using-migration-tools.md)]

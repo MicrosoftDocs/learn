@@ -1,33 +1,41 @@
-You can write, debug, and deploy an Azure Function from within the Azure portal. However, there are many scenarios when writing functions directly in the production, staging, or test environments might not be suitable. For example, you could be writing automated unit tests for Azure Functions, or using on-demand deployment of Azure Functions to Azure Function Apps in Azure. Additionally, many developers prefer to use their favorite code editor and development tools rather than the environment provided by the Azure portal. Developing functions with Visual Studio enables you to manage Azure Functions code with code of other services inside the same projects.
+Users can write, debug, and deploy an Azure Function from within the Azure portal. However, writing functions directly in a production, staging, or test environment might not be suitable. For example, writing automated unit tests for Azure Functions, or using on-demand deployment of Azure functions to Function Apps in Azure. Usually, developers prefer to use a code editor and development tools rather than the environment provided by the Azure portal. Visual Studio enables you to develop and manage Azure Functions code using other code and services in a single project.
 
-In the luxury watch online website scenario, the developers are already familiar with Visual Studio 2019 (hereafter referred to as Visual Studio). So, you decide to use Visual Studio as the primary development environment for creating Azure Functions. Additionally, Visual Studio provides an excellent environment for testing your functions locally before deploying them to Azure.
+In the online luxury watch scenario, developers are already familiar with Visual Studio 2019 (hereafter referred to as Visual Studio). So, you decide to use Visual Studio as the primary development environment for creating Azure functions. Additionally, Visual Studio provides an excellent environment for testing your functions locally before deploying them to Azure.
 
-In this unit, you'll learn about the tools available with Visual Studio for building Azure Functions. To build and test an Azure Function locally, you'll see how to install these tools, and use them.
+In this unit, you'll learn to use tools available in Visual Studio for building and testing an Azure function on your local computer.
 
 ## Modify Visual Studio Install
 
-Upon loading Visual Studio 2019, go to **Visual Studio Installer**, and select **Modify.**
+First, let's set up Visual Studio with the web and cloud tools you'll need for your development environment.
 
-:::image type="content" source="../media/2-visual-studio-installer-modify.png" alt-text="Screenshot of the Visual Studio Installer page with Modify button." loc-scope="vs":::
+1. With Visual Studio 2019 installed locally, open **Visual Studio Installer**, and on the **Visual Studio Community 2019**, select **Modify.**
 
-The **Modifying - Visual Studio** page appears. Under the **Workloads** tab, select the **ASP.NET and Web development** and **Azure development** boxes, and then select **Modify**.
+    :::image type="content" source="../media/2-visual-studio-installer-modify.png" alt-text="Screenshot of Visual Studio Installer with Modify highlighted." loc-scope="vs":::
 
-:::image type="content" source="../media/2-visual-studio-workloads.png" alt-text="Screenshot of the Visual Studio Modifying page with Workloads tab." loc-scope="vs":::
+1. The **Modifying - Visual Studio** page appears.
+
+    :::image type="content" source="../media/2-visual-studio-workloads.png" alt-text="Screenshot of Modifying Visual Studio Community 2019 workloads tab with ASP.NET and web development and Azure development highlighted." loc-scope="vs":::
+
+1. On the **Workloads** tab, select the **ASP.NET and Web development** and **Azure development** checkboxes, and then select **Modify**.  
+
+1. In the verification dialog, select **Yes**.  The **Visual Studio Installer** page appears and displays the progress of the packages being installed.
 
 ## Azure Functions Tools extension for Visual Studio
 
-The Azure Functions Tools are a Visual Studio extension that enable you to create, test, and deploy Azure Functions in your local development environment. To quickly create a new Azure Function App, this extension provides a template that you can use. You can then deploy an Azure Function directly to Azure from Visual Studio. The **Azure Functions and Web Jobs Tools** extension is included in Visual Studio 2019.
+Azure Functions Tools is a Visual Studio extension that enables you to create, test, and deploy Azure Functions in your local development environment. To quickly create a new Azure Function App, this extension provides a template for you to build and then deploy an Azure Function directly to Azure from Visual Studio.
+
+The **Azure Functions and Web Jobs Tools** extension is included in Visual Studio 2019.
 
 ## Azure Function App
 
-An Azure Function App hosts one or more Azure Functions. It provides the environment and runtime for the functions.
+An Azure Function App hosts one or more Azure functions. It provides the environment and runtime for the functions.
 
-An Azure Function is triggered by an event rather than being called directly from an app. You specify the type of event that will trigger the functions in your Azure Function App. The events available include:
+An Azure Function is triggered by an event rather than being called directly from an app. You specify the type of event that will trigger each function in your Azure Function App. The events available include:
 
-- **Blob trigger**. This type of function runs when a file is uploaded or modified in Azure Blob Storage.
+- **Blob trigger**. This type of function runs when a file is uploaded or modified in Azure Blob storage.
 - **Event Hub trigger**. An Event Hub trigger runs the function when an Event Hub receives a message.
 - **Azure Cosmos DB trigger**. This trigger runs when a document is added to, or modified in an Azure Cosmos DB database. You can use this trigger to integrate Azure Cosmos DB with other services. For example, if a document representing a customer's order is added to a database, you could use a trigger to send a copy of the order to a queue for processing.
-- **Http trigger**. An HTTP trigger runs the function when an HTTP request occurs in a web app. You can also use this trigger to respond to webhooks. A webhook is a callback that occurs when an item hosted by a website is modified. For example, you can create an Azure Function that is started by a webhook from a GitHub repository when an item in the repository changes.
+- **Http trigger**. An HTTP trigger runs the function when an HTTP request occurs in a web app. You can also use this trigger to respond to webhooks. A webhook is a callback that occurs when an item hosted by a website is modified. For example, you can create an Azure Function that is triggered by a webhook from a GitHub repository when an item in the repository changes.
 - **Queue trigger**. This trigger starts the function when a new item is added to an Azure Storage Queue.
 - **Service Bus Queue trigger**. This trigger runs the function when a new item is added to an Azure Service Bus Queue.
 - **Service Bus Topic trigger**. This trigger runs the function in response to a new message arriving on a Service Bus Topic.
@@ -35,21 +43,21 @@ An Azure Function is triggered by an event rather than being called directly fro
 
 :::image type="content" source="../media/2-function-triggers.png" alt-text="Screenshot showing the Azure Function triggers available, with HTTP Trigger highlighted." loc-scope="vs":::
 
-Azure currently provides three versions of the runtime environment required to run Azure Functions:
+Azure provides three versions of the runtime environment required to run Azure Functions:
 
 - Version 1 (v1) uses the .NET Framework 4.7
 - Version 2 (v2x) runs using .NET Core 2
 - Version 3 (v3x) contains JavaScript and .NET changes.
 
-Using v2 triggers enables you to develop and host the trigger in different environments. Version 1 triggers can only be created using Windows. Use v2 triggers wherever possible.
+v2 triggers enable you to develop and host a trigger in different environments. v1 triggers can only be created using Windows, so use v2 triggers wherever possible.
 
-An Azure Function App stores management information, code, and logs in Azure Storage. Create a Storage Account to hold this data. The storage account must support Azure Blob, Queue, Files, and Table storage; use a general Azure Storage account for this purpose. You specify which storage account to use for the function using the dialog previously shown.
+An Azure Function App stores management information, code, and logs in Azure storage. Create a Storage Account to hold this data. The storage account must support Azure Blob, Queue, Files, and Table storage; use a general Azure Storage account for this purpose. You specify which storage account to use for the function using the dialog previously shown.
 
 An Azure Function can perform privileged or sensitive operations. An Azure Function triggered by an HTTP request could be exposed publicly. You might need to limit the ability to run this function to selected groups of users. You protect an Azure Function by specifying the access rights required to trigger the function. An Azure Function triggered by an HTTP request supports three levels of access rights:
 
 - **Anonymous**. No authentication is required, and any user can trigger the function.
 - **Function**. The HTTP request must provide a key that enables the Azure Function runtime to authorize the request. You create this key separately, and you can maintain it using the Azure portal.
-- **Admin**. This is similar to **Function** inasmuch as the user must specify a key with the HTTP request that triggers the function. The difference is that the key is an *admin* key. This key can be used to access any function in the function app. As with a function key, you create this key separately.
+- **Admin**. Similar to **Function**. The user must specify a key with the HTTP request that triggers the function. The difference is that the key is an *admin* key. This key can be used to access any function in the function app. As with a function key, you create this key separately.
 
 If you're creating a function triggered by events other than HTTP requests, you're required to provide a connection string and other details necessary for the function app to access the resource triggering the event. For example, if you're writing a function triggered by a Blob Storage event, you must specify the connection string for the corresponding Blob Storage account.
 
@@ -59,7 +67,7 @@ An Azure Function is implemented as a static class. The class provides a static,
 
 The parameters passed to the `Run` method provide the context for the trigger. In the case of an HTTP trigger, the function receives an *HttpRequest* object. This object contains the header and body of the request. You can access the data in the request using the same techniques available in any HTTP app. The attributes applied to this function specify the authorization requirements (*Anonymous* in this case), and the HTTP operations to which the Azure function responds (*GET* and *POST*).
 
-The following code example generated by Visual Studio examines the query string provided as part of the URL for the request, and looks for a parameter called *name*. The code also uses a *StreamReader* to deserialize the body of the request, and attempts to read the value of a property also called *name* from the request. If *name* is found either in the query string or the body of the request, it's returned in the response; otherwise, the function generates an error response with the message *Please pass a name on the query string or in the request body*.
+The following code example generated by Visual Studio examines the query string provided as part of the URL for the request, and looks for a parameter called *name*. The code also uses a *StreamReader* to deserialize the body of the request, and attempts to read the value of a property also called *name* from the request. If *name* is found in either the query string or the body of the request, it's returned in the response; otherwise, the function generates an error response with the message. Please pass a name on the query string or in the request body*.
 
 ```csharp
 public static class Function1
@@ -84,9 +92,9 @@ public static class Function1
 }
 ```
 
-The function returns a value containing any output data and results, wrapped in an *IActionResult* object. The value is returned in the body of the HTTP response for the request.
+The function returns a value containing output data and results, wrapped in an *IActionResult* object. The value is returned in the body of the HTTP response for the request.
 
-Different types of trigger receive different input parameters and return types. The next example shows the code generated for a Blob trigger. In this example, the contents of the blob is made accessible through a *Stream* object, and the name of the blob is also provided. No data is returned by the trigger; its purpose is to read and process the data in the named blob.
+Different types of triggers receive different input parameters and return types. The next example shows the code generated for a Blob trigger. In this example, the contents of the blob are returned through a *Stream* object, and the name of the blob is also provided. No data is returned by the trigger; its purpose is to read and process the data in the named blob.
 
 ```csharp
 public static class Function2
@@ -101,11 +109,11 @@ public static class Function2
 
 In all cases, an Azure Function is passed an *ILogger* parameter. The function can use this parameter to write log messages, which the function app will write to storage for later analysis.
 
-An Azure Function also contains metadata that specify the type of the trigger, and any other specific information and security requirements. You can modify this metadata using the *HttpTrigger*, *BlobTrigger*, or other trigger attributes, as shown in the examples. The *FunctionName* attribute that precedes the function is an identifier for the function used by the Function App. This name doesn't have to be the same as the name of the function, but it's good practice to keep them synchronized to avoid confusion.
+An Azure function also contains metadata that specifies the type of the trigger, security requirements, and any other specific information requirements. You can modify metadata using the *HttpTrigger*, *BlobTrigger*, or other trigger attributes, as shown in the examples. The *FunctionName* attribute that precedes a function is an identifier for the function used by the Function App. This name doesn't have to be the same as the name of the function, but it's good practice to keep them synchronized to avoid confusion.
 
 ## Test an Azure Function App locally
 
-You can use the Visual Debugger to build and test the Azure Function App locally. Press <kbd>F5</kbd>, or on the **Debug** menu, select **Start Debugging**. The local version of the Function Runtime will start. Your functions will be available for testing. The example shows the runtime hosting the *Function1*. This is the function triggered by an HTTP event. The URL indicates the endpoint to which the function is currently attached.
+You can use the Visual Debugger to build and test an Azure Function App locally. To launch the debugger, press <kbd>F5</kbd>, or, on the **Debug** menu, select **Start Debugging**. The local version of the Function Runtime will start. Your functions will be available for testing. The example shows the runtime hosting *Function1*. This is the function triggered by an HTTP event. The URL indicates the endpoint to which the function is currently attached.
 
 ![Screenshot showing the Azure Function Runtime -  example 1.](../media/2-function-runtime.png)
 

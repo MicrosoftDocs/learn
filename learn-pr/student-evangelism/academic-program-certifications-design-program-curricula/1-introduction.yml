@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-design-program-curricula.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to designing program curricula that implement certification.
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

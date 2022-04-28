@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An Azure Stack Hub operator unlocks the privileged endpoint (PEP). How long will the PEP session be unlocked?"
+    choices:
+    - content: "30 minutes"
+      isCorrect: false
+      explanation: "Incorrect. An elevated PEP session is valid for up to 8 hours."
+    - content: "24 hours"
+      isCorrect: false
+      explanation: "Incorrect. An elevated PEP session is valid for up to 8 hours."
+    - content: "8 hours"
+      isCorrect: true
+      explanation: "Correct. An elevated PEP session is valid for up to 8 hours. If not terminated, the elevated PEP session will automatically lock back to a regular PEP session."
+  - content: "An Azure Stack Hub operator wants to perform a graceful shutdown of an Azure Stack Hub system during a planned maintenance. Which two cmdlets should they run?"
+    choices:
+    - content: "Run the Stop-Cluster and the Unlock-SupportSession cmdlets."
+      isCorrect: false
+      explanation: "Incorrect. They should run the stop-AzureStack and connect to the privileged endpoint."
+    - content: "Run the stop-AzureStack and the Stop-deallocated cmdlet."
+      isCorrect: false
+      explanation: "Incorrect. They should run the stop-AzureStack and connect to the privileged endpoint."
+    - content: "Run the stop-AzureStack and connect to the privileged endpoint."
+      isCorrect: true
+      explanation: "Correct. They should open a privileged endpoint session (PEP) from a machine with network access to the Azure Stack Hub ERCS VMs. Then, from the PEP, run Stop-AzureStack."

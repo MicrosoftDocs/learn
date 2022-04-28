@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-text-with-text-analytics-service.exercise
-title: Exercise - Analyze text with the Text Analytics service
+title: Exercise - Analyze text
 metadata:
-  title: Exercise - Analyze text with the Text Analytics service
-  description: "Exercise - Analyze text with the Text Analytics service"
-  ms.date: 06/15/2021
+  title: Exercise - Analyze text
+  description: "Exercise - Analyze text"
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 88764
-labModal: true
+labModal: false
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise.md)]

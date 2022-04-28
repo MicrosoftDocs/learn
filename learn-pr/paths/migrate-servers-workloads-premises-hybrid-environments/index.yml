@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.wwl.migrate-servers-workloads-premises-hybrid-environments
+metadata:
+  title: Migrate servers and workloads in on-premises and hybrid environments
+  description: Migrate servers and workloads in on-premises and hybrid environments
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migrate servers and workloads in on-premises and hybrid environments
+prerequisites: |
+  *   Core Microsoft compute, storage, networking, and virtualization technologies
+  *   On-premises resiliency Windows Server-based compute and storage technologies
+  *   Implementing and managing infrastructure as a service (IaaS) services in Azure
+  *   Azure Active Directory (Azure AD)
+  *   Windows PowerShell scripting
+summary: |
+  Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server by using Windows Server migration tools or the Storage Migration Service.
+iconUrl: /learn/achievements/migrate-servers-and-workloads-in-on-premises-and-hybrid-environments.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-active-directory
+- azure-storage-accounts
+- windows-server
+modules:
+- learn.wwl.migrate-premises-windows-server-instances-to-azure-iaas-vms
+- learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines
+- learn.wwl.active-directory-domain-services-migration
+- learn.wwl.migrate-file-server-workloads-using-storage-migration-service
+- learn.wwl.migrate-windows-server-roles
+- learn.azure.migrate-aspnet-app-azure-app-service
+trophy:
+  uid: learn.wwl.migrate-servers-workloads-premises-hybrid-environments.trophy

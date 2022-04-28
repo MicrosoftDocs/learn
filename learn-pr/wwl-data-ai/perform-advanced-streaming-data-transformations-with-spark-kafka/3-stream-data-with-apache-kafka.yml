@@ -4,12 +4,13 @@ title: Stream data with Apache Kafka
 metadata:
   title: Stream data with Apache Kafka
   description: "Stream data with Apache Kafka"
-  ms.date: 08/05/2020
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/3-stream-data-with-apache-kafka.md)]

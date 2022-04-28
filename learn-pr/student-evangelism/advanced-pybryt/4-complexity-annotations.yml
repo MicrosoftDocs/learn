@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.advanced-pybryt.4-complexity-annotations
+title: Complexity annotations
+metadata:
+  title: Complexity annotations
+  description: How to check the time complexity of blocks of student code
+  author: chrispyles
+  ms.author: leestott
+  ms.date: 1/10/2022
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-complexity-annotations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: |
+        Suppose we have the following time complexity block:
+        
+        ```python
+        with pybryt.check_time_complexity("fib", 100):
+            fib(100)
+        ```
+
+        Which of the following expressions creates an annotation that the above block can be used with?
+      choices:
+        - content: '`pybryt.TimeComplexity(cplx.linear, name="foo")`'
+          isCorrect: true
+          explanation: "Correct!"
+        - content: '`pybryt.TimeComplexity(cplx.linear, group="foo")`'
+          isCorrect: false
+          explanation: "Not quite. The `group` argument is unrelated to `check_time_complexity`."
+        - content: '`pybryt.TimeComplexity(cplx.linear)`'
+          isCorrect: false
+          explanation: "Not quite. There's keyword argument that's required for `TimeComplexity` annotations."
+    - content: "Which of the following expressions creates an annotation asserting that a block of code runs in logarithmic or linear time?"
+      choices:
+        - content: '`pybryt.TimeComplexity(cplx.logarithmic, cplx.linear, name="foo")`'
+          isCorrect: false
+          explanation: "Not quite. `TimeComplexity` annotations only accept one position argument."
+        - content: '`pybryt.TimeComplexity(cplx.logarithmic or cplx.linear, name="foo")`'
+          isCorrect: false
+          explanation: "Not quite. `cplx.logarithmic or cplx.linear` would just evaluate to the first truthy value, in this case `cplx.logarithmic`."
+        - content: '`pybryt.TimeComplexity(cplx.logarithmic, name="foo") | pybryt.TimeComplexity(cplx.linear, name="foo")`'
+          isCorrect: true
+          explanation: "Correct!"

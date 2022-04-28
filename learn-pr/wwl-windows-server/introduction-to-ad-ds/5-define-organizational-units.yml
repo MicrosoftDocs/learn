@@ -4,12 +4,13 @@ title: Define OUs
 metadata:
   title: Define OUs
   description: "Define OUs"
-  ms.date: 03/01/2021
+  ms.date: 04/01/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/5-define-organizational-units.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-monitor-status-dashboards.explore-azure-monitor-workbooks
+title: Explore Azure Monitor workbooks
+metadata:
+  title: Explore Azure Monitor workbooks
+  description: "Explore Azure Monitor workbooks"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-explore-azure-monitor-workbooks.md)]

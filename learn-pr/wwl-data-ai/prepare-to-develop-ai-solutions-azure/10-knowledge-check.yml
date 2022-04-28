@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/20/2021
+  ms.date: 02/22/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
@@ -38,7 +39,7 @@ quiz:
       explanation: "That's incorrect. You can use Azure Machine Learning to publish a trained model as a web service, and consume it from applications through its REST interface."
   - content: "You want to index a collection of text documents, and search them from a mobile application. Which service should you use to create the index."
     choices:
-    - content: "The Text Analysis cognitive service"
+    - content: "The Language cognitive service"
       isCorrect: false
       explanation: "That's incorrect. Use Azure Cognitive Search to index documents for search."
     - content: "Azure Cognitive Search"

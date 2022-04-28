@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.use-forms-in-blazor-web-apps.exercise-create-address-form-blazor-components
+title: Exercise - Create an address form with Blazor components
+metadata:
+  unitType: Exercise
+  title: "Exercise - Create an address form with Blazor components"
+  description: "Build an address form and connect it to a data model."
+  ms.date: 08/31/2021
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-exercise-create-address-form-blazor-components.md)]

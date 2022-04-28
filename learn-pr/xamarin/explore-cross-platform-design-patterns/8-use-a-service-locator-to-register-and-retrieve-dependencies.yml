@@ -4,11 +4,10 @@ metadata:
   title: Use a service locator to register and retrieve dependencies
   description: "Learn how to use a service locator to locate dependencies."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Use a service locator to register and retrieve dependencies
 durationInMinutes: 5
 content: |

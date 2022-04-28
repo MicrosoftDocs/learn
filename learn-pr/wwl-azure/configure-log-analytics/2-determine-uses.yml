@@ -4,12 +4,13 @@ title: Determine Log Analytics uses
 metadata:
   title: Determine Log Analytics uses
   description: "Determine Log Analytics uses"
-  ms.date: 07/26/2021
+  ms.date: 03/14/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-determine-uses.md)]

@@ -1,20 +1,21 @@
 ### YamlMime:Module
 uid: learn.pytorch.intro-audio-classification
 metadata:
-  title: Introduction to Audio Classification with PyTorch
+  title: Introduction to audio classification with PyTorch
   description: Learn how to do audio classification with PyTorch.
   ms.date: 04/12/2021
-  author: cassieview
-  ms.author: cassieb
+  author: cassiebreviu
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Audio Classification with PyTorch
-summary: In this learn module we will be learning how to do audio classification with PyTorch. There are multiple ways to build an audio classification model. You can use the waveform, tag sections of a wave file, or even use computer vision on the spectrogram image. In this tutorial we will first break down how to understand audio data, from analog to digital representations, then we will build the model using computer vision on the spectrogram images. Thats right, you can turn audio into an image representation and then do computer vision to classify the word spoken!
+  ms.custom: team=nextgen
+title: Introduction to audio classification with PyTorch
+summary: In this Learn module, you learn how to do audio classification with PyTorch. You'll understand more about audio data features and how to transform the sound signals into a visual representation called spectrograms. Then you'll build the model by using computer vision on the spectrogram images. That's right, you can turn audio into an image format, and then do computer vision to classify the word spoken!
 abstract: |
-  In this module you will:
-  - Learn the basics of audio data
-  - Learn how to visualize and transform audio data
-  - Build a binary classification speech model that can recognize "yes" and "no"
+  In this module, you will:
+  - Learn the basics features of audio data.
+  - Learn how to transform sound signals to a visual image format by using spectrograms.
+  - Build a speech classification model that can recognize sounds or spoken words by using convolutional neural networks (CNNs).
 iconUrl: /learn/achievements/pytorch-audio-data.svg
 levels:
 - beginner
@@ -25,9 +26,9 @@ roles:
 products:
 - azure
 prerequisites: |
-  - Basic Python knowledge
-  - Basic knowledge about how to use Jupyter Notebooks
-  - Basic understanding of machine learning
+  - Basic Python knowledge.
+  - Basic knowledge about how to use Jupyter Notebooks.
+  - Basic understanding of CNNs. The "Introduction to Computer Vision with PyTorch" module in this learning path is a good place to start.
 units:
 - learn.pytorch.intro-audio-classification.introduction
 - learn.pytorch.intro-audio-classification.understand-audio-data

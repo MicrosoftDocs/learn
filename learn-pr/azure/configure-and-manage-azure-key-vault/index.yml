@@ -4,8 +4,8 @@ metadata:
   title: Configure and manage secrets in Azure Key Vault
   description: Configure and manage secrets in Azure Key Vault
   ms.date: 09/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: msmbaldwin
+  ms.author: mbaldwin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure and manage secrets in Azure Key Vault

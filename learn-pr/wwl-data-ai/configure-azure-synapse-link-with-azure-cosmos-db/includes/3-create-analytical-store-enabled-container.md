@@ -22,10 +22,10 @@ To create a new Azure Cosmos DB Core (SQL) API container with analytical store e
     [![The add container dialog box in Data Explorer](../media/add-new-container.png)](../media/add-new-container.png#lightbox)
 
 5.	Enter the **new databases** and **container** information:
-    a.	For the **Database ID** we choosing to use AdventureWorks **(5)**
+    a.	For the **Database ID** we will type in the name **AdventureWorks (5)**
     b.	Ensure that you unselect the Provision database throughput checkbox **(6)**
-    c.	For the **container ID** we choose Sales
-    d.	Enter /customerID for the **Partition Key** **(8)**
+    c.	For the **container ID**, type **Sales**.
+    d.	Enter **/customerId** for the **Partition Key** **(8)**
 
 6.	Choose the throughput for your container by selecting **Autoscale** and **specify a Max RU/s of 4000 (9)**
  
@@ -104,11 +104,11 @@ To create a new Azure Cosmos DB API for MongoDB container with analytical store 
     An Add Container dialog will appear.
 
 5.	Enter the new databases and container information:
-    a.	For the **Database ID** we choosing to use AdventureWorks **(3)**
+    a.	For the **Database ID**, type in the name AdventureWorks **(3)**
     b.	Ensure that use unselect the **Provision database throughput** checkbox **(4)**
-    c.	For the **container ID** we choose Sales **(4)**
-    d.	Select that we want unlimited storage capacity **(6)**, this is an option that we don’t have on creating a SQL API container since all SQL API containers are now unlimited.
-    e.	Enter customerID for the **Shard Key (7)**, this is the MongoDB API equivalent of the SQL API partition key.
+    c.	For the **container ID**, type Sales **(4)**
+    d.	Select **unlimited** for the storage capacity **(6)**, this is an option that we don’t have on creating a SQL API container since all SQL API containers are now unlimited.
+    e.	Type **customerId** for the **Shard Key (7)**, this is the MongoDB API equivalent of the SQL API partition key.
 
 6.	Choose the throughput for your container by selecting **Autoscale** and specify a Max RU/s of 4000 **(8)**
 

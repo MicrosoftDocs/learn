@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.wwl.monitor-troubleshoot-windows-server-environments
+metadata:
+  title: Monitor and troubleshoot Windows Server environments
+  description: Monitor and troubleshoot Windows Server environments
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor and troubleshoot Windows Server environments
+prerequisites: |
+  *   Knowledge of core Microsoft compute, storage, networking, and virtualization technologies
+  *   Working knowledge of common Windows Server management tools
+  *   Some experience of typical Windows Server workloads
+  *   Basic knowledge of Windows PowerShell.
+  *   Experience implementing and managing infrastructure as a service (IaaS) services in Azure
+  *   Experience working with Active Directory Domain Services (AD DS)
+  *   Experience working with Azure Active Directory (Azure AD)
+summary: |
+  Learn to use monitoring and troubleshooing tools, processes, and best practices to streamline app performance and availabilty of your Windows Server environment and your Windows Server IaaS VMs and hybrid instances.
+iconUrl: /learn/achievements/monitor-and-troubleshoot-windows-server-environments.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-active-directory
+- windows-server
+modules:
+- learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances
+- learn.azure.monitor-azure-vm-using-diagnostic-data
+- learn.monitor-vm-performance-using-azure-monitor-for-vms
+- learn.wwl.monitor-windows-server-performance
+- learn.wwl.manage-monitor-event-logs
+- learn.wwl.implement-windows-server-auditing-diagnostics
+- learn.wwl.troubleshoot-premises-hybrid-networking
+- learn.wwl.troubleshoot-windows-server-virtual-machines-azure
+- learn.wwl.troubleshoot-active-directory
+trophy:
+  uid: learn.wwl.monitor-troubleshoot-windows-server-environments.trophy

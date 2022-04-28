@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-stack-hub-powershell.connect-to-azure-stack-hub-powershell-user
+title: Connect to Azure Stack Hub with PowerShell as a user
+metadata:
+  title: Connect to Azure Stack Hub with PowerShell as a user
+  description: "Connect to Azure Stack Hub with PowerShell as a user"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-connect-azure-stack-hub-powershell-user.md)]

@@ -39,7 +39,7 @@ In this exercise, you'll:
       # This workflow contains a single job called "build"
       build:
         # The type of runner that the job will run on
-        runs-on: ubuntu-20.04
+        runs-on: ubuntu-latest
 
         # Steps represent a sequence of tasks that will be executed as part of the job
         steps:
@@ -57,7 +57,7 @@ In this exercise, you'll:
               echo test, and deploy your project.
     ```
 
-1. Above the **Edit new file** pane, rename the file from **main.yml** to **build-production.yml**.
+1. Above the **Edit new file** pane, rename the file from `main.yml` to `build-production.yml`.
 
     :::image type="content" source="../media/6-2-example-editor.png" alt-text="Screenshot that shows an example file being edited in the Edit new file pane on the GitHub website.":::
 
@@ -104,7 +104,7 @@ In this exercise, you'll:
 
 Let's work on the jobs you're going to run. In this process, you address both the build steps and the deploy steps from the diagram.
 
-The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubuntu-20.04` which is the environment you want this workflow to run in.
+The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubuntu-20.04`, which is the environment you want this workflow to run in.
 
 1. Rename the `build` key `build_push_image`.
 
@@ -112,7 +112,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
    Your file should look like this example:
 
-    ```yaml
+    ```yml
     name: Build and push the tagged build to production
 
     on:
@@ -130,19 +130,18 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     Leave the `checkout` option like you did when you created the staging image.
 
-1. In the right panel, search for **Docker Login**
-
-    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
-
-    :::image type="content" source="../media/6-3-docker-login.png" alt-text="Screenshot showing the search results listing Docker Login.":::
-
-    > [!NOTE]
-    > Docker action prior to version 2 had the login flow built-in, however, on versions 2 and above, these actions were separated. This is why we need two actions to set the entire workflow correctly.
-
-    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
+1. Create a new step that will gather the necessary version information. You'll use the `::set-output` internal command to create this step. Add the following lines below the checkout action:
 
     ```yml
-    name: Build and push the latest build to production
+    - name: Fetch latest version
+      id: fetch_version
+      run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
+    ```
+
+    Your YAML file should be looking like this:
+
+    ```yaml
+    name: Build and push the tagged build to production
 
     on:
       push:
@@ -155,6 +154,43 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
         steps:
           - uses: actions/checkout@v2
+
+          - name: Fetch latest version
+            id: fetch_version
+            run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
+    ```
+
+1. In the right panel, search for **Docker Login**. Select the first result published by **Docker**.
+
+    :::image type="content" source="../media/6-3-docker-login.png" alt-text="Screenshot showing the search results listing Docker Login.":::
+
+    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
+
+    :::image type="content" source="../media/6-3-docker-login-copy.png" alt-text="Screenshot that shows the copy icon after selecting the task.":::
+
+    > [!NOTE]
+    > Docker action prior to version 2 had the login flow built-in. However, on versions 2 and above, these actions were separated. This is why we need two actions to set the entire workflow correctly.
+
+    In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
+
+    ```yml
+    name: Build and push the tagged build to production
+
+    on:
+      push:
+        tags:
+          - 'v*'
+
+    jobs:
+      build_push_image:
+        runs-on: ubuntu-20.04
+
+        steps:
+          - uses: actions/checkout@v2
+
+          - name: Fetch latest version
+            id: fetch_version
+            run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
 
           - name: Docker Login
             # You may pin to the exact commit or the version.
@@ -177,12 +213,14 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
 
+    :::image type="content" source="../media/6-3-docker-action-copy.png" alt-text="Screenshot that shows the copy function after Build and push Docker images has been selected.":::
+
     Paste the copied YAML below the last key from the previously copied `docker-login` action.
 
     Your YAML file should look like this example:
 
     ```yaml
-    name: Build and push the latest build to production
+    name: Build and push the tagged build to production
 
     on:
       push:
@@ -195,6 +233,10 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
         steps:
           - uses: actions/checkout@v2
+
+          - name: Fetch latest version
+            id: fetch_version
+            run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
 
           - name: Docker Login
             # You may pin to the exact commit or the version.
@@ -235,7 +277,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     |password     |`docker/login`|`${{ secrets.ACR_PASSWORD }}`                   |
     |registry     |`docker/login`|`${{ secrets.ACR_NAME }}`                       |
     |repository   |`docker/build-and-push`|contoso-website                                 |
-    |tags         |`docker/build-and-push`|the version number obtained by `${GITHUB_REF#refs/tags}` |
+    |tags         |`docker/build-and-push`|the version number obtained by the `fetch_version` step |
     |context      |`docker/build-and-push`|`.`                                             |
     |push      |`docker/build-and-push`|`true`                                             |
 
@@ -244,7 +286,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     Your file should look like this example:
 
     ```yaml
-    name: Build and push the latest build to production
+    name: Build and push the tagged build to production
 
     on:
       push:
@@ -258,6 +300,10 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
         steps:
           - uses: actions/checkout@v2
 
+          - name: Fetch latest version
+            id: fetch_version
+            run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
+
           - name: Docker Login
             uses: docker/login-action@v1
             with:
@@ -269,9 +315,11 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             uses: docker/build-push-action@v2
             with:
               context: .
-              tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${GITHUB_REF#refs/tags}
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
               push: true
     ```
+
+    Using `steps.` in the YAML is a common practice to refer to previous steps in the pipeline. When we used `set-output` in the `fetch_version` step, we set the output of the step to the value of the `GITHUB_REF` variable. This output is now available in the pipeline inside the `steps` object.
 
 1. Before you save the file, we'll also add another action between the checkout action and the login action to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
 
@@ -285,7 +333,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     Your final file should be like this:
 
     ```yaml
-    name: Build and push the latest build to production
+    name: Build and push the tagged build to production
 
     on:
       push:
@@ -298,6 +346,10 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
         steps:
           - uses: actions/checkout@v2
+
+          - name: Fetch latest version
+            id: fetch_version
+            run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
 
           - name: Set up Buildx
             uses: docker/setup-buildx-action@v1
@@ -313,7 +365,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             uses: docker/build-push-action@v2
             with:
               context: .
-              tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${GITHUB_REF#refs/tags}
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
               push: true
     ```
 
@@ -321,13 +373,39 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     This time, the action won't be triggered because you didn't push a new tag. But our earlier action triggers and builds a new `latest` image.
 
+## Create a personal access token (PAT)
+
+1. Go to the fork of the sample repository in the GitHub website. On the top right hand corner, select your profile photo, then click **Settings**.
+
+1. Select **Developer settings**.
+
+1. Select **Personal access tokens**.
+
+1. Select **Generate new token**.
+
+1. Provide a name for your PAT, such as *myPersonalAccessToken*
+  
+1. Select the checkbox next to **public_repo**.
+
+    :::image type="content" source="../media/7-create-personal-access-token.png" alt-text="Screenshot that shows the personal access tokens page.":::
+
+1. Select **Generate token** at the bottom of the page.
+
+1. Select the copy icon to copy your PAT. Make note of the PAT, as it will be used in later steps.
+
+    :::image type="content" source="../media/7-copy-personal-access-token.png" alt-text="Screenshot that shows the personal access token after it has been created.":::
+
 ## Check the results
 
-1. Open your cloned repository in Azure Cloud Shell. Run `git tag -a v1.0.0 -m'First tag'`.
+1. Open your cloned repository in Azure Cloud Shell. Run `git pull`.
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
+  
+1. Run `git tag -a v2.0.0 -m 'First tag'`.
 
 1. Run `git push --tags`.
+
+1. When prompted, provide your GitHub username, and the PAT created previously as the password.
 
 1. Select the **Actions** tab and check the running process.
 

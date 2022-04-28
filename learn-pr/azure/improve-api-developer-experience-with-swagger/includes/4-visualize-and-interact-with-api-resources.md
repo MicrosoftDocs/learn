@@ -1,10 +1,10 @@
-The Swagger UI enables you to interact and visualize an API's resources without requiring access to the source code. The graphical representation of your API is automatically generated from your OpenAPI specification, and makes it easier for other developers to build apps that consume your APIs.
+The Swagger UI lets you interact and visualize an API's resources without requiring access to the source code. The graphical representation of your API is automatically generated from your OpenAPI specification, and makes it easier for other developers to build apps that consume your APIs.
 
 The Swagger UI visualizes operations and methods clearly, as shown in the following image.
 
 :::image type="content" source="../media/Swagger_UI.png" alt-text="Operations of API in Swagger UI." loc-scope="third-party"::: <!-- Swagger, no-loc -->
 
-The Swagger UI also enables you to interact, and even try out each operation.
+The Swagger UI also allows you to interact, and even try out each operation.
 
 :::image type="content" source="../media/Swagger_UI_interact.png" alt-text="Interaction with API Operation in Swagger UI." loc-scope="third-party":::
 
@@ -35,7 +35,7 @@ public ActionResult<string> GetByName(string firstName, string lastName)
 Here's the XML nodes in use:
 
 - summary: A high-level summary of what the method/class/field is or does.
-- remarks: Additional detail about the method/class/field.
+- remarks: More detail about the method/class/field.
 - param: A parameter to the method, and what it represents.
 - returns: A description of what the method returns.
 
@@ -45,7 +45,7 @@ The Swashbuckle tooling will automatically include your XML documentation commen
 
 ## Data annotations
 
-It's the same with data annotations! Just add an annotation to your model, and Swagger will extend the API documentation to include it.
+It's the same with data annotations. Just add an annotation to your model, and Swagger will extend the API documentation to include it.
 
 For example, if you add the following annotation to a controller:
 
@@ -53,7 +53,7 @@ For example, if you add the following annotation to a controller:
 [Produces("application/json")]
 ```
 
-... you'll see the added information in Swagger UI!
+... you'll see the added information in Swagger UI:
 
 :::image type="content" source="../media/Swagger_UI_annotations.png" alt-text="Image showing Swagger UI with added content type added to annotations." loc-scope="third-party":::
 
@@ -61,14 +61,14 @@ For example, if you add the following annotation to a controller:
 
 There are several data annotations you should use when describing your API.
 
-- Identify which `content-types` your API handles on requests and responses. The following specifies the only content type your API should use in both directions is `application/json`.
+- Identify which `content-types` your API handles on requests and responses. The following attribute specifies the only content type your API should use in both directions is `application/json`.
 
     ```csharp
     [Produces("application/json")]
     [Consumes("application/json")]
     ```
 
-- Identify the potential HTTP response codes that could be returned to the calling client. The following illustrates an API that could return a 404 Not Found.
+- Identify the potential HTTP response codes that could be returned to the calling client. The following attribute illustrates an API that could return a 404 Not Found.
 
     ```csharp
     [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -80,8 +80,8 @@ There are several data annotations you should use when describing your API.
     [ApiConventionMethod(typeof(DefaultApiConventions))]
     ```
 
-- Emit an `operationId` to significantly improve the API consumption experience including documentation, code-generation and integration with other services. You can automatically generate the `operationId` by including the `Name` property in the HTTP verb filter. 
+- Generate an `operationId` to significantly improve the API consumption experience including documentation, code generation, and integration with other services. You can automatically generate the `operationId` by including the `Name` property in the HTTP verb filter. 
 
     ```csharp
-    [HttpGet("{Height}/{Width}", Name="GetPrice"]
+    [HttpGet("{Height}/{Width}", Name="GetPrice")]
     ```

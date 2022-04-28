@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You've created a brand new Azure Cosmos DB account with a write region in **West US** and two read regions in **UK South** and **Japan East**. You have made no further configuration changes from the default configuration for a new account. There's a current data center in **West US**. What will Azure Cosmos DB do as a failover action?"
+    choices:
+    - content: "Failover to **UK South**"
+      isCorrect: false
+      explanation: "Incorrect. Automatic failover is not enabled for new accounts by default."
+    - content: "Nothing"
+      isCorrect: true
+      explanation: "Correct. You must enable automatic failover before a failover can occur."
+    - content: "Failover to **Japan East**"
+      isCorrect: false
+      explanation: "Incorrect. Automatic failover is not enabled for new accounts by default."
+  - content: "Which property of the **CosmosClientOptions** class in the .NET SDK for Azure Cosmos DB SQL API is used to configure a list of preferred geo-replication regions?"
+    choices:
+    - content: "``ApplicationRegion``"
+      isCorrect: false
+      explanation: "Incorrect. The **ApplicationRegion** property can only configure a single region."
+    - content: "``ApplicationPreferredRegions``"
+      isCorrect: true
+      explanation: "Correct. The **ApplicationPreferredRegions** property sets a list of regions in priority order."
+    - content: "``ConnectionMode``"
+      isCorrect: false
+      explanation: "Incorrect. This property is used to configure the connection mode to either **direct** or **gateway**."

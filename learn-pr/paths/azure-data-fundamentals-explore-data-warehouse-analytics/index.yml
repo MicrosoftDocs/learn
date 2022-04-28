@@ -1,30 +1,33 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.azure-data-fundamentals-explore-data-warehouse-analytics
 metadata:
-  title: 'Azure Data Fundamentals: Explore modern data warehouse analytics in Azure'
-  description: 'Azure Data Fundamentals: Explore modern data warehouse analytics in Azure'
-  ms.date: 06/28/2020
+  title: 'Microsoft Azure Data Fundamentals: Explore data analytics in Azure'
+  description: 'Microsoft Azure Data Fundamentals: Explore data analytics in Azure'
+  ms.date: 03/08/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Azure Data Fundamentals: Explore modern data warehouse analytics in Azure'
-prerequisites: ""
+title: 'Microsoft Azure Data Fundamentals: Explore data analytics in Azure'
+prerequisites: |
+  Before starting this learning path, you should have a fundamental understanding of core data concepts, relational data, and non-relational data.
 summary: |
-  Learn the fundamentals of database concepts in a cloud environment, get basic skilling in cloud data services, and build your foundational knowledge of cloud data services within Microsoft Azure. You will explore the processing options available for building data analytics solutions in Azure. You will explore Azure Synapse Analytics, Azure Databricks, and Azure HDInsight.
+  The phenomenal growth in data in recent years is fueling digital transformation of businesses and other organizations by empowering fast and informed decision making through data analytics. Microsoft Azure provides multiple services that you can combine to build large-scale analytics solutions that leverage the latest technologies and techniques for data ingestion, storage, modeling, and visualization.
+  This learning path helps you prepare for the [Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals?azure-portal=true) certification.
 iconUrl: /learn/achievements/azure-data-fundamentals-explore-data-warehouse-analytics.svg
 levels:
 - beginner
 roles:
-- administrator
-- business-user
+- data-analyst
 - data-engineer
+- database-administrator
+- solution-architect
+- student
 products:
 - azure
 modules:
 - learn.wwl.examine-components-of-modern-data-warehouse
-- learn.wwl.explore-data-ingestion-azure
-- learn.wwl.explore-data-storage-processing-azure
-- learn-bizapps.get-started-with-power-bi
+- learn.wwl.explore-fundamentals-of-stream-processing
+- learn.wwl.explore-fundamentals-of-data-visualization
 trophy:
   uid: learn.wwl.azure-data-fundamentals-explore-data-warehouse-analytics.trophy

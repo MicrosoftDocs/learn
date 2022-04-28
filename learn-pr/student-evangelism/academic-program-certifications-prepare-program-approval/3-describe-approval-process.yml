@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-prepare-program-approval.describe-approval-process
+title: About the program approval process
+metadata:
+  title: About the program approval process
+  description: This unit describes the program approval process.
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-describe-approval-process.md)]

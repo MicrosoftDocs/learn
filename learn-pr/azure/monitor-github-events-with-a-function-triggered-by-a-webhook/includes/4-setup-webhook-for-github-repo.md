@@ -1,14 +1,12 @@
-In GitHub, webhooks can be set up on an organization or a specific repository. The webhook will be triggered each time one or more subscribed events occurs. For example, the *Gollum* event allows you to listen for wiki updates; specifically creation and updates for a wiki page.
+In GitHub, webhooks can be set up for an organization or for a specific repository. A webhook is triggered each time one or more subscribed events occur. For example, the *Gollum* event allows you to listen for wiki updates, in particular, the creation of and updates for a wiki page.
 
-In this unit, you'll learn how to set up a webhook listening for a change event from your company's GitHub wiki. 
+In this unit, you'll learn how to set up a webhook that listens for a change event from your company's GitHub wiki.
 
 ## Set up a webhook
 
-Setting up a webhook is a two-step process. You specify how you want your webhook to behave through GitHub and what events it should listen to. Then you set up your function in Azure Functions to receive and manage the payload received from the webhook.
+Setting up a webhook is a two-step process. You specify how you want your webhook to behave through GitHub and what events it should listen to. Then you set up your function in Azure Functions to receive and manage the payload received from the webhook. In the example scenario, we're setting up a webhook for a specific repository.
 
-In GitHub, you can install webhooks for an organization or a repository. In the example scenario case, we're setting up a webhook on a specific repository.
-
-To set up the webhook, go to the **settings** page of your repository in the GitHub portal. Select **Webhooks**, and then select **Add webhook**. Alternatively, you can build and manage a webhook through the Webhooks API, but this module doesn't cover this approach.
+To set up the webhook, in the GitHub portal, select **Settings** from the top menu bar. The **Settings** page appears, with the name of your repository. In the left menu, select **Webhooks**, and then select **Add webhook**. You can also build and manage a webhook through the Webhooks API, which is not covered in this module.
 
 Webhooks require a couple of configuration options before you can use them. We'll go through each of these settings next.
 
@@ -22,7 +20,7 @@ Each event type has a specific payload format. That payload contains information
 
 Webhooks can be delivered using two different content types:
 
-- The *application/json* content type delivers the JSON payload directly as the body of the POST request.
+- The *application/json* content type delivers the JSON payload directly as the body of a POST request.
 - The *application/x-www-form-urlencoded* content type sends the JSON payload as a form parameter, called *payload*.
 
 > [!NOTE]
@@ -30,8 +28,10 @@ Webhooks can be delivered using two different content types:
 
 ## Events
 
-Events are at the center of webhooks. Events occur whenever actions are taken in the repository. When the event occurs, the webhook fires off and calls the URL that you specify, sending along the payload and event information to your URL.
+Events are at the center of webhooks. Events occur whenever actions are taken in the repository. When the event occurs, the webhook fires and calls the URL that you specify, sending along the payload and event information to your URL. For example, to respond whenever an issue is raised in a repository, select **Let me select individual events**, and then select the **Issues** checkbox. Make sure you select the **Active** checkbox to receive issue events for triggered webhooks. Then select **Add webhook** to activate the trigger.
 
-A full list of webhook events, and when they can run, can be found in the [Webhooks events reference](https://developer.github.com/webhooks/#events). For example, to respond whenever an issue is raised in a repository, click **Let me select individual events**, and then select **Issues**. Make sure you select **Active** to receive issue events for triggered webhooks.
+To listen for updates to the wiki for the repository, select the **Wiki** checkbox; this event is the *Gollum* event mentioned earlier. Select **Add webhook** to save all the individual events you selected.
 
-To listen for updates to the wiki for the repository, select the *Wiki* checkbox; this event is the *Gollum* event mentioned earlier. In the next exercise, we'll walk you through the process of setting up a webhook for a GitHub repository.
+A full list of webhook events, and when they can run, can be found by visiting [GitHub Webhooks Events](https://developer.github.com/webhooks/#events). 
+
+In the next exercise, we'll walk you through the process of setting up a webhook for a GitHub repository.

@@ -1,4 +1,4 @@
-In this exercise, you'll set up a webhook for a GitHub repository. You'll learn how to listen for specific events, (in this case, the *Gollum* event), and how to make your webhook callback to your function when the event is triggered.
+In this exercise, you'll set up a webhook for a GitHub repository. You'll learn how to listen for specific events (in this case, the *Gollum* event), and how to make your webhook callback to your function when the event is triggered.
 
 ## Setup
 
@@ -6,7 +6,7 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 1. Create a new repository by selecting **New** in the left menu pane. The **Create a new repository** page appears.
 
-1. In the **Repository name** box, enter a meaningful name such as **LearnWebhookTest**.
+1. In the **Repository name** box, enter a meaningful name such as *LearnWebhookTest*.
 
 1. Select **Public** to activate your wiki module, and find it in the menu.
 
@@ -14,82 +14,80 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 1. Select the **creating a new file** link.
 
-1. In the top menu bar, select the **Wiki** tab. A **Welcome** page appears.
+1. In the top menu bar, select **Wiki** to display the pages in your repository (or *repo*). A  **Welcome** page appears.
 
 1. Select **Create the first page**. The **Create new page** template appears.
 
-1. Add some text, and select **Save Page**.
+1. Add some text, and select **Save Page**. The first page in a Wiki is the Home page.
 
 ## Add a webhook for the Gollum event
 
-The **Gollum** event is the name of the event in GitHub that is fired whenever a page in the repository's wiki is created or updated.
+**Gollum** is the name of a GitHub event that is fired whenever a page in a repository's wiki is created or updated.
 
-1. In the right **Pages** box, select **Home** to return to the home page for your repository.
+1. On the home page in the Wiki view is a **Pages** sidebar that lists the pages in your repo. Select **Home** to display the home page.
 
-1. In the top menu bar, select the **Settings** tab.
+1. On the home page, in the top menu bar, select **Settings**. The **Settings** pane appears.
 
-1. In the left menu pane, select **Webhooks**.
+1. In the **Settings** sidebar, select **Webhooks**. The **Webhooks** pane appears.
 
-1. Select **Add webhook** on the top-right. You may have to confirm your password for GitHub.
+1. On the top right, select **Add webhook**. GitHub may ask you to confirm your password for GitHub.
 
-1. In the **Payload URL** box, set the payload to the URL for your function app's function from the previous exercise. Remember that it looks similar to this:
+1. On the **Webhooks/ Add webhook** pane, enter the following values for each setting.
 
-    ```text
-    https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==
-    ```
+    | Setting  | Value |
+    | ---------------- |
+    | Payload URL  | URL for your Azure function app from the previous exercise. For help see the following note. |
+    | Content type | From the dropdown list, select **application/json**. |
+    | Which events would you like to trigger this webhook?| Select **Let me select individual events.** In the event list that appears, scroll down and select the **Wiki** checkbox. Make sure no other checkboxes are selected. |
+    | Active  | Checked.|
 
-1. In the **Content type** dropdown list, select **application/json**.
+    > [!TIP]
+    > Copy the function URL from the Azure HttpTrigger pane by selecting **Get function Url** from the command bar. Your URL looks similar to: `https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==`
 
-1. In the section **Which events would you like to trigger this webhook?**, select **Let me select individual events**.
+1. Select **Add webhook**. The **Webhooks** pane appears.
 
-1. Scroll down and select the **Wiki** checkbox. Make sure no other checkboxes are selected.
-
-1. At the bottom of the page, ensure **Active** is checked, and select **Add webhook**.
-
-1. Verify that your new webhook appears when the **Webhooks** page reappears.
+1. Verify that your new webhook appears. It should have *(gollum)* at the end of its name.
 
 ## Test the webhook
 
-1. In the GitHub portal for your repository, in the top menu bar, select the **Wiki** tab.
+1. In GitHub, in the top menu bar, select **Wiki**. The **Home** page that you created earlier appears.
 
-1. Select the page that you created earlier.
+1. Select **Edit**. The **Editing Home** pane appears.
 
-1. Select **Edit**.
-
-1. In the text area of the page, enter the following text:
+1. In the text area of the pane, enter the following text:
 
     ```text
     Testing Webhook
     ```
 
-1. Select **Save Page** to save your update.
+1. Select **Save Page**. The **Home** page reappears.
 
-1. In the top menu bar, select the **Settings** tab.
+1. In the top menu bar, select **Settings**. The **Settings** pane appears.
 
-1. IN the left menu pane, select **Webhooks**.
+1. In the sidebar, select **Webhooks**. The **Webhooks** pane appears.
 
-    > [!NOTE]
-    > The webhook will indicate that the message was not processed correctly; it will generate an HTTP 400 error. The webhook is providing a payload that your function app wasn't expecting, and doesn't include a **name** parameter. You will learn how to parse the payload for a *Gollum* event in the next unit.
+1. Select **Edit**. The **Webhooks/Manage webhook** pane appears.
 
-1. Select **Edit** next to your webhook.
+1. Select the **Recent Deliveries** tab (you may need to scroll to the bottom of the page).
 
-1. Scroll down to the **Recent Deliveries** section.
+1. In the list, select the top (latest) delivery entry by selecting the ellipsis (**...**).
 
-1. Select the latest delivery entry by selecting the ellipsis (**...**).
-
-    You'll see the *Header* information, including the *Event Type*:
+    You'll see the **Headers** section, including the *Event*:
 
     ```json
     Request URL: https://testwh123456.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ%3D%3D
     Request method: POST
+    Accept: */*
     content-type: application/json
-    Expect: 
     User-Agent: GitHub-Hookshot/16496cb
     X-GitHub-Delivery: 9ed46280-6ab3-11e9-8a19-f1a14922a239
     X-GitHub-Event: gollum
+    X-GitHub-Hook-ID: 312141005
+    X-GitHub-Hook-Installation-Target-ID: 394459163
+    X-GitHub-Hook-Installation-Target-Type: repository
     ```
 
-   You'll also see that the **Payload** section contains information indicating that your wiki page was edited. The payload contains **pages**, **repository**, and **sender** sections, which should look something like the example shown below:
+   You'll also see that the **Payload** section contains information indicating that your wiki page was edited. The payload contains **pages**, **repository**, and **sender** sections, which should look something like the following example:
 
     ```json
         "pages": [
@@ -113,6 +111,6 @@ The **Gollum** event is the name of the event in GitHub that is fired whenever a
         }
     ```
 
-1. In the **Recent Deliveries** section, select the **Response** tab.
+1. Under the **Recent Deliveries** tab, select the **Response** tab.
 
-    You'll see the response message generated by the Azure function. For this example, the body should contain the message. *This HTTP triggered function executed successfully. Pass a name on the query string or in the request body for a personalized response*.
+    You'll see the response message generated by the Azure function. For this example, the body should contain the message. *This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response*.

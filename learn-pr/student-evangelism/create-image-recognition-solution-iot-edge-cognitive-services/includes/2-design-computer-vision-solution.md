@@ -1,7 +1,7 @@
 In this module, you'll build an image recognition solution with an IoT Edge device capable of communicating via audio. This solution will use three Azure services, each with free tier services.
 - [Azure IoT Hub](https://azure.microsoft.com/services/iot-hub/)
-- [Azure Custom Vision](https://azure.microsoft.com/en-us/services/cognitive-services/custom-vision-service/)
-- [Azure Speech Services](https://azure.microsoft.com/en-us/services/cognitive-services/speech-services/)
+- [Azure Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/)
+- [Azure Speech Services](https://azure.microsoft.com/services/cognitive-services/speech-services/)
 
 You'll configure IoT Edge runtime for your Linux computer to act as an IoT Edge device. You'll use Visual Studio Code to deploy your solution at the edge.
 

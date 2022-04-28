@@ -4,23 +4,25 @@ The auditing feature tracks database and server events and writes events to an a
 
 ### Set up: Use scripts to deploy Azure SQL Database
 
-At the right is Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the labs, you'll run a script in Cloud Shell to create your environment, an AdventureWorks database in Azure SQL Database. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+At the right is Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercise, you'll run a script in Cloud Shell to create your environment, AdventureWorks, in Azure SQL Database. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
-1. Start by obtaining your local IP address. Ensure that you're disconnected from any VPN service, and open a local PowerShell terminal on your device. Run the following command, and note the resulting IP address.
+1. Start by obtaining your local IP address. Ensure that you're disconnected from any VPN service, and **open a local PowerShell terminal on your device**. Run the following command, and note the resulting IP address.
 
     ```powershell
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
+    
+    
     ```
 
 1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
 
     ```powershell
     $adminSqlLogin = "cloudadmin"
-    $password = Read-Host "Your username is 'cloudadmin'. Please enter a password for your Azure SQL Database server that meets the password requirements"
+    $password = Read-Host "Your username is 'cloudadmin'. Enter a password for your Azure SQL Database server that meets the password requirements"
     # Prompt for local ip address
-    $ipAddress = Read-Host "Disconnect your VPN, open PowerShell on your machine and run '(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content'. Please enter the value (include periods) next to 'Address': "
+    $ipAddress = Read-Host "Disconnect your VPN, open PowerShell on your machine and run '(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content'. Enter the value (include periods) next to 'Address': "
     # Get resource group and location and random string
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like "<rgn>Sandbox resource group name</rgn>"
     $resourceGroupName = "<rgn>Sandbox resource group name</rgn>"
@@ -29,24 +31,24 @@ These scripts should take three to five minutes to complete. Be sure to note you
     $location = $resourceGroup.Location
     # The logical server name has to be unique in the system
     $serverName = "aw-server$($uniqueID)"
+    
+    
     ```
 
 1. Output and store in a text file the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press Enter after you paste the code, because the last line won't be run by default.
 
     ```powershell
-    Write-Host "Please note your unique ID for future exercises in this module:"  
-    Write-Host $uniqueID
-    Write-Host "Your resource group name is:"
-    Write-Host $resourceGroupName
-    Write-Host "Your resources were deployed in the following region:"
-    Write-Host $location
-    Write-Host "Your server name is:"
-    Write-Host $serverName
+    Write-Host "Your unique ID for future exercises in this module:" $uniqueID
+    Write-Host "Your resource group name is:" $resourceGroupName
+    Write-Host "Your resources were deployed in the following region:" $location
+    Write-Host "Your server name is:" $serverName
+    
+    
     ```
 
     Remember to note your password, unique ID, and region. You'll use them throughout the module.
 
-1. Run the following script to deploy an Azure SQL Database instance and logical server with the AdventureWorks sample. The script will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units.
+1. Run the following script to deploy an Azure SQL Database instance and logical server with the AdventureWorks sample. The script will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units. Allow several minutes for this script to complete. 
 
     ```powershell
     # The logical server name has to be unique in the system
@@ -105,31 +107,64 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ### Configure auditing
 
-1. In the Azure portal, in the search bar type **Log analytics**, and under *Marketplace* select **Log Analytics Workspace**. Select your subscription, resource group, and provide a name like **azuresql-la**. 
+1. In the [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) search bar, enter **Log analytics**, and then select **Log Analytics workspaces** from the results. The **Log Analytics workspaces** pane appears.
 
-    > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+1. Select **Create**. The **Create Log Analytics workspace** appears.
+  
+1. On the **Basics** tab, enter the following values for each setting.
 
-1. Pick the region closest to where you are located and select **Review + Create** > **Create**. 
+    | Setting | Value |
+    |---|---|
+    | **Project Details** |
+    | Subscription | Concierge Subscription |
+    | Resource group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> |
+    | **Instance Details** |
+    | Name | Enter *azuresql-la* |
+    | Region | Select a location closest to you from the following list |
 
-1. In the Azure portal, go to your Azure SQL Database to enable auditing on the database (not logical server).
+    [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)] 
+    
+1.  Select **Review + create**, wait until your inputs have been validated, and then select **Create**. Wait until the resource is deployed. 
+  
+1.  Select **Go to resource**. The **Overview** pane for your Logic App appears.
 
-1. On the left pane, under **Security**, select **Auditing**. Review the options.
+1. In the Azure portal, go to your **AdventureWorks** SQL Database.
 
-    You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level, which you will do in this unit, the two audits would happen in parallel. One does not override the other. Alternatively, you could audit only at the database level.
+1. On the menu, under **Security**, select **Auditing**. Review the options.
 
-1. Select **Enable Azure SQL Auditing**.  
+    You can apply auditing at the server level, which applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level (which you will do in this unit), both audits occur in parallel; one does not override the other. 
 
-1. Select **Log Analytics** and under Log Analytics, select the workspace you created.
+1. Select the slide toggle to **Enable Azure SQL Auditing**. 
 
-1. Select **Storage**, and under Storage account, select the storage account that contains *sqlva* and *a random string of letters and numbers*. In this storage account, you can collect XEvent log files that are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you'll see more on how this differs from Log Analytics.
+1. Select the  **Storage** check box, and then complete the required fields. 
+     - For **Subscription**, from the dropdown list, select the Concierge Subscription.
+     - For **Storage Account**, from the dropdown list, select the account that starts with **sqlva** followed by a random string of letters and numbers. 
+ 
+   The **sqlva** storage account will be used to collect XEvent log files, which are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you'll review the container to learn how log files differ from Log Analytics.
+   
+    > [!TIP]
+    > If you do not see any storage accounts, create a new account. You may need to refresh your page after a couple minutes before it shows up.  
 
-    Depending on your organization, in production you might consider having a separate storage account for the audit logs.
+    If you are going to be auditing your production environment, consider having a separate storage account for audit logs.
 
-1. Under Advanced properties, for **Retention (Days)** enter **7**, and for **Storage access key**, select **Primary**.
+1. Select **Advanced properties** to expand the section and set the following configuration items:
+    - For **Retention (Days)**, enter **7**
+    - For **Storage access key**, select **Primary**.
 
-1. Select **Save**.  
+    > [!NOTE]
+    > If you do not see an **Advanced properties**, select **Save** from the command bar, and then repeat the configuration instructions for this page.  
 
-    After the configuration is saved, select the **X** button to close the database-level **Auditing** pane.  
+    1. Select the **Log Analytics** check box, and then complete the required fields. 
+     - For **Subscription**, select the Concierge Subscription from the dropdown list.
+     - For **Log Analytics**, select the Log Analytics workspace you created earlier in this exercise (asuresql-laNNN).
 
-You've now enabled auditing for a storage account and an Azure Monitor workspace. Later, you'll dive deeper into the auditing capabilities in Azure SQL. You'll see how to analyze the audit logs to view all the changes you've made throughout the module, as well as some other interesting use cases.  
+
+1. From the command bar, select **Save**.  
+
+    It may take a few minutes for the configuration to process. 
+    
+1. Select **OK** to save your configuration.
+    
+    After the configuration is saved, in the breadcrumbs, select AdventureWorks to close the Audit pane.  
+
+You've now enabled auditing for a storage account and an Azure Log Analytics workspace. Later, you'll dive deeper into the auditing capabilities in Azure SQL. You'll see how to analyze the audit logs to view all the changes you've made throughout the module, as well as some other interesting use cases.  

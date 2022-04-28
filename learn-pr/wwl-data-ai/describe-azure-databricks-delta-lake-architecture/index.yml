@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.wwl.describe-azure-databricks-delta-lake-architecture
+metadata:
+  title: Describe Azure Databricks Delta Lake architecture
+  description: "Describe Azure Databricks Delta Lake architecture"
+  ms.date: 01/06/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe Azure Databricks Delta Lake architecture
+summary: Use Delta Lakes as an optimization layer on top of blob storage to ensure reliability and low latency within unified Streaming + Batch data pipelines.
+abstract: |
+  In this module, you will:
+  - Process batch and streaming data with Delta Lake.
+  - Learn how Delta Lake architecture enables unified streaming and batch analytics with transactional guarantees within a data lake.
+prerequisites: |
+  None
+iconUrl: /learn/achievements/describe-azure-databricks-delta-lake-architecture.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.describe-azure-databricks-delta-lake-architecture.introduction
+- learn.wwl.describe-azure-databricks-delta-lake-architecture.describe-bronze-silver-gold-architecture
+- learn.wwl.describe-azure-databricks-delta-lake-architecture.perform-batch-stream-processing
+- learn.wwl.describe-azure-databricks-delta-lake-architecture.knowledge-check
+- learn.wwl.describe-azure-databricks-delta-lake-architecture.summary
+badge:
+  uid: learn.wwl.describe-azure-databricks-delta-lake-architecture.badge

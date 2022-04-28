@@ -3,13 +3,14 @@ uid: learn.wwl.manage-enterprise-security-in-hdinsight.understand-operating-syst
 title: Understand operating system security
 metadata:
   title: Understand operating system security
-  description: "Understand Operating System security"
-  ms.date: 02/28/2020
+  description: "Understand operating system security"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/4-understand-operating-system-security.md)]

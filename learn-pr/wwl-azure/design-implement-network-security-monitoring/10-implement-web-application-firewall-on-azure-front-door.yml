@@ -4,12 +4,13 @@ title: Implement a Web Application Firewall on Azure Front Door
 metadata:
   title: Implement a Web Application Firewall on Azure Front Door
   description: "Implement a Web Application Firewall on Azure Front Door"
-  ms.date: 07/16/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/10-implement-web-application-firewall-on-azure-front-door.md)]
@@ -18,23 +19,23 @@ quiz:
   questions:
   - content: "What are the two modes that a WAF policy can use?"
     choices:
-    - content: "WAF policy can either be in Prevention mode or Detection mode."
-      isCorrect: true
-      explanation: "Correct. When you create a Web Application Firewall (WAF) policy, by default the WAF policy is in Detection mode, but you can change it to Prevention mode."
     - content: "WAF policy can either be in Default mode or Custom mode."
       isCorrect: false
       explanation: "Incorrect. When you create a Web Application Firewall (WAF) policy, there are no modes called Default or Custom."
     - content: "WAF policy can either be in Default Rule Set mode or Detection mode."
       isCorrect: false
       explanation: "Incorrect. When you create a Web Application Firewall (WAF) policy, by default the WAF policy is in Detection mode, however there is no mode called Default Rule Set."
+    - content: "WAF policy can either be in Prevention mode or Detection mode."
+      isCorrect: true
+      explanation: "Correct. When you create a Web Application Firewall (WAF) policy, by default the WAF policy is in Detection mode, but you can change it to Prevention mode."
   - content: "What are the two types of custom rule in a WAF policy?"
     choices:
-    - content: "Match rules and rate limit rules.."
-      isCorrect: true
-      explanation: "Correct. There are two types of custom rules: match rules and rate limit rules."
     - content: "String rules and match rules."
       isCorrect: false
       explanation: "Incorrect. There are two types of custom rules: match rules and rate limit rules, however there is no such custom rule type as String rule"
+    - content: "Match rules and rate limit rules."
+      isCorrect: true
+      explanation: "Correct. There are two types of custom rules: match rules and rate limit rules."
     - content: "Priority rules and rate limit rules."
       isCorrect: false
       explanation: "Incorrect. There are two types of custom rules: match rules and rate limit rules, however there is no such custom rule type as Priority rule."

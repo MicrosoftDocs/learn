@@ -4,12 +4,13 @@ title: Describe Azure high availability and disaster recovery  features for Azur
 metadata:
   title: Describe Azure high availability and disaster recovery  features for Azure Virtual Machines
   description: "Describe Azure high availability and disaster recovery  features for Azure Virtual Machines"
-  ms.date: 08/23/2020
+  ms.date: 01/21/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-describe-azure-high-availability-disaster-recovery-features.md)]

@@ -15,4 +15,3 @@ The Action center will show the scan information, and the device timeline will i
 ### Initiate automated investigations
 
 You can start a new general purpose automated investigation on the device if needed. While an investigation is running, any other alert generated from the device will be added to an ongoing Automated investigation until that investigation is completed. In addition, if the same threat is seen on other devices, those devices are added to the investigation.
-

@@ -1,0 +1,46 @@
+### YamlMime:LearningPath
+uid: learn.student-evangelism.tech-resilience
+metadata:
+  title: Build your tech resilience
+  description: Resilience, or the ability to recover quickly from challenges, is an essential part of success in any field. Help build a more inclusive future for the tech industry.
+  brand: azure
+  ms.date: 09/07/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Build your tech resilience
+summary: |
+  Far too many talented people avoid choosing or actively decide to leave tech because it can be unwelcoming. Our mission? To help build a more inclusive future for the tech industry by fostering confidence, a growth mindset, resilience, and a sense of belonging. Start here to grow more as an individual and team and learn useful strategies that have a strong research base of evidence for improving effectiveness in the workplace. By the end of this series, we hope you have a new way of taking ownership over your problem-solving process, which you can apply when debugging code or when working with a team under a tight deadline.
+  
+  In this learning path you'll:
+   - Learn how to develop a growth mindset.
+   - Enhance your self-efficacy.
+   - Cultivate a culture of belongingness.
+   - Exercise your emotional intelligence.
+   - Give and receive effective feedback.
+   - Grow your cognitive flexibility.
+   - Leverage self-regulation to work strategically.
+   - Communicate with others strategically through mirroring and coaching.
+   - Work with others by practicing active listening.
+prerequisites: None
+iconUrl: /learn/achievements/tech-resilience/path.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+modules:
+- learn.student-evangelism.develop-growth-mindset
+- learn.student-evangelism.enhance-self-efficacy
+- learn.student-evangelism.cultivate-culture-belong-tech
+- learn.student-evangelism.exercise-your-emotional-intelligence
+- learn.student-evangelism.give-receive-effective-feedback
+- learn.student-evangelism.grow-cognitive-flexibility
+- learn.student-evangelism.self-regulation-work-strategically
+- learn.student-evangelism.communicate-strategically-mirror-coach
+- learn.student-evangelism.practice-active-listening
+trophy:
+  uid: learn.student-evangelism.tech-resilience.trophy

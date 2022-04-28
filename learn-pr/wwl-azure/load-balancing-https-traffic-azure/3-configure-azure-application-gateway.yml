@@ -4,12 +4,13 @@ title: Configure Azure Application Gateway
 metadata:
   title: Configure Azure Application Gateway
   description: "Configure Azure Application Gateway"
-  ms.date: 07/15/2021
+  ms.date: 02/14/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 25
 content: |
   [!include[](includes/3-configure-azure-application-gateway.md)]
@@ -20,7 +21,7 @@ quiz:
     choices:
     - content: "Autoscaling"
       isCorrect: true
-      explanation: "Correct,  With autoscaling enabled, the Application Gateway scales up or down based on application traffic requirements."
+      explanation: "Correct, With autoscaling enabled, the Application Gateway scales up or down based on application traffic requirements."
     - content: "Manual scaling"
       isCorrect: false
       explanation: "Incorrect, With Manual scaling enabled, the gateway won't autoscale. If there is more traffic than the Application Gateway can handle, it could result in traffic loss."
@@ -31,7 +32,7 @@ quiz:
     choices:
     - content: "A listener is an entity that checks for incoming connection requests."
       isCorrect: true
-      explanation: "Correct,  A listener is a logical entity that checks for incoming connection requests by using the port, protocol, host, and IP address."
+      explanation: "Correct, A listener is a logical entity that checks for incoming connection requests by using the port, protocol, host, and IP address."
     - content: "A listener is an entity that routes traffic based on basic or path-based rules."
       isCorrect: false
       explanation: "Incorrect, A routing rule is an entity that routes traffic based on basic or path-based rules."

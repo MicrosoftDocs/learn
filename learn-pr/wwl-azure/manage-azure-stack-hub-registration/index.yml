@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.manage-azure-stack-hub-registration
+metadata:
+  title: Manage Azure Stack Hub registration
+  description: "Manage Azure Stack Hub registration"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Azure Stack Hub registration
+summary: 'Certificates with appropriate DNS names for each Azure Stack Hub public infrastructure endpoint are necessary. This module helps you to prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
+abstract: |
+  * Recommend certificate strategy for Azure Stack Hub.
+  * Validate certificates for Azure Stack Hub.
+  * Run secret rotation PowerShell cmdlet for external certificates for Azure Stack Hub.
+prerequisites: |
+  * Working experience creating, assigning, and securing corporate identities.
+  * Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
+iconUrl: /learn/achievements/3-manage-azure-stack-hub-registration.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack
+- azure-storage
+units:
+- learn.wwl.manage-azure-stack-hub-registration.introduction
+- learn.wwl.manage-azure-stack-hub-registration.register-connected-environment
+- learn.wwl.manage-azure-stack-hub-registration.verify-azure-stack-hub-registration
+- learn.wwl.manage-azure-stack-hub-registration.update-registration
+- learn.wwl.manage-azure-stack-hub-registration.registration-using-powershell
+- learn.wwl.manage-azure-stack-hub-registration.knowledge-check
+- learn.wwl.manage-azure-stack-hub-registration.summary
+badge:
+  uid: learn.wwl.manage-azure-stack-hub-registration.badge

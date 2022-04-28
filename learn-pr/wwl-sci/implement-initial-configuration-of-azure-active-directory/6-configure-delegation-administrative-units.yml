@@ -4,12 +4,13 @@ title: Configure delegation by using administrative units
 metadata:
   title: Configure delegation by using administrative units
   description: "Configure delegation by using administrative units"
-  ms.date: 07/22/2021
+  ms.date: 03/04/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/6-configure-delegation-administrative-units.md)]

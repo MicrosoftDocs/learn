@@ -8,7 +8,8 @@ metadata:
   ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: e2e-hybrid
+  ms.custom: e2e-hybrid, team=cloud_advocates
+  ms.contributors: orthomas-03112021
 title: Security in hybrid cloud environments
 durationInMinutes: 10
 content: |
@@ -31,10 +32,10 @@ quiz:
 
   - content: "Which of the following hybrid security technologies can Tailwind Traders use to assess the security configuration of on-premises servers and IaaS VMs running the Windows Server 2019 operating system?"
     choices:
-    - content: "Azure Security Center"
+    - content: "Microsoft Defender for Cloud"
       isCorrect: true
-      explanation: "Azure Security Center can be used to assess the security configuration of enrolled servers running supported operating systems such as Windows Server 2019."
-    - content: "Azure Sentinel"
+      explanation: "Microsoft Defender for Cloud can be used to assess the security configuration of enrolled servers running supported operating systems such as Windows Server 2019."
+    - content: "Microsoft Sentinel"
       isCorrect: false
       explanation: "Sentinel allows you to collect and analyze data and telemetry, but it doesn't allow you to assess a computer's security configuration."
     - content: "System Center Configuration Manager"

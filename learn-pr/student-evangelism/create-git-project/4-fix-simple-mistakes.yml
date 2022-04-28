@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.create-git-project.fix-simple-mistakes
+title: Fix simple mistakes
+metadata:
+  title: Fix simple mistakes
+  description: Use Git's revert tool to correct minor mistakes.
+  ms.date: 10/08/2021
+  author: mshumba
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ms.custom: team=nextgen
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-fix-simple-mistakes.md)]

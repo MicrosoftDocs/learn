@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.update-infrastructure-for-azure-stack-hub.download-import-update-packages-manually
+title: Download and import update packages manually
+metadata:
+  title: Download and import update packages manually
+  description: "Download and import update packages manually"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-download-import-update-packages-manually.md)]

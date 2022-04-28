@@ -4,12 +4,13 @@ title: Determine ExpressRoute capabilities
 metadata:
   title: Determine ExpressRoute capabilities
   description: "Determine ExpressRoute capabilities"
-  ms.date: 07/27/2021
+  ms.date: 03/29/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-determine-expressroute-capabilities.md)]

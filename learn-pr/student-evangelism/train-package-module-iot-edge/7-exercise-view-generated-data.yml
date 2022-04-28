@@ -9,6 +9,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
+  ms.custom: team=nextgen
   zone_pivot_groups: bash-vscode
 durationInMinutes: 5 # dummy number at present
 content: |

@@ -3,27 +3,13 @@ uid: learn.language.rust-introduction.2-rust-overview
 metadata:
   title: What is Rust?
   description: Learn more about the Rust programming language.
-  ms.date: 07/26/2021
+  ms.date: 09/29/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: What is Rust?
 durationInMinutes: 2
 content: |
   [!include[](includes/2-rust-overview.md)]
-
-quiz:
-  questions:
-
-  - content: "How is Rust most similar to C and C++?"
-    choices:
-    - content: "Rust is type-safe, memory-safe, and data race-free."
-      isCorrect: false
-      explanation: "Incorrect. Rust provides all of three of these advantages in contrast to C and C++."
-    - content: "Rust can be used to develop an operating system kernel or device driver."
-      isCorrect: false
-      explanation: "Incorrect. Rust can be used for both embedded and bare-metal programming in contrast to C and C++."
-    - content: "Rust has a minimal and optional runtime."
-      isCorrect: true
-      explanation: "Correct! Rust shares this advantage with other programming languages like C and C++."

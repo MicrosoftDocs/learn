@@ -1,9 +1,9 @@
-After creating and running a pipeline to train the model, you need a second pipeline that performs the same data transformations for new data, and then uses the trained model to *inference* (in other words, predict) label values based on its features. This will form the basis for a predictive service that you can publish for applications to use.
+After creating and running a pipeline to train the model, you need a second pipeline that performs the same data transformations for new data, and then uses the trained model to *infer* (in other words, predict) label values based on its features. This will form the basis for a predictive service that you can publish for applications to use.
 
 ## Create and run an inference pipeline
 
 1. In Azure Machine Learning Studio, click the **Designer** page to view all of the pipelines you have created. Then open the **Auto Price Training** pipeline you created previously.
-2. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Auto Price Training-real time inference** will be opened.
+2. Navigate to the the **Create inference pipeline** drop-down list, located on the top right hand corner of the screen. If you do not see it, you may need to expand your screen or click on the **...** three dots which represent **More Actions** on the top right hand corner. Then click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Auto Price Training-real time inference** will be opened.
 
     *If the pipeline does not include **Web Service Input** and **Web Service Output** modules, go back to the **Designer** page and then re-open the **Auto Price Training-real time inference** pipeline.*
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.update-infrastructure-for-azure-stack-hub.update
+title: Update Azure Stack Hub
+metadata:
+  title: Update Azure Stack Hub
+  description: "Update Azure Stack Hub"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-update-azure-stack-hub.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-marketplace.download-marketplace-items-to
+title: Download Marketplace items to Azure Stack Hub
+metadata:
+  title: Download Marketplace items to Azure Stack Hub
+  description: "Download Marketplace items to Azure Stack Hub"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-download-marketplace-items-azure-stack-hub.md)]

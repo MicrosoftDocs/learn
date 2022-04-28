@@ -4,12 +4,13 @@ title: Back up a SQL Server virtual machine
 metadata:
   title: Back up a SQL Server virtual machine
   description: "Back up a SQL Server virtual machine"
-  ms.date: 02/12/2021
+  ms.date: 01/10/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/3-backup-sql-server-virtual-machine.md)]

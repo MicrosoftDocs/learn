@@ -44,7 +44,7 @@ There are a number of tasks that needs to be performed to integrate Azure Databr
 
 1. Click on **Launch Workspace**
 
-1. Click the user **profile icon** in the upper right corner of your Databricks workspace.
+1. Click the user **Settings** in the bottom left corner of your Databricks workspace.
 
 1. Click **User Settings**.
 
@@ -79,15 +79,15 @@ There are a number of tasks that needs to be performed to integrate Azure Databr
 
 ### Task 3: Create Linked Services
 
-1. In Microsoft Edge, click on the tab for the portal In the Azure portal, and return to Azure Data Factory.
+1. In Microsoft Edge, click on the tab for the portal In the Azure portal, and return to Azure Data Factory and click on Open Azure Data Factory Studio.
 
-1. In the **xx-data-factory** screen, click on **Author & Monitor**. Another tab opens up to author an Azure Data Factory solution.
+1. On the left hand side of the screen, click on the **Manage** icon.
 
-1. On the left hand side of the screen, click on the **Author** icon. This opens up the Data Factory designer.
+1. Under **Connections**,  click on **Linked Services**.
 
-1. At the bottom of the screen, click on **Connections**, and then click on **+ New**.
+1. In the **Linked Service**, at the top of the screen, click on **+ New**, 
 
-1. In the **New Linked Service**, at the top of the screen, click on **Compute**, and then click on **Azure Databricks**, and then click on **Continue**.
+1. Click on the **Compute** tab, click **Azure Databricks**, and then click on **Continue**.
 
 1. In the **New Linked Service (Azure Databricks)** screen, fill in the following details and click on **Finish**
     - **Name**: xx_dbls, where xx are your initials
@@ -103,7 +103,7 @@ There are a number of tasks that needs to be performed to integrate Azure Databr
 
 ### Task 4: Create a pipeline that uses Databricks Notebook Activity.
 
-1. On the left hand side of the screen, under Factory Resources, click on the **+** icon, and then click on **Pipeline**. This opens up a tab with a Pipeline designer.
+1. On the left hand side of the screen, click on the **Author** icon, and then click on **Pipeline**. This opens up a tab with a Pipeline designer.
 
 1. At the bottom of the pipeline designer, click on the parameters tab, and then click on **+ New**
 

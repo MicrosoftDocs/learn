@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.datacenter-integration-for-azure-stack-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/14-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Administrators want to make informed decisions when selecting the right hardware and resources for planning Azure Stack Hub capacity. Which tool is a guide for making decisions?"
+    choices:
+    - content: "Azure Stack Hub capacity planner"
+      isCorrect: true
+      explanation: "Correct. The Azure Stack Hub Capacity Planner helps make informed decisions for planning capacity for workloads that Azure Stack Hub can run."
+    - content: "Azure Pricing Calculator"
+      isCorrect: false
+      explanation: "Incorrect. Azure Pricing Calculator is a tool you can use to gain real-time cost estimates for services."
+    - content: "Azure global infrastructure map"
+      isCorrect: false
+      explanation: "Incorrect. Azure Virtual Desktop stores global metadata information like tenant names, host pool names, and user principal names in a datacenter."
+  - content: "An Azure Stack Hub operator has chosen to deploy Azure Stack Hub in a disconnected scenario. Which identity model is available as an identity store?"
+    choices:
+    - content: "Active Directory Rights Management Services (AD RMS)"
+      isCorrect: false
+      explanation: "Incorrect. Active Directory Rights Management Services (AD RMS) is a Microsoft service that protects sensitive documents and emails."
+    - content: "Active Directory Federation Services (AD FS)"
+      isCorrect: true
+      explanation: "Correct. Active Directory Federation Service (AD FS) enables Federated Identity and Access Management for Azure Stack Hub in disconnected scenario s by sharing digital identities across security and enterprise boundaries."
+    - content: "Azure Active Directory (AD)"
+      isCorrect: false
+      explanation: "Incorrect. Azure AD deploys Azure Stack Hub to Azure for hybrid scenarios between Azure Stack Hub and Azure."
+  - content: "Which licensing model supports deployment of a Azure Stack Hub that is disconnected from the Internet?"
+    choices:
+    - content: "Capacity-based licensing"
+      isCorrect: true
+      explanation: "Correct. The capacity model offers a traditional licensing model for disconnected scenarios. An annual subscription fee licenses all physical cores on Azure Stack Hub."
+    - content: "Pay-as-you-go"
+      isCorrect: false
+      explanation: "Incorrect. The pay-as-you-use model has no up-front fees and users pay when they use a service. Pay-as-you-use model offers a continuous transaction experience with Azure."
+    - content: "Software Assurance"
+      isCorrect: false
+      explanation: "Incorrect. Software Assurance is a comprehensive program that includes a unique set of technologies, services, and rights for using Microsoft products efficiently."

@@ -70,7 +70,8 @@ The default username is admin. It uses the basic configuration on the Azure port
 
 Used to connect to the cluster through SSH.
 
->**Note**: The Enterprise security package allows you to integrate HDInsight with Active Directory and Apache Ranger. Multiple users can be created using the Enterprise security package.
+> [!Note]
+> The Enterprise security package allows you to integrate HDInsight with Active Directory and Apache Ranger. Multiple users can be created using the Enterprise security package.
 
 ## Storage tab
 

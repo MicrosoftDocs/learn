@@ -4,8 +4,8 @@ metadata:
   title: Manage build dependencies with Azure Artifacts
   description: In this module, the Space Game web team guides you through creating a build pipeline that produces a package that can be used by multiple applications.
   ms.date: 05/28/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage build dependencies with Azure Artifacts

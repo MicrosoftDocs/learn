@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-java-app-azure-app-service.containerization-overview
+metadata:
+  title: Azure Migrate App Containerization overview
+  description: Provides an overview of Azure Migrate App Containerization feature
+  ms.date: 09/01/2021
+  author: rahug1190
+  ms.author: rahugup
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Migrate App Containerization overview
+durationInMinutes: 4
+content: |
+  [!include[](includes/app-containerization-overview.md)]

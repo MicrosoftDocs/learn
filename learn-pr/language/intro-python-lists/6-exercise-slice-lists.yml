@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.beginner-python.intro-python-lists.exercise-slice-lists
+title: Exercise - Work with list data
+metadata:
+  unitType: learning-content
+  title: Exercise - Work with list data
+  description: This exercise will have you use your list skills to work with a list. You'll prompt the user for a planet, and then display the planets closer to and farther from the sun by using slices.
+  ms.date: 12/03/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 1 # user input: the estimate time to complete the unit
+sandbox: true
+notebook: notebooks/6-exercise-slice-lists.ipynb

@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.pytorch.intro-computer-vision.convolutional-networks
+title: Use a convolutional neural network
+metadata:
+  title: Use a convolutional neural network
+  description: This unit is paramount to understanding the whole course. Here we learn about the CNN architecture, and how they can capture patterns in images using trained filters.
+  author: shwars
+  ms.author: dmitryso
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.custom: team=nextgen
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/4-convolutional-networks.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is a convolution layer?"
+      choices:
+        - content: "A special activation function for images"
+          isCorrect: false
+          explanation: "Convolution layer is a small window that runs over the image to extract patterns"
+        - content: "An image preprocessing layer that normalizes and prepares image before the dense layer"
+          isCorrect: false
+          explanation: "Convolution layer is a small window that runs over the image to extract patterns"
+        - content: "A layer that runs a small windows across the image to extract patterns"
+          isCorrect: true
+          explanation: "Correct"
+    - content: "How do the number of parameters in a convolutional layer and dense layer correlate?"
+      choices:
+        - content: "A convolutional layer contains more parameters"
+          isCorrect: false
+          explanation: "A convolutional layer contains small filters that have the same weights for the whole image"
+        - content: "A convolutional layer contains less parameters"
+          isCorrect: true
+          explanation: "Correct, a convolutional layer contains small filters that have the same weights for the whole image"
+    - content: "If the size of an input image is **3x200x200**, what would be the size of the tensor after applying a 5x5 convolutional layer with 16 filters?"
+      choices:
+        - content: "16x196x196"
+          isCorrect: true
+          explanation: "This is correct"
+        - content: "3x196x196"
+          isCorrect: false
+          explanation: "First dimension should correspond to the number of filters"
+        - content: "16x3x200x200"
+          isCorrect: false
+          explanation: "Color dimension goes away after applying filters. Also, do not forget that sliding window reduces the spatial dimension."
+        - content: "48x200x200"
+          isCorrect: false
+          explanation: "Color dimension goes away after applying filters. Also, do not forget that sliding window reduces the spatial dimension."

@@ -26,7 +26,7 @@ You might also want to dive deeper into the resource limits based on service tie
 
 ### Deploy, verify, and configure
 
-Two common command-line tools for deploying, verifying, and configuring Azure SQL are the [Azure CLI](/cli/azure/?view=azure-cli-latest&azure-portal=true) and [Azure PowerShell](/powershell/azure?azure-portal=true). You can also access both of these tools through [Azure Cloud Shell](/azure/cloud-shell/overview?azure-portal=true), which is an integrated terminal that supports Bash and PowerShell in the Azure portal.
+Two common command-line tools for deploying, verifying, and configuring Azure SQL are the [Azure CLI](/cli/azure/?azure-portal=true) and [Azure PowerShell](/powershell/azure?azure-portal=true). You can also access both of these tools through [Azure Cloud Shell](/azure/cloud-shell/overview?azure-portal=true), which is an integrated terminal that supports Bash and PowerShell in the Azure portal.
 
 #### Data max size
 

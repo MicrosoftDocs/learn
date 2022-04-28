@@ -4,12 +4,13 @@ title: Describe database and object permissions
 metadata:
   title: Describe database and object permissions
   description: "Describe database and object permissions"
-  ms.date: 04/08/2021
+  ms.date: 04/26/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+labModal: false
+durationInMinutes: 10
 content: |
   [!include[](includes/5-describe-database-object-permissions.md)]

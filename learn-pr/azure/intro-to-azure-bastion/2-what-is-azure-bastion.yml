@@ -2,13 +2,13 @@
 uid: learn.intro-to-azure-bastion.2-what-is-azure-bastion  
 title: What is Azure Bastion?  
 metadata:
-  unitType: learning-content  
-  title: What is Azure Bastion? 
+  unitType: learning-content
+  title: What is Azure Bastion?
   description: What is Azure Bastion?
-  ms.date: 03/12/2021  
-  author: micrum  
-  ms.author: micrum  
-  ms.topic: interactive-tutorial 
+  ms.date: 04/05/2022
+  author: cherylmc
+  ms.author: cherylmc
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

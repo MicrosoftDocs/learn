@@ -4,12 +4,13 @@ title: Identify problematic query plans
 metadata:
   title: Identify problematic query plans
   description: "Identify problematic query plans"
-  ms.date: 04/12/2021
+  ms.date: 01/20/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 23
 content: |
   [!include[](includes/4-identify-problematic.md)]

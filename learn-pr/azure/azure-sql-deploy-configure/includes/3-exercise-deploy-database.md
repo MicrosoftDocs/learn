@@ -29,11 +29,12 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
     |**Subscription**     |  Concierge subscription       |
     |**Resource group**     | <rgn>Sandbox resource group name</rgn>        |
     |**Database name**     | AdventureWorks        |
-    |**Server**     |  Select **Create new**, fill out the  **New server** pane as follows, and select **OK**:      |
+    |**Server**     |  Select **Create new**, fill out the  **Server details** pane as follows, and select **OK**:      |
     |         |**Server name**:  Enter a unique name for the server (for example, **aw-server0406**).  |
+    | | **Location**: Use a region that's close to you. |
+    | | **Authentication method**: Use SQL authentication. |
     | | **Server admin login**: cloudadmin |
     | | **Password/Confirm Password**:  Use a complex password that meets [strong password requirements](/sql/relational-databases/security/strong-passwords?azure-portal=true). Note this password for later use.|
-    || **Location**: Use a region that's close to you. |
     |**Want to use SQL elastic pool?**     |   No      |
     |**Compute + storage**     |  Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage**       |
     |**Backup storage redundancy**     |  Leave the default of **Geo-redundant backup storage**       |
@@ -42,13 +43,15 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
 1. For **Connectivity method**, select **Public endpoint**. Select **Yes** for both **Allow Azure services and resources to access this server** and **Add current client IP address**.
 
+1. For **Connection policy**, select **Default**.
+
 1. Select **Next: Security**.
 
-1. When you deploy Azure SQL Database in the portal, you're prompted about whether you want to **Enable Azure Defender for SQL** in a free trial. Select **Start free trial**.
+1. When you deploy Azure SQL Database in the portal, you're prompted about whether you want to **Enable Microsoft Defender for SQL** in a free trial. Select **Start free trial**.
 
-    After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. After you enable it, you get functionality related to identifying/mitigating potential database vulnerabilities and threat detection.
+    After the free trial, it's billed according to the Microsoft Defender for Cloud Standard Tier pricing. After you enable it, you get functionality related to identifying/mitigating potential database vulnerabilities and threat detection.
 
-1. Select **Next: Additional settings**.
+1. Leave remaining defaults and select **Next: Additional settings**.
 
 1. On the **Additional settings** tab, for Azure SQL Database you have the option to select the AdventureWorksLT database as the sample in the Azure portal. For this exercise, for **Use existing data**, select **Sample**.  
 

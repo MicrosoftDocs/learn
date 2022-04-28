@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-desired-state-configuration-dsc.understand-configuration-drift
+title: Understand configuration drift
+metadata:
+  title: Understand configuration drift
+  description: "Understand configuration drift"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-understand-configuration-drift.md)]

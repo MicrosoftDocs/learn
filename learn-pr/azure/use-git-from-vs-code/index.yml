@@ -4,8 +4,8 @@ metadata:
   title: Use Git version-control tools in Visual Studio Code
   description: Utilize the tight integration of Visual Studio Code with the Git source-control management system.
   ms.date: 3/18/2020
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: gregvanl
+  ms.author: gregvanl
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use Git version-control tools in Visual Studio Code 

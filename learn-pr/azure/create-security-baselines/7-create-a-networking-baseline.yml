@@ -3,10 +3,10 @@ uid: learn.azure-security.create-security-baselines.create-a-networking-baseline
 title: Create a Networking baseline
 metadata:
   title: Create a Networking baseline
-  description: Create a Networking baseline
-  ms.date: 09/9/2019
-  author: adrianstevens
-  ms.author: adsteven
+  description: Learn how to create a Networking baseline. For example, this baseline helps secure network connections between on-premises and Azure-hosted resources.
+  ms.date: 02/03/2022
+  author: msmbaldwin
+  ms.author: mbaldwin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

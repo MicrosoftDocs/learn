@@ -5,8 +5,8 @@ metadata:
   title: Why is container orchestration important?
   description: Understand the benefits of Kubernetes and when to use it.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: ramiMSFT
+  ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

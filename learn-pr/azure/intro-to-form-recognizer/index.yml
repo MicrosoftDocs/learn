@@ -2,14 +2,14 @@
 uid: learn.azure.intro-to-form-recognizer
 metadata:
   title: Introduction to Form Recognizer
-  description: Form Recognizer provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
+  description: Form Recognizer enables automated data identification and extraction from your documents. 
   ms.date: 03/14/2021
-  author: tomreidnz
-  ms.author: jasdeb
+  author: laujan
+  ms.author: lajanuar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Form Recognizer 
-summary: Form Recognizer provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
+summary: Form Recognizer enables automated data identification and extraction from your documents. You can use a programming language SDK or the REST API to easily retrieve and utilize your data.
 abstract: |
   In this module, you will:
   - Assess the benefits of Form Recognizer

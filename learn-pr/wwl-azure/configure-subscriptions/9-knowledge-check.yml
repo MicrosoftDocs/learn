@@ -4,19 +4,20 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/28/2021
+  ms.date: 04/15/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "The company financial comptroller wants to be notified whenever the company is half-way to spending the money allocated for cloud services. Which of the following is the best approach to meeting this requirement?"
+  - content: "The company financial controller wants to be notified whenever the company is half-way to spending the money allocated for cloud services. Which of the following is the best approach to meeting this requirement?"
     choices:
     - content: "Create an Azure reservation."
       isCorrect: false
@@ -27,7 +28,7 @@ quiz:
     - content: "Create a management group."
       isCorrect: false
       explanation: "That's incorrect. Azure management groups provide a way for an organization to control and manage access, compliance, and policies for their subscription within their tenant."
-  - content: "The company financial comptroller wants to identify which billing department each Azure resource belongs to. Which of the following is the best approach to meeting this requirement?"
+  - content: "The company financial controller wants to identify which billing department each Azure resource belongs to. Which of the following is the best approach to meeting this requirement?"
     choices:
     - content: "Track resource usage in a spreadsheet."
       isCorrect: false

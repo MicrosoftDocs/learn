@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-release-pipeline.describe-azure-devops-capabilities
+title: Describe Azure DevOps release pipeline capabilities
+metadata:
+  title: Describe Azure DevOps release pipeline capabilities
+  description: "Describe Azure DevOps release pipeline capabilities"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-describe-azure-devops-capabilities.md)]

@@ -28,7 +28,7 @@ In this lab, you'll write the JavaScript in each of the exercises below in TypeS
     lastName = 'Smith';
     age = 42;
     ukCitizen = false;
-    fullName = firstName + " " + firstName;
+    fullName = firstName + " " + lastName;
     
     if (ukCitizen) {
         console.log("My name is " + fullName + ", I'm " + age + ", and I'm a citizen of the United Kingdom.");

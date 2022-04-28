@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.share-knowledge-within-teams.explore-it-service-management-connector
+title: Explore IT Service Management Connector
+metadata:
+  title: Explore IT Service Management Connector
+  description: "Explore IT Service Management Connector"
+  ms.date: 03/02/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-explore-it-service-management-connector.md)]

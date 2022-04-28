@@ -261,5 +261,5 @@ The PERCENT may also be used with the WITH TIES option.
 The TOP option is used by many SQL Server professionals as a method for retrieving only a certain range of rows. However, consider the following facts when using TOP:
 
  *  TOP is proprietary to T-SQL.
- *  TOP does not support skipping a range of rows.
+ *  TOP on its own doesn't support skipping rows.
  *  Because TOP depends on an ORDER BY clause, you cannot use one sort order to establish the rows filtered by TOP and another to determine the output order.

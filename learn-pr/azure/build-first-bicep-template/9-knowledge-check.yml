@@ -5,12 +5,12 @@ metadata:
   unitType: knowledge_check
   title: "Knowledge check"
   description: "Knowledge check"
-  ms.date: 03/12/2021  
+  ms.date: 11/25/2021  
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:

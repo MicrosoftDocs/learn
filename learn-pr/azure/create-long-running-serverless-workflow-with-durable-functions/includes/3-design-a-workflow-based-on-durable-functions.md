@@ -2,7 +2,7 @@ You can use Durable Functions to orchestrate a long-running workflow as a set of
 
 As we continue to think about automating our proposal approval process, we need to consider the cases when a step in the process does not complete in time and needs to be escalated. For example: what if we need a manager's approval for a particular size of proposal, but the manager is late with a response?
 
-Escalation steps are useful to the business, as they move along a task when a deadline has been reached. They ensure tasks are completed, and not forgotten. An escalation step could involve sending out reminders or even reassigning a task to someone higher up the managerial hierarchy.
+Escalation steps are useful to the business, as they move a task along when a deadline has been reached. They ensure tasks are completed and not forgotten. An escalation step could involve sending out reminders, or even reassigning a task to someone higher up the managerial hierarchy.
 
 In this unit, you'll design an approval process workflow based on Durable Functions. In the next exercise, you'll apply this knowledge to create an app with Azure Durable Functions.
 
@@ -13,7 +13,7 @@ Our workflow begins when a project design is submitted for approval. The proposa
 The workflow steps are as follows:
 
 1. A project design is submitted.
-2. An approval task is allocated to a manager, so they can review the project design proposal.
+2. An approval task is allocated to a manager so they can review the project design proposal.
 3. The project design proposal is rejected or approved.
 4. An escalation task is allocated if the approval task isn't completed within a pre-defined time limit. 
 

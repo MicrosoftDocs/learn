@@ -1,0 +1,54 @@
+### YamlMime:LearningPath
+uid: learn.beginner-python
+metadata:
+  title: Python for beginners
+  description: Learn the basics of python, including how to use Jupyter notebooks, create programs and projects, and work with strings, math, lists, loops, dictionaries, and functions.  
+  ms.date: 12/10/2021
+  author: softchris
+  ms.author: chnoring
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+title: Python for beginners
+summary: |
+  Get started with Python! Learn how to create programs and projects in Python. Work with strings, lists, loops, dictionaries, and functions. 
+  
+  In this learning path, you'll:
+    - Get familiar with Jupyter notebooks
+    - Write your first program in Python
+    - Explore packages to better manage projects
+    - Learn Python basics, including the following elements:
+
+      - Boolean types
+      - Strings
+      - Mathematical operations 
+      - Lists and loops
+      - Dictionaries
+      - Functions
+      - Error checking 
+ 
+prerequisites: |
+  None
+iconUrl: /learn/achievements/beginner-python.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- vs-code
+modules:
+- learn.beginner-python.create-run-jupyter-notebook
+- learn.languages.python-install-vscode
+- learn.beginner-python.create-run-program
+- learn.beginner-python.create-manage-projects
+- learn.beginner-python.use-boolean-types
+- learn.beginner-python.use-strings
+- learn.beginner-python.use-math-operators
+- learn.beginner-python.intro-python-lists
+- learn.beginner-python.python-loops
+- learn.beginner-python.python-dictionaries
+- learn.beginner-python.functions-python
+- learn.beginner-python.python-error-handling
+trophy:
+  uid: learn.beginner-python.trophy

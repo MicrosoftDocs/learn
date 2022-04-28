@@ -4,8 +4,8 @@ metadata:
   title: Explore cross-platform design patterns for Xamarin apps
   description: Find out how to create a .NET Standard library to share code between iOS and Android projects in Xamarin.Forms enabling execution from a shared code base.
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: Explore cross-platform design patterns for Xamarin apps

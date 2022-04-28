@@ -1,7 +1,7 @@
 
 ## Inclusive Marketing
 
-Chris Caposella, Chief Marketing Officer of Microsoft, is pioneering Inclusive Marketing. He says, "All of our marketing should be Inclusive Marketing and all of our touchpoints should be inclusive since inclusion fuels growth."
+Chris Capossela, Chief Marketing Officer of Microsoft, is pioneering Inclusive Marketing. He says, "All of our marketing should be Inclusive Marketing and all of our touchpoints should be inclusive since inclusion fuels growth."
 MJ DePalma, Head of Multicultural and Inclusive Marketing for Microsoft Advertising, defines this as, "…products, services, or experiences that reach people in ways that deeply resonate and afterward remain an indelible experience that fuels long-term loyalty and growth."
 
 There are several reasons to use Inclusive Marketing:

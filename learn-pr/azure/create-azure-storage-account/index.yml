@@ -4,8 +4,8 @@ metadata:
   title: Create an Azure Storage account
   description: Discover ways to use an Azure Storage account to manage your data for billing, access, and storage location of your blobs, files, queues, and tables.
   ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  author: tamram
+  ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create an Azure Storage account

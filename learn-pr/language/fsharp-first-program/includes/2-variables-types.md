@@ -1,14 +1,16 @@
 All programs usually consist of many steps where the program operates on data. As part of running all those steps, it's common to store the intermittent result, the data, in a named reference. Then you can read or manipulate the data later. Named references are commonly referred to as *variables*.
 
-## Variables
+## Variables, bind a value
 
-To declare a variable in F#, you use the `let` keyword, followed by the name of the variable. You can also assign a value to your variable at the moment of declaration, like in this example:
+Variables are named references bound to a value, that you want to keep referring to in your code. In F#, it's thought of as binding a value. So what you do is to assign, or _bind_, a value to a named reference, a variable. To bind a value, you use the `let` keyword, a name for your reference and assign a value to it, like in the below code:
 
 ```fsharp
 let name = "Chris"
 ```
 
-After a variable is assigned to a variable, it can't be changed, it's immutable. The following code wouldn't compile and produces an error saying something like "error FS0027: This value is not mutable."
+Above `name` is the named reference and "Chris" its bound value.
+
+After a value is assigned to a variable, it can't be changed, it's immutable. The following code wouldn't compile and produces an error saying something like "error FS0027: This value is not mutable."
 
 ```fsharp
 let name = "Chris"
@@ -62,15 +64,15 @@ There are other reasons for wanting to output to the screen, but the preceding t
 
 So how would you print to the screen? In F#, there are three different functions you can use. They're `printf`, `printfn`, and even `Console.WriteLine`. So what's the difference?
 
-- `printfn`: It prints to `stdout` and adds a newline character.
-- `printf`: It prints to `stdout` but with no newline character.
+- `printf`: It prints to `stdout` inline (no newline character).
+- `printfn `: It prints to `stdout` adds a newline character.
 - `Console.WriteLine`: This function is from the `System` namespace and works in all .NET languages.
 
-Now you know the difference, but which one should you use? Well, `printfn` and `printf` are considered more idiomatic and preferred in F#.
+Now you know the difference, but which one should you use? Well, `printf` and `printfn` are considered more idiomatic and preferred in F#.
 
 ## Formatting
 
-Aa part of printing to the screen, you might want to combine text and numbers. Or you might want the output to be formatted in a certain way, such as by using:
+As part of printing to the screen, you might want to combine text and numbers. Or you might want the output to be formatted in a certain way, such as by using:
 
 - **Positional arguments**: To format, you can use a .NET function like `string.Format`, which uses positional arguments like `string.Format("My name is {0} and I live in {1}", "Chris", "UK")`.
 - **String interpolation**: Another way to combine variables and text is to use something called interpolation. To use it, you need to precede the string with a `$` sign and indicate placeholders with brackets `{}`. Here's an example of using interpolation:
@@ -113,6 +115,6 @@ There are many format specifiers. Here are some you're likely to encounter.
 |---------|---------|-------|
 | %s    | Used for strings and unescaped contents | printf "Hello %s" name |
 | %d, %i | Formatted as a decimal integer, signed if the basic integer type is signed  | printf "Age: %i" 65 |
-| %b | Boolean `true` or `false` | printf "Setting on: " true |
+| %b | Boolean `true` or `false` | printf "Setting on: %b" true |
 
 There's much more information on formatting. If you want to know about all the capabilities, see the [formatting in F# doc](/dotnet/fsharp/language-reference/plaintext-formatting).

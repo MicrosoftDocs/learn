@@ -2,20 +2,21 @@
 uid: learn.fsharp-lists
 metadata:
   title: Store and apply operations on list data in F#
-  description: This module covers collections in F# and lists specifically.
+  description: This module covers collections in F#, with a specific focus on lists.
   ms.date: 07/28/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
+  ms.custom: team=nextgen
 title: Store and apply operations on list data in F#
-summary: Learn to write programs using lists and learn to leverage list properties as well as list functions specified in the list module.
+summary: Learn how to write programs by using lists, and learn how to use the list properties and list functions that are specified in the list module.
 abstract: |
-  In this module you will:
-  - Explore the collection data structures.
-  - Understand basic properties on a list structure.
-  - Leverage the list module to carry out some more advanced operations.
-iconUrl: /learn/achievements/generic-badge.svg
+  In this module, you will:
+  - Explore collection data structures.
+  - Learn about the basic properties in a list structure.
+  - Use the list module to carry out some more advanced operations.
+iconUrl: /learn/achievements/fsharp-lists.svg
 levels:
   - beginner
 roles:
@@ -24,9 +25,10 @@ roles:
 products:
   - dotnet
 prerequisites: |
-  - Know how to run commands at the console.
-  - Have F# (.NET Core) installed.
-  - Know how to declare variables and understand functions and how to declare and run them.
+  - Knowledge about running commands at the console
+  - F# (.NET Core), installed
+  - Knowledge about declaring variables
+  - Understanding of functions and how to declare and run them
 units:
   - learn.fsharp-lists.introduction
   - learn.fsharp-lists.collection

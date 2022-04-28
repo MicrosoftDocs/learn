@@ -4,12 +4,13 @@ title: Invite external users - individually and in bulk
 metadata:
   title: Invite external users - individually and in bulk
   description: "Invite external users - individually and in bulk"
-  ms.date: 07/23/2021
+  ms.date: 03/07/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/4-invite-external-users-individually-bulk.md)]

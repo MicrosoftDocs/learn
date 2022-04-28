@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-run-container-images-azure-container-instances.exercise-deploy-container-instance-by-using-azure-cli
+title: 'Exercise: Deploy a container instance by using the Azure CLI'
+metadata:
+  title: 'Exercise: Deploy a container instance by using the Azure CLI'
+  description: "Exercise: Deploy a container instance by using the Azure CLI"
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-run-azure-container-instances-cloud-shell.md)]

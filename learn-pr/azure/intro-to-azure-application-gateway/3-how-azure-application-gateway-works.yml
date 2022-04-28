@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-application-gateway.how-azure-application-gateway-works
+title: How Azure Application Gateway works
+metadata:
+  title: How Azure Application Gateway works
+  description: Learn how Azure Application Gateway works and how to implement it in your organization.
+  ms.date: 02/16/2022
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.custom: team=cloud_advocates
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-how-azure-application-gateway-works.md)]

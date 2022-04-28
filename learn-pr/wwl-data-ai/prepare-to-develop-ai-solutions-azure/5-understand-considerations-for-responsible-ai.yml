@@ -4,12 +4,13 @@ title: Understand considerations for responsible AI
 metadata:
   title: Understand considerations for responsible AI
   description: "Understand considerations for responsible AI"
-  ms.date: 07/20/2021
+  ms.date: 02/22/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-understand-considerations-for-responsible-ai.md)]

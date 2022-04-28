@@ -14,6 +14,6 @@ After you complete this module, you'll be able to:
 
 ## Prerequisites
 
-- Local installations of the [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
+- Local installations of the [.NET SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/?azure-portal=true)
 - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp&azure-portal=true) for Visual Studio Code
 - Experience with using the command line

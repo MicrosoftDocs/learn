@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-azure-sentinel-workspaces.settings
+title: Manage Microsoft Sentinel settings
+metadata:
+  title: Manage Microsoft Sentinel settings
+  description: "Manage Microsoft Sentinel settings"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-manage-azure-sentinel-settings.md)]

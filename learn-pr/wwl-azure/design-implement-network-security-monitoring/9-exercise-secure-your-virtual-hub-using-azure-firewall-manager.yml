@@ -4,12 +4,13 @@ title: 'Exercise: secure your virtual hub using Azure Firewall Manager'
 metadata:
   title: 'Exercise: secure your virtual hub using Azure Firewall Manager'
   description: "Exercise: secure your virtual hub using Azure Firewall Manager"
-  ms.date: 07/16/2021
+  ms.date: 02/28/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 11
 content: |
   [!include[](includes/9-exercise-secure-your-virtual-hub-using-azure-firewall-manager.md)]

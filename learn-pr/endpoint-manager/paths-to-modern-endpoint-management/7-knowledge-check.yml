@@ -17,8 +17,8 @@ quiz:
     choices:
     - content: "A modern endpoint management solution ensures devices are used for organization access only."
       isCorrect: false
-      explanation: "A modern endpoint management solution must ensure proper credentials are used, as well as provide data protection, safeguard the devices and apps, and confirm security rules are in place based on your organizations requirements."
-    - content: "A modern endpoint management solution safeguards your organization, with the exception of device security."
+      explanation: "A modern endpoint management solution must ensure proper credentials are used, and provide data protection, safeguard the devices and apps, and confirm security rules are in place based on your organizations requirements."
+    - content: "A modern endpoint management solution safeguards your organization, except for device security."
       isCorrect: false
       explanation: "A modern endpoint management solution must safeguard devices and apps, as well as provide data protection, ensure proper credentials are used, and confirm security rules are in place based on your organizations requirements."
     - content: "A modern endpoint management solution must provide data protection, ensure proper credentials are used, safeguard the devices and apps, and confirm security rules are in place based on your organizations requirements."
@@ -45,4 +45,4 @@ quiz:
       explanation: ""
     - content: "Consider moving directly to co-management using with Microsoft Intune."
       isCorrect: false
-      explanation: "If don't need to manage on-premises devices, Microsoft Intune will provide cloud-based mobile device management (MDM) and mobile application management (MAM) for your apps and devices. Co-management is concurrently managing on-premises Windows 10 devices with both Configuration Manager and Microsoft Intune."
+      explanation: "If don't need to manage on-premises devices, Microsoft Intune will provide cloud-based mobile device management (MDM) and mobile application management (MAM) for your apps and devices. Co-management is concurrently managing on-premises Windows 10/11 devices with both Configuration Manager and Microsoft Intune."

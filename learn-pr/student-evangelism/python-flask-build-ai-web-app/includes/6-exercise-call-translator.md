@@ -81,9 +81,10 @@ The code is commented to describe the steps that are being taken. At a high leve
 
 > [!NOTE]
 > When calling the Translator service it's possible to have multiple statements translated into multiple languages in a single call. As a result, the JSON returned by the service contains a lot of information, of which we need only one small piece. As a result, we need to step down a few levels to get the translated text.
-> 
+>
 > Specifically, we need to read the first result, then to the collection of `translations`, the first translation, and then to the `text`. This is done by the call:
 > `translator_response[0]['translations'][0]['text']`
+>
 > ```json
 > [
 >   {
@@ -161,4 +162,4 @@ Return to the integrated terminal in Visual Studio Code (or reopen it with **Ctr
 
 You've now successfully created a website that uses Translator to implement translations! Because language and communication rely on context, which isn't always clear to a computer, you might notice that the results aren't perfect. However, they're typically spot on or close enough for effective communication, which is the goal!
 
-The code we've provided here can be incorporated into any application you like. You can continue to build on the website we've created, or even [deploy it to Azure App Services](/azure/developer/python/tutorial-deploy-app-service-on-linux-03?azure-portal=true&WT.mc_id=python-11210-chrhar)!
+The code we've provided here can be incorporated into any application you like. You can continue to build on the website we've created, or even [deploy it to Azure App Services](/azure/developer/python/tutorial-deploy-app-service-on-linux-01?azure-portal=true&WT.mc_id=python-11210-chrhar)!

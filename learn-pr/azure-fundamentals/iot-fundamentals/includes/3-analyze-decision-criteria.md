@@ -2,7 +2,7 @@ In this unit, we'll analyze the criteria that experts employ when they decide wh
 
 ## Is it critical to ensure that the device is not compromised?
 
-No manufacturers or customers want their devices to be maliciously compromised and used for nefarious purposes, but it's more critical to ensure the integrity of an ATM than, say, a washing machine. When security is a critical consideration in your product's design, the best product option is Azure Sphere, which provides a comprehensive end-to-end solution for IoT devices.
+Not in every case. Manufacturers and customers would rather not have their devices to be maliciously compromised and used for nefarious purposes, however in some cases it's more critical to ensure the integrity than others. An example would be that of an ATM in comparison to a washing machine. When security is a critical consideration in your product's design, the best product option is Azure Sphere, which provides a comprehensive end-to-end solution for IoT devices.
 
 As we mentioned in the previous unit, Azure Sphere ensures a secure channel of communication between the device and Azure by controlling everything from the hardware to the operating system and the authentication process. This ensures that the integrity of the device is uncompromised. After a secure channel is established, messages can be received from the device securely, and messages or software updates can be sent to the device remotely.
 

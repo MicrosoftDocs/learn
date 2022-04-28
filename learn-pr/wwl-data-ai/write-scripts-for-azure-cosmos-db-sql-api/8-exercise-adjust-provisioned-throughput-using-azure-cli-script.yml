@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.exercise-adjust-provisioned-throughput-using-azure-cli-script
+title: 'Exercise:  Adjust provisioned throughput using an Azure CLI script'
+metadata:
+  title: 'Exercise:  Adjust provisioned throughput using an Azure CLI script'
+  description: "Exercise:  Adjust provisioned throughput using an Azure CLI script"
+  ms.date: 04/06/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107597
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-exercise-adjust-provisioned-throughput-using-azure-cli-script.md)]

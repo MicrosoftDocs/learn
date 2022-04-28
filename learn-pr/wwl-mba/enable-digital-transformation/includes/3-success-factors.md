@@ -1,10 +1,40 @@
 Digital transformation in organizations is being driven by shifting customer expectations. The problem is that the existing ERP and CRM applications silo and trap data, holding organizations back in their efforts to meet changing customer expectations. So organizations need to shift:
 
-| | | |
-|:------------|:------------:|:------------|
-|**Reactive action** |![Graphic for an arrow.](../media/arrow.png)|**Proactive action**|
-|**Siloed view** |![Graphic for an arrow.](../media/arrow.png)|**Connected view**|
-|**Reporting activity** |![Graphic for an arrow.](../media/arrow.png)|**Delivering outcomes**
+:::row:::
+   :::column:::
+      **Reactive action**
+   :::column-end:::
+   :::column:::
+      ![Graphic for an arrow.](../media/arrow.png)
+   :::column-end:::
+   :::column:::
+      **Proactive action**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column:::
+      **Siloed view**
+   :::column-end:::
+   :::column:::
+      ![Graphic for an arrow.](../media/arrow.png)
+   :::column-end:::
+   :::column:::
+      **Connected view**
+   :::column-end:::
+:::row-end:::
+
+:::row:::
+   :::column:::
+      **Reporting activity**
+   :::column-end:::
+   :::column:::
+      ![Graphic for an arrow.](../media/arrow.png)
+   :::column-end:::
+   :::column:::
+      **Delivering outcomes**
+   :::column-end:::
+:::row-end:::
 
 Technology is an important aspect of helping organizations make these shifts. In fact, Dynamics 365 directly enables organizations to make those shifts. But technology alone is not the key to successful digital transformation.
 

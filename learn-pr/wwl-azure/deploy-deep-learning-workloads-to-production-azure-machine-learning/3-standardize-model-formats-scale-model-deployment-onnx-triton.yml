@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-deep-learning-workloads-to-production-azure-machine-learning.standardize-model-formats-scale-model-deployment-onnx-triton
+title: Standardize model formats and scale model deployment with ONNX and Triton
+metadata:
+  title: Standardize model formats and scale model deployment with ONNX and Triton
+  description: "Standardize model formats and scale model deployment with ONNX and Triton"
+  ms.date: 01/27/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-standardize-model-formats-scale-model-deployment-onnx-triton.md)]

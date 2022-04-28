@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Add a testing widget to your dashboard
   description: Add a widget that visualizes the results of test runs over time.
   ms.date: 05/26/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: steved0x
+  ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

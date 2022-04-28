@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.containerize-deploy-java-app-aks.build-and-run
+title: Build and run a container image for the Java app
+metadata:
+  unitType: Build and run a container image for the Java app
+  title: Build and run a container image for the Java app
+  description: Build and run a container image for the Java app
+  ms.date: 9/28/2021
+  author: chtrembl
+  ms.author: chtrembl
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-build-and-run.md)]

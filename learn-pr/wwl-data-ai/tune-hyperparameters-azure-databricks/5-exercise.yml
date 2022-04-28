@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.tune-hyperparameters-azure-databricks.exercise
+title: Exercise
+metadata:
+  title: Exercise
+  description: "Exercise"
+  ms.date: 01/11/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise.md)]

@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-azure-databricks
+metadata:
+  title: Get started with Azure Databricks
+  description: "Get started with Azure Databricks"
+  ms.date: 01/25/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with Azure Databricks
+summary: Azure Databricks enables you to build highly scalable data processing and machine learning solutions.
+abstract: |
+  After completing this module, you will be able to:
+  - Understand Azure Databricks
+  - Provision Azure Databricks workspaces and clusters
+  - Work with notebooks in Azure Databricks
+prerequisites: |
+  Before starting this module, you should be familiar with the Microsoft Azure portal and provisioning Azure resources.
+  You'll get the most out of this module if you already have some experience of using Python in a notebook environment, such as Jupyter Notebooks.
+iconUrl: /learn/achievements/get-started-with-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-databricks
+units:
+- learn.wwl.get-started-azure-databricks.introduction
+- learn.wwl.get-started-azure-databricks.understand
+- learn.wwl.get-started-azure-databricks.provision-workspaces-clusters
+- learn.wwl.get-started-azure-databricks.work-notebooks
+- learn.wwl.get-started-azure-databricks.exercise
+- learn.wwl.get-started-azure-databricks.knowledge-check
+- learn.wwl.get-started-azure-databricks.summary
+badge:
+  uid: learn.wwl.get-started-azure-databricks.badge

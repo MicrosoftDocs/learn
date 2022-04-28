@@ -6,7 +6,7 @@ Gatsby is built on top of React and React Router, which allows you to mix both d
 
 Gatsby has a clever system of plugins that can help import data from different types of data sources. The data sources can be as varied as databases to JSON to your local file system. All this imported data can then be paired up with static assets like HTML and CSS to produce the static pages you want to serve to a user. Thanks to the plugin system, more and more different types of data sources can be supported and is being supported as soon as the Gatsby team or the community writes a new plugin.
 
-How does Gatsby do this? In the pre-compilation phase, each plugin *scans* a source. A source can be a file system, a database, or, for example, a set of JSON files. The data is read and added to a data Graph. The Graph is an in-memory tree of nodes that you can query for. Gatsby then let's you query for these nodes when you proceed to author your static pages in your app.
+How does Gatsby do this? In the pre-compilation phase, each plugin *scans* a source. A source can be a file system, a database, or, for example, a set of JSON files. The data is read and added to a data Graph. The Graph is an in-memory tree of nodes that you can query for. Gatsby then lets you query for these nodes when you proceed to author your static pages in your app.
 
 ## Installing and using Gatsby
 
@@ -25,7 +25,7 @@ These three commands will get you started working with a new Gatsby app:
 
 A scaffolded Gatsby project consists of some parts that you need to understand to work with Gatsby effectively and efficiently.
 
-- `/pages`: React components placed in this directory will become routes and a pages. Pages are described in more detail below.
+- `/pages`: React components placed in this directory will become routes and pages.
 - `gatsby-config.js`: A configuration file. Part of the configuration will be used to set up and configure plugins and part of it is global data that you can render on your pages.
 - `gatsby-node.js`: A file used to implement life-cycle methods of the Gatsby API. In here you can do things such as sourcing files, add/update nodes to the Gatsby graph and even bring in data from the outside that should be part of the website.
 - `/styles`: Gatsby lets you apply styles in many ways, everything from imported CSS, SASS, and LESS to CSS Modules.

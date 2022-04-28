@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/07/2021
+  ms.date: 01/07/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -21,7 +22,7 @@ quiz:
     - content: "The process of transforming raw data into models containing meaningful information"
       isCorrect: false
       explanation: "That's incorrect. This is the description of data processing."
-    - content: "Analyzing data for anomalies,"
+    - content: "Analyzing data for anomalies"
       isCorrect: false
       explanation: "That's incorrect. This is part of the role that a data analysts performs once data has been ingested and transformed into a set of analytical models"
     - content: "Capturing raw data streaming from various sources and storing it"

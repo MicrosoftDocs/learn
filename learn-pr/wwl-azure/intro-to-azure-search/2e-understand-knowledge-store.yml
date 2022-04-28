@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-introduction-to-azure-search.understand-knowledge-store
+title: Persist enriched data in a knowledge store
+metadata:
+  title: Persist enriched data in a knowledge store
+  description: "Persist enriched data in a knowledge store"
+  ms.date: 02/07/2022
+  author: heidisteen
+  ms.author: heidist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2e-understand-knowledge-store.md)]

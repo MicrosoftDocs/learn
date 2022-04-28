@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.language.rust-if-else-expressions
+metadata:
+  title: Test conditions with if/else expressions in Rust
+  description: Explore Rust compound data types like arrays, vectors, and hash maps. Discover how to use if/else statements to test conditions.
+  ms.date: 01/14/2022
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+title: Test conditions with if/else expressions in Rust
+summary: Explore Rust compound data types like arrays and vectors. Discover how to use if/else statements to test conditions.
+abstract:  |
+  In this module, you will:
+  - Explore Rust compound data types: arrays and vectors
+  - Discover how to use if/else statements to test conditions in a Rust program
+  - Create, compile, and run a Rust program to process compound data and test values
+prerequisites: | 
+  - Have your Rust development environment already set up.
+  - Know how to create, edit, and run Rust code by using Cargo or by working in the Rust playground.
+iconUrl: /learn/achievements/rust-understand-common-concepts.svg 
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- vs-code
+- azure
+units:
+- learn.language.rust-if-else-expressions.0-introduction
+- learn.language.rust-if-else-expressions.1-arrays
+- learn.language.rust-if-else-expressions.2-vectors
+- learn.language.rust-if-else-expressions.3-exercise-data-types
+- learn.language.rust-if-else-expressions.4-if-else-expressions
+- learn.language.rust-if-else-expressions.5-exercise-if-else
+- learn.language.rust-if-else-expressions.6-summary
+badge:
+  uid: learn.language.rust-if-else-expressions.badge

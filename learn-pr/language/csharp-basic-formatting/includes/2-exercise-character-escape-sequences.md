@@ -34,11 +34,13 @@ The .NET Editor will put a red squiggly line under `World`.  But if you attempt 
 (1,27): error CS0103: The name 'World' does not exist in the current context
 (1,32): error CS1003: Syntax error, ',' expected
 ```
+
 To handle that situation, use the `\"` escape sequence.
 
 ```csharp-interactive
 Console.WriteLine("Hello \"World\"!");
 ```
+
 If you run the code above, you would see the following output.
 
 ```output
@@ -50,11 +52,13 @@ What if you need to use the backslash for other purposes, like to display a file
 ```csharp-interactive
 Console.WriteLine("c:\source\repos");
 ```
+
 Unfortunately, C# reserves the backslash for escape sequences, so if you run the code, the compiler will display the following error.
 
 ```output
 (1,22): error CS1009: Unrecognized escape sequence
 ```
+
 The problem is the sequence `\s`.  The `\r` doesn't produce an error because it is a valid escape sequence for a carriage return.  However, it's unlikely that you would want to use a carriage return in this context.
 
 To solve the problem, you use the `\\` to display a single backslash.
@@ -62,6 +66,7 @@ To solve the problem, you use the `\\` to display a single backslash.
 ```csharp-interactive
 Console.WriteLine("c:\\source\\repos");
 ```
+
 Escaping the back slash character produces the output you intended.
 
 ```output
@@ -78,6 +83,7 @@ Console.WriteLine("Invoice: 1021\t\tComplete!");
 Console.WriteLine("Invoice: 1022\t\tComplete!");
 Console.WriteLine("\nOutput Directory:\t");
 ```
+
 You should see the following output.
 
 ```output
@@ -86,7 +92,7 @@ Generating invoices for customer "ABC Corp" ...
 Invoice: 1021		Complete!
 Invoice: 1022		Complete!
 
-Output Directory:	
+Output Directory:
 ```
 
 ## Verbatim String Literal
@@ -121,7 +127,7 @@ Generating invoices for customer "ABC Corp" ...
 Invoice: 1021		Complete!
 Invoice: 1022		Complete!
 
-Output Directory:	
+Output Directory:
 c:\invoices
 ```
 
@@ -133,9 +139,9 @@ You can also add encoded characters in literal strings using the `\u` escape seq
 // Kon'nichiwa World
 Console.WriteLine("\u3053\u3093\u306B\u3061\u306F World!");
 ```
-> [!NOTE]
-> There are several caveats here.  First, some consoles like the Windows Command Prompt will not display all Unicode characters.  It will replace those characters with question mark characters intead.  Also, the examples used here are UTF-16.  Some characters require UTF-32 and therefore require a different escape sequence.  This is a complicated subject, and this module is only aiming at showing you what is possible.  Depending on your need, you may need to spend quite a bit of time learning and working with Unicode characters in your applications.
 
+> [!NOTE]
+> There are several caveats here.  First, some consoles like the Windows Command Prompt will not display all Unicode characters.  It will replace those characters with question mark characters instead.  Also, the examples used here are UTF-16.  Some characters require UTF-32 and therefore require a different escape sequence.  This is a complicated subject, and this module is only aiming at showing you what is possible.  Depending on your need, you may need to spend quite a bit of time learning and working with Unicode characters in your applications.
 
 ### Step 3 - Format the output of the command-line application using unicode escape characters
 
@@ -164,6 +170,7 @@ Console.Write(@"c:\invoices");
 Console.Write("\n\n\u65e5\u672c\u306e\u8acb\u6c42\u66f8\u3092\u751f\u6210\u3059\u308b\u306b\u306f\uff1a\n\t");
 Console.WriteLine(@"c:\invoices\app.exe -j");
 ```
+
 When you run the code, you should see the following output.
 
 ```output
@@ -172,7 +179,7 @@ Generating invoices for customer "ABC Corp" ...
 Invoice: 1021		Complete!
 Invoice: 1022		Complete!
 
-Output Directory:	
+Output Directory:
 c:\invoices
 
 日本の請求書を生成するには：
@@ -185,6 +192,6 @@ Here's the most important items to remember about formatting literal strings:
 
 - Use character escape sequences when you need to insert a special character into a literal string, like a tab `\t`, new line `\n`, or a double quotation mark `\"`.
 - Use an escape character for the backslash `\\` when you need to use a backslash in all other scenarios.
-- Create a verbatim string literal to keep all whitespace formatting and backslash characters in a string.
+- Use the `@` directive to create a verbatim string literal that keeps all whitespace formatting and backslash characters in a string.
 - Use the `\u` plus a four-character code to represent Unicode characters (UTF-16) in a string.
 - Unicode characters may not print out correctly depending on the application.

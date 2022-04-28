@@ -4,14 +4,13 @@ title: Exercise - Create a bot
 metadata:
   title: Exercise - Create a bot
   description: "Exercise - Create a bot"
-  ms.date: 06/15/2021
+  ms.date: 01/04/2022
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 88768
-labModal: true
+labModal: false
 durationInMinutes: 20
 content: |
   [!include[](includes/3-create-bot.md)]

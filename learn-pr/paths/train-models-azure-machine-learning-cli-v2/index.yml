@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.train-models-azure-machine-learning-cli-v2
+metadata:
+  title: Train models in Azure Machine Learning with the CLI (v2)
+  description: Train models in Azure Machine Learning with the CLI (v2)
+  ms.date: 03/14/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Train models in Azure Machine Learning with the CLI (v2)
+prerequisites: |
+  This learning path assumes that you have experience training machine learning models with Python and open-source frameworks like Scikit-Learn. Some familiarity with the main concepts of Azure Machine Learning is also expected.
+summary: |
+  The Azure Machine Learning CLI (v2) is an Azure CLI extension that you can use to train and deploy machine learning models. Learn how to use the CLI (v2) to create Azure Machine Learning workspace assets to use for model training and deployment.
+iconUrl: /learn/achievements/train-models-in-azure-machine-learning-with-cli-v2.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+modules:
+- learn.wwl.create-azure-machine-learning-resources-cli-v2
+- learn.wwl.run-jobs-azure-machine-learning-cli-v2
+- learn.wwl.use-mlflow-azure-ml-jobs-submitted-cli-v2
+- learn.wwl.deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2
+- learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2
+trophy:
+  uid: learn.wwl.train-models-azure-machine-learning-cli-v2.trophy

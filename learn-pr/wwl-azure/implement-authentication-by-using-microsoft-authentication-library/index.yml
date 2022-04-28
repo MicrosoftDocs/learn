@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.implement-authentication-by-using-microsoft-authentication-library
+metadata:
+  title: Implement authentication by using the Microsoft Authentication Library
+  description: "Learn how to implement authentication by using the Microsoft Authentication Library."
+  ms.date: 01/17/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement authentication by using the Microsoft Authentication Library
+summary: Learn how to implement authentication by using the Microsoft Authentication Library.
+abstract: |
+  After completing this module, you'll be able to:
+  *   Explain the benefits of using Microsoft Authentication Library and the application types and scenarios it supports.
+  *   Instantiate both public and confidential client apps from code.
+  *   Register an app with the Microsoft identity platform.
+  *   Create an app that retrieves a token by using the [MSAL.NET](http://MSAL.NET) library.
+prerequisites: |
+  *   You should be familiar with developer concepts and terminology.
+  *   An understanding of cloud computing and some experience with the Azure portal.
+iconUrl: /learn/achievements/authentication-library.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-sdks
+units:
+- learn.wwl.implement-authentication-by-using-microsoft-authentication-library.introduction
+- learn.wwl.implement-authentication-by-using-microsoft-authentication-library.explore
+- learn.wwl.implement-authentication-by-using-microsoft-authentication-library.initialize-client-applications
+- learn.wwl.implement-authentication-by-using-microsoft-authentication-library.exercise-implement-interactive-msal-net
+- learn.wwl.implement-authentication-by-using-microsoft-authentication-library.knowledge-check
+- learn.wwl.implement-authentication-by-using-microsoft-authentication-library.summary
+badge:
+  uid: learn.wwl.implement-authentication-by-using-microsoft-authentication-library.badge

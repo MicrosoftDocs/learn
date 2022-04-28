@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.examine-azure-defender-for-iot-security-agents
+metadata:
+  title: Examine Azure Defender for IoT security agents
+  description: "This module introduces you to Azure Defender for IoT security agents and how security agents can be used to extend your security monitoring capabilities to the device-side of your IoT solution."
+  ms.date: 02/24/2022
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Examine Azure Defender for IoT security agents
+summary: This module introduces you to Azure Defender for IoT security agents and how security agents can be used to extend your security monitoring capabilities to the device-side of your IoT solution.
+abstract: |
+  After you complete this module, you will be able to:
+  - Describe Azure Defender for IoT security agent options.
+  - Describe security agent authentication methods.
+  - Describe built-in security agent alerts.
+  - Describe security recommendations for Azure Defender for IoT and devices.
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Explain the features and capabilities of IoT Hub and implement secure device-to-cloud communication between an IoT device and an IoT hub instance.
+  - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
+  - Describe the Azure IoT Edge runtime support for custom code development, the IoT Edge coding tools, and the IoT Edge coding and debugging processes.
+iconUrl: /learn/achievements/azure-defender-iot-security-agents.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-defender-iot
+- azure-iot-edge
+- azure-iot-hub
+- azure-iot-sdk
+- azure-portal
+units:
+- learn.wwl.examine-azure-defender-for-iot-security-agents.introduction
+- learn.wwl.examine-azure-defender-for-iot-security-agents.agent-options
+- learn.wwl.examine-azure-defender-for-iot-security-agents.examine-security-agent-authentication-methods
+- learn.wwl.examine-azure-defender-for-iot-security-agents.examine-built-security-agent-alerts
+- learn.wwl.examine-azure-defender-for-iot-security-agents.review-recommendations
+- learn.wwl.examine-azure-defender-for-iot-security-agents.review-device-security-baseline-recommendations
+- learn.wwl.examine-azure-defender-for-iot-security-agents.knowledge-check
+- learn.wwl.examine-azure-defender-for-iot-security-agents.summary
+badge:
+  uid: learn.wwl.examine-azure-defender-for-iot-security-agents.badge

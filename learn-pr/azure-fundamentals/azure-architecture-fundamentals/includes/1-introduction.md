@@ -9,9 +9,9 @@ In this module, you'll learn about several of the components that are necessary 
 
 After completing this module, you'll be able to describe the benefits and usage of:
 
- -  Azure subscriptions and management groups.
- -  Azure resources, resource groups, and Azure Resource Manager.
  -  Azure regions, region pairs, and availability zones.
+ -  Azure resources, resource groups, and Azure Resource Manager.
+ -  Azure subscriptions and management groups.
 
 ## Prerequisites
 

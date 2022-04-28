@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.dotnet-deploy-microservices-kubernetes.exercise-push-to-docker-hub
+title: Exercise - Push a microservice image to Docker Hub
+metadata:
+  title: Exercise - Push a microservice image to Docker Hub
+  description: Kubernetes needs to be able to download a Docker image to use it. Learn how to push an image to Docker Hub.
+  ms.date: 08/13/2021
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - masoucou-09032021
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-push-to-docker-hub.md)]

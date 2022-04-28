@@ -2,14 +2,15 @@
 uid: learn.visual-studio-github-push
 metadata:
   title: Get Started with Git and GitHub in Visual Studio
-  description: In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2019. We'll add and modify files, stage and commit changes, and then finally push to your remote.
-  ms.date: 03/31/2021
+  description: In this module, we'll authenticate to GitHub, create a local Git repository, and push the repository to GitHub by using the Git tooling experience in Visual Studio 2022. We'll add and modify files, stage and commit changes, and then finally push to your remote.
+  ms.date: 02/25/2022
   author: prnadago
   ms.author: prnadago
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: devdivchpfy22
 title: Get started with Git and GitHub in Visual Studio
-summary: Authenticate to GitHub and create a repository by using the Git tooling experience in Visual Studio 2019. Add and modify files, stage and commit changes, and then finally push to your remote.
+summary: Authenticate to GitHub and create a repository by using the Git tooling experience in Visual Studio 2022. Add and modify files, stage and commit changes, and then finally push to your remote.
 abstract: |
   By the end of this module, you'll be able to:
   - Add a GitHub account to sign in to Visual Studio
@@ -19,8 +20,8 @@ prerequisites: |
   - Basic understanding of Git concepts
   - Familiarity with beginner Git commands
   - A GitHub account
-  - Familiarity with Visual Studio 2019
-  - Visual Studio 2019 (minimum version 16.9) installed
+  - Familiarity with Visual Studio 2022
+  - Visual Studio 2022 (minimum version 17.1) installed
 iconUrl: /learn/achievements/visual-studio-github-push.svg
 levels:
 - beginner
@@ -33,7 +34,7 @@ roles:
 - student
 products:
 - github
-- vs
+- vs-ide
 units:
 - learn.visual-studio-github-push.1-introduction
 - learn.visual-studio-github-push.2-add-github-account

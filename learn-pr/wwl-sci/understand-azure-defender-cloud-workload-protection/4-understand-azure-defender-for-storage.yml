@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-azure-defender-cloud-workload-protection.for-storage
-title: Understand Azure Defender for Storage
+title: Understand Microsoft Defender for Storage
 metadata:
-  title: Understand Azure Defender for Storage
-  description: "Understand Azure Defender for Storage"
-  ms.date: 04/02/2021
+  title: Understand Microsoft Defender for Storage
+  description: "Understand Microsoft Defender for Storage"
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/4-understand-azure-defender-for-storage.md)]

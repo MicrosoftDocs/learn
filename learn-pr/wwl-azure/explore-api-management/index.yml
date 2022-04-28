@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.explore-api-management
+metadata:
+  title: Explore API Management
+  description: "Learn how the API Management service functions, how to transform and secure APIs, and how to create a backend API."
+  ms.date: 04/07/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore API Management
+summary: Learn how the API Management service functions, how to transform and secure APIs, and how to create a backend API.
+abstract: |
+  After completing this module, you'll be able to:
+  *   Describe the components (and their functions) of the API Management service.
+  *   Explain how API gateways can help manage calls to your APIs.
+  *   Secure access to APIs by using subscriptions and certificates.
+  *   Create a backend API.
+prerequisites: |
+  *   At least one year of experience developing scalable solutions through all phases of software development.
+  *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
+iconUrl: /learn/achievements/1-explore-api-management.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-api-management
+units:
+- learn.wwl.explore-api-management.introduction
+- learn.wwl.explore-api-management.discover-service
+- learn.wwl.explore-api-management.gateways
+- learn.wwl.explore-api-management.policies
+- learn.wwl.explore-api-management.create-advanced-policies
+- learn.wwl.explore-api-management.secure-apis-by-using-subscriptions
+- learn.wwl.explore-api-management.secure-apis-by-using-certificates
+- learn.wwl.explore-api-management.exercise-create-backend-api
+- learn.wwl.explore-api-management.knowledge-check
+- learn.wwl.explore-api-management.summary
+badge:
+  uid: learn.wwl.explore-api-management.badge

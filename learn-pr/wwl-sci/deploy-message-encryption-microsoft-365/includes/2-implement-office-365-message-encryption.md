@@ -21,7 +21,7 @@ Any Microsoft 365 tenant should be activated to use Azure RMS and IRM capabiliti
 1. Now run the following cmdlet with a sender inside your organization, to check if IRM data can be obtained for this recipient:
 
     ```powershell
-    Test-IRMConfiguration -Sender admin@contoso.com
+    Test-IRMConfiguration -Sender admin@contoso.com -Recipient admin@contoso.com
 
     ```
 
@@ -68,5 +68,5 @@ The following image provides an overview of the customizable areas of a branding
 
 ![Picture that shows which areas of the Office 365 OME portal can be edited.](../media/branding-template.png)
 
-Learn more about the PowerShell commands to modify these settings: [Modify and OME branding template](https://docs.microsoft.com/microsoft-365/compliance/add-your-organization-brand-to-encrypted-messages?view=o365-worldwide?azure-portal=true)
+Learn more about the PowerShell commands to modify these settings: [Modify and OME branding template](/microsoft-365/compliance/add-your-organization-brand-to-encrypted-messages?view=o365-worldwide?azure-portal=true)
 

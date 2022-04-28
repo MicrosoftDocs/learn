@@ -20,6 +20,7 @@ prerequisites: |
   - Understanding of Azure tools and services for Linux workloads
   - Basic knowledge on how to migrate and build Linux-based workloads on Azure
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
   - beginner
 roles:

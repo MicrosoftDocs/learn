@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.datacenter-integration-for-azure-stack-hub.name-decisions
+title: Naming decisions
+metadata:
+  title: Naming decisions
+  description: "Naming decisions"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-name-decisions.md)]

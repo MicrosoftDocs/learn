@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-registration.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In which the following is not part of updating the registration for an Azure Stack Hub system?"
+    choices:
+    - content: "Update the billing model."
+      isCorrect: false
+      explanation: "Incorrect. Updating the billing model is necessary for updating the registration of an Azure Stack Hub system."
+    - content: "Add or remove nodes for capacity-based billing."
+      isCorrect: false
+      explanation: "Incorrect. Adding or removing nodes when updating the registration of an Azure Stack Hub system is necessary"
+    - content: "Enable Azure Stack Hub for multi tenancy."
+      isCorrect: true
+      explanation: "Correct. Enabling Stack Hub for multi tenancy is not part of the process for updating the registration for Azure Stack Hub."
+  - content: "A Cloud Service Provider (CSP) is planning a deployment of a multi-tenant system that will host internal company workloads and customer workloads. They want to register the system. Which Azure subscription should they use?"
+    choices:
+    - content: "Azure Partner Shared Services (APSS)"
+      isCorrect: true
+      explanation: "Correct. Before registering Azure Stack Hub with Azure, they should have the subscription ID for an Azure subscription."
+    - content: "Microsoft Enterprise Agreement"
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft Enterprise Agreement is a volume licensing program that provides flexibility to buy cloud services and software licenses under one agreement."
+    - content: "Pay-As-You-Go"
+      isCorrect: false
+      explanation: "Incorrect. Pay-as-you-go means you pay only for what you use beyond free services amounts."

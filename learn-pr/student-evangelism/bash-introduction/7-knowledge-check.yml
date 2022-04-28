@@ -1,70 +1,71 @@
 ### YamlMime:ModuleUnit
-  uid: learn.student-evangelism.bash-introduction.7-knowledge-check
+uid: learn.student-evangelism.bash-introduction.7-knowledge-check
+title: Knowledge check
+metadata:
   title: Knowledge check
-  metadata:
-    title: Knowledge check
-    description: Check your knowledge about working with Bash.
-    ms.date: 03/19/2021
-    author: softchris
-    ms.author: chnoring
-    ms.topic: interactive-tutorial
-    ms.prod: learning-bash
-  durationInMinutes: 5  
-  quiz:
-    title: Check your knowledge
-    questions:
-    - content: "Which of the following commands writes a list of processes associated with a user named <b>scottgu</b> to a file?"
-      choices:
-      - content: "`cat | grep scottgu > processes.txt`"
-        isCorrect: false
-        explanation: "Incorrect. You're writing to a file correctly, but `cat` is not the right command to get a list of processes."
-      - content: "`cat > grep scottgu | processes.txt`"
-        isCorrect: false
-        explanation: "Incorrect. `cat` is not the right command to get a list of processes."
-      - content: "`ps -ef | grep scottgu > processes.txt`"
-        isCorrect: true
-        explanation: "Correct! The `ps -ef` command lists all running processes. The `grep` command searches for patterns in each file."
-    - content: "Which of the following commands, called with the `-r` option, would you use to delete a subdirectory that isn't empty?"
-      choices:
-      - content: "`rm`"
-        isCorrect: true
-        explanation: "Correct! Use the `rm -r` command to delete a subdirectory and everything in it."
-      - content: "`rmdir`"
-        isCorrect: false
-        explanation: "Incorrect. The `rmdir` command deletes only empty directories."
-      - content: "`nuke`"
-        isCorrect: false
-        explanation: "Incorrect. `nuke` is not a Bash command."
-    - content: "Which of the following commands combines the contents of <b>foo.txt</b> and <b>bar.txt</b> into a new file named <b>foobar.txt</b>?"
-      choices:
-      - content: "`concat foo.txt bar.txt > foobar.txt`"
-        isCorrect: false
-        explanation: "Incorrect. `concat` is not a Bash command, but you're close!"
-      - content: "`cat foo.txt bar.txt | foobar.txt`"
-        isCorrect: false
-        explanation: "Incorrect. `|` passes data between processes. It does not write out to a file."
-      - content: "`cat foo.txt bar.txt > foobar.txt`"
-        isCorrect: true
-        explanation: "Correct! `cat` concatenates the two files given as arguments, and then `>` writes that data out to a file."        
-    - content: "The purpose of the `sudo` command is to:"
-      choices:
-      - content: "Run a command with elevated privilege"
-        isCorrect: true
-        explanation: "Correct! Use `sudo` to run a command with elevated privilege."
-      - content: "Run a program and leave it running in the background"
-        isCorrect: false
-        explanation: "Incorrect. Appending `&` to a command will leave it running in the background."
-      - content: "Prevent system files from being deleted by non-administrative users"
-        isCorrect: false
-        explanation: "Incorrect. Different steps must be taken to achieve that outcome."
-    - content: "Which of the following statements is true about the command `python3 app.py &`?"
-      choices:
-      - content: "It runs <b>app.py</b> after creating a restore point in the system"
-        isCorrect: false
-        explanation: "Incorrect. Recall that `&` lets a process run in the background."
-      - content: "It runs <b>app.py</b> and returns immediately to the command prompt"
-        isCorrect: true
-        explanation: "Correct! `python3 app.py &` runs <b>app.py</b> and returns immediately to the command prompt."
-      - content: "It runs <b>app.py</b>, but only if it's located in the <b>/etc</b> directory"
-        isCorrect: false
-        explanation: "Incorrect. Recall that `&` lets a process run in the background."
+  description: Check your knowledge about working with Bash.
+  ms.date: 03/19/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-bash
+  ms.custom: team=nextgen
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following commands writes a list of processes associated with a user named <b>scottgu</b> to a file?"
+    choices:
+    - content: "`cat | grep scottgu > processes.txt`"
+      isCorrect: false
+      explanation: "Incorrect. You're writing to a file correctly, but `cat` is not the right command to get a list of processes."
+    - content: "`cat > grep scottgu | processes.txt`"
+      isCorrect: false
+      explanation: "Incorrect. `cat` is not the right command to get a list of processes."
+    - content: "`ps -ef | grep scottgu > processes.txt`"
+      isCorrect: true
+      explanation: "Correct! The `ps -ef` command lists all running processes. The `grep` command searches for patterns in each file."
+  - content: "Which of the following commands, called with the `-r` option, would you use to delete a subdirectory that isn't empty?"
+    choices:
+    - content: "`rm`"
+      isCorrect: true
+      explanation: "Correct! Use the `rm -r` command to delete a subdirectory and everything in it."
+    - content: "`rmdir`"
+      isCorrect: false
+      explanation: "Incorrect. The `rmdir` command deletes only empty directories."
+    - content: "`nuke`"
+      isCorrect: false
+      explanation: "Incorrect. `nuke` is not a Bash command."
+  - content: "Which of the following commands combines the contents of <b>foo.txt</b> and <b>bar.txt</b> into a new file named <b>foobar.txt</b>?"
+    choices:
+    - content: "`concat foo.txt bar.txt > foobar.txt`"
+      isCorrect: false
+      explanation: "Incorrect. `concat` is not a Bash command, but you're close!"
+    - content: "`cat foo.txt bar.txt | foobar.txt`"
+      isCorrect: false
+      explanation: "Incorrect. `|` passes data between processes. It does not write out to a file."
+    - content: "`cat foo.txt bar.txt > foobar.txt`"
+      isCorrect: true
+      explanation: "Correct! `cat` concatenates the two files given as arguments, and then `>` writes that data out to a file."        
+  - content: "The purpose of the `sudo` command is to:"
+    choices:
+    - content: "Run a command with elevated privilege"
+      isCorrect: true
+      explanation: "Correct! Use `sudo` to run a command with elevated privilege."
+    - content: "Run a program and leave it running in the background"
+      isCorrect: false
+      explanation: "Incorrect. Appending `&` to a command will leave it running in the background."
+    - content: "Prevent system files from being deleted by non-administrative users"
+      isCorrect: false
+      explanation: "Incorrect. Different steps must be taken to achieve that outcome."
+  - content: "Which of the following statements is true about the command `python3 app.py &`?"
+    choices:
+    - content: "It runs <b>app.py</b> after creating a restore point in the system"
+      isCorrect: false
+      explanation: "Incorrect. Recall that `&` lets a process run in the background."
+    - content: "It runs <b>app.py</b> and returns immediately to the command prompt"
+      isCorrect: true
+      explanation: "Correct! `python3 app.py &` runs <b>app.py</b> and returns immediately to the command prompt."
+    - content: "It runs <b>app.py</b>, but only if it's located in the <b>/etc</b> directory"
+      isCorrect: false
+      explanation: "Incorrect. Recall that `&` lets a process run in the background."

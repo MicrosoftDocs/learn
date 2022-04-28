@@ -13,7 +13,7 @@ title: Top 5 security items to consider before pushing to production
 summary: Secure your web applications on Azure and protect your apps against the most common and dangerous web application attacks.
 abstract: | 
  In this module, you will:
-  - Use Azure Security Center
+  - Use Microsoft Defender for Cloud
   - Verify your application's inputs and outputs
   - Store your secrets into Key Vault
   - Ensure you are using the latest version of your framework, and its security features

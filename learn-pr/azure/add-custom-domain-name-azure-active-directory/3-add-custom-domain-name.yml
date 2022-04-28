@@ -5,8 +5,8 @@ metadata:
   title: Add a custom domain name in Azure Active Directory
   description: Learn how to associate your custom domain with Azure Active Directory, set it to be the primary domain, and then add pilot users.
   ms.date: 02/25/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  author: ajburnle
+  ms.author: ajburnle
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

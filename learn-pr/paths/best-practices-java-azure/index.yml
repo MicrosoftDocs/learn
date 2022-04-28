@@ -1,0 +1,65 @@
+### YamlMime:LearningPath
+uid: learn.best-practices-java-azure
+metadata:
+  title: Best practices for Java apps on Azure
+  description: Start here and learn how you can monitor, automate, tune, autoscale, secure and build Java apps on Azure. As always, use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
+  ms.date: 11/29/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Best practices for Java apps on Azure
+summary: |
+  Start here and learn how you can:
+
+     - *Monitor* Java apps
+     - *Automate* end-to-end from idea to production for Java apps
+     - *Tune* Java apps
+     - *Autoscale* Java apps for higher utilization
+     - *Secure* access to and from Java apps, and
+     - *Build* using Java tools that you know and love
+
+  As always, use tools and frameworks that you know and love – Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
+prerequisites: |
+  - An Azure subscription
+  - Local installations of [Java JDK (8+)](https://www.azul.com/downloads/azure-only/zulu/), [Maven (3+)](https://maven.apache.org/download.cgi) and [Azure CLI (2.12+)](/cli/azure/install-azure-cli)
+iconUrl: /learn/achievements/best-practices-java-azure.svg
+levels:
+- beginner
+- intermediate
+- advanced
+roles:
+- developer
+- devops-engineer
+- maker
+- solution-architect
+- student
+- technology-manager
+products:
+- azure
+- azure-active-directory
+- azure-app-service
+- azure-app-service-web
+# - azure-application-insights
+#- azure-automation
+- azure-cache-redis
+- azure-clis
+- azure-cosmos-db
+- azure-database-mysql
+#- azure-devops
+- azure-spring-cloud
+- azure-web-apps
+- msal-java
+- azure-service-bus
+modules:
+- learn.monitor-java-azure
+- learn.azure.deploy-java-azure-pipeline-terraform
+# Tune JVMs
+- learn.autoscale-java-azure
+# Secure communications
+# Key vault
+- learn.azure.publish-azure-web-app-with-azure-toolkit-intellij
+- learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
+- learn.develop-azure-functions-app-with-maven-plugin
+trophy:
+  uid: learn.best-practices-java-azure.trophy

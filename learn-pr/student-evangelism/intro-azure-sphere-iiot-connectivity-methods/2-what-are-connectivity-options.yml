@@ -9,6 +9,7 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
+  ms.custom: team=nextgen
 durationInMinutes: 10 # dummy number at present
 content: |
   [!include[](includes/2-what-are-connectivity-options.md)]

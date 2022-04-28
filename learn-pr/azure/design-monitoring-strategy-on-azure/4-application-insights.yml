@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: You want to analyze and address problems that affect your cloud infrastructure's security.
       isCorrect: false
-      explanation: Azure Application Insights is used for your applications. You use Azure Security Center for your infrastructure's security.
+      explanation: Azure Application Insights is used for your applications. You use Microsoft Defender for Cloud for your infrastructure's security.
     - content: You want to analyze and address problems that affect your on-premises infrastructure's security.
       isCorrect: false
-      explanation: You use Azure Security Center for your infrastructure's security. Azure Application Insights is used for your applications.
+      explanation: You use Microsoft Defender for Cloud for your infrastructure's security. Azure Application Insights is used for your applications.
     - content: You want to analyze and address problems that affect your application's health.
       isCorrect: true
       explanation: You can analyze and address issues such as exceptions, failures, and availability problems.
@@ -48,4 +48,3 @@ quiz:
     - content: Use Log Analytics to continuously monitor your application from different geographic locations.
       isCorrect: false
       explanation: You use availability tests to continuously monitor your live web application. You use Log Analytics to query the log data collected from your resources for analysis.
-

@@ -5,7 +5,7 @@ Learn to deploy and configure name resolution with Windows Server DNS.
 
 Contoso, Ltd. is a financial services company in Seattle with major offices located throughout the world. Most of its compute environment runs on-premises on Windows Server. This includes virtualized workloads on Windows Server 2016 hosts.
 
-Contoso IT staff are migrating Contoso on-premises servers to Windows Server 2019. As a Windows Server infrastructure administrator, you're responsible for managing and maintaining the networking infrastructure for Windows Server that will help Contoso achieve its business goals. This includes configuring and managing name resolution using DNS.
+Contoso IT staff are migrating Contoso on-premises servers to Windows Server 2022. As a Windows Server infrastructure administrator, you're responsible for managing and maintaining the networking infrastructure for Windows Server that will help Contoso achieve its business goals. This includes configuring and managing name resolution using DNS.
 
 After completing this module, you’ll know how to configure and manage DNS Servers on Windows Server.
 

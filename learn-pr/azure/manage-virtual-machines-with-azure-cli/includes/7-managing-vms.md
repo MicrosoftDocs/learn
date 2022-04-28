@@ -10,7 +10,7 @@ az vm stop \
     --resource-group <rgn>[sandbox resource group name]</rgn>
 ```
 
-We can verify it has stopped by attempting to ping the public IP address, using `ssh`, or through the `vm get-instance-view` command. This final approach returns the same basic data as `vm show` but includes details about the instance itself. Try entering the following command into Azure Cloud Shell to see the current running state of your VM:
+We can verify the VM has stopped by attempting to ping the public IP address, using `ssh`, or through the `vm get-instance-view` command. This final approach returns the same basic data as `vm show`, but includes details about the instance itself. Try entering the following command into Azure Cloud Shell to see the current running state of your VM:
 
 ```azurecli
 az vm get-instance-view \
@@ -31,7 +31,7 @@ az vm start \
     --resource-group <rgn>[sandbox resource group name]</rgn>
 ```
 
-This command will start a stopped VM. We can verify it through the `vm get-instance-view` query, which should now return `VM running`.
+This command will start a stopped VM. We can verify it through the `vm get-instance-view` query we used in the last section, which should now return `VM running`.
 
 ## Restart a VM
 

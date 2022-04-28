@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk
+metadata:
+  title: Getting started with 3D object interaction
+  description: This course will provide steps and procedures to follow on how to manipulate and interact with 3D objects. 
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+title: Getting started with 3D object interaction
+summary: Learn to manipulate and interact with 3D objects
+abstract: |
+  By the end of this module you will be able to:
+  - Learn how to configure 3D objects so they can be interacted with
+  - Learn how to add bounds control to 3D objects
+  - Learn how to organize buttons in a collection
+  - Learn how to use MRTK's menu prefabs
+  - Learn how to interact with holograms using UI menus and buttons
+  - Learn how to add text elements
+  - Learn how to spawn tooltips on objects dynamically
+iconUrl: /learn/achievements/get-started-with-object-interaction-tutorials-mrtk.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- windows
+- windows-mixed-reality
+- mrtk
+- hololens
+- azure
+- mrtk
+prerequisites: |
+  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
+  - Windows 10 SDK 10.0.18362.0 or later
+  - (Optional) A HoloLens 2 device configured for development
+  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
+  - [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
+  - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
+  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+
+
+units: 
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-1-introduction
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-2-panel-of-buttons-dynamic-menus
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-3-exercise-panel-of-buttons-menus
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-4-provide-description-to-objects-using-text-on-scene-tooltips
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-5-exercise-provide-description-to-objects-using-text-on-scene-tooltips
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-6-manipulate-3d-objects-with-bounds-control
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-7-exercise-manipulate-3d-objects-with-bounds-control
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-8-knowledge-check
+- learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-9-summary
+
+badge:
+  uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk-badge

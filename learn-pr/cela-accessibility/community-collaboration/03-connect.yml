@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.community-collaboration.connect
+title: Connect with members of the disability community
+metadata:
+  title: Connect with members of the disability community
+  description: This content is part of the "Community collaboration for accessible design" module.
+  ms.date: 10/27/2021
+  author: kaitlynjones
+  ms.author: kaitlynjones
+  ms.topic: interactive-tutorial
+  ms.prod: learning-gaming-accessibility
+durationInMinutes: 8
+content: |
+  [!include[](includes/03-connect.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How can accessibility feedback be gathered for products and experiences that can't be shown to audiences outside your team or company?"
+    choices:
+    - content: "Use email distribution lists and resources within your company or organization."
+      isCorrect: true
+      explanation: "Correct. You might work alongside teammates, fellow employees, or other members of your company or organization who have disabilities and can provide useful feedback."
+    - content: "Use disability simulators such as color-blind glasses or blurred glasses to generate feedback if users with disabilities can't be included."
+      isCorrect: false
+      explanation: "Incorrect. Even if your team or organization does not have internal employees with disabilities to provide feedback, validating the accessibility of new products and experiences shouldn't happen through simulators."
+    - content: "Avoid collecting feedback until the product or experience can be shown to broader audiences outside your company or organization."
+      isCorrect: false
+      explanation: "Incorrect. The number of individuals with disabilities within your company or organization might be small compared to the broader disability community. However, feedback from a few individuals is better than no feedback at all."
+  - content: "What role can disability advocacy groups and nonprofit organizations play in collaboration efforts with the disability community during product development?"
+    choices:
+    - content: "These groups can advertise store links to the products or experiences that you've created to ensure that more members of the group purchase them."
+      isCorrect: false
+      explanation: "Incorrect. This question specifically asks about connecting with members of the disability community during development. This answer targets a post-launch timeline. Additionally, contacting these groups to increase sales would not be an appropriate way of partnering with this community."
+    - content: "These groups might be able to offer contact information or help forwarding survey links or study invitations to larger groups of disability communities."
+      isCorrect: true
+      explanation: "Correct. These groups might typically consist of large numbers of disability community members. Depending on the size and nature of the group, they might be willing to connect you with members who would be a good fit to participate in feedback sessions."
+    - content: "These groups might post articles or other informational documents about the community members they serve. Developers can read these articles instead of engaging the community directly."
+      isCorrect: false
+      explanation: "Incorrect. Although these groups often have important information about the disabilities and experiences of the people they serve, reading through these resources alone would not be considered true community collaboration."

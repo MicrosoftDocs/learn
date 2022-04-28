@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-transact-sql-programming.describe-t-sql-for-programming
+title: Describe T-SQL for programming
+metadata:
+  title: Describe T-SQL for programming
+  description: "Describe T-SQL for programming"
+  ms.date: 02/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-describe-transact-sql-for-programming.md)]

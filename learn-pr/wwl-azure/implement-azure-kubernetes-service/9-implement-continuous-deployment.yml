@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-azure-kubernetes-service-aks.implement-continuous-deployment
+title: Implement continuous deployment
+metadata:
+  title: Implement continuous deployment
+  description: "Implement continuous deployment"
+  ms.date: 03/18/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-implement-continuous-deployment.md)]

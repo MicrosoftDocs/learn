@@ -73,7 +73,7 @@ Add the highlighted code below to the end of your pipeline. Be sure to match the
     :::image type="content" source="../media/4-space-game.png" alt-text="A screenshot of the Space Game web site.":::
 
     > [!NOTE]
-    > If there is an error loading the leaderboard, double-check the steps followed in this module. If you see the exception message "An attempt was made to access a socket in a way forbidden by its access permissions", make sure that the app service's AppSettings:LeaderboardFunctionUrl setting is being set correctly.
+    > If there is an error loading the leaderboard, double-check the steps followed in this module. If you see the exception message "An attempt was made to access a socket in a way forbidden by its access permissions", make sure that the app service's AppSettings__LeaderboardFunctionUrl setting is being set correctly.
 
 1. You can also test out the function app directly. Just navigate to your URL using the format below. The response is JSON, which should just render as text in your browser.
 

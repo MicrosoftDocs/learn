@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.top-5-security-items-to-consider.2-azure-security-center
-title: Azure Security Center
+title: Microsoft Defender for Cloud
 metadata:
-  title: Azure Security Center
-  description: Azure Security Center
+  title: Microsoft Defender for Cloud
+  description: Microsoft Defender for Cloud
   author: patridge
   ms.author: adpatrid
   ms.date: 09/24/2018
@@ -16,11 +16,11 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "True or false: Azure Security Center works for Azure resources and on-premises resources."
+  - content: "True or false: Microsoft Defender for Cloud works for Azure resources and on-premises resources."
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "Azure Security Center can monitor all your services, both in Azure and on premises."
+      explanation: "Microsoft Defender for Cloud can monitor all your services, both in Azure and on premises."
     - content: "False"
       isCorrect: false
-      explanation: "Azure Security Center is not limited to Azure-hosted resources."
+      explanation: "Microsoft Defender for Cloud is not limited to Azure-hosted resources."

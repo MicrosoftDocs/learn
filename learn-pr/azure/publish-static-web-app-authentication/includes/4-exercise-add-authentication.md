@@ -15,20 +15,24 @@ In this exercise, you'll complete the following steps:
 The Static Web Apps CLI, also known as SWA CLI, is a local development tool that allows you to run your web app and API locally and emulate authentication and authorization servers.
 
 1. Open a terminal on your computer.
-1. Install the CLI using this command:
 
-    ```bash
-    npm install -g @azure/static-web-apps-cli
-    ```
+1. Install the SWA CLI running the following command.
+
+   ```bash
+   npm install -g @azure/static-web-apps-cli
+   ```
 
 ## Run the app locally
 
-We'll now run the app and API locally with a development server. This way you'll be able to see and test your changes, as your make them in the code.
+Now run the app and API locally with a development server. This way, you'll be able to see and test your changes, as your make them in the code.
 
 1. Open the project in Visual Studio Code.
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Terminal: Create New Integrated Terminal**
-1. Go to the folder of your preferred front-end framework, as shown below:
+
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
+
+1. Enter and select **Terminal: Create New Integrated Terminal**.
+
+1. Go to the folder of your preferred front-end framework, as follows:
 
    ::: zone pivot="angular"
 
@@ -96,16 +100,18 @@ We'll now run the app and API locally with a development server. This way you'll
 
    ::: zone-end
 
-Leave this server running in the background. We'll now run the API and authentication server emulator using the SWA CLI.
+   Leave this server running in the background. Now run the API and authentication server emulator using the SWA CLI.
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Terminal: Create New Integrated Terminal**
-1. Run the SWA CLI using this command:
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
+
+1. Enter and select **Terminal: Create New Integrated Terminal**.
+
+1. Run the SWA CLI by running the following command:
 
    ::: zone pivot="angular"
 
    ```bash
-   swa start http://localhost:4200 --api ./api
+   swa start http://localhost:4200 --api-location ./api
    ```
 
    ::: zone-end
@@ -113,7 +119,7 @@ Leave this server running in the background. We'll now run the API and authentic
    ::: zone pivot="react"
 
    ```bash
-   swa start http://localhost:3000 --api ./api
+   swa start http://localhost:3000 --api-location ./api
    ```
 
    ::: zone-end
@@ -121,7 +127,7 @@ Leave this server running in the background. We'll now run the API and authentic
    ::: zone pivot="svelte"
 
    ```bash
-   swa start http://localhost:5000 --api ./api
+   swa start http://localhost:5000 --api-location ./api
    ```
 
    ::: zone-end
@@ -129,12 +135,12 @@ Leave this server running in the background. We'll now run the API and authentic
    ::: zone pivot="vue"
 
    ```bash
-   swa start http://localhost:8080 --api ./api
+   swa start http://localhost:8080 --api-location ./api
    ```
 
    ::: zone-end
 
-1. Browse to `http://localhost:4280`
+1. Browse to `http://localhost:4280`.
 
 The final port used by the SWA CLI is different than the one you've seen before, because it uses a reverse proxy to forward requests to the three different components:
 
@@ -144,214 +150,206 @@ The final port used by the SWA CLI is different than the one you've seen before,
 
 :::image type="content" source="../media/static-web-apps-cli-architecture.png" alt-text="Static Web Apps CLI architecture.":::
 
-Now let the application running while we modify the code.
+Let the application remain running while you modify the code.
 
 ## Get the user login status
 
-First, we need to access the user login status by making a query to `/.auth/me` in the client.
+First, you need to access the user login status by making a query to `/.auth/me` in the client.
 
 ::: zone pivot="angular"
 
-1. Create the file `angular-app/src/app/core/models/user-info.ts`:
+1. Create the file `angular-app/src/app/core/models/user-info.ts` and add the following code to represent the interface for the user information.
 
    ```typescript
-    export interface UserInfo {
-      identityProvider: string;
-      userId: string;
-      userDetails: string;
-      userRoles: string[];
-    }
-    ```
+   export interface UserInfo {
+     identityProvider: string;
+     userId: string;
+     userDetails: string;
+     userRoles: string[];
+   }
+   ```
 
-1. Edit the file `angular-app/src/app/core/components/nav.component.ts` and add this method in the `NavComponent` class:
+1. Edit the file `angular-app/src/app/core/components/nav.component.ts`, and add the following method in the `NavComponent` class.
 
-    ```typescript
-    async getUserInfo() {
-      try {
-        const response = await fetch('/.auth/me');
-        const payload = await response.json();
-        const { clientPrincipal } = payload;
-        return clientPrincipal;
-      } catch (error) {
-        console.error('No profile could be found');
-        return undefined;
-      }
-    }
-    ```
+   ```typescript
+   async getUserInfo() {
+     try {
+       const response = await fetch('/.auth/me');
+       const payload = await response.json();
+       const { clientPrincipal } = payload;
+       return clientPrincipal;
+     } catch (error) {
+       console.error('No profile could be found');
+       return undefined;
+     }
+   }
+   ```
 
-1. Create a new class property `userInfo` and store the result of `getUserInfo()` when the component is initialized. For that, you also need to implement the `OnInit` interface and update the imports:
+1. Create a new class property `userInfo`, and store the result of the async function `getUserInfo()` when the component is initialized. Implement the `OnInit` interface and update the import statements to import `OnInit` and `UserInfo`. This code fetches the user information when the component is initialized.
 
-    ```typescript
-    import { Component, OnInit } from '@angular/core';
-    import { UserInfo } from '../model/user-info';
-    ...
-    export class NavComponent implements OnInit {
-        userInfo: UserInfo;
+   ```typescript
+   import { Component, OnInit } from '@angular/core';
+   import { UserInfo } from '../model/user-info';
 
-        async ngOnInit() {
-          this.userInfo = await this.getUserInfo();
-        }
-        ...
-    }
-    ```
+   export class NavComponent implements OnInit {
+     userInfo: UserInfo;
 
-    When the component is created, the user information is fetched automatically.
+     async ngOnInit() {
+       this.userInfo = await this.getUserInfo();
+     }
+     // ...
+   }
+   ```
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-1. Edit the file `react-app/src/components/NavBar.js` and to add this code at the top of the function and update the imports:
+1. Edit the file `react-app/src/components/NavBar.js`, and add the following code at the top of the function. This code fetches the user information when the component loads and stores it into the state.
 
-    ```jsx
-    import React, { useState, useEffect } from 'react';
-    import { NavLink } from 'react-router-dom';
+   ```jsx
+   import React, { useState, useEffect } from 'react';
+   import { NavLink } from 'react-router-dom';
 
-    const NavBar = (props) => {
-      const [userInfo, setUserInfo] = useState();
+   const NavBar = (props) => {
+     const [userInfo, setUserInfo] = useState();
 
-      useEffect(() => {
-        (async () => {
-          setUserInfo(await getUserInfo());
-        })();
-      }, []);
+     useEffect(() => {
+       (async () => {
+         setUserInfo(await getUserInfo());
+       })();
+     }, []);
 
-      async function getUserInfo() {
-        try {
-          const response = await fetch('/.auth/me');
-          const payload = await response.json();
-          const { clientPrincipal } = payload;
-          return clientPrincipal;
-        } catch (error) {
-          console.error('No profile could be found');
-          return undefined;
-        }
-      }
+     async function getUserInfo() {
+       try {
+         const response = await fetch('/.auth/me');
+         const payload = await response.json();
+         const { clientPrincipal } = payload;
+         return clientPrincipal;
+       } catch (error) {
+         console.error('No profile could be found');
+         return undefined;
+       }
+     }
 
-      return (
-    ...
-    ```
-
-    This code fetches the user information when the component loads and store it into the state.
+     return (
+     // ...
+   ```
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-1. Edit the file `svelte-app/src/components/NavBar.svelte` and add this code in the script part:
+1. Edit the file `svelte-app/src/components/NavBar.svelte`, and add the following code in the script section. This code fetches the user information when the component loads.
 
-    ```javascript
-    import { onMount } from 'svelte';
+   ```javascript
+   import { onMount } from 'svelte';
 
-    let userInfo = undefined;
+   let userInfo = undefined;
 
-    onMount(async () => (userInfo = await getUserInfo()));
+   onMount(async () => (userInfo = await getUserInfo()));
 
-    async function getUserInfo() {
-      try {
-        const response = await fetch('/.auth/me');
-        const payload = await response.json();
-        const { clientPrincipal } = payload;
-        return clientPrincipal;
-      } catch (error) {
-        console.error('No profile could be found');
-        return undefined;
-      }
-    }
-    ```
-
-    When the component is created, the user information is fetched automatically.
+   async function getUserInfo() {
+     try {
+       const response = await fetch('/.auth/me');
+       const payload = await response.json();
+       const { clientPrincipal } = payload;
+       return clientPrincipal;
+     } catch (error) {
+       console.error('No profile could be found');
+       return undefined;
+     }
+   }
+   ```
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-1. Edit the file `vue-app/src/components/nav-bar.vue` and add `userInfo` to the data object:
+1. Edit the file `vue-app/src/components/nav-bar.vue`, and add `userInfo` to the data object.
 
-    ```javascript
-    ...
-      data() {
-        return {
-          userInfo: {
-            type: Object,
-            default() {},
-          },
-        };
-      },
-    ```
-
-1. Add the `getUserInfo()` method:
-
-    ```javascript
-    ...
-    methods: {
-      async getUserInfo() {
-        try {
-          const response = await fetch('/.auth/me');
-          const payload = await response.json();
-          const { clientPrincipal } = payload;
-          return clientPrincipal;
-        } catch (error) {
-          console.error('No profile could be found');
-          return undefined;
-        }
-      },
+   ```javascript
+    data() {
+      return {
+        userInfo: {
+          type: Object,
+          default() {},
+        },
+      };
     },
-    ```
+   ```
 
-1. Finally, add the `created` lifecycle hook to the component:
+1. Add the `getUserInfo()` method to the _methods_ section.
 
-    ```javascript
-    async created() {
-      this.userInfo = await this.getUserInfo();
-    },
-    ```
+   ```javascript
+   methods: {
+     async getUserInfo() {
+       try {
+         const response = await fetch('/.auth/me');
+         const payload = await response.json();
+         const { clientPrincipal } = payload;
+         return clientPrincipal;
+       } catch (error) {
+         console.error('No profile could be found');
+         return undefined;
+       }
+     },
+   },
+   ```
 
-    When the component is created, the user information is fetched automatically.
+1. Add the `created` lifecycle hook to the component.
+
+   ```javascript
+   async created() {
+     this.userInfo = await this.getUserInfo();
+   },
+   ```
+
+   When the component is created, the user information is fetched automatically.
 
 ::: zone-end
 
 ## Add login and logout buttons
 
-The user information will be `undefined` if we're not logged in, our changes won't be visible for now. It's time to add login buttons for the different providers.
+The user information will be `undefined` if they're not logged in, so the changes won't be visible for now. It's time to add login buttons for the different providers.
 
 ::: zone pivot="angular"
 
-1. Edit the file `angular-app/src/app/core/components/nav.component.ts` to add a list of providers in the `NavComponent` class:
+1. Edit the file `angular-app/src/app/core/components/nav.component.ts` to add a list of providers in the `NavComponent` class.
 
-    ```typescript
-    providers = ['twitter', 'github', 'aad'];
-    ```
+   ```typescript
+   providers = ['twitter', 'github', 'aad'];
+   ```
 
-1. Add the `redirect` property below, to capture the current URL for the post login redirection:
+1. Add the following `redirect` property to capture the current URL for the post login redirection.
 
-    ```typescript
-    redirect = window.location.pathname;
-    ```
+   ```typescript
+   redirect = window.location.pathname;
+   ```
 
-1. Add this code at the bottom of the template to display the login and logout buttons.
+1. Add the following code to the template after the first `</nav>` element to display the login and logout buttons.
 
-    ```typescript
-    <nav class="menu auth">
-      <p class="menu-label">Auth</p>
-      <div class="menu-list auth">
-        <ng-container *ngIf="!userInfo; else logout">
-          <ng-container *ngFor="let provider of providers">
-            <a href="/.auth/login/{{provider}}?post_login_redirect_uri={{redirect}}">{{provider}}</a>
-          </ng-container>
-        </ng-container>
-        <ng-template #logout>
-          <a href="/.auth/logout?post_logout_redirect_uri={{redirect}}">Logout</a>
-        </ng-template>
-      </div>
-    </nav>
-    ```
+   ```html
+   <nav class="menu auth">
+     <p class="menu-label">Auth</p>
+     <div class="menu-list auth">
+       <ng-container *ngIf="!userInfo; else logout">
+         <ng-container *ngFor="let provider of providers">
+           <a href="/.auth/login/{{provider}}?post_login_redirect_uri={{redirect}}">{{provider}}</a>
+         </ng-container>
+       </ng-container>
+       <ng-template #logout>
+         <a href="/.auth/logout?post_logout_redirect_uri={{redirect}}">Logout</a>
+       </ng-template>
+     </div>
+   </nav>
+   ```
 
-    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and sets the redirection URL to the current page.
+   If the user isn't logged in, you display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
 
-    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` and also set the redirection URL to the current page.
+   Otherwise, if the user is already logged in, a logout button displays that links to `/.auth/logout`, and also sets the redirection URL to the current page.
 
-You should now see this in your browser:
+You should now see this webpage in your browser.
 
 :::image type="content" source="../media/my-shopping-list-app-auth-angular.png" alt-text="Angular web app with login buttons.":::
 
@@ -359,48 +357,40 @@ You should now see this in your browser:
 
 ::: zone pivot="react"
 
-1. Edit the file `react-app/src/components/NavBar.js` to add a list of providers at the top of the function:
+1. Edit the file `react-app/src/components/NavBar.js` to add a list of providers at the top of the function.
 
-    ```jsx
-    const providers = ['twitter', 'github', 'aad'];
-    ```
+   ```javascript
+   const providers = ['twitter', 'github', 'aad'];
+   ```
 
-1. Add the `redirect` variable just below, to capture the current URL for the post login redirection:
+1. Add the following `redirect` variable below the first variable to capture the current URL for the post login redirection.
 
-    ```jsx
-    const redirect = window.location.pathname;
-    ```
+   ```javascript
+   const redirect = window.location.pathname;
+   ```
 
-1. Add this code at the bottom of the JSX template to display the login and logout buttons.
+1. Add the following code to the JSX template after the first `</nav>` element to display the login and logout buttons.
 
-    ```jsx
-    ...
-      </nav>
-      // Login and logout buttons
-      <nav className="menu auth">
-        <p className="menu-label">Auth</p>
-        <div className="menu-list auth">
-          {!userInfo && providers.map((provider) => (
-            <a key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
-              {provider}
-            </a>
-          ))}
-          {userInfo && (
-            <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>
-              Logout
-            </a>
-          )}
-        </div>
-      </nav>
-      // End of login and logout buttons
-    </div>
-    ```
+   ```jsx
+   <nav className="menu auth">
+     <p className="menu-label">Auth</p>
+     <div className="menu-list auth">
+       {!userInfo &&
+         providers.map((provider) => (
+           <a key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
+             {provider}
+           </a>
+         ))}
+       {userInfo && <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>Logout</a>}
+     </div>
+   </nav>
+   ```
 
-    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and sets the redirection URL to the current page.
+   If the user isn't logged in, you display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
 
-    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` and also set the redirection URL to the current page.
+   Otherwise, if the user is already logged in, you display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
 
-You should now see this in your browser:
+You should now see this webpage in your browser.
 
 :::image type="content" source="../media/my-shopping-list-app-auth-react.png" alt-text="React web app with login buttons.":::
 
@@ -408,50 +398,45 @@ You should now see this in your browser:
 
 ::: zone pivot="svelte"
 
-1. Edit the file `svelte-app/src/components/NavBar.svelte` to add a list of providers at the top of the script:
+1. Edit the file `svelte-app/src/components/NavBar.svelte` to add a list of providers at the top of the script.
 
-    ```javascript
-    const providers = ['twitter', 'github', 'aad'];
-    ```
+   ```javascript
+   const providers = ['twitter', 'github', 'aad'];
+   ```
 
-1. Add the `redirect` variable just below, to capture the current URL for the post login redirection:
+1. Add the following `redirect` variable below the first variable to capture the current URL for the post login redirection.
 
-    ```javascript
-    const redirect = window.location.pathname;
-    ```
+   ```javascript
+   const redirect = window.location.pathname;
+   ```
 
-1. Add this code at the bottom of the template to display the login and logout buttons.
+1. Add the following code to the template after the first `</nav>` element to display the login and logout buttons.
 
-    ```html
-    ...
-      </nav>
-      <!-- Login and logout buttons -->
-      <nav class="menu auth">
-        <p class="menu-label">Auth</p>
-        <div class="menu-list auth">
-          {#if !userInfo}
-            {#each providers as provider (provider)}
-              <a href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
-                {provider}
-              </a>
-            {/each}
-          {/if}
-          {#if userInfo}
-            <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>
-              Logout
+   ```html
+    <nav class="menu auth">
+      <p class="menu-label">Auth</p>
+      <div class="menu-list auth">
+        {#if !userInfo}
+          {#each providers as provider (provider)}
+            <a href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
+              {provider}
             </a>
-          {/if}
-        </div>
-      </nav>
-      <!-- end of login and logout buttons -->
-    </div>
-    ```
+          {/each}
+        {/if}
+        {#if userInfo}
+          <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>
+            Logout
+          </a>
+        {/if}
+      </div>
+    </nav>
+   ```
 
-    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and sets the redirection URL to the current page.
+   If the user isn't logged in, you display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
 
-    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` and also set the redirection URL to the current page.
+   Otherwise, if the user is already logged in, you display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
 
-You should now see this in your browser:
+You should now see this webpage in your browser.
 
 :::image type="content" source="../media/my-shopping-list-app-auth-svelte.png" alt-text="Svelte web app with login buttons.":::
 
@@ -459,61 +444,41 @@ You should now see this in your browser:
 
 ::: zone pivot="vue"
 
-1. Edit the file `vue-app/src/components/nav-bar.vue` and add a list of providers to the data object:
+1. Edit the file `vue-app/src/components/nav-bar.vue`, and add a list of providers to the data object.
 
-    ```javascript
-    ...
-      data() {
-        return {
-          ...
-          providers: ['twitter', 'github', 'aad'],
-        };
-      },
-    ```
+   ```javascript
+    providers: ['twitter', 'github', 'aad'],
+   ```
 
-1. Add the `redirect` property below, to capture the current URL for the post login redirection:
+1. Add the following`redirect` property to capture the current URL for the post login redirection.
 
-    ```javascript
-    ...
-      data() {
-        return {
-          ...
-          redirect: window.location.pathname,
-        };
-      },
-    ```
+   ```javascript
+    redirect: window.location.pathname,
+   ```
 
-1. Add this code at the bottom of the template to display the login and logout buttons.
+1. Add the following code to the template after the first `</nav>` element to display the login and logout buttons.
 
-    ```html
-    ...
-        </nav>
-        <!-- Login and logout buttons -->
-        <nav class="menu auth">
-          <p class="menu-label">Auth</p>
-          <div class="menu-list auth">
-            <template v-if="!userInfo">
-              <template v-for="provider in providers">
-                <a :key="provider" :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`">
-                  {{ provider }}
-                </a>
-              </template>
-            </template>
-            <a v-if="userInfo" :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`">
-              Logout
-            </a>
-          </div>
-        </nav>
-        <!-- end of login and logout buttons -->
-      </div>
-    </template>
-    ```
+   ```html
+   <nav class="menu auth">
+     <p class="menu-label">Auth</p>
+     <div class="menu-list auth">
+       <template v-if="!userInfo">
+         <template v-for="provider in providers">
+           <a :key="provider" :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`">
+             {{ provider }}
+           </a>
+         </template>
+       </template>
+       <a v-if="userInfo" :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`"> Logout </a>
+     </div>
+   </nav>
+   ```
 
-    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and sets the redirection URL to the current page.
+   If the user isn't logged in, you display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
 
-    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` and also set the redirection URL to the current page.
+   Otherwise, if the user is already logged in, you display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
 
-You should now see this in your browser:
+You should now see this webpage in your browser.
 
 :::image type="content" source="../media/my-shopping-list-app-auth-vue.png" alt-text="Vue web app with login buttons.":::
 
@@ -521,11 +486,11 @@ You should now see this in your browser:
 
 ## Display the user login status
 
-Before testing our authentication workflow, let's display the user details about the logged in user.
+Before testing the authentication workflow, let's display the user details about the logged-in user.
 
 ::: zone pivot="angular"
 
-Edit the file `angular-app/src/app/core/components/nav.component.ts` and add this code at the bottom of the template:
+Edit the file `angular-app/src/app/core/components/nav.component.ts`, and add this code to the bottom of the template after the final closing `</nav>` tag.
 
 ```html
 <div class="user" *ngIf="userInfo">
@@ -538,7 +503,7 @@ Edit the file `angular-app/src/app/core/components/nav.component.ts` and add thi
 > [!NOTE]
 > The `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
-Your completed file should now look like this:
+Your completed file should now look like the following:
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -563,11 +528,11 @@ import { UserInfo } from '../model/user-info';
       <div class="menu-list auth">
         <ng-container *ngIf="!userInfo; else logout">
           <ng-container *ngFor="let provider of providers">
-            <a href="/.auth/login/{{provider}}?post_login_redirect_uri={{redirect}}">{{provider}}</a>
+            <a href="/.auth/login/{{ provider }}?post_login_redirect_uri={{ redirect }}">{{ provider }}</a>
           </ng-container>
         </ng-container>
         <ng-template #logout>
-          <a href="/.auth/logout?post_logout_redirect_uri={{redirect}}">Logout</a>
+          <a href="/.auth/logout?post_logout_redirect_uri={{ redirect }}">Logout</a>
         </ng-template>
       </div>
     </nav>
@@ -605,13 +570,11 @@ export class NavComponent implements OnInit {
 
 ::: zone pivot="react"
 
-Edit the file `react-app/src/components/NavBar.js` and add this code at the bottom of the JSX template to display the login status:
+Edit the file `react-app/src/components/NavBar.js`, and add this code to the bottom of the JSX template after the final closing `</nav>` tag, to display the login status.
 
 ```jsx
-...
-  </nav>
-  // User infos
-  {userInfo && (
+{
+  userInfo && (
     <div>
       <div className="user">
         <p>Welcome</p>
@@ -619,16 +582,14 @@ Edit the file `react-app/src/components/NavBar.js` and add this code at the bott
         <p>{userInfo && userInfo.identityProvider}</p>
       </div>
     </div>
-  )}
-  // End of User infos
-</div>
-...
+  )
+}
 ```
 
 > [!NOTE]
 > The `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
-Your completed file should now look like this:
+Your completed file should now look like the following:
 
 ```jsx
 import React, { useState, useEffect } from 'react';
@@ -674,16 +635,13 @@ const NavBar = (props) => {
       <nav className="menu auth">
         <p className="menu-label">Auth</p>
         <div className="menu-list auth">
-          {!userInfo && providers.map((provider) => (
-            <a key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
-              {provider}
-            </a>
-          ))}
-          {userInfo && (
-            <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>
-              Logout
-            </a>
-          )}
+          {!userInfo &&
+            providers.map((provider) => (
+              <a key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
+                {provider}
+              </a>
+            ))}
+          {userInfo && <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>Logout</a>}
         </div>
       </nav>
       {userInfo && (
@@ -706,30 +664,24 @@ export default NavBar;
 
 ::: zone pivot="svelte"
 
-Edit the file `svelte-app/src/components/NavBar.svelte` and add this code at the bottom of the template to display the login status:
+Edit the file `svelte-app/src/components/NavBar.svelte`, and add this code to the bottom of the template after the final closing `</nav>` tag, to display the login status.
 
 ```html
-...
-  </nav>
-  <!-- User infos -->
-  {#if userInfo}
-    <div class="user">
-      <p>Welcome</p>
-      <p>{userInfo && userInfo.userDetails}</p>
-      <p>{userInfo && userInfo.identityProvider}</p>
-    </div>
-  {/if}
-  <!-- End of user infos -->
+{#if userInfo}
+<div class="user">
+  <p>Welcome</p>
+  <p>{userInfo && userInfo.userDetails}</p>
+  <p>{userInfo && userInfo.identityProvider}</p>
 </div>
-...
+{/if}
 ```
 
 > [!NOTE]
 > The `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
-Your completed file should now look like this:
+Your completed file should now look like the following:
 
-```html
+```javascript
 <script>
   import { onMount } from 'svelte';
   import { Link } from 'svelte-routing';
@@ -802,59 +754,54 @@ Your completed file should now look like this:
 
 ::: zone pivot="vue"
 
-Edit the file `vue-app/src/components/nav-bar.vue` and add this code at the bottom of the template to display the login status:
+Edit the file `vue-app/src/components/nav-bar.vue`, and add this code to the bottom of the template after the final closing `</nav>` tag, to display the login status:
 
 ```html
-...
-    </nav>
-    <!-- User infos -->
-    <div class="user" v-if="userInfo">
-      <p>Welcome</p>
-      <p>{{ userInfo.userDetails }}</p>
-      <p>{{ userInfo.identityProvider }}</p>
-    </div>
-    <!-- End of user infos -->
-  </div>
-</template>
+<div class="user" v-if="userInfo">
+  <p>Welcome</p>
+  <p>{{ userInfo.userDetails }}</p>
+  <p>{{ userInfo.identityProvider }}</p>
+</div>
 ```
 
 > [!NOTE]
 > The `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
-Your completed file should now look like this:
+Your completed file should now look like the following:
 
-```html
+```javascript
 <script>
-export default {
-  name: 'NavBar',
-  data() {
-    return {
-      userInfo: {
-        type: Object,
-        default() {},
-      },
-      providers: ['twitter', 'github', 'aad'],
-      redirect: window.location.pathname,
-    };
-  },
-  methods: {
-    async getUserInfo() {
-      try {
-        const response = await fetch('/.auth/me');
-        const payload = await response.json();
-        const { clientPrincipal } = payload;
-        return clientPrincipal;
-      } catch (error) {
-        console.error('No profile could be found');
-        return undefined;
-      }
+  export default {
+    name: 'NavBar',
+    data() {
+      return {
+        userInfo: {
+          type: Object,
+          default() {},
+        },
+        providers: ['twitter', 'github', 'aad'],
+        redirect: window.location.pathname,
+      };
     },
-  },
-  async created() {
-    this.userInfo = await this.getUserInfo();
-  },
-};
+    methods: {
+      async getUserInfo() {
+        try {
+          const response = await fetch('/.auth/me');
+          const payload = await response.json();
+          const { clientPrincipal } = payload;
+          return clientPrincipal;
+        } catch (error) {
+          console.error('No profile could be found');
+          return undefined;
+        }
+      },
+    },
+    async created() {
+      this.userInfo = await this.getUserInfo();
+    },
+  };
 </script>
+
 <template>
   <div column is-2>
     <nav class="menu">
@@ -869,18 +816,10 @@ export default {
       <div class="menu-list auth">
         <template v-if="!userInfo">
           <template v-for="provider in providers">
-            <a
-              :key="provider"
-              :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`"
-              >{{ provider }}</a
-            >
+            <a :key="provider" :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`">{{ provider }}</a>
           </template>
         </template>
-        <a
-          v-if="userInfo"
-          :href="`/.auth/logout?post_logout_redirect_uri=${redirect}`"
-          >Logout</a
-        >
+        <a v-if="userInfo" :href="`/.auth/logout?post_logout_redirect_uri=${redirect}`">Logout</a>
       </div>
     </nav>
     <div class="user" v-if="userInfo">
@@ -896,33 +835,37 @@ export default {
 
 ## Test authentication locally
 
-Everything is now in place, the final step is to test if everything is working as expected.
+Everything is now in place. The final step is to test if everything is working as expected.
 
 1. In your web app, select one of the identity providers to log in.
+
 1. You'll be redirected to this page:
 
-    :::image type="content" source="../media/static-web-apps-cli-auth-screen.png" alt-text="Screenshot showing SWA CLI fake authentication screen.":::
+   :::image type="content" source="../media/static-web-apps-cli-auth-screen.png" alt-text="Screenshot showing SWA CLI fake authentication screen.":::
 
-    This is a fake authentication screen provided by the SWA CLI, allowing you to test authentication locally by providing yourself user details.
+   This is a fake authentication screen, provided by the SWA CLI, allowing you to test authentication locally by providing yourself user details.
 
 1. Enter `mslearn` as username and `1234` for the user ID.
+
 1. Select **Login**.
 
-After the login, you're redirected to the previous page. You can see the login buttons have been replaced by a logout button. You can also see your username and the selected provider below the logout button.
+   After the login, you're redirected to the previous page. You can see the login buttons have been replaced by a logout button. You can also see your username and the selected provider below the logout button.
 
-Now that you checked that everything works as expected locally, it's time to deploy your changes.
+   Now that you checked that everything works as expected locally, it's time to deploy your changes.
 
-You can stop the running app and API by pressing <kbd>Ctrl-C</kbd> in both terminals.
+1. You can stop the running app and API by pressing <kbd>Ctrl-C</kbd> in both terminals.
 
 ## Deploy your changes
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Git: Commit All**
-1. Enter `Add authentication` as the commit message.
-1. Press <kbd>Enter</kbd>
-1. Open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Git: Push**
-1. Press <kbd>Enter</kbd>
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
+
+1. Enter and select **Git: Commit All**.
+
+1. Enter `Add authentication` as the commit message, and press <kbd>Enter</kbd>.
+
+1. Open the command palette by pressing <kbd>F1</kbd>.
+
+1. Enter and select **Git: Push**, and press <kbd>Enter</kbd>.
 
 After you pushed your changes, wait for the build and deploy process to run. The changes should be visible on your deployed app after that.
 

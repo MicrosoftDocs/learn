@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-transact-sql-programming.describe-batches
+title: Describe batches
+metadata:
+  title: Describe batches
+  description: "Describe batches"
+  ms.date: 02/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-describe-batches.md)]

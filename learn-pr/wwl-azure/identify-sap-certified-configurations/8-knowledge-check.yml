@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.identify-sap-certified-configurations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/20/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure is the primary benefit of which SAP on Azure deployment option?"
+    choices:
+    - content: "Azure VMs"
+      isCorrect: false
+      explanation: "Incorrect. Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure is not a primary benefit of Azure VMs."
+    - content: "SAP HANA on Azure (Large Instances)"
+      isCorrect: false
+      explanation: "Incorrect. Providing an easy way to deploy and test pre-configured SAP solutions offered by SAP without having to deploy underlying infrastructure is not a primary benefit of SAP HANA on Azure (Large Instances)."
+    - content: "SAP Cloud Appliance Library"
+      isCorrect: true
+      explanation: "Correct. SAP Cloud Appliance Library allows you to deploy pre-configured software appliances on different public clouds, including Azure."
+  - content: "Which of the following is one of the SAP-certified operating systems supported for SAP products on Azure VMs?"
+    choices:
+    - content: "Microsoft Windows Server 2003 R2"
+      isCorrect: false
+      explanation: "Incorrect. The earliest supported version of Microsoft Windows Server is Microsoft Windows Server 2008 R2."
+    - content: "Oracle Linux 7 (OL7)"
+      isCorrect: true
+      explanation: "Correct. At the time of authoring, only Oracle Linux 7 of the operating systems listed above is supported. The earliest supported version of Microsoft Windows Server is Microsoft Windows Server 2008 R2, and the earliest supported version of Red Hat Enterprise Linux is RHEL7."
+    - content: "Red Hat Enterprise Linux 5 (RHEL5)"
+      isCorrect: false
+      explanation: "Incorrect. The earliest supported version of Red Hat Enterprise Linux is RHEL7."
+  - content: "What is the single source of truth for SAP solutions configurations on Azure?"
+    choices:
+    - content: "SAP"
+      isCorrect: true
+      explanation: "Correct. Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of: SAP product; Operating system; RDBMS; and Azure offerings (Azure VM SKU, SAP HANA on Azure Large Instances)."
+    - content: "Microsoft"
+      isCorrect: false
+      explanation: "Incorrect. Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of: SAP product; Operating system; RDBMS; and Azure offerings (Azure VM SKU, SAP HANA on Azure Large Instances)."
+    - content: "Either SAP or Microsoft"
+      isCorrect: false
+      explanation: "Incorrect. Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of: SAP product; Operating system; RDBMS; and Azure offerings (Azure VM SKU, SAP HANA on Azure Large Instances)."
+  - content: "In SAP HANA Certified IaaS Platform, SAP uses the term 'clustering' to mean what?"
+    choices:
+    - content: "Scale-out only"
+      isCorrect: true
+      explanation: "Correct. SAP uses the term 'clustering' in SAP HANA Certified IaaS Platforms as a synonym for 'scale-out' and NOT for high availability 'clustering'."
+    - content: "High availability clustering only"
+      isCorrect: false
+      explanation: "Incorrect. SAP uses the term 'clustering' in SAP HANA Certified IaaS Platforms as a synonym for 'scale-out' and NOT for high availability 'clustering'."
+    - content: "Both"
+      isCorrect: false
+      explanation: "Incorrect. SAP uses the term 'clustering' in SAP HANA Certified IaaS Platforms as a synonym for 'scale-out' and NOT for high availability 'clustering'."

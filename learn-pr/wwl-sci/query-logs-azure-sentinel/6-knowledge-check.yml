@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/30/2021
+  ms.date: 03/17/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -27,7 +28,7 @@ quiz:
     - content: "SigninLogs"
       isCorrect: false
       explanation: "Incorrect. This log is for signing into Azure Active Directory"
-  - content: "What table contains logs from Windows hosts collected directly to Azure Sentinel?"
+  - content: "What table contains logs from Windows hosts collected directly to Microsoft Sentinel?"
     choices:
     - content: "SecurityEvent"
       isCorrect: true

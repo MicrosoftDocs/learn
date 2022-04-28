@@ -56,3 +56,9 @@ The main steps in the process are:
 1. Perform Live Migration of a highly available VM. Use Failover Cluster Manager to perform Live Migration of a highly available VM.
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MHJM]
+
+---
+
+
+
+---

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-github-actions.examine-release-test-action
+title: Examine release and test an action
+metadata:
+  title: Examine release and test an action
+  description: "Examine release and test an action"
+  ms.date: 02/15/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-examine-release-test-action.md)]

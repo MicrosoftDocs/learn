@@ -27,7 +27,7 @@ quiz:
     - content: Azure Policy
       isCorrect: true
       explanation: Correct. Azure Policy helps to enforce organizational standards and to assess compliance at scale.
-    - content: Azure Security Center
+    - content: Microsoft Defender for Cloud
       isCorrect: false
       explanation: Azure Policy helps to enforce organizational standards and to assess compliance at scale.
 

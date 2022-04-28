@@ -6,59 +6,50 @@ In this exercise, you'll create the *salesTotalsDir* directory and *totals.txt* 
 
 ## Create the SalesTotals directory
 
-1. In the `Main` function, remove the `foreach` loop that iterates and write to the *Console* output each filename returned from the `FindFiles` function. This will result in the `salesFiles` variable going unused. We will leave it in here for now because it will be used again in a future lesson.
+1. In the `Program.cs` file, remove the `foreach` loop that iterates, and writes to the *Console* output each filename returned from the `FindFiles` function. This will result in the `salesFiles` variable going unused. We will leave it in here for now because it will be used again in a future lesson.
 
-1. In the `Main` function, create a variable called `salesTotalsDir`, which holds the path to the *salesTotals* directory.
+1. In the `Program.cs` file, create a variable called `salesTotalsDir`, which holds the path to the *salesTotals* directory:
 
     ```csharp
-    static void Main(string[] args)
-    {
-        var currentDirectory = Directory.GetCurrentDirectory();
-        var storesDirectory = Path.Combine(currentDirectory, "stores");
-        
-        var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
-        
-        var salesFiles = FindFiles(storesDirectory);
-    }
+    var currentDirectory = Directory.GetCurrentDirectory();
+    var storesDirectory = Path.Combine(currentDirectory, "stores");
+    
+    var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
+    
+    var salesFiles = FindFiles(storesDirectory);
     ```
 
-1. In the `Main` function, add code to create the directory.
+1. In the `Program.cs` file, add code to create the directory:
 
     ```csharp
-    static void Main(string[] args)
-    {
-        var currentDirectory = Directory.GetCurrentDirectory();
-        var storesDirectory = Path.Combine(currentDirectory, "stores");
-        
-        var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
-        Directory.CreateDirectory(salesTotalDir);
-        
-        var salesFiles = FindFiles(storesDirectory);
-    }
+    var currentDirectory = Directory.GetCurrentDirectory();
+    var storesDirectory = Path.Combine(currentDirectory, "stores");
+    
+    var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
+    Directory.CreateDirectory(salesTotalDir);   // Add this line of code
+
+    var salesFiles = FindFiles(storesDirectory);   
     ```
 
 ## Write the totals.txt file
 
-1. In the `Main` function, add the code to create an empty file called *totals.txt* inside the newly created *salesTotalsDir* directory. Use an empty string for the file's contents for now.
+1. In the `Program.cs` file, add the code to create an empty file called *totals.txt* inside the newly created *salesTotalsDir* directory. Use an empty string for the file's contents for now:
 
     ```csharp
-    static void Main(string[] args)
-    {
-        var currentDirectory = Directory.GetCurrentDirectory();
-        var storesDirectory = Path.Combine(currentDirectory, "stores");
-        
-        var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
-        Directory.CreateDirectory(salesTotalDir);
-        
-        var salesFiles = FindFiles(storesDirectory);
-        
-        File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
-    }
+    var currentDirectory = Directory.GetCurrentDirectory();
+    var storesDirectory = Path.Combine(currentDirectory, "stores");
+    
+    var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
+    Directory.CreateDirectory(salesTotalDir);
+    
+    var salesFiles = FindFiles(storesDirectory);
+    
+    File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
     ```
 
 1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the file.
 
-1. Run the program by running the following code from the terminal prompt.
+1. Run the program by running the following code from the terminal prompt:
 
     ```bash
     dotnet run
@@ -72,49 +63,33 @@ You're almost finished. The last step is to read the sales files, add up the tot
 
 ## Got stuck?
 
-If you got stuck during this exercise, here's the full code up to this point.
+If you got stuck during this exercise, here's the full code up to this point:
 
 ```csharp
-using System;
-using System.IO;
-using System.Collections.Generic;
+var currentDirectory = Directory.GetCurrentDirectory();
+var storesDirectory = Path.Combine(currentDirectory, "stores");
 
+var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
+Directory.CreateDirectory(salesTotalDir);     
+var salesFiles = FindFiles(storesDirectory);
 
-namespace files_module
+File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
+
+IEnumerable<string> FindFiles(string folderName)
 {
-    class Program
+    List<string> salesFiles = new List<string>();
+
+    var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
+
+    foreach (var file in foundFiles)
     {
-        static void Main(string[] args)
+        var extension = Path.GetExtension(file);
+        if (extension == ".json")
         {
-            var currentDirectory = Directory.GetCurrentDirectory();
-            var storesDirectory = Path.Combine(currentDirectory, "stores");
-
-            var salesTotalDir = Path.Combine(currentDirectory, "salesTotalDir");
-            Directory.CreateDirectory(salesTotalDir);
-
-            var salesFiles = FindFiles(storesDirectory);
-
-            File.WriteAllText(Path.Combine(salesTotalDir, "totals.txt"), String.Empty);
-        }
-
-        static IEnumerable<string> FindFiles(string folderName)
-        {
-            List<string> salesFiles = new List<string>();
-
-            var foundFiles = Directory.EnumerateFiles(folderName, "*", SearchOption.AllDirectories);
-
-            foreach (var file in foundFiles)
-            {
-                var extension = Path.GetExtension(file);
-
-                if (extension == ".json")
-                {
-                    salesFiles.Add(file);
-                }
-            }
-
-            return salesFiles;
+            salesFiles.Add(file);
         }
     }
+
+    return salesFiles;
 }
 ```

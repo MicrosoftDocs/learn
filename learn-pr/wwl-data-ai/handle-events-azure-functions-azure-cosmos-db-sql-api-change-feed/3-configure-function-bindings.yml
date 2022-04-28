@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.configure-function-bindings
+title: Configure function bindings
+metadata:
+  title: Configure function bindings
+  description: "Configure function bindings"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-configure-function-bindings.md)]

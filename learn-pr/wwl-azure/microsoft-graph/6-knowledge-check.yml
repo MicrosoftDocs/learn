@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-graph.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/04/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which HTTP method below is used to update a resource with new values?"
+    choices:
+    - content: "POST"
+      isCorrect: false
+      explanation: "That's incorrect. The POST method creates a new resource."
+    - content: "PATCH"
+      isCorrect: true
+      explanation: "That's correct. The PATCH method does update a resource with a new value."
+    - content: "PUT"
+      isCorrect: false
+      explanation: "That's incorrect. The PUT method replaces a resource with a new one."
+  - content: "Which of the components of the Microsoft 365 platform is used to deliver data external to Azure into Microsoft Graph services and applications?"
+    choices:
+    - content: "Microsoft Graph API"
+      isCorrect: false
+      explanation: "That's incorrect. The Microsoft Graph API offers a single endpoint to use with APIs and SDKs."
+    - content: "Microsoft Graph connectors"
+      isCorrect: true
+      explanation: "That's correct. Microsoft Graph connectors work in the incoming direction. Connectors exist for many commonly used data sources such as Box, Google Drive, Jira, and Salesforce."
+    - content: "Microsoft Graph Data Connect"
+      isCorrect: false
+      explanation: "That's incorrect. Microsoft Graph Data Connect  provides a set of tools to streamline secure and scalable delivery of Microsoft Graph data to popular Azure data stores."
+  - content: "Which of the following Microsoft Graph .NET SDK packages provides an authentication scenario-based wrapper of the Microsoft Authentication Library?"
+    choices:
+    - content: "Microsoft.Graph"
+      isCorrect: false
+      explanation: "That's incorrect. The Microsoft.Graph package contains the models and request builders for accessing the v1.0 endpoint with the fluent API."
+    - content: "Microsoft.Graph.Core"
+      isCorrect: false
+      explanation: "That's incorrect. This is the core library for making calls to Microsoft Graph."
+    - content: "Microsoft.Graph.Auth"
+      isCorrect: true
+      explanation: "That's correct. The Microsoft.Graph.Auth package provides an authentication scenario-based wrapper of the Microsoft Authentication Library for use with the Microsoft Graph SDK."

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-device-based-threats-security-controls.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "In the context of cybersecurity, what can be considered a device?"
+    choices:
+    - content: "Only devices you use personally like phones, and computers."
+      isCorrect: false
+      explanation: "Incorrect. Devices aren't just limited to what you use personally."
+    - content: "Anything you can touch, as long as it doesn't connect to something else."
+      isCorrect: false
+      explanation: "Incorrect. A device can be something that can connect to other things."
+    - content: "Anything you can touch but also connect to something else."
+      isCorrect: true
+      explanation: "Correct. Remember to think broadly about devices. This helps you to better identify potential threat vectors."
+  - content: "What is device hardening?"
+    choices:
+    - content: "Connecting multiple devices in a network so they can communicate."
+      isCorrect: false
+      explanation: "Incorrect. This isn't device hardening."
+    - content: "Minimizing device vulnerabilities."
+      isCorrect: true
+      explanation: "Correct. This can be done using different methods, like making sure devices use the latest security updates."
+    - content: "When a device is at its end of support and no longer receives updates."
+      isCorrect: false
+      explanation: "Incorrect. This isn't device hardening."
+  - content: "What is jailbreaking?"
+    choices:
+    - content: "When a user runs only a single application on a device at a time."
+      isCorrect: false
+      explanation: "Incorrect. That's not jailbreaking"
+    - content: "When a user finds a way to run multiple applications on multiple devices at the same time."
+      isCorrect: false
+      explanation: "Incorrect. That's not jailbreaking"
+    - content: "When a user finds unofficial methods to get full access to the core systems of the device."
+      isCorrect: true
+      explanation: "Correct. This makes the device vulnerable, because it may circumvent security measures and offers opportunities for cybercriminals to provide false guidance or software to compromise a device."

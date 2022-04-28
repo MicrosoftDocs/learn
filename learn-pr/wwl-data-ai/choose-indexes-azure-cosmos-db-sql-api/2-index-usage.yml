@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api.index-usage
+title: Index usage
+metadata:
+  title: Index usage
+  description: "Index usage"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-index-usage.md)]

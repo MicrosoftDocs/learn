@@ -4,12 +4,13 @@ title: Explore Azure Virtual Networks
 metadata:
   title: Explore Azure Virtual Networks
   description: "Explore Azure Virtual Networks"
-  ms.date: 07/28/2021
+  ms.date: 04/27/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 11
 content: |
   [!include[](includes/2-explore-azure-virtual-networks.md)]

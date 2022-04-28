@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cpp-write-your-first-program.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to writing your first program in C++.
+  author: saifeemustafaq
+  ms.author: chnoring
+  ms.date: 11/18/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: nextgen
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

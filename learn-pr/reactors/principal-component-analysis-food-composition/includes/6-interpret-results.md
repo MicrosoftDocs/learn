@@ -141,7 +141,7 @@ Find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$.
 
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  <italic>Hint</italic>: To find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$, remember that Python uses zero-indexing.
+  *Hint:* To find the sorted output for $c_{3}$, $c_{4}$, and $c_{5}$, remember that Python uses zero-indexing.
 
   Here's a possible solution:
 

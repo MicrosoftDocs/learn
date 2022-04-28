@@ -3,11 +3,12 @@ uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics
 metadata:
   title: Economics of cloud computing
   description: Carnegie Mellon University's Cloud Developer course. Learn how developers pay to use the cloud and how cloud providers are able to charge for their services. Get an overview of how the cloud is kept secure.
-  ms.date: 02/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Economics of cloud computing
 summary: Learn how developers pay to use the cloud and how cloud providers are able to charge for their services. Get an overview of how the cloud is kept secure.
 abstract: | 
@@ -24,6 +25,7 @@ prerequisites: |
   - Understand what cloud computing is, including cloud service models, and common cloud providers
   - Know the technologies that enable cloud computing
 iconUrl: /learn/achievements/cmu-cloud-developer/economics-of-the-cloud.svg
+hidden: true
 levels:
 - beginner
 roles:

@@ -3,7 +3,7 @@ uid: learn.wwl.work-with-form-recognizer
 metadata:
   title: Extract data from forms with Form Recognizer
   description: "Form Recognizer extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Form Recognizer vision API."
-  ms.date: 05/31/2021
+  ms.date: 03/08/2022
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial

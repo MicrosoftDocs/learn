@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-azure-virtual-desktop-architecture.experience-estimator
+title: Azure Virtual Desktop Experience Estimator
+metadata:
+  title: Azure Virtual Desktop Experience Estimator
+  description: "Azure Virtual Desktop Experience Estimator"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-azure-virtual-desktop-experience-estimator.md)]

@@ -4,7 +4,7 @@ Suppose you work for a financial organization that is moving its systems to Azur
 
 The organization wants to design a monitoring strategy that performs full-stack monitoring across all solutions that it uses. There should also be insights and alerting into the collected data. The organization wants to quickly identify and minimize poor performance and system failures in the future.
 
-In this module, you'll explore the monitoring solutions available in Azure. You'll assess Azure Monitor and its features such as Application Insights and Azure Monitor Logs to analyze infrastructure and application performance and availability. You'll also explore how Azure Security Center, and Azure Sentinel are used for security monitoring.
+In this module, you'll explore the monitoring solutions available in Azure. You'll assess Azure Monitor and its features such as Application Insights and Azure Monitor Logs to analyze infrastructure and application performance and availability. You'll also explore how Microsoft Defender for Cloud, and Microsoft Sentinel are used for security monitoring.
 
 By the end of this module, you'll be able to design a full stack monitoring strategy for your infrastructure and applications.
 

@@ -9,6 +9,8 @@ metadata:
   ms.author: socuff
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: socuff-12202021
 azureSandbox: false
 durationInMinutes: 10
 quiz:
@@ -44,7 +46,7 @@ quiz:
       explanation: That's incorrect. The My Customers page lets you see all the customers you have onboarded.
   - content: 'When creating and assigning roles what is the best practice?'
     choices:
-    - content: Avoid restricting your users control over your onboarded customers.
+    - content: Avoid restricting your users' control over your onboarded customers.
       isCorrect: false
       explanation: That's incorrect. Roles should be allocated based on the type of service offer you're making.
     - content: Avoid using the Contributor roles.
@@ -55,7 +57,7 @@ quiz:
       explanation: That's correct. It is good practice to assign user groups to roles rather than individuals.
   - content: 'When considering customer onboarding, which of these security considerations should you implement?'
     choices:
-    - content: Rotate the schedule of service manager users to prevent over familiarity with the customers Azure estate.
+    - content: Rotate the schedule of service manager users to prevent over familiarity with the customer's Azure estate.
       isCorrect: false
       explanation: That's incorrect. Using multi-factor authentication will limit the chance of an unauthorized user accessing an onboarded customers Azure instance.
     - content: Carry out detailed background checks of all your staff who will manage your onboarded customers.
@@ -63,7 +65,7 @@ quiz:
       explanation: That's incorrect. Use MFA to validate 
     - content: Implement multi-factor authentication for all users who will manage your onboarded customers.
       isCorrect: true
-      explanation: That's correct. MFA ensures that only dedicated user can access your customers Azure estate. It's also a good practice to ask the customer to implement MFA on their Azure tenant.
+      explanation: That's correct. MFA ensures that only dedicated user can access your customer's Azure estate. It's also a good practice to ask the customer to implement MFA on their Azure tenant.
   - content: 'Where will you find the Azure Lighthouse Resource Manager templates?'
     choices:
     - content: Azure Marketplace.
@@ -75,7 +77,7 @@ quiz:
     - content: GitHub.
       isCorrect: true
       explanation: That's correct. GitHub has a number of Resource Manager templates, which are suitable for Azure Lighthouse.
-  - content: 'When deploying an Azure Resource Manager template on the customers Azure instance, which CLI command would you use?'
+  - content: "When deploying an Azure Resource Manager template on the customer's Azure instance, which CLI command would you use?"
     choices:
     - content: The command `az deployment onboard --name delegated-resource-management  --location westUS --template-file delegatedResourceManagement.json --parameters delegatedResourceManagement.parameters.json --verbose`
       isCorrect: false
@@ -97,17 +99,17 @@ quiz:
     - content: From the Subscriptions page.
       isCorrect: false
       explanation: That's incorrect. The subscriptions page only shows the Contoso subscriptions. The My customers page shows the onboarded subscriptions.
-  - content: 'How would you check the compliance of an onboarded customers resource against Azures default security policy?'
+  - content: "How would you check the compliance of an onboarded customer's resource against Azures default security policy?"
     choices:
-    - content: Using Azure Sentinel and filtering for the desired customer.
+    - content: Using Microsoft Sentinel and filtering for the desired customer.
       isCorrect: false
-      explanation: That's incorrect. Security Center will let you know if a subscription or other resource meets Azure's default security policy.
+      explanation: That's incorrect. Defender for Cloud will let you know if a subscription or other resource meets Azure's default security policy.
     - content: Using Azure Monitor and filtering for the desired customer.
       isCorrect: false
-      explanation: That's incorrect. Security Center will let you know if a subscription or other resource meets Azure's default security policy.
-    - content: Using Security Center and filtering for the desired customer.
+      explanation: That's incorrect. Defender for Cloud will let you know if a subscription or other resource meets Azure's default security policy.
+    - content: Using Defender for Cloud and filtering for the desired customer.
       isCorrect: true
-      explanation: That's correct. Security Center will let you know if a specific or all subscriptions meet the security policy.
+      explanation: That's correct. Defender for Cloud will let you know if a specific or all subscriptions meet the security policy.
   - content: 'When would you use a private plan type?'
     choices:
     - content: When you want to preview a service offer before publishing it on the Azure Marketplace.

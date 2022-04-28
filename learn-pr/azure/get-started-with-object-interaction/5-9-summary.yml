@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-9-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of interacting with 3D objects
+  ms.date: 09/09/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-9-summary.md)]

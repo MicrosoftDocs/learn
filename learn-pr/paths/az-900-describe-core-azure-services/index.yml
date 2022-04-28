@@ -6,11 +6,11 @@ metadata:
   brand: azure
   ms.date: 09/14/2020
   author: Randall-Knapp
-  ms.author: rknapp
+  ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   adobe-target: true
-title: "Azure Fundamentals part 2: Describe core Azure services"
+title: "Microsoft Azure Fundamentals: Describe core Azure services"
 summary: |
   After completing this learning path, you'll be able to:
 
@@ -57,8 +57,6 @@ summary: |
     [Part 6: Describe Azure cost management and service level agreements](../az-900-describe-azure-cost-management-service-level-agreements/index.yml)
   :::column-end:::
   :::row-end:::
-
-  Complete all of the learning paths in the series if you are preparing for [Exam AZ-900: Microsoft Azure Fundamentals](/learn/certifications/exams/az-900).
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.

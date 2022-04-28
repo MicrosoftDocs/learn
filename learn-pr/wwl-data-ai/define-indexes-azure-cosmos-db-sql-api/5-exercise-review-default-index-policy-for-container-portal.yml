@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-indexes-azure-cosmos-db-sql-api.exercise-review-default-index-policy-for-container-portal
+title: 'Exercise: Review the default index policy for an Azure Cosmos DB SQL API container with the portal'
+metadata:
+  title: 'Exercise: Review the default index policy for an Azure Cosmos DB SQL API container with the portal'
+  description: "Exercise: Review the default index policy for an Azure Cosmos DB SQL API container with the portal"
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 107582
+labModal: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-review-default-index-policy-for-container-portal.md)]

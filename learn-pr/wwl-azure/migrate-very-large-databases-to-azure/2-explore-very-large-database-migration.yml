@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-very-large-databases-vldb-to-azure.explore-database-migration
+title: Explore very large database migration
+metadata:
+  title: Explore very large database migration
+  description: "Explore very large database migration"
+  ms.date: 01/26/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-very-large-database-migration.md)]

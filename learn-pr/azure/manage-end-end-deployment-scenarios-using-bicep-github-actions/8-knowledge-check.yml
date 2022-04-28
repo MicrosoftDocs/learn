@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check.
+  ms.date: 10/10/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: |
+      Which of the following statements is true?
+    choices:
+    - content: Deployment scripts run on infrastructure that's automatically managed by Azure.
+      isCorrect: true
+      explanation: Correct. Deployment scripts use resources including an Azure Container Instances container group and a storage account. These resources are automatically deployed and deleted by Azure.
+    - content: Deployment scripts automatically get access to your entire Azure environment.
+      isCorrect: false
+      explanation: Incorrect. You need to explicitly grant a deployment script's identity access to your Azure environment.
+    - content: Deployment scripts can't accept parameters.
+      isCorrect: false
+      explanation: Incorrect. Deployment scripts can accept arguments as well as environment variables.
+
+  - content: |
+      You've created a workflow that deploys an Azure Cosmos DB account, database, and container.
+      In your workflow's build job, you compile a small application that initializes the database with some reference data.
+      You need to add the database initialization process to your workflow.
+      Which of the following steps should you take?
+    choices:
+    - content: Use a separate tool like Chef or Puppet.
+      isCorrect: false
+      explanation: Incorrect. Tools like Chef and Puppet aren't required, because your workflow can run the application directly.
+    - content: Create a workflow artifact for the compiled initialization application.
+      isCorrect: true
+      explanation: Correct. You can upload a workflow artifact for the application, and then run the application as part of a deployment job in your workflow.
+    - content: Ensure that AzCopy is installed on your runner.
+      isCorrect: false
+      explanation: Incorrect. AzCopy is used to manage storage accounts, not Azure Cosmos DB data.
+
+  - content: |
+      Your Bicep file includes a module that deploys an App Service app.
+      You need to access the app's host name from your workflow but you can't currently do so.
+      Which of the following reasons is most likely?
+    choices:
+    - content: You need to use a self-hosted runner.
+      isCorrect: false
+      explanation: Incorrect. You don't need to use a self-hosted runner to access information from a Bicep file.
+    - content: You need to use a deployment script.
+      isCorrect: false
+      explanation: Incorrect. You don't need to use a deployment script to access information from a Bicep file.
+    - content: You need to add an output to your Bicep template for the host name.
+      isCorrect: true
+      explanation: Correct. Information from your Bicep file needs to be published as an output in your Bicep file before it's accessible by the rest of the workflow.

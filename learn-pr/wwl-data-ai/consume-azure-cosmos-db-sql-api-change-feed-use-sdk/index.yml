@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk
+metadata:
+  title: Consume an Azure Cosmos DB SQL API change feed using the SDK
+  description: "Process change feed events using the change feed processor in the Azure Cosmos DB SQL API .NET SDK."
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Consume an Azure Cosmos DB SQL API change feed using the SDK
+summary: Process change feed events using the change feed processor in the Azure Cosmos DB SQL API .NET SDK.
+abstract: |
+  After completing this module, you'll be able to:
+  - Create a change feed processor in the .NET SDK
+  - Author a delegate to handle a batch of changes in a client-side application
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+iconUrl: /learn/achievements/azure-cosmos-db-sql-api-consume-sdk.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.introduction
+- learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.understand-features-sdk
+- learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.implement-delegate
+- learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.implement-change-feed-processor
+- learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.implement-change-feed-estimator
+- learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.exercise-process-change-feed-events-using-sdk
+- learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.knowledge-check
+- learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.summary
+badge:
+  uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.badge

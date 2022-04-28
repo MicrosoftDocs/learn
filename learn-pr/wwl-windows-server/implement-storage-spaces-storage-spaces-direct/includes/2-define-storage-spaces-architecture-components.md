@@ -16,7 +16,7 @@ To create a highly available virtual disk, you need at least one physical disk t
 - A minimum of three physical disks are required to create a virtual disk with resiliency through parity.
 - Three-way mirroring requires at least five physical disks.
 - Disks must be blank and unformatted. No volume can exist on the disks.
-- You can attach disks by using a variety of bus interfaces, including, small computer system interface (SCSI), shared access signature (SAS), Serial ATA (SATA), NVM Express (NVMe).
+- You can attach disks by using a variety of bus interfaces, including, small computer system interface (SCSI), Serial Attached SCSI (SAS), Serial ATA (SATA), NVM Express (NVMe).
 
 > [!NOTE]
 > Virtual disks resiliency resembles Redundant Array of Independent Disks (RAID) technologies, but Storage Spaces store the data differently than RAID.

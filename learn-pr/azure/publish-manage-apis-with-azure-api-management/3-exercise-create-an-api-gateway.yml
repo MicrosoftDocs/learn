@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create an API gateway
   description: Exercise - Create an API gateway
   ms.date: 05/02/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: dlepow
+  ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

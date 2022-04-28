@@ -5,8 +5,8 @@ metadata:
   title: What are user accounts in Azure Active Directory?
   description: What are user accounts in Azure Active Directory?
   ms.date: 10/25/2019
-  author: cwatson-cat
-  ms.author: cwatson
+  author: curtand
+  ms.author: curtand
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: When a user account is deleted, it's gone forever and can't be restored.
       isCorrect: false
-      explanation: A user account can be restored when it's deleted within the last 30 days. 
-    - content: The user account can be restored, but only when it's created within the last 30 days.
+      explanation: A user account can be restored for up to 30 days after it's been deleted. 
+    - content: The user account can be restored, but only if it was created within the last 30 days.
       isCorrect: false
       explanation: A user account can be restored even when the account is much older than 30 days.
-    - content: The user account can be restored, but only when it's deleted within the last 30 days.
+    - content: The user account can be restored, but only if it was deleted within the last 30 days.
       isCorrect: true
-      explanation: A user account can be restored when it's deleted within the last 30 days. Go to the deleted user list to see the list of all of the deleted users.
+      explanation: A user account can be restored as long as it's been deleted within the last 30 days. Go to the deleted user list to see the list of all of the deleted users.
   - content: What kind of account would you create to allow an external organization easy access?
     choices:
     - content: A guest user account for each member of the external team.
@@ -36,4 +36,4 @@ quiz:
       explanation: There's no such thing as an external account.
     - content: An administrator account for each member of the external team.
       isCorrect: false
-      explanation: Administrator accounts should be restricted to a limited number of users responsible for your organization's identity management.
+      explanation: Administrator accounts should be restricted to users who are responsible for your organization's identity management.

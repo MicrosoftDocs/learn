@@ -4,11 +4,10 @@ metadata:
   title: Introduction
   description: "Introduction to designing consistent XAML pages with shared resources and styles."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 title: Introduction
 durationInMinutes: 1
 content: |

@@ -1,22 +1,27 @@
-The term _governance_ describes the general process of establishing rules and policies and ensuring that those rules and policies are enforced.
+The term *governance* describes the general process of establishing rules and policies and ensuring that those rules and policies are enforced.
 
 When running in the cloud, a good governance strategy helps you maintain control over the applications and resources that you manage in the cloud. Maintaining control over your environment ensures that you stay compliant with:
 
-* Industry standards, like [PCI DSS](/microsoft-365/compliance/offering-pci-dss?view=o365-worldwide%3fazure-portal%3dtrue).
-* Corporate or organizational standards, such as ensuring that network data is encrypted.
+ -  Industry standards, like [PCI DSS](/microsoft-365/compliance/offering-pci-dss).
+ -  Corporate or organizational standards, such as ensuring that network data is encrypted.
 
 Governance is most beneficial when you have:
 
-* Multiple engineering teams working in Azure.
-* Multiple subscriptions to manage.
-* Regulatory requirements that must be enforced.
-* Standards that must be followed for all cloud resources.
+ -  Multiple engineering teams working in Azure.
+ -  Multiple subscriptions to manage.
+ -  Regulatory requirements that must be enforced.
+ -  Standards that must be followed for all cloud resources.
 
 ## Meet Tailwind Traders
 
-[!include[](../../shared/includes/tailwind-traders-overview.md)]
+[Tailwind Traders](https://www.tailwindtraders.com/?azure-portal=true) is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online.
 
-## How will Tailwind Traders improve agility while maintaining control?
+:::image type="content" source="../media/tailwind-traders-logo-bb86bf6f.png" alt-text="This is a logo for Tailwind Traders, a fictitious home improvement retailer.":::
+
+
+Tailwind Traders specializes in competitive pricing, fast shipping, and a large range of items. It's looking at cloud technologies to improve business operations and support growth into new markets. By moving to the cloud, the company plans to enhance its shopping experience to further differentiate itself from competitors.
+
+## How will Tailwind Traders improve agility while maintaining control?<br>
 
 Tailwind Traders is continuing its migration to the cloud. For its existing datacenter, development and test teams must submit support tickets to request access to virtual machines, storage, and networking components. It can take IT staff anywhere from two weeks to two months to purchase, provision, and configure these components.
 
@@ -30,9 +35,9 @@ In this module, you'll help the company explore ways it can enforce standards wh
 
 After completing this module, you'll be able to:
 
-* Make organizational decisions about your cloud environment by using the Cloud Adoption Framework for Azure.
-* Define who can access cloud resources by using Azure role-based access control.
-* Apply a resource lock to prevent accidental deletion of your Azure resources.
-* Apply tags to your Azure resources to help describe their purpose.
-* Control and audit how your resources are created by using Azure Policy.
-* Enable governance at scale across multiple Azure subscriptions by using Azure Blueprints.
+ -  Make organizational decisions about your cloud environment by using the Cloud Adoption Framework for Azure.
+ -  Define who can access cloud resources by using Azure role-based access control.
+ -  Apply a resource lock to prevent accidental deletion of your Azure resources.
+ -  Apply tags to your Azure resources to help describe their purpose.
+ -  Control and audit how your resources are created by using Azure Policy.
+ -  Enable governance at scale across multiple Azure subscriptions by using Azure Blueprints.

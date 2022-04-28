@@ -1,6 +1,6 @@
 Architecture is the foundation of your application's design. Using the Azure Well-Architected Framework will give you the confidence that your app can sustainably meet the needs of your customers both now and in the future.
 
-The architectural priorities and needs of every app are different. But the five pillars in the Azure Well-Architected Framework are an excellent guidepost that you can use to make sure that you've given enough attention to every aspect of your application:
+The architectural priorities and needs of every app are different. The five pillars in the Azure Well-Architected Framework are an excellent guidepost that you can use to make sure that you've given enough attention to every aspect of your application:
 
 - Cost optimization
 - Operational excellence

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-non-relational-data-model.when-to-embed-reference-data
+title: When to embed or reference data
+metadata:
+  title: When to embed or reference data
+  description: "When to embed or reference data"
+  ms.date: 04/01/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-when-to-embed-reference-data.md)]

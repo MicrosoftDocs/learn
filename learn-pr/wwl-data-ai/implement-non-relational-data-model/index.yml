@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.implement-non-relational-data-model
+metadata:
+  title: Implement a non-relational data model
+  description: "Implement a non-relational data model"
+  ms.date: 04/01/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement a non-relational data model
+summary: Identify an application’s key access patterns. Define the entities’ data model, along with containers to store the data with a partition key that will result in an efficient and scalable data store for the application.
+abstract: |
+  In this module, you will:
+  * Determine access patterns for data.
+  * Apply data model and partitioning strategies to support an efficient and scalable NoSQL database.
+prerequisites: |
+  * Familiarity with Azure Cosmos DB concepts, like databases, containers, documents, and throughput in Request Units per second (RU/s)
+  * Familiarity with using Azure Cosmos DB resources and data in the Azure portal, like using Data Explorer, running queries, and viewing query stats
+iconUrl: /learn/achievements/data-model-implement-non-relational.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+units:
+- learn.wwl.implement-non-relational-data-model.introduction
+- learn.wwl.implement-non-relational-data-model.whats-difference-between-nosql-relational-databases
+- learn.wwl.implement-non-relational-data-model.identify-access-patterns-for-your-app
+- learn.wwl.implement-non-relational-data-model.when-to-embed-reference-data
+- learn.wwl.implement-non-relational-data-model.exercise-measure-performance-for-customer-entities
+- learn.wwl.implement-non-relational-data-model.choose-partition-key
+- learn.wwl.implement-non-relational-data-model.model-small-lookup-tables
+- learn.wwl.implement-non-relational-data-model.knowledge-check
+- learn.wwl.implement-non-relational-data-model.summary
+badge:
+  uid: learn.wwl.implement-non-relational-data-model.badge

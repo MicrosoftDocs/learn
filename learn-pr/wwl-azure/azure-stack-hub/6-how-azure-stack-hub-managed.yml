@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.azure-stack-hub.how-is-managed
+title: How is Azure Stack Hub managed?
+metadata:
+  title: How is Azure Stack Hub managed?
+  description: "How is Azure Stack Hub managed?"
+  ms.date: 03/17/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-how-azure-stack-hub-managed.md)]

@@ -1,22 +1,23 @@
 ### YamlMime:ModuleUnit
 uid: learn.implement-message-workflows-with-service-bus.3-exercise-implement-a-service-bus-topic-and-queue
-title: Exercise - Implement a Service Bus topic and queue
+title: Exercise - Create a Service Bus queue and topic
 metadata:
-  title: Exercise - Implement a Service Bus topic and queue
-  description: Exercise - Implement a Service Bus topic and queue
+  title: Exercise - Create Service Bus queue and topic
+  description: Create Service Bus messaging components—a namespace that contains a queue, a topic, and subscriptions.
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: spelluru
+  ms.author: spelluru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-implement-a-service-bus-topic-and-queue.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ServiceBus/namespaces"
-  hint: "Use the instructions above to create a Service Bus namespace, queue, topic and subscriptions."
+# NOTE: Task validation is failing for learners, so that is disabled for now.
+# tasks:
+# - action: exists
+#   environment: azure
+#   azure:
+#     resource:
+#       type: "Microsoft.ServiceBus/namespaces"
+#   hint: "Use the instructions above to create a Service Bus namespace, queue, topic and subscriptions."

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Promote to the Dev stage
   description: Promote to the Dev stage by using a build trigger.
   ms.date: 06/23/2021
-  author: tpetchel
-  ms.author: thpetche
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

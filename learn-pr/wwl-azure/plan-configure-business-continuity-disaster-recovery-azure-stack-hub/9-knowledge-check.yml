@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-configure-business-continuity-disaster-recovery-for-azure-stack-hub.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/07/2021
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "An Azure Stack Hub operator enables the Infrastructure Backup Service to generate an infrastructure backup. They want to enable the frequency of the backup. Which of the following is supported as a backup frequency for backups are created in hours?"
+    choices:
+    - content: "1 hour"
+      isCorrect: false
+      explanation: "Incorrect. The Infrastructure Backup Service Scheduler supports a maximum of 12 and a minimum of 4."
+    - content: "3 hours"
+      isCorrect: false
+      explanation: "Incorrect. The Infrastructure Backup Service Scheduler supports a maximum of 12 and a minimum of 4."
+    - content: "4 hours"
+      isCorrect: true
+      explanation: "Correct. The Infrastructure Backup Service Scheduler supports a maximum of 12 and a minimum of 4. The default value is 12."
+  - content: "The retention period for an Azure Stack Hub storage account is set to 10 days. Within a user subscription, the user deletes a virtual machine with four 500-GB unmanaged disks attached. How can the storage be reclaimed?"
+    choices:
+    - content: "The deleted storage can be reclaimed immediately using the Azure Stack Hub administrator portal."
+      isCorrect: true
+      explanation: "Correct. The retention period determines how many days of backup are preserved on the external location. The default value is 7. The Scheduler supports a maximum of 14 and a minimum of 2"
+    - content: "The deleted storage can be reclaimed only after 14 days."
+      isCorrect: false
+      explanation: "Incorrect. The Scheduler supports a maximum of 14 and a minimum of 2."
+    - content: "The deleted storage will be reclaimed automatically in 24 hours."
+      isCorrect: false
+      explanation: "Incorrect. Scheduler supports a maximum of 14 and a minimum of 2."

@@ -2,15 +2,15 @@ As part of the investigation or response process, you can collect an investigati
 
 To download the package (Zip file) and investigate the events that occurred on a device
 
-- Select Collect investigation package from the row of response actions at the top of the device page.
+- Select **Collect investigation package** from the row of response actions at the top of the device page.
 
-- Specify in the text box why you want to do this action. Select Confirm.
+- Specify in the text box why you want to do this action. Select **Confirm**.
 
 - The zip file will download
 
 Alternate way:
 
-- Select Action center from the response actions section of the device page.
+- Select **Action center** from the response actions section of the device page.
 
 - In the Action center fly-out, select Package collection package available to download the zip file.
 
@@ -87,4 +87,3 @@ Provides the MpCmdRunLog.txt and MPSupportFiles.cab.
 ## CollectionSummaryReport.xls
 
 This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there is failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.
-

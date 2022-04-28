@@ -4,10 +4,11 @@ metadata:
   title: Exercise - Set up the Custom Vision service
   description: This unit walks you through setting up a Custom Vision resource in Azure.
   ms.date: 03/10/2021
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Exercise - Set up the Custom Vision service
 durationInMinutes: 6
 content: |

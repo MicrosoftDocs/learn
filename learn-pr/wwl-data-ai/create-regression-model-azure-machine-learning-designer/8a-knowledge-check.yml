@@ -4,34 +4,35 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/04/2021
+  ms.date: 03/07/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "You are creating a training pipeline for a regression model, using a dataset that has multiple numeric columns in which the values are on different scales. You want to transform the numeric columns so that the values are all on a similar scale based relative to the minimum and maximum values in each column. Which module should you add to the pipeline?"
+  - content: "You are creating a training pipeline for a regression model. You use a dataset that has multiple numeric columns in which the values are on different scales. You want to transform the numeric columns so that the values are all on a similar scale. You also want the transformation to scale relative to the minimum and maximum values in each column. Which module should you add to the pipeline?"
     choices:
     - content: "Select Columns in a Dataset"
       isCorrect: false
-      explanation: "That is incorrect. When you need to transform numeric data to be on a similar scale, use a Normalize Data module."
+      explanation: "Incorrect. When you transform numeric data to be on a similar scale, use a Normalize Data module."
     - content: "Normalize Data"
       isCorrect: true
-      explanation: "That is correct. When you need to transform numeric data to be on a similar scale, use a Normalize Data module."
+      explanation: "Correct. When you transform numeric data to be on a similar scale, use a Normalize Data module."
     - content: "Clean Missing Data"
       isCorrect: false
-      explanation: "That is incorrect. When you need to transform numeric data to be on a similar scale, use a Normalize Data module."
-  - content: "Why do we split our data into training and validation sets?"
+      explanation: "Incorrect. When you transform numeric data to be on a similar scale, use a Normalize Data module."
+  - content: "Why do you split data into training and validation sets?"
     choices:
-    - content: "Data is split into two sets in order to create two models, one model using the training set and a different model using the validation set."
+    - content: "Data is split into two sets in order to create two models, one model with the training set and a different model with the validation set."
       isCorrect: false
-      explanation: "That is incorrect. The validation set is used to test the  model created using the training set."
+      explanation: "Incorrect. The validation set is used to test the model created with the training set."
     - content: "Splitting data into two sets enables you to compare the labels that the model predicts with the actual known labels in the original dataset."
       isCorrect: true
-      explanation: "That is correct. We want to test the model created with training data on validation data to see how well the model performs with data it was not trained on."
-    - content: "We only need to split our data when we use the Azure Machine Learning Designer, not in other machine learning scenarios."
+      explanation: "Correct. You want to test the model created with training data on validation data to see how well the model performs with data it was not trained on."
+    - content: "Only split data when you use the Azure Machine Learning Designer, not in other machine learning scenarios."
       isCorrect: false
-      explanation: "That is incorrect. Splitting data into training and validation sets is an important part of all machine learning scenarios."
+      explanation: "Incorrect. Splitting data into training and validation sets is an important part of all machine learning scenarios."

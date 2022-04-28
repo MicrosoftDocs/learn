@@ -17,7 +17,7 @@ summary: |
    - Apply conditionals and pattern matching.
    - Author functions and learn to compose them.
 prerequisites: None
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/fsharp-first-steps-path.svg
 levels:
 - beginner
 roles:

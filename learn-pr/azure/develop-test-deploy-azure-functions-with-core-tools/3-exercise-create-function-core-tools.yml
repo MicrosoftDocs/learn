@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn-pr.develop-test-deploy-azure-functions-core-tools.3-exercise-create-function-core-tools
 metadata:
-  title: Exercise - Create a function locally by using the Core Tools
+  title: Exercise - Create a function locally using Core Tools
   description: In this exercise, we'll create and run our first function from the Cloud Shell command line using the Core Tools.
-  ms.date: 11/13/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  ms.date: 12/11/2021
+  author: ggailey777
+  ms.author: glenga
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Create a function locally by using the Core Tools
+title: Exercise - Create a function locally using Core Tools
 interactive: bash
 azureSandbox: true
 durationInMinutes: 6

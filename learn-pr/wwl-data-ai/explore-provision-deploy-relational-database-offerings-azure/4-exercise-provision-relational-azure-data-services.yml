@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.exercise-provision-relational-azure-data-services
+title: 'Exercise: Provision Azure relational database services'
+metadata:
+  title: 'Exercise: Provision Azure relational database services'
+  description: "Exercise: Provision Azure relational database services"
+  ms.date: 04/11/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: data-azure-database
+azureSandbox: true
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-provision-relational-azure-data-services.md)]

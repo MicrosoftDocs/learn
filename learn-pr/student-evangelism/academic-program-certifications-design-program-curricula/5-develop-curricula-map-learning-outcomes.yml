@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-design-program-curricula.develop-curricula-map-learning-outcomes
+title: Develop a program curriculum and map learning outcomes to certification
+metadata:
+  title: Develop a program curriculum and map learning outcomes to certification
+  description: Learn how to develop a program curriculum and map learning outcomes to certification outcomes.
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-develop-curricula-map-learning-outcomes.md)]

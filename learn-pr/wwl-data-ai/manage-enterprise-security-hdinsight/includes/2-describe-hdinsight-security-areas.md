@@ -19,12 +19,12 @@ Physical infrastructure security refers to security of the Azure’s globally di
 - Monitoring activities within the facility’s perimeter.
 - Two factor authentication including biometrics to authenticate user identity. 
 - Restricted need based minimum access within datacenters.
-If you are interested to learn more about how Microsoft Data centers operate and physically secure customer assets, read through the [data center physical security section](https://docs.microsoft.com/azure/security/fundamentals/physical-security#physical-security).
+If you are interested to learn more about how Microsoft Data centers operate and physically secure customer assets, read through the [data center physical security section](/azure/security/fundamentals/physical-security).
 
-Virtualized infrastructure security consists of availability SLAs, network architecture, operations, monitoring, integrity, and data protection. Go to [Azure Infrastructure Security documentation](https://docs.microsoft.com/azure/security/fundamentals/infrastructure) to get a comprehensive understanding of how Azure works to protect virtual infrastructure assets.  
+Virtualized infrastructure security consists of availability SLAs, network architecture, operations, monitoring, integrity, and data protection. Go to [Azure Infrastructure Security documentation](/azure/security/fundamentals/infrastructure) to get a comprehensive understanding of how Azure works to protect virtual infrastructure assets.  
 
 In subsequent sections, we will discuss design methodologies and recommend practices around security areas for which the customer is responsible. 
 
-![HDInsight security layers](../media/01-HDInsight-Security.png)
+![HDInsight security layers](../media/01-hdinsight-security.png)
 
 

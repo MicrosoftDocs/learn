@@ -4,7 +4,7 @@ title: Exercise - Move an app to Azure Cosmos DB table storage
 metadata:
   title: Exercise - Move an app to Azure Cosmos DB table storage
   description: In this exercise, you will see a console app that stores data in Storage tables. You will migrate the data and the app to use a table in Azure Cosmos DB.
-  ms.date: 04/30/2019
+  ms.date: 09/27/2021
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial

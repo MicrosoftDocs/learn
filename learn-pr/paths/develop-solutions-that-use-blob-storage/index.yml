@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.wwl.develop-solutions-that-use-blob-storage
+metadata:
+  title: 'AZ-204: Develop solutions that use Blob storage'
+  description: 'AZ-204: Develop solutions that use Blob storage'
+  ms.date: 12/07/2021
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'AZ-204: Develop solutions that use Blob storage'
+prerequisites: |
+  * At least one year of experience developing scalable solutions through all phases of software development.
+  * Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
+  * If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
+summary: |
+  Learn how to create Azure Blob storage resources, manage data through the blob storage lifecycle, and work with containers and items by using the Azure Blob storage client library V12 for .NET.
+iconUrl: /learn/achievements/develop-solutions-that-use-blob-storage.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+modules:
+- learn.wwl.explore-azure-blob-storage
+- learn.wwl.manage-azure-blob-storage-lifecycle
+- learn.wwl.work-azure-blob-storage
+trophy:
+  uid: learn.wwl.develop-solutions-that-use-blob-storage.trophy

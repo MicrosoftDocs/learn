@@ -1,6 +1,6 @@
 Identity provides the basis for a large part of security assurance. It enables access based on identity authentication and authorization controls in cloud services to protect data and resources and to decide which requests should be permitted.
 
-Identity and access management (IAM) is a security boundary in the public cloud. The foundation of any secure and fully compliant public cloud architecture. Azure offers a comprehensive set of services, tools, and reference architectures to help organizations build highly secure, operationally efficient environments as outlined here.
+Identity and access management (IAM) is a security boundary in the public cloud. It's the foundation of any secure and fully compliant public cloud architecture. Azure offers a comprehensive set of services, tools, and reference architectures to help organizations build highly secure, operationally efficient environments as outlined here.
 
 This unit examines design considerations and recommendations related to IAM in an enterprise environment.
 
@@ -141,7 +141,7 @@ When you plan for role-based access, use custom RBAC role definitions within the
 
 ### Design recommendations and considerations for identity and access management
 
-There are limits around the number of custom roles and role assignments that must be considered when you lay down a framework around IAM and governance. For more information, see Azure RBAC service limits.
+There are limits around the number of custom roles and role assignments that must be considered when you lay down a framework around IAM and governance. For more information, see [Azure RBAC service limits](/azure/azure-resource-manager/management/azure-subscription-service-limits#azure-rbac-limits).
 
 - There's a limit of 2,000 custom RBAC role assignments per subscription.
 - There's a limit of 500 custom RBAC role assignments per management group.
@@ -159,9 +159,9 @@ Use Azure AD Privileged Identity Management (PIM) to establish zero standing acc
 
 Integrate Azure AD logs with the platform-central Azure Monitor. Azure Monitor allows for a single source of truth around log and monitoring data in Azure, which gives organizations cloud-native options to meet requirements around log collection and retention.
 
-If any data sovereignty requirements exist, custom user policies can be deployed to enforce them.
+If any data sovereignty requirements exist, you can deploy custom user policies to enforce them.
 
-Use Azure Security Center just-in-time access for all infrastructure as a service (IaaS) resources to enable network-level protection for ephemeral user access to IaaS virtual machines.
+Use Microsoft Defender for Cloud just-in-time access for all infrastructure as a service (IaaS) resources to enable network-level protection for ephemeral user access to IaaS virtual machines.
 
 Use Azure AD managed identities for Azure resources to avoid authentication based on user names and passwords. Because many security breaches of public cloud resources originate with credential theft embedded in code or other text sources, enforcing managed identities for programmatic access greatly reduces the risk of credential theft.
 
@@ -171,7 +171,7 @@ Don't add users directly to Azure resource scopes. This lack of centralized mana
 
 ## Plan for authentication inside a landing zone
 
-A critical design decision that an enterprise organization must make when adopting Azure is whether to extend an existing on-premises identity domain into Azure or to create a brand new one. Requirements for authentication inside the landing zone should be thoroughly assessed and incorporated into plans to deploy Active Directory Domain Services (AD DS) in Windows Server, Azure AD DS, or both. Most Azure environments will use at least Azure AD for Azure fabric authentication and AD DS localhost authentication and group policy management.
+A critical design decision that an enterprise organization must make when adopting Azure is whether to extend an existing on-premises identity domain into Azure or to create a brand new one. Requirements for authentication inside the landing zone should be thoroughly assessed and incorporated into plans to deploy Active Directory Domain Services (AD DS) in Windows Server, Azure AD DS, or both. Most Azure environments will use at least Azure AD for Azure fabric authentication, AD DS localhost authentication, and group policy management.
 
 ### Design recommendations and considerations for authentication inside a landing zone
 
@@ -181,8 +181,8 @@ Use centralized and delegated responsibilities to manage resources deployed insi
 
 If an organization has a scenario where an application that uses integrated Windows authentication must be accessed remotely through Azure AD, consider using Azure AD Application Proxy.
 
-Remember, there's a difference between Azure AD, Azure AD DS, and AD DS running on Windows Server. Evaluate your application needs, and understand and document the authentication provider that each one will be using. Plan accordingly for all applications. Evaluate the compatibility of workloads for AD DS on Windows Server and for Azure AD DS. Ensure that your network design allows resources that require AD DS on Windows Server for local authentication and management to access the appropriate domain controllers. For AD DS on Windows Server, consider shared services environments that offer local authentication and host management in a larger enterprise-wide network context.
+Remember, there's a difference between Azure AD, Azure AD DS, and AD DS running on Windows Server. Evaluate your application needs, and understand and document the authentication provider that each one will be using. Plan accordingly for all applications. Evaluate the compatibility of workloads for AD DS on Windows Server and for Azure AD DS. Ensure that your network design allows resources that require AD DS on Windows Server for local authentication and management to access the appropriate domain controllers. For AD DS on Windows Server, consider shared-services environments that offer local authentication and host management in a larger enterprise-wide network context.
 
-Deploy Azure AD DS within the primary region because this service can only be projected into one subscription.
+Deploy Azure AD DS within the primary region, because this service can only be projected into one subscription.
 
 Use managed identities instead of service principals for authentication to Azure services. This approach reduces exposure to credential theft.

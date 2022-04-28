@@ -4,12 +4,13 @@ title: Describe SQL Server Query Store
 metadata:
   title: Describe SQL Server Query Store
   description: "Describe SQL Server Query Store"
-  ms.date: 03/12/2021
+  ms.date: 03/02/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/2-describe-sql-server-query-store.md)]

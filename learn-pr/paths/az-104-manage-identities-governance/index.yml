@@ -4,9 +4,9 @@ metadata:
   title: "AZ-104: Manage identities and governance in Azure"
   description: "Learn how to manage identities and governance in Azure and prepare for Exam AZ-104: Microsoft Azure Administrator."
   brand: azure
-  ms.date: 05/14/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 08/06/2021
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "AZ-104: Manage identities and governance in Azure"
@@ -52,8 +52,6 @@ summary: |
     [AZ-104: Monitor and back up Azure resources](/learn/paths/az-104-monitor-backup-resources/)
   :::column-end:::
   :::row-end:::
-
-  Complete all of the learning paths in the series if you are preparing for [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
 prerequisites:   | 
   - [Azure Fundamentals Part 1: Describe core Azure concepts](../az-900-describe-cloud-concepts/index.yml)
   - [Azure Fundamentals Part 2: Describe core Azure services](../az-900-describe-core-azure-services/index.yml)
@@ -74,16 +72,13 @@ products:
 - azure-resource-manager
 - azure-cost-management
 modules:
+- learn.wwl.configure-azure-active-directory
+- learn.wwl.configure-user-group-accounts
+- learn.wwl.configure-subscriptions
+- learn.wwl.configure-azure-policy
+- learn.wwl.configure-role-based-access-control
 - learn.azure.create-users-and-groups-in-azure-active-directory
-- learn.azure-security.manage-users-and-groups-in-aad
-- learn.azure.allow-users-to-reset-their-password
-- learn.azure.manage-subscription-access-azure-rbac
 - learn.secure-azure-resources-with-rbac
-- learn.azure.create-custom-roles-rbac
-- learn.control-and-organize-with-resource-manager
-- learn.azure.plan-manage-azure-costs
-- learn.azure.analyze-costs-create-budgets-azure-cost-management
-- learn.azure.move-azure-resources-to-another-resource-group
-- learn.azure.manage-device-identity-ad-join
+- learn.azure.allow-users-to-reset-their-password
 trophy:
   uid: learn.az-104-manage-identities-governance.trophy

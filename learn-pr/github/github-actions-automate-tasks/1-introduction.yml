@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: An introduction to GitHub Actions and workflows.
   ms.date: 05/19/2020
-  author: jamcneil
-  ms.author: jumcn
+  author: juliakm
+  ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-identity-access-for-azure-stack-hub
+metadata:
+  title: Manage Identity and Access for Azure Stack Hub
+  description: Manage Identity and Access for Azure Stack Hub
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Identity and Access for Azure Stack Hub
+prerequisites: |
+  * Working experience creating, assigning, and securing corporate identities.
+  * Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
+summary: |
+  Learn to configure Azure Stack Hub to support tenant services in Azure Stack Hub.
+  This module helps you to prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
+iconUrl: /learn/achievements/manage-identity-and-access-for-azure-stack-hub.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-stack
+- azure-stack-hub
+modules:
+- learn.wwl.manage-multi-tenancy-for-azure-stack-hub
+- learn.wwl.manage-access-for-azure-stack-hub
+trophy:
+  uid: learn.wwl.manage-identity-access-for-azure-stack-hub.trophy

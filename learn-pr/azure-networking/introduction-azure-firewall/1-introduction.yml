@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction to the Introduction to Azure Firewall module.
   ms.date: 12/28/2020
-  author: jamcneil
-  ms.author: jumcn
+  author: vhorne
+  ms.author: victorh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

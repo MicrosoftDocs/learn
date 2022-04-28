@@ -1,4 +1,4 @@
-Through the deployment of 5g technologies, the capabilities of mobile networks and the Internet are converging. Azure developers can now create innovative applications by leveraging the new capabilities of 5G networks. 5G networks represent a fundamental change in architecture. They empower Enterprise Azure developers to create low latency, high-bandwidth applications. 
+Through the deployment of 5G technologies, the capabilities of mobile networks and the Internet are converging. Azure developers can now create innovative applications by leveraging the new capabilities of 5G networks. 5G networks represent a fundamental change in architecture. They empower Enterprise Azure developers to create low latency, high-bandwidth applications. 
 
 How can Azure developers create network-aware applications that provide more than simple connectivity? How can they simplify their application development process by using low-code tools? How can they use a single dashboard view for on-premises and cloud-based deployments?
 

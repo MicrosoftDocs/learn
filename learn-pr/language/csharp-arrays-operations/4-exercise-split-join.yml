@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Split() and Join()
   description: Use the `Split()` and `Join()` methods to move between delimited strings to arrays.
   ms.date: 10/14/2019
-  author: bobtabor-msft
-  ms.author: rotabor
+  author: billwagner
+  ms.author: wiwagn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

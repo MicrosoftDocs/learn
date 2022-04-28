@@ -4,12 +4,13 @@ title: Apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and Sh
 metadata:
   title: Apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites
   description: "Apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites"
-  ms.date: 03/30/2021
+  ms.date: 11/11/2021
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false
+labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/2-apply-sensitivity-labels-to-microsoft-teams.md)]

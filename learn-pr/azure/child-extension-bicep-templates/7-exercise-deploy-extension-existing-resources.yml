@@ -6,7 +6,7 @@ metadata:
   unitType: exercise
   title: Exercise - Refer to existing resources
   description: Learn how to deploy extension resources and refer to existing resources within your Bicep template.
-  ms.date: 04/19/2021
+  ms.date: 01/23/2022
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?

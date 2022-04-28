@@ -34,9 +34,9 @@ The nature of the IP address determines the type of load balancer created, as de
 
 ||Public Load Balancer|Internal Load Balancer|
 |:----------------------------|:-----------------------------------------------------------|:-----------------------------------------------------------|
-|Frontend IP configuration|Public IP address|Private IP address|
-|Description|A public load balancer maps the public IP and port of incoming traffic to the private IP and port of the VM. The load balancer then maps traffic the other way around for the response traffic from the VM. You can distribute specific types of traffic across multiple VMs or services by applying load-balancing rules. For example, you can spread the web request traffic across multiple web servers.|An internal load balancer distributes traffic originating on a private IP address to resources that are inside a VNet. Azure restricts access to the frontend IP addresses of a VNet that is load balanced. Front-end IP addresses and VNets are never directly exposed to an internet endpoint. Internal line-of-business (LOB) applications run in Azure, and are accessed either from within Azure or from on-premises resources.|
-|SKUs supported|Basic, Standard|Basic, Standard|
+|**Frontend IP configuration**|Public IP address|Private IP address|
+|**Description**|A public load balancer maps the public IP and port of incoming traffic to the private IP and port of the VM. The load balancer then maps traffic the other way around for the response traffic from the VM. You can distribute specific types of traffic across multiple VMs or services by applying load-balancing rules. For example, you can spread the web request traffic across multiple web servers.|An internal load balancer distributes traffic originating on a private IP address to resources that are inside a VNet. Azure restricts access to the frontend IP addresses of a VNet that is load balanced. Front-end IP addresses and VNets are never directly exposed to an internet endpoint. Internal line-of-business (LOB) applications run in Azure, and are accessed either from within Azure or from on-premises resources.|
+|**SKUs supported**|Basic, Standard|Basic, Standard|
 
 > [!NOTE]
 > A load balancer can have multiple frontend IPs.

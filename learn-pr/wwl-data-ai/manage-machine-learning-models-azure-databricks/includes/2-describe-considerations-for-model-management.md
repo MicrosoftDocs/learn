@@ -1,0 +1,5 @@
+The two key steps for model management in MLflow are **registration** and **versioning** of models. 
+
+With registration, a data scientist stores the details of a model in the MLflow Model Registry, along with a name for ease of access. Users can retrieve the model from the registry and use that model to perform inference on new data sets. Next to that, it´s possible to serve models on Azure Databricks or in Azure Machine Learning, automatically generating a REST API to interact with the model.
+
+Once a model is out in production, there is still more work to do. As models change over time, model management becomes a process of training new candidate models, comparing to the current version and prior candidate models, and determining whether a candidate is worthy of becoming the next production model. MLflow's versioning system makes model management easy by labeling new versions of models and retaining information on prior model versions automatically. MLflow allows a data scientist to perform testing on various model versions and ensure that new models are performing better than older models.

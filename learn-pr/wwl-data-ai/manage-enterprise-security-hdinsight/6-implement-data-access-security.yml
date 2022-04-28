@@ -3,13 +3,14 @@ uid: learn.wwl.manage-enterprise-security-in-hdinsight.implement-data-access-sec
 title: Implement data access security
 metadata:
   title: Implement data access security
-  description: "Implement Data Access security"
-  ms.date: 02/28/2020
+  description: "Implement data access security"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/6-implement-data-access-security.md)]

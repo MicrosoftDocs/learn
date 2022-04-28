@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-spatial-anchors-tutorials-mrtk.3-exercise-get-started-with-azure-spatial-anchors
+title: Exercise - Get started with Azure Spatial Anchors
+metadata:
+  title: Exercise - Get started with Azure Spatial Anchors
+  description: Learn how to work with an Azure Spatial Anchors session on a device.
+  ms.date: 09/09/2021
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-exercise-get-started-with-azure-spatial-anchors.md)]

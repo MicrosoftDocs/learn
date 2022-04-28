@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.configure-cloud-admin-user-role
+title: Configure the cloud admin user role
+metadata:
+  title: Configure the cloud admin user role
+  description: "Configure the cloud admin user role"
+  ms.date: 03/29/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-configure-cloud-administrator-user-role.md)]

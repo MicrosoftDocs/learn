@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.academic-program-certifications-design-program-launch.describe-certification-selling-points
+title: Describe the unique selling points of certification
+metadata:
+  title: Describe the unique selling points of certification
+  description: Describe the unique selling points of certification
+  ms.date: 08/11/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-describe-certification-selling-points.md)]

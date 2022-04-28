@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.career-interview.4-check-preparation
+title: Check preparation
+metadata:
+  title: Check preparation
+  description: Check your knowledge on how to prepare.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 08/19/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=nextgen
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-check-preparation.md)]
+quiz:
+  questions:
+    - content: What's the best way to prepare for an interview at an algorithmic-focused company?
+      choices:
+        - content: Read a book on design patterns.
+          isCorrect: false
+          explanation: Incorrect. Although design patterns are an important part of coding, there's a better option.
+        - content: Do a so-called "code kata."
+          isCorrect: false
+          explanation: Incorrect. Code katas are a good way to practice common
+            problems. Some of the katas are even algorithmic in nature. But there's a better
+            option.
+        - content: Practice problems on a platform like Topcoder.
+          isCorrect: true
+          explanation: Correct. A platform like Topcoder or Project Euler enables you to practice specific
+            algorithmic problems and analyzes your solution's quality.

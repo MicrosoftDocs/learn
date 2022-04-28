@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.add-pre-triggers-to-operation
+title: Add triggers to an operation
+metadata:
+  title: Add triggers to an operation
+  description: "Add triggers to an operation"
+  ms.date: 12/21/2021
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-add-triggers-operation.md)]

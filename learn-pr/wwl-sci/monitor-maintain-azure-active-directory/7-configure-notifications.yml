@@ -4,12 +4,13 @@ title: Configure notifications
 metadata:
   title: Configure notifications
   description: "Configure notifications"
-  ms.date: 08/04/2021
+  ms.date: 02/07/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/7-configure-notifications.md)]

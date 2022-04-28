@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.spark-architecture-fundamentals.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which notebook format is used in Databricks?"
+    choices:
+    - content: "DBC"
+      isCorrect: true
+      explanation: "The supported Databricks notebook format is the DBC file type."
+    - content: ".notebook"
+      isCorrect: false
+      explanation: "There is no .notebook file type available."
+    - content: ".spark"
+      isCorrect: false
+      explanation: "There is no .spark file type available."
+  - content: "When creating a new cluster in the Azure Databricks workspace, what happens behind the scenes?"
+    choices:
+    - content: "Azure Databricks provisions a dedicated VM that processes all jobs, based on your VM type and size selection."
+      isCorrect: false
+      explanation: "While Azure Databricks does provision VMs, it does so as part of a cluster."
+    - content: "Azure Databricks creates a cluster of driver and worker nodes, based on your VM type and size selections."
+      isCorrect: true
+      explanation: "At the time of cluster creation, you specify the types and sizes of the virtual machines (VMs) to use for both the Driver and Worker nodes, but Azure Databricks manages all other aspects of the cluster."
+    - content: "When an Azure Databricks workspace is deployed, you are allocated a pool of VMs. Creating a cluster draws from this pool."
+      isCorrect: false
+      explanation: "While provisioning Azure Databricks does involve creating managed VMs for the Databricks control plane and data plane, new clusters comprised of VMs are created for each cluster you create within the workspace."
+  - content: "To parallelize work, the unit of distribution is a Spark Cluster. Every Cluster has a Driver and one or more executors. Work submitted to the Cluster is split into what type of object?"
+    choices:
+    - content: "Stages"
+      isCorrect: false
+      explanation: "Stages are parts of a Job."
+    - content: "Arrays"
+      isCorrect: false
+      explanation: "This is incorrect."
+    - content: "Jobs"
+      isCorrect: true
+      explanation: "Each parallelized action is referred to as a Job. The results of each Job is returned to the Driver. Depending on the work required, multiple Jobs will be required. Each Job is broken down into Stages."

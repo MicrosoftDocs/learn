@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-dataframes-advanced-methods-azure-databricks.exercise-deduplication-data
+title: 'Exercise: Deduplication of data'
+metadata:
+  title: 'Exercise: Deduplication of data'
+  description: "Exercise: Deduplication of data"
+  ms.date: 01/05/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-exercise-deduplication-data.md)]

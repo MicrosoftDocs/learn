@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-windows-package-manager-tool.contribute-to-repository
+title: Contribute to the Windows Package Manager repository
+metadata:
+  title: Contribute to the Windows Package Manager repository
+  description: "Contribute to the Windows Package Manager repository"
+  ms.date: 12/08/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-contribute-to-repository.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements best describes a manifest?"
+    choices:
+    - content: "A manifest is a file that contains the installer information for an app."
+      isCorrect: false
+      explanation: "That's incorrect. The manifest is a combination of several files, not just one."
+    - content: "A manifest is a file (or set of data) containing meta-data providing descriptive elements for a package as well as the location of the installer, and the installer's SHA256 hash."
+      isCorrect: true
+      explanation: "That's correct. A manifest is a file containing the meta-data which describes the elements needed by a package and its installer."
+    - content: "A manifest is the underlying schema that is used to configure how Windows Package Manager looks for the end user."
+      isCorrect: false
+      explanation: "That's incorrect.The Windows Package Manager settings would be the place to configure the look of Windows Package Manager."

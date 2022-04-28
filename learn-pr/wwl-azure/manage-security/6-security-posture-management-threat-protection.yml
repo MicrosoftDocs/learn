@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security.security-posture-management-threat-protection
+title: Security posture management and threat protection
+metadata:
+  title: Security posture management and threat protection
+  description: "Security posture management and threat protection"
+  ms.date: 03/15/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-security-posture-management-threat-protection.md)]

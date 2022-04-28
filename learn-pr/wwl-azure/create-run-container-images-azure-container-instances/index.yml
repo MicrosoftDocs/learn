@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.create-run-container-images-azure-container-instances
+metadata:
+  title: Run container images in Azure Container Instances
+  description: "Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies."
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Run container images in Azure Container Instances
+summary: Learn how Azure Container Instances can help you quickly deploy containers, how to set environment variables, and specify container restart policies.
+abstract: |
+  After completing this module, you'll be able to:
+  *   Describe the benefits of Azure Container Instances and how resources are grouped.
+  *   Deploy a container instance in Azure by using the Azure CLI.
+  *   Start and stop containers using policies.
+  *   Set environment variables in your container instances.
+  *   Mount file shares in your container instances.
+prerequisites: |
+  *   You should be familiar with container concepts and terminology.
+  *   An understanding of cloud computing and some experience with the Azure portal.
+iconUrl: /learn/achievements/azure-container-instances-images.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-container-instances
+units:
+- learn.wwl.create-run-container-images-azure-container-instances.introduction
+- learn.wwl.create-run-container-images-azure-container-instances.explore
+- learn.wwl.create-run-container-images-azure-container-instances.exercise-deploy-container-instance-by-using-azure-cli
+- learn.wwl.create-run-container-images-azure-container-instances.run-containerized-tasks-restart-policies
+- learn.wwl.create-run-container-images-azure-container-instances.set-environment-variables
+- learn.wwl.create-run-container-images-azure-container-instances.mount-azure-file-share
+- learn.wwl.create-run-container-images-azure-container-instances.knowledge-check
+- learn.wwl.create-run-container-images-azure-container-instances.summary
+badge:
+  uid: learn.wwl.create-run-container-images-azure-container-instances.badge

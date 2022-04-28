@@ -6,7 +6,7 @@ metadata:
   unitType: exercise  
   title: Exercise - Add parameters and variables to your Bicep template
   description: Learn how to build reusable templates by using parameters to accept input, and variables to store and reuse values within the template.
-  ms.date: 03/12/2021  
+  ms.date: 11/25/2021  
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial # do we need ms.topic?

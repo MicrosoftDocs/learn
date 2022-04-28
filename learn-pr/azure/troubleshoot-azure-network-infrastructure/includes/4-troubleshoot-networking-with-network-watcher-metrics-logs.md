@@ -6,7 +6,7 @@ In this module, you'll focus on flow logs, diagnostic logs, and traffic analytic
 
 ## Usage and quotas
 
-Each Microsoft Azure resource can be used up to its quota. Each subscription has separate quotas, and usage is tracked per subscription. Only one instance of Network Watcher is required per subscription per region. This instance gives you a view of usage and quotas so that you can see if you're at risk of hitting a quota.
+You can use each Microsoft Azure resource up to its quota. Each subscription has separate quotas, and usage is tracked per subscription. Only one instance of Network Watcher is required per subscription per region. This instance gives you a view of usage and quotas so that you can see if you're at risk of hitting a quota.
 
 To view the usage and quota information, go to **All Services** > **Networking** > **Network Watcher**, and then select **Usage and quotas**. You'll see granular data based on usage and resource location. Data for the following metrics is captured:
 
@@ -23,15 +23,15 @@ Here's an example that shows usage and quotas in the portal:
 
 Network diagnostic logs provide granular data. You'll use this data to understand connectivity and performance issues better. There are three log display tools in Network Watcher:
 
-- Flow logs
+- NSG Flow logs
 - Diagnostic logs
 - Traffic analytics
 
 Let's look at each of these tools.
 
-### Flow logs
+### NSG Flow logs
 
-In flow logs, you can view information about ingress and egress IP traffic on network security groups. Flow logs show outbound and inbound flows on a per-rule basis, based on the network adapter that the flow applies. NSG flow logs show whether traffic was allowed or denied based on the 5-tuple information captured. This information includes:
+In NSG flow logs, you can view information about ingress and egress IP traffic on network security groups. Flow logs show outbound and inbound flows on a per-rule basis, based on the network adapter the flow applies. NSG flow logs show whether traffic was allowed or denied based on the 5-tuple information captured. This information includes:
 
 - Source IP
 - Source port
@@ -41,18 +41,18 @@ In flow logs, you can view information about ingress and egress IP traffic on ne
 
 This diagram shows the workflow that the NSG follows.
 
-![Diagram showing the workflow that the NSG follows from inbound traffic to rule matches to allowing or denying a packet.](../media/4-nsg-rule-flow.png)
+:::image type="content" source="../media/4-nsg-rule-flow.png" alt-text="Screenshot showing the workflow that the NSG follows from inbound traffic to rule matches to allowing or denying a packet.":::
 
-Flow logs store data in a JSON file. It can be difficult to gain insights into this data by manually searching the log files, especially if you have a large infrastructure deployment in Azure. You can solve this problem by using Power BI.
+Flow logs store data in a JSON file. It can be difficult to gain insights into this data by manually searching the log files, especially if you have a large infrastructure deployment in Azure. To solve this problem, use Power BI.
 
-In Power BI, you can visualize NSG flow logs by, for example:
+In Power BI, you can visualize NSG flow logs in many ways. For example:
 
 - Top talkers (IP address)
 - Flows by direction (inbound and outbound)
 - Flows by decision (allowed and denied)
 - Flows by destination port
 
-You can also use open source tools to analyze your logs, such as Elastic Stack, Grafana, and Graylog.
+You can also use open-source tools to analyze your logs, such as Elastic Stack, Grafana, and Graylog.
 
 > [!NOTE]
 > NSG flow logs don't support storage accounts on the Azure classic portal.
@@ -97,10 +97,10 @@ Start with a time range of captured data before, during, and after the reported 
 
 #### CPU bottlenecks
 
-When you're looking at performance issues, examine trends and understand if they affect your server. To spot trends, from the portal, use the monitoring graphs. You might see different types of patterns on the monitoring graphs:
+When you're looking at performance issues, you can examine trends to understand if they affect your server. To spot trends, from the portal, use the monitoring graphs. You might see different types of patterns on the monitoring graphs:
 
 - **Isolated spikes**. A spike might be related to a scheduled task or an expected event. If you know what this task is, does it run at the required performance level? If the performance is OK, you might not need to increase capacity.
-- **Spike up and constant**. A new workload might cause this trend. Enable monitoring in the VM to find out what processes cause the load. The increased consumption might be due to inefficient code or normal consumption. If the consumption is normal, does the process operate at the required performance level?
+- **Spike up and constant**. A new workload might cause this trend. Enable monitoring in the VM to find out what processes cause the load. The increased consumption might be due to inefficient code or might be the new workload's normal consumption. If the consumption is normal, does the process operate at the required performance level?
 - **Constant**. Has your VM always been like this? If so, you should identify the processes that consume most resources and consider adding capacity.
 - **Steadily increasing**. Do you see a constant increase in consumption? If so, this trend might indicate inefficient code or a process taking on more user workload.
 
@@ -109,11 +109,11 @@ If you do observe high CPU utilization, you can either:
 - Increase the size of the VM to scale with more cores.
 - Investigate the issue further. Locate the app and process, and troubleshoot accordingly.
  
-If you scale up the VM and the CPU is still running at above 95 percent, is this offering better performance or higher app throughput to an acceptable level? If not, troubleshoot that individual app.
+If you scale up the VM and the CPU is still running at above 95 percent, is app performance better, or is app throughput higher to an acceptable level? If not, troubleshoot that individual app.
 
 #### Memory bottlenecks
 
-You can view the amount of memory that the VM uses. Logs will help you understand the trend and if it maps to the time at which you see issues. You should not have less than 100 MB of available memory at any time. Watch out for the following trends:
+You can view the amount of memory that the VM uses. Logs will help you understand the trend and if it maps to the time at which you see issues. You shouldn't have less than 100 MB of available memory at any time. Watch out for the following trends:
 
 - **Spike up and constant consumption**. High memory utilization might not be the cause of bad performance. Some apps, such as relational database engines, are memory intensive by design. But if there are multiple memory-hungry apps, you might see bad performance because memory contention causes trimming and paging to disk. These processes will cause a negative performance impact.
 - **Steadily increasing consumption**. This trend might be an app *warming up*. It's common when database engines start up. However, it might also be a sign of a memory leak in an app. 
@@ -122,7 +122,7 @@ You can view the amount of memory that the VM uses. Logs will help you understan
 To resolve high memory utilization, consider these solutions:
 
 - For immediate relief or page file usage, increase the size of the VM to add memory, and then monitor.
-- Investigate the issue further. Locate that app or process, and troubleshoot it. If you know the app, see if you can cap the memory allocation.
+- Investigate the issue further. Locate the app or process causing the bottleneck and troubleshoot it. If you know the app, see if you can cap the memory allocation.
 
 #### Disk bottlenecks
 

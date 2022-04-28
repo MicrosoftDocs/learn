@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-text-with-text-analytics-service.get-started-azure
-title: Get started with Text Analytics on Azure
+title: Get started with text analysis
 metadata:
-  title: Get started with Text Analytics on Azure
-  description: "Get started with Text Analytics on Azure"
-  ms.date: 06/15/2021
+  title: Get started with text analysis
+  description: "Get started with text analysis"
+  ms.date: 04/06/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-get-started-azure.md)]

@@ -4,12 +4,13 @@ title: Read data from the transactional store
 metadata:
   title: Read data from the transactional store
   description: "Read data from the transactional store"
-  ms.date: 07/27/2021
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/8-read-data-from-transactional-store.md)]

@@ -2,10 +2,10 @@ As more companies move their assets and resources into the cloud, keeping them s
 
 Microsoft Azure offers a suite of threat protection and detection systems to minimize and mitigate threats across your whole estate and improve the overall cloud security posture.  
 
-In this module, you’ll explore the capabilities and benefits of using Azure Security Center, what Azure secure score says about your organization's level of security readiness, and how Azure Defender can protect your organization's assets and resources.  Finally, you’ll explore the use of cloud security posture management and understand the security baseline in Azure.
+In this module, you’ll learn about cloud security posture management (CSPM), explore the capabilities of Microsoft Defender for Cloud, including secure score.  You will also learn about the enhanced security capabilities of Microsoft Defender for Cloud. Finally, you’ll learn about the Azure Security Benchmark and security baseline in Azure.
 
-After completing this module, you’ll be able to:  
+After completing this module, you'll be able to:  
 
-- Describe the security management capabilities of Azure.
-- Describe the benefits and use cases of Azure Defender.
-- Understand CSPM and the security baseline.
+- Describe cloud security posture management.
+- Describe the capabilities of Microsoft Defender for Cloud
+- Understand the Azure Security Benchmark and security baseline in Azure.

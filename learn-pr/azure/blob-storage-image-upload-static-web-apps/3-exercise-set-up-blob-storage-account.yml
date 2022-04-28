@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.blob-storage-image-upload-static-web-apps.exercise-setup-blob-storage-account
+title: Exercise - Set up your Blob Storage account
+metadata:
+  title: Exercise - Set up your Blob Storage account
+  description: Set up your Blob Storage account and create a new Container that will hold the uploaded images.
+  author: videlalvaro
+  ms.author: alvidela
+  ms.date: 11/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+  ms.contributors: alvidela-11122021
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-exercise-set-up-blob-storage-account.md)]

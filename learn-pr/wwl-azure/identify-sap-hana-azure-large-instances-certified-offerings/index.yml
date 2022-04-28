@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings
+metadata:
+  title: Identify SAP HANA on Azure (Large Instances) certified offerings
+  description: "This module examines SAP HANA on Azure (Large Instances) certified offerings and deployment offerings. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
+  ms.date: 01/31/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Identify SAP HANA on Azure (Large Instances) certified offerings
+summary: Examine SAP HANA on Azure (Large Instances) certified offerings and deployment offerings.
+abstract: |
+  After completing this module, you will be able to:
+  - Explore SAP HANA on Azure (Large Instances).
+  - Explore deployment options for SAP solutions on Azure.
+  - Review SAP-certified configurations.
+prerequisites: |
+  Before taking this training, you should complete:
+  - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
+  - SAP HANA or NetWeaver training.
+iconUrl: /learn/achievements/sap-hana-certified-offerings.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.introduction
+- learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.explore
+- learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.explore-deployment-options-for-sap-solutions-azure
+- learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.review-available-skus-for
+- learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.explore-custom-sizing-for
+- learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.review-sap-certified-configurations
+- learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.examine-certifications
+- learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.recognize-supported-operating-systems
+- learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.explore-storage
+- learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.knowledge-check
+- learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.summary
+badge:
+  uid: learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings.badge

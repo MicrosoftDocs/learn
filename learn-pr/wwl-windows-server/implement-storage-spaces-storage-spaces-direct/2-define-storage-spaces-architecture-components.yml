@@ -4,12 +4,13 @@ title: Define the Storage Spaces architecture and its components
 metadata:
   title: Define the Storage Spaces architecture and its components
   description: "Define the Storage Spaces architecture and its components"
-  ms.date: 03/01/2021
+  ms.date: 01/20/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-windows-server
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-define-storage-spaces-architecture-components.md)]

@@ -4,27 +4,25 @@ In the example scenario, the team has uploaded the image for the web app to Azur
 
 In this unit, you'll create a new web app by using the Docker image stored in Azure Container Registry. You'll use App Service with a predefined App Service plan to host the web app.
 
-## Enable Docker access to the Azure Container Registry (ACR)
+## Enable Docker access to the Azure Container Registry
 
-You'll use Docker to login to the registry and pull the web image that you want to deploy. Docker needs a username and password to perform this action. The ACR allows you to enable the registry name as the username and admin access key as the password to allow Docker to login to your container registry.
+You'll use Docker to log in to the registry, and pull the web image that you want to deploy. Docker needs a username and password to perform this action. The Container Registry enables you to set the registry name as the username and the admin access key as the password to allow Docker to log in to your container registry.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and go to **All resources**.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and go to **All resources**. The **All resources** pane appears.
 
-1. Select the container registry you created earlier to navigate to the Overview page for the container registry.
+1. Select the container registry you created earlier to go to its Overview page.
 
-1. In the left menu pane, under **Settings**, select **Access keys**.
+1. In the left menu pane, under **Settings**, select **Access keys**. The **Access keys** pane appears for your container registry.
 
-1. Set the **Admin user** option to **Enable**. This change saves automatically.
+1. Set the **Admin user** option to **Enabled**. This change saves automatically.
 
 You're now ready to create your web app.
 
 ## Create a web app
 
-1. Go back to the [Azure portal](https://portal.azure.com/?azure-portal=true) home page, and select **Create a resource**.
+1. Go back to the [Azure portal](https://portal.azure.com/?azure-portal=true) home page, and under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Web**, then search for and select **Web App**. The **Web App** pane appears.
-
-1. Select **Create**.
+1. In the left menu pane, select **Web**, and under *Popular Azure services*, select **Web App**.
 
     :::image type="content" source="../media/5-search-web-app-annotated.png" alt-text="Screenshot that shows the Azure Marketplace with Web App selected.":::
 
@@ -35,7 +33,7 @@ You're now ready to create your web app.
     | Setting | Value |
     |---|---|
     | **Project Details** |
-    | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources. |
+    | Subscription | Select your default Azure subscription in which you're allowed to create and manage resources. |
     | Resource Group | From the dropdown list, select the existing resource group **learn-deploy-container-acr-rg**. |
     | **Instance Details** |
     | Name | Enter a unique name and make a note of it for later. |
@@ -63,7 +61,7 @@ You're now ready to create your web app.
 
 ## Test the web app
 
-1. After deployment succeeds, select **Go to resource** to see the web app you just created.
+1. After deployment succeeds, select **Go to resource** to see the web app you just created. Your **App service** pane appears for your web app.
 
 2. In the top menu bar, select **Browse** to open the site in a new browser tab.
 

@@ -4,12 +4,13 @@ title: Scale up and scale out the app service
 metadata:
   title: Scale up and scale out the app service
   description: "Scale up and scale out the app service"
-  ms.date: 07/23/2021
+  ms.date: 01/14/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-scale-up-scale-out.md)]

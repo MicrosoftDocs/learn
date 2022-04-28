@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-ha-sap-netweaver-anydb.implement-sap-architecture-windows
+title: 'Lab: Implement SAP architecture on Azure VMs running Windows'
+metadata:
+  title: 'Lab: Implement SAP architecture on Azure VMs running Windows'
+  description: "Lab: Implement SAP architecture on Azure VMs running Windows"
+  ms.date: 10/18/2021
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/11-implement-sap-architecture-on-azure-vms-running-windows.md)]

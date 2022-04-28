@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-implement-administer-conditional-access.implement-policy-controls-assignments
-title: Implement conditional access policy controls and assignments
+title: Implement Conditional Access policy controls and assignments
 metadata:
-  title: Implement conditional access policy controls and assignments
-  description: "Implement conditional access policy controls and assignments"
-  ms.date: 07/23/2021
+  title: Implement Conditional Access policy controls and assignments
+  description: "Implement Conditional Access policy controls and assignments"
+  ms.date: 04/02/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/5-implement-conditional-access-policies-controls-assignments.md)]

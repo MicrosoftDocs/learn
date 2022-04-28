@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.python-get-started-testing.python-unittest
+title: Understand Python testing with the unittest module
+metadata:
+  title: Understand Python testing with the unittest module
+  description: "Understand the basics of Python's unittest, from its background to writing and reading existing tests. See how test classes work and how to create them."
+  ms.date: 1/14/2022
+  author: alfredodeza
+  ms.author: alfredodeza
+  ms.custom: team=nextgen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-language
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-python-unittest.md)]

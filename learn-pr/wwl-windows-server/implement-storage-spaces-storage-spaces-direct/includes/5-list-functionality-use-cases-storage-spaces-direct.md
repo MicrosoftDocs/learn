@@ -36,14 +36,14 @@ The architecture of Storage Spaces Direct consists of the following components:
 
 ## Storage Spaces Direct benefits
 
-Windows Server 2019 offers a range of Storage Spaces Direct-related benefits, including:
+Windows Server offers a range of Storage Spaces Direct-related benefits, including:
 
 - Deduplication and compression for ReFS volumes. Deduplication supports volumes up to 64 terabytes (TB) and will deduplicate the first 4 TB of each file.
 - Native support for persistent memory modules in Storage Spaces Direct clusters. You can use persistent memory as cache to accelerate the active working set, or as capacity to guarantee consistent, low latency on the order of microseconds.
 - Nested resiliency for two-node hyper-converged infrastructure. With nested resiliency, a two-node Storage Spaces Direct cluster can provide continuously accessible storage for apps and VMs even if one server node stops working and a drive fails in the other server node.
 - USB flash drive as a witness. You can use a low-cost USB flash drive that's plugged into your router to function as a witness in two-node Storage Spaces Direct clusters.
 - Performance history for visibility into resource utilization and performance. This built-in functionality automatically collects over 50 essential counters spanning compute, memory, network, and storage and stores them for up to one year.
-- Scaling for up to 4 petabytes (PB) per cluster. In Windows Server 2019, Storage Spaces Direct supports up to 4 PB (or 4,000 TB) of raw capacity per storage pool.
+- Scaling for up to 4 petabytes (PB) per cluster. Starting with Windows Server 2019, Storage Spaces Direct supports up to 4 PB (or 4,000 TB) of raw capacity per storage pool.
 - Mirror-accelerated parity. With mirror-accelerated parity you can create Storage Spaces Direct volumes that are part mirror and part parity, similar to mixing RAID-1 and RAID-5/6 to combine their benefits. In Windows Server 2019, mirror-accelerated parity performance more than doubled compared to Windows Server 2016.
 - Drive latency outlier detection. Storage Spaces Direct automatically detects anomalous changes in drive performance and labels them in Windows PowerShell and Windows Admin Center with the **Abnormal Latency** status.
 - Storage-class memory support for VMs. This enables NTFS-formatted direct access volumes to be created on non-volatile dual inline memory modules (DIMMs) and exposed to Microsoft Hyper-V VMs. This enables Hyper-V VMs to take advantage of the low-latency performance benefits of storage-class memory devices.

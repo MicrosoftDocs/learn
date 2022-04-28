@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-compute-solution.design-for-azure-container-instances-solutions
+title: Design for Azure Container Instances solutions
+metadata:
+  title: Design for Azure Container Instances solutions
+  description: "Design for Azure Container Instances solutions"
+  ms.date: 03/30/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-design-for-azure-container-instances-solutions.md)]

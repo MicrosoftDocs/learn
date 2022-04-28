@@ -3,18 +3,31 @@ uid: learn.language.rust-introduction.3-rust-features
 metadata:
   title: Unique features of Rust
   description: Learn about some of the unique features of the Rust programming language.
-  ms.date: 07/26/2021
+  ms.date: 09/29/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=nextgen
 title: Unique features of Rust
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
   [!include[](includes/3-rust-features.md)]
 
 quiz:
   questions:
+
+  - content: "What's a compelling advantage of working with Rust?"
+    choices:
+    - content: "Rust is type-safe, memory-safe, and data race-free."
+      isCorrect: true
+      explanation: "Correct! Data types in Rust are verified at compile time, pointers (references) always refer to valid memory, and thread-safety is guaranteed."
+    - content: "Rust is optimized for bare-metal development like operating systems."
+      isCorrect: false
+      explanation: "Incorrect. Rust can be used to implement embedded functionality, but the language is well suited for all development. Programmers also use Rust to build tools, write web apps, and do high-level abstractions."
+    - content: "Rust has a robust garbage collector and helps to manage memory efficiently."
+      isCorrect: false
+      explanation: "Incorrect. Rust doesn't have a built-in garbage collector. Rust produces a very minimal runtime, which is also optional."
 
   - content: "How is Rust code executed?"
     choices:
@@ -28,7 +41,7 @@ quiz:
       isCorrect: true
       explanation: "Correct. Rust code is compiled into an executable file, and then the executable is run."
 
-  - content: "What's an example of something you can't do with Cargo?"
+  - content: "What's an example of something you *can't* do with Cargo?"
     choices:
     - content: "Build an existing Rust project."
       isCorrect: false
@@ -39,15 +52,3 @@ quiz:
     - content: "Publish a library to *Crates.io*."
       isCorrect: false
       explanation: "You can publish a library with Cargo by using the command `cargo publish`."
-   
-  - content: "What Rust playground tool can you use to find mistakes in your code?"
-    choices:
-    - content: "rustfmt"
-      isCorrect: false
-      explanation: "Incorrect. You can use the rustfmt tool to format your Rust code to use official Rust styles."
-    - content: "Clippy"
-      isCorrect: true
-      explanation: "Correct. You can use the Clippy collection of lints to find mistakes in your code and see suggestions for how to improve your code."
-    - content: "Debug"
-      isCorrect: false
-      explanation: "Incorrect. Debug is a compile option."

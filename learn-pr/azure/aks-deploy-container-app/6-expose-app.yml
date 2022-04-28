@@ -3,9 +3,10 @@ uid: learn.aks-deploy-container-app.6-expose-app
 metadata:
   title: Enable network access to an application
   description: Explore how to expose your application to clients outside your Azure Kubernetes Service cluster by using services and ingresses. You see how to make use of ingress rules and annotations to specify the routing of requests and the selection of an ingress controller.
-  ms.date: 07/31/2020
-  author: khaosdoctor
-  ms.author: ludossan
+  ms.published: 07/31/2020
+  ms.date: 03/01/2022
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enable network access to an application

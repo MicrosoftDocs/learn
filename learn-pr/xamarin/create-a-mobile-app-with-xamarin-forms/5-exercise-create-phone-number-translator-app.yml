@@ -6,10 +6,9 @@ metadata:
   title: Exercise - Create a phone number translator app
   description: "In this exercise, you'll create a new Xamarin.Forms application, called Phoneword. The app displays a UI to translate an alphanumeric phone number into a numeric number that can be called on your phone."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 content: |
   [!include[](includes/5-exercise-create-phone-number-translator-app.md)]

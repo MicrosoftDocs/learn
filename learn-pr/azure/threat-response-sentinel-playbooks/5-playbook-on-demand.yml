@@ -4,8 +4,8 @@ metadata:
   title: Run playbooks on demand
   description: Run playbooks to respond to existing incidents.
   ms.date: 12/17/2020
-  author: micrum
-  ms.author: micrum
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Run playbooks on demand
@@ -34,7 +34,7 @@ quiz:
     - content: "Microsoft Learn"
       isCorrect: false
       explanation: "Microsoft Learn is where everyone comes to learn and build new skills based on Microsoft technologies and products."
-    - content: "Azure Sentinel repository on GitHub"
+    - content: "Microsoft Sentinel repository on GitHub"
       isCorrect: true
-      explanation: "Azure Sentinel repository on GitHub contains out of the box detections, exploration queries, hunting queries, workbooks, and playbooks that will help you to secure your environment and hunt for threats."
+      explanation: "Microsoft Sentinel repository on GitHub contains out of the box detections, exploration queries, hunting queries, workbooks, and playbooks that will help you to secure your environment and hunt for threats."
  

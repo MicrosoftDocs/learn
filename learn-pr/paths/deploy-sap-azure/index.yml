@@ -1,0 +1,27 @@
+### YamlMime:LearningPath
+uid: learn.wwl.deploy-sap-azure
+metadata:
+  title: Deploy SAP on Azure
+  description: Deploy SAP on Azure
+  ms.date: 01/17/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy SAP on Azure
+prerequisites: ""
+summary: |
+  SAP professionals need to evaluate deploying SAP solutions on Azure. These modules explore the preparation for deployment of SAP solutions on Azure, including single-instance SAP HANA and SAP NetWeaver high availability AnyDB deployments.
+iconUrl: /learn/achievements/deploy-sap-on-azure.svg
+levels:
+- advanced
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+modules:
+- learn.wwl.deploy-single-instance-implementations-2-tier-3-tier
+- learn.wwl.implement-ha-sap-netweaver-anydb
+trophy:
+  uid: learn.wwl.deploy-sap-azure.trophy

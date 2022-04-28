@@ -3,7 +3,7 @@ uid: learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365
 metadata:
   title: Respond to data loss prevention alerts using Microsoft 365
   description: "Respond to data loss prevention alerts using Microsoft 365"
-  ms.date: 03/12/2021
+  ms.date: 03/11/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ abstract: |
   Upon completion of this module, the learner will be able to:
   - Describe data loss prevention (DLP) components in Microsoft 365
   - Investigate DLP alerts in the Microsoft 365 compliance center
-  - Investigate DLP alerts in Microsoft Cloud App Security
+  - Investigate DLP alerts in Microsoft Defender for Cloud Apps
 prerequisites: |
   Intermediate understanding of Microsoft 365.
 iconUrl: /learn/achievements/respond-to-data-loss-prevention-alerts-in-microsoft-365.svg

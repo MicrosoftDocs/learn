@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-integrated-cache.configure-cache-staleness
+title: Configure cache staleness
+metadata:
+  title: Configure cache staleness
+  description: "Configure cache staleness"
+  ms.date: 03/09/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-configure-cache-staleness.md)]

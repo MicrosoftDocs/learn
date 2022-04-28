@@ -4,9 +4,9 @@ title: GitHub Packages for code packages
 metadata:
   title: GitHub Packages for code packages
   description: Briefly introduce how you can host your code libraries on GitHub Packages.
-  ms.date: 04/14/2021
-  author: cmaneu
-  ms.author: chmaneu
+  ms.date: 09/30/2021
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

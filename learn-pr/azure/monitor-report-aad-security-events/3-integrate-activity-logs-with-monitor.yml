@@ -4,8 +4,8 @@ metadata:
   title: Integrate activity logs with Azure Monitor logs
   description: Integrate activity logs with Azure Monitor logs.
   ms.date: 03/27/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: MarkusVi
+  ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Integrate activity logs with Azure Monitor logs

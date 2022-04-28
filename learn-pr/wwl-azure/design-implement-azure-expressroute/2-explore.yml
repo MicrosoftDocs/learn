@@ -4,12 +4,13 @@ title: Explore Azure ExpressRoute
 metadata:
   title: Explore Azure ExpressRoute
   description: "Explore Azure ExpressRoute"
-  ms.date: 08/02/2021
+  ms.date: 04/07/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 22
 content: |
   [!include[](includes/2-explore.md)]

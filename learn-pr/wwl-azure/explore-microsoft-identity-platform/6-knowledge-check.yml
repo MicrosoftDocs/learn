@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-identity-platform.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/26/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the types of permissions supported by the Microsoft identity platform is used by apps that have a signed-in user present?"
+    choices:
+    - content: "Delegated permissions"
+      isCorrect: true
+      explanation: "That's correct. Delegated permissions are used by apps that have a signed-in user present. The app is delegated with the permission to act as a signed-in user when it makes calls to the target resource."
+    - content: "Application permissions"
+      isCorrect: false
+      explanation: "That's incorrect. Application permissions are used by apps that run without a signed-in user present, for example, apps that run as background services or daemons."
+    - content: "Both delegated and application permissions"
+      isCorrect: false
+      explanation: "That's incorrect. Only delegated permissions are used by apps that have a signed-in user present."
+  - content: "Which of the following app scenarios require code to handle Conditional Access challenges?"
+    choices:
+    - content: "Apps performing the device-code flow"
+      isCorrect: false
+      explanation: "That's incorrect. Apps performing the on-behalf-of flow require code to handle Conditional Access challenges."
+    - content: "Apps performing the on-behalf-of flow"
+      isCorrect: true
+      explanation: "That's correct. Apps performing the on-behalf-of flow require code to handle Conditional Access challenges."
+    - content: "Apps performing the Integrated Windows authentication flow"
+      isCorrect: false
+      explanation: "That's incorrect. The Integrated Windows authentication flow allows applications on domain or Azure Active Directory (Azure AD) joined computers to acquire a token silently."

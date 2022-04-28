@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-indexes-azure-cosmos-db-sql-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/25/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You have created a bulk operation in Azure Cosmos DB SQL API that will insert hundreds of thousands of items into a container. You need to temporarily disable indexing and re-enable it after the bulk operation is complete. Prior to starting the bulk operation, which indexing mode should you configure in the indexing policy?"
+    choices:
+    - content: "None"
+      isCorrect: true
+      explanation: "That's correct. Setting the indexing mode to none will disable indexing. This setting can be changed back at a later point in time."
+    - content: "Consistent"
+      isCorrect: false
+      explanation: "That's incorrect. The consistent indexing mode will still continue to index items."
+    - content: "Automatic"
+      isCorrect: false
+      explanation: "That's incorrect. Automatic is not a valid indexing mode option."
+  - content: "You are authoring a new indexing policy for a container in Azure Cosmos DB SQL API. You would like to define an included path that includes all possible properties from the root of any JSON document. Which path expression should you use?"
+    choices:
+    - content: "``/*``"
+      isCorrect: true
+      explanation: "That's correct. The wildcard operator is used to match any elements below the referenced node."
+    - content: "``/[]``"
+      isCorrect: false
+      explanation: "That's incorrect. The array operator is exclusively used to address multiple elements together."
+    - content: "``/?``"
+      isCorrect: false
+      explanation: "That's incorrect. The scalar operator is used strictly for string or number values at the current node."

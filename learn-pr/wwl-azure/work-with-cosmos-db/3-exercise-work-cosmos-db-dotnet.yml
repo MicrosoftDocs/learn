@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-with-cosmos-db.exercise-work-cosmos-db-dotnet
+title: 'Exercise: Create resources by using the Microsoft .NET SDK v3'
+metadata:
+  title: 'Exercise: Create resources by using the Microsoft .NET SDK v3'
+  description: "Exercise: Create resources by using the Microsoft .NET SDK v3"
+  ms.date: 04/14/2022
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-exercise-work-cosmos-db-dotnet.md)]

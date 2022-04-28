@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.explore-package-dependencies
+metadata:
+  title: Explore package dependencies
+  description: "Explore package dependencies"
+  ms.date: 02/09/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore package dependencies
+summary: This module explores dependency management concepts and helps to identify project dependencies. You will learn how to decompose your system, identify dependencies, and package componentization.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Define dependency management strategy
+  - Identify dependencies
+  - Describe elements and componentization of a dependency management
+  - Scan your codebase for dependencies
+prerequisites: |
+  None
+iconUrl: /learn/achievements/1-explore-package-dependencies.svg
+levels:
+- advanced
+roles:
+- administrator
+- developer
+- devops-engineer
+- security-engineer
+- security-operations-analyst
+- service-adoption-specialist
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-artifacts
+- azure-boards
+- azure-cloud-services
+- azure-devops
+- azure-pipelines
+- azure-repos
+- azure-test-plans
+- github
+units:
+- learn.wwl.explore-package-dependencies.introduction
+- learn.wwl.explore-package-dependencies.what-is-dependency-management
+- learn.wwl.explore-package-dependencies.describe-elements-of-dependency-management-strategy
+- learn.wwl.explore-package-dependencies.identify-dependencies
+- learn.wwl.explore-package-dependencies.understand-source-package-componentization
+- learn.wwl.explore-package-dependencies.decompose-your-system
+- learn.wwl.explore-package-dependencies.scan-your-codebase-for-dependencies
+- learn.wwl.explore-package-dependencies.knowledge-check
+- learn.wwl.explore-package-dependencies.summary
+badge:
+  uid: learn.wwl.explore-package-dependencies.badge

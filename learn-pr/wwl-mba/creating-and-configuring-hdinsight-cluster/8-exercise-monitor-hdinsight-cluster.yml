@@ -3,13 +3,14 @@ uid: learn.wwl.creating-and-configuring-hdinsight-cluster.8-exercise-monitor-hdi
 title: Exercise - Monitor an HDInsight cluster
 metadata:
   title: Exercise - Monitor an HDInsight cluster
-  description: Exercise - Monitor an HDInsight cluster
-  ms.date: 10/25/2019
+  description: "Exercise - Monitor an HDInsight cluster"
+  ms.date: 01/05/2022
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: False
+azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/8-exercise-monitor-hdinsight-cluster.md)]

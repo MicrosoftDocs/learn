@@ -1,0 +1,28 @@
+trigger:
+  batch: true
+  branches:
+    include:
+    - main
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+
+- stage: Build
+  jobs:
+  # Build the Visual Studio solution.
+  - template : pipeline-templates/build.yml
+
+  # Lint the Bicep file.
+  - template: pipeline-templates/lint.yml
+
+# Deploy to the test environment.
+- template: pipeline-templates/deploy.yml
+  parameters:
+    environmentType: Test
+
+# Deploy to the production environment.
+- template: pipeline-templates/deploy.yml
+  parameters:
+    environmentType: Production

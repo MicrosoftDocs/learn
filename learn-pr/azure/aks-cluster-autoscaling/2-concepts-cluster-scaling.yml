@@ -6,8 +6,8 @@ metadata:
   title: Cluster scalability concepts
   description: Learn what is cluster scalability, why it's important and how AKS helps you solve this problem
   ms.date: 04/27/2021
-  author: khaosdoctor
-  ms.author: ludossan
+  author: nickomang
+  ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

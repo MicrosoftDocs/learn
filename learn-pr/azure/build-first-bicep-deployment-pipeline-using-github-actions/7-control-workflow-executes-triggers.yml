@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.control-workflow-executes-triggers
+title: Use triggers to control when your workflow runs
+metadata:
+  unitType: learning-content
+  title: Use triggers to control when your workflow runs
+  description: Learn how to create and use triggers and schedules to run Bicep deployment workflows.
+  ms.date: 08/11/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-control-workflow-executes-triggers.md)]

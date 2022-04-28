@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.create-certificates
+title: Prepare to secure the connection to an MQTT broker
+metadata:
+  title: Prepare to secure the connection to an MQTT broker
+  description: In this unit, you learn background information about securing the connection to an MQTT broker.
+  ms.date: 11/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+  ms.custom: nextgen
+durationInMinutes: 2 # dummy number at present
+content: |
+  [!include[](includes/04-create-certificates.md)]

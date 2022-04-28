@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.troubleshoot-active-directory
+metadata:
+  title: Troubleshoot Active Directory
+  description: "Learn how to troubleshoot AD DS service failures or degraded performance. Learn how to recover deleted security objects and the AD DS database, and how to troubleshoot hybrid authentication issues."
+  ms.date: 12/03/2021
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot Active Directory
+summary: Learn how to troubleshoot AD DS service failures or degraded performance. Learn how to recover deleted security objects and the AD DS database, and how to troubleshoot hybrid authentication issues.
+abstract: |
+  After completing this module, you will be able to:
+  *   Recover the AD DS database, objects in AD DS, and SYSVOL
+  *   Troubleshoot AD DS replication
+  *   Troubleshoot Hybrid authentication issues
+prerequisites: |
+  *   Working knowledge of common Windows Server management tools
+  *   Some experience of typical Windows Server workloads
+  *   Basic knowledge of Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- identity-access-admin
+- solution-architect
+- technology-manager
+products:
+- azure
+- azure-active-directory
+- azure-active-directory-domain
+- windows-server
+units:
+- learn.wwl.troubleshoot-active-directory.introduction
+- learn.wwl.troubleshoot-active-directory.recover-objects-from-ad-recycle-bin
+- learn.wwl.troubleshoot-active-directory.recover-ad-ds-database
+- learn.wwl.troubleshoot-active-directory.recover-sysvol
+- learn.wwl.troubleshoot-active-directory.troubleshoot-ad-ds-replication
+- learn.wwl.troubleshoot-active-directory.troubleshoot-hybrid-authentication-issues
+- learn.wwl.troubleshoot-active-directory.knowledge-check
+- learn.wwl.troubleshoot-active-directory.summary
+badge:
+  uid: learn.wwl.troubleshoot-active-directory.badge

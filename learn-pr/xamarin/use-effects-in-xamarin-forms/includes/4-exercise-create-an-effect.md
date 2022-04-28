@@ -193,7 +193,7 @@ using Xamarin.Forms;
 ...
 class ButtonGradientEffect : RoutingEffect
 {
-    public ButtonGradientEffect() : base("MicrosoftLearn.ButtonGradientEffect")
+    public ButtonGradientEffect() : base("Xamarin.ButtonGradientEffect")
     {
     }
 }

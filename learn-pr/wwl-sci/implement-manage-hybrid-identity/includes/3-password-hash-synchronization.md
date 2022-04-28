@@ -2,21 +2,23 @@
 
 Password hash synchronization is one of the sign-in methods used to accomplish hybrid identity. Azure AD Connect synchronizes a hash, of the hash, of a user's password from an on-premises Active Directory instance to a cloud-based Azure AD instance.
 
-> [!div class="mx-imgBorder"]
-> ![Graphic showing Azure AD Connect passes a password hash for a user between on-premises and in the cloud.](../media/password-hash-sync-architecture-1.png)
+:::image type="content" source="../media/password-hash-sync-architecture-1-5deb5844.png" alt-text="Graphic showing Azure AD Connect passes a password hash for a user between on-premises and in the cloud.":::
+
 
 Active Directory Domain Services stores passwords in the form of a hash value representation of the actual user password. A hash value is a result of a one-way mathematical function (the hashing algorithm). There is no method to revert the result of a one-way function to the plain text version of a password. To synchronize your password, Azure AD Connect sync extracts your password hash from the on-premises Active Directory instance. Extra security processing is applied to the password hash before it is synchronized to the Azure Active Directory authentication service. Passwords are synchronized on a per-user basis and in chronological order.
 
 The actual data flow of the password hash synchronization process is similar to the synchronization of user data. However, passwords are synchronized more frequently than the standard directory synchronization window for other attributes. The password hash synchronization process runs every 2 minutes. You cannot modify the frequency of this process. When you synchronize a password, it overwrites the existing cloud password.
 
-The first time you enable the password hash synchronization feature, it performs an initial synchronization of the passwords of all in-scope users. You cannot explicitly define a subset of user passwords that you want to synchronize. However, if there are multiple connectors, it is possible to disable password hash sync for some connectors but not others. When you change an on-premises password, the updated password is synchronized, most often in a matter of minutes. The password hash synchronization feature automatically retries failed synchronization attempts. If an error occurs during an attempt to synchronize a password, an error is logged in your event viewer.
+The first time you enable the password hash synchronization feature, it performs an initial synchronization of the passwords of all in-scope users. You cannot explicitly define a subset of user passwords that you want to synchronize during the first synchronization. Once the initial synchronization completes, you can set up a **selective password hash synch** for future synchronizations.
+
+If there are multiple connectors, it is possible to disable password hash sync for some connectors but not others. When you change an on-premises password, the updated password is synchronized, most often in a matter of minutes. The password hash synchronization feature automatically retries failed synchronization attempts. If an error occurs during an attempt to synchronize a password, an error is logged in your event viewer.
 
 ## Enable password hash synchronization
 
 When you install Azure AD Connect by using the **Express Settings** option, password hash synchronization is automatically enabled. If you use custom settings when you install Azure AD Connect, password hash synchronization is available on the user sign-in page.
 
-> [!div class="mx-imgBorder"]
-> ![Enabling password hash synchronization](../media/user-sign-in-2.png)
+:::image type="content" source="../media/single-sign-on-3-5f2b5c09.png" alt-text="Enabling password hash synchronization":::
+
 
 ### Password hash synchronization and Federal Information Processing standard
 
@@ -24,34 +26,33 @@ If your server has been locked down according to Federal Information Processing 
 
 **To enable MD5 for password hash synchronization, perform the following steps:**
 
-1. Go to %programfiles%\Azure AD Sync\Bin.
-
-1. Open miiserver.exe.config.
-
-1. Go to the configuration/runtime node at the end of the file.
-
-1. Add the following node: `<enforceFIPSPolicy enabled="false"/>`
-
-1. Save your changes.
+1.  Go to %programfiles%\\Azure AD Sync\\Bin.
+2.  Open miiserver.exe.config.
+3.  Go to the configuration/runtime node at the end of the file.
+4.  Add the following node: `<enforceFIPSPolicy enabled="false"/>`
+5.  Save your changes.
 
 For reference, this snippet is what it should look like:
+
 ```
     <configuration>
         <runtime>
             <enforceFIPSPolicy enabled="false"/>
         </runtime>
     </configuration>
+
 ```
+
 ## Using PingFederate
 
 Configure PingFederate with Azure AD Connect to set up federation with the domain you want connected. The following prerequisites are required:
 
-- PingFederate 8.4 or later.
-- A TLS/SSL certificate for the federation service name that you intend to use (for example, sts.contoso.com).
+ -  PingFederate 8.4 or later.
+ -  A TLS/SSL certificate for the federation service name that you intend to use (for example, sts.contoso.com).
 
 After you choose to set up federation by using PingFederate in AD Connect, you're asked to verify the domain you want to federate. Select the domain from the drop-down menu.
 
-> [!div class="mx-imgBorder"]
-> ![Azure AD Connect interface showing the domain you want to create a federation with](../media/pingfederate-domain.png)
+:::image type="content" source="../media/pingfederate-domain-5e747197.png" alt-text="Azure AD Connect interface showing the domain you want to create a federation with":::
+
 
 Configure PingFederate as the federation server for each federated Azure domain. Then select Export Settings to share this information with your PingFederate administrator. The federation server administrator updates the configuration and provides the PingFederate server URL and port number so that Azure AD Connect can verify the metadata settings.

@@ -6,10 +6,9 @@ metadata:
   title: Exercise - Replace code with Xamarin.Forms bindings
   description: "Exercise - Replace code with Xamarin.Forms bindings"
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: davidbritch
+  ms.author: dabritch
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
-  
 content: |
   [!include[](includes/3-exercise-replace-code-with-data-bindings.md)]

@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.discover-apps-by-using-mcas-adfs-app-report
-title: Discover apps by using Microsoft Cloud App Security and Active Directory Federation Services app report
+title: Discover apps by using Microsoft Defender for Cloud Apps and Active Directory Federation Services app report
 metadata:
-  title: Discover apps by using Microsoft Cloud App Security and Active Directory Federation Services app report
-  description: "Discover apps by using Microsoft Cloud App Security and Active Directory Federation Services app report"
-  ms.date: 08/04/2021
+  title: Discover apps by using Microsoft Defender for Cloud Apps and Active Directory Federation Services app report
+  description: "Discover apps by using Microsoft Defender for Cloud Apps and Active Directory Federation Services app report"
+  ms.date: 04/08/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-discover-apps-use-microsoft-cloud-app-security-app-report.md)]
