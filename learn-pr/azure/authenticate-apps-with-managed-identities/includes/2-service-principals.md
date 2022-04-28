@@ -1,12 +1,12 @@
-Your company's staff uses several on-premises applications in the daily running of the business. Recently, the company completed an enterprise-wide security audit. The audit highlighted a design flaw in several applications. Username and password credentials were stored in either application source code or the associated configuration files. 
+Your company's staff uses several on-premises applications in the daily running of the business. Recently, the company completed an enterprise-wide security audit. The audit highlighted a design flaw in several applications. The audit found usernames and passwords  stored in either application source code or associated configuration files.
 
 The report indicated the following security problems with storing usernames and passwords in code or in configuration files:
 
-- Passwords that are stored in plain text are accessible to anyone.
-- Compromised user credentials threaten the network security of the enterprise domain.
+- Passwords stored in plain text are accessible to anyone.
+- Compromised user credentials threaten the network security of the enterprise.
 - Compromised user credentials allow access to sensitive resources like sales and marketing data.
-- The current solution for credential storage creates an unnecessary technical debt, requiring you to update and redeploy the application when credentials expire.
-- The current solution for credential storage restricts the application to on-premises usage only. The application can't scale to cloud usage without significant changes.
+- The current credential storage approach creates unnecessary overhead. Applications need to be updated and redeployed when credentials expire.
+- The current credential storage solution restricts the application to on-premises. The application can't scale to cloud usage without significant changes.
 
 As the developer, you've been asked to fix the problems. The audit report suggested using Azure service principals to improve application security.
 
@@ -14,7 +14,7 @@ In this unit, you'll explore Azure service principals in more detail. You'll lea
 
 ## What are Azure service principals?
 
-Think of an Azure service principal as a proxy account, or identity, that represents your app or service. This account is managed by Azure Active Directory (Azure AD). You grant the service principal access to the Azure resources that you need. Use the service principal instead of embedding credentials or creating a dummy account for your app. 
+Think of an Azure service principal as a proxy account, or identity, that represents your app or service. This account is managed by Azure Active Directory (Azure AD). You grant the service principal access to the Azure resources that you need. Use the service principal instead of embedding credentials or creating a dummy account for your app.
 
 Service principals exist at the tenant level in Azure. They're used to grant access to resources in that tenant.
 
@@ -24,7 +24,7 @@ If all of the resources are in the same tenant, then you need to associate only 
 
 ![Diagram showing the relationship between service principals and tenants.](../media/2-service-principal-overview.svg)
 
-You create your service principal:
+You can create your service principal using any of the options below:
 
 - Through the portal
 - By using PowerShell
@@ -33,7 +33,7 @@ You create your service principal:
 
 ## Use Microsoft identity platform in your applications
 
-Microsoft identity platform simplifies the way your application authenticates with Azure AD. It provides a unified way to authenticate your apps. When an application successfully authenticates with Azure AD, it receives a unique token. The application uses this token each time it makes a call to an API, or a call to access a service. To build an application, use Microsoft Authentication Library (MSAL) to provide single sign-on support.
+The Microsoft identity platform simplifies the way your application authenticates with Azure AD. It provides a unified way to authenticate your apps. When an application successfully authenticates with Azure AD, it receives a unique token. The application uses this token each time it makes a call to an API, or a call to access a service. To build an application, use Microsoft Authentication Library (MSAL) to provide single sign-on support.
 
 You can provision an application for Microsoft identity platform in several ways. Here, we'll use the portal to register an application in Azure.
 
@@ -47,7 +47,7 @@ You can provision an application for Microsoft identity platform in several ways
 
 1. Enter a display name for the app.
 
-1. Specify supported account types. Choose from the following accounts:
+1. Specify any of the supported account types. You can choose from:
    - Accounts within your company's Azure AD tenant.
    - Accounts in any company's Azure AD tenant.
    - Any organization accounts and personal accounts, such as Microsoft or Xbox.
@@ -58,7 +58,7 @@ When you finish the steps, the application is registered with Azure AD. It's als
 
 ## Assign application roles
 
-Azure AD applications must be assigned roles so that they can work with other services. Azure uses role-based access control (RBAC) to tightly manage access to Azure resources, and manage how those resources are used. An application's roles determine its permissions and scope.
+Azure AD applications must be assigned roles to work with other services. Azure uses role-based access control (RBAC) to tightly manage access to Azure resources, and manage how those resources are used. An application's roles determine its permissions and scope.
 
 RBAC permissions are inherited from the level of the scope set. For example, if you assign the reader role to a resource group, read permissions are assigned to all resources within that group.
 
