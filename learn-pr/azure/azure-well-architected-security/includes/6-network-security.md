@@ -34,7 +34,7 @@ Any resource exposed to the internet is at risk for a denial-of-service attack. 
 
 To mitigate these attacks, Azure DDoS Protection provides basic protection across all Azure services and enhanced protection for further customization for your resources. DDoS Protection blocks attack traffic and forwards legitimate traffic to its intended destination. Within a few minutes of attack detection, you're notified through Azure Monitor metrics.
 
-![Diagram that shows Azure DDoS Protection installed between a virtual network and external user requests.](../media/6-ddos.png)
+![Diagram that shows Azure D D o S Protection installed between a virtual network and external user requests.](../media/6-ddos.png)
 
 ### Virtual network security
 
