@@ -1,4 +1,4 @@
-In this Learn module, you'll deploy an Express.js (Node.js) data web app to Azure App Service from Visual Studio Code.
+In this Learn module, you'll migrate a web app with MongoDB to Azure. Azure CosmosDB API for MongoDB provides a MongoDB compatible layer. You can use your favorite npm client packages for MongoDB and store your data on Azure.
 
 ## Example scenario
 
@@ -16,11 +16,12 @@ The entire source code is provided as part of this module. You won't be required
 
 You'll deploy an Express.js app which stores data in Cosmos DB for the MongoDB API, then configure the Azure App Service and deploy to Azure:
 
-- Use the free Learn sandbox subscription and resource group.
-- Create a Cosmos DB database with Visual Studio Code
-- Use the local emulator for Cosmos DB
-- Upload JSON data into the database with Visual Studio Code
-- Deploy the data web app from your local computer with Visual Studio Code.
+- Use the free Learn sandbox subscription - no credit card neede.
+- Run the sample application on your local computer
+- Integrate the MongoDB code with the sample application
+- Create a Cosmos DB database
+- Configure the App Service to connect to your CosmosDB database
+- Deploy the web app from your local computer with Visual Studio Code.
 - Analyze the database.
 
 ## What is the main goal?
