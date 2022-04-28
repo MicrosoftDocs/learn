@@ -50,8 +50,8 @@ units:
 - learn.azure.cloud-adoption-framework-security.customer-narrative
 - learn.azure.cloud-adoption-framework-security.methodologies
 - learn.azure.cloud-adoption-framework-security.security-roles-responsibilities
-- learn.azure.cloud-adoption-framework-security.simplifying-compliance-security
-- learn.azure.cloud-adoption-framework-security.simplifying-security-implementation
+- learn.azure.cloud-adoption-framework-security.simplify-compliance-security
+- learn.azure.cloud-adoption-framework-security.simplify-security-implementation
 - learn.azure.cloud-adoption-framework-security.security-tools-policies
 - learn.azure.cloud-adoption-framework-security.summary
 badge:

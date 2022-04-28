@@ -3,7 +3,7 @@ Looking back at the Tailwind Traders narrative, the customer chose a "start smal
 There are several tools and controls available to help you quickly achieve a security baseline. These tools include:
 
 - [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction): provides the tools needed to harden your resources, track your security posture, protect against cyber-attacks, and streamline security management.
-- [Azure Active Directory](/security/benchmark/azure/baselines/aad-security-baseline) (AAD): The default identity and access management service. Azure AD provides an identity secure score to help you assess identity security posture relative to Microsoft’s best practice recommendations.
+- [Azure Active Directory](/security/benchmark/azure/baselines/aad-security-baseline): The default identity and access management service. Azure AD provides an identity secure score to help you assess identity security posture relative to Microsoft’s best practice recommendations.
 - [Microsoft Sentinel](/azure/sentinel/overview): a cloud-native SIEM that provides intelligent security analytics for your entire enterprise, powered by AI.
 - [Azure DDoS standard protection plan](/azure/ddos-protection/ddos-protection-overview) (optional): provides enhanced DDoS mitigation features to defend against DDoS attacks
 - [Azure Firewall](/azure/firewall/overview): a cloud-native and intelligent network firewall security service that provides the best of breed threat protection for your cloud workloads running in Azure.
@@ -22,7 +22,7 @@ The CISO would like to achieve the following from the customer narrative:
 
 If these objectives align to your organization, or if you have other drivers to increase access controls, the following should be factored into your security baseline:
 
-- Implement AAD to enable strong credentials
+- Implement Azure Active Directory to enable strong credentials
 - Add Intune for device security
 - Add PIM for privileged accounts to move closer to a zero-trust world
 - Implement sound network segmentation using a hub/spoke model with break glass controls and firewall controls between application landing zones
