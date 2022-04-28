@@ -4,91 +4,46 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Knowledge check for intro to Azure DNS Private Resolver."
   ms.date: 4/26/2022
   author: ricmmartins
   ms.author: ricmart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in a Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "A financial company is building a system to let brokers trade financial instruments. The system must monitor market conditions, detect changes, and execute trades. It will need to handle a large volume of transactions quickly. The faster it completes trades, the more of an advantage the company will have over its competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
-###
-###########################################################################
+durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which of the following statements accurately describes Azure DNS Private Resolver?"
     choices:
-    - content: ""
+    - content: "Is a service to resolve DNS queries from on-premises to Azure."
+      isCorrect: false
+      explanation: "Incorrect: Azure DNS Private Resolver is used to resolve DNS queries, but this isn't the best description for the service."
+    - content: "Azure DNS Private Resolver is a PaaS DNS service to resolve and conditionally forward DNS queries from a virtual network, on-premises, and to other target DNS servers without the need to create and manage a custom DNS solution."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct: This is the statement that best describes Azure DNS Private Resolver"
+    - content: "Azure DNS Private Resolver is a DNS management tool."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect: Azure DNS Private Resolver isn't a DNS management tool."
+  - content: "What is the best description for Ruleset?"
     choices:
-    - content: ""
+    - content: "Ruleset can be understood as a group of forwarding rules."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct: This is exactly the definition of Ruleset."
+    - content: "Ruleset is the definition of DNS Policies you can use within Azure DNS."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect: This isn't the definition of a Ruleset."
+    - content: "A Ruleset contains matching domain with target DNS server IP addresses."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect: The Forwarding rules are what contains matching domain with target DNS server IP addresses "
+  - content: "What the DNS resolver's outbound endpoint does?"
     choices:
-    - content: ""
+    - content: "Provides naming resolution for Azure endpoints."
+      isCorrect: false
+      explanation: "Incorrect: This isn't what the DNS resolver's outbound does."
+    - content: "It receives the name resolution request from Azure & on-premises network and resolve names."
+      isCorrect: false
+      explanation: "Incorrect: This is what the Inbound Endpoint does."
+    - content: The DNS resolver’s outbound endpoint conditionally forwards the request to on-premises or other target DNS servers."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Correct: This is an accurate explanation of what the DNS resolver's outbound endpoint does."
