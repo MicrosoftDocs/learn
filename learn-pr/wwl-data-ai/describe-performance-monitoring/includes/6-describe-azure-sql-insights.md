@@ -19,7 +19,7 @@ Lastly, you can access performance data from the SQL Insights workbook template,
 
 To get started with SQL Insights, from the **Monitor** blade, select **SQL (preview)**, and then **Create new profile**.
 
-:::image type="content" source="../media/module-44-optimize-resources-final-15.png" alt-text="SQL Insights page":::
+:::image type="content" source="../media/module-44-optimize-resources-final-15.png" alt-text="Screenshot of the SQL Insights page.":::
 
 From the **Create new profile** page, configure the following components:
 
@@ -31,11 +31,11 @@ From the **Create new profile** page, configure the following components:
 
 After you're done, select **Create monitoring profile**.
 
-:::image type="content" source="../media/module-44-optimize-resources-final-15_1.png" alt-text="Create new profile page for SQL Insights":::
+:::image type="content" source="../media/module-44-optimize-resources-final-15-1.png" alt-text="Screenshot of the create new profile page for SQL Insights.":::
 
 Back to the **SQL (preview)** page, select the **Manage profile** tab, and then **Add monitoring machine**.
 
-:::image type="content" source="../media/module-44-optimize-resources-final-15_2.png" alt-text="Add monitoring machine on SQL Insights main page":::
+:::image type="content" source="../media/module-44-optimize-resources-final-15-2.png" alt-text="Screenshot of the add monitoring machine on SQL Insights main page.":::
 
 >[!NOTE]
 >Make sure you have a dedicated virtual machine created before proceed to the next step. At this time, the only supported virtual machine OS is Ubuntu 18.04.
@@ -45,7 +45,7 @@ On the **Add monitoring virtual machine** page, ensure you select the virtual ma
 - Set permissions for SQL accounts
 - Create firewall and networking rules for SQL resource or virtual machine
 
-:::image type="content" source="../media/module-44-optimize-resources-final-15_3.png" alt-text="Add monitoring virtual machine page SQL Insights":::
+:::image type="content" source="../media/module-44-optimize-resources-final-15-3.png" alt-text="Screenshot of the add monitoring virtual machine page for SQL Insights.":::
 
 To learn more about how to enable SQL Insights, see [Enable SQL insights (preview)](/azure/azure-monitor/insights/sql-insights-enable).
 
