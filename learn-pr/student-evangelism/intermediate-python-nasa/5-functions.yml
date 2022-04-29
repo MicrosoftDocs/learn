@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Chunk code into functions for easy reusability and readability
   description: Learn about functions in Python.
   ms.date: 06/25/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
