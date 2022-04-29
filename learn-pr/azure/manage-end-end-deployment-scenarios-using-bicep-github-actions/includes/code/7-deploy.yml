@@ -111,14 +111,14 @@ jobs:
   deploy-database:
     needs: deploy
     environment: ${{ inputs.environmentType }}
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/download-artifact@v2
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - uses: azure/sql-action@v1
+    - uses: azure/sql-action@v1.2
       name: Deploy DACPAC to database
       with:
         server-name: ${{ needs.deploy.outputs.sqlServerFullyQualifiedDomainName }}
@@ -130,7 +130,7 @@ jobs:
     - deploy
     - deploy-database
     environment: ${{ inputs.environmentType }}
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - uses: azure/login@v1
@@ -138,7 +138,7 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - if: inputs.environmentType != 'Production'
-      uses: azure/sql-action@v1
+      uses: azure/sql-action@v1.2
       name: Add test data to database
       with:
         server-name: ${{ needs.deploy.outputs.sqlServerFullyQualifiedDomainName }}

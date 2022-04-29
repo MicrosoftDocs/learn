@@ -166,8 +166,6 @@ In this section, you define the steps that are required to deploy the database c
 
    :::code language="yaml" source="code/7-deploy.yml" range="111-126" :::
 
-   Notice that this job uses a Windows runner. Currently, the `azure/sql-action` job requires the Windows operating system to run.
-
 1. Below the job you just added, and above the *smoke-test* job, define a new job to seed the database with sample data.
 
    :::code language="yaml" source="code/7-deploy.yml" range="128-146" :::
@@ -178,7 +176,7 @@ In this section, you define the steps that are required to deploy the database c
 
    :::code language="yaml" source="code/7-deploy.yml" range="148-166" :::
 
-   Notice that this job uses an Ubuntu runner, because the `azure/cli` action requires Linux to run. This workflow is a good example of using a variety of operating systems to achieve your requirements.
+   Notice that this job uses an Ubuntu runner, because the `azure/cli` action requires Linux to run. But the `build-database` job you defined earlier uses a Windows runner to build the database project. This workflow is a good example of using a variety of operating systems to achieve your requirements.
 
 ## Update the dependencies for the smoke test job
 
