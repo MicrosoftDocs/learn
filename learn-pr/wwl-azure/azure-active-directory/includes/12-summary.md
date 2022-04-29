@@ -1,4 +1,4 @@
-Azure AD helps you manage access to your organization's resources by providing access rights to a single user, to an entire Azure AD group, or to specific administrative units.
+Azure AD helps you give access to your organization's resources by providing access rights to a single user, to an entire Azure AD group, or to specific administrative units.
 
 You should now be able to:
 
@@ -8,7 +8,7 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following articles:
+You can learn more by reviewing the following:
 
  -  [Secure your identities by using Azure Active Directory](/learn/modules/intro-to-azure-ad/)
  -  [Manage users and groups in Azure Active Directory](/learn/modules/manage-users-and-groups-in-aad/)
