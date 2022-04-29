@@ -1,12 +1,14 @@
-Identify an application that supports SAML-based single sign-on and add it from the application gallery to the Azure AD tenant.
+Identify an application that supports SAML-based single sign-on and add it to the tenant.
 
-A team asked for a new application to be added to help with company promotion. The application needs to be made available to team members as appropriate. To make the application available to the employees, the Azure AD application gallery is located, then after searching for the requested application and identifying whether it supports single sign-on, it is added to the Azure AD tenant.
+A team asked for a new application to be added to help with company promotion. The application needs to be made available to team members as appropriate. To make the requested application available to the employees, it is located in the gallery and if it supports single sign-on, it is added to the Azure Active Directory (Azure AD) tenant, the identity provider.
 
-Employees in the retail company likely already have an account in the Azure AD tenant for the organization and will eventually be assigned to the application. But, for the purpose of testing single sign-on for the application, the administrator creates a test account for testing purposes and after successful testing, rolls the application out to the employees.
+Employees in the retail company likely already have an account in the tenant for the organization and will eventually be assigned to the application. But, for the purpose of testing single sign-on for the application, the administrator creates a user account for testing purposes and after successful testing, rolls the application out to the employees.
 
 ## Locate the Azure AD application gallery
 
-Azure AD has a gallery that contains thousands of pre-integrated applications. Many of the applications that the retail company uses are probably already in the gallery. If an application is added to the company's Azure AD tenant, properties can be configured for it, user access can be managed, and single sign-on can be set up so that the employees can sign in to it with their Azure AD credentials.
+Azure AD has a gallery that contains thousands of pre-integrated applications. Many of the applications that the retail company uses are probably already in the gallery. If an application is added to the company's tenant, properties can be configured for it, user access can be managed, and single sign-on can be set up so that the employees can sign in to it with their Azure AD credentials.
+
+In this module, the **Azure AD SAML Toolkit** application represents the application that was requested by the team in the organization to help with company promotion.
 
 ### Access the Azure AD tenant
 
@@ -49,7 +51,7 @@ Federated single sign-on support can be identified by looking for the **Federate
 
 ## Assign a test user account to the application
 
-To test the single sign-on configuration between Azure AD and the application host, user accounts need to be created at both locations and assigned to the application.
+To test the single sign-on configuration between the identity provider and the service provider, user accounts need to be created at both locations and assigned to the application.
 
 ### Create a test user account
 

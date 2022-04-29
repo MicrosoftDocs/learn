@@ -1,112 +1,52 @@
-<!-- 1. Article sentences --------------------------------------------------------------------------------
+Register the user account that you created and assigned in the Azure AD tenant, and configure single sign-on for the account.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+## Register a new user account
 
-    Heading: none
+Matching accounts must be created in both the Azure portal and at the application host. Some applications in the gallery can be configured directly, but others require a request be made to the application support team to do the configuration.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+In this module, the **Azure AD SAML Toolkit** application represents an application that was requested by a team in the organization to help with productivity. This application has been set up to allow the administrator to register user accounts and configure single sign-on without having to contact the support team.
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
+To register a user account with the **Azure AD SAML Toolkit** application:
 
-TODO: add your article sentences
+1. Open a new browser window and browse to the sign-in URL for the application. For the **Azure AD SAML Toolkit** application, the address is `https://samltoolkit.azurewebsites.net`.
+1. Select **Register** in the upper right corner of the page.
 
-<!-- 2. Scenario subtask --------------------------------------------------------------------------------
+    :::image type="content" source="../media/toolkit-register.png" alt-text="Screenshot showing where to register a new user account at the application host." border="true":::
 
-    Goal: Describe the part of the scenario covered in this exercise
+1. For **Email**, enter the email address of the user that will access the application. For example, the user account that was created that uses the address of `contosouser1@contoso.com`. Be sure to change `contoso.com` to the domain of the Azure AD tenant where the application is located.
+1. Enter a **Password** and confirm it.
+1. Select **Register**.
 
-    Heading: a separate heading is optional; you can combine this with the article sentence into a single paragraph
+## Configure single sign-on
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+Use the values that were recorded in the previous unit to configure single sign-on at the application host.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
+To configure SAML setting for the application:
 
-TODO: add your scenario subtask
-TODO: add your scenario image
+1. Signed in with the credentials of the user account that you created, select **SAML Configuration** at the upper-left corner of the page.
+1. Select **Create** in the middle of the page.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+    :::image type="content" source="../media/saml-config-host.png" alt-text="Screenshot showing where to configure single sign-on at the application host." border="true":::
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+1. For **Login URL**, **Azure AD Identifier**, and **Logout URL**, enter the values that you recorded earlier.
+1. Select **Choose file** to upload the certificate that you previously downloaded.
+1. Select **Create**.
 
-    Heading: a separate heading is optional; you can combine this with the subtask into a single paragraph
+    :::image type="content" source="../media/saml-add-urls-host.png" alt-text="Screenshot showing the URLs to add for single sign-on at the application host." border="true":::
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+1. Copy the values of the **SP Initiated Login URL** and the **Assertion Consumer Service (ACS) URL** to be used in the next section.
 
-    Optional: a video that shows the end-state
--->
+    :::image type="content" source="../media/saml-record.png" alt-text="Screenshot showing the URLs to record for single sign-on in the Azure AD tenant." border="true":::
 
-TODO: describe the end-state
+## Update values in the Azure AD tenant
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+The temporary values that were previously defined for **Reply URL (Assertion Consumer Service URL)** and **Sign on URL** in the Azure AD tenant need to be replaced with values from the application host.
 
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+1. Sign in to the [Azure portal](https://portal.azure.com/) using one of the roles listed in the prerequisites.
+1. Select **Identity**, and then select **Azure Active Directory**.
+1. On the **Azure Active Directory** pane, under **Manage**, select **Enterprise applications**.
+1. In the **Search application** box, enter **Azure AD SAML Toolkit**, and then select the application in the list.
+1. Select **Single sign-on**, and then select **Edit** in the **Basic SAML Configuration** box.
+1. For **Reply URL (Assertion Consumer Service URL)**, enter the **Assertion Consumer Service (ACS) URL** value that was recorded in the last section.
+1. For **Sign on URL**, enter the **SP Initiated Login URL** value that was recorded in the last section.
+1. Select **Save**.

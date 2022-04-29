@@ -1,12 +1,13 @@
-In this exercise, you’ll learn how to configure single sign-on properties for an application in the Azure portal.
+In this exercise, single sign-on properties are configured for the application in the Azure portal.
 
-To configure single sign-on for the application in the Azure portal:
+To configure single sign-on for the application:
 
 - Define the URLs that are used to access the application
 - Define any attributes or claims that are needed by the application
 - Download a SAML signing certificate
+- Record the single sign-on settings to use at the application host
 
-## Define URLS
+## Define URLs
 
 Define values for the single sign-on properties in the Azure portal.
 
@@ -31,14 +32,9 @@ Search for the application that you added in the previous unit.
     :::image type="content" source="../media/saml-selection.png" alt-text="Screenshot showing the selection of SAML as the single sign-on method." border="true":::
 
 1. In the **Basic SAML Configuration** box, select **Edit**.
-1. Specify the **Identifier (Entity ID)**. For this application the identifier is `https://samltoolkit.azurewebsites.net`.
-
-    :::image type="content" source="../media/saml-identifier.png" alt-text="Screenshot showing the SAML identifier." border="true":::
-
-    A value is provided that follows a suggested pattern. Each application in the gallery has a unique set of suggested patterns for URLs.
-
-1. Specify the **Reply URL (Assertion Consumer Service URL)**. The value entered at this point in the configuration process is only temporary, you will come back to this property and revise the value. For this application, the URL is `https://samltoolkit.azurewebsites.net/SAML/Consume`.
-1. Specify the **Sign on URL** - Used to perform service provider-initiated single sign-on. This value is the sign-in page URL for your application. This field is unnecessary if you want to perform identity provider-initiated single sign-on.
+1. Specify the **Identifier (Entity ID)**. A value is provided that follows a suggested pattern. Each application in the gallery has a unique set of suggested patterns for URLs.
+1. Specify the **Reply URL (Assertion Consumer Service URL)**. The value entered at this point in the configuration process is only temporary, you will come back to this property and revise the value.
+1. Specify the **Sign on URL** - Used to perform service provider-initiated single sign-on. This value is the sign-in page URL for your application. The value entered at this point in the configuration process is only temporary, you will come back to this property and revise the value. This field is unnecessary if you want to perform identity provider-initiated single sign-on.
 
     :::image type="content" source="../media/saml-url-temp.png" alt-text="Screenshot showing the temporary URLs that are defined for the application." border="true":::
 
@@ -53,14 +49,25 @@ As the administrator of the application, you want to control access based on the
 1. Enter the name of the claim. The value doesn't strictly need to follow a URI pattern, per the SAML spec. If you need a URI pattern, you can put that in the Namespace field. For this exercise, enter `department`.
 1. Enter the namespace for the claim. For example, `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/`.
 1. Select the **Source** where the claim is going to retrieve its value. You can select a user attribute from the source attribute dropdown or apply a transformation to the user attribute before emitting it as a claim. For this exercise, select `user.department`.
-1. Select **Save**.
 
     :::image type="content" source="../media/saml-dept-claim.png" alt-text="Screenshot showing the addition of a department claim." border="true":::
 
+1. Select **Save**.
+
 ## Download the certificate
+
+For this exercise a certificate is being downloaded that will then be uploaded at the application host. In some instances, the **App Federation Metadata Url** may be required.
 
 1. In the **SAML Signing Certificate** box, select **Download for Certificate (Raw)** to download the SAML signing certificate and save it to be used later.
 
     :::image type="content" source="../media/saml-cert-download.png" alt-text="Screenshot showing where to download the signing certificate." border="false":::
 
 1. You may be asked to verify the download, if so, select **Keep**.
+
+## Record the single sign-on properties
+
+Applications in the gallery can require different URLs and identifiers. Refer to the integration guide for an application to know which values are required.
+
+1. For this exercise, you don't need the values in the **Set up Azure AD SAML Toolkit** box for configuration at the application host. But, for other applications in the gallery, the **Identifier (Entity ID)**,
+**Reply URL (Assertion Consumer Service URL)**, and **Sign on URL** may be needed when configuring single sign-on at the application host.
+1. For this exercise, you need the values of **Login URL**, **Azure AD Identifier**, and **Logout URL**. Other applications in the gallery may require any combination of these to configure single sign-on at the application host.
