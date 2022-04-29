@@ -8,11 +8,11 @@ In this module, you'll learn about monitoring, troubleshooting, and diagnosing p
 
 In this module, you will:
 
-- Identify the tools used to troubleshoot issues with Azure storage
+- Identify the tools used to troubleshoot issues with Azure Storage
 - Identify the metrics and logs that can be used to troubleshoot and diagnose storage performance
-- Troubleshoot a performance issue in Azure storage
+- Troubleshoot a performance issue in Azure Storage
 
 ## Prerequisites
 
-- Basic familiarity with Azure storage
+- Basic familiarity with Azure Storage
 - Ability to install software locally for troubleshooting purposes

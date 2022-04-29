@@ -2,7 +2,7 @@ Storage Analytics logging records each operation performed in your storage accou
 
 In the example scenario, you've decided that you need to trace each file upload and download operation done against the new Customer Portal. Azure Storage Analytics logging provides an ideal way to capture this information.
 
-In this unit, you'll learn about Storage Analytics logging. You'll see how to enable logging, the different types of information captured when you enable logging, and how you might use this information to detect problems that might occur when an application uses Azure storage.
+In this unit, you'll learn about Storage Analytics logging. You'll see how to enable logging, the different types of information captured when you enable logging, and how you might use this information to detect problems that might occur when an application uses Azure Storage.
 
 ## Azure Storage Analytics logging
 
