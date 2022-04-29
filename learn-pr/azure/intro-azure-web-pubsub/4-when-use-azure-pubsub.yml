@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-azure-web-pubsub.when-use-azure-pubsub
+title: When to use Azure Web PubSub
+metadata:
+  title: When to use Azure Web PubSub
+  description: In this unit, we'll learn when to use Azure Web PubSub and how it can make your application awesome.
+  author: saifeemustafaq
+  ms.author: msaifee
+  ms.date: 03/31/2022
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-when-use-azure-pubsub.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which is true about Azure Web PubSub?"
+      choices:
+        - content:
+            "Azure Web PubSub is best suited for scenarios requiring real-time
+            applications"
+          isCorrect: true
+          explanation:
+            "Correct. Azure Web PuSub is useful when an application requires
+            real-time publish-subscribe messaging service."
+        - content:
+            "Azure Web PubSub requires you to configure and set up the infrastructure
+            from scratch before using the service."
+          isCorrect: false
+          explanation:
+            "Incorrect! Azure Web PubSub works with serverless applications as
+            well as server-based applications, hence infrastructure isn't a mandatory requirement, it is optional."
+        - content: "You can't use REST API with Azure Web PubSub"
+          isCorrect: false
+          explanation:
+            "Incorrect. Azure Web PubSub service provides REST API to enable
+            applications to post messages to clients connected, in any REST
+            capable programming languages."

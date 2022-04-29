@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-azure-web-pubsub.what-azure-web-pubsub
+title: What is Azure Web PubSub
+metadata:
+  title: What is Azure Web PubSub
+  description: In this unit, we understand what Azure PubSub is and why we should use it.
+  author: saifeemustafaq
+  ms.author: msaifee
+  ms.date: 03/31/2022
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-azure-web-pubsub.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+    - content: "Azure Web PubSub isn't suitable for small scale applications."
+      choices:
+        - content: "True"
+          isCorrect: false
+          explanation:
+            "Incorrect. Azure Web PubSub is suitable for large scale and
+            small scale requirements."
+        - content: "False"
+          isCorrect: true
+          explanation:
+            "Correct! Azure Web PubSub is suitable for large scale and
+            small scale requirements."
+    - content: "Azure Web PubSub supports a wide variety of client SDKs and programming languages"
+      choices:
+        - content: "True"
+          isCorrect: true
+          explanation: "Correct! Azure Web PubSub supports a wide variety of client SDKs and programming languages"
+        - content: "False"
+          isCorrect: false
+          explanation: "Incorrect. Azure Web PubSub supports a wide variety of client SDKs and programming languages"
