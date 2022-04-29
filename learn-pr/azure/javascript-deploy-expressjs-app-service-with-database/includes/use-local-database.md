@@ -1,4 +1,4 @@
-In this unit, setup the local development environment for an Express.js app integrated with MongoDB.
+In this unit, setup the local development environment for an Express.js app integrated with MongoDB. While it isn't required that you have a local database when using Azure Cosmos DB API for MongoDB, it is a common practice. 
 
 ## Developing with local or remote databases
 
@@ -11,23 +11,7 @@ You can develop your Express.js application without the need for cloud resources
 To develop the Express.js app with integration to a MongoDB database, your local development environment needs to have:
 
 * Node.js and Visual Studio Code.
-* Local MongoDB data storage. 
-    * For Windows, use the Cosmos DB emulator.
-    * For macOS/Linux, use the MongoDB dev container. This requires Docker. 
-
-## Windows - Cosmos DB emulator
-
-For Windows operating system users, use the Cosmos DB emulator. You can upload data into the emulator, work with the data from your Express.js via a connection string, and [migrate data](https://github.com/azure/azure-documentdb-datamigrationtool) from the emulator to Cosmos DB when you are ready. 
-
-### How does the Cosmos DB emulator work?
-
-The Azure Cosmos DB Emulator provides a high-fidelity emulation of the Azure Cosmos DB service. It supports equivalent functionality as the Azure Cosmos DB, which includes creating data, querying data, provisioning and scaling containers. 
-
-Functionality that relies on the Azure infrastructure like global replication, single-digit millisecond latency for reads/writes, and tunable consistency levels are not applicable when you use the emulator.
-
-### Moving data between the emulator and Cosmos DB
-
-If you need to move data between the local emulator and Cosmos DB, use the [Azure Cosmos DB Data Migration Tool](https://github.com/azure/azure-documentdb-datamigrationtool). 
+* Local MongoDB data storage with MongoDB dev container. This requires Docker. 
 
 ## macOS/Linux - MongDB dev container
 
@@ -36,8 +20,6 @@ For macOS and Linux users, use dev containers on your local computer. The Visual
 You can start up the container from Visual Studio Code, with the [Remote - Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers). 
 
 You can upload data into the MongoDB server on the dev container, work with the data from your Express.js via a connection string, and [migrate data](https://github.com/azure/azure-documentdb-datamigrationtool) from the container to Cosmos DB when you are ready.
-
-Use the Azure Cosmos DB emulator while you locally develop your JavaScript application. 
 
 ## Adding MongoDB to an Express.js app
 

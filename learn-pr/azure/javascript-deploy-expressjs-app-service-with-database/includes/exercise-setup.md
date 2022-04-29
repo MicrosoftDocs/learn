@@ -62,7 +62,7 @@ In Visual Studio Code, install the following extensions:
 * [Azure Databases](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
 * [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) - used to provide your local computer with a database in a container
 
-## Create App Service and other web resources
+## Create Azure resources
 
 Create your web app resources. The database resource creation is handled in a later unit. 
 
