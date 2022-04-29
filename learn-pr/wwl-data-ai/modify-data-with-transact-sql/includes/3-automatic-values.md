@@ -40,7 +40,7 @@ VALUES
 ('Clearance Sale', '01/01/2021', 23, 0.10, '10% discount')
 ```
 
-Note, even though the VALUES clause doesn't include a value for the **PromotionID** column, you don't need to specify a column list in the INSERT clause - Identity columns are exempt from this requirement.
+Notice that even though the VALUES clause doesn't include a value for the **PromotionID** column, you don't need to specify a column list in the INSERT clause - Identity columns are exempt from this requirement.
 
 If this row is the first one inserted into the table, the result is a new row like this:
 
