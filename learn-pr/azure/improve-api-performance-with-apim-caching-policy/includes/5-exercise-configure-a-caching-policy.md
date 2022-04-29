@@ -1,6 +1,6 @@
-When you host APIs using Azure API Management, you can modify their behavior without rewriting code, by using policies.
+When you host APIs with Azure API Management, you can modify API behavior without rewriting code, by using policies.
 
-So, as the developer for a board game company, you decide to implement caching for the Board Pricing API. You first need to add the API to Azure API Management and then write your caching policies. We'll do this in the next exercise.
+Now, as the developer for a board game company, you decide to implement caching for the Board Pricing API. You first need to add the API to Azure API Management and then write your caching policies. We'll do this in the next exercise.
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -9,11 +9,11 @@ So, as the developer for a board game company, you decide to implement caching f
 
 ## Create a Redis cache
 
-We're using the Consumption tier for Azure API Management for this module. That's because Azure configures API Management instances for that tier in just a minute or so. Other tiers can take up to 30 minutes.
+We'll use the Consumption tier for Azure API Management for this module. That's because Azure configures API Management instances for that tier in just a minute or so. Other tiers can take up to 30 minutes.
 
-The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. It is a tier that has no internal cache. We instead must create an external Redis cache and then configure a caching policy for API Management to use.
+The Consumption tier in API Management is intended for organizations that prefer to build APIs on serverless principles. It is a tier that has no internal cache. We must create an external Redis cache and then configure a caching policy for API Management to use it.
 
-Let's create a cache now. Doing this will allow the setup to run behind the scenes while we work on other steps:
+Let's now create a cache. This will allow the setup to run behind the scenes while we work on other steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Use the same ID that you used to activate the sandbox.
 
