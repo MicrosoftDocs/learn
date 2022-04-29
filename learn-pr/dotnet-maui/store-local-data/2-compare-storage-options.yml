@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.store-local-data.compare-storage-options
+title: Compare storage options
+metadata:
+  unitType: unit
+  title: "Compare storage options"
+  description: "Describe the options available for storing data locally in a .NET MAUI application"
+  ms.date: 04/29/2022
+  author: codemillmatt 
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 10 
+content: |
+  [!include[](includes/2-compare-storage-options.md)]
+quiz:
+  questions:
+  - content: "Suppose you're building a .NET MAUI application for iOS that enables users to create music. You want users to be able save their work to a file so that they can restart the application and continue working where they left off. In the iOS app sandbox, to which folder would you save this file?"
+    choices:
+    - content: "Music"
+      isCorrect: false
+      explanation: "No. The App Sandbox doesn't include a Music folder by default. Instead you need to use a system provided folder."
+    - content: "Documents"
+      isCorrect: true
+      explanation: "This is the correct answer, you use the Documents folder to store user generated content."
+    - content: "Library"
+      isCorrect: false
+      explanation: "No.The Library folder is designed to store app-generated data. The music content is data that the user specifically asks to save. You would use the Library folder for files created without any direct action from the user. Use the Documents folder for this scenario."
+  - content: "Suppose you want to store a small piece of data so that it's accessible between application launches. Which data storage option is the most appropriate?"
+    choices:
+    - content: "Preferences."
+      isCorrect: true
+      explanation: "This is the correct answer. Preferences are used to store data as key-value pairs. This location is a great place for simple bits of data."
+    - content: "File system"
+      isCorrect: false
+      explanation: "No. Use the file system to store raw files like XML or text files. For this scenario, use Preferences."
+    - content: "Relational database"
+      isCorrect: false
+      explanation: "No. A relational database is best used to store complex data where there are relationships between data items. For this scenario, use Preferences."
