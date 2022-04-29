@@ -75,7 +75,7 @@ import-order-style = pep8
 
 When you've configured Visual Studio Code to lint your code, you can open any code file to review the lint results. Any warnings or errors will be underlined. You can select **View problem** to inspect the issue to understand the error.
 
-![Screenshot of Flake8 results in Visual Studio Code.](../media/05-03-flake-8-result.png)
+![Screenshot of Flake 8 results in Visual Studio Code.](../media/05-03-flake-8-result.png)
 
 ### Lint with Azure Pipelines or GitHub Actions
 
