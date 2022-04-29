@@ -4,13 +4,13 @@ title: Examine failover clustering
 metadata:
   title: Examine failover clustering
   description: "Examine failover clustering"
-  ms.date: 10/21/2021
+  ms.date: 04/29/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 9
+durationInMinutes: 6
 content: |
   [!include[](includes/4-examine-failover-clustering.md)]

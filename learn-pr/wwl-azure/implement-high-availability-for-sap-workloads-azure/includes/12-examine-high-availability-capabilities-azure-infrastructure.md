@@ -35,10 +35,9 @@ Availability Sets can be used in the following scenarios in SAP systems:
  -  High-availability architecture for an SAP ASCS/SCS instance on Windows &amp; Linux
  -  High-availability DBMS instance
 
-> [!IMPORTANT]
-> -  Availability Sets can have 2 or 3 Fault domains; know when to use each (match your application topology).
-> -  Know the difference in SLA between Availability Set clusters, non-Availability Set clusters, and Availability Zones.
-> -  Be sure to understand the interplay with Proximity Placement Groups.
+ -  Availability Sets can have 2 or 3 Fault domains; know when to use each (match your application topology).
+ -  Know the difference in SLA between Availability Set clusters, non-Availability Set clusters, and Availability Zones.
+ -  Be sure to understand the interplay with Proximity Placement Groups.
 
 ## Single-VM scenario
 
