@@ -2,7 +2,7 @@ One holistic way of monitoring server performance is to evaluate what the server
 
 Detecting and troubleshooting SQL Server performance issues require an understanding of how wait statistics work, and how the database engine uses them while processing a request.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-18.png" alt-text="How wait statistics work":::
+:::image type="content" source="../media/module-55-optimize-queries-final-18.png" alt-text="Screenshot of how wait statistics work.":::
 
 Wait statistics are broken down into three types of waits: **resource waits**, **queue waits**, and **external waits**.
 
@@ -16,7 +16,7 @@ These system views allow the DBA to get an overview of the performance of the se
 
 Wait statistics are evaluated as a percentage of the total waits on the server.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-17.png" alt-text="Top 10 Waits on a SQL Server by Percentage":::
+:::image type="content" source="../media/module-55-optimize-queries-final-17.png" alt-text="Screenshot of the top 10 waits by percentage.":::
 
 The result of this query from `sys.dm_os_wait_stats` shows the wait type, and the aggregation of percent of time waiting (*Wait Percentage* column) and the average wait time in seconds for each wait type.
 

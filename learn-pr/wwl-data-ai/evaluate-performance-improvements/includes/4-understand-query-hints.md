@@ -60,7 +60,7 @@ The Query Store hints feature in Azure SQL Database provides a simple method for
 
 Query Store hints are useful when the query optimizer doesn't generate an efficient execution plan, and when the developer or DBA can't modify to the original query text. In some applications, the query text may be hardcoded or automatically generated.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-19.png" alt-text="How wait Query Store hints work":::
+:::image type="content" source="../media/module-55-optimize-queries-final-19.png" alt-text="Screenshot of how Query Store hints work.":::
 
 To use Query Store hints, you need to identify the Query Store *query_id* of the query statement you wish to modify through Query Store catalog views, built-in Query Store reports, or Query Performance Insight for Azure SQL Database. Then, execute `sp_query_store_set_hints` with the *query_id* and query hint string you wish to apply to the query.
 
