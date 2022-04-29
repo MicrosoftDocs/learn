@@ -7,7 +7,7 @@ During the meeting, some new questions arose as the discussion moves toward clou
 > [!div class="checklist"]
 > * What types of Azure subscriptions are available?
 > * How do we purchase Azure services?
-> * Does location or network traffic affect cost?
+> * Does location or network traffic effect cost?
 > * What other factors affect the final cost?
 > * How can we get a more detailed estimate of the cost to run on Azure?
 
