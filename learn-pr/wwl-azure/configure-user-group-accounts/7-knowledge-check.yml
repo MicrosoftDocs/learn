@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Contributor"
       isCorrect: true
-      explanation: "That's correct. Contributor grants full access to manage all resources, but cannot assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries."
+      explanation: "Correct. Contributor grants full access to manage all resources, but cannot assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries."
     - content: "Owner"
       isCorrect: false
-      explanation: "That's incorrect. Owner grants full access to manage all resources, including the ability to assign roles in Azure RBAC."
+      explanation: "Incorrect. Owner grants full access to manage all resources, including the ability to assign roles in Azure RBAC."
     - content: "Reader"
       isCorrect: false
-      explanation: "That's incorrect. Reader can view all resources, but cannot make any changes."
+      explanation: "Incorrect. Reader can view all resources, but cannot make any changes."
   - content: "What type of user account would be created to allow an external organization easy access?"
     choices:
     - content: "A Contributor user account for each member of the team."
       isCorrect: false
-      explanation: "That's incorrect. Contributor is a type of role and not a type of user account."
+      explanation: "Incorrect. Contributor is a type of role and not a type of user account."
     - content: "An administrator account for each member of the team."
       isCorrect: false
-      explanation: "That's incorrect. Administrator accounts should be restricted to a limited number of users responsible for your organization's identity management."
+      explanation: "Incorrect. Administrator accounts should be restricted to a limited number of users responsible for your organization's identity management."
     - content: "A guest user account for each member of the external team."
       isCorrect: true
-      explanation: "That's correct. A guest user account restricts users to just the access they need."
+      explanation: "Correct. A guest user account restricts users to just the access they need."
   - content: "Which Active Directory role will allow a user to manage all the groups in your Teams tenants and be able to assign other administrator roles? ​"
     choices:
     - content: "Global administrator​"
       isCorrect: true
-      explanation: "That's correct. Global Administrator manages all aspects of Azure AD and Microsoft services that use Azure AD identities. This includes managing groups across tenants and assigning other administrator roles."
+      explanation: "Correct. Global Administrator manages all aspects of Azure AD and Microsoft services that use Azure AD identities. This includes managing groups across tenants and assigning other administrator roles."
     - content: "Security administrator​"
       isCorrect: false
-      explanation: "That's incorrect. Security Administrator can read security information and reports, and manage configuration in Azure AD and Office 365."
+      explanation: "Incorrect. Security Administrator can read security information and reports, and manage configuration in Azure AD and Office 365."
     - content: "User administrator​"
       isCorrect: false
-      explanation: "That's incorrect. User Administrator can manage all aspects of users and groups, including resetting passwords for limited admins."
+      explanation: "Incorrect. User Administrator can manage all aspects of users and groups, including resetting passwords for limited admins."
