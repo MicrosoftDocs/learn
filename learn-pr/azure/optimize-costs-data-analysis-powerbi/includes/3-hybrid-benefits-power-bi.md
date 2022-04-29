@@ -8,8 +8,8 @@ The report shows the number of virtual machines that have Azure Hybrid Benefit e
 
 :::image type="content" source="../media/3-windows-server-usage-report.png" alt-text="Screenshot showing the Windows Server A H B usage report." lightbox="../media/3-windows-server-usage-report.png" :::
 
-The report also identifies Windows VMs where Hybrid Benefit is currently **enabled** but there are _less than_ 8 vCPUs. They're shown under **AHB enabled SKUs with less than 8 vCPU (last day)**. In other words, the VMs shown in this area aren't fully using the benefit.
+The report also identifies Windows VMs where Hybrid Benefit is currently **enabled** but there are *fewer than* 8 vCPUs. They're shown under **AHB enabled SKUs with less than 8 vCPU (last day)**. In other words, the VMs shown in this area aren't fully using the benefit.
 
-There might be situations where you intend to use less than 8 vCPUs. However, licenses for VMs in this area are likely good candidates to get replaced by VMs under **SKUs with 8+ vCPUs where AHB not enabled (last day)**. That's because the larger VMs where AHB isn't enabled are much more expensive than smaller ones. In other words, VMs shown in this area *aren't using any benefits at all*. Apply the benefit to your most expensive virtual machines, like those in this area, to maximize your potential savings.
+There might be situations where you intend to use fewer than 8 vCPUs. However, licenses for VMs in this area are likely good candidates to get replaced by VMs under **SKUs with 8+ vCPUs where AHB not enabled (last day)**. That's because the larger VMs where AHB isn't enabled are much more expensive than smaller ones. In other words, VMs shown in this area *aren't using any benefits at all*. Apply the benefit to your most expensive virtual machines, like those in this area, to maximize your potential savings.
 
 :::image type="content" source="../media/3-benefits-usage.png" alt-text="Screenshot showing a section where V M are underused and not enabled." lightbox="../media/3-benefits-usage.png" :::
