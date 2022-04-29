@@ -8,4 +8,4 @@ Now that you've reviewed this module, you should be able to:
 - Identify critical Azure metrics
 - Collect metrics for an established baseline
 - Use extended events for performance analysis
-- Understand Azure SQL Database Intelligent Insights
+- Understand Azure SQL Insights
