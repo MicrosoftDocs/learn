@@ -5,7 +5,7 @@ metadata:
   type: knowledge_check
   title: Azure Container Instances - Knowledge check
   description: Azure Container Instances - Knowledge check
-  ms.date: 03/18/2021 
+  ms.date: 04/27/2022
   author: erjosito
   ms.author: jomore
   ms.topic: interactive-tutorial
@@ -27,10 +27,10 @@ quiz:
       explanation: "While modifying the application is a possibility, init containers offer a much more modular approach."
   - content: "How do sidecar containers communicate with the main application container?"
     choices:
-    - content: "Sidecar containers can communicate with other containers in the same container group using 127.0.0.1 as destination IP address."
+    - content: "Sidecar containers can communicate with other containers in the same container group using 127.0.0.1 as the destination IP address."
       isCorrect: true
       explanation: "Sidecar containers, or containers running in the same container group, share the same IP address and networking stack"
-    - content: "Sidecar containers can use DNS to find out the address of others containers in the container group."
+    - content: "Sidecar containers can use the DNS to find out the address of others containers in the container group."
       isCorrect: false
       explanation: "This is not required, since all containers in a container group share the same networking stack"
     - content: "Not possible, because containers in a container group are isolated from each other."
@@ -41,15 +41,15 @@ quiz:
     - content: "Sidecar containers can be created from the same image as the main application container."
       isCorrect: false
       explanation: "Sidecar containers in one container group can be instantiated from completely different container images."
-    - content: "Sidecar containers can be created from any container image, from any image repository."
+    - content: "Sidecar containers can be created from any container image from any image repository."
       isCorrect: true
       explanation: "Containers in one container group can be instantiated from completely different container images, even from different repositories"
     - content: "Sidecar containers can be created from any container image, but all containers in the container group need to be instantiated from the same image repository."
       isCorrect: false
       explanation: "Containers in one container group can be instantiated from different image repositories."
-  - content: "Which IP address will an Azure Container Instance receive, when deployed in a Virtual Network?"
+  - content: "Which IP address will an Azure Container Instance receive when deployed in a Virtual Network?"
     choices:
-    - content: "The Azure Container Instance will receive a private IP address in the subnet where it is deployed, as well as a public IP address."
+    - content: "The Azure Container Instance will receive a private IP address in the subnet where it is deployed and a public IP address."
       isCorrect: false
       explanation: "The Azure Container Instance will only receive a private IP address, but no public IP address."
     - content: "The Azure Container Instance will receive a public IP address."

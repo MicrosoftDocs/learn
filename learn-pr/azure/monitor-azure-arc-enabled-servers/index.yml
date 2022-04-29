@@ -27,6 +27,7 @@ roles:
 products:
 - azure
 - azure-arc
+- azure-monitor
 units:
 - learn.azure.monitor-azure-arc-enabled-servers.introduction
 - learn.azure.monitor-azure-arc-enabled-servers.deploy-manage-observability-agents-using-vm-extensions-azure-arc-enabled-servers

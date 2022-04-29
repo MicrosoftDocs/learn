@@ -1,6 +1,6 @@
 In the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path, you helped the Tailspin team start their DevOps journey by evaluating their current processes and technologies, and then planning their initial set of tasks on Azure Boards.
 
-In this module, you will help the team with their first task: setting up a continuous integration (CI) pipeline for their app.
+In this module, you'll help the team with their first task: setting up a continuous integration (CI) pipeline for their app.
 
 The Tailspin web team is being pulled in many directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in Ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).
 
