@@ -19,6 +19,6 @@ The productivity level of the employees is much higher and the frustration level
 
 ## References
 
-- [Application integration guides](https://docs.microsoft.com/azure/active-directory/saas-apps/tutorial-list)
-- [Single Sign-On SAML protocol](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol)
-- [Overview of the Azure Active Directory application gallery](https://docs.microsoft.com/azure/active-directory/manage-apps/overview-application-gallery)
+- [Application integration guides](/azure/active-directory/saas-apps/tutorial-list)
+- [Single Sign-On SAML protocol](/azure/active-directory/develop/single-sign-on-saml-protocol)
+- [Overview of the Azure Active Directory application gallery](/azure/active-directory/manage-apps/overview-application-gallery)
