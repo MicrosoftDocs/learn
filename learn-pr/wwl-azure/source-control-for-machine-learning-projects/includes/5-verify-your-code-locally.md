@@ -7,7 +7,7 @@ To verify your scripts, there are two common tasks:
 - **Linting**: Check for programmatic or stylistic errors in Python or R scripts.
 - **Unit testing**: Check the performance of the content of the scripts.
 
-![Verification flow](../media/05-01-verify-flow.png)
+![Diagram of verification flow.](../media/05-01-verify-flow.png)
 
 By verifying your code, you prevent bugs or issues when the model is deployed. You can verify your code locally, by running linters and unit tests locally in an IDE like Visual Studio Code. 
 
@@ -32,7 +32,7 @@ To use Flake8 locally with Visual Studio Code:
 5. Enable Python > Linting > Flake8 Enabled.
 6. Set the Flake8 path to the location in your repo where you stored your `.flake8` file.
 
-![Configure Flake8](../media/05-02-flake-8-configuration.png)
+![Screenshot of configuring Flake8 in Visual Studio Code](../media/05-02-flake-8-configuration.png)
 
 To specify what your team's standards are for code quality, you can configure the Flake8 linter. A common method to define the standards is by creating a `.flake8` file that is stored with your code.
 
@@ -75,7 +75,7 @@ import-order-style = pep8
 
 When you've configured Visual Studio Code to lint your code, you can open any code file to review the lint results. Any warnings or errors will be underlined. You can select **View problem** to inspect the issue to understand the error.
 
-![Flake8 results in Visual Studio Code](../media/05-03-flake-8-result.png)
+![Screenshot of Flake8 results in Visual Studio Code.](../media/05-03-flake-8-result.png)
 
 ### Lint with Azure Pipelines or GitHub Actions
 
@@ -145,7 +145,7 @@ To test your code in Visual Studio Code using the UI:
 6. Configure Python testing by selecting **pytest** and setting the test directory to your `tests/` folder.
 7. Run all tests by selecting the play button and review the results.
 
-![Successful unit test results in Visual Studio Code](../media/04-05-test-results.png)
+![Screenshot of successful unit test results in Visual Studio Code.](../media/04-05-test-results.png)
 
 To run the test in an Azure DevOps Pipeline or GitHub Action:
 

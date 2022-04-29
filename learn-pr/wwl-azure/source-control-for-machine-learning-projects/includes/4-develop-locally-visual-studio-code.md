@@ -24,14 +24,14 @@ When you want to develop your code locally, you'll follow along a typical develo
 
 After installing Visual Studio Code and Git, you can work on a branch of the repo locally. To work with a Git repo, you'll have to use some common Git commands.
 
-![Git development process](../media/04-01-development-overview.png)
+![Diagram of Git development process.](../media/04-01-development-overview.png)
 
 
 Let's assume your full repo is stored in Azure DevOps or GitHub, and you've created a branch off the main repo in one of the two tools. 
 
 To get the URL of the repo, navigate to the repo's top level and select **Clone** in Azure Repos or **Code** in GitHub. Copy the HTTPS URL.
 
-![Git clone code button](../media/04-01-git-clone-url.png)
+![Screenshot of Git clone code button.](../media/04-01-git-clone-url.png)
 
 After opening Visual Studio Code, there are two ways to work with Git:
 
@@ -45,11 +45,11 @@ After opening Visual Studio Code, there are two ways to work with Git:
 
 To get a local copy, you'll have to **clone** the repo to your device using the repo's URL.
 
-![Git clone in command palette](../media/04-02-palette-clone.png)
+![Screenshot of Git clone in command palette of Visual Studio Code.](../media/04-02-palette-clone.png)
 
 Or use the `git clone` command in the integrated terminal.
 
-![Git clone in terminal](../media/04-03-terminal-clone.png)
+![Screenshot of Git clone in terminal of Visual Studio Code.](../media/04-03-terminal-clone.png)
 
 A local copy of the code will be stored on your device. Choose where you want to store the clone and wait until all files have been copied. When ready, you'll be prompted to navigate to the newly copied repo directly. Alternatively, you can open the local folder in Visual Studio Code to open the local copy. 
 
@@ -62,7 +62,7 @@ Once you've cloned the repo to Visual Studio Code, you can edit the code. After 
 
 In Visual Studio Code, you can open the **Source Control** tab to view all changes you've made so far. 
 
-![Source control overview of changes](../media/04-04-staged-change.png)
+![Screenshot of source control overview of changes in Visual Studio Code.](../media/04-04-staged-change.png)
 
 You can commit a change made to a file, like a Python script, by using the **Git: Commit** option in the command palette or by using the `git commit` command. 
 
@@ -76,7 +76,7 @@ You can push all commits with the **Git: Push** option in the command palette, o
 
 Alternatively, you can also push changes using the **Source Control** pane. In Source Control, you'll also get an overview of how many commits will be pushed to your repo.
 
-![Push in Source Control](../media/04-04-push-commits.png)
+![Screenshot of push in source control pane in Visual Studio Code.](../media/04-04-push-commits.png)
 
 Ideally, you should verify your code before pushing it to the repo. To verify machine learning workloads, it's a best practice to do linting and unit tests locally.
 

@@ -52,4 +52,4 @@ The production code is hosted in the **main** branch. Whenever someone wants to 
 3. Once the changes in your branch are ready, you can ask for someone to review the changes.
 4. If the changes are approved, you *merge* the branch you created with the main repo and the production code will be updated to reflect your changes.
 
-![Trunk-based development](../media/01-02-trunk-based-development.png)
+![Diagram of trunk-based development workflow.](../media/01-02-trunk-based-development.png)

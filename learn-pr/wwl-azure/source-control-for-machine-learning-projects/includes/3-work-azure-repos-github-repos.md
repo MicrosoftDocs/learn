@@ -19,21 +19,21 @@ Most importantly for a data scientist, you'll get a work item assigned to you to
 
 Imagine you're a data scientist working on a machine learning project. The team has a **backlog** of *work items* or product backlog items, which are grouped by *feature* or machine learning lifecycle phase. 
 
-![Azure Boards backlog](../media/03-01-board-backlog.png)
+![Screenshot of Azure Boards backlog.](../media/03-01-board-backlog.png)
 
 Another way to view the work items for this project is by navigating to **Boards**. Typically, you'll have columns for new, active, and closed work items. Or tasks that you still need to do, that you're doing, or that are done.
 
-![Azure Boards board overview](../media/03-02-board-items.png)
+![Screenshot of Azure Boards board overview.](../media/03-02-board-items.png)
 
 To pick up a work item and to let your team know you're working on it, you (or someone else) can assign a work item to you. Select the *Unassigned* box and select your name. 
 
 By selecting the work item, you can also view the details.
 
-![Azure Boards work item details](../media/03-03-work-item.png)
+![Screenshot of Azure Boards work item details.](../media/03-03-work-item.png)
 
 In the **Development** control pane, you can select **create a branch** to create a new branch in the repo, which will automatically be linked to your work item. Once created, you'll be redirected to the new branch where you can view all assets stored in your repository. 
 
-![Azure Repos showing branch](../media/03-04-branch-repos.png)
+![Screenshot of Azure Repos showing branch.](../media/03-04-branch-repos.png)
 
 Now that the branch is created, you can work in the branch to make any changes to the code. It's common practice that you clone the branch to an Integrated Development Environment (IDE) like **Visual Studio Code** to develop and test locally before committing and pushing the changes to the main repo.
 
@@ -43,16 +43,16 @@ GitHub is an open-source platform on which all tools are organized per repositor
 
 When opening a repo in GitHub, you can navigate to the **Issues** tab to view all *open* and *closed* issues. You can select an issue to view its details. The person creating the issue can describe the problem, adding code snippets or screenshots. 
 
-![GitHub issue example](../media/03-01-github-issues.png)
+![Screenshot of GitHub issue example with task pane highlighted.](../media/03-01-github-issues.png)
 
 After an issue is created, you'll be able to assign the work to yourself or another GitHub user. If you want to work on the issue, you can create a branch from the **Development** control.
 
 A pane will open to help you create a branch that will be linked to the issue. Automatically, the branch will have the name of the issue's title. You can change the branch name if you want.
 
-![GitHub create branch from issue](../media/03-02-github-branch.png)
+![Screenshot of GitHub repo branch created from issue.](../media/03-02-github-branch.png)
 
 If you navigate back to the **Code** tab to view your repo, you'll be able to switch between branches and see the new branch you've created.
 
-![GitHub new branch in repo](../media/03-03-github-new-branch.png)
+![Screenshot of GitHub new branch in repo.](../media/03-03-github-new-branch.png)
 
 Once you've picked up a work item in Azure DevOps or an issue in GitHub, and created a branch to edit the code, you'll want to develop the code locally. You can **clone** the Git repo from either Azure DevOps or GitHub and work from any IDE you prefer. 
