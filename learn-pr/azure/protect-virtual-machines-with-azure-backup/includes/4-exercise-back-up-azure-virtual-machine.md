@@ -35,7 +35,7 @@ In this exercise, you'll create a VM, set up a backup, and start a backup.
 
 ### Create a Windows virtual machine by using the Azure CLI
 
-Create the **NW-APP01** virtual machine by running the following command. Replace `<password>` with a password of your choice, enclosed in double quotes. For example, `--admin-password "PassWord123!`.
+Create the **NW-APP01** virtual machine by running the following command. Replace `<password>` with a password of your choice, enclosed in double quotes. For example, `--admin-password "PassWord123!"`.
 
 ```azurecli
 az vm create \
