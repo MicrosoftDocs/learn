@@ -6,9 +6,9 @@ In this unit, you'll learn about some of the different tools you can use to anal
 
 ## Tools available for monitoring metrics
 
-Azure Monitor collects numeric data from your storage account and makes them available in a time series database. Metrics are numerical values that are collected at regular intervals and describe some aspect of a storage account at a particular time. The Azure portal gives you a graphical way to view these metrics in near real time. There can be a delay of a few minutes between the time a metric is recorded to the time that they appear on the Azure portal. In the Azure portal, you can:
+Azure Monitor collects numeric data (*metrics*) from your storage account and makes that data available in a time series database. Metrics are numerical values that describe some aspect of a storage account at a particular time. The Azure portal gives you a graphical way to view these metrics in near real time. There can be a delay of a few minutes between the time a metric is recorded to the time that they appear on the Azure portal. In the Azure portal, you can:
 
-- Configure metrics (*and logging*).
+- Configure metrics (*and logging*)
 
 - View graphs and charts, and select which metrics to visualize
 
@@ -32,7 +32,7 @@ You can create **dashboards** and add charts that closely monitor key metrics, s
 
 ### Storage insights
 
-Storage insights provides comprehensive monitoring of your Azure Storage accounts by delivering a unified view of your Azure Storage services performance, capacity, and availability. You can observe storage capacity, and performance in two ways, view directly from a storage account or view from Azure Monitor to see across groups of storage accounts.
+Storage insights provides a unified view of your Azure Storage services performance, capacity, and availability. You can observe storage capacity, and performance in two ways, view directly from a storage account or view from Azure Monitor to see across groups of storage accounts.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of storage insights in the Azure portal](../media/2-storage-insights.png)
