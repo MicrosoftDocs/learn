@@ -19,7 +19,7 @@ Most importantly for a data scientist, you'll get a work item assigned to you to
 
 Imagine you're a data scientist working on a machine learning project. The team has a **backlog** of *work items* or product backlog items, which are grouped by *feature* or machine learning lifecycle phase. 
 
-![Screenshot of Azure Boards backlog.](../media/03-01-board-backlog.png)
+![Screenshot of backlog items in Azure Boards.](../media/03-01-board-backlog.png)
 
 Another way to view the work items for this project is by navigating to **Boards**. Typically, you'll have columns for new, active, and closed work items. Or tasks that you still need to do, that you're doing, or that are done.
 
@@ -53,6 +53,6 @@ A pane will open to help you create a branch that will be linked to the issue. A
 
 If you navigate back to the **Code** tab to view your repo, you'll be able to switch between branches and see the new branch you've created.
 
-![Screenshot of GitHub new branch in repo.](../media/03-03-github-new-branch.png)
+![Screenshot of create new branch in GitHub repo.](../media/03-03-github-new-branch.png)
 
 Once you've picked up a work item in Azure DevOps or an issue in GitHub, and created a branch to edit the code, you'll want to develop the code locally. You can **clone** the Git repo from either Azure DevOps or GitHub and work from any IDE you prefer. 

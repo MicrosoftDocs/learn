@@ -7,7 +7,7 @@ To verify your scripts, there are two common tasks:
 - **Linting**: Check for programmatic or stylistic errors in Python or R scripts.
 - **Unit testing**: Check the performance of the content of the scripts.
 
-![Diagram of verification flow.](../media/05-01-verify-flow.png)
+![Diagram of verification flow with local and automated testing.](../media/05-01-verify-flow.png)
 
 By verifying your code, you prevent bugs or issues when the model is deployed. You can verify your code locally, by running linters and unit tests locally in an IDE like Visual Studio Code. 
 
@@ -32,7 +32,7 @@ To use Flake8 locally with Visual Studio Code:
 5. Enable Python > Linting > Flake8 Enabled.
 6. Set the Flake8 path to the location in your repo where you stored your `.flake8` file.
 
-![Screenshot of configuring Flake8 in Visual Studio Code](../media/05-02-flake-8-configuration.png)
+![Screenshot of configuring Flake8 in Visual Studio Code.](../media/05-02-flake-8-configuration.png)
 
 To specify what your team's standards are for code quality, you can configure the Flake8 linter. A common method to define the standards is by creating a `.flake8` file that is stored with your code.
 

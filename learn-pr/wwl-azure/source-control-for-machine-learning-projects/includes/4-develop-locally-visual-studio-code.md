@@ -24,14 +24,14 @@ When you want to develop your code locally, you'll follow along a typical develo
 
 After installing Visual Studio Code and Git, you can work on a branch of the repo locally. To work with a Git repo, you'll have to use some common Git commands.
 
-![Diagram of Git development process.](../media/04-01-development-overview.png)
+![Diagram of Git development process with clone and push.](../media/04-01-development-overview.png)
 
 
 Let's assume your full repo is stored in Azure DevOps or GitHub, and you've created a branch off the main repo in one of the two tools. 
 
 To get the URL of the repo, navigate to the repo's top level and select **Clone** in Azure Repos or **Code** in GitHub. Copy the HTTPS URL.
 
-![Screenshot of Git clone code button.](../media/04-01-git-clone-url.png)
+![Screenshot of Git repo with the clone code button.](../media/04-01-git-clone-url.png)
 
 After opening Visual Studio Code, there are two ways to work with Git:
 
