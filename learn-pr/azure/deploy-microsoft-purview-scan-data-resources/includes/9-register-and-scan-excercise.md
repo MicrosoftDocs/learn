@@ -34,7 +34,7 @@ In this module we will walk through how to grant the Microsoft Purview managed i
 
 ## Register the source
 
-1. Open Purview Studio, navigate to **Data Map** > **Sources**, and select**Register**.
+1. Open Purview Governance Portal, navigate to **Data Map** > **Sources**, and select**Register**.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.20-sources-register.png" alt-text="Alt text that describes the content of the image.":::
 
@@ -50,7 +50,7 @@ In this module we will walk through how to grant the Microsoft Purview managed i
 
 ## Scan source with the Microsoft Purview managed identity
 
-1. Open Purview Studio, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, select the **New Scan** button.
+1. Open Purview Governance Portal, navigate to **Data Map** > **Sources**, and within the Azure Data Lake Storage Gen2 tile, select the **New Scan** button.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.23-scan-new.png" alt-text="Alt text that describes the content of the image.":::
 
@@ -89,7 +89,7 @@ In this module we will walk through how to grant the Microsoft Purview managed i
 
 ## View Assets
 
-1. Navigate to **Purview Studio** > **Data catalog**, and perform a wildcard search by typing the asterisk character (`*`) into the search box and hitting the Enter key to submit the query.
+1. Navigate to **Purview Governance Portal** > **Data catalog**, and perform a wildcard search by typing the asterisk character (`*`) into the search box and hitting the Enter key to submit the query.
 
     :::image type="content" source="../media/6-register-and-scan-exercise/02.80-wildcard-search.png" alt-text="Alt text that describes the content of the image.":::
 

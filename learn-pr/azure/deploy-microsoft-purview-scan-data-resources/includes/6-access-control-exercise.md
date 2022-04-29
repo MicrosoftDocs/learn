@@ -1,6 +1,6 @@
-In this unit, you will use the Microsoft Purview Studio to provide a user within your Azure Active Directory read access to the data catalog.
+In this unit, you will use the Microsoft Purview Governance Portal to provide a user within your Azure Active Directory read access to the data catalog.
 
-1. On the left-hand size of Microsoft Purview Studio, navigate to **Data map**.  
+1. On the left-hand size of Microsoft Purview Governance Portal, navigate to **Data map**.  
 ![Create a resource](../media/06.01-purview-data-map.png)
 
 2. Select **Collections**.  
